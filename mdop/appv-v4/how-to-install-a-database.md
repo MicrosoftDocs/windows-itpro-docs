@@ -1,8 +1,11 @@
 ---
 title: How to Install a Database
 description: How to Install a Database
-author: jamiejdt
+author: dansimp
 ms.assetid: 52e3a19d-b7cf-4f2c-8268-0f8361cc9766
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ You can use the following procedure to install a database for your server-based 
 **Important**  
 To install the database, you must use a network account with the appropriate permissions. If your organization requires that only database administrators are allowed to create and conduct database upgrades, scripts are available that allow this task to be performed.
 
- 
+ 
 
 **To install a database**
 
@@ -38,7 +41,7 @@ To install the database, you must use a network account with the appropriate per
     **Note**  
     If a component is already installed on the computer, by deselecting it on the **Custom Setup** screen it will automatically be uninstalled.
 
-     
+     
 
 7.  On the **Database Server** page, type the passwords, assign an installation path, save the information, and click **Next**.
 
@@ -47,44 +50,44 @@ To install the database, you must use a network account with the appropriate per
     **Note**  
     If error 25109 is displayed when you try to complete this step, you have incorrectly set up the permissions necessary to install the database. For details on setting up the necessary SQL permissions, please see <https://go.microsoft.com/fwlink/?LinkId=132144>.
 
-     
+     
 
 9.  On the **Directory Server** screen, enter a domain name and credentials that Application Virtualization Servers and the Management Web Service will use to access your domain controller, save this information, and then click **Next**.
 
     **Note**  
     The installation will default to the domain of the current computer.
 
-     
+     
 
 10. On the **Administrator Group** page, enter the name of a group that will have Administrator privileges, save this information, and then click **Next**.
 
     **Note**  
     You can also enter the first few characters of the name of a group that will have Administration privileges, click **Next**, and on the **Select Administrator Group** screen, select the group from the resulting list. Then save this information and click **Next**.
 
-     
+     
 
 11. On the **Default Provider Group** page, enter the complete name of a group that will control access to applications, save this information, and then click **Next**.
 
     **Note**  
     You can also enter the first few characters of the name of a group that will control access to applications, click **Next**, and on the **Select Default Provider Group** screen, select the group in the list. Then save this information and click **Next**.
 
-     
+     
 
 12. On the **Installation Wizard Completed** page, to close the wizard, click **Finish**.
 
     **Important**  
     The installation can take a few minutes to finish. A status message will flash above the Windows desktop notification area, indicating whether the installation succeeded.
 
-     
+     
 
 ## Related topics
 
 
 [How to Install the Servers and System Components](how-to-install-the-servers-and-system-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

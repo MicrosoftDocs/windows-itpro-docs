@@ -1,18 +1,20 @@
 ---
 title: Policy CSP - ApplicationManagement
 description: Policy CSP - ApplicationManagement
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 08/08/2018
+author: manikadhiman
+ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - ApplicationManagement
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -535,7 +537,7 @@ Added in Windows 10, version 1607. Boolean value that disables the launch of al
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable all apps from Microsoft Store *
+-   GP English name: *Disable all apps from Microsoft Store*
 -   GP name: *DisableStoreApps*
 -   GP path: *Windows Components/Store*
 -   GP ADMX file name: *WindowsStore.admx*
@@ -592,13 +594,13 @@ List of semi-colon delimited Package Family Names of Windows apps. Listed Window
 
 For this policy to work, the Windows apps need to declare in their manifest that they will use the start up task. Example of the declaration here: 
 
-``` syntax
+```xml
 <desktop:Extension Category="windows.startupTask"> 
    <desktop:StartupTask TaskId="CoffeeStartupTask" Enabled="true" DisplayName="ms-resource:Description" /> 
 </desktop:Extension>
 ```
 
-> [!Note]  
+> [!NOTE]
 > This policy only works on modern apps.
 
 <!--/Description-->
@@ -970,7 +972,7 @@ Value type is string.
 <!--Example-->
 Sample SyncML:
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.1"> 
   <SyncBody> 
     <Add> 
@@ -997,7 +999,7 @@ Sample SyncML:
 ```
 XSD:
 
-``` syntax
+```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:simpleType name="recurrence" final="restriction">
     <xs:restriction base="xs:string">
@@ -1038,16 +1040,41 @@ XSD:
 
 <!--/Validation-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 
+<!--StartHoloLens2-->  
+## <a href="" id="hololens2policies"></a>ApplicationManagement policies supported by HoloLens 2
+
+- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
+- [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
+- [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
+
+<!--EndHoloLens2-->
+
+<!--StartHoloLensBusiness-->  
+## <a href="" id="hololensbusinessspolicies"></a>ApplicationManagement policies supported by HoloLens (ist gen) Commercial Suite
+
+- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
+- [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
+- [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
+<!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>ApplicationManagement policies supported by HoloLens (1st gen) Development Edition
+
+- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
+- [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
+- [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
+<!--EndHoloLens-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.

@@ -2,11 +2,14 @@
 title: Volume Activation Management Tool (VAMT) Technical Reference (Windows 10)
 description: The Volume Activation Management Tool (VAMT) enables network administrators and other IT professionals to automate and centrally manage the Windows®, Microsoft® Office, and select other Microsoft products volume and retail-activation process.
 ms.assetid: 1df0f795-f41c-473b-850c-e98af1ad2f2a
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---
@@ -15,17 +18,12 @@ ms.topic: article
 
 The Volume Activation Management Tool (VAMT) enables network administrators and other IT professionals to automate and centrally manage the Windows®, Microsoft® Office, and select other Microsoft products volume and retail-activation process.
 VAMT can manage volume activation using Multiple Activation Keys (MAKs) or the Windows Key Management Service (KMS). VAMT is a standard Microsoft Management Console (MMC) snap-in that requires the Microsoft Management Console (MMC) 3.0. VAMT can be installed on any computer that has one of the following Windows operating systems:
--   Windows® 7
--   Windows 8
--   Windows 8.1
--   Windows 10
--   Windows Server 2008 R2
--   Windows Server® 2012
--   Windows Server 2012 R2
+-   Windows® 7 or above
+-   Windows Server 2008 R2 or above
+
 
 **Important**  
-VAMT is designed to manage volume activation for: Windows Vista, Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Microsoft Office 2010, and Microsoft Office 2013. Computers installed with volume editions of 
-**Windows XP** or **Windows Server 2003** cannot be managed using VAMT. However, Office 2010 and Office 2013 products installed on these two operating systems can still be managed.
+VAMT is designed to manage volume activation for: Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 (or obove), Microsoft Office 2010 (or above). 
 
 VAMT is only available in an EN-US (x86) package.
 
@@ -42,4 +40,4 @@ VAMT is only available in an EN-US (x86) package.
 |[Manage VAMT Data](manage-vamt-data.md) |Describes how to save, import, export, and merge a Computer Information List (CILX) file using VAMT. |
 |[VAMT Step-by-Step Scenarios](vamt-step-by-step.md) |Provides step-by-step instructions for using VAMT in typical environments. |
 |[VAMT Known Issues](vamt-known-issues.md) |Lists known issues in VAMT. |
- 
+ 

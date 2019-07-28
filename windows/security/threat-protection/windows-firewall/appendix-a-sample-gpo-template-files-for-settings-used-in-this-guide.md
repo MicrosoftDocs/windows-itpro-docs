@@ -2,12 +2,14 @@
 title: Appendix A Sample GPO Template Files for Settings Used in this Guide (Windows 10)
 description: Appendix A Sample GPO Template Files for Settings Used in this Guide
 ms.assetid: 75930afd-ab1b-4e53-915b-a28787814b38
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -31,7 +33,7 @@ The following sample file uses item-level targeting to ensure that the registry 
 
 >**Note:**  The file shown here is for sample use only. It should be customized to meet the requirements of your organization’s deployment. To customize this file, import it into a test GPO, modify the settings, and then drag the Server and Domain Isolation Settings node to your desktop. The new file will contain all of your customization.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 
 <Collection clsid="{53B533F5-224C-47e3-B01B-CA3B3F3FF4BF}" name="Server and Domain Isolation Settings">

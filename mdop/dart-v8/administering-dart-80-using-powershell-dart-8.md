@@ -1,8 +1,11 @@
 ---
 title: Administering DaRT 8.0 Using PowerShell
 description: Administering DaRT 8.0 Using PowerShell
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 776430e0-d5c9-4919-877a-fab503451b37
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

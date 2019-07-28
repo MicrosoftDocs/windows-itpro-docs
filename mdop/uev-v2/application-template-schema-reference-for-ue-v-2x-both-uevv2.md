@@ -1,8 +1,11 @@
 ---
 title: Application Template Schema Reference for UE-V 2.x
 description: Application Template Schema Reference for UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: be8735a5-6a3e-4b1f-ba14-2a3bc3e5a8b6
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -148,7 +151,7 @@ The Process data type is a container used to describe processes to be monitored 
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="processes"></a>**Processes**
 The Processes data type represents a container for a collection of one or more Process elements. Two child elements are supported in the Processes sequence type: **Process** and **ShellProcess**. Process is an element of type Process and ShellProcess is of data type Empty. At least one item must be identified in the sequence.
@@ -198,7 +201,7 @@ Settings is a container for all the settings that apply to a particular template
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="name21"></a>Name Element
 
@@ -213,7 +216,7 @@ UE-V does not reference external DTDs, so it is not possible to use named entiti
 
 See <http://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character entities. UTF-8-encoded documents may include the Unicode characters directly. Saving templates through the UE-V Generator converts character entities to their Unicode representations automatically.
 
- 
+ 
 
 ### <a href="" id="id21"></a>ID Element
 
@@ -237,7 +240,7 @@ Version identifies the version of the settings location template for administrat
 
 **Hint:** You can save notes about version changes using XML comment tags `<!-- -->`, for example:
 
-``` syntax
+```xml
   <!--
      Version History
 
@@ -258,7 +261,7 @@ This value is queried to determine if a new version of a template should be appl
 
 -   When the microsoft\\uev:SettingsLocationTemplate Update method is called through WMI
 
- 
+ 
 
 ### <a href="" id="author21"></a>Author Element
 
@@ -276,25 +279,25 @@ Author identifies the creator of the settings location template. Two optional ch
 
 Processes contains at least one `<Process>` element, which in turn contains the following child elements: **Filename**, **Architecture**, **ProductName**, **FileDescription**, **ProductVersion**, and **FileVersion**. The Filename child element is mandatory and the others are optional. A fully populated element contains tags similar to this example:
 
-``` syntax
-    <Process>
-      <Filename>MyApplication.exe</Filename>
-      <Architecture>Win64</Architecture>
-      <ProductName> MyApplication </ProductName>
-      <FileDescription>MyApplication.exe</FileDescription>
-      <ProductVersion>
-        <Major Minimum="2" Maximum="2" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="0" Maximum="0" />
-        <Patch Minimum="5" Maximum="5" />
-      </ProductVersion>
-      <FileVersion>
-        <Major Minimum="2" Maximum="2" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="0" Maximum="0" />
-        <Patch Minimum="5" Maximum="5" />
-      </FileVersion>
-    </Process>
+```xml
+<Process>
+  <Filename>MyApplication.exe</Filename>
+  <Architecture>Win64</Architecture>
+  <ProductName> MyApplication </ProductName>
+  <FileDescription>MyApplication.exe</FileDescription>
+  <ProductVersion>
+    <Major Minimum="2" Maximum="2" />
+    <Minor Minimum="0" Maximum="0" />
+    <Build Minimum="0" Maximum="0" />
+    <Patch Minimum="5" Maximum="5" />
+  </ProductVersion>
+  <FileVersion>
+    <Major Minimum="2" Maximum="2" />
+    <Minor Minimum="0" Maximum="0" />
+    <Build Minimum="0" Maximum="0" />
+    <Patch Minimum="5" Maximum="5" />
+  </FileVersion>
+</Process>
 ```
 
 ### Filename
@@ -324,7 +327,7 @@ A value of **True** indicates that the string contains illegal characters. Here 
 **Note**  
 The UE-V Generator encodes the greater than and less than characters as &gt; and &lt; respectively.
 
- 
+ 
 
 In rare circumstances, the FileName value will not necessarily include the .exe extension, but it should be specified as part of the value. For example, `<Filename>MyApplictication.exe</Filename>` should be specified instead of `<Filename>MyApplictication</Filename>`. The second example will not apply the template to the process if the actual name of the executable file is “MyApplication.exe”.
 
@@ -341,7 +344,7 @@ If this element is absent, the settings location template ignores the process’
 **Note**  
 UE-V does not support ARM processors in this version.
 
- 
+ 
 
 ### ProductName
 
@@ -351,14 +354,14 @@ UE-V does not support ARM processors in this version.
 
 ProductName is an optional element used to identify a product for administrative purposes or reporting. ProductName differs from Filename in that there are no regular expression restrictions on its value. This allows for more easily understood descriptions of a process where the executable name may not be obvious. For example:
 
-``` syntax
-    <Process>
-      <Filename>MyApplication.exe</Filename>
-      <ProductName>My Application 6.x by Contoso.com</ProductName>
-      <ProductVersion>
-        <Major Minimum="6" Maximum="6" />
-      </ProductVersion>
-    </Process>
+```xml
+<Process>
+  <Filename>MyApplication.exe</Filename>
+  <ProductName>My Application 6.x by Contoso.com</ProductName>
+  <ProductVersion>
+    <Major Minimum="6" Maximum="6" />
+  </ProductVersion>
+</Process>
 ```
 
 ### FileDescription
@@ -371,23 +374,22 @@ FileDescription is an optional tag that allows for an administrative description
 
 For example, in a suited application, it might be useful to provide reminders about the function of two executables (MyApplication.exe and MyApplicationHelper.exe), as shown here:
 
-``` syntax
+```xml
 <Processes>
-
-   <Process>
-      <Filename>MyApplication.exe</Filename>
-      <FileDescription>My Application Main Engine</ FileDescription>
-      <ProductVersion>
-        <Major Minimum="6" Maximum="6" />
-      </ProductVersion>
-    </Process>
-    <Process>
-      <Filename>MyApplicationHelper.exe</Filename>
-      <FileDescription>My Application Background Process Executable</FileDescription>
-      <ProductVersion>
-        <Major Minimum="6" Maximum="6" />
-      </ProductVersion>
-    </Process>
+  <Process>
+    <Filename>MyApplication.exe</Filename>
+    <FileDescription>My Application Main Engine</ FileDescription>
+    <ProductVersion>
+      <Major Minimum="6" Maximum="6" />
+    </ProductVersion>
+  </Process>
+  <Process>
+    <Filename>MyApplicationHelper.exe</Filename>
+    <FileDescription>My Application Background Process Executable</FileDescription>
+    <ProductVersion>
+      <Major Minimum="6" Maximum="6" />
+    </ProductVersion>
+  </Process>
 </Processes>
 ```
 
@@ -405,44 +407,44 @@ The product and file version elements may be left unspecified. Doing so makes th
 
 Product version: 1.0 specified in the UE-V Generator produces the following XML:
 
-``` syntax
-      <ProductVersion>
-        <Major Minimum="1" Maximum="1" />
-        <Minor Minimum="0" Maximum="0" />
-      </ProductVersion>
+```xml
+<ProductVersion>
+  <Major Minimum="1" Maximum="1" />
+  <Minor Minimum="0" Maximum="0" />
+</ProductVersion>
 ```
 
 **Example 2:**
 
 File version: 5.0.2.1000 specified in the UE-V Generator produces the following XML:
 
-``` syntax
-      <FileVersion>
-        <Major Minimum="5" Maximum="5" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="2" Maximum="2" />
-        <Patch Minimum="1000" Maximum="1000" />
-      </FileVersion>
+```xml
+<FileVersion>
+  <Major Minimum="5" Maximum="5" />
+  <Minor Minimum="0" Maximum="0" />
+  <Build Minimum="2" Maximum="2" />
+  <Patch Minimum="1000" Maximum="1000" />
+</FileVersion>
 ```
 
 **Incorrect Example 1 – incomplete range:**
 
 Only the Minimum attribute is present. Maximum must be included in a range as well.
 
-``` syntax
-      <ProductVersion>
-        <Major Minimum="2" />
-      </ProductVersion>
+```xml
+<ProductVersion>
+  <Major Minimum="2" />
+</ProductVersion>
 ```
 
 **Incorrect Example 2 – Minor specified without Major element:**
 
 Only the Minor element is present. Major must be included as well.
 
-``` syntax
-      <ProductVersion>
-        <Minor Minimum="0" Maximum="0" />
-      </ProductVersion>
+```xml
+<ProductVersion>
+  <Minor Minimum="0" Maximum="0" />
+</ProductVersion>
 ```
 
 ### FileVersion
@@ -459,19 +461,19 @@ Including a FileVersion element for an application allows for more granular fine
 
 The child elements and syntax rules for FileVersion are identical to those of ProductVersion.
 
-``` syntax
-      <Process>
-        <Filename>MSACCESS.EXE</Filename>
-        <Architecture>Win32</Architecture>
-        <ProductVersion>
-          <Major Minimum="14" Maximum="14" />
-          <Minor Minimum="0" Maximum="0" />
-        </ProductVersion>
-        <FileVersion>
-          <Major Minimum="14" Maximum="14" />
-          <Minor Minimum="0" Maximum="0" />
-        </FileVersion>
-      </Process>
+```xml
+<Process>
+  <Filename>MSACCESS.EXE</Filename>
+  <Architecture>Win32</Architecture>
+  <ProductVersion>
+    <Major Minimum="14" Maximum="14" />
+    <Minor Minimum="0" Maximum="0" />
+  </ProductVersion>
+  <FileVersion>
+    <Major Minimum="14" Maximum="14" />
+    <Minor Minimum="0" Maximum="0" />
+  </FileVersion>
+</Process>
 ```
 
 ### <a href="" id="application21"></a>Application Element
@@ -490,11 +492,11 @@ Application is a container for settings that apply to a particular application. 
 </tr>
 <tr class="even">
 <td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name21).</p></td>
+<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name21" data-raw-source="[Name](#name21)">Name</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id21).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see <a href="#id21" data-raw-source="[ID](#id21)">ID</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Description</p></td>
@@ -510,7 +512,7 @@ Application is a container for settings that apply to a particular application. 
 </tr>
 <tr class="odd">
 <td align="left"><p>Version</p></td>
-<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version21).</p></td>
+<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see <a href="#version21" data-raw-source="[Version](#version21)">Version</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DeferToMSAccount</p></td>
@@ -526,16 +528,16 @@ Application is a container for settings that apply to a particular application. 
 </tr>
 <tr class="odd">
 <td align="left"><p>Processes</p></td>
-<td align="left"><p>A container for a collection of one or more Process elements. For more information, see [Processes](#processes21).</p></td>
+<td align="left"><p>A container for a collection of one or more Process elements. For more information, see <a href="#processes21" data-raw-source="[Processes](#processes21)">Processes</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Settings</p></td>
-<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in [Data types](#data21).</p></td>
+<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in <a href="#data21" data-raw-source="[Data types](#data21)">Data types</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="common21"></a>Common Element
 
@@ -553,11 +555,11 @@ Common is similar to an Application element, but it is always associated with tw
 </tr>
 <tr class="even">
 <td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name21).</p></td>
+<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name21" data-raw-source="[Name](#name21)">Name</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id21).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see <a href="#id21" data-raw-source="[ID](#id21)">ID</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Description</p></td>
@@ -573,7 +575,7 @@ Common is similar to an Application element, but it is always associated with tw
 </tr>
 <tr class="odd">
 <td align="left"><p>Version</p></td>
-<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version21).</p></td>
+<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see <a href="#version21" data-raw-source="[Version](#version21)">Version</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DeferToMSAccount</p></td>
@@ -589,12 +591,12 @@ Common is similar to an Application element, but it is always associated with tw
 </tr>
 <tr class="odd">
 <td align="left"><p>Settings</p></td>
-<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in [Data types](#data21).</p></td>
+<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in <a href="#data21" data-raw-source="[Data types](#data21)">Data types</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="settingslocationtemplate21"></a>SettingsLocationTemplate Element
 
@@ -612,11 +614,11 @@ This element defines the settings for a single application or a suite of applica
 </tr>
 <tr class="even">
 <td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name21).</p></td>
+<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name21" data-raw-source="[Name](#name21)">Name</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id21).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see <a href="#id21" data-raw-source="[ID](#id21)">ID</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Description</p></td>
@@ -633,13 +635,13 @@ This element defines the settings for a single application or a suite of applica
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="appendix21"></a>Appendix: SettingsLocationTemplate.xsd
 
 Here is the SettingsLocationTemplate.xsd file showing its elements, child elements, attributes, and parameters:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="UevSettingsLocationTemplate"
   targetNamespace="http://schemas.microsoft.com/UserExperienceVirtualization/2013A/SettingsLocationTemplate"
@@ -1088,7 +1090,7 @@ The Process data type is a container used to describe processes to be monitored 
 </tbody>
 </table>
 
- 
+ 
 
 <a href="" id="processes"></a>**Processes**
 The Processes data type represents a container for a collection of one or more Process elements. Two child elements are supported in the Processes sequence type: **Process** and **ShellProcess**. Process is an element of type Process and ShellProcess is of data type Empty. At least one item must be identified in the sequence.
@@ -1135,7 +1137,7 @@ Settings is a container for all the settings that apply to a particular template
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="name"></a>Name Element
 
@@ -1150,7 +1152,7 @@ UE-V does not reference external DTDs, so it is not possible to use named entiti
 
 See <http://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character entities. UTF-8-encoded documents may include the Unicode characters directly. Saving templates through the UE-V Generator converts character entities to their Unicode representations automatically.
 
- 
+ 
 
 ### <a href="" id="id"></a>ID Element
 
@@ -1174,16 +1176,16 @@ Version identifies the version of the settings location template for administrat
 
 **Hint:** You can save notes about version changes using XML comment tags `<!-- -->`, for example:
 
-``` syntax
-  <!--
-     Version History
+```xml
+<!--
+    Version History
 
-     Version 1 Jul 05, 2012 Initial template created by Generator - Denise@Contoso.com
-     Version 2 Jul 31, 2012 Added support for app.exe v2.1.3 - Mark@Contoso.com
-     Version 3 Jan 01, 2013 Added font settings support - Mark@Contoso.com
-     Version 4 Jan 31, 2013 Added support for plugin settings - Tony@Contoso.com
-   -->
-  <Version>4</Version>
+    Version 1 Jul 05, 2012 Initial template created by Generator - Denise@Contoso.com
+    Version 2 Jul 31, 2012 Added support for app.exe v2.1.3 - Mark@Contoso.com
+    Version 3 Jan 01, 2013 Added font settings support - Mark@Contoso.com
+    Version 4 Jan 31, 2013 Added support for plugin settings - Tony@Contoso.com
+  -->
+<Version>4</Version>
 ```
 
 **Important**  
@@ -1195,7 +1197,7 @@ This value is queried to determine if a new version of a template should be appl
 
 -   When the microsoft\\uev:SettingsLocationTemplate Update method is called through WMI
 
- 
+ 
 
 ### <a href="" id="author"></a>Author Element
 
@@ -1213,25 +1215,25 @@ Author identifies the creator of the settings location template. Two optional ch
 
 Processes contains at least one `<Process>` element, which in turn contains the following child elements: **Filename**, **Architecture**, **ProductName**, **FileDescription**, **ProductVersion**, and **FileVersion**. The Filename child element is mandatory and the others are optional. A fully populated element contains tags similar to this example:
 
-``` syntax
-    <Process>
-      <Filename>MyApplication.exe</Filename>
-      <Architecture>Win64</Architecture>
-      <ProductName> MyApplication </ProductName>
-      <FileDescription>MyApplication.exe</FileDescription>
-      <ProductVersion>
-        <Major Minimum="2" Maximum="2" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="0" Maximum="0" />
-        <Patch Minimum="5" Maximum="5" />
-      </ProductVersion>
-      <FileVersion>
-        <Major Minimum="2" Maximum="2" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="0" Maximum="0" />
-        <Patch Minimum="5" Maximum="5" />
-      </FileVersion>
-    </Process>
+```xml
+<Process>
+  <Filename>MyApplication.exe</Filename>
+  <Architecture>Win64</Architecture>
+  <ProductName> MyApplication </ProductName>
+  <FileDescription>MyApplication.exe</FileDescription>
+  <ProductVersion>
+    <Major Minimum="2" Maximum="2" />
+    <Minor Minimum="0" Maximum="0" />
+    <Build Minimum="0" Maximum="0" />
+    <Patch Minimum="5" Maximum="5" />
+  </ProductVersion>
+  <FileVersion>
+    <Major Minimum="2" Maximum="2" />
+    <Minor Minimum="0" Maximum="0" />
+    <Build Minimum="0" Maximum="0" />
+    <Patch Minimum="5" Maximum="5" />
+  </FileVersion>
+</Process>
 ```
 
 ### Filename
@@ -1261,7 +1263,7 @@ A value of **True** indicates that the string contains illegal characters. Here 
 **Note**  
 The UE-V Generator encodes the greater than and less than characters as &gt; and &lt; respectively.
 
- 
+ 
 
 In rare circumstances, the FileName value will not necessarily include the .exe extension, but it should be specified as part of the value. For example, `<Filename>MyApplictication.exe</Filename>` should be specified instead of `<Filename>MyApplictication</Filename>`. The second example will not apply the template to the process if the actual name of the executable file is “MyApplication.exe”.
 
@@ -1278,7 +1280,7 @@ If this element is absent, the settings location template ignores the process’
 **Note**  
 UE-V does not support ARM processors in this version.
 
- 
+ 
 
 ### ProductName
 
@@ -1288,14 +1290,14 @@ UE-V does not support ARM processors in this version.
 
 ProductName is an optional element used to identify a product for administrative purposes or reporting. ProductName differs from Filename in that there are no regular expression restrictions on its value. This allows for more easily understood descriptions of a process where the executable name may not be obvious. For example:
 
-``` syntax
-    <Process>
-      <Filename>MyApplication.exe</Filename>
-      <ProductName>My Application 6.x by Contoso.com</ProductName>
-      <ProductVersion>
-        <Major Minimum="6" Maximum="6" />
-      </ProductVersion>
-    </Process>
+```xml
+<Process>
+  <Filename>MyApplication.exe</Filename>
+  <ProductName>My Application 6.x by Contoso.com</ProductName>
+  <ProductVersion>
+    <Major Minimum="6" Maximum="6" />
+  </ProductVersion>
+</Process>
 ```
 
 ### FileDescription
@@ -1308,23 +1310,22 @@ FileDescription is an optional tag that allows for an administrative description
 
 For example, in a suited application, it might be useful to provide reminders about the function of two executables (MyApplication.exe and MyApplicationHelper.exe), as shown here:
 
-``` syntax
+```xml
 <Processes>
-
-   <Process>
-      <Filename>MyApplication.exe</Filename>
-      <FileDescription>My Application Main Engine</ FileDescription>
-      <ProductVersion>
-        <Major Minimum="6" Maximum="6" />
-      </ProductVersion>
-    </Process>
-    <Process>
-      <Filename>MyApplicationHelper.exe</Filename>
-      <FileDescription>My Application Background Process Executable</FileDescription>
-      <ProductVersion>
-        <Major Minimum="6" Maximum="6" />
-      </ProductVersion>
-    </Process>
+  <Process>
+    <Filename>MyApplication.exe</Filename>
+    <FileDescription>My Application Main Engine</ FileDescription>
+    <ProductVersion>
+      <Major Minimum="6" Maximum="6" />
+    </ProductVersion>
+  </Process>
+  <Process>
+    <Filename>MyApplicationHelper.exe</Filename>
+    <FileDescription>My Application Background Process Executable</FileDescription>
+    <ProductVersion>
+      <Major Minimum="6" Maximum="6" />
+    </ProductVersion>
+  </Process>
 </Processes>
 ```
 
@@ -1342,44 +1343,44 @@ The product and file version elements may be left unspecified. Doing so makes th
 
 Product version: 1.0 specified in the UE-V Generator produces the following XML:
 
-``` syntax
-      <ProductVersion>
-        <Major Minimum="1" Maximum="1" />
-        <Minor Minimum="0" Maximum="0" />
-      </ProductVersion>
+```xml
+<ProductVersion>
+  <Major Minimum="1" Maximum="1" />
+  <Minor Minimum="0" Maximum="0" />
+</ProductVersion>
 ```
 
 **Example 2:**
 
 File version: 5.0.2.1000 specified in the UE-V Generator produces the following XML:
 
-``` syntax
-      <FileVersion>
-        <Major Minimum="5" Maximum="5" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="2" Maximum="2" />
-        <Patch Minimum="1000" Maximum="1000" />
-      </FileVersion>
+```xml
+<FileVersion>
+  <Major Minimum="5" Maximum="5" />
+  <Minor Minimum="0" Maximum="0" />
+  <Build Minimum="2" Maximum="2" />
+  <Patch Minimum="1000" Maximum="1000" />
+</FileVersion>
 ```
 
 **Incorrect Example 1 – incomplete range:**
 
 Only the Minimum attribute is present. Maximum must be included in a range as well.
 
-``` syntax
-      <ProductVersion>
-        <Major Minimum="2" />
-      </ProductVersion>
+```xml
+<ProductVersion>
+  <Major Minimum="2" />
+</ProductVersion>
 ```
 
 **Incorrect Example 2 – Minor specified without Major element:**
 
 Only the Minor element is present. Major must be included as well.
 
-``` syntax
-      <ProductVersion>
-        <Minor Minimum="0" Maximum="0" />
-      </ProductVersion>
+```xml
+<ProductVersion>
+  <Minor Minimum="0" Maximum="0" />
+</ProductVersion>
 ```
 
 ### FileVersion
@@ -1396,19 +1397,19 @@ Including a FileVersion element for an application allows for more granular fine
 
 The child elements and syntax rules for FileVersion are identical to those of ProductVersion.
 
-``` syntax
-      <Process>
-        <Filename>MSACCESS.EXE</Filename>
-        <Architecture>Win32</Architecture>
-        <ProductVersion>
-          <Major Minimum="14" Maximum="14" />
-          <Minor Minimum="0" Maximum="0" />
-        </ProductVersion>
-        <FileVersion>
-          <Major Minimum="14" Maximum="14" />
-          <Minor Minimum="0" Maximum="0" />
-        </FileVersion>
-      </Process>
+```xml
+<Process>
+  <Filename>MSACCESS.EXE</Filename>
+  <Architecture>Win32</Architecture>
+  <ProductVersion>
+    <Major Minimum="14" Maximum="14" />
+    <Minor Minimum="0" Maximum="0" />
+  </ProductVersion>
+  <FileVersion>
+    <Major Minimum="14" Maximum="14" />
+    <Minor Minimum="0" Maximum="0" />
+  </FileVersion>
+</Process>
 ```
 
 ### <a href="" id="application"></a>Application Element
@@ -1429,11 +1430,11 @@ Application is a container for settings that apply to a particular application. 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name).</p></td>
+<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name" data-raw-source="[Name](#name)">Name</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see <a href="#id" data-raw-source="[ID](#id)">ID</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Description</p></td>
@@ -1449,7 +1450,7 @@ Application is a container for settings that apply to a particular application. 
 </tr>
 <tr class="even">
 <td align="left"><p>Version</p></td>
-<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version).</p></td>
+<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see <a href="#version" data-raw-source="[Version](#version)">Version</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DeferToMSAccount</p></td>
@@ -1461,16 +1462,16 @@ Application is a container for settings that apply to a particular application. 
 </tr>
 <tr class="odd">
 <td align="left"><p>Processes</p></td>
-<td align="left"><p>A container for a collection of one or more Process elements. For more information, see [Processes](#processes).</p></td>
+<td align="left"><p>A container for a collection of one or more Process elements. For more information, see <a href="#processes" data-raw-source="[Processes](#processes)">Processes</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Settings</p></td>
-<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in [Data types](#data).</p></td>
+<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in <a href="#data" data-raw-source="[Data types](#data)">Data types</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="common"></a>Common Element
 
@@ -1490,11 +1491,11 @@ Common is similar to an Application element, but it is always associated with tw
 <tbody>
 <tr class="odd">
 <td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name).</p></td>
+<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name" data-raw-source="[Name](#name)">Name</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see <a href="#id" data-raw-source="[ID](#id)">ID</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Description</p></td>
@@ -1510,7 +1511,7 @@ Common is similar to an Application element, but it is always associated with tw
 </tr>
 <tr class="even">
 <td align="left"><p>Version</p></td>
-<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version).</p></td>
+<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see <a href="#version" data-raw-source="[Version](#version)">Version</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>DeferToMSAccount</p></td>
@@ -1522,12 +1523,12 @@ Common is similar to an Application element, but it is always associated with tw
 </tr>
 <tr class="odd">
 <td align="left"><p>Settings</p></td>
-<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in [Data types](#data).</p></td>
+<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in <a href="#data" data-raw-source="[Data types](#data)">Data types</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="settingslocationtemplate"></a>SettingsLocationTemplate Element
 
@@ -1547,11 +1548,11 @@ This element defines the settings for a single application or a suite of applica
 <tbody>
 <tr class="odd">
 <td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name).</p></td>
+<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name" data-raw-source="[Name](#name)">Name</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see [ID](#id).</p></td>
+<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V Agent uses to reference the template at runtime. For more information, see <a href="#id" data-raw-source="[ID](#id)">ID</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Description</p></td>
@@ -1568,13 +1569,13 @@ This element defines the settings for a single application or a suite of applica
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="appendix"></a>Appendix: SettingsLocationTemplate.xsd
 
 Here is the SettingsLocationTemplate.xsd file showing its elements, child elements, attributes, and parameters:
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="UevSettingsLocationTemplate"
   targetNamespace="http://schemas.microsoft.com/UserExperienceVirtualization/2013/SettingsLocationTemplate"
@@ -1877,9 +1878,9 @@ Here is the SettingsLocationTemplate.xsd file showing its elements, child elemen
 
 [Technical Reference for UE-V 2.x](technical-reference-for-ue-v-2x-both-uevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

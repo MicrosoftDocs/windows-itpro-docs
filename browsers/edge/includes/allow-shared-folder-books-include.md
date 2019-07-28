@@ -1,9 +1,11 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Allow a shared books folder -->
@@ -15,10 +17,12 @@ ms:topic: include
 
 
 ### Supported values
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Prevented. Microsoft Edge downloads book files to a per-user folder for each user. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Allowed. Microsoft Edge downloads book files to a shared folder. For this policy to work correctly, you must also enable the **Allow a Windows app to share application data between users** group policy, which you can find:<p>**Computer Configuration\\Administrative Templates\\Windows Components\\App Package Deployment\\**<p>Also, the users must be signed in with a school or work account.| |
+
+|                Group Policy                 | MDM | Registry |                                                                                                                                                                                              Description                                                                                                                                                                                               |                 Most restricted                  |
+|---------------------------------------------|:---:|:--------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------:|
+| Disabled or not configured<br>**(default)** |  0  |    0     |                                                                                                                                                           Prevented. Microsoft Edge downloads book files to a per-user folder for each user.                                                                                                                                                           | ![Most restricted value](../images/check-gn.png) |
+|                   Enabled                   |  1  |    1     | Allowed. Microsoft Edge downloads book files to a shared folder. For this policy to work correctly, you must also enable the **Allow a Windows app to share application data between users** group policy, which you can find:<p>**Computer Configuration\\Administrative Templates\\Windows Components\\App Package Deployment\\**<p>Also, the users must be signed in with a school or work account. |                                                  |
+
 ---
 
 ![Allow a shared books folder](../images/allow-shared-books-folder_sm.png)

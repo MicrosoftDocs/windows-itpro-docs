@@ -1,8 +1,11 @@
 ---
 title: How to Start and Exit the MED-V Client
 description: How to Start and Exit the MED-V Client
-author: jamiejdt
+author: dansimp
 ms.assetid: 3762bad1-6937-40fa-ab5d-61a905865214
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,7 +27,7 @@ ms.date: 06/16/2016
 **Note**  
 MED-V cannot be started from an elevated command prompt.
 
- 
+ 
 
 **To exit the MED-V client**
 
@@ -34,9 +37,9 @@ MED-V cannot be started from an elevated command prompt.
 
     The MED-V client exits.
 
- 
+ 
 
- 
+ 
 
 
 

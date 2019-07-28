@@ -2,12 +2,14 @@
 title: Protect Devices from Unwanted Network Traffic (Windows 10)
 description: Protect Devices from Unwanted Network Traffic
 ms.assetid: 307d2b38-e8c4-4358-ae16-f2143af965dc
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -45,4 +47,4 @@ The following component is recommended for this deployment goal:
 
 Other means of deploying a firewall policy are available, such as creating scripts that use the netsh command-line tool, and then running those scripts on each computer in the organization. This guide uses Active Directory as a recommended means of deployment because of its ability to scale to very large organizations.
 
-**Next: **[Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)
+**Next:** [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)

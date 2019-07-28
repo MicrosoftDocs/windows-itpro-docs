@@ -6,21 +6,22 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 03/06/2019
+ms.date: 04/05/2019
+ms.reviewer: 
 ms.localizationpriority: medium
 ---
 
 # Limitations while using Windows Information Protection (WIP)
 
 **Applies to:**
--   Windows 10, version 1607 and later
--   Windows 10 Mobile, version 1607 and later
+-   Windows 10, version 1607 and later
+-   Windows 10 Mobile, version 1607 and later
 
 This table provides info about the most common problems you might encounter while running WIP in your organization.
 
@@ -32,7 +33,7 @@ This table provides info about the most common problems you might encounter whil
     </tr>
     <tr>
         <td>Your enterprise data on USB drives might be tied to the device it was protected on, based on your Azure RMS configuration.</td>
-        <td><strong>If you’re using Azure RMS:</strong> Authenticated users can open enterprise data on USB drives, on computers running Windows 10, version 1703.<br><br><strong>If you’re not using Azure RMS:</strong> Data in the new location remains encrypted, but becomes inaccessible on other devices and for other users. For example, the file won't open or the file opens, but doesn't contain readable text.</td>
+        <td><strong>If you’re using Azure RMS:</strong> Authenticated users can open enterprise data on USB drives, on computers running Windows 10, version 1703.<br><br><strong>If you’re not using Azure RMS:</strong> Data in the new location remains encrypted, but becomes inaccessible on other devices and for other users. For example, the file won&#39;t open or the file opens, but doesn&#39;t contain readable text.</td>
         <td>Share files with fellow employees through enterprise file servers or enterprise cloud locations. If data must be shared via USB, employees can decrypt protected files, but it will be audited.<br><br>We strongly recommend educating employees about how to limit or eliminate the need for this decryption.</td>
     </tr>
     <tr>
@@ -48,7 +49,7 @@ This table provides info about the most common problems you might encounter whil
     <tr>
         <td>Cortana can potentially allow data leakage if it’s on the allowed apps list.</td>
         <td>If Cortana is on the allowed list, some files might become unexpectedly encrypted after an employee performs a search using Cortana. Your employees will still be able to use Cortana to search and provide results on enterprise documents and locations, but results might be sent to Microsoft.</td>
-        <td>We don’t recommend adding Cortana to your allowed apps list. However, if you wish to use Cortana and don't mind whether the results potentially go to Microsoft, you can make Cortana an Exempt app.</td>
+        <td>We don’t recommend adding Cortana to your allowed apps list. However, if you wish to use Cortana and don&#39;t mind whether the results potentially go to Microsoft, you can make Cortana an Exempt app.</td>
     </tr>
     <tr>
         <td>WIP is designed for use by a single user per device.</td>
@@ -73,7 +74,7 @@ This table provides info about the most common problems you might encounter whil
     <tr>
         <td>Redirected folders with Client Side Caching are not compatible with WIP.</td>
         <td>Apps might encounter access errors while attempting to read a cached, offline file.</td>
-        <td>Migrate to use another file synchronization method, such as Work Folders or OneDrive for Business.<br><br><strong>Note</strong><br>For more info about Work Folders and Offline Files, see the blog, [Work Folders and Offline Files support for Windows Information Protection](https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/). If you're having trouble opening files offline while using Offline Files and WIP, see the support article, [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/kb/3187045).</td>
+        <td>Migrate to use another file synchronization method, such as Work Folders or OneDrive for Business.<br><br><strong>Note</strong><br>For more info about Work Folders and Offline Files, see the blog, <a href="https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/" data-raw-source="[Work Folders and Offline Files support for Windows Information Protection](https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/)">Work Folders and Offline Files support for Windows Information Protection</a>. If you&#39;re having trouble opening files offline while using Offline Files and WIP, see the support article, <a href="https://support.microsoft.com/kb/3187045" data-raw-source="[Can&#39;t open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/kb/3187045)">Can&#39;t open files offline when you use Offline Files and Windows Information Protection</a>.</td>
     </tr>
     <tr>
         <td>An unmanaged device can use Remote Desktop Protocol (RDP) to connect to a WIP-managed device.</td>
@@ -81,17 +82,17 @@ This table provides info about the most common problems you might encounter whil
         <td>Disable RDP to prevent access because there is no way to restrict access to only devices managed by WIP. RDP is disabled by default.</td>
     </tr>
     <tr>
-        <td>You can't upload an enterprise file to a personal location using Microsoft Edge or Internet Explorer.</td>
-        <td>A message appears stating that the content is marked as <strong>Work</strong> and the user isn't given an option to override to <strong>Personal</strong>.</td>
+        <td>You can&#39;t upload an enterprise file to a personal location using Microsoft Edge or Internet Explorer.</td>
+        <td>A message appears stating that the content is marked as <strong>Work</strong> and the user isn&#39;t given an option to override to <strong>Personal</strong>.</td>
         <td>Open File Explorer and change the file ownership to <strong>Personal</strong> before you upload.</td>
     </tr>
     <tr>
         <td>ActiveX controls should be used with caution.</td>
         <td>Webpages that use ActiveX controls can potentially communicate with other outside processes that aren’t protected by using WIP.</td>
-        <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<br><br>For more info, see [Out-of-date ActiveX control blocking](https://technet.microsoft.com/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking).</td>
+        <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<br><br>For more info, see <a href="https://technet.microsoft.com/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking" data-raw-source="[Out-of-date ActiveX control blocking](https://technet.microsoft.com/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking)">Out-of-date ActiveX control blocking</a>.</td>
     </tr>
     <tr>
-         <td>Resilient File System (ReFS) isn't currently supported with WIP.</td>
+         <td>Resilient File System (ReFS) isn&#39;t currently supported with WIP.</td>
         <td>Trying to save or transfer WIP files to ReFS will fail.</td>
         <td>Format drive for NTFS, or use a different drive.</td>
     </tr>
@@ -114,7 +115,7 @@ This table provides info about the most common problems you might encounter whil
             </ul>
         </td>
         <td>WIP isn’t turned on for employees in your organization. Error code 0x807c0008 will result if WIP is deployed by using System Center Configuration Manager.</td>
-        <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection).
+        <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see <a href="https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection" data-raw-source="[Can&#39;t open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection)">Can&#39;t open files offline when you use Offline Files and Windows Information Protection</a>.
         </td>
     </tr>
     <tr>
@@ -124,7 +125,15 @@ This table provides info about the most common problems you might encounter whil
         <td>If all apps need to be managed, enroll the device for MDM.
         </td>
     </tr>
+    <tr>
+        <td>By design, files in the Windows directory (%windir% or C:/Windows) cannot be encrypted because they need to be accessed by any user. If a file in the Windows directory gets encypted by one user, other users can&#39;t access it.<br/>        </td>
+        <td>Any attempt to encrypt a file in the Windows directory will return a file access denied error. But if you copy or drag and drop an encrypted file to the Windows directory, it will retain encryption to honor the intent of the owner. 
+        </td>
+        <td>If you need to save an encrypted file in the Windows directory, create and encrypt the file in a different directory and copy it.
+        </td>
+    </tr>
 </table>
 
 >[!NOTE]
 >Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to our content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).       
+

@@ -2,6 +2,9 @@
 title: Assign applications using roles in MDT (Windows 10)
 description: This topic will show you how to add applications to a role in the MDT database and then assign that role to a computer.
 ms.assetid: d82902e4-de9c-4bc4-afe0-41d649b83ce7
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: settings, database, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,7 +12,6 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
-ms.date: 07/27/2017
 ms.topic: article
 ---
 
@@ -46,7 +48,7 @@ When the database is populated, you can use the MDT simulation environment to si
 1.  On PC0001, log on as **CONTOSO\\MDT\_BA**.
 2.  Modify the C:\\MDT\\CustomSettings.ini file to look like the following:
 
-    ``` syntax
+    ```ini
     [Settings]
     Priority=CSettings, CRoles, RApplications, Default
     [Default]
@@ -111,7 +113,7 @@ When the database is populated, you can use the MDT simulation environment to si
 
 3.  Using an elevated Windows PowerShell prompt (run as Administrator), run the following commands. Press **Enter** after each command:
 
-    ``` syntax
+    ```powershell
     Set-Location C:\MDT
     .\Gather.ps1
 

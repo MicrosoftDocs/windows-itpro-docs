@@ -1,8 +1,11 @@
 ---
 title: Planning for the App-V 5.0 Sequencer and Client Deployment
 description: Planning for the App-V 5.0 Sequencer and Client Deployment
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 57a604ad-90e1-4d32-86bb-eafff59aa43a
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,7 +27,7 @@ App-V 5.0 uses a process called sequencing to create virtualized applications an
 **Note**  
 For information about the new functionality of App-V 5.0 sequencer, see the **Changes to the sequencer** section of [What's New in App-V 5.0](whats-new-in-app-v-50.md).
 
- 
+ 
 
 The computer that runs the App-V 5.0 sequencer must meet the minimum system requirements. For a list of these requirements, see [App-V 5.0 Supported Configurations](app-v-50-supported-configurations.md).
 
@@ -39,7 +42,7 @@ Ideally, you should install the sequencer on a computer running as a virtual mac
 **Important**  
 You should have your corporate security team review and approve the sequencing process plan. For security reasons, you should keep the sequencer operations in a lab that is separate from the production environment. The separation arrangement can be as simple or as comprehensive as necessary, based on your business requirements. The sequencing computers must be able to connect to the corporate network to copy finished packages to the production servers. However, because the sequencing computers are typically operated without antivirus protection, they must not be on the corporate network unprotected. For example, you might be able to operate behind a firewall or on an isolated network segment. You might also be able to use virtual machines that are configured to share an isolated virtual network. Follow your corporate security policies to safely address these concerns.
 
- 
+ 
 
 [How to Install the Sequencer](how-to-install-the-sequencer-beta-gb18030.md)
 
@@ -94,9 +97,9 @@ The following list displays some of the benefits of using the App-V 5.0 shared c
 
 [Planning to Deploy App-V](planning-to-deploy-app-v.md)
 
- 
+ 
 
- 
+ 
 
 
 

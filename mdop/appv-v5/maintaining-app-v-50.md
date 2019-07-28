@@ -1,8 +1,11 @@
 ---
 title: Maintaining App-V 5.0
 description: Maintaining App-V 5.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 66851ec3-c674-493b-ad6d-db8fcbf1956c
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,7 +17,7 @@ ms.date: 06/16/2016
 # Maintaining App-V 5.0
 
 
-After you have completed all the necessary planning, and then deployment of App-V 5.0, you can use the following information to maiantain the App-V 5.0 infrastructure.
+After you have completed all the necessary planning, and then deployment of App-V 5.0, you can use the following information to maintain the App-V 5.0 infrastructure.
 
 ## <a href="" id="move-the-app-v-5-0-server-"></a>Move the App-V 5.0 Server
 

@@ -6,11 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: trudyha
+author: levinec
 searchScope:
   - Store
-ms.author: trudyha
+ms.author: ellevin
 ms.date: 06/05/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Get Minecraft: Education Edition with Windows 10 device promotion
@@ -54,7 +56,7 @@ After that, we’ll add the appropriate number of Minecraft: Education Edition l
 **To redeem Minecraft: Education Edition licenses**
 1. Visit [Minecraft: Education Edition and Windows 10 device promotion](https://educationstore.microsoft.com/store/mee-device-promo?setflight=wsfb_devicepromo) in **Microsoft Store for Education**. 
 
-     ![Minecraft: Education Edition page in Microsoft Store for Education. ](images/get-mcee-promo.png)
+     ![Minecraft: Education Edition page in Microsoft Store for Education.](images/get-mcee-promo.png)
      
 2. Sign in to **Microsoft Store for Education** using a school account. If you don’t have one, we’ll help you set one up. <br>
 -or-
@@ -64,7 +66,7 @@ After that, we’ll add the appropriate number of Minecraft: Education Edition l
     
 3. **On Minecraft Windows 10 device special offer**, click **Submit a device purchase**. 
 
-    ![Windows 10 device special offer page for Minecraft: Education Edition. Submit a device purchase is highlighted to show customers how to submit info about the devices you purchased. ](images/mcee-benefits.png)
+    ![Windows 10 device special offer page for Minecraft: Education Edition. Submit a device purchase is highlighted to show customers how to submit info about the devices you purchased.](images/mcee-benefits.png)
     
 4. Provide info for **Proof of Purchase**. Be sure to include a .pdf or .jpg of your invoice, and then click **Next**.
 

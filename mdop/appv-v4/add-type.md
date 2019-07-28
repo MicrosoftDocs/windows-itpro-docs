@@ -1,8 +1,11 @@
 ---
 title: ADD TYPE
 description: ADD TYPE
-author: jamiejdt
+author: dansimp
 ms.assetid: 8f1d3978-9977-4851-9f46-fee6aefa3535
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

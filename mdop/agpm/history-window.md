@@ -1,8 +1,11 @@
 ---
 title: History Window
 description: History Window
-author: jamiejdt
+author: mjcaparas
 ms.assetid: f11f9ad9-bffe-4c56-8c46-fe9c0a8e55c1
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

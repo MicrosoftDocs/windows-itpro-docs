@@ -2,11 +2,13 @@
 title: DeviceStatus DDF
 description: This topic shows the OMA DM device description framework (DDF) for the DeviceStatus configuration service provider. DDF files are used only with OMA DM provisioning XML.
 ms.assetid: 780DC6B4-48A5-4F74-9F2E-6E0D88902A45
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 03/12/2018
 ---
 
@@ -19,7 +21,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 The XML below is for Windows 10, version 1803.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

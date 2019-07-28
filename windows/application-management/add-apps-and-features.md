@@ -5,10 +5,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: article
-ms.author: elizapo
-author: lizap
+ms.author: tracyp
+author: msfttracyp
 ms.localizationpriority: medium
 ms.date: 04/26/2018
+ms.reviewer: 
+manager: dansimp
 ms.topic: article
 ---
 # How to add apps and features to Windows 10

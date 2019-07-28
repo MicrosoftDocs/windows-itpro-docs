@@ -2,6 +2,9 @@
 title: Common Migration Scenarios (Windows 10)
 description: Common Migration Scenarios
 ms.assetid: 1d8170d5-e775-4963-b7a5-b55e8987c1e4
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

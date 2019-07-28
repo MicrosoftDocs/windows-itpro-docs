@@ -1,12 +1,14 @@
 ---
 title: DynamicManagement CSP
 description: DynamicManagement CSP
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # DynamicManagement CSP
@@ -27,7 +29,7 @@ The following diagram shows the DynamicManagement configuration service provider
 <p style="margin-left: 20px">Default value is False. Supported operations are Get and Replace.</p>
 <p style="margin-left: 20px">Example to turn on NotificationsEnabled:</p>
 
-``` syntax
+```xml
 <Replace>
       <CmdID>100</CmdID>
       <Item>
@@ -82,7 +84,7 @@ The following diagram shows the DynamicManagement configuration service provider
 
 Disable Cortana based on Geo location and time, From 9am-5pm, when in the 100 meters radius of the specified latitude/longitude
 
-``` syntax
+```xml
     <Replace>
       <CmdID>200</CmdID>
       <Item>
@@ -136,7 +138,7 @@ Disable Cortana based on Geo location and time, From 9am-5pm, when in the 100 me
 
 Disable camera using network trigger with time trigger, from 9-5, when ip4 gateway is 192.168.0.1
 
-``` syntax
+```xml
 <Replace>
       <CmdID>300</CmdID>
       <Item>
@@ -191,7 +193,7 @@ Disable camera using network trigger with time trigger, from 9-5, when ip4 gatew
 
 Delete a context
 
-``` syntax
+```xml
 <Delete>
       <CmdID>400</CmdID>
       <Item>
@@ -204,7 +206,7 @@ Delete a context
 
 Get ContextStatus and SignalDefinition from a specific context
 
-``` syntax
+```xml
 <Get>
       <CmdID>400</CmdID>
       <Item>

@@ -1,8 +1,11 @@
 ---
 title: How to Install the App-V 5.0 Client for Shared Content Store Mode
 description: How to Install the App-V 5.0 Client for Shared Content Store Mode
-author: jamiejdt
+author: dansimp
 ms.assetid: 88f09e6f-19e7-48ea-965a-907052d1a02f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ Use the following procedure to install the Microsoft Application Virtualization 
 **Note**  
 Before performing this procedure if necessary uninstall any existing version of the App-V 5.0 client.
 
- 
+ 
 
 For more information about SCS mode, see [Shared Content Store in Microsoft App-V 5.0 – Behind the Scenes](https://go.microsoft.com/fwlink/?LinkId=316879) (https://go.microsoft.com/fwlink/?LinkId=316879).
 
@@ -34,20 +37,20 @@ For more information about SCS mode, see [Shared Content Store in Microsoft App-
         **Important**  
         You must perform a silent installation or the installation will fail.
 
-         
+         
 
 2.  After you have completed the installation you can deploy packages to the computer running the client and all package contents will be streamed across the network.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
 
 [Deploying the App-V 5.0 Sequencer and Client](deploying-the-app-v-50-sequencer-and-client.md)
 
- 
+ 
 
- 
+ 
 
 
 

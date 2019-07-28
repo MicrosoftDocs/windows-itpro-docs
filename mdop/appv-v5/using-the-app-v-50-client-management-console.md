@@ -1,8 +1,11 @@
 ---
 title: Using the App-V 5.0 Client Management Console
 description: Using the App-V 5.0 Client Management Console
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 36398307-57dd-40f3-9d4f-b09f44fd37c3
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

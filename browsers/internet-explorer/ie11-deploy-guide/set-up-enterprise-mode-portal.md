@@ -3,11 +3,14 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how to set up the Enterprise Mode Site List Portal for your organization.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 title: Set up the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ---
 
 # Set up the Enterprise Mode Site List Portal
@@ -43,7 +46,10 @@ You must download the deployment folder (**EMIEWebPortal/**), which includes all
 
    Installs the npm package manager and bulk adds all the third-party libraries back into your codebase.
 
-6. Go back up a directory, open the solution file **EMIEWebPortal.sln** in Visual Studio, and then build the entire solution.
+6. Go back up a directory, open the solution file **EMIEWebPortal.sln** in Visual Studio, open **Web.config** from **EMIEWebPortal/** folder, and replace MSIT-LOB-COMPAT with your server name hosting your database, replace LOBMerged with your database name, and build the entire solution.
+
+      >[!Note]
+      >Step 3 of this topic provides the steps to create your database.
 
 7. Copy the contents of the **EMIEWebPortal/** folder to a dedicated folder on your file system. For example, _D:\EMIEWebApp_. In a later step, you'll designate this folder as your website in the IIS Manager.
 
@@ -104,17 +110,6 @@ Create a new Application Pool and the website, by using the IIS Manager.
 
     >[!Note]
     >You must also make sure that **Anonymous Authentication** is marked as **Enabled**.
-
-10. Return to the **<<i>website_name</i>> Home** pane, and double-click the **Connection Strings** icon.
-
-11. Open the **LOBMergedEntities Connection String** to edit: 
-
-    - **Data source.** Type the name of your local computer.
-
-    - **Initial catalog.** The name of your database.
-
-        >[!Note]
-        >Step 3 of this topic provides the steps to create your database.
 
 ## Step 3 - Create and prep your database
 Create a SQL Server database and run our custom query to create the Enterprise Mode Site List tables.

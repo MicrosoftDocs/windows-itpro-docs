@@ -2,6 +2,9 @@
 title: User State Migration Tool (USMT) Command-line Syntax (Windows 10)
 description: User State Migration Tool (USMT) Command-line Syntax
 ms.assetid: f9d205c9-e824-46c7-8d8b-d7e4b52fd514
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,25 +28,25 @@ The User State Migration Tool (USMT) 10.0 migrates user files and settings duri
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[ScanState Syntax](usmt-scanstate-syntax.md)</p></td>
+<td align="left"><p><a href="usmt-scanstate-syntax.md" data-raw-source="[ScanState Syntax](usmt-scanstate-syntax.md)">ScanState Syntax</a></p></td>
 <td align="left"><p>Lists the command-line options for using the ScanState tool.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[LoadState Syntax](usmt-loadstate-syntax.md)</p></td>
+<td align="left"><p><a href="usmt-loadstate-syntax.md" data-raw-source="[LoadState Syntax](usmt-loadstate-syntax.md)">LoadState Syntax</a></p></td>
 <td align="left"><p>Lists the command-line options for using the LoadState tool.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[UsmtUtils Syntax](usmt-utilities.md)</p></td>
+<td align="left"><p><a href="usmt-utilities.md" data-raw-source="[UsmtUtils Syntax](usmt-utilities.md)">UsmtUtils Syntax</a></p></td>
 <td align="left"><p>Lists the command-line options for using the UsmtUtils tool.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

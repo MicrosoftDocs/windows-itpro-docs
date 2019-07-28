@@ -2,12 +2,14 @@
 title: Network access Remotely accessible registry paths and subpaths (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Network access Remotely accessible registry paths and subpaths security policy setting.
 ms.assetid: 3fcbbf70-a002-4f85-8e86-8dabad21928e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -56,7 +58,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | See the following registry key combination| 
 | Member Server Effective Default Settings | See the following registry key combination| 
 | Client Computer Effective Default Settings | See the following registry key combination| 
- 
+ 
 The combination of all the following registry keys apply to the previous settings:
 
 1.  System\\CurrentControlSet\\Control\\Print\\Printers
@@ -96,7 +98,7 @@ Configure the **Network access: Remotely accessible registry paths and sub-paths
 Remote management tools such as MBSA and Configuration Manager require remote access to the registry to properly monitor and manage those computers. If you remove the default registry paths from the list of accessible ones, such remote management tools could fail.
 
 >**Note:**  If you want to allow remote access, you must also enable the Remote Registry service.
- 
+ 
 ## Related topics
 
 - [Security Options](security-options.md)

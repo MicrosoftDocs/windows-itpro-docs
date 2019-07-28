@@ -5,9 +5,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: elizapo
-author: lizap
+ms.author: tracyp
+author: msfttracyp
 ms.date: 09/14/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Per-user services in Windows 10 and Windows Server 
@@ -170,7 +172,7 @@ Set-Service <service name> -StartupType Disabled
 
 ## View per-user services in the Services console (services.msc)
 
-As mentioned you can't view the template services in the Services console, but you can see the user-specific per-user services - they are displayed using the <service name>_LUID format (where LUID is the locally unique identifier).
+As mentioned you can't view the template services in the Services console, but you can see the user-specific per-user services - they are displayed using the \<service name>_LUID format (where LUID is the locally unique identifier).
 
 For example, you might see the following per-user services listed in the Services console:
 

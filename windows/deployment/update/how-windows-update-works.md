@@ -4,10 +4,12 @@ description: Learn how Windows Update works, including architecture and troubles
 ms.prod: w10
 ms.mktglfcycl: 
 ms.sitesec: library
-author: kaushika-msft
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: elizapo
+ms.author: greglin
 ms.date: 09/18/2018
+ms.reviewer: 
+manager: laurawi
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

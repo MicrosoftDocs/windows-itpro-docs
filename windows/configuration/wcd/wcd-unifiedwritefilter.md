@@ -4,11 +4,13 @@ description: This section describes the UnifiedWriteFilter settings that you can
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 10/02/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # UnifiedWriteFilter (reference)
@@ -23,7 +25,7 @@ UWF intercepts all write attempts to a protected volume and redirects those writ
 
 The overlay does not mirror the entire volume, but dynamically grows to keep track of redirected writes. Generally the overlay is stored in system memory, although you can cache a portion of the overlay on a physical volume. 
 
->[!NOTE]  
+>[!NOTE]
 >UWF fully supports the NTFS system; however, during device startup, NTFS file system journal files can write to a protected volume before UWF has loaded and started protecting the volume. 
 
 [Learn more about the Unified Write Filter feature.](https://docs.microsoft.com/windows-hardware/customize/enterprise/unified-write-filter)

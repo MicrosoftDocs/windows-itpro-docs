@@ -2,12 +2,14 @@
 title: Designing a Windows Defender Firewall with Advanced Security Strategy (Windows 10)
 description: Designing a Windows Defender Firewall Strategy
 ms.assetid: 6d98b184-33d6-43a5-9418-4f24905cfd71
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -50,4 +52,4 @@ The information that you gather will help you answer the following questions. Th
 
 This guide describes how to plan your groups and GPOs for an environment with a mix of operating systems. Details can be found in the section [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) later in this guide.
 
-**Next: **[Gathering the Information You Need](gathering-the-information-you-need.md)
+**Next:** [Gathering the Information You Need](gathering-the-information-you-need.md)

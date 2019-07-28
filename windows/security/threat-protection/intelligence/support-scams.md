@@ -1,12 +1,13 @@
 ---
 title: Tech Support Scams
+ms.reviewer: 
 description: Microsoft security software can protect you from tech support scams that claims to scan for malware or viruses and then shows you fake detections and warnings.
 keywords: security, malware, tech support, scam, protection, trick, spoof, fake, error messages, report, rogue security software, fake, antivirus, fake software, rogue, threats, fee, removal fee, upgrade, pay for removal, install full version, trial, lots of threats, scanner, scan, clean, computer, security, program, XP home security, fake microsoft, activate, activate scan, activate antivirus, warnings, pop-ups, security warnings, security pop-ups tech support scams, fake Microsoft error notification, fake virus alert, fake product expiration, fake Windows activation, scam web pages, scam phone numbers, telephone numbers, MMPC, WDSI, Microsoft Malware Protection Center, tech support scam numbers
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: ellevin
+ms.author: levinec
 author: levinec
 manager: dansimp
 audience: ITPro
@@ -62,6 +63,6 @@ It is also important to keep the following in mind:
 
 Help Microsoft stop scammers, whether they claim to be from Microsoft or from another tech company, by reporting tech support scams:
 
-**www.microsoft.com/reportascam**
+<strong>www.microsoft.com/reportascam</strong>
 
 You can also report any **unsafe website** that you suspect is a phishing website or contains malicious content directly to Microsoft by filling out a [Report an unsafe site form](https://www.microsoft.com/wdsi/support/report-unsafe-site) or using built in web browser functionality.

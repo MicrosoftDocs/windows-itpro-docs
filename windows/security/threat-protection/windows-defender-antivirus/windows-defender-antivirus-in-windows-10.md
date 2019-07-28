@@ -9,16 +9,17 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
-ms.date: 09/03/2018
+author: dansimp
+ms.author: dansimp
+ms.reviewer: 
+manager: dansimp
 ---
 
-# Windows Defender Antivirus in Windows 10 and Windows Server 2016
+# Windows Defender Antivirus
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Windows Defender Antivirus is a built-in antimalware solution that provides next generation protection for desktops, portable computers, and servers.
 
@@ -26,6 +27,9 @@ Windows Defender Antivirus includes:
 - [Cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for near-instant detection and blocking of new and emerging threats. Along with machine learning and the Intelligent Security Graph, cloud-delivered protection is part of the next-gen technologies that power Windows Defender Antivirus. 
 - [Always-on scanning](configure-real-time-protection-windows-defender-antivirus.md), using advanced file and process behavior monitoring and other heuristics (also known as "real-time protection")
 - [Dedicated protection updates](manage-updates-baselines-windows-defender-antivirus.md) based on machine-learning, human and automated big-data analysis, and in-depth threat resistance research
+
+Windows Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, real-time, and intelligent protection. [Get to know the advanced technologies at the core of Microsoft Defender ATP next generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+![List of Windows Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 You can configure and manage Windows Defender Antivirus with:
 - System Center Configuration Manager (as System Center Endpoint Protection, or SCEP) 
@@ -40,24 +44,10 @@ You can configure and manage Windows Defender Antivirus with:
 >- Fast learning (including Block at first sight)
 >- Potentially unwanted application blocking
 
-## What's new in Windows 10, version 1803
+> [!NOTE]
+> For more information regarding what's new in each Windows version, please refer to [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp).
 
-- The [block at first sight feature](configure-block-at-first-sight-windows-defender-antivirus.md) can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
-- The [Virus & threat protection area in the Windows Security app](windows-defender-security-center-antivirus.md) now includes a section for ransomware protection. It includes controlled folder access settings and ransomware recovery settings.
-
-
-## What's new in Windows 10, version 1703
-
-New features for Windows Defender Antivirus in Windows 10, version 1703 include:
-- [Updates to how the block at first sight feature can be configured](configure-block-at-first-sight-windows-defender-antivirus.md)
-- [The ability to specify the level of cloud-protection](specify-cloud-protection-level-windows-defender-antivirus.md)
-- [Windows Defender Antivirus protection in the Windows Security app](windows-defender-security-center-antivirus.md)
-
-We've expanded this documentation library to cover end-to-end deployment, management, and configuration for Windows Defender Antivirus, and we've added some new guides that can help with evaluating and deploying Windows Defender AV in certain scenarios:
-- [Evaluation guide for Windows Defender Antivirus](evaluate-windows-defender-antivirus.md)
-- [Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure environment](deployment-vdi-windows-defender-antivirus.md)
-
-
+=======
 <a id="sysreq"></a>
 ## Minimum system requirements
 
@@ -66,6 +56,12 @@ Windows Defender AV has the same hardware requirements as Windows 10. For more i
 -   [Hardware component guidelines](https://msdn.microsoft.com/library/windows/hardware/dn915049.aspx)
 
 Functionality, configuration, and management is largely the same when using Windows Defender AV on Windows Server 2016; however, [there are some differences](windows-defender-antivirus-on-windows-server-2016.md).
+
+>[!TIP]
+>You can visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working and see how they work:
+>- Cloud-delivered protection
+>- Fast learning (including Block at first sight)
+>- Potentially unwanted application blocking
 
 ## Related topics
 

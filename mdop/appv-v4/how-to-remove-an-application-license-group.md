@@ -1,8 +1,11 @@
 ---
 title: How to Remove an Application License Group
 description: How to Remove an Application License Group
-author: jamiejdt
+author: eavena
 ms.assetid: 35830916-7015-44cd-829b-23599a5029a7
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ In the Application Virtualization Server Management Console, you can use the fol
 **Important**  
 Before you can remove a license group, you must remove any licenses associated with the group.
 
- 
+ 
 
 **To remove a license group**
 
@@ -48,9 +51,9 @@ Before you can remove a license group, you must remove any licenses associated w
 
 [How to Set Up an Unlimited License Group](how-to-set-up-an-unlimited-license-group.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,10 +4,12 @@ description: A test scenario about how to set a location-based reminder using Co
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: dougkim
+ms.author: dansimp
 ms.date: 10/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Test scenario 3 - Set a reminder for a specific location using Cortana at work
@@ -83,4 +85,4 @@ This process helps you to edit or archive and existing or completed reminder.
 
     ![Cortana at work, showing the reminder editing screen](../images/cortana-reminder-edit.png)
 
-3.	Change any text that you want to change, click **Add photo** if you want to add or replace an image, click **Delete** if you want to delete the entire reminder, click **Save** to save your changes, and click **Complete and move to History** if you want to save a completed reminder in your **Reminder History**.
+3. Change any text that you want to change, click **Add photo** if you want to add or replace an image, click **Delete** if you want to delete the entire reminder, click **Save** to save your changes, and click **Complete and move to History** if you want to save a completed reminder in your **Reminder History**.

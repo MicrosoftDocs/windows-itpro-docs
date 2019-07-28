@@ -2,11 +2,13 @@
 title: Maps CSP
 description: The Maps configuration service provider (CSP) is used to configure the maps to download to the device. This CSP was added in Windows 10, version 1511.
 ms.assetid: E5157296-7C31-4B08-8877-15304C9F6F26
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -17,7 +19,7 @@ The Maps configuration service provider (CSP) is used to configure the maps to d
 
 > **Note**  The Maps CSP is only supported in Windows 10 Mobile.
 
- 
+ 
 
 The following diagram shows the Maps configuration service provider in tree format.
 
@@ -29,7 +31,7 @@ Root node.
 <a href="" id="packages"></a>**Packages**  
 Represents the map packages installed on the device.
 
-<a href="" id="packages-package"></a>**Packages/****_Package_**  
+<a href="" id="packages-package"></a>**Packages/**<strong>*Package*</strong>  
 A GUID that represents a map package. When you add a *Package* node, Windows adds it to the queue for download to the device. See the table below for the list of various maps and corresponding GUIDS.
 
 <a href="" id="packages-package-status"></a>**Packages/*Package*/Status**  
@@ -120,11 +122,11 @@ Here is a list of GUIDs of the most downloaded reqions.
 | Wisconsin                     | 0b5a98f7-489d-4a07-859b-4e01fe9e1b32 |
 | Wyoming                       | 360e0c25-a3bb-4e29-939a-3631eae46e9a |
 
- 
+ 
 
 Here is an example queuing a map package of New York for download.
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
        <Add>
@@ -142,7 +144,7 @@ Here is an example queuing a map package of New York for download.
 
 Here is an example that gets the status of the New York map package on the device.
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
        <Get>
@@ -158,9 +160,9 @@ Here is an example that gets the status of the New York map package on the devic
 </SyncML>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

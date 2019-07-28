@@ -4,6 +4,8 @@ description: Applying hotfixes on MBAM 2.5 SP1
 ms.author: ppriya-msft
 author: intothedarkness 
 ms.assetid: 
+ms.reviewer: 
+manager: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

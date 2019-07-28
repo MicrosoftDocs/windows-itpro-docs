@@ -1,8 +1,11 @@
 ---
 title: Monitoring MED-V Workspace Deployments
 description: Monitoring MED-V Workspace Deployments
-author: jamiejdt
+author: levinec
 ms.assetid: 5de0cb06-b8a9-48a5-b8b3-836954295765
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

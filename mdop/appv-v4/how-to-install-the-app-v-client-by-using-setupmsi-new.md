@@ -1,8 +1,11 @@
 ---
 title: How to Install the App-V Client by Using Setup.msi
 description: How to Install the App-V Client by Using Setup.msi
-author: jamiejdt
+author: dansimp
 ms.assetid: 7221f384-36d6-409a-94a2-86f54fd75322
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,22 +27,22 @@ You can use the following procedures to install the prerequisite software. You c
 **Note**  
 The x86 versions of the following software are required for both x86 and x64 versions of the App-V client.
 
- 
+ 
 
 **To install Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)**
 
-1.  Download the [Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=119961) software package from the Microsoft Download Center (https://go.microsoft.com/fwlink/?LinkId=119961). \[Template Token Value\] For version 4.5 SP2 and later of the App-V client, download vcredist\_x86.exe from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update](https://go.microsoft.com/fwlink/?LinkId=169360) (https://go.microsoft.com/fwlink/?LinkId=169360).\[Template Token Value\]
+1. Download the [Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)](https://go.microsoft.com/fwlink/?LinkId=119961) software package from the Microsoft Download Center (<https://go.microsoft.com/fwlink/?LinkId=119961>). \[Template Token Value\] For version 4.5 SP2 and later of the App-V client, download vcredist\_x86.exe from [Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package ATL Security Update](https://go.microsoft.com/fwlink/?LinkId=169360) (https://go.microsoft.com/fwlink/?LinkId=169360).\[Template Token Value\]
 
-2.  To install silently, use the command-line option “/Q” with vcredist\_x86.exe—for example, **vcredist\_x86.exe /Q**.
+2. To install silently, use the command-line option “/Q” with vcredist\_x86.exe—for example, **vcredist\_x86.exe /Q**.
 
-3.  To install the software by using the vcredist\_x86.msi file, use the command-line option “/C /T:&lt;fullpathtofolder&gt;” to extract the files vcredist.msi and vcredis1.cab from vcredist\_x86.exe to a temporary folder. To install silently, use the command-line option /quiet—for example, **msiexec /i vcredist.msi** /quiet.
+3. To install the software by using the vcredist\_x86.msi file, use the command-line option “/C /T:&lt;fullpathtofolder&gt;” to extract the files vcredist.msi and vcredis1.cab from vcredist\_x86.exe to a temporary folder. To install silently, use the command-line option /quiet—for example, **msiexec /i vcredist.msi** /quiet.
 
 ### To install Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)
 
 **Important**  
 For version 4.6 and later of the App-V client, you must also install the Microsoft Visual C++ 2008 Service Pack 1 Redistributable Package ATL Security Update.
 
- 
+ 
 
 ****
 
@@ -62,7 +65,7 @@ When installing Microsoft Application Error Reporting, you must use the *APPGUID
 **Important**  
 For App-V 4.6 SP2 and later, you no longer need to install Microsoft Application Error Reporting (dw20shared.msi). App-V now uses Microsoft Error Reporting.
 
- 
+ 
 
 <table>
 <colgroup>
@@ -126,14 +129,14 @@ For App-V 4.6 SP2 and later, you no longer need to install Microsoft Applicati
 </tbody>
 </table>
 
- 
+ 
 
 ¹ App-V “Languages” release.
 
 **Note**  
 If you need to find the product code, you can use the Orca.exe database editor or a similar tool to examine Windows Installer files to find the value of the *ProductCode* property. For more information about using Orca.exe, see [Windows Installer Development Tools](https://go.microsoft.com/fwlink/?LinkId=150008) (https://go.microsoft.com/fwlink/?LinkId=150008).
 
- 
+ 
 
 ****
 
@@ -141,7 +144,7 @@ If you need to find the product code, you can use the Orca.exe database editor o
 
 2.  To install the software, run the following command:
 
-         **msiexec /i dw20shared.msi APPGUID={valuefromtable} REBOOT=Suppress REINSTALL=ALL REINSTALLMODE=vomus**
+         **msiexec /i dw20shared.msi APPGUID={valuefromtable} REBOOT=Suppress REINSTALL=ALL REINSTALLMODE=vomus**
 
 ## <a href="" id="msi-setup"></a>Installing the App-V Client by Using the Setup.msi Program
 
@@ -167,16 +170,16 @@ Use the following procedure to install the App-V client. Ensure that any necessa
 
     -   To turn on installation logging, use the msiexec switch **/l\*v filename.log**.
 
-     
+     
 
 ## Related topics
 
 
 [How to Install the Client by Using the Command Line](how-to-install-the-client-by-using-the-command-line-new.md)
 
- 
+ 
 
- 
+ 
 
 
 

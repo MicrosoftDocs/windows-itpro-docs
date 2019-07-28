@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4750(S): A security-disabled global group was changed.
@@ -71,7 +74,6 @@ From 4750 event you can get information about changes of **sAMAccountName** and 
  <Data Name="SidHistory">-</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** Active Directory domain controller.
@@ -107,7 +109,7 @@ From 4750 event you can get information about changes of **sAMAccountName** and 
 -   **Security ID** \[Type = SID\]**:** SID of changed group. Event Viewer automatically tries to resolve SIDs and show the group name. If the SID cannot be resolved, you will see the source data in the event.
 
 > **Note**&nbsp;&nbsp;Sometimes you can see the **Group\\Security ID** field contains an old group name in Event Viewer (as you can see in the event example). That happens because Event Viewer caches names for SIDs that it has already resolved for the current session.
-
+> 
 > **Note**&nbsp;&nbsp;**Security ID** field has the same value as new group name (**Changed Attributes&gt;SAM Account Name**). That is happens because event is generated after name was changed and SID resolves to the new name. It is always better to use SID instead of group names for queries or filtering of events, because you will know for sure that this the right object you are looking for or want to monitor.
 
 -   **Group Name** \[Type = UnicodeString\]**:** the name of the group that was changed. For example: ServiceDesk
@@ -125,7 +127,7 @@ From 4750 event you can get information about changes of **sAMAccountName** and 
 **Changed Attributes:**
 
 > **Note**&nbsp;&nbsp;If attribute was not changed it will have “-“ value.
-
+> 
 > **Note**&nbsp;&nbsp;You might see a 4750 event without any changes inside, that is, where all **Changed Attributes** appear as “-“. This usually happens when a change is made to an attribute that is not listed in the event. In this case there is no way to determine which attribute was changed. For example, this would happen if you change the Description of a group object using the Active Directory Users and Computers administrative console. Also, if the [discretionary access control list](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) (DACL) is changed, a 4750 event will generate, but all attributes will be “-“.
 
 -   **SAM Account Name** \[Type = UnicodeString\]: This is a new name of changed group used to support clients and servers from previous versions of Windows (pre-Windows 2000 logon name). If the value of **sAMAccountName** attribute of group object was changed, you will see the new value here. For example: ServiceDesk.
