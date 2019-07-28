@@ -2,6 +2,9 @@
 title: MDT Lite Touch components (Windows 10)
 description: This topic provides an overview of the features in the Microsoft Deployment Toolkit (MDT) that support Lite Touch Installation (LTI) for Windows 10.
 ms.assetid: 7d6fc159-e338-439e-a2e6-1778d0da9089
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deploy, install, deployment, boot, log, monitor
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,7 +12,6 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 author: greg-lindsay
-ms.date: 07/27/2017
 ms.topic: article
 ---
 
@@ -81,7 +83,7 @@ MDT comes with nine default task sequence templates. You can also create your ow
 
     **Note**  
     It is preferable to use a complete build and capture instead of the Sysprep and Capture task sequence. A complete build and capture can be automated, whereas Sysprep and Capture cannot.
-     
+     
 -   **Standard Client task sequence.** The most frequently used task sequence. Used for creating reference images and for deploying clients in production.
 -   **Standard Client Replace task sequence.** Used to run User State Migration Tool (USMT) backup and the optional full Windows Imaging (WIM) backup action. Can also be used to do a secure wipe of a machine that is going to be decommissioned.
 -   **Custom task sequence.** As the name implies, a custom task sequence with only one default action (one Install Application action).
@@ -107,7 +109,7 @@ MDT uses many log files during operating system deployments. By default the logs
 
 **Note**  
 The easiest way to view log files is to use Configuration Manager Trace (CMTrace), which is included in the [System Center 2012 R2 Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717).
- 
+ 
 ## <a href="" id="sec12"></a>Monitoring
 
 On the deployment share, you also can enable monitoring. After you enable monitoring, you will see all running deployments in the Monitor node in the Deployment Workbench.

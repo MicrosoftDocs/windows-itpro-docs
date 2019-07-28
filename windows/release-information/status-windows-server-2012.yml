@@ -1,0 +1,101 @@
+﻿### YamlMime:YamlDocument
+
+documentType: LandingData
+title: Windows Server 2012
+metadata:
+  document_id: 
+  title: Windows Server 2012
+  description: View announcements and review known issues and fixes for Windows Server 2012
+  keywords: Windows 10, issues, fixes, announcements, Windows Server, advisories
+  ms.localizationpriority: high
+  author: greg-lindsay
+  ms.author: greglin
+  manager: dougkim
+  ms.topic: article
+  ms.devlang: na
+
+sections:
+- items:
+  - type: markdown
+    text: "
+      Find information on known issues for Windows Server 2012. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
+      
+      " 
+
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    
+    - href: https://blogs.windows.com/windowsexperience/2019/05/21/how-to-get-the-windows-10-may-2019-update/#1P75kJB6T5OhySyo.97
+      html: Get the update >
+      image: 
+        src: https://docs.microsoft.com/media/common/i_deploy.svg
+      title: Windows 10, version 1903 rollout begins
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064
+      html: Read about the latest enhancements > 
+      image: 
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+      title: What’s new in Windows Update for Business
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024
+      html: Get an overview > 
+      image: 
+        src: https://docs.microsoft.com/media/common/i_investigate.svg
+      title: What’s new for businesses and IT pros in Windows 10
+- items:
+  - type: markdown
+    text: "
+      <div align='right' style='font-size:0.87rem'><a class='is-size-7' href='https://docs.microsoft.com/windows/release-information/windows-message-center'>See all messages ></a></div>
+      "
+- items:
+  - type: markdown
+    text: "
+        <hr class='cardsM'>
+      "
+
+- title: Known issues
+- items:
+  - type: markdown
+    text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div><br>
+      <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
+      <tr><td><div id='530msg'></div><b>Devices starting using PXE from a WDS or SCCM servers may fail to start</b><br>Devices that start up using Preboot Execution Environment (PXE) images from Windows Deployment Services (WDS) may fail to start with error \"0xc0000001.\"<br><br><a href = '#530msgdesc'>See details ></a></td><td>June 11, 2019<br><a href ='https://support.microsoft.com/help/4503285' target='_blank'>KB4503285</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>July 10, 2019 <br>07:09 PM PT</td></tr>
+      <tr><td><div id='378msg'></div><b>Japanese IME doesn't show the new Japanese Era name as a text input option</b><br>If previous dictionary updates are installed, the Japanese input method editor (IME) doesn't show the new Japanese Era name as a text input option.<br><br><a href = '#378msgdesc'>See details ></a></td><td>April 25, 2019<br><a href ='https://support.microsoft.com/help/4493462' target='_blank'>KB4493462</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>May 15, 2019 <br>05:53 PM PT</td></tr>
+      <tr><td><div id='314msg'></div><b>Certain operations performed on a Cluster Shared Volume may fail</b><br>Certain operations, such as rename, performed on files or folders on a Cluster Shared Volume (CSV) may fail with the error, “STATUS_BAD_IMPERSONATION_LEVEL (0xC00000A5)”.<br><br><a href = '#314msgdesc'>See details ></a></td><td>January 08, 2019<br><a href ='https://support.microsoft.com/help/4480975' target='_blank'>KB4480975</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>April 25, 2019 <br>02:00 PM PT</td></tr>
+      </table>
+      "
+
+- title: Issue details
+- items:
+  - type: markdown
+    text: "
+        <div>
+        </div> 
+      "
+- title: July 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='530msgdesc'></div><b>Devices starting using PXE from a WDS or SCCM servers may fail to start</b><div>Devices that start up using Preboot Execution Environment (PXE) images from Windows Deployment Services (WDS) or System Center Configuration Manager (SCCM) may fail to start with the error \"Status: 0xc0000001, Info: A required device isn't connected or can't be accessed\" after installing <a href='https://support.microsoft.com/help/4503285' target='_blank'>KB4503285</a> on a WDS server.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Server: Windows Server 2008 SP2; Windows Server 2008 R2 SP1; Windows Server 2012; Windows Server 2012 R2; Windows Server 2016; Windows Server, version 1803; Windows Server 2019; Windows Server, version 1809; Windows Server, version 1903</li></ul><div></div><div><strong>Workaround: </strong></div><div>To mitigate this issue on an SCCM server:</div><ol><li>Verify Variable Window Extension&nbsp;is enabled.</li><li>Set the values of <strong>TFTP block size </strong>to <strong>4096</strong> and <strong>TFTP window size </strong>to <strong>1</strong>. For guidance on how to configure them<strong>, </strong>see <a href=\"https://docs.microsoft.com/en-us/sccm/osd/get-started/prepare-site-system-roles-for-operating-system-deployments#BKMK_RamDiskTFTP\" target=\"_blank\">Customize the RamDisk TFTP block and window sizes on PXE-enabled distribution points</a>.</li></ol><div><strong>Note </strong>Try the default values for <strong>TFTP block size </strong>and <strong>TFTP window size </strong>first but depending on your environment and overall settings, you may need to adjust them for your setup. You can also try the <strong>Enable a PXE responder without Windows Deployment Service</strong> setting. For more information on this setting, see <a href=\"https://docs.microsoft.com/en-us/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-pxe\" target=\"_blank\">Install and configure distribution points in Configuration Manager</a>.</div><div><br></div><div>To mitigate this issue on a WDS server without SCCM:</div><ol><li>In WDS TFTP settings, verify Variable Window Extension&nbsp;is enabled.</li><li>In the Boot Configuration Data (BCD) of the imported image, set RamDiskTFTPBlockSize to 1456.</li><li>In the BCD of the imported image, set RamDiskTFTPWindowSize to 4.</li></ol><div><strong>Note </strong>Try the default values for RamDiskTFTPBlockSize and RamDiskTFTPWindowSize first but depending on your environment and overall settings, you may need to adjust them for your setup.</div><div><br></div><div><strong>Next steps: </strong>We are working on a resolution and will provide an update in an upcoming release.</div><br><a href ='#530msg'>Back to top</a></td><td>June 11, 2019<br><a href ='https://support.microsoft.com/help/4503285' target='_blank'>KB4503285</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>Last updated:<br>July 10, 2019 <br>07:09 PM PT<br><br>Opened:<br>July 10, 2019 <br>02:51 PM PT</td></tr>
+      </table>
+      "
+
+- title: May 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='378msgdesc'></div><b>Japanese IME doesn't show the new Japanese Era name as a text input option</b><div>If previous dictionary updates are installed, the Japanese input method editor (IME) doesn't show the new Japanese Era name as a text input option.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 8.1</li><li>Server: Windows Server 2012 R2; Windows Server 2012</li></ul><div></div><div><strong>Workaround: </strong></div><div>If you see any of the previous dictionary updates listed below, uninstall it from <strong>Programs and features</strong> &gt; <strong>Uninstall or change a program</strong>. New words that were in previous dictionary updates are also in this update.</div><ul><li>Update for Japanese Microsoft IME Standard Dictionary (15.0.2013)</li><li>Update for Japanese Microsoft IME Standard Extended Dictionary (15.0.2013)</li><li>Update for Japanese Microsoft IME Standard Dictionary (15.0.1215)</li><li>Update for Japanese Microsoft IME Standard Extended Dictionary (15.0.1215)</li><li>Update for Japanese Microsoft IME Standard Dictionary (15.0.1080)</li><li>Update for Japanese Microsoft IME Standard Extended Dictionary (15.0.1080)</li></ul><br><a href ='#378msg'>Back to top</a></td><td>April 25, 2019<br><a href ='https://support.microsoft.com/help/4493462' target='_blank'>KB4493462</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>Last updated:<br>May 15, 2019 <br>05:53 PM PT<br><br>Opened:<br>May 15, 2019 <br>05:53 PM PT</td></tr>
+      </table>
+      "
+
+- title: January 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='314msgdesc'></div><b>Certain operations performed on a Cluster Shared Volume may fail</b><div>Certain operations, such as&nbsp;<strong>rename</strong>, that you perform on files or folders that are on a Cluster Shared Volume (CSV) may fail with the error, \"STATUS_BAD_IMPERSONATION_LEVEL (0xC00000A5)\". This occurs when you perform the operation on a CSV owner node from a process that doesn’t have administrator privilege.</div><div><br></div><div><strong>Affected platforms:</strong>&nbsp;</div><ul><li>Client: Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709; Windows 10, version 1703; Windows 10, version 1607; Windows 10 Enterprise LTSC 2016; Windows 10, version 1507; Windows 10 Enterprise LTSB 2015; Windows 8.1</li><li>Server: Windows Server, version 1809; Windows Server 2019; Windows Server, version 1803; Windows Server, version 1709; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012</li></ul><div></div><div><strong>Workaround:</strong> Do one of the following:</div><ul><li>Perform the operation from a process that has administrator privilege.</li><li>Perform the operation from a node that doesn’t have CSV ownership.</li></ul><div></div><div><strong>Next steps:</strong> Microsoft is working on a resolution and will provide an update in an upcoming release.</div><br><a href ='#314msg'>Back to top</a></td><td>January 08, 2019<br><a href ='https://support.microsoft.com/help/4480975' target='_blank'>KB4480975</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>Last updated:<br>April 25, 2019 <br>02:00 PM PT<br><br>Opened:<br>January 08, 2019 <br>10:00 AM PT</td></tr>
+      </table>
+      "

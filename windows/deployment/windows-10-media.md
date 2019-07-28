@@ -6,6 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.date: 10/20/2017
+ms.reviewer: 
+manager: laurawi
+ms.author: greg-lindsay
 ms.sitesec: library
 author: greg-lindsay
 ms.topic: article
@@ -36,7 +39,7 @@ Windows 10, version 1709 is available starting on 10/17/2017 in all relevant dis
 
 For ISOs that you download from the VLSC or Visual Studio Subscriptions, you can still search for the individual Windows editions. However, each of these editions (Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education) will point to the same ISO file, so you only need to download the ISO once. A single Windows image (WIM) file is included in the ISO that contains all the volume licensing images:
 
-![Images](images\table01.png)
+![Images](images/table01.png)
 
 When using the contents of these ISOs with tools such as the Microsoft Deployment Toolkit or System Center Configuration Manager, make sure you select the appropriate image index in any task sequences that you create or update.
 
@@ -63,7 +66,7 @@ This Semi-Annual Channel release of Windows 10 continues the Windows as a servic
 
 See the following example for Windows 10, version 1709:
 
-![Windows 10, version 1709 lang pack](images\lang-pack-1709.png)
+![Windows 10, version 1709 lang pack](images/lang-pack-1709.png)
 
 ### Features on demand
 

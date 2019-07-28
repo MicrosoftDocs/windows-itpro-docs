@@ -2,14 +2,15 @@
 title: Event ID 300 - Windows Hello successfully created (Windows 10)
 description: This event is created when a Windows Hello for Business is successfully created and registered with Azure Active Directory (Azure AD).
 ms.assetid: 0DD59E75-1C5F-4CC6-BB0E-71C83884FF04
+ms.reviewer: 
 keywords: ngc
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -27,13 +28,14 @@ This event is created when Windows Hello for Business is successfully created an
 
 ## Event details
 
-| **Product:** | Windows 10 operating system |     
-| --- | --- |                                                                                                                                
-| **ID:** | 300 |
-| **Source:**  | Microsoft Azure Device Registration Service |
-| **Version:** | 10  |
+| **Product:** |                                                                                                                                            Windows 10 operating system                                                                                                                                            |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Log:**     | Event Viewer > Applications and Service Logs\Microsoft\Windows\User Device Registration\Admin |
+|   **ID:**    |                                                                                                                                                        300                                                                                                                                                        |
+| **Source:**  |                                                                                                                                    Microsoft Azure Device Registration Service                                                                                                                                    |
+| **Version:** |                                                                                                                                                        10                                                                                                                                                         |
 | **Message:** | The NGC key was successfully registered. Key ID: {4476694e-8e3b-4ef8-8487-be21f95e6f07}. UPN:test@contoso.com. Attestation: ATT\_SOFT. Client request ID: . Server request ID: db2da6bd-3d70-4b9b-b26b-444f669902da.</br>Server response: {"kid":"4476694e-8e3b-4ef8-8487-be21f95e6f07","upn":"test@contoso.com"} |
- 
+ 
 ## Resolve
 
 This is a normal condition. No further action is required.

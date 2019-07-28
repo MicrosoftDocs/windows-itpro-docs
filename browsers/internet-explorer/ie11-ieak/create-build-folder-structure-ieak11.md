@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: How to create your folder structure on the computer that you’ll use to build your custom browser package.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: e0d05a4c-099f-4f79-a069-4aa1c28a1080
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Create the build computer folder structure using IEAK 11  (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

@@ -1,9 +1,11 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Configure Start Pages -->
@@ -14,10 +16,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |
-|---|:---:|:---:|---|
-|Not configured |Blank |Blank |Load the pages specified in App settings as the default Start pages. | 
-|Enabled |String |String |Enter the URLs of the pages you want to load as the Start pages, separating each page using angle brackets:<p><p>&nbsp;&nbsp;&nbsp;&nbsp;\<support.contoso.com\>\<support.microsoft.com\><p>**Version 1703 or later:**<br>If you do not want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non-domain-joined devices when it's the only configured URL.<p>**Version 1809:**<br>When you enable the Configure Open Microsoft Edge With policy with any option selected, and you enable the Configure Start Pages policy, the Configure Open Microsoft Edge With policy takes precedence, ignoring the Configure Start Pages policy.  | 
+|  Group Policy  |  MDM   | Registry |                                                                                                                                                                                                                                                                                                                                  Description                                                                                                                                                                                                                                                                                                                                   |
+|----------------|:------:|:--------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Not configured | Blank  |  Blank   |                                                                                                                                                                                                                                                                                                      Load the pages specified in App settings as the default Start pages.                                                                                                                                                                                                                                                                                                      |
+|    Enabled     | String |  String  | Enter the URLs of the pages you want to load as the Start pages, separating each page using angle brackets:<p><p>&nbsp;&nbsp;&nbsp;&nbsp;\<support.contoso.com\>\<support.microsoft.com\><p>**Version 1703 or later:**<br>If you do not want to send traffic to Microsoft, use the \<about:blank\> value, which honors both domain and non-domain-joined devices when it's the only configured URL.<p>**Version 1809:**<br>When you enable the Configure Open Microsoft Edge With policy with any option selected, and you enable the Configure Start Pages policy, the Configure Open Microsoft Edge With policy takes precedence, ignoring the Configure Start Pages policy. |
+
 ---
 
 ### ADMX info and settings
@@ -42,7 +45,7 @@ ms:topic: include
 
 ### Related policies
 
-- [Disable Lockdown of Start Pages](#disable-lockdown-of-start-pages): [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
+- [Disable Lockdown of Start Pages](../available-policies.md#disable-lockdown-of-start-pages): [!INCLUDE [disable-lockdown-of-start-pages-shortdesc](../shortdesc/disable-lockdown-of-start-pages-shortdesc.md)]
 
 - [Configure Open Microsoft Edge With](../available-policies.md#configure-open-microsoft-edge-with): [!INCLUDE [configure-open-microsoft-edge-with-shortdesc](../shortdesc/configure-open-microsoft-edge-with-shortdesc.md)]
 

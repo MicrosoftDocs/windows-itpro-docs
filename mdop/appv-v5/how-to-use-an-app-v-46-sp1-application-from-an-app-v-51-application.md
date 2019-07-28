@@ -1,8 +1,11 @@
 ---
 title: How to Use an App-V 4.6 Application From an App-V 5.1 Application
 description: How to Use an App-V 4.6 Application From an App-V 5.1 Application
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 909b4391-762b-4988-b0cf-32b67f1fcf0e
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -37,9 +40,9 @@ This procedure assumes that you are running the latest version of App-V 4.6.
 
 [Operations for App-V 5.1](operations-for-app-v-51.md)
 
- 
+ 
 
- 
+ 
 
 
 

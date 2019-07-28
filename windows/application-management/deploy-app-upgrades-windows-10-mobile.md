@@ -5,9 +5,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: kaushika-ainapure
-author: kaushika-msft
+ms.author: tracyp
+author: msfttracyp
 ms.date: 07/21/2017
+ms.reviewer: 
+manager: dansimp
 ms.topic: article
 ---
 # Deploy application upgrades on Windows 10 Mobile
@@ -39,7 +41,7 @@ Before you can deploy the upgrade, make sure you import the new version of the a
 4. Click **Add**, browse to the existing (older) version of the app that you're upgrading, and then click **OK**.
 5. Under **New Deployment Type** select the new version of the app. (When you imported the new version, it comes in as a new deployment type. If you're upgrading a Universal application, you'll see only one type here.)
    ![Create a supersedence rule for the new version of the app](media/app-upgrade-supersede-deploy-type.png)
-   > [!IMPORTANT] 
+   > [!IMPORTANT]
    > Do **NOT** select **Uninstall**. This tells Configuration Manager to uninstall the old version, but it does **NOT** then install the new version.
 
 6. Click **OK**.

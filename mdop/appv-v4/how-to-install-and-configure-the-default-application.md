@@ -1,8 +1,11 @@
 ---
 title: How to Install and Configure the Default Application
 description: How to Install and Configure the Default Application
-author: jamiejdt
+author: dansimp
 ms.assetid: 5c5d5ad1-af40-4f83-8234-39e972f2c29a
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -33,7 +36,7 @@ Use the following procedures to publish the default application and to stream it
     **Note**  
     You can also use **localhost** for the Web Service Host name if it is installed on the Management Server.
 
-     
+     
 
 6.  In the App-V Management Console, right-click the **Server** node, and click **System Options**.
 
@@ -42,7 +45,7 @@ Use the following procedures to publish the default application and to stream it
     **Important**  
     Use the FQDN for the server name so that the client can resolve the name correctly.
 
-     
+     
 
 8.  In the App-V Management Console, in the navigation pane, expand the **Server** node, and then click **Applications**.
 
@@ -55,7 +58,7 @@ Use the following procedures to publish the default application and to stream it
     **Important**  
     Ensure that the values in both the **OSD Path** and **Icon Path** boxes are in UNC format (for example, \\\\&lt;Server Name&gt;\\Content\\DefaultApp.ico), and point to the Content folder you created when installing the server. Do not use **localhost** or a file path containing a drive letter such as C:\\Program Files\\..\\..\\Content.
 
-     
+     
 
 12. Select the DefaultApp.osd file, and click **Open**.
 
@@ -71,11 +74,11 @@ Use the following procedures to publish the default application and to stream it
 
 18. Locate the line that contains the **HREF** tag, and change it to the following code:
 
-         `CODEBASEHREF=”RTSP://<FQDN of your server>:554/DefaultApp.sft”`
+         `CODEBASEHREF=”RTSP://<FQDN of your server>:554/DefaultApp.sft”`
 
     Or, if you are using RTSPS:
 
-         `CODEBASEHREF=”RTSPS://<FQDN of your server>:322/DefaultApp.sft”`
+         `CODEBASEHREF=”RTSPS://<FQDN of your server>:322/DefaultApp.sft”`
 
 19. Close the DefaultApp.osd file, and save the changes.
 
@@ -92,9 +95,9 @@ Use the following procedures to publish the default application and to stream it
 
 [How to Configure Servers for Server-Based Deployment](how-to-configure-servers-for-server-based-deployment.md)
 
- 
+ 
 
- 
+ 
 
 
 

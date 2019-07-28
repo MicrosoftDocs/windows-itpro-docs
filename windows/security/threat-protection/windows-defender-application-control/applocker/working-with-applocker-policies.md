@@ -2,12 +2,14 @@
 title: Working with AppLocker policies (Windows 10)
 description: This topic for IT professionals provides links to procedural topics about creating, maintaining, and testing AppLocker policies.
 ms.assetid: 7062d2e0-9cbb-4cb8-aa8c-b24945c3771d
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: mjcaparas
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -28,7 +30,7 @@ This topic for IT professionals provides links to procedural topics about creati
 | Topic | Description |
 | - | - |
 | [Configure the Application Identity service](configure-the-application-identity-service.md) | This topic for IT professionals shows how to configure the Application Identity service to start automatically or manually.| 
-| [Configure an AppLocker policy for audit only](configure-an-applocker-policy-for-audit-only.md) | This topic for IT professionals describes how to set AppLocker policies to  **Audit only ** within your IT environment by using AppLocker.| 
+| [Configure an AppLocker policy for audit only](configure-an-applocker-policy-for-audit-only.md) | This topic for IT professionals describes how to set AppLocker policies to  **Audit only** within your IT environment by using AppLocker.| 
 | [Configure an AppLocker policy for enforce rules](configure-an-applocker-policy-for-enforce-rules.md) | This topic for IT professionals describes the steps to enable the AppLocker policy enforcement setting.| 
 | [Display a custom URL message when users try to run a blocked app](display-a-custom-url-message-when-users-try-to-run-a-blocked-application.md) | This topic for IT professionals describes the steps for displaying a customized message to users when an AppLocker policy denies access to an app.| 
 | [Export an AppLocker policy from a GPO](export-an-applocker-policy-from-a-gpo.md) | This topic for IT professionals describes the steps to export an AppLocker policy from a Group Policy Object (GPO) so that it can be modified.| 

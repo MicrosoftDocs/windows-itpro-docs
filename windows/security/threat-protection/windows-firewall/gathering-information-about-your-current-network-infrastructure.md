@@ -2,12 +2,14 @@
 title: Gathering Information about Your Current Network Infrastructure (Windows 10)
 description: Gathering Information about Your Current Network Infrastructure
 ms.assetid: f98d2b17-e71d-4ffc-b076-118b4d4782f9
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -116,4 +118,4 @@ Some of the more common applications and protocols are as follows:
 
 -   **Other traffic**. Windows Defender Firewall can help secure transmissions between devices by providing authentication of the packets in addition to encrypting the data that they contain. The important thing to do is to identify what must be protected, and the threats that must be mitigated. Examine and model other traffic or traffic types that must be secured.
 
-**Next: **[Gathering Information about Your Active Directory Deployment](gathering-information-about-your-active-directory-deployment.md)
+**Next:** [Gathering Information about Your Active Directory Deployment](gathering-information-about-your-active-directory-deployment.md)

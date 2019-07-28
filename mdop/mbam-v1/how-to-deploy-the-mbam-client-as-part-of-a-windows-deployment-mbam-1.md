@@ -1,8 +1,11 @@
 ---
 title: How to Deploy the MBAM Client as Part of a Windows Deployment
 description: How to Deploy the MBAM Client as Part of a Windows Deployment
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 8704bf33-535d-41da-b9b2-45b60754367e
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,17 +19,17 @@ ms.date: 06/16/2016
 
 The Microsoft BitLocker Administration and Monitoring (MBAM) Client enables administrators to enforce and monitor BitLocker drive encryption on computers in the enterprise. The BitLocker Client can be integrated into an organization by enabling BitLocker management and encryption on client computers during the computer imaging and Windows deployment process.
 
-**Note**  
+**Note**  
 To review the MBAM Client system requirements, see [MBAM 1.0 Supported Configurations](mbam-10-supported-configurations.md).
 
- 
+
 
 Encryption of client computers with BitLocker during the initial imaging stage of a Windows deployment can lower the administrative overhead for MBAM implementation. This approach also ensures that every computer that is deployed already has BitLocker running and is configured correctly.
 
-**Warning**  
+**Warning**  
 This topic describes how to change the Windows registry by using Registry Editor. If you change the Windows registry incorrectly, you can cause serious problems that might require you to reinstall Windows. You should make a backup copy of the registry files (System.dat and User.dat) before you change the registry. Microsoft cannot guarantee that the problems that might occur when you change the registry can be resolved. Change the registry at your own risk.
 
- 
+
 
 **To encrypt a computer as part of Windows deployment**
 
@@ -80,24 +83,26 @@ This topic describes how to change the Windows registry by using Registry Editor
 
     Example: http://&lt;computer name&gt;/MBAMRecoveryAndHardwareService/CoreService.svc.
 
-     
 
-    **Note**  
-    MBAM policy or registry values can be set here to override the previously set values.
 
-     
+~~~
+**Note**  
+MBAM policy or registry values can be set here to override the previously set values.
+~~~
 
-7.  The MBAM agent restarts the system during MBAM client deployment. When you are ready for this reboot, run the following command at a command prompt as an administrator:
 
-    **net start mbamagent**
 
-8.  When the computers restarts and the BIOS prompts you to accept a TPM change, accept the change.
+7. The MBAM agent restarts the system during MBAM client deployment. When you are ready for this reboot, run the following command at a command prompt as an administrator:
 
-9.  During the Windows client operating system imaging process, when you are ready to start encryption, restart the MBAM agent service. Then, to set start to **automatic**, open a command prompt as an administrator and run the following commands:
+   **net start mbamagent**
 
-    **sc config mbamagent start= auto**
+8. When the computers restarts and the BIOS prompts you to accept a TPM change, accept the change.
 
-    **net start mbamagent**
+9. During the Windows client operating system imaging process, when you are ready to start encryption, restart the MBAM agent service. Then, to set start to **automatic**, open a command prompt as an administrator and run the following commands:
+
+   **sc config mbamagent start= auto**
+
+   **net start mbamagent**
 
 10. Remove the bypass registry values. To do this, run regedit, browse to the HKLM\\SOFTWARE\\Microsoft registry entry, right-click the **MBAM** node, and then click **Delete**.
 
@@ -106,9 +111,9 @@ This topic describes how to change the Windows registry by using Registry Editor
 
 [Deploying the MBAM 1.0 Client](deploying-the-mbam-10-client.md)
 
- 
 
- 
+
+
 
 
 

@@ -1,8 +1,11 @@
 ---
 title: How to Create a Custom Configuration File by Using the App-V 5.0 Management Console
 description: How to Create a Custom Configuration File by Using the App-V 5.0 Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: 0d1f6768-be30-4682-8eeb-aa95918b24c3
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -28,7 +31,7 @@ Use the following procedure to create a Dynamic User Configuration file by using
 
 4.  Click **Advanced**, and then click **Export Configuration**. Type in a filename and click **Save**. Now you can edit the file to configure a package for a user.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 

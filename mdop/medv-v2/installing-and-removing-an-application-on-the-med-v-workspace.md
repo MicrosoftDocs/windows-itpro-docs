@@ -1,8 +1,11 @@
 ---
 title: Installing and Removing an Application on the MED-V Workspace
 description: Installing and Removing an Application on the MED-V Workspace
-author: jamiejdt
+author: levinec
 ms.assetid: 24f32720-51ab-4385-adfe-4f5a65e45fdf
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -29,12 +32,12 @@ After you have deployed a MED-V workspace, you have several different options av
 **Important**  
 To make sure that an installed application is automatically published to the host, install the application on the virtual machine for **All Users**. For more information about application publishing, see [How to Publish and Unpublish an Application on the MED-V Workspace](how-to-publish-and-unpublish-an-application-on-the-med-v-workspace.md).
 
- 
+ 
 
 **Tip**  
 MED-V does not support guest-to-host redirection for content handling, such as double-clicking a Microsoft Word document in Internet Explorer in the MED-V workspace. Therefore, the required applications, such as Microsoft Word, must be installed in MED-V workspace to provide the default content handling functionality that an end user might expect.
 
- 
+ 
 
 ## <a href="" id="bkmk-grouppolicy"></a> Adding and Removing Applications by Using Group Policy
 
@@ -64,7 +67,7 @@ App-V applications that you publish to the MED-V workspace have file-type associ
 
 To force redirection of those file-type associations, query App-V for mapped file type associations by typing the following at a command prompt in the guest virtual machine: **sftmime /QUERY OBJ:TYPE**. Then, map those file type associations in the host computer.
 
- 
+ 
 
 ## <a href="" id="bkmk-coreimage"></a> Adding and Removing Applications on the Core Image
 
@@ -76,14 +79,14 @@ For more information about how to add or remove applications on the core image, 
 **Important**  
 We do not recommend this method of managing applications. If you add or remove applications on the core image and redeploy the MED-V workspace back out to your enterprise, first time setup must run again, and any data saved on the virtual machine is lost.
 
- 
+ 
 
 **Note**  
 Even though an application is installed into a MED-V workspace, you might also have to publish the application before it becomes available to the end user. For example, you might have to publish an installed application if the installation did not automatically create a shortcut on the **Start** menu. Likewise, to unpublish an application, you might have to manually remove a shortcut from the **Start** menu.
 
 By default, most applications are published at the time that they are installed, when shortcuts are automatically created and enabled.
 
- 
+ 
 
 ## Related topics
 
@@ -92,9 +95,9 @@ By default, most applications are published at the time that they are installed,
 
 [How to Publish and Unpublish an Application on the MED-V Workspace](how-to-publish-and-unpublish-an-application-on-the-med-v-workspace.md)
 
- 
+ 
 
- 
+ 
 
 
 

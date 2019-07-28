@@ -5,11 +5,13 @@ MS-HAID:
 - 'p\_phdevicemgmt.disconnecting\_from\_the\_management\_infrastructure\_\_unenrollment\_'
 - 'p\_phDeviceMgmt.disconnecting\_from\_mdm\_unenrollment'
 ms.assetid: 33B2B248-631B-451F-B534-5DA095C4C8E8
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -103,7 +105,7 @@ After the previous package is sent, the unenrollment process begins.
 
 When the server initiates disconnection, all undergoing sessions for the enrollment ID are aborted immediately to avoid deadlocks. The server will not get a response for the unenrollment, instead a generic alert notification is sent with messageid=1.
 
-``` syntax
+```xml
 <Alert>
       <CmdID>4</CmdID>
       <Data>1226</Data>

@@ -1,8 +1,11 @@
 ---
 title: Overview of the Tools in DaRT 10
 description: Overview of the Tools in DaRT 10
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 752467dd-b646-4335-82ce-9090d4651f65
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
@@ -30,7 +33,7 @@ A description of the DaRT 10 tools follows.
 **Note**  
 The recovery of dynamic disks with DaRT is not supported.
 
- 
+ 
 
 ### Crash Analyzer
 
@@ -57,12 +60,12 @@ For more information about **Crash Analyzer**, see [Diagnosing System Failures w
 **Warning**  
 We recommend that you back up a disk before you use **Disk Commander** to repair it. By using **Disk Commander**, you can potentially damage volumes and make them inaccessible. Additionally, changes to one volume can affect other volumes because volumes on a disk share a partition table.
 
- 
+ 
 
 **Note**  
 The recovery of dynamic disks with DaRT is not supported.
 
- 
+ 
 
 ### Disk Wipe
 
@@ -71,7 +74,7 @@ You can use **Disk Wipe** to delete all data from a disk or volume, even the dat
 **Warning**  
 After wiping a disk or volume, you cannot recover the data. Verify the size and label of a volume before erasing it.
 
- 
+ 
 
 ### Explorer
 
@@ -84,7 +87,7 @@ The **Explorer** tool lets you browse the computer’s file system and network s
 **Note**  
 The recovery of dynamic disks with DaRT is not supported.
 
- 
+ 
 
 ### File Search
 
@@ -101,7 +104,7 @@ We recommend that you uninstall only one hotfix at a time, even though the tool 
 **Important**  
 Programs that were installed or updated after a hotfix was installed might not work correctly after you uninstall a hotfix.
 
- 
+ 
 
 ### Locksmith
 
@@ -116,7 +119,7 @@ You can use **Registry Editor** to access and change the registry of the Windows
 **Warning**  
 Serious problems can occur if you change the registry incorrectly by using **Registry Editor**. These problems might require you to reinstall the operating system. Before you make changes to the registry, you should back up any valued data on the computer. Change the registry at your own risk.
 
- 
+ 
 
 ### SFC Scan
 
@@ -135,9 +138,9 @@ When you boot a problem computer into DaRT, it is set to automatically obtain it
 
 [Getting Started with DaRT 10](getting-started-with-dart-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

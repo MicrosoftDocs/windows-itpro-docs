@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/29/2018
+ms.reviewer: 
 ---
 # Windows Hello for Business Deployment Guide
 
@@ -50,6 +51,9 @@ The trust model determines how you want users to authenticate to the on-premises
 * The key-trust model is for enterprises who do not want to issue end-entity certificates to their users and have an adequate number of 2016 domain controllers in each site to support authentication. 
 * The certificate-trust model is for enterprise that *do* want to issue end-entity certificates to their users and have the benefits of certificate expiration and renewal, similar to how smart cards work today. 
 * The certificate trust model also supports enterprises which are not ready to deploy Windows Server 2016 Domain Controllers.
+
+>[!NOTE]
+>RDP does not support authentication with Windows Hello for business key trust deployments. RDP is only supported with certificate trust deployments at this time.
 
 Following are the various deployment guides included in this topic:
 - [Hybrid Azure AD Joined Key Trust Deployment](hello-hybrid-key-trust.md)

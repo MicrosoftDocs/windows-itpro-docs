@@ -1,8 +1,11 @@
 ---
 title: Configuring the Application Virtualization Sequencer (App-V 4.6 SP1)
 description: Configuring the Application Virtualization Sequencer (App-V 4.6 SP1)
-author: jamiejdt
+author: dansimp
 ms.assetid: af775165-5b99-4c74-807f-f504377c7be4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

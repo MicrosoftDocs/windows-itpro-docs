@@ -2,10 +2,13 @@
 title: What's new in Windows 10, versions 1507 and 1511 (Windows 10)
 description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: TrudyHa
+author: dansimp
 ms.localizationpriority: high
 ms.date: 10/16/2017
 ms.topic: article
@@ -17,7 +20,7 @@ Below is a list of some of the new and updated features included in  the initial
 
 >[!NOTE]
 >For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info).
- 
+ 
 
 ## Deployment
 
@@ -44,11 +47,11 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 #### New Bitlocker features in Windows 10, version 1511
 
--   **XTS-AES encryption algorithm**. BitLocker now supports the XTS-AES encryption algorithm. XTS-AES provides additional protection from a class of attacks on encryption that rely on manipulating cipher text to cause predictable changes in plain text. BitLocker supports both 128-bit and 256-bit XTS-AES keys.
-    It provides the following benefits:
-    -   The algorithm is FIPS-compliant.
-    -   Easy to administer. You can use the BitLocker Wizard, manage-bde, Group Policy, MDM policy, Windows PowerShell, or WMI to manage it on devices in your organization.
-        >**Note:**  Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
+- **XTS-AES encryption algorithm**. BitLocker now supports the XTS-AES encryption algorithm. XTS-AES provides additional protection from a class of attacks on encryption that rely on manipulating cipher text to cause predictable changes in plain text. BitLocker supports both 128-bit and 256-bit XTS-AES keys.
+  It provides the following benefits:
+  - The algorithm is FIPS-compliant.
+  - Easy to administer. You can use the BitLocker Wizard, manage-bde, Group Policy, MDM policy, Windows PowerShell, or WMI to manage it on devices in your organization.
+    >**Note:**  Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
 
 #### New Bitlocker features in Windows 10, version 1507
 
@@ -277,10 +280,10 @@ Enterprises have the following identity and management choices.
 | Grouping   | Domain join; Workgroup; Azure AD join    |
 | Device management | Group Policy; System Center Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
- > **Note**  
+ > **Note**  
 With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
 
- 
+ 
 ### Device lockdown
 
 
@@ -352,9 +355,9 @@ We also recommend that you upgrade to IE11 if you're running any earlier version
 - [Windows 10 release information](https://technet.microsoft.com/windows/release-info)
 
 
- 
+ 
 
- 
+ 
 
 
 

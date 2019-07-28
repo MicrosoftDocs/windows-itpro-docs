@@ -7,9 +7,11 @@ ms.prod: w10
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: medium
-author: MikeBlodge
-ms.author: MikeBlodge
+author: mjcaparas
+ms.author: macapara
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Test Windows 10 in S mode on existing Windows 10 education devices
@@ -21,7 +23,7 @@ The Windows 10 in S mode self-installer will allow you to test Windows 10 in S m
 
 Windows 10 in S mode is built to give schools the familiar, robust, and productive experiences you count on from Windows in an experience that's been streamlined for security and performance in the classroom, and built to work with Microsoft Education<sup>[2](#footnote2)</sup>.
 
-Windows 10 in S mode is different from other editions of Windows 10 as everything that runs on the device is verfied by Microsoft for security and performance. Therefore, Windows 10 in S mode works exclusively with apps from the Microsoft Store. Some accessories and apps compatible with Windows 10 may not work and performance may vary. Certain default settings, features, and apps cannot be changed. When you install Windows 10 in S mode, your existing applications and settings will be deleted and you will only be able to install apps from the Microsoft Store.
+Windows 10 in S mode is different from other editions of Windows 10 as everything that runs on the device is verified by Microsoft for security and performance. Therefore, Windows 10 in S mode works exclusively with apps from the Microsoft Store. Some accessories and apps compatible with Windows 10 may not work and performance may vary. Certain default settings, features, and apps cannot be changed. When you install Windows 10 in S mode, your existing applications and settings will be deleted and you will only be able to install apps from the Microsoft Store.
 
 **Configuring Windows 10 in S mode for school use is easy:** Education customers must configure **SetEduPolicies** for use in K-12 schools. For more information on how to do these, see [Use the Set up School PCs app](use-set-up-school-pcs-app.md) and [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md). 
 
@@ -240,7 +242,7 @@ For help with activation issues, click on the appropriate link below for support
 
 <p>
 <a name="footnote1"></a><sup>1</sup> <small>Internet access fees may apply.</small><br/>
-<a name="footnote2"></a><sup>2</sup> <small>Devices must be configured for educational use by applying **[SetEduPolicies](https://docs.microsoft.com/education/windows/configure-windows-for-education#setedupolicies)** using the Set up School PCs app.</small><br/>
+<a name="footnote2"></a><sup>2</sup> <small>Devices must be configured for educational use by applying <strong><a href="https://docs.microsoft.com/education/windows/configure-windows-for-education#setedupolicies" data-raw-source="[SetEduPolicies](https://docs.microsoft.com/education/windows/configure-windows-for-education#setedupolicies)">SetEduPolicies</a></strong> using the Set up School PCs app.</small><br/>
 
 </p>
 

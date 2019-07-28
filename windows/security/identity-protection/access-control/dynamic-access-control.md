@@ -6,13 +6,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
+ms.reviewer: 
 ---
 
 # Dynamic Access Control Overview
@@ -90,10 +91,6 @@ Additional enhancements in the supported versions of Windows that support Dynami
 ### Support in the Kerberos authentication protocol to reliably provide user claims, device claims, and device groups.
 
 By default, devices running any of the supported versions of Windows are able to process Dynamic Access Control-related Kerberos tickets, which include data needed for compound authentication. Domain controllers are able to issue and respond to Kerberos tickets with compound authentication-related information. When a domain is configured to recognize Dynamic Access Control, devices receive claims from domain controllers during initial authentication, and they receive compound authentication tickets when submitting service ticket requests. Compound authentication results in an access token that includes the identity of the user and the device on the resources that recognize Dynamic Access Control.
-
-### Support for using the Key Distribution Center (KDC) Group Policy setting to enable Dynamic Access Control for a domain.
-
-Every domain controller needs to have the same Administrative Template policy setting, which is located at **Computer Configuration\\Policies\\Administrative Templates\\System\\KDC\\Support Dynamic Access Control and Kerberos armoring**.
 
 ### Support for using the Key Distribution Center (KDC) Group Policy setting to enable Dynamic Access Control for a domain.
 

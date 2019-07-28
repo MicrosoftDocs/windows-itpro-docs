@@ -1,8 +1,11 @@
 ---
 title: About Microsoft Application Virtualization 4.6
 description: About Microsoft Application Virtualization 4.6
-author: jamiejdt
+author: dansimp
 ms.assetid: 34150f34-ee74-45a6-957e-9ea6c5a497de
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -29,7 +32,7 @@ Microsoft Application Virtualization (App-V) 4.6 provides the following enhancem
 **Note**  
 The App-V Management Server and Streaming Server have not been updated to version 4.6. Until they are updated, use App-V Management Server and Streaming Server 4.5 with the most recent service pack.
 
- 
+ 
 
 ## In This Section
 
@@ -37,9 +40,9 @@ The App-V Management Server and Streaming Server have not been updated to versio
 <a href="" id="app-v-4-6-release-notes"></a>[App-V 4.6 Release Notes](app-v-46-release-notes.md)  
 Provides the most up-to-date information about known issues with Microsoft Application Virtualization (App-V) 4.6.
 
- 
+ 
 
- 
+ 
 
 
 

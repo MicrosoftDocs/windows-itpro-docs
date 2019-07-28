@@ -4,11 +4,13 @@ description: Enable Bitlocker device encryption to protect files stored on the H
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 01/26/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Enable encryption for HoloLens
@@ -43,7 +45,7 @@ Provisioning packages are files created by the Windows Configuration Designer to
 
     ![Require device encryption setting configured to yes](images/device-encryption.png)
 
-2.	Browse to and select the XML license file that was provided when you purchased the Commercial Suite.
+2. Browse to and select the XML license file that was provided when you purchased the Commercial Suite.
 
     >[!NOTE]
     >You can configure [additional settings in the provisioning package](hololens-provisioning.md).
@@ -100,6 +102,6 @@ Provisioning packages are files created by the Windows Configuration Designer to
 
 Encryption is silent on HoloLens. To verify the device encryption status:
  
--	On HoloLens, go to **Settings** > **System** > **About**. **BitLocker** is **enabled** if the device is encrypted. 
+- On HoloLens, go to **Settings** > **System** > **About**. **BitLocker** is **enabled** if the device is encrypted. 
 
 ![About screen showing BitLocker enabled](images/about-encryption.png)

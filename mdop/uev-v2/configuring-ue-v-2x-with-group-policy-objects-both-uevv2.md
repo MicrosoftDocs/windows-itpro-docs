@@ -1,8 +1,11 @@
 ---
 title: Configuring UE-V 2.x with Group Policy Objects
 description: Configuring UE-V 2.x with Group Policy Objects
-author: jamiejdt
+author: levinec
 ms.assetid: 2bb55834-26ee-4f19-9860-dfdf3c797143
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -79,13 +82,13 @@ The following policy settings can be configured for UE-V.
 <td align="left"><p>Settings storage path</p></td>
 <td align="left"><p>Computers and Users</p></td>
 <td align="left"><p>This Group Policy setting configures where the user settings are to be stored.</p></td>
-<td align="left"><p>Enter a Universal Naming Convention (UNC) path and variables such as \\Server\SettingsShare\%username%.</p></td>
+<td align="left"><p>Enter a Universal Naming Convention (UNC) path and variables such as \Server\SettingsShare%username%.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Settings template catalog path</p></td>
 <td align="left"><p>Computers Only</p></td>
 <td align="left"><p>This Group Policy setting configures where custom settings location templates are stored. This policy setting also configures whether the catalog is to be used to replace the default Microsoft templates that are installed with the UE-V Agent.</p></td>
-<td align="left"><p>Enter a Universal Naming Convention (UNC) path such as \\Server\TemplateShare or a folder location on the computer.</p>
+<td align="left"><p>Enter a Universal Naming Convention (UNC) path such as \Server\TemplateShare or a folder location on the computer.</p>
 <p>Select the check box to replace the default Microsoft templates.</p></td>
 </tr>
 <tr class="odd">
@@ -121,12 +124,12 @@ The following policy settings can be configured for UE-V.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 In addition, Group Policy settings are available for many desktop applications and Windows apps. You can use these settings to enable or disable settings synchronization for specific applications.
 
- 
+ 
 
 **Windows App Group Policy settings**
 
@@ -167,7 +170,7 @@ In addition, Group Policy settings are available for many desktop applications a
 </tbody>
 </table>
 
- 
+ 
 
 For more information about synchronizing Windows apps, see [Windows App List](https://technet.microsoft.com/library/dn458925.aspx#win8applist).
 
@@ -204,9 +207,9 @@ The UE-V Agent uses the following order of precedence to determine synchronizati
 
 [Manage Configurations for UE-V 2.x](manage-configurations-for-ue-v-2x-new-uevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

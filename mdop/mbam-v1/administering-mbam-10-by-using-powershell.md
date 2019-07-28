@@ -1,8 +1,11 @@
 ---
 title: Administering MBAM 1.0 by Using PowerShell
 description: Administering MBAM 1.0 by Using PowerShell
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 3bf2eca5-4ab7-4e84-9e80-c0c7d709647b
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

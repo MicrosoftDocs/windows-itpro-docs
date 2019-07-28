@@ -2,7 +2,10 @@
 title: How to Deploy the App-V 4.6 and the App-V 5.0 Client on the Same Computer
 description: How to Deploy the App-V 4.6 and the App-V 5.0 Client on the Same Computer
 ms.assetid: 5b7e27e4-4360-464c-b832-f1c7939e5485
-author: jamiejdt
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+author: dansimp
 ms.date: 06/21/2016
 ---
 
@@ -36,7 +39,7 @@ Use the following information to install the App-V 5.0 client (preferably, with 
 
 5.  Test that your App-V 5.0 packages are successful, and then remove the 4.6 packages. To check the user state of your client computers, we recommend that you use [User Experience Virtualization](https://technet.microsoft.com/library/dn458947.aspx) or another user environment management tool.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 

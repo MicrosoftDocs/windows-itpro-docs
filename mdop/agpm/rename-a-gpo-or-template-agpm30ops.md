@@ -1,8 +1,11 @@
 ---
 title: Rename a GPO or Template
 description: Rename a GPO or Template
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 19d17ddf-8b58-4677-929e-9550fa388b93
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

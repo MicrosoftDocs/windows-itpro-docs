@@ -1,8 +1,11 @@
 ---
 title: Example MED-V Workspace Deployment Checklist
 description: Example MED-V Workspace Deployment Checklist
-author: jamiejdt
+author: levinec
 ms.assetid: d8857883-9b2d-40ac-9136-59e4e20e02fe
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -30,28 +33,28 @@ The following checklist provides a high-level list of items to consider and outl
 <tbody>
 <tr class="odd">
 <td align="left"><p>Prepare the MED-V image for deployment.</p></td>
-<td align="left"><p>[Prepare a MED-V Image](prepare-a-med-v-image.md)</p></td>
+<td align="left"><p><a href="prepare-a-med-v-image.md" data-raw-source="[Prepare a MED-V Image](prepare-a-med-v-image.md)">Prepare a MED-V Image</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Create the MED-V workspace deployment package.</p></td>
-<td align="left"><p>[Create a MED-V Workspace Package](create-a-med-v-workspace-package.md)</p></td>
+<td align="left"><p><a href="create-a-med-v-workspace-package.md" data-raw-source="[Create a MED-V Workspace Package](create-a-med-v-workspace-package.md)">Create a MED-V Workspace Package</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Test the MED-V workspace installer package.</p></td>
-<td align="left"><p>[Testing the MED-V Workspace Package](testing-the-med-v-workspace-package.md)</p></td>
+<td align="left"><p><a href="testing-the-med-v-workspace-package.md" data-raw-source="[Testing the MED-V Workspace Package](testing-the-med-v-workspace-package.md)">Testing the MED-V Workspace Package</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Deploy the MED-V workspace installer package.</p></td>
-<td align="left"><p>[Deploying the MED-V Workspace Package](deploying-the-med-v-workspace-package.md)</p></td>
+<td align="left"><p><a href="deploying-the-med-v-workspace-package.md" data-raw-source="[Deploying the MED-V Workspace Package](deploying-the-med-v-workspace-package.md)">Deploying the MED-V Workspace Package</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

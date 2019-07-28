@@ -1,12 +1,15 @@
 ---
 title: Synchronizing Microsoft Office with UE-V
 description: Synchronizing Office with UE-V
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 
@@ -128,7 +131,7 @@ You can deploy UE-V settings location template with the following methods:
 
 -   **Registering template with PowerShell**. If you use Windows PowerShell to manage computers, run the following Windows PowerShell command as Administrator to register this settings location template:
 
-    ``` syntax
+    ```powershell
     Register-UevTemplate -Path <Path_to_Template>
     ```
 

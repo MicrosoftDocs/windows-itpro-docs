@@ -2,11 +2,13 @@
 title: ActiveSync DDF file
 description: ActiveSync DDF file
 ms.assetid: c4cd4816-ad8f-45b2-9b81-8abb18254096
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 12/05/2017
 ---
 
@@ -19,7 +21,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 The XML below is the current version for this CSP.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

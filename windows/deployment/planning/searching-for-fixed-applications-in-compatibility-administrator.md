@@ -2,11 +2,14 @@
 title: Searching for Fixed Applications in Compatibility Administrator (Windows 10)
 description: With the search functionality in Compatibility Administrator, you can locate specific executable (.exe) files with previously applied compatibility fixes, compatibility modes, or AppHelp messages.
 ms.assetid: 1051a2dc-0362-43a4-8ae8-07dae39b1cb8
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-author: TrudyHa
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -33,7 +36,7 @@ The **Query Compatibility Databases** tool provides additional search options. F
 **Important**  
 You must perform your search with the correct version of the Compatibility Administrator tool. If you are searching for a 32-bit custom database, you must use the 32-bit version of Compatibility Administrator. If you are searching for a 64-bit custom database, you must use the 64-bit version of Compatibility Administrator.
 
- 
+ 
 
 **To search for previous fixes**
 
@@ -66,9 +69,9 @@ You can export your search results to a text (.txt) file for later review or arc
 ## Related topics
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
 
- 
+ 
 
- 
+ 
 
 
 

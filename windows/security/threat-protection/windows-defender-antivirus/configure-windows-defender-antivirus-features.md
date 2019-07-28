@@ -9,16 +9,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure Windows Defender Antivirus features
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 You can configure Windows Defender Antivirus with a number of tools, including:
 

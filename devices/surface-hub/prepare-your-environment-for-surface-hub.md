@@ -2,11 +2,13 @@
 title: Prepare your environment for Microsoft Surface Hub
 description: This section contains an overview of the steps required to prepare your environment so that you can use all of the features of Microsoft Surface Hub.
 ms.assetid: 336A206C-5893-413E-A270-61BFF3DF7DA9
+ms.reviewer: 
+manager: dansimp
 keywords: prepare environment, features of Surface Hub, create and test device account, check network availability
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.date: 12/04/2017
 ms.localizationpriority: medium
@@ -27,7 +29,7 @@ Review these dependencies to make sure Surface Hub features will work in your IT
 | Exchange (Exchange 2013 or later, or Exchange Online) and Exchange ActiveSync | <p>Exchange is used for enabling mail and calendar features, and also lets people who use the device send meeting requests to the Surface Hub, enabling one-touch meeting join.</p>ActiveSync is used to sync the device account’s calendar and mail to the Surface Hub. If the device cannot use ActiveSync, it will not show meetings on the welcome screen, and joining meetings and emailing whiteboards will not be enabled. |
 | Skype for Business (Lync Server 2013 or later, or Skype for Business Online)  | Skype for Business is used for various conferencing features, like video calls, instant messaging, and screen sharing.|
 | Mobile device management (MDM) solution (Microsoft Intune, System Center Configuration Manager, or supported third-party MDM provider) | If you want to apply settings and install apps remotely, and to multiple devices at a time, you must set up a MDM solution and enroll the device to that solution. See [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md) for details. |
-| Microsoft Operations Managmement Suite (OMS)   | OMS is used to monitor the health of Surface Hub devices. See [Monitor your Surface Hub](monitor-surface-hub.md) for details. |
+| Microsoft Operations Management Suite (OMS)   | OMS is used to monitor the health of Surface Hub devices. See [Monitor your Surface Hub](monitor-surface-hub.md) for details. |
 | Network and Internet access   | In order to function properly, the Surface Hub should have access to a wired or wireless network. Overall, a wired connection is preferred. 802.1X Authentication is supported for both wired and wireless connections.</br></br></br>**802.1X authentication:** In Windows 10, version 1703, 802.1X authentication for wired and wireless connections is enabled by default in Surface Hub. If your organization doesn't use 802.1X authentication, there is no configuration required and Surface Hub will continue to function as normal. If you use 802.1X authentication, you must ensure that the authentication certification is installed on Surface Hub. You can deliver the certificate to Surface Hub using the [ClientCertificateInstall CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/clientcertificateinstall-csp) in MDM, or you can [create a provisioning package](provisioning-packages-for-surface-hub.md) and install it during first run or through the Settings app. After the certificate is applied to Surface Hub, 802.1X authentication will start working automatically.</br>**Note:** For more information on enabling 802.1X wired authentication on Surface Hub, see [Enable 802.1x wired authentication](enable-8021x-wired-authentication.md).</br></br>**Dynamic IP:** The Surface Hub cannot be configured to use a static IP. It must use DHCP to assign an IP address.</br></br>**Proxy servers:** If your topology requires a connection to a proxy server to reach Internet services, then you can configure it during first run, or in Settings. Proxy credentials are stored across Surface Hub sessions and only need to be set once. |
 
 Additionally, note that Surface Hub requires the following open ports:
@@ -100,15 +102,15 @@ When you go through the first-run program for your Surface Hub, there's some inf
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Create and test a device account](create-and-test-a-device-account-surface-hub.md)</p></td>
+<td align="left"><p><a href="create-and-test-a-device-account-surface-hub.md" data-raw-source="[Create and test a device account](create-and-test-a-device-account-surface-hub.md)">Create and test a device account</a></p></td>
 <td align="left"><p>This topic introduces how to create and test the device account that Surface Hub uses to communicate with and Skype.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md)</p></td>
+<td align="left"><p><a href="provisioning-packages-for-certificates-surface-hub.md" data-raw-source="[Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md)">Create provisioning packages</a></p></td>
 <td align="left"><p>For Windows 10, settings that use the registry or a content services platform (CSP) can be configured using provisioning packages. You can also add certificates during first run using provisioning.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[Admin group management](admin-group-management-for-surface-hub.md)</p></td>
+<td align="left"><p><a href="admin-group-management-for-surface-hub.md" data-raw-source="[Admin group management](admin-group-management-for-surface-hub.md)">Admin group management</a></p></td>
 <td align="left"><p>Every Surface Hub can be configured individually by opening the Settings app on the device. However, to prevent people who are not administrators from changing the settings, the Settings app requires administrator credentials to open the app and change settings.</p>
 <p>The Settings app requires local administrator credentials to open the app.</p></td>
 </tr>
@@ -121,9 +123,9 @@ When you go through the first-run program for your Surface Hub, there's some inf
 - [Blog post: Surface Hub in a Multi-Domain Environment](https://blogs.technet.microsoft.com/y0av/2017/11/08/11/)
 - [Blog post: Configuring a proxy for your Surface Hub](https://blogs.technet.microsoft.com/y0av/2017/12/03/7/)
 
- 
+ 
 
- 
+ 
 
 
 

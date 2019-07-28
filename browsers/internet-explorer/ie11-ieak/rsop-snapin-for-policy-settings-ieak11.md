@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: manage
 description: Learn how to use the Resultant Set of Policy (RSoP) snap-in to view your policy settings.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 0f21b320-e879-4a06-8589-aae6fc264666
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 title: Use the RSoP snap-in to review policy settings (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

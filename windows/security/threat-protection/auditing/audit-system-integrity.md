@@ -2,6 +2,9 @@
 title: Audit System Integrity (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit System Integrity, which determines whether the operating system audits events that violate the integrity of the security subsystem.
 ms.assetid: 942a9a7f-fa31-4067-88c7-f73978bf2034
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

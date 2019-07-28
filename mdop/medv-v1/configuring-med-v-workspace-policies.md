@@ -1,8 +1,11 @@
 ---
 title: Configuring MED-V Workspace Policies
 description: Configuring MED-V Workspace Policies
-author: jamiejdt
+author: dansimp
 ms.assetid: 0eaed981-cbf3-4b16-a4b7-4705c5705dc7
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -27,7 +30,7 @@ It is important to decide on the type of MED-V workspace you are creating before
 **Note**  
 When configuring a policy, a warning symbol appears next to mandatory fields that are not filled in. If a mandatory field is not filled in, the symbol appears on the tab as well.
 
- 
+ 
 
 ## In This Section
 
@@ -59,9 +62,9 @@ Describes the performance settings of a MED-V workspace, and how to apply them t
 <a href="" id="how-to-import-and-export-a-policy"></a>[How to Import and Export a Policy](how-to-import-and-export-a-policy.md)  
 Describes how to import and export a policy.
 
- 
+ 
 
- 
+ 
 
 
 

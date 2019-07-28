@@ -8,12 +8,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 audience: ITPro
-author: pwiglemsft
-ms.author: pwigle
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/25/2017
+ms.reviewer: 
 ---
 
 # Beginning your General Data Protection Regulation (GDPR) journey for Windows 10
@@ -104,11 +105,11 @@ A key provision within the GDPR is data protection by design and by default, and
 
 The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. Some of the key advantages of using TPM technology are that you can:
 
--	Generate, store, and limit the use of cryptographic keys.
+- Generate, store, and limit the use of cryptographic keys.
 
--	Use TPM technology for platform device authentication by using the TPM’s unique RSA key, which is burned into itself.
+- Use TPM technology for platform device authentication by using the TPM’s unique RSA key, which is burned into itself.
 
--	Help to ensure platform integrity by taking and storing security measurements.
+- Help to ensure platform integrity by taking and storing security measurements.
 
 Additional advanced device protection relevant to your operating without data breaches include Windows Trusted Boot to help maintain the integrity of the system by ensuring malware is unable to start before system defenses.
 

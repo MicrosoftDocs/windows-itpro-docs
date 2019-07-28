@@ -2,6 +2,9 @@
 title: Audit Kernel Object (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Kernel Object, which determines whether the operating system generates audit events when users attempt to access the system kernel, which includes mutexes and semaphores.
 ms.assetid: 75619d8b-b1eb-445b-afc9-0f9053be97fb
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

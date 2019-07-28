@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4732(S): A member was added to a security-enabled local group.
@@ -67,7 +70,6 @@ You will typically see “[4735](event-4735.md): A security-enabled local group 
  <Data Name="PrivilegeList">-</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** None.
@@ -107,15 +109,15 @@ You will typically see “[4735](event-4735.md): A security-enabled local group 
 -   **Account Name** \[Type = UnicodeString\]: distinguished name of account that was added to the group. For example: “CN=Auditor,CN=Users,DC=contoso,DC=local”. For local groups this field typically has “**-**“ value, even if new member is a domain account. For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “-”.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-
+> 
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-
+> 
 > • DC - domainComponent
-
+> 
 > • CN - commonName
-
+> 
 > • OU - organizationalUnitName
-
+> 
 > • O - organizationName
 
 **Group:**

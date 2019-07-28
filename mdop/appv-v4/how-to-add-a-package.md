@@ -1,8 +1,11 @@
 ---
 title: How to Add a Package
 description: How to Add a Package
-author: jamiejdt
+author: dansimp
 ms.assetid: 5407fdbe-e658-44f6-a9b8-a566b81dedce
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -35,7 +38,7 @@ It is recommended that you import applications instead of adding them manually. 
 
     In dialog boxes that refer to Virtual Application Servers, you must use a network location, such as the server's static host name or IP address, that your users can access. The application's Open Software Descriptor (OSD) file can replace the placeholder variable *%SFT\_SOFTGRIDSERER%* with the server's static host name or IP address. If you leave the placeholder variable, you must set this variable on each client computer that will access that server. Set a User or System variable on each computer for SFT\_SOFTGRIDSERVER. The variable value must be the server's static host name or IP address. If you set a variable, exit the Client session, log out of and back into Microsoft Windows, and then restart the session on each computer that had a session running and had the variable set.
 
-     
+     
 
 4.  Click **Next**.
 
@@ -44,7 +47,7 @@ It is recommended that you import applications instead of adding them manually. 
     **Note**  
     If you are managing applications on a remote server, in the next dialog box, type only the path of the file relative to the server's content root.
 
-     
+     
 
 ## Related topics
 
@@ -53,9 +56,9 @@ It is recommended that you import applications instead of adding them manually. 
 
 [How to Manage Packages in the Server Management Console](how-to-manage-packages-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 
