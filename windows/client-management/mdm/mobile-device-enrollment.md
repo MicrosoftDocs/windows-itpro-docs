@@ -103,7 +103,7 @@ To manually trigger enrollment migration, you can run MDMMaintenenceTask.
 
 The enrollment server can decline enrollment messages using the SOAP Fault format. Errors created can be sent as follows:
 
-``` syntax
+```xml
 <s:envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
     <s:header>
         <a:action s:mustunderstand="1">http://schemas.microsoft.com/windows/pki/2009/01/enrollment/rstrc/wstep</a:action>
@@ -200,7 +200,7 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
 
 In Windows 10, version 1507, we added the deviceenrollmentserviceerror element. Here is an example:
 
-``` syntax
+```xml
 <s:envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
     <s:header>
         <a:action s:mustunderstand="1">http://schemas.microsoft.com/windows/pki/2009/01/enrollment/rstrc/wstep</a:action>

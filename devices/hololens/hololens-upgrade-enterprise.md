@@ -47,7 +47,7 @@ Provisioning packages are files created by the Windows Configuration Designer to
 
     ![Upgrade edition with license setting selected](images/icd1.png)
 
-2.	Browse to and select the XML license file that was provided when you purchased the Commercial Suite.
+2. Browse to and select the XML license file that was provided when you purchased the Commercial Suite.
 
     >[!NOTE]
     >You can configure [additional settings in the provisioning package](hololens-provisioning.md).

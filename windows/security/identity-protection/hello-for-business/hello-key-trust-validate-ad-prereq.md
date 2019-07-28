@@ -35,12 +35,12 @@ The Windows Hello for Business Users group is used to make it easy to deploy Win
 
 Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
 
-1.	Open **Active Directory Users and Computers**.
-2.	Click **View** and click **Advanced Features**.
-3.	Expand the domain node from the navigation pane.
-4.	Right-click the **Users** container. Click **New**. Click **Group**.
-5.	Type **Windows Hello for Business Users** in the **Group Name** text box.
-6.	Click **OK**.
+1. Open **Active Directory Users and Computers**.
+2. Click **View** and click **Advanced Features**.
+3. Expand the domain node from the navigation pane.
+4. Right-click the **Users** container. Click **New**. Click **Group**.
+5. Type **Windows Hello for Business Users** in the **Group Name** text box.
+6. Click **OK**.
 
 
 ## Follow the Windows Hello for Business on premises certificate trust deployment guide

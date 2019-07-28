@@ -154,11 +154,11 @@ If you choose to use WMI as your data output, you need to make sure that your WM
 
 **To set up your firewall**
 
-1.	In **Control Panel**, click **System and Security**, and then click **Windows Firewall**.
+1. In **Control Panel**, click **System and Security**, and then click **Windows Firewall**.
 
-2.	In the left pane, click **Allow an app or feature through Windows Firewall** and scroll down to check the box for **Windows Management Instrumentation (WMI)**.
+2. In the left pane, click **Allow an app or feature through Windows Firewall** and scroll down to check the box for **Windows Management Instrumentation (WMI)**.
 
-3.	Restart your computer to start collecting your WMI data.
+3. Restart your computer to start collecting your WMI data.
 
 ## Use PowerShell to finish setting up Enterprise Site Discovery
 You can determine which zones or domains are used for data collection, using PowerShell. If you don’t want to use PowerShell, you can do this using Group Policy. For more info, see [Use Group Policy to finish setting up Enterprise Site Discovery](#use-group-policy-to-finish-setting-up-enterprise-site-discovery).

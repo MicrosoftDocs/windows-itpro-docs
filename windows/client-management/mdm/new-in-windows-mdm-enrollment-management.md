@@ -1668,7 +1668,7 @@ The software version information from **DevDetail/SwV** does not match the versi
 
 Applies only to phone prior to build 10586.218: When ApplicationManagement/ApplicationRestrictions policy is deployed to Windows 10 Mobile, installation and update of apps dependent on Microsoft Frameworks may get blocked with error 0x80073CF9. To work around this issue, you must include the Microsoft Framework Id to your list of allowed apps.
 
-``` syntax
+```xml
 <App ProductId="{00000000-0000-0000-0000-000000000000}" PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/>
 ```
 
@@ -1717,7 +1717,7 @@ The following XML sample explains the properties for the EAP TLS XML including c
 >For PEAP or TTLS Profiles the EAP TLS XML is embedded within some PEAP or TTLS specific elements.
 
  
-``` syntax
+```xml
 <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
  <EapMethod>
   <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">13</Type>
@@ -1895,6 +1895,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 
 |New or updated topic | Description|
 |--- | ---|
+|[Policy CSP](policy-configuration-service-provider.md)|Added the following list:<br>Policies supported by HoloLens 2|
 |[ApplicationControl CSP](applicationcontrol-csp.md)|Added new CSP in Windows 10, version 1903.|
 |[PassportForWork CSP](passportforwork-csp.md)|Added the following new nodes in Windows 10, version 1903:<br>SecurityKey, SecurityKey/UseSecurityKeyForSignin|
 |[Policy CSP - Privacy](policy-csp-privacy.md)|Added the following new policies:<br>LetAppsActivateWithVoice, LetAppsActivateWithVoiceAboveLock|

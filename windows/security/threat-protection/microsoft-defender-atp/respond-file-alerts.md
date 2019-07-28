@@ -170,7 +170,7 @@ The Deep analysis summary includes a list of observed *behaviors*, some of which
 
 Results of deep analysis are matched against threat intelligence and any matches will generate appropriate alerts.
 
-Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the the file's profile page.
+Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the file's profile page.
 
 **Submit for deep analysis** is enabled when the file is available in the Microsoft Defender ATP backend sample collection, or if it was observed on a Windows 10 machine that supports submitting to deep analysis.
 

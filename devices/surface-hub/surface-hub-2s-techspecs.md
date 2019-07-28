@@ -5,7 +5,7 @@ keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
 author: robmazz
-ms.manager: laurawi
+manager: laurawi
 ms.author: robmazz
 audience: Admin
 ms.topic: article
@@ -20,6 +20,7 @@ ms.localizationpriority: Normal
 |**Dimensions**| 29.2" x 43.2" x 3.0” (741 mm x 1097 mm x 76 mm) |
 |**Shipping dimensions**| 47.64" x 36.89" x 9.92" (1,210 mm x 937 mm x 252 mm)|
 |**Weight**| 61.6 lbs. (28 kg) |
+|**Shipping Weight**| 81.08 lbs. (36.77 kg) |
 |**Resolution**| 3840 x 2560 |
 |**Display**| PixelSense Display, 3:2 aspect ratio, 10-bit color, 15.5 mm border, anti-glare, IPS LCD |
 |**Processor**| Quad-core 8th Generation Intel Core i5 processor, 8 GB RAM, 128 GB SSD <sup>1</sup> |

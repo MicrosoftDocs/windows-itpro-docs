@@ -42,7 +42,7 @@ Before attempting this procedure, you should read and understand the information
 
 2.  To open a Windows PowerShell console, click **Start** and type **PowerShell**. Right-click **Windows PowerShell** and select **Run as Administrator**.
 
-    ``` syntax
+    ```powershell
     <#
     .SYNOPSIS
     This Windows PowerShell script will take an array of account names and try to convert each of them to the corresponding SID in standard and hexadecimal formats.
@@ -59,9 +59,6 @@ Before attempting this procedure, you should read and understand the information
     .\ConvertToSID.ps1 $accountsArray | Write-Output -FilePath .\SIDs.txt -Width 200
     #>
 
-    []()  
-
-    []()  
     function ConvertSIDToHexFormat
     {
        param([System.Security.Principal.SecurityIdentifier]$sidToConvert)

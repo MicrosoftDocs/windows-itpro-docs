@@ -3,6 +3,19 @@
 ## [Overview]()
 ### [What is Microsoft Defender Advanced Threat Protection?](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
 ### [Overview of Microsoft Defender ATP capabilities](microsoft-defender-atp/overview.md)
+### [Threat & Vulnerability Management]()
+#### [Next-generation capabilities](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
+#### [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
+#### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
+#### [Configuration score](microsoft-defender-atp/configuration-score.md)
+#### [Security recommendation](microsoft-defender-atp/tvm-security-recommendation.md)
+#### [Remediation](microsoft-defender-atp/tvm-remediation.md)
+#### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
+#### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
+#### [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
+
+
+
 ### [Attack surface reduction]()
 #### [Hardware-based isolation]()
 ##### [Hardware-based isolation in Windows 10](microsoft-defender-atp/overview-hardware-based-isolation.md)
@@ -122,6 +135,7 @@
 ### [What's new in Microsoft Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 ### [Minimum requirements](microsoft-defender-atp/minimum-requirements.md)
 ### [Validate licensing and complete setup](microsoft-defender-atp/licensing.md)
+### [Evaluation lab](microsoft-defender-atp/evaluation-lab.md)
 ### [Preview features](microsoft-defender-atp/preview.md)
 ### [Data storage and privacy](microsoft-defender-atp/data-storage-privacy.md)
 ### [Assign user access to the portal](microsoft-defender-atp/assign-portal-access.md)
@@ -144,14 +158,24 @@
 ### [Configure attack surface reduction]()
 #### [Attack surface reduction configuration settings](microsoft-defender-atp/configure-attack-surface-reduction.md)
 
+### [Configure and manage capabilities](microsoft-defender-atp/onboard.md)
+#### [Microsoft Defender Advanced Threat Protection for Mac](windows-defender-antivirus/microsoft-defender-atp-mac.md)
+##### [Deploy Microsoft Defender Advanced Threat Protection for Mac]()
+###### [Microsoft Intune-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-intune.md)
+###### [JAMF-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-jamf.md)
+###### [Deployment with a different Mobile Device Management (MDM) system](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-other-mdm.md)
+###### [Manual deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-manually.md)
+##### [Update Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-updates.md)
+##### [Set preferences for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-preferences.md)
+##### [Privacy for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-privacy.md)
+##### [Resources for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-resources.md)
+
 #### [Hardware-based isolation]()
 ##### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
 
 ##### [Application isolation]()
 ###### [Install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
-###### [Configuration settings](windows-defender-application-guard/configure-wd-app-guard.md)
-
-#### [Application control](windows-defender-application-control/windows-defender-application-control.md)
+###### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 
 #### [Device control]()
 ##### [Control USB devices](device-control/control-usb-devices-using-intune.md)
@@ -417,6 +441,13 @@
 #### [Interoperability]()
 ##### [Partner applications](microsoft-defender-atp/partner-applications.md)
 
+#### [Manage machine configuration]()
+##### [Ensure your machines are configured properly](microsoft-defender-atp/configure-machines.md)
+##### [Monitor and increase machine onboarding](microsoft-defender-atp/configure-machines-onboarding.md)
+##### [Increase compliance to the security baseline](microsoft-defender-atp/configure-machines-security-baseline.md)
+##### [Optimize ASR rule deployment and detections](microsoft-defender-atp/configure-machines-asr.md)
+
+
 #### [Role-based access control]()
 ##### [Manage portal access using RBAC](microsoft-defender-atp/rbac.md)
 ##### [Create and manage roles](microsoft-defender-atp/user-roles.md)
@@ -426,7 +457,6 @@
 
 #### [Configure managed security service provider (MSSP) support](microsoft-defender-atp/configure-mssp-support.md)
 
-### [Configure and manage Microsoft Threat Experts capabilities](microsoft-defender-atp/configure-microsoft-threat-experts.md)
 
 ### [Configure Microsoft threat protection integration]()
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)

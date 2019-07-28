@@ -131,7 +131,7 @@ If the BCD has the correct entries, check whether the **winload** and **bootmgr*
 
 If the files are missing, and you want to rebuild the boot files, follow these steps:
 
-1.	Copy all the contents under the **SYSTEM**  partition to another location. Alternatively, you can use the command prompt to navigate to the OS drive, create a new folder, and then copy all the files and folders from the **SYSTEM**  volume, as follows:
+1. Copy all the contents under the **SYSTEM**  partition to another location. Alternatively, you can use the command prompt to navigate to the OS drive, create a new folder, and then copy all the files and folders from the **SYSTEM**  volume, as follows:
 
 ```
 D:\> Mkdir  BootBackup
@@ -155,13 +155,13 @@ R:\> Copy *.* D:\BootBackup
 
 If you do not have a Windows 10 ISO, you must format the partition and copy **bootmgr**  from another working computer that has a similar Windows build. To do this, follow these steps:
 
-1.	Start **Notepad** .
+1. Start **Notepad** .
 
-2.	Press Ctrl+O.
+2. Press Ctrl+O.
 
-3.	Navigate to the system partition (in this example, it is R).
+3. Navigate to the system partition (in this example, it is R).
 
-4.	Right-click the partition, and then format it.
+4. Right-click the partition, and then format it.
 
 ###  Troubleshooting if this issue occurs after a Windows Update installation
 
@@ -175,31 +175,31 @@ After you run this command, you will see the **Install pending** and **Uninstall
 
 ![Dism output](images/pendingupdate.png)
 
-1.	Run the `dism /Image:C:\ /Cleanup-Image /RevertPendingActions` command. Replace **C:** with the system partition for your computer.
+1. Run the `dism /Image:C:\ /Cleanup-Image /RevertPendingActions` command. Replace **C:** with the system partition for your computer.
 
     ![Dism output](images/revertpending.png)
 
-2.	Navigate to ***OSdriveLetter* :\Windows\WinSxS** , and then check whether the **pending.xml**  file exists. If it does, rename it to **pending.xml.old**.
+2. Navigate to ***OSdriveLetter* :\Windows\WinSxS** , and then check whether the **pending.xml**  file exists. If it does, rename it to **pending.xml.old**.
 
-3.	To revert the registry changes, type **regedit**  at the command prompt to open **Registry Editor**.
+3. To revert the registry changes, type **regedit**  at the command prompt to open **Registry Editor**.
 
-4.	Select **HKEY_LOCAL_MACHINE**, and then go to **File**  > **Load Hive**.
+4. Select **HKEY_LOCAL_MACHINE**, and then go to **File**  > **Load Hive**.
 
-5.	Navigate to **OSdriveLetter:\Windows\System32\config**, select the file that is named **COMPONENT** (with no extension), and then select **Open**. When you are prompted, enter the name **OfflineComponentHive** for the new hive
+5. Navigate to **OSdriveLetter:\Windows\System32\config**, select the file that is named **COMPONENT** (with no extension), and then select **Open**. When you are prompted, enter the name **OfflineComponentHive** for the new hive
     
     ![Load Hive](images/loadhive.png)
 
-6.	Expand **HKEY_LOCAL_MACHINE\OfflineComponentHive**, and check whether the **PendingXmlIdentifier** key exists. Create a backup of the **OfflineComponentHive** key, and then delete the **PendingXmlIdentifier** key.
+6. Expand **HKEY_LOCAL_MACHINE\OfflineComponentHive**, and check whether the **PendingXmlIdentifier** key exists. Create a backup of the **OfflineComponentHive** key, and then delete the **PendingXmlIdentifier** key.
 
-7.	Unload the hive. To do this, highlight **OfflineComponentHive**, and then select **File**  > **Unload hive**.
+7. Unload the hive. To do this, highlight **OfflineComponentHive**, and then select **File**  > **Unload hive**.
 
     ![Unload Hive](images/unloadhive.png)![Unload Hive](images/unloadhive1.png)
 
-8.	Select **HKEY_LOCAL_MACHINE**, go to **File** > **Load Hive**, navigate to ***OSdriveLetter* :\Windows\System32\config**, select the file that is named **SYSTEM** (with no extension), and then select **Open** . When you are prompted, enter the name **OfflineSystemHive** for the new hive.
+8. Select **HKEY_LOCAL_MACHINE**, go to **File** > **Load Hive**, navigate to ***OSdriveLetter* :\Windows\System32\config**, select the file that is named **SYSTEM** (with no extension), and then select **Open** . When you are prompted, enter the name **OfflineSystemHive** for the new hive.
 
-9.	Expand **HKEY_LOCAL_MACHINE\OfflineSystemHive**, and then select the **Select** key. Check the data for the **Default** value.
+9. Expand **HKEY_LOCAL_MACHINE\OfflineSystemHive**, and then select the **Select** key. Check the data for the **Default** value.
 
-10.	If the data in **HKEY_LOCAL_MACHINE\OfflineSystemHive\Select\Default**  is **1** , expand **HKEY_LOCAL_MACHINE\OfflineHive\ControlSet001**. If it is **2**, expand **HKEY_LOCAL_MACHINE\OfflineHive\ControlSet002**, and so on.
+10. If the data in **HKEY_LOCAL_MACHINE\OfflineSystemHive\Select\Default**  is **1** , expand **HKEY_LOCAL_MACHINE\OfflineHive\ControlSet001**. If it is **2**, expand **HKEY_LOCAL_MACHINE\OfflineHive\ControlSet002**, and so on.
 
 11.	 Expand **Control\Session Manager**. Check whether the **PendingFileRenameOperations** key exists. If it does, back up the **SessionManager** key, and then delete the **PendingFileRenameOperations** key.
 
@@ -209,9 +209,9 @@ After you run this command, you will see the **Install pending** and **Uninstall
 
 1.	 Follow steps 1-10 in the "Troubleshooting if this issue occurs after an Windows Update installation" section. (Step 11 does not apply to this procedure.)
 
-2.	Expand **Services**.
+2. Expand **Services**.
 
-3.	Make sure that the following registry keys exist under **Services**: 
+3. Make sure that the following registry keys exist under **Services**: 
 
     * ACPI
 

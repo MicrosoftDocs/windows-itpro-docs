@@ -7,8 +7,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: dansimp
+ms.author: dolmont
+author: DulceMontemayor
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance 
+ms.topic: conceptual
 ---
 
 # Threat Protection
@@ -39,9 +44,15 @@ ms.localizationpriority: medium
 
 **[Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)**<br>
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
+
 - [Risk-based Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md) 
 - [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
+- [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
 - [Configuration score](microsoft-defender-atp/configuration-score.md)
+- [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
+- [Remediation](microsoft-defender-atp/tvm-remediation.md)
+- [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
+- [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
 - [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
 
 <a name="asr"></a>
@@ -97,6 +108,9 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 <a name="ss"></a>
 
 **[Secure score](microsoft-defender-atp/overview-secure-score.md)**<br>
+>[!NOTE]
+>  Secure score is now part of [Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)  as [Configuration score](microsoft-defender-atp/configuration-score.md). The secure score page will be available for a few weeks. View the [Secure score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score) page.
+
 Microsoft Defender ATP includes a secure score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
 - [Asset inventory](microsoft-defender-atp/secure-score-dashboard.md)
 - [Recommended improvement actions](microsoft-defender-atp/secure-score-dashboard.md)

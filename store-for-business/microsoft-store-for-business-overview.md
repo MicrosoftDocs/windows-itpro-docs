@@ -60,7 +60,7 @@ Microsoft Azure Active Directory (AD) accounts for your employees:
 - Employees need Azure AD account when they access Store for Business content from Windows devices.
 - If you use a management tool to distribute and manage online-licensed apps, all employees will need an Azure AD account
 - For offline-licensed apps, Azure AD accounts are not required for employees.
-- Admins can add or remove user accounts in the Office 365 admin center, even if you don’t have an Office 365 subscription. You can access the Office 365 admin portal directly from the Store for Business and Education. 
+- Admins can add or remove user accounts in the Microsoft 365 admin center, even if you don’t have an Office 365 subscription. You can access the Office 365 admin portal directly from the Store for Business and Education. 
 
 For more information on Azure AD, see [About Office 365 and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 

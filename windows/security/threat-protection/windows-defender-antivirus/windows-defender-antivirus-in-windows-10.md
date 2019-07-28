@@ -11,7 +11,6 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
 ---
@@ -29,6 +28,9 @@ Windows Defender Antivirus includes:
 - [Always-on scanning](configure-real-time-protection-windows-defender-antivirus.md), using advanced file and process behavior monitoring and other heuristics (also known as "real-time protection")
 - [Dedicated protection updates](manage-updates-baselines-windows-defender-antivirus.md) based on machine-learning, human and automated big-data analysis, and in-depth threat resistance research
 
+Windows Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, real-time, and intelligent protection. [Get to know the advanced technologies at the core of Microsoft Defender ATP next generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+![List of Windows Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+
 You can configure and manage Windows Defender Antivirus with:
 - System Center Configuration Manager (as System Center Endpoint Protection, or SCEP) 
 - Microsoft Intune
@@ -42,8 +44,10 @@ You can configure and manage Windows Defender Antivirus with:
 >- Fast learning (including Block at first sight)
 >- Potentially unwanted application blocking
 
-Check out [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp), including new features and capabilities in Windows Defender Antivirus.
+> [!NOTE]
+> For more information regarding what's new in each Windows version, please refer to [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp).
 
+=======
 <a id="sysreq"></a>
 ## Minimum system requirements
 
@@ -52,6 +56,12 @@ Windows Defender AV has the same hardware requirements as Windows 10. For more i
 -   [Hardware component guidelines](https://msdn.microsoft.com/library/windows/hardware/dn915049.aspx)
 
 Functionality, configuration, and management is largely the same when using Windows Defender AV on Windows Server 2016; however, [there are some differences](windows-defender-antivirus-on-windows-server-2016.md).
+
+>[!TIP]
+>You can visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working and see how they work:
+>- Cloud-delivered protection
+>- Fast learning (including Block at first sight)
+>- Potentially unwanted application blocking
 
 ## Related topics
 

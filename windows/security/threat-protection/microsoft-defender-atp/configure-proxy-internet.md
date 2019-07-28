@@ -172,7 +172,58 @@ If at least one of the connectivity options returns a (200) status, then the Mic
 However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Microsoft Defender ATP service URLs in the proxy server](#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server). The URLs you'll use will depend on the region selected during the onboarding procedure.
 
 > [!NOTE]
+> The Connectivity Analyzer tool is not compatible with ASR rule [Block process creations originating from PSExec and WMI commands](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules). You will need to temporarily disable this rule to run the connectivity tool.
 > When the TelemetryProxyServer is set, in Registry or via Group Policy, Microsoft Defender ATP will fall back to direct if it can't access the defined proxy.
+
+## Conduct investigations with Microsoft Defender ATP behind a proxy
+Microsoft Defender ATP supports network connection monitoring from different levels of the operating system network stack. A challenging case is when the network uses a forward proxy as a gateway to the internet.
+The proxy acts as if it was the target endpoint.  In these cases, simple network connection monitors will audit the connections with the proxy which is correct but has lower investigation value. Microsoft Defender ATP supports advanced HTTP level sensor.
+By enabling this sensor, Microsoft Defender ATP will expose a new type of events that surfaces the real target domain names. <br><br>
+
+**Investigation Impact**<br>
+In machine's timeline the IP address will keep representing the proxy, while the real target address shows up.
+![Image of network events on machine's timeline](images/atp-proxy-investigation.png)<br>
+
+Additional events triggered by the Network Protection layer are now available to surface the real domain names even behind a proxy. <br>
+Event's information:
+![Image of single network event](images/atp-proxy-investigation-event.png)<br>
+
+**Advanced Hunting**<br>
+All new connection events are available for you to hunt on through advanced hunting as well. Since these events are connection events, you can find them under the NetworkCommunicationEvents table under the ‘ConnecionSuccess’ action type.<br>
+Using this simple query will show you all the relevant events:
+
+```
+NetworkCommunicationEvents
+| where ActionType == "ConnectionSuccess" 
+| take 10
+```
+![Image of advanced hunting query](images/atp-proxy-investigation-ah.png)
+
+You can also filter out the events that are related to connection to the proxy itself. Use the following query to filter out the connections to the proxy:
+```
+NetworkCommunicationEvents
+| where ActionType == "ConnectionSuccess" and RemoteIP != "ProxyIP"  
+| take 10
+```
+
+**How to enable the advanced network connection sensor**<br>
+Monitoring network connection behind forward proxy is possible due to additional Network Events that originate from Network Protection. To see them in machine’s timeline you need to turn Network Protection on at least in audit mode. <br>
+
+Network protection is a feature in Windows Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites.  Its behavior can be controlled by the following options: Block and Audit. <br>
+If you turn this policy on in "Block" mode, users/apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Windows Defender Security Center.<br>
+
+If you turn this policy on in "Audit" mode, users/apps will not be blocked from connecting to dangerous domains. However, you will still see this activity in Microsoft Defender Security Center.<br>
+
+If you turn this policy off, users/apps will not be blocked from connecting to dangerous domains. You will not see any network activity in Microsoft Defender Security Center.<br>
+
+If you do not configure this policy, network blocking will be disabled by default. <br><br>
+
+> [!NOTE]
+> In order to enable Monitoring network connection behind forward proxy and see the domains you will need to enable network protection at least in audit mode.
+
+Additional documentation:
+- [Applying network protection with GP – policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+- [Windows Defender Exploit Guard Documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet)
 
 ## Related topics
 - [Onboard Windows 10 machines](configure-endpoints.md)
