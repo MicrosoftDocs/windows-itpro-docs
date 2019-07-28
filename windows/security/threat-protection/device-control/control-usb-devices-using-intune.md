@@ -114,7 +114,7 @@ To prevent malware infections or data loss, an organization may restrict USB dri
 
 All of the above controls can be set through the Intune [Administrative Templates](https://docs.microsoft.com/en-us/intune/administrative-templates-windows). The relevant policies are located here in the Intune Administrator Templates:
 
-![Admintemplates](https://github.com/MicrosoftDocs/windows-docs-pr/blob/v-jowirt-updates/windows/security/threat-protection/windows-defender-antivirus/images/admintemplates.png)
+![Admintemplates](images/admintemplates.png)
 
 >[!Note]
 >Using Intune, you can apply device configuration policies to AAD user and/or device groups.
@@ -159,13 +159,13 @@ If you want to prevent a device class or certain devices, you can use the preven
 
 The Microsoft Defender Advanced Threat Protection (ATP) baseline settings, represent the recommended configuration for ATP.  Configuration settings for baseline are located here in the edit profile page of the configuration settings.
 
-![Baselines](https://github.com/MicrosoftDocs/windows-docs-pr/blob/v-jowirt-updates/windows/security/threat-protection/windows-defender-antivirus/images/baselines.png)
+![Baselines](images/baselines.png)
 
 ### Bluetooth
 
 Using Intune, you can limited the services that can use Bluetooth through the “Bluetooth allowed services”. The default state of “Bluetooth allowed services” settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and don’t add the file transfer GUIDs, file transfer should be blocked. 
 
-![Bluetooth](https://github.com/MicrosoftDocs/windows-docs-pr/blob/v-jowirt-updates/windows/security/threat-protection/windows-defender-antivirus/images/bluetooth.png)
+![Bluetooth](images/bluetooth.png)
 
 
 

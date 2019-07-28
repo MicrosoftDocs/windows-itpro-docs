@@ -99,6 +99,9 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 <a name="ss"></a>
 
 **[Secure score](overview-secure-score.md)**<br>
+>[!NOTE]
+>  Secure score is now part of [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) as [Configuration score](configuration-score.md). The secure score page will be available for a few weeks. View the [Secure score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score) page.
+
 Microsoft Defender ATP includes a secure score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
 
 <a name="mte"></a>
