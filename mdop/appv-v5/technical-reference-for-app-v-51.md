@@ -1,8 +1,11 @@
 ---
 title: Technical Reference for App-V 5.1
 description: Technical Reference for App-V 5.1
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 2b9e8b2b-4cd1-46f3-ba08-e3bc8d5c6127
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

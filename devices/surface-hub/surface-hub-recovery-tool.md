@@ -2,11 +2,13 @@
 title: Using the Surface Hub Recovery Tool
 description: How to use the Surface Hub Recovery Tool to re-image the SSD.
 ms.assetid: FDB6182C-1211-4A92-A930-6C106BCD5DC1
+ms.reviewer: 
+manager: dansimp
 keywords: manage Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.date: 05/22/2018
 ms.localizationpriority: medium
@@ -16,7 +18,7 @@ ms.localizationpriority: medium
 
 The [Microsoft Surface Hub Recovery Tool](https://www.microsoft.com/download/details.aspx?id=52210) helps you re-image your Surface Hub Solid State Drive (SSD) using a Windows 10 desktop device, without calling support or replacing the SSD. With this tool, you can reimage an SSD that has an unknown Administrator password, boot errors, was unable to complete a cloud recovery, or for a device that has an older version of the operating system. The tool will not fix physically damaged SSDs.
 
-To re-image the Surface Hub SSD using the Recovery Tool, you'll need to remove the SSD from the Surface Hub, connect the drive to the USB-to-SATA cable, and then connect the cable to the desktop PC on which the Recovery Tool is installed. For more information on how to remove the existing drive from your Surface Hub, please refer to the [Surface Hub SSD Replacement Guide (PDF)](https://download.microsoft.com/download/1/F/2/1F202254-7156-459F-ABD2-39CF903A25DE/surface-hub-ssd-replacement-guide_en-us.pdf).
+To re-image the Surface Hub SSD using the Recovery Tool, you'll need to remove the SSD from the Surface Hub, connect the drive to the USB-to-SATA cable, and then connect the cable to the desktop PC on which the Recovery Tool is installed. For more information on how to remove the existing drive from your Surface Hub, see [Surface Hub SSD replacement](surface-hub-ssd-replacement.md).
 
 >[!IMPORTANT]
 >Do not let the device go to sleep or interrupt the download of the image file.
@@ -73,9 +75,12 @@ Install Surface Hub Recovery Tool on the host PC.
 
     ![Download the image?](images/shrt-download.png)
 
-5. When the download is complete, the tool instructs you to connect an SSD drive. If the tool is unable to locate the attached drive, there is a good chance that the cable being used is not reporting the name of the SSD to Windows.  The imaging tool must find the name of the drive as "LITEON L CH-128V2S USB Device" before it can continue.  For more information on how to remove the existing drive from your Surface Hub, please refer to the [Surface Hub SSD Replacement Guide (PDF)](https://download.microsoft.com/download/1/F/2/1F202254-7156-459F-ABD2-39CF903A25DE/surface-hub-ssd-replacement-guide_en-us.pdf).
+5. When the download is complete, the tool instructs you to connect an SSD drive. If the tool is unable to locate the attached drive, there is a good chance that the cable being used is not reporting the name of the SSD to Windows.  The imaging tool must find the name of the drive as "LITEON L CH-128V2S USB Device" before it can continue.  For more information on how to remove the existing drive from your Surface Hub, see [Surface Hub SSD replacement](surface-hub-ssd-replacement.md).
 
-    ![Connect SSD](images/shrt-drive.png)
+
+~~~
+![Connect SSD](images/shrt-drive.png)
+~~~
 
 6. When the drive is recognized, click **Start** to begin the re-imaging process. On the warning that all data on the drive will be erased, click **OK**.
 
@@ -91,7 +96,7 @@ Install Surface Hub Recovery Tool on the host PC.
 
 Issue | Notes
 --- | ---
-The tool fails to image the SSD	| Make sure you are using a factory-supplied SSD and one of the tested cables.
+The tool fails to image the SSD | Make sure you are using a factory-supplied SSD and one of the tested cables.
 The reimaging process appears halted/frozen | It is safe to close and restart the Surface Hub Recovery Tool with no ill effect to the SSD.
 The drive isn’t recognized by the tool | Verify that the Surface Hub SSD is enumerated as a Lite-On drive, "LITEON L CH-128V2S USB Device".  If the drive is recognized as another named device, your current cable isn’t compatible. Try another cable or one of the tested cable listed above.
 Error: -2147024809 | Open Disk Manager and remove the partitions on the Surface Hub drive.  Disconnect and reconnect the drive to the host machine. Restart the imaging tool again.

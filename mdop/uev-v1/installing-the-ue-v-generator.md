@@ -1,8 +1,11 @@
 ---
 title: Installing the UE-V Generator
 description: Installing the UE-V Generator
-author: jamiejdt
+author: levinec
 ms.assetid: 198b9a5f-3dfc-46be-9005-d33451914f87
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -33,7 +36,7 @@ The Microsoft User Experience Virtualization (UE-V) generator can be installed o
     **Note**  
     A prompt for User Account Control appears before the application is installed. Permission is required to install the UE-V generator.
 
-     
+     
 
 7.  Click **Finish** to close the wizard after the installation is complete. You will need to restart your computer before you can run the UE-V Generator.
 
@@ -48,9 +51,9 @@ The Microsoft User Experience Virtualization (UE-V) generator can be installed o
 
 [Planning for Custom Template Deployment for UE-V 1.0](planning-for-custom-template-deployment-for-ue-v-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

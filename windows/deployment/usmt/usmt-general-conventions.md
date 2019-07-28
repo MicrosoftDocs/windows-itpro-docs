@@ -2,6 +2,9 @@
 title: General Conventions (Windows 10)
 description: General Conventions
 ms.assetid: 5761986e-a847-41bd-bf8e-7c1bd01acbc6
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -47,7 +50,7 @@ Before you modify the .xml files, become familiar with the following guidelines:
 
 -   **File names with brackets**
 
-    If you are migrating a file that has a bracket character (\[ or \]) in the file name, you must insert a carat (^) character directly before the bracket for the bracket character to be valid. For example, if there is a file named File.txt, you must specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern> `instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.
+    If you are migrating a file that has a bracket character (\[ or \]) in the file name, you must insert a carat (^) character directly before the bracket for the bracket character to be valid. For example, if there is a file named File.txt, you must specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.
 
 -   **Using quotation marks**
 
@@ -58,44 +61,44 @@ Before you modify the .xml files, become familiar with the following guidelines:
 
 You can use the XML helper functions in the [XML Elements Library](usmt-xml-elements-library.md) to change migration behavior. Before you use these functions in an .xml file, note the following:
 
--   **All of the parameters are strings**
+- **All of the parameters are strings**
 
--   **You can leave NULL parameters blank**
+- **You can leave NULL parameters blank**
 
-    As with parameters with a default value convention, if you have a NULL parameter at the end of a list, you can leave it out. For example, the following function:
+  As with parameters with a default value convention, if you have a NULL parameter at the end of a list, you can leave it out. For example, the following function:
 
-    ``` syntax
-    SomeFunction("My String argument",NULL,NULL)
-    ```
+  ``` syntax
+  SomeFunction("My String argument",NULL,NULL)
+  ```
 
-    is equivalent to:
+  is equivalent to:
 
-    ``` syntax
-    SomeFunction("My String argument")
-    ```
+  ``` syntax
+  SomeFunction("My String argument")
+  ```
 
--   **The encoded location used in all the helper functions is an unambiguous string representation for the name of an object**
+- **The encoded location used in all the helper functions is an unambiguous string representation for the name of an object**
 
-    It is composed of the node part, optionally followed by the leaf enclosed in square brackets. This makes a clear distinction between nodes and leaves.
+  It is composed of the node part, optionally followed by the leaf enclosed in square brackets. This makes a clear distinction between nodes and leaves.
 
-    For example, specify the file C:\\Windows\\Notepad.exe: **c:\\Windows\[Notepad.exe\]**. Similarly, specify the directory C:\\Windows\\System32 like this: **c:\\Windows\\System32**; note the absence of the \[\] characters.
+  For example, specify the file C:\\Windows\\Notepad.exe: **c:\\Windows\[Notepad.exe\]**. Similarly, specify the directory C:\\Windows\\System32 like this: **c:\\Windows\\System32**; note the absence of the \[\] characters.
 
-    The registry is represented in a similar way. The default value of a registry key is represented as an empty \[\] construct. For example, the default value for the HKLM\\SOFTWARE\\MyKey registry key is **HKLM\\SOFTWARE\\MyKey\[\]**.
+  The registry is represented in a similar way. The default value of a registry key is represented as an empty \[\] construct. For example, the default value for the HKLM\\SOFTWARE\\MyKey registry key is **HKLM\\SOFTWARE\\MyKey\[\]**.
 
--   **You specify a location pattern in a way that is similar to how you specify an actual location**
+- **You specify a location pattern in a way that is similar to how you specify an actual location**
 
-    The exception is that both the node and leaf part accept patterns. However, a pattern from the node does not extend to the leaf.
+  The exception is that both the node and leaf part accept patterns. However, a pattern from the node does not extend to the leaf.
 
-    For example, the pattern **c:\\Windows\\\*** will match the \\Windows directory and all subdirectories, but it will not match any of the files in those directories. To match the files as well, you must specify **c:\\Windows\\\*\[\*\]**.
+  For example, the pattern **c:\\Windows\\\\*** will match the \\Windows directory and all subdirectories, but it will not match any of the files in those directories. To match the files as well, you must specify **c:\\Windows\\\*\[\*\]**.
 
 ## Related topics
 
 
 [USMT XML Reference](usmt-xml-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

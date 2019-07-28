@@ -2,6 +2,9 @@
 title: USMT Best Practices (Windows 10)
 description: USMT Best Practices
 ms.assetid: e3cb1e78-4230-4eae-b179-e6e9160542d2
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -62,7 +65,7 @@ As the authorized administrator, it is your responsibility to protect the privac
     **Important**  
     If you migrate an encrypted file without also migrating the certificate, end users will not be able to access the file after the migration.
 
-     
+     
 
 -   **Encrypt the store**
 
@@ -95,7 +98,7 @@ As the authorized administrator, it is your responsibility to protect the privac
 
     Although it is not a requirement, it is good practice for &lt;CustomFileName&gt; to match the name of the file. For example, the following is from the MigApp.xml file:
 
-    ``` syntax
+    ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migapp">
     ```
@@ -121,7 +124,7 @@ As the authorized administrator, it is your responsibility to protect the privac
     **Note**  
     The number of times a rule is processed does not affect the number of times a file is migrated. The USMT migration engine ensures that each file migrates only once.
 
-     
+     
 
 -   **We recommend that you create a separate .xml file instead of adding your .xml code to one of the existing migration .xml files**
 
@@ -136,7 +139,7 @@ As the authorized administrator, it is your responsibility to protect the privac
     **Note**  
     The question mark is not valid as a wildcard character in USMT .xml files.
 
-     
+     
 
 ## Related topics
 
@@ -145,9 +148,9 @@ As the authorized administrator, it is your responsibility to protect the privac
 
 [Plan Your Migration](usmt-plan-your-migration.md)
 
- 
+ 
 
- 
+ 
 
 
 

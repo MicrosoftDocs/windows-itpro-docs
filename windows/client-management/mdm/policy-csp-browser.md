@@ -4,16 +4,14 @@ description: Policy CSP - Browser
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: shortpatti
-ms.author: pashort
-ms.date: 10/02/2018
+author: dansimp
+ms.author: dansimp
+ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Browser
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 
 <hr/>
 
@@ -631,9 +629,9 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--	Blank (default) - Do not send tracking information but let users choose to send tracking information to sites they visit.
--	0 - Never send tracking information.
--	1 - Send tracking information.
+- Blank (default) - Do not send tracking information but let users choose to send tracking information to sites they visit.
+- 0 - Never send tracking information.
+- 1 - Send tracking information.
 
 Most restricted value: 1
 <!--/SupportedValues-->
@@ -2468,7 +2466,7 @@ Most restricted value: 0
   
 > [!NOTE]
 > This policy has no effect when the Browser/HomePages policy is not configured. 
- 
+ 
 > [!IMPORTANT]
 > This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](https://docs.microsoft.com/legal/windows/agreements/microsoft-browser-extension-policy).
 
@@ -2599,7 +2597,7 @@ Most restricted value: 0
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
 
- 
+ 
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -3282,7 +3280,7 @@ Supported values:
 
 - Blank (default) - Allowed. Users can uninstall extensions. If you previously enabled this policy and you decide to disable it, the list of extension PFNs defined in this policy get ignored.
 
-- String - Provide a semi-colon delimited list of extension PFNs. For example, adding the following OneNote Web Clipper and Office Online extension prevents users from turning it off:<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Microsoft.OneNoteWebClipper8wekyb3d8bbwe;Microsoft.OfficeOnline8wekyb3d8bbwe_<p>After defining the list of extensions, you deploy them through any available enterprise deployment channel, such as Microsoft Intune. <p>Removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension.
+- String - Provide a semi-colon delimited list of extension PFNs. For example, adding the following OneNote Web Clipper extension prevents users from turning it off:<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Microsoft.OneNoteWebClipper8wekyb3d8bbwe_<p>After defining the list of extensions, you deploy them through any available enterprise deployment channel, such as Microsoft Intune. <p>Removing extensions from the list does not uninstall the extension from the user’s computer automatically. To uninstall the extension, use any available enterprise deployment channel. If you enable the Allow Developer Tools policy, then this policy does not prevent users from debugging and altering the logic on an extension.
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -3398,14 +3396,14 @@ Most restricted value: 1
 >*Supported versions: Microsoft Edge on Windows 10, version 1709 or later* 
 
 [!INCLUDE [provision-favorites-shortdesc](../../../browsers/edge/shortdesc/provision-favorites-shortdesc.md)]
- 
+ 
 
 Define a default list of favorites in Microsoft Edge. In this case, the Save a Favorite, Import settings, and context menu options (such as Create a new folder) are turned off.
 
 To define a default list of favorites:
 1. In the upper-right corner of Microsoft Edge, click the ellipses (**...**) and select **Settings**.
 2. Click **Import from another browser**, click **Export to file** and save the file.
-3. In the **Options** section of the Group Policy Editor, provide the location that points the file with the list of favorites to provision. <p><p>Specify the URL as:<ul><li>HTTP location: "SiteList"=http://localhost:8080/URLs.html</li><li>Local network: "SiteList"="\network\shares\URLs.html"</li><li>Local file: "SiteList"=file:///c:/Users/Documents/URLs.html</li></ul>
+3. In the **Options** section of the Group Policy Editor, provide the location that points the file with the list of favorites to provision. <p><p>Specify the URL as:<ul><li>HTTP location: "SiteList"=<http://localhost:8080/URLs.html></li><li>Local network: "SiteList"="\network\shares\URLs.html"</li><li>Local file: "SiteList"=file:///c:/Users/Documents/URLs.html</li></ul>
 
 
 >[!IMPORTANT]
@@ -3805,7 +3803,7 @@ Most restricted value: 0
 
 [!INCLUDE [keep-favorites-in-sync-between-ie-and-edge-shortdesc](../../../browsers/edge/shortdesc/keep-favorites-in-sync-between-ie-and-edge-shortdesc.md)]
 
-> [!NOTE]  
+> [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.  
 
 <!--/Description-->
@@ -3829,7 +3827,7 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 
 <ol>
 <li>Open Internet Explorer and add some favorites.
-<li>Open Microsoft Edge, then select **Hub > Favorites**.
+<li>Open Microsoft Edge, then select <strong>Hub &gt; Favorites</strong>.
 <li>Verify that the favorites added to Internet Explorer show up in the favorites list in Microsoft Edge.
 </ol>
 
@@ -3963,15 +3961,51 @@ Supported values:
 Most restricted value: 0
 <!--/SupportedValues-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Supported versions, version 1607.
--   2 - Supported versions, version 1703.
--   3 - Supported versions, version 1709.
--   4 - Supported versions, version 1803.
--   5 - Supported versions, version 1809.
 
 <!--/Policies-->
 
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Browser policies supported by HoloLens 2
+
+- [Browser/AllowAutofill](#browser-allowautofill)
+- [Browser/AllowCookies](#browser-allowcookies)
+- [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+- [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+- [Browser/AllowPopups](#browser-allowpopups)
+- [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+- [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+ <!--EndHoloLens2-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololensbusinessspolicies"></a>Browser policies supported by HoloLens (1st gen) Commercial Suite
+
+- [Browser/AllowAutofill](#browser-allowautofill)
+- [Browser/AllowCookies](#browser-allowcookies)
+- [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+- [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+- [Browser/AllowPopups](#browser-allowpopups)
+- [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+- [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+<!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Browser policies supported by HoloLens (1st gen) Development Edition
+
+- [Browser/AllowCookies](#browser-allowcookies)
+- [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+- [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+- [Browser/AllowPopups](#browser-allowpopups)
+- [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+- [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+<!--EndHoloLens-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.

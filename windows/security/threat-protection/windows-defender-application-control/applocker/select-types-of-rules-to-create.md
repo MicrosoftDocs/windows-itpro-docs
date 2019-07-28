@@ -2,12 +2,14 @@
 title: Select the types of rules to create (Windows 10)
 description: This topic lists resources you can use when selecting your application control policy rules by using AppLocker.
 ms.assetid: 14751169-0ed1-47cc-822c-8c01a7477784
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: mjcaparas
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -57,7 +59,7 @@ A rule condition is criteria upon which an AppLocker rule is based and can only 
 | Publisher | To use a publisher condition, the files must be digitally signed by the software publisher, or you must do so by using an internal certificate. Rules that are specified to the version level might have to be updated when a new version of the file is released.|For more info about this rule condition, see [Understanding the publisher rule condition in AppLocker](understanding-the-publisher-rule-condition-in-applocker.md).
 | Path| Any file can be assigned this rule condition; however, because path rules specify locations within the file system, any subdirectory will also be affected by the rule (unless explicitly exempted).| For more info about this rule condition, see [Understanding the path rule condition in AppLocker](understanding-the-path-rule-condition-in-applocker.md). |
 | File hash | Any file can be assigned this rule condition; however, the rule must be updated each time a new version of the file is released because the hash value is based in part upon the version.| For more info about this rule condition, see [Understanding the file hash rule condition in AppLocker](understanding-the-file-hash-rule-condition-in-applocker.md). |
- 
+ 
 In the Woodgrove Bank example, the line-of-business app for the Bank Tellers business group is signed and is located at C:\\Program Files\\Woodgrove\\Teller.exe. Therefore, the rule can be defined with a publisher condition. If the rule is defined to a specific version and above (for example, Teller.exe version 8.0 and above), then this will allow any updates to this app to occur without interruption of access to the users if the app's name and signed attributes stay the same.
 
 ### Determine how to allow system files to run

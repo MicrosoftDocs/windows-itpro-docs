@@ -1,8 +1,11 @@
 ---
 title: Security Considerations for DaRT 10
 description: Security Considerations for DaRT 10
-author: jamiejdt
+author: msfttracyp
 ms.assetid: c653daf1-f12a-4667-98cc-f0c89fa38e3f
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
@@ -35,7 +38,7 @@ You can even configure the DaRT image so that the option to start a remote conne
 **Important**  
 After the remote connection is established, all the tools that you included in the recovery image, including those unavailable to the end user, will become available to any help desk worker who is working on the end–user computer.
 
- 
+ 
 
 For more information about including tools in the DaRT recovery image, see [Overview of the Tools in DaRT 10](overview-of-the-tools-in-dart-10.md).
 
@@ -47,7 +50,7 @@ If you deploy the DaRT recovery image by saving it to a USB flash drive or by cr
 **Note**  
 DaRT 10 supports BitLocker natively.
 
- 
+ 
 
 To include drive encryption, add the encryption solution files when you create the recovery image. Your encryption solution must be able to run on WinPE. End users who boot from the ISO are then able to access that encryption solution and unblock the drive.
 
@@ -61,9 +64,9 @@ By default, the communication between two computers that have established a **Re
 
 [Security and Privacy for DaRT 10](security-and-privacy-for-dart-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,12 +2,14 @@
 title: Domain member Digitally encrypt secure channel data (when possible) (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Domain member Digitally encrypt secure channel data (when possible) security policy setting.
 ms.assetid: 73e6023e-0af3-4531-8238-82f0f0e4965b
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -51,7 +53,7 @@ When a device joins a domain, a machine account is created. After joining the do
     The domain member will not attempt to negotiate secure channel encryption.
 
     >**Note:**  If the security policy setting [Domain member: Digitally encrypt or sign secure channel data (always)](domain-member-digitally-encrypt-or-sign-secure-channel-data-always.md) is enabled, this setting will be overwritten.
-     
+     
 -   Not defined
 
 ### Best practices
@@ -76,7 +78,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings| Enabled| 
 | Client Computer Effective Default Settings | Enabled| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

@@ -30,14 +30,16 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.keep-secure"
-			}
-		}
-	},
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.keep-secure",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "keep-secure"
+    "dest": "keep-secure",
+    "markdownEngineName": "markdig"
   }
 }

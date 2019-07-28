@@ -2,6 +2,9 @@
 title: Audit File Share (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit File Share, which determines whether the operating system generates audit events when a file share is accessed.
 ms.assetid: 9ea985f8-8936-4b79-abdb-35cbb7138f78
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

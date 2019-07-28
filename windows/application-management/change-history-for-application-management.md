@@ -7,10 +7,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jdeckerms
-ms.author: jdecker
+author: msfttracyp
+ms.author: tracyp
 ms.topic: article
 ms.date: 10/24/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Change history for Application management in Windows 10

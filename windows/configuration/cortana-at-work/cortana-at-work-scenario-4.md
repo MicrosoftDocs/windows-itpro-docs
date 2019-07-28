@@ -4,10 +4,12 @@ description: A test scenario about how to use Cortana at work to find your upcom
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: dougkim
+ms.author: dansimp
 ms.date: 10/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Test scenario 4 - Use Cortana at work to find your upcoming meetings
@@ -39,9 +41,9 @@ This process helps you find your upcoming meetings.
 ## Find out about upcoming meetings by using voice commands
 This process helps you to use Cortana at work and voice commands to find your upcoming meetings.
 
-1.	Click on the **Cortana** icon in the taskbar, and then click the **Microphone** icon (to the right of the **Search** box.
+1. Click on the **Cortana** icon in the taskbar, and then click the **Microphone** icon (to the right of the **Search** box.
 
-2.	Say _Show me what meeting I have at 3pm tomorrow_.
+2. Say _Show me what meeting I have at 3pm tomorrow_.
 
     >[!IMPORTANT]
     >Make sure that you have a meeting scheduled for the time you specify here.

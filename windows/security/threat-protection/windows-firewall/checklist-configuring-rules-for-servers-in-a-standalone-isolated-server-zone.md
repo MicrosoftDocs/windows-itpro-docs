@@ -2,12 +2,14 @@
 title: Checklist Configuring Rules for Servers in a Standalone Isolated Server Zone (Windows 10)
 description: Checklist Configuring Rules for Servers in a Standalone Isolated Server Zone
 ms.assetid: ccc09d06-ef75-43b0-9c77-db06f2940955
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -42,5 +44,5 @@ The GPOs for isolated servers are similar to those for an isolated domain. This 
 | Create a firewall rule that allows inbound network traffic only if it is authenticated from a user or device that is a member of the zone’s NAG.| [Restrict Server Access to Members of a Group Only](restrict-server-access-to-members-of-a-group-only.md)| 
 | Link the GPO to the domain level of the Active Directory organizational unit hierarchy. | [Link the GPO to the Domain](link-the-gpo-to-the-domain.md)| 
 | Add your test server to the membership group for the isolated server zone. Be sure to add at least one for each operating system supported by a different GPO in the group.| [Add Test Devices to the Membership Group for a Zone](add-test-devices-to-the-membership-group-for-a-zone.md)| 
- 
+ 
 Do not change the rules for any of your zones to require authentication until all zones have been set up and thoroughly tested.

@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - UserRights
 description: Policy CSP - UserRights
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 10/31/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - UserRights
@@ -18,7 +20,7 @@ User rights are assigned for user accounts or groups. The name of the policy def
 
 Here is an example syncml for setting the user right BackupFilesAndDirectories for Administrators and Authenticated Users groups.
 
-```syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
 
 <SyncBody>
@@ -42,30 +44,39 @@ Here is an example syncml for setting the user right BackupFilesAndDirectories f
 
 Here are examples of data fields. The encoded 0xF000 is the standard delimiter/separator.
 
--  Grant an user right to Administrators group via SID:
-    ```
-    <Data>*S-1-5-32-544</Data>
-    ```
+- Grant an user right to Administrators group via SID:
+   ```
+   <Data>*S-1-5-32-544</Data>
+   ```
  
--  Grant an user right to multiple groups (Administrators, Authenticated Users) via SID
-    ```
-    <Data>*S-1-5-32-544&#61440;*S-1-5-11</Data>
-    ```
+- Grant an user right to multiple groups (Administrators, Authenticated Users) via SID
+   ```
+   <Data>*S-1-5-32-544&#61440;*S-1-5-11</Data>
+   ```
 
--  Grant an user right to multiple groups (Administrators, Authenticated Users) via a mix of SID and Strings
-    ```
-    <Data>*S-1-5-32-544&#61440;Authenticated Users</Data>
-    ```
+- Grant an user right to multiple groups (Administrators, Authenticated Users) via a mix of SID and Strings
+   ```
+   <Data>*S-1-5-32-544&#61440;Authenticated Users</Data>
+   ```
  
--  Grant an user right to multiple groups (Authenticated Users, Administrators) via strings
-    ```
-    <Data>Authenticated Users&#61440;Administrators</Data>
-    ```
+- Grant an user right to multiple groups (Authenticated Users, Administrators) via strings
+   ```
+   <Data>Authenticated Users&#61440;Administrators</Data>
+   ```
 
--  Empty input indicates that there are no users configured to have that user right
-    ```
-    <Data></Data>
-    ```
+- Empty input indicates that there are no users configured to have that user right
+   ```
+   <Data></Data>
+   ```
+  If you use Intune custom profiles to assign UserRights policies, you must use the CDATA tag (`<![CDATA[...]]>`) to wrap the data fields. You can specify one or more user groups within the CDATA tag by using 0xF000 as the delimiter/separator.
+
+> [!Note]
+> `&#xF000;` is the entity encoding of 0xF000.
+
+For example, the following syntax grants user rights to Authenticated Users and Replicator user groups:
+```
+<![CDATA[Authenticated Users&#xF000;Replicator]]>
+```
 
 <hr/>
 

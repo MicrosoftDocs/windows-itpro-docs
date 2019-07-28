@@ -2,12 +2,14 @@
 title: Gathering Information about Your Devices (Windows 10)
 description: Gathering Information about Your Devices
 ms.assetid: 7f7cd3b9-de8e-4fbf-89c6-3d1a47bc2beb
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -57,4 +59,4 @@ Whether you use an automatic, manual, or hybrid option to gather the information
 
 This inventory will be critical for planning and implementing your Windows Defender Firewall design.
 
-**Next: **[Gathering Other Relevant Information](gathering-other-relevant-information.md)
+**Next:** [Gathering Other Relevant Information](gathering-other-relevant-information.md)

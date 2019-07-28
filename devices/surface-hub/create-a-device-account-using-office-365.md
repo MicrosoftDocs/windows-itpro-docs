@@ -2,11 +2,13 @@
 title: Create a device account using UI (Surface Hub)
 description: If you prefer to use a graphical user interface, you can create a device account for your Microsoft Surface Hub with either the Office 365 UI or the Exchange Admin Center.
 ms.assetid: D11BCDC4-DABA-4B9A-9ECB-58E02CC8218C
-keywords: create device account, Office 365 UI, Exchange Admin center, Office 365 admin center, Skype for Business, mobile device mailbox policy
+ms.reviewer: 
+manager: dansimp
+keywords: create device account, Office 365 UI, Exchange Admin center, Microsoft 365 admin center, Skype for Business, mobile device mailbox policy
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 05/04/2018
 ms.localizationpriority: medium
@@ -20,22 +22,22 @@ If you prefer to use a graphical user interface, you can create a device account
 ## <a href="" id="create-device-acct-o365"></a>Create a device account using Office 365
 
 
-1.  [Create the account in the Office 365 Admin Center](#create-device-acct-o365-admin-ctr).
+1.  [Create the account in the Microsoft 365 Admin Center](#create-device-acct-o365-admin-ctr).
 2.  [Create a mobile device mailbox (ActiveSync) policy from the Microsoft Exchange Admin Center](#create-device-acct-o365-mbx-policy).
 3.  [Use PowerShell to complete device account creation](#create-device-acct-o365-complete-acct).
 4.  [Use PowerShell to configure Exchange properties of the account](#create-device-acct-o365-configure-exch-prop).
 5.  [Enable the account with Skype for Business](#create-device-acct-o365-skype-for-business).
 
-### <a href="" id="create-device-acct-o365-admin-ctr"></a>Create the account in the Office 365 Admin Center
+### <a href="" id="create-device-acct-o365-admin-ctr"></a>Create the account in the admin center
 
 1.  Sign in to Office 365 by visiting http://portal.office.com
-2.  Provide the admin credentials for your Office 365 tenant. This will take you to your Office 365 Admin Center.
+2.  Provide the admin credentials for your Office 365 tenant. This will take you to your Microsoft 365 Admin Center.
 
-    ![Office 365 admin center.](images/setupdeviceaccto365-02.png)
+    ![Microsoft 365 admin center.](images/setupdeviceaccto365-02.png)
 
-3. In the Office 365 Admin Center, navigate to **Resources** in the left panel, and then click **Rooms & equipment**.
+3. In the admin center, navigate to **Resources** in the left panel, and then click **Rooms & equipment**.
 
-    ![Rooms & equipment option in Office 365 admin center](images/room-equipment.png)
+    ![Rooms & equipment option in admin center](images/room-equipment.png)
 
 4. Click **Add** to create a new Room account. Enter a display name and email address for the account, and then click **Add**.
 
@@ -47,9 +49,9 @@ If you prefer to use a graphical user interface, you can create a device account
 
 ### <a href="" id="create-device-acct-o365-mbx-policy"></a>Create a mobile device mailbox (ActiveSync) policy from the Exchange Admin Center
 
-1.  In the Office 365 Admin Center’s left panel, click **ADMIN**, and then click **Exchange**.
+1.  In the admin center’s left panel, click **ADMIN**, and then click **Exchange**.
 
-    ![Office 365 admin center, showing exchange active users.](images/setupdeviceaccto365-08.png)
+    ![admin center, showing exchange active users.](images/setupdeviceaccto365-08.png)
 
 2.  This will open another tab on your browser to take you to the Exchange Admin Center, where you can create and set the Mailbox Setting for Surface Hub.
 
@@ -93,7 +95,7 @@ Install the following module in Powershell
 
 2.  Create a Credentials object, then create a new session that connects to Skype for Business Online, and provide the global tenant administrator account, then click **OK**.
 
-    ![Image for Windows PowerShell credential request. ](images/setupdeviceaccto365-18.png)
+    ![Image for Windows PowerShell credential request.](images/setupdeviceaccto365-18.png)
 
 3.  To connect to Microsoft Online Services, run:
 
@@ -217,6 +219,8 @@ In order to enable Skype for Business, your environment will need to meet the fo
 
 ## <a href="" id="create-device-acct-eac"></a>Create a device account using the Exchange Admin Center
 
+>[!NOTE]
+>This method will only work if you are syncing from an on-premises Active Directory.
 
 You can use the Exchange Admin Center to create a device account:
 
@@ -241,7 +245,7 @@ You can use the Exchange Admin Center to create a device account:
 >[!NOTE]
 >If you want to create and assign a policy to the account you created, and are using Exchange 2010, look up the corresponding information regarding policy creation and policy assignment when using the EMC (Exchange management console).
 
- 
+ 
 
 1.  Go to the Exchange Admin Center.
 
@@ -369,11 +373,11 @@ If you aren't sure what value to use for the `RegistrarPool` parameter in your e
     Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
     ```
     
-3.  To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
+3. To enable your Surface Hub account for Skype for Business Server, run this cmdlet:
 
-    ```PowerShell
-    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
-    ```
+   ```PowerShell
+   Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
+   ```
 
     
 

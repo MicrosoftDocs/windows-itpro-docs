@@ -1,19 +1,17 @@
 ---
 title: Policy CSP - Experience
 description: Policy CSP - Experience
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 07/30/2018
+author: manikadhiman
+ms.date: 05/21/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Experience
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 
 <hr/>
 
@@ -95,6 +93,9 @@ ms.date: 07/30/2018
   </dd>
   <dd>
     <a href="#experience-preventusersfromturningonbrowsersyncing">Experience/PreventUsersFromTurningOnBrowserSyncing</a>
+  </dd>
+  <dd>
+    <a href="#experience-showlockonusertile">Experience/ShowLockOnUserTile</a>
   </dd>
 </dl>
 
@@ -936,6 +937,7 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> Prior to Windows 10, version 1803, this policy had User scope.
 
 
 This policy allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
@@ -1461,13 +1463,13 @@ _**Sync the browser settings automatically**_
 
 _**Prevent syncing of browser settings and prevent users from turning it on**_
 
-1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
-2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
+1. Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2. Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
 
 _**Prevent syncing of browser settings and let users turn on syncing**_
 
-1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
-2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
+1. Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2. Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
 
 _**Turn syncing off by default but don’t disable**_
 
@@ -1548,13 +1550,13 @@ _**Sync the browser settings automatically**_
 
 _**Prevent syncing of browser settings and prevent users from turning it on**_
 
-1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
-2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
+1. Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2. Set **PreventUsersFromTurningOnBrowserSyncing** to 1 (Prevented/turned off).
 
 _**Prevent syncing of browser settings and let users turn on syncing**_
 
-1.	Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
-2.	Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
+1. Set **DoNotSyncBrowserSettings** to 2 (Prevented/turned off).
+2. Set **PreventUsersFromTurningOnBrowserSyncing** to 0 (Allowed/turned on).
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -1571,15 +1573,101 @@ Validation procedure:
 
 <hr/>
 
-Footnote:
+<!--Policy-->
+<a href="" id="experience-showlockonusertile"></a>**Experience/ShowLockOnUserTile**  
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Shows or hides lock from the user tile menu.
+
+If you enable this policy setting, the lock option is shown in the User Tile menu.
+
+If you disable this policy setting, the lock option is never shown in the User Tile menu.
+
+If you do not configure this policy setting, the lock option is shown in the User Tile menu. Users can choose if they want to show the lock in the user tile menu from the Power Options control panel.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Show lock in the user tile menu*
+-   GP name: *ShowLockOption*
+-   GP path: *File Explorer*
+-   GP ADMX file name: *WindowsExplorer.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Supported values:  
+- false - The lock option is not displayed in the User Tile menu.
+- true (default) - The lock option is displayed in the User Tile menu.
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
 
 <!--/Policies-->
 
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Experience policies supported by HoloLens 2
 
+- [Experience/AllowCortana](#experience-allowcortana)
+- [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)
+<!--EndHoloLens2-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololensbusinessspolicies"></a>Experience policies supported by HoloLens (1st gen) Commercial Suite
+
+- [Experience/AllowCortana](#experience-allowcortana)
+<!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Experience policies supported by HoloLens (1st gen)  Development Edition
+
+- [Experience/AllowCortana](#experience-allowcortana)
+<!--EndHoloLens-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.

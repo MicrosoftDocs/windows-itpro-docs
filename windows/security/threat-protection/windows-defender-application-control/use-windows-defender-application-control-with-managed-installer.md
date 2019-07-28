@@ -5,8 +5,11 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-author: mdsakibMSFT
+author: dansimp
 ms.date: 06/13/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Deploy Managed Installer for Windows Defender Application Control
@@ -26,7 +29,7 @@ A managed installer helps an IT admin balance security and manageability require
 ## How does a managed installer work?
 
 A managed installer uses a new rule collection in AppLocker to specify one or more executables that are trusted by the organization as an authorized source for application deployment. 
-Specifying an executable as a managed installer will cause Windows to tag files that are written from the executable’s process (or processes it launches) as having originated from a trusted installation authority.  
+Specifying an executable as a managed installer will cause Windows to tag files that are written from the executable’s process (or processes it launches) as having originated from a trusted installation authority. The Managed Installer rule collection is currently supported for AppLocker rules in Group Policy and in Configuration Manager, but not in the AppLocker CSP for OMA-URI policies.
 
 Once the IT administrator adds the Allow: Managed Installer option to a WDAC policy, the WDAC component will subsequently check for the presence of the origin information when evaluating other application execution control rules specified in the policy. 
 If there are no deny rules present for the file, it will be authorized based on the managed installer origin information.+
@@ -46,10 +49,11 @@ There are three primary steps to keep in mind:
 ### Specify managed installers using the Managed Installer rule collection in AppLocker policy
 
 The identity of the managed installer executable(s) is specified in an AppLocker policy in a Managed Installer rule collection. 
-Currently the AppLocker policy creation UI and cmdlets do not allow for directly specifying rules for the Managed Installer rule collection, however a text editor can be used to make the simple changes needed to an EXE or DLL rule collection policy to specify Type="ManagedInstaller". 
+Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerShell cmdlets allow for directly specifying rules for the Managed Installer rule collection. However, a text editor can be used to make the simple changes needed to an EXE or DLL rule collection policy to specify Type="ManagedInstaller", so that the new rule can be imported into a GPO.
 
 An example of a valid Managed Installer rule collection is shown below.
 For more information about creating an AppLocker policy that includes a managed installer and configuring client devices, see [Simplify application whitelisting with Configuration Manager and Windows 10](https://cloudblogs.microsoft.com/enterprisemobility/2016/06/20/configmgr-as-a-managed-installer-with-win10/).
+As mentioned above, the AppLocker CSP for OMA-URI policies does not currently support the Managed Installer rule collection or the Service Enforcement rule extensions mentioned below.
 
 
 ```code

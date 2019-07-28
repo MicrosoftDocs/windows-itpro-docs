@@ -7,12 +7,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
+ms.reviewer: 
 ---
 
 ## Additional mitigations
@@ -70,11 +71,11 @@ Then on the devices that are running Windows Defender Credential Guard, enroll t
 **Enrolling devices in a certificate**
 
 Run the following command:
-``` syntax
+```powershell
 CertReq -EnrollCredGuardCert MachineAuthentication
 ```
 
-> [!NOTE]  
+> [!NOTE]
 > You must restart the device after enrolling the machine authentication certificate.
  
 ##### How a certificate issuance policy can be used for access control
@@ -86,7 +87,7 @@ Beginning with the Windows Server 2008 R2 domain functional level, domain contro
 -   The [get-IssuancePolicy.ps1](#bkmk-getscript) shows all of the issuance policies that are available on the certificate authority.
     From a Windows PowerShell command prompt, run the following command:
 
-    ``` syntax
+    ```powershell
     .\get-IssuancePolicy.ps1 –LinkedToGroup:All
     ```
 
@@ -95,7 +96,7 @@ Beginning with the Windows Server 2008 R2 domain functional level, domain contro
 -   The [set-IssuancePolicyToGroupLink.ps1](#bkmk-setscript) creates a Universal security group, creates an organizational unit, and links the issuance policy to that Universal security group.
     From a Windows PowerShell command prompt, run the following command:
 
-    ``` syntax
+    ```powershell
     .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:"<name of issuance policy>" –groupOU:"<Name of OU to create>" –groupName:”<name of Universal security group to create>"
     ```
 
@@ -125,7 +126,7 @@ Authentication policies have the following requirements:
 11. Click **OK** to create the authentication policy.
 12. Close Active Directory Administrative Center.
 
-> [!NOTE]  
+> [!NOTE]
 > When the authentication policy enforces policy restrictions, users will not be able to sign on using devices that do not have a certificate with the appropriate issuance policy deployed. This applies to both local and remote sign on scenarios. Therefore, it is strongly recommended to first only audit policy restrictions to ensure you don't have unexpected failures.
 
 ##### Discovering authentication failures due to authentication policies
@@ -142,7 +143,7 @@ Here is a list of scripts mentioned in this topic.
 
 Save this script file as get-IssuancePolicy.ps1.
 
-``` syntax
+```powershell
 #######################################
 ##     Parameters to be defined      ##
 ##     by the user                   ##
@@ -326,14 +327,14 @@ write-host "There are no issuance policies which are not mapped to groups"
     }
 }
 ```
-> [!NOTE]  
+> [!NOTE]
 > If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
  
 #### <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
 
 Save the script file as set-IssuancePolicyToGroupLink.ps1.
 
-``` syntax
+```powershell
 #######################################
 ##     Parameters to be defined      ##
 ##     by the user                   ##
@@ -608,11 +609,5 @@ write-host $tmp -Foreground Red
 }
 ```
 
-> [!NOTE]  
+> [!NOTE]
 > If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
-
-## See also
-
-**Deep Dive into Windows Defender Credential Guard: Related videos**
-
-[Protecting privileged users with Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)

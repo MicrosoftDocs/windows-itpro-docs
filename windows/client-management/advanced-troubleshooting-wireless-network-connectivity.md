@@ -1,13 +1,15 @@
 ---
 title: Advanced Troubleshooting Wireless Network Connectivity
+ms.reviewer: 
+manager: dansimp
 description: Learn how troubleshooting of establishing Wi-Fi connections
 keywords: troubleshooting, wireless network connectivity, wireless, Wi-Fi
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
-author: kaushika-msft
+author: msfttracyp
 ms.localizationpriority: medium
-ms.author: greg-lindsay
+ms.author: tracyp
 ms.topic: troubleshooting
 ---
 
@@ -36,6 +38,7 @@ The intention of this troubleshooter is to show how to find a starting point in 
 
 ### Known Issues and fixes
 ** **
+
 | **OS version** | **Fixed in** |
 | --- | --- |
 | **Windows 10, version 1803** | [KB4284848](https://support.microsoft.com/help/4284848) |
@@ -52,7 +55,7 @@ Make sure that you install the latest Windows updates, cumulative updates, and r
 - [Windows 8.1 and Windows Server 2012 R2](https://support.microsoft.com/help/4009470)
 - [Windows Server 2012](https://support.microsoft.com/help/4009471)
 - [Windows 7 SP1 and Windows Server 2008 R2 SP1](https://support.microsoft.com/help/40009469)
- 
+
 ## Data Collection
 
 1. Network Capture with ETW. Enter the following at an elevated command prompt:
@@ -234,8 +237,8 @@ This is followed by **PHY_STATE_CHANGE** and **PORT_DOWN** events due to a disas
 
 ### Resources
 
-[802.11 Wireless Tools and Settings](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc755892(v%3dws.10))<br>
-[Understanding 802.1X authentication for wireless networks](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc759077%28v%3dws.10%29)<br>
+[802.11 Wireless Tools and Settings](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc755892(v%3dws.10))<br>
+[Understanding 802.1X authentication for wireless networks](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc759077%28v%3dws.10%29)<br>
 
 ## Example ETW capture
 

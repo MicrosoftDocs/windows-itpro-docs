@@ -1,8 +1,11 @@
 ---
 title: Configure E-Mail Security for AGPM
 description: Configure E-Mail Security for AGPM
-author: jamiejdt
+author: mjcaparas
 ms.assetid: b9c48894-0a10-4d03-8027-50ed3b02485a
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,7 +24,7 @@ By encrypting AGPM e-mail notifications, you can better protect those that could
 **Caution**  
 Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.
 
- 
+ 
 
 A user account that has the AGPM Administrator (Full Control) role, the user account of the Approver who created the Group Policy Object (GPO) used in these procedures, or a user account that has the necessary permissions in AGPM is required to complete these procedures. Review the details in "Additional considerations" in this topic.
 
@@ -75,9 +78,9 @@ A user account that has the AGPM Administrator (Full Control) role, the user acc
 
 -   [Configuring Advanced Group Policy Management](configuring-advanced-group-policy-management-agpm40.md)
 
- 
+ 
 
- 
+ 
 
 
 

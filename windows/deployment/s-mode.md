@@ -8,7 +8,10 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
 ms.date: 12/05/2018
-author: jaimeo
+ms.reviewer: 
+manager: laurawi
+ms.author: greg-lindsay
+author: greg-lindsay
 ms.topic: article
 ---
 

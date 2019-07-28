@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4738(S): A user account was changed.
@@ -263,7 +266,7 @@ For 4738(S): A user account was changed.
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Display Name**<br>**User Principal Name**<br>**Home Directory**<br>**Home Drive**<br>**Script Path**<br>**Profile Path**<br>**User Workstations**<br>**Password Last Set**<br>**Account Expires**<br>**Primary Group ID<br>Logon Hours** | We recommend monitoring all changes for these fields for critical domain and local accounts.                                                                                    |
 | **Primary Group ID** is not 513                                                                                                                                                                                                                                                                        | Typically, the **Primary Group** value is 513 for domain and local users. Other values should be monitored.                                                                     |
-| For user accounts for which the services list (on the **Delegation** tab) should not be empty: **AllowedToDelegateTo** is marked **&lt;value not set&gt; **                                                                                                                                            | If **AllowedToDelegateTo** is marked **&lt;value not set&gt;** on user accounts that previously had a services list (on the **Delegation** tab), it means the list was cleared. |
+| For user accounts for which the services list (on the **Delegation** tab) should not be empty: **AllowedToDelegateTo** is marked **&lt;value not set&gt;**                                                                                                                                            | If **AllowedToDelegateTo** is marked **&lt;value not set&gt;** on user accounts that previously had a services list (on the **Delegation** tab), it means the list was cleared. |
 | **SID History** is not -                                                                                                                                                                                                                                                                               | This field will always be set to - unless the account was migrated from another domain.                                                                                         |
 
 -   Consider whether to track the following user account control flags:

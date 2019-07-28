@@ -1,8 +1,11 @@
 ---
 title: How to Manage Computer BitLocker Encryption Exemptions
 description: How to Manage Computer BitLocker Encryption Exemptions
-author: jamiejdt
+author: msfttracyp
 ms.assetid: d4400a0d-b36b-4cf5-a294-1f53ec47f9ee
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,7 +24,7 @@ To exempt a computer from BitLocker encryption, you must add the computer to a s
 **Note**  
 If the computer is already BitLocker-protected, the computer exemption policy has no effect.
 
- 
+ 
 
 **To exempt a computer from BitLocker encryption**
 
@@ -36,9 +39,9 @@ If the computer is already BitLocker-protected, the computer exemption policy ha
 
 [Administering MBAM 1.0 Features](administering-mbam-10-features.md)
 
- 
+ 
 
- 
+ 
 
 
 

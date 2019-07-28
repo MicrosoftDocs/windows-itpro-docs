@@ -1,8 +1,11 @@
 ---
 title: Planning for MBAM 1.0 Server Deployment
 description: Planning for MBAM 1.0 Server Deployment
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 3cbef284-3092-4c42-9234-2826b18ddef1
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -34,7 +37,7 @@ MBAM server databases and features can be installed in different configurations,
 **Note**  
 For more information about performance scalability of MBAM and recommended deployment topologies, see the MBAM Scalability and High-Availability Guide white paper at <https://go.microsoft.com/fwlink/p/?LinkId=258314>.
 
- 
+ 
 
 Each MBAM feature has specific prerequisites. For a full list of server feature prerequisites and hardware and software requirements, see [MBAM 1.0 Deployment Prerequisites](mbam-10-deployment-prerequisites.md) and [MBAM 1.0 Supported Configurations](mbam-10-supported-configurations.md).
 
@@ -58,7 +61,7 @@ When you deploy the MBAM Server features, install the features in the following 
 **Note**  
 Keep track of the names of the computers on which you install each feature. You will use this information throughout the installation process. You can print and use a deployment checklist to assist you in the installation process. For more information about the MBAM deployment checklist, see [MBAM 1.0 Deployment Checklist](mbam-10-deployment-checklist.md).
 
- 
+ 
 
 ## Related topics
 
@@ -67,9 +70,9 @@ Keep track of the names of the computers on which you install each feature. You 
 
 [Deploying the MBAM 1.0 Server Infrastructure](deploying-the-mbam-10-server-infrastructure.md)
 
- 
+ 
 
- 
+ 
 
 
 

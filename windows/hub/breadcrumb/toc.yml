@@ -25,9 +25,9 @@
             - name: Mobile Device Management
               tocHref: /windows/client-management/mdm/
               topicHref: /windows/client-management/mdm/index
-        - name: Known issues
-          tocHref: /windows/known-issues/
-          topicHref: /windows/known-issues/index
+        - name: Release information
+          tocHref: /windows/release-information/
+          topicHref: /windows/release-information/index
         - name: Privacy
           tocHref: /windows/privacy/
           topicHref: /windows/privacy/index

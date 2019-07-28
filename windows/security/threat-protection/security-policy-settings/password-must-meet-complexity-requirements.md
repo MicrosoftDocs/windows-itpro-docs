@@ -2,12 +2,14 @@
 title: Password must meet complexity requirements (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Password must meet complexity requirements security policy setting.
 ms.assetid: 94482ae3-9dda-42df-9782-2f66196e6afe
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -79,7 +81,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain controller effective default settings | Enabled| 
 | Member server effective default settings | Enabled| 
 | Effective GPO default settings on client computers | Disabled| 
- 
+ 
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.

@@ -2,12 +2,14 @@
 title: GPO\_DOMISO\_Boundary (Windows 10)
 description: GPO\_DOMISO\_Boundary
 ms.assetid: ead3a510-c329-4c2a-9ad2-46a3b4975cfd
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -46,4 +48,4 @@ Copy the firewall rules for the boundary zone from the GPO that contains the fir
 
 Make sure that the GPO that contains firewall rules for the isolated domain does not also apply to the boundary zone to prevent overlapping, and possibly conflicting rules.
 
-**Next: **[Encryption Zone GPOs](encryption-zone-gpos.md)
+**Next:** [Encryption Zone GPOs](encryption-zone-gpos.md)

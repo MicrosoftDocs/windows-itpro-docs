@@ -1,12 +1,14 @@
 ---
 title: Understanding ADMX-backed policies
 description: Starting in Windows 10, version 1703, you can use ADMX-backed policies for Windows 10 mobile device management (MDM) across Windows 10 devices.
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 03/02/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Understanding ADMX-backed policies
@@ -21,8 +23,8 @@ In addition to standard policies, the Policy CSP can now also handle ADMX-backed
 
 ADMX files can either describe operating system (OS) Group Policies that are shipped with Windows or they can describe settings of applications, which are separate from the OS and can usually be downloaded and installed on a PC.
 Depending on the specific category of the settings that they control (OS or application), the administrative template settings are found in the following two locations in the Local Group Policy Editor:
--	OS settings: Computer Configuration/Administrative Templates
--	Application settings: User Configuration/Administrative Templates 
+- OS settings: Computer Configuration/Administrative Templates
+- Application settings: User Configuration/Administrative Templates 
 
 In a domain controller/Group Policy ecosystem, Group Policies are automatically added to the registry of the client computer or user profile by the Administrative Templates Client Side Extension (CSE) whenever the client computer processes a Group Policy. Conversely, in an MDM-managed client, ADMX files are leveraged to define policies independent of Group Policies. Therefore, in an MDM-managed client, a Group Policy infrastructure, including the Group Policy Service (gpsvc.exe), is not required.
 
@@ -40,17 +42,17 @@ To capture the end-to-end MDM handling of ADMX Group Policies, an IT administrat
 The ADMX file that the MDM ISV uses to determine what UI to display to the IT administrator is the same ADMX file that the client uses for the policy definition. The ADMX file is processed either by the OS at build time or set by the client at OS runtime. In either case, the client and the MDM ISV must be synchronized with the ADMX policy definitions. Each ADMX file corresponds to a Group Policy category and typically contains several policy definitions, each of which represents a single Group Policy. For example, the policy definition for the “Publishing Server 2 Settings” is contained in the appv.admx file, which holds the policy definitions for the Microsoft Application Virtualization (App-V) Group Policy category. 
 
 Group Policy option button setting:
--	If **Enabled** is selected, the necessary data entry controls are displayed for the user in the UI. When IT administrator enters the data and clicks **Apply**, the following events occur:
-    -	 The MDM ISV server sets up a Replace SyncML command with a payload that contains the user-entered data.  
-    -	 The MDM client stack receives this data, which causes the Policy CSP to update the device’s registry per the ADMX-backed policy definition.
+- If **Enabled** is selected, the necessary data entry controls are displayed for the user in the UI. When IT administrator enters the data and clicks **Apply**, the following events occur:
+    - The MDM ISV server sets up a Replace SyncML command with a payload that contains the user-entered data.  
+    - The MDM client stack receives this data, which causes the Policy CSP to update the device’s registry per the ADMX-backed policy definition.
 
--	If **Disabled** is selected and you click **Apply**, the following events occur:
-    -	 The MDM ISV server sets up a Replace SyncML command with a payload set to `<disabled\>`. 
-    -	 The MDM client stack receives this command, which causes the Policy CSP to either delete the device’s registry settings, set the registry keys, or both, per the state change directed by the ADMX-backed policy definition.
+- If **Disabled** is selected and you click **Apply**, the following events occur:
+    - The MDM ISV server sets up a Replace SyncML command with a payload set to `<disabled\>`. 
+    - The MDM client stack receives this command, which causes the Policy CSP to either delete the device’s registry settings, set the registry keys, or both, per the state change directed by the ADMX-backed policy definition.
 
--	If **Not Configured** is selected and you click **Apply**, the following events occur:
-    -	 MDM ISV server sets up a Delete SyncML command. 
-    -	 The MDM client stack receives this command, which causes the Policy CSP to delete the device’s registry settings per the ADMX-backed policy definition.
+- If **Not Configured** is selected and you click **Apply**, the following events occur:
+    - MDM ISV server sets up a Delete SyncML command. 
+    - The MDM client stack receives this command, which causes the Policy CSP to delete the device’s registry settings per the ADMX-backed policy definition.
 
 The following diagram shows the main display for the Group Policy Editor.
 

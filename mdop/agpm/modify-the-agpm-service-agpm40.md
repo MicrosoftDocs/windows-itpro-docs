@@ -1,8 +1,11 @@
 ---
 title: Modify the AGPM Service
 description: Modify the AGPM Service
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 3239d088-bb86-4ec4-bc56-dbe8f1c710f5
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -19,7 +22,7 @@ The AGPM Service is a Windows service that acts as a security proxy, managing cl
 **Caution**  
 Do not modify settings for the AGPM Service through **Administrative Tools** and **Services** in the operating system. Doing so can prevent the AGPM Service from starting.
 
- 
+ 
 
 A user account that is a member of the Domain Admins group and has access to the AGPM Server (the computer on which Microsoft Advanced Group Policy Management - Server is installed) is required to complete this procedure. Additionally, you must provide credentials for the AGPM Service Account to complete this procedure.
 
@@ -38,7 +41,7 @@ A user account that is a member of the Domain Admins group and has access to the
         **Important**  
         The archive path can point to a folder on the AGPM Server or elsewhere, but the location should have sufficient space to store all GPOs and history data managed by this AGPM Server.
 
-         
+         
 
     2.  In the **AGPM Service Account** dialog box, enter credentials for a service account under which the AGPM Service will run, and click **Next**.
 
@@ -49,14 +52,14 @@ A user account that is a member of the Domain Admins group and has access to the
 
         If you will be managing GPOs on multiple domains or if a member server will be the AGPM Server, you should configure a different account as the AGPM Service Account because the Local System account for one domain controller cannot access GPOs on other domains.
 
-         
+         
 
     3.  In the **Archive Owner** dialog box, enter the user name of an AGPM Administrator (Full Control) or group of AGPM Administrators, and click **Next**.
 
         **Note**  
         Modifying the installation clears the credentials for the Archive Owner. You must re-enter credentials, but they are not required to match the credentials used during the original installation.
 
-         
+         
 
     4.  In the **Port Configuration** dialog box, type a new port on which the AGPM Service should listen or confirm the port currently selected, and click **Next**.
 
@@ -65,7 +68,7 @@ A user account that is a member of the Domain Admins group and has access to the
 
         If you manually configure port exceptions or have rules configuring port exceptions, you can clear the **Add port exception to firewall** check box.
 
-         
+         
 
 5.  Click **Change**, and when the installation is complete click **Finish**.
 
@@ -77,9 +80,9 @@ A user account that is a member of the Domain Admins group and has access to the
 
 -   [Managing the AGPM Service](managing-the-agpm-service-agpm40.md)
 
- 
+ 
 
- 
+ 
 
 
 

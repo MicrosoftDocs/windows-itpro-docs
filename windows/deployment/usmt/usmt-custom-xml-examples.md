@@ -2,11 +2,13 @@
 title: Custom XML Examples (Windows 10)
 description: Custom XML Examples
 ms.assetid: 48f441d9-6c66-43ef-91e9-7c78cde6fcc0
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
-ms.date: 04/19/2017
 ms.topic: article
 ---
 
@@ -16,7 +18,7 @@ ms.topic: article
 **Note**  
 Because the tables in this topic are wide, you may need to adjust the width of its window.
 
- 
+ 
 
 ## In This Topic:
 
@@ -34,7 +36,7 @@ Because the tables in this topic are wide, you may need to adjust the width of i
 
 The following is a template for the sections that you need to migrate your application. The template is not functional on its own, but you can use it to write your own .xml file.
 
-``` syntax
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migtestapp">
   <component type="Application">
     <!-- Name of the application -->
@@ -124,15 +126,15 @@ The following is a custom .xml file named CustomFile.xml that migrates My Videos
 <td align="left"><p>Filters out the shortcuts in My Videos that do not resolve on the destination computer. This has no effect on files that are not shortcuts. For example, if there is a shortcut in My Videos on the source computer that points to C:\Folder1, that shortcut will be migrated only if C:\Folder1 exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;%CSIDL_MYVIDEO%\* [*]&lt;/pattern&gt;</code></pre></td>
+<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;%CSIDL_MYVIDEO%* [*]&lt;/pattern&gt;</code></pre></td>
 <td align="left"><p>Migrates My Videos for all users.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/CustomFile">
 <component type="Documents" context="User">
@@ -173,27 +175,27 @@ This table describes the behavior in the following example .xml file.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;%ProgramFiles%\USMTTestFolder\* [USMTTestFile.txt]&lt;/pattern&gt;</code></pre></td>
+<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;%ProgramFiles%\USMTTestFolder* [USMTTestFile.txt]&lt;/pattern&gt;</code></pre></td>
 <td align="left"><p>Migrates all instances of the file Usmttestfile.txt from all sub-directories under %ProgramFiles%\USMTTestFolder.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;%ProgramFiles%\USMTDIRTestFolder\* [*]&lt;/pattern&gt;</code></pre></td>
+<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;%ProgramFiles%\USMTDIRTestFolder* [<em>]&lt;/pattern&gt;</code></pre></td>
 <td align="left"><p>Migrates the whole directory under %ProgramFiles%\USMTDIRTestFolder.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;Registry&quot;&gt;HKCU\Software\USMTTESTKEY\* [MyKey]&lt;/pattern&gt;</code></pre></td>
+<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;Registry&quot;&gt;HKCU\Software\USMTTESTKEY* [MyKey]&lt;/pattern&gt;</code></pre></td>
 <td align="left"><p>Migrates all instances of MyKey under HKCU\Software\USMTTESTKEY.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;Registry&quot;&gt;HKLM\Software\USMTTESTKEY\* [*]&lt;/pattern&gt;</code></pre></td>
+<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;Registry&quot;&gt;HKLM\Software\USMTTESTKEY* [</em>]&lt;/pattern&gt;</code></pre></td>
 <td align="left"><p>Migrates the entire registry hive under HKLM\Software\USMTTESTKEY.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
-``` syntax
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/testfilemig">
   <component type="Application" context="System">
    <displayName>File Migration Test</displayName>
@@ -229,7 +231,7 @@ This table describes the behavior in the following example .xml file.
 
 The behavior for this custom .xml file is described within the &lt;`displayName`&gt; tags in the code.
 
-``` syntax
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 
 <component type="Documents" context="System">
@@ -305,9 +307,9 @@ The behavior for this custom .xml file is described within the &lt;`displayName`
 
 [Customize USMT XML Files](usmt-customize-xml-files.md)
 
- 
+ 
 
- 
+ 
 
 
 

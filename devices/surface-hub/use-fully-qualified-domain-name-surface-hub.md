@@ -1,11 +1,13 @@
 ---
-title: Use fully qualified doman name with Surface Hub
+title: Use fully qualified domain name with Surface Hub
 description: Troubleshoot common problems, including setup issues, Exchange ActiveSync errors.
 keywords: ["Troubleshoot common problems", "setup issues", "Exchange ActiveSync errors"]
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: medium
 ms.prod: surface-hub
 ms.sitesec: library
@@ -23,7 +25,7 @@ There are a few scenarios where you need to specify the domain name of your Skyp
 2. Click **Surface Hub**, and then click **Calling & Audio**. 
 3. Under **Skype for Business configuration**, click **Configure domain name**. 
 4. Type the domain name for your Skype for Business server, and then click **Ok**. 
-> [!TIP]
-> You can type multiple domain names, separated by commas. <br> For example: lync.com, outlook.com, lync.glbdns.microsoft.com
+   > [!TIP]
+   > You can type multiple domain names, separated by commas. <br> For example: lync.com, outlook.com, lync.glbdns.microsoft.com
 
     ![Add Skype for Business FQDN to Settings](images/system-settings-add-fqdn.png)

@@ -1,8 +1,11 @@
 ---
 title: Server Management Console Administrators Node
 description: Server Management Console Administrators Node
-author: jamiejdt
+author: eavena
 ms.assetid: ab421454-69d1-4c10-8f58-2a35ae89c8b1
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

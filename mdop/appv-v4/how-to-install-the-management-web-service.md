@@ -1,8 +1,11 @@
 ---
 title: How to Install the Management Web Service
 description: How to Install the Management Web Service
-author: jamiejdt
+author: dansimp
 ms.assetid: cac296f5-8ca0-4ce7-afdb-859ae207d2f1
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -33,21 +36,21 @@ Use the following procedure to install the Application Virtualization Management
     **Note**  
     If this is not the first component you installed on this computer, the **Program Maintenance** page is displayed. On the **Program Maintenance** page, click **Modify**.
 
-     
+     
 
 7.  On the **Custom Setup** page, clear all Application Virtualization System components except **App Virt Management Service**, and then click **Next**.
 
     **Note**  
     If a component is already installed on the computer, by clearing it on the **Custom Setup** page, you will automatically uninstall it.
 
-     
+     
 
 8.  On the **Database Server** page, click **Connect to available database**, and then click **Next**.
 
     **Note**  
     In a production environment, Microsoft assumes that you will connect to an existing database. If you want to install a database, see [How to Install a Database](how-to-install-a-database.md). After installing the database, continue with step 13.
 
-     
+     
 
 9.  On the **Database Server Type** page, select a database type from the list, and then click **Next**.
 
@@ -62,7 +65,7 @@ Use the following procedure to install the Application Virtualization Management
     **Note**  
     If this is the first component you install, the **Ready to Install the Program** page is displayed. On the page, click **Install**.
 
-     
+     
 
 14. On the **Installation Wizard Completed** page, click **Finish**.
 
@@ -71,9 +74,9 @@ Use the following procedure to install the Application Virtualization Management
 
 [How to Install the Servers and System Components](how-to-install-the-servers-and-system-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

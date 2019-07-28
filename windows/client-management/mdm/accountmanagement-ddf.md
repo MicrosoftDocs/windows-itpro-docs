@@ -1,12 +1,14 @@
 ---
 title: AccountManagement DDF file
 description: Used to configure settings in the Account Manager service
-ms.author: maricia
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 03/23/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # AccountManagement DDF file 
@@ -16,7 +18,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Account
 
 The XML below is for Windows 10, version 1803.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

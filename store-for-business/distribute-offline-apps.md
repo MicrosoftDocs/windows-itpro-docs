@@ -2,6 +2,8 @@
 title: Distribute offline apps (Windows 10)
 description: Offline licensing is a new licensing option for Windows 10.
 ms.assetid: 6B9F6876-AA66-4EE4-A448-1371511AC95E
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -63,9 +65,12 @@ There are several items to download or create for offline-licensed apps. The app
 **To download an offline-licensed app**
 
 1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com/) or [Microsoft Store for Education](https://educationstore.microsoft.com).
-2.  Click **Manage**, and then choose **Apps & software**.
-3.  Refine results by **License type** to show apps with offline licenses.
-4.  Find the app you want to download, click the ellipses under **Actions**, and then choose **Download for offline use**.
+2.  Click **Manage**.
+3.  Click **Settings**.
+4.  Click **Shop**. Search for the **Shopping experience** section, change the License type to **Offline**, and click  **Get the app**, which will add the app to your inventory.
+5.  Click **Manage**. You now have access to download the appx bundle package metadata and license file.
+6.  Go to **Products & services**, and select **Apps & software**. (The list may be empty, but it will auto-populate after some time.)
+
     - **To download app metadata**: Choose the language for the app metadata, and then click **Download**. Save the downloaded app metadata. This is optional.
     - **To download app package**: Click to expand the package details information, choose the Platform and Architecture combination that you need for your organization, and then click **Download**. Save the downloaded app package. This is required.
     - **To download an app license**: Choose either **Encoded**, or **Unencoded**, and then click **Generate license**. Save the downloaded license. This is required.

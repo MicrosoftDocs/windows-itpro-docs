@@ -1,8 +1,11 @@
 ---
 title: How to Start, Stop, and Restart a MED-V Workspace
 description: How to Start, Stop, and Restart a MED-V Workspace
-author: jamiejdt
+author: dansimp
 ms.assetid: 54ce139c-8f32-499e-944b-72f123ebfd2d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -41,14 +44,14 @@ ms.date: 06/16/2016
     **Note**  
     The first time a MED-V workspace is started, the user name should be in the following format: &lt;domain name&gt;\\&lt;user name&gt;.
 
-     
+     
 
 4.  Select **Save my password** to save your password between sessions.
 
     **Note**  
     To enable the save password feature, the EnableSavePassword attribute must be set to True in the ClientSettings.xml file. The file can be found in the *Servers\\Configuration Server\\* folder.
 
-     
+     
 
 5.  Clear the **Start last used workspace** check box to choose a different MED-V workspace.
 
@@ -83,9 +86,9 @@ ms.date: 06/16/2016
 
 [How to Start and Exit the MED-V Client](how-to-start-and-exit-the-med-v-client.md)
 
- 
+ 
 
- 
+ 
 
 
 

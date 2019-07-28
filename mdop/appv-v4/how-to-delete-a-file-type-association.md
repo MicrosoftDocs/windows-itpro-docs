@@ -1,8 +1,11 @@
 ---
 title: How to Delete a File Type Association
 description: How to Delete a File Type Association
-author: jamiejdt
+author: dansimp
 ms.assetid: bb2dd1cf-9a5d-45a9-aca1-3c53144b73ec
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

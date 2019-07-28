@@ -2,11 +2,13 @@
 title: CertificateStore DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the CertificateStore configuration service provider. DDF files are used only with OMA DM provisioning XML.
 ms.assetid: D9A12D4E-3122-45C3-AD12-CC4FFAEC08B8
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 12/05/2017
 ---
 
@@ -19,7 +21,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 The XML below is the current version for this CSP.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
     "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
