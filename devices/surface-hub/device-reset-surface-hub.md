@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 # Reset or recover a Surface Hub
 
-This article describes how to reset or recover your Microsoft Surface Hub. 
+This article describes how to reset or recover your Microsoft Surface Hub.  
 
 [Resetting the Surface Hub](#reset-a-surface-hub) returns its operating system to the last cumulative Windows update, and removes all local user files and configuration information. The information that is removed includes the following:
 
@@ -34,9 +34,10 @@ This article describes how to reset or recover your Microsoft Surface Hub.
 
 You may have to reset your Surface Hub for reasons such as the following:
 
-- After you install an update, the performance of the device decreases.
 - You’re re-purposing the device for a new meeting space and want to reconfigure it.
 - You want to change how you locally manage the device.
+- The user name or password for the device account or the Administrator account has been lost.
+- After you install an update, the performance of the device decreases.
 
 During the reset process, if you see a blank screen for long periods of time, please wait and do not take any action.
 
@@ -73,7 +74,7 @@ You may have to use this type of recovery process under the following circumstan
 
 ### Recover a Surface Hub in a bad state
 
-If the device account gets into an unstable state or if the administrator account encounters problems, you can use the SEttings app to start the cloud recovery process. You should only use the cloud recovery process when the [device reset](#reset-a-surface-hub) process doesn't fix the problem.
+If the device account gets into an unstable state or if the administrator account encounters problems, you can use the Settings app to start the cloud recovery process. You should only use the cloud recovery process when the [device reset](#reset-a-surface-hub) process doesn't fix the problem.
 
 1. On your Surface Hub, select **Settings** &gt; **Update & security** &gt; **Recovery**.
 
