@@ -104,7 +104,20 @@
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/overview-hunting.md)
 #### [Query data using Advanced hunting](microsoft-defender-atp/advanced-hunting.md)
-##### [Advanced hunting reference](microsoft-defender-atp/advanced-hunting-reference.md)
+
+##### [Advanced hunting schema reference]()
+###### [All tables in the Advanced hunting schema](microsoft-defender-atp/advanced-hunting-reference.md)
+###### [AlertEvents table](microsoft-defender-atp/advanced-hunting-alertevents-table.md)
+###### [FileCreationEvents table](microsoft-defender-atp/advanced-hunting-filecreationevents-table.md)
+###### [ImageLoadEvents table](microsoft-defender-atp/advanced-hunting-imageloadevents-table.md)
+###### [LogonEvents table](microsoft-defender-atp/advanced-hunting-logonevents-table.md)
+###### [MachineInfo table](microsoft-defender-atp/advanced-hunting-machineinfo-table.md)
+###### [MachineNetworkInfo table](microsoft-defender-atp/advanced-hunting-machinenetworkinfo-table.md)
+###### [MiscEvents table](microsoft-defender-atp/advanced-hunting-miscevents-table.md)
+###### [NetworkCommunicationEvents table](microsoft-defender-atp/advanced-hunting-networkcommunicationevents-table.md)
+###### [ProcessCreationEvents table](microsoft-defender-atp/advanced-hunting-processcreationevents-table.md)
+###### [RegistryEvents table](microsoft-defender-atp/advanced-hunting-registryevents-table.md)
+
 ##### [Advanced hunting query language best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
 
 #### [Custom detections]()
