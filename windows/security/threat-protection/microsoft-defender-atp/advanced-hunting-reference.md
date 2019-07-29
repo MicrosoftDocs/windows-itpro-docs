@@ -28,11 +28,11 @@ ms.date: 07/24/2019
 
 ## Advanced hunting table reference
 
-The Advanced hunting schema is made up of multiple tables that provide either event information, or information about certain entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the Advanced hunting schema.
+The Advanced hunting schema is made up of multiple tables that provide either event information or information about certain entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the Advanced hunting schema.
 
 The following reference lists all the tables in the Advanced hunting schema. Each table name links to a page describing the column names for that table.
 
-Table and column names are also listed within the Security center, in the schema representation on the Advanced hunting screen.
+Table and column names are also listed within the Microsoft Defender Security Center, in the schema representation on the Advanced hunting screen.
 
 | Table name | Description |
 |------------|-------------|
