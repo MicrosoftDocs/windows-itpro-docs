@@ -21,10 +21,17 @@ ms.reviewer:
 **Applies to**
 -   Windows 10, version 1703 or later
 
+> [!IMPORTANT]
+> The remote desktop with biometrics feature only works with certificate trust deployments.  The feature takes advantage of the redirected smart card capabilities of the remote desktop protocol.  Microsoft continues to investigate supporting this feature for key trust deployments. 
 
 Windows Hello for Business is the springboard to a world without passwords. It replaces username and password sign-in to Windows with strong user authentication based on an asymmetric key pair.
 
 This deployment guide is to guide you through deploying Windows Hello for Business, based on the planning decisions made using the Planning a Windows Hello for Business Deployment Guide. It provides you with the information needed to successfully deploy Windows Hello for Business in an existing environment.
+
+> [!NOTE]
+> Two Azure AD Connect synchronisations are required in order for WHfB to begin working.
+
+For more features see [Windows Hello for Business Features](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-features#remote-desktop-with-biometrics).
 
 ## Assumptions
 
