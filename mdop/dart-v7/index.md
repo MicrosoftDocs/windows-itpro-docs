@@ -1,7 +1,7 @@
 ---
 title: Diagnostics and Recovery Toolset 7 Administrator's Guide
 description: Diagnostics and Recovery Toolset 7 Administrator's Guide
-author: jamiejdt
+author: dansimp
 ms.assetid: bf89eccd-fc03-48ff-9019-a8640e11dd99
 ms.pagetype: mdop
 ms.mktglfcycl: support
