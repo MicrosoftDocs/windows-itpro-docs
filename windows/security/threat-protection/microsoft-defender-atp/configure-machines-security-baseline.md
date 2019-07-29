@@ -42,7 +42,8 @@ The Windows Intune security baseline provides a comprehensive set of recommended
 Both baselines are maintained so that they complement one another and have identical values for shared settings. Deploying both baselines to the same machine will not result in conflicts. Ideally, machines onboarded to Microsoft Defender ATP are deployed both baselines: the Windows Intune security baseline to initially secure Windows and then the Microsoft Defender ATP security baseline layered on top to optimally configure the Microsoft Defender ATP security controls.
 
 >[!NOTE]
->The Microsoft Defender ATP security baseline has been optimized for physical devices and is currently not recommended for use on virtual machines (VMs) or VDI endpoints. Certain baseline settings can impact remote interactive sessions on virtualized environments.
+>- The Microsoft Defender ATP security baseline has been optimized for physical devices and is currently not recommended for use on virtual machines (VMs) or VDI endpoints. Certain baseline settings can impact remote interactive sessions on virtualized environments.
+>- The Microsoft Defender ATP security baseline currently doesn’t cover settings for all Microsoft Defender ATP security controls, including settings for exploit protection and Application Guard.
 
 ## Get permissions to manage security baselines in Intune
 
@@ -101,10 +102,10 @@ Machine configuration management monitors baseline compliance only of Windows 10
    ![Security baseline profiles on Intune](images/secconmgmt_baseline_intuneprofile3.png)<br>
    *Assigning the security baseline profile on Intune*
 
-5. Save the profile and deploy it to the assigned machine group.
+5. Create the profile to save it and deploy it to the assigned machine group.
 
    ![Assigning the security baseline on Intune](images/secconmgmt_baseline_intuneprofile4.png)<br>
-   *Saving and deploying the security baseline profile on Intune*
+   *Creating the security baseline profile on Intune*
 
 >[!TIP]
 >Security baselines on Intune provide a convenient way to comprehensively secure and protect your machines. [Learn more about security baselines on Intune](https://docs.microsoft.com/intune/security-baselines).

@@ -22,8 +22,6 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 With properly configured machines, you can boost overall resilience against threats and enhance your capability to detect and respond to attacks. Security configuration management helps ensure that your machines:
@@ -55,12 +53,13 @@ Before you can ensure your machines are configured properly, enroll them to Intu
 >[!TIP] 
 >To optimize machine management through Intune, [connect Intune to Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
 
-## Known issues and limitations in this preview 
-During preview, you might encounter a few known limitations:
-- You might experience discrepancies in aggregated data displayed on the machine configuration management page and those displayed on overview screens in Intune.
-- The count of onboarded machines tracked by machine configuration management might not include machines onboarded using Security Center Configuration Manager, the onboarding script, or other onboarding methods that don’t use Intune profiles. To include these machines, create a corresponding Intune configuration profile for Microsoft Defender ATP onboarding and assign that profile to these machines.
-- The Microsoft Defender ATP security baseline currently doesn’t cover settings for all Microsoft Defender ATP security controls, including settings for exploit protection and Application Guard.
+## Obtain required ppermissions
+- **Onboarding machines** — To onboard devices to Microsoft Defender ATP using Intune, you need to be able to deploy a device configuration profile and track compliance to that profile. By default, only... **DRAFT**
 
+- **Managing security baselines** — By default, only users who have been assigned the Global Administrator or the Intune Service Administrator role on Azure AD can manage security baseline profiles. If you haven’t been assigned either role, work with a Global Administrator or an Intune Service Administrator to [create and assign a custom role in Intune](https://docs.microsoft.com/intune/create-custom-role#to-create-a-custom-role) with:
+
+    - Read permissions to the organization
+    - Full permissions to security baselines
 
 ## In this section
 Topic | Description
