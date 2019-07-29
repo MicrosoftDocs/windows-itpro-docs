@@ -45,7 +45,7 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 | AccountName |string | User name of the account |
 | AccountSid | string | Security Identifier (SID) of the account |
 | RemoteUrl | string | URL or fully qualified domain name (FQDN) that was being connected to |
-| RemoteComputerName | string | Name of the machine that performed a remote operation on the affected machine | Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information |
+| RemoteComputerName | string | Name of the machine that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information |
 | ProcessId | int | Process ID (PID) of the newly created process |
 | ProcessCommandLine | string | Command line used to create the new process |
 | ProcessCreationTime | datetime | Date and time the process was created |

@@ -55,7 +55,7 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 | InitiatingProcessParentId | int | Process ID (PID) of the parent process that spawned the process responsible for the event |
 | InitiatingProcessParentFileName | string | Name of the parent process that spawned the process responsible for the event |
 | InitiatingProcessParentCreationTime | datetime | Date and time when the parent of the process responsible for the event was started |
-| InitiatingProcessIntegrityLevel | string | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an | internet download. These integrity levels influence permissions to resources |
+| InitiatingProcessIntegrityLevel | string | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources |
 | InitiatingProcessTokenElevation | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
