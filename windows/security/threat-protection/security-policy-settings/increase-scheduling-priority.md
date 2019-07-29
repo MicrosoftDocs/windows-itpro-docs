@@ -82,9 +82,9 @@ Verify that only Administrators and Window Manager/Window Manager Group have the
 None. Restricting the **Increase scheduling priority** user right to members of the Administrators group and Window Manager/Window Manager Group is the default configuration.
 
 > [!Warning]  
-> If you remove the Window Manager/Window Manager Group from the **Increase scheduling priority** user right, certain applications and computers do not function properly. In particular, the INK workspace does not function properly on unified memory architecture (UMA) laptop and desktop computers that run Windows 10, version 1903 (or later) and use the Intel GFX driver.  
+> If you remove **Window Manager\Window Manager Group** from the **Increase scheduling priority** user right, certain applications and computers do not function correctly. In particular, the INK workspace does not function correctly on unified memory architecture (UMA) laptop and desktop computers that run Windows 10, version 1903 (or later) and that use the Intel GFX driver.  
 > 
-> On affected computers, the display blinks when users draw on INK workspaces such as those used by Microsoft Edge, Microsoft PowerPoint, or Microsoft OneNote. The blinking occurs because the inking-related processes repeatedly attempt to use the Real-Time priority, and are denied.
+> On affected computers, the display blinks when users draw on INK workspaces such as those that are used by Microsoft Edge, Microsoft PowerPoint, or Microsoft OneNote. The blinking occurs because the inking-related processes repeatedly try to use the Real-Time priority, but are denied permission.
 
 ## Related topics
 
