@@ -22,8 +22,6 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 [Attack surface reduction (ASR) rules](../windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md) identify and prevent actions that are typically taken by malware during exploitation. These rules control when and how potentially malicious code can run. For example, you can prevent JavaScript or VBScript from launching a downloaded executable, block Win32 API calls from Office macros, or block processes that run from USB drives.
