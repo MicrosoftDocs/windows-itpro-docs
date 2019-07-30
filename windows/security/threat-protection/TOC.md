@@ -27,10 +27,10 @@
 ##### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
 
 #### [Application control](windows-defender-application-control/windows-defender-application-control.md)
-#### [Exploit protection](windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
-#### [Network protection](windows-defender-exploit-guard/network-protection-exploit-guard.md)
-#### [Controlled folder access](windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
-#### [Attack surface reduction](windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
+#### [Exploit protection](windows-defender-exploit-guard/exploit-protection.md)
+#### [Network protection](windows-defender-exploit-guard/network-protection.md)
+#### [Controlled folder access](windows-defender-exploit-guard/controlled-folders.md)
+#### [Attack surface reduction](windows-defender-exploit-guard/attack-surface-reduction.md)
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 
 ### [Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
@@ -206,7 +206,7 @@
 ##### [Import/export configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 
 #### [Network protection](windows-defender-exploit-guard/enable-network-protection.md)
-#### [Controlled folder access](windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)
+#### [Controlled folder access](windows-defender-exploit-guard/enable-controlled-folders)
 
 #### [Attack surface reduction controls]()
 ##### [Enable attack surface reduction rules](windows-defender-exploit-guard/enable-attack-surface-reduction.md)
