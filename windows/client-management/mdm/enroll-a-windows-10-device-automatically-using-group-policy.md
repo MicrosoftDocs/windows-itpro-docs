@@ -42,7 +42,7 @@ To ensure that the auto-enrollment feature is working as expected, you must veri
 The following verification steps are mandatory and must be correctly implemented.
 1. Verify that the user who is going to enroll the device has a valid Intune license.
 
-    ![Intune license verification](images/auto-enrollment-intue-license-verification)
+    ![Intune license verification](images/auto-enrollment-intune-license-verification.png)
 
 2. Verify that auto-enrollment is activated for those users who are going to enroll the devices into Intune. For additional details, see [Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal](https://docs.microsoft.com/en-us/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal). 
 Also verify that the **MAM user scope** is set to **None**. Otherwise, it will have precedence over the MDM scope that will lead to issues. 
