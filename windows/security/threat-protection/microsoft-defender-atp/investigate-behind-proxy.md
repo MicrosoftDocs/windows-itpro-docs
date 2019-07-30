@@ -84,5 +84,5 @@ NetworkCommunicationEvents
 
 
 ## Related topics
-- [Applying network protection with GP – policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+- [Applying network protection with GP - policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 - [Protect your network](https://docs.microsoft.comwindows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
