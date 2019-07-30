@@ -74,6 +74,7 @@ NetworkCommunicationEvents
 You can also filter out  events that are related to connection to the proxy itself. 
 
 Use the following query to filter out the connections to the proxy:
+
 ```
 NetworkCommunicationEvents
 | where ActionType == "ConnectionSuccess" and RemoteIP != "ProxyIP"  
