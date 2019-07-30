@@ -57,7 +57,7 @@ This guide is intended for use by an IT-specialist, system architect, or busines
 <tr><td><a href="add-devices.md">Registering devices</a><td>The process of registering a device with the Windows Autopilot deployment service is described.
 <tr><td><a href="profiles.md">Configuring device profiles</a><td>The device profile settings that specifie its behavior when it is deployed are described.
 <tr><td><a href="enrollment-status.md">Enrollment status page</a><td>Settings that are available on the Enrollment Status Page are described.
-<tr><td><a href="bitlocker.md">Bitlocker encryption</a><td> Available options for configuring BitLocker on Windows Autopilot devices are described.
+<tr><td><a href="bitlocker.md">BitLocker encryption</a><td> Available options for configuring BitLocker on Windows Autopilot devices are described.
 <tr><td><a href="troubleshooting.md">Troubleshooting Windows Autopilot</a><td>Diagnostic event information and troubleshooting procedures are provided.
 <tr><td><a href="known-issues.md">Known issues</a><td>A list of current known issues and solutions is provided.
 </table>
