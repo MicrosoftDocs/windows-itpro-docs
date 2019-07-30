@@ -156,22 +156,8 @@ Each of the previous nodes contains one or more of the following leaf nodes:
 <tr class="odd">
 <td><p><strong>Policy</strong></p></td>
 <td><p>Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.</p>
-<p>Policy nodes are a Base64-encoded blob of the binary policy representation. The binary policy may be signed or unsigned.</p>
-<p>For CodeIntegrity/Policy, you can use the <a href="https://go.microsoft.com/fwlink/p/?LinkId=724364" data-raw-source="[certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364)">certutil -encode</a> command line tool to encode the data to base-64.</p>
-<p>Here is a sample certutil invocation:</p>
-
-```
-certutil -encode WinSiPolicy.p7b WinSiPolicy.cer
-```
-
-<p>An alternative to using certutil would be to use the following PowerShell invocation:</p>
-
-```
-[Convert]::ToBase64String($(Get-Content -Encoding Byte -ReadCount 0 -Path <bin file>))
-```
-
-<p>If you are using hybrid MDM management with System Center Configuration Manager or using Intune, ensure that you are using Base64 as the Data type when using Custom OMA-URI functionality to apply the Code Integrity policy.</p>
-<p>Data type is string. Supported operations are Get, Add, Delete, and Replace.</p></td>
+<p>For nodes, other than CodeIntegrity, policy leaf data type is string. Supported operations are Get, Add, Delete, and Replace.</P>
+<p>For CodeIntegrity/Policy, data type is Base64. Supported operations are Get, Add, Delete, and Replace.</td>
 </tr>
 <tr class="even">
 <td><p><strong>EnforcementMode</strong></p></td>
@@ -186,6 +172,8 @@ certutil -encode WinSiPolicy.p7b WinSiPolicy.cer
 </tbody>
 </table>
 
+> [!NOTE]
+> To use Code Integrity Policy, you need first to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool) and added to the Applocker-CSP
 
 
 ## <a href="" id="productname"></a>Find publisher and product name of apps
