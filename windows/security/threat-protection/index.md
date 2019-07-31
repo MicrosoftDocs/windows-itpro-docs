@@ -67,7 +67,7 @@ The attack surface reduction set of capabilities provide the first line of defen
 - [Network protection](windows-defender-exploit-guard/network-protection.md)
 - [Controlled folder access](windows-defender-exploit-guard/controlled-folders.md)
 - [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
-- [Attack surface reduction controls](windows-defender-exploit-guard/attack-surface-reduction.md)
+- [Attack surface reduction rules](windows-defender-exploit-guard/attack-surface-reduction.md)
 
 <a name="ngp"></a>
 
