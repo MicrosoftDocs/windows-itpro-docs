@@ -206,7 +206,7 @@
 ##### [Import/export configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
 
 #### [Network protection](windows-defender-exploit-guard/enable-network-protection.md)
-#### [Controlled folder access](windows-defender-exploit-guard/enable-controlled-folders)
+#### [Controlled folder access](windows-defender-exploit-guard/enable-controlled-folders.md)
 
 #### [Attack surface reduction controls]()
 ##### [Enable attack surface reduction rules](windows-defender-exploit-guard/enable-attack-surface-reduction.md)
