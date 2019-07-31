@@ -26,7 +26,7 @@ ms.topic: article
 ## Full XML sample
 
 >[!NOTE]
->Updated for Windows 10, version 1903, and Windows 10 Insider Preview (19H2, 20H1 builds)
+>Updated for Windows 10, version 1903, and Windows 10 Insider Preview (19H2, 20H1 builds).
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -394,7 +394,7 @@ Below sample shows dedicated profile and global profile mixed usage, aauser woul
 ```
 
 ## [Preview] Folder Access sample xml
-In Windows 10 1809 release, folder access is locked down that when common file dialog is opened, IT Admin can specify if user has access to the Downloads folder, or no access to any folder at all. This restriction has be redesigned for finer granulatity and easier use, available in Windows 10 Insider Preview (19H2, 20H1 builds).
+In Windows 10, version 1809, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granulatity and easier use, and is available in Windows 10 Insider Preview (19H2, 20H1 builds).
 
 IT Admin now can specify user access to Downloads folder, Removable drives, or no restrictions at all. Note that Downloads and Removable Drives can be allowed at the same time.
 
@@ -889,7 +889,7 @@ Schema for Windows 10 Insider Preview (19H2, 20H1 builds)
 </xs:schema>
 ```
 
-To authorize a compatible configuration XML that includes elements and attributes from Windows 10, version 1809 or newer, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. e.g. to configure auto-launch feature which is added in 1809 release, use below sample, notice an alias r1809 is given to the 201810 namespace for 1809 release, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
+To authorize a compatible configuration XML that includes elements and attributes from Windows 10, version 1809 or newer, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the auto-launch feature which is added in Windows 10, version 1809, use the following sample. Notice an alias r1809 is given to the 201810 namespace for Windows 10, version 1809, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
 ```xml
 <AssignedAccessConfiguration
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
