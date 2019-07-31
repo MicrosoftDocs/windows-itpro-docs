@@ -32,8 +32,8 @@ Microsoft recommends [a layered approach to securing removable media](https://ak
    - Granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination. 
    - Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices. 
 
-![Create device configuration profile]
-These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removable disks. Additionally, you can [classify and protect files on Windows devices](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview) (including their mounted USB devices) by using Windows Defender ATP and Azure Information Protection.
+>[!Note]
+>These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removable disks. Additionally, you can [classify and protect files on Windows devices](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview) (including their mounted USB devices) by using Windows Defender ATP and Azure Information Protection.
 
 
 ## Prevent threats from removable storage
@@ -155,46 +155,6 @@ If you want to prevent a device class or certain devices, you can use the preven
 >[!Note]
 >The prevent device installation policies take precedence over the allow device installation policies. 
 
-### Security Baseline
-
-The Microsoft Defender Advanced Threat Protection (ATP) baseline settings, represent the recommended configuration for ATP.  Configuration settings for baseline are located here in the edit profile page of the configuration settings.
-
-![Baselines](https://github.com/MicrosoftDocs/windows-docs-pr/blob/v-jowirt-updates/windows/security/threat-protection/windows-defender-antivirus/images/baselines.png)
-
-### Bluetooth
-
-Using Intune, you can limited the services that can use Bluetooth through the “Bluetooth allowed services”. The default state of “Bluetooth allowed services” settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and don’t add the file transfer GUIDs, file transfer should be blocked. 
-
-![Bluetooth](https://github.com/MicrosoftDocs/windows-docs-pr/blob/v-jowirt-updates/windows/security/threat-protection/windows-defender-antivirus/images/bluetooth.png)
-
-
-
-
-## Detect plug and play connected events
-
-You can view plug and play connected events in Windows Defender ATP advanced hunting to identify suspicious usage activity or perform internal investigations. 
-For examples of Windows Defender ATP advanced hunting queries, see the [Windows Defender ATP hunting queries GitHub repo](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). 
-Based on any Windows Defender ATP event, including the plug and play events, you can create custom alerts using the Windows Defender ATP [custom detection rule feature](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/custom-detection-rules).
-
-## Respond to threats 
-
-Windows Defender ATP can prevent USB peripherals from being used on devices to help prevent external threats. It does this by using the properties reported by USB peripherals to determine whether or not they can be installed and used on the device.
-
->[!NOTE]
->Always test and refine these settings with a pilot group of users and devices first before applying them in production. 
-
-The following table describes the ways Windows Defender ATP can help prevent installation and usage of USB peripherals. 
-For more information about controlling USB devices, see the [Microsoft Secure blog "WDATP has protections for USB and removable devices"](https://aka.ms/devicecontrolblog).
-
-| Control  | Description |
-|----------|-------------|
-| [Block installation and usage of removable storage](#block-installation-and-usage-of-removable-storage) | Users can't install or use removable storage |
-| [Only allow installation and usage of specifically approved peripherals](#only-allow-installation-and-usage-of-specifically-approved-peripherals)   | Users can only install and use approved peripherals that report specific properties in their firmware |
-| [Prevent installation of specifically prohibited peripherals](#prevent-installation-of-specifically-prohibited-peripherals) | Users can't install or use prohibited peripherals that report specific properties in their firmware |
-
->[!NOTE]
->Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
-
 ### Block installation and usage of removable storage
 
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
@@ -235,6 +195,60 @@ Windows Defender ATP blocks installation and usage of prohibited peripherals by 
 - [Administrative Templates](https://docs.microsoft.com/intune/administrative-templates-windows) can block any device with a matching hardware ID or setup class.  
 - [Device Installation CSP settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) with a custom profile in Intune. You can [prevent installation of specific device IDs](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids) or [prevent specific device classes](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses).
 
+### Security Baseline
+
+The Microsoft Defender Advanced Threat Protection (ATP) baseline settings, represent the recommended configuration for ATP.  Configuration settings for baseline are located here in the edit profile page of the configuration settings.
+
+![Baselines](https://github.com/MicrosoftDocs/windows-docs-pr/blob/v-jowirt-updates/windows/security/threat-protection/windows-defender-antivirus/images/baselines.png)
+
+### Bluetooth
+
+Using Intune, you can limited the services that can use Bluetooth through the “Bluetooth allowed services”. The default state of “Bluetooth allowed services” settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and don’t add the file transfer GUIDs, file transfer should be blocked. 
+
+![Bluetooth](https://github.com/MicrosoftDocs/windows-docs-pr/blob/v-jowirt-updates/windows/security/threat-protection/windows-defender-antivirus/images/bluetooth.png)
+
+## Detect plug and play connected events
+
+You can view plug and play connected events in Windows Defender ATP advanced hunting to identify suspicious usage activity or perform internal investigations. 
+For examples of Windows Defender ATP advanced hunting queries, see the [Windows Defender ATP hunting queries GitHub repo](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). 
+Based on any Windows Defender ATP event, including the plug and play events, you can create custom alerts using the Windows Defender ATP [custom detection rule feature](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/custom-detection-rules).
+
+## Respond to threats 
+
+Windows Defender ATP can prevent USB peripherals from being used on devices to help prevent external threats. It does this by using the properties reported by USB peripherals to determine whether or not they can be installed and used on the device.
+
+>[!NOTE]
+>Always test and refine these settings with a pilot group of users and devices first before applying them in production. 
+
+The following table describes the ways Windows Defender ATP can help prevent installation and usage of USB peripherals. 
+For more information about controlling USB devices, see the [Microsoft Secure blog "WDATP has protections for USB and removable devices"](https://aka.ms/devicecontrolblog).
+
+| Control  | Description |
+|----------|-------------|
+| [Block installation and usage of removable storage](#block-installation-and-usage-of-removable-storage) | Users can't install or use removable storage |
+| [Only allow installation and usage of specifically approved peripherals](#only-allow-installation-and-usage-of-specifically-approved-peripherals)   | Users can only install and use approved peripherals that report specific properties in their firmware |
+| [Prevent installation of specifically prohibited peripherals](#prevent-installation-of-specifically-prohibited-peripherals) | Users can't install or use prohibited peripherals that report specific properties in their firmware |
+
+>[!NOTE]
+>Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
+
+### Custom Alerts and Response Actions
+
+You can create custom alerts and response actions with the WDATP Connector and the Custom Detection Rules:
+
+**Wdatp Connector response Actions:**
+
+**Investigate:** Initiate investigations, collect investigation package, and isolate a machine.
+
+**Threat Scanning** on USB devices
+
+**Restrict execution of all applications** on the machine except a predefined set
+MDATP connector is one of over 200 pre-defined connectors including Outlook, Teams, Slack, etc. Custom connectors can be built.
+- [More information on WDATP Connector Response Actions](https://docs.microsoft.com/en-us/connectors/wdatp/)
+
+**Custom Detection Rules Response Action:**
+Both machine and file level actions can be applied.
+- [More information on Custom Detection Rules Response Actions](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
 
 ## Related topics
 
