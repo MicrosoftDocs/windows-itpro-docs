@@ -104,7 +104,20 @@
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/overview-hunting.md)
 #### [Query data using Advanced hunting](microsoft-defender-atp/advanced-hunting.md)
-##### [Advanced hunting reference](microsoft-defender-atp/advanced-hunting-reference.md)
+
+##### [Advanced hunting schema reference]()
+###### [All tables in the Advanced hunting schema](microsoft-defender-atp/advanced-hunting-reference.md)
+###### [AlertEvents table](microsoft-defender-atp/advanced-hunting-alertevents-table.md)
+###### [FileCreationEvents table](microsoft-defender-atp/advanced-hunting-filecreationevents-table.md)
+###### [ImageLoadEvents table](microsoft-defender-atp/advanced-hunting-imageloadevents-table.md)
+###### [LogonEvents table](microsoft-defender-atp/advanced-hunting-logonevents-table.md)
+###### [MachineInfo table](microsoft-defender-atp/advanced-hunting-machineinfo-table.md)
+###### [MachineNetworkInfo table](microsoft-defender-atp/advanced-hunting-machinenetworkinfo-table.md)
+###### [MiscEvents table](microsoft-defender-atp/advanced-hunting-miscevents-table.md)
+###### [NetworkCommunicationEvents table](microsoft-defender-atp/advanced-hunting-networkcommunicationevents-table.md)
+###### [ProcessCreationEvents table](microsoft-defender-atp/advanced-hunting-processcreationevents-table.md)
+###### [RegistryEvents table](microsoft-defender-atp/advanced-hunting-registryevents-table.md)
+
 ##### [Advanced hunting query language best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
 
 #### [Custom detections]()
@@ -129,7 +142,7 @@
 ### [Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)
 
 ### [Portal overview](microsoft-defender-atp/portal-overview.md)
-
+### [Microsoft Defender ATP for US Government Community Cloud High customers](microsoft-defender-atp/commercial-gov.md)
 
 ## [Get started]()
 ### [What's new in Microsoft Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
@@ -139,6 +152,9 @@
 ### [Preview features](microsoft-defender-atp/preview.md)
 ### [Data storage and privacy](microsoft-defender-atp/data-storage-privacy.md)
 ### [Assign user access to the portal](microsoft-defender-atp/assign-portal-access.md)
+
+
+
 
 ### [Evaluate Microsoft Defender ATP]()
 #### [Attack surface reduction and next-generation capability evaluation]()

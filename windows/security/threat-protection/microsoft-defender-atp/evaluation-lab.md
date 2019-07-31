@@ -63,6 +63,9 @@ The machine will automatically be onboarded to your tenant with the recommended 
 
 Automated investigation settings will be dependent on tenant settings. It will be configured to be semi-automated by default. For more information, see [Overview of Automated investigations](automated-investigations.md).
 
+>[!NOTE]
+>The connection to the test machines is done using RDP. Make sure that your firewall settings allow RDP connections.
+
 
 1. In the navigation pane, select **Evaluation and tutorials > Evaluation lab**.
 
@@ -72,7 +75,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 3. Select **Add machine**.
 
-    >[!NOTE]
+    >[!WARNING]
     > The evaluation environment can only be provisioned up to three test machines. Each machine will only be available for three days from the day of activation. 
 
    ![Image of add machine](images/evaluation-add-machine.png)
@@ -89,6 +92,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 The environment will reflect your test machine status through the evaluation - including risk score, exposure score, and alerts created through the simulation.
 
+
 ![Image of test machines](images/eval-lab-dashboard.png)
 
 ## Simulate attack scenarios
@@ -97,6 +101,9 @@ Use the test machines to run attack simulations by connecting to them.
 If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials). These scripts are safe, documented, and easy to use. These scenarios will reflect Microsoft Defender ATP capabilities and walk you through investigation experience.
 
 You can also use [Advanced hunting](advanced-hunting.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
+
+>[!NOTE]
+>The connection to the test machines is done using RDP. Make sure that your firewall settings allow RDP connections.
 
 1. Connect to your machine and run an attack simulation by selecting **Connect**. 
 
