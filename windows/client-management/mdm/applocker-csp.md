@@ -156,7 +156,7 @@ Each of the previous nodes contains one or more of the following leaf nodes:
 <tr class="odd">
 <td><p><strong>Policy</strong></p></td>
 <td><p>Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.</p>
-<p>For nodes, other than CodeIntegrity, policy leaf data type is string. Supported operations are Get, Add, Delete, and Replace.</P>
+<p>For nodes, other than CodeIntegrity, policy leaf data type is string. Supported operations are Get, Add, Delete, and Replace.</p>
 <p>For CodeIntegrity/Policy, data type is Base64. Supported operations are Get, Add, Delete, and Replace.</td>
 </tr>
 <tr class="even">
@@ -173,7 +173,7 @@ Each of the previous nodes contains one or more of the following leaf nodes:
 </table>
 
 > [!NOTE]
-> To use Code Integrity Policy, you need first to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool) and added to the Applocker-CSP
+> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool) and added to the Applocker-CSP.
 
 
 ## <a href="" id="productname"></a>Find publisher and product name of apps
