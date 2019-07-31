@@ -197,7 +197,7 @@
 
 #### [Controlled folder access]()
 ##### [Enable controlled folder access](../windows-defender-exploit-guard/enable-controlled-folders.md)
-##### [Customize controlled folder access](../windows-defender-exploit-guard/customize-controlled.md)
+##### [Customize controlled folder access](../windows-defender-exploit-guard/customize-controlled-folders.md)
 
 #### [Attack surface reduction controls]()
 ##### [Enable attack surface reduction rules](../windows-defender-exploit-guard/enable-attack-surface-reduction.md)
