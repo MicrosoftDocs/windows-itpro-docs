@@ -8,11 +8,9 @@ keywords: reset Surface Hub, recover
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
-ms.author: 
-- dansimp
-- v-tea
+ms.author: dansimp
 ms.topic: article
-ms.date: 07/29/2019
+ms.date: 07/31/2019
 ms.localizationpriority: medium
 ---
 
