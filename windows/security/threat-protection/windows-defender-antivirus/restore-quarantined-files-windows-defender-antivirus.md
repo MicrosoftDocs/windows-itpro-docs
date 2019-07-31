@@ -29,6 +29,9 @@ If Windows Defender Antivirus is configured to detect and remediate threats on y
 3. Under **Quarantined threats**, click **See full history**.
 4. Click an item you want to keep, then click **Restore**. (If you prefer to remove the item, you can click **Remove**.)
 
+> [!NOTE]
+> You can also use the dedicated command-line tool [mpcmdrun.exe](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus) to restore quarantined files in Windows Defender AV.
+
 ## Related topics
 
 - [Configure remediation for scans](configure-remediation-windows-defender-antivirus.md)
