@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
+ms.audience: itpro
 author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
@@ -20,10 +21,15 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
+- Windows 10
 
 <table>
 <th>Issue<th>More information
+<tr><td>Windows Autopilot white glove does not work for a non-English OS and you see a red screen that says "Success."<td>Download and install the <a href="https://support.microsoft.com/help/4505903">KB4505903 update</a>.
+<tr><td>Windows Autopilot reports an AUTOPILOTUPDATE error during OOBE after sysprep, reset or other variations.  This typically happens if you reset the OS or used a custom sysprepped image.<td>Download and install the <a href="https://support.microsoft.com/help/4505903">KB4505903 update</a>.
+<tr><td>BitLocker encryption is not correctly configured. Ex: BitLocker didn’t get an expected notification after policies were applied to begin encryption.<td>Download and install the <a href="https://support.microsoft.com/help/4505903">KB4505903 update</a>.
+<tr><td>You are unable to install UWP apps from the Microsoft Store, causing failures during Windows Autopilot.  If you are deploying Company Portal as a blocking app during Windows Autopilot ESP, you’ve probably seen this error.<td>Download and install the <a href="https://support.microsoft.com/help/4505903">KB4505903 update</a>.
+<tr><td>A user is not granted administrator rights in the Windows Autopilot user-driven Hybrid Azure AD join scenario.  This is another non-English OS issue.<td>Download and install the <a href="https://support.microsoft.com/help/4505903">KB4505903 update</a>.
 <tr><td>White glove gives a red screen and the <b>Microsoft-Windows-User Device Registration/Admin</b> event log displays <b>HResult error code 0x801C03F3</b><td>This can happen if Azure AD can’t find an AAD device object for the device that you are trying to deploy. This will occur if you manually delete the object. To fix it, remove the device from AAD, Intune, and Autopilot, then re-register it with Autopilot, which will recreate the AAD device object.<br> 
 <br>To obtain troubleshooting logs use: <b>Mdmdiagnosticstool.exe -area Autopilot;TPM -cab c:\autopilot.cab</b>
 <tr><td>White glove gives a red screen<td>White glove is not supported on a VM.
