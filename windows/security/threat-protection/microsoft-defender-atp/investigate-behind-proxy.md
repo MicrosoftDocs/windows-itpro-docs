@@ -44,7 +44,7 @@ If you turn network protection off, users or apps will not be blocked from conne
 
 If you do not configure it, network blocking will be turned off by default.
 
-For more information, see [Enable network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-network-protection)
+For more information, see [Enable network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-network-protection).
 
 ## Investigation impact
 When network protection is turned on, you'll see that on a machine's timeline the IP address will keep representing the proxy, while the real target address shows up.
@@ -54,12 +54,13 @@ When network protection is turned on, you'll see that on a machine's timeline th
 Additional events triggered by the network protection layer are now available to surface the real domain names even behind a proxy.
 
 Event's information:
+
 ![Image of single network event](images/atp-proxy-investigation-event.png)
 
 
 
 ## Hunt for connection events using advanced hunting 
-All new connection events are available for you to hunt on through advanced hunting as well. Since these events are connection events, you can find them under the NetworkCommunicationEvents table under the ‘ConnecionSuccess’ action type.
+All new connection events are available for you to hunt on through advanced hunting as well. Since these events are connection events, you can find them under the NetworkCommunicationEvents table under the `ConnecionSuccess` action type.
 
 Using this simple query will show you all the relevant events:
 
