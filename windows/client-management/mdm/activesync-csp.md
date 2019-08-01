@@ -60,13 +60,13 @@ When managing over OMA DM, make sure to always use a unique GUID. Provisioning w
 
 Braces { } are required around the GUID. In OMA Client Provisioning, you can type the braces. For example:
 
-``` syntax
+```xml
 <characteristic type="{C556E16F-56C4-4EDB-9C64-D9469EE1FBE0}"/>
 ```
 
 For OMA DM, you must use the ASCII values of %7B and %7D for the opening and closing braces, respectively. For example, if the GUID is "C556E16F-56C4-4EDB-9C64-D9469EE1FBE0", type:
 
-``` syntax
+```xml
 <Target>
    <LocURI>
       ./Vendor/MSFT/ActiveSync/Accounts/%7BC556E16F-56C4-4EDB-9C64-D9469EE1FBE0%7D

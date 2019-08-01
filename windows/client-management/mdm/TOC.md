@@ -55,6 +55,8 @@
 ### [AllJoynManagement CSP](alljoynmanagement-csp.md)
 #### [AllJoynManagement DDF](alljoynmanagement-ddf.md)
 ### [APPLICATION CSP](application-csp.md)
+### [ApplicationControl CSP](applicationcontrol-csp.md)
+#### [ApplicationControl DDF file](applicationcontrol-csp-ddf.md)
 ### [AppLocker CSP](applocker-csp.md)
 #### [AppLocker DDF file](applocker-ddf-file.md)
 #### [AppLocker XSD](applocker-xsd.md)

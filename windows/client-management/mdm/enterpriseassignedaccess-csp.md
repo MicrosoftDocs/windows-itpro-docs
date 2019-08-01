@@ -61,7 +61,7 @@ Application | <img src="images/enterpriseassignedaccess-csp.png" alt="modern app
 Application | Include PinToStart to display an app on the Start screen. For apps pinned to the Start screen, identify a tile size (small, medium, or large), and a location. The size of a small tile is 1 column x 1 row, a medium tile is 2 x 2, and a large tile is 4 x 2. For the tile location, the first value indicates the column and the second value indicates the row. A value of 0 (zero) indicates the first column, a value of 1 indicates the second column, and so on. Include autoRun as an attribute to configure the application to run automatically.
 
 Application example:
-``` syntax
+```xml
 <Application productId="{2A4E62D8-8809-4787-89F8-69D0F01654FB}" autoRun="true">
    <PinToStart>
       <Size>Large</Size>
@@ -78,7 +78,7 @@ Entry | Description
 Application | Multiple App Packages enable multiple apps to exist inside the same package. Since ProductIds identify packages and not applications, specifying a ProductId is not enough to distinguish between individual apps inside a multiple app package. Trying to include application from a multiple app package with just a ProductId can result in unexpected behavior. To support pinning applications in multiple app packages, use an AUMID parameter in lockdown XML. For the list of product ID and AUMID, see [ProductIDs in Windows 10 Mobile](#productid). The following example shows how to pin both Outlook mail and Outlook calendar.
 
 Application example:
-``` syntax
+```xml
 <Apps>
     <!-- Outlook Calendar -->
     <Application productId="{A558FEBA-85D7-4665-B5D8-A2FF9C19799B}"
@@ -110,7 +110,7 @@ Entry | Description
 Folder | A folder should be contained in `<Applications/>` node among with other `<Application/>` nodes, it shares most grammar with the Application Node, **folderId** is mandatory, **folderName** is optional, which is the folder name displayed on Start. **folderId** is a unique unsigned integer for each folder.
 
 Folder example:
-``` syntax
+```xml
 <Application folderId="4" folderName="foldername">
     <PinToStart>
         <Size>Large</Size>
@@ -123,7 +123,7 @@ Folder example:
 ```
 An application that belongs in the folder would add an optional attribute **ParentFolderId**, which maps to **folderId** of the folder. In this case, the location of this application will be located inside the folder.
 
-``` syntax
+```xml
 <Application productId="{2A4E62D8-8809-4787-89F8-69D0F01654FB}">
     <PinToStart>
         <Size>Medium</Size>
@@ -252,7 +252,7 @@ For example, in place of SettingPageDisplay, you would use ms-settings:display. 
 
 Here is an example for Windows 10, version 1703.
 
-``` syntax
+```xml
 <Settings>
   <System name="ms-settings:display"/>
   <System name="ms-settings:appsforwebsites"/>
@@ -327,14 +327,14 @@ Starting in Windows 10, version 1703, Quick action settings no longer require an
 
 In this example, all settings pages and quick action settings are allowed. An empty \<Settings> node indicates that none of the settings are blocked.
 
-``` syntax
+```xml
 <Settings>
 </Settings>
 ```
 
 In this example for Windows 10, version 1511, all System setting pages are enabled. Note that the System page group is added as well as all of the System subpage names.
 
-``` syntax
+```xml
 <Settings>
   <System name="SettingsPageGroupPCSystem" />
   <System name="SettingsPageDisplay" />
@@ -350,7 +350,7 @@ In this example for Windows 10, version 1511, all System setting pages are ena
 ```
 Here is an example for Windows 10, version 1703.
 
-``` syntax
+```xml
 <Settings>
   <System name="ms-settings:display"/>
   <System name="ms-settings:appsforwebsites"/>
@@ -382,7 +382,7 @@ Buttons | The following list identifies the hardware buttons on the device that 
 > Custom buttons are hardware buttons that can be added to devices by OEMs.
 
 Buttons example:
-``` syntax
+```xml
 <Buttons>
    <ButtonLockdownList>
       <!-- Lockdown all buttons -->
@@ -407,7 +407,7 @@ The Search and custom buttons can be <em>remapped</em> or configured to open a s
 
 To remap a button in lockdown XML, you supply the button name, the button event (typically "press"), and the product ID for the application the button will open.
 
-``` syntax
+```xml
 <ButtonRemapList>
    <Button name="Search">
       <ButtonEvent name="Press">
@@ -503,7 +503,7 @@ MenuItems | Use **DisableMenuItems** to prevent use of the context menu, which i
 
 MenuItems example:
 
-``` syntax
+```xml
 <MenuItems>
    <DisableMenuItems/>
 </MenuItems>
@@ -1196,7 +1196,7 @@ The XML examples in this section show how to perform various tasks by using OMA 
 
 The following example shows how to add a new policy.
 
-``` syntax
+```xml
 <wap-provisioningdoc>
   <characteristic type="EnterpriseAssignedAccess">
     <characteristic type="AssignedAccess">
@@ -1211,7 +1211,7 @@ The following example shows how to add a new policy.
 
 The following example shows how to specify the language to display on the device.
 
-``` syntax
+```xml
 <wap-provisioningdoc>
    <characteristic type="EnterpriseAssignedAccess">
   <characteristic type="Language">
@@ -1230,7 +1230,7 @@ These XML examples show how to perform various tasks using OMA DM.
 
 The following example shows how to lock down a device.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
    <SyncBody>
       <Add>
@@ -1251,7 +1251,7 @@ The following example shows how to lock down a device.
 
 The following example shows how to change the accent color to one of the standard colors.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
    <SyncBody>
       <Replace>
@@ -1274,7 +1274,7 @@ The following example shows how to change the accent color to one of the standar
 
 The following example shows how to change the theme.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
    <SyncBody>
        <Replace>
@@ -1297,7 +1297,7 @@ The following example shows how to change the theme.
 
 The following example shows how to set a custom theme accent color for the enterprise environment.
 
-``` syntax
+```xml
 <SyncBody>
    <Replace>
       <CmdID>1</CmdID>
@@ -1333,7 +1333,7 @@ The following example shows how to set a custom theme accent color for the enter
 
 Use the examples in this section to set a new lock screen and manage the lock screen features. If using a UNC path, format the LocURI as \\\\host\\share\\image.jpg.
 
-``` syntax
+```xml
 <Add>
   <CmdID>2</CmdID>
   <Item>
@@ -1351,7 +1351,7 @@ Use the examples in this section to set a new lock screen and manage the lock sc
 
 The following example shows how to query the device for the file being used as the lock screen.
 
-``` syntax
+```xml
 <Get>
   <CmdID>2</CmdID>
   <Item>
@@ -1364,7 +1364,7 @@ The following example shows how to query the device for the file being used as t
 
 The following example shows how to change the existing lock screen image to one of your choosing.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
    <SyncBody>
       <Replace>
@@ -1389,7 +1389,7 @@ The following example shows how to change the existing lock screen image to one 
 
 The following example shows how to set the time zone to UTC-07 Mountain Time (US & Canada).
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
    <SyncBody>
       <Replace>
@@ -1411,7 +1411,7 @@ The following example shows how to set the time zone to UTC-07 Mountain Time (US
 
 The following example shows how to set the time zone to Pacific Standard Time (UTC-08:00) without observing daylight savings time (UTC+01:00).
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
    <SyncBody>
       <Replace>
@@ -1435,7 +1435,7 @@ The following example shows how to set the time zone to Pacific Standard Time (U
 
 The following example shows how to set the language.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
    <SyncBody>
       <Replace>

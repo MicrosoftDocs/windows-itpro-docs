@@ -8,6 +8,7 @@ ms.localizationpriority: low
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
+manager: laurawi
 ms.author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article

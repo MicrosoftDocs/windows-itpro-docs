@@ -73,9 +73,9 @@ Across the docs.microsoft.com site, if you see **Edit** in the right-hand corner
 
 9. Enter a title and description to let us know what’s in the request.
 
-10.	Scroll to the bottom of the page, and make sure that only your changed files are in this pull request. Otherwise, you could overwrite changes from other people.
+10. Scroll to the bottom of the page, and make sure that only your changed files are in this pull request. Otherwise, you could overwrite changes from other people.
 
-11.	Click **Create pull request** again to actually submit your edits.
+11. Click **Create pull request** again to actually submit your edits.
 
 12. If you aren't a Microsoft employee, you need to [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/) before updating or adding to any Microsoft repositories. A bot running in GitHub checks whether you've signed the CLA - if not, you'll be prompted, in the pull request, to sign it.
 

@@ -405,7 +405,7 @@ In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data 
 
 ### Enable limiting enhanced diagnostic data to the minimum required by Windows Analytics
 
-1.	Set the diagnostic data level to **Enhanced**, using either Group Policy or MDM.
+1. Set the diagnostic data level to **Enhanced**, using either Group Policy or MDM.
 
     a. Using Group Policy, set the **Computer Configuration/Administrative Templates/Windows Components/Data Collection and Preview Builds/Allow telemetry** setting to **2**.
 
@@ -415,9 +415,9 @@ In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data 
 
     -AND-
 
-2.	Enable the **LimitEnhancedDiagnosticDataWindowsAnalytics** setting, using either Group Policy or MDM.
+2. Enable the **LimitEnhancedDiagnosticDataWindowsAnalytics** setting, using either Group Policy or MDM.
 
-    a.	Using Group Policy, set the **Computer Configuration/Administrative Templates/Windows Components/Data collection and Preview builds/Limit Enhanced diagnostic data to the minimum required by Windows Analytics** setting to **Enabled**.
+    a. Using Group Policy, set the **Computer Configuration/Administrative Templates/Windows Components/Data collection and Preview builds/Limit Enhanced diagnostic data to the minimum required by Windows Analytics** setting to **Enabled**.
 
     -OR-
 

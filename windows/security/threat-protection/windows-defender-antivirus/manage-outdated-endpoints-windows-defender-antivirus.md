@@ -38,8 +38,8 @@ If Windows Defender Antivirus did not download protection updates for a specifie
 
 2.  Go to the **Definition updates** section and configure the following settings:
 
-    1.	Set **Force a definition update if the client computer is offline for more than two consecutive scheduled updates** to **Yes**.
-    2.	For the  **If Configuration Manager is used as a source for definition updates...**, specify the hours before which the protection updates delivered by Configuration Manager should be considered out-of-date. This will cause the next update location to be used, based on the defined [fallback source order](manage-protection-updates-windows-defender-antivirus.md#fallback-order).
+    1. Set **Force a definition update if the client computer is offline for more than two consecutive scheduled updates** to **Yes**.
+    2. For the  **If Configuration Manager is used as a source for definition updates...**, specify the hours before which the protection updates delivered by Configuration Manager should be considered out-of-date. This will cause the next update location to be used, based on the defined [fallback source order](manage-protection-updates-windows-defender-antivirus.md#fallback-order).
 
 3. Click **OK**.
 

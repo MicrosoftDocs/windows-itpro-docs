@@ -123,10 +123,10 @@ If you want to delete either (or both) the Skype and the Xbox accounts, here’s
 To delete a Skype account, you can follow the instructions here: [How do I close my Skype account?](https://go.microsoft.com/fwlink/?LinkId=816515)
 
 If you need help deleting the account, you can contact Skype customer service by going to the [Skype support request page](https://go.microsoft.com/fwlink/?LinkId=816519). You may need to sign in and specify a Skype account. Once you’ve signed in, you can:
-1.	Select a help topic (**Account and Password**)
-2.	Select a related problem (**Deleting an account**)
-3.	Click **Next**.
-4.	Select a contact method to get answers to your questions.
+1. Select a help topic (**Account and Password**)
+2. Select a related problem (**Deleting an account**)
+3. Click **Next**.
+4. Select a contact method to get answers to your questions.
 
 
 #### Xbox

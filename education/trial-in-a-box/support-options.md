@@ -31,7 +31,7 @@ For more information about checking for updates, and how to optionally turn on a
 
 ## 2. Confirm your admin contact information is current
 
-1. Go to the <a href="https://portal.office.com/adminportal/home" target="_blank">Office 365 admin center</a> and sign in with your Office 365 admin credentials.
+1. Go to the <a href="https://portal.office.com/adminportal/home" target="_blank">admin center</a> and sign in with your Office 365 admin credentials.
 2. In the admin center dashboard, select your profile on the upper righthand corner and select **My account** from the options.
 3. Select **Personal info** and then edit **Contact details** to update  your phone, primary email address, and alternate email address. 
 

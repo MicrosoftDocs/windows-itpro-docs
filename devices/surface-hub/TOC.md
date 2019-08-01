@@ -5,7 +5,7 @@
 ## Overview
 ### [What's new in Surface Hub 2S for IT admins](surface-hub-2s-whats-new.md)
 ### [Surface Hub 2S tech specs](surface-hub-2s-techspecs.md) 
-### [Operating system essentials (Surface Hub) ](differences-between-surface-hub-and-windows-10-enterprise.md)
+### [Operating system essentials (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
 ### [Adjust Surface Hub 2S brightness, volume, and input](surface-hub-2s-onscreen-display.md)
 
 ## Plan
@@ -21,9 +21,10 @@
 ### [Configure Easy Authentication for Surface Hub 2S](surface-hub-2s-phone-authenticate.md)
 
 ## Deploy
-### [Surface Hub 2S adoption toolkit](surface-hub-2s-adoption-kit.md)
 ### [First time setup for Surface Hub 2S](surface-hub-2s-setup.md)
+### [Connect devices to Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Surface Hub 2S deployment checklist](surface-hub-2s-deploy-checklist.md)
+### [Surface Hub 2S adoption toolkit](surface-hub-2s-adoption-kit.md)
 ### [Create Surface Hub 2S device account](surface-hub-2s-account.md)
 ### [Create provisioning packages for Surface Hub 2S](surface-hub-2s-deploy.md)
 ### [Deploy apps to Surface Hub 2S using Intune](surface-hub-2s-deploy-apps-intune.md)

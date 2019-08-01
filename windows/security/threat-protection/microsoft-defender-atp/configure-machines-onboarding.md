@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: procedural
+ms.topic: article
 ---
 
 # Get machines onboarded to Microsoft Defender ATP
@@ -22,14 +22,13 @@ ms.topic: procedural
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 Each onboarded machine adds an additional endpoint detection and response (EDR) sensor and increases visibility over breach activity in your network. Onboarding also ensures that a machine can be checked for vulnerable components as well security configuration issues and can receive critical remediation actions during attacks.
 
->[!NOTE]
->Before you can track and manage onboarding of machines, [enroll your machines to Intune management](configure-machines.md#enroll-machines-to-intune-management).
+Before you can track and manage onboarding of machines:
+- [Enroll your machines to Intune management](configure-machines.md#enroll-machines-to-intune-management)
+- [Ensure you have the necessary permissions](configure-machines.md#obtain-required-permissions)
 
 ## Discover and track unprotected machines
 
@@ -39,8 +38,7 @@ The **Onboarding** card provides a high-level overview of your onboarding rate b
 *Card showing onboarded machines compared to the total number of Intune-managed Windows 10 machine*
 
 >[!NOTE]
->- If you used Security Center Configuration Manager, the onboarding script, or other onboarding methods that don’t use Intune profiles, you might encounter data discrepancies. To resolve these discrepancies, create a corresponding Intune configuration profile for Microsoft Defender ATP onboarding and assign that profile to your machines.
->- During preview, you might experience discrepancies in aggregated data displayed on the machine configuration management page and those displayed on overview screens in Intune.
+>If you used Security Center Configuration Manager, the onboarding script, or other onboarding methods that don’t use Intune profiles, you might encounter data discrepancies. To resolve these discrepancies, create a corresponding Intune configuration profile for Microsoft Defender ATP onboarding and assign that profile to your machines.
 
 ## Onboard more machines with Intune profiles
 
@@ -65,11 +63,11 @@ From the overview, create a configuration profile specifically for the deploymen
 
 3. After creating the profile, assign it to all your machines. You can review profiles and their deployment status anytime by accessing **Device configuration > Profiles** on Intune.
 
-   ![Profile assignment screen screen on Intune](images/secconmgmt_onboarding_3assignprofile.png)<br>
-   *Assigning the new agent profile to all machines*
+   ![Profile assignment screen on Intune](images/secconmgmt_onboarding_3assignprofile.png)<br>
+   *Assigning the new profile to all machines*
 
 >[!TIP]
->To learn more about Intune profiles, read [Assign user and device profiles in Microsoft Intune](https://docs.microsoft.com/en-us/intune/device-profile-assign).
+>To learn more about Intune profiles, read about [assigning user and device profiles](https://docs.microsoft.com/intune/device-profile-assign).
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 

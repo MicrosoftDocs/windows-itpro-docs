@@ -93,7 +93,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
 
-1.	Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     a.  In the navigation pane, select **Settings** > **Offboarding**.
 
@@ -103,7 +103,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 
     d. Click **Download package** and save the .zip file.
 
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the machines. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the machines. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3.  Open an elevated command-line prompt on the machine and run the script:
 
@@ -127,11 +127,11 @@ You can follow the different verification steps in the [Troubleshoot onboarding 
 Monitoring can also be done directly on the portal, or by using the different deployment tools.
 
 ### Monitor machines using the portal
-1.	Go to Microsoft Defender Security Center.
+1. Go to Microsoft Defender Security Center.
 
-2.	Click **Machines list**.
+2. Click **Machines list**.
 
-3.	Verify that machines are appearing.
+3. Verify that machines are appearing.
 
 
 ## Related topics

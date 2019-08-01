@@ -6,6 +6,7 @@ ms.prod: surface-hub
 ms.sitesec: library
 author: robmazz
 ms.author: robmazz
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019
@@ -44,6 +45,6 @@ If you affiliate Surface Hub 2S with on-premises Active Directory Domain Service
 
 ## Azure Active Directory
 
-When choosing to affiliate your Surface Hub 2S with Azure AD, any user in the Global Admins Security Group can sign in to the Settings app on Surface Hub 2S. Alternatively, you can configure the Device Administrator role to sign in to the Settings app. For more information, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles#device-administrators). Currently, no other group can be delegated to sign in to the Settings app on Surface Hub 2S.
+When choosing to affiliate your Surface Hub 2S with Azure AD, any user in the Global Admins Security Group can sign in to the Settings app on Surface Hub 2S. Alternatively, you can configure the Device Administrator role to sign in to the Settings app. For more information, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#device-administrators). Currently, no other group can be delegated to sign in to the Settings app on Surface Hub 2S.
 
 If you enabled Intune Automatic Enrollment for your organization, Surface Hub 2S will automatically enroll itself with Intune. The device’s Bitlocker key is automatically saved in Azure AD. When affiliating Surface Hub 2S with Azure AD, single sign-on and Easy Authentication will not work.
