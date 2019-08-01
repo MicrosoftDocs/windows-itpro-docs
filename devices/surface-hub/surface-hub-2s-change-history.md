@@ -17,6 +17,11 @@ ms.localizationpriority: Normal
 
 This topic summarizes new and updated content in the Surface Hub 2S documentation library.
 
+## August 2019
+Changes | Description
+|:--- |:--- 
+|Connect devices to Surface Hub 2S| Updated with guidance for connecting to a second display.
+
 ## July 2019
 
 Changes | Description
