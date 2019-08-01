@@ -180,7 +180,7 @@ To reregister an Autopilot device from MPC, an OEM or CSP would:
 2. Navigate to the Customer > Devices page and click the **Add devices** button to upload the csv file.
 
 ![device](images/device2.png)<br>
-![device](images/device2.png)
+![device](images/device3.png)
 
 In the case of reregistering a repaired device through MPC, the uploaded csv file must contain the 4K HH for the device, and not just the PKID or Tuple (SerialNumber + OEMName + ModelName).  If only the PKID or Tuple were used, the Autopilot service would be unable to find a match in the Autopilot database, since no 4K HH info was ever previously submitted for this essentially “new” device, and the upload will fail, likely returning a ZtdDeviceNotFound error.  So, again, only upload the 4K HH, not the Tuple or PKID.
 
