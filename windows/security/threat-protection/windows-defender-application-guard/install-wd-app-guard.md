@@ -18,7 +18,7 @@ ms.date: 02/19/2019
 
 ## Review system requirements
  
-Please refer to [System requirements for Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard), to review the hardware and software installation requirementf for Windows Defender Application Guard.
+See [System requirements for Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard) to review the hardware and software installation requirements for Windows Defender Application Guard.
 >[!NOTE]
 >Windows Defender Application Guard is not supported on VMs and VDI environment. For testing and automation on non-production machines, you may enable WDAG on a VM by enabling Hyper-V nested virtualization on the host.
 
