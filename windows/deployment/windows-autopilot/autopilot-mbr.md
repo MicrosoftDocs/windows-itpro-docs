@@ -168,7 +168,7 @@ To reregister an Autopilot device from Intune, an IT Admin would:
 2. Navigate to Device enrollment > Windows enrollment > Devices > Import.
 3. Click the **Import** button to upload a csv file containing the device ID of the device to be reregistered (the device ID was the 4K HH captured by the PowerShell script or OA3 tool described previously in this document).
 
-The following video provides a good overview of how to (re)register devices via MSfB.
+The following video provides a good overview of how to (re)register devices via MSfB.<br>
 
 > [!VIDEO https://www.youtube.com/embed/IpLIZU_j7Z0]
 
