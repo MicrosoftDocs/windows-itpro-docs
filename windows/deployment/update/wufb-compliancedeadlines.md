@@ -4,10 +4,9 @@ description: Learn how to enforce compliance deadlines using Windows Update for 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greg-lindsay
-ms.date: 06/20/2018
+ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
@@ -21,11 +20,11 @@ Deploying feature or quality updates for many organizations is only part of the 
 - [Deadline only](#deadline-only)
 - [Deadline with user engagement](#deadline-with-user-engagement)
 
-## Deadline Only 
+## Deadline only 
 
 This flow only enforces the deadline where the device will attempt to silently restart outside of active hours before the deadline is reached. Once the deadline is reached the user is prompted with either a confirmation button or a restart now option. 
 
-### End User Experience
+### End-user experience
 
 Once the device is in the pending restart state, it will attempt to restart the device during non-active hours. This is known as the auto-restart period, and by default it does not require user interaction to reboot the device. 
 
@@ -36,12 +35,13 @@ Once the device is in the pending restart state, it will attempt to restart the 
 
 |Policy|Description |
 |-|-|
-|Specify deadline before auto-restart for update installation|Governs the update experience once the device has entered pending reboot state. It specifies a deadline, in days, to enforce compliance (such as imminent install).|
-|Configure Auto-restart warning notification schedule for updates|Configures the reminder notification and the warning notification for a scheduled install. The user can dismiss a reminder, but not the warning.|
+|Specify deadline before auto-restart for update installation|Governs the update experience once the device has entered pending reboot state. It specifies a deadline, in days, to enforce compliance (such as imminent installation).|
+|Configure Auto-restart warning notification schedule for updates|Configures the reminder notification and the warning notification for a scheduled installation. The user can dismiss a reminder, but not the warning.|
+| (starting in Windows 10, version 1903) Specify deadlines for automatic updates and restarts | Similar to "Specify deadline before auto-restart for update installation," but starts the deadline countdown from when the update was published. Also introduces a configurable grace period and the option to opt out of automatic restarts until the deadline is reached. |
 
-### Suggested Configuration  
+### Suggested configuration  
 
-|Policy|Location|3 Day Compliance|5 Day Compliance|7 Day Compliance |
+|Policy|Location|3-Day Compliance|5-Day Compliance|7-Day Compliance |
 |-|-|-|-|-|
 |Specify deadline before auto-restart for update installation| 	GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadline before auto-restart for update installation |State: Enabled <br>**Specify the number of days before pending restart will automatically be executed outside of active hours**: 2|State: Enabled <br>**Specify the number of days before pending restart will automatically be executed outside of active hours**: 3|State: Enabled <br>**Specify the number of days before pending restart will automatically be executed outside of active hours**: 4
 
@@ -63,7 +63,7 @@ Notification users get for a feature update deadline:
 
 This flow provides the end user with prompts to select a time to restart the device before the deadline is reached. If the device is unable to restart at the time specified by the user or the time selected is outside the deadline, the device will restart the next time it is active. 
 
-### End user experience
+### End-user experience
 
 Before the deadline the device will be in two states: auto-restart period and engaged-restart period. During the auto-restart period the device will silently try to restart outside of active hours. If the device can't find an idle moment to restart, then the device will go into engaged-restart. The end user, at this point, can select a time that they would like the device to try to restart. Both phases happen before the deadline; once that deadline has passed then the device will restart at the next available time. 
 
