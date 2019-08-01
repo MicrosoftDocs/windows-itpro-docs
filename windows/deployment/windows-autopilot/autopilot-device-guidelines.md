@@ -43,4 +43,3 @@ The following additional best practices ensure that devices can easily be provis
 ## Related topics
 
 [Windows Autopilot customer consent](registration-auth.md)<br>
-[Motherboard replacement scenario guidance](autopilot-mbr.md)<br>
