@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
+audience: itpro
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -22,69 +23,67 @@ ms.topic: article
 
 - Windows 10
 
+This document offers guidance for  Windows Autopilot device repair scenarios that Microsoft partners can use in Motherboard Replacement (MBR) situations, and other servicing scenarios.
 
-This document offers guidance on how Microsoft partners should handle Motherboard Replacement (MBR) situations and other servicing scenarios with Autopilot devices.
-
-This document only addresses the most common repair scenarios.  
-
-Repairing Autopilot enrolled devices is complex, as it tries to balance OEM requirements with Windows Autopilot requirements.  Specifically, OEM’s require strict uniqueness across motherboards, MAC addresses, etc., while Windows Autopilot requires strict uniqueness at the Hardware ID level for each device (for successful registrations).  The Hardware ID does not always accommodate all the OEM hardware component requirements, thus these requirements are sometimes at odds, making some repair scenarios unsupportable currently.
+Repairing Autopilot enrolled devices is complex, as it tries to balance OEM requirements with Windows Autopilot requirements.  Specifically, OEM’s require strict uniqueness across motherboards, MAC addresses, etc., while Windows Autopilot requires strict uniqueness at the Hardware ID level for each device to enable successful registration.  The Hardware ID does not always accommodate all the OEM hardware component requirements, thus these requirements are sometimes at odds, causing issues with some repair scenarios.
 
 ## Motherboard Replacement (MBR) 
 
-If a motherboard replacement is needed on an Autopilot device, use the following process if possible:
+If a motherboard replacement is needed on a Windows Autopilot device, the following process is recommended:
 
-1. [Deregister the device](#deregister-the-autopilot-device-from-the-autopilot-program)
+1. [Deregister the device](#deregister-the-autopilot-device-from-the-autopilot-program) from Windows Autopilot
 2. [Replace the motherboard](#replace-the-motherboard)
 3. [Capture a new device ID (4K HH)](#capture-a-new-autopilot-device-id-4k-hh-from-the-device)
-4. [Reregister the repaired device](#reregister-the-repaired-device-using-the-new-device-id)
-5. [Return the repaired device](#return-the-repaired-device-to-the-customer)
+4. [Reset the device](#reset-the-device)
+5. [Reregister the device](#reregister-the-repaired-device-using-the-new-device-id) with Windows Autopilot
+6. [Return the device](#return-the-repaired-device-to-the-customer)
 
 ### Deregister the Autopilot device from the Autopilot program
 
-Only the entity that registered the device can deregister it.  Therefore, before the device arrives at the repair facility, it should be deregistered by whomever registered it, whether that’s the customer IT Admin, the OEM, or the CSP partner.  If the IT Admin registered the device, they likely did so via Intune (or the Microsoft Store for Business).  In that case, they should deregister the device from Intune (or MSfB).  This is necessary because devices registered in Intune will not show up in MPC.  However, if the OEM or CSP partner registered the device, they likely did so via MPC.  In that case, they should deregister the device from MPC (which will also remove it from the customer IT Admin’s Intune account).  Below, we describe the steps an IT Admin would go through to deregister a device from Intune, and the steps an OEM or CSP would go through to deregister a device from MPC.
+Before the device arrives at the repair facility, it must be deregistered by the entity that registered it. Only the entity that registered the device can deregister it.   This might be the customer IT Admin, the OEM, or the CSP partner.  If the IT Admin registered the device, they likely did so via Intune (or possibly the Microsoft Store for Business).  In that case, they should deregister the device from Intune (or MSfB).  This is necessary because devices registered in Intune will not show up in MPC.  However, if the OEM or CSP partner registered the device, they likely did so via the Microsoft Partner Center (MPC).  In that case, they should deregister the device from MPC (which will also remove it from the customer IT Admin’s Intune account).  Below, we describe the steps an IT Admin would go through to deregister a device from Intune, and the steps an OEM or CSP would go through to deregister a device from MPC.
 
-NOTE:  Whenever possible, an OEM or CSP should register Autopilot devices (rather than having the customer do it).  This will avoid problems where OEMs or CSPs may not be able to deregister a device if, for example, a customer leasing a device goes out of business before deregistering it themselves.
+**NOTE**: When possible, an OEM or CSP should register Autopilot devices, rather than having the customer do it.  This will avoid problems where OEMs or CSPs may not be able to deregister a device if, for example, a customer leasing a device goes out of business before deregistering it themselves.
 
-EXCEPTION:  If a customer grants an OEM permission to register devices on their behalf via the automated consent process, then an OEM can use the API to deregister devices they didn’t register themselves (instead, the customer registered the devices).  But keep in mind that this would only remove those devices from the Autopilot program, it would not disenroll them from Intune or disjoin them from AAD.  The customer must do those steps (if desired) through Intune.
+**EXCEPTION**: If a customer grants an OEM permission to register devices on their behalf via the automated consent process, then an OEM can use the API to deregister devices they didn’t register themselves (instead, the customer registered the devices).  But keep in mind that this would only remove those devices from the Autopilot program, it would not disenroll them from Intune or disjoin them from AAD.  The customer must do those steps, if desired, through Intune.
 
 #### Deregister from Intune
 
 To deregister an Autopilot device from Intune, an IT Admin would:
 
-1. Log into their Intune account
+1. Sign in to their Intune account
 2. Navigate to Intune > Groups > All groups
-3. Remove desired device(s) from its group
+3. Remove the desired device from its group
 4. Navigate to Intune > Devices > All devices
-5. Select the checkbox next to the device(s) you want to delete, then click the Delete button along the top menu
+5. Select the checkbox next to the device you want to delete, then click the Delete button on the top menu
 6. Navigate to Intune > Devices > Azure AD devices
-7. Select the checkbox next to the device(s) you want to delete, then click the Delete button along the top menu
+7. Select the checkbox next to the device you want to delete, then click the Delete button along the top menu
 8. Navigate to Intune > Device enrollment > Windows enrollment > Devices
-9. Select the checkbox next to the device(s) you want to deregister
+9. Select the checkbox next to the device you want to deregister
 10. Click the extended menu icon (“…”) on the far right end of the line containing the device you want to deregister in order to expose an additional menu with the option to “unassign user”
 11.	Click “Unassign user” if the device was previously assigned to a user; if not, this option will be grayed-out and can be ignored
 12.	With the unassigned device still selected, click the Delete button along the top menu to remove this device
 
-NOTE:  These steps deregister the device from Autopilot, but also unenroll the device from Intune, and disjoin the device from AAD.  While it may appear that only deregistering the device from Autopilot is needed, there are certain barriers in place within Intune that necessitate all the steps above be done, which is best practice anyway in case the device gets lost or becomes unrecoverable, to eliminate the possibility of orphaned devices existing in the Autopilot database, or Intune, or AAD.  If a device gets into an unrecoverable state, you can contact the appropriate [Microsoft support alias](autopilot-support.md) for assistance.
+**NOTE**: These steps deregister the device from Autopilot, but also unenroll the device from Intune, and disjoin the device from AAD.  While it may appear that only deregistering the device from Autopilot is needed, there are certain barriers in place within Intune that necessitate all the steps above be done, which is best practice anyway in case the device gets lost or becomes unrecoverable, to eliminate the possibility of orphaned devices existing in the Autopilot database, or Intune, or AAD.  If a device gets into an unrecoverable state, you can contact the appropriate [Microsoft support alias](autopilot-support.md) for assistance.
 
-The deregistration process will take about 15 minutes.  You can accelerate the process by clicking the “Sync” button, then “Refresh” the display until the device(s) is no longer present.
+The deregistration process will take about 15 minutes.  You can accelerate the process by clicking the “Sync” button, then “Refresh” the display until the device is no longer present.
 
 More details on deregistering devices from Intune can be found [here](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group).
 
 #### Deregister from MPC
 
-To deregister an Autopilot device from Microsoft Partner Center (MPC), a CSP would:
+To deregister an Autopilot device from the Microsoft Partner Center (MPC), a CSP would:
 
 1. Log into MPC
 2. Navigate to Customer > Devices
-3. Select the device(s) to be deregistered and click the “Delete device” button
+3. Select the device to be deregistered and click the “Delete device” button
 
 ![devices](images/devices.png)
 
-NOTE: Deregistering a device from Autopilot in MPC does only that; it does not also unenroll the device from the MDM (Intune), nor does it disjoin the device from AAD.  Therefore, if possible, the OEM/CSP ideally should work with the customer IT Admin to have the device(s) fully removed per the Intune steps in the previous section.
+**NOTE**: Deregistering a device from Autopilot in MPC does only that; it does not also unenroll the device from the MDM (Intune), nor does it disjoin the device from AAD.  Therefore, if possible, the OEM/CSP ideally should work with the customer IT Admin to have the device fully removed per the Intune steps in the previous section.
 
-NOTE: Alternatively, an OEM partner that has integrated the OEM Direct APIs can deregister a device by calling the AutopilotDeviceRegistration API with the TenantID and TenantDomain fields left blank in the request call.  
+Alternatively, an OEM partner that has integrated the OEM Direct APIs can deregister a device by calling the AutopilotDeviceRegistration API with the TenantID and TenantDomain fields left blank in the request call.  
 
-NOTE: Because the repair facility will not have access to the user’s login credentials, the repair facility will have to reimage the device as part of the repair process.  This means that the customer should do three things before sending the device off for repair:
+Because the repair facility will not have access to the user’s login credentials, the repair facility will have to reimage the device as part of the repair process.  This means that the customer should do three things before sending the device off for repair:
 1. Copy all important data off the device.
 2. Let the repair facility know which version of Windows they should reinstall after the repair.
 3. If applicable, let the repair facility know which version of Office they should reinstall after the repair.
@@ -105,33 +104,33 @@ Repair and key replacement processes vary between facilities.  Sometimes repair 
 - ProductKeyID
 - OSType
 
-NOTE:  For simplicity (and because processes vary between repair facilities), we have excluded many of the additional steps often used in a MBR, such as:
+**NOTE**: For simplicity, and because processes vary between repair facilities, we have excluded many of the additional steps often used in a MBR, such as:
 - Verify that the device is still functional
 - Disable BitLocker*
 - Repair the Boot Configuration Data (BCD)
-- Repair/verify the network driver operation
+- Repair and verify the network driver operation
 
-*BitLocker need only be suspended, if the technician has the ability/access to resume it after the repair.
+*BitLocker can be suspended rather than disbled if the technician has the ability to resume it after the repair.
 
 ### Capture a new Autopilot device ID (4K HH) from the device
 
-Repair technicians will have to log into the repaired device to capture the new device ID.  Assuming the repair technician does NOT have access to the customer’s login credentials, they will have to reimage the device in order to gain access, per the following steps:
+Repair technicians must sign in to the repaired device to capture the new device ID.  Assuming the repair technician does NOT have access to the customer’s login credentials, they will have to reimage the device in order to gain access, per the following steps:
 
-1. Repair technician creates a [WinPE bootable USB drive](https://docs.microsoft.com/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions#create-a-bootable-windows-pe-winpe-partition)
-2. Repair technician boot the device to WinPE
-3. Repair technician [applies a new Windows image to the device](https://docs.microsoft.com/windows-hardware/manufacture/desktop/work-with-windows-images)
+1. The repair technician creates a [WinPE bootable USB drive](https://docs.microsoft.com/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions#create-a-bootable-windows-pe-winpe-partition).
+2. The repair technician boots the device to WinPE.
+3. The repair technician [applies a new Windows image to the device](https://docs.microsoft.com/windows-hardware/manufacture/desktop/work-with-windows-images).
 
-    NOTE:  Ideally, the same version of Windows should be reimaged onto the device that was originally on the device, so some coordination will be required between the repair facility and customer to capture this information at the time the device arrives for repair.  This might include the customer sending the repair facility a customized image (.ppk file) via a USB stick, for example.
+    **NOTE**: Ideally, the same version of Windows should be reimaged onto the device that was originally on the device, so some coordination will be required between the repair facility and customer to capture this information at the time the device arrives for repair.  This might include the customer sending the repair facility a customized image (.ppk file) via a USB stick, for example.
  
-4. Repair technician boots the device into the new Windows image
-5. Once on the desktop, the repair technician captures the new device ID (4K HH) off the device using either the OA3 Tool or the PowerShell script, as described below
+4. The repair technician boots the device into the new Windows image.
+5. Once on the desktop, the repair technician captures the new device ID (4K HH) off the device using either the OA3 Tool or the PowerShell script, as described below.
 
 Those repair facilities with access to the OA3 Tool (which is part of the ADK) can use the tool to capture the 4K Hardware Hash (4K HH).
 
 Alternatively, the [WindowsAutoPilotInfo Powershell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) can be used to capture the 4K HH by following these steps:
 
 1. Install the script from the [PowerShell Gallery](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) or from the command line.
-2. Navigate to the script and run it on the device when the device is either in Full OS or Audit Mode.
+2. Navigate to the script directory and run it on the device when the device is either in Full OS or Audit Mode. See the following example.
 
     ```powershell
     md c:\HWID
@@ -142,11 +141,13 @@ Alternatively, the [WindowsAutoPilotInfo Powershell script](https://www.powershe
     Get-WindowsAutopilotInfo.ps1 -OutputFile AutopilotHWID.csv
     ```
 
-If you are prompted to install the NuGet package, choose **Yes**.
+>If you are prompted to install the NuGet package, choose **Yes**.
 
-The script creates a csv file that contains the device information, including the complete 4K HH.  The service facility would then use this 4K HH to reregister device as described in the next step.
+The script creates a .csv file that contains the device information, including the complete 4K HH.  Save this file so that you can access it later. The service facility will use this 4K HH to reregister device as described below.
 
-NOTE:  If the repair facility does not have the ability to run the OA3 tool or PowerShell script to capture the new 4K HH, then the CSP (or OEM) partners must do this for them.  Without some entity capturing the new 4K HH, there is no way to reregister this device as an Autopilot device.
+**NOTE**: If the repair facility does not have the ability to run the OA3 tool or PowerShell script to capture the new 4K HH, then the CSP (or OEM) partners must do this for them.  Without some entity capturing the new 4K HH, there is no way to reregister this device as an Autopilot device.
+
+### Reset the device
 
 Since the device was required to be in Full OS or Audit Mode to capture the 4K HH, the repair facility must reset the image back to a pre-OOBE state before returning it to the customer.  One way this can be accomplished is by using the built-in reset feature in Windows, as follows:
 
@@ -158,42 +159,42 @@ However, it’s likely the repair facility won’t have access to Windows becaus
  
 ### Reregister the repaired device using the new device ID
 
-If an OEM is not available to (or not willing to) reregister the device, then the repair facility or CSP should reregister the device using MPC, or the customer IT Admin should be advised to reregister the device via Intune (or MSfB).  Both ways of reregistering a device are shown below.
+If an OEM is not able to reregister the device, then the repair facility or CSP should reregister the device using MPC, or the customer IT Admin should be advised to reregister the device via Intune (or MSfB).  Both ways of reregistering a device are shown below.
 
 #### Reregister from Intune
 
 To reregister an Autopilot device from Intune, an IT Admin would:
-1. Log into Intune
-2. Navigate to Device enrollment > Windows enrollment > Devices > Import
-3. Click the “import” button to upload a csv file containing the device ID of the device to be reregistered (the device ID was the 4K HH captured by the PowerShell script or OA3 tool described previously in this document).
+1. Sign in to Intune.
+2. Navigate to Device enrollment > Windows enrollment > Devices > Import.
+3. Click the **Import** button to upload a csv file containing the device ID of the device to be reregistered (the device ID was the 4K HH captured by the PowerShell script or OA3 tool described previously in this document).
 
 The following video provides a good overview of how to (re)register devices via MSfB.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=IpLIZU_j7Z0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/watch?v=IpLIZU_j7Z0]
 
 #### Reregister from MPC
 
 To reregister an Autopilot device from MPC, an OEM or CSP would:
 
-1. Log into MPC
-2. Navigate to the Customer > Devices page and click the “Add devices” button to upload the csv file.
+1. Sign in to MPC.
+2. Navigate to the Customer > Devices page and click the **Add devices** button to upload the csv file.
 
 ![device](images/device2.png)<br>
 ![device](images/device2.png)
 
 In the case of reregistering a repaired device through MPC, the uploaded csv file must contain the 4K HH for the device, and not just the PKID or Tuple (SerialNumber + OEMName + ModelName).  If only the PKID or Tuple were used, the Autopilot service would be unable to find a match in the Autopilot database, since no 4K HH info was ever previously submitted for this essentially “new” device, and the upload will fail, likely returning a ZtdDeviceNotFound error.  So, again, only upload the 4K HH, not the Tuple or PKID.
 
-NOTE:  When including the 4K HH in the csv file, you do NOT also need to include the PKID or Tuple.  Those columns may be left blank, as shown below:
+**NOTE**: When including the 4K HH in the csv file, you do NOT also need to include the PKID or Tuple.  Those columns may be left blank, as shown below:
 
 ![hash](images/hh.png)
 
 ### Return the repaired device to the customer
 
-After completing the above steps, the repaired device can now be returned to the customer, and will be auto-enrolled into the Autopilot program on first boot-up during OOBE.
+After completing the previous steps, the repaired device can now be returned to the customer, and will be auto-enrolled into the Autopilot program on first boot-up during OOBE.
 
-NOTE:  If the repair facility did NOT reimage the device, they could be sending it back in a potentially broken state (e.g., there’s no way to log into the device because it’s been dissociated from the only known user account), in which case they should tell the organization that they need to fix the registration and OS themselves.
+**NOTE**: If the repair facility did NOT reimage the device, they could be sending it back in a potentially broken state (e.g., there’s no way to log into the device because it’s been dissociated from the only known user account), in which case they should tell the organization that they need to fix the registration and OS themselves.
 
-NOTE:  A device can be “registered” for Autopilot prior to being powered-on, but the device isn’t actually “deployed” to Autopilot (i.e., enabled as an Autopilot device) until it goes through OOBE, which is why resetting the device back to a pre-OOBE state is a required step.
+**IMPORTANT**: A device can be “registered” for Autopilot prior to being powered-on, but the device isn’t actually “deployed” to Autopilot (i.e., enabled as an Autopilot device) until it goes through OOBE, which is why resetting the device back to a pre-OOBE state is a required step.
 
 ## Specific repair scenarios
 
@@ -207,8 +208,8 @@ NOTES ON TEST RESULTS:
 - In the cases where a repair facility does not have the ability to write device info into the BIOS of the repaired device, new processes need to be created to successfully enable Autopilot.
 - Repaired device should have the Product Key (DPK) preinjected in the BIOS before capturing the new 4K HH (device ID)
 
-<table>
-<th><td>Scenario<td>Not supported for Autopilot (Y/N)?<br>Yes = device will be reenabled for Autopilot successfully<br>No = after repair, device will NOT be enabled for Autopilot<td>Microsoft Recommendation
+<table border="1">
+<th>Scenario<td>Not supported for Autopilot (Y/N)?<br>Yes = device will be reenabled for Autopilot successfully<br>No = after repair, device will NOT be enabled for Autopilot<td>Microsoft Recommendation
 <tr><td>Motherboard Replacement (MBR) in general<td>Yes<td>The recommended course of action for MBR scenarios is:
 
 1. Autopilot device is deregistered from the Autopilot program
@@ -297,7 +298,7 @@ NOTES ON TEST RESULTS:
 9. Go through Autopilot OOBE (customer)
 10. Autopilot successfully enabled
 
-NOTE:  The repaired device can also be used successfully as a normal, non-Autopilot device.
+<b>NOTE</b>:  The repaired device can also be used successfully as a normal, non-Autopilot device.
 
 <tr><td>BIOS info excluded from MBR device<td>No<td>Repair facility does not have BIOS tool to write device info into BIOS after MBR.
 
@@ -378,9 +379,9 @@ Assuming the used HDD was previously deregistered (before being used in this rep
 <tr><td>GPU replacement<td>Yes<td>Replacing the GPU(s) on a damaged device does not negatively affect the Autopilot experience on that device.  No de/reregistration is needed.  The repair technician simply needs to replace the GPU.
 </table>
 
-NOTE:  When scavenging parts from another Autopilot device, we recommend unregistering the scavenged device from Autopilot, scavenging it, and then NEVER REGISTERING THE SCAVENGED DEVICE (AGAIN) FOR AUTOPILOT, because reusing parts this way may cause two active devices to end up with the same ID, with no possibility of distinguishing between the two.
+>When scavenging parts from another Autopilot device, we recommend unregistering the scavenged device from Autopilot, scavenging it, and then NEVER REGISTERING THE SCAVENGED DEVICE (AGAIN) FOR AUTOPILOT, because reusing parts this way may cause two active devices to end up with the same ID, with no possibility of distinguishing between the two.
 
-NOTE:  The following parts may be replaced without compromising Autopilot enablement or requiring special additional repair steps:
+**NOTE**: The following parts may be replaced without compromising Autopilot enablement or requiring special additional repair steps:
 - Memory (RAM or ROM)
 - Power Supply
 - Video Card
@@ -393,7 +394,7 @@ NOTE:  The following parts may be replaced without compromising Autopilot enable
 - Heat sink
 - CMOS battery
 
-NOTE:  Other repair scenarios not yet tested and verified include:
+Other repair scenarios not yet tested and verified include:
 - Daughterboard replacement
 - CPU replacement
 - Wifi replacement

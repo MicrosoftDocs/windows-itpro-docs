@@ -4,6 +4,7 @@ ms.reviewer:
 manager: laurawi
 description: Windows Autopilot deployment
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
+audience: itpro
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,7 +21,7 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
+- Windows 10
 
 ## Hardware and firmware best practice guidelines for Windows Autopilot
 
@@ -42,3 +43,4 @@ The following additional best practices ensure that devices can easily be provis
 ## Related topics
 
 [Windows Autopilot customer consent](registration-auth.md)<br>
+[Motherboard replacement scenario guidance](autopilot-mbr.md)<br>
