@@ -189,7 +189,7 @@ Event's information:
 ![Image of single network event](images/atp-proxy-investigation-event.png)<br>
 
 **Advanced Hunting**<br>
-All new connection events are available for you to hunt on through advanced hunting as well. Since these events are connection events, you can find them under the NetworkCommunicationEvents table under the ‘ConnecionSuccess’ action type.<br>
+All new connection events are available for you to hunt on through advanced hunting as well. Since these events are connection events, you can find them under the NetworkCommunicationEvents table under the ‘ConnectionSuccess’ action type.<br>
 Using this simple query will show you all the relevant events:
 
 ```
