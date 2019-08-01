@@ -27,7 +27,7 @@ This document offers guidance for  Windows Autopilot device repair scenarios tha
 
 Repairing Autopilot enrolled devices is complex, as it tries to balance OEM requirements with Windows Autopilot requirements.  Specifically, OEM’s require strict uniqueness across motherboards, MAC addresses, etc., while Windows Autopilot requires strict uniqueness at the Hardware ID level for each device to enable successful registration.  The Hardware ID does not always accommodate all the OEM hardware component requirements, thus these requirements are sometimes at odds, causing issues with some repair scenarios.
 
-## Motherboard Replacement (MBR) 
+**Motherboard Replacement (MBR)**
 
 If a motherboard replacement is needed on a Windows Autopilot device, the following process is recommended:
 
@@ -38,7 +38,9 @@ If a motherboard replacement is needed on a Windows Autopilot device, the follow
 5. [Reregister the device](#reregister-the-repaired-device-using-the-new-device-id) with Windows Autopilot
 6. [Return the device](#return-the-repaired-device-to-the-customer)
 
-### Deregister the Autopilot device from the Autopilot program
+Each of these steps is described below.
+
+## Deregister the Autopilot device from the Autopilot program
 
 Before the device arrives at the repair facility, it must be deregistered by the entity that registered it. Only the entity that registered the device can deregister it.   This might be the customer IT Admin, the OEM, or the CSP partner.  If the IT Admin registered the device, they likely did so via Intune (or possibly the Microsoft Store for Business).  In that case, they should deregister the device from Intune (or MSfB).  This is necessary because devices registered in Intune will not show up in MPC.  However, if the OEM or CSP partner registered the device, they likely did so via the Microsoft Partner Center (MPC).  In that case, they should deregister the device from MPC, which will also remove it from the customer IT Admin’s Intune account.  Below, we describe the steps an IT Admin would go through to deregister a device from Intune, and the steps an OEM or CSP would go through to deregister a device from MPC.
 
@@ -46,7 +48,7 @@ Before the device arrives at the repair facility, it must be deregistered by the
 
 **EXCEPTION**: If a customer grants an OEM permission to register devices on their behalf via the automated consent process, then an OEM can use the API to deregister devices they didn’t register themselves (instead, the customer registered the devices).  But keep in mind that this would only remove those devices from the Autopilot program, it would not disenroll them from Intune or disjoin them from AAD.  The customer must do those steps, if desired, through Intune.
 
-#### Deregister from Intune
+### Deregister from Intune
 
 To deregister an Autopilot device from Intune, an IT Admin would:
 
@@ -69,7 +71,7 @@ The deregistration process will take about 15 minutes.  You can accelerate the p
 
 More details on deregistering devices from Intune can be found [here](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-device-group).
 
-#### Deregister from MPC
+### Deregister from MPC
 
 To deregister an Autopilot device from the Microsoft Partner Center (MPC), a CSP would:
 
@@ -88,7 +90,7 @@ Because the repair facility will not have access to the user’s login credentia
 2. Let the repair facility know which version of Windows they should reinstall after the repair.
 3. If applicable, let the repair facility know which version of Office they should reinstall after the repair.
 
-### Replace the motherboard
+## Replace the motherboard
 
 Technicians replace the motherboard (or other hardware) on the broken device.  A replacement DPK is injected.
 
@@ -112,7 +114,7 @@ Repair and key replacement processes vary between facilities.  Sometimes repair 
 
 *BitLocker can be suspended rather than disbled if the technician has the ability to resume it after the repair.
 
-### Capture a new Autopilot device ID (4K HH) from the device
+## Capture a new Autopilot device ID (4K HH) from the device
 
 Repair technicians must sign in to the repaired device to capture the new device ID.  Assuming the repair technician does NOT have access to the customer’s login credentials, they will have to reimage the device in order to gain access, per the following steps:
 
@@ -147,7 +149,7 @@ The script creates a .csv file that contains the device information, including t
 
 **NOTE**: If the repair facility does not have the ability to run the OA3 tool or PowerShell script to capture the new 4K HH, then the CSP (or OEM) partners must do this for them.  Without some entity capturing the new 4K HH, there is no way to reregister this device as an Autopilot device.
 
-### Reset the device
+## Reset the device
 
 Since the device was required to be in Full OS or Audit Mode to capture the 4K HH, the repair facility must reset the image back to a pre-OOBE state before returning it to the customer.  One way this can be accomplished is by using the built-in reset feature in Windows, as follows:
 
@@ -157,11 +159,11 @@ On the device, go to Settings > Update & Security > Recovery and click on Get st
 
 However, it’s likely the repair facility won’t have access to Windows because they lack the user credentials to login, in which case they need to use other means to reimage the device, such as the [Deployment Image Servicing and Management tool](https://docs.microsoft.com/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions#use-a-deployment-script-to-apply-your-image).
  
-### Reregister the repaired device using the new device ID
+## Reregister the repaired device using the new device ID
 
 If an OEM is not able to reregister the device, then the repair facility or CSP should reregister the device using MPC, or the customer IT Admin should be advised to reregister the device via Intune (or MSfB).  Both ways of reregistering a device are shown below.
 
-#### Reregister from Intune
+### Reregister from Intune
 
 To reregister an Autopilot device from Intune, an IT Admin would:
 1. Sign in to Intune.
@@ -172,7 +174,7 @@ The following video provides a good overview of how to (re)register devices via 
 
 > [!VIDEO https://www.youtube.com/embed/IpLIZU_j7Z0]
 
-#### Reregister from MPC
+### Reregister from MPC
 
 To reregister an Autopilot device from MPC, an OEM or CSP would:
 
@@ -188,7 +190,7 @@ In the case of reregistering a repaired device through MPC, the uploaded csv fil
 
 ![hash](images/hh.png)
 
-### Return the repaired device to the customer
+## Return the repaired device to the customer
 
 After completing the previous steps, the repaired device can now be returned to the customer, and will be auto-enrolled into the Autopilot program on first boot-up during OOBE.
 
