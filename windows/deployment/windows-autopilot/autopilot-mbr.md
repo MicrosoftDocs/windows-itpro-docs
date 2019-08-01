@@ -40,7 +40,7 @@ If a motherboard replacement is needed on a Windows Autopilot device, the follow
 
 ### Deregister the Autopilot device from the Autopilot program
 
-Before the device arrives at the repair facility, it must be deregistered by the entity that registered it. Only the entity that registered the device can deregister it.   This might be the customer IT Admin, the OEM, or the CSP partner.  If the IT Admin registered the device, they likely did so via Intune (or possibly the Microsoft Store for Business).  In that case, they should deregister the device from Intune (or MSfB).  This is necessary because devices registered in Intune will not show up in MPC.  However, if the OEM or CSP partner registered the device, they likely did so via the Microsoft Partner Center (MPC).  In that case, they should deregister the device from MPC (which will also remove it from the customer IT Admin’s Intune account).  Below, we describe the steps an IT Admin would go through to deregister a device from Intune, and the steps an OEM or CSP would go through to deregister a device from MPC.
+Before the device arrives at the repair facility, it must be deregistered by the entity that registered it. Only the entity that registered the device can deregister it.   This might be the customer IT Admin, the OEM, or the CSP partner.  If the IT Admin registered the device, they likely did so via Intune (or possibly the Microsoft Store for Business).  In that case, they should deregister the device from Intune (or MSfB).  This is necessary because devices registered in Intune will not show up in MPC.  However, if the OEM or CSP partner registered the device, they likely did so via the Microsoft Partner Center (MPC).  In that case, they should deregister the device from MPC, which will also remove it from the customer IT Admin’s Intune account.  Below, we describe the steps an IT Admin would go through to deregister a device from Intune, and the steps an OEM or CSP would go through to deregister a device from MPC.
 
 **NOTE**: When possible, an OEM or CSP should register Autopilot devices, rather than having the customer do it.  This will avoid problems where OEMs or CSPs may not be able to deregister a device if, for example, a customer leasing a device goes out of business before deregistering it themselves.
 
@@ -209,7 +209,7 @@ NOTES ON TEST RESULTS:
 - Repaired device should have the Product Key (DPK) preinjected in the BIOS before capturing the new 4K HH (device ID)
 
 <table border="1">
-<th>Scenario<td>Not supported for Autopilot (Y/N)?<br>Yes = device will be reenabled for Autopilot successfully<br>No = after repair, device will NOT be enabled for Autopilot<td>Microsoft Recommendation
+<th>Scenario<th>Supportability:<br>Yes = can be reenabled for Autopilot<br>No = cannot be reenabled for Autopilot<th>Microsoft Recommendation
 <tr><td>Motherboard Replacement (MBR) in general<td>Yes<td>The recommended course of action for MBR scenarios is:
 
 1. Autopilot device is deregistered from the Autopilot program
