@@ -25,27 +25,25 @@ You can display content from your devices to Surface Hub 2S. If the source devic
 
 In general, it’s recommended to use native cable connections whenever possible such as USB-C to USB-C or HDMI to HDMI. Other combinations such as MiniDP to HDMI or MiniDP to USB-C will also work.
 
-| **Connection**   | **Functionality**     | **Description**|
+| **Connection** | **Functionality** | **Description**|
 | --- | --- | ---|
-| USB-C <br>(via compute module)     | Video-in<br> Video-out<br> Audio-in<br> Audio-out <br><br>TouchBack and InkBack  | Provides video, audio, and TouchBack/InkBack on a single cable.<br><br>**NOTE:** Some configuration is required to optimize the video-out experience. Refer to the section below: [Mirroring Surface Hub 2S display on another device](#).                                                                           |
-| HDMI + USB-C                   | HDMI-in for audio and video<br><br>USB-C for TouchBack and InkBack                         | USB-C supports TouchBack and InkBack with the HDMI A/V connection.<br><br>Use USB-C to USB-A to connect to legacy computers.<br><br>**NOTE:** For best results, connect HDMI before connecting a USB-C cable. If the computer you're using for HDMI is not compatible with TouchBack and InkBack, you won't need a USB-C cable. |
-| USB-C <br> (via compute module) | Video-in <br>Audio-in                                                | Single cable needed for A/V<br><br>TouchBack and InkBack not supported<br><br>HDCP enabled                                                                                                                                                                                                                                   |
-| HDMI (in port)                 | Video, Audio into Surface Hub 2S                                               | Single cable needed for A/V<br><br>TouchBack and InkBack not supported<br><br>HDCP enabled                                                                                                                                                                                                                                   |
-| MiniDP 1.2 output          | Video-out such as mirroring to a larger projector.                             | Single cable needed for A/V                                                                                                                                                                                                                                                                                      |
+| USB-C <br>(via compute module) | Video-in<br> Video-out<br> Audio-in<br> Audio-out <br><br>TouchBack and InkBack  | Provides video, audio, and TouchBack/InkBack on a single cable.<br><br>**NOTE:** Some configuration is required to optimize the video-out experience. Refer to the section below: [Mirroring Surface Hub 2S display on another device](#). |
+| HDMI + USB-C | HDMI-in for audio and video<br><br>USB-C for TouchBack and InkBack | USB-C supports TouchBack and InkBack with the HDMI A/V connection.<br><br>Use USB-C to USB-A to connect to legacy computers.<br><br>**NOTE:** For best results, connect HDMI before connecting a USB-C cable. If the computer you're using for HDMI is not compatible with TouchBack and InkBack, you won't need a USB-C cable. |
+| USB-C <br> (via compute module) | Video-in <br>Audio-in | Single cable needed for A/V<br><br>TouchBack and InkBack not supported<br><br>HDCP enabled |
+| HDMI (in port) | Video, Audio into Surface Hub 2S | Single cable needed for A/V<br><br>TouchBack and InkBack not supported<br><br>HDCP enabled |
+| MiniDP 1.2 output | Video-out such as mirroring to a larger projector. | Single cable needed for A/V |
 
-
- 
 When you connect a guest computer to Surface Hub 2S via the USB-C port, several USB devices are discovered and configured. These peripheral devices are created for TouchBack and InkBack. As shown in the following table, the peripheral devices can be viewed in Device Manager, which will show duplicate names for some devices.
  
-**Device Manager reference**
-| **Peripheral**                  | **Listing in Device Manager**                                                                                                                                                                                                 |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Human interface devices         | HID-compliant consumer control device<br>HID-compliant pen<br>HID-compliant pen (duplicate item)<br>HID-compliant pen (duplicate item)<br>HID-compliant touch screen<br>USB Input Device<br>USB Input Device (duplicate item) |
-| Keyboards                       | Standard PS/2 keyboard                                                                                                                                                                                                        |
-| Mice and other pointing devices | HID-compliant mouse                                                                                                                                                                                                           |
-| USB controllers                 | Generic USB hub<br>USB composite device                                                                                                                                                                                       |
+| **Device Manager reference** |**Peripheral**| **Listing in Device Manager** |
+| ---------------------------- |------------- | ------------------------------|
+| Human interface devices | HID-compliant consumer control device<br>HID-compliant pen<br>HID-compliant pen (duplicate item)<br>HID-compliant pen (duplicate item)<br>HID-compliant touch screen<br>USB Input Device<br>USB Input Device (duplicate item) |
+| Keyboards | Standard PS/2 keyboard |
+| Mice and other pointing devices | HID-compliant mouse |
+| USB controllers | Generic USB hub<br>USB composite device |
 
 ## Connecting video-in to Surface Hub 2S
+
 You can input video to Surface Hub 2S using USB-C or HDMI, as indicated in the following table.  
 
 ### Surface Hub 2S video-in settings
@@ -61,14 +59,14 @@ You can input video to Surface Hub 2S using USB-C or HDMI, as indicated in the f
 | HDTV            | 1080p          | 60             | X        | X         |
 | 4K UHD          | 3840x2560      | 30             | X        | X         |
 
- 
 > [!NOTE]
 > The 4K UHD resolution (3840×2560) is only supported when connecting to ports on the compute module. It is not supported on the “guest” USB ports located on the left, top, and right sides of the device.
- 
+
 > [!NOTE]
 > Video from a connected external PC may appear smaller when displayed on Surface Hub 2S.
 
 ## Mirroring Surface Hub 2S display on another device
+
 You can output video to another display using either USB-C or MiniDP, as indicated in the following table.
 
 ### Surface Hub 2S video-out settings
@@ -96,9 +94,8 @@ Surface Hub 2S includes a MiniDP video-out port for projecting visual content fr
 > [!NOTE]
 > if your second monitor uses a 16:9 aspect ratio (the predominant ratio for most TV monitors), black bars may appear on the left and right sides of the mirrored display. If this occurs, you may wish to inform your users that there is no need to adjust the second display.
 
-
- 
 ## Selecting cables
+
 Note the following recommendations:
 
 - **USB.** USB 3.1 Gen 2 cables.
@@ -108,10 +105,11 @@ Note the following recommendations:
 > [!NOTE]
 > Most DisplayPort sources will automatically switch to HDMI signaling if HDMI is detected.
 
-# Wirelessly connect to Surface Hub 2S
+## Wirelessly connect to Surface Hub 2S
 
 Windows 10 natively supports Miracast, which lets you wireless connect to Surface Hub 2S.<br><br>
-**To connect using Miracast:**
+
+### To connect using Miracast:
 
 1. On your Windows 10 device, enter **Windows logo key** + **K**. 
 2. In the Connect window, look for the name of your Surface Hub 2S in the list of nearby devices. You can find the name of your Surface Hub 2S in the bottom left corner of the display.
@@ -123,6 +121,7 @@ Windows 10 natively supports Miracast, which lets you wireless connect to Surfac
 ## Connecting peripherals to Surface Hub 2S
 
 ### Bluetooth accessories
+
 You can connect the following accessories to Surface Hub-2S using Bluetooth:
 
 - Mice
