@@ -34,8 +34,8 @@ If a motherboard replacement is needed on a Windows Autopilot device, the follow
 1. [Deregister the device](#deregister-the-autopilot-device-from-the-autopilot-program) from Windows Autopilot
 2. [Replace the motherboard](#replace-the-motherboard)
 3. [Capture a new device ID (4K HH)](#capture-a-new-autopilot-device-id-4k-hh-from-the-device)
-4. [Reset the device](#reset-the-device)
-5. [Reregister the device](#reregister-the-repaired-device-using-the-new-device-id) with Windows Autopilot
+4. [Reregister the device](#reregister-the-repaired-device-using-the-new-device-id) with Windows Autopilot
+5. [Reset the device](#reset-the-device)
 6. [Return the device](#return-the-repaired-device-to-the-customer)
 
 Each of these steps is described below.
@@ -131,7 +131,7 @@ Those repair facilities with access to the OA3 Tool (which is part of the ADK) c
 
 Alternatively, the [WindowsAutoPilotInfo Powershell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) can be used to capture the 4K HH by following these steps:
 
-1. Install the script from the [PowerShell Gallery](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) or from the command line.
+1. Install the script from the [PowerShell Gallery](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) or from the command line (command line installation is shown below).
 2. Navigate to the script directory and run it on the device when the device is either in Full OS or Audit Mode. See the following example.
 
     ```powershell
@@ -146,20 +146,11 @@ Alternatively, the [WindowsAutoPilotInfo Powershell script](https://www.powershe
 >If, after installing the script you get an error that Get-WindowsAutopilotInfo.ps1 is not found, verify that C:\Program Files\WindowsPowerShell\Scripts is present in your PATH variable.<br>
 >If the Install-Script cmdlet fails, verify that you have the default PowerShell repository registered (**Get-PSRepository**) or register the default repository with **Register-PSRepository -Default -Verbose**.
 
-The script creates a .csv file that contains the device information, including the complete 4K HH.  Save this file so that you can access it later. The service facility will use this 4K HH to reregister device as described below.
+The script creates a .csv file that contains the device information, including the complete 4K HH.  Save this file so that you can access it later. The service facility will use this 4K HH to reregister device as described below. Be sure to use the -OutputFile parameter when saving the file, which ensures that file formatting is correct. Do not attempt to pipe the command output to a file manually.
 
 **NOTE**: If the repair facility does not have the ability to run the OA3 tool or PowerShell script to capture the new 4K HH, then the CSP (or OEM) partners must do this for them.  Without some entity capturing the new 4K HH, there is no way to reregister this device as an Autopilot device.
 
-## Reset the device
 
-Since the device was required to be in Full OS or Audit Mode to capture the 4K HH, the repair facility must reset the image back to a pre-OOBE state before returning it to the customer.  One way this can be accomplished is by using the built-in reset feature in Windows, as follows:
-
-On the device, go to Settings > Update & Security > Recovery and click on Get started.  Under Reset this PC, select Remove everything and Just remove my files. Finally, click on Reset.
-
-![reset](images/reset.png)
-
-However, it’s likely the repair facility won’t have access to Windows because they lack the user credentials to login, in which case they need to use other means to reimage the device, such as the [Deployment Image Servicing and Management tool](https://docs.microsoft.com/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions#use-a-deployment-script-to-apply-your-image).
- 
 ## Reregister the repaired device using the new device ID
 
 If an OEM is not able to reregister the device, then the repair facility or CSP should reregister the device using MPC, or the customer IT Admin should be advised to reregister the device via Intune (or MSfB).  Both ways of reregistering a device are shown below.
@@ -190,6 +181,16 @@ In the case of reregistering a repaired device through MPC, the uploaded csv fil
 **NOTE**: When including the 4K HH in the csv file, you do NOT also need to include the PKID or Tuple.  Those columns may be left blank, as shown below:
 
 ![hash](images/hh.png)
+
+## Reset the device
+
+Since the device was required to be in Full OS or Audit Mode to capture the 4K HH, the repair facility must reset the image back to a pre-OOBE state before returning it to the customer.  One way this can be accomplished is by using the built-in reset feature in Windows, as follows:
+
+On the device, go to Settings > Update & Security > Recovery and click on Get started.  Under Reset this PC, select Remove everything and Just remove my files. Finally, click on Reset.
+
+![reset](images/reset.png)
+
+However, it’s likely the repair facility won’t have access to Windows because they lack the user credentials to login, in which case they need to use other means to reimage the device, such as the [Deployment Image Servicing and Management tool](https://docs.microsoft.com/windows-hardware/manufacture/desktop/oem-deployment-of-windows-10-for-desktop-editions#use-a-deployment-script-to-apply-your-image).
 
 ## Return the repaired device to the customer
 
