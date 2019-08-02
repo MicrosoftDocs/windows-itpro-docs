@@ -52,6 +52,7 @@
 ##### [Investigate machines](microsoft-defender-atp/investigate-machines.md)
 ##### [Investigate an IP address](microsoft-defender-atp/investigate-ip.md)
 ##### [Investigate a domain](microsoft-defender-atp/investigate-domain.md)
+###### [Investigate connection events that occur behind forward proxies](microsoft-defender-atp/investigate-behind-proxy.md)
 ##### [Investigate a user account](microsoft-defender-atp/investigate-user.md)
  
 #### [Machines list]()
