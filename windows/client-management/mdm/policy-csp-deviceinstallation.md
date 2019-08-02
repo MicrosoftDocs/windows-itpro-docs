@@ -12,7 +12,6 @@ author: manikadhiman
 
 # Policy CSP - DeviceInstallation
 
-
 <hr/>
 
 <!--Policies-->
