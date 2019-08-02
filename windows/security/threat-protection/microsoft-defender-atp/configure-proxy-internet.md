@@ -29,7 +29,10 @@ The Microsoft Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to r
 
 The embedded Microsoft Defender ATP sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Microsoft Defender ATP cloud service.
 
-The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
+>[!TIP]
+>For organizations that use forward proxies as a gateway to the Internet, you can use network protection to investigate behind a proxy. For more information, see [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md).
+
+The WinHTTP configuration setting is independent of the Windows Internet (WinINet) Internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
 - Auto-discovery methods:
   - Transparent proxy
@@ -41,6 +44,8 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 - Manual static proxy configuration:
   - Registry based configuration
   - WinHTTP configured using netsh command – Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
+
+
 
 ## Configure the proxy server manually using a registry-based static proxy
 Configure a registry-based static proxy to allow only Microsoft Defender ATP sensor to report diagnostic data and communicate with Microsoft Defender ATP services if a computer is not be permitted to connect to the Internet.
@@ -178,59 +183,6 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 > [!NOTE]
 > The Connectivity Analyzer tool is not compatible with ASR rule [Block process creations originating from PSExec and WMI commands](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). You will need to temporarily disable this rule to run the connectivity tool.
 > When the TelemetryProxyServer is set, in Registry or via Group Policy, Microsoft Defender ATP will fall back to direct if it can't access the defined proxy.
-
-## Conduct investigations with Microsoft Defender ATP behind a proxy
-
-Microsoft Defender ATP supports network connection monitoring from different levels of the operating system network stack. A challenging case is when the network uses a forward proxy as a gateway to the internet.
-The proxy acts as if it was the target endpoint.  In these cases, simple network connection monitors will audit the connections with the proxy which is correct but has lower investigation value. Microsoft Defender ATP supports advanced HTTP level sensor.
-By enabling this sensor, Microsoft Defender ATP will expose a new type of events that surfaces the real target domain names. <br><br>
-
-**Investigation Impact**<br>
-In machine's timeline the IP address will keep representing the proxy, while the real target address shows up.
-![Image of network events on machine's timeline](images/atp-proxy-investigation.png)<br>
-
-Additional events triggered by the Network Protection layer are now available to surface the real domain names even behind a proxy. <br>
-Event's information:
-![Image of single network event](images/atp-proxy-investigation-event.png)<br>
-
-**Advanced Hunting**<br>
-All new connection events are available for you to hunt on through advanced hunting as well. Since these events are connection events, you can find them under the NetworkCommunicationEvents table under the ‘ConnecionSuccess’ action type.<br>
-Using this simple query will show you all the relevant events:
-
-```PowerShell
-NetworkCommunicationEvents
-| where ActionType == "ConnectionSuccess"
-| take 10
-```
-![Image of advanced hunting query](images/atp-proxy-investigation-ah.png)
-
-You can also filter out the events that are related to connection to the proxy itself. Use the following query to filter out the connections to the proxy:
-
-```PowerShell
-NetworkCommunicationEvents
-| where ActionType == "ConnectionSuccess" and RemoteIP != "ProxyIP"  
-| take 10
-```
-
-**How to enable the advanced network connection sensor**<br>
-Monitoring network connection behind forward proxy is possible due to additional Network Events that originate from Network Protection. To see them in machine’s timeline you need to turn Network Protection on at least in audit mode. <br>
-
-Network protection is a feature that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites.  Its behavior can be controlled by the following options: Block and Audit. <br>
-If you turn this policy on in "Block" mode, users/apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Windows Defender Security Center.<br>
-
-If you turn this policy on in "Audit" mode, users/apps will not be blocked from connecting to dangerous domains. However, you will still see this activity in Microsoft Defender Security Center.<br>
-
-If you turn this policy off, users/apps will not be blocked from connecting to dangerous domains. You will not see any network activity in Microsoft Defender Security Center.<br>
-
-If you do not configure this policy, network blocking will be disabled by default. <br><br>
-
-> [!NOTE]
-> In order to enable Monitoring network connection behind forward proxy and see the domains you will need to enable network protection at least in audit mode.
-
-Additional documentation:
-
-- [Applying network protection with GP – policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
-- [Configure machine proxy and Internet connectivity settings](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet)
 
 ## Related topics
 
