@@ -212,12 +212,12 @@ NOTES ON TEST RESULTS:
 - In the cases where a repair facility does not have the ability to write device info into the BIOS of the repaired device, new processes need to be created to successfully enable Autopilot.
 - Repaired device should have the Product Key (DPK) preinjected in the BIOS before capturing the new 4K HH (device ID)
 
-See the following table:<br>
+In the following table:<br>
 - Supported = **Yes**: the device can be reenabled for Autopilot
 - Supported = **No**: the device cannot be reenabled for Autopilot
 
 <table border="1">
-<th>Scenario<th>Supported*<th>Microsoft Recommendation
+<th>Scenario<th>Supported<th>Microsoft Recommendation
 <tr><td>Motherboard Replacement (MBR) in general<td>Yes<td>The recommended course of action for MBR scenarios is:
 
 1. Autopilot device is deregistered from the Autopilot program
