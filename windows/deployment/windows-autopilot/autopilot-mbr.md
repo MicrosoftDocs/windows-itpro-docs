@@ -142,8 +142,8 @@ Alternatively, the [WindowsAutoPilotInfo Powershell script](https://www.powershe
     Get-WindowsAutopilotInfo.ps1 -OutputFile AutopilotHWID.csv
     ```
 
->If you are prompted to install the NuGet package, choose **Yes**.
->If, after installing the script you get an error that Get-WindowsAutopilotInfo.ps1 is not found, verify that C:\Program Files\WindowsPowerShell\Scripts is present in your PATH variable.
+>If you are prompted to install the NuGet package, choose **Yes**.<br>
+>If, after installing the script you get an error that Get-WindowsAutopilotInfo.ps1 is not found, verify that C:\Program Files\WindowsPowerShell\Scripts is present in your PATH variable.<br>
 >If the Install-Script cmdlet fails, verify that you have the default PowerShell repository registered (**Get-PSRepository**) or register the default repository with **Register-PSRepository -Default -Verbose**.
 
 The script creates a .csv file that contains the device information, including the complete 4K HH.  Save this file so that you can access it later. The service facility will use this 4K HH to reregister device as described below.
