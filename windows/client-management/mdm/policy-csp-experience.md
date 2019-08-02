@@ -1642,17 +1642,24 @@ Supported values:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Experience policies supported by Windows Holographic
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Experience policies supported by HoloLens 2
 
 - [Experience/AllowCortana](#experience-allowcortana)
-<!--EndHoloLens-->
+- [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)
+<!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Experience policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>Experience policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Experience/AllowCortana](#experience-allowcortana)
 <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Experience policies supported by HoloLens (1st gen)  Development Edition
+
+- [Experience/AllowCortana](#experience-allowcortana)
+<!--EndHoloLens-->
 
 <hr/>
 
