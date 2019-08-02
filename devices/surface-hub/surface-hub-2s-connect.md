@@ -33,9 +33,8 @@ In general, it’s recommended to use native cable connections whenever possible
 | HDMI (in port) | Video, Audio into Surface Hub 2S | Single cable needed for A/V<br><br>TouchBack and InkBack not supported<br><br>HDCP enabled |
 | MiniDP 1.2 output | Video-out such as mirroring to a larger projector. | Single cable needed for A/V |
 
-When you connect a guest computer to Surface Hub 2S via the USB-C port, several USB devices are discovered and configured. These peripheral devices are created for TouchBack and InkBack. As shown in the following table, the peripheral devices can be viewed in Device Manager, which will show duplicate names for some devices.
+When you connect a guest computer to Surface Hub 2S via the USB-C port, several USB devices are discovered and configured. These peripheral devices are created for TouchBack and InkBack. As shown in the following table, the peripheral devices can be viewed in Device Manager, which will show duplicate names for some devices, as shown in the following table.
 
- **Device Manager reference**<br>
  
 |**Peripheral**| **Listing in Device Manager** |
 | ---------------------------- |------------- | ------------------------------|
