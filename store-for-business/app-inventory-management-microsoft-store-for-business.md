@@ -75,10 +75,10 @@ For online-licensed apps, you can assign apps directly to people in your organiz
 
 **To assign an app to an employee**
 
-1.	Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://businessstore.microsoft.com).
-2.	Click **Manage**, and then choose **Inventory**.
-3.	Find an app, click the ellipses, and then choose **Assign to people**.
-4.	Type the email address for the employee that you're assigning the app to, and click **Confirm**.
+1. Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://businessstore.microsoft.com).
+2. Click **Manage**, and then choose **Inventory**.
+3. Find an app, click the ellipses, and then choose **Assign to people**.
+4. Type the email address for the employee that you're assigning the app to, and click **Confirm**.
 
 Employees will receive an email with a link that will install the app on their device. Click the link to start the Microsoft Store app, and then click **Install**. Also, in the Microsoft Store app, they can find the app under **My Library**.
 
@@ -103,9 +103,9 @@ Employees can claim apps that admins added to the private store by doing the fol
 ### Get and remove private store apps
 **To claim an app from the private store**
 
-1.	Sign in to your computer with your Azure Active Directory (AD) credentials, and start the Microsoft Store app.
-2.	Click the private store tab.
-3.	Click the app you want to install, and then click **Install**.
+1. Sign in to your computer with your Azure Active Directory (AD) credentials, and start the Microsoft Store app.
+2. Click the private store tab.
+3. Click the app you want to install, and then click **Install**.
 
 Another way to distribute apps is by assigning them to people in your organization.
 

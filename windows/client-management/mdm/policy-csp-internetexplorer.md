@@ -2249,7 +2249,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--Example-->
-```syntax
+```xml
   <SyncBody>
       <Replace>
           <CmdID>2</CmdID>

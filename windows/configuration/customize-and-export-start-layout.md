@@ -91,7 +91,7 @@ When you have the Start layout that you want your users to see, use the [Export-
 
 2.  On a device running Windows 10, version 1607, 1703, or 1803, at the Windows PowerShell command prompt, enter the following command:
 
-    `Export-StartLayout –path <path><file name>.xml `
+    `Export-StartLayout –path <path><file name>.xml`
     
     On a device running Windows 10, version 1809, run the **Export-StartLayout** with the switch **-UseDesktopApplicationID**. For example:
 

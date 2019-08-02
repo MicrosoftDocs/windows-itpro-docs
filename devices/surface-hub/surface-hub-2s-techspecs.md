@@ -5,7 +5,7 @@ keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
 author: robmazz
-ms.manager: laurawi
+manager: laurawi
 ms.author: robmazz
 audience: Admin
 ms.topic: article

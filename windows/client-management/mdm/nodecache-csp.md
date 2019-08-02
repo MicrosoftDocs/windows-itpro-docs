@@ -19,7 +19,7 @@ The NodeCache configuration service provider is used to manage the client cache.
 
 NodeCache supports the comparison of hash values instead of actual node values:
 
-``` syntax
+```xml
 <Type xmlns="syncml:metinf">
 application/x-nodemon-sha256
 </type>
@@ -76,7 +76,7 @@ Supported operations are Get, Add, and Delete.
 
 Here's an example for setting the ExpectedValue to nonexistent.
 
-``` syntax
+```xml
 <Add>
    <CmdID>10</CmdID>
    <Item>
@@ -146,7 +146,7 @@ Supported operations are Add, Get, and Delete.
 
 Creating settings for node caching:
 
-``` syntax
+```xml
 <Add>
    <CmdID>2</CmdID>
    <Item>
@@ -222,7 +222,7 @@ Creating settings for node caching:
 
 Getting nodes under Provider ID MDMSRV1, cache version, changed nodes, node, expected value:
 
-``` syntax
+```xml
 <Get>
    <CmdID>18</CmdID>
    <Item>
@@ -267,7 +267,7 @@ Getting nodes under Provider ID MDMSRV1, cache version, changed nodes, node, exp
 
 Replacing the cache version, node URI, and expected value:
 
-``` syntax
+```xml
 <Replace>
    <CmdID>2</CmdID>
    <Item>
@@ -299,7 +299,7 @@ Replacing the cache version, node URI, and expected value:
 
 For AutoSetExpectedValue, a Replace operation with empty data will query the ./DevDetail/Ext/Microsoft/DeviceName.
 
-```syntax
+```xml
           <Add>
             <CmdID>2001</CmdID>
             <Item>
@@ -335,12 +335,12 @@ A Get operation on ./Vendor/MSFT/NodeCache/MDM%20SyncML%20Server/Nodes/20/Expect
 
 A Get operation on the ChangedNodesData returns an encoded XML. Here is example:
 
-```syntax
+```xml
 <Nodes><Node Id="10" Uri=""></Node><Node Id="20" Uri="./DevDetail/Ext/Microsoft/DeviceName">U09NRU5FV1ZBTFVF</Node></Nodes>
 ```
 It represents this:
 
-```syntax
+```xml
 <Nodes>
     <Node Id="10" Uri=""></Node>
     <Node Id="20" Uri="./DevDetail/Ext/Microsoft/DeviceName">U09NRU5FV1ZBTFVF</Node>

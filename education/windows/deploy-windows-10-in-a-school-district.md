@@ -615,7 +615,7 @@ Now that you have created your new Office 365 Education subscription, add the do
 
 #### To add additional domains and subdomains
 
-1. In the Office 365 admin center, in the list view, click **DOMAINS**.
+1. In the admin center, in the list view, click **DOMAINS**.
 
 2. In the details pane, above the list of domains, on the menu bar, click **Add domain**.
 
@@ -867,7 +867,7 @@ Now that you have created your new Office 365 Education subscription, you need t
 
 >**Note**&nbsp;&nbsp;If your institution has AD DS, don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
 
-You can use the Office 365 admin center to add individual Office 365 accounts manually—a reasonable process when you’re adding only a few users. If you have many users, however, you can automate the process by creating a list of those users, and then use that list to create user accounts (that is, bulk-add users).
+You can use the Microsoft 365 admin center to add individual Office 365 accounts manually—a reasonable process when you’re adding only a few users. If you have many users, however, you can automate the process by creating a list of those users, and then use that list to create user accounts (that is, bulk-add users).
 
 The bulk-add process assigns the same Office 365 Education license plan to all users on the list. Therefore, you must create a separate list for each license plan you recorded in Table 9. Depending on the number of faculty members who need to use the classroom, you may want to add the faculty Office 365 accounts manually; however, use the bulk-add process to add student accounts.
 
@@ -1247,7 +1247,7 @@ You can use Windows Deployment Services in conjunction with System Center Config
 
     To support PXE boot requests, you install the PXE service point site system role. Then, you must configure one or more distribution points to respond to PXE boot request.
     For more information about how to perform this step, see [Install site system roles for System Center Configuration Manager](https://technet.microsoft.com/library/mt704036.aspx), [Use PXE to deploy Windows over the network with System Center Configuration Manager](https://technet.microsoft.com/library/mt627940.aspx), and [Configuring distribution points to accept PXE requests](https://technet.microsoft.com/library/mt627944.aspx#BKMK_PXEDistributionPoint).
-3.	Configure the appropriate boot images (Windows PE images) to deploy from the PXE-enabled distribution point.
+3. Configure the appropriate boot images (Windows PE images) to deploy from the PXE-enabled distribution point.
 
     Before a device can start a boot image from a PXE-enabled distribution point, you must change the properties of the boot image to enable PXE booting. Typically, you create this boot image when you created your MDT task sequence in the Configuration Manager console.
 
@@ -1808,7 +1808,7 @@ For more information about how to:
 For more information about how to:
 <ul>
 <li>Create or modify security groups, see <a href="https://support.office.com/en-us/article/Create-an-Office-365-Group-in-the-admin-center-74a1ef8b-3844-4d08-9980-9f8f7a36000f?ui=en-US&amp;rs=en-001&amp;ad=US" data-raw-source="[Create an Office 365 Group in the admin center](https://support.office.com/en-us/article/Create-an-Office-365-Group-in-the-admin-center-74a1ef8b-3844-4d08-9980-9f8f7a36000f?ui=en-US&amp;rs=en-001&amp;ad=US)">Create an Office 365 Group in the admin center</a>.</li>
-<li>Manage group membership, see <a href="https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a" data-raw-source="[Manage Group membership in the Office 365 admin center](https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)">Manage Group membership in the Office 365 admin center</a>.</li>
+<li>Manage group membership, see <a href="https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a" data-raw-source="[Manage Group membership in the admin center](https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)">Manage Group membership in the admin center</a>.</li>
 </ul>
 </td>
 <td></td>

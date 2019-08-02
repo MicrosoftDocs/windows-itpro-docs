@@ -56,9 +56,9 @@ The Microsoft Defender ATP time zone is set by default to UTC.
 Setting the time zone also changes the times for all Microsoft Defender ATP views.
 To set the time zone:
 
-1.	Click the **Time zone** menu ![Time zone settings icon](images/atp-time-zone.png).
-2.	Select the **Timezone UTC** indicator.
-3.	Select **Timezone UTC** or your local time zone, for example -7:00.
+1. Click the **Time zone** menu ![Time zone settings icon](images/atp-time-zone.png).
+2. Select the **Timezone UTC** indicator.
+3. Select **Timezone UTC** or your local time zone, for example -7:00.
 
 ### Regional settings
 To apply different date formats for Microsoft Defender ATP, use regional settings for Internet Explorer (IE) and Microsoft Edge (Edge). If you're using another browser such as Google Chrome, follow the required steps to change the time and date settings for that browser. 

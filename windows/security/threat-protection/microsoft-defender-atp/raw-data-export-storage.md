@@ -27,7 +27,7 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 
 ## Before you begin:
 
-1. Create a [Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview) in your tenant.
+1. Create a [Storage account](https://docs.microsoft.com/azure/storage/common/storage-account-overview) in your tenant.
 2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to **Microsoft.insights****.
 
 ## Enable raw data streaming:
@@ -86,4 +86,4 @@ In order to get the data types for our events properties do the following:
 - [Overview of Advanced Hunting](overview-hunting.md)
 - [Microsoft Defender Advanced Threat Protection Streaming API](raw-data-export.md)
 - [Stream Microsoft Defender Advanced Threat Protection events to your Azure storage account](raw-data-export-storage.md)
-- [Azure Storage Account documentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)
+- [Azure Storage Account documentation](https://docs.microsoft.com/azure/storage/common/storage-account-overview)
