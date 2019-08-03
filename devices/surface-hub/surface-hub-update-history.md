@@ -32,7 +32,7 @@ Please refer to the “[Surface Hub Important Information](https://support.micro
 This update to the Surface Hub includes quality improvements and security fixes. Key updates to Surface Hub, not already outlined in [Windows 10 Update History](https://support.microsoft.com/help/4018124/windows-10-update-history), include:
 
 * Addresses an issue with log collection for Microsoft Surface Hub 2S.
-* Addresses an issue that prevents a user from signing in to a Microsoft Surface Hub device with an Azure Active Directory account. This issue occurs because a previous session did not end successfully.
+* Addresses an issue preventing a user from signing in to a Microsoft Surface Hub device with an Azure Active Directory account. This issue occurs because a previous session did not end successfully.
 
 Please refer to the [Surface Hub Admin guide](https://docs.microsoft.com/surface-hub/) for enabling/disabling device features and services.
 *[KB4503289](https://support.microsoft.com/help/4503289)
