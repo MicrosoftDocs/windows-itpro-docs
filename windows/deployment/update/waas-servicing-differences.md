@@ -89,7 +89,7 @@ Lastly, the cumulative update model directly impacts the public Preview releases
 > Only preview updates for the most recent release of Windows 10 are published to Windows Server Update Services (WSUS).  For customers using the WSUS channel and products such as System Center Configuration Manager that rely on it will not see preview updates for older versions of Windows 10.
 
 > [!NOTE]
-> Preview updates for Windows 10 are not named differently than their LCU counterparts and do not contain the word 'Preview'.  They can be identified by their release date (C or D week) and their classification as non-security updates.
+> Preview updates for Windows 10 are not named differently than their LCU counterparts and do not contain the word 'Preview'. They can be identified by their release date (C or D week) and their classification as non-security updates.
 
 ### Examples
 Windows 10 version 1709:
