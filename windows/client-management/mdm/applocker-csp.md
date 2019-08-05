@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: lomayor
-ms.date: 04/30/2018
+ms.date: 07/25/2019
 ---
 
 # AppLocker CSP
@@ -1681,119 +1681,145 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
           <Format xmlns="syncml:metinf">chr</Format>
         </Meta>
         <Data>
-  <RuleCollection Type="Exe" EnforcementMode="Enabled">
-    <FilePublisherRule Id="b005eade-a5ee-4f5a-be45-d08fa557a4b2" Name="MICROSOFT OFFICE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="de9f3461-6856-405d-9624-a80ca701f6cb" Name="MICROSOFT OFFICE 2003, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2003" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="ade1b828-7055-47fc-99bc-432cf7d1209e" Name="2007 MICROSOFT OFFICE SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="2007 MICROSOFT OFFICE SYSTEM" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="f6a075b5-a5b5-4654-abd6-731dacb40d95" Name="MICROSOFT OFFICE ONENOTE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE ONENOTE" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="12.0.9999.9999" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="0ec03b2f-e9a4-4743-ae60-6d29886cf6ae" Name="MICROSOFT OFFICE OUTLOOK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE OUTLOOK" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="12.0.9999.9999" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="7b272efd-4105-4fb7-9d40-bfa597c6792a" Name="MICROSOFT OFFICE 2013, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2013" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="89d8a4d3-f9e3-423a-92ae-86e7333e2662" Name="MICROSOFT ONENOTE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONENOTE" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
+<RuleCollection Type="Exe" EnforcementMode="Enabled">
+  <FilePublisherRule Id="b005eade-a5ee-4f5a-be45-d08fa557a4b2" Name="MICROSOFT OFFICE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
       <Exceptions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONENOTE" BinaryName="ONENOTE.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="EXCEL.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Exceptions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="5a2138bd-8042-4ec5-95b4-f990666fbf61" Name="MICROSOFT OUTLOOK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OUTLOOK" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="LYNC.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Conditions>
-      <Exceptions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OUTLOOK" BinaryName="OUTLOOK.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="LYNC99.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Exceptions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="3fc5f9c5-f180-435b-838f-2960106a3860" Name="MICROSOFT ONEDRIVE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONEDRIVE" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="MSOSYNC.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Conditions>
-      <Exceptions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONEDRIVE" BinaryName="ONEDRIVE.EXE">
-          <BinaryVersionRange LowSection="17.3.6386.0412" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="OCPUBMGR.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Exceptions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="17d988ef-073e-4d92-b4bf-f477b2ecccb5" Name="MICROSOFT OFFICE 2016, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="POWERPNT.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Conditions>
-      <Exceptions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="LYNC.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="UCMAPI.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="LYNC99.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="WINWORD.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="UCMAPI.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
-        </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="OCPUBMGR.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
-        </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="WINWORD.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
-        </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="EXCEL.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
-        </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="POWERPNT.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
-        </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="MSOSYNC.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
-        </FilePublisherCondition>
-      </Exceptions>
-    </FilePublisherRule>
-  </RuleCollection>
+      </Exceptions>	
+  </FilePublisherRule>
+  <FilePublisherRule Id="de9f3461-6856-405d-9624-a80ca701f6cb" Name="MICROSOFT OFFICE 2003, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2003" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="ade1b828-7055-47fc-99bc-432cf7d1209e" Name="2007 MICROSOFT OFFICE SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="2007 MICROSOFT OFFICE SYSTEM" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="f6a075b5-a5b5-4654-abd6-731dacb40d95" Name="MICROSOFT OFFICE ONENOTE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE ONENOTE" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="12.0.9999.9999" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="0ec03b2f-e9a4-4743-ae60-6d29886cf6ae" Name="MICROSOFT OFFICE OUTLOOK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE OUTLOOK" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="12.0.9999.9999" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="7b272efd-4105-4fb7-9d40-bfa597c6792a" Name="MICROSOFT OFFICE 2013, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2013" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="89d8a4d3-f9e3-423a-92ae-86e7333e2662" Name="MICROSOFT ONENOTE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONENOTE" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+    <Exceptions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONENOTE" BinaryName="ONENOTE.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+    </Exceptions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="5a2138bd-8042-4ec5-95b4-f990666fbf61" Name="MICROSOFT OUTLOOK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OUTLOOK" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+    <Exceptions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OUTLOOK" BinaryName="OUTLOOK.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+    </Exceptions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="3fc5f9c5-f180-435b-838f-2960106a3860" Name="MICROSOFT ONEDRIVE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONEDRIVE" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+    <Exceptions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONEDRIVE" BinaryName="ONEDRIVE.EXE">
+        <BinaryVersionRange LowSection="17.3.6386.0412" HighSection="*" />
+      </FilePublisherCondition>
+    </Exceptions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="17d988ef-073e-4d92-b4bf-f477b2ecccb5" Name="MICROSOFT OFFICE 2016, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+    <Exceptions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="LYNC.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="LYNC99.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="UCMAPI.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="OCPUBMGR.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="WINWORD.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="EXCEL.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="POWERPNT.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="MSOSYNC.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+    </Exceptions>
+  </FilePublisherRule>
+</RuleCollection>
         </Data>
       </Item>
     </Replace>
