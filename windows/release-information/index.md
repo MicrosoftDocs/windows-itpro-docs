@@ -13,11 +13,11 @@ ms.localizationpriority: high
 ---
 # Windows 10 release information
 
-Feature updates for Windows 10 are released twice a year, around March and September, via the Semi-Annual Channel and will be serviced with monthly quality updates for 18 months from the date of the release.
+Feature updates for Windows 10 are released twice a year, around March and September, via the Semi-Annual Channel. They will be serviced with monthly quality updates for 18 or 30 months from the date of the release, depending on the lifecycle policy.
 
 We recommend that you begin deployment of each Semi-Annual Channel release immediately as a targeted deployment to devices selected for early adoption and ramp up to full deployment at your discretion. This will enable you to gain access to new features, experiences, and integrated security as soon as possible.
 
-Starting with Windows 10, version 1809, feature updates for Windows 10 Enterprise and Education editions are serviced for 30 months from their release date. For information about servicing timelines, see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853).
+For information about servicing timelines, see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853).
 
 >[!NOTE]
 >Beginning with Windows 10, version 1903, this page will no longer list Semi-Annual Channel (Targeted) information for version 1903 and future feature updates. Instead, you will find a single entry for each Semi-Annual Channel release. For more information, see [this blog post](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523).
