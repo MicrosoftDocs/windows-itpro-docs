@@ -21,9 +21,6 @@ ms.reviewer:
 **Applies to**
 -   Windows 10, version 1703 or later
 
-> [!IMPORTANT]
-> The remote desktop with biometrics feature only works with certificate trust deployments.  The feature takes advantage of the redirected smart card capabilities of the remote desktop protocol.  Microsoft continues to investigate supporting this feature for key trust deployments. 
-
 Windows Hello for Business is the springboard to a world without passwords. It replaces username and password sign-in to Windows with strong user authentication based on an asymmetric key pair.
 
 This deployment guide is to guide you through deploying Windows Hello for Business, based on the planning decisions made using the Planning a Windows Hello for Business Deployment Guide. It provides you with the information needed to successfully deploy Windows Hello for Business in an existing environment.
@@ -50,6 +47,9 @@ Do not begin your deployment until the hosting servers and infrastructure (not r
 
 ## Deployment and trust models
 
+> [!IMPORTANT]
+> The remote desktop with biometrics feature only works with certificate trust deployments.  The feature takes advantage of the redirected smart card capabilities of the remote desktop protocol.  Microsoft continues to investigate supporting this feature for key trust deployments. 
+
 Windows Hello for Business has two deployment models: Hybrid and On-premises. Each deployment model has two trust models: *Key trust* or *certificate trust*.
 
 Hybrid deployments are for enterprises that use Azure Active Directory. On-premises deployments are for enterprises who exclusively use on-premises Active Directory. Remember that the environments that use Azure Active Directory must use the hybrid deployment model for all domains in that forest.
@@ -59,16 +59,20 @@ The trust model determines how you want users to authenticate to the on-premises
 * The certificate-trust model is for enterprise that *do* want to issue end-entity certificates to their users and have the benefits of certificate expiration and renewal, similar to how smart cards work today. 
 * The certificate trust model also supports enterprises which are not ready to deploy Windows Server 2016 Domain Controllers.
 
->[!NOTE]
->RDP does not support authentication with Windows Hello for business key trust deployments. RDP is only supported with certificate trust deployments at this time.
+For additional information regarding directory sync, including hybrid deployments (Azure Active Directory) using cert and key trusts models see [Hybrid Windows Hello for Business Prerequisites](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-prereqs#directory-synchronization) and [Hybrid Key trust Windows Hello for Business Prerequisites](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-prereqs#directory-synchronization).
 
-Following are the various deployment guides included in this topic:
+>[!NOTE]
+>RDP does not support authentication with Windows Hello for business key trust deployments. RDP is only supported with certificate trust deployments at this time. 
+
+Following are the various deployment guides and models included in this topic:
 - [Hybrid Azure AD Joined Key Trust Deployment](hello-hybrid-key-trust.md)
 - [Hybrid Azure AD Joined Certificate Trust Deployment](hello-hybrid-cert-trust.md)
 - [Azure AD Join Single Sign-on Deployment Guides](hello-hybrid-aadj-sso.md)
 - [On Premises Key Trust Deployment](hello-deployment-key-trust.md)
 - [On Premises Certificate Trust Deployment](hello-deployment-cert-trust.md)
 
+> [!NOTE]
+> This article covers all deployment models including on-premises. On-premises deployments, both key and certificate trust, use the Azure MFA server where the credentials are not synchronized to Azure Active Directory. For more information see [Validate and Deploy Multifactor Authentication Services (MFA)](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-key-trust-validate-deploy-mfa) and [Validate and Deploy Multifactor Authentication Services (MFA)](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-validate-deploy-mfa).
 
 ## Provisioning
 
