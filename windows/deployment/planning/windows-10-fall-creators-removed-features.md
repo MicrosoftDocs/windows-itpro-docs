@@ -30,7 +30,7 @@ Replaced by the Country and Operator Settings Asset (COSA) database. For more in
 - [COSA – FAQ](/windows-hardware/drivers/mobilebroadband/cosa---faq)
 
 ### Enhanced Mitigation Experience Toolkit (EMET)
-Removed from the image, and you're blocked from using it. Consider using the [Exploit Protection feature of Windows Defender Exploit Guard](/windows/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard) as a replacement. See the [Announcing Windows 10 Insider Preview Build 16232 for PC + Build 15228 for Mobile](https://blogs.windows.com/windowsexperience/2017/06/28/announcing-windows-10-insider-preview-build-16232-pc-build-15228-mobile/) for details.
+Removed from the image, and you're blocked from using it. Consider using the [Exploit Protection feature](/windows/threat-protection/windows-defender-exploit-guard/exploit-protection) as a replacement. See the [Announcing Windows 10 Insider Preview Build 16232 for PC + Build 15228 for Mobile](https://blogs.windows.com/windowsexperience/2017/06/28/announcing-windows-10-insider-preview-build-16232-pc-build-15228-mobile/) for details.
 
 ### Outlook Express
 Removed this non-functional code.

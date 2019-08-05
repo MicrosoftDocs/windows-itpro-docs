@@ -23,7 +23,7 @@ For more information about a listed feature or functionality and its replacemen
 |----------|---------|------------|
 |**3D Builder app**  <br> No longer installed by default. Consider using Print 3D and Paint 3D in its place. However, 3D Builder is still available for download from the Windows Store. | X | |
 |**Apndatabase.xml**  <br>    For more information about the replacement database, see the following Hardware Dev Center articles: <br> [MO Process to update COSA](/windows-hardware/drivers/mobilebroadband/planning-your-apn-database-submission) <br> [COSA FAQ](/windows-hardware/drivers/mobilebroadband/cosa---faq) | X | |
-|**Enhanced Mitigation Experience Toolkit (EMET)**  <br>Use will be blocked. Consider using the [Exploit Protection](https://blogs.windows.com/windowsexperience/2017/06/28/announcing-windows-10-insider-preview-build-16232-pc-build-15228-mobile/#fMH3bUDAb5HEstZ5.97) feature of Windows Defender Exploit Guard as a replacement.| X | |
+|**Enhanced Mitigation Experience Toolkit (EMET)**  <br>Use will be blocked. Consider using the [Exploit Protection](https://blogs.windows.com/windowsexperience/2017/06/28/announcing-windows-10-insider-preview-build-16232-pc-build-15228-mobile/#fMH3bUDAb5HEstZ5.97) feature as a replacement.| X | |
 |**IIS 6 Management Compatibility**  <br> We recommend that users use alternative scripting tools and a newer management console. | | X |
 |**IIS Digest Authentication**  <br> We recommend that users use alternative authentication methods.| | X |
 |**Microsoft Paint**  <br> Will be available through the Windows Store. Functionality integrated into Paint 3D.| | X |
