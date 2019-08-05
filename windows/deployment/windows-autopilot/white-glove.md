@@ -8,6 +8,7 @@ ms.localizationpriority: low
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
+manager: laurawi
 ms.author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -37,6 +38,9 @@ In addition to [Windows Autopilot requirements](windows-autopilot-requirements.m
 - An Intune subscription.
 - Physical devices that support TPM 2.0 and device attestation; virtual machines are not supported.  The white glove provisioning process leverages Windows Autopilot self-deploying capabilities, hence the TPM 2.0 requirements.
 - Physical devices with Ethernet connectivity; Wi-fi connectivity is not supported due to the requirement to choose a language, locale, and keyboard to make that Wi-fi connection; doing that in a pre-provisioning process could prevent the user from choosing their own language, locale, and keyboard when they receive the device.
+
+>[!IMPORTANT]
+>Because the OEM or vendor performs the white glove process, this <u>doesn’t require access to an end-user's on-prem domain infrastructure</u>. This is unlike a typical hybrid Azure AD-joined scenario because rebooting the device is postponed. The device is resealed prior to the time when connectivity to a domain controller is expected, and the domain network is contacted when the device is unboxed on-prem by the end-user.
 
 ## Preparation
 

@@ -6,6 +6,7 @@ ms.prod: surface-hub
 ms.sitesec: library
 author: robmazz
 ms.author: robmazz
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019
@@ -18,9 +19,9 @@ You can install additional apps to fit your team or organization's needs.
 
 ## Developer guidelines
 
-- Surface Hub only runs [Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/windows/uwp/get-started/whats-a-uwp). Apps created using the [Desktop App Converter](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) will not run on Surface Hub. See a [list of apps that work with Surface Hub](https://support.microsoft.com/help/4040382/surface-Apps-that-work-with-Microsoft-Surface-Hub).
+- Surface Hub only runs [Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/windows/uwp/get-started/whats-a-uwp). Apps created using the [Desktop App Converter](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) will not run on Surface Hub.
 - Apps must be targeted for the [Universal device family](https://msdn.microsoft.com/library/windows/apps/dn894631) or Windows Team device family.
-- Surface Hub only supports [offline-licensed apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) from Microsoft Store for Business.
+- Surface Hub only supports [offline-licensed apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) from [Microsoft Store for Business](https://businessstore.microsoft.com/store).
 - By default, apps must be Store-signed to be installed. During testing and development, you can also choose to run developer-signed UWP apps by placing the device in developer mode.
 - When developing and submitting apps to the Microsoft Store, set Device family availability and Organizational licensing options to ensure that apps are available to run on Surface Hub.
 - You need admin credentials to install apps on Surface Hub. Designed for use in meeting rooms and other shared spaces, Surface Hub prevents regular users from accessing the Microsoft Store to download and install apps.

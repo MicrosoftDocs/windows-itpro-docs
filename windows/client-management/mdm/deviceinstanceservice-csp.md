@@ -70,7 +70,7 @@ The parent node to group SIM2 specific information in case of dual SIM mode.
 
 The following sample shows how to query roaming status and phone number on the device.
 
-``` syntax
+```xml
 <Get>
       <CmdID>2</CmdID>
       <Item>
@@ -88,7 +88,7 @@ The following sample shows how to query roaming status and phone number on the d
 
 Response from the phone.
 
-``` syntax
+```xml
 <Results>
    <CmdID>3</CmdID>
    <MsgRef>1</MsgRef>

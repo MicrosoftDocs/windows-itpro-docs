@@ -648,7 +648,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 Example
 
-``` syntax
+```xml
         <Replace>
             <CmdID>$CmdID$</CmdID>
             <Item>
@@ -919,7 +919,7 @@ The following screenshots of the administrator console shows the list of update 
 
 Set auto update to notify and defer.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
     <SyncBody>
         <Replace xmlns="">

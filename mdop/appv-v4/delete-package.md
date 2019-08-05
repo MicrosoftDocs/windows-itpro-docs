@@ -19,7 +19,7 @@ ms.date: 06/16/2016
 
 Removes a package record and the applications associated with it.
 
-` SFTMIME DELETE PACKAGE:package-name                 [/LOG log-pathname | /CONSOLE | /GUI]`
+`SFTMIME DELETE PACKAGE:package-name                 [/LOG log-pathname | /CONSOLE | /GUI]`
 
 <table>
 <colgroup>

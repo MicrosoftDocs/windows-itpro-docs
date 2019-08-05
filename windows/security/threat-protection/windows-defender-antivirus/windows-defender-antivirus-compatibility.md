@@ -24,9 +24,9 @@ manager: dansimp
 
 Windows Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10.
 
-However, on endpoints and devices that are protected with a non-Microsoft antivirus or antimalware app, Windows Defender Antivirus will automatically disable itself. You can then choose to enable an optional, limited protection feature, called [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md).
+However, on endpoints and devices that are protected with a non-Microsoft antivirus or antimalware app, Windows Defender Antivirus will automatically disable itself.
 
-If you are also using Microsoft Defender Advanced Threat Protection, then Windows Defender AV will enter a passive mode.
+If you are also using Microsoft Defender Advanced Threat Protection, then Windows Defender AV will enter a passive mode. Important: Real time protection and and threats will not be remediated by Windows Defender AV.
 
 The following matrix illustrates the states that Windows Defender AV will enter when third-party antivirus products or Microsoft Defender ATP are also used. 
 

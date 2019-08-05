@@ -1210,33 +1210,50 @@ Most restricted value is 0.
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>DeviceLock policies supported by Windows Holographic
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>DeviceLock policies supported by HoloLens 2
 
+- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
 - [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+- [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)
+- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
 - [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
 - [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
-- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
-- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
-- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
 - [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
-- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
-- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
-<!--EndHoloLens-->
+- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
+
+<!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>DeviceLock policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>DeviceLock policies supported by HoloLens (1st gen) Commercial Suite
 
+- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
 - [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
 - [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
 - [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
-- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
-- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
-- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
 - [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
-- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
-- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
 <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>DeviceLock policies supported by HoloLens (1st gen) Development Edition
+
+- [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+- [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+- [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+- [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+- [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+- [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+- [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+- [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
+- [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
+
+<!--EndHoloLens-->
 
 <hr/>
 
@@ -1247,3 +1264,4 @@ Footnotes:
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.

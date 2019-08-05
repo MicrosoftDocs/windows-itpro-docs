@@ -78,7 +78,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
 4. Select the **Immersive Reader** button.
 
-   ![Word Online's Immersive Reader](images/word_online_immersive_reader.png)
+   ![Word's Immersive Reader](images/word_online_immersive_reader.png)
 
 5. Press the **Play** button to hear text read aloud.
 
@@ -86,7 +86,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
    | Text to Speech | Text Preferences | Grammar Options | Line Focus |
    | :------------: | :--------------: | :-------------: | :--------: |
-   | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
+   | ![Word Text to Speech](images/wordonline_tts.png) | ![Word Text Preferences](images/wordonline_text_preferences.png) | ![Word Grammar Options](images/wordonline_grammar_options.png) | ![Word Line Focus](images/wordonline_line_focus.png) |
 
 </br>
 </br>
@@ -182,9 +182,9 @@ Use video to create a project summary.
 
 9. Select the first card in the Storyboard (the video of the project materials) and select **Text**, type a title in, a text style, a layout, and select **Done**.
 
-10.	Select the third card in the Storyboard (the video of the children assembling the maze) and select **Trim**.  Drag the trim handle on the left to shorten the duration of the clip and select **Done**.
+10. Select the third card in the Storyboard (the video of the children assembling the maze) and select **Trim**.  Drag the trim handle on the left to shorten the duration of the clip and select **Done**.
 
-11.	Select the last card on the Storyboard and select **3D effects**.
+11. Select the last card on the Storyboard and select **3D effects**.
     1. Position the playback indicator to be roughly 1 second into the video clip, or when the boy moves down to examine the laser.
     2. Find the **lightning bolt** effect and click or drag to add it to the scene.  Rotate, scale, and position the effect so it looks like the lightning is coming out of the laser beam and hitting the black back of the mirror.
     3. Position the blue anchor over the end of the laser pointer in the video and toggle on **Attach to a point** for the lightning bolt effect to anchor the effect in the scene.

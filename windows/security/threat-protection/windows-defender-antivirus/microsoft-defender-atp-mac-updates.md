@@ -34,7 +34,7 @@ If you decide to deploy updates by using your software distribution tools, you s
 
 ## Use msupdate
 
-MAU includes a command line tool, called *msupdate*, that is designed for IT administrators so that they have more precise control over when updates are applied. Instructions for how to use this tool can be found in [Update Office for Mac by using msupdate](https://docs.microsoft.com/en-us/deployoffice/mac/update-office-for-mac-using-msupdate).
+MAU includes a command line tool, called *msupdate*, that is designed for IT administrators so that they have more precise control over when updates are applied. Instructions for how to use this tool can be found in [Update Office for Mac by using msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).
 
 In MAU, the application identifier for Microsoft Defender ATP for Mac is *WDAV00*. To download and install the latest updates for Microsoft Defender ATP for Mac, execute the following command from a Terminal window:
 
@@ -53,7 +53,7 @@ The channel determines the type and frequency of updates that are offered throug
 The `Production` channel contains the most stable version of the product.
 
 >[!TIP]
->Microsoft recommends keeping some devices in your enterprise either in `InsiderFast` or `External` in order to preview new features and provide early feedback.
+>In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `InsiderFast` or `External`.
 
 |||
 |:---|:---|
@@ -141,4 +141,4 @@ To configure MAU, you can deploy this configuration profile from the management 
 
 ## Resources
 
-- [msupdate reference](https://docs.microsoft.com/en-us/deployoffice/mac/update-office-for-mac-using-msupdate)
+- [msupdate reference](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate)
