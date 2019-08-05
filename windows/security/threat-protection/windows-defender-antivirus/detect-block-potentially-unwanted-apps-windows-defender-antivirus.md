@@ -41,13 +41,13 @@ These applications can increase the risk of your network being infected with mal
 
 Windows Defender Antivirus blocks detected PUA files and attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantined.
 
-When a PUA is detected on an endpoint, Windows Defender Antivirus presents a notification to the user ([unless notifications have been disabled](configure-notifications-windows-defender-antivirus.md)) in the same format as normal threat detections (prefaced with "PUA:"). 
+When a PUA is detected on an endpoint, Windows Defender Antivirus presents a notification to the user ([unless notifications have been disabled](configure-notifications-windows-defender-antivirus.md)) in the same format as normal threat detections (prefaced with "PUA:").
 
 They will also appear in the usual [quarantine list in the Windows Security app](windows-defender-security-center-antivirus.md#detection-history).
 
 ## View PUA events
 
-PUA events are reported in the Windows Event Viewer, but not in System Center Configuration Manager or Intune. 
+PUA events are reported in the Windows Event Viewer, but not in System Center Configuration Manager or Intune.
 
 You can turn on email notifications for PUA detections.
 
@@ -61,11 +61,11 @@ You can also use the PUA audit mode to detect PUA without blocking them. The det
 
 This feature is useful if your company is conducting an internal software security compliance check and you'd like to avoid any false positives.
 
-**Use Intune to configure PUA protection**
+### Use Intune to configure PUA protection
 
 See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
 
-**Use Configuration Manager to configure PUA protection:**
+### Use Configuration Manager to configure PUA protection
 
 PUA protection is enabled by default in System Center Configuration Manager (current branch), including version 1606 and later.
 
@@ -98,7 +98,7 @@ Use the following cmdlet:
 Set-MpPreference -PUAProtection
 ```
 
-Setting the value for this cmdlet to `Enabled` will turn the feature on if it has been disabled. 
+Setting the value for this cmdlet to `Enabled` will turn the feature on if it has been disabled.
 
 Setting `AuditMode` will detect PUAs but will not block them.
 
