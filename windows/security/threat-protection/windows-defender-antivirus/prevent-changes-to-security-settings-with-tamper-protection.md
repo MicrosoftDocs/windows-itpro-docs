@@ -61,9 +61,10 @@ You must have appropriate admin permissions on your machine to perform the follo
 > 
 > Once you’ve made this update, Tamper Protection will continue to protect your registry settings, and will also log attempts to modify them without returning errors.
 
-## Turn Tamper Protection on (or off) in the Microsoft Defender Security Center
+## Turn Tamper Protection on (or off) in the Microsoft 365 Device Management portal
 
 You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task. 
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). 
-2. Next to **Tamper Protection**, select **Enable**.
+1. Go to the Microsoft 365 Device Management portal ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) and sign in with your work or school account. 
+2. Select Device configuration > Profiles.
+1. 
