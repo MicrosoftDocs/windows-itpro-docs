@@ -2,7 +2,7 @@
 title: Microsoft Edge - Interoperability and enterprise mode guidance
 description: Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or included on your Enterprise Mode Site List. If you are running web apps that continue to use ActiveX controls, x-ua-compatible headers, or legacy document modes, you need to keep running them in IE11.  IE11 offers additional security, manageability, performance, backward compatibility, and modern standards support.
 ms.localizationpriority: medium
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: eravena
 author: eavena
 ms.date: 10/02/2018

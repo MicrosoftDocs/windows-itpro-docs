@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: b0388c04-2584-4b6d-a7a8-4e0476773a80
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Virtualization and compatibility with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

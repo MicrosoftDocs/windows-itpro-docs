@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 63a7ef4a-6de2-4d08-aaba-0479131e3406
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Group Policy, Advanced Group Policy Management (AGPM), and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

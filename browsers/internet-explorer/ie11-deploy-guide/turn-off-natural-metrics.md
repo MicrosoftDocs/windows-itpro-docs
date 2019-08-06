@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: e31a27d7-662e-4106-a3d2-c6b0531961d5
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Fix font rendering problems by turning off natural metrics (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

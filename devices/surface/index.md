@@ -8,7 +8,7 @@ ms.author: robmazz
 manager: laurawi
 ms.topic: hub-page
 keywords: Microsoft Surface, Microsoft Surface Hub, Surface documentation
-localization_priority: Normal
+localization_priority: High
 audience: ITPro
 ms.prod: Surface
 description: Learn about Microsoft Surface and Surface Hub devices.
