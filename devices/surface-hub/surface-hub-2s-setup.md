@@ -98,4 +98,3 @@ If you insert a USB thumb drive with a provisioning package into one of the USB 
     ![* Select a device account and friendly name from your configuration file*](images/sh2-run14.png) <br>
 
 4. Follow the instructions to complete first time Setup.
-

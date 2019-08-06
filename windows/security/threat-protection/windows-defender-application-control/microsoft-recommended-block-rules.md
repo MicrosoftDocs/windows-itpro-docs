@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 author: dansimp
+audience: ITPro
 ms.date: 04/09/2019
 ms.reviewer: 
 manager: dansimp
@@ -149,6 +150,11 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="65535.65535.65535.65535" /> 
   <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="65535.65535.65535.65535" />   
   <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />  
+  <Deny ID="ID_DENY_MSBUILD_DLL" FriendlyName="MSBuild.dll" FileName="MSBuild.dll" MinimumFileVersion="65535.65535.65535.65535" />
+  <Deny ID="ID_DENY_DOTNET" FriendlyName="dotnet.exe" FileName="dotnet.exe" MinimumFileVersion="65535.65535.65535.65535" />
+  <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
+  <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
+
   <!-- msxml3.dll pick correct version based on release you are supporting -->
   <!-- msxml6.dll pick correct version based on release you are supporting -->     
   <!-- jscript9.dll pick correct version based on release you are supporting -->
@@ -885,6 +891,10 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
   <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
   <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
+  <FileRuleRef RuleID="ID_DENY_MSBUILD_DLL" /> 
+  <FileRuleRef RuleID="ID_DENY_DOTNET" /> 
+  <FileRuleRef RuleID="ID_DENY_MS_BUILD" /> 
+  <FileRuleRef RuleID="ID_DENY_MS_BUILD_FMWK" /> 
   <FileRuleRef RuleID="ID_DENY_D_1"/>
   <FileRuleRef RuleID="ID_DENY_D_2"/> 
   <FileRuleRef RuleID="ID_DENY_D_3"/> 
@@ -1499,6 +1509,5 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <CiSigners /> 
   <HvciOptions>0</HvciOptions> 
   </SiPolicy>
-
-  ```
+```
 <br />

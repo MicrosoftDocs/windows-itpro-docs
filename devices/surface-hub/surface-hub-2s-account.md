@@ -21,9 +21,9 @@ Unlike standard Room mailboxes that remain disabled by default, you need to enab
 
 Create the account using the Microsoft 365 admin center or by using PowerShell. You can use Exchange Online PowerShell to configure specific features including: 
 
--  Calendar processing for every Surface Hub device account.
--  Custom auto replies to scheduling requests.
--  If the default ActiveSync mailbox policy has already been modified by someone else or another process, you will likely have to create and assign a new ActiveSync mailbox policy 
+- Calendar processing for every Surface Hub device account.
+- Custom auto replies to scheduling requests.
+- If the default ActiveSync mailbox policy has already been modified by someone else or another process, you will likely have to create and assign a new ActiveSync mailbox policy 
 
 ## Create account using Microsoft 365 admin center
 
@@ -53,6 +53,7 @@ Create the account using the Microsoft 365 admin center or by using PowerShell. 
 Instead of using the Microsoft Admin Center portal, you can create the account using PowerShell.
 
 ### Connect to Exchange Online PowerShell
+
 ```
 $365Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Credential (Get-Credential) -Authentication Basic –AllowRedirection $ImportResults = Import-PSSession $365Session
 ```
