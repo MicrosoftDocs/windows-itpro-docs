@@ -2,7 +2,7 @@
 title: Configure VDA for Windows 10 Subscription Activation
 ms.reviewer: 
 manager: laurawi
-ms.author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
 description: How to enable Windows 10 Enterprise E3 and E5 subscriptions for VDA
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
