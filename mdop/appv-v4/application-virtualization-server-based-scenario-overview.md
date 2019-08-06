@@ -19,7 +19,7 @@ ms.date: 06/16/2016
 
 If you plan to use a server-based deployment scenario for your Microsoft Application Virtualization environment, it is important to understand the differences between the *Application Virtualization Management Server* and the *Application Virtualization Streaming Server*. This topic describes those differences and also provides information about package delivery methods, transmission protocols, and external components that you will need to consider as you proceed with your deployment.
 
-##  Application Virtualization Management Server
+## Application Virtualization Management Server
 
 
 The Application Virtualization Management Server performs both the publishing function and the streaming function. The server publishes application icons, shortcuts, and file type associations to the App-V clients for authorized users. When user requests for applications are received the server streams that data on-demand to authorized users using RTSP or RTSPS protocols. In most configurations using this server, one or more Management Servers share a common data store for configuration and package information.
@@ -28,7 +28,7 @@ The Application Virtualization Management Servers use Active Directory groups to
 
 Because the Application Virtualization Management Servers stream applications to end-users on demand, these servers are ideally suited for system configurations that have reliable, high-bandwidth LANs.
 
-##  Application Virtualization Streaming Server
+## Application Virtualization Streaming Server
 
 
 The Application Virtualization Streaming Server delivers the same streaming and package upgrade capabilities provided by the Management Server, but without its Active Directory or SQL Server requirements. However, the Streaming Server does not have a publishing service, nor does it have licensing or metering capabilities. The publishing service of a separate App-V Management Server is used in conjunction with the App-V Streaming Server. The App-V Streaming Server addresses the needs of businesses that want to use Application Virtualization in multiple locations with the streaming capabilities of the classic server configuration but might not have the infrastructure to support App-V Management Servers in every location.

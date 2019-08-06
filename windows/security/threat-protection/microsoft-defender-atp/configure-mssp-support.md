@@ -108,7 +108,7 @@ It is recommended that groups are created for MSSPs to make authorization access
 As a MSSP customer, you can always remove or modify the permissions granted to the MSSP by updating the Azure AD user groups. 
 
  
-##  Access the Windows Defender Security Center MSSP customer portal
+## Access the Windows Defender Security Center MSSP customer portal
 
 >[!NOTE] 
 >These set of steps are directed towards the MSSP. 

@@ -14,7 +14,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-#  Upgrade Surface devices to Windows 10 with Microsoft Deployment Toolkit
+# Upgrade Surface devices to Windows 10 with Microsoft Deployment Toolkit
 
 #### Applies to
 * Surface Pro 3
