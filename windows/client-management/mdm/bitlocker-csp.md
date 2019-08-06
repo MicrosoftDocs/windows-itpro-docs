@@ -6,14 +6,11 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: lomayor
-ms.date: 05/02/2019
+ms.date: 08/06/2019
 ms.reviewer: 
 manager: dansimp
 ---
 # BitLocker CSP
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it is also supported in Windows 10 Pro.
 
@@ -129,8 +126,8 @@ Encryptable fixed data volumes are treated similarly to OS volumes. However, fix
 
 The following list shows the supported values:
 
--   0 – Disable. If the policy setting is not set or is set to 0, the device's enforcement status will not be checked, but the device encryption will still be on.
--   1 (default) – Enable. The device's enforcement status will be checked. Setting this policy to 1 will trigger encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).  
+-   0 (default) – Disable. If the policy setting is not set or is set to 0, the device's enforcement status will not be checked. In other words, the policy will not enforce encryption and it will not decrypt encrypted volumes.
+-   1 – Enable. The device's enforcement status will be checked. Setting this policy to 1 will trigger encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).  
 
 If you want to disable this policy use the following SyncML:
 
