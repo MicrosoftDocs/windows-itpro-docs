@@ -92,12 +92,12 @@
 
 ##### [Investigate entities using Live response]()
 ###### [Investigate entities on machines](microsoft-defender-atp/live-response.md)
-######[Live response command examples](microsoft-defender-atp/live-response-command-examples.md)
+###### [Live response command examples](microsoft-defender-atp/live-response-command-examples.md)
 
 ### [Automated investigation and remediation]()
 #### [Automated investigation and remediation overview](microsoft-defender-atp/automated-investigations.md)
 #### [Learn about the automated investigation and remediation dashboard](microsoft-defender-atp/manage-auto-investigation.md)
-#####[Manage actions related to automated investigation and remediation](microsoft-defender-atp/auto-investigation-action-center.md)
+##### [Manage actions related to automated investigation and remediation](microsoft-defender-atp/auto-investigation-action-center.md)
 
 ### [Secure score](microsoft-defender-atp/overview-secure-score.md)
 ### [Threat analytics](microsoft-defender-atp/threat-analytics.md)
