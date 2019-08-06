@@ -1892,7 +1892,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 
 |New or updated topic | Description|
 |--- | ---|
-|[Enroll a Windows 10 device automatically using Group Policy](enroll-a-windows-10-device-automatically-using-group-policy.md)|Enahnced the article to include additional reference links and the following two topics:<br>Verify auto-enrollment requirements and settings, Troubleshoot auto-enrollment of devices.|
+|[Enroll a Windows 10 device automatically using Group Policy](enroll-a-windows-10-device-automatically-using-group-policy.md)|Enhanced the article to include additional reference links and the following two topics:<br>Verify auto-enrollment requirements and settings, Troubleshoot auto-enrollment of devices.|
 
 ### July 2019
 
