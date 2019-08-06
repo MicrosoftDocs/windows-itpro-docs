@@ -39,6 +39,8 @@ To complete this procedure, you must be logged on as a member of the built-in Ad
     -   To audit failure events, click **Fail.**
     -   To audit all events, click **All.**
 
+ 
+
 6.  In the **Applies to** box, select the object(s) that the audit of events will apply to. These include:
  
     -   **This folder only**
@@ -46,8 +48,8 @@ To complete this procedure, you must be logged on as a member of the built-in Ad
     -   **This folder and subfolders**
     -   **This folder and files**
     -   **Subfolders and files only**
-    -   **Subfolders only**
-    -   **Files only**
+    -   **Subfolders only** 
+     -   **Files only**
  
 7.  By default, the selected **Basic Permissions** to audit are the following:
     -   **Read and execute**
