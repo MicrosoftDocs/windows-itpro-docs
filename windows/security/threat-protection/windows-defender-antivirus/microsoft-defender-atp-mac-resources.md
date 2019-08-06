@@ -94,7 +94,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Protection   |Do a quick scan                            |`mdatp --scan --quick`                                                 |
 |Protection   |Do a full scan                             |`mdatp --scan --full`                                                  |
 |Protection   |Cancel an ongoing on-demand scan           |`mdatp --scan --cancel`                                                |
-|Protection   |Request a definition update                |`mdatp --definition-update`                                            |
+|Protection   |Request a security intelligence update                |`mdatp --definition-update`                                            |
 
 ## Microsoft Defender ATP portal information
 
