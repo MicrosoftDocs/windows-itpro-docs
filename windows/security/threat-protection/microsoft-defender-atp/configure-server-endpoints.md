@@ -140,7 +140,7 @@ Agent Resource    |    Ports
 To onboard Windows Server, version 1803 or Windows Server 2019, please refer to the supported methods and versions below.
 
 >[!NOTE]
->The Onboarding package for Windows Server 2019 through System Center Configuration Manager currently ships a script. For more information on how to deploy scripts in System Center Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.comsccm/apps/deploy-use/packages-and-programs).
+>The Onboarding package for Windows Server 2019 through System Center Configuration Manager currently ships a script. For more information on how to deploy scripts in System Center Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
 
 Supported tools include:
 - Local script
