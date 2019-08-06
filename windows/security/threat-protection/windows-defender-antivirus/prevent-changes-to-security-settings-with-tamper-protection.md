@@ -11,8 +11,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ---
 
 # Protect security settings with tamper protection
@@ -46,9 +46,17 @@ Tamper Protection doesn't prevent you from viewing your security settings, or yo
 > [!NOTE]
 > On computers running Windows 10 Enterprise E5, users can't change the Tamper Protection setting.
 
-## Turn Tamper Protection on (or off) in the Windows Security app
+## Turn Tamper Protection on (or off) for your organization 
 
-You must have appropriate admin permissions on your machine to perform the following task.
+To turn Tamper Protection on (or off), use the Microsoft 365 Device Management portal. You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task. 
+
+1. Go to the Microsoft 365 Device Management portal ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) and sign in with your work or school account. 
+2. Select Device configuration > Profiles.
+3. 
+
+## Turn Tamper Protection on (or off) for an individual machine
+
+If you are a home user, or you are not subject to settings managed by a security team, you can use the Windows Security app to turn Tamper Protection on or off. You must have appropriate admin permissions on your machine to perform the following task.
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 2. Select **Virus & threat protection**, then select **Virus & threat protection settings**.
@@ -60,11 +68,3 @@ You must have appropriate admin permissions on your machine to perform the follo
 > To help ensure that Tamper Protection doesn’t interfere with third-party security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later.
 > 
 > Once you’ve made this update, Tamper Protection will continue to protect your registry settings, and will also log attempts to modify them without returning errors.
-
-## Turn Tamper Protection on (or off) in the Microsoft 365 Device Management portal
-
-You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task. 
-
-1. Go to the Microsoft 365 Device Management portal ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) and sign in with your work or school account. 
-2. Select Device configuration > Profiles.
-1. 
