@@ -31,7 +31,7 @@ If you can reproduce a problem, please increase the logging level, run the syste
 1. Increase logging level:
 
    ```bash
-   mavel-mojave:~ testuser$ mdatp --log-level verbose
+   mdatp --log-level verbose
    Creating connection to daemon
    Connection established
    Operation succeeded
@@ -39,19 +39,18 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 2. Reproduce the problem
 
-3. Run `mdatp --diagnostic --create` to backup Microsoft Defender ATP's logs. The command will print out location with generated zip file.
+3. Run `mdatp --diagnostic --create` to backup Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
 
    ```bash
-   mavel-mojave:~ testuser$ mdatp --diagnostic --create
+   mdatp --diagnostic --create
    Creating connection to daemon
    Connection established
-   "/Library/Application Support/Microsoft/Defender/wdavdiag/d85e7032-adf8-434a-95aa-ad1d450b9a2f.zip"
    ```
 
 4. Restore logging level:
 
    ```bash
-   mavel-mojave:~ testuser$ mdatp --log-level info
+   mdatp --log-level info
    Creating connection to daemon
    Connection established
    Operation succeeded
@@ -95,7 +94,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Protection   |Do a quick scan                            |`mdatp --scan --quick`                                                 |
 |Protection   |Do a full scan                             |`mdatp --scan --full`                                                  |
 |Protection   |Cancel an ongoing on-demand scan           |`mdatp --scan --cancel`                                                |
-|Protection   |Request a definition update                |`mdatp --definition-update`                                            |
+|Protection   |Request a security intelligence update                |`mdatp --definition-update`                                            |
 
 ## Microsoft Defender ATP portal information
 
@@ -117,8 +116,3 @@ In the Microsoft Defender ATP portal, you'll see two categories of information:
   - Computer model
   - Processor architecture
   - Whether the device is a virtual machine
-
-## Known issues
-
-- Full Microsoft Defender ATP integration is not available yet.
-- Centrally managed uninstall via Intune is still in development. As an alternative, manually uninstall Microsoft Defender ATP for Mac from each client device.

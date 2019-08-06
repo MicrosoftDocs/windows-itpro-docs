@@ -6,6 +6,7 @@ ms.prod: surface-hub
 ms.sitesec: library
 author: robmazz
 ms.author: robmazz
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019
@@ -19,7 +20,7 @@ Password-less phone sign-in simplifies signing-in to your meetings and files on 
 > [!NOTE]
 > Password-less phone sign-in requires that your primary email address must match your UPN.
 
-## To set up password-less phone sign-in 
+## To set up password-less phone sign-in
 
 1. Download the [Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator) app for iPhone or Android to your phone.
 2. From your PC, go to [https://aka.ms/MFASetup](https://aka.ms/MFASetup) , sign in with your account, and select **Next.**
@@ -39,4 +40,4 @@ Password-less phone sign-in simplifies signing-in to your meetings and files on 
 3. If prompted, enter the PIN or biometric ID on your phone to complete sign-in.
 
 ## Learn more
-For more information, see [Password-less phone sign-in with the Microsoft Authenticator app](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-phone-sign-in).
+For more information, see [Password-less phone sign-in with the Microsoft Authenticator app](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-phone-sign-in).

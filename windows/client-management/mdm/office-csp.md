@@ -67,7 +67,7 @@ The only supported operation is Get.
 
 Sample SyncML to install Office 365 Business Retail from current channel.
 
-```syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
@@ -89,7 +89,7 @@ Sample SyncML to install Office 365 Business Retail from current channel.
 
 To uninstall the Office 365 from the system:
 
-```syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
@@ -111,7 +111,7 @@ To uninstall the Office 365 from the system:
 
 To get the current status of Office 365 on the device.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>

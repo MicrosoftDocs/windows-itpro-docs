@@ -14,15 +14,13 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: procedural
+ms.topic: conceptual
 ---
 
 # Ensure your machines are configured properly
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
-[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
@@ -47,17 +45,29 @@ In doing so, you benefit from:
 
 Machine configuration management works closely with Intune device management to establish the inventory of the machines in your organization and the baseline security configuration. You will be able to track and manage configuration issues on Intune-managed Windows 10 machines.
 
-Before you can ensure your machines are configured properly, enroll them to Intune management. Intune enrollment is robust and has several enrollment options for Windows 10 machines. For more information about Intune enrollment options, read [Set up enrollment for Windows devices](https://docs.microsoft.com/en-us/intune/windows-enroll).
+Before you can ensure your machines are configured properly, enroll them to Intune management. Intune enrollment is robust and has several enrollment options for Windows 10 machines. For more information about Intune enrollment options, read about [setting up enrollment for Windows devices](https://docs.microsoft.com/intune/windows-enroll).
+
+>[!NOTE]
+>To enroll Windows devices to Intune, administrators must have already been assigned licenses. [Read about assigning licenses for device enrollment](https://docs.microsoft.com/intune/licenses-assign).
 
 >[!TIP] 
->To optimize machine management through Intune, [connect Intune to Microsoft Defender ATP](https://docs.microsoft.com/en-us/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
+>To optimize machine management through Intune, [connect Intune to Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
 
->[!NOTE] 
->During preview, you might encounter a few known limitations:
->- You might experience discrepancies in aggregated data displayed on the machine configuration management page and those displayed on overview screens in Intune.
->- The count of onboarded machines tracked by machine configuration management might not include machines onboarded using Security Center Configuration Manager, the onboarding script, or other onboarding methods that don’t use Intune profiles. To include these machines, create a corresponding Intune configuration profile for Microsoft Defender ATP onboarding and assign that profile to these machines.
->- The Microsoft Defender ATP security baseline currently doesn’t cover settings for all Microsoft Defender ATP security controls, including settings for exploit protection and Application Guard.
+## Obtain required permissions
+By default, only users who have been assigned the Global Administrator or the Intune Service Administrator role on Azure AD can manage and assign the device configuration profiles needed for onboarding machines and deploying the security baseline.
 
+If you have been assigned other roles, ensure you have the necessary permissions:
+
+- Full permissions to device configurations
+- Full permissions to security baselines
+- Read permissions to device compliance policies
+- Read permissions to the organization
+
+![Required permissions on intune](images/secconmgmt_intune_permissions.png)<br>
+*Device configuration permissions on Intune*
+
+>[!TIP] 
+>To learn more about assigning permissions on Intune, [read about creating custom roles](https://docs.microsoft.com/intune/create-custom-role#to-create-a-custom-role).
 
 ## In this section
 Topic | Description

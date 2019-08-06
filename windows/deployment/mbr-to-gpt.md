@@ -399,7 +399,55 @@ DISKPART> list disk
 In this example, Disk 0 is formatted with the MBR partition style, and Disk 1 is formatted using GPT.
 
 
+## Known issue 
 
+### MBR2GPT.exe cannot run in Windows PE
+
+When you start a Windows 10, version 1903-based computer in the Windows Preinstallation Environment (Windows PE), you encounter the following issues:
+
+**Issue 1** When you run the MBR2GPT.exe command, the process exits without converting the drive.
+
+**Issue 2** When you manually run the MBR2GPT.exe command in a Command Prompt window, there is no output from the tool.
+
+**Issue 3** When MBR2GPT.exe runs inside an imaging process such as a System Center Configuration Manager task sequence, an MDT task sequence, or by using a script, you receive the following exit code: 0xC0000135/3221225781.
+
+#### Cause
+
+This issue occurs because in Windows 10, version 1903 and later versions, MBR2GPT.exe requires access to the ReAgent.dll file. However, this dll file and its associated libraries are currently not included in the Windows PE boot image for Windows 10, version 1903 and later.
+
+#### Workaround
+
+To fix this issue, mount the Windows PE image (WIM), copy the missing file from the [Windows 10, version 1903 Assessment and Development Kit (ADK)](https://go.microsoft.com/fwlink/?linkid=2086042) source, and then commit the changes to the WIM. To do this, follow these steps:
+
+1. Mount the Windows PE WIM to a path (for example, C:\WinPE_Mount). For more information about how to mount WIM files, see [Mount an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#mount-an-image).
+
+2. Copy the ReAgent files and the ReAgent localization files from the Window 10, version 1903 ADK source folder to the mounted WIM.
+
+   For example, if the ADK is installed to the default location of C:\Program Files (x86)\Windows Kits\10 and the Windows PE image is mounted to C:\WinPE_Mount, run the following commands from an elevated Command Prompt window:
+   
+   **Command 1:**
+   ```cmd
+   copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources\ReAgent*.*" "C:\WinPE_Mount\Windows\System32"
+   ```
+   This command copies three files:
+
+   * ReAgent.admx
+   * ReAgent.dll
+   * ReAgent.xml
+   
+   **Command 2:**
+   ```cmd
+   copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources\En-Us\ReAgent*.*" "C:\WinPE_Mount\Windows\System32\En-Us"
+   ```   
+   This command copies two files:
+   * ReAgent.adml
+   * ReAgent.dll.mui
+
+   > [!NOTE]
+   > If you aren't using an English version of Windows, replace "En-Us" in the path with the appropriate string that represents the system language.
+   
+3. After you copy all the files, commit the changes and unmount the Windows PE WIM. MBR2GPT.exe now functions as expected in Windows PE. For information about how to unmount WIM files while committing changes, see [Unmounting an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#unmounting-an-image).
+ 
 
 ## Related topics
 

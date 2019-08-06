@@ -3,6 +3,7 @@ title: Cortana on HoloLens
 description: Cortana can help you do all kinds of things on your HoloLens
 ms.assetid: fd96fb0e-6759-4dbe-be1f-58bedad66fed
 ms.reviewer: jarrettrenshaw
+ms.date: 07/01/2019
 manager: v-miegge
 keywords: hololens
 ms.prod: hololens
@@ -30,13 +31,13 @@ Here are some things you can try saying (remember to say "Hey Cortana" first):
 - Restart.
 - Go to sleep.
 - Mute.
-- Launch <app name>.
-- Move <app name> here (gaze at the spot you want the app to move to).
+- Launch `<app name>`.
+- Move `<app name>` here (gaze at the spot you want the app to move to).
 - Go to Start.
 - Take a picture.
 - Start recording. (Starts recording a video.)
 - Stop recording. (Stops recording a video.)
-- Call <contact>. (Requires Skype.)
+- Call `<contact>`. (Requires Skype.)
 - What time is it?
 - Show me the latest NBA scores. 
 - How much battery do I have left?

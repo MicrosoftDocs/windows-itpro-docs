@@ -75,8 +75,8 @@ If you cannot uninstall IE using **Uninstall or change a program** in the Contro
 ## The Internet Explorer Customization Wizard 11 does not work with user names that user double-byte character sets
 The customization wizard does not work with user names that use double-byte character sets, such as Chinese or Japanese. To fix this, set the **TEMP** and **TMP** environmental variables to a path that does not use these characters (for example, C:\temp).
 
-1.	Open **System Properties**, click the **Advanced** tab, and then click **Environmental Variables**.
-2.	Click Edit, and then modify the **TEMP** and **TMP** environmental variables to a non-user profile directory.
+1. Open **System Properties**, click the **Advanced** tab, and then click **Environmental Variables**.
+2. Click Edit, and then modify the **TEMP** and **TMP** environmental variables to a non-user profile directory.
 
  
 ## Unicode characters are not supported in IEAK 11 path names
