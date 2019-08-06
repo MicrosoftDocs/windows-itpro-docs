@@ -3,7 +3,7 @@ title: Troubleshoot Microsoft Edge
 description: 
 ms.assetid: 
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 author: eavena
 ms.author: eravena
 ms.prod: edge

@@ -8,7 +8,7 @@ ms.author: lomayor
 ms.prod: ie11
 ms.assetid: e61866bb-1ff1-4a8d-96f2-61d3534e8199
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 title: Out-of-date ActiveX control blocking (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 05/10/2018

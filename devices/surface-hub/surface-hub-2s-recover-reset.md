@@ -10,7 +10,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
 # Reset and recovery for Surface Hub 2S
@@ -55,4 +55,4 @@ On rare occasions, Surface Hub 2S may encounter an error during cleanup of user 
 Reset or recover the device from Windows Recovery Environment (Windows RE). For more information, see [What is Windows RE?](https://technet.microsoft.com/library/cc765966.aspx)
 
 > [!NOTE]
-> To enter recovery mode, you need to physically unplug and replug the power cord three times. 
+> To enter recovery mode, you need to physically unplug and replug the power cord three times.

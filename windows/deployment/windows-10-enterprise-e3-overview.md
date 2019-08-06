@@ -10,8 +10,8 @@ ms.pagetype: mdt
 ms.date: 08/24/2017
 ms.reviewer: 
 manager: laurawi
-ms.author: greg-lindsay
-author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

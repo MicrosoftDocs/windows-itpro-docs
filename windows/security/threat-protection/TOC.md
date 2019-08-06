@@ -52,6 +52,7 @@
 ##### [Investigate machines](microsoft-defender-atp/investigate-machines.md)
 ##### [Investigate an IP address](microsoft-defender-atp/investigate-ip.md)
 ##### [Investigate a domain](microsoft-defender-atp/investigate-domain.md)
+###### [Investigate connection events that occur behind forward proxies](microsoft-defender-atp/investigate-behind-proxy.md)
 ##### [Investigate a user account](microsoft-defender-atp/investigate-user.md)
  
 #### [Machines list]()
@@ -248,7 +249,7 @@
 
 ##### [Manage updates and apply baselines]()
 ###### [Learn about the different kinds of updates](windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md)
-###### [Manage protection and definition updates](windows-defender-antivirus/manage-protection-updates-windows-defender-antivirus.md)
+###### [Manage protection and security intelligence updates](windows-defender-antivirus/manage-protection-updates-windows-defender-antivirus.md)
 ###### [Manage when protection updates should be downloaded and applied](windows-defender-antivirus/manage-protection-update-schedule-windows-defender-antivirus.md)
 ###### [Manage updates for endpoints that are out of date](windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus.md)
 ###### [Manage event-based forced updates](windows-defender-antivirus/manage-event-based-updates-windows-defender-antivirus.md)
