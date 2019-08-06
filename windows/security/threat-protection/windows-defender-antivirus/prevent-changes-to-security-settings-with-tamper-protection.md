@@ -50,9 +50,25 @@ Tamper Protection doesn't prevent you from viewing your security settings, or yo
 
 If you are part of your organization's security team, you can turn Tamper Protection on (or off) in the Microsoft 365 Device Management portal. You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task. 
 
-1. Go to the Microsoft 365 Device Management portal ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) and sign in with your work or school account. 
-2. Select **Device configuration** > **Profiles**.
-3. 
+1. Make sure your organization meets the following requirements:
+
+    - Your organization must have Microsoft 365 E5, which includes Defender Advanced Threat Protection. (See [Microsoft 365 Enterprise overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) for more details.)
+    - Your organization's devices must be managed by Intune.
+    - Your Windows machines must be running Windows OS 1903 or later.
+    - Your machines must be using antimalware platform version  4.18.1906.3 (or above) and antimalware engine version 15500.X (or above)
+    - You must be using Windows Security and update security intelligence to version 1.287.60.0 (or above)
+
+2. Go to the Microsoft 365 Device Management portal ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) and sign in with your work or school account. 
+
+3. Select **Device configuration** > **Profiles**.
+
+4. Create a profile that includes the following settings:
+
+    - Platform: Windows 10 and later
+    - ProfileType: Endpoint protection
+    - Settings > Windows Defender Security Center > Tamper Protection 
+
+5. Assign the profile to one or more groups.
 
 ## Turn Tamper Protection on (or off) for an individual machine
 
