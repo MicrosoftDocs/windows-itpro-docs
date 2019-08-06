@@ -59,4 +59,4 @@ For more info about this design:
 
 -   For a list of tasks that you can use to deploy your server isolation policy design, see [Checklist: Implementing a Standalone Server Isolation Policy Design](checklist-implementing-a-standalone-server-isolation-policy-design.md).
 
-**Next: **[Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md)
+**Next:** [Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md)

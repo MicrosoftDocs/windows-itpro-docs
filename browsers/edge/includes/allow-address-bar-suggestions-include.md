@@ -5,7 +5,7 @@ ms.date:  10/02/2018
 ms.reviewer: 
 manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Allow Address bar drop-down list suggestions -->
@@ -20,7 +20,7 @@ ms:topic: include
 
 |              Group Policy               | MDM | Registry |                                                           Description                                                           |                 Most restricted                  |
 |-----------------------------------------|:---:|:--------:|---------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------:|
-|                Disabled                 |  0  |    0     | Prevented. Hide the Address bar drop-down list and disable the *Show search and site suggestions as I type* toggle in Settings. | ![Most restricted value](/images/check-gn.png) |
+|                Disabled                 |  0  |    0     | Prevented. Hide the Address bar drop-down list and disable the *Show search and site suggestions as I type* toggle in Settings. | ![Most restricted value](../images/check-gn.png) |
 | Enabled or not configured **(default)** |  1  |    1     |                               Allowed. Show the Address bar drop-down list and make it available.                               |                                                  |
 
 ---

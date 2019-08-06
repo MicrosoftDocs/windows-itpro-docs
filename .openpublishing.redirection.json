@@ -672,7 +672,7 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview",
 "redirect_document_id": true
 },
 {
@@ -6497,13 +6497,13 @@
 },
 {
 "source_path": "windows/manage/app-inventory-managemement-windows-store-for-business.md",
-"redirect_url": "/microsoft-store/app-inventory-management-windows-store-for-business",
+"redirect_url": "/microsoft-store/app-inventory-management-windows-store-for-business#manage-apps-in-your-inventory",
 "redirect_document_id": true
 },
 {
 "source_path": "store-for-business/app-inventory-management-windows-store-for-business.md",
 "redirect_url": "/microsoft-store/app-inventory-management-microsoft-store-for-business",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/manage/application-development-for-windows-as-a-service.md",
@@ -6562,12 +6562,12 @@
 },
 {
 "source_path": "windows/manage/manage-inventory-windows-store-for-business.md",
-"redirect_url": "/microsoft-store/app-inventory-managemement-windows-store-for-business",
+"redirect_url": "/microsoft-store/app-inventory-management-windows-store-for-business",
 "redirect_document_id": true
 },
 {
 "source_path": "store-for-business/app-inventory-managemement-windows-store-for-business.md",
-"redirect_url": "/microsoft-store/app-inventory-managemement-microsoft-store-for-business",
+"redirect_url": "/microsoft-store/app-inventory-management-microsoft-store-for-business",
 "redirect_document_id": true
 },
 {
@@ -14156,6 +14156,116 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/client-management/mdm/create-a-custom-configuration-service-provider.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/client-management/mdm/design-a-custom-windows-csp.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/iconfigserviceprovider2.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/iconfigserviceprovider2configmanagernotification.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/iconfigserviceprovider2getnode.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnode.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodeadd.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodeclear.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodecopy.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodedeletechild.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodedeleteproperty.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodeexecute.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodegetchildnodenames.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodegetproperty.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodegetpropertyidentifiers.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodegetvalue.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodemove.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodesetproperty.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodesetvalue.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspnodetransactioning.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/icspvalidate.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/client-management/mdm/samples-for-writing-a-custom-configuration-service-provider.md",
+"redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/keep-secure/collect-wip-audit-event-logs.md",
 "redirect_url": "/windows/threat-protection/windows-information-protection/collect-wip-audit-event-logs",
 "redirect_document_id": true
@@ -14958,8 +15068,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/windows/deployment/windows-10-enterprise-subscription-activation.md",
-"redirect_url": "/windows/windows/deployment/windows-10-subscription-activation",
+"source_path": "windows/deployment/windows-10-enterprise-subscription-activation.md",
+"redirect_url": "/windows/deployment/windows-10-subscription-activation",
 "redirect_document_id": true
 },
 {
@@ -14968,13 +15078,13 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/windows-10/windows-10-landing.yml",
-"redirect_url": "/windows/hub/windows-10",
+"source_path": "windows/hub/windows-10-landing.yml",
+"redirect_url": "/windows/windows-10",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/improverequestperformance-new.md",
-"redirect_url": "windows/security/threat-protection/microsoft-defender-atp/improve-request-performance",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/improve-request-performance",
 "redirect_document_id": true
 },
 {
@@ -15035,6 +15145,21 @@
 {
 "source_path": "windows/hub/release-information.md",
 "redirect_url": "/windows/release-information",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-10-architecture-posters.md",
+"redirect_url": "/windows/deployment/windows-10-deployment-scenarios",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/device-security/index.md",
+"redirect_url": "/windows/security/threat-protection",
+"redirect_document_id": true
+},
+{
+"source_path": "browsers/internet-explorer/ie11-deploy-guide/group-policy-compatability-with-ie11.md",
+"redirect_url": "/browsers/internet-explorer/ie11-deploy-guide/group-policy-compatibility-with-ie11",
 "redirect_document_id": true
 }
 ]

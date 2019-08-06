@@ -208,7 +208,7 @@ Set up the Take a Test app to give online quizzes and high-stakes assessments. D
 
     ![Set up Take a Test app page with "Yes" selected to create an app button. Page also has two checkboxes for additional settings and one text field for the assessment URL.](images/1810_SUSPC_Take_Test.png)   
 
-2. Select from the advanced settings. Available settings inclue:  
+2. Select from the advanced settings. Available settings include:  
     * Allow keyboard auto-suggestions: Allows app to suggest words as the student types on the PC's keyboard.  
     * Allow teachers to monitor online tests: Enables screen capture in the Take a Test app.  
 3. Enter the URL where the test is hosted. When students log in to the Take a Test account, they'll be able to click or enter the link to view the assessment.  

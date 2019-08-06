@@ -27,8 +27,8 @@ A level 3 configuration should include all the configurations from level 2 and l
 
 Devices targeting Level 3 should support all Level 2 and Level 1 features, and add the following hardware features:
 
-- [System Guard](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
-- [Modern Standby](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/modern-standby)
+- [System Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
+- [Modern Standby](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby)
 
 ## Policies
 
@@ -52,6 +52,11 @@ a level of security commensurate with the risks facing targeted organizations. M
 | Windows Components / Internet Explorer / Internet Control Panel / Advanced Page | Turn on Enhanced Protected Mode | Enabled | Enhanced Protected Mode provides additional protection against malicious websites by using 64-bit processes on 64-bit versions of Windows. For computers running at least Windows 8, Enhanced Protected Mode also limits the locations Internet Explorer can read from in the registry and the file system. |
 | Windows Components / Internet Explorer / Internet Control Panel / Security Page | Intranet Sites: Include all network paths (UNCs) | Disabled | This policy setting controls whether URLs representing UNCs are mapped into the local Intranet security zone. |
 | Windows Components / Microsoft Edge | Configure Password Manager | Disabled | This policy setting lets you decide whether employees can save their passwords locally using Password Manager. By default, Password Manager is turned on. if you enable this setting, employees can use Password Manager to save their passwords locally. If you disable this setting employees can't use Password Manager to save their passwords locally. If you don't configure this setting employees can choose whether to use Password Manager to save their passwords locally. |
+
+### User Policies
+| Feature  | Policy Setting  | Policy Value  | Description  |
+|----------|-----------------|---------------|--------------|
+| Windows Components / Internet Explorer | Turn on the auto-complete feature for user names and passwords on forms | Disabled | This AutoComplete feature can remember and suggest User names and passwords on Forms. If you enable this setting, the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms will be turned on. You have to decide whether to select "prompt me to save passwords". If you disable this setting the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned off. The user also cannot opt to be prompted to save passwords. If you do not configure this setting, the user has the freedom of turning on Auto complete for User name and passwords on forms and the option of prompting to save passwords. To display this option, the users open the Internet Options dialog box, click the Contents Tab and click the Settings button. |
 
 ## Controls
 

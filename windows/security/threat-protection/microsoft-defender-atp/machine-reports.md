@@ -22,8 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
- 
+
 The machines status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
 
 The dashboard is structured into two sections:
@@ -80,4 +79,4 @@ For example, to show data about Windows 10 machines with Active sensor health st
 
 
 ## Related topic
-- [Threat protection report ](threat-protection-reports.md)
+- [Threat protection report](threat-protection-reports.md)

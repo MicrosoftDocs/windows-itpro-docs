@@ -80,7 +80,7 @@ Boolean value indicating whether AllJoyn router service (AJRouter.dll) is enable
 
 Set adapter configuration
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -104,7 +104,7 @@ You should replace \_ALLJOYN\_DEVICE\_ID\_ with an actual device ID. Note that t
 
 Get PIN data
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -123,7 +123,7 @@ Get PIN data
 
 Get the firewall PrivateProfile
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
               <Get>

@@ -237,8 +237,8 @@ This is followed by **PHY_STATE_CHANGE** and **PORT_DOWN** events due to a disas
 
 ### Resources
 
-[802.11 Wireless Tools and Settings](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc755892(v%3dws.10))<br>
-[Understanding 802.1X authentication for wireless networks](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc759077%28v%3dws.10%29)<br>
+[802.11 Wireless Tools and Settings](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc755892(v%3dws.10))<br>
+[Understanding 802.1X authentication for wireless networks](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc759077%28v%3dws.10%29)<br>
 
 ## Example ETW capture
 

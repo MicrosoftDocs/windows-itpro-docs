@@ -105,11 +105,11 @@ If you need to make changes or updates to any of the apps or settings for the gr
 After completing the basic setup for your cloud infrastructure and confirming that it is up and running, it's time to prepare for additional devices to be added and enable capabilities for the user to use.
 
 ### Enable many devices to be added by a single person 
-When a device is owned by the school, you may need to have a single persion adding many devices to your cloud infrastructure. 
+When a device is owned by the school, you may need to have a single person adding many devices to your cloud infrastructure. 
 
 Follow the steps in this section to enable a single person to add many devices to your cloud infrastructure.
 
-1. Sign in to the <a href="https://portal.office.com" target="_blank">Office 365 admin center</a>.
+1. Sign in to the <a href="https://portal.office.com" target="_blank">admin center</a>.
 2. Configure the device settings for the school's Active Directory. To do this, go to the new Azure portal, <a href="https://portal.azure.com" target="_blank">https://portal.azure.com</a>.
 3. Select **Azure Active Directory > Users and groups > Device settings**.
 
@@ -125,7 +125,7 @@ When students move from using one device to another, they may need to have their
 
 Follow the steps in this section to ensure that settings for the each user follow them when they move from one device to another.
 
-1. Sign in to the <a href="https://portal.office.com" target="_blank">Office 365 admin center</a>.
+1. Sign in to the <a href="https://portal.office.com" target="_blank">admin center</a>.
 2. Go to the new Azure portal, <a href="https://portal.azure.com" target="_blank">https://portal.azure.com</a>.
 3. Select **Azure Active Directory > Users and groups > Device settings**.
 4. Find the setting **Users may sync settings and enterprise app data** and change the value to **All**.
@@ -142,12 +142,12 @@ Now that your basic cloud infrastructure is up and running, it's time to complet
 ## Enable Microsoft Teams for your school
 Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. Because it's built on Office 365, schools benefit from integration with their familiar Office apps and services. Your institution can use Microsoft Teams to create collaborative classrooms, connect in professional learning communities, and communicate with school staff all from a single experience in Office 365 for Education. 
 
-To get started, IT administrators need to use the Office 365 Admin Center to enable Microsoft Teams for your school. 
+To get started, IT administrators need to use the Microsoft 365 Admin Center to enable Microsoft Teams for your school. 
 
 **To enable Microsoft Teams for your school**
 
 1. Sign in to <a href="https://portal.office.com" target="_blank">Office 365</a> with your work or school account.
-2. Click **Admin** to go to the Office 365 admin center.
+2. Click **Admin** to go to the admin center.
 3. Go to **Settings > Services & add-ins**.
 4. On the **Services & add-ins** page, select **Microsoft Teams**.
 
@@ -198,7 +198,7 @@ Adding a new device to your cloud-based tenant is easy. For new devices, you can
 
    Depending on the organization's policy, the user may be asked to update the password.
 
-5. After the user's credentails are validated, the window will refresh and will now include an entry that shows the device is now connected to the organization's MDM. This means the device is now enrolled in Intune for Education MDM and the account should have access to the organization's resources.
+5. After the user's credentials are validated, the window will refresh and will now include an entry that shows the device is now connected to the organization's MDM. This means the device is now enrolled in Intune for Education MDM and the account should have access to the organization's resources.
 
    **Figure 8** - Device is connected to organization's MDM
 

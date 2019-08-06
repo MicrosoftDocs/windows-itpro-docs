@@ -26,11 +26,11 @@ ms.topic: article
 
 Microsoft Defender ATP notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Security operations dashboard**, and you can access all alerts in the **Alerts queue**.
 
-You can manage alerts by selecting an alert in the **Alerts queue** or the **Alerts related to this machine** section of the machine details view.
+You can manage alerts by selecting an alert in the **Alerts queue**, or the **Alerts** tab of the Machine page for an individual device.
 
 Selecting an alert in either of those places brings up the **Alert management pane**.
 
-![Image of alert status](images/atp-alerts-selected.png)
+![Image of alert management pane and alerts queue](images/atp-alerts-selected.png)
 
 ## Link to another incident
 You can create a new incident from the alert or link to an existing incident. 
@@ -40,11 +40,11 @@ If an alert is no yet assigned, you can select **Assign to me** to assign the al
 
 
 ## Suppress alerts
-There might be scenarios where you need to suppress alerts from appearing in Microsoft Defender Security Center. Microsoft Defender ATP lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization. 
+There might be scenarios where you need to suppress alerts from appearing in Microsoft Defender Security Center. Microsoft Defender ATP lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization.
 
 Suppression rules can be created from an existing alert. They can be disabled and reenabled if needed.
 
-When a suppression rule is created, it will take effect from the point when the rule is created. The rule will not affect existing alerts already in the queue prior to the rule creation. The rule will only be applied on alerts that satisfy the conditions set after the rule is created.
+When a suppression rule is created, it will take effect from the point when the rule is created. The rule will not affect existing alerts already in the queue, prior to the rule creation. The rule will only be applied on alerts that satisfy the conditions set after the rule is created.
 
 There are two contexts for a suppression rule that you can choose from:
 
@@ -60,7 +60,6 @@ You can use the examples in the following table to help you choose the context f
 | **Suppress alert on this machine**    | Alerts with the same alert title and on that specific machine only will be suppressed. <br /><br />All other alerts on that machine will not be suppressed. | <ul><li>A security researcher is investigating a malicious script that has been used to attack other machines in your organization.</li><li>A developer regularly creates PowerShell scripts for their team.</li></ul> |
 | **Suppress alert in my organization** | Alerts with the same alert title on any machine will be suppressed.                                                                                         | <ul><li>A benign administrative tool is used by everyone in your organization.</li></ul>                                                                                                                               |
 
-
 ### Suppress an alert and create a new suppression rule:
 Create custom rules to control when alerts are suppressed, or resolved. You can control the context for when an alert is suppressed by specifying the alert title, Indicator of compromise, and the conditions. After specifying the context, you’ll be able to configure the action and scope on the alert. 
 
@@ -68,13 +67,14 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 2.  Select **Create a suppression rule**.
 
-    You can create a suppression rule based on the following attributes:
+    You can create a suppression condition using these attributes. An AND operator is applied between each condition, so suppression occurs only if all conditions are met.
     
-    * File hash 
-    * File name - wild card supported
-    * File path - wild card supported
-    * IP
-    * URL - wild card supported
+    * File SHA1
+    * File name - wildcard supported
+    * Folder path - wildcard supported
+    * IP address
+    * URL - wildcard supported
+    * Command line - wildcard supported
 
 3. Select the **Trigerring IOC**.
     
@@ -116,7 +116,7 @@ Added comments instantly appear on the pane.
 
 ## Related topics
 - [Manage suppression rules](manage-suppression-rules.md)
-- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue ](alerts-queue.md)
+- [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
 - [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)
 - [Investigate a file associated with a Microsoft Defender ATP alert](investigate-files.md)
 - [Investigate machines in the Microsoft Defender ATP Machines list](investigate-machines.md)

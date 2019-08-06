@@ -632,7 +632,7 @@ The following list shows the supported values:
 <!--Description-->
 Allow the device to send diagnostic and usage telemetry data, such as Watson. 
 
-For more information about diagnostic data, including what is and what is not collected by Windows, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
+For more information about diagnostic data, including what is and what is not collected by Windows, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
 
 The following tables describe the supported values:
 
@@ -1581,19 +1581,28 @@ The following list shows the supported values:
 
 <!--/Policies-->
 
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>System policies supported by Windows Holographic
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>System policies supported by HoloLens 2
 
-- [System/AllowTelemetry](#system-allowtelemetry)
+- [System/AllowCommercialDataPipeline](#system-allowcommercialdatapipeline)
 - [System/AllowLocation](#system-allowlocation)
-<!--EndHoloLens-->
+- [System/AllowStorageCard](#system-allowstoragecard)
+- [System/AllowTelemetry](#system-allowtelemetry)
+ <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>System policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>System policies supported by HoloLens (1st gen) Commercial Suite
 
-- [System/AllowTelemetry](#system-allowtelemetry)
 - [System/AllowLocation](#system-allowlocation)
+- [System/AllowTelemetry](#system-allowtelemetry)
  <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>System policies supported by HoloLens (1st gen) Development Edition
+
+- [System/AllowLocation](#system-allowlocation)
+- [System/AllowTelemetry](#system-allowtelemetry)
+<!--EndHoloLens-->
 
 <hr/>
 

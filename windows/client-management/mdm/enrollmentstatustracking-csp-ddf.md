@@ -18,7 +18,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 ### EnrollmentStatusTracking CSP
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -387,7 +387,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
             <AccessType>
               <Get />
             </AccessType>
-            <Description>These settings are read by the Enrollment Status Page (ESP) during the the Device Preparation phase.  These setting are used to orchestrate any setup activities prior to provisioning the device in the Device Setup phase of the ESP.</Description>
+            <Description>These settings are read by the Enrollment Status Page (ESP) during the Device Preparation phase.  These setting are used to orchestrate any setup activities prior to provisioning the device in the Device Setup phase of the ESP.</Description>
             <DFFormat>
               <node />
             </DFFormat>

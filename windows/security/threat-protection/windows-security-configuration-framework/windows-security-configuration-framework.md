@@ -40,7 +40,7 @@ This new security configuration framework, which we affectionately nickname the 
 
 The security configuration framework divides configuration into Productivity Devices and Privileged Access Workstations. This document will focus on Productivity Devices
 (Levels 1, 2, and 3). 
-Microsoft’s current guidance on [Privileged Access Workstations](http://aka.ms/privsec) are part of the [Securing Privileged Access roadmap](http://aka.ms/privsec).
+Microsoft’s current guidance on [Privileged Access Workstations](https://aka.ms/privsec) are part of the [Securing Privileged Access roadmap](https://aka.ms/privsec).
 
 Microsoft recommends reviewing and categorizing your devices, and then configuring them using the prescriptive guidance for that level. 
 Level 1 should be considered the minimum baseline for an enterprise device, and Microsoft recommends increasing the protection based on both threat environment and risk appetite.
@@ -71,6 +71,6 @@ Security controls which don't support an audit mode should be deployed gradually
 
 Security controls which support an audit mode can be deployed using the following methodology:
 
-1. Audit - enable the control in audit mode, and gasther audit data in a centralized location
+1. Audit - enable the control in audit mode, and gather audit data in a centralized location
 2. Review - review the audit data to assess potential impact (both positive and negative) and configure any exemptions from the security control you need to configure
 3. Enforce - deploy the configuration of any exemptions and convert the control to enforce mode

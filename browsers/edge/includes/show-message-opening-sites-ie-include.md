@@ -5,7 +5,7 @@ ms.date:  10/02/2018
 ms.reviewer: 
 manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Show message when opening sites in Internet Explorer --> 
@@ -21,7 +21,7 @@ ms:topic: include
 
 |                Group Policy                 | MDM | Registry |                                                       Description                                                        |                 Most restricted                  |
 |---------------------------------------------|:---:|:--------:|--------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------:|
-| Disabled or not configured<br>**(default)** |  0  |    0     |                                             No additional message displays.                                              | ![Most restricted value](/images/check-gn.png) |
+| Disabled or not configured<br>**(default)** |  0  |    0     |                                             No additional message displays.                                              | ![Most restricted value](../images/check-gn.png) |
 |                   Enabled                   |  1  |    1     |                            Show an additional message stating that a site has opened in IE11.                            |                                                  |
 |                   Enabled                   |  2  |    2     | Show an additional message with a *Keep going in Microsoft Edge* link to allow users to open the site in Microsoft Edge. |                                                  |
 

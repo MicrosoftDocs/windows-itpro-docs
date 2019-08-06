@@ -39,7 +39,7 @@ Each layer in the threat protection stack plays a critical role in protecting cu
 Microsoft Defender ATP provides a comprehensive server protection solution, including endpoint detection and response (EDR) capabilities on Windows Servers.
 
 ## Azure Information Protection
-Keep sensitive data secure while enabling productivity in the workplace through data data discovery and data protection.
+Keep sensitive data secure while enabling productivity in the workplace through data discovery and data protection.
 
 ## Conditional Access
 Microsoft Defender ATP's dynamic machine risk score is integrated into the Conditional Access evaluation, ensuring that only secure devices have access to resources. 

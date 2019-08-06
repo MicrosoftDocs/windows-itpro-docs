@@ -21,7 +21,7 @@ This topic shows the OMA DM device description framework (DDF) for the **WiFi** 
 
 The XML below is for Windows 10, version 1809.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -104,7 +104,7 @@ The XML below is for Windows 10, version 1809.
             </AccessType>
             <Description>
               XML describing the network configuration and follows Windows WLAN_profile schema.
-              Link to schema: http://msdn.microsoft.com/library/windows/desktop/ms707341(v=vs.85).aspx
+              Link to schema: https://msdn.microsoft.com/library/windows/desktop/ms707341(v=vs.85).aspx
             </Description>
             <DFFormat>
               <chr />

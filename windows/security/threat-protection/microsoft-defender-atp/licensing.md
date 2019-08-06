@@ -28,25 +28,26 @@ ms.topic: article
 
 ## Check license state
 
-Checking for the license state and whether it got properly provisioned, can be done through the **Office 365 admin center** or through the **Microsoft Azure portal**.
+Checking for the license state and whether it got properly provisioned, can be done through the admin center or through the **Microsoft Azure portal**.
 
-1. In the **Office 365 admin center** navigate to **Billing** > **Subscriptions**.
+1. To view your licenses go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
+
+   ![Image of Azure Licensing page](images/atp-licensing-azure-portal.png)
+
+1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
 
    - On the screen you will see all the provisioned licenses and their current **Status**.
 
    ![Image of billing licenses](images/atp-billing-subscriptions.png)
 
-2. To view your licenses go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
-
-   ![Image of Azure Licensing page](images/atp-licensing-azure-portal.png)
 
 ## Cloud Service Provider validation
 
-To gain access into which licenses are provisioned to your company, and to check the state of the licenses, go to the **Office 365 admin center**.
+To gain access into which licenses are provisioned to your company, and to check the state of the licenses, go to the admin center.
 
 1. From the **Partner portal**, click on the **Administer services > Office 365**.
 
-2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer **Office 365 admin center**.
+2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer admin center.
 
    ![Image of O365 admin portal](images/atp-O365-admin-portal-customer.png)
 
@@ -103,8 +104,6 @@ When accessing [Microsoft Defender Security Center](https://SecurityCenter.Windo
 
 5. A dedicated cloud instance of Microsoft Defender Security Center is being created at this time. This step will take an average of 5 minutes to complete.
 
-    ![Image of Microsoft Defender ATP cloud instance](images/creating-account.png)
-
 6. You are almost done. Before you can start using Microsoft Defender ATP you'll need to:
 
    - [Onboard Windows 10 machines](configure-endpoints.md)
@@ -118,8 +117,6 @@ When accessing [Microsoft Defender Security Center](https://SecurityCenter.Windo
      > ![Image of setup imcomplete](images/atp-setup-incomplete.png)
 
 7. After onboarding machines you can click **Start using Microsoft Defender ATP**. You will now launch Microsoft Defender ATP for the first time.
-
-    ![Image of onboard machines](images/atp-onboard-endpoints-WDATP-portal.png)
 
 ## Related topics
 - [Onboard machines to the Microsoft Defender Advanced Threat Protection service](onboard-configure.md)

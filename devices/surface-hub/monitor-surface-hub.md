@@ -95,10 +95,10 @@ This table describes the sample queries in the Surface Hub solution:
 | Hardware   | Error | **Contact Microsoft support**. <br> Indicates impact to core functionality (such as Skype, projection, touch, and internet connectivity). <br> **Note** Some events, including heartbeat, include the device’s serial number that you can use when contacting support.| Triggers when there is an error with any of the following hardware components. <br> **Components that affect Skype**: <br> - Speaker driver <br> - Microphone driver <br> - Camera driver <br> **Components that affect wired and wireless projection**: <br> - Wired touchback driver <br> - Wired ingest driver <br> - Wireless adapter driver <br> - Wi-Fi Direct error <br> **Other components**: <br> - Touch digitizer driver <br> - Network adapter error (not reported to OMS)|
 
 **To set up an alert**
-1.	From the Surface Hub solution, select one of the sample queries.
-2.	Modify the query as desired. See Log Analytics search reference to learn more.
-3.	Click **Alert** at the top of the page to open the **Add Alert Rule** screen. See [Alerts in Log Analytics](https://azure.microsoft.com/documentation/articles/log-analytics-alerts/) for details on the options to configure the alert.
-4.	Click **Save** to complete the alert rule. It will start running immediately.
+1. From the Surface Hub solution, select one of the sample queries.
+2. Modify the query as desired. See Log Analytics search reference to learn more.
+3. Click **Alert** at the top of the page to open the **Add Alert Rule** screen. See [Alerts in Log Analytics](https://azure.microsoft.com/documentation/articles/log-analytics-alerts/) for details on the options to configure the alert.
+4. Click **Save** to complete the alert rule. It will start running immediately.
 
 ## Enroll your Surface Hub
 
@@ -138,7 +138,7 @@ You'll need the workspace ID and primary key of your OMS workspace. You can get 
 A confirmation dialog will appear telling you whether or not the OMS configuration was successfully applied to the device. If it was, the device will start sending data to OMS.
 
 ### Enroll using a provisioning package
-You can use a provisioning package to enroll your Surface Hub. For more infomation, see [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md).
+You can use a provisioning package to enroll your Surface Hub. For more information, see [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md).
  
 ### Enroll using a MDM provider
 You can enroll Surface Hub into OMS using the SurfaceHub CSP. Intune and Configuration Manager provide built-in experiences to help create policy templates for Surface Hub. For more information, see [Manage Surface Hub settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md).

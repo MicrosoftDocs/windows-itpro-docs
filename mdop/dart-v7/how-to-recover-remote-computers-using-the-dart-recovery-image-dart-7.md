@@ -131,7 +131,7 @@ A file is provided that is named inv32.xml and contains remote connection inform
 
 2. The following is an example of a winpeshl.ini file that is customized to open the **Remote Connection** tool as soon as an attempt is made to boot into DaRT:
 
-   ``` syntax
+   ```ini
    [LaunchApps]
    "%windir%\system32\netstart.exe -network -remount"
    "cmd /C start %windir%\system32\RemoteRecovery.exe -nomessage"

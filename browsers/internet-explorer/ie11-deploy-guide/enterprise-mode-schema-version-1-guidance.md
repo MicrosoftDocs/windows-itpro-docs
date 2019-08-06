@@ -179,7 +179,7 @@ Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">http
 <p><b>Example</b>
 <pre class="syntax">
 &lt;docMode&gt;
-  &lt;domain exclude=&quot;false&quot;&gt;fakrikam.com
+  &lt;domain exclude=&quot;false&quot;&gt;fabrikam.com
     &lt;path docMode=&quot;7&quot;&gt;/products&lt;/path&gt;
   &lt;/domain&gt;
 &lt;/docMode&gt;</pre></td>

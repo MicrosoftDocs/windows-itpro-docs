@@ -5,7 +5,7 @@ ms.date:  10/02/2018
 ms.reviewer: 
 manager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Keep favorites in sync between Internet Explorer and Microsoft Edge -->
@@ -19,7 +19,7 @@ ms:topic: include
 |                Group Policy                 | MDM | Registry |      Description       |                 Most restricted                  |
 |---------------------------------------------|:---:|:--------:|------------------------|:------------------------------------------------:|
 | Disabled or not configured<br>**(default)** |  0  |    0     | Turned off/not syncing |                                                  |
-|                   Enabled                   |  1  |    1     |   Turned on/syncing    | ![Most restricted value](/images/check-gn.png) |
+|                   Enabled                   |  1  |    1     |   Turned on/syncing    | ![Most restricted value](../images/check-gn.png) |
 
 ---
 

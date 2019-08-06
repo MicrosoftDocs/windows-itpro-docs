@@ -11,7 +11,6 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 05/01/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -36,6 +35,9 @@ You can also [customize the message displayed on users' desktops](https://docs.m
 ## How it works
 
 When Windows Defender Antivirus encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend applies heuristics, machine learning, and automated analysis of the file to determine whether the files are malicious or clean.
+
+Windows Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, real-time, and intelligent protection. [Get to know the advanced technologies at the core of Microsoft Defender ATP next generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+![List of Windows Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 In Windows 10, version 1803, block at first sight can now block non-portable executable files (such as JS, VBS, or macros) as well as executable files.
 
@@ -64,6 +66,9 @@ Block at first sight requires a number of settings to be configured correctly or
    - **Prompt users before sample submission**: **Send all data without prompting**
 
    ![Intune config](images/defender/intune-block-at-first-sight.png)
+
+> [!Warning]
+> Setting the file blocking level to **High** will apply a strong level of detection. In the unlikely event that it causes a false positive detection of legitimate files, use the option to [restore the quarantined files](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/restore-quarantined-files-windows-defender-antivirus).
 
 For more information about configuring Windows Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 

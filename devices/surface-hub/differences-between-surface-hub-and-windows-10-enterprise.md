@@ -1,19 +1,19 @@
 ---
-title: Differences between Surface Hub and Windows 10 Enterprise
-description: This topic explains the differences between Windows 10 Team and Windows 10 Enterprise.
+title: Operating system essentials (Surface Hub)
+description: This topic explains unique aspects of the Windows 10 Team operating system and how it differs from Windows 10 Enterprise.
 keywords: change history
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 11/01/2017
+ms.date: 06/20/2019
 ms.reviewer: 
 manager: dansimp
 ms.localizationpriority: medium
 ---
 
-# Differences between Surface Hub and Windows 10 Enterprise
+# Operating system essentials (Surface Hub)
 
 The Surface Hub operating system, Windows 10 Team, is based on Windows 10 Enterprise, providing rich support for enterprise management, security, and other features. However, there are important differences between them. While the Enterprise edition is designed for PCs, Windows 10 Team is designed from the ground up for large screens and meeting rooms. When you evaluate security and management requirements for Surface Hub, it's best to consider it as a new operating system. This article is designed to help highlight the key differences between Windows 10 Team on Surface Hub and Windows 10 Enterprise, and what the differences mean for your organization.
 
@@ -127,13 +127,13 @@ The administrative features in Windows 10 Enterprise, such as the Microsoft Mana
 
 ### Remote management and monitoring
 
-Surface Hub supports remote management through mobile device management (MDM), and monitoring through Operations Management Suite (OMS).
+Surface Hub supports remote management through mobile device management (MDM) solutions such as [Microsoft Intune](https://docs.microsoft.com/intune/) and monitoring through [Azure Monitor](https://azure.microsoft.com/services/monitor/). 
 
 *Organization policies that this may affect:* <br> Surface Hub doesn't support installing Win32 agents required by most traditional PC management and monitoring tools, such as System Center Operations Manager.
 
-### Group policy
+### Group Policy
 
-Surface Hub does not support group policy, including auditing. Instead, use MDM to apply policies to your Surface Hub. For more information about MDM, see [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md).
+Surface Hub does not support Windows Group Policy, including auditing. Instead, use MDM to apply policies to your Surface Hub. For more information about MDM, see [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md).
 
 *Organization policies that this may affect:* <br> Use MDM to manage Surface Hub rather than group policy.
 

@@ -129,7 +129,7 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
 3. On some physical computers, you may generate a nonmakeable interruption (NMI) from the Web Interface feature (such as DRAC, iLo, and RSA). However, by default, this setting will stop the system without creating a memory dump.   
 
-   To allow the operating system to generate a memory dump file at an NMI interruption, set the value of the [NMICrashDump](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc783271(v=ws.10)) registry entry to `1` (REG_DWORD). Then, restart the computer to apply this change.   
+   To allow the operating system to generate a memory dump file at an NMI interruption, set the value of the [NMICrashDump](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc783271(v=ws.10)) registry entry to `1` (REG_DWORD). Then, restart the computer to apply this change.   
 
    > [!NOTE]
    > This is applicable only for Windows 7, Windows Server 2008 R2, and earlier versions of Windows. For Windows 8 Windows Server 2012, and later versions of Windows, the NMICrashDump registry key is no longer required, and an NMI interruption will result in [a Stop error that follows a memory dump data collection](https://support.microsoft.com/help/2750146).   
@@ -204,7 +204,7 @@ If the physical computer is still running in a frozen state, follow these steps 
 
    2. From a remote computer that is preferably in the same network and subnet, go to **Registry Editor** \> **Connect Network Registry**. Then, connect to the concerned computer, and verify the following settings: 
 
-      * ` `*HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\CrashDumpEnabled`   
+      * `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\CrashDumpEnabled`   
 
          Make sure that the [CrashDumpEnabled](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc976050(v=technet.10)) registry entry is `1`.            
 

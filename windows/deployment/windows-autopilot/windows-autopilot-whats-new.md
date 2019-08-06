@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
+audience: itpro
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -41,6 +42,9 @@ Also new in this version of Windows:
 Windows Autopilot [self-deploying mode](self-deploying.md) enables a zero touch device provisioning experience. Simply power on the device, plug it into the Ethernet, and the device is fully configured by Windows Autopilot. This self-deploying capability removes the current need to have an end user interact by pressing the “Next” button during the deployment process. 
 
 You can utilize Windows Autopilot self-deploying mode to register the device to an AAD tenant, enroll in your organization’s MDM provider, and provision policies and applications, all with no user authentication or user interaction required. 
+
+>[!NOTE]
+>Window 10, version 1903 or later is required to use self-deploying mode due to issues with TPM device attestation in Windows 10, version 1809.
 
 ## Related topics
 

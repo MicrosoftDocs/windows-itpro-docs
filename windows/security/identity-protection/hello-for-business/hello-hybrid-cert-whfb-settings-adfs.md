@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -28,15 +28,18 @@ The Windows Server 2016 Active Directory Federation Server Certificate Registrat
 
 The Windows Hello for Business Authentication certificate template is configured to only issue certificates to certificate requests that have been signed with an enrollment agent certificate.
 
+> [!NOTE]
+> In order for AD FS to verify user certificate requests for Windows Hello for Business, it needs to be able to access the https://enterpriseregistration.windows.net endpoint.
+
 ### Configure the Registration Authority
 
 Sign-in the AD FS server with *Domain Admin* equivalent credentials. 
 
-1.	Open a **Windows PowerShell** prompt.
-2.	Type the following command   
+1. Open a **Windows PowerShell** prompt.
+2. Type the following command   
   
     ```PowerShell
-    Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication
+    Set-AdfsCertificateAuthority -EnrollmentAgent -EnrollmentAgentCertificateTemplate WHFBEnrollmentAgent -WindowsHelloCertificateTemplate WHFBAuthentication -WindowsHelloCertificateProxyEnabled $true
     ```
 
 
@@ -55,8 +58,8 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 3. Right-click **Windows Hello for Business Users** group
 4. Click the **Members** tab and click **Add**
 5. In the **Enter the object names to select** text box, type **adfssvc**.  Click **OK**.
-6.	Click **OK** to return to **Active Directory Users and Computers**.
-7.	Restart the AD FS server.
+6. Click **OK** to return to **Active Directory Users and Computers**.
+7. Restart the AD FS server.
 
 ### Section Review
 > [!div class="checklist"]

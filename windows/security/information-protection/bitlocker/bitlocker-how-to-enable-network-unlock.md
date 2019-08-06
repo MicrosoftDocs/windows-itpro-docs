@@ -97,11 +97,11 @@ The BitLocker Network Unlock feature will install the WDS role if it is not alre
 
 To install the role using Windows PowerShell, use the following command:
 
-``` syntax
+```powershell
 Install-WindowsFeature WDS-Deployment
 ```
 
-You must configure the WDS server so that it can communicate with DHCP (and optionally Active Directory Doman Services) and the client computer. You can do using the WDS management tool, wdsmgmt.msc, which starts the Windows Deployment Services Configuration Wizard.
+You must configure the WDS server so that it can communicate with DHCP (and optionally Active Directory Domain Services) and the client computer. You can do using the WDS management tool, wdsmgmt.msc, which starts the Windows Deployment Services Configuration Wizard.
 
 ### <a href="" id="bkmk-confirmwdsrunning"/>Confirm the WDS Service is running
 
@@ -109,7 +109,7 @@ To confirm the WDS service is running, use the Services Management Console or Wi
 
 To confirm the service is running using Windows PowerShell, use the following command:
 
-``` syntax
+```powershell
 Get-Service WDSServer
 ```
 ### <a href="" id="bkmk-installnufeature"/>Install the Network Unlock feature
@@ -118,7 +118,7 @@ To install the Network Unlock feature, use Server Manager or Windows PowerShell.
 
 To install the feature using Windows PowerShell, use the following command:
 
-``` syntax
+```powershell
 Install-WindowsFeature BitLocker-NetworkUnlock
 ```
 ### <a href="" id="bkmk-createcerttmpl"/>Create the certificate template for Network Unlock
@@ -184,7 +184,7 @@ To create a self-signed certificate, you can either use the New-SelfSignedCertif
 
 Windows PowerShell example:
 
-```syntax
+```powershell
 New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Subject "CN=BitLocker Network Unlock certificate" -Provider "Microsoft Software Key Storage Provider" -KeyUsage KeyEncipherment -KeyUsageProperty Decrypt,Sign -KeyLength 2048 -HashAlgorithm sha512 -TextExtension @("1.3.6.1.4.1.311.21.10={text}OID=1.3.6.1.4.1.311.67.1.1","2.5.29.37={text}1.3.6.1.4.1.311.67.1.1")
 ```
 
@@ -193,7 +193,7 @@ Certreq example:
 1.  Create a text file with an .inf extension. For example, notepad.exe BitLocker-NetworkUnlock.inf.
 2.  Add the following contents to the previously created file:
 
-    ``` syntax
+    ```ini
     [NewRequest]
     Subject="CN=BitLocker Network Unlock certificate"
     ProviderType=0
@@ -267,24 +267,27 @@ The configuration file, called bde-network-unlock.ini, must be located in the sa
 
 The subnet policy configuration file must use a “\[SUBNETS\]” section to identify the specific subnets. The named subnets may then be used to specify restrictions in certificate subsections. Subnets are defined as simple name-value pairs, in the common INI format, where each subnet has its own line, with the name on the left of the equals sign, and the subnet identified on the right of the equal sign as a Classless Inter-Domain Routing (CIDR) address or range. The key word “ENABLED” is disallowed for subnet names.
 
-    [SUBNETS]
-    SUBNET1=10.185.250.0/24 ; comment about this subrange could be here, after the semi-colon
-    SUBNET2=10.185.252.200/28 
-    SUBNET3= 2001:4898:a:2::/64 ; an IPv6 subnet
-    SUBNET4=2001:4898:a:3::/64; in production, the admin would likely give more useful names, like BUILDING9-EXCEPT-RECEP.
-    ```
-    Following the \[SUBNETS\] section, there can be sections for each Network Unlock certificate, identified by the certificate thumbprint formatted without any spaces, which define subnets clients can be unlocked from with that certificate.
+```ini
+[SUBNETS]
+SUBNET1=10.185.250.0/24 ; comment about this subrange could be here, after the semi-colon
+SUBNET2=10.185.252.200/28 
+SUBNET3= 2001:4898:a:2::/64 ; an IPv6 subnet
+SUBNET4=2001:4898:a:3::/64; in production, the admin would likely give more useful names, like BUILDING9-EXCEPT-RECEP.
+```
+Following the \[SUBNETS\] section, there can be sections for each Network Unlock certificate, identified by the certificate thumbprint formatted without any spaces, which define subnets clients can be unlocked from with that certificate.
 
-    >**Note:**  When specifying the certificate thumbprint, do not include any spaces. If spaces are included in the thumbprint the subnet configuration will fail because the thumbprint will not be recognized as valid.
-     
-    Subnet restrictions are defined within each certificate section by denoting the allowed list of permitted subnets. If any subnet is listed in a certificate section, then only those subnets listed are permitted for that certificate. If no subnet is listed in a certificate section, then all subnets are permitted for that certificate. If a certificate does not have a section in the subnet policy configuration file, then no subnet restrictions are applied for unlocking with that certificate. This means for restrictions to apply to every certificate, there must be a certificate section for every Network Unlock certificate on the server, and an explicit allowed list set for each certificate section.
-    Subnet lists are created by putting the name of a subnet from the \[SUBNETS\] section on its own line below the certificate section header. Then, the server will only unlock clients with this certificate on the subnet(s) specified as in the list. For troubleshooting, a subnet can be quickly excluded without deleting it from the section by simply commenting it out with a prepended semi-colon.
-    [‎2158a767e1c14e88e27a4c0aee111d2de2eafe60]
-    ;Comments could be added here to indicate when the cert was issued, which Group Policy should get it, and so on.
-    ;This list shows this cert is only allowed to unlock clients on SUBNET1 and SUBNET3 subnets. In this example, SUBNET2 is commented out.
-    SUBNET1
-    ;SUBNET2
-    SUBNET3
+>**Note:**  When specifying the certificate thumbprint, do not include any spaces. If spaces are included in the thumbprint the subnet configuration will fail because the thumbprint will not be recognized as valid.
+
+Subnet restrictions are defined within each certificate section by denoting the allowed list of permitted subnets. If any subnet is listed in a certificate section, then only those subnets listed are permitted for that certificate. If no subnet is listed in a certificate section, then all subnets are permitted for that certificate. If a certificate does not have a section in the subnet policy configuration file, then no subnet restrictions are applied for unlocking with that certificate. This means for restrictions to apply to every certificate, there must be a certificate section for every Network Unlock certificate on the server, and an explicit allowed list set for each certificate section.
+Subnet lists are created by putting the name of a subnet from the \[SUBNETS\] section on its own line below the certificate section header. Then, the server will only unlock clients with this certificate on the subnet(s) specified as in the list. For troubleshooting, a subnet can be quickly excluded without deleting it from the section by simply commenting it out with a prepended semi-colon.
+```ini
+[‎2158a767e1c14e88e27a4c0aee111d2de2eafe60]
+;Comments could be added here to indicate when the cert was issued, which Group Policy should get it, and so on.
+;This list shows this cert is only allowed to unlock clients on SUBNET1 and SUBNET3 subnets. In this example, SUBNET2 is commented out.
+SUBNET1
+;SUBNET2
+SUBNET3
+```
 
 To disallow the use of a certificate altogether, its subnet list may contain the line “DISABLED".
 

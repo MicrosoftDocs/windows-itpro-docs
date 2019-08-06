@@ -60,7 +60,7 @@ Microsoft Update allows for rapid releases, which means it will download small d
 The WSUS, Configuration Manager, and MMPC sources will deliver less frequent updates. The size of the updates may be slightly larger than the frequent release from Microsoft Update (as the delta, or differences between the latest version and what is on the endpoint will be larger). This ensures consistent protection without increasing ad hoc network usage (although the amount of data may be the same or increased as the updates will be fewer, but may be slightly larger).
 
 > [!IMPORTANT]
-> If you have set MMPC as a fallback source after WSUS or Microsoft Update, updates will only be downloaded from MMPC when the current update is considered to be out-of-date (by default, this is 2 consecutive days of not being able to apply updates from the WSUS or Microsoft Update services).
+> If you have set MMPC as a fallback source after WSUS or Microsoft Update, updates will only be downloaded from MMPC when the current update is considered to be out-of-date (by default, this is 14 consecutive days of not being able to apply updates from the WSUS or Microsoft Update services).
 > You can, however, [set the number of days before protection is reported as out-of-date](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).
 
 Each source has typical scenarios that depend on how your network is configured, in addition to how often they publish updates, as described in the following table:
@@ -93,7 +93,7 @@ The procedures in this article first describe how to set the order, and then how
 
 4. Expand the tree to **Windows components > Windows Defender > Signature updates** and configure the following settings:
 
-   1.  Double-click the **Define the order of sources for downloading definition updates** setting and set the option to **Enabled**.
+   1.  Double-click the **Define the order of sources for downloading security intelligence updates** setting and set the option to **Enabled**.
 
    2.  Enter the order of sources, separated by a single pipe, for example: `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`, as shown in the following screenshot.
 
@@ -101,7 +101,7 @@ The procedures in this article first describe how to set the order, and then how
 
    3. Click **OK**. This will set the order of protection update sources.
 
-   4. Double-click the **Define file shares for downloading definition updates** setting and set the option to **Enabled**.
+   4. Double-click the **Define file shares for downloading security intelligence updates** setting and set the option to **Enabled**.
 
    5. Enter the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](https://msdn.microsoft.com/library/gg465305.aspx) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`.  If you do not enter any paths then this source will be skipped when the VM downloads updates.
 
@@ -119,11 +119,11 @@ Use the following PowerShell cmdlets to set the update order.
 
 ```PowerShell
 Set-MpPreference -SignatureFallbackOrder {LOCATION|LOCATION|LOCATION|LOCATION}
-Set-MpPreference -SignatureDefinitionUpdateFileSharesSouce {\\UNC SHARE PATH|\\UNC SHARE PATH}
+Set-MpPreference -SignatureDefinitionUpdateFileSharesSource {\\UNC SHARE PATH|\\UNC SHARE PATH}
 ```
 See the following for more information:
 - [Set-MpPreference -SignatureFallbackOrder](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturefallbackorder)
-- [Set-MpPreference -SignatureDefinitionUpdateFileSharesSouce](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
+- [Set-MpPreference -SignatureDefinitionUpdateFileSharesSource](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
 - [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)
 - [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx)
 
@@ -133,7 +133,7 @@ Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com
 
 ```WMI
 SignatureFallbackOrder
-SignatureDefinitionUpdateFileSharesSouce
+SignatureDefinitionUpdateFileSharesSource
 ```
 
 See the following for more information:

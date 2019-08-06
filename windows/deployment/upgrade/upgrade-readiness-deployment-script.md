@@ -20,9 +20,12 @@ To automate the steps provided in [Get started with Upgrade Readiness](upgrade-r
 >[!IMPORTANT]
 >Upgrade Readiness was previously called Upgrade Analytics. References to Upgrade Analytics in any scripts or online content pertain to the Upgrade Readiness solution.
 
+>[!IMPORTANT]
+>The latest version of the Upgrade Readiness Script is **2.4.4 - 10.10.2018**
+
 For detailed information about using the Upgrade Readiness (also known as upgrade analytics) deployment script, see the [Upgrade Analytics blog](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/New-version-of-the-Upgrade-Analytics-Deployment-Script-available/ba-p/187164?advanced=false&collapse_discussion=true&q=new%20version%20of%20the%20upgrade%20analytics%20deployment%20script%20available&search_type=thread).
 
-> The following guidance applies to version 11.11.16 or later of the Upgrade Readiness deployment script. If you are using an older version, download the latest from the [Download Center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409).
+> The following guidance applies to version **2.4.4 - 10.10.2018** of the Upgrade Readiness deployment script. If you are using an older version, download the latest from the [Download Center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409).
 
 The Upgrade Readiness deployment script does the following:
 
@@ -70,7 +73,7 @@ To run the Upgrade Readiness deployment script:
     >
     > *IEOptInLevel = 3 Data collection is enabled for all sites*
 
-4. A recent version (03.02.17) of the deployment script is configured to collect and send diagnostic and debugging data to Microsoft. If you wish to disable sending diagnostic and debugging data to Microsoft, set **AppInsightsOptIn = false**. By default, **AppInsightsOptIn** is set to **true**.
+4. The deployment script is configured to collect and send diagnostic and debugging data to Microsoft. If you wish to disable sending diagnostic and debugging data to Microsoft, set **AppInsightsOptIn = false**. By default, **AppInsightsOptIn** is set to **true**.
 
     The data that is sent is the same data that is collected in the text log file that captures the events and error codes while running the script. This file is named in the following format: **UA_yyyy_mm_dd_hh_mm_ss_machineID.txt**. Log files are created in the drive that is specified in the RunConfig.bat file. By default this is set to: **%SystemDrive%\UADiagnostics**.
 
@@ -79,7 +82,7 @@ To run the Upgrade Readiness deployment script:
     \*vortex\*.data.microsoft.com<BR>
     \*settings\*.data.microsoft.com
 
-5. The latest version (03.28.2018) of the deployment script configures insider builds to continue to send the device name to the diagnostic data management service and the analytics portal. If you do not want to have insider builds send the device name sent to analytics and be available in the analytics portal, set **DeviceNAmeOptIn = false**. By default it is true, which preserves the behavior on previous versions of Windows. This setting only applies to insider builds. Note that the device name is also sent to AppInsights, so to ensure the device name is not sent to either place you would need to also set **AppInsightsOptIn = false**.
+5. The deployment script configures insider builds to continue to send the device name to the diagnostic data management service and the analytics portal. If you do not want to have insider builds send the device name sent to analytics and be available in the analytics portal, set **DeviceNAmeOptIn = false**. By default it is true, which preserves the behavior on previous versions of Windows. This setting only applies to insider builds. Note that the device name is also sent to AppInsights, so to ensure the device name is not sent to either place you would need to also set **AppInsightsOptIn = false**.
 
 6.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script. If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
 
@@ -147,8 +150,12 @@ Error creating or updating registry key: **CommercialId** at **HKLM:\SOFTWARE\Mi
 | 59 - CleanupOneSettings failed to delete LastPersistedEventTimeOrFirstBoot property at registry key path: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Diagnostics\Diagtrack** |The CleanupOneSettings function clears some of the cached values needed by the Appraiser which is the data collector on the monitored device. This helps in the download of the most recent for accurate running of the data collector. Verify that the account has the correct permissions to change or add registry keys. |
 | 60 - CleanupOneSettings failed to delete registry key: **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\ Diagnostics\Diagtrack\SettingsRequests** | Verify that the account has the correct permissions to change or add registry keys. |
 | 61 - CleanupOneSettings failed with an exception | CleanupOneSettings failed with an unexpected exception. |
-| 63 - Diagnostic data is disabled for the device | If AllowTelemetry == 0, devices cannot send diagnostic data. To resolve this, set the **AllowTelemetry** value at **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**. |
-
+| 62 - AllowTelemetry property value at registry key path **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection** is not of type REG_DWORD. It should be of type REG_DWORD. | Ensure that the **AllowTelemetry** property at path **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection** is a REG_DWORD. |
+| 63 - Diagnostic data is disabled for the device | If AllowTelemetry equals **0**, devices cannot send diagnostic data. To resolve this, set the **AllowTelemetry** value at **HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**. |
+| 64 - AllowTelemetry property value at registry key path **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection** is not of type REG_DWORD. It should be of type REG_DWORD. | Ensure that the **AllowTelemetry** property at **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection** is a REG_DWORD. |
+| 65 - Diagnostic data is disabled for the device | If AllowTelemetry equals **0**, devices cannot send diagnostic data. To resolve this, set the **AllowTelemetry** value at **HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**. |
+| 66 - All recent data uploads for the Universal Telemetry Client failed. | Review the UtcConnectionReport in WMI in the namespace **root\cimv2\mdm\dmmap** under the **MDM_Win32CompatibilityAppraiser_UniversalTelemetryClient01** class. Only SYSTEM has access to this class. Use [PSExec](https://docs.microsoft.com/sysinternals/downloads/psexec) to execute your WMI utility as SYSTEM.  |
+| 67 - CheckUtcCsp failed with an exception | There was an error reading the WIM/CIM class **MDM_Win32CompatibilityAppraiser_UniversalTelemetryClient01** in the namespace **root\cimv2\mdm\dmmap**. Review system for WMI errors. |
 
 
 
@@ -179,5 +186,5 @@ Error creating or updating registry key: **CommercialId** at **HKLM:\SOFTWARE\Mi
 > 
 > Then run the Enterprise Config script (RunConfig.bat) again. 
 > 
-> If the script still fails, then send mail to <strong>uasupport@microsoft.com</strong> including log files from the RunConfig.bat script. These log files are stored on the drive that is specified in the RunConfig.bat file. By default this is set to **%SystemDrive%\UADiagnostics**. The log file is named with the format **UA_yyyy_mm_dd_hh_mm_ss_machineID.txt**. There will be some additional logs generated under your **<system drive>\Windows\Temp** directory with the names similar to **AslLog_....txt**. You should send those logs as well.
+> If the script still fails, then send mail to <strong>uasupport@microsoft.com</strong> including log files from the RunConfig.bat script. These log files are stored on the drive that is specified in the RunConfig.bat file. By default this is set to **%SystemDrive%\UADiagnostics**. The log file is named with the format **UA_yyyy_mm_dd_hh_mm_ss_machineID.txt**. There will be some additional logs generated under your **\<system drive>\Windows\Temp** directory with the names similar to **AslLog_....txt**. You should send those logs as well.
 

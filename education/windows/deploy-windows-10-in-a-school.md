@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: levinec
 ms.author: ellevin
-ms.date: 05/21/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -250,7 +249,7 @@ Now that you have created your new Office 365 Education subscription, add the do
 
 #### To add additional domains and subdomains
 
-1. In the Office 365 admin center, in the list view, click **DOMAINS**.
+1. In the admin center, in the list view, click **DOMAINS**.
 2. In the details pane, above the list of domains, on the menu bar, click **Add domain**.
 3. In the Add a New Domain in Office 365 Wizard, on the **Verify domain wizard** page, click **Let’s get started**.
 4. On the **Verify domain** wizard page, in the **Enter a domain you already own** box, type your domain name, and then click **Next**.
@@ -491,7 +490,7 @@ You can bulk-import user and group accounts directly into Office 365, reducing t
 
 Now that you have created your new Office 365 Education subscription, you need to create user accounts. You can add user accounts for the teachers, other faculty, and students who will use the classroom.
 
-You can use the Office 365 admin center to add individual Office 365 accounts manually—a reasonable process when you’re adding only a few users. If you have many users, however, you can automate the process by creating a list of those users, and then use that list to create user accounts (that is, bulk-add users).
+You can use the Microsoft 365 admin center to add individual Office 365 accounts manually—a reasonable process when you’re adding only a few users. If you have many users, however, you can automate the process by creating a list of those users, and then use that list to create user accounts (that is, bulk-add users).
 
 The bulk-add process assigns the same Office 365 Education license plan to all users on the list. Therefore, you must create a separate list for each license plan you recorded in Table 2. Depending on the number of faculty members who need to use the classroom, you may want to add the faculty Office 365 accounts manually; however, use the bulk-add process to add student accounts.
 
@@ -587,7 +586,7 @@ Now that you have created your Microsoft Store for Business portal, you’re rea
 
 You can deploy apps to individual users or make apps available to users through your private store. Deploying apps to individual users restricts the app to those specified users. Making apps available through your private store allows all your users.
 
-For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/app-inventory-managemement-windows-store-for-business).
+For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/app-inventory-management-microsoft-store-for-business).
 
 ### Summary
 
@@ -1240,8 +1239,8 @@ For more information about how to:
 <td>Create or modify security groups and manage group membership in Office 365.<br/><br/>
 For more information about how to:
 <ul>
-<li>Create or modify security groups, see <a href="https://support.office.com/en-us/article/View-create-and-delete-groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7" data-raw-source="[View, create, and delete Groups in the Office 365 admin center](https://support.office.com/en-us/article/View-create-and-delete-groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7)">View, create, and delete Groups in the Office 365 admin center</a>.</li>
-<li>Manage group membership, see <a href="https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a" data-raw-source="[Manage Group membership in the Office 365 admin center](https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)">Manage Group membership in the Office 365 admin center</a>.</li>
+<li>Create or modify security groups, see <a href="https://support.office.com/en-us/article/View-create-and-delete-groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7" data-raw-source="[View, create, and delete Groups in the admin center](https://support.office.com/en-us/article/View-create-and-delete-groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7)">View, create, and delete Groups in the admin center</a>.</li>
+<li>Manage group membership, see <a href="https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a" data-raw-source="[Manage Group membership in the admin center](https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)">Manage Group membership in the admin center</a>.</li>
 </ul>
 
 </td>

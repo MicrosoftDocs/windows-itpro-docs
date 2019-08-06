@@ -66,7 +66,7 @@ Disabling this policy will not turn off the encryption on the system card, but t
 
 If you want to disable this policy use the following SyncML:
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
         <Replace>
@@ -134,7 +134,7 @@ The following list shows the supported values:
 
 If you want to disable this policy use the following SyncML:
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
         <Replace>
@@ -195,7 +195,7 @@ If you disable or do not configure this policy setting, BitLocker will use the d
 
  Sample value for this node to enable this policy and set the encryption methods is:
 
-``` syntax
+```xml
  <enabled/><data id="EncryptionMethodWithXtsOsDropDown_Name" value="xx"/><data id="EncryptionMethodWithXtsFdvDropDown_Name" value="xx"/><data id="EncryptionMethodWithXtsRdvDropDown_Name" value="xx"/>
 ```
 
@@ -215,7 +215,7 @@ EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for remov
 
   If you want to disable this policy use the following SyncML: 
 
-``` syntax
+```xml
                           <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -286,7 +286,7 @@ If you disable or do not configure this setting, users can configure only basic 
 
 Sample value for this node to enable this policy is:
 
-``` syntax
+```xml
 <enabled/><data id="ConfigureNonTPMStartupKeyUsage_Name" value="xx"/><data id="ConfigureTPMStartupKeyUsageDropDown_Name" value="yy"/><data id="ConfigurePINUsageDropDown_Name" value="yy"/><data id="ConfigureTPMPINKeyUsageDropDown_Name" value="yy"/><data id="ConfigureTPMUsageDropDown_Name" value="yy"/>
 ```
 Data id:
@@ -313,7 +313,7 @@ The possible values for &#39;yy&#39; are:
 
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
-``` syntax
+```xml
                          <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -375,13 +375,13 @@ If you disable or do not configure this setting, users can configure a startup P
 
 Sample value for this node to enable this policy is:
 
-``` syntax
+```xml
 <enabled/><data id="MinPINLength" value="xx"/>
 ```
 
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
-``` syntax
+```xml
                          <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -442,7 +442,7 @@ If you set the value to &quot;3&quot; (Use custom recovery URL), the URL you typ
 
 Sample value for this node to enable this policy is:
 
-``` syntax
+```xml
 <enabled/><data id="PrebootRecoveryInfoDropDown_Name" value="xx"/><data id="RecoveryMessage_Input" value="yy"/><data id="RecoveryUrl_Input" value="zz"/>
 ```
 The possible values for &#39;xx&#39; are:
@@ -459,7 +459,7 @@ The possible values for &#39;xx&#39; are:
 
 Disabling the policy will let the system choose the default behaviors.  If you want to disable this policy use the following SyncML:
 
-``` syntax
+```xml
                         <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -532,7 +532,7 @@ If this setting is disabled or not configured, the default recovery options are 
 
 Sample value for this node to enable this policy is:
 
-``` syntax
+```xml
 <enabled/><data id="OSAllowDRA_Name" value="xx"/><data id="OSRecoveryPasswordUsageDropDown_Name" value="yy"/><data id="OSRecoveryKeyUsageDropDown_Name" value="yy"/><data id="OSHideRecoveryPage_Name" value="xx"/><data id="OSActiveDirectoryBackup_Name" value="xx"/><data id="OSActiveDirectoryBackupDropDown_Name" value="zz"/><data id="OSRequireActiveDirectoryBackup_Name" value="xx"/>
 ```
 
@@ -559,7 +559,7 @@ The possible values for &#39;zz&#39; are:
 
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
-``` syntax
+```xml
                          <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -631,7 +631,7 @@ If this setting is not configured or disabled, the default recovery options are 
 
 Sample value for this node to enable this policy is:
 
-``` syntax
+```xml
 <enabled/><data id="FDVAllowDRA_Name" value="xx"/><data id="FDVRecoveryPasswordUsageDropDown_Name" value="yy"/><data id="FDVRecoveryKeyUsageDropDown_Name" value="yy"/><data id="FDVHideRecoveryPage_Name" value="xx"/><data id="FDVActiveDirectoryBackup_Name" value="xx"/><data id="FDVActiveDirectoryBackupDropDown_Name" value="zz"/><data id="FDVRequireActiveDirectoryBackup_Name" value="xx"/>
 ```
 
@@ -657,7 +657,7 @@ The possible values for &#39;zz&#39; are:
 
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
-``` syntax
+```xml
                          <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -713,13 +713,13 @@ If you enable this setting, all fixed data drives that are not BitLocker-protect
 
 Sample value for this node to enable this policy is:
 
-``` syntax
+```xml
 <enabled/>
 ```
 
 If you disable or do not configure this setting, all fixed data drives on the computer will be mounted with read and write access. If you want to disable this policy use the following SyncML:
 
-``` syntax
+```xml
                          <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -781,7 +781,7 @@ If you disable or do not configure this policy setting, all removable data drive
 
 Sample value for this node to enable this policy is:
 
-``` syntax
+```xml
  <enabled/><data id="RDVCrossOrg" value="xx"/>
 ```
 
@@ -793,7 +793,7 @@ The possible values for &#39;xx&#39; are:
 
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
-``` syntax
+```xml
                          <Replace>
                          <CmdID>$CmdID$</CmdID>
                            <Item>
@@ -844,7 +844,7 @@ The following list shows the supported values:
 -   0 – Disables the warning prompt. Starting in Windows 10, version 1803, the value 0 can only be set for Azure Active Directory joined devices.  Windows will attempt to silently enable BitLocker for value 0.
 -   1 (default) – Warning prompt allowed.
 
-``` syntax
+```xml
 <Replace>
     <CmdID>110</CmdID>
     <Item>
@@ -886,7 +886,7 @@ The expected values for this policy are:
 
 If you want to disable this policy use the following SyncML:
 
-``` syntax
+```xml
  <Replace>
  <CmdID>111</CmdID>
    <Item>
@@ -904,7 +904,7 @@ If you want to disable this policy use the following SyncML:
 
 The following example is provided to show proper format and should not be taken as a recommendation.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
 

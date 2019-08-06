@@ -115,11 +115,11 @@ Use these ports on the Surface Hub for Guest Mode.
 
 These are the port connections used for Guest Mode on the 55" and 84" Surface Hubs.
 
-![image showing guest ports on 55" surface hub. ](images/sh-55-guest-ports.png)
+![image showing guest ports on 55" surface hub.](images/sh-55-guest-ports.png)
 
 Wired port connections on 55" Surface Hub
 
-![image showing guest ports on 84" surface hub. ](images/sh-84-guest-ports.png)
+![image showing guest ports on 84" surface hub.](images/sh-84-guest-ports.png)
 
 Wired port connections on 84" Surface Hub
 
@@ -294,7 +294,7 @@ Check directly with graphics card vendors for the latest drivers.
 
 Replacement PC ports on 55" Surface Hub
 
-![image showing replacement pc ports on 55" surface hub. ](images/sh-55-rpc-ports.png)
+![image showing replacement pc ports on 55" surface hub.](images/sh-55-rpc-ports.png)
 
 <table>
 <colgroup>
@@ -351,7 +351,7 @@ Replacement PC ports on 55" Surface Hub
 
 Replacement PC ports on 84" Surface Hub
 
-![image showing replacement pc ports on 84" surface hub. ](images/sh-84-rpc-ports.png)
+![image showing replacement pc ports on 84" surface hub.](images/sh-84-rpc-ports.png)
 
 <table>
 <colgroup>

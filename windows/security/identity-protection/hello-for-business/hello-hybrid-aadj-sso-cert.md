@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -90,16 +90,16 @@ The deployment uses the **NDES Servers** security group to assign the NDES servi
 
 Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
 
-1.	Open **Active Directory Users and Computers**.
-2.	Expand the domain node from the navigation pane.
-3.	Right-click the **Users** container. Hover over **New** and click **Group**.
-4.	Type **NDES Servers** in the **Group Name** text box.
-5.	Click **OK**.
+1. Open **Active Directory Users and Computers**.
+2. Expand the domain node from the navigation pane.
+3. Right-click the **Users** container. Hover over **New** and click **Group**.
+4. Type **NDES Servers** in the **Group Name** text box.
+5. Click **OK**.
 
 ### Add the NDES server to the NDES Servers global security group
 Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
 
-1.	Open **Active Directory Users and Computers**.
+1. Open **Active Directory Users and Computers**.
 2.  Expand the domain node from the navigation pane.
 3.  Click **Computers** from the navigation pane. Right-click the name of the NDES server that will host the NDES server role.  Click **Add to a group...**.
 4. Type **NDES Servers** in **Enter the object names to select**.  Click **OK**.  Click **OK** on the **Active Directory Domain Services** success dialog.
@@ -189,9 +189,9 @@ NDES uses a server authentication certificate to authenticate the server endpoin
 Sign-in to the issuing certificate authority or management workstations with _Domain Admin_ equivalent credentials.
 
 1.  Open the **Certificate Authority** management console.
-2.	Right-click **Certificate Templates** and click **Manage**.
-3.	In the **Certificate Template Console**, right-click the **Computer** template in the details pane and click **Duplicate Template**.
-4.	On the **General** tab, type **NDES-Intune Authentication** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise's needs.  
+2. Right-click **Certificate Templates** and click **Manage**.
+3. In the **Certificate Template Console**, right-click the **Computer** template in the details pane and click **Duplicate Template**.
+4. On the **General** tab, type **NDES-Intune Authentication** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise's needs.  
     **Note:** If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
 5.  On the **Subject** tab, select **Supply in the request**.
 6.  On the **Cryptography** tab, validate the **Minimum key size** is **2048**.
@@ -214,10 +214,10 @@ Sign-in a certificate authority or management workstations with _Domain Admin eq
 6. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  
 7. On the **Extensions** tab, verify the **Application Policies** extension includes **Smart Card Logon**.
 8. On the **Subject** tab, select **Supply in the request**.
-9.	On the **Request Handling** tab, select **Signature and encryption** from the **Purpose** list.  Select the **Renew with same key** check box. Select **Enroll subject without requiring any user input**.
-10.	On the **Security** tab, click **Add**. Type **NDESSvc** in the **Enter the object names to select** text box and click **OK**.
-12.	Select  **NDESSvc** from the **Group or users names** list. In the **Permissions for NDES Servers** section, select the **Allow** check box for the **Read**, **Enroll**. Clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared. Click **OK**. 
-13.	Close the console.
+9. On the **Request Handling** tab, select **Signature and encryption** from the **Purpose** list.  Select the **Renew with same key** check box. Select **Enroll subject without requiring any user input**.
+10. On the **Security** tab, click **Add**. Type **NDESSvc** in the **Enter the object names to select** text box and click **OK**.
+12. Select  **NDESSvc** from the **Group or users names** list. In the **Permissions for NDES Servers** section, select the **Allow** check box for the **Read**, **Enroll**. Clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared. Click **OK**. 
+13. Close the console.
 
 ### Publish certificate templates
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
@@ -227,12 +227,12 @@ The certificate authority may only issue certificates for certificate templates 
 
 Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
 
-1.	Open the **Certificate Authority** management console.
-2.	Expand the parent node from the navigation pane.
-3.	Click **Certificate Templates** in the navigation pane.
-4.	Right-click the **Certificate Templates** node.  Click **New**, and click **Certificate Template** to issue.
-5.	In the **Enable Certificates Templates** window, select the **NDES-Intune Authentication** and **AADJ WHFB Authentication** templates you created in the previous steps.  Click **OK** to publish the selected certificate templates to the certificate authority.   
-6.	Close the console.
+1. Open the **Certificate Authority** management console.
+2. Expand the parent node from the navigation pane.
+3. Click **Certificate Templates** in the navigation pane.
+4. Right-click the **Certificate Templates** node.  Click **New**, and click **Certificate Template** to issue.
+5. In the **Enable Certificates Templates** window, select the **NDES-Intune Authentication** and **AADJ WHFB Authentication** templates you created in the previous steps.  Click **OK** to publish the selected certificate templates to the certificate authority.   
+6. Close the console.
 
 ## Install and Configure the NDES Role
 This section includes the following topics:
