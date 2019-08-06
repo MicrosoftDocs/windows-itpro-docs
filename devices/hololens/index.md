@@ -19,7 +19,7 @@ ms.date: 07/14/2019
 
 <p>Now, with the introduction of HoloLens 2, every device provides commercial ready management enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.</p>
 
-</td><td align="left" style="border: 0px"><img alt="HoloLens 2 side view" src="./images/hololens2-side-render-xs.png"/></td></tr>
+</td><td align="left" style="border: 0px"><img alt="HoloLens 2 side view" src="images/hololens2-side-render-xs.png"/></td></tr>
 </tbody></table>
 
 ## Guides in this section
