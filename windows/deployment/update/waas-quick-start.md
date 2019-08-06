@@ -61,12 +61,7 @@ Additional technologies such as BranchCache and Delivery Optimization, both peer
 
 See [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) and [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) for more information.
 
-## Video: An overview of Windows as a service
 
-Click the following Microsoft Mechanics video for an overview of the updated release model, particularly the Semi-Annual Channel.
-
-
-[![YouTube video of Michael Niehouse explaining how the Semi-Annual Channel works](images/SAC_vid_crop.jpg)](https://youtu.be/qSAsiM01GOU) 
  
 ## Learn more
 
