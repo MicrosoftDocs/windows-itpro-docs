@@ -14,7 +14,7 @@ ms.date: 07/14/2019
 # Microsoft HoloLens
 
 <table><tbody>
-<tr><td style="border: 0px;width: 50%;valign= top">
+<tr><td style="border: 0px;width: 75%;valign= top">
 <p>Microsoft HoloLens is the first fully self-contained holographic computer running Windows 10.</p>
 
 <p>Now, with the introduction of HoloLens 2, every device provides commercial ready management enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.</p>
