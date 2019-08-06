@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: c7d6dd0b-e264-42bb-8c9d-ac2f837018d2
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Remove sites from a local Enterprise Mode site list (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

@@ -9,7 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

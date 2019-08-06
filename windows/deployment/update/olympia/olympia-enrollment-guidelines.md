@@ -5,7 +5,7 @@ ms.author: greglin
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.reviewer: 
 manager: laurawi
 keywords: insider, trial, enterprise, lab, corporation, test

@@ -7,7 +7,7 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: 5120aaf9-8ead-438a-8472-3cdd924b7d9e
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: dansimp
 title: Auto proxy configuration settings for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

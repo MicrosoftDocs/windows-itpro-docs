@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: f51224bd-3371-4551-821d-1d62310e3384
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Deploy Internet Explorer 11 using Automatic Version Synchronization (AVS) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
