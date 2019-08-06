@@ -4,7 +4,6 @@ ms.reviewer:
 manager: laurawi
 description: Windows Autopilot deployment
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
-audience: itpro
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
