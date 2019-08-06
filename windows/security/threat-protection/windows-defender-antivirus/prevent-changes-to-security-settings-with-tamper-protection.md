@@ -29,7 +29,7 @@ With Tamper Protection, malicious apps are prevented from taking actions like th
 - Disabling virus and threat protection
 - Disabling real-time protection
 - Turning off behavior monitoring
-- Disabling IOfficeAntivirus (IOAV)
+- Disabling antivirus (such as IOfficeAntivirus (IOAV))
 - Disabling cloud-delivered protection
 - Removing security intelligence updates
 
@@ -48,10 +48,10 @@ Tamper Protection doesn't prevent you from viewing your security settings, or yo
 
 ## Turn Tamper Protection on (or off) for your organization 
 
-To turn Tamper Protection on (or off), use the Microsoft 365 Device Management portal. You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task. 
+If you are part of your organization's security team, you can turn Tamper Protection on (or off) in the Microsoft 365 Device Management portal. You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task. 
 
 1. Go to the Microsoft 365 Device Management portal ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) and sign in with your work or school account. 
-2. Select Device configuration > Profiles.
+2. Select **Device configuration** > **Profiles**.
 3. 
 
 ## Turn Tamper Protection on (or off) for an individual machine
