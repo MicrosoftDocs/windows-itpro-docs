@@ -39,7 +39,7 @@ The following example demonstrates how to obtain an Azure AD access token that y
 
 Replace the *auth_url*, *client_id*, and *client_secret* values with the ones you got from **Settings** page in the portal:
 
-```
+```python
 import json
 import requests
 from pprint import pprint
@@ -62,7 +62,7 @@ token = json.loads(response.text)["access_token"]
 ## Step 2: Create request session object
 Add HTTP headers to the session object, including the Authorization header with the token that was obtained.
 
-```
+```python
 with requests.Session() as session:
     session.headers = {
         'Authorization': 'Bearer {}'.format(token),
@@ -74,7 +74,7 @@ with requests.Session() as session:
 ## Step 3: Create calls to the custom threat intelligence API
 After adding HTTP headers to the session object, you can now create calls to the API. The following example demonstrates how you can view all the alert definition entities:
 
-```
+```python
     response = session.get("https://ti.securitycenter.windows.com/V1.0/AlertDefinitions")
     pprint(json.loads(response.text))
 ```
@@ -85,7 +85,7 @@ The response is empty on initial use of the API.
 ## Step 4: Create a new alert definition
 The following example demonstrates how you to create a new alert definition.
 
-```
+```python
     alert_definition = {"Name": "The alert's name",
                           "Severity": "Low",
                           "InternalDescription": "An internal description of the alert",
@@ -104,7 +104,7 @@ The following example demonstrates how you to create a new alert definition.
 ## Step 5: Create a new indicator of compromise
 You can now use the alert ID obtained from creating a new alert definition to create a new indicator of compromise.
 
-```
+```python
     alert_definition_id = json.loads(response.text)["Id"]
 
       ioc = {'Type': "Sha1",
@@ -121,7 +121,7 @@ You can now use the alert ID obtained from creating a new alert definition to cr
 ## Complete code
 You can use the complete code to create calls to the API.
 
-```syntax
+```python
 import json
 import requests
 from pprint import pprint

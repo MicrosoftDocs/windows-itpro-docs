@@ -22,21 +22,23 @@ ms.topic: conceptual
 
 **Applies to:**
 
-[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
->[!IMPORTANT]
->This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+This topic describes how to deploy Microsoft Defender ATP for Mac manually. A successful deployment requires the completion of all of the following steps:
+- [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
+- [Application installation](#application-installation)
+- [Client configuration](#client-configuration)
 
 ## Prerequisites and system requirements
 
-Before you get started, please see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Download installation and onboarding packages
 
 Download the installation and onboarding packages from Windows Defender Security Center:
 
 1. In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In Section 1 of the page, set operating system to **Linux, macOS, iOS or Android** and Deployment method to **Local script**.
+2. In Section 1 of the page, set operating system to **Linux, macOS, iOS, and Android** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
@@ -46,7 +48,7 @@ Download the installation and onboarding packages from Windows Defender Security
     Extract the contents of the .zip files:
   
     ```bash
-   mavel-macmini:Downloads test$ ls -l
+    ls -l
     total 721152
     -rw-r--r--  1 test  staff       6185 Mar 15 10:45 WindowsDefenderATPOnboardingPackage.zip
     -rw-r--r--  1 test  staff  354531845 Mar 13 08:57 wdav.pkg
@@ -76,21 +78,21 @@ To complete this process, you must have admin privileges on the machine.
 
     ![Security and privacy window screenshot](images/MDATP_31_SecurityPrivacySettings.png)
 
-The installation will proceed.
+The installation proceeds.
 
 > [!NOTE]
 > If you don't select **Allow**, the installation will proceed after 5 minutes. Defender ATP will be loaded, but real-time protection will be disabled.
 
-### Fixing disabled Real Time Protection
+### Fixing disabled Real-Time Protection
 
-If you did not enable Microsoft's driver during installation, then Defender's application will display a banner prompting you to enable it:
+If you did not enable Microsoft's driver during installation, then the application displays a banner prompting you to enable it:
 
    ![RTP disabled screenshot](images/MDATP_32_Main_App_Fix.png)
 
-You can also run ```mdatp --health```. It will report if Real Time Protection is enabled but not available:
+You can also run ```mdatp --health```. It reports if Real-Time Protection is enabled but not available:
 
 ```bash
-mavel-mojave:~ testuser$ mdatp --health
+mdatp --health
 ...
 realTimeProtectionAvailable             : false
 realTimeProtectionEnabled               : true
@@ -98,19 +100,19 @@ realTimeProtectionEnabled               : true
 ```
 
 > [!NOTE]
-> You have a 30 minute window to enable Real Time Protection from the warning banner, immediately following installation.
+> You have a 30 minute window to enable Real-Time Protection from the warning banner, immediately following installation.
 
-The warning banner containing a **Fix** button, which allows you to quickly enable Real Time Protection, without having to open a command prompt. Select the **Fix** button. It will prompt the **Security & Privacy** system window, where you will have to **Allow** system software from developers "Microsoft Corporation".
+The warning banner contains a **Fix** button, which allows you to quickly enable Real-Time Protection, without having to open a command prompt. Select the **Fix** button. It prompts the **Security & Privacy** system window, where you have to **Allow** system software from developers "Microsoft Corporation".
 
-If you don't see a prompt, it means that 30 or more minutes have already passed, and Real Time Protection has still not been enabled:
+If you don't see a prompt, it means that 30 or more minutes have already passed, and Real-Time Protection has still not been enabled:
 
 ![Security and privacy window after prompt expired screenshot](images/MDATP_33_SecurityPrivacySettings_NoPrompt.png)
 
-In this case, you will need to perform the following steps to enable Real Time Protection instead. 
+In this case, you need to perform the following steps to enable Real-Time Protection instead.
 
 1. In Terminal, attempt to install the driver. (The operation will fail)
     ```bash
-    mavel-mojave:~ testuser$ sudo kextutil /Library/Extensions/wdavkext.kext
+    sudo kextutil /Library/Extensions/wdavkext.kext
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Diagnostics for /Library/Extensions/wdavkext.kext:
@@ -123,13 +125,13 @@ In this case, you will need to perform the following steps to enable Real Time P
 4. In Terminal, install the driver again. This time the operation will succeed:
 
 ```bash
-mavel-mojave:~ testuser$ sudo kextutil /Library/Extensions/wdavkext.kext
+sudo kextutil /Library/Extensions/wdavkext.kext
 ```
 
-The banner should disappear from the Defender application, and ```mdatp --health``` should now report that Real Time Protection is both enabled and available:
+The banner should disappear from the Defender application, and ```mdatp --health``` should now report that Real-Time Protection is both enabled and available:
 
 ```bash
-mavel-mojave:~ testuser$ mdatp --health
+mdatp --health
 ...
 realTimeProtectionAvailable             : true
 realTimeProtectionEnabled               : true
@@ -140,23 +142,23 @@ realTimeProtectionEnabled               : true
 
 1. Copy wdav.pkg and WindowsDefenderATPOnboarding.py to the machine where you deploy Microsoft Defender ATP for Mac.
 
-    The client machine is not associated with orgId.  Note that the orgid is blank.
+    The client machine is not associated with orgId. Note that the *orgId* attribute is blank.
 
     ```bash
-    mavel-mojave:wdavconfig testuser$ mdatp --health orgId
+    mdatp --health orgId
     ```
 
 2. Install the configuration file on a client machine:
 
     ```bash
-    mavel-mojave:wdavconfig testuser$ python WindowsDefenderATPOnboarding.py
+    python WindowsDefenderATPOnboarding.py
     Generating /Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist ... (You may be required to enter sudos password)
     ```
 
-3. Verify that the machine is now associated with orgId:
+3. Verify that the machine is now associated with your organization and reports a valid *orgId*:
 
     ```bash
-    mavel-mojave:wdavconfig testuser$ mdatp --health orgId
+    mdatp --health orgId
     E6875323-A6C0-4C60-87AD-114BBE7439B8
     ```
 

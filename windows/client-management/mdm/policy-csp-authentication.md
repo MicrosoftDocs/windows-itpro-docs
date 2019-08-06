@@ -358,6 +358,9 @@ The following list shows the supported values:
 
 This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
 
+> [!Important]
+> Pre-configured candidate local accounts are any local accounts (pre-configured or added) in your device.
+
 Value type is integer. Supported values:
 
 - 0 - (default) The feature defaults to the existing SKU and device capabilities.
@@ -498,18 +501,28 @@ Value type is string.
 <!--/Policy-->
 
 <!--/Policies-->
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Authentication policies supported by Windows Holographic
+
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Authentication policies supported by HoloLens 2
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
-<!--EndHoloLens-->
+- [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
+  <!--EndHoloLens2-->
 
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Authentication policies supported by Windows Holographic for Business
+## <a href="" id="hololensbusinessspolicies"></a>Authentication policies supported by HoloLens (1st gen) Commercial Suite
 
 - [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
 - [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
   <!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Authentication policies supported by HoloLens (1st gen) Development Edition
+
+- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+<!--EndHoloLens-->
+
+
   <hr/>
 
 Footnotes:

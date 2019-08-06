@@ -32,15 +32,15 @@ The recovery process included in this topic only works for desktop devices. WIP 
 
 ## Manually create an EFS DRA certificate
 
-1.	On a computer without an EFS DRA certificate installed, open a command prompt with elevated rights, and then navigate to where you want to store the certificate.
+1. On a computer without an EFS DRA certificate installed, open a command prompt with elevated rights, and then navigate to where you want to store the certificate.
 
-2.	Run this command:
+2. Run this command:
     
     <code>cipher /r:<i>EFSRA</i></code>
     
     Where *EFSRA* is the name of the .cer and .pfx files that you want to create.
 
-3.	When prompted, type and confirm a password to help protect your new Personal Information Exchange (.pfx) file.
+3. When prompted, type and confirm a password to help protect your new Personal Information Exchange (.pfx) file.
 
     The EFSDRA.cer and EFSDRA.pfx files are created in the location you specified in Step 1.
 
@@ -61,15 +61,15 @@ The recovery process included in this topic only works for desktop devices. WIP 
 
     Where *filename* is the name of the file you created in Step 1.
 
-4.	Make sure that your data recovery certificate is listed in the **Recovery Certificates** list.
+4. Make sure that your data recovery certificate is listed in the **Recovery Certificates** list.
 
 ## Recover your data using the EFS DRA certificate in a test environment
 
-1.	Copy your WIP-encrypted file to a location where you have admin access.
+1. Copy your WIP-encrypted file to a location where you have admin access.
 
-2.	Install the EFSDRA.pfx file, using its password.
+2. Install the EFSDRA.pfx file, using its password.
 
-3.	Open a command prompt with elevated rights, navigate to the encrypted file, and then run this command:
+3. Open a command prompt with elevated rights, navigate to the encrypted file, and then run this command:
 
     <code>cipher /d <i>encryptedfile.extension</i></code>
     
@@ -127,15 +127,15 @@ The employee experience is based on sign in with an Azure AD work account. The e
 After signing in, the necessary WIP key info is automatically downloaded and employees are able to access the files again.
 
 **To test what the employee sees during the WIP key recovery process**
-1.	Attempt to open a work file on an unenrolled device.
+1. Attempt to open a work file on an unenrolled device.
 
     The **Connect to Work to access work files** box appears.
 
-2.	Click **Connect**.
+2. Click **Connect**.
 
     The **Access work or school settings** page appears.
 
-3.	Sign-in to Azure AD as the employee and verify that the files now open
+3. Sign-in to Azure AD as the employee and verify that the files now open
 
 ## Related topics
 - [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx)

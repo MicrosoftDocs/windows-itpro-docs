@@ -3,9 +3,9 @@ author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Configure Autofill -->
@@ -19,7 +19,7 @@ ms:topic: include
 |          Group Policy           |  MDM  | Registry |            Description            |                 Most restricted                  |
 |---------------------------------|:-----:|:--------:|-----------------------------------|:------------------------------------------------:|
 | Not configured<br>**(default)** | Blank |  Blank   | Users can choose to use Autofill. |                                                  |
-|            Disabled             |   0   |    no    |            Prevented.             | ![Most restricted value](/images/check-gn.png) |
+|            Disabled             |   0   |    no    |            Prevented.             | ![Most restricted value](../images/check-gn.png) |
 |             Enabled             |   1   |   yes    |             Allowed.              |                                                  |
 
 ---

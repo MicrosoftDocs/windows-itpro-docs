@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -26,14 +26,13 @@ Windows Autopilot includes support for a growing list of scenarios, designed to 
 
 The following Windows Autopilot scenarios are described in this guide:
 
-<table>
-<th>Scenario<th>More information
-<tr><td>Deploy devices that will be set up by a member of the organization and configured for that person<td>[Windows Autopilot user-driven mode](user-driven.md)
-<tr><td>Deploy devices that will be automatically configured for shared use, as a kiosk, or as a digital signage device.<td>[Windows Autopilot self-deploying mode](self-deploying.md)
-<tr><td>Re-deploy a device in a business-ready state.<td>[Windows Autopilot Reset](windows-autopilot-reset.md)
-<tr><td>Pre-provision a device with up-to-date applications, policies and settings.<td>[White glove](white-glove.md)
-<tr><td>Deploy Windows 10 on an existing Windows 7 or 8.1 device<td>[Windows Autopilot for existing devices](existing-devices.md)
-</table>
+| Scenario | More information |
+| --- | --- |
+| Deploy devices that will be set up by a member of the organization and configured for that person | [Windows Autopilot user-driven mode](user-driven.md) |
+| Deploy devices that will be automatically configured for shared use, as a kiosk, or as a digital signage device.| [Windows Autopilot self-deploying mode](self-deploying.md) |
+| Re-deploy a device in a business-ready state.| [Windows Autopilot Reset](windows-autopilot-reset.md) |
+| Pre-provision a device with up-to-date applications, policies and settings.| [White glove](white-glove.md) |
+| Deploy Windows 10 on an existing Windows 7 or 8.1 device | [Windows Autopilot for existing devices](existing-devices.md) |
 
 ## Windows Autopilot capabilities
 

@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -29,6 +29,9 @@ Your environment is federated and you are ready to configure device registration
 > [!IMPORTANT]
 > If your environment is not federated, review the [New Installation baseline](hello-hybrid-cert-new-install.md) section of this deployment document to learn how to federate your environment for your Windows Hello for Business deployment. 
 
+>[!TIP]
+>Refer to the [Tutorial: Configure hybrid Azure Active Directory join for federated domains](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-federated-domains) to learn more about setting up Azure Active Directory Connect for a simplified join flow for Azure AD device registration.
+
 Use this three-phased approach for configuring device registration.
 1. [Configure devices to register in Azure](#configure-azure-for-device-registration)
 2. [Synchronize devices to on-premises Active Directory](#configure-active-directory-to-support-azure-device-synchronization)
@@ -41,6 +44,9 @@ Use this three-phased approach for configuring device registration.
 > * Hybrid Azure AD joined devices
 >
 > You can learn about this and more by reading [Introduction to Device Management in Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/device-management-introduction)
+
+>[!IMPORTANT]
+> To use hybrid identity with Azure Active Directory and device WriteBack features, you must use the built-in GUI with the [latest updates for ADConnect](https://www.microsoft.com/download/details.aspx?id=47594).
 
 ## Configure Azure for Device Registration
 Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD. 
@@ -66,7 +72,7 @@ To locate the schema master role holder, open and command prompt and type:
 
 ![Netdom example output](images/hello-cmd-netdom.png)
 
-The command should return the name of the domain controller where you need to adprep.exe.  Update the schema locally on the domain controller hosting the Schema master role.
+The command should return the name of the domain controller where you need to run adprep.exe.  Update the schema locally on the domain controller hosting the Schema master role.
 
 #### Updating the Schema
 
@@ -120,7 +126,7 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 2. On your AD FS primary server, ensure you are logged in as AD DS user with enterprise administrator privileges and open an elevated Windows PowerShell prompt.  Then, run the following commands:  
 
    `Import-module activedirectory`  
-   `PS C:\> Initialize-ADDeviceRegistration -ServiceAccountName "<your service account>" ` 
+   `PS C:\> Initialize-ADDeviceRegistration -ServiceAccountName "<your service account>"` 
 3. On the pop-up window click **Yes**.
 
 > [!NOTE]
@@ -129,7 +135,6 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 ![Device Registration](images/hybridct/device3.png)  
 
 The above PSH creates the following objects:  
-
 
 - RegisteredDevices container under the AD domain partition  
 - Device Registration Service container and object under Configuration --> Services --> Device Registration Configuration  
@@ -145,7 +150,7 @@ The above PSH creates the following objects:
 If you plan to use Windows 10 domain join (with automatic registration to Azure AD) as described here, execute the following commands to create a service connection point in AD DS  
 1.  Open Windows PowerShell and execute the following:
 
-    `PS C:>Import-Module -Name "C:\Program Files\Microsoft Azure Active Directory Connect\AdPrep\AdSyncPrep.psm1" ` 
+    `PS C:>Import-Module -Name "C:\Program Files\Microsoft Azure Active Directory Connect\AdPrep\AdSyncPrep.psm1"` 
 
 > [!NOTE]
 > If necessary, copy the AdSyncPrep.psm1 file from your Azure AD Connect server.  This file is located in Program Files\Microsoft Azure Active Directory Connect\AdPrep
@@ -160,7 +165,7 @@ If you plan to use Windows 10 domain join (with automatic registration to Azure 
 
 3. Run the following PowerShell command 
 
-   `PS C:>Initialize-ADSyncDomainJoinedComputerSync -AdConnectorAccount [AD connector account name] -AzureADCredentials $aadAdminCred ` 
+   `PS C:>Initialize-ADSyncDomainJoinedComputerSync -AdConnectorAccount [AD connector account name] -AzureADCredentials $aadAdminCred` 
 
 Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory.
 
@@ -171,7 +176,7 @@ To ensure AD DS objects and containers are in the correct state for write back o
 
 1.  Open Windows PowerShell and execute the following:  
 
-    `PS C:>Initialize-ADSyncDeviceWriteBack -DomainName <AD DS domain name> -AdConnectorAccount [AD connector account name] ` 
+    `PS C:>Initialize-ADSyncDeviceWriteBack -DomainName <AD DS domain name> -AdConnectorAccount [AD connector account name]` 
 
 Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory in domain\accountname format  
 
@@ -278,7 +283,8 @@ The definition helps you to verify whether the values are present or if you need
 
 **`http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid`** - This claim must contain the Uniform Resource Identifier (URI) of any of the verified domain names that connect with the on-premises federation service (AD FS or 3rd party) issuing the token. In AD FS, you can add issuance transform rules that look like the ones below in that specific order after the ones above. Please note that one rule to explicitly issue the rule for users is necessary. In the rules below, a first rule identifying user vs. computer authentication is added.
 
-    @RuleName = "Issue account type with the value User when its not a computer"
+    @RuleName = "Issue account type with the value User when it is not a computer"
+
     NOT EXISTS(
     [
         Type == "http://schemas.microsoft.com/ws/2012/01/accounttype", 
@@ -473,6 +479,7 @@ The following script helps you with the creation of the issuance transform rules
 
     Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $crSet.ClaimRulesString 
 
+
 #### Remarks 
 
 - This script appends the rules to the existing rules. Do not run the script twice because the set of rules would be added twice. Make sure that no corresponding rules exist for these claims (under the corresponding conditions) before running the script again.
@@ -512,7 +519,6 @@ For your reference, below is a comprehensive list of the AD DS devices, containe
 > [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
 
 <br>
-
 <hr>
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide

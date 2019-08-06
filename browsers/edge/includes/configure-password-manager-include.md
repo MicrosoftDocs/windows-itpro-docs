@@ -3,9 +3,9 @@ author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Configure Password Manager -->
@@ -19,7 +19,7 @@ ms:topic: include
 |       Group Policy       |  MDM  | Registry |                      Description                       |                 Most restricted                  |
 |--------------------------|:-----:|:--------:|--------------------------------------------------------|:------------------------------------------------:|
 |      Not configured      | Blank |  Blank   | Users can choose to save and manage passwords locally. |                                                  |
-|         Disabled         |   0   |    no    |                      Not allowed.                      | ![Most restricted value](/images/check-gn.png) |
+|         Disabled         |   0   |    no    |                      Not allowed.                      | ![Most restricted value](../images/check-gn.png) |
 | Enabled<br>**(default)** |   1   |   yes    |                        Allowed.                        |                                                  |
 
 ---

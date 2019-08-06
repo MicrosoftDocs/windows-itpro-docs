@@ -8,9 +8,9 @@ ms.localizationpriority: medium
 ms.date: 10/20/2017
 ms.reviewer: 
 manager: laurawi
-ms.author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 

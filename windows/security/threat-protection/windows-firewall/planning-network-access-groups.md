@@ -38,4 +38,4 @@ For the Woodgrove Bank scenario, access to the devices running SQL Server that s
 
 >**Note:**  Membership in a NAG does not control the level of IPsec traffic protection. The IKE negotiation is only aware of whether the device or user passed or failed the Kerberos V5 authentication process. The connection security rules in the applied GPO control the security methods that are used for protecting traffic and are independent of the identity being authenticated by Kerberos V5.
 
-**Next: **[Planning the GPOs](planning-the-gpos.md)
+**Next:** [Planning the GPOs](planning-the-gpos.md)

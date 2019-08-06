@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 05/01/2019
+ms.date: 07/18/2019
 ---
 
 # Policy CSP
@@ -160,9 +160,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-accounts.md#accounts-allowmicrosoftaccountsigninassistant" id="accounts-allowmicrosoftaccountsigninassistant">Accounts/AllowMicrosoftAccountSignInAssistant</a>
   </dd>
-  <dd>
-    <a href="./policy-csp-accounts.md#accounts-domainnamesforemailsync" id="accounts-domainnamesforemailsync">Accounts/DomainNamesForEmailSync</a>
-  </dd>
+  
 </dl>
 
 ### ActiveXControls policies
@@ -738,10 +736,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-cryptography.md#cryptographyallowfipsalgorithmpolicy" id="cryptographyallowfipsalgorithmpolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
+    <a href="./policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy" id="cryptography-allowfipsalgorithmpolicy">Cryptography/AllowFipsAlgorithmPolicy</a>
   </dd>
   <dd>
-    <a href="./policy-csp-cryptography.md#cryptographytlsciphersuites" id="cryptographytlsciphersuites">Cryptography/TLSCipherSuites</a>
+    <a href="./policy-csp-cryptography.md#cryptography-tlsciphersuites" id="cryptography-tlsciphersuites">Cryptography/TLSCipherSuites</a>
   </dd>
 </dl>
 
@@ -2566,6 +2564,18 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-privacy.md#privacy-letappsaccessaccountinfo-userincontroloftheseapps" id="privacy-letappsaccessaccountinfo-userincontroloftheseapps">Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps</a>
   </dd>
   <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception"id="privacy-letappsaccessbackgroundspatialperception">Privacy/LetAppsAccessBackgroundSpatialPerception</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps"id="privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps"id="privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps"id="privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps">Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps</a>
+  </dd>  
+  <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccesscalendar" id="privacy-letappsaccesscalendar">Privacy/LetAppsAccessCalendar</a>
   </dd>
   <dd>
@@ -2744,6 +2754,12 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccesstrusteddevices-userincontroloftheseapps" id="privacy-letappsaccesstrusteddevices-userincontroloftheseapps">Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsactivatewithvoice" id="privacy-letappsactivatewithvoice">Privacy/LetAppsActivateWithVoice</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-letappsactivatewithvoiceabovelock" id="privacy-letappsactivatewithvoiceabovelock">Privacy/LetAppsActivateWithVoiceAboveLock</a>
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsgetdiagnosticinfo" id="privacy-letappsgetdiagnosticinfo">Privacy/LetAppsGetDiagnosticInfo</a>
@@ -4395,7 +4411,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials](./policy-csp-credentialsdelegation.md#credentialsdelegation-remotehostallowsdelegationofnonexportablecredentials)
 -   [CredentialsUI/DisablePasswordReveal](./policy-csp-credentialsui.md#credentialsui-disablepasswordreveal)
 -   [CredentialsUI/EnumerateAdministrators](./policy-csp-credentialsui.md#credentialsui-enumerateadministrators)
--   [Cryptography/AllowFipsAlgorithmPolicy](./policy-csp-cryptography.md#cryptographyallowfipsalgorithmpolicy)
+-   [Cryptography/AllowFipsAlgorithmPolicy](./policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy)
 -   [DataUsage/SetCost4G](./policy-csp-datausage.md#datausage-setcost4g)
 -   [Defender/AllowArchiveScanning](./policy-csp-defender.md#defender-allowarchivescanning)
 -   [Defender/AllowBehaviorMonitoring](./policy-csp-defender.md#defender-allowbehaviormonitoring)
@@ -5159,8 +5175,75 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [WirelessDisplay/AllowProjectionToPC](./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopc)
 -   [WirelessDisplay/RequirePinForPairing](./policy-csp-wirelessdisplay.md#wirelessdisplay-requirepinforpairing)
 
+## <a href="" id="hololens2policies"></a>Policies supported by HoloLens 2  
+
+-   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
+-   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
+-   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
+-   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
+-   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+-   [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
+-   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+-   [Browser/AllowAutofill](#browser-allowautofill)
+-   [Browser/AllowCookies](#browser-allowcookies)
+-   [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+-   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+-   [Browser/AllowPopups](#browser-allowpopups)
+-   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+-   [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
+-   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)
+-   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+-   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)
+-   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)
+-   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+-   [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)
+-   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)
+-   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)
+-   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)
+-   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)
+-   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)
+-   [Experience/AllowCortana](#experience-allowcortana)
+-   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)
+-   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
+-   [Privacy/LetAppsAccessAccountInfo](#privacy-letappsaccessaccountinfo)
+-   [Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps](#privacy-letappsaccessaccountinfo-forceallowtheseapps)
+-   [Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps](#privacy-letappsaccessaccountinfo-forcedenytheseapps)
+-   [Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps](#privacy-letappsaccessaccountinfo-userincontroloftheseapps)
+-   [Privacy/LetAppsAccessBackgroundSpatialPerception](#privacy-letappsaccessbackgroundspatialperception)
+-   [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps](#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps)
+-   [Privacy/LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps)
+-   [Privacy/LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps)
+-   [Privacy/LetAppsAccessCamera](#privacy-letappsaccesscamera)
+-   [Privacy/LetAppsAccessLocation](#privacy-letappsaccesslocation)
+-   [Privacy/LetAppsAccessMicrophone](#privacy-letappsaccessmicrophone)
+-   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
+-   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
+-   [Settings/AllowDateTime](#settings-allowdatetime)
+-   [Settings/AllowVPN](#settings-allowvpn)
+-   [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
+-   [System/AllowCommercialDataPipeline](#system-allowcommercialdatapipeline)
+-   [System/AllowLocation](#system-allowlocation)
+-   [System/AllowStorageCard](#system-allowstoragecard)
+-   [System/AllowTelemetry](#system-allowtelemetry)
+-   [Update/AllowAutoUpdate](#update-allowautoupdate)
+-   [Update/AllowUpdateService](#update-allowupdateservice)
+-   [Update/BranchReadinessLevel](#update-branchreadinesslevel)
+-   [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)
+-   [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)
+-   [Update/ManagePreviewBuilds](#update-managepreviewbuilds)
+-   [Update/PauseFeatureUpdates](#update-pausefeatureupdates)
+-   [Update/PauseQualityUpdates](#update-pausequalityupdates)
+-   [Update/ScheduledInstallDay](#update-scheduledinstallday)
+-   [Update/ScheduledInstallTime](#update-scheduledinstalltime)
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)
+-   [Wifi/AllowManualWiFiConfiguration](#wifi-allowmanualwificonfiguration)
+
+<!--EndHoloLens2-->
+
 <!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Policies supported by Windows Holographic for Business  
+## <a href="" id="hololensbusinessspolicies"></a>Policies supported by HoloLens (1st gen) Commercial Suite  
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 -   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
@@ -5209,7 +5292,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--EndHoloLensBusiness-->
 
 <!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic
+## <a href="" id="hololenspolicies"></a>Policies supported by HoloLens (1st gen) Development Edition
 
 -   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 -   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
@@ -5260,8 +5343,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 -   [Camera/AllowCamera](#camera-allowcamera)
 -   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)
--   [Cryptography/AllowFipsAlgorithmPolicy](#cryptographyallowfipsalgorithmpolicy)
--   [Cryptography/TLSCipherSuites](#cryptographytlsciphersuites)
+-   [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)
+-   [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)
 -   [Defender/AllowArchiveScanning](#defender-allowarchivescanning)
 -   [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)
 -   [Defender/AllowCloudProtection](#defender-allowcloudprotection)
@@ -5360,6 +5443,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeviceHealthMonitoring/AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring)
 -   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope](#devicehealthmonitoring-configdevicehealthmonitoringscope)
 -   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination](#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination)
+-   [Privacy/LetAppsActivateWithVoice](#privacy-letappsactivatewithvoice)
+-   [Privacy/LetAppsActivateWithVoiceAboveLock](#privacy-letappsactivatewithvoiceabovelock)
 -   [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
 -   [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
 -   [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
@@ -5410,6 +5495,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeviceHealthMonitoring/AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring)
 -   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope](#devicehealthmonitoring-configdevicehealthmonitoringscope)
 -   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination](#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination)
+-   [Privacy/LetAppsActivateWithVoice](#privacy-letappsactivatewithvoice)
+-   [Privacy/LetAppsActivateWithVoiceAboveLock](#privacy-letappsactivatewithvoiceabovelock)
 -   [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
 -   [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
 -   [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
@@ -5448,7 +5535,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 Set the minimum password length to 4 characters.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
         <Replace>
@@ -5470,7 +5557,7 @@ Set the minimum password length to 4 characters.
 
 Do not allow NFC.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
         <Replace>

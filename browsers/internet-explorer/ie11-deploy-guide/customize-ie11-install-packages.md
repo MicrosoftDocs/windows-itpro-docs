@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 10a14a09-673b-4f8b-8d12-64036135e7fd
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Customize Internet Explorer 11 installation packages (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

@@ -17,14 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ---
+
 # Investigate an IP address associated with a Microsoft Defender ATP alert
 
 **Applies to:**
 
-
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
-
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -34,22 +32,31 @@ Identifying all machines in the organization that communicated with a suspected 
 
 You can find information from the following sections in the IP address view:
 
-- IP worldwide, Reverse DNS names
+- IP worldwide
+- Reverse DNS names
 - Alerts related to this IP
 - IP in organization
-- Most recent observed machines with IP
+- Prevalence
 
 ## IP Worldwide and Reverse DNS names
+
 The IP address details section shows attributes of the IP address such as its ASN and its Reverse DNS names.
 
 ## Alerts related to this IP
-The **Alerts related to this IP** section provides a list of alerts that are associated with the IP. 
+
+The **Alerts related to this IP** section provides a list of alerts that are associated with the IP.
 
 ## IP in organization
+
 The **IP in organization** section provides details on the prevalence of the IP address in the organization.
 
+## Prevalence
+
+The **Prevalence** section displays how many machines have connected to this IP address, and when the IP was first and last seen. You can filter the results of this section by time period; the default period is 30 days.
+
 ## Most recent observed machines with IP
-The **Most recent observed machines with IP** section provides a chronological view on the events and associated alerts that were observed on the IP address.
+
+The **Most recent observed machines** with IP section provides a chronological view on the events and associated alerts that were observed on the IP address.
 
 **Investigate an external IP:**
 
@@ -67,6 +74,7 @@ Use the search filters to define the search criteria. You can also use the timel
 Clicking any of the machine names will take you to that machine's view, where you can continue investigate reported alerts, behaviors, and events.
 
 ## Related topics
+
 - [View and organize the Microsoft Defender Advanced Threat Protection Alerts queue](alerts-queue.md)
 - [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
 - [Investigate Microsoft Defender Advanced Threat Protection alerts](investigate-alerts.md)

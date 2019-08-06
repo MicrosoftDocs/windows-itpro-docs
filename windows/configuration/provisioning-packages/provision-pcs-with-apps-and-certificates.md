@@ -91,7 +91,7 @@ Universal apps that you can distribute in the provisioning package can be line-o
     
 6. In the **Available customizations** pane, click the **LicenseProductId** that you just added. 
 
-7. For **LicenseInstall**, click **Browse**, navigate to the license file that you renamed *<file name>*.**ms-windows-store-license**, and select the license file.
+7. For **LicenseInstall**, click **Browse**, navigate to the license file that you renamed *\<file name>*.**ms-windows-store-license**, and select the license file.
 
 [Learn more about distributing offline apps from the Microsoft Store for Business.](/microsoft-store/distribute-offline-apps)
 

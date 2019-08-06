@@ -31,7 +31,10 @@ The Microsoft Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to r
 
 The embedded Microsoft Defender ATP sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Microsoft Defender ATP cloud service.
 
-The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
+>[!TIP]
+>For organizations that use forward proxies as a gateway to the Internet, you can use network protection to investigate behind a proxy. For more information, see [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md).
+
+The WinHTTP configuration setting is independent of the Windows Internet (WinINet) Internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
  - Auto-discovery methods:
     - Transparent proxy
@@ -44,6 +47,8 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
  - Manual static proxy configuration:
     - Registry based configuration
     - WinHTTP configured using netsh command – Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
+
+
 
 ## Configure the proxy server manually using a registry-based static proxy
 Configure a registry-based static proxy to allow only Microsoft Defender ATP sensor to report diagnostic data and communicate with Microsoft Defender ATP services if a computer is not be permitted to connect to the Internet.
@@ -134,7 +139,7 @@ You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https:
 
 Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Microsoft Defender ATP service URLs.
 
-1. Download the [connectivity verification tool](https://go.microsoft.com/fwlink/p/?linkid=823683) to the PC where Microsoft Defender ATP sensor is running on.
+1. Download the [connectivity verification tool](https://aka.ms/mdatpanalyzer) to the PC where Microsoft Defender ATP sensor is running on.
 
 2. Extract the contents of WDATPConnectivityAnalyzer on the machine.
 
@@ -172,6 +177,7 @@ If at least one of the connectivity options returns a (200) status, then the Mic
 However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Microsoft Defender ATP service URLs in the proxy server](#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server). The URLs you'll use will depend on the region selected during the onboarding procedure.
 
 > [!NOTE]
+> The Connectivity Analyzer tool is not compatible with ASR rule [Block process creations originating from PSExec and WMI commands](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules). You will need to temporarily disable this rule to run the connectivity tool.
 > When the TelemetryProxyServer is set, in Registry or via Group Policy, Microsoft Defender ATP will fall back to direct if it can't access the defined proxy.
 
 ## Related topics

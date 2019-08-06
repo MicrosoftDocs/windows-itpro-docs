@@ -172,7 +172,7 @@ Set-Service <service name> -StartupType Disabled
 
 ## View per-user services in the Services console (services.msc)
 
-As mentioned you can't view the template services in the Services console, but you can see the user-specific per-user services - they are displayed using the <service name>_LUID format (where LUID is the locally unique identifier).
+As mentioned you can't view the template services in the Services console, but you can see the user-specific per-user services - they are displayed using the \<service name>_LUID format (where LUID is the locally unique identifier).
 
 For example, you might see the following per-user services listed in the Services console:
 

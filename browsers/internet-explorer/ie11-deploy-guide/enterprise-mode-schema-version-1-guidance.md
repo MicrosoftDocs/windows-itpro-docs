@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 17c61547-82e3-48f2-908d-137a71938823
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Enterprise Mode schema v.1 guidance (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
@@ -179,7 +179,7 @@ Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">http
 <p><b>Example</b>
 <pre class="syntax">
 &lt;docMode&gt;
-  &lt;domain exclude=&quot;false&quot;&gt;fakrikam.com
+  &lt;domain exclude=&quot;false&quot;&gt;fabrikam.com
     &lt;path docMode=&quot;7&quot;&gt;/products&lt;/path&gt;
   &lt;/domain&gt;
 &lt;/docMode&gt;</pre></td>

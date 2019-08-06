@@ -8,7 +8,7 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -1499,7 +1499,7 @@ For example:
 
 -   **MergeMultiSzContent**
 
-    The MergeMultiSzContent function merges the MULTI-SZ content of the registry values that are enumerated by the parent &lt;ObjectSet&gt; element with the content of the equivalent registry values that already exist on the destination computer. `Instruction` and` String` either remove or add content to the resulting MULTI-SZ. Duplicate elements will be removed.
+    The MergeMultiSzContent function merges the MULTI-SZ content of the registry values that are enumerated by the parent &lt;ObjectSet&gt; element with the content of the equivalent registry values that already exist on the destination computer. `Instruction` and `String` either remove or add content to the resulting MULTI-SZ. Duplicate elements will be removed.
 
     Syntax: MergeMultiSzContent (*Instruction*,*String*,*Instruction*,*String*,…)
 
@@ -3618,7 +3618,7 @@ The return value that is required by &lt;script&gt; depends on the parent elemen
 
     Syntax: &lt;script&gt;MigXmlHelper.GetStringContent("*ObjectType*","*EncodedLocationPattern*", "*ExpandContent*")&lt;/script&gt;
 
-    Example:` <script>MigXMLHelper.GetStringContent("Registry","HKLM\Software\MyApp\Installer [EXEPATH]")</script>`
+    Example: `<script>MigXMLHelper.GetStringContent("Registry","HKLM\Software\MyApp\Installer [EXEPATH]")</script>`
 
 -   You can use [GenerateUserPatterns](#scriptfunctions) when &lt;script&gt; is within &lt;objectSet&gt;.
 

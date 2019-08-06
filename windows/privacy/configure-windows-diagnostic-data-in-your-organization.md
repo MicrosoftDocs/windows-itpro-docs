@@ -196,7 +196,7 @@ Microsoft believes in and practices information minimization. We strive to gathe
 
 ### Enterprise management
 
-Sharing diagnostic data with Microsoft provides many benefits to enterprises, so we do not recommend turning it off. For most enterprise customers, simply adjusting the diagnostic data level and managing specific components is the best option.
+Sharing diagnostic data with Microsoft is enabled by default on Windows 10, 1903 and later. Sharing this data provides many benefits to enterprises, so we do not recommend turning it off. For most enterprise customers, simply adjusting the diagnostic data level and managing specific components is the best option.
 
 Customers can set the diagnostic data level in both the user interface and with existing management tools. Users can change the diagnostic data level in the **Diagnostic data** setting. In the **Settings** app, in **Privacy** > **Diagnostics & feedback**. They can choose between Basic and Full. The Enhanced level will only be displayed as an option when Group Policy or Mobile Device Management (MDM) are invoked with this level. The Security level is not available.
 
@@ -405,7 +405,7 @@ In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data 
 
 ### Enable limiting enhanced diagnostic data to the minimum required by Windows Analytics
 
-1.	Set the diagnostic data level to **Enhanced**, using either Group Policy or MDM.
+1. Set the diagnostic data level to **Enhanced**, using either Group Policy or MDM.
 
     a. Using Group Policy, set the **Computer Configuration/Administrative Templates/Windows Components/Data Collection and Preview Builds/Allow telemetry** setting to **2**.
 
@@ -415,9 +415,9 @@ In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data 
 
     -AND-
 
-2.	Enable the **LimitEnhancedDiagnosticDataWindowsAnalytics** setting, using either Group Policy or MDM.
+2. Enable the **LimitEnhancedDiagnosticDataWindowsAnalytics** setting, using either Group Policy or MDM.
 
-    a.	Using Group Policy, set the **Computer Configuration/Administrative Templates/Windows Components/Data collection and Preview builds/Limit Enhanced diagnostic data to the minimum required by Windows Analytics** setting to **Enabled**.
+    a. Using Group Policy, set the **Computer Configuration/Administrative Templates/Windows Components/Data collection and Preview builds/Limit Enhanced diagnostic data to the minimum required by Windows Analytics** setting to **Enabled**.
 
     -OR-
 

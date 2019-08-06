@@ -4,9 +4,9 @@ description: Additional settings to control the behavior of Windows Update (WU) 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
-ms.author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
 ms.date: 07/27/2017
 ms.reviewer: 
 manager: laurawi
@@ -173,7 +173,7 @@ If this setting is set to *Not Configured*, an administrator can still configure
 
 #### Configuring Automatic Updates by editing the registry
 
-> ![Note]
+> [!NOTE]
 > Serious problems might occur if you modify the registry incorrectly by using Registry Editor or by using another method. These problems might require you to reinstall the operating system. Microsoft cannot guarantee that these problems can be resolved. Modify the registry at your own risk.
 
 In an environment that does not have Active Directory deployed, you can edit registry settings to configure group policies for Automatic Update.
@@ -224,14 +224,14 @@ To do this, follow these steps:
     
       **m**, where **m** equals the time period to wait between the time Automatic Updates starts and the time that it begins installations where the scheduled times have passed. The time is set in minutes from 1 to 60, representing 1 minute to 60 minutes)
       
-      > ![Note]
+      > [!NOTE]
       > This setting only affects client behavior after the clients have updated to the SUS SP1 client version or later versions.
       
     * NoAutoRebootWithLoggedOnUsers (REG_DWORD):
     
       **0** (false) or **1** (true). If set to **1**, Automatic Updates does not automatically restart a computer while users are logged on.
       
-      > ![Note]
+      > [!NOTE]
       > This setting affects client behavior after the clients have updated to the SUS SP1 client version or later versions.
 
 To use Automatic Updates with a server that is running Software Update Services, see the Deploying Microsoft Windows Server Update Services 2.0 guidance.

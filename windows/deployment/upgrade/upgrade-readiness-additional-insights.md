@@ -5,7 +5,7 @@ manager: laurawi
 ms.author: greglin
 description: Explains additional features of Upgrade Readiness.
 ms.prod: w10
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ms.collection: M365-analytics
 ---
@@ -93,4 +93,4 @@ Office add-ins provides a list of the Microsoft Office add-ins in your environme
 
 ## Related topics
 
-[Upgrade Readiness release notes](upgrade-readiness-release-notes.md)
+[Manage Windows upgrades with Upgrade Readiness](manage-windows-upgrades-with-upgrade-readiness.md)

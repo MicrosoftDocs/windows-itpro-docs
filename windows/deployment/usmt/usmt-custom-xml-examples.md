@@ -8,7 +8,7 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 
@@ -134,7 +134,7 @@ The following is a custom .xml file named CustomFile.xml that migrates My Videos
 
  
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/CustomFile">
 <component type="Documents" context="User">

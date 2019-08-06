@@ -9,7 +9,7 @@ title: Use the Settings page to finish setting up the Enterprise Mode Site List 
 ms.sitesec: library
 ms.date: 07/27/2017
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 ---
 

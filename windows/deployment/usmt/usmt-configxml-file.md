@@ -8,7 +8,7 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -383,7 +383,7 @@ Syntax: `<exclude>`` </exclude>`
 
 Refer to the following sample Config.xml file for additional details about items you can choose to exclude from a migration.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
   <Applications/>

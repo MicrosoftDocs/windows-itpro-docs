@@ -3,9 +3,9 @@ author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Configure Pop-up Blocker -->
@@ -20,7 +20,7 @@ ms:topic: include
 |---------------------------|:-----:|:--------:|-------------------------------------------------|:------------------------------------------------:|
 |      Not configured       | Blank |  Blank   |     Users can choose to use Pop-up Blocker.     |                                                  |
 | Disabled<br>**(default)** |   0   |    0     |    Turned off. Allow pop-up windows to open.    |                                                  |
-|          Enabled          |   1   |    1     | Turned on. Prevent pop-up windows from opening. | ![Most restricted value](/images/check-gn.png) |
+|          Enabled          |   1   |    1     | Turned on. Prevent pop-up windows from opening. | ![Most restricted value](../images/check-gn.png) |
 
 ---
 

@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm, M365
 ms.localizationpriority: medium
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
@@ -67,7 +67,7 @@ Examples of these two deployment advisors are shown below.
 
 ## M365 Enterprise poster
 
-[![M365 Enterprise poster](images/m365e.png)](http://aka.ms/m365eposter)
+[![M365 Enterprise poster](images/m365e.png)](https://aka.ms/m365eposter)
 
 ## Related Topics
 

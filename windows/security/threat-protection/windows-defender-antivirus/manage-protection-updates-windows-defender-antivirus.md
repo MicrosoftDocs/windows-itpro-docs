@@ -93,7 +93,7 @@ The procedures in this article first describe how to set the order, and then how
 
 4. Expand the tree to **Windows components > Windows Defender > Signature updates** and configure the following settings:
 
-   1.  Double-click the **Define the order of sources for downloading definition updates** setting and set the option to **Enabled**.
+   1.  Double-click the **Define the order of sources for downloading security intelligence updates** setting and set the option to **Enabled**.
 
    2.  Enter the order of sources, separated by a single pipe, for example: `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC`, as shown in the following screenshot.
 
@@ -101,7 +101,7 @@ The procedures in this article first describe how to set the order, and then how
 
    3. Click **OK**. This will set the order of protection update sources.
 
-   4. Double-click the **Define file shares for downloading definition updates** setting and set the option to **Enabled**.
+   4. Double-click the **Define file shares for downloading security intelligence updates** setting and set the option to **Enabled**.
 
    5. Enter the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](https://msdn.microsoft.com/library/gg465305.aspx) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`.  If you do not enter any paths then this source will be skipped when the VM downloads updates.
 
@@ -119,11 +119,11 @@ Use the following PowerShell cmdlets to set the update order.
 
 ```PowerShell
 Set-MpPreference -SignatureFallbackOrder {LOCATION|LOCATION|LOCATION|LOCATION}
-Set-MpPreference -SignatureDefinitionUpdateFileSharesSouce {\\UNC SHARE PATH|\\UNC SHARE PATH}
+Set-MpPreference -SignatureDefinitionUpdateFileSharesSource {\\UNC SHARE PATH|\\UNC SHARE PATH}
 ```
 See the following for more information:
 - [Set-MpPreference -SignatureFallbackOrder](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturefallbackorder)
-- [Set-MpPreference -SignatureDefinitionUpdateFileSharesSouce](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
+- [Set-MpPreference -SignatureDefinitionUpdateFileSharesSource](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
 - [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)
 - [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx)
 
@@ -133,7 +133,7 @@ Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com
 
 ```WMI
 SignatureFallbackOrder
-SignatureDefinitionUpdateFileSharesSouce
+SignatureDefinitionUpdateFileSharesSource
 ```
 
 See the following for more information:

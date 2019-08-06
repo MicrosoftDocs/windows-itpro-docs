@@ -3,9 +3,9 @@ author: eavena
 ms.author: eravena
 ms.date:  11/02/2018
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Allow web content on New Tab page -->  

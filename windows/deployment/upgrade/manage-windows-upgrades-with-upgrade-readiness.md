@@ -2,7 +2,7 @@
 title: Manage Windows upgrades with Upgrade Readiness (Windows 10)
 description: Provides an overview of the process of managing Windows upgrades with Upgrade Readiness.
 ms.prod: w10
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 04/25/2017
 ms.reviewer: 
 manager: laurawi
@@ -40,9 +40,8 @@ The Upgrade Readiness workflow steps you through the discovery and rationalizati
 
 ## **Related topics**
 
-[Upgrade Readiness architecture](upgrade-readiness-architecture.md)<BR>
-[Upgrade Readiness requirements](upgrade-readiness-requirements.md)<BR>
-[Upgrade Readiness release notes](upgrade-readiness-requirements.md#important-information-about-this-release)<BR>
-[Get started with Upgrade Readiness](upgrade-readiness-get-started.md)<BR>
-[Use Upgrade Readiness to manage Windows upgrades](use-upgrade-readiness-to-manage-windows-upgrades.md)<BR>
-[Troubleshoot Upgrade Readiness](troubleshoot-upgrade-readiness.md)<BR>
+[Upgrade Readiness architecture](upgrade-readiness-architecture.md)<br>
+[Upgrade Readiness requirements](upgrade-readiness-requirements.md)<br>
+[Upgrade Readiness release notes](upgrade-readiness-requirements.md#important-information-about-this-release)<br>
+[Get started with Upgrade Readiness](upgrade-readiness-get-started.md)<br>
+[Use Upgrade Readiness to manage Windows upgrades](use-upgrade-readiness-to-manage-windows-upgrades.md)

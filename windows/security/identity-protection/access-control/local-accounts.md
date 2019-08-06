@@ -193,7 +193,7 @@ The DSMA is a well-known user account type.
 It is a user neutral account that can be used to run processes that are either multi-user aware or user-agnostic. 
 The DSMA is disabled by default on the desktop SKUs (full windows SKUs) and WS 2016 with the Desktop. 
 
-The DSMA has a well-known RID of 503. The security identifier (SID) of the DSMA will thus have a well-known SID in the following format: S-1-5-21-<ComputerIdentifier>-503 
+The DSMA has a well-known RID of 503. The security identifier (SID) of the DSMA will thus have a well-known SID in the following format: S-1-5-21-\<ComputerIdentifier>-503 
 
 The DSMA is a member of the well-known group **System Managed Accounts Group**, which has a well-known SID of S-1-5-32-581. 
 
@@ -250,7 +250,7 @@ You can use Local Users and Groups to assign rights and permissions on the local
 You cannot use Local Users and Groups on a domain controller. However, you can use Local Users and Groups on a domain controller to target remote computers that are not domain controllers on the network.
 
 **Note**  
-You use Active Directory Users and Computers to manage users and groups in Active Directory.loca
+You use Active Directory Users and Computers to manage users and groups in Active Directory.
 
 You can also manage local users by using NET.EXE USER and manage local groups by using NET.EXE LOCALGROUP, or by using a variety of PowerShell cmdlets and other scripting technologies.
 

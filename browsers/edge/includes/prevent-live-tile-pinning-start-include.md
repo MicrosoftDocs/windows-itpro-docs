@@ -3,9 +3,9 @@ author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start -->
@@ -19,7 +19,7 @@ ms:topic: include
 |                Group Policy                 | MDM | Registry |             Description              |                 Most restricted                  |
 |---------------------------------------------|:---:|:--------:|--------------------------------------|:------------------------------------------------:|
 | Disabled or not configured<br>**(default)** |  0  |    0     | Collect and send Live Tile metadata. |                                                  |
-|                   Enabled                   |  1  |    1     |         Do not collect data.         | ![Most restricted value](/images/check-gn.png) |
+|                   Enabled                   |  1  |    1     |         Do not collect data.         | ![Most restricted value](../images/check-gn.png) |
 
 ---
 

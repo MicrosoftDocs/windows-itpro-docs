@@ -121,7 +121,7 @@ Supported operations are Add, Delete, and Get.
 
 Add a collector
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -143,7 +143,7 @@ Add a collector
 
 Delete a collector
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -232,7 +232,7 @@ To stop the trace, running an execute command on this node with the value STOP.
 
 Start collector trace logging
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -255,7 +255,7 @@ Start collector trace logging
 
 Stop collector trace logging
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -301,7 +301,7 @@ Supported operations are Add, Delete, and Get.
 
 Add a provider
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -323,7 +323,7 @@ Add a provider
 
 Delete a provider
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -388,7 +388,7 @@ The following table lists the possible values.
 
 Set provider **TraceLevel**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -420,7 +420,7 @@ Default value is 0 meaning no keyword.
 
 Get provider **Keywords**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
@@ -440,7 +440,7 @@ Get provider **Keywords**
 
 Set provider **Keywords**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
@@ -499,7 +499,7 @@ The following table lists the possible values. Default value is TRUE.
 
 Set provider **State**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -532,7 +532,7 @@ Supported operations are Add, Delete, and Get.
 
 Add a channel
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -554,7 +554,7 @@ Add a channel
 
 Delete a channel
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -578,7 +578,7 @@ The supported operation is Execute.
 
 Export channel event data
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -606,7 +606,7 @@ Default value is empty string.
 
 Get channel **Filter**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -659,7 +659,7 @@ The following table lists the possible values.
 
 Get channel **State**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -678,7 +678,7 @@ Get channel **State**
 
 Set channel **State**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -707,7 +707,7 @@ Added in version 1.3 of the CSP in Windows 10, version 1607. Triggers the snapp
 
 The supported value is Execute.
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
@@ -748,7 +748,7 @@ Supported operations are Get and Replace.
 
 Set **BlockSizeKB**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -771,7 +771,7 @@ Set **BlockSizeKB**
 
 Get **BlockSizeKB**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -797,7 +797,7 @@ The only supported operation is Get.
 
 Get **BlockCount**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -823,7 +823,7 @@ Supported operations are Get and Replace.
 
 Set **BlockIndexToRead** at 0
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -846,7 +846,7 @@ Set **BlockIndexToRead** at 0
 
 Set **BlockIndexToRead** at 1
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -874,7 +874,7 @@ The only supported operation is Get.
 
 Get **BlockData**
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>

@@ -7,7 +7,7 @@ keywords: oms, operations management suite, wdav, updates, downloads, log analyt
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
 ms.author: greglin
 ms.collection: M365-modern-desktop
@@ -136,9 +136,9 @@ If you don’t see any bytes coming from peers the cause might be one of the fol
 
 If you suspect this is the problem, try these steps:
 
-1.	Start a download of an app that is larger than 50 MB from the Store (for example "Candy Crush Saga").
-2.	Run `Get-DeliveryOptimizationStatus` from an elevated Powershell window and observe the DownloadMode setting. For peering to work, DownloadMode should be 1, 2, or 3.
-3.	If **DownloadMode** is 99 it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization hostnames are allowed access: most importantly **\*.do.dsp.mp.microsoft.com**.
+1. Start a download of an app that is larger than 50 MB from the Store (for example "Candy Crush Saga").
+2. Run `Get-DeliveryOptimizationStatus` from an elevated Powershell window and observe the DownloadMode setting. For peering to work, DownloadMode should be 1, 2, or 3.
+3. If **DownloadMode** is 99 it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization hostnames are allowed access: most importantly **\*.do.dsp.mp.microsoft.com**.
 
 
 
@@ -146,10 +146,10 @@ If you suspect this is the problem, try these steps:
 
 If you suspect this is the problem, try these steps:
 
-1.	Download the same app on two different devices on the same network, waiting 10 – 15 minutes between downloads.
-2.	Run `Get-DeliveryOptimizationStatus` from an elevated Powershell window and ensure that **DownloadMode** is 1 or 2 on both devices.
-3.	Run `Get-DeliveryOptimizationPerfSnap` from an elevated Powershell window on the second device. The **NumberOfPeers** field should be non-zero.
-4.	If the number of peers is zero and you have **DownloadMode** = 1, ensure that both devices are using the same public IP address to reach the internet. To do this, open a browser Windows and search for “what is my IP”. You can **DownloadMode 2** (Group) and a custom GroupID (Guid) to fix this if the devices aren’t reporting the same public IP address.
+1. Download the same app on two different devices on the same network, waiting 10 – 15 minutes between downloads.
+2. Run `Get-DeliveryOptimizationStatus` from an elevated Powershell window and ensure that **DownloadMode** is 1 or 2 on both devices.
+3. Run `Get-DeliveryOptimizationPerfSnap` from an elevated Powershell window on the second device. The **NumberOfPeers** field should be non-zero.
+4. If the number of peers is zero and you have **DownloadMode** = 1, ensure that both devices are using the same public IP address to reach the internet. To do this, open a browser Windows and search for “what is my IP”. You can **DownloadMode 2** (Group) and a custom GroupID (Guid) to fix this if the devices aren’t reporting the same public IP address.
 
 
 ### Clients aren't able to connect to peers offered by the cloud service

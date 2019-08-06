@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -19,7 +19,7 @@ ms.reviewer:
 # Planning an adequate number of Windows Server 2019 Domain Controllers for Windows Hello for Business deployments
 
 **Applies to**
--   Windows 10, version 1702 or later
+-   Windows 10, version 1703 or later
 -   Windows Server, versions 2016 and 2019
 -   Hybrid or On-Premises deployment
 -   Key trust
@@ -30,13 +30,13 @@ ms.reviewer:
 ## How many is adequate
 
  
-How can you find out how many domain controllers are needed? You can use performance monitoring on your domain controllers to determine existing authentication traffic.  Windows Server 2019 includes the KDC AS Requests performance counter.  You can use this counter to determine how much of a domain controller's load is due to initial Kerberos authentication.  It's important to remember that authentication for a Windows Hello for Business key trust deployment does not affect Kerberos authentication - it remains unchanged.
+How can you find out how many domain controllers are needed? You can use performance monitoring on your domain controllers to determine existing authentication traffic.  Windows Server 2016 and above includes the KDC AS Requests performance counter.  You can use this counter to determine how much of a domain controller's load is due to initial Kerberos authentication.  It's important to remember that authentication for a Windows Hello for Business key trust deployment does not affect Kerberos authentication - it remains unchanged.
 
 
-Windows 10 accomplishes Windows Hello for Business key trust authentication by mapping an Active Directory user account to one or more public keys.  This mapping occurs on the domain controller, which is why the deployment needs Windows Server 2019 domain controllers. Public key mapping is only supported by Windows Server 2016 domain controllers.  Therefore, users in a key trust deployment must authenticate to a Windows Server 2019 domain controller.
+Windows 10 accomplishes Windows Hello for Business key trust authentication by mapping an Active Directory user account to one or more public keys.  This mapping occurs on the domain controller, which is why the deployment needs Windows Server 2016 and above domain controllers. Public key mapping is only supported by Windows Server 2016 domain controllers.  Therefore, users in a key trust deployment must authenticate to a Windows Server 2016 and above domain controller.
   
  
-Determining an adequate number of Windows Server 2019 domain controllers is important to ensure you have enough domain controllers to satisfy all authentication requests, including users mapped with public key trust. What many administrators do not realize is that adding the most current version of a domain controller (in this case Windows Server 2019) to a deployment of existing domain controllers (Windows Server 2008R2, Windows Server 2012R2 or Windows Server 2016) instantly makes that single domain controller susceptible to carrying the most load, or what is commonly referred to as "piling on". To illustrate the "piling on" concept, consider the following scenario:
+Determining an adequate number of Windows Server domain controllers is important to ensure you have enough domain controllers to satisfy all authentication requests, including users mapped with public key trust. What many administrators do not realize is that adding the most current version of a domain controller (in this case Windows Server 2019) to a deployment of existing domain controllers (Windows Server 2008R2, Windows Server 2012R2 or Windows Server 2016) instantly makes that single domain controller susceptible to carrying the most load, or what is commonly referred to as "piling on". To illustrate the "piling on" concept, consider the following scenario:
 
  
 Consider a controlled environment where there are 1000 client computers and the authentication load of these 1000 client computers is evenly distributed across 10 domain controllers in the environment.  The Kerberos AS requests load would look something like the following:

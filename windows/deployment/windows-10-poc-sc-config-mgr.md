@@ -10,8 +10,8 @@ ms.localizationpriority: medium
 ms.date: 10/11/2017
 ms.reviewer: 
 manager: laurawi
-ms.author: greg-lindsay
-author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 
@@ -306,7 +306,7 @@ This section contains several procedures to support Zero Touch installation with
 WDSUTIL /Set-Server /AnswerClients:None
 ```
 
-1. Deterime the MAC address of the internal network adapter on SRV1. To determine this, type the following command at an elevated Windows PowerShell prompt on SRV1:
+1. Determine the MAC address of the internal network adapter on SRV1. To determine this, type the following command at an elevated Windows PowerShell prompt on SRV1:
 
     ```
     (Get-NetAdapter "Ethernet").MacAddress
@@ -793,7 +793,7 @@ In this first deployment scenario, we will deploy Windows 10 using PXE. This sce
 
 ## Replace a client with Windows 10 using Configuration Manager
 
->Before starting this section, you can delete computer objects from Active Directory that were created as part of previous deployment procedures. Use the Active Directory Users and Computers console on DC1 to remove stale entries under contoto.com\Computers, but do not delete the computer account (hostname) for PC1. There should be at least two computer accounts present in the contoso.com\Computers container: one for SRV1, and one for the hostname of PC1. It is not required to delete the stale entries, this is only done to remove clutter.
+>Before starting this section, you can delete computer objects from Active Directory that were created as part of previous deployment procedures. Use the Active Directory Users and Computers console on DC1 to remove stale entries under contoso.com\Computers, but do not delete the computer account (hostname) for PC1. There should be at least two computer accounts present in the contoso.com\Computers container: one for SRV1, and one for the hostname of PC1. It is not required to delete the stale entries, this is only done to remove clutter.
 
 ![contoso.com\Computers](images/poc-computers.png)
 
@@ -840,7 +840,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
     Checkpoint-VM -Name PC1 -SnapshotName BeginState
     ```
 
-3. On SRV1, in the Configuration Manager console, in the Administration workspace, expand **Hierarcy Configuration** and click on **Discovery Methods**.
+3. On SRV1, in the Configuration Manager console, in the Administration workspace, expand **Hierarchy Configuration** and click on **Discovery Methods**.
 4. Double-click **Active Directory System Discovery** and on the **General** tab select the **Enable Active Directory System Discovery** checkbox.
 5. Click the yellow starburst, click **Browse**, select **contoso\Computers**, and then click **OK** three times.
 6. When a popup dialog box asks if you want to run full discovery, click **Yes**. 
@@ -930,7 +930,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 
 4. In the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click **Windows 10 Enterprise x64** and then click **Deploy**.
 
-5. Use the following settings in the Deploy Sofware wizard:
+5. Use the following settings in the Deploy Software wizard:
     - General > Collection: Click Browse and select **Install Windows 10 Enterprise x64**<br>
     - Deployment Settings > Purpose: **Available**<br>
     - Deployment Settings > Make available to the following: **Configuration Manager clients, media and PXE**<br>
@@ -1052,8 +1052,8 @@ In the Configuration Manager console, in the Software Library workspace under Op
 
 1. On SRV1, in the Assets and Compliance workspace, click **Device Collections** and then double-click **Install Windows 10 Enterprise x64**.
 2. Right-click the computer account for PC1, point to **Client Notification**, click **Download Computer Policy**, and click **OK** in the popup dialog box.
-3. On PC1, in the notification area, click **New sofware is available** and then click **Open Sofware Center**.
-4. In the Sofware Center, click **Operating Systems**, click **Windows 10 Enterprise x64**, click **Install** and then click **INSTALL OPERATING SYSTEM**. See the following example:
+3. On PC1, in the notification area, click **New software is available** and then click **Open Software Center**.
+4. In the Software Center, click **Operating Systems**, click **Windows 10 Enterprise x64**, click **Install** and then click **INSTALL OPERATING SYSTEM**. See the following example:
 
     ![installOS](images/sccm-install-os.png)
 

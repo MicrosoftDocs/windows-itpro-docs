@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 85f6429d-947a-4031-8f93-e26110a35828
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Install Internet Explorer 11 (IE11) using your network (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

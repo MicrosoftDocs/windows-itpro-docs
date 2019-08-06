@@ -3,7 +3,7 @@ title: Windows as a service
 ms.prod: w10
 ms.topic: article
 ms.manager: elizapo
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.author: greglin
 ms.date: 12/19/2018
 ms.reviewer: 
@@ -16,6 +16,8 @@ ms.topic: article
 Here's more news about [Windows as a service](windows-as-a-service.md):
 
 <ul>
+  <li><a href="https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency">Improving the Windows 10 update experience with control, quality and transparency</a> - April 4, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Call-to-action-review-your-Windows-Update-for-Business-deferral/ba-p/394244">Call to action: review your Windows Update for Business deferral values</a> - April 3, 2019</li>
   <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-version-1809-designated-for-broad-deployment/ba-p/389540">Windows 10, version 1809 designated for broad deployment</a> - March 28, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2019/03/06/data-insights-and-listening-to-improve-the-customer-experience">Data, insights and listening to improve the customer experience</a> - March 6, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Getting-to-know-the-Windows-update-history-pages/ba-p/355079">Getting to know the Windows update history pages</a> - February 21, 2019</li>

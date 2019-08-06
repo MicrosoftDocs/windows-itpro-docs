@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -244,7 +244,7 @@ Click on the **WindowsAutopilot** VM in Hyper-V Manager and verify that you see 
 
 Follow these steps to run the PS script:
 
-1.	Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same regardless of whether you are using a VM or a physical device:
+1. Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same regardless of whether you are using a VM or a physical device:
 
     ```powershell
     md c:\HWID
@@ -647,9 +647,9 @@ Note: A 64-bit operating system is required to run Hyper-V.
 
 Before we can pull an application into Intune to make it part of our AP profile, we need to “package” the application for delivery using the [IntuneWinAppUtil.exe command-line tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool).  After downloading the tool, gather the following three bits of information to use the tool:
 
-1.	The source folder for your application
-2.	The name of the setup executable file 
-3.	The output folder for the new file
+1. The source folder for your application
+2. The name of the setup executable file 
+3. The output folder for the new file
 
 For the purposes of this lab, we’ll use the Notepad++ tool as our Win32 app.
 

@@ -104,14 +104,14 @@ The following steps are required to enable this integration:
 
 ### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender ATP 
 
-1.	Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603).
+1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603).
 
-2.	Using the Workspace ID and Workspace key provided in the previous procedure, choose any of the following installation methods to install the agent on the server:
+2. Using the Workspace ID and Workspace key provided in the previous procedure, choose any of the following installation methods to install the agent on the server:
     - [Manually install the agent using setup](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-the-agent-using-setup) <br>
     On the **Agent Setup Options** page, choose **Connect the agent to Azure Log Analytics (OMS)**.
     - [Install the agent using the command line](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-the-agent-using-the-command-line) and [configure the agent using a script](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#add-a-workspace-using-a-script). 
 
-3.	You'll need to configure proxy settings for the Microsoft Monitoring Agent. For more information, see [Configure proxy settings](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#configure-proxy-settings).
+3. You'll need to configure proxy settings for the Microsoft Monitoring Agent. For more information, see [Configure proxy settings](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#configure-proxy-settings).
 
 Once completed, you should see onboarded servers in the portal within an hour.
 
@@ -137,7 +137,10 @@ Agent Resource    |    Ports
 
 
 ## Windows Server, version 1803 and Windows Server 2019
-To onboard Windows Server, version 1803 or Windows Server 2019, use the same method used when onboarding Windows 10 machines.
+To onboard Windows Server, version 1803 or Windows Server 2019, please refer to the supported methods and versions below.
+
+>[!NOTE]
+>The Onboarding package for Windows Server 2019 through System Center Configuration Manager currently ships a script. For more information on how to deploy scripts in System Center Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
 
 Supported tools include:
 - Local script
@@ -145,11 +148,13 @@ Supported tools include:
 - System Center Configuration Manager 2012 / 2012 R2  1511 / 1602
 - VDI onboarding scripts for non-persistent machines
 
-  For more information, see  [Onboard Windows 10 machines](configure-endpoints.md). Support for Windows Server, version 1803 and Windows 2019 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
+For more information, see  [Onboard Windows 10 machines](configure-endpoints.md).
+
+Support for Windows Server, version 1803 and Windows 2019 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
 
 1. Configure Microsoft Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints.md). 
 
-2.	If you’re running a third party antimalware solution, you'll need to apply the following Windows Defender AV passive mode settings and verify it was configured correctly:
+2. If you’re running a third party antimalware solution, you'll need to apply the following Windows Defender AV passive mode settings and verify it was configured correctly:
 
     a. Set the following registry entry:
        - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
@@ -162,7 +167,7 @@ Supported tools include:
 
     c. Confirm  that a recent event containing the passive mode event is found:
        
-       ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
+    ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
 3. Run the following command to check if Windows Defender AV is installed:
 

@@ -4,8 +4,8 @@ ms.prod: windows-10
 layout: LandingPage  
 ms.topic: landing-page
 ms.manager: elizapo
-author: greg-lindsay
-ms.author: greg-lindsay
+audience: itproauthor: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
 ms.date: 01/24/2019
 ms.reviewer: 
 manager: laurawi
@@ -27,13 +27,13 @@ Everyone wins when transparency is a top priority. We want you to know when upda
 
 The latest news:
 <ul compact style="list-style: none"> 
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Upgrading-Windows-10-devices-with-installation-media-different/ba-p/746126">Upgrading Windows 10 devices with installation media different than the original OS install language</a> - July 9, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Moving-to-the-next-Windows-10-feature-update-for-commercial/ba-p/732968">Moving to the next Windows 10 feature update for commercial customers</a> - July 1, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Updating-Windows-10-version-1903-using-Configuration-Manager-or/ba-p/639100">Updating Windows 10, version 1903 using Configuration Manager or WSUS</a> - May 23, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064">What’s new in Windows Update for Business in Windows 10, version 1903</a> - May 21, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024">What’s new for IT pros in Windows 10, version 1903</a> - May 21, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2019/05/21/how-to-get-the-windows-10-may-2019-update">How to get the Windows 10 May 2019 Update</a> - May 21, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847">The benefits of Windows 10 Dynamic Update</a> - April 17, 2019</li>
-<li><a href="https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency">Improving the Windows 10 update experience with control, quality and transparency</a> - April 4, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Call-to-action-review-your-Windows-Update-for-Business-deferral/ba-p/394244">Call to action: review your Windows Update for Business deferral values</a> - April 3, 2019</li>
+ <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847">The benefits of Windows 10 Dynamic Update</a> - April 17, 2019</li>
 </ul>
 
 [See more news](waas-morenews.md). You can also check out the [Windows 10 blog](https://techcommunity.microsoft.com/t5/Windows-10-Blog/bg-p/Windows10Blog).
@@ -43,7 +43,11 @@ Written by IT pros for IT pros, sharing real world examples and scenarios for Wi
 
 <img src="images/champs-2.png" alt="" width="640" height="320">
 
-<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Deployment-rings-The-hidden-strategic-gem-of-Windows-as-a/ba-p/659622">**NEW** Deployment rings: The hidden [strategic] gem of Windows as a service</a>
+<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Tactical-considerations-for-creating-Windows-deployment-rings/ba-p/746979">**NEW** Tactical considerations for creating Windows deployment rings</a>
+
+<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-Enterprise-vs-Windows-10-Pro-Modern-management/ba-p/720445">**NEW** Windows 10 Enterprise vs. Windows 10 Pro: Modern management considerations for your organization</a>
+
+<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Deployment-rings-The-hidden-strategic-gem-of-Windows-as-a/ba-p/659622">Deployment rings: The hidden [strategic] gem of Windows as a service</a>
 
 <a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Classifying-Windows-updates-in-common-deployment-tools/ba-p/331175">Classifying Windows updates in common deployment tools</a>
 

@@ -64,7 +64,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 > [!NOTE]
 > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
      
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
@@ -114,7 +114,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
     
       Here is the snippet from appv.admx:
 
-      ``` syntax
+      ```xml
       <!--  Publishing Server 2  -->
       <policy name="Publishing_Server2_Policy" class="Machine" displayName="$(string.PublishingServer2)" 
           explainText="$(string.Publishing_Server_Help)" presentation="$(presentation.Publishing_Server2)" 
@@ -206,7 +206,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
       Here is the example XML for Publishing_Server2_Policy :
         
-      ``` syntax
+      ```xml
       <data id="Publishing_Server2_Name_Prompt" value="Name"/>
       <data id="Publishing_Server_URL_Prompt" value="http://someuri"/>
       <data id="Global_Publishing_Refresh_Options" value="1"/>
@@ -226,7 +226,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 > [!NOTE]
 > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
     
-    ``` syntax
+    ```xml
     <?xml version="1.0" encoding="utf-8"?>
        <SyncML xmlns="SYNCML:SYNCML1.2">
          <SyncBody>
@@ -264,7 +264,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
 The \<Data> payload is \<disabled/>. Here is an example to disable AppVirtualization/PublishingAllowServer2.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
@@ -289,7 +289,7 @@ The \<Data> payload is \<disabled/>. Here is an example to disable AppVirtualiza
 
 The \<Data> payload is empty. Here an example to set AppVirtualization/PublishingAllowServer2 to "Not Configured."
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>

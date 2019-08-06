@@ -5,7 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
+manager: laurawi
 ms.topic: article
 ---
 # Features that are removed or deprecated in Windows 10, version 1709

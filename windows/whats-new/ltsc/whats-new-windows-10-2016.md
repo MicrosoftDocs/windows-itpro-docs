@@ -1,14 +1,14 @@
 ---
 title: What's new in Windows 10 Enterprise 2016 LTSC
 ms.reviewer: 
-manager: dansimp
-ms.author: macapara
+manager: laurawi
+ms.author: greglin
 description: New and updated IT Pro content about new features in Windows 10 Enterprise 2016 LTSC (also known as Windows 10 Enterprise 2016 LTSB).
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise 2016 LTSC"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mjcaparas
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: low
 ms.topic: article
 ---

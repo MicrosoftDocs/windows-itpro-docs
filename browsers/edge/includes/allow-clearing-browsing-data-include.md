@@ -3,9 +3,9 @@ author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Allow clearing browsing data on exit -->
@@ -20,7 +20,7 @@ ms:topic: include
 |               Group Policy               | MDM | Registry |                                 Description                                  |                 Most restricted                  |
 |------------------------------------------|:---:|:--------:|------------------------------------------------------------------------------|:------------------------------------------------:|
 | Disabled or not configured **(default)** |  0  |    0     | Prevented. Users can configure the *Clear browsing data* option in Settings. |                                                  |
-|                 Enabled                  |  1  |    1     |          Allowed. Clear the browsing data upon exit automatically.           | ![Most restricted value](/images/check-gn.png) |
+|                 Enabled                  |  1  |    1     |          Allowed. Clear the browsing data upon exit automatically.           | ![Most restricted value](../images/check-gn.png) |
 
 ---
 

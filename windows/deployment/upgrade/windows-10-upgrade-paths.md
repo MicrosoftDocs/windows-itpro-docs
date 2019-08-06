@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.pagetype: mobile
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 
@@ -27,9 +27,9 @@ This topic provides a summary of available upgrade paths to Windows 10. You can 
 > 
 > **Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
 > 
-> In-place upgrade from Windows 7, Windows 8.1, or Windows 10 semi-annual channel to Windows 10 LTSC is not supported.  **Note**: Windows 10 LTSC 2015 did not block this upgrade path.  This was corrected in the Windows 10 LTSC 2016 release, which will now only allow data-only and clean install options. You can upgrade from Windows 10 LTSC to Windows 10 semi-annual channel, provided that you upgrade to the same or a newer build version. For example, Windows 10 Enterprise 2016 LTSB can be upgraded to Windows 10 Enterprise version 1607 or later. Upgrade is supported using the in-place upgrade process (using Windows setup). 
+> In-place upgrade from Windows 7, Windows 8.1, or [Windows 10 semi-annual channel](https://docs.microsoft.com/windows/release-information/) to Windows 10 LTSC is not supported.  **Note**: Windows 10 LTSC 2015 did not block this upgrade path.  This was corrected in the Windows 10 LTSC 2016 release, which will now only allow data-only and clean install options. You can upgrade from Windows 10 LTSC to Windows 10 semi-annual channel, provided that you upgrade to the same or a newer build version. For example, Windows 10 Enterprise 2016 LTSB can be upgraded to Windows 10 Enterprise version 1607 or later. Upgrade is supported using the in-place upgrade process (using Windows setup). 
 > 
-> **Windows N/KN**: Windows "N" and "KN" SKUs follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.
+> **Windows N/KN**: Windows "N" and "KN" SKUs (editions without media-related functionality) follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.
 > 
 > **Windows 8.0**: You cannot upgrade directly from Windows 8.0 to Windows 10. To upgrade from Windows 8.0, you must first install the [Windows 8.1 update](https://support.microsoft.com/help/15356/windows-8-install-update-kb-2919355).
 
@@ -61,7 +61,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Home Basic</td>
@@ -69,7 +68,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -83,7 +81,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Professional</td>
@@ -92,7 +89,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
         <td></td>
         <td></td>
     </tr>
@@ -105,7 +101,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td></td>
         <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Enterprise</td>
@@ -114,7 +109,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
         <td></td>
         <td></td>
     </tr>
@@ -130,7 +124,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Connected</td>
@@ -138,7 +131,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -152,7 +144,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td></td>
         <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Pro Student</td>
@@ -161,7 +152,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
         <td></td>
         <td></td>
     </tr>
@@ -174,7 +164,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td></td>
         <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Enterprise</td>
@@ -183,7 +172,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
         <td></td>
         <td></td>
     </tr>
@@ -196,11 +184,9 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td></td>
         <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Windows RT</td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -218,18 +204,16 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td>✔</td>
-        <td></td>
     </tr>
     <tr>
         <td rowspan="8" nowrap="nowrap">Windows 10</td>
     </tr>
     <tr>
         <td>Home</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
         <td></td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
         <td></td>
         <td></td>
         <td></td>
@@ -237,11 +221,10 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
     <tr>
         <td>Pro</td>
         <td>D</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
-        <td>✔</td>
         <td></td>
+        <td>✔</td>
+        <td>✔</td>
+        <td>✔</td>
         <td></td>
         <td></td>
     </tr>
@@ -250,9 +233,8 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td></td>
-        <td>✔</td>
-        <td>D</td>
         <td></td>
+        <td>D</td>
         <td></td>
         <td></td>
     </tr>
@@ -261,7 +243,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td></td>
-        <td>✔</td>
         <td>✔</td>
         <td></td>
         <td></td>
@@ -276,7 +257,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td>✔</td>
-        <td>✔</td>
     </tr>
     <tr>
         <td>Mobile Enterprise</td>
@@ -285,9 +265,8 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
         <td>D</td>
-        <td>✔</td>
+        <td></td>
     </tr>
 </table>
 

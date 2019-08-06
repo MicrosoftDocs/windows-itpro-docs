@@ -36,13 +36,13 @@ To modify the policy rule options of an existing WDAC policy, use [Set-RuleOptio
 
 -   To ensure that UMCI is enabled for a WDAC policy that was created with the `-UserPEs` (user mode) option, add rule option 0 to an existing policy by running the following command:
 
-    ` Set-RuleOption -FilePath <Path to policy> -Option 0`
+    `Set-RuleOption -FilePath <Path to policy> -Option 0`
 
     Note that a policy that was created without the `-UserPEs` option is empty of user mode executables, that is, applications. If you enable UMCI (Option 0) for such a policy and then attempt to run an application, Windows Defender Application Control will see that the application is not on its list (which is empty of applications), and respond. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. To create a policy that includes user mode executables (applications), when you run `New-CIPolicy`, include the `-UserPEs` option. 
 
 -   To disable UMCI on an existing WDAC policy, delete rule option 0 by running the following command:
 
-    ` Set-RuleOption -FilePath <Path to policy> -Option 0 -Delete`
+    `Set-RuleOption -FilePath <Path to policy> -Option 0 -Delete`
 
 You can set several rule options within a WDAC policy. Table 2 describes each rule option. 
 
@@ -70,6 +70,7 @@ You can set several rule options within a WDAC policy. Table 2 describes each ru
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
 | **15 Enabled:Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically re-validate the reputation for files that were authorized by the ISG.| 
 | **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. |
+| **17 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically-loaded libraries. |
 
 ## Windows Defender Application Control file rule levels
 

@@ -22,10 +22,14 @@ ms.topic: conceptual
 
 **Applies to:**
 
-[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
->[!IMPORTANT]
->This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+This topic describes how to deploy Microsoft Defender ATP for Mac through JAMF. A successful deployment requires the completion of all of the following steps:
+- [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
+- [Create JAMF policies](#create-jamf-policies)
+- [Client device setup](#client-device-setup)
+- [Deployment](#deployment)
+- [Check onboarding status](#check-onboarding-status)
 
 ## Prerequisites and system requirements
 
@@ -60,7 +64,7 @@ Download the installation and onboarding packages from Windows Defender Security
     mavel-macmini:Downloads test$
     ```
 
-## Create JAMF Policies
+## Create JAMF policies
 
 You need to create a configuration profile and a policy to start deploying Microsoft Defender ATP for Mac to client devices.
 
@@ -76,7 +80,7 @@ To set the onboarding information, add a property list file with the name, _jamf
   >[!IMPORTANT]
   > You must set the Preference Domain as "com.microsoft.wdav.atp"
 
-    ![Configuration profile screenshot](images/MDATP_16_PreferenceDomain.png)
+![Configuration profile screenshot](images/MDATP_16_PreferenceDomain.png)
 
 ### Approved Kernel Extension
 

@@ -26,10 +26,10 @@ In addition to the endpoints listed for [Windows 10 Enterprise](manage-windows-1
 
 The following methodology was used to derive the network endpoints:
 
-1.	Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
-2.	Leave the device(s) running idle for a week ("idle" means a user is not interacting with the system/device).
-3.	Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
-4.	Compile reports on traffic going to public IP addresses.
+1. Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
+2. Leave the device(s) running idle for a week ("idle" means a user is not interacting with the system/device).
+3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
+4. Compile reports on traffic going to public IP addresses.
 5.  The test virtual machine(s) was logged into using a local account, and was not joined to a domain or Azure Active Directory.
 6.  All traffic was captured in our lab using a IPV4 network.  Therefore, no IPV6 traffic is reported here. 
 7.  These tests were conducted in an approved Microsoft lab.  It's possible your results may be different.
@@ -228,7 +228,7 @@ The following methodology was used to derive the network endpoints:
 |browser.pipe.aria.microsoft.com|HTTP|Used by OfficeHub to get the metadata of Office apps
 |cdn.onenote.net/livetile/*|HTTPS|Used for OneNote Live Tile
 |cds.p9u4n2q3.hwcdn.net|HTTP|Used by the Highwinds Content Delivery Network to perform Windows updates
-|client-office365-tas.msedge.net/*|HTTPS|Office 365 porta and Office Online
+|client-office365-tas.msedge.net/*|HTTPS|Office 365 portal and Office in a browser
 |ctldl.windowsupdate.com*|HTTP|Used to download certificates that are publicly known to be fraudulent
 |displaycatalog.mp.microsoft.com/*|HTTPS|Microsoft Store
 |dmd.metaservices.microsoft.com*|HTTP|Device Authentication

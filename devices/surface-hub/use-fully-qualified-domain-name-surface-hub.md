@@ -1,5 +1,5 @@
 ---
-title: Use fully qualified doman name with Surface Hub
+title: Use fully qualified domain name with Surface Hub
 description: Troubleshoot common problems, including setup issues, Exchange ActiveSync errors.
 keywords: ["Troubleshoot common problems", "setup issues", "Exchange ActiveSync errors"]
 author: levinec

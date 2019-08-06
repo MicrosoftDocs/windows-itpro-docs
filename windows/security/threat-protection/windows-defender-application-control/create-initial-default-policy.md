@@ -40,11 +40,11 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
 
 1. Initialize variables that you will use. The following example commands use **InitialScan.xml** and **DeviceGuardPolicy.bin** for the names of the files that will be created:
 
-   ` $CIPolicyPath=$env:userprofile+"\Desktop\"`
+   `$CIPolicyPath=$env:userprofile+"\Desktop\"`
 
-   ` $InitialCIPolicy=$CIPolicyPath+"InitialScan.xml"`
+   `$InitialCIPolicy=$CIPolicyPath+"InitialScan.xml"`
 
-   ` $CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
+   `$CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
 
 2. Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) to create a new WDAC policy by scanning the system for installed applications:
 

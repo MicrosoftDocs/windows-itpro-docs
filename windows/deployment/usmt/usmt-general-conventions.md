@@ -8,7 +8,7 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -50,7 +50,7 @@ Before you modify the .xml files, become familiar with the following guidelines:
 
 -   **File names with brackets**
 
-    If you are migrating a file that has a bracket character (\[ or \]) in the file name, you must insert a carat (^) character directly before the bracket for the bracket character to be valid. For example, if there is a file named File.txt, you must specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern> `instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.
+    If you are migrating a file that has a bracket character (\[ or \]) in the file name, you must insert a carat (^) character directly before the bracket for the bracket character to be valid. For example, if there is a file named File.txt, you must specify `<pattern type="File">c:\documents\mydocs [file^].txt]</pattern>` instead of `<pattern type="File">c:\documents\mydocs [file].txt]</pattern>`.
 
 -   **Using quotation marks**
 
