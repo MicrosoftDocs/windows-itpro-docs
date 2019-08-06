@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: lomayor
-ms.date: 08/06/2019
+ms.date: 08/05/2019
 ms.reviewer: 
 manager: dansimp
 ---
