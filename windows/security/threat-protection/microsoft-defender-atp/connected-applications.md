@@ -19,10 +19,23 @@ ms.topic: conceptual
 ---
 
 # Connected applications in Microsoft Defender ATP
-View the list of applications that are connected to your instance of Microsoft Defender ATP.
 
-From this page you'll be able to see details about connected applications such as last seen activity, the number of requests from the application, and 30-day request trends.
+Connected applications integrates with the Microsoft Defender ATP platform using APIs. 
 
-It also allows you to jump to the application settings page where....
+Applications use standard OAuth 2.0 protocol to authenticate and provide tokens for use with Microsoft Defender ATP APIs.  In addition, Azure Active Directory (Azure AD) applications allow tenant admins to set explicit control over which APIs can be accessed using the corresponding app.
+ 
+You'll need to follow [these steps](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/apis-intro) to use the APIs with the connected application.
+ 
+## Access the connected application page
+From the left navigation menu, select **Partners & APIs** > **Connected AAD applications**.
+
+ 
+## View connected application details
+The Connected applications page provides information about the Azure AD appplications connected to Microsoft Defender ATP in your organization. You can review the usage of the connected applications: last seen, number of requests in the past 24 hours, and request trends in the last 30 days.
+
+![Image of connected apps](images/connected-apps.png)
+ 
+## Edit, reconfigure, or delete a connected application
+The **Open application settings** link opens the corresponding Azure AD application management page in the Azure portal. From the Azure portal, you can manage permissions, reconfigure, or delete the connected applications.
 
 
