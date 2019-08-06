@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 4c5f3503-8c69-4691-ae97-1523091ab333
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Create multiple versions of your custom package using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

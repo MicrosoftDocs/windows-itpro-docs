@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 9ede9722-29b3-4cb7-956d-ffa91e7bedbd
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Install Internet Explorer 11 (IE11) using System Center 2012 R2 Configuration Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
