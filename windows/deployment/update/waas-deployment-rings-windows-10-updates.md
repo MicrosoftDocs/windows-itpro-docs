@@ -69,6 +69,6 @@ As Table 1 shows, each combination of servicing channel and deployment group is 
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Manage software updates in Intune](https://docs.microsoft.com/intune/windows-update-for-business-configure)
-- [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
+- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Manage device restarts after updates](waas-restart.md)
 
