@@ -24,26 +24,28 @@ manager: dansimp
 
 The potentially unwanted application (PUA) protection feature in Windows Defender Antivirus can detect and block PUAs on endpoints in your network.
 
-These applications are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints that adversely affect their performance or use. _PUA_ can also refer to an application that has a poor reputation, due to certain kinds of undesirable behavior.
+These applications are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints that adversely affect their performance or use. _PUA_ can also refer to a application that has a poor reputation, due to certain kinds of undesirable behavior.
 
 Typical PUA behavior includes:
 
 - Ad injection into web browsers
 - Various types of software bundling
-- Driver and registry optimizers that detect issues, request payment to fix the errors, but remain on the endpoint and make no changes or optimizations (also known as "rogue antivirus" programs)
+- Driver and registry optimizers that detect issues, request payment to fix the errors, and then make no changes or optimizations (also known as "rogue antivirus" programs)
 
-These applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning up the applications.
+These applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning up after them.
 
 > [!TIP]
 > You can visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm that the feature is working, and see how it works.
 
 ## How it works
 
-Windows Defender Antivirus blocks detected PUA files and attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine.
+PUAs may operate entirely on a local machine, or rely on remote resources located at an outside URL. PUA protection protects you both from local files, and from URLs associated with potentially unwanted behavior.
 
-When a PUA is detected on an endpoint, Windows Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-windows-defender-antivirus.md)) in the same format as other threat detections, though prefaced with _PUA:_.
+Windows Defender Antivirus blocks detected PUA files and URLs, and any attempts to download, move, run, visit, or install them. Blocked PUA files are then moved to quarantine. Requests to blocked URLs are denied.
 
-The notification will also appear in the usual [quarantine list in the Windows Security app](windows-defender-security-center-antivirus.md#detection-history).
+When a PUA is detected on an endpoint, Windows Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-windows-defender-antivirus.md)) in the same format as other threat detections. The notification will be prefaced with _PUA:_ to indicate its content.
+
+The notification will appear in the usual [quarantine list within the Windows Security app](windows-defender-security-center-antivirus.md#detection-history).
 
 ## View PUA events
 
@@ -51,7 +53,7 @@ PUA events are reported in the Windows Event Viewer, but not in System Center Co
 
 You can turn on email notifications to receive mail about PUA detections.
 
-See [Troubleshoot event IDs](troubleshoot-windows-defender-antivirus.md) for details on viewing Windows Defender Antivirus events. PUA events are recorded under event ID 1160.
+See [Troubleshoot event IDs](troubleshoot-windows-defender-antivirus.md) for details on viewing Windows Defender Antivirus events. PUA events are recorded under event ID **1160**.
 
 ## Configure PUA protection
 
@@ -76,7 +78,7 @@ For Configuration Manager 2012, see [How to Deploy Potentially Unwanted Applicat
 > [!NOTE]
 > PUA events are reported in the Windows Event Viewer and not in System Center Configuration Manager.
 
-**Use Group Policy to configure PUA protection**
+### Use Group Policy to configure PUA protection
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure, and click **Edit**.
 
@@ -103,6 +105,10 @@ Setting the value for this cmdlet to `Enabled` will turn the feature on if it ha
 Setting `AuditMode` will detect PUAs without blocking them.
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+
+## Allow-listing apps
+
+Sometimes a file or URL is erroneously blocked by PUA protection, or a feature of a PUA is actually required to complete a task. In these cases, a file or URL can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files and URLs which are currently blocked by PUA protection.
 
 ## Related topics
 
