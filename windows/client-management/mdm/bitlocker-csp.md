@@ -1046,3 +1046,55 @@ The following example is provided to show proper format and should not be taken 
     </SyncBody>
 </SyncML>
 ```
+<a href="" id="configurerecoverypasswordrotation"></a>**ConfigureRecoveryPasswordRotation**  
+This setting initiates a client-driven recovery password refresh after an OS drive recovery (either by using bootmgr or WinRE) and recovery password unlock on a Fixed data drive. This setting will refresh the specific recovery password that was used, and other unused passwords on the volume will remain unchanged. If the initialization of the refresh fails, the device will retry the refresh during the next reboot. When password refresh is initiated, the client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure. After the recovery password has been successfully backed up to Azure AD, the recovery key that was used locally will be removed. This setting refreshes only the used key and retains other unused keys. 
+
+Value type is int. Supported operations are Set and Get.
+
+Supported values are:
+- 0 – Refresh off (default)
+- 1 – Refresh on for Azure AD-joined devices 
+- 2 – Refresh on for both Azure AD-joined and hybrid-joined devices 
+
+<a href="" id="rotaterecoverypasswords"></a>**RotateRecoveryPasswords**  
+This setting refreshes all recovery passwords for OS and fixed drives (removable drives are not included so they can be shared between users). All recovery passwords for all drives will be refreshed and only one password is retained. In case of errors, an error code will be returned so that server can take appropriate action to remediate.
+
+The client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure. After the recovery password has been successfully backed up to Azure AD, the recovery key that was used locally will be removed.  
+
+Policy type is Execute. When “Execute Policy” is pushed, the client sets the status as Pending and initiates an asynchronous rotation operation. After refresh is complete, pass or fail status is updated. The client will not retry, but if needed, the server can re-issue the execute request. 
+
+Server can call Get on the CSP node RotateRecoveryPasswordsRotationStatus to query the status of the refresh. 
+
+Recovery password refresh will only occur for devices that are joined to Azure AD or joined to both Azure AD and on-premises (hybrid Azure AD-joined) that run a Windows 10 edition with the BitLocker CSP (Pro/Enterprise). Devices cannot refresh recovery passwords if they are only registered in Azure AD (also known as workplace-joined) or signed in with a Microsoft account. 
+
+Each server-side recovery key rotation is represented by a request ID. The server can query the following nodes to make sure it reads status/result for same rotation request.
+- RotateRecoveryPasswordsRequestID: Returns back Request ID last processed. This is not documented. 
+- RotateRecoveryPasswordsRotationStatus: Returns back status of last request processed.
+
+<a href="" id="status"></a>**Status**  
+Interior node. Supported operation is Get.
+
+<a href="" id="status-deviceencryptionstatus"></a>**Status/DeviceEncryptionStatus**  
+This node reports compliance state of device encryption on the system.
+
+Supported values:
+- 0 - Indicates that the device is compliant.
+- Any other value represents a non-compliant device.
+
+Value type is int. Supported operation is Get.
+
+<a href="" id="status-rotaterecoverypasswordsstatus"></a>**Status/RotateRecoveryPasswordsStatus**  
+This node reports the status of RotateRecoveryPasswords request. 
+Status code can be one of the following:  
+- 2 – Not started
+- 1 - Pending
+- 0 - Pass
+- Any other code - Failure
+
+Value type is int. Supported operation is Get.
+
+<a href="" id="status-rotaterecoverypasswordsrequestid"></a>**Status/RotateRecoveryPasswordsRequestID**  
+This node reports the RequestID corresponding to RotateRecoveryPasswordsStatus. 
+This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus to ensure the status is correctly matched to the request ID.
+
+Value type is chr. Supported operation is Get.
