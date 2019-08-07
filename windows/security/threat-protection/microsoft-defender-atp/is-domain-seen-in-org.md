@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Was domain seen in org
+# Was domain seen in org (Deprecated)
 
 **Applies to:**
 
