@@ -1068,8 +1068,10 @@ Server can call Get on the RotateRecoveryPasswordsRotationStatus node to query t
 Recovery password refresh will only occur for devices that are joined to Azure AD or joined to both Azure AD and on-premises (hybrid Azure AD-joined) that run a Windows 10 edition with the BitLocker CSP (Pro/Enterprise). Devices cannot refresh recovery passwords if they are only registered in Azure AD (also known as workplace-joined) or signed in with a Microsoft account. 
 
 Each server-side recovery key rotation is represented by a request ID. The server can query the following nodes to make sure it reads status/result for same rotation request.
-- RotateRecoveryPasswordsRequestID: Returns Request ID of last request processed.
+- RotateRecoveryPasswordsRequestID: Returns request ID of last request processed.
 - RotateRecoveryPasswordsRotationStatus: Returns status of last request processed.
+
+Value type is int. Supported operation is Get.
 
 <a href="" id="status"></a>**Status**  
 Interior node. Supported operation is Get.
