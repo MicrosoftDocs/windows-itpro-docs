@@ -116,17 +116,16 @@ Status of OS volumes and encryptable fixed data volumes are checked with a Get o
 
 Encryptable fixed data volumes are treated similarly to OS volumes. However, fixed data volumes must meet additional criteria to be considered encryptable:
 
-* The fixed data volume must have supported firmware (BIOS or UEFI).
-* It must not be a dynamic volume.
-* It must not be a recovery partition.
-* It must not be a hidden volume.
-* It must not be a system partition.
-* It must not be backed by virtual storage.
-* It must not have a reference in the BCD store.
+- It must not be a dynamic volume.
+- It must not be a recovery partition.
+- It must not be a hidden volume.
+- It must not be a system partition.
+- It must not be backed by virtual storage.
+- It must not have a reference in the BCD store.
 
 The following list shows the supported values:
 
--   0 (default) – Disable. If the policy setting is not set or is set to 0, the device's enforcement status will not be checked. In other words, the policy will not enforce encryption and it will not decrypt encrypted volumes.
+-   0 (default) – Disable. If the policy setting is not set or is set to 0, the device's enforcement status will not be checked. The policy will not enforce encryption and it will not decrypt encrypted volumes.
 -   1 – Enable. The device's enforcement status will be checked. Setting this policy to 1 will trigger encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).  
 
 If you want to disable this policy use the following SyncML:
