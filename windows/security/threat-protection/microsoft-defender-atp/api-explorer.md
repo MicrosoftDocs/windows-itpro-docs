@@ -21,7 +21,7 @@ ms.topic: conceptual
 # API explorer
 The Microsoft Defender ATP API explorer is a tool that helps you explore various Microsoft Defender ATP APIs interactively. 
 
-The API explorer makes it easy to construct and perform API queries, test and send requests for any available API. You can also use the API explorer to perform actions or find data that might not yet be available through the user interface.
+The API explorer makes it easy to construct and perform API queries, test and send requests for any available Microsoft Defender ATP API endpoint. You can also use the API explorer to perform actions or find data that might not yet be available through the user interface.
 
 The tool is useful during app development because it allows you to perform API queries that respect your user access settings, reducing the need to generate access tokens. 
 
