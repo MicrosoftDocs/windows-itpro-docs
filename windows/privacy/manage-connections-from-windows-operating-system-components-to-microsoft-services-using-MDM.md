@@ -154,14 +154,14 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 
 |**Allowed traffic endpoints** | 
 | --- | 
-|ctldl.windowsupdate.com|
+|activation-v2.sls.microsoft.com/*|
 |cdn.onenote.net|
+|client.wns.windows.com|
+|crl.microsoft.com/pki/crl/*|
+|ctldl.windowsupdate.com|
+|dm3p.wns.windows.com|
+|\*microsoft.com/pkiops/\*|
+|ocsp.digicert.com/*|
 |r.manage.microsoft.com|
 |tile-service.weather.microsoft.com|
 |settings-win.data.microsoft.com|
-|client.wns.windows.com|
-|dm3p.wns.windows.com|
-|crl.microsoft.com/pki/crl/*|
-|*microsoft.com/pkiops/**|
-|activation-v2.sls.microsoft.com/*|
-|ocsp.digicert.com/*|
