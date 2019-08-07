@@ -5,7 +5,7 @@ manager: laurawi
 description: Provides requirements for Upgrade Readiness.
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics,
 ms.prod: w10
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.author: greglin
 ms.localizationpriority: medium
 ms.topic: article

@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get IP related machines API
+# Get IP related machines API (Deprecated)
 
 **Applies to:**
 

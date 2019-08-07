@@ -1487,7 +1487,7 @@ Symbolic name:
 Message:
 </td>
 <td >
-<b>The antimalware definition update failed. 
+<b>The security intelligence update failed. 
 </b>
 </td>
 </tr>
@@ -1498,12 +1498,12 @@ Description:
 <td >
 Windows Defender Antivirus has encountered an error trying to update signatures.
 <dl>
-<dt>New Signature Version: &lt;New version number&gt;</dt>
-<dt>Previous Signature Version: &lt;Previous signature version&gt;</dt>
+<dt>New security intelligence version: &lt;New version number&gt;</dt>
+<dt>Previous security intelligence version: &lt;Previous version&gt;</dt>
 <dt>Update Source: &lt;Update source&gt;, for example:
 <ul>
-<li>Signature update folder</li>
-<li>Internal definition update server</li>
+<li>Security intelligence update folder</li>
+<li>Internal security intelligence update server</li>
 <li>Microsoft Update Server</li>
 <li>File share</li>
 <li>Microsoft Malware Protection Center (MMPC)</li>

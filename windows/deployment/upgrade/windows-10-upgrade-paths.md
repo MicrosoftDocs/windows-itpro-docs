@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.pagetype: mobile
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 

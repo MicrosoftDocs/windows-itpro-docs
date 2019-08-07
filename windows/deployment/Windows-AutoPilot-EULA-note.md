@@ -6,11 +6,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 ms.localizationpriority: medium
-ms.author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
 ms.date: 08/22/2017
 ms.reviewer: 
 manager: laurawi
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ROBOTS: noindex,nofollow
 ms.topic: article
 ---

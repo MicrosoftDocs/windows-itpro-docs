@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 501c96c9-9f03-4913-9f4b-f67bd9edbb61
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Missing the Compatibility View Button (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

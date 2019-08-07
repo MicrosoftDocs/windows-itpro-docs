@@ -10,10 +10,10 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
-# Surface Hub 2S quick start 
+# Surface Hub 2S quick start
 
 ## Unpack Surface Hub 2S
 

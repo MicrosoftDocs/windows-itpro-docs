@@ -9,7 +9,7 @@ ms.manager: dougkim
 ms.prod: ie11
 ms.assetid:
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 title: Internet Explorer Administration Kit (IEAK) information and downloads
 ms.sitesec: library
 ms.date: 05/10/2018
