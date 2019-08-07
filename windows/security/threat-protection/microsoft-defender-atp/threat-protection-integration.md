@@ -51,6 +51,9 @@ Microsoft Cloud App Security leverages Microsoft Defender ATP endpoint signals t
 ## Office 365 Advanced Threat Protection (Office 365 ATP)
 [Office 365 ATP](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) helps protect your organization from malware in email messages or files through ATP Safe Links, ATP Safe Attachments, advanced Anti-Phishing, and spoof intelligence capabilities. The integration between Office 365 ATP and Microsoft Defender ATP enables security analysts to go upstream to investigate the entry point of an attack. Through threat intelligence sharing, attacks can be contained and blocked. 
 
+>[!NOTE]
+> Office 365 ATP data is displayed for mails sent within the last 30 days. After that, the data is no longer available in Office 365 ATP.
+
 ## Skype for Business
 The Skype for Business integration provides s a way for analysts to communicate with a potentially compromised user or device owner through ao simple button from the portal.
 
