@@ -1063,13 +1063,13 @@ The client will generate a new recovery password. The client will use the existi
 
 Policy type is Execute. When “Execute Policy” is pushed, the client sets the status as Pending and initiates an asynchronous rotation operation. After refresh is complete, pass or fail status is updated. The client will not retry, but if needed, the server can re-issue the execute request. 
 
-Server can call Get on the CSP node RotateRecoveryPasswordsRotationStatus to query the status of the refresh. 
+Server can call Get on the RotateRecoveryPasswordsRotationStatus node to query the status of the refresh. 
 
 Recovery password refresh will only occur for devices that are joined to Azure AD or joined to both Azure AD and on-premises (hybrid Azure AD-joined) that run a Windows 10 edition with the BitLocker CSP (Pro/Enterprise). Devices cannot refresh recovery passwords if they are only registered in Azure AD (also known as workplace-joined) or signed in with a Microsoft account. 
 
 Each server-side recovery key rotation is represented by a request ID. The server can query the following nodes to make sure it reads status/result for same rotation request.
-- RotateRecoveryPasswordsRequestID: Returns back Request ID last processed. This is not documented. 
-- RotateRecoveryPasswordsRotationStatus: Returns back status of last request processed.
+- RotateRecoveryPasswordsRequestID: Returns Request ID of last request processed.
+- RotateRecoveryPasswordsRotationStatus: Returns status of last request processed.
 
 <a href="" id="status"></a>**Status**  
 Interior node. Supported operation is Get.
