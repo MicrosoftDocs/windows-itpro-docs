@@ -51,7 +51,7 @@ A well-configured machine complies to the minimum baseline configuration setting
 >[!IMPORTANT]
 >This feature is available for machines on Windows 10, version  1607 or later. 
 
-#### Minimum baseline configuration setting for Microsoft Defender AV:
+#### Minimum baseline configuration setting for Windows Defender AV:
 A well-configured machine for Windows Defender AV meets the following requirements:
 
 - Windows Defender AV is reporting correctly
@@ -152,8 +152,8 @@ You can take the following actions to increase the overall security score of you
 
 For more information, see [Windows Defender Exploit Guard](../windows-defender-exploit-guard/windows-defender-exploit-guard.md).
 
-### Windows Defender Application Guard (Microsoft Defender AG) optimization
-A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Windows Defender AG. When endpoints are configured according to the baseline, Microsoft Defender AG events shows on the Microsoft Defender ATP Machine timeline. 
+### Windows Defender Application Guard (Windows Defender AG) optimization
+A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Windows Defender AG. When endpoints are configured according to the baseline, Windows Defender AG events shows on the Microsoft Defender ATP Machine timeline. 
 
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1709 or later.
@@ -206,7 +206,7 @@ For more information, see [Windows Defender SmartScreen](../windows-defender-sma
 
 
 ### Windows Defender Firewall optimization
-A well-configured machine must have Windows Defender Firewall turned on and enabled for all profiles so that inbound connections are blocked by default. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Microsoft Defender Firewall. 
+A well-configured machine must have Windows Defender Firewall turned on and enabled for all profiles so that inbound connections are blocked by default. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Windows Defender Firewall. 
 
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1709 or later.
