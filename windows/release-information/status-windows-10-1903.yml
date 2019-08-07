@@ -18,7 +18,7 @@ sections:
 - items:
   - type: markdown
     text: "
-      Find information on known issues for Windows 10, version 1903 and Windows Server, version 1903. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
+      Find information on known issues and the status of the rollout for Windows 10, version 1903 and Windows Server, version 1903. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
       
  <table border = '0' class='box-info'><tr>
 <td bgcolor='#d3f1fb' class='alert is-primary'><b>Current status as of July 16, 2019</b>:<br>

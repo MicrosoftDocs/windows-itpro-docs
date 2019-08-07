@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Was IP seen in org
+# Was IP seen in org (Deprecated)
 
 **Applies to:**
 
