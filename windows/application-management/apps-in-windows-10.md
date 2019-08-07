@@ -141,7 +141,7 @@ Here are the provisioned Windows apps in Windows 10 versions 1703, 1709, 1803 an
 
 
 >[!NOTE]
->The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
+> The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
 
 ## System apps
 
