@@ -6,7 +6,7 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: a145e80f-eb62-4116-82c4-3cc35fd064b6
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: dansimp
 title: Collect data using Enterprise Site Discovery
 ms.sitesec: library

@@ -7,7 +7,7 @@ ms.author: lomayor
 ms.prod: ie11
 ms.assetid: 9e22cc61-6c63-4cab-bfdf-6fe49db945e4
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 title: Troubleshoot custom package and IEAK 11 problems (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

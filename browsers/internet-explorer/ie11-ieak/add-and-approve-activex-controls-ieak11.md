@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 33040bd1-f0e4-4541-9fbb-16e0c76752ab
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Add and approve ActiveX controls using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
