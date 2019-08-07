@@ -77,7 +77,7 @@ In environments that have more restrictive internet access, or for those that re
 
 -   **Office 365.**  As part of the Intune device configuration, installation of Office 365 ProPlus may be required.
 
-    -   <https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2> (includes all Office services, DNS names, IP addresses; includes Azure AD and other services that may overlap with those listed above)
+    -   <https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2> (includes all Office services, DNS names, IP addresses; includes Azure AD and other services that may overlap with those listed above)
 
 -   **Certificate revocation lists (CRLs).**  Some of these services will also need to check certificate revocation lists (CRLs) for certificates used in the services.  A full list of these is documented in the Office documentation at <https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_crl> and <https://aka.ms/o365chains>.
 -	**Hybrid AAD Join.**  Hybrid AAD can be joined. The computer should be on corporate network for hybrid AAD join to work. For more detaisl see <https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven-hybrid>.
