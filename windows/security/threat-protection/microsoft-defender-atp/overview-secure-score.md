@@ -44,13 +44,13 @@ The Microsoft secure score tile is reflective of the sum of all the Microsoft De
 
 ![Image of Microsoft secure score tile](images/mss.png)
 
-Each Windows Defender security control contributes 100 points to the score. The total number is reflective of the score potential and calculated by multiplying the number of supported security controls (Windows Defender security controls pillars) by the maximum points that each pillar contributes (maximum of 100 points for each pillar). 
+Each Microsoft Defender security control contributes 100 points to the score. The total number is reflective of the score potential and calculated by multiplying the number of supported security controls (Microsoft Defender security controls pillars) by the maximum points that each pillar contributes (maximum of 100 points for each pillar). 
 
 The Office 365 Secure Score looks at your settings and activities and compares them to a baseline established by Microsoft. For more information, see [Introducing the Office 365 Secure Score](https://support.office.com/article/introducing-the-office-365-secure-score-c9e7160f-2c34-4bd0-a548-5ddcc862eaef#howtoaccess).
 
-In the example image, the total points for the Windows security controls and Office 365 add up to 602 points. 
+In the example image, the total points for the Microsoft security controls and Office 365 add up to 602 points. 
 
-You can set the baselines for calculating the score of Windows Defender security controls on the Secure score dashboard through the **Settings**. For more information, see [Enable Secure score security controls](enable-secure-score.md).
+You can set the baselines for calculating the score of Microsoft Defender security controls on the Secure score dashboard through the **Settings**. For more information, see [Enable Secure score security controls](enable-secure-score.md).
 
 ## Secure score over time
 You can track the progression of your organizational security posture over time using this tile. It displays the overall score in a historical trend line enabling you to see how taking the recommended actions increase your overall security posture.
