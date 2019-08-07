@@ -91,7 +91,7 @@ For more information, see [Windows Update Troubleshooter](https://support.micros
 
 
 ### Windows Defender Exploit Guard (Windows Defender EG) optimization
-A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on machines to meet the minimum baseline configuration setting for Windows Defender EG. When endpoints are configured according to the baseline the Windows Defender EG events shows on the Microsoft Defender ATP Machine timeline. 
+A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on machines to meet the minimum baseline configuration setting for Windows Defender EG. When endpoints are configured according to the baseline, the Windows Defender EG events shows on the Microsoft Defender ATP Machine timeline. 
 
 
 >[!IMPORTANT]
@@ -167,7 +167,7 @@ A well-configured machine for Windows Defender AG meets the following requiremen
 
 ##### Recommended actions:
 You can take the following actions to increase the overall security score of your organization:
-- Ensure hardware and software prerequisites are met
+- Ensure that you meet the hardware and software prerequisites
     
     >[!NOTE]
     >This improvement item does not contribute to the security score in itself because it's not a prerequisite for Windows Defender AG. It gives an indication of a potential reason why Windows Defender AG is not turned on.
