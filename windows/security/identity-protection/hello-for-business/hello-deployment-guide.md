@@ -46,7 +46,6 @@ Do not begin your deployment until the hosting servers and infrastructure (not r
 ## Deployment and trust models
 
 > [!IMPORTANT]
-> The remote desktop with biometrics feature only works with certificate trust deployments.  The feature takes advantage of the redirected smart card capabilities of the remote desktop protocol.  Microsoft continues to investigate supporting this feature for key trust deployments. 
 
 Windows Hello for Business has two deployment models: Hybrid and On-premises. Each deployment model has two trust models: *Key trust* or *certificate trust*.
 
