@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: low
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.author: greglin
 ms.date: 10/31/2018
 ms.reviewer: 

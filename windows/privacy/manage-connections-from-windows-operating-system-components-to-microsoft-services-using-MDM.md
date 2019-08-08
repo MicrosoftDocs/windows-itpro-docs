@@ -63,10 +63,13 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 
 1. **Internet Explorer** The following Microsoft Internet Explorer MDM policies are available in the [Internet Explorer CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer)
    1. MDM Policy: [InternetExplorer/AllowSuggestedSites](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-allowsuggestedsites). Recommends websites based on the user’s browsing activity. **Set to Disabled**
-   1. MDM Policy: [InternetExplorer/PreventManagingSmartScreenFilter]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-preventmanagingsmartscreenfilter). Prevents the user from managing SmartScreen Filter, which warns the user if the website being visited is known for fraudulent attempts to gather personal information through "phishing," or is known to host malware. **Set to Enabled**
+   1. MDM Policy: [InternetExplorer/PreventManagingSmartScreenFilter]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-preventmanagingsmartscreenfilter). Prevents the user from managing SmartScreen Filter, which warns the user if the website being visited is known for fraudulent attempts to gather personal information through "phishing," or is known to host malware. **Set to String** with Value:
+      1. **\<enabled/>\<data id=”IE9SafetyFilterOptions” value=”1”/>**
    1. MDM Policy: [InternetExplorer/DisableFlipAheadFeature]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disableflipaheadfeature). Determines whether a user can swipe across a screen or click Forward to go to the next pre-loaded page of a website. **Set to Enabled**
-   1. MDM Policy: [InternetExplorer/DisableHomePageChange]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disablehomepagechange). Determines whether users can change the default Home Page or not. **Set to Enabled**
-   1. MDM Policy: [InternetExplorer/DisableFirstRunWizard]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disablefirstrunwizard). Prevents Internet Explorer from running the First Run wizard the first time a user starts the browser after installing Internet Explorer or Windows. **Set to Enabled**
+   1. MDM Policy: [InternetExplorer/DisableHomePageChange]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disablehomepagechange). Determines whether users can change the default Home Page or not. **Set to String** with Value:
+      1. **\<enabled/>\<data id=”EnterHomePagePrompt” value=”Start Page”/>**
+   1. MDM Policy: [InternetExplorer/DisableFirstRunWizard]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-disablefirstrunwizard). Prevents Internet Explorer from running the First Run wizard the first time a user starts the browser after installing Internet Explorer or Windows. **Set to String** with Value:
+      1. **\<enabled/>\<data id=”FirstRunOptions” value=”1”/>** 
 
 1. **Live Tiles**
    1. MDM Policy: [Notifications/DisallowTileNotification](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-notifications). This policy setting turns off tile notifications. If you enable this policy setting applications and system features will not be able to update their tiles and tile badges in the Start screen.  **Integer value 1**
@@ -144,21 +147,21 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 1. **Windows Update**
    1. [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate). Control automatic updates. **Set to 5 (five)**
    1. Windows Update Allow Update Service - [Update/AllowUpdateService](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowupdateservice). Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store. **Set to 0 (zero)**
-   1. Windows Update Service URL - [Update/UpdateServiceUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-updateserviceurl). Allows the device to check for updates from a WSUS server instead of Microsoft Update. **Set to String** with the Value next to item below: 
-      1. \<Replace>\<CmdID>$CmdID$</CmdID>\<Item>\<Meta>\<Format>chr</Format>\<Type>text/plain</Type>\</Meta>\<Target> \<LocURI>./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl</LocURI>\</Target>\<Data>http://abcd-srv:8530</Data>\</Item>\</Replace>
+   1. Windows Update Service URL - [Update/UpdateServiceUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-updateserviceurl). Allows the device to check for updates from a WSUS server instead of Microsoft Update. **Set to String** with the Value: 
+      1. **\<Replace>\<CmdID>$CmdID$</CmdID>\<Item>\<Meta>\<Format>chr</Format>\<Type>text/plain</Type>\</Meta>\<Target> \<LocURI>./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl</LocURI>\</Target>\<Data>http://abcd-srv:8530</Data>\</Item>\</Replace>**
 
 ### <a href="" id="bkmk-mdm-whitelist"></a> Allowed traffic ("Whitelisted traffic") for Microsoft InTune / MDM configurations
 
 |**Allowed traffic endpoints** | 
 | --- | 
-|ctldl.windowsupdate.com|
+|activation-v2.sls.microsoft.com/*|
 |cdn.onenote.net|
+|client.wns.windows.com|
+|crl.microsoft.com/pki/crl/*|
+|ctldl.windowsupdate.com|
+|dm3p.wns.windows.com|
+|\*microsoft.com/pkiops/\*|
+|ocsp.digicert.com/*|
 |r.manage.microsoft.com|
 |tile-service.weather.microsoft.com|
 |settings-win.data.microsoft.com|
-|client.wns.windows.com|
-|dm3p.wns.windows.com|
-|crl.microsoft.com/pki/crl/*|
-|*microsoft.com/pkiops/crl/**|
-|activation-v2.sls.microsoft.com/*|
-|ocsp.digicert.com/*|

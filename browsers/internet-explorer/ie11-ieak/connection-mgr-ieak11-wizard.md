@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 1edaa7db-cf6b-4f94-b65f-0feff3d4081a
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the Connection Manager page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

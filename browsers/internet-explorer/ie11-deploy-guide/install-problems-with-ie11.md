@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 3ae77745-86ac-40a9-a37d-eebbf37661a3
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Install problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

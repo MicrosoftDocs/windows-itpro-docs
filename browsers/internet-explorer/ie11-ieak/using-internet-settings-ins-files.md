@@ -6,7 +6,7 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: a24a7cdb-681e-4f34-a53c-6d8383c5f977
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: dansimp
 title: Using Internet Settings (.INS) files with IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

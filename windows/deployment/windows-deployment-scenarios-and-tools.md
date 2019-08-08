@@ -4,12 +4,12 @@ description: To successfully deploy the Windows 10 operating system and applica
 ms.assetid: 0d6cee1f-14c4-4b69-b29a-43b0b327b877
 ms.reviewer: 
 manager: laurawi
-ms.author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
 keywords: deploy, volume activation, BitLocker, recovery, install, installation, VAMT, MDT, USMT, WDS
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 

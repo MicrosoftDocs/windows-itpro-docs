@@ -10,7 +10,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
 # Manage Surface Hub 2S with Intune
@@ -48,9 +48,9 @@ To ensure optimal video and audio quality on Surface Hub 2S, add the following Q
 
 |**Name**|**Description**|**OMA-URI**|**Type**|**Value**|
 |:------ |:------------- |:--------- |:------ |:------- |
-|**Audio Ports**| Audio Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition | String  | 50000–50019 |
+|**Audio Ports**| Audio Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition | String  | 50000-50019 |
 |**Audio DSCP**| Audio ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DSCPAction | Integer | 46 |
-|**Video Ports**| Video Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition | String  | 50020–50039 |
+|**Video Ports**| Video Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition | String  | 50020-50039 |
 |**Video DSCP**| Video ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction | Integer | 34 |
 
 > [!NOTE]
