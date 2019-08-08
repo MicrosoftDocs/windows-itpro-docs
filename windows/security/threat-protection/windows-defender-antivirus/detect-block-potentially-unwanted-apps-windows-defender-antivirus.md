@@ -32,19 +32,19 @@ Typical PUA behavior includes:
 - Various types of software bundling
 - Driver and registry optimizers that detect issues, request payment to fix the errors, and then make no changes or optimizations (also known as "rogue antivirus" programs)
 
-These applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning up after them.
+These applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up.
 
 > [!TIP]
-> You can visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm that the feature is working, and see how it works.
+> You can visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm that the feature is working, and see it in action.
 
 ## How it works
 
-PUAs may operate entirely on a local machine, or rely on remote resources located at an outside URL. PUA protection protects you both from local files. and from URLs associated with potentially unwanted behavior.
+PUAs may operate entirely on a local machine, or rely on remote resources located at an outside URL. PUA protection protects you from local files.
 
 > [!TIP]
 > If you are running a version of Edge that is Chromium-based, PUA protection will also block URLs associated with potentially unwanted activities.
 
-Windows Defender Antivirus blocks detected PUA files, and any attempts to download, move, run, visit, or install them. Blocked PUA files are then moved to quarantine.
+Windows Defender Antivirus blocks detected PUA files, and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine.
 
 When a PUA is detected on an endpoint, Windows Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-windows-defender-antivirus.md)) in the same format as other threat detections. The notification will be prefaced with _PUA:_ to indicate its content.
 
@@ -111,7 +111,13 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 
 ## Allow-listing apps
 
-Sometimes a file or URL is erroneously blocked by PUA protection, or a feature of a PUA is actually required to complete a task. In these cases, a file or URL can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files and URLs which are currently blocked by PUA protection.
+Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files which are currently blocked by PUA protection.
+
+## URL blocking
+
+URL blocking is a new feature, exclusive to Chromium-based builds of the Edge web browser. URL blocking is provided via [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md). You can configure it by [...]
+
+If you have a Chromium-based version of Edge, you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen demo pages.
 
 ## Related topics
 
