@@ -27,7 +27,6 @@ This deployment guide is to guide you through deploying Windows Hello for Busine
 
 > [!NOTE]
 > Two Azure AD Connect synchronizations are required in order for WHfB to begin working.
-> For more features, see [Windows Hello for Business Features](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-features#remote-desktop-with-biometrics).
 
 ## Assumptions
 
