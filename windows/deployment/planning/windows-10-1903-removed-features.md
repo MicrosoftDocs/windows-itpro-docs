@@ -29,7 +29,7 @@ The following features and functionalities are removed from the installed produc
 | Desktop Messaging app doesn't offer messages sync |                                                                                                                          The messaging app on desktop has a sync feature that can be used to sync SMS text messages received from Windows Mobile and keep a copy of them on the desktop. The sync feature has been removed from all devices. Due to this change, you will only be able to access messages from the device that received the message. 
 
 > [!NOTE] 
-> This only relates to messages from Windows Phone devices in the Messaging app. It does NOT apply to messages from Android devices in the Your Phone app.
+> This only relates to messages from Windows Phone devices in the messaging app. It does **not** apply to messages from Android devices in the Your Phone app.
 
 ## Features we’re no longer developing
 
