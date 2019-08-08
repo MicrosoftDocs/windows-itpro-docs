@@ -20,6 +20,11 @@ sections:
     text: "
       Find information on known issues for Windows 10, version 1803. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
       
+ <table border = '0' class='box-info'><tr>
+<td bgcolor='#d3f1fb' class='alert is-primary'><b>Current status as of August 7, 2019</b>:<br>
+      <div>Windows 10, version 1803 (the April 2018 Update) will reach end of service on November 12, 2019 for Home and Pro editions. We will begin updating devices running Windows 10, version 1803 to Windows 10, version 1903 (the May 2019 Update) starting July 16, 2019 to help ensure that these devices remain in a serviced and secure state. For more information, see the <a href='https://docs.microsoft.com/windows/release-information/status-windows-10-1903' target='_blank'>Windows 10, version 1903 section</a> of the release information dashboard.</div>
+</td></tr></table>
+
       " 
 
 - items:

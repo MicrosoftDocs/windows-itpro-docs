@@ -18,7 +18,7 @@ sections:
 - items:
   - type: markdown
     text: "
-      Find information on known issues and the status of the rollout for Windows 10, version 1809 and Windows Server 2019. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
+      Find information on known issues for Windows 10, version 1809 and Windows Server 2019. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
       
  <table border = '0' class='box-info'><tr>
 <td bgcolor='#d3f1fb' class='alert is-primary'><b>Current status</b>:<br>Windows 10, version 1809 is designated for broad deployment and available for any user who manually selects “Check for updates” via Windows Update. The recommended servicing status is Semi-Annual Channel.
@@ -65,6 +65,7 @@ sections:
     text: "<div>This table offers a summary of current active issues and those issues that have been resolved in the last 30 days.</div><br>
       <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Last updated</td></tr>
       <tr><td><div id='600msg'></div><b>Domain connected devices that use MIT Kerberos realms will not start up</b><br>Devices connected to a domain that is configured to use MIT Kerberos realms will not start up or may continue to restart after updating.<br><br><a href = '#600msgdesc'>See details ></a></td><td>OS Build 17763.652<br><br>July 22, 2019<br><a href ='https://support.microsoft.com/help/4505658' target='_blank'>KB4505658</a></td><td>Investigating<br><a href = '' target='_blank'></a></td><td>August 01, 2019 <br>06:12 PM PT</td></tr>
+      <tr><td><div id='598msg'></div><b>Apps and scripts using the NetQueryDisplayInformation API may fail with error</b><br> Applications and scripts that call the NetQueryDisplayInformation API or the WinNT provider equivalent may fail to return results after the first page of data.<br><br><a href = '#598msgdesc'>See details ></a></td><td>OS Build 17763.55<br><br>October 09, 2018<br><a href ='https://support.microsoft.com/help/4464330' target='_blank'>KB4464330</a></td><td>Investigating<br><a href = '' target='_blank'></a></td><td>August 01, 2019 <br>05:00 PM PT</td></tr>
       <tr><td><div id='530msg'></div><b>Devices starting using PXE from a WDS or SCCM servers may fail to start</b><br>Devices that start up using Preboot Execution Environment (PXE) images from Windows Deployment Services (WDS) may fail to start with error \"0xc0000001.\"<br><br><a href = '#530msgdesc'>See details ></a></td><td>OS Build 17763.557<br><br>June 11, 2019<br><a href ='https://support.microsoft.com/help/4503327' target='_blank'>KB4503327</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>July 10, 2019 <br>07:09 PM PT</td></tr>
       <tr><td><div id='498msg'></div><b>Startup to a black screen after installing updates</b><br>Your device may startup to a black screen during the first logon after installing updates.<br><br><a href = '#498msgdesc'>See details ></a></td><td>OS Build 17763.557<br><br>June 11, 2019<br><a href ='https://support.microsoft.com/help/4503327' target='_blank'>KB4503327</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>June 14, 2019 <br>04:41 PM PT</td></tr>
       <tr><td><div id='346msg'></div><b>Devices with some Asian language packs installed may receive an error</b><br>After installing the KB4493509 devices with some Asian language packs installed may receive the error, \"0x800f0982 - PSFX_E_MATCHING_COMPONENT_NOT_F<br><br><a href = '#346msgdesc'>See details ></a></td><td>OS Build 17763.437<br><br>April 09, 2019<br><a href ='https://support.microsoft.com/help/4493509' target='_blank'>KB4493509</a></td><td>Mitigated<br><a href = '' target='_blank'></a></td><td>May 03, 2019 <br>10:59 AM PT</td></tr>
@@ -79,6 +80,15 @@ sections:
         <div>
         </div> 
       "
+- title: August 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='598msgdesc'></div><b>Apps and scripts using the NetQueryDisplayInformation API may fail with error</b><div>&nbsp;Applications and scripts that call the <a href=\"https://docs.microsoft.com/en-us/windows/win32/api/lmaccess/nf-lmaccess-netquerydisplayinformation\" target=\"_blank\" style=\"\">NetQueryDisplayInformation</a> API or the <a href=\"https://docs.microsoft.com/en-us/windows/win32/adsi/adsi-winnt-provider\" target=\"_blank\" style=\"\">WinNT provider</a> equivalent may fail to return results after the first page of data, often 50 or 100 entries.&nbsp;When requesting additional pages you may receive the error, “1359: an internal error occurred.”</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Server: Windows Server 2019; Windows Server 2016</li></ul><div></div><div><strong>Next steps: </strong>We are working on a resolution and will provide an update in an upcoming release.</div><br><a href ='#598msg'>Back to top</a></td><td>OS Build 17763.55<br><br>October 09, 2018<br><a href ='https://support.microsoft.com/help/4464330' target='_blank'>KB4464330</a></td><td>Investigating<br><a href = '' target='_blank'></a></td><td>Last updated:<br>August 01, 2019 <br>05:00 PM PT<br><br>Opened:<br>August 01, 2019 <br>05:00 PM PT</td></tr>
+      </table>
+      "
+
 - title: July 2019
 - items:
   - type: markdown
