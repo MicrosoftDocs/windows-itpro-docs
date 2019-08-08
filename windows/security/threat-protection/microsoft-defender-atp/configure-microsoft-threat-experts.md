@@ -1,7 +1,7 @@
 ---
 title: Configure and manage Microsoft Threat Experts capabilities
 ms.reviewer: 
-description: You need to register to Microsoft Threats Experts preview to configure, manage, and use it in your daily security operations and security administration work.
+description: Register to Microsoft Threats Experts to configure, manage, and use it in your daily security operations and security administration work.
 keywords: Microsoft Threat Experts, managed threat hunting service, MTE, Microsoft managed hunting service
 search.product: Windows 10
 search.appverid: met150
@@ -23,12 +23,12 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
+[!Include[Prerelease information](prerelease.md)]
 
 ## Before you begin 
-To experience the full Microsoft Threat Experts targeted attack notification capability in Microsoft Defender ATP, and preview the experts-on-demand capability, you need to have a valid Premier customer service and support account. Premier charges will not be incurred during for the capability in preview, but for the generally available capability, there will be charges.
+To experience the full Microsoft Threat Experts targeted attack notification capability in Microsoft Defender ATP, and preview the experts-on-demand capability, you need to have a valid Premier customer service and support account. Premier charges are not incurred during for the capability in preview, but for the generally available capability, there will be charges.
 
-You also need to ensure that you have Microsoft Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up. 
+Ensure that you have Microsoft Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up. 
 
 ## Register to Microsoft Threat Experts managed threat hunting service 
 If you're already a Microsoft Defender ATP customer, you can apply through the Microsoft Defender ATP portal. 
@@ -47,11 +47,11 @@ If you're already a Microsoft Defender ATP customer, you can apply through the M
 6. From the navigation pane, go to **Settings** > **General** > **Advanced features** to turn the **Threat Experts** toggle on. Click **Save preferences**. 
 
 ## Receive targeted attack notification from Microsoft Threat Experts 
-You can receive targeted attack notification from Microsoft Threat Experts through the following:  
+You can receive targeted attack notification from Microsoft Threat Experts through the following medium:  
 - The Microsoft Defender ATP portal's **Alerts** dashboard  
 - Your email, if you choose to configure it 
 
-To receive targeted attack notifications through email, you need to create an email notification rule.
+To receive targeted attack notifications through email, create an email notification rule.
 
 ### Create an email notification rule 
 You can create rules to send email notifications for notification recipients. See  [Configure alert notifications](configure-email-notifications.md) to create, edit, delete, or troubleshoot email notification, for details.
@@ -68,14 +68,14 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 >[!NOTE]
 >The Microsoft Threat Experts' experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved.
 
-You can partner with Microsoft Threat Experts who can be engaged directly from within the Windows Defender Security Center for timely and accurate response. Experts provide insights needed to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised machine, or a threat intelligence context that you see on your portal dashboard. 
+You can partner with Microsoft Threat Experts who can be engaged directly from within the Windows Defender Security Center for timely and accurate response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised machine, or a threat intelligence context that you see on your portal dashboard. 
 
 >[!NOTE]
 >Alert inquiries related to your organization's customized threat intelligence are currently not supported. Consult your security operations or incident response team for details.
 
-1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or machine is in view before raising an inquiry. 
-2. From the upper right-hand menu, click **?**, then select **Ask a threat expert**.
-3. Asking a threat expert is a two-step process: you need to provide the necessary information and open a support ticket. 
+1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or machine is in view before you send an inquiry. 
+2. From the upper right-hand menu, click **?**. Then, select **Ask a threat expert**.
+3. Asking a threat expert is a two-step process: provide the necessary information and open a support ticket. 
     
     **Step 1: Provide information**    
     a.  Provide enough information to give the Microsoft Threat Experts enough context to start the investigation. Select the inquiry category from the **Provide information > Inquiry** details drop-down menu. <br>      
@@ -86,7 +86,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
     **Step 2: Open a support ticket**    
     >[!NOTE]
-    >To experience the full Microsoft Threat Experts preview capability in Microsoft Defender ATP, you need to have a Premier customer service and support account.  However, you will not be charged for the Experts-on-demand service during the preview.
+    >To experience the full Microsoft Threat Experts preview capability in Microsoft Defender ATP, you need a Premier customer service and support account.  However, you will not be charged for the Experts-on-demand service during the preview.
  
     a. In the **New support request** customer support page, select the following from the dropdown menu and then click **Next**: <br>
 
@@ -103,7 +103,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
     
     e. Verify your contact details and add another if necessary. Then, click **Next**. <br>
 
-    f. Review the summary of your support request, and update if necessary. Make sure that you read and understand the **Microsoft Services Agreement** and **Privacy Statement**. Then, click **Submit**. You will see the confirmation page indicating the response time and your support request number. <br>
+    f. Review the summary of your support request, and update if necessary. Make sure that you read and understand the **Microsoft Services Agreement** and **Privacy Statement**. Then, click **Submit**. A confirmation page indicating the response time and your support request number shows. <br>
 
 ## Sample questions to ask Microsoft Threat Experts
 
@@ -114,12 +114,12 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 - Can you give more context or insights about this alert: “Suspicious behavior by a system utility was observed”. 
 
 **Possible machine compromise**
-- Can you please help answer why we see “Unknown process observed?” This is seen quite frequently on many machines and we would appreciate input on whether this is related to malicious activity.
+- Can you help answer why we see “Unknown process observed?” This is seen quite frequently on many machines. We appreciate any input to clarify whether this is related to malicious activity.
 - Can you help validate a possible compromise on the following system on [date] with similar behaviors as the previous [malware name] malware detection on the same system in [month]?
 
 **Threat intelligence details**
-- This morning, we detected a phishing email that delivered a malicious Word document to a user. This caused a series of suspicious events which triggered multiple Windows Defender alerts for [malware name] malware. Do you have any information on this malware? If yes, can you please send me a link?
-- I recently saw a [social media reference e.g. Twitter or blog] post about a threat that is targeting my industry. Can you help me understand what protection Microsoft Defender ATP provides against this threat actor? 
+- This morning, we detected a phishing email that delivered a malicious Word document to a user. This caused a series of suspicious events which triggered multiple Windows Defender alerts for [malware name] malware. Do you have any information on this malware? If yes, can you send me a link?
+- I recently saw a [social media reference e.g., Twitter or blog] post about a threat that is targeting my industry. Can you help me understand what protection Microsoft Defender ATP provides against this threat actor? 
 
 **Microsoft Threat Experts’ alert communications** 
 - Can your incident response team help us address the targeted attack notification that we got?
@@ -132,7 +132,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 ## Scenario
 
 ### Receive a progress report about your managed hunting inquiry 
-Response from Microsoft Threat Experts varies according to your inquiry. They will email a progress report to you regarding the Ask a threat expert inquiry that you've submitted, within two days, to communicate the investigation status from the following categories: 
+Response from Microsoft Threat Experts varies according to your inquiry. They will email a progress report to you about the Ask a threat expert inquiry that you've submitted, within two days, to communicate the investigation status from the following categories: 
 - More information is needed to continue with the investigation 
 - A file or several file samples are needed to determine the technical context 
 - Investigation requires more time   
