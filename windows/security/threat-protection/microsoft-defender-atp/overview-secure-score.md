@@ -44,7 +44,7 @@ The Microsoft secure score tile is reflective of the sum of all the security con
 
 ![Image of Microsoft secure score tile](images/mss.png)
 
-Each security control contributes 100 points to the score. The total number is reflective of the score potential and calculated by multiplying the number of supported security controls (security controls pillars) by the maximum points that each pillar contributes (maximum of 100 points for each pillar). 
+Each Microsoft security control contributes 100 points to the score. The total number is reflective of the score potential and calculated by multiplying the number of supported Microsoft security controls (security controls pillars) by the maximum points that each pillar contributes (maximum of 100 points for each pillar). 
 
 The Office 365 Secure Score looks at your settings and activities and compares them to a baseline established by Microsoft. For more information, see [Introducing the Office 365 Secure Score](https://support.office.com/article/introducing-the-office-365-secure-score-c9e7160f-2c34-4bd0-a548-5ddcc862eaef#howtoaccess).
 
