@@ -54,7 +54,9 @@ Tamper Protection doesn't prevent you from viewing your security settings, or yo
 If you are a home user, or you are not subject to settings managed by a security team, you can use the Windows Security app to turn Tamper Protection on or off. You must have appropriate admin permissions on your machine to perform the following task.
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
 2. Select **Virus & threat protection**, then select **Virus & threat protection settings**.
+
 3. Set **Tamper Protection** to **On** or **Off**.
 
 > [!NOTE]
@@ -89,6 +91,9 @@ If you are part of your organization's security team, you can now turn Tamper Pr
 
 5. Assign the profile to one or more groups.
 
-### Frequently asked questions about tamper protection in Microsoft 365 E5
+### Frequently asked questions about configuring tamper protection in Intune (Microsoft 365 E5)
+
+
+
 
 
