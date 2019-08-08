@@ -93,7 +93,66 @@ If you are part of your organization's security team, you can now turn Tamper Pr
 
 ### Frequently asked questions about configuring tamper protection in Intune (Microsoft 365 E5)
 
+#### To which Windows OS versions is configuring Tamper Protection is applicable?
 
+Ans: Windows 1903 May release
 
+#### Is feature supported on servers?
 
+No
 
+#### Will the feature has any impact on third party AV registration?
+
+No, third party AV will continue to register with Windows Security Application
+
+#### What happens if defender is not active on the device?
+
+Feature will not have any impact on such devices
+
+#### How can I turn feature on/off?
+
+If you are home user, you should be able to turn feature on/off from windows security center app
+ 
+If you are MDATP E5 customer, you should be able to mange feature from Intune in similar way you manage other endpoint protection features.
+1.	Go to Device configuration – profiles 
+2.	Create a profile
+a.	Platform: Windows 10 and later.
+b.	ProfileType: Endpoint protection
+c.	Settings/Windows Defender Security Center/Tamper Protection 
+3.	Assign the profile to groups
+ 
+#### How does this affect how i manage WD through my group policy?
+
+“regular group policy doesn’t apply to tamper protection, and changes to WD setting will be ignored when TP is on”
+
+#### For MDATP E5, is the  feature targeted to org only?
+
+Feature can be targeted to entire og, device and user group via Intune
+
+#### Can I manage feature from SCCM?
+
+Currently we do not have support to mange Tamper protection through SCCM
+
+#### I have windows E3 enrollment, can I use this feature
+At present feature is only available for MDATP E5
+
+#### What happens if I try to change defender setting from Intune, SCCM, WMI when tamper protection is enabled on the device
+
+You won’t be able to turn the feature on; those change request will be ignored.
+
+#### I’m enterprise customer, can local admin change the tamper protection from the device
+
+No local admin will not be able to change/modify tamper protection state.
+
+#### What happens if my device is MDATP (Sense onboarded) and then goes into off boarded state?
+
+TP state will be changed, and feature will not be applicable
+
+#### Will there be alert on defender tampering on Microsoft Defender ATP portal
+
+Yes. it will be shown as alert and sec ops can also do write hunting query.
+Go to Microsoft.securitycerter.com/
+Under alerts you could see the alerts
+ 
+You can use advance hunting  query as shown below
+ 
