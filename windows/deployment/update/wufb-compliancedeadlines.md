@@ -48,7 +48,7 @@ Once the device is in the pending restart state, it will attempt to restart the 
 
 |Policy|Location|Quality update deadline in days|Feature update deadline in days|Grace period in days|
 |-|-|-|-|-|
-| (starting in Windows 10, version 1903) Specify deadlines for automatic updates and restarts |      | 7 | 7 | 2 |
+| (starting in Windows 10, version 1903) Specify deadlines for automatic updates and restarts | GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadlines for automatic updates and restarts    | 7 | 7 | 2 |
 
 ### Controlling notification experience for deadline 
 
@@ -92,16 +92,21 @@ Before the deadline the device will be in two states: auto-restart period and en
 |Configure Auto-restart required notification for updates	|GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Auto-restart required notification for updates|State: Enabled <br>**Method**: 2- User|
 
 ### Notification experience for engaged deadlines
+
 Notification users get for quality update engaged deadline:
+
 ![The notification users get for an impending engaged quality update deadline](images/wufb-quality-engaged-notification.png)
 
 Notification users get for a quality update deadline:
+
 ![The notification users get for an impending quality update deadline](images/wufb-quality-notification.png)
 
 Notification users get for a feature update engaged deadline:
+
 ![The notification users get for an impending feature update engaged deadline](images/wufb-feature-update-engaged-notification.png)
 
 Notification users get for a feature update deadline:
+
 ![The notification users get for an impending feature update deadline](images/wufb-feature-update-deadline-notification.png)
 
 When **Specify deadlines for automatic updates and restarts** is set (starting in Windows 10, version 1903):
