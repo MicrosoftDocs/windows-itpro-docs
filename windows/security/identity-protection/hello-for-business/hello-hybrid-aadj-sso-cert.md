@@ -663,7 +663,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 16. Under **Extended key usage**, type **Smart Card Logon** under **Name**. Type **1.3.6.1.4.1.311.20.2.2** under **Object identifier**.  Click **Add**.
 17. Type a percentage (without the percent sign) next to **Renewal Threshold** to determine when the certificate should attempt to renew. The recommended value is **20**.
     ![WHFB SCEP certificate Profile EKUs](images/aadjcert/intunewhfbscepprofile-03.png)
-18. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**.  For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll.  Click **Add**.  Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests amongst the URLs listed in the SCEP certificate profile.
+18. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**. For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll. Click **Add**. Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests among the URLs listed in the SCEP certificate profile.
 19. Click **OK**.
 20. Click **Create**.
 
