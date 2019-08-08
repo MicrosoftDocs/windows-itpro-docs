@@ -39,9 +39,12 @@ These applications can increase the risk of your network being infected with act
 
 ## How it works
 
-PUAs may operate entirely on a local machine, or rely on remote resources located at an outside URL. PUA protection protects you both from local files, and from URLs associated with potentially unwanted behavior.
+PUAs may operate entirely on a local machine, or rely on remote resources located at an outside URL. PUA protection protects you both from local files. and from URLs associated with potentially unwanted behavior.
 
-Windows Defender Antivirus blocks detected PUA files and URLs, and any attempts to download, move, run, visit, or install them. Blocked PUA files are then moved to quarantine. Requests to blocked URLs are denied.
+> [!TIP]
+> If you are running a version of Edge that is Chromium-based, PUA protection will also block URLs associated with potentially unwanted activities.
+
+Windows Defender Antivirus blocks detected PUA files, and any attempts to download, move, run, visit, or install them. Blocked PUA files are then moved to quarantine.
 
 When a PUA is detected on an endpoint, Windows Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-windows-defender-antivirus.md)) in the same format as other threat detections. The notification will be prefaced with _PUA:_ to indicate its content.
 
