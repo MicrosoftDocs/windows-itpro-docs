@@ -19,6 +19,10 @@ ms.topic: conceptual
 ---
 
 # Connected applications in Microsoft Defender ATP
+**Applies to:**
+- [Microsoft Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+[!include[Prerelease information](prerelease.md)]
 
 Connected applications integrates with the Microsoft Defender ATP platform using APIs. 
 
@@ -31,7 +35,7 @@ From the left navigation menu, select **Partners & APIs** > **Connected AAD appl
 
  
 ## View connected application details
-The Connected applications page provides information about the Azure AD appplications connected to Microsoft Defender ATP in your organization. You can review the usage of the connected applications: last seen, number of requests in the past 24 hours, and request trends in the last 30 days.
+The Connected applications page provides information about the Azure AD applications connected to Microsoft Defender ATP in your organization. You can review the usage of the connected applications: last seen, number of requests in the past 24 hours, and request trends in the last 30 days.
 
 ![Image of connected apps](images/connected-apps.png)
  
