@@ -60,7 +60,7 @@ The trust model determines how you want users to authenticate to the on-premises
 For additional information regarding directory sync, including hybrid deployments (Azure Active Directory) using cert and key trusts models see [Hybrid Windows Hello for Business Prerequisites](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-prereqs#directory-synchronization) and [Hybrid Key trust Windows Hello for Business Prerequisites](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-prereqs#directory-synchronization).
 
 >[!NOTE]
->RDP does not support authentication with Windows Hello for business key trust deployments. RDP is only supported with certificate trust deployments at this time. 
+>Remote Desktop Protocol (RDP) does not support authentication with Windows Hello for Business key trust deployments. RDP is only supported with certificate trust deployments at this time. See [Remote Desktop with Biometrics](hello-features.md#remote-desktop-with-biometrics) to learn more.
 
 Following are the various deployment guides and models included in this topic:
 - [Hybrid Azure AD Joined Key Trust Deployment](hello-hybrid-key-trust.md)
