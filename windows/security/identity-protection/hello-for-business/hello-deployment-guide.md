@@ -45,7 +45,6 @@ Do not begin your deployment until the hosting servers and infrastructure (not r
 
 ## Deployment and trust models
 
-> [!IMPORTANT]
 
 Windows Hello for Business has two deployment models: Hybrid and On-premises. Each deployment model has two trust models: *Key trust* or *certificate trust*.
 
