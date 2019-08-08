@@ -1,5 +1,5 @@
 ---
-title: Protect security settings with Tamper Protection
+title: Protect security settings with tamper protection
 ms.reviewer: 
 manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
