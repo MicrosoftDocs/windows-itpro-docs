@@ -4,7 +4,7 @@ description: Deployment rings in Windows 10 are similar to the deployment groups
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
 ms.author: greglin
 ms.date: 07/11/2018

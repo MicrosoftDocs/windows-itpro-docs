@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 4b21bb27-aeac-407f-ae58-ab4c6db2baf6
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Fix web compatibility issues using document modes and the Enterprise Mode site list (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

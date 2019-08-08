@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -68,6 +68,7 @@ This guide is intended for use by an IT-specialist, system architect, or busines
 <tr><td><a href="autopilot-faq.md">FAQ</a><td>Frequently asked questions on several topics are provided.
 <tr><td><a href="autopilot-support.md">Support contacts</a><td>Support information is provided.
 <tr><td><a href="registration-auth.md">Registration authorization</a><td>This article discusses how a CSP partner or OEM can obtain customer authorization to register Windows Autopilot devices.
+<tr><td><a href="autopilot-mbr.md">Motherboard replacement</a><td>Information about how to deal with Autopilot registration and device repair issues is provided.
 </table>
 
 ## Related topics

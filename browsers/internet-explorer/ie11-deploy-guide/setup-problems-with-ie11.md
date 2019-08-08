@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 2cd79988-17d1-4317-bee9-b3ae2dd110a0
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Setup problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

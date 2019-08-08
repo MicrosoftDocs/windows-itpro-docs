@@ -37,13 +37,13 @@ You can also randomize the times when each endpoint checks and downloads protect
 
 1.  On your System Center Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
 
-2.  Go to the **Definition updates** section.
+2.  Go to the **Security intelligence updates** section.
 
 3. To check and download updates at a certain time:
-      1. Set **Check for Endpoint Protection definitions at a specific interval...** to **0**.
-      2. Set **Check for Endpoint Protection definitions daily at...** to the time when updates should be checked.
+      1. Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to **0**.
+      2. Set **Check for Endpoint Protection security intelligence updates daily at...** to the time when updates should be checked.
       3
-4. To check and download updates on a continual interval, Set **Check for Endpoint Protection definitions at a specific interval...** to the number of hours that should occur between updates.
+4. To check and download updates on a continual interval, Set **Check for Endpoint Protection security intelligence updates at a specific interval...** to the number of hours that should occur between updates.
 
 5.	[Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
@@ -60,9 +60,9 @@ You can also randomize the times when each endpoint checks and downloads protect
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates** and configure the following settings:
 
-    1.  Double-click the **Specify the interval to check for definition updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
-    2. Double-click the **Specify the day of the week to check for definition updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
-    3. Double-click the **Specify the time to check for definition updates** setting and set the option to **Enabled**. Enter the time when updates should be checked. The time is based on the local time of the endpoint. Click **OK**.
+    1.  Double-click the **Specify the interval to check for security intelligence updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.
+    2. Double-click the **Specify the day of the week to check for security intelligence updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
+    3. Double-click the **Specify the time to check for security intelligence updates** setting and set the option to **Enabled**. Enter the time when updates should be checked. The time is based on the local time of the endpoint. Click **OK**.
 
 
 

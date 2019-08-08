@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: af93742f-f955-44ab-bfa2-7bf0c99045d3
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Using Internet Explorer Administration Kit 11 (IEAK 11) to create packages (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

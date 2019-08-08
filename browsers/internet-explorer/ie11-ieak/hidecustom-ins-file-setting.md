@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: e673f7b1-c3aa-4072-92b0-20c6dc3d9277
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the HideCustom .INS file to hide the GUID for each custom component (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

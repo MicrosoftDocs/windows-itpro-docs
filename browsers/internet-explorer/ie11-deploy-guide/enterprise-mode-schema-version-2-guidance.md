@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 909ca359-5654-4df9-b9fb-921232fc05f5
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Enterprise Mode schema v.2 guidance (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

@@ -52,6 +52,7 @@
 ##### [Investigate machines](microsoft-defender-atp/investigate-machines.md)
 ##### [Investigate an IP address](microsoft-defender-atp/investigate-ip.md)
 ##### [Investigate a domain](microsoft-defender-atp/investigate-domain.md)
+###### [Investigate connection events that occur behind forward proxies](microsoft-defender-atp/investigate-behind-proxy.md)
 ##### [Investigate a user account](microsoft-defender-atp/investigate-user.md)
  
 #### [Machines list]()
@@ -248,7 +249,7 @@
 
 ##### [Manage updates and apply baselines]()
 ###### [Learn about the different kinds of updates](windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md)
-###### [Manage protection and definition updates](windows-defender-antivirus/manage-protection-updates-windows-defender-antivirus.md)
+###### [Manage protection and security intelligence updates](windows-defender-antivirus/manage-protection-updates-windows-defender-antivirus.md)
 ###### [Manage when protection updates should be downloaded and applied](windows-defender-antivirus/manage-protection-update-schedule-windows-defender-antivirus.md)
 ###### [Manage updates for endpoints that are out of date](windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus.md)
 ###### [Manage event-based forced updates](windows-defender-antivirus/manage-event-based-updates-windows-defender-antivirus.md)
@@ -393,7 +394,7 @@
 ####### [Get domain related alerts](microsoft-defender-atp/get-domain-related-alerts.md)
 ####### [Get domain related machines](microsoft-defender-atp/get-domain-related-machines.md)
 ####### [Get domain statistics](microsoft-defender-atp/get-domain-statistics.md)
-####### [Is domain seen in organization](microsoft-defender-atp/is-domain-seen-in-org.md)
+####### [Is domain seen in organization (Deprecated)](microsoft-defender-atp/is-domain-seen-in-org.md)
 
 ###### [File]()
 ####### [File methods and properties](microsoft-defender-atp/files.md)
@@ -404,9 +405,9 @@
 
 ###### [IP]()
 ####### [Get IP related alerts](microsoft-defender-atp/get-ip-related-alerts.md)
-####### [Get IP related machines](microsoft-defender-atp/get-ip-related-machines.md)
+####### [Get IP related machines (Deprecated)](microsoft-defender-atp/get-ip-related-machines.md)
 ####### [Get IP statistics](microsoft-defender-atp/get-ip-statistics.md)
-####### [Is IP seen in organization](microsoft-defender-atp/is-ip-seen-org.md)
+####### [Is IP seen in organization (Deprecated)](microsoft-defender-atp/is-ip-seen-org.md)
 
 ###### [User]()
 ####### [User methods](microsoft-defender-atp/user.md)

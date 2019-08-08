@@ -26,7 +26,7 @@ This flow only enforces the deadline where the device will attempt to silently r
 
 ### End-user experience
 
-Once the device is in the pending restart state, it will attempt to restart the device during non-active hours. This is known as the auto-restart period, and by default it does not require user interaction to reboot the device. 
+Once the device is in the pending restart state, it will attempt to restart the device during non-active hours. This is known as the auto-restart period, and by default it does not require user interaction to restart the device. 
 
 >[!NOTE]
 >Deadlines are enforced from pending restart state (for example, when the device has completed the installation and download from Windows Update).
@@ -39,11 +39,16 @@ Once the device is in the pending restart state, it will attempt to restart the 
 |Configure Auto-restart warning notification schedule for updates|Configures the reminder notification and the warning notification for a scheduled installation. The user can dismiss a reminder, but not the warning.|
 | (starting in Windows 10, version 1903) Specify deadlines for automatic updates and restarts | Similar to "Specify deadline before auto-restart for update installation," but starts the deadline countdown from when the update was published. Also introduces a configurable grace period and the option to opt out of automatic restarts until the deadline is reached. |
 
-### Suggested configuration  
+### Suggested configurations  
 
 |Policy|Location|3-Day Compliance|5-Day Compliance|7-Day Compliance |
 |-|-|-|-|-|
 |Specify deadline before auto-restart for update installation| 	GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadline before auto-restart for update installation |State: Enabled <br>**Specify the number of days before pending restart will automatically be executed outside of active hours**: 2|State: Enabled <br>**Specify the number of days before pending restart will automatically be executed outside of active hours**: 3|State: Enabled <br>**Specify the number of days before pending restart will automatically be executed outside of active hours**: 4
+
+
+|Policy|Location|Quality update deadline in days|Feature update deadline in days|Grace period in days|
+|-|-|-|-|-|
+| (starting in Windows 10, version 1903) Specify deadlines for automatic updates and restarts |      | 7 | 7 | 2 |
 
 ### Controlling notification experience for deadline 
 
@@ -98,3 +103,24 @@ Notification users get for a feature update engaged deadline:
 
 Notification users get for a feature update deadline:
 ![The notification users get for an impending feature update deadline](images/wufb-feature-update-deadline-notification.png)
+
+When **Specify deadlines for automatic updates and restarts** is set (starting in Windows 10, version 1903):
+
+**While restart is pending, before the deadline occurs:**
+- For the first few days, the user receives a toast notification
+- After this period, the user receives this dialog:
+
+![The notification users get for an impending restart prior to deadline](images/wufb-update-deadline-warning.png)
+- If the user scheduled a restart, or if an auto restart is scheduled, 15 minutes before the scheduled time the user is receives this notification that the restart is about to occur:
+
+![The notification users get for an impending restart 15 minutes prior to restart](images/wufb-restart-imminent-warning.png)
+
+
+
+**If the restart is still pending after the deadline passes:**
+- Within 12 hours before the deadline passes, the user receives this notification that the deadline is approaching:
+
+![The notification users get for an approaching restart deadline](images/wufb-pastdeadline-restart-warning.png)
+- Once the deadline has passed, the user is forced to restart to keep their devices in compliance and receives this notification:
+
+![The notification users get for an imminent restart after the deadline](images/wufb-pastdeadline-restartnow.png)
