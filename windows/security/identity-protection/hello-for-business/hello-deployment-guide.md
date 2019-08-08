@@ -25,9 +25,6 @@ Windows Hello for Business is the springboard to a world without passwords. It r
 
 This deployment guide is to guide you through deploying Windows Hello for Business, based on the planning decisions made using the Planning a Windows Hello for Business Deployment Guide. It provides you with the information needed to successfully deploy Windows Hello for Business in an existing environment.
 
-> [!NOTE]
-> Two Azure AD Connect synchronizations are required in order for WHfB to begin working.
-
 ## Assumptions
 
 This guide assumes that baseline infrastructure exists which meets the requirements for your deployment. For either hybrid or on-premises deployments, it is expected that you have: 
