@@ -41,14 +41,33 @@ With Tamper Protection, malicious apps are prevented from taking actions like th
 - Editing or removing security settings through group policies
 - and so on.
 
-Tamper Protection doesn't prevent you from viewing your security settings, or your security team from viewing or changing settings for your organization. In addition, Tamper Protection doesn't affect how third-party antivirus apps register with the Windows Security app.
+Tamper Protection doesn't prevent you from viewing your security settings, or your security team from viewing or changing settings for your organization. In addition, Tamper Protection doesn't affect how third-party antivirus apps register with the Windows Security app. Note that if your organization is using Windows 10 Enterprise E5, individual users can't change the Tamper Protection setting; this is managed by your security team.
+
+### What do you want to do?
+
+- [Turn Tamper Protection on (or off) for an individual machine](#turn-tamper-protection-on-or-off-for-an-individual-machine)
+
+- [Turn Tamper Protection on (or off) for your organization with Intune](#turn-tamper-protection-on-or-off-for-your-organization-with-intune)
+
+## Turn Tamper Protection on (or off) for an individual machine
+
+If you are a home user, or you are not subject to settings managed by a security team, you can use the Windows Security app to turn Tamper Protection on or off. You must have appropriate admin permissions on your machine to perform the following task.
+
+1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+2. Select **Virus & threat protection**, then select **Virus & threat protection settings**.
+3. Set **Tamper Protection** to **On** or **Off**.
 
 > [!NOTE]
-> On computers running Windows 10 Enterprise E5, users can't change the Tamper Protection setting.
+> Tamper Protection blocks attempts to modify Windows Defender Antivirus settings through the registry.
+> 
+> To help ensure that Tamper Protection doesn’t interfere with third-party security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later.
+> 
+> Once you’ve made this update, Tamper Protection will continue to protect your registry settings, and will also log attempts to modify them without returning errors.
 
-## Turn Tamper Protection on (or off) for your organization 
 
-If you are part of your organization's security team, you can turn Tamper Protection on (or off) in the Microsoft 365 Device Management portal. You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task. 
+## Turn Tamper Protection on (or off) for your organization with Intune
+
+If you are part of your organization's security team, you can now turn Tamper Protection on (or off) in the Microsoft 365 Device Management portal (Intune). You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task. 
 
 1. Make sure your organization meets the following requirements:
 
@@ -70,18 +89,6 @@ If you are part of your organization's security team, you can turn Tamper Protec
 
 5. Assign the profile to one or more groups.
 
-## Turn Tamper Protection on (or off) for an individual machine
+### Frequently asked questions about tamper protection in Microsoft 365 E5
 
-If you are a home user, or you are not subject to settings managed by a security team, you can use the Windows Security app to turn Tamper Protection on or off. You must have appropriate admin permissions on your machine to perform the following task.
-
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
-2. Select **Virus & threat protection**, then select **Virus & threat protection settings**.
-3. Set **Tamper Protection** to **On** or **Off**.
-
-> [!NOTE]
-> Tamper Protection blocks attempts to modify Windows Defender Antivirus settings through the registry.
-> 
-> To help ensure that Tamper Protection doesn’t interfere with third-party security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later.
-> 
-> Once you’ve made this update, Tamper Protection will continue to protect your registry settings, and will also log attempts to modify them without returning errors.
 
