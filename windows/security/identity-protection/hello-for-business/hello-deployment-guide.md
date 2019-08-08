@@ -71,7 +71,7 @@ Following are the various deployment guides and models included in this topic:
 - [On Premises Certificate Trust Deployment](hello-deployment-cert-trust.md)
 
 > [!NOTE]
-> This article covers all deployment models including on-premises. On-premises deployments, both key and certificate trust, use the Azure MFA server where the credentials are not synchronized to Azure Active Directory. For more information see [Validate and Deploy Multifactor Authentication Services (MFA)](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-key-trust-validate-deploy-mfa) and [Validate and Deploy Multifactor Authentication Services (MFA)](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-validate-deploy-mfa).
+> This article covers all deployment models including on-premises. On-premises deployments, both key and certificate trust, use the Azure MFA server where the credentials are not synchronized to Azure Active Directory. Learn how to [deploy Multifactor Authentication Services (MFA) for key trust](hello-key-trust-validate-deploy-mfa.md) and [for certificate trust](hello-cert-trust-validate-deploy-mfa.md) deployments.
 
 ## Provisioning
 
