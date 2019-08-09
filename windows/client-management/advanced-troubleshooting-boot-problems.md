@@ -157,7 +157,7 @@ If you receive BCD-related errors, follow these steps:
     Successfully scanned Windows installations. Total identified Windows installations: 0
     The operation completed successfully.
 
-    - Scanning all disks for Windows installations. Please wait, since this may take a while...
+    - Scanning all disks for Windows installations. Please wait, since this may take a while ...
     Successfully scanned Windows installations. Total identified Windows installations: 1
     D:\Windows  
     Add installation to boot list? Yes/No/All:
