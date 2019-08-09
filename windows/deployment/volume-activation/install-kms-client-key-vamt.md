@@ -9,7 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article

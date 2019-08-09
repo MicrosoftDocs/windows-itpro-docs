@@ -85,7 +85,7 @@ This section describes how to perform some of the most common tasks when reviewi
 4. Click **Run a new advanced scan** to specify different types of scans, such as a full scan.
 
 <a id="definition-version"></a>
-**Review the definition update version and download the latest updates in the Windows Security app**
+**Review the security intelligence update version and download the latest updates in the Windows Security app**
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).

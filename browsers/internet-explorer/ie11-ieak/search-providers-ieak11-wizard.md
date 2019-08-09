@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 48cfaba5-f4c0-493c-b656-445311b7bc52
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the Search Providers page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

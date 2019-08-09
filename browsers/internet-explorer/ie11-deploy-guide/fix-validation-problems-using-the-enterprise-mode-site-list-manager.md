@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 9f80e39f-dcf1-4124-8931-131357f31d67
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Fix validation problems using the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

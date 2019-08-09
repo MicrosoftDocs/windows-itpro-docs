@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 89084e01-4e3f-46a6-b90e-48ee58d6821c
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Missing Internet Explorer Maintenance settings for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

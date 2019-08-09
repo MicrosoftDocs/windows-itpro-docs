@@ -4,7 +4,7 @@ description: System Center Configuration Manager provides maximum control over q
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
 ms.author: greglin
 ms.date: 10/16/2017

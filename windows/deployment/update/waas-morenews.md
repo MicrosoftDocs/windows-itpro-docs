@@ -3,7 +3,7 @@ title: Windows as a service
 ms.prod: w10
 ms.topic: article
 ms.manager: elizapo
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.author: greglin
 ms.date: 12/19/2018
 ms.reviewer: 
