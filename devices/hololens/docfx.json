@@ -32,7 +32,7 @@
       "breadcrumb_path": "/hololens/breadcrumb/toc.json",
       "ms.technology": "windows",
       "ms.topic": "article",
-      "ms.author": "jdecker",
+      "audience": "ITPro",
       "ms.date": "04/05/2017",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",

@@ -24,8 +24,7 @@
     "globalMetadata": {
       "breadcrumb_path": "/internet-explorer/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
-      "ms.author": "shortpatti",
-      "author": "eross-msft",
+      "audience": "ITPro",
       "ms.technology": "internet-explorer",
       "ms.topic": "article",
       "ms.date": "04/05/2017",

@@ -27,6 +27,7 @@
       "breadcrumb_path": "/surface-hub/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "ms.technology": "windows",
+      "audience": "ITPro",
       "ms.topic": "article",
       "ms.mktglfcycl": "manage",
       "ms.sitesec": "library",
