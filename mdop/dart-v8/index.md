@@ -6,7 +6,7 @@ ms.assetid: 33685dd7-844f-4864-b504-3ef384ef01de
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 04/19/2017
 ---
 
