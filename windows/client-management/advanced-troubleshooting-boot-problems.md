@@ -153,7 +153,7 @@ If you receive BCD-related errors, follow these steps:
 
 4. You might receive one of the following outputs:
 
-    - Scanning all disks for Windows installations. Please wait, since this may take a while...
+    - Scanning all disks for Windows installations. Please wait, since this may take a while ...
     Successfully scanned Windows installations. Total identified Windows installations: 0
     The operation completed successfully.
 
