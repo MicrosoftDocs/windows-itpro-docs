@@ -2,7 +2,7 @@
 title: Provision PCs with apps  (Windows 10)
 description: Add apps to a Windows 10 provisioning package. 
 keywords: ["runtime provisioning", "provisioning package"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: dansimp
