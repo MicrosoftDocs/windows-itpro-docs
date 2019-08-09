@@ -14442,11 +14442,6 @@
 "redirect_document_id": true
 },
 {
-"source_path":"windows/security/threat-protection/windows-defender-atp/use-apis.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/use-apis",
-"redirect_document_id": false
-},
-{
 "source_path":"windows/security/threat-protection/windows-defender-atp/exposed-apis-create-app-nativeapp.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-create-app-nativeapp",
 "redirect_document_id": false
@@ -15063,9 +15058,9 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/microsoft-defender-atp/use-apis.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/apis-intro",
-"redirect_document_id": true
+"source_path":"windows/security/threat-protection/windows-defender-atp/use-apis.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/use-apis",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/use-apis.md",
