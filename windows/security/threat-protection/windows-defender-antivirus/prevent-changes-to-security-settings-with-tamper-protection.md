@@ -1,9 +1,9 @@
 ---
-title: Protect security settings with tamper protection
+title: Protect security settings with Tamper Protection
 ms.reviewer: 
 manager: dansimp
-description: Use tamper protection to prevent malicious apps from changing important security settings.
-keywords: malware, defender, antivirus, tamper protection
+description: Use Tamper Protection to prevent malicious apps from changing important security settings.
+keywords: malware, defender, antivirus, Tamper Protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -15,7 +15,7 @@ author: denisebmsft
 ms.author: deniseb
 ---
 
-# Protect security settings with tamper protection
+# Protect security settings with Tamper Protection
 
 **Applies to:**
 
@@ -91,23 +91,23 @@ If you are part of your organization's security team, you can now turn Tamper Pr
 
 5. Assign the profile to one or more groups.
 
-### Frequently asked questions about configuring tamper protection in Intune (Microsoft 365 E5)
+### Frequently asked questions about configuring Tamper Protection in Intune (Microsoft 365 E5)
 
 #### To which Windows OS versions is configuring Tamper Protection is applicable?
 
 Windows 1903 May release
 
-#### Is configuring tamper protection in Intune supported on servers?
+#### Is configuring Tamper Protection in Intune supported on servers?
 
 No
 
-#### Will configuring tamper protection in Intune have any impact on third party AV registration?
+#### Will configuring Tamper Protection in Intune have any impact on third party AV registration?
 
 Third-party antivirus must be registered with the Windows Security Application.
 
 #### What happens if Microsoft Defender is not active on a device?
 
-Configuring tamper protection in Intune will not have any impact on such devices.
+Configuring Tamper Protection in Intune will not have any impact on such devices.
 
 #### How can I turn Tamper Protection on/off?
 
@@ -116,21 +116,21 @@ If you are home user, see [Turn Tamper Protection on (or off) for an individual 
 If you are an organization using Microsoft Defender Advanced Threat Protection E5, you should be able to manage Tamper Protection in Intune similar to how you manage other endpoint protection features. See [Turn Tamper Protection on (or off) for your organization with Intune](#turn-tamper-protection-on-or-off-for-your-organization-with-intune).
 
  
-#### How does configuring tamper protection in Intune affect how i manage Windows Defender through my group policy?
+#### How does configuring Tamper Protection in Intune affect how i manage Windows Defender through my group policy?
 
 Your regular group policy doesn’t apply to Tamper Protection, and changes to Windows Defender settings will be ignored when Tamper Protection is on.
 
-#### For MDATP E5, is configuring tamper protection in Intune targeted to the entire organization only?
+#### For MDATP E5, is configuring Tamper Protection in Intune targeted to the entire organization only?
 
-Configuring tamper protection in Intune can be targeted to your entire organization as well as to devices and user groups with Intune.
+Configuring Tamper Protection in Intune can be targeted to your entire organization as well as to devices and user groups with Intune.
 
-#### Can I configure tamper protection in System Center Configuration Manager?
+#### Can I configure Tamper Protection in System Center Configuration Manager?
 
 Currently we do not have support to manage Tamper Protection through System Center Configuration Manager.
 
-#### I have Windows E3 enrollment. Can I use configuring tamper protection in Intune?
+#### I have Windows E3 enrollment. Can I use configuring Tamper Protection in Intune?
 
-Currently, configuring tamper protection in Intune is only available for customers who have Microosft Defender Advanced Threat Protection E5.
+Currently, configuring Tamper Protection in Intune is only available for customers who have Microosft Defender Advanced Threat Protection E5.
 
 #### What happens if I try to change Microsoft Defender settings in Intune, System Center Configuration Manager, and Windows Management Instrumentation when Tamper Protection is enabled on a device?
 
@@ -150,4 +150,4 @@ Yes. The alert is shown in [https://microsoft.securitycenter.com](https://micros
 
 In addition, your security operations team can use hunting queries, such as the following:
 
-`AlertEvents | where Title == "Tamper protection bypass"`
+`AlertEvents | where Title == "Tamper Protection bypass"`
