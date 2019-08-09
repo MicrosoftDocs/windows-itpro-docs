@@ -6,7 +6,7 @@ ms.assetid: fdb43f62-960a-4811-8802-50efdf04b4af
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 04/19/2017
 ---
 
