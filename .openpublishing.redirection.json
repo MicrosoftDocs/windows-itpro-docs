@@ -14787,6 +14787,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/get-started.md",
+"redirect_url": "/windows/security/threat-protection/index.md",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-package-sas-uri-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
 "redirect_document_id": false
@@ -15044,12 +15049,6 @@
 {
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-allowed-blocked-list.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
-"redirect_document_id": true
-},
-
-{
-"source_path": "windows/security/threat-protection/microsoft-defender-atp/get-started.md",
-"redirect_url": "/windows/security/threat-protection/",
 "redirect_document_id": true
 },
 {
