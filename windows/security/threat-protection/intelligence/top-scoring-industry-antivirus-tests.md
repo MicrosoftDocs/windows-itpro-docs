@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: high
-ms.author: levinec
+ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
