@@ -92,7 +92,7 @@
 ### [Automated investigation and remediation]()
 #### [Automated investigation and remediation overview](microsoft-defender-atp/automated-investigations.md)
 #### [Learn about the automated investigation and remediation dashboard](microsoft-defender-atp/manage-auto-investigation.md)
-#####[Manage actions related to automated investigation and remediation](microsoft-defender-atp/auto-investigation-action-center.md)
+#### [Manage actions related to automated investigation and remediation](microsoft-defender-atp/auto-investigation-action-center.md)
 
 ### [Secure score](microsoft-defender-atp/overview-secure-score.md)
 ### [Threat analytics](microsoft-defender-atp/threat-analytics.md)
@@ -100,19 +100,18 @@
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/overview-hunting.md)
 #### [Query data using Advanced hunting](microsoft-defender-atp/advanced-hunting.md)
-
-##### [Advanced hunting schema reference]()
-###### [All tables in the Advanced hunting schema](microsoft-defender-atp/advanced-hunting-reference.md)
-###### [AlertEvents table](microsoft-defender-atp/advanced-hunting-alertevents-table.md)
-###### [FileCreationEvents table](microsoft-defender-atp/advanced-hunting-filecreationevents-table.md)
-###### [ImageLoadEvents table](microsoft-defender-atp/advanced-hunting-imageloadevents-table.md)
-###### [LogonEvents table](microsoft-defender-atp/advanced-hunting-logonevents-table.md)
-###### [MachineInfo table](microsoft-defender-atp/advanced-hunting-machineinfo-table.md)
-###### [MachineNetworkInfo table](microsoft-defender-atp/advanced-hunting-machinenetworkinfo-table.md)
-###### [MiscEvents table](microsoft-defender-atp/advanced-hunting-miscevents-table.md)
-###### [NetworkCommunicationEvents table](microsoft-defender-atp/advanced-hunting-networkcommunicationevents-table.md)
-###### [ProcessCreationEvents table](microsoft-defender-atp/advanced-hunting-processcreationevents-table.md)
-###### [RegistryEvents table](microsoft-defender-atp/advanced-hunting-registryevents-table.md)
+#### [Advanced hunting schema reference]()
+##### [All tables in the Advanced hunting schema](microsoft-defender-atp/advanced-hunting-reference.md)
+##### [AlertEvents table](microsoft-defender-atp/advanced-hunting-alertevents-table.md)
+##### [FileCreationEvents table](microsoft-defender-atp/advanced-hunting-filecreationevents-table.md)
+##### [ImageLoadEvents table](microsoft-defender-atp/advanced-hunting-imageloadevents-table.md)
+##### [LogonEvents table](microsoft-defender-atp/advanced-hunting-logonevents-table.md)
+##### [MachineInfo table](microsoft-defender-atp/advanced-hunting-machineinfo-table.md)
+##### [MachineNetworkInfo table](microsoft-defender-atp/advanced-hunting-machinenetworkinfo-table.md)
+##### [MiscEvents table](microsoft-defender-atp/advanced-hunting-miscevents-table.md)
+##### [NetworkCommunicationEvents table](microsoft-defender-atp/advanced-hunting-networkcommunicationevents-table.md)
+##### [ProcessCreationEvents table](microsoft-defender-atp/advanced-hunting-processcreationevents-table.md)
+##### [RegistryEvents table](microsoft-defender-atp/advanced-hunting-registryevents-table.md)
 
 ##### [Advanced hunting query language best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
 
@@ -167,27 +166,17 @@
 ### [Access the Windows Defender Security Center Community Center](microsoft-defender-atp/community.md)
 
 ## [Configure and manage capabilities]()
+
 ### [Configure attack surface reduction]()
 #### [Attack surface reduction configuration settings](microsoft-defender-atp/configure-attack-surface-reduction.md)
 
-### [Configure and manage capabilities](microsoft-defender-atp/onboard.md)
-#### [Microsoft Defender Advanced Threat Protection for Mac](windows-defender-antivirus/microsoft-defender-atp-mac.md)
-##### [Deploy Microsoft Defender Advanced Threat Protection for Mac]()
-###### [Microsoft Intune-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-intune.md)
-###### [JAMF-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-jamf.md)
-###### [Deployment with a different Mobile Device Management (MDM) system](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-other-mdm.md)
-###### [Manual deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-manually.md)
-##### [Update Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-updates.md)
-##### [Set preferences for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-preferences.md)
-##### [Privacy for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-privacy.md)
-##### [Resources for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-resources.md)
 
-#### [Hardware-based isolation]()
-##### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
+### [Hardware-based isolation]()
+#### [System isolation](windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
 
-##### [Application isolation]()
-###### [Install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
-###### [Application control](windows-defender-application-control/windows-defender-application-control.md)
+#### [Application isolation]()
+##### [Install Windows Defender Application Guard](windows-defender-application-guard/install-wd-app-guard.md)
+##### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 
 #### [Device control]()
 ##### [Control USB devices](device-control/control-usb-devices-using-intune.md)
@@ -210,10 +199,15 @@
 #### [Attack surface reduction controls]()
 ##### [Enable attack surface reduction rules](windows-defender-exploit-guard/enable-attack-surface-reduction.md)
 ##### [Customize attack surface reduction](windows-defender-exploit-guard/customize-attack-surface-reduction.md)
+
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)
+
+
+
 
 ### [Configure next generation protection]()
 #### [Configure Windows Defender Antivirus features](windows-defender-antivirus/configure-windows-defender-antivirus-features.md)
+
 #### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 ##### [Enable cloud-delivered protection](windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md)
 ##### [Specify the cloud-delivered protection level](windows-defender-antivirus/specify-cloud-protection-level-windows-defender-antivirus.md)
@@ -303,6 +297,21 @@
 ##### [Use PowerShell cmdlets to manage next generation protection](windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus.md)
 ##### [Use Windows Management Instrumentation (WMI) to manage next generation protection](windows-defender-antivirus/use-wmi-windows-defender-antivirus.md)
 ##### [Use the mpcmdrun.exe command line tool to manage next generation protection](windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
+
+
+### [Microsoft Defender Advanced Threat Protection for Mac](windows-defender-antivirus/microsoft-defender-atp-mac.md)
+#### [Deploy Microsoft Defender Advanced Threat Protection for Mac]()
+##### [Microsoft Intune-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-intune.md)
+##### [JAMF-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-jamf.md)
+##### [Deployment with a different Mobile Device Management (MDM) system](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-other-mdm.md)
+##### [Manual deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-manually.md)
+#### [Update Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-updates.md)
+#### [Set preferences for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-preferences.md)
+#### [Privacy for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-privacy.md)
+#### [Resources for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-resources.md)
+
+
+
 
 ### [Configure Secure score dashboard security controls](microsoft-defender-atp/secure-score-dashboard.md)
 
