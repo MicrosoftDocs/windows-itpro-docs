@@ -79,8 +79,8 @@ For more information preview features, see [Preview features](https://docs.micro
 Threat Analytics is a set of interactive reports published by the Microsoft Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
 
 - New in Windows 10 version 1809, there are two new attack surface reduction rules: 
-  -	Block Adobe Reader from creating child processes
-  -	Block Office communication application from creating child processes.
+  - Block Adobe Reader from creating child processes
+  - Block Office communication application from creating child processes.
   
 - [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
     - Antimalware Scan Interface (AMSI) was extended to cover Office VBA macros as well. [Office VBA + AMSI: Parting the veil on malicious macros](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).
@@ -95,8 +95,8 @@ Query data using Advanced hunting in Microsoft Defender ATP.
 
 - [Attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
     New attack surface reduction rules: 
-  -	Use advanced protection against ransomware
-  -	Block credential stealing from the Windows local security authority subsystem (lsass.exe)
+  - Use advanced protection against ransomware
+  - Block credential stealing from the Windows local security authority subsystem (lsass.exe)
   - Block process creations originating from PSExec and WMI commands
   - Block untrusted and unsigned processes that run from USB
   - Block executable content from email client and webmail
