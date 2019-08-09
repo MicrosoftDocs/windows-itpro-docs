@@ -24,7 +24,9 @@
     "globalMetadata": {
       "breadcrumb_path": "/microsoft-desktop-optimization-pack/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
-      "ms.technology": "mdop",
+      "ms.technology": "windows",
+      "audience": "ITPro",
+      "manager": "dansimp",
       "ms.sitesec": "library",
       "ms.topic": "article",
       "ms.date": "04/05/2017",

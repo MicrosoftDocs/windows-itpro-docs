@@ -4,10 +4,11 @@ ms.mktglfcycl: plan
 description: Learn about the version of the IEAK 11 you should run, based on your license agreement.
 author: lomayor
 ms.author: lomayor
-ms.prod: ie11, ieak11
+ms.prod: ie11
 ms.assetid: 69d25451-08af-4db0-9daa-44ab272acc15
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 title: Determine the licensing version and features to use in IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 10/23/2018
