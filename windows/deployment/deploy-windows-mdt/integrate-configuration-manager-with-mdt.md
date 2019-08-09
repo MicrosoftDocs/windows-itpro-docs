@@ -11,6 +11,7 @@ ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.topic: article
 ---
@@ -27,7 +28,7 @@ MDT is a free, supported download from Microsoft that adds approximately 280 enh
 
 As noted above, MDT adds many enhancements to Configuration Manager. While these enhancements are called Zero Touch, that name does not reflect how deployment is conducted. The following sections provide a few samples of the 280 enhancements that MDT adds to Configuration Manager.
 
-> [!Note]
+> [!Note] 
 > Microsoft Deployment Toolkit requires you to install [Windows PowerShell 2.0 Engine](https://docs.microsoft.com/powershell/scripting/install/installing-the-windows-powershell-2.0-engine) on your server.
 
 ### MDT enables dynamic deployment
@@ -37,7 +38,7 @@ When MDT is integrated with Configuration Manager, the task sequence takes addit
 The task sequence uses instructions that allow you to reduce the number of task sequences in Configuration Manager and instead store settings outside the task sequence. Here are a few examples:
 -   The following settings instruct the task sequence to install the HP Hotkeys package, but only if the hardware is a HP EliteBook 8570w. Note that you don't have to add the package to the task sequence.
 
-    ```ini
+    ``` syntax
     [Settings] 
     Priority=Model
     [HP EliteBook 8570w] 
@@ -45,7 +46,7 @@ The task sequence uses instructions that allow you to reduce the number of task 
     ```
 -   The following settings instruct the task sequence to put laptops and desktops in different organizational units (OUs) during deployment, assign different computer names, and finally have the task sequence install the Cisco VPN client, but only if the machine is a laptop.
 
-    ```ini
+    ``` syntax
     [Settings]
     Priority= ByLaptopType, ByDesktopType
     [ByLaptopType]

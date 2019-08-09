@@ -4,14 +4,13 @@ ms.assetid: 2e849894-255d-4f68-ae88-c2e4e31fa165
 ms.reviewer: 
 author: eavena
 ms.author: eravena
-manager: dansimp
+audience: itpromanager: dansimp
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.topic: reference
 ms.sitesec: library
 title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: medium
-ms.date: 10/29/2018
 ---
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge

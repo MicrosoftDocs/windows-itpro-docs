@@ -8,6 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
+audience: itpro
 author: greg-lindsay
 ms.topic: article
 ms.collection: M365-analytics
@@ -186,5 +187,5 @@ Error creating or updating registry key: **CommercialId** at **HKLM:\SOFTWARE\Mi
 > 
 > Then run the Enterprise Config script (RunConfig.bat) again. 
 > 
-> If the script still fails, contact support including log files from the RunConfig.bat script. These log files are stored on the drive that is specified in the RunConfig.bat file. By default this is set to **%SystemDrive%\UADiagnostics**. The log file is named with the format **UA_yyyy_mm_dd_hh_mm_ss_machineID.txt**. There will be some additional logs generated under your **\<system drive>\Windows\Temp** directory with the names similar to **AslLog_....txt**. You should send those logs as well.
+> If the script still fails, then contact support@microsoft.com and share the log files from the RunConfig.bat script. These log files are stored on the drive that is specified in the RunConfig.bat file. By default this is set to **%SystemDrive%\UADiagnostics**. The log file is named with the format **UA_yyyy_mm_dd_hh_mm_ss_machineID.txt**. There will be some additional logs generated under your **\<system drive>\Windows\Temp** directory with the names similar to **AslLog_....txt**. You should send those logs as well.
 

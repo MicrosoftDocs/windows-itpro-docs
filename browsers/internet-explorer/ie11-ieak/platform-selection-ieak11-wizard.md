@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 9cbf5abd-86f7-42b6-9810-0b606bbe8218
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the Platform Selection page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

@@ -392,7 +392,7 @@
 ####### [Get domain related alerts](get-domain-related-alerts.md)
 ####### [Get domain related machines](get-domain-related-machines.md)
 ####### [Get domain statistics](get-domain-statistics.md)
-####### [Is domain seen in organization](is-domain-seen-in-org.md)
+####### [Is domain seen in organization (Deprecated)](is-domain-seen-in-org.md)
 
 ###### [File]()
 ####### [Methods and properties](files.md)
@@ -403,9 +403,9 @@
 
 ###### [IP]()
 ####### [Get IP related alerts](get-ip-related-alerts.md)
-####### [Get IP related machines](get-ip-related-machines.md)
+####### [Get IP related machines (Deprecated)](get-ip-related-machines.md)
 ####### [Get IP statistics](get-ip-statistics.md)
-####### [Is IP seen in organization](is-ip-seen-org.md)
+####### [Is IP seen in organization (Deprecated)](is-ip-seen-org.md)
 
 ###### [User]()
 ####### [Methods](user.md)

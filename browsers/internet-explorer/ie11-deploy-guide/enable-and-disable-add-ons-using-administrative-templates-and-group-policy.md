@@ -8,7 +8,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: c6fe1cd3-0bfc-4d23-8016-c9601f674c0b
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 title: Enable and disable add-ons using administrative templates and group policy (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 4/12/2018

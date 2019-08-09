@@ -8,6 +8,7 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
@@ -138,7 +139,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-```xml
+``` xml
 <addObjects>
    <object>
       <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [UpgradeVersion]</location>
@@ -212,7 +213,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-```xml
+``` xml
 <object>
    <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [Lang]</location>
    <attributes>DWORD</attributes>
@@ -275,7 +276,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-```xml
+``` xml
 <object>
    <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [Lang]</location>
    <attributes>DWORD</attributes>
@@ -455,7 +456,7 @@ For example,
 
 In the code sample below, the &lt;condition&gt; elements, A and B, are joined together by the AND operator because they are in separate &lt;conditions&gt; sections. For example:
 
-```xml
+``` xml
 <detection>
    <conditions>
       <condition>A</condition>
@@ -468,7 +469,7 @@ In the code sample below, the &lt;condition&gt; elements, A and B, are joined to
 
 However, in the code sample below, the &lt;condition&gt; elements, A and B, are joined together by the OR operator because they are in the same &lt;conditions&gt; section.
 
-```xml
+``` xml
 <detection>
    <conditions>
       <condition>A</condition>
@@ -826,7 +827,7 @@ For example:
 ~~~
 For example:
 
-```xml
+``` xml
 <condition negation="Yes">MigXmlHelper.DoesStringContentEqual("File","%USERNAME%","")</condition>
 ```
 ~~~
@@ -914,7 +915,7 @@ For example:
 ~~~
 For example:
 
-```xml
+``` xml
 <objectSet>
      <condition negation="Yes">MigXmlHelper.IsSameObject("File","%CSIDL_FAVORITES%","%CSIDL_COMMON_FAVORITES%")</condition>
      <pattern type="File">%CSIDL_FAVORITES%\* [*]</pattern>
@@ -1055,7 +1056,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-```xml
+``` xml
 <environment name="GlobalEnv">
    <conditions>
       <condition negation="Yes">MigXmlHelper.IsNative64Bit()</condition>
@@ -1152,13 +1153,13 @@ The following functions generate patterns out of the content of an object. These
 ~~~
 For example:
 
-```xml
+``` xml
 <content filter="MigXmlHelper.ExtractSingleFile(',','%system%')">
 ```
 
 and
 
-```xml
+``` xml
 <content filter="MigXmlHelper.ExtractSingleFile(NULL,'%CSIDL_COMMON_FONTS%')">
 ```
 ~~~
@@ -1243,7 +1244,7 @@ and
 ~~~
 For example:
 
-```xml
+``` xml
 <objectSet>
      <content filter='MigXmlHelper.ExtractDirectory (NULL, "1")'>
           <objectSet>
@@ -1365,7 +1366,7 @@ The following functions change the content of objects as they are migrated. Thes
 ~~~
 For example:
 
-```xml
+``` xml
 <contentModify script="MigXmlHelper.ConvertToString('1')">
      <objectSet>
           <pattern type="Registry">HKCU\Control Panel\Desktop [ScreenSaveUsePassword]</pattern>
@@ -1622,7 +1623,7 @@ Syntax:
 
 The following code sample shows how the &lt;description&gt; element defines the "My custom component" description.:
 
-```xml
+``` xml
 <description>My custom component<description>
 ```
 
@@ -1677,7 +1678,7 @@ Syntax:
 
 For example:
 
-```xml
+``` xml
 <destinationCleanup>
    <objectSet>
       <pattern type="Registry">HKCU\Software\Lotus\123\99.0\DDE Preferences\* [*]</pattern>
@@ -1807,7 +1808,7 @@ Syntax:
 
 The following example is from the MigApp.xml file.
 
-```xml
+``` xml
 <detects>
    <detect>
       <condition>MigXmlHelper.DoesFileVersionMatch("%Lotus123InstPath%\123w.exe","ProductVersion","9.*")</condition>
@@ -1878,7 +1879,7 @@ Syntax:
 
 For example:
 
-```xml
+``` xml
 <detection name="AdobePhotoshopCS">
    <conditions>
       <condition>MigXmlHelper.DoesObjectExist("Registry","HKCU\Software\Adobe\Photoshop\8.0")</condition>
@@ -1889,7 +1890,7 @@ For example:
 
 and
 
-```xml
+``` xml
 <role role="Settings">
    <detection>
       <conditions>
@@ -1945,7 +1946,7 @@ Syntax:
 
 For example:
 
-```xml
+``` xml
 <displayName>Command Prompt settings</displayName>
 ```
 
@@ -2012,7 +2013,7 @@ Syntax:
 
 In this scenario, you want to generate the location of objects at run time depending on the configuration of the destination computer. For example, you must do this if an application writes data in the directory where it is installed, and users can install the application anywhere on the computer. If the application writes a registry value hklm\\software\\companyname\\install \[path\] and then updates this value with the location where the application is installed, then the only way for you to migrate the required data correctly is to define an environment variable. For example:
 
-```xml
+``` xml
 <environment>
    <variable name="INSTALLPATH">
       <script>MigXmlHelper.GetStringContent("Registry","\software\companyname\install [path]")</script>
@@ -2022,7 +2023,7 @@ In this scenario, you want to generate the location of objects at run time depen
 
 Then you can use an include rule as follows. You can use any of the [&lt;script&gt; functions](#scriptfunctions) to perform similar tasks.
 
-```xml
+``` xml
 <include>
    <objectSet>
       <pattern type="File">%INSTALLPATH%\ [*.xyz]</pattern>
@@ -2032,7 +2033,7 @@ Then you can use an include rule as follows. You can use any of the [&lt;script&
 
 Second, you can also filter registry values that contain data that you need. The following example extracts the first string (before the separator ",") in the value of the registry Hklm\\software\\companyname\\application\\ \[Path\].
 
-```xml
+``` xml
 <environment>
    <variable name="APPPATH">
         <objectSet>
@@ -2050,7 +2051,7 @@ Second, you can also filter registry values that contain data that you need. The
 
 In this scenario, you want to migrate five files named File1.txt, File2.txt, and so on, from %SYSTEMDRIVE%\\data\\userdata\\dir1\\dir2\\. To do this you must have the following &lt;include&gt; rule in an .xml file:
 
-```xml
+``` xml
 <include>
    <objectSet>
       <pattern type="File">%SYSTEMDRIVE%\data\userdata\dir1\dir2 [File1.txt]</pattern>
@@ -2064,7 +2065,7 @@ In this scenario, you want to migrate five files named File1.txt, File2.txt, and
 
 Instead of typing the path five times, you can create a variable for the location as follows:
 
-```xml
+``` xml
 <environment>
    <variable name="DATAPATH">
       <text>%SYSTEMDRIVE%\data\userdata\dir1\dir2 </text>
@@ -2074,7 +2075,7 @@ Instead of typing the path five times, you can create a variable for the locatio
 
 Then, you can specify the variable in an &lt;include&gt; rule as follows:
 
-```xml
+``` xml
 <include>
    <objectSet>
       <pattern type="File">%DATAPATH% [File1.txt]</pattern>
@@ -2133,7 +2134,7 @@ Syntax:
 
 For example, from the MigUser.xml file:
 
-```xml
+``` xml
 <exclude>
    <objectSet>
       <pattern type="File">%CSIDL_MYMUSIC%\* [*]</pattern>
@@ -2190,7 +2191,7 @@ Syntax:
 
 Example:
 
-```xml
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
 <!-- This component migrates My Video files -->
    <component type="System" context="System">
@@ -2297,7 +2298,7 @@ Syntax:
 
 For example, if you want to migrate all \*.doc files from the source computer, specifying the following code under the &lt;component&gt; element:
 
-```xml
+``` xml
 <extensions> 
         <extension>doc</extension> 
 <extensions> 
@@ -2305,7 +2306,7 @@ For example, if you want to migrate all \*.doc files from the source computer, s
 
 is the same as specifying the following code below the &lt;rules&gt; element:
 
-```xml
+``` xml
 <include> 
         <objectSet> 
                 <script>MigXmlHelper.GenerateDrivePatterns ("* [*.doc]", "Fixed")</script> 
@@ -2418,7 +2419,7 @@ Syntax:
 
 The following example is from the MigUser.xml file:
 
-```xml
+``` xml
 <component type="Documents" context="User">
    <displayName _locID="miguser.myvideo">My Video</displayName>
       <paths>
@@ -2501,7 +2502,7 @@ The following functions return a Boolean value. You can use them to migrate cert
 
     For example:
 
-    ```xml
+    ``` xml
     <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
          <objectSet>
               <pattern type="File">%CSIDL_COMMON_VIDEO%\* [*]</pattern>
@@ -2517,7 +2518,7 @@ The following functions return a Boolean value. You can use them to migrate cert
 
     In the following example, HKCU\\Control Panel\\International \[Locale\] will be included in the store, but it will not be migrated to the destination computer:
 
-    ```xml
+    ``` xml
     <include filter="MigXmlHelper.NeverRestore()">
        <objectSet>
           <pattern type="Registry">HKCU\Control Panel\International [Locale]</pattern>
@@ -2634,7 +2635,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-```xml
+``` xml
 <addObjects>
    <object>
       <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [UpgradeVersion]</location>
@@ -2695,7 +2696,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-```xml
+``` xml
 <locationModify script="MigXmlHelper.RelativeMove('%CSIDL_APPDATA%\Microsoft\Office','%CSIDL_APPDATA%')">
    <objectSet>
       <pattern type="File">%CSIDL_APPDATA%\Microsoft\Office\ [Access10.pip]</pattern>
@@ -2740,7 +2741,7 @@ The following functions change the location of objects as they are migrated when
 ~~~
 For example:
 
-```xml
+``` xml
 <locationModify script="MigXmlHelper.ExactMove('HKCU\Keyboard Layout\Toggle [HotKey]')">
      <objectSet>
           <pattern type="Registry">HKCU\Keyboard Layout\Toggle []</pattern>
@@ -2817,7 +2818,7 @@ For example:
 ~~~
 For example:
 
-```xml
+``` xml
 <include>
    <objectSet>
       <pattern type="File">%CSIDL_COMMON_FAVORITES%\* [*]</pattern>
@@ -2923,7 +2924,7 @@ Syntax:
 
 The following example is from the MigUser.xml file:
 
-```xml
+``` xml
 <rules>
    <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
       <objectSet>
@@ -2948,7 +2949,7 @@ These functions control how collisions are resolved.
 
     For example:
 
-    ```xml
+    ``` xml
     <merge script="MigXmlHelper.DestinationPriority()">
          <objectSet>
               <pattern type="Registry">HKCU\Software\Microsoft\Office\9.0\PhotoDraw\ [MyPictures]</pattern>
@@ -3037,7 +3038,7 @@ These functions control how collisions are resolved.
 
     For example:
 
-    ```xml
+    ``` xml
     <merge script="MigXmlHelper.SourcePriority()">
      <objectSet>
        <pattern type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Publisher [UpgradeVersion]</pattern>
@@ -3097,7 +3098,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-```xml
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migapp">
 </migration>
 ```
@@ -3138,7 +3139,7 @@ This filter helper function can be used to filter the migration of files based o
 
 
 
-```xml
+``` xml
 <component context="System"  type="Application">
 <displayName>File_size</displayName>
 <role role="Data">
@@ -3194,7 +3195,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-```xml
+``` xml
 <addObjects>
    <object>
       <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [UpgradeVersion]</location>
@@ -3230,7 +3231,7 @@ Syntax:
 
 The following example is from the MigUser.xml file:
 
-```xml
+``` xml
 <component type="Documents" context="User">
    <displayName _locID="miguser.mymusic">My Music</displayName>
       <paths>
@@ -3273,7 +3274,7 @@ This is an internal USMT element. Do not use this element.
 
 You can use this element to specify multiple objects. You can specify multiple &lt;pattern&gt; elements for each &lt;objectSet&gt; element and they will be combined. If you are specifying files, you may want to use GenerateDrivePatterns with &lt;script&gt; instead. GenerateDrivePatterns is basically the same as a &lt;pattern&gt; rule, without the drive letter specification. For example, the following two lines of code are similar:
 
-```xml
+``` xml
 <pattern type="File">C:\Folder\* [Sample.doc]</pattern>
 <script>MigXmlHelper.GenerateDrivePatterns("\Folder\* [Sample.doc]","Fixed"</script>
 ```
@@ -3336,13 +3337,13 @@ For example:
 
 -   To migrate a single registry key:
 
-    ```xml
+    ``` xml
     <pattern type="Registry">HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache [Persistent]</pattern>
     ```
 
 -   To migrate the EngineeringDrafts folder and any subfolders from the C: drive:
 
-    ```xml
+    ``` xml
     <pattern type="File">C:\EngineeringDrafts\* [*]</pattern>
     ```
 
@@ -3352,13 +3353,13 @@ For example:
 
 -   To migrate the Sample.doc file from C:\\EngineeringDrafts:
 
-    ```xml
+    ``` xml
     <pattern type="File"> C:\EngineeringDrafts\ [Sample.doc]</pattern>
     ```
 
 -   To migrate the Sample.doc file from where ever it exists on the C: drive use pattern in the following way. If multiple files exist with the same name on the C: drive, then all of these files will be migrated.
 
-    ```xml
+    ``` xml
     <pattern type="File"> C:\* [Sample.doc] </pattern>
     ```
 
@@ -3484,7 +3485,7 @@ Syntax:
 
 The following example is from the MigUser.xml file. For more examples, see the MigApp.xml file:
 
-```xml
+``` xml
 <component type="System" context="User">
    <displayName _locID="miguser.startmenu">Start Menu</displayName>
    <paths>
@@ -3571,7 +3572,7 @@ Syntax:
 
 The following example is from the MigUser.xml file:
 
-```xml
+``` xml
 <component type="Documents" context="User">
    <displayName _locID="miguser.mymusic">My Music</displayName>
       <paths>
@@ -3679,7 +3680,7 @@ Examples:
 
 To migrate the Sample.doc file from any drive on the source computer, use &lt;script&gt; as follows. If multiple files exist with the same name, all such files will get migrated.
 
-```xml
+``` xml
 <script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script> 
 ```
 
@@ -3744,7 +3745,7 @@ These functions return either a string or a pattern.
 ~~~
 For example:
 
-```xml
+``` xml
 <variable name="MSNMessengerInstPath">
 <script>MigXmlHelper.GetStringContent("Registry","%HklmWowSoftware%\Microsoft\MSNMessenger [InstallationDirectory]")</script>
 </variable>
@@ -3849,7 +3850,7 @@ If GenerateUserPattens('File','%userprofile% \[\*.doc\]','FALSE') is called whil
 
 The following is example code for this scenario. The first &lt;rules&gt; element migrates all.doc files on the source computer with the exception of those inside C:\\Documents and Settings. The second &lt;rules&gt; elements will migrate all .doc files from C:\\Documents and Settings with the exception of the .doc files in the profiles of the other users. Because the second &lt;rules&gt; element will be processed in each migrated user context, the end result will be the desired behavior. The end result is the one we expected.
 
-```xml
+``` xml
 <rules context="System">
   <include>
     <objectSet>
@@ -3915,7 +3916,7 @@ This helper function invokes the document finder to scan the system for all file
 
 
 
-```xml
+``` xml
  <!-- This component migrates data in user context -->
   <component type="Documents" context="User">
     <displayName>MigDocUser</displayName>
@@ -3942,7 +3943,7 @@ The following scripts have no return value. You can use the following errors wit
 
 -   **AskForLogoff()**. Prompts the user to log off at the end of the migration. For example:
 
-    ```xml
+    ``` xml
          <processing when="apply-success">
               <script>MigXmlHelper.AskForLogoff()</script>
          </processing>
@@ -3952,7 +3953,7 @@ The following scripts have no return value. You can use the following errors wit
 
 -   **KillExplorer()**. Stops Explorer.exe for the current user context. This allows access to certain keys and files that are kept open when Explorer.exe is running. For example:
 
-    ```xml
+    ``` xml
          <processing when="pre-apply">
               <script>MigXmlHelper.KillExplorer()</script>
          </processing>
@@ -3960,7 +3961,7 @@ The following scripts have no return value. You can use the following errors wit
 
 -   **RegisterFonts(FileEncodedLocation)**. Registers the given font or all of the fonts in the given directory. For example:
 
-    ```xml
+    ``` xml
     <processing when="apply-success">
     <script>MigXmlHelper.RegisterFonts("%CSIDL_COMMON_FONTS%")</script>
     </processing>
@@ -3970,7 +3971,7 @@ The following scripts have no return value. You can use the following errors wit
 
 -   **RestartExplorer().** Restarts Explorer.exe at the end of the migration. For example:
 
-    ```xml
+    ``` xml
          <processing when="post-apply">
               <script>MigXmlHelper.RestartExplorer()</script>
          </processing>
@@ -4020,7 +4021,7 @@ Syntax:
 
 For example:
 
-```xml
+``` xml
 <variable name="QuickTime5or6DataSys">
   <text>%CSIDL_COMMON_APPDATA%\QuickTime</text> 
 </variable>
@@ -4045,7 +4046,7 @@ Syntax:
 
 The following .xml file excludes all .mp3 files from migration. For additional examples of how to use this element, see the [Exclude Files and Settings](usmt-exclude-files-and-settings.md).
 
-```xml
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/excludefiles">
   <component context="System" type="Documents">
         <displayName>Test</displayName>
@@ -4116,7 +4117,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-```xml
+``` xml
 <environment>
    <variable name="HklmWowSoftware">
       <text>HKLM\Software</text>
@@ -4168,7 +4169,7 @@ Syntax:
 
 For example:
 
-```xml
+``` xml
 <version>4.*</version>
 ```
 

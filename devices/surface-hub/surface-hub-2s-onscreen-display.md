@@ -10,7 +10,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 07/09/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 # Adjust Surface Hub 2S brightness, volume, and input
 

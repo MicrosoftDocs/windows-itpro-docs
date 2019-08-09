@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.pagetype: mobile
+audience: itpro
 author: greg-lindsay
 ms.topic: article
 ---
@@ -27,7 +28,7 @@ This topic provides a summary of available upgrade paths to Windows 10. You can 
 > 
 > **Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
 > 
-> In-place upgrade from Windows 7, Windows 8.1, or [Windows 10 semi-annual channel](https://docs.microsoft.com/windows/release-information/) to Windows 10 LTSC is not supported.  **Note**: Windows 10 LTSC 2015 did not block this upgrade path.  This was corrected in the Windows 10 LTSC 2016 release, which will now only allow data-only and clean install options. You can upgrade from Windows 10 LTSC to Windows 10 semi-annual channel, provided that you upgrade to the same or a newer build version. For example, Windows 10 Enterprise 2016 LTSB can be upgraded to Windows 10 Enterprise version 1607 or later. Upgrade is supported using the in-place upgrade process (using Windows setup). You will need to use the Product Key switch if you want to keep your apps. If you don't use the switch the option 'Keep personal files and apps' will be grayed out. The command line would be: setup.exe /pkey xxxxx-xxxxx-xxxxx-xxxxx-xxxxx using your relevant Windows 10 SAC product key. For example, if using a KMS, the command line would be setup.exe /pkey NPPR9-FWDCX-D2C8J-H872K-2YT43
+> In-place upgrade from Windows 7, Windows 8.1, or [Windows 10 semi-annual channel](https://docs.microsoft.com/windows/release-information/) to Windows 10 LTSC is not supported.  **Note**: Windows 10 LTSC 2015 did not block this upgrade path.  This was corrected in the Windows 10 LTSC 2016 release, which will now only allow data-only and clean install options. You can upgrade from Windows 10 LTSC to Windows 10 semi-annual channel, provided that you upgrade to the same or a newer build version. For example, Windows 10 Enterprise 2016 LTSB can be upgraded to Windows 10 Enterprise version 1607 or later. Upgrade is supported using the in-place upgrade process (using Windows setup). You will need to use the Product Key switch if you want to keep your apps. If you don't use the switch the option 'Keep personal files and apps' will be grayed out. The command line would be **setup.exe /pkey xxxxx-xxxxx-xxxxx-xxxxx-xxxxx**, using your relevant Windows 10 SAC product key. For example, if using a KMS, the command line would be **setup.exe /pkey NPPR9-FWDCX-D2C8J-H872K-2YT43**.
 > 
 > **Windows N/KN**: Windows "N" and "KN" SKUs (editions without media-related functionality) follow the same upgrade paths shown below. If the pre-upgrade and post-upgrade editions are not the same type (e.g. Windows 8.1 Pro N to Windows 10 Pro), personal data will be kept but applications and settings will be removed during the upgrade process.
 > 

@@ -10,7 +10,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 07/03/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
 # First time Setup for Surface Hub 2S
