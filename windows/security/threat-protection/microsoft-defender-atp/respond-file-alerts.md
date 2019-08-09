@@ -63,7 +63,7 @@ This action takes effect on machines with Windows 10, version 1703 or later, whe
 1. Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
 
     - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
-    - **Search box** - select File from the drop–down menu and enter the file name
+    - **Search box** - select **File** from the drop–down menu and enter the file name
 
 2. Go to the top bar and select **Stop and Quarantine File**.
 
