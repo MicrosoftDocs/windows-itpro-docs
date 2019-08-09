@@ -1607,13 +1607,28 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/keep-secure/preferences-setup-windows-defender-advanced-threat-protection.md",
+"redirect_url": "/windows/threat-protection/windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/threat-protection/windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/use-apis",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/use-apis.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/preferences-setup",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/preferences-setup.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/apis-intro",
 "redirect_document_id": true
 },
 {
@@ -1689,6 +1704,16 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/response-actions.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/keep-secure/response-actions-windows-defender-advanced-threat-protection.md",
+"redirect_url": "/windows/threat-protection/windows-defender-atp/response-actions-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
 },
 {
@@ -1804,11 +1829,6 @@
 {
 "source_path": "windows/threat-protection/windows-defender-atp/troubleshoot-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/troubleshoot-windows-defender-advanced-threat-protection",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-atp/troubleshoot-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-mdatp",
 "redirect_document_id": true
 },
 {
@@ -12032,11 +12052,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/keep-secure/preferences-setup-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/threat-protection/windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/keep-secure/prepare-your-organization-for-bitlocker-planning-and-policies.md",
 "redirect_url": "/windows/device-security/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies",
 "redirect_document_id": true
@@ -12184,11 +12199,6 @@
 {
 "source_path": "windows/keep-secure/respond-machine-alerts-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/threat-protection/windows-defender-atp/respond-machine-alerts-windows-defender-advanced-threat-protection",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/keep-secure/response-actions-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/threat-protection/windows-defender-atp/response-actions-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
 },
 {
@@ -15042,14 +15052,9 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/microsoft-defender-atp/response-actions.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-allowed-blocked-list.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
-"redirect_document_id": true
+"source_path": "windows/security/threat-protection/windows-defender-atp/troubleshoot-windows-defender-advanced-threat-protection.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-mdatp",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/troubleshoot-overview.md",
@@ -15060,16 +15065,6 @@
 "source_path":"windows/security/threat-protection/windows-defender-atp/use-apis.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/use-apis",
 "redirect_document_id": false
-},
-{
-"source_path": "windows/security/threat-protection/microsoft-defender-atp/use-apis.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/apis-intro",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/microsoft-defender-atp/preferences-setup.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/apis-intro",
-"redirect_document_id": true
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/user-alert-windows-defender-advanced-threat-protection-new.md",
@@ -15099,13 +15094,18 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/deployment/windows-10-enterprise-subscription-activation.md",
-"redirect_url": "/windows/deployment/windows-10-subscription-activation",
+"source_path": "windows/security/threat-protection/windows-defender-atp/manage-indicators.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/manage-allowed-blocked-list",
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-atp/manage-indicators.md",
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-allowed-blocked-list.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-10-enterprise-subscription-activation.md",
+"redirect_url": "/windows/deployment/windows-10-subscription-activation",
 "redirect_document_id": true
 },
 {
