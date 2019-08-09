@@ -98,7 +98,7 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 
 1. Open an elevated command–line prompt on the machine:
 
-    a. Go to **Start** and type cmd.
+    a. Go to **Start** and type _cmd_.
 
     b. Right–click **Command prompt** and select **Run as administrator**.
 
