@@ -35,7 +35,7 @@ Once the device is in the pending restart state, it will attempt to restart the 
 
 |Policy|Description |
 |-|-|
-|Specify deadline before auto-restart for update installation|Governs the update experience once the device has entered pending reboot state. It specifies a deadline, in days, to enforce compliance (such as imminent installation).|
+|Specify deadline before auto-restart for update installation|Governs the update experience once the device has entered pending restart state. It specifies a deadline, in days, to enforce compliance (such as imminent installation).|
 |Configure Auto-restart warning notification schedule for updates|Configures the reminder notification and the warning notification for a scheduled installation. The user can dismiss a reminder, but not the warning.|
 | (starting in Windows 10, version 1903) Specify deadlines for automatic updates and restarts | Similar to "Specify deadline before auto-restart for update installation," but starts the deadline countdown from when the update was published. Also introduces a configurable grace period and the option to opt out of automatic restarts until the deadline is reached. |
 
@@ -76,8 +76,8 @@ Before the deadline the device will be in two states: auto-restart period and en
 
 |Policy| Description |
 |-|-|
-|Specify engaged restart transition and notification schedule for updates|Governs how the user will be impacted by the pending reboot. Transition days, first starts out in Auto-Restart where the device will find an idle moment to reboot the device. After 2 days engaged restart will commence and the user will be able to choose a time|
-|Configure Auto-restart required notification for updates|Governs the notifications during the Auto-Restart period. During Active hours, the user will be notified that the device is trying to reboot. They will have the option to confirm or dismiss the notification|
+|Specify engaged restart transition and notification schedule for updates|Governs how the user will be impacted by the pending restart. Transition days, first starts out in Auto-Restart where the device will find an idle moment to restart the device. After 2 days engaged restart will commence and the user will be able to choose a time|
+|Configure Auto-restart required notification for updates|Governs the notifications during the Auto-Restart period. During Active hours, the user will be notified that the device is trying to restart. They will have the option to confirm or dismiss the notification|
 
 ### Suggested configuration 
 
