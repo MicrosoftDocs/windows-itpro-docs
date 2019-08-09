@@ -11,7 +11,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-audience: IT Pro
+audience: ITPro
 author: denisebmsft
 ms.author: deniseb
 ---
