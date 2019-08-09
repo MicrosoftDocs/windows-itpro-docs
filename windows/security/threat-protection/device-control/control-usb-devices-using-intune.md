@@ -134,6 +134,14 @@ One way to approach allowing installation and usage of USB drives and other peri
 >2.	Enable **allow installation of devices using drivers that match these device setup classes** for all [device setup classes](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
 To enforce the policy for already installed devices, apply the prevent policies that have this setting.
 
+When configuring the allow device installation policy, you will need to allow all parent attributes as well.  You can view the parents of a device by opening device manager and view by connection.
+
+![Device by Connection](images/devicesbyconnection.png)
+
+In this example, the following classesneeded to be added: HID, Keboard, and {36fc9e60-c465-11cf-8056-444553540000}. More information on [Microsoft-provided USB drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/supported-usb-classes).
+
+![Device host controller](images/devicehostcontroller.jpg)
+
 If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device id that you want to add. For example,
 
 1.	Remove class USBDevice from the **allow installation of devices using drivers that match these device setup**
@@ -256,6 +264,7 @@ Both machine and file level actions can be applied.
 - [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 - [Policy/DeviceInstallation CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation)
 - [Perform a custom scan of a removable device](https://aka.ms/scanusb)
+- [Device Control PowerBI Template for custom reporting](https://github.com/microsoft/MDATP-PowerBI-Templates)
 - [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) 
 - [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
 
