@@ -7,11 +7,12 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+ms.author: macapara
+audience: ITPro
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: mjcaparas
 ---
 
 # Windows Defender SmartScreen
@@ -40,7 +41,7 @@ Windows Defender SmartScreen protects against phishing or malware websites, and 
 
 ## Benefits of Windows Defender SmartScreen
 
-Windows Defender SmartScreen provides an early warning system against websites that might engage in phishing attacks or attempt to distribute malware through a socially-engineered attack. The primary benefits are:
+Windows Defender SmartScreen provide an early warning system against websites that might engage in phishing attacks or attempt to distribute malware through a socially-engineered attack. The primary benefits are:
 
 - **Anti-phishing and anti-malware support.** SmartScreen helps to protect your employees from sites that are reported to host phishing attacks or attempt to distribute malicious software. It can also help protect against deceptive advertisements, scam sites, and drive-by attacks. Drive-by attacks are web-based attacks that tend to start on a trusted site, targeting security vulnerabilities in commonly-used software. Because drive-by attacks can happen even if the user does not click or download anything on the page, the danger often goes unnoticed. For more info about drive-by attacks, see [Evolving Microsoft SmartScreen to protect you from drive-by attacks](https://blogs.windows.com/msedgedev/2015/12/16/SmartScreen-drive-by-improvements/#3B7Bb8bzeAPq8hXE.97)
 
@@ -51,6 +52,8 @@ Windows Defender SmartScreen provides an early warning system against websites t
 - **Improved heuristics and diagnostic data.** SmartScreen is constantly learning and endeavoring to stay up-to-date, so it can help to protect you against potentially malicious sites and files.
 
 - **Management through Group Policy and Microsoft Intune.** SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info about all available settings, see [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md).
+
+- **Blocking URLs associated with potentially unwanted applications.** When running Chromium-based builds of Edge, SmartScreen blocks URLs associated with potentially unwanted applications, or PUAs. For more information on blocking URLs associated with PUAs, see [Detect and block potentially unwanted applications](../windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md).
 
 ## Viewing Windows Defender SmartScreen anti-phishing events
 
@@ -63,7 +66,7 @@ SmartScreen events appear in the Microsoft-Windows-SmartScreen/Debug log in Even
 > [!NOTE]
 > For information on how to use the Event Viewer, see [Windows Event Viewer](https://docs.microsoft.com/host-integration-server/core/windows-event-viewer1).
 
-EventID | Description |
+EventID | Description
 -|-
 1000 | Application SmartScreen Event
 1001 | Uri SmartScreen Event
