@@ -485,6 +485,7 @@
 #### [Configure information protection in Windows](microsoft-defender-atp/information-protection-in-windows-config.md)
 
 ### [Configure portal settings]()
+#### [Set up preferences](microsoft-defender-atp/preferences-setup.md)
 #### [General]()
 ##### [Update data retention settings](microsoft-defender-atp/data-retention-settings.md)
 ##### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
@@ -514,7 +515,7 @@
 ##### [Onboarding machines](microsoft-defender-atp/onboard-configure.md)
 ##### [Offboarding machines](microsoft-defender-atp/offboard-machines.md)
   
-#### [Configure Windows Defender Security Center time zone settings](microsoft-defender-atp/time-settings.md)
+#### [Configure Microsoft Defender Security Center time zone settings](microsoft-defender-atp/time-settings.md)
 
 
 ## [Troubleshoot Microsoft Defender ATP]()
