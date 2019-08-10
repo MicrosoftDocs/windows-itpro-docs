@@ -90,7 +90,7 @@ Specifies the username used to connect to the proxy.
 
 To delete both a proxy and its associated connection, you must delete the proxy first, and then delete the connection. The following example shows how to delete the proxy and then the connection.
 
-``` syntax
+```xml
 <wap-provisioningdoc>
    <characteristic type="CM_ProxyEntries">
       <nocharacteristic type="GPRS_Proxy"/>

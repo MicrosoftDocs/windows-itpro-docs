@@ -3874,20 +3874,20 @@ The following list shows the supported values:
 <!--Example-->
 Example
 
-``` syntax
-        <Replace>
-            <CmdID>$CmdID$</CmdID>
-            <Item>
-                <Meta>
-                    <Format>chr</Format>
-                    <Type>text/plain</Type>
-                </Meta>
-                <Target>
-                    <LocURI>./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl</LocURI>
-                </Target>
-                <Data>http://abcd-srv:8530</Data>
-            </Item>
-        </Replace>
+```xml
+<Replace>
+    <CmdID>$CmdID$</CmdID>
+    <Item>
+        <Meta>
+            <Format>chr</Format>
+            <Type>text/plain</Type>
+        </Meta>
+        <Target>
+            <LocURI>./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl</LocURI>
+        </Target>
+        <Data>http://abcd-srv:8530</Data>
+    </Item>
+</Replace>
 ```
 
 <!--/Example-->

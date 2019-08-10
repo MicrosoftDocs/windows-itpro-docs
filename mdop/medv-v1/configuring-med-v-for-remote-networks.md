@@ -53,7 +53,7 @@ When applying new settings, the service must be restarted.
 
 -   You can change the IIS authentication scheme to one of the following: BASIC, DIGEST, NTLM, or NEGOTIATE. The default is NEGOTIATE and uses the following entry:
 
-    ``` syntax
+    ```xml
     <ImageDistribution>
     <!-- The authentication used for image download. Basic and digest authentication should be used only under SSL.-->
        <!-- The line below can be one of the following: -->
