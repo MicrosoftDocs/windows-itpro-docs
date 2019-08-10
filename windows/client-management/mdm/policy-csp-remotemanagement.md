@@ -365,7 +365,7 @@ If you disable or do not configure this policy setting, the WinRM service will n
 
 The service listens on the addresses specified by the IPv4 and IPv6 filters. The IPv4 filter specifies one or more ranges of IPv4 addresses, and the IPv6 filter specifies one or more ranges of IPv6addresses. If specified, the service enumerates the available IP addresses on the computer and uses only addresses that fall within one of the filter ranges.
 
-You should use an asterisk (*) to indicate that the service listens on all available IP addresses on the computer. When * is used, other ranges in the filter are ignored. If the filter is left blank, the service does not listen on any addresses.
+You should use an asterisk (\*) to indicate that the service listens on all available IP addresses on the computer. When \* is used, other ranges in the filter are ignored. If the filter is left blank, the service does not listen on any addresses.
 
 For example, if you want the service to listen only on IPv4 addresses, leave the IPv6 filter empty.
 

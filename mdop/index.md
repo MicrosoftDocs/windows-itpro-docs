@@ -2,7 +2,7 @@
 title: MDOP Information Experience
 description: MDOP Information Experience
 ms.assetid: 12b8ab56-3267-450d-bb22-1c7e44cb8e52
-author: jamiejdt
+author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

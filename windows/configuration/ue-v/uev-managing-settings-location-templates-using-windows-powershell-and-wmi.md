@@ -172,7 +172,7 @@ The UE-V Windows PowerShell features enable you to manage a group of settings te
 
 4.  Unregister all the previously registered versions of the templates by typing the following command.
 
-    ``` syntax
+    ```powershell
     Unregister-UevTemplate -All
     ```
 
@@ -180,7 +180,7 @@ The UE-V Windows PowerShell features enable you to manage a group of settings te
 
 5.  Register the updated templates by typing the following command.
 
-    ``` syntax
+    ```powershell
     Register-UevTemplate <path to template folder>\*.xml
     ```
 
@@ -192,7 +192,7 @@ By listing a Windows app in the Windows app list, you specify whether that app i
 
 To display the Package Family Name of installed Windows apps, at a Windows PowerShell command prompt, enter:
 
-``` syntax
+```powershell
 Get-AppxPackage | Sort-Object PackageFamilyName | Format-Table PackageFamilyName
 ```
 
