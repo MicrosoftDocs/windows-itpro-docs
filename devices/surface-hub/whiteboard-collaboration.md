@@ -34,7 +34,7 @@ To get Whiteboard to Whiteboard collaboration up and running, you’ll need to m
 - Currently not utilizing Office 365 Germany or Office 365 	operated by 21Vianet
 - Surface Hub needs to be updated to Windows 10, version 1607 or newer
 - Port 443 needs to be open since Whiteboard makes standard https requests
-- Whiteboard.ms, wbd.ms, \*.onenote.com, and your company's SharePoint tenant domain URLs need to be whitelisted for proxies
+- Whiteboard.ms, whiteboard.microsoft.com, wbd.ms, \*.onenote.com, and your company's SharePoint tenant domain URLs need to be whitelisted for proxies
 
  
 >[!NOTE]
@@ -68,4 +68,5 @@ After you’re done, you can export a copy of the Whiteboard collaboration for y
 ## Related topics
 
 - [Windows 10 Creators Update for Surface Hub](https://www.microsoft.com/surface/support/surface-hub/windows-10-creators-update-surface-hub)
-- [Support documentation for Microsoft Whiteboard](https://support.office.com/en-us/article/Whiteboard-Help-0c0f2aa0-b1bb-491c-b814-fd22de4d7c01)
+
+- [Support documentation for Microsoft Whiteboard](https://support.office.com/article/Whiteboard-Help-0c0f2aa0-b1bb-491c-b814-fd22de4d7c01)

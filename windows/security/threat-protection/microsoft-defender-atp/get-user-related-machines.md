@@ -44,7 +44,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 GET /api/users/{id}/machines
 ```
 
-**Note that the id is not the full UPN, but only the user name. (e.g., to retrieve machines for user1@contoso.com use /api/users/user1/machines) **
+**Note that the id is not the full UPN, but only the user name. (e.g., to retrieve machines for user1@contoso.com use /api/users/user1/machines)**
 
 
 ## Request headers

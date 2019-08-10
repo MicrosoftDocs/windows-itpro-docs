@@ -151,7 +151,7 @@ This event generates every time a new process starts.
 
 -   **New Process Name** \[Type = UnicodeString\]**:** full path and the name of the executable for the new process.
 
--   **Token Elevation Type** \[Type = UnicodeString\]**: **
+-   **Token Elevation Type** \[Type = UnicodeString\]**:**
 
     -   **TokenElevationTypeDefault (1):** Type 1 is a full token with no privileges removed or groups disabled. A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account (for which UAC disabled by default), service account or local system account.
 

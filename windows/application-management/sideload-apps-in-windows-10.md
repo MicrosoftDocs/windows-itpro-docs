@@ -19,6 +19,9 @@ ms.date: 05/20/2019
 -   Windows 10
 -   Windows 10 Mobile
 
+> [!NOTE]
+> As of Windows Insider Build 18956, sideloading is enabled by default. Now, you can deploy a signed package onto a device without a special configuration. 
+
 "Line-of-Business" (LOB) apps are present in a wide range of businesses and organizations. Organizations value these apps because they solve problems unique to each business.
 
 When you sideload an app, you deploy a signed app package to a device. You maintain the signing, hosting, and deployment of these apps. Sideloading was also available with Windows 8 and Windows 8.1
