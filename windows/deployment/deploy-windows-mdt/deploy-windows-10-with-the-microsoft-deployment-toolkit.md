@@ -19,7 +19,7 @@ ms.topic: article
 # Deploying Windows 10 with MDT
 
 **Applies to**
--   Windows 10
+- Windows 10
 
 This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT).
 
@@ -27,9 +27,9 @@ To download the latest version of MDT, visit the [MDT resource page](https://go.
 
 MDT is a unified collection of tools, processes, and guidance for automating desktop and server deployment. In addition to reducing deployment time and standardizing desktop and server images, MDT enables you to more easily manage security and ongoing configurations. MDT builds on top of the core deployment tools in the Windows Assessment and Deployment Kit (Windows ADK) with additional guidance and features designed to reduce the complexity and time required for deployment in an enterprise environment.
 
-MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8, Windows 8.1, and Windows Server. It also includes support for zero-touch installation (ZTI) with Microsoft System Center Configuration Manager.
+MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8.1, and Windows Server. It also includes support for zero-touch installation (ZTI) with Microsoft System Center Configuration Manager.
 
-For more information about MDT, see [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md) for an overview of MDT, including a description of many of the key features and options. A list of components in MDT that support Lite Touch Installation (LTI) is also provided.
+See [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md) for an overview of MDT, including a description of many of the key features and options. A list of components in MDT that support Lite Touch Installation (LTI) is also provided.
 
 ## In this guide
 
@@ -82,10 +82,12 @@ The organizational unit (OU) structure used in this guide.
 
 ### Deploy Windows 10 with MDT
 
-See the following topics when you are ready to try deploying Windows 10 with MDT. You must complete each of these topics in the order they are listed.
+When you are ready to try deploying Windows 10 with MDT, complete each of the topics below in the order they are listed.
 
 | Topic | Description | Required / optional |
 | :---   | :---      | :--- |
+| [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md) | An overview of MDT. | Optional |
+| [Deploying Windows 10 with MDT](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) | (This topic). A description of topics in this guide and the overall lab infrastructure. | Optional |
 | [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md) | Installation of MDT.  | Required |
 | [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) | Create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image.       | Required |
 | [Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md) | Take a reference image for Windows 10 and deploy that image to your environment using MDT.       | Required  |
