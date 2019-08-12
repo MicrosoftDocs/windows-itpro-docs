@@ -27,7 +27,7 @@ This topic for IT professional provides an overview of the virtual smart card te
 -   [Smart Cards](../smart-cards/smart-card-windows-smart-card-technical-reference.md)
 
 > [!NOTE]
-> [Windows Hello for Business](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-identity-verification) is the modern, two-factor credential for Windows 10. Microsoft will be deprecating virtual smart cards in the future but not date at this time. Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business. Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business. Microsoft recommends new Windows 10 deployments to use Windows Hello for Business. Virtual smart card remain supported for Windows 7 and Windows 8.
+> [Windows Hello for Business](docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) is the modern, two-factor credential for Windows 10. Microsoft will be deprecating virtual smart cards in the future, but no date has been set at this time. Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business. Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business. We recommend new Windows 10 deployments to use Windows Hello for Business. Virtual smart cards remain supported for Windows 7 and Windows 8.
 
 ## Feature description
 
