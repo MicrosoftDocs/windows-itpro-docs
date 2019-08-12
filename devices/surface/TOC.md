@@ -1,6 +1,6 @@
 # [Surface](index.md)
 
-## Get started
+## [Get started](get-started.md)
 
 ## Overview
 ### [Surface Pro Tech specs](https://www.microsoft.com/surface/devices/surface-pro/tech-specs)

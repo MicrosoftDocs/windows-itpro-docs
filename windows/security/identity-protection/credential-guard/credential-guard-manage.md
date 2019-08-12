@@ -106,7 +106,8 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 > [!NOTE]
 > You can also enable Windows Defender Credential Guard by setting the registry entries in the [FirstLogonCommands](https://msdn.microsoft.com/library/windows/hardware/dn922797.aspx) unattend setting.
 
-<span id="hardware-readiness-tool" />
+<span id="hardware-readiness-tool"/>
+
 ### Enable Windows Defender Credential Guard by using the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
 
 You can also enable Windows Defender Credential Guard by using the [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
@@ -115,7 +116,7 @@ You can also enable Windows Defender Credential Guard by using the [Windows Defe
 DG_Readiness_Tool_v3.5.ps1 -Enable -AutoReboot
 ```
 > [!IMPORTANT]
-> When running the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSAch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
+> When running the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
 > This is a known issue.
 
 ### Review Windows Defender Credential Guard performance
@@ -199,7 +200,8 @@ To disable Windows Defender Credential Guard, you can use the following set of p
 
 For more info on virtualization-based security and Windows Defender Device Guard, see [Windows Defender Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).
 
-<span id="turn-off-with-hardware-readiness-tool" />
+<span id="turn-off-with-hardware-readiness-tool"/>
+
 #### Disable Windows Defender Credential Guard by using the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
 
 You can also disable Windows Defender Credential Guard by using the [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
@@ -208,7 +210,7 @@ You can also disable Windows Defender Credential Guard by using the [Windows Def
 DG_Readiness_Tool_v3.6.ps1 -Disable -AutoReboot
 ```
 > [!IMPORTANT]
-> When running the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSAch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
+> When running the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
 > This is a known issue.
 
 #### Disable Windows Defender Credential Guard for a virtual machine
