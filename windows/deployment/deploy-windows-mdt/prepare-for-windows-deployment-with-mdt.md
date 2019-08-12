@@ -92,7 +92,7 @@ Workstations,"OU=Computers,OU=Contoso,DC=CONTOSO,DC=COM"
 Security Groups,"OU=Groups,OU=Contoso,DC=CONTOSO,DC=COM"
 ```
 
-Lastly, open an elevated Windows PowerShell prompt on DC01, navigate to the <b>c:\</b> directory and run the ou.ps1 script:
+Lastly, open an elevated Windows PowerShell prompt on DC01, navigate to the <b>c:\\</b> directory and run the ou.ps1 script:
 
 ```powershell
 .\ou.ps1
