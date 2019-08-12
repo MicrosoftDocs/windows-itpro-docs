@@ -10,8 +10,10 @@ ms.localizationpriority: medium
 ms.date: 10/11/2017
 ms.reviewer: 
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
-audience: itproauthor: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -444,7 +446,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     - Summary: click **Next**
     - Confirmation: click **Finish**
 
-9. For purposes of this test lab, we will not add applications, such as Microsoft Office, to the deployment share. For information about adding applications, see the [Add applications](deploy-windows-mdt/create-a-windows-10-reference-image.md#sec03) section of the [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md) topic in the TechNet library.
+9. For purposes of this test lab, we will not add applications, such as Microsoft Office, to the deployment share. For information about adding applications, see the [Add applications](deploy-windows-mdt/create-a-windows-10-reference-image.md#add-applications) section of the [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md) topic in the TechNet library.
 
 10. The next step is to create a task sequence to reference the operating system that was imported. To create a task sequence, right-click the **Task Sequences** node under **MDT Build Lab** and then click **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
     - Task sequence ID: **REFW10X64-001**<br>

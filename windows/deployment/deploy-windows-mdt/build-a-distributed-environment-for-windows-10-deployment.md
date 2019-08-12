@@ -23,13 +23,13 @@ ms.topic: article
 
 In this topic, you will learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations. If you work in a distributed environment, replicating the deployment shares is an important part of the deployment solution. With images reaching 5 GB in size or more, you can't deploy machines in a remote office over the wire. You need to replicate the content, so that the clients can do local deployments.
 
-We will use four machines for this topic: DC01, MDT01, MDT02, and PC0006. DC01 is a domain controller, MDT01 is a Windows Server 2012 R2 standard server, and PC0006 is a blank machine to which you will deploy Windows 10. You will configure a second deployment server (MDT02) for a remote site (Stockholm) by replicating the deployment share in the original site (New York). MDT01, MDT02, and PC0006 are members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md#proof).
+We will use four machines for this topic: DC01, MDT01, MDT02, and PC0006. DC01 is a domain controller, MDT01 is a Windows Server 2012 R2 standard server, and PC0006 is a blank machine to which you will deploy Windows 10. You will configure a second deployment server (MDT02) for a remote site (Stockholm) by replicating the deployment share in the original site (New York). MDT01, MDT02, and PC0006 are members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
 ![figure 1](../images/mdt-10-fig01.png)
 
-Figure 1. The machines used in this topic.
+Computers used in this topic.
 
-## <a href="" id="sec01"></a>Replicate deployment shares
+## Replicate deployment shares
 
 Replicating the content between MDT01 (New York) and MDT02 (Stockholm) can be done in a number of different ways. The most common content replication solutions with Microsoft Deployment Toolkit (MDT) use either the Linked Deployment Shares (LDS) feature or Distributed File System Replication (DFS-R). Some organizations have used a simple robocopy script for replication of the content.
 
@@ -44,7 +44,7 @@ LDS is a built-in feature in MDT for replicating content. However, LDS works bes
 
 DFS-R is not only very fast and reliable, but it also offers central monitoring, bandwidth control, and a great delta replication engine. DFS-R will work equally well whether you have 2 sites or 90. When using DFS-R for MDT, we recommend running your deployment servers on Windows Server 2008 R2 or higher. From that version on, you can configure the replication target(s) as read-only, which is exactly what you want for MDT. This way, you can have your master deployment share centralized and replicate out changes as they happen. DFS-R will quickly pick up changes at the central deployment share in MDT01 and replicate the delta changes to MDT02.
 
-## <a href="" id="sec02"></a>Set up Distributed File System Replication (DFS-R) for replication
+## Set up Distributed File System Replication (DFS-R) for replication
 
 Setting up DFS-R for replication is a quick and straightforward process. You prepare the deployment servers and then create a replication group. To complete the setup, you configure some replication settings.
 
@@ -57,7 +57,7 @@ Setting up DFS-R for replication is a quick and straightforward process. You pre
 
     ![figure 2](../images/mdt-10-fig02.png)
 
-    Figure 2. Adding the DFS Replication role to MDT01.
+    Adding the DFS Replication role to MDT01.
 
 6.  On the **Select features** page, accept the default settings, and click **Next**.
 7.  On the **Confirm installation selections** page, click **Install**.
@@ -81,7 +81,7 @@ Setting up DFS-R for replication is a quick and straightforward process. You pre
 
     ![figure 3](../images/mdt-10-fig03.png)
 
-    Figure 3. Sharing the **E:\\MDTProduction folder** on MDT02.
+    Sharing the **E:\\MDTProduction folder** on MDT02.
 
 ### Configure the deployment share
 
@@ -103,22 +103,21 @@ When you have multiple deployment servers sharing the same content, you need to 
    UserID=MDT_BA
    SkipBDDWelcome=YES
    ```
-   **Note**  
-   The DeployRoot value needs to go into the Bootstrap.ini file, but you can use the same logic in the CustomSettings.ini file. For example, you can redirect the logs to the local deployment server (SLSHARE), or have the User State Migration Tool (USMT) migration store (UDDIR) local. To learn more about USMT, see [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md) and [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md).
+   **Note**: The DeployRoot value needs to go into the Bootstrap.ini file, but you can use the same logic in the CustomSettings.ini file. For example, you can redirect the logs to the local deployment server (SLSHARE), or have the User State Migration Tool (USMT) migration store (UDDIR) local. To learn more about USMT, see [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md) and [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md).
      
 2. Save the Bootstrap.ini file.
 3. Using the Deployment Workbench, right-click the **MDT Production** deployment share and select **Update Deployment Share**.
 
    ![figure 4](../images/mdt-10-fig04.png)
 
-   Figure 4. Updating the MDT Production deployment share.
+   Updating the MDT Production deployment share.
 
 4. Use the default settings for the Update Deployment Share Wizard.
 5. After the update is complete, use the Windows Deployment Services console. In the **Boot Images** node, right-click the **MDT Production x64** boot image and select **Replace Image**.
 
    ![figure 5](../images/mdt-10-fig05.png)
 
-   Figure 5. Replacing the updated boot image in WDS.
+   Replacing the updated boot image in WDS.
 
 6. Browse and select the **E:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim** boot image, and then complete Replace Boot Image Wizard using the default settings.
    ## <a href="" id="sec03"></a>Replicate the content
@@ -131,7 +130,7 @@ When you have multiple deployment servers sharing the same content, you need to 
 
     ![figure 6](../images/mdt-10-fig06.png)
 
-    Figure 6. Adding the Replication Group Members.
+    Adding the Replication Group Members.
 
 11. On the **Topology Selection** page, select the **Full mesh** option and click **Next**.
 12. On the **Replication Group Schedule and Bandwidth** page, accept the default settings and click **Next**.
@@ -142,7 +141,7 @@ When you have multiple deployment servers sharing the same content, you need to 
 
     ![figure 7](../images/mdt-10-fig07.png)
 
-    Figure 7. Configure the MDT02 member.
+    Configure the MDT02 member.
 
 17. On the **Review Settings and Create Replication Group** page, click **Create**.
 18. On the **Confirmation** page, click **Close**.
@@ -160,7 +159,7 @@ When you have multiple deployment servers sharing the same content, you need to 
 
     ![figure 8](../images/mdt-10-fig08.png)
 
-    Figure 8. Configure the Staging settings.
+    Configure the Staging settings.
 
 22. In the middle pane, right-click the **MDT02** member and select **Properties**.
 23. On the **MDT02 (MDTProduction) Properties** page, configure the following and then click **OK**:
@@ -182,15 +181,15 @@ It will take some time for the replication configuration to be picked up by the 
 
 ![figure 9](../images/mdt-10-fig09.png)
 
-Figure 9. The DFS Replication Health Report.
+The DFS Replication Health Report.
 
-## <a href="" id="sec04"></a>Configure Windows Deployment Services (WDS) in a remote site
+## Configure Windows Deployment Services (WDS) in a remote site
 
 Like you did in the previous topic for MDT01, you need to add the MDT Production Lite Touch x64 Boot image to Windows Deployment Services on MDT02. For the following steps, we assume that WDS has already been installed on MDT02.
 1.  On MDT02, using the WDS console, right-click **Boot Images** and select **Add Boot Image**.
 2.  Browse to the E:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim file and add the image with the default settings.
 
-## <a href="" id="sec05"></a>Deploy the Windows 10 client to the remote site
+## Deploy the Windows 10 client to the remote site
 
 Now you should have a solution ready for deploying the Windows 10 client to the remote site, Stockholm, connecting to the MDT Production deployment share replica on MDT02.
 
@@ -214,16 +213,9 @@ Now you should have a solution ready for deploying the Windows 10 client to the
 
 ## Related topics
 
-[Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
-
-[Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
-
-[Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)
-
-[Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)
-
-[Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
-
+[Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)<br>
+[Create a Windows 10 reference image](create-a-windows-10-reference-image.md)<br>
+[Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)<br>
+[Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)<br>
+[Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)<br>
 [Configure MDT settings](configure-mdt-settings.md)
- 
- 

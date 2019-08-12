@@ -11,7 +11,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -22,25 +23,21 @@ ms.topic: article
 
 This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the computer refresh process. The refresh scenario, or computer refresh, is a reinstallation of an operating system on the same machine. You can refresh the machine to the same operating system as it is currently running, or to a later version.
 
-For the purposes of this topic, we will use three machines: DC01, MDT01, and PC0001. DC01 is a domain controller and MDT01 is a Windows Server 2012 R2 Standard server. PC0001 is a machine with Windows 7 Service Pack 1 (SP1) that is going to be refreshed into a Windows 10 machine, with data and settings restored. MDT01 and PC0001 are members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md#proof).
+For the purposes of this topic, we will use three machines: DC01, MDT01, and PC0001. DC01 is a domain controller and MDT01 is a Windows Server 2012 R2 Standard server. PC0001 is a machine with Windows 7 Service Pack 1 (SP1) that is going to be refreshed into a Windows 10 machine, with data and settings restored. MDT01 and PC0001 are members of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
 ![The machines used in this topic](../images/mdt-04-fig01.png "The machines used in this topic")
 
-Figure 1. The machines used in this topic.
+The computers used in this topic.
 
-## <a href="" id="sec01"></a>The computer refresh process
+## The computer refresh process
 
 Even though a computer will appear, to the end user, to be upgraded, a computer refresh is not, technically, an in-place upgrade. A computer refresh also involves taking care of user data and settings from the old installation and making sure to restore those at the end of the installation.
 For a computer refresh with MDT, you use the User State Migration Tool (USMT), which is part of the Windows Assessment and Deployment Kit (ADK) for Windows 10, to migrate user data and settings. To complete a computer refresh you will:
 
 1.  Back up data and settings locally, in a backup folder.
-
 2.  Wipe the partition, except for the backup folder.
-
 3.  Apply the new operating system image.
-
 4.  Install other applications.
-
 5.  Restore data and settings.
 
 During the computer refresh, USMT uses a feature called Hard-Link Migration Store. When you use this feature, the files are simply linked in the file system, which allows for fast migration, even when there is a lot of data.
@@ -62,12 +59,11 @@ As an example, the following line configures USMT to migrate only domain user pr
 
 In addition to the command-line switches that control which profiles to migrate, the XML templates control exactly what data is being migrated. You can control data within and outside the user profiles
 
-## <a href="" id="sec02"></a>Create a custom User State Migration Tool (USMT) template
+## Create a custom User State Migration Tool (USMT) template
 
 In this section, you learn to migrate additional data using a custom template. You configure the environment to use a custom USMT XML template that will:
 
 1.  Back up the **C:\\Data** folder (including all files and folders).
-
 2.  Scan the local disk for PDF documents (\*.pdf files) and restore them into the **C:\\Data\\PDF Documents** folder on the destination machine.
     The custom USMT template is named MigContosoData.xml, and you can find it in the sample files for this documentation, which include:
 
@@ -86,7 +82,7 @@ In order to use the custom MigContosoData.xml USMT template, you need to copy it
     ```
 3.  Save the CustomSettings.ini file.
 
-## <a href="" id="sec03"></a>Refresh a Windows 7 SP1 client
+## Refresh a Windows 7 SP1 client
 
 After adding the additional USMT template and configuring the CustomSettings.ini file to use it, you are now ready to refresh a Windows 7 SP1 client to Windows 10. In these steps, we assume you have a Windows 7 SP1 client named PC0001 in your environment that is ready for a refresh to Windows 10.
 
@@ -119,14 +115,9 @@ Figure 2. Starting the computer refresh from the running Windows 7 SP1 client.
 
 ## Related topics
 
-[Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
-
-[Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
-
-[Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)
-
-[Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)
-
-[Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
-
+[Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)<br>
+[Create a Windows 10 reference image](create-a-windows-10-reference-image.md)<br>
+[Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)<br>
+[Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)<br>
+[Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)<br>
 [Configure MDT settings](configure-mdt-settings.md)
