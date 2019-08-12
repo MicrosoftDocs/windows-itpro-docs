@@ -9,7 +9,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -73,9 +74,9 @@ If the WNS services are not available, the Autopilot process will still continue
 
 If the Microsoft Store is not accessible, the AutoPilot process will still continue without Microsoft Store apps.
 
-<tr><td><b>Office 365<b><td>As part of the Intune device configuration, installation of Office 365 ProPlus may be required. For more information, see <a href="https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2">Office 365 URLs and IP address ranges</a> (includes all Office services, DNS names, IP addresses; includes Azure AD and other services that may overlap with those listed above).
-<tr><td><b>Certificate revocation lists (CRLs)<b><td>Some of these services will also need to check certificate revocation lists (CRLs) for certificates used in the services.  A full list of these is documented at <a href="https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_crl">Office 365 URLs and IP address ranges</a> and <a href="https://aka.ms/o365chains">Office 365 Certificate Chains</a>.
-<tr><td><b>Hybrid AAD join<b><td>Hybrid AAD can be join, the machine should be on corporate network for hybrid AAD join to work. See details at <a href="https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven-hybrid">Windows Autopilot user-driven mode</a>
+<tr><td><b>Office 365<b><td>As part of the Intune device configuration, installation of Office 365 ProPlus may be required. For more information, see <a href="https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2">Office 365 URLs and IP address ranges</a> (includes all Office services, DNS names, IP addresses; includes Azure AD and other services that may overlap with those listed above).
+<tr><td><b>Certificate revocation lists (CRLs)<b><td>Some of these services will also need to check certificate revocation lists (CRLs) for certificates used in the services.  A full list of these is documented at <a href="https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_crl">Office 365 URLs and IP address ranges</a> and <a href="https://aka.ms/o365chains">Office 365 Certificate Chains</a>.
+<tr><td><b>Hybrid AAD join<b><td>The device can be hybrid AAD joined. The computer should be on corporate network for hybrid AAD join to work. See details at <a href="https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven-hybrid">Windows Autopilot user-driven mode</a>
 </table>
 
 ## Licensing requirements
