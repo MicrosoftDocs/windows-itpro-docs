@@ -19,60 +19,60 @@ ms.topic: article
 # Create a Windows 10 reference image
 
 **Applies to**
--   Windows 10
+- Windows 10
 
 Creating a reference image is important because that image serves as the foundation for the devices in your organization. In this topic, you will learn how to create a Windows 10 reference image using the Microsoft Deployment Toolkit (MDT). You will create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image. After completing the steps outlined in this topic, you will have a Windows 10 reference image that can be used in your deployment solution.
-For the purposes of this topic, we will use four machines: DC01, MDT01, HV01, and PC0001. DC01 is a domain controller, PC0001 is a Windows 10 Enterprise x64 client, and MDT01 is a Windows Server 2012 R2 standard server. HV01 is a Hyper-V host server, but HV01 could be replaced by PC0001 as long as PC0001 has enough memory and is capable of running Hyper-V. MDT01, HV01, and PC0001 are members of the domain contoso.com for the fictitious Contoso Corporation.
 
->[!NOTE]
->For important details about the setup for the steps outlined in this article, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md#proof).
+For the purposes of this topic, we will use three computers: DC01, MDT01, and PC0001. 
+- DC01 is a domain controller for the contoso.com domain.
+- MDT01 is a contoso.com domain member server.
+- PC0001 is a Windows 10 Enterprise x64 client and also a contoso.com domain member.
  
 ![figure 1](../images/mdt-08-fig01.png)
 
-Figure 1. The machines used in this topic.
+>[!NOTE]
+>See [Deploying Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) for more information about the setup for this lab.
 
 ## The reference image
 
-The reference image described in this documentation is designed primarily for deployment to physical machines. However, the reference image is created on a virtual platform, before being automatically run through the System Preparation (Sysprep) tool process and captured to a Windows Imaging (WIM) file. The reasons for creating the reference image on a virtual platform are the following:
--   You reduce development time and can use snapshots to test different configurations quickly.
--   You rule out hardware issues. You simply get the best possible image, and if you have a problem, it's not likely to be hardware related.
--   It ensures that you won't have unwanted applications that could be installed as part of a driver install but not removed by the Sysprep process.
--   It's easy to move between lab, test, and production.
+The reference image described in this guide is designed primarily for deployment to physical devices. However, the reference image is created on a virtual platform, before being automatically run through the System Preparation (Sysprep) tool process and captured to a Windows Imaging (WIM) file. The reasons for creating the reference image on a virtual platform are the following:
+- You reduce development time and can use snapshots to test different configurations quickly.
+- You rule out hardware issues. You simply get the best possible image, and if you have a problem, it's not likely to be hardware related.
+- It ensures that you won't have unwanted applications that could be installed as part of a driver install but not removed by the Sysprep process.
+- It's easy to move between lab, test, and production.
 
-## <a href="" id="sec01"></a>Set up the MDT build lab deployment share
+## Set up the MDT build lab deployment share
 
-With Windows 10, there is no hard requirement to create reference images; however, to reduce the time needed for deployment, you may want to create a reference image that contains a few base applications as well as all of the latest updates. This section will show you how to create and configure the MDT Build Lab deployment share to create a Windows 10 reference image. Because reference images will be deployed only to virtual machines during the creation process and have specific settings (rules), you should always create a separate deployment share specifically for this process.
+With Windows 10, there is no hard requirement to create reference images. However, to reduce the time needed for deployment, you might want to create a reference image that contains a few base applications as well as all of the latest updates. This section will show you how to create and configure the MDT Build Lab deployment share to create a Windows 10 reference image. Because reference images will be deployed only to virtual machines during the creation process and have specific settings (rules), you should always create a separate deployment share specifically for this process.
 
 ### Create the MDT build lab deployment share
 
-- On MDT01, log on as Administrator in the CONTOSO domain using a password of <strong>P@ssw0rd</strong>.
+- On MDT01, log on as admin using a password of <b>pass@word3</b> (credentials from the [prepare for deployment](prepare-for-windows-deployment-with-mdt.md) topic).
+- Start the MDT deployment workbench, and pin this to the taskbar for easy access.
 - Using the Deployment Workbench, right-click **Deployment Shares** and select **New Deployment Share**.
 - Use the following settings for the New Deployment Share Wizard:
-- Deployment share path: E:\\MDTBuildLab
-- Share name: MDTBuildLab$
-- Deployment share description: MDT Build Lab
-- &lt;default&gt;
-- Verify that you can access the \\\\MDT01\\MDTBuildLab$ share.
+  - Deployment share path: **D:\\MDTBuildLab**
+  - Share name: **MDTBuildLab$**
+  - Deployment share description: **MDT Build Lab**
+- Accept the default selections on the Options page and click **Next**.
+- Review the Summary page, click **Next**, wait for the deployment share to be created, then click **Finish**.
+- Verify that you can access the <b>\\\\MDT01\\MDTBuildLab$</b> share.
 
 ![figure 2](../images/mdt-08-fig02.png)
 
-Figure 2. The Deployment Workbench with the MDT Build Lab deployment share created.
+The Deployment Workbench with the MDT Build Lab deployment share.
 
 ### Configure permissions for the deployment share
 
 In order to write the reference image back to the deployment share, you need to assign Modify permissions to the MDT Build Account (MDT\_BA) for the **Captures** subfolder in the **E:\\MDTBuildLab** folder
-1.  On MDT01, log on as **CONTOSO\\Administrator**.
-2.  Modify the NTFS permissions for the **E:\\MDTBuildLab\\Captures** folder by running the following command in an elevated Windows PowerShell prompt:
+1.  On MDT01, sign in as **CONTOSO\\admin**.
+2.  Modify the NTFS permissions for the **D:\\MDTBuildLab\\Captures** folder by running the following command in an elevated Windows PowerShell prompt:
 
-    ``` 
-    icacls E:\MDTBuildLab\Captures /grant '"MDT_BA":(OI)(CI)(M)'
+    ``` syntax
+    icacls D:\MDTBuildLab\Captures /grant '"MDT_BA":(OI)(CI)(M)'
     ```
 
-![figure 3](../images/mdt-08-fig03.png)
-
-Figure 3. Permissions configured for the MDT\_BA user.
-
-## <a href="" id="sec02"></a>Add the setup files
+## Add setup files
 
 This section will show you how to populate the MDT deployment share with the Windows 10 operating system source files, commonly referred to as setup files, which will be used to create a reference image. Setup files are used during the reference image creation process and are the foundation for the reference image.
 
@@ -85,89 +85,95 @@ MDT supports adding both full source Windows 10 DVDs (ISOs) and custom images t
  
 ### Add Windows 10 Enterprise x64 (full source)
 
-In these steps we assume that you have copied the content of a Windows 10 Enterprise x64 ISO to the **E:\\Downloads\\Windows 10 Enterprise x64** folder.
+1. Sign on to MDT01 on as **CONTOSO\\admin** and copy the content of a Windows 10 Enterprise x64 DVD/ISO to the **D:\\Downloads\\Windows 10 Enterprise x64** folder on MDT01. See the following example.
 
-1.  On MDT01, log on as **CONTOSO\\Administrator**.
-2.  Using the Deployment Workbench, expand the **Deployment Shares** node, and then expand **MDT Build Lab**.
-3.  Right-click the **Operating Systems** node, and create a new folder named **Windows 10**.
-4.  Expand the **Operating Systems** node, right-click the **Windows 10** folder, and select **Import Operating System**. Use the following settings for the Import Operating System Wizard:
-5.  Full set of source files
-6.  Source directory: E:\\Downloads\\Windows 10 Enterprise x64
-7.  Destination directory name: W10EX64RTM
-8.  After adding the operating system, in the **Operating Systems / Windows 10** folder, double-click the added operating system name in the **Operating System** node and change the name to the following: **Windows 10 Enterprise x64 RTM Default Image**
+    ![ISO](../images/iso-data.png)
 
-![figure 4](../images/figure4-deployment-workbench.png)
+2. Using the Deployment Workbench, expand the **Deployment Shares** node, and then expand **MDT Build Lab**.
+3. Right-click the **Operating Systems** node, and create a new folder named **Windows 10**.
+4. Expand the **Operating Systems** node, right-click the **Windows 10** folder, and select **Import Operating System**. Use the following settings for the Import Operating System Wizard:
+    - Full set of source files
+    - Source directory: <b>D:\\Downloads\\Windows 10 Enterprise x64</b>
+    - Destination directory name: <b>W10EX64RTM</b>
+5. After adding the operating system, in the **Operating Systems / Windows 10** folder, double-click the added operating system name in the **Operating System** node and change the name to: **Windows 10 Enterprise x64 RTM Default Image**. See the following example.
 
-Figure 4. The imported Windows 10 operating system after renaming it.
+    ![Default image](../images/figure4-deployment-workbench.png)
 
-## <a href="" id="sec03"></a>Add applications
+## Add applications
 
-Before you create an MDT task sequence, you need to add all of the applications and other sample scripts to the MDT Build Lab share.
+Before you create an MDT task sequence, you need to add any applications and scripts you wish to install to the MDT Build Lab share.
 
-The steps in this section use a strict naming standard for your MDT applications. You add the "Install - " prefix for typical application installations that run a setup installer of some kind, and you use the "Configure - " prefix when an application configures a setting in the operating system. You also add an " - x86", " - x64", or "- x86-x64" suffix to indicate the application's architecture (some applications have installers for both architectures). Using a script naming standard is always recommended when using MDT as it helps maintain order and consistency.
-By storing configuration items as MDT applications, it is easy to move these objects between various solutions, or between test and production environments. In this topic's step-by-step sections, you will add the following applications:
+The steps in this section use a strict naming standard for your MDT applications. 
+- Use the "<b>Install - </b>" prefix for typical application installations that run a setup installer of some kind, 
+- Use the "<b>Configure - </b>" prefix when an application configures a setting in the operating system. 
+- You also add an "<b> - x86</b>", "<b> - x64</b>", or "<b>- x86-x64</b>" suffix to indicate the application's architecture (some applications have installers for both architectures).
+ 
+Using a script naming standard is always recommended when using MDT as it helps maintain order and consistency. 
 
--   Install - Microsoft Office 2013 Pro Plus - x86
--   Install - Microsoft Silverlight 5.0 - x64
--   Install - Microsoft Visual C++ 2005 SP1 - x86
--   Install - Microsoft Visual C++ 2005 SP1 - x64
--   Install - Microsoft Visual C++ 2008 SP1 - x86
--   Install - Microsoft Visual C++ 2008 SP1 - x64
--   Install - Microsoft Visual C++ 2010 SP1 - x86
--   Install - Microsoft Visual C++ 2010 SP1 - x64
--   Install - Microsoft Visual C++ 2012 Update 4 - x86
--   Install - Microsoft Visual C++ 2012 Update 4 - x64
+By storing configuration items as MDT applications, it is easy to move these objects between various solutions, or between test and production environments. 
 
-In these examples, we assume that you downloaded the software in this list to the E:\\Downloads folder. The first application is added using the UI, but because MDT supports Windows PowerShell, you add the other applications using Windows PowerShell.
+In example sections, you will add the following applications:
+
+- Install - Microsoft Office 365 Pro Plus - x86
+- Install - Microsoft Visual C++ Redistributable 2019 - x86
+- Install - Microsoft Visual C++ Redistributable 2019 - x64
+
+Download links:
+- [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117)
+- [Microsoft Visual C++ Redistributable 2019 - x86](https://aka.ms/vs/16/release/VC_redist.x86.exe)
+- [Microsoft Visual C++ Redistributable 2019 - x64](https://aka.ms/vs/16/release/VC_redist.x64.exe)
+
+Download the software in this list to the D:\\Downloads folder on MDT01.
 
 >[!NOTE]
->All the Microsoft Visual C++ downloads can be found on [The latest supported Visual C++ downloads](https://go.microsoft.com/fwlink/p/?LinkId=619523).
+>All the Microsoft Visual C++ downloads can be found on [The latest supported Visual C++ downloads](https://go.microsoft.com/fwlink/p/?LinkId=619523). Visual C++ 2015, 2017 and 2019 all share the same redistributable files.
  
-### Create the install: Microsoft Office Professional Plus 2013 x86
+### Create the install: Microsoft Office 365 Professional Plus x86
 
-You can customize Office 2013. In the volume license versions of Office 2013, there is an Office Customization Tool you can use to customize the Office installation. In these steps we assume you have copied the Office 2013 installation files to the E:\\Downloads\\Office2013 folder.
+1. After downloading the most current version of the Office Deployment tool from the Microsoft Download Center using the link provided above, run the self-extracting executable file and extract the files to D:\\Downloads\\Office365.  The Office Deployment Tool (setup.exe) and several sample configuration.xml files will be extracted.
+2. Using a text editor such as Notepad, create an XML file with the installation settings for Office 365 ProPlus that are appropriate for your organization. The file uses an XML format, so the file you create must have an extension of .xml but the file can have any filename.
 
-### Add the Microsoft Office Professional Plus 2013 x86 installation files
+ - For example, you can use the following configuration.xml file, which provides these configuration settings:
+   - Install the 64-bit version of Office 365 ProPlus in English directly from the Office Content Delivery Network (CDN) on the internet. Note: 64-bit is now the default and recommended edition. 
+   - Use the Semi-Annual Channel and get updates directly from the Office CDN on the internet. 
+   - Perform a silent installation. You won’t see anything that shows the progress of the installation and you won’t see any error messages.
 
-After adding the Microsoft Office Professional Plus 2013 x86 application, you then automate its setup by running the Office Customization Tool. In fact, MDT detects that you added the Office Professional Plus 2013 x86 application and creates a shortcut for doing this.
-You also can customize the Office installation using a Config.xml file. But we recommend that you use the Office Customization Tool as described in the following steps, as it provides a much richer way of controlling Office 2013 settings.
-1.  Using the Deployment Workbench in the MDT Build Lab deployment share, expand the **Applications / Microsoft** node, and double-click **Install - Microsoft Office 2013 Pro Plus x86**.
-2.  In the **Office Products** tab, click **Office Customization Tool**, and click **OK** in the **Information** dialog box.
+ ```xml
+ <Configuration>
+  <Add OfficeClientEdition="64" Channel="Broad">
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+    </Product>
+  </Add>
+  <Display Level="None" AcceptEULA="TRUE" />
+  <Updates Enabled="TRUE" />
+ </Configuration>
+ ```
 
-    ![figure 5](../images/mdt-08-fig05.png)
+ By using these settings, any time you build the reference image you’ll be installing the most up-to-date Semi-Annual Channel version of Office 365 ProPlus.
 
-    Figure 5. The Install - Microsoft Office 2013 Pro Plus - x86 application properties.
+ >[!TIP]
+ >You can also use the web-based interface of the [Office Customization Tool](https://config.office.com/) to help you create your configuration.xml file.
+ 
+ Also see [Configuration options for the Office Deployment Tool](https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool) and [Overview of the Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) for more information. 
 
-    >[!NOTE]
-    >If you don't see the Office Products tab, verify that you are using a volume license version of Office. If you are deploying Office 365, you need to download the Admin folder from Microsoft.
-     
-3.  In the Office Customization Tool dialog box, select the Create a new Setup customization file for the following product option, select the Microsoft Office Professional Plus 2013 (32-bit) product, and click OK.
-4.  Use the following settings to configure the Office 2013 setup to be fully unattended:
-    1.  Install location and organization name
-        -   Organization name: Contoso
-    2.  Licensing and user interface
-        1.  Select Use KMS client key
-        2.  Select I accept the terms in the License Agreement.
-        3.  Select Display level: None
+3. Copy the configuration.xml file to the D:\Downloads\Office365 folder. Assuming you have named the file "configuration.xml" we will use the command "setup.exe /configure configuration.xml" when we create the application in MDT. This will perform the installation of Office 365 ProPlus using the configuration settings in the configuration.xml file.
 
-        ![figure 6](../images/mdt-08-fig06.png)
+ >[!IMPORTANT]
+ >After Office 365 ProPlus is installed on the reference image, do NOT open any Office programs. if you open an Office program, you are prompted to sign-in, which activates the installation of Office 365 ProPlus. Even if you don't sign in and you close the Sign in to set up Office dialog box, a temporary product key is installed. You don't want any kind of product key for Office 365 ProPlus installed as part of your reference image.
 
-        Figure 6. The licensing and user interface screen in the Microsoft Office Customization Tool
+Additional information
+- Office 365 ProPlus is usually updated on a monthly basis with security updates and other quality updates (bug fixes), and possibly new features (depending on which update channel you’re using). That means that once you’ve deployed your reference image, Office 365 ProPlus will most likely need to download and install the latest updates that have been released since you created your reference image.
 
-    3.  Modify Setup properties
-        -   Add the **SETUP\_REBOOT** property and set the value to **Never**.
-    4.  Modify user settings
-        -   In the **Microsoft Office 2013** node, expand **Privacy**, select **Trust Center**, and enable the Disable Opt-in Wizard on first run setting.
-5.  From the **File** menu, select **Save**, and save the configuration as 0\_Office2013ProPlusx86.msp in the **E:\\MDTBuildLab\\Applications\\Install - Microsoft Office 2013 Pro Plus - x86\\Updates** folder.
+- Instead of installing Office 365 ProPlus as part of the reference image, we recommend configuring Office 365 ProPlus to be installed immediately after the reference image is deployed to the user’s device. You would still use the Office Deployment Tool and a configuration.xml file to perform the installation. This way the user will have the most up-to-date version of Office 365 ProPlus right away and won’t have to download any new updates (which is most likely what would happen if Office 365 ProPlus was installed as part of the reference image.)
 
-    >[!NOTE]
-    >The reason for naming the file with a 0 (zero) at the beginning is that the Updates folder also handles Microsoft Office updates,          and they are installed in alphabetical order. The Office 2013 setup works best if the customization file is installed before any updates.
-     
-6.  Close the Office Customization Tool, click Yes in the dialog box, and in the **Install - Microsoft Office 2013 Pro Plus - x86 Properties** window, click **OK**.
+- When you are creating your reference image, instead of installing Office 365 ProPlus directly from the Office CDN on the internet, you can install Office 365 ProPlus from a location on your local network, such as a file share. To do that, you would use the Office Deployment Tool in /download mode to download the installation files to that file share. Then you could use the Office Deployment Tool in /configure mode to install Office 365 ProPlus from that location on to your reference image. As part of that, you’ll need to point to that location in your configuration.xml file so that the Office Deployment Tool knows where to install Office 365 ProPlus from. If you decide to do that, the next time you create a new reference image, you’ll want to be sure to use the Office Deployment Tool to download the most up-to-date installation files for Office 365 ProPlus to that location on your internal network. That way your new reference image will have a more up-to-date installation of Office 365 ProPlus.
+
 
 ### Connect to the deployment share using Windows PowerShell
 
 If you need to add many applications, you can take advantage of the PowerShell support that MDT has. To start using PowerShell against the deployment share, you must first load the MDT PowerShell snap-in and then make the deployment share a PowerShell drive (PSDrive).
+
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Import the snap-in and create the PSDrive by running the following commands in an elevated PowerShell prompt:
 
@@ -179,6 +185,7 @@ If you need to add many applications, you can take advantage of the PowerShell s
 ### Create the install: Microsoft Visual C++ 2005 SP1 x86
 
 In these steps we assume that you have downloaded Microsoft Visual C++ 2005 SP1 x86. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2005SP1x86.
+
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
@@ -639,14 +646,9 @@ After some time, you will have a Windows 10 Enterprise x64 image that is fully 
 
 ## Related topics
 
-[Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
-
-[Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)
-
-[Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)
-
-[Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)
-
-[Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
-
+[Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)<br>
+[Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)<br>
+[Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)<br>
+[Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)<br>
+[Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)<br>
 [Configure MDT settings](configure-mdt-settings.md)
