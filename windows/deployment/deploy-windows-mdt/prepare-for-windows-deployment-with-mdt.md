@@ -100,6 +100,8 @@ Lastly, open an elevated Windows PowerShell prompt on DC01, navigate to the <b>c
 
 This will create an OU structure as shown below.
 
+![OU structure](../images/mdt-05-fig07.png)
+
 To use the Active Directory Users and Computers console (instead of PowerShell):
 
 1.  On DC01, using Active Directory User and Computers, in the contoso.com domain level, create a top-level OU named **Contoso**.
@@ -118,8 +120,6 @@ To use the Active Directory Users and Computers console (instead of PowerShell):
     1.   Security Groups
 
 The final result of either method is shown below (the MDT_BA account will be created next).
-
-![OU structure](../images/mdt-05-fig07.png)
 
 ## Create the MDT service account
 
