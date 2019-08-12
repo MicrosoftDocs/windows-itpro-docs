@@ -9,6 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
@@ -128,7 +129,7 @@ In order to meet the two requirements above, we recommend that you use one of th
 
 
 ~~~
-``` syntax
+```
 msidbCustomActionTypeVBScript + msidbCustomActionTypeInScript + msidbCustomActionTypeNoImpersonate = 0x0006 + 0x0400 + 0x0800 = 0x0C06 = 3078 decimal)
 ```
 ~~~
@@ -146,7 +147,7 @@ You must ensure that you call the script at a time when it will receive elevated
 
 The following examples show an installation of a custom compatibility-fix database based on an .msi file.
 
-```vb
+```
 'InstallSDB.vbs
 Function Install
 Dim WshShell

@@ -4,11 +4,13 @@ description: To successfully deploy the Windows 10 operating system and applica
 ms.assetid: 0d6cee1f-14c4-4b69-b29a-43b0b327b877
 ms.reviewer: 
 manager: laurawi
-ms.author: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
 keywords: deploy, volume activation, BitLocker, recovery, install, installation, VAMT, MDT, USMT, WDS
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.topic: article
 ---
@@ -43,7 +45,7 @@ Dism.exe /Online /Enable-Feature /FeatureName:NetFX3 /All /Source:D:\Sources\SxS
 
 In Windows 10, you can use Windows PowerShell for many of the functions performed by DISM.exe. The equivalent command in Windows 10 using PowerShell is:
 
-```powershell
+``` syntax
 Enable-WindowsOptionalFeature -Online -FeatureName NetFx3 -All 
 -Source D:\Sources\SxS -LimitAccess
 ```
@@ -132,7 +134,7 @@ Figure 6. The updated Volume Activation Management Tool.
 
 VAMT also can be used to create reports, switch from MAK to KMS, manage Active Directory-based activation, and manage Office 2010 and Office 2013 volume activation. VAMT also supports PowerShell (instead of the old command-line tool). For example, if you want to get information from the VAMT database, you can type:
 
-```powershell
+``` syntax
 Get-VamtProduct
 ```
 

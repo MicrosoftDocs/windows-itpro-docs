@@ -4,9 +4,9 @@ description: Learn how to enforce compliance deadlines using Windows Update for 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
-ms.author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
 ms.date: 06/20/2018
 ms.reviewer: 
 manager: laurawi

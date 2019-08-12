@@ -7,6 +7,7 @@ keywords: oms, operations management suite, wdav, updates, downloads, log analyt
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.localizationpriority: medium
 ms.author: greglin

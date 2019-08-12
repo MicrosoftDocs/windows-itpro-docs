@@ -1,13 +1,15 @@
 # [Microsoft HoloLens](index.md)
 # [What's new in HoloLens](hololens-whats-new.md)
-# [HoloLens in the enterprise: requirements and FAQ](hololens-requirements.md)
 # [Set up HoloLens](hololens-setup.md)
+
+# Deploy HoloLens in a commercial environment
+## [Overview and deployment planning](hololens-requirements.md)
+## [Configure HoloLens using a provisioning package](hololens-provisioning.md)
+## [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 
 # Device Management
 ## [Unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md)
 ## [Install localized version of HoloLens](hololens-install-localized.md)
-## [Configure HoloLens using a provisioning package](hololens-provisioning.md)
-## [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
 ## [Manage updates to HoloLens](hololens-updates.md)
 ## [Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md)
 ## [Use the HoloLens Clicker](hololens-clicker.md)

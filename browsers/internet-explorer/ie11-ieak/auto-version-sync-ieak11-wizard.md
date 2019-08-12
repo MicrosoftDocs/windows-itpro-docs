@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: bfc7685f-843b-49c3-8b9b-07e69705840c
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the Automatic Version Synchronization page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

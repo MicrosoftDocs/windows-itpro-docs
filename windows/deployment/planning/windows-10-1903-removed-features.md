@@ -1,3 +1,4 @@
+
 ---
 title: Windows 10, version 1903 - Features that have been removed
 description: Learn about features that will be removed or deprecated in Windows 10, version 1903, or a future release

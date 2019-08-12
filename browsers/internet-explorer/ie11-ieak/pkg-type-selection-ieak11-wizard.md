@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: dd91f788-d05e-4f45-9fd5-d951abf04f2c
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the Package Type Selection page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

@@ -260,7 +260,7 @@ Users appreciate convenience of biometrics and administrators value the security
 ![WHFB Certificate GP Setting](images/rdpbio/rdpbiopolicysetting.png)
 
 > [!IMPORTANT]
-> The remote desktop with biometric feature does not work with [Dual Enrollment](#dual-enrollment) feature or scenarios where the user provides alternative credentials.  Microsoft continues to investigate supporting the feature.\
+> The remote desktop with biometric feature does not work with [Dual Enrollment](#dual-enrollment) feature or scenarios where the user provides alternative credentials.  Microsoft continues to investigate supporting the feature.
 
 ## Related topics
 

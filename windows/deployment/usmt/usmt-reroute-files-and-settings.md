@@ -8,6 +8,7 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
@@ -31,7 +32,7 @@ In this topic:
 
 The following custom .xml file migrates the directories and files from C:\\EngineeringDrafts into the My Documents folder of every user. %CSIDL\_PERSONAL% is the virtual folder representing the My Documents desktop item, which is equivalent to CSIDL\_MYDOCUMENTS.
 
-```xml
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="User">
   <displayName>Engineering Drafts Documents to Personal Folder</displayName>
@@ -60,7 +61,7 @@ The following custom .xml file migrates the directories and files from C:\\Engin
 
 The following custom .xml file reroutes .mp3 files located in the fixed drives on the source computer into the C:\\Music folder on the destination computer.
 
-```xml
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
   <displayName>All .mp3 files to My Documents</displayName>
@@ -88,7 +89,7 @@ The following custom .xml file reroutes .mp3 files located in the fixed drives o
 
 The following custom .xml file migrates the Sample.doc file from C:\\EngineeringDrafts into the My Documents folder of every user. %CSIDL\_PERSONAL% is the virtual folder representing the My Documents desktop item, which is equivalent to CSIDL\_MYDOCUMENTS.
 
-```xml
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="User">
 <displayName>Sample.doc into My Documents</displayName>

@@ -8,7 +8,7 @@ keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise 2019
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: low
 ms.topic: article
 ---

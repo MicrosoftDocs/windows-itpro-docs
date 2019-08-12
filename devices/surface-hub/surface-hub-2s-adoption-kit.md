@@ -10,7 +10,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 07/18/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
 # Surface Hub 2S adoption toolkit

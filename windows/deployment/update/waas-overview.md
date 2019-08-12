@@ -5,9 +5,11 @@ keywords: updates, servicing, current, deployment, semi-annual channel, feature,
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
 ms.date: 09/24/2018
 ms.reviewer: 
 manager: laurawi
@@ -79,13 +81,13 @@ As part of the alignment with Windows 10 and Office 365 ProPlus, we are adopting
 >[!IMPORTANT]
 >With each Semi-Annual Channel release, we recommend beginning deployment right away to devices selected for early adoption (targeted validation) and ramp up to full deployment at your discretion, regardless of the "Targeted" designation. This will enable you to gain access to new features, experiences, and integrated security as soon as possible. For more information, see the blog post [Windows 10 and the "disappearing" SAC-T](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-and-the-disappearing-SAC-T/ba-p/199747).
 
->[!NOTE]
+> [!NOTE]
 >For additional information, see the section about [Servicing Channels](#servicing-channels). 
 >
 >You can also read the blog post [Waas simplified and aligned](https://blogs.technet.microsoft.com/windowsitpro/2017/07/27/waas-simplified-and-aligned/), with details on this change. 
 
->[!IMPORTANT]
->Devices on the Semi-Annual Channel (formerly called Current Branch for Business) must have their diagnostic data set to **1 (Basic)** or higher, in order to ensure that the service is performing at the expected quality. If diagnostic data is set to **0**, the device will be treated as if it were in the Semi-Annual Channel (Targeted)(formerly called Current Branch or CB) branch. For instructions to set the diagnostic data level, see [Configure the operating system diagnostic data level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).
+> [!IMPORTANT]
+> Devices on the Semi-Annual Channel (formerly called Current Branch for Business) must have their diagnostic data set to **1 (Basic)** or higher, in order to ensure that the service is performing at the expected quality. If diagnostic data is set to **0**, the device will be treated as if it were in the Semi-Annual Channel (Targeted)(formerly called Current Branch or CB) branch. For instructions to set the diagnostic data level, see [Configure the operating system diagnostic data level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).
 
 ### Feature updates
 
@@ -140,12 +142,12 @@ Specialized systems—such as PCs that control medical equipment, point-of-sale 
 > [!NOTE]
 > Windows 10 Enterprise LTSB is a separate Long Term Servicing Channel version.
 >
->Long-term Servicing channel is not intended for deployment on most or all the PCs in an organization; it should be used only for special-purpose devices.  As a general guideline, a PC with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the Semi-Annual servicing channel.
+> Long-term Servicing channel is not intended for deployment on most or all the PCs in an organization; it should be used only for special-purpose devices.  As a general guideline, a PC with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the Semi-Annual servicing channel.
 
 Microsoft never publishes feature updates through Windows Update on devices that run Windows 10 Enterprise LTSB. Instead, it typically offers new LTSC releases every 2–3 years, and organizations can choose to install them as in-place upgrades or even skip releases over a 10-year life cycle.
 
 > [!NOTE]
-> Windows 10 LTSB will support the currently released processors and chipsets at the time of release of the LTSB. As future CPU generations are released, support will be created through future Windows 10 LTSB releases that customers can deploy for those systems. For more information about Windows support for the latest processor and chipsets, see  [Windows Processor Requirements](https://docs.microsoft.com/windows-hardware/design/minimum/windows-processor-requirements).
+> Windows 10 LTSB will support the currently released processors and chipsets at the time of release of the LTSB. As future CPU generations are released, support will be created through future Windows 10 LTSB releases that customers can deploy for those systems. For more information, see **Supporting the latest processor and chipsets on Windows** in [Lifecycle support policy FAQ - Windows Products](https://support.microsoft.com/help/18581/lifecycle-support-policy-faq-windows-products).
 
 The Long-term Servicing Channel is available only in the Windows 10 Enterprise LTSB edition. This edition of Windows doesn’t include a number of applications, such as Microsoft Edge, Microsoft Store, Cortana (though limited search capabilities remain available), Microsoft Mail, Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, and Clock. These apps are not supported in Windows 10 Enterprise LTSB edition, even if you install by using sideloading.
 
@@ -161,7 +163,7 @@ Microsoft recommends that all organizations have at least a few PCs enrolled in 
 > [!NOTE]
 > Microsoft recommends that all organizations have at least a few PCs enrolled in the Windows Insider Program, to include the Windows Insider Program in their deployment plans and to provide feedback on any issues they encounter to Microsoft via our Feedback Hub app. 
 >
->The Windows Insider Program isn’t intended to replace Semi-Annual Channel deployments in an organization. Rather, it provides IT pros and other interested parties with pre-release Windows builds that they can test and ultimately provide feedback on to Microsoft. 
+> The Windows Insider Program isn’t intended to replace Semi-Annual Channel deployments in an organization. Rather, it provides IT pros and other interested parties with pre-release Windows builds that they can test and ultimately provide feedback on to Microsoft. 
 
 
 
