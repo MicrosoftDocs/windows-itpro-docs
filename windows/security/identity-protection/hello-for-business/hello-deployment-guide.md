@@ -42,7 +42,6 @@ Do not begin your deployment until the hosting servers and infrastructure (not r
 
 ## Deployment and trust models
 
-
 Windows Hello for Business has two deployment models: Hybrid and On-premises. Each deployment model has two trust models: *Key trust* or *certificate trust*.
 
 Hybrid deployments are for enterprises that use Azure Active Directory. On-premises deployments are for enterprises who exclusively use on-premises Active Directory. Remember that the environments that use Azure Active Directory must use the hybrid deployment model for all domains in that forest.
