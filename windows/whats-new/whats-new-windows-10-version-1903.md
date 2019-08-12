@@ -5,7 +5,8 @@ keywords: ["What's new in Windows 10", "Windows 10", "May 2019 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 manager: laurawi
 ms.localizationpriority: high
 ms.topic: article
@@ -41,9 +42,9 @@ With Windows 10, version 1903, you can step-up from Windows 10 Pro Education to 
 
 ### SetupDiag
 
-[SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) version 1.4.1 is available.
+[SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) version 1.5.0.0 is available.
 
-SetupDiag is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
+SetupDiag is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 60 [rules](https://docs.microsoft.com/en-us/windows/deployment/upgrade/setupdiag#rules) contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
 
 ### Reserved storage
 
