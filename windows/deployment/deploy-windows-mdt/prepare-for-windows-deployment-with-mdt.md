@@ -40,7 +40,7 @@ Visit the [Download and install the Windows ADK](https://go.microsoft.com/fwlink
 - [The Windows PE add-on for the ADK](https://go.microsoft.com/fwlink/?linkid=2087112)
 
 >[!TIP]
->You might need to temporarily disable IE Enhanced Security Configuration for administrators in order to download files from the Internet to the server.
+>You might need to temporarily disable IE Enhanced Security Configuration for administrators in order to download files from the Internet to the server. This setting can be disabled by using Server Manager (Local Server/Properties).
 
 1. On MDT01, sign in as an administrator in the CONTOSO domain. 
     - For the purposes of this guide, we are using a Domain Admin account of **admin** with a password of <b>pass@word3</b>. You can use your own administrator username and password as long as you properly adjust all steps in this guide that use login these credentials.

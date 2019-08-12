@@ -32,9 +32,9 @@ To configure your environment for BitLocker, you will need to do the following:
 >[!NOTE]
 >Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For additional information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](https://go.microsoft.com/fwlink/p/?LinkId=619548). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
  
-For the purposes of this topic, we will use DC01, a domain controller that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md#proof).
+For the purposes of this topic, we will use DC01, a domain controller that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
-## <a href="" id="sec01"></a>Configure Active Directory for BitLocker
+## Configure Active Directory for BitLocker
 
 To enable BitLocker to store the recovery key and TPM information in Active Directory, you need to create a Group Policy for it in Active Directory. For this section, we are running Windows Server 2012 R2, so you do not need to extend the Schema. You do, however, need to set the appropriate permissions in Active Directory.
 
@@ -45,7 +45,7 @@ In Windows Server 2012 R2 (as well as in Windows Server 2008 R2 and Windows Serv
 
 ![figure 2](../images/mdt-09-fig02.png)
 
-Figure 2. The BitLocker Recovery information on a computer object in the contoso.com domain.
+The BitLocker Recovery information on a computer object in the contoso.com domain.
 
 ### Add the BitLocker Drive Encryption Administration Utilities
 
@@ -64,7 +64,7 @@ The BitLocker Drive Encryption Administration Utilities are added as features vi
 
 ![figure 3](../images/mdt-09-fig03.png)
 
-Figure 3. Selecting the BitLocker Drive Encryption Administration Utilities.
+Selecting the BitLocker Drive Encryption Administration Utilities.
 
 ### Create the BitLocker Group Policy
 
@@ -97,7 +97,7 @@ In addition to the Group Policy created previously, you need to configure permis
 
 ![figure 4](../images/mdt-09-fig04.png)
 
-Figure 4. Running the Add-TPMSelfWriteACE.vbs script on DC01.
+Running the Add-TPMSelfWriteACE.vbs script on DC01.
 
 ## <a href="" id="sec02"></a>Add BIOS configuration tools from Dell, HP, and Lenovo
 
@@ -135,7 +135,7 @@ The Lenovo tools are a set of VBScripts available as part of the Lenovo BIOS Set
 ``` syntax
 cscript.exe SetConfig.vbs SecurityChip Active
 ```
-## <a href="" id="sec03"></a>Configure the Windows 10 task sequence to enable BitLocker
+## Configure the Windows 10 task sequence to enable BitLocker
 
 When configuring a task sequence to run any BitLocker tool, either directly or using a custom script, it is helpful if you also add some logic to detect whether the BIOS is already configured on the machine. In the following task sequence, we are using a sample script (ZTICheckforTPM.wsf) from the Deployment Guys web page to check the status on the TPM chip. You can download this script from the Deployment Guys Blog post, [Check to see if the TPM is enabled](https://go.microsoft.com/fwlink/p/?LinkId=619549). 
 
@@ -151,16 +151,10 @@ In the following task sequence, we added five actions:
 
 ## Related topics
 
-[Configure MDT deployment share rules](configure-mdt-deployment-share-rules.md)
-
-[Configure MDT for UserExit scripts](configure-mdt-for-userexit-scripts.md)
-
-[Simulate a Windows 10 deployment in a test environment](simulate-a-windows-10-deployment-in-a-test-environment.md)
-
-[Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-10-deployment-information.md)
-
-[Assign applications using roles in MDT](assign-applications-using-roles-in-mdt.md)
-
-[Use web services in MDT](use-web-services-in-mdt.md)
-
+[Configure MDT deployment share rules](configure-mdt-deployment-share-rules.md)<br>
+[Configure MDT for UserExit scripts](configure-mdt-for-userexit-scripts.md)<br>
+[Simulate a Windows 10 deployment in a test environment](simulate-a-windows-10-deployment-in-a-test-environment.md)<br>
+[Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-10-deployment-information.md)<br>
+[Assign applications using roles in MDT](assign-applications-using-roles-in-mdt.md)<br>
+[Use web services in MDT](use-web-services-in-mdt.md)<br>
 [Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt.md)
