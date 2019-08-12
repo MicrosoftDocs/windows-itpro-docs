@@ -5,18 +5,9 @@ keywords: updates, servicing, current, deployment, semi-annual channel, feature,
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-<<<<<<< HEAD
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-=======
-audience: itpro
-author: greg-lindsay
-ms.localizationpriority: medium
-ms.audience: itpro
-author: greg-lindsay
-ms.date: 09/24/2018
->>>>>>> 1682d137057c63a81145c556ac06a5eea8c576b6
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
@@ -88,13 +79,8 @@ There are currently two release channels for Windows 10:
 >
 >You can also read the blog post [Waas simplified and aligned](https://blogs.technet.microsoft.com/windowsitpro/2017/07/27/waas-simplified-and-aligned/), with details on this change. 
 
-<<<<<<< HEAD
 >[!IMPORTANT]
 >Devices on the Semi-Annual Channel must have their diagnostic data set to **1 (Basic)** or higher, in order to ensure that the service is performing at the expected quality. For instructions to set the diagnostic data level, see [Configure the operating system diagnostic data level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).
-=======
-> [!IMPORTANT]
-> Devices on the Semi-Annual Channel (formerly called Current Branch for Business) must have their diagnostic data set to **1 (Basic)** or higher, in order to ensure that the service is performing at the expected quality. If diagnostic data is set to **0**, the device will be treated as if it were in the Semi-Annual Channel (Targeted)(formerly called Current Branch or CB) branch. For instructions to set the diagnostic data level, see [Configure the operating system diagnostic data level](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#diagnostic-data-levels).
->>>>>>> 1682d137057c63a81145c556ac06a5eea8c576b6
 
 ### Feature updates
 
@@ -147,11 +133,7 @@ Specialized systems—such as devices that control medical equipment, point-of-s
 > [!NOTE]
 > Windows 10 Enterprise LTSB is a separate Long Term Servicing Channel version.
 >
-<<<<<<< HEAD
->Long-term Servicing channel is not intended for deployment on most or all the devicess in an organization; it should be used only for special-purpose devices.  As a general guideline, a devices with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the Semi-Annual servicing channel.
-=======
-> Long-term Servicing channel is not intended for deployment on most or all the PCs in an organization; it should be used only for special-purpose devices.  As a general guideline, a PC with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the Semi-Annual servicing channel.
->>>>>>> 1682d137057c63a81145c556ac06a5eea8c576b6
+>Long-term Servicing channel is not intended for deployment on most or all the devicess in an organization; it should be used only for special-purpose devices. As a general guideline, a device with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the Semi-Annual servicing channel.
 
 Microsoft never publishes feature updates through Windows Update on devices that run Windows 10 Enterprise LTSB. Instead, it typically offers new LTSC releases every 2–3 years, and organizations can choose to install them as in-place upgrades or even skip releases over a 10-year life cycle.
 
@@ -169,13 +151,8 @@ For many IT pros, gaining visibility into feature updates early—before they’
 
 Microsoft recommends that all organizations have at least a few devices enrolled in the Windows Insider Program and provide feedback on any issues they encounter. For information about the Windows Insider Program for Business, go to [Windows Insider Program for Business](waas-windows-insider-for-business.md).
 
-<<<<<<< HEAD
 >[!NOTE]
 >Microsoft recommends that all organizations have at least a few devices enrolled in the Windows Insider Program, to include the Windows Insider Program in their deployment plans and to provide feedback on any issues they encounter to Microsoft via our Feedback Hub app. 
-=======
-> [!NOTE]
-> Microsoft recommends that all organizations have at least a few PCs enrolled in the Windows Insider Program, to include the Windows Insider Program in their deployment plans and to provide feedback on any issues they encounter to Microsoft via our Feedback Hub app. 
->>>>>>> 1682d137057c63a81145c556ac06a5eea8c576b6
 >
 > The Windows Insider Program isn’t intended to replace Semi-Annual Channel deployments in an organization. Rather, it provides IT pros and other interested parties with pre-release Windows builds that they can test and ultimately provide feedback on to Microsoft. 
 
