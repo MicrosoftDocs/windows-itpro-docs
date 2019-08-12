@@ -5,7 +5,7 @@ keywords: education, Microsoft 365 Education, trial, full cloud IT solution, sch
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.topic: get-started
+ms.topic: quickstart
 ms.localizationpriority: medium
 ms.pagetype: edu
 ROBOTS: noindex,nofollow
