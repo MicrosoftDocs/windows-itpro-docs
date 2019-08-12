@@ -636,7 +636,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 8. Click **Members**.  Use the  **Select members** pane to add members to this group. When finished click **Select**.
 9. Click **Create**.
 
-### Create a SCEP Certificte Profile
+### Create a SCEP Certificate Profile
 Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure Portal](https://portal.azure.com/).
