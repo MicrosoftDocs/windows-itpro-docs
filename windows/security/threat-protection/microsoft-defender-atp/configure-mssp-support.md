@@ -95,9 +95,9 @@ Grant the guest user access and permissions to your Windows Defender Security Ce
 
 Granting access to guest user is done the same way as granting access to a user who is a member of your tenant. 
 
-If you're using basic permissions to access the portal, the guest user must be assigned a Security Administrator role in **your** tenant. For more information, see [Use basic permissions to access the portal](basic-permissions-windows-defender-advanced-threat-protection.md).
+If you're using basic permissions to access the portal, the guest user must be assigned a Security Administrator role in **your** tenant. For more information, see [Use basic permissions to access the portal](basic-permissions.md).
 
-If you're using role-based access control (RBAC), the guest user must be to added to the appropriate group or groups in **your** tenant. Fore more information on RBAC in Windows Defender ATP, see [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md).
+If you're using role-based access control (RBAC), the guest user must be to added to the appropriate group or groups in **your** tenant. Fore more information on RBAC in Windows Defender ATP, see [Manage portal access using RBAC](rbac.md).
  
 
 >[!NOTE]
@@ -139,7 +139,7 @@ Use the following steps to obtain the MSSP customer tenant ID and then use the I
 After access the portal is granted, alert notification rules can to be created so that emails are sent to MSSPs when alerts associated with the tenant are created and set conditions are met.
 
  
-For more information, see [Create rules for alert notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md#create-rules-for-alert-notifications).
+For more information, see [Create rules for alert notifications](configure-email-notifications.md#create-rules-for-alert-notifications).
  
 
 These check boxes must be checked:
@@ -296,7 +296,7 @@ You'll need to have **Manage portal system settings** permission to whitelist th
 5. Click **Authorize application**. 
 
  
-You can now download the relevant configuration file for your SIEM and connect to the Windows Defender ATP API. For more information see, [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md).
+You can now download the relevant configuration file for your SIEM and connect to the Windows Defender ATP API. For more information see, [Pull alerts to your SIEM tools](configure-siem.md).
  
 
 - In the ArcSight configuration file / Splunk Authentication Properties file  you will have to write your application key manually by settings the secret value.
@@ -304,12 +304,12 @@ You can now download the relevant configuration file for your SIEM and connect t
 
 ## Fetch alerts from MSSP customer's tenant using APIs
  
-For information on how to fetch alerts using REST API, see [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md).
+For information on how to fetch alerts using REST API, see [Pull alerts using REST API](pull-alerts-using-rest-api.md).
 
 ## Related topics
-- [Use basic permissions to access the portal](basic-permissions-windows-defender-advanced-threat-protection.md)
-- [Manage portal access using RBAC](rbac-windows-defender-advanced-threat-protection.md) 
-- [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md)
-- [Pull alerts using REST API](pull-alerts-using-rest-api-windows-defender-advanced-threat-protection.md)
+- [Use basic permissions to access the portal](basic-permissions.md)
+- [Manage portal access using RBAC](rbac.md) 
+- [Pull alerts to your SIEM tools](configure-siem.md)
+- [Pull alerts using REST API](pull-alerts-using-rest-api.md)
  
 

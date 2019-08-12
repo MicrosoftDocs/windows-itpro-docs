@@ -38,8 +38,9 @@
 
 ### Related Policies
 
-[Show message opening sites in IE](../available-policies.md#show-message-when-opening-sites-in-internet-explorer): [!INCLUDE
-[show-message-when-opening-sites-in-ie-shortdesc](../shortdesc/show-message-when-opening-sites-in-ie-shortdesc.md)]
+[Show message opening sites in IE](../available-policies.md#show-message-when-opening-sites-in-internet-explorer)
+
+[!INCLUDE [show-message-when-opening-sites-in-ie-shortdesc](../shortdesc/show-message-when-opening-sites-in-ie-shortdesc.md)]
 
 ### Related topics
 

@@ -6,7 +6,7 @@ ms.assetid: 1cb18bef-fbae-4e96-a4f1-90cf111c3b5f
 ms.pagetype: mdop
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

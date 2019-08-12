@@ -6,7 +6,7 @@ ms.assetid: 9da557bc-f433-47d3-8af7-68ec4ff9bd3f
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

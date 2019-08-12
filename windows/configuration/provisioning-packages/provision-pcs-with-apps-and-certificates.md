@@ -2,7 +2,7 @@
 title: Provision PCs with apps and certificates (Windows 10)
 description: Create a provisioning package to apply settings to a PC running Windows 10. 
 keywords: ["runtime provisioning", "provisioning package"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: dansimp
