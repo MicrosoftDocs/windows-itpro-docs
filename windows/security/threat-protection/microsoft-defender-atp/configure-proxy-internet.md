@@ -36,17 +36,17 @@ The embedded Microsoft Defender ATP sensor runs in system context using the Loca
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) Internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
- - Auto-discovery methods:
-    - Transparent proxy
-    - Web Proxy Auto-discovery Protocol (WPAD)
+- Auto-discovery methods:
+  - Transparent proxy
+  - Web Proxy Auto-discovery Protocol (WPAD)
 
 > [!NOTE]
 > If you're using Transparent proxy or WPAD in your network topology, you don't need special configuration settings. For more information on Microsoft Defender ATP URL exclusions in the proxy, see [Enable access to Microsoft Defender ATP service URLs in the proxy server](#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 
- - Manual static proxy configuration:
-    - Registry based configuration
-    - WinHTTP configured using netsh command – Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
+- Manual static proxy configuration:
+  - Registry based configuration
+  - WinHTTP configured using netsh command – Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
 
 
 

@@ -49,9 +49,9 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 
 <p style="margin-left: 20px">Valid values are:
 
-   - 0 (default) - Both TCP and UDP 
-   - 1 - TCP
-   - 2 - UDP
+- 0 (default) - Both TCP and UDP 
+- 1 - TCP
+- 2 - UDP
 
 <p style="margin-left: 20px">The data type is int. 
 
