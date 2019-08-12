@@ -34,9 +34,9 @@ With Windows Hello for Business and passwords coexisting in your environment, th
 
 ### 3. Transition into a passwordless deployment
 Once the user-visible password surface has been eliminated, your organization can begin to transition those users into a passwordless world. A world where:
-  - the users never type their password
-  - the users never change their password
-  - the users do not know their password
+- the users never type their password
+- the users never change their password
+- the users do not know their password
 
 In this world, the user signs in to Windows 10 using Windows Hello for Business and enjoys single sign-on to Azure and Active Directory resources. If the user is forced to authenticate, their authentication uses Windows Hello for Business.
 

@@ -128,9 +128,9 @@ Computers running the App-V client connect to the App-V publishing server to sen
 
 > [!IMPORTANT]
 > The following list displays the main factors to consider when setting up the App-V publishing server:
->   * The number of clients connecting simultaneously to a single publishing server.
->   * The number of packages in each refresh.
->   * The available network bandwidth in your environment between the client and the App-V publishing server.
+> * The number of clients connecting simultaneously to a single publishing server.
+> * The number of packages in each refresh.
+> * The available network bandwidth in your environment between the client and the App-V publishing server.
 
 |Scenario|Summary|
 |---|---|
@@ -153,9 +153,9 @@ Computers running the App-V client stream the virtual application package from t
 
 > [!IMPORTANT]
 > The following list identifies the main factors to consider when setting up the App-V streaming server:
->   * The number of clients streaming application packages simultaneously from a single streaming server.
->   * The size of the package being streamed.
->   * The available network bandwidth in your environment between the client and the streaming server.
+> * The number of clients streaming application packages simultaneously from a single streaming server.
+> * The size of the package being streamed.
+> * The available network bandwidth in your environment between the client and the streaming server.
 
 |Scenario|Summary|
 |---|---|

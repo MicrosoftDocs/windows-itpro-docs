@@ -53,8 +53,8 @@ Do you expect a machine to be in ‘Active’ status? [Open a support ticket](ht
 
 ## Misconfigured machines
 Misconfigured machines can further be classified to:
-  - Impaired communications
-  - No sensor data
+- Impaired communications
+- No sensor data
 
 ### Impaired communications
 This status indicates that there's limited communication between the machine and the service.

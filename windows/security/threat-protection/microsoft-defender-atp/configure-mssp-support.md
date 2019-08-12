@@ -143,8 +143,8 @@ For more information, see [Create rules for alert notifications](configure-email
  
 
 These check boxes must be checked:
-   - **Include organization name** - The customer name will be added to email notifications
-   - **Include tenant-specific portal link** - Alert link URL will have tenant specific parameter (tid=target_tenant_id) that allows direct access to target tenant portal
+- **Include organization name** - The customer name will be added to email notifications
+- **Include tenant-specific portal link** - Alert link URL will have tenant specific parameter (tid=target_tenant_id) that allows direct access to target tenant portal
 
 
 ## Fetch alerts from MSSP customer's tenant into the SIEM system
