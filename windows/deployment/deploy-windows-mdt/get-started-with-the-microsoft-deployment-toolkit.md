@@ -31,19 +31,19 @@ In addition to familiarizing you with the features and options available in MDT,
 
 ## Key features in MDT
 
-The Microsoft Deployment Toolkit (MDT) has been in existence since 2003, when it was first introduced as Business Desktop Deployment (BDD) 1.0. The toolkit has evolved, both in functionality and popularity, and today it is considered fundamental to Windows operating system and enterprise application deployment.
+MDT has been in existence since 2003, when it was first introduced as Business Desktop Deployment (BDD) 1.0. The toolkit has evolved, both in functionality and popularity, and today it is considered fundamental to Windows operating system and enterprise application deployment.
 
-MDT has many useful features, the most important of which are:
-- **Windows Client support.** Supports Windows 7, Windows 8, Windows 8.1, and Windows 10.
+MDT has many useful features, such as:
+- **Windows Client support.** Supports Windows 7, Windows 8.1, and Windows 10.
 - **Windows Server support.** Supports Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019.
-- **Additional operating systems support.** Supports Windows Thin PC and Windows Embedded POSReady 7, as well as Windows 8.1 Embedded Industry.
+- **Additional operating systems support.** Supports Windows Thin PC and [Windows Embedded POSReady 7](https://www.microsoft.com/en-us/download/details.aspx?id=26558), as well as Windows 8.1 Embedded Industry.
 - **UEFI support.** Supports deployment to machines using Unified Extensible Firmware Interface (UEFI) version 2.3.1.
-- **GPT support.** Supports deployment to machines that require the new GUID (globally unique identifier) partition table (GPT) format. This is related to UEFI.
+- **GPT support.** Supports deployment to machines that require the new GPT partition table format. This is related to UEFI.
 - **Enhanced Windows PowerShell support.** Provides support for running PowerShell scripts.
 
     ![figure 2](../images/mdt-05-fig02.png)
 
-    Figure 2. The deployment share mounted as a standard PSDrive allows for administration using PowerShell.
+    The deployment share mounted as a standard PSDrive allows for administration using PowerShell.
 
 - **Add local administrator accounts.** Allows you to add multiple user accounts to the local Administrators group on the target computers, either via settings or the deployment wizard.
 - **Automated participation in CEIP and WER.** Provides configuration for participation in Windows Customer Experience Improvement Program (CEIP) and Windows Error Reporting (WER).
@@ -58,7 +58,7 @@ MDT has many useful features, the most important of which are:
 
     ![figure 3](../images/mdt-05-fig03.png)
 
-    Figure 3. The offline USMT backup in action.
+    The offline USMT backup in action.
 
 - **Install or uninstall Windows roles or features.** Enables you to select roles and features as part of the deployment wizard. MDT also supports uninstall of roles and features.
 - **Microsoft System Center 2012 Orchestrator integration.** Provides the capability to use Orchestrator runbooks as part of the task sequence.
@@ -75,7 +75,7 @@ When deploying the Windows operating system using MDT, most of the administratio
 
 ![figure 4](../images/mdt-05-fig04.png)
 
-Figure 4. If you click **View Script** on the right side, you will get the PowerShell code that was used to perform the task.
+If you click **View Script** on the right side, you will get the PowerShell code that was used to perform the task.
 
 ## Deployment shares
 
@@ -92,7 +92,7 @@ You can manage hundreds of settings in the rules. For more information, see the 
 
 ![figure 5](../images/mdt-05-fig05.png)
 
-Figure 5. Example of a MDT rule. In this example, the new computer name is being calculated based on PC- plus the first seven (Left) characters from the serial number
+Example of a MDT rule. In this example, the new computer name is being calculated based on PC- plus the first seven (Left) characters from the serial number
 
 ## Boot images
 
@@ -131,8 +131,7 @@ You can think of a task sequence as a list of actions that need to be executed i
 MDT comes with nine default task sequence templates. You can also create your own templates. As long as you store them in the Templates folder, they will be available when you create a new task sequence.
 - **Sysprep and Capture task sequence.** Used to run the System Preparation (Sysprep) tool and capture an image of a reference computer.
 
-    **Note**  
-    It is preferable to use a complete build and capture instead of the Sysprep and Capture task sequence. A complete build and capture can be automated, whereas Sysprep and Capture cannot.
+    **Note**: It is preferable to use a complete build and capture instead of the Sysprep and Capture task sequence. A complete build and capture can be automated, whereas Sysprep and Capture cannot.
      
 - **Standard Client task sequence.** The most frequently used task sequence. Used for creating reference images and for deploying clients in production.
 - **Standard Client Replace task sequence.** Used to run User State Migration Tool (USMT) backup and the optional full Windows Imaging (WIM) backup action. Can also be used to do a secure wipe of a machine that is going to be decommissioned.
