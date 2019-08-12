@@ -64,7 +64,7 @@ The Deployment Workbench with the MDT Build Lab deployment share.
 
 ### Configure permissions for the deployment share
 
-In order to write the reference image back to the deployment share, you need to assign Modify permissions to the MDT Build Account (MDT\_BA) for the **Captures** subfolder in the **E:\\MDTBuildLab** folder
+In order to write the reference image back to the deployment share, you need to assign Modify permissions to the MDT Build Account (MDT\_BA) for the **Captures** subfolder in the **D:\\MDTBuildLab** folder
 1.  On MDT01, sign in as **CONTOSO\\admin**.
 2.  Modify the NTFS permissions for the **D:\\MDTBuildLab\\Captures** folder by running the following command in an elevated Windows PowerShell prompt:
 
@@ -103,6 +103,13 @@ MDT supports adding both full source Windows 10 DVDs (ISOs) and custom images t
 
 Before you create an MDT task sequence, you need to add any applications and scripts you wish to install to the MDT Build Lab share.
 
+First, create an MDT folder to store the Microsoft applications that will be installed:
+
+1. In the MDT Deployment Workbench, expand **Deployment Shares \\ MDT Build Lab \\ Applications**
+2. Right-click **Applications** and then click **New Folder**.
+3. Under **Folder name**, type **Microsoft**.
+4. Click **Next** twice, and then click **Finish**.
+
 The steps in this section use a strict naming standard for your MDT applications. 
 - Use the "<b>Install - </b>" prefix for typical application installations that run a setup installer of some kind, 
 - Use the "<b>Configure - </b>" prefix when an application configures a setting in the operating system. 
@@ -114,24 +121,26 @@ By storing configuration items as MDT applications, it is easy to move these obj
 
 In example sections, you will add the following applications:
 
-- Install - Microsoft Office 365 Pro Plus - x86
+- Install - Microsoft Office 365 Pro Plus - x64
 - Install - Microsoft Visual C++ Redistributable 2019 - x86
 - Install - Microsoft Visual C++ Redistributable 2019 - x64
+
+>The 64-bit version of Microsoft Office 365 Pro Plus is recommended unless you need legacy app support. For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.office.com/article/choose-between-the-64-bit-or-32-bit-version-of-office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261)
 
 Download links:
 - [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117)
 - [Microsoft Visual C++ Redistributable 2019 - x86](https://aka.ms/vs/16/release/VC_redist.x86.exe)
 - [Microsoft Visual C++ Redistributable 2019 - x64](https://aka.ms/vs/16/release/VC_redist.x64.exe)
 
-Download the software in this list to the D:\\Downloads folder on MDT01.
+Download the software in this list to the D:\\Downloads folder on MDT01. **Note**: For the purposes of this lab, we will leave the MSVC files in the D:\\Downloads folder and the Office365 files will be extracted to a child folder. If you prefer, you can place each application in its own separate child folder and then modify the $ApplicationSourcePath below as needed (instead of just D:\\Downloads).
 
 >[!NOTE]
 >All the Microsoft Visual C++ downloads can be found on [The latest supported Visual C++ downloads](https://go.microsoft.com/fwlink/p/?LinkId=619523). Visual C++ 2015, 2017 and 2019 all share the same redistributable files.
  
-### Create the install: Microsoft Office 365 Professional Plus x86
+### Create the install: Microsoft Office 365 Professional Plus x64
 
-1. After downloading the most current version of the Office Deployment tool from the Microsoft Download Center using the link provided above, run the self-extracting executable file and extract the files to D:\\Downloads\\Office365.  The Office Deployment Tool (setup.exe) and several sample configuration.xml files will be extracted.
-2. Using a text editor such as Notepad, create an XML file with the installation settings for Office 365 ProPlus that are appropriate for your organization. The file uses an XML format, so the file you create must have an extension of .xml but the file can have any filename.
+1. After downloading the most current version of the Office Deployment tool from the Microsoft Download Center using the link provided above, run the self-extracting executable file and extract the files to **D:\\Downloads\\Office365**.  The Office Deployment Tool (setup.exe) and several sample configuration.xml files will be extracted.
+2. Using a text editor (such as Notepad), create an XML file with the installation settings for Office 365 ProPlus that are appropriate for your organization. The file uses an XML format, so the file you create must have an extension of .xml but the file can have any filename.
 
  - For example, you can use the following configuration.xml file, which provides these configuration settings:
    - Install the 64-bit version of Office 365 ProPlus in English directly from the Office Content Delivery Network (CDN) on the internet. Note: 64-bit is now the default and recommended edition. 
@@ -157,7 +166,11 @@ Download the software in this list to the D:\\Downloads folder on MDT01.
  
  Also see [Configuration options for the Office Deployment Tool](https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool) and [Overview of the Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) for more information. 
 
-3. Copy the configuration.xml file to the D:\Downloads\Office365 folder. Assuming you have named the file "configuration.xml" we will use the command "setup.exe /configure configuration.xml" when we create the application in MDT. This will perform the installation of Office 365 ProPlus using the configuration settings in the configuration.xml file.
+3. Copy the configuration.xml file to the D:\\Downloads\\Office365 folder. See the following example of the extracted files plus the configuration.xml file in the Downloads\\Office365 folder:
+
+    ![folder](../images/office-folder.png)
+
+  Assuming you have named the file "configuration.xml" as shown above, we will use the command "**setup.exe /configure configuration.xml**" when we create the application in MDT. This will perform the installation of Office 365 ProPlus using the configuration settings in the configuration.xml file.
 
  >[!IMPORTANT]
  >After Office 365 ProPlus is installed on the reference image, do NOT open any Office programs. if you open an Office program, you are prompted to sign-in, which activates the installation of Office 365 ProPlus. Even if you don't sign in and you close the Sign in to set up Office dialog box, a temporary product key is installed. You don't want any kind of product key for Office 365 ProPlus installed as part of your reference image.
@@ -165,10 +178,8 @@ Download the software in this list to the D:\\Downloads folder on MDT01.
 Additional information
 - Office 365 ProPlus is usually updated on a monthly basis with security updates and other quality updates (bug fixes), and possibly new features (depending on which update channel you’re using). That means that once you’ve deployed your reference image, Office 365 ProPlus will most likely need to download and install the latest updates that have been released since you created your reference image.
 
-- Instead of installing Office 365 ProPlus as part of the reference image, we recommend configuring Office 365 ProPlus to be installed immediately after the reference image is deployed to the user’s device. You would still use the Office Deployment Tool and a configuration.xml file to perform the installation. This way the user will have the most up-to-date version of Office 365 ProPlus right away and won’t have to download any new updates (which is most likely what would happen if Office 365 ProPlus was installed as part of the reference image.)
-
-- When you are creating your reference image, instead of installing Office 365 ProPlus directly from the Office CDN on the internet, you can install Office 365 ProPlus from a location on your local network, such as a file share. To do that, you would use the Office Deployment Tool in /download mode to download the installation files to that file share. Then you could use the Office Deployment Tool in /configure mode to install Office 365 ProPlus from that location on to your reference image. As part of that, you’ll need to point to that location in your configuration.xml file so that the Office Deployment Tool knows where to install Office 365 ProPlus from. If you decide to do that, the next time you create a new reference image, you’ll want to be sure to use the Office Deployment Tool to download the most up-to-date installation files for Office 365 ProPlus to that location on your internal network. That way your new reference image will have a more up-to-date installation of Office 365 ProPlus.
-
+- **Note**: Instead of installing Office 365 ProPlus as part of the reference image, we recommend configuring Office 365 ProPlus to be installed immediately after the reference image is deployed to the user’s device. You would still use the Office Deployment Tool and a configuration.xml file to perform the installation. This way the user will have the most up-to-date version of Office 365 ProPlus right away and won’t have to download any new updates (which is most likely what would happen if Office 365 ProPlus was installed as part of the reference image.)
+ - When you are creating your reference image, instead of installing Office 365 ProPlus directly from the Office CDN on the internet, you can install Office 365 ProPlus from a location on your local network, such as a file share. To do that, you would use the Office Deployment Tool in /download mode to download the installation files to that file share. Then you could use the Office Deployment Tool in /configure mode to install Office 365 ProPlus from that location on to your reference image. As part of that, you’ll need to point to that location in your configuration.xml file so that the Office Deployment Tool knows where to get the Office 365 ProPlus files. If you decide to do this, the next time you create a new reference image, you’ll want to be sure to use the Office Deployment Tool to download the most up-to-date installation files for Office 365 ProPlus to that location on your internal network. That way your new reference image will have a more up-to-date installation of Office 365 ProPlus.
 
 ### Connect to the deployment share using Windows PowerShell
 
@@ -179,124 +190,79 @@ If you need to add many applications, you can take advantage of the PowerShell s
 
     ``` powershell
     Import-Module "C:\Program Files\Microsoft Deployment Toolkit\bin\MicrosoftDeploymentToolkit.psd1"
-    New-PSDrive -Name "DS001" -PSProvider MDTProvider -Root "E:\MDTBuildLab"
+    New-PSDrive -Name "DS001" -PSProvider MDTProvider -Root "D:\MDTBuildLab"
     ```
 
-### Create the install: Microsoft Visual C++ 2005 SP1 x86
+### Create the install: Microsoft Visual C++ Redistributable 2019 - x86
 
-In these steps we assume that you have downloaded Microsoft Visual C++ 2005 SP1 x86. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2005SP1x86.
+>[!NOTE]
+>We have abbreviated "Microsoft Visual C++ Redistributable" in the $ApplicationName below as "MSVC" to avoid the path name exceeding 248 characters.
 
-1.  On MDT01, log on as **CONTOSO\\Administrator**.
-
-2.  Create the application by running the following commands in an elevated PowerShell prompt:
-
-    ``` powershell
-    $ApplicationName = "Install - Microsoft Visual C++ 2005 SP1 - x86"
-    $CommandLine = "vcredist_x86.exe /Q"
-    $ApplicationSourcePath = "E:\Downloads\VC++2005SP1x86"
-    Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
-    -Verbose
-    ```
-
-### Create the install: Microsoft Visual C++ 2005 SP1 x64
-
-In these steps we assume that you have downloaded Microsoft Visual C++ 2005 SP1 x64. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2005SP1x64.
+In these steps we assume that you have downloaded Microsoft Visual C++ Redistributable 2019 - x86. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to D:\\Downloads.
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
     ``` powershell
-    $ApplicationName = "Install - Microsoft Visual C++ 2005 SP1 - x64"
-    $CommandLine = "vcredist_x64.exe /Q"
-    $ApplicationSourcePath = "E:\Downloads\VC++2005SP1x64"
-    Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
-    -Verbose
+    $ApplicationName = "Install - MSVC 2019 - x86"
+    $CommandLine = "vc_redist.x86.exe /Q"
+    $ApplicationSourcePath = "D:\Downloads"
+    Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -CommandLine $CommandLine -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName -Verbose
     ```
 
-### Create the install: Microsoft Visual C++ 2008 SP1 x86
+    Upon successful installation the following text is displayed:
+    ```
+    VERBOSE: Performing the operation "import" on target "Application".
+    VERBOSE: Beginning application import
+    VERBOSE: Copying application source files from D:\Downloads to D:\MDTBuildLab\Applications\Install - MSVC 2019 - x86
+    VERBOSE: Creating new item named Install - MSVC 2019 - x86 at DS001:\Applications\Microsoft.
+    
+    Name
+    ----
+    Install - MSVC 2019 - x86
+    VERBOSE: Import processing finished.
+    ```
 
-In these steps we assume that you have downloaded Microsoft Visual C++ 2008 SP1 x86. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2008SP1x86.
+### Create the install: Microsoft Visual C++ Redistributable 2019 - x64
+
+In these steps we assume that you have downloaded Microsoft Visual C++ Redistributable 2019 - x64. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to D:\\Downloads.
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
     ``` powershell
-    $ApplicationName = "Install - Microsoft Visual C++ 2008 SP1 - x86"
-    $CommandLine = "vcredist_x86.exe /Q"
-    $ApplicationSourcePath = "E:\Downloads\VC++2008SP1x86"
-    Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
-    -Verbose
+    $ApplicationName = "Install - MSVC 2019 - x64"
+    $CommandLine = "vc_redist.x64.exe /Q"
+    $ApplicationSourcePath = "D:\Downloads"
+    Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -CommandLine $CommandLine -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName -Verbose
     ```
 
-### Create the install: Microsoft Visual C++ 2008 SP1 x64
+### Create the install: Microsoft Office 365 Pro Plus - x64
 
-In these steps we assume that you have downloaded Microsoft Visual C++ 2008 SP1 x64. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2008SP1x64.
+In these steps we assume that you have downloaded the Office Deployment Tool. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to D:\\Downloads\\Office365.
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
     ``` powershell
-    $ApplicationName = "Install - Microsoft Visual C++ 2008 SP1 - x64"
-    $CommandLine = "vcredist_x64.exe /Q"
-    $ApplicationSourcePath = "E:\Downloads\VC++2008SP1x64"
-    Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -Commandline $Commandline -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
-    -Verbose
+    $ApplicationName = "Install - Office365 ProPlus - x64"
+    $CommandLine = "setup.exe /configure configuration.xml"
+    $ApplicationSourcePath = "D:\Downloads\Office365"
+    Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -CommandLine $CommandLine -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName -Verbose
     ```
 
-### Create the install: Microsoft Visual C++ 2010 SP1 x86
-
-In these steps we assume that you have downloaded Microsoft Visual C++ 2010 SP1 x86. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2010SP1x86.
-1.  On MDT01, log on as **CONTOSO\\Administrator**.
-2.  Create the application by running the following commands in an elevated PowerShell prompt:
-
-    ``` powershell
-    $ApplicationName = "Install - Microsoft Visual C++ 2010 SP1 - x86"
-    $CommandLine = "vcredist_x86.exe /Q"
-    $ApplicationSourcePath = "E:\Downloads\VC++2010SP1x86"
-    Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -CommandLine $CommandLine -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
-    -Verbose
+    Upon successful installation the following text is displayed:
+    ```
+    VERBOSE: Performing the operation "import" on target "Application".
+    VERBOSE: Beginning application import
+    VERBOSE: Copying application source files from D:\Downloads\Office365 to D:\MDTBuildLab\Applications\Install -
+    Office365 ProPlus - x64
+    VERBOSE: Creating new item named Install - Office365 ProPlus - x64 at DS001:\Applications\Microsoft.
+    
+    Name
+    ----
+    Install - Office365 ProPlus - x64
+    VERBOSE: Import processing finished.
     ```
 
-### Create the install: Microsoft Visual C++ 2010 SP1 x64
-
-In these steps we assume that you have downloaded Microsoft Visual C++ 2010 SP1 x64. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2010SP1x64.
-1.  On MDT01, log on as **CONTOSO\\Administrator**.
-2.  Create the application by running the following commands in an elevated PowerShell prompt:
-
-    ``` powershell
-    $ApplicationName = "Install - Microsoft Visual C++ 2010 SP1 - x64"
-    $CommandLine = "vcredist_x64.exe /Q"
-    $ApplicationSourcePath = "E:\Downloads\VC++2010SP1x64"
-    Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -CommandLine $CommandLine -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
-    -Verbose
-    ```
-
-### Create the install: Microsoft Visual C++ 2012 Update 4 x86
-
-In these steps we assume that you have downloaded Microsoft Visual C++ 2012 Update 4 x86. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2012Ux86.
-1.  On MDT01, log on as **CONTOSO\\Administrator**.
-2.  Create the application by running the following commands in an elevated PowerShell prompt:
-
-    ``` powershell
-    $ApplicationName = "Install - Microsoft Visual C++ 2012 Update 4 - x86"
-    $CommandLine = "vcredist_x86.exe /Q"
-    $ApplicationSourcePath = "E:\Downloads\VC++2012Ux86"
-    Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -CommandLine $CommandLine -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
-    -Verbose
-    ```
-
-### Create the install: Microsoft Visual C++ 2012 Update 4 x64
-
-In these steps we assume that you have downloaded Microsoft Visual C++ 2012 Update 4 x64. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to E:\\Downloads\\VC++2012Ux64.
-1.  On MDT01, log on as **CONTOSO\\Administrator**.
-2.  Create the application by running the following commands in an elevated PowerShell prompt:
-
-    ``` powershell
-    $ApplicationName = "Install - Microsoft Visual C++ 2012 Update 4 - x64"
-    $CommandLine = "vcredist_x64.exe /Q"
-    $ApplicationSourcePath = "E:\Downloads\VC++2012Ux64"
-    Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -CommandLine $CommandLine -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName 
-    -Verbose
-    ```
-
-## <a href="" id="sec04"></a>Create the reference image task sequence
+## Create the reference image task sequence
 
 In order to build and capture your Windows 10 reference image for deployment using MDT, you will create a task sequence. The task sequence will reference the operating system and applications that you previously imported into the MDT Build Lab deployment share to build a Windows 10 reference image.
 After creating the task sequence, you configure it to enable patching against the Windows Server Update Services (WSUS) server. The Task Sequence Windows Update action supports getting updates directly from Microsoft Update, but you get more stable patching if you use a local WSUS server. WSUS also allows for an easy process of approving the patches that you are deploying.
@@ -507,7 +473,7 @@ The CustomSettings.ini file is normally stored on the server, in the Deployment 
  
 ### The Bootstrap.ini file
 
-The Bootstrap.ini file is available via the deployment share's Properties dialog box, or via the E:\\MDTBuildLab\\Control folder on MDT01.
+The Bootstrap.ini file is available via the deployment share's Properties dialog box, or via the D:\\MDTBuildLab\\Control folder on MDT01.
 
 ``` 
 [Settings]
