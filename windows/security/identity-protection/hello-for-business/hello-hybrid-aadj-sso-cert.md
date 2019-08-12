@@ -535,7 +535,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 1. Sign-in to the [Azure Portal](https://portal.azure.com/).
 2. Select **All Services**.  Type **Intune** to filter the list of services.  Click **Microsoft Intune**.
 ![Microsoft Intune Console](images/aadjcert/microsoftintuneconsole.png)
-3. Select **Device Configuration**, and then select **Certificate Authority**.
+3. Select **Device Configuration**, and then select **Certificate Connectors**.
 ![Intune Certificate Authority](images/aadjcert/intunedeviceconfigurationcertauthority.png)
 4. Click **Add**, and then click **Download the certificate connector software** under the **Steps to install connector for SCEP** section.
 ![Intune Download Certificate connector](images/aadjcert/intunedownloadcertconnector.png)
@@ -610,7 +610,7 @@ Sign-in the NDES server with access equivalent to _domain admin_.
 
 1. Open a command prompt.
 2. Type the following command to confirm the NDES Connector's last connection time is current.</br>
-```reg query hklm\software\Micosoft\MicrosoftIntune\NDESConnector\ConnectionStatus```</br>
+```reg query hklm\software\Microsoft\MicrosoftIntune\NDESConnector\ConnectionStatus```</br>
 3. Close the command prompt.
 4. Open **Internet Explorer**.
 5. In the navigation bar, type</br>
