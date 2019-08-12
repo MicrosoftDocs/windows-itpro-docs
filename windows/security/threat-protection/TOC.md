@@ -133,7 +133,7 @@
 
 #### [Integrations]()
 ##### [Microsoft Defender ATP integrations](microsoft-defender-atp/threat-protection-integration.md)
-#####  [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
+##### [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
 ##### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
 
 #### [Information protection in Windows overview]()
@@ -1049,7 +1049,7 @@
 ###### [Network access: Remotely accessible registry paths](security-policy-settings/network-access-remotely-accessible-registry-paths.md)
 ###### [Network access: Remotely accessible registry paths and subpaths](security-policy-settings/network-access-remotely-accessible-registry-paths-and-subpaths.md)
 ###### [Network access: Restrict anonymous access to Named Pipes and Shares](security-policy-settings/network-access-restrict-anonymous-access-to-named-pipes-and-shares.md)
-######  [Network access: Restrict clients allowed to make remote calls to SAM](security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls.md)
+###### [Network access: Restrict clients allowed to make remote calls to SAM](security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls.md)
 ###### [Network access: Shares that can be accessed anonymously](security-policy-settings/network-access-shares-that-can-be-accessed-anonymously.md)
 ###### [Network access: Sharing and security model for local accounts](security-policy-settings/network-access-sharing-and-security-model-for-local-accounts.md)
 ###### [Network security: Allow Local System to use computer identity for NTLM](security-policy-settings/network-security-allow-local-system-to-use-computer-identity-for-ntlm.md)

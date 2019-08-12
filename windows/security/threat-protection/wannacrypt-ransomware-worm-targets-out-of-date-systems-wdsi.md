@@ -15,7 +15,7 @@ manager: dansimp
 ms.author: dolmont
 ---
 
-#   WannaCrypt ransomware worm targets out-of-date systems
+# WannaCrypt ransomware worm targets out-of-date systems
 
 
 On May 12, 2017 we detected a new ransomware that spreads like a worm by leveraging vulnerabilities that have been previously fixed. While security updates are automatically applied in most computers, some users and enterprises may delay deployment of patches. Unfortunately, the ransomware, known as [WannaCrypt](https://www.microsoft.com/security/portal/threat/encyclopedia/Entry.aspx?Name=Ransom:Win32/WannaCrypt), appears to have affected computers that have not applied the patch for these vulnerabilities. While the attack is unfolding, we remind users to install [MS17-010](https://technet.microsoft.com/library/security/ms17-010.aspx) if they have not already done so.
