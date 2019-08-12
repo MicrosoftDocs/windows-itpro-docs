@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: f486c9db-0dc9-4cd6-8a0b-8cb872b1d361
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Set the default browser using Group Policy (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

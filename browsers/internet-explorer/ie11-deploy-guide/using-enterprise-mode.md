@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 238ead3d-8920-429a-ac23-02f089c4384a
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Using IE7 Enterprise Mode or IE8 Enterprise Mode (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

@@ -4,7 +4,7 @@ description: Servicing stack updates improve the code that installs the other up
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
 ms.author: greglin
 ms.date: 11/29/2018

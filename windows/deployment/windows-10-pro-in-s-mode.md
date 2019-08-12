@@ -2,7 +2,7 @@
 title: Switch to Windows 10 Pro/Enterprise from S mode
 ms.reviewer: 
 manager: laurawi
-ms.author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
 description: Overview of Windows 10 Pro/Enterprise in S mode. S mode switch options are also outlined in this document. Switching out of S mode is optional.
 keywords: Windows 10 S switch, S mode Switch, Switch in S mode, s mode switch, Windows 10 S, S-mode, system requirements, Overview, Windows 10 Pro in S mode, Windows 10 Pro in S mode
 ms.mktglfcycl: deploy
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
