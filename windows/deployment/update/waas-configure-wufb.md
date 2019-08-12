@@ -7,9 +7,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: jaimeo
 ms.topic: article
 ---
 
@@ -19,7 +19,6 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
 - Windows Server 2016
 - Windows Server 2019
 

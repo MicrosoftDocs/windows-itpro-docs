@@ -18,7 +18,7 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
+
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 

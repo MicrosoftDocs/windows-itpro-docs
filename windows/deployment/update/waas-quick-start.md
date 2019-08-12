@@ -19,7 +19,6 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
 - Windows 10 IoT Mobile
 
 Windows as a service is a new concept, introduced with the release of Windows 10. While [an extensive set of documentation](index.md) is available explaining all the specifics and nuances, here is a quick guide to the most important concepts.
