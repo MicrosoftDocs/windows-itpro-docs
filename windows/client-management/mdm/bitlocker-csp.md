@@ -1136,7 +1136,8 @@ This node reports compliance state of device encryption on the system.
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table> 
-Supported values:
+
+Supported values:  
 - 0 - Indicates that the device is compliant.
 - Any other value represents a non-compliant device.
 
