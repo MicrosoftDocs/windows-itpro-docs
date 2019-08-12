@@ -34,6 +34,8 @@ Your configuration score widget shows the collective security configuration stat
 - Security controls
 
 ## How it works
+>[!NOTE]
+>  Configuration score currently supports configurations set via Group Policy. Due to the current partial Intune support, configurations which might have been set through Intune might show up as misconfigured. Contact your IT Administrator to verify the actual configuration status in case your organization is using Intune for secure configuration management.
 
 The data in the configuration score widget is the product of meticulous and ongoing vulnerability discovery process aggregated with configuration discovery assessments that continuously:
 - Compare collected configurations to the collected benchmarks to discover misconfigured assets
