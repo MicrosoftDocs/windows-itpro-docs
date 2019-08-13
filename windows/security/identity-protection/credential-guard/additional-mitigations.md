@@ -71,7 +71,7 @@ Then on the devices that are running Windows Defender Credential Guard, enroll t
 **Enrolling devices in a certificate**
 
 Run the following command:
-``` syntax
+```powershell
 CertReq -EnrollCredGuardCert MachineAuthentication
 ```
 
@@ -87,7 +87,7 @@ Beginning with the Windows Server 2008 R2 domain functional level, domain contro
 -   The [get-IssuancePolicy.ps1](#bkmk-getscript) shows all of the issuance policies that are available on the certificate authority.
     From a Windows PowerShell command prompt, run the following command:
 
-    ``` syntax
+    ```powershell
     .\get-IssuancePolicy.ps1 –LinkedToGroup:All
     ```
 
@@ -96,7 +96,7 @@ Beginning with the Windows Server 2008 R2 domain functional level, domain contro
 -   The [set-IssuancePolicyToGroupLink.ps1](#bkmk-setscript) creates a Universal security group, creates an organizational unit, and links the issuance policy to that Universal security group.
     From a Windows PowerShell command prompt, run the following command:
 
-    ``` syntax
+    ```powershell
     .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:"<name of issuance policy>" –groupOU:"<Name of OU to create>" –groupName:”<name of Universal security group to create>"
     ```
 
@@ -143,7 +143,7 @@ Here is a list of scripts mentioned in this topic.
 
 Save this script file as get-IssuancePolicy.ps1.
 
-``` syntax
+```powershell
 #######################################
 ##     Parameters to be defined      ##
 ##     by the user                   ##

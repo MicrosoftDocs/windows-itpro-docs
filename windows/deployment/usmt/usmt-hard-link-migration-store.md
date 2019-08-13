@@ -8,6 +8,7 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
@@ -209,7 +210,7 @@ You must use the **/nocompress** option with the **/HardLink** option.
 
 The following XML sample specifies that files locked by an application under the \\Users directory can remain in place during the migration. It also specifies that locked files that are not located in the \\Users directory should result in the **File in Use** error. It is important to exercise caution when specifying the paths using the **File in Use&lt;createhardlink&gt;** tag in order to minimize scenarios that make the hard-link migration store more difficult to delete.
 
-``` syntax
+``` xml
 <Policies>
     <HardLinkStoreControl>
           <fileLocked>

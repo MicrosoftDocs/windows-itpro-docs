@@ -7,9 +7,11 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: low
 ms.sitesec: library
 ms.pagetype: deploy
+audience: itpro
 author: greg-lindsay
 manager: laurawi
-ms.author: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -44,7 +46,7 @@ In addition to [Windows Autopilot requirements](windows-autopilot-requirements.m
 
 ## Preparation
 
-Devices slated for WG provisioning are registered for Autopilot via the normal registration process. 
+Devices slated for white glove provisioning are registered for Autopilot via the normal registration process. 
 
 To be ready to try out Windows Autopilot for white glove deployment, ensure that you can first successfully use existing Windows Autopilot user-driven scenarios:
 

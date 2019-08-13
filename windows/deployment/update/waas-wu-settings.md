@@ -4,10 +4,11 @@ description: Additional settings to control the behavior of Windows Update (WU) 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itpro
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greg-lindsay
-ms.date: 07/27/2017
+ms.audience: itpro
+author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
@@ -19,14 +20,14 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile 
+
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 You can use Group Policy settings or mobile device management (MDM) to configure the behavior of Windows Update (WU) on your Windows 10 devices. You can configure the update detection frequency, select when updates are received, specify the update service location and more.
 
 >[!IMPORTANT]
->In Windows 10, any Group Policy user configuration settings for Windows Update were deprecated and are no longer supported on this platform.
+>In Windows 10, any Group Policy user configuration settings for Windows Update are no longer supported on this platform.
 
 ## Summary of Windows Update settings
 

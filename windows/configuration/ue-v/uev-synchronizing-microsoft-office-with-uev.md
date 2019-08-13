@@ -131,7 +131,7 @@ You can deploy UE-V settings location template with the following methods:
 
 -   **Registering template with PowerShell**. If you use Windows PowerShell to manage computers, run the following Windows PowerShell command as Administrator to register this settings location template:
 
-    ``` syntax
+    ```powershell
     Register-UevTemplate -Path <Path_to_Template>
     ```
 

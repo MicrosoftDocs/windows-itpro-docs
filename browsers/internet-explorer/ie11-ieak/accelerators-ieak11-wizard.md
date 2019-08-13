@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 208305ad-1bcd-42f3-aca3-0ad1dda7048b
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the Accelerators page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

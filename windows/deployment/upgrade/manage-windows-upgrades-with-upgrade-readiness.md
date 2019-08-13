@@ -2,7 +2,7 @@
 title: Manage Windows upgrades with Upgrade Readiness (Windows 10)
 description: Provides an overview of the process of managing Windows upgrades with Upgrade Readiness.
 ms.prod: w10
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 04/25/2017
 ms.reviewer: 
 manager: laurawi

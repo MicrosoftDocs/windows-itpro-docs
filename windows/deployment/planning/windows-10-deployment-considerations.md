@@ -10,7 +10,7 @@ ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: plan
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 

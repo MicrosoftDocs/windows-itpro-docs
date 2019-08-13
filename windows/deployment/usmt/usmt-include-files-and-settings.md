@@ -8,6 +8,7 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
@@ -37,7 +38,7 @@ In this topic:
 
 The following .xml file migrates a single registry key.
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
      <component type="Application" context="System">
           <displayName>Component to migrate only registry value string</displayName> 
@@ -63,7 +64,7 @@ The following examples show how to migrate a folder from a specific drive, and f
 
 -   **Including subfolders.** The following .xml file migrates all files and subfolders from C:\\EngineeringDrafts to the destination computer.
 
-    ``` syntax
+    ``` xml
     <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
     <component type="Documents" context="System">
       <displayName>Component to migrate all Engineering Drafts Documents including subfolders</displayName>
@@ -82,7 +83,7 @@ The following examples show how to migrate a folder from a specific drive, and f
 
 -   **Excluding subfolders.** The following .xml file migrates all files from C:\\EngineeringDrafts, but it does not migrate any subfolders within C:\\EngineeringDrafts.
 
-    ``` syntax
+    ``` xml
     <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
     <component type="Documents" context="System">
       <displayName>Component to migrate all Engineering Drafts Documents without subfolders</displayName>
@@ -103,7 +104,7 @@ The following examples show how to migrate a folder from a specific drive, and f
 
 The following .xml file migrates all files and subfolders of the EngineeringDrafts folder from any drive on the computer. If multiple folders exist with the same name, then all files with this name are migrated.
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
   <displayName>Component to migrate all Engineering Drafts Documents folder on any drive on the computer </displayName>
@@ -123,7 +124,7 @@ The following .xml file migrates all files and subfolders of the EngineeringDraf
 
 The following .xml file migrates all files and subfolders of the EngineeringDrafts folder from any location on the C:\\ drive. If multiple folders exist with the same name, they are all migrated.
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
   <displayName>Component to migrate all Engineering Drafts Documents EngineeringDrafts folder from where ever it exists on the C: drive </displayName>
@@ -146,7 +147,7 @@ The following .xml file migrates all files and subfolders of the EngineeringDraf
 
 The following .xml file migrates .mp3 files located in the specified drives on the source computer into the C:\\Music folder on the destination computer.
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 <component type="Documents" context="System">
   <displayName>All .mp3 files to My Documents</displayName>
@@ -176,7 +177,7 @@ The following examples show how to migrate a file from a specific folder, and ho
 
 -   **To migrate a file from a folder.** The following .xml file migrates only the Sample.doc file from C:\\EngineeringDrafts on the source computer to the destination computer.
 
-    ``` syntax
+    ``` xml
     <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
     <component type="Documents" context="System">
       <displayName>Component to migrate all Engineering Drafts Documents</displayName>
@@ -195,13 +196,13 @@ The following examples show how to migrate a file from a specific folder, and ho
 
 -   **To migrate a file from any location.** To migrate the Sample.doc file from any location on the C:\\ drive, use the &lt;pattern&gt; element, as the following example shows. If multiple files exist with the same name on the C:\\ drive, all of files with this name are migrated.
 
-    ``` syntax
+    ``` xml
     <pattern type="File"> C:\* [Sample.doc] </pattern>
     ```
 
     To migrate the Sample.doc file from any drive on the computer, use &lt;script&gt; as the following example shows. If multiple files exist with the same name, all files with this name are migrated.
 
-    ``` syntax
+    ``` xml
     <script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script>
     ```
 

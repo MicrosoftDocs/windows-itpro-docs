@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 5b64c9cb-f8da-411a-88e4-fa69dea473e2
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Security features and IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

@@ -79,7 +79,7 @@ The easiest way to verify the onPremisesDistingushedNamne attribute is synchroni
 
 1. Open a web browser and navigate to https://graphexplorer.azurewebsites.net/
 2. Click **Login** and provide Azure credentials
-3. In the Azure AD Graph Explorer URL, type <strong>https://graph.windows.net/myorganization/users/[userid], where **[userid]</strong> is the user principal name of user in Azure Active Directory.  Click **Go**
+3. In the Azure AD Graph Explorer URL, type https://graph.windows.net/myorganization/users/[userid], where **[userid]** is the user principal name of user in Azure Active Directory.  Click **Go**
 4. In the returned results, review the JSON data for the **onPremisesDistinguishedName** attribute.  Ensure the attribute has a value and the value is accurate for the given user.
    ![Azure AD Connect On-Prem DN Attribute](images/aadjcert/aadconnectonpremdn.png)
 
@@ -659,7 +659,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 13. Refer to the "Configure Certificate Templates on NDES" task for how you configured the **AADJ WHFB Authentication** certificate template in the registry. Select the appropriate combination of key usages from the **Key Usages** list that map to configured NDES template in the registry. In this example, the **AADJ WHFB Authentication** certificate template was added to the **SignatureTemplate** registry value name.  The **Key usage** that maps to that registry value name is **Digital Signature**.
 14. Select a previously configured **Trusted certificate** profile that matches the root certificate of the issuing certificate authority.
     ![WHFB SCEP certificate profile Trusted Certificate selection](images/aadjcert/intunewhfbscepprofile-01.png)
-15. Under **Extended key usage**, type **Smart Card Logon** under <strong>Name. Type **1.3.6.1.4.1.311.20.2.2</strong> under **Object identifier**.  Click **Add**.
+15. Under **Extended key usage**, type **Smart Card Logon** under **Name**. Type **1.3.6.1.4.1.311.20.2.2** under **Object identifier**.  Click **Add**.
 16. Type a percentage (without the percent sign) next to **Renewal Threshold** to determine when the certificate should attempt to renew. The recommended value is **20**.
     ![WHFB SCEP certificate Profile EKUs](images/aadjcert/intunewhfbscepprofile-03.png)
 17. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**.  For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll.  Click **Add**.  Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests amongst the URLs listed in the SCEP certificate profile.
