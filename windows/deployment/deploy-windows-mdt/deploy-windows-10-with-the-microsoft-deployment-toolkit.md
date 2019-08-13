@@ -66,8 +66,8 @@ In addition to the servers and clients used in this lab, a Hyper-V host is also 
 
 ### Domain credentials
 
-**Active Directory domain name**: contoso.com
-**Domain administrator username**: admin
+**Active Directory domain name**: contoso.com<br>
+**Domain administrator username**: admin<br>
 **Domain administrator password**: pass@word3 
 
 ### Server details

@@ -563,10 +563,13 @@ SkipFinalSummary=YES
 
 ## Build the Windows 10 reference image
 
-Once you have created your task sequence, you are ready to create the Windows 10 reference image. This will be performed by launching the task sequence from a virtual machine which will then automatically perform the reference image creation and capture process.
-This steps below outline the process used to boot a virtual machine using an ISO boot image created by MDT, and then execute the reference image task sequence image to create and capture the Windows 10 reference image.
+As previously described, this section requires a Hyper-V host. See [HyperVisor requirement](deploy-windows-10-with-the-microsoft-deployment-toolkit.md#hypervisor-requirement) for more information.
 
-1.  Copy the D:\\MDTBuildLab\\Boot\\MDT Build Lab x86.iso on MDT01 to C:\\ISO on the Hyper-V host.
+Once you have created your task sequence, you are ready to create the Windows 10 reference image. This will be performed by launching the task sequence from a virtual machine which will then automatically perform the reference image creation and capture process. 
+
+The steps below outline the process used to boot a virtual machine using an ISO boot image created by MDT, and then execute the reference image task sequence image to create and capture the Windows 10 reference image.
+
+1.  Copy the D:\\MDTBuildLab\\Boot\\MDT Build Lab x86.iso on MDT01 to C:\\ISO on a Hyper-V host.
 
     **Note**  
     Remember, in MDT you can use the x86 boot image to deploy both x86 and x64 operating system images. That's why you can use the x86 boot image instead of the x64 boot image.
