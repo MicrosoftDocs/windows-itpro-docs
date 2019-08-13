@@ -413,7 +413,7 @@ Here are the minimum steps for WEF to operate:
 
 ## <a href="" id="bkmk-appendixe"></a>Appendix E – Annotated baseline subscription event query
 
-``` syntax
+```xml
 <QueryList>
   <Query Id="0" Path="System">
     <!-- Anti-malware *old* events, but only detect events (cuts down noise) -->
@@ -578,8 +578,7 @@ Here are the minimum steps for WEF to operate:
 
 ## <a href="" id="bkmk-appendixf"></a>Appendix F – Annotated Suspect Subscription Event Query
 
-``` syntax
-
+```xml
 <QueryList>
   <Query Id="0" Path="Security">
     <!-- Network logon events-->
