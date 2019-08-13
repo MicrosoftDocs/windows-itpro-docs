@@ -28,7 +28,7 @@ There is no example of this event in this document.
 
 ***Event Schema:***
 
-*BranchCache: The message to the hosted cache offering it data is incorrectly formatted. *
+*BranchCache: The message to the hosted cache offering it data is incorrectly formatted.*
 
 *IP address of the client that sent this message: %1*
 

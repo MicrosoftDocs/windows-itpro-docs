@@ -37,7 +37,7 @@ manager: dansimp
 	  - LastErrorDescription
 	  - SyncStatusDescription
 	  - SyncProgress
-	- Sync
+    - Sync
 	  - PublishXML
   - AppVDynamicPolicy
 

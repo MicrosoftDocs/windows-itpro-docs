@@ -46,7 +46,7 @@ Listed below are examples of basic valid commands for operating system volumes. 
 
 A good practice when using manage-bde is to determine the volume status on the target system. Use the following command to determine volume status:
 
-``` syntax
+```powershell
 manage-bde -status
 ```
 This command returns the volumes on the target, current encryption status, encryption method, and volume type (operating system or data) for each volume:
@@ -55,7 +55,7 @@ This command returns the volumes on the target, current encryption status, encry
 
 The following example illustrates enabling BitLocker on a computer without a TPM chip. Before beginning the encryption process you must create the startup key needed for BitLocker and save it to the USB drive. When BitLocker is enabled for the operating system volume, the BitLocker will need to access the USB flash drive to obtain the encryption key (in this example, the drive letter E represents the USB drive). You will be prompted to reboot to complete the encryption process.
 
-``` syntax
+```powershell
 manage-bde –protectors -add C: -startupkey E:
 manage-bde -on C:
 ```
@@ -64,7 +64,7 @@ manage-bde -on C:
  
 An alternative to the startup key protector on non-TPM hardware is to use a password and an **ADaccountorgroup** protector to protect the operating system volume. In this scenario, you would add the protectors first. This is done with the command:
 
-``` syntax
+```powershell
 manage-bde -protectors -add C: -pw -sid <user or group>
 ```
 
@@ -72,13 +72,13 @@ This command will require you to enter and then confirm the password protector b
 
 On computers with a TPM it is possible to encrypt the operating system volume without any defined protectors using manage-bde. The command to do this is:
 
-``` syntax
+```powershell
 manage-bde -on C:
 ```
 
 This will encrypt the drive using the TPM as the default protector. If you are not sure if a TPM protector is available, to list the protectors available for a volume, run the following command:
 
-``` syntax
+```powershell
  manage-bde -protectors -get <volume>
 ```
 ### Using manage-bde with data volumes
@@ -87,7 +87,7 @@ Data volumes use the same syntax for encryption as operating system volumes but 
 
 A common protector for a data volume is the password protector. In the example below, we add a password protector to the volume and turn BitLocker on.
 
-``` syntax
+```powershell
 manage-bde -protectors -add -pw C:
 manage-bde -on C:
 ```
@@ -257,7 +257,7 @@ If you want to remove the existing protectors prior to provisioning BitLocker on
 
 A simple script can pipe the values of each Get-BitLockerVolume return out to another variable as seen below:
 
-``` syntax
+```powershell
 $vol = Get-BitLockerVolume
 $keyprotectors = $vol.KeyProtector
 ```
@@ -266,7 +266,7 @@ Using this, you can display the information in the $keyprotectors variable to de
 
 Using this information, you can then remove the key protector for a specific volume using the command:
 
-``` syntax
+```powershell
 Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
 ```
 
@@ -278,13 +278,13 @@ Using the BitLocker Windows PowerShell cmdlets is similar to working with the ma
 
 The following example shows how to enable BitLocker on an operating system drive using only the TPM protector:
 
-``` syntax
+```powershell
 Enable-BitLocker C:
-
 ```
+
 In the example below, adds one additional protector, the StartupKey protector and chooses to skip the BitLocker hardware test. In this example, encryption starts immediately without the need for a reboot.
 
-``` syntax
+```powershell
 Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath <path> -SkipHardwareTest
 ```
 
@@ -293,7 +293,7 @@ Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath <path> -SkipHardwareTes
 Data volume encryption using Windows PowerShell is the same as for operating system volumes. You should add the desired protectors prior to encrypting the volume. The following example adds a password protector to the E: volume using the variable $pw as the password. The $pw variable is held as a
 SecureString value to store the user defined password.
 
-``` syntax
+```powershell
 $pw = Read-Host -AsSecureString
 <user inputs password>
 Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
@@ -306,7 +306,7 @@ The **ADAccountOrGroup** protector, introduced in Windows 8 and Windows Server 2
  
 To add an **ADAccountOrGroup** protector to a volume requires either the actual domain SID or the group name preceded by the domain and a backslash. In the example below, the CONTOSO\\Administrator account is added as a protector to the data volume G.
 
-``` syntax
+```powershell
 Enable-BitLocker G: -AdAccountOrGroupProtector -AdAccountOrGroup CONTOSO\Administrator
 ```
 
@@ -314,7 +314,7 @@ For users who wish to use the SID for the account or group, the first step is to
 
 >**Note:**  Use of this command requires the RSAT-AD-PowerShell feature.
  
-``` syntax
+```powershell
 get-aduser -filter {samaccountname -eq "administrator"}
 ```
 
@@ -322,7 +322,7 @@ get-aduser -filter {samaccountname -eq "administrator"}
  
 The following example adds an **ADAccountOrGroup** protector to the previously encrypted operating system volume using the SID of the account:
 
-``` syntax
+```powershell
 Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup S-1-5-21-3651336348-8937238915-291003330-500
 ```
 
