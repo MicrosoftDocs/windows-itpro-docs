@@ -95,60 +95,60 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
 5. Assign the profile to one or more groups.
 
-### Frequently asked questions
+## Frequently asked questions
 
-#### To which Windows OS versions is configuring Tamper Protection is applicable?
+### To which Windows OS versions is configuring Tamper Protection is applicable?
 
 Windows 1903 May release
 
-#### Is configuring Tamper Protection in Intune supported on servers?
+### Is configuring Tamper Protection in Intune supported on servers?
 
 No
 
-#### Will Tamper Protection have any impact on third party antivirus registration?
+### Will Tamper Protection have any impact on third party antivirus registration?
 
 No, third-party antivirus will continue to register with the Windows Security application.
 
-#### What happens if Microsoft Defender is not active on a device?
+### What happens if Microsoft Defender is not active on a device?
 
 Tamper Protection will not have any impact on such devices.
 
-#### How can I turn Tamper Protection on/off?
+### How can I turn Tamper Protection on/off?
 
 If you are home user, see [Turn Tamper Protection on (or off) for an individual machine](#turn-tamper-protection-on-or-off-for-an-individual-machine).
 
 If you are an organization using Microsoft Defender Advanced Threat Protection E5, you should be able to manage Tamper Protection in Intune similar to how you manage other endpoint protection features. See [Turn Tamper Protection on (or off) for your organization with Intune](#turn-tamper-protection-on-or-off-for-your-organization-with-intune).
 
  
-#### How does configuring Tamper Protection in Intune affect how i manage Windows Defender through my group policy?
+### How does configuring Tamper Protection in Intune affect how i manage Windows Defender through my group policy?
 
 Your regular group policy doesn’t apply to Tamper Protection, and changes to Windows Defender settings will be ignored when Tamper Protection is on.
 
-#### For MDATP E5, is configuring Tamper Protection in Intune targeted to the entire organization only?
+### For MDATP E5, is configuring Tamper Protection in Intune targeted to the entire organization only?
 
 Configuring Tamper Protection in Intune can be targeted to your entire organization as well as to devices and user groups with Intune.
 
-#### Can I configure Tamper Protection in System Center Configuration Manager?
+### Can I configure Tamper Protection in System Center Configuration Manager?
 
 Currently we do not have support to manage Tamper Protection through System Center Configuration Manager.
 
-#### I have Windows E3 enrollment. Can I use configuring Tamper Protection in Intune?
+### I have Windows E3 enrollment. Can I use configuring Tamper Protection in Intune?
 
 Currently, configuring Tamper Protection in Intune is only available for customers who have Microosft Defender Advanced Threat Protection E5.
 
-#### What happens if I try to change Microsoft Defender settings in Intune, System Center Configuration Manager, and Windows Management Instrumentation when Tamper Protection is enabled on a device?
+### What happens if I try to change Microsoft Defender settings in Intune, System Center Configuration Manager, and Windows Management Instrumentation when Tamper Protection is enabled on a device?
 
 You won’t be able to change the features that are protected by Tamper Protection; those change requests are ignored.
 
-#### I’m an enterprise customer. Can local admins change Tamper Protection on their devices?
+### I’m an enterprise customer. Can local admins change Tamper Protection on their devices?
 
 No. Local admins cannot change or modify Tamper Protection settings.
 
-#### What happens if my device is onboarded with Microsoft Defender Advanced Threat Protection and then goes into an off-boarded state?
+### What happens if my device is onboarded with Microsoft Defender Advanced Threat Protection and then goes into an off-boarded state?
 
 In this case, Tamper Protection status changes, and this feature is no longer applied.
 
-#### Will there be an alert about Tamper Protection status changing in the Microsoft Defender Advanced Threat Protection portal?
+### Will there be an alert about Tamper Protection status changing in the Microsoft Defender Advanced Threat Protection portal?
 
 Yes. The alert is shown in [https://microsoft.securitycenter.com](https://microsoft.securitycenter.com) under **Alerts**. 
 
