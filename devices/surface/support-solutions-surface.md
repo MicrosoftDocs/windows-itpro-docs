@@ -25,7 +25,7 @@ These are the top Microsoft Support solutions for common issues experienced when
 
 ## Screen cracked or scratched issues
 
-- [Cracked screen and physical damage](https://www.microsoft.com/surface/support/warranty-service-and-recovery/surface-is-damaged)
+- [Contact Microsoft Support](https://support.microsoft.com/en-us/supportforbusiness/productselection) 
 
 
 ## Device cover or keyboard issues
