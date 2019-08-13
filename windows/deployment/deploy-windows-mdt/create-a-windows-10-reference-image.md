@@ -28,7 +28,7 @@ For the purposes of this topic, we will use three computers: DC01, MDT01, and PC
 - MDT01 is a contoso.com domain member server.
 - PC0001 is a Windows 10 Enterprise x64 client and also a contoso.com domain member.
  
-![figure 1](../images/mdt-08-fig01.png)
+    ![figure 1](../images/mdt-08-fig01.png)
 
 >[!NOTE]
 >See [Deploying Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) for more information about the setup for this lab.
@@ -137,7 +137,7 @@ Download the software in this list to the D:\\Downloads folder on MDT01. **Note*
 >[!NOTE]
 >All the Microsoft Visual C++ downloads can be found on [The latest supported Visual C++ downloads](https://go.microsoft.com/fwlink/p/?LinkId=619523). Visual C++ 2015, 2017 and 2019 all share the same redistributable files.
  
-### Create the install: Microsoft Office 365 Professional Plus x64
+### Create configuration file: Microsoft Office 365 Professional Plus x64
 
 1. After downloading the most current version of the Office Deployment tool from the Microsoft Download Center using the link provided above, run the self-extracting executable file and extract the files to **D:\\Downloads\\Office365**.  The Office Deployment Tool (setup.exe) and several sample configuration.xml files will be extracted.
 2. Using a text editor (such as Notepad), create an XML file with the installation settings for Office 365 ProPlus that are appropriate for your organization. The file uses an XML format, so the file you create must have an extension of .xml but the file can have any filename.
@@ -193,10 +193,37 @@ If you need to add many applications, you can take advantage of the PowerShell s
     New-PSDrive -Name "DS001" -PSProvider MDTProvider -Root "D:\MDTBuildLab"
     ```
 
+### Create the install: Microsoft Office 365 Pro Plus - x64
+
+In these steps we assume that you have downloaded the Office Deployment Tool. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to D:\\Downloads\\Office365.
+1.  On MDT01, log on as **CONTOSO\\Administrator**.
+2.  Create the application by running the following commands in an elevated PowerShell prompt:
+
+    ``` powershell
+    $ApplicationName = "Install - Office365 ProPlus - x64"
+    $CommandLine = "setup.exe /configure configuration.xml"
+    $ApplicationSourcePath = "D:\Downloads\Office365"
+    Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -CommandLine $CommandLine -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName -Verbose
+    ```
+
+    Upon successful installation the following text is displayed:
+    ```
+    VERBOSE: Performing the operation "import" on target "Application".
+    VERBOSE: Beginning application import
+    VERBOSE: Copying application source files from D:\Downloads\Office365 to D:\MDTBuildLab\Applications\Install -
+    Office365 ProPlus - x64
+    VERBOSE: Creating new item named Install - Office365 ProPlus - x64 at DS001:\Applications\Microsoft.
+    
+    Name
+    ----
+    Install - Office365 ProPlus - x64
+    VERBOSE: Import processing finished.
+    ```
+
 ### Create the install: Microsoft Visual C++ Redistributable 2019 - x86
 
 >[!NOTE]
->We have abbreviated "Microsoft Visual C++ Redistributable" in the $ApplicationName below as "MSVC" to avoid the path name exceeding 248 characters.
+>We have abbreviated "Microsoft Visual C++ Redistributable" in the $ApplicationName below as "MSVC" to avoid the path name exceeding the maxiumum allowed length of 248 characters.
 
 In these steps we assume that you have downloaded Microsoft Visual C++ Redistributable 2019 - x86. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to D:\\Downloads.
 1.  On MDT01, log on as **CONTOSO\\Administrator**.
@@ -235,33 +262,6 @@ In these steps we assume that you have downloaded Microsoft Visual C++ Redistrib
     Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -CommandLine $CommandLine -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName -Verbose
     ```
 
-### Create the install: Microsoft Office 365 Pro Plus - x64
-
-In these steps we assume that you have downloaded the Office Deployment Tool. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to D:\\Downloads\\Office365.
-1.  On MDT01, log on as **CONTOSO\\Administrator**.
-2.  Create the application by running the following commands in an elevated PowerShell prompt:
-
-    ``` powershell
-    $ApplicationName = "Install - Office365 ProPlus - x64"
-    $CommandLine = "setup.exe /configure configuration.xml"
-    $ApplicationSourcePath = "D:\Downloads\Office365"
-    Import-MDTApplication -Path "DS001:\Applications\Microsoft" -Enable "True" -Name $ApplicationName -ShortName $ApplicationName -CommandLine $CommandLine -WorkingDirectory ".\Applications\$ApplicationName" -ApplicationSourcePath $ApplicationSourcePath -DestinationFolder $ApplicationName -Verbose
-    ```
-
-    Upon successful installation the following text is displayed:
-    ```
-    VERBOSE: Performing the operation "import" on target "Application".
-    VERBOSE: Beginning application import
-    VERBOSE: Copying application source files from D:\Downloads\Office365 to D:\MDTBuildLab\Applications\Install -
-    Office365 ProPlus - x64
-    VERBOSE: Creating new item named Install - Office365 ProPlus - x64 at DS001:\Applications\Microsoft.
-    
-    Name
-    ----
-    Install - Office365 ProPlus - x64
-    VERBOSE: Import processing finished.
-    ```
-
 ## Create the reference image task sequence
 
 In order to build and capture your Windows 10 reference image for deployment using MDT, you will create a task sequence. The task sequence will reference the operating system and applications that you previously imported into the MDT Build Lab deployment share to build a Windows 10 reference image.
@@ -275,63 +275,50 @@ Because we use modern virtual platforms for creating our reference images, we do
 
 To create a Windows 10 reference image task sequence, the process is as follows:
 
-1.  Using the Deployment Workbench in the MDT Build Lab deployment share, right-click **Task Sequences**, and create a new folder named **Windows 10**.
-2.  Expand the **Task Sequences** node, right-click the new **Windows 10** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
-    1.  Task sequence ID: REFW10X64-001
-    2.  Task sequence name: Windows 10 Enterprise x64 RTM Default Image
-    3.  Task sequence comments: Reference Build
-    4.  Template: Standard Client Task Sequence
-    5.  Select OS: Windows 10 Enterprise x64 RTM Default Image
-    6.  Specify Product Key: Do not specify a product key at this time
-    7.  Full Name: Contoso
-    8.  Organization: Contoso
-    9.  Internet Explorer home page: http://www.contoso.com
-    10. Admin Password: Do not specify an Administrator Password at this time
+1. Using the Deployment Workbench in the MDT Build Lab deployment share, right-click **Task Sequences**, and create a new folder named **Windows 10**.
+2. Expand the **Task Sequences** node, right-click the new **Windows 10** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
+   1. Task sequence ID: REFW10X64-001
+   2. Task sequence name: Windows 10 Enterprise x64 RTM Default Image
+   3. Task sequence comments: Reference Build
+   4. Template: Standard Client Task Sequence
+   5. Select OS: Windows 10 Enterprise x64 RTM Default Image
+   6. Specify Product Key: Do not specify a product key at this time
+   7. Full Name: Contoso
+   8. Organization: Contoso
+   9. Internet Explorer home page: http://www.contoso.com
+   10. Admin Password: Do not specify an Administrator Password at this time
 
 ### Edit the Windows 10 task sequence
 
-The steps below walk you through the process of editing the Windows 10 reference image task sequence to include the actions required to update the reference image with the latest updates from WSUS, install roles and features, and utilities, and install Microsoft Office 2013.
+The steps below walk you through the process of editing the Windows 10 reference image task sequence to include the actions required to update the reference image with the latest updates from WSUS, install roles and features, and utilities, and install Microsoft Office365 ProPlus x64.
 
-1.  In the Task Sequences / Windows 10 folder, right-click the Windows 10 Enterprise x64 RTM Default Image task sequence, and select Properties.
+1.  In the Task Sequences / Windows 10 folder, right-click the Windows 10 Enterprise x64 RTM Default Image task sequence, and select **Properties**.
 2.  On the **Task Sequence** tab, configure the Windows 10 Enterprise x64 RTM Default Image task sequence with the following settings:
-    1.  State Restore. Enable the Windows Update (Pre-Application Installation) action.
-        **Note**  
-        Enable an action by going to the Options tab and clearing the Disable this step check box.
+    1. State Restore. Enable the Windows Update (Pre-Application Installation) action.
+        - **Note**: Enable an action by going to the Options tab and clearing the Disable this step check box.
          
-    2.  State Restore. Enable the Windows Update (Post-Application Installation) action.
-    3.  State Restore. Enable the Windows Update (Post-Application Installation) action. State Restore. After the **Tattoo** action, add a new **Group** action with the following setting:
+    2. State Restore. Enable the Windows Update (Post-Application Installation) action.
+    3. State Restore. After the **Tattoo** action, add a new **Group** action with the following setting:
         -   Name: Custom Tasks (Pre-Windows Update)
-    4.  State Restore. After Windows Update (Post-Application Installation) action, rename Custom Tasks to Custom Tasks (Post-Windows Update).
-        **Note**  
-        The reason for adding the applications after the Tattoo action but before running Windows Update is simply to save time during the deployment. This way we can add all applications that will upgrade some of the built-in components and avoid unnecessary updating.
-         
-    5.  State Restore / Custom Tasks (Pre-Windows Update). Add a new Install Roles and Features action with the following settings:
-        1.  Name: Install - Microsoft NET Framework 3.5.1
-        2.  Select the operating system for which roles are to be installed: Windows 10
-        3.  Select the roles and features that should be installed: .NET Framework 3.5 (includes .NET 2.0 and 3.0)
+    4. State Restore. After Windows Update (Post-Application Installation) action, rename Custom Tasks to Custom Tasks (Post-Windows Update).
+        - **Note**: The reason for adding the applications after the Tattoo action but before running Windows Update is simply to save time during the deployment. This way we can add all applications that will upgrade some of the built-in components and avoid unnecessary updating.        
+    5. State Restore / Custom Tasks (Pre-Windows Update). Add a new Install Roles and Features action with the following settings:
+        1. Name: Install - Microsoft NET Framework 3.5.1
+        2. Select the operating system for which roles are to be installed: Windows 10
+        3. Select the roles and features that should be installed: .NET Framework 3.5 (includes .NET 2.0 and 3.0)
         
         >[!IMPORTANT]
         >This is probably the most important step when creating a reference image. Many applications need the .NET Framework, and we strongly recommend having it available in the image. The one thing that makes this different from other components is that .NET Framework 3.5.1 is not included in the WIM file. It is installed from the **Sources\\SxS** folder on the media, and that makes it more difficult to add after the image has been deployed.
          
         ![figure 7](../images/fig8-cust-tasks.png)
 
-        Figure 7. The task sequence after creating the Custom Tasks (Pre-Windows Update) group and adding the Install - Microsoft NET Framework 3.5.1 action.
+        The task sequence after creating the Custom Tasks (Pre-Windows Update) group and adding the Install - Microsoft NET Framework 3.5.1 action.
 
-    6.  State Restore - Custom Tasks (Pre-Windows Update). After the **Install - Microsoft NET Framework 3.5.1** action, add a new **Install Application** action with the following settings:
-        1.  Name: Install - Microsoft Visual C++ 2005 SP1 - x86
-        2.  Install a Single Application: Install - Microsoft Visual C++ 2005 SP1 - x86-x64
-    7.  Repeat the previous step (add a new **Install Application**) to add the following applications:
-        1.  Install - Microsoft Visual C++ 2005 SP1 - x64
-        2.  Install - Microsoft Visual C++ 2008 SP1 - x86
-        3.  Install - Microsoft Visual C++ 2008 SP1 - x64
-        4.  Install - Microsoft Visual C++ 2010 SP1 - x86
-        5.  Install - Microsoft Visual C++ 2010 SP1 - x64
-        6.  Install - Microsoft Visual C++ 2012 Update 4 - x86
-        7.  Install - Microsoft Visual C++ 2012 Update 4 - x64
-        8.  Install - Microsoft Office 2013 Pro Plus - x86
-    8.  After the Install - Microsoft Office 2013 Pro Plus - x86 action, add a new Restart computer action.
-3.  Click **OK**.
-
+    6. State Restore - Custom Tasks (Pre-Windows Update). After the **Install - Microsoft NET Framework 3.5.1** action, add a new **Install Application** action (selected from the **General** group) with the following settings:
+        1. Name: Microsoft Visual C++ Redistributable 2019 - x86
+        2. Install a Single Application: browse to **Install - MSVC 2019 - x86**
+    7.  Repeat the previous steps (add a new **Install Application**) to add Microsoft Visual C++ Redistributable 2019 - x64 as well.
+3. Click **OK**.
 
 ### Optional configuration: Add a suspend action
 
@@ -339,15 +326,22 @@ The goal when creating a reference image is of course to automate everything. Bu
 
 ![figure 8](../images/fig8-suspend.png)
 
-Figure 8. A task sequence with optional Suspend action (LTISuspend.wsf) added.
+A task sequence with optional Suspend action (LTISuspend.wsf) added.
 
 ![figure 9](../images/fig9-resumetaskseq.png)
 
-Figure 9. The Windows 10 desktop with the Resume Task Sequence shortcut.
+The Windows 10 desktop with the Resume Task Sequence shortcut.
 
 ### Edit the Unattend.xml file for Windows 10 Enterprise
 
-When using MDT, you don't need to edit the Unattend.xml file very often because most configurations are taken care of by MDT. However if, for example, you want to configure Internet Explorer 11 behavior, then you can edit the Unattend.xml for this. Editing the Unattend.xml for basic Internet Explorer settings is easy, but for more advanced settings, you will want to use Internet Explorer Administration Kit (IEAK).
+>[!IMPORTANT]
+>The current version of MDT (8456) has a known issue generating a catalog file for Windows 10, version 1903 X64 install.wim. You might see the error "Could not load file or assembly" in logs. As a temporary workaround:
+>- Close the Deployment Workbench and install the [WSIM 1903 update](https://go.microsoft.com/fwlink/?linkid=2095334). This will update both files to version 10.0.18362.144.
+>- Manually run imgmgr.exe (C:\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\WSIM\\imgmgr.exe).
+>- Generate a catalog (Tools/Create Catalog) for the selected install.wim (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install.wim). 
+>- After manually creating the catalog file (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install_Windows 10 Enterprise.clg), open the Deployment Workbench and proceed to edit unattend.xml.
+
+When using MDT, you don't need to edit the Unattend.xml file very often because most configurations are taken care of by MDT. However if, for example, you want to configure Internet Explorer behavior, then you can edit the Unattend.xml for this. Editing the Unattend.xml for basic Internet Explorer settings is easy, but for more advanced settings, you will want to use the Internet Explorer Administration Kit (IEAK).
 
 >[!WARNING]
 >Do not use **SkipMachineOOBE** or **SkipUserOOBE** in your Unattend.xml file. These settings are deprecated and can have unintended effects if used.
@@ -357,19 +351,20 @@ When using MDT, you don't need to edit the Unattend.xml file very often because 
  
 Follow these steps to configure Internet Explorer settings in Unattend.xml for the Windows 10 Enterprise x64 RTM Default Image task sequence:
 
-1.  Using the Deployment Workbench, right-click the **Windows 10 Enterprise x64 RTM Default Image** task sequence and select **Properties**.
-2.  In the **OS Info** tab, click **Edit Unattend.xml**. MDT now generates a catalog file. This will take a few minutes, and then Windows System Image Manager (Windows SIM) will start.
-3.  In Windows SIM, expand the **4 specialize** node in the **Answer File** pane and select the amd64\_Microsoft-Windows-IE-InternetExplorer\_neutral entry.
-4.  In the **amd64\_Microsoft-Windows-IE-InternetExplorer\_neutral properties** window (right-hand window), set the following values:
-    -   DisableDevTools: true
-5.  Save the Unattend.xml file, and close Windows SIM.
-6.  On the Windows 10 Enterprise x64 RTM Default Image Properties, click **OK**.
+1. Using the Deployment Workbench, right-click the **Windows 10 Enterprise x64 RTM Default Image** task sequence and select **Properties**.
+2. In the **OS Info** tab, click **Edit Unattend.xml**. MDT now generates a catalog file. This will take a few minutes, and then Windows System Image Manager (Windows SIM) will start. 
+3. In Windows SIM, expand the **4 specialize** node in the **Answer File** pane and select the amd64\_Microsoft-Windows-IE-InternetExplorer\_neutral entry.
+4. In the **amd64\_Microsoft-Windows-IE-InternetExplorer\_neutral properties** window (right-hand window), set the following values:
+  - DisableDevTools: true
+5. Save the Unattend.xml file, and close Windows SIM.
+  - Note: If errors are reported that certain display values are incorrect, you can ignore this or browse to **7oobeSystem\\amd64_Microsoft-Windows-Shell-Setup__neutral\\Display** and enter the following: ColorDepth 32, HorizontalResolution 1, RefreshRate 60, VerticalResolution 1.
+6. On the Windows 10 Enterprise x64 RTM Default Image Properties, click **OK**.
 
 ![figure 10](../images/fig10-unattend.png)
 
 Figure 10. Windows System Image Manager with the Windows 10 Unattend.xml.
 
-## <a href="" id="sec05"></a>Configure the MDT deployment share rules
+## Configure the MDT deployment share rules
 
 Understanding rules is critical to successfully using MDT. Rules are configured using the Rules tab of the deployment share's properties. The Rules tab is essentially a shortcut to edit the CustomSettings.ini file that exists in the E:\\MDTBuildLab\\Control folder. This section discusses how to configure the MDT deployment share rules as part of your Windows 10 Enterprise deployment.
 
