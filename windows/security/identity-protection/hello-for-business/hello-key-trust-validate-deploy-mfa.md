@@ -18,6 +18,9 @@ ms.reviewer:
 ---
 # Validate and Deploy Multi-factor Authentication (MFA)
 
+> [!IMPORTANT]
+> As of July 1, 2019, Microsoft will no longer offer MFA Server for new deployments. New customers who would like to require multi-factor authentication from their users should use cloud-based Azure Multi-Factor Authentication. Existing customers who have activated MFA Server prior to July 1 will be able to download the latest version, future updates and generate activation credentials as usual.
+
 **Applies to**
 
 - Windows 10, version 1703 or later

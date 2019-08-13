@@ -102,7 +102,7 @@ If the [Audit Kernel Object](../auditing/audit-kernel-object.md) setting is conf
 | 565 | Access was granted to an already existing object type. | 
 | 567 | A permission associated with a handle was used.<br>**Note:**  A handle is created with certain granted permissions (Read, Write, and so on). When the handle is used, up to one audit is generated for each of the permissions that was used. |
 | 569 | The resource manager in Authorization Manager attempted to create a client context. | 
-| 570 | A client attempted to access an object.<br>**Note: **  An event will be generated for every attempted operation on the object. |
+| 570 | A client attempted to access an object.<br>**Note:**  An event will be generated for every attempted operation on the object. |
 
 ## Security considerations
 

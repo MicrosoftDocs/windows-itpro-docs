@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -334,7 +335,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
        - For an example, see [Sample registry key](#sample-registry-key).
 
 05/17/2019 - SetupDiag v1.4.1.0 is released with 53 rules, as a standalone tool available from the Download Center.
-   - This release dds the ability to find and diagnose reset and recovery failures (Push Button Reset).  
+   - This release adds the ability to find and diagnose reset and recovery failures (Push Button Reset).  
 
 12/18/2018 - SetupDiag v1.4.0.0 is released with 53 rules, as a standalone tool available from the Download Center.
    - This release includes major improvements in rule processing performance: ~3x faster rule processing performance!

@@ -5,7 +5,7 @@ ms.pagetype: security
 description: Use this section to learn about how to turn on Enterprise Mode.
 author: eavena
 ms.author: eravena
-ms.prod: edge, ie11
+ms.prod: edge
 ms.assetid: 
 ms.reviewer: 
 manager: dansimp

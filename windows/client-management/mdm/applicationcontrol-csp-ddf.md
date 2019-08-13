@@ -1,7 +1,7 @@
 ---
 title: ApplicationControl CSP
 description: ApplicationControl CSP
-ms.author: dansimp@microsoft.com
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

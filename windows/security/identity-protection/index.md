@@ -17,7 +17,7 @@ ms.date: 02/05/2018
 
 # Identity and access management
 
-Learn more about identity annd access management technologies in Windows 10 and Windows 10 Mobile.
+Learn more about identity and access management technologies in Windows 10 and Windows 10 Mobile.
 
 | Section | Description |
 |-|-|

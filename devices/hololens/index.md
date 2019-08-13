@@ -3,6 +3,7 @@ title: Microsoft HoloLens (HoloLens)
 description: Landing page for HoloLens commercial and enterprise management.
 ms.prod: hololens
 ms.sitesec: library
+ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
 author: scooley
 ms.author: scooley
 ms.topic: article
@@ -18,7 +19,9 @@ ms.date: 07/14/2019
 
 <p>Now, with the introduction of HoloLens 2, every device provides commercial ready management enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft.</p>
 
-</td><td align="left" style="border: 0px"><img alt="HoloLens 2 side view" src="./images/hololens2-side-render.png"/></td></tr>
+<p>To learn more about HoloLens 2 for developers, check out the <a href="https://docs.microsoft.com/windows/mixed-reality/">mixed reality developer documentation</a>.</p>
+
+</td><td align="left" style="border: 0px"><img alt="HoloLens 2 side view" src="images/hololens2-side-render-xs.png"/></td></tr>
 </tbody></table>
 
 ## Guides in this section
@@ -26,7 +29,7 @@ ms.date: 07/14/2019
 | Guide | Description |
 | --- | --- |
 | [Get started with HoloLens](hololens-setup.md) | Set up HoloLens for the first time.  |
-| [Set up HoloLens in the enterprise](hololens-requirements.md) | Configure HoloLens for scale enterprise deployment and ongoing device management.  |
+| [Deploy HoloLens in a commercial environment](hololens-requirements.md) | Configure HoloLens for scale enterprise deployment and ongoing device management.  |
 | [Install and manage applications on HoloLens](hololens-install-apps.md) |Install and manage important applications on HoloLens at scale.  |
 | [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary.  |
 | [Get support](https://support.microsoft.com/products/hololens) |Connect with Microsoft support resources for HoloLens in enterprise.  |
