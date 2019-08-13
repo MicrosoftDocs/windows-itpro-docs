@@ -187,6 +187,12 @@ If the error occurs again, check the error code against the following table to s
 <td align="left">The AIK certificate is no longer valid</td>
 <td align="left">Sign out and then sign in again.</td>
 </tr>
+</tr>
+<tr class="odd">
+<td align="left">0x801C03F2</td>
+<td align="left">Windows Hello key registration failed.</td>
+<td align="left">ERROR_BAD_DIRECTORY_REQUEST. Another object with the same value for property proxyAddresses already exists.</td>
+</tr>
 <tr class="odd">
 <td align="left">​0x801C044D</td>
 <td align="left">Unable to obtain user token</td>
@@ -197,6 +203,7 @@ If the error occurs again, check the error code against the following table to s
 <td align="left">Failed to receive user creds input</td>
 <td align="left">Sign out and then sign in again.</td>
 </tr>
+
 </tbody>
 </table>
  
