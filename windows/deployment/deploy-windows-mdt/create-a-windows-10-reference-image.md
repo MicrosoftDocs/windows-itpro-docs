@@ -360,15 +360,17 @@ Follow these steps to configure Internet Explorer settings in Unattend.xml for t
   - Note: If errors are reported that certain display values are incorrect, you can ignore this or browse to **7oobeSystem\\amd64_Microsoft-Windows-Shell-Setup__neutral\\Display** and enter the following: ColorDepth 32, HorizontalResolution 1, RefreshRate 60, VerticalResolution 1.
 6. On the Windows 10 Enterprise x64 RTM Default Image Properties, click **OK**.
 
-![figure 10](../images/fig10-unattend.png)
+    ![figure 10](../images/fig10-unattend.png)
 
-Figure 10. Windows System Image Manager with the Windows 10 Unattend.xml.
+    Windows System Image Manager with the Windows 10 Unattend.xml.
 
 ## Configure the MDT deployment share rules
 
-Understanding rules is critical to successfully using MDT. Rules are configured using the Rules tab of the deployment share's properties. The Rules tab is essentially a shortcut to edit the CustomSettings.ini file that exists in the E:\\MDTBuildLab\\Control folder. This section discusses how to configure the MDT deployment share rules as part of your Windows 10 Enterprise deployment.
+Understanding rules is critical to successfully using MDT. Rules are configured using the **Rules** tab of the deployment share's properties. The **Rules** tab is essentially a shortcut to edit the **CustomSettings.ini** file that exists in the **D:\\MDTBuildLab\\Control** folder. This section discusses how to configure the MDT deployment share rules as part of your Windows 10 Enterprise deployment.
 
 ### MDT deployment share rules overview
+
+-----stopping here for now-----------
 
 In MDT, there are always two rule files: the CustomSettings.ini file and the Bootstrap.ini file. You can add almost any rule to either; however, the Bootstrap.ini file is copied from the Control folder to the boot image, so the boot image needs to be updated every time you change that file.
 For that reason, add only a minimal set of rules to Bootstrap.ini, such as which deployment server and share to connect to - the DEPLOYROOT value. Put the other rules in CustomSettings.ini because that file is updated immediately when you click OK. By taking the following steps, you will configure the rules for the MDT Build Lab deployment share:
@@ -382,7 +384,7 @@ For that reason, add only a minimal set of rules to Bootstrap.ini, such as which
     UserDataLocation=NONE
     DoCapture=YES
     OSInstall=Y
-    AdminPassword=P@ssw0rd
+    AdminPassword=pass@word3
     TimeZoneName=Pacific Standard Time 
     JoinWorkgroup=WORKGROUP
     HideShell=YES
