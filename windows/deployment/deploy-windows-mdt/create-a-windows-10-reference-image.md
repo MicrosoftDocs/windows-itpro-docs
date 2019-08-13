@@ -324,13 +324,13 @@ The steps below walk you through the process of editing the Windows 10 referenc
 
 The goal when creating a reference image is of course to automate everything. But sometimes you have a special configuration or application setup that is too time-consuming to automate. If you need to do some manual configuration, you can add a little-known feature called Lite Touch Installation (LTI) Suspend. If you add the LTISuspend.wsf script as a custom action in the task sequence, it will suspend the task sequence until you click the Resume Task Sequence shortcut icon on the desktop. In addition to using the LTI Suspend feature for manual configuration or installation, you can also use it simply for verifying a reference image before you allow the task sequence to continue and use Sysprep and capture the virtual machine.
 
-![figure 8](../images/fig8-suspend.png)
+   ![figure 8](../images/fig8-suspend.png)
 
-A task sequence with optional Suspend action (LTISuspend.wsf) added.
+   A task sequence with optional Suspend action (LTISuspend.wsf) added.
 
-![figure 9](../images/fig9-resumetaskseq.png)
+   ![figure 9](../images/fig9-resumetaskseq.png)
 
-The Windows 10 desktop with the Resume Task Sequence shortcut.
+   The Windows 10 desktop with the Resume Task Sequence shortcut.
 
 ### Edit the Unattend.xml file for Windows 10 Enterprise
 
@@ -370,15 +370,15 @@ Understanding rules is critical to successfully using MDT. Rules are configured 
 
 ### MDT deployment share rules overview
 
------stopping here for now-----------
+In MDT, there are always two rule files: the CustomSettings.ini file and the Bootstrap.ini file. You can add almost any rule to either. However, the Bootstrap.ini file is copied from the Control folder to the boot image, so the boot image needs to be updated every time you change that file. For this reason, add only a minimal set of rules to Bootstrap.ini, such as which deployment server and share to connect to - the DEPLOYROOT value. Put the other rules in CustomSettings.ini because that file is updated immediately when you click OK. 
 
-In MDT, there are always two rule files: the CustomSettings.ini file and the Bootstrap.ini file. You can add almost any rule to either; however, the Bootstrap.ini file is copied from the Control folder to the boot image, so the boot image needs to be updated every time you change that file.
-For that reason, add only a minimal set of rules to Bootstrap.ini, such as which deployment server and share to connect to - the DEPLOYROOT value. Put the other rules in CustomSettings.ini because that file is updated immediately when you click OK. By taking the following steps, you will configure the rules for the MDT Build Lab deployment share:
-1.  Using the Deployment Workbench, right-click the **MDT Build Lab deployment share** and select **Properties**.
-2.  Select the **Rules** tab and modify using the following information:
+To configure the rules for the MDT Build Lab deployment share:
+1.  Using the Deployment Workbench, right-click the **MDT Build Lab** deployment share and select **Properties**.
+2.  Select the **Rules** tab and replace the existing content with the following information:
     ``` 
     [Settings]
     Priority=Default
+    
     [Default]
     _SMSTSORGNAME=Contoso
     UserDataLocation=NONE
@@ -411,27 +411,25 @@ For that reason, add only a minimal set of rules to Bootstrap.ini, such as which
 
     ![figure 11](../images/mdt-08-fig14.png)
 
-    Figure 11. The server-side rules for the MDT Build Lab deployment share.
+    The server-side rules for the MDT Build Lab deployment share.
 
 3.  Click **Edit Bootstrap.ini** and modify using the following information:
 
     ``` 
     [Settings]
     Priority=Default
+    
     [Default]
     DeployRoot=\\MDT01\MDTBuildLab$
     UserDomain=CONTOSO
     UserID=MDT_BA
-    UserPassword=P@ssw0rd
+    UserPassword=pass@word3
+    
     SkipBDDWelcome=YES
     ```
 
-    ![figure 12](../images/mdt-08-fig15.png)
-
-    Figure 12. The boot image rules for the MDT Build Lab deployment share.
-
     >[!NOTE]
-    >For security reasons, you normally don't add the password to the Bootstrap.ini file; however, because this deployment share is for creating reference image builds only, and should not be published to the production network, it is acceptable to do so in this situation.
+    >For security reasons, you normally don't add the password to the Bootstrap.ini file; however, because this deployment share is for creating reference image builds only, and should not be published to the production network, it is acceptable to do so in this situation. Obviously if you are not using the same password (pass@word3) that is provided in this lab, you must enter your own custom password on the Rules tab and in Bootstrap.ini.
      
 4.  In the **Windows PE** tab, in the **Platform** drop-down list, select **x86**.
 5.  In the **Lite Touch Boot Image Settings** area, configure the following settings:
@@ -446,12 +444,11 @@ For that reason, add only a minimal set of rules to Bootstrap.ini, such as which
 >[!NOTE]
 >In MDT, the x86 boot image can deploy both x86 and x64 operating systems (except on computers based on Unified Extensible Firmware Interface).
  
-
 ### Update the deployment share
 
 After the deployment share has been configured, it needs to be updated. This is the process when the Windows PE boot images are created.
 
-1.  Using the Deployment Workbench, right-click the **MDT Build Lab deployment share** and select **Update Deployment Share**.
+1.  In the Deployment Workbench, right-click the **MDT Build Lab** deployment share and select **Update Deployment Share**.
 2.  Use the default options for the Update Deployment Share Wizard.
 
 >[!NOTE]
@@ -479,7 +476,7 @@ Priority=Default
 DeployRoot=\\MDT01\MDTBuildLab$
 UserDomain=CONTOSO
 UserID=MDT_BA
-UserPassword=P@ssw0rd
+UserPassword=pass@word3
 SkipBDDWelcome=YES
 ```
 
@@ -508,7 +505,7 @@ _SMSTSORGNAME=Contoso
 UserDataLocation=NONE
 DoCapture=YES
 OSInstall=Y
-AdminPassword=P@ssw0rd
+AdminPassword=pass@word3
 TimeZoneName=Pacific Standard Time 
 JoinWorkgroup=WORKGROUP
 HideShell=YES
@@ -564,12 +561,12 @@ SkipFinalSummary=YES
 -   **SkipCapture.** Skips the Capture pane.
 -   **SkipFinalSummary.** Skips the final Windows Deployment Wizard summary. Because you use FinishAction=Shutdown, you don't want the wizard to stop in the end so that you need to click OK before the machine shuts down.
 
-## <a href="" id="sec06"></a>Build the Windows 10 reference image
+## Build the Windows 10 reference image
 
 Once you have created your task sequence, you are ready to create the Windows 10 reference image. This will be performed by launching the task sequence from a virtual machine which will then automatically perform the reference image creation and capture process.
 This steps below outline the process used to boot a virtual machine using an ISO boot image created by MDT, and then execute the reference image task sequence image to create and capture the Windows 10 reference image.
 
-1.  Copy the E:\\MDTBuildLab\\Boot\\MDT Build Lab x86.iso on MDT01 to C:\\ISO on the Hyper-V host.
+1.  Copy the D:\\MDTBuildLab\\Boot\\MDT Build Lab x86.iso on MDT01 to C:\\ISO on the Hyper-V host.
 
     **Note**  
     Remember, in MDT you can use the x86 boot image to deploy both x86 and x64 operating system images. That's why you can use the x86 boot image instead of the x64 boot image.

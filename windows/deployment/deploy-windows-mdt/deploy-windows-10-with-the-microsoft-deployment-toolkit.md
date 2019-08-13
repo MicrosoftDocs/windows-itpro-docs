@@ -38,11 +38,11 @@ The topics in this guide will walk you through the process of deploying WindowsÂ
 
 ## In this topic
 
-- [What is MDT?](#what-is-mdt) provides a brief overview of MDT.
+- [What is MDT](#what-is-mdt) provides a brief overview of MDT.
 - [The proof of concept environment](#proof-of-concept-environment) used in this guide is described. 
 - [Sample files](#sample-files) are provided to help you put the information you learn into practice more quickly.
 
-## What is MDT?
+## What is MDT
 
 MDT is a unified collection of tools, processes, and guidance for automating desktop and server deployment. In addition to reducing deployment time and standardizing desktop and server images, MDT enables you to more easily manage security and ongoing configurations. MDT builds on top of the core deployment tools in the Windows Assessment and Deployment Kit (Windows ADK) with additional guidance and features designed to reduce the complexity and time required for deployment in an enterprise environment.
 
@@ -59,6 +59,10 @@ For the purposes of this guide we will use the following servers and client mach
 ![computers](../images/mdt-01-fig01.png)
 
 DC01 is a domain controller; the other servers and client machines are members of the domain contoso.com for the fictitious Contoso Corporation.
+
+## Hypervisor requirement
+
+In addition to the servers and clients used in this lab, a Hyper-V host is also required to build a Windows 10 reference image. If you do not have access to a Hyper-V server, you can install Hyper-V on a Windows 10 or Windows 8.1 computer temporarily to use for this lab. For instructions on how to enable Hyper-V on Windows 10, see the [Verify support and install Hyper-V](https://docs.microsoft.com/windows/deployment/windows-10-poc#verify-support-and-install-hyper-v) section in the Windows 10 deployment test lab guide (this guide is a less detailed version of the current guide, but with more instructions for installing Hyper-V).
 
 ### Domain credentials
 
