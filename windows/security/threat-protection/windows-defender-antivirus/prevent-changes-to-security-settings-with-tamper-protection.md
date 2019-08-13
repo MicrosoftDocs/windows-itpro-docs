@@ -124,7 +124,7 @@ If you are an organization using Microsoft Defender Advanced Threat Protection E
 
 Your regular group policy doesn’t apply to Tamper Protection, and changes to Windows Defender settings will be ignored when Tamper Protection is on.
 
-### For MDATP E5, is configuring Tamper Protection in Intune targeted to the entire organization only?
+### For Microsoft Defender Advanced Threat Protection E5, is configuring Tamper Protection in Intune targeted to the entire organization only?
 
 Configuring Tamper Protection in Intune can be targeted to your entire organization as well as to devices and user groups with Intune.
 
@@ -134,7 +134,7 @@ Currently we do not have support to manage Tamper Protection through System Cent
 
 ### I have Windows E3 enrollment. Can I use configuring Tamper Protection in Intune?
 
-Currently, configuring Tamper Protection in Intune is only available for customers who have Microosft Defender Advanced Threat Protection E5.
+Currently, configuring Tamper Protection in Intune is only available for customers who have Microsoft Defender Advanced Threat Protection E5.
 
 ### What happens if I try to change Microsoft Defender settings in Intune, System Center Configuration Manager, and Windows Management Instrumentation when Tamper Protection is enabled on a device?
 
