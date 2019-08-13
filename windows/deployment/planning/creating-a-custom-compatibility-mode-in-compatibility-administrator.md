@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -67,14 +68,10 @@ A compatibility mode includes a set of compatibility fixes and must be deployed 
 
 3.  Select each of the available compatibility fixes to include in your custom-compatibility mode and then click **&gt;**.
 
-    **Important**  
-    If you are unsure which compatibility fixes to add, you can click **Copy Mode**. The **Select Compatibility Mode** dialog box appears and enables you to select from the preloaded compatibility modes. After you select a compatibility mode and click **OK**, any compatibility fixes that are included in the preloaded compatibility mode will be automatically added to your custom-compatibility mode.
-
-
-
-~~~
-If you have any compatibility fixes that require additional parameters, you can select the fix, and then click **Parameters**. The **Options for &lt;Compatibility\_Fix\_Name&gt;** dialog box appears, enabling you to update the parameter fields.
-~~~
+> [!IMPORTANT]  
+> If you are unsure which compatibility fixes to add, you can click **Copy Mode**. The **Select Compatibility Mode** dialog box appears and enables you to select from the preloaded compatibility modes. After you select a compatibility mode and click **OK**, any compatibility fixes that are included in the preloaded compatibility mode will be automatically added to your custom-compatibility mode.
+> If you have any compatibility fixes that require additional parameters, you can select the fix, and then click **Parameters**. The **Options for &lt;Compatibility\_Fix\_Name&gt;** dialog box appears, enabling you to update the parameter fields.
+```
 
 4. After you are done selecting the compatibility fixes to include, click **OK**.
 
