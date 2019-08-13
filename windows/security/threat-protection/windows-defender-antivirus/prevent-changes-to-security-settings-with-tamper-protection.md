@@ -42,7 +42,7 @@ With Tamper Protection, malicious apps are prevented from taking actions like th
 - Editing or removing security settings through group policies
 - and so on.
 
-Tamper Protection doesn't prevent you from viewing your security settings, or your security team from viewing or changing settings for your organization. In addition, Tamper Protection doesn't affect how third-party antivirus apps register with the Windows Security app. Note that if your organization is using Windows 10 Enterprise E5, individual users can't change the Tamper Protection setting; this is managed by your security team.
+Tamper Protection doesn't prevent you from viewing your security settings. And, Tamper Protection doesn't affect how third-party antivirus apps register with the Windows Security app. If your organization is using Windows 10 Enterprise E5, individual users can't change the Tamper Protection setting; this is managed by your security team.
 
 ### What do you want to do?
 
@@ -76,10 +76,10 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
 1. Make sure your organization meets the following requirements:
 
-    - Your organization must have Microsoft 365 E5, which includes Microsoft Defender Advanced Threat Protection. (See [Microsoft 365 Enterprise overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) for more details.)
-    - Your organization's devices must be managed by Intune.
+    - Your organization must have [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (this is included in Microsoft 365 E5. See [Microsoft 365 Enterprise overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) for more details.)
+    - Your organization's devices must be managed by [Intune](https://docs.microsoft.com/intune/device-management-capabilities).
     - Your Windows machines must be running Windows OS 1903 or later.
-    - Your machines must be using antimalware platform version  4.18.1906.3 (or above) and antimalware engine version 15500.X (or above)
+    - Your machines must be using antimalware platform version  4.18.1906.3 (or above) and antimalware engine version 1.1.15500.X (or above)
     - You must be using Windows Security and update security intelligence to version 1.287.60.0 (or above)
 
 2. Go to the Microsoft 365 Device Management portal ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) and sign in with your work or school account. 
@@ -94,7 +94,7 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
 5. Assign the profile to one or more groups.
 
-### Frequently asked questions about configuring Tamper Protection in Intune (Microsoft 365 E5)
+### Frequently asked questions
 
 #### To which Windows OS versions is configuring Tamper Protection is applicable?
 
@@ -104,13 +104,13 @@ Windows 1903 May release
 
 No
 
-#### Will configuring Tamper Protection in Intune have any impact on third party AV registration?
+#### Will Tamper Protection have any impact on third party antivirus registration?
 
-Third-party antivirus must be registered with the Windows Security Application.
+No, third-party antivirus will continue to register with the Windows Security application.
 
 #### What happens if Microsoft Defender is not active on a device?
 
-Configuring Tamper Protection in Intune will not have any impact on such devices.
+Tamper Protection will not have any impact on such devices.
 
 #### How can I turn Tamper Protection on/off?
 
@@ -137,7 +137,7 @@ Currently, configuring Tamper Protection in Intune is only available for custome
 
 #### What happens if I try to change Microsoft Defender settings in Intune, System Center Configuration Manager, and Windows Management Instrumentation when Tamper Protection is enabled on a device?
 
-You won’t be able to turn the feature on; those change requests are ignored.
+You won’t be able to change the features that are protected by Tamper Protection; those change requests are ignored.
 
 #### I’m an enterprise customer. Can local admins change Tamper Protection on their devices?
 
@@ -154,3 +154,7 @@ Yes. The alert is shown in [https://microsoft.securitycenter.com](https://micros
 In addition, your security operations team can use hunting queries, such as the following:
 
 `AlertEvents | where Title == "Tamper Protection bypass"`
+
+## Related articles
+
+[Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
