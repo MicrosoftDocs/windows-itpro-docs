@@ -78,9 +78,10 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
     - Your organization must have [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (this is included in Microsoft 365 E5. See [Microsoft 365 Enterprise overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) for more details.)
     - Your organization's devices must be managed by [Intune](https://docs.microsoft.com/intune/device-management-capabilities).
-    - Your Windows machines must be running Windows OS 1903 or later.
-    - Your machines must be using antimalware platform version  4.18.1906.3 (or above) and antimalware engine version 1.1.15500.X (or above)
-    - You must be using Windows Security and update security intelligence to version 1.287.60.0 (or above)
+    - Your Windows machines must be running [Windows OS 1903](https://docs.microsoft.com/windows/release-information/status-windows-10-1903) or later.
+    - You must be using Windows security and update [security intelligence](https://www.microsoft.com/wdsi/definitions) to version 1.287.60.0 (or above)
+    - Your machines must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version 1.1.15500.X (or above)
+
 
 2. Go to the Microsoft 365 Device Management portal ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) and sign in with your work or school account. 
 
@@ -88,9 +89,9 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
 4. Create a profile that includes the following settings:
 
-    - Platform: Windows 10 and later
-    - ProfileType: Endpoint protection
-    - Settings > Windows Defender Security Center > Tamper Protection 
+    - **Platform**: Windows 10 and later
+    - **ProfileType**: Endpoint protection
+    - **Settings** > Windows Defender Security Center > Tamper Protection 
 
 5. Assign the profile to one or more groups.
 
@@ -157,4 +158,8 @@ In addition, your security operations team can use hunting queries, such as the 
 
 ## Related articles
 
+[Windows 10 Enterprise Security](https://docs.microsoft.com/windows/security/index)
+
 [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+
+[Microsoft 365 Enterprise overview (at a glance)](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#at-a-glance)
