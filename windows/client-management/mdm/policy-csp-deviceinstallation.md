@@ -12,7 +12,6 @@ author: manikadhiman
 
 # Policy CSP - DeviceInstallation
 
-
 <hr/>
 
 <!--Policies-->
@@ -111,13 +110,6 @@ ADMX Info:
 
 <!--/SupportedValues-->
 <!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
 To enable this policy, use the following SyncML. This example allows Windows to install compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use `&#xF000;` as a delimiter. 
 
 
@@ -148,6 +140,11 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <<<  Section end 2018/11/15 12:26:41.751
 <<<  [Exit status: SUCCESS]
 ```
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
 
 <hr/>
 
@@ -222,13 +219,6 @@ ADMX Info:
 
 <!--/SupportedValues-->
 <!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
 To enable this policy, use the following SyncML. This example allows Windows to install:
 
 - Floppy Disks, ClassGUID = {4d36e980-e325-11ce-bfc1-08002be10318}
@@ -266,6 +256,11 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <<<  Section end 2018/11/15 12:26:41.751
 <<<  [Exit status: SUCCESS]
 ```
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
 
 <hr/>
 
@@ -311,8 +306,6 @@ If you enable this policy setting, Windows does not retrieve device metadata for
 
 If you disable or do not configure this policy setting, the setting in the Device Installation Settings dialog box controls whether Windows retrieves device metadata from the Internet.
 
-
-
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -339,8 +332,6 @@ ADMX Info:
 
 <!--/Validation-->
 <!--/Policy-->
-
-
 
 <hr/>
 
@@ -386,7 +377,6 @@ If you enable this policy setting, Windows is prevented from installing or updat
 
 If you disable or do not configure this policy setting, Windows is allowed to install or update the device driver for any device that is not described by the "Prevent installation of devices that match any of these device IDs," "Prevent installation of devices for these device classes," or "Prevent installation of removable devices" policy setting.
 
-
 <!--/Description-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -407,13 +397,6 @@ ADMX Info:
 
 <!--/SupportedValues-->
 <!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
 To enable this policy, use the following SyncML. This example prevents Windows from installing devices that are not specifically described by any other policy setting. 
 
 
@@ -448,7 +431,11 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 You can also block installation by using a custom profile in Intune. 
 
 ![Custom profile](images/custom-profile-prevent-other-devices.png)
+<!--/Example-->
+<!--Validation-->
 
+<!--/Validation-->
+<!--/Policy-->
 
 <hr/>
 
@@ -512,9 +499,10 @@ ADMX Info:
 -   GP ADMX file name: *deviceinstallation.admx*
 
 <!--/ADMXBacked-->
-<!--/Policy-->
+<!--SupportedValues-->
 
-
+<!--/SupportedValues-->
+<!--Example-->
 <hr/>
 To enable this policy, use the following SyncML. This example prevents Windows from installing compatible devices with a device ID of USB\Composite or USB\Class_FF. To configure multiple classes, use <code>&amp;#xF000;</code> as a delimiter. To apply the policy to matching device classes that are already installed, set DeviceInstall_IDs_Deny_Retroactive to true. 
 
@@ -552,6 +540,11 @@ You can also block installation and usage of prohibited peripherals by using a c
 For example, this custom profile blocks installation and usage of USB devices with hardware IDs "USB\Composite" and "USB\Class_FF", and applies to USB devices with matching hardware IDs that are already installed.
 
 ![Custom profile](images/custom-profile-prevent-device-ids.png)
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
 
 
 <!--Policy-->
@@ -614,9 +607,10 @@ ADMX Info:
 -   GP ADMX file name: *deviceinstallation.admx*
 
 <!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!--SupportedValues-->
 
+<!--/SupportedValues-->
+<!--Example-->
 To enable this policy, use the following SyncML. This example prevents Windows from installing:
 
 - Floppy Disks, ClassGUID = {4d36e980-e325-11ce-bfc1-08002be10318}
@@ -653,6 +647,12 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <<<  Section end 2018/11/15 12:26:41.751
 <<<  [Exit status: SUCCESS]
 ```
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+<hr/>
 
 Footnote:
 
@@ -664,4 +664,3 @@ Footnote:
 -   6 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
-
