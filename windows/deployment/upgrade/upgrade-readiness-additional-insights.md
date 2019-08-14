@@ -5,7 +5,8 @@ manager: laurawi
 ms.author: greglin
 description: Explains additional features of Upgrade Readiness.
 ms.prod: w10
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ms.collection: M365-analytics
 ---
@@ -14,43 +15,8 @@ ms.collection: M365-analytics
 
 This topic provides information on additional features that are available in Upgrade Readiness to provide insights into your environment. These include:
 
-- [Spectre and Meltdown protections](#spectre-and-meltdown-protection-status): Status of devices with respect to their anti-virus, security update, and firmware updates related to protection from the "Spectre" and "Meltdown" vulnerabilities.
 - [Site discovery](#site-discovery): An inventory of web sites that are accessed by client computers running Windows 7, Windows 8.1, or Windows 10 using Internet Explorer.
 - [Office add-ins](#office-add-ins): A list of the Microsoft Office add-ins that are installed on client computers.
-
-## Spectre and Meltdown protection status
-Microsoft has published guidance for IT Pros that outlines the steps you can take to improve protection against the hardware vulnerabilities known as "Spectre" and "Meltdown." See [Windows Client Guidance for IT Pros to protect against speculative execution side-channel vulnerabilities](https://go.microsoft.com/fwlink/?linkid=867468) for details about the vulnerabilities and steps you can take.
- 
-Microsoft recommends three steps to help protect against the Spectre and Meltdown vulnerabilities:
-- Verify that you are running a supported antivirus application.
-- Apply all available Windows operating system updates, including the January 2018 and later Windows security updates.
-- Apply any applicable processor firmware (microcode) updates provided by your device manufacturer(s).
- 
-Upgrade Readiness reports on status of your devices in these three areas.
-
-![Spectre-Meltdown protection blades](../images/spectre-meltdown-prod-closeup.png)
-
->[!IMPORTANT]
->To provide these blades with data, ensure that your devices can reach the endpoint **http://adl.windows.com**. (See [Enrolling devices in Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started) for more about necessary endpoints and how to whitelist them.)
-
-### Anti-virus status blade
-This blade helps you determine if your devices' anti-virus solution is compatible with the latest Windows operating system updates. It shows the number of devices that have an anti-virus solution with no known issues, issues reported, or an unknown status for a particular Windows security update. In the following example, an anti-virus solution that has no known issues with the January 3, 2018 Windows update is installed on about 2,800 devices.
-
-![Spectre-Meltdown antivirus blade](../images/AV-status-by-computer.png)
-
-### Security update status blade
-This blade indicates whether a Windows security update that includes Spectre- or Meltdown-related fixes (January 3, 2018 or later) has been installed, as well as whether specific fixes have been disabled. Though protections are enabled by default on devices running Windows (but not Windows Server) operating systems, some IT administrators might choose to disable specific protections. In the following example, about 4,300 devices have a Windows security update that includes Spectre or Meltdown protections installed, and those protections are enabled.
-
-![Spectre-Meltdown antivirus blade](../images/win-security-update-status-by-computer.png)
-
->[!IMPORTANT]
->If you are seeing computers with statuses of either “Unknown – action may be required” or “Installed, but mitigation status unknown,” it is likely that you need to whitelist the **http://adl.windows.com** endpoint.
-
-### Firmware update status blade
-This blade reports the number of devices that have installed a firmware update that includes Spectre or Meltdown protections. The blade might report a large number of blank, “unknown”, or “to be determined” statuses at first. As CPU information is provided by partners, the blade will automatically update with no further action required on your part.
-
-
-
 
 ## Site discovery
 

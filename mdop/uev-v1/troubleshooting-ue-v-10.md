@@ -19,7 +19,7 @@ ms.date: 08/30/2016
 
 Troubleshooting content is not included in the Administrator's Guide for this product. Instead, you can find troubleshooting information for this product on the [TechNet Wiki](https://go.microsoft.com/fwlink/p/?LinkId=224905).
 
-##  Find troubleshooting information
+## Find troubleshooting information
 
 
 You can use the following information to find troubleshooting content or additional technical content for this product.
@@ -44,7 +44,7 @@ The first step to find help content in the Administrator’s Guide is to search 
 
 3.  Review the search results for assistance.
 
-##  Create a troubleshooting article
+## Create a troubleshooting article
 
 
 If you have a troubleshooting tip or a best practice to share that is not already included in the MDOP Online Help or TechNet Wiki, you can create your own TechNet Wiki article.

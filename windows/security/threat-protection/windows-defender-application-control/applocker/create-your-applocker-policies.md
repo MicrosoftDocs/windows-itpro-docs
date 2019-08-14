@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Create Your AppLocker policies
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This overview topic for the IT professional describes the steps to create an AppLocker policy and prepare it for deployment.
 

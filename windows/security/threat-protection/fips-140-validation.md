@@ -18,14 +18,14 @@ ms.reviewer:
 
 On this page
 
-  - [Introduction](https://technet.microsoft.com/library/cc750357.aspx#id0eo)
-  - [FIPS 140 Overview](https://technet.microsoft.com/library/cc750357.aspx#id0ebd)
-  - [Microsoft Product Validation (Information for Procurement Officers and Auditors)](https://technet.microsoft.com/library/cc750357.aspx#id0ezd)
-  - [Information for System Integrators](https://technet.microsoft.com/library/cc750357.aspx#id0eve)
-  - [Information for Software Developers](https://technet.microsoft.com/library/cc750357.aspx#id0eibac)
-  - [FIPS 140 FAQ](https://technet.microsoft.com/library/cc750357.aspx#id0eqcac)
-  - [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#id0ewfac)
-  - [Cryptographic Algorithms](https://technet.microsoft.com/library/cc750357.aspx#id0erobg)
+- [Introduction](https://technet.microsoft.com/library/cc750357.aspx#id0eo)
+- [FIPS 140 Overview](https://technet.microsoft.com/library/cc750357.aspx#id0ebd)
+- [Microsoft Product Validation (Information for Procurement Officers and Auditors)](https://technet.microsoft.com/library/cc750357.aspx#id0ezd)
+- [Information for System Integrators](https://technet.microsoft.com/library/cc750357.aspx#id0eve)
+- [Information for Software Developers](https://technet.microsoft.com/library/cc750357.aspx#id0eibac)
+- [FIPS 140 FAQ](https://technet.microsoft.com/library/cc750357.aspx#id0eqcac)
+- [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#id0ewfac)
+- [Cryptographic Algorithms](https://technet.microsoft.com/library/cc750357.aspx#id0erobg)
 
 Updated: March 2018
 
@@ -103,12 +103,12 @@ Rather than validate individual components and products, Microsoft chooses to va
 
 The following list contains some of the Windows components and Microsoft products that rely on FIPS 140 validated cryptographic modules:
 
-  - Schannel Security Package
-  - Remote Desktop Protocol (RDP) Client
-  - Encrypting File System (EFS)
-  - Some Microsoft .NET Framework Applications (.NET also provides cryptographic algorithm implementations that have not been FIPS 140 validated.)
-  - BitLocker® Drive Full-volume Encryption
-  - IPsec Settings of Windows Firewall
+- Schannel Security Package
+- Remote Desktop Protocol (RDP) Client
+- Encrypting File System (EFS)
+- Some Microsoft .NET Framework Applications (.NET also provides cryptographic algorithm implementations that have not been FIPS 140 validated.)
+- BitLocker® Drive Full-volume Encryption
+- IPsec Settings of Windows Firewall
 
 ## Information for System Integrators
 
@@ -145,12 +145,12 @@ While there are alternative methods for setting the FIPS local/group security po
 
 The following list details some of the Microsoft components that use the cryptographic functionality implemented by either CNG or legacy CAPI. When the FIPS Local/Group Security Policy is set, the following components will enforce the validated module Security Policy.
 
-  - Schannel Security Package
-  - Remote Desktop Protocol (RDP) Client
-  - Encrypting File System (EFS)
-  - Some Microsoft .NET Framework Applications (.NET also provides cryptographic algorithm implementations that have not been FIPS 140 validated.)
-  - BitLocker® Drive Full-volume Encryption
-  - IPsec Settings of Windows Firewall
+- Schannel Security Package
+- Remote Desktop Protocol (RDP) Client
+- Encrypting File System (EFS)
+- Some Microsoft .NET Framework Applications (.NET also provides cryptographic algorithm implementations that have not been FIPS 140 validated.)
+- BitLocker® Drive Full-volume Encryption
+- IPsec Settings of Windows Firewall
 
 #### Effects of Setting FIPS Local/Group Security Policy Flag
 

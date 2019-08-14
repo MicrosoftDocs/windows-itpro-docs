@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Enforce AppLocker rules
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes how to enforce application control rules by using AppLocker.
 

@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Working with AppLocker policies
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals provides links to procedural topics about creating, maintaining, and testing AppLocker policies.
 

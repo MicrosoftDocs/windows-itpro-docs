@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Document your application control management processes
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This planning topic describes the Windows Defender Application Control (WDAC) policy maintenance information to record for your design document.
 

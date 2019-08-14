@@ -16,39 +16,22 @@ localizationpriority: medium
 ms.date: 08/19/2018
 ms.reviewer: 
 ---
-# Validate and Deploy Multifactor Authentication Services (MFA)
+# Validate and Deploy Multi-factor Authentication (MFA)
 
 > [!IMPORTANT]
 > As of July 1, 2019, Microsoft will no longer offer MFA Server for new deployments. New customers who would like to require multi-factor authentication from their users should use cloud-based Azure Multi-Factor Authentication. Existing customers who have activated MFA Server prior to July 1 will be able to download the latest version, future updates and generate activation credentials as usual.
 
 **Applies to**
--   Windows 10, version 1703 or later
--   On-premises deployment
--   Key trust
 
+- Windows 10, version 1703 or later
+- On-premises deployment
+- Key trust
 
-Windows Hello for Business requires all users perform an additional factor of authentication prior to creating and registering a Windows Hello for Business credential.  Windows Hello for Business deployments use Azure Multi-Factor Authentication (Azure MFA) services for the secondary authentication.  On-Premises deployments use Azure MFA server, an on-premises implementation that do not require synchronizing Active Directory credentials to Azure Active Directory.
+Windows Hello for Business requires all users perform multi-factor authentication prior to creating and registering a Windows Hello for Business credential.  On-premises deployments can use certificates, third-party authentication providers for AD FS, or a custom authentication provider for AD FS as an on-premises MFA option.
 
-Azure Multi-Factor Authentication is an easy to use, scalable, and reliable solution that provides a second method of authentication so your users are always protected.
-* **Easy to Use** - Azure Multi-Factor Authentication is simple to set up and use. The extra protection that comes with Azure Multi-Factor Authentication allows users to manage their own devices. Best of all, in many instances it can be set up with just a few simple clicks.
-* **Scalable** - Azure Multi-Factor Authentication uses the power of the cloud and integrates with your on-premises AD and custom applications. This protection is even extended to your high-volume, mission-critical scenarios.
-* **Always Protected** - Azure Multi-Factor Authentication provides strong authentication using the highest industry standards.
-* **Reliable** - We guarantee 99.9% availability of Azure Multi-Factor Authentication. The service is considered unavailable when it is unable to receive or process verification requests for the two-step verification.
+For information on available third-party authentication methods see [Configure Additional Authentication Methods for AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs). For creating a custom authentication method see [Build a Custom Authentication Method for AD FS in Windows Server](https://docs.microsoft.com/windows-server/identity/ad-fs/development/ad-fs-build-custom-auth-method)
 
-## On-Premises Azure MFA Server
-
-On-premises deployments, both key and certificate trust, use the Azure MFA server where the credentials are not synchronized to Azure Active Directory.
-
-### Infrastructure
-
-A lab or proof-of-concept environment does not need high-availability or scalability.  However, a production environment needs both of these.  Ensure your environment considers and incorporates these factors, as necessary. All production environments should have a minimum of two MFA servers—one primary and one secondary server. The environment should have a minimum of two User Portal Servers that are load balanced using hardware or Windows Network Load Balancing.
-
-Please follow [Download the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-server#download-the-azure-multi-factor-authentication-server) to download Azure MFA server. 
-
->[!IMPORTANT]
->Make sure to validate the requirements for Azure MFA server, as outlined in [Install and Configure the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-server#install-and-configure-the-azure-multi-factor-authentication-server) before proceeding. Do not use installation instructions provided in the article.
-
-Once you have validated all the requirements, please proceed to [Configure or Deploy Multifactor Authentication Services](hello-key-trust-deploy-mfa.md).
+Follow the integration and deployment guide for the authentication provider you select to integrate and deploy it to AD FS. Make sure that the authentication provider is selected as a multi-factor authentication option in the AD FS authentication policy. For information on configuring AD FS authentication policies see [Configure Authentication Policies](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-authentication-policies).
 
 ## Follow the Windows Hello for Business on premises certificate trust deployment guide
 1. [Validate Active Directory prerequisites](hello-key-trust-validate-ad-prereq.md)
