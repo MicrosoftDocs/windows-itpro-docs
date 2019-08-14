@@ -121,7 +121,7 @@ These XML examples show how to perform various tasks using OMA DM.
 
 The following example shows how to add PEAP-MSCHAPv2 network with SSID 'MyNetwork,' a proxy URL 'testproxy,' and port 80.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Atomic>
@@ -160,7 +160,7 @@ The following example shows how to add PEAP-MSCHAPv2 network with SSID 'MyNetwor
 
 The following example shows how to query Wi-Fi profiles installed on an MDM server.
 
-``` syntax
+```xml
 <Get>
    <CmdID>301</CmdID>
    <Item>
@@ -173,7 +173,7 @@ The following example shows how to query Wi-Fi profiles installed on an MDM serv
 
 The following example shows the response.
 
-``` syntax
+```xml
 <Results>
    <CmdID>3</CmdID>
    <MsgRef>1</MsgRef>
@@ -190,17 +190,17 @@ The following example shows the response.
 
 The following example shows how to remove a network with SSID ‘MyNetwork’ and no proxy. Removing all network authentication types is done in this same manner.
 
-``` syntax
+```xml
 <Atomic>
-      <CmdID>300</CmdID>
-      <Delete>
-        <CmdID>301</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml</LocURI>
-          </Target>
-        </Item>
-      </Delete>
+  <CmdID>300</CmdID>
+  <Delete>
+    <CmdID>301</CmdID>
+    <Item>
+      <Target>
+        <LocURI>./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml</LocURI>
+      </Target>
+    </Item>
+  </Delete>
 </Atomic>
 ```
 
@@ -208,21 +208,21 @@ The following example shows how to remove a network with SSID ‘MyNetwork’ an
 
 The following example shows how to add PEAP-MSCHAPv2 network with SSID ‘MyNetwork’ and root CA validation for server certificate.
 
-``` syntax
+```xml
 <Atomic>
-      <CmdID>300</CmdID>
-      <Add>
-        <CmdID>301</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">chr</Format>
-          </Meta>
-          <Data><?xml version="1.0"?><WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1"><name>MyNetwork</name><SSIDConfig><SSID><name>MyNetwork</name></SSID><nonBroadcast>false</nonBroadcast></SSIDConfig><connectionType>ESS</connectionType><connectionMode>manual</connectionMode><MSM><security><authEncryption><authentication>WPA2</authentication><encryption>AES</encryption><useOneX>true</useOneX></authEncryption><OneX xmlns="http://www.microsoft.com/networking/OneX/v1"><authMode>user</authMode><EAPConfig><EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><EapMethod><Type xmlns="http://www.microsoft.com/provisioning/EapCommon">25</Type><VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId><VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType><AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId></EapMethod><Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"><Type>25</Type><EapType xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1"><ServerValidation><DisableUserPromptForServerValidation>true</DisableUserPromptForServerValidation><ServerNames></ServerNames><TrustedRootCA> InsertCertThumbPrintHere </TrustedRootCA></ServerValidation><FastReconnect>true</FastReconnect><InnerEapOptional>false</InnerEapOptional><Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"><Type>26</Type><EapType xmlns="http://www.microsoft.com/provisioning/MsChapV2ConnectionPropertiesV1"><UseWinLogonCredentials>false</UseWinLogonCredentials></EapType></Eap><EnableQuarantineChecks>false</EnableQuarantineChecks><RequireCryptoBinding>false</RequireCryptoBinding><PeapExtensions><PerformServerValidation xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">true</PerformServerValidation><AcceptServerName xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">false</AcceptServerName></PeapExtensions></EapType></Eap></Config></EapHostConfig></EAPConfig></OneX></security></MSM></WLANProfile> </Data>
-        </Item>
-      </Add>
+  <CmdID>300</CmdID>
+  <Add>
+    <CmdID>301</CmdID>
+    <Item>
+      <Target>
+        <LocURI>./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml</LocURI>
+      </Target>
+      <Meta>
+        <Format xmlns="syncml:metinf">chr</Format>
+      </Meta>
+      <Data><?xml version="1.0"?><WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1"><name>MyNetwork</name><SSIDConfig><SSID><name>MyNetwork</name></SSID><nonBroadcast>false</nonBroadcast></SSIDConfig><connectionType>ESS</connectionType><connectionMode>manual</connectionMode><MSM><security><authEncryption><authentication>WPA2</authentication><encryption>AES</encryption><useOneX>true</useOneX></authEncryption><OneX xmlns="http://www.microsoft.com/networking/OneX/v1"><authMode>user</authMode><EAPConfig><EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><EapMethod><Type xmlns="http://www.microsoft.com/provisioning/EapCommon">25</Type><VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId><VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType><AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId></EapMethod><Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"><Type>25</Type><EapType xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1"><ServerValidation><DisableUserPromptForServerValidation>true</DisableUserPromptForServerValidation><ServerNames></ServerNames><TrustedRootCA> InsertCertThumbPrintHere </TrustedRootCA></ServerValidation><FastReconnect>true</FastReconnect><InnerEapOptional>false</InnerEapOptional><Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"><Type>26</Type><EapType xmlns="http://www.microsoft.com/provisioning/MsChapV2ConnectionPropertiesV1"><UseWinLogonCredentials>false</UseWinLogonCredentials></EapType></Eap><EnableQuarantineChecks>false</EnableQuarantineChecks><RequireCryptoBinding>false</RequireCryptoBinding><PeapExtensions><PerformServerValidation xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">true</PerformServerValidation><AcceptServerName xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">false</AcceptServerName></PeapExtensions></EapType></Eap></Config></EapHostConfig></EAPConfig></OneX></security></MSM></WLANProfile> </Data>
+    </Item>
+  </Add>
 </Atomic>
 ```
 

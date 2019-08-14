@@ -191,7 +191,7 @@ This setting will prevent a scan from occurring after receiving an update. You c
 
 
 ### Enable headless UI mode
-   - Double-click **Enable headless UI mode** and set the option to **Enabled**. Click **OK**. This hides the entire Windows Defender AV user interface from users.
+- Double-click **Enable headless UI mode** and set the option to **Enabled**. Click **OK**. This hides the entire Windows Defender AV user interface from users.
 
 
 

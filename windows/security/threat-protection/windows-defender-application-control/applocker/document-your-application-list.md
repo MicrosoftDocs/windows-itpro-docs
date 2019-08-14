@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Document your app list
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This planning topic describes the app information that you should document when you create a list of apps for AppLocker policies.
 

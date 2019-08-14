@@ -830,7 +830,7 @@ The following list shows the apps that may be included in the inbox.
 
 The following example disables the calendar application.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
         <Add>
@@ -854,7 +854,7 @@ The following example disables the calendar application.
 
 The following example blocks the usage of the map application.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Add>
@@ -1394,7 +1394,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
 ## Example for Windows 10 Holographic for Business
 The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inboxappsandcomponents) to enable to enable a working device, as well as Settings.
 
-``` syntax
+```xml
 <RuleCollection Type="Appx" EnforcementMode="Enabled">
     <FilePublisherRule Id="96B82A15-F841-499a-B674-963DC647762F"
                      Name="Whitelist BackgroundTaskHost"

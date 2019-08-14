@@ -1,6 +1,6 @@
 ﻿# [Windows Hello for Business](hello-identity-verification.md)
 
-##[Password-less Strategy](passwordless-strategy.md)
+## [Password-less Strategy](passwordless-strategy.md)
 
 ## [Windows Hello for Business Overview](hello-overview.md)
 ## [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)

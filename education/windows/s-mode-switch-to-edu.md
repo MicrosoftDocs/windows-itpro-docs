@@ -42,7 +42,7 @@ S mode is an enhanced security mode of Windows 10 – streamlined for security a
 |Credential Guard | | | | X |
 |Device Guard | | | | X |
 
-###  Windows 10 in S mode is safe, secure, and fast.  
+### Windows 10 in S mode is safe, secure, and fast.  
 However, in some limited scenarios, you might need to switch to Windows 10 Education. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store. 
 
 ## How to switch

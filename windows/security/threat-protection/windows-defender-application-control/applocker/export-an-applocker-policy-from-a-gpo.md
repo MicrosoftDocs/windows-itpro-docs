@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Export an AppLocker policy from a GPO
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes the steps to export an AppLocker policy from a Group Policy Object (GPO) so that it can be modified.
 

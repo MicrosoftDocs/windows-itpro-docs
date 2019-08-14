@@ -16,7 +16,7 @@ ms.date: 08/17/2017
 ms.reviewer: 
 ---
 
-#  Windows Defender Credential Guard: Known issues 
+# Windows Defender Credential Guard: Known issues 
 
 **Applies to**
 -   Windows 10

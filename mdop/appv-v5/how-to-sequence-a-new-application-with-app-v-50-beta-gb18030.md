@@ -143,11 +143,11 @@ Click **Next**.
 
 11. The **Customize** page is displayed. If you are finished installing and configuring the virtual application, select **Stop now** and skip to step 14 of this procedure. To perform either of the following customizations, select **Customize**.
 
-   -   Prepare the virtual package for streaming. Streaming improves the experience when the virtual application package is run on target computers.
+    -   Prepare the virtual package for streaming. Streaming improves the experience when the virtual application package is run on target computers.
 
-   -   Specify the operating systems that can run this package.
+    -   Specify the operating systems that can run this package.
 
-   Click **Next**.
+    Click **Next**.
 
 12. On the **Streaming** page, run each program so that it can be optimized and run more efficiently on target computers. It can take several minutes for all the applications to run. After all applications have run, close each of the applications, and then click **Next**.
 
@@ -234,11 +234,11 @@ Click **Next**.
 
 10. The **Customize** page is displayed. If you are finished installing and configuring the virtual application, select **Stop now** and skip to step 12 of this procedure. To perform either of the following customizations, select **Customize**.
 
-   -   Optimize how the package will run across a slow or unreliable network.
+    -   Optimize how the package will run across a slow or unreliable network.
 
-   -   Specify the operating systems that can run this package.
+    -   Specify the operating systems that can run this package.
 
-   Click **Next**.
+    Click **Next**.
 
 11. On the **Streaming** page, run each program so that it can be optimized and run more efficiently on target computers. Streaming improves the experience when the virtual application package is run on target computers on high-latency networks. It can take several minutes for all the applications to run. After all applications have run, close each of the applications. You can also configure the package to be required to be fully downloaded before opening by selecting the **Force applications to be downloaded** check-box. Click **Next**.
 
