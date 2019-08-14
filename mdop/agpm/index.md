@@ -1,7 +1,7 @@
 ---
 title: Advanced Group Policy Management
 description: Advanced Group Policy Management
-author: jamiejdt
+author: dansimp
 ms.assetid: 493ca3c3-c3d6-4bb1-9430-dc1e43c86bb0
 ms.pagetype: mdop
 ms.mktglfcycl: manage

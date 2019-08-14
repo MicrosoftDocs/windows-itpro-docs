@@ -145,8 +145,8 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
 Use the Dump Check Utility (Dumpchk.exe) to read a memory dump file or verify that the file was created correctly. You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that the memory dump files are not corrupted or invalid. 
 
--	[Using DumpChk]( https://docs.microsoft.com/windows-hardware/drivers/debugger/dumpchk)
--	[Download DumpCheck](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
+- [Using DumpChk]( https://docs.microsoft.com/windows-hardware/drivers/debugger/dumpchk)
+- [Download DumpCheck](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
 
 Learn how to use Dumpchk.exe to check your dump files: 
 
