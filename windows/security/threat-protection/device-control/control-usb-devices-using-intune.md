@@ -112,13 +112,13 @@ To prevent malware infections or data loss, an organization may restrict USB dri
 | Allow installation and usage of USB drives and other peripherals | Allow users to install only the USB drives and other peripherals included on a list of authorized devices or device types |
 | Prevent installation and usage of USB drives and other peripherals| Prevent users from installing USB drives and other peripherals included on a list of unauthorized devices and device types |
 
-All of the above controls can be set through the Intune [Administrative Templates](https://docs.microsoft.com/en-us/intune/administrative-templates-windows). The relevant policies are located here in the Intune Administrator Templates:
+All of the above controls can be set through the Intune [Administrative Templates](https://docs.microsoft.com/intune/administrative-templates-windows). The relevant policies are located here in the Intune Administrator Templates:
 
 ![Admintemplates](images/admintemplates.png)
 
 >[!Note]
 >Using Intune, you can apply device configuration policies to AAD user and/or device groups.
-The above policies can also be set through the [Device Installation CSP settings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-deviceinstallation) and the [Device Installation GPOs](https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/bb530324(v=msdn.10)).
+The above policies can also be set through the [Device Installation CSP settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) and the [Device Installation GPOs](https://docs.microsoft.com/previous-versions/dotnet/articles/bb530324(v=msdn.10)).
 
 >[!Note]
 >Always test and refine these settings with a pilot group of users and devices first before applying them in production.
@@ -131,14 +131,14 @@ One way to approach allowing installation and usage of USB drives and other peri
 >[!Note]
 >Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
 >1.	Enable **prevent installation of devices not described by other policy settings** to all users.
->2.	Enable **allow installation of devices using drivers that match these device setup classes** for all [device setup classes](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+>2.	Enable **allow installation of devices using drivers that match these device setup classes** for all [device setup classes](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
 To enforce the policy for already installed devices, apply the prevent policies that have this setting.
 
 When configuring the allow device installation policy, you will need to allow all parent attributes as well.  You can view the parents of a device by opening device manager and view by connection.
 
 ![Device by Connection](images/devicesbyconnection.png)
 
-In this example, the following classesneeded to be added: HID, Keboard, and {36fc9e60-c465-11cf-8056-444553540000}. More information on [Microsoft-provided USB drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/supported-usb-classes).
+In this example, the following classesneeded to be added: HID, Keboard, and {36fc9e60-c465-11cf-8056-444553540000}. More information on [Microsoft-provided USB drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/supported-usb-classes).
 
 ![Device host controller](images/devicehostcontroller.jpg)
 
@@ -152,7 +152,7 @@ If you want to restrict to certain devices, remove the device setup class of the
 
 >Using PowerShell: Get-WMIObject -Class Win32_DiskDrive |
 Select-Object -Property *  
->For the typical format for the USB ID please reference the following link; (https://docs.microsoft.com/en-us/windows-hardware/drivers/install/standard-usb-identifiers)
+>For the typical format for the USB ID please reference the following link; (https://docs.microsoft.com/windows-hardware/drivers/install/standard-usb-identifiers)
 
 ### Prevent installation and usage of USB drives and other peripherals
 If you want to prevent a device class or certain devices, you can use the prevent device installation policies. 
@@ -252,11 +252,11 @@ You can create custom alerts and response actions with the WDATP Connector and t
 
 **Restrict execution of all applications** on the machine except a predefined set
 MDATP connector is one of over 200 pre-defined connectors including Outlook, Teams, Slack, etc. Custom connectors can be built.
-- [More information on WDATP Connector Response Actions](https://docs.microsoft.com/en-us/connectors/wdatp/)
+- [More information on WDATP Connector Response Actions](https://docs.microsoft.com/connectors/wdatp/)
 
 **Custom Detection Rules Response Action:**
 Both machine and file level actions can be applied.
-- [More information on Custom Detection Rules Response Actions](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
+- [More information on Custom Detection Rules Response Actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
 
 ## Related topics
 
