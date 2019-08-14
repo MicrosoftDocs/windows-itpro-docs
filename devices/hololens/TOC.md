@@ -20,11 +20,15 @@
 ## [Find and save files](hololens-find-and-save-files.md)
 ## [Create, share, and view photos and video](holographic-photos-and-video.md)
 
+# Accessories and connectivity
+## [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
+## [Restart or recover the HoloLens (1st gen) clicker](hololens-clicker-restart-recover.md)
+## [Connect to a network](hololens-network.md)
+## [Use HoloLens offline](hololens-offline.md)
+
 # Device Management
 ## [Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md)
-## [Use the HoloLens Clicker](hololens-clicker.md)
 ## [Restart, reset, or recover the HoloLens](hololens-restart-recover.md)
-## [Restart or recover the HoloLens clicker](hololens-clicker-restart-recover.md)
 
 # Application Management 
 ## [Share HoloLens with multiple people](hololens-multiple-users.md)
