@@ -8,8 +8,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
-ms.audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
@@ -53,12 +55,12 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 ### Devices not appearing in Upgrade Readiness
 
-In Log Analytics, go to **Settings > Connected sources > Windows telemetry** and verify that you are subscribed to the Windows Analytics solutions you intend to use.
+In Log Analytics, go to **Solutions** and verify that you are subscribed to the Windows Analytics solutions you intend to use.
 
 Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices within a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/You-can-now-check-on-the-status-of-your-computers-within-hours/ba-p/187213) on the Tech Community Blog.
 
 >[!NOTE]
-> If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id," go to **Settings > Connected sources > Windows telemetry** remove the Upgrade Readiness solution, and then re-add it.
+> If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id, See [Enrolling devices in Windows Analytics.](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started) 
 
 If devices are not showing up as expected, find a representative device and follow these steps to run the latest pilot version of the Upgrade Readiness deployment script on it to troubleshoot issues:
 
@@ -230,9 +232,7 @@ We have identified an incompatibility between AbnormalShutdownCount and the Limi
 
 If you want to stop using Upgrade Readiness and stop sending diagnostic data to Microsoft, follow these steps:
 
-1. Unsubscribe from the Upgrade Readiness solution in Azure Portal. In Azure Portal, go to **Settings** > **Connected Sources** > **Windows Telemetry** and choose the **Unsubscribe** option.
-
-   ![Upgrade Readiness unsubscribe](images/upgrade-analytics-unsubscribe.png)
+1. Delete the Upgrade Readiness Solution in Log Analytics Workspace. In Log Analytics Workspace go to, **Solutions > Compatibility Assessment > Delete**
 
 2. Disable the Commercial Data Opt-in Key on computers running Windows 7 SP1 or 8.1. On computers running Windows 10, set the diagnostic data level to **Security**:
 
