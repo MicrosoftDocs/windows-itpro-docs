@@ -42,7 +42,7 @@ There are specific network-connectivity requirements to ensure your endpoints ca
 2. Select **All services > Intune**.
 3. In the **Intune** pane, select **Device configuration > Profiles**, and then select the **Device restrictions** profile type you want to configure. If you haven't yet created a **Device restrictions** profile type, or if you want to create a new one, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 4. Select **Properties**, select **Settings: Configure**, and then select **Windows Defender Antivirus**.
-5. On the **Cloud-delivered protection** switch, select **Enable**.
+5. On the **Cloud-delivered protection** switch, select **Not configured**.
 6. In the **Prompt users before sample submission** dropdown, select **Send all data without prompting**. 
 7. In the **Submit samples consent** dropdown, select one of the following:
 
