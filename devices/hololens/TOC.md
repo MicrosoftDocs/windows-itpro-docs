@@ -26,10 +26,6 @@
 ## [Connect to a network](hololens-network.md)
 ## [Use HoloLens offline](hololens-offline.md)
 
-# Device Management
-## [Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md)
-## [Restart, reset, or recover the HoloLens](hololens-restart-recover.md)
-
 # Application Management 
 ## [Share HoloLens with multiple people](hololens-multiple-users.md)
 ## [Get apps for HoloLens](hololens-get-apps.md)
@@ -37,6 +33,10 @@
 ## [Use HoloLens offline](hololens-offline.md)
 ## [Spaces on HoloLens](hololens-spaces-on-hololens.md)
 ## [How HoloLens stores data for spaces](hololens-spaces.md)
+
+# Recovery and troubleshooting
+## [Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md)
+## [Restart, reset, or recover the HoloLens](hololens-restart-recover.md)
 
 # User/Access Management
 ## [Set up single application access](hololens-kiosk.md)
