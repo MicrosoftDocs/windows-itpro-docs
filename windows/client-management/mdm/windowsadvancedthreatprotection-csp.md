@@ -120,7 +120,7 @@ The following list describes the characteristics and parameters.
 ## Examples
 
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>

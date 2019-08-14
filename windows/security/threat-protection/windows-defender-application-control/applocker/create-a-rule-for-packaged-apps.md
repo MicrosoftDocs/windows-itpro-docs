@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Create a rule for packaged apps
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals shows how to create an AppLocker rule for packaged apps with a publisher condition.
 

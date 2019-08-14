@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ---
 
-#  Troubleshoot Microsoft Defender Advanced Threat Protection 
+# Troubleshoot Microsoft Defender Advanced Threat Protection 
 
 Troubleshoot issues that might arise as you use Microsoft Defender ATP capabilities.
 

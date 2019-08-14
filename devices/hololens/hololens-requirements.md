@@ -37,10 +37,10 @@ When you develop for HoloLens, there are [system requirements and tools](https:/
 - TTLS-TLS
 
 ### Device management 
-   - Users have Azure AD accounts with [Intune license assigned](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4)
-   - Wi-Fi network
-   - Intune or a 3rd party mobile device management (MDM) provider that uses Microsoft MDM APIs
-   
+- Users have Azure AD accounts with [Intune license assigned](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4)
+- Wi-Fi network
+- Intune or a 3rd party mobile device management (MDM) provider that uses Microsoft MDM APIs
+
 ### Upgrade to Windows Holographic for Business 
 - HoloLens Enterprise license XML file
 

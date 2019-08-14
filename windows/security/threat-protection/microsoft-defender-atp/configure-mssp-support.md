@@ -108,7 +108,7 @@ It is recommended that groups are created for MSSPs to make authorization access
 As a MSSP customer, you can always remove or modify the permissions granted to the MSSP by updating the Azure AD user groups. 
 
  
-##  Access the Windows Defender Security Center MSSP customer portal
+## Access the Windows Defender Security Center MSSP customer portal
 
 >[!NOTE] 
 >These set of steps are directed towards the MSSP. 
@@ -143,8 +143,8 @@ For more information, see [Create rules for alert notifications](configure-email
  
 
 These check boxes must be checked:
-   - **Include organization name** - The customer name will be added to email notifications
-   - **Include tenant-specific portal link** - Alert link URL will have tenant specific parameter (tid=target_tenant_id) that allows direct access to target tenant portal
+- **Include organization name** - The customer name will be added to email notifications
+- **Include tenant-specific portal link** - Alert link URL will have tenant specific parameter (tid=target_tenant_id) that allows direct access to target tenant portal
 
 
 ## Fetch alerts from MSSP customer's tenant into the SIEM system

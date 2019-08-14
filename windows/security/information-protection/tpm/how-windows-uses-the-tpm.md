@@ -24,11 +24,11 @@ The Windows 10 operating system improves most existing security features in the 
 
 **See also:**
 
-   - [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)
+- [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)
 
-   - [TPM Fundamentals](tpm-fundamentals.md)
+- [TPM Fundamentals](tpm-fundamentals.md)
 
-   - [TPM Recommendations](tpm-recommendations.md) 
+- [TPM Recommendations](tpm-recommendations.md) 
 
 ## TPM Overview
 
