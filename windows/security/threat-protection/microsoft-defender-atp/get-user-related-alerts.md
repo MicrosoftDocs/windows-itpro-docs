@@ -44,7 +44,7 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 GET /api/users/{id}/alerts
 ```
 
-**Note that the id is not the full UPN, but only the user name. (e.g., to retrieve alerts for user1@contoso.com use /api/users/user1/alerts) **
+**Note that the id is not the full UPN, but only the user name. (e.g., to retrieve alerts for user1@contoso.com use /api/users/user1/alerts)**
 
 ## Request headers
 

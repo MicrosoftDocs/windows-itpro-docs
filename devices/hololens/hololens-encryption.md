@@ -102,6 +102,6 @@ Provisioning packages are files created by the Windows Configuration Designer to
 
 Encryption is silent on HoloLens. To verify the device encryption status:
  
--	On HoloLens, go to **Settings** > **System** > **About**. **BitLocker** is **enabled** if the device is encrypted. 
+- On HoloLens, go to **Settings** > **System** > **About**. **BitLocker** is **enabled** if the device is encrypted. 
 
 ![About screen showing BitLocker enabled](images/about-encryption.png)

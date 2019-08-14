@@ -1,7 +1,7 @@
 ---
 title: MDOP Solutions and Scenarios
 description: MDOP Solutions and Scenarios
-author: jamiejdt
+author: dansimp
 ms.assetid: 1cb18bef-fbae-4e96-a4f1-90cf111c3b5f
 ms.pagetype: mdop
 ms.mktglfcycl: deploy

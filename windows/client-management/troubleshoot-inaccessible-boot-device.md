@@ -171,7 +171,7 @@ Run the following command to verify the Windows update installation and dates:
 Dism /Image:<Specify the OS drive>: /Get-packages
 ```
 
-After you run this command, you will see the **Install pending** and **Uninstall Pending ** packages:
+After you run this command, you will see the **Install pending** and **Uninstall Pending** packages:
 
 ![Dism output](images/pendingupdate.png)
 

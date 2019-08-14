@@ -99,7 +99,7 @@ You will see unique event for every user.
 
 -   **Account Name** \[Type = SID\]: the SID of security principal for which user rights were assigned. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-**New Right: **
+**New Right:**
 
 -   **User Right** \[Type = UnicodeString\]: the list of assigned user rights. This event generates only for *user* rights, not logon rights. Here is the list of possible user rights:
 

@@ -72,17 +72,17 @@ Image pre-staging is useful only for the initial image download. It is not suppo
 
     **NT AUTHORITY\\Authenticated Users:(OI)(CI)(special access:)**
 
-    **                                READ\_CONTROL**
+    **READ\_CONTROL**
 
-    **                                                                                SYNCHRONIZE**
+    **SYNCHRONIZE**
 
-    **                                                                                FILE\_GENERIC\_READ**
+    **FILE\_GENERIC\_READ**
 
-    **                                                                                                FILE\_READ\_DATA**
+    **FILE\_READ\_DATA**
 
-    **                                                                                FILE\_READ\_EA**
+    **FILE\_READ\_EA**
 
-    **                                                                                FILE\_READ\_ATTRIBUTES**
+    **FILE\_READ\_ATTRIBUTES**
 
     **NT AUTHORITY\\SYSTEM:(OI)(CI)F**
 
