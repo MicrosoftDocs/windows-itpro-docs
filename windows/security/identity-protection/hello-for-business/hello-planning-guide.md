@@ -47,7 +47,7 @@ There are six major categories you need to consider for a Windows Hello for Busi
 
 ### Baseline Prerequisites
 
-Windows Hello for Business has a few baseline prerequisites with which you can begin.  These baseline prerequisites are provided in the worksheet. 
+Windows Hello for Business has a few baseline prerequisites with which you can begin.  These baseline prerequisites are provided in the worksheet.
 
 ### Deployment Options
 

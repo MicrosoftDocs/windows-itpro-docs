@@ -53,7 +53,6 @@
 #### [Validate and Configure Public Key Infrastructure](hello-cert-trust-validate-pki.md)
 #### [Prepare and Deploy Windows Server 2016 Active Directory Federation Services](hello-cert-trust-adfs.md)
 #### [Validate and Deploy Multifactor Authentication Services (MFA)](hello-cert-trust-validate-deploy-mfa.md)
-##### [Configure or Deploy Multifactor Authentication Services](hello-cert-trust-deploy-mfa.md)
 #### [Configure Windows Hello for Business Policy settings](hello-cert-trust-policy-settings.md)
 
 ## [Windows Hello and password changes](hello-and-password-changes.md)
