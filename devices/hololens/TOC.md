@@ -32,12 +32,10 @@
 ## [Use apps on HoloLens](hololens-use-apps.md)
 ## [Use HoloLens offline](hololens-offline.md)
 ## [Spaces on HoloLens](hololens-spaces-on-hololens.md)
+## [How HoloLens stores data for spaces](hololens-spaces.md)
 
 # User/Access Management
 ## [Set up single application access](hololens-kiosk.md)
-## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
-## [How HoloLens stores data for spaces](hololens-spaces.md)
-## [Find and save files](hololens-find-and-save-files.md)
 
 # [Insider preview for Microsoft HoloLens](hololens-insider.md)
 # [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
