@@ -171,13 +171,13 @@ You can determine which zones or domains are used for data collection, using Pow
 
 **To set up data collection using a domain allow list**
  
- - Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1, using this command: `.\IETelemetrySetUp.ps1 [other args] -SiteAllowList sharepoint.com,outlook.com,onedrive.com`.
+- Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1, using this command: `.\IETelemetrySetUp.ps1 [other args] -SiteAllowList sharepoint.com,outlook.com,onedrive.com`.
  
     >**Important**<br>Wildcards, like \*.microsoft.com, aren’t supported.
 
 **To set up data collection using a zone allow list**
  
- - Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1, using this command: `.\IETelemetrySetUp.ps1 [other args] -ZoneAllowList Computer,Intranet,TrustedSites,Internet,RestrictedSites`.
+- Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1, using this command: `.\IETelemetrySetUp.ps1 [other args] -ZoneAllowList Computer,Intranet,TrustedSites,Internet,RestrictedSites`.
  
     >**Important**<br>Only Computer, Intranet, TrustedSites, Internet, and RestrictedSites are supported.
 

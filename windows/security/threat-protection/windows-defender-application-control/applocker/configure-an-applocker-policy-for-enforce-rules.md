@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Configure an AppLocker policy for enforce rules
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes the steps to enable the AppLocker policy enforcement setting.
 

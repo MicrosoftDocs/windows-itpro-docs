@@ -100,25 +100,25 @@ The following steps show you how to create a deployment share for Windows 10 tha
 
 7.  On the **Summary** page confirm your selections and click **Finish** to begin the creation of your deployment share. The process can take several minutes as files are downloaded, the tools are installed, and the deployment share is created. While the SDA scripts are creating your deployment share, an **Installation Progress** window will be displayed, as shown in Figure 5. A typical SDA process includes:
 
-   -   Download of Windows ADK
+    -   Download of Windows ADK
 
-   -   Installation of Windows ADK
+    -   Installation of Windows ADK
 
-   -   Download of MDT
+    -   Download of MDT
 
-   -   Installation of MDT
+    -   Installation of MDT
 
-   -   Download of Surface apps and drivers
+    -   Download of Surface apps and drivers
 
-   -   Creation of the deployment share
+    -   Creation of the deployment share
 
-   -   Import of Windows installation files into the deployment share
+    -   Import of Windows installation files into the deployment share
 
-   -   Import of the apps and drivers into the deployment share
+    -   Import of the apps and drivers into the deployment share
 
-   -   Creation of rules and task sequences for Windows deployment
+    -   Creation of rules and task sequences for Windows deployment
 
-   ![The installation progress window](images/sdasteps-fig5-installwindow.png "The installation progress window")
+    ![The installation progress window](images/sdasteps-fig5-installwindow.png "The installation progress window")
 
     *Figure 5. The Installation Progress window*
     

@@ -32,7 +32,7 @@ You can configure which folders are indexed on the host as part of the Trim Tran
 
 When applying new settings, the service must be restarted.
 
-``` syntax
+```xml
 <HostIndexingXP type="System.String[]"> 
 - <ArrayOfString>
 <string>%WINDIR%</string> 

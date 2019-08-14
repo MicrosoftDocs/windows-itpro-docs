@@ -28,7 +28,7 @@ ms.date: 10/16/2017
 
 Understand what data fields are exposed as part of the alerts API and how they map to Microsoft Defender Security Center.
 
-##  Alert API fields and portal mapping
+## Alert API fields and portal mapping
 The following table lists the available fields exposed in the alerts API payload. It shows examples for the populated values and a reference on how data is reflected on the portal.
 
 The ArcSight field column contains the default mapping between the Microsoft Defender ATP fields and the built-in fields in ArcSight. You can download the mapping file from the portal when you enable the SIEM integration feature and you can modify it to match the  needs of your organization. For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md).
