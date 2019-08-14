@@ -28,6 +28,8 @@
       "audience": "ITPro",
       "manager": "dansimp",
       "ms.prod": w10,
+      "ms.author": "dansimp",
+      "author": "dansimp",
       "ms.sitesec": "library",
       "ms.topic": "article",
       "ms.date": "04/05/2017",
