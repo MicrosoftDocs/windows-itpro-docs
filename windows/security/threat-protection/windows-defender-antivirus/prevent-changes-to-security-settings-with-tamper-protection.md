@@ -117,10 +117,10 @@ Tamper Protection will not have any impact on such devices.
 
 If you are home user, see [Turn Tamper Protection on (or off) for an individual machine](#turn-tamper-protection-on-or-off-for-an-individual-machine).
 
-If you are an organization using Microsoft Defender Advanced Threat Protection E5, you should be able to manage Tamper Protection in Intune similar to how you manage other endpoint protection features. See [Turn Tamper Protection on (or off) for your organization with Intune](#turn-tamper-protection-on-or-off-for-your-organization-with-intune).
+If you are an organization using [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), you should be able to manage Tamper Protection in Intune similar to how you manage other endpoint protection features. See [Turn Tamper Protection on (or off) for your organization with Intune](#turn-tamper-protection-on-or-off-for-your-organization-with-intune).
 
  
-### How does configuring Tamper Protection in Intune affect how i manage Windows Defender through my group policy?
+### How does configuring Tamper Protection in Intune affect how I manage Windows Defender through my group policy?
 
 Your regular group policy doesn’t apply to Tamper Protection, and changes to Windows Defender settings will be ignored when Tamper Protection is on.
 
@@ -134,7 +134,7 @@ Currently we do not have support to manage Tamper Protection through System Cent
 
 ### I have Windows E3 enrollment. Can I use configuring Tamper Protection in Intune?
 
-Currently, configuring Tamper Protection in Intune is only available for customers who have Microsoft Defender Advanced Threat Protection E5.
+Currently, configuring Tamper Protection in Intune is only available for customers who have [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
 ### What happens if I try to change Microsoft Defender settings in Intune, System Center Configuration Manager, and Windows Management Instrumentation when Tamper Protection is enabled on a device?
 
@@ -156,6 +156,10 @@ In addition, your security operations team can use hunting queries, such as the 
 
 `AlertEvents | where Title == "Tamper Protection bypass"`
 
+### Will there be a group policy setting for Tamper Protection?
+
+No.
+
 ## Related articles
 
 [Windows 10 Enterprise Security](https://docs.microsoft.com/windows/security/index)
@@ -163,3 +167,5 @@ In addition, your security operations team can use hunting queries, such as the 
 [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 
 [Microsoft 365 Enterprise overview (at a glance)](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#at-a-glance)
+
+[Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
