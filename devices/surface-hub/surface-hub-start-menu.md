@@ -3,12 +3,12 @@ title: Configure Surface Hub Start menu
 description: Use MDM to customize the Start menu on Surface Hub. 
 ms.prod: surface-hub
 ms.sitesec: library
-author: levinec
-ms.author: ellevin
+author: robmazz
+ms.author: robmazz
 ms.topic: article
-ms.date: 01/17/2018
+ms.date: 08/15/2018
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.localizationpriority: medium
 ---
 
@@ -107,7 +107,7 @@ There are a few key differences between Start menu customization for Surface Hub
 <span id="edge" />
 ## Example: Start layout that includes a Microsoft Edge link
 
-This example shows a link to a website and a link to a .pdf file.
+This example shows a link to a website and a link to a .pdf file. The secondary tile for Microsoft Edge uses a 150 x 150 pixel icon.
 
 ```xml
 <LayoutModificationTemplate Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
@@ -165,10 +165,10 @@ This example shows a link to a website and a link to a .pdf file.
              TileID="6153963000"
              DisplayName="cstrtqbiology.pdf"
              Arguments="-contentTile -formatVersion 0x00000003 -pinnedTimeLow 0x45b7376e -pinnedTimeHigh 0x01d2356c -securityFlags 0x00000000 -tileType 0x00000000 -url 0x0000003a https://www.ada.gov/regs2010/2010ADAStandards/Guidance_2010ADAStandards.pdf"
-             Square150x150LogoUri="ms-appx:///"                                                
+             Square150x150LogoUri="ms-appx:///ms-appx:///Assets/MicrosoftEdgeSquare150x150.png"
              Wide310x150LogoUri="ms-appx:///" 
-             ShowNameOnSquare150x150Logo="true"                                                      
-             ShowNameOnWide310x150Logo="true"
+             ShowNameOnSquare150x150Logo="true"
+             ShowNameOnWide310x150Logo="false"
              BackgroundColor="#ff4e4248"
              Size="4x2" 
              Row="4"
@@ -181,8 +181,6 @@ This example shows a link to a website and a link to a .pdf file.
 ```
 
 >[!NOTE]
->Microsoft Edge tile logos won't appear on secondary tiles because they aren't stored in Surface Hub.
->
 >The default value for `ForegroundText` is light; you don't need to include `ForegroundText` in your XML unless you're changing the value to dark.
 
 ## More information
