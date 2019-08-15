@@ -2,6 +2,7 @@
 title: Connect to a network
 description: Connect to a wi-fi or ethernet network with HoloLens.
 ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
+ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
 ms.author: v-tea
@@ -9,7 +10,6 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 8/12/19
 ms.reviewer: 
-manager: jarrettr
 appliesto:
 - Hololens
 - HoloLens (1st gen)

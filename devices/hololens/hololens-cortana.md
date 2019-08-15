@@ -3,7 +3,6 @@ title: Cortana on HoloLens
 description: Cortana can help you do all kinds of things on your HoloLens
 ms.assetid: fd96fb0e-6759-4dbe-be1f-58bedad66fed
 ms.date: 08/14/2019
-manager: jarrettrenshaw
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library

@@ -2,6 +2,7 @@
 title: HoloLens (1st gen) first start
 description: Go through the first start experience for HoloLens (1st gen).
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
+ms.prod: hololens
 author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
@@ -15,7 +16,7 @@ ms.localizationpriority: medium
 
 The first time you turn on your HoloLens, you'll be guided through calibrating your device, setting up your device, and signing in.  This section walks through the HoloLens (1st gen) first start experience.
 
-In the next section, you'll learn how to work with HoloLens and interact with holograms.  Skip ahead to [Get started with HoloLens (1st gen)](hololens-basic-usage.md)
+In the next section, you'll learn how to work with HoloLens and interact with holograms.  Skip ahead to [Get started with HoloLens (1st gen)](holographic-home.md)
 
 ## Before you start
 
@@ -54,4 +55,4 @@ Congratulations!  Setup is complete and you can begin using HoloLens.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Get started with HoloLens (1st gen)](hololens-basic-usage.md)
+> [Get started with HoloLens (1st gen)](holographic-home.md)
