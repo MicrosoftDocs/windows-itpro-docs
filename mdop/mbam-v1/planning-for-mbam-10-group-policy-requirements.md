@@ -141,7 +141,7 @@ This section describes the Client Management policy definitions for MBAM, found 
 
 
 
-##  Fixed Drive policy definitions
+## Fixed Drive policy definitions
 
 
 This section describes the Fixed Drive policy definitions for MBAM, which can be found at the following GPO node: **Computer Configuration**\\**Administrative Templates**\\**Windows Components**\\**MDOP MBAM (BitLocker Management)** \\ **Fixed Drive**.

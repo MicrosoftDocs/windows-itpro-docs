@@ -18,8 +18,8 @@ ms.author: dansimp
 # Windows Defender Application Control design guide
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This guide covers design and planning for Windows Defender Application Control (WDAC). It is intended to help security architects, security administrators, and system administrators create a plan that addresses specific application control requirements for different departments or business groups within an organization.
 

@@ -39,52 +39,52 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
  
 <p style="margin-left: 20px">Here&#39;s a SyncML example.
 
-``` syntax
- <SyncML xmlns="SYNCML:SYNCML1.2">
-        <SyncBody>
-            <Replace>
-                <CmdID>1</CmdID>
-                <Item>
-                    <Target>
-                        <LocURI>./Vendor/MSFT/SurfaceHub/DeviceAccount/UserPrincipalName</LocURI>
-                    </Target>
-                    <Meta>
-                        <Format xmlns="syncml:metinf">chr</Format>
-                    </Meta>
-                    <Data>user@contoso.com</Data>
-                </Item>
-            </Replace>
-            <Replace>
-                <CmdID>2</CmdID>
-                <Item>
-                    <Target>
-                        <LocURI>./Vendor/MSFT/SurfaceHub/DeviceAccount/Password</LocURI>
-                    </Target>
-                    <Meta>
-                        <Format xmlns="syncml:metinf">chr</Format>
-                    </Meta>
-                    <Data>password</Data>
-                </Item>
-            </Replace>
-            <Exec>
-                <CmdID>3</CmdID>
-                <Item>
-                    <Target>
-                        <LocURI>./Vendor/MSFT/SurfaceHub/DeviceAccount/ValidateAndCommit</LocURI>
-                    </Target>
-                </Item>
-            </Exec>
-            <Get>
-                <CmdID>4</CmdID>
-                <Item>
-                    <Target>
-                        <LocURI>./Vendor/MSFT/SurfaceHub/DeviceAccount/ErrorContext</LocURI>
-                    </Target>
-                </Item>
-            </Get>
-            <Final/> 
-        </SyncBody>
-    </SyncML>
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+    <SyncBody>
+        <Replace>
+            <CmdID>1</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Vendor/MSFT/SurfaceHub/DeviceAccount/UserPrincipalName</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">chr</Format>
+                </Meta>
+                <Data>user@contoso.com</Data>
+            </Item>
+        </Replace>
+        <Replace>
+            <CmdID>2</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Vendor/MSFT/SurfaceHub/DeviceAccount/Password</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">chr</Format>
+                </Meta>
+                <Data>password</Data>
+            </Item>
+        </Replace>
+        <Exec>
+            <CmdID>3</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Vendor/MSFT/SurfaceHub/DeviceAccount/ValidateAndCommit</LocURI>
+                </Target>
+            </Item>
+        </Exec>
+        <Get>
+            <CmdID>4</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Vendor/MSFT/SurfaceHub/DeviceAccount/ErrorContext</LocURI>
+                </Target>
+            </Item>
+        </Get>
+        <Final/>
+    </SyncBody>
+</SyncML>
 ```
 
 <p style="margin-left: 20px">To use a device account from Active Directory

@@ -16,7 +16,7 @@ ms.author: dansimp
 ms.topic: article
 ---
 
-#  Assigned Access configuration (kiosk) XML reference
+# Assigned Access configuration (kiosk) XML reference
 
 
 **Applies to**

@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Understand AppLocker rules and enforcement setting inheritance in Group Policy
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for the IT professional describes how application control policies configured in AppLocker are applied through Group Policy.
 
