@@ -165,7 +165,7 @@ This example shows a link to a website and a link to a .pdf file. The secondary 
              TileID="6153963000"
              DisplayName="cstrtqbiology.pdf"
              Arguments="-contentTile -formatVersion 0x00000003 -pinnedTimeLow 0x45b7376e -pinnedTimeHigh 0x01d2356c -securityFlags 0x00000000 -tileType 0x00000000 -url 0x0000003a https://www.ada.gov/regs2010/2010ADAStandards/Guidance_2010ADAStandards.pdf"
-             Square150x150LogoUri="ms-appx:///ms-appx:///Assets/MicrosoftEdgeSquare150x150.png"
+             Square150x150LogoUri="ms-appx:///Assets/MicrosoftEdgeSquare150x150.png"
              Wide310x150LogoUri="ms-appx:///" 
              ShowNameOnSquare150x150Logo="true"
              ShowNameOnWide310x150Logo="false"
