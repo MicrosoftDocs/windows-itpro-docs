@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -31,7 +31,7 @@ The content directory contains all of the packages that are to be streamed to cl
 
 Keep the number of users with administrative privileges to a minimum to reduce possible threats to the data in the data store and to avoid publishing malicious applications into the infrastructure.
 
-##  Application Virtualization Security
+## Application Virtualization Security
 
 
 App-V uses several methods of communication between the various components of the infrastructure. When you plan your App-V infrastructure, securing the communications between servers can reduce the security risks that might already be present on the existing network.

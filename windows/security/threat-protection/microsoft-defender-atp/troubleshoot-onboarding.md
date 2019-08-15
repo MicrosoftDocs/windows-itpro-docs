@@ -296,9 +296,9 @@ You might also need to check the following:
 ## Licensing requirements
 Microsoft Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
 
-  -	Windows 10 Enterprise E5
-  -	Windows 10 Education E5
-  - Microsoft 365 Enterprise E5 which includes Windows 10 Enterprise E5
+- Windows 10 Enterprise E5
+- Windows 10 Education E5
+- Microsoft 365 Enterprise E5 which includes Windows 10 Enterprise E5
 
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
 

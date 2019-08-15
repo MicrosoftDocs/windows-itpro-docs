@@ -1,7 +1,7 @@
 # [Microsoft Store for Education](/microsoft-store/index?toc=/microsoft-store/education/toc.json)
 ## [What's new in Microsoft Store for Business and Education](/microsoft-store/whats-new-microsoft-store-business-education?toc=/microsoft-store/education/toc.json)
 ## [Sign up and get started](/microsoft-store/sign-up-microsoft-store-for-business-overview?toc=/microsoft-store/education/toc.json)
-###[Microsoft Store for Business and Education overview](/microsoft-store/windows-store-for-business-overview?toc=/microsoft-store/education/toc.json)
+### [Microsoft Store for Business and Education overview](/microsoft-store/windows-store-for-business-overview?toc=/microsoft-store/education/toc.json)
 ### [Prerequisites for Microsoft Store for Business and Education](/microsoft-store/prerequisites-microsoft-store-for-business?toc=/microsoft-store/education/toc.json)
 ### [Sign up for Microsoft Store for Business or Microsoft Store for Education](/microsoft-store/sign-up-microsoft-store-for-business?toc=/microsoft-store/education/toc.json)
 ### [Roles and permissions in the Microsoft Store for Business and Education](/microsoft-store/roles-and-permissions-microsoft-store-for-business?toc=/microsoft-store/education/toc.json)

@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Understand the AppLocker policy deployment process
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This planning and deployment topic for the IT professional describes the process for using AppLocker when deploying application control policies.
 

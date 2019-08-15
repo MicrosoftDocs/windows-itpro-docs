@@ -9,7 +9,7 @@ ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -17,7 +17,7 @@ ms.date: 08/30/2016
 # Sharing Settings Location Templates with the UE-V Template Gallery
 
 
-##  Share location templates with the template gallery
+## Share location templates with the template gallery
 
 
 The Microsoft User Experience Virtualization (UE-V) template gallery allows administrators to share their UE-V settings location templates. In the gallery, you can upload your settings location templates for other people to use, and you can download templates that other people have created. The UE-V template gallery is located on Microsoft TechNet here: <https://go.microsoft.com/fwlink/p/?LinkID=246589>.

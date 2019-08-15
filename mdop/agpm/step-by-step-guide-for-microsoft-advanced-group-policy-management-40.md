@@ -272,15 +272,17 @@ As an AGPM Administrator (Full Control), you designate the e-mail addresses of A
 
 **To configure e-mail notification for AGPM**
 
-1.  In the details pane, click the **Domain Delegation** tab.
+1.  In **Group Policy Management Editor** , navigate to the **Change Control** folder 
 
-2.  In the **From e-mail address** field, type the e-mail alias for AGPM from which notifications should be sent.
+2.  In the details pane, click the **Domain Delegation** tab.
 
-3.  In the **To e-mail address** field, type the e-mail address for the user account to which you intend to assign the Approver role.
+3.  In the **From e-mail address** field, type the e-mail alias for AGPM from which notifications should be sent.
 
-4.  In the **SMTP server** field, type a valid SMTP mail server.
+4.  In the **To e-mail address** field, type the e-mail address for the user account to which you intend to assign the Approver role.
 
-5.  In the **User name** and **Password** fields, type the credentials of a user who has access to the SMTP service. Click **Apply**.
+5.  In the **SMTP server** field, type a valid SMTP mail server.
+
+6.  In the **User name** and **Password** fields, type the credentials of a user who has access to the SMTP service. Click **Apply**.
 
 ### <a href="" id="bkmk-config5"></a>Step 5: Delegate access
 

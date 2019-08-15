@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Understanding the path rule condition in AppLocker
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic explains the AppLocker path rule condition, the advantages and disadvantages, and how it is applied.
 

@@ -8,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: mjcaparas
+ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -62,29 +62,29 @@ This page explains how to create an AAD application, get an access token to Micr
 
 4. Allow your Application to access Microsoft Defender ATP and assign it 'Read alerts' permission:
 
-	- On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
+    - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
-	- **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+    - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-	![Image of API access and API selection](images/add-permission.png)
+      ![Image of API access and API selection](images/add-permission.png)
 
-	- Choose **Delegated permissions** > **Alert.Read** > Click on **Add permissions**
+    - Choose **Delegated permissions** > **Alert.Read** > Click on **Add permissions**
 
-    ![Image of API access and API selection](images/application-permissions-public-client.png)
+      ![Image of API access and API selection](images/application-permissions-public-client.png)
 
-	- **Important note**: You need to select the relevant permissions. 'Read alerts' is only an example!
+    - **Important note**: You need to select the relevant permissions. 'Read alerts' is only an example!
 
-     For instance,
+      For instance,
 
-     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-     - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
-     - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
+      - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
+      - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
+      - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
-   - Click **Grant consent**
+    - Click **Grant consent**
 
-     **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
+      **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
 
-     ![Image of Grant permissions](images/grant-consent.png)
+      ![Image of Grant permissions](images/grant-consent.png)
 
 6. Write down your application ID and your tenant ID:
 
@@ -102,42 +102,42 @@ For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.co
 - Copy/Paste the below class in your application.
 - Use **AcquireUserTokenAsync** method with the your application ID, tenant ID, user name and password to acquire a token.
 
-    ```
-	namespace WindowsDefenderATP
-	{
-		using System.Net.Http;
-		using System.Text;
-		using System.Threading.Tasks;
-		using Newtonsoft.Json.Linq;
+    ```csharp
+    namespace WindowsDefenderATP
+    {
+        using System.Net.Http;
+        using System.Text;
+        using System.Threading.Tasks;
+        using Newtonsoft.Json.Linq;
 
-		public static class WindowsDefenderATPUtils
-		{
-			private const string Authority = "https://login.windows.net";
+        public static class WindowsDefenderATPUtils
+        {
+            private const string Authority = "https://login.windows.net";
 
-			private const string WdatpResourceId = "https://api.securitycenter.windows.com";
+            private const string WdatpResourceId = "https://api.securitycenter.windows.com";
 
-			public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
-			{
-				using (var httpClient = new HttpClient())
-				{
-					var urlEncodedBody = $"resource={WdatpResourceId}&client_id={appId}&grant_type=password&username={username}&password={password}";
+            public static async Task<string> AcquireUserTokenAsync(string username, string password, string appId, string tenantId)
+            {
+                using (var httpClient = new HttpClient())
+                {
+                    var urlEncodedBody = $"resource={WdatpResourceId}&client_id={appId}&grant_type=password&username={username}&password={password}";
 
-					var stringContent = new StringContent(urlEncodedBody, Encoding.UTF8, "application/x-www-form-urlencoded");
+                    var stringContent = new StringContent(urlEncodedBody, Encoding.UTF8, "application/x-www-form-urlencoded");
 
-					using (var response = await httpClient.PostAsync($"{Authority}/{tenantId}/oauth2/token", stringContent).ConfigureAwait(false))
-					{
-						response.EnsureSuccessStatusCode();
+                    using (var response = await httpClient.PostAsync($"{Authority}/{tenantId}/oauth2/token", stringContent).ConfigureAwait(false))
+                    {
+                        response.EnsureSuccessStatusCode();
 
-						var json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+                        var json = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
-						var jObject = JObject.Parse(json);
+                        var jObject = JObject.Parse(json);
 
-						return jObject["access_token"].Value<string>();
-					}
-				}
-			}
-		}
-	}
+                        return jObject["access_token"].Value<string>();
+                    }
+                }
+            }
+        }
+    }
     ```
 
 ## Validate the token
@@ -156,16 +156,17 @@ Sanity check to make sure you got a correct token:
 - The Expiration time of the token is 1 hour (you can send more then one request with the same token)
 
 - Example of sending a request to get a list of alerts **using C#** 
-    ```
-	var httpClient = new HttpClient();
 
-	var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
+    ```csharp
+    var httpClient = new HttpClient();
 
-	request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.windows.com/api/alerts");
 
-	var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-	// Do something useful with the response
+    var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+
+    // Do something useful with the response
     ```
 
 ## Related topics

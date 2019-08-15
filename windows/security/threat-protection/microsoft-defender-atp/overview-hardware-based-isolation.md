@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.author: mjcaparas
+ms.author: macapara
 ms.date: 09/07/2018
 ---
 

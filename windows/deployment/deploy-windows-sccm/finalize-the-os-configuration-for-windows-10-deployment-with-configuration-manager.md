@@ -10,7 +10,8 @@ ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -59,7 +60,7 @@ To support additional server-side logging in Configuration Manager, you create a
 
 2.  Type the following commands, pressing **Enter** after each one:
 
-    ``` syntax
+    ``` 
     New-Item -Path E:\Logs -ItemType directory
     New-SmbShare -Name Logs$ -Path E:\Logs -ChangeAccess EVERYONE
     icacls E:\Logs /grant '"CM_NAA":(OI)(CI)(M)'
@@ -74,7 +75,7 @@ This section will show you how to configure the rules (the Windows 10 x64 Settin
 
 2. Using Notepad, edit the CustomSetting.ini file with the following settings:
 
-   ``` syntax
+   ``` 
    [Settings]
    Priority=Default
    Properties=OSDMigrateConfigFiles,OSDMigrateMode

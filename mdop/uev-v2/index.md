@@ -1,7 +1,7 @@
 ---
 title: Microsoft User Experience Virtualization (UE-V) 2.x
 description: Microsoft User Experience Virtualization (UE-V) 2.x
-author: jamiejdt
+author: dansimp
 ms.assetid: b860fed0-b846-415d-bdd6-ba60231a64be
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy

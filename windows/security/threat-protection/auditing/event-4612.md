@@ -30,9 +30,9 @@ There is no example of this event in this document.
 
 ***Event Schema:***
 
-*Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits. *
+*Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits.*
 
-*Number of audit messages discarded: %1 *
+*Number of audit messages discarded: %1*
 
 *This event is generated when audit queues are filled and events must be discarded. This most commonly occurs when security events are being generated faster than they are being written to disk, or when the auditing system loses connectivity to the event log, such as when the event log service is stopped.*
 
