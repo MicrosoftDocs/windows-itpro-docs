@@ -15,6 +15,14 @@ ms.topic: article
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## August 2019
+
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+| [Optimizing wireless connectivity for Surface devices](surface-wireless-connect.md)             | New document highlights key wireless connectivity considerations for Surface devices in mobile scenarios. |
+| [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)              | Updated to reflect minor changes in the file naming convention for Surface MSI files. |
+
+
 ## July 2019
 
 | **New or changed topic** | **Description** |
