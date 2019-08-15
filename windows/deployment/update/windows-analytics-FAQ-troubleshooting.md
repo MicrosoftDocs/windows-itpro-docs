@@ -60,7 +60,7 @@ In Log Analytics, go to **Solutions** and verify that you are subscribed to the 
 Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices within a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/You-can-now-check-on-the-status-of-your-computers-within-hours/ba-p/187213) on the Tech Community Blog.
 
 >[!NOTE]
-> If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id, See [Enrolling devices in Windows Analytics.](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started) 
+> If you generate the status report and get an error message saying "Sorry! We’re not recognizing your Commercial Id, See [Enrolling devices in Windows Analytics](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started).
 
 If devices are not showing up as expected, find a representative device and follow these steps to run the latest pilot version of the Upgrade Readiness deployment script on it to troubleshoot issues:
 
