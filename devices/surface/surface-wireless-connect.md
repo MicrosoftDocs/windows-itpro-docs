@@ -18,7 +18,7 @@ manager: dansimp
 
 To stay connected with all-day battery life, Surface devices implement wireless connectivity settings that balance performance and power conservation. Outside of the most demanding mobility scenarios, users can maintain sufficient wireless connectivity without modifying default network adapter or related settings. 
 
-In congested network environments, organizations can implement purpose-built wireless protocols across multiple network access points to facilitate roaming. This page highlights key connectivity considerations for wireless network administrators and Surface devices users in mobile scenarios utilizing Surface Pro 3 and later, Surface Book, Surface Laptop, and Surface Go.
+In congested network environments, organizations can implement purpose-built wireless protocols across multiple network access points to facilitate roaming. This page highlights key wireless connectivity considerations in mobile scenarios utilizing Surface Pro 3 and later, Surface Book, Surface Laptop, and Surface Go.
 
 ## Prerequisites
 
