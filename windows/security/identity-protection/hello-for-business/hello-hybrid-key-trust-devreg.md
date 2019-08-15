@@ -39,7 +39,7 @@ Begin configuring device registration to support Hybrid Windows Hello for Busine
 
 To do this, follow the **Configure device settings** steps under [Setting up Azure AD Join in your organization](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-setup/)  
 
-Next, follow the guidance on the [How to configure hybrid Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-hybrid-azuread-joined-devices-setup) page.  In the **Configuration steps** section, identify your configuration at the top of the table (either **Windows current and password hash sync** or **Windows current and federation**) and perform only the steps identified with a check mark.
+Next, follow the guidance on the [How to configure hybrid Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-manual) page. In the **Configuration steps** section, identify your configuration at the top of the table (either **Windows current and password hash sync** or **Windows current and federation**) and perform only the steps identified with a check mark.
 
 
 <br><br>
