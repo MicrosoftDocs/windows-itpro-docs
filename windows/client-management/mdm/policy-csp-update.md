@@ -2485,7 +2485,7 @@ The following list shows the supported values:
 To validate this policy:
 
 1.  Enable the policy and ensure the device is on a cellular network.
-2.  Run the scheduled task on phone to check for OS updates in the background. For example, on a mobile device, run the following commands in TShell:
+2.  Run the scheduled task on phone to check for OS updates in the background. For example, on a mobile device, run the following command in TShell:
 
     ```TShell
     exec-device schtasks.exe -arguments '/run /tn "\Microsoft\Windows\WindowsUpdate\AUScheduledInstall" /I'
