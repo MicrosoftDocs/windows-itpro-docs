@@ -262,7 +262,7 @@ Stores specifies which certificate stores the DM client will search to find the 
 
 Subject specifies the certificate to search for. For example, to specify that you want a certificate with a particular Subject attribute (“CN=Tester,O=Microsoft”), use the following:
 
-``` syntax
+```xml
 <parm name="SSLCLIENTCERTSEARCHCRITERIA" 
    value="Subject=CN%3DTester,O%3DMicrosoft&amp;Stores=My%5CUser" />
 ```

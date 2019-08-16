@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Microsoft Threat Protection 
+# Microsoft Defender ATP in Microsoft Threat Protection
 
 **Applies to:**
 

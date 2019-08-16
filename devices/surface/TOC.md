@@ -30,15 +30,16 @@
 ### [Surface System SKU reference](surface-system-sku-reference.md)
 
 ## Manage
+### [Optimizing wireless connectivity for Surface devices](surface-wireless-connect.md)
 ### [Best practice power settings for Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)
 ### [Battery Limit setting](battery-limit.md)
 ### [Surface Brightness Control](microsoft-surface-brightness-control.md)
 ### [Surface Asset Tag](assettag.md)
 ### [Surface firmware and driver updates](update.md)
-### [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
+### [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ### [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)
 ### [Surface Dock Updater](surface-dock-updater.md)
-### [Use System Center Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md)
+
 
 ## Secure
 ### [Manage Surface UEFI settings](manage-surface-uefi-settings.md)
@@ -46,12 +47,13 @@
 ### [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
 ### [Enroll and configure Surface devices with SEMM](enroll-and-configure-surface-devices-with-semm.md)
 ### [Unenroll Surface devices from SEMM](unenroll-surface-devices-from-semm.md)
+### [Use System Center Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md)
 
-## Support
+## Troubleshoot
 ### [Fix common Surface problems using the Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-for-business-intro.md)
-### [Deploy Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md)
-### [Use Surface Diagnostic Toolkit for Business in desktop mode](surface-diagnostic-toolkit-desktop-mode.md)
-### [Run Surface Diagnostic Toolkit for Business using commands](surface-diagnostic-toolkit-command-line.md)
+#### [Deploy Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md)
+#### [Use Surface Diagnostic Toolkit for Business in desktop mode](surface-diagnostic-toolkit-desktop-mode.md)
+#### [Run Surface Diagnostic Toolkit for Business using commands](surface-diagnostic-toolkit-command-line.md)
 ### [Surface Data Eraser](microsoft-surface-data-eraser.md)
 ### [Top support solutions for Surface devices](support-solutions-surface.md)
 ### [Change history for Surface documentation](change-history-for-surface.md)

@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Merge AppLocker policies manually
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes the steps to manually merge AppLocker policies to update the Group Policy Object (GPO).
 
