@@ -32,9 +32,10 @@
 #### [Network protection](windows-defender-exploit-guard/network-protection-exploit-guard.md)
 
 #### [Web threat protection]()
-##### [Monitor web security](web-threat-protection-monitoring.md)
-##### [Respond to web threats](web-threat-protection-response.md)
-##### [Web threat protection overview](web-threat-protection-overview.md) 
+##### [Web threat protection overview](microsoft-defender-atp/web-threat-protection-overview.md)
+##### [Monitor web security](microsoft-defender-atp/web-threat-protection-monitoring.md)
+##### [Respond to web threats](microsoft-defender-atp/web-threat-protection-response.md)
+ 
 
 #### [Controlled folder access](windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
 #### [Attack surface reduction](windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
