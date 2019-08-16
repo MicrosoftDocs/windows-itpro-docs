@@ -232,7 +232,7 @@ We have identified an incompatibility between AbnormalShutdownCount and the Limi
 
 If you want to stop using Upgrade Readiness and stop sending diagnostic data to Microsoft, follow these steps:
 
-1. Delete the Upgrade Readiness Solution in Log Analytics Workspace. In Log Analytics Workspace go to, **Solutions > Compatibility Assessment > Delete**
+1. Delete the Upgrade Readiness solution in Log Analytics workspace. In Log Analytics workspace. select **Solutions** > **Compatibility Assessment** > **Delete**.
 
 2. Disable the Commercial Data Opt-in Key on computers running Windows 7 SP1 or 8.1. On computers running Windows 10, set the diagnostic data level to **Security**:
 
