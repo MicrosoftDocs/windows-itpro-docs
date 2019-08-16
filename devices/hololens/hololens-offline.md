@@ -16,6 +16,9 @@ ms.localizationpriority: medium
 
 # Use HoloLens offline
 
+[Use offline](https://support.microsoft.com/en-us/help/12645)
+
+
 To set up HoloLens, you'll need to connect to a Wi-Fi network—the setup tutorial will show you how.
 
 ## HoloLens limitations
