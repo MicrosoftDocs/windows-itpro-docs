@@ -15,23 +15,34 @@ ms.topic: article
 
 >Applies to: Windows 10
 
-Deploying feature or quality updates for many organizations is only part of the equation for managing their device ecosystem. The ability to enforce patch compliance is the next important part. Windows Update for Business provides controls to manage deadlines for when devices should migrate to newer revisions. We offer two compliance flows that you can choose from: 
+Deploying feature or quality updates for many organizations is only part of the equation for managing their device ecosystem. The ability to enforce update compliance is the next important part. Windows Update for Business provides controls to manage deadlines for when devices should migrate to newer versions. 
+
+The compliance options have changed with the release of Windows 10, version 1903:
+
+- Starting with Windows 10, version 1903
+- Prior to Windows 10, version 1903
+
+
+## Starting with Windows 10, version 1903
+
+
+Two compliance flows are available: 
 
 - [Deadline only](#deadline-only)
 - [Deadline with user engagement](#deadline-with-user-engagement)
 
-## Deadline only 
+### Deadline only 
 
 This flow only enforces the deadline where the device will attempt to silently restart outside of active hours before the deadline is reached. Once the deadline is reached the user is prompted with either a confirmation button or a restart now option. 
 
-### End-user experience
+#### End-user experience
 
 Once the device is in the pending restart state, it will attempt to restart the device during non-active hours. This is known as the auto-restart period, and by default it does not require user interaction to restart the device. 
 
 >[!NOTE]
 >Deadlines are enforced from pending restart state (for example, when the device has completed the installation and download from Windows Update).
 
-### Policy overview
+#### Policy overview
 
 |Policy|Description |
 |-|-|
@@ -39,7 +50,15 @@ Once the device is in the pending restart state, it will attempt to restart the 
 |Configure Auto-restart warning notification schedule for updates|Configures the reminder notification and the warning notification for a scheduled installation. The user can dismiss a reminder, but not the warning.|
 | (starting in Windows 10, version 1903) Specify deadlines for automatic updates and restarts | Similar to "Specify deadline before auto-restart for update installation," but starts the deadline countdown from when the update was published. Also introduces a configurable grace period and the option to opt out of automatic restarts until the deadline is reached. |
 
-### Suggested configurations  
+#### Policy overview
+
+|Policy|Description |
+|-|-|
+|Specify deadline before auto-restart for update installation|Governs the update experience once the device has entered pending restart state. It specifies a deadline, in days, to enforce compliance (such as imminent installation).|
+|Configure Auto-restart warning notification schedule for updates|Configures the reminder notification and the warning notification for a scheduled installation. The user can dismiss a reminder, but not the warning.|
+| (starting in Windows 10, version 1903) Specify deadlines for automatic updates and restarts | Similar to "Specify deadline before auto-restart for update installation," but starts the deadline countdown from when the update was published. Also introduces a configurable grace period and the option to opt out of automatic restarts until the deadline is reached. |
+
+#### Suggested configurations  
 
 |Policy|Location|3-Day Compliance|5-Day Compliance|7-Day Compliance |
 |-|-|-|-|-|
