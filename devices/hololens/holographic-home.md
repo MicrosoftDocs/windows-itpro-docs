@@ -35,9 +35,9 @@ Apps on HoloLens use either 2D view or holographic view. Apps with 2D view look 
 
 ### Open apps
 
-You'll find your apps either pinned to Start or in the All apps list. To get to the All apps list, use the bloom gesture to go to Start, then select **All apps**.
+You'll find your apps either pinned to **Start** or in the **All apps** list. To get to the **All apps** list, use the bloom gesture to go to **Start**, then select **All apps**.
 
-On Start or in the All apps list, select an app. It will open in a good position for viewing.
+On **Start** or in the **All apps** list, select an app. It will open in a good position for viewing.
 
 >[!NOTE]
 >- Up to three 2D app windows can be active at a time. You can open more, but only three will remain active.
