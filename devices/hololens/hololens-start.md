@@ -31,7 +31,7 @@ Before you get started, make sure you have the following available:
 **The optional comfort accessories** that came with your HoloLens, to help you get the most comfortable fit. [More on fit and comfort](https://support.microsoft.com/help/12632/hololens-fit-your-hololens).
 
 > [!NOTE]
-> [Cortana](https://support.microsoft.com/help/12630/) is already on and ready to guide you the first time you use your HoloLens (though she won't be able to respond to your questions until after you set up your device). You can turn Cortana off at any time in Cortana's settings.</p>
+> [Cortana](hololens-cortana.md) is already on and ready to guide you the first time you use your HoloLens (though she won't be able to respond to your questions until after you set up your device). You can turn Cortana off at any time in Cortana's settings.
 
 ## Set up your HoloLens
 
@@ -39,14 +39,14 @@ Set up your HoloLens and your user account.
 
 1. The first time you use your HoloLens, you'll be guided through connecting to a Wi-Fi network. If you have trouble connecting to Wi-Fi during setup, make sure your network is either open, password protected, or a captive portal network and doesn't require using certificates to connect. After setup, you can connect to other types of Wi-Fi networks.
 1. Sign in to your user account.  You'll choose between **My work or school owns it** and **I own it**.
-    - When you choose **My work or school owns it**, you sign in with an Azure AD account. If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens will be enrolled in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available, so you will need to [enroll HoloLens in device management manually](hololens-enroll-mdm.md#enroll-through-settings-app).
-        1. Enter your organizational account.
-        2. Accept privacy statement.
-        3. Sign in using your Azure AD credentials. This may redirect to your organization's sign-in page.
-        4. Continue with device setup.
-    - When you choose **I own it**, you sign in with a Microsoft account. After setup is complete, you can [enroll HoloLens in device management manually](hololens-enroll-mdm.md#enroll-through-settings-app).
-        1. Enter your Microsoft account.
-        2. Enter your password. If your Microsoft account requires [two-step verification (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), complete the verification process.
+    - When you choose **My work or school owns it**, you sign in by using an Azure AD account. If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens will be enrolled in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available, so you will need to [enroll HoloLens in device management manually](hololens-enroll-mdm.md#enroll-through-settings-app).
+        1. Enter your organizational account information.
+        1. Accept the privacy statement.
+        1. Sign in by using your Azure AD credentials. This may redirect to your organization's sign-in page.
+        1. Continue with device setup.
+    - When you choose **I own it**, you sign in by using a Microsoft account. After setup is complete, you can [enroll HoloLens in device management manually](hololens-enroll-mdm.md#enroll-through-settings-app).
+        1. Enter your Microsoft account information.
+        1. Enter your password. If your Microsoft account requires [two-step verification (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), complete the verification process.
 1. The device sets your time zone based on information obtained from the Wi-Fi network.
 1. Follow the first-start guides to learn how to interact with holograms, control the HoloLens with your voice, and access the start menu.
 
@@ -54,5 +54,4 @@ Congratulations!  Setup is complete and you can begin using HoloLens.
 
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Get started with HoloLens (1st gen)](holographic-home.md)
+- [Get started with HoloLens (1st gen)](holographic-home.md)
