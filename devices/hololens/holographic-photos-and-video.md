@@ -2,7 +2,6 @@
 title: Create, share, and view photos and video
 description: Create, share, and view photos and video
 ms.assetid: 1b636ec3-6186-4fbb-81b2-71155aef0593
-ms.date: 08/07/2019
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
