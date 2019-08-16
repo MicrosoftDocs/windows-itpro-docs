@@ -38,15 +38,9 @@ To turn on network protection on devices:
 >[!Note]
 >If you set network protection set to **Audit only**, blocking will be unavailable. Also, you will be able to detect and log attempts to access malicious and unwanted websites on Microsoft Edge only.
 
-## Reporting and policy deployment latencies
-Note the following latencies when blocking URLs or domains or when monitoring web activity:
-- After you add a URL or domain to your custom indicator list, it takes approximately an hour before your machines receive the new setting and start blocking the website.
-- While alerts are generated almost in real-time, the web threat protection reports can have a 12-hour delay from the time a block occurs and the time the block is reflected in the cards or the domain list.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
-
-
-## Related topics
-- [Monitor web security](web-threat-protection-monitoring.md)
-- [Respond to web threats](web-threat-protection-response.md)
-- [Notifications on Windows and web browsers](web-threat-protection-end-user-notifications)
+## In this section
+Topic | Description
+:---|:---
+[Monitor web security](web-threat-protection-monitoring.md) | Monitor attempts to access malicious and unwanted websites. 
+[Respond to web threats](web-threat-protection-response.md) | Investigate and manage alerts related to malicious and unwanted websites. Understand how end users are notified whenever a web threat is blocked.

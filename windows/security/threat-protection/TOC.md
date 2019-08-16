@@ -30,6 +30,12 @@
 #### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 #### [Exploit protection](windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
 #### [Network protection](windows-defender-exploit-guard/network-protection-exploit-guard.md)
+
+#### [Web threat protection]()
+##### [Monitor web security](web-threat-protection-monitoring.md)
+##### [Respond to web threats](web-threat-protection-response.md)
+##### [Web threat protection overview](web-threat-protection-overview.md) 
+
 #### [Controlled folder access](windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
 #### [Attack surface reduction](windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)

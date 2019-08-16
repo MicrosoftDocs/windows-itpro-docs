@@ -33,7 +33,7 @@ Web threat protection lets you monitor your organization’s web browsing securi
     ![Image of the card showing web threats protection summary](images/wtp-summary.png)
 
 >[!Note]
->It can take up to 12 hours from the time a block occurs and the time the block is reflected in the cards or the domain list.
+>It can take up to 12 hours before a block is reflected in the cards or the domain list.
 
 ## Types of web threats
 Web threat protection categorizes malicious and unwanted websites as:
@@ -52,6 +52,5 @@ The page provides an aggregated domain-level view along with the following infor
 Selecting a domain opens a flyout that shows the list of URLs in that domain and the list machines with access attempts.
 
 ## Related topics
-- [Monitor web security](web-threat-protection-monitoring.md)
+- [Web threat protection overview](web-threat-protection-overview.md)
 - [Respond to web threats](web-threat-protection-response.md)
-- [Notifications on Windows and web browsers](web-threat-protection-end-user-notifications)
