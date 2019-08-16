@@ -9,6 +9,7 @@ ms.sitesec: library
 author: v-miegge
 ms.author: v-miegge
 ms.topic: article
+manager: jarrettr
 ms.localizationpriority: medium
 ---
 
@@ -81,7 +82,7 @@ Here are some things you can try saying (remember to say "Hey Cortana" first):
 
 >[!NOTE]
 >
->- Some Cortana features you're used to from Windows on your PC or phone (for example, reminders and notifications) aren't supported in Microsoft HoloLens Development Edition. Cortana on HoloLens is English only, and the Cortana experience may vary among regions.
->- Cortana is on the first time you use HoloLens. You can turn her off in Cortana's settings. In the All apps list, select Cortana > Settings. Then turn off Cortana can give you suggestions, ideas, reminders, alerts, and more.
+>- Some Cortana features you're used to from Windows on your PC or phone (for example, reminders and notifications) aren't supported in Microsoft HoloLens Development Edition. Cortana on HoloLens is English-only, and the Cortana experience may vary among regions.
+>- Cortana is on the first time you use HoloLens. You can turn her off in Cortana's settings. In the **All apps** list, select **Cortana > Settings**. Then turn off Cortana can give you suggestions, ideas, reminders, alerts, and more.
 >- If Cortana isn't responding to "Hey Cortana," go to Cortana's settings and check to make sure she's on.
->- If you turn Cortana off, "Hey Cortana" voice commands won't be available, but you'll still be able to use other commands (like "Select" and "Place").
+>- If you turn Cortana off, "Hey Cortana" voice commands won't be available, but you'll still be able to use other commands (such as "Select" and "Place").
