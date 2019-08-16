@@ -529,37 +529,36 @@ SkipRoles=YES
 SkipCapture=NO
 SkipFinalSummary=YES
 ```
--   **Priority.** Has the same function as in Bootstrap.ini. Priority determines the order in which different sections are read. This CustomSettings.ini has only one section, named \[Default\]. In general, if you have multiple sections that set the same value, the value from the first section (higher priority) wins. The rare exceptions are listed in the ZTIGather.xml file.
--   **\_SMSTSORGNAME.** The organization name displayed in the task sequence progress bar window during deployment.
--   **UserDataLocation.** Controls the settings for user state backup. You do not need to use when building and capturing a reference image.
--   **DoCapture.** Configures the task sequence to run the System Preparation (Sysprep) tool and capture the image to a file when the operating system is installed.
--   **OSInstall.** Must be set to Y or YES (the code actually just looks for the Y character) for the setup to proceed.
--   **AdminPassword.** Sets the local Administrator account password.
--   **TimeZoneName.** Establishes the time zone to use. Don't confuse this value with TimeZone, which is only for legacy operating systems (Windows 7 and Windows Server 2003).
+- **Priority.** Has the same function as in Bootstrap.ini. Priority determines the order in which different sections are read. This CustomSettings.ini has only one section, named \[Default\]. In general, if you have multiple sections that set the same value, the value from the first section (higher priority) wins. The rare exceptions are listed in the ZTIGather.xml file.
+- **\_SMSTSORGNAME.** The organization name displayed in the task sequence progress bar window during deployment.
+- **UserDataLocation.** Controls the settings for user state backup. You do not need to use when building and capturing a reference image.
+- **DoCapture.** Configures the task sequence to run the System Preparation (Sysprep) tool and capture the image to a file when the operating system is installed.
+- **OSInstall.** Must be set to Y or YES (the code actually just looks for the Y character) for the setup to proceed.
+- **AdminPassword.** Sets the local Administrator account password.
+- **TimeZoneName.** Establishes the time zone to use. Don't confuse this value with TimeZone, which is only for legacy operating systems (Windows 7 and Windows Server 2003).
 
-    **Note**  
-    The easiest way to find the current time zone name on a Windows 10 machine is to run tzutil /g in a command prompt. You can also run tzutil /l to get a listing of all available time zone names.
+    **Note**: The easiest way to find the current time zone name on a Windows 10 machine is to run tzutil /g in a command prompt. You can also run tzutil /l to get a listing of all available time zone names.
      
--   **JoinWorkgroup.** Configures Windows to join a workgroup.
--   **HideShell.** Hides the Windows Shell during deployment. This is especially useful for Windows 10 deployments in which the deployment wizard will otherwise appear behind the tiles.
--   **FinishAction.** Instructs MDT what to do when the task sequence is complete.
--   **DoNotCreateExtraPartition.** Configures the task sequence not to create the extra partition for BitLocker. There is no need to do this for your reference image.
--   **WSUSServer.** Specifies which Windows Server Update Services (WSUS) server (and port, if needed) to use during the deployment. Without this option MDT will use Microsoft Update directly, which will increase deployment time and limit your options of controlling which updates are applied.
--   **SLSHARE.** Instructs MDT to copy the log files to a server share if something goes wrong during deployment, or when a deployment is successfully completed.
--   **ApplyGPOPack.** Allows you to deploy local group policies created by Microsoft Security Compliance Manager (SCM).
--   **SkipAdminPassword.** Skips the pane that asks for the Administrator password.
--   **SkipProductKey.** Skips the pane that asks for the product key.
--   **SkipComputerName.** Skips the Computer Name pane.
--   **SkipDomainMemberShip.** Skips the Domain Membership pane. If set to Yes, you need to configure either the JoinWorkgroup value or the JoinDomain, DomainAdmin, DomainAdminDomain, and DomainAdminPassword properties.
--   **SkipUserData.** Skips the pane for user state migration.
--   **SkipLocaleSelection.** Skips the pane for selecting language and keyboard settings.
--   **SkipTimeZone.** Skips the pane for setting the time zone.
--   **SkipApplications.** Skips the Applications pane.
--   **SkipBitLocker.** Skips the BitLocker pane.
--   **SkipSummary.** Skips the initial Windows Deployment Wizard summary pane.
--   **SkipRoles.** Skips the Install Roles and Features pane.
--   **SkipCapture.** Skips the Capture pane.
--   **SkipFinalSummary.** Skips the final Windows Deployment Wizard summary. Because you use FinishAction=Shutdown, you don't want the wizard to stop in the end so that you need to click OK before the machine shuts down.
+- **JoinWorkgroup.** Configures Windows to join a workgroup.
+- **HideShell.** Hides the Windows Shell during deployment. This is especially useful for Windows 10 deployments in which the deployment wizard will otherwise appear behind the tiles.
+- **FinishAction.** Instructs MDT what to do when the task sequence is complete.
+- **DoNotCreateExtraPartition.** Configures the task sequence not to create the extra partition for BitLocker. There is no need to do this for your reference image.
+- **WSUSServer.** Specifies which Windows Server Update Services (WSUS) server (and port, if needed) to use during the deployment. Without this option MDT will use Microsoft Update directly, which will increase deployment time and limit your options of controlling which updates are applied.
+- **SLSHARE.** Instructs MDT to copy the log files to a server share if something goes wrong during deployment, or when a deployment is successfully completed.
+- **ApplyGPOPack.** Allows you to deploy local group policies created by Microsoft Security Compliance Manager (SCM).
+- **SkipAdminPassword.** Skips the pane that asks for the Administrator password.
+- **SkipProductKey.** Skips the pane that asks for the product key.
+- **SkipComputerName.** Skips the Computer Name pane.
+- **SkipDomainMemberShip.** Skips the Domain Membership pane. If set to Yes, you need to configure either the JoinWorkgroup value or the JoinDomain, DomainAdmin, DomainAdminDomain, and DomainAdminPassword properties.
+- **SkipUserData.** Skips the pane for user state migration.
+- **SkipLocaleSelection.** Skips the pane for selecting language and keyboard settings.
+- **SkipTimeZone.** Skips the pane for setting the time zone.
+- **SkipApplications.** Skips the Applications pane.
+- **SkipBitLocker.** Skips the BitLocker pane.
+- **SkipSummary.** Skips the initial Windows Deployment Wizard summary pane.
+- **SkipRoles.** Skips the Install Roles and Features pane.
+- **SkipCapture.** Skips the Capture pane.
+- **SkipFinalSummary.** Skips the final Windows Deployment Wizard summary. Because you use FinishAction=Shutdown, you don't want the wizard to stop in the end so that you need to click OK before the machine shuts down.
 
 ## Build the Windows 10 reference image
 
@@ -569,41 +568,40 @@ Once you have created your task sequence, you are ready to create the Windows 10
 
 The steps below outline the process used to boot a virtual machine using an ISO boot image created by MDT, and then execute the reference image task sequence image to create and capture the Windows 10 reference image.
 
-1.  Copy the D:\\MDTBuildLab\\Boot\\MDT Build Lab x86.iso on MDT01 to C:\\ISO on a Hyper-V host.
+1. Copy D:\\MDTBuildLab\\Boot\\LiteTouchPE_x86.iso on MDT01 to C:\\ISO on a Hyper-V host.
 
-    **Note**  
-    Remember, in MDT you can use the x86 boot image to deploy both x86 and x64 operating system images. That's why you can use the x86 boot image instead of the x64 boot image.
+    **Note**: Remember, in MDT you can use the x86 boot image to deploy both x86 and x64 operating system images. That's why you can use the x86 boot image instead of the x64 boot image.
      
-2.  Create a virtual machine with the following settings:
-    1.  Name: REFW10X64-001
-    2.  Location: C:\\VMs
-    3.  Memory: 1024 MB
-    4.  Network: External (The network that is connected to the same infrastructure as MDT01 is)
-    5.  Hard disk: 60 GB (dynamic disk)
-    6.  Image file: C:\\ISO\\MDT Build Lab x86.iso
-3.  Take a snapshot of the REFW10X64-001 virtual machine, and name it **Clean with MDT Build Lab x86 ISO**.
+2. Create a virtual machine with the following settings:
+   1. Name: REFW10X64-001
+   2. Generation 1
+   3. Memory: 1024 MB
+   4. Network: Must be able to connect to \\MDT01\MDTBuildLab$
+   5. Location: C:\VM
+   6. Hard disk: 60 GB (dynamic disk)
+   7. Install OS with image file: C:\\ISO\\LiteTouchPE_x86.iso
+3. Add a checkpoint for the REFW10X64-001 virtual machine, and name it **Clean with MDT Build Lab x86 ISO**.
 
-    **Note**  
-    Taking a snapshot is useful if you need to restart the process and want to make sure you can start clean.
+    **Note**: Checkpoints are useful if you need to restart the process and want to make sure you can start clean.
      
-4.  Start the REFW10X64-001 virtual machine. After booting into Windows PE, complete the Windows Deployment Wizard using the following settings:
-    1.  Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Default Image
-    2.  Specify whether to capture an image: Capture an image of this reference computer
-        -   Location: \\\\MDT01\\MDTBuildLab$\\Captures
-    3.  File name: REFW10X64-001.wim
+4. Start the REFW10X64-001 virtual machine and connect to it. After booting into Windows PE, complete the Windows Deployment Wizard with the following settings:
+    1. Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Default Image
+    2. Specify whether to capture an image: Capture an image of this reference computer
+       -   Location: \\\\MDT01\\MDTBuildLab$\\Captures
+    3. File name: REFW10X64-001.wim
 
         ![figure 13](../images/fig13-captureimage.png)
 
         Figure 13. The Windows Deployment Wizard for the Windows 10 reference image.
 
-5.  The setup now starts and does the following:
-    1.  Installs the Windows 10 Enterprise operating system.
-    2.  Installs the added applications, roles, and features.
-    3.  Updates the operating system via your local Windows Server Update Services (WSUS) server.
-    4.  Stages Windows PE on the local disk.
-    5.  Runs System Preparation (Sysprep) and reboots into Windows PE.
-    6.  Captures the installation to a Windows Imaging (WIM) file.
-    7.  Turns off the virtual machine.
+5. The setup now starts and does the following:
+    1. Installs the Windows 10 Enterprise operating system.
+    2. Installs the added applications, roles, and features.
+    3. Updates the operating system via your local Windows Server Update Services (WSUS) server.
+    4. Stages Windows PE on the local disk.
+    5. Runs System Preparation (Sysprep) and reboots into Windows PE.
+    6. Captures the installation to a Windows Imaging (WIM) file.
+    7. Turns off the virtual machine.
 
 After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the E:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
 
