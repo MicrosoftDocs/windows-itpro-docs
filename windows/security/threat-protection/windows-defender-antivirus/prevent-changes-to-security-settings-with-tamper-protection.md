@@ -132,7 +132,7 @@ Configuring Tamper Protection in Intune can be targeted to your entire organizat
 
 Currently we do not have support to manage Tamper Protection through System Center Configuration Manager.
 
-### I have Windows E3 enrollment. Can I use configuring Tamper Protection in Intune?
+### I have the Windows E3 enrollment. Can I use configuring Tamper Protection in Intune?
 
 Currently, configuring Tamper Protection in Intune is only available for customers who have [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
