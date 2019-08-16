@@ -9,6 +9,7 @@ ms.author: v-tea
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 8/12/19
+manager: jarrettr
 ms.reviewer: 
 appliesto:
 - Hololens
