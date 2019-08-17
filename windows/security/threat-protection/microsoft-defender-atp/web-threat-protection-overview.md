@@ -29,12 +29,15 @@ With web threat protection in Microsoft Defender ATP, you get:
 - Investigation capabilities over web-related threat activity through alerts and comprehensive profiles of URLs and the machines that access these URLs
 - A full set of security features that track general access trends to malicious and unwanted websites
 
+>[!Note]
+>It can take up to an hour for machines to receive new customer indicators.
+
 ## Prerequisites
 Web threat protection uses network protection to provide web browsing security on Microsoft Edge and third-party web browsers.
 
 To turn on network protection on your machines:
 - Edit the Microsoft Defender ATP security baseline under **Web & Network Protection** to enable network protection before deploying or redeploying it. [Learn about reviewing and assigning the Microsoft Defender ATP security baseline](configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-atp-security-baseline)
-- Turn network protection on using Intune device configuration, SCCM, Group Policy, or your MDM solution. [Read more about enabling network protection](enable-network-protection.md)  
+- Turn network protection on using Intune device configuration, SCCM, Group Policy, or your MDM solution. [Read more about enabling network protection](../windows-defender-exploit-guard/enable-network-protection.md)  
 
 >[!Note]
 >If you set network protection to **Audit only**, blocking will be unavailable. Also, you will be able to detect and log attempts to access malicious and unwanted websites on Microsoft Edge only.

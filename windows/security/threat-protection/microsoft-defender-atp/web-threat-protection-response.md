@@ -57,7 +57,7 @@ You can also check the machine that attempted to access a blocked URL. Selecting
 
 ## Web browser and Windows notifications for end users
 
-With web threat protection in Microsoft Defender ATP, your end users will be blocked from visiting malicious or unwanted websites using Microsoft Edge or other browsers. Because blocking is performed by [network protection](network-protection-exploit-guard.md), they will see a generic error from the web browser. They will also see a notification from Windows.
+With web threat protection in Microsoft Defender ATP, your end users will be blocked from visiting malicious or unwanted websites using Microsoft Edge or other browsers. Because blocking is performed by [network protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md), they will see a generic error from the web browser. They will also see a notification from Windows.
 
 ![Image of Microsoft Edge showing a 403 error and the Windows notification](images/wtp-browser-blocking-page.png)
 *Web threat blocked by Microsoft Edge*
