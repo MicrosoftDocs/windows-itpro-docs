@@ -26,14 +26,14 @@ Web threat protection in Microsoft Defender APT lets you efficiently investigate
 
 ## View web threat alerts
 Microsoft Defender ATP generates the following [alerts](manage-alerts.md) for malicious or suspicious web activity:
-- **Suspicious connection blocked by network protection** — this alert is generated when an attempt to access a malicious website or a website in your custom indicator list is stopped by network protection in blocked mode
-- **Suspicious connection detected by network protection** — this alert is generated when an attempt to access a malicious website or a website in your custom indicator list is detected by network protection in audit mode
+- **Suspicious connection blocked by network protection** — this alert is generated when an attempt to access a malicious website or a website in your custom indicator list is *stopped* by network protection in *'*block* mode
+- **Suspicious connection detected by network protection** — this alert is generated when an attempt to access a malicious website or a website in your custom indicator list is detected by network protection in *audit only* mode
 
 Each alert provides the following information: 
 - Machine that attempted to access the blocked website
 - Application or program used to send the web request
 - Malicious URL or URL in the custom indicator list
-- Recommended actions for this type of detections
+- Recommended actions for responders
 
 ![Image of an alert related to web threat protection](images/wtp-alert.png)
 
@@ -41,10 +41,10 @@ Each alert provides the following information:
 >To reduce the volume of alerts, Microsoft Defender ATP consolidates web threat protection detections for the same domain on the same machine each day to a single alert. Only one alert is generated and counted into the [web protection report](web-threat-protection-monitoring.md).
 
 ## Inspect website details
-You can dive deeper by selecting the URL or domain of the website in the alert. This opens a page about that particular website providing various information, including:
-- All machines that attempted to access the URL or domain
-- All incidents and alerts related to the URL or domain
-- How frequent the URL or domain was seen in events in your organization
+You can dive deeper by selecting the URL or domain of the website in the alert. This opens a page about that particular URL or domain with various information, including:
+- Machines that attempted to access website
+- Incidents and alerts related to the website
+- How frequent the website was seen in events in your organization
 
 ![Image of the domain or URL entity details page](images/wtp-website-details.png)
 
@@ -57,14 +57,12 @@ You can also check the machine that attempted to access a blocked URL. Selecting
 
 ## Web browser and Windows notifications for end users
 
-With web threat protection in Microsoft Defender ATP, your end users will be blocked from visiting malicious or unwanted websites using Microsoft Edge or other browsers.
-
-Because blocking is performed by [network protection](network-protection-exploit-guard.md), they will see a generic error from the web browser. They will also see a notification from Windows.
+With web threat protection in Microsoft Defender ATP, your end users will be blocked from visiting malicious or unwanted websites using Microsoft Edge or other browsers. Because blocking is performed by [network protection](network-protection-exploit-guard.md), they will see a generic error from the web browser. They will also see a notification from Windows.
 
 ![Image of Microsoft Edge showing a 403 error and the Windows notification](images/wtp-browser-blocking-page.png)
 *Web threat blocked by Microsoft Edge*
 
-![Image of Chrome showing a secure connection warning and the Windows notification](images/wtp-browser-blocking-page.png)
+![Image of Chrome showing a secure connection warning and the Windows notification](images/wtp-chrome-browser-blocking-page.png)
 *Web threat blocked by the Chrome web browser*
 
 ## Related topics

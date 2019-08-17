@@ -28,7 +28,7 @@ Web threat protection lets you monitor your organization’s web browsing securi
  
     ![Image of the card showing web threats protection blocks over time](images/wtp-blocks-over-time.png)
 
-- **Web threat protection summary** — this card displays total blocks in the past 30 days, showing distribution across the different types of web threats. Clicking a slice opens the list of the domains of the URLs that were blocked.
+- **Web threat protection summary** — this card displays the total web threat protection blocks in the past 30 days, showing distribution across the different types of web threats. Clicking a slice opens the list of the domains that were blocked.
 
     ![Image of the card showing web threats protection summary](images/wtp-summary.png)
 
@@ -37,19 +37,20 @@ Web threat protection lets you monitor your organization’s web browsing securi
 
 ## Types of web threats
 Web threat protection categorizes malicious and unwanted websites as:
-- Phishing — websites that contain spoofed web forms and other phishing mechanisms designed to trick users into divulging their credentials
-- Malicious — websites in that host malware and exploit code
-- Custom indicator — websites, represented by URLs or domains, that you have added to your indicator list for blocking
+- **Phishing** — websites that contain spoofed web forms and other phishing mechanisms designed to trick users into divulging credentials and other sensitive information
+- **Malicious** — websites that host malware and exploit code
+- **Custom indicator** — websites whose URLs or domains you've added to your [custom indicator list](manage-indicators.md) for blocking
 
 ## View the domain list
-Clicking on specific web threat category in the **Web threat protection summary** card opens the **Domains** page with a list of the blocked domains prefiltered under that threat category. 
-The page provides an aggregated domain-level view along with the following information for each domain:
-- **Access count** — number of requests for pages in the domain
+Clicking on a specific web threat category in the **Web threat protection summary** card opens the **Domains** page, which shows a list of the blocked domains prefiltered under that threat category. The page provides the following information for each domain:
+
+- **Access count** — number of requests for URLs in the domain
 - **Blocks** — number of times requests are blocked
 - **Access trend** — change in number of access attempts
 - **Threat category** — type of web threat
 - **Machines** — number of machines with access attempts
-Selecting a domain opens a flyout that shows the list of URLs in that domain and the list machines with access attempts.
+
+Selecting a domain opens a panel that shows the list of URLs in that domain that have been accessed. The panel also lists machines that have attempted to access URLs in the domain.
 
 ## Related topics
 - [Web threat protection overview](web-threat-protection-overview.md)
