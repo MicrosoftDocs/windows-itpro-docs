@@ -55,7 +55,7 @@ If you've followed the steps in the [Enrolling devices in Windows Analytics](win
 
 ### Devices not appearing in Upgrade Readiness
 
-In Log Analytics, go to **Solutions** and verify that you are subscribed to the Windows Analytics solutions you intend to use.
+In Log Analytics workspace, go to **Solutions** and verify that you are subscribed to the Windows Analytics solutions you intend to use.
 
 Even though devices can take 2-3 days after enrollment to show up due to latency in the system, you can now verify the status of your devices within a few hours of running the deployment script as described in [You can now check on the status of your computers within hours of running the deployment script](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/You-can-now-check-on-the-status-of-your-computers-within-hours/ba-p/187213) on the Tech Community Blog.
 
