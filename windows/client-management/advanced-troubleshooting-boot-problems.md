@@ -101,7 +101,7 @@ To do this, follow these steps.
 > [!NOTE]
 > For additional methods to start WinRE, see [Windows Recovery Environment (Windows RE)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference#span-identrypointsintowinrespanspan-identrypointsintowinrespanspan-identrypointsintowinrespanentry-points-into-winre).
 
-1. Start the system to the installation media for the installed version of Windows.  
+1. Start the system to the installation media for the installed version of Windows. For more information, see [Create installation media for Windows](https://support.microsoft.com/help/15088).
 
 2. On the **Install Windows** screen, select **Next** > **Repair your computer**.
 
