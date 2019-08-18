@@ -2,12 +2,14 @@
 title: Monitor app usage with AppLocker (Windows 10)
 description: This topic for IT professionals describes how to monitor app usage when AppLocker policies are applied.
 ms.assetid: 0516da6e-ebe4-45b4-a97b-31daba96d1cf
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,8 +20,8 @@ ms.date: 09/21/2017
 # Monitor app usage with AppLocker
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes how to monitor app usage when AppLocker policies are applied.
 
@@ -60,7 +62,7 @@ For both event subscriptions and local events, you can use the **Get-AppLockerFi
 Membership in the local **Administrators** group, or equivalent, is the minimum required to complete this procedure.
 
 >**Note:**  If the AppLocker logs are not on your local device, you will need permission to view the logs. If the output is saved to a file, you will need permission to read that file.
- 
+ 
 **To review AppLocker events with Get-AppLockerFileInformation**
 
 1.  At the command prompt, type **PowerShell**, and then press ENTER.

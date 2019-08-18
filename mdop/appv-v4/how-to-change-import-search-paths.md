@@ -1,12 +1,15 @@
 ---
 title: How to Change Import Search Paths
 description: How to Change Import Search Paths
-author: jamiejdt
+author: dansimp
 ms.assetid: 0125f2bf-4958-4854-a5a4-a63afe5bb986
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

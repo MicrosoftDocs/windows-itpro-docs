@@ -1,12 +1,15 @@
 ---
 title: Configuring the Application Virtualization Sequencer
 description: Configuring the Application Virtualization Sequencer
-author: jamiejdt
+author: dansimp
 ms.assetid: cae1c368-9fcd-454e-8fc9-0893345d55bf
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -2,11 +2,13 @@
 title: Defender CSP
 description: Defender CSP
 ms.assetid: 481AA74F-08B2-4A32-B95D-5A3FD05B335C
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 07/19/2018
 ---
 
@@ -26,7 +28,7 @@ An interior node to group all threats detected by Windows Defender.
 
 Supported operation is Get.
 
-<a href="" id="detections-threatid"></a>**Detections/****_ThreatId_**  
+<a href="" id="detections-threatid"></a>**Detections/**<strong>*ThreatId*</strong>  
 The ID of a threat that has been detected by Windows Defender.
 
 Supported operation is Get.
@@ -120,7 +122,7 @@ The following table describes the supported values:
 | 50    | Ransomware                  |
 | 51    | ASR Rule                    |
 
- 
+ 
 
 Supported operation is Get.
 
@@ -213,7 +215,7 @@ Supported product status values:
 
 Example:
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
   <SyncBody>
     <Get>
@@ -222,7 +224,7 @@ Example:
           <Target>
             <LocURI>./Vendor/MSFT/Defender/Health/ProductStatus</LocURI>
           </Target>
-        </Item>     
+        </Item>
     </Get>
     <Final/>
   </SyncBody>

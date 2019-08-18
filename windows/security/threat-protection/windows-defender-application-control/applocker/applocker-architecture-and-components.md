@@ -2,12 +2,14 @@
 title: AppLocker architecture and components (Windows 10)
 description: This topic for IT professional describes AppLocker’s basic architecture and its major components.
 ms.assetid: efdd8494-553c-443f-bd5f-c8976535135a
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,8 +20,8 @@ ms.date: 09/21/2017
 # AppLocker architecture and components
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professional describes AppLocker’s basic architecture and its major components.
 

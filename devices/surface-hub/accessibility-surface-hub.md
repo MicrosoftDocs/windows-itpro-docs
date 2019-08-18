@@ -2,13 +2,14 @@
 title: Accessibility (Surface Hub)
 description: Accessibility settings for the Microsoft Surface Hub can be changed by using the Settings app. You'll find them under Ease of Access. Your Surface Hub has the same accessibility options as Windows 10.
 ms.assetid: 1D44723B-1162-4DF6-99A2-8A3F24443442
+ms.reviewer: 
+manager: dansimp
 keywords: Accessibility settings, Settings app, Ease of Access
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
-ms.date: 08/16/2017
 ms.localizationpriority: medium
 ---
 

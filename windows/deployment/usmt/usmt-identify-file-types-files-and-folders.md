@@ -2,10 +2,13 @@
 title: Identify File Types, Files, and Folders (Windows 10)
 description: Identify File Types, Files, and Folders
 ms.assetid: 93bb2a33-c126-4f7a-a961-6c89686d54e0
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

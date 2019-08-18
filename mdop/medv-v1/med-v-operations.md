@@ -1,12 +1,15 @@
 ---
 title: MED-V Operations
 description: MED-V Operations
-author: jamiejdt
+author: dansimp
 ms.assetid: ce362dc0-47a4-4e66-af64-66734fa50c08
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

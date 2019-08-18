@@ -5,10 +5,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: article
-ms.author: elizapo
-author: lizap
+ms.author: greglin
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 03/13/2019
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 # How to make Features on Demand and language packs available when you're using WSUS/SCCM

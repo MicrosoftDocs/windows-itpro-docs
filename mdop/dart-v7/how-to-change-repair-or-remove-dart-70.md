@@ -1,12 +1,15 @@
 ---
 title: How to Change, Repair, or Remove DaRT 7.0
 description: How to Change, Repair, or Remove DaRT 7.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: a65ff4f3-2b6d-4105-a7a0-67c87e8e7300
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

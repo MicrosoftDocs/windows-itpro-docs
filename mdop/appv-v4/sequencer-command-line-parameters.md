@@ -1,12 +1,15 @@
 ---
 title: Sequencer Command-Line Parameters
 description: Sequencer Command-Line Parameters
-author: jamiejdt
+author: eavena
 ms.assetid: 28fb875a-c302-4d95-b2e0-8dc0c5dbb0f8
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

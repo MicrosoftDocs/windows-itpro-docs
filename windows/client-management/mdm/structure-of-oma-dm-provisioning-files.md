@@ -2,11 +2,13 @@
 title: Structure of OMA DM provisioning files
 description: Structure of OMA DM provisioning files
 ms.assetid: 7bd3ef57-c76c-459b-b63f-c5a333ddc2bc
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -51,7 +53,7 @@ The following table shows the OMA DM versions that are supported.
 
 The following example shows the general structure of the XML document sent by the server using OMA DM version 1.2.1 for demonstration purposes only. The initial XML packages exchanged between client and server could contain additional XML tags. For a detailed description and samples for those packages, see the [OMA Device Management Protocol 1.2.1](https://go.microsoft.com/fwlink/p/?LinkId=526902) specification.
 
-``` syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncHdr>
       <VerDTD>1.2</VerDTD>
@@ -105,7 +107,7 @@ The following example shows the header component of a DM message. In this case, 
 
  
 
-``` syntax
+```xml
 <SyncHdr>
    <VerDTD>1.2</VerDTD>
    <VerProto>DM/1.2</VerProto>
@@ -128,7 +130,7 @@ SyncBody contains one or more DM commands. The SyncBody can contain multiple DM 
 
 The following example shows the body component of a DM message. In this example, SyncBody contains only one command, Get. This is indicated by the &lt;Final /&gt; tag that occurs immediately after the terminating tag for the Get command.
 
-``` syntax
+```xml
 <SyncBody>
    <!-- query device OS software version -->
    <Get>
@@ -155,7 +157,7 @@ The Replace command is used to update a device setting.
 
 The following example illustrates how to use the Replace command to update a device setting.
 
-``` syntax
+```xml
 <SyncHdr>
    <VerDTD>1.2</VerDTD>
    <VerProto>DM/1.2</VerProto>

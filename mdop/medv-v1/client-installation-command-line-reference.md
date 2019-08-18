@@ -1,12 +1,15 @@
 ---
 title: Client Installation Command Line Reference
 description: Client Installation Command Line Reference
-author: jamiejdt
+author: dansimp
 ms.assetid: 122a593d-3314-4e9b-858a-08a25ed00c32
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -90,11 +93,10 @@ ms.date: 06/16/2016
 <p>Default: <strong>1</strong></p></td>
 <td align="left"><p>Starts MED-V at the completion of the MED-V installation.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>It is recommended to set START_MEDV=0 in case MED-V is installed by the system.</p>
+<strong>Note</strong><br/><p>It is recommended to set START_MEDV=0 in case MED-V is installed by the system.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -116,11 +118,11 @@ ms.date: 06/16/2016
 </tbody>
 </table>
 
- 
 
- 
 
- 
+
+
+
 
 
 

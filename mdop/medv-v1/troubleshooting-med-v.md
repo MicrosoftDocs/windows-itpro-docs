@@ -1,12 +1,15 @@
 ---
 title: Troubleshooting MED-V
 description: Troubleshooting MED-V
-author: jamiejdt
+author: dansimp
 ms.assetid: f43dae36-6485-4e06-9c66-0a646e27079d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

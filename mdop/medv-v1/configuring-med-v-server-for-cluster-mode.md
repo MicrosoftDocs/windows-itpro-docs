@@ -1,12 +1,15 @@
 ---
 title: Configuring MED-V Server for Cluster Mode
 description: Configuring MED-V Server for Cluster Mode
-author: jamiejdt
+author: dansimp
 ms.assetid: 41f0b2a3-4ce9-48e1-a6fb-4c13c4228515
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -42,16 +45,16 @@ You can configure the MED-V server in cluster mode. In cluster mode, two servers
 **Note**  
 If all servers have the same local settings (such as listening ports, IIS server, management permissions, report database, and so on), the *&lt;InstallDir&gt;/Servers/ServerSettings.xml* can be shared by all servers as well.
 
- 
+ 
 
 ## Related topics
 
 
 [MED-V Infrastructure Planning and Design](med-v-infrastructure-planning-and-design.md)
 
- 
+ 
 
- 
+ 
 
 
 

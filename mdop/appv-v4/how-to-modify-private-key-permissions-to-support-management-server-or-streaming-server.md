@@ -1,12 +1,15 @@
 ---
 title: How to Modify Private Key Permissions to Support Management Server or Streaming Server
 description: How to Modify Private Key Permissions to Support Management Server or Streaming Server
-author: jamiejdt
+author: eavena
 ms.assetid: 1ebe86fa-0fbc-4512-aebc-0a5da991cd43
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -23,7 +26,7 @@ In Windows Server 2008, the process of changing the ACLs on the private key is 
 **Note**  
 The default security context is Network Service; however, a domain account can be used instead.
 
- 
+ 
 
 **To manage private keys in Windows Server 2003**
 
@@ -54,9 +57,9 @@ The default security context is Network Service; however, a domain account can b
 
 [Configuring Certificates to Support Secure Streaming](configuring-certificates-to-support-secure-streaming.md)
 
- 
+ 
 
- 
+ 
 
 
 

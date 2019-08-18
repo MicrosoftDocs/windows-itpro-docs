@@ -1,12 +1,15 @@
 ---
 title: CONFIGURE PACKAGE
 description: CONFIGURE PACKAGE
-author: jamiejdt
+author: dansimp
 ms.assetid: acc7eaa8-6ada-47b9-a655-2ca2537605b9
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

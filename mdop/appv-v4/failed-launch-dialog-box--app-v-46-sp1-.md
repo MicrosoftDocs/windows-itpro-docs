@@ -1,12 +1,15 @@
 ---
 title: Failed Launch Dialog Box (App-V 4.6 SP1)
 description: Failed Launch Dialog Box (App-V 4.6 SP1)
-author: jamiejdt
+author: dansimp
 ms.assetid: 55669552-51b4-48aa-8bd0-6d78c2c930d9
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -1,12 +1,15 @@
 ---
 title: Deploy the MED-V Components
 description: Deploy the MED-V Components
-author: jamiejdt
+author: levinec
 ms.assetid: fc2c5ef2-9c71-412a-8f6c-93df248f77d6
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

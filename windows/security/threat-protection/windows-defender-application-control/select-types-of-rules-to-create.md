@@ -6,8 +6,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: jsuther1974
+author: dansimp
 ms.date: 04/20/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Deploy Windows Defender Application Control policy rules and file rules
@@ -23,8 +26,6 @@ Windows Defender Application Control (WDAC) provides control over a computer run
 
 A common system imaging practice in today’s IT organization is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone additional company assets. WDAC policies follow a similar methodology, that begins with the establishment of a golden computer. As with imaging, you can have multiple golden computers based on model, department, application set, and so on. Although the thought process around the creation of WDAC policies is similar to imaging, these policies should be maintained independently. Assess the necessity of additional WDAC policies based on what should be allowed to be installed and run and for whom. For more details on doing this assessment, see the [WDAC Design Guide](windows-defender-application-control-design-guide.md).
 
-> **Note**&nbsp;&nbsp;Each computer can have only **one** WDAC policy at a time. Whichever way you deploy this policy, it is renamed to SIPolicy.p7b and copied to **C:\\Windows\\System32\\CodeIntegrity** and, for UEFI computers, **&lt;EFI System Partition&gt;\\Microsoft\\Boot**. Keep this in mind when you create your WDAC policies.
-
 Optionally, WDAC can align with your software catalog as well as any IT department–approved applications. One straightforward method to implement WDAC is to use existing images to create one master WDAC policy. You do so by creating a WDAC policy from each image, and then by merging the policies. This way, what is installed on all of those images will be allowed to run, if the applications are installed on a computer based on a different image. Alternatively, you may choose to create a base applications policy and add policies based on the computer’s role or department. Organizations have a choice of how their policies are created, merged or serviced, and managed.
 
 If you plan to use an internal CA to sign catalog files or WDAC policies, see the steps in [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md). 
@@ -35,17 +36,17 @@ To modify the policy rule options of an existing WDAC policy, use [Set-RuleOptio
 
 -   To ensure that UMCI is enabled for a WDAC policy that was created with the `-UserPEs` (user mode) option, add rule option 0 to an existing policy by running the following command:
 
-    ` Set-RuleOption -FilePath <Path to policy> -Option 0`
+    `Set-RuleOption -FilePath <Path to policy> -Option 0`
 
     Note that a policy that was created without the `-UserPEs` option is empty of user mode executables, that is, applications. If you enable UMCI (Option 0) for such a policy and then attempt to run an application, Windows Defender Application Control will see that the application is not on its list (which is empty of applications), and respond. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. To create a policy that includes user mode executables (applications), when you run `New-CIPolicy`, include the `-UserPEs` option. 
 
 -   To disable UMCI on an existing WDAC policy, delete rule option 0 by running the following command:
 
-    ` Set-RuleOption -FilePath <Path to policy> -Option 0 -Delete`
+    `Set-RuleOption -FilePath <Path to policy> -Option 0 -Delete`
 
 You can set several rule options within a WDAC policy. Table 2 describes each rule option. 
 
-> [!NOTE] 
+> [!NOTE]
 > We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
 
 **Table 2. Windows Defender Application Control policy - policy rule options**
@@ -69,6 +70,7 @@ You can set several rule options within a WDAC policy. Table 2 describes each ru
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
 | **15 Enabled:Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically re-validate the reputation for files that were authorized by the ISG.| 
 | **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. |
+| **17 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically-loaded libraries. |
 
 ## Windows Defender Application Control file rule levels
 
@@ -104,3 +106,50 @@ To create the WDAC policy, they build a reference server on their standard hardw
 As part of normal operations, they will eventually install software updates, or perhaps add software from the same software providers. Because the "Publisher" remains the same on those updates and software, they will not need to update their WDAC policy. If they come to a time when the internally-written, unsigned application must be updated, they must also update the WDAC policy so that the hash in the policy matches the hash of the updated internal application.
 
 They could also choose to create a catalog that captures information about the unsigned internal application, then sign and distribute the catalog. Then the internal application could be handled by WDAC policies in the same way as any other signed application. An update to the internal application would only require that the catalog be regenerated, signed, and distributed (no restarts would be required).
+
+## Create path-based rules 
+
+Beginning with Windows 10 version 1903, Windows Defender Application Control (WDAC) policies can contain path-based rules.
+
+- New-CIPolicy parameter
+  - FilePath: create path rules under path \<path to scan> for anything not user-writeable (at the individual file level)
+
+    ```powershell
+    New-CIPolicy -FilePath .\mypolicy.xml -Level FileName -ScanPath <path to scan> -UserPEs
+    ```
+
+    Optionally, add -UserWriteablePaths to ignore user writeability
+    
+- New-CIPolicyRule parameter
+  - FilePathRule: create a rule where filepath string is directly set to value of \<any path string>
+
+    ```powershell
+    New-CIPolicyRule -FilePathRule <any path string>
+    ```
+
+    Useful for wildcards like C:\foo\\*
+
+- Usage follows the same flow as per-app rules:
+
+  ```powershell
+  $rules = New-CIPolicyRule …
+  $rules += New-CIPolicyRule …
+  …
+  New-CIPolicy -FilePath .\mypolicy.xml -Rules $rules -UserPEs
+  ```
+
+- Wildcards supported
+  - Suffix (ex. C:\foo\\*) OR Prefix (ex. *\foo\bar.exe)
+    - One or the other, not both at the same time
+    - Does not support wildcard in the middle (ex. C:\\*\foo.exe)
+  - Examples:
+    - %WINDIR%\\...
+    - %SYSTEM32%\\...
+    - %OSDRIVE%\\...
+
+- Disable default FilePath rule protection of enforcing user-writeability. For example, to add “Disabled:Runtime FilePath Rule Protection” to the policy:
+
+  ```powershell
+  Set-RuleOption -Option 18 .\policy.xml
+  ```
+

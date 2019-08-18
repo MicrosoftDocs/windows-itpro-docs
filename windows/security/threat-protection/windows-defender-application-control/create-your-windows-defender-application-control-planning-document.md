@@ -2,12 +2,14 @@
 title: Create your Windows Defender Application Control (WDAC) planning document (Windows 10)
 description: This planning topic for the IT professional summarizes the information you need to research and include in your WDAC planning document.
 ms.assetid: 41e49644-baf4-4514-b089-88adae2d624e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,8 +20,8 @@ ms.date: 09/21/2017
 # Create your Windows Defender Application Control (WDAC) planning document
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This planning topic for the IT professional summarizes the information you need to research and include in your WDAC planning document.
 
@@ -86,8 +88,8 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
-**Rules**
+ 
+<strong>Rules</strong>
 
 <table style="width:100%;">
 <colgroup>
@@ -128,8 +130,8 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
-**Event processing**
+ 
+<strong>Event processing</strong>
 
 <table>
 <colgroup>
@@ -158,8 +160,8 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
-**Policy maintenance**
+ 
+<strong>Policy maintenance</strong>
 
 <table>
 <colgroup>
@@ -189,7 +191,7 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
+ 
 ### Example of a WDAC planning document
 
 **Rules**
@@ -270,7 +272,7 @@ You can use the following form to construct your own WDAC planning document.
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer\</p></td>
+<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
 <td align="left"><p>File is signed; create a publisher condition</p></td>
 <td align="left"><p>Deny</p></td>
 <td align="left"><p></p></td>
@@ -290,8 +292,8 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
-**Event processing**
+ 
+<strong>Event processing</strong>
 
 <table>
 <colgroup>
@@ -327,8 +329,8 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
-**Policy maintenance**
+ 
+<strong>Policy maintenance</strong>
 
 <table>
 <colgroup>
@@ -372,9 +374,9 @@ You can use the following form to construct your own WDAC planning document.
 </tr>
 </tbody>
 </table>
- 
+ 
 ### Additional resources
 
 -   [Windows Defender Application Control](windows-defender-application-control.md)
- 
- 
+ 
+ 

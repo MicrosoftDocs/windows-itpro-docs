@@ -1,13 +1,15 @@
 ---
 title: Get started with Upgrade Readiness (Windows 10)
+ms.reviewer: 
+manager: laurawi
 description: Explains how to get started with Upgrade Readiness.
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics,
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+audience: itproauthor: greg-lindsay
+ms.author: greglin
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: M365-analytics
@@ -24,14 +26,14 @@ You can use Upgrade Readiness to plan and manage your upgrade project end-to-end
 
 Before you begin, consider reviewing the following helpful information:<BR>
     - [Upgrade Readiness requirements](upgrade-readiness-requirements.md): Provides detailed requirements to use Upgrade Readiness.<BR>
-    - [Upgrade Readiness blog](https://aka.ms/blog/WindowsAnalytics): Contains announcements of new features and provides helpful tips for using Upgrade Readiness.
+    - [Upgrade Readiness blog](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/bg-p/WindowsAnalyticsBlog): Contains announcements of new features and provides helpful tips for using Upgrade Readiness.
 
 >If you are using System Center Configuration Manager, also check out information about how to integrate Upgrade Readiness with Configuration Manager: [Integrate Upgrade Readiness with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
 
 When you are ready to begin using Upgrade Readiness, perform the following steps:
 
 1. Review [data collection and privacy](#data-collection-and-privacy) information.
-2. [Add the Upgrade Readiness solution to your Azure subsctiption](#add-the-upgrade-readiness-solution-to-your-Azure-subscription).
+2. [Add the Upgrade Readiness solution to your Azure subsctiption](#add-the-upgrade-readiness-solution-to-your-azure-subscription).
 3. [Enroll devices in Windows Analytics](#enroll-devices-in-windows-analytics).
 4. [Use Upgrade Readiness to manage Windows Upgrades](#use-upgrade-readiness-to-manage-windows-upgrades) once your devices are enrolled.
 
@@ -45,7 +47,7 @@ Upgrade Readiness is offered as a *solution* which you link to a new or existing
 
 1. Sign in to the [Azure Portal](https://portal.azure.com) with your work or school account or a Microsoft account. If you don't already have an Azure subscription you can create one (including free trial options) through the portal.
    
-    >[!NOTE] 
+    >[!NOTE]
     > Upgrade Readiness is included at no additional cost with Windows 10 Professional, Education, and Enterprise editions. An Azure subscription is required for managing and using Upgrade Readiness, but no Azure charges are expected to accrue to the subscription as a result of using Upgrade Readiness. 
 
 2. In the Azure portal select **Create a resource**, search for "Upgrade Readiness", and then select **Create** on the **Upgrade Readiness** solution. 
@@ -59,7 +61,7 @@ Upgrade Readiness is offered as a *solution* which you link to a new or existing
         - Choose a workspace name which reflects the scope of planned usage in your organization, for example *PC-Analytics*.
         - For the resource group setting select **Create new** and use the same name you chose for your new workspace.
         - For the location setting, choose the Azure region where you would prefer the data to be stored.
-        - For the pricing tier select **Free**.
+        - For the pricing tier select **per GB**.
 4. Now that you have selected a workspace, you can go back to the Upgrade Readiness blade and select **Create**.
     ![Azure portal showing workspace selected and with Create button highlighted](../images/UR-Azureportal4.png)
 5. Watch for a Notification (in the Azure portal) that "Deployment 'Microsoft.CompatibilityAssessmentOMS' to resource group 'YourResourceGroupName' was successful." and then select **Go to resource** This might take several minutes to appear.

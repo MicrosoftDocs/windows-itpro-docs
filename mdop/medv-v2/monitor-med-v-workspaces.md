@@ -1,12 +1,15 @@
 ---
 title: Monitor MED-V Workspaces
 description: Monitor MED-V Workspaces
-author: jamiejdt
+author: levinec
 ms.assetid: f514afe2-8add-4105-9520-1a491733fa79
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

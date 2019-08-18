@@ -2,12 +2,14 @@
 title: Interactive logon Don't display username at sign-in (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Interactive logon Don't display username at sign-in security policy setting.
 ms.assetid: 98b24b03-95fe-4edc-8e97-cbdaa8e314fd
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -54,7 +56,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 | Domain controller effective default settings | Not defined|
 | Member server effective default settings | Not defined|
 | Effective GPO default settings on client computers | Not defined|
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

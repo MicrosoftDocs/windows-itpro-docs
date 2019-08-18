@@ -1,12 +1,15 @@
 ---
 title: High-Level Architecture for UE-V 1.0
 description: High-Level Architecture for UE-V 1.0
-author: jamiejdt
+author: levinec
 ms.assetid: d54f9f10-1a4d-4e56-802d-22d51646e1cc
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -1,8 +1,11 @@
 ---
 title: Operations Guide for Microsoft Advanced Group Policy Management 4.0
 description: Operations Guide for Microsoft Advanced Group Policy Management 4.0
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 0bafeba3-20a9-4360-be5d-03f786df11ee
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

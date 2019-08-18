@@ -1,8 +1,11 @@
 ---
 title: Modify the Archive Path
 description: Modify the Archive Path
-author: jamiejdt
+author: mjcaparas
 ms.assetid: 6d90daf9-58db-4166-b5b3-e84bb261164a
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -41,7 +44,7 @@ A user account that is a member of the Domain Admins group and has access to the
 
         If you will be managing GPOs on multiple domains or if a member server will be the AGPM Server, you should configure a different account as the AGPM Service Account because the Local System account for one domain controller cannot access GPOs on other domains.
 
-         
+         
 
     3.  For the archive owner, enter the credentials of an AGPM Administrator (Full Control).
 
@@ -51,9 +54,9 @@ A user account that is a member of the Domain Admins group and has access to the
 
 -   [Managing the AGPM Service](managing-the-agpm-service.md)
 
- 
+ 
 
- 
+ 
 
 
 

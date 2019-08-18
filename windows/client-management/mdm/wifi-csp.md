@@ -2,12 +2,14 @@
 title: WiFi CSP
 description: WiFi CSP
 ms.assetid: f927cb5f-9555-4029-838b-03fb68937f06
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 10/24/2018
+author: manikadhiman
+ms.date: 06/18/2019
 ---
 
 # WiFi CSP
@@ -23,7 +25,7 @@ Programming considerations:
 -   Because the Windows 10 Mobile emulator does not support Wi-Fi, you cannot test the Wi-Fi configuration with an emulator. You can still provision a Wi-Fi network using the WiFi CSP, then check it in the Wi-Fi settings page, but you cannot test the network connectivity in the emulator.
 -   For WEP, WPA, and WPA2-based networks, include the passkey in the network configuration in plaintext. The passkey is encrypted automatically when it is stored on the device.
 -   The SSID of the Wi-Fi network part of the LocURI node must be a valid URI based on RFC 2396. This requires that all non-ASCII characters must be escaped using a %-character. Unicode characters without the necessary escaping are not supported.
--   The <name>*name\_goes\_here*</name><SSIDConfig> must match <SSID><name> *name\_goes\_here*</name></SSID>.
+-   The \<name>*name\_goes\_here*\</name>\<SSIDConfig> must match \<SSID>\<name> *name\_goes\_here*\</name>\</SSID>.
 -   For the WiFi CSP, you cannot use the Replace command unless the node already exists.
 -   Using Proxyis only supported in Windows 10 Mobile. Using this configuration in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) will result in failure.
 
@@ -41,10 +43,10 @@ Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is 
 
 Supported operation is Get.
 
-<a href="" id="-ssid-"></a>***<SSID>***
+<a href="" id="-ssid-"></a>**<em>\<SSID></em>**
 Specifies the name of the Wi-Fi network (32 bytes maximum) to create, configure, query, or delete. The name is case sensitive and can be represented in ASCII. The SSID is added when the WlanXML node is added. When the SSID node is deleted, then all the subnodes are also deleted.
 
-SSID is the name of network you are connecting to, while Profile name is the name of the Profile which contains the WiFi settings information. If the Profile name is not set right in the MDM SyncML, as per the information in the WiFi settings XML, it could lead to some unexpected errors. For example, <LocURI>./Vendor/MSFT/WiFi/Profile/<*MUST BE NAME OF PROFILE AS PER WIFI XML*>/WlanXml</LocURI>.
+SSID is the name of network you are connecting to, while Profile name is the name of the Profile which contains the WiFi settings information. If the Profile name is not set right in the MDM SyncML, as per the information in the WiFi settings XML, it could lead to some unexpected errors. For example, \<LocURI>./Vendor/MSFT/WiFi/Profile/<*MUST BE NAME OF PROFILE AS PER WIFI XML*>/WlanXml\</LocURI>.
 
 The supported operations are Add, Get, Delete, and Replace.
 
@@ -77,7 +79,10 @@ If it is an IPvFuture address, then it must be specified as an IP literal as "\[
 Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="disableinternetconnectivitychecks"></a>**DisableInternetConnectivityChecks**
-Added in Windows 10, version 1511.Optional. Disable the internet connectivity check for the profile.
+> [!Note]
+> This node has been deprecated since Windows 10, version 1607.
+
+Added in Windows 10, version 1511. Optional. Disable the internet connectivity check for the profile.
 
 Value type is chr.
 
@@ -116,7 +121,7 @@ These XML examples show how to perform various tasks using OMA DM.
 
 The following example shows how to add PEAP-MSCHAPv2 network with SSID 'MyNetwork,' a proxy URL 'testproxy,' and port 80.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Atomic>
@@ -155,7 +160,7 @@ The following example shows how to add PEAP-MSCHAPv2 network with SSID 'MyNetwor
 
 The following example shows how to query Wi-Fi profiles installed on an MDM server.
 
-``` syntax
+```xml
 <Get>
    <CmdID>301</CmdID>
    <Item>
@@ -168,7 +173,7 @@ The following example shows how to query Wi-Fi profiles installed on an MDM serv
 
 The following example shows the response.
 
-``` syntax
+```xml
 <Results>
    <CmdID>3</CmdID>
    <MsgRef>1</MsgRef>
@@ -185,17 +190,17 @@ The following example shows the response.
 
 The following example shows how to remove a network with SSID ‘MyNetwork’ and no proxy. Removing all network authentication types is done in this same manner.
 
-``` syntax
+```xml
 <Atomic>
-      <CmdID>300</CmdID>
-      <Delete>
-        <CmdID>301</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml</LocURI>
-          </Target>
-        </Item>
-      </Delete>
+  <CmdID>300</CmdID>
+  <Delete>
+    <CmdID>301</CmdID>
+    <Item>
+      <Target>
+        <LocURI>./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml</LocURI>
+      </Target>
+    </Item>
+  </Delete>
 </Atomic>
 ```
 
@@ -203,21 +208,21 @@ The following example shows how to remove a network with SSID ‘MyNetwork’ an
 
 The following example shows how to add PEAP-MSCHAPv2 network with SSID ‘MyNetwork’ and root CA validation for server certificate.
 
-``` syntax
+```xml
 <Atomic>
-      <CmdID>300</CmdID>
-      <Add>
-        <CmdID>301</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">chr</Format>
-          </Meta>
-          <Data><?xml version="1.0"?><WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1"><name>MyNetwork</name><SSIDConfig><SSID><name>MyNetwork</name></SSID><nonBroadcast>false</nonBroadcast></SSIDConfig><connectionType>ESS</connectionType><connectionMode>manual</connectionMode><MSM><security><authEncryption><authentication>WPA2</authentication><encryption>AES</encryption><useOneX>true</useOneX></authEncryption><OneX xmlns="http://www.microsoft.com/networking/OneX/v1"><authMode>user</authMode><EAPConfig><EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><EapMethod><Type xmlns="http://www.microsoft.com/provisioning/EapCommon">25</Type><VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId><VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType><AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId></EapMethod><Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"><Type>25</Type><EapType xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1"><ServerValidation><DisableUserPromptForServerValidation>true</DisableUserPromptForServerValidation><ServerNames></ServerNames><TrustedRootCA> InsertCertThumbPrintHere </TrustedRootCA></ServerValidation><FastReconnect>true</FastReconnect><InnerEapOptional>false</InnerEapOptional><Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"><Type>26</Type><EapType xmlns="http://www.microsoft.com/provisioning/MsChapV2ConnectionPropertiesV1"><UseWinLogonCredentials>false</UseWinLogonCredentials></EapType></Eap><EnableQuarantineChecks>false</EnableQuarantineChecks><RequireCryptoBinding>false</RequireCryptoBinding><PeapExtensions><PerformServerValidation xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">true</PerformServerValidation><AcceptServerName xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">false</AcceptServerName></PeapExtensions></EapType></Eap></Config></EapHostConfig></EAPConfig></OneX></security></MSM></WLANProfile> </Data>
-        </Item>
-      </Add>
+  <CmdID>300</CmdID>
+  <Add>
+    <CmdID>301</CmdID>
+    <Item>
+      <Target>
+        <LocURI>./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml</LocURI>
+      </Target>
+      <Meta>
+        <Format xmlns="syncml:metinf">chr</Format>
+      </Meta>
+      <Data><?xml version="1.0"?><WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1"><name>MyNetwork</name><SSIDConfig><SSID><name>MyNetwork</name></SSID><nonBroadcast>false</nonBroadcast></SSIDConfig><connectionType>ESS</connectionType><connectionMode>manual</connectionMode><MSM><security><authEncryption><authentication>WPA2</authentication><encryption>AES</encryption><useOneX>true</useOneX></authEncryption><OneX xmlns="http://www.microsoft.com/networking/OneX/v1"><authMode>user</authMode><EAPConfig><EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><EapMethod><Type xmlns="http://www.microsoft.com/provisioning/EapCommon">25</Type><VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId><VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType><AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId></EapMethod><Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"><Type>25</Type><EapType xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1"><ServerValidation><DisableUserPromptForServerValidation>true</DisableUserPromptForServerValidation><ServerNames></ServerNames><TrustedRootCA> InsertCertThumbPrintHere </TrustedRootCA></ServerValidation><FastReconnect>true</FastReconnect><InnerEapOptional>false</InnerEapOptional><Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"><Type>26</Type><EapType xmlns="http://www.microsoft.com/provisioning/MsChapV2ConnectionPropertiesV1"><UseWinLogonCredentials>false</UseWinLogonCredentials></EapType></Eap><EnableQuarantineChecks>false</EnableQuarantineChecks><RequireCryptoBinding>false</RequireCryptoBinding><PeapExtensions><PerformServerValidation xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">true</PerformServerValidation><AcceptServerName xmlns="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV2">false</AcceptServerName></PeapExtensions></EapType></Eap></Config></EapHostConfig></EAPConfig></OneX></security></MSM></WLANProfile> </Data>
+    </Item>
+  </Add>
 </Atomic>
 ```
 
@@ -226,9 +231,9 @@ The following example shows how to add PEAP-MSCHAPv2 network with SSID ‘MyNetw
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

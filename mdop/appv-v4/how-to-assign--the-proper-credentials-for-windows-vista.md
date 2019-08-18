@@ -1,12 +1,15 @@
 ---
 title: How to Assign the Proper Credentials for Windows Vista
 description: How to Assign the Proper Credentials for Windows Vista
-author: jamiejdt
+author: dansimp
 ms.assetid: cc11d2af-a350-4d16-ba7b-f9c1d89e14b4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ Use the following procedure to configure the App-V Desktop Client for proper Win
 **Note**  
 This procedure must be completed on each non-domain joined computer. Depending on the number of non-domain joined computers in your environment, this could be a very tedious operation. You can use scripts and the command-line interface for Credential Manager to help administrators automate this process.
 
- 
+ 
 
 **To assign the proper credentials for App-V clients running Windows Vista**
 
@@ -48,9 +51,9 @@ This procedure must be completed on each non-domain joined computer. Depending o
 
 [How to Assign the Proper Credentials for Windows XP](how-to-assign--the-proper-credentials-for-windows-xp.md)
 
- 
+ 
 
- 
+ 
 
 
 

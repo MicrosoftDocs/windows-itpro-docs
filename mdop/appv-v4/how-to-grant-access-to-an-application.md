@@ -1,12 +1,15 @@
 ---
 title: How to Grant Access to an Application
 description: How to Grant Access to an Application
-author: jamiejdt
+author: dansimp
 ms.assetid: e54d9e84-21f5-488f-b040-25f374d9289f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -33,7 +36,7 @@ As the administrator, you can use the Application Virtualization Server Manageme
     **Note**  
     You must set up your groups in Active Directory Domain Services before you attempt to grant access to applications.
 
-     
+     
 
 ## Related topics
 
@@ -46,9 +49,9 @@ As the administrator, you can use the Application Virtualization Server Manageme
 
 [How to Manually Add an Application](how-to-manually-add-an-application.md)
 
- 
+ 
 
- 
+ 
 
 
 

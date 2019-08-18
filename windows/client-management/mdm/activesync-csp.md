@@ -2,11 +2,13 @@
 title: ActiveSync CSP
 description: ActiveSync CSP
 ms.assetid: c65093ef-bd36-4f32-9dab-edb7bcfb3188
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: lomayor
 ms.date: 06/26/2017
 ---
 
@@ -24,7 +26,7 @@ On the desktop, only per user configuration (./User/Vendor/MSFT/ActiveSync) is s
 
 The ./Vendor/MSFT/ActiveSync path is deprecated, but will continue to work in the short term.
 
- 
+ 
 
 The following diagram shows the ActiveSync configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
 
@@ -40,7 +42,7 @@ On the desktop, only per user configuration (./User/Vendor/MSFT/ActiveSync) is s
 
 The ./Vendor/MSFT/ActiveSync path is deprecated, but will continue to work in the short term.
 
- 
+ 
 
 The supported operation is Get.
 
@@ -58,13 +60,13 @@ When managing over OMA DM, make sure to always use a unique GUID. Provisioning w
 
 Braces { } are required around the GUID. In OMA Client Provisioning, you can type the braces. For example:
 
-``` syntax
+```xml
 <characteristic type="{C556E16F-56C4-4EDB-9C64-D9469EE1FBE0}"/>
 ```
 
 For OMA DM, you must use the ASCII values of %7B and %7D for the opening and closing braces, respectively. For example, if the GUID is "C556E16F-56C4-4EDB-9C64-D9469EE1FBE0", type:
 
-``` syntax
+```xml
 <Target>
    <LocURI>
       ./Vendor/MSFT/ActiveSync/Accounts/%7BC556E16F-56C4-4EDB-9C64-D9469EE1FBE0%7D
@@ -203,7 +205,7 @@ Valid values are one of the following:
 
 -   5 – Email up to a month old is synced to the device.
 
-<a href="" id="options-contenttypes-content-type-guid"></a>**Options/ContentTypes/****_Content Type GUID_**  
+<a href="" id="options-contenttypes-content-type-guid"></a>**Options/ContentTypes/**<strong>*Content Type GUID*</strong>  
 Defines the type of content to be individually enabled/disabled for sync.
 
 The *GUID* values allowed are one of the following:
@@ -231,7 +233,7 @@ Required. A character string that specifies the name of the content type.
 
 > **Note**  In Windows 10, this node is currently not working.
 
- 
+ 
 
 Supported operations are Get, Replace, and Add (cannot Add after the account is created).
 
@@ -255,9 +257,9 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

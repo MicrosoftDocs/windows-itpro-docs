@@ -1,12 +1,15 @@
 ---
 title: Application Virtualization Client Management Console Roadmap
 description: Application Virtualization Client Management Console Roadmap
-author: jamiejdt
+author: dansimp
 ms.assetid: 3aca02c4-728c-4c34-b90f-4e6f188937b0
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

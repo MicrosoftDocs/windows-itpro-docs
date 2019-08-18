@@ -3,11 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: support
 ms.pagetype: security
 description: Internet Explorer Administration Kit (IEAK) helps corporations, Internet service providers (ISPs), Internet content providers (ICPs), and independent software vendors (ISVs) to deploy and manage web-based solutions.
-author: shortpatti
-ms.author: pashort
+author: lomayor
+ms.author: lomayor
 ms.manager: elizapo
 ms.prod: ie11
 ms.assetid:
+ms.reviewer: 
+audience: itpromanager: dansimp
 title: IEAK 11 - Frequently Asked Questions
 ms.sitesec: library
 ms.date: 05/10/2018
@@ -35,7 +37,7 @@ You can customize and install IEAK 11 on the following supported operating syste
 
 >[!Note]
 >IEAK 11 does not support building custom packages for Windows RT.
-     
+
 
 **What can I customize with IEAK 11?**
 
@@ -51,7 +53,7 @@ Yes. You can use IEAK 11 to build custom Internet Explorer 11 packages in any of
 >IEAK 11 is available in 24 languages but can build customized Internet Explorer 11 packages in all languages of the supported operating systems. To download IEAK 11, see [Internet Explorer Administration Kit (IEAK) information and downloads](../ie11-ieak/ieak-information-and-downloads.md).
 
 **Q: Is there a version of the Internet Explorer Administration Kit (IEAK) supporting IE11?**<br>
-Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for download. IEAK 11 lets you create custom versions of IE11 for use in your organization. For more information, see the following resources:
+Yes. The Internet Explorer Administration Kit 11 (IEAK 11) is available for download. IEAK 11 lets you create custom versions of IE11 for use in your organization. For more information, see the following resources:
 
 - [Internet Explorer Administration Kit Information and Downloads](https://go.microsoft.com/fwlink/p/?LinkId=214250) on the Internet Explorer TechCenter.
 
@@ -97,6 +99,7 @@ The following table displays which pages are available in IEAK 11, based on the 
 Yes. You can use IEAK 11 to build custom Internet Explorer 11 packages in any of the supported 24 languages. You'll select the language for the custom package on the Language Selection page of the customization wizard.
 
 IEAK 11 is available in 24 languages but can build customized Internet Explorer 11 packages in all languages of the supported operating systems. Select a language below and download IEAK 11 from the download center:
+
 |  |  |  |
 |---------|---------|---------|
 |[English](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/en-us/ieak.msi)     |[French](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/fr-fr/ieak.msi)         |[Norwegian (Bokmål)](https://download.microsoft.com/download/A/B/1/AB1954BF-8B20-4F01-808A-FE5EE5269F08/MSI/nb-no/ieak.msi)         |

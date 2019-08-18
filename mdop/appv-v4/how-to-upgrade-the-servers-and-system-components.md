@@ -1,12 +1,15 @@
 ---
 title: How to Upgrade the Servers and System Components
 description: How to Upgrade the Servers and System Components
-author: jamiejdt
+author: eavena
 ms.assetid: 7d8374fe-5897-452e-923e-556a854b2024
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -23,7 +26,7 @@ Use the following procedure to upgrade software components installed on all Appl
 
 -   You can upgrade to Microsoft Application Virtualization (App-V) 4.5 only from Microsoft Application Virtualization (App-V) 4.1 or 4.1 SP1. App-V 4.0 and earlier must be uninstalled or upgraded to 4.1 or 4.1 SP1 before upgrading to App-V 4.5.
 
- 
+ 
 
 **To upgrade software components on Application Virtualization System computers**
 
@@ -48,7 +51,7 @@ Use the following procedure to upgrade software components installed on all Appl
 
     When you want to restore a database with VSS, you must first stop the App-V Server Service on the Management Server. This should be done on every Management server if there is more than one server connected to the same database.
 
-     
+     
 
 9.  On the first **Package Validation** page, read the content and then click **Next**.
 
@@ -67,9 +70,9 @@ Use the following procedure to upgrade software components installed on all Appl
 
 [Application Virtualization Deployment and Upgrade Considerations](application-virtualization-deployment-and-upgrade-considerations.md)
 
- 
+ 
 
- 
+ 
 
 
 

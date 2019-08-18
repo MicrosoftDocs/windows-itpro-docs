@@ -1,12 +1,15 @@
 ---
 title: Planning for MBAM 1.0 Client Deployment
 description: Planning for MBAM 1.0 Client Deployment
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 3af2e7f3-134b-4ab9-9847-b07474ca6ac3
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -21,7 +24,7 @@ You can use one or both methods in your organization. If you use both methods, y
 **Note**  
 To review the MBAM Client system requirements, see [MBAM 1.0 Supported Configurations](mbam-10-supported-configurations.md).
 
- 
+ 
 
 ## Deploying the MBAM Client to enable BitLocker encryption after computer distribution to end users
 
@@ -33,7 +36,7 @@ When you deploy the MBAM Client, after you distribute the computers to end users
 **Note**  
 In this approach, users are prompted to activate and initialize the Trusted Platform Module (TPM) chip, if it has not been previously activated.
 
- 
+ 
 
 ## Using the MBAM Client to enable BitLocker encryption before computer distribution to end users
 
@@ -45,7 +48,7 @@ If your organization wants to use (TPM) to encrypt computers, the administrator 
 **Note**  
 The TPM protector option requires for the administrator to accept the BIOS prompt to activate and initialize the TPM before delivering the computer to the user.
 
- 
+ 
 
 ## Related topics
 
@@ -54,9 +57,9 @@ The TPM protector option requires for the administrator to accept the BIOS promp
 
 [Deploying the MBAM 1.0 Client](deploying-the-mbam-10-client.md)
 
- 
+ 
 
- 
+ 
 
 
 

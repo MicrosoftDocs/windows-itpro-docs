@@ -4,11 +4,13 @@ description: This section describes the Messaging settings that you can configur
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Messaging (Windows Configuration Designer reference)
@@ -336,7 +338,7 @@ By default, this string has the format WindowsPhoneMMS/MicrosoftMMSVersionNumber
 | ADDR | Specify the absolute MMSC URL. The possible values to configure the ADDR parameter are:</br></br>- A Uniform Resource Identifier (URI)</br>- An IPv4 address represented in decimal format with dots as delimiters</br>- A fully qualified Internet domain name |
 | APPID | Set to `w4`.  |
 | MS | (optional) Specify the maximum size of MMS, in KB. If the value is not a number, or is less than or equal to 10, it will be ignored and outgoing MMS will not be resized. |
-| NAME | (optional) Enter  user–readable application identity. This parameter is also used to define part of the registry path for the APPLICATION parameters. The possible values to configure the **NAME** parameter are:</br></br>- Character string containing the name</br>- no value specified</br></br>If no value is specified, the registry location will default to <unnamed>. If **NAME** is greater than 40 characters, it will be truncated to 40 characters. |
+| NAME | (optional) Enter  user–readable application identity. This parameter is also used to define part of the registry path for the APPLICATION parameters. The possible values to configure the **NAME** parameter are:</br></br>- Character string containing the name</br>- no value specified</br></br>If no value is specified, the registry location will default to `<unnamed>`. If **NAME** is greater than 40 characters, it will be truncated to 40 characters. |
 | TONAPID | Specify the network access point identification name (NAPID) defined in the provisioning file. This parameter takes a string value. It is only possible to refer to network access points defined within the same provisioning file (except if the INTERNET attribute is set in the NAPDEF characteristic). For more information about the NAPDEF characteristic, see [NAPDEF configuration service provider](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/napdef-csp). |
 | TOPROXY | Specify one logical proxy with a matching PROXY-ID. It is only possible to refer to proxies defined within the same provisioning file. Only one proxy can be listed. The TO-PROXY value must be set to the value of the PROXY ID in PXLOGICAL that defines the MMS specific-proxy.  |
 
@@ -355,4 +357,4 @@ For networks that require non-standard handling of single-segment incoming MMS W
 
 
 ## Related topics
- - [Customizations for SMS and MMS](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/customizations-for-sms-and-mms)
+- [Customizations for SMS and MMS](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/customizations-for-sms-and-mms)

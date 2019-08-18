@@ -1,12 +1,15 @@
 ---
 title: How to Manage User BitLocker Encryption Exemptions
 description: How to Manage User BitLocker Encryption Exemptions
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 48d69721-504f-4524-8a04-b9ce213ac9b4
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -21,7 +24,7 @@ To exempt users from BitLocker protection, an organization must first create an 
 **Note**  
 If the computer is already BitLocker-protected, the user exemption policy has no effect.
 
- 
+ 
 
 The following table shows how BitLocker protection is applied based on how exemptions are set.
 
@@ -52,7 +55,7 @@ The following table shows how BitLocker protection is applied based on how exemp
 </tbody>
 </table>
 
- 
+ 
 
 **To exempt a user from BitLocker Encryption**
 
@@ -65,7 +68,7 @@ The following table shows how BitLocker protection is applied based on how exemp
     **Note**  
     Shared computer scenarios require special consideration regarding user exemption. If a non-exempt user logs on to a computer shared with an exempt user, the computer may be encrypted.
 
-     
+     
 
 **To enable users to request exemption from BitLocker Encryption**
 
@@ -76,7 +79,7 @@ The following table shows how BitLocker protection is applied based on how exemp
     **Note**  
     Selecting **Request Exemption** will postpone the BitLocker protection until the maximum time set in the User Exemption Policy.
 
-     
+     
 
 3.  When a user selects **Request Exemption**, the user is notified to contact the organization's BitLocker administration group. Depending on how the Configure User Exemption Policy is configured, users are provided with one or more of the following contact methods:
 
@@ -91,16 +94,16 @@ The following table shows how BitLocker protection is applied based on how exemp
     **Note**  
     Once the postpone time limit from the User Exemption Policy has expired, users will not see the option to request exemption to the encryption policy. At this point, users must contact the MBAM administrator directly in order to receive exemption from BitLocker Protection.
 
-     
+     
 
 ## Related topics
 
 
 [Administering MBAM 1.0 Features](administering-mbam-10-features.md)
 
- 
+ 
 
- 
+ 
 
 
 

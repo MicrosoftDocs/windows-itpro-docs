@@ -1,5 +1,8 @@
 ---
 title: Deploy Windows 10 with Microsoft 365
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: Concepts about deploying Windows 10 for M365
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -7,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm, M365
 ms.localizationpriority: medium
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
@@ -32,6 +35,14 @@ For Windows 10 deployment, Microsoft 365 includes a fantastic deployment advisor
 
 ## Free trial account
 
+**If you already have a Microsoft services subscription account and access to the Microsoft 365 Admin Center**
+
+From the [Microsoft 365 Admin Center](https://portal.office.com), go to Billing and then Purchase services.
+In the Enterprise Suites section of the service offerings, you will find Microsoft 365 E3 and Microsoft 365 E5 tiles.
+There are "Start Free Trial" options available for your selection by hovering your mouse over the tiles.
+
+**If you do not already have a Microsoft services subscription**
+
 You can check out the Microsoft 365 deployment advisor and other resources for free! Just follow the steps below. 
 
 >[!NOTE]
@@ -52,11 +63,11 @@ Examples of these two deployment advisors are shown below.
 ![Microsoft 365 deployment advisor](images/m365da.png)
 
 ## Windows Analytics deployment advisor example
-![Windows Analytics deployment advisor](images/wada.png)
+
 
 ## M365 Enterprise poster
 
-[![M365 Enterprise poster](images/m365e.png)](http://aka.ms/m365eposter)
+[![M365 Enterprise poster](images/m365e.png)](https://aka.ms/m365eposter)
 
 ## Related Topics
 

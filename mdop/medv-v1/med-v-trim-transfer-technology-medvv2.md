@@ -1,12 +1,15 @@
 ---
 title: MED-V Trim Transfer Technology
 description: MED-V Trim Transfer Technology
-author: jamiejdt
+author: dansimp
 ms.assetid: 2744e855-a486-4028-9606-f0084794ec65
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -29,7 +32,7 @@ You can configure which folders are indexed on the host as part of the Trim Tran
 
 When applying new settings, the service must be restarted.
 
-``` syntax
+```xml
 <HostIndexingXP type="System.String[]"> 
 - <ArrayOfString>
 <string>%WINDIR%</string> 

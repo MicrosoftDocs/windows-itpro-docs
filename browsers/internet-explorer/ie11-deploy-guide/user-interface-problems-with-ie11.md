@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: Info about where features went in the IEAK11, where the Favorites, Command, and Status bars went, and where the search bar went.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 7324faff-ccb6-4e14-ad91-af12dbca575e
+ms.reviewer: 
+audience: itpromanager: dansimp
+ms.author: lomayor
 title: User interface problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -29,15 +32,15 @@ For IE11, the UI has been changed to provide just the controls needed to support
 
  **To turn the toolbars back on**
 
--   Right click in the IE toolbar heading and choose to turn on the **Command bar**, **Favorites bar**, and **Status bar** from the menu.
-<p>-OR-<p>
-In IE, press **ALT+V** to show the **View** menu, press **T** to enter the **Toolbars** menu, and then press:
+- Right click in the IE toolbar heading and choose to turn on the **Command bar**, **Favorites bar**, and **Status bar** from the menu.
+  <p>-OR-<p>
+  In IE, press <strong>ALT+V</strong> to show the <strong>View</strong> menu, press <strong>T</strong> to enter the <strong>Toolbars</strong> menu, and then press:
 
-    -   **C** to turn on the **Command Bar**
+  -   **C** to turn on the **Command Bar**
 
-    -   **F** to turn on the **Favorites Bar**
+  -   **F** to turn on the **Favorites Bar**
 
-    -   **S** to turn on the **Status Bar**
+  -   **S** to turn on the **Status Bar**
 
 ## Where did the search box go?
 IE11 uses the **One Box** feature, which lets users type search terms directly into the **Address bar**. Any text entered into the **Address bar** that doesn't appear to be a URL is automatically sent to the currently selected search provider.
@@ -45,11 +48,11 @@ IE11 uses the **One Box** feature, which lets users type search terms directly i
 >[!NOTE]
 >Depending on how you've set up your intranet search, the text entry might resolve to an intranet site. For more information about this, see  [Intranet problems with Internet Explorer 11](intranet-problems-and-ie11.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

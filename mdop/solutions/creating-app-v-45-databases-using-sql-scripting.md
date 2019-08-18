@@ -1,12 +1,15 @@
 ---
 title: Creating App-V 4.5 Databases Using SQL Scripting
 description: Creating App-V 4.5 Databases Using SQL Scripting
-author: jamiejdt
+author: levinec
 ms.assetid: 6cd0b180-163e-463f-a658-939ab9a7cfa1
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -141,10 +144,10 @@ If used, the two sample batch files provided run the SQL scripts in the followin
 
     -   dbversion.sql
 
-**Note**  
+**Note**  
 Careful consideration when modifying the scripts must be taken and should only be done by someone with the appropriate knowledge. Also, of the sample files presented only the following should be changed: **create\_schema.bat**, **create\_tables.bat**, **database.sql**, and **roles.sql**. All other files should not be modified in any way as this could cause the database to be created incorrectly, which will lead to the failure of App-V services to be installed.
 
- 
+
 
 The two sample batch files must be placed in the same directory where the rest of the SQL scripts were copied to on the computer.
 
@@ -203,7 +206,7 @@ The following accounts will need to be created on the SQL server with specific p
 
 2.  Administrator in the “App-V Admins” group logs in to Application Virtualization Management Console and deletes the following objects from the Management Console.
 
-    **Warning**  
+    **Warning**  
     This is required as the traditional setup populates certain records in the database that are not populated if you run the install against an already existing database. Delete the following objects:
 
     -   Under “Server Groups,” “Default Server Group,” delete “Application Virtualization Management Server”
@@ -212,7 +215,7 @@ The following accounts will need to be created on the SQL server with specific p
 
     -   Under “Provider Policies,” delete “Default Provider”
 
-     
+
 
 3.  Administrator in the App-V admins group should then create:
 
@@ -220,32 +223,34 @@ The following accounts will need to be created on the SQL server with specific p
 
     -   Create a “Default Server Group”
 
-        **Note**  
-        You must create a “Default Server” group even if you will not be used. The server installer only looks for the "Default Server Group" when trying to add the server.  If there is no "Default Server Group" then the installation will fail. If you plan on using server groups other than the default that is fine, it’s just necessary to retain the "Default Server Group" if you plan on adding subsequent App-V Management Servers to your infrastructure.
+        **Note**  
+        You must create a “Default Server” group even if you will not be used. The server installer only looks for the "Default Server Group" when trying to add the server.  If there is no "Default Server Group" then the installation will fail. If you plan on using server groups other than the default that is fine, it’s just necessary to retain the "Default Server Group" if you plan on adding subsequent App-V Management Servers to your infrastructure.
 
-         
 
-    -   Assign the App-V Users Group to the New Provider Policy created above
 
-    -   Under “Server Groups,” create a New Server Group, specifying the New Provider Policy
+~~~
+-   Assign the App-V Users Group to the New Provider Policy created above
 
-    -   Under the New Server group, create a New Application Virtualization Management Server
+-   Under “Server Groups,” create a New Server Group, specifying the New Provider Policy
 
-        **Important**  
-        Do not restart the service before completing all of the above steps!
+-   Under the New Server group, create a New Application Virtualization Management Server
 
-         
+    **Important**  
+    Do not restart the service before completing all of the above steps!
 
-    -   Administrator restarts the Application Virtualization Management Server service.
+
+
+-   Administrator restarts the Application Virtualization Management Server service.
+~~~
 
 ## Conclusion
 
 
 In conclusion, the information in this document allows an administrator to work with the SQL administrators to develop a deployment path that works for the security and administrative divisions in an organization. After reading this document and testing the tasks documented, an administrator should be ready to implement their App-V infrastructure in this type of environment.
 
- 
 
- 
+
+
 
 
 

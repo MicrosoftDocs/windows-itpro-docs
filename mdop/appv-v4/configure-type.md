@@ -1,12 +1,15 @@
 ---
 title: CONFIGURE TYPE
 description: CONFIGURE TYPE
-author: jamiejdt
+author: dansimp
 ms.assetid: 2caf9433-5449-486f-ab94-83ee8e44d7f1
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

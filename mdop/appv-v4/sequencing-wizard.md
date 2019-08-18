@@ -1,12 +1,15 @@
 ---
 title: Sequencing Wizard
 description: Sequencing Wizard
-author: jamiejdt
+author: eavena
 ms.assetid: 81e2f4fa-b06e-4cbe-aeb8-6ceb8f0543a5
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

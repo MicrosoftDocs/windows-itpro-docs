@@ -1,12 +1,15 @@
 ---
 title: Planning for MED-V
 description: Planning for MED-V
-author: jamiejdt
+author: levinec
 ms.assetid: 8124b765-6930-4607-8bd9-93068403c7a2
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

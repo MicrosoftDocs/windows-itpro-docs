@@ -1,12 +1,15 @@
 ---
 title: Select Package Accelerator Page
 description: Select Package Accelerator Page
-author: jamiejdt
+author: eavena
 ms.assetid: 865c2702-4dfd-41ae-8cfc-3514d5f41f76
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

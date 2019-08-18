@@ -4,10 +4,13 @@ description: Additional settings to control the behavior of Windows Update (WU) 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: jaimeo
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.date: 07/27/2017
+ms.audience: itpro
+author: jaimeo
+ms.reviewer:
+manager: laurawi
 ms.topic: article
 ---
 
@@ -17,18 +20,18 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile 
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
 You can use Group Policy settings or mobile device management (MDM) to configure the behavior of Windows Update (WU) on your Windows 10 devices. You can configure the update detection frequency, select when updates are received, specify the update service location and more.
 
 >[!IMPORTANT]
->In Windows 10, any Group Policy user configuration settings for Windows Update were deprecated and are no longer supported on this platform.
+>In Windows 10, any Group Policy user configuration settings for Windows Update are no longer supported on this platform.
 
 ## Summary of Windows Update settings
 
-| Group Policy setting | MDM setting | Supported from version | 
+| Group Policy setting | MDM setting | Supported from version |
 | --- | --- | --- |
 | [Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location) | [UpdateServiceUrl](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurl) and [UpdateServiceUrlAlternate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurlalternate) | All |
 | [Automatic Updates Detection Frequency](#automatic-updates-detection-frequency) | [DetectionFrequency](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-detectionfrequency) | 1703 |
@@ -59,9 +62,9 @@ For additional settings that configure when Feature and Quality updates are rece
 ### Specify Intranet Microsoft update service location
 
 Specifies an intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
-This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network. 
+This setting lets you specify a server on your network to function as an internal update service. The Automatic Updates client will search this service for updates that apply to the computers on your network.
 
-To use this setting in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update\Specify Intranet Microsoft update service location**. You must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update Agent to download updates from an alternate download server instead of the intranet update service. 
+To use this setting in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update\Specify Intranet Microsoft update service location**. You must set two server name values: the server from which the Automatic Updates client detects and downloads updates, and the server to which updated workstations upload statistics. You can set both values to be the same server. An optional server name value can be specified to configure Windows Update Agent to download updates from an alternate download server instead of the intranet update service.
 
 If the setting is set to **Enabled**, the Automatic Updates client connects to the specified intranet Microsoft update service (or alternate download server), instead of Windows Update, to search for and download updates. Enabling this setting means that end users in your organization don’t have to go through a firewall to get updates, and it gives you the opportunity to test updates after deploying them.
 If the setting is set to **Disabled** or **Not Configured**, and if Automatic Updates is not disabled by policy or user preference, the Automatic Updates client connects directly to the Windows Update site on the Internet.
@@ -122,7 +125,7 @@ If the intranet Microsoft update service supports multiple target groups, this p
 
 ### Allow signed updates from an intranet Microsoft update service location
 
-This policy setting allows you to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location. 
+This policy setting allows you to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.
 
 To configure this setting in Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows update\Allow signed updates from an intranet Microsoft update service location**.
 
@@ -145,7 +148,7 @@ To add more flexibility to the update process, settings are available to control
 
 Allows admins to exclude Windows Update (WU) drivers during updates.
 
-To configure this setting in Group Policy, use **Computer Configuration\Administrative Templates\Windows Components\Windows update\Do not include drivers with Windows Updates**. 
+To configure this setting in Group Policy, use **Computer Configuration\Administrative Templates\Windows Components\Windows update\Do not include drivers with Windows Updates**.
 Enable this policy to not include drivers with Windows quality updates.
 If you disable or do not configure this policy, Windows Update will include updates that have a Driver classification.
 
@@ -153,7 +156,9 @@ If you disable or do not configure this policy, Windows Update will include upda
 
 Enables the IT admin to manage automatic update behavior to scan, download, and install updates.
 
-When enabling this setting through Group Policy, under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Configure Automatic Updates**, you must select one of the four options:
+#### Configuring Automatic Updates by using Group Policy
+
+Under **Computer Configuration\Administrative Templates\Windows Components\Windows update\Configure Automatic Updates**, you must select one of the four options:
 
 **2 - Notify for download and auto install** -  When Windows finds updates that apply to this device, users will be notified that updates are ready to be downloaded. After going to **Settings > Update & security > Windows Update**, users can download and install any available updates.
 
@@ -167,13 +172,91 @@ If this setting is set to *Disabled*, any updates that are available on Windows 
 
 If this setting is set to *Not Configured*, an administrator can still configure Automatic Updates through the settings app, under **Settings > Update & security > Windows Update > Advanced options**.
 
+#### Configuring Automatic Updates by editing the registry
 
+> [!NOTE]
+> Serious problems might occur if you modify the registry incorrectly by using Registry Editor or by using another method. These problems might require you to reinstall the operating system. Microsoft cannot guarantee that these problems can be resolved. Modify the registry at your own risk.
+
+In an environment that does not have Active Directory deployed, you can edit registry settings to configure group policies for Automatic Update.
+
+To do this, follow these steps:
+
+1. Select **Start**, search for "regedit", and then open Registry Editor.
+
+2. Open the following registry key:
+
+   ```
+   HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU
+   ```
+
+3. Add one of the following registry values to configure Automatic Update.
+
+   * NoAutoUpdate (REG_DWORD):
+
+     * **0**: Automatic Updates is enabled (default).
+
+     * **1**: Automatic Updates is disabled.
+
+   * AUOptions (REG_DWORD):
+
+     * **1**: Keep my computer up to date is disabled in Automatic Updates.
+
+     * **2**: Notify of download and installation.
+
+     * **3**: Automatically download and notify of installation.
+
+     * **4**: Automatically download and scheduled installation.
+
+   * ScheduledInstallDay (REG_DWORD):
+
+     * **0**: Every day.
+
+     * **1** through **7**: The days of the week from Sunday (1) to Saturday (7).
+
+   * ScheduledInstallTime (REG_DWORD):
+
+     **n**, where **n** equals the time of day in a 24-hour format (0-23).
+
+   * UseWUServer (REG_DWORD)
+
+     Set this value to **1** to configure Automatic Updates to use a server that is running Software Update Services instead of Windows Update.
+
+   * RescheduleWaitTime (REG_DWORD)
+
+     **m**, where **m** equals the time period to wait between the time Automatic Updates starts and the time that it begins installations where the scheduled times have passed. The time is set in minutes from 1 to 60, representing 1 minute to 60 minutes)
+
+     > [!NOTE]
+     > This setting only affects client behavior after the clients have updated to the SUS SP1 client version or later versions.
+
+   * NoAutoRebootWithLoggedOnUsers (REG_DWORD):
+
+     **0** (false) or **1** (true). If set to **1**, Automatic Updates does not automatically restart a computer while users are logged on.
+
+     > [!NOTE]
+     > This setting affects client behavior after the clients have updated to the SUS SP1 client version or later versions.
+
+To use Automatic Updates with a server that is running Software Update Services, see the Deploying Microsoft Windows Server Update Services 2.0 guidance.
+
+When you configure Automatic Updates directly by using the policy registry keys, the policy overrides the preferences that are set by the local administrative user to configure the client. If an administrator removes the registry keys at a later date, the preferences that were set by the local administrative user are used again.
+
+To determine the WSUS server that the client computers and servers connect to for updates, add the following registry values to the registry:
+```
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\
+```
+
+* WUServer (REG_SZ)
+
+  This value sets the WSUS server by HTTP name (for example, http://IntranetSUS).
+
+*  WUStatusServer (REG_SZ)
+
+   This value sets the SUS statistics server by HTTP name (for example, http://IntranetSUS).
 
 ## Related topics
 
 - [Update Windows 10 in the enterprise](index.md)
 - [Overview of Windows as a service](waas-overview.md)
-- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
+- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)

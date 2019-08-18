@@ -1,12 +1,15 @@
 ---
 title: LOCK APP
 description: LOCK APP
-author: jamiejdt
+author: eavena
 ms.assetid: 30673433-4364-499f-8116-cb135fe2716f
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

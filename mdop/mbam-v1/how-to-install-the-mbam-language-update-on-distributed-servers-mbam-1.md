@@ -1,12 +1,15 @@
 ---
 title: How to Install the MBAM Language Update on Distributed Servers
 description: How to Install the MBAM Language Update on Distributed Servers
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 5ddc64c6-0417-4a04-843e-b5e18d9f1a52
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -23,7 +26,7 @@ Microsoft BitLocker Administration and Monitoring (MBAM) includes four server ro
 **Important**  
 The MBAM server features must be updated in this order: Compliance and Audit Reports first, and then the Administration and Monitoring Server. The MBAM Group Policy templates can be updated at any time without concern for sequence.
 
- 
+ 
 
 **To install the MBAM Language Update on the MBAM Compliance and Audit Report Server feature**
 
@@ -54,16 +57,16 @@ The MBAM server features must be updated in this order: Compliance and Audit Rep
         **Note**  
         The MBAM client opens only if it can communicate with the Recovery and Hardware database.
 
-         
+         
 
 ## Related topics
 
 
 [Deploying the MBAM 1.0 Language Release Update](deploying-the-mbam-10-language-release-update.md)
 
- 
+ 
 
- 
+ 
 
 
 

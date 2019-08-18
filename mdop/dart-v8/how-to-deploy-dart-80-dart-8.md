@@ -1,12 +1,15 @@
 ---
 title: How to Deploy DaRT 8.0
 description: How to Deploy DaRT 8.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: ab772e7a-c02f-4847-acdf-8bd362769a77
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -19,7 +22,7 @@ The following instructions explain how to deploy Microsoft Diagnostics and Recov
 **Important**  
 Before you install DaRT, see [DaRT 8.0 Supported Configurations](dart-80-supported-configurations-dart-8.md) to ensure that you have installed all of the prerequisite software and that the computer meets the minimum system requirements. The computer onto which you install DaRT must be running Windows 8 or Windows Server 2012.
 
- 
+ 
 
 You can install DaRT using one of two different configurations:
 
@@ -83,7 +86,7 @@ msiexec.exe /i MSDaRT80.msi /l*v log.txt
 **Note**  
 You can add /qn or /qb to perform a silent installation.
 
- 
+ 
 
 **To validate the DaRT installation**
 
@@ -98,9 +101,9 @@ You can add /qn or /qb to perform a silent installation.
 
 [Deploying DaRT 8.0 to Administrator Computers](deploying-dart-80-to-administrator-computers-dart-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

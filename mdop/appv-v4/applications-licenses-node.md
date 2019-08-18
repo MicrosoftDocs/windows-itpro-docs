@@ -1,12 +1,15 @@
 ---
 title: Applications Licenses Node
 description: Applications Licenses Node
-author: jamiejdt
+author: dansimp
 ms.assetid: 2b8752ff-aa56-483e-b844-966941af2d94
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -25,7 +28,7 @@ The **Applications Licenses** node is one level below the Application Virtualiza
 **Note**  
 You can combine concurrent and named licenses for the same application.
 
- 
+ 
 
 Right-click the **Applications Licenses** node to display a pop-up menu that contains the following elements.
 
@@ -113,9 +116,9 @@ Displays the help system for the Application Virtualization Server Management Co
 
 [Server Management Console: Application Licenses Node](server-management-console-application-licenses-node.md)
 
- 
+ 
 
- 
+ 
 
 
 

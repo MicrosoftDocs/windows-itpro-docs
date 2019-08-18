@@ -1,16 +1,16 @@
 ---
 description: You can customize your organization’s browser settings in Microsoft Edge with Group Policy or Microsoft Intune, or other MDM service. When you do this, you set the policy once and then copy it onto many computers—that is, touch once, configure many. 
 ms.assetid: 2e849894-255d-4f68-ae88-c2e4e31fa165
-author: shortpatti
-ms.author: pashort
-manager: dougkim
+ms.reviewer: 
+author: eavena
+ms.author: eravena
+audience: itpromanager: dansimp
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.topic: reference
 ms.sitesec: library
 title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: medium
-ms.date: 10/29/2018
 ---
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge

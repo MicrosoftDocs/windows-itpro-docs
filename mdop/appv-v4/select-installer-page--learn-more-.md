@@ -1,12 +1,15 @@
 ---
 title: Select Installer Page (Learn More)
 description: Select Installer Page (Learn More)
-author: jamiejdt
+author: eavena
 ms.assetid: da05e756-d23e-4557-8ff6-313d695a78a1
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

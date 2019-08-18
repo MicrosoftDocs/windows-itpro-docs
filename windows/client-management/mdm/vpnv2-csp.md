@@ -2,11 +2,13 @@
 title: VPNv2 CSP
 description: VPNv2 CSP
 ms.assetid: 51ADA62E-1EE5-4F15-B2AD-52867F5B2AD2
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 11/01/2017
 ---
 
@@ -38,28 +40,28 @@ The following diagram shows the VPNv2 configuration service provider in tree for
 <a href="" id="device-or-user-profile"></a>**Device or User profile**  
 For user profile, use **./User/Vendor/MSFT** path and for device profile, use **./Device/Vendor/MSFT** path.
 
-<a href="" id="vpnv2-profilename"></a>**VPNv2/***ProfileName*  
+<a href="" id="vpnv2-profilename"></a>**VPNv2/**<em>ProfileName</em>  
 Unique alpha numeric identifier for the profile. The profile name must not include a forward slash (/).
 
 Supported operations include Get, Add, and Delete.
 
 > **Note**  If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
 
-<a href="" id="vpnv2-profilename-apptriggerlist"></a>**VPNv2/***ProfileName***/AppTriggerList**  
+<a href="" id="vpnv2-profilename-apptriggerlist"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList**  
 Optional node. List of applications set to trigger the VPN. If any of these apps are launched and the VPN profile is currently the active profile, this VPN profile will be triggered to connect.
 
-<a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid"></a>**VPNv2/***ProfileName***/AppTriggerList/***appTriggerRowId*  
+<a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>  
 A sequential integer identifier which allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you should not skip numbers.
 
 Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app"></a>**VPNv2/***ProfileName***/AppTriggerList/***appTriggerRowId***/App**  
+<a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>**/App**  
 App Node under the Row Id.
 
-<a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app-id"></a>**VPNv2/***ProfileName***/AppTriggerList/***appTriggerRowId***/App/Id**  
+<a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app-id"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>**/App/Id**  
 App identity, which is either an app’s package family name or file path. The type is inferred by the Id, and therefore cannot be specified in the get only App/Type field
 
-<a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app-type"></a>**VPNv2/***ProfileName***/AppTriggerList/***appTriggerRowId***/App/Type**  
+<a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app-type"></a>**VPNv2/**<em>ProfileName</em>**/AppTriggerList/**<em>appTriggerRowId</em>**/App/Type**  
 Returns the type of **App/Id**. This value can be either of the following:
 
 -   PackageFamilyName - When this is returned, the App/Id value represents the PackageFamilyName of the app. The PackageFamilyName is the unique name of the Microsoft Store application.
@@ -67,34 +69,34 @@ Returns the type of **App/Id**. This value can be either of the following:
 
 Value type is chr. Supported operation is Get.
 
-<a href="" id="vpnv2-profilename-routelist-"></a>**VPNv2/***ProfileName***/RouteList/**  
+<a href="" id="vpnv2-profilename-routelist-"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**  
 Optional node. List of routes to be added to the routing table for the VPN interface. This is required for split tunneling case where the VPN server site has more subnets that the default subnet based on the IP assigned to the interface.
 
 Every computer that runs TCP/IP makes routing decisions. These decisions are controlled by the IP routing table. Adding values under this node updates the routing table with routes for the VPN interface post connection. The values under this node represent the destination prefix of IP routes. A destination prefix consists of an IP address prefix and a prefix length.
 
 Adding a route here allows the networking stack to identify the traffic that needs to go over the VPN interface for split tunnel VPN. Some VPN servers can configure this during connect negotiation and do not need this information in the VPN Profile. Please check with your VPN server administrator to determine whether you need this information in the VPN profile.
 
-<a href="" id="vpnv2-profilename-routelist-routerowid"></a>**VPNv2/***ProfileName***/RouteList/***routeRowId*  
+<a href="" id="vpnv2-profilename-routelist-routerowid"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**<em>routeRowId</em>  
 A sequential integer identifier for the RouteList. This is required if you are adding routes. Sequencing must start at 0.
 
 Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-routelist-routerowid-address"></a>**VPNv2/***ProfileName***/RouteList/***routeRowId***/Address**  
+<a href="" id="vpnv2-profilename-routelist-routerowid-address"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**<em>routeRowId</em>**/Address**  
 Subnet address in IPv4/v6 address format which, along with the prefix will be used to determine the destination prefix to send via the VPN Interface. This is the IP address part of the destination prefix.
 
 Supported operations include Get, Add, Replace, and Delete. Value type is chr. Example, `192.168.0.0`
 
-<a href="" id="vpnv2-profilename-routelist-routerowid-prefixsize"></a>**VPNv2/***ProfileName***/RouteList/***routeRowId***/PrefixSize**  
+<a href="" id="vpnv2-profilename-routelist-routerowid-prefixsize"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**<em>routeRowId</em>**/PrefixSize**  
 The subnet prefix size part of the destination prefix for the route entry. This, along with the address will be used to determine the destination prefix to route through the VPN Interface.
 
 Value type is int. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-routelist-routerowid-metric"></a>**VPNv2/***ProfileName***/RouteList/***routeRowId***/Metric**  
+<a href="" id="vpnv2-profilename-routelist-routerowid-metric"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**<em>routeRowId</em>**/Metric**  
 Added in Windows 10, version 1607. The route's metric.
 
 Value type is int. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-routelist-routerowid-exclusionroute"></a>**VPNv2/***ProfileName***/RouteList/***routeRowId***/ExclusionRoute**  
+<a href="" id="vpnv2-profilename-routelist-routerowid-exclusionroute"></a>**VPNv2/**<em>ProfileName</em>**/RouteList/**<em>routeRowId</em>**/ExclusionRoute**  
 Added in Windows 10, version 1607. A boolean value that specifies if the route being added should point to the VPN Interface or the Physical Interface as the Gateway. Valid values:
 
 -   False (default) - This route will direct traffic over the VPN
@@ -102,17 +104,17 @@ Added in Windows 10, version 1607. A boolean value that specifies if the route 
 
 Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-domainnameinformationlist"></a>**VPNv2/***ProfileName***/DomainNameInformationList**  
+<a href="" id="vpnv2-profilename-domainnameinformationlist"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList**  
 Optional node. Name Resolution Policy Table (NRPT) rules for the VPN profile.
 
 The Name Resolution Policy Table (NRPT) is a table of namespaces and corresponding settings stored in the Windows registry that determines the DNS client behavior when issuing queries and processing responses. Each row in the NRPT represents a rule for a portion of the namespace for which the DNS client issues queries. Before issuing name resolution queries, the DNS client consults the NRPT to determine if any additional flags must be set in the query. After receiving the response, the client again consults the NRPT to check for any special processing or policy requirements. In the absence of the NRPT, the client operates based on the DNS servers and suffixes set on the interface.
 
-<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid"></a>**VPNv2/***ProfileName***/DomainNameInformationList/***dniRowId*  
+<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>  
 A sequential integer identifier for the Domain Name information. Sequencing must start at 0.
 
 Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-domainname"></a>**VPNv2/***ProfileName***/DomainNameInformationList/***dniRowId***/DomainName**  
+<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-domainname"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/DomainName**  
 Used to indicate the namespace to which the policy applies. When a Name query is issued, the DNS client compares the name in the query to all of the namespaces under DomainNameInformationList to find a match. This parameter can be one of the following types:
 
 -   FQDN - Fully qualified domain name
@@ -120,7 +122,7 @@ Used to indicate the namespace to which the policy applies. When a Name query is
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-domainnametype"></a>**VPNv2/***ProfileName***/DomainNameInformationList/***dniRowId***/DomainNameType**  
+<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-domainnametype"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/DomainNameType**  
 Returns the namespace type. This value can be one of the following:
 
 -   FQDN - If the DomainName was not prepended with a **.** and applies only to the fully qualified domain name (FQDN) of a specified host.
@@ -128,21 +130,21 @@ Returns the namespace type. This value can be one of the following:
 
 Value type is chr. Supported operation is Get.
 
-<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-dnsservers"></a>**VPNv2/***ProfileName***/DomainNameInformationList/***dniRowId***/DnsServers**  
+<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-dnsservers"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/DnsServers**  
 List of comma separated DNS Server IP addresses to use for the namespace.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-webproxyservers"></a>**VPNv2/***ProfileName***/DomainNameInformationList/***dniRowId***/WebProxyServers**  
+<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-webproxyservers"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/WebProxyServers**  
 Optional. Web Proxy Server IP address if you are redirecting traffic through your intranet.
 
 > **Note**  Currently only one web proxy server is supported.
 
- 
+ 
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-autotrigger"></a>**VPNv2/***ProfileName***/DomainNameInformationList/***dniRowId***/AutoTrigger**  
+<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-autotrigger"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/AutoTrigger**  
 Added in Windows 10, version 1607. Optional. Boolean to determine whether this domain name rule will trigger the VPN.
 
 If set to False, this DomainName rule will not trigger the VPN.
@@ -153,7 +155,7 @@ By default, this value is false.
 
 Value type is bool.
 
-<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-persistent"></a>**VPNv2/***ProfileName***/DomainNameInformationList/***dniRowId***/Persistent**  
+<a href="" id="vpnv2-profilename-domainnameinformationlist-dnirowid-persistent"></a>**VPNv2/**<em>ProfileName</em>**/DomainNameInformationList/**<em>dniRowId</em>**/Persistent**  
 Added in Windows 10, version 1607. A boolean value that specifies if the rule being added should persist even when the VPN is not connected. Value values:
 
 -   False (default) - This DomainName rule will only be applied when VPN is connected.
@@ -161,22 +163,22 @@ Added in Windows 10, version 1607. A boolean value that specifies if the rule b
 
 Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-trafficfilterlist"></a>**VPNv2/***ProfileName***/TrafficFilterList**  
+<a href="" id="vpnv2-profilename-trafficfilterlist"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList**  
 An optional node that specifies a list of rules. Only traffic that matches these rules can be sent via the VPN Interface.
 
 > **Note**  Once a TrafficFilterList is added, all traffic are blocked other than the ones matching the rules.
 
- 
+ 
 
 When adding multiple rules, each rule operates based on an OR with the other rules. Within each rule, each property operates based on an AND with each other.
 
-<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid"></a>**VPNv2/***ProfileName***/TrafficFilterList/***trafficFilterId*  
+<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>  
 A sequential integer identifier for the Traffic Filter rules. Sequencing must start at 0.
 
-<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-app"></a>**VPNv2/***ProfileName***/TrafficFilterList/***trafficFilterId***/App**  
+<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-app"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/App**  
 Per app VPN rule. This will allow only the apps specified to be allowed over the VPN interface. Value type is chr.
 
-<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-app-id"></a>**VPNv2/***ProfileName***/TrafficFilterList/***trafficFilterId***/App/Id**  
+<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-app-id"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/App/Id**  
 App identity for the app-based traffic filter.
 
 The value for this node can be one of the following:
@@ -187,48 +189,48 @@ The value for this node can be one of the following:
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-app-type"></a>**VPNv2/***ProfileName***/TrafficFilterList/***trafficFilterId***/App/Type**  
+<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-app-type"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/App/Type**  
 Returns the type of ID of the **App/Id**.
 
 Value type is chr. Supported operation is Get.
 
-<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-claims"></a>**VPNv2/***ProfileName***/TrafficFilterList/***trafficFilterId***/Claims**  
+<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-claims"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/Claims**  
 Reserved for future use.
 
-<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-protocol"></a>**VPNv2/***ProfileName***/TrafficFilterList/***trafficFilterId***/Protocol**  
+<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-protocol"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/Protocol**  
 Numeric value from 0-255 representing the IP protocol to allow. For example, TCP = 6 and UDP = 17.
 
 Value type is int. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-localportranges"></a>**VPNv2/***ProfileName***/TrafficFilterList/***trafficFilterId***/LocalPortRanges**  
+<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-localportranges"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/LocalPortRanges**  
 A list of comma separated values specifying local port ranges to allow. For example, `100-120, 200, 300-320`.
 
 > **Note**  Ports are only valid when the protocol is set to TCP=6 or UDP=17.
 
- 
+ 
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-remoteportranges"></a>**VPNv2/***ProfileName***/TrafficFilterList/***trafficFilterId***/RemotePortRanges**  
+<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-remoteportranges"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/RemotePortRanges**  
 A list of comma separated values specifying remote port ranges to allow. For example, `100-120, 200, 300-320`.
 
 > **Note**  Ports are only valid when the protocol is set to TCP=6 or UDP=17.
 
- 
+ 
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-localaddressranges"></a>**VPNv2/***ProfileName***/TrafficFilterList/***trafficFilterId***/LocalAddressRanges**  
+<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-localaddressranges"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/LocalAddressRanges**  
 A list of comma separated values specifying local IP address ranges to allow.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-remoteaddressranges"></a>**VPNv2/***ProfileName***/TrafficFilterList/***trafficFilterId***/RemoteAddressRanges**  
+<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-remoteaddressranges"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/RemoteAddressRanges**  
 A list of comma separated values specifying remote IP address ranges to allow.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-routingpolicytype"></a>**VPNv2/***ProfileName***/TrafficFilterList/***trafficFilterId***/RoutingPolicyType**  
+<a href="" id="vpnv2-profilename-trafficfilterlist-trafficfilterid-routingpolicytype"></a>**VPNv2/**<em>ProfileName</em>**/TrafficFilterList/**<em>trafficFilterId</em>**/RoutingPolicyType**  
 Specifies the routing policy if an App or Claims type is used in the traffic filter. The scope of this property is for this traffic filter rule alone. The value can be one of the following:
 
 -   SplitTunnel - For this traffic filter rule, only the traffic meant for the VPN interface (as determined by the networking stack) goes over the interface. Internet traffic can continue to go over the other interfaces.
@@ -238,19 +240,19 @@ This is only applicable for App ID based Traffic Filter rules.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-edpmodeid"></a>**VPNv2/***ProfileName***/EdpModeId**  
+<a href="" id="vpnv2-profilename-edpmodeid"></a>**VPNv2/**<em>ProfileName</em>**/EdpModeId**  
 Enterprise ID, which is required for connecting this VPN profile with an WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
 
 Additionally when connecting with Windows Information Protection (WIP)(formerly known as Enterprise Data Protection), the admin does not have to specify AppTriggerList and TrafficFilterList rules separately in this profile (unless more advanced config is needed) because the WIP policies and App lists automatically takes effect.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-remembercredentials"></a>**VPNv2/***ProfileName***/RememberCredentials**  
+<a href="" id="vpnv2-profilename-remembercredentials"></a>**VPNv2/**<em>ProfileName</em>**/RememberCredentials**  
 Boolean value (true or false) for caching credentials. Default is false, which means do not cache credentials. If set to true, credentials are cached whenever possible.
 
 Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-alwayson"></a>**VPNv2/***ProfileName***/AlwaysOn**  
+<a href="" id="vpnv2-profilename-alwayson"></a>**VPNv2/**<em>ProfileName</em>**/AlwaysOn**  
 An optional flag to enable Always On mode. This will automatically connect the VPN at sign-in and will stay connected until the user manually disconnects.
 
 > **Note**  Always On only works for the active profile. The first profile provisioned that can be auto triggered will automatically be set as active.
@@ -271,7 +273,7 @@ Valid values:
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-lockdown"></a>**VPNv2/***ProfileName***/LockDown**  (./Device only profile)  
+<a href="" id="vpnv2-profilename-lockdown"></a>**VPNv2/**<em>ProfileName</em>**/LockDown**  (./Device only profile)  
 Lockdown profile.
 
 Valid values:
@@ -290,7 +292,7 @@ A Lockdown profile must be deleted before you can add, remove, or connect other 
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-devicetunnel"></a>**VPNv2/***ProfileName***/DeviceTunnel**  (./Device only profile)  
+<a href="" id="vpnv2-profilename-devicetunnel"></a>**VPNv2/**<em>ProfileName</em>**/DeviceTunnel**  (./Device only profile)  
 Device tunnel profile.
 
 Valid values:
@@ -308,7 +310,7 @@ A device tunnel profile must be deleted before another device tunnel profile can
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-registerdns"></a>**VPNv2/***ProfileName***/RegisterDNS**
+<a href="" id="vpnv2-profilename-registerdns"></a>**VPNv2/**<em>ProfileName</em>**/RegisterDNS**
 Allows registration of the connection's address in DNS.
 
 Valid values:
@@ -316,112 +318,112 @@ Valid values:
 -   False = Do not register the connection's address in DNS (default).
 -   True = Register the connection's addresses in DNS.
 
-<a href="" id="vpnv2-profilename-dnssuffix"></a>**VPNv2/***ProfileName***/DnsSuffix**  
+<a href="" id="vpnv2-profilename-dnssuffix"></a>**VPNv2/**<em>ProfileName</em>**/DnsSuffix**  
 Optional. Specifies one or more comma separated DNS suffixes. The first in the list is also used as the primary connection specific DNS suffix for the VPN Interface. The entire list will also be added into the SuffixSearchList.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-bypassforlocal"></a>**VPNv2/***ProfileName***/ByPassForLocal**  
+<a href="" id="vpnv2-profilename-bypassforlocal"></a>**VPNv2/**<em>ProfileName</em>**/ByPassForLocal**  
 Reserved for future use.
 
-<a href="" id="vpnv2-profilename-trustednetworkdetection"></a>**VPNv2/***ProfileName***/TrustedNetworkDetection**  
+<a href="" id="vpnv2-profilename-trustednetworkdetection"></a>**VPNv2/**<em>ProfileName</em>**/TrustedNetworkDetection**  
 Optional. Comma separated string to identify the trusted network. VPN will not connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-profilexml"></a>**VPNv2/***ProfileName***/ProfileXML**  
+<a href="" id="vpnv2-profilename-profilexml"></a>**VPNv2/**<em>ProfileName</em>**/ProfileXML**  
 Added in Windows 10, version 1607. The XML schema for provisioning all the fields of a VPN. For the XSD, see [ProfileXML XSD](vpnv2-profile-xsd.md).
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-proxy"></a>**VPNv2/***ProfileName***/Proxy**  
+<a href="" id="vpnv2-profilename-proxy"></a>**VPNv2/**<em>ProfileName</em>**/Proxy**  
 A collection of configuration objects to enable a post-connect proxy support for VPN. The proxy defined for this profile is applied when this profile is active and connected.
 
-<a href="" id="vpnv2-profilename-proxy-manual"></a>**VPNv2/***ProfileName***/Proxy/Manual**  
+<a href="" id="vpnv2-profilename-proxy-manual"></a>**VPNv2/**<em>ProfileName</em>**/Proxy/Manual**  
 Optional node containing the manual server settings.
 
-<a href="" id="vpnv2-profilename-proxy-manual-server"></a>**VPNv2/***ProfileName***/Proxy/Manual/Server**  
+<a href="" id="vpnv2-profilename-proxy-manual-server"></a>**VPNv2/**<em>ProfileName</em>**/Proxy/Manual/Server**  
 Optional. Proxy server address as a fully qualified hostname or an IP address. You should set this element together with Port. Example, proxy.contoso.com.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-proxy-autoconfigurl"></a>**VPNv2/***ProfileName***/Proxy/AutoConfigUrl**  
+<a href="" id="vpnv2-profilename-proxy-autoconfigurl"></a>**VPNv2/**<em>ProfileName</em>**/Proxy/AutoConfigUrl**  
 Optional. URL to automatically retrieve the proxy settings.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-apnbinding"></a>**VPNv2/***ProfileName***/APNBinding**  
+<a href="" id="vpnv2-profilename-apnbinding"></a>**VPNv2/**<em>ProfileName</em>**/APNBinding**  
 Reserved for future use.
 
-<a href="" id="vpnv2-profilename-apnbinding-providerid"></a>**VPNv2/***ProfileName***/APNBinding/ProviderId**  
+<a href="" id="vpnv2-profilename-apnbinding-providerid"></a>**VPNv2/**<em>ProfileName</em>**/APNBinding/ProviderId**  
 Reserved for future use. Optional node.
 
-<a href="" id="vpnv2-profilename-apnbinding-accesspointname"></a>**VPNv2/***ProfileName***/APNBinding/AccessPointName**  
+<a href="" id="vpnv2-profilename-apnbinding-accesspointname"></a>**VPNv2/**<em>ProfileName</em>**/APNBinding/AccessPointName**  
 Reserved for future use.
 
-<a href="" id="vpnv2-profilename-apnbinding-username"></a>**VPNv2/***ProfileName***/APNBinding/UserName**  
+<a href="" id="vpnv2-profilename-apnbinding-username"></a>**VPNv2/**<em>ProfileName</em>**/APNBinding/UserName**  
 Reserved for future use.
 
-<a href="" id="vpnv2-profilename-apnbinding-password"></a>**VPNv2/***ProfileName***/APNBinding/Password**  
+<a href="" id="vpnv2-profilename-apnbinding-password"></a>**VPNv2/**<em>ProfileName</em>**/APNBinding/Password**  
 Reserved for future use.
 
-<a href="" id="vpnv2-profilename-apnbinding-iscompressionenabled"></a>**VPNv2/***ProfileName***/APNBinding/IsCompressionEnabled**  
+<a href="" id="vpnv2-profilename-apnbinding-iscompressionenabled"></a>**VPNv2/**<em>ProfileName</em>**/APNBinding/IsCompressionEnabled**  
 Reserved for future use.
 
-<a href="" id="vpnv2-profilename-apnbinding-authenticationtype"></a>**VPNv2/***ProfileName***/APNBinding/AuthenticationType**  
+<a href="" id="vpnv2-profilename-apnbinding-authenticationtype"></a>**VPNv2/**<em>ProfileName</em>**/APNBinding/AuthenticationType**  
 Reserved for future use.
 
-<a href="" id="vpnv2-profilename-devicecompliance"></a>**VPNv2/***ProfileName***/DeviceCompliance**  
+<a href="" id="vpnv2-profilename-devicecompliance"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance**  
 Added in Windows 10, version 1607. Nodes under DeviceCompliance can be used to enable AAD-based Conditional Access for VPN.
 
-<a href="" id="vpnv2-profilename-devicecompliance-enabled"></a>**VPNv2/***ProfileName***/DeviceCompliance/Enabled**  
+<a href="" id="vpnv2-profilename-devicecompliance-enabled"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance/Enabled**  
 Added in Windows 10, version 1607. Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with AAD to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory.
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-devicecompliance-sso"></a>**VPNv2/***ProfileName***/DeviceCompliance/Sso**  
+<a href="" id="vpnv2-profilename-devicecompliance-sso"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance/Sso**  
 Added in Windows 10, version 1607. Nodes under SSO can be used to choose a certificate different from the VPN Authentication cert for the Kerberos Authentication in the case of Device Compliance.
 
-<a href="" id="vpnv2-profilename-devicecompliance-sso-enabled"></a>**VPNv2/***ProfileName***/DeviceCompliance/Sso/Enabled**  
+<a href="" id="vpnv2-profilename-devicecompliance-sso-enabled"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance/Sso/Enabled**  
 Added in Windows 10, version 1607. If this field is set to True, the VPN Client will look for a separate certificate for Kerberos Authentication.
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-devicecompliance-sso-issuerhash"></a>**VPNv2/***ProfileName***/DeviceCompliance/Sso/IssuerHash**  
+<a href="" id="vpnv2-profilename-devicecompliance-sso-issuerhash"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance/Sso/IssuerHash**  
 Added in Windows 10, version 1607. Hashes for the VPN Client to look for the correct certificate for Kerberos Authentication.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-devicecompliance-sso-eku"></a>**VPNv2/***ProfileName***/DeviceCompliance/Sso/Eku**  
+<a href="" id="vpnv2-profilename-devicecompliance-sso-eku"></a>**VPNv2/**<em>ProfileName</em>**/DeviceCompliance/Sso/Eku**  
 Added in Windows 10, version 1607. Comma Separated list of EKUs for the VPN Client to look for the correct certificate for Kerberos Authentication.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-pluginprofile"></a>**VPNv2/***ProfileName***/PluginProfile**  
+<a href="" id="vpnv2-profilename-pluginprofile"></a>**VPNv2/**<em>ProfileName</em>**/PluginProfile**  
 Nodes under the PluginProfile are required when using a Microsoft Store based VPN plugin.
 
-<a href="" id="vpnv2-profilename-pluginprofile-serverurllist"></a>**VPNv2/***ProfileName***/PluginProfile/ServerUrlList**  
-Required for plug-in profiles. Comma separated list of servers in URL, hostname, or IP format.
+<a href="" id="vpnv2-profilename-pluginprofile-serverurllist"></a>**VPNv2/**<em>ProfileName</em>**/PluginProfile/ServerUrlList**  
+Required for plug-in profiles. Semicolon-separated list of servers in URL, hostname, or IP format.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-pluginprofile-customconfiguration"></a>**VPNv2/***ProfileName***/PluginProfile/CustomConfiguration**  
+<a href="" id="vpnv2-profilename-pluginprofile-customconfiguration"></a>**VPNv2/**<em>ProfileName</em>**/PluginProfile/CustomConfiguration**  
 Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configuration including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plugin provider for format and other details. Most plugins can also configure values based on the server negotiations as well as defaults.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-pluginprofile-pluginpackagefamilyname"></a>**VPNv2/***ProfileName***/PluginProfile/PluginPackageFamilyName**  
+<a href="" id="vpnv2-profilename-pluginprofile-pluginpackagefamilyname"></a>**VPNv2/**<em>ProfileName</em>**/PluginProfile/PluginPackageFamilyName**  
 Required for plug-in profiles. Package family name for the SSL-VPN plug-in.
 
 Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-pluginprofile-customstoreurl"></a>**VPNv2/***ProfileName***/PluginProfile/CustomStoreUrl**  
+<a href="" id="vpnv2-profilename-pluginprofile-customstoreurl"></a>**VPNv2/**<em>ProfileName</em>**/PluginProfile/CustomStoreUrl**  
 Reserved for future use.
 
-<a href="" id="vpnv2-profilename-nativeprofile"></a>**VPNv2/***ProfileName***/NativeProfile**  
+<a href="" id="vpnv2-profilename-nativeprofile"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile**  
 Nodes under NativeProfile are required when using a Windows Inbox VPN Protocol (IKEv2, PPTP, L2TP).
 
-<a href="" id="vpnv2-profilename-nativeprofile-servers"></a>**VPNv2/***ProfileName***/NativeProfile/Servers**  
+<a href="" id="vpnv2-profilename-nativeprofile-servers"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Servers**  
 Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com. 
 
 The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. 
@@ -430,7 +432,7 @@ You can make a list of server by making a list of server names (with optional fr
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-nativeprofile-routingpolicytype"></a>**VPNv2/***ProfileName***/NativeProfile/RoutingPolicyType**  
+<a href="" id="vpnv2-profilename-nativeprofile-routingpolicytype"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/RoutingPolicyType**  
 Optional for native profiles. Type of routing policy. This value can be one of the following:
 
 -   SplitTunnel - Traffic can go over any interface as determined by the networking stack.
@@ -438,7 +440,7 @@ Optional for native profiles. Type of routing policy. This value can be one of t
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-nativeprofile-nativeprotocoltype"></a>**VPNv2/***ProfileName***/NativeProfile/NativeProtocolType**  
+<a href="" id="vpnv2-profilename-nativeprofile-nativeprotocoltype"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/NativeProtocolType**  
 Required for native profiles. Type of tunneling protocol used. This value can be one of the following:
 
 -   PPTP
@@ -450,10 +452,10 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 > **Note** The **Automatic** option means that the device will try each of the built-in tunneling protocols until one succeeds. It will attempt protocols in following order: IKEv2, PPTP and then L2TP. This order is not customizable. 
 
-<a href="" id="vpnv2-profilename-nativeprofile-authentication"></a>**VPNv2/***ProfileName***/NativeProfile/Authentication**  
+<a href="" id="vpnv2-profilename-nativeprofile-authentication"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Authentication**  
 Required node for native profile. It contains authentication information for the native VPN profile.
 
-<a href="" id="vpnv2-profilename-nativeprofile-authentication-usermethod"></a>**VPNv2/***ProfileName***/NativeProfile/Authentication/UserMethod**  
+<a href="" id="vpnv2-profilename-nativeprofile-authentication-usermethod"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Authentication/UserMethod**  
 This value can be one of the following:
 
 -   EAP
@@ -461,7 +463,7 @@ This value can be one of the following:
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-nativeprofile-authentication-machinemethod"></a>**VPNv2/***ProfileName***/NativeProfile/Authentication/MachineMethod**  
+<a href="" id="vpnv2-profilename-nativeprofile-authentication-machinemethod"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Authentication/MachineMethod**  
 This is only supported in IKEv2.
 
 This value can be one of the following:
@@ -470,32 +472,32 @@ This value can be one of the following:
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-nativeprofile-authentication-eap"></a>**VPNv2/***ProfileName***/NativeProfile/Authentication/Eap**  
+<a href="" id="vpnv2-profilename-nativeprofile-authentication-eap"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Authentication/Eap**  
 Required when the native profile specifies EAP authentication. EAP configuration XML.
 
 Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-nativeprofile-authentication-eap-configuration"></a>**VPNv2/***ProfileName***/NativeProfile/Authentication/Eap/Configuration**  
+<a href="" id="vpnv2-profilename-nativeprofile-authentication-eap-configuration"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Authentication/Eap/Configuration**  
 HTML encoded XML of the EAP configuration. For more information about EAP configuration XML, see [EAP configuration](eap-configuration.md).
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-nativeprofile-authentication-eap-type"></a>**VPNv2/***ProfileName***/NativeProfile/Authentication/Eap/Type**  
+<a href="" id="vpnv2-profilename-nativeprofile-authentication-eap-type"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Authentication/Eap/Type**  
 Reserved for future use.
 
-<a href="" id="vpnv2-profilename-nativeprofile-authentication-certificate"></a>**VPNv2/***ProfileName***/NativeProfile/Authentication/Certificate**  
+<a href="" id="vpnv2-profilename-nativeprofile-authentication-certificate"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Authentication/Certificate**  
 Reserved for future use.
 
-<a href="" id="vpnv2-profilename-nativeprofile-authentication-certificate-issuer"></a>**VPNv2/***ProfileName***/NativeProfile/Authentication/Certificate/Issuer**  
+<a href="" id="vpnv2-profilename-nativeprofile-authentication-certificate-issuer"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Authentication/Certificate/Issuer**  
 Reserved for future use.
 
-<a href="" id="vpnv2-profilename-nativeprofile-authentication-certificate-eku"></a>**VPNv2/***ProfileName***/NativeProfile/Authentication/Certificate/Eku**  
+<a href="" id="vpnv2-profilename-nativeprofile-authentication-certificate-eku"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Authentication/Certificate/Eku**  
 Reserved for future use.
 
-<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite"></a>**VPNv2/***ProfileName***/NativeProfile/CryptographySuite**  
+<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/CryptographySuite**  
 Added in Windows 10, version 1607. Properties of IPSec tunnels.
 
-<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-authenticationtransformconstants"></a>**VPNv2/***ProfileName***/NativeProfile/CryptographySuite/AuthenticationTransformConstants**  
+<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-authenticationtransformconstants"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/CryptographySuite/AuthenticationTransformConstants**  
 Added in Windows 10, version 1607.
 
 The following list contains the valid values:
@@ -509,7 +511,7 @@ The following list contains the valid values:
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-ciphertransformconstants"></a>**VPNv2/***ProfileName***/NativeProfile/CryptographySuite/CipherTransformConstants**  
+<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-ciphertransformconstants"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/CryptographySuite/CipherTransformConstants**  
 Added in Windows 10, version 1607.
 
 The following list contains the valid values:
@@ -525,7 +527,7 @@ The following list contains the valid values:
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-encryptionmethod"></a>**VPNv2/***ProfileName***/NativeProfile/CryptographySuite/EncryptionMethod**  
+<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-encryptionmethod"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/CryptographySuite/EncryptionMethod**  
 Added in Windows 10, version 1607.
 
 The following list contains the valid values:
@@ -540,7 +542,7 @@ The following list contains the valid values:
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-integritycheckmethod"></a>**VPNv2/***ProfileName***/NativeProfile/CryptographySuite/IntegrityCheckMethod**  
+<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-integritycheckmethod"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/CryptographySuite/IntegrityCheckMethod**  
 Added in Windows 10, version 1607.
 
 The following list contains the valid values:
@@ -552,7 +554,7 @@ The following list contains the valid values:
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-dhgroup"></a>**VPNv2/***ProfileName***/NativeProfile/CryptographySuite/DHGroup**  
+<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-dhgroup"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/CryptographySuite/DHGroup**  
 Added in Windows 10, version 1607.
 
 The following list contains the valid values:
@@ -566,7 +568,7 @@ The following list contains the valid values:
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-pfsgroup"></a>**VPNv2/***ProfileName***/NativeProfile/CryptographySuite/PfsGroup**  
+<a href="" id="vpnv2-profilename-nativeprofile-cryptographysuite-pfsgroup"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/CryptographySuite/PfsGroup**  
 Added in Windows 10, version 1607.
 
 The following list contains the valid values:
@@ -581,12 +583,12 @@ The following list contains the valid values:
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-nativeprofile-l2tppsk"></a>**VPNv2/***ProfileName***/NativeProfile/L2tpPsk**  
+<a href="" id="vpnv2-profilename-nativeprofile-l2tppsk"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/L2tpPsk**  
 Added in Windows 10, version 1607. The preshared key used for an L2TP connection.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-nativeprofile-disableclassbaseddefaultroute"></a>**VPNv2/***ProfileName***/NativeProfile/DisableClassBasedDefaultRoute**  
+<a href="" id="vpnv2-profilename-nativeprofile-disableclassbaseddefaultroute"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/DisableClassBasedDefaultRoute**  
 Added in Windows 10, version 1607. Specifies the class based default routes. For example, if the interface IP begins with 10, it assumes a class a IP and pushes the route to 10.0.0.0/8
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
@@ -596,7 +598,7 @@ Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
 Profile example
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2" xmlns:A="syncml:metinf">
   <SyncBody>
     <Atomic>
@@ -655,244 +657,241 @@ Profile example
 
 AppTriggerList
 
-``` syntax
+```xml
 <!-- Internet Explorer -->
-      <Add>
-        <CmdID>10013</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/0/App/Id</LocURI>
-          </Target>
-          <Data>%PROGRAMFILES%\Internet Explorer\iexplore.exe</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10014</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/1/App/Id</LocURI>
-          </Target>
-          <Data>%PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe</Data>
-        </Item>
-      </Add>
-      <!-- Edge -->
-      <Add>
-        <CmdID>10015</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/2/App/Id</LocURI>
-          </Target>
-          <Data>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Data>
-        </Item>
-      </Add>
+<Add>
+  <CmdID>10013</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/0/App/Id</LocURI>
+    </Target>
+    <Data>%PROGRAMFILES%\Internet Explorer\iexplore.exe</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10014</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/1/App/Id</LocURI>
+    </Target>
+    <Data>%PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe</Data>
+  </Item>
+</Add>
+<!-- Edge -->
+<Add>
+  <CmdID>10015</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/2/App/Id</LocURI>
+    </Target>
+    <Data>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Data>
+  </Item>
+</Add>
 ```
 
 RouteList and ExclusionRoute
 
-``` syntax
- 
-     <Add>
-        <CmdID>10008</CmdID>
-        <Item>
-          <Target>
-           <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/Address</LocURI>
-          </Target>
-          <Data>192.168.0.0</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10009</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/PrefixSize</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">int</Format>
-          </Meta>
-          <Data>24</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10010</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/ExclusionRoute</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">bool</Format>
-          </Meta>
-          <Data>true</Data>
-        </Item>
-      </Add>
- 
+```xml
+<Add>
+  <CmdID>10008</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/Address</LocURI>
+    </Target>
+    <Data>192.168.0.0</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10009</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/PrefixSize</LocURI>
+    </Target>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Data>24</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10010</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/ExclusionRoute</LocURI>
+    </Target>
+    <Meta>
+      <Format xmlns="syncml:metinf">bool</Format>
+    </Meta>
+    <Data>true</Data>
+  </Item>
+</Add>
 ```
 
 DomainNameInformationList
 
-``` syntax
- 
-      <!-- Domain Name rule with Suffix Match with DNS Servers -->
-      <Add>
-        <CmdID>10013</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/DomainName</LocURI>  
-          </Target>
-          <Data>.contoso.com</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10014</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/DnsServers</LocURI>  
-          </Target>
-          <Data>192.168.0.11,192.168.0.12</Data>
-        </Item>
-      </Add>
- 
+```xml
+<!-- Domain Name rule with Suffix Match with DNS Servers -->
+<Add>
+  <CmdID>10013</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/DomainName</LocURI>  
+    </Target>
+    <Data>.contoso.com</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10014</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/DnsServers</LocURI>  
+    </Target>
+    <Data>192.168.0.11,192.168.0.12</Data>
+  </Item>
+</Add>
+
 <!-- Domain Name rule with Suffix Match with Web Proxy -->
-      <Add>
-        <CmdID>10013</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/DomainName</LocURI>  
-          </Target>
-          <Data>.contoso.com</Data>
-        </Item>
-      </Add>
- 
-      <Add>
-        <CmdID>10015</CmdID>
-        <Item>
-          <Target>
-<LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/WebProxyServers</LocURI>  
-          </Target>
-          <Data>192.168.0.100:8888</Data>
-        </Item>
-      </Add>
- 
+<Add>
+  <CmdID>10013</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/DomainName</LocURI>  
+    </Target>
+    <Data>.contoso.com</Data>
+  </Item>
+</Add>
+
+<Add>
+  <CmdID>10015</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/WebProxyServers</LocURI>  
+    </Target>
+    <Data>192.168.0.100:8888</Data>
+  </Item>
+</Add>
+
 <!-- Domain Name rule with FQDN Match with DNS Servers -->
- 
-      <Add>
-        <CmdID>10016</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/2/DomainName</LocURI>  
-          </Target>
-          <Data>finance.contoso.com</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10017</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/2/DnsServers</LocURI>  
-          </Target>
-          <Data>192.168.0.11,192.168.0.12</Data>
-        </Item>
-      </Add>
- 
+
+<Add>
+  <CmdID>10016</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/2/DomainName</LocURI>  
+    </Target>
+    <Data>finance.contoso.com</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10017</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/2/DnsServers</LocURI>  
+    </Target>
+    <Data>192.168.0.11,192.168.0.12</Data>
+  </Item>
+</Add>
+
 <!-- Domain Name rule with FQDN Match with Proxy Server -->
- 
-      <Add>
-        <CmdID>10016</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/3/DomainName</LocURI>  
-          </Target>
-          <Data>finance.contoso.com</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10017</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/3/WebProxyServers</LocURI>  
-          </Target>
-          <Data>192.168.0.11:8080</Data>
-        </Item>
-      </Add>
- 
+
+<Add>
+  <CmdID>10016</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/3/DomainName</LocURI>  
+    </Target>
+    <Data>finance.contoso.com</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10017</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/3/WebProxyServers</LocURI>  
+    </Target>
+    <Data>192.168.0.11:8080</Data>
+  </Item>
+</Add>
+
 <!-- Domain Name rule for all other (any) traffic through DNS Servers -->
-      <Add>
-        <CmdID>10016</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/4/DomainName</LocURI>  
-          </Target>
-          <Data>.</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10017</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/4/DnsServers</LocURI>  
-          </Target>
-          <Data>192.168.0.11,192.168.0.12</Data>
-        </Item>
-      </Add>
- 
+<Add>
+  <CmdID>10016</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/4/DomainName</LocURI>  
+    </Target>
+    <Data>.</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10017</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/4/DnsServers</LocURI>  
+    </Target>
+    <Data>192.168.0.11,192.168.0.12</Data>
+  </Item>
+</Add>
+
 <!-- Domain Name rule for all other (any) traffic through Proxy -->
- 
-      <Add>
-        <CmdID>10016</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/5/DomainName</LocURI>  
-          </Target>
-          <Data>.</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10017</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/5/WebProxyServers</LocURI>  
-          </Target>
-          <Data>192.168.0.11</Data>
-        </Item>
-      </Add>
+
+<Add>
+  <CmdID>10016</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/5/DomainName</LocURI>  
+    </Target>
+    <Data>.</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10017</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/5/WebProxyServers</LocURI>  
+    </Target>
+    <Data>192.168.0.11</Data>
+  </Item>
+</Add>
 ```
 
 AutoTrigger
 
-``` syntax
+```xml
 <Add>
-        <CmdID>10010</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/AutoTrigger</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">bool</Format>
-          </Meta>
-          <Data>true</Data>
-        </Item>
-      </Add>
+  <CmdID>10010</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/AutoTrigger</LocURI>
+    </Target>
+    <Meta>
+      <Format xmlns="syncml:metinf">bool</Format>
+    </Meta>
+    <Data>true</Data>
+  </Item>
+</Add>
 ```
 
 Persistent
 
-``` syntax
+```xml
 <Add>
-        <CmdID>10010</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/Persistent</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">bool</Format>
-          </Meta>
-          <Data>true</Data>
-        </Item>
-      </Add>
+  <CmdID>10010</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/Persistent</LocURI>
+    </Target>
+    <Meta>
+      <Format xmlns="syncml:metinf">bool</Format>
+    </Meta>
+    <Data>true</Data>
+  </Item>
+</Add>
 ```
 
 TrafficFilterLIst App
 
-``` syntax
+```xml
   Desktop App
     <Add>
         <CmdID>10013</CmdID>
@@ -927,7 +926,7 @@ TrafficFilterLIst App
 
 Protocol, LocalPortRanges, RemotePortRanges, LocalAddressRanges, RemoteAddressRanges, RoutingPolicyType, EDPModeId, RememberCredentials, AlwaysOn, Lockdown, DnsSuffix, TrustedNetworkDetection
 
-``` syntax
+```xml
 Protocol
       <Add>
         <CmdID>$CmdID$</CmdID>
@@ -1075,7 +1074,7 @@ Protocol
 
 Proxy - Manual or AutoConfigUrl
 
-``` syntax
+```xml
 Manual
       <Add>
         <CmdID>$CmdID$</CmdID>
@@ -1101,7 +1100,7 @@ Manual
 
 Device Compliance - Sso
 
-``` syntax
+```xml
   Enabled
 <Add>
         <CmdID>10011</CmdID>
@@ -1141,7 +1140,7 @@ Device Compliance - Sso
 
 PluginProfile
 
-``` syntax
+```xml
 PluginPackageFamilyName
       <!-- Configure VPN Server Name or Address (PhoneNumber=) [Comma Separated]-->
       <Add>
@@ -1179,7 +1178,7 @@ PluginPackageFamilyName
 
 NativeProfile
 
-``` syntax
+```xml
 Servers
 <Add>
         <CmdID>10001</CmdID>
@@ -1314,9 +1313,9 @@ Servers
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

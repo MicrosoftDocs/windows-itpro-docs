@@ -2,14 +2,16 @@
 title: Refresh a Windows 7 computer with Windows 10 (Windows 10)
 description: This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the computer refresh process.
 ms.assetid: 2866fb3c-4909-4c25-b083-6fc1f7869f6f
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: reinstallation, customize, template, script, restore
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: greg-lindsay
-ms.date: 07/27/2017
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 
@@ -43,9 +45,9 @@ For a computer refresh with MDT, you use the User State Migration Tool (USMT), w
 
 During the computer refresh, USMT uses a feature called Hard-Link Migration Store. When you use this feature, the files are simply linked in the file system, which allows for fast migration, even when there is a lot of data.
 
->[!NOTE] 
+>[!NOTE]
 >In addition to the USMT backup, you can enable an optional full Windows Imaging (WIM) backup of the machine by configuring the MDT rules. If you do this, a .wim file is created in addition to the USMT backup. The .wim file will contain the entire volume from the computer, and helpdesk personnel can extract content from it if needed. Please note that this is a data WIM backup only. Using this backup to restore the entire machine is not a supported scenario.
- 
+ 
 ### Multi-user migration
 
 By default, ScanState in USMT backs up all profiles on the machine, including local computer profiles. If you have a machine that has been in your environment for a while, it likely has several domain-based profiles on it, including those of former users. You can limit which profiles are backed up 
@@ -53,9 +55,9 @@ by configuring command-line switches to ScanState (added as rules in MDT).
 
 As an example, the following line configures USMT to migrate only domain user profiles and not profiles from the local SAM account database: ScanStateArgs=/ue:\*\\\* /ui:CONTOSO\\\*
 
->[!NOTE] 
+>[!NOTE]
 >You also can combine the preceding switches with the /uel switch, which excludes profiles that have not been accessed within a specific number of days. For example, adding /uel:60 will configure ScanState (or LoadState) not to include profiles that haven't been accessed for more than 60 days.
- 
+ 
 ### Support for additional settings
 
 In addition to the command-line switches that control which profiles to migrate, the XML templates control exactly what data is being migrated. You can control data within and outside the user profiles
@@ -88,28 +90,28 @@ In order to use the custom MigContosoData.xml USMT template, you need to copy it
 
 After adding the additional USMT template and configuring the CustomSettings.ini file to use it, you are now ready to refresh a Windows 7 SP1 client to Windows 10. In these steps, we assume you have a Windows 7 SP1 client named PC0001 in your environment that is ready for a refresh to Windows 10.
 
->[!NOTE]   
+>[!NOTE]
 >MDT also supports an offline computer refresh. For more info on that scenario, see the USMTOfflineMigration property in the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
- 
+ 
 ### Upgrade (refresh) a Windows 7 SP1 client
 
-1.  On PC0001, log on as **CONTOSO\\Administrator**. Start the Lite Touch Deploy Wizard by executing **\\\\MDT01\\MDTProduction$\\Scripts\\Litetouch.vbs**. Complete the deployment guide using the following settings:
+1. On PC0001, log on as **CONTOSO\\Administrator**. Start the Lite Touch Deploy Wizard by executing **\\\\MDT01\\MDTProduction$\\Scripts\\Litetouch.vbs**. Complete the deployment guide using the following settings:
     
-    * Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM
-    * Computer name: &lt;default&gt;
-    * Specify where to save a complete computer backup: Do not back up the existing computer
-      >[!NOTE]
-      >Skip this optional full WIM backup. The USMT backup will still run.
-         
-2.  Select one or more applications to install: Install - Adobe Reader XI - x86
+   * Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM
+   * Computer name: &lt;default&gt;
+   * Specify where to save a complete computer backup: Do not back up the existing computer
+     >[!NOTE]
+     >Skip this optional full WIM backup. The USMT backup will still run.
+         
+2. Select one or more applications to install: Install - Adobe Reader XI - x86
 
-3.  The setup now starts and does the following:
+3. The setup now starts and does the following:
     
-    * Backs up user settings and data using USMT.
-    * Installs the Windows 10 Enterprise x64 operating system.
-    * Installs the added application(s).
-    * Updates the operating system via your local Windows Server Update Services (WSUS) server.
-    * Restores user settings and data using USMT.
+   * Backs up user settings and data using USMT.
+   * Installs the Windows 10 Enterprise x64 operating system.
+   * Installs the added application(s).
+   * Updates the operating system via your local Windows Server Update Services (WSUS) server.
+   * Restores user settings and data using USMT.
 
 ![Start the computer refresh from the running Windows 7 client](../images/fig2-taskseq.png "Start the computer refresh from the running Windows 7 client")
 

@@ -1,12 +1,15 @@
 ---
 title: Disconnected Operation Mode
 description: Disconnected Operation Mode
-author: jamiejdt
+author: dansimp
 ms.assetid: 3f9849ea-ba53-4c68-85d3-87a4218f59c6
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

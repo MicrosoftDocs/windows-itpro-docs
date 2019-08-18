@@ -4,11 +4,13 @@ description: Create a provisioning package with multivariant settings to customi
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/08/2017
-ms.author: jdecker
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # Create a provisioning package with multivariant settings
@@ -37,8 +39,8 @@ A **Target** can have more than one **TargetState**, and a **TargetState** can h
 
 The following table describes the logic for the target definition.
 
-<table><tr><td>When all **Condition** elements are TRUE, **TargetState** is TRUE.</td><td>![Target state is true when all conditions are true](../images/icd-multi-targetstate-true.png)</td></tr>
-<tr><td>If any of the **TargetState** elements is TRUE, **Target** is TRUE, and the **Id** can be used for setting customizations.</td><td>![Target is true if any target state is true](../images/icd-multi-target-true.png)</td></tr></table>
+<table><tr><td>When all <strong>Condition</strong> elements are TRUE, <strong>TargetState</strong> is TRUE.</td><td><img src="../images/icd-multi-targetstate-true.png" alt="Target state is true when all conditions are true"/></td></tr>
+<tr><td>If any of the <strong>TargetState</strong> elements is TRUE, <strong>Target</strong> is TRUE, and the <strong>Id</strong> can be used for setting customizations.</td><td><img src="../images/icd-multi-target-true.png" alt="Target is true if any target state is true"/></td></tr></table>
 
 ### Conditions
 
@@ -115,16 +117,16 @@ Follow these steps to create a provisioning package with multivariant capabiliti
     The following example shows the contents of a sample customizations.xml file.
 
     ```XML
-<?xml version="1.0" encoding="utf-8"?> 
-<WindowsCustomizatons> 
-  <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0"> 
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; 
+   <WindowsCustomizatons> 
+   <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0"> 
     <ID>{6aaa4dfa-00d7-4aaa-8adf-73c6a7e2501e}</ID> 
     <Name>My Provisioning Package</Name> 
     <Version>1.0</Version> 
     <OwnerType>OEM</OwnerType> 
     <Rank>50</Rank> 
-  </PackageConfig> 
-  <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning"> 
+   </PackageConfig> 
+   <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning"> 
     <Customizations> 
       <Common> 
         <Policies> 
@@ -137,25 +139,25 @@ Follow these steps to create a provisioning package with multivariant capabiliti
         </HotSpot> 
       </Common> 
     </Customizations> 
-  </Settings> 
-</WindowsCustomizatons> 
+   </Settings> 
+   </WindowsCustomizatons> 
     ```
 
-4. Edit the customizations.xml file to create a **Targets** section to describe the conditions that will handle your multivariant settings. 
+5. Edit the customizations.xml file to create a **Targets** section to describe the conditions that will handle your multivariant settings. 
 
     The following example shows the customizations.xml, which has been modified to include several conditions including **ProcessorName**, **ProcessorType**, **MCC**, and **MNC**.
     
     ```XML
     <?xml version="1.0" encoding="utf-8"?> 
-<WindowsCustomizatons> 
-  <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0"> 
+   <WindowsCustomizatons> 
+   <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0"> 
     <ID>{6aaa4dfa-00d7-4aaa-8adf-73c6a7e2501e}</ID> 
     <Name>My Provisioning Package</Name> 
     <Version>1.0</Version> 
     <OwnerType>OEM</OwnerType> 
     <Rank>50</Rank> 
-  </PackageConfig> 
-  <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning"> 
+   </PackageConfig> 
+   <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning"> 
     <Customizations> 
       <Common> 
         <Policies> 
@@ -186,11 +188,11 @@ Follow these steps to create a provisioning package with multivariant capabiliti
         </Target> 
       </Targets> 
     </Customizations> 
-  </Settings> 
-</WindowsCustomizatons> 
+   </Settings> 
+   </WindowsCustomizatons> 
     ```
 
-5. In the customizations.xml file, create a **Variant** section for the settings you need to customize. To do this:
+6. In the customizations.xml file, create a **Variant** section for the settings you need to customize. To do this:
 
     a. Define a child **TargetRefs** element.
     
@@ -206,16 +208,16 @@ Follow these steps to create a provisioning package with multivariant capabiliti
     The following example shows the customizations.xml updated to include a **Variant** section and the moved settings that will be applied if the conditions for the variant are met.
 
     ```XML
-<?xml version="1.0" encoding="utf-8"?> 
-<WindowsCustomizatons> 
-  <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
+   &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; 
+   <WindowsCustomizatons> 
+   <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
     <ID>{6aaa4dfa-00d7-4aaa-8adf-73c6a7e2501e}</ID> 
     <Name>My Provisioning Package</Name> 
     <Version>1.0</Version> 
     <OwnerType>OEM</OwnerType> 
     <Rank>50</Rank> 
-  </PackageConfig> 
-  <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning"> 
+   </PackageConfig> 
+   <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning"> 
     <Customizations> 
       <Common> 
       </Common> 
@@ -254,14 +256,14 @@ Follow these steps to create a provisioning package with multivariant capabiliti
         </Settings> 
       </Variant> 
     </Customizations> 
-  </Settings> 
-</WindowsCustomizatons> 
+   </Settings> 
+   </WindowsCustomizatons> 
     ```
 
-6. Save the updated customizations.xml file and note the path to this updated file. You will need the path as one of the values for the next step.
+7. Save the updated customizations.xml file and note the path to this updated file. You will need the path as one of the values for the next step.
 
 
-7. Use the [Windows Configuration Designer command-line interface](provisioning-command-line.md) to create a provisioning package using the updated customizations.xml. 
+8. Use the [Windows Configuration Designer command-line interface](provisioning-command-line.md) to create a provisioning package using the updated customizations.xml. 
 
     For example:
 
@@ -314,7 +316,7 @@ The following events trigger provisioning on Windows 10 devices:
 - [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 
- 
+ 
 
 
 

@@ -1,12 +1,15 @@
 ---
 title: Planning the Application Virtualization Sequencer Implementation
 description: Planning the Application Virtualization Sequencer Implementation
-author: jamiejdt
+author: eavena
 ms.assetid: 052f32fe-ad13-4921-a8ce-4a657eb2b2bf
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -25,7 +28,7 @@ For step-by-step information about installing the Sequencer, see [How to Install
 **Important**  
 The entire sequencing process plan should be reviewed and approved by your corporate security team. Sequencer operations would usually be kept separate from the production environment in a lab. This can be as simple or as comprehensive as necessary, based on your business requirements. The sequencing computers will need connectivity to the corporate network to copy finished packages over to the production servers. However, because they are typically operated without antivirus protection, they must not be on the corporate network unprotected—for example, you might be able to operate behind a firewall or on an isolated network segment. Using Virtual Machines configured to share an isolated virtual network might also be an acceptable approach. Follow your corporate security policies to safely address this situation.
 
- 
+ 
 
 Key steps for planning the sequencing process include the following:
 
@@ -38,7 +41,7 @@ Key steps for planning the sequencing process include the following:
     **Important**  
     Running the App-V sequencer in Safe Mode is not supported.
 
-     
+     
 
 -   Verify that you understand the sequenced application’s operating environment, including integration elements such as Microsoft Office or the Java Runtime Environment, because this will often determine whether anything has to be installed on the sequencing computer prior to sequencing the application.
 
@@ -61,9 +64,9 @@ Key steps for planning the sequencing process include the following:
 
 [Security and Protection Overview](security-and-protection-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

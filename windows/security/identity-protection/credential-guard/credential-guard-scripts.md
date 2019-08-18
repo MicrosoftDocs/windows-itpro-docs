@@ -7,12 +7,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
+ms.reviewer: 
 ---
 
 # Windows Defender Credential Guard: Scripts for Certificate Authority Issuance Policies
@@ -24,7 +25,7 @@ Here is a list of scripts mentioned in this topic.
 
 Save this script file as get-IssuancePolicy.ps1.
 
-``` syntax
+```powershell
 #######################################
 ##     Parameters to be defined      ##
 ##     by the user                   ##
@@ -208,14 +209,14 @@ write-host "There are no issuance policies which are not mapped to groups"
     }
 }
 ```
-> [!NOTE]  
+> [!NOTE]
 > If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
  
 ## <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
 
 Save the script file as set-IssuancePolicyToGroupLink.ps1.
 
-``` syntax
+```powershell
 #######################################
 ##     Parameters to be defined      ##
 ##     by the user                   ##
@@ -490,5 +491,5 @@ write-host $tmp -Foreground Red
 }
 ```
 
-> [!NOTE]  
+> [!NOTE]
 > If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.

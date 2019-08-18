@@ -1,12 +1,15 @@
 ---
 title: MED-V 2.0 Best Practices
 description: MED-V 2.0 Best Practices
-author: jamiejdt
+author: levinec
 ms.assetid: 47ba2dd1-6c6e-4d6e-8e18-b42291f8e02a
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -47,7 +50,7 @@ If you want end users to see a service level agreement (SLA) before they access 
 **Caution**  
 Even though a best practice is to run first time setup in **Unattended** mode, if you decide to set the local policy or registry entry to include an SLA in your image (virtual hard disk), you must also specify that first time setup is run in **Attended** mode, or first time setup can fail.
 
- 
+ 
 
 ### Compact the virtual hard disk
 
@@ -98,9 +101,9 @@ To prevent antivirus activity from affecting the performance of the virtual desk
 
 [Security and Protection for MED-V](security-and-protection-for-med-v.md)
 
- 
+ 
 
- 
+ 
 
 
 

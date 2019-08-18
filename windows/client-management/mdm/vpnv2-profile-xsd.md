@@ -2,11 +2,13 @@
 title: ProfileXML XSD
 description: Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some profile examples.
 ms.assetid: 2F32E14B-F9B9-4760-AE94-E57F1D4DFDB3
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 02/05/2018
 ---
 
@@ -18,7 +20,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
 ## XSD for the VPN profile
 
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import namespace="http://www.microsoft.com/provisioning/EapHostConfig" />
@@ -132,7 +134,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
               <xs:element name="NativeProtocolType" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="L2tpPsk" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="DisableClassBasedDefaultRoute" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
-              <xs:element maxOccurs="unbounded" name="CryptographySuite"minOccurs="0" maxOccurs="1">
+              <xs:element name="CryptographySuite" minOccurs="0" maxOccurs="1">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="AuthenticationTransformConstants" type="xs:string" minOccurs="0" maxOccurs="1"/>
@@ -342,7 +344,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
 ## Plug-in profile example
 
 
-``` syntax
+```xml
 <VPNProfile>
     <PluginProfile>
         <ServerUrlList>testserver1.contoso.com;testserver2.contoso..com</ServerUrlList>

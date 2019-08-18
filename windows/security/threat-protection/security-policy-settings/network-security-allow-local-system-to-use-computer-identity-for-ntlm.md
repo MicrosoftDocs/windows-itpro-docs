@@ -2,12 +2,14 @@
 title: Network security Allow Local System to use computer identity for NTLM (Windows 10)
 description: Describes the location, values, policy management, and security considerations for the Network security Allow Local System to use computer identity for NTLM security policy setting.
 ms.assetid: c46a658d-b7a4-4139-b7ea-b9268c240053
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -35,7 +37,7 @@ When a service connects with the device identity, signing and encryption are sup
 | Enabled | Services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.| Services running as Local System that use Negotiate will use the computer identity. This is the default behavior. |
 | Disabled| Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. This is the default behavior.| Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously.|
 |Neither|Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. | Services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.| 
- 
+ 
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
@@ -51,7 +53,7 @@ The following table lists the actual and effective default values for this polic
 | Domain controller effective default settings | Not applicable| 
 | Member server effective default settings | Not applicable| 
 | Effective GPO default settings on client computers | Not defined| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

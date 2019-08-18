@@ -1,12 +1,15 @@
 ---
 title: Reports Results Pane Columns
 description: Reports Results Pane Columns
-author: jamiejdt
+author: eavena
 ms.assetid: 907360ca-6a55-4e42-88d2-db1a24cd2a28
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

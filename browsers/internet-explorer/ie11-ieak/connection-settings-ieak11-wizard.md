@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Connection Settings page in IEAK 11 Customization Wizard to import and preset connection settings on your employee’s computers.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: dc93ebf7-37dc-47c7-adc3-067d07de8b78
+ms.reviewer: 
+audience: itpromanager: dansimp
+ms.author: lomayor
 title: Use the Connection Settings page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -24,15 +27,15 @@ The **Connection Settings** page of the Internet Explorer Administration Kit (IE
 
 **To use the Connection Settings page**
 
-1.  Decide if you want to customize your connection settings. You can pick:
+1. Decide if you want to customize your connection settings. You can pick:
 
-    -   **Do not customize Connection Settings.** Pick this option if you don’t want to preset your employee’s connection settings.
+   -   **Do not customize Connection Settings.** Pick this option if you don’t want to preset your employee’s connection settings.
 
-    -   **Import the current Connection Settings from this machine.** Pick this option to import your connection settings from your computer and use them as the preset for your employee’s connection settings.
+   -   **Import the current Connection Settings from this machine.** Pick this option to import your connection settings from your computer and use them as the preset for your employee’s connection settings.
  
- **Note**<br>If you want to change any of your settings later, you can click **Modify Settings** to open the **Internet Properties** box, click the **Connection Settings** tab, and make your changes.
+   **Note**<br>If you want to change any of your settings later, you can click **Modify Settings** to open the **Internet Properties** box, click the **Connection Settings** tab, and make your changes.
 
-2.  Check the **Delete existing Dial-up Connection Settings** box to clear any existing settings on your employee’s computers.
+2. Check the **Delete existing Dial-up Connection Settings** box to clear any existing settings on your employee’s computers.
 
-3.  Click **Next** to go to the [Automatic Configuration](auto-config-ieak11-wizard.md) page or **Back** to go to the [Connection Manager](connection-mgr-ieak11-wizard.md) page.
+3. Click **Next** to go to the [Automatic Configuration](auto-config-ieak11-wizard.md) page or **Back** to go to the [Connection Manager](connection-mgr-ieak11-wizard.md) page.
 

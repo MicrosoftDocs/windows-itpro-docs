@@ -1,12 +1,15 @@
 ---
 title: How to Delete All Virtual Applications by Using the Command Line
 description: How to Delete All Virtual Applications by Using the Command Line
-author: jamiejdt
+author: dansimp
 ms.assetid: bfe13b5c-825a-4eb1-a979-6c4b8d8b2a9c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ You can use the following procedure to delete all virtual applications from a sp
 **Note**  
 When all applications are deleted from a package, the Application Virtualization (App-V) Client also deletes the package.
 
- 
+ 
 
 **To delete all applications**
 
@@ -30,7 +33,7 @@ When all applications are deleted from a package, the Application Virtualization
     **Note**  
     When all applications are deleted from a package, the Application Virtualization (App-V) Client also deletes the package.
 
-     
+     
 
 ## Related topics
 
@@ -39,9 +42,9 @@ When all applications are deleted from a package, the Application Virtualization
 
 [How to Remove a Package by Using the Command Line](how-to-remove-a-package-by-using-the-command-line.md)
 
- 
+ 
 
- 
+ 
 
 
 

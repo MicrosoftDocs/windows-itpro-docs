@@ -8,6 +8,9 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: Mir0sh
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ---
 
 # Appendix A: Security monitoring recommendations for many audit events

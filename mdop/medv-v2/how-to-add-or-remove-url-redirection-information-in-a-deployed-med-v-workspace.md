@@ -1,12 +1,15 @@
 ---
 title: How to Add or Remove URL Redirection Information in a Deployed MED-V Workspace
 description: How to Add or Remove URL Redirection Information in a Deployed MED-V Workspace
-author: jamiejdt
+author: levinec
 ms.assetid: bf55848d-bf77-452e-aaa5-4dd4868ff5bd
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 11/01/2016
 ---
 
@@ -43,7 +46,7 @@ You can add and remove URL redirection information by performing one of the foll
 **Note**  
 This method of editing URL redirection information is a MED-V best practice.
 
- 
+ 
 
 <a href="" id="bkmk-edittext"></a>**To rebuild the MED-V workspace by using an updated URL text file**
 
@@ -52,7 +55,7 @@ This method of editing URL redirection information is a MED-V best practice.
     **Important**  
     We do not recommend this method of editing URL redirection information. In addition, any time that you redeploy the MED-V workspace back out to your enterprise, first time setup must run again, and any data saved in the virtual machine is lost.
 
-     
+     
 
 ## Related topics
 
@@ -63,9 +66,9 @@ This method of editing URL redirection information is a MED-V best practice.
 
 [Create a MED-V Workspace Package](create-a-med-v-workspace-package.md)
 
- 
+ 
 
- 
+ 
 
 
 

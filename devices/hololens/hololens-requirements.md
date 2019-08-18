@@ -3,11 +3,13 @@ title: HoloLens in the enterprise requirements and FAQ (HoloLens)
 description: Requirements and FAQ for general use, Wi-Fi, and device management for HoloLens in the enterprise.
 ms.prod: hololens
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 06/04/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Microsoft HoloLens in the enterprise: requirements and FAQ
@@ -35,10 +37,10 @@ When you develop for HoloLens, there are [system requirements and tools](https:/
 - TTLS-TLS
 
 ### Device management 
-   - Users have Azure AD accounts with [Intune license assigned](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4)
-   - Wi-Fi network
-   - Intune or a 3rd party mobile device management (MDM) provider that uses Microsoft MDM APIs
-   
+- Users have Azure AD accounts with [Intune license assigned](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4)
+- Wi-Fi network
+- Intune or a 3rd party mobile device management (MDM) provider that uses Microsoft MDM APIs
+
 ### Upgrade to Windows Holographic for Business 
 - HoloLens Enterprise license XML file
 

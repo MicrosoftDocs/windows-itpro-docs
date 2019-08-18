@@ -2,12 +2,14 @@
 title: Edit AppLocker rules (Windows 10)
 description: This topic for IT professionals describes the steps to edit a publisher rule, path rule, and file hash rule in AppLocker.
 ms.assetid: 80016cda-b915-46a0-83c6-5e6b0b958e32
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,8 +20,8 @@ ms.date: 09/21/2017
 # Edit AppLocker rules
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes the steps to edit a publisher rule, path rule, and file hash rule in AppLocker.
 

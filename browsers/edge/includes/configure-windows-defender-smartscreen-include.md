@@ -1,9 +1,11 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+audience: itpromanager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Configure Windows Defender SmartScreen -->
@@ -14,11 +16,12 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Not configured |Blank |Blank |Users can choose to use Windows Defender SmartScreen. | |
-|Disabled |0 |0 |Turned off. Do not protect users from potential threats and prevent users from turning it on. | |
-|Enabled |1 |1 |Turned on. Protect users from potential threats and prevent users from turning it off. |![Most restricted value](../images/check-gn.png) |
+|  Group Policy  |  MDM  | Registry |                                          Description                                          |                 Most restricted                  |
+|----------------|:-----:|:--------:|-----------------------------------------------------------------------------------------------|:------------------------------------------------:|
+| Not configured | Blank |  Blank   |                     Users can choose to use Windows Defender SmartScreen.                     |                                                  |
+|    Disabled    |   0   |    0     | Turned off. Do not protect users from potential threats and prevent users from turning it on. |                                                  |
+|    Enabled     |   1   |    1     |    Turned on. Protect users from potential threats and prevent users from turning it off.     | ![Most restricted value](../images/check-gn.png) |
+
 ---
 
 To verify Windows Defender SmartScreen is turned off (disabled): 

@@ -1,8 +1,11 @@
 ---
 title: Maintaining MBAM 2.5
 description: Maintaining MBAM 2.5
-author: jamiejdt
+author: dansimp
 ms.assetid: 44d398a0-2ca0-4d47-943c-322345409b59
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

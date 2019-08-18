@@ -1,12 +1,15 @@
 ---
 title: How to Print a Report
 description: How to Print a Report
-author: jamiejdt
+author: eavena
 ms.assetid: 9cb3a2f1-69bf-47b2-b2cf-8afdcd77138f
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

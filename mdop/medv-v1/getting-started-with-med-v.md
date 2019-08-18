@@ -1,12 +1,15 @@
 ---
 title: Getting Started with MED-V
 description: Getting Started with MED-V
-author: jamiejdt
+author: dansimp
 ms.assetid: 5832cdb3-3892-4048-b29d-7644e75117f0
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

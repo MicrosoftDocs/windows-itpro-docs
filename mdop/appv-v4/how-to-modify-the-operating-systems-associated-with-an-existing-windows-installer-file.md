@@ -1,12 +1,15 @@
 ---
 title: How to Modify the Operating Systems Associated With an Existing Windows Installer File
 description: How to Modify the Operating Systems Associated With an Existing Windows Installer File
-author: jamiejdt
+author: eavena
 ms.assetid: 0633f7e2-aebf-4e00-be02-35bc59dec420
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -33,7 +36,7 @@ Use the following procedure to modify the operating system versions associated w
     **Note**  
     If you select **Tools** / **Create MSI** to create a new Windows Installer file, you can skip **Step 6** of this procedure.
 
-     
+     
 
 6.  To save the virtual application package, select **Package** / **Save**.
 
@@ -42,9 +45,9 @@ Use the following procedure to modify the operating system versions associated w
 
 [Tasks for the Application Virtualization Sequencer](tasks-for-the-application-virtualization-sequencer.md)
 
- 
+ 
 
- 
+ 
 
 
 

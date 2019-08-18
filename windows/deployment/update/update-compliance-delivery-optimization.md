@@ -1,10 +1,13 @@
 ---
 title: Delivery Optimization in Update Compliance (Windows 10)
+ms.reviewer: 
+manager: laurawi
 description: new Delivery Optimization data displayed in Update Compliance
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
+audience: itpro
 author: jaimeo
 ms.author: jaimeo
 keywords: oms, operations management suite, optimization, downloads, updates, log analytics
@@ -17,6 +20,11 @@ ms.topic: article
 The Update Compliance solution of Windows Analytics provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
 
 ![DO status](images/UC_workspace_DO_status.png)
+
+> [!IMPORTANT]
+> There is a known issue with the way device configuration is displayed for Delivery Optimization. Some devices running Windows 10, versions 1809 or 1903 report the Delivery Optimization DownloadMode configuration value as the sequential value in the list of possible configurations rather than the actual configured value. For example, a device that is configured as HTTP + Group (2), will be shown as HTTP + Internet (3) in Update Compliance.
+>
+>**This issue is now fixed by installing the 2019-07 cumulative update appropriate for the device.**
 
 ## Delivery Optimization Status
  

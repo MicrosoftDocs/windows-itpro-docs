@@ -1,12 +1,15 @@
 ---
 title: Package Results Pane
 description: Package Results Pane
-author: jamiejdt
+author: eavena
 ms.assetid: 07b7f737-f26f-4feb-88aa-3d8009c5622d
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

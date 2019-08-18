@@ -1,12 +1,15 @@
 ---
 title: Troubleshooting DaRT 7.0
 description: Troubleshooting DaRT 7.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 24c50efa-e9ac-45c4-aca2-b1dcfe834fdd
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

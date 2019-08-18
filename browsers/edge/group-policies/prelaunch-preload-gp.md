@@ -1,10 +1,12 @@
 ---
 title: Microsoft Edge - Prelaunch and tab preload group policies
 description: Microsoft Edge pre-launches as a background process during Windows startup when the system is idle waiting to be launched by the user.  Pre-launching helps the performance of Microsoft Edge and minimizes the amount of time required to start up Microsoft Edge.
-manager: dougkim
-ms.author: pashort
-author: shortpatti
-ms.date: 10/02/2018
+audience: itpro
+manager: dansimp
+ms.author: eravena
+author: eavena
+ms.prod: edge
+ms.reviewer: 
 ms.localizationpriority: medium
 ms.topic: reference
 ---

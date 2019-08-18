@@ -8,12 +8,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/11/2018
+ms.reviewer: 
 ---
 # Windows and the GDPR: Information for IT Administrators and Decision Makers
 
@@ -158,7 +159,7 @@ The following table lists in what GDPR mode – controller or processor – Wind
 
 */*Depending on which application/feature this is referring to.*
 
-##  Windows diagnostic data and Windows 10
+## Windows diagnostic data and Windows 10
 
 
 ### Recommended Windows 10 settings

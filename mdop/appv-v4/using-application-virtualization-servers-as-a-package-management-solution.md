@@ -1,12 +1,15 @@
 ---
 title: Using Application Virtualization Servers as a Package Management Solution
 description: Using Application Virtualization Servers as a Package Management Solution
-author: jamiejdt
+author: manikadhiman
 ms.assetid: 41597355-e7bb-45e2-b300-7b1724419975
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ If you do not have an existing ESD system to deploy your Application Virtualizat
 **Note**  
 Access to the applications is controlled by means of Security Groups in Active Directory Domain Services, so you will need to plan a process to set up a security group for each virtualized application and for managing which users are added to each group. The Application Virtualization Management Server administrator configures the server to use these Active Directory groups, and the server then automatically controls access to the packages based on Active Directory group membership.
 
- 
+ 
 
 ## In This Section
 
@@ -40,9 +43,9 @@ Describes available options for using Application Virtualization Streaming Serve
 
 [Planning for Application Virtualization System Deployment](planning-for-application-virtualization-system-deployment.md)
 
- 
+ 
 
- 
+ 
 
 
 

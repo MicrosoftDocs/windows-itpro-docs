@@ -1,11 +1,13 @@
 ---
 title: Microsoft Edge training and demonstrations  
+ms.reviewer: 
+audience: itpromanager: dansimp
 description: Get access to training and demonstrations for Microsoft Edge.
 ms.prod: edge
 ms.topic: article
 ms.manager: elizapo
-author: lizap
-ms.author: elizapo  
+author: msdmaguire
+ms.author: dmaguire
 ms.localizationpriority: high
 ---
 
@@ -27,10 +29,10 @@ Find out more about new and improved features of Microsoft Edge, and how you can
 
 Get a behind the scenes look at Microsoft Edge and the improvements we've made to make it faster and more efficient.
 
-![VIDEO https://channel9.msdn.com/events/webplatformsummit/microsoft-edge-web-summit-2017/es14]
+> [!VIDEO https://channel9.msdn.com/events/webplatformsummit/microsoft-edge-web-summit-2017/es14/player]
 
 ### Building a safer browser: Four guards to keep users safe
 
 Learn about our security strategy and how we use the Four Guards to keep your users safe while they browse the Internet.
 
-![VIDEO https://channel9.msdn.com/events/webplatformsummit/microsoft-edge-web-summit-2017/es03]
+> [!VIDEO https://channel9.msdn.com/events/webplatformsummit/microsoft-edge-web-summit-2017/es03/player]

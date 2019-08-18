@@ -1,8 +1,11 @@
 ---
 title: About Client Configuration Settings
 description: About Client Configuration Settings
-author: jamiejdt
+author: manikadhiman
 ms.assetid: cc7ae28c-b2ac-4f68-b992-5ccdbd5316a4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -124,153 +127,143 @@ The following table displays information about the App-V 5.0 client configuratio
 <tr class="odd">
 <td align="left"><p>Name</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
+<strong>Note</strong><br/><p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>PUBLISHINGSERVERNAME</p></td>
 <td align="left"><p>Displays the name of publishing server.</p></td>
 <td align="left"><p>String</p></td>
-<td align="left"><p>Publishing\Servers\{serverId}\FriendlyName</p></td>
+<td align="left"><p>Publishing\Servers{serverId}\FriendlyName</p></td>
 <td align="left"><p>Policy value not written (same as Not Configured)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>URL</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
+<strong>Note</strong><br/><p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>PUBLISHINGSERVERURL</p></td>
 <td align="left"><p>Displays the URL of publishing server.</p></td>
 <td align="left"><p>String</p></td>
-<td align="left"><p>Publishing\Servers\{serverId}\URL</p></td>
+<td align="left"><p>Publishing\Servers{serverId}\URL</p></td>
 <td align="left"><p>Policy value not written (same as Not Configured)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>GlobalRefreshEnabled</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
+<strong>Note</strong><br/><p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>GLOBALREFRESHENABLED</p></td>
 <td align="left"><p>Enables global publishing refresh (Boolean)</p></td>
 <td align="left"><p>True(enabled); False(Disabled state)</p></td>
-<td align="left"><p>Publishing\Servers\{serverId}\GlobalEnabled</p></td>
+<td align="left"><p>Publishing\Servers{serverId}\GlobalEnabled</p></td>
 <td align="left"><p>False</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>GlobalRefreshOnLogon</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
+<strong>Note</strong><br/><p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>GLOBALREFRESHONLOGON</p></td>
 <td align="left"><p>Triggers a global publishing refresh on logon. ( Boolean)</p></td>
 <td align="left"><p>True(enabled); False(Disabled state)</p></td>
-<td align="left"><p>Publishing\Servers\{serverId}\GlobalLogonRefresh</p></td>
+<td align="left"><p>Publishing\Servers{serverId}\GlobalLogonRefresh</p></td>
 <td align="left"><p>False</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>GlobalRefreshInterval</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
+<strong>Note</strong><br/><p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
 </div>
 <div>
- 
+
 </div></td>
-<td align="left"><p>GLOBALREFRESHINTERVAL  </p></td>
+<td align="left"><p>GLOBALREFRESHINTERVAL  </p></td>
 <td align="left"><p>Specifies the publishing refresh interval using the GlobalRefreshIntervalUnit. To disable package refresh, select 0.</p></td>
 <td align="left"><p>Integer (0-744</p></td>
-<td align="left"><p>Publishing\Servers\{serverId}\GlobalPeriodicRefreshInterval</p></td>
+<td align="left"><p>Publishing\Servers{serverId}\GlobalPeriodicRefreshInterval</p></td>
 <td align="left"><p>0</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>GlobalRefreshIntervalUnit</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
+<strong>Note</strong><br/><p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>GLOBALREFRESHINTERVALUNI</p></td>
-<td align="left"><p>Specifies the interval unit (Hour 0-23, Day 0-31). </p></td>
+<td align="left"><p>Specifies the interval unit (Hour 0-23, Day 0-31). </p></td>
 <td align="left"><p>0 for hour, 1 for day</p></td>
-<td align="left"><p>Publishing\Servers\{serverId}\GlobalPeriodicRefreshIntervalUnit</p></td>
+<td align="left"><p>Publishing\Servers{serverId}\GlobalPeriodicRefreshIntervalUnit</p></td>
 <td align="left"><p>1</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>UserRefreshEnabled</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
+<strong>Note</strong><br/><p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
 </div>
 <div>
- 
+
 </div></td>
-<td align="left"><p>USERREFRESHENABLED </p></td>
+<td align="left"><p>USERREFRESHENABLED </p></td>
 <td align="left"><p>Enables user publishing refresh (Boolean)</p></td>
 <td align="left"><p>True(enabled); False(Disabled state)</p></td>
-<td align="left"><p>Publishing\Servers\{serverId}\UserEnabled</p></td>
+<td align="left"><p>Publishing\Servers{serverId}\UserEnabled</p></td>
 <td align="left"><p>False</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>UserRefreshOnLogon</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
+<strong>Note</strong><br/><p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>USERREFRESHONLOGON</p></td>
 <td align="left"><p>Triggers a user publishing refresh onlogon. ( Boolean)</p>
 <p>Word count (with spaces): 60</p></td>
 <td align="left"><p>True(enabled); False(Disabled state)</p></td>
-<td align="left"><p>Publishing\Servers\{serverId}\UserLogonRefresh</p></td>
+<td align="left"><p>Publishing\Servers{serverId}\UserLogonRefresh</p></td>
 <td align="left"><p>False</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>UserRefreshInterval</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
+<strong>Note</strong><br/><p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
 </div>
 <div>
- 
+
 </div></td>
-<td align="left"><p>USERREFRESHINTERVAL     </p></td>
+<td align="left"><p>USERREFRESHINTERVAL     </p></td>
 <td align="left"><p>Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.</p>
 <p>Word count (with spaces): 85</p></td>
 <td align="left"><p>Integer (0-744 Hours)</p></td>
-<td align="left"><p>Publishing\Servers\{serverId}\UserPeriodicRefreshInterval</p></td>
+<td align="left"><p>Publishing\Servers{serverId}\UserPeriodicRefreshInterval</p></td>
 <td align="left"><p>0</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>UserRefreshIntervalUnit</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
+<strong>Note</strong><br/><p>This setting cannot be modified using the <strong>set-AppvclientConfiguration</strong> cmdLet. You must use the <strong>Set-AppvPublishingServer</strong> cmdlet.</p>
 </div>
 <div>
- 
+
 </div></td>
-<td align="left"><p>USERREFRESHINTERVALUNIT  </p></td>
-<td align="left"><p>Specifies the interval unit (Hour 0-23, Day 0-31). </p></td>
+<td align="left"><p>USERREFRESHINTERVALUNIT  </p></td>
+<td align="left"><p>Specifies the interval unit (Hour 0-23, Day 0-31). </p></td>
 <td align="left"><p>0 for hour, 1 for day</p></td>
-<td align="left"><p>Publishing\Servers\{serverId}\UserPeriodicRefreshIntervalUnit</p></td>
+<td align="left"><p>Publishing\Servers{serverId}\UserPeriodicRefreshIntervalUnit</p></td>
 <td align="left"><p>1</p></td>
 </tr>
 <tr class="odd">
@@ -300,7 +293,7 @@ The following table displays information about the App-V 5.0 client configuratio
 <tr class="even">
 <td align="left"><p>RoamingFileExclusions</p></td>
 <td align="left"><p>ROAMINGFILEEXCLUSIONS</p></td>
-<td align="left"><p>Specifies the file paths relative to %userprofile% that do not roam with a user's profile. Example usage:  /ROAMINGFILEEXCLUSIONS='desktop;my pictures'</p></td>
+<td align="left"><p>Specifies the file paths relative to %userprofile% that do not roam with a user&#39;s profile. Example usage:  /ROAMINGFILEEXCLUSIONS=&#39;desktop;my pictures&#39;</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
 <td align="left"><p></p></td>
@@ -308,9 +301,9 @@ The following table displays information about the App-V 5.0 client configuratio
 <tr class="odd">
 <td align="left"><p>RoamingRegistryExclusions</p></td>
 <td align="left"><p>ROAMINGREGISTRYEXCLUSIONS</p></td>
-<td align="left"><p>Specifies the registry paths that do not roam with a user profile. Example usage: /ROAMINGREGISTRYEXCLUSIONS=software\\classes;software\\clients</p></td>
+<td align="left"><p>Specifies the registry paths that do not roam with a user profile. Example usage: /ROAMINGREGISTRYEXCLUSIONS=software\classes;software\clients</p></td>
 <td align="left"><p>String</p></td>
-<td align="left"><p>Integration\RoamingReglstryExclusions</p></td>
+<td align="left"><p>Integration\RoamingRegistryExclusions</p></td>
 <td align="left"><p>Policy value not written (same as Not Configured)</p></td>
 </tr>
 <tr class="even">
@@ -334,7 +327,7 @@ The following table displays information about the App-V 5.0 client configuratio
 <td align="left"><p>Not available.</p></td>
 <td align="left"><p>A comma -delineated list of file name extensions that can be used to determine if a locally installed application can be run in the virtual environment.</p>
 <p>When shortcuts, FTAs, and other extension points are created during publishing, App-V will compare the file name extension to the list if the application that is associated with the extension point is locally installed. If the extension is located, the <strong>RunVirtual</strong> command line parameter will be added, and the application will run virtually.</p>
-<p>For more information about the <strong>RunVirtual</strong> parameter, see [Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications](running-a-locally-installed-application-inside-a-virtual-environment-with-virtualized-applications.md).</p></td>
+<p>For more information about the <strong>RunVirtual</strong> parameter, see <a href="running-a-locally-installed-application-inside-a-virtual-environment-with-virtualized-applications.md" data-raw-source="[Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications](running-a-locally-installed-application-inside-a-virtual-environment-with-virtualized-applications.md)">Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications</a>.</p></td>
 <td align="left"><p>String</p></td>
 <td align="left"><p>Integration\VirtualizableExtensions</p></td>
 <td align="left"><p>Policy value not written</p></td>
@@ -376,11 +369,10 @@ The following table displays information about the App-V 5.0 client configuratio
 <td align="left"><p>Not available.</p></td>
 <td align="left"><p>Specifies the time to initiate the client to send data to the reporting server. You must specify a valid integer between 0-23 corresponding to the hour of the day. By default the <strong>ReportingStartTime</strong> will start on the current day at 10 P.M.or 22.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>You should configure this setting to a time when computers running the App-V 5.0 client are least likely to be offline.</p>
+<strong>Note</strong><br/><p>You should configure this setting to a time when computers running the App-V 5.0 client are least likely to be offline.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>Integer (0 – 23)</p></td>
 <td align="left"><p>Reporting\ StartTime</p></td>
@@ -405,11 +397,10 @@ The following table displays information about the App-V 5.0 client configuratio
 <tr class="even">
 <td align="left"><p>EnableDynamicVirtualization</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>This setting is available only with App-V 5.0 SP2 or later.</p>
+<strong>Important</strong><br/><p>This setting is available only with App-V 5.0 SP2 or later.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>Not available.</p></td>
 <td align="left"><p>Enables supported Shell Extensions, Browser Helper Objects, and Active X controls to be virtualized and run with virtual applications.</p></td>
@@ -420,11 +411,10 @@ The following table displays information about the App-V 5.0 client configuratio
 <tr class="odd">
 <td align="left"><p>EnablePublishingRefreshUI</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>This setting is available only with App-V 5.0 SP2.</p>
+<strong>Important</strong><br/><p>This setting is available only with App-V 5.0 SP2.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>Not available.</p></td>
 <td align="left"><p>Enables the publishing refresh progress bar for the computer running the App-V 5.0 Client.</p></td>
@@ -435,11 +425,10 @@ The following table displays information about the App-V 5.0 client configuratio
 <tr class="even">
 <td align="left"><p>HideUI</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>This setting is available only with App-V 5.0 SP2.</p>
+<strong>Important</strong><br/><p>This setting is available only with App-V 5.0 SP2.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>Not available.</p></td>
 <td align="left"><p>Hides the publishing refresh progress bar.</p></td>
@@ -458,7 +447,7 @@ The following table displays information about the App-V 5.0 client configuratio
 </tbody>
 </table>
 
- 
+
 
 
 
@@ -474,9 +463,9 @@ The following table displays information about the App-V 5.0 client configuratio
 
 [How to Deploy the App-V Client](how-to-deploy-the-app-v-client-gb18030.md)
 
- 
 
- 
+
+
 
 
 

@@ -1,9 +1,11 @@
 ---
-author: shortpatti
-ms.author: pashort
+author: eavena
+ms.author: eravena
 ms.date:  10/02/2018
+ms.reviewer: 
+audience: itpromanager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Allow extended telemetry for the Books tab -->
@@ -14,10 +16,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Gather and send only basic diagnostic data. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Gather all diagnostic data. For this policy to work correctly, you must set the diagnostic data in _Settings > Diagnostics & feedback_ to **Full**. | |
+|                Group Policy                 | MDM | Registry |                                                                     Description                                                                     |                 Most restricted                  |
+|---------------------------------------------|:---:|:--------:|-----------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------:|
+| Disabled or not configured<br>**(default)** |  0  |    0     |                                                     Gather and send only basic diagnostic data.                                                     | ![Most restricted value](../images/check-gn.png) |
+|                   Enabled                   |  1  |    1     | Gather all diagnostic data. For this policy to work correctly, you must set the diagnostic data in *Settings > Diagnostics & feedback* to **Full**. |                                                  |
+
 ---
 
 ### ADMX info and settings

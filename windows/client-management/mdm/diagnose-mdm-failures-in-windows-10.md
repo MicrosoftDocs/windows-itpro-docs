@@ -2,11 +2,13 @@
 title: Diagnose MDM failures in Windows 10
 description: To help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server, you can examine the MDM logs collected from the desktop or mobile device. The following sections describe the procedures for collecting MDM logs.
 ms.assetid: 12D8263B-D839-4B19-9346-31E0CDD0CBF9
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/25/2018
 ---
 
@@ -71,7 +73,7 @@ When the PC is already enrolled in MDM, you can remotely collect logs from the P
 
 Example: Enable the Debug channel logging
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
         <Replace>
@@ -93,7 +95,7 @@ Example: Enable the Debug channel logging
 
 Example: Export the Debug logs
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -190,7 +192,7 @@ You can use the DiagnosticLog CSP to enable the ETW provider. The provider ID is
 
 Add a collector node
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -212,7 +214,7 @@ Add a collector node
 
 Add the ETW provider to the trace
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -234,7 +236,7 @@ Add the ETW provider to the trace
 
 Start collector trace logging
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -257,7 +259,7 @@ Start collector trace logging
 
 Stop collector trace logging
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
@@ -312,7 +314,7 @@ For best results, ensure that the PC or VM on which you are viewing logs matches
 
 Here's an example of how to collect current MDM device state data using the [DiagnosticLog CSP](diagnosticlog-csp.md), version 1.3, which was added in Windows 10, version 1607. You can collect the file from the device using the same FileDownload node in the CSP as you do for the etl files.
 
-``` syntax
+```xml
 <?xml version="1.0"?>
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>

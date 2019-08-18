@@ -2,12 +2,14 @@
 title: Delete an AppLocker rule (Windows 10)
 description: This topic for IT professionals describes the steps to delete an AppLocker rule.
 ms.assetid: 382b4be3-0df9-4308-89b2-dcf9df351eb5
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,8 +20,8 @@ ms.date: 08/02/2018
 # Delete an AppLocker rule
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes the steps to delete an AppLocker rule. 
 
@@ -46,10 +48,10 @@ When this procedure is performed on the local device, the AppLocker policy takes
 Use the Set-AppLockerPolicy cmdlet with the -XMLPolicy parameter, using an .XML file that contains the following contents:
 
     <AppLockerPolicy Version="1">
-      <RuleCollection Type="Exe" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
+      <RuleCollection Type="Exe" EnforcementMode="NotConfigured" />
+      <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
+      <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
+      <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
       <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
     </AppLockerPolicy>
 

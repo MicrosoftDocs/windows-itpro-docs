@@ -1,12 +1,15 @@
 ---
 title: Microsoft Application Virtualization 4.6 Service Pack 1 Privacy Statement
 description: Microsoft Application Virtualization 4.6 Service Pack 1 Privacy Statement
-author: jamiejdt
+author: eavena
 ms.assetid: e82c57ea-885d-4761-96db-4d80b1c3e1ae
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

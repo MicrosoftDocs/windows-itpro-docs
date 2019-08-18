@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4717(S): System security access was granted to an account.
@@ -96,7 +99,7 @@ You will see unique event for every user if logon user rights were granted to mu
 
 -   **Account Name** \[Type = SID\]: the SID of the security principal for which logon right was granted. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-**Access Granted: **
+**Access Granted:**
 
 -   **Access Right** \[Type = UnicodeString\]: the name of granted logon right. This event generates only for [logon rights](https://technet.microsoft.com/library/cc728212(v=ws.10).aspx), which are as follows:
 

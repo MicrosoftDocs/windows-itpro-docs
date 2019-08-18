@@ -1,12 +1,15 @@
 ---
 title: Preparing your Environment for MBAM 2.0
 description: Preparing your Environment for MBAM 2.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 5fb01da9-620e-4992-9e54-2ed3fb69e6af
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -28,7 +31,7 @@ To ensure successful installation of MBAM Clients and MBAM Server features, ensu
 **Note**  
 MBAM Setup checks that all prerequisites are met before installation starts. If all prerequisites are not met, Setup will fail.
 
- 
+ 
 
 [MBAM 2.0 Deployment Prerequisites](mbam-20-deployment-prerequisites-mbam-2.md)
 
@@ -40,7 +43,7 @@ Before MBAM can manage clients in the enterprise, you must define Group Policy f
 **Important**  
 MBAM will not work with policies for stand-alone BitLocker drive encryption. Group Policy settings must be defined for MBAM, or BitLocker encryption and enforcement will fail.
 
- 
+ 
 
 [Planning for MBAM 2.0 Group Policy Requirements](planning-for-mbam-20-group-policy-requirements-mbam-2.md)
 
@@ -58,9 +61,9 @@ The membership of Microsoft BitLocker Administration and Monitoring roles can be
 
 [MBAM 2.0 Supported Configurations](mbam-20-supported-configurations-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

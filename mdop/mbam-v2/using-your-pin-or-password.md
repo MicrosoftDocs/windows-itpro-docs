@@ -1,12 +1,15 @@
 ---
 title: Using Your PIN or Password
 description: Using Your PIN or Password
-author: jamiejdt
+author: dansimp
 ms.assetid: 7fe2aef4-d3e0-49c8-877d-7fee13dc5b7b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -26,7 +29,7 @@ The password is used to unlock drives on your computer that do not contain the o
 **Note**  
 Your Help Desk may set drives to unlock automatically. This eliminates the need to provide a PIN or password to view the information on the drives.
 
- 
+ 
 
 ## Unlocking Your Computer if You Forget Your PIN or Password
 
@@ -68,9 +71,9 @@ Before you can change the password on a BitLocker protected drive, you must unlo
 
     -   To change your password, select **Manage Your Password**. Enter your new password into both fields and select **Reset Password**.
 
- 
+ 
 
- 
+ 
 
 
 

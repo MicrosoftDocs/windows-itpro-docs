@@ -2,12 +2,14 @@
 title: Understanding AppLocker rule condition types (Windows 10)
 description: This topic for the IT professional describes the three types of AppLocker rule conditions.
 ms.assetid: c21af67f-60a1-4f7d-952c-a6f769c74729
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: mjcaparas
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,8 +20,8 @@ ms.date: 09/21/2017
 # Understanding AppLocker rule condition types
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for the IT professional describes the three types of AppLocker rule conditions.
 

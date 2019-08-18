@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Validate Active Directory prerequisites
 
@@ -43,11 +44,11 @@ Windows Hello for Business uses asymmetric keys as user credentials (rather than
 
 Sign-in to the domain controller hosting the schema master operational role using enterprise administrator equivalent credentials.
 
-1.	Open an elevated command prompt.
-2.	Type ```cd /d x:\support\adprep``` where *x* is the drive letter of the DVD or mounted ISO.
-3.	To update the schema, type ```adprep /forestprep```.
-4.	Read the Adprep Warning.  Type the letter **C** and press **Enter** to update the schema.
-5.	Close the Command Prompt and sign-out.
+1. Open an elevated command prompt.
+2. Type ```cd /d x:\support\adprep``` where *x* is the drive letter of the DVD or mounted ISO.
+3. To update the schema, type ```adprep /forestprep```.
+4. Read the Adprep Warning.  Type the letter **C** and press **Enter** to update the schema.
+5. Close the Command Prompt and sign-out.
 
 ## Create the KeyCredential Admins Security Global Group
 
@@ -55,25 +56,25 @@ The Windows Server 2016 Active Directory Federation Services (AD FS) role regist
 
 Sign-in a domain controller or management workstation with domain administrator equivalent credentials.
 
-1.	Open **Active Directory Users and Computers**.
-2.	Click **View** and click **Advance Features**.
-3.	Expand the domain node from the navigation pane.
-4.	Right-click the **Users** container. Click **New**. Click **Group**.
-5.	Type **KeyCredential Admins** in the **Group Name** text box.
-6.	Click **OK**.
+1. Open **Active Directory Users and Computers**.
+2. Click **View** and click **Advance Features**.
+3. Expand the domain node from the navigation pane.
+4. Right-click the **Users** container. Click **New**. Click **Group**.
+5. Type **KeyCredential Admins** in the **Group Name** text box.
+6. Click **OK**.
 
 ## Create the Windows Hello for Business Users Security Global Group
 
 The Windows Hello for Business Users group is used to make it easy to deploy Windows Hello for Business in phases.  You assign Group Policy and Certificate template permissions to this group to simplify the deployment by simply adding the users to the group.  This provides them the proper permissions to provision Windows Hello for Business and to enroll in the Windows Hello for Business authentication certificate.
 
-Sign-in a domain controller or management workstation with domain administrator equivalent credentials.
+Sign into a domain controller or management workstation with domain administrator equivalent credentials.
 
-1.	Open **Active Directory Users and Computers**.
-2.	Click **View** and click **Advanced Features**.
-3.	Expand the domain node from the navigation pane.
-4.	Right-click the **Users** container. Click **New**. Click **Group**.
-5.	Type **Windows Hello for Business Users** in the **Group Name** text box.
-6.	Click **OK**.
+1. Open **Active Directory Users and Computers**.
+2. Click **View** and click **Advanced Features**.
+3. Expand the domain node from the navigation pane.
+4. Right-click the **Users** container. Click **New**. Click **Group**.
+5. Type **Windows Hello for Business Users** in the **Group Name** text box.
+6. Click **OK**.
 
 
 ## Follow the Windows Hello for Business on premises certificate trust deployment guide

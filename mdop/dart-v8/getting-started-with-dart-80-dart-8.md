@@ -1,12 +1,15 @@
 ---
 title: Getting Started with DaRT 8.0
 description: Getting Started with DaRT 8.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 579d18c5-7434-4a0e-9725-fb81ca5e3c6d
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -21,7 +24,7 @@ A downloadable version of this administrator’s guide is not available. However
 
 Additional downloadable information about this product can also be found at <https://go.microsoft.com/fwlink/?LinkId=267420>.
 
- 
+ 
 
 ## Getting started with DaRT 8.0
 
@@ -56,9 +59,9 @@ DaRT 8.0 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is pa
 
 [Troubleshooting DaRT 8.0](troubleshooting-dart-80-dart-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

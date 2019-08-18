@@ -1,8 +1,11 @@
 ---
 title: About App-V 5.1
 description: About App-V 5.1
-author: jamiejdt
+author: manikadhiman
 ms.assetid: 35bc9908-d502-4a9c-873f-8ee17b6d9d74
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -52,17 +55,17 @@ See the following links for the App-V 5.1 software prerequisites and supported c
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[App-V 5.1 Prerequisites](app-v-51-prerequisites.md)</p></td>
+<td align="left"><p><a href="app-v-51-prerequisites.md" data-raw-source="[App-V 5.1 Prerequisites](app-v-51-prerequisites.md)">App-V 5.1 Prerequisites</a></p></td>
 <td align="left"><p>Prerequisite software that you must install before starting the App-V 5.1 installation</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>[App-V 5.1 Supported Configurations](app-v-51-supported-configurations.md)</p></td>
+<td align="left"><p><a href="app-v-51-supported-configurations.md" data-raw-source="[App-V 5.1 Supported Configurations](app-v-51-supported-configurations.md)">App-V 5.1 Supported Configurations</a></p></td>
 <td align="left"><p>Supported operating systems and hardware requirements for the App-V Server, Sequencer, and Client components</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 **Support for using Configuration Manager with App-V:** App-V 5.1 supports System Center 2012 R2 Configuration Manager SP1. See [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx) for information about integrating your App-V environment with Configuration Manager and Configuration Manager.
 
@@ -95,19 +98,18 @@ Review the following information before you start the upgrade:
 <li><p>App-V Client or App-V Remote Desktop Services (RDS) Client</p></li>
 </ol>
 <div class="alert">
-<strong>Note</strong>  
-<p>Prior to App-V 5.0 SP2, the Client Management User Interface (UI) was provided with the App-V Client installation. For App-V 5.0 SP2 installations (or later), you can use the Client Management UI by downloading from [Application Virtualization 5.0 Client UI Application](https://www.microsoft.com/download/details.aspx?id=41186).</p>
+<strong>Note</strong><br/><p>Prior to App-V 5.0 SP2, the Client Management User Interface (UI) was provided with the App-V Client installation. For App-V 5.0 SP2 installations (or later), you can use the Client Management UI by downloading from <a href="https://www.microsoft.com/download/details.aspx?id=41186" data-raw-source="[Application Virtualization 5.0 Client UI Application](https://www.microsoft.com/download/details.aspx?id=41186)">Application Virtualization 5.0 Client UI Application</a>.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Upgrading from App-V 4.x</p></td>
 <td align="left"><p>You must first upgrade to App-V 5.0. You cannot upgrade directly from App-V 4.x to App-V 5.1. For more information, see:</p>
 <ul>
-<li><p>“Differences between App-V 4.6 and App-V 5.0” in [About App-V 5.0](about-app-v-50.md)</p></li>
-<li><p>[Planning for Migrating from a Previous Version of App-V](planning-for-migrating-from-a-previous-version-of-app-v.md)</p></li>
+<li><p>“Differences between App-V 4.6 and App-V 5.0” in <a href="about-app-v-50.md" data-raw-source="[About App-V 5.0](about-app-v-50.md)">About App-V 5.0</a></p></li>
+<li><p><a href="planning-for-migrating-from-a-previous-version-of-app-v.md" data-raw-source="[Planning for Migrating from a Previous Version of App-V](planning-for-migrating-from-a-previous-version-of-app-v.md)">Planning for Migrating from a Previous Version of App-V</a></p></li>
 </ul>
 <p></p></td>
 </tr>
@@ -126,7 +128,7 @@ Review the following information before you start the upgrade:
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-steps-upgrd-infrastruc"></a>Steps to upgrade the App-V infrastructure
 
@@ -147,11 +149,10 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 <tr class="odd">
 <td align="left"><p>Step 1: Upgrade the App-V Server.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>If you are not using the App-V Server, skip this step and go to the next step.</p>
+<strong>Note</strong><br/><p>If you are not using the App-V Server, skip this step and go to the next step.</p>
 </div>
 <div>
- 
+
 </div></td>
 <td align="left"><p>Follow these steps:</p>
 <ol>
@@ -174,36 +175,36 @@ Complete the following steps to upgrade each component of the App-V infrastructu
 </tr>
 <tr class="even">
 <td align="left"><p>SQL scripts</p></td>
-<td align="left"><p>Follow the steps in [How to Deploy the App-V Databases by Using SQL Scripts](how-to-deploy-the-app-v-databases-by-using-sql-scripts.md).</p></td>
+<td align="left"><p>Follow the steps in <a href="how-to-deploy-the-app-v-databases-by-using-sql-scripts.md" data-raw-source="[How to Deploy the App-V Databases by Using SQL Scripts](how-to-deploy-the-app-v-databases-by-using-sql-scripts.md)">How to Deploy the App-V Databases by Using SQL Scripts</a>.</p></td>
 </tr>
 </tbody>
 </table>
-<li><p>If you are upgrading the App-V Server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section [Check registry keys after installing the App-V 5.0 SP3 Server](check-reg-key-svr.md).</p></li>
-<li><p>Follow the steps in [How to Deploy the App-V 5.1 Server](how-to-deploy-the-app-v-51-server.md)</p></li>
-<p> </p></li>
+<li><p>If you are upgrading the App-V Server from App-V 5.0 SP1 Hotfix Package 3 or later, complete the steps in section <a href="check-reg-key-svr.md" data-raw-source="[Check registry keys after installing the App-V 5.0 SP3 Server](check-reg-key-svr.md)">Check registry keys after installing the App-V 5.0 SP3 Server</a>.</p></li>
+<li><p>Follow the steps in <a href="how-to-deploy-the-app-v-51-server.md" data-raw-source="[How to Deploy the App-V 5.1 Server](how-to-deploy-the-app-v-51-server.md)">How to Deploy the App-V 5.1 Server</a></p></li>
+<p> </p></li>
 </ol></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Step 2: Upgrade the App-V Sequencer.</p></td>
-<td align="left"><p>See [How to Install the Sequencer](how-to-install-the-sequencer-beta-gb18030.md).</p></td>
+<td align="left"><p>See <a href="how-to-install-the-sequencer-beta-gb18030.md" data-raw-source="[How to Install the Sequencer](how-to-install-the-sequencer-beta-gb18030.md)">How to Install the Sequencer</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Step 3: Upgrade the App-V Client or App-V RDS Client.</p></td>
-<td align="left"><p>See [How to Deploy the App-V Client](how-to-deploy-the-app-v-client-gb18030.md).</p></td>
+<td align="left"><p>See <a href="how-to-deploy-the-app-v-client-gb18030.md" data-raw-source="[How to Deploy the App-V Client](how-to-deploy-the-app-v-client-gb18030.md)">How to Deploy the App-V Client</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### Converting packages created using a prior version of App-V
 
 Use the package converter utility to upgrade virtual application packages created using versions of App-V prior to App-V 5.0. The package converter uses PowerShell to convert packages and can help automate the process if you have many packages that require conversion.
 
-**Note**  
+**Note**  
 App-V 5.1 packages are exactly the same as App-V 5.0 packages. There has been no change in the package format between the versions and so there is no need to convert App-V 5.0 packages to App-V 5.1 packages.
 
- 
+
 
 ## <a href="" id="bkmk-whatsnew"></a>What’s New in App-V 5.1
 
@@ -246,7 +247,7 @@ The following table lists the Windows 10 support for App-V. Windows 10 is not su
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-mgmtconsole"></a>App-V Management Console Changes
 
@@ -291,7 +292,7 @@ The Management Console UI no longer requires Silverlight. The 5.1 Management Con
 </tbody>
 </table>
 
- 
+
 
 ### Console pages are now separate URLs
 
@@ -315,7 +316,7 @@ The Management Console UI no longer requires Silverlight. The 5.1 Management Con
 </tbody>
 </table>
 
- 
+
 
 ### New, separate CONNECTION GROUPS page and menu option
 
@@ -338,7 +339,7 @@ The Management Console UI no longer requires Silverlight. The 5.1 Management Con
 </tbody>
 </table>
 
- 
+
 
 ### Menu options for packages have changed
 
@@ -394,7 +395,7 @@ The Management Console UI no longer requires Silverlight. The 5.1 Management Con
 </tbody>
 </table>
 
- 
+
 
 ### Icons in left pane have new colors and text
 
@@ -414,10 +415,10 @@ You can import and export the AppxManifest.xml file. To export the manifest file
 
 After you make your changes, click **Import...** and select the file you edited. After you successfully import it back in, the manifest file is immediately updated within the package editor.
 
-**Caution**  
+**Caution**  
 When you import the file, your changes are validated against the XML schema. If the file is not valid, you will receive an error. Be aware that it is possible to import a file that is validated against the XML schema, but that might still fail to run for other reasons.
 
- 
+
 
 ### Addition of Windows 10 to operating systems list
 
@@ -516,9 +517,9 @@ App-V is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part 
 
 [Release Notes for App-V 5.1](release-notes-for-app-v-51.md)
 
- 
 
- 
+
+
 
 
 

@@ -1,12 +1,15 @@
 ---
 title: Planning for Server Security
 description: Planning for Server Security
-author: jamiejdt
+author: eavena
 ms.assetid: c7cd8227-b359-41e7-a8ae-d0d5718a76a2
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -28,7 +31,7 @@ The content directory contains all of the packages that are to be streamed to cl
 
 Keep the number of users with administrative privileges to a minimum to reduce possible threats to the data in the data store and to avoid publishing malicious applications into the infrastructure.
 
-##  Application Virtualization Security
+## Application Virtualization Security
 
 
 App-V uses several methods of communication between the various components of the infrastructure. When you plan your App-V infrastructure, securing the communications between servers can reduce the security risks that might already be present on the existing network.
@@ -68,7 +71,7 @@ Installing or configuring an App-V Management Server or Streaming Server to use 
     **Note**  
     If you use App-V in a network load balanced cluster, the certificate must be configured with *Subject Alternate Names* (SANs) to support RTSPS. For information about configuring the certification authority (CA) and creating certificates with SANs, see <https://go.microsoft.com/fwlink/?LinkId=133228> (https://go.microsoft.com/fwlink/?LinkId=133228).
 
-     
+     
 
 -   The CA issuing the certificate to the App-V server must be trusted by the client connecting to the server. Otherwise, the client terminates the connection.
 
@@ -77,7 +80,7 @@ Installing or configuring an App-V Management Server or Streaming Server to use 
     **Note**  
     For information about configuring a public key infrastructure (PKI), see <https://go.microsoft.com/fwlink/?LinkId=133229> (https://go.microsoft.com/fwlink/?LinkId=133229).
 
-     
+     
 
 ### Configuring IIS Servers with HTTPS
 
@@ -86,7 +89,7 @@ App-V might use IIS servers in certain infrastructure configurations. For more i
 **Note**  
 If you are using IIS to publish the ICO and OSD files, configure a MIME type for OSD=TXT; otherwise, IIS will refuse to serve the ICO and OSD files to clients.
 
- 
+ 
 
 ### Application-Level Security
 
@@ -112,9 +115,9 @@ For the infrastructure to operate correctly, separating the App-V Management Con
 
 [Planning for Security and Protection](planning-for-security-and-protection.md)
 
- 
+ 
 
- 
+ 
 
 
 

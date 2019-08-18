@@ -1,12 +1,15 @@
 ---
 title: Creating a Virtual PC Image for MED-V
 description: Creating a Virtual PC Image for MED-V
-author: jamiejdt
+author: dansimp
 ms.assetid: 5e02ea07-25b9-41a5-a803-d70c55eef586
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -54,98 +57,102 @@ After the Virtual PC image is created, install the MED-V workspace .msi package 
 
 2.  Double-click the MED-V workspace .msi package, and follow the installation wizard instructions.
 
-    **Note**  
+    **Note**  
     When a new MED-V version is released, and an existing Virtual PC image is updated, uninstall the existing MED-V workspace .msi package, reboot the computer, and install the new MED-V workspace .msi package.
 
-     
 
-    **Note**  
-    After the MED-V workspace .msi package is installed, other products that replace GINA cannot be installed.
 
-     
+~~~
+**Note**  
+After the MED-V workspace .msi package is installed, other products that replace GINA cannot be installed.
+~~~
+
+
 
 ## <a href="" id="bkmk-howtorunthevirtualmachineprerequisitestool"></a>How to Run the Virtual Machine Prerequisites Tool
 
 
 The virtual machine (VM) prerequisites tool is a wizard that automates several of the prerequisites.
 
-**Note**  
+**Note**  
 Although many parameters are configurable in the wizard, the properties required for the proper functioning of MED-V are not configurable.
 
- 
+
 
 **To run the virtual machine prerequisites tool**
 
 1.  After the MED-V workspace .msi package is installed, on the Windows **Start** menu, select **All Programs &gt; MED-V &gt; VM Prerequisites Tool**.
 
-    **Note**  
+    **Note**  
     The user running the virtual machine prerequisites tool must have local administrator rights and must be the only user logged in.
 
-     
 
-    The **MED-V VM Prerequisite Wizard Welcome** page appears.
 
-2.  Click **Next**.
+~~~
+The **MED-V VM Prerequisite Wizard Welcome** page appears.
+~~~
 
-3.  On the **Windows Settings** page, from the following configurable properties, select the ones to be configured:
+2. Click **Next**.
 
-    -   **Clear users’ personal history information**
+3. On the **Windows Settings** page, from the following configurable properties, select the ones to be configured:
 
-    -   **Clear local profiles temp directory**
+   -   **Clear users’ personal history information**
 
-    -   **Disable sounds on following Windows events: start, logon, logoff**
+   -   **Clear local profiles temp directory**
 
-    **Note**  
-    Do not enable Windows page saver in a group policy.
+   -   **Disable sounds on following Windows events: start, logon, logoff**
 
-     
+   **Note**  
+   Do not enable Windows page saver in a group policy.
 
-4.  Click **Next**.
 
-5.  On the **Internet Explorer Settings** page, from the following configurable properties, select the ones to be configured:
 
-    -   **Don't use auto complete features**
+4. Click **Next**.
 
-    -   **Disable reuse of windows for launching shortcuts**
+5. On the **Internet Explorer Settings** page, from the following configurable properties, select the ones to be configured:
 
-    -   **Clear browsing history**
+   -   **Don't use auto complete features**
 
-    -   **Enable tabbed browsing in Internet Explorer 7**
+   -   **Disable reuse of windows for launching shortcuts**
 
-6.  Click **Next**.
+   -   **Clear browsing history**
 
-7.  On the **Windows Services** page, from the following configurable properties, select the ones to be configured:
+   -   **Enable tabbed browsing in Internet Explorer 7**
 
-    -   **Security center service**
+6. Click **Next**.
 
-    -   **Task scheduler service**
+7. On the **Windows Services** page, from the following configurable properties, select the ones to be configured:
 
-    -   **Automatic updates service**
+   -   **Security center service**
 
-    -   **System restore service**
+   -   **Task scheduler service**
 
-    -   **Indexing service**
+   -   **Automatic updates service**
 
-    -   **Wireless Zero Configuration**
+   -   **System restore service**
 
-    -   **Fast User Switching Compatibility**
+   -   **Indexing service**
 
-8.  Click **Next**.
+   -   **Wireless Zero Configuration**
 
-9.  On the **Windows Auto Logon** page, do the following:
+   -   **Fast User Switching Compatibility**
 
-    1.  Select the **Enable Windows Auto Logon** check box.
+8. Click **Next**.
 
-    2.  Assign a **User name** and **Password**.
+9. On the **Windows Auto Logon** page, do the following:
+
+   1.  Select the **Enable Windows Auto Logon** check box.
+
+   2.  Assign a **User name** and **Password**.
 
 10. Click **Apply**, and in the confirmation box that appears, click **Yes**.
 
 11. On the **Summary** page, click **Finish** to quit the wizard
 
-**Note**  
+**Note**  
 Verify that group policies do not overwrite the mandatory settings set in the prerequisites tool.
 
- 
+
 
 ## <a href="" id="bkmk-howtoconfiguremedvvirtualmachinemanualinstallationprerequisites"></a>How to Configure MED-V Virtual Machine Manual Installation Prerequisites
 
@@ -193,10 +200,10 @@ Several of the configurations cannot be configured through the virtual machine p
 
 In a MED-V workspace, Sysprep can be configured in order to assign unique security ID (SID), particularly when multiple MED-V workspaces are run on a single computer. It is not recommended to use Sysprep to join a domain; instead, use the MED-V join domain script action as described in [How to Set Up Script Actions](how-to-set-up-script-actions.md).
 
-**Note**  
+**Note**  
 Sysprep is Microsoft's system preparation utility for the Windows operating system.
 
- 
+
 
 **To configure Sysprep in a MED-V workspace**
 
@@ -204,9 +211,9 @@ Sysprep is Microsoft's system preparation utility for the Windows operating syst
 
 2.  From the Windows installation CD, extract *deploy.cab* to the root of the system drive, or download the latest Deployment Tools update from the Microsoft Web site.
 
-    -   For Windows 2000, see [Deployment Tools update for Windows 2000](https://go.microsoft.com/fwlink/?LinkId=143001).
+    -   For Windows 2000, see [Deployment Tools update for Windows 2000](https://go.microsoft.com/fwlink/?LinkId=143001).
 
-    -   For Windows XP, see [Deployment Tools update for Windows XP](https://go.microsoft.com/fwlink/?LinkId=143000).
+    -   For Windows XP, see [Deployment Tools update for Windows XP](https://go.microsoft.com/fwlink/?LinkId=143000).
 
 3.  Run **Setup Manager** (setupmgr.exe).
 
@@ -239,9 +246,9 @@ After all the components are installed and configured, close Microsoft Virtual P
 Creating a MED-V Image
 [How to Set Up Script Actions](how-to-set-up-script-actions.md)
 
- 
 
- 
+
+
 
 
 

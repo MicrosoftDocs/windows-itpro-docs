@@ -1,12 +1,15 @@
 ---
 title: Operations Troubleshooting
 description: Operations Troubleshooting
-author: jamiejdt
+author: levinec
 ms.assetid: 948d7869-accd-44da-974f-93409234dee7
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

@@ -1,12 +1,15 @@
 ---
 title: How to Run the Crash Analyzer on an End-user Computer
 description: How to Run the Crash Analyzer on an End-user Computer
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 40af4ead-6588-4a81-8eaa-3dc00c397e1d
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -43,7 +46,7 @@ Typically, you run Microsoft Diagnostics and Recovery Toolset (DaRT) 7 Crash An
         **Note**  
         If you do not have access to the **System Properties** window, you can search for dump files on the end-user computer by using the **Search** tool in DaRT.
 
-         
+         
 
 3.  The **Crash Analyzer** scans the crash dump file and reports a probable cause of the crash. You can view more information about the crash, such as the specific crash message and description, the drivers loaded at the time of the crash, and the full output of the analysis.
 
@@ -54,9 +57,9 @@ Typically, you run Microsoft Diagnostics and Recovery Toolset (DaRT) 7 Crash An
 
 [Diagnosing System Failures with Crash Analyzer](diagnosing-system-failures-with-crash-analyzer--dart-7.md)
 
- 
+ 
 
- 
+ 
 
 
 

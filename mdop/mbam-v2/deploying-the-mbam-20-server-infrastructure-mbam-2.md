@@ -1,12 +1,15 @@
 ---
 title: Deploying the MBAM 2.0 Server Infrastructure
 description: Deploying the MBAM 2.0 Server Infrastructure
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 52e68d94-e2b4-4b06-ae55-f900ea6cc59f
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

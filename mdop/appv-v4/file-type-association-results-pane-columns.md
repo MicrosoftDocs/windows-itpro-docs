@@ -1,12 +1,15 @@
 ---
 title: File Type Association Results Pane Columns
 description: File Type Association Results Pane Columns
-author: jamiejdt
+author: dansimp
 ms.assetid: eab48e20-9c92-459d-a06b-8e20202d73f6
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ In the Application Virtualization Client Management Console, the **Results** pan
 **Note**  
 You can add or remove a column simply by right-clicking in the **Results** pane, selecting **View**, then selecting **Add/Remove Columns**.
 
- 
+ 
 
 The list can be sorted by any of the columns. Columns that contain dates and times are sorted in chronological order, not alphabetical. For columns that contain a mix of dates and times and text, dates and times are considered to come before any other text.
 
@@ -83,9 +86,9 @@ The perceived type or blank.
 
 [File Type Association Results Pane](file-type-association-results-pane.md)
 
- 
+ 
 
- 
+ 
 
 
 

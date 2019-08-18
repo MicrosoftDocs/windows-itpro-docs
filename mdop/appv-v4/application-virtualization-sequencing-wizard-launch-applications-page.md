@@ -1,12 +1,15 @@
 ---
 title: Application Virtualization Sequencing Wizard Launch Applications Page
 description: Application Virtualization Sequencing Wizard Launch Applications Page
-author: jamiejdt
+author: dansimp
 ms.assetid: 69b1d6e1-00ff-49e3-a245-a4aca225d681
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

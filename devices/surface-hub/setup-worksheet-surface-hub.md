@@ -2,13 +2,15 @@
 title: Setup worksheet (Surface Hub)
 description: When you've finished pre-setup and are ready to start first-time setup for your Microsoft Surface Hub, make sure you have all the information listed in this section.
 ms.assetid: AC6F925B-BADE-48F5-8D53-8B6FFF6EE3EB
+ms.reviewer: 
+manager: dansimp
 keywords: Setup worksheet, pre-setup, first-time setup
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: levinec
+ms.author: ellevin
 ms.topic: article
-ms.date: 07/27/2017
+ms.date: 06/20/2019
 ms.localizationpriority: medium
 ---
 

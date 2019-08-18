@@ -2,12 +2,14 @@
 title: AppLocker deployment guide (Windows 10)
 description: This topic for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies.
 ms.assetid: 38632795-be13-46b0-a7af-487a4340bea1
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -19,8 +21,8 @@ ms.date: 09/21/2017
 # AppLocker deployment guide
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies.
 

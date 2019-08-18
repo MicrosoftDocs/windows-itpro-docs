@@ -1,13 +1,16 @@
 ---
 title: Configure Delivery Optimization for Windows 10 updates (Windows 10)
+ms.reviewer: 
+manager: laurawi
 description: Delivery Optimization is a peer-to-peer distribution method in Windows 10
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: JaimeO
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -53,7 +56,9 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 | Win32 apps for Intune | 1709 |
 | SCCM Express Updates | 1709 + Configuration Manager version 1711 |
 
-[//]: # (**Network requirements**)
+<!-- ### Network requirements
+
+{can you share with me what the network requirements are?}-->
 
 
 
@@ -72,7 +77,9 @@ You can use Group Policy or an MDM solution like Intune to configure Delivery Op
 You will find the Delivery Optimization settings in Group Policy under **Configuration\Policies\Administrative Templates\Windows Components\Delivery Optimization**.
 In MDM, the same settings are under **.Vendor/MSFT/Policy/Config/DeliveryOptimization/**.
 
-[//]: # (Starting with Windows Intune version 1902, you can set many Delivery Optimization policies as a profile which you can then apply to groups of devices. For more information, see {LINK}.)
+Starting with Microsoft Intune version 1902, you can set many Delivery Optimization policies as a profile which you can then apply to groups of devices. For more information, see [Delivery Optimization settings in Microsoft Intune](https://docs.microsoft.com/intune/delivery-optimization-windows))
+
+**Starting with Windows 10, version 1903,** you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this set the value for DOGroupIdSource to its new maximum value of 5.
 
 ## Reference
 
@@ -110,8 +117,49 @@ For the payloads (optional):
 
 **Does Delivery Optimization use multicast?**: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.
 
-[//]: # (**What data does Delivery Optimization send to the service?**)
-[//]: # (??????????????? I'm not sure we can avoid sharing this, per GDPR guidelines)
+**How does Delivery Optimization deal with congestion on the router from peer-to-peer activity on the LAN?**: Starting in Windows 10, version 1903, Delivery Optimization uses LEDBAT to relieve such congestion. For more details see this post on the [Networking Blog](https://techcommunity.microsoft.com/t5/Networking-Blog/Windows-Transport-converges-on-two-Congestion-Providers-Cubic/ba-p/339819).
+
+
+## Troubleshooting
+
+This section summarizes common problems and some solutions to try.
+
+### If you don't see any bytes from peers
+
+If you don’t see any bytes coming from peers the cause might be one of the following issues:
+
+- Clients aren’t able to reach the Delivery Optimization cloud services.
+- The cloud service doesn’t see other peers on the network. 
+- Clients aren’t able to connect to peers that are offered back from the cloud service.
+
+
+### Clients aren't able to reach the Delivery Optimization cloud services.
+
+If you suspect this is the problem, try these steps:
+
+1. Start a download of an app that is larger than 50 MB from the Store (for example "Candy Crush Saga").
+2. Run `Get-DeliveryOptimizationStatus` from an elevated Powershell window and observe the DownloadMode setting. For peering to work, DownloadMode should be 1, 2, or 3.
+3. If **DownloadMode** is 99 it could indicate your device is unable to reach the Delivery Optimization cloud services. Ensure that the Delivery Optimization hostnames are allowed access: most importantly **\*.do.dsp.mp.microsoft.com**.
+
+
+
+### The cloud service doesn't see other peers on the network.
+
+If you suspect this is the problem, try these steps:
+
+1. Download the same app on two different devices on the same network, waiting 10 – 15 minutes between downloads.
+2. Run `Get-DeliveryOptimizationStatus` from an elevated Powershell window and ensure that **DownloadMode** is 1 or 2 on both devices.
+3. Run `Get-DeliveryOptimizationPerfSnap` from an elevated Powershell window on the second device. The **NumberOfPeers** field should be non-zero.
+4. If the number of peers is zero and you have **DownloadMode** = 1, ensure that both devices are using the same public IP address to reach the internet. To do this, open a browser Windows and search for “what is my IP”. You can **DownloadMode 2** (Group) and a custom GroupID (Guid) to fix this if the devices aren’t reporting the same public IP address.
+
+
+### Clients aren't able to connect to peers offered by the cloud service
+
+If you suspect this is the problem, try a Telnet test between two devices on the network to ensure they can connect using port 7680. To do this, follow these steps:
+
+1. Install Telnet by running **dism /online /Enable-Feature /FeatureName:TelnetClient** from an elevated command prompt.
+2. Run the test. For example, if you are on device with IP 192.168.8.12 and you are trying to test the connection to 192.168.9.17 run **telnet 192.168.9.17 7680** (the syntax is *telnet [destination IP] [port]*. You will either see a connection error or a blinking cursor like this /_. The blinking cursor means success.
+
 
 
 
@@ -135,7 +183,7 @@ For the payloads (optional):
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
+- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
 - [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
 - [Manage device restarts after updates](waas-restart.md)

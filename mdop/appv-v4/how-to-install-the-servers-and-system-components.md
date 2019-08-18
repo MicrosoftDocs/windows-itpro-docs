@@ -1,12 +1,15 @@
 ---
 title: How to Install the Servers and System Components
 description: How to Install the Servers and System Components
-author: jamiejdt
+author: dansimp
 ms.assetid: c6f5fef0-522a-4ef1-8585-05b292d0289b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ Before you can deliver applications to users, you must install the Microsoft App
 **Note**  
 The procedures in this section take you through a customized installation, where you pick and choose components to install on separate computers, as recommended in a production environment. However, your operating procedures might dictate a different approach, and during the installation process you might want to group components together. Regardless of where you install the components, you can install them in any order.
 
- 
+ 
 
 ## In This Section
 
@@ -51,9 +54,9 @@ Provides step-by-step procedures to remove all or selected Application Virtualiz
 
 [How to Upgrade the Servers and System Components](how-to-upgrade-the-servers-and-system-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: Log files - Windows IT Pro
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
-ms.date: 03/30/2018
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -55,7 +57,7 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.</td>
 
 ## Log entry structure
 
-A setupact.log or setuperr.log (files are located at C:\Windows) entry includes the following elements:
+A setupact.log or setuperr.log entry (files are located at C:\Windows) includes the following elements:
 
 <ol>
 <LI><B>The date and time</B> - 2016-09-08 09:20:05.
@@ -82,9 +84,9 @@ See the following example:
 
 <ol>
 <LI>Determine the Windows Setup error code. This code should be returned by Windows Setup if it is not successful with the upgrade process.
-<LI>Based on the [extend code](upgrade-error-codes.md#extend-codes) portion of the error code, determine the type and location of a [log files](#log-files) to investigate.
+<LI>Based on the <a href="upgrade-error-codes.md#extend-codes" data-raw-source="[extend code](upgrade-error-codes.md#extend-codes)">extend code</a> portion of the error code, determine the type and location of a <a href="#log-files" data-raw-source="[log files](#log-files)">log files</a> to investigate.
 <LI>Open the log file in a text editor, such as notepad.
-<LI>Using the [result code](upgrade-error-codes.md#result-codes) portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
+<LI>Using the <a href="upgrade-error-codes.md#result-codes" data-raw-source="[result code](upgrade-error-codes.md#result-codes)">result code</a> portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the &quot;abort&quot; and abandoning&quot; text strings described in step 7 below.
 <LI>To find the last occurrence of the result code:
   <OL type="a">
   <LI>Scroll to the bottom of the file and click after the last character.
@@ -140,7 +142,7 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 27:00, Info [0x0803e5] MIG    Not unmapping HKCU\Software\Classes; it is not mapped
 27:00, Info [0x0803e5] MIG    Not unmapping HKCU; it is not mapped
 27:00, Info            SP     ExecuteProgress: Elapsed events:1 of 4, Percent: 12
-27:00, Info [0x0802c6] MIG    Processing GATHER for migration unit: <System>\UpgradeFramework (CMXEAgent)
+27:00, Info [0x0802c6] MIG    Processing GATHER for migration unit: &lt;System&gt;\UpgradeFramework (CMXEAgent)
 27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
 27:08, Error           MIG    Error 1392 while gathering object C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Shell application requested abort![gle=0x00000570]
 27:08, Info            SP     ExecuteProgress: Elapsed events:2 of 4, Percent: 25

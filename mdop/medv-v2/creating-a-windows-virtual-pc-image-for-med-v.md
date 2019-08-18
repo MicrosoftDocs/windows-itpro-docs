@@ -1,12 +1,15 @@
 ---
 title: Creating a Windows Virtual PC Image for MED-V
 description: Creating a Windows Virtual PC Image for MED-V
-author: jamiejdt
+author: levinec
 ms.assetid: fd7c0b1a-0769-4e7b-ad1a-dad19cca081f
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -42,7 +45,7 @@ Alternately, if you already have a Windows Imaging (WIM) file that you want to u
 **Important**  
 MED-V only supports one virtual hard disk per virtual machine and only one partition on each virtual disk.
 
- 
+ 
 
 After you have created your virtual hard disk, install Windows XP on the image.
 
@@ -66,12 +69,12 @@ After you have installed Windows XP on your virtual machine, install any require
 **Important**  
 MED-V requires that Windows XP SP3 be running on the guest operating system.
 
- 
+ 
 
 **Warning**  
 When you install updates to Windows XP, make sure that you remain on the version of Internet Explorer in the guest that you intend to use in the MED-V workspace. For example, if you intend to run Internet Explorer 6 in the MED-V workspace, make sure that any updates that you install now do not include Internet Explorer 7 or Internet Explorer 8. In addition, we recommend that you configure the registry to prevent automatic updates from upgrading Internet Explorer.
 
- 
+ 
 
 ### Installing an Optional Performance Update
 
@@ -80,7 +83,7 @@ Although it is optional, we recommend that you install the following update for 
 **Note**  
 The update is publically available. However, you might be prompted to accept an agreement for Microsoft Services. Follow the prompts on the successive webpages to retrieve this hotfix.
 
- 
+ 
 
 ### Configuring a Group Policy Performance Update
 
@@ -102,7 +105,7 @@ Windows Virtual PC includes the Integration Components package. This provides fe
 **Important**  
 MED-V requires the installation of the Integration Components package.
 
- 
+ 
 
 When you configure the virtual image to work with MED-V, you must manually install the Integration Components package on the guest operating system to make the integration features that are available.
 
@@ -119,7 +122,7 @@ After you install the Integration Components package, you are prompted to instal
 **Important**  
 If you are not prompted to install the RemoteApp update, you must download and install it manually. For more information and instructions about how to download this update, see [Update for Windows XP SP3 to enable RemoteApp](https://go.microsoft.com/fwlink/?LinkId=195925) (https://go.microsoft.com/fwlink/?LinkId=195925).
 
- 
+ 
 
 ### Enabling Remote Desktop
 
@@ -135,7 +138,7 @@ If you want, you can use the Internet Explorer Administration Kit to customize I
 **Warning**  
 You should consider security concerns associated with customizing Internet Explorer in the MED-V workspace. For more information, see [Security Best Practices for MED-V Operations](security-best-practices-for-med-v-operations.md).
 
- 
+ 
 
 After your virtual hard disk is installed with an up-to-date guest operating system, you can install applications on the image.
 
@@ -146,9 +149,9 @@ After your virtual hard disk is installed with an up-to-date guest operating sys
 
 [Configuring a Windows Virtual PC Image for MED-V](configuring-a-windows-virtual-pc-image-for-med-v.md)
 
- 
+ 
 
- 
+ 
 
 
 
