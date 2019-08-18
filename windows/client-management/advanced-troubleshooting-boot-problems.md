@@ -184,7 +184,7 @@ After you run the command, you receive the following output:
 
 ### Method 4: Replace Bootmgr
 
-If methods 1 and 2 do not fix the problem, replace the Bootmgr file from drive C to the System Reserved partition. To do this, follow these steps:
+If methods 1, 2 and 3 do not fix the problem, replace the Bootmgr file from drive C to the System Reserved partition. To do this, follow these steps:
 
 1. At a command prompt, change the directory to the System Reserved partition.
 
