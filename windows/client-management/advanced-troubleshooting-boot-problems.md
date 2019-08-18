@@ -151,15 +151,18 @@ If you receive BCD-related errors, follow these steps:
     ```
 
 4. You might receive one of the following outputs:
-
-    - Scanning all disks for Windows installations. Please wait, since this may take a while ...
+    ```dos
+    Scanning all disks for Windows installations. Please wait, since this may take a while ...
     Successfully scanned Windows installations. Total identified Windows installations: 0
     The operation completed successfully.
+    ```
 
-    - Scanning all disks for Windows installations. Please wait, since this may take a while ...
+    ```dos
+    Scanning all disks for Windows installations. Please wait, since this may take a while ...
     Successfully scanned Windows installations. Total identified Windows installations: 1
     D:\Windows  
     Add installation to boot list? Yes/No/All:
+    ```
 
 If the output shows **windows installation: 0**, run the following commands:
 
@@ -175,10 +178,12 @@ bootrec /rebuildbcd
 
 After you run the command, you receive the following output:
 
+    ```dos
     Scanning all disks for Windows installations. Please wait, since this may take a while ...
     Successfully scanned Windows installations. Total identified Windows installations: 1
     {D}:\Windows
     Add installation to boot list? Yes/No/All: Y
+    ```
 
 5. Try restarting the system.
 
@@ -268,16 +273,16 @@ For detailed instructions, see [How to perform a clean boot in Windows](https://
 If the computer starts in Disable Driver Signature mode, start the computer in Disable Driver Signature Enforcement mode, and then follow the steps that are documented in the following article to determine which drivers or files require driver signature enforcement:
 [Troubleshooting boot problem caused by missing driver signature (x64)](https://blogs.technet.microsoft.com/askcore/2012/04/15/troubleshooting-boot-issues-due-to-missing-driver-signature-x64/)
 
->[!NOTE]
->If the computer is a domain controller, try Directory Services Restore mode (DSRM).
+> [!NOTE]
+> If the computer is a domain controller, try Directory Services Restore mode (DSRM).
 >
->This method is an important step if you encounter Stop error "0xC00002E1" or "0xC00002E2"
+> This method is an important step if you encounter Stop error "0xC00002E1" or "0xC00002E2"
 
 
 **Examples**
 
->[!WARNING]
->Serious problems might occur if you modify the registry incorrectly by using Registry Editor or by using another method. These problems might require that you reinstall the operating system. Microsoft cannot guarantee that these
+> [!WARNING]
+> Serious problems might occur if you modify the registry incorrectly by using Registry Editor or by using another method. These problems might require that you reinstall the operating system. Microsoft cannot guarantee that these
 problems can be solved. Modify the registry at your own risk.
 
 *Error code INACCESSIBLE_BOOT_DEVICE (STOP 0x7B)*
@@ -308,11 +313,11 @@ For additional troubleshooting steps, see the following articles:
 
 To fix problems that occur after you install Windows updates, check for pending updates by using these steps:
 
-1. Open a Command Prompt winodw in WinRE.
+1. Open a Command Prompt window in WinRE.
 
 2. Run the command:
     ```dos
-    dism /image:C:\ /get-packages
+    DISM /image:C:\ /get-packages
     ```
 
 3. If there are any pending updates, uninstall them by running the following commands:
@@ -320,7 +325,7 @@ To fix problems that occur after you install Windows updates, check for pending 
     DISM /image:C:\ /remove-package /packagename: name of the package
     ```
     ```dos
-    Dism /Image:C:\ /Cleanup-Image /RevertPendingActions
+    DISM /Image:C:\ /Cleanup-Image /RevertPendingActions
     ```
 
 Try to start the computer.
