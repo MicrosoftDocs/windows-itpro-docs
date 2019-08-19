@@ -159,8 +159,6 @@ You can take the following actions to increase the overall security score of you
 - Turn on Controlled Folder Access
 - Turn on Windows Defender Antivirus on compatible machines
 
-For more information, see [Windows Defender Exploit Guard](../windows-defender-exploit-guard/windows-defender.md).
-
 ### Windows Defender Application Guard (Windows Defender AG) optimization
 A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Windows Defender AG. When endpoints are configured according to the baseline, Windows Defender AG events shows on the Microsoft Defender ATP Machine timeline. 
 
