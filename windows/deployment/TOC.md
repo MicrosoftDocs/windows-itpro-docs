@@ -249,6 +249,7 @@
 ### Use Windows Update for Business
 #### [Deploy updates using Windows Update for Business](update/waas-manage-updates-wufb.md)
 #### [Configure Windows Update for Business](update/waas-configure-wufb.md)
+#### [Enforcing compliance deadlines for updates](update/wufb-compliancedeadlines.md)
 #### [Integrate Windows Update for Business with management solutions](update/waas-integrate-wufb.md)
 #### [Walkthrough: use Group Policy to configure Windows Update for Business](update/waas-wufb-group-policy.md)
 #### [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
