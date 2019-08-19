@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -21,7 +21,7 @@ Microsoft Application Virtualization 4.5 provides the following enhanced securi
 
 -   Application Virtualization now supports Transport Layer Security (TLS) using X.509 V3 certificates. Provided that a server certificate has been provisioned to the planned Application Virtualization Management or Streaming Server, the installation will default to secure, using the RTSPS protocol over port 322. Using RTSPS ensures that communication between the Application Virtualization Servers and the Application Virtualization Clients is signed and encrypted. If no certificate is assigned to the server during the Application Virtualization Server installation, the communication will be set to RTSP over port 554.
 
-    **Security Note:  **
+    **Security Note:**
 
     To help provide a secure setup of the server, you must make sure that RTSP ports are disabled even if you have all packages configured to use RTSPS.
 

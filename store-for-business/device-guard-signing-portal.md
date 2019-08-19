@@ -51,7 +51,7 @@ Catalog and policy files have required files types.
 | catalog files | .cat               |
 | policy files  | .bin               |
 
- ##  Store for Business roles and permissions
+ ## Store for Business roles and permissions
 Signing code integrity policies and access to Device Guard portal requires the Device Guard signer role.
 
 ## Device Guard signing certificates

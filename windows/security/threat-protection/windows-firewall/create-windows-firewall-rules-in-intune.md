@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/11/2019
 ---
 
 # Create Windows Firewall rules in Intune
@@ -35,29 +34,7 @@ Select Windows Defender Firewall.
 
 ## Firewall rule components
 
-Following table has description for each field.
-
-
-| Property | Type | Description |
-|----------|------|-------------|
-| DisplayName | String | The display name of the rule. Does not need to be unique. |
-| Description | String | The description of the rule. |
-| PackageFamilyName | String | The package family name of a Microsoft Store application that's affected by the firewall rule. |
-| FilePath | String | The full file path of an app that's affected by the firewall rule. |
-| FullyQualifiedBinaryName | String | The fully qualified binary name. |
-| ServiceName | String | The name used in cases when a service, not an application, is sending or receiving traffic. |
-| Protocol | Nullable Integer - default value is null which maps to All | 0-255 number representing the [IP protocol](https://www.wikipedia.org/wiki/List_of_IP_protocol_numbers) (TCP = 6, UDP = 17).  If not specified, the default is All. |
-| LocalPortRanges | String array | List of local port ranges. For example, "100-120", "200", "300-320". If not specified, the default is All. |
-| RemotePortRanges | String array | List of remote port ranges. For example, "100-120", "200", "300-320". If not specified, the default is All. |
-| LocalAddressRanges | String array | List of local addresses covered by the rule. Valid tokens include:<br>- "\*" indicates any local address. If present, this must be the only token included.<br>- A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.<br>- A valid IPv6 address.<br>- An IPv4 address range in the format of "start address - end address" with no spaces included.<br>- An IPv6 address range in the format of "start address - end address" with no spaces included.<br>Default is any address. |
-| RemoteAddressRanges | String array | List of tokens specifying the remote addresses covered by the rule.Tokens are case insensitive. Valid tokens include:<br>- "\*" indicates any remote address. If present, this must be the only token included.<br>- "Defaultgateway"<br>- "DHCP"<br>- "DNS"<br>- "WINS"<br>- "Intranet"<br>- "RmtIntranet"<br>- "Internet"<br>- "Ply2Renders"<br>- "LocalSubnet" indicates any local address on the local subnet. This token is not case-sensitive.<br>- A subnet can be specified using either the subnet mask or network prefix notation. If neither a subnet mask not a network prefix is specified, the subnet mask defaults to 255.255.255.255.<br>- A valid IPv6 address.<br>- An IPv4 address range in the format of "start address - end address" with no spaces included.<br>- An IPv6 address range in the format of "start address - end address" with no spaces included.<br>Default is any address. |
-| ProfileTypes | WindowsFirewallNetworkProfileTypes | Specifies the profiles to which the rule belongs. If not specified, the default is All. |
-| Action| StateManagementSetting | The action the rule enforces. If not specified, the default is Allowed. |
-| TrafficDirection | WindowsFirewallRuleTrafficDirectionType | The traffic direction that the rule is enabled for. If not specified, the default is Out. |
-| InterfaceTypes | WindowsFirewallRuleInterfaceTypes | The interface types of the rule. |
-| EdgeTraversal | StateManagementSetting | Indicates whether edge traversal is enabled or disabled for this rule.<br>The EdgeTraversal setting indicates that specific inbound traffic is allowed to tunnel through NATs and other edge devices using the Teredo tunneling technology. In order for this setting to work correctly, the application or service with the inbound firewall rule needs to support IPv6. The primary application of this setting allows listeners on the host to be globally addressable through a Teredo IPv6 address.<br>New rules have the EdgeTraversal property disabled by default. |
-| LocalUserAuthorizations | String | Specifies the list of authorized local users for the app container. This is a string in Security Descriptor Definition Language (SDDL) format. |
-
+The firewall rule configurations in Intune use the Windows 10 CSP for Firewall. For more information, see [Firewall CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/firewall-csp).
 
 ## Application
 Control connections for an app or program. 
@@ -123,8 +100,8 @@ Default is Any address.
 
 [Learn more](https://aka.ms/intunefirewallremotaddressrule)
 
-## Edge traversal (coming soon)
-Indicates whether edge traversal is enabled or disabled for this rule. The EdgeTraversal setting indicates that specific inbound traffic is allowed to tunnel through NATs and other edge devices using the Teredo tunneling technology. In order for this setting to work correctly, the application or service with the inbound firewall rule needs to support IPv6. The primary application of this setting allows listeners on the host to be globally addressable through a Teredo IPv6 address. New rules have the EdgeTraversal property disabled by default. 
+## Edge traversal (UI coming soon)
+Indicates whether edge traversal is enabled or disabled for this rule. The EdgeTraversal setting indicates that specific inbound traffic is allowed to tunnel through NATs and other edge devices using the Teredo tunneling technology. In order for this setting to work correctly, the application or service with the inbound firewall rule needs to support IPv6. The primary application of this setting allows listeners on the host to be globally addressable through a Teredo IPv6 address. New rules have the EdgeTraversal property disabled by default. This setting can only be configured via Intune Graph at this time. 
 
 [Learn more](https://aka.ms/intunefirewalledgetraversal)
 

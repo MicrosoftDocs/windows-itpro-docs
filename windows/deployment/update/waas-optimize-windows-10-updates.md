@@ -4,9 +4,9 @@ description: Two methods of peer-to-peer content distribution are available in W
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.audience: itproauthor: greg-lindsay
+ms.author: greg-lindsay
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
@@ -107,5 +107,5 @@ At this point, the download is complete and the update is ready to be installed.
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
+- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Manage device restarts after updates](waas-restart.md)

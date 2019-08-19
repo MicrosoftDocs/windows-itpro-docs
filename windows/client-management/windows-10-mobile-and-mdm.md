@@ -27,11 +27,11 @@ Employees increasingly depend on smartphones to complete daily work tasks, but t
 Windows 10 supports end-to-end device lifecycle management to give companies control over their devices, data, and apps. Devices can easily be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management to maintenance, monitoring, and retirement using a comprehensive mobile device management solution.
 
 **In this article**
--	[Deploy](#deploy)
--	[Configure](#configure)
--	[Apps](#apps)
--	[Manage](#manage)
--	[Retire](#retire)
+- [Deploy](#deploy)
+- [Configure](#configure)
+- [Apps](#apps)
+- [Manage](#manage)
+- [Retire](#retire)
 
 
 ## Deploy
@@ -365,18 +365,18 @@ You can define and deploy APN profiles in MDM systems that configure cellular da
 
 -   **APN name** The APN name
 -   *IP connection type* The IP connection type; set to one of the following values:
-    -	IPv4 only
-    -	IPv6 only
-    -	IPv4 and IPv6 concurrently
-    -	IPv6 with IPv4 provided by 46xlat
+    - IPv4 only
+    - IPv6 only
+    - IPv4 and IPv6 concurrently
+    - IPv6 with IPv4 provided by 46xlat
 -   **LTE attached** Whether the APN should be attached as part of an LTE Attach
 -   **APN class ID** The globally unique identifier that defines the APN class to the modem
 -   **APN authentication type** The APN authentication type; set to one of the following values:
-    -	None
-    -	Auto
-    -	PAP
-    -	CHAP
-    -	MSCHAPv2
+    - None
+    - Auto
+    - PAP
+    - CHAP
+    - MSCHAPv2
 -   **User name** The user account when users select Password Authentication Protocol (PAP), CHAP, or MSCHAPv2 authentication in APN authentication type
 -   **Password** The password for the user account specified in User name
 -   **Integrated circuit card ID** The integrated circuit card ID associated with the cellular connection profile

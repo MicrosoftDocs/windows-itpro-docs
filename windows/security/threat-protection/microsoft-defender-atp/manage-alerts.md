@@ -36,7 +36,7 @@ Selecting an alert in either of those places brings up the **Alert management pa
 You can create a new incident from the alert or link to an existing incident. 
 
 ## Assign alerts
-If an alert is no yet assigned, you can select **Assign to me** to assign the alert to yourself.
+If an alert is not yet assigned, you can select **Assign to me** to assign the alert to yourself.
 
 
 ## Suppress alerts

@@ -151,7 +151,7 @@ realTimeProtectionEnabled               : true
 2. Install the configuration file on a client machine:
 
     ```bash
-    python WindowsDefenderATPOnboarding.py
+    /usr/bin/python WindowsDefenderATPOnboarding.py
     Generating /Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist ... (You may be required to enter sudos password)
     ```
 

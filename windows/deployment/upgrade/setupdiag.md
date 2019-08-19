@@ -319,7 +319,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 ## Release notes
 
 08/08/2019 - SetupDiag v1.6.0.0 is released with 60 rules, as a standalone tool available from the Download Center.
- - Much improved log detection performance.  What used to take up to a minute, should take around 10 seconds or less.
+ - Log detection performance is improved.  What used to take up to a minute should take around 10 seconds or less.
  - Added Setup Operation and Setup Phase information to both the results log and the registry information.
      - This is the last Operation and Phase that Setup was in when the failure occurred.
  - Added detailed Setup Operation and Setup Phase information (and timing) to output log when /verbose is specified.

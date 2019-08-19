@@ -75,7 +75,7 @@ The **Sensor health** tile provides information on the individual machine’s ab
 ![Sensor health tile](images/atp-tile-sensor-health.png)
 
 There are two status indicators that provide information on the number of machines that are not reporting properly to the service:
--	**Misconfigured** – These machines might partially be reporting sensor data to the Microsoft Defender ATP service and might have configuration errors that need to be corrected.
+- **Misconfigured** – These machines might partially be reporting sensor data to the Microsoft Defender ATP service and might have configuration errors that need to be corrected.
 - **Inactive** - Machines that have stopped reporting to the Microsoft Defender ATP service for more than seven days in the past month.
 
 

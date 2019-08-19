@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Create Your AppLocker rules
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for the IT professional describes what you need to know about AppLocker rules and the methods that you can to create rules.
 
