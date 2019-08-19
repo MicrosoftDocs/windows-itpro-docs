@@ -167,6 +167,9 @@ AuthenticationServiceUrl?appru=<appid>&amp;login_hint=<User Principal Name>
 
 After authentication is complete, the auth server should return an HTML form document with a POST method action of appid identified in the query string parameter.
 
+> [!NOTE]
+> To make an application compatible with strict CSP (Content Security Policy) it is usually necessary to make some changes to HTML templates and client-side code, add the policy header, and test that everything works properly once the policy is deployed.
+
 ```
 HTTP/1.1 200 OK 
 Content-Type: text/html; charset=UTF-8
