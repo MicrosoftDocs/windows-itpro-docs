@@ -28,7 +28,8 @@ ms.topic: article
 
 ## About SetupDiag
 
-<I>Current version of SetupDiag: 1.5.0.0</I>
+<I>Current version of SetupDiag: 1.6.0.0</I>
+>Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
 
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
@@ -147,7 +148,6 @@ SetupDiag.exe /Output:C:\SetupDiag\Dumpdebug.log /LogsPath:D:\Dump
 ## Known issues
 
 1. Some rules can take a long time to process if the log files involved are large.
-2. If the failing computer is opted into the Insider program and getting regular pre-release updates, or an update is already pending on the computer when SetupDiag is run, it can encounter problems trying to open these log files. This will likely cause a failure to determine a root cause.  In this case, try gathering the log files and running SetupDiag in offline mode.
 
 
 ## Sample output
@@ -157,7 +157,7 @@ The following is an example where SetupDiag is run in offline mode.
 ```
 D:\SetupDiag>SetupDiag.exe /output:c:\setupdiag\result.xml /logspath:D:\Tests\Logs\f55be736-beed-4b9b-aedf-c133536c946e /format:xml
 
-SetupDiag v1.5.0.0
+SetupDiag v1.6.0.0
 Copyright (c) Microsoft Corporation. All rights reserved.
 
 Searching for setup logs...
@@ -318,55 +318,68 @@ Each rule name and its associated unique rule identifier are listed with a descr
 
 ## Release notes
 
+08/08/2019 - SetupDiag v1.6.0.0 is released with 60 rules, as a standalone tool available from the Download Center.
+ - Log detection performance is improved.  What used to take up to a minute should take around 10 seconds or less.
+ - Added Setup Operation and Setup Phase information to both the results log and the registry information.
+     - This is the last Operation and Phase that Setup was in when the failure occurred.
+ - Added detailed Setup Operation and Setup Phase information (and timing) to output log when /verbose is specified.
+     - Note, if the issue found is a compat block, no Setup Operation or Phase info exists yet and therefore won’t be available.
+ - Added more info to the Registry output. 
+     - Detailed ‘FailureData’ info where available.  Example: “AppName = MyBlockedApplication” or “DiskSpace = 6603” (in MB)
+         - “Key = Value” data specific to the failure found.
+     - Added ‘UpgradeStartTime’, ‘UpgradeEndTime’ and ‘UpgradeElapsedTime’
+     - Added ‘SetupDiagVersion’, ‘DateTime’ (to indicate when SetupDiag was executed on the system), ‘TargetOSVersion’, ‘HostOSVersion’ and more…
+
+
 06/19/2019 - SetupDiag v1.5.0.0 is released with 60 rules, as a standalone tool available from the Download Center.
-- All date and time outputs are updated to localized format per user request.
-- Added setup Operation and Phase information to /verbose log.
-- Added last Setup Operation and last Setup Phase information to most rules where it make sense (see new output below).
-- Performance improvement in searching setupact.logs to determine correct log to parse.
-- Added SetupDiag version number to text report (xml and json always had it).
-- Added "no match" reports for xml and json per user request.
-- Formatted Json output for easy readability.
-- Performance improvements when searching for setup logs; this should be much faster now.
-- Added 7 new rules: PlugInComplianceBlock, PreReleaseWimMountDriverFound, WinSetupBootFilterFailure, WimMountDriverIssue, DISMImageSessionFailure, FindEarlyDownlevelError, and FindSPFatalError. See the [Rules](#rules) section above for more information.
-- Diagnostic information is now output to the registry at **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**
-  - The **/AddReg** command was added to toggle registry output. This setting is off by default for offline mode, and on by default for online mode. The command has no effect for online mode and enables registry output for offline mode.
-  - This registry key is deleted as soon as SetupDiag is run a second time, and replaced with current data, so it’s always up to date.
-  - This registry key also gets deleted when a new update instance is invoked.
-  - For an example, see [Sample registry key](#sample-registry-key).
+   - All date and time outputs are updated to localized format per user request.
+   - Added setup Operation and Phase information to /verbose log.
+   - Added last Setup Operation and last Setup Phase information to most rules where it make sense (see new output below).
+   - Performance improvement in searching setupact.logs to determine correct log to parse.
+   - Added SetupDiag version number to text report (xml and json always had it).
+   - Added "no match" reports for xml and json per user request.
+   - Formatted Json output for easy readability.
+   - Performance improvements when searching for setup logs; this should be much faster now.
+   - Added 7 new rules: PlugInComplianceBlock, PreReleaseWimMountDriverFound, WinSetupBootFilterFailure, WimMountDriverIssue, DISMImageSessionFailure, FindEarlyDownlevelError, and FindSPFatalError. See the [Rules](#rules) section above for more information.
+   - Diagnostic information is now output to the registry at **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**
+       - The **/AddReg** command was added to toggle registry output. This setting is off by default for offline mode, and on by default for online mode. The command has no effect for online mode and enables registry output for offline mode.
+       - This registry key is deleted as soon as SetupDiag is run a second time, and replaced with current data, so it’s always up to date.
+       - This registry key also gets deleted when a new update instance is invoked.
+       - For an example, see [Sample registry key](#sample-registry-key).
 
 05/17/2019 - SetupDiag v1.4.1.0 is released with 53 rules, as a standalone tool available from the Download Center.
-- This release adds the ability to find and diagnose reset and recovery failures (Push Button Reset).  
+   - This release dds the ability to find and diagnose reset and recovery failures (Push Button Reset).  
 
 12/18/2018 - SetupDiag v1.4.0.0 is released with 53 rules, as a standalone tool available from the Download Center.
-- This release includes major improvements in rule processing performance: ~3x faster rule processing performance!
-  - The FindDownlevelFailure rule is up to 10x faster.
-- New rules have been added to analyze failures upgrading to Windows 10 version 1809.
-- A new help link is available for resolving servicing stack failures on the down-level OS when the rule match indicates this type of failure.
-- Removed the need to specify /Mode parameter. Now if you specify /LogsPath, it automatically assumes offline mode.
-- Some functional and output improvements were made for several rules.
+   - This release includes major improvements in rule processing performance: ~3x faster rule processing performance!
+       - The FindDownlevelFailure rule is up to 10x faster.
+   - New rules have been added to analyze failures upgrading to Windows 10 version 1809.
+   - A new help link is available for resolving servicing stack failures on the down-level OS when the rule match indicates this type of failure.
+   - Removed the need to specify /Mode parameter. Now if you specify /LogsPath, it automatically assumes offline mode.
+   - Some functional and output improvements were made for several rules.
 
 07/16/2018 - SetupDiag v1.3.1 is released with 44 rules, as a standalone tool available from the Download Center.
-- This release fixes a problem that can occur when running SetupDiag in online mode on a computer that produces a setupmem.dmp file, but does not have debugger binaries installed.
+   - This release fixes a problem that can occur when running SetupDiag in online mode on a computer that produces a setupmem.dmp file, but does not have debugger binaries installed.
 
 07/10/2018 - SetupDiag v1.30 is released with 44 rules, as a standalone tool available from the Download Center.
-- Bug fix for an over-matched plug-in rule. The rule will now correctly match only critical (setup failure) plug-in issues.
-- New feature: Ability to output logs in JSON and XML format.
-  - Use "/Format:xml" or "/Format:json" command line parameters to specify the new output format. See [sample logs](#sample-logs) at the bottom of this topic.
-  - If the “/Format:xml” or “/Format:json” parameter is omitted, the log output format will default to text.
-- New Feature: Where possible, specific instructions are now provided in rule output to repair the identified error. For example, instructions are provided to remediate known blocking issues such as uninstalling an incompatible app or freeing up space on the system drive.
-- 3 new rules added: AdvancedInstallerFailed, MigrationAbortedDueToPluginFailure, DISMAddPackageFailed.
+   - Bug fix for an over-matched plug-in rule. The rule will now correctly match only critical (setup failure) plug-in issues.
+   - New feature: Ability to output logs in JSON and XML format.
+       - Use "/Format:xml" or "/Format:json" command line parameters to specify the new output format. See [sample logs](#sample-logs) at the bottom of this topic.
+       - If the “/Format:xml” or “/Format:json” parameter is omitted, the log output format will default to text.
+   - New Feature: Where possible, specific instructions are now provided in rule output to repair the identified error. For example, instructions are provided to remediate known blocking issues such as uninstalling an incompatible app or freeing up space on the system drive.
+   - 3 new rules added: AdvancedInstallerFailed, MigrationAbortedDueToPluginFailure, DISMAddPackageFailed.
 
 05/30/2018 - SetupDiag v1.20 is released with 41 rules, as a standalone tool available from the Download Center.
-- Fixed a bug in device install failure detection in online mode.
-- Changed SetupDiag to work without an instance of setupact.log. Previously, SetupDiag required at least one setupact.log to operate.  This change enables the tool to analyze update failures that occur prior to calling SetupHost.
-- Telemetry is refactored to only send the rule name and GUID (or “NoRuleMatched” if no rule is matched) and the Setup360 ReportId. This change assures data privacy during rule processing.
+   - Fixed a bug in device install failure detection in online mode.
+   - Changed SetupDiag to work without an instance of setupact.log. Previously, SetupDiag required at least one setupact.log to operate.  This change enables the tool to analyze update failures that occur prior to calling SetupHost.
+   - Telemetry is refactored to only send the rule name and GUID (or “NoRuleMatched” if no rule is matched) and the Setup360 ReportId. This change assures data privacy during rule processing.
 
 05/02/2018 - SetupDiag v1.10 is released with 34 rules, as a standalone tool available from the Download Center.
-- A performance enhancment has been added to result in faster rule processing.
-- Rules output now includes links to support articles, if applicable.
-- SetupDiag now provides the path and name of files that it is processing.
-- You can now run SetupDiag by simply clicking on it and then examining the output log file.
-- An output log file is now always created, whether or not a rule was matched.
+   - A performance enhancment has been added to result in faster rule processing.
+   - Rules output now includes links to support articles, if applicable.
+   - SetupDiag now provides the path and name of files that it is processing.
+   - You can now run SetupDiag by simply clicking on it and then examining the output log file.
+   - An output log file is now always created, whether or not a rule was matched.
 
 03/30/2018 - SetupDiag v1.00 is released with 26 rules, as a standalone tool available from the Download Center.
 
@@ -408,7 +421,7 @@ Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-cod
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
 <SetupDiag xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://docs.microsoft.com/windows/deployment/upgrade/setupdiag">
-  <Version>1.5.0.0</Version>
+  <Version>1.6.0.0</Version>
   <ProfileName>FindSPFatalError</ProfileName>
   <ProfileGuid>A4028172-1B09-48F8-AD3B-86CDD7D55852</ProfileGuid>
   <SystemInfo>
@@ -459,7 +472,7 @@ Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" f
 
 ```
 {
-    "Version":"1.5.0.0",
+    "Version":"1.6.0.0",
     "ProfileName":"FindSPFatalError",
     "ProfileGuid":"A4028172-1B09-48F8-AD3B-86CDD7D55852",
     "SystemInfo":{
