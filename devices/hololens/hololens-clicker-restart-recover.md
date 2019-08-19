@@ -16,6 +16,8 @@ ms.localizationpriority: medium
 
 # Restart or recover the HoloLens clicker
 
+[Clicker recovery](https://support.microsoft.com/en-us/help/15555)
+
 Here are some things to try if the HoloLens clicker is unresponsive or isn’t working well.
 
 ## Restart the clicker
