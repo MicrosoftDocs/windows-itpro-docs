@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Edit an AppLocker policy
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes the steps required to modify an AppLocker policy.
 

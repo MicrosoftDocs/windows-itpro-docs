@@ -19,7 +19,7 @@ ms.date: 06/16/2016
 
 This topic lists and describes the available administrator roles that are available in Microsoft BitLocker Administration and Monitoring (MBAM) as well as the server locations where the local groups are created.
 
-##  MBAM Administrator Roles
+## MBAM Administrator Roles
 
 
 <a href="" id="---------------mbam-system-administrators"></a> **MBAM System Administrators**  

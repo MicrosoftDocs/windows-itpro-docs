@@ -372,7 +372,7 @@ Data type is string.
 
 Enroll a client certificate through SCEP.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
         <Atomic>
@@ -571,7 +571,7 @@ Enroll a client certificate through SCEP.
 
 Add a PFX certificate. The PFX certificate password is encrypted with a custom certificate fro "My" store.
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
             <Delete>

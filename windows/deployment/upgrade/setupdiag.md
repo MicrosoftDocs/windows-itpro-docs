@@ -28,7 +28,8 @@ ms.topic: article
 
 ## About SetupDiag
 
-<I>Current version of SetupDiag: 1.5.0.0</I>
+<I>Current version of SetupDiag: 1.6.0.0</I>
+>Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
 
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
@@ -147,7 +148,6 @@ SetupDiag.exe /Output:C:\SetupDiag\Dumpdebug.log /LogsPath:D:\Dump
 ## Known issues
 
 1. Some rules can take a long time to process if the log files involved are large.
-2. If the failing computer is opted into the Insider program and getting regular pre-release updates, or an update is already pending on the computer when SetupDiag is run, it can encounter problems trying to open these log files. This will likely cause a failure to determine a root cause.  In this case, try gathering the log files and running SetupDiag in offline mode.
 
 
 ## Sample output
@@ -157,7 +157,7 @@ The following is an example where SetupDiag is run in offline mode.
 ```
 D:\SetupDiag>SetupDiag.exe /output:c:\setupdiag\result.xml /logspath:D:\Tests\Logs\f55be736-beed-4b9b-aedf-c133536c946e /format:xml
 
-SetupDiag v1.5.0.0
+SetupDiag v1.6.0.0
 Copyright (c) Microsoft Corporation. All rights reserved.
 
 Searching for setup logs...
@@ -318,6 +318,19 @@ Each rule name and its associated unique rule identifier are listed with a descr
 
 ## Release notes
 
+08/08/2019 - SetupDiag v1.6.0.0 is released with 60 rules, as a standalone tool available from the Download Center.
+ - Log detection performance is improved.  What used to take up to a minute should take around 10 seconds or less.
+ - Added Setup Operation and Setup Phase information to both the results log and the registry information.
+     - This is the last Operation and Phase that Setup was in when the failure occurred.
+ - Added detailed Setup Operation and Setup Phase information (and timing) to output log when /verbose is specified.
+     - Note, if the issue found is a compat block, no Setup Operation or Phase info exists yet and therefore won’t be available.
+ - Added more info to the Registry output. 
+     - Detailed ‘FailureData’ info where available.  Example: “AppName = MyBlockedApplication” or “DiskSpace = 6603” (in MB)
+         - “Key = Value” data specific to the failure found.
+     - Added ‘UpgradeStartTime’, ‘UpgradeEndTime’ and ‘UpgradeElapsedTime’
+     - Added ‘SetupDiagVersion’, ‘DateTime’ (to indicate when SetupDiag was executed on the system), ‘TargetOSVersion’, ‘HostOSVersion’ and more…
+
+
 06/19/2019 - SetupDiag v1.5.0.0 is released with 60 rules, as a standalone tool available from the Download Center.
    - All date and time outputs are updated to localized format per user request.
    - Added setup Operation and Phase information to /verbose log.
@@ -335,7 +348,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
        - For an example, see [Sample registry key](#sample-registry-key).
 
 05/17/2019 - SetupDiag v1.4.1.0 is released with 53 rules, as a standalone tool available from the Download Center.
-   - This release adds the ability to find and diagnose reset and recovery failures (Push Button Reset).  
+   - This release dds the ability to find and diagnose reset and recovery failures (Push Button Reset).  
 
 12/18/2018 - SetupDiag v1.4.0.0 is released with 53 rules, as a standalone tool available from the Download Center.
    - This release includes major improvements in rule processing performance: ~3x faster rule processing performance!
@@ -408,7 +421,7 @@ Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-cod
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
 <SetupDiag xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://docs.microsoft.com/windows/deployment/upgrade/setupdiag">
-  <Version>1.5.0.0</Version>
+  <Version>1.6.0.0</Version>
   <ProfileName>FindSPFatalError</ProfileName>
   <ProfileGuid>A4028172-1B09-48F8-AD3B-86CDD7D55852</ProfileGuid>
   <SystemInfo>
@@ -459,7 +472,7 @@ Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" f
 
 ```
 {
-    "Version":"1.5.0.0",
+    "Version":"1.6.0.0",
     "ProfileName":"FindSPFatalError",
     "ProfileGuid":"A4028172-1B09-48F8-AD3B-86CDD7D55852",
     "SystemInfo":{

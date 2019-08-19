@@ -38,7 +38,7 @@ On the top navigation you can:
 
 ![Image of alerts queue](images/alerts-queue-list.png)
 
-##  Sort, filter, and group the alerts queue
+## Sort, filter, and group the alerts queue
 You can apply the following filters to limit the list of alerts and get a more focused view the alerts.
 
 ### Severity
