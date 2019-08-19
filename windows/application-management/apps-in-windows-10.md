@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # Understand the different apps included in Windows 10
 
->Applies to: Windows 10
+> Applies to: Windows 10
 
 The following types of apps run on Windows 10:
 - Windows apps - introduced in Windows 8, primarily installed from the Store app.
@@ -42,7 +42,6 @@ Here are the provisioned Windows apps in Windows 10 versions 1703, 1709, 1803 an
 > Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
 > ```
 
-<br>
 
 | Package name                           | App name                                                                                                           | 1703 | 1709 | 1803 | 1809 | Uninstall through UI? |
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------|:----:|:----:|:----:|:----:|:---------------------:|
@@ -90,54 +89,52 @@ Here are the provisioned Windows apps in Windows 10 versions 1703, 1709, 1803 an
 | Microsoft.ZuneVideo                    | [Movies & TV](ms-windows-store://pdp/?PFN=Microsoft.ZuneVideo_8wekyb3d8bbwe)                                       | x    | x    | x    | x    | No                    |
 
 
-
 ## Provisioned Windows apps in 1903
 
-
-| Package name                        | App name                                       | 1903  |Uninstall through UI? |
-|----------------------------------   |------------------------------------------------|:-----:|----------------------|
-| Microsoft.BingWeather                 |Microsoft.BingWeather                         |   x   |
-| Microsoft.DesktopAppInstaller         |Microsoft.DesktopAppInstaller                 |   x   |
-| Microsoft.GetHelp                     |Microsoft.GetHelp                             |   x   |
-| Microsoft.Getstarted                  | Microsoft.Getstarted                         |   x   |
-| Microsoft.HEIFImageExtension          | Microsoft.HEIFImageExtension                 |   x   |
-| Microsoft.Messaging                   | Microsoft.Messaging                          |   x   |
-| Microsoft.Microsoft3DViewer           | Microsoft.Microsoft3DViewer                  |   x   |
-| Microsoft.MicrosoftOfficeHub          | Microsoft.MicrosoftOfficeHub                 |   x   |
-| Microsoft.MicrosoftSolitaireCollection| Microsoft.MicrosoftSolitaireCollection       |   x   |
-| Microsoft.MicrosoftStickyNotes        | Microsoft.MicrosoftStickyNotes               |   x   |
-| Microsoft.MixedReality.Portal         | Microsoft.MixedReality.Portal                |   x   |
-| Microsoft.MSPaint                     | Microsoft.MSPaint                            |   x   |
-| Microsoft.Office.OneNote              | Microsoft.Office.OneNote                     |   x   |
-| Microsoft.OneConnect                  | Microsoft.OneConnect                         |   x   |
-| Microsoft.People                      | Microsoft.People                             |   x   |
-| Microsoft.Print3D                     | Microsoft.Print3D                            |   x   |
-| Microsoft.ScreenSketch                | Microsoft.ScreenSketch                       |   x   |
-| Microsoft.SkypeApp                    | Microsoft.SkypeApp                           |   x   |
-| Microsoft.StorePurchaseApp            | Microsoft.StorePurchaseApp                   |   x   |
-| Microsoft.VP9VideoExtensions          | Microsoft.VP9VideoExtensions                 |   x   |
-| Microsoft.Wallet                      | Microsoft.Wallet                             |   x   |
-| Microsoft.WebMediaExtensions          | Microsoft.WebMediaExtensions                 |   x   |
-| Microsoft.WebpImageExtension          | Microsoft.WebpImageExtension                 |   x   |
-| Microsoft.Windows.Photos              | Microsoft.Windows.Photos                     |   x   |
-| Microsoft.WindowsAlarms               | Microsoft.WindowsAlarms                      |   x   |
-| Microsoft.WindowsCalculator           | Microsoft.WindowsCalculator                  |   x   |
-| Microsoft.WindowsCamera               | Microsoft.WindowsCamera                      |   x   |
-| Microsoft.windowscommunicationsapps   | Microsoft.windowscommunicationsapps          |   x   |
-| Microsoft.WindowsFeedbackHub          | Microsoft.WindowsFeedbackHub                 |   x   |
-| Microsoft.WindowsMaps                 | Microsoft.WindowsMaps                        |   x   |
-| Microsoft.WindowsSoundRecorder        | Microsoft.WindowsSoundRecorder               |   x   |
-| Microsoft.WindowsStore                | Microsoft.WindowsStore                       |   x   |
-| Microsoft.Xbox.TCUI                   | Microsoft.Xbox.TCUI                          |   x   |
-| Microsoft.XboxApp                     | Microsoft.XboxApp                            |   x   |
-| Microsoft.XboxGameOverlay             | Microsoft.XboxGameOverlay                    |   x   |
-| Microsoft.XboxGamingOverlay           | Microsoft.XboxGamingOverlay                  |   x   |
-| Microsoft.XboxIdentityProvider        | Microsoft.XboxIdentityProvider               |   x   |
-| Microsoft.XboxSpeechToTextOverlay     | Microsoft.XboxSpeechToTextOverlay            |   x   |
-| Microsoft.YourPhone                   | Microsoft.YourPhone                          |   x   |
-| Microsoft.ZuneMusic                   | Microsoft.ZuneMusic                          |   x   |
-| Microsoft.ZuneVideo                   | Microsoft.ZuneVideo                          |   x   |
-
+| Package name                           | App name                               | 1903 | Uninstall through UI? |
+|----------------------------------------|----------------------------------------|:----:|:---------------------:|
+| Microsoft.3DBuilder                    | Microsoft.3DBuilder                    |  x   |         Yes           |
+| Microsoft.BingWeather                  | Microsoft.BingWeather                  |  x   |         Yes           |
+| Microsoft.DesktopAppInstaller          | Microsoft.DesktopAppInstaller          |  x   |   Via Settings App    |
+| Microsoft.GetHelp                      | Microsoft.GetHelp                      |  x   |          No           |
+| Microsoft.Getstarted                   | Microsoft.Getstarted                   |  x   |          No           |
+| Microsoft.HEIFImageExtension           | Microsoft.HEIFImageExtension           |  x   |          No           |
+| Microsoft.Messaging                    | Microsoft.Messaging                    |  x   |          No           |
+| Microsoft.Microsoft3DViewer            | Microsoft.Microsoft3DViewer            |  x   |          No           |
+| Microsoft.MicrosoftOfficeHub           | Microsoft.MicrosoftOfficeHub           |  x   |         Yes           |
+| Microsoft.MicrosoftSolitaireCollection | Microsoft.MicrosoftSolitaireCollection |  x   |         Yes           |
+| Microsoft.MicrosoftStickyNotes         | Microsoft.MicrosoftStickyNotes         |  x   |         Yes           |
+| Microsoft.MixedReality.Portal          | Microsoft.MixedReality.Portal          |  x   |         Yes           |
+| Microsoft.MSPaint                      | Microsoft.MSPaint                      |  x   |          No           |
+| Microsoft.Office.OneNote               | Microsoft.Office.OneNote               |  x   |         Yes           |
+| Microsoft.OneConnect                   | Microsoft.OneConnect                   |  x   |          No           |
+| Microsoft.People                       | Microsoft.People                       |  x   |          No           |
+| Microsoft.Print3D                      | Microsoft.Print3D                      |  x   |         Yes           |
+| Microsoft.ScreenSketch                 | Microsoft.ScreenSketch                 |  x   |          No           |
+| Microsoft.SkypeApp                     | Microsoft.SkypeApp                     |  x   |         Yes           |
+| Microsoft.StorePurchaseApp             | Microsoft.StorePurchaseApp             |  x   |          No           |
+| Microsoft.VP9VideoExtensions           | Microsoft.VP9VideoExtensions           |  x   |          No           |
+| Microsoft.Wallet                       | Microsoft.Wallet                       |  x   |          No           |
+| Microsoft.WebMediaExtensions           | Microsoft.WebMediaExtensions           |  x   |          No           |
+| Microsoft.WebpImageExtension           | Microsoft.WebpImageExtension           |  x   |          No           |
+| Microsoft.Windows.Photos               | Microsoft.Windows.Photos               |  x   |          No           |
+| Microsoft.WindowsAlarms                | Microsoft.WindowsAlarms                |  x   |          No           |
+| Microsoft.WindowsCalculator            | Microsoft.WindowsCalculator            |  x   |         Yes           |
+| Microsoft.WindowsCamera                | Microsoft.WindowsCamera                |  x   |          No           |
+| Microsoft.windowscommunicationsapps    | Microsoft.windowscommunicationsapps    |  x   |          No           |
+| Microsoft.WindowsFeedbackHub           | Microsoft.WindowsFeedbackHub           |  x   |         Yes           |
+| Microsoft.WindowsMaps                  | Microsoft.WindowsMaps                  |  x   |          No           |
+| Microsoft.WindowsSoundRecorder         | Microsoft.WindowsSoundRecorder         |  x   |         Yes           |
+| Microsoft.WindowsStore                 | Microsoft.WindowsStore                 |  x   |          No           |
+| Microsoft.Xbox.TCUI                    | Microsoft.Xbox.TCUI                    |  x   |          No           |
+| Microsoft.XboxApp                      | Microsoft.XboxApp                      |  x   |          No           |
+| Microsoft.XboxGameOverlay              | Microsoft.XboxGameOverlay              |  x   |          No           |
+| Microsoft.XboxGamingOverlay            | Microsoft.XboxGamingOverlay            |  x   |          No           |
+| Microsoft.XboxIdentityProvider         | Microsoft.XboxIdentityProvider         |  x   |          No           |
+| Microsoft.XboxSpeechToTextOverlay      | Microsoft.XboxSpeechToTextOverlay      |  x   |          No           |
+| Microsoft.YourPhone                    | Microsoft.YourPhone                    |  x   |          No           |
+| Microsoft.ZuneMusic                    | Microsoft.ZuneMusic                    |  x   |         Yes           |
+| Microsoft.ZuneVideo                    | Microsoft.ZuneVideo                    |  x   |         Yes           |
 
 
 > [!NOTE]
@@ -149,11 +146,10 @@ System apps are integral to the operating system. Here are the typical system ap
 
 > [!TIP]
 > You can list all system apps with this PowerShell command:
-> ```
+> ```PowerShell
 > Get-AppxPackage -PackageTypeFilter Main | ? { $_.SignatureKind -eq "System" } | Sort Name | Format-Table Name, InstallLocation
 > ```
 
-<br>
 
 | Name                             | Package Name                                | 1709 | 1803 | 1809 |Uninstall through UI? |
 |----------------------------------|---------------------------------------------|:-----:|:----:|:----:|-----------------------|
@@ -171,7 +167,7 @@ System apps are integral to the operating system. Here are the typical system ap
 |                                  | Microsoft.LockApp                           | x     | x    | x    | No                    |
 | Microsoft Edge                   | Microsoft.MicrosoftEdge                     | x     | x    | x    | No                    |
 |                                  | Microsoft.MicrosoftEdgeDevToolsClient       |       | x    | x    | No                    |
-|                                  | Microsoft.PPIProjection                     | x     | x    | x     | No                    |
+|                                  | Microsoft.PPIProjection                     | x     | x    | x    | No                    |
 |                                  | Microsoft.Win32WebViewHost                  |       | x    | x    | No                    |
 |                                  | Microsoft.Windows.Apprep.ChxApp             | x     | x    | x    | No                    |
 |                                  | Microsoft.Windows.AssignedAccessLockApp     | x     | x    | x    | No                    |
@@ -199,49 +195,50 @@ System apps are integral to the operating system. Here are the typical system ap
 
 
 ## System apps in 1903
-Location of system apps is  C:\Windows\SystemApps\
+Location of system apps is C:\Windows\SystemApps\
 
-|         Name                                 |                Full name                     |1903 | Uninstall through UI? |
-|----------------------------------------------|----------------------------------------------|:---:|:---------------------:|
-| File Picker                                  | 1527c705-839a-4832-9118-54d4Bd6a0c89         |  x  |                          
-| File Explorer                                | C5e2524a-ea46-4f67-841f-6a9465d9d515         |  x  |
-| App Resolver UX                              | E2A4F912-2574-4A75-9BB0-0D023378592B         |  x  |
-| Add Suggested Folders To Library             | F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE         |  x  |
-| InputApp                                     | InputApp                                     |  x  |
-| Microsoft.AAD.BrokerPlugin                   | Microsoft.AAD.BrokerPlugin                   |  x  |
-| Microsoft.AccountsControl                    | Microsoft.AccountsControl                    |  x  |
-| Microsoft.AsyncTextService                   | Microsoft.AsyncTextService                   |  x  |
-| Hello setup UI                               | Microsoft.BioEnrollment                      |  x  |
-| Microsoft.CredDialogHost                     | Microsoft.CredDialogHost                     |  x  |
-| Microsoft.ECApp                              | Microsoft.ECApp                              |  x  |
-| Microsoft.EdgeDevtoolsPlugin                 | Microsoft.EdgeDevtoolsPlugin                 |  x  |
-| Microsoft.LockApp                            | Microsoft.LockApp                            |  x  |
-| Microsoft.MicrosoftEdge                      | Microsoft.MicrosoftEdge                      |  x  |
-| Microsoft.MicrosoftEdgeDevToolsClient        | Microsoft.MicrosoftEdgeDevToolsClient        |  x  |
-| Microsoft.PPIProjection                      | Microsoft.PPIProjection                      |  x  |
-| Microsoft.Win32WebViewHost                   | Microsoft.Win32WebViewHost                   |  x  |
-| Microsoft.Windows.Apprep.ChxApp              | Microsoft.Windows.AppRep.ChxApp              |  x  |
-| Microsoft.Windows.AssignedAccessLockApp      | Microsoft.Windows.AssignedAccessLockApp      |  x  |
-| Microsoft.Windows.CallingShellApp            | Microsoft.Windows.CallingShellApp            |  x  |
-| Microsoft.Windows.CapturePicker              | Microsoft.Windows.CapturePicker              |  x  |
-| Microsoft.Windows.CloudExperienceHost        | Microsoft.Windows.CloudExperienceHost        |  x  |
-| Microsoft.Windows.ContentDeliveryManager     | Microsoft.Windows.ContentDeliveryManager     |  x  |
-| Microsoft.Windows.Cortana                    | Microsoft.Windows.Cortana                    |  x  |
-| Microsoft.Windows.NarratorQuickStart         | Microsoft.Windows.NarratorQuickStart         |  x  |
-| Microsoft.Windows.OOBENetworkCaptivePortal   | Microsoft.Windows.OOBENetworkCaptivePortal   |  x  |
-| Microsoft.Windows.OOBENetworkConnectionFlow  | Microsoft.Windows.OOBENetworkConnectionFlow  |  x  |
-| Microsoft.Windows.ParentalControls           | Microsoft.Windows.ParentalControls           |  x  |
-| Microsoft.Windows.PeopleExperienceHost       | Microsoft.Windows.PeopleExperienceHost       |  x  |
-| Microsoft.Windows.PinningConfirmationDialog  | Microsoft.Windows.PinningConfirmationDialog  |  x  |
-| Microsoft.Windows.SecHealthUI                | Microsoft.Windows.SecHealthUI                |  x  |
-| Microsoft.Windows.SecureAssessmentBrowser    | Microsoft.Windows.SecureAssessmentBrowser    |  x  |
-| Microsoft.Windows.ShellExperienceHost        | Microsoft.Windows.ShellExperienceHost        |  x  |
-| Microsoft.Windows.StartMenuExperienceHost    | Microsoft.Windows.StartMenuExperienceHost    |  x  |
-| Microsoft.Windows.XGpuEjectDialog            | Microsoft.Windows.XGpuEjectDialog            |  x  |
-| Microsoft.XboxGameCallableUI                 | Microsoft.XboxGameCallableUI                 |  x  |
-| Windows.CBSPreview                           | Windows.CBSPreview                           |  x  |
-| Windows.ImmersiveControlPanel                | Windows.ImmersiveControlPanel                |  x  |
-| Windows.PrintDialog                          | Windows.PrintDialog                          |  x  |
+|         Name                                |                Full name                    | 1903 | Uninstall through UI? |
+|---------------------------------------------|---------------------------------------------|:----:|:---------------------:|
+| File Picker                                 | 1527c705-839a-4832-9118-54d4Bd6a0c89        |  x   |          No           |
+| File Explorer                               | C5e2524a-ea46-4f67-841f-6a9465d9d515        |  x   |          No           |
+| App Resolver UX                             | E2A4F912-2574-4A75-9BB0-0D023378592B        |  x   |          No           |
+| Add Suggested Folders To Library            | F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE        |  x   |          No           |
+| InputApp                                    | InputApp                                    |  x   |          No           |
+| Microsoft.AAD.BrokerPlugin                  | Microsoft.AAD.BrokerPlugin                  |  x   |          No           |
+| Microsoft.AccountsControl                   | Microsoft.AccountsControl                   |  x   |          No           |
+| Microsoft.AsyncTextService                  | Microsoft.AsyncTextService                  |  x   |          No           |
+| Hello setup UI                              | Microsoft.BioEnrollment                     |  x   |          No           |
+| Microsoft.CredDialogHost                    | Microsoft.CredDialogHost                    |  x   |          No           |
+| Microsoft.ECApp                             | Microsoft.ECApp                             |  x   |          No           |
+| Microsoft.EdgeDevtoolsPlugin                | Microsoft.EdgeDevtoolsPlugin                |  x   |          No           |
+| Microsoft.LockApp                           | Microsoft.LockApp                           |  x   |          No           |
+| Microsoft.MicrosoftEdge                     | Microsoft.MicrosoftEdge                     |  x   |          No           |
+| Microsoft.MicrosoftEdgeDevToolsClient       | Microsoft.MicrosoftEdgeDevToolsClient       |  x   |          No           |
+| Microsoft.PPIProjection                     | Microsoft.PPIProjection                     |  x   |          No           |
+| Microsoft.Win32WebViewHost                  | Microsoft.Win32WebViewHost                  |  x   |          No           |
+| Microsoft.Windows.Apprep.ChxApp             | Microsoft.Windows.AppRep.ChxApp             |  x   |          No           |
+| Microsoft.Windows.AssignedAccessLockApp     | Microsoft.Windows.AssignedAccessLockApp     |  x   |          No           |
+| Microsoft.Windows.CallingShellApp           | Microsoft.Windows.CallingShellApp           |  x   |          No           |
+| Microsoft.Windows.CapturePicker             | Microsoft.Windows.CapturePicker             |  x   |          No           |
+| Microsoft.Windows.CloudExperienceHost       | Microsoft.Windows.CloudExperienceHost       |  x   |          No           |
+| Microsoft.Windows.ContentDeliveryManager    | Microsoft.Windows.ContentDeliveryManager    |  x   |          No           |
+| Microsoft.Windows.Cortana                   | Microsoft.Windows.Cortana                   |  x   |          No           |
+| Microsoft.Windows.NarratorQuickStart        | Microsoft.Windows.NarratorQuickStart        |  x   |          No           |
+| Microsoft.Windows.OOBENetworkCaptivePortal  | Microsoft.Windows.OOBENetworkCaptivePortal  |  x   |          No           |
+| Microsoft.Windows.OOBENetworkConnectionFlow | Microsoft.Windows.OOBENetworkConnectionFlow |  x   |          No           |
+| Microsoft.Windows.ParentalControls          | Microsoft.Windows.ParentalControls          |  x   |          No           |
+| Microsoft.Windows.PeopleExperienceHost      | Microsoft.Windows.PeopleExperienceHost      |  x   |          No           |
+| Microsoft.Windows.PinningConfirmationDialog | Microsoft.Windows.PinningConfirmationDialog |  x   |          No           |
+| Microsoft.Windows.SecHealthUI               | Microsoft.Windows.SecHealthUI               |  x   |          No           |
+| Microsoft.Windows.SecureAssessmentBrowser   | Microsoft.Windows.SecureAssessmentBrowser   |  x   |          No           |
+| Microsoft.Windows.ShellExperienceHost       | Microsoft.Windows.ShellExperienceHost       |  x   |          No           |
+| Microsoft.Windows.StartMenuExperienceHost   | Microsoft.Windows.StartMenuExperienceHost   |  x   |          No           |
+| Microsoft.Windows.XGpuEjectDialog           | Microsoft.Windows.XGpuEjectDialog           |  x   |          No           |
+| Microsoft.XboxGameCallableUI                | Microsoft.XboxGameCallableUI                |  x   |          No           |
+| Windows.CBSPreview                          | Windows.CBSPreview                          |  x   |          No           |
+| Windows.ImmersiveControlPanel               | Windows.ImmersiveControlPanel               |  x   |          No           |
+| Windows.PrintDialog                         | Windows.PrintDialog                         |  x   |          No           |
+
 
 > [!NOTE]
 > - The Contact Support app changed to Get Help in version 1709. Get Help is a provisioned app (instead of system app like Contact Support).
@@ -249,7 +246,6 @@ Location of system apps is  C:\Windows\SystemApps\
 ## Installed Windows apps
 
 Here are the typical installed Windows apps in Windows 10 versions 1709, 1803, and 1809.
-
 
 |         Name          |                Full name                 | 1709 | 1803 | 1809 | Uninstall through UI? |
 |-----------------------|------------------------------------------|:----:|:----:|:----:|:---------------------:|
