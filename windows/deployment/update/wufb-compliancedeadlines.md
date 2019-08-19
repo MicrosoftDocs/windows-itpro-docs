@@ -19,8 +19,8 @@ Deploying feature or quality updates for many organizations is only part of the 
 
 The compliance options have changed with the release of Windows 10, version 1903:
 
-- Starting with Windows 10, version 1903
-- Prior to Windows 10, version 1903
+- [Starting with Windows 10, version 1903](#starting-with-windows-10-version-1903)
+- [Prior to Windows 10, version 1903](#prior-to-windows-10-version-1903)
 
 
 ## Starting with Windows 10, version 1903
@@ -114,13 +114,13 @@ Specify the number of days before pending restart will automatically be executed
 Specify the number of days before pending restart will automatically be executed outside of active hours: 3 | State: Enabled 
 Specify the number of days before pending restart will automatically be executed outside of active hours: 4|
 
-### Controlling notification experience for deadline 
+#### Controlling notification experience for deadline 
 
 |Policy| Location|Suggested Configuration |
 |-|-|-|
 |Configure Auto-restart warning notification schedule for updates|GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure auto-restart warning notifications schedule for updates	|State: Enabled <br>**Reminder** (hours): 2<br>**Warning** (minutes): 60 |
 
-### Notification experience for deadline
+#### Notification experience for deadline
 
 Notification users get for a quality update deadline:
 ![The notification users get for an impending quality update deadline](images/wufb-quality-notification.png)
@@ -128,34 +128,34 @@ Notification users get for a quality update deadline:
 Notification users get for a feature update deadline:
 ![The notification users get for an impending feature update deadline](images/wufb-feature-notification.png)
 
-## Deadline with user engagement 
+### Deadline with user engagement 
 
 This flow provides the end user with prompts to select a time to restart the device before the deadline is reached. If the device is unable to restart at the time specified by the user or the time selected is outside the deadline, the device will restart the next time it is active. 
 
-### End-user experience
+#### End-user experience
 
 Before the deadline the device will be in two states: auto-restart period and engaged-restart period. During the auto-restart period the device will silently try to restart outside of active hours. If the device can't find an idle moment to restart, then the device will go into engaged-restart. The end user, at this point, can select a time that they would like the device to try to restart. Both phases happen before the deadline; once that deadline has passed then the device will restart at the next available time. 
 
-### Policy overview
+#### Policy overview
 
 |Policy| Description |
 |-|-|
 |Specify engaged restart transition and notification schedule for updates|Governs how the user will be impacted by the pending restart. Transition days, first starts out in Auto-Restart where the device will find an idle moment to restart the device. After 2 days engaged restart will commence and the user will be able to choose a time|
 |Configure Auto-restart required notification for updates|Governs the notifications during the Auto-Restart period. During Active hours, the user will be notified that the device is trying to restart. They will have the option to confirm or dismiss the notification|
 
-### Suggested configuration 
+#### Suggested configuration 
 
 |Policy| Location|	3-day compliance|  	5-day compliance|	7-day compliance |
 |-|-|-|-|-|
 |Specify engaged restart transition and notification schedule for updates|GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify Engaged restart transition and notification schedule for updates|State: Enabled<br>**Transition** (Days): 2<br>**Snooze** (Days): 2<br>**Deadline** (Days): 3|State: Enabled<br>**Transition** (Days): 2<br>**Snooze** (Days): 2<br>**Deadline** (Days): 4|State: Enabled<br>**Transition** (Days): 2<br>**Snooze** (Days): 2<br>**Deadline** (Days): 5|
 
-### Controlling notification experience for engaged deadline 
+#### Controlling notification experience for engaged deadline 
 
 |Policy| Location	|Suggested Configuration 
 |-|-|-|
 |Configure Auto-restart required notification for updates	|GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Auto-restart required notification for updates|State: Enabled <br>**Method**: 2- User|
 
-### Notification experience for engaged deadlines
+#### Notification experience for engaged deadlines
 
 Notification users get for quality update engaged deadline:
 
