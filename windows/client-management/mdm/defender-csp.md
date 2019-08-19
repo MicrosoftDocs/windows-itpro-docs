@@ -215,7 +215,7 @@ Supported product status values:
 
 Example:
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
   <SyncBody>
     <Get>
@@ -224,7 +224,7 @@ Example:
           <Target>
             <LocURI>./Vendor/MSFT/Defender/Health/ProductStatus</LocURI>
           </Target>
-        </Item>     
+        </Item>
     </Get>
     <Final/>
   </SyncBody>

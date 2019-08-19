@@ -45,7 +45,7 @@ If you're having trouble deciding whether Microsoft Edge is right for your organ
 
 
 ## Configure the Enterprise Mode Site List
-[Available policy options](includes/configure-enterprise-mode-site-list-include.md)
+[!INCLUDE [Available policy options](includes/configure-enterprise-mode-site-list-include.md)]
 
 
 ## Related topics

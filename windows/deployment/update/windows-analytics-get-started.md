@@ -78,7 +78,7 @@ To enable data sharing, configure your proxy server to whitelist the following e
 >[!NOTE]
 >Microsoft has a strong commitment to providing the tools and resources that put you in control of your privacy. As a result, Microsoft doesn't collect the following data from devices located in European countries (EEA and Switzerland):
 >- Windows diagnostic data from Windows 8.1 devices
->- App usage data for Windows 7 devices
+>- App usage data and [Internet Explorer site discovery](../upgrade/upgrade-readiness-additional-insights.md#site-discovery) features for Windows 7 devices
 
 
 

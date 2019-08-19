@@ -278,26 +278,25 @@ You can reset the recovery password in two ways:
 
 1.  Remove the previous recovery password
 
-    ``` syntax
+    ```powershell
     Manage-bde –protectors –delete C: –type RecoveryPassword
     ```
 
 2.  Add the new recovery password
 
-    ``` syntax
+    ```powershell
     Manage-bde –protectors –add C: -RecoveryPassword
-
     ```
 
 3.  Get the ID of the new recovery password. From the screen copy the ID of the recovery password.
 
-    ``` syntax
+    ```powershell
     Manage-bde –protectors –get C: -Type RecoveryPassword
-
     ```
+
 4.  Backup the new recovery password to AD DS
 
-    ``` syntax
+    ```powershell
     Manage-bde –protectors –adbackup C: -id {EXAMPLE6-5507-4924-AA9E-AFB2EB003692}
     ```
     >**Warning:**  You must include the braces in the ID string.
@@ -315,7 +314,7 @@ You can reset the recovery password in two ways:
  
 You can use the following sample script to create a VBScript file to reset the recovery passwords.
 
-``` syntax
+```vb
 ' Target drive letter
 strDriveLetter = "c:"
 ' Target computer name
@@ -404,7 +403,7 @@ The following sample script exports all previously-saved key packages from AD D
 
 You can use the following sample script to create a VBScript file to retrieve the BitLocker key package from AD DS.
 
-``` syntax
+```vb
 ' --------------------------------------------------------------------------------
 ' Usage
 ' --------------------------------------------------------------------------------
@@ -551,7 +550,7 @@ The following sample script exports a new key package from an unlocked, encrypte
 
     **cscript GetBitLockerKeyPackage.vbs  -?**
 
-``` syntax
+```vb
 ' --------------------------------------------------------------------------------
 ' Usage
 ' --------------------------------------------------------------------------------

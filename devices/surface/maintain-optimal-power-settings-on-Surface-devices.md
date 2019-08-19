@@ -59,14 +59,14 @@ instant on/instant off functionality typical of smartphones. S0ix, also
 known as Deepest Runtime Idle Platform State (DRIPS), is the default
 power mode for Surface devices. Modern standby has two modes:
 
-  - **Connected standby.** The default mode for up-to-the minute
-    delivery of emails, messaging, and cloud-synced data, connected
-    standby keeps Wi-Fi on and maintains network connectivity.
+- **Connected standby.** The default mode for up-to-the minute
+  delivery of emails, messaging, and cloud-synced data, connected
+  standby keeps Wi-Fi on and maintains network connectivity.
 
-  - **Disconnected standby.** An optional mode for extended battery
-    life, disconnected standby delivers the same instant-on experience
-    and saves power by turning off Wi-Fi, Bluetooth, and related network
-    connectivity.
+- **Disconnected standby.** An optional mode for extended battery
+  life, disconnected standby delivers the same instant-on experience
+  and saves power by turning off Wi-Fi, Bluetooth, and related network
+  connectivity.
 
 To learn more about modern standby, refer to the [Microsoft Hardware Dev
 Center](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources).
@@ -76,13 +76,13 @@ Center](https://docs.microsoft.com/windows-hardware/design/device-experiences/mo
 Surface integrates the following features designed to help users
 optimize the power management experience:
 
-  - [Singular power plan](#singular-power-plan)
+- [Singular power plan](#singular-power-plan)
 
-  - [Simplified power settings user
-    interface](#simplified-power-settings-user-interface)
+- [Simplified power settings user
+  interface](#simplified-power-settings-user-interface)
 
-  - [Windows performance power
-    slider](#windows-performance-power-slider)
+- [Windows performance power
+  slider](#windows-performance-power-slider)
 
 ### Singular power plan
 

@@ -17,14 +17,6 @@ ms.date: 07/25/2019
 
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
 
-> **Note**  
-> When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
->
-> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
->
-> Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
-
-
 The following diagram shows the AppLocker configuration service provider in tree format.
 
 ![applocker csp](images/provisioning-csp-applocker.png)
@@ -39,6 +31,9 @@ Defines restrictions for applications.
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
 >
 > In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
+>
+> Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
+
 
 Additional information:
 
@@ -156,22 +151,8 @@ Each of the previous nodes contains one or more of the following leaf nodes:
 <tr class="odd">
 <td><p><strong>Policy</strong></p></td>
 <td><p>Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.</p>
-<p>Policy nodes are a Base64-encoded blob of the binary policy representation. The binary policy may be signed or unsigned.</p>
-<p>For CodeIntegrity/Policy, you can use the <a href="https://go.microsoft.com/fwlink/p/?LinkId=724364" data-raw-source="[certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364)">certutil -encode</a> command line tool to encode the data to base-64.</p>
-<p>Here is a sample certutil invocation:</p>
-
-```
-certutil -encode WinSiPolicy.p7b WinSiPolicy.cer
-```
-
-<p>An alternative to using certutil would be to use the following PowerShell invocation:</p>
-
-```
-[Convert]::ToBase64String($(Get-Content -Encoding Byte -ReadCount 0 -Path <bin file>))
-```
-
-<p>If you are using hybrid MDM management with System Center Configuration Manager or using Intune, ensure that you are using Base64 as the Data type when using Custom OMA-URI functionality to apply the Code Integrity policy.</p>
-<p>Data type is string. Supported operations are Get, Add, Delete, and Replace.</p></td>
+<p>For nodes, other than CodeIntegrity, policy leaf data type is string. Supported operations are Get, Add, Delete, and Replace.</p>
+<p>For CodeIntegrity/Policy, data type is Base64. Supported operations are Get, Add, Delete, and Replace.</td>
 </tr>
 <tr class="even">
 <td><p><strong>EnforcementMode</strong></p></td>
@@ -186,6 +167,8 @@ certutil -encode WinSiPolicy.p7b WinSiPolicy.cer
 </tbody>
 </table>
 
+> [!NOTE]
+> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool) and added to the Applocker-CSP.
 
 
 ## <a href="" id="productname"></a>Find publisher and product name of apps
@@ -375,7 +358,8 @@ The product name is first part of the PackageFullName followed by the version nu
 
 The following list shows the apps that may be included in the inbox.
 
-> **Note**  This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
+> [!NOTE]
+> This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
 
 
 
@@ -842,7 +826,7 @@ The following list shows the apps that may be included in the inbox.
 
 The following example disables the calendar application.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
         <Add>
@@ -866,7 +850,7 @@ The following example disables the calendar application.
 
 The following example blocks the usage of the map application.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Add>
@@ -1406,7 +1390,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
 ## Example for Windows 10 Holographic for Business
 The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inboxappsandcomponents) to enable to enable a working device, as well as Settings.
 
-``` syntax
+```xml
 <RuleCollection Type="Appx" EnforcementMode="Enabled">
     <FilePublisherRule Id="96B82A15-F841-499a-B674-963DC647762F"
                      Name="Whitelist BackgroundTaskHost"

@@ -147,7 +147,7 @@ To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 
 
 ### On-premises Deployments
 
-** Requirements**
+**Requirements**
 * Active Directory
 * On-premises Windows Hello for Business deployment
 * Reset from settings - Windows 10, version 1703, Professional
@@ -260,7 +260,7 @@ Users appreciate convenience of biometrics and administrators value the security
 ![WHFB Certificate GP Setting](images/rdpbio/rdpbiopolicysetting.png)
 
 > [!IMPORTANT]
-> The remote desktop with biometric feature does not work with [Dual Enrollment](#dual-enrollment) feature or scenarios where the user provides alternative credentials.  Microsoft continues to investigate supporting the feature.\
+> The remote desktop with biometric feature does not work with [Dual Enrollment](#dual-enrollment) feature or scenarios where the user provides alternative credentials.  Microsoft continues to investigate supporting the feature.
 
 ## Related topics
 

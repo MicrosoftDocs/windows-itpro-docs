@@ -73,7 +73,7 @@ When the PC is already enrolled in MDM, you can remotely collect logs from the P
 
 Example: Enable the Debug channel logging
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
         <Replace>

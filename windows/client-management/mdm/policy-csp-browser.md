@@ -629,9 +629,9 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
--	Blank (default) - Do not send tracking information but let users choose to send tracking information to sites they visit.
--	0 - Never send tracking information.
--	1 - Send tracking information.
+- Blank (default) - Do not send tracking information but let users choose to send tracking information to sites they visit.
+- 0 - Never send tracking information.
+- 1 - Send tracking information.
 
 Most restricted value: 1
 <!--/SupportedValues-->

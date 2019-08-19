@@ -206,7 +206,7 @@ This command returns the volumes on the target, current encryption status and vo
 
 For example, suppose that you want to enable BitLocker on a computer without a TPM chip. To properly enable BitLocker for the operating system volume, you will need to use a USB flash drive as a startup key to boot (in this example, the drive letter E). You would first create the startup key needed for BitLocker using the –protectors option and save it to the USB drive on E: and then begin the encryption process. You will need to reboot the computer when prompted to complete the encryption process.
 
-``` syntax
+```powershell
 manage-bde –protectors -add C: -startupkey E:
 manage-bde -on C:
 ```
@@ -237,7 +237,7 @@ Data volumes use the same syntax for encryption as operating system volumes but 
 
 A common protector for a data volume is the password protector. In the example below, we add a password protector to the volume and turn BitLocker on.
 
-``` syntax
+```powershell
 manage-bde -protectors -add -pw C:
 manage-bde -on C:
 ```
@@ -382,13 +382,13 @@ Occasionally, all protectors may not be shown when using <strong>Get-BitLockerVo
 
 If you wanted to remove the existing protectors prior to provisioning BitLocker on the volume, you can utilize the `Remove-BitLockerKeyProtector` cmdlet. Accomplishing this requires the GUID associated with the protector to be removed.
 A simple script can pipe the values of each **Get-BitLockerVolume** return out to another variable as seen below:
-``` syntax
+```powershell
 $vol = Get-BitLockerVolume
 $keyprotectors = $vol.KeyProtector
 ```
 Using this, we can display the information in the **$keyprotectors** variable to determine the GUID for each protector.
 Using this information, we can then remove the key protector for a specific volume using the command:
-``` syntax
+```powershell
 Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
 ```
 > **Note:**  The BitLocker cmdlet requires the key protector GUID enclosed in quotation marks to execute. Ensure the entire GUID, with braces, is included in the command.
@@ -398,19 +398,19 @@ Remove-BitLockerKeyProtector <volume>: -KeyProtectorID "{GUID}"
 Using the BitLocker Windows PowerShell cmdlets is similar to working with the manage-bde tool for encrypting operating system volumes. Windows PowerShell offers users a lot of flexibility. For example, users can add the desired protector as part command for encrypting the volume. Below are examples of common user scenarios and steps to accomplish them using the BitLocker cmdlets for Windows PowerShell.
 To enable BitLocker with just the TPM protector. This can be done using the command:
 
-``` syntax
+```powershell
 Enable-BitLocker C:
 ```
 The example below adds one additional protector, the StartupKey protectors, and chooses to skip the BitLocker hardware test. In this example, encryption starts immediately without the need for a reboot.
 
-``` syntax
+```powershell
 Enable-BitLocker C: -StartupKeyProtector -StartupKeyPath <path> -SkipHardwareTest
 ```
 ### Data volume
 
 Data volume encryption using Windows PowerShell is the same as for operating system volumes. You should add the desired protectors prior to encrypting the volume. The following example adds a password protector to the E: volume using the variable $pw as the password. The $pw variable is held as a SecureString value to store the user defined password. Last, encryption begins.
 
-``` syntax
+```powershell
 $pw = Read-Host -AsSecureString
 <user inputs password>
 Enable-BitLockerKeyProtector E: -PasswordProtector -Password $pw
@@ -423,12 +423,12 @@ The ADAccountOrGroup protector is an Active Directory SID-based protector. This 
  
 To add an ADAccountOrGroup protector to a volume requires either the actual domain SID or the group name preceded by the domain and a backslash. In the example below, the CONTOSO\\Administrator account is added as a protector to the data volume G.
 
-``` syntax
+```powershell
 Enable-BitLocker G: -AdAccountOrGroupProtector -AdAccountOrGroup CONTOSO\Administrator
 ```
 For users who wish to use the SID for the account or group, the first step is to determine the SID associated with the account. To get the specific SID for a user account in Windows PowerShell, use the following command:
 
-``` syntax
+```powershell
 get-aduser -filter {samaccountname -eq "administrator"}
 ```
 > **Note:**  Use of this command requires the RSAT-AD-PowerShell feature.
@@ -437,7 +437,7 @@ get-aduser -filter {samaccountname -eq "administrator"}
  
 In the example below, the user wishes to add a domain SID based protector to the previously encrypted operating system volume. The user knows the SID for the user account or group they wish to add and uses the following command:
 
-``` syntax
+```powershell
 Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup "<SID>"
 ```
 > **Note:**  Active Directory-based protectors are normally used to unlock Failover Cluster enabled volumes.
@@ -469,7 +469,7 @@ Administrators who prefer a command line interface can utilize manage-bde to che
 
 To check the status of a volume using manage-bde, use the following command:
 
-``` syntax
+```powershell
 manage-bde -status <volume>
 ```
 > **Note:**  If no volume letter is associated with the -status command, all volumes on the computer display their status.
@@ -480,7 +480,7 @@ Windows PowerShell commands offer another way to query BitLocker status for volu
 
 Using the Get-BitLockerVolume cmdlet, each volume on the system will display its current BitLocker status. To get information that is more detailed on a specific volume, use the following command:
 
-``` syntax
+```powershell
 Get-BitLockerVolume <volume> -Verbose | fl
 ```
 This command will display information about the encryption method, volume type, key protectors, etc.
@@ -506,12 +506,12 @@ Once decryption is complete, the drive will update its status in the control pan
 
 Decrypting volumes using manage-bde is very straightforward. Decryption with manage-bde offers the advantage of not requiring user confirmation to start the process. Manage-bde uses the -off command to start the decryption process. A sample command for decryption is:
 
-``` syntax
+```powershell
 manage-bde -off C:
 ```
 This command disables protectors while it decrypts the volume and removes all protectors when decryption is complete. If a user wishes to check the status of the decryption, they can use the following command:
 
-``` syntax
+```powershell
 manage-bde -status C:
 ```
 ### Decrypting volumes using the BitLocker Windows PowerShell cmdlets
@@ -520,12 +520,12 @@ Decryption with Windows PowerShell cmdlets is straightforward, similar to manage
 
 Using the Disable-BitLocker command, they can remove all protectors and encryption at the same time without the need for additional commands. An example of this command is:
 
-``` syntax
+```powershell
 Disable-BitLocker
 ```
 If a user did not want to input each mount point individually, using the `-MountPoint` parameter in an array can sequence the same command into one line without requiring additional user input. An example command is:
 
-``` syntax
+```powershell
 Disable-BitLocker -MountPoint E:,F:,G:
 ```
 ## See also

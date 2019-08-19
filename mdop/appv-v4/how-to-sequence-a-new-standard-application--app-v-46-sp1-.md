@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -69,13 +69,13 @@ Click **Next**.
 
 11. On the **Customize** page, if you are finished installing and configuring the virtual application, select **Stop now** and skip to step 15 of this procedure. If you want to customize any of the items in the following list, select **Customize**.
 
-   -   Edit the file type associations and the icons associated with an application.
+    -   Edit the file type associations and the icons associated with an application.
 
-   -   Prepare the virtual package for streaming. Streaming improves the experience when the virtual application package is run on target computers.
+    -   Prepare the virtual package for streaming. Streaming improves the experience when the virtual application package is run on target computers.
 
-   -   Specify the operating systems that can run this package.
+    -   Specify the operating systems that can run this package.
 
-   Click **Next**.
+    Click **Next**.
 
 12. On the **Edit Shortcuts** page, you can optionally configure the file type associations (FTA) and shortcut locations that will be associated with the various applications in the package. To create a new FTA, in the left pane, select and expand the application you want to customize, and then click **Add**. In the **Add File Type Association** dialog box, provide the necessary information for the new FTA. To review the shortcut information associated with an application, under the application, select **Shortcuts**, and in the **Location** pane, you can edit the icon file information. To edit an existing FTA, click **Edit**. To remove an FTA, select the FTA, and then click **Remove**. Click **Next**.
 

@@ -80,21 +80,21 @@ Important tasks, such as controlling product settings and triggering on-demand s
 
 |Group        |Scenario                                   |Command                                                                |
 |-------------|-------------------------------------------|-----------------------------------------------------------------------|
-|Configuration|Turn on/off real-time protection           |`mdatp --config rtp [true/false]`                                      |
-|Configuration|Turn on/off cloud protection               |`mdatp --config cloud [true/false]`                                    |
+|Configuration|Turn on/off real-time protection           |`mdatp --config realTimeProtectionEnabled [true/false]`                |
+|Configuration|Turn on/off cloud protection               |`mdatp --config cloudEnabled [true/false]`                             |
 |Configuration|Turn on/off product diagnostics            |`mdatp --config diagnostic [true/false]`                               |
-|Configuration|Turn on/off automatic sample submission    |`mdatp --config sample-submission [true/false]`                        |
+|Configuration|Turn on/off automatic sample submission    |`mdatp --config cloudAutomaticSampleSubmission [true/false]`           |
 |Configuration|Turn on PUA protection                     |`mdatp --threat --type-handling potentially_unwanted_application block`|
 |Configuration|Turn off PUA protection                    |`mdatp --threat --type-handling potentially_unwanted_application off`  |
 |Configuration|Turn on audit mode for PUA protection      |`mdatp --threat --type-handling potentially_unwanted_application audit`|
 |Diagnostics  |Change the log level                       |`mdatp --log-level [error/warning/info/verbose]`                       |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic --create`                                          |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic`                                                   |
 |Health       |Check the product's health                 |`mdatp --health`                                                       |
 |Protection   |Scan a path                                |`mdatp --scan --path [path]`                                           |
 |Protection   |Do a quick scan                            |`mdatp --scan --quick`                                                 |
 |Protection   |Do a full scan                             |`mdatp --scan --full`                                                  |
 |Protection   |Cancel an ongoing on-demand scan           |`mdatp --scan --cancel`                                                |
-|Protection   |Request a security intelligence update                |`mdatp --definition-update`                                            |
+|Protection   |Request a security intelligence update     |`mdatp --definition-update`                                            |
 
 ## Microsoft Defender ATP portal information
 

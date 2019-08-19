@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # How AppLocker works
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for the IT professional provides links to topics about AppLocker architecture and components, processes and interactions, rules and policies.
 

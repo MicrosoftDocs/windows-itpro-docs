@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # AppLocker settings
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for the IT professional lists the settings used by AppLocker.
 

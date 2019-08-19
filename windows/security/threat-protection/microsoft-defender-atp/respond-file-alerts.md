@@ -63,7 +63,7 @@ This action takes effect on machines with Windows 10, version 1703 or later, whe
 1. Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
 
     - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
-    - **Search box** - select File from the drop–down menu and enter the file name
+    - **Search box** - select **File** from the drop–down menu and enter the file name
 
 2. Go to the top bar and select **Stop and Quarantine File**.
 
@@ -98,7 +98,7 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 
 1. Open an elevated command–line prompt on the machine:
 
-    a. Go to **Start** and type cmd.
+    a. Go to **Start** and type _cmd_.
 
     b. Right–click **Command prompt** and select **Run as administrator**.
 
@@ -156,6 +156,20 @@ When you select this action, a fly-out will appear. From the fly-out, you can re
 ![Image of download file fly-out](images/atp-download-file.png)
 
 If a file is not already stored by Microsoft Defender ATP, you cannot download it. Instead, you will see a **Collect file** button in the same location. If a file has not been seen in the organization in the past 30 days, **Collect file** will be disabled.
+
+## Check activity details in Action center
+
+The **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view the following details:
+
+- Investigation package collection
+- Antivirus scan
+- App restriction
+- Machine isolation
+
+All other related details are also shown, for example, submission date/time, submitting user, and if the action succeeded or failed.
+
+![Image of action center with information](images/action-center-details.png)
+
 
 ## Deep analysis
 

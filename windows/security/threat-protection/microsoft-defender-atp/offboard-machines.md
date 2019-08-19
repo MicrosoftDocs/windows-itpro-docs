@@ -32,13 +32,13 @@ ms.topic: conceptual
 Follow the corresponding instructions depending on your preferred deployment method.
 
 ## Offboard Windows 10 machines
-  - [Offboard machines using a local script](configure-endpoints-script.md#offboard-machines-using-a-local-script)
-  - [Offboard machines using Group Policy](configure-endpoints-gp.md#offboard-machines-using-group-policy)
-  - [Offboard machines using System Center Configuration Manager](configure-endpoints-sccm.md#offboard-machines-using-system-center-configuration-manager)
-  - [Offboard machines using Mobile Device Management tools](configure-endpoints-mdm.md#offboard-and-monitor-machines-using-mobile-device-management-tools)
+- [Offboard machines using a local script](configure-endpoints-script.md#offboard-machines-using-a-local-script)
+- [Offboard machines using Group Policy](configure-endpoints-gp.md#offboard-machines-using-group-policy)
+- [Offboard machines using System Center Configuration Manager](configure-endpoints-sccm.md#offboard-machines-using-system-center-configuration-manager)
+- [Offboard machines using Mobile Device Management tools](configure-endpoints-mdm.md#offboard-and-monitor-machines-using-mobile-device-management-tools)
 
 ## Offboard Servers
-  - [Offboard servers](configure-server-endpoints.md#offboard-servers)
+- [Offboard servers](configure-server-endpoints.md#offboard-servers)
 
 ## Offboard non-Windows machines
-  - [Offboard non-Windows machines](configure-endpoints-non-windows.md#offboard-non-windows-machines)
+- [Offboard non-Windows machines](configure-endpoints-non-windows.md#offboard-non-windows-machines)
