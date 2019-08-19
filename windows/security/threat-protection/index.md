@@ -141,7 +141,7 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 **[Microsoft Threat Protection](microsoft-defender-atp/threat-protection-integration.md)** <br>
  Microsoft Defender ATP is part of the Microsoft Threat Protection solution that helps implement end-to-end security across possible attack surfaces in the modern workplace. Bring the power of Microsoft threat protection to your organization.
 - [Conditional access](microsoft-defender-atp/conditional-access.md)
-- [O365 ATP](microsoft-defender-atp/threat-protection-integration.md)
+- [Office 365 ATP](microsoft-defender-atp/threat-protection-integration.md)
 - [Azure ATP](microsoft-defender-atp/threat-protection-integration.md)
 - [Azure Security Center](microsoft-defender-atp/threat-protection-integration.md)
 - [Skype for Business](microsoft-defender-atp/threat-protection-integration.md) 

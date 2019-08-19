@@ -148,6 +148,8 @@ Diagnostic logs are collected only with the consent of the user as part of the f
 - All files under */Library/Logs/Microsoft/mdatp/*
 - Subset of files under */Library/Application Support/Microsoft/Defender/* that are created and used by Microsoft Defender ATP for Mac
 - Subset of files under */Library/Managed Preferences* that are used by Microsoft Defender ATP for Mac
+- /Library/Logs/Microsoft/autoupdate.log
+- $HOME/Library/Preferences/com.microsoft.autoupdate2.plist
 
 ### Optional diagnostic data
 

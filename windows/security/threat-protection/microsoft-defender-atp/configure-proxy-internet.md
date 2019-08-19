@@ -45,9 +45,8 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
   - Registry based configuration
   - WinHTTP configured using netsh command – Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
 
-
-
 ## Configure the proxy server manually using a registry-based static proxy
+
 Configure a registry-based static proxy to allow only Microsoft Defender ATP sensor to report diagnostic data and communicate with Microsoft Defender ATP services if a computer is not be permitted to connect to the Internet.
 
 The static proxy is configurable through Group Policy (GP). The group policy can be found under:

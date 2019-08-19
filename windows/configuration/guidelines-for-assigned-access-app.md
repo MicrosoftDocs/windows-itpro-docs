@@ -68,7 +68,7 @@ In Windows 10, version 1803 and later, you can install the **Kiosk Browser** app
 
 Kiosk Browser settings | Use this setting to
 --- | ---
-Blocked URL Exceptions | Specify URLs that people can navigate to, even though the URL is in your blocked URL list. You can use wildcards. <br><br>For example, if you want people to be limited to `contoso.com` only, you would add `contoso.com` to blocked URL exception list and then block all other URLs.
+Blocked URL Exceptions | Specify URLs that people can navigate to, even though the URL is in your blocked URL list. You can use wildcards. <br><br>For example, if you want people to be limited to `http://contoso.com` only, you would add `.contoso.com` to blocked URL exception list and then block all other URLs.
 Blocked URLs | Specify URLs that people can't navigate to. You can use wildcards. <br><br>If you want to limit people to a specific site, add `https://*` to the blocked URL list, and then specify the site to be allowed in the blocked URL exceptions list.
 Default URL | Specify the URL that Kiosk Browser will open with. **Tip!** Make sure your blocked URLs don't include your default URL.
 Enable End Session Button | Show a button in Kiosk Browser that people can use to reset the browser. End Session will clear all browsing data and navigate back to the default URL.

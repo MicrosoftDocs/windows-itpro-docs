@@ -32,8 +32,8 @@ Microsoft recommends [a layered approach to securing removable media](https://ak
    - Granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination.
    - Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
 
-![Create device configuration profile]
-These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removable disks. Additionally, you can [classify and protect files on Windows devices](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview) (including their mounted USB devices) by using Windows Defender ATP and Azure Information Protection.
+>[!Note]
+>These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removable disks. Additionally, you can [classify and protect files on Windows devices](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview) (including their mounted USB devices) by using Windows Defender ATP and Azure Information Protection.
 
 ## Prevent threats from removable storage
   
@@ -111,13 +111,13 @@ To prevent malware infections or data loss, an organization may restrict USB dri
  Allow installation and usage of USB drives and other peripherals | Allow users to install only the USB drives and other peripherals included on a list of authorized devices or device types
  Prevent installation and usage of USB drives and other peripherals | Prevent users from installing USB drives and other peripherals included on a list of unauthorized devices and device types
 
-All of the above controls can be set through the Intune [Administrative Templates](https://docs.microsoft.com/en-us/intune/administrative-templates-windows). The relevant policies are located here in the Intune Administrator Templates:
+All of the above controls can be set through the Intune [Administrative Templates](https://docs.microsoft.com/intune/administrative-templates-windows). The relevant policies are located here in the Intune Administrator Templates:
 
 ![Admintemplates](images/admintemplates.png)
 
-> [!Note]
-> Using Intune, you can apply device configuration policies to AAD user and/or device groups.
-The above policies can also be set through the [Device Installation CSP settings](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-deviceinstallation) and the [Device Installation GPOs](https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/bb530324(v=msdn.10)).
+>[!Note]
+>Using Intune, you can apply device configuration policies to AAD user and/or device groups.
+The above policies can also be set through the [Device Installation CSP settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) and the [Device Installation GPOs](https://docs.microsoft.com/previous-versions/dotnet/articles/bb530324(v=msdn.10)).
 
 > [!Note]
 > Always test and refine these settings with a pilot group of users and devices first before applying them in production.
@@ -127,12 +127,20 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 
 One way to approach allowing installation and usage of USB drives and other peripherals is to start by allowing everything. Afterwards, you can start reducing the allowable USB drivers and other peripherals.
 
-> [!Note]
-> Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
+>[!Note]
+>Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
 >
-> 1. Enable **prevent installation of devices not described by other policy settings** to all users.
-> 2. Enable **allow installation of devices using drivers that match these device setup classes** for all [device setup classes](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+>1. Enable **prevent installation of devices not described by other policy settings** to all users.
+>2. Enable **allow installation of devices using drivers that match these device setup classes** for all [device setup classes](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
 To enforce the policy for already installed devices, apply the prevent policies that have this setting.
+
+When configuring the allow device installation policy, you will need to allow all parent attributes as well.  You can view the parents of a device by opening device manager and view by connection.
+
+![Device by Connection](images/devicesbyconnection.png)
+
+In this example, the following classesneeded to be added: HID, Keboard, and {36fc9e60-c465-11cf-8056-444553540000}. More information on [Microsoft-provided USB drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/supported-usb-classes).
+
+![Device host controller](images/devicehostcontroller.jpg)
 
 If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device id that you want to add. For example,
 
@@ -144,7 +152,7 @@ If you want to restrict to certain devices, remove the device setup class of the
 
 >Using PowerShell: Get-WMIObject -Class Win32_DiskDrive |
 Select-Object -Property *  
->For the typical format for the USB ID, please reference [Standard USB Identifiers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/standard-usb-identifiers)
+>For the typical format for the USB ID please reference the following link; (https://docs.microsoft.com/windows-hardware/drivers/install/standard-usb-identifiers)
 
 ### Prevent installation and usage of USB drives and other peripherals
 
@@ -155,6 +163,46 @@ If you want to prevent a device class or certain devices, you can use the preven
 
 > [!Note]
 > The prevent device installation policies take precedence over the allow device installation policies.
+
+### Block installation and usage of removable storage
+
+1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
+2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**.
+
+   ![Create device configuration profile](images/create-device-configuration-profile.png)
+
+3. Use the following settings:
+
+   - Name: Type a name for the profile
+   - Description: Type a description
+   - Platform: Windows 10 and later
+   - Profile type: Device restrictions
+
+   ![Create profile](images/create-profile.png)
+
+4. Click **Configure** > **General**.  
+
+5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, where **USB connection (mobile only)** excludes USB charging but includes other USB connections on mobile devices only. 
+
+   ![General settings](images/general-settings.png)
+
+6. Click **OK** to close **General** settings and **Device restrictions**.
+
+7. Click **Create** to save the profile.
+
+### Only allow installation and usage of specifically approved peripherals
+
+Peripherals that are allowed to be installed can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it blocks and allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+
+For a SyncML example that allows installation of specific device IDs, see [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceids). To allow specific device classes, see [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses).
+Allowing installation of specific devices requires also enabling [DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings).
+
+### Prevent installation of specifically prohibited peripherals
+
+Windows Defender ATP blocks installation and usage of prohibited peripherals by using either of these options:
+
+- [Administrative Templates](https://docs.microsoft.com/intune/administrative-templates-windows) can block any device with a matching hardware ID or setup class.  
+- [Device Installation CSP settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) with a custom profile in Intune. You can [prevent installation of specific device IDs](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids) or [prevent specific device classes](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses).
 
 ### Security Baseline
 
@@ -193,45 +241,23 @@ For more information about controlling USB devices, see the [Microsoft Secure bl
 > [!NOTE]
 > Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
 
-### Block installation and usage of removable storage
+### Custom Alerts and Response Actions
 
-1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
-2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**.
+You can create custom alerts and response actions with the WDATP Connector and the Custom Detection Rules:
 
-   ![Create device configuration profile](images/create-device-configuration-profile.png)
+**Wdatp Connector response Actions:**
 
-3. Use the following settings:
+**Investigate:** Initiate investigations, collect investigation package, and isolate a machine.
 
-   - Name: Type a name for the profile
-   - Description: Type a description
-   - Platform: Windows 10 and later
-   - Profile type: Device restrictions
+**Threat Scanning** on USB devices
 
-   ![Create profile](images/create-profile.png)
+**Restrict execution of all applications** on the machine except a predefined set
+MDATP connector is one of over 200 pre-defined connectors including Outlook, Teams, Slack, etc. Custom connectors can be built.
+- [More information on WDATP Connector Response Actions](https://docs.microsoft.com/connectors/wdatp/)
 
-4. Click **Configure** > **General**.  
-
-5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, where **USB connection (mobile only)** excludes USB charging but includes other USB connections on mobile devices only.
-
-   ![General settings](images/general-settings.png)
-
-6. Click **OK** to close **General** settings and **Device restrictions**.
-
-7. Click **Create** to save the profile.
-
-### Only allow installation and usage of specifically approved peripherals
-
-Peripherals that are allowed to be installed can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it blocks and allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
-
-For a SyncML example that allows installation of specific device IDs, see [DeviceInstallation/AllowInstallationOfMatchingDeviceIDs CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceids). To allow specific device classes, see [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses).
-Allowing installation of specific devices requires also enabling [DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofdevicesnotdescribedbyotherpolicysettings).
-
-### Prevent installation of specifically prohibited peripherals
-
-Windows Defender ATP blocks installation and usage of prohibited peripherals by using either of these options:
-
-- [Administrative Templates](https://docs.microsoft.com/intune/administrative-templates-windows) can block any device with a matching hardware ID or setup class.  
-- [Device Installation CSP settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) with a custom profile in Intune. You can [prevent installation of specific device IDs](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids) or [prevent specific device classes](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses).
+**Custom Detection Rules Response Action:**
+Both machine and file level actions can be applied.
+- [More information on Custom Detection Rules Response Actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
 
 ## Related topics
 
@@ -239,5 +265,6 @@ Windows Defender ATP blocks installation and usage of prohibited peripherals by 
 - [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 - [Policy/DeviceInstallation CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation)
 - [Perform a custom scan of a removable device](https://aka.ms/scanusb)
-- [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
+- [Device Control PowerBI Template for custom reporting](https://github.com/microsoft/MDATP-PowerBI-Templates)
+- [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) 
 - [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)

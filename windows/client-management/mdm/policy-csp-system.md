@@ -1068,7 +1068,7 @@ If you disable or don't configure this policy setting, the Delete diagnostic dat
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable deleting diagnostic data *
+-   GP English name: *Disable deleting diagnostic data*
 -   GP name: *DisableDeviceDelete*
 -   GP element: *DisableDeviceDelete*
 -   GP path: *Data Collection and Preview Builds*
@@ -1131,7 +1131,7 @@ If you disable or don't configure this policy setting, the Diagnostic Data Viewe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable diagnostic data viewer. *
+-   GP English name: *Disable diagnostic data viewer.*
 -   GP name: *DisableDiagnosticDataViewer*
 -   GP element: *DisableDiagnosticDataViewer*
 -   GP path: *Data Collection and Preview Builds*

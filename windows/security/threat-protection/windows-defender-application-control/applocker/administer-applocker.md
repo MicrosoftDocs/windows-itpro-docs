@@ -20,8 +20,8 @@ ms.date: 02/28/2019
 # Administer AppLocker
 
 **Applies to**
- -   Windows 10
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals provides links to specific procedures to use when administering AppLocker policies.
 

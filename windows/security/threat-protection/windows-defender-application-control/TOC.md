@@ -11,7 +11,7 @@
 
 ## [Windows Defender Application Control deployment guide](windows-defender-application-control-deployment-guide.md)
 ### [Types of devices](types-of-devices.md)
-###Use WDAC with custom policies
+### Use WDAC with custom policies
 #### [Create an initial default policy](create-initial-default-policy.md)
 #### [Create path-based rules](create-path-based-rules.md)
 #### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)

@@ -357,4 +357,4 @@ For networks that require non-standard handling of single-segment incoming MMS W
 
 
 ## Related topics
- - [Customizations for SMS and MMS](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/customizations-for-sms-and-mms)
+- [Customizations for SMS and MMS](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/customizations-for-sms-and-mms)

@@ -16,6 +16,9 @@ ms.localizationpriority: medium
 
 # Find and save files on HoloLens
 
+Add content from [Find and save files](https://docs.microsoft.com/en-us/windows/mixed-reality/saving-and-finding-your-files)
+
+
 Files you create on HoloLens, including Office documents, photos, and videos, are saved to your HoloLens. To view and manage them, you can use the File Explorer app on HoloLens or File Explorer on your PC. To sync photos and other files to the cloud, use the OneDrive app on HoloLens.
 
 ## View files on HoloLens
