@@ -2418,7 +2418,7 @@ The following list shows the supported values:
 <!--Validation-->
 To validate this policy:
 
-1.  Enable the policy ensure the device is on a cellular network.
+1.  Enable the policy and ensure the device is on a cellular network.
 2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
     ```TShell
       regd delete HKEY_USERS\S-1-5-21-2702878673-795188819-444038987-2781\software\microsoft\windows\currentversion\windowsupdate /v LastAutoAppUpdateSearchSuccessTime /f
