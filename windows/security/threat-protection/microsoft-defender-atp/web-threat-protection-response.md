@@ -26,7 +26,7 @@ Web threat protection in Microsoft Defender APT lets you efficiently investigate
 
 ## View web threat alerts
 Microsoft Defender ATP generates the following [alerts](manage-alerts.md) for malicious or suspicious web activity:
-- **Suspicious connection blocked by network protection** — this alert is generated when an attempt to access a malicious website or a website in your custom indicator list is *stopped* by network protection in *'*block* mode
+- **Suspicious connection blocked by network protection** — this alert is generated when an attempt to access a malicious website or a website in your custom indicator list is *stopped* by network protection in *block* mode
 - **Suspicious connection detected by network protection** — this alert is generated when an attempt to access a malicious website or a website in your custom indicator list is detected by network protection in *audit only* mode
 
 Each alert provides the following information: 
