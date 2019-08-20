@@ -22,6 +22,8 @@ ms.date: 08/30/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
+[!include[Prerelease information](prerelease.md)]
+
 Web threat protection in Microsoft Defender APT lets you efficiently investigate and respond to alerts related to malicious websites and websites in your custom indicator list.
 
 ## View web threat alerts

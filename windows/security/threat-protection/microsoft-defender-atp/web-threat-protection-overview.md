@@ -22,6 +22,8 @@ ms.date: 08/30/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
+[!include[Prerelease information](prerelease.md)]
+
 Web threat protection in Microsoft Defender ATP secures your machines against web threats without relying on a web proxy, providing security for devices that are either away or on premises. By integrating with Microsoft Edge as well as popular third-party browsers like Chrome and Firefox, web threat protection stops access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, as well as sites that you have blocked in your [custom indicator list](manage-indicators.md).
 
 With web threat protection in Microsoft Defender ATP, you get:
