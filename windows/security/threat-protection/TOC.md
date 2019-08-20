@@ -119,8 +119,7 @@
 ##### [NetworkCommunicationEvents table](microsoft-defender-atp/advanced-hunting-networkcommunicationevents-table.md)
 ##### [ProcessCreationEvents table](microsoft-defender-atp/advanced-hunting-processcreationevents-table.md)
 ##### [RegistryEvents table](microsoft-defender-atp/advanced-hunting-registryevents-table.md)
-
-##### [Advanced hunting query language best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
+#### [Advanced hunting query language best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
 
 #### [Custom detections]()
 ##### [Understand custom detection rules](microsoft-defender-atp/overview-custom-detections.md)
