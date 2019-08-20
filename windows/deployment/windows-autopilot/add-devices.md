@@ -26,7 +26,7 @@ Before deploying a device using Windows Autopilot, the device must be registered
 
 ## OEM registration
 
-When you purchase devices directly from an OEM, that OEM can automatically register the devices with the Windows Autopilot deployment service.  For the list of OEMs that currently support this, see the "Participant device manufacturers" section of the [Windows Autopilot information page](https://www.microsoft.com/en-us/windowsforbusiness/windows-autopilot).
+When you purchase devices directly from an OEM, that OEM can automatically register the devices with the Windows Autopilot deployment service.  For the list of OEMs that currently support this, see the "Participant device manufacturers" section of the [Windows Autopilot information page](https://www.microsoft.com/windowsforbusiness/windows-autopilot).
 
 Before an OEM can register devices on behalf of an organization, the organization must grant the OEM permission to do so.  This process is initiated by the OEM, with approval granted by an Azure AD global administrator from the organization.  See the "Customer Consent" section of the [Customer consent page](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#oem-authorization).
 

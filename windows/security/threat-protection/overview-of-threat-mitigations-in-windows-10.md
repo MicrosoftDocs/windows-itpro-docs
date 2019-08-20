@@ -106,7 +106,7 @@ Windows Defender Antivirus in Windows 10 uses a multi-pronged approach to improv
 
 For more information, see [Windows Defender in Windows 10](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) and [Windows Defender Overview for Windows Server](https://technet.microsoft.com/windows-server-docs/security/windows-defender/windows-defender-overview-windows-server).
 
-For information about Microsoft Defender Advanced Threat Protection, a service that helps enterprises to detect, investigate, and respond to advanced and targeted attacks on their networks, see [Microsoft Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp) (resources) and [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (documentation).
+For information about Microsoft Defender Advanced Threat Protection, a service that helps enterprises to detect, investigate, and respond to advanced and targeted attacks on their networks, see [Microsoft Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/WindowsForBusiness/windows-atp) (resources) and [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (documentation).
 
 ### Data Execution Prevention
 
@@ -450,10 +450,10 @@ Microsoft Consulting Services (MCS) and Microsoft Support/Premier Field Engineer
 ## Related topics
 
 - [Security and Assurance in Windows Server 2016](https://technet.microsoft.com/windows-server-docs/security/security-and-assurance)
-- [Microsoft Defender Advanced Threat Protection (ATP) - resources](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp)
+- [Microsoft Defender Advanced Threat Protection (ATP) - resources](https://www.microsoft.com/WindowsForBusiness/windows-atp)
 - [Microsoft Defender Advanced Threat Protection (ATP) - documentation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Exchange Online Advanced Threat Protection Service Description](https://technet.microsoft.com/library/exchange-online-advanced-threat-protection-service-description.aspx)
 - [Office 365 Advanced Threat Protection](https://products.office.com/en-us/exchange/online-email-threat-protection)
-- [Microsoft Malware Protection Center](https://www.microsoft.com/en-us/security/portal/mmpc/default.aspx)
+- [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/mmpc/default.aspx)
 
 

@@ -45,7 +45,7 @@ App-V offers the following five server components, each of which serves a specif
 All five App-V server components are included in the Microsoft Desktop Optimization Pack (MDOP) 2015 ISO package, which can be downloaded from either of the following locations:
 
 * The [MSDN (Microsoft Developer Network) subscriptions site](https://msdn.microsoft.com/subscriptions/downloads/default.aspx#FileId=65215). You must have a MSDN subscription to download the MDOP ISO package from this site.
-* The [Volume Licensing Service Center](https://www.microsoft.com/en-us/licensing/default.aspx) if you're using [Windows 10 for Enterprise or Education](https://www.microsoft.com/en-us/WindowsForBusiness/windows-product-home).
+* The [Volume Licensing Service Center](https://www.microsoft.com/licensing/default.aspx) if you're using [Windows 10 for Enterprise or Education](https://www.microsoft.com/WindowsForBusiness/windows-product-home).
 
 In large organizations, you might want to install more than one instance of the server components to get the following benefits.
 

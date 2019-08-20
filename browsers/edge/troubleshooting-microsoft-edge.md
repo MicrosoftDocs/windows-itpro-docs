@@ -34,4 +34,4 @@ If you want to deliver applications to users via Citrix through Microsoft Edge, 
  
 ## Missing SettingSync.admx and SettingSync.adml files
 
-Make sure to [download](https://www.microsoft.com/en-us/download/windows.aspx) the latest templates to C:\windows\policydefinitions\. 
+Make sure to [download](https://www.microsoft.com/download/windows.aspx) the latest templates to C:\windows\policydefinitions\. 

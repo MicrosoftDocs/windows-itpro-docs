@@ -24,7 +24,7 @@ ms.topic: article
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 Microsoft Defender ATP supports the OAuth 2.0 protocol to pull alerts from the portal.
 
