@@ -21,15 +21,15 @@ ms.topic: article
 
 -   Windows 10 Pro, Enterprise, and Education
 
->[!WARNING]
->For kiosks in public-facing environments with auto sign-in enabled, you should use a user account with least privilege, such as a local standard user account.
+> [!WARNING]
+> For kiosks in public-facing environments with auto sign-in enabled, you should use a user account with least privilege, such as a local standard user account.
 >
->Assigned access can be configured via Windows Management Instrumentation (WMI) or configuration service provider (CSP) to run its applications under a domain user or service account, rather than a local account. However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
+> Assigned access can be configured via Windows Management Instrumentation (WMI) or configuration service provider (CSP) to run its applications under a domain user or service account, rather than a local account. However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
 
->[!IMPORTANT]
->[User account control (UAC)](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
+> [!IMPORTANT]
+> [User account control (UAC)](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
 >
->Kiosk mode is not supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
+> Kiosk mode is not supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
 
 ## Configuration recommendations
 
@@ -60,19 +60,19 @@ Logs can help you [troubleshoot issues](multi-app-kiosk-troubleshoot.md) kiosk i
 
 In addition to the settings in the table, you may want to set up **automatic logon** for your kiosk device. When your kiosk device restarts, whether from an update or power outage, you can sign in the assigned access account manually or you can configure the device to sign in to the assigned access account automatically. Make sure that Group Policy settings applied to the device do not prevent automatic sign in.
 
->[!NOTE]
->If you are using a Windows 10 and later device restriction CSP to set "Preferred Azure AD tenant domain", this will break the "User logon type" auto-login feature of the Kiosk profile.
+> [!NOTE]
+> If you are using a Windows 10 and later device restriction CSP to set "Preferred Azure AD tenant domain", this will break the "User logon type" auto-login feature of the Kiosk profile.
 
->[!TIP]
->If you use the [kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) or [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) to configure your kiosk, you can set an account to sign in automatically in the wizard or XML. 
+> [!TIP]
+> If you use the [kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) or [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) to configure your kiosk, you can set an account to sign in automatically in the wizard or XML. 
 
 
 **How to edit the registry to have an account sign in automatically**
 
 1. Open Registry Editor (regedit.exe).
 
-   >[!NOTE]
-   >If you are not familiar with Registry Editor, [learn how to modify the Windows registry](https://go.microsoft.com/fwlink/p/?LinkId=615002).
+   > [!NOTE]
+   > If you are not familiar with Registry Editor, [learn how to modify the Windows registry](https://go.microsoft.com/fwlink/p/?LinkId=615002).
   
  
 2. Go to
@@ -94,8 +94,8 @@ In addition to the settings in the table, you may want to set up **automatic log
 
 4. Close Registry Editor. The next time the computer restarts, the account will sign in automatically.
 
->[!TIP]
->You can also configure automatic sign-in [using the Autologon tool from Sysinternals](https://docs.microsoft.com/sysinternals/downloads/autologon).
+> [!TIP]
+> You can also configure automatic sign-in [using the Autologon tool from Sysinternals](https://docs.microsoft.com/sysinternals/downloads/autologon).
 
 
 ## Interactions and interoperability
@@ -245,13 +245,13 @@ The following table describes some features that have interoperability issues we
 </table>
 
 
+<span id="test-vm"/>
 
-<span id="test-vm" />
 ## Testing your kiosk in a virtual machine (VM)
 
 Customers sometimes use virtual machines (VMs) to test configurations before deploying those configurations to physical devices. If you use a VM to test your single-app kiosk configuration, you need to know how to connect to the VM properly.
 
-A single-app kiosk configuration runs an app above the lockscreen. It doesn't work when it's accessed remotely, which includes *enhanced* sessions in Hyper-V. 
+A single-app kiosk configuration runs an app above the lock screen. It doesn't work when it's accessed remotely, which includes *enhanced* sessions in Hyper-V. 
 
 When you connect to a VM configured as a single-app kiosk, you need a *basic* session rather than an enhanced session. In the following image, notice that **Enhanced session** is not selected in the **View** menu; that means it's a basic session.
 
@@ -259,4 +259,4 @@ When you connect to a VM configured as a single-app kiosk, you need a *basic* se
 
 To connect to a VM in a basic session, do not select **Connect** in the connection dialog, as shown in the following image, but instead, select the **X** button in the upper-right corner to cancel the dialog. 
 
-![Do not select connect button, use close X in corner](images/vm-kiosk-connect.png)
+![Do not select the connect button, use "close X" in the top corner](images/vm-kiosk-connect.png)
