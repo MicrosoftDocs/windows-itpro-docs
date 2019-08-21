@@ -64,7 +64,7 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 2. From the dashboard, select the same alert topic that you got from the email, to view the details.  
 
 
-## Ask a Microsoft threat expert about suspicious cybersecurity activities in your organization 
+## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization 
 >[!NOTE]
 >The Microsoft Threat Experts' experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved.
 
@@ -74,7 +74,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 >Alert inquiries related to your organization's customized threat intelligence data are currently not supported. Consult your security operations or incident response team for details.
 
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or machine is in view before you send an inquiry. 
-2. From the upper right-hand menu, click **?**. Then, select **Ask a threat expert**.
+2. From the upper right-hand menu, click **?**. Then, select **Consult a threat expert**.
 3. Asking a threat expert is a two-step process: provide the necessary information and open a support ticket. 
     
     **Step 1: Provide information**    
