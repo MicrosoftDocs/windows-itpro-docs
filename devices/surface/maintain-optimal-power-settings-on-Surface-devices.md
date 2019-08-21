@@ -9,6 +9,7 @@ ms.author: dansimp
 ms.topic: article
 ms.reviewer: 
 manager: dansimp
+ms.date: 08/21/2019
 ---
 
 # Best practice power settings for Surface devices
