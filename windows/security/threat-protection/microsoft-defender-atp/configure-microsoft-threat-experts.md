@@ -23,8 +23,6 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!Include[Prerelease information](prerelease.md)]
-
 ## Before you begin 
 To experience the full Microsoft Threat Experts targeted attack notification capability in Microsoft Defender ATP, and preview the experts-on-demand capability, you need to have a valid Premier customer service and support account. Premier charges are not incurred during for the capability in preview, but for the generally available capability, there will be charges.
 
@@ -65,9 +63,6 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 
 
 ## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization 
->[!NOTE]
->The Microsoft Threat Experts' experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved.
-
 You can partner with Microsoft Threat Experts who can be engaged directly from within the Windows Defender Security Center for timely and accurate response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised machine, or a threat intelligence context that you see on your portal dashboard. 
 
 >[!NOTE]
