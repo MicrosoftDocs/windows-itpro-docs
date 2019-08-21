@@ -24,7 +24,7 @@ ms.topic: troubleshooting
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
 
 
 This page provides detailed steps to troubleshoot issues that might occur when setting up your Microsoft Defender ATP service.

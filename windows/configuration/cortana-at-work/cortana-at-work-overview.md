@@ -53,7 +53,7 @@ Your organization must have an Azure AD tenant and your employees’ devices mus
 ## Cortana and privacy
 We understand that there are some questions about Cortana and your organization’s privacy, including concerns about what info is collected by Cortana, where the info is saved, how to manage what data is collected, how to turn Cortana off, how to opt completely out of data collection, and what info is shared with other Microsoft apps and services. For more details about these concerns, see the [Cortana, Search, and privacy: FAQ](https://windows.microsoft.com/windows-10/cortana-privacy-faq) topic.
 
-Cortana is covered under the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and [Microsoft Services Agreement](https://www.microsoft.com/en-us/servicesagreement).
+Cortana is covered under the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement).
 
 ## See also
 - [What is Cortana?](https://go.microsoft.com/fwlink/p/?LinkId=746818)

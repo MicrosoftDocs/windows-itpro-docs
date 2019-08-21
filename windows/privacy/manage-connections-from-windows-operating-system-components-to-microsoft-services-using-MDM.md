@@ -26,7 +26,7 @@ You can configure diagnostic data at the Security/Basic level, turn off Windows 
 
 Note, there is some traffic which is required (i.e. "whitelisted") for the operation of Windows and the Microsoft InTune based management.  This traffic includes CRL and OCSP network traffic which will show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.  Additional whitelisted traffic specifically for MDM managed devices includes Windows Notification Service related traffic as well as some specific Microsoft InTune and Windows Update related traffic.
 
-For more information on Microsoft InTune please see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](https://docs.microsoft.com/intune/).
+For more information on Microsoft InTune please see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](https://docs.microsoft.com/intune/).
 
 For detailed information about managing network connections to Microsoft services using Registries, Group Policies, or UI see [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services).
 

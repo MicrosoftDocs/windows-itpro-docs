@@ -24,7 +24,7 @@ ms.date: 12/10/2018
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
 
 Enable security information and event management (SIEM) integration so you can pull alerts from Microsoft Defender Security Center using your SIEM solution or by connecting directly to the alerts REST API.
 

@@ -27,7 +27,7 @@ ms.date: 12/20/2018
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
 
 You'll need to install and configure some files and tools to use HP ArcSight so that it can pull Microsoft Defender ATP alerts.
 
