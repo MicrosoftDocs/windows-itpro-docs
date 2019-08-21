@@ -58,7 +58,7 @@ DC01 is a domain controller; the other servers and client machines are members o
 
 ## Storage requirements
 
-MDT01 and CM01 should have data drives (D:) that can support up to 200 GB of data. The system drives (C:) are 100 GB in size.
+MDT01 and CM01 should have data drives (D:) that can support up to 100 and 200 GB of data, respectively. The system drives (C:) are 100 GB in size.
 
 ## Hypervisor requirement
 

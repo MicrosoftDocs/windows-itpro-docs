@@ -29,15 +29,16 @@ For the purposes of this topic, we will use two computers: **DC01** and **MDT01*
 - MDT01 is a domain member server in contoso.com and has a D: drive that will be used for data.
     - The data drive requires at least 100GB of disk space.
  
-For more details on the setup for topics in this guide, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
+For more details on requirements for the proof of concept environment used in this guide, see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
 
 ## Install Windows ADK for Windows 10
 
 These steps assume that you have the MDT01 member server running and configured as a domain member server.
 
-Visit the [Download and install the Windows ADK](https://go.microsoft.com/fwlink/p/?LinkId=526803) page and download the following to the **D:\\Downloads\\ADK** folder on MDT01:
+On MTD01, visit the [Download and install the Windows ADK](https://go.microsoft.com/fwlink/p/?LinkId=526803) page and download the following to the **D:\\Downloads\\ADK** folder on MDT01 (you will need to create the folder):
 - [The Windows ADK for Windows 10](https://go.microsoft.com/fwlink/?linkid=2086042)
 - [The Windows PE add-on for the ADK](https://go.microsoft.com/fwlink/?linkid=2087112)
+- [The Windows System Image Manager (WSIM) 1903 update](https://go.microsoft.com/fwlink/?linkid=2095334)
 
 >[!TIP]
 >You might need to temporarily disable IE Enhanced Security Configuration for administrators in order to download files from the Internet to the server. This setting can be disabled by using Server Manager (Local Server/Properties).
@@ -46,13 +47,15 @@ Visit the [Download and install the Windows ADK](https://go.microsoft.com/fwlink
     - For the purposes of this guide, we are using a Domain Admin account of **admin** with a password of <b>pass@word3</b>. You can use your own administrator username and password as long as you properly adjust all steps in this guide that use login these credentials.
 2. Start the **ADK Setup** (D:\\Downloads\\ADK\\adksetup.exe), click **Next** twice to accept the default installation parameters, click **Accept** to accept the license agreement, and then on the **Select the features you want to install** page accept the default list of features by clicking **Install**. This will install deployment tools and the USMT.
 3. Start the **WinPE Setup** (D:\\Downloads\\ADK\\adkwinpesetup.exe), click **Next** twice to accept the default installation parameters, click **Accept** to accept the license agreement, and then on the **Select the features you want to install** page click **Install**. This will install Windows PE for x86, AMD64, ARM, and ARM64.
+4. Extract the **WSIM 1903 update** (D:\\Downloads\ADK\\WSIM1903.zip) and then run the **UpdateWSIM.bat** file.
+   - You can confirm that the update is applied by viewing properties of the ImageCat.exe and ImgMgr.exe files at **C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\WSIM** and verifying that the **Details** tab displays a **File version** of **10.0.18362.144**.
 
 ## Install MDT
 
 >[!NOTE]
 >MDT installation requires the following:
->-   The Windows ADK for Windows 10
->-   Windows PowerShell
+>-   The Windows ADK for Windows 10 (installed in the previous procedure)
+>-   Windows PowerShell ([version 5.1](https://www.microsoft.com/download/details.aspx?id=54616) is recommended)
 >-   Microsoft .NET Framework
 
 1. Visit the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117) and click **Download MDT**. 
@@ -61,6 +64,8 @@ Visit the [Download and install the Windows ADK](https://go.microsoft.com/fwlink
 3. Install **MDT** (D:\\Downloads\\MDT\\MicrosoftDeploymentToolkit_x64.exe) with the default settings.
 
 ## Create the OU structure
+
+>**Note**: The following procedures are performed on **DC01**.
 
 To create the OU structure, you can use the Active Directory Users and Computers console (dsa.msc), or you can use Windows PowerShell.
 
@@ -130,7 +135,7 @@ To create an MDT build account, open an elevalted Windows PowerShell prompt on D
 ```powershell
 New-ADUser -Name MDT_BA -UserPrincipalName MDT_BA -path "OU=Service Accounts,OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM" -Description "MDT Build Account" -AccountPassword (ConvertTo-SecureString "pass@word3" -AsPlainText -Force) -ChangePasswordAtLogon $false -PasswordNeverExpires $true -Enabled $true
 ```
-If you have the Active Directory Users and Computers console open you can refresh the view and see this new account in the Contoso\Accounts\Service Accounts OU as shown in the screenshot above.
+If you have the Active Directory Users and Computers console open you can refresh the view and see this new account in the **Contoso\Accounts\Service Accounts** OU as shown in the screenshot above.
 
 ## Create and share the logs folder
 
@@ -161,9 +166,14 @@ Alternatively, CMTrace formatting makes the logs much easier to read. See the sa
 
 ![figure 9](../images/mdt-05-fig10.png)
 
+## Next steps
 
-When you have completed the steps in this section to prepare for deployment, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
+The following is an example of files that have been downloaded and installed (including optional CMTrace) on MDT at this point in the lab.
+
+![downloads](../images/downloads.png)
+
+When you have completed all the steps in this section to prepare for deployment, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
 
 ## Related topics
 
-[Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
+[Understand the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
