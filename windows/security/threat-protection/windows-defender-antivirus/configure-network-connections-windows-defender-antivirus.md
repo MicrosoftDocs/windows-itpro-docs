@@ -46,7 +46,7 @@ See [Enable cloud-delivered protection](enable-cloud-protection-windows-defender
 
 After you've enabled the service, you may need to configure your network or firewall to allow connections between it and your endpoints.
 
-As a cloud service, it is required that computers have access to the internet and that the ATP machine learning services are reachable. The URL: "\*.blob.core.windows.net" should not be excluded from any kind of network inspection. The table below lists the services and their associated URLs. You should ensure there are no firewall or network filtering rules denying access to these URLs, or you may need to create an allow rule specifically for them (excluding the URL: "\*.blob.core.windows.net).
+As a cloud service, it is required that computers have access to the internet and that the ATP machine learning services are reachable. The URL: "\*.blob.core.windows.net" should not be excluded from any kind of network inspection. The table below lists the services and their associated URLs. You should ensure there are no firewall or network filtering rules denying access to these URLs, or you may need to create an allow rule specifically for them (excluding the URL: "\*.blob.core.windows.net").
 
 
 | **Service**| **Description** |**URL** |
