@@ -81,7 +81,7 @@ For code samples, see [Microsoft Azure Active Directory Samples and Documentatio
 
 ## Configure your Azure AD application
 
-[Here](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) are the steps to configure your Azure AD app. 
+See [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) for the steps to configure your Azure AD app. 
 
 ## Azure AD Authentication for MTS
 
