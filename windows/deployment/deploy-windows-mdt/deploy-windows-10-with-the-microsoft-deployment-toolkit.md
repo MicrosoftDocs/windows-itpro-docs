@@ -21,11 +21,13 @@ ms.topic: article
 **Applies to**
 - Windows 10
 
-The topics in this guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT). A summary of each topic is provided in the table below. Complete each of the topics below in the order they are listed. Informational topics are optional, but can provide helpful information so you should probably read them.
+This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT). A summary topics in the guide is provided in the table below. Complete each of the topics below in the order they are listed. Informational topics are optional, but can provide helpful [information about MDT](#what-is-mdt).
+
+This topic also provides a detailed description of the [proof of concept environment](#proof-of-concept-environment) used in this guide, and [sample files](#sample-files) are provided below to help you put the information you learn into practice more quickly.
 
 | Topic | Description | Required / optional |
 | :---   | :---      | :--- |
-| [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md) | An overview of MDT. | Optional |
+| [Understand the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md) | An overview of MDT. | Optional |
 | [Deploying Windows 10 with MDT](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) | (This topic). A description of topics in this guide and the overall lab infrastructure. | Optional |
 | [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md) | Installation of MDT.  | Required |
 | [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) | Create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image.       | Required |
@@ -35,12 +37,6 @@ The topics in this guide will walk you through the process of deploying Windows�
 | [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md) | Use MDT Lite Touch Installation (LTI) to replace the a Windows 7 computer with a Windows 10 computer using the replace process.  | Required  |
 | [Perform an in-place upgrade to Windows 10 with MDT](upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md) | Use an MDT task sequence to completely automate the in-place upgrade process. | Required |
 | [Configure MDT settings](configure-mdt-settings.md) | Learn about configuring MDT customizations for your environment. | Optional |
-
-## In this topic
-
-- [What is MDT](#what-is-mdt) provides a brief overview of MDT.
-- [The proof of concept environment](#proof-of-concept-environment) used in this guide is described. 
-- [Sample files](#sample-files) are provided to help you put the information you learn into practice more quickly.
 
 ## What is MDT
 
@@ -58,50 +54,60 @@ For the purposes of this guide we will use the following servers and client mach
 
 ![computers](../images/mdt-01-fig01.png)
 
-DC01 is a domain controller; the other servers and client machines are members of the domain contoso.com for the fictitious Contoso Corporation.
+DC01 is a domain controller; the other servers and client machines are members of the domain contoso.com for the fictitious Contoso Corporation. All servers are running Windows Server 2012 R2, but you can also use a later version of Windows Server with minor adjustments to some procedures.
+
+## Storage requirements
+
+MDT01 and CM01 should have data drives (D:) that can support up to 200 GB of data. The system drives (C:) are 100 GB in size.
 
 ## Hypervisor requirement
 
-In addition to the servers and clients used in this lab, a Hyper-V host is also required to build a Windows 10 reference image. If you do not have access to a Hyper-V server, you can install Hyper-V on a Windows 10 or Windows 8.1 computer temporarily to use for this lab. For instructions on how to enable Hyper-V on Windows 10, see the [Verify support and install Hyper-V](https://docs.microsoft.com/windows/deployment/windows-10-poc#verify-support-and-install-hyper-v) section in the Windows 10 deployment test lab guide (this guide is a less detailed version of the current guide, but with more instructions for installing Hyper-V).
+A Hyper-V host can be used to build a Windows 10 reference image, but is not required. Instructions are also provided to create a reference image using local server resources. However, a place to host the VHD
+
+### Installing Hyper-V
+
+If you do not have access to a Hyper-V server, you can install Hyper-V on a Windows 10 or Windows 8.1 computer temporarily to use for this lab. For instructions on how to enable Hyper-V on Windows 10, see the [Verify support and install Hyper-V](https://docs.microsoft.com/windows/deployment/windows-10-poc#verify-support-and-install-hyper-v) section in the Windows 10 deployment test lab guide (this guide is a less detailed version of the current guide, but with more instructions for installing Hyper-V).
+
+## Network requirements
+
+For this lab, all server and client computers are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and resolve all DNS names and Active Directory information for the contoso.com domain.  Internet connectivity is also requried to download OS and applicaton updates.
 
 ### Domain credentials
+
+You can use your own Active Directory domain and credentials, but you'll need to specify your custom information and use it to replace the credentials below that are used in this guide.
 
 **Active Directory domain name**: contoso.com<br>
 **Domain administrator username**: admin<br>
 **Domain administrator password**: pass@word3 
 
-### Server details
-
-- **DC01.** A computer running Windows Server 2012 R2, fully patched with the latest security updates, and configured as an Active Directory Domain Controller, DNS Server, and (optionally) DHCP Server for the contoso.com domain.
-  - Server name: DC01
-  - IP Address: 10.169.5.147
-  - Roles: DNS, DHCP, and domain controller
-- **MDT01.** A computer running Windows Server 2012 R2, fully patched with the latest security updates, and configured as a member server in the contoso.com domain. This is an application server that is used to run MDT.
-  - Server name: MDT01
-  - IP Address: 10.169.5.148
-  - Data drive D: with at least 100GB of free space.
-- **CM01.** A computer running Windows Server 2012 R2, fully patched with the latest security updates, and configured as a member server in the contoso.com domain. This is a System Center Configuration Manager site server.
-  - Server name: CM01
-  - IP Address: 10.169.5.149
-  - Data drive D: with at least 100GB of free space.
-
-### Client details
-
-- **PC0001.** A computer running Windows 10 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This machine is referenced as the admin workstation.
-  - Client name: PC0001
-  - IP Address: DHCP
-- **PC0002.** A computer running Windows 7 SP1 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This machine is referenced during the migration scenarios.
-  - Client name: PC0002
-  - IP Address: DHCP
-- **PC0003 - PC0007** These are other client computers similar to PC0001 and PC0002 that are used in the guide for various scenarios. The device names are incremented to avoid confusion. For example, PC0003 and PC0004 are running Windows 7 just like PC0002, but are used for Config Mgr refresh and replace scenarios, respectively.
-
-### Network environment
-
-For this lab, all server and client computers are on the same subnet. This is not required, but each server and client computer must be able to connect to each other, including resolution of all DNS names and Active Directory information for the contoso.com domain.  Internet connectivity is also requried to download OS and applicaton updates.
-
 ### Organizational unit structure
 
 ![figure 2](../images/mdt-01-fig02.jpg)
+
+## Server details
+
+- **DC01.** A computer running Windows Server 2012 R2, fully patched with the latest security updates, and configured as an Active Directory Domain Controller, DNS Server, and (optionally) DHCP Server for the contoso.com domain.
+  - Server name: DC01
+  - IP Address: 10.10.0.5
+  - Roles: DNS, DHCP, and domain controller
+- **MDT01.** A computer running Windows Server 2012 R2, fully patched with the latest security updates, and configured as a member server in the contoso.com domain. This is an application server that is used to run MDT.
+  - Server name: MDT01
+  - IP Address: 10.10.0.8
+  - Data drive D: with at least 100GB of free space.
+- **CM01.** A computer running Windows Server 2012 R2, fully patched with the latest security updates, and configured as a member server in the contoso.com domain. This is a System Center Configuration Manager site server.
+  - Server name: CM01
+  - IP Address: 10.10.0.4
+  - Data drive D: with at least 100GB of free space.
+
+## Client details
+
+- **PC0001.** A computer running Windows 10 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced as the admin workstation.
+  - Client name: PC0001
+  - IP Address: DHCP
+- **PC0002.** A computer running Windows 7 SP1 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced during the migration scenarios.
+  - Client name: PC0002
+  - IP Address: DHCP
+- **PC0003 - PC0007** These are other client computers similar to PC0001 and PC0002 that are used in the guide for various scenarios. The device names are incremented to avoid confusion. For example, PC0003 and PC0004 are running Windows 7 just like PC0002, but are used for Config Mgr refresh and replace scenarios, respectively.
 
 ## Sample files
 
