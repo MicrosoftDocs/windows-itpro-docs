@@ -148,7 +148,7 @@ realTimeProtectionEnabled               : true
     mdatp --health orgId
     ```
 
-2. Install the configuration file on a client machine:
+2. Run the Python script to install the configuration file:
 
     ```bash
     /usr/bin/python WindowsDefenderATPOnboarding.py

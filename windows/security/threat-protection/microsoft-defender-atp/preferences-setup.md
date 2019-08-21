@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
 ---
+
 # Configure Microsoft Defender Security Center settings
 
 **Applies to:**
@@ -34,4 +35,3 @@ Permissions | Manage portal access using RBAC as well as machine groups.
 APIs | Enable the threat intel and SIEM integration.
 Rules | Configure suppressions rules and automation settings.
 Machine management | Onboard and offboard machines.
-
