@@ -68,22 +68,13 @@ Look to the **version** number to determine the latest files that contain the mo
 The first file —  SurfacePro6_Win10_16299_1900307_0.msi  —  is the newest because its VERSION field has the newest build in 2019; the other files are from 2018.
 
 ## Supported devices
-Downloadable MSI files are available for Surface devices from Surface Pro 2 and later. 
+Downloadable MSI files are available for Surface devices from Surface Pro 2 and later.
 
-
-[!NOTE]
-There are no downloadable firmware or driver updates available for Surface devices with Windows RT, including Surface RT and Surface 2. Updates can only be applied using Windows Update.
+>[!NOTE]
+>There are no downloadable firmware or driver updates available for Surface devices with Windows RT, including Surface RT and Surface 2. Updates can only be applied using Windows Update.
 
 For more information about deploying Surface drivers and firmware, refer to:
 
 - [Manage Surface driver and firmware updates](https://docs.microsoft.com/surface/manage-surface-pro-3-firmware-updates)
 
 - [Microsoft Surface support for business](https://www.microsoft.com/surface/support/business)
-
-
- 
-
-
-
-
-
