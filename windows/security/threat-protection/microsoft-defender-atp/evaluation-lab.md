@@ -43,6 +43,13 @@ When you access the evaluation lab for the first time, you'll find an introducti
 
 It's a good idea to read the guide before starting the evaluation process so that you can conduct a thorough assessment of the platform.
 
+>[!NOTE]
+>- Each environment is provisioned with only three test machines.
+>- Each machine will be available for only three days from the day of activation.
+>- When you've used up these three machines, no new machines are provided.
+Deleting a machine does not refresh the available test machine count.
+>- Given the limited resources, it’s advisable to use the machines carefully.
+
 
 ## Evaluation setup 
 When you add a machine to your environment, Microsoft Defender ATP sets up a well-configured machine with connection details. The machine will be configured with the most up to date version of Windows 10 and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals.
@@ -78,7 +85,11 @@ Automated investigation settings will be dependent on tenant settings. It will b
 3. Select **Add machine**.
 
     >[!WARNING]
-    > The evaluation environment can only be provisioned up to three test machines. Each machine will only be available for three days from the day of activation. 
+    >- Each environment is provisioned with only three test machines.
+    >- Each machine will be available for only three days from the day of activation.
+    >- When you've used up these three machines, no new machines are provided.
+        Deleting a machine does not refresh the available test machine count.
+    >- Given the limited resources, it’s advisable to use the machines carefully.
 
    ![Image of add machine](images/evaluation-add-machine.png)
 
