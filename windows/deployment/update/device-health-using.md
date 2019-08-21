@@ -8,8 +8,8 @@ ms.mktglfcycl: deploy
 keywords: oms, operations management suite, wdav, health, log analytics
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+author: stephow-MSFT
+ms.author: stephow
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
