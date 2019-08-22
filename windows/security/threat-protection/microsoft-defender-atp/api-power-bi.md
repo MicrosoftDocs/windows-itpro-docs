@@ -104,7 +104,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 - The only difference from the above example is the query inside the editor. 
 
-- Copy the below and paste it in the editor to pull all Machine Actions from your organization:
+- Copy the below and paste it in the editor to pull all **Machine Actions** from your organization:
 
 ```
 	let
@@ -117,9 +117,9 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 ```
 
-- You can do the same for Alerts and Machines.
+- You can do the same for **Alerts** and **Machines**.
 
-- You also can use OData queries for filtering the results, see [Using OData Queries](exposed-apis-odata-samples.md)
+- You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md)
 
 ## Related topic
 - [Microsoft Defender ATP APIs](apis-intro.md)
