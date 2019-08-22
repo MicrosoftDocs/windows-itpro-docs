@@ -14,7 +14,7 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 08/21/2019
+ms.date: 8/21/2019
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
@@ -1889,7 +1889,8 @@ For China releases of Windows 10 there is one additional Regkey to be set to pre
 
 - Add a REG_DWORD value named **HapDownloadEnabled** to **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\LexiconUpdate\\loc_0804** and set the value to 0.
 
-### <a href="" id="bkmk-allowedtraffic"></a>
+### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
+
 |**Allowed traffic endpoints** | 
 | --- | 
 |activation-v2.sls.microsoft.com/*|
