@@ -14,7 +14,7 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 05/16/2019
+ms.date: 08/21/2019
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
