@@ -46,8 +46,6 @@ Note that **Get Help** and **Give us Feedback** links no longer work after the W
 
 To use Microsoft InTune cloud based device management for restricting traffic please refer to the [Manage connections from Windows operating system components to Microsoft services using MDM](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm).
 
-We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
-
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by sending email to **telmhelp@microsoft.com**.
 
 The "Allowed Traffic" endpoints for are listed here: [Allowed Traffic](#bkmk-allowedtraffic) 
