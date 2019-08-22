@@ -1268,10 +1268,10 @@ Replace **Enabled**
 ```
 
 ## DiagnosticLog CSP for triggering devices to upload files to cloud
-The DiagnosticLog CSP is used for triggering devices to upload existing event logs, log files, and registry values to cloud storage. The following section describes the nodes for the DiagnosticsArchive functionality.
+The DiagnosticLog CSP is used for triggering devices to upload existing event logs, log files, and registry values to cloud storage. The following section describes the nodes for the DiagnosticArchive functionality.
 
 <a href="" id="diagnosticarchive"></a>**DiagnosticArchive**  
-Added in Windows 10, version 1903. Root note for the DiagnosticsArchive functionality. 
+Added in Windows 10, version 1903. Root note for the DiagnosticArchive functionality. 
 
 The supported operation is Get.
 
@@ -1318,7 +1318,7 @@ The supported operation is Get.
 
 The data type is string. 
 
-A Get to the above URI will return the results of the gathering of data for the last diagnostics request. So for the example above it returns:
+A Get to the above URI will return the results of the gathering of data for the last diagnostics request. For the example above it returns:
 
 ``` xml
 <SyncML>
