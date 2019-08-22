@@ -24,7 +24,7 @@ If you want to minimize connections from Windows to Microsoft services, or confi
 
 Note: CRL and OCSP network traffic is currently whitelisted and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.
 
-Note: For security reasons you must very carefully decide which settings to configure as many of them will result in an insecure device.  Examples of settings that we strongly recommend against and will result in an potentially insecure device configuration are: disabling Windows Update, disabling Automatic Root Certificates Update, and disabling Windows Defender. It is not recommended to disable any of these features. 
+Note: For security reasons you must very carefully decide which settings to configure as many of them will result in an insecure device.  Examples of settings that we strongly recommend against and will result in an potentially insecure device configuration are: disabling Windows Update and disabling Windows Defender. It is not recommended to disable either of these features. 
 
 You can configure diagnostic data at the Security/Basic level, turn off Windows Defender diagnostic data and MSRT (Malicious Software Removal Tool) reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. However, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists, which is why we *strongly* recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
 
@@ -32,17 +32,15 @@ You can use Microsoft Intune with MDM CSPs and custom [OMA URIs](https://docs.mi
 
 To ensure CSPs take priority over Group Policies in case of conflicts, use the [ControlPolicyConflict](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy.
 
-You can configure diagnostic data at the Security/Basic level, turn off Windows Defender diagnostic data and MSRT (Malicious Software Removal Tool) reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. There are many reasons why these communications are enabled by default, such as updating malware definitions and maintain current certificate revocation lists, which is why we strongly recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
-
-Note, there is some traffic which is required (i.e. "whitelisted") for the operation of Windows and the Microsoft InTune based management.  This traffic includes CRL and OCSP network traffic which will show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.  Additional whitelisted traffic specifically for MDM managed devices includes Windows Notification Service related traffic as well as some specific Microsoft InTune and Windows Update related traffic.
+There is some traffic which is required (i.e. "Allowed Traffic") for the operation of Windows and Microsoft Intune based management.  This traffic includes CRL and OCSP network traffic which will show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.  Additional "Allowed Traffic" specifically for MDM managed devices includes Windows Notification Service related traffic as well as some specific Microsoft Intune and Windows Update related traffic.
 
 For more information on Microsoft Intune please see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](https://docs.microsoft.com/intune/).
 
 For detailed information about managing network connections to Microsoft services using Registries, Group Policies, or UI see [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services).
 
-Note that the Get Help and Give us Feedback links in Windows may no longer work after applying some or all of the MDM/CSP settings.  However, we are always striving to improve our documentation and welcome your feedback. You can provide feedback by sending email to telmhelp@microsoft.com.
+Note that the **Get Help** and **Give us Feedback** links in Windows may no longer work after applying some or all of the MDM/CSP settings.  However, we are always striving to improve our documentation and welcome your feedback. You can provide feedback by sending email to **telmhelp@microsoft.com**.
 
-The endpoints for the MDM Allowed Traffic are in the [Allowed Traffic](#bkmk-mdm-allowedtraffic). 
+The "Allowed Traffic" endpoints for an MDM configuration are here: [Allowed Traffic](#bkmk-mdm-allowedtraffic). 
 
 
 ### Settings for Windows 10 Enterprise edition 1903 and newer
