@@ -14862,9 +14862,9 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-atp/run-advanced-query-sample-ms-flow.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-sample-ms-flow",
-"redirect_document_id": true
+  "source_path": "windows/security/threat-protection/windows-defender-atp/api-microsoft-flow.md",
+  "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/api-microsoft-flow",
+  "redirect_document_id": true
 },
 {
   "source_path": "windows/security/threat-protection/windows-defender-atp/api-power-bi.md",

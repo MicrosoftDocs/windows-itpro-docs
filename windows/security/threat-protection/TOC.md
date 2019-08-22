@@ -418,7 +418,7 @@
 ####### [Get user related machines](microsoft-defender-atp/get-user-related-machines.md)
 
 ##### [How to use APIs - Samples]()
-###### [Microsoft Flow](microsoft-defender-atp/run-advanced-query-sample-ms-flow.md)
+###### [Microsoft Flow](microsoft-defender-atp/api-microsoft-flow.md)
 ###### [Power BI](microsoft-defender-atp/api-power-bi.md)
 ###### [Advanced Hunting using Python](microsoft-defender-atp/run-advanced-query-sample-python.md)
 ###### [Advanced Hunting using PowerShell](microsoft-defender-atp/run-advanced-query-sample-powershell.md)

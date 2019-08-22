@@ -1,5 +1,5 @@
 ---
-title: Power BI
+title: Microsoft Defender ATP APIs connection to Power BI
 ms.reviewer: 
 description: Create custom reports using Power BI
 keywords: apis, supported apis, Power BI, reports
@@ -109,7 +109,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 ```
 	let
 
-		Query = "MachineACtions",
+		Query = "MachineActions",
 
 		Source = OData.Feed("https://api.securitycenter.windows.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
 	in
