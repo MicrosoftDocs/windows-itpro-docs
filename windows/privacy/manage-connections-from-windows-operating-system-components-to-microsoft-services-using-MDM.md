@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: medgarmedgar
 ms.author: v-medgar
-ms.date: 7/9/2019
+ms.date: 8/21/2019
 ---
 
 # Manage connections from Windows operating system components to Microsoft services using Microsoft Intune MDM Server
@@ -18,7 +18,17 @@ ms.date: 7/9/2019
 
 -   Windows 10 Enterprise 1903 version and newer
 
-You can use Microsoft InTune with MDM CSPs and custom [OMA URIs](https://docs.microsoft.com/intune/custom-settings-windows-10) to minimize connections from Windows to Microsoft services, or to configure particular privacy settings. You can configure diagnostic data at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
+Learn about the network connections that Windows components make to Microsoft in addition to the privacy settings that affect the data which is shared with either Microsoft or apps and how they can be managed by an IT Pro using MDM/CSP and custom OMA URIs policies.
+
+If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure diagnostic data at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
+
+Note: CRL and OCSP network traffic is currently whitelisted and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.
+
+Note: For security reasons you must very carefully decide which settings to configure as many of them will result in an insecure device.  Examples of settings that we strongly recommend against and will result in an potentially insecure device configuration are: disabling Windows Update, disabling Automatic Root Certificates Update, and disabling Windows Defender. It is not recommended to disable any of these features. 
+
+You can configure diagnostic data at the Security/Basic level, turn off Windows Defender diagnostic data and MSRT (Malicious Software Removal Tool) reporting, and turn off all other connections to Microsoft network endpoints as described in this article to help prevent Windows from sending any data to Microsoft. However, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists, which is why we *strongly* recommend against this. This data helps us deliver a secure, reliable, and more delightful personalized experience.
+
+You can use Microsoft Intune with MDM CSPs and custom [OMA URIs](https://docs.microsoft.com/intune/custom-settings-windows-10) to minimize connections from Windows to Microsoft services, or to configure particular privacy settings. You can configure diagnostic data at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
 To ensure CSPs take priority over Group Policies in case of conflicts, use the [ControlPolicyConflict](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy.
 
@@ -26,12 +36,13 @@ You can configure diagnostic data at the Security/Basic level, turn off Windows 
 
 Note, there is some traffic which is required (i.e. "whitelisted") for the operation of Windows and the Microsoft InTune based management.  This traffic includes CRL and OCSP network traffic which will show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.  Additional whitelisted traffic specifically for MDM managed devices includes Windows Notification Service related traffic as well as some specific Microsoft InTune and Windows Update related traffic.
 
-For more information on Microsoft InTune please see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](https://docs.microsoft.com/intune/).
+For more information on Microsoft Intune please see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](https://docs.microsoft.com/intune/).
 
 For detailed information about managing network connections to Microsoft services using Registries, Group Policies, or UI see [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services).
 
+Note that the Get Help and Give us Feedback links in Windows may no longer work after applying some or all of the MDM/CSP settings.  However, we are always striving to improve our documentation and welcome your feedback. You can provide feedback by sending email to telmhelp@microsoft.com.
 
-The endpoints for the MDM “whitelisted” traffic are in the [Whitelisted Traffic](#bkmk-mdm-whitelist). 
+The endpoints for the MDM Allowed Traffic are in the [Allowed Traffic](#bkmk-mdm-allowedtraffic). 
 
 
 ### Settings for Windows 10 Enterprise edition 1903 and newer
@@ -150,7 +161,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
    1. Windows Update Service URL - [Update/UpdateServiceUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-updateserviceurl). Allows the device to check for updates from a WSUS server instead of Microsoft Update. **Set to String** with the Value: 
       1. **\<Replace>\<CmdID>$CmdID$</CmdID>\<Item>\<Meta>\<Format>chr</Format>\<Type>text/plain</Type>\</Meta>\<Target> \<LocURI>./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl</LocURI>\</Target>\<Data>http://abcd-srv:8530</Data>\</Item>\</Replace>**
 
-### <a href="" id="bkmk-mdm-whitelist"></a> Allowed traffic ("Whitelisted traffic") for Microsoft InTune / MDM configurations
+### <a href="" id="bkmk-mdm-allowedtraffic"></a> Allowed traffic for Microsoft Intune / MDM configurations
 
 |**Allowed traffic endpoints** | 
 | --- | 
