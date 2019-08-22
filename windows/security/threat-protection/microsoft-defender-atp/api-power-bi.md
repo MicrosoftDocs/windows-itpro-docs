@@ -23,7 +23,7 @@ ms.topic: article
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-In this section you will learn create a Power BI report on top of the Microsoft Defender ATP APIs.
+In this section you will learn create a Power BI report on top of Microsoft Defender ATP APIs.
 
 The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs (e.g. Machine Actions, Alerts, etc..)
 
@@ -79,14 +79,6 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 	in Table
 
 ```
-	let
-
-		Query = "MachineACtions",
-
-		Source = OData.Feed("https://api.securitycenter.windows.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
-	in
-		Source
-```
 
 - Click **Done**
 
@@ -106,13 +98,22 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 - Now the results of your query will appear as table and you can start build visualizations on top of it!
 
-- You can duplicate this table, rename it and edit the Advanced Hunting query inside to your custom data.
+- You can duplicate this table, rename it and edit the Advanced Hunting query inside to get any data you would like.
 
 ## Connect Power BI to OData APIs
 
 - The only difference from the above example is the query inside the editor. 
 
 - Copy the below and paste it in the editor to pull all Machine Actions from your organization:
+
+```
+	let
+
+		Query = "MachineACtions",
+
+		Source = OData.Feed("https://api.securitycenter.windows.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
+	in
+		Source
 
 ```
 
