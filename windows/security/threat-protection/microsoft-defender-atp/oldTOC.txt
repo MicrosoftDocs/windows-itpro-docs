@@ -413,15 +413,10 @@
 ####### [Get user related machines](get-user-related-machines.md)
 
 ##### [How to use APIs - Samples]()
-###### [Advanced Hunting API]()
-####### [Schedule advanced Hunting using Microsoft Flow](run-advanced-query-sample-ms-flow.md)
-####### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
-####### [Advanced Hunting using Python](run-advanced-query-sample-python.md)
-####### [Create custom Power BI reports](run-advanced-query-sample-power-bi-app-token.md)
-
-###### [Multiple APIs]()
-####### [PowerShell](exposed-apis-full-sample-powershell.md)
-
+###### [Microsoft Flow](run-advanced-query-sample-ms-flow.md)
+###### [Power BI](api-power-bi.md)
+###### [Advanced Hunting using Python](run-advanced-query-sample-python.md)
+###### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Using OData Queries](exposed-apis-odata-samples.md)
 
 #### [API for custom alerts]()
