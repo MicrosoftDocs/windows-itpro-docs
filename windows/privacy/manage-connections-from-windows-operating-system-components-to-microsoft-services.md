@@ -50,7 +50,7 @@ We are always striving to improve our documentation and welcome your feedback. Y
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by sending email to **telmhelp@microsoft.com**.
 
-The "Allowed Traffic" endpoints for are listed here: [Allowed Traffic](#bkmk-allowedtraffic). 
+The "Allowed Traffic" endpoints for are listed here: [Allowed Traffic](#bkmk-allowedtraffic) 
 
 
 ## <a href="" id="bkmk-othersettings"></a>Management options for each setting
