@@ -1889,6 +1889,8 @@ For China releases of Windows 10 there is one additional Regkey to be set to pre
 
 - Add a REG_DWORD value named **HapDownloadEnabled** to **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\LexiconUpdate\\loc_0804** and set the value to 0.
 
+
+
 ### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
 
 |**Allowed traffic endpoints** | 
