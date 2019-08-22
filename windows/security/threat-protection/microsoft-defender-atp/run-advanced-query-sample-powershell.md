@@ -117,4 +117,3 @@ $results | ConvertTo-Json | Set-Content file1.json
 - [Microsoft Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using Python](run-advanced-query-sample-python.md)
-- [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)
