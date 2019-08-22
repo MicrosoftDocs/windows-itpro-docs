@@ -40,7 +40,7 @@ For detailed information about managing network connections to Microsoft service
 
 Note that the **Get Help** and **Give us Feedback** links in Windows may no longer work after applying some or all of the MDM/CSP settings.  However, we are always striving to improve our documentation and welcome your feedback. You can provide feedback by sending email to **telmhelp@microsoft.com**.
 
-The "Allowed Traffic" endpoints for an MDM configuration are here: [Allowed Traffic](#bkmk-mdm-allowedtraffic). 
+The "Allowed Traffic" endpoints for an MDM configuration are here: [Allowed Traffic](#bkmk-mdm-allowedtraffic) 
 
 
 ### Settings for Windows 10 Enterprise edition 1903 and newer
