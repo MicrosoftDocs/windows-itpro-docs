@@ -1322,32 +1322,32 @@ A Get to the above URI will return the results of the gathering of data for the 
 
 ``` xml
 <SyncML>
-<SyncHdr/>
-<SyncBody>
-<Status>
-<CmdID>1</CmdID>
-<MsgRef>1</MsgRef>
-<CmdRef>0</CmdRef>
-<Cmd>SyncHdr</Cmd>
-<Data>200</Data>
-</Status>
-<Status>
-<CmdID>2</CmdID>
-<MsgRef>1</MsgRef>
-<CmdRef>1</CmdRef>
-<Cmd>Get</Cmd>
-<Data>200</Data>
-</Status>
-<Results>
-<CmdID>3</CmdID>
-<MsgRef>1</MsgRef>
-<CmdRef>1</CmdRef>
-<Item>
-<Source>
-<LocURI>./Vendor/MSFT/DiagnosticLog/DiagnosticArchive/ArchiveResults</LocURI>
-</Source>
-<Data>
-<Collection HRESULT="0">
+    <SyncHdr/>
+      <SyncBody>
+          <Status>
+            <CmdID>1</CmdID>
+            <MsgRef>1</MsgRef>
+            <CmdRef>0</CmdRef>
+            <Cmd>SyncHdr</Cmd>
+            <Data>200</Data>
+          </Status>
+          <Status>
+            <CmdID>2</CmdID>
+            <MsgRef>1</MsgRef>
+            <CmdRef>1</CmdRef>
+            <Cmd>Get</Cmd>
+            <Data>200</Data>
+          </Status>
+          <Results>
+            <CmdID>3</CmdID>
+            <MsgRef>1</MsgRef>
+            <CmdRef>1</CmdRef>
+          <Item>
+            <Source>
+            <LocURI>./Vendor/MSFT/DiagnosticLog/DiagnosticArchive/ArchiveResults</LocURI>
+            </Source>
+          <Data>
+            <Collection HRESULT="0">
                 <ID>f1e20cb4-9789-4f6b-8f6a-766989764c6d</ID>
                 <RegistryKey HRESULT="0">HKLM\Software\Policies</RegistryKey>
                 <FoldersFiles HRESULT="0">C:\ProgramData\Microsoft\DiagnosticLogCSP\Collectors\*.etl</FoldersFiles>
@@ -1359,12 +1359,12 @@ A Get to the above URI will return the results of the gathering of data for the 
                 <FoldersFiles HRESULT="0">%ProgramData%\Microsoft\DiagnosticLogCSP\Collectors\*.etl</FoldersFiles>
                 <FoldersFiles HRESULT="0">%SystemRoot%\System32\LogFiles\wmi\*.etl.*</FoldersFiles>
                 <Command HRESULT="0">%windir%\system32\pnputil.exe /enum-drivers</Command>
-</Collection>
-</Data>
-</Item>
-</Results>
-<Final/>
-</SyncBody>
+              </Collection>
+          </Data>
+          </Item>
+          </Results>
+          <Final/>
+      </SyncBody>
 </SyncML>
 ```
 > [!Note]
