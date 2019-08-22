@@ -14,6 +14,11 @@ ms.date: 08/05/2019
 
 # DiagnosticLog CSP
 
+The DiagnosticLog configuration service provider (CSP) is used in the following scenarios:  
+- [Controlling ETW trace sessions](#diagnosticlog-csp-for-controlling-etw-trace-sessions)
+- [Triggering devices to upload existing event logs, log files, and registry values to cloud storage](#diagnosticlog-csp-for-triggering-devices-to-upload-files-to-cloud)
+
+## DiagnosticLog CSP for controlling ETW trace sessions
 The DiagnosticLog CSP is used for generating and collecting diagnostic information from the device: Event Tracing for Windows (ETW) log files and current MDM configured state of the device.
 
 DiagnosticLog CSP supports the following type of event tracing:
@@ -1262,12 +1267,13 @@ Replace **Enabled**
 </SyncML>
 ```
 
-<!--
+## DiagnosticLog CSP for triggering devices to upload files to cloud
+The DiagnosticLog CSP is used for triggering devices to upload existing event logs, log files, and registry values to cloud storage. The following section describes the nodes for the DiagnosticsArchive functionality.
+
 <a href="" id="diagnosticarchive"></a>**DiagnosticArchive**  
-Added in Windows 10, version 1903. Root note for archive definition and collection. 
+Added in Windows 10, version 1903. Root note for the DiagnosticsArchive functionality. 
 
 The supported operation is Get.
-
 
 <a href="" id="diagnosticarchive-archivedefinition"></a>**DiagnosticArchive/ArchiveDefinition**  
 Added in Windows 10, version 1903. 
@@ -1277,19 +1283,27 @@ The supported operations are Add and Execute.
 The data type is string.
 
 Expected value:
-Set and Execute are functionality equivalent, and each accepts an XML snippet (as a string) describing what data to gather and where to upload it when done.
+Set and Execute are functionality equivalent, and each accepts an XML snippet (as a string) describing what data to gather and where to upload it when done. This XML defines what should be collected and compressed into a zip file to be uploaded to Azure blog storage.
 
-The xml is in the following format:
+The following is an example of the XML. This example instructs that a zip file be created containing the output from a dump of the specified registry key, all the files in a folder, the output of two commands, all the files in another folder, the output of a command, all the Application events, two sets of files, and another command output. All of this will be uploaded to the blob storage URL as specified in the <SasUrl> tags and must be in the noted format with the container and the key in the URL. The administrator can retrieve this URL from Azure. The file uploaded will be in the format DiagLogs-{ComputerName}-YYYYMMDDTHHMMSSZ.zip.
 
 ``` xml
 <Collection>
-<ID>f1e20cb4-9789-4f6b-8f6a-766989764c6d</ID>​
-<SasUrl>xxxxxx</SasUrl>​
-<RegistryKey>HKLM\Software\Policies</RegistryKey>​
-<FoldersFiles>C:\ProgramData\Microsoft\DiagnosticLogCSP\Collectors\*.etl</FoldersFiles>​
-<Command>c:\windows\system32\ipconfig.exe /all</Command>​
-<Events>Application</Events>​
-</Collection>​
+             <ID>f1e20cb4-9789-4f6b-8f6a-766989764c6d</ID>
+             <SasUrl>{web address}/{container}{key}</SasUrl>
+             <RegistryKey>HKLM\Software\Policies</RegistryKey>
+             <FoldersFiles>C:\ProgramData\Microsoft\DiagnosticLogCSP\Collectors\*.etl</FoldersFiles>
+             <Command>%windir%\system32\ipconfig.exe /all</Command>
+             <Command>%windir%\system32\mdmdiagnosticstool.exe -out c:\ProgramData\temp\</Command>
+             <FoldersFiles>c:\ProgramData\temp\*.*</FoldersFiles>
+             <Command>%windir%\system32\ping.exe -n 50 localhost</Command>
+             <Events>Application</Events>
+             <FoldersFiles>%ProgramData%\Microsoft\DiagnosticLogCSP\Collectors\*.etl</FoldersFiles>
+             <FoldersFiles>%SystemRoot%\System32\LogFiles\wmi\*.etl.*
+             </FoldersFiles>
+             <Command>%windir%\system32\pnputil.exe /enum-drivers</Command>
+</Collection>
+
 ```
 Where:
 
@@ -1303,7 +1317,58 @@ Added in Windows 10, version 1903. This policy setting displays the results of t
 The supported operation is Get.
 
 The data type is string. 
--->
+
+A Get to the above URI will return the results of the gathering of data for the last diagnostics request. So for the example above it returns:
+
+``` xml
+<SyncML>
+<SyncHdr/>
+<SyncBody>
+<Status>
+<CmdID>1</CmdID>
+<MsgRef>1</MsgRef>
+<CmdRef>0</CmdRef>
+<Cmd>SyncHdr</Cmd>
+<Data>200</Data>
+</Status>
+<Status>
+<CmdID>2</CmdID>
+<MsgRef>1</MsgRef>
+<CmdRef>1</CmdRef>
+<Cmd>Get</Cmd>
+<Data>200</Data>
+</Status>
+<Results>
+<CmdID>3</CmdID>
+<MsgRef>1</MsgRef>
+<CmdRef>1</CmdRef>
+<Item>
+<Source>
+<LocURI>./Vendor/MSFT/DiagnosticLog/DiagnosticArchive/ArchiveResults</LocURI>
+</Source>
+<Data>
+<Collection HRESULT="0">
+                <ID>f1e20cb4-9789-4f6b-8f6a-766989764c6d</ID>
+                <RegistryKey HRESULT="0">HKLM\Software\Policies</RegistryKey>
+                <FoldersFiles HRESULT="0">C:\ProgramData\Microsoft\DiagnosticLogCSP\Collectors\*.etl</FoldersFiles>
+                <Command HRESULT="0">%windir%\system32\ipconfig.exe /all</Command>
+                <Command HRESULT="-2147024637">%windir%\system32\mdmdiagnosticstool.exe -out c:\ProgramData\temp\</Command>
+                <FoldersFiles HRESULT="0">c:\ProgramData\temp\*.*</FoldersFiles>
+                <Command HRESULT="0">%windir%\system32\ping.exe -n 50 localhost</Command>
+                <Events HRESULT="0">Application</Events>
+                <FoldersFiles HRESULT="0">%ProgramData%\Microsoft\DiagnosticLogCSP\Collectors\*.etl</FoldersFiles>
+                <FoldersFiles HRESULT="0">%SystemRoot%\System32\LogFiles\wmi\*.etl.*</FoldersFiles>
+                <Command HRESULT="0">%windir%\system32\pnputil.exe /enum-drivers</Command>
+</Collection>
+</Data>
+</Item>
+</Results>
+<Final/>
+</SyncBody>
+</SyncML>
+```
+> [!Note]
+> Each data gathering node is annotated with the HRESULT of the option and the collection is also annotated with an HRESULT. In this example, note that the mdmdiagnosticstool.exe command failed.
 
 ## Reading a log file
 To read a log file:  

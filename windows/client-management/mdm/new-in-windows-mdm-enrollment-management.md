@@ -56,6 +56,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [August 2019](#august-2019)
     - [July 2019](#july-2019)
     - [June 2019](#june-2019)
     - [May 2019](#may-2019)
@@ -141,6 +142,12 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <tr>
 <td style="vertical-align:top"><a href="applicationcontrol-csp.md" data-raw-source="[ApplicationControl CSP](applicationcontrol-csp.md)">ApplicationControl CSP</a></td>
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1903.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top"><a href="diagnosticlog-csp.md" data-raw-source="[DiagnosticLog CSP](diagnosticlog-csp.md)">DiagnosticLog CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new nodes in Windows 10, version 1903:<br>
+Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelName/MaximumFileSize, Policy/Channels/ChannelName/SDDL, Policy/Channels/ChannelName/ActionWhenFull, Policy/Channels/ChannelName/Enabled, DiagnosticArchive, DiagnosticArchive/ArchiveDefinition, DiagnosticArchive/ArchiveResults.
+</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top"><a href="enrollmentstatustracking-csp.md" data-raw-source="[EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md)">EnrollmentStatusTracking CSP</a></td>
@@ -1890,6 +1897,12 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+### August 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|[DiagnosticLog CSP](diagnosticlog-csp.md)|Added the following new nodes:<br>Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelName/MaximumFileSize, Policy/Channels/ChannelName/SDDL, Policy/Channels/ChannelName/ActionWhenFull, Policy/Channels/ChannelName/Enabled, DiagnosticArchive, DiagnosticArchive/ArchiveDefinition, DiagnosticArchive/ArchiveResults.|
+
 
 ### July 2019
 
