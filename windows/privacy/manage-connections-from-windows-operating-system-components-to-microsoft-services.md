@@ -48,6 +48,11 @@ To use Microsoft InTune cloud based device management for restricting traffic pl
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
+We are always striving to improve our documentation and welcome your feedback. You can provide feedback by sending email to **telmhelp@microsoft.com**.
+
+The "Allowed Traffic" endpoints for are listed here: [Allowed Traffic](#bkmk-allowedtraffic). 
+
+
 ## <a href="" id="bkmk-othersettings"></a>Management options for each setting
 
 The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT (Malicious Software Removal Tool) reporting, and turn off all of these connections.
@@ -1884,7 +1889,7 @@ For China releases of Windows 10 there is one additional Regkey to be set to pre
 
 - Add a REG_DWORD value named **HapDownloadEnabled** to **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\LexiconUpdate\\loc_0804** and set the value to 0.
 
-
+### <a href="" id="bkmk-allowedtraffic"></a>
 |**Allowed traffic endpoints** | 
 | --- | 
 |activation-v2.sls.microsoft.com/*|
