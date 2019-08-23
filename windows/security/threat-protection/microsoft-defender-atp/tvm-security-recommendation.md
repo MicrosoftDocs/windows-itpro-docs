@@ -54,6 +54,12 @@ From that page, you can do any of the following depending on what you need to do
 
 - Choose from exception options - Submit an exception, provide justification, and set exception duration if you can't remediate the issue just yet due to specific business reasons, compensation controls, or if it is a false positive. 
 
+## Report inaccuracy
+
+You can report on a false positive when you see any vague, inaccurate, incomplete, or already remediated information in the software, recommendation, vulnerability, or machine page.
+
+Click **:**, then select the inaccuracy category from the dropdown menu, and the feedback is immediately sent to the Threat & Vulnerability Management experts with its context.
+
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
