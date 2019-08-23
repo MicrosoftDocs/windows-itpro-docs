@@ -18,16 +18,17 @@ ms.localizationpriority: Medium
 Whether you are a small or large business, a Surface Hub adoption plan is critical in generating the right use cases and helping your users become comfortable with the device. Check out these downloadable guides designed to help you deliver training across your organization.
 
 ## Adoption toolkit
+
 - [Surface Hub adoption toolkit](downloads/SurfaceHubAdoptionToolKit.pdf)
 
 ## Training guides
+
 - [Training guide – end user](downloads/TrainingGuide-SurfaceHub2S-EndUser.pdf)
 - [Training guide – power user](downloads/TrainingGuide-SurfaceHub2S-PowerUser.pdf)
 - [Training guide – help desk](downloads/TrainingGuide-SurfaceHub2S-HelpDesk.pdf)
 - [Training guide – Microsoft Teams desktop](downloads/Guide-SurfaceHub2S-Teams.pptx)
 
 [Download all training guides](http://download.microsoft.com/download/2/2/3/2234F70E-E65A-4790-93DF-F4C373A75B8E/SurfaceHub2S-TrainerGuides-July2019.zip)
-
 
 ## End user guides
 
