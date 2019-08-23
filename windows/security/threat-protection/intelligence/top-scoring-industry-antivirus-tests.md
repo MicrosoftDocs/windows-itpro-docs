@@ -72,7 +72,7 @@ SE Labs tests a range of solutions used by products and services to detect and/o
 
 - Enterprise Endpoint Protection January - March 2019: [AAA award](https://selabs.uk/download/enterprise/epp/2019/jan-mar-2019-enterprise.pdf) <sup>**pdf**</sup>
 
-- Enterprise Endpoint Protection October - December 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/oct-dec-2018-enterprise.pdf) <sup>**pdf**</sup>
+- Enterprise Endpoint Protection October - December 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/oct-dec-2018-enterprise.pdf) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE33cdd) <sup>**pdf**</sup>
 
 - Enterprise Endpoint Protection July - September 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/jul-sep-2018-enterprise.pdf) <sup>**pdf**</sup>
 
