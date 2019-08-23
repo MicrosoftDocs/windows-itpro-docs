@@ -35,7 +35,7 @@ For the purposes of this topic, we will use three computers: DC01, MDT01, and PC
 
 ## The reference image
 
-The reference image described in this guide is designed primarily for deployment to physical devices. However, the reference image is created on a virtual platform, before being automatically run through the System Preparation (Sysprep) tool process and captured to a Windows Imaging (WIM) file. The reasons for creating the reference image on a virtual platform are the following:
+The reference image described in this guide is designed primarily for deployment to physical devices. However, the reference image is typically created on a virtual platform, before being automatically run through the System Preparation (Sysprep) tool process and captured to a Windows Imaging (WIM) file. The reasons for creating the reference image on a virtual platform are the following:
 - You reduce development time and can use snapshots to test different configurations quickly.
 - You rule out hardware issues. You simply get the best possible image, and if you have a problem, it's not likely to be hardware related.
 - It ensures that you won't have unwanted applications that could be installed as part of a driver install but not removed by the Sysprep process.
@@ -58,9 +58,9 @@ With Windows 10, there is no hard requirement to create reference images. Howev
 - Review the Summary page, click **Next**, wait for the deployment share to be created, then click **Finish**.
 - Verify that you can access the <b>\\\\MDT01\\MDTBuildLab$</b> share.
 
-![figure 2](../images/mdt-08-fig02.png)
+   ![figure 2](../images/mdt-08-fig02.png)
 
-The Deployment Workbench with the MDT Build Lab deployment share.
+   The Deployment Workbench with the MDT Build Lab deployment share.
 
 ### Configure permissions for the deployment share
 
