@@ -418,15 +418,10 @@
 ####### [Get user related machines](microsoft-defender-atp/get-user-related-machines.md)
 
 ##### [How to use APIs - Samples]()
-###### [Advanced Hunting API]()
-####### [Schedule advanced Hunting using Microsoft Flow](microsoft-defender-atp/run-advanced-query-sample-ms-flow.md)
-####### [Advanced Hunting using PowerShell](microsoft-defender-atp/run-advanced-query-sample-powershell.md)
-####### [Advanced Hunting using Python](microsoft-defender-atp/run-advanced-query-sample-python.md)
-####### [Create custom Power BI reports](microsoft-defender-atp/run-advanced-query-sample-power-bi-app-token.md)
-
-###### [Multiple APIs]()
-####### [PowerShell](microsoft-defender-atp/exposed-apis-full-sample-powershell.md)
-
+###### [Microsoft Flow](microsoft-defender-atp/api-microsoft-flow.md)
+###### [Power BI](microsoft-defender-atp/api-power-bi.md)
+###### [Advanced Hunting using Python](microsoft-defender-atp/run-advanced-query-sample-python.md)
+###### [Advanced Hunting using PowerShell](microsoft-defender-atp/run-advanced-query-sample-powershell.md)
 ###### [Using OData Queries](microsoft-defender-atp/exposed-apis-odata-samples.md)
 
 #### [Windows updates (KB) info]()
