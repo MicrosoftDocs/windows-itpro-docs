@@ -17,7 +17,7 @@ ms.topic: article
 ms.date: 8/23/2019
 ---
 
-# Manage connections from Windows operating system components to Microsoft services
+# Manage connections from Windows 10 operating system components to Microsoft services
 
 **Applies to** 
 
