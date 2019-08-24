@@ -20,6 +20,12 @@ sections:
     text: "
       Find information on known issues for Windows 10, version 1703. Looking for a specific issue? Press CTRL + F (or Command + F if you are using a Mac) and enter your search term(s).
       
+ <table border = '0' class='box-info'><tr>
+<td bgcolor='#d3f1fb' class='alert is-primary'><b>Current status as of August 23, 2019</b>:<br>
+      <div>The Enterprise and Education editions of Windows 10, version 1703 (the Windows 10 Creators Update) will reach end of life on October 9, 2019. The Home, Pro, Pro for Workstations, and IoT Core editions reached end of service on October 8, 2018.<br><br>There is no extended support available for any edition of Windows 10, version 1703. Therefore, it will no longer be supported after October 9, 2019 and will not receive monthly security and quality updates containing protections from the latest security threats.<br><br>To continue receiving security and quality updates, Microsoft recommends that you update your devices to the latest version of Windows 10. For more information on end of service dates and currently supported versions of Windows 10, see the <a href='https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet' target='_blank'>Windows lifecycle fact sheet</a>.
+</div>
+</td></tr></table>
+
       " 
 
 - items:
