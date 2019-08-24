@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: medgarmedgar
 ms.author: v-medgar
-ms.date: 8/21/2019
+ms.date: 8/23/2019
 ---
 
 # Manage connections from Windows operating system components to Microsoft services using Microsoft Intune MDM Server
@@ -22,7 +22,7 @@ Learn about the network connections that Windows components make to Microsoft in
 
 If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider. You can configure diagnostic data at the lowest level for your edition of Windows, and also evaluate which other connections Windows makes to Microsoft services you want to turn off in your environment from the list in this article.
 
-Note: CRL and OCSP network traffic is currently whitelisted and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.
+Note: CRL and OCSP network traffic is currently Allowed Traffic and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of them, but there are many others, such as DigiCert, Thawte, Google, Symantec, and VeriSign.
 
 Note: For security reasons you must very carefully decide which settings to configure as many of them will result in an insecure device.  Examples of settings that we strongly recommend against and will result in an potentially insecure device configuration are: disabling Windows Update and disabling Windows Defender. It is not recommended to disable either of these features. 
 
