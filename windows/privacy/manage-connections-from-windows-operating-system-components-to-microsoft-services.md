@@ -39,7 +39,7 @@ However, if you still wish to quickly configure all of the settings covered in t
 
 To use Microsoft Intune cloud based device management for restricting traffic please refer to the [Manage connections from Windows operating system components to Microsoft services using MDM](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm).
 
-We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting **telmhelp@microsoft.com**.
+We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting **telmhelp**@**microsoft.com**.
 
 The "Allowed Traffic" endpoints  are listed at the bottom of this article.  To jump to that section click: [Allowed Traffic](#bkmk-allowedtraffic) 
 
