@@ -25,23 +25,27 @@ ms.date: 8/23/2019
 - Windows Server 2016
 - Windows Server 2019
 
-This article describes the egress network connections that Windows 10 components make to Microsoft services, and it also provides the Windows settings, Group Policies and Registry settings available to IT Professionals to help manage those connections. If you would like to minimize the connections made from Windows 10 to Microsoft services, or custom configure certain Windows components to prevent egress network connections, there are several settings described in this article which you need to consider for your specific needs. For example, using the instructions in this article you could configure diagnostic data to the lowest level and individually evaluate each of the other connections Windows 10 makes to Microsoft services. 
+This article describes the network connections that Windows 10 components make to Microsoft and the Windows settings, Group Policies and registry settings available to IT Professionals to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article.  While it is possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
 
-Note: Even if all of the settings described in this article are applied CRL (Certificate Revocation List) and OCSP (Online Certificate Status Protocol) egress traffic will still exist since it is Allowed Traffic. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of these authorities and there are others such as DigiCert, Google, Symantec, Thawte, and VeriSign.
+Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887) package that will allow your organization to quickly configure the settings covered in this document to restrict connections from Windows 10 to Microsoft. The Windows Restricted Traffic Limited Baseline is based on [Group Policy Administrative Template](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) functionality and the package you download contains further instructions on how to deploy to devices in your organization. Since some of the settings can reduce the functionality and security configuration of your device, **before deploying Windows Restricted Traffic Limited Functionality Baseline** make sure you **choose the right settings configuration for your environment** and **ensure that Windows and Windows Defender are fully up to date**. Failure to do so may result in errors or unexpected behavior. You should not extract this package to the windows\system32 folder because it will not apply correctly.
 
-For security reasons, it is important to carefully decide which settings to configure since several important settings will result in a less secure device. Examples of these settings are: Windows Update, Automatic Root Certificates Update, and Windows Defender. We do not recommended disabling any of these features as they help Microsoft deliver a secure, reliable, and more delightful personalized experience.
+Notes: 
+- The Allowed Traffic endpoints are listed here: Allowed Traffic.
+ --	 CRL (Certificate Revocation List) and OCSP (Online Certificate Status Protocol) network traffic cannot be disabled and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of these authorities. There are many others such as DigiCert, Thawte, Google, Symantec, and VeriSign.
+- For security reasons, it is important to take care in deciding which settings to configure as some of them may result in a less secure device. Examples of settings that can lead to a less secure device configuration include: disabling Windows Update, disabling Automatic Root Certificates Update, and disabling Windows Defender. Accordingly, we do not recommend disabling any of these features.
+- It is recommended that you restart a device after making configuration changes to it. 
+- The Get Help and Give us Feedback links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
 
-However, if you still wish to quickly configure all of the settings covered in this article you can do so by running the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887) script on devices in your organization. This is an automated script to help IT Professionals apply all the settings easily and accurately. **Before running the script ensure that Windows 10 and Windows Defender are fully up to date**. Failure to do so may result in errors or unexpected behavior. Here are a few important deployment notes in the event you decide to run the Windows Restricted Traffic Limited Functionality Baseline script: 
-
-- You should not extract this package to the windows\system32 folder because it will not apply correctly 
-- It is recommended that you restart the device after making configuration changes to it.
-- **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline has been applied.
-
-To use Microsoft Intune cloud based device management for restricting traffic please refer to the [Manage connections from Windows operating system components to Microsoft services using MDM](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm).
+To use Microsoft InTune cloud based device management for restricting traffic please refer to the [Manage connections from Windows operating system components to Microsoft services using MDM](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting **telmhelp**@**microsoft.com**.
 
-The "Allowed Traffic" endpoints  are listed at the bottom of this article.  To jump to that section click: [Allowed Traffic](#bkmk-allowedtraffic) 
+Management options for each setting
+
+The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure diagnostic data at the Security level, turn off Windows Defender diagnostic data and MSRT reporting, and turn off all of these connections.
+Settings for Windows 10 Enterprise edition
+
+The following table lists management options for each setting, beginning with Windows 10 Enterprise version 1607.
 
 
 ## <a href="" id="bkmk-othersettings"></a>Management options for each setting
