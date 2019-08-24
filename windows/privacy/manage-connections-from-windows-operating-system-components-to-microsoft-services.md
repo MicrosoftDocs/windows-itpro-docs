@@ -32,9 +32,10 @@ Note: CRL (Certificate Revocation List) and OCSP (Online Certificate Status Prot
 For security reasons, it is important to carefully decide which settings to configure since several important settings will result in a less secure device. Examples of these settings are: Windows Update, Automatic Root Certificates Update, and Windows Defender. We do not recommended disabling any of these features as they help Microsoft deliver a secure, reliable, and more delightful personalized experience.
 
 However, if you still wish to quickly configure all of the settings covered in this article you can do so by running the [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887) script on devices in your organization. This is an automated script to help IT Professionals apply all the settings easily and accurately. **Before running the script ensure that Windows 10 and Windows Defender are fully up to date**. Failure to do so may result in errors or unexpected behavior. Here are a few important deployment notes in the event you decide to run the Windows Restricted Traffic Limited Functionality Baseline script: 
-•	You should not extract this package to the windows\system32 folder because it will not apply correctly 
-•	It is recommended that you restart the device after making configuration changes to it.
-•	**Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline has been applied.
+
+- You should not extract this package to the windows\system32 folder because it will not apply correctly 
+- It is recommended that you restart the device after making configuration changes to it.
+- **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline has been applied.
 
 To use Microsoft Intune cloud based device management for restricting traffic please refer to the [Manage connections from Windows operating system components to Microsoft services using MDM](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm).
 
