@@ -31,7 +31,7 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 
 Notes: 
 - The Allowed Traffic endpoints are listed here: Allowed Traffic.
- --	 CRL (Certificate Revocation List) and OCSP (Online Certificate Status Protocol) network traffic cannot be disabled and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of these authorities. There are many others such as DigiCert, Thawte, Google, Symantec, and VeriSign.
+    -   CRL (Certificate Revocation List) and OCSP (Online Certificate Status Protocol) network traffic cannot be disabled and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of these authorities. There are many others such as DigiCert, Thawte, Google, Symantec, and VeriSign.
 - For security reasons, it is important to take care in deciding which settings to configure as some of them may result in a less secure device. Examples of settings that can lead to a less secure device configuration include: disabling Windows Update, disabling Automatic Root Certificates Update, and disabling Windows Defender. Accordingly, we do not recommend disabling any of these features.
 - It is recommended that you restart a device after making configuration changes to it. 
 - The Get Help and Give us Feedback links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
