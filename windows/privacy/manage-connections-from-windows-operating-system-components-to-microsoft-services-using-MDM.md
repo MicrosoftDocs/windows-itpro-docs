@@ -31,7 +31,7 @@ Notes:
 
 For more information on Microsoft Intune please see [Transform IT service delivery for your modern workplace](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune?rtc=1) and [Microsoft Intune documentation](https://docs.microsoft.com/intune/).
 
-For detailed information about managing network connections to Microsoft services using Windows Settings, Group Policies and Registry settings see [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services).
+For detailed information about managing network connections to Microsoft services using Windows Settings, Group Policies and Registry settings see [Manage connections from Windows 10 operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services).
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by sending email to **telmhelp**@**microsoft.com**. 
 
