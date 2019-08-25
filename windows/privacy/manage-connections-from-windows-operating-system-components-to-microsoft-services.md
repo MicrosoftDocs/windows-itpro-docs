@@ -34,7 +34,7 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 >     -   CRL (Certificate Revocation List) and OCSP (Online Certificate Status Protocol) network traffic cannot be disabled and will still show up in network traces. CRL and OCSP checks are made to the issuing certificate authorities. Microsoft is one of these authorities. There are many others such as DigiCert, Thawte, Google, Symantec, and VeriSign.
 > - For security reasons, it is important to take care in deciding which settings to configure as some of them may result in a less secure device. Examples of settings that can lead to a less secure device configuration include: Windows Update, Automatic Root Certificates Update, and Windows Defender. Accordingly, we do not recommend disabling any of these features.
 > - It is recommended that you restart a device after making configuration changes to it. 
-> - The Get Help and Give us Feedback links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
+> - The **Get Help** and **Give us Feedback** links no longer work after the Windows Restricted Traffic Limited Functionality Baseline is applied.
 
 To use Microsoft InTune cloud based device management for restricting traffic please refer to the [Manage connections from Windows operating system components to Microsoft services using MDM](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
 
@@ -225,7 +225,7 @@ For more information, see [Automatic Root Certificates Update Configuration](htt
 Although not recommended, you can turn off Automatic Root Certificates Update, which also prevents updates to the disallowed certificate list and the pin rules list.
 
 > [!CAUTION]
-> By not automatically downloading the root certificates, the device might have not been able to connect to some websites.
+> By not automatically downloading the root certificates the device may not be able to connect to some websites.
 
 For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 2016 Server Core:
 
