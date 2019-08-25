@@ -258,8 +258,9 @@ The following table lists the installation prerequisites for the MBAM Administra
 <td align="left"><p>Windows Server Features</p></td>
 <td align="left"><p><strong>.NET Framework 4.5 features:</strong></p>
 <ul>
-<li><p><strong>.NET Framework 4.5</strong></p>
+<li><p><strong>.NET Framework 4.5 or 4.6</strong></p>
 <ul>
+<li><p><strong>Windows Server 2016</strong> - .NET Framework 4.6 is already installed for these versions of Windows Server, but you must enable it.</p></li>  
 <li><p><strong>Windows Server 2012 or Windows Server 2012 R2</strong> - .NET Framework 4.5 is already installed for these versions of Windows Server, but you must enable it.</p></li>
 <li><p><strong>Windows Server 2008 R2</strong> - .NET Framework 4.5 is not included with Windows Server 2008 R2, so you must [download Microsoft .NET Framework 4.5](https://go.microsoft.com/fwlink/?LinkId=392318) and install it separately.</p>
 <div class="alert">
@@ -273,7 +274,7 @@ The following table lists the installation prerequisites for the MBAM Administra
 <li><p><strong>WCF Activation</strong></p>
 <ul>
 <li><p>HTTP Activation</p></li>
-<li><p>Non-HTTP Activation</p>
+<li><p>Non-HTTP Activation (Only for Windows Server 2008, 2012 or 2012 R2)</p>
 <p></p></li>
 </ul></li>
 <li><p><strong>TCP Activation</strong></p></li>
