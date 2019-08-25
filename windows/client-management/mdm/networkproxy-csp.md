@@ -39,7 +39,7 @@ Added in Windows 10, version 1803. When set to 0, it enables proxy configuration
 Supported operations are Add, Get, Replace, and Delete.
 
 > [!Note]  
-> Per user proxy configuration setting is not supported.
+> Per user proxy configuration setting is not supported using a configuration file, only modifying registry settings on local machine.
 
 <a href="" id="autodetect"></a>**AutoDetect**  
 Automatically detect settings. If enabled, the system tries to find the path to a PAC script.
@@ -50,7 +50,7 @@ Valid values:
 <li>1 (default) - Enabled</li>
 </ul>
 
-The data type is int. Supported operations are Get and Replace. Starting in Window 10, version 1803, the Delete operation is also supported.
+The data type is integer. Supported operations are Get and Replace. Starting in Window 10, version 1803, the Delete operation is also supported.
 
 <a href="" id="setupscripturl"></a>**SetupScriptUrl**  
 Address to the PAC script you want to use.
@@ -80,4 +80,56 @@ Valid values:
 <li>1 - Use proxy server for local addresses</li>
 </ul>
 
-The data type is int. Supported operations are Get and Replace. Starting in Window 10, version 1803, the Delete operation is also supported.
+The data type is integer. Supported operations are Get and Replace. Starting in Window 10, version 1803, the Delete operation is also supported.
+
+# Configuration Example
+
+These generic code portions for the options **ProxySettingsPerUser**, **Autodetect** and **SetupScriptURL** can be used for a specific operation, for example Replace.  Only put the portion of code needed in the **Replace** section.
+ 
+ <Replace>
+
+	<CmdID>1</CmdID>
+	<Item>
+		<Target>
+			<LocURI>./Vendor/MSFT/NetworkProxy/ProxySettingsPerUser</LocURI>
+		</Target>
+		<Meta>
+			<Format xmlns="syncml:metinf">int</Format>
+			<Type>text/plain</Type>
+		</Meta>
+		<Data>0</Data>
+	</Item>
+
+</Replace>
+
+<Replace>
+
+	<CmdID>2</CmdID>
+	<Item>
+		<Target>
+			<LocURI>./Vendor/MSFT/NetworkProxy/AutoDetect</LocURI>
+		</Target>
+		<Meta>
+			<Format xmlns="syncml:metinf">int</Format>
+			<Type>text/plain</Type>
+		</Meta>
+		<Data>1</Data>
+	</Item>
+
+</Replace> 
+
+<Replace>
+
+	<CmdID>3</CmdID>
+	<Item>
+		<Target>
+			<LocURI>./Vendor/MSFT/NetworkProxy/SetupScriptUrl</LocURI>
+		</Target>
+		<Meta>
+			<Format xmlns="syncml:metinf">chr</Format>
+			<Type>text/plain</Type>
+		</Meta>
+		<Data>Insert the proxy PAC URL location here:</Data>
+	</Item>
+
+</Replace>
