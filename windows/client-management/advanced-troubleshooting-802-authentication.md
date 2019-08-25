@@ -1,13 +1,15 @@
 ---
 title: Advanced Troubleshooting 802.1X Authentication
+ms.reviewer: 
+manager: dansimp
 description: Learn how 802.1X Authentication works
 keywords: advanced troubleshooting, 802.1X authentication, troubleshooting, authentication, Wi-Fi
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
-author: kaushika-msft
+author: msfttracyp
 ms.localizationpriority: medium
-ms.author: greg-lindsay
+ms.author: tracyp
 ms.topic: troubleshooting
 ---
  
@@ -15,7 +17,7 @@ ms.topic: troubleshooting
  
 ## Overview
 
-This is a general troubleshooting of 802.1X wireless and wired clients. With 802.1X and wireless troubleshooting, it's important to know how the flow of authentication works, and then figuring out where it's breaking. It involves a lot of third party devices and software. Most of the time, we have to identify where the problem is, and another vendor has to fix it. Since we don't make access points or wwitches, it won't be an end-to-end Microsoft solution.
+This is a general troubleshooting of 802.1X wireless and wired clients. With 802.1X and wireless troubleshooting, it's important to know how the flow of authentication works, and then figuring out where it's breaking. It involves a lot of third party devices and software. Most of the time, we have to identify where the problem is, and another vendor has to fix it. Since we don't make access points or switches, it won't be an end-to-end Microsoft solution.
  
 ## Scenarios
 
@@ -67,7 +69,7 @@ This log is not enabled by default. You can enable this log by expanding **Event
 ![screenshot of event viewer](images/capi.png)
  
 The following article explains how to analyze CAPI2 event logs:
-[Troubleshooting PKI Problems on Windows Vista](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc749296%28v=ws.10%29).
+[Troubleshooting PKI Problems on Windows Vista](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc749296%28v=ws.10%29).
 
 When troubleshooting complex 802.1X authentication issues, it is important to understand the 802.1X authentication process. The following figure is an example of wireless connection process with 802.1X authentication:
 

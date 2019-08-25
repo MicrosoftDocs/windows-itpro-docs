@@ -1,12 +1,15 @@
 ---
 title: About MBAM 2.0 SP1
 description: About MBAM 2.0 SP1
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 5ba89ed8-bb6e-407b-82c2-e2e36dd1078e
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -25,13 +28,13 @@ This version of MBAM provides the following new features and functionality.
 
 Microsoft BitLocker Administration and Monitoring (MBAM) 2.0 Service Pack 1 (SP1) adds support for Windows 8.1, Windows Server 2012 R2, and System Center 2012 R2 Configuration Manager.
 
-### Support for Microsoft SQL Server 2008 R2 SP2
+### Support for Microsoft SQL Server 2008 R2 SP2
 
-Microsoft BitLocker Administration and Monitoring (MBAM) 2.0 Service Pack 1 (SP1) adds support for Microsoft SQL Server 2008 R2 SP2. You must use Microsoft SQL Server 2008 R2 or higher if you are running Microsoft System Center Configuration Manager 2007 R2.
+Microsoft BitLocker Administration and Monitoring (MBAM) 2.0 Service Pack 1 (SP1) adds support for Microsoft SQL Server 2008 R2 SP2. You must use Microsoft SQL Server 2008 R2 or higher if you are running Microsoft System Center Configuration Manager 2007 R2.
 
 ### Customer feedback rollup
 
-MBAM 2.0 SP1 includes a rollup of fixes to address issues that were found since the Microsoft BitLocker Administration and Monitoring (MBAM) 2.0 release. As part of these changes, the Computer Name field now appears in the BitLocker Computer Compliance and BitLocker Enterprise Compliance Details reports when you run MBAM with Microsoft System Center Configuration Manager 2007.
+MBAM 2.0 SP1 includes a rollup of fixes to address issues that were found since the Microsoft BitLocker Administration and Monitoring (MBAM) 2.0 release. As part of these changes, the Computer Name field now appears in the BitLocker Computer Compliance and BitLocker Enterprise Compliance Details reports when you run MBAM with Microsoft System Center Configuration Manager 2007.
 
 ### Firewall exception must be set on ports for the Self-Service Portal and the Administration and Monitoring website
 
@@ -45,16 +48,16 @@ MBAM reports for the Configuration Manager integrated topology are now available
 
 You can install MBAM on a primary site server or a central administration site server when you install MBAM with the Configuration Manager integrated topology. Previously, you were required to install MBAM on a central administration site server.
 
-**Important**  
+**Important**  
 The server on which you install MBAM must be the top-tier server in your hierarchy.
 
- 
 
-The MBAM installation works differently for Microsoft System Center Configuration Manager 2007 and Microsoft System Center 2012 Configuration Manager as follows:
+
+The MBAM installation works differently for Microsoft System Center Configuration Manager 2007 and Microsoft System Center 2012 Configuration Manager as follows:
 
 -   **Configuration Manager 2007** : If you install MBAM on a primary site server that is part of a larger Configuration Manager hierarchy and has a central site parent server, MBAM resolves the central site parent server and performs all of the installation actions on that parent server. The installation actions include checking prerequisites and installing the Configuration Manager objects and reports. For example, if you install MBAM on a primary site server that is a child of a central site parent server, MBAM installs all of the Configuration Manager objects and reports on the parent server. If you install MBAM on the parent server, MBAM performs all of the installation actions on that parent server.
 
--   **System Center 2012 Configuration Manager** : If you install MBAM on a primary site server or on a central administration server, MBAM performs all of the installation actions on that site server.
+-   **System Center 2012 Configuration Manager** : If you install MBAM on a primary site server or on a central administration server, MBAM performs all of the installation actions on that site server.
 
 ### <a href="" id="-------------configuration-manager-console-must-be-installed-on-the--computer-on-which-you-install-the-mbam-server"></a> Configuration Manager Console must be installed on the computer on which you install the MBAM Server
 
@@ -85,11 +88,10 @@ When you install MBAM with the Configuration Manager integrated topology, you mu
 <td align="left"><p>CM_REPORTS_ONLY</p></td>
 <td align="left"><p>Enables you to install only the Configuration Manager reports, without other Configuration Manager objects, such as the baseline, collection, and configuration items.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>You must combine this parameter with the CM_REPORTS_COLLECTION_ID parameter.</p>
+<strong>Note</strong><br/><p>You must combine this parameter with the CM_REPORTS_COLLECTION_ID parameter.</p>
 </div>
 <div>
- 
+
 </div>
 <p>Valid parameter values:</p>
 <ul>
@@ -110,7 +112,7 @@ When you install MBAM with the Configuration Manager integrated topology, you mu
 </tbody>
 </table>
 
- 
+
 
 ### Ability to turn Self-Service Portal notice text on or off
 
@@ -168,12 +170,12 @@ MBAM displays the notice text, based on the following rules:
 
 -   If MBAM does not find a default notice.txt file, it displays the default text in the Self-Service Portal.
 
-**Note**  
+**Note**  
 If an end user’s browser is set to a language that does not have a corresponding language subfolder or notice.txt, the text that is in the notice.txt file in the following root directory is displayed:
 
 &lt;*MBAM Self-Service Install Directory*&gt;\\Self Service Website\\
 
- 
+
 
 **To create a localized notice.txt file**
 
@@ -181,10 +183,10 @@ If an end user’s browser is set to a language that does not have a correspondi
 
     &lt;*MBAM Self-Service Install Directory*&gt;\\Self Service Website\\
 
-    **Note**  
+    **Note**  
     Some language folders already exist, so you may not have to create one. If you do need to create a language folder, see [National Language Support (NLS) API Reference](https://go.microsoft.com/fwlink/?LinkId=317947) for a list of the valid names that you can use for the &lt;*language*&gt; folder.
 
-     
+
 
 2.  Create a notice.txt file that contains the localized notice text.
 
@@ -255,8 +257,8 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
     // Microsoft BitLocker Administration and Monitoring 
     //===================================================
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("Win32_BitLockerEncryptionDetails", NOFAIL) 
+# pragma namespace ("\\\\.\\root\\cimv2")
+# pragma deleteclass("Win32_BitLockerEncryptionDetails", NOFAIL) 
     [Union, ViewSources{"select DeviceId, BitlockerPersistentVolumeId, BitLockerManagementPersistentVolumeId, BitLockerManagementVolumeType, DriveLetter, Compliant, ReasonsForNonCompliance, KeyProtectorTypes, EncryptionMethod, ConversionStatus, ProtectionStatus, IsAutoUnlockEnabled from Mbam_Volume"}, ViewSpaces{"\\\\.\\root\\microsoft\\mbam"}, dynamic, Provider("MS_VIEW_INSTANCE_PROVIDER")]
     class Win32_BitLockerEncryptionDetails
     {
@@ -288,19 +290,19 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
         Boolean     IsAutoUnlockEnabled;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("Win32Reg_MBAMPolicy", NOFAIL)
+# pragma namespace ("\\\\.\\root\\cimv2")
+# pragma deleteclass("Win32Reg_MBAMPolicy", NOFAIL)
      [DYNPROPS]
     Class Win32Reg_MBAMPolicy
     {
         [key]
         string KeyName;
-        
+
         //General encryption requirements
         UInt32    OsDriveEncryption;
         UInt32    FixedDataDriveEncryption;
         UInt32    EncryptionMethod;
-        
+
         //Required protectors properties
         UInt32    OsDriveProtector;
         UInt32    FixedDataDriveAutoUnlock;
@@ -320,7 +322,7 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
     Instance of Win32Reg_MBAMPolicy
     {
         KeyName="BitLocker policy";
-        
+
         //General encryption requirements
         [PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE\\MDOPBitLockerManagement|ShouldEncryptOsDrive"),Dynamic,Provider("RegPropProv")]
         OsDriveEncryption;
@@ -328,7 +330,7 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
         FixedDataDriveEncryption;
         [PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE|EncryptionMethod"),Dynamic,Provider("RegPropProv")]
         EncryptionMethod;
-        
+
         //Required protectors properties
         [PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\MBAM|OSVolumeProtectorPolicy"),Dynamic,Provider("RegPropProv")]
         OsDriveProtector;
@@ -350,19 +352,19 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
         EncodedComputerName;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("Win32Reg_MBAMPolicy_64", NOFAIL)
+# pragma namespace ("\\\\.\\root\\cimv2")
+# pragma deleteclass("Win32Reg_MBAMPolicy_64", NOFAIL)
     [DYNPROPS]
     Class Win32Reg_MBAMPolicy_64
     {
         [key]
         string KeyName;
-        
+
         //General encryption requirements
         UInt32    OsDriveEncryption;
         UInt32    FixedDataDriveEncryption;
         UInt32    EncryptionMethod;
-        
+
         //Required protectors properties
         UInt32    OsDriveProtector;
         UInt32    FixedDataDriveAutoUnlock;
@@ -382,7 +384,7 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
     Instance of Win32Reg_MBAMPolicy_64
     {
         KeyName="BitLocker policy 64";
-        
+
         //General encryption requirements
         [PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE\\MDOPBitLockerManagement|ShouldEncryptOsDrive"),Dynamic,Provider("RegPropProv")]
         OsDriveEncryption;
@@ -390,7 +392,7 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
         FixedDataDriveEncryption;
         [PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE|EncryptionMethod"),Dynamic,Provider("RegPropProv")]
         EncryptionMethod;
-        
+
         //Required protectors properties
         [PropertyContext("Local|HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\MBAM|OSVolumeProtectorPolicy"),Dynamic,Provider("RegPropProv")]
         OsDriveProtector;
@@ -412,8 +414,8 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
         EncodedComputerName;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("CCM_OperatingSystemExtended", NOFAIL)
+# pragma namespace ("\\\\.\\root\\cimv2")
+# pragma deleteclass("CCM_OperatingSystemExtended", NOFAIL)
     [Union, ViewSources{"select Name,OperatingSystemSKU from Win32_OperatingSystem"}, ViewSpaces{"\\\\.\\root\\cimv2"},
     dynamic,Provider("MS_VIEW_INSTANCE_PROVIDER")]
     class CCM_OperatingSystemExtended
@@ -424,8 +426,8 @@ If you are upgrading to MBAM 2.0 SP1 and you are using MBAM with Configuration M
         uint32     SKU;
     };
 
-#pragma namespace ("\\\\.\\root\\cimv2")
-#pragma deleteclass("CCM_ComputerSystemExtended", NOFAIL)
+# pragma namespace ("\\\\.\\root\\cimv2")
+# pragma deleteclass("CCM_ComputerSystemExtended", NOFAIL)
     [Union, ViewSources{"select Name,PCSystemType from Win32_ComputerSystem"}, ViewSpaces{"\\\\.\\root\\cimv2"},
     dynamic,Provider("MS_VIEW_INSTANCE_PROVIDER")]
     class CCM_ComputerSystemExtended
@@ -478,9 +480,9 @@ MBAM 2.0 SP1 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP i
 
 [Release Notes for MBAM 2.0 SP1](release-notes-for-mbam-20-sp1.md)
 
- 
 
- 
+
+
 
 
 

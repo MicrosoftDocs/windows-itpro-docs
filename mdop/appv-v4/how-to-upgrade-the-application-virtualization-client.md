@@ -1,12 +1,15 @@
 ---
 title: How to Upgrade the Application Virtualization Client
 description: How to Upgrade the Application Virtualization Client
-author: jamiejdt
+author: eavena
 ms.assetid: 2a75d8b5-da88-456c-85bb-f5bd3d470f7f
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,12 +22,12 @@ You can use the following procedures to upgrade the Application Virtualization (
 **Note**  
 During the upgrade to Application Virtualization (App-V) 4.5 or later versions, the permissions to the HKCU registry key are changed. Because of this, users will lose user configurations that were set previously, such as user-configured Disconnected Mode settings. If the user is not actively restricted from configuring client user interface behavior through a permission lockdown, the user can reset these preferences after a publishing refresh.
 
- 
+ 
 
 **Important**  
 When upgrading to version 4.6 or a later version of the App-V Client, you must use the correct installer for the computer’s operating system, 32-bit or 64-bit. The installation will fail and an error message will be displayed if you use the wrong installer.
 
- 
+ 
 
 **To upgrade the Application Virtualization Desktop Client**
 
@@ -47,7 +50,7 @@ When upgrading to version 4.6 or a later version of the App-V Client, you must 
 
     -   Microsoft Visual C++ 2008 SP1 Redistributable Package (x86)
 
-     
+     
 
 5.  Click **Install**. Installation progress is displayed, and the status changes from **Pending** to **Installing**. Installation status changes to **Succeeded** as each step is completed successfully.
 
@@ -60,14 +63,14 @@ When upgrading to version 4.6 or a later version of the App-V Client, you must 
     **Warning**  
     If you did not shut down the client program in step 1, you might see a **Files In Use** warning displayed. If this happens, right-click the App-V Client icon displayed in the desktop notification area and select **Exit** to shut down the existing client. Then click **Retry** to continue.
 
-     
+     
 
 9.  When the installation completes successfully, you will be prompted to restart the computer. You need to restart the computer to complete the installation.
 
     **Caution**  
     If the upgrade fails for any reason, you will need to restart the computer before attempting the upgrade again.
 
-     
+     
 
 **To upgrade the Application Virtualization Client by Using the Command Line**
 
@@ -78,7 +81,7 @@ When upgrading to version 4.6 or a later version of the App-V Client, you must 
 
     -   For App-V version 4.6, command-line parameters cannot be used during an upgrade and will be ignored.
 
-     
+     
 
 2.  The following command-line example uses the setup.msi file to upgrade the App-V Client. You will need to use the correct client installer program depending on whether you are upgrading the App-V Desktop Client or the App-V Client for Remote Desktop Services (formerly Terminal Services).
 
@@ -87,7 +90,7 @@ When upgrading to version 4.6 or a later version of the App-V Client, you must 
     **Important**  
     The quotation marks are required only when the value contains a space. For consistency, all instances in the preceding example are shown as having quotation marks.
 
-     
+     
 
 **To upgrade the Application Virtualization Client for Remote Desktop Services**
 
@@ -98,7 +101,7 @@ When upgrading to version 4.6 or a later version of the App-V Client, you must 
     **Note**  
     In App-V version 4.6 and later, in addition to using the command line to upgrade the client, you can also use a Remote Desktop session. No special parameters are required to start the Remote Desktop session.
 
-     
+     
 
 3.  After the Client for Remote Desktop Services upgrade is complete, restart and log in to the RD Session Host.
 
@@ -107,16 +110,16 @@ When upgrading to version 4.6 or a later version of the App-V Client, you must 
     **Caution**  
     If the upgrade fails for any reason, you will need to restart the computer before attempting the upgrade again.
 
-     
+     
 
 ## Related topics
 
 
 [Application Virtualization Deployment and Upgrade Considerations](application-virtualization-deployment-and-upgrade-considerations.md)
 
- 
+ 
 
- 
+ 
 
 
 

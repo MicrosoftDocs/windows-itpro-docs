@@ -1,10 +1,11 @@
 ---
 title: Microsoft Edge - Sync browser settings  
 description: By default, the “browser” group syncs automatically between the user’s devices, letting users make changes. The “browser” group uses the Sync your Settings option in Settings to sync information like history and favorites.
-manager: dougkim
-ms.author: pashort
-author: shortpatti
+audience: itpromanager: dansimp
+ms.author: eravena
+author: eavena
 ms.date: 10/02/2018
+ms.reviewer: 
 ms.localizationpriority: medium
 ms.topic: reference
 ---

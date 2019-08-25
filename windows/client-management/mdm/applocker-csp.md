@@ -2,26 +2,20 @@
 title: AppLocker CSP
 description: AppLocker CSP
 ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 04/30/2018
+author: lomayor
+ms.date: 07/25/2019
 ---
 
 # AppLocker CSP
 
 
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
-
-> **Note**  
-> When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
->
-> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
->
-> Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
-
 
 The following diagram shows the AppLocker configuration service provider in tree format.
 
@@ -33,15 +27,18 @@ Defines the root node for the AppLocker configuration service provider.
 <a href="" id="applicationlaunchrestrictions"></a>**ApplicationLaunchRestrictions**
 Defines restrictions for applications.
 
-> [!NOTE]  
+> [!NOTE]
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
 >
-> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
+> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
+>
+> Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
+
 
 Additional information:
 
 - [Find publisher and product name of apps](#productname) - step-by-step guide for getting the publisher and product names for various Windows apps.
-- [Whitelist example](#whitelist-example) - example for Windows 10 Mobile that denies all apps except the ones listed.
+- [Whitelist example](#whitelist-examples) - example for Windows 10 Mobile that denies all apps except the ones listed.
 
 <a href="" id="enterprisedataprotection"></a>**EnterpriseDataProtection**
 Captures the list of apps that are allowed to handle enterprise data. Should be used in conjunction with the settings in **./Device/Vendor/MSFT/EnterpriseDataProtection** in [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md).
@@ -62,7 +59,7 @@ Exempt examples:
 
 Additional information:
 
-- [Recommended deny list for Windows Information Protection](#recommended-deny-list-for-windows-information-protection) - example for Windows 10, version 1607 that denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
+- [Recommended deny list for Windows Information Protection](#recommended-deny-list-for-windows-information-protection) - example for Windows 10, version 1607 that denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
 
 Each of the previously listed nodes contains a **Grouping** node.
 
@@ -87,7 +84,7 @@ Each of the previously listed nodes contains a **Grouping** node.
 </tbody>
 </table>
 
- 
+
 
 In addition, each **Grouping** node contains one or more of the following nodes:
 
@@ -135,7 +132,7 @@ In addition, each **Grouping** node contains one or more of the following nodes:
 </tbody>
 </table>
 
- 
+
 
 Each of the previous nodes contains one or more of the following leaf nodes:
 
@@ -154,22 +151,8 @@ Each of the previous nodes contains one or more of the following leaf nodes:
 <tr class="odd">
 <td><p><strong>Policy</strong></p></td>
 <td><p>Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.</p>
-<p>Policy nodes are a Base64-encoded blob of the binary policy representation. The binary policy may be signed or unsigned.</p>
-<p>For CodeIntegrity/Policy, you can use the [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool to encode the data to base-64.</p>
-<p>Here is a sample certutil invocation:</p>
-
-```
-certutil -encode WinSiPolicy.p7b WinSiPolicy.cer
-```
-
-<p>An alternative to using certutil would be to use the following PowerShell invocation:</p>
-
-```
-[Convert]::ToBase64String($(Get-Content -Encoding Byte -ReadCount 0 -Path <bin file>))
-```
-
-<p>If you are using hybrid MDM management with System Center Configuration Manager or using Intune, ensure that you are using Base64 as the Data type when using Custom OMA-URI functionality to apply the Code Integrity policy.</p>
-<p>Data type is string. Supported operations are Get, Add, Delete, and Replace.</p></td>
+<p>For nodes, other than CodeIntegrity, policy leaf data type is string. Supported operations are Get, Add, Delete, and Replace.</p>
+<p>For CodeIntegrity/Policy, data type is Base64. Supported operations are Get, Add, Delete, and Replace.</td>
 </tr>
 <tr class="even">
 <td><p><strong>EnforcementMode</strong></p></td>
@@ -184,16 +167,18 @@ certutil -encode WinSiPolicy.p7b WinSiPolicy.cer
 </tbody>
 </table>
 
- 
+> [!NOTE]
+> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool) and added to the Applocker-CSP.
+
 
 ## <a href="" id="productname"></a>Find publisher and product name of apps
 
 
-You can pair a Windows Phone (Windows 10 Mobile, version 1511) to your desktop using the Device Portal on the phone to get the various types of information, including publisher name and product name of apps installed on the phone. This procedure describes pairing your phone to your desktop using WiFi.
+You can pair a Windows Phone (Windows 10 Mobile, version 1511) to your desktop using the Device Portal on the phone to get the various types of information, including publisher name and product name of apps installed on the phone. This procedure describes pairing your phone to your desktop using WiFi.
 
 If this procedure does not work for you, try the other methods for pairing described in [Device Portal for Mobile](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal-mobile).
 
-**To find Publisher and PackageFullName for apps installed on Windows 10 Mobile**
+**To find Publisher and PackageFullName for apps installed on Windows 10 Mobile**
 
 1.  On your Windows Phone, go to **Settings**. Choose **Update & security**. Then choose **For developers**.
 2.  Choose **Developer mode**.
@@ -253,7 +238,7 @@ The following table show the mapping of information to the AppLocker publisher r
 </tbody>
 </table>
 
- 
+
 
 Here is an example AppLocker publisher rule:
 
@@ -287,26 +272,28 @@ You can get the publisher name and product name of apps using a web API.
     </tbody>
     </table>
 
-     
 
-    Here is the example for Microsoft OneNote:
 
-    Request
+~~~
+Here is the example for Microsoft OneNote:
 
-    ``` syntax
-    https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata
-    ```
+Request
 
-    Result
+``` syntax
+https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata
+```
 
-    ``` syntax
-    {
-      "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",
-      "packageIdentityName": "Microsoft.Office.OneNote",
-      "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
-      "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
-    }
-    ```
+Result
+
+``` syntax
+{
+  "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",
+  "packageIdentityName": "Microsoft.Office.OneNote",
+  "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+  "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+}
+```
+~~~
 
 <table>
 <colgroup>
@@ -337,12 +324,12 @@ You can get the publisher name and product name of apps using a web API.
 </tbody>
 </table>
 
- 
+
 
 ## <a href="" id="settingssplashapps"></a>Settings apps that rely on splash apps
 
 
-When you create a list of allowed apps in Windows 10 Mobile, you must also include the subset of Settings apps that rely on splash apps in your list of allowed apps. These apps are blocked unless they are explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps .
+When you create a list of allowed apps in Windows 10 Mobile, you must also include the subset of Settings apps that rely on splash apps in your list of allowed apps. These apps are blocked unless they are explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps .
 
 The product name is first part of the PackageFullName followed by the version number.
 
@@ -364,16 +351,17 @@ The product name is first part of the PackageFullName followed by the version nu
 | SettingsPageAppsCorner             | 5b04b775-356b-4aa0-aaf8-6491ffea580a\_1.0.0.0\_neutral\_\_4vefaa8deck74 | 5b04b775-356b-4aa0-aaf8-6491ffea580a |
 | SettingsPagePhoneNfc               | b0894dfd-4671-4bb9-bc17-a8b39947ffb6\_1.0.0.0\_neutral\_\_1prqnbg33c1tj | b0894dfd-4671-4bb9-bc17-a8b39947ffb6 |
 
- 
+
 
 ## <a href="" id="inboxappsandcomponents"></a>Inbox apps and components
 
 
 The following list shows the apps that may be included in the inbox.
 
-> **Note**  This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
+> [!NOTE]
+> This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
 
- 
+
 
 <table>
 <colgroup>
@@ -587,7 +575,7 @@ The following list shows the apps that may be included in the inbox.
 <tr class="even">
 <td>Microsoft Frameworks</td>
 <td>ProductID = 00000000-0000-0000-0000-000000000000
-<p>PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"</p></td>
+<p>PublisherName=&quot;CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US&quot;</p></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -832,13 +820,13 @@ The following list shows the apps that may be included in the inbox.
 </tbody>
 </table>
 
- 
+
 
 ## Whitelist examples
 
 The following example disables the calendar application.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
         <Add>
@@ -862,7 +850,7 @@ The following example disables the calendar application.
 
 The following example blocks the usage of the map application.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Add>
@@ -939,14 +927,14 @@ The following example disables the Mixed Reality Portal. In the example, the **I
 </SyncML>
 ```
 
-The following example for Windows 10 Mobile denies all apps and allows the following apps:
+The following example for Windows 10 Mobile denies all apps and allows the following apps:
 
 -   [settings app that rely on splash apps](#settingssplashapps)
 -   most of the [inbox apps](#inboxappsandcomponents), but not all.
 
 In this example, **MobileGroup0** is the node name. We recommend using a GUID for this node.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SyncML>
   <SyncBody>
@@ -1402,7 +1390,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
 ## Example for Windows 10 Holographic for Business
 The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inboxappsandcomponents) to enable to enable a working device, as well as Settings.
 
-``` syntax
+```xml
 <RuleCollection Type="Appx" EnforcementMode="Enabled">
     <FilePublisherRule Id="96B82A15-F841-499a-B674-963DC647762F"
                      Name="Whitelist BackgroundTaskHost"
@@ -1655,11 +1643,11 @@ The following example for Windows 10 Holographic for Business denies all apps an
 ```
 
 ## Recommended deny list for Windows Information Protection
-The following example for Windows 10, version 1607 denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. (An administrator might still use an exempt rule, instead.) This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
+The following example for Windows 10, version 1607 denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. (An administrator might still use an exempt rule, instead.) This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
 
 In this example, Contoso is the node name. We recommend using a GUID for this node.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SyncML>
   <SyncBody>
@@ -1689,119 +1677,145 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
           <Format xmlns="syncml:metinf">chr</Format>
         </Meta>
         <Data>
-  <RuleCollection Type="Exe" EnforcementMode="Enabled">
-    <FilePublisherRule Id="b005eade-a5ee-4f5a-be45-d08fa557a4b2" Name="MICROSOFT OFFICE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="de9f3461-6856-405d-9624-a80ca701f6cb" Name="MICROSOFT OFFICE 2003, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2003" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="ade1b828-7055-47fc-99bc-432cf7d1209e" Name="2007 MICROSOFT OFFICE SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="2007 MICROSOFT OFFICE SYSTEM" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="f6a075b5-a5b5-4654-abd6-731dacb40d95" Name="MICROSOFT OFFICE ONENOTE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE ONENOTE" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="12.0.9999.9999" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="0ec03b2f-e9a4-4743-ae60-6d29886cf6ae" Name="MICROSOFT OFFICE OUTLOOK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE OUTLOOK" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="12.0.9999.9999" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="7b272efd-4105-4fb7-9d40-bfa597c6792a" Name="MICROSOFT OFFICE 2013, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2013" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="89d8a4d3-f9e3-423a-92ae-86e7333e2662" Name="MICROSOFT ONENOTE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONENOTE" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
+<RuleCollection Type="Exe" EnforcementMode="Enabled">
+  <FilePublisherRule Id="b005eade-a5ee-4f5a-be45-d08fa557a4b2" Name="MICROSOFT OFFICE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
       <Exceptions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONENOTE" BinaryName="ONENOTE.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="EXCEL.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Exceptions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="5a2138bd-8042-4ec5-95b4-f990666fbf61" Name="MICROSOFT OUTLOOK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OUTLOOK" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="LYNC.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Conditions>
-      <Exceptions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OUTLOOK" BinaryName="OUTLOOK.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="LYNC99.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Exceptions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="3fc5f9c5-f180-435b-838f-2960106a3860" Name="MICROSOFT ONEDRIVE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONEDRIVE" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="MSOSYNC.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Conditions>
-      <Exceptions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONEDRIVE" BinaryName="ONEDRIVE.EXE">
-          <BinaryVersionRange LowSection="17.3.6386.0412" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="OCPUBMGR.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Exceptions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="17d988ef-073e-4d92-b4bf-f477b2ecccb5" Name="MICROSOFT OFFICE 2016, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="POWERPNT.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Conditions>
-      <Exceptions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="LYNC.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="UCMAPI.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="LYNC99.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="WINWORD.EXE">
+          <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="UCMAPI.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
-        </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="OCPUBMGR.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
-        </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="WINWORD.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
-        </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="EXCEL.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
-        </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="POWERPNT.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
-        </FilePublisherCondition>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="MSOSYNC.EXE">
-          <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
-        </FilePublisherCondition>
-      </Exceptions>
-    </FilePublisherRule>
-  </RuleCollection>
+      </Exceptions>	
+  </FilePublisherRule>
+  <FilePublisherRule Id="de9f3461-6856-405d-9624-a80ca701f6cb" Name="MICROSOFT OFFICE 2003, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2003" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="ade1b828-7055-47fc-99bc-432cf7d1209e" Name="2007 MICROSOFT OFFICE SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="2007 MICROSOFT OFFICE SYSTEM" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="f6a075b5-a5b5-4654-abd6-731dacb40d95" Name="MICROSOFT OFFICE ONENOTE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE ONENOTE" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="12.0.9999.9999" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="0ec03b2f-e9a4-4743-ae60-6d29886cf6ae" Name="MICROSOFT OFFICE OUTLOOK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE OUTLOOK" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="12.0.9999.9999" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="7b272efd-4105-4fb7-9d40-bfa597c6792a" Name="MICROSOFT OFFICE 2013, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2013" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="89d8a4d3-f9e3-423a-92ae-86e7333e2662" Name="MICROSOFT ONENOTE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONENOTE" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+    <Exceptions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONENOTE" BinaryName="ONENOTE.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+    </Exceptions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="5a2138bd-8042-4ec5-95b4-f990666fbf61" Name="MICROSOFT OUTLOOK, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OUTLOOK" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+    <Exceptions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OUTLOOK" BinaryName="OUTLOOK.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+    </Exceptions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="3fc5f9c5-f180-435b-838f-2960106a3860" Name="MICROSOFT ONEDRIVE, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONEDRIVE" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+    <Exceptions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT ONEDRIVE" BinaryName="ONEDRIVE.EXE">
+        <BinaryVersionRange LowSection="17.3.6386.0412" HighSection="*" />
+      </FilePublisherCondition>
+    </Exceptions>
+  </FilePublisherRule>
+  <FilePublisherRule Id="17d988ef-073e-4d92-b4bf-f477b2ecccb5" Name="MICROSOFT OFFICE 2016, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+    <Exceptions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="LYNC.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="LYNC99.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="UCMAPI.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="OCPUBMGR.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="WINWORD.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="EXCEL.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="POWERPNT.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE 2016" BinaryName="MSOSYNC.EXE">
+        <BinaryVersionRange LowSection="16.0.7500.0000" HighSection="*" />
+      </FilePublisherCondition>
+    </Exceptions>
+  </FilePublisherRule>
+</RuleCollection>
         </Data>
       </Item>
     </Replace>
@@ -1815,9 +1829,9 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
 
- 
+
+
 
 
 

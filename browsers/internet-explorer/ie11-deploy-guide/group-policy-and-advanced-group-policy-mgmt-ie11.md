@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Overview about Group Policy, Advanced Group Policy Management (AGPM), and Internet Explorer 11
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 63a7ef4a-6de2-4d08-aaba-0479131e3406
+ms.reviewer: 
+audience: itpromanager: dansimp
+ms.author: lomayor
 title: Group Policy, Advanced Group Policy Management (AGPM), and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -30,7 +33,7 @@ From AGPM you can:
 -   **Manage your GPO lifecycle with change control features.** You can use the available version-control, history, and auditing features to help you manage your GPOs while moving through your archive, to your editing process, and finally to your GPO deployment.
 
 **Note**<br>
-For more information about AGPM, and to get the license, see [Advanced Group Policy Management 4.0 Documents](https://www.microsoft.com/en-us/download/details.aspx?id=13975).
+For more information about AGPM, and to get the license, see [Advanced Group Policy Management 4.0 Documents](https://www.microsoft.com/download/details.aspx?id=13975).
 
  
 

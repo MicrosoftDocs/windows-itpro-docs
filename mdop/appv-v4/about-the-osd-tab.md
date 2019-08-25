@@ -1,12 +1,15 @@
 ---
 title: About the OSD Tab
 description: About the OSD Tab
-author: jamiejdt
+author: dansimp
 ms.assetid: 7c78cd3a-91f2-4377-8c62-e52912906197
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

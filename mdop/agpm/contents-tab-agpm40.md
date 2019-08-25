@@ -1,8 +1,11 @@
 ---
 title: Contents Tab
 description: Contents Tab
-author: jamiejdt
+author: mjcaparas
 ms.assetid: cf9d1f17-3c3d-422f-bd6b-3db87be45554
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

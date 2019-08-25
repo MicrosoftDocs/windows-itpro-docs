@@ -3,9 +3,11 @@ title: Windows as a service
 ms.prod: w10
 ms.topic: article
 ms.manager: elizapo
-author: lizap
-ms.author: elizapo  
+audience: itproauthor: greg-lindsay
+ms.author: greglin
 ms.date: 12/19/2018
+ms.reviewer: 
+manager: laurawi
 ms.localizationpriority: high
 ms.topic: article
 ---
@@ -14,6 +16,14 @@ ms.topic: article
 Here's more news about [Windows as a service](windows-as-a-service.md):
 
 <ul>
+  <li><a href="https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency">Improving the Windows 10 update experience with control, quality and transparency</a> - April 4, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Call-to-action-review-your-Windows-Update-for-Business-deferral/ba-p/394244">Call to action: review your Windows Update for Business deferral values</a> - April 3, 2019</li>
+  <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-version-1809-designated-for-broad-deployment/ba-p/389540">Windows 10, version 1809 designated for broad deployment</a> - March 28, 2019</li>
+<li><a href="https://blogs.windows.com/windowsexperience/2019/03/06/data-insights-and-listening-to-improve-the-customer-experience">Data, insights and listening to improve the customer experience</a> - March 6, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Getting-to-know-the-Windows-update-history-pages/ba-p/355079">Getting to know the Windows update history pages</a> - February 21, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523">Windows Update for Business and the retirement of SAC-T</a> - February 14, 2019</li>
+<li><a href="https://blogs.windows.com/windowsexperience/2019/01/15/application-compatibility-in-the-windows-ecosystem/#A8urpp1QEp6DHzmP.97">Application compatibility in the Windows ecosystem</a> - January 15, 2019</li>
+<li><a href="https://blogs.windows.com/windowsexperience/2018/12/10/windows-monthly-security-and-quality-updates-overview/#UJJpisSpvyLokbHm.97">Windows monthly security and quality updates overview</a> - January 10, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2018/12/19/driver-quality-in-the-windows-ecosystem/#ktuodfovWAMAkssM.97">Driver quality in the Windows ecosystem</a> - December 19, 2018</li>
 <li><a href="http://m365mdp.mpsn.libsynpro.com/001-windows-10-monthly-quality-updates">Modern Desktop Podcast - Episode 001 – Windows 10 Monthly Quality Updates</a> - December 18, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Measuring-Delivery-Optimization-and-its-impact-to-your-network/ba-p/301809#M409">Measuring Delivery Optimization and its impact to your network</a> - December 13, 2018</li>
@@ -27,10 +37,10 @@ Here's more news about [Windows as a service](windows-as-a-service.md):
 <li><a href="https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/#T4LJQ3OzDkCR72em.97">How to get the Windows 10 October 2018 Update</a> - October 2, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Reduced-Windows-10-package-size-downloads-for-x64-systems/ba-p/262386">Reducing Windows 10 Package Size Downloads for x64 Systems</a> - September 26, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-7-servicing-stack-updates-managing-change-and/ba-p/260434">Windows 7 Servicing Stack Updates: Managing Change and Appreciating Cumulative Updates</a> - September 21, 2018</li>
-<li><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/">Helping customers shift to a modern desktop</a> - September 6, 2018</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-amp-Windows-Analytics-a-real-world/ba-p/242417#M228">Windows Update for Business & Windows Analytics: a real-world experience</a> - September 5, 2018</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-next-for-Windows-10-and-Windows-Server-quality-updates/ba-p/229461">What's next for Windows 10 and Windows Server quality updates</a> - August 16, 2018</li>
-<li><a href="https://www.youtube-nocookie.com/watch/BwB10v55WSk">Windows 10 monthly updates</a> - August 1, 2018 (**video**)</li>
+<li><a href="https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/">Helping customers shift to a modern desktop</a> - September 6, 2018</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-amp-Windows-Analytics-a-real-world/ba-p/242417#M228">Windows Update for Business &amp; Windows Analytics: a real-world experience</a> - September 5, 2018</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-next-for-Windows-10-and-Windows-Server-quality-updates/ba-p/229461">What&#39;s next for Windows 10 and Windows Server quality updates</a> - August 16, 2018</li>
+<li><a href="https://www.youtube-nocookie.com/watch/BwB10v55WSk">Windows 10 monthly updates</a> - August 1, 2018 (<strong>video</strong>)</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-update-servicing-cadence/ba-p/222376">Windows 10 update servicing cadence</a> - August 1, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426">Windows 10 quality updates explained and the end of delta updates</a> - July 11, 2018</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2018/06/14/ai-powers-windows-10-april-2018-update-rollout/#67LrSyWdwgTyciSG.97">AI Powers Windows 10 April 2018 Update Rollout</a> - June 14, 2018</li>

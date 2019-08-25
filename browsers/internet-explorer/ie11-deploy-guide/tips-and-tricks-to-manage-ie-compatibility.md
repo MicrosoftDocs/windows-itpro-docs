@@ -3,10 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Find out how to achieve better backward compatibility for your legacy web applications with the Enterprise Mode Site List.
-author: shortpatti
-ms.author: pashort
+author: lomayor
+ms.author: lomayor
 ms.prod: ie11
 ms.assetid: 
+ms.reviewer: 
+audience: itpromanager: dansimp
 title: Tips and tricks to manage Internet Explorer compatibility
 ms.sitesec: library
 ms.date: 05/10/2018
@@ -125,7 +127,7 @@ We recommend that enterprise customers focus their new development on establishe
 - [Document modes](https://msdn.microsoft.com/library/dn384051&#040;v=vs.85&#041;.aspx)
 - [What is Enterprise Mode?](what-is-enterprise-mode.md)
 - [Turn on Enterprise Mode and use a site list](turn-on-enterprise-mode-and-use-a-site-list.md)
-- [Enterprise Site Discovery Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=44570)
+- [Enterprise Site Discovery Toolkit](https://www.microsoft.com/download/details.aspx?id=44570)
 - [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md)
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Download the Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378)

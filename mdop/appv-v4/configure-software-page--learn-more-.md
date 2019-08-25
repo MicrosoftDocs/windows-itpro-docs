@@ -1,12 +1,15 @@
 ---
 title: Configure Software Page (Learn More)
 description: Configure Software Page (Learn More)
-author: jamiejdt
+author: dansimp
 ms.assetid: 9a0cd4a5-88da-4897-a13a-5d21fc04afda
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

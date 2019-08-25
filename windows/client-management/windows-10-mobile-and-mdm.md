@@ -2,13 +2,16 @@
 title: Windows 10 Mobile deployment and management guide (Windows 10)
 description: This guide helps IT professionals plan for and deploy Windows 10 Mobile devices.
 ms.assetid: 6CAA1004-CB65-4FEC-9B84-61AAD2125E5E
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 keywords: Mobile, diagnostic data, BYOD, MDM
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile, devices, security
 ms.localizationpriority: medium
-author: AMeeus
+author: dansimp
 ms.date: 01/26/2019
 ms.topic: article
 ---
@@ -24,11 +27,11 @@ Employees increasingly depend on smartphones to complete daily work tasks, but t
 Windows 10 supports end-to-end device lifecycle management to give companies control over their devices, data, and apps. Devices can easily be incorporated into standard lifecycle practices, from device enrollment, configuration, and application management to maintenance, monitoring, and retirement using a comprehensive mobile device management solution.
 
 **In this article**
--	[Deploy](#deploy)
--	[Configure](#configure)
--	[Apps](#apps)
--	[Manage](#manage)
--	[Retire](#retire)
+- [Deploy](#deploy)
+- [Configure](#configure)
+- [Apps](#apps)
+- [Manage](#manage)
+- [Retire](#retire)
 
 
 ## Deploy
@@ -105,7 +108,7 @@ MDM enrollment can also be initiated with a provisioning package. This option en
 
 Employees can use only one account to initialize a device so it’s imperative that your organization controls which account is enabled first. The account chosen will determine who controls the device and influence your management capabilities.
 
->**Note:** Why must the user add an account to the device in OOBE? Windows 10 Mobile are single user devices and the user accounts give access to a number of default cloud services that enhance the productivity and entertainment value of the phone for the user. Such services are: Store for downloading apps, Groove for music and entertainment, Xbox for gaming, etc. Both an [MSA](https://www.microsoft.com/en-us/account/) and an [Azure AD account](https://www.microsoft.com/en-us/server-cloud/products/azure-active-directory/?WT.srch=1&WT.mc_id=SEM_%5B_uniqid%5D&utm_source=Bing&utm_medium=CPC&utm_term=azure%20ad&utm_campaign=Enterprise_Mobility_Suite) give access to these services.
+>**Note:** Why must the user add an account to the device in OOBE? Windows 10 Mobile are single user devices and the user accounts give access to a number of default cloud services that enhance the productivity and entertainment value of the phone for the user. Such services are: Store for downloading apps, Groove for music and entertainment, Xbox for gaming, etc. Both an [MSA](https://www.microsoft.com/account/) and an [Azure AD account](https://www.microsoft.com/server-cloud/products/azure-active-directory/?WT.srch=1&WT.mc_id=SEM_%5B_uniqid%5D&utm_source=Bing&utm_medium=CPC&utm_term=azure%20ad&utm_campaign=Enterprise_Mobility_Suite) give access to these services.
 
 The following table describes the impact of identity choice on device management characteristics of the personal and corporate device scenarios.
 
@@ -183,7 +186,7 @@ For both personal and corporate deployment scenarios, an MDM system is the essen
 Azure AD is a cloud-based directory service that provides identity and access management. You can integrate it with existing on-premises directories to create a hybrid identity solution. Organizations that use Microsoft Office 365 or Intune are already using Azure AD, which has three editions: Free Basic, and Premium (see [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions/)). All editions support Azure AD device registration, but the Premium edition is required to enable MDM auto-enrollment and conditional access based on device state.
 
 **Mobile Device Management**
-Microsoft [Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/overview.aspx), part of the Enterprise Mobility + Security, is a cloud-based MDM system that manages devices off premises. Like Office 365, Intune uses Azure AD for identity management so employees use the same credentials to enroll devices in Intune that they use to sign into Office 365. Intune supports devices that run other operating systems, such as iOS and Android, to provide a complete MDM solution.
+Microsoft [Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/overview.aspx), part of the Enterprise Mobility + Security, is a cloud-based MDM system that manages devices off premises. Like Office 365, Intune uses Azure AD for identity management so employees use the same credentials to enroll devices in Intune that they use to sign into Office 365. Intune supports devices that run other operating systems, such as iOS and Android, to provide a complete MDM solution.
 You can also integrate Intune with Configuration Manager to gain a single console for managing all devices in the cloud and on premises, mobile or PC. For more information, see [Manage Mobile Devices with Configuration Manager and Microsoft Intune](https://technet.microsoft.com/library/jj884158.aspx). For guidance on choosing between a stand-alone Intune installation and Intune integrated with System Center Configuration Manager, see Choose between Intune by itself or integrating Intune with System Center Configuration Manager.
 Multiple MDM systems support Windows 10 and most support personal and corporate device deployment scenarios. MDM providers that support Windows 10 Mobile currently include: AirWatch, Citrix, MobileIron, SOTI, Blackberry and others. Most industry-leading MDM vendors already support integration with Azure AD. You can find the MDM vendors that support Azure AD in [Azure Marketplace](https://azure.microsoft.com/marketplace/). If your organization doesn’t use Azure AD, the user must use an MSA during OOBE before enrolling the device in your MDM using a corporate account.
 
@@ -307,13 +310,13 @@ In addition to SCEP certificate management, Windows 10 Mobile supports deploymen
 Get more detailed information about MDM certificate management in the [Client Certificate Install CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023(v=vs.85).aspx) and [Install digital certificates on Windows 10 Mobile](/windows/access-protection/installing-digital-certificates-on-windows-10-mobile).
 Use the Allow Manual Root Certificate Installation setting to prevent users from manually installing root and intermediate CA certificates intentionally or accidently.
 
->**Note:** To diagnose certificate-related issues on Windows 10 Mobile devices, use the free Certificates app in Microsoft Store. This Windows 10 Mobile app can help you:
--   View a summary of all personal certificates
--   View the details of individual certificates
--   View the certificates used for VPN, Wi-Fi, and email authentication
--   Identify which certificates may have expired
--   Verify the certificate path and confirm that you have the correct intermediate and root CA certificates
--   View the certificate keys stored in the device TPM
+> **Note:** To diagnose certificate-related issues on Windows 10 Mobile devices, use the free Certificates app in Microsoft Store. This Windows 10 Mobile app can help you:
+> -   View a summary of all personal certificates
+> -   View the details of individual certificates
+> -   View the certificates used for VPN, Wi-Fi, and email authentication
+> -   Identify which certificates may have expired
+> -   Verify the certificate path and confirm that you have the correct intermediate and root CA certificates
+> -   View the certificate keys stored in the device TPM
 
 ### <a href="" id="wi-fi-profiles"></a>Wi-Fi profiles
 
@@ -362,18 +365,18 @@ You can define and deploy APN profiles in MDM systems that configure cellular da
 
 -   **APN name** The APN name
 -   *IP connection type* The IP connection type; set to one of the following values:
-    -	IPv4 only
-    -	IPv6 only
-    -	IPv4 and IPv6 concurrently
-    -	IPv6 with IPv4 provided by 46xlat
+    - IPv4 only
+    - IPv6 only
+    - IPv4 and IPv6 concurrently
+    - IPv6 with IPv4 provided by 46xlat
 -   **LTE attached** Whether the APN should be attached as part of an LTE Attach
 -   **APN class ID** The globally unique identifier that defines the APN class to the modem
 -   **APN authentication type** The APN authentication type; set to one of the following values:
-    -	None
-    -	Auto
-    -	PAP
-    -	CHAP
-    -	MSCHAPv2
+    - None
+    - Auto
+    - PAP
+    - CHAP
+    - MSCHAPv2
 -   **User name** The user account when users select Password Authentication Protocol (PAP), CHAP, or MSCHAPv2 authentication in APN authentication type
 -   **Password** The password for the user account specified in User name
 -   **Integrated circuit card ID** The integrated circuit card ID associated with the cellular connection profile
@@ -708,7 +711,7 @@ Microsoft aspires to update Windows 10 Mobile devices with the latest updates au
 <td align="left"><strong>Wi-Fi</strong></td>
 <td align="left">Device is connected to a personal or corporate Wi-Fi network (no data charges)</td>
 <td align="left">Yes</td>
-<td align="left">Yes/td>
+<td align="left">Yes/td&gt;
 <td align="left">Yes</td>
 <td align="left">Yes – outside of Active Hours (forced restart after 7 days if user postpones restart)</td>
 </tr>
@@ -768,7 +771,7 @@ Update availability depends on what servicing option you choose for the device. 
 <td align="left"><strong>Windows Insider Builds</strong></td>
 <td align="left">As appropriate during development cycle, released to Windows Insiders only</td>
 <td align="left">Variable, until the next Insider build is released to Windows Insiders</td>
-<td align="left">Allows Insiders to test new feature and application compatibility before a Feature Update is released/td>
+<td align="left">Allows Insiders to test new feature and application compatibility before a Feature Update is released/td&gt;
 <td align="left">Mobile</td>
 </tr>
 <tr class="odd">
@@ -776,7 +779,7 @@ Update availability depends on what servicing option you choose for the device. 
 <td align="left">Immediately after the Feature Update is published to Windows Update by Microsoft</td>
 <td align="left">Microsoft typically releases two Feature Updates per 12-month period (approximately every four months, though it can potentially be longer)</td>
 <td align="left">Makes new features available to users as soon as possible</td>
-<td align="left">Mobile & Mobile Enterprise</td>
+<td align="left">Mobile &amp; Mobile Enterprise</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Current Branch for Business (CBB)</strong></td>
@@ -975,12 +978,12 @@ Thisis a lists of attributes that are supported by DHA and can trigger the corre
 Windows 10 mobile has protective measures that work together and integrate with Microsoft Intune or third-party Mobile Device Management (MDM) solutions. IT administrators can monitor and verify compliance to ensure corporate resources are protected end-to–end with the security and trust rooted in the physical hardware of the device.
 
 Here is what occurs when a smartphone is turned on:
-1.	Windows 10 Secure Boot protects the boot sequence, enables the device to boot into a defined and trusted configuration, and loads a factory trusted boot loader.
-2.	Windows 10 Trusted Boot takes control, verifies the digital signature of the Windows kernel, and the components are loaded and executed during the Windows startup process.
-3.	In parallel to Steps 1 and 2, Windows 10 Mobile TPM (Trusted Platform Modules – measured boot) runs independently in a hardware-protected security zone (isolated from boot execution path monitors boot activities) to create an integrity protected and tamper evident audit trail - signed with a secret that is only accessible by TPM.
-4.	Devices managed by a DHA-enabled MDM solution send a copy of this audit trail to Microsoft Health Attestation Service (HAS) in a protected, tamper-resistant, and tamper-evident communication channel.
-5.	Microsoft HAS reviews the audit trails, issues an encrypted/signed report, and forwards it to the device.
-6.	IT managers can use a DHA-enabled MDM solution to review the report in a protected, tamper-resistant and tamper-evident communication channel. They can assess if a device is running in a compliant (healthy) state, allow access, or trigger corrective action aligned with security needs and enterprise policies.
+1. Windows 10 Secure Boot protects the boot sequence, enables the device to boot into a defined and trusted configuration, and loads a factory trusted boot loader.
+2. Windows 10 Trusted Boot takes control, verifies the digital signature of the Windows kernel, and the components are loaded and executed during the Windows startup process.
+3. In parallel to Steps 1 and 2, Windows 10 Mobile TPM (Trusted Platform Modules – measured boot) runs independently in a hardware-protected security zone (isolated from boot execution path monitors boot activities) to create an integrity protected and tamper evident audit trail - signed with a secret that is only accessible by TPM.
+4. Devices managed by a DHA-enabled MDM solution send a copy of this audit trail to Microsoft Health Attestation Service (HAS) in a protected, tamper-resistant, and tamper-evident communication channel.
+5. Microsoft HAS reviews the audit trails, issues an encrypted/signed report, and forwards it to the device.
+6. IT managers can use a DHA-enabled MDM solution to review the report in a protected, tamper-resistant and tamper-evident communication channel. They can assess if a device is running in a compliant (healthy) state, allow access, or trigger corrective action aligned with security needs and enterprise policies.
 
 ### <a href="" id="asset-reporting"></a>Asset reporting
 

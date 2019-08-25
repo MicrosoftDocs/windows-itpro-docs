@@ -3,23 +3,22 @@ title: Insider preview for Microsoft HoloLens (HoloLens)
 description: It’s simple to get started with Insider builds and to provide valuable feedback for our next major operating system update for HoloLens.
 ms.prod: hololens
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 10/23/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Insider preview for Microsoft HoloLens
 
 Welcome to the latest Insider Preview builds for HoloLens!  It’s simple to get started and provide valuable feedback for our next major operating system update for HoloLens. 
  
-
- 
-<span id="get-insider" />
 ## How do I install the Insider builds? 
  
-On a device running the Windows 10 April 2018 Update, go to **Settings -> Update & Security -> Windows Insider Program** and select **Get started**. Link the account you used to register as a Windows Insider. 
+On a device running the Windows 10 April 2018 Update, go to <strong>Settings -&gt; Update &amp; Security -&gt; Windows Insider Program</strong> and select <strong>Get started</strong>. Link the account you used to register as a Windows Insider. 
 
 Then, select **Active development of Windows**, choose whether you’d like to receive **Fast** or **Slow** builds, and review the program terms. 
 

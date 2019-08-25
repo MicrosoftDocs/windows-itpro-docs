@@ -1,12 +1,15 @@
 ---
 title: How to Deploy the App-V Server (Windows 10)
 description: How to Deploy the App-V Server in App-V for Windows 10
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ---
 # How to Deploy the App-V Server (new installation)
@@ -29,7 +32,7 @@ ms.topic: article
 1. Download the App-V server components. All five App-V server components are included in the Microsoft Desktop Optimization Pack (MDOP) 2015 ISO package, which can be downloaded from either of the following locations:
 
     * The [MSDN (Microsoft Developer Network) subscriptions site](https://msdn.microsoft.com/subscriptions/downloads/default.aspx#FileId=65215). You must have a MSDN subscription to download the MDOP ISO package from this site.
-    * The [Volume Licensing Service Center](https://www.microsoft.com/en-us/licensing/default.aspx) if you're using [Windows 10 for Enterprise or Education](https://www.microsoft.com/en-us/WindowsForBusiness/windows-product-home).
+    * The [Volume Licensing Service Center](https://www.microsoft.com/licensing/default.aspx) if you're using [Windows 10 for Enterprise or Education](https://www.microsoft.com/WindowsForBusiness/windows-product-home).
 2. Copy the App-V server installation files to the computer on which you want to install it.
 3. Start the App-V server installation by right-clicking and running **appv\_server\_setup.exe** as an administrator, and then click **Install**.
 4. Review and accept the license terms, and choose whether to enable Microsoft updates.
@@ -51,7 +54,7 @@ ms.topic: article
     | You are using a custom database name. | Select **Custom configuration** and type the database name.<br/>The database name must be unique, or the installation will fail.|
 8. On the **Configure** page, accept the default value, **Use this local computer**.
 
-    >[!NOTE]
+   > [!NOTE]
     >If you're installing the Management server and Management database side-by-side, the appropriate options are selected by default and cannot be changed.
 9. On the initial **Create New Reporting Database** page, configure the **Microsoft SQL Server instance** and **Reporting Server database** by selecting the appropriate option below.
 
@@ -61,7 +64,7 @@ ms.topic: article
     | You are using a custom database name. | Select **Custom configuration** and type the database name.<br/>The database name must be unique, or the installation will fail.|
 10. On the **Configure** page, accept the default value: **Use this local computer**.
 
-    >[!NOTE]
+   > [!NOTE]
     >If you're installing the Management server and Management database side-by-side, the appropriate options are selected by default and cannot be changed.
 11. On the **Configure** (Management Server Configuration) page, specify the following:
 

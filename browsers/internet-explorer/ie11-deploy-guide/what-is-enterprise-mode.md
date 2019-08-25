@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Info about the features included in Enterprise Mode with Internet Explorer 11.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 3c77e9f3-eb21-46d9-b5aa-f9b2341cfefa
+ms.reviewer: 
+audience: itpromanager: dansimp
+ms.author: lomayor
 title: Enterprise Mode and the Enterprise Mode Site List (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 10/25/2018
@@ -160,6 +163,6 @@ Because the tool is open-source, the source code is readily available for examin
 
 - [Web Application Compatibility Lab Kit](https://technet.microsoft.com/microsoft-edge/mt612809.aspx)
 
-- [Microsoft Services Support](https://www.microsoft.com/en-us/microsoftservices/support.aspx)
+- [Microsoft Services Support](https://www.microsoft.com/microsoftservices/support.aspx)
 
 - [Find a Microsoft partner on Pinpoint](https://partnercenter.microsoft.com/pcv/search)

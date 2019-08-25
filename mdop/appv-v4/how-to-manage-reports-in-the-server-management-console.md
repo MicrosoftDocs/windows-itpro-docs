@@ -1,12 +1,15 @@
 ---
 title: How to Manage Reports in the Server Management Console
 description: How to Manage Reports in the Server Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: 28d99620-6339-43f6-9288-4aa958607c59
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

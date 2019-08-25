@@ -1,12 +1,15 @@
 ---
 title: Installation Page (Learn More)
 description: Installation Page (Learn More)
-author: jamiejdt
+author: eavena
 ms.assetid: a53b8330-dfc3-4540-b147-7c10529f403a
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

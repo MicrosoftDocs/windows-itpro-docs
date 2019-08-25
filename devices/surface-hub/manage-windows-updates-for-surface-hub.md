@@ -2,13 +2,14 @@
 title: Windows updates (Surface Hub)
 description: You can manage Windows updates on your Microsoft Surface Hub by setting the maintenance window, deferring updates, or using Windows Server Update Services (WSUS).
 ms.assetid: A737BD50-2D36-4DE5-A604-55053D549045
+ms.reviewer: 
+manager: dansimp
 keywords: manage Windows updates, Surface Hub, Windows Server Update Services, WSUS
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
-ms.date: 11/03/2017
 ms.localizationpriority: medium
 ---
 
@@ -67,7 +68,7 @@ This table gives examples of deployment rings.
 
 | Deployment ring | Ring size | Servicing branch | Deferral for feature updates | Deferral for quality updates (security fixes, drivers, and other updates) | Validation step |
 | --------- | --------- | --------- | --------- | --------- | --------- |
-| Preview (e.g. non-critical or test devices) | Small | Semi-annual channel (Targeted) | None.  | None.  | Manually test and evaluate new functionality. Pause updates if there are issues. |
+| Preview (e.g. non-critical or test devices) | Small | Windows Insider Preview | None.  | None.  | Manually test and evaluate new functionality. Pause updates if there are issues. |
 | Release (e.g. devices used by select teams) | Medium | Semi-annual channel  | None. | None.  | Monitor device usage and user feedback. Pause updates if there are issues. |
 | Broad deployment (e.g. most of the devices in your organization) | Large | Semi-annual channel |  120 days after release. | 7-14 days after release. | Monitor device usage and user feedback. Pause updates if there are issues. |
 | Mission critical (e.g. devices in executive boardrooms) | Small | Semi-annual channel |  180 days after release (maximum deferral for feature updates). | 30 days after release (maximum deferral for quality updates). | Monitor device usage and user feedback. |

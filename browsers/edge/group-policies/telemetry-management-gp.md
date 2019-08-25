@@ -1,10 +1,11 @@
 ---
 title: Microsoft Edge - Telemetry and data collection group policies
 description: Microsoft Edge gathers diagnostic data, intranet history, internet history, tracking information of sites visited, and Live Tile metadata. You can configure Microsoft Edge to collect all or none of this information.
-manager: dougkim
-ms.author: pashort
-author: shortpatti
+audience: itpromanager: dansimp
+ms.author: eravena
+author: eavena
 ms.date: 10/02/2018
+ms.reviewer: 
 ms.localizationpriority: medium
 ms.topic: reference
 ---

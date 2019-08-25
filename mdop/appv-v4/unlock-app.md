@@ -1,12 +1,15 @@
 ---
 title: UNLOCK APP
 description: UNLOCK APP
-author: jamiejdt
+author: manikadhiman
 ms.assetid: 91fc8ceb-b4f5-4a06-8193-05189f830943
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

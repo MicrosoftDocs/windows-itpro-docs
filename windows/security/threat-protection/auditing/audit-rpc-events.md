@@ -2,12 +2,15 @@
 title: Audit RPC Events (Windows 10)
 description: This topic for the IT professional describes the advanced security audit policy setting, Audit RPC Events, which determines whether the operating system generates audit events when inbound remote procedure call (RPC) connections are made.
 ms.assetid: 868aec2d-93b4-4bc8-a150-941f88838ba6
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
 ---
 

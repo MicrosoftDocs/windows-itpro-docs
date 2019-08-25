@@ -1,11 +1,14 @@
 ---
 title: What's new in Windows 10 Enterprise 2016 LTSC
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: New and updated IT Pro content about new features in Windows 10 Enterprise 2016 LTSC (also known as Windows 10 Enterprise 2016 LTSB).
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise 2016 LTSC"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: low
 ms.topic: article
 ---
@@ -80,11 +83,11 @@ Additional changes for Windows Hello in Windows 10 Enterprise 2016 LTSC:
 
 #### New Bitlocker features
 
--   **XTS-AES encryption algorithm**. BitLocker now supports the XTS-AES encryption algorithm. XTS-AES provides additional protection from a class of attacks on encryption that rely on manipulating cipher text to cause predictable changes in plain text. BitLocker supports both 128-bit and 256-bit XTS-AES keys.
-    It provides the following benefits:
-    -   The algorithm is FIPS-compliant.
-    -   Easy to administer. You can use the BitLocker Wizard, manage-bde, Group Policy, MDM policy, Windows PowerShell, or WMI to manage it on devices in your organization.
-        >**Note:**  Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
+- **XTS-AES encryption algorithm**. BitLocker now supports the XTS-AES encryption algorithm. XTS-AES provides additional protection from a class of attacks on encryption that rely on manipulating cipher text to cause predictable changes in plain text. BitLocker supports both 128-bit and 256-bit XTS-AES keys.
+  It provides the following benefits:
+  - The algorithm is FIPS-compliant.
+  - Easy to administer. You can use the BitLocker Wizard, manage-bde, Group Policy, MDM policy, Windows PowerShell, or WMI to manage it on devices in your organization.
+    >**Note:**  Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
 
 ### Security auditing
 

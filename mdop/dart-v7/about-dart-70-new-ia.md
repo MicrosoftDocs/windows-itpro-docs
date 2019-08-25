@@ -1,12 +1,15 @@
 ---
 title: About DaRT 7.0
 description: About DaRT 7.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 217ffafc-6d73-4b80-88d9-71870460d4ab
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

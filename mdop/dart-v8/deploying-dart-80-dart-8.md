@@ -1,12 +1,15 @@
 ---
 title: Deploying DaRT 8.0
 description: Deploying DaRT 8.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 5a976d4e-3372-4ef6-9095-1b48e99af21b
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 5632(S, F): A request was made to authenticate to a wireless network.
@@ -67,7 +70,6 @@ It typically generates when network adapter connects to new wireless network.
  <Data Name="EAPErrorCode">0x0</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** None.

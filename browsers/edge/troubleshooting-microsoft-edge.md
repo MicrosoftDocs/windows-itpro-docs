@@ -2,8 +2,10 @@
 title: Troubleshoot Microsoft Edge
 description: 
 ms.assetid: 
-author: shortpatti
-ms.author: pashort
+ms.reviewer: 
+audience: itpromanager: dansimp
+author: eavena
+ms.author: eravena
 ms.prod: edge
 ms.sitesec: library
 title: Deploy Microsoft Edge kiosk mode
@@ -32,4 +34,4 @@ If you want to deliver applications to users via Citrix through Microsoft Edge, 
  
 ## Missing SettingSync.admx and SettingSync.adml files
 
-Make sure to [download](https://www.microsoft.com/en-us/download/windows.aspx) the latest templates to C:\windows\policydefinitions\. 
+Make sure to [download](https://www.microsoft.com/download/windows.aspx) the latest templates to C:\windows\policydefinitions\. 

@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: performance
 description: Browser cache changes and roaming profiles
-author: shortpatti
+author: dansimp
 ms.prod: ie11
 ms.assetid: 85f0cd01-6f82-4bd1-9c0b-285af1ce3436
+ms.reviewer: 
+audience: itpromanager: dansimp
+ms.author: dansimp
 title: Browser cache changes and roaming profiles (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 10/16/2017

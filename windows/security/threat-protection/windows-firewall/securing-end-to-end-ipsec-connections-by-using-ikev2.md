@@ -6,12 +6,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.reviewer: 
+ms.author: dansimp
 ---
 
 # Securing End-to-End IPsec connections by using IKEv2
@@ -78,7 +80,7 @@ This script does the following:
 
 Type each cmdlet on a single line, even though they may appear to wrap across several lines because of formatting constraints.
 
-``` syntax
+```powershell
 # Create a Security Group for the computers that will get the policy
 $pathname = (Get-ADDomain).distinguishedname
 New-ADGroup -name "IPsec client and servers" -SamAccountName "IPsec client and servers" `
@@ -118,7 +120,7 @@ Use a Windows PowerShell script similar to the following to create a local IPsec
 
 Type each cmdlet on a single line, even though they may appear to wrap across several lines because of formatting constraints.
 
-``` syntax
+```powershell
 #Set up the certificate
 $certprop = New-NetIPsecAuthProposal -machine -cert -Authority "DC=com, DC=contoso, DC=corp, CN=corp-APP1-CA"
 $myauth = New-NetIPsecPhase1AuthSet -DisplayName "IKEv2TestPhase1AuthSet" -proposal $certprop
@@ -130,10 +132,10 @@ New-NetIPsecRule  -DisplayName "My IKEv2 Rule" -RemoteAddress any -Phase1AuthSet
 
 Make sure that you install the required certificates on the participating computers.
 
->**Note:**  
--   For local devices, you can import the certificates manually if you have administrator access to the computer. For more info, see [Import or export certificates and private keys](https://windows.microsoft.com/windows-vista/Import-or-export-certificates-and-private-keys).
--   You need a root certificate and a computer certificate on all devices that participate in the secure connection. Save the computer certificate in the **Personal/Certificates** folder.
--   For remote devices, you can create a secure website to facilitate access to the script and certificates.
+> **Note:**  
+> -   For local devices, you can import the certificates manually if you have administrator access to the computer. For more info, see [Import or export certificates and private keys](https://windows.microsoft.com/windows-vista/Import-or-export-certificates-and-private-keys).
+> -   You need a root certificate and a computer certificate on all devices that participate in the secure connection. Save the computer certificate in the **Personal/Certificates** folder.
+> -   For remote devices, you can create a secure website to facilitate access to the script and certificates.
 
 ## Troubleshooting
 
@@ -171,7 +173,7 @@ Follow these procedures to verify and troubleshoot your IKEv2 IPsec connections:
 
 6.  Open the wfpdiag.xml file with your an XML viewer program or Notepad, and then examine the contents. There will be a lot of data in this file. One way to narrow down where to start looking is to search the last “errorFrequencyTable” at the end of the file. There might be many instances of this table, so make sure that you look at the last table in the file. For example, if you have a certificate problem, you might see the following entry in the last table at the end of the file:
 
-    ``` syntax
+    ```xml
     <item>
       <error>ERROR_IPSEC_IKE_NO_CERT</error>
       <frequency>32</frequency>
@@ -185,9 +187,9 @@ You might not find the exact answer for the issue, but you can find good hints. 
 
 -   [Windows Defender Firewall with Advanced Security](windows-firewall-with-advanced-security.md)
 
- 
+ 
 
- 
+ 
 
 
 

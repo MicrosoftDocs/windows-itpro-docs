@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - TaskManager
 description: Policy CSP - TaskManager
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 07/05/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - TaskManager
@@ -68,8 +70,8 @@ ms.date: 07/05/2018
 This setting determines whether non-administrators can use Task Manager to end tasks.
 
 Value type is integer. Supported values:  
- -  0 - Disabled. EndTask functionality is blocked in TaskManager.
- -  1 - Enabled (default).  Users can perform EndTask in TaskManager.
+-  0 - Disabled. EndTask functionality is blocked in TaskManager.
+-  1 - Enabled (default).  Users can perform EndTask in TaskManager.
 
 <!--/Description-->
 <!--SupportedValues-->

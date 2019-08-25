@@ -1,12 +1,15 @@
 ---
 title: Managing UE-V 1.0 Settings Location Templates Using PowerShell and WMI
 description: Managing UE-V 1.0 Settings Location Templates Using PowerShell and WMI
-author: jamiejdt
+author: levinec
 ms.assetid: 4b911c78-a5e9-4199-bfeb-72ab764d47c1
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -76,7 +79,7 @@ You must have administrator permissions to update, register, or unregister a set
     </tbody>
     </table>
 
-     
+     
 
 The UE-V PowerShell features allow you to manage a group of settings templates deployed in your enterprise. To manage a group of templates using PowerShell, do the following.
 
@@ -159,7 +162,7 @@ User Experience Virtualization provides the following set of WMI commands. Admin
     </tbody>
     </table>
 
-     
+     
 
 **How to deploy the UE-V agent with PowerShell**
 
@@ -168,7 +171,7 @@ User Experience Virtualization provides the following set of WMI commands. Admin
     **Note**  
     Use AgentSetup.exe to deploy both 32-bit and 64-bit versions of the UE-V Agent. Windows Installer Files versions, AgentSetupx86.msi and AgentSetupx64.msi, are available for each architecture. To uninstall the UE-V Agent at a later time using the installation file, you must use the same file type.
 
-     
+     
 
 2.  Use one of the following PowerShell commands to install the agent.
 
@@ -185,9 +188,9 @@ User Experience Virtualization provides the following set of WMI commands. Admin
 
 [Operations for UE-V 1.0](operations-for-ue-v-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

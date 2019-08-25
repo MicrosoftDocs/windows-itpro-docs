@@ -1,12 +1,15 @@
 ---
 title: How to Move an Application Group
 description: How to Move an Application Group
-author: jamiejdt
+author: eavena
 ms.assetid: 7f9f9f2e-f394-4ad3-8615-4237a7dcfb95
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -31,7 +34,7 @@ In the Application Virtualization Server Management Console, you can use the fol
     **Note**  
     You can select and move multiple application groups simultaneously. In the right pane, use the **CTRL**-click or **Shift**-click key combinations to select more than one group.
 
-     
+     
 
 ## Related topics
 
@@ -42,9 +45,9 @@ In the Application Virtualization Server Management Console, you can use the fol
 
 [How to Manage Applications in the Server Management Console](how-to-manage-applications-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

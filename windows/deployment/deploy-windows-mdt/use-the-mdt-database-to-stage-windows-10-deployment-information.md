@@ -2,14 +2,16 @@
 title: Use the MDT database to stage Windows 10 deployment information (Windows 10)
 description: This topic is designed to teach you how to use the MDT database to pre-stage information on your Windows 10 deployment in a Microsoft SQL Server 2012 SP1 Express database, rather than include the information in a text file (CustomSettings.ini).
 ms.assetid: 8956ab54-90ba-45d3-a384-4fdec72c4d46
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.pagetype: mdt
 keywords: database, permissions, settings, configure, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
-author: greg-lindsay
-ms.date: 07/27/2017
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 
@@ -21,15 +23,15 @@ This topic is designed to teach you how to use the MDT database to pre-stage inf
 
 MDT can use either SQL Server Express or full SQL Server, but since the deployment database isn't big, even in large enterprise environments, we recommend using the free SQL Server 2012 SP1 Express database in your environment.
 
-**Note**  
-Be sure to enable Named Pipes when configuring the SQL Server 2012 SP1 Express database. Although it is a legacy protocol, Named Pipes has proven to work well when connecting from Windows Preinstallation Environment (Windows PE) to the SQL Server database.
+>[!NOTE]
+>Be sure to enable Named Pipes when configuring the SQL Server 2012 SP1 Express database. Although it is a legacy protocol, Named Pipes has proven to work well when connecting from Windows Preinstallation Environment (Windows PE) to the SQL Server database.
  
 ## <a href="" id="sec02"></a>Create the deployment database
 
 The MDT database is by default created and managed from the Deployment Workbench. In these steps, we assume you have installed SQL Server 2012 SP1 Express on MDT01.
 
-**Note**  
-Since SQL Server 2012 SP1 Express runs by default on a separate instance (SQLEXPRESS), the SQL Server Browser service must be running, and the firewall configured to allow traffic to it. Port 1433 TCP and port 1434 UDP need to be opened for inbound traffic on MDT01.
+>[!NOTE]
+>Since SQL Server 2012 SP1 Express runs by default on a separate instance (SQLEXPRESS), the SQL Server Browser service must be running, and the firewall configured to allow traffic to it. Port 1433 TCP and port 1434 UDP need to be opened for inbound traffic on MDT01.
  
 1.  On MDT01, using Deployment Workbench, expand the MDT Production deployment share, expand **Advanced Configuration**, right-click **Database**, and select **New Database**.
 2.  In the New DB Wizard, on the **SQL Server Details** page, enter the following settings and click **Next**:

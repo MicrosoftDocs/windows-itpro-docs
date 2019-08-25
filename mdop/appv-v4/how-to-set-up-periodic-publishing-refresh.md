@@ -1,12 +1,15 @@
 ---
 title: How to Set Up Periodic Publishing Refresh
 description: How to Set Up Periodic Publishing Refresh
-author: jamiejdt
+author: eavena
 ms.assetid: c358c765-cb88-4881-b4e7-0a2e87304870
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ You can use the following procedure to configure the client to periodically refr
 **Note**  
 After you have performed this procedure, the publishing information will be refreshed according to the new settings after the first refresh at login. When this first refresh occurs, the server might override the computer settings with different settings, depending on how it is configured. The **Refresh** tab in the **Properties** dialog box shows the locally configured client computer settings and any settings that might have been configured for the user by the publishing server.
 
- 
+ 
 
 **To periodically refresh the publishing information from the Application Virtualization Servers**
 
@@ -32,7 +35,7 @@ After you have performed this procedure, the publishing information will be refr
     **Note**  
     This setting will cause the client to refresh publishing information every time the configured period elapses. If the user is not logged in when it's time to do a refresh, the refresh will take place when the user next logs in. The timer is then started again for the next period.
 
-     
+     
 
 4.  Click **Apply** to change the configuration.
 
@@ -43,9 +46,9 @@ After you have performed this procedure, the publishing information will be refr
 
 [How to Configure the Client in the Application Virtualization Client Management Console](how-to-configure-the-client-in-the-application-virtualization-client-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,12 +1,15 @@
 ---
 title: How to Uninstall the MED-V Components
 description: How to Uninstall the MED-V Components
-author: jamiejdt
+author: levinec
 ms.assetid: c121dd27-6b2f-4d41-a21a-c6e8608c5c41
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -21,7 +24,7 @@ Typically, you can configure your electronic software distribution (ESD) system 
 **Important**  
 Before you can uninstall the MED-V Host Agent, you must first uninstall any installed MED-V workspace.
 
- 
+ 
 
 Use the following procedures to uninstall the MED-V components from your enterprise.
 
@@ -48,7 +51,7 @@ The ESD client recognizes when the new packages are available and starts to unin
     **Note**  
     If MED-V is currently running, a dialog box appears and prompts you whether you want to shut it down. Click **Yes** to continue with the uninstallation. Click **No** to cancel the uninstallation.
 
-     
+     
 
 Alternately, you can remove a MED-V workspace by running the `uninstall.exe` file, typically located at C:\\ProgramData\\Microsoft\\Medv\\Workspace.
 
@@ -63,7 +66,7 @@ Alternately, you can remove a MED-V workspace by running the `uninstall.exe` fil
     **Note**  
     If you try to uninstall the MED-V Host Agent before you uninstall the MED-V workspace, a dialog box appears that states that you must first uninstall the MED-V workspace. Click **OK** to continue.
 
-     
+     
 
 **To manually uninstall the MED-V Workspace Packager**
 
@@ -76,16 +79,16 @@ Alternately, you can remove a MED-V workspace by running the `uninstall.exe` fil
     **Note**  
     You can uninstall the MED-V Workspace Packager at any time without affecting any deployed MED-V workspaces.
 
-     
+     
 
 ## Related topics
 
 
 [Deploy the MED-V Components](deploy-the-med-v-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

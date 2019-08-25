@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Speech
 description: Policy CSP - Speech
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 08/09/2018
+author: manikadhiman
+ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Speech
@@ -82,14 +84,34 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Speech policies supported by HoloLens 2
+
+- [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
+<!--EndHoloLens2-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololensbusinessspolicies"></a>Speech policies supported by HoloLens (1st gen) Commercial Suite
+
+- [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
+<!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Speech policies supported by HoloLens (1st gen) Development Edition
+
+- [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
+<!--EndHoloLens-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.

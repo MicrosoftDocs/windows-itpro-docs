@@ -2,11 +2,14 @@
 title: Configure Client Computers (Windows 10)
 description: Configure Client Computers
 ms.assetid: a48176c9-b05c-4dd5-a9ef-83073e2370fc
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+audience: itproauthor: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---
@@ -87,5 +90,5 @@ The above configurations will open an additional port through the Windows Firewa
 ## Related topics
 
 - [Install and Configure VAMT](install-configure-vamt.md)
- 
- 
+ 
+ 

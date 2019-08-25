@@ -1,12 +1,15 @@
 ---
 title: How to Configure Streaming Server Security Post-Installation
 description: How to Configure Streaming Server Security Post-Installation
-author: jamiejdt
+author: dansimp
 ms.assetid: 9bde3677-d1aa-4dcc-904e-bb49a268d748
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

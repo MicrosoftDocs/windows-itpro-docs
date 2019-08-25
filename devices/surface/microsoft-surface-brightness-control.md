@@ -5,10 +5,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: coveminer
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 1/15/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Surface Brightness Control
@@ -23,16 +25,16 @@ designed to help reduce thermal load and lower the overall carbon
 footprint for deployed Surface devices. The tool automatically dims the screen when not in use and
 includes the following configuration options:
 
-  - Period of inactivity before dimming the display.
+- Period of inactivity before dimming the display.
 
-  - Brightness level when dimmed.
+- Brightness level when dimmed.
 
-  - Maximum brightness level when in use.
+- Maximum brightness level when in use.
 
 **To run Surface Brightness Control:**
 
-  - Install surfacebrightnesscontrol.msi on the target device and Surface Brightness Control
-    will begin working immediately.
+- Install surfacebrightnesscontrol.msi on the target device and Surface Brightness Control
+  will begin working immediately.
 
 ## Configuring Surface Brightness Control
 
@@ -56,9 +58,14 @@ Full Brightness   | Default: 100  <br>Option: Range of 0-100 percent of screen b
 | Inactivity Timeout| Default: 30 seconds <br>Option: Any numeric value  <br>Data Type: Integer  <br> Type: REG_DWORD | This setting allows you to manage the period of inactivity before dimming the device. If you do not configure this setting, the inactivity timeout is 30 seconds.|
 | Telemetry  Enabled | Default: 01 <br>Option: 01, 00 <br> Type: REG_BINARY  | This setting allows you to manage the sharing of app usage information to improve software and provide better user experience. To disable telemetry, set the value to 00. If you do not configure this setting, telemetry information is shared with Microsoft in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). |
 
+## Changes and updates
+
+### Version 1.12.239.0
+*Release Date: 26 April 2019*<br>
+This version of Surface Brightness Control adds support for the following:
+- Touch delay fixes.
 
 
 ## Related topics
 
 - [Battery limit setting](battery-limit.md)
-

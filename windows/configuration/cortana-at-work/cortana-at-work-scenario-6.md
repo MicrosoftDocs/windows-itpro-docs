@@ -4,10 +4,12 @@ description: A test scenario about how to use Cortana with the Suggested reminde
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
-ms.author: dougkim
+ms.author: dansimp
 ms.date: 10/05/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email
@@ -16,7 +18,7 @@ ms.date: 10/05/2017
 -   Windows 10 Mobile, version 1703
 
 >[!IMPORTANT]
->The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering. For more info, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [Microsoft Services Agreement](https://www.microsoft.com/en-us/servicesagreement).
+>The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering. For more info, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement).
 
 Cortana automatically finds patterns in your email, suggesting reminders based things that you said you would do so you don’t forget about them. For example, Cortana recognizes that if you include the text, _I’ll get this to you by the end of the week_ in an email, you're making a commitment to provide something by a specific date. Cortana can now suggest that you be reminded about this event, letting you decide whether to keep it or to cancel it.
 
@@ -39,7 +41,7 @@ Cortana automatically finds patterns in your email, suggesting reminders based t
 
 5. Create and send an email to yourself (so you can see the Suggested reminder), including the text, _I’ll finish this project by end of day today_.
 
-6.	After you get the email, click on the Cortana **Home** icon, and scroll to today’s events. 
+6. After you get the email, click on the Cortana **Home** icon, and scroll to today’s events. 
 
     If the reminder has a specific date or time associated with it, like end of day, Cortana notifies you at the appropriate time and puts the reminder into the Action Center. Also from the Home screen, you can view the email where you made the promise, set aside time on your calendar, officially set the reminder, or mark the reminder as completed.
 

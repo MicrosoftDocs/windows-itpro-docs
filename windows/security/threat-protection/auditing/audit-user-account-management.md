@@ -2,12 +2,15 @@
 title: Audit User Account Management (Windows 10)
 description: This topic for the IT professional describes the advanced security audit policy setting, Audit User Account Management, which determines whether the operating system generates audit events when specific user account management tasks are performed.
 ms.assetid: f7e72998-3858-4197-a443-19586ecc4bfb
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
 ---
 

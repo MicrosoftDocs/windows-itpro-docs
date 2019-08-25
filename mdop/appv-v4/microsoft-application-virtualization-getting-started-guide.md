@@ -1,12 +1,15 @@
 ---
 title: Microsoft Application Virtualization Getting Started Guide
 description: Microsoft Application Virtualization Getting Started Guide
-author: jamiejdt
+author: eavena
 ms.assetid: 6cd9a212-e270-4d7c-bd0a-bd6af9a5c3ba
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

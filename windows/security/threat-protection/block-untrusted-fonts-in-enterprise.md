@@ -2,13 +2,15 @@
 title: Block untrusted fonts in an enterprise (Windows 10)
 description: To help protect your company from attacks which may originate from untrusted or attacker controlled font files, we’ve created the Blocking Untrusted Fonts feature.
 ms.assetid: a3354c8e-4208-4be6-bc19-56a572c361b4
+ms.reviewer: 
+manager: dansimp
 keywords: font blocking, untrusted font blocking, block fonts, untrusted fonts
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: security
 ms.sitesec: library
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 ms.date: 08/14/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +21,7 @@ ms.localizationpriority: medium
 
 -   Windows 10
 
->Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+>Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 
 To help protect your company from attacks which may originate from untrusted or attacker controlled font files, we’ve created the Blocking Untrusted Fonts feature. Using this feature, you can turn on a global setting that stops your employees from loading untrusted fonts processed using the Graphics Device Interface (GDI) onto your network. Untrusted fonts are any font installed outside of the `%windir%/Fonts` directory. Blocking untrusted fonts helps prevent both remote (web-based or email-based) and local EOP attacks that can happen during the font file-parsing process.
 
@@ -67,9 +69,9 @@ Use Group Policy or the registry to turn this feature on, off, or to use audit m
 **To turn on and use the Blocking Untrusted Fonts feature through the registry**
 To turn this feature on, off, or to use audit mode:
 
-1.  Open the registry editor (regedit.exe) and go to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel\`.
+1. Open the registry editor (regedit.exe) and go to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel\`.
 
-2.  If the **MitigationOptions** key isn't there, right-click and add a new **QWORD (64-bit) Value**, renaming it to **MitigationOptions**.
+2. If the **MitigationOptions** key isn't there, right-click and add a new **QWORD (64-bit) Value**, renaming it to **MitigationOptions**.
 
 3. Right click on the **MitigationOptions** key, and then click **Modify**. 
 
@@ -77,16 +79,16 @@ To turn this feature on, off, or to use audit mode:
 
 4. Make sure the **Base** option is **Hexadecimal**, and then update the **Value data**, making sure you keep your existing value, like in the important note below:
 
-    -   **To turn this feature on.** Type **1000000000000**.
+   - **To turn this feature on.** Type **1000000000000**.
 
-    -   **To turn this feature off.** Type **2000000000000**.
+   - **To turn this feature off.** Type **2000000000000**.
 
-    -   **To audit with this feature.** Type **3000000000000**.
+   - **To audit with this feature.** Type **3000000000000**.
 
-    >[!Important]
-    >Your existing **MitigationOptions** values should be saved during your update. For example, if the current value is *1000*, your updated value should be *1000000001000*. 
+     >[!Important]
+     >Your existing **MitigationOptions** values should be saved during your update. For example, if the current value is *1000*, your updated value should be *1000000001000*. 
 
-4. Restart your computer.
+5. Restart your computer.
 
 ## View the event log
 After you turn this feature on, or start using Audit mode, you can look at your event logs for details.
@@ -139,11 +141,11 @@ After you figure out the problematic fonts, you can try to fix your apps in 2 wa
 
 2.  Add any additional processes that need to be excluded here, and then turn the Blocking untrusted fonts feature on, using the steps in the [Turn on and use the Blocking Untrusted Fonts feature](#turn-on-and-use-the-blocking-untrusted-fonts-feature) section of this topic.
 
- 
+ 
 ## Related content
 
 - [Dropping the “Untrusted Font Blocking” setting](https://blogs.technet.microsoft.com/secguide/2017/06/15/dropping-the-untrusted-font-blocking-setting/)
- 
+ 
 
 
 

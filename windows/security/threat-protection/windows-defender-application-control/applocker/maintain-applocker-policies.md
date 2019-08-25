@@ -2,12 +2,14 @@
 title: Maintain AppLocker policies (Windows 10)
 description: This topic describes how to maintain rules within AppLocker policies.
 ms.assetid: b4fbfdfe-ef3d-49e0-a390-f2dfe74602bc
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,8 +20,8 @@ ms.date: 09/21/2017
 # Maintain AppLocker policies
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic describes how to maintain rules within AppLocker policies.
 

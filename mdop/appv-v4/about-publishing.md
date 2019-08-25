@@ -1,12 +1,15 @@
 ---
 title: About Publishing
 description: About Publishing
-author: jamiejdt
+author: dansimp
 ms.assetid: 295074d7-123f-4740-b938-e4a371ee72fd
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ You can centrally manage publishing applications to the Application Virtualizati
 **Note**  
 Before the client can refresh the publishing information, the client must know about the Application Virtualization Management Server. You configure the client with the necessary information about the server when you install the client.
 
- 
+ 
 
 When a client contacts the server for application publishing information, the server provides the client with the list of applications that the user has permission to access and the location of the corresponding Open Software Descriptor (OSD) files. The server also provides the relevant information about icons, file type associations, and shortcuts.
 
@@ -30,9 +33,9 @@ When a client contacts the server for application publishing information, the se
 
 [About Application Virtualization Applications](about-application-virtualization-applications.md)
 
- 
+ 
 
- 
+ 
 
 
 

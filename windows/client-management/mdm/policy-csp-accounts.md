@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Accounts
 description: Policy CSP - Accounts
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 07/30/2018
+author: manikadhiman
+ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Accounts
@@ -28,10 +30,7 @@ ms.date: 07/30/2018
   <dd>
     <a href="#accounts-allowmicrosoftaccountsigninassistant">Accounts/AllowMicrosoftAccountSignInAssistant</a>
   </dd>
-  <dd>
-    <a href="#accounts-domainnamesforemailsync">Accounts/DomainNamesForEmailSync</a>
-  </dd>
-</dl>
+ </dl>
 
 
 <hr/>
@@ -196,59 +195,33 @@ The following list shows the supported values:
 
 <hr/>
 
-<!--Policy-->
-<a href="" id="accounts-domainnamesforemailsync"></a>**Accounts/DomainNamesForEmailSync**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Specifies a list of the domains that are allowed to sync email on the device.
-
-The data type is a string.
-
-The default value is an empty string, which allows all email accounts on the device to sync email. Otherwise, the string should contain a pipe-separated list of domains that are allowed to sync email on the device. For example, "contoso.com|fabrikam.net|woodgrove.gov".
-
-<!--/Description-->
-<!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
-
 <!--/Policies-->
 
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Accounts policies supported by HoloLens 2
+
+- [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
+<!--EndHoloLens2-->
+
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololensbusinessspolicies"></a>Accounts policies supported by HoloLens (1st gen) Commercial Suite
+
+- [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
+<!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Accounts policies supported by HoloLens (1st gen) Development Edition
+
+- [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
+<!--EndHoloLens-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
 

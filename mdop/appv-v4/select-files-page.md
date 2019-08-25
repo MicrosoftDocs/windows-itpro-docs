@@ -1,12 +1,15 @@
 ---
 title: Select Files Page
 description: Select Files Page
-author: jamiejdt
+author: eavena
 ms.assetid: 6d1524ca-6306-4a28-b65f-3ded9d487e75
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

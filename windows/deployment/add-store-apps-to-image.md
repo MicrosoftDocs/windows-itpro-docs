@@ -7,9 +7,10 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.author: greglin
-ms.date: 07/27/2017
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 
@@ -57,7 +58,7 @@ On a test machine:
 1. **Install the Microsoft Store for Business application you previously added** to your image.
 2. **Pin these apps to the Start screen**, by typing the name of the app, right-clicking and selecting **Pin to Start**.
 3. Open Windows PowerShell with administrator privileges.
-4. Use `Export-StartLayout -path <path><file name>.xml` where *<path><file name>* is the path and name of the xml file your will later import into your Windows Image.
+4. Use `Export-StartLayout -path <path><file name>.xml` where *\<path>\<file name>* is the path and name of the xml file your will later import into your Windows Image.
 5. Copy the XML file you created to a location accessible by the machine you previously used to add Store applications to your image.
 
 Now, on the machine where your image file is accessible:

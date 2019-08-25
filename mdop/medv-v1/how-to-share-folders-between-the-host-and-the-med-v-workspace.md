@@ -1,12 +1,15 @@
 ---
 title: How to Share Folders Between the Host and the MED-V Workspace
 description: How to Share Folders Between the Host and the MED-V Workspace
-author: jamiejdt
+author: dansimp
 ms.assetid: 3cb295f2-c07e-4ee6-aa3c-ce4c8c45c191
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -39,7 +42,7 @@ The following procedures demonstrate how to share folders between the host and t
         **Note**  
         Ensure that the same drive letter is not in use on both computers.
 
-         
+         
 
     4.  Click **Browse**.
 
@@ -60,11 +63,11 @@ The following procedures demonstrate how to share folders between the host and t
 **Note**  
 Ensure that both the host and MED-V workspace computers are in the same domain or workgroup.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

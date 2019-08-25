@@ -1,12 +1,15 @@
 ---
 title: How to Sequence a New Application by Using the Command Line
 description: How to Sequence a New Application by Using the Command Line
-author: jamiejdt
+author: eavena
 ms.assetid: c3b5c842-6a91-4d0a-9a22-c7b8d1aeb09a
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -16,10 +19,10 @@ ms.date: 06/16/2016
 
 You can use a command line to sequence a new application. Using a command line is useful when you have to create a large number of virtual applications or when you need to create sequenced applications on a recurring basis.
 
-**Important**  
+**Important**  
 Command-line sequencing allows for default sequencing only. If you need to change default installation settings for the application you are sequencing, you must either manually modify the virtual application or update the virtual application by using the Application Virtualization (App-V) Sequencer. For more information about updating a virtual application by using the App-V Sequencer, see [How to Upgrade an Existing Virtual Application](how-to-upgrade-an-existing-virtual-application.md).
 
- 
+
 
 Use the following procedure to create a virtual application by using the command line.
 
@@ -33,43 +36,45 @@ Use the following procedure to create a virtual application by using the command
 
     `SFTSequencer /INSTALLPACKAGE:"pathtoMSI" /INSTALLPATH:"pathtopackageroot" /OUTPUTFILE:"pathtodestinationSPRJ"`
 
-    **Note**  
+    **Note**  
     You can specify additional parameters by using the command line, depending on the complexity of the application you are sequencing. For a complete list of parameters that are available for use with the App-V Sequencer, see [Sequencer Command-Line Parameters](sequencer-command-line-parameters.md).
 
-     
 
-    Use the value descriptions in the following table to help you determine the actual text you will use in the preceding command.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Value</th>
-    <th align="left">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><em>pathtoMSI</em></p></td>
-    <td align="left"><p>Specifies the Windows Installer or a batch file that will be used to install an application so that it can be sequenced.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><em>pathtopackageroot</em></p></td>
-    <td align="left"><p>Specify the package root directory.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><em>pathtodestinationSPRJ</em></p></td>
-    <td align="left"><p>Specifies the path and file name of the SPRJ file that will be created.</p></td>
-    </tr>
-    </tbody>
-    </table>
+~~~
+Use the value descriptions in the following table to help you determine the actual text you will use in the preceding command.
 
-     
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Value</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p><em>pathtoMSI</em></p></td>
+<td align="left"><p>Specifies the Windows Installer or a batch file that will be used to install an application so that it can be sequenced.</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p><em>pathtopackageroot</em></p></td>
+<td align="left"><p>Specify the package root directory.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><em>pathtodestinationSPRJ</em></p></td>
+<td align="left"><p>Specifies the path and file name of the SPRJ file that will be created.</p></td>
+</tr>
+</tbody>
+</table>
+~~~
 
-4.  Press **Enter**.
+
+
+4. Press **Enter**.
 
 ## Related topics
 
@@ -80,9 +85,9 @@ Use the following procedure to create a virtual application by using the command
 
 [Sequencer Command-Line Parameters](sequencer-command-line-parameters.md)
 
- 
 
- 
+
+
 
 
 

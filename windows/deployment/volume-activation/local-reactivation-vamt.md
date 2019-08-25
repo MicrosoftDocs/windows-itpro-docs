@@ -2,11 +2,14 @@
 title: Perform Local Reactivation (Windows 10)
 description: Perform Local Reactivation
 ms.assetid: aacd5ded-da11-4d27-a866-3f57332f5dec
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+audience: itproauthor: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

@@ -1,12 +1,15 @@
 ---
 title: How to Enable Only Administrators to Publish Packages by Using an ESD (Windows 10)
 description: How to Enable Only Administrators to Publish Packages by Using an ESD
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ---
 # How to enable only administrators to publish packages by using an ESD

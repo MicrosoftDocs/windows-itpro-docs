@@ -1,12 +1,15 @@
 ---
 title: How to Reset a TPM Lockout
 description: How to Reset a TPM Lockout
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 91ec6666-1ae2-4e76-9459-ad65c405f639
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -35,7 +38,7 @@ A TPM lockout can occur if a user enters an incorrect PIN too many times. The nu
     **Note**  
     If you are an Advanced Helpdesk User, the user domain and user ID fields are not required.
 
-     
+     
 
 5.  Upon retrieval, the owner password is displayed. To save this password to a .tpm file, click the **Save** button.
 
@@ -46,9 +49,9 @@ A TPM lockout can occur if a user enters an incorrect PIN too many times. The nu
 
 [Performing BitLocker Management with MBAM](performing-bitlocker-management-with-mbam.md)
 
- 
+ 
 
- 
+ 
 
 
 

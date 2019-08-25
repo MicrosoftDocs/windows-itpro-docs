@@ -1,12 +1,15 @@
 ---
 title: Command-Line Errors
 description: Command-Line Errors
-author: jamiejdt
+author: dansimp
 ms.assetid: eea62568-4e90-4877-9cc7-e27ef5c05068
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ Use the following list of errors to identify the reasons why command-line sequen
 **Note**  
 More than one error might be displayed when sequencing. Furthermore, the error code displayed might be the sum of two error codes. For example, if the */InstallPath* and */OutputFile* parameters are missing, the Microsoft System Center Application Virtualization Sequencer will return 96—the sum of the two error codes.
 
- 
+ 
 
 <a href="" id="01"></a>01  
 There is an unspecified error.
@@ -61,7 +64,7 @@ The sequenced application package cannot be saved.
 The specified package name (/PACKAGENAME) is not valid.
 
 <a href="" id="8192"></a>8192  
-The specified block size (/BLOCKSIZE*)* is not valid.
+The specified block size (/BLOCKSIZE<em>)</em> is not valid.
 
 <a href="" id="16384"></a>16384  
 The specified compression type (/COMPRESSION) is not valid.
@@ -88,9 +91,9 @@ The package name was not specified.
 
 [Command-Line Parameters](command-line-parameters.md)
 
- 
+ 
 
- 
+ 
 
 
 

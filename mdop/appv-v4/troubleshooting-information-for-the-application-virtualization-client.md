@@ -1,12 +1,15 @@
 ---
 title: Troubleshooting Information for the Application Virtualization Client
 description: Troubleshooting Information for the Application Virtualization Client
-author: jamiejdt
+author: manikadhiman
 ms.assetid: 260a8dad-847f-4ec0-b7dd-6e6bc52017ed
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

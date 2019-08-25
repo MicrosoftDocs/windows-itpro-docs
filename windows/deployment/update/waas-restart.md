@@ -4,10 +4,12 @@ description: tbd
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jaimeo
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: greg-lindsay
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 
@@ -17,7 +19,7 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
+
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
@@ -41,6 +43,9 @@ When **Configure Automatic Updates** is enabled in Group Policy, you can enable 
 
 - **Turn off auto-restart for updates during active hours** prevents automatic restart during active hours.
 - **No auto-restart with logged on users for scheduled automatic updates installations** prevents automatic restart when a user is signed in. If a user schedules the restart in the update notification, the device will restart at the time the user specifies even if a user is signed in at the time. This policy only applies when **Configure Automatic Updates** is set to option **4-Auto download and schedule the install**.
+
+> [!NOTE]
+> When using Remote Desktop Protocol connections, only active RDP sessions are considered as logged on users. Devices that do not have locally logged on users, or active RDP sessions, will be restarted. 
 
 You can also use Registry, to prevent automatic restarts when a user is signed in. Under **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU**, set **AuOptions** to **4** and enable **NoAutoRebootWithLoggedOnUsers**. As with Group Policy, if a user schedules the restart in the update notification, it will override this setting.
 
@@ -159,8 +164,9 @@ In the Group Policy editor, you will see a number of policy settings that pertai
 
 >[!NOTE]
 >You can only choose one path for restart behavior.
->
 >If you set conflicting restart policies, the actual restart behavior may not be what you expected.
+>When using RDP, only active RDP sessions are considered as logged on users.
+
 
 ## Registry keys used to manage restart
 The following tables list registry values that correspond to the Group Policy settings for controlling restarts after updates in Windows 10.
@@ -199,4 +205,4 @@ There are 3 different registry combinations for controlling restart behavior:
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
+- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)

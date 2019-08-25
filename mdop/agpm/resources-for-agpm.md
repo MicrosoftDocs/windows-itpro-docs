@@ -1,8 +1,11 @@
 ---
 title: Resources for AGPM
 description: Resources for AGPM
-author: jamiejdt
+author: mjcaparas
 ms.assetid: b44b58c0-2810-40d6-9677-f2f64e1add75
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -1,8 +1,11 @@
-﻿---
+---
 title: Upgrade Readiness architecture (Windows 10)
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: Describes Upgrade Readiness architecture.
 ms.prod: w10
-author: jaimeo
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ms.collection: M365-analytics
 ---
@@ -25,7 +28,7 @@ For more information about what diagnostic data Microsoft collects and how that 
 [Manage connections from Windows operating system components to Microsoft services](/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)<BR>
 [Windows 7, Windows 8, and Windows 8.1 appraiser diagnostic data events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)<BR>
 
-##**Related topics**
+## **Related topics**
 
 [Upgrade Readiness requirements](upgrade-readiness-requirements.md)<BR>
 [Upgrade Readiness release notes](upgrade-readiness-requirements.md#important-information-about-this-release)<BR>

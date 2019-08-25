@@ -1,13 +1,15 @@
 ---
 title: Windows Analytics and privacy
+ms.reviewer: 
+manager: laurawi
 description: How Windows Analytics uses data
 keywords: windows analytics, oms, privacy, data, diagnostic, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, FAQ, problems, troubleshooting, error
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: jaimeo
-ms.author: jaimeo
+audience: itproauthor: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
 ms.localizationpriority: high
 ms.collection: M365-analytics
 ms.topic: article
@@ -28,12 +30,12 @@ The following illustration shows how diagnostic data flows from individual devic
 
 The data flow sequence is as follows:
 
-1.	Diagnostic data is sent from devices to the Microsoft Diagnostic Data Management service, which is hosted in the US.
-2.	An IT administrator creates an Azure Log Analytics workspace. The administrator chooses the location, copies the Commercial ID (which identifies that workspace), and then pushes Commercial ID to devices they want to monitor. This is the mechanism that specifies which devices appear in which workspaces.
-3.	Each day Microsoft produces a "snapshot" of IT-focused insights for each workspace in the Diagnostic Data Management service.
-4.	These snapshots are copied to transient storage which is used only by Windows Analytics (also hosted in US data centers) where they are segregated by Commercial ID.
-5.	The snapshots are then copied to the appropriate Azure Log Analytics workspace.
-6.	If the IT administrator is using the Upgrade Readiness solution, user input from the IT administrator (specifically, the target operating system release and the importance and upgrade readiness per app) is stored in the Windows Analytics Azure Storage. (Upgrade Readiness is the only Windows Analytics solution that takes such user input.)
+1. Diagnostic data is sent from devices to the Microsoft Diagnostic Data Management service, which is hosted in the US.
+2. An IT administrator creates an Azure Log Analytics workspace. The administrator chooses the location, copies the Commercial ID (which identifies that workspace), and then pushes Commercial ID to devices they want to monitor. This is the mechanism that specifies which devices appear in which workspaces.
+3. Each day Microsoft produces a "snapshot" of IT-focused insights for each workspace in the Diagnostic Data Management service.
+4. These snapshots are copied to transient storage which is used only by Windows Analytics (also hosted in US data centers) where they are segregated by Commercial ID.
+5. The snapshots are then copied to the appropriate Azure Log Analytics workspace.
+6. If the IT administrator is using the Upgrade Readiness solution, user input from the IT administrator (specifically, the target operating system release and the importance and upgrade readiness per app) is stored in the Windows Analytics Azure Storage. (Upgrade Readiness is the only Windows Analytics solution that takes such user input.)
 
 
 See these topics for additional background information about related privacy issues:

@@ -3,10 +3,12 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use this section to learn about how to turn on Enterprise Mode.
-author: shortpatti
-ms.author: pashort
-ms.prod: edge, ie11
+author: eavena
+ms.author: eravena
+ms.prod: edge
 ms.assetid: 
+ms.reviewer: 
+manager: dansimp
 title: Enterprise Mode for Microsoft Edge
 ms.sitesec: library
 ms.date: ''
@@ -52,6 +54,6 @@ You can build and manage your Enterprise Mode Site List is by using any generic 
 ### Add a single site to the site list
 
 
-### Add mulitple sites to the site list
+### Add multiple sites to the site list
 
 

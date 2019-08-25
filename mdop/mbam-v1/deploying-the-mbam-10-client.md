@@ -1,12 +1,15 @@
 ---
 title: Deploying the MBAM 1.0 Client
 description: Deploying the MBAM 1.0 Client
-author: jamiejdt
+author: msfttracyp
 ms.assetid: f7ca233f-5035-4ff9-ab3a-f2453b4929d1
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -1,12 +1,15 @@
 ---
 title: How to Open a Sequenced Application Using the Command Line
 description: How to Open a Sequenced Application Using the Command Line
-author: jamiejdt
+author: eavena
 ms.assetid: dc23ee65-8aea-470e-bb3f-a2f2b06cb241
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -43,16 +46,16 @@ Use the following procedure to open sequenced application packages using the com
     **Note**  
     If the installer or Windows Installer package has a graphical user interface, it will be displayed after you specify the command-line parameters.
 
-     
+     
 
 ## Related topics
 
 
 [How to Manage Virtual Applications Using the Command Line](how-to-manage-virtual-applications-using-the-command-line.md)
 
- 
+ 
 
- 
+ 
 
 
 

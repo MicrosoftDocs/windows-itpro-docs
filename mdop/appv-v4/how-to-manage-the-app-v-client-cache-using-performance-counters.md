@@ -1,12 +1,15 @@
 ---
 title: How to Manage the App-V Client Cache Using Performance Counters
 description: How to Manage the App-V Client Cache Using Performance Counters
-author: jamiejdt
+author: dansimp
 ms.assetid: 49d6c3f2-68b8-4c69-befa-7598a8737d05
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -29,16 +32,16 @@ You can use the following procedure to determine how much free space is availabl
     **Important**  
     The App-V performance counters are implemented in a 32-bit DLL, so to see them, you must use the following command to start the 32-bit version of Performance Monitor: **mmc /32 perfmon.msc**. This command must be run directly on the computer being monitored and cannot be used to monitor a remote computer running a 64-bit operating system.
 
-     
+     
 
 ## Related topics
 
 
 [How to Manage Virtual Applications by Using the Command Line](how-to-manage-virtual-applications-by-using-the-command-line.md)
 
- 
+ 
 
- 
+ 
 
 
 

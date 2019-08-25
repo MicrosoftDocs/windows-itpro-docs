@@ -2,13 +2,14 @@
 title: BitLocker How to deploy on Windows Server 2012 and later
 description: This topic for the IT professional explains how to deploy BitLocker and Windows Server 2012 and later
 ms.assetid: 91c18e9e-6ab4-4607-8c75-d983bbe2542f
+ms.reviewer: 
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -51,14 +52,14 @@ The `servermanager` Windows PowerShell module can use either the `Install-Window
 
 By default, installation of features in Windows PowerShell does not include optional sub-features or management tools as part of the install process. This can be seen using the `-WhatIf` option in Windows PowerShell.
 
-``` syntax
+```powershell
 Install-WindowsFeature BitLocker -WhatIf
 ```
 The results of this command show that only the BitLocker Drive Encryption feature installs using this command.
 
 To see what would be installed with the BitLocker feature including all available management tools and sub-features, use the following command:
 
-``` syntax
+```powershell
 Install-WindowsFeature BitLocker -IncludeAllSubFeature -IncludeManagementTools -WhatIf | fl
 ```
 
@@ -74,7 +75,7 @@ The result of this command displays the following list of all the administration
 
 The command to complete a full installation of the BitLocker feature with all available features and then rebooting the server at completion is:
 
-``` syntax
+```powershell
 Install-WindowsFeature BitLocker -IncludeAllSubFeature -IncludeManagementTools -Restart
 ```
 
@@ -84,7 +85,7 @@ Install-WindowsFeature BitLocker -IncludeAllSubFeature -IncludeManagementTools -
 
 The `dism` Windows PowerShell module uses the `Enable-WindowsOptionalFeature` cmdlet to install features. The BitLocker feature name for BitLocker is `BitLocker`. The `dism` module does not support wildcards when searching for feature names. To list feature names for the `dism` module, use the `Get-WindowsOptionalFeatures` cmdlet. The following command will list all of the optional features in an online (running) operating system.
 
-``` syntax
+```powershell
 Get-WindowsOptionalFeature -Online | ft
 ```
 
@@ -92,13 +93,13 @@ From this output, we can see that there are three BitLocker related optional fea
 
 To install BitLocker using the `dism` module, use the following command:
 
-``` syntax
+```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName BitLocker -All
 ```
 
 This command will prompt the user for a reboot. The Enable-WindowsOptionalFeature cmdlet does not offer support for forcing a reboot of the computer. This command does not include installation of the management tools for BitLocker. For a complete installation of BitLocker and all available management tools, use the following command:
 
-``` syntax
+```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName BitLocker, BitLocker-Utilities -All
 ```
 ## More information

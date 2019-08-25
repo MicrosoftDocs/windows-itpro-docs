@@ -2,13 +2,15 @@
 title: Deploy Windows 10 using PXE and Configuration Manager (Windows 10)
 description: In this topic, you will learn how to deploy Windows 10 using Microsoft System Center 2012 R2 Configuration Manager deployment packages and task sequences.
 ms.assetid: fb93f514-5b30-4f4b-99dc-58e6860009fa
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deployment, image, UEFI, task sequence
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/27/2017
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 

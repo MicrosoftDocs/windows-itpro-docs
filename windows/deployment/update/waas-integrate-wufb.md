@@ -4,10 +4,12 @@ description: Use Windows Update for Business deployments with management tools s
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jaimeo
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: greglin
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 
@@ -17,7 +19,6 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -42,7 +43,7 @@ For Windows 10, version 1607, devices can now be configured to receive updates f
 - Admin has also put 3rd party drivers on WSUS
 
 <table><thead><th>Content</th><th>Metadata source</th><th>Payload source</th><th>Deferred?</th><th></th></thead>
-<tbody><tr><td>Updates to Windows</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="3">![diagram of content flow](images/wufb-config1a.png)</td></tr>
+<tbody><tr><td>Updates to Windows</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="3"><img src="images/wufb-config1a.png" alt="diagram of content flow"/></td></tr>
 <tr><td>Updates to Office and other products</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 <tr><td>Third-party drivers</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 </table>
@@ -57,7 +58,7 @@ For Windows 10, version 1607, devices can now be configured to receive updates f
 
 
 <table><thead><th>Content</th><th>Metadata source</th><th>Payload source</th><th>Deferred?</th><th></th></thead>
-<tbody><tr><td>Updates to Windows (excluding drivers)</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="4">![diagram of content flow](images/wufb-config2.png)</td></tr>
+<tbody><tr><td>Updates to Windows (excluding drivers)</td><td>Windows Update</td><td>Windows Update</td><td>Yes</td><td rowspan="4"><img src="images/wufb-config2.png" alt="diagram of content flow"/></td></tr>
 <tr><td>Updates to Office and other products</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 <tr><td>Drivers</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 
@@ -77,7 +78,7 @@ In this example, the deferral behavior for updates to Office and other non-Windo
 
 
 <table><thead><th>Content</th><th>Metadata source</th><th>Payload source</th><th>Deferred?</th><th></th></thead>
-<tbody><tr><td>Updates to Windows (excluding drivers)</td><td>Microsoft Update</td><td>Microsoft Update</td><td>Yes</td><td rowspan="3">![diagram of content flow](images/wufb-config3a.png)</td></tr>
+<tbody><tr><td>Updates to Windows (excluding drivers)</td><td>Microsoft Update</td><td>Microsoft Update</td><td>Yes</td><td rowspan="3"><img src="images/wufb-config3a.png" alt="diagram of content flow"/></td></tr>
 <tr><td>Updates to Office and other products</td><td>Microsoft Update</td><td>Microsoft Update</td><td>No</td></tr>
 <tr><td>Drivers, third-party applications</td><td>WSUS</td><td>WSUS</td><td>No</td></tr>
 </table>
@@ -107,7 +108,7 @@ For more information, see [Integration with Windows Update for Business in Windo
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
+- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
 - [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
 - [Manage device restarts after updates](waas-restart.md)

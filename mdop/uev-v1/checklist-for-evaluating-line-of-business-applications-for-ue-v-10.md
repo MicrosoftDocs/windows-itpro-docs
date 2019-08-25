@@ -1,12 +1,15 @@
 ---
 title: Checklist for Evaluating Line-of-Business Applications for UE-V 1.0
 description: Checklist for Evaluating Line-of-Business Applications for UE-V 1.0
-author: jamiejdt
+author: levinec
 ms.assetid: 3bfaab30-59f7-4099-abb1-d248ce0086b8
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

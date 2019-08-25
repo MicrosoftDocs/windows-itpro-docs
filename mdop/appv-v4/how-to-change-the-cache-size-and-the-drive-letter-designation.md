@@ -1,12 +1,15 @@
 ---
 title: How to Change the Cache Size and the Drive Letter Designation
 description: How to Change the Cache Size and the Drive Letter Designation
-author: jamiejdt
+author: dansimp
 ms.assetid: e7d7b635-079e-41aa-a5e6-655f33b4e317
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -16,10 +19,10 @@ ms.date: 06/16/2016
 
 You can change the cache size and drive letter designation directly from the **Application Virtualization** node in the Application Virtualization Client Management Console.
 
-**Note**  
+**Note**  
 After the cache size has been set, it cannot be made smaller.
 
- 
+
 
 **To change the cache size**
 
@@ -27,20 +30,22 @@ After the cache size has been set, it cannot be made smaller.
 
 2.  Select the **File System** tab on the **Properties** dialog box. In the **Client Cache Configuration Settings** section, click one of the following radio buttons to choose how to manage the cache space:
 
-    **Important**  
+    **Important**  
     If you select the **Use free disk space threshold** setting, the value you enter will set the cache size to the total disk size minus the free disk space threshold number you entered. If you then want revert to using the **Use maximum cache size** setting, you must specify a larger number than the existing cache size. Otherwise, the error “New size must be larger than the existing cache size” will appear.
 
-     
 
-    -   **Use maximum cache size**
 
-        Enter a numeric value from 100 to 1,048,576 (1 TB) in the **Maximum size (MB)** field to specify the maximum size of the cache. The value shown in **Reserved Cache Size** indicates the amount of cache in use.
+~~~
+-   **Use maximum cache size**
 
-    -   **Use free disk space threshold**
+    Enter a numeric value from 100 to 1,048,576 (1 TB) in the **Maximum size (MB)** field to specify the maximum size of the cache. The value shown in **Reserved Cache Size** indicates the amount of cache in use.
 
-        Enter a numeric value to specify the amount of free disk space, in MB, that the cache must leave available on the disk. This allows the cache to grow until the amount of free disk space reaches this limit. The value shown in **Free disk space remaining** indicates how much disk space is unused.
+-   **Use free disk space threshold**
 
-3.  Click **OK** or **Apply** to change the setting.
+    Enter a numeric value to specify the amount of free disk space, in MB, that the cache must leave available on the disk. This allows the cache to grow until the amount of free disk space reaches this limit. The value shown in **Free disk space remaining** indicates how much disk space is unused.
+~~~
+
+3. Click **OK** or **Apply** to change the setting.
 
 **To change the drive letter designation**
 
@@ -55,9 +60,9 @@ After the cache size has been set, it cannot be made smaller.
 
 [How to Configure the Client in the Application Virtualization Client Management Console](how-to-configure-the-client-in-the-application-virtualization-client-management-console.md)
 
- 
 
- 
+
+
 
 
 

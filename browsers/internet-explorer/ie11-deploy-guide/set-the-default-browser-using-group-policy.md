@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use the Group Policy setting, Set a default associations configuration file, to set the default browser for your company devices running Windows 10.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: f486c9db-0dc9-4cd6-8a0b-8cb872b1d361
+ms.reviewer: 
+audience: itpromanager: dansimp
+ms.author: lomayor
 title: Set the default browser using Group Policy (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

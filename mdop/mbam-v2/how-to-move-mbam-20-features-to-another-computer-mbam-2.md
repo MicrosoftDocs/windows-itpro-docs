@@ -1,12 +1,15 @@
 ---
 title: How to Move MBAM 2.0 Features to Another Computer
 description: How to Move MBAM 2.0 Features to Another Computer
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 49bc0792-60a4-473f-89cc-ada30191e04a
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -53,10 +56,10 @@ To move the Recovery Database from one computer to another (for example, from Se
 
     `PS C:\> Stop-Website “Microsoft BitLocker Administration and Monitoring”`
 
-    **Note**  
+    **Note**  
     To run this PowerShell command line, the IIS Module for PowerShell must be added to current instance of PowerShell. In addition, you must update the PowerShell execution policy to enable execution of scripts.
 
-     
+
 
 **Run MBAM Setup on Server B**
 
@@ -66,7 +69,7 @@ To move the Recovery Database from one computer to another (for example, from Se
 
     `PS C:\> MbamSetup.exe /qn I_ACCEPT_ENDUSER_LICENSE_AGREEMENT=1 AddLocal=KeyDatabase ADMINANDMON_MACHINENAMES=$DOMAIN$\$SERVERNAME$$ RECOVERYANDHWDB_SQLINSTANCE=$SERVERNAME$\$SQLINSTANCENAME$ TOPOLOGY=$X$`
 
-    **Note**  
+    **Note**  
     Replace the following values in the example above with those that match your environment:
 
     -   $SERVERNAME$\\$SQLINSTANCENAME$ - Enter the name of the server and instance to which the Recovery Database will be moved.
@@ -75,7 +78,7 @@ To move the Recovery Database from one computer to another (for example, from Se
 
     -   $X$ - Enter **0** if you are installing the MBAM Stand-alone topology, or **1** if you are installing the MBAM Configuration Manager topology.
 
-     
+
 
 **Back Up the Recovery Database on Server A**
 
@@ -85,67 +88,69 @@ To move the Recovery Database from one computer to another (for example, from Se
 
     Modify the MBAM Recovery Database to use the full recovery mode.
 
-    `USE master;`
+    ```sql
+    USE master;
 
-    `GO`
+    GO
 
-    `ALTER DATABASE "MBAM Recovery and Hardware"`
+    ALTER DATABASE "MBAM Recovery and Hardware"
 
-    `   SET RECOVERY FULL;`
+       SET RECOVERY FULL;
 
-    `GO`
+    GO
 
     -- Create MBAM Recovery Database Data and MBAM Recovery logical backup devices.
 
-    `USE master`
+    USE master
 
-    `GO`
+    GO
 
-    `EXEC sp_addumpdevice 'disk', 'MBAM Recovery and Hardware Database Data Device',`
+    EXEC sp_addumpdevice 'disk', 'MBAM Recovery and Hardware Database Data Device',
 
-    `'Z:\MBAM Recovery Database Data.bak';`
+    'Z:\MBAM Recovery Database Data.bak';
 
-    `GO`
+    GO
 
     -- Back up the full MBAM Recovery Database.
 
-    `BACKUP DATABASE [MBAM Recovery and Hardware] TO [MBAM Recovery and Hardware Database Data Device];`
+    BACKUP DATABASE [MBAM Recovery and Hardware] TO [MBAM Recovery and Hardware Database Data Device];
 
-    `GO`
+    GO
 
-    `BACKUP CERTIFICATE [MBAM Recovery Encryption Certificate]`
+    BACKUP CERTIFICATE [MBAM Recovery Encryption Certificate]
 
-    `TO FILE = 'Z:\SQLServerInstanceCertificateFile'`
+    TO FILE = 'Z:\SQLServerInstanceCertificateFile'
 
-    `WITH PRIVATE KEY`
+    WITH PRIVATE KEY
 
-    `(`
+    (
 
-    `    FILE = ' Z:\SQLServerInstanceCertificateFilePrivateKey',`
+        FILE = ' Z:\SQLServerInstanceCertificateFilePrivateKey',
 
-    `    ENCRYPTION BY PASSWORD = '$PASSWORD$'`
+        ENCRYPTION BY PASSWORD = '$PASSWORD$'
 
-    `);`
+    );
 
-    `GO`
+    GO
+    ```
 
-    **Note**  
+    **Note**  
     Replace the following values in the example above with those that match your environment:
 
     -   $PASSWORD$ - Enter a password that you will use to encrypt the Private Key file.
 
-     
+
 
 3.  Run the SQL File by using SQL Server PowerShell and a command line that is similar to the following:
 
     `PS C:\> Invoke-Sqlcmd -InputFile 'Z:\BackupMBAMRecoveryandHardwarDatabaseScript.sql' -ServerInstance $SERVERNAME$\$SQLINSTANCENAME$`
 
-    **Note**  
+    **Note**  
     Replace the following values in the example above with those that match your environment:
 
     -   $SERVERNAME$\\$SQLINSTANCENAME$ - Enter the name of the server and instance from which the Recovery Database will be backed up.
 
-     
+
 
 **Move the Recovery Database and Certificate from Server A to Server B**
 
@@ -161,14 +166,14 @@ To move the Recovery Database from one computer to another (for example, from Se
 
     `PS C:\> Copy-Item “Z:\SQLServerInstanceCertificateFilePrivateKey” \\$SERVERNAME$\$DESTINATIONSHARE$`
 
-    **Note**  
+    **Note**  
     Replace the following value in the example above with those that match your environment:
 
     -   $SERVERNAME$ - Enter the name of the server to which the files will be copied.
 
     -   $DESTINATIONSHARE$ - Enter the name of the share and path to which the files will be copied.
 
-     
+
 
 **Restore the Recovery Database on Server B**
 
@@ -180,61 +185,63 @@ To move the Recovery Database from one computer to another (for example, from Se
 
 4.  To automate this procedure, create a SQL file (.sql) that contains the following-SQL script:
 
-    `-- Restore MBAM Recovery Database. `
+    ```sql
+    -- Restore MBAM Recovery Database. 
 
-    `USE master`
+    USE master
 
-    `GO`
+    GO
 
     -- Drop certificate created by MBAM Setup.
 
-    `DROP CERTIFICATE [MBAM Recovery Encryption Certificate]`
+    DROP CERTIFICATE [MBAM Recovery Encryption Certificate]
 
-    `GO`
+    GO
 
     --Add certificate
 
-    `CREATE CERTIFICATE [MBAM Recovery Encryption Certificate]`
+    CREATE CERTIFICATE [MBAM Recovery Encryption Certificate]
 
-    `FROM FILE = 'Z: \SQLServerInstanceCertificateFile'`
+    FROM FILE = 'Z: \SQLServerInstanceCertificateFile'
 
-    `WITH PRIVATE KEY`
+    WITH PRIVATE KEY
 
-    `(`
+    (
 
-    `    FILE = ' Z:\SQLServerInstanceCertificateFilePrivateKey',`
+        FILE = ' Z:\SQLServerInstanceCertificateFilePrivateKey',
 
-    `    DECRYPTION BY PASSWORD = '$PASSWORD$'`
+        DECRYPTION BY PASSWORD = '$PASSWORD$'
 
-    `);`
+    );
 
-    `GO`
+    GO
 
     -- Restore the MBAM Recovery Database data and log files.
 
-    `RESTORE DATABASE [MBAM Recovery and Hardware]`
+    RESTORE DATABASE [MBAM Recovery and Hardware]
 
-    `   FROM DISK = 'Z:\MBAM Recovery Database Data.bak'`
+       FROM DISK = 'Z:\MBAM Recovery Database Data.bak'
 
-    `   WITH REPLACE`
+       WITH REPLACE
+    ```
 
-    **Note**  
+    **Note**  
     Replace the following values in the example above with those that match your environment:
 
     -   $PASSWORD$ - Enter a password that you used to encrypt the Private Key file.
 
-     
+
 
 5.  You can use Windows PowerShell to enter a command line that is similar to the following:
 
     `PS C:\> Invoke-Sqlcmd -InputFile 'Z:\RestoreMBAMRecoveryandHardwarDatabaseScript.sql' -ServerInstance $SERVERNAME$\$SQLINSTANCENAME$`
 
-    **Note**  
+    **Note**  
     Replace the following value in the example above with those that match your environment:
 
     -   $SERVERNAME$\\$SQLINSTANCENAME$ - Enter the name of the server and instance to which the Recovery Database will be restored.
 
-     
+
 
 **Configure Access to the Recovery Database on Server B**
 
@@ -246,45 +253,47 @@ To move the Recovery Database from one computer to another (for example, from Se
 
     `PS C:\> net localgroup "MBAM Recovery and Hardware DB Access" $DOMAIN$\$SERVERNAME$$  /add`
 
-    **Note**  
+    **Note**  
     Replace the following values in the example above with the applicable values for your environment:
 
     -   $DOMAIN$\\$SERVERNAME$$ - Enter the domain and machine name of the MBAM Administration and Monitoring Server. The server name must be followed by a $, as shown in the example (for example, MyDomain\\MyServerName1$).
 
-     
 
-    This command line must be run for each Administration and Monitoring Server that will be accessing the database in your environment.
+
+~~~
+This command line must be run for each Administration and Monitoring Server that will be accessing the database in your environment.
+~~~
 
 **Update the Recovery Database Connection Data on the MBAM Administration and Monitoring Servers**
 
-1.  On each of the servers running the MBAM Administration and Monitoring feature, use the Internet Information Services (IIS) Manager console to update the Connection String information for the following applications, which are hosted in the Administration and Monitoring website:
+1. On each of the servers running the MBAM Administration and Monitoring feature, use the Internet Information Services (IIS) Manager console to update the Connection String information for the following applications, which are hosted in the Administration and Monitoring website:
 
-    -   MBAMAdministrationService
+   -   MBAMAdministrationService
 
-    -   MBAMRecoveryAndHardwareService
+   -   MBAMRecoveryAndHardwareService
 
-2.  Select each application and use the **Configuration Editor** feature, which is located under the **Management** section of the **Feature View**.
+2. Select each application and use the **Configuration Editor** feature, which is located under the **Management** section of the **Feature View**.
 
-3.  Select the **configurationStrings** option from the **Section list** control.
+3. Select the **configurationStrings** option from the **Section list** control.
 
-4.  Select the row named **(Collection)** and open the **Collection Editor** by selecting the button on the right side of the row.
+4. Select the row named **(Collection)** and open the **Collection Editor** by selecting the button on the right side of the row.
 
-5.  In the **Collection Editor**, select the row named **KeyRecoveryConnectionString** when updating the configuration for the MBAMAdministrationService application or the row named **Microsoft.Mbam.RecoveryAndHardwareDataStore.**ConnectionString when updating the configuration for the MBAMRecoveryAndHardwareService.
+5. In the **Collection Editor**, select the row named **KeyRecoveryConnectionString** when updating the configuration for the MBAMAdministrationService application or the row named <strong>Microsoft.Mbam.RecoveryAndHardwareDataStore.</strong>ConnectionString when updating the configuration for the MBAMRecoveryAndHardwareService.
 
-6.  Update the **Data Source=** value for the **configurationStrings** property to list the server name and instance (for example, $SERVERNAME$\\$SQLINSTANCENAME$) where the Recovery Database was moved to.
+6. Update the **Data Source=** value for the **configurationStrings** property to list the server name and instance (for example, $SERVERNAME$\\$SQLINSTANCENAME$) where the Recovery Database was moved to.
 
-7.  To automate this procedure, you can use Windows to enter a command line, that is similar to the following, on each Administration and Monitoring Server:
+7. To automate this procedure, you can use Windows to enter a command line, that is similar to the following, on each Administration and Monitoring Server:
 
-    `PS C:\> Set-WebConfigurationProperty '/connectionStrings/add[@name="KeyRecoveryConnectionString"]' -PSPath "IIS:\sites\Microsoft Bitlocker Administration and Monitoring\MBAMAdministrationService" -Name "connectionString" -Value “Data Source=$SERVERNAME$\$SQLINSTANCENAME$;Initial Catalog=MBAM Recovery and Hardware;Integrated Security=SSPI;”`
+   `PS C:\> Set-WebConfigurationProperty '/connectionStrings/add[@name="KeyRecoveryConnectionString"]' -PSPath "IIS:\sites\Microsoft Bitlocker Administration and Monitoring\MBAMAdministrationService" -Name "connectionString" -Value “Data Source=$SERVERNAME$\$SQLINSTANCENAME$;Initial Catalog=MBAM Recovery and Hardware;Integrated Security=SSPI;”`
 
-    `PS C:\> Set-WebConfigurationProperty '/connectionStrings/add[@name="Microsoft.Mbam.RecoveryAndHardwareDataStore.ConnectionString"]' -PSPath "IIS:\sites\Microsoft Bitlocker Administration and Monitoring\MBAMRecoveryAndHardwareService" -Name "connectionString" -Value "Data Source=$SERVERNAME$\$SQLINSTANCENAME$;Initial Catalog=MBAM Recovery and Hardware;Integrated Security=SSPI;"`
+   `PS C:\> Set-WebConfigurationProperty '/connectionStrings/add[@name="Microsoft.Mbam.RecoveryAndHardwareDataStore.ConnectionString"]' -PSPath "IIS:\sites\Microsoft Bitlocker Administration and Monitoring\MBAMRecoveryAndHardwareService" -Name "connectionString" -Value "Data Source=$SERVERNAME$\$SQLINSTANCENAME$;Initial Catalog=MBAM Recovery and Hardware;Integrated Security=SSPI;"`
 
-    **Note**  
-    Replace the following value in the example above with those that match your environment:
+   **Note**  
+   Replace the following value in the example above with those that match your environment:
 
-    -   $SERVERNAME$\\$SQLINSTANCENAME$ - Enter the server name and instance where the Recovery Database is.
+   -   $SERVERNAME$\\$SQLINSTANCENAME$ - Enter the server name and instance where the Recovery Database is.
 
-     
+
 
 **Resume all Instances of the MBAM Administration and Monitoring Website**
 
@@ -325,10 +334,10 @@ If you want to move the MBAM Compliance and Audit Database from one computer to 
 
     `PS C:\> Stop-s “Microsoft BitLocker Administration and Monitoring”`
 
-    **Note**  
+    **Note**  
     To run this command line, you must add the IIS Module for PowerShell to the current instance of PowerShell. In addition, you must update the PowerShell execution policy to enable scripts to be run.
 
-     
+
 
 **Run MBAM Setup on Server B**
 
@@ -338,7 +347,7 @@ If you want to move the MBAM Compliance and Audit Database from one computer to 
 
     `PS C:\> MbamSetup.exe /qn I_ACCEPT_ENDUSER_LICENSE_AGREEMENT=1 AddLocal= ReportsDatabase ADMINANDMON_MACHINENAMES=$DOMAIN$\$SERVERNAME$ COMPLIDB_SQLINSTANCE=$SERVERNAME$\$SQLINSTANCENAME$ REPORTS_USERACCOUNT=$DOMAIN$\$USERNAME$ TOPOLOGY=$X$`
 
-    **Note**  
+    **Note**  
     Note: Replace the following values in the example above with those that match your environment:
 
     -   $SERVERNAME$\\$SQLINSTANCENAME$ - Enter the server name and instance where the Compliance and Audit Database will be moved to.
@@ -349,7 +358,7 @@ If you want to move the MBAM Compliance and Audit Database from one computer to 
 
     -   $X$ - Enter **0** if you are installing the MBAM Stand-alone topology, or **1** if you are installing the MBAM Configuration Manager topology.
 
-     
+
 
 **Back Up the Compliance and Audit Database on Server A**
 
@@ -357,46 +366,48 @@ If you want to move the MBAM Compliance and Audit Database from one computer to 
 
 2.  To automate this procedure, create a SQL file (.sql) that contains the following-SQL script:
 
-    `-- Modify the MBAM Compliance Status Database to use the full recovery model.`
+    ```sql
+    -- Modify the MBAM Compliance Status Database to use the full recovery model.
 
-    `USE master;`
+    USE master;
 
-    `GO`
+    GO
 
-    `ALTER DATABASE "MBAM Compliance Status"`
+    ALTER DATABASE "MBAM Compliance Status"
 
-    `   SET RECOVERY FULL;`
+       SET RECOVERY FULL;
 
-    `GO`
+    GO
 
-    `-- Create MBAM Compliance Status Data logical backup devices.`
+    -- Create MBAM Compliance Status Data logical backup devices.
 
-    `USE master`
+    USE master
 
-    `GO`
+    GO
 
-    `EXEC sp_addumpdevice 'disk', 'MBAM Compliance Status Database Data Device',`
+    EXEC sp_addumpdevice 'disk', 'MBAM Compliance Status Database Data Device',
 
-    `'Z: \MBAM Compliance Status Database Data.bak';`
+    'Z: \MBAM Compliance Status Database Data.bak';
 
-    `GO`
+    GO
 
     -- Back up the full MBAM Recovery database.
 
-    `BACKUP DATABASE [MBAM Compliance Status] TO [MBAM Compliance Status Database Data Device];`
+    BACKUP DATABASE [MBAM Compliance Status] TO [MBAM Compliance Status Database Data Device];
 
-    `GO`
+    GO
+    ```
 
 3.  Run the SQL file by using a Windows PowerShell command line that is similar to the following:
 
     `PS C:\> Invoke-Sqlcmd -InputFile "Z:\BackupMBAMComplianceStatusDatabaseScript.sql" –ServerInstance $SERVERNAME$\$SQLINSTANCENAME$`
 
-    **Note**  
+    **Note**  
     Replace the following value in the example above with those that match your environment:
 
     -   $SERVERNAME$\\$SQLINSTANCENAME$ - Enter the server name and instance where the Compliance and Audit database will be backed up from.
 
-     
+
 
 **Move the Compliance and Audit Database from Server A to B**
 
@@ -408,14 +419,14 @@ If you want to move the MBAM Compliance and Audit Database from one computer to 
 
     `PS C:\> Copy-Item “Z:\MBAM Compliance Status Database Data.bak” \\$SERVERNAME$\$DESTINATIONSHARE$`
 
-    **Note**  
+    **Note**  
     Replace the following values in the example above with those that match your environment:
 
     -   $SERVERNAME$ - Enter the server name where the files will be copied to.
 
     -   $DESTINATIONSHARE$ - Enter the name of share and path where the files will be copied to.
 
-     
+
 
 **Restore the Compliance and Audit Database on Server B**
 
@@ -425,30 +436,32 @@ If you want to move the MBAM Compliance and Audit Database from one computer to 
 
 3.  To automate this procedure, create a SQL file (.sql) that contains the following-SQL script:
 
-    `-- Create MBAM Compliance Status Database Data logical backup devices. `
+    ```sql
+    -- Create MBAM Compliance Status Database Data logical backup devices. 
 
-    `Use master`
+    Use master
 
-    `GO`
+    GO
 
     -- Restore the MBAM Compliance Status database data files.
 
-    `RESTORE DATABASE [MBAM Compliance Status]`
+    RESTORE DATABASE [MBAM Compliance Status]
 
-    `   FROM DISK = 'C:\test\MBAM Compliance Status Database Data.bak'`
+       FROM DISK = 'C:\test\MBAM Compliance Status Database Data.bak'
 
-    `   WITH REPLACE`
+       WITH REPLACE
+    ```
 
 4.  Run the SQL File by using a Windows PowerShell command line that is similar to the following:
 
     `PS C:\> Invoke-Sqlcmd -InputFile "Z:\RestoreMBAMComplianceStatusDatabaseScript.sql" -ServerInstance $SERVERNAME$\$SQLINSTANCENAME$`
 
-    **Note**  
+    **Note**  
     Replace the following value in the example above with those that match your environment:
 
     -   $SERVERNAME$\\$SQLINSTANCENAME$ - Enter the server name and instance where the Compliance and Audit Database will be restored to.
 
-     
+
 
 **Configure Access to the Compliance and Audit Database on Server B**
 
@@ -462,16 +475,18 @@ If you want to move the MBAM Compliance and Audit Database from one computer to 
 
     `PS C:\> net localgroup "MBAM Compliance Auditing DB Access" $DOMAIN$\$REPORTSUSERNAME$  /add`
 
-    **Note**  
+    **Note**  
     Replace the following values in the example above with the applicable values for your environment:
 
     -   $DOMAIN$\\$SERVERNAME$$ - Enter the domain and machine name of the MBAM Administration and Monitoring Server. The server name must be followed by a “$” as shown in the example. (for example, MyDomain\\MyServerName1$)
 
     -   $DOMAIN$\\$REPORTSUSERNAME$ - Enter the user account name that was used to configure the data source for the Compliance and Audit Reports.
 
-     
 
-    The command line for adding the servers to the MBAM Compliance and Audit Database access local group must be run for each Administration and Monitoring Server that will be accessing the database in your environment.
+
+~~~
+The command line for adding the servers to the MBAM Compliance and Audit Database access local group must be run for each Administration and Monitoring Server that will be accessing the database in your environment.
+~~~
 
 **Update the Database Connection Data on MBAM Administration and Monitoring Servers**
 
@@ -497,12 +512,12 @@ If you want to move the MBAM Compliance and Audit Database from one computer to 
 
     `PS C:\> Set-WebConfigurationProperty '/connectionStrings/add[@name="Microsoft.Windows.Mdop.BitLockerManagement.StatusReportDataStore.ConnectionString"]' -PSPath "IIS:\sites\Microsoft Bitlocker Administration and Monitoring\MBAMComplianceStatusService" -Name "connectionString" -Value "Data Source=$SERVERNAME$\$SQLINSTANCENAME;Initial Catalog=MBAM Compliance Status;Integrated Security=SSPI;"`
 
-    **Note**  
+    **Note**  
     Replace the following values in the example above with those that match your environment:
 
     -   $SERVERNAME$\\$SQLINSTANCENAME$ - Enter the server name and instance where the Recovery Database is located.
 
-     
+
 
 **Resume All Instances of the MBAM Administration and Monitoring Website**
 
@@ -535,7 +550,7 @@ If you want to move the MBAM Compliance and Audit Reports from one computer to a
 
     `PS C:\> MbamSetup.exe /qn I_ACCEPT_ENDUSER_LICENSE_AGREEMENT=1 AddLocal=Reports COMPLIDB_SQLINSTANCE=$SERVERNAME$\$SQLINSTANCENAME$ REPORTS_USERACCOUNTPW=$PASSWORD$ TOPOLOGY=$X$`
 
-    **Note**  
+    **Note**  
     Replace the following values in the example above with those that match your environment:
 
     -   $SERVERNAME$\\$SQLINSTANCENAME$ - Enter the server name and instance where the Compliance and Audit Database is located.
@@ -546,7 +561,7 @@ If you want to move the MBAM Compliance and Audit Reports from one computer to a
 
     -   $X$ - Enter **0** if you are installing the MBAM Stand-alone topology, or **1** if you are installing the MBAM Configuration Manager topology.
 
-     
+
 
 **Configure Access to the Compliance and Audit Reports on Server B**
 
@@ -556,14 +571,16 @@ If you want to move the MBAM Compliance and Audit Reports from one computer to a
 
     `PS C:\> net localgroup "MBAM Report Users" $DOMAIN$\$REPORTSUSERNAME$  /add`
 
-    **Note**  
+    **Note**  
     Replace the following values in the example above with the applicable values for your environment:
 
     -   $DOMAIN$\\$REPORTSUSERNAME$ - Enter the user account name that was used to configure the data source for the Compliance and Audit reports.
 
-     
 
-    The command line for adding the users to the MBAM Report Users local group must be run for each user that will be accessing the reports in your environment.
+
+~~~
+The command line for adding the users to the MBAM Report Users local group must be run for each user that will be accessing the reports in your environment.
+~~~
 
 **Stop All Instances of the MBAM Administration and Monitoring Website**
 
@@ -575,30 +592,30 @@ If you want to move the MBAM Compliance and Audit Reports from one computer to a
 
 **Update the Database Connection Data on the MBAM Administration and Monitoring Servers**
 
-1.  On each server that is running the MBAM Administration and Monitoring Server feature, use the Internet Information Services (IIS) Manager console to update the Compliance and Audit Reports URL.
+1. On each server that is running the MBAM Administration and Monitoring Server feature, use the Internet Information Services (IIS) Manager console to update the Compliance and Audit Reports URL.
 
-2.  Select the **Microsoft BitLocker Administration and Monitoring** website, and use the **Configuration Editor** feature that is location under the **Management** section of the **Feature View**.
+2. Select the **Microsoft BitLocker Administration and Monitoring** website, and use the **Configuration Editor** feature that is location under the **Management** section of the **Feature View**.
 
-3.  Select the **appSettings** option from the **Section list** control.
+3. Select the **appSettings** option from the **Section list** control.
 
-4.  Select the row named **(Collection)** and open the **Collection Editor** by selecting the button on the right side of the row.
+4. Select the row named **(Collection)** and open the **Collection Editor** by selecting the button on the right side of the row.
 
-5.  In the **Collection Editor**, select the row named **Microsoft.Mbam.Reports.Url**.
+5. In the **Collection Editor**, select the row named **Microsoft.Mbam.Reports.Url**.
 
-6.  Update the value for **Microsoft.Mbam.Reports.Url** to reflect the server name for Server B. If the Compliance and Audit Reports feature was installed on a named SQL Reporting Services instance, be sure to add or update the name of the instance to the URL (for example, http://$SERVERNAME$/ReportServer\_$SQLSRSINSTANCENAME$/Pages....)
+6. Update the value for **Microsoft.Mbam.Reports.Url** to reflect the server name for Server B. If the Compliance and Audit Reports feature was installed on a named SQL Reporting Services instance, be sure to add or update the name of the instance to the URL (for example, http://$SERVERNAME$/ReportServer\_$SQLSRSINSTANCENAME$/Pages....)
 
-7.  To automate this procedure, you can use Windows PowerShell to enter a command line on each Administration and Monitoring Server that is similar to the following:
+7. To automate this procedure, you can use Windows PowerShell to enter a command line on each Administration and Monitoring Server that is similar to the following:
 
-    `PS C:\> Set-WebConfigurationProperty '/appSettings/add[@key="Microsoft.Mbam.Reports.Url"]' -PSPath "IIS:\ \sites\Microsoft Bitlocker Administration and Monitoring\HelpDesk" -Name "Value" -Value “http://$SERVERNAME$/ReportServer_$SRSINSTANCENAME$/Pages/ReportViewer.aspx?/ Microsoft+BitLocker+Administration+and+Monitoring/”`
+   `PS C:\> Set-WebConfigurationProperty '/appSettings/add[@key="Microsoft.Mbam.Reports.Url"]' -PSPath "IIS:\ \sites\Microsoft Bitlocker Administration and Monitoring\HelpDesk" -Name "Value" -Value “http://$SERVERNAME$/ReportServer_$SRSINSTANCENAME$/Pages/ReportViewer.aspx?/ Microsoft+BitLocker+Administration+and+Monitoring/”`
 
-    **Note**  
-    Replace the following values in the example above with those that match your environment:
+   **Note**  
+   Replace the following values in the example above with those that match your environment:
 
-    -   $SERVERNAME$ - Enter the name of the server name to which the Compliance and Audit Reports were installed.
+   -   $SERVERNAME$ - Enter the name of the server name to which the Compliance and Audit Reports were installed.
 
-    -   $SRSINSTANCENAME$ - Enter the name of the SQL Reporting Services instance to which the Compliance and Audit Reports were installed.
+   -   $SRSINSTANCENAME$ - Enter the name of the SQL Reporting Services instance to which the Compliance and Audit Reports were installed.
 
-     
+
 
 **Resume All Instances of the MBAM Administration and Monitoring Website**
 
@@ -608,10 +625,10 @@ If you want to move the MBAM Compliance and Audit Reports from one computer to a
 
     `PS C:\> Start-Website “Microsoft BitLocker Administration and Monitoring”`
 
-    **Note**  
+    **Note**  
     To run this command line, you must add the IIS Module for PowerShell to current instance of PowerShell. In addition, you must update the PowerShell execution policy to enable scripts to be run.
 
-     
+
 
 ## Moving the Administration and Monitoring Feature
 
@@ -630,7 +647,7 @@ If you want to move the MBAM Administration and Monitoring Reports feature from 
 
     `PS C:\> MbamSetup.exe /qn I_ACCEPT_ENDUSER_LICENSE_AGREEMENT=1 AddLocal=AdministrationMonitoringServer, COMPLIDB_SQLINSTANCE=$SERVERNAME$\$SQLINSTANCENAME$ RECOVERYANDHWDB_SQLINSTANCE=$SERVERNAME$\$SQLINSTANCENAME$ SRS_REPORTSITEURL=$REPORTSSERVERURL$ TOPOLOGY=$X$`
 
-    **Note**  
+    **Note**  
     Replace the following values in the example above with those that match your environment:
 
     -   $SERVERNAME$\\$SQLINSTANCENAME$ - For the COMPLIDB\_SQLINSTANCE parameter, enter the server name and instance where the Compliance and Audit Database is located. For the RECOVERYANDHWDB\_SQLINSTANCE parameter, enter the server name and instance where the Recovery Database is located.
@@ -641,7 +658,7 @@ If you want to move the MBAM Administration and Monitoring Reports feature from 
 
     -   $X$ - Enter **0** if you are installing the MBAM Stand-alone topology, or **1** if you are installing the MBAM Configuration Manager topology.
 
-     
+
 
 **Configure Access to the Databases**
 
@@ -655,25 +672,27 @@ If you want to move the MBAM Administration and Monitoring Reports feature from 
 
     `PS C:\> net localgroup "MBAM Recovery and Hardware DB Access" $DOMAIN$\$SERVERNAME$$  /add`
 
-    **Note**  
+    **Note**  
     Replace the following value in the example above with the applicable values for your environment:
 
     -   $DOMAIN$\\$SERVERNAME$$ - Enter the domain and machine name of the Administration and Monitoring Server. The server name must be followed by a “$” symbol, as shown in the example (for example, MyDomain\\MyServerName1$).
 
     -   $DOMAIN$\\$REPORTSUSERNAME$ - Enter the user account name that was used to configure the data source for the Compliance and Audit Reports.
 
-     
 
-    The command lines that are listed for adding server computer accounts to the MBAM local groups must be run for each Administration and Monitoring Server that will be accessing the databases in your environment.
+
+~~~
+The command lines that are listed for adding server computer accounts to the MBAM local groups must be run for each Administration and Monitoring Server that will be accessing the databases in your environment.
+~~~
 
 ## Related topics
 
 
 [Maintaining MBAM 2.0](maintaining-mbam-20-mbam-2.md)
 
- 
 
- 
+
+
 
 
 

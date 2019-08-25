@@ -1,12 +1,15 @@
 ---
 title: SFTMIME Command Reference
 description: SFTMIME Command Reference
-author: jamiejdt
+author: manikadhiman
 ms.assetid: a4a69228-9dd3-4623-b773-899d03c0cf10
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

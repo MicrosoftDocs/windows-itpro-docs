@@ -1,12 +1,15 @@
 ---
 title: Determine Your Streaming Method
 description: Determine Your Streaming Method
-author: jamiejdt
+author: dansimp
 ms.assetid: 50d5e0ec-7f48-4cea-8711-5882bd89153b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,14 +22,14 @@ The first time that a user double-clicks the icon that has been placed on a comp
 **Note**  
 *Streaming* is the term used to describe the process of obtaining content from a sequenced application package, starting with the primary feature block and then obtaining additional blocks as needed.
 
- 
+ 
 
 The streaming source location is usually a server that is accessible by the user’s computer; however, some electronic distribution systems, such as Microsoft System Center Configuration Manager, can distribute the SFT file to the user’s computer and then stream the virtual application package locally from that computer’s cache.
 
 **Note**  
 A streaming source location for virtual packages can be set up on a computer that is not a server. This is especially useful in a small branch office that has no server.
 
- 
+ 
 
 The streaming sources that can be used to store sequenced applications are described in the following table.
 
@@ -57,7 +60,7 @@ The streaming sources that can be used to store sequenced applications are descr
 <td align="left"><ul>
 <li><p>No active upgrade</p></li>
 </ul></td>
-<td align="left"><p>[How to Configure the File Server](how-to-configure-the-file-server.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-file-server.md" data-raw-source="[How to Configure the File Server](how-to-configure-the-file-server.md)">How to Configure the File Server</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>IIS server</p></td>
@@ -73,7 +76,7 @@ The streaming sources that can be used to store sequenced applications are descr
 <li><p>Need to manage IIS</p></li>
 <li><p>No active upgrade</p></li>
 </ul></td>
-<td align="left"><p>[How to Configure the Server for IIS](how-to-configure-the-server-for-iis.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-server-for-iis.md" data-raw-source="[How to Configure the Server for IIS](how-to-configure-the-server-for-iis.md)">How to Configure the Server for IIS</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Application Virtualization Streaming Server</p></td>
@@ -87,12 +90,12 @@ The streaming sources that can be used to store sequenced applications are descr
 <li><p>Dual infrastructure</p></li>
 <li><p>Server administration requirement</p></li>
 </ul></td>
-<td align="left"><p>[How to Configure the Application Virtualization Management Servers](how-to-configure-the-application-virtualization-management-servers.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-application-virtualization-management-servers.md" data-raw-source="[How to Configure the Application Virtualization Management Servers](how-to-configure-the-application-virtualization-management-servers.md)">How to Configure the Application Virtualization Management Servers</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -103,9 +106,9 @@ The streaming sources that can be used to store sequenced applications are descr
 
 [Determine Your Publishing Method](determine-your-publishing-method.md)
 
- 
+ 
 
- 
+ 
 
 
 

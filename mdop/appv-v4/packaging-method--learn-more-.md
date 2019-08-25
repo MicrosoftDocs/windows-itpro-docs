@@ -1,12 +1,15 @@
 ---
 title: Packaging Method (Learn More)
 description: Packaging Method (Learn More)
-author: jamiejdt
+author: eavena
 ms.assetid: 3975a640-1ffd-4b4c-95fd-608469f4c205
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

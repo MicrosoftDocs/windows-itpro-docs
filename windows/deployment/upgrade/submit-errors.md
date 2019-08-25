@@ -1,13 +1,15 @@
 ---
 title: Submit Windows 10 upgrade errors using Feedback Hub
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: Submit Windows 10 upgrade errors for diagnosis using feedback hub
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, feedback
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
-ms.date: 03/16/2018
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -27,7 +29,7 @@ This topic describes how to submit problems with a Windows 10 upgrade to Microso
 
 ## About the Feedback Hub
 
-The Feedback Hub app lets you tell Microsoft about any problems you run in to while using Windows 10 and send suggestions to help us improve your Windows experience. Previously, you could only use the Feedback Hub if you were in the Windows Insider Program. Now anyone can use this tool.  You can download the Feedback Hub app from the Microsoft Store [here](https://www.microsoft.com/en-us/store/p/feedback-hub/9nblggh4r32n?SilentAuth=1&wa=wsignin1.0).
+The Feedback Hub app lets you tell Microsoft about any problems you run in to while using Windows 10 and send suggestions to help us improve your Windows experience. Previously, you could only use the Feedback Hub if you were in the Windows Insider Program. Now anyone can use this tool.  You can download the Feedback Hub app from the Microsoft Store [here](https://www.microsoft.com/store/p/feedback-hub/9nblggh4r32n?SilentAuth=1&wa=wsignin1.0).
 
 The Feedback Hub requires Windows 10 or Windows 10 mobile. If you are having problems upgrading from an older version of Windows to Windows 10, you can use the Feedback Hub to submit this information, but you must collect the log files from the legacy operating system and then attach these files to your feedback using a device that is running Windows 10. If you are upgrading to Windows 10 from a previous verion of Windows 10, the Feedback Hub will collect log files automatically.
 

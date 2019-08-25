@@ -2,12 +2,14 @@
 title: Configure access to Microsoft Store (Windows 10)
 description: IT Pros can configure access to Microsoft Store for client computers in their organization. For some organizations, business policies require blocking access to Microsoft Store.
 ms.assetid: 7AA60D3D-2A69-45E7-AAB0-B8AFC29C2E97
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store, mobile
-author: TrudyHa
-ms.author: Trudyha
+author: dansimp
+ms.author: dansimp
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 4/16/2018
@@ -21,7 +23,7 @@ ms.date: 4/16/2018
 -   Windows 10
 -   Windows 10 Mobile
 
->For more info about the features and functionality that are supported in each edition of Windows, see [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+>For more info about the features and functionality that are supported in each edition of Windows, see [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 
 IT pros can configure access to Microsoft Store for client computers in their organization. For some organizations, business policies require blocking access to Microsoft Store.
 

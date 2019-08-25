@@ -1,12 +1,15 @@
 ---
 title: How to Upgrade a Package
 description: How to Upgrade a Package
-author: jamiejdt
+author: eavena
 ms.assetid: 831c7556-6f6c-4b3a-aefb-26889094dc1a
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -25,7 +28,7 @@ When you upgrade a package with a new version, you can leave the existing versio
     **Note**  
     If resequencing did not add features that changed the Open Software Descriptor (OSD), icon (ICO), or Sequencer Project (SPRJ) files, you do not need to copy those. You can include these files if you want all these files to display the same date.
 
-     
+     
 
 2.  In left pane of the Application Virtualization Server Management Console, expand **Packages**.
 
@@ -44,9 +47,9 @@ When you upgrade a package with a new version, you can leave the existing versio
 
 [How to Manage Packages in the Server Management Console](how-to-manage-packages-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

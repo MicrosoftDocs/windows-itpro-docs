@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Configure Hybrid Windows Hello for Business: Group Policy
 
@@ -25,7 +26,7 @@ ms.date: 08/19/2018
 
 ## Policy Configuration
 
-You need a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45520).
+You need a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
 Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1703.
 
 Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10 Creators Edition (1703) to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows) for more information.
@@ -47,26 +48,26 @@ To continue automatic enrollment and renewal of domain controller certificates t
 
 Sign-in a domain controller or management workstations with _Domain Admin_ equivalent credentials.
 
-1.	Start the **Group Policy Management Console** (gpmc.msc)
-2.	Expand the domain and select the **Group Policy Object** node in the navigation pane.
-3.	Right-click **Group Policy object** and select **New**
-4.	Type *Domain Controller Auto Certificate Enrollment* in the name box and click **OK**.
-5.	Right-click the **Domain Controller Auto Certificate Enrollment** Group Policy object and click **Edit**.
-6.	In the navigation pane, expand **Policies** under **Computer Configuration**.
-7.	Expand **Windows Settings**, **Security Settings**, and click **Public Key Policies**.
-8.	In the details pane, right-click **Certificate Services Client - Auto-Enrollment** and select **Properties**.
-9.	Select **Enabled** from the **Configuration Model** list.
-10.	Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
-11.	Select the **Update certificates that use certificate templates** check box.
-12.	Click **OK**. Close the **Group Policy Management Editor**.
+1. Start the **Group Policy Management Console** (gpmc.msc)
+2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
+3. Right-click **Group Policy object** and select **New**
+4. Type *Domain Controller Auto Certificate Enrollment* in the name box and click **OK**.
+5. Right-click the **Domain Controller Auto Certificate Enrollment** Group Policy object and click **Edit**.
+6. In the navigation pane, expand **Policies** under **Computer Configuration**.
+7. Expand **Windows Settings**, **Security Settings**, and click **Public Key Policies**.
+8. In the details pane, right-click **Certificate Services Client - Auto-Enrollment** and select **Properties**.
+9. Select **Enabled** from the **Configuration Model** list.
+10. Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
+11. Select the **Update certificates that use certificate templates** check box.
+12. Click **OK**. Close the **Group Policy Management Editor**.
 
 #### Deploy the Domain Controller Auto Certificate Enrollment Group Policy Object
 
 Sign-in a domain controller or management workstations with _Domain Admin_ equivalent credentials.
 
-1.	Start the **Group Policy Management Console** (gpmc.msc)
-2.	In the navigation pane, expand the domain and expand the node that has your Active Directory domain name.  Right-click the **Domain Controllers** organizational unit and click **Link an existing GPO**
-3.	In the **Select GPO** dialog box, select **Domain Controller Auto Certificate Enrollment** or the name of the domain controller certificate enrollment Group Policy object you previously created and click **OK**.
+1. Start the **Group Policy Management Console** (gpmc.msc)
+2. In the navigation pane, expand the domain and expand the node that has your Active Directory domain name.  Right-click the **Domain Controllers** organizational unit and click **Link an existing GPO**
+3. In the **Select GPO** dialog box, select **Domain Controller Auto Certificate Enrollment** or the name of the domain controller certificate enrollment Group Policy object you previously created and click **OK**.
 
 ### Windows Hello for Business Group Policy
 
@@ -117,7 +118,7 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 7. Select **Enabled** from the **Configuration Model** list.
 8. Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
 9. Select the **Update certificates that use certificate templates** check box.
-10.	Click **OK**. Close the **Group Policy Management Editor**.
+10. Click **OK**. Close the **Group Policy Management Editor**.
 
 #### Configure Security in the Windows Hello for Business Group Policy object
 
@@ -150,7 +151,7 @@ The default configuration for Windows Hello for Business is to prefer hardware p
 
 You can enable and deploy the **Use a hardware security device** Group Policy Setting to force Windows Hello for Business to only create hardware protected credentials.  Users that sign-in from a computer incapable of creating a hardware protected credential do not enroll for Windows Hello for Business.
 
-Another policy setting becomes available when you enable the **Use a hardware security device** Group Policy setting that enables you to prevent Windows Hello for Business enrollment from using version 1.2 Trusted Platform Modules (TPM). Version 1.2 TPMs typically perform cryptographic operations slower than version 2.0 TPMs and are more unforgiving during anti-hammering and PIN lockout activities. Therefore, some organization may want not want slow sign-in performance and management overhead associated with version 1.2 TPMs. To prevent Windows Hello for Business from using version 1.2 TPMs, simply select the TPM 1.2 check box after you enable the Use a hardware security device Group Policy object.
+Another policy setting becomes available when you enable the **Use a hardware security device** Group Policy setting that enables you to prevent Windows Hello for Business enrollment from using version 1.2 Trusted Platform Modules (TPM). Version 1.2 TPMs typically perform cryptographic operations slower than version 2.0 TPMs and are more unforgiving during anti-hammering and PIN lockout activities. Therefore, some organization may not want slow sign-in performance and management overhead associated with version 1.2 TPMs. To prevent Windows Hello for Business from using version 1.2 TPMs, simply select the TPM 1.2 check box after you enable the Use a hardware security device Group Policy object.
 
 #### Use biometrics
 
@@ -186,10 +187,10 @@ Users must receive the Windows Hello for Business group policy settings and have
 > * Enable the Use certificate for on-premises authentication policy setting.
 > * Enable user automatic certificate enrollment.
 > * Add users or groups to the Windows Hello for Business group
-
-
+> 
+> 
 > [!div class="nextstepaction"]
-[Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
+> [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
 
 <br><br>
 
@@ -197,7 +198,7 @@ Users must receive the Windows Hello for Business group policy settings and have
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
-2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+2. [Prerequisites](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
 5. Configure Windows Hello for Business policy settings (*You are here*)

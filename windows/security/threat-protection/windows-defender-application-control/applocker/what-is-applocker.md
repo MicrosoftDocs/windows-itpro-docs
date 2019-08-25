@@ -2,12 +2,14 @@
 title: What Is AppLocker (Windows 10)
 description: This topic for the IT professional describes what AppLocker is and how its features differ from Software Restriction Policies.
 ms.assetid: 44a8a2bb-0f83-4f95-828e-1f364fb65869
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: mjcaparas
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,8 +20,8 @@ ms.date: 09/21/2017
 # What Is AppLocker?
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for the IT professional describes what AppLocker is and how its features differ from Software Restriction Policies.
 
@@ -116,8 +118,8 @@ The following table compares AppLocker to Software Restriction Policies.
 </tr>
 </tbody>
 </table>
- 
-**Application control function differences**
+
+<strong>Application control function differences</strong>
 
 The following table compares the application control functions of Software Restriction Policies (SRP) and AppLocker.
 <table>
@@ -136,14 +138,13 @@ The following table compares the application control functions of Software Restr
 <tbody>
 <tr class="odd">
 <td align="left"><p>Operating system scope</p></td>
-<td align="left"><p>SRP policies can be applied to all Windows operating systems beginning with Windows XP and Windows Server 2003.</p></td>
-<td align="left"><p>AppLocker policies apply only to those supported operating system versions and editions listed in [Requirements to use AppLocker](requirements-to-use-applocker.md). But these systems can also use SRP.</p>
+<td align="left"><p>SRP policies can be applied to all Windows operating systems beginning with Windows XP and Windows Server 2003.</p></td>
+<td align="left"><p>AppLocker policies apply only to those supported operating system versions and editions listed in <a href="requirements-to-use-applocker.md" data-raw-source="[Requirements to use AppLocker](requirements-to-use-applocker.md)">Requirements to use AppLocker</a>. But these systems can also use SRP.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Use different GPOs for SRP and AppLocker rules.</p>
+<strong>Note</strong><br/><p>Use different GPOs for SRP and AppLocker rules.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -175,7 +176,7 @@ The following table compares the application control functions of Software Restr
 </tr>
 <tr class="odd">
 <td align="left"><p>Manage all software on the computer</p></td>
-<td align="left"><p>All software is managed in one rule set. By default, the policy for managing all software on a device disallows all software on the user's device, except software that is installed in the Windows folder, Program Files folder, or subfolders.</p></td>
+<td align="left"><p>All software is managed in one rule set. By default, the policy for managing all software on a device disallows all software on the user&#39;s device, except software that is installed in the Windows folder, Program Files folder, or subfolders.</p></td>
 <td align="left"><p>Unlike SRP, each AppLocker rule collection functions as an allowed list of files. Only the files that are listed within the rule collection will be allowed to run. This configuration makes it easier for administrators to determine what will occur when an AppLocker rule is applied.</p></td>
 </tr>
 <tr class="even">
@@ -185,9 +186,9 @@ The following table compares the application control functions of Software Restr
 </tr>
 </tbody>
 </table>
- 
+
 ## Related topics
 
 - [AppLocker technical reference](applocker-technical-reference.md)
- 
- 
+
+

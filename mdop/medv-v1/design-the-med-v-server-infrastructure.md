@@ -1,12 +1,15 @@
 ---
 title: Design the MED-V Server Infrastructure
 description: Design the MED-V Server Infrastructure
-author: jamiejdt
+author: dansimp
 ms.assetid: 2781040f-880e-4e16-945d-a38c0adb4151
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

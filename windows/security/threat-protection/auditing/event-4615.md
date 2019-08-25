@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4615(S): Invalid use of LPC port.
@@ -45,7 +48,7 @@ It appears that this event never occurs.
 
 *LPC Server Port Name:%6*
 
-*Windows Local Security Authority (LSA) communicates with the Windows kernel using Local Procedure Call (LPC) ports. If you see this event, an application has inadvertently or intentionally accessed this port which is reserved exclusively for LSA’s use. The application (process) should be investigated to ensure that it is not attempting to tamper with this communications channel." *
+*Windows Local Security Authority (LSA) communicates with the Windows kernel using Local Procedure Call (LPC) ports. If you see this event, an application has inadvertently or intentionally accessed this port which is reserved exclusively for LSA’s use. The application (process) should be investigated to ensure that it is not attempting to tamper with this communications channel."*
 
 ***Required Server Roles:*** None.
 

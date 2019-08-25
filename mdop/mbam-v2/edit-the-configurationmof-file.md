@@ -1,12 +1,15 @@
 ---
 title: Edit the Configuration.mof File
 description: Edit the Configuration.mof File
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 23e50ec9-4083-4b12-ad96-626cf30960bb
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/03/2017
 ---
 
@@ -23,7 +26,7 @@ If you are installing Microsoft BitLocker Administration and Monitoring (MBAM) 2
 
 -   For an upgrade to MBAM 2.0 SP1, see **Update the configuration.mof file if you upgrade to MBAM 2.0 SP1 and you are using MBAM with Configuration Manager 2007**.
 
- 
+ 
 
 **To create the configuration.mof file if you are using MBAM 2.0 SP1 with Configuration Manager**
 
@@ -376,9 +379,9 @@ If you are installing Microsoft BitLocker Administration and Monitoring (MBAM) 2
 
 [Deploying MBAM with Configuration Manager](deploying-mbam-with-configuration-manager-mbam2.md)
 
- 
+ 
 
- 
+ 
 
 
 

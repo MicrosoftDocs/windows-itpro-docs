@@ -1,12 +1,15 @@
 ---
 title: How to Manage Servers in the Server Management Console
 description: How to Manage Servers in the Server Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: 6e851c74-ea86-4fef-bb0c-e690e8e7e7eb
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

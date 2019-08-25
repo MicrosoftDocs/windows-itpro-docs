@@ -5,9 +5,11 @@ keywords: ["get started", "windows 10", "fall creators update", "1709"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: DaniHalfin
-ms.author: daniha
+author: dansimp
+ms.author: dansimp
 ms.date: 10/16/2017
+ms.reviewer: 
+manager: dansimp
 ms.localizationpriority: high
 ms.topic: article
 ---
@@ -36,7 +38,7 @@ To view availability dates and servicing options for each version and update of 
 
 ## Windows 10 Roadmap
 
-If you'd like to gain some insight into preview, or in-development features, visit the [Windows 10 Roadmap](https://www.microsoft.com/en-us/WindowsForBusiness/windows-roadmap) page. You'll be able to filter by feature state and product category, to make this information easier to navigate.
+If you'd like to gain some insight into preview, or in-development features, visit the [Windows 10 Roadmap](https://www.microsoft.com/WindowsForBusiness/windows-roadmap) page. You'll be able to filter by feature state and product category, to make this information easier to navigate.
 
 ## Top support solutions for Windows 10
 

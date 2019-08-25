@@ -2,11 +2,14 @@
 title: Applying Filters to Data in the SUA Tool (Windows 10)
 description: On the user interface for the Standard User Analyzer (SUA) tool, you can apply filters to the issues that the tool has found so that you can view only the information that interests you.
 ms.assetid: 48c39919-3501-405d-bcf5-d2784cbb011f
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-author: TrudyHa
+audience: itproauthor: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---

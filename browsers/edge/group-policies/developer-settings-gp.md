@@ -4,10 +4,12 @@ description: Microsoft Edge, by default, allows users to use the F12 developer t
 services: 
 keywords: 
 ms.localizationpriority: medium
-managre: dougkim
-author: shortpatti
-ms.author: pashort
+manager: dougkim
+author: eavena
+ms.author: eravena
 ms.date: 10/02/2018
+ms.reviewer: 
+audience: itpromanager: dansimp
 ms.topic: reference
 ms.prod: edge
 ms.mktglfcycl: explore

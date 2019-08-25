@@ -1,12 +1,15 @@
 ---
 title: How to Deploy the DaRT Recovery Image Using a USB Flash Drive
 description: How to Deploy the DaRT Recovery Image Using a USB Flash Drive
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 5b7aa843-731e-47e7-b5f9-48d08da732d6
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -44,7 +47,7 @@ You can also manually copy the ISO image file to a UFD by following the steps pr
         **Note**  
         The previous code example assumes Disk 1 is the UFD. If it is necessary, replace DISK 1 with your disk number.
 
-         
+         
 
 2.  By using your company’s preferred method of mounting an image, mount the ISO image file that you created in the **Create Startup Image** dialog box of the **DaRT Recovery Image Wizard**. This requires that you have a method available to mount an image file.
 
@@ -53,16 +56,16 @@ You can also manually copy the ISO image file to a UFD by following the steps pr
     **Note**  
     If you burned a CD or DVD of the recovery image, you can open the files on the CD or DVD and copy the contents to the UFD. This lets you skip the need to mount the image.
 
-     
+     
 
 ## Related topics
 
 
 [Deploying the DaRT 7.0 Recovery Image](deploying-the-dart-70-recovery-image-dart-7.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -9,16 +9,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage Windows Defender Antivirus updates and scans for endpoints that are out of date
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Windows Defender Antivirus lets you define how long an endpoint can avoid an update or how many scans it can miss before it is required to update and scan itself. This is especially useful in environments where devices are not often connected to a corporate or external network, or devices that are not used on a daily basis.
 
@@ -34,10 +36,10 @@ If Windows Defender Antivirus did not download protection updates for a specifie
 
 1.  On your System Center Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
 
-2.  Go to the **Definition updates** section and configure the following settings:
+2.  Go to the **Security intelligence updates** section and configure the following settings:
 
-    1.	Set **Force a definition update if the client computer is offline for more than two consecutive scheduled updates** to **Yes**.
-    2.	For the  **If Configuration Manager is used as a source for definition updates...**, specify the hours before which the protection updates delivered by Configuration Manager should be considered out-of-date. This will cause the next update location to be used, based on the defined [fallback source order](manage-protection-updates-windows-defender-antivirus.md#fallback-order).
+    1. Set **Force a security intelligence update if the client computer is offline for more than two consecutive scheduled updates** to **Yes**.
+    2. For the  **If Configuration Manager is used as a source for security intelligence updates...**, specify the hours before which the protection updates delivered by Configuration Manager should be considered out-of-date. This will cause the next update location to be used, based on the defined [fallback source order](manage-protection-updates-windows-defender-antivirus.md#fallback-order).
 
 3. Click **OK**.
 
@@ -53,7 +55,7 @@ If Windows Defender Antivirus did not download protection updates for a specifie
 
 4. Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates**.
 
-5. Double-click the **Define the number of days after which a catch-up definition update is required** setting and set the option to **Enabled**. Enter the number of days after which you want Windows Defender AV to check for and download the latest protection update.
+5. Double-click the **Define the number of days after which a catch-up security intelligence update is required** setting and set the option to **Enabled**. Enter the number of days after which you want Windows Defender AV to check for and download the latest protection update.
 
 6. Click **OK**.
 

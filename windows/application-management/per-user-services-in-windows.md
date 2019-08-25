@@ -5,9 +5,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: elizapo
-author: lizap
+ms.author: tracyp
+author: msfttracyp
 ms.date: 09/14/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Per-user services in Windows 10 and Windows Server 
@@ -90,7 +92,7 @@ Revision=1
 
 If a per-user service can't be disabled using a the security template, you can disable it by using Group Policy preferences.
 
-1. On a Windows Server domain controller or Windows 10 PC that has the [Remote Server Administration Tools (RSAT)](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed, click **Start**, type GPMC.MSC, and then press **Enter** to open the **Group Policy Management Console**.
+1. On a Windows Server domain controller or Windows 10 PC that has the [Remote Server Administration Tools (RSAT)](https://www.microsoft.com/download/details.aspx?id=45520) installed, click **Start**, type GPMC.MSC, and then press **Enter** to open the **Group Policy Management Console**.
 
 2. Create a new Group Policy Object (GPO) or use an existing GPO.  
 
@@ -170,7 +172,7 @@ Set-Service <service name> -StartupType Disabled
 
 ## View per-user services in the Services console (services.msc)
 
-As mentioned you can't view the template services in the Services console, but you can see the user-specific per-user services - they are displayed using the <service name>_LUID format (where LUID is the locally unique identifier).
+As mentioned you can't view the template services in the Services console, but you can see the user-specific per-user services - they are displayed using the \<service name>_LUID format (where LUID is the locally unique identifier).
 
 For example, you might see the following per-user services listed in the Services console:
 

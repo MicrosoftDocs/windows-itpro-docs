@@ -1,12 +1,15 @@
 ---
 title: Configuring UE-V with System Center Configuration Manager
 description: Configuring UE-V with System Center Configuration Manager 
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 
@@ -77,7 +80,7 @@ The UE-V Configuration Pack includes tools to:
     </tbody>
     </table>
 
-     
+     
 
 -   Verify compliance by confirming that UE-V is running.
 
@@ -104,7 +107,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 1.  Select **Administration &gt; Client Settings &gt; Properties**
 
 2.  In the **User Agent** tab, set the **PowerShell Execution Policy** to **Bypass**
- 
+ 
 
 <a href="" id="create"></a>**Create the first UE-V policy configuration item**
 
@@ -225,7 +228,7 @@ To distribute a new Notepad template, you would perform these steps:
 
 ## Get the UE-V Configuration Pack
 
-You can download the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=40913) from the Microsoft Download Center.
+You can download the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2.0](https://www.microsoft.com/download/details.aspx?id=40913) from the Microsoft Download Center.
 
 
 
@@ -237,9 +240,9 @@ You can download the [System Center 2012 Configuration Pack for Microsoft User E
 
 [Manage Configurations for UE-V](uev-manage-configurations.md)
 
- 
+ 
 
- 
+ 
 
 
 

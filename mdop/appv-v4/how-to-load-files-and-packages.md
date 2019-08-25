@@ -1,12 +1,15 @@
 ---
 title: How to Load Files and Packages
 description: How to Load Files and Packages
-author: jamiejdt
+author: dansimp
 ms.assetid: f86f5bf1-99a4-44d7-ae2f-e6049c482f68
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ You can use the following procedure to load files and packages on Application Vi
 **Note**  
 During the installation process, you specified the location of the \\Content directory on the **Content Path** page. This directory should be created and configured as a standard file share before you point to its location.
 
- 
+ 
 
 **To load files and packages**
 
@@ -38,16 +41,16 @@ During the installation process, you specified the location of the \\Content dir
 
         The App-V Clients must be properly configured to retrieve applications and packages from Web servers and file servers. For more information, see [How to Configure the Client for Application Package Retrieval](how-to-configure-the-client-for-application-package-retrieval.md).
 
-         
+         
 
 ## Related topics
 
 
 [Application Virtualization Server](application-virtualization-server.md)
 
- 
+ 
 
- 
+ 
 
 
 

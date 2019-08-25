@@ -1,8 +1,11 @@
 ---
 title: Planning for MBAM 2.5 Server Deployment
 description: Planning for MBAM 2.5 Server Deployment
-author: jamiejdt
+author: dansimp
 ms.assetid: 88774c89-31c8-4eb8-a845-a00bbec8c870
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -34,8 +37,8 @@ This topic lists the features that you deploy for the MBAM Stand-alone and Confi
 <tr class="odd">
 <td align="left"><p>Review the following before you start the deployment:</p>
 <ul>
-<li><p>[MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies](mbam-25-server-prerequisites-for-stand-alone-and-configuration-manager-integration-topologies.md)</p></li>
-<li><p>[MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)</p></li>
+<li><p><a href="mbam-25-server-prerequisites-for-stand-alone-and-configuration-manager-integration-topologies.md" data-raw-source="[MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies](mbam-25-server-prerequisites-for-stand-alone-and-configuration-manager-integration-topologies.md)">MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies</a></p></li>
+<li><p><a href="mbam-25-supported-configurations.md" data-raw-source="[MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)">MBAM 2.5 Supported Configurations</a></p></li>
 </ul></td>
 <td align="left"><p>Each MBAM feature has specific prerequisites that must be met before you start the MBAM installation.</p></td>
 </tr>
@@ -45,7 +48,7 @@ This topic lists the features that you deploy for the MBAM Stand-alone and Confi
 </tr>
 <tr class="odd">
 <td align="left"><p>Keep track of the names of the computers on which you configure each feature. You will use this information throughout the configuration process.</p></td>
-<td align="left"><p>You may want to use the [MBAM 2.5 Deployment Checklist](mbam-25-deployment-checklist.md) for this purpose.</p></td>
+<td align="left"><p>You may want to use the <a href="mbam-25-deployment-checklist.md" data-raw-source="[MBAM 2.5 Deployment Checklist](mbam-25-deployment-checklist.md)">MBAM 2.5 Deployment Checklist</a> for this purpose.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Configure only the Group Policy settings in the MDOP MBAM (BitLocker Management) node. Do not change the Group Policy settings in the BitLocker Drive Encryption node.</p></td>
@@ -54,7 +57,7 @@ This topic lists the features that you deploy for the MBAM Stand-alone and Confi
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="planning-for-mbam-server-deployment---stand-alone-topology"></a>Planning for MBAM Server deployment – Stand-alone topology
 
@@ -105,7 +108,7 @@ For a description of these features, see [High-Level Architecture of MBAM 2.5 wi
 
 [Deploying the MBAM 2.5 Server Infrastructure](deploying-the-mbam-25-server-infrastructure.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 

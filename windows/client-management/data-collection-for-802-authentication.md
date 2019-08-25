@@ -1,13 +1,15 @@
 ---
 title: Data collection for troubleshooting 802.1X authentication
+ms.reviewer: 
+manager: dansimp
 description: Data needed for reviewing 802.1X Authentication issues
 keywords: troubleshooting, data collection, data, 802.1X authentication, authentication, data
 ms.prod: w10
 ms.mktglfcycl:
 ms.sitesec: library
-author: kaushika-msft
+author: dansimp
 ms.localizationpriority: medium
-ms.author: mikeblodge
+ms.author: dansimp
 ms.topic: troubleshooting
 ---
  
@@ -72,7 +74,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
    ```
     wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:true
     wevtutil sl Microsoft-Windows-CAPI2/Operational /ms:104857600
-  ```
+   ```
 7. Run the following command from the command prompt on the client machine and start PSR to capture screen images:
  
    > [!NOTE]
@@ -90,13 +92,13 @@ Use the following steps to collect wireless and wired logs on Windows and Window
  
 10. Run the following commands from the command prompt on the NPS server.
  
-   - To stop RAS trace log and wireless scenario log:
+    - To stop RAS trace log and wireless scenario log:
 
       ```
       netsh trace stop
       netsh ras set tracing * disabled
       ```
-   - To disable and copy CAPI2 log:
+    - To disable and copy CAPI2 log:
     
       ```
       wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:false
@@ -104,13 +106,13 @@ Use the following steps to collect wireless and wired logs on Windows and Window
       ```
  
 11. Run the following commands on the client PC.
-   - To stop RAS trace log and wireless scenario log:
+    - To stop RAS trace log and wireless scenario log:
       ```
       netsh trace stop
       netsh ras set tracing * disabled
       ```
  
-   - To disable and copy the CAPI2 log:
+    - To disable and copy the CAPI2 log:
       ```
       wevtutil.exe sl Microsoft-Windows-CAPI2/Operational /e:false
       wevtutil.exe epl Microsoft-Windows-CAPI2/Operational C:\MSLOG\%COMPUTERNAME%_CAPI2.evtx
@@ -118,14 +120,14 @@ Use the following steps to collect wireless and wired logs on Windows and Window
  
 12. Save the following logs on the client and the NPS:
  
-   **Client**
+    **Client**
       - C:\MSLOG\%computername%_psr.zip
       - C:\MSLOG\%COMPUTERNAME%_CAPI2.evtx
       - C:\MSLOG\%COMPUTERNAME%_wireless_cli.etl
       - C:\MSLOG\%COMPUTERNAME%_wireless_cli.cab
       - All log files and folders in %Systemroot%\Tracing
  
-   **NPS**
+    **NPS**
       - C:\MSLOG\%COMPUTERNAME%_CAPI2.evtx
       - C:\MSLOG\%COMPUTERNAME%_wireless_nps.etl (%COMPUTERNAME%_wired_nps.etl for wired scenario)
       - C:\MSLOG\%COMPUTERNAME%_wireless_nps.cab (%COMPUTERNAME%_wired_nps.cab for wired scenario)

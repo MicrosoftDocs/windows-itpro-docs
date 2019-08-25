@@ -1,12 +1,15 @@
 ---
 title: How to Configure the Client for MIT Kerberos Realm Support
 description: How to Configure the Client for MIT Kerberos Realm Support
-author: jamiejdt
+author: dansimp
 ms.assetid: 46102f4c-270c-4115-8eb4-7ff5ae3be32d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

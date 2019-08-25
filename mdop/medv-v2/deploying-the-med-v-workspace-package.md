@@ -1,12 +1,15 @@
 ---
 title: Deploying the MED-V Workspace Package
 description: Deploying the MED-V Workspace Package
-author: jamiejdt
+author: levinec
 ms.assetid: f314425a-d60f-4b8d-b71f-d13d1da9297f
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,12 +22,12 @@ After you have tested your Microsoft Enterprise Desktop Virtualization (MED-V) 2
 **Note**  
 When you are ready to deploy, we recommend that you install the MED-V workspace by running the setup.exe executable program that is included in your MED-V workspace installer package.
 
- 
+ 
 
 **Warning**  
 Before you can install the MED-V workspace, you must first install the MED-V Host Agent.
 
- 
+ 
 
 ## In This Section
 
@@ -38,9 +41,9 @@ Provides information about how to deploy a MED-V workspace in a Windows 7 image.
 <a href="" id="how-to-deploy-a-med-v-workspace-manually"></a>[How to Deploy a MED-V Workspace Manually](how-to-deploy-a-med-v-workspace-manually.md)  
 Provides information about how to manually deploy a MED-V workspace.
 
- 
+ 
 
- 
+ 
 
 
 

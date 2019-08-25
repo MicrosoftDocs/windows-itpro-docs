@@ -1,12 +1,15 @@
 ---
 title: How to Test URL Redirection
 description: How to Test URL Redirection
-author: jamiejdt
+author: levinec
 ms.assetid: 38d80088-da1d-4098-b27e-76f9e78f81dc
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 11/01/2016
 ---
 
@@ -59,9 +62,9 @@ After you have completed testing your MED-V workspace package and have verified 
 
 [Deploying the MED-V Workspace Package](deploying-the-med-v-workspace-package.md)
 
- 
+ 
 
- 
+ 
 
 
 

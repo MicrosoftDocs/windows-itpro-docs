@@ -2,12 +2,15 @@
 title: Sideload LOB apps in Windows 10 (Windows 10)
 description: Sideload line-of-business apps in Windows 10.
 ms.assetid: C46B27D0-375B-4F7A-800E-21595CF1D53D
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-author: greg-lindsay
-ms.date: 04/19/2017
+author: msfttracyp
+ms.date: 05/20/2019
 ---
 
 # Sideload LOB apps in Windows 10
@@ -15,6 +18,9 @@ ms.date: 04/19/2017
 
 -   Windows 10
 -   Windows 10 Mobile
+
+> [!NOTE]
+> As of Windows Insider Build 18956, sideloading is enabled by default. Now, you can deploy a signed package onto a device without a special configuration. 
 
 "Line-of-Business" (LOB) apps are present in a wide range of businesses and organizations. Organizations value these apps because they solve problems unique to each business.
 
@@ -48,9 +54,15 @@ And here's what you'll need to do:
 ## How do I sideload an app on desktop
 You can sideload apps on managed or unmanaged devices.
 
+>[!IMPORTANT]
+> To install an app on Windows 10, in addition to following [these procedures](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web), users can also double-click any APPX/MSIX package.
+
+
 **To turn on sideloading for managed devices**
 
 -   Deploy an enterprise policy.
+
+
 
 **To turn on sideloading for unmanaged devices**
 

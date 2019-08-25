@@ -1,12 +1,15 @@
 ---
 title: Gathering Information Page (Learn More)
 description: Gathering Information Page (Learn More)
-author: jamiejdt
+author: dansimp
 ms.assetid: f8d5ec6b-a3d3-4e80-b1c2-3f8441b04aaa
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

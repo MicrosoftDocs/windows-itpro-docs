@@ -1,12 +1,15 @@
 ---
 title: Improving Security During App-V Sequencing
 description: Improving Security During App-V Sequencing
-author: jamiejdt
+author: eavena
 ms.assetid: f30206dd-5749-4a27-bbaf-61fc21b9c663
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -31,13 +34,13 @@ This feature also enables the sequencing engineer to capture the security settin
 **Important**  
 Although the sequencer captures the NTFS ACLs while monitoring the installation phase of sequencing, it does not capture the ACLs for the registry. Users have full access to all registry keys for virtual applications except for services. However, if a user modifies the registry of a virtual application, that change is stored in a specific location (`uservol_sftfs_v1.pkg`) and won’t affect other users.
 
- 
+ 
 
 During the installation phase, a sequencing engineer can modify the default permissions of the files if necessary. After the sequencing process is complete, but before saving the package, the sequencing engineer can then choose to enforce security descriptors that were captured during the installation phase. It is a best practice to enforce security descriptors if no other solution allows the application to run properly once virtualized.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -2,9 +2,12 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: IEM-configured settings have been deprecated for Internet Explorer 10 and newer. Use this topic to learn where to go to fix the affected settings through Group Policy Preferences, Administrative Templates (.admx), or the IEAK.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: 89084e01-4e3f-46a6-b90e-48ee58d6821c
+ms.reviewer: 
+audience: itpromanager: dansimp
+ms.author: lomayor
 title: Missing Internet Explorer Maintenance settings for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -61,7 +64,7 @@ The IEM settings have replacements you can use in either Group Policy Preference
 |Automatic browser configuration |Lets you update your employee's computer after you've deployed IE11, by specifying a URL to an .ins file, an auto-proxy URL, or both. You can decide when the update occurs, in minutes. Typing zero, or not putting in any number, means that automatic configuration only happens after the browser is started and used to go to a page. |In the **Internet Settings Group Policy Preferences** dialog box, click the **Automatic Configuration** tab, and then add your URL.<p>On the **Automatic Configuration** page of IEAK 11, modify the configuration settings, including providing the URL to an .ins file or an auto-proxy site. |
 |Proxy settings |Lets you specify your proxy servers. |In the **Internet Settings Group Policy Preferences** dialog box, click the **Connections** tab, click **LAN Settings**, and then choose whether to turn on automatic detection of your configuration settings and if you want to use proxy servers.<p>-OR-<p>On the **Proxy Settings** page of IEAK 11, turn on your proxy settings, adding your proxy server addresses and exceptions. |
 |User Agent string |Lets the browser provide identification to visited servers. This string is often used to keep Internet traffic statistics. |This setting isn't available anymore. |
- 
+ 
 ### URLs replacements
 
 |IEM setting |Description |Replacement tool |

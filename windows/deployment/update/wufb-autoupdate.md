@@ -4,10 +4,12 @@ description: Learn how to get started using Windows Update for Business.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: lizap
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
-ms.author: elizapo
+ms.audience: itproauthor: greg-lindsay
 ms.date: 06/20/2018
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 

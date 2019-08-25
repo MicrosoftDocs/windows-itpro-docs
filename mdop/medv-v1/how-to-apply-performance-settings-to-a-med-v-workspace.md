@@ -1,12 +1,15 @@
 ---
 title: How to Apply Performance Settings to a MED-V Workspace
 description: How to Apply Performance Settings to a MED-V Workspace
-author: jamiejdt
+author: dansimp
 ms.assetid: e0fed1e1-6e8f-4d65-ab83-b950a17661c0
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

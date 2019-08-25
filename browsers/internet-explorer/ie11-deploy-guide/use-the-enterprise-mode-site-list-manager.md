@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the topics in this section to learn about how to use the Enterprise Mode Site List Manager.
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: f4dbed4c-08ff-40b1-ab3f-60d3b6e8ec9b
+ms.reviewer: 
+audience: itpromanager: dansimp
+ms.author: lomayor
 title: Use the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 12/04/2017

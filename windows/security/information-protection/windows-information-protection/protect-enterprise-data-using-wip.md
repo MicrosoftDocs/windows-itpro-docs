@@ -2,14 +2,15 @@
 title: Protect your enterprise data using Windows Information Protection (WIP) (Windows 10)
 description: With the increase of employee-owned devices in the enterprise, there’s also an increasing risk of accidental data leak through apps and services, like email, social media, and the public cloud, which are outside of the enterprise’s control.
 ms.assetid: 6cca0119-5954-4757-b2bc-e0ea4d2c7032
+ms.reviewer: 
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, DLP, data loss prevention, data leakage protection
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -34,7 +35,7 @@ Windows Information Protection (WIP), previously known as enterprise data protec
 
 ## Video: Protect enterprise data from being accidentally copied to the wrong place
 
-> [!Video https://www.microsoft.com/en-us/videoplayer/embed/RE2IGhh]
+> [!Video https://www.microsoft.com/videoplayer/embed/RE2IGhh]
 
 ## Prerequisites
 You’ll need this software to run WIP in your enterprise:

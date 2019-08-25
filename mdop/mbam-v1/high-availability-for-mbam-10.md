@@ -1,12 +1,15 @@
 ---
 title: High Availability for MBAM 1.0
 description: High Availability for MBAM 1.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 5869ecf8-1056-4c32-aecb-838a37e05d39
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

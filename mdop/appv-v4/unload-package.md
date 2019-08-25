@@ -1,12 +1,15 @@
 ---
 title: UNLOAD PACKAGE
 description: UNLOAD PACKAGE
-author: jamiejdt
+author: manikadhiman
 ms.assetid: a076eb5a-ce3d-49e4-ac7a-4d4df10e3477
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

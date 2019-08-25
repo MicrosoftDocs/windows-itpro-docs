@@ -1,12 +1,15 @@
 ---
 title: How to Publish Application Shortcuts
 description: How to Publish Application Shortcuts
-author: jamiejdt
+author: eavena
 ms.assetid: fc5efe86-1bbe-438b-b7d8-4f9b815cc58e
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -1,12 +1,14 @@
 ---
 title: WindowsDefenderApplicationGuard CSP
 description: WindowsDefenderApplicationGuard CSP
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 09/10/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # WindowsDefenderApplicationGuard CSP
@@ -28,9 +30,9 @@ Interior node. Supported operation is Get.
 
 <a href="" id="allowwindowsdefenderapplicationguard"></a>**Settings/AllowWindowsDefenderApplicationGuard**  
 Turn on Windows Defender Application Guard in Enterprise Mode. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
- 
- - 0 - Stops Application Guard in Enterprise Mode. Trying to access non-enterprise domains on the host will not automatically get transferred into the insolated environment.
- - 1 - Enables Application Guard in Enterprise Mode. Trying to access non-enterprise websites on the host will automatically get transferred into the container. 
+
+- 0 - Stops Application Guard in Enterprise Mode. Trying to access non-enterprise domains on the host will not automatically get transferred into the insolated environment.
+- 1 - Enables Application Guard in Enterprise Mode. Trying to access non-enterprise websites on the host will automatically get transferred into the container. 
 
 <a href="" id="clipboardfiletype"></a>**Settings/ClipboardFileType**  
 Determines the type of content that can be copied from the host to Application Guard environment and vice versa. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
@@ -48,7 +50,7 @@ This policy setting allows you to decide how the clipboard behaves while in Appl
 - 2 - Turns On clipboard operation from the host to an isolated session
 - 3 - Turns On clipboard operation in both the directions
 
-> [!Important]  
+> [!IMPORTANT]
 > Allowing copied content to go from Microsoft Edge into Application Guard can cause potential security risks and isn't recommended. 
 
 <a href="" id="printingsettings"></a>**Settings/PrintingSettings**  
@@ -126,7 +128,7 @@ If you enable this policy, applications inside Windows Defender Application Guar
 
 If you disable or don't configure this policy, applications inside Windows Defender Application Guard will be unable to access the camera and microphone on the user’s device.
 
-> [!Important]  
+> [!IMPORTANT]
 > If you turn on this policy, a compromised container could bypass camera and microphone permissions and access the camera and microphone without the user's knowledge.  To prevent unauthorized access, we recommend that camera and microphone privacy settings be turned off on the user's device when they are not needed.
 
 <a href="" id="status"></a>**Status**  

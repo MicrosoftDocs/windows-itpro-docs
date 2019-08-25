@@ -1,12 +1,15 @@
 ---
 title: Planning for Client Security
 description: Planning for Client Security
-author: jamiejdt
+author: eavena
 ms.assetid: 4840a60f-4c91-489c-ad0b-6671882abf9b
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -31,13 +34,13 @@ By default, at installation the App-V client is configured with the minimum perm
 
 By default, the installation of the client registers file type associations (FTAs) for OSD files, which enables users to start applications directly from OSD files instead of the published shortcuts. If a user with local administrator rights receives an OSD file containing malicious code, either in e-mail or downloaded from a Web site, the user can open the OSD file and start the application even if the client has been set to restrict the **Add Application** permission. You can unregister the FTAs for the OSD to reduce this risk. Also, consider blocking this extension in the e-mail system and at the firewall. For more information about configuring Outlook to block extensions, see <https://go.microsoft.com/fwlink/?LinkId=133278>.
 
-**Security Note:  **
+**Security Note:**
 
 Starting with App-V version 4.6, the file type association is no longer created for OSD files during a new installation of the client, although the existing settings will be maintained during an upgrade from version 4.2 or 4.5 of the App-V client. If for any reason it is essential to create the file type association, you can create the following registry keys and set their values as shown:
 
-    Create HKEY\_CLASSES\_ROOT\\.osd with a default value of SoftGrid.osd.File
+    Create HKEY\_CLASSES\_ROOT\\.osd with a default value of SoftGrid.osd.File
 
-    Under HKEY\_LOCAL\_MACHINE\\software\\classes\\Softgrid.osd.file, create a string value named AppUserModelID with a data value of Microsoft.AppV.Client.Tray
+    Under HKEY\_LOCAL\_MACHINE\\software\\classes\\Softgrid.osd.file, create a string value named AppUserModelID with a data value of Microsoft.AppV.Client.Tray
 
 ### Authorization
 
@@ -47,7 +50,7 @@ During installation, you can use the **RequireAuthorizationIfCached** parameter 
 
 Antivirus software running on an App-V Client computer can detect and report an infected file in the virtual environment. However, it cannot disinfect the file. If a virus is detected in the virtual environment, the antivirus software would perform the configured quarantine or repair operation in the cache, not in the actual package. Configure the antivirus software with an exception for the sftfs.fsd file. This file is the cache file that stores packages on the App-V Client.
 
-**Security Note:  **
+**Security Note:**
 
 If a virus is detected in an application or package deployed in the production environment, replace the application or package with a virus-free version.
 
@@ -63,7 +66,7 @@ When the client communicates with the server to perform a publishing refresh, it
 **Note**  
 If you are using IIS to publish the ICO and OSD files, configure a MIME type for OSD=TXT; otherwise, IIS will refuse to serve the ICO and OSD files to clients.
 
- 
+ 
 
 ### Package Streaming
 
@@ -72,7 +75,7 @@ When a user launches an application for the first time, or if auto-loading param
 **Note**  
 If you are using IIS to publish packages (SFT files), configure a MIME type for SFT=Binary; otherwise, IIS will refuse to serve the SFT files to clients.
 
- 
+ 
 
 ### Roaming Profiles and Folder Redirection
 
@@ -96,9 +99,9 @@ If a user is home-based and the computer is not joined to the company domain, Ap
 
 [Planning for Security and Protection](planning-for-security-and-protection.md)
 
- 
+ 
 
- 
+ 
 
 
 

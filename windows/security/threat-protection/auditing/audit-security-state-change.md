@@ -2,12 +2,15 @@
 title: Audit Security State Change (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Security State Change, which determines whether Windows generates audit events for changes in the security state of a system.
 ms.assetid: decb3218-a67d-4efa-afc0-337c79a89a2d
+ms.reviewer: 
+manager: dansimp
+ms.author: dolmont
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
 ---
 
@@ -36,5 +39,6 @@ Audit Security State Change contains Windows startup, recovery, and shutdown eve
 
 -   [4621](event-4621.md)(S): Administrator recovered system from CrashOnAuditFail.
 
->**Note**&nbsp;&nbsp;Event **4609(S): Windows is shutting down** currently doesn’t generate. It is a defined event, but it is never invoked by the operating system.
+>[!NOTE]
+>Event **4609(S): Windows is shutting down** doesn't currently generate. It is a defined event, but it is never invoked by the operating system.
 

@@ -1,12 +1,15 @@
 ---
 title: Microsoft Application Virtualization Security Guide
 description: Microsoft Application Virtualization Security Guide
-author: jamiejdt
+author: eavena
 ms.assetid: 5e794316-cc4f-459e-90ef-79fc9841ba4e
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

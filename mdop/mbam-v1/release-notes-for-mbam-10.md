@@ -1,12 +1,15 @@
 ---
 title: Release Notes for MBAM 1.0
 description: Release Notes for MBAM 1.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: d82fddde-c360-48ef-86a0-d9b5fe066861
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -35,7 +38,7 @@ We are interested in your feedback on MBAM. You can send your feedback to <mdopd
 **Note**  
 This email address is not a support channel, but your feedback will help us to plan for future changes in our documentation and product releases.
 
- 
+ 
 
 For the latest information about MDOP and additional learning resources, see the [MDOP Information Experience](https://go.microsoft.com/fwlink/p/?LinkId=236032) page.
 
@@ -66,15 +69,15 @@ Adding <GUID>' to group 'MBAM Report Users'
 Locating group 'MBAM Recovery and Hardware DB Access'
 Adding 'S-1-5-20' to group 'MBAM Recovery and Hardware DB Access'
 Exception: A new member could not be added to a local group because the member has the wrong account type.
- 
-  StackTrace:    at System.DirectoryServices.AccountManagement.SAMStoreCtx.UpdateGroupMembership(Principal group, DirectoryEntry de, NetCred credentials, AuthenticationTypes authTypes)
-   at System.DirectoryServices.AccountManagement.SDSUtils.ApplyChangesToDirectory(Principal p, StoreCtx storeCtx, GroupMembershipUpdater updateGroupMembership, NetCred credentials, AuthenticationTypes authTypes)
-   at System.DirectoryServices.AccountManagement.SAMStoreCtx.Update(Principal p)
-   at Microsoft.Windows.Mdop.BitlockerManagement.Setup.Groups.CreateGroupsDeferred(Session session)
-  InnerException:Exception: A new member could not be added to a local group because the member has the wrong account type.
- 
-    InnerException:StackTrace:    at System.DirectoryServices.AccountManagement.UnsafeNativeMethods.IADsGroup.Add(String bstrNewItem)
-   at System.DirectoryServices.AccountManagement.SAMStoreCtx.UpdateGroupMembership(Principal group, DirectoryEntry de, NetCred credentials, AuthenticationTypes authTypes)
+ 
+  StackTrace:    at System.DirectoryServices.AccountManagement.SAMStoreCtx.UpdateGroupMembership(Principal group, DirectoryEntry de, NetCred credentials, AuthenticationTypes authTypes)
+   at System.DirectoryServices.AccountManagement.SDSUtils.ApplyChangesToDirectory(Principal p, StoreCtx storeCtx, GroupMembershipUpdater updateGroupMembership, NetCred credentials, AuthenticationTypes authTypes)
+   at System.DirectoryServices.AccountManagement.SAMStoreCtx.Update(Principal p)
+   at Microsoft.Windows.Mdop.BitlockerManagement.Setup.Groups.CreateGroupsDeferred(Session session)
+  InnerException:Exception: A new member could not be added to a local group because the member has the wrong account type.
+ 
+    InnerException:StackTrace:    at System.DirectoryServices.AccountManagement.UnsafeNativeMethods.IADsGroup.Add(String bstrNewItem)
+   at System.DirectoryServices.AccountManagement.SAMStoreCtx.UpdateGroupMembership(Principal group, DirectoryEntry de, NetCred credentials, AuthenticationTypes authTypes)
 CustomAction MbamCreateGroupsDeferred returned actual error code 1603 (note this may not be 100% accurate if translation happened inside sandbox)
 Action ended 11:41:29: InstallExecute. Return value 3.
 ```
@@ -147,9 +150,9 @@ Microsoft, Active Directory, ActiveX, Bing, Excel, Silverlight, SQL Server, Win
 
 [About MBAM 1.0](about-mbam-10.md)
 
- 
+ 
 
- 
+ 
 
 
 

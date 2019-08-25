@@ -2,11 +2,14 @@
 title: VAMT Requirements (Windows 10)
 description: VAMT Requirements
 ms.assetid: d14d152b-ab8a-43cb-a8fd-2279364007b9
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+audience: itproauthor: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

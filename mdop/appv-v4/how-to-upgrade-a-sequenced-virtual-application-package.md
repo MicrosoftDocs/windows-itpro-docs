@@ -1,12 +1,15 @@
 ---
 title: How to Upgrade a Sequenced Virtual Application Package
 description: How to Upgrade a Sequenced Virtual Application Package
-author: jamiejdt
+author: eavena
 ms.assetid: ffa989f3-6621-4c59-9599-e3c3b3332f67
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ You can upgrade an existing virtual application to a new version by using the Ap
 **Caution**  
 You should not reference a previous version of the Windows Installer (.msi) file when you upgrade an existing virtual application package because the previous version of the .sft file will be modified during the upgrade.
 
- 
+ 
 
 Use the following procedure to upgrade an existing virtual application.
 
@@ -34,7 +37,7 @@ Use the following procedure to upgrade an existing virtual application.
     **Important**  
     The directory that you specify must be located in the package root directory on the Q:\\ drive. You can create a new folder, or you can create a subfolder under the directory where the original virtual application is saved. The name assigned to the new folder must not be longer than 8 eight characters.
 
-     
+     
 
 4.  To open the Sequencing Wizard, select **Tools**/**Sequencing Wizard**. On the **Package Information** page, optionally specify the new **Package Name** and add optional comments that will be associated with the updated virtual application. Click **Next**.
 
@@ -55,9 +58,9 @@ Use the following procedure to upgrade an existing virtual application.
 
 [Tasks for the Application Virtualization Sequencer](tasks-for-the-application-virtualization-sequencer.md)
 
- 
+ 
 
- 
+ 
 
 
 

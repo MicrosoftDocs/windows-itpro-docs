@@ -2,12 +2,14 @@
 title: Network security Restrict NTLM NTLM authentication in this domain (Windows 10)
 description: Describes the best practices, location, values, management aspects, and security considerations for the Network Security Restrict NTLM NTLM authentication in this domain security policy setting.
 ms.assetid: 4c7884e9-cc11-4402-96b6-89c77dc908f8
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -72,7 +74,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 | Domain controller effective default settings | Not configured| 
 | Member server effective default settings | Not configured | 
 | Client computer effective default settings | Not configured| 
- 
+ 
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.

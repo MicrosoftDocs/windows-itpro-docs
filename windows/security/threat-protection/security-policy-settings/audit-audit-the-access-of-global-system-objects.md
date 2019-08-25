@@ -2,12 +2,14 @@
 title: Audit Audit the access of global system objects (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Audit Audit the access of global system objects security policy setting.
 ms.assetid: 20d40a79-ce89-45e6-9bb4-148f83958460
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -58,7 +60,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Disabled | 
 | Member Server Effective Default Settings | Disabled | 
 | Client Computer Effective Default Settings | Disabled | 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -88,7 +90,7 @@ If the [Audit Kernel Object](../auditing/audit-kernel-object.md) setting is conf
 | 4660 | An object was deleted. |  
 | 4661 | A handle to an object was requested. |  
 | 4663 | An attempt was made to access an object. |  
- 
+ 
 If the [Audit Kernel Object](../auditing/audit-kernel-object.md) setting is configured, the following events are generated:
 
 | Event ID | Event message |
@@ -100,7 +102,7 @@ If the [Audit Kernel Object](../auditing/audit-kernel-object.md) setting is conf
 | 565 | Access was granted to an already existing object type. | 
 | 567 | A permission associated with a handle was used.<br>**Note:**  A handle is created with certain granted permissions (Read, Write, and so on). When the handle is used, up to one audit is generated for each of the permissions that was used. |
 | 569 | The resource manager in Authorization Manager attempted to create a client context. | 
-| 570 | A client attempted to access an object.<br>**Note: **  An event will be generated for every attempted operation on the object. |
+| 570 | A client attempted to access an object.<br>**Note:**  An event will be generated for every attempted operation on the object. |
 
 ## Security considerations
 

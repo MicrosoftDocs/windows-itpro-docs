@@ -1,8 +1,11 @@
 ---
 title: Get Started with UE-V 2.x
 description: Get Started with UE-V 2.x
-author: jamiejdt
+author: levinec
 ms.assetid: 526ecbf0-0dee-4f0b-b017-8f8d25357b14
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,7 +22,7 @@ Follow the steps in this guide to quickly deploy Microsoft User Experience Virtu
 **Note**  
 The information in this section is repeated in greater detail throughout the rest of the documentation. So if you already know that UE-V 2 is the right solution and you don’t need to evaluate it, you can just go right to [Prepare a UE-V 2.x Deployment](prepare-a-ue-v-2x-deployment-new-uevv2.md).
 
- 
+ 
 
 The standard installation of UE-V synchronizes the default Microsoft Windows and Office settings and many Windows app settings. Make sure your test environment includes two or more user computers that share network access and you’ll be evaluating UE-V in just a short time.
 
@@ -111,7 +114,7 @@ Before you proceed, make sure your environment includes these requirements for r
 </tbody>
 </table>
 
-**Note:** Starting with Windows 10, version 1607, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack
+**Note:** Starting with Windows 10, version 1607, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack
 
 Also…
 
@@ -157,7 +160,7 @@ You’ll need to deploy a settings storage location, a standard network share wh
         </tbody>
         </table>
 
-         
+         
 
     2.  Set the following NTFS file system permissions for the settings storage location folder.
 
@@ -188,9 +191,9 @@ You’ll need to deploy a settings storage location, a standard network share wh
         </tbody>
         </table>
 
-         
+         
 
-**Security Note:  **
+**Security Note:**
 
 If you create the settings storage share on a computer running a Windows Server operating system, configure UE-V to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable this additional security, specify this setting in the Windows Server Registry Editor:
 
@@ -256,9 +259,9 @@ You can change the settings in Computer B back to the original Computer A settin
 
 
 
- 
+ 
 
- 
+ 
 
 
 

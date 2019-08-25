@@ -2,6 +2,8 @@
 title: Sign up for Microsoft Store for Business or Microsoft Store for Education (Windows 10)
 description: Before you sign up for Microsoft Store for Business or Microsoft Store for Education, at a minimum, you'll need an Azure Active Directory (AD) account for your organization, and you'll need to be the global administrator for your organization.
 ms.assetid: 296AAC02-5C79-4999-B221-4F5F8CEA1F12
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -72,7 +74,7 @@ Before signing up for Microsoft Store, make sure you're the global administrator
 
         Be sure to save the portal sign-in page and your user ID info. Click **You're ready to go**.
 
-        ![Image showing sign-in page and user ID for Microsoft Store for Business. ](images/wsfb-onboard-5.png)
+        ![Image showing sign-in page and user ID for Microsoft Store for Business.](images/wsfb-onboard-5.png)
 
     -   At this point, you'll have an Azure AD directory created with one user account. That user account is the global administrator. You can use that account to sign in to Store for Business.
 

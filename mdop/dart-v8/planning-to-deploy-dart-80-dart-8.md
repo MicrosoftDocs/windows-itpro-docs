@@ -1,12 +1,15 @@
 ---
 title: Planning to Deploy DaRT 8.0
 description: Planning to Deploy DaRT 8.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 36f2babb-9ac5-4ea2-932c-12c6211f5be2
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

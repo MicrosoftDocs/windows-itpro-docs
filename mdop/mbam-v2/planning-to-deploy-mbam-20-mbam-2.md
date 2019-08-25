@@ -1,12 +1,15 @@
 ---
 title: Planning to Deploy MBAM 2.0
 description: Planning to Deploy MBAM 2.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 2dc05fcd-aed9-4315-aeaf-92aaa9e0e955
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -31,7 +34,7 @@ The MBAM Server infrastructure depends on a set of server features that can be i
 **Note**  
 An MBAM installation on a single server is recommended only for lab environments.
 
- 
+ 
 
 The MBAM Client enables administrators to enforce and monitor BitLocker drive encryption on computers in the enterprise. The BitLocker client can be integrated into an organization by deploying the client through an enterprise software delivery system or by installing the client agent on client computers as part of the initial imaging process.
 
@@ -46,9 +49,9 @@ With MBAM, you can encrypt a computer in your organization either before the end
 
 [Planning for MBAM 2.0](planning-for-mbam-20-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

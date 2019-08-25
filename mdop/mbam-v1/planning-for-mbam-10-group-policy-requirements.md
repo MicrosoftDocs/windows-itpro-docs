@@ -1,12 +1,15 @@
 ---
 title: Planning for MBAM 1.0 Group Policy Requirements
 description: Planning for MBAM 1.0 Group Policy Requirements
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 0fc9c509-7850-4a8e-bb82-b949025bcb02
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -16,19 +19,19 @@ ms.date: 06/16/2016
 
 Microsoft BitLocker Administration and Monitoring (MBAM) Client management requires custom Group Policy settings to be applied. This topic describes the available policy options for Group Policy Object (GPO) when you use MBAM to manage BitLocker Drive Encryption in the enterprise.
 
-**Important**  
+**Important**  
 MBAM does not use the default GPO settings for Windows BitLocker drive encryption. If the default settings are enabled, they can cause conflicting behavior. To enable MBAM to manage BitLocker, you must define the GPO policy settings after you install the MBAM Group Policy Template.
 
- 
+
 
 After you install the MBAM Group Policy template, you can view and modify the available custom MBAM GPO policy settings that enable MBAM to manage the enterprise BitLocker encryption. The MBAM Group Policy template must be installed on a computer that is capable of running the Group Policy Management Console (GPMC) or the Advanced Group Policy Management (AGPM) MDOP technology. Next, to edit the applicable GPO, open the GPMC or AGPM, and then navigate to the following GPO node: **Computer Configuration**\\**Administrative Templates**\\**Windows Components**\\**MDOP MBAM (BitLocker Management)**.
 
 The MDOP MBAM (BitLocker Management) GPO node contains four global policy settings and four child GPO setting nodes, respectively. The four GPO global policy settings are: Client Management, Fixed Drive, Operating System Drive, and Removable Drive. The following sections provide policy definitions and suggested policy settings to help you plan for the MBAM GPO policy setting requirements.
 
-**Note**  
+**Note**  
 For more information about configuring the minimum suggested GPO settings to enable MBAM to manage BitLocker encryption, see [How to Edit MBAM 1.0 GPO Settings](how-to-edit-mbam-10-gpo-settings.md).
 
- 
+
 
 ## Global policy definitions
 
@@ -75,7 +78,7 @@ This section describes the MBAM Global policy definitions, which can be found at
 </tbody>
 </table>
 
- 
+
 
 ## Client Management policy definitions
 
@@ -113,11 +116,10 @@ This section describes the Client Management policy definitions for MBAM, found 
 <p>You should enable this policy option if your enterprise has older computer hardware or computers that do not support Trusted Platform Module (TPM). If either of these criteria is true, enable the hardware compatibility verification to make sure that MBAM is applied only to computer models that support BitLocker. If all computers in your organization support BitLocker, you do not have to deploy the Hardware Compatibility, and you can set this policy to <strong>Not Configured</strong>.</p>
 <p>If you enable this policy setting, the model of the computer is validated against the hardware compatibility list once every 24 hours, before the policy enables BitLocker protection on a computer drive.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Before enabling this policy setting, make sure that you have configured the <strong>MBAM Recovery and Hardware service endpoint</strong> setting in the <strong>Configure MBAM Services</strong> policy options.</p>
+<strong>Note</strong><br/><p>Before enabling this policy setting, make sure that you have configured the <strong>MBAM Recovery and Hardware service endpoint</strong> setting in the <strong>Configure MBAM Services</strong> policy options.</p>
 </div>
 <div>
- 
+
 </div>
 <p>If you either disable or do not configure this policy setting, the computer model is not validated against the hardware compatibility list.</p></td>
 </tr>
@@ -125,22 +127,21 @@ This section describes the Client Management policy definitions for MBAM, found 
 <td align="left"><p>Configure user exemption policy</p></td>
 <td align="left"><p>Suggested Configuration: <strong>Not Configured</strong></p>
 <p>This policy setting lets you configure a web site address, email address, or phone number that will instruct a user to request an exemption from BitLocker encryption.</p>
-<p>If you enable this policy setting and provide a web site address, email address, or phone number, users will see a dialog with instructions on how to apply for an exemption from BitLocker protection. For more information about how to enable BitLocker encryption exemptions for users, see [How to Manage User BitLocker Encryption Exemptions](how-to-manage-user-bitlocker-encryption-exemptions-mbam-1.md).</p>
+<p>If you enable this policy setting and provide a web site address, email address, or phone number, users will see a dialog with instructions on how to apply for an exemption from BitLocker protection. For more information about how to enable BitLocker encryption exemptions for users, see <a href="how-to-manage-user-bitlocker-encryption-exemptions-mbam-1.md" data-raw-source="[How to Manage User BitLocker Encryption Exemptions](how-to-manage-user-bitlocker-encryption-exemptions-mbam-1.md)">How to Manage User BitLocker Encryption Exemptions</a>.</p>
 <p>If you either disable or do not configure this policy setting, the instructions about how to apply for an exemption request will not be presented to users.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>User exemption is managed per user, not per computer. If multiple users log on to the same computer and one user is not exempt, the computer will be encrypted.</p>
+<strong>Note</strong><br/><p>User exemption is managed per user, not per computer. If multiple users log on to the same computer and one user is not exempt, the computer will be encrypted.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
 
-##  Fixed Drive policy definitions
+
+## Fixed Drive policy definitions
 
 
 This section describes the Fixed Drive policy definitions for MBAM, which can be found at the following GPO node: **Computer Configuration**\\**Administrative Templates**\\**Windows Components**\\**MDOP MBAM (BitLocker Management)** \\ **Fixed Drive**.
@@ -197,7 +198,7 @@ This section describes the Fixed Drive policy definitions for MBAM, which can be
 </tbody>
 </table>
 
- 
+
 
 ## Operating System Drive policy definitions
 
@@ -253,7 +254,7 @@ This section describes the Operating System Drive policy definitions for MBAM, f
 </tbody>
 </table>
 
- 
+
 
 ## Removable Drive policy definitions
 
@@ -310,16 +311,16 @@ This section describes the Removable Drive Policy definitions for MBAM, found at
 </tbody>
 </table>
 
- 
+
 
 ## Related topics
 
 
 [Preparing your Environment for MBAM 1.0](preparing-your-environment-for-mbam-10.md)
 
- 
 
- 
+
+
 
 
 

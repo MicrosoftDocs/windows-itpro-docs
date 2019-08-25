@@ -3,9 +3,12 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Overview about Group Policy, the Group Policy Management Console (GPMC), and Internet Explorer 11
-author: shortpatti
+author: lomayor
 ms.prod: ie11
 ms.assetid: ae3d227d-3da7-46b8-8a61-c71bfeae0c63
+ms.reviewer: 
+audience: itpromanager: dansimp
+ms.author: lomayor
 title: Group Policy, the Group Policy Management Console (GPMC), and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

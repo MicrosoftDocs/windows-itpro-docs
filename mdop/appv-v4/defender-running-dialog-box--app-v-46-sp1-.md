@@ -1,12 +1,15 @@
 ---
 title: Defender Running Dialog Box (App-V 4.6 SP1)
 description: Defender Running Dialog Box (App-V 4.6 SP1)
-author: jamiejdt
+author: dansimp
 ms.assetid: 716ec7f9-ddad-45dd-a3c7-4a9d81cfcfd0
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

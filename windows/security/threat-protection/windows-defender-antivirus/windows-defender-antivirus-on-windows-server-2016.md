@@ -9,16 +9,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: dansimp
+ms.author: dansimp
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Windows Defender Antivirus on Windows Server 2016
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Windows Defender Antivirus is available on Windows Server 2016. In some instances it is referred to as Endpoint Protection - however, the protection engine is the same.
 
@@ -74,7 +76,7 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 You can also uninstall Windows Defender AV completely with the **Remove Roles and Features Wizard** by deselecting the **Windows Defender Features** option at the **Features** step in the wizard.
 
-This is useful if you have a third-party antivirus product installed on the machine already. Multiple AV products can cause problems when installed and actively running on the same machine. See the question "Should I run Microsoft security software at the same time as other security products?" on the [Windows Defender Security Intelligence Antivirus and antimalware software FAQ](https://www.microsoft.com/en-us/wdsi/help/antimalware-faq#multiple-products).
+This is useful if you have a third-party antivirus product installed on the machine already. Multiple AV products can cause problems when installed and actively running on the same machine. See the question "Should I run Microsoft security software at the same time as other security products?" on the [Windows Defender Security Intelligence Antivirus and antimalware software FAQ](https://www.microsoft.com/wdsi/help/antimalware-faq#multiple-products).
 
 >[!NOTE]
 >Deselecting **Windows Defender** on its own under the **Windows Defender Features** section will automatically prompt you to remove the interface option **GUI for Windows Defender**. 

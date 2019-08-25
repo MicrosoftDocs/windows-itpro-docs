@@ -4,9 +4,11 @@ description: This topic lists new and updated topics in the Update Windows 10 do
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: DaniHalfin
-ms.author: daniha
+audience: itproauthor: greg-lindsay
+ms.author: greglin
 ms.date: 09/18/2018
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 

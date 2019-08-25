@@ -2,12 +2,14 @@
 title: Understanding AppLocker rule behavior (Windows 10)
 description: This topic describes how AppLocker rules are enforced by using the allow and deny options in AppLocker.
 ms.assetid: 3e2738a3-8041-4095-8a84-45c1894c97d0
+ms.reviewer: 
+ms.author: macapara
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: mjcaparas
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,8 +20,8 @@ ms.date: 09/21/2017
 # Understanding AppLocker rule behavior
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic describes how AppLocker rules are enforced by using the allow and deny options in AppLocker.
 

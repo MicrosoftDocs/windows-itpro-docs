@@ -1,12 +1,15 @@
 ---
 title: Select Guidance Page (Package Accelerators)
 description: Select Guidance Page (Package Accelerators)
-author: jamiejdt
+author: eavena
 ms.assetid: 608b8823-6eac-40c0-a6dc-2f0bfc0d42a1
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

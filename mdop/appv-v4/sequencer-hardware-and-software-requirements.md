@@ -1,12 +1,15 @@
 ---
 title: Sequencer Hardware and Software Requirements
 description: Sequencer Hardware and Software Requirements
-author: jamiejdt
+author: eavena
 ms.assetid: 36084e12-831d-452f-a4a4-45f07f9ce471
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -35,7 +38,7 @@ The following list outlines the recommended hardware requirements for running th
     **Note**  
     Sequencing requires heavy disk usage. A fast disk speed can decrease the sequencing time.
 
-     
+     
 
 ### Software Requirements
 
@@ -78,14 +81,14 @@ The following list outlines the supported operating systems for running the Sequ
 </tbody>
 </table>
 
- 
+ 
 
 ¹Supported for App-V 4.5 with SP1 or SP2, and App-V 4.6 only
 
 **Note**  
 The Application Virtualization (App-V) 4.6 Sequencer supports 32-bit and 64-bit versions of these operating systems.
 
- 
+ 
 
 You should configure computers running the Sequencer with the same applications that are installed on target computers.
 
@@ -128,21 +131,21 @@ You should configure computers running the Sequencer with the same applications 
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 Application Virtualization (App-V) 4.6 for Remote Desktop Services supports 32-bit and 64-bit versions of these operating systems.
 
- 
+ 
 
 ## Related topics
 
 
 [Application Virtualization Sequencer Overview](application-virtualization-sequencer-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,12 +1,15 @@
 ---
 title: Troubleshoot Windows 10 upgrade errors - Windows IT Pro
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -89,6 +92,6 @@ WIM = Windows image (Microsoft)
 
 [Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
-<br>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
+<br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
 <br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)

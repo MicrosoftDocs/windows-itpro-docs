@@ -26,13 +26,13 @@ ms.prod: w10
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-us/education/itdm/default.aspx" target="_blank">
+                                <a href="https://www.microsoft.com/education/itdm/default.aspx" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/media/hubs/microsoft365/M365-education.svg" alt="" />
+                                                        <img src="images/MSC17_cloud_012_merged.png" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -51,71 +51,12 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-pro-get-started.svg" alt="" />
+                                                        <img src="images/MSC17_cloud_005.png" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Deployment Overview</h3>
-                                                    <p>Learn how to deploy our suite of education offerings. Set up a cloud infrastructure for your school, acquire apps, and configure and manage Windows 10 devices.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                            </li>
-                            <li>
-                                <a href="/microsoft-365/education/index?branch=m365-integration#pivot=itpro&amp;panel=itpro-scd" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-pro-office365.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>1. Cloud deployment</h3>
-                                                    <p>Get started by creating your Office 365 tenant, setting up a cloud infrastructure for your school, and creating, managing, and syncing user accounts.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/microsoft-365/education/index?branch=m365-integration#pivot=itpro&amp;panel=itpro-sdm" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-pro-usb.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>2. Device Management</h3>
-                                                    <p>Improve student learning outcomes through connected classrooms and engaging new technologies with streamlined device management.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/microsoft-365/education/index?branch=m365-integration#pivot=itpro&amp;panel=itpro-atft" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-ms-teams.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>3. Tools for Teachers</h3>
-                                                    <p>The latest classroom resources at teachers’ fingertips when you deploy Learning Tools, OneNote Class Notebooks, Teams, and more.</p>
+                                                    <h3>Deployment Guidance</h3>
+                                                    <p>Learn the easiest path to deploy Microsoft 365 Education through our step-by-step process. We walk you through cloud deployment, device management,apps set up and configuration, and how to find deployment assistance.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -144,7 +85,7 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-uwp-apps.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-developers-uwp-apps.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -163,7 +104,7 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-api-test.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-developers-api-test.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -182,12 +123,31 @@ ms.prod: w10
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-office-education.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/education/education-developers-office-education.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Office Education Dev Center</h3>
                                                     <p>Integrate with Office 365 across devices and services to extend Microsoft enterprise-scale compliance and security to students, teachers, and staff in your education app.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/microsoft-365/education/data-streamer">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="images/data-streamer.png" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Data Streamer</h3>
+                                                    <p>Bring new STEM experiences into the classroom with real-time data in Excel using Data Streamer. Data Streamer can send data to Excel from a sensor or application.</p>
                                                 </div>
                                             </div>
                                         </div>

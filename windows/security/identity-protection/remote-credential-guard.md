@@ -6,15 +6,16 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dolmont
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 01/12/2018
+ms.reviewer: 
 ---
-#  Protect Remote Desktop credentials with Windows Defender Remote Credential Guard
+# Protect Remote Desktop credentials with Windows Defender Remote Credential Guard
 
 **Applies to**
 -   Windows 10
@@ -51,16 +52,18 @@ Use the following table to compare different Remote Desktop connection security 
 <br />
 <br />
 
-|**Feature** | **Remote Desktop** | **Windows Defender Remote Credential Guard** | **Restricted Admin mode** |
-|---|---|---|---|
-| **Protection benefits**  | Credentials on the server are not protected from Pass-the-Hash attacks.  |User credentials remain on the client. An attacker can act on behalf of the user *only* when the session is ongoing | User logs on to the server as local administrator, so an attacker cannot act on behalf of the “domain user”. Any attack is local to the server|
-| **Version support** | The remote computer can run any Windows operating system|Both the client and the remote computer must be running **at least Windows 10, version 1607, or Windows Server 2016**.|The remote computer must be running **at least patched Windows 7 or patched Windows Server 2008 R2**. <br /><br />For more information about patches (software updates) related to Restricted Admin mode, see [Microsoft Security Advisory 2871997](https://technet.microsoft.com/library/security/2871997.aspx).
-|**Helps prevent**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; N/A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<ul><li> Pass-the-Hash</li> <li>Use of a credential after disconnection </li></ul>|<ul><li> Pass-the-Hash</li> <li>Use of domain identity during connection </li></ul>|
-|**Credentials supported from the remote desktop client device**|<ul><li>**Signed on** credentials <li> **Supplied** credentials<li> **Saved** credentials </ul>|<ul><li> **Signed on** credentials only | <ul><li>**Signed on** credentials<li>**Supplied** credentials<li>**Saved** credentials</ul>
-|**Access**|**Users allowed**, that is, members of Remote Desktop Users group of remote host.|**Users allowed**, that is, members of Remote Desktop Users of remote host.|**Administrators only**, that is, only members of Administrators group of remote host.
-|**Network identity**|Remote Desktop session **connects to other resources as signed-in user**. | Remote Desktop session **connects to other resources as signed-in user**. |Remote Desktop session **connects to other resources as remote host’s identity**.|
-|**Multi-hop**|From the remote desktop, **you can connect through Remote Desktop to another computer** | From the remote desktop, you **can connect through Remote Desktop to another computer**.|Not allowed for user as the session is running as a local host account|
-|**Supported authentication** |Any negotiable protocol.| Kerberos only.|Any negotiable protocol|
+
+|                                                       **Feature**                                                        |                                                           **Remote Desktop**                                                           |                                      **Windows Defender Remote Credential Guard**                                      |                                                                                                                                             **Restricted Admin mode**                                                                                                                                             |
+|--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                 **Protection benefits**                                                  |                                Credentials on the server are not protected from Pass-the-Hash attacks.                                 |  User credentials remain on the client. An attacker can act on behalf of the user *only* when the session is ongoing   |                                                                                  User logs on to the server as local administrator, so an attacker cannot act on behalf of the “domain user”. Any attack is local to the server                                                                                   |
+|                                                   **Version support**                                                    |                                        The remote computer can run any Windows operating system                                        | Both the client and the remote computer must be running **at least Windows 10, version 1607, or Windows Server 2016**. | The remote computer must be running **at least patched Windows 7 or patched Windows Server 2008 R2**. <br /><br />For more information about patches (software updates) related to Restricted Admin mode, see [Microsoft Security Advisory 2871997](https://technet.microsoft.com/library/security/2871997.aspx). |
+| **Helps prevent**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; |                             &nbsp;&nbsp;&nbsp;&nbsp; N/A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                              |                   <ul><li> Pass-the-Hash</li> <li>Use of a credential after disconnection </li></ul>                   |                                                                                                                <ul><li> Pass-the-Hash</li> <li>Use of domain identity during connection </li></ul>                                                                                                                |
+|                             **Credentials supported from the remote desktop client device**                              | <ul><li><strong>Signed on</strong> credentials <li> <strong>Supplied</strong> credentials<li> <strong>Saved</strong> credentials </ul> |                                  <ul><li> <strong>Signed on</strong> credentials only                                  |                                                                                        <ul><li><strong>Signed on</strong> credentials<li><strong>Supplied</strong> credentials<li><strong>Saved</strong> credentials</ul>                                                                                         |
+|                                                        **Access**                                                        |                           **Users allowed**, that is, members of Remote Desktop Users group of remote host.                            |                      **Users allowed**, that is, members of Remote Desktop Users of remote host.                       |                                                                                                              **Administrators only**, that is, only members of Administrators group of remote host.                                                                                                               |
+|                                                   **Network identity**                                                   |                               Remote Desktop session **connects to other resources as signed-in user**.                                |                       Remote Desktop session **connects to other resources as signed-in user**.                        |                                                                                                                 Remote Desktop session **connects to other resources as remote host’s identity**.                                                                                                                 |
+|                                                      **Multi-hop**                                                       |                        From the remote desktop, **you can connect through Remote Desktop to another computer**                         |                From the remote desktop, you **can connect through Remote Desktop to another computer**.                |                                                                                                                      Not allowed for user as the session is running as a local host account                                                                                                                       |
+|                                               **Supported authentication**                                               |                                                        Any negotiable protocol.                                                        |                                                     Kerberos only.                                                     |                                                                                                                                              Any negotiable protocol                                                                                                                                              |
+
 <br />
 
 For further technical information, see [Remote Desktop Protocol](https://msdn.microsoft.com/library/aa383015(v=vs.85).aspx)
@@ -76,7 +79,7 @@ For helpdesk support scenarios in which personnel require administrative access 
 
 Therefore, we recommend instead that you use the Restricted Admin mode option. For helpdesk support scenarios, RDP connections should only be initiated using the /RestrictedAdmin switch. This helps ensure that credentials and other user resources are not exposed to compromised remote hosts. For more information, see [Mitigating Pass-the-Hash and Other Credential Theft v2](https://download.microsoft.com/download/7/7/A/77ABC5BD-8320-41AF-863C-6ECFB10CB4B9/Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf).
 
-To further harden security, we also recommend that you implement Local Administrator Password Solution (LAPS), a Group Policy client-side extension (CSE) introduced in Windows 8.1 that automates local administrator password management. LAPS mitigates the risk of lateral escalation and other cyberattacks  facilitated when customers use the same administrative local account and password combination on all their computers. You can download and install LAPS [here](https://www.microsoft.com/en-us/download/details.aspx?id=46899).
+To further harden security, we also recommend that you implement Local Administrator Password Solution (LAPS), a Group Policy client-side extension (CSE) introduced in Windows 8.1 that automates local administrator password management. LAPS mitigates the risk of lateral escalation and other cyberattacks  facilitated when customers use the same administrative local account and password combination on all their computers. You can download and install LAPS [here](https://www.microsoft.com/download/details.aspx?id=46899).
 
 For further information on LAPS, see [Microsoft Security Advisory 3062591](https://technet.microsoft.com/library/security/3062591.aspx).
 
@@ -89,7 +92,7 @@ To use Windows Defender Remote Credential Guard, the Remote Desktop client and r
 
 The Remote Desktop client device:
 
--  Must be running at least Windows 10, version 1703 to be able to supply credentials.
+-  Must be running at least Windows 10, version 1703 to be able to supply credentials, which is sent to the remote device. This allows users to run as different users without having to send credentials to the remote machine. 
 -  Must be running at least Windows 10, version 1607 or Windows Server 2016 to use the user’s signed-in credentials. This requires the user’s account be able to sign in to both the client device and the remote host.
 -  Must be running the Remote Desktop Classic Windows application. The Remote Desktop Universal Windows Platform application doesn't support Windows Defender Remote Credential Guard.
 -  Must use Kerberos authentication to connect to the remote host. If the client cannot connect to a domain controller, then RDP attempts to fall back to NTLM. Windows Defender Remote Credential Guard does not allow NTLM fallback because this would expose credentials to risk.

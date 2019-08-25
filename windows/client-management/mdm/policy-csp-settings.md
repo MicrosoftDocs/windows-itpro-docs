@@ -1,12 +1,14 @@
 ---
 title: Policy CSP - Settings
 description: Policy CSP - Settings
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 08/09/2018
+author: manikadhiman
+ms.date: 05/01/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - Settings
@@ -804,11 +806,11 @@ If the policy is not specified, the behavior will be that no pages are affected.
 
 The format of the PageVisibilityList value is as follows:
 
--   The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity.
--   There are two variants: one that shows only the given pages and one which hides the given pages.
--   The first variant starts with the string "showonly:" and the second with the string "hide:".
--	Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace.
--   Each page identifier is the ms-settings:xyz URI for the page, minus the ms-settings: prefix, so the identifier for the page with URI "ms-settings:network-wifi" would be just "network-wifi".
+- The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity.
+- There are two variants: one that shows only the given pages and one which hides the given pages.
+- The first variant starts with the string "showonly:" and the second with the string "hide:".
+- Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace.
+- Each page identifier is the ms-settings:xyz URI for the page, minus the ms-settings: prefix, so the identifier for the page with URI "ms-settings:network-wifi" would be just "network-wifi".
 
 The default value for this setting is an empty string, which is interpreted as show everything.
 
@@ -839,16 +841,37 @@ To validate on Desktop, do the following:
 
 <!--/Validation-->
 <!--/Policy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/Policies-->
 
+<!--StartHoloLens2-->
+## <a href="" id="hololens2policies"></a>Settings policies supported by HoloLens 2
 
+- [Settings/AllowDateTime](#settings-allowdatetime)
+- [Settings/AllowVPN](#settings-allowvpn)
+<!--EndHoloLens2-->
 
+<!--StartHoloLensBusiness-->
+## <a href="" id="hololensbusinessspolicies"></a>Settings policies supported by HoloLens (1st gen) Commercial Suite
+
+- [Settings/AllowDateTime](#settings-allowdatetime)
+- [Settings/AllowVPN](#settings-allowvpn)
+<!--EndHoloLensBusiness-->
+
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Settings policies supported by HoloLens (1st gen) Development Edition
+
+- [Settings/AllowDateTime](#settings-allowdatetime)
+- [Settings/AllowVPN](#settings-allowvpn)
+<!--EndHoloLens-->
+
+<hr/>
+
+Footnotes:
+
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.

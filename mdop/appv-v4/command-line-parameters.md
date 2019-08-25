@@ -1,12 +1,15 @@
 ---
 title: Command-Line Parameters
 description: Command-Line Parameters
-author: jamiejdt
+author: dansimp
 ms.assetid: d90a0591-f1ce-4cb8-b244-85cc70461922
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -31,7 +34,7 @@ Use to specify the path and file name of the SPRJ file that will be generated.
 **Important**  
 The */OUTPUTFILE* parameter is not available when opening a package that you do not intend to upgrade.
 
- 
+ 
 
 <a href="" id="-fullload-or--f"></a>*/FULLLOAD* or */F*  
 Use to specify whether to put everything in the primary feature block.
@@ -84,9 +87,9 @@ Specifies the directory on the sequencing computer where the files associated wi
 
 [How to Upgrade a Package Using the Open Package Command](how-to-upgrade-a-package-using-the-open-package-command.md)
 
- 
+ 
 
- 
+ 
 
 
 

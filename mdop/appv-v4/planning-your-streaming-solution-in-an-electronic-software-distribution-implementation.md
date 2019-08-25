@@ -1,12 +1,15 @@
 ---
 title: Planning Your Streaming Solution in an Electronic Software Distribution Implementation
 description: Planning Your Streaming Solution in an Electronic Software Distribution Implementation
-author: jamiejdt
+author: eavena
 ms.assetid: bc18772a-f169-486f-adb1-7af1a31845aa
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -21,7 +24,7 @@ The Application Virtualization Streaming Server provides support for the active 
 **Note**  
 Access to the applications is controlled by means of Security Groups in Active Directory Domain Services, so you will need to plan a process for setting up a security group for each virtual application and for managing which users are added to each group. The Application Virtualization system administrator configures each streaming server to use these Active Directory groups by applying ACLs to the application directories under the CONTENT share, which controls access to the packages based on Active Directory group membership.
 
- 
+ 
 
 The characteristics of the available streaming options are summarized in the following table.
 
@@ -52,7 +55,7 @@ The characteristics of the available streaming options are summarized in the fol
 <td align="left"><ul>
 <li><p>No active upgrade</p></li>
 </ul></td>
-<td align="left"><p>[How to Configure the File Server](how-to-configure-the-file-server.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-file-server.md" data-raw-source="[How to Configure the File Server](how-to-configure-the-file-server.md)">How to Configure the File Server</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>IIS server</p></td>
@@ -68,7 +71,7 @@ The characteristics of the available streaming options are summarized in the fol
 <li><p>Need to manage IIS</p></li>
 <li><p>No active upgrade</p></li>
 </ul></td>
-<td align="left"><p>[How to Configure the Server for IIS](how-to-configure-the-server-for-iis.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-server-for-iis.md" data-raw-source="[How to Configure the Server for IIS](how-to-configure-the-server-for-iis.md)">How to Configure the Server for IIS</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Application Virtualization Streaming Server</p></td>
@@ -82,12 +85,12 @@ The characteristics of the available streaming options are summarized in the fol
 <li><p>Dual infrastructure</p></li>
 <li><p>Server administration requirement</p></li>
 </ul></td>
-<td align="left"><p>[How to Configure the Application Virtualization Management Servers](how-to-configure-the-application-virtualization-management-servers.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-application-virtualization-management-servers.md" data-raw-source="[How to Configure the Application Virtualization Management Servers](how-to-configure-the-application-virtualization-management-servers.md)">How to Configure the Application Virtualization Management Servers</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -98,9 +101,9 @@ The characteristics of the available streaming options are summarized in the fol
 
 [Publishing Virtual Applications Using Electronic Software Distribution](publishing-virtual-applications-using-electronic-software-distribution.md)
 
- 
+ 
 
- 
+ 
 
 
 

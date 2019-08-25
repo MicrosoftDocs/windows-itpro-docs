@@ -5,8 +5,11 @@ keywords: ["What's new in Windows 10", "Windows 10", "Fall Creators Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: dansimp
 ms.date: 01/24/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.localizationpriority: high
 ms.topic: article
 ---
@@ -22,7 +25,7 @@ A brief description of new or updated features in this version of Windows 10 is 
 
 &nbsp;
 
-> [!video https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false]
+> [!video https://www.microsoft.com/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false]
 
 
 ## Deployment

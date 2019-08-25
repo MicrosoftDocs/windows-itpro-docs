@@ -1,5 +1,6 @@
 ---
 title: Software developer resources
+ms.reviewer: 
 description: This page provides information for developers such as detection criteria, developer questions, and how to check your software against Security intelligence.
 keywords: wdsi, software, developer, resources, detection, criteria, questions, scan, software, definitions, cloud, protection, security intelligence
 search.product: eADQiWindows 10XVcnh
@@ -8,8 +9,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: ellevin
+author: levinec
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance  
@@ -23,9 +24,9 @@ If you believe that your application or program has been incorrectly detected by
 
 Check out the following resources for information on how to submit and view submissions:
 
-- [Submit files](https://www.microsoft.com/en-us/wdsi/filesubmission)
+- [Submit files](https://www.microsoft.com/wdsi/filesubmission)
 
-- [View your submissions](https://www.microsoft.com/en-us/wdsi/submissionhistory)
+- [View your submissions](https://www.microsoft.com/wdsi/submissionhistory)
 
 ## Additional resources
 

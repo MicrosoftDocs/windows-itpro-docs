@@ -4,10 +4,12 @@ description: Additional resources for Windows Update
 ms.prod: w10
 ms.mktglfcycl: 
 ms.sitesec: library
-author: kaushika-msft
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
-ms.author: elizapo
+ms.audience: itproauthor: greg-lindsay
 ms.date: 09/18/2018
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 
@@ -106,7 +108,7 @@ The following resources provide additional information about using Windows Updat
    - regsvr32.exe wuwebv.dll 
 7. Reset Winsock. To do this, type the following command at a command prompt, and then press ENTER:  
    ```
-   netsh reset winsock 
+   netsh winsock reset 
    ```
 8. If you are running Windows XP or Windows Server 2003, you have to set the proxy settings. To do this, type the following command at a command prompt, and then press ENTER:  
    ```
@@ -119,6 +121,6 @@ The following resources provide additional information about using Windows Updat
    net start wuauserv 
    ```
 10. If you are running Windows Vista or Windows Server 2008, clear the BITS queue. To do this, type the following command at a command prompt, and then press ENTER:
-   ```
-   bitsadmin.exe /reset /allusers
-   ```
+    ```
+    bitsadmin.exe /reset /allusers
+    ```

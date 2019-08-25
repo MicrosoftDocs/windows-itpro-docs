@@ -1,12 +1,15 @@
 ---
 title: Example MED-V Checklists
 description: Example MED-V Checklists
-author: jamiejdt
+author: levinec
 ms.assetid: cf9c33e8-1b7a-4306-92f6-edbb70ab23b5
+ms.reviewer: 
+manager: dansimp
+ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

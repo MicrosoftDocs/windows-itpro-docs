@@ -1,12 +1,15 @@
 ---
 title: What's New in UE-V for Windows 10, version 1607
 description: What's New in UE-V for Windows 10, version 1607
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 
@@ -19,7 +22,7 @@ User Experience Virtualization (UE-V) for Windows 10, version 1607, includes the
 
 ## UE-V is now a feature in Windows 10
 
-With Windows 10, version 1607 and later releases, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack. 
+With Windows 10, version 1607 and later releases, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack. 
 
 The changes in UE-V for Windows 10, version 1607 impact already existing implementations of UE-V in the following ways:
 

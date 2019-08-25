@@ -2,6 +2,8 @@
 title: Configure an MDM provider (Windows 10)
 description: For companies or organizations using mobile device management (MDM) tools, those tools can synchronize with Microsoft Store for Business inventory to manage apps with offline licenses.
 ms.assetid: B3A45C8C-A96C-4254-9659-A9B364784673
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

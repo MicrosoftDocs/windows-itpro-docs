@@ -1,11 +1,14 @@
 ---
 title: What's new in Windows 10, version 1809
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 description: New and updated features in Windows 10, version 1809
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 October 2018 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+author: dansimp
 ms.localizationpriority: high
 ms.topic: article
 ---
@@ -64,7 +67,7 @@ This is an update to the [BitLocker CSP](https://docs.microsoft.com/windows/clie
 
 This feature will soon be enabled on Olympia Corp as an optional feature.
 
-####  Delivering BitLocker policy to AutoPilot devices during OOBE 
+#### Delivering BitLocker policy to AutoPilot devices during OOBE 
 
 You can choose which encryption algorithm to apply to BitLocker encryption capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before BitLocker encryption begins. 
 
@@ -77,6 +80,8 @@ To achieve this:
     - **IMPORTANT**: The encryption policy must be assigned to **devices** in the group, not users.
 3. Enable the Autopilot [Enrollment Status Page](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
     - **IMPORTANT**: If the ESP is not enabled, the policy will not apply before encryption starts.
+
+For more information, see [Setting the BitLocker encryption algorithm for Autopilot devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/bitlocker).
 
 ### Windows Defender Application Guard Improvements
 
@@ -173,7 +178,7 @@ Microsoft Edge kiosk mode running in single-app assigned access has two kiosk ty
 Microsoft Edge kiosk mode running in multi-app assigned access has two kiosk types. 
 
 >[!NOTE]
->The following Microsoft Edge kiosk mode types cannot be setup using the new simplified assigned access configuration wizard in Windows 10 Settings.
+>The following Microsoft Edge kiosk mode types cannot be set up using the new simplified assigned access configuration wizard in Windows 10 Settings.
 
 **Public browsing** supports multi-tab browsing and runs InPrivate mode with minimal features available. In this configuration, Microsoft Edge can be one of many apps available. Users can close and open multiple InPrivate mode windows.
 

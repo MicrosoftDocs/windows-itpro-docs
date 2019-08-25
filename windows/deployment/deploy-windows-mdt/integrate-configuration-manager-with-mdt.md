@@ -2,14 +2,17 @@
 title: Integrate Configuration Manager with MDT (Windows 10)
 description: This topic will help you understand the benefits of integrating the Microsoft Deployment Toolkit with Microsoft System Center 2012 R2 Configuration Manager SP1 when you deploy a new or updated version of the Windows operating system.
 ms.assetid: 3bd1cf92-81e5-48dc-b874-0f5d9472e5a5
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.pagetype: mdt
 keywords: deploy, image, customize, task sequence
 ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
-ms.date: 07/27/2017
 ms.topic: article
 ---
 
@@ -24,6 +27,9 @@ MDT is a free, supported download from Microsoft that adds approximately 280 enh
 ## <a href="" id="sec01"></a>Why integrate MDT with Configuration Manager
 
 As noted above, MDT adds many enhancements to Configuration Manager. While these enhancements are called Zero Touch, that name does not reflect how deployment is conducted. The following sections provide a few samples of the 280 enhancements that MDT adds to Configuration Manager.
+
+> [!Note] 
+> Microsoft Deployment Toolkit requires you to install [Windows PowerShell 2.0 Engine](https://docs.microsoft.com/powershell/scripting/install/installing-the-windows-powershell-2.0-engine) on your server.
 
 ### MDT enables dynamic deployment
 

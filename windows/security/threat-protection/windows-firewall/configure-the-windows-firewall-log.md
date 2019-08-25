@@ -2,12 +2,14 @@
 title: Configure the Windows Defender Firewall Log (Windows 10)
 description: Configure the Windows Defender Firewall Log
 ms.assetid: f037113d-506b-44d3-b9c0-0b79d03e7d18
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -26,10 +28,6 @@ To configure Windows Defender Firewall with Advanced Security to log dropped pac
 **Administrative credentials**
 
 To complete these procedures, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the GPOs.
-
-In this topic:
-
-- [To configure the Windows Defender Firewall with Advanced Security log](#to-configure-the-windows-firewall-log)
 
 ## To configure the Windows Defender Firewall with Advanced Security log
 

@@ -8,7 +8,10 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
 ms.date: 12/05/2018
-author: jaimeo
+ms.reviewer: 
+manager: laurawi
+ms.audience: itproauthor: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 
@@ -48,7 +51,7 @@ The [MSIX Packaging Tool](https://docs.microsoft.com/windows/application-managem
 
 ## Related links
 
-- [Consumer applications for S mode](https://www.microsoft.com/en-us/windows/s-mode)
-- [S mode devices](https://www.microsoft.com/en-us/windows/view-all-devices)
+- [Consumer applications for S mode](https://www.microsoft.com/windows/s-mode)
+- [S mode devices](https://www.microsoft.com/windows/view-all-devices)
 - [Windows Defender Application Control deployment guide](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
-- [Windows Defender Advanced Threat Protection](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp)
+- [Windows Defender Advanced Threat Protection](https://www.microsoft.com/WindowsForBusiness/windows-atp)

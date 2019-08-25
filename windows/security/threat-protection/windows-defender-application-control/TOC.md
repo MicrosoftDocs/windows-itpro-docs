@@ -11,12 +11,15 @@
 
 ## [Windows Defender Application Control deployment guide](windows-defender-application-control-deployment-guide.md)
 ### [Types of devices](types-of-devices.md)
-###Use WDAC with custom policies
+### Use WDAC with custom policies
 #### [Create an initial default policy](create-initial-default-policy.md)
+#### [Create path-based rules](create-path-based-rules.md)
 #### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
 ### [Audit WDAC policies](audit-windows-defender-application-control-policies.md)
 ### [Merge WDAC policies](merge-windows-defender-application-control-policies.md)
+### [Deploy multiple WDAC policies](deploy-multiple-windows-defender-application-control-policies.md)
 ### [Enforce WDAC policies](enforce-windows-defender-application-control-policies.md)
+### [Allow COM object registration](allow-com-object-registration-in-windows-defender-application-control-policy.md)
 ### [Deploy WDAC with a managed installer](use-windows-defender-application-control-with-managed-installer.md)
 ### [Deploy WDAC with Intelligent Security Graph (ISG)](use-windows-defender-application-control-with-intelligent-security-graph.md)
 ### [Deploy WDAC policies using Group Policy](deploy-windows-defender-application-control-policies-using-group-policy.md)

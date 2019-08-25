@@ -4,10 +4,12 @@ description: Use BranchCache to optimize network bandwidth during update deploym
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jaimeo
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: greglin
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 
@@ -63,7 +65,7 @@ In addition to these steps, there is one requirement for WSUS to be able to use 
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
+- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
 - [Deploy Windows 10 updates using Configuration Manager](waas-manage-updates-configuration-manager.md)
 - [Manage device restarts after updates](waas-restart.md)

@@ -1,12 +1,15 @@
 ---
 title: Exclusion Item Dialog Box
 description: Exclusion Item Dialog Box
-author: jamiejdt
+author: dansimp
 ms.assetid: 5523c6d4-95f2-47af-8c06-3ab18004a207
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ Use the **Exclusion Item** dialog box to assign or change a mapping rule and to 
 **Important**  
 Adding files from an excluded directory to the virtual files system is not supported.
 
- 
+ 
 
 <a href="" id="exclude-path"></a>**Exclude Path**  
 Use to specify variable name that the Application Virtualization Sequencer will exclude if encountered while parsing virtual file system items or virtual registry items.
@@ -38,9 +41,9 @@ Use to select the mapping rules the Application Virtualization Sequencer will ap
 
 [Sequencer Dialog Boxes](sequencer-dialog-boxes.md)
 
- 
+ 
 
- 
+ 
 
 
 

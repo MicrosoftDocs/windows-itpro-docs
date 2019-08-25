@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: mikestephens-MS
-ms.author: mstephen
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 08/19/2018
+ms.reviewer: 
 ---
 # Validate and Configure Public Key Infrastructure
 
@@ -62,15 +63,15 @@ Domain controllers automatically request a domain controller certificate (if pub
 By default, the Active Directory Certificate Authority provides and publishes the Kerberos Authentication certificate template.  However, the cryptography configuration included in the provided template is based on older and less performant cryptography APIs.  To ensure domain controllers request the proper certificate with the best available cryptography, use the Kerberos Authentication certificate template as a baseline to create an updated domain controller certificate template.
 
 Sign-in to a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
-1.	Open the **Certificate Authority** management console.
-2.	Right-click **Certificate Templates** and click **Manage**.
-3.	In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
-4.	On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
-5.	On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise’s needs.   
+1. Open the **Certificate Authority** management console.
+2. Right-click **Certificate Templates** and click **Manage**.
+3. In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
+4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2008 R2** from the **Certification Authority** list. Select **Windows 7.Server 2008 R2** from the **Certification Recipient** list.
+5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise’s needs.   
     **Note**If you use different template names, you’ll need to remember and substitute these names in different portions of the lab.
-6.	On the **Subject Name** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
-7.	On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
-8.	Close the console.
+6. On the **Subject Name** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
+7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
+8. Close the console.
 
 ### Superseding the existing Domain Controller certificate
 
@@ -79,15 +80,15 @@ Many domain controllers may have an existing domain controller certificate.  The
 The Kerberos Authentication certificate template is the most current certificate template designated for domain controllers and should be the one you deploy to all your domain controllers (2008 or later).   The autoenrollment feature in Windows enables you to effortlessly replace these domain controller certificates.  You can use the following configuration to replace older domain controller certificates with a new certificate using the Kerberos Authentication certificate template. 
 
 Sign-in to a certificate authority or management workstations with _Enterprise Admin_ equivalent credentials.
-1.	Open the **Certificate Authority** management console.
-2.	Right-click **Certificate Templates** and click **Manage**.
-3.	In the **Certificate Template Console**, right-click the **Domain Controller Authentication (Kerberos)** (or the name of the certificate template you created in the previous section) template in the details pane and click **Properties**.
-4.	Click the **Superseded Templates** tab. Click **Add**.
-5.	From the **Add Superseded Template** dialog, select the **Domain Controller** certificate template and click **OK**.  Click **Add**.
-6.	From the **Add Superseded Template** dialog, select the **Domain Controller Authentication** certificate template and click **OK**.
-7.	From the **Add Superseded Template dialog**, select the **Kerberos Authentication** certificate template and click **OK**. 
-8.	Add any other enterprise certificate templates that were previously configured for domain controllers to the **Superseded Templates** tab.
-9.	Click **OK** and close the **Certificate Templates** console.
+1. Open the **Certificate Authority** management console.
+2. Right-click **Certificate Templates** and click **Manage**.
+3. In the **Certificate Template Console**, right-click the **Domain Controller Authentication (Kerberos)** (or the name of the certificate template you created in the previous section) template in the details pane and click **Properties**.
+4. Click the **Superseded Templates** tab. Click **Add**.
+5. From the **Add Superseded Template** dialog, select the **Domain Controller** certificate template and click **OK**.  Click **Add**.
+6. From the **Add Superseded Template** dialog, select the **Domain Controller Authentication** certificate template and click **OK**.
+7. From the **Add Superseded Template dialog**, select the **Kerberos Authentication** certificate template and click **OK**. 
+8. Add any other enterprise certificate templates that were previously configured for domain controllers to the **Superseded Templates** tab.
+9. Click **OK** and close the **Certificate Templates** console.
 
 The certificate template is configured to supersede all the certificate templates provided in the certificate templates superseded templates list.  However, the certificate template and the superseding of certificate templates is not active until you publish the certificate template to one or more certificate authorities.
 
@@ -96,17 +97,17 @@ The certificate template is configured to supersede all the certificate template
 Windows 10 clients use the https protocol when communicating with Active Directory Federation Services.  To meet this need, you must issue a server authentication certificate to all the nodes in the Active Directory Federation Services farm.  On-premises deployments can use a server authentication certificate issued by their enterprise PKI.  You must configure a server authentication certificate template so the host running the Active Directory Federation Service can request the certificate. 
 
 Sign-in to a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
-1.	Open the **Certificate Authority** management console.
-2.	Right-click **Certificate Templates** and click **Manage**.
-3.	In the **Certificate Template Console**, right-click the **Web Server** template in the details pane and click **Duplicate Template**.
-4.	On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
-5.	On the **General** tab, type **Internal Web Server** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise’s needs.   
+1. Open the **Certificate Authority** management console.
+2. Right-click **Certificate Templates** and click **Manage**.
+3. In the **Certificate Template Console**, right-click the **Web Server** template in the details pane and click **Duplicate Template**.
+4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
+5. On the **General** tab, type **Internal Web Server** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise’s needs.   
     **Note:** If you use different template names, you’ll need to remember and substitute these names in different portions of the lab.
-6.	On the **Request Handling** tab, select **Allow private key to be exported**.
-7.	On the **Subject** tab, select the **Supply in the request** button if it is not already selected.
-8.	On the **Security** tab, Click **Add**. Type **Domain Computers** in the **Enter the object names to select** box.  Click **OK**. Select the **Allow** check box next to the **Enroll** permission.
-9.	On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
-10.	Close the console.
+6. On the **Request Handling** tab, select **Allow private key to be exported**.
+7. On the **Subject** tab, select the **Supply in the request** button if it is not already selected.
+8. On the **Security** tab, Click **Add**. Type **Domain Computers** in the **Enter the object names to select** box.  Click **OK**. Select the **Allow** check box next to the **Enroll** permission.
+9. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
+10. Close the console.
 
 ### Unpublish Superseded Certificate Templates
 
@@ -115,50 +116,50 @@ The certificate authority only issues certificates based on published certificat
 The newly created domain controller authentication certificate template supersedes previous domain controller certificate templates.  Therefore, you need to unpublish these certificate templates from all issuing certificate authorities.
 
 Sign-in to the certificate authority or management workstation with _Enterprise Admin_ equivalent credentials.
-1.	Open the **Certificate Authority** management console.
-2.	Expand the parent node from the navigation pane.
-3.	Click **Certificate Templates** in the navigation pane.
-4.	Right-click the **Domain Controller** certificate template in the content pane and select **Delete**.  Click **Yes** on the **Disable certificate templates** window.
-5.	Repeat step 4 for the **Domain Controller Authentication** and **Kerberos Authentication** certificate templates.
+1. Open the **Certificate Authority** management console.
+2. Expand the parent node from the navigation pane.
+3. Click **Certificate Templates** in the navigation pane.
+4. Right-click the **Domain Controller** certificate template in the content pane and select **Delete**.  Click **Yes** on the **Disable certificate templates** window.
+5. Repeat step 4 for the **Domain Controller Authentication** and **Kerberos Authentication** certificate templates.
 
 ### Publish Certificate Templates to the Certificate Authority
 
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
 
 Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
-1.	Open the **Certificate Authority** management console.
-2.	Expand the parent node from the navigation pane.
-3.	Click **Certificate Templates** in the navigation pane.
-4.	Right-click the **Certificate Templates** node.  Click **New**, and click **Certificate Template** to issue.
-5.	In the **Enable Certificates Templates** window, select the **Domain Controller Authentication (Kerberos)**, and **Internal Web Server** templates you created in the previous steps.  Click **OK** to publish the selected certificate templates to the certificate authority.
-6.	If you published the Domain Controller Authentication (Kerberos) certificate template, then you should unpublish the certificate templates you included in the superseded templates list.   
+1. Open the **Certificate Authority** management console.
+2. Expand the parent node from the navigation pane.
+3. Click **Certificate Templates** in the navigation pane.
+4. Right-click the **Certificate Templates** node.  Click **New**, and click **Certificate Template** to issue.
+5. In the **Enable Certificates Templates** window, select the **Domain Controller Authentication (Kerberos)**, and **Internal Web Server** templates you created in the previous steps.  Click **OK** to publish the selected certificate templates to the certificate authority.
+6. If you published the Domain Controller Authentication (Kerberos) certificate template, then you should unpublish the certificate templates you included in the superseded templates list.   
     * To unpublish a certificate template, right-click the certificate template you want to unpublish in the details pane of the Certificate Authority console and select **Delete**. Click **Yes** to confirm the operation.   
 
-7.	Close the console.
+7. Close the console.
 
 ### Configure Domain Controllers for Automatic Certificate Enrollment
 
 Domain controllers automatically request a certificate from the domain controller certificate template.  However, the domain controller is unaware of newer certificate templates or superseded configurations on certificate templates.  To continue automatic enrollment and renewal of domain controller certificates that understand newer certificate template and superseded certificate template configurations, create and configure a Group Policy object for automatic certificate enrollment and link the Group Policy object to the Domain Controllers OU.
 
-1.	Start the **Group Policy Management Console** (gpmc.msc)
-2.	Expand the domain and select the **Group Policy Object** node in the navigation pane.
-3.	Right-click **Group Policy object** and select **New**
-4.	Type *Domain Controller Auto Certificate Enrollment* in the name box and click **OK**.
-5.	Right-click the **Domain Controller Auto Certificate Enrollment** Group Policy object and click **Edit**.
-6.	In the navigation pane, expand **Policies** under **Computer Configuration**.
-7.	Expand **Windows Settings**, **Security Settings**, and click **Public Key Policies**.
-8.	In the details pane, right-click **Certificate Services Client – Auto-Enrollment** and select **Properties**.
-9.	Select **Enabled** from the **Configuration Model** list.
-10.	Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
-11.	Select the **Update certificates that use certificate templates** check box.
-12.	Click **OK**. Close the **Group Policy Management Editor**.
+1. Start the **Group Policy Management Console** (gpmc.msc)
+2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
+3. Right-click **Group Policy object** and select **New**
+4. Type *Domain Controller Auto Certificate Enrollment* in the name box and click **OK**.
+5. Right-click the **Domain Controller Auto Certificate Enrollment** Group Policy object and click **Edit**.
+6. In the navigation pane, expand **Policies** under **Computer Configuration**.
+7. Expand **Windows Settings**, **Security Settings**, and click **Public Key Policies**.
+8. In the details pane, right-click **Certificate Services Client – Auto-Enrollment** and select **Properties**.
+9. Select **Enabled** from the **Configuration Model** list.
+10. Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
+11. Select the **Update certificates that use certificate templates** check box.
+12. Click **OK**. Close the **Group Policy Management Editor**.
 
 ### Deploy the Domain Controller Auto Certificate Enrollment Group Policy Object
 
 Sign-in to a domain controller or management workstations with _Domain Admin_ equivalent credentials.
-1.	Start the **Group Policy Management Console** (gpmc.msc)
-2.	In the navigation pane, expand the domain and expand the node that has your Active Directory domain name.  Right-click the **Domain Controllers** organizational unit and click **Link an existing GPO…**
-3.	In the **Select GPO** dialog box, select **Domain Controller Auto Certificate Enrollment** or the name of the domain controller certificate enrollment Group Policy object you previously created and click **OK**.
+1. Start the **Group Policy Management Console** (gpmc.msc)
+2. In the navigation pane, expand the domain and expand the node that has your Active Directory domain name.  Right-click the **Domain Controllers** organizational unit and click **Link an existing GPO…**
+3. In the **Select GPO** dialog box, select **Domain Controller Auto Certificate Enrollment** or the name of the domain controller certificate enrollment Group Policy object you previously created and click **OK**.
 
 ### Validating your work
 

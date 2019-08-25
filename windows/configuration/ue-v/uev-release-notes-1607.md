@@ -1,12 +1,15 @@
 ---
 title: User Experience Virtualization (UE-V) Release Notes
 description: User Experience Virtualization (UE-V) Release Notes
-author: MaggiePucciEvans
+author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 
@@ -128,8 +131,8 @@ This section contains hotfixes and KB articles for UE-V.
 
 -   [Upgrade to UE-V for Windows 10](uev-upgrade-uev-from-previous-releases.md)
 
--   [Administering UE-V ](uev-administering-uev.md)
+-   [Administering UE-V](uev-administering-uev.md)
 
--   [Troubleshooting UE-V ](uev-troubleshooting.md)
+-   [Troubleshooting UE-V](uev-troubleshooting.md)
 
 -   [Technical Reference for UE-V](uev-technical-reference.md)

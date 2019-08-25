@@ -1,5 +1,6 @@
 ---
 title: Information for developers
+ms.reviewer: 
 description: This page provides answers to common questions we receive from software developers and other useful resources
 keywords: software, developer, faq, dispute, false-positive, classify, installer, software, bundler, blocking
 search.product: eADQiWindows 10XVcnh
@@ -7,8 +8,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: ellevin
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -25,6 +26,4 @@ Learn about the common questions we receive from software developers and get oth
 Topic | Description
 :---|:---
 [Software developer FAQ](developer-faq.md) | Provides answers to common questions we receive from software developers.
-[Developer resources](developer-resources.md) | Provides information about how to submit files, detection criteria, and how to check your software against the latest Security intelligence and cloud protection from Microsoft.
-
-
+[Developer resources](developer-resources.md) | Provides information about how to submit files, detection criteria, and how to check your software against the latest security intelligence and cloud protection from Microsoft.

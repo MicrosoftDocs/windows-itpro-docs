@@ -1,12 +1,15 @@
 ---
 title: How to Modify the Log Directory Location
 description: How to Modify the Log Directory Location
-author: jamiejdt
+author: eavena
 ms.assetid: 203c674f-8d46-4d42-9af0-245a2681fc0f
+ms.reviewer: 
+manager: dansimp
+ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ The log directory location is where the Application Virtualization (App-V) Seque
 **Important**  
 The log location directory must be located on the computer running the App-V Sequencer.
 
- 
+ 
 
 Use the following procedure to change the location of the directory where the App-V Sequencer will save associated logs.
 
@@ -38,9 +41,9 @@ Use the following procedure to change the location of the directory where the Ap
 
 [How to Configure the App-V Sequencer](how-to-configure-the-app-v-sequencer.md)
 
- 
+ 
 
- 
+ 
 
 
 

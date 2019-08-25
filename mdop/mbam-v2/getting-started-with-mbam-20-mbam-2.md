@@ -1,12 +1,15 @@
 ---
 title: Getting Started with MBAM 2.0
 description: Getting Started with MBAM 2.0
-author: jamiejdt
+author: msfttracyp
 ms.assetid: 29f5c9af-5bbf-4d37-aa0f-0716046904af
+ms.reviewer: 
+manager: dansimp
+ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

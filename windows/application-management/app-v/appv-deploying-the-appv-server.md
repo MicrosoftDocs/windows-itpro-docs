@@ -1,12 +1,15 @@
 ---
 title: Deploying the App-V Server (Windows 10)
 description: Deploying the App-V Server in App-V for Windows 10
-author: MaggiePucciEvans
+author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/18/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: lomayor
 ms.topic: article
 ---
 # Deploying the App-V server
@@ -32,7 +35,7 @@ App-V offers the following five server components, each of which serves a specif
 
 * **Management server.** Use the App-V management server and console to manage your App-V infrastructure. See [Administering App-V with the management console](appv-administering-virtual-applications-with-the-management-console.md) for more information about the management server.
 
- >[!NOTE]
+ > [!NOTE]
     >If you are using App-V with your electronic software distribution solution, you don’t need to use the management server and console. However, you may want to take advantage of the reporting and streaming capabilities in App-V.
 * **Management database.** Use the App-V management database to facilitate database pre-deployments for App-V management. For more information about the management database, see [How to deploy the App-V server](appv-deploy-the-appv-server.md).
 * **Publishing server.** Use the App-V publishing server to host and stream virtual applications. The publishing server supports the HTTP and HTTPS protocols and does not require a database connection. To learn how to configure the publishing server, see [How to install the App-V publishing server](appv-install-the-publishing-server-on-a-remote-computer.md).
@@ -42,7 +45,7 @@ App-V offers the following five server components, each of which serves a specif
 All five App-V server components are included in the Microsoft Desktop Optimization Pack (MDOP) 2015 ISO package, which can be downloaded from either of the following locations:
 
 * The [MSDN (Microsoft Developer Network) subscriptions site](https://msdn.microsoft.com/subscriptions/downloads/default.aspx#FileId=65215). You must have a MSDN subscription to download the MDOP ISO package from this site.
-* The [Volume Licensing Service Center](https://www.microsoft.com/en-us/licensing/default.aspx) if you're using [Windows 10 for Enterprise or Education](https://www.microsoft.com/en-us/WindowsForBusiness/windows-product-home).
+* The [Volume Licensing Service Center](https://www.microsoft.com/licensing/default.aspx) if you're using [Windows 10 for Enterprise or Education](https://www.microsoft.com/WindowsForBusiness/windows-product-home).
 
 In large organizations, you might want to install more than one instance of the server components to get the following benefits.
 

@@ -2,12 +2,14 @@
 title: Configure the Application Identity service (Windows 10)
 description: This topic for IT professionals shows how to configure the Application Identity service to start automatically or manually.
 ms.assetid: dc469599-37fd-448b-b23e-5b8e4f17e561
+ms.reviewer: 
+ms.author: dansimp
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,15 +20,15 @@ ms.date: 04/02/2018
 # Configure the Application Identity service
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals shows how to configure the Application Identity service to start automatically or manually.
 
 The Application Identity service determines and verifies the identity of an app. Stopping this service will prevent AppLocker policies from being enforced.
 
 >**Important:**  When using Group Policy, you must configure it to start automatically in at least one Group Policy Object (GPO) that applies AppLocker rules. This is because AppLocker uses this service to verify the attributes of a file.
- 
+ 
 **To start the Application Identity service automatically using Group Policy**
 
 1.  On the **Start** screen, type **gpmc.msc** to open the Group Policy Management Console (GPMC).
