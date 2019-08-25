@@ -26,7 +26,8 @@ ms.date: 12/04/2017
 
 Use the Enterprise Mode Site List Manager to create and update your site list for devices running Windows 7, Windows 8.1, and Windows 10, using the version 2.0 (v.2) of the Enterprise Mode schema. If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
 
-**Important**<br>
+**Important**
+
 If you're running Windows 7 or Windows 8.1 and you've been using the version 1.0 (v.1) of the schema, you can continue to do so, but you won't get the benefits that come with the updated schema. For info about the v.1 schema, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
 
 ## Enterprise Mode schema v.2 updates
@@ -41,10 +42,11 @@ You can continue to use the v.1 version of the schema on Windows 10, but you wo
 ### Enterprise Mode v.2 schema example
 The following is an example of the v.2 version of the Enterprise Mode schema.
 
-**Important**<br>
-Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both https://contoso.com and https://contoso.com.
+**Important**
+
+Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both http://contoso.com and https://contoso.com.
  
-``` xml
+```xml
 <site-list version="205">
 	<!--- File creation header --->
 	<created-by>
@@ -214,7 +216,7 @@ In this example, if <a href="https://contoso.com/travel" data-raw-source="https:
 <td>url</td>
 <td>Specifies the URL (and port number using standard port conventions) to which the child elements apply. The URL can be a domain, sub-domain, or any path URL.
 <br><b>Note</b><br>
-Make sure that you don&#39;t specify a protocol. Using &lt;site url=&quot;contoso.com&quot;&gt; applies to both <a href="https://contoso.com" data-raw-source="https://contoso.com">https://contoso.com</a> and <a href="https://contoso.com" data-raw-source="https://contoso.com">https://contoso.com</a>.
+Make sure that you don&#39;t specify a protocol. Using &lt;site url=&quot;contoso.com&quot;&gt; applies to both <a href="http://contoso.com" data-raw-source="http://contoso.com">http://contoso.com</a> and <a href="https://contoso.com" data-raw-source="https://contoso.com">https://contoso.com</a>.
 <p><b>Example</b>
 <pre class="syntax">
 &lt;site url=&quot;contoso.com:8080&quot;&gt;
@@ -284,19 +286,16 @@ With:
 
 While the old, replaced attributes aren't supported in the v.2 version of the schema, they'll continue to work in the v.1 version of the schema. If, however, you're using the v.2 version of the schema and these attributes are still there, the v.2 version schema takes precedence. We don’t recommend combining the two schemas, and instead recommend that you move to the v.2 version of the schema to take advantage of the new features.
 
-**Important**<br>
+**Important**
+
 Saving your v.1 version of the file using the new Enterprise Mode Site List Manager (schema v.2) automatically updates the XML to the new v.2 version of the schema.
 
 ### What not to include in your schema
 We recommend that you not add any of the following items to your schema because they can make your compatibility list behave in unexpected ways:
 
-- Don’t use protocols. For example, https://, https://, or custom protocols. They break parsing.
+- Don’t use protocols. For example, `http://`, `https://`, or custom protocols. They break parsing.
 - Don’t use wildcards.
 - Don’t use query strings, ampersands break parsing.
 
 ## Related topics
 - [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md)
-
-
-
-

@@ -31,9 +31,9 @@ If you don't want to use the Enterprise Mode Site List Manager, you also have th
 The following is an example of the Enterprise Mode schema v.1. This schema can run on devices running Windows 7 and Windows 8.1.
 
 **Important**<br>
-Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<domain>contoso.com</domain>` automatically applies to both https://contoso.com and https://contoso.com.
+Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<domain>contoso.com</domain>` automatically applies to both http://contoso.com and https://contoso.com.
 
-``` xml
+```xml
 <rules version="1">
   <emie>
     <domain exclude="false">www.cpandl.com</domain>
@@ -206,7 +206,7 @@ For example, say you want all of the sites in the contoso.com domain to open usi
 
 ### What not to include in your schema
 We recommend that you not add any of the following items to your schema because they can make your compatibility list behave in unexpected ways:
-- Don’t use protocols. For example, `https://`, `https://`, or custom protocols. They break parsing.
+- Don’t use protocols. For example, `http://`, `https://`, or custom protocols. They break parsing.
 - Don’t use wildcards.
 - Don’t use query strings, ampersands break parsing.
 
@@ -217,7 +217,7 @@ You can use trailing slashes at the path-level, but not at the domain-level:
 
 **Example**
 
-``` xml
+```xml
 <domain exclude="true">contoso.com
   <path exclude="false">/about/</path>
 </domain>
