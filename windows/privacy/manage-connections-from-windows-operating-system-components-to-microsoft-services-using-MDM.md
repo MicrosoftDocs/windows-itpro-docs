@@ -36,7 +36,7 @@ For detailed information about managing network connections to Microsoft service
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by sending email to **telmhelp**@**microsoft.com**. 
 
 
-### Settings for Windows 10 Enterprise edition 1903 and newer
+## Settings for Windows 10 Enterprise edition 1903 and newer
 
 The following table lists management options for each setting.
 
