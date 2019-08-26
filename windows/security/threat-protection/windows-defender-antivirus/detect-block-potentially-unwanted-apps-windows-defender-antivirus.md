@@ -43,7 +43,7 @@ These applications can increase the risk of your network being infected with act
 PUAs may operate entirely on a local machine, or rely on remote resources located at an outside URL. PUA protection protects you from local files.
 
 > [!TIP]
-> If you are running a version of Edge that is Chromium-based, PUA protection will also block URLs associated with potentially unwanted activities.
+> If you are running the next major version of Microsoft Edge, which is Chromium-based, PUA protection will also block URLs associated with potentially unwanted activities.
 
 Windows Defender Antivirus blocks detected PUA files, and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine.
 
@@ -116,9 +116,9 @@ Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA
 
 ## URL blocking
 
-URL blocking is a new feature, exclusive to Chromium-based builds of the Edge web browser. URL blocking is provided via [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md). You can configure it by [...]
+URL blocking is a new feature, exclusive to the next major version of Microsoft Edge, which is Chromium-based. URL blocking is provided via [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md). You can configure it by [...]
 
-If you have a Chromium-based version of Edge, you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen demo pages.
+If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen demo pages.
 
 ## Related topics
 
