@@ -300,7 +300,7 @@ The following is a sample plug-in VPN profile. This blob would fall under the Pr
 After you configure the settings that you want using ProfileXML, you can apply it using Intune and a **Custom Configuration (Windows 10 Desktop and Mobile and later)** policy.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
-2. Go to **Intune** > **Device Configuration** > **Properties**.
+2. Go to **Intune** > **Device Configuration** > **Profiles**.
 3. Click **Create Profile**.
 4. Enter a name and (optionally) a description.
 5. Choose **Windows 10 and later** as the platform.
