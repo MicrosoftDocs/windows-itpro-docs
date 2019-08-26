@@ -1,5 +1,5 @@
 ---
-title: "Surface Hub 2S Adoption"
+title: "Surface Hub 2S Adoption and training guides"
 description: "Microsoft has developed downloadable materials that you can make available for your users to aid in adoption of Surface Hub 2S."
 keywords: separate values with commas
 ms.prod: surface-hub
@@ -13,7 +13,7 @@ ms.date: 08/22/2019
 ms.localizationpriority: Medium
 ---
 
-# Surface Hub 2S adoption
+# Surface Hub 2S adoption and training guides
 
 Whether you are a small or large business, a Surface Hub adoption plan is critical in generating the right use cases and helping your users become comfortable with the device. Check out these downloadable guides designed to help you deliver training across your organization.
 
