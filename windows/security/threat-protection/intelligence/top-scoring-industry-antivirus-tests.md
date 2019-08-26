@@ -49,7 +49,7 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 |||
 |---|---|
-|![Graph describing Real-World detection rate](./images/real-world-small.png)|![Graph describing Prevalent Malware](./images/prevalent-malware-small.png)|
+|![Graph showing Microsoft's Real-World detection rate scores for AV-Test](./images/real-world-aug-small.png)|![Graph showing Microsoft's Prevalent Malware detection rate scores for AV-Test](./images/prevalent-malware-aug-small.png)|
 
 ### AV-Comparatives: Protection rating of 99.9% in the latest test
 
@@ -61,6 +61,7 @@ Business Security Test consists of three main parts: the Real-World Protection T
 
 - Business Security Test 2018 (March - June): [Real-World Protection Rate 98.7%](https://www.av-comparatives.org/tests/business-security-test-2018-march-june/)
 
+![Graph showing Microsoft's Real-World Protection scores for AV-Comparatives](./images/real-world-protection-aug-small.png)
 
 ### SE Labs: Total accuracy rating of AAA in the latest test
 
