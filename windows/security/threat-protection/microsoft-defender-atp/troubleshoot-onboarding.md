@@ -25,20 +25,22 @@ ms.topic: troubleshooting
 - Windows Server 2016
 
 
-
 You might need to troubleshoot the Microsoft Defender ATP onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the machines.
 
+
+## Troubleshoot issues with onboarding tools
+
 If you have completed the onboarding process and don't see machines in the [Machines list](investigate-machines.md) after an hour, it might indicate an onboarding or connectivity problem.
 
-## Troubleshoot onboarding when deploying with Group Policy
+### Troubleshoot onboarding when deploying with Group Policy
 Deployment with Group Policy is done by running the onboarding script on the machines.  The Group Policy console does not indicate if the deployment has succeeded or not.
 
 If you have completed the onboarding process and don't see machines in the [Machines list](investigate-machines.md) after an hour, you can check the output of the script on the machines. For more information, see [Troubleshoot onboarding when deploying with a script](#troubleshoot-onboarding-when-deploying-with-a-script).
 
 If the script completes successfully, see [Troubleshoot onboarding issues on the machines](#troubleshoot-onboarding-issues-on-the-machine) for additional errors that might occur.
 
-## Troubleshoot onboarding issues when deploying with System Center Configuration Manager
+### Troubleshoot onboarding issues when deploying with System Center Configuration Manager
 When onboarding machines using the following versions of System Center Configuration Manager:
 - System Center 2012 Configuration Manager
 - System Center 2012 R2 Configuration Manager
@@ -52,7 +54,7 @@ If the deployment fails, you can check the output of the script on the machines.
 
 If the onboarding completed successfully but the machines are not showing up in the **Machines list** after an hour, see [Troubleshoot onboarding issues on the machine](#troubleshoot-onboarding-issues-on-the-machine) for additional errors that might occur.
 
-## Troubleshoot onboarding when deploying with a script
+### Troubleshoot onboarding when deploying with a script
 
 **Check the result of the script on the machine**:
 1. Click **Start**, type **Event Viewer**, and press **Enter**.
@@ -76,7 +78,7 @@ Event ID | Error Type | Resolution steps
 40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
 65 | Insufficient privileges| Run the script again with administrator privileges.
 
-## Troubleshoot onboarding issues using Microsoft Intune
+### Troubleshoot onboarding issues using Microsoft Intune
 You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
 
 If you have configured policies in Intune and they are not propagated on machines, you might need to configure automatic MDM enrollment. 
@@ -296,9 +298,9 @@ You might also need to check the following:
 ## Licensing requirements
 Microsoft Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
 
-  -	Windows 10 Enterprise E5
-  -	Windows 10 Education E5
-  - Microsoft 365 Enterprise E5 which includes Windows 10 Enterprise E5
+- Windows 10 Enterprise E5
+- Windows 10 Education E5
+- Microsoft 365 Enterprise E5 which includes Windows 10 Enterprise E5
 
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
 

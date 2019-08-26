@@ -5,7 +5,7 @@ keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 LTSC", "Windows
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 manager: laurawi
 ms.localizationpriority: low
 ms.topic: article

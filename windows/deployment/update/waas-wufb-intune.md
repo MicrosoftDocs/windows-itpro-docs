@@ -4,9 +4,11 @@ description: Configure Windows Update for Business settings using Microsoft Intu
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
 ms.date: 07/27/2017
 ms.reviewer: 
 manager: laurawi
@@ -19,7 +21,7 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
+
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 

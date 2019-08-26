@@ -10,8 +10,8 @@ ms.localizationpriority: medium
 ms.date: 10/11/2017
 ms.reviewer: 
 manager: laurawi
-ms.author: greg-lindsay
-author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 

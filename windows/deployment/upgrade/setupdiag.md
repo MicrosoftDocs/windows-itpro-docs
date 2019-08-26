@@ -9,6 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
+audience: itpro
 author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
@@ -27,7 +28,8 @@ ms.topic: article
 
 ## About SetupDiag
 
-<I>Current version of SetupDiag: 1.5.0.0</I>
+<I>Current version of SetupDiag: 1.6.0.42</I>
+>Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
 
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
@@ -71,6 +73,8 @@ The [Release notes](#release-notes) section at the bottom of this topic has info
 | /Verbose | <ul><li>This optional parameter will output much more data to a log file.  By default, SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce an additional log file with debugging details. These details can be useful when reporting a problem with SetupDiag.</ul> |
 | /NoTel | <ul><li>This optional parameter tells SetupDiag.exe not to send diagnostic telemetry to Microsoft.</ul> |
 | /AddReg | <ul><li>This optional parameter instructs SetupDiag.exe to add failure information to the registry in offline mode. By default, SetupDiag will add failure information to the registry in online mode only. Registry data is added to the following location on the system where SetupDiag is run: **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**.</ul> |
+| /RegPath | <ul><li>This optional parameter instructs SetupDiag.exe to add failure information to the registry using the specified path. If this parameter is not specified the default path is **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**.
+</ul> |
 
 Note: The **/Mode** parameter is deprecated in version 1.4.0.0 of SetupDiag. 
 - In previous versions, this command was used with the LogsPath parameter to specify that SetupDiag should run in an offline manner to analyze a set of log files that were captured from a different computer. In version 1.4.0.0 when you specify /LogsPath then SetupDiag will automatically run in offline mode, therefore the /Mode parameter is not needed.
@@ -146,7 +150,6 @@ SetupDiag.exe /Output:C:\SetupDiag\Dumpdebug.log /LogsPath:D:\Dump
 ## Known issues
 
 1. Some rules can take a long time to process if the log files involved are large.
-2. If the failing computer is opted into the Insider program and getting regular pre-release updates, or an update is already pending on the computer when SetupDiag is run, it can encounter problems trying to open these log files. This will likely cause a failure to determine a root cause.  In this case, try gathering the log files and running SetupDiag in offline mode.
 
 
 ## Sample output
@@ -156,7 +159,7 @@ The following is an example where SetupDiag is run in offline mode.
 ```
 D:\SetupDiag>SetupDiag.exe /output:c:\setupdiag\result.xml /logspath:D:\Tests\Logs\f55be736-beed-4b9b-aedf-c133536c946e /format:xml
 
-SetupDiag v1.5.0.0
+SetupDiag v1.6.0.0
 Copyright (c) Microsoft Corporation. All rights reserved.
 
 Searching for setup logs...
@@ -317,6 +320,19 @@ Each rule name and its associated unique rule identifier are listed with a descr
 
 ## Release notes
 
+08/08/2019 - SetupDiag v1.6.0.42 is released with 60 rules, as a standalone tool available from the Download Center.
+ - Log detection performance is improved.  What used to take up to a minute should take around 10 seconds or less.
+ - Added Setup Operation and Setup Phase information to both the results log and the registry information.
+     - This is the last Operation and Phase that Setup was in when the failure occurred.
+ - Added detailed Setup Operation and Setup Phase information (and timing) to output log when /verbose is specified.
+     - Note, if the issue found is a compat block, no Setup Operation or Phase info exists yet and therefore won’t be available.
+ - Added more info to the Registry output. 
+     - Detailed ‘FailureData’ info where available.  Example: “AppName = MyBlockedApplication” or “DiskSpace = 6603” (in MB)
+         - “Key = Value” data specific to the failure found.
+     - Added ‘UpgradeStartTime’, ‘UpgradeEndTime’ and ‘UpgradeElapsedTime’
+     - Added ‘SetupDiagVersion’, ‘DateTime’ (to indicate when SetupDiag was executed on the system), ‘TargetOSVersion’, ‘HostOSVersion’ and more…
+
+
 06/19/2019 - SetupDiag v1.5.0.0 is released with 60 rules, as a standalone tool available from the Download Center.
    - All date and time outputs are updated to localized format per user request.
    - Added setup Operation and Phase information to /verbose log.
@@ -407,7 +423,7 @@ Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-cod
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
 <SetupDiag xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://docs.microsoft.com/windows/deployment/upgrade/setupdiag">
-  <Version>1.5.0.0</Version>
+  <Version>1.6.0.0</Version>
   <ProfileName>FindSPFatalError</ProfileName>
   <ProfileGuid>A4028172-1B09-48F8-AD3B-86CDD7D55852</ProfileGuid>
   <SystemInfo>
@@ -458,7 +474,7 @@ Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" f
 
 ```
 {
-    "Version":"1.5.0.0",
+    "Version":"1.6.0.0",
     "ProfileName":"FindSPFatalError",
     "ProfileGuid":"A4028172-1B09-48F8-AD3B-86CDD7D55852",
     "SystemInfo":{

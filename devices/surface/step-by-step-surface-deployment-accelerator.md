@@ -61,8 +61,8 @@ The following steps show you how to create a deployment share for Windows 10 tha
   >[!NOTE]
   >As of SDA version 1.96.0405, SDA will install only the components of the Windows ADK that are required for deployment, as follows:
   > * Deployment tools
-  >  * User State Migration Tool (USMT)
-  >  * Windows Preinstallation Environment (WinPE)
+  > * User State Migration Tool (USMT)
+  > * Windows Preinstallation Environment (WinPE)
 
   > [!NOTE]
   > As of SDA version 1.96.0405, SDA will install and use MDT 2013 Update 2. Earlier versions of SDA are compatible only with MDT 2013 Update 1.
@@ -75,11 +75,11 @@ The following steps show you how to create a deployment share for Windows 10 tha
 
         -   **Local Path** – Specify or browse to a location on the local storage device where you would like to store the deployment share files for the Windows 10 SDA deployment share. For example, **E:\\SDAWin10\\** is the location specified in Figure 3.
 
-       -   **Share Name** – Specify a name for the file share that will be used to access the deployment share on this server from the network. For example, **SDAWin10** is the deployment share name shown in Figure 3. The local path folder is automatically shared by the SDA scripts under this name to the group **Everyone** with a permission level of **Full Control**.
+        -   **Share Name** – Specify a name for the file share that will be used to access the deployment share on this server from the network. For example, **SDAWin10** is the deployment share name shown in Figure 3. The local path folder is automatically shared by the SDA scripts under this name to the group **Everyone** with a permission level of **Full Control**.
 
     -   **Windows 10 Deployment Services**
 
-       -   Select the **Import boot media into the local Windows Deployment Service** check box if you would like to boot your Surface devices from the network to perform the Windows deployment. Windows Deployment Services must be installed and configured to respond to PXE boot requests. See [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/library/jj648426.aspx) for more information about how to configure Windows Deployment Services for PXE boot.
+        -   Select the **Import boot media into the local Windows Deployment Service** check box if you would like to boot your Surface devices from the network to perform the Windows deployment. Windows Deployment Services must be installed and configured to respond to PXE boot requests. See [Windows Deployment Services Getting Started Guide for Windows Server 2012](https://technet.microsoft.com/library/jj648426.aspx) for more information about how to configure Windows Deployment Services for PXE boot.
 
     -   **Windows 10 Source Files**
 
@@ -100,25 +100,25 @@ The following steps show you how to create a deployment share for Windows 10 tha
 
 7.  On the **Summary** page confirm your selections and click **Finish** to begin the creation of your deployment share. The process can take several minutes as files are downloaded, the tools are installed, and the deployment share is created. While the SDA scripts are creating your deployment share, an **Installation Progress** window will be displayed, as shown in Figure 5. A typical SDA process includes:
 
-   -   Download of Windows ADK
+    -   Download of Windows ADK
 
-   -   Installation of Windows ADK
+    -   Installation of Windows ADK
 
-   -   Download of MDT
+    -   Download of MDT
 
-   -   Installation of MDT
+    -   Installation of MDT
 
-   -   Download of Surface apps and drivers
+    -   Download of Surface apps and drivers
 
-   -   Creation of the deployment share
+    -   Creation of the deployment share
 
-   -   Import of Windows installation files into the deployment share
+    -   Import of Windows installation files into the deployment share
 
-   -   Import of the apps and drivers into the deployment share
+    -   Import of the apps and drivers into the deployment share
 
-   -   Creation of rules and task sequences for Windows deployment
+    -   Creation of rules and task sequences for Windows deployment
 
-   ![The installation progress window](images/sdasteps-fig5-installwindow.png "The installation progress window")
+    ![The installation progress window](images/sdasteps-fig5-installwindow.png "The installation progress window")
 
     *Figure 5. The Installation Progress window*
     

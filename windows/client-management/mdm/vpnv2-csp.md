@@ -598,7 +598,7 @@ Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
 Profile example
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2" xmlns:A="syncml:metinf">
   <SyncBody>
     <Atomic>
@@ -657,244 +657,241 @@ Profile example
 
 AppTriggerList
 
-``` syntax
+```xml
 <!-- Internet Explorer -->
-      <Add>
-        <CmdID>10013</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/0/App/Id</LocURI>
-          </Target>
-          <Data>%PROGRAMFILES%\Internet Explorer\iexplore.exe</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10014</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/1/App/Id</LocURI>
-          </Target>
-          <Data>%PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe</Data>
-        </Item>
-      </Add>
-      <!-- Edge -->
-      <Add>
-        <CmdID>10015</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/2/App/Id</LocURI>
-          </Target>
-          <Data>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Data>
-        </Item>
-      </Add>
+<Add>
+  <CmdID>10013</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/0/App/Id</LocURI>
+    </Target>
+    <Data>%PROGRAMFILES%\Internet Explorer\iexplore.exe</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10014</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/1/App/Id</LocURI>
+    </Target>
+    <Data>%PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe</Data>
+  </Item>
+</Add>
+<!-- Edge -->
+<Add>
+  <CmdID>10015</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/AppTriggerList/2/App/Id</LocURI>
+    </Target>
+    <Data>Microsoft.MicrosoftEdge_8wekyb3d8bbwe</Data>
+  </Item>
+</Add>
 ```
 
 RouteList and ExclusionRoute
 
-``` syntax
- 
-     <Add>
-        <CmdID>10008</CmdID>
-        <Item>
-          <Target>
-           <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/Address</LocURI>
-          </Target>
-          <Data>192.168.0.0</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10009</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/PrefixSize</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">int</Format>
-          </Meta>
-          <Data>24</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10010</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/ExclusionRoute</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">bool</Format>
-          </Meta>
-          <Data>true</Data>
-        </Item>
-      </Add>
- 
+```xml
+<Add>
+  <CmdID>10008</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/Address</LocURI>
+    </Target>
+    <Data>192.168.0.0</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10009</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/PrefixSize</LocURI>
+    </Target>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Data>24</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10010</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/RouteList/0/ExclusionRoute</LocURI>
+    </Target>
+    <Meta>
+      <Format xmlns="syncml:metinf">bool</Format>
+    </Meta>
+    <Data>true</Data>
+  </Item>
+</Add>
 ```
 
 DomainNameInformationList
 
-``` syntax
- 
-      <!-- Domain Name rule with Suffix Match with DNS Servers -->
-      <Add>
-        <CmdID>10013</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/DomainName</LocURI>  
-          </Target>
-          <Data>.contoso.com</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10014</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/DnsServers</LocURI>  
-          </Target>
-          <Data>192.168.0.11,192.168.0.12</Data>
-        </Item>
-      </Add>
- 
+```xml
+<!-- Domain Name rule with Suffix Match with DNS Servers -->
+<Add>
+  <CmdID>10013</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/DomainName</LocURI>  
+    </Target>
+    <Data>.contoso.com</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10014</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/DnsServers</LocURI>  
+    </Target>
+    <Data>192.168.0.11,192.168.0.12</Data>
+  </Item>
+</Add>
+
 <!-- Domain Name rule with Suffix Match with Web Proxy -->
-      <Add>
-        <CmdID>10013</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/DomainName</LocURI>  
-          </Target>
-          <Data>.contoso.com</Data>
-        </Item>
-      </Add>
- 
-      <Add>
-        <CmdID>10015</CmdID>
-        <Item>
-          <Target>
-<LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/WebProxyServers</LocURI>  
-          </Target>
-          <Data>192.168.0.100:8888</Data>
-        </Item>
-      </Add>
- 
+<Add>
+  <CmdID>10013</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/DomainName</LocURI>  
+    </Target>
+    <Data>.contoso.com</Data>
+  </Item>
+</Add>
+
+<Add>
+  <CmdID>10015</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/WebProxyServers</LocURI>  
+    </Target>
+    <Data>192.168.0.100:8888</Data>
+  </Item>
+</Add>
+
 <!-- Domain Name rule with FQDN Match with DNS Servers -->
- 
-      <Add>
-        <CmdID>10016</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/2/DomainName</LocURI>  
-          </Target>
-          <Data>finance.contoso.com</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10017</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/2/DnsServers</LocURI>  
-          </Target>
-          <Data>192.168.0.11,192.168.0.12</Data>
-        </Item>
-      </Add>
- 
+
+<Add>
+  <CmdID>10016</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/2/DomainName</LocURI>  
+    </Target>
+    <Data>finance.contoso.com</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10017</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/2/DnsServers</LocURI>  
+    </Target>
+    <Data>192.168.0.11,192.168.0.12</Data>
+  </Item>
+</Add>
+
 <!-- Domain Name rule with FQDN Match with Proxy Server -->
- 
-      <Add>
-        <CmdID>10016</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/3/DomainName</LocURI>  
-          </Target>
-          <Data>finance.contoso.com</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10017</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/3/WebProxyServers</LocURI>  
-          </Target>
-          <Data>192.168.0.11:8080</Data>
-        </Item>
-      </Add>
- 
+
+<Add>
+  <CmdID>10016</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/3/DomainName</LocURI>  
+    </Target>
+    <Data>finance.contoso.com</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10017</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/3/WebProxyServers</LocURI>  
+    </Target>
+    <Data>192.168.0.11:8080</Data>
+  </Item>
+</Add>
+
 <!-- Domain Name rule for all other (any) traffic through DNS Servers -->
-      <Add>
-        <CmdID>10016</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/4/DomainName</LocURI>  
-          </Target>
-          <Data>.</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10017</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/4/DnsServers</LocURI>  
-          </Target>
-          <Data>192.168.0.11,192.168.0.12</Data>
-        </Item>
-      </Add>
- 
+<Add>
+  <CmdID>10016</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/4/DomainName</LocURI>  
+    </Target>
+    <Data>.</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10017</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/4/DnsServers</LocURI>  
+    </Target>
+    <Data>192.168.0.11,192.168.0.12</Data>
+  </Item>
+</Add>
+
 <!-- Domain Name rule for all other (any) traffic through Proxy -->
- 
-      <Add>
-        <CmdID>10016</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/5/DomainName</LocURI>  
-          </Target>
-          <Data>.</Data>
-        </Item>
-      </Add>
-      <Add>
-        <CmdID>10017</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/5/WebProxyServers</LocURI>  
-          </Target>
-          <Data>192.168.0.11</Data>
-        </Item>
-      </Add>
+
+<Add>
+  <CmdID>10016</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/5/DomainName</LocURI>  
+    </Target>
+    <Data>.</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>10017</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/5/WebProxyServers</LocURI>  
+    </Target>
+    <Data>192.168.0.11</Data>
+  </Item>
+</Add>
 ```
 
 AutoTrigger
 
-``` syntax
+```xml
 <Add>
-        <CmdID>10010</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/AutoTrigger</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">bool</Format>
-          </Meta>
-          <Data>true</Data>
-        </Item>
-      </Add>
+  <CmdID>10010</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/0/AutoTrigger</LocURI>
+    </Target>
+    <Meta>
+      <Format xmlns="syncml:metinf">bool</Format>
+    </Meta>
+    <Data>true</Data>
+  </Item>
+</Add>
 ```
 
 Persistent
 
-``` syntax
+```xml
 <Add>
-        <CmdID>10010</CmdID>
-        <Item>
-          <Target>
-            <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/Persistent</LocURI>
-          </Target>
-          <Meta>
-            <Format xmlns="syncml:metinf">bool</Format>
-          </Meta>
-          <Data>true</Data>
-        </Item>
-      </Add>
+  <CmdID>10010</CmdID>
+  <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/DomainNameInformationList/1/Persistent</LocURI>
+    </Target>
+    <Meta>
+      <Format xmlns="syncml:metinf">bool</Format>
+    </Meta>
+    <Data>true</Data>
+  </Item>
+</Add>
 ```
 
 TrafficFilterLIst App
 
-``` syntax
+```xml
   Desktop App
     <Add>
         <CmdID>10013</CmdID>
@@ -929,7 +926,7 @@ TrafficFilterLIst App
 
 Protocol, LocalPortRanges, RemotePortRanges, LocalAddressRanges, RemoteAddressRanges, RoutingPolicyType, EDPModeId, RememberCredentials, AlwaysOn, Lockdown, DnsSuffix, TrustedNetworkDetection
 
-``` syntax
+```xml
 Protocol
       <Add>
         <CmdID>$CmdID$</CmdID>
@@ -1077,7 +1074,7 @@ Protocol
 
 Proxy - Manual or AutoConfigUrl
 
-``` syntax
+```xml
 Manual
       <Add>
         <CmdID>$CmdID$</CmdID>
@@ -1103,7 +1100,7 @@ Manual
 
 Device Compliance - Sso
 
-``` syntax
+```xml
   Enabled
 <Add>
         <CmdID>10011</CmdID>
@@ -1143,7 +1140,7 @@ Device Compliance - Sso
 
 PluginProfile
 
-``` syntax
+```xml
 PluginPackageFamilyName
       <!-- Configure VPN Server Name or Address (PhoneNumber=) [Comma Separated]-->
       <Add>
@@ -1181,7 +1178,7 @@ PluginPackageFamilyName
 
 NativeProfile
 
-``` syntax
+```xml
 Servers
 <Add>
         <CmdID>10001</CmdID>

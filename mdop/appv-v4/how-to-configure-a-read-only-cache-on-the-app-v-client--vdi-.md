@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -167,7 +167,7 @@ Instead of modifying the AppFS key FILENAME value every time that a new cache fi
 
 3.  On the VDI Master VM Image, open a Command Prompt window by using the **Run as administrator** option and grant remote link permissions so that the VM can access the symbolic link on the VDI Host operating system. By default, remote link permissions are disabled.
 
-    **     fsutil behavior set SymlinkEvaluation R2R:1**
+    **fsutil behavior set SymlinkEvaluation R2R:1**
 
     **Note**  
     On the storage server, appropriate link permissions must be enabled. Depending on the location of link and the Sftfs.fsd file, the permissions are **L2L:1** or **L2R:1** or **R2L:1** or **R2R:1**.

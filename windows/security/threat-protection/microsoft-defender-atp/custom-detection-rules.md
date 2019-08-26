@@ -9,7 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: mjcaparas
+ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -26,7 +26,7 @@ ms.topic: article
 Create custom detection rules from [Advanced hunting](overview-hunting.md) queries to automatically check for threat indicators and generate alerts whenever these indicators are found.
 
 >[!NOTE]
->To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
+>To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.  For the detection rule to work properly and create alerts, the query must return in each row a set of MachineId, ReportId, EventTime which match to an actual event in advanced hunting.
 
 1. In the navigation pane, select **Advanced hunting**.
 

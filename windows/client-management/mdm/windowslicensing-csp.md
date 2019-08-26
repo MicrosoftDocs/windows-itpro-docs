@@ -196,7 +196,7 @@ Values:
 
 **CheckApplicability**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
@@ -223,7 +223,7 @@ Values:
 
 **Edition**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
@@ -241,7 +241,7 @@ Values:
 
 **LicenseKeyType**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
@@ -259,7 +259,7 @@ Values:
 
 **Status**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
@@ -277,7 +277,7 @@ Values:
 
 **UpgradeEditionWithProductKey**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
@@ -304,7 +304,7 @@ Values:
 
 **UpgradeEditionWithLicense**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>

@@ -10,7 +10,7 @@ audience: Admin
 ms.manager: laurawi
 ms.topic: article
 ms.date: 06/20/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
 # Change history for Surface Hub 2S

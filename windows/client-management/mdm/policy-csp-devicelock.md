@@ -387,12 +387,12 @@ Specifies whether device lock is enabled.
 > [!Important]
 > **DevicePasswordEnabled** should not be set to Enabled (0) when WMI is used to set the EAS DeviceLock policies given that it is Enabled by default in Policy CSP for back compat with Windows 8.x. If **DevicePasswordEnabled** is set to Enabled(0) then Policy CSP will return an error stating that **DevicePasswordEnabled** already exists. Windows 8.x did not support DevicePassword policy. When disabling **DevicePasswordEnabled** (1) then this should be the only policy set from the DeviceLock group of policies listed below:
 > - **DevicePasswordEnabled** is the parent policy of the following:
-> 	- AllowSimpleDevicePassword
->	- MinDevicePasswordLength
->	- AlphanumericDevicePasswordRequired
->		- MinDevicePasswordComplexCharacters 
->	- DevicePasswordExpiration
->	- DevicePasswordHistory
+>   - AllowSimpleDevicePassword
+>   - MinDevicePasswordLength
+>   - AlphanumericDevicePasswordRequired
+>   - MinDevicePasswordComplexCharacters 
+>   - DevicePasswordExpiration
+>   - DevicePasswordHistory
 >   - MaxDevicePasswordFailedAttempts
 >   - MaxInactivityTimeDeviceLock
 

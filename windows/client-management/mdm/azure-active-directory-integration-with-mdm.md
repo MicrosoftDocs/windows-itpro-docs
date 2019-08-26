@@ -653,7 +653,7 @@ An alert is send to the MDM server in DM package\#1.
 
 Here's an example.
 
-``` syntax
+```xml
 <SyncBody>
  <Alert>
   <CmdID>1</CmdID>

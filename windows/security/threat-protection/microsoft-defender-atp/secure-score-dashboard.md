@@ -27,7 +27,7 @@ ms.topic: conceptual
 Each security control lists recommendations that you can take to increase the security posture of your organization.
 
 ### Endpoint detection and response (EDR) optimization
-A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for your Endpoint detection and response tool.
+A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for your Endpoint detection and response tool.
 
 >[!IMPORTANT]
 >This feature is available for machines on Windows 10, version  1607 or later.
@@ -45,17 +45,17 @@ You can take the following actions to increase the overall security score of you
 
 For more  information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md). 
 
-### Microsoft Defender Antivirus (Microsoft Defender AV) optimization
-A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Microsoft Defender AV.
+### Windows Defender Antivirus (Windows Defender AV) optimization
+A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Windows Defender AV.
 
 >[!IMPORTANT]
 >This feature is available for machines on Windows 10, version  1607 or later. 
 
-#### Minimum baseline configuration setting for Microsoft Defender AV:
-Machines are considered "well configured" for Microsoft Defender AV if the following requirements are met:
+#### Minimum baseline configuration setting for Windows Defender AV:
+A well-configured machine for Windows Defender AV meets the following requirements:
 
-- Microsoft Defender AV is reporting correctly
-- Microsoft Defender AV is turned on
+- Windows Defender AV is reporting correctly
+- Windows Defender AV is turned on
 - Security intelligence is up-to-date
 - Real-time protection is on
 - Potentially Unwanted Application (PUA) protection is enabled
@@ -64,16 +64,16 @@ Machines are considered "well configured" for Microsoft Defender AV if the follo
 You can take the following actions to increase the overall security score of your organization:
 
 >[!NOTE]
-> For the Microsoft Defender Antivirus properties to show,  you'll need to ensure that the Microsoft Defender Antivirus Cloud-based protection is properly configured on the machine. 
+> For the Windows Defender Antivirus properties to show,  you'll need to ensure that the Windows Defender Antivirus Cloud-based protection is properly configured on the machine. 
 
 - Fix antivirus reporting
-  - This recommendation is displayed when the Microsoft Defender Antivirus is not properly configured to report its health state. For more information on fixing the reporting, see [Configure and validate network connections](../windows-defender-antivirus/configure-network-connections-windows-defender-antivirus.md).
+  - This recommendation is displayed when the Windows Defender Antivirus is not properly configured to report its health state. For more information on fixing the reporting, see [Configure and validate network connections](../windows-defender-antivirus/configure-network-connections-windows-defender-antivirus.md).
 - Turn on antivirus
 - Update antivirus Security intelligence 
 - Turn on real-time protection
 - Turn on PUA protection
 
-For more information, see [Configure Microsoft Defender Antivirus](../windows-defender-antivirus/configure-windows-defender-antivirus-features.md).
+For more information, see [Configure Windows Defender Antivirus](../windows-defender-antivirus/configure-windows-defender-antivirus-features.md).
 
 
 ### OS security updates optimization
@@ -90,15 +90,15 @@ You can take the following actions to increase the overall security score of you
 For more information, see [Windows Update Troubleshooter](https://support.microsoft.com/help/4027322/windows-windows-update-troubleshooter).
 
 
-### Microsoft Defender Exploit Guard (Microsoft Defender EG) optimization
-A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on machines to meet the minimum baseline configuration setting for Microsoft Defender EG. When endpoints are configured according to the baseline the Microsoft Defender EG events shows on the Microsoft Defender ATP Machine timeline. 
+### Windows Defender Exploit Guard (Windows Defender EG) optimization
+A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on machines to meet the minimum baseline configuration setting for Windows Defender EG. When endpoints are configured according to the baseline, the Windows Defender EG events shows on the Microsoft Defender ATP Machine timeline. 
 
 
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1709 or later.
 
-#### Minimum baseline configuration setting for Microsoft Defender EG:
-Machines are considered "well configured" for Microsoft Defender EG if the following requirements are met:
+#### Minimum baseline configuration setting for Windows Defender EG:
+A well-configured machine for Windows Defender EG meets the following requirements:
 
 - System level protection settings are configured correctly
 - Attack Surface Reduction rules are configured correctly
@@ -148,48 +148,48 @@ You can take the following actions to increase the overall security score of you
 - Turn on all system-level Exploit Protection settings
 - Set all ASR rules to enabled or audit mode
 - Turn on Controlled Folder Access
-- Turn on Microsoft Defender Antivirus on compatible machines
+- Turn on Windows Defender Antivirus on compatible machines
 
-For more information, see [Microsoft Defender Exploit Guard](../windows-defender-exploit-guard/windows-defender-exploit-guard.md).
+For more information, see [Windows Defender Exploit Guard](../windows-defender-exploit-guard/windows-defender-exploit-guard.md).
 
-### Microsoft Defender Application Guard (Microsoft Defender AG) optimization
-A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Microsoft Defender AG. When endpoints are configured according to the baseline, Microsoft Defender AG events shows on the Microsoft Defender ATP Machine timeline. 
+### Windows Defender Application Guard (Windows Defender AG) optimization
+A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Windows Defender AG. When endpoints are configured according to the baseline, Windows Defender AG events shows on the Microsoft Defender ATP Machine timeline. 
 
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1709 or later.
 
-#### Minimum baseline configuration setting for Microsoft Defender AG:
-Machines are considered "well configured" for Microsoft Defender AG if the following requirements are met:
+#### Minimum baseline configuration setting for Windows Defender AG:
+A well-configured machine for Windows Defender AG meets the following requirements:
 
 - Hardware and software prerequisites are met
-- Microsoft Defender AG is turned on compatible machines
+- Windows Defender AG is turned on compatible machines
 - Managed mode is turned on
 
 ##### Recommended actions:
 You can take the following actions to increase the overall security score of your organization:
-- Ensure hardware and software prerequisites are met
+- Ensure that you meet the hardware and software prerequisites
     
     >[!NOTE]
-    >This improvement item does not contribute to the security score in itself because it's not a prerequisite for Microsoft Defender AG. It gives an indication of a potential reason why Microsoft Defender AG is not turned on.
+    >This improvement item does not contribute to the security score in itself because it's not a prerequisite for Windows Defender AG. It gives an indication of a potential reason why Windows Defender AG is not turned on.
 
-- Turn on  Microsoft Defender AG on compatible machines
+- Turn on  Windows Defender AG on compatible machines
 - Turn on managed mode
 
 
-For more information, see [Microsoft Defender Application Guard overview](../windows-defender-application-guard/wd-app-guard-overview.md).
+For more information, see [Windows Defender Application Guard overview](../windows-defender-application-guard/wd-app-guard-overview.md).
 
 
-### Microsoft Defender SmartScreen optimization
-A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Microsoft Defender SmartScreen.
+### Windows Defender SmartScreen optimization
+A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Windows Defender SmartScreen.
 
 >[!WARNING]
-> Data collected by Microsoft Defender SmartScreen might be stored and processed outside of the storage location you have selected for your Microsoft Defender ATP data.
+> Data collected by Windows Defender SmartScreen might be stored and processed outside of the storage location you have selected for your Microsoft Defender ATP data.
 
 
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1709 or later.
 
-#### Minimum baseline configuration setting for Microsoft Defender SmartScreen:
+#### Minimum baseline configuration setting for Windows Defender SmartScreen:
 The following settings must be configured with the following settings:
 - Check apps and files: **Warn** or **Block** 
 - SmartScreen for Microsoft Edge: **Warn** or **Block**
@@ -201,27 +201,27 @@ You can take the following actions to increase the overall security score of you
 - Set **SmartScreen for Microsoft Edge** to **Warn** or **Block**
 - Set **SmartScreen for Microsoft store apps** to **Warn** or **Off**
 
-For more information, see [Microsoft Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md).
+For more information, see [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md).
 
 
 
-### Microsoft Defender Firewall optimization
-A well-configured machine must have Microsoft Defender Firewall turned on and enabled for all profiles so that inbound connections are blocked by default. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Microsoft Defender Firewall. 
+### Windows Defender Firewall optimization
+A well-configured machine must have Windows Defender Firewall turned on and enabled for all profiles so that inbound connections are blocked by default. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Windows Defender Firewall. 
 
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1709 or later.
 
-#### Minimum baseline configuration setting for Microsoft Defender Firewall 
+#### Minimum baseline configuration setting for Windows Defender Firewall 
 
-- Microsoft Defender Firewall is turned on for all network connections
-- Secure domain profile by enabling Microsoft Defender Firewall and ensure that Inbound connections are set to Blocked
-- Secure private profile by enabling Microsoft Defender Firewall and ensure that Inbound connections are set to Blocked
-- Secure public profile is configured by enabling Microsoft Defender Firewall and ensure that Inbound connections are set to Blocked
+- Windows Defender Firewall is turned on for all network connections
+- Secure domain profile by enabling Windows Defender Firewall and ensure that Inbound connections are set to Blocked
+- Secure private profile by enabling Windows Defender Firewall and ensure that Inbound connections are set to Blocked
+- Secure public profile is configured by enabling Windows Defender Firewall and ensure that Inbound connections are set to Blocked
 
-For more information on Microsoft Defender Firewall settings, see [Planning settings for a basic firewall policy](https://docs.microsoft.com/windows/security/identity-protection/windows-firewall/planning-settings-for-a-basic-firewall-policy).
+For more information on Windows Defender Firewall settings, see [Planning settings for a basic firewall policy](https://docs.microsoft.com/windows/security/identity-protection/windows-firewall/planning-settings-for-a-basic-firewall-policy).
 
 >[!NOTE]
-> If Microsoft Defender Firewall is not your primary firewall, consider excluding it from the security score calculations and make sure that your third-party firewall is configured in a securely.
+> If Windows Defender Firewall is not your primary firewall, consider excluding it from the security score calculations and make sure that your third-party firewall is configured in a securely.
 
 
 ##### Recommended actions:
@@ -234,7 +234,7 @@ You can take the following actions to increase the overall security score of you
 - Fix sensor data collection
   - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. It's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 
-For more information, see [Microsoft Defender Firewall with Advanced Security](https://docs.microsoft.com/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security).
+For more information, see [Windows Defender Firewall with Advanced Security](https://docs.microsoft.com/windows/security/identity-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 ### BitLocker optimization
 A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for BitLocker. 
@@ -258,17 +258,17 @@ You can take the following actions to increase the overall security score of you
 
 For more information, see [Bitlocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
-### Microsoft Defender Credential Guard optimization
-A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Microsoft Defender Credential Guard.
+### Windows Defender Credential Guard optimization
+A well-configured machine complies to the minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Windows Defender Credential Guard.
 
 >[!IMPORTANT]
 >This security control is only applicable for machines with Windows 10, version 1709 or later. 
 
-#### Minimum baseline configuration setting for Microsoft Defender Credential Guard:
-Well-configured machines for Microsoft Defender Credential Guard meets the following requirements:
+#### Minimum baseline configuration setting for Windows Defender Credential Guard:
+Well-configured machines for Windows Defender Credential Guard meets the following requirements:
 
 - Hardware and software prerequisites are met
-- Microsoft Defender Credential Guard is turned on compatible machines
+- Windows Defender Credential Guard is turned on compatible machines
 
 
 ##### Recommended actions:
@@ -279,7 +279,7 @@ You can take the following actions to increase the overall security score of you
 - Fix sensor data collection
   - The Microsoft Defender ATP service relies on sensor data collection to determine the security state of a machine. The service will not be able to determine the security state of machines that are not reporting sensor data properly. It's important to ensure that sensor data collection is working properly. For more information, see [Fix unhealthy sensors](fix-unhealthy-sensors.md).
 
-For more information, see [Manage Microsoft Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard-manage).
+For more information, see [Manage Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard-manage).
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-sadashboard-belowfoldlink) 
 

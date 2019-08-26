@@ -148,10 +148,10 @@ realTimeProtectionEnabled               : true
     mdatp --health orgId
     ```
 
-2. Install the configuration file on a client machine:
+2. Run the Python script to install the configuration file:
 
     ```bash
-    python WindowsDefenderATPOnboarding.py
+    /usr/bin/python WindowsDefenderATPOnboarding.py
     Generating /Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist ... (You may be required to enter sudos password)
     ```
 

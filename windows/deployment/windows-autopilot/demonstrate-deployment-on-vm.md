@@ -153,7 +153,7 @@ The output of this command should be the name of the network interface you use t
 
 For example, if the command above displays Ethernet but you wish to use Ethernet2, then the first command below would be New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName **Ethernet2**.
 
-###  Use Windows PowerShell to create the demo VM 
+### Use Windows PowerShell to create the demo VM 
 
 All VM data will be created under the current path in your PowerShell prompt. Consider navigating into a new folder before running the following commands.
 

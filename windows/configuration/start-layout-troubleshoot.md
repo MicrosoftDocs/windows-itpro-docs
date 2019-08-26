@@ -233,10 +233,10 @@ XML files can and should be tested locally on a Hyper-V or other virtual machine
 - User-initiated changes to the start layout are not roamed.
 
 Specifically, behaviors include
- - Applications (apps or icons) pinned to the start menu are missing.
- - Entire tile window disappears.
- - The start button fails to respond.
- - If a new roaming user is created, the first logon appears normal, but on subsequent logons, tiles are missing.
+- Applications (apps or icons) pinned to the start menu are missing.
+- Entire tile window disappears.
+- The start button fails to respond.
+- If a new roaming user is created, the first logon appears normal, but on subsequent logons, tiles are missing.
 
 
 ![Example of a working layout](images/start-ts-3.png)

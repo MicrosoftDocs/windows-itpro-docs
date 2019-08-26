@@ -1,14 +1,14 @@
 ---
-title: Advanced Hunting API
+title: Microsoft Defender ATP APIs connection to Power BI
 ms.reviewer: 
-description: Use this API to run advanced queries
-keywords: apis, supported apis, advanced hunting, query
+description: Create custom reports using Power BI
+keywords: apis, supported apis, Power BI, reports
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: mjcaparas
+ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -17,24 +17,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Create custom reports using Power BI (user authentication)
+# Create custom reports using Power BI
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-[!include[Prerelease information](prerelease.md)]
+In this section you will learn create a Power BI report on top of Microsoft Defender ATP APIs.
 
-Run advanced queries and show results in Microsoft Power BI. Please read about [Advanced Hunting API](run-advanced-query-api.md) before.
+The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs (e.g. Machine Actions, Alerts, etc..)
 
-In this section we share Power BI query sample to run a query using **user token**.
-
-If you want to use **application token** instead please refer to [this](run-advanced-query-sample-power-bi-app-token.md) tutorial.
-
-## Before you begin
-You first need to [create an app](exposed-apis-create-app-nativeapp.md).
-
-## Run a query
+## Connect Power BI to Advanced Hunting API
 
 - Open Microsoft Power BI
 
@@ -46,18 +39,15 @@ You first need to [create an app](exposed-apis-create-app-nativeapp.md).
 
     ![Image of open advanced editor](images/power-bi-open-advanced-editor.png)
 
-- Copy the below and paste it in the editor, after you update the values of Query
+- Copy the below and paste it in the editor:
 
-	```
+```
 	let 
+		AdvancedHuntingQuery = "MiscEvents | where ActionType contains 'Anti'",
 
-		Query = "MachineInfo | where EventTime > ago(7d) | summarize EventCount=count(), LastSeen=max(EventTime) by MachineId",
+		HuntingUrl = "https://api.securitycenter.windows.com/api/advancedqueries",
 
-		FormattedQuery= Uri.EscapeDataString(Query),
-
-		AdvancedHuntingUrl = "https://api.securitycenter.windows.com/api/advancedqueries?key=" & FormattedQuery,
-
-		Response = Json.Document(Web.Contents(AdvancedHuntingUrl)),
+		Response = Json.Document(Web.Contents(HuntingUrl, [Query=[key=AdvancedHuntingQuery]])),
 
 		TypeMap = #table(
 			{ "Type", "PowerBiType" },
@@ -88,11 +78,9 @@ You first need to [create an app](exposed-apis-create-app-nativeapp.md).
 
 	in Table
 
-	```
+```
 
 - Click **Done**
-
-    ![Image of create advanced query](images/power-bi-create-advanced-query.png)
 
 - Click **Edit Credentials**
 
@@ -108,13 +96,32 @@ You first need to [create an app](exposed-apis-create-app-nativeapp.md).
 
     ![Image of set credentials](images/power-bi-set-credentials-organizational-cont.png)
 
-- View the results of your query
+- Now the results of your query will appear as table and you can start build visualizations on top of it!
 
-    ![Image of query results](images/power-bi-query-results.png)
+- You can duplicate this table, rename it and edit the Advanced Hunting query inside to get any data you would like.
+
+## Connect Power BI to OData APIs
+
+- The only difference from the above example is the query inside the editor. 
+
+- Copy the below and paste it in the editor to pull all **Machine Actions** from your organization:
+
+```
+	let
+
+		Query = "MachineActions",
+
+		Source = OData.Feed("https://api.securitycenter.windows.com/api/" & Query, null, [Implementation="2.0", MoreColumns=true])
+	in
+		Source
+
+```
+
+- You can do the same for **Alerts** and **Machines**.
+
+- You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md)
 
 ## Related topic
-- [Create custom Power BI reports with app authentication](run-advanced-query-sample-power-bi-app-token.md)
 - [Microsoft Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
-- [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
-- [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)
+- [Using OData Queries](exposed-apis-odata-samples.md)

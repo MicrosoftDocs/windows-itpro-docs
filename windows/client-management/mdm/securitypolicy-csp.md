@@ -199,7 +199,7 @@ The following security roles are supported.
 
 Setting a security policy:
 
-``` syntax
+```xml
 <wap-provisioningdoc>
     <characteristic type="SecurityPolicy">
         <parm name="4141" value="0"/>
@@ -209,7 +209,7 @@ Setting a security policy:
 
 Querying a security policy:
 
-``` syntax
+```xml
 <wap-provisioningdoc>
     <characteristic type="SecurityPolicy">
         <parm-query name="4141"/>
@@ -222,7 +222,7 @@ Querying a security policy:
 
 Setting a security policy:
 
-``` syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
     <SyncHdr>
     …
@@ -245,7 +245,7 @@ Setting a security policy:
 
 Querying a security policy:
 
-``` syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
     <SyncHdr>
     …
