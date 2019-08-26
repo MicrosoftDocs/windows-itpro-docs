@@ -36,6 +36,8 @@ System Center Configuration Manager (SCCM) (current branch) version 1606, has UI
 
 >[!NOTE]
 > If you’re using SCCM client version 1606 with server version 1610 or above, you must upgrade the client version to match the server version.
+> Starting with version 1606 of Configuration Manager, see [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/sccm/protect/deploy-use/windows-defender-advanced-threat-protection) for ATP configuration.
+
 
 <span id="sccm1602"/>
 ## Onboard Windows 10 machines using System Center Configuration Manager earlier versions
