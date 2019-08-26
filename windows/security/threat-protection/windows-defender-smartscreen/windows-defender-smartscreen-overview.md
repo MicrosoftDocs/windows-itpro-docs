@@ -53,7 +53,7 @@ Windows Defender SmartScreen provide an early warning system against websites th
 
 - **Management through Group Policy and Microsoft Intune.** SmartScreen supports using both Group Policy and Microsoft Intune settings. For more info about all available settings, see [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen-available-settings.md).
 
-- **Blocking URLs associated with potentially unwanted applications.** When running the next major version of Microsoft Edge (based on Chromium), SmartScreen blocks URLs associated with potentially unwanted applications, or PUAs. For more information on blocking URLs associated with PUAs, see [Detect and block potentially unwanted applications](../windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md).
+- **Blocking URLs associated with potentially unwanted applications.** In the next major version of Microsoft Edge (based on Chromium), SmartScreen will blocks URLs associated with potentially unwanted applications, or PUAs. For more information on blocking URLs associated with PUAs, see [Detect and block potentially unwanted applications](../windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md).
 
 ## Viewing Windows Defender SmartScreen anti-phishing events
 

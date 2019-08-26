@@ -116,9 +116,14 @@ Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA
 
 ## URL blocking
 
-URL blocking is a new feature, exclusive to the next major version of Microsoft Edge, which is Chromium-based. URL blocking is provided via [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md). You can configure it by [...]
+URL blocking is a new feature, exclusive to the next major version of Microsoft Edge, which is Chromium-based and currently in public preview. URL blocking is provided via [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md). This feature is off by default, but can easily be turned on in Microsoft Edge (Chromium-based).
 
-If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen demo pages.
+1. From the tool bar, select **Settings and more** > **Settings**
+1. Select **Privacy and services**
+1. Under the **Services** section, you can toggle **Poentially unwanted app blocking** on or off
+
+> [!TIP]
+> If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen demo pages.
 
 ## Related topics
 
