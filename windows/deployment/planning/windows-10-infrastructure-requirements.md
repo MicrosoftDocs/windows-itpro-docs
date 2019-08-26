@@ -10,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -48,7 +49,8 @@ For System Center Configuration Manager, Windows 10 support is offered with var
 | System Center Configuration Manager 2012 R2 | Yes, with SP1 and CU1  | Yes, with SP1, CU1, and the ADK for Windows 10 |
 
 
->Note: Configuration Manager 2012 supports Windows 10 version 1507 (build 10.0.10240) and 1511 (build 10.0.10586) for the lifecycle of these builds. Future releases of Windows 10 CB/CBB are not supported With Configuration Manager 2012, and will require System Center Configuration Manager current branch for supported management. 
+> [!NOTE]
+> Configuration Manager 2012 supports Windows 10 version 1507 (build 10.0.10240) and 1511 (build 10.0.10586) for the lifecycle of these builds. Future releases of Windows 10 CB/CBB are not supported With Configuration Manager 2012, and will require System Center Configuration Manager current branch for supported management. 
  
 
 For more details about System Center Configuration Manager support for Windows 10, see [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](../deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md).
