@@ -631,16 +631,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md",
-"redirect_url": "/windows/security/threat-protection/device-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/security/threat-protection/device-guard/optional-create-a-code-signing-certificate-for-windows-defender-application-control.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/create-code-signing-cert-for-windows-defender-application-control",
 "redirect_document_id": true
@@ -896,9 +886,8 @@
 "redirect_document_id": true
 },
 {
-"q": "Where did we put this one?",
-"source_path": "windows/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard",
+"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/evaluate-windows-defender",
 "redirect_document_id": true
 },
 {
@@ -922,12 +911,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/threat-protection/windows-defender-exploit-guard/graphics.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/graphics",
-"redirect_document_id": true
-},
-{
-"q": "Deleted",
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/graphics.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/graphics",
 "redirect_document_id": true
@@ -958,12 +941,6 @@
 "redirect_document_id": true
 },
 {
-"q": "Deleted",
-"source_path": "windows/threat-protection/windows-defender-exploit-guard/prerelease.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/prerelease",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/troubleshoot-asr.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr",
 "redirect_document_id": true
@@ -989,10 +966,9 @@
 "redirect_document_id": true
 },
 {
-"q": "Deleted",
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard",
-"redirect_document_id": true
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/advanced-features-windows-defender-advanced-threat-protection.md",
@@ -3222,16 +3198,6 @@
 {
 "source_path": "windows/device-security/device-guard/deploy-catalog-files-to-support-windows-defender-application-control.md",
 "redirect_url": "/windows/security/threat-protection/device-guard/deploy-catalog-files-to-support-windows-defender-application-control",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/device-security/device-guard/deploy-device-guard-enable-virtualization-based-security.md",
-"redirect_url": "/windows/security/threat-protection/device-guard/deploy-device-guard-enable-virtualization-based-security",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/device-security/device-guard/deploy-device-guard-enable-virtualization-based-security.md",
-"redirect_url": "/windows/security/threat-protection/device-guard/deploy-device-guard-enable-virtualization-based-security",
 "redirect_document_id": true
 },
 {
@@ -9800,6 +9766,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/device-security/device-guard/deploy-device-guard-enable-virtualization-based-security.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/deploy-device-guard-enable-virtualization-based-security",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/keep-secure/deploy-manage-report-windows-defender-antivirus.md",
 "redirect_url": "/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus",
 "redirect_document_id": true
@@ -12322,11 +12293,6 @@
 {
 "source_path": "windows/keep-secure/require-encryption-when-accessing-sensitive-network-resources.md",
 "redirect_url": "/windows/access-protection/windows-firewall/require-encryption-when-accessing-sensitive-network-resources",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/keep-secure/requirements-and-deployment-planning-guidelines-for-device-guard.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity",
 "redirect_document_id": true
 },
 {
