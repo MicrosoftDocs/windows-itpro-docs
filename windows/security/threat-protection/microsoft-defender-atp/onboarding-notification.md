@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Create a notification rule so that when a local script is used, you'll be notified. 
+Create a notification rule so that when a local onboarding or offboardiing script is used, you'll be notified. 
 
 ## Before you begin
 You'll need to have access to:
@@ -38,121 +38,141 @@ You'll need to have access to:
     ![Image of flow](images/new-flow.png)
 
 
-3. Create the flow:
+3. Build a scheduled flow.
+   1. Enter a flow name.
+   2. Specify the start and time.
+   3. Specify the frequency. For example, every 5 minutes.
 
-    ![Image of the notification flow](images/flow2.png)
+    ![Image of the notification flow](images/build-flow.png)
 
-4. Set the recurrence:
+4. Select the + button to add a new action. The new action will be an HTTP request to the Microsoft Defender ATP security center machine(s) API. You can also replace it with the out-of-the-box "WDATP Connector" (action: "Machines - Get list of machines"). 
 
-    ![Image of flow recurrence](images/flow-recurrence.png)
-
-
-5. The example below uses an HTTP call to Microsoft Defender Security Center API. You can also replace it with the out-of-the-box "WDATP Connector" (action: "Machines – Get list of machines").
-    
-    ![Image of HTTP](images/http-flow.png)
-
-6. Set the JSON file with the following value:
+    ![Image of recurrence and add action](images/recurrence-add.png)
 
 
-```
-{
-    "type": "object",
-    "properties": {
-        "@@odata.context": {
-            "type": "string"
-        },
-        "value": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {
-                        "type": "string"
+5. Enter the following HTTP fields:
+
+   - Method: "GET" as a value to get the list of machines.
+   - URI: Enter `https://api.securitycenter.windows.com/api/machines`.
+   - Authentication: Select "Active Directory OAuth".
+   - Tenant: Sign-in to http://portal.azure.com and navigate to **Azure Active Directory > App Registrations** and get the Tenant ID value.
+   - Audience: `https://securitycenter.onmicrosoft.com/windowsatpservice\`
+   - Client ID: Sign-in to http://portal.azure.com and navigate to **Azure Active Directory > App Registrations** and  get the Client ID value.
+   - Credential Type: Select "Secret".
+   - Secret: Sign-in to http://portal.azure.com and navigate tnd navigate to **Azure Active Directory > App Registrations** and get the Tenant ID value.
+
+    ![Image of the HTTP conditions](images/http-conditions.png)
+
+
+6. Add a new step by selecting **Add new action** then search for **Data Operations** and select 
+**Parse JSON**.
+
+    ![Image of data operations](images/data-operations.png)
+
+7. Add Body in the **Content** field.
+
+    ![Image of parse JSON](images/parse-json.png)
+
+8. Select the **Use sample payload to generate schema** link.
+
+    ![Image of parse json with payload](images/parse-json-schema.png)
+
+9. Copy and paste the following JSON snippet:
+
+    ```
+    {
+        "type": "object",
+        "properties": {
+            "@@odata.context": {
+                "type": "string"
+            },
+            "value": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "computerDnsName": {
+                            "type": "string"
+                        },
+                        "firstSeen": {
+                            "type": "string"
+                        },
+                        "lastSeen": {
+                            "type": "string"
+                        },
+                        "osPlatform": {
+                            "type": "string"
+                        },
+                        "osVersion": {},
+                        "lastIpAddress": {
+                            "type": "string"
+                        },
+                        "lastExternalIpAddress": {
+                            "type": "string"
+                        },
+                        "agentVersion": {
+                            "type": "string"
+                        },
+                        "osBuild": {
+                            "type": "integer"
+                        },
+                        "healthStatus": {
+                            "type": "string"
+                        },
+                        "riskScore": {
+                            "type": "string"
+                        },
+                        "exposureScore": {
+                            "type": "string"
+                        },
+                        "aadDeviceId": {},
+                        "machineTags": {
+                            "type": "array"
+                        }
                     },
-                    "computerDnsName": {
-                        "type": "string"
-                    },
-                    "firstSeen": {
-                        "type": "string"
-                    },
-                    "lastSeen": {
-                        "type": "string"
-                    },
-                    "osPlatform": {
-                        "type": "string"
-                    },
-                    "osVersion": {},
-                    "lastIpAddress": {
-                        "type": "string"
-                    },
-                    "lastExternalIpAddress": {
-                        "type": "string"
-                    },
-                    "agentVersion": {
-                        "type": "string"
-                    },
-                    "osBuild": {
-                        "type": "integer"
-                    },
-                    "healthStatus": {
-                        "type": "string"
-                    },
-                    "riskScore": {
-                        "type": "string"
-                    },
-                    "exposureScore": {
-                        "type": "string"
-                    },
-                    "aadDeviceId": {},
-                    "machineTags": {
-                        "type": "array"
-                    }
-                },
-                "required": [
-                    "id",
-                    "computerDnsName",
-                    "firstSeen",
-                    "lastSeen",
-                    "osPlatform",
-                    "osVersion",
-                    "lastIpAddress",
-                    "lastExternalIpAddress",
-                    "agentVersion",
-                    "osBuild",
-                    "healthStatus",
-                    "rbacGroupId",
-                    "rbacGroupName",
-                    "riskScore",
-                    "exposureScore",
-                    "aadDeviceId",
-                    "machineTags"
-                ]
+                    "required": [
+                        "id",
+                        "computerDnsName",
+                        "firstSeen",
+                        "lastSeen",
+                        "osPlatform",
+                        "osVersion",
+                        "lastIpAddress",
+                        "lastExternalIpAddress",
+                        "agentVersion",
+                        "osBuild",
+                        "healthStatus",
+                        "rbacGroupId",
+                        "rbacGroupName",
+                        "riskScore",
+                        "exposureScore",
+                        "aadDeviceId",
+                        "machineTags"
+                    ]
+                }
             }
         }
     }
-}
-```
 
-   
-   ![Image of JSON](images/parse-json-flow.png)
+    ```
 
-7.  Extract the values from the JSON call and check if the onboarded machine(s) is / are already registered at the SharePoint list as an example:
+10.  Extract the values from the JSON call and check if the onboarded machine(s) is / are already registered at the SharePoint list as an example:
 - If yes, no notification will be triggered
 - If no, will register the new onboarded machine(s) in the SharePoint list and a notification will be sent to the Microsoft Defender ATP admin
 
     ![Image of apply to each](images/flow-apply.png)
 
+    ![Image of apply to each  with get items](images/apply-to-each.png)
 
+11. Under **Condition**, add the following expression: "length(body('Get_items')?['value'])" and set the condition to equal to 0.
 
-    ![Image of apply to each  with get items](imags/apply-to-each.png)
-
-    ![Image of condition](imags/condition1.png)
-
-    ![Image of condition](imags/condition2.png)
-
-    ![Image of send email](imags/send-email.png)
-
-    
+    ![Image of apply to each condition](images/apply-to-each-value.png)  
+    ![Image of condition](images/conditions-2.png) 
+    ![Image of condition](images/condition3.png)  
+    ![Image of send email](images/send-email.png)
 
 ## Alert notification
 The following image is an example of an email notification.
@@ -167,13 +187,13 @@ The following image is an example of an email notification.
       - Take all machines last seen in the past 7 days. 
 
 - For each machine: 
-    - If last seen property is on the one hour interval of [-7 days, -7days + 60 minutes ] -> Alert for offboarding possibility 
+    - If last seen property is on the one hour interval of [-7 days, -7days + 60 minutes ] -> Alert for offboarding possibility.
     - If first seen is on the past hour -> Alert for onboarding.
 
-In this solution you will not have duplicate alerts too:
+In this solution you will not have duplicate alerts:
 There are tenants that have numerous machines. Getting all those machines might be very expensive and might require paging.
 
 You can split it to two queries: 
-1)	For offboarding take only this interval using the OData $filter and only notify if the conditions are met.
-2)	Take all machines last seen in the past hour and check first seen property for them (if the first seen property is on the past hour, the last seen must be there too. ) 
+1.	For offboarding take only this interval using the OData $filter and only notify if the conditions are met.
+2.	Take all machines last seen in the past hour and check first seen property for them (if the first seen property is on the past hour, the last seen must be there too). 
 
