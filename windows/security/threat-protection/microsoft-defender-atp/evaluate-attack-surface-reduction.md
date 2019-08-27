@@ -9,6 +9,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+audience: ITPro
 author: levinec
 ms.author: ellevin
 ms.date: 04/02/2019
@@ -20,14 +21,14 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Attack surface reduction rules help prevent actions and apps that are typically used by exploit-seeking malware to infect machines. Attack surface reduction rules are supported on Windows Server 2019 as well as Windows 10 clients.
 
 This topic helps you evaluate attack surface reduction rules. It explains how to enable audit mode so you can test the feature directly in your organization.
 
->[!TIP]
->You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
+> [!TIP]
+> You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
 ## Use audit mode to measure impact
 
@@ -43,42 +44,27 @@ Set-MpPreference -AttackSurfaceReductionRules_Actions AuditMode
 
 This enables all attack surface reduction rules in audit mode.
 
->[!TIP]
->If you want to fully audit how attack surface reduction rules will work in your organization, you'll need to use a management tool to deploy this setting to machines in your network(s).
-You can also use Group Policy, Intune, or MDM CSPs to configure and deploy the setting, as described in the main [Attack surface reduction rules topic](attack-surface-reduction-exploit-guard.md).
+> [!TIP]
+> If you want to fully audit how attack surface reduction rules will work in your organization, you'll need to use a management tool to deploy this setting to machines in your network(s).
+You can also use Group Policy, Intune, or MDM CSPs to configure and deploy the setting, as described in the main [Attack surface reduction rules topic](attack-surface-reduction.md).
 
 ## Review attack surface reduction events in Windows Event Viewer
 
 To review apps that would have been blocked, open Event Viewer and filter for Event ID 1121 in the Microsoft-Windows-Windows-Defender/Operational log. The following table lists all network protection events.
 
-
-| Event ID | Description |
-|----------|-------------|
-|5007      | Event when settings are changed |
-| 1121     | Event when an attack surface reduction rule fires in block mode |
-| 1122     | Event when an attack surface reduction rule fires in audit mode |
+ Event ID | Description
+-|-
+ 5007 | Event when settings are changed
+ 1121 | Event when an attack surface reduction rule fires in block mode
+ 1122 | Event when an attack surface reduction rule fires in audit mode
 
 ## Customize attack surface reduction rules
 
-During your evaluation, you may wish to configure each rule individualy or exclude certain files and processes from being evaluated by the feature.
+During your evaluation, you may wish to configure each rule individually or exclude certain files and processes from being evaluated by the feature.
 
 See the [Customize attack surface reduction rules](customize-attack-surface-reduction.md) topic for information on configuring the feature with management tools, including Group Policy and MDM CSP policies.
 
 ## Related topics
-- [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction-exploit-guard.md)
-- [Evaluate Windows Defender Exploit Guard](evaluate-windows-defender-exploit-guard.md)
-- [Use audit mode to evaluate Windows Defender Exploit Guard](audit-windows-defender-exploit-guard.md)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [Reduce attack surfaces with attack surface reduction rules](attack-surface-reduction.md)
+* [Use audit mode to evaluate Windows Defender](audit-windows-defender.md)
