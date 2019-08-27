@@ -759,7 +759,7 @@
 "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-np.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-np",
 "redirect_document_id": true
-}
+},
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard",
