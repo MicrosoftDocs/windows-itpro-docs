@@ -58,7 +58,7 @@ From that page, you can do any of the following depending on what you need to do
 
 You can report on a false positive when you see any vague, inaccurate, incomplete, or already remediated information in the machine page, under **Security recommendation** column.
 
-Click **:** then select the inaccuracy category from the dropdown menu. The feedback is immediately sent to the Threat & Vulnerability Management experts with its context.
+Click **:** then select the inaccuracy category from the dropdown menu. Your feedback is immediately sent to the Threat & Vulnerability Management experts with its context.
 
 ![Report inaccuracy from the machine page within the Security recommendation column](images/tvm_report_inaccuracy.png)
 
