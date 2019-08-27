@@ -43,6 +43,8 @@ Apps can be enlightened or unenlightened:
 ## List of enlightened Microsoft apps
 Microsoft has made a concerted effort to enlighten several of our more popular apps, including the following:
 
+- Microsoft 3D Viewer
+
 - Microsoft Edge
 
 - Internet Explorer 11
@@ -85,6 +87,7 @@ You can add any or all of the enlightened Microsoft apps to your allowed apps li
 
 |                     Product name                     |                                                                                                                                                                                                                        App info                                                                                                                                                                                                                        |
 |------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                    Microsoft 3D Viewer                    |                                                                                                                                     **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.3dviewer<br>**App Type:** Universal app                                                                                                                                      |
 |                    Microsoft Edge                    |                                                                                                                                     **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.MicrosoftEdge<br>**App Type:** Universal app                                                                                                                                      |
 |                   Microsoft People                   |                                                                                                                                         **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.People<br>**App Type:** Universal app                                                                                                                                         |
 |                     Word Mobile                      |                                                                                                                                      **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.Word<br>**App Type:** Universal app                                                                                                                                       |
