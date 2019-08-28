@@ -106,7 +106,7 @@ This event generates every time the [Windows Filtering Platform](https://docs.mi
 
     -   127.0.0.1 , ::1 - localhost
 
--   **Source Port** \[Type = UnicodeString\]**:** the port number used by the application.
+-   **Source Port** \[Type = UnicodeString\]**:** The port number used by the application.
 
 -   **Protocol** \[Type = UInt32\]: the protocol number being used.
 
