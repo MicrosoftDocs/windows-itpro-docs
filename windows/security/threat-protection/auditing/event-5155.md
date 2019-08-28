@@ -33,7 +33,7 @@ This event generates every time the [Windows Filtering Platform](https://docs.mi
 <br clear="all">
 
 ***Event XML:***
-```
+```xml
 <Event
     xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
     <System>
