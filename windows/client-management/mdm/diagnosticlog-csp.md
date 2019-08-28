@@ -76,6 +76,7 @@ Here are the links to the DDFs:
 
 -   [DiagnosticLog CSP version 1.2](diagnosticlog-ddf.md#version-1-2)
 -   [DiagnosticLog CSP version 1.3](diagnosticlog-ddf.md#version-1-3)
+-   [DiagnosticLog CSP version 1.4](diagnosticlog-ddf.md#version-1-4)
 
 The following diagram shows the DiagnosticLog CSP in tree format.
 
