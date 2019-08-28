@@ -334,6 +334,8 @@
 ##### [Run a detection test on a newly onboarded machine](microsoft-defender-atp/run-detection-test.md)
 ##### [Run simulated attacks on machines](microsoft-defender-atp/attack-simulations.md)
 ##### [Configure proxy and Internet connectivity settings](microsoft-defender-atp/configure-proxy-internet.md)
+##### [Create an onboarding or offboarding notification rule](microsoft-defender-atp/onboarding-notification.md)
+
 
 ##### [Troubleshoot onboarding issues]()
 ###### [Troubleshoot issues during onboarding](microsoft-defender-atp/troubleshoot-onboarding.md)
