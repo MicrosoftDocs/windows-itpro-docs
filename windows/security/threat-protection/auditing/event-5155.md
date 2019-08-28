@@ -86,7 +86,7 @@ This event generates every time the [Windows Filtering Platform](https://docs.mi
 
 <!-- -->
 
--   **Application Name** \[Type = UnicodeString\]**:** full path and the name of the executable for the process.
+-   **Application Name** \[Type = UnicodeString\]**:** Full path and the name of the executable for the process.
 
     Logical disk is displayed in format \\device\\harddiskvolume\#. You can get all local volume numbers by using **diskpart** utility. The command to get volume numbers using diskpart is “**list volume”**:
 
