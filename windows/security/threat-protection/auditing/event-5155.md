@@ -130,7 +130,7 @@ This event generates every time the [Windows Filtering Platform](https://docs.mi
 
 **Filter Information:**
 
--   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID which blocks the application from binding to the port. By default, Windows firewall won't prevent a port from binding by an application, and if this application doesn’t match any filters, you will get value 0 in this field.
+-   **Filter Run-Time ID** \[Type = UInt64\]: A unique filter ID which blocks the application from binding to the port. By default, Windows firewall won't prevent a port from binding to an application, and if this application doesn’t match any filters, you will get a 0 value in this field.
 
     To find a specific Windows Filtering Platform filter by ID, you need to execute the following command: **netsh wfp show filters**. As a result of this command, a **filters.xml** file will be generated. You need to open this file and find the specific substring with the required filter ID (**&lt;filterId&gt;**), for example:
 
