@@ -63,7 +63,6 @@ This event generates every time the [Windows Filtering Platform](https://docs.mi
         <Data Name="LayerRTID">40</Data>
     </EventData>
 </Event>
-
 ```
 
 ***Required Server Roles:*** None.
