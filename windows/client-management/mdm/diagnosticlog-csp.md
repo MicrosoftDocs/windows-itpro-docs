@@ -801,17 +801,17 @@ The data type is Base64.
 The supported operation is Get.
 
 <a href="" id="policy"></a>**Policy**  
-Added in Windows 10, version 1903. Root node to control settings for channels in Event Log.
+Added in version 1.4 of the CSP in Windows 10, version 1903. Root node to control settings for channels in Event Log.
 
 The supported operation is Get.
 
 <a href="" id="policy-channels"></a>**Policy/Channels**  
-Added in Windows 10, version 1903. Node that contains Event Log channel settings.
+Added in version 1.4 of the CSP in Windows 10, version 1903. Node that contains Event Log channel settings.
 
 The supported operation is Get.
 
 <a href="" id="policy-channels-channelname"></a>**Policy/Channels/_ChannelName_**  
-Added in Windows 10, version 1903. Dynamic node to represent a registered channel. The node name must be a valid Windows event log channel name, such as ``Microsoft-Client-Licensing-Platform%2FAdmin``. When specifying the name in the LocURI, it must be URL encoded, otherwise it may unexpectedly translate into a different URI.
+Added in version 1.4 of the CSP in Windows 10, version 1903. Dynamic node to represent a registered channel. The node name must be a valid Windows event log channel name, such as ``Microsoft-Client-Licensing-Platform%2FAdmin``. When specifying the name in the LocURI, it must be URL encoded, otherwise it may unexpectedly translate into a different URI.
 
 Supported operations are Add, Delete, and Get.
 
@@ -874,7 +874,7 @@ Get **Channel**
 </SyncML>
 ```
 <a href="" id="policy-channels-channelname-maximumfilesize"></a>**Policy/Channels/_ChannelName_/MaximumFileSize**  
-Added in Windows 10, version 1903. This policy setting specifies the maximum size of the log file in megabytes.
+Added in version 1.4 of the CSP in Windows 10, version 1903. This policy setting specifies the maximum size of the log file in megabytes.
 
 If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte and 2 terabytes in megabyte increments.
 
@@ -970,7 +970,7 @@ Replace **MaximumFileSize**
 ```
 
 <a href="" id="policy-channels-channelname-sddl"></a>**Policy/Channels/_ChannelName_/SDDL**  
-Added in Windows 10, version 1903. This policy setting represents SDDL string controlling access to the channel.
+Added in version 1.4 of the CSP in Windows 10, version 1903. This policy setting represents SDDL string controlling access to the channel.
 
 Supported operations are Add, Delete, Get, and Replace.
 
@@ -1068,7 +1068,7 @@ Replace **SDDL**
 ```
 
 <a href="" id="policy-channels-channelname-actionwhenfull"></a>**Policy/Channels/_ChannelName_/ActionWhenFull**  
-Added in Windows 10, version 1903. This policy setting controls Event Log behavior when the log file reaches its maximum size. 
+Added in version 1.4 of the CSP in Windows 10, version 1903. This policy setting controls Event Log behavior when the log file reaches its maximum size. 
 
 Supported operations are Add, Delete, Get, and Replace.
 
@@ -1169,7 +1169,7 @@ Replace **ActionWhenFull**
 ```
 
 <a href="" id="policy-channels-channelname-enabled"></a>**Policy/Channels/_ChannelName_/Enabled**  
-Added in Windows 10, version 1903. This policy setting specifies whether the channel should be enabled or disabled.
+Added in version 1.4 of the CSP in Windows 10, version 1903. This policy setting specifies whether the channel should be enabled or disabled.
 
 Supported operations are Add, Delete, Get, and Replace.
 
@@ -1271,12 +1271,12 @@ Replace **Enabled**
 The DiagnosticLog CSP is used for triggering devices to upload existing event logs, log files, and registry values to cloud storage. The following section describes the nodes for the DiagnosticArchive functionality.
 
 <a href="" id="diagnosticarchive"></a>**DiagnosticArchive**  
-Added in Windows 10, version 1903. Root note for the DiagnosticArchive functionality. 
+Added in version 1.4 of the CSP in Windows 10, version 1903. Root note for the DiagnosticArchive functionality. 
 
 The supported operation is Get.
 
 <a href="" id="diagnosticarchive-archivedefinition"></a>**DiagnosticArchive/ArchiveDefinition**  
-Added in Windows 10, version 1903. 
+Added in version 1.4 of the CSP in Windows 10, version 1903. 
 
 The supported operations are Add and Execute.
 
@@ -1312,7 +1312,7 @@ Where:
 - SasUrl is generated from the Azure Blob Storage UX in Azure such that it will allow write access to the blob to upload the zip file created by all the actions specified. 
 
 <a href="" id="diagnosticarchive-archiveresults"></a>**DiagnosticArchive/ArchiveResults**  
-Added in Windows 10, version 1903. This policy setting displays the results of the last archive run. 
+Added in version 1.4 of the CSP in Windows 10, version 1903. This policy setting displays the results of the last archive run. 
 
 The supported operation is Get.
 
