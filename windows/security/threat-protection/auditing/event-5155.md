@@ -94,7 +94,7 @@ This event generates every time the [Windows Filtering Platform](https://docs.mi
 
 **Network Information:**
 
--   **Source Address** \[Type = UnicodeString\]**:** the local IP address of the computer running the application.
+-   **Source Address** \[Type = UnicodeString\]**:** The local IP address of the computer running the application.
 
     -   IPv4 Address
 
