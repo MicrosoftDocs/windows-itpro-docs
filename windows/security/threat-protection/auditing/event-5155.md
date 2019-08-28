@@ -138,7 +138,7 @@ This event generates every time the [Windows Filtering Platform](https://docs.mi
 
 -   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](https://msdn.microsoft.com/library/windows/desktop/aa363971(v=vs.85).aspx) layer name.
 
--   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find specific Windows Filtering Platform layer ID you need to execute the following command: **netsh wfp show state**. As result of this command **wfpstate.xml** file will be generated. You need to open this file and find specific substring with required layer ID (**&lt;layerId&gt;**)**,** for example:
+-   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find a specific Windows Filtering Platform layer ID, you need to execute the following command: **netsh wfp show state**. As result of this command, a **wfpstate.xml** file will be generated. You need to open this file and find the specific substring with the required layer ID (**&lt;layerId&gt;**), for example:
 
 <img src="images/wfpstate-xml.png" alt="Wfpstate xml illustration" width="1563" height="780" />
 
