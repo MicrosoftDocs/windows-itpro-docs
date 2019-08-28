@@ -28,7 +28,7 @@ You can add your own filters using the WFP APIs to block listen to reproduce thi
 
 ***Event Description:***
 
-This event generates every time [Windows Filtering Platform](https://docs.microsoft.com/windows/win32/fwp/windows-filtering-platform-start-page) blocks an application or service from listening on a port for incoming connections.
+This event generates every time the [Windows Filtering Platform](https://docs.microsoft.com/windows/win32/fwp/windows-filtering-platform-start-page) blocks an application or service from listening on a port for incoming connections.
 
 <br clear="all">
 
