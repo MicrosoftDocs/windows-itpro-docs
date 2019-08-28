@@ -344,7 +344,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
 ## Plug-in profile example
 
 
-``` syntax
+```xml
 <VPNProfile>
     <PluginProfile>
         <ServerUrlList>testserver1.contoso.com;testserver2.contoso..com</ServerUrlList>

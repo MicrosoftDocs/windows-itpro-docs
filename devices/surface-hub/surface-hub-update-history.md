@@ -2,8 +2,6 @@
 title: Surface Hub update history
 description: Surface Hub update history
 ms.assetid: d66a9392-2b14-4cb2-95c3-92db0ae2de34
-ms.reviewer:
-manager:
 keywords:
 ms.prod: surface-hub
 ms.sitesec: library
@@ -25,6 +23,18 @@ We'll be refreshing this page as new updates are released, so stay tuned for the
 Please refer to the “[Surface Hub Important Information](https://support.microsoft.com/products/surface-devices/surface-hub)” page for related topics on current and past releases that may require your attention.
 
 ## Windows 10 Team Creators Update 1703
+
+<details>
+<summary>June 18, 2019—update for Team edition based on KB4503289*  (OS Build 15063.1897)</summary>
+
+This update to the Surface Hub includes quality improvements and security fixes. Key updates to Surface Hub, not already outlined in [Windows 10 Update History](https://support.microsoft.com/help/4018124/windows-10-update-history), include:
+
+* Addresses an issue with log collection for Microsoft Surface Hub 2S.
+* Addresses an issue preventing a user from signing in to a Microsoft Surface Hub device with an Azure Active Directory account. This issue occurs because a previous session did not end successfully.
+
+Please refer to the [Surface Hub Admin guide](https://docs.microsoft.com/surface-hub/) for enabling/disabling device features and services.
+*[KB4503289](https://support.microsoft.com/help/4503289)
+</details>
 
 <details>
 <summary>May 28, 2019—update for Team edition based on KB4499162*  (OS Build 15063.1835)</summary>

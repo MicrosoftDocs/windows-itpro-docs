@@ -1,10 +1,11 @@
 ---
 title: Microsoft Edge - Search engine customization group policies
 description: Microsoft Edge, by default, uses the search engine specified in App settings, which lets users make changes. You can prevent users from making changes and still use the search engine specified in App settings by disabling the Allow search engine customization policy. You can also use the policy-set search engine specified in the OpenSearch XML file in which you can configure up to five additional search engines and setting any one of them as the default.  
+audience: itpro
 manager: dansimp
 ms.author: eravena
 author: eavena
-ms.date: 10/02/2018
+ms.prod: edge
 ms.reviewer: 
 ms.localizationpriority: medium
 ms.topic: reference

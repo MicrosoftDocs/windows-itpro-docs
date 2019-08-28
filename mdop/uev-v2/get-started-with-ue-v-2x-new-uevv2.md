@@ -193,7 +193,7 @@ You’ll need to deploy a settings storage location, a standard network share wh
 
          
 
-**Security Note:  **
+**Security Note:**
 
 If you create the settings storage share on a computer running a Windows Server operating system, configure UE-V to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable this additional security, specify this setting in the Windows Server Registry Editor:
 

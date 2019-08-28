@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
+audience: itpro
 author: greg-lindsay
 ms.topic: article
 ---
@@ -28,7 +29,7 @@ This topic provides an overview of new solutions and online content related to d
 
 ## Recent additions to this page
 
-[SetupDiag](#setupdiag) 1.4.1 is released.<br>
+[SetupDiag](#setupdiag) 1.6 is released.<br>
 The [Windows ADK for Windows 10, version 1903](https://docs.microsoft.com/windows-hardware/get-started/adk-install) is available.<br>
 New [Windows Autopilot](#windows-autopilot) content is available.<br>
 [Windows 10 Subscription Activation](#windows-10-subscription-activation) now supports Windows 10 Education.
@@ -94,7 +95,7 @@ With Windows 10, version 1903, you can step-up from Windows 10 Pro Education to 
 
 [SetupDiag](upgrade/setupdiag.md) is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
 
-SetupDiag version 1.4.1 was released on 5/17/2019.
+SetupDiag version 1.6.0.42 was released on 08/08/2019.
 
 ### Upgrade Readiness
 

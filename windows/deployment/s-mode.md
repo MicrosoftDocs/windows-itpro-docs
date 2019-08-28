@@ -10,8 +10,8 @@ ms.pagetype: deploy
 ms.date: 12/05/2018
 ms.reviewer: 
 manager: laurawi
-ms.author: greg-lindsay
-author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 

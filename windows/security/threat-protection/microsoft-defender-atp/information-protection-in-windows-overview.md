@@ -8,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: mjcaparas
+ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -45,8 +45,8 @@ Sensitivity labels classify and help protect sensitive content.
 
 
 Sensitive information types in the Office 365 data loss prevention (DLP) implementation fall under two categories:
--	Default
--	Custom
+- Default
+- Custom
 
 Default sensitive information types include information such as bank account numbers, social security numbers, or national IDs. For more information, see [What the sensitive information type look for](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for). 
 

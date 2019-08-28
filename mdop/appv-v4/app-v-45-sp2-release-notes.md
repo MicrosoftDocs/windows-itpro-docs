@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -73,11 +73,11 @@ When this has been completed, install the App-V 4.5 SP2 Clients by using Setup.m
 
 When installing Microsoft Application Error Reporting, use the following command if you are installing or upgrading to the App-V 4.5 SP2 Desktop Client:
 
-**    msiexec /i dw20shared.msi APPGUID={C6FC75B9-7D86-4C44-8BDB-EAFE1F0E200D}  allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus**
+**msiexec /i dw20shared.msi APPGUID={C6FC75B9-7D86-4C44-8BDB-EAFE1F0E200D}  allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus**
 
 Alternatively, if you are installing or upgrading to the App-V 4.5 SP2 Client for Remote Desktop Services (formerly Terminal Services), use the following command:
 
-**    msiexec /i dw20shared.msi APPGUID={ECF80BBA-CA07-4A74-9ED6-E064F38AF1F5} allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus**
+**msiexec /i dw20shared.msi APPGUID={ECF80BBA-CA07-4A74-9ED6-E064F38AF1F5} allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus**
 
 **Note**  
 -   The APPGUID parameter references the product code of the App-V Clients that you install or upgrade. The product code is unique for each Setup.msi. You can use the Orca Database Editor or a similar tool to examine Windows Installer files and determine the product code. This step is required for all installations or upgrades to App-V 4.5 SP2.

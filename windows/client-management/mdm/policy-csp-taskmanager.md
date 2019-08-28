@@ -70,8 +70,8 @@ manager: dansimp
 This setting determines whether non-administrators can use Task Manager to end tasks.
 
 Value type is integer. Supported values:  
- -  0 - Disabled. EndTask functionality is blocked in TaskManager.
- -  1 - Enabled (default).  Users can perform EndTask in TaskManager.
+-  0 - Disabled. EndTask functionality is blocked in TaskManager.
+-  1 - Enabled (default).  Users can perform EndTask in TaskManager.
 
 <!--/Description-->
 <!--SupportedValues-->

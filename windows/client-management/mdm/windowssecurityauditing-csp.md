@@ -39,7 +39,7 @@ Supported operations are Get and Replace.
 
 Enable logging of audit events.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>

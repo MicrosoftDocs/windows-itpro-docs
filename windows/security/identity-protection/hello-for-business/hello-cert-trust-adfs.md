@@ -38,7 +38,7 @@ A new Active Directory Federation Services farm should have a minimum of two fed
 
 Prepare the Active Directory Federation Services deployment by installing and updating two Windows Server 2016 Servers.  Ensure the update listed below is applied to each server before continuing.    
 
-##  Update Windows Server 2016
+## Update Windows Server 2016
 
 Sign-in the federation server with _local admin_ equivalent credentials.
 1. Ensure Windows Server 2016 is current by running **Windows Update** from **Settings**. Continue this process until no further updates are needed. If you’re not using Windows Update for updates, please advise the [Windows Server 2016 update history page](https://support.microsoft.com/help/4000825/windows-10-windows-server-2016-update-history) to make sure you have the latest updates available installed.

@@ -7,7 +7,7 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: 85f0cd01-6f82-4bd1-9c0b-285af1ce3436
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: dansimp
 title: Browser cache changes and roaming profiles (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

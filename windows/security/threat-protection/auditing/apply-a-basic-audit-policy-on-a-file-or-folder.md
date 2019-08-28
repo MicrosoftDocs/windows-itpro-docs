@@ -39,6 +39,26 @@ To complete this procedure, you must be logged on as a member of the built-in Ad
     -   To audit failure events, click **Fail.**
     -   To audit all events, click **All.**
 
+ 
+
+6.  In the **Applies to** box, select the object(s) that the audit of events will apply to. These include:
+ 
+    -   **This folder only**
+    -   **This folder, subfolders and files**
+    -   **This folder and subfolders**
+    -   **This folder and files**
+    -   **Subfolders and files only**
+    -   **Subfolders only** 
+    -   **Files only**
+ 
+7.  By default, the selected **Basic Permissions** to audit are the following:
+    -   **Read and execute**
+    -   **List folder contents**
+    -   **Read**
+    -   Additionally, you can choose **Full control**, **Modify**, and/or **Write** permissions with your selected audit combination.
+    
+    
+
 > **Important:**  Before setting up auditing for files and folders, you must enable [object access auditing](basic-audit-object-access.md) by defining auditing policy settings for the object access event category. If you do not enable object access auditing, you will receive an error message when you set up auditing for files and folders, and no files or folders will be audited.
  
 ## Additional considerations

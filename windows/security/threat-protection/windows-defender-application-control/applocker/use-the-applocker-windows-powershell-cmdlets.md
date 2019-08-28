@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Use the AppLocker Windows PowerShell cmdlets
 
 **Applies to**
- -   Windows 10
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes how each AppLocker Windows PowerShell cmdlet can help you administer your AppLocker application control policies.
 
