@@ -24,7 +24,7 @@
 ### [Advanced troubleshooting for Windows startup](troubleshoot-windows-startup.md)
 #### [How to determine the appropriate page file size for 64-bit versions of Windows](determine-appropriate-page-file-size.md)
 #### [Generate a kernel or complete crash dump](generate-kernel-or-complete-crash-dump.md)
-#### [Introduction of page file](introduction-of-page-file.md)
+#### [Introduction to the page file](introduction-of-page-file.md)
 #### [Configure system failure and recovery options in Windows](system-failure-recovery-options.md)
 #### [Advanced troubleshooting for Windows boot problems](advanced-troubleshooting-boot-problems.md)
 #### [Advanced troubleshooting for Windows-based computer freeze](troubleshoot-windows-freeze.md)

@@ -1,5 +1,5 @@
 ---
-title: Introduction of page file
+title: Introduction to the page file
 description: Learn about the page files in Windows.
 ms.prod: w10
 ms.sitesec: library
@@ -12,7 +12,7 @@ ms.reviewer:
 manager: dcscontentpm
 ---
 
-# Introduction of page file
+# Introduction to the page file
 
 A page file (also known as a "paging file") is an optional, hidden system file on a hard disk.
 

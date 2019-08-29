@@ -32,7 +32,7 @@ To understand the underlaying cause of that lead to Windows start-up issues, it 
  
 ### Page file settings
  
-- [Introduction of page file](introduction-of-page-file.md)
+- [Introduction to the page file](introduction-of-page-file.md)
 
 - [How to determine the appropriate page file size for 64-bit versions of Windows](determine-appropriate-page-file-size.md)
  
