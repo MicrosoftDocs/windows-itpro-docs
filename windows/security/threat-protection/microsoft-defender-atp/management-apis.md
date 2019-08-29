@@ -61,7 +61,7 @@ Managed security service provider | Get a quick overview on managed security ser
 ## Related topics
 - [Onboard machines](onboard-configure.md)
 - [Enable the custom threat intelligence application](enable-custom-ti.md)
-- [Microsoft Defender ATP Public API](use-apis.md)
+- [Microsoft Defender ATP Public API](apis-intro.md)
 - [Pull alerts to your SIEM tools](configure-siem.md)
 - [Create and build Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
 - [Role-based access control](rbac.md)
