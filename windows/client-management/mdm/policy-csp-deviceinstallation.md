@@ -335,7 +335,33 @@ ADMX Info:
 
 <!--/SupportedValues-->
 <!--Example-->
+To enable this policy, use the following SyncML. 
 
+``` xml
+<SyncML>
+    <SyncBody>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">string</Format>
+                </Meta>
+                <Data><enabled/><Data id="DeviceInstall_Instance_IDs_Allow_List" value="1&#xF000;USB\VID_1F75&amp;PID_0917\47802411805883"/></Data>
+                </Item>
+        </Replace>
+    </SyncBody>
+</SyncML>
+```
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+``` txt
+>>>  [Device Installation Restrictions Policy Check]
+>>>  Section start 2018/11/15 12:26:41.659
+<<<  Section end 2018/11/15 12:26:41.751
+<<<  [Exit status: SUCCESS]
+```
 <!--/Example-->
 <!--Validation-->
 
@@ -692,7 +718,34 @@ ADMX Info:
 
 <!--/SupportedValues-->
 <!--Example-->
+To enable this policy, use the following SyncML. 
 
+``` xml
+<SyncML>
+    <SyncBody>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">string</Format>
+                </Meta>
+                <Data><enabled/><data id="DeviceInstall_Instance_IDs_Deny_Retroactive" value="true"/><Data id="DeviceInstall_Instance_IDs_Deny_List" value="1&#xF000;USB\VID_1F75&amp;PID_0917\47802411805883&#xF000;2&#xF000;USB\VID_0781&amp;PID_5530\4C530001191214116305"/></Data>
+                </Item>
+        </Replace>
+    </SyncBody>
+</SyncML>
+```
+To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:  
+
+``` txt
+>>>  [Device Installation Restrictions Policy Check]
+>>>  Section start 2018/11/15 12:26:41.659
+<<<  Section end 2018/11/15 12:26:41.751
+<<<  [Exit status: SUCCESS]
+```
 <!--/Example-->
 <!--Validation-->
 
