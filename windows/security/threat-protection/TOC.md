@@ -118,20 +118,19 @@
 ##### [Understand custom detection rules](microsoft-defender-atp/overview-custom-detections.md)
 ##### [Create custom detections rules](microsoft-defender-atp/custom-detection-rules.md)
 
-#### [Management and APIs]()
-##### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
-##### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
-##### [Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
-##### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
+### [Management and APIs]()
+#### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
+#### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
+#### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
 
-#### [Integrations]()
-##### [Microsoft Defender ATP integrations](microsoft-defender-atp/threat-protection-integration.md)
-##### [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
-##### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
+### [Integrations]()
+#### [Microsoft Defender ATP integrations](microsoft-defender-atp/threat-protection-integration.md)
+#### [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
+#### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
 
-#### [Information protection in Windows overview]()
-##### [Windows integration](microsoft-defender-atp/information-protection-in-windows-overview.md)
-##### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
+### [Information protection in Windows overview]()
+#### [Windows integration](microsoft-defender-atp/information-protection-in-windows-overview.md)
+#### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
 
 ### [Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)
 
