@@ -29,6 +29,7 @@ ms.topic: article
 - Submits or Updates new [Indicator](ti-indicator.md) entity.
 
 
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
 
@@ -116,3 +117,6 @@ Content-type: application/json
 }
 
 ```
+
+## Related topic
+- [Manage indicators](manage-indicators.md)
