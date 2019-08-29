@@ -40,6 +40,18 @@ Response actions run along the top of the file page, and include:
 
 You can also submit files for deep analysis, to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. You can submit files for deep analysis and read past reports by selecting the **Deep analysis** tab. It's located below the file information cards.
 
+Some actions require certain permissions. The following table describes what action certain permissions can take on portable executable (PE) and non-PE files:
+
+Permission | PE files | Non-PE files
+:---|:---|:---
+View data | X | X
+Alerts investigation | &#x2611; | X
+Live response basic | X | X
+Live response advanced | &#x2611; |&#x2611;
+
+For more information on roles, see [Create and manage roles for role-based access control](user-roles.md).
+
+
 ## Stop and quarantine files in your network
 
 You can contain an attack in your organization by stopping the malicious process and quarantining the file where it was observed.
