@@ -48,10 +48,6 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 - July - August 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2018/microsoft-windows-defender-antivirus-4.12--4.18-183212/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y)
 
-|||
-|---|---|
-|![Graph showing Microsoft's Real-World detection rate scores for AV-Test](./images/real-world-aug-small.png)|![Graph showing Microsoft's Prevalent Malware detection rate scores for AV-Test](./images/prevalent-malware-aug-small.png)|
-
 ### AV-Comparatives: Protection rating of 99.9% in the latest test
 
 Business Security Test consists of three main parts: the Real-World Protection Test which mimics online malware attacks, the Malware Protection Test where the malware enters the system from outside the internet (e.g. USB), and the Performance Test which looks at the impact on the system’s performance.
@@ -63,8 +59,6 @@ Business Security Test consists of three main parts: the Real-World Protection T
 - Business Security Test 2018 (August - November): [Real-World Protection Rate 99.6%](https://www.av-comparatives.org/tests/business-security-test-2018-august-november/)
 
 - Business Security Test 2018 (March - June): [Real-World Protection Rate 98.7%](https://www.av-comparatives.org/tests/business-security-test-2018-march-june/)
-
-![Graph showing Microsoft's Real-World Protection scores for AV-Comparatives](./images/real-world-protection-aug-small.png)
 
 ### SE Labs: Total accuracy rating of AAA in the latest test
 
