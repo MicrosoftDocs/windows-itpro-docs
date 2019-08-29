@@ -15303,9 +15303,9 @@
 "redirect_document_id": true
 },
 {
-  "source_path": "windows/device-security/index.md",
-  "redirect_url": "/windows/security/threat-protection",
-  "redirect_document_id": true
+"source_path": "windows/device-security/index.md",
+"redirect_url": "/windows/security/threat-protection",
+"redirect_document_id": true
 },
 {
 "source_path": "browsers/internet-explorer/ie11-deploy-guide/group-policy-compatability-with-ie11.md",
