@@ -160,6 +160,15 @@ Windows Defender ATP now adds support for Windows Server 2019. You'll be able to
 - [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<br>
 Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
 
+## Cloud Clipboard
+
+Cloud clipboard helps users copy content between devices. It also manages the clipboard histroy so that you can paste your old copied data. You can access it by using **Windows+V**. Set up Cloud clipboard:
+
+1. Go to **Windows Settings** and select **Systems**.
+2. On the left menu, click on **Clipboard**.
+3. Turn on **Clipboard history**.
+4. Turn on **Sync across devices**. Chose whether or not to automatically sync copied text across your devices.
+
 ## Kiosk setup experience
 
 We introduced a simplified assigned access configuration experience in **Settings** that allows device administrators to easily set up a PC as a kiosk or digital sign. A wizard experience walks you through kiosk setup including creating a kiosk account that will automatically sign in when a device starts.
