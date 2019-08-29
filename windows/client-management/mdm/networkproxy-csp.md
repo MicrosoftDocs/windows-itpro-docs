@@ -82,7 +82,6 @@ Valid values:
 <li>1 - Do not use proxy server for local addresses</li>
 </ul>
 
-
 The data type is integer. Supported operations are Get and Replace. Starting in Window 10, version 1803, the Delete operation is also supported.
 
 # Configuration Example
