@@ -188,3 +188,4 @@ All other related details are also shown, for example, submission date/time, sub
 
 ## Related topic
 - [Take response actions on a file](respond-file-alerts.md)
+- [Report inaccuracy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#report-inaccuracy)
