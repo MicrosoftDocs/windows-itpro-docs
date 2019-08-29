@@ -24,10 +24,11 @@ Microsoft Defender Advanced Threat Protection ([Microsoft Defender ATP](https://
 
 [Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=cx-docs-avreports) consistently performs highly in independent tests, displaying how it is a top choice in the antivirus market. Note that these tests only provide results for antivirus and do not test for additional security protections.
 
-Windows Defender Antivirus is  part of the  [next generation](https://www.youtube.com/watch?v=Xy3MOxkX_o4) Microsoft Defender ATP security stack which addresses the latest and most sophisticated threats today. In some cases, customers might not even know they were protected because a cyberattack is stopped [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign?ocid=cx-docs-avreports). That's because Windows Defender Antivirus detects and stops malware at first sight by using [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering?ocid=cx-docs-avreports), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak?ocid=cx-docs-avreports), behavioral analysis, and other advanced technologies.
+Windows Defender Antivirus is the [next generation protection](https://www.youtube.com/watch?v=Xy3MOxkX_o4) capability in the Microsoft Defender ATP security stack which addresses the latest and most sophisticated threats today. In some cases, customers might not even know they were protected because a cyberattack is stopped [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign?ocid=cx-docs-avreports). That's because Windows Defender Antivirus detects and stops malware at first sight by using [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering?ocid=cx-docs-avreports), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak?ocid=cx-docs-avreports), behavioral analysis, and other advanced technologies.
 <br><br>
+![String of images showing scores](./images/Transparency-report-August-2.png)
 
-![Graph describing Real-World detection rate](./images/transparency-report-purple-60.png) **Download the latest transparency report: [Examining industry test results, August 2019](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)**
+**Download the latest transparency report: [Examining industry test results, August 2019](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)**
 
 ### AV-TEST: Protection score of 6.0/6.0 in the latest test
 
@@ -47,10 +48,6 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 - July - August 2018 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2018/microsoft-windows-defender-antivirus-4.12--4.18-183212/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2IL3Y)
 
-|||
-|---|---|
-|![Graph showing Microsoft's Real-World detection rate scores for AV-Test](./images/real-world-aug-small.png)|![Graph showing Microsoft's Prevalent Malware detection rate scores for AV-Test](./images/prevalent-malware-aug-small.png)|
-
 ### AV-Comparatives: Protection rating of 99.9% in the latest test
 
 Business Security Test consists of three main parts: the Real-World Protection Test which mimics online malware attacks, the Malware Protection Test where the malware enters the system from outside the internet (e.g. USB), and the Performance Test which looks at the impact on the system’s performance.
@@ -62,8 +59,6 @@ Business Security Test consists of three main parts: the Real-World Protection T
 - Business Security Test 2018 (August - November): [Real-World Protection Rate 99.6%](https://www.av-comparatives.org/tests/business-security-test-2018-august-november/)
 
 - Business Security Test 2018 (March - June): [Real-World Protection Rate 98.7%](https://www.av-comparatives.org/tests/business-security-test-2018-march-june/)
-
-![Graph showing Microsoft's Real-World Protection scores for AV-Comparatives](./images/real-world-protection-aug-small.png)
 
 ### SE Labs: Total accuracy rating of AAA in the latest test
 
@@ -82,6 +77,10 @@ SE Labs tests a range of solutions used by products and services to detect and/o
 ## Endpoint detection & response
 
 Microsoft Defender ATP [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats.
+
+![String of images showing EDR capabilities](./images/MITRE-Microsoft-Defender-ATP.png)
+
+**Read our analysis: [MITRE evaluation highlights industry-leading EDR capabilities in Windows Defender ATP](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)**
 
 ### MITRE: Industry-leading optics and detection capabilities
 
