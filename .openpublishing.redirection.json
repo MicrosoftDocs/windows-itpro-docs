@@ -1732,7 +1732,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/apis-intro",
 "redirect_document_id": true
 },
 {
@@ -14592,27 +14592,27 @@
 },
 {
 "source_path":"windows/security/threat-protection/windows-defender-atp/exposed-apis-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/supported-apis-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-actor-information-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-actor-related-alerts-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-alerts-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14622,7 +14622,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-alert-info-by-id-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14632,12 +14632,12 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-alert-related-actor-info-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-alert-related-domain-info-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14647,7 +14647,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-alert-related-files-info-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14657,7 +14657,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-alert-related-ip-info-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14667,7 +14667,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-alert-related-machine-info-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14677,7 +14677,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-domain-related-alerts-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14687,7 +14687,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-domain-related-machines-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14702,7 +14702,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/is-domain-seen-in-org-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14712,12 +14712,12 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/block-file-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-file-information-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14727,7 +14727,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-file-related-alerts-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14737,7 +14737,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-file-related-machines-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14747,7 +14747,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-file-statistics-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14757,17 +14757,17 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-fileactions-collection-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/unblock-file-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-ip-related-alerts-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14777,7 +14777,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-ip-related-machines-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14787,7 +14787,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-ip-statistics-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14797,7 +14797,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/is-ip-seen-org-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14807,7 +14807,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/collect-investigation-package-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14817,7 +14817,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/find-machine-info-by-ip-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14827,7 +14827,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-filemachineaction-object-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14837,7 +14837,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-filemachineactions-collection-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14847,7 +14847,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-machine-by-id-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14857,7 +14857,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-machine-log-on-users-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14867,7 +14867,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-machine-related-alerts-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14897,7 +14897,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-machines-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14917,7 +14917,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-package-sas-uri-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14932,7 +14932,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/isolate-machine-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14942,7 +14942,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/unisolate-machine-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14952,7 +14952,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/unrestrict-code-execution-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -14962,12 +14962,12 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/request-sample-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/restrict-code-execution-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -15007,7 +15007,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/run-av-scan-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -15017,7 +15017,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/stop-and-quarantine-file-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -15027,7 +15027,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-alert-related-user-info-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -15042,7 +15042,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-user-information-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -15052,7 +15052,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-user-related-alerts-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -15062,7 +15062,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-user-related-machines-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
@@ -15077,7 +15077,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-ti-indicator-by-id-windows-defender-advanced-threat-protection.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-atp/use-apis",
+"redirect_url": "/windows/security/threat-protection/windows-defender-atp/apis-intro",
 "redirect_document_id": false
 },
 {
