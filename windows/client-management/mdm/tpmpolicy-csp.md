@@ -37,20 +37,20 @@ The following diagram shows the TPMPolicy configuration service provider in tree
 
 Here is an example:
 
-``` syntax
-                <Replace>
-                    <CmdID>101</CmdID>
-                    <Item>
-                        <Target>
-                            <LocURI>
-                                ./Vendor/MSFT/TpmPolicy/IsActiveZeroExhaust
-                            </LocURI>
-                        </Target>
-                        <Meta>
-                            <Format>bool</Format>
-                                <Type>text/plain</Type>
-                        </Meta>
-                        <Data>true</Data>
-                    </Item>
-                </Replace>
+```xml
+<Replace>
+    <CmdID>101</CmdID>
+    <Item>
+        <Target>
+            <LocURI>
+                ./Vendor/MSFT/TpmPolicy/IsActiveZeroExhaust
+            </LocURI>
+        </Target>
+        <Meta>
+            <Format>bool</Format>
+            <Type>text/plain</Type>
+        </Meta>
+        <Data>true</Data>
+    </Item>
+</Replace>
 ```

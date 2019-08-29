@@ -159,7 +159,7 @@ The following table lists in what GDPR mode – controller or processor – Wind
 
 */*Depending on which application/feature this is referring to.*
 
-##  Windows diagnostic data and Windows 10
+## Windows diagnostic data and Windows 10
 
 
 ### Recommended Windows 10 settings

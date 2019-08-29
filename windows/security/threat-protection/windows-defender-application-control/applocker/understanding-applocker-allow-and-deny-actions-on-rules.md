@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Understanding AppLocker allow and deny actions on rules
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic explains the differences between allow and deny actions on AppLocker rules.
 

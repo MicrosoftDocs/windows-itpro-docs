@@ -90,5 +90,5 @@ Import-Module LyncOnlineConnector
 $SfBSession = New-CsOnlineSession -Credential (Get-Credential)
 Import-PSSession $SfBSession -AllowClobber
 Enable the Skype for Business meeting room
-Enable-CsMeetingRoom -Identity account@YourDomain.com -RegistrarPoo(Get-CsTenant).Registrarpool -SipAddressType EmailAddress
+Enable-CsMeetingRoom -Identity account@YourDomain.com -RegistrarPool(Get-CsTenant).Registrarpool -SipAddressType EmailAddress
 ```

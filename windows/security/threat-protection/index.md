@@ -58,16 +58,16 @@ This built-in capability uses a game-changing risk-based approach to the discove
 <a name="asr"></a>
 
 **[Attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)**<br>
-The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
+The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations.
 
-- [Hardware based isolation](microsoft-defender-atp/overview-hardware-based-isolation.md) 
+- [Hardware based isolation](microsoft-defender-atp/overview-hardware-based-isolation.md)
 - [Application control](windows-defender-application-control/windows-defender-application-control.md)
 - [Device control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
-- [Exploit protection](windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
-- [Network protection](windows-defender-exploit-guard/network-protection-exploit-guard.md)
-- [Controlled folder access](windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
+- [Exploit protection](microsoft-defender-atp/exploit-protection.md)
+- [Network protection](microsoft-defender-atp/network-protection.md)
+- [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
 - [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
-- [Attack surface reduction rules](windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
+- [Attack surface reduction rules](microsoft-defender-atp/attack-surface-reduction.md)
 
 <a name="ngp"></a>
 

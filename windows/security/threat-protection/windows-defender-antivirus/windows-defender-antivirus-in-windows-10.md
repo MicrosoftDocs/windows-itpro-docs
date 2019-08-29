@@ -47,7 +47,6 @@ You can configure and manage Windows Defender Antivirus with:
 > [!NOTE]
 > For more information regarding what's new in each Windows version, please refer to [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp).
 
-=======
 <a id="sysreq"></a>
 ## Minimum system requirements
 

@@ -20,9 +20,9 @@ for Surface devices. It works on Surface Pro 3 and all newer Surface devices.
 
 ## System requirements
 
-  - Surface Pro 3 or later
+- Surface Pro 3 or later
 
-  - UEFI firmware version 3.9.150.0 or later
+- UEFI firmware version 3.9.150.0 or later
 
 ## Using Surface Asset Tag 
 

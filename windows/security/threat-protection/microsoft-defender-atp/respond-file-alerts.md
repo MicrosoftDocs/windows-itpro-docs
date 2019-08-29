@@ -157,6 +157,20 @@ When you select this action, a fly-out will appear. From the fly-out, you can re
 
 If a file is not already stored by Microsoft Defender ATP, you cannot download it. Instead, you will see a **Collect file** button in the same location. If a file has not been seen in the organization in the past 30 days, **Collect file** will be disabled.
 
+## Check activity details in Action center
+
+The **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view the following details:
+
+- Investigation package collection
+- Antivirus scan
+- App restriction
+- Machine isolation
+
+All other related details are also shown, for example, submission date/time, submitting user, and if the action succeeded or failed.
+
+![Image of action center with information](images/action-center-details.png)
+
+
 ## Deep analysis
 
 Cyber security investigations are typically triggered by an alert. Alerts are related to one or more observed files that are often new or unknown. Clicking a file takes you to the file view where you can see the file's metadata. To enrich the data related to the file, you can submit the file for deep analysis.
