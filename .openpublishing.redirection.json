@@ -1736,11 +1736,6 @@
 "redirect_document_id": true
 },
 {
-  "source_path": "windows/security/threat-protection/microsoft-defender-atp/use-apis.md",
-  "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/apis-intro",
-  "redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-atp/prerelease.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-atp/prerelease",
 "redirect_document_id": true
