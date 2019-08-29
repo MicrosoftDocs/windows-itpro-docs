@@ -274,7 +274,7 @@ The following table lists the installation prerequisites for the MBAM Administra
 <li><p><strong>WCF Activation</strong></p>
 <ul>
 <li><p>HTTP Activation</p></li>
-<li><p>Non-HTTP Activation (Only for Windows Server 2008, 2012 or 2012 R2)</p>
+<li><p>Non-HTTP Activation (Only for Windows Server 2008, 2012, and 2012 R2)</p>
 <p></p></li>
 </ul></li>
 <li><p><strong>TCP Activation</strong></p></li>
