@@ -90,7 +90,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
 ```xml
  <Replace>
     <CmdID>1</CmdID>
-	<Item>
+    <Item>
 		<Target>
 			<LocURI>./Vendor/MSFT/NetworkProxy/ProxySettingsPerUser</LocURI>
 		</Target>
