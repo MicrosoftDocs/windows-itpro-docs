@@ -43,7 +43,6 @@ Supported operations are Add, Get, Replace, and Delete.
 > [!Note]  
 > Per user proxy configuration setting is not supported using a configuration file, only modifying registry settings on local machine.
 
-
 <a href="" id="autodetect"></a>**AutoDetect**  
 Automatically detect settings. If enabled, the system tries to find the path to a PAC script.
 
