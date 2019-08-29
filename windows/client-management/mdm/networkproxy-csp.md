@@ -52,7 +52,6 @@ Valid values:
 <li>1 (default) - Enabled</li>
 </ul>
 
-
 The data type is integer. Supported operations are Get and Replace. Starting in Window 10, version 1803, the Delete operation is also supported.
 
 
