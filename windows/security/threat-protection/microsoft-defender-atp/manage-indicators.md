@@ -39,7 +39,7 @@ The cloud detection engine of Microsoft Defender ATP regularly scans collected d
 **Endpoint prevention engine**<br>
 The same list of indicators is honored by the prevention agent. Meaning, if Windows Defender AV is the primary AV configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Windows Defender AV will prevent file executions (block and remediate) and a corresponding alert will be raised. On the other hand, if the Action is set to "Allow", Windows Defender AV  will not detect nor block the file from being run.
 
->![NOTE]
+>[!NOTE]
 >-There is a propagation time of several minutes before the blocking policy for a new hash is applied.
 >- Trusted signed files will be treated differently. Microsoft Defender ATP is optimized to handle malicious files. Trying to block trusted signed files, in some cases, may have performance implications.
 
