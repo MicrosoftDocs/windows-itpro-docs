@@ -45,11 +45,14 @@ The same list of indicators is honored by the prevention agent. Meaning, if Wind
 
 
 **Automated investigation and remediation engine**
-The automated investigation and remediation behave the same. If an indicator is set to "Allow", Automated investigation and remediation will ignore a "bad" verdict for it. If set to "Block", Automated investigation and remediation will treat it as “bad”.
+The automated investigation and remediation behave the same. If an indicator is set to "Allow", Automated investigation and remediation will ignore a "bad" verdict for it. If set to "Block", Automated investigation and remediation will treat it as "bad".
  
 In the first phase, the file hashes are fully supported, while network addresses (IP, Domain names) are partially supported (Automation and Detection).  Stay tuned as the network blocking and more IoCs become available.
  
-The current actions supported are Allow, Alert-only, Alert&Block. 
+The current actions supported are:
+- Allow 
+- Alert only
+- Alert and block
 
 
 On the top navigation you can:
@@ -73,7 +76,7 @@ There are several ways to control IoCs:
 
 Creating IoCs must comply to the following:
 
->- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
+>- This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see [Manage cloud-based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
 >
 >- The Antimalware client version must be 4.18.1901.x or later.
 >- This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time.
