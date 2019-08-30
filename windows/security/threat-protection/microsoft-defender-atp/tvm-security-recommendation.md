@@ -70,7 +70,8 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 
 4. Include your machine name for investigation context.
 
-**[Optional]** You can provide details regarding the inaccuracy you reported in the ""Tell us more (optional)** field to give the threat and vulnerability management investigators more context. 
+>[!NOTE]
+> You can also provide details regarding the inaccuracy you reported in the **Tell us more (optional)** field to give the threat and vulnerability management investigators context. 
 
 5. Click **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts with its context.
 
