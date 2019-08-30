@@ -48,6 +48,18 @@ You can see the list of vulnerabilities in three ways:
 3. Select the **Discovered vulnerabilities** tab. 
 4. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
 
+*Discovered vulnerabilities in the machine page*
+1. Go to the left-hand navigation menu bar, then select the machine icon. The **Machines list** page opens. 
+<br>![Screenshot of Machines list page](images/tvm_machineslist.png)</br>
+2. In the **Machines** page, select the machine that you want to investigate. 
+<br>![Screenshot of machine list with selected machine to investigate](images/tvm_machinetoinvestigate.png)</br>
+<br>A flyout pane opens with machine details and response action options.</br>
+![Screenshot of the flyout pane with machine details and response options](images/tvm_machine_page_flyout.png)
+3. In the flyout pane, select **Open machine page**. A page opens with details and response options for the machine you want to investigate. 
+<br>![Screenshot of the machine page with details and response options](images/tvm_machines_discoveredvuln.png)</br>
+4. Select **Discovered vulnerabilities**.
+5. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.
+
 ## How it works
 When new vulnerabilities are released, you would want know how many of your assets are exposed. You can see the list of vulnerabilities and the details in the **Weaknesses** page. 
 
