@@ -56,11 +56,23 @@ From that page, you can do any of the following depending on what you need to do
 
 ## Report inaccuracy
 
-You can report on a false positive when you see any vague, inaccurate, incomplete, or already remediated information in the machine page, under **Security recommendation** column.
+You can report a false positive when you see any vague, inaccurate, incomplete, or already remediated information in the machine page, under **Security recommendation** column.
 
-Click **:** then select the inaccuracy category from the dropdown menu. Your feedback is immediately sent to the Threat & Vulnerability Management experts with its context.
+![Screenshot of Report inaccuracy control from the machine page under the Security recommendation column](images/tvm_report_inaccuracy.png)
 
-![Report inaccuracy from the machine page within the Security recommendation column](images/tvm_report_inaccuracy.png)
+1. Click **:** then select **Report inaccuracy**. A flyout pane opens.
+![Screenshot of Report inaccuracy flyout pane](images/tvm_report_inaccuracyflyout.png)
+
+2. From the flyout pane, select the inaccuracy category from the drop-down menu. 
+![Screenshot of Report inaccuracy categories drop-down menu](images/tvm_report_inaccuracyoptions.png)
+
+3. Include your email address so Microsoft can send you feedback regarding the inaccuracy you reported.
+
+4. Include your machine name for investigation context.
+
+**[Optional]** You can provide details regarding the inaccuracy you reported in the ""Tell us more (optional)** field to give the threat and vulnerability management investigators more context. 
+
+5. Click **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts with its context.
 
 
 ## Related topics
