@@ -64,7 +64,7 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 
 2. From the flyout pane, select the inaccuracy category from the drop-down menu. 
 
-![Screenshot of Report inaccuracy categories drop-down menu](images/tvm_report_inaccuracyoptions.png)
+> ![Screenshot of Report inaccuracy categories drop-down menu](images/tvm_report_inaccuracyoptions.png)
 
 3. Include your email address so Microsoft can send you feedback regarding the inaccuracy you reported.
 
