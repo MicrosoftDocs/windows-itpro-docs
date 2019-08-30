@@ -60,7 +60,7 @@ Business Security Test consists of three main parts: the Real-World Protection T
 
 - Business Security Test 2018 (March - June): [Real-World Protection Rate 98.7%](https://www.av-comparatives.org/tests/business-security-test-2018-march-june/)
 
-### SE Labs: Total accuracy rating of AAA in the latest test
+### SE Labs: AAA award in the latest test
 
 SE Labs tests a range of solutions used by products and services to detect and/or protect against attacks, including endpoint software, network appliances, and cloud services.
 
