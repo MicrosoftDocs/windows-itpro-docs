@@ -26,7 +26,7 @@ Threat & Vulnerability Management leverages the same signals in Microsoft Defend
 The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, corresponding breach, and threat insights. 
 
 ## Navigate through your organization's weaknesses page
-You can see the list of vulnerabilities in three ways: 
+You can see the list of vulnerabilities in four ways: 
 
 *Vulnerabilities in global search*
 1. Click the global search drop-down menu.
