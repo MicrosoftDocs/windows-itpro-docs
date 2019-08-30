@@ -44,8 +44,8 @@ You can report a false positive when you see any vague, inaccurate version, inco
 <br>A flyout pane opens.</br>
 ![Screenshot of Report inaccuracy flyout pane](images/tvm_report_inaccuracy_softwareflyout.png)
 
-3. From the flyout pane, select the inaccuracy category from the drop-down menu. 
-<br>![Screenshot of Report inaccuracy categories drop-down menu](images/tvm_report_inaccuracy_softwareoptions.png)</br>
+3. From the flyout pane, select the inaccuracy category from the **Software inventory inaccuracy reason** drop-down menu. 
+<br>![Screenshot of Report inaccuracy software inventory inaccuracy reason drop-down menu](images/tvm_report_inaccuracy_softwareoptions.png)</br>
 
 4. Include your email address so Microsoft can send you feedback regarding the inaccuracy you reported.
 
