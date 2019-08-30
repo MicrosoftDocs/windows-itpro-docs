@@ -58,9 +58,8 @@ From that page, you can do any of the following depending on what you need to do
 
 You can report a false positive when you see any vague, inaccurate, incomplete, or already remediated information in the machine page, under **Security recommendation** column.
 
-![Screenshot of Report inaccuracy control from the machine page under the Security recommendation column](images/tvm_report_inaccuracy.png)
-
 1. Click **:** then select **Report inaccuracy**. A flyout pane opens.
+![Screenshot of Report inaccuracy control from the machine page under the Security recommendation column](images/tvm_report_inaccuracy.png)
 ![Screenshot of Report inaccuracy flyout pane](images/tvm_report_inaccuracyflyout.png)
 
 2. From the flyout pane, select the inaccuracy category from the drop-down menu. 
