@@ -39,8 +39,9 @@ You can report a false positive when you see any vague, inaccurate version infor
 
 1. Select the **Software inventory** tab. 
 
-2. Click **:** beside software that you want to report about, and then select **Report inaccuracy**. A flyout pane opens.
+2. Click **:** beside the software that you want to report about, and then select **Report inaccuracy**. 
 ![Screenshot of Report inaccuracy control from the machine page under the Software inventory column](images/tvm_report_inaccuracy_software.png)
+<br>A flyout pane opens.</br>
 ![Screenshot of Report inaccuracy flyout pane](images/tvm_report_inaccuracy_softwareflyout.png)
 
 3. From the flyout pane, select the inaccuracy category from the drop-down menu. 
