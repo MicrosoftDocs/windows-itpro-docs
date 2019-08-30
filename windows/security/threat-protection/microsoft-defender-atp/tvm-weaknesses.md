@@ -51,7 +51,7 @@ You can see the list of vulnerabilities in three ways:
 *Discovered vulnerabilities in the machine page*
 1. Go to the left-hand navigation menu bar, then select the machine icon. The **Machines list** page opens. 
 <br>![Screenshot of Machines list page](images/tvm_machineslist.png)</br>
-2. In the **Machines** page, select the machine that you want to investigate. 
+2. In the **Machines list** page, select the machine that you want to investigate. 
 <br>![Screenshot of machine list with selected machine to investigate](images/tvm_machinetoinvestigate.png)</br>
 <br>A flyout pane opens with machine details and response action options.</br>
 ![Screenshot of the flyout pane with machine details and response options](images/tvm_machine_page_flyout.png)
