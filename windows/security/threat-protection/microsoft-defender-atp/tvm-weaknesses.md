@@ -66,6 +66,28 @@ The threat insights icons are highlighted if there are associated exploits in th
  >[!NOTE]
  > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon and possible active alert ![possible active alert](images/tvm_alert_icon.png) icon.  
 
+## Report inaccuracy
+
+You can report a false positive when you see any vague, inaccurate version information, incomplete, or already remediated information in the machine page.
+
+1. Select the **Discovered vulnerabilities** tab. 
+
+2. Click **:** beside vulnerability that you want to report about, and then select **Report inaccuracy**. A flyout pane opens.
+![Screenshot of Report inaccuracy control from the machine page in the Discovered vulnerabilities tab](images/tvm_report_inaccuracy_vuln.png)
+![Screenshot of Report inaccuracy flyout pane](images/tvm_report_inaccuracy_vulnflyout.png)
+
+3. From the flyout pane, select the inaccuracy category from the **Discovered vulnerability inaccuracy reason** drop-down menu. 
+<br>![Screenshot of discovered vulnerability inaccuracy reason drop-down menu](images/tvm_report_inaccuracy_vulnoptions.png)</br>
+
+4. Include your email address so Microsoft can send you feedback regarding the inaccuracy you reported.
+
+5. Include your machine name for investigation context.
+
+>[!NOTE]
+> You can also provide details regarding the inaccuracy you reported in the **Tell us more (optional)** field to give the threat and vulnerability management investigators context. 
+
+6. Click **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts with its context.
+
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
