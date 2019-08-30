@@ -68,11 +68,11 @@ The threat insights icons are highlighted if there are associated exploits in th
 
 ## Report inaccuracy
 
-You can report a false positive when you see any vague, inaccurate version information, incomplete, or already remediated information in the machine page.
+You can report a false positive when you see any vague, inaccurate, missing, or already remediated vulnerability information in the machine page.
 
 1. Select the **Discovered vulnerabilities** tab. 
 
-2. Click **:** beside vulnerability that you want to report about, and then select **Report inaccuracy**. A flyout pane opens.
+2. Click **:** beside the vulnerability that you want to report about, and then select **Report inaccuracy**. A flyout pane opens.
 ![Screenshot of Report inaccuracy control from the machine page in the Discovered vulnerabilities tab](images/tvm_report_inaccuracy_vuln.png)
 ![Screenshot of Report inaccuracy flyout pane](images/tvm_report_inaccuracy_vulnflyout.png)
 
