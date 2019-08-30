@@ -35,7 +35,7 @@ Since it is real-time, in a matter of minutes, you will see vulnerability inform
 
 ## Report inaccuracy
 
-You can report a false positive when you see any vague, inaccurate version information, incomplete, or already remediated information in the machine page.
+You can report a false positive when you see any vague, inaccurate version, incomplete, or already remediated software inventory information in the machine page.
 
 1. Select the **Software inventory** tab. 
 
