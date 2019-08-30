@@ -25,7 +25,7 @@ ms.topic: troubleshooting
 
 
 
-You might need to troubleshoot issues while pulling alerts in your SIEM tools.
+You might need to troubleshoot issues while pulling Detections in your SIEM tools.
 
 This page provides detailed steps to troubleshoot issues you might encounter.
 
@@ -80,7 +80,7 @@ If you encounter an error when trying to enable the SIEM connector application, 
 
 ## Related topics
 - [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
-- [Configure ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight.md)
-- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk.md)
-- [Microsoft Defender ATP alert API fields](api-portal-mapping.md)
-- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api.md)
+- [Configure ArcSight to pull Microsoft Defender ATP Detections](configure-arcsight.md)
+- [Configure Splunk to pull Microsoft Defender ATP Detections](configure-splunk.md)
+- [Microsoft Defender ATP Detection fields](api-portal-mapping.md)
+- [Pull Microsoft Defender ATP Detections using REST API](pull-alerts-using-rest-api.md)

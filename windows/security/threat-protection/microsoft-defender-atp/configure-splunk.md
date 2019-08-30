@@ -1,6 +1,6 @@
 ---
-title: Configure Splunk to pull Microsoft Defender ATP alerts
-description: Configure Splunk to receive and pull alerts from Microsoft Defender Security Center.
+title: Configure Splunk to pull Microsoft Defender ATP Detections
+description: Configure Splunk to receive and pull Detections from Microsoft Defender Security Center.
 keywords: configure splunk, security information and events management tools, splunk
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Configure Splunk to pull Microsoft Defender ATP alerts
+# Configure Splunk to pull Microsoft Defender ATP Detections
 
 **Applies to:**
 
@@ -28,7 +28,11 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configuresplunk-abovefoldlink) 
 
-You'll need to configure Splunk so that it can pull Microsoft Defender ATP alerts.
+You'll need to configure Splunk so that it can pull Microsoft Defender ATP Detections.
+
+>[!Note]
+>- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more Detections
+>- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Machine and its related Alert details.
 
 ## Before you begin
 
@@ -121,8 +125,8 @@ You'll need to configure Splunk so that it can pull Microsoft Defender ATP alert
 
 After completing these configuration steps, you can go to the Splunk dashboard and run queries.
 
-## View alerts using Splunk solution explorer
-Use the solution explorer to view alerts in Splunk.
+## View Detections using Splunk solution explorer
+Use the solution explorer to view Detections in Splunk.
 
 1. In Splunk, go to **Settings** > **Searchers, reports, and alerts**.
 
@@ -141,12 +145,12 @@ Use the solution explorer to view alerts in Splunk.
 
 
 >[!TIP]
-> To mininimize alert duplications, you can use the following query:
+> To mininimize Detection duplications, you can use the following query:
 >```source="rest://windows atp alerts" | spath | dedup _raw | table *``` 
 
 ## Related topics
 - [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
-- [Configure ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight.md)
-- [Microsoft Defender ATP alert API fields](api-portal-mapping.md)
-- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api.md)
+- [Configure ArcSight to pull Microsoft Defender ATP Detections](configure-arcsight.md)
+- [Microsoft Defender ATP Detection fields](api-portal-mapping.md)
+- [Pull Microsoft Defender ATP Detections using REST API](pull-alerts-using-rest-api.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
