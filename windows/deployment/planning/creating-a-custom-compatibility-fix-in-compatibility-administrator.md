@@ -43,7 +43,7 @@ A compatibility fix, previously known as a shim, is a small piece of code that i
 
 The Compatibility Administrator tool has preloaded fixes for many common applications, including known compatibility fixes, compatibility modes, and AppHelp messages. Before you create a new compatibility fix, you can search for an existing application and then copy and paste the known fixes into your customized database.
 
->[!IMPORTANT]  
+>[!IMPORTANT]
 >Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create custom databases for 32-bit applications and the 64-bit version to create custom databases for 64-bit applications.
 
  
