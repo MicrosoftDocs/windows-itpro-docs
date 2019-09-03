@@ -24,7 +24,7 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 ## Before you begin 
-To experience the full Microsoft Threat Experts targeted attack notification capability in Microsoft Defender ATP, and preview the experts-on-demand capability, you need to have a valid Premier customer service and support account. Premier charges are not incurred during for the capability in preview, but for the generally available capability, there will be charges.
+To experience the full Microsoft Threat Experts targeted attack notification capability in Microsoft Defender ATP, or try the the experts-on-demand capability, you need to have a valid Premier customer service and support account. Premier charges are not incurred during for the capability in trial, but for the generally available capability, there will be charges.
 
 Ensure that you have Microsoft Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up. 
 
