@@ -184,7 +184,7 @@ The following Group Policy settings were added in Windows 10, version 1809:
 - Windows Components\Windows Security\Device security\Hide the Device security area
 - Windows Components\Windows Security\Device security\Hide the Secure boot area
 - Windows Components\Windows Security\Device security\Hide the Security processor (TPM) troubleshooter page
-- Windows Components\Windows Security\Device security\Hide the TPM Firmware Update recommendation.
+- Windows Components\Windows Security\Device security\Hide the TPM Firmware Update recommendation
 - Windows Components\Windows Security\Enterprise Customization\Configure customized contact information
 - Windows Components\Windows Security\Enterprise Customization\Configure customized notifications
 - Windows Components\Windows Security\Enterprise Customization\Specify contact company name
