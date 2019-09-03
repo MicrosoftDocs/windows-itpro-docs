@@ -15136,7 +15136,7 @@
 "redirect_document_id": false
 },
 {
-"source_path": "windows/security/threat-protection/microsoft-defender-atp/get-ip-related-machines.md ",
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/get-ip-related-machines.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/get-ip-related-alerts",
 "redirect_document_id": true
 },
