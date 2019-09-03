@@ -1,6 +1,6 @@
 ---
-title: Configure HP ArcSight to pull Microsoft Defender ATP alerts
-description: Configure HP ArcSight to receive and pull alerts from Microsoft Defender Security Center
+title: Configure HP ArcSight to pull Microsoft Defender ATP detections
+description: Configure HP ArcSight to receive and pull detections from Microsoft Defender Security Center
 keywords: configure hp arcsight, security information and events management tools, arcsight
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,10 +15,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 12/20/2018
 ---
 
-# Configure HP ArcSight to pull Microsoft Defender ATP alerts
+# Configure HP ArcSight to pull Microsoft Defender ATP detections
 
 **Applies to:**
 
@@ -29,10 +28,14 @@ ms.date: 12/20/2018
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configurearcsight-abovefoldlink) 
 
-You'll need to install and configure some files and tools to use HP ArcSight so that it can pull Microsoft Defender ATP alerts.
+You'll need to install and configure some files and tools to use HP ArcSight so that it can pull Microsoft Defender ATP detections.
+
+>[!Note]
+>- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections
+>- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Machine and its related Alert details.
 
 ## Before you begin
-Configuring the HP ArcSight Connector tool requires several configuration files for it to pull and parse alerts from your Azure Active Directory (AAD) application.
+Configuring the HP ArcSight Connector tool requires several configuration files for it to pull and parse detections from your Azure Active Directory (AAD) application.
 
 This section guides you in getting the necessary information to set and use the required configuration files correctly.
 
@@ -163,7 +166,7 @@ The following steps assume that you have completed all the required steps in [Be
 
 You can now run queries in the HP ArcSight console.
 
-Microsoft Defender ATP alerts will appear as discrete events, with "Microsoft” as the vendor and “Windows Defender ATP” as the device name.
+Microsoft Defender ATP detections will appear as discrete events, with "Microsoft” as the vendor and “Windows Defender ATP” as the device name.
 
 
 ## Troubleshooting HP ArcSight connection
@@ -187,6 +190,6 @@ Microsoft Defender ATP alerts will appear as discrete events, with "Microsoft”
 
 ## Related topics
 - [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
-- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk.md)
-- [Pull Microsoft Defender ATP alerts using REST API](pull-alerts-using-rest-api.md)
+- [Configure Splunk to pull Microsoft Defender ATP detections](configure-splunk.md)
+- [Pull Microsoft Defender ATP detections using REST API](pull-alerts-using-rest-api.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
