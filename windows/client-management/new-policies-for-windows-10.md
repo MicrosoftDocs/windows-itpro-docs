@@ -69,7 +69,7 @@ The following Group Policy settings were added in Windows 10, version 1809:
 - System\Group Policy\Logging and tracing\Configure Files preference logging and tracing
 - System\Group Policy\Logging and tracing\Configure Folder Options preference logging and tracing
 - System\Group Policy\Logging and tracing\Configure Folders preference logging and tracing
-- System\Group Policy\Logging and tracing\Configure Ini Files preference logging and tracing
+- System\Group Policy\Logging and tracing\Configure INI Files preference logging and tracing
 - System\Group Policy\Logging and tracing\Configure Internet Settings preference logging and tracing
 - System\Group Policy\Logging and tracing\Configure Local Users and Groups preference logging and tracing
 - System\Group Policy\Logging and tracing\Configure Network Options preference logging and tracing
