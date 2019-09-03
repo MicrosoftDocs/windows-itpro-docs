@@ -27,8 +27,8 @@ ms.topic: article
 
 From the start, Windows To Go was designed to minimize differences between the user experience of working on a laptop and Windows To Go booted from a USB drive. Given that Windows To Go was designed as an enterprise solution, extra consideration was given to the deployment workflows that enterprises already have in place. Additionally, there has been a focus on minimizing the number of differences in deployment between Windows To Go workspaces and laptop PCs.
 
-> [!NOTE]
-> Windows To Go does not support operating system upgrades. Windows To Go is designed as a feature that is managed centrally. IT departments that plan to transition from one operating system version to a later version will need to incorporate re-imaging their existing Windows To Go drives as part of their upgrade deployment process.
+>[!NOTE]
+>Windows To Go does not support operating system upgrades. Windows To Go is designed as a feature that is managed centrally. IT departments that plan to transition from one operating system version to a later version will need to incorporate re-imaging their existing Windows To Go drives as part of their upgrade deployment process.
 
  
 
@@ -323,19 +323,7 @@ If you choose to not use the Windows To Go startup options or are using a PC run
 ## Related topics
 
 
-[Windows To Go: feature overview](windows-to-go-overview.md)
-
-[Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md)
-
-[Security and data protection considerations for Windows To Go](security-and-data-protection-considerations-for-windows-to-go.md)
-
+[Windows To Go: feature overview](windows-to-go-overview.md)<br>
+[Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md)<br>
+[Security and data protection considerations for Windows To Go](security-and-data-protection-considerations-for-windows-to-go.md)<br>
 [Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
-
- 
-
- 
-
-
-
-
-

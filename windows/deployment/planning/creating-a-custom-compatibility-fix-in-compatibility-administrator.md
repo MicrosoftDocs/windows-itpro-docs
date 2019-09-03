@@ -11,7 +11,6 @@ ms.pagetype: appcompat
 ms.sitesec: library
 audience: itpro
 author: greg-lindsay
-ms.date: 04/19/2017
 ms.topic: article
 ---
 
@@ -29,8 +28,8 @@ ms.topic: article
 
 The Compatibility Administrator tool uses the term *fix* to describe the combination of compatibility information added to a customized database for a specific application. This combination can include single application fixes, groups of fixes that work together as a compatibility mode, and blocking and non-blocking AppHelp messages.
 
-> [!IMPORTANT]  
-> Fixes apply to a single application only; therefore, you must create multiple fixes if you need to fix the same issue in multiple applications.
+>[!IMPORTANT]  
+>Fixes apply to a single application only; therefore, you must create multiple fixes if you need to fix the same issue in multiple applications.
 
  
 
@@ -44,8 +43,8 @@ A compatibility fix, previously known as a shim, is a small piece of code that i
 
 The Compatibility Administrator tool has preloaded fixes for many common applications, including known compatibility fixes, compatibility modes, and AppHelp messages. Before you create a new compatibility fix, you can search for an existing application and then copy and paste the known fixes into your customized database.
 
-> [!IMPORTANT]  
-> Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create custom databases for 32-bit applications and the 64-bit version to create custom databases for 64-bit applications.
+>[!IMPORTANT]  
+>Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create custom databases for 32-bit applications and the 64-bit version to create custom databases for 64-bit applications.
 
  
 
@@ -76,12 +75,3 @@ If you are unable to find a preloaded compatibility fix for your application, yo
 
 ## Related topics
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
-
- 
-
- 
-
-
-
-
-

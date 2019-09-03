@@ -11,7 +11,6 @@ ms.pagetype: appcompat
 ms.sitesec: library
 audience: itpro
 author: greg-lindsay
-ms.date: 04/19/2017
 ms.topic: article
 ---
 
@@ -31,8 +30,8 @@ You can access the Query tool from within Compatibility Administrator. The Query
 
 For information about the Search feature, see [Searching for Fixed Applications in Compatibility Administrator](searching-for-fixed-applications-in-compatibility-administrator.md). However, the Query tool provides more detailed search criteria, including tabs that enable you to search the program properties, the compatibility fix properties, and the fix description. You can perform a search by using SQL SELECT and WHERE clauses, in addition to searching specific types of databases.
 
-> [!IMPORTANT]
-> You must perform your search with the correct version of the Compatibility Administrator tool. To use the Query tool to search for a 32-bit custom database, you must use the 32-bit version of Compatibility Administrator. To use the Query tool to search for a 64-bit custom database, you must use the 64-bit version of Compatibility Administrator.
+>[!IMPORTANT]
+>You must perform your search with the correct version of the Compatibility Administrator tool. To use the Query tool to search for a 32-bit custom database, you must use the 32-bit version of Compatibility Administrator. To use the Query tool to search for a 64-bit custom database, you must use the 64-bit version of Compatibility Administrator.
 
  
 
@@ -172,13 +171,5 @@ You can export any of your search results into a tab-delimited text (.txt) file 
 2.  Browse to the location where you intend to store the search results file, and then click **Save**.
 
 ## Related topics
+
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
-
- 
-
- 
-
-
-
-
-

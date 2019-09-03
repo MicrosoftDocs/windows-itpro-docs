@@ -11,12 +11,10 @@ ms.pagetype: appcompat
 ms.sitesec: library
 audience: itpro
 author: greg-lindsay
-ms.date: 04/19/2017
 ms.topic: article
 ---
 
 # Understanding and Using Compatibility Fixes
-
 
 **Applies to**
 
@@ -31,7 +29,6 @@ As the Windows operating system evolves to support new technology and functional
 
 ## How the Compatibility Fix Infrastructure Works
 
-
 The Compatibility Fix infrastructure uses the linking ability of APIs to redirect an application from Windows code directly to alternative code that implements the compatibility fix.
 
 The Windows Portable Executable File Format includes headers that contain the data directories that are used to provide a layer of indirection between the application and the linked file. API calls to the external binary files take place through the Import Address Table (IAT), which then directly calls the Windows operating system, as shown in the following figure.
@@ -42,13 +39,12 @@ Specifically, the process modifies the address of the affected Windows function 
 
 ![act app redirect with compatibility fix](images/dep-win8-l-act-appredirectwithcompatfix.jpg)
 
-> [!NOTE]
-> For statically linked DLLs, the code redirection occurs as the application loads. You can also fix dynamically linked DLLs by hooking into the GetProcAddress API.
+>[!NOTE]
+>For statically linked DLLs, the code redirection occurs as the application loads. You can also fix dynamically linked DLLs by hooking into the GetProcAddress API.
 
  
 
 ## Design Implications of the Compatibility Fix Infrastructure
-
 
 There are important considerations to keep in mind when determining your application fix strategy, due to certain characteristics of the Compatibility Fix infrastructure.
 
@@ -64,7 +60,6 @@ There are important considerations to keep in mind when determining your applica
      
 
 ## Determining When to Use a Compatibility Fix
-
 
 The decision to use compatibility fixes to remedy your compatibility issues may involve more than just technical issues. The following scenarios reflect other common reasons for using a compatibility fix.
 
@@ -88,15 +83,14 @@ In the situation where an application is either unimportant to your organization
 
 ## Determining Which Version of an Application to Fix
 
-
 You can apply a compatibility fix to a particular version of an application, either by using the "up to or including" clause or by selecting that specific version. This means that the next version of the application will not have the compatibility fix automatically applied. This is important, because it allows you to continue to use your application, but it also encourages the vendor to fix the application.
 
 ## Support for Compatibility Fixes
-
 
 Compatibility fixes are shipped as part of the Windows operating system and are updated by using Windows Update. Therefore, they receive the same level of support as Windows itself.
 
 You can apply the compatibility fixes to any of your applications. However, Microsoft does not provide the tools to use the Compatibility Fix infrastructure to create your own custom fixes.
 
 ## Related topics
+
 [Managing Application-Compatibility Fixes and Custom Fix Databases](managing-application-compatibility-fixes-and-custom-fix-databases.md)

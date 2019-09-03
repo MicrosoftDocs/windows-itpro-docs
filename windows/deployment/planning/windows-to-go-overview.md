@@ -29,32 +29,26 @@ Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education t
 
 PCs that meet the Windows 7 or later [certification requirements](https://go.microsoft.com/fwlink/p/?LinkId=618711) can run Windows 10 in a Windows To Go workspace, regardless of the operating system running on the PC. Windows To Go workspaces can use the same image enterprises use for their desktops and laptops and can be managed the same way. Windows To Go is not intended to replace desktops, laptops or supplant other mobility offerings. Rather, it provides support for efficient use of resources for alternative workplace scenarios. There are some additional considerations that you should keep in mind before you start to use Windows To Go:
 
--   [Differences between Windows To Go and a typical installation of Windows](#bkmk-wtgdif)
--   [Roaming with Windows To Go](#bkmk-wtgroam)
--   [Prepare for Windows To Go](#wtg-prep-intro)
--   [Hardware considerations for Windows To Go](#wtg-hardware)
+- [Differences between Windows To Go and a typical installation of Windows](#bkmk-wtgdif)
+- [Roaming with Windows To Go](#bkmk-wtgroam)
+- [Prepare for Windows To Go](#wtg-prep-intro)
+- [Hardware considerations for Windows To Go](#wtg-hardware)
 
-> [!NOTE]
-> Windows To Go is not supported on Windows RT.
+>[!NOTE]
+>Windows To Go is not supported on Windows RT.
 
  
 
 ## <a href="" id="bkmk-wtgdif"></a>Differences between Windows To Go and a typical installation of Windows
 
-
 Windows To Go workspace operates just like any other installation of Windows with a few exceptions. These exceptions are:
 
--   **Internal disks are offline.** To ensure data isn’t accidentally disclosed, internal hard disks on the host computer are offline by default when booted into a Windows To Go workspace. Similarly if a Windows To Go drive is inserted into a running system, the Windows To Go drive will not be listed in Windows Explorer.
-
--   **Trusted Platform Module (TPM) is not used.** When using BitLocker Drive Encryption a pre-operating system boot password will be used for security rather than the TPM since the TPM is tied to a specific computer and Windows To Go drives will move between computers.
-
--   **Hibernate is disabled by default.** To ensure that the Windows To Go workspace is able to move between computers easily, hibernation is disabled by default. Hibernation can be re-enabled by using Group Policy settings.
-
--   **Windows Recovery Environment is not available.** In the rare case that you need to recover your Windows To Go drive, you should re-image it with a fresh image of Windows.
-
--   **Refreshing or resetting a Windows To Go workspace is not supported.** Resetting to the manufacturer’s standard for the computer doesn’t apply when running a Windows To Go workspace, so the feature was disabled.
-
--   **Upgrading a Windows To Go workspace is not supported.** Older Windows 8 or Windows 8.1 Windows To Go workspaces cannot be upgraded to Windows 10 workspaces, nor can Windows 10 Windows To Go workspaces be upgraded to future versions of Windows 10. For new versions, the workspace needs to be re-imaged with a fresh image of Windows.
+- **Internal disks are offline.** To ensure data isn’t accidentally disclosed, internal hard disks on the host computer are offline by default when booted into a Windows To Go workspace. Similarly if a Windows To Go drive is inserted into a running system, the Windows To Go drive will not be listed in Windows Explorer.
+- **Trusted Platform Module (TPM) is not used.** When using BitLocker Drive Encryption a pre-operating system boot password will be used for security rather than the TPM since the TPM is tied to a specific computer and Windows To Go drives will move between computers.
+- **Hibernate is disabled by default.** To ensure that the Windows To Go workspace is able to move between computers easily, hibernation is disabled by default. Hibernation can be re-enabled by using Group Policy settings.
+- **Windows Recovery Environment is not available.** In the rare case that you need to recover your Windows To Go drive, you should re-image it with a fresh image of Windows.
+- **Refreshing or resetting a Windows To Go workspace is not supported.** Resetting to the manufacturer’s standard for the computer doesn’t apply when running a Windows To Go workspace, so the feature was disabled.
+- **Upgrading a Windows To Go workspace is not supported.** Older Windows 8 or Windows 8.1 Windows To Go workspaces cannot be upgraded to Windows 10 workspaces, nor can Windows 10 Windows To Go workspaces be upgraded to future versions of Windows 10. For new versions, the workspace needs to be re-imaged with a fresh image of Windows.
 
 ## <a href="" id="bkmk-wtgroam"></a>Roaming with Windows To Go
 
@@ -96,11 +90,9 @@ For more information about designing and planning your Windows To Go deployment,
 
 The devices listed in this section have been specially optimized and certified for Windows To Go and meet the necessary requirements for booting and running a full version of Windows 10 from a USB drive. The optimizations for Windows To Go include the following:
 
--   Windows To Go certified USB drives are built for high random read/write speeds and support the thousands of random access I/O operations per second required for running normal Windows workloads smoothly.
-
--   Windows To Go certified USB drives have been tuned to ensure they boot and run on hardware certified for use with Windows 7 and later.
-
--   Windows To Go certified USB drives are built to last. Certified USB drives are backed with manufacturer warranties and should continue operating under normal usage. Refer to the manufacturer websites for warranty details.
+- Windows To Go certified USB drives are built for high random read/write speeds and support the thousands of random access I/O operations per second required for running normal Windows workloads smoothly.
+- Windows To Go certified USB drives have been tuned to ensure they boot and run on hardware certified for use with Windows 7 and later.
+- Windows To Go certified USB drives are built to last. Certified USB drives are backed with manufacturer warranties and should continue operating under normal usage. Refer to the manufacturer websites for warranty details.
 
 As of the date of publication, the following are the USB drives currently certified for use as Windows To Go drives:
 
@@ -109,26 +101,21 @@ Using a USB drive that has not been certified is not supported
 
  
 
--   IronKey Workspace W700 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w700.html](https://go.microsoft.com/fwlink/p/?LinkId=618714))
-
--   IronKey Workspace W500 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w500.html](https://go.microsoft.com/fwlink/p/?LinkId=618717))
-
--   IronKey Workspace W300 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w300.html](https://go.microsoft.com/fwlink/p/?LinkId=618718))
-
--   Kingston DataTraveler Workspace for Windows To Go ([http://www.kingston.com/wtg/](https://go.microsoft.com/fwlink/p/?LinkId=618719))
-
--   Spyrus Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
+- IronKey Workspace W700 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w700.html](https://go.microsoft.com/fwlink/p/?LinkId=618714))
+- IronKey Workspace W500 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w500.html](https://go.microsoft.com/fwlink/p/?LinkId=618717))
+- IronKey Workspace W300 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w300.html](https://go.microsoft.com/fwlink/p/?LinkId=618718))
+- Kingston DataTraveler Workspace for Windows To Go ([http://www.kingston.com/wtg/](https://go.microsoft.com/fwlink/p/?LinkId=618719))
+- Spyrus Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
     We recommend that you run the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Portable Workplace.
 
--   Spyrus Secure Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
+- Spyrus Secure Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
     > [!IMPORTANT]  
     > You must use the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Secure Portable Workplace. For more information about the Spyrus Deployment Suite for Windows To Go please refer to [http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720).
 
-     
 
--   Spyrus Worksafe ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
+- Spyrus Worksafe ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
     **Tip**  
     This device contains an embedded smart card.
@@ -151,11 +138,9 @@ Using a USB drive that has not been certified is not supported
 
 When assessing the use of a PC as a host for a Windows To Go workspace you should consider the following criteria:
 
--   Hardware that has been certified for use with Windows 7or later operating systems will work well with Windows To Go.
-
--   Running a Windows To Go workspace from a computer that is running Windows RT is not a supported scenario.
-
--   Running a Windows To Go workspace on a Mac computer is not a supported scenario.
+- Hardware that has been certified for use with Windows 7or later operating systems will work well with Windows To Go.
+- Running a Windows To Go workspace from a computer that is running Windows RT is not a supported scenario.
+- Running a Windows To Go workspace on a Mac computer is not a supported scenario.
 
 The following table details the characteristics that the host computer must have to be used with Windows To Go:
 
@@ -249,37 +234,17 @@ In addition to the USB boot support in the BIOS, the Windows 10 image on your W
 </tbody>
 </table>
 
- 
-
 ## Additional resources
 
-
--   [Windows 10 forums](https://go.microsoft.com/fwlink/p/?LinkId=618949)
-
--   [Windows To Go Step by Step Wiki](https://go.microsoft.com/fwlink/p/?LinkId=618950)
-
--   [Tips for configuring your BIOS settings to work with Windows To Go](https://go.microsoft.com/fwlink/p/?LinkId=618951)
+- [Windows 10 forums](https://go.microsoft.com/fwlink/p/?LinkId=618949)
+- [Windows To Go Step by Step Wiki](https://go.microsoft.com/fwlink/p/?LinkId=618950)
+- [Tips for configuring your BIOS settings to work with Windows To Go](https://go.microsoft.com/fwlink/p/?LinkId=618951)
 
 ## Related topics
 
-
--   [Deploy Windows To Go in your organization](https://go.microsoft.com/fwlink/p/?LinkId=619975)
-
--   [Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
-
--   [Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md)
-
--   [Deployment considerations for Windows To Go](deployment-considerations-for-windows-to-go.md)
-
--   [Security and data protection considerations for Windows To Go](security-and-data-protection-considerations-for-windows-to-go.md)
-
--   [Best practice recommendations for Windows To Go](best-practice-recommendations-for-windows-to-go.md)
-
- 
-
- 
-
-
-
-
-
+[Deploy Windows To Go in your organization](https://go.microsoft.com/fwlink/p/?LinkId=619975)<br>
+[Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)<br>
+[Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md)<br>
+[Deployment considerations for Windows To Go](deployment-considerations-for-windows-to-go.md)<br>
+[Security and data protection considerations for Windows To Go](security-and-data-protection-considerations-for-windows-to-go.md)<br>
+[Best practice recommendations for Windows To Go](best-practice-recommendations-for-windows-to-go.md)

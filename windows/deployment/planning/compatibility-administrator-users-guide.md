@@ -11,7 +11,6 @@ ms.pagetype: appcompat
 ms.sitesec: library
 audience: itpro
 author: greg-lindsay
-ms.date: 04/19/2017
 ms.topic: article
 ---
 
@@ -20,32 +19,29 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+- Windows 10
+- Windows 8.1
+- Windows 8
+- Windows 7
+- Windows Server 2012
+- Windows Server 2008 R2
 
 The Compatibility Administrator tool helps you resolve potential application-compatibility issues before deploying a new version of Windows to your organization. Compatibility Administrator provides the following:
 
--   Compatibility fixes, compatibility modes, and AppHelp messages that you can use to resolve specific compatibility issues.
+- Compatibility fixes, compatibility modes, and AppHelp messages that you can use to resolve specific compatibility issues.
 
--   Tools for creating customized compatibility fixes, compatibility modes, AppHelp messages, and compatibility databases.
+- Tools for creating customized compatibility fixes, compatibility modes, AppHelp messages, and compatibility databases.
 
--   A query tool that you can use to search for installed compatibility fixes on your local computers.
+- A query tool that you can use to search for installed compatibility fixes on your local computers.
 
 The following flowchart shows the steps for using the Compatibility Administrator tool to create your compatibility fixes, compatibility modes, and AppHelp messages.
 
 ![act compatibility admin flowchart](images/dep-win8-l-act-compatadminflowchart.jpg)
 
-> [!IMPORTANT]  
-> Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create and work with custom databases for 32-bit applications, and the 64-bit version to create and work with custom databases for 64-bit applications.
-
- 
+>[!IMPORTANT]  
+>Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create and work with custom databases for 32-bit applications, and the 64-bit version to create and work with custom databases for 64-bit applications.
 
 ## In this section
-
 
 <table>
 <colgroup>
@@ -73,14 +69,3 @@ The following flowchart shows the steps for using the Compatibility Administrato
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-
