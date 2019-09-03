@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -28,8 +29,8 @@ ms.topic: article
 
 The **Events** screen enables you to record and to view your activities in the Compatibility Administrator tool, provided that the screen is open while you perform the activities.
 
-**Important**  
-The **Events** screen only records your activities when the screen is open. If you perform an action before opening the **Events** screen, the action will not appear in the list.
+> [!IMPORTANT]  
+> The **Events** screen only records your activities when the screen is open. If you perform an action before opening the **Events** screen, the action will not appear in the list.
 
  
 

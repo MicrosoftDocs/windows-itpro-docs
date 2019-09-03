@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -30,8 +31,8 @@ You can access the Query tool from within Compatibility Administrator. The Query
 
 For information about the Search feature, see [Searching for Fixed Applications in Compatibility Administrator](searching-for-fixed-applications-in-compatibility-administrator.md). However, the Query tool provides more detailed search criteria, including tabs that enable you to search the program properties, the compatibility fix properties, and the fix description. You can perform a search by using SQL SELECT and WHERE clauses, in addition to searching specific types of databases.
 
-**Important**  
-You must perform your search with the correct version of the Compatibility Administrator tool. To use the Query tool to search for a 32-bit custom database, you must use the 32-bit version of Compatibility Administrator. To use the Query tool to search for a 64-bit custom database, you must use the 64-bit version of Compatibility Administrator.
+> [!IMPORTANT]
+> You must perform your search with the correct version of the Compatibility Administrator tool. To use the Query tool to search for a 32-bit custom database, you must use the 32-bit version of Compatibility Administrator. To use the Query tool to search for a 64-bit custom database, you must use the 64-bit version of Compatibility Administrator.
 
  
 
@@ -62,8 +63,8 @@ You can use the **Program Properties** tab of the Query tool to search for any c
 
     -   **Application Helps**
 
-    **Important**  
-    If you do not select any of the check boxes, the search will look for all types of compatibility fixes. Do not select multiple check boxes because only applications that match all of the requirements will appear.
+    > [!IMPORTANT]  
+    > If you do not select any of the check boxes, the search will look for all types of compatibility fixes. Do not select multiple check boxes because only applications that match all of the requirements will appear.
 
      
 
@@ -86,15 +87,15 @@ You can use the **Fix Properties** tab of the Query tool to search for any appli
 
 4.  Type the name of the compatibility fix or compatibility mode into the **Search for programs fixed using** field.
 
-    **Note**  
-    You can use the percent (%) symbol as a wildcard in your fix-properties query, as a substitute for any string of zero or more characters.
+    > [!NOTE]
+    > You can use the percent (%) symbol as a wildcard in your fix-properties query, as a substitute for any string of zero or more characters.
 
      
 
 5.  Select the check box for either **Search in Compatibility Fixes** or **Search in Compatibility Modes**.
 
-    **Important**  
-    Your text must match the type of compatibility fix or mode for which you are performing the query. For example, entering the name of a compatibility fix and selecting the compatibility mode check box will not return any results. Additionally, if you select both check boxes, the query will search for the fix by compatibility mode and compatibility fix. Only applications that match both requirements appear.
+    > [!IMPORTANT]
+    > Your text must match the type of compatibility fix or mode for which you are performing the query. For example, entering the name of a compatibility fix and selecting the compatibility mode check box will not return any results. Additionally, if you select both check boxes, the query will search for the fix by compatibility mode and compatibility fix. Only applications that match both requirements appear.
 
      
 
@@ -117,8 +118,8 @@ You can use the **Fix Description** tab of the Query tool to add parameters that
 
 4.  Type your search keywords into the box **Words to look for**. Use commas to separate multiple keywords.
 
-    **Important**  
-    You cannot use wildcards as part of the Fix Description search query because the default behavior is to search for any entry that meets your search criteria.
+    > [!IMPORTANT]
+    > You cannot use wildcards as part of the Fix Description search query because the default behavior is to search for any entry that meets your search criteria.
 
      
 

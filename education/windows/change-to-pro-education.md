@@ -37,7 +37,7 @@ Before you change to Windows 10 Pro Education, make sure you meet these requirem
 - The user making the changes must be a member of the Azure AD global administrator group.
 
 ## Compare Windows 10 Pro and Pro Education editions
-You can [compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare) to find out more about the features we support in other editions of Windows 10.
+You can [compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare) to find out more about the features we support in other editions of Windows 10.
 
 For more info about Windows 10 default settings and recommendations for education customers, see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md).
 
@@ -314,6 +314,6 @@ For more information about integrating on-premises AD DS domains with Azure AD, 
 
 [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)  
 [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)  
-[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)  
+[Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)  
 [Windows 10 subscription activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation)
 

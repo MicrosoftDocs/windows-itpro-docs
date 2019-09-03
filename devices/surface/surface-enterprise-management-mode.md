@@ -226,7 +226,9 @@ create a reset package using PowerShell to reset SEMM.
 
 ## Version History
 
-
+### Version 2.54.139.0
+* Support to Surface Hub 2S
+* Bug fixes
 
 ### Version 2.43.136.0
 * Support to enable/disable simulatenous multithreating 

@@ -105,7 +105,7 @@ Windows Hello for Business with a key does not support RDP. RDP does not support
 
 ## Learn more
 
-[Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/en-us/itshowcase/implementing-windows-hello-for-business-at-microsoft)
+[Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/itshowcase/implementing-windows-hello-for-business-at-microsoft)
 
 [Introduction to Windows Hello](https://go.microsoft.com/fwlink/p/?LinkId=786649), video presentation on Microsoft Virtual Academy
 
