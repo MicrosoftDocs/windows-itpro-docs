@@ -28,7 +28,7 @@ ms.topic: article
 
 The **Events** screen enables you to record and to view your activities in the Compatibility Administrator tool, provided that the screen is open while you perform the activities.
 
->[!IMPORTANT]  
+>[!IMPORTANT]
 >The **Events** screen only records your activities when the screen is open. If you perform an action before opening the **Events** screen, the action will not appear in the list.
 
  
