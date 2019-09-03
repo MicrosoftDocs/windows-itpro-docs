@@ -153,7 +153,7 @@ The following Group Policy settings were added in Windows 10, version 1809:
 - Windows Components\Windows Defender Application Guard\Allow camera and microphone access in Windows Defender Application Guard
 - Windows Components\Windows Defender Application Guard\Allow users to trust files that open in Windows Defender Application Guard
 - Windows Components\Windows Defender Application Guard\Allow Windows Defender Application Guard to use Root Certificate Authorities from the user’s device
-- Windows Components\Windows Defender Application Guard\Configure additional sources for untrusted files in Windows Defender Application Guard.
+- Windows Components\Windows Defender Application Guard\Configure additional sources for untrusted files in Windows Defender Application Guard
 - Windows Components\Windows Hello for Business\Use Windows Hello for Business certificates as smart card certificates
 - Windows Components\Windows Media Player\Do Not Show First Use Dialog Boxes
 - Windows Components\Windows Media Player\Prevent Automatic Updates
