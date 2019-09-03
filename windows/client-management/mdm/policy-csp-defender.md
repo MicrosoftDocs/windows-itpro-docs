@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 01/26/2019
+ms.date: 08/26/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -205,8 +205,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Turns off scanning on archived files.
+-   1 (default) – Allowed. Scans the archive files.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -267,8 +267,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Turns off behavior monitoring.
+-   1 (default) – Allowed. Turns on real-time behavior monitoring.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -330,8 +330,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Turns off the Microsoft Active Protection Service.
+-   1 (default) – Allowed. Turns on the Microsoft Active Protection Service.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -392,8 +392,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not allowed.
--   1 – Allowed.
+-   0 (default) – Not allowed. Turns off email scanning.
+-   1 – Allowed. Turns on email scanning.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -454,8 +454,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not allowed.
--   1 – Allowed.
+-   0 (default) – Not allowed. Disables scanning on mapped network drives.
+-   1 – Allowed. Scans mapped network drives.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -502,7 +502,7 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 for desktop.
 
 
-Allows or disallows a full scan of removable drives.
+Allows or disallows a full scan of removable drives. During a quick scan, removable drives may still be scanned.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -516,8 +516,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Turns off scanning on removable drives.
+-   1 (default) – Allowed. Scans removable drives.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -756,8 +756,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Turns off the real-time monitoring service.
+-   1 (default) – Allowed. Turns on and runs the real-time monitoring service.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -818,8 +818,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Turns off scanning of network files.
+-   1 (default) – Allowed. Scans network files.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -934,8 +934,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Prevents users from accessing UI.
+-   1 (default) – Allowed. Lets users access UI.
 
 <!--/SupportedValues-->
 <!--/Policy-->

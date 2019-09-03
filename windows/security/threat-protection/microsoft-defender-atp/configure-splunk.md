@@ -26,7 +26,7 @@ ms.topic: article
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configuresplunk-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configuresplunk-abovefoldlink) 
 
 You'll need to configure Splunk so that it can pull Microsoft Defender ATP detections.
 

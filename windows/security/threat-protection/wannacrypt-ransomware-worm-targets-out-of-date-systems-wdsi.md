@@ -182,7 +182,7 @@ When it successfully infects a vulnerable computer, the malware runs kernel-leve
 
 ## Protection against the WannaCrypt attack
 
-To get the latest protection from Microsoft, upgrade to [Windows 10](https://www.microsoft.com/en-us/windows/windows-10-upgrade). Keeping your computers [up-to-date](https://www.microsoft.com/en-us/security/portal/mmpc/help/updatefaqs.aspx) gives you the benefits of the latest features and proactive mitigations built into the latest versions of Windows.
+To get the latest protection from Microsoft, upgrade to [Windows 10](https://www.microsoft.com/windows/windows-10-upgrade). Keeping your computers [up-to-date](https://www.microsoft.com/security/portal/mmpc/help/updatefaqs.aspx) gives you the benefits of the latest features and proactive mitigations built into the latest versions of Windows.
 
 We recommend customers that have not yet installed the security update [MS17-010](https://technet.microsoft.com/library/security/ms17-010.aspx) do so as soon as possible. Until you can apply the patch, we also recommend two possible workarounds to reduce the attack surface:
 
@@ -195,7 +195,7 @@ For enterprises, use [Device Guard](https://technet.microsoft.com/itpro/windows/
 
 Use [Office 365 Advanced Threat Protection](https://blogs.office.com/2015/04/08/introducing-exchange-online-advanced-threat-protection/), which has machine learning capability that blocks dangerous email threats, such as the emails carrying ransomware.
 
-Monitor networks with [Windows Defender Advanced Threat Protection](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp), which alerts security operations teams about suspicious activities. Download this playbook to see how you can leverage Windows Defender ATP to detect, investigate, and mitigate ransomware in networks: [Windows Defender Advanced Threat Protection - Ransomware response playbook](https://www.microsoft.com/en-us/download/details.aspx?id=55090).
+Monitor networks with [Windows Defender Advanced Threat Protection](https://www.microsoft.com/WindowsForBusiness/windows-atp), which alerts security operations teams about suspicious activities. Download this playbook to see how you can leverage Windows Defender ATP to detect, investigate, and mitigate ransomware in networks: [Windows Defender Advanced Threat Protection - Ransomware response playbook](https://www.microsoft.com/download/details.aspx?id=55090).
 
 ## Resources
 
@@ -207,7 +207,7 @@ MS17-010 Security Update: [https://technet.microsoft.com/library/security/ms17-0
 
 Customer guidance for WannaCrypt attacks: [https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/](https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/)
 
-General information on ransomware: [https://www.microsoft.com/en-us/security/portal/mmpc/shared/ransomware.aspx](https://www.microsoft.com/en-us/security/portal/mmpc/shared/ransomware.aspx)
+General information on ransomware: [https://www.microsoft.com/security/portal/mmpc/shared/ransomware.aspx](https://www.microsoft.com/security/portal/mmpc/shared/ransomware.aspx)
 
 ## Indicators of compromise
 

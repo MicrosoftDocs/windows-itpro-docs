@@ -19,7 +19,7 @@ author: shortpatti
 This topic describes the process for applying the hotfixes for Microsoft BitLocker Administration and Monitoring (MBAM) Server 2.5 SP1
 
 ### Before you begin, download the latest hotfix of Microsoft BitLocker Administration and Monitoring (MBAM) Server 2.5 SP1
-[Desktop Optimization Pack](https://www.microsoft.com/en-us/download/details.aspx?id=58345)
+[Desktop Optimization Pack](https://www.microsoft.com/download/details.aspx?id=58345)
 
 #### Steps to update the MBAM Server for existing MBAM environment 
 1. Remove MBAM server feature (do this by opening the MBAM Server Configuration Tool, then selecting Remove Features).
