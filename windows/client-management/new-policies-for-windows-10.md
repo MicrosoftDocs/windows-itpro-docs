@@ -215,7 +215,7 @@ The following Group Policy settings were added in Windows 10, version 1809:
 
 The following Group Policy settings were added in Windows 10, version 1803:
 
-**System*
+**System**
 
 - System\Credentials Delegation\Encryption Oracle Remediation
 - System\Group Policy\Phone-PC linking on this device
