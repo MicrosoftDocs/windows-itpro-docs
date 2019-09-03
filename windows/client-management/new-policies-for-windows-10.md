@@ -90,7 +90,7 @@ The following Group Policy settings were added in Windows 10, version 1809:
 
 - Windows Components\Data Collection and Preview Builds\Configure Microsoft 365 Update Readiness upload endpoint
 - Windows Components\Data Collection and Preview Builds\Disable deleting diagnostic data
-- Windows Components\Data Collection and Preview Builds\Disable diagnostic data viewer.
+- Windows Components\Data Collection and Preview Builds\Disable diagnostic data viewer
 - Windows Components\Delivery Optimization\[Reserved for future use] Cache Server Hostname
 - Windows Components\Location and Sensors\Windows Location Provider\Turn off Windows Location Provider
 - Windows Components\Microsoft Management Console\Restricted/Permitted snap-ins\DFS Management
