@@ -22,6 +22,7 @@ Requirements:
 - The enterprise has configured a mobile device management (MDM) service  
 - The enterprise AD must be [registered with Azure Active Directory (Azure AD)](azure-active-directory-integration-with-mdm.md)
 - The device should not already be enrolled in Intune using the classic agents (devices managed using agents will fail enrollment with `error 0x80180026`)
+- The minimum Windows Server version requirement is based on the Hybrid AAD join requirement. See [How to plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/en-us/azure/active-directory/devices/hybrid-azuread-join-plan) for more information.
 
 > [!TIP]
 > For additional information, see the following topics:
