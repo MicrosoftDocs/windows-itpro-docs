@@ -14783,7 +14783,7 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-ip-related-alerts-windows-defender-advanced-threat-protection-new.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/get-ip-related-alerts",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-ip-related-machines-windows-defender-advanced-threat-protection.md",
@@ -14793,7 +14793,7 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-ip-related-machines-windows-defender-advanced-threat-protection-new.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/get-ip-related-machines",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-ip-statistics-windows-defender-advanced-threat-protection.md",
@@ -15134,6 +15134,21 @@
 "source_path": "windows/security/threat-protection/windows-defender-atp/find-machines-by-ip-windows-defender-advanced-threat-protection-new.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/find-machines-by-ip",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/is-domain-seen-in-org.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/get-domain-related-alerts",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/get-ip-related-machines.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/get-ip-related-alerts",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp/is-ip-seen-org.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp/exposed-apis-list",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/machineaction-windows-defender-advanced-threat-protection-new.md",
