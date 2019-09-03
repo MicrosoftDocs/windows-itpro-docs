@@ -1,7 +1,7 @@
 ---
-title: Pull Microsoft Defender ATP alerts using REST API
-description: Pull alerts from Microsoft Defender ATP REST API.
-keywords: alerts, pull alerts, rest api, request, response
+title: Pull Microsoft Defender ATP detections using REST API
+description: Pull detections from Microsoft Defender ATP REST API.
+keywords: detections, pull detections, rest api, request, response
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Pull Microsoft Defender ATP alerts using SIEM REST API
+# Pull Microsoft Defender ATP detections using SIEM REST API
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -26,7 +26,11 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
-Microsoft Defender ATP supports the OAuth 2.0 protocol to pull alerts from the portal.
+>[!Note]
+>- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections
+>- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Machine and its related Alert details.
+
+Microsoft Defender ATP supports the OAuth 2.0 protocol to pull detections from the API.
 
 In general, the OAuth 2.0 protocol supports four types of flows:
 - Authorization grant flow
@@ -36,19 +40,19 @@ In general, the OAuth 2.0 protocol supports four types of flows:
 
 For more information about the OAuth specifications, see the [OAuth Website](http://www.oauth.net).
 
-Microsoft Defender ATP supports the _Authorization grant flow_ and _Client credential flow_ to obtain access to generate alerts from the portal, with Azure Active Directory (AAD) as the authorization server.
+Microsoft Defender ATP supports the _Authorization grant flow_ and _Client credential flow_ to obtain access to pull detections, with Azure Active Directory (AAD) as the authorization server.
 
 The _Authorization grant flow_ uses user credentials to get an authorization code, which is then used to obtain an access token.
 
 The _Client credential flow_ uses client credentials to authenticate against the Microsoft Defender ATP endpoint URL. This flow is suitable for scenarios when an OAuth client creates requests to an API that doesn't require user credentials.
 
-Use the following method in the Microsoft Defender ATP API to pull alerts in JSON format.
+Use the following method in the Microsoft Defender ATP API to pull detections in JSON format.
 
 >[!NOTE]
 >Microsoft Defender Security Center merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering. 
 
 ## Before you begin
-- Before calling the Microsoft Defender ATP endpoint to pull alerts, you'll need to enable the SIEM integration application in Azure Active Directory (AAD). For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md).
+- Before calling the Microsoft Defender ATP endpoint to pull detections, you'll need to enable the SIEM integration application in Azure Active Directory (AAD). For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md).
 
 - Take note of the following values in your Azure application registration. You need these values to configure the OAuth flow in your service or daemon app:
   - Application ID (unique to your application)
@@ -59,7 +63,7 @@ Use the following method in the Microsoft Defender ATP API to pull alerts in JSO
 ## Get an access token
 Before creating calls to the endpoint, you'll need to get an access token.
 
-You'll use the access token to access the protected resource, which are alerts in Microsoft Defender ATP.
+You'll use the access token to access the protected resource, which are detections in Microsoft Defender ATP.
 
 To get an access token, you'll need to do a POST request to the token issuing endpoint. Here is a sample request:
 
@@ -105,23 +109,23 @@ Use optional query parameters to specify and control the amount of data returned
 
 Name | Value| Description
 :---|:---|:---
-sinceTimeUtc | DateTime | Defines the lower time bound alerts are retrieved from, based on field: <br> `LastProcessedTimeUtc` <br> The time range will be: from sinceTimeUtc time to current time. <br><br> **NOTE**: When not specified, all alerts generated in the last two hours are retrieved.
-untilTimeUtc | DateTime | Defines the upper time bound alerts are retrieved. <br> The time range will be: from `sinceTimeUtc` time to `untilTimeUtc` time. <br><br> **NOTE**: When not specified, the default value will be the current time.
-ago | string | Pulls alerts in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> Value should be set according to **ISO 8601** duration format <br> E.g. `ago=PT10M` will pull alerts received in the last 10 minutes.
-limit | int | Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.<br><br> **NOTE**: When not specified, all alerts available in the time range will be retrieved.
-machinegroups | string | Specifies machine groups to pull alerts from. <br><br> **NOTE**: When not specified, alerts from all machine groups will be retrieved. <br><br> Example: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+DateTime?sinceTimeUtc | string | Defines the lower time bound detections are retrieved from, based on field: <br> `LastProcessedTimeUtc` <br> The time range will be: from sinceTimeUtc time to current time. <br><br> **NOTE**: When not specified, all detections generated in the last two hours are retrieved.
+DateTime?untilTimeUtc | string | Defines the upper time bound detections are retrieved. <br> The time range will be: from `sinceTimeUtc` time to `untilTimeUtc` time. <br><br> **NOTE**: When not specified, the default value will be the current time.
+string ago | string | Pulls detections in the following time range: from `(current_time - ago)` time to `current_time` time. <br><br> Value should be set according to **ISO 8601** duration format <br> E.g. `ago=PT10M` will pull detections received in the last 10 minutes.
+int?limit | int | Defines the number of detections to be retrieved. Most recent detections will be retrieved based on the number defined.<br><br> **NOTE**: When not specified, all detections available in the time range will be retrieved.
+machinegroups | String | Specifies machine groups to pull detections from. <br><br> **NOTE**: When not specified, detections from all machine groups will be retrieved. <br><br> Example: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | string | Single machine tag from the registry.
 CloudCreatedMachineTags | string | Machine tags that were created in Microsoft Defender Security Center.
 
 ### Request example
-The following example demonstrates how to retrieve all the alerts in your organization.
+The following example demonstrates how to retrieve all the detections in your organization.
 
 ```syntax
 GET  https://wdatp-alertexporter-eu.windows.com/api/alerts
 Authorization: Bearer <your access token>
 ```
 
-The following example demonstrates a request to get the last 20 alerts since 2016-09-12 00:00:00.
+The following example demonstrates a request to get the last 20 detections since 2016-09-12 00:00:00.
 
 ```syntax
 GET  https://wdatp-alertexporter-eu.windows.com/api/alerts?limit=20&sinceTimeUtc=2016-09-12T00:00:00.000
@@ -178,14 +182,14 @@ AuthenticationContext context = new AuthenticationContext(string.Format("https:/
 ClientCredential clientCredentials = new ClientCredential(clientId, clientSecret);
 AuthenticationResult authenticationResult  = context.AcquireToken(resource, clientCredentials);
 ```
-### Use token to connect to the alerts endpoint
+### Use token to connect to the detections endpoint
 
 ```
 HttpClient httpClient = new HttpClient();
 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(authenticationResult.AccessTokenType, authenticationResult.AccessToken);
 HttpResponseMessage response = httpClient.GetAsync("https://wdatp-alertexporter-eu.windows.com/api/alert").GetAwaiter().GetResult();
-string alertsJson = response.Content.ReadAsStringAsync().Result;
-Console.WriteLine("Got alert list: {0}", alertsJson);
+string detectionsJson = response.Content.ReadAsStringAsync().Result;
+Console.WriteLine("Got detections list: {0}", detectionsJson);
 
 ```
 
@@ -203,7 +207,7 @@ HTTP error code | Description
 
 ## Related topics
 - [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
-- [Configure ArcSight to pull Microsoft Defender ATP alerts](configure-arcsight.md)
-- [Configure Splunk to pull Microsoft Defender ATP alerts](configure-splunk.md)
-- [Microsoft Defender ATP alert API fields](api-portal-mapping.md)
+- [Configure ArcSight to pull Microsoft Defender ATP detections](configure-arcsight.md)
+- [Configure Splunk to pull Microsoft Defender ATP detections](configure-splunk.md)
+- [Microsoft Defender ATP Detection fields](api-portal-mapping.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
