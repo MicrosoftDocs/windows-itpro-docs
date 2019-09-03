@@ -1,6 +1,6 @@
 ---
-title: Configure Splunk to pull Microsoft Defender ATP Detections
-description: Configure Splunk to receive and pull Detections from Microsoft Defender Security Center.
+title: Configure Splunk to pull Microsoft Defender ATP detections
+description: Configure Splunk to receive and pull detections from Microsoft Defender Security Center.
 keywords: configure splunk, security information and events management tools, splunk
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Configure Splunk to pull Microsoft Defender ATP Detections
+# Configure Splunk to pull Microsoft Defender ATP detections
 
 **Applies to:**
 
@@ -28,10 +28,10 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configuresplunk-abovefoldlink) 
 
-You'll need to configure Splunk so that it can pull Microsoft Defender ATP Detections.
+You'll need to configure Splunk so that it can pull Microsoft Defender ATP detections.
 
 >[!Note]
->- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more Detections
+>- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections
 >- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Machine and its related Alert details.
 
 ## Before you begin
@@ -125,8 +125,8 @@ You'll need to configure Splunk so that it can pull Microsoft Defender ATP Detec
 
 After completing these configuration steps, you can go to the Splunk dashboard and run queries.
 
-## View Detections using Splunk solution explorer
-Use the solution explorer to view Detections in Splunk.
+## View detections using Splunk solution explorer
+Use the solution explorer to view detections in Splunk.
 
 1. In Splunk, go to **Settings** > **Searchers, reports, and alerts**.
 
@@ -150,7 +150,7 @@ Use the solution explorer to view Detections in Splunk.
 
 ## Related topics
 - [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
-- [Configure ArcSight to pull Microsoft Defender ATP Detections](configure-arcsight.md)
+- [Configure ArcSight to pull Microsoft Defender ATP detections](configure-arcsight.md)
 - [Microsoft Defender ATP Detection fields](api-portal-mapping.md)
-- [Pull Microsoft Defender ATP Detections using REST API](pull-alerts-using-rest-api.md)
+- [Pull Microsoft Defender ATP detections using REST API](pull-alerts-using-rest-api.md)
 - [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
