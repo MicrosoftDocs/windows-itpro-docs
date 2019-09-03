@@ -221,7 +221,7 @@ The following Group Policy settings were added in Windows 10, version 1803:
 - System\Group Policy\Phone-PC linking on this device
 - System\OS Policies\Allow upload of User Activities
 
-**Windows Components*
+**Windows Components**
 
 - Windows Components\App Privacy\Let Windows apps access an eye tracker device
 - Windows Components\Cloud Content\Turn off Windows Spotlight on Settings
