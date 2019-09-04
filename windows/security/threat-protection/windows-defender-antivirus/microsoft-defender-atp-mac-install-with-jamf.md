@@ -201,7 +201,6 @@ mdatp --health healthy
 The above command prints "1" if the product is onboarded and functioning as expected.
 
 If the product is not healthy, the exit code (which can be checked through `echo $?`) indicates the problem:
-- 0 if Microsoft Defender ATP is registered with the Microsoft Defender ATP service
 - 1 if the device is not yet onboarded
 - 3 if the connection to the daemon cannot be established—for example, if the daemon is not running
 
