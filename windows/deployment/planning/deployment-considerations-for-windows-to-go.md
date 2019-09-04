@@ -20,7 +20,7 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
+- Windows 10
 
 >[!IMPORTANT]
 >Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
@@ -30,28 +30,18 @@ From the start, Windows To Go was designed to minimize differences between the u
 >[!NOTE]
 >Windows To Go does not support operating system upgrades. Windows To Go is designed as a feature that is managed centrally. IT departments that plan to transition from one operating system version to a later version will need to incorporate re-imaging their existing Windows To Go drives as part of their upgrade deployment process.
 
- 
-
 The following sections discuss the boot experience, deployment methods, and tools that you can use with Windows To Go.
 
--   [Initial boot experiences](#wtg-initboot)
-
--   [Image deployment and drive provisioning considerations](#wtg-imagedep)
-
--   [Application installation and domain join](#wtg-appinstall)
-
--   [Management of Windows To Go using Group Policy](#bkmk-wtggp)
-
--   [Supporting booting from USB](#wtg-bootusb)
-
--   [Updating firmware](#stg-firmware)
-
--   [Configure Windows To Go startup options](#wtg-startup)
-
--   [Change firmware settings](#wtg-changefirmware)
+- [Initial boot experiences](#wtg-initboot)
+- [Image deployment and drive provisioning considerations](#wtg-imagedep)
+- [Application installation and domain join](#wtg-appinstall)
+- [Management of Windows To Go using Group Policy](#bkmk-wtggp)
+- [Supporting booting from USB](#wtg-bootusb)
+- [Updating firmware](#stg-firmware)
+- [Configure Windows To Go startup options](#wtg-startup)
+- [Change firmware settings](#wtg-changefirmware)
 
 ## <a href="" id="wtg-initboot"></a>Initial boot experiences
-
 
 The following diagrams illustrate the two different methods you could use to provide Windows To Go drives to your users. The experiences differ depending on whether the user will be booting the device initially on-premises or off-premises:
 
@@ -66,8 +56,6 @@ When the Windows To Go workspace is going to be used first on an off-premises co
 **Tip**  
 Applying BitLocker Drive Encryption to the drives before provisioning is a much faster process than encrypting the drives after data has already been stored on them due to a new feature called used-disk space only encryption. For more information, see [What's New in BitLocker](https://go.microsoft.com/fwlink/p/?LinkId=619076).
 
- 
-
 DirectAccess can be used to ensure that the user can login with their domain credentials without needing a local account. For instructions on setting up a DirectAccess solution, for a small pilot deployment see [Deploy a Single Remote Access Server using the Getting Started Wizard](https://go.microsoft.com/fwlink/p/?LinkId=619077) for a larger scale deployment, see [Deploy Remote Access in an Enterprise](https://go.microsoft.com/fwlink/p/?LinkId=619078). If you do not want to use DirectAccess as an alternative users could log on using a local user account on the Windows To Go workspace and then use a virtual private network for remote access to your organizational network.
 
 ### <a href="" id="wtg-imagedep"></a>Image deployment and drive provisioning considerations
@@ -80,8 +68,6 @@ The simplest way to provision a Windows To Go drive is to use the Windows To Go 
 
 **Tip**  
 When you create your Windows To Go image use sysprep /generalize, just as you do when you deploy Windows 10 to a standard PC. In fact, if appropriate, use the same image for both deployments.
-
- 
 
 **Driver considerations**
 
@@ -231,8 +217,6 @@ The following list of commonly used Wi-Fi network adapters that are not supporte
 </tbody>
 </table>
 
- 
-
 IT administrators that want to target Windows To Go images for specific systems should test their images to ensure that the necessary system drivers are in the image, especially for critical functionality like Wi-Fi that is not supported by class drivers. Some consumer devices require OEM specific driver packages, which may not be available on Windows Update. For more information on how to add a driver to a Windows Image, please refer to the [Basic Windows Deployment Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=619079).
 
 ### <a href="" id="wtg-appinstall"></a>Application installation and domain join
@@ -247,39 +231,32 @@ The use of the Store on Windows To Go workspaces that are running Windows 8 can
 
 **Settings for workspaces**
 
--   **Allow hibernate (S4) when started from a Windows To Go workspace**
+- **Allow hibernate (S4) when started from a Windows To Go workspace**
 
     This policy setting specifies whether the PC can use the hibernation sleep state (S4) when started from a Windows To Go workspace. By default, hibernation is disabled when using Windows To Go workspace, so enabling this setting explicitly turns this ability back on. When a computer enters hibernation, the contents of memory are written to disk. When the disk is resumed, it is important that the hardware attached to the system, as well as the disk itself, are unchanged. This is inherently incompatible with roaming between PC hosts. Hibernation should only be used when the Windows To Go workspace is not being used to roam between host PCs.
 
-    > [!IMPORTANT]  
-    > For the host-PC to resume correctly when hibernation is enabled the Windows To Go workspace must continue to use the same USB port.
+    >[!IMPORTANT]  
+    >For the host-PC to resume correctly when hibernation is enabled the Windows To Go workspace must continue to use the same USB port.
 
-     
-
--   **Disallow standby sleep states (S1-S3) when starting from a Windows To Go workspace**
+- **Disallow standby sleep states (S1-S3) when starting from a Windows To Go workspace**
 
     This policy setting specifies whether the PC can use standby sleep states (S1–S3) when started from a Windows To Go workspace. The Sleep state also presents a unique challenge to Windows To Go users. When a computer goes to sleep, it appears as if it is shut down. It could be very easy for a user to think that a Windows To Go workspace in sleep mode was actually shut down and they could remove the Windows To Go drive and take it home. Removing the Windows To Go drive in this scenario is equivalent to an unclean shutdown which may result in the loss of unsaved user data or the corruption on the drive. Moreover, if the user now boots the drive on another PC and brings it back to the first PC which still happens to be in the sleep state, it will lead to an arbitrary crash and eventually corruption of the drive and result in the workspace becoming unusable. If you enable this policy setting, the Windows To Go workspace cannot use the standby states to cause the PC to enter sleep mode. If you disable or do not configure this policy setting, the Windows To Go workspace can place the PC in sleep mode.
 
 **Settings for host PCs**
 
--   **Windows To Go Default Startup Options**
+- **Windows To Go Default Startup Options**
 
     This policy setting controls whether the host computer will boot to Windows To Go if a USB device containing a Windows To Go workspace is connected, and controls whether users can make changes using the **Windows To Go Startup Options** settings dialog. If you enable this policy setting, booting to Windows To Go when a USB device is connected will be enabled and users will not be able to make changes using the **Windows To Go Startup Options** settings dialog. If you disable this policy setting, booting to Windows To Go when a USB device is connected will not be enabled unless a user configures the option manually in the firmware. If you do not configure this policy setting, users who are members of the local Administrators group can enable or disable booting from USB using the **Windows To Go Startup Options** settings dialog.
 
-    > [!IMPORTANT]  
-    > Enabling this policy setting will cause PCs running Windows to attempt to boot from any USB device that is inserted into the PC before it is started.
-
-     
+    >[!IMPORTANT]  
+    >Enabling this policy setting will cause PCs running Windows to attempt to boot from any USB device that is inserted into the PC before it is started.
 
 ## <a href="" id="wtg-bootusb"></a>Supporting booting from USB
 
-
 The biggest hurdle for a user wanting to use Windows To Go is configuring their computer to boot from USB. This is traditionally done by entering the firmware and configuring the appropriate boot order options. To ease the process of making the firmware modifications required for Windows To Go, Windows includes a feature named **Windows To Go Startup Options** that allows a user to configure their computer to boot from USB from within Windows—without ever entering their firmware, as long as their firmware supports booting from USB.
 
-> [!NOTE]
-> Enabling a system to always boot from USB first has implications that you should consider. For example, a USB device that includes malware could be booted inadvertently to compromise the system, or multiple USB drives could be plugged in to cause a boot conflict. For this reason, the Windows To Go startup options are disabled by default. In addition, administrator privileges are required to configure Windows To Go startup options.
-
- 
+>[!NOTE]
+>Enabling a system to always boot from USB first has implications that you should consider. For example, a USB device that includes malware could be booted inadvertently to compromise the system, or multiple USB drives could be plugged in to cause a boot conflict. For this reason, the Windows To Go startup options are disabled by default. In addition, administrator privileges are required to configure Windows To Go startup options.
 
 If you are going to be using a Windows 7 computer as a host-PC, see the wiki article [Tips for configuring your BIOS settings to work with Windows To Go](https://go.microsoft.com/fwlink/p/?LinkID=618951).
 
@@ -303,25 +280,23 @@ Windows To Go Startup Options is a setting available on Windows 10-based PCs th
 
 **To configure Windows To Go startup options**
 
-1.  On the Start screen, type, type **Windows To Go Startup Options**, click **Settings** and then press Enter.
+1. On the Start screen, type, type **Windows To Go Startup Options**, click **Settings** and then press Enter.
 
-    ![windows to go startup options](images/wtg-startup-options.gif)
+  ![windows to go startup options](images/wtg-startup-options.gif)
 
-2.  Select **Yes** to enable the startup options.
+2. Select **Yes** to enable the startup options.
 
     **Tip**  
     If your computer is part of a domain, the Group Policy setting can be used to enable the startup options instead of the dialog.
 
-     
 
-3.  Click **Save Changes**. If the User Account Control dialog box is displayed, confirm that the action it displays is what you want, and then click **Yes**.
+3. Click **Save Changes**. If the User Account Control dialog box is displayed, confirm that the action it displays is what you want, and then click **Yes**.
 
 ### <a href="" id="wtg-changefirmware"></a>Change firmware settings
 
 If you choose to not use the Windows To Go startup options or are using a PC running Windows 7 as your host computer you will need to manually configure the firmware settings. The process used to accomplish this will depend on the firmware type and manufacturer. If your host computer is protected by BitLocker and running Windows 7 you should suspend BitLocker before making the change to the firmware settings. After the firmware settings have been successfully reconfigured, resume BitLocker protection. If you do not suspend BitLocker first, BitLocker will assume that the computer has been tampered with and will boot into BitLocker recovery mode.
 
 ## Related topics
-
 
 [Windows To Go: feature overview](windows-to-go-overview.md)<br>
 [Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md)<br>
