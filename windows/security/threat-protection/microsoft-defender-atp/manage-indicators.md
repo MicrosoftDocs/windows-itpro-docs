@@ -99,7 +99,7 @@ It's important to understand the following prerequisites prior to creating indic
 5. Review the details in the Summary tab, then click **Save**.
 
 ### Create a contextual indicator from the file details page
-One of the options when taking [response actions on a file](respond-file-alerts) is adding an indicator for the file. 
+One of the options when taking [response actions on a file](respond-file-alerts.md) is adding an indicator for the file. 
 
 When you add an indicator hash for a file, you can choose to raise an alert and block the file whenever a machine in your organization attempts to run it.
 
