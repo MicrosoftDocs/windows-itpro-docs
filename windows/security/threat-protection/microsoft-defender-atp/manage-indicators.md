@@ -1,7 +1,7 @@
 ﻿---
-title:
-description: 
-keywords:
+title: Manage indicators
+description: Learn how to allow or block files, IPs, URLs or domains using indicators.
+keywords: indicator, indicators, allow, block, file, ips, urls, domains, detection, prevention
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -21,6 +21,8 @@ ms.topic: article
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
@@ -105,7 +107,7 @@ When you add an indicator hash for a file, you can choose to raise an alert and 
 Files automatically blocked by an indicator won't show up in the files's Action center, but the alerts will still be visible in the Alerts queue.
 
 
-## Create indicators for IPs and URLs/domains
+## Create indicators for IPs and URLs/domains (preview)
 Microsoft Defender ATP can block what Microsoft deems as malicious IPs/URLs through SmartScreen for Microsoft browsers and Network Protection for non-Microsoft browsers and calls made outside the browser.
 
 The threat intelligence data set for this has been managed by Microsoft.
