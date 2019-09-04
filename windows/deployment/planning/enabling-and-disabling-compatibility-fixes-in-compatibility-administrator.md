@@ -32,7 +32,7 @@ You can disable and enable individual compatibility fixes in your customized dat
 
 Customized compatibility databases can become quite complex as you add your fixes for the multiple applications found in your organization. Over time, you may find you need to disable a particular fix in your customized database. For example, if a software vendor releases a fix for an issue addressed in one of your compatibility fixes, you must validate that the vendor's fix is correct and that it resolves your issue. To do this, you must temporarily disable the compatibility fix and then test your application.
 
->[!IMPORTANT]  
+>[!IMPORTANT]
 >Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to work with custom databases for 32-bit applications and the 64-bit version to work with custom databases for 64-bit applications.
 
  
