@@ -112,12 +112,7 @@ Microsoft Defender ATP can block what Microsoft deems as malicious IPs/URLs thro
 
 The threat intelligence data set for this has been managed by Microsoft.
 
-By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs or domains based on your own threat intelligence. 
-
-
-There are two ways you can create indicators for IPs, URLs or domains:
-- By creating an indicator through the settings page
-- By creating machine groups 
+By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs or domains based on your own threat intelligence. You can do this through the settings page or by machine groups if you deem certain groups to be more or less at risk than others.
 
 ### Before you begin
 It's important to understand the following prerequisites prior to creating indicators for IPS, URLs or domains:
