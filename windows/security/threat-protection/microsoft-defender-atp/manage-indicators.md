@@ -1,7 +1,8 @@
 ﻿---
-title: Manage indicators
-description: Learn how to allow or block files, IPs, URLs or domains using indicators.
-keywords: indicator, indicators, allow, block, file, ips, urls, domains, detection, prevention
+title: Manage indicators 
+ms.reviewer: 
+description: Create indicators for a file hash, IP address, URLs or domains that define the detection, prevention, and exclusion of entities.
+keywords: manage, allowed, blocked, whitelist, blacklist, block, clean, malicious, file hash, ip address, urls, domain
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
