@@ -12,7 +12,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
+ms.date: 08/23/2019
 ms.reviewer: 
 ---
 
@@ -330,9 +330,7 @@ Windows Server Kerberos authentication is achieved by the use of a special Kerbe
 
 ### KRBTGT account maintenance considerations
 
-A strong password is assigned to the KRBTGT account automatically. Be sure that you change the password on a regular schedule. The password for the KDC account is used to derive a secret key for encrypting and decrypting the TGT requests that are issued. The password for a domain trust account is used to derive an inter-realm key for encrypting referral tickets.
-
-On occasion, the KRBTGT account password requires a reset, for example, when an attempt to change the password on the KRBTGT account fails. In order to resolve this issue, you reset the KRBTGT user account password twice by using Active Directory Users and Computers. You must reset the password twice because the KRBTGT account stores only two of the most recent passwords in the password history. By resetting the password twice, you effectively clear all passwords from the password history.
+A strong password is assigned to the KRBTGT and trust accounts automatically. Like any privileged service accounts, organizations should change these passwords on a regular schedule. The password for the KDC account is used to derive a secret key for encrypting and decrypting the TGT requests that are issued. The password for a domain trust account is used to derive an inter-realm key for encrypting referral tickets.
 
 Resetting the password requires you either to be a member of the Domain Admins group, or to have been delegated with the appropriate authority. In addition, you must be a member of the local Administrators group, or you must have been delegated the appropriate authority.
 

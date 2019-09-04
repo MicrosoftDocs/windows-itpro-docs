@@ -76,10 +76,7 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
     
 3. If you’d like to change the image for a secondary tile to your own custom image, open the layout.xml file, and look for the images that the tile references.
    - For example, your layout.xml contains `Square150x150LogoUri="ms-appdata:///local/PinnedTiles/21581260870/hires.png" Wide310x150LogoUri="ms-appx:///"` 
-   - Open `C:\Users\<username>\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState\PinnedTiles\21581260870\` and replace those images with your customized images. 
-    
-     >[!TIP]
-     >A quick method for getting appropriately sized images for each tile size is to upload your image at [BuildMyPinnedSite](http://www.buildmypinnedsite.com/) and then download the resized tile images.
+   - Open `C:\Users\<username>\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState\PinnedTiles\21581260870\` and replace those images with your customized images.     
         
 4. In Windows PowerShell, enter the following command:
  
@@ -112,11 +109,8 @@ In Microsoft Intune, you create a device restrictions policy to apply to device 
 >[!NOTE]
 >The device restrictions in Microsoft Intune include [other Start settings](https://docs.microsoft.com/intune/device-restrictions-windows-10#start) that you can also configure in your profile.
 
-
-
 ### Using a provisioning package
 
-<span id="escape" />
 #### Prepare the Start layout and Edge assets XML files
 
 The **export-StartLayout** and **export-StartLayoutEdgeAssets** cmdlets produce XML files. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout and Edge assets sections to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout and Edge assets sections to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters. 
@@ -128,7 +122,7 @@ The **export-StartLayout** and **export-StartLayoutEdgeAssets** cmdlets produce 
 
 3. During the procedure to create a provisioning package, you will copy the text with the escape characters and paste it in the customizations.xml file for your project. 
 
-#### <a href="" id="bkmk-domaingpodeployment"></a>Create a provisioning package that contains a customized Start layout
+#### Create a provisioning package that contains a customized Start layout
 
 
 Use the Windows Configuration Designer tool to create a provisioning package. [Learn how to install Windows Configuration Designer.](provisioning-packages/provisioning-install-icd.md)

@@ -74,7 +74,7 @@ For example, when an organization is using Microsoft Windows Defender Advanced T
 
 #### Processor scenario
 
-In the controller scenario described above, Microsoft is a *processor* because Microsoft provides data processing services to that controller (in the given example, an organization that subscribed to Windows Defender ATP and enabled it for the user’s device). As processor, Microsoft only processes data on behalf of the enterprise customer and does not have the right to process data beyond their instructions as specified in a written contract, such as the [Microsoft Product Terms and the Microsoft Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx).
+In the controller scenario described above, Microsoft is a *processor* because Microsoft provides data processing services to that controller (in the given example, an organization that subscribed to Windows Defender ATP and enabled it for the user’s device). As processor, Microsoft only processes data on behalf of the enterprise customer and does not have the right to process data beyond their instructions as specified in a written contract, such as the [Microsoft Product Terms and the Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx).
 
 ## GDPR relationship between a Windows 10 user and Microsoft
 
@@ -120,11 +120,11 @@ Diagnostic data is categorized into the levels "Security", "Basic", "Enhanced", 
 Most Windows 10 services are controller services in terms of the GDPR – for both Windows functional data and Windows diagnostic data. But there are a few Windows services where Microsoft is a processor for functional data under the GDPR, such as [Windows Analytics](https://www.microsoft.com/windowsforbusiness/windows-analytics) and [Windows Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/windowsforbusiness/windows-atp).
 
 >[!NOTE]
->Both Windows Analytics and Windows Defender ATP are subscription services for organizations. Some functionality requires a certain license (please see [Compare Windows 10 editions](https://www.microsoft.com/en-us/windowsforbusiness/compare)).
+>Both Windows Analytics and Windows Defender ATP are subscription services for organizations. Some functionality requires a certain license (please see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare)).
 
 #### Windows Analytics
 
-[Windows Analytics](https://www.microsoft.com/en-us/windowsforbusiness/windows-analytics) is a service that provides rich, actionable information for helping organizations to gain deep insights into the operational efficiency and health of the Windows devices in their environment. It uses Windows diagnostic data from devices enrolled by the IT organization of an enterprise into the Windows Analytics service.
+[Windows Analytics](https://www.microsoft.com/windowsforbusiness/windows-analytics) is a service that provides rich, actionable information for helping organizations to gain deep insights into the operational efficiency and health of the Windows devices in their environment. It uses Windows diagnostic data from devices enrolled by the IT organization of an enterprise into the Windows Analytics service.
 
 Windows [transmits Windows diagnostic data](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) to Microsoft datacenters, where that data is analyzed and stored. With Windows Analytics, the IT organization can then view the analyzed data to detect and fix issues or to improve their processes for upgrading to Windows 10.
 
@@ -137,7 +137,7 @@ As a result, in terms of the GDPR, the organization that has subscribed to Windo
 
 #### Windows Defender ATP
 
-[Windows Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp) is cloud-based service that collects and analyzes usage data from an organization’s devices to detect security threats. Some of the data can contain personal data as defined by the GDPR. Enrolled devices transmit usage data to Microsoft datacenters, where that data is analyzed, processed, and stored. The security operations center (SOC) of the organization can view the analyzed data using the [Windows Defender ATP portal](https://securitycenter.windows.com/).
+[Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp) is cloud-based service that collects and analyzes usage data from an organization’s devices to detect security threats. Some of the data can contain personal data as defined by the GDPR. Enrolled devices transmit usage data to Microsoft datacenters, where that data is analyzed, processed, and stored. The security operations center (SOC) of the organization can view the analyzed data using the [Windows Defender ATP portal](https://securitycenter.windows.com/).
 
 As a result, in terms of the GDPR, the organization that has subscribed to Windows Defender ATP is acting as the controller, while Microsoft is the processor for Windows Defender ATP.
 
@@ -285,7 +285,7 @@ To make it easier to deploy settings that restrict connections from Windows 10 a
 
 ### Microsoft Trust Center and Service Trust Portal
 
-Please visit our [GDPR section of the Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr) to obtain additional resources and to learn more about how Microsoft can help you fulfill specific GDPR requirements. There you can find lots of useful information about the GDPR, including how Microsoft is helping customers to successfully master the GDPR, a FAQ list, and a list of [resources for GDPR compliance](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/resources). Also, please check out the [Compliance Manager](https://aka.ms/compliancemanager) of the Microsoft [Service Trust Portal (STP)](https://aka.ms/stp) and [Get Started: Support for GDPR Accountability](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+Please visit our [GDPR section of the Microsoft Trust Center](https://www.microsoft.com/trustcenter/privacy/gdpr) to obtain additional resources and to learn more about how Microsoft can help you fulfill specific GDPR requirements. There you can find lots of useful information about the GDPR, including how Microsoft is helping customers to successfully master the GDPR, a FAQ list, and a list of [resources for GDPR compliance](https://www.microsoft.com/TrustCenter/Privacy/gdpr/resources). Also, please check out the [Compliance Manager](https://aka.ms/compliancemanager) of the Microsoft [Service Trust Portal (STP)](https://aka.ms/stp) and [Get Started: Support for GDPR Accountability](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 ### Additional resources
 

@@ -96,7 +96,7 @@ Because Secure Boot has protected the bootloader and Trusted Boot has protected 
 
 Early Launch Anti-Malware (ELAM) can load a Microsoft or non-Microsoft anti-malware driver before all non-Microsoft boot drivers and applications, thus continuing the chain of trust established by Secure Boot and Trusted Boot. Because the operating system hasn’t started yet, and because Windows needs to boot as quickly as possible, ELAM has a simple task: examine every boot driver and determine whether it is on the list of trusted drivers. If it’s not trusted, Windows won’t load it.
 
-An ELAM driver isn’t a full-featured anti-malware solution; that loads later in the boot process. Windows Defender (included with Windows 10) supports ELAM, as does [Microsoft System Center 2012 Endpoint Protection](https://www.microsoft.com/en-us/server-cloud/system-center/endpoint-protection-2012.aspx) and several non-Microsoft anti-malware apps.
+An ELAM driver isn’t a full-featured anti-malware solution; that loads later in the boot process. Windows Defender (included with Windows 10) supports ELAM, as does [Microsoft System Center 2012 Endpoint Protection](https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx) and several non-Microsoft anti-malware apps.
 
 ## Measured Boot
 If a PC in your organization does become infected with a rootkit, you need to know about it. Enterprise anti-malware apps can report malware infections to the IT department, but that doesn’t work with rootkits that hide their presence. In other words, you can’t trust the client to tell you whether it’s healthy.

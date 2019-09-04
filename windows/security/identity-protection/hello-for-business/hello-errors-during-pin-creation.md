@@ -187,12 +187,17 @@ If the error occurs again, check the error code against the following table to s
 <td align="left">The AIK certificate is no longer valid</td>
 <td align="left">Sign out and then sign in again.</td>
 </tr>
-<tr class="odd">
-<td align="left">​0x801C044D</td>
+<tr class="odd"> 
+<td align="left">0x801C03F2</td> 
+<td align="left">Windows Hello key registration failed.</td> 
+<td align="left">ERROR_BAD_DIRECTORY_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue refer to <a href="https://docs.microsoft.com/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync" data-raw-source="[Duplicate Attributes Prevent Dirsync]( https://docs.microsoft.com/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync)">Duplicate Attributes Prevent Dirsync</a>. </td>
+</tr>
+<tr class="even">
+<td align="left">0x801C044D</td>
 <td align="left">Unable to obtain user token</td>
 <td align="left">Sign out and then sign in again. Check network and credentials.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">0x801C044E</td>
 <td align="left">Failed to receive user creds input</td>
 <td align="left">Sign out and then sign in again.</td>

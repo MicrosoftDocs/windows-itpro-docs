@@ -24,7 +24,7 @@ manager: dansimp
 
 In addition to standard on-premises or hardware configurations, you can also use Windows Defender Antivirus in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment.
 
-See the [Microsoft Desktop virtualization site](https://www.microsoft.com/en-us/server-cloud/products/virtual-desktop-infrastructure/) for more details on Microsoft Remote Desktop Services and VDI support.
+See the [Microsoft Desktop virtualization site](https://www.microsoft.com/server-cloud/products/virtual-desktop-infrastructure/) for more details on Microsoft Remote Desktop Services and VDI support.
 
 For Azure-based virtual machines, you can also review the [Install Endpoint Protection in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-install-endpoint-protection) topic.
 
@@ -143,7 +143,7 @@ You can initiate the update manually by right-clicking on the task and clicking 
 If you would prefer to do everything manually, this what you would need to do to replicate the script’s behavior:
 1. Create a new folder on the system root called *wdav_update* to store intelligence updates, for example, create the folder *c:\wdav_update*
 1. Create a subfolder under *wdav_update* with a GUID name, such as *{00000000-0000-0000-0000-000000000000}*; for example *c:\wdav_update\{00000000-0000-0000-0000-000000000000}* (note, in the script we set it so the last 12 digits of the GUID are the year, month, day, and time when the file was downloaded so that a new folder is created each time. You can change this so that the file is downloaded to the same folder each time)
-1. Download a security intelligence package from https://www.microsoft.com/en-us/wdsi/definitions  into the GUID folder. The file should be named *mpam-fe.exe*.
+1. Download a security intelligence package from https://www.microsoft.com/wdsi/definitions  into the GUID folder. The file should be named *mpam-fe.exe*.
 1. Open a cmd prompt window and navigate to the GUID folder you created. Use the **/X** extraction command to extract the files, for example **mpam-fe.exe /X**.
 Note: The VMs will pick up the updated package whenever a new GUID folder is created with an extracted update package or whenever an existing folder is updated with a new extracted package.
 

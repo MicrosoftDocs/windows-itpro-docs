@@ -10,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: mobility, edu
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -33,8 +34,8 @@ PCs that meet the Windows 7 or later [certification requirements](https://go.mi
 -   [Prepare for Windows To Go](#wtg-prep-intro)
 -   [Hardware considerations for Windows To Go](#wtg-hardware)
 
-**Note**  
-Windows To Go is not supported on Windows RT.
+> [!NOTE]
+> Windows To Go is not supported on Windows RT.
 
  
 
@@ -69,8 +70,8 @@ Enterprises install Windows on a large group of computers either by using config
 
 These same tools can be used to provision Windows To Go drive, just as you would if you were planning for provisioning a new class of mobile PCs. You can use the [Windows Assessment and Deployment Kit](https://go.microsoft.com/fwlink/p/?LinkId=526803) to review deployment tools available.
 
-**Important**  
-Make sure you use the versions of the deployment tools provided for the version of Windows you are deploying. There have been many enhancements made to support Windows To Go. Using versions of the deployment tools released for earlier versions of Windows to provision a Windows To Go drive is not supported.
+> [!IMPORTANT]
+> Make sure you use the versions of the deployment tools provided for the version of Windows you are deploying. There have been many enhancements made to support Windows To Go. Using versions of the deployment tools released for earlier versions of Windows to provision a Windows To Go drive is not supported.
 
  
 
@@ -122,8 +123,8 @@ Using a USB drive that has not been certified is not supported
 
 -   Spyrus Secure Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
-    **Important**  
-    You must use the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Secure Portable Workplace. For more information about the Spyrus Deployment Suite for Windows To Go please refer to [http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720).
+    > [!IMPORTANT]  
+    > You must use the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Secure Portable Workplace. For more information about the Spyrus Deployment Suite for Windows To Go please refer to [http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720).
 
      
 

@@ -25,7 +25,7 @@ This article lists new and updated features and content that are of interest to 
 
 The following 3-minute video summarizes some of the new features that are available for IT Pros in this release.
 
-> [!video https://www.microsoft.com/en-us/videoplayer/embed/RE21ada?autoplay=false]
+> [!video https://www.microsoft.com/videoplayer/embed/RE21ada?autoplay=false]
 
 ## Deployment
 
@@ -66,7 +66,7 @@ With this release you can easily deploy and manage kiosk devices with Microsoft 
 - To help with troubleshooting, you can now view error reports generated if an assigned access-configured app has issues.
 
 For more information, see: 
-- [Making IT simpler with a modern workplace](https://www.microsoft.com/en-us/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)
+- [Making IT simpler with a modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)
 - [Simplifying kiosk management for IT with Windows 10](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Simplifying-kiosk-management-for-IT-with-Windows-10/ba-p/187691)
 
 ### Windows 10 Subscription Activation

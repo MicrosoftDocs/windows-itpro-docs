@@ -92,7 +92,7 @@ Revision=1
 
 If a per-user service can't be disabled using a the security template, you can disable it by using Group Policy preferences.
 
-1. On a Windows Server domain controller or Windows 10 PC that has the [Remote Server Administration Tools (RSAT)](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed, click **Start**, type GPMC.MSC, and then press **Enter** to open the **Group Policy Management Console**.
+1. On a Windows Server domain controller or Windows 10 PC that has the [Remote Server Administration Tools (RSAT)](https://www.microsoft.com/download/details.aspx?id=45520) installed, click **Start**, type GPMC.MSC, and then press **Enter** to open the **Group Policy Management Console**.
 
 2. Create a new Group Policy Object (GPO) or use an existing GPO.  
 

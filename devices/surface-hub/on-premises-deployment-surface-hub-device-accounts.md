@@ -63,10 +63,12 @@ If you have a single-forest on-premises deployment with Microsoft Exchange 2013 
    Once you have a compatible policy, then you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not resource mailboxes. You need to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox—you may need to re-enable it and set the password again too.
 
    ```PowerShell
+   $acctUpn = Get-Mailbox -Identity "<mailbox identity>"
+   $credNewAccount.Password = ConvertTo-SecureString -String <room mailbox password> -AsPlainText -Force
    Set-Mailbox $acctUpn -Type Regular
    Set-CASMailbox $acctUpn -ActiveSyncMailboxPolicy $easPolicy
    Set-Mailbox $acctUpn -Type Room
-   Set-Mailbox $credNewAccount.UserName -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
+   Set-Mailbox $acctUpn -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
    ```
 
 4. Various Exchange properties can be set on the device account to improve the meeting experience for people. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.

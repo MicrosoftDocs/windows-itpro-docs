@@ -39,8 +39,8 @@ A compatibility mode is a group of compatibility fixes. A compatibility fix, pre
 
 The Compatibility Administrator tool has preloaded fixes for many common applications, including known compatibility fixes, compatibility modes, and AppHelp messages. Before you create a new compatibility mode, you can search for an existing application and then copy and paste the known fixes into your custom database.
 
-**Important**  
-Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create custom databases for 32-bit applications and the 64-bit version to create custom databases for 64-bit applications.
+> [!IMPORTANT]
+> Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create custom databases for 32-bit applications and the 64-bit version to create custom databases for 64-bit applications.
 
 
 
@@ -55,8 +55,8 @@ Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version o
 
 If you are unable to find a preloaded compatibility mode for your application, you can create a new one for use by your custom database.
 
-**Important**  
-A compatibility mode includes a set of compatibility fixes and must be deployed as a group. Therefore, you should include only fixes that you intend to deploy together to the database.
+> [!IMPORTANT]  
+> A compatibility mode includes a set of compatibility fixes and must be deployed as a group. Therefore, you should include only fixes that you intend to deploy together to the database.
 
 
 
