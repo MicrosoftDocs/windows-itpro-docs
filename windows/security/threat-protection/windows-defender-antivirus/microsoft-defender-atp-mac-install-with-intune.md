@@ -170,7 +170,7 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 
 Issue: No license found
 
-Solution: Follow steps above to create a device profile using WindowsDefenderATPOnboarding.xml
+Solution: Follow the steps above to create a device profile using WindowsDefenderATPOnboarding.xml
 
 ## Logging installation issues
 
