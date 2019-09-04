@@ -1,4 +1,4 @@
----
+﻿---
 title: Manage indicators 
 ms.reviewer: 
 description: Create indicators for a file hash, IP address, URLs or domains that define the detection, prevention, and exclusion of entities.
@@ -16,7 +16,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ROBOTS: NOINDEX
 ---
 
 # Manage indicators 
@@ -39,71 +38,106 @@ The cloud detection engine of Microsoft Defender ATP regularly scans collected d
 **Endpoint prevention engine**<br>
 The same list of indicators is honored by the prevention agent. Meaning, if Windows Defender AV is the primary AV configured, the matched indicators will be treated according to the settings. For example, if the action is "Alert and Block", Windows Defender AV will prevent file executions (block and remediate) and a corresponding alert will be raised. On the other hand, if the Action is set to "Allow", Windows Defender AV  will not detect nor block the file from being run.
 
->[!NOTE]
->-There is a propagation time of several minutes before the blocking policy for a new hash is applied.
->- Trusted signed files will be treated differently. Microsoft Defender ATP is optimized to handle malicious files. Trying to block trusted signed files, in some cases, may have performance implications.
-
-
-**Automated investigation and remediation engine**
+**Automated investigation and remediation engine**<BR>
 The automated investigation and remediation behave the same. If an indicator is set to "Allow", Automated investigation and remediation will ignore a "bad" verdict for it. If set to "Block", Automated investigation and remediation will treat it as "bad".
  
-In the first phase, the file hashes are fully supported, while network addresses (IP, Domain names) are partially supported (Automation and Detection).  Stay tuned as the network blocking and more IoCs become available.
- 
-The current actions supported are:
+
+The current supported actions are:
 - Allow 
 - Alert only
 - Alert and block
 
 
-On the top navigation you can:
-
-- Import a list
-- Add an indicator
-- Customize columns to add or remove columns
-- Export the entire list in CSV format
-- Select the items to show per page
-- Navigate between pages
-- Apply filters
-
-There are several ways to control IoCs:
-- [Create an indicator from the settings page](#create-an-indicator-from-the-settings-page)
-- [Create contextual IoC](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
-- [Import a list of IoCs](#import-a-list-of-iocs)
-- [Use the Microsoft Defender ATP indicators API](ti-indicator.md)
-- [Use partner integrated solutions](partner-applications.md)
-
-## Before you begin
-
-Creating IoCs must comply to the following:
-
->- This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see [Manage cloud-based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
->
->- The Antimalware client version must be 4.18.1901.x or later.
->- This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time.
->- This response action is available for machines on Windows 10, version 1703 or later.
->- The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action.
-
->[!NOTE]
-> The PE file needs to be in the machine timeline for you to be able to take this action.
->
-> There may be a couple of minutes of latency between the time the action is taken and the actual file being blocked.
-
-
-## Create an indicator from the settings page
+You can create an indicator for:
+- Files
+- IP addresses
+- URLs/domains
 
 >[!NOTE]
 >There is a limit of 5000 indicators per tenant. 
 
+
+![Image of indicators settings page](images/rules-indicators.png)
+
+
+## Create indicators for files
+You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
+
+There are two ways you can create indicators for files:
+- By creating an indicator through the settings page
+- By creating a contextual indicator using the add indicator button from the file details page
+
+### Before you begin
+It's important to understand the following prerequisites prior to creating indicators for files:
+- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md).
+- The Antimalware client version must be 4.18.1901.x or later.
+- Supported on machines on Windows 10, version 1703 or later.
+- To start blocking files, you first need to [turn the **Block or allow** feature on](advanced-features.md) in Settings.
+- This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time.
+
+>[!IMPORTANT]
+>- The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action 
+>- Trusted signed files will be treated differently. Microsoft Defender ATP is optimized to handle malicious files. Trying to block trusted signed files, in some cases, may have performance implications.
+>- The PE file needs to be in the machine timeline for you to be able to take this action. 
+
+ 
+>[!NOTE]
+>There may be a couple of minutes of latency between the time the action is taken and the actual file being blocked.
+
+### Create an indicator for files from the settings page
+
 1. In the navigation pane, select **Settings** > **Indicators**.  
 
-2. Select the tab of the type of entity you'd like to create an indicator for. You can choose any of the following entities:
-   - File hash
-   - IP address
-   - URLs/Domains
-  
-3. Click **Add indicator**.
+2. Select the **File hash** tab.
 
-4. For each attribute specify the following details:
+3. Select **Add indicator**.
+
+4. Specify the following details:
+   - Indicator - Specify the entity details and define the expiration of the indicator.
+   - Action - Specify the action to be taken and provide a description.
+   - Scope - Define the scope of the machine group.
+
+5. Review the details in the Summary tab, then click **Save**.
+
+### Create a contextual indicator from the file details page
+One of the options when taking [response actions on a file](respond-file-alerts) is adding an indicator for the file. 
+
+When you add an indicator hash for a file, you can choose to raise an alert and block the file whenever a machine in your organization attempts to run it.
+
+Files automatically blocked by an indicator won't show up in the files's Action center, but the alerts will still be visible in the Alerts queue.
+
+
+## Create indicators for IPs and URLs/domains
+Microsoft Defender ATP can block what Microsoft deems as malicious IPs/URLs through SmartScreen for Microsoft browsers and Network Protection for non-Microsoft browsers and calls made outside the browser.
+
+The threat intelligence data set for this has been managed by Microsoft.
+
+By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs or domains based on your own threat intelligence. 
+
+
+There are two ways you can create indicators for IPs, URLs or domains:
+- By creating an indicator through the settings page
+- By creating machine groups 
+
+### Before you begin
+It's important to understand the following prerequisites prior to creating indicators for IPS, URLs or domains:
+- URL/IP allow and block relies on the Microsoft Defender ATP component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Protect your network](network-protection.md)
+- The Antimalware client version must be 4.18.1906.x or later. 
+- Supported on machines on Windows 10, version 1709 or later. 
+- Ensure that **Custom network indicators** is enabled in **Microsoft Defender Security Center > Settings > Advanced features**. For more information, see [Advanced features](advanced-features.md).
+ 
+>[!NOTE]
+>There may be up to 2 hours latency (usually less) between the time the action is taken, and the URL and IP being blocked. 
+
+### Create an indicator for IPs, URLs or domains from the settings page
+
+1. In the navigation pane, select **Settings** > **Indicators**.  
+
+2. Select the **IP addresses or URLs/Domains** tab.
+
+3. Select **Add indicator**.
+
+4. Specify the following details:
    - Indicator - Specify the entity details and define the expiration of the indicator.
    - Action - Specify the action to be taken and provide a description.
    - Scope - Define the scope of the machine group.
@@ -111,10 +145,6 @@ Creating IoCs must comply to the following:
 5. Review the details in the Summary tab, then click **Save**.
 
 
->[!NOTE]
->Blocking IPs, domains, or URLs is currently available on limited preview only.
->This requires sending your custom list to [network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-network-protection) to be enforced which is an option that will be generally available soon.
->As it is not yet generally available, when Automated investigations finds this indicator during an investigation it will use the allowed/block list as the basis of its decision to automatically remediate (blocked list) or skip (allowed list) the entity.
 
 ## Manage indicators
 
@@ -131,5 +161,7 @@ You can also choose to upload a CSV file that defines the attributes of indicato
 Download the sample CSV to know the supported column attributes.
 
 ## Related topic
+- [Create contextual IoC](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
+- [Use the Microsoft Defender ATP indicators API](ti-indicator.md)
+- [Use partner integrated solutions](partner-applications.md)
 
-- [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list.md)
