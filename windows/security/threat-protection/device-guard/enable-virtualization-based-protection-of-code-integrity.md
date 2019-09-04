@@ -277,7 +277,7 @@ C. If you experience a critical error during boot or your system is unstable aft
 ## How to turn off HVCI
 
 1. Run the following command from an elevated prompt to set the HVCI registry key to off
-``` command
+```ini
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 0 /f
 ```
 2. Restart the device.
