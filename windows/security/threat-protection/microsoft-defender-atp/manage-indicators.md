@@ -1,7 +1,7 @@
 ﻿---
-title: Manage indicators
-description: Create indicators to allow or block file hash, IP address, URLs or domains.
-keywords: file, hash, ip, urls, domain, indicator, indicators, block, allow, hash, alert, detection
+title:
+description: 
+keywords:
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.reviewer: dansimp
 ---
 
 # Manage indicators 
