@@ -1,6 +1,5 @@
 ﻿---
-title: Manage indicators 
-ms.reviewer: 
+title: Manage indicators
 description: Create indicators to allow or block file hash, IP address, URLs or domains.
 keywords: manage, allowed, blocked, whitelist, blacklist, block, clean, malicious, file hash, ip address, urls, domain
 search.product: eADQiWindows 10XVcnh
@@ -16,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+ms.reviewer: dansimp
 ---
 
 # Manage indicators 
