@@ -116,7 +116,7 @@ By creating indicators for IPs and URLs or domains, you can now allow or block I
 
 ### Before you begin
 It's important to understand the following prerequisites prior to creating indicators for IPS, URLs or domains:
-- URL/IP allow and block relies on the Microsoft Defender ATP component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Protect your network](network-protection.md)
+- URL/IP allow and block relies on the Microsoft Defender ATP component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Protect your network](network-protection.md).
 - The Antimalware client version must be 4.18.1906.x or later. 
 - Supported on machines on Windows 10, version 1709 or later. 
 - Ensure that **Custom network indicators** is enabled in **Microsoft Defender Security Center > Settings > Advanced features**. For more information, see [Advanced features](advanced-features.md).
