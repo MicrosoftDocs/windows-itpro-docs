@@ -38,8 +38,8 @@ The following flowchart shows the steps for using the Compatibility Administrato
 
 ![act compatibility admin flowchart](images/dep-win8-l-act-compatadminflowchart.jpg)
 
->[!IMPORTANT]
->Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create and work with custom databases for 32-bit applications, and the 64-bit version to create and work with custom databases for 64-bit applications.
+> [!IMPORTANT]
+> Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create and work with custom databases for 32-bit applications, and the 64-bit version to create and work with custom databases for 64-bit applications.
 
 ## In this section
 
