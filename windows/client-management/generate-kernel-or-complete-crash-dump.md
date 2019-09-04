@@ -16,7 +16,7 @@ manager: dcscontentpm
 
 A system crash (also known as a “bug check” or a "Stop error") occurs when Windows can't run correctly. The dump file that is produced from this event is called a system crash dump.
 
-A manual kernel or complete memory dump file is useful when troubleshooting a number of issues because the process captures a record of system memory at the time of a crash.
+A manual kernel or complete memory dump file is useful when you troubleshoot several issues because the process captures a record of system memory at the time of a crash.
 
 ## Set up page files
 
@@ -28,27 +28,27 @@ You must be logged on as an administrator or a member of the Administrators grou
 
 To enable memory dump setting, follow these steps:
 
-1. In **Control Panel**, click **System and Security** -> **System**, or click **System** directly if control panel is viewed by icons.
+1. In **Control Panel**, select **System and Security** > **System**.
 
-2. Click **Advanced system settings**, and then click the **Advanced** tab.
+2. Select **Advanced system settings**, and then select the **Advanced** tab.
 
-3. Under **Startup and Recovery**, click **Settings**.
+3. In the **Startup and Recovery** area, select **Settings**.
 
 4. Make sure that **Kernel memory dump** or **Complete memory dump** is selected under **Writing Debugging Information**.
 
 5. Restart the computer.
 
 >[!Note]
-> You can change the dump file path by edit the **Dump file** field. In other words, you can change the path from %SystemRoot%\Memory.dmp to point to a local drive that has enough disk space, such as E:\Memory.dmp. 
+>You can change the dump file path by edit the **Dump file** field. In other words, you can change the path from %SystemRoot%\Memory.dmp to point to a local drive that has enough disk space, such as E:\Memory.dmp. 
 
-### Tips for memory dump
+### Tips to generate memory dumps
 
-When computer crashes and restarts, the contents of physical RAM are written to the paging file that is located on the partition on which the operating system is installed.
+When the computer crashes and restarts, the contents of physical RAM are written to the paging file that is located on the partition on which the operating system is installed.
 
-Depending on the speed of the hard drive on which Windows is installed, dumping more than 2 gigabytes (GB) of memory may take a long time. Even in a best case scenario, where the dump file is configured to reside on another local hard drive, there will be a significant amount of data being read and written to the hard drives. This can cause a prolonged server outage.
+Depending on the speed of the hard disk on which Windows is installed, dumping more than 2 gigabytes (GB) of memory may take a long time. Even in a best case scenario, if the dump file is configured to reside on another local hard drive, a significant amount of data will be read and written to the hard disks. This can cause a prolonged server outage.
 
 >[!Note]
->Use this method to generate complete memory dump files with caution. Ideally, you should only do this only when you are explicitly requested to by the Microsoft Customer Support Services Engineer. Any kernel or complete memory dump file debugging should be the last resort when all the standard troubleshooting methods have been completely exhausted.
+>Use this method to generate complete memory dump files with caution. Ideally, you should do this only when you are explicitly requested to by the Microsoft Support engineer. Any kernel or complete memory dump file debugging should be the last resort after all standard troubleshooting methods have been completely exhausted.
 
 ## Manually generate a memory dump file
 
@@ -58,7 +58,7 @@ If you can log on while the problem is occurring, you can use the Microsoft Sysi
 
 1. Download the [NotMyFault](https://download.sysinternals.com/files/NotMyFault.zip) tool.
 
-2. Click **Start**, and then click **Command Prompt**.
+2. Select **Start**, and then select **Command Prompt**.
 3. At the command line, run the following command:
 
    ```cmd
@@ -66,7 +66,7 @@ If you can log on while the problem is occurring, you can use the Microsoft Sysi
    ```
 
 >[!Note]
->This operation generates a memory dump file and a D1 stop error.
+>This operation generates a memory dump file and a D1 Stop error.
 
 ### Use NMI
 
@@ -86,13 +86,13 @@ To do this, follow these steps:
 
 3. Type NMICrashDump, and then press Enter.
 
-4. Right-click **NMICrashDump**, and then click **Modify**.
+4. Right-click **NMICrashDump**, and then select **Modify**.
 
-5. In the **Value data** box, type 1, and then click **OK**.
+5. In the **Value data** box, type **1**, and then select **OK**.
 
 6. Restart the computer.
 
-7. Hardware vendors, such as HP, IBM, and Dell, may provide an Automatic System Recovery (ASR) feature. You should disable this feature during troubleshooting. For example, if HP and Compaq's ASR feature is enabled in the BIOS, disable this feature while you are troubleshooting to generate a complete memory.dmp file. For the exact steps, contact your hardware vendor.
+7. Hardware vendors, such as HP, IBM, and Dell, may provide an Automatic System Recovery (ASR) feature. You should disable this feature during troubleshooting. For example, if the HP and Compaq ASR feature is enabled in the BIOS, disable this feature while you troubleshoot to generate a complete Memory.dmp file. For the exact steps, contact your hardware vendor.
 
 8. Enable the NMI switch in the BIOS or by using the Integrated Lights Out (iLO) Web interface. 
 
@@ -108,3 +108,4 @@ To do this, follow these steps:
 ### Use Debugger
 
 [Forcing a System Crash from the Debugger](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-debugger)
+

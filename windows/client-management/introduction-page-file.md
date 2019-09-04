@@ -12,13 +12,13 @@ ms.reviewer:
 manager: dcscontentpm
 ---
 
-# Introduction to the page file
+# Introduction to page files
 
 A page file (also known as a "paging file") is an optional, hidden system file on a hard disk.
 
 ## Functionality
 
-Page files have the following functionalities:
+Page files have the following functionalities.
 
 ### Physical extension of RAM
 
@@ -30,7 +30,7 @@ Some products or services require a page file for various reasons. For specific 
 
 For example, the following Windows servers requires page files:
 
-- Windows Server domain controllers
+- Windows Server domain controllers (DCs)
 
 - DFS Replication (DFS-R) servers
 
@@ -44,7 +44,7 @@ For Windows Server 2012 Hyper-V and Windows Server 2012 R2 Hyper-V, the page fil
 
 ### Support for system crash dumps
 
-Page files can be used to "back" (or support) system crash dumps and extend how much system-committed memory (also known as “virtual memory”) a system can back. 
+Page files can be used to "back" (or support) system crash dumps and extend how much system-committed memory (also known as “virtual memory”) a system can support. 
 
 For more information about system crash dumps, see [system crash dump options](system-failure-recovery-options.md#under-write-debugging-information).
 
@@ -56,19 +56,19 @@ However, the reason to configure the page file size has not changed. It has alwa
 
 ## System committed memory
 
-Page files extend how much "Committed memory" (also known as "Virtual Memory") is used to store modified data.
+Page files extend how much "committed memory" (also known as "virtual memory") is used to store modified data.
 
 The system commit memory limit is the sum of physical memory and all page files combined. It represents the maximum system-committed memory (also known as the "system commit charge") that the system can support.
 
-![Task manager](images/task-manager.png)
+![Task manager](media/task-manager.png)
  
 The system commit charge is the total committed or "promised" memory of all committed virtual memory in the system. If the system commit charge reaches the system commit limit, the system and processes might not get committed memory. This condition can cause freezing, crashing, and other malfunctions. Therefore, make sure that you set the system commit limit high enough to support the system commit charge during peak usage.
 
-![Out of memory](images/out-of-memory.png)
+![Out of memory](media/out-of-memory.png)
 
-![Task manager](images/task-manager-commit.png)
+![Task Manager](media/task-manager-commit.png)
 
-The system committed charge and system committed limit can be measured on the Performance tab in Task Manager or by using the "\Memory\Committed Bytes" and "\Memory\Commit Limit" performance counters. The \Memory\% Committed Bytes In Use counter is a ratio of  \Memory\Committed Bytes to \Memory\Commit Limit values.
+The system committed charge and system committed limit can be measured on the **Performance** tab in Task Manager or by using the "\Memory\Committed Bytes" and "\Memory\Commit Limit" performance counters. The \Memory\% Committed Bytes In Use counter is a ratio of \Memory\Committed Bytes to \Memory\Commit Limit values.
 
 >[!Note]
->System-managed page files automatically grow up to three times physical memory or 4 GB (whichever is larger) when the system commit charge reaches 90 percent of the system commit limit. This assumes that enough free disk space is available to accommodate the growth.
+>System-managed page files automatically grow up to three times the physical memory or 4 GB (whichever is larger) when the system commit charge reaches 90 percent of the system commit limit. This assumes that enough free disk space is available to accommodate the growth.

@@ -14,29 +14,29 @@ manager: dansimp
 
 # Advanced troubleshooting for Windows start-up issues
 
-In these topics, you will learn how to troubleshoot common problems related to Windows start-up.
+In these topics, you will learn how to troubleshoot common problems that are related to Windows startup.
 
 ## How it works
 
-When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is referred as Windows start-up problems. Furthermore, it is categorized in 3 buckets.
+When Microsoft Windows experiences a condition that compromises safe system operation, the system halts. These Windows startup problems are categorized in the following groups:
  
-- Bug check: It is also commonly referred to as a system crash, a kernel error, or a stop error.
+- Bug check: Also commonly known as a system crash, a kernel error, or a Stop error.
 
-- No Boot: Here the system may not produce a bug check but is unable to boot into Windows.
+- No boot: The system may not produce a bug check but is unable to start up into Windows.
 
-- Freeze: Also known as System Hang where 
+- Freeze: Also known as "system hang". 
   
-## Best Practices
+## Best practices
 
-To understand the underlaying cause of that lead to Windows start-up issues, it is important that the system is configured properly. Here are some best practices:
+To understand the underlying cause of Windows startup problems, it's important that the system be configured correctly. Here are some best practices for configuration:
  
 ### Page file settings
  
-- [Introduction to the page file](introduction-of-page-file.md)
+- [Introduction of page file](introduction-page-file.md)
 
 - [How to determine the appropriate page file size for 64-bit versions of Windows](determine-appropriate-page-file-size.md)
  
-### Memory Dump settings
+### Memory dump settings
 
 - [Configure system failure and recovery options in Windows](system-failure-recovery-options.md)
 
@@ -44,7 +44,7 @@ To understand the underlaying cause of that lead to Windows start-up issues, it 
  
 ## Troubleshooting  
 
-These articles will walk you through the resources you need to troubleshoot Windows start-up issue.
+These articles will walk you through the resources you need to troubleshoot Windows startup issues:
 
 - [Advanced troubleshooting for Windows boot problems](https://docs.microsoft.com/en-us/windows/client-management/advanced-troubleshooting-boot-problems)
 
