@@ -22,8 +22,8 @@ ms.topic: article
 
 - Windows 10
 
->[!IMPORTANT]
->Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
+> [!IMPORTANT]
+> Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs.
 
