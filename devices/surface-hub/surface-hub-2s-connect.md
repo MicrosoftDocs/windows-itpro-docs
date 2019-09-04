@@ -23,11 +23,10 @@ You can display content from your devices to Surface Hub 2S. If the source devic
 
 ## Recommended wired configurations 
 
-In general, it’s recommended to use native cable connections whenever possible such as USB-C to USB-C or HDMI to HDMI. Other combinations such as MiniDP to HDMI or MiniDP to USB-C will also work.
+In general, it’s recommended to use native cable connections whenever possible such as USB-C to USB-C or HDMI to HDMI. Other combinations such as MiniDP to HDMI or MiniDP to USB-C will also work. Some configuration may be required to optimize the video-out experience; refer to the section below: [Mirroring Surface Hub 2S display on another device](#).
 
 | **Connection** | **Functionality** | **Description**|
 | --- | --- | ---|
-| USB-C <br>(via compute module) | Video-in<br> Video-out<br> Audio-in<br> Audio-out <br><br>TouchBack and InkBack  | Provides video, audio, and TouchBack/InkBack on a single cable.<br><br>**NOTE:** Some configuration is required to optimize the video-out experience. Refer to the section below: [Mirroring Surface Hub 2S display on another device](#). |
 | HDMI + USB-C | HDMI-in for audio and video<br><br>USB-C for TouchBack and InkBack | USB-C supports TouchBack and InkBack with the HDMI A/V connection.<br><br>Use USB-C to USB-A to connect to legacy computers.<br><br>**NOTE:** For best results, connect HDMI before connecting a USB-C cable. If the computer you're using for HDMI is not compatible with TouchBack and InkBack, you won't need a USB-C cable. |
 | USB-C <br> (via compute module) | Video-in <br>Audio-in | Single cable needed for A/V<br><br>TouchBack and InkBack not supported<br><br>HDCP enabled |
 | HDMI (in port) | Video, Audio into Surface Hub 2S | Single cable needed for A/V<br><br>TouchBack and InkBack not supported<br><br>HDCP enabled |
