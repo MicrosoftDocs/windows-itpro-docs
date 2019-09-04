@@ -86,6 +86,17 @@ Change how MAU searches for updates.
 | **Possible values** | Manual <br/> AutomaticCheck <br/> AutomaticDownload |
 | **Comment** |  Note that AutomaticDownload will do a download and install silently if possible. |
 
+### Change whether the "Check for Updates" button is enabled
+
+Change whether local users will be able to click the "Check for Updates" option in the Microsoft Auto-Update user interface.
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.autoupdate2 |
+| **Key** | EnableCheckForUpdatesButton |
+| **Data type** | Boolean |
+| **Possible values** | True (default) <br/> False |
+
 ### Disable Insider checkbox
 
 Set to true to make the "Join the Office Insider Program..." checkbox unavailable / greyed out to users.
