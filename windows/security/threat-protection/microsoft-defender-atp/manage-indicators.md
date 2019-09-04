@@ -1,7 +1,7 @@
 ﻿---
 title: Manage indicators
 description: Create indicators to allow or block file hash, IP address, URLs or domains.
-keywords: manage, allowed, blocked, whitelist, blacklist, block, clean, malicious, file hash, ip address, urls, domain
+keywords: file, hash, ip, urls, domain, indicator, indicators, block, allow, hash, alert, detection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
