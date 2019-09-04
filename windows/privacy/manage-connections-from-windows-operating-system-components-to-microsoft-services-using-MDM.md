@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: medgarmedgar
 ms.author: v-medgar
-ms.date: 8/23/2019
+ms.date: 9/4/2019
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server
@@ -139,7 +139,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
    1. Windows Defender Smartscreen - [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Disable Windows Defender Smartscreen. **Set to 0 (zero)**
    1. Windows Defender Smartscreen EnableAppInstallControl - [SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol). Controls whether users are allowed to install apps from places other than the Microsoft Store. **Set to 0 (zero)** 
    1. Windows Defender Potentially Unwanted Applications(PUA) Protection - [Defender/PUAProtection](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-puaprotection). Specifies the level of detection for potentially unwanted applications (PUAs). **Set to 1 (one)**
-   1. [Defender/SignatureUpdateFallbackOrder](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm). Allows you to define the order in which different definition update sources should be contacted. The OMA-URI for this is: **./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFallbackOrder**, Data type: **string**, Value: **FileShares**
+   1. [Defender/SignatureUpdateFallbackOrder](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm). Allows you to define the order in which different definition update sources should be contacted. The OMA-URI for this is: **./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateFallbackOrder**, Data type: **String**, Value: **FileShares**
 1. **Windows Spotlight** - [Experience/AllowWindowsSpotlight](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowwindowsspotlight). Disable Windows Spotlight. **Set to 0 (zero)**
 1. **Microsoft Store**
    1. [ApplicationManagement/DisableStoreOriginatedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps). Boolean value that disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded.  **Set to 1 (one)**
