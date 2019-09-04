@@ -198,7 +198,7 @@ You can check that devices have been correctly onboarded by creating a script. F
 mdatp --health healthy
 ```
 
-The above commands prints "1" if the product is onboarded and functioning as expected.
+The above command prints "1" if the product is onboarded and functioning as expected.
 
 If the product is not healthy, the exit code (which can be checked through `echo $?`) indicates the problem:
 - 0 if Microsoft Defender ATP is registered with the Microsoft Defender ATP service
