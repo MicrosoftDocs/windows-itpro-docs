@@ -19,24 +19,21 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+-   Windows 10
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Server 2012
+-   Windows Server 2008 R2
 
 You can access the Query tool from within Compatibility Administrator. The Query tool provides the same functionality as using the Search feature.
 
 For information about the Search feature, see [Searching for Fixed Applications in Compatibility Administrator](searching-for-fixed-applications-in-compatibility-administrator.md). However, the Query tool provides more detailed search criteria, including tabs that enable you to search the program properties, the compatibility fix properties, and the fix description. You can perform a search by using SQL SELECT and WHERE clauses, in addition to searching specific types of databases.
 
->[!IMPORTANT]
->You must perform your search with the correct version of the Compatibility Administrator tool. To use the Query tool to search for a 32-bit custom database, you must use the 32-bit version of Compatibility Administrator. To use the Query tool to search for a 64-bit custom database, you must use the 64-bit version of Compatibility Administrator.
-
- 
+> [!IMPORTANT]
+> You must perform your search with the correct version of the Compatibility Administrator tool. To use the Query tool to search for a 32-bit custom database, you must use the 32-bit version of Compatibility Administrator. To use the Query tool to search for a 64-bit custom database, you must use the 64-bit version of Compatibility Administrator.
 
 ## Querying by Using the Program Properties Tab
-
 
 You can use the **Program Properties** tab of the Query tool to search for any compatibility fix, compatibility mode, or AppHelp for a specific application.
 
@@ -62,9 +59,8 @@ You can use the **Program Properties** tab of the Query tool to search for any c
 
     -   **Application Helps**
 
-    > [!IMPORTANT]  
+    > [!IMPORTANT]
     > If you do not select any of the check boxes, the search will look for all types of compatibility fixes. Do not select multiple check boxes because only applications that match all of the requirements will appear.
-
      
 
 6.  Click **Find Now**.

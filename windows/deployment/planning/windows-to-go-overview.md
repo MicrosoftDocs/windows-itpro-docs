@@ -20,24 +20,22 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
+- Windows 10
 
 >[!IMPORTANT]
 >Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
-Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs.
+Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs.
 
-PCs that meet the Windows 7 or later [certification requirements](https://go.microsoft.com/fwlink/p/?LinkId=618711) can run Windows 10 in a Windows To Go workspace, regardless of the operating system running on the PC. Windows To Go workspaces can use the same image enterprises use for their desktops and laptops and can be managed the same way. Windows To Go is not intended to replace desktops, laptops or supplant other mobility offerings. Rather, it provides support for efficient use of resources for alternative workplace scenarios. There are some additional considerations that you should keep in mind before you start to use Windows To Go:
+PCs that meet the Windows 7 or later [certification requirements](https://go.microsoft.com/fwlink/p/?LinkId=618711) can run Windows 10 in a Windows To Go workspace, regardless of the operating system running on the PC. Windows To Go workspaces can use the same image enterprises use for their desktops and laptops and can be managed the same way. Windows To Go is not intended to replace desktops, laptops or supplant other mobility offerings. Rather, it provides support for efficient use of resources for alternative workplace scenarios. There are some additional considerations that you should keep in mind before you start to use Windows To Go:
 
 - [Differences between Windows To Go and a typical installation of Windows](#bkmk-wtgdif)
 - [Roaming with Windows To Go](#bkmk-wtgroam)
 - [Prepare for Windows To Go](#wtg-prep-intro)
 - [Hardware considerations for Windows To Go](#wtg-hardware)
 
->[!NOTE]
->Windows To Go is not supported on Windows RT.
-
- 
+> [!NOTE]
+> Windows To Go is not supported on Windows RT.
 
 ## <a href="" id="bkmk-wtgdif"></a>Differences between Windows To Go and a typical installation of Windows
 
@@ -67,8 +65,6 @@ These same tools can be used to provision Windows To Go drive, just as you would
 > [!IMPORTANT]
 > Make sure you use the versions of the deployment tools provided for the version of Windows you are deploying. There have been many enhancements made to support Windows To Go. Using versions of the deployment tools released for earlier versions of Windows to provision a Windows To Go drive is not supported.
 
- 
-
 As you decide what to include in your Windows To Go image, be sure to consider the following questions:
 
 Are there any drivers that you need to inject into the image?
@@ -85,7 +81,6 @@ For more information about designing and planning your Windows To Go deployment,
 
 ## <a href="" id="wtg-hardware"></a>Hardware considerations for Windows To Go
 
-
 **For USB drives**
 
 The devices listed in this section have been specially optimized and certified for Windows To Go and meet the necessary requirements for booting and running a full version of Windows 10 from a USB drive. The optimizations for Windows To Go include the following:
@@ -96,8 +91,8 @@ The devices listed in this section have been specially optimized and certified f
 
 As of the date of publication, the following are the USB drives currently certified for use as Windows To Go drives:
 
-**Warning**  
-Using a USB drive that has not been certified is not supported
+> [!WARNING]
+> Using a USB drive that has not been certified is not supported.
 
  
 
@@ -111,15 +106,14 @@ Using a USB drive that has not been certified is not supported
 
 - Spyrus Secure Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
-    > [!IMPORTANT]  
+    > [!IMPORTANT]
     > You must use the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Secure Portable Workplace. For more information about the Spyrus Deployment Suite for Windows To Go please refer to [http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720).
 
 
 - Spyrus Worksafe ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
-    **Tip**  
-    This device contains an embedded smart card.
-
+    > [!TIP]
+    > This device contains an embedded smart card.
      
 
 -   Super Talent Express RC4 for Windows To Go
@@ -138,8 +132,8 @@ Using a USB drive that has not been certified is not supported
 
 When assessing the use of a PC as a host for a Windows To Go workspace you should consider the following criteria:
 
-- Hardware that has been certified for use with Windows 7or later operating systems will work well with Windows To Go.
-- Running a Windows To Go workspace from a computer that is running Windows RT is not a supported scenario.
+- Hardware that has been certified for use with Windows 7 or later operating systems will work well with Windows To Go.
+- Running a Windows To Go workspace from a computer that is running Windows RT is not a supported scenario.
 - Running a Windows To Go workspace on a Mac computer is not a supported scenario.
 
 The following table details the characteristics that the host computer must have to be used with Windows To Go:
@@ -162,7 +156,7 @@ The following table details the characteristics that the host computer must have
 </tr>
 <tr class="even">
 <td align="left"><p>Firmware</p></td>
-<td align="left"><p>USB boot enabled. (PCs certified for use with Windows 7 or later can be configured to boot directly from USB, check with the hardware manufacturer if you are unsure of the ability of your PC to boot from USB)</p></td>
+<td align="left"><p>USB boot enabled. (PCs certified for use with Windows 7 or later can be configured to boot directly from USB, check with the hardware manufacturer if you are unsure of the ability of your PC to boot from USB)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Processor architecture</p></td>
@@ -191,11 +185,9 @@ The following table details the characteristics that the host computer must have
 </tbody>
 </table>
 
- 
-
 **Checking for architectural compatibility between the host PC and the Windows To Go drive**
 
-In addition to the USB boot support in the BIOS, the Windows 10 image on your Windows To Go drive must be compatible with the processor architecture and the firmware of the host PC as shown in the table below.
+In addition to the USB boot support in the BIOS, the Windows 10 image on your Windows To Go drive must be compatible with the processor architecture and the firmware of the host PC as shown in the table below.
 
 <table>
 <colgroup>

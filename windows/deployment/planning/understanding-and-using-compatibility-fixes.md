@@ -18,12 +18,12 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+-   Windows 10
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Server 2012
+-   Windows Server 2008 R2
 
 As the Windows operating system evolves to support new technology and functionality, the implementations of some functions may change. This can cause problems for applications that relied upon the original implementation. You can avoid compatibility issues by using the Microsoft Windows Application Compatibility (Compatibility Fix) infrastructure to create a specific application fix for a particular version of an application.
 
@@ -54,10 +54,8 @@ There are important considerations to keep in mind when determining your applica
 
 -   The compatibility fixes run as user-mode code inside of a user-mode application process. This means that you cannot use a compatibility fix to fix kernel-mode code issues. For example, you cannot use a compatibility fix to resolve device-driver issues.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Some antivirus, firewall, and anti-spyware code runs in kernel mode.
-
-     
 
 ## Determining When to Use a Compatibility Fix
 
