@@ -15,6 +15,8 @@ ms.reviewer:
 manager: dansimp
 ---
 
+Intune for Education is a streamlined device management solution for educational institutions that can be used to quickly set up and manage Windows 10 and iOS devices for your school. It provides a new streamlined UI with the enterprise readiness and resiliency of the Intune service. You can learn more about Intune for Education by reading the [Intune for Education documentation](https://docs.microsoft.com/en-us/intune-education/what-is-intune-for-education).
+
 # Use Intune for Education to manage groups, apps, and settings
 
 > [!div class="step-by-step"]

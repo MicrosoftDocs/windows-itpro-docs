@@ -6,6 +6,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-np",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure.md",
 "redirect_url": "/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure",
 "redirect_document_id": true
@@ -626,8 +631,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-rules-in-windows-10-enterprise-e3.md",
-"redirect_url": "windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction-rules-in-windows-10-enterprise-e3",
+"source_path": "windows/security/threat-protection/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity",
 "redirect_document_id": true
 },
 {
@@ -721,18 +726,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/audit-windows-defender-exploit-guard.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/audit-windows-defender-exploit-guard",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/audit-windows-defender-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/audit-windows-defender",
 "redirect_document_id": true
 },
 {
@@ -741,23 +736,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission.md",
-"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-np",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-np.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-np",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/controlled-folders",
 "redirect_document_id": true
 },
 {
@@ -766,18 +746,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/customize-attack-surface-reduction.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/customize-controlled-folders-exploit-guard.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/customize-controlled-folders-exploit-guard",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/customize-controlled-folders-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/customize-controlled-folders",
 "redirect_document_id": true
 },
 {
@@ -786,18 +756,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/customize-exploit-protection.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/customize-exploit-protection",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/emet-exploit-protection-exploit-guard.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/emet-exploit-protection-exploit-guard",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/emet-exploit-protection-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/emet-exploit-protection",
 "redirect_document_id": true
 },
 {
@@ -806,18 +766,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/enable-controlled-folders-exploit-guard",
 "redirect_document_id": true
 },
 {
@@ -826,18 +776,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/enable-network-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/enable-network-protection",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/enable-network-protection.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection",
 "redirect_document_id": true
 },
 {
@@ -846,18 +786,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/evaluate-attack-surface-reduction.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/evaluate-attack-surface-reduction",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/evaluate-controlled-folder-access.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/evaluate-controlled-folder-access",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/evaluate-controlled-folder-access.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/evaluate-controlled-folder-access",
 "redirect_document_id": true
 },
 {
@@ -866,18 +796,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/evaluate-exploit-protection.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/evaluate-exploit-protection",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/evaluate-network-protection.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/evaluate-network-protection",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/evaluate-network-protection.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/evaluate-network-protection",
 "redirect_document_id": true
 },
 {
@@ -886,28 +806,13 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/evaluate-windows-defender",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard",
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/event-views",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/exploit-protection-exploit-guard",
 "redirect_document_id": true
 },
 {
@@ -921,18 +826,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/network-protection",
 "redirect_document_id": true
 },
 {
@@ -946,29 +841,19 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/troubleshoot-exploit-protection-mitigations.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-exploit-protection-mitigations",
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-exploit-protection-mitigations.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-exploit-protection-mitigations",
+"source_path": "windows/threat-protection/windows-defender-exploit-guard/troubleshoot-np.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-np",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard",
 "redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection",
-"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/advanced-features-windows-defender-advanced-threat-protection.md",
@@ -1120,6 +1005,7 @@
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/configure-attack-surface-reduction",
 "redirect_document_id": true
 },
+
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/configuration-score.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
@@ -3201,6 +3087,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/device-security/device-guard/deploy-device-guard-enable-virtualization-based-security.md",
+"redirect_url": "/windows/security/threat-protection/device-guard/deploy-device-guard-enable-virtualization-based-security",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/device-security/device-guard/deploy-managed-installer-for-device-guard.md",
 "redirect_url": "/windows/security/threat-protection/device-guard/deploy-managed-installer-for-device-guard",
 "redirect_document_id": true
@@ -3238,16 +3129,6 @@
 {
 "source_path": "windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/memory-integrity.md",
-"redirect_url": "/windows/security/threat-protection/device-guard/memory-integrity",
 "redirect_document_id": true
 },
 {
@@ -4538,11 +4419,6 @@
 {
 "source_path": "windows/device-security/enable-virtualization-based-protection-of-code-integrity.md",
 "redirect_url": "/windows/security/threat-protection/enable-virtualization-based-protection-of-code-integrity",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md",
-"redirect_url": "/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity",
 "redirect_document_id": true
 },
 {
@@ -9766,11 +9642,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/device-security/device-guard/deploy-device-guard-enable-virtualization-based-security.md",
-"redirect_url": "/windows/security/threat-protection/device-guard/deploy-device-guard-enable-virtualization-based-security",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/keep-secure/deploy-manage-report-windows-defender-antivirus.md",
 "redirect_url": "/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus",
 "redirect_document_id": true
@@ -12296,6 +12167,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/keep-secure/requirements-and-deployment-planning-guidelines-for-device-guard.md",
+"redirect_url": "/windows/security/threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/keep-secure/requirements-for-deploying-applocker-policies.md",
 "redirect_url": "/windows/device-security/applocker/requirements-for-deploying-applocker-policies",
 "redirect_document_id": true
@@ -14778,7 +14654,7 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-ip-related-alerts-windows-defender-advanced-threat-protection-new.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/get-ip-related-alerts",
-"redirect_document_id": false
+"redirect_document_id": true
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-ip-related-machines-windows-defender-advanced-threat-protection.md",
@@ -14788,7 +14664,7 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-ip-related-machines-windows-defender-advanced-threat-protection-new.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/get-ip-related-machines",
-"redirect_document_id": false
+"redirect_document_id": true
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/get-ip-statistics-windows-defender-advanced-threat-protection.md",
@@ -14986,9 +14862,9 @@
 "redirect_document_id": true
 },
 {
-  "source_path": "windows/security/threat-protection/windows-defender-atp/api-microsoft-flow.md",
-  "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/api-microsoft-flow",
-  "redirect_document_id": true
+"source_path": "windows/security/threat-protection/windows-defender-atp/run-advanced-query-sample-ms-flow.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-sample-ms-flow",
+"redirect_document_id": true
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/run-advanced-query-sample-power-bi-app-token.md",
@@ -14996,8 +14872,8 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-sample-power-bi-app-token.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/api-power-bi",
+"source_path": "windows/security/threat-protection/windows-defender-atp/run-advanced-query-sample-power-bi-user-token.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-sample-power-bi-user-token",
 "redirect_document_id": true
 },
 {
@@ -15129,21 +15005,6 @@
 "source_path": "windows/security/threat-protection/windows-defender-atp/find-machines-by-ip-windows-defender-advanced-threat-protection-new.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/find-machines-by-ip",
 "redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/microsoft-defender-atp/is-domain-seen-in-org.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/get-domain-related-alerts",
-"redirect_document_id": false
-},
-{
-"source_path": "windows/security/threat-protection/microsoft-defender-atp/get-ip-related-machines.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/get-ip-related-alerts",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp/is-ip-seen-org.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp/exposed-apis-list",
-"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/machineaction-windows-defender-advanced-threat-protection-new.md",
@@ -15326,6 +15187,61 @@
 "source_path": "browsers/internet-explorer/ie11-deploy-guide/group-policy-compatability-with-ie11.md",
 "redirect_url": "/browsers/internet-explorer/ie11-deploy-guide/group-policy-compatibility-with-ie11",
 "redirect_document_id": true
+},
+{
+"source_path": "education/get-started/change-history-ms-edu-get-started",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy",
+"redirect_document_id": true
+},
+{
+"source_path": "education/get-started/get-started-with-microsoft-education",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/microsoft-store-for-education",
+"redirect_document_id": false
+},
+{
+"source_path": "education/get-started/configure-microsoft-store-for-education",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/microsoft-store-for-education",
+"redirect_document_id": false
+},
+{
+"source_path": "education/get-started/enable-microsoft-teams",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/set-up-teams-for-education",
+"redirect_document_id": false
+},
+{
+"source_path": "education/get-started/finish-setup-and-other-tasks",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy",
+"redirect_document_id": false
+},
+{
+"source_path": "education/get-started/inclusive-classroom-it-admin",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy",
+"redirect_document_id": false
+},
+{
+"source_path": "education/get-started/set-up-office365-edu-tenant",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/create-your-office-365-tenant",
+"redirect_document_id": false
+},
+{
+"source_path": "education/get-started/set-up-windows-10-education-devices",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/set-up-windows-10-education-devices",
+"redirect_document_id": false
+},
+{
+"source_path": "education/get-started/set-up-windows-education-devices",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/set-up-windows-10-education-devices",
+"redirect_document_id": false
+},
+{
+"source_path": "education/get-started/use-intune-for-education",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/use-intune-for-education",
+"redirect_document_id": false
+},
+{
+"source_path": "education/get-started/use-school-data-sync",
+"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/school-data-sync",
+"redirect_document_id": false
 }
 ]
 }
