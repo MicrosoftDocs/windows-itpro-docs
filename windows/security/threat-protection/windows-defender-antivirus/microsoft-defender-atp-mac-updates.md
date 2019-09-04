@@ -116,6 +116,8 @@ The following configuration profile is used to:
 - Enable the "Check for updates" button in the user interface
 - Allow users on the device to enroll into the Insider channels
 
+### JAMF
+
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -132,6 +134,68 @@ The following configuration profile is used to:
 	<key>SendAllTelemetryEnabled</key>
 	<true/>
 </dict>
+</plist>
+```
+
+### Intune
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
+        <key>PayloadUUID</key>
+        <string>B762FF60-6ACB-4A72-9E72-459D00C936F3</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadOrganization</key>
+        <string>Microsoft</string>
+        <key>PayloadIdentifier</key>
+        <string>com.microsoft.autoupdate2</string>
+        <key>PayloadDisplayName</key>
+        <string>Microsoft Auto-Update settings</string>
+        <key>PayloadDescription</key>
+        <string>Microsoft Auto-Update configuration settings</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+            <key>PayloadUUID</key>
+            <string>5A6F350A-CC2C-440B-A074-68E3F34EBAE9</string>
+            <key>PayloadType</key>
+            <string>com.microsoft.autoupdate2</string>
+            <key>PayloadOrganization</key>
+            <string>Microsoft</string>
+            <key>PayloadIdentifier</key>
+            <string>com.microsoft.autoupdate2</string>
+            <key>PayloadDisplayName</key>
+            <string>Microsoft Auto-Update configuration settings</string>
+            <key>PayloadDescription</key>
+            <string/>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadEnabled</key>
+            <true/>
+            <key>ChannelName</key>
+            <string>InsiderFast</string>
+            <key>HowToCheck</key>
+            <string>AutomaticDownload</string>
+            <key>EnableCheckForUpdatesButton</key>
+            <true/>
+            <key>DisableInsiderCheckbox</key>
+            <false/>
+            <key>SendAllTelemetryEnabled</key>
+            <true/>
+            </dict>
+        </array>
+    </dict>
 </plist>
 ```
 
