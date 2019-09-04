@@ -50,13 +50,11 @@ Windows To Go workspace operates just like any other installation of Windows wit
 
 ## <a href="" id="bkmk-wtgroam"></a>Roaming with Windows To Go
 
-
 Windows To Go drives can be booted on multiple computers. When a Windows To Go workspace is first booted on a host computer it will detect all hardware on the computer and install any needed drivers. When the Windows To Go workspace is subsequently booted on that host computer it will be able to identify the host computer and load the correct set of drivers automatically.
 
 The applications that you want to use from the Windows To Go workspace should be tested to make sure they also support roaming. Some applications bind to the computer hardware which will cause difficulties if the workspace is being used with multiple host computers.
 
 ## <a href="" id="wtg-prep-intro"></a>Prepare for Windows To Go
-
 
 Enterprises install Windows on a large group of computers either by using configuration management software (such as System Center Configuration Manager), or by using standard Windows deployment tools such as DiskPart and the Deployment Image Servicing and Management (DISM) tool.
 
@@ -83,18 +81,16 @@ For more information about designing and planning your Windows To Go deployment,
 
 **For USB drives**
 
-The devices listed in this section have been specially optimized and certified for Windows To Go and meet the necessary requirements for booting and running a full version of Windows 10 from a USB drive. The optimizations for Windows To Go include the following:
+The devices listed in this section have been specially optimized and certified for Windows To Go and meet the necessary requirements for booting and running a full version of Windows 10 from a USB drive. The optimizations for Windows To Go include the following:
 
 - Windows To Go certified USB drives are built for high random read/write speeds and support the thousands of random access I/O operations per second required for running normal Windows workloads smoothly.
-- Windows To Go certified USB drives have been tuned to ensure they boot and run on hardware certified for use with Windows 7 and later.
+- Windows To Go certified USB drives have been tuned to ensure they boot and run on hardware certified for use with Windows 7 and later.
 - Windows To Go certified USB drives are built to last. Certified USB drives are backed with manufacturer warranties and should continue operating under normal usage. Refer to the manufacturer websites for warranty details.
 
 As of the date of publication, the following are the USB drives currently certified for use as Windows To Go drives:
 
 > [!WARNING]
 > Using a USB drive that has not been certified is not supported.
-
- 
 
 - IronKey Workspace W700 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w700.html](https://go.microsoft.com/fwlink/p/?LinkId=618714))
 - IronKey Workspace W500 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w500.html](https://go.microsoft.com/fwlink/p/?LinkId=618717))
@@ -114,6 +110,7 @@ As of the date of publication, the following are the USB drives currently certif
 
     > [!TIP]
     > This device contains an embedded smart card.
+
      
 
 -   Super Talent Express RC4 for Windows To Go
