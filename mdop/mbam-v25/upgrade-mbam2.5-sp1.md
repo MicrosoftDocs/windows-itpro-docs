@@ -28,23 +28,39 @@ In this guide, we will use a two-server configuration. One server will be a data
 
 1. Identify the MBAM application pool service account that's used by IIS web servers to read and write data to MBAM databases.
 2. Identify the groups that are used during the MBAM web features configuration and the reports web service URL.
-3. Identify the SQL Server name and instance name.
+3. Identify the SQL Server name and instance name. Watch this video to learn more.
+
     > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3ANP1]
-4. Identify the SQL Server Reporting Services Account that's used for reading compliance data from the Compliance and Audit database.
+
+4. Identify the SQL Server Reporting Services Account that's used for reading compliance data from the Compliance and Audit database. Watch this video to learn more.
+
     > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3ALdZ]
 
 ## Upgrade the MBAM infrastructure to the latest version available
 
+MBAM Server infrastructure installation or upgrade is always performed in the order listed below:
+
+- SQL Server Database Engine: Databases
+- SQL Server Reporting Services: Reports
+- Web Server: Web Applications
+- SCCM Server: SCCM Integrated Reports if applicable
+- Clients: MBAM Agent or Client Update
+- Group Policy Templates: Update the existing Group Policy with new templates and enable new settings on existing MBAM Group Policy
+
 > [!NOTE]
 > We recommend that you create a full database backup of the MBAM databases before you run the upgrades.
 
-### Upgrade the MBAM SQL Server server
+### Upgrade the MBAM SQL Server
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3ALew]
+Watch this video to learn how to upgrade the MBAM SQL Server:
 
-### Upgrade the MBAM web server
+   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3ALew]
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3ALex]
+### Upgrade the MBAM Web Server
+
+Watch this video to learn how to upgrade the MBAM Web Server:
+
+   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3ALex]
 
 ## More information
 
