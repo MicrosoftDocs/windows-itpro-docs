@@ -35,7 +35,7 @@ This table includes the recommended URLs to add to your Enterprise Cloud Resourc
 |-----------------------------|---------------------------------------------------------------------|
 |Office 365 for Business |<ul><li>contoso.sharepoint.com</li><li>contoso-my.sharepoint.com</li><li>contoso-files.sharepoint.com</li><li>tasks.office.com</li><li>protection.office.com</li><li>meet.lync.com</li><li>teams.microsoft.com</li></ul> |
 |Yammer |<ul><li>www.yammer.com</li><li>yammer.com</li><li>persona.yammer.com</li></ul> |
-|Outlook Web Access (OWA) |<ul>attachments.office.net</ul> |
+|Outlook Web Access (OWA) |attachments.office.net |
 |Microsoft Dynamics |contoso.crm.dynamics.com |
 |Visual Studio Online |contoso.visualstudio.com |
 |Power BI |contoso.powerbi.com |
