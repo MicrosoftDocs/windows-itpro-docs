@@ -105,8 +105,8 @@ If devices are running Windows 7 or Windows 8.1, see [New Windows 10 upgrade ben
 
 With Windows 10 Enterprise or Windows 10 Education, businesses and institutions can benefit from enterprise-level security and control. Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Education or Windows 10 Enterprise to their users. Now, with Windows 10 Enterprise E3 or A3 and E5 or A5 being available as a true online service, it is available in select channels thus allowing all organizations to take advantage of enterprise-grade Windows 10 features. To compare Windows 10 editions and review pricing, see the following:
 
-- [Compare Windows 10 editions](https://www.microsoft.com/en-us/windowsforbusiness/compare)
-- [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-security-pricing)
+- [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare)
+- [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)
 
 You can benefit by moving to Windows as an online service in the following ways:
 
@@ -215,12 +215,12 @@ See [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md).
 
 ## Virtual Desktop Access (VDA)
 
-Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx).
+Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx).
 
 Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscriptions for VDA. Active Directory-joined and Azure Active Directory-joined clients are supported. See [Enable VDA for Subscription Activation](vda-subscription-activation.md).
 
 ## Related topics
 
 [Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-devices-group-policy/)<br>
-[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)<br>
-[Windows for business](https://www.microsoft.com/en-us/windowsforbusiness/default.aspx)<br>
+[Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)<br>
+[Windows for business](https://www.microsoft.com/windowsforbusiness/default.aspx)<br>

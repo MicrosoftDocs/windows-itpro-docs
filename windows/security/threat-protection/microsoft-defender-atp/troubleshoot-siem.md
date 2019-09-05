@@ -76,7 +76,7 @@ If you encounter an error when trying to enable the SIEM connector application, 
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootsiem-belowfoldlink) 
 
 ## Related topics
 - [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)

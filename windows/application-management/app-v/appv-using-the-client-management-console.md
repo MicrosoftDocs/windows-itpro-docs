@@ -22,7 +22,7 @@ This topic provides information about using the Application Virtualization (App-
 
 ## Obtain the client management console
 
-The client management console is separate from the App-V client itself. You can download the client management console from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=41186).
+The client management console is separate from the App-V client itself. You can download the client management console from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=41186).
 
 > [!NOTE]
 > To perform all of the actions available using the client management console, you must have administrative access on the computer running the App-V client.

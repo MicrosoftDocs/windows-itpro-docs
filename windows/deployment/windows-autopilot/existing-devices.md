@@ -55,7 +55,7 @@ See the following examples.
 ### Create the JSON file 
 
 >[!TIP]
->To run the following commands on a computer running Windows Server 2012/2012 R2 or Windows 7/8.1, you must first download and install the [Windows Management Framework](https://www.microsoft.com/en-us/download/details.aspx?id=54616).
+>To run the following commands on a computer running Windows Server 2012/2012 R2 or Windows 7/8.1, you must first download and install the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=54616).
 
 1. On an Internet connected Windows PC or Server open an elevated Windows PowerShell command window
 2. Enter the following lines to install the necessary modules

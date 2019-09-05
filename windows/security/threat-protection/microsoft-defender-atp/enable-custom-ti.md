@@ -27,7 +27,7 @@ ms.topic: article
 > [!TIP]
 > This topic has been deprecated. See [Indicators](ti-indicator.md) for the updated content.
 > 
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-enablecustomti-abovefoldlink) 
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-enablecustomti-abovefoldlink) 
 
 Before you can create custom threat intelligence (TI) using REST API, you'll need to set up the custom threat intelligence application through Microsoft Defender Security Center.
 

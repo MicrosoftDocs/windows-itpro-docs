@@ -72,7 +72,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
     >If the request to add features fails, retry the installation by typing the command again.
 
-2. Download [SQL Server 2014 SP2](https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2014-sp2) from the Microsoft Evaluation Center as an .ISO file on the Hyper-V host computer. Save the file to the **C:\VHD** directory.
+2. Download [SQL Server 2014 SP2](https://www.microsoft.com/evalcenter/evaluate-sql-server-2014-sp2) from the Microsoft Evaluation Center as an .ISO file on the Hyper-V host computer. Save the file to the **C:\VHD** directory.
 3. When you have downloaded the file **SQLServer2014SP2-FullSlipstream-x64-ENU.iso** and placed it in the C:\VHD directory, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host: 
 
     ```
@@ -126,7 +126,7 @@ Topics and procedures in this guide are summarized in the following table. An es
     Stop-Process -Name Explorer
     ```
 
-2. Download [System Center Configuration Manager and Endpoint Protection](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1 (download the executable file anywhere on SRV1), double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The C:\configmgr directory will be automatically created. Click **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
+2. Download [System Center Configuration Manager and Endpoint Protection](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1 (download the executable file anywhere on SRV1), double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The C:\configmgr directory will be automatically created. Click **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
 
 3. Before starting the installation, verify that WMI is working on SRV1. See the following examples. Verify that **Running** is displayed under **Status** and **True** is displayed next to **TcpTestSucceeded**:
 
