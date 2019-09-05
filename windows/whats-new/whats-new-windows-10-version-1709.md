@@ -25,7 +25,7 @@ A brief description of new or updated features in this version of Windows 10 is 
 
 &nbsp;
 
-> [!video https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false]
+> [!video https://www.microsoft.com/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false]
 
 
 ## Deployment
@@ -96,7 +96,7 @@ Windows Defender Application Guard hardens a favorite attacker entry-point by is
 
 ### Window Defender Exploit Guard
 
-Window Defender Exploit Guard provides intrusion prevention capabilities to reduce the attack and exploit surface of applications. Exploit Guard has many of the threat mitigations that were available in Enhanced Mitigation Experience Toolkit (EMET) toolkit, a deprecated security download. These mitigations are now built into Windows and configurable with Exploit Guard. For more information, see [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard).
+Window Defender Exploit Guard provides intrusion prevention capabilities to reduce the attack and exploit surface of applications. Exploit Guard has many of the threat mitigations that were available in Enhanced Mitigation Experience Toolkit (EMET) toolkit, a deprecated security download. These mitigations are now built into Windows and configurable with Exploit Guard. These mitigations include [Exploit protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/exploit-protection), [Attack surface reduction protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction), [Controlled folder access](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/controlled-folder-access), and [Network protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/network-protection).
 
 ### Windows Defender Device Guard
 

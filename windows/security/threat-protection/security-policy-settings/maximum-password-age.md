@@ -74,7 +74,7 @@ The longer a password exists, the higher the likelihood that it will be compromi
 
 ### Considerations
 
-Mandated password changes are a long-standing security practice, but current research strongly indicates that password expiration has a negative effect. See [Microsoft Password Guidance](https://www.microsoft.com/en-us/research/publication/password-guidance/) for further information.
+Mandated password changes are a long-standing security practice, but current research strongly indicates that password expiration has a negative effect. See [Microsoft Password Guidance](https://www.microsoft.com/research/publication/password-guidance/) for further information.
 
 Configure the **Maximum password age** policy setting to a value that is suitable for your organization's business requirements. For example, many organisations have compliance or insurance mandates requiring a short lifespan on passwords. Where such a requirement exists, the **Maximum password age** policy setting can be used to meet business requirements.
 

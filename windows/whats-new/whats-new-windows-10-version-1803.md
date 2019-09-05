@@ -25,7 +25,7 @@ This article lists new and updated features and content that are of interest to 
 
 The following 3-minute video summarizes some of the new features that are available for IT Pros in this release.
 
-> [!video https://www.microsoft.com/en-us/videoplayer/embed/RE21ada?autoplay=false]
+> [!video https://www.microsoft.com/videoplayer/embed/RE21ada?autoplay=false]
 
 ## Deployment
 
@@ -66,7 +66,7 @@ With this release you can easily deploy and manage kiosk devices with Microsoft 
 - To help with troubleshooting, you can now view error reports generated if an assigned access-configured app has issues.
 
 For more information, see: 
-- [Making IT simpler with a modern workplace](https://www.microsoft.com/en-us/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)
+- [Making IT simpler with a modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)
 - [Simplifying kiosk management for IT with Windows 10](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Simplifying-kiosk-management-for-IT-with-Windows-10/ba-p/187691)
 
 ### Windows 10 Subscription Activation
@@ -178,11 +178,11 @@ Windows Defender Antivirus now shares detection status between M365 services and
 
 ### Windows Defender Exploit Guard
 
-Windows Defender Exploit Guard enhanced attack surface area reduction, extended support to Microsoft Office applications, and now supports Windows Server. [Virtualization-based Security](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/Windows-Defender-System-Guard-Making-a-leap-forward-in-platform/m-p/167303) (VBS) and Hypervisor-protected code integrity (HVCI) can now be enabled across the Windows 10 ecosystem.  These Exploit Guard features can now be enabled through the Windows Defender Security Center.
+Windows Defender Exploit Guard enhanced attack surface area reduction, extended support to Microsoft Office applications, and now supports Windows Server. [Virtualization-based Security](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/Windows-Defender-System-Guard-Making-a-leap-forward-in-platform/m-p/167303) (VBS) and Hypervisor-protected code integrity (HVCI) can now be enabled across the Windows 10 ecosystem. These Exploit Guard features can now be enabled through the Windows Defender Security Center.
 
-For more information, see [Reduce attack surfaces with Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+For more information, see [Reduce attack surfaces](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction)
 
-### Windows Defender ATP 
+### Windows Defender ATP
 
 [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) has been enhanced with many new capabilities. For more information, see the following topics:
 

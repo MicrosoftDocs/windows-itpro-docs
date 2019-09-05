@@ -27,10 +27,10 @@
 #### [Application control]()
 ##### [Windows Defender Application Guard](../windows-defender-application-control/windows-defender-application-control.md)
 
-#### [Exploit protection](../windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
-#### [Network protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md)
-#### [Controlled folder access](../windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
-#### [Attack surface reduction](../windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
+#### [Exploit protection](../windows-defender-exploit-guard/exploit-protection.md)
+#### [Network protection](../windows-defender-exploit-guard/network-protection.md)
+#### [Controlled folder access](../windows-defender-exploit-guard/controlled-folders.md)
+#### [Attack surface reduction](../windows-defender-exploit-guard/attack-surface-reduction.md)
 #### [Network firewall](../windows-firewall/windows-firewall-with-advanced-security.md)
 
 
@@ -196,8 +196,8 @@
 #### [Network protection](../windows-defender-exploit-guard/enable-network-protection.md)
 
 #### [Controlled folder access]()
-##### [Enable controlled folder access](../windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)
-##### [Customize controlled folder access](../windows-defender-exploit-guard/customize-controlled-folders-exploit-guard.md)
+##### [Enable controlled folder access](../windows-defender-exploit-guard/enable-controlled-folders.md)
+##### [Customize controlled folder access](../windows-defender-exploit-guard/customize-controlled-folders.md)
 
 #### [Attack surface reduction controls]()
 ##### [Enable attack surface reduction rules](../windows-defender-exploit-guard/enable-attack-surface-reduction.md)
@@ -392,7 +392,6 @@
 ####### [Get domain related alerts](get-domain-related-alerts.md)
 ####### [Get domain related machines](get-domain-related-machines.md)
 ####### [Get domain statistics](get-domain-statistics.md)
-####### [Is domain seen in organization (Deprecated)](is-domain-seen-in-org.md)
 
 ###### [File]()
 ####### [Methods and properties](files.md)
@@ -403,9 +402,7 @@
 
 ###### [IP]()
 ####### [Get IP related alerts](get-ip-related-alerts.md)
-####### [Get IP related machines (Deprecated)](get-ip-related-machines.md)
 ####### [Get IP statistics](get-ip-statistics.md)
-####### [Is IP seen in organization (Deprecated)](is-ip-seen-org.md)
 
 ###### [User]()
 ####### [Methods](user.md)
@@ -428,13 +425,13 @@
 ##### [Experiment with custom threat intelligence alerts](experiment-custom-ti.md)
 ##### [Troubleshoot custom threat intelligence issues](troubleshoot-custom-ti.md)
  
-#### [Pull alerts to your SIEM tools]()
-##### [Learn about different ways to pull alerts](configure-siem.md)
+#### [Pull Detections to your SIEM tools]()
+##### [Learn about different ways to pull Detections](configure-siem.md)
 ##### [Enable SIEM integration](enable-siem-integration.md)
-##### [Configure Splunk to pull alerts](configure-splunk.md)
-##### [Configure HP ArcSight to pull alerts](configure-arcsight.md)
-##### [Microsoft Defender ATP SIEM alert API fields](api-portal-mapping.md)
-##### [Pull alerts using SIEM REST API](pull-alerts-using-rest-api.md)
+##### [Configure Splunk to pull Detections](configure-splunk.md)
+##### [Configure HP ArcSight to pull Detections](configure-arcsight.md)
+##### [Microsoft Defender ATP Detection fields](api-portal-mapping.md)
+##### [Pull Detections using SIEM REST API](pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
 #### [Reporting]()

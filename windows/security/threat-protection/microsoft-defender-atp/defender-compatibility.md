@@ -28,7 +28,7 @@ ms.date: 04/24/2018
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)
 
 The Microsoft Defender Advanced Threat Protection agent depends on Windows Defender Antivirus for some capabilities such as file scanning.
 

@@ -71,4 +71,4 @@ Tenant-wide Windows 10 Pro > Pro Education
 [FAQs](https://support.microsoft.com/help/4020089/windows-10-in-s-mode-faq)<br>
 [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)<BR> 
 [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md) <BR>
-[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
+[Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)

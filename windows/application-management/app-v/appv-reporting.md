@@ -30,7 +30,7 @@ The following list displays the end–to-end high-level workflow for reporting i
 
      To confirm SQL Server Reporting Services is running, enter <https://localhost/Reports> in a web browser as administrator on the server that will host App-V Reporting. The SQL Server Reporting Services Home page should appear.
 2. Install the App-V reporting server and associated database. For more information about installing the reporting server see [How to install the Reporting Server on a standalone computer and connect it to the database](appv-install-the-reporting-server-on-a-standalone-computer.md). Configure the time when the computer running the App-V client should send data to the reporting server.
-3. If you are not using an electronic software distribution system such as Configuration Manager to view reports then you can define reports in SQL Server Reporting Service. Download predefined appvshort Reports from the Download Center at [Application Virtualization SSRS Reports](https://www.microsoft.com/en-us/download/details.aspx?id=42630).
+3. If you are not using an electronic software distribution system such as Configuration Manager to view reports then you can define reports in SQL Server Reporting Service. Download predefined appvshort Reports from the Download Center at [Application Virtualization SSRS Reports](https://www.microsoft.com/download/details.aspx?id=42630).
 
    > [!NOTE]
     >If you are using the Configuration Manager integration with App-V, most reports are generated from Configuration Manager rather than from App-V.
