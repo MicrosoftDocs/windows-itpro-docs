@@ -8,6 +8,7 @@ author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
+manager: dansimp
 ---
 
 # StorageD3InModernStandby (Windows Configuration Designer reference)
