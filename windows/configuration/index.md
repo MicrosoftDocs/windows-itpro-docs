@@ -7,10 +7,10 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
+manager: dansimp
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 05/11/2018
 ---
 
 # Configure Windows 10

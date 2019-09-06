@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/16/2017
+ms.author: dansimp
 ---
 
 # Client management
