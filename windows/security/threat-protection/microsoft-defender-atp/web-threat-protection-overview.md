@@ -1,7 +1,7 @@
 ---
-title: Overview of web threat protection in Microsoft Defender ATP
-description: Learn about web threat protection in Microsoft Defender ATP and how it can protect your organization
-keywords: web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser 
+title: Overview of web protection in Microsoft Defender ATP
+description: Learn about web protection in Microsoft Defender ATP and how it can protect your organization
+keywords: web protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -24,10 +24,10 @@ ms.date: 08/30/2019
 
 [!include[Prerelease information](prerelease.md)]
 
-Web threat protection in Microsoft Defender ATP secures your machines against web threats without relying on a web proxy, providing security for devices that are either away or on premises. By integrating with Microsoft Edge as well as popular third-party browsers like Chrome and Firefox, web threat protection stops access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, as well as sites that you have blocked in your [custom indicator list](manage-indicators.md).
+Web protection in Microsoft Defender ATP leverages [network protection](network-protection.md) to secure your machines against web threats without relying on a web proxy, providing security for devices that are either away or on premises. By integrating with Microsoft Edge as well as popular third-party browsers like Chrome and Firefox, web protection stops access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, as well as sites that you have blocked in your [custom indicator list](manage-indicators.md).
 
-With web threat protection in Microsoft Defender ATP, you get:
-- Comprehensive visibility of web threats
+With web protection, you also get:
+- Comprehensive visibility into web threats affecting your organization
 - Investigation capabilities over web-related threat activity through alerts and comprehensive profiles of URLs and the machines that access these URLs
 - A full set of security features that track general access trends to malicious and unwanted websites
 
@@ -35,7 +35,7 @@ With web threat protection in Microsoft Defender ATP, you get:
 >It can take up to an hour for machines to receive new customer indicators.
 
 ## Prerequisites
-Web threat protection uses network protection to provide web browsing security on Microsoft Edge and third-party web browsers.
+Web protection uses network protection to provide web browsing security on Microsoft Edge and third-party web browsers.
 
 To turn on network protection on your machines:
 - Edit the Microsoft Defender ATP security baseline under **Web & Network Protection** to enable network protection before deploying or redeploying it. [Learn about reviewing and assigning the Microsoft Defender ATP security baseline](configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-atp-security-baseline)

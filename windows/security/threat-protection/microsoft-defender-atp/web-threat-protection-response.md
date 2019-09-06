@@ -1,7 +1,7 @@
 ---
 title: Respond to web threats in Microsoft Defender ATP
 description: Respond to alerts related to malicious and unwanted websites. Understand how web threat protection informs end users through their web browsers and Windows notifications
-keywords: web threat protection, web browsing, alerts, response, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, notifications, end users, Windows notifications, blocking page,
+keywords: web protection, web browsing, alerts, response, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, notifications, end users, Windows notifications, blocking page,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -24,7 +24,7 @@ ms.date: 08/30/2019
 
 [!include[Prerelease information](prerelease.md)]
 
-Web threat protection in Microsoft Defender APT lets you efficiently investigate and respond to alerts related to malicious websites and websites in your custom indicator list.
+Web protection in Microsoft Defender APT lets you efficiently investigate and respond to alerts related to malicious websites and websites in your custom indicator list.
 
 ## View web threat alerts
 Microsoft Defender ATP generates the following [alerts](manage-alerts.md) for malicious or suspicious web activity:
@@ -40,7 +40,7 @@ Each alert provides the following information:
 ![Image of an alert related to web threat protection](images/wtp-alert.png)
 
 >[!Note]
->To reduce the volume of alerts, Microsoft Defender ATP consolidates web threat protection detections for the same domain on the same machine each day to a single alert. Only one alert is generated and counted into the [web protection report](web-threat-protection-monitoring.md).
+>To reduce the volume of alerts, Microsoft Defender ATP consolidates web threat detections for the same domain on the same machine each day to a single alert. Only one alert is generated and counted into the [web protection report](web-threat-protection-monitoring.md).
 
 ## Inspect website details
 You can dive deeper by selecting the URL or domain of the website in the alert. This opens a page about that particular URL or domain with various information, including:
@@ -59,7 +59,7 @@ You can also check the machine that attempted to access a blocked URL. Selecting
 
 ## Web browser and Windows notifications for end users
 
-With web threat protection in Microsoft Defender ATP, your end users will be blocked from visiting malicious or unwanted websites using Microsoft Edge or other browsers. Because blocking is performed by [network protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md), they will see a generic error from the web browser. They will also see a notification from Windows.
+With web protection in Microsoft Defender ATP, your end users will be prevented from visiting malicious or unwanted websites using Microsoft Edge or other browsers. Because blocking is performed by [network protection](../windows-defender-exploit-guard/network-protection-exploit-guard.md), they will see a generic error from the web browser. They will also see a notification from Windows.
 
 ![Image of Microsoft Edge showing a 403 error and the Windows notification](images/wtp-browser-blocking-page.png)
 *Web threat blocked by Microsoft Edge*
@@ -68,5 +68,5 @@ With web threat protection in Microsoft Defender ATP, your end users will be blo
 *Web threat blocked by the Chrome web browser*
 
 ## Related topics
-- [Web threat protection overview](web-threat-protection-overview.md)
+- [Web protection overview](web-threat-protection-overview.md)
 - [Monitor web security](web-threat-protection-monitoring.md)
