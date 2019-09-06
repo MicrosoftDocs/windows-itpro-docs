@@ -31,8 +31,8 @@
 #### [Exploit protection](microsoft-defender-atp/exploit-protection.md)
 #### [Network protection](microsoft-defender-atp/network-protection.md)
 
-#### [Web threat protection]()
-##### [Web threat protection overview](microsoft-defender-atp/web-threat-protection-overview.md)
+#### [Web protection]()
+##### [Web protection overview](microsoft-defender-atp/web-threat-protection-overview.md)
 ##### [Monitor web security](microsoft-defender-atp/web-threat-protection-monitoring.md)
 ##### [Respond to web threats](microsoft-defender-atp/web-threat-protection-response.md)
 
