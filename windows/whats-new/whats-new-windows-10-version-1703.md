@@ -5,13 +5,12 @@ keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
 ms.localizationpriority: high
 ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.date: 10/16/2017
+author: greg-lindsay
+manager: laurawi
+ms.author: greglin
 ms.topic: article
 ---
 
