@@ -67,7 +67,7 @@ You can input video to Surface Hub 2S using USB-C or HDMI, as indicated in the f
 
 ## Mirroring Surface Hub 2S display on another device
 
-You can output video to another display using either USB-C or MiniDP, as indicated in the following table.
+You can output video to another display using MiniDP, as indicated in the following table.
 
 ### Surface Hub 2S video-out settings
 
