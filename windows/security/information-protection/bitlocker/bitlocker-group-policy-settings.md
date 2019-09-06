@@ -400,7 +400,7 @@ This policy setting allows you to block direct memory access (DMA) for all hot p
 
 **Reference**
 
-This policy setting is only enforced when BitLocker or device encyption is enabled. As explained in the [Microoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2018/01/18/issue-with-bitlockerdma-setting-in-windows-10-fall-creators-update-v1709/), in some cases when this setting is enabled, internal, PCI-based peripherals can fail, including wireless network drivers and input and audio peripherals. This problem is fixed in the [April 2018 quality update](https://support.microsoft.com/help/4093105/windows-10-update-kb4093105).
+This policy setting is only enforced when BitLocker or device encyption is enabled. As explained in the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2018/01/18/issue-with-bitlockerdma-setting-in-windows-10-fall-creators-update-v1709/), in some cases when this setting is enabled, internal, PCI-based peripherals can fail, including wireless network drivers and input and audio peripherals. This problem is fixed in the [April 2018 quality update](https://support.microsoft.com/help/4093105/windows-10-update-kb4093105).
 
 ### <a href="" id="bkmk-dpinchange"></a>Disallow standard users from changing the PIN or password
 
