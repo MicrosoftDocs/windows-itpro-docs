@@ -2,15 +2,14 @@
 title: Deploy and manage a full cloud IT solution for your business
 description: Learn how to set up a cloud infrastructure for your business, acquire devices and apps, and configure and deploy policies to your devices.
 keywords: smb, full cloud IT solution, small to medium business, deploy, setup, manage, Windows, Intune, Office 365
-ms.prod: w10
-ms.technology: smb-windows
-ms.topic: hero-article
+ms.prod:
+ms.technology:
 ms.author: eravena
+audience: itpro
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: smb
 author: eavena
-ms.date: 10/30/2017
 ms.reviewer: 
 manager: dansimp
 ms.localizationpriority: medium
