@@ -24,7 +24,7 @@ ms.date: 08/30/2019
 
 [!include[Prerelease information](prerelease.md)]
 
-Web protection in Microsoft Defender APT lets you efficiently investigate and respond to alerts related to malicious websites and websites in your custom indicator list.
+Web protection in Microsoft Defender ATP lets you efficiently investigate and respond to alerts related to malicious websites and websites in your custom indicator list.
 
 ## View web threat alerts
 Microsoft Defender ATP generates the following [alerts](manage-alerts.md) for malicious or suspicious web activity:
