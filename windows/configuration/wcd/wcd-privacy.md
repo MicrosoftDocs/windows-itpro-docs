@@ -7,6 +7,7 @@ ms.sitesec: library
 author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
+manager: dansimp
 ms.topic: article
 ---
 
