@@ -86,7 +86,10 @@ If this value is not specified, the device infers the H-SLP address from the IMS
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
 <a href="" id="version"></a>**Version**  
-Optional. Determines the version of the SUPL protocol to use. For SUPL 1.0, set this value to `1`. For SUPL 2.0, set this value to `2`. The default is 1.
+Optional. Determines which SUPL major version the GPS driver should use. (Refer to FullVersion field for extended usage). For SUPL 1.0.0, set this value to `1`. For SUPL 2.0.0, set this value to `2`. The default is 1.
+
+<a href="" id="version"></a>**FullVersion**  
+Optional. Determines which full version, X.Y.Z that the GPS driver should use. X, Y, and Z are major, minor, and service indicator version, respectively. If FullVersion field is defined, Version field that defines only major version is ignored.
 
 <a href="" id="mccmncpairs"></a>**MCCMNCPairs**  
 Required. List all of the MCC and MNC pairs owned by the mobile operator. This list is used to verify that the UICC matches the network and SUPL can be used. When the UICC and network do not match, the device uses the default location service and does not use SUPL.
