@@ -4,7 +4,7 @@ description: Windows 10 client management
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 08/16/2017
 ---

@@ -4,7 +4,7 @@ description: Windows 10 application management
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
+author: dansimp
 ms.localizationpriority: high
 ms.date: 09/26/2017
 ---

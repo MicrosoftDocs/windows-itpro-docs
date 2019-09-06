@@ -12,7 +12,6 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 11/15/2017
 ---
 
 # Customize Windows 10 Start and taskbar with provisioning packages
@@ -48,7 +47,7 @@ Three features enable Start and taskbar layout control:
 
 <span id="escape"/>
 
-## Prepare the Start layout XML file
+## <a href="" id="escape"></a>Prepare the Start layout XML file
 
 The **Export-StartLayout** cmdlet produces an XML file. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout section to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout section to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters. 
 
@@ -131,7 +130,6 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 ## Related topics
 
-
 - [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
 - [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)
 - [Customize and export Start layout](customize-and-export-start-layout.md)
@@ -140,12 +138,3 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 - [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
-
- 
-
- 
-
-
-
-
-
