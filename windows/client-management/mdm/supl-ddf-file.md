@@ -159,7 +159,7 @@ The XML below is for Windows 10, version 1809.
                     <Replace />
                   </AccessType>
                   <DefaultValue>1</DefaultValue>
-                  <Description>Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0.0, set this value to 1. For SUPL 2.0.0, set this value to 2. The default is 1. Refer to FullVersion to define minor verison and service indicator</Description>
+                  <Description>Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0.0, set this value to 1. For SUPL 2.0.0, set this value to 2. The default is 1. Refer to FullVersion to define the minor version and the service indicator.</Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
