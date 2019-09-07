@@ -30,8 +30,8 @@ If you don't want to use the Enterprise Mode Site List Manager, you also have th
 ## Enterprise Mode schema v.1 example
 The following is an example of the Enterprise Mode schema v.1. This schema can run on devices running Windows 7 and Windows 8.1.
 
-**Important**
-Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<domain>contoso.com</domain>` automatically applies to both http://contoso.com and https://contoso.com.
+> [!IMPORTANT]
+> Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<domain>contoso.com</domain>` automatically applies to both http://contoso.com and https://contoso.com.
 
 ```xml
 <rules version="1">

@@ -26,8 +26,8 @@ ms.date: 12/04/2017
 
 Use the Enterprise Mode Site List Manager to create and update your site list for devices running Windows 7, Windows 8.1, and Windows 10, using the version 2.0 (v.2) of the Enterprise Mode schema. If you don't want to use the Enterprise Mode Site List Manager, you also have the option to update your XML schema using Notepad, or any other XML-editing app.
 
-**Important**
-If you're running Windows 7 or Windows 8.1 and you've been using the version 1.0 (v.1) of the schema, you can continue to do so, but you won't get the benefits that come with the updated schema. For info about the v.1 schema, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
+> [!IMPORTANT]
+> If you're running Windows 7 or Windows 8.1 and you've been using the version 1.0 (v.1) of the schema, you can continue to do so, but you won't get the benefits that come with the updated schema. For info about the v.1 schema, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md).
 
 ## Enterprise Mode schema v.2 updates
 Because of the schema changes, you can't combine the old version (v.1) with the new version (v.2) of the schema. If you look at your XML file, you can tell which version you're using by:
@@ -41,8 +41,8 @@ You can continue to use the v.1 version of the schema on Windows 10, but you wo
 ### Enterprise Mode v.2 schema example
 The following is an example of the v.2 version of the Enterprise Mode schema.
 
-**Important**
-Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both http://contoso.com and https://contoso.com.
+> [!IMPORTANT]
+> Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both http://contoso.com and https://contoso.com.
  
 ```xml
 <site-list version="205">
@@ -284,8 +284,8 @@ With:
 
 While the old, replaced attributes aren't supported in the v.2 version of the schema, they'll continue to work in the v.1 version of the schema. If, however, you're using the v.2 version of the schema and these attributes are still there, the v.2 version schema takes precedence. We don’t recommend combining the two schemas, and instead recommend that you move to the v.2 version of the schema to take advantage of the new features.
 
-**Important**
-Saving your v.1 version of the file using the new Enterprise Mode Site List Manager (schema v.2) automatically updates the XML to the new v.2 version of the schema.
+> [!IMPORTANT]
+> Saving your v.1 version of the file using the new Enterprise Mode Site List Manager (schema v.2) automatically updates the XML to the new v.2 version of the schema.
 
 ### What not to include in your schema
 We recommend that you not add any of the following items to your schema because they can make your compatibility list behave in unexpected ways:
