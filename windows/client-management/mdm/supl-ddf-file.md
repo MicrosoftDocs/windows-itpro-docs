@@ -182,7 +182,7 @@ The XML below is for Windows 10, version 1809.
                     <Replace />
                   </AccessType>
                   <DefaultValue>1.0.0</DefaultValue>
-                  <Description>Optional. Determines the full version (X.Y.Z where X, Y and Z are the major version, the minor version, and the service indicator, respectively) of the SUPL protocol to use. The default is 1.0.0. If FullVersion is defined, Version field is ignored.</Description>
+                  <Description>Optional. Determines the full version (X.Y.Z where X, Y, and Z are the major version, the minor version, and the service indicator, respectively) of the SUPL protocol to use. The default is 1.0.0. If FullVersion is defined, Version field is ignored.</Description>
                   <DFFormat>
                     <chr />
                   </DFFormat>
