@@ -341,7 +341,15 @@ The default value is an empty string. For more information, see [ServicesAllowed
 
 <!--/Description-->
 <!--/Policy-->
+<hr/>
+Footnotes:
 
+- 1 - Added in Windows 10, version 1607.
+- 2 - Added in Windows 10, version 1703.
+- 3 - Added in Windows 10, version 1709.
+- 4 - Added in Windows 10, version 1803.
+- 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.
 <!--/Policies-->
 
 <!--StartHoloLens2-->
@@ -483,12 +491,3 @@ Disabling file transfer shall have the following effects
 - Fsquirt shall display error message informing user of policy preventing file transfer
 - 3rd-party apps shall not be permitted to send or receive files using MSFT Bluetooth API
 
-<hr/>
-Footnotes:
-
-- 1 - Added in Windows 10, version 1607.
-- 2 - Added in Windows 10, version 1703.
-- 3 - Added in Windows 10, version 1709.
-- 4 - Added in Windows 10, version 1803.
-- 5 - Added in Windows 10, version 1809.
-- 6 - Added in Windows 10, version 1903.

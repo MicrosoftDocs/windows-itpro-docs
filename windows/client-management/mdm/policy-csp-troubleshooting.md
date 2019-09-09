@@ -127,8 +127,6 @@ ADMX Info:<br/>-   GP English name: <em>Troubleshooting: Allow users to access r
 
 <!--/Validation-->
 <!--/Policy-->
-
-<!--/Policies-->
 <hr/>
 
 Footnotes:
@@ -139,3 +137,4 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+<!--/Policies-->
