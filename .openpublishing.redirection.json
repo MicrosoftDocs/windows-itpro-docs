@@ -6098,7 +6098,7 @@
 {
     "source_path": "devices/hololens/hololens-clicker.md",
     "redirect_url": "/hololens/hololens1-clicker",
-    "redirect_document_id": true
+    "redirect_document_id": false
 },
 {
     "source_path": "devices/hololens/hololens-clicker-restart-recover.md",
@@ -6128,12 +6128,12 @@
 {
     "source_path": "devices/hololens/hololens-get-apps.md",
     "redirect_url": "/hololens/holographic-store-apps",
-    "redirect_document_id": true
+    "redirect_document_id": false
 },
 {
     "source_path": "devices/hololens/hololens-install-apps.md",
     "redirect_url": "/hololens/holographic-store-apps",
-    "redirect_document_id": true
+    "redirect_document_id": false
 },
 {
     "source_path": "devices/hololens/hololens-use-apps.md",
