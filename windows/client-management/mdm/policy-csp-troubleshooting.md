@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Troubleshooting
 description: Policy CSP - Troubleshooting
-ms.author: dansimp
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -127,6 +127,8 @@ ADMX Info:<br/>-   GP English name: <em>Troubleshooting: Allow users to access r
 
 <!--/Validation-->
 <!--/Policy-->
+
+<!--/Policies-->
 <hr/>
 
 Footnotes:
@@ -137,4 +139,3 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
-<!--/Policies-->
