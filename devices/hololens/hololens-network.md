@@ -39,7 +39,7 @@ HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio. Connecting HoloLens to a 
 
 ![HoloLens Wi-Fi settings](./images/wifi-hololens-600px.jpg)
 
-1. [Bloom](hololens-use-gestures.md#the-bloom-gesture) to the **Start** menu.
+1. Open the **Start** menu.
 1. Select the Settings app from **Start** or from the **All Apps** list on the right of the **Start** menu. The Settings app will be auto-placed in front of you.
 1. Select **Network & Internet**.
 1. Make sure Wi-Fi is turned on.
@@ -48,20 +48,20 @@ HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio. Connecting HoloLens to a 
 
 You can also confirm you are connected to a Wi-Fi network by checking the Wi-Fi status in the **Start** menu:
 
-1. [Bloom](hololens-use-gestures.md#the-bloom-gesture) to bring up the **Start** menu.
+1. Open the **Start** menu.
 2. Look at the top left of the **Start** menu for Wi-Fi status. The state of Wi-Fi and the SSID of the connected network will be shown.
 
 ## Disabling Wi-Fi on HoloLens (1st gen)
 
 ### Using the Settings app on HoloLens
 
-1. [Bloom](hololens-use-gestures.md#the-bloom-gesture) to the **Start** menu.
+1. Open the **Start** menu.
 1. Select the **Settings** app from **Start** or from the **All Apps** list on the right of the **Start** menu. The **Settings** app will be auto-placed in front of you.
 1. Select **Network & Internet**.
 1. Select the Wi-Fi slider switch to move it to the **Off** position. This will turn off the RF components of the Wi-Fi radio and disable all Wi-Fi functionality on HoloLens.
 
     > [!WARNING]
-    > When the Wi-Fi radio is disabled, HoloLens will not be able to automatically load your [spaces](hololens-environment-considerations.md#wi-fi-fingerprint-considerations).
+    > When the Wi-Fi radio is disabled, HoloLens will not be able to automatically load your [spaces](hololens-spaces.md).
 
 1. Move the slider switch to the **On** position to turn on the Wi-Fi radio and restore Wi-Fi functionality on Microsoft HoloLens. The selected Wi-Fi radio state (**On** or **Off**) will persist across reboots.
 
@@ -69,7 +69,7 @@ You can also confirm you are connected to a Wi-Fi network by checking the Wi-Fi 
 
 ### Using the Settings app
 
-1. [Bloom](hololens-use-gestures.md#the-bloom-gesture) to the **Start** menu.
+1. Open the **Start** menu.
 1. Select the **Settings** app from **Start** or from the **All Apps** list on the right of the **Start** menu. The **Settings** app will be auto-placed in front of you.
 1. Select **Network & Internet**.
 1. Scroll down to beneath the list of available Wi-Fi networks and select **Hardware properties**.

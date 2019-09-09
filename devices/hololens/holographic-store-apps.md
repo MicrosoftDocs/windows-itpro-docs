@@ -33,7 +33,7 @@ Open the Microsoft Store from the Start menu. Then browse for apps and games (or
 
 To download apps, you'll need to be signed in with a Microsoft account. To buy them, you'll need a payment method associated with the Microsoft account you use on your HoloLens. To set up a payment method, go to [account.microsoft.com](http://account.microsoft.com/) and select **Payment & billing** > **Payment options** > **Add a payment option**.
 
-1. Perform a [bloom](hololens-use-gestures.md#the-bloom-gesture) gesture to open the [**Start** menu](holographic-home.md#use-the-start-menu).
+1. Perform a [bloom](hololens1-basic-usage.md) gesture to open the [**Start** menu](holographic-home.md).
 2. Select the Store app and then tap to place this tile into your world.
 3. Once the Store app opens, use the search bar to look for any desired application.
 4. Select **Get** or **Install** on the application's page (a purchase may be required).

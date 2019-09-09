@@ -24,7 +24,6 @@
 ## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
 
 # User management and access management
-## [Accounts on HoloLens](hololens-accounts.md)
 ## [Sharing a HoloLens with many people](hololens-multiple-users.md)
 ## [Set up HoloLens as a kiosk (single application access)](hololens-kiosk.md)
 ## [Set up limited application access](hololens-kiosk.md)
@@ -48,12 +47,12 @@
 
 # Hologram optics and placement in space
 ## [Tips for viewing clear Holograms](hololens-calibration.md)
-## [Environment considerations for HoloLens](hololens-environment-considerations.md)
 ## [Spatial mapping on HoloLens](hololens-spaces.md)
 
 # Recovery and troubleshooting
 ## [Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md)
 ## [Restart, reset, or recover the HoloLens](hololens-restart-recover.md)
 
+# [Give us feednack](hololens-feedback.md)
 # [Insider preview for Microsoft HoloLens](hololens-insider.md)
 # [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
