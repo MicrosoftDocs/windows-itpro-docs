@@ -22,13 +22,14 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
->[!Note]
+>[!NOTE]
 > Currently this API is supported only for AppOnly context requests. (See [Get access with application context](exposed-apis-create-app-webapp.md) for more information)
 
 
 - Submits or Updates new [Indicator](ti-indicator.md) entity.
 
-
+>[!NOTE]
+>There is a limit of 5000 indicators per tenant. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
