@@ -948,4 +948,3 @@ Footnotes:
 
 - [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
 <!--EndHoloLens-->
-
