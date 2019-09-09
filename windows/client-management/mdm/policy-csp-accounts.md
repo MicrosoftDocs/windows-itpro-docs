@@ -223,5 +223,3 @@ Footnotes:
 
 - [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
 <!--EndHoloLens-->
-
-<hr/>
