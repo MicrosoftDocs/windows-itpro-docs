@@ -20,16 +20,14 @@ ms.topic: article
 
 **Applies to:**
 
-- Windows Server 2008 R2 SP1 (pre-release)
+- Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
 - Windows Server, 2019
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configserver-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
 
 Microsoft Defender ATP extends support to also include the Windows Server operating system, providing advanced attack detection and investigation capabilities, seamlessly through the Microsoft Defender Security Center console.
@@ -66,7 +64,7 @@ You'll need to take the following steps if you choose to onboard servers through
 - For Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
     - Install the [February monthly update rollup](https://support.microsoft.com/en-us/help/4074598/windows-7-update-kb4074598)
     - Install the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/en-us/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
-    - Install either [.NET framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+    - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
 
 - For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.

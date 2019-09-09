@@ -23,7 +23,7 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-mgt-apis-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-mgt-apis-abovefoldlink)
 
 Microsoft Defender ATP supports a wide variety of options to ensure that customers can easily adopt the platform. 
 
@@ -52,7 +52,6 @@ An important aspect of machine management is the ability to analyze the environm
 Topic | Description 
 :---|:---
 Understand threat intelligence concepts | Learn about alert definitions, indicators of compromise, and other threat intelligence concepts.
-Supported Microsoft Defender ATP APIs | Learn more about the individual supported entities where you can run API calls to and details such as HTTP request values, request headers and expected responses.
 Managed security service provider | Get a quick overview on managed security service provider support.
 
 

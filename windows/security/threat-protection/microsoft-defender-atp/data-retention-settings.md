@@ -26,7 +26,7 @@ ms.date: 04/24/2018
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
 
 During the onboarding process, a wizard takes you through the general settings of Microsoft Defender ATP. After onboarding, you might want to update the data retention settings.
 

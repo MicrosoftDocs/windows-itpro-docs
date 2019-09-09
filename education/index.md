@@ -26,7 +26,7 @@ ms.prod: w10
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-us/education/itdm/default.aspx" target="_blank">
+                                <a href="https://www.microsoft.com/education/itdm/default.aspx" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

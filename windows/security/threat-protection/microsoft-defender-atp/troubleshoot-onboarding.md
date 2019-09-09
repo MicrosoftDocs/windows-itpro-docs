@@ -302,10 +302,10 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 - Windows 10 Education E5
 - Microsoft 365 Enterprise E5 which includes Windows 10 Enterprise E5
 
-For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
+For more information, see [Windows 10 Licensing](https://www.microsoft.com/Licensing/product-licensing/windows10.aspx#tab=2).
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootonboarding-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootonboarding-belowfoldlink)
 
 
 ## Related topics

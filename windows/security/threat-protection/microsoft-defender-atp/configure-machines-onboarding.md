@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 Each onboarded machine adds an additional endpoint detection and response (EDR) sensor and increases visibility over breach activity in your network. Onboarding also ensures that a machine can be checked for vulnerable components as well security configuration issues and can receive critical remediation actions during attacks.
 
@@ -44,32 +44,22 @@ The **Onboarding** card provides a high-level overview of your onboarding rate b
 
 Microsoft Defender ATP provides several convenient options for [onboarding Windows 10 machines](onboard-configure.md). For Intune-managed machines, however, you can leverage Intune profiles to conveniently deploy the Microsoft Defender ATP sensor to select machines, effectively onboarding these devices to the service.
 
-From the **Onboarding** card, select **Onboard more machines** to create and assign a profile on Intune. The link takes you to a similar overview of your onboarding state.
+From the **Onboarding** card, select **Onboard more machines** to create and assign a profile on Intune. The link takes you to the device compliance page on Intune, which provides a similar overview of your onboarding state.
+
+![Microsoft Defender ATP device compliance page on Intune device management](images/secconmgmt_onboarding_1deviceconfprofile.png)<br>
+   *Microsoft Defender ATP device compliance page on Intune device management*
 
 >[!TIP]
 >Alternatively, you can navigate to the Microsoft Defender ATP onboarding compliance page in the [Microsoft Azure portal](https://portal.azure.com/) from **All services > Intune > Device compliance > Microsoft Defender ATP**.
 
-From the overview, create a configuration profile specifically for the deployment of the Microsoft Defender ATP sensor and assign that profile to the machines you want to onboard.
+From the device compliance page, create a configuration profile specifically for the deployment of the Microsoft Defender ATP sensor and assign that profile to the machines you want to onboard. To do this, you can either:
 
-1. Select **Create a device configuration profile to configure ATP sensor**.
+- Select **Create a device configuration profile to configure ATP sensor** to start with a predefined device configuration profile.
+- Create the device configuration profile from scratch.
 
-   ![Microsoft Defender ATP device compliance page on Intune device management](images/secconmgmt_onboarding_1deviceconfprofile.png)<br>
-   *Microsoft Defender ATP device compliance page on Intune device management*
+For more information, [read about using Intune device configuration profiles to onboard machines to Microsoft Defender ATP](https://docs.microsoft.com/en-us/intune/advanced-threat-protection#onboard-devices-by-using-a-configuration-profile).
 
-2. Specify a name for the profile, specify desired configuration options for sample sharing and reporting frequency, and select **Create** to save the new profile.
-
-   ![Configuration profile creation screen on Intune](images/secconmgmt_onboarding_2deviceconfprofile.png)<br>
-   *Configuration profile creation*
-
-3. After creating the profile, assign it to all your machines. You can review profiles and their deployment status anytime by accessing **Device configuration > Profiles** on Intune.
-
-   ![Profile assignment screen on Intune](images/secconmgmt_onboarding_3assignprofile.png)<br>
-   *Assigning the new profile to all machines*
-
->[!TIP]
->To learn more about Intune profiles, read about [assigning user and device profiles](https://docs.microsoft.com/intune/device-profile-assign).
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 # Related topics
 - [Ensure your machines are configured properly](configure-machines.md)

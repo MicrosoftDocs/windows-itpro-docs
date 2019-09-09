@@ -398,7 +398,6 @@
 ####### [Get domain related alerts](microsoft-defender-atp/get-domain-related-alerts.md)
 ####### [Get domain related machines](microsoft-defender-atp/get-domain-related-machines.md)
 ####### [Get domain statistics](microsoft-defender-atp/get-domain-statistics.md)
-####### [Is domain seen in organization (Deprecated)](microsoft-defender-atp/is-domain-seen-in-org.md)
 
 ###### [File]()
 ####### [File methods and properties](microsoft-defender-atp/files.md)
@@ -409,9 +408,7 @@
 
 ###### [IP]()
 ####### [Get IP related alerts](microsoft-defender-atp/get-ip-related-alerts.md)
-####### [Get IP related machines (Deprecated)](microsoft-defender-atp/get-ip-related-machines.md)
 ####### [Get IP statistics](microsoft-defender-atp/get-ip-statistics.md)
-####### [Is IP seen in organization (Deprecated)](microsoft-defender-atp/is-ip-seen-org.md)
 
 ###### [User]()
 ####### [User methods](microsoft-defender-atp/user.md)
@@ -432,7 +429,6 @@
 ##### [Get CVE-KB map](microsoft-defender-atp/get-cvekbmap-collection.md)
 
 #### [API for custom alerts (Deprecated)]()
-##### [Enable the custom threat intelligence application (Deprecated)](microsoft-defender-atp/enable-custom-ti.md)
 ##### [Use the threat intelligence API to create custom alerts (Deprecated)](microsoft-defender-atp/use-custom-ti.md)
 ##### [Create custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/custom-ti-api.md)
 ##### [PowerShell code examples (Deprecated)](microsoft-defender-atp/powershell-example-code.md)
@@ -440,13 +436,13 @@
 ##### [Experiment with custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/experiment-custom-ti.md)
 ##### [Troubleshoot custom threat intelligence issues (Deprecated)](microsoft-defender-atp/troubleshoot-custom-ti.md)
 
-#### [Pull alerts to your SIEM tools]()
-##### [Learn about different ways to pull alerts](microsoft-defender-atp/configure-siem.md)
+#### [Pull detections to your SIEM tools]()
+##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
 ##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
-##### [Configure Splunk to pull alerts](microsoft-defender-atp/configure-splunk.md)
-##### [Configure HP ArcSight to pull alerts](microsoft-defender-atp/configure-arcsight.md)
-##### [Microsoft Defender ATP SIEM alert API fields](microsoft-defender-atp/api-portal-mapping.md)
-##### [Pull alerts using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
+##### [Configure Splunk to pull detections](microsoft-defender-atp/configure-splunk.md)
+##### [Configure HP ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
+##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
+##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
 
 #### [Reporting]()
@@ -501,7 +497,6 @@
   
 #### [Rules]()
 ##### [Manage suppression rules](microsoft-defender-atp/manage-suppression-rules.md)
-##### [Manage automation allowed/blocked lists](microsoft-defender-atp/manage-automation-allowed-blocked-list.md)
 ##### [Manage indicators](microsoft-defender-atp/manage-indicators.md)
 ##### [Manage automation file uploads](microsoft-defender-atp/manage-automation-file-uploads.md)
 ##### [Manage automation folder exclusions](microsoft-defender-atp/manage-automation-folder-exclusions.md)

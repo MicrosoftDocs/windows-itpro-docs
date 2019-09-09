@@ -29,13 +29,13 @@ Deployment instructions are provided for the following scenarios:
 - VMs must be running Windows 10 Pro, version 1703 (also known as the Creator's Update) or later.
 - VMs must be Active Directory-joined or Azure Active Directory (AAD)-joined.
 - VMs must be generation 1.
-- VMs must hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
+- VMs must hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx) (QMTH).
 
 ## Activation
 
 ### Scenario 1
 - The VM is running Windows 10, version 1803 or later.
-- The VM is hosted in Azure or another [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
+- The VM is hosted in Azure or another [Qualified Multitenant Hoster](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx) (QMTH).
 
     When a user with VDA rights signs in to the VM using their AAD credentials, the VM is automatically stepped-up to Enterprise and activated. There is no need to perform Windows 10 Pro activation. This eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
 
@@ -45,7 +45,7 @@ Deployment instructions are provided for the following scenarios:
     [Inherited Activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation#inherited-activation) is enabled. All VMs created by a user with a Windows 10 E3 or E5 license are automatically activated independent of whether a user signs in with a local account or using an Azure Active Directory account.
 
 ### Scenario 3
-- The VM is running Windows 10, version 1703 or 1709, or the hoster is not an authorized [QMTH](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) partner.
+- The VM is running Windows 10, version 1703 or 1709, or the hoster is not an authorized [QMTH](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx) partner.
 
     In this scenario, the underlying Windows 10 Pro license must be activated prior to Subscription Activation of Windows 10 Enterprise. Activation is accomplished using a Windows 10 Pro Generic Volume License Key (GVLK) and a Volume License KMS activation server provided by the hoster. Alternatively, a KMS activation server on your corporate network can be used if you have configured a private connection, such as [ExpressRoute](https://azure.microsoft.com/services/expressroute/) or [VPN Gateway](https://azure.microsoft.com/services/vpn-gateway/).
 

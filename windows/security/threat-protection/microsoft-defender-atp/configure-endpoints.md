@@ -45,4 +45,4 @@ Topic | Description
 [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi.md) | Learn how to use the configuration package to configure VDI machines.
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpoints-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpoints-belowfoldlink)

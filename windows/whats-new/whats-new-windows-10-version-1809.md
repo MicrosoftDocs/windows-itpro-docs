@@ -1,14 +1,14 @@
 ---
 title: What's new in Windows 10, version 1809
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
 description: New and updated features in Windows 10, version 1809
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 October 2018 Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
+manager: laurawi
+ms.author: greglin
 ms.localizationpriority: high
 ms.topic: article
 ---
@@ -159,6 +159,15 @@ Windows Defender ATP now adds support for Windows Server 2019. You'll be able to
 
 - [Onboard previous versions of Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<br>
 Onboard supported versions of Windows machines so that they can send sensor data to the Windows Defender ATP sensor
+
+## Cloud Clipboard
+
+Cloud clipboard helps users copy content between devices. It also manages the clipboard histroy so that you can paste your old copied data. You can access it by using **Windows+V**. Set up Cloud clipboard:
+
+1. Go to **Windows Settings** and select **Systems**.
+2. On the left menu, click on **Clipboard**.
+3. Turn on **Clipboard history**.
+4. Turn on **Sync across devices**. Chose whether or not to automatically sync copied text across your devices.
 
 ## Kiosk setup experience
 

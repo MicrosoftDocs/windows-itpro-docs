@@ -76,7 +76,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-By default, the domain members submit a password change every 30 days. If you increase this interval significantly, or set it to 0 so that the computers no longer submit a password change, an attacker has more time to undertake a brute-force attack to guess the password of one or more computer accounts.
+By default, the domain members submit a password change every 30 days. If you increase this interval significantly so that the computers no longer submit a password change, an attacker has more time to undertake a brute-force attack to guess the password of one or more computer accounts.
 
 ### Countermeasure
 

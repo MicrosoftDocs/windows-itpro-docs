@@ -346,7 +346,7 @@ This process will recreate both the local and network locations for AppData and 
 
 In an App-V Full Infrastructure, after applications are sequenced they are managed and published to users or computers through the App-V Management and Publishing servers. This section details the operations that occur during the common App-V application lifecycle operations (Add, publishing, launch, upgrade, and removal) and the file and registry locations that are changed and modified from the App-V Client perspective. The App-V Client operations are input as PowerShell commands on the computer running the App-V Client.
 
-This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Configuration Manager 2012, see [Integrating Virtual Application Management with App-V 5 and Configuration Manager 2012 SP1](https://www.microsoft.com/en-us/download/details.aspx?id=38177).
+This document focuses on App-V Full Infrastructure solutions. For specific information on App-V Integration with Configuration Manager 2012, see [Integrating Virtual Application Management with App-V 5 and Configuration Manager 2012 SP1](https://www.microsoft.com/download/details.aspx?id=38177).
 
 The App-V application lifecycle tasks are triggered at user sign in (default), machine startup, or as background timed operations. The settings for the App-V Client operations, including Publishing Servers, refresh intervals, package script enablement, and others, are configured (after the client is enabled) with Windows PowerShell commands. See [App-V Client Configuration Settings: Windows PowerShell](appv-client-configuration-settings.md#app-v-client-configuration-settings-windows-powershell).
 
@@ -799,7 +799,7 @@ App-V packages contain the Manifest file inside of the App-V Package file, which
 
 ### Examples of dynamic configuration files
 
-The following example shows the combination of the Manifest, Deployment Configuration, and User Configuration files after publishing and during normal operation. These examples are abbreviated examples of each of the files. The purpose is show the combination of the files only, not to be a complete description of the specific categories available in each file. For more information, download the [App-V Sequencing Guide](https://www.microsoft.com/en-us/download/details.aspx?id=27760).
+The following example shows the combination of the Manifest, Deployment Configuration, and User Configuration files after publishing and during normal operation. These examples are abbreviated examples of each of the files. The purpose is show the combination of the files only, not to be a complete description of the specific categories available in each file. For more information, download the [App-V Sequencing Guide](https://www.microsoft.com/download/details.aspx?id=27760).
 
 #### Manifest
 
