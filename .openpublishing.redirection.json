@@ -6103,7 +6103,7 @@
 {
     "source_path": "devices/hololens/hololens-clicker-restart-recover.md",
     "redirect_url": "/hololens/hololens1-clicker",
-    "redirect_document_id": true
+    "redirect_document_id": false
 },
 {
     "source_path": "devices/hololens/hololens-upgrade-enterprise.md",
