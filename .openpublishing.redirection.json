@@ -636,11 +636,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-automation-allowed-blocked-list.md",
-"redirect_url": "windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
-"redirect_document_id": false
-},
-{
 "source_path": "windows/security/threat-protection/device-guard/optional-create-a-code-signing-certificate-for-windows-defender-application-control.md",
 "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/create-code-signing-cert-for-windows-defender-application-control",
 "redirect_document_id": true
@@ -15195,60 +15190,58 @@
 },
 {
 "source_path": "education/get-started/change-history-ms-edu-get-started.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy",
 "redirect_document_id": true
 },
 {
 "source_path": "education/get-started/get-started-with-microsoft-education.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/microsoft-store-for-education",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy/microsoft-store-for-education",
 "redirect_document_id": false
 },
 {
 "source_path": "education/get-started/configure-microsoft-store-for-education.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/microsoft-store-for-education",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy/microsoft-store-for-education",
 "redirect_document_id": false
 },
 {
 "source_path": "education/get-started/enable-microsoft-teams.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/set-up-teams-for-education",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy/set-up-teams-for-education",
 "redirect_document_id": false
 },
 {
 "source_path": "education/get-started/finish-setup-and-other-tasks.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy",
 "redirect_document_id": false
 },
 {
 "source_path": "education/get-started/inclusive-classroom-it-admin.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy",
 "redirect_document_id": false
 },
 {
 "source_path": "education/get-started/set-up-office365-edu-tenant.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/create-your-office-365-tenant",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy/create-your-office-365-tenant",
 "redirect_document_id": false
 },
 {
 "source_path": "education/get-started/set-up-windows-10-education-devices.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/set-up-windows-10-education-devices",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy/set-up-windows-10-education-devices",
 "redirect_document_id": false
 },
 {
 "source_path": "education/get-started/set-up-windows-education-devices.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/set-up-windows-10-education-devices",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy/set-up-windows-10-education-devices",
 "redirect_document_id": false
 },
 {
 "source_path": "education/get-started/use-intune-for-education.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/use-intune-for-education",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy/use-intune-for-education",
 "redirect_document_id": false
 },
 {
 "source_path": "education/get-started/use-school-data-sync.md",
-"redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/education/deploy/school-data-sync",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy/school-data-sync",
 "redirect_document_id": false
 }
 ]
 }
-
-
