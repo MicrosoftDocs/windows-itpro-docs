@@ -23,7 +23,7 @@ Just like the Windows PC experience starts with an empty desktop, Windows Mixed 
 
 The **Start** menu on HoloLens is where you'll open apps and get to the HoloLens camera.
 
-Wherever you are in HoloLens, you can always open the **Start** menu by using the [bloom gesture](hololens1-basic-usage.md#navigate-windows-holographic) on HoloLens (1st gen) or [tapping your wrist](hololens2-basic-usage.md#navigate-windows-holographic) on HoloLens 2. Usually, you'll use it once to get to **Start**, but sometimes you might need to use it twice.
+Wherever you are in HoloLens, you can always open the **Start** menu by using the [bloom gesture](hololens1-basic-usage.md) on HoloLens (1st gen) or [tapping your wrist](hololens2-basic-usage.md#navigate-windows-holographic) on HoloLens 2. Usually, you'll use it once to get to **Start**, but sometimes you might need to use it twice.
 
 > [!TIP]
 > When the **Start** menu is open, use the start gesture to hide it again.
@@ -49,14 +49,15 @@ You'll find your apps either pinned to **Start** or in the **All apps** list. To
 
 On **Start** or in the **All apps** list, select an app. It will open in a good position for viewing.
 
->[!NOTE]
->- Up to three 2D app windows can be active at a time. You can open more, but only three will remain active.
->- Each open app can have one active window at a time, except Microsoft Edge, which can have up to three.
->- If you're having problems with apps, make sure there's enough light in your space, and walk around so HoloLens has a current scan. If you keep having trouble, see [HoloLens and holograms: FAQ](https://support.microsoft.com/help/13456/hololens-and-holograms-faq) for more info.
+> [!NOTE]
+>
+> - Up to three 2D app windows can be active at a time. You can open more, but only three will remain active.
+> - Each open app can have one active window at a time, except Microsoft Edge, which can have up to three.
+> - If you're having problems with apps, make sure there's enough light in your space, and walk around so HoloLens has a current scan. 
 
 ## Move, resize, and rotate apps
 
-Moving and resizing apps on HoloLens works a bit differently than it does on a PC. Instead of dragging the app, you'll use your gaze, along with a [gesture](https://support.microsoft.com/help/12644/hololens-use-gestures) or the [clicker](hololens-clicker.md). You can also rotate an app window in 3D space.
+Moving and resizing apps on HoloLens works a bit differently than it does on a PC. Instead of dragging the app, you'll use your gaze, along with gestures or the [clicker](hololens1-clicker.md). You can also rotate an app window in 3D space.
 
 > [!TIP]
 > Rearrange apps using your voice&mdash;gaze at an app and say "Face me," "Bigger," or "Smaller." Or have Cortana move an app for you: say "Hey Cortana, move &lt;*app name*&gt; here."
@@ -66,7 +67,6 @@ Moving and resizing apps on HoloLens works a bit differently than it does on a P
 Gaze at the app, and then do one of the following.
 
 - Tap and hold to select the app. Move your hand to position the app, and raise your finger to place it.
-
 - Select **Adjust**,&nbsp;tap and hold, and move your hand to position the app. Raise your finger to place it, then select **Done**.
 - Select **Adjust**, click and hold the clicker, and move your hand to position the app. Release the clicker, then select **Done**.
 
@@ -106,4 +106,4 @@ If you’re using HoloLens and having trouble placing holograms, here are some t
 - Make sure you’re in a well-lit room without a lot of direct sunlight.
 - Stand 1 to 3 meters from where you’re trying to place the hologram.
 - Don’t place holograms on black or reflective surfaces.
-- Walk around so HoloLens can rescan your surroundings.
+- Walk around so HoloLens can scan your surroundings.

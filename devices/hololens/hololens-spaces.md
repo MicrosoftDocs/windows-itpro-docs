@@ -117,5 +117,4 @@ HoloLens will visually compare the current scanning data from the sensors to loc
 
 ## Related topics
 
-- [Environment considerations for HoloLens](hololens-environment-considerations)
 - [Spatial mapping design](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-design)

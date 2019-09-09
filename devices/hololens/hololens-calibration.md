@@ -60,7 +60,7 @@ If you followed all guidelines and calibration is still failing, you can disable
 
 ### Launching the Calibration app from Settings
 
-1. Use Start gesture to get to the [**Start** menu](holographic-mixed-reality-modern-workplace.md#navigate-the-windows-mixed-reality-home).
+1. Use Start gesture to get to the [**Start** menu](holographic-home.md).
 1. Select **All Apps** to view all apps if the Settings app isn't pinned to **Start**.
 1. Launch Settings.
 1. Navigate to **System** > **Calibration** > **Eye Calibration** and select **Run eye calibration**.
@@ -95,7 +95,7 @@ Calibration can be performed any time through the Calibration app. The Calibrati
 
 **Launching the app from Start**
 
-1. Use [bloom](hololens-use-gestures.md#the-bloom-gesture) to get to the [**Start** menu](holographic-mixed-reality-modern-workplace.md#navigate-the-windows-mixed-reality-home).
+1. Use [bloom](hololens1-basic-usage.md) to get to the **Start** menu.
 1. Select **+** to view all apps.
 1. Launch **Calibration**.
 
@@ -105,7 +105,7 @@ Calibration can be performed any time through the Calibration app. The Calibrati
 
 **Launching the app from Settings**
 
-1. Use [bloom](hololens-use-gestures.md#the-bloom-gesture) to get to the [**Start** menu](holographic-mixed-reality-modern-workplace.md#navigate-the-windows-mixed-reality-home).
+1. Use [bloom](hololens1-basic-usage.md) to get to the **Start** menu.
 1. If **Settings** isn't pinned to **Start**, select **+** to view all apps.
 1. Launch **Settings**.
 1. Navigate to **System** > **Utilities** and select **Open Calibration**.

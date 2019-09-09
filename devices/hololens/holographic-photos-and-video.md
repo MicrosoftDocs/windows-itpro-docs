@@ -25,13 +25,11 @@ To sync your photos and videos to OneDrive, open the OneDrive app and select **S
 
 ## Take a photo on HoloLens (1st gen)
 
-Use the [bloom gesture](hololens-use-gestures.md#the-bloom-gesture) to go to **Start**, and then select the Photos app.
-
-![Animation that shows the bloom gesture](./images/hololens-bloom.gif)
+Use the open the **Start** menu, and then select the Photos app.
 
 Use gaze to position the photo frame, then air tap to take the picture. The picture will be saved to your collection in the Photos app.</p>
 
-Want to snap a quick picture? Press the [volume up and volume down buttons](hololens-hardware.md#hololens-components) at the same time.
+Want to snap a quick picture? Press the [volume up and volume down buttons](hololens1-hardware.md#hololens-components) at the same time.
 
 ## Take a video on HoloLens (1st gen)
 

@@ -178,7 +178,7 @@ You can also move your hands closer and further away from your body to rotate th
 
 ### Follow me, stay there
 
-
+Generally, holograms and apps stay where you placed them.  That's not always convenient if you need to move around and want an application to stay visible.  Select "follow me" in the top right corner of applications (next to the close button) to ask apps to follow or unfollow.
 
 ## Help! I can’t see or place holograms
 
@@ -196,7 +196,5 @@ Congratulations! you're ready to use HoloLens 2.
 Now you can configure your HoloLens 2 to meet your specific needs.
 
 [Connect bluetooth devices](hololens-connect-devices.md)
-
-[Discover holographic apps and services](holographic-mixed-reality-modern-workplace.md)
 
 [Learn more about Voice and Cortana](hololens-cortana.md)

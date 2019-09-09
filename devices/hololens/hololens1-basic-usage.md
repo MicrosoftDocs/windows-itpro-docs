@@ -27,19 +27,38 @@ On HoloLens, holograms blend with your physical environment to look and sound li
 
 The holographic frame positions your holograms where your eyes are most sensitive to detail, and the see-through lenses leave your peripheral vision unobscured. With spatial sound, you can pinpoint a hologram even if it’s behind you. And because HoloLens learns and understands your environment, you can place holograms on and around real objects—and so can your apps and games. So a character in a game might sit down on your sofa, or [space robots could bust out of your walls](https://www.microsoft.com/store/apps/9nblggh5fv3j).
 
-## Using gaze, gesture, voice
+## Use HoloLens with your hands
 
-Instead of pointing, clicking, or tapping, you'll use your gaze, your [voice](hololens-cortana.md), and gestures to select apps and holograms and to get around HoloLens.
+Getting around HoloLens is a lot like using your smart phone. You can use your hands to manipulate holographic windows, menus, and buttons.  Instead of pointing, clicking, or tapping, you'll use your gaze, your [voice](hololens-cortana.md), and gestures to select apps and holograms and to get around HoloLens.
+
+Once you know these basic interactions, getting around on HoloLens will be a snap.
 
 We'll walk you through the basics the first time you use your HoloLens. You'll also find a gesture tutorial on your Start menu—look for the Learn Gestures app.
 
+### The hand-tracking frame
+
+HoloLens has sensors that can see a few feet to either side of you. When you use your hands, you'll need to keep them inside that frame, or HoloLens won't see them. As you move around, the frame moves with you.  
+
+![Image that shows the HoloLens hand-tracking frame](./images/hololens-2-gesture-frame.png)
+
 ### Open the Start menu with bloom
 
+To open the start menu:
+
+1. Hold your hand in front of you so it's in the gesture frame.
+1. Bloom: bring all of your fingers together then open your hand.
+
+![Animation that shows the bloom gesture](./images/hololens-bloom.gif)
+
 ### Select holograms with gaze and air tap
+
+To select an app or other hologram, air tap it while looking directly at the hologram you're selecting. To do this, follow these steps:
 
 1. Gaze at the hologram you want to select.
 1. Point your index finger straight up toward the ceiling.
 1. Air tap: lower your finger, then quickly raise it.
+
+    ![Air-tap gesture animation](./images/hololens-air-tap.gif)
 
 ### Select a hologram by using your voice
 
@@ -81,27 +100,15 @@ If you’re using HoloLens and having trouble placing holograms, here are some t
 
 ## Meet the HoloLens (1st gen) Clicker
 
-The [HoloLens (1st Gen) clicker](hololens-clicker.md) gives you another way to interact with holograms. [Pair it](hololens-connect-devices.md) with your HoloLens and then use it along with your gaze to select, scroll, and more.
+The [HoloLens (1st Gen) clicker](hololens1-clicker.md) gives you another way to interact with holograms. [Pair it](hololens-connect-devices.md) with your HoloLens and then use it along with your gaze to select, scroll, and more.
 Learn to navigate around HoloLens (1st gen).
-
-## Using gaze, gesture, voice
-
-Instead of pointing, clicking, or tapping, you'll use your gaze, your [voice](hololens-cortana.md), and  to select apps and holograms and to get around HoloLens. We'll walk you through the basics the first time you use your HoloLens. You'll also find a gesture tutorial on your Start menu—look for the Learn Gestures app.
-
-### Select holograms using gaze and gestures
-
-1. Gaze at the hologram you want to select.
-1. Point your index finger straight up toward the ceiling.
-1. Air tap: lower your finger, then quickly raise it.
-
-[Getting around HoloLens](https://support.microsoft.com/en-us/hub/4338666/hololens-help)
-
-[Use gestures](https://support.microsoft.com/en-us/help/12644)
-
-[Calibration](https://docs.microsoft.com/en-us/windows/mixed-reality/calibration)
 
 ## Next Steps
 
-### Connect bluetooth devices
+Congratulations! you're ready to use HoloLens (1st gen).
 
-### Explore holographic apps and services
+Now you can configure your HoloLens (1st gen) to meet your specific needs.
+
+[Connect bluetooth devices](hololens-connect-devices.md)
+
+[Learn more about Voice and Cortana](hololens-cortana.md)
