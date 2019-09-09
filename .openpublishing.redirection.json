@@ -822,7 +822,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/enable-controlled-folders-exploit-guard",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/enable-controlled-folders",
 "redirect_document_id": true
 },
 {
