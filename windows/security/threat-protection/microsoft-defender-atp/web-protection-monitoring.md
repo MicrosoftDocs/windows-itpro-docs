@@ -55,5 +55,5 @@ Clicking on a specific web threat category in the **Web threat protection summar
 Selecting a domain opens a panel that shows the list of URLs in that domain that have been accessed. The panel also lists machines that have attempted to access URLs in the domain.
 
 ## Related topics
-- [Web protection overview](web-threat-protection-overview.md)
-- [Respond to web threats](web-threat-protection-response.md)
+- [Web protection overview](web-protection-overview.md)
+- [Respond to web threats](web-protection-response.md)

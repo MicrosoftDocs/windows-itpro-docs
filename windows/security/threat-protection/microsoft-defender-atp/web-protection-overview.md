@@ -48,5 +48,5 @@ To turn on network protection on your machines:
 ## In this section
 Topic | Description
 :---|:---
-[Monitor web security](web-threat-protection-monitoring.md) | Monitor attempts to access malicious and unwanted websites. 
-[Respond to web threats](web-threat-protection-response.md) | Investigate and manage alerts related to malicious and unwanted websites. Understand how end users are notified whenever a web threat is blocked.
+[Monitor web security](web-protection-monitoring.md) | Monitor attempts to access malicious and unwanted websites. 
+[Respond to web threats](web-protection-response.md) | Investigate and manage alerts related to malicious and unwanted websites. Understand how end users are notified whenever a web threat is blocked.

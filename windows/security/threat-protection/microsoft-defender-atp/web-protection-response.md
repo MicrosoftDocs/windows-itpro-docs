@@ -40,7 +40,7 @@ Each alert provides the following information:
 ![Image of an alert related to web threat protection](images/wtp-alert.png)
 
 >[!Note]
->To reduce the volume of alerts, Microsoft Defender ATP consolidates web threat detections for the same domain on the same machine each day to a single alert. Only one alert is generated and counted into the [web protection report](web-threat-protection-monitoring.md).
+>To reduce the volume of alerts, Microsoft Defender ATP consolidates web threat detections for the same domain on the same machine each day to a single alert. Only one alert is generated and counted into the [web protection report](web-protection-monitoring.md).
 
 ## Inspect website details
 You can dive deeper by selecting the URL or domain of the website in the alert. This opens a page about that particular URL or domain with various information, including:
@@ -68,5 +68,5 @@ With web protection in Microsoft Defender ATP, your end users will be prevented 
 *Web threat blocked by the Chrome web browser*
 
 ## Related topics
-- [Web protection overview](web-threat-protection-overview.md)
-- [Monitor web security](web-threat-protection-monitoring.md)
+- [Web protection overview](web-protection-overview.md)
+- [Monitor web security](web-protection-monitoring.md)
