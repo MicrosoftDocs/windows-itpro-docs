@@ -10,30 +10,40 @@ author: scooley
 ms.author: scooley
 ms.topic: article
 ms.localizationpriority: medium
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
 ---
 
 # Navigate the Windows Mixed Reality home
 
-## [Navigating MR Home](https://docs.microsoft.com/en-us/windows/mixed-reality/navigating-the-windows-mixed-reality-home)
+Just like the Windows PC experience starts with an empty desktop, Windows Mixed Reality starts with your physical surroundings as your holographic home. You can use the Start menu anywhere to open and place apps and content in your space, filling your home with mixed reality content and multitask by using multiple apps at the same time. The things you place in your home stay there, even if you restart your device.
 
 ## Use the Start menu
 
 The **Start** menu on HoloLens is where you'll open apps and get to the HoloLens camera.
 
-Wherever you are in HoloLens, you can always open the **Start** menu by using the [bloom gesture](https://support.microsoft.com/help/12644/hololens-use-gestures) on HoloLens (1st gen) or tapping your wrist on HoloLens 2. Usually, you'll use it once to get to **Start**, but sometimes you might need to use it twice.
+Wherever you are in HoloLens, you can always open the **Start** menu by using the [bloom gesture](hololens1-basic-usage.md#navigate-windows-holographic) on HoloLens (1st gen) or [tapping your wrist](hololens2-basic-usage.md#navigate-windows-holographic) on HoloLens 2. Usually, you'll use it once to get to **Start**, but sometimes you might need to use it twice.
 
 > [!TIP]
 > When the **Start** menu is open, use the start gesture to hide it again.
 
-At the top of the **Start** menu, you'll see status indicators for Wi-Fi, battery, and volume, plus a clock. The tiles are your pinned apps. To talk to Cortana, select her tile, or just say "Hey Cortana" from anywhere on HoloLens. At the bottom you'll find the photo and video icons, which open the camera app.
+The **Start** menu has all of your holographic applications but it is also a great place for common tasks and status.  You'll see indicators for Wi-Fi, battery, and volume, plus a clock. The tiles are your pinned apps.
 
-To see the rest of your apps, select **All apps**. To get back to **Start** from the **All apps** list, select **Pinned apps**.
+To talk to Cortana, select her tile, or just say "Hey Cortana" from anywhere on HoloLens. At the bottom you'll find the photo and video icons, which open the camera app.
 
-## Use apps on HoloLens
+Read more about [voice commands and Cortana](hololens-cortana.md).
+
+## Find the All apps list on HoloLens
+
+1. On **Start**, select **All apps**.
+1. Scroll down the list to see all your apps.
+
+To get back to **Start** from the **All apps** list, select **Pinned apps**.
+
+## Open apps on HoloLens
 
 Apps on HoloLens use either 2D view or holographic view. Apps with 2D view look like windows, and apps with holographic view surround you and become the only app you see.
-
-### Open apps
 
 You'll find your apps either pinned to **Start** or in the **All apps** list. To get to the **All apps** list, use the bloom gesture to go to **Start**, then select **All apps**.
 
@@ -88,3 +98,12 @@ To close an app that uses holographic view, use the bloom gesture to leave holog
 ## Pin apps
 
 Keep your favorite apps handy by pinning them to **Start**. In the **All apps** list, gaze at an app to highlight it. Tap and hold until the menu appears, then select **Pin**. To unpin an app, gaze at the app on **Start**, then tap and hold and select **Unpin**.
+
+## Help! I can’t place holograms on HoloLens
+
+If you’re using HoloLens and having trouble placing holograms, here are some things to try:
+
+- Make sure you’re in a well-lit room without a lot of direct sunlight.
+- Stand 1 to 3 meters from where you’re trying to place the hologram.
+- Don’t place holograms on black or reflective surfaces.
+- Walk around so HoloLens can rescan your surroundings.

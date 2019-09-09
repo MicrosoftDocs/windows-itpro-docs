@@ -6096,6 +6096,51 @@
 "redirect_document_id": true
 },
 {
+    "source_path": "devices/hololens/hololens-clicker.md",
+    "redirect_url": "devices/hololens/hololens1-clicker.md",
+    "redirect_document_id": true
+},
+{
+    "source_path": "devices/hololens/hololens-clicker-restart-recover.md",
+    "redirect_url": "devices/hololens/hololens1-clicker.md",
+    "redirect_document_id": true
+},
+{
+    "source_path": "devices/hololens/hololens-upgrade-enterprise.md",
+    "redirect_url": "devices/hololens/hololens1-upgrade-enterprise.md",
+    "redirect_document_id": true
+},
+{
+    "source_path": "devices/hololens/hololens-setup.md",
+    "redirect_url": "devices/hololens/hololens1-setup.md",
+    "redirect_document_id": true
+},
+{
+    "source_path": "devices/hololens/hololens-install-localized.md",
+    "redirect_url": "devices/hololens/hololens1-install-localized.md",
+    "redirect_document_id": true
+},
+{
+    "source_path": "devices/hololens/hololens-spaces-on-hololens.md",
+    "redirect_url": "devices/hololens/hololens-spaces.md",
+    "redirect_document_id": true
+},
+{
+    "source_path": "devices/hololens/hololens-get-apps.md",
+    "redirect_url": "devices/hololens/holographic-store-apps.md",
+    "redirect_document_id": true
+},
+{
+    "source_path": "devices/hololens/hololens-install-apps.md",
+    "redirect_url": "devices/hololens/holographic-store-apps.md",
+    "redirect_document_id": true
+},
+{
+    "source_path": "devices/hololens/hololens-use-apps.md",
+    "redirect_url": "devices/hololens/holographic-home.md",
+    "redirect_document_id": true
+},
+{
 "source_path": "devices/surface-hub/provisioning-packages-for-certificates-surface-hub.md",
 "redirect_url": "/surface-hub/provisioning-packages-for-surface-hub",
 "redirect_document_id": true
