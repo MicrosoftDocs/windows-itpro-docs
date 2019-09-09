@@ -4,7 +4,7 @@ description: The Assign seat operation assigns seat for a specified user in the 
 ms.assetid: B42BF490-35C9-405C-B5D6-0D9F0E377552
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

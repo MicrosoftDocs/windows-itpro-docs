@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 07/10/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ---
 # How to create a package accelerator

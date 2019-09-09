@@ -4,7 +4,7 @@ description: This topic for the IT professional describes the Advanced Security 
 ms.assetid: ddc0abef-ac7f-4849-b90d-66700470ccd6
 ms.reviewer: 
 manager: dansimp
-ms.author: dolmont
+ms.author: dansimp
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy

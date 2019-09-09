@@ -1,7 +1,7 @@
 ---
 title: BitLocker DDF file
 description: BitLocker DDF file
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

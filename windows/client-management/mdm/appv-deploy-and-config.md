@@ -1,7 +1,7 @@
 ---
 title: Deploy and configure App-V apps using MDM
 description: Deploy and configure App-V apps using MDM
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

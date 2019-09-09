@@ -12,7 +12,7 @@ author: dulcemontemayor
 ms.date: 07/27/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dolmont
+ms.author: dansimp
 ---
 
 # WannaCrypt ransomware worm targets out-of-date systems

@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: article
-ms.author: tracyp
+ms.author: dansimp
 author: msfttracyp
 ms.localizationpriority: medium
 ms.date: 04/26/2018

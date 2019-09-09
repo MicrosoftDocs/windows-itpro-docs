@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Troubleshooting
 description: Policy CSP - Troubleshooting
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

@@ -4,7 +4,7 @@ description: This topic provides information on how Microsoft products and crypt
 ms.prod: w10
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
