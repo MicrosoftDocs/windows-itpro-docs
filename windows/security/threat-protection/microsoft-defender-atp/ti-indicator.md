@@ -28,7 +28,9 @@ Method|Return Type |Description
 [Submit Indicator](post-ti-indicator.md) | [Indicator](ti-indicator.md) | Submits [Indicator](ti-indicator.md) entity.
 [Delete Indicator](delete-ti-indicator-by-id.md) | No Content | Deletes [Indicator](ti-indicator.md) entity.
 
-- See the corresponding [page](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) in the portal: 
+- See the corresponding [page](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) in the portal. 
+
+For more information on creating indicators, see [Manage indicators](manage-indicators.md).
 
 # Properties
 Property |	Type	|	Description
