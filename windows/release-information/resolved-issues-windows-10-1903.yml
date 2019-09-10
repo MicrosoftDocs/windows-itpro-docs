@@ -32,6 +32,7 @@ sections:
   - type: markdown
     text: "
       <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Date resolved</td></tr>
+      <tr><td><div id='681msg'></div><b>Windows Desktop Search may not return any results and may have high CPU usage</b><br>Windows Desktop Search may not return any results and SearchUI.exe may have high CPU usage after installing KB4512941.<br><br><a href = '#681msgdesc'>See details ></a></td><td>OS Build 18362.329<br><br>August 30, 2019<br><a href ='https://support.microsoft.com/help/4512941' target='_blank'>KB4512941</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4515384' target='_blank'>KB4515384</a></td><td>September 10, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='678msg'></div><b>Domain connected devices that use MIT Kerberos realms will not start up</b><br>Devices connected to a domain that is configured to use MIT Kerberos realms will not start up or may continue to restart after updating.<br><br><a href = '#678msgdesc'>See details ></a></td><td>OS Build 18362.145<br><br>May 29, 2019<br><a href ='https://support.microsoft.com/help/4497935' target='_blank'>KB4497935</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4512941' target='_blank'>KB4512941</a></td><td>August 30, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='677msg'></div><b>Issues updating when certain versions of Intel storage drivers are installed</b><br>Certain versions of Intel Rapid Storage Technology (Intel RST) drivers may cause updating to Windows 10, version 1903 to fail.<br><br><a href = '#677msgdesc'>See details ></a></td><td>OS Build 18362.145<br><br>May 29, 2019<br><a href ='https://support.microsoft.com/help/4497935' target='_blank'>KB4497935</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4512941' target='_blank'>KB4512941</a></td><td>August 30, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='671msg'></div><b>Apps using Visual Basic 6 (VB6), VBA, and VBScript may stop responding with error</b><br>Applications that were made using Visual Basic 6 (VB6), macros using Visual Basic for Applications (VBA), and VBScript may stop responding and you may receive an error.<br><br><a href = '#671msgdesc'>See details ></a></td><td>OS Build 18362.295<br><br>August 13, 2019<br><a href ='https://support.microsoft.com/help/4512508' target='_blank'>KB4512508</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4512941' target='_blank'>KB4512941</a></td><td>August 30, 2019 <br>10:00 AM PT</td></tr>
@@ -59,6 +60,15 @@ sections:
         <div>
         </div> 
       "
+- title: September 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='681msgdesc'></div><b>Windows Desktop Search may not return any results and may have high CPU usage</b><div>Microsoft is getting reports that a small number of users may not receive results when using Windows Desktop Search and may see high CPU usage from SearchUI.exe when searching after installing <a href='https://support.microsoft.com/help/4512941' target='_blank'>KB4512941</a>. This issue is only encountered on devices in which searching the web from Windows Desktop Search has been&nbsp;disabled.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1903</li></ul><div></div><div><strong>Resolution:</strong>&nbsp;This issue was resolved in <a href='https://support.microsoft.com/help/4515384' target='_blank'>KB4515384</a>.</div><br><a href ='#681msg'>Back to top</a></td><td>OS Build 18362.329<br><br>August 30, 2019<br><a href ='https://support.microsoft.com/help/4512941' target='_blank'>KB4512941</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4515384' target='_blank'>KB4515384</a></td><td>Resolved:<br>September 10, 2019 <br>10:00 AM PT<br><br>Opened:<br>September 04, 2019 <br>02:25 PM PT</td></tr>
+      </table>
+      "
+
 - title: August 2019
 - items:
   - type: markdown
