@@ -40,7 +40,7 @@ Added in Windows 10, version 1803. When set to 0, it enables proxy configuration
 
 Supported operations are Add, Get, Replace, and Delete.
 
-> [!Note]  
+> [!Note]
 > Per user proxy configuration setting is not supported using a configuration file, only modifying registry settings on a local machine.
 
 <a href="" id="autodetect"></a>**AutoDetect**  
