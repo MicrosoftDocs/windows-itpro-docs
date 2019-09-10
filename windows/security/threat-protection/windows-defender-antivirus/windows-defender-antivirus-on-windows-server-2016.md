@@ -124,7 +124,6 @@ sc query Windefend
 
 The `sc query` command returns information about the Windows Defender service. If Windows Defender is running, the `STATE` value displays `RUNNING`.
 
-
 ## Update antimalware Security intelligence 
 
 In order to get updated antimalware Security intelligence , you must have the Windows Update service running. If you use an update management service, like Windows Server Update Services (WSUS), make sure that updates for Windows Defender Antivirus Security intelligence are approved for the computers you manage.
@@ -160,33 +159,29 @@ The following table lists the services for Windows Defender and the dependent se
 |Windows Defender Firewall (MpsSvc)|C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork|We recommend leaving the Windows Defender Firewall service enabled.|
 |Windows Update (Wuauserv)|C:\WINDOWS\system32\svchost.exe -k netsvcs|Windows Update is needed to get Security intelligence updates and antimalware engine updates|
 
-
-
-<a name="BKMK_DefSamples"></a>
 ## Submit Samples
+
 Sample submission allows Microsoft to collect samples of potentially malicious software. To help provide continued and up-to-date protection, Microsoft researchers use these samples to analyze suspicious activities and produce updated antimalware Security intelligence.
 
 We collect program executable files, such as .exe files and .dll files. We do not collect files that contain personal data, like Microsoft Word documents and PDF files.
 
 ### Enable automatic sample submission
 
--   To enable automatic sample submission, start a Windows PowerShell console as an administrator, and set the **SubmitSamplesConsent** value data according to one of the following settings:
+To enable automatic sample submission, start a Windows PowerShell console as an administrator, and set the **SubmitSamplesConsent** value data according to one of the following settings:
 
-    -   **0** Always prompt. The Windows Defender service prompts you to confirm submission of all required files. This is the default setting for Windows Defender, but is not recommended for Windows Server 2016 installations without a GUI.
+-   **0** Always prompt. The Windows Defender service prompts you to confirm submission of all required files. This is the default setting for Windows Defender, but is not recommended for Windows Server 2016 installations without a GUI.
 
-    -   **1** Send safe samples automatically. The Windows Defender service sends all files marked as "safe" and prompts for the remainder of the files.
+-   **1** Send safe samples automatically. The Windows Defender service sends all files marked as "safe" and prompts for the remainder of the files.
 
-    -   **2** Never send. The Windows Defender service does not prompt and does not send any files.
+-   **2** Never send. The Windows Defender service does not prompt and does not send any files.
 
-    -   **3** Send all samples automatically. The Windows Defender service sends all files without a prompt for confirmation.
+-   **3** Send all samples automatically. The Windows Defender service sends all files without a prompt for confirmation.
 
-<a name="BKMK_DefExclusions"></a>
 ## Configure automatic exclusions
+
 To help ensure security and performance, certain exclusions are automatically added based on the roles and features you install when using Windows Defender AV on Server 2016.
 
 See the [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md) topic for more information. 
-
-
 
 ## Related topics
 
