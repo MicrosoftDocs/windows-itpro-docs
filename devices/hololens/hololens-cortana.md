@@ -24,7 +24,7 @@ You can use your voice to do many of the same things you do with gestures on Hol
 
 Get around HoloLens faster with these basic commands.  If you turn Cortana off, "Hey Cortana" voice commands won't be available, but you'll still be able to use the following built-in voice commands.
 
-> [!NOTES]
+> [!NOTE]
 >
 > - Speech is only supported in some languages. [Learn more](https://support.microsoft.com/en-us/help/4039262#Languages).
 > - Regardless of the language you choose for the keyboard, the speech language is always based on the Windows display language. You can verify the Windows display language in **Settings** > **Time and Language** > **Language**.

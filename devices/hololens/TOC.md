@@ -53,6 +53,6 @@
 ## [Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md)
 ## [Restart, reset, or recover the HoloLens](hololens-restart-recover.md)
 
-# [Give us feednack](hololens-feedback.md)
+# [Give us feedback](hololens-feedback.md)
 # [Insider preview for Microsoft HoloLens](hololens-insider.md)
 # [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
