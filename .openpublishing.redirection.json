@@ -822,7 +822,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/enable-controlled-folders-exploit-guard",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/enable-controlled-folders",
 "redirect_document_id": true
 },
 {
@@ -1334,6 +1334,11 @@
 "source_path": "windows/security/threat-protection/windows-defender-atp/enable-custom-ti-windows-defender-advanced-threat-protection.md",
 "redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/enable-custom-ti",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/enable-custom-ti.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/enable-security-analytics-windows-defender-advanced-threat-protection.md",
