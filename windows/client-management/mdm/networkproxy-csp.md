@@ -54,7 +54,7 @@ Valid values:
 
 The data type is integer. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
 
-<a href="" id="setupscripturl"></a>**SetupScriptUrl**  
+<a href="" id="setupscripturl"></a>**SetupScriptUrl**
 Address to the PAC script you want to use.
 
 The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
