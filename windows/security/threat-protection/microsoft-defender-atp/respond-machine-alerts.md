@@ -35,6 +35,7 @@ Response actions run along the top of a specific machine page and include:
 - Run antivirus scan
 - Restrict app execution
 - Isolate machine
+- Consult a threat expert
 - Action center
 
 ![Image of response actions](images/response-actions.png)
