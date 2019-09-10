@@ -2,48 +2,67 @@
 title:  Upgrading from MBAM 2.5 to MBAM 2.5 SP1 Servicing Release Update
 author: TobyTu 
 ms.author: ksharma
-manager: dcscontentpm
+manager: 
 audience: ITPro  
 ms.topic: article  
-ms.prod: mbam
+ms.prod: w10
+manager: miaposto
 localization_priority: Normal
 --- 
 
-# Upgrading from MBAM 2.5 to MBAM 2.5 SP1 Servicing Release Update
+# Upgrade from MBAM 2.5 to MBAM 2.5 SP1 Servicing Release Update
 
-This article provides step-by-step instructions for upgrading Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 to MBAM 2.5 SP1 along with Microsoft Desktop Optimization Pack (MDOP) July 2018 Servicing update in a stand-alone configuration. In this guide we will use a two-server configuration. One of the two servers will be a database server that's running Microsoft SQL Server 2016. This server will host the MBAM databases and reports. The additional server will be a Windows Server 2012 R2 web server and will host "Administration and Monitoring Server" and "Self-Service Portal."
+This article provides step-by-step instructions to upgrade Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 to MBAM 2.5 Service Pack 1 (SP1) together with the Microsoft Desktop Optimization Pack (MDOP) July 2018 servicing update in a standalone configuration.
 
-## Preparation steps before you upgrade MBAM 2.5 SP1 server
+In this guide, we will use a two-server configuration. One server will be a database server that's running Microsoft SQL Server 2016. This server will host the MBAM databases and reports. The other server will be a Windows Server 2012 R2 web server. This server will host "Administration and Monitoring" and "Self-Service Portal."
 
-### Know the MBAM Servers in your environment
+## Prepare to upgrade MBAM 2.5 SP1
 
-1. SQL Server Database Engine: Server Hosting the MBAM Databases.
-2. SQL Server Reporting Services: Server Hosting the MBAM Reports.
-3. Internet Information Services (IIS) Web Servers: Server Hosting MBAM Web Applications and Services.
-4. (Optional) Microsoft System Center Configuration Manager (SCCM) Primary Site Server: MBAM Configuration Application is run on this server to integrate MBAM Repots with SCCM which are then merged with existing SCCM reports on the SCCM’s SQL Server Reporting Services (SSRS) instance.
+### Know the MBAM servers in your environment
 
-### Identify Service Accounts, Groups, Server Name and Reports URL
+1. SQL Server Database Engine: Server that hosts the MBAM databases.
+2. SQL Server Reporting Services: Server that hosts the MBAM reports.
+3. Internet Information Services (IIS) web servers: Server that hosts MBAM Web Applications and MBAM services.
+4. (Optional) Microsoft System Center Configuration Manager primary site server: The MBAM configuration application is run on this server to integrate MBAM reports with Configuration Manager. These reports are then merged with existing Configuration Manager reports on the Configuration Manager SQL Server Reporting Services (SSRS) instance.
 
-1. Identify the MBAM App Pool Svc Account used by IIS web servers to Read and Write Data to MBAM Databases.
-2. Identify the Groups used during MBAM Web Features Configuration and the Reports Web Service URL.
-3. Identify the SQL Server Name and Instance Name.
+### Identify service accounts, groups, server name, and reports URL
+
+1. Identify the MBAM application pool service account that's used by IIS web servers to read and write data to MBAM databases.
+2. Identify the groups that are used during the MBAM web features configuration and the reports web service URL.
+3. Identify the SQL Server name and instance name. Watch this video to learn more.
+
     > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3ANP1]
-4. Identify the SQL Server Reporting Services Account used for reading compliance data from Compliance and Audit Database.
+
+4. Identify the SQL Server Reporting Services Account that's used for reading compliance data from the Compliance and Audit database. Watch this video to learn more.
+
     > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3ALdZ]
 
-## Upgrade the MBAM Infrastructure to the latest version available
+## Upgrade the MBAM infrastructure to the latest version available
+
+MBAM Server infrastructure installation or upgrade is always performed in the order listed below:
+
+- SQL Server Database Engine: Databases
+- SQL Server Reporting Services: Reports
+- Web Server: Web Applications
+- SCCM Server: SCCM Integrated Reports if applicable
+- Clients: MBAM Agent or Client Update
+- Group Policy Templates: Update the existing Group Policy with new templates and enable new settings on existing MBAM Group Policy
 
 > [!NOTE]
-> We recommend that you take a full database backup of the MBAM Databases before performing upgrades.
+> We recommend that you create a full database backup of the MBAM databases before you run the upgrades.
 
 ### Upgrade the MBAM SQL Server
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3ALew]
+Watch this video to learn how to upgrade the MBAM SQL Server:
 
-### Upgrade MBAM Web Server
+   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3ALew]
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3ALex]
+### Upgrade the MBAM Web Server
+
+Watch this video to learn how to upgrade the MBAM Web Server:
+
+   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3ALex]
 
 ## More information
 
-For more about MBAM 2.5 SP1 known issues, please refer [Release Notes for MBAM 2.5 SP1](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/release-notes-for-mbam-25-sp1).
+For more information about known issues in MBAM 2.5 SP1, see [Release Notes for MBAM 2.5 SP1](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/release-notes-for-mbam-25-sp1).

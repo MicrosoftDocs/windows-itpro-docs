@@ -55,7 +55,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 > If controlled folder access is configured with Group Policy, PowerShell, or MDM CSPs, the state will change in the Windows Security app after a restart of the device.
 > If the feature is set to **Audit mode** with any of those tools, the Windows Security app will show the state as **Off**.
 
->If you are protecting user profile data, we recommend that the user profile should be on the default Windows installation drive.
+> If you are protecting user profile data, we recommend that the user profile should be on the default Windows installation drive.
 
 ## Intune
 
@@ -63,7 +63,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 1. Click **Device configuration** > **Profiles** > **Create profile**.
 1. Name the profile, choose **Windows 10 and later** and **Endpoint protection**.
    ![Create endpoint protection profile](../images/create-endpoint-protection-profile.png)
-1. Click **Configure** > **Windows Defender Exploit Guard** > **Network filtering** > **Enable**.
+1. Click **Configure** > **Windows Defender Exploit Guard** > **Controlled folder access** > **Enable**.
 1. Type the path to each application that has access to protected folders and the path to any additional folder that needs protection and click **Add**.
 
    ![Enable controlled folder access in Intune](../images/enable-cfa-intune.png)

@@ -35,7 +35,8 @@ Here’s an example to set AssignedAccess configuration:
 $nameSpaceName="root\cimv2\mdm\dmmap"
 $className="MDM_AssignedAccess"
 $obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
-$obj.Configuration = @"
+Add-Type -AssemblyName System.Web
+$obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
   <Profiles>
@@ -84,7 +85,7 @@ $obj.Configuration = @"
     </Config>
   </Configs>
 </AssignedAccessConfiguration>
-"@
+"@)
 
 Set-CimInstance -CimInstance $obj
 ```
