@@ -67,7 +67,8 @@ Machines with similar tags can be handy when you need to apply contextual action
 Use the following registry key entry to add a tag on a machine:
 
 - Registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
-- Registry key value (string): Group
+- Registry key name: `Group`
+- Registry key value (REG_SZ): `Name of the tag you want to set`
 
 >[!NOTE]
 >The device tag is part of the machine information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new machine information report.

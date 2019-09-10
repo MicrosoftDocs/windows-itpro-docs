@@ -16,7 +16,7 @@ ms.topic: article
 
 # How does Windows Update work?
 
->Applies to: Windows 10
+> Applies to: Windows 10
 
 The Windows Update workflow has four core areas of functionality: 
 
@@ -35,7 +35,7 @@ The Windows Update workflow has four core areas of functionality:
 
 
 ### Install
-1. Orchestrator initates the installation.
+1. Orchestrator initiates the installation.
 2. The arbiter calls the installer to install the package.
 
 
@@ -96,8 +96,8 @@ When users start scanning in Windows Update through the Settings panel, the foll
    ![Windows Update scan log 2](images/update-scan-log-2.png)
 - Common service IDs 
 
-   >[!IMPORTANT]
-   >ServiceId here identifies a client abstraction, not any specific service in the cloud. No assumption should be made of which server a serviceId is pointing to, it's totally controlled by the SLS responses. 
+   > [!IMPORTANT]
+   > ServiceId here identifies a client abstraction, not any specific service in the cloud. No assumption should be made of which server a serviceId is pointing to, it's totally controlled by the SLS responses. 
  
 |Service|ServiceId|
 |-------|---------| 
@@ -116,8 +116,8 @@ Common update failure is caused due to network issues. To find the root of the i
 - "SOAP faults" can be either client- or server-side issues; read the message. 
 - The WU client uses SLS (Service Locator Service) to discover the configurations and endpoints of Microsoft network update sources – WU, MU, Flighting. 
 
-   >[!NOTE]
-   >Warning messages for SLS can be ignored if the search is against WSUS/SCCM. 
+   > [!NOTE]
+   > Warning messages for SLS can be ignored if the search is against WSUS/SCCM. 
 
 - On sites that only use WSUS/SCCM, the SLS may be blocked at the firewall. In this case the SLS request will fail, and can’t scan against Windows Update or Microsoft Update but can still scan against WSUS/SCCM, since it’s locally configured.
    ![Windows Update scan log 3](images/update-scan-log-3.png)

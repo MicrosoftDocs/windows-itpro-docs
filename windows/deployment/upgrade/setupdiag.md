@@ -213,7 +213,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 8. CompatBlockedApplicationAutoUninstall – BEBA5BC6-6150-413E-8ACE-5E1EC8D34DD5
     - This rule indicates there is an application that needs to be uninstalled before setup can continue.
 9. CompatBlockedApplicationDismissable - EA52620B-E6A0-4BBC-882E-0686605736D9
-    - When running setup in /quiet mode, there are dismissible application messages that turn into blocks unless the command line also specifies “/compat /ignore warning”.  This rule indicates setup was executed in /quiet mode but there is an application dismissible block message that have prevented setup from continuing.
+    - When running setup in /quiet mode, there are dismissible application messages that turn into blocks unless the command line also specifies “/compat ignorewarning”.  This rule indicates setup was executed in /quiet mode but there is an application dismissible block message that have prevented setup from continuing.
 10. CompatBlockedApplicationManualUninstall - 9E912E5F-25A5-4FC0-BEC1-CA0EA5432FF4
     - This rule indicates that an application without an Add/Remove Programs entry, is present on the system and blocking setup from continuing.  This typically requires manual removal of the files associated with this application to continue.
 11. HardblockDeviceOrDriver - ED3AEFA1-F3E2-4F33-8A21-184ADF215B1B

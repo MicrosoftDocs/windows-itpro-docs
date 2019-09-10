@@ -113,7 +113,7 @@ You can do this by using either the Control Panel or the Deployment Image Servic
 You can also enable Windows Defender Credential Guard by using the [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v3.5.ps1 -Enable -AutoReboot
+DG_Readiness_Tool_v3.6.ps1 -Enable -AutoReboot
 ```
 > [!IMPORTANT]
 > When running the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSArch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
@@ -136,7 +136,7 @@ You can view System Information to check that Windows Defender Credential Guard 
 You can also check that Windows Defender Credential Guard is running by using the [Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v3.5.ps1 -Ready
+DG_Readiness_Tool_v3.6.ps1 -Ready
 ```
 > [!IMPORTANT]
 > When running the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool on a non-English operating system, within the script, change `*$OSArch = $(gwmi win32_operatingsystem).OSArchitecture` to be `$OSAch = $((gwmi win32_operatingsystem).OSArchitecture).tolower()` instead, in order for the tool to work. 
