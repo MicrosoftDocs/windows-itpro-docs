@@ -12,8 +12,6 @@ manager: dansimp
 ms.localizationpriority: medium
 ---
 
-# Set up and use Microsoft Whiteboard 
-
 # Set up and use Microsoft Whiteboard
 
 The Microsoft Whiteboard app includes the capability for Surface Hubs and other devices to collaborate in real time on the same board.
@@ -31,7 +29,7 @@ To use whiteboard collaboration complete the following actions:
 - You can only run collaborative sessions among users belonging to the same Office 365 tenant.
 - Office 365 Germany or Office 365 operated by 21Vianet do not support whiteboard collaboration.
 
-## Using Whiteboard collaboration
+## Collaborating with whiteboards
 
 To start a collaboration session:
 
