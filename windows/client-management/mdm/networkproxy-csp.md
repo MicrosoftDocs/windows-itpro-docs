@@ -98,7 +98,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
             <Format xmlns="syncml:metinf">int</Format>
             <Type>text/plain</Type>
         </Meta>
-		<Data>0</Data>
+        <Data>0</Data>
 	</Item>
 </Replace>
 
