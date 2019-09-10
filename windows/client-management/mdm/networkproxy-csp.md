@@ -112,7 +112,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
             <LocURI>./Vendor/MSFT/NetworkProxy/AutoDetect</LocURI>
 		</Target>
 		<Meta>
-			<Format xmlns="syncml:metinf">int</Format>
+            <Format xmlns="syncml:metinf">int</Format>
 			<Type>text/plain</Type>
 		</Meta>
 		<Data>1</Data>
