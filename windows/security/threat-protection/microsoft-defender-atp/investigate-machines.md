@@ -60,6 +60,7 @@ Response actions run along the top of a specific machine page and include:
 - Run antivirus scan
 - Restrict app execution
 - Isolate machine
+- Consult a threat expert
 - Action center
 
 You can take response actions in the Action center, in a specific machine page, or in a specific file page.
