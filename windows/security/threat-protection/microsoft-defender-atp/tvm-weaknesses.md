@@ -26,7 +26,7 @@ Threat & Vulnerability Management leverages the same signals in Microsoft Defend
 The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, corresponding breach, and threat insights. 
 
 ## Navigate through your organization's weaknesses page
-You can see the list of vulnerabilities in three ways: 
+You can see the list of vulnerabilities in four ways: 
 
 *Vulnerabilities in global search*
 1. Click the global search drop-down menu.
@@ -48,6 +48,18 @@ You can see the list of vulnerabilities in three ways:
 3. Select the **Discovered vulnerabilities** tab. 
 4. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
 
+*Discovered vulnerabilities in the machine page*
+1. Go to the left-hand navigation menu bar, then select the machine icon. The **Machines list** page opens. 
+<br>![Screenshot of Machines list page](images/tvm_machineslist.png)</br>
+2. In the **Machines list** page, select the machine that you want to investigate. 
+<br>![Screenshot of machine list with selected machine to investigate](images/tvm_machinetoinvestigate.png)</br>
+<br>A flyout pane opens with machine details and response action options.</br>
+![Screenshot of the flyout pane with machine details and response options](images/tvm_machine_page_flyout.png)
+3. In the flyout pane, select **Open machine page**. A page opens with details and response options for the machine you want to investigate. 
+<br>![Screenshot of the machine page with details and response options](images/tvm_machines_discoveredvuln.png)</br>
+4. Select **Discovered vulnerabilities**.
+5. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.
+
 ## How it works
 When new vulnerabilities are released, you would want know how many of your assets are exposed. You can see the list of vulnerabilities and the details in the **Weaknesses** page. 
 
@@ -65,6 +77,29 @@ The threat insights icons are highlighted if there are associated exploits in th
 
  >[!NOTE]
  > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon and possible active alert ![possible active alert](images/tvm_alert_icon.png) icon.  
+
+## Report inaccuracy
+
+You can report a false positive when you see any vague, inaccurate, missing, or already remediated vulnerability information in the machine page.
+
+1. Select the **Discovered vulnerabilities** tab. 
+
+2. Click **:** beside the vulnerability that you want to report about, and then select **Report inaccuracy**. 
+![Screenshot of Report inaccuracy control from the machine page in the Discovered vulnerabilities tab](images/tvm_report_inaccuracy_vuln.png)
+<br>A flyout pane opens.</br>
+![Screenshot of Report inaccuracy flyout pane](images/tvm_report_inaccuracy_vulnflyout.png)
+
+3. From the flyout pane, select the inaccuracy category from the **Discovered vulnerability inaccuracy reason** drop-down menu. 
+<br>![Screenshot of discovered vulnerability inaccuracy reason drop-down menu](images/tvm_report_inaccuracy_vulnoptions.png)</br>
+
+4. Include your email address so Microsoft can send you feedback regarding the inaccuracy you reported.
+
+5. Include your machine name for investigation context.
+
+>[!NOTE]
+> You can also provide details regarding the inaccuracy you reported in the **Tell us more (optional)** field to give the threat and vulnerability management investigators context. 
+
+6. Click **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts with its context.
 
 
 ## Related topics

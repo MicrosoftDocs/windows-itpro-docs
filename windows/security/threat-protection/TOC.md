@@ -28,10 +28,10 @@
 ##### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
 
 #### [Application control](windows-defender-application-control/windows-defender-application-control.md)
-#### [Exploit protection](windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
-#### [Network protection](windows-defender-exploit-guard/network-protection-exploit-guard.md)
-#### [Controlled folder access](windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
-#### [Attack surface reduction](windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
+#### [Exploit protection](microsoft-defender-atp/exploit-protection.md)
+#### [Network protection](microsoft-defender-atp/network-protection.md)
+#### [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
+#### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 
 ### [Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
@@ -118,20 +118,19 @@
 ##### [Understand custom detection rules](microsoft-defender-atp/overview-custom-detections.md)
 ##### [Create custom detections rules](microsoft-defender-atp/custom-detection-rules.md)
 
-#### [Management and APIs]()
-##### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
-##### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
-##### [Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
-##### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
+### [Management and APIs]()
+#### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
+#### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
+#### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
 
-#### [Integrations]()
-##### [Microsoft Defender ATP integrations](microsoft-defender-atp/threat-protection-integration.md)
-##### [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
-##### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
+### [Integrations]()
+#### [Microsoft Defender ATP integrations](microsoft-defender-atp/threat-protection-integration.md)
+#### [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
+#### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
 
-#### [Information protection in Windows overview]()
-##### [Windows integration](microsoft-defender-atp/information-protection-in-windows-overview.md)
-##### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
+### [Information protection in Windows overview]()
+#### [Windows integration](microsoft-defender-atp/information-protection-in-windows-overview.md)
+#### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
 
 ### [Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)
 
@@ -155,10 +154,10 @@
 ##### [Attack surface reduction and nex-generation evaluation overview](microsoft-defender-atp/evaluate-atp.md)
 ##### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
 ##### [Application control](windows-defender-application-control/audit-windows-defender-application-control-policies.md)
-##### [Exploit protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
-##### [Network Protection](windows-defender-exploit-guard/evaluate-network-protection.md)
-##### [Controlled folder access](windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
-##### [Attack surface reduction](windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
+##### [Exploit protection](microsoft-defender-atp/evaluate-exploit-protection.md)
+##### [Network Protection](microsoft-defender-atp/evaluate-network-protection.md)
+##### [Controlled folder access](microsoft-defender-atp/evaluate-controlled-folder-access.md)
+##### [Attack surface reduction](microsoft-defender-atp/evaluate-attack-surface-reduction.md)
 ##### [Network firewall](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 ##### [Evaluate next generation protection](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
@@ -184,20 +183,20 @@
 ###### [Code integrity](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 
 ###### [Memory integrity]()
-####### [Understand memory integrity](windows-defender-exploit-guard/memory-integrity.md)
-####### [Hardware qualifications](windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
-####### [Enable HVCI](windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)
+####### [Understand memory integrity](device-guard/memory-integrity.md)
+####### [Hardware qualifications](device-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
+####### [Enable HVCI](device-guard/enable-virtualization-based-protection-of-code-integrity.md)
 
 #### [Exploit protection]()
-##### [Enable exploit protection](windows-defender-exploit-guard/enable-exploit-protection.md)
-##### [Import/export configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
+##### [Enable exploit protection](microsoft-defender-atp/enable-exploit-protection.md)
+##### [Import/export configurations](microsoft-defender-atp/import-export-exploit-protection-emet-xml.md)
 
-#### [Network protection](windows-defender-exploit-guard/enable-network-protection.md)
-#### [Controlled folder access](windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)
+#### [Network protection](microsoft-defender-atp/enable-network-protection.md)
+#### [Controlled folder access](microsoft-defender-atp/enable-controlled-folders.md)
 
 #### [Attack surface reduction controls]()
-##### [Enable attack surface reduction rules](windows-defender-exploit-guard/enable-attack-surface-reduction.md)
-##### [Customize attack surface reduction](windows-defender-exploit-guard/customize-attack-surface-reduction.md)
+##### [Enable attack surface reduction rules](microsoft-defender-atp/enable-attack-surface-reduction.md)
+##### [Customize attack surface reduction](microsoft-defender-atp/customize-attack-surface-reduction.md)
 
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)
 
@@ -334,6 +333,8 @@
 ##### [Run a detection test on a newly onboarded machine](microsoft-defender-atp/run-detection-test.md)
 ##### [Run simulated attacks on machines](microsoft-defender-atp/attack-simulations.md)
 ##### [Configure proxy and Internet connectivity settings](microsoft-defender-atp/configure-proxy-internet.md)
+##### [Create an onboarding or offboarding notification rule](microsoft-defender-atp/onboarding-notification.md)
+
 
 ##### [Troubleshoot onboarding issues]()
 ###### [Troubleshoot issues during onboarding](microsoft-defender-atp/troubleshoot-onboarding.md)
@@ -528,8 +529,8 @@
 #### [Troubleshoot issues related to live response](microsoft-defender-atp/troubleshoot-live-response.md)
 
 ### [Troubleshoot attack surface reduction]()
-#### [Network protection](windows-defender-exploit-guard/troubleshoot-np.md)
-#### [Attack surface reduction rules](windows-defender-exploit-guard/troubleshoot-asr.md)
+#### [Network protection](microsoft-defender-atp/troubleshoot-np.md)
+#### [Attack surface reduction rules](microsoft-defender-atp/troubleshoot-asr.md)
  
 ### [Troubleshoot next generation protection](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 
