@@ -18,24 +18,26 @@ appliesto:
 
 # Use your voice with HoloLens
 
-You can use your voice to do many of the same things you do with gestures on HoloLens, like taking a quick photo or opening an app.
+You can use your voice to do almost anything on HoloLens, like taking a quick photo or opening an app.  Many voice commands are built into HoloLens, others are available through Cortana.
 
-## Voice commands with HoloLens
-
-Get around HoloLens faster with these basic commands.  If you turn Cortana off, "Hey Cortana" voice commands won't be available, but you'll still be able to use the following built-in voice commands.
+This article will teach you how to control HoloLens and your holographic world with your voice and with Cortana.
 
 > [!NOTE]
 >
-> - Speech is only supported in some languages. [Learn more](https://support.microsoft.com/en-us/help/4039262#Languages).
-> - Regardless of the language you choose for the keyboard, the speech language is always based on the Windows display language. You can verify the Windows display language in **Settings** > **Time and Language** > **Language**.
+> Speech is only supported in [some languages](https://support.microsoft.com/en-us/help/4039262#Languages).  The speech language is based on the Windows display language, not the keyboard language.  
+> You can verify the Windows display language in **Settings** > **Time and Language** > **Language**.
+
+## Built-in voice commands
+
+Get around HoloLens faster with these basic commands.  If you turn Cortana off, "Hey Cortana" voice commands won't be available, but you'll still be able to use the following built-in voice commands.
 
 ### General speech commands
 
 Use these commands throughout Windows Mixed Reality to get around faster. Some commands use the gaze cursor, which you bring up by saying “select.”
 
-| To do this | Say this |
+| Say this | To do this |
 | - | - |
-|Select | Say "select" to bring up the gaze cursor. Then, turn your head to position the cursor on the thing you want to select, and say “select” again. |
+| "Select" | Say "select" to bring up the gaze cursor. Then, turn your head to position the cursor on the thing you want to select, and say “select” again. |
 |Open the Start menu | "Go to Start" |
 |Leave an immersive app | Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home." |
 |See available speech commands | "What can I say?" |
@@ -43,25 +45,20 @@ Use these commands throughout Windows Mixed Reality to get around faster. Some c
 ### 3D object commands
 
 To use these commands, gaze at a 3D object, hologram, or app window.
-|To do this |Say this |
+
+| Say this | To do this |
 | - | - |
-|Make it bigger |"Bigger" |
-|Make it smaller |"Smaller" |
-|Turn it to face you |"Face me" |
-|Get it ready to move—it’ll follow your gaze |"Move this" |
-|Place it when you’re done moving it |"There" |
-
-**Move this**. Instead of air tapping and dragging an app, say "Move this" and use gaze to move it.
-
-**Face me**. Gaze at a hologram, and then say "Face me" to turn it your way.
-
-**Bigger/Smaller**. Gaze at a hologram, and then say "Bigger" or "Smaller" to resize it.
+| "Bigger" | Make it bigger |
+| "Smaller" | Make it smaller |
+| "Face me" | Turn it to face you |
+| "Move this" | Move it (follow your gaze) |
+| "There" | Place it when you’re done moving it |
 
 ### See it, say it
 
 Many buttons and other elements on HoloLens also respond to your voice—for example, **Adjust** and **Close** on the app bar. To find out if a button is voice-enabled, rest your gaze on it for a moment. If it is, you'll see a voice tip.
 
-## Dictation mode
+### Dictation mode
 
 Tired of typing? Switch to dictation mode any time the holographic keyboard is active. Select the microphone icon to get started, or say "Start dictating." To stop dictating, select **Done** or say "Stop dictating." To delete what you just dictated, say "Delete that."
 
@@ -110,9 +107,10 @@ Here are some things you can try saying (remember to say "Hey Cortana" first).
 - How much battery do I have left?
 - Tell me a joke.
 
->[!NOTE]
->
->- Some Cortana features you're used to from Windows on your PC or phone (for example, reminders and notifications) aren't supported in Microsoft HoloLens Development Edition. Cortana on HoloLens is English-only, and the Cortana experience may vary among regions.
->- Cortana is on the first time you use HoloLens. You can turn her off in Cortana's settings. In the **All apps** list, select **Cortana > Settings**. Then turn off Cortana can give you suggestions, ideas, reminders, alerts, and more.
->- If Cortana isn't responding to "Hey Cortana," go to Cortana's settings and check to make sure she's on.
->- If you turn Cortana off, "Hey Cortana" voice commands won't be available, but you'll still be able to use other commands (such as "Select" and "Place").
+Some Cortana features you're used to from Windows on your PC or phone (for example, reminders and notifications) aren't supported in Microsoft HoloLens Development Edition. Cortana on HoloLens is English-only, and the Cortana experience may vary among regions.
+
+### Turn Cortana off
+
+Cortana is on the first time you use HoloLens. You can turn her off in Cortana's settings. In the **All apps** list, select **Cortana > Settings**. Then turn off Cortana can give you suggestions, ideas, reminders, alerts, and more.
+
+If Cortana isn't responding to "Hey Cortana," go to Cortana's settings and check to make sure she's on.
