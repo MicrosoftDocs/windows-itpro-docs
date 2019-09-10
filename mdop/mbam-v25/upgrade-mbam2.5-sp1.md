@@ -5,7 +5,8 @@ ms.author: ksharma
 manager: 
 audience: ITPro  
 ms.topic: article  
-ms.prod: 
+ms.prod: w10
+manager: miaposto
 localization_priority: Normal
 --- 
 
