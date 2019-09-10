@@ -23,7 +23,7 @@ You can display content from your devices to Surface Hub 2S. If the source devic
 
 ## Recommended wired configurations 
 
-In general, it’s recommended to use native cable connections whenever possible such as USB-C to USB-C or HDMI to HDMI. Other combinations such as MiniDP to HDMI or MiniDP to USB-C will also work. Some configuration may be required to optimize the video-out experience; refer to the section below: [Mirroring Surface Hub 2S display on another device](#Mirroring-Surface-Hub-2S-display-on-another-device).
+In general, it’s recommended to use native cable connections whenever possible such as USB-C to USB-C or HDMI to HDMI. Other combinations such as MiniDP to HDMI or MiniDP to USB-C will also work. Some additional configuration may be required to optimize the video-out experience, as described on this page.
 
 | **Connection** | **Functionality** | **Description**|
 | --- | --- | ---|
