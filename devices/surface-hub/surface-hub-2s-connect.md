@@ -14,7 +14,7 @@ ms.localizationpriority: Medium
 ---
 
 # Connect devices to Surface Hub 2S
-Surface Hub 2S lets you connect external devices, mirror the display on Surface Hub 2S to another device, and connect a wide variety of third-party peripherals including video conference cameras, conference phones, and room system devices.
+Surface Hub 2S lets you connect external devices, mirror the display on Surface Hub 2S to another device, and connect multiple third-party peripherals including video conference cameras, conference phones, and room system devices.
 
 You can display content from your devices to Surface Hub 2S. If the source device is Windows-based, that device can also provide TouchBack and InkBack, which takes video and audio from the connected device and presents them on Surface Hub 2S. If Surface Hub 2S encounters a High-Bandwidth Digital Content Protection (HDCP) signal, such as a Blu-ray DVD player, the source is displayed as a black image.
 
