@@ -31,15 +31,15 @@ While the functionality, configuration, and management is largely the same for W
 
 This topic includes the following instructions for setting up and running Windows Defender AV on a server platform:
 
--   [Enable the interface](#BKMK_UsingDef)
+-   [Enable the interface](#enable-or-disable-the-interface-on-windows-server-2016)
 
--   [Verify Windows Defender AV is running](#BKMK_DefRun)
+-   [Verify Windows Defender AV is running](#verify-windows-defender-is-running)
 
--   [Update antimalware Security intelligence](#BKMK_UpdateDef)
+-   [Update antimalware Security intelligence](#update-antimalware-security-intelligence)
 
--   [Submit Samples](#BKMK_DefSamples)
+-   [Submit Samples](#submit-samples)
 
--   [Configure automatic exclusions](#BKMK_DefExclusions)
+-   [Configure automatic exclusions](#configure-automatic-exclusions)
 
 ## Enable or disable the interface on Windows Server 2016
 By default, Windows Defender AV is installed and functional on Windows Server 2016. The user interface is installed by default on some SKUs, but is not required.
