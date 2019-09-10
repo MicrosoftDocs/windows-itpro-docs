@@ -1,8 +1,8 @@
 ---
 title: Microsoft Threat Experts 
 ms.reviewer: 
-description: Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365. 
-keywords: managed threat hunting service, managed threat hunting, MTE, Microsoft Threat Experts
+description: Microsoft Threat Experts is the new managed detection and response (MDR) service in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365. 
+keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts
 search.product: Windows 10
 search.appverid: met150
 ms.prod: w10
@@ -23,7 +23,7 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
-Microsoft Threat Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don’t get missed.
+Microsoft Threat Experts is a managed detection and response (MDR) service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don’t get missed.
   
 This new capability provides expert-driven insights and data through targeted attack notification and access to experts on demand. 
  
