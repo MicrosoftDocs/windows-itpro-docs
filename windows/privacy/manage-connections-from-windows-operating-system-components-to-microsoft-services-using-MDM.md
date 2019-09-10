@@ -7,9 +7,11 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
+audience: ITPro
 author: medgarmedgar
 ms.author: v-medgar
-ms.date: 9/4/2019
+manager: sanashar
+ms.date: 9/10/2019
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server
