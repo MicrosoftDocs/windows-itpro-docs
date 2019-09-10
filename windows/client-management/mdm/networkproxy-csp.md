@@ -129,7 +129,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
             <LocURI>./Vendor/MSFT/NetworkProxy/SetupScriptUrl</LocURI>
 		</Target>
         <Meta>
-			<Format xmlns="syncml:metinf">chr</Format>
+            <Format xmlns="syncml:metinf">chr</Format>
 			<Type>text/plain</Type>
 		</Meta>
         <Data>Insert the proxy PAC URL location here:</Data>
