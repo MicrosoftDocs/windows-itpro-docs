@@ -133,6 +133,5 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
 		</Meta>
 		<Data>Insert the proxy PAC URL location here:</Data>
 	</Item>
-
 </Replace>
 ```xml
