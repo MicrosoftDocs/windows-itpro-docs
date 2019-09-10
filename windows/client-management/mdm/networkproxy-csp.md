@@ -100,7 +100,6 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
 		</Meta>
 		<Data>0</Data>
 	</Item>
-
 </Replace>
 
 
