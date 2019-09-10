@@ -94,7 +94,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
         <Target>
             <LocURI>./Vendor/MSFT/NetworkProxy/ProxySettingsPerUser</LocURI>
         </Target>
-		<Meta>
+        <Meta>
 			<Format xmlns="syncml:metinf">int</Format>
 			<Type>text/plain</Type>
 		</Meta>
