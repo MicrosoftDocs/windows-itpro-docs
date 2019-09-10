@@ -92,7 +92,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
     <CmdID>1</CmdID>
     <Item>
         <Target>
-			<LocURI>./Vendor/MSFT/NetworkProxy/ProxySettingsPerUser</LocURI>
+            <LocURI>./Vendor/MSFT/NetworkProxy/ProxySettingsPerUser</LocURI>
 		</Target>
 		<Meta>
 			<Format xmlns="syncml:metinf">int</Format>
