@@ -102,7 +102,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 ## Scenario
 
 ### Receive a progress report about your managed hunting inquiry 
-Response from Microsoft Threat Experts varies according to your inquiry. They will email a progress report to you about the Ask a threat expert inquiry that you've submitted, within two days, to communicate the investigation status from the following categories: 
+Response from Microsoft Threat Experts varies according to your inquiry. They will email a progress report to you about your **Consult a threat expert** inquiry within two days, to communicate the investigation status from the following categories: 
 - More information is needed to continue with the investigation 
 - A file or several file samples are needed to determine the technical context 
 - Investigation requires more time   
