@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 09/03/2018
+author: denisebmsft
+ms.author: deniseb
+ms.date: 09/10/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -41,7 +41,6 @@ This topic includes the following instructions for setting up and running Window
 
 -   [Configure automatic exclusions](#BKMK_DefExclusions)
 
-<a name="BKMK_UsingDef"></a>
 ## Enable or disable the interface on Windows Server 2016
 By default, Windows Defender AV is installed and functional on Windows Server 2016. The user interface is installed by default on some SKUs, but is not required.
 
@@ -87,7 +86,7 @@ This is useful if you have a third-party antivirus product installed on the mach
 The following PowerShell cmdlet will also uninstall Windows Defender AV on Windows Server 2016:
 
 
-```PS
+```PowerShell
 Uninstall-WindowsFeature -Name Windows-Defender
 ```
 
@@ -95,7 +94,7 @@ To install Windows Defender AV again, use the **Add Roles and Features Wizard** 
 
 You can also use the following PowerShell cmdlet to install Windows Defender AV:
 
-```PS
+```PowerShell
 Install-WindowsFeature -Name Windows-Defender
 ```
 
@@ -103,9 +102,21 @@ Install-WindowsFeature -Name Windows-Defender
 > Event messages for the antimalware engine included with Windows Defender AV can be found in [Windows Defender AV Events](troubleshoot-windows-defender-antivirus.md).
 
 
-<a name="BKMK_DefRun"></a>
 ## Verify Windows Defender is running
-To verify that Windows Defender AV is running on the server, run the following command from a command prompt: 
+
+To verify that Windows Defender AV is running on the server, run the following PowerShell cmdlet:
+
+```PowerShell
+Get-Service -Name windefend
+```
+
+To verify that firewall protection through Windows Defender is turned on, run the following PowerShell cmdlet:
+
+```PowerShell
+Get-Service -Name mpssvc
+```
+
+As an alternative to PowerShell, you can use Command Prompt to verify that Windows Defender AV is running. To do that, run the following command from a command prompt: 
 
 ```DOS
 sc query Windefend
@@ -113,8 +124,9 @@ sc query Windefend
 
 The `sc query` command returns information about the Windows Defender service. If Windows Defender is running, the `STATE` value displays `RUNNING`.
 
-<a name="BKMK_UpdateDef"></a>
+
 ## Update antimalware Security intelligence 
+
 In order to get updated antimalware Security intelligence , you must have the Windows Update service running. If you use an update management service, like Windows Server Update Services (WSUS), make sure that updates for Windows Defender Antivirus Security intelligence are approved for the computers you manage.
 
 By default, Windows Update does not download and install updates automatically on Windows Server 2016. You can change this configuration by using one of the following methods:
