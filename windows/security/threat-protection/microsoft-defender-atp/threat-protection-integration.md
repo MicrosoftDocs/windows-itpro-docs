@@ -55,7 +55,7 @@ Microsoft Cloud App Security leverages Microsoft Defender ATP endpoint signals t
 > Office 365 ATP data is displayed for events within the last 30 days. For alerts, Office 365 ATP data is displayed based on first activity time. After that, the data is no longer available in Office 365 ATP.
 
 ## Skype for Business
-The Skype for Business integration provides s a way for analysts to communicate with a potentially compromised user or device owner through ao simple button from the portal.
+The Skype for Business integration provides a way for analysts to communicate with a potentially compromised user or device owner through a simple button from the portal.
 
 
 

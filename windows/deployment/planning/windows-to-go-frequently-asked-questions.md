@@ -10,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: mobility
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -180,8 +181,8 @@ Press **Windows logo key+W** and then search for **Windows To Go startup options
 
 In the **Windows To Go Startup Options** dialog box select **Yes** and then click **Save Changes** to configure the computer to boot from USB.
 
-**Note**  
-Your IT department can use Group Policy to configure Windows To Go Startup Options in your organization.
+> [!NOTE]
+> Your IT department can use Group Policy to configure Windows To Go Startup Options in your organization.
 
  
 
@@ -400,8 +401,8 @@ You can reset the BitLocker system measurements to incorporate the new boot orde
 
 The host computer will now be able to be booted from a USB drive without triggering recovery mode.
 
-**Note**  
-The default BitLocker protection profile in Windows 8 or later does not monitor the boot order.
+> [!NOTE]
+> The default BitLocker protection profile in Windows 8 or later does not monitor the boot order.
 
  
 
@@ -412,8 +413,8 @@ Reformatting the drive erases the data on the drive, but doesn’t reconfigure t
 
 1.  Open a command prompt with full administrator permissions.
 
-    **Note**  
-    If your user account is a member of the Administrators group, but is not the Administrator account itself, then, by default, the programs that you run only have standard user permissions unless you explicitly choose to elevate them.
+    > [!NOTE]
+    > If your user account is a member of the Administrators group, but is not the Administrator account itself, then, by default, the programs that you run only have standard user permissions unless you explicitly choose to elevate them.
 
      
 

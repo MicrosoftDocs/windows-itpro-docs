@@ -24,7 +24,7 @@ ms.date: 11/20/2018
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-attacksimulations-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-attacksimulations-abovefoldlink)
 
 >[!TIP]
 >- Learn about the latest enhancements in Microsoft Defender ATP: [What's new in Microsoft Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
@@ -58,7 +58,7 @@ Read the walkthrough document provided with each attack scenario. Each document 
 > Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test machine.
 > 
 > 
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-attacksimulations-belowfoldlink)
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-attacksimulations-belowfoldlink)
 
 
 ## Related topics

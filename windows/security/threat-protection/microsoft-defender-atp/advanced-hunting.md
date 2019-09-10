@@ -20,7 +20,7 @@ ms.date: 08/15/2018
 
 # Query data using Advanced hunting in Microsoft Defender ATP
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
 
 To get you started in querying your data, you can use the Basic or Advanced query examples, which have some preloaded queries to help you understand the basic query syntax.
@@ -146,7 +146,7 @@ The filter selections will resolve as an additional query term and the results w
 Check out the [Advanced hunting repository](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). Contribute and use example queries shared by our customers. 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
 
 ## Related topic
 - [Advanced hunting reference](advanced-hunting-reference.md)

@@ -16,7 +16,7 @@ Forrester Research measures the return on investment (ROI) of Microsoft Edge in 
 ## Forrester report video summary
 View a brief overview of the Forrester TEI case study that Microsoft commissioned to examine the value your organization can achieve by utilizing Microsoft Edge: 
 
-> ![VIDEO <https://www.microsoft.com/en-us/videoplayer/embed/RE26zQm>]
+> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE26zQm>]
 
 ## Forrester Study report
 

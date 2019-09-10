@@ -10,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: mobility
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -26,8 +27,8 @@ ms.topic: article
 
 From the start, Windows To Go was designed to minimize differences between the user experience of working on a laptop and Windows To Go booted from a USB drive. Given that Windows To Go was designed as an enterprise solution, extra consideration was given to the deployment workflows that enterprises already have in place. Additionally, there has been a focus on minimizing the number of differences in deployment between Windows To Go workspaces and laptop PCs.
 
-**Note**  
-Windows To Go does not support operating system upgrades. Windows To Go is designed as a feature that is managed centrally. IT departments that plan to transition from one operating system version to a later version will need to incorporate re-imaging their existing Windows To Go drives as part of their upgrade deployment process.
+> [!NOTE]
+> Windows To Go does not support operating system upgrades. Windows To Go is designed as a feature that is managed centrally. IT departments that plan to transition from one operating system version to a later version will need to incorporate re-imaging their existing Windows To Go drives as part of their upgrade deployment process.
 
  
 
@@ -250,8 +251,8 @@ The use of the Store on Windows To Go workspaces that are running Windows 8 can
 
     This policy setting specifies whether the PC can use the hibernation sleep state (S4) when started from a Windows To Go workspace. By default, hibernation is disabled when using Windows To Go workspace, so enabling this setting explicitly turns this ability back on. When a computer enters hibernation, the contents of memory are written to disk. When the disk is resumed, it is important that the hardware attached to the system, as well as the disk itself, are unchanged. This is inherently incompatible with roaming between PC hosts. Hibernation should only be used when the Windows To Go workspace is not being used to roam between host PCs.
 
-    **Important**  
-    For the host-PC to resume correctly when hibernation is enabled the Windows To Go workspace must continue to use the same USB port.
+    > [!IMPORTANT]  
+    > For the host-PC to resume correctly when hibernation is enabled the Windows To Go workspace must continue to use the same USB port.
 
      
 
@@ -265,8 +266,8 @@ The use of the Store on Windows To Go workspaces that are running Windows 8 can
 
     This policy setting controls whether the host computer will boot to Windows To Go if a USB device containing a Windows To Go workspace is connected, and controls whether users can make changes using the **Windows To Go Startup Options** settings dialog. If you enable this policy setting, booting to Windows To Go when a USB device is connected will be enabled and users will not be able to make changes using the **Windows To Go Startup Options** settings dialog. If you disable this policy setting, booting to Windows To Go when a USB device is connected will not be enabled unless a user configures the option manually in the firmware. If you do not configure this policy setting, users who are members of the local Administrators group can enable or disable booting from USB using the **Windows To Go Startup Options** settings dialog.
 
-    **Important**  
-    Enabling this policy setting will cause PCs running Windows to attempt to boot from any USB device that is inserted into the PC before it is started.
+    > [!IMPORTANT]  
+    > Enabling this policy setting will cause PCs running Windows to attempt to boot from any USB device that is inserted into the PC before it is started.
 
      
 
@@ -275,8 +276,8 @@ The use of the Store on Windows To Go workspaces that are running Windows 8 can
 
 The biggest hurdle for a user wanting to use Windows To Go is configuring their computer to boot from USB. This is traditionally done by entering the firmware and configuring the appropriate boot order options. To ease the process of making the firmware modifications required for Windows To Go, Windows includes a feature named **Windows To Go Startup Options** that allows a user to configure their computer to boot from USB from within Windows—without ever entering their firmware, as long as their firmware supports booting from USB.
 
-**Note**  
-Enabling a system to always boot from USB first has implications that you should consider. For example, a USB device that includes malware could be booted inadvertently to compromise the system, or multiple USB drives could be plugged in to cause a boot conflict. For this reason, the Windows To Go startup options are disabled by default. In addition, administrator privileges are required to configure Windows To Go startup options.
+> [!NOTE]
+> Enabling a system to always boot from USB first has implications that you should consider. For example, a USB device that includes malware could be booted inadvertently to compromise the system, or multiple USB drives could be plugged in to cause a boot conflict. For this reason, the Windows To Go startup options are disabled by default. In addition, administrator privileges are required to configure Windows To Go startup options.
 
  
 

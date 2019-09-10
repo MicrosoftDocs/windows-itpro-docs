@@ -22,7 +22,7 @@ ms.topic: conceptual
 
 [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
 
-You can evaluate Microsoft Defender Advanced Threat Protection in your organization by [starting your free trial](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp).
+You can evaluate Microsoft Defender Advanced Threat Protection in your organization by [starting your free trial](https://www.microsoft.com/WindowsForBusiness/windows-atp).
 
 You can also evaluate the different security capabilities in Microsoft Defender ATP by using the following instructions.
 

@@ -50,7 +50,7 @@ See [Assign devices to servicing channels for Windows 10 updates](waas-servicing
 
 ## Staying up to date
 
-The process for keeping Windows 10 up to date involves deploying a feature update, at an appropriate time after its release. A variety of tools management and patching tools such as Windows Update, Windows Update for Business, Windows Server Update Services, System Center Configuration Manager, and third-party products) can be used to help with this process. [Windows Analytics Upgrade Readiness](https://www.microsoft.com/en-us/WindowsForBusiness/windows-analytics), a free tool to streamline Windows upgrade projects, is another important tool to help.
+The process for keeping Windows 10 up to date involves deploying a feature update, at an appropriate time after its release. A variety of tools management and patching tools such as Windows Update, Windows Update for Business, Windows Server Update Services, System Center Configuration Manager, and third-party products) can be used to help with this process. [Windows Analytics Upgrade Readiness](https://www.microsoft.com/WindowsForBusiness/windows-analytics), a free tool to streamline Windows upgrade projects, is another important tool to help.
 
 Because app compatibility, both for desktop apps and web apps, is outstanding with Windows 10, extensive advanced testing isn’t required. Instead, only business-critical apps need to be tested, with the remaining apps validated through a series of pilot deployment rings. Once these pilot deployments have validated most apps, broad deployment can begin.
 
