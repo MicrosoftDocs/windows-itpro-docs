@@ -33,9 +33,17 @@ These settings, located at **Computer Configuration\Administrative Templates\Net
 |Policy name|Supported versions|Description|
 |-----------|------------------|-----------|
 |Private network ranges for apps|At least Windows Server 2012, Windows 8, or Windows RT|A comma-separated list of IP address ranges that are in your corporate network. Included endpoints or endpoints that are included within a specified IP address range, are rendered using Microsoft Edge and won't be accessible from the Application Guard environment.|
-|Enterprise resource domains hosted in the cloud|At least Windows Server 2012, Windows 8, or Windows RT|A pipe-separated (\|) list of your domain cloud resources. Included endpoints are rendered using Microsoft Edge and won't be accessible from the Application Guard environment. Notes: 1) Include a full domain name in the configuration, for example **www.contoso.com**, to trust only in this literal value. 2) You may optionally use "." as a wildcard character to automatically trust subdomains on only one level of the domain hierarchy that is to the left of the dot. Configuring **".constoso.com"** will automatically trust **"local.contoso.com"**, **"shop.contoso.com"**, and all other values on the left. 3) You may optionally use ".." as a wildcard character to automatically trust subdomains on all the levels of the domain hierarchy that are to the left of the dots. Configuring **"..constoso.com"** will automatically trust **"us.shop.contoso.com"**, **"trainning.contoso.com"**, and all other values on the left. |
-|Domains categorized as both work and personal|At least Windows Server 2012, Windows 8, or Windows RT|A comma-separated list of domain names used as both work or personal resources. Included endpoints are rendered using Microsoft Edge and will be accessible from the Application Guard and regular Edge environment.|
- 
+|Enterprise resource domains hosted in the cloud|At least Windows Server 2012, Windows 8, or Windows RT|A pipe-separated (\|) list of your domain cloud resources. Included endpoints are rendered using Microsoft Edge and won't be accessible from the Application Guard environment. Note: This list supports the wildcards detailed in the [Network isolation settings wildcards](#network-isolation-settings-wildcards) table.|
+|Domains categorized as both work and personal|At least Windows Server 2012, Windows 8, or Windows RT|A comma-separated list of domain names used as both work or personal resources. Included endpoints are rendered using Microsoft Edge and will be accessible from the Application Guard and regular Edge environment. Note: This list supports the wildcards detailed in the [Network isolation settings wildcards](#network-isolation-settings-wildcards) table.|
+
+## Network isolation settings wildcards
+
+|Value|Number of dots to the left|Meaning|
+|-----|--------------------------|-------|
+|contoso.com|0|Trust only the literal value of **contoso.com**.|
+|www.contoso.com|0|Trust only the literal value of **www.contoso.com**.|
+|.contoso.com|1|Trust any domain that ends with the text **contoso.com**. Matching sites include **spearphishingcontoso.com**, **contoso.com**, and **www.contoso.com**.|
+|..contoso.com|2|Trust all levels of the domain hierarchy that are to the left of the dot. Matching sites include **shop.contoso.com**, **us.shop.contoso.com**, **www.us.shop.contoso.com**, but NOT **contoso.com** itself.|
 
 ## Application-specific settings
 These settings, located at **Computer Configuration\Administrative Templates\Windows Components\Windows Defender Application Guard**, can help you to manage your company's implementation of Application Guard.
