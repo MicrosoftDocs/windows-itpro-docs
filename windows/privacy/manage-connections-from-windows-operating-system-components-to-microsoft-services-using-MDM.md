@@ -6,7 +6,7 @@ keywords: privacy, manage connections to Microsoft, Windows 10
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: high
 author: medgarmedgar
 ms.author: v-medgar
 ms.date: 9/4/2019
