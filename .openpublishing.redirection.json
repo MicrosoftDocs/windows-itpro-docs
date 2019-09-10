@@ -626,8 +626,13 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/oldtoc.md",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-rules-in-windows-10-enterprise-e3.md",
-"redirect_url": "windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction-rules-in-windows-10-enterprise-e3",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction-rules-in-windows-10-enterprise-e3",
 "redirect_document_id": true
 },
 {
@@ -892,8 +897,8 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/evaluate-windows-defender",
-"redirect_document_id": true
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/evaluate-atp",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard.md",
@@ -912,7 +917,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard.md",
-"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/exploit-protection-exploit-guard",
+"redirect_url": "/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
 "redirect_document_id": true
 },
 {
