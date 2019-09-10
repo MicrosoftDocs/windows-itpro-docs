@@ -116,7 +116,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
 			<Type>text/plain</Type>
         </Meta>
         <Data>1</Data>
-	</Item>
+    </Item>
 
 </Replace> 
 
