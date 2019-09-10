@@ -126,7 +126,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
 	<CmdID>3</CmdID>
 	<Item>
 		<Target>
-			<LocURI>./Vendor/MSFT/NetworkProxy/SetupScriptUrl</LocURI>
+            <LocURI>./Vendor/MSFT/NetworkProxy/SetupScriptUrl</LocURI>
 		</Target>
 		<Meta>
 			<Format xmlns="syncml:metinf">chr</Format>
