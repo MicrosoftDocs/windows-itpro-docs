@@ -36,6 +36,7 @@ Each machine in the organization is scored based on three important factors: thr
 
 
 ## Navigate through your security recommendations
+
 You can access the security recommendation from the Microsoft Defender ATP Threat & Vulnerability Management menu, dashboard, software page, and machine page, to give you the context that you need, as you require it. 
 
 There are security recommendations for application, operating system, network, accounts, and security controls. 
