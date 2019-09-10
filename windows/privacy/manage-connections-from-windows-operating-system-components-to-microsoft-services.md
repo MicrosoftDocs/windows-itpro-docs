@@ -14,7 +14,7 @@ ms.author: v-medgar
 manager: sanashar
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 8/23/2019
+ms.date: 9/10/2019
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services
