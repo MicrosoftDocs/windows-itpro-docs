@@ -1,7 +1,7 @@
 ---
 title: Example MED-V Environment Planning Checklist
 description: Example MED-V Environment Planning Checklist
-author: levinec
+author: dansimp
 ms.assetid: 877d1660-abef-4e81-ab3a-a8a3ec181d26
 ms.reviewer: 
 manager: dansimp

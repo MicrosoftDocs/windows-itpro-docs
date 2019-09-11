@@ -1,7 +1,7 @@
 ---
 title: How to Refresh Virtual Applications from the Desktop Notification Area
 description: How to Refresh Virtual Applications from the Desktop Notification Area
-author: eavena
+author: dansimp
 ms.assetid: 801610d9-e89c-48bb-972c-20e37b945a02
 ms.reviewer: 
 manager: dansimp

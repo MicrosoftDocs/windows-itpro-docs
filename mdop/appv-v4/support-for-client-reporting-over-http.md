@@ -1,7 +1,7 @@
 ---
 title: Support for Client Reporting over HTTP
 description: Support for Client Reporting over HTTP
-author: manikadhiman
+author: dansimp
 ms.assetid: 4a26ac80-1fb5-4c05-83de-4d06793f7bf2
 ms.reviewer: 
 manager: dansimp

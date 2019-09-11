@@ -1,7 +1,7 @@
 ---
 title: AGPM 4.0 SP1
 description: AGPM 4.0 SP1
-author: mjcaparas
+author: dansimp
 ms.assetid: 4e55d9e6-635c-4ba6-acbb-ed1d1b580a5b
 ms.reviewer: 
 manager: dansimp

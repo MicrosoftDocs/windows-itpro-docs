@@ -1,7 +1,7 @@
 ---
 title: Contents Tab Features
 description: Contents Tab Features
-author: mjcaparas
+author: dansimp
 ms.assetid: f1f4849d-bf94-47d5-ad81-0eee33abcaca
 ms.reviewer: 
 manager: dansimp

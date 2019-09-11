@@ -1,7 +1,7 @@
 ---
 title: Incompatible Installer Dialog Box (App-V 4.6 SP1)
 description: Incompatible Installer Dialog Box (App-V 4.6 SP1)
-author: eavena
+author: dansimp
 ms.assetid: 45d465b1-ee49-4274-8234-71dd031a07b6
 ms.reviewer: 
 manager: dansimp

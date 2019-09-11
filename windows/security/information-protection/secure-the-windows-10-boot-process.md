@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.reviewer: 
-ms.author: dolmont
+ms.author: dansimp
 ---
 
 # Secure the Windows 10 boot process

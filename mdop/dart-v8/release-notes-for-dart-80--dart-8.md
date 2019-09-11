@@ -1,7 +1,7 @@
 ---
 title: Release Notes for DaRT 8.0
 description: Release Notes for DaRT 8.0
-author: msfttracyp
+author: dansimp
 ms.assetid: e8b373c8-7aa5-4930-a8f9-743d26145dad
 ms.reviewer: 
 manager: dansimp
