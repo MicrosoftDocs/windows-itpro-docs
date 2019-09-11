@@ -70,7 +70,9 @@ If you are a home user, or you are not subject to settings managed by a security
 
 ## Turn Tamper Protection on (or off) for your organization with Intune
 
-If you are part of your organization's security team, the ability to turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management portal (Intune) is now in preview. 
+If you are part of your organization's security team, the ability to turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management portal (Intune) is now in preview. "In preview" means this feature is rolling out to customers who are participating in the [Windows Insider Program for Business](https://docs.microsoft.com/windows-insider/at-work-pro/). As a preview feature, the following applies:
+
+*Some information in this section relates to prereleased product that might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.*
 
 You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task. 
 
