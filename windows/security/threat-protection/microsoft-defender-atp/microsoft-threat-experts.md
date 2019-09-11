@@ -35,7 +35,10 @@ Microsoft Threat Experts provides proactive hunting for the most important threa
 - Identifying the most important risks, helping SOCs maximize time and energy 
 - Scope of compromise and as much context as can be quickly delivered to enable fast SOC response. 
  
-## Collaborate with experts, on demand  
+## Collaborate with experts, on demand 
+>[!NOTE]
+>The Microsoft Threat Experts' experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved.
+
 Customers can engage our security experts directly from within Microsoft Defender Security Center for timely and accurate response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised machines, root cause of a suspicious network connection, to additional threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
 
 - Get additional clarification on alerts including root cause or scope of the incident 
