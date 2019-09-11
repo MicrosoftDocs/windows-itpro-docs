@@ -46,6 +46,19 @@ Customers can engage our security experts directly from within Microsoft Defende
 - Determine risk and protection regarding threat actors, campaigns, or emerging attacker techniques 
 - Seamlessly transition to Microsoft Incident Response (IR) or other third-party Incident Response services when necessary 
 
+The option to **Consult a threat expert** is available in several places in the portal so you can engage with experts in the context of your investigation:
+
+<i>Help and support menu</i>
+![Screenshot of MTE-EOD menu option](images/MTE_EOD_Menu.png)
+
+<i>Machine page actions menu</i>
+![Screenshot of MTE-EOD machine page action menu option](images/MTE_EOD_machines.png)
+
+<i>Alerts page Actions menu</i>
+![Screenshot of MTE-EOD alert page action menu option](images/MTE_EOD_alerts.png)
+
+<i>File page actions menu</i>
+![Screenshot of MTE-EOD file page action menu option](images/MTE_EOD_file.png)
 
 ## Related topic
 - [Configure Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md)
