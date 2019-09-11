@@ -52,7 +52,7 @@ The trust model determines how you want users to authenticate to the on-premises
 * The certificate trust model also supports enterprises which are not ready to deploy Windows Server 2016 Domain Controllers.
 
 > [!NOTE]
-> Remote Desktop Protocol (RDP) does not support authentication with Windows Hello for Business key trust deployments. RDP is only supported with certificate trust deployments at this time. See [Remote Desktop with Biometrics](hello-features.md#remote-desktop-with-biometrics) to learn more.
+> Remote Desktop Protocol (RDP) does not support authentication with Windows Hello for Business key trust deployments. RDP is only supported with certificate trust deployments at this time. See [Remote Desktop](hello-feature-remote-desktop.md) to learn more.
 
 Following are the various deployment guides and models included in this topic:
 - [Hybrid Azure AD Joined Key Trust Deployment](hello-hybrid-key-trust.md)
