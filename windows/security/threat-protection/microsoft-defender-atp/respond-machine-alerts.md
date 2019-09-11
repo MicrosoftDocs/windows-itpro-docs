@@ -35,6 +35,7 @@ Response actions run along the top of a specific machine page and include:
 - Run antivirus scan
 - Restrict app execution
 - Isolate machine
+- Consult a threat expert
 - Action center
 
 ![Image of response actions](images/response-actions.png)
@@ -172,6 +173,13 @@ Once you have selected **Isolate machine** on the machine page, type a comment a
 When a machine is being isolated, the following notification is displayed to inform the user that the machine is being isolated from the network:
 
 ![Image of no network connection](images/atp-notification-isolate.png)
+
+## Consult a threat expert
+
+You can consult a Microsoft threat expert for more insights regarding a potentially compromised machine or already compromised ones. Microsoft Threat Experts can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights not just regarding a potentially compromised machine, but also to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, or a threat intelligence context that you see on your portal dashboard.
+
+See [Consult a Microsoft Threat Expert](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) for details.
+
 
 ## Check activity details in Action center
 
