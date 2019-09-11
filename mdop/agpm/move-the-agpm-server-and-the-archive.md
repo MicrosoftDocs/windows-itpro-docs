@@ -1,7 +1,7 @@
 ---
 title: Move the AGPM Server and the Archive
 description: Move the AGPM Server and the Archive
-author: mjcaparas
+author: dansimp
 ms.assetid: 13cb83c4-bb42-4e81-8660-5b7540f473d8
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: Online Help for Application Virtualization
 description: Online Help for Application Virtualization
-author: eavena
+author: dansimp
 ms.assetid: 261ede48-976f-473c-84bc-452577efdcdf
 ms.reviewer: 
 manager: dansimp

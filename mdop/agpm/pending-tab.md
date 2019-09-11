@@ -1,7 +1,7 @@
 ---
 title: Pending Tab
 description: Pending Tab
-author: mjcaparas
+author: dansimp
 ms.assetid: 54a9a977-c0bc-4553-922b-b2e10e162df9
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: Diagnosing System Failures with Crash Analyzer
 description: Diagnosing System Failures with Crash Analyzer
-author: msfttracyp
+author: dansimp
 ms.assetid: 7ebef49e-a294-4173-adb1-7e6994aa01ad
 ms.reviewer: 
 manager: dansimp

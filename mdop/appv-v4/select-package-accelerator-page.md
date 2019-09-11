@@ -1,7 +1,7 @@
 ---
 title: Select Package Accelerator Page
 description: Select Package Accelerator Page
-author: eavena
+author: dansimp
 ms.assetid: 865c2702-4dfd-41ae-8cfc-3514d5f41f76
 ms.reviewer: 
 manager: dansimp

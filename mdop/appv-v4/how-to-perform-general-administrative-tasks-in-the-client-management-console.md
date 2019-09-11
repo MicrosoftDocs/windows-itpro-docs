@@ -1,7 +1,7 @@
 ---
 title: How to Perform General Administrative Tasks in the Client Management Console
 description: How to Perform General Administrative Tasks in the Client Management Console
-author: eavena
+author: dansimp
 ms.assetid: 90bb7101-1075-4654-8a5e-ad08374e381f
 ms.reviewer: 
 manager: dansimp

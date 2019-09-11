@@ -1,7 +1,7 @@
 ---
 title: Administering UE-V 1.0
 description: Administering UE-V 1.0
-author: levinec
+author: dansimp
 ms.assetid: c399ae8d-c839-4f84-9bfc-adacd8f89f34
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: Operations for DaRT 10
 description: Operations for DaRT 10
-author: msfttracyp
+author: dansimp
 ms.assetid: 1776d5ed-96c6-4841-a097-721d8cf5c7f7
 ms.reviewer: 
 manager: dansimp

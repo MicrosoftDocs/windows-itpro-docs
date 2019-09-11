@@ -1,7 +1,7 @@
 ---
 title: Operations Guide for the Application Virtualization System
 description: Operations Guide for the Application Virtualization System
-author: eavena
+author: dansimp
 ms.assetid: 686f2b75-7fba-4410-89b2-a539984b6ef2
 ms.reviewer: 
 manager: dansimp

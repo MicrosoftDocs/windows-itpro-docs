@@ -1,7 +1,7 @@
 ---
 title: Getting Started - Using MBAM with Configuration Manager
 description: Getting Started - Using MBAM with Configuration Manager
-author: msfttracyp
+author: dansimp
 ms.assetid: b0a1d3cc-0b01-4b69-a2cd-fd09fb3beda4
 ms.reviewer: 
 manager: dansimp

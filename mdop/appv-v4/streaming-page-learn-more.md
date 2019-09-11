@@ -1,7 +1,7 @@
 ---
 title: Streaming Page
 description: Streaming Page
-author: manikadhiman
+author: dansimp
 ms.assetid: a69a57a0-1bbe-4604-840d-bfa87ec463e1
 ms.reviewer: 
 manager: dansimp

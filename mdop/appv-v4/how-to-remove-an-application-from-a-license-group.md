@@ -1,7 +1,7 @@
 ---
 title: How to Remove an Application from a License Group
 description: How to Remove an Application from a License Group
-author: eavena
+author: dansimp
 ms.assetid: 973dfb11-b4d1-4b79-8f6a-aaea3e52b04f
 ms.reviewer: 
 manager: dansimp

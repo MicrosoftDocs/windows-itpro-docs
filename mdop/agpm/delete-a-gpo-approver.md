@@ -1,7 +1,7 @@
 ---
 title: Delete a GPO
 description: Delete a GPO
-author: mjcaparas
+author: dansimp
 ms.assetid: 85fca371-5707-49c1-aa51-813fc3a58dfc
 ms.reviewer: 
 manager: dansimp

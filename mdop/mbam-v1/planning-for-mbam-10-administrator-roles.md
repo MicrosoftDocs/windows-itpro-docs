@@ -1,7 +1,7 @@
 ---
 title: Planning for MBAM 1.0 Administrator Roles
 description: Planning for MBAM 1.0 Administrator Roles
-author: msfttracyp
+author: dansimp
 ms.assetid: 95be0eb4-25e9-43ca-a8e7-27373d35544d
 ms.reviewer: 
 manager: dansimp

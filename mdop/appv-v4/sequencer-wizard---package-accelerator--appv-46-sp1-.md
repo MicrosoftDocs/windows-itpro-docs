@@ -1,7 +1,7 @@
 ---
 title: Sequencer Wizard - Package Accelerator (AppV 4.6 SP1)
 description: Sequencer Wizard - Package Accelerator (AppV 4.6 SP1)
-author: eavena
+author: dansimp
 ms.assetid: 1f75f5ba-0707-48fb-b0b8-ba94a5159e36
 ms.reviewer: 
 manager: dansimp

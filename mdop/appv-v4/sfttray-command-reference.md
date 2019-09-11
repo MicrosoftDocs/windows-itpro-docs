@@ -1,7 +1,7 @@
 ---
 title: SFTTRAY Command Reference
 description: SFTTRAY Command Reference
-author: manikadhiman
+author: dansimp
 ms.assetid: 6fa3a939-b047-4d6c-bd1d-dfb93e065eb2
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: Select Guidance Page (Package Accelerators)
 description: Select Guidance Page (Package Accelerators)
-author: eavena
+author: dansimp
 ms.assetid: 608b8823-6eac-40c0-a6dc-2f0bfc0d42a1
 ms.reviewer: 
 manager: dansimp

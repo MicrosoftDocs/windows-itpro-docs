@@ -1,7 +1,7 @@
 ---
 title: Microsoft Application Virtualization Client Management Help
 description: Microsoft Application Virtualization Client Management Help
-author: eavena
+author: dansimp
 ms.assetid: 449eebda-70eb-48b7-855a-db965a680923
 ms.reviewer: 
 manager: dansimp

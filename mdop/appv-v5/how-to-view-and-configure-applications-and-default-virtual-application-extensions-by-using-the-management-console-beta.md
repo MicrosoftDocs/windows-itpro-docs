@@ -1,7 +1,7 @@
 ---
 title: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
 description: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
-author: msfttracyp
+author: dansimp
 ms.assetid: c77e6662-7a18-4da1-8da8-b58068b65fa1
 ms.reviewer: 
 manager: dansimp

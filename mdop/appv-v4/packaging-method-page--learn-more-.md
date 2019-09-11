@@ -1,7 +1,7 @@
 ---
 title: Packaging Method Page (Learn More)
 description: Packaging Method Page (Learn More)
-author: eavena
+author: dansimp
 ms.assetid: f405a293-bcd4-48a1-b4d9-b5e4cf73c5f4
 ms.reviewer: 
 manager: dansimp

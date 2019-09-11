@@ -1,7 +1,7 @@
 ---
 title: Technical Reference for App-V 5.0
 description: Technical Reference for App-V 5.0
-author: msfttracyp
+author: dansimp
 ms.assetid: aa899158-41e8-47d3-882c-8c5b96018308
 ms.reviewer: 
 manager: dansimp

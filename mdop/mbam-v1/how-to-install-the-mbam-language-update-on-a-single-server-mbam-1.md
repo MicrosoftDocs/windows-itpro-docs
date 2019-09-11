@@ -1,7 +1,7 @@
 ---
 title: How to Install the MBAM Language Update on a Single Server
 description: How to Install the MBAM Language Update on a Single Server
-author: msfttracyp
+author: dansimp
 ms.assetid: e6fe59a3-a3e1-455c-a059-1f23ee083cf6
 ms.reviewer: 
 manager: dansimp
