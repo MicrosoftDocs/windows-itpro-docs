@@ -44,9 +44,6 @@ The following features are included in the preview release:
 
 - [Indicators for IP addresses, URLs/Domains](manage-indicators.md) <BR> You can now allow or block URLs/domains using your own threat intelligence. 
 
-- [Evaluation lab](evaluation-lab.md) <BR> The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of machine and environment configuration so that you can
- focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
-
 - [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac) <BR> Microsoft Defender ATP for Mac brings the next-generation protection, and endpoint detection and response coverage to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices.
 
 - [Live response](live-response.md)<BR> Get instantaneous access to a machine using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats – real-time.
