@@ -1,7 +1,7 @@
 ---
 title: How to Modify File-Mapping Information
 description: How to Modify File-Mapping Information
-author: eavena
+author: dansimp
 ms.assetid: d3a9d10a-6cc8-4399-9479-b20f729c4dd9
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: Planning for MBAM 2.0 Client Deployment
 description: Planning for MBAM 2.0 Client Deployment
-author: msfttracyp
+author: dansimp
 ms.assetid: 3a92cf29-092f-4cad-bdfa-d5f6aafe554b
 ms.reviewer: 
 manager: dansimp

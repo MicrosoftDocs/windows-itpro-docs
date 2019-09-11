@@ -1,7 +1,7 @@
 ---
 title: Deploying the MBAM 1.0 Server Infrastructure
 description: Deploying the MBAM 1.0 Server Infrastructure
-author: msfttracyp
+author: dansimp
 ms.assetid: 90529379-b70e-4c92-b188-3d7aaf1844af
 ms.reviewer: 
 manager: dansimp

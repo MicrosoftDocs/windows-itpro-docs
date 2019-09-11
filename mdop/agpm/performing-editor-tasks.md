@@ -1,7 +1,7 @@
 ---
 title: Performing Editor Tasks
 description: Performing Editor Tasks
-author: mjcaparas
+author: dansimp
 ms.assetid: b1e62615-2e02-460e-81d1-4a3fbe59f62d
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: MBAM 1.0 Deployment Prerequisites
 description: MBAM 1.0 Deployment Prerequisites
-author: msfttracyp
+author: dansimp
 ms.assetid: bd9e1010-7d25-43e7-8dc6-b521226a659d
 ms.reviewer: 
 manager: dansimp

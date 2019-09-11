@@ -4,7 +4,7 @@ description: Sideload line-of-business apps in Windows 10.
 ms.assetid: C46B27D0-375B-4F7A-800E-21595CF1D53D
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

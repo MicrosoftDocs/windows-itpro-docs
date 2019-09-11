@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting AGPM Upgrades
 description: Troubleshooting AGPM Upgrades
-author: jedodson
+author: dansimp
 ms.assetid: 1abbf0c1-fd32-46a8-a3ba-c005f066523d
 ms.reviewer: 
 manager: dansimp

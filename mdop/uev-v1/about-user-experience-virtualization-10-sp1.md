@@ -1,7 +1,7 @@
 ---
 title: About User Experience Virtualization 1.0 SP1
 description: About User Experience Virtualization 1.0 SP1
-author: levinec
+author: dansimp
 ms.assetid: 0212d3fb-e882-476c-9496-9eb52301703d
 ms.reviewer: 
 manager: dansimp

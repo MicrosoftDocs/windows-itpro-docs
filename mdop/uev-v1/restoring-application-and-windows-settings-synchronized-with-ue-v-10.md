@@ -1,7 +1,7 @@
 ---
 title: Restoring Application and Windows Settings Synchronized with UE-V 1.0
 description: Restoring Application and Windows Settings Synchronized with UE-V 1.0
-author: levinec
+author: dansimp
 ms.assetid: 254a16b1-f186-44a4-8e22-49a4ee87c734
 ms.reviewer: 
 manager: dansimp

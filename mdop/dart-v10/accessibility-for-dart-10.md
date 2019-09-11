@@ -1,7 +1,7 @@
 ---
 title: Accessibility for DaRT 10
 description: Accessibility for DaRT 10
-author: msfttracyp
+author: dansimp
 ms.assetid: 61d7a30c-3551-440d-bdcd-36333052c7b4
 ms.reviewer: 
 manager: dansimp

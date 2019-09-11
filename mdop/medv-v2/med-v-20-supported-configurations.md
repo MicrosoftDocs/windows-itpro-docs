@@ -1,7 +1,7 @@
 ---
 title: MED-V 2.0 Supported Configurations
 description: MED-V 2.0 Supported Configurations
-author: levinec
+author: dansimp
 ms.assetid: 88f1d232-aa01-45ab-8da7-d086269250b5
 ms.reviewer: 
 manager: dansimp

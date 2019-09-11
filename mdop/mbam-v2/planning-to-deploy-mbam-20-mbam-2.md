@@ -1,7 +1,7 @@
 ---
 title: Planning to Deploy MBAM 2.0
 description: Planning to Deploy MBAM 2.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 2dc05fcd-aed9-4315-aeaf-92aaa9e0e955
 ms.reviewer: 
 manager: dansimp

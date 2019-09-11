@@ -1,7 +1,7 @@
 ---
 title: Feature Visibility Settings
 description: Feature Visibility Settings
-author: mjcaparas
+author: dansimp
 ms.assetid: 6a844478-a6b0-490d-923f-5a6f82467831
 ms.reviewer: 
 manager: dansimp

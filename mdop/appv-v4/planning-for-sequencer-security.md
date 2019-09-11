@@ -1,7 +1,7 @@
 ---
 title: Planning for Sequencer Security
 description: Planning for Sequencer Security
-author: eavena
+author: dansimp
 ms.assetid: 8043cb02-476d-4c28-a850-903a8ac5b2d3
 ms.reviewer: 
 manager: dansimp

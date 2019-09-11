@@ -4,7 +4,7 @@ description: The AssignedAccess configuration service provider (CSP) is used set
 ms.assetid: 421CC07D-6000-48D9-B6A3-C638AAF83984
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

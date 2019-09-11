@@ -1,7 +1,7 @@
 ---
 title: Sequencer Command-Line Parameters
 description: Sequencer Command-Line Parameters
-author: eavena
+author: dansimp
 ms.assetid: 28fb875a-c302-4d95-b2e0-8dc0c5dbb0f8
 ms.reviewer: 
 manager: dansimp

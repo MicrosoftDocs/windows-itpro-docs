@@ -1,7 +1,7 @@
 ---
 title: Example MED-V Project Planning Checklist
 description: Example MED-V Project Planning Checklist
-author: levinec
+author: dansimp
 ms.assetid: 2b599bcb-1808-43ba-a689-1642bda24511
 ms.reviewer: 
 manager: dansimp

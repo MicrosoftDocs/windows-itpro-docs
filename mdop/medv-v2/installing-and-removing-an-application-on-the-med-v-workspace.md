@@ -1,7 +1,7 @@
 ---
 title: Installing and Removing an Application on the MED-V Workspace
 description: Installing and Removing an Application on the MED-V Workspace
-author: levinec
+author: dansimp
 ms.assetid: 24f32720-51ab-4385-adfe-4f5a65e45fdf
 ms.reviewer: 
 manager: dansimp

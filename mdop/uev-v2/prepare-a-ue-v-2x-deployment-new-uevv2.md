@@ -1,7 +1,7 @@
 ---
 title: Prepare a UE-V 2.x Deployment
 description: Prepare a UE-V 2.x Deployment
-author: levinec
+author: dansimp
 ms.assetid: c429fd06-13ff-48c5-b9c9-fa1ec01ab800
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: How to Change, Repair, or Remove DaRT 10
 description: How to Change, Repair, or Remove DaRT 10
-author: msfttracyp
+author: dansimp
 ms.assetid: e7718c6f-06a1-48bb-b04b-1a0f659a0337
 ms.reviewer: 
 manager: dansimp

@@ -3,7 +3,7 @@ title: Audit privilege use (Windows 10)
 description: Determines whether to audit each instance of a user exercising a user right.
 ms.assetid: C5C6DAAF-8B58-4DFB-B1CE-F0675AE0E9F8
 ms.reviewer: 
-ms.author: dolmont
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

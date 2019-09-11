@@ -1,7 +1,7 @@
 ---
 title: How to Uninstall the App-V Client
 description: How to Uninstall the App-V Client
-author: eavena
+author: dansimp
 ms.assetid: 07591270-9651-4bb5-a5b3-e0fc009bd9e2
 ms.reviewer: 
 manager: dansimp

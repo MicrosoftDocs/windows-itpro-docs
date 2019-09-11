@@ -1,7 +1,7 @@
 ---
 title: Provider Policies Results Pane
 description: Provider Policies Results Pane
-author: eavena
+author: dansimp
 ms.assetid: 17ea0836-bfb5-4966-8778-155444d81e64
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: AGPM Server Tab
 description: AGPM Server Tab
-author: mjcaparas
+author: dansimp
 ms.assetid: a6689437-233e-4f33-a0d6-f7d432c96c00
 ms.reviewer: 
 manager: dansimp

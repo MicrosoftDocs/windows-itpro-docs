@@ -1,7 +1,7 @@
 ---
 title: Viewing and Configuring MED-V Logs
 description: Viewing and Configuring MED-V Logs
-author: levinec
+author: dansimp
 ms.assetid: a15537ce-981d-4f55-9c3c-e7fbf94b8fe5
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: Pending GPO Commands
 description: Pending GPO Commands
-author: mjcaparas
+author: dansimp
 ms.assetid: 3868dda0-8a41-4bba-9b0c-9f656f9a3cd5
 ms.reviewer: 
 manager: dansimp

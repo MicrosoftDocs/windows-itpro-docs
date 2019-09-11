@@ -1,7 +1,7 @@
 ---
 title: About MBAM 2.0
 description: About MBAM 2.0
-author: msfttracyp
+author: dansimp
 ms.assetid: b43a0ba9-1c83-4854-a2c5-14eea0070e36
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: Maintaining App-V 5.1
 description: Maintaining App-V 5.1
-author: msfttracyp
+author: dansimp
 ms.assetid: 5abd17d3-e8af-4261-b914-741ae116b0e7
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: Managing Automatic Updates for MED-V Workspaces
 description: Managing Automatic Updates for MED-V Workspaces
-author: levinec
+author: dansimp
 ms.assetid: 306f28a2-d653-480d-b737-4b8b3132de5d
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: AGPM Server Connection Settings
 description: AGPM Server Connection Settings
-author: mjcaparas
+author: dansimp
 ms.assetid: faf78e5b-2b0d-4069-9b8c-910add892200
 ms.reviewer: 
 manager: dansimp

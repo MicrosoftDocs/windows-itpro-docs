@@ -1,7 +1,7 @@
 ---
 title: How to Deploy the DaRT Recovery Image as Part of a Recovery Partition
 description: How to Deploy the DaRT Recovery Image as Part of a Recovery Partition
-author: msfttracyp
+author: dansimp
 ms.assetid: 462f2d08-f03b-4a07-b2d3-c69205dc6f70
 ms.reviewer: 
 manager: dansimp

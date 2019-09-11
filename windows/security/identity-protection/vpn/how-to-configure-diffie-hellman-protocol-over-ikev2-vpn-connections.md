@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 ms.localizationpriority: medium
 ms.date: 02/08/2018
 ms.reviewer: 

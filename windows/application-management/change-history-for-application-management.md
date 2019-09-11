@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: msfttracyp
-ms.author: tracyp
+ms.author: dansimp
 ms.topic: article
 ms.date: 10/24/2017
 ms.reviewer: 

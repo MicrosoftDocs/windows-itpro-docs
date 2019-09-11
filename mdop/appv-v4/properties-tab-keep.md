@@ -1,7 +1,7 @@
 ---
 title: Properties Tab
 description: Properties Tab
-author: eavena
+author: dansimp
 ms.assetid: 6ff20678-6766-4f0d-8bbb-f19b224682a1
 ms.reviewer: 
 manager: dansimp

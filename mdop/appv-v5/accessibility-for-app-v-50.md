@@ -1,7 +1,7 @@
 ---
 title: Accessibility for App-V 5.0
 description: Accessibility for App-V 5.0
-author: manikadhiman
+author: dansimp
 ms.assetid: 56696523-6332-4bbe-8ddf-32b1dfe38131
 ms.reviewer: 
 manager: dansimp

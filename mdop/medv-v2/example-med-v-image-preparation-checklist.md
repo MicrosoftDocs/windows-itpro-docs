@@ -1,7 +1,7 @@
 ---
 title: Example MED-V Image Preparation Checklist
 description: Example MED-V Image Preparation Checklist
-author: levinec
+author: dansimp
 ms.assetid: d69f252f-624b-439e-814b-b68cdaf7d582
 ms.reviewer: 
 manager: dansimp

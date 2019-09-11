@@ -1,7 +1,7 @@
 ---
 title: How to Use the Differential SFT File
 description: How to Use the Differential SFT File
-author: eavena
+author: dansimp
 ms.assetid: 607e30fd-2f0e-4e2f-b669-0b3f010aebb0
 ms.reviewer: 
 manager: dansimp

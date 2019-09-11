@@ -1,7 +1,7 @@
 ---
 title: Planning for Migration from Previous Versions
 description: Planning for Migration from Previous Versions
-author: eavena
+author: dansimp
 ms.assetid: 62967bf1-542f-41b0-838f-c62f3430ac73
 ms.reviewer: 
 manager: dansimp

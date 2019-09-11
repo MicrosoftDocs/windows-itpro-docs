@@ -4,7 +4,7 @@ description: This guide provides a detailed description of the most important se
 ms.assetid: D51EF508-699E-4A68-A7CD-91D821A97205
 ms.reviewer: 
 manager: dansimp
-ms.author: dolmont
+ms.author: dansimp
 keywords: data protection, encryption, malware resistance, smartphone, device, Microsoft Store
 ms.prod: w10
 ms.mktglfcycl: manage

@@ -1,7 +1,7 @@
 ---
 title: App-V 5.0 Capacity Planning
 description: App-V 5.0 Capacity Planning
-author: manikadhiman
+author: dansimp
 ms.assetid: 56f48b00-cd91-4280-9481-5372a0e2e792
 ms.reviewer: 
 manager: dansimp

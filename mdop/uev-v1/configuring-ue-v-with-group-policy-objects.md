@@ -1,7 +1,7 @@
 ---
 title: Configuring UE-V with Group Policy Objects
 description: Configuring UE-V with Group Policy Objects
-author: levinec
+author: dansimp
 ms.assetid: 5c9be706-a05f-4397-9a38-e6b73ebff1e5
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: Deploy a GPO
 description: Deploy a GPO
-author: mjcaparas
+author: dansimp
 ms.assetid: a6febeaa-144b-4c02-99af-d972f0f2b544
 ms.reviewer: 
 manager: dansimp

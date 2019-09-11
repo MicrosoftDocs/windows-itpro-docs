@@ -1,7 +1,7 @@
 ---
 title: How to Remove an Application Group
 description: How to Remove an Application Group
-author: eavena
+author: dansimp
 ms.assetid: 3016b373-f5a0-4c82-96e8-e5e7960f0cc4
 ms.reviewer: 
 manager: dansimp

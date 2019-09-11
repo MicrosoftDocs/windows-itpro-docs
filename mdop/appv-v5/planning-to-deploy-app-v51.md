@@ -1,7 +1,7 @@
 ---
 title: Planning to Deploy App-V
 description: Planning to Deploy App-V
-author: msfttracyp
+author: dansimp
 ms.assetid: 39cbf981-d9c6-457f-b047-f9046e1a6442
 ms.reviewer: 
 manager: dansimp

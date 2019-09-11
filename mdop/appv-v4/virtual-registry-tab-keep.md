@@ -1,7 +1,7 @@
 ---
 title: Virtual Registry Tab
 description: Virtual Registry Tab
-author: manikadhiman
+author: dansimp
 ms.assetid: 25833383-24c4-40a1-b34c-73b2bd3f11e1
 ms.reviewer: 
 manager: dansimp

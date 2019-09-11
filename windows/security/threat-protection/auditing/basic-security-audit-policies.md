@@ -3,7 +3,7 @@ title: Basic security audit policies (Windows 10)
 description: Before you implement auditing, you must decide on an auditing policy.
 ms.assetid: 3B678568-7AD7-4734-9BB4-53CF5E04E1D3
 ms.reviewer: 
-ms.author: dolmont
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,7 +1,7 @@
 ---
 title: App-V 5.0 Supported Configurations
 description: App-V 5.0 Supported Configurations
-author: manikadhiman
+author: dansimp
 ms.assetid: 3787ff63-7ce7-45a8-8f01-81b4b6dced34
 ms.reviewer: 
 manager: dansimp

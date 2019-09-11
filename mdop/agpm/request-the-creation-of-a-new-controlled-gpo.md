@@ -1,7 +1,7 @@
 ---
 title: Request the Creation of a New Controlled GPO
 description: Request the Creation of a New Controlled GPO
-author: mjcaparas
+author: dansimp
 ms.assetid: e1875d81-8553-42ee-8f3a-023d6ced86ca
 ms.reviewer: 
 manager: dansimp

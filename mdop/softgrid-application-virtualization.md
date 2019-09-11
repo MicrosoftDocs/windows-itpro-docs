@@ -1,7 +1,7 @@
 ---
 title: SoftGrid Application Virtualization
 description: SoftGrid Application Virtualization
-author: eavena
+author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

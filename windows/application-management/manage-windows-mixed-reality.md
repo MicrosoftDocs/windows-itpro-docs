@@ -9,7 +9,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 author: msfttracyp
-ms.author: tracyp
+ms.author: dansimp
 ms.topic: article
 ---
 

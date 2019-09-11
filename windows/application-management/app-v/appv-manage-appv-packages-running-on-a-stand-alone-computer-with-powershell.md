@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 09/24/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ---
 # How to manage App-V packages running on a stand-alone computer by using Windows PowerShell

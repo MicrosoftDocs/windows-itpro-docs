@@ -1,7 +1,7 @@
 ---
 title: Managing the AGPM Service
 description: Managing the AGPM Service
-author: mjcaparas
+author: dansimp
 ms.assetid: a522b1f1-c57b-43aa-9d75-acc6f9bedbf9
 ms.reviewer: 
 manager: dansimp

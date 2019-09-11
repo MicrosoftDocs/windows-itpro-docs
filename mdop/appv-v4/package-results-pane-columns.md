@@ -1,7 +1,7 @@
 ---
 title: Package Results Pane Columns
 description: Package Results Pane Columns
-author: eavena
+author: dansimp
 ms.assetid: 4ed3a06a-656d-497a-b62d-21684396e2b0
 ms.reviewer: 
 manager: dansimp

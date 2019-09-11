@@ -4,7 +4,7 @@ description: The AllJoynManagement configuration service provider (CSP) allows a
 ms.assetid: 468E0EE5-EED3-48FF-91C0-89F9D159AA8C
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

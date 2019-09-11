@@ -1,7 +1,7 @@
 ---
 title: How to Brand the Self-Service Portal
 description: How to Brand the Self-Service Portal
-author: msfttracyp
+author: dansimp
 ms.assetid: 3ef9e951-7c42-4f7f-b131-3765d39b3207
 ms.reviewer: 
 manager: dansimp

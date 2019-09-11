@@ -1,7 +1,7 @@
 ---
 title: Planning Which Applications to Synchronize with UE-V 1.0
 description: Planning Which Applications to Synchronize with UE-V 1.0
-author: levinec
+author: dansimp
 ms.assetid: c718274f-87b4-47f3-8ef7-5e1bd5557a9d
 ms.reviewer: 
 manager: dansimp

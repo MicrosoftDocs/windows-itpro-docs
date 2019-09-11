@@ -1,7 +1,7 @@
 ---
 title: Resources for AGPM
 description: Resources for AGPM
-author: mjcaparas
+author: dansimp
 ms.assetid: b44b58c0-2810-40d6-9677-f2f64e1add75
 ms.reviewer: 
 manager: dansimp

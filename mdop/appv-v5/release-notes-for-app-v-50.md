@@ -1,7 +1,7 @@
 ---
 title: Release Notes for App-V 5.0
 description: Release Notes for App-V 5.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 68a6a5a1-4b3c-4c09-b00c-9ca4237695d5
 ms.reviewer: 
 manager: dansimp

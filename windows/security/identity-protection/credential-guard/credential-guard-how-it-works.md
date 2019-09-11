@@ -1,6 +1,6 @@
 ---
 title: How Windows Defender Credential Guard works
-description: Using virtualization-based security, Windows Defender Credential Guard features a new component called the isolated LSA process, which stores and protects secrets, isolating them from the rest of the operating system, so that only privileged system software can access them. 
+description: Using virtualization-based security, Windows Defender Credential Guard features a new component called the isolated LSA process, which stores and protects secrets, isolating them from the rest of the operating system, so that only privileged system software can access them.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article

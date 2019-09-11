@@ -1,7 +1,7 @@
 ---
 title: Accounts DDF file
 description: XML file containing the device description framework
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

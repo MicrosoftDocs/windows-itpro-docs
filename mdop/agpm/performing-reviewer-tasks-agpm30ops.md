@@ -1,7 +1,7 @@
 ---
 title: Performing Reviewer Tasks
 description: Performing Reviewer Tasks
-author: mjcaparas
+author: dansimp
 ms.assetid: 1faf396d-be0d-49ac-b063-0722fda2e43d
 ms.reviewer: 
 manager: dansimp

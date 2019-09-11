@@ -1,7 +1,7 @@
 ---
 title: Managing the Archive
 description: Managing the Archive
-author: mjcaparas
+author: dansimp
 ms.assetid: 7c7654e9-ab0e-4531-8ef7-ae77ef391620
 ms.reviewer: 
 manager: dansimp
