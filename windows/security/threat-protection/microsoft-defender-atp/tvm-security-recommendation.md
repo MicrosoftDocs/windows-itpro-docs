@@ -23,12 +23,12 @@ ms.date: 04/11/2019
 
 The cybersecurity weaknesses identified in your organization are mapped to actionable security recommendations and prioritized by their impact on the security recommendation list. Prioritized recommendation helps shorten the mean time to mitigate or remediate vulnerabilities and drive compliance.
 
-Each security recommendation includes an actionable remediation recommendation which can be pushed into the IT task queue through a built-in integration with Microsoft Intune and SCCM. It is also dynamic in the sense that when the threat landscape changes, the recommendation also changes as it continuously collect information from your environment. 
+Each security recommendation includes an actionable remediation recommendation which can be pushed into the IT task queue through a built-in integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM). It is also dynamic in the sense that when the threat landscape changes, the recommendation also changes as it continuously collect information from your environment. 
 
 ## The basis of the security recommendation
 Each machine in the organization is scored based on three important factors: threat, likelihood to be breached, and value, to help customers to focus on the right things at the right time.
 
-- Threat - Characteristics of the vulnerabilities and exploits in your organizations' devices and breach history. Based on these factors, the security recommendations shows the correponding links to active alerts, ongoing threat campaigns, and their corresponding threat analytic reports. 
+- Threat - Characteristics of the vulnerabilities and exploits in your organizations' devices and breach history. Based on these factors, the security recommendations shows the corresponding links to active alerts, ongoing threat campaigns, and their corresponding threat analytic reports. 
 
 - Breach likelihood - Your organization's security posture and resilience against threats
 
@@ -36,7 +36,8 @@ Each machine in the organization is scored based on three important factors: thr
 
 
 ## Navigate through your security recommendations
-You can access the security recommendation from the Microsoft Defender ATP Threat & Vulnerability Management menu, dashboard, software page, and machine page, to give you the context that you need as you require it. 
+
+You can access the security recommendation from the Microsoft Defender ATP Threat & Vulnerability Management menu, dashboard, software page, and machine page, to give you the context that you need, as you require it. 
 
 There are security recommendations for application, operating system, network, accounts, and security controls. 
 
