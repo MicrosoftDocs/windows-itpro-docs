@@ -54,10 +54,10 @@ The option to **Consult a threat expert** is available in several places in the 
 <br><i>Machine page actions menu</i></br>
 ![Screenshot of MTE-EOD machine page action menu option](images/MTE_EOD_machines.png)
 
-<i>Alerts page Actions menu</i>
+<br><i>Alerts page Actions menu</i></br>
 ![Screenshot of MTE-EOD alert page action menu option](images/MTE_EOD_alerts.png)
 
-<i>File page actions menu</i>
+<br><i>File page actions menu</i></br>
 ![Screenshot of MTE-EOD file page action menu option](images/MTE_EOD_file.png)
 
 ## Related topic
