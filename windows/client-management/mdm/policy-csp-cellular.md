@@ -339,22 +339,3 @@ Footnotes:
 -   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
-<!--StartEAS-->
-## <a href="" id="eas"></a>Cellular policies that can be set using Exchange Active Sync (EAS)  
-
-- [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
-  <!--EndEAS-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Cellular policies supported by IoT Core  
-
-- [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
-  <!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Cellular policies supported by Microsoft Surface Hub  
-
-- [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
-  <!--EndSurfaceHub-->
-

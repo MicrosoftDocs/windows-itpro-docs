@@ -205,21 +205,3 @@ Footnotes:
 -   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
-<!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Accounts policies supported by HoloLens 2
-
-- [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
-<!--EndHoloLens2-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Accounts policies supported by HoloLens (1st gen) Commercial Suite
-
-- [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
-<!--EndHoloLensBusiness-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Accounts policies supported by HoloLens (1st gen) Development Edition
-
-- [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
-<!--EndHoloLens-->

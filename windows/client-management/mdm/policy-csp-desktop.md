@@ -100,10 +100,3 @@ Footnotes:
 -   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Desktop policies supported by Microsoft Surface Hub  
-
-- [Desktop/PreventUserRedirectionOfProfileFolders](#desktop-preventuserredirectionofprofilefolders)  
-  <!--EndSurfaceHub-->
-

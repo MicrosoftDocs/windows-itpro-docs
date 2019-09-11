@@ -226,11 +226,3 @@ Footnotes:
 -   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>CredentialProviders policies supported by IoT Core  
-
-- [CredentialProviders/AllowPINLogon](#credentialproviders-allowpinlogon)  
-- [CredentialProviders/BlockPicturePassword](#credentialproviders-blockpicturepassword)  
-  <!--EndIoTCore-->
-

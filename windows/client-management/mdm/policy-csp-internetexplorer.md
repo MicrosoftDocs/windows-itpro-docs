@@ -17439,33 +17439,5 @@ Footnotes:
 -   6 - Added in Windows 10, version 1903.
 <!--/Policies-->
 
-<!--StartHoloLens-->
-
-<!--EndHoloLens-->
-
-<!--StartHoloLensBusiness-->
-
-<!--EndHoloLensBusiness-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>InternetExplorer policies supported by IoT Core  
-
-- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)  
-- [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
-- [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
-<!--EndIoTCore-->
-
-<!--StartIoTEnterprise-->
-## <a href="" id="iotcore"></a>InternetExplorer policies supported by IoT Enterprise  
-
-- [InternetExplorer/AllowEnhancedSuggestionsInAddressBar](#internetexplorer-allowenhancedsuggestionsinaddressbar)
-- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
-- [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
-- [InternetExplorer/DisableFeedsBackgroundSync](#internetexplorer-disablefeedsbackgroundsync)
-- [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
-- [InternetExplorer/DisableWebAddressAutoComplete](#internetexplorer-disablewebaddressautocomplete)
-- [InternetExplorer/NewTabDefaultPage](#internetexplorer-newtabdefaultpage)
-<!--EndIoTEnterprise-->
-
 
 

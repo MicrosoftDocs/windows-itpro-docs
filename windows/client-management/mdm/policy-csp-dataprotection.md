@@ -143,10 +143,3 @@ Footnotes:
 -   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>DataProtection policies supported by IoT Core  
-
-- [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
-  <!--EndIoTCore-->
-
