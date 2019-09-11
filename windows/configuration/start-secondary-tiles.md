@@ -9,7 +9,6 @@ ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 06/27/2018
 ms.reviewer: 
 manager: dansimp
 ---
@@ -111,7 +110,7 @@ In Microsoft Intune, you create a device restrictions policy to apply to device 
 
 ### Using a provisioning package
 
-#### Prepare the Start layout and Edge assets XML files
+#### <a href="" id="escape"></a>Prepare the Start layout and Edge assets XML files
 
 The **export-StartLayout** and **export-StartLayoutEdgeAssets** cmdlets produce XML files. Because Windows Configuration Designer produces a customizations.xml file that contains the configuration settings, adding the Start layout and Edge assets sections to the customizations.xml file directly would result in an XML file embedded in an XML file. Before you add the Start layout and Edge assets sections to the customizations.xml file, you must replace the markup characters in your layout.xml with escape characters. 
 

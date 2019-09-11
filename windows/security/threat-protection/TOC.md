@@ -429,7 +429,6 @@
 ##### [Get CVE-KB map](microsoft-defender-atp/get-cvekbmap-collection.md)
 
 #### [API for custom alerts (Deprecated)]()
-##### [Enable the custom threat intelligence application (Deprecated)](microsoft-defender-atp/enable-custom-ti.md)
 ##### [Use the threat intelligence API to create custom alerts (Deprecated)](microsoft-defender-atp/use-custom-ti.md)
 ##### [Create custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/custom-ti-api.md)
 ##### [PowerShell code examples (Deprecated)](microsoft-defender-atp/powershell-example-code.md)
@@ -498,7 +497,6 @@
   
 #### [Rules]()
 ##### [Manage suppression rules](microsoft-defender-atp/manage-suppression-rules.md)
-##### [Manage automation allowed/blocked lists](microsoft-defender-atp/manage-automation-allowed-blocked-list.md)
 ##### [Manage indicators](microsoft-defender-atp/manage-indicators.md)
 ##### [Manage automation file uploads](microsoft-defender-atp/manage-automation-file-uploads.md)
 ##### [Manage automation folder exclusions](microsoft-defender-atp/manage-automation-folder-exclusions.md)

@@ -7,9 +7,8 @@ ms.localizationpriority: high
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.date: 07/16/2019
 ms.author: dansimp
-ms.date: 09/03/2018
+author: dansimp
 ms.reviewer: dansimp
 manager: dansimp
 ---
