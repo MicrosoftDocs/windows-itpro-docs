@@ -123,3 +123,7 @@ Response from Microsoft Threat Experts varies according to your inquiry. They wi
 - Initial information was enough to conclude the investigation 
 
 It is crucial to respond in a timely manner to keep the investigation moving. See the Premier customer service and support service level agreement for details.  
+
+## Related topic
+- [Microsoft Threat Experts overview](microsoft-threat-experts.md)
+
