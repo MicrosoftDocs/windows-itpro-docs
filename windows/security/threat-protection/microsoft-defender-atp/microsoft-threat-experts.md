@@ -48,16 +48,16 @@ Customers can engage our security experts directly from within Microsoft Defende
 
 The option to **Consult a threat expert** is available in several places in the portal so you can engage with experts in the context of your investigation:
 
-<br><i>**Help and support menu**</i></br>
+- <br><i>**Help and support menu**</i></br>
 ![Screenshot of MTE-EOD menu option](images/MTE_EOD_Menu.png)
 
-<br><i>**Machine page actions menu**</i></br>
+- <br><i>**Machine page actions menu**</i></br>
 ![Screenshot of MTE-EOD machine page action menu option](images/MTE_EOD_machines.png)
 
-<br><i>**Alerts page Actions menu**</i></br>
+- <br><i>**Alerts page Actions menu**</i></br>
 ![Screenshot of MTE-EOD alert page action menu option](images/MTE_EOD_alerts.png)
 
-<br><i>**File page actions menu**</i></br>
+- <br><i>**File page actions menu**</i></br>
 ![Screenshot of MTE-EOD file page action menu option](images/MTE_EOD_file.png)
 
 ## Related topic
