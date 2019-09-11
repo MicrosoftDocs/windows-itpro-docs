@@ -7,14 +7,14 @@ keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: high
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: medgarmedgar
+ms.author: v-medgar
+manager: sanashar
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 8/23/2019
+ms.date: 9/10/2019
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services

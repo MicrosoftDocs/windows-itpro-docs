@@ -62,16 +62,3 @@ The individual driver files are also made available in the Microsoft Download Ce
 **Windows PE and Surface firmware and drivers**
 
 A best practice for deployment with any solution that uses the Windows Preinstallation Environment (WinPE), such as System Center Configuration Manager or MDT, is to configure WinPE with only the drivers that are required during the WinPE stage of deployment. These usually include drivers for network adapters and storage controllers. This best practice helps to prevent errors with more complex drivers that rely on components that are not present in WinPE. For Surface Pro 3 devices, this is especially true of the Touch Firmware. The Touch Firmware should never be loaded in a WinPE environment on Surface Pro 3.
-
-**Update Surface Pro 3 firmware offline through USB**
-
-In some early versions of Surface Pro 3 firmware, PXE boot performance can be quite slow. This has been resolved with updated firmware, but for organizations where firmware will be updated through operating system deployment, this issue is encountered before the updates can be deployed to the device. In this scenario, you can deploy updated firmware through a USB drive to ensure that when the operating system deployment is initiated, the network boot is quick, and deployment can complete in a timely fashion. To create a USB drive to update Surface Pro 3 firmware, see [How to Update the Surface Pro 3 Firmware Offline using a USB Drive](https://blogs.technet.microsoft.com/askpfeplat/2014/10/19/how-to-update-the-surface-pro-3-firmware-offline-using-a-usb-drive/) on the Ask Premier Field Engineering (PFE) Platforms TechNet Blog.
-
- 
-
- 
-
-
-
-
-
