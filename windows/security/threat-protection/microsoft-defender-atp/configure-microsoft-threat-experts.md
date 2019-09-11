@@ -75,14 +75,17 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or machine is in view before you send an investigation request. 
 
-2. From the upper right-hand menu, click **?**. Then, select **Consult a threat expert**. A flyout screen opens.
+2. From the upper right-hand menu, click **?**. Then, select **Consult a threat expert**. 
 
-![Image of Microsoft Threat Experts Experts on Demand from the menu](images/MTE_Menu.png)
+![Image of Microsoft Threat Experts Experts on Demand from the menu](images/MTE_EOD_Menu.png)
 
-
-3. The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or machine details page that you were at when you made the request. In the next field, provide enough information to give the Microsoft Threat Experts enough context to start the investigation.
+>A flyout screen opens.
 
 >![Image of Microsoft Threat Experts Experts on Demand screen](images/MTE_EOD.png)
+
+>The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or machine details page that you were at when you made the request.
+
+3.  In the next field, provide enough information to give the Microsoft Threat Experts enough context to start the investigation.
   
 4. Enter the email address that you'd like to use to correspond with Microsoft Threat Experts.
    
