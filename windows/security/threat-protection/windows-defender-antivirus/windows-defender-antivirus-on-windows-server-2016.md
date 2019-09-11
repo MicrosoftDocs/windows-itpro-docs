@@ -9,9 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 09/03/2018
+author: denisebmsft
+ms.author: deniseb
+ms.date: 09/10/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -31,17 +31,16 @@ While the functionality, configuration, and management is largely the same for W
 
 This topic includes the following instructions for setting up and running Windows Defender AV on a server platform:
 
--   [Enable the interface](#BKMK_UsingDef)
+-   [Enable the interface](#enable-or-disable-the-interface-on-windows-server-2016)
 
--   [Verify Windows Defender AV is running](#BKMK_DefRun)
+-   [Verify Windows Defender AV is running](#verify-windows-defender-is-running)
 
--   [Update antimalware Security intelligence](#BKMK_UpdateDef)
+-   [Update antimalware Security intelligence](#update-antimalware-security-intelligence)
 
--   [Submit Samples](#BKMK_DefSamples)
+-   [Submit Samples](#submit-samples)
 
--   [Configure automatic exclusions](#BKMK_DefExclusions)
+-   [Configure automatic exclusions](#configure-automatic-exclusions)
 
-<a name="BKMK_UsingDef"></a>
 ## Enable or disable the interface on Windows Server 2016
 By default, Windows Defender AV is installed and functional on Windows Server 2016. The user interface is installed by default on some SKUs, but is not required.
 
@@ -87,7 +86,7 @@ This is useful if you have a third-party antivirus product installed on the mach
 The following PowerShell cmdlet will also uninstall Windows Defender AV on Windows Server 2016:
 
 
-```PS
+```PowerShell
 Uninstall-WindowsFeature -Name Windows-Defender
 ```
 
@@ -95,7 +94,7 @@ To install Windows Defender AV again, use the **Add Roles and Features Wizard** 
 
 You can also use the following PowerShell cmdlet to install Windows Defender AV:
 
-```PS
+```PowerShell
 Install-WindowsFeature -Name Windows-Defender
 ```
 
@@ -103,9 +102,21 @@ Install-WindowsFeature -Name Windows-Defender
 > Event messages for the antimalware engine included with Windows Defender AV can be found in [Windows Defender AV Events](troubleshoot-windows-defender-antivirus.md).
 
 
-<a name="BKMK_DefRun"></a>
 ## Verify Windows Defender is running
-To verify that Windows Defender AV is running on the server, run the following command from a command prompt: 
+
+To verify that Windows Defender AV is running on the server, run the following PowerShell cmdlet:
+
+```PowerShell
+Get-Service -Name windefend
+```
+
+To verify that firewall protection through Windows Defender is turned on, run the following PowerShell cmdlet:
+
+```PowerShell
+Get-Service -Name mpssvc
+```
+
+As an alternative to PowerShell, you can use Command Prompt to verify that Windows Defender AV is running. To do that, run the following command from a command prompt: 
 
 ```DOS
 sc query Windefend
@@ -113,8 +124,8 @@ sc query Windefend
 
 The `sc query` command returns information about the Windows Defender service. If Windows Defender is running, the `STATE` value displays `RUNNING`.
 
-<a name="BKMK_UpdateDef"></a>
 ## Update antimalware Security intelligence 
+
 In order to get updated antimalware Security intelligence , you must have the Windows Update service running. If you use an update management service, like Windows Server Update Services (WSUS), make sure that updates for Windows Defender Antivirus Security intelligence are approved for the computers you manage.
 
 By default, Windows Update does not download and install updates automatically on Windows Server 2016. You can change this configuration by using one of the following methods:
@@ -148,37 +159,34 @@ The following table lists the services for Windows Defender and the dependent se
 |Windows Defender Firewall (MpsSvc)|C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork|We recommend leaving the Windows Defender Firewall service enabled.|
 |Windows Update (Wuauserv)|C:\WINDOWS\system32\svchost.exe -k netsvcs|Windows Update is needed to get Security intelligence updates and antimalware engine updates|
 
-
-
-<a name="BKMK_DefSamples"></a>
 ## Submit Samples
+
 Sample submission allows Microsoft to collect samples of potentially malicious software. To help provide continued and up-to-date protection, Microsoft researchers use these samples to analyze suspicious activities and produce updated antimalware Security intelligence.
 
 We collect program executable files, such as .exe files and .dll files. We do not collect files that contain personal data, like Microsoft Word documents and PDF files.
 
 ### Enable automatic sample submission
 
--   To enable automatic sample submission, start a Windows PowerShell console as an administrator, and set the **SubmitSamplesConsent** value data according to one of the following settings:
+To enable automatic sample submission, start a Windows PowerShell console as an administrator, and set the **SubmitSamplesConsent** value data according to one of the following settings:
 
-    -   **0** Always prompt. The Windows Defender service prompts you to confirm submission of all required files. This is the default setting for Windows Defender, but is not recommended for Windows Server 2016 installations without a GUI.
+-   **0** Always prompt. The Windows Defender service prompts you to confirm submission of all required files. This is the default setting for Windows Defender, but is not recommended for Windows Server 2016 installations without a GUI.
 
-    -   **1** Send safe samples automatically. The Windows Defender service sends all files marked as "safe" and prompts for the remainder of the files.
+-   **1** Send safe samples automatically. The Windows Defender service sends all files marked as "safe" and prompts for the remainder of the files.
 
-    -   **2** Never send. The Windows Defender service does not prompt and does not send any files.
+-   **2** Never send. The Windows Defender service does not prompt and does not send any files.
 
-    -   **3** Send all samples automatically. The Windows Defender service sends all files without a prompt for confirmation.
+-   **3** Send all samples automatically. The Windows Defender service sends all files without a prompt for confirmation.
 
-<a name="BKMK_DefExclusions"></a>
 ## Configure automatic exclusions
+
 To help ensure security and performance, certain exclusions are automatically added based on the roles and features you install when using Windows Defender AV on Server 2016.
 
 See the [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md) topic for more information. 
 
-
-
 ## Related topics
 
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+
 - [Configure exclusions in Windows Defender AV on Windows Server](configure-server-exclusions-windows-defender-antivirus.md) 
 
 
