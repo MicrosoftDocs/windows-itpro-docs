@@ -1,7 +1,7 @@
 ---
 title: Publishing Servers Results Pane Columns
 description: Publishing Servers Results Pane Columns
-author: eavena
+author: dansimp
 ms.assetid: ad875715-50b3-4881-a6b3-586238d12527
 ms.reviewer: 
 manager: dansimp

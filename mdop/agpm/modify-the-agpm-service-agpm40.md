@@ -1,7 +1,7 @@
 ---
 title: Modify the AGPM Service
 description: Modify the AGPM Service
-author: mjcaparas
+author: dansimp
 ms.assetid: 3239d088-bb86-4ec4-bc56-dbe8f1c710f5
 ms.reviewer: 
 manager: dansimp

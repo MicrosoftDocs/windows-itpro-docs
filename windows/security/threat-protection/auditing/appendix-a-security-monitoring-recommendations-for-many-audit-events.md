@@ -10,7 +10,7 @@ author: dansimp
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dolmont
+ms.author: dansimp
 ---
 
 # Appendix A: Security monitoring recommendations for many audit events

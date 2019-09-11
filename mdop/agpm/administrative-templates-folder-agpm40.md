@@ -1,7 +1,7 @@
 ---
 title: Administrative Templates Folder
 description: Administrative Templates Folder
-author: mjcaparas
+author: dansimp
 ms.assetid: abc41968-4505-4b09-94f2-67ee0e6c9aaf
 ms.reviewer: 
 manager: dansimp

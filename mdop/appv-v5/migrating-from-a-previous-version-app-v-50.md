@@ -1,7 +1,7 @@
 ---
 title: Migrating from a Previous Version
 description: Migrating from a Previous Version
-author: msfttracyp
+author: dansimp
 ms.assetid: a13cd353-b22a-48f7-af1e-5d54ede2a7e5
 ms.reviewer: 
 manager: dansimp

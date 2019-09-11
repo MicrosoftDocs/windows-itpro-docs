@@ -1,7 +1,7 @@
 ---
 title: Type of Application Page (Learn More)
 description: Type of Application Page (Learn More)
-author: manikadhiman
+author: dansimp
 ms.assetid: d1262d16-7b14-441e-8500-7974bf68d196
 ms.reviewer: 
 manager: dansimp

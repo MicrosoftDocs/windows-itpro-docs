@@ -1,7 +1,7 @@
 ---
 title: Getting Started with MED-V
 description: Getting Started with MED-V
-author: levinec
+author: dansimp
 ms.assetid: 283734d7-231c-45b6-92c9-c95a46ec3628
 ms.reviewer: 
 manager: dansimp

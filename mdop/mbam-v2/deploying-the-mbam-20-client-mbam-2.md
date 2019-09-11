@@ -1,7 +1,7 @@
 ---
 title: Deploying the MBAM 2.0 Client
 description: Deploying the MBAM 2.0 Client
-author: msfttracyp
+author: dansimp
 ms.assetid: 3dd584fe-2a54-40f0-9bab-13ea74040b01
 ms.reviewer: 
 manager: dansimp

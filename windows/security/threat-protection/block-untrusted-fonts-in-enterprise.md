@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 ms.sitesec: library
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 ms.date: 08/14/2017
 ms.localizationpriority: medium
 ---

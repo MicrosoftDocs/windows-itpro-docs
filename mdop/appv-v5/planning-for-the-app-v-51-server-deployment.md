@@ -1,7 +1,7 @@
 ---
 title: Planning for the App-V 5.1 Server Deployment
 description: Planning for the App-V 5.1 Server Deployment
-author: msfttracyp
+author: dansimp
 ms.assetid: eedd97c9-bee0-4749-9d1e-ab9528fba398
 ms.reviewer: 
 manager: dansimp
