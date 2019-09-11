@@ -1,5 +1,5 @@
 ---
-title: Overview of BitLocker Device Encryption in Windows 10
+title: Overview of BitLocker and Device Encryption in Windows 10
 description: This topic provides an overview of how BitLocker Device Encryption can help protect data on devices running Windows 10.
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -21,7 +21,7 @@ ms.reviewer:
 **Applies to**
 -   Windows 10
 
-This topic explains how BitLocker Device Encryption can help protect data on devices running Windows 10. 
+This topic explains how BitLocker and Device Encryption can help protect data on devices running Windows 10. 
 For an architectural overview about how BitLocker Device Encryption  works with Secure Boot, see [Secure boot and BitLocker Device Encryption overview](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview). 
 For a general overview and list of topics about BitLocker, see [BitLocker](bitlocker-overview.md).
 
@@ -33,13 +33,13 @@ Table 2 lists specific data-protection concerns and how they are addressed in Wi
 
 | Windows 7 | Windows 10 |
 |---|---|
-| When BitLocker is used with a PIN to protect startup, PCs such as kiosks cannot be restarted remotely. | Modern Windows devices are increasingly protected with BitLocker Device Encryption out of the box and support SSO to seamlessly protect the BitLocker encryption keys from cold boot attacks.<br><br>Network Unlock allows PCs to start automatically when connected to the internal network. |
+| When BitLocker is used with a PIN to protect startup, PCs such as kiosks cannot be restarted remotely. | Modern Windows devices are increasingly protected with BitLocker out of the box and support SSO to seamlessly protect the BitLocker encryption keys from cold boot attacks.<br><br>Network Unlock allows PCs to start automatically when connected to the internal network. |
 | When BitLocker is enabled, the provisioning process can take several hours. | BitLocker pre-provisioning, encrypting hard drives, and Used Space Only encryption allow administrators to enable BitLocker quickly on new computers. |
 | There is no support for using BitLocker with self-encrypting drives (SEDs). | BitLocker supports offloading encryption to encrypted hard drives. |
 | Administrators have to use separate tools to manage encrypted hard drives. | BitLocker supports encrypted hard drives with onboard encryption hardware built in, which allows administrators to use the familiar BitLocker administrative tools to manage them. |
 | Encrypting a new flash drive can take more than 20 minutes. | Used Space Only encryption in BitLocker To Go allows users to encrypt removable data drives in seconds. |
 | BitLocker could require users to enter a recovery key when system configuration changes occur. | BitLocker requires the user to enter a recovery key only when disk corruption occurs or when he or she loses the PIN or password. |
-| Users need to enter a PIN to start the PC, and then their password to sign in to Windows. | Modern Windows devices are increasingly protected with BitLocker Device Encryption out of the box and support SSO to help protect the BitLocker encryption keys from cold boot attacks. | 
+| Users need to enter a PIN to start the PC, and then their password to sign in to Windows. | Modern Windows devices are increasingly protected with BitLocker out of the box and support SSO to help protect the BitLocker encryption keys from cold boot attacks. | 
 
 ## Prepare for drive and file encryption
 
@@ -57,30 +57,48 @@ Basically, it was a big hassle. If IT staff were provisioning new PCs, they coul
 
 Microsoft includes instrumentation in Windows 10 that enables the operating system to fully manage the TPM. There is no need to go into the BIOS, and all scenarios that required a restart have been eliminated.
 
-## Deploy hard drive encryption
+## Deploy hard drive encryption with BitLocker
 
 BitLocker is capable of encrypting entire hard drives, including both system and data drives. BitLocker pre-provisioning can drastically reduce the time required to provision new PCs with BitLocker enabled. With Windows 10, administrators can turn on BitLocker and the TPM from within the Windows Preinstallation Environment before they install Windows or as part of an automated deployment task sequence without any user interaction. Combined with Used Disk Space Only encryption and a mostly empty drive (because Windows is not yet installed), it takes only a few seconds to enable BitLocker.
 With earlier versions of Windows, administrators had to enable BitLocker after Windows had been installed. Although this process could be automated, BitLocker would need to encrypt the entire drive, a process that could take anywhere from several hours to more than a day depending on drive size and performance, which significantly delayed deployment. Microsoft has improved this process through multiple features in Windows 10.
 
-## BitLocker Device Encryption 
+## Device Encryption 
 
-Beginning in Windows 8.1, Windows automatically enables BitLocker Device Encryption on devices that support Modern Standby. With Windows 10, Microsoft offers BitLocker Device Encryption support on a much broader range of devices, including those that are Modern Standby, and devices that run Windows 10 Home edition. 
+Beginning in Windows 8.1, Microsoft started to roll out a new feature called Device Encryption. Like BitLocker with the Drive Encryption the Device Encryption is able to encrypt internal drives to secure them. While the standard BitLocker feature is only available in the Pro, Education and Enterprise versions of Windows, Device Encryption is also available in the Home versions. This offers hard drive encryption for a broader range of devices. Windows automatically enables Device Encryption on devices that support Modern Standby.
 
-Microsoft expects that most devices in the future will pass the testing requirements, which makes BitLocker Device Encryption pervasive across modern Windows devices. BitLocker Device Encryption further protects the system by transparently implementing device-wide data encryption.
+Device Encryption uses BitLocker technology to protect the system by transparently implementing device-wide data encryption. 
 
-Unlike a standard BitLocker implementation, BitLocker Device Encryption is enabled automatically so that the device is always protected. The following list outlines how this happens:
+### Differences to the classic BitLocker encryption
 
-* When a clean installation of Windows 10 is completed and the out-of-box experience is finished, the computer is prepared for first use. As part of this preparation, BitLocker Device Encryption is initialized on the operating system drive and fixed data drives on the computer with a clear key (this is the equivalent of standard BitLocker suspended state). In this state, the drive is shown with a warning icon in Windows Explorer.  The yellow warning icon is removed after the TPM protector is created and the recovery key is backed up, as explained in the following bullet points.
+Device Encryption is made for deploying hard drive encryption on a broad range of devices and to ensure higher security standards. Compared to the classical BitLocker feature, which is only available in the Pro, Education and Enterprise versions of Windows, the device encryption lacks the following features:
+
+* Pre-Boot authentication is not possible. The security is based on the TPM chip.
+* The Recovery key is automatically uploaded to the corresponding Microsoft account or the Domain account. It is not possible to save the recovery key at another location in the first place.
+
+### System Requirements for Device Encryption
+
+Microsoft expects that most devices in the future will pass the testing requirements, which makes Device Encryption pervasive across modern Windows devices.
+The system requirements are:
+
+* The device contains a TPM (Trusted Platform Module), either TPM 1.2 or TPM 2.0.
+* UEFI Secure Boot is enabled. See [Secure boot and BitLocker Device Encryption overview](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview) for more information.
+* Platform Secure Boot is enabled
+* Direct memory access (DMA) protection is enabled
+* The user has to be logged in with a Microsoft account or a Domain account
+
+Unlike a standard BitLocker implementation, Device Encryption is enabled automatically so that the device is always protected. The following list outlines how this happens:
+
+* When a clean installation of Windows 10 is completed and the out-of-box experience is finished, the computer is prepared for first use. As part of this preparation, Device Encryption is initialized on the operating system drive and fixed data drives on the computer with a clear key (this is the equivalent of standard BitLocker suspended state). In this state, the drive is shown with a warning icon in Windows Explorer.  The yellow warning icon is removed after the TPM protector is created and the recovery key is backed up, as explained in the following bullet points.
 * If the device is not domain joined, a Microsoft account that has been granted administrative privileges on the device is required. When the administrator uses a Microsoft account to sign in, the clear key is removed, a recovery key is uploaded to the online Microsoft account, and a TPM protector is created. Should a device require the recovery key, the user will be guided to use an alternate device and navigate to a recovery key access URL to retrieve the recovery key by using his or her Microsoft account credentials.
 * If the user uses a domain account to sign in, the clear key is not removed until the user joins the device to a domain and the recovery key is successfully backed up to Active Directory Domain Services (AD DS). You must enable the **Computer Configuration\\Administrative Templates\\Windows Components\\BitLocker Drive Encryption\\Operating System Drives** Group Policy setting, and select the **Do not enable BitLocker until recovery information is stored in AD DS for operating system drives** option. With this configuration, the recovery password is created automatically when the computer joins the domain, and then the recovery key is backed up to AD DS, the TPM protector is created, and the clear key is removed.
 * Similar to signing in with a domain account, the clear key is removed when the user logs on to an Azure AD account on the device. As described in the bullet point above, the recovery password is created automatically when the user authenticates to Azure AD. Then, the recovery key is backed up to Azure AD, the TPM protector is created, and the clear key is removed.
 
-Microsoft recommends that BitLocker Device Encryption be enabled on any systems that support it, but the automatic BitLocker Device Encryption process can be prevented by changing the following registry setting:
+Microsoft recommends that Device Encryption be enabled on any systems that support it, but the automatic Device Encryption process can be prevented by changing the following registry setting:
 - **Subkey**: HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\BitLocker
 - **Value**: PreventDeviceEncryption equal to True (1)
 - **Type**: REG\_DWORD
 
-Administrators can manage domain-joined devices that have BitLocker Device Encryption enabled through Microsoft BitLocker Administration and Monitoring (MBAM). In this case, BitLocker Device Encryption automatically makes additional BitLocker options available. No conversion or encryption is required, and MBAM can manage the full BitLocker policy set if any configuration changes are required.
+Administrators can manage domain-joined devices that have Device Encryption enabled through Microsoft BitLocker Administration and Monitoring (MBAM). In this case, Device Encryption automatically makes additional BitLocker options available. No conversion or encryption is required, and MBAM can manage the full BitLocker policy set if any configuration changes are required.
 
 ## Used Disk Space Only encryption
 
