@@ -77,7 +77,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 2. From the upper right-hand menu, click **?**. Then, select **Consult a threat expert**. 
 
-![Image of Microsoft Threat Experts Experts on Demand from the menu](images/MTE_EOD_Menu.png)
+>![Image of Microsoft Threat Experts Experts on Demand from the menu](images/MTE_EOD_Menu.png)
 
 >A flyout screen opens.
 
@@ -89,7 +89,6 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
   
 4. Enter the email address that you'd like to use to correspond with Microsoft Threat Experts.
    
-
 ## Sample investigation topics that you can consult with Microsoft Threat Experts
 
 **Alert information**
