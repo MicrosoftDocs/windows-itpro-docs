@@ -198,6 +198,7 @@ In most cases, an IT Pro does not need to define this policy. Instead, it is exp
 <!--/Validation-->
 <!--/Policy-->
 <hr/>
+
 Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
