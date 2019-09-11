@@ -14,7 +14,7 @@ ms.localizationpriority: Medium
 ---
 
 # Connect devices to Surface Hub 2S
-Surface Hub 2S lets you connect external devices, mirror the display on Surface Hub 2S to another device, and connect a wide variety of third-party peripherals including video conference cameras, conference phones, and room system devices.
+Surface Hub 2S enables you to connect external devices, mirror the display on Surface Hub 2S to another device, and connect multiple third-party peripherals including video conference cameras, conference phones, and room system devices.
 
 You can display content from your devices to Surface Hub 2S. If the source device is Windows-based, that device can also provide TouchBack and InkBack, which takes video and audio from the connected device and presents them on Surface Hub 2S. If Surface Hub 2S encounters a High-Bandwidth Digital Content Protection (HDCP) signal, such as a Blu-ray DVD player, the source is displayed as a black image.
 
@@ -23,11 +23,10 @@ You can display content from your devices to Surface Hub 2S. If the source devic
 
 ## Recommended wired configurations 
 
-In general, it’s recommended to use native cable connections whenever possible such as USB-C to USB-C or HDMI to HDMI. Other combinations such as MiniDP to HDMI or MiniDP to USB-C will also work.
+In general, it’s recommended to use native cable connections whenever possible such as USB-C to USB-C or HDMI to HDMI. Other combinations such as MiniDP to HDMI or MiniDP to USB-C will also work. Some additional configuration may be required to optimize the video-out experience, as described on this page.
 
 | **Connection** | **Functionality** | **Description**|
 | --- | --- | ---|
-| USB-C <br>(via compute module) | Video-in<br> Video-out<br> Audio-in<br> Audio-out <br><br>TouchBack and InkBack  | Provides video, audio, and TouchBack/InkBack on a single cable.<br><br>**NOTE:** Some configuration is required to optimize the video-out experience. Refer to the section below: [Mirroring Surface Hub 2S display on another device](#). |
 | HDMI + USB-C | HDMI-in for audio and video<br><br>USB-C for TouchBack and InkBack | USB-C supports TouchBack and InkBack with the HDMI A/V connection.<br><br>Use USB-C to USB-A to connect to legacy computers.<br><br>**NOTE:** For best results, connect HDMI before connecting a USB-C cable. If the computer you're using for HDMI is not compatible with TouchBack and InkBack, you won't need a USB-C cable. |
 | USB-C <br> (via compute module) | Video-in <br>Audio-in | Single cable needed for A/V<br><br>TouchBack and InkBack not supported<br><br>HDCP enabled |
 | HDMI (in port) | Video, Audio into Surface Hub 2S | Single cable needed for A/V<br><br>TouchBack and InkBack not supported<br><br>HDCP enabled |
@@ -68,7 +67,7 @@ You can input video to Surface Hub 2S using USB-C or HDMI, as indicated in the f
 
 ## Mirroring Surface Hub 2S display on another device
 
-You can output video to another display using either USB-C or MiniDP, as indicated in the following table.
+You can output video to another display using MiniDP, as indicated in the following table.
 
 ### Surface Hub 2S video-out settings
 
