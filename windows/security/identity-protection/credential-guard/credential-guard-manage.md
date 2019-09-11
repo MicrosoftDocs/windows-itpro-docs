@@ -86,6 +86,8 @@ You can do this by using either the Control Panel or the Deployment Image Servic
     ```
     dism /image:<WIM file name> /Enable-Feature /FeatureName:IsolatedUserMode
     ```
+> [!NOTE]
+> In Windows 10 1607 or later versions, Isolated User Mode feature has been integrated into the core Operating system, so running the above command step 3 is no longer necessary
 
 > [!NOTE]
 > You can also add these features to an online image by using either DISM or Configuration Manager.
