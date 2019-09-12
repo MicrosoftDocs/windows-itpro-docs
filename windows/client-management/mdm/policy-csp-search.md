@@ -918,27 +918,6 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Search policies supported by HoloLens 2
-
-- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
-<!--EndHoloLens2-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Search policies supported by HoloLens (1st gen) Commercial Suite
-
-- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
-<!--EndHoloLensBusiness-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Search policies supported by HoloLens (1st gen) Development Edition
-
-- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
-<!--EndHoloLens-->
-
 <hr/>
 
 Footnotes:
@@ -949,3 +928,5 @@ Footnotes:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
+
+<!--/Policies-->
