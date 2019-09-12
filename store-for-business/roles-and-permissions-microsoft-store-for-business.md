@@ -54,7 +54,7 @@ These permissions allow people to:
     --> 
     
 ## Purchasing roles and permissions
-There are also a set of roles, referred to as "Purchasing roles", that can be assigned to users to allow them to use the service to buy and manage apps for the organization at large, or for themselves. 
+There is also a set of roles, referred to as "Purchasing roles", that can be assigned to users to allow them to use the service to buy and manage apps for the organization at large, or for themselves. 
 
 This table lists the roles and their permissions.
 
