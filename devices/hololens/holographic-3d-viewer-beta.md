@@ -1,6 +1,6 @@
 ---
 title: Using 3D Viewer Beta on HoloLens
-description: 
+description: Describes the types of files and features that 3D Viewer Beta on HoloLens supports, and how to use and troubleshoot the app.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -9,7 +9,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 9/3/19
 ms.reviewer: 
-manager: jarrettr
+manager: dcscontentpm
 appliesto:
 - HoloLens 1
 ---
@@ -40,7 +40,7 @@ If you're having trouble after reading these topics, see [Troubleshooting](#trou
 
 ### Geometry
 
-- Polygonal models only. No subdivision surfaces or NURBs.
+- Polygonal models only. No subdivision surfaces or NURBs
 - Right-handed coordinate system
 - Shear in transformation matrices is not supported
 
@@ -131,13 +131,13 @@ FBX files can be opened directly from a website using Microsoft Edge on HoloLens
 1. Select the file to download it.
 1. When the download is complete, select the **Open** button in Microsoft Edge to open the file in 3D Viewer Beta.
 
-The downloaded file can be accessed and opened again later via Downloads in Microsoft Edge. To save a 3D model and ensure continued access, download the file on your PC and save it to your OneDrive account. The file can then be opened from the OneDrive app on HoloLens. See [**]Open an FBX file from OneDrive]() for more information.
+The downloaded file can be accessed and opened again later by using Downloads in Microsoft Edge. To save a 3D model and ensure continued access, download the file on your PC and save it to your OneDrive account. The file can then be opened from the OneDrive app on HoloLens. See [Open an FBX file from OneDrive]() for more information.
 
 Note: Some websites with downloadable FBX models provide them in compressed ZIP format. 3D Viewer Beta cannot open ZIP files directly. Instead, use your PC to extract the FBX file and save it to your OneDrive account. The file can then be opened from the OneDrive app on HoloLens.
 
 ### Open an FBX file from OneDrive
 
-FBX files can be opened from OneDrive using the OneDrive app on HoloLens. Be sure you've installed OneDrive using Microsoft Store app on HoloLens and that you've already uploaded the FBX file to OneDrive on your PC.
+FBX files can be opened from OneDrive by using the OneDrive app on HoloLens. Be sure you've installed OneDrive using Microsoft Store app on HoloLens and that you've already uploaded the FBX file to OneDrive on your PC.
 
 Once in OneDrive, FBX files can be opened on HoloLens using 3D Viewer Beta in one of two ways:
 
@@ -146,9 +146,9 @@ Once in OneDrive, FBX files can be opened on HoloLens using 3D Viewer Beta in on
 
 ## Troubleshooting
 
-### I see a warning when opening a 3D model
+### I see a warning when I open a 3D model
 
-You will see a warning if you attempt to open a 3D model containing features not supported by 3D Viewer Beta, or if the model is too complex and performance may be impacted. 3D Viewer Beta will still load the 3D model, but performance or visual fidelity may be compromised.
+You will see a warning if you attempt to open a 3D model that contains features that are not supported by 3D Viewer Beta, or if the model is too complex and performance may be affected. 3D Viewer Beta will still load the 3D model, but performance or visual fidelity may be compromised.
 
 For more info, see [Supported content specifications](#supported-content-specifications) and [Optimizing 3D models for 3D Viewer Beta](#optimizing-3d-models-for-3d-viewer-beta).
 
@@ -170,7 +170,7 @@ For more info, see [Supported content specifications](#supported-content-specifi
 
 ### I experience performance drops while viewing my 3D model
 
-Performance when loading and viewing a 3D model can be impacted by the complexity of the model, number of models open simultaneously, or number of models with active animations.
+Performance when loading and viewing a 3D model can be affected by the complexity of the model, number of models open simultaneously, or number of models with active animations.
 
 For more info, see [Optimizing 3D models for 3D Viewer Beta](#optimizing-3d-models-for-3d-viewer-beta) and [File and model limitations](#file-and-model-limitations).
 
@@ -178,7 +178,7 @@ For more info, see [Optimizing 3D models for 3D Viewer Beta](#optimizing-3d-mode
 
 3D Viewer Beta is automatically associated with the .fbx file extension when it is installed.
 
-If attempting to open an FBX file shows a dialog directing you to Microsoft Store, you do not currently have an app associated with the .fbx file extension on HoloLens.
+If you try to open an FBX file and see a dialog box that directs you to Microsoft Store, you do not currently have an app associated with the .fbx file extension on HoloLens.
 
 Verify that 3D Viewer Beta is installed. If it is not installed, download it from Microsoft Store on HoloLens.
 
