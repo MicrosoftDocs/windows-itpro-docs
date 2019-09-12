@@ -9,13 +9,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 07/20/2018
+ms.date: 09/12/2019
 ---
 
 # SUPL CSP
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 The SUPL configuration service provider is used to configure the location client, as shown in the following table.
 
@@ -86,7 +86,10 @@ If this value is not specified, the device infers the H-SLP address from the IMS
 For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.
 
 <a href="" id="version"></a>**Version**  
-Optional. Determines the version of the SUPL protocol to use. For SUPL 1.0, set this value to `1`. For SUPL 2.0, set this value to `2`. The default is 1.
+Optional. Determines which SUPL major version the GPS driver should use. (Refer to the FullVersion field for extended usage.) For SUPL 1.0.0, set this value to `1`. For SUPL 2.0.0, set this value to `2`. The default is 1.
+
+<a href="" id="fullversion"></a>**FullVersion**  
+Added in the next major release of Windows 10. Optional. Determines which full version (X, Y, or Z) the GPS driver should use. X, Y, and Z are the major, minor, and service indicator versions, respectively. If FullVersion field is defined, a Version field that defines only the major version is ignored.
 
 <a href="" id="mccmncpairs"></a>**MCCMNCPairs**  
 Required. List all of the MCC and MNC pairs owned by the mobile operator. This list is used to verify that the UICC matches the network and SUPL can be used. When the UICC and network do not match, the device uses the default location service and does not use SUPL.
@@ -582,18 +585,6 @@ The following table shows the Microsoft custom elements that this configuration 
 </table>
 
  
-
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-
