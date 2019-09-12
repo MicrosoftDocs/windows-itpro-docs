@@ -51,7 +51,6 @@ The following table describes the ways Microsoft Defender ATP can help prevent i
 For more information about controlling USB devices, see the [Microsoft Secure blog "WDATP has protections for USB and removable devices"](https://aka.ms/devicecontrolblog).
 
 | Control  | Description |
-
 |----------|-------------|
 | [Block installation and usage of removable storage](#block-installation-and-usage-of-removable-storage) | Users can't install or use removable storage |
 | [Only allow installation and usage of specifically approved peripherals](#only-allow-installation-and-usage-of-specifically-approved-peripherals)   | Users can only install and use approved peripherals that report specific properties in their firmware |
@@ -159,7 +158,7 @@ When configuring the allow device installation policy, you will need to allow al
 
 ![Device by Connection](images/devicesbyconnection.png)
 
-In this example, the following classesneeded to be added: HID, Keboard, and {36fc9e60-c465-11cf-8056-444553540000}. More information on [Microsoft-provided USB drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/supported-usb-classes).
+In this example, the following classes needed to be added: HID, Keboard, and {36fc9e60-c465-11cf-8056-444553540000}. More information on [Microsoft-provided USB drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/supported-usb-classes).
 
 ![Device host controller](images/devicehostcontroller.jpg)
 
@@ -186,8 +185,6 @@ If you want to prevent a device class or certain devices, you can use the preven
 > The prevent device installation policies take precedence over the allow device installation policies.
 
 ### Block installation and usage of removable storage
-
-When you block USB devices or any other device classes using the device installation policies, connected devices, such as phones, can still charge.
 
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
 2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**.
@@ -241,7 +238,7 @@ Using Intune, you can limited the services that can use Bluetooth through the â€
 
 ## Respond to threats
 
-You can create custom alerts and automatic response actions with the [Microsoft Defender ATP Custom Detection Rules](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules). Response actions within the custom detection covers both machine and file level actions. You can also create alerts and automatic response actions using [PowerApps](https://powerapps.microsoft.com/en-us/) and [Flow](https://flow.microsoft.com/en-us/) with the [Microsoft Defender ATP connector](https://docs.microsoft.com/en-us/connectors/wdatp/). The connector supports actions for investigation, threat scanning, and restricting running applications. It is one of over 200 pre-defined connectors including Outlook, Teams, Slack, and more. Custom connectors can also be built. See [Connectors](https://docs.microsoft.com/en-us/connectors/) to learn more about connectors.
+You can create custom alerts and automatic response actions with the [Microsoft Defender ATP Custom Detection Rules](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules). Response actions within the custom detection cover both machine and file level actions. You can also create alerts and automatic response actions using [PowerApps](https://powerapps.microsoft.com/en-us/) and [Flow](https://flow.microsoft.com/en-us/) with the [Microsoft Defender ATP connector](https://docs.microsoft.com/en-us/connectors/wdatp/). The connector supports actions for investigation, threat scanning, and restricting running applications. It is one of over 200 pre-defined connectors including Outlook, Teams, Slack, and more. Custom connectors can also be built. See [Connectors](https://docs.microsoft.com/en-us/connectors/) to learn more about connectors.
  
 For example, using either approach, you can automatically have the Microsoft Defender Antivirus run when a USB device is mounted onto a machine.
 
