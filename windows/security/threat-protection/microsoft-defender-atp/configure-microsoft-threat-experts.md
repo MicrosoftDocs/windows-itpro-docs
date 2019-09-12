@@ -26,8 +26,6 @@ ms.topic: article
 [!include[Prerelease information](prerelease.md)]
 
 ## Before you begin 
-To experience the full Microsoft Threat Experts targeted attack notification capability in Microsoft Defender ATP, or try the the experts-on-demand capability, you need to have a valid Premier customer service and support account. Premier charges are not incurred during for the capability in trial, but for the generally available capability, there will be charges.
-
 Ensure that you have Microsoft Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up. 
 
 ## Register to Microsoft Threat Experts managed threat hunting service 
@@ -36,13 +34,13 @@ If you're already a Microsoft Defender ATP customer, you can apply through the M
 1. From the navigation pane, go to **Settings > General > Advanced features > Microsoft Threat Experts**.
 
 2. Click **Apply**. 
-![Image of Microsoft Threat Experts settings](images/MTE_collaboratewithmte.png)
+![Image of Microsoft Threat Experts settings](images/mte-collaboratewithmte.png)
 
 3. Enter your name and email address so that Microsoft can get back to you on your application. 
-![Image of Microsoft Threat Experts application](images/MTE_apply.png)
+![Image of Microsoft Threat Experts application](images/mte-apply.png)
 
 4. Read the privacy statement, then click **Submit** when you're done. You will receive a welcome email once your application is approved.   
-![Image of Microsoft Threat Experts application confirmation](images/MTE_applicationconfirmation.png)
+![Image of Microsoft Threat Experts application confirmation](images/mte-applicationconfirmation.png)
 
 6. From the navigation pane, go to **Settings** > **General** > **Advanced features** to turn the **Threat Experts** toggle on. Click **Save preferences**. 
 
@@ -77,11 +75,11 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 2. From the upper right-hand menu, click **?**. Then, select **Consult a threat expert**. 
 
->![Image of Microsoft Threat Experts Experts on Demand from the menu](images/MTE_EOD_Menu.png)
+>![Image of Microsoft Threat Experts Experts on Demand from the menu](images/mte-eod-menu.png)
 
 >A flyout screen opens.
 
->![Image of Microsoft Threat Experts Experts on Demand screen](images/MTE_EOD.png)
+>![Image of Microsoft Threat Experts Experts on Demand screen](images/mte-eod.png)
 
 >The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or machine details page that you were at when you made the request.
 
