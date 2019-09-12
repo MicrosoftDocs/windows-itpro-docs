@@ -1812,7 +1812,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Specifies a list of process paths (may contain wildcards) which are candidates for using virtual components (shell extensions, browser helper objects, etc). Only processes whose full path matches one of these items can use virtual components.
+Specifies a list of process paths (may contain wildcards) which are candidates for using virtual components (shell extensions, browser helper objects, etc.). Only processes whose full path matches one of these items can use virtual components.
 
 <!--/Description-->
 > [!TIP]

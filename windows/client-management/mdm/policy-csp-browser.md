@@ -319,7 +319,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 1.  Open Microsoft Edge.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
-4.  Verify the setting **Save form entries** is greyed out.
+4.  Verify the setting **Save form entries** is grayed out.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -641,7 +641,7 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
-4.  Verify the setting **Send Do Not Track requests** is greyed out.
+4.  Verify the setting **Send Do Not Track requests** is grayed out.
 
 <!--/Validation-->
 <!--/Policy-->
