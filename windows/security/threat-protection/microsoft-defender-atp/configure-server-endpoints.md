@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -33,7 +34,7 @@ ms.topic: article
 Microsoft Defender ATP extends support to also include the Windows Server operating system, providing advanced attack detection and investigation capabilities, seamlessly through the Microsoft Defender Security Center console.
 
 The service supports the onboarding of the following servers:
-- Windows Server 2008 R2 SP1 (pre-release)
+- Windows Server 2008 R2 SP1 
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
@@ -73,7 +74,7 @@ You'll need to take the following steps if you choose to onboard servers through
     >This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2008 R2 SP1 and Windows Server 2012 R2.
 
 - Turn on server monitoring from Microsoft Defender Security Center.
-- If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), simply attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multi Homing support. Otherwise, install and configure MMA to report sensor data to Microsoft Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
+- If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), simply attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multihoming support. Otherwise, install and configure MMA to report sensor data to Microsoft Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
 
 
 >[!TIP]
@@ -205,7 +206,7 @@ For other server versions, you have two options to offboard servers from the ser
 >[!NOTE]
 >Offboarding causes the server to stop sending sensor data to the portal but data from the server, including reference to any alerts it has had will be retained for up to 6 months.
 
-### Uninstall servers by uinstalling the MMA agent
+### Uninstall servers by uninstalling the MMA agent
 To offboard the server, you can uninstall the MMA agent from the server or detach it from reporting to your Microsoft Defender ATP workspace. After offboarding the agent, the server will no longer send sensor data to Microsoft Defender ATP.
 For more information, see [To disable an agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
 
