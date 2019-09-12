@@ -103,6 +103,7 @@
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/overview-hunting.md)
 #### [Query data using Advanced hunting](microsoft-defender-atp/advanced-hunting.md)
+#### [Stream Advanced hunting events to Azure Event Hubs](microsoft-defender-atp/raw-data-export-event-hub.md)
 #### [Advanced hunting schema reference]()
 ##### [All tables in the Advanced hunting schema](microsoft-defender-atp/advanced-hunting-reference.md)
 ##### [AlertEvents table](microsoft-defender-atp/advanced-hunting-alertevents-table.md)
@@ -116,6 +117,7 @@
 ##### [ProcessCreationEvents table](microsoft-defender-atp/advanced-hunting-processcreationevents-table.md)
 ##### [RegistryEvents table](microsoft-defender-atp/advanced-hunting-registryevents-table.md)
 #### [Advanced hunting query language best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
+
 
 #### [Custom detections]()
 ##### [Understand custom detection rules](microsoft-defender-atp/overview-custom-detections.md)
