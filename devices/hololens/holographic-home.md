@@ -44,7 +44,7 @@ To get back to **Start** from the **All apps** list, select **Pinned apps**.
 
 ## Open apps on HoloLens
 
-Apps on HoloLens use either 2D view or holographic view. Apps with 2D view look like windows, and apps with holographic view surround you and become the only app you see.
+Apps on HoloLens use either 2D view or holographic view. Apps that use 2D view look like windows, and apps that use holographic view surround you and become the only app you see.
 
 You'll find your apps either pinned to **Start** or in the **All apps** list. To get to the **All apps** list, use the bloom gesture to go to **Start**, then select **All apps**.
 
