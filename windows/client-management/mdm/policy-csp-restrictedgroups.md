@@ -52,12 +52,6 @@ manager: dansimp
 	<td></td>
 </tr>
 </table>
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/SupportedSKUs-->
 <!--Scope-->
@@ -132,15 +126,23 @@ Here is an example:
     </accessgroup>
 </groupmembership>
 ```
+
+> [!Note]
+> * You should include the local administrator while modifying the administrators group to prevent accidental loss of access
+> * Include the entire UPN after AzureAD
 <!--/Example-->
 <!--Validation-->
 
 <!--/Validation-->
 <!--/Policy-->
 <hr/>
+Footnotes:
 
-Take note:
-* You should include the local administrator while modifying the administrators group to prevent accidental loss of access
-* Include the entire UPN after AzureAD
+-   1 - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
+-   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in Windows 10, version 1903.
 
-
+<!--/Policies-->
