@@ -27,7 +27,7 @@ IT Pros with Global Administrator permissions have full access to manage the Mic
 
 ## Billing account roles and permissions
 
-There are a set of roles, referred to as "Billing Account" roles, that are assigned to admins and employees who will use the Microsoft Store for Business or Microsoft Store for Education tenant to buy and manage Microsoft Store apps, and/or administer account details and billing information, for an organization. Employees with these roles will need to use their Azure AD account to access the tenant.
+There is a set of roles, referred to as "Billing Account" roles, that is assigned to admins and employees who will use the Microsoft Store for Business or Microsoft Store for Education tenant to buy and manage Microsoft Store apps, and/or administer account details and billing information for an organization. Employees with these roles will need to use their Azure AD account to access the tenant.
 
 This table lists the roles and their permissions.
 
