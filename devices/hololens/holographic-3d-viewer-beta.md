@@ -9,7 +9,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 9/3/19
 ms.reviewer: 
-manager: dcscontentpm
+manager: jarrettr
 appliesto:
 - HoloLens 1
 ---
