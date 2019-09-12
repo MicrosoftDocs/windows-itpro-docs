@@ -35,7 +35,7 @@ Want to snap a quick picture? Press the [volume up and volume down buttons](holo
 
 Use the bloom gesture to go to **Start**, then select **Video**. Use gaze to position the video frame, then air tap to start recording. To stop recording, use bloom once. The video will be saved to your collection in the Photos app.
 
-To start recording more quickly, press and hold the volume up and volume down buttons simultaneously until a 3-second countdown begins. To stop recording, tap both buttons.
+To start recording more quickly, press and hold the volume up and volume down buttons simultaneously until a three-second countdown begins. To stop recording, tap both buttons.
 
 > [!TIP]
 > You can always have Cortana take a photo or a video for you. Just say "Hey Cortana, take a photo" or "Hey Cortana, take a video." [What else can I say to Cortana?](hololens-cortana.md)
@@ -50,4 +50,4 @@ To pin a photo or video in your world, open it, then select **Place in mixed wor
 
 To share images to a social network, in the Collection view, tap and hold the photo you want to share, then select **Share**. Select **Share Assistant**, then select the app that you want to share to.
 
-You can also share directly from the camera app right after you take a photo - at the top of the image, select **Share**.
+You can also share directly from the camera app right after you take a photo&mdash;at the top of the image, select **Share**.
