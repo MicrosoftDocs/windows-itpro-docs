@@ -36,6 +36,7 @@ Response actions run along the top of the file page, and include:
 - Stop and Quarantine File
 - Add Indicator
 - Download file
+- Consult a threat expert
 - Action center
 
 You can also submit files for deep analysis, to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. You can submit files for deep analysis and read past reports by selecting the **Deep analysis** tab. It's located below the file information cards.
@@ -173,7 +174,7 @@ If a file is not already stored by Microsoft Defender ATP, you cannot download i
 
 You can consult a Microsoft threat expert for more insights regarding a potentially compromised machine or already compromised ones. Microsoft Threat Experts can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights not just regarding a potentially compromised machine, but also to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, or a threat intelligence context that you see on your portal dashboard.
 
-See [Consult a Microsoft Threat Expert](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) for details.
+See [Consult a Microsoft Threat Expert](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) for details.
 
 ## Check activity details in Action center
 
