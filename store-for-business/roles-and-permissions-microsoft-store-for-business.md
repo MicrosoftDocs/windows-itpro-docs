@@ -22,7 +22,7 @@ Microsoft Store for Business and Microsoft Store for Education service tenants p
 
 ## Global user account permissions
 
-IT Pros with Global Administrator permissions have full access to manage the Microsoft Store for Business or Microsoft Store for Education tenant. The user who signs up for a Microsoft Store for Business or Microsoft Store for Education tenant is granted this Global Admin role. They can do everything allowed by the other roles, and would assign permissions to other employees as a part of the tenant set-up process.
+Users with Global Administrator permissions have full access to manage the Microsoft Store for Business or Microsoft Store for Education tenant. Users who sign up for a Microsoft Store for Business or Microsoft Store for Education tenant are granted this Global Admin role. They can do everything allowed by the other roles, and would assign permissions to other employees as a part of the tenant set-up process.
 
 
 ## Billing account roles and permissions
