@@ -9,6 +9,7 @@ ms.sitesec: library
 author: scooley
 ms.author: scooley
 ms.topic: article
+manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
@@ -17,7 +18,7 @@ appliesto:
 
 # Navigate the Windows Mixed Reality home
 
-Just like the Windows PC experience starts with an empty desktop, Windows Mixed Reality starts with your physical surroundings as your holographic home. You can use the Start menu anywhere to open and place apps and content in your space, filling your home with mixed reality content and multitask by using multiple apps at the same time. The things you place in your home stay there, even if you restart your device.
+Just like the Windows PC experience starts with an empty desktop, Windows Mixed Reality starts with your physical surroundings as your holographic home. You can use the **Start** menu anywhere to open and place apps and content in your space, filling your home with mixed reality content and multitask by using multiple apps at the same time. The things you place in your home stay there, even if you restart your device.
 
 ## Use the Start menu
 
@@ -28,7 +29,7 @@ Wherever you are in HoloLens, you can always open the **Start** menu by using th
 > [!TIP]
 > When the **Start** menu is open, use the start gesture to hide it again.
 
-The **Start** menu has all of your holographic applications but it is also a great place for common tasks and status.  You'll see indicators for Wi-Fi, battery, and volume, plus a clock. The tiles are your pinned apps.
+The **Start** menu has all of your holographic applications, and it is also a great place for common tasks and status.  You'll see indicators for Wi-Fi, battery, and volume, plus a clock. The tiles are your pinned apps.
 
 To talk to Cortana, select her tile, or just say "Hey Cortana" from anywhere on HoloLens. At the bottom you'll find the photo and video icons, which open the camera app.
 
@@ -93,7 +94,7 @@ Gaze at the app, and tap and hold with both hands to select it. Rotate the app b
 
 To close an app that uses 2D view, gaze at it, then select **Close**.
 
-To close an app that uses holographic view, use the bloom gesture to leave holographic view, then select **Close**.
+To close an app that uses holographic view, use the bloom gesture (or tap your wrist) to leave holographic view, then select **Close**.
 
 ## Pin apps
 
@@ -103,7 +104,7 @@ Keep your favorite apps handy by pinning them to **Start**. In the **All apps** 
 
 If you’re using HoloLens and having trouble placing holograms, here are some things to try:
 
-- Make sure you’re in a well-lit room without a lot of direct sunlight.
-- Stand 1 to 3 meters from where you’re trying to place the hologram.
+- Make sure that you’re in a well-lit room that does not receive a lot of direct sunlight.
+- Stand one to three meters from where you’re trying to place the hologram.
 - Don’t place holograms on black or reflective surfaces.
-- Walk around so HoloLens can scan your surroundings.
+- Walk around so that HoloLens can scan your surroundings.
