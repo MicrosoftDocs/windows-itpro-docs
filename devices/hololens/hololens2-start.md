@@ -35,13 +35,13 @@ The first time you connect, you'll need an open or password-protected network th
 
 ## Set up Windows
 
-The first run experience will let you Set up Windows Holographic on your HoloLens 2 and walk you through the following steps: 
+The first run experience will let you Set up Windows Holographic on your HoloLens 2 and walk you through the following steps:
 
-1. Select your language. 
+1. Select your language.
 
-1. Select your region. 
+1. Select your region.
 
-1. [Calibrate](hololens2-start.md#calibration) HoloLens to your eyes. 
+1. [Calibrate](hololens2-start.md#calibration) HoloLens to your eyes.
 
 1. Connect to the internet (select Wi-Fi or your ethernet connection).
 
@@ -57,9 +57,9 @@ The first run experience will let you Set up Windows Holographic on your HoloLen
 
     > The device sets your time zone automatically based on information obtained from the Wi-Fi network. This can be changed later from Settings. 
 
-1. Make a choice for enabling speech on HoloLens 2 and diagnostic telemetry. 
+1. Make a choice for enabling speech on HoloLens 2 and diagnostic telemetry.
 
-1. Learn how to use the Start gesture on HoloLens 2. 
+1. Learn how to use the Start gesture on HoloLens 2.
 
 ## Calibration
 

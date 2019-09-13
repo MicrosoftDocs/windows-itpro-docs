@@ -19,17 +19,17 @@ appliesto:
 
 # Improve visual quality and comfort
 
-HoloLens (1st gen), HoloLens 2 and Windows Mixed Reality immersive headsets offer different ways to improve quality of your visual experience. During the setup process, both [HoloLens 2](#calibrating-your-hololens-2) and [HoloLens (1st gen)](#calibrating-your-hololens-1st-gen) offer a calibration process that adapts the visuals to your eyes. Similarly, Windows Mixed Reality immersive headsets offer an [app]() that you can use to adapt the visuals to your eyes.
+HoloLens (1st gen), HoloLens 2 and Windows Mixed Reality immersive headsets offer different ways to improve quality of your visual experience. During the setup process, both [HoloLens 2](#calibrating-your-hololens-2) and [HoloLens (1st gen)](#calibrating-your-hololens-1st-gen) offer a calibration process that adapts the visuals to your eyes. Similarly, Windows Mixed Reality immersive headsets offer an app that you can use to adapt the visuals to your eyes.
 
 ## Calibrating your HoloLens 2
 
-HoloLens 2 is designed to provide the highest quality visual imagery and comfort. It uses eye-tracking technology improve your experience of seeing and interacting with the virtual environment. Calibrating the HoloLens 2 ensures that it can accurately track your eyes (and the eyes of anyone else who uses the device). 
+HoloLens 2 is designed to provide the highest quality visual imagery and comfort. It uses eye-tracking technology improve your experience of seeing and interacting with the virtual environment. Calibrating the HoloLens 2 ensures that it can accurately track your eyes (and the eyes of anyone else who uses the device).
 
-When you set up your HoloLens 2 device, it prompts you to calibrate your visuals. 
+When you set up your HoloLens 2 device, it prompts you to calibrate your visuals.
 
 ![Calibration prompt](./images/A-Calibration-2-Adjust-Hololens.png)
 
-During this process, it asks you to look at a set of fixation target images. 
+During this process, it asks you to look at a set of fixation target images.
 
 ![Image shown during the calibration process](./images/B-Calibration-4-Gem.png)
 
@@ -45,7 +45,7 @@ Multiple users can share a HoloLens 2 device, without a need for each person to 
 
 ### HoloLens 2 eye-tracking technology and data
 
-The device uses its eye-tracking technology to improve display quality, and to ensure that all holograms are positioned accurately and comfortable to view in 3D. Because it uses the eyes as landmarks, the device can adjust itself for every user and tune its visuals as the headset shifts slightly throughout use.  All adjustments happen on the fly without a need for manual tuning. 
+The device uses its eye-tracking technology to improve display quality, and to ensure that all holograms are positioned accurately and comfortable to view in 3D. Because it uses the eyes as landmarks, the device can adjust itself for every user and tune its visuals as the headset shifts slightly throughout use.  All adjustments happen on the fly without a need for manual tuning.
 
 HoloLens applications use eye tracking to track where you are looking in real time. This is the main capability developers can leverage to enable a whole new level of context, human understanding and interactions within the Holographic experience. Developers don’t need to do anything to leverage this capability.
 
@@ -58,7 +58,7 @@ The eye-tracking data itself remains internal, and is not available to developer
 1. Select **Settings**, and then select **System** > **Calibration** > **Eye Calibration** > **Run eye calibration**.
 
    ![The Settings app, showing the Run eye calibration option](./images/C-Settings.Calibration.png)
-   
+
 ### Troubleshooting HoloLens 2 calibration
 
 Calibration should work for most users, but there are cases in which you may not be able to calibrate successfully. The following factors (and others like them) can interfere with the calibration process:

@@ -34,7 +34,7 @@ Classes of Bluetooth devices supported by HoloLens (1st gen):
 - HoloLens (1st gen) clicker
 
 > [!NOTE]
-> Other types of Bluetooth devices, such as speakers, headsets, smartphones, and game pads, may appear as available in HoloLens settings, but aren't supported on HoloLen (1st gen). [Learn more](http://go.microsoft.com/fwlink/p/?LinkId=746660).
+> Other types of Bluetooth devices, such as speakers, headsets, smartphones, and game pads, may appear as available in HoloLens settings, but aren't supported on HoloLens (1st gen). [Learn more](http://go.microsoft.com/fwlink/p/?LinkId=746660).
 
 ### Pair a Bluetooth keyboard or mouse
 
@@ -43,8 +43,6 @@ Classes of Bluetooth devices supported by HoloLens (1st gen):
 1. Use the bloom gesture (HoloLens (1st gen) or the start gesture (HoloLens 2) to go to **Start**, then select **Settings**.
 1. Select **Devices** and make sure that Bluetooth is on. When you see the device name, select **Pair** and follow the instructions.
 
-> Learn more about supported languages for HoloLens [here]().
-
 ### Pair the clicker
 
 > Applies to HoloLens (1st gen) only.
@@ -52,18 +50,14 @@ Classes of Bluetooth devices supported by HoloLens (1st gen):
 1. Use the bloom gesture to go to **Start**, then select **Settings**.
 
 1. Select **Devices** and make sure that Bluetooth is on.
-1. Use the tip of a pen to press and hold the clicker's pairing button until the status light blinks white. Make sure to hold the button down until the light starts blinking. [Where's the pairing button?](hololens-clicker.md)
+1. Use the tip of a pen to press and hold the clicker's pairing button until the status light blinks white. Make sure to hold the button down until the light starts blinking. [Where's the pairing button?](hololens1-clicker.md)
 1. On the pairing screen, select **Clicker** > **Pair**.
 
 ## Connect USB-C devices
 
 > Applies to HoloLens 2 only.
 
-<<<<<<< HEAD
 HoloLens 2 lets you connect a wide range of USB-C devices.
-=======
-You can connect a wide range of USB-c devices to your HoloLens 2 device.
->>>>>>> 4aded6340829591f44959c9e1b1428ac25d711b0
 
 HoloLens 2 supports the following devices classes:
 
@@ -77,4 +71,4 @@ HoloLens 2 supports the following devices classes:
 
 ## Connect to Miracast
 
-Use Miracast by opening the **Start** menu and selecting the display icon or saying "Connect" while gazing at the **Start** menu. Choose an available device from the list that appears and complete pairing to begin projection. 
+Use Miracast by opening the **Start** menu and selecting the display icon or saying "Connect" while gazing at the **Start** menu. Choose an available device from the list that appears and complete pairing to begin projection.

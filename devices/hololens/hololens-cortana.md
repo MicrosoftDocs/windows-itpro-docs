@@ -29,7 +29,7 @@ This article teachs you how to control HoloLens and your holographic world with 
 
 ## Built-in voice commands
 
-Get around HoloLens faster with these basic commands. In order to use these you need to enable Speech during first run of the device or in **Settings** > **Privacy** > **Speech**. You can always check whether speech is enabled by looking at the status at the top of Start menu. 
+Get around HoloLens faster with these basic commands. In order to use these you need to enable Speech during first run of the device or in **Settings** > **Privacy** > **Speech**. You can always check whether speech is enabled by looking at the status at the top of Start menu.
 
 ### General speech commands
 
@@ -57,7 +57,7 @@ To use these commands, gaze at a 3D object, hologram, or app window.
 
 ### See it, say it
 
-Many buttons and other elements on HoloLens also respond to your voice—for example, **Follow me** and **Close** on the app bar. To find out if a button is voice-enabled, rest your gaze on it for a moment to see a voice tip. 
+Many buttons and other elements on HoloLens also respond to your voice—for example, **Follow me** and **Close** on the app bar. To find out if a button is voice-enabled, rest your gaze on it for a moment to see a voice tip.
 
 ### Dictation mode
 
