@@ -28,34 +28,40 @@ Wherever you are in HoloLens, you can always open the **Start** menu by using St
 > [!TIP]
 > When the **Start** menu is open, use the start gesture to close it.
 
-At the top of the **Start** menu, you'll see status indicators for Wi-Fi, battery, and volume, plus a clock. On HoloLens 2 there is also an additional speech listening indicator that shows when the device is listening for voice commands. At the bottom you'll find the photo and video buttons, which allows you to take photos and video recordings.  There is also a connect button that allows you to project what you see to another device via Miracast.
+At the top of the **Start** menu, you'll see status indicators for Wi-Fi, battery, and volume, plus a clock. On HoloLens 2 there is also an additional speech listening indicator that shows when the device is speech enabled and listening for voice commands. At the bottom you'll find the photo and video buttons, which allows you to take photos and video recordings.  There is also a connect button that allows you to project what you see to another device via Miracast.
 
 ### Find apps on Start menu
 
-The **Start** menu has a **Pinned apps** list and an **All apps** list.
-
-- The **All apps** list shows all apps that are installed on the device.  Select the **All apps** button on the right side of the **Start** menu to get to the list.
+The Start menu has a **Pinned apps** list and an **All apps** list.
 
 - The **Pinned apps** list shows apps that have been pinned. You can add and remove apps from the **Pinned apps** list using the context menu that appears when you **select and hold** on an app tile.
+
+- The **All apps** list shows all apps that are installed on the device.  Select the **All apps** button on the right side of the **Start** menu to get to the list. 
+
+On both lists, use the **Page up** and **Page down** buttons to page through all the apps in the list.  Both app lists will automatically open to the page that was last used during a device session.
  
 > [!TIP]
-> On HoloLens 2, you can directly scroll the Pinned apps list and All apps list using your index finger, in addition to using the Page up and Page down buttons.
+> On HoloLens 2, you can directly scroll the app lists using your index finger.
 
-### Open apps on Start menu
+### Open apps from Start menu
 
-Select on an .
+To open an app from the **Start** menu, simply **select** an **app tile**. You can also say the name of an app to open it.
 
-On **Start** or in the **All apps** list, select an app. It will open in a good position for viewing.
+When you open an app from the Start menu, one of the following will happen, depending on how the app is designed:
+
+- An **app window** is placed. The app is then loaded in the window and you will use the app directly in the window.
+- A 3D model is placed. The model is a **launcher** for an **immersive app**.  You need to **select** the model to launch the immersive app.
+- An app window is placed. The window acts as a **launcher** for an immersive app which then launches automatically. 
+
+## Use apps on HoloLens
+
+Apps on HoloLens can use app window view or immersive view. An app using app window view simply shows its content inside a window. An app using immersive view takes you away from mixed realty home where it can then display its content in the physical environment all around you. 
 
 >[!NOTE]
 >- Up to three 2D app windows can be active at a time. You can open more, but only three will remain active.
 >- Each open app can have one active window at a time, except Microsoft Edge, which can have up to three.
 >- If you're having problems with apps, make sure there's enough light in your space, and walk around so HoloLens has a current scan. If you keep having trouble, see [HoloLens and holograms: FAQ](https://support.microsoft.com/help/13456/hololens-and-holograms-faq) for more info.
 
-
-## Use apps on HoloLens
-
-Apps on HoloLens can use app window view or immersive view. An app using app window view looks like a window, and an app using immersive view surrounds you and become the only app you see.  When you open the Start Menu and you see a "Mixed reality home" button at the bottom, you are inside an immersive app view, and selecting the button will bring you back to mixed reality home.
 
 
 ## Move, resize, and rotate apps
@@ -97,7 +103,8 @@ Gaze at the app, and tap and hold with both hands to select it. Rotate the app b
 
 To close an app that uses 2D view, gaze at it, then select **Close**.
 
-To close an app that uses holographic view, use the bloom gesture to leave holographic view, then select **Close**.
+To close an app that uses holographic view, use the bloom gesture to bring up the **Start** menu, then select the **Home** button.
+
 
 ## Pin apps
 
