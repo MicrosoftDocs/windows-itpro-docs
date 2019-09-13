@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.reviewer: 
 manager: jarrettr
 appliesto:
-- HoloLens (1st Gen)
+- HoloLens (1st gen)
 - HoloLens 2
 ---
 
@@ -22,7 +22,7 @@ HoloLens includes features that make it easier for businesses to manage HoloLens
 
 Every HoloLens 2 device has commercial features available.
 
-HoloLens (1st Gen) came with two licensing options, the developer license and a commercial license. To unlock HoloLens's commercial capabilities, upgrade from the developer license to a commercial license. To purchase the Microsoft HoloLens Commercial Suite, contact your local Microsoft account manager.
+HoloLens (1st gen) came with two licensing options, the developer license and a commercial license. To unlock HoloLens's commercial capabilities, upgrade from the developer license to a commercial license. To purchase the Microsoft HoloLens Commercial Suite, contact your local Microsoft account manager.
 
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
