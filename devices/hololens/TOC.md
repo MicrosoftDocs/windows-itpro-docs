@@ -29,13 +29,13 @@
 ## [Set up limited application access](hololens-kiosk.md)
 
 # Navigating Windows Holographic
-## [Windows Mixed Reality home](holographic-home.md)
-## [Voice and Cortana](hololens-cortana.md)
+## [Navigate the mixed reality home](holographic-home.md)
+## [Use your voice with HoloLens](hololens-cortana.md)
 ## [Find and save files](hololens-find-and-save-files.md)
 ## [Create, share, and view photos and video](holographic-photos-and-video.md)
 
 # Holographic Applications
-## [Try 3D Viewer (beta)](holographic-3d-viewer-beta.md)
+## [Try 3D Viewer (Beta)](holographic-3d-viewer-beta.md)
 ## [Find, install, and uninstall applications](holographic-store-apps.md)
 ## [Install and uninstall custom applications](holographic-custom-apps.md)
 
