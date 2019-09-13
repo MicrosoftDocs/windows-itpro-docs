@@ -7,12 +7,12 @@
 ## [Start your HoloLens 2 for the first time](hololens2-start.md)
 ## [Getting around HoloLens 2](hololens2-basic-usage.md)
 
-# Get started with HoloLens (1st gen)
-## [HoloLens (1st gen) hardware](hololens1-hardware.md)
-## [Set up your HoloLens (1st gen)](hololens1-setup.md)
-## [Start your HoloLens (1st gen) for the first time](hololens1-start.md)
-## [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
-## [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
+# Get started with HoloLens (1st Gen)
+## [HoloLens (1st Gen) hardware](hololens1-hardware.md)
+## [Set up your HoloLens (1st Gen)](hololens1-setup.md)
+## [Start your HoloLens (1st Gen) for the first time](hololens1-start.md)
+## [Install localized version of HoloLens (1st Gen)](hololens1-install-localized.md)
+## [Getting around HoloLens (1st Gen)](hololens1-basic-usage.md)
 
 # Get started with HoloLens in commercial environments
 ## [Commercial feature overview](hololens-commercial-features.md)
@@ -41,7 +41,7 @@
 
 # Accessories and connectivity
 ## [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
-## [HoloLens (1st gen) clicker](hololens1-clicker.md)
+## [HoloLens (1st Gen) clicker](hololens1-clicker.md)
 ## [Connect to a network](hololens-network.md)
 ## [Use HoloLens offline](hololens-offline.md)
 
