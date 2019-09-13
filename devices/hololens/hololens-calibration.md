@@ -3,7 +3,7 @@ title: Improve visual quality and comfort
 description: Calibrating your IPD (interpupillary distance) can improve the quality of your visuals. Both HoloLens and Windows Mixed Reality immersive headsets offer ways to customize IPD.
 author: Teresa-Motiv
 ms.author: xerxesb
-ms.date: 08/23/19
+ms.date: 9/13/2019
 ms.topic: article
 keywords: calibration, comfort, visuals, quality, ipd
 ms.prod: hololens
@@ -39,6 +39,10 @@ HoloLens 2 prompts a user to calibrate the device under the following circumstan
 - The user previously opted out of the calibration process
 - The calibration process did not succeed the last time the user used the device
 
+### Calibration when sharing a device or session
+
+Multiple users can share a HoloLens 2 device, without a need for each person to go through device setup. When a new user puts the device on their head for th first time, HoloLens 2 automtically prompts the user to calibrate visuals. When a user that has previously calibrated visuals puts the device on their head, the display seamlessly adjusts for quality and a comfortable viewing experience.  
+
 ### HoloLens 2 eye-tracking technology and data
 
 The device uses its eye-tracking technology to improve display quality, and to ensure that all holograms are positioned accurately and comfortable to view in 3D. Because it uses the eyes as landmarks, the device can adjust itself for every user and tune its visuals as the headset shifts slightly throughout use.  All adjustments happen on the fly without a need for manual tuning. 
@@ -47,6 +51,14 @@ HoloLens applications use eye tracking to track where you are looking in real ti
 
 The eye-tracking data itself remains internal, and is not available to developers. The device stores the data locally. It does not associate the eye-tracking data with any account information. It does not record who has used the device without calibration. You cn always delete the data by selecting **Settings** > **Privacy** > **Eye tracker**.
 
+### Manually starting the calibration process
+
+1. Use the start gesture to open the [**Start** menu](holographic-home.md).
+1. If the Settings app isn't pinned to **Start**, select **All Apps**.
+1. Select **Settings**, and then select **System** > **Calibration** > **Eye Calibration** > **Run eye calibration**.
+
+   ![The Settings app, showing the Run eye calibration option](./images/C-Settings.Calibration.png)
+   
 ### Troubleshooting HoloLens 2 calibration
 
 Calibration should work for most users, but there are cases in which you may not be able to calibrate successfully. The following factors (and others like them) can interfere with the calibration process:
@@ -76,64 +88,45 @@ If you follow all of these guidelines and calibration still fails, you can disab
 > [!IMPORTANT]
 > Please understand that this setting may adversely affect hologram rendering quality and comfort.
 
-### Launching the Calibration app from Settings
+## Calibrating your HoloLens (1st Gen)
 
-1. Use Start gesture to get to the [**Start** menu](holographic-home.md).
-1. Select **All Apps** to view all apps if the Settings app isn't pinned to **Start**.
-1. Launch Settings.
-1. Navigate to **System** > **Calibration** > **Eye Calibration** and select **Run eye calibration**.
+HoloLens (1st Gen) adjusts hologram display according to the your [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). If the IPD is not accurate, holograms may appear unstable or at an incorrect distance. You can improve the quality of your visuals by calibrating the device to your interpupillary distance (IPD).
 
-   ![The Settings app, showing the Run eye calibration option](./images/C-Settings.Calibration.png)
+When you set up your Hololens (1st Gen) device, it prompts to calibrate your visuals after Cortana introduces herself. It's recommended that you complete the calibration step during this setup phase. However you can skip it by waiting until Cortana prompts you and then saying "Skip."
 
-### Calibration when sharing a device or session
-
-HoloLens 2 can be shared between people, without a need for each person to go through device setup. HoloLens 2 will prompt the user to calibrate visuals when the device is put on the head if the user is new to the device. If the user has previously calibrated visuals on the device, the display will be seamlessly adjusted for quality and a comfortable viewing experience when the user puts the device on the head.  
-
-![](./images/D-CheckThisOut-Prompt.png)
-
-## HoloLens (Gen 1) calibration
-
-Calibrating your IPD (interpupillary distance) can improve the quality of your visuals.
-
-### During setup
+During the calibration process, HoloLens asks you to align your finger with a series of six targets per eye. HoloLens uses this process to set the IPD correctly for your eyes. 
 
 ![IPD finger-alignment screen at second step](./images/ipd-finger-alignment-300px.jpg)
 
 *IPD finger-alignment screen at second step*
 
-On HoloLens, you'll be prompted to calibrate your visuals during setup. This allows the device to adjust hologram display according to the user's [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). With an incorrect IPD, holograms may appear unstable or at an incorrect distance.
+### Manually starting the calibration process
 
-After Cortana introduces herself, the first setup step is calibration. It's recommended that you complete the calibration step during this setup phase, but it can be skipped by waiting until Cortana prompts you to say "Skip" to move on.
+If you need to update the calibration or if a new user needs to adjust it, you can manually run the Calibration app at any time. The Calibration app is installed by default. You can access it by using eihter the **Start** menu or the Settings app.
 
-Users are asked to align their finger with a series of six targets per eye. Through this process, HoloLens sets the correct IPD for the user. If the calibration needs to be updated or adjusted for a new user, it can be run outside of setup using the Calibration app.
+To use the **Start** menu to run the Calibration app, follow these steps:
 
-### Calibration app
-
-Calibration can be performed any time through the Calibration app. The Calibration app is installed by default and may be accessed from the **Start** menu, or through the Settings app. Calibration is recommended if you'd like to improve the quality of your visuals or calibrate visuals for a new user.
-
-**Launching the app from Start**
-
-1. Use [bloom](hololens1-basic-usage.md) to get to the **Start** menu.
-1. Select **+** to view all apps.
-1. Launch **Calibration**.
+1. Use the [bloom](hololens1-basic-usage.md) gesture to open the **Start** menu.
+1. To view all apps, select **+**.
+1. Select **Calibration**.
 
 ![Accessing the calibration app from the shell](./images/calibration-shell.png)
 
 ![The calibration app displayed as a Live Cube after being launched](./images/calibration-livecube-200px.png)
 
-**Launching the app from Settings**
+To use the Settings app to run the Calibration app, follow these steps:
 
-1. Use [bloom](hololens1-basic-usage.md) to get to the **Start** menu.
+1. Use the [bloom](hololens1-basic-usage.md) gesture to open the **Start** menu.
 1. If **Settings** isn't pinned to **Start**, select **+** to view all apps.
-1. Launch **Settings**.
-1. Navigate to **System** > **Utilities** and select **Open Calibration**.
+1. Select **Settings**.
+1. Select **System** > **Utilities** > **Open Calibration**.
 
 ![Launching the calibration app from the settings app](./images/calibration-settings-500px.jpg)
 
 ## Immersive headsets
 
-To change IPD within your headset, open the Settings app and navigate to **Mixed reality** > **Headset display** and move the slider control. You’ll see the changes in real time in your headset. If you know your IPD, maybe from a visit to the optometrist, you can enter it directly as well.
+Some immersive headsets provide the ability to customize the IPD setting. To change the IPD for your headset, open the Settings app and select **Mixed reality** > **Headset display**, and then move the slider control. You’ll see the changes in real time in your headset. If you know your IPD, maybe from a visit to the optometrist, you can enter it directly as well.
 
-You can also adjust this setting by going to **Settings** > **Mixed reality** > **Headset display** on your PC.
+You can also adjust this setting on your PC by selecting **Settings** > **Mixed reality** > **Headset display**.
 
 If your headset does not support IPD customization, this setting will be disabled.
