@@ -60,7 +60,7 @@ For more information about controlling USB devices, see the [Microsoft Defender 
 | [Only allow installation and usage of specifically approved peripherals](#only-allow-installation-and-usage-of-specifically-approved-peripherals)   | You can only install and use approved peripherals that report specific properties in their firmware. |
 | [Prevent installation of specifically prohibited peripherals](#prevent-installation-of-specifically-prohibited-peripherals) | You can't install or use prohibited peripherals that report specific properties in their firmware. |
 | [Limit services that use Bluetooth](#limit-services-that-use-bluetooth) | You can limit the services that can use Bluetooth. |
-| [Use Microsoft Defender ATP security baseline](#use-microsoft-defender-atp-security-baseline) | You can set the recommended configuration for ATP by using the Microsoft Defender ATP security baseline. |
+| [Use Microsoft Defender ATP baseline settings](#use-microsoft-defender-atp-baseline-settings) | You can set the recommended configuration for ATP by using the Microsoft Defender ATP security baseline. |
 
 >[!NOTE]
 >Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
@@ -156,8 +156,8 @@ One way to approach allowing installation and usage of USB drives and other peri
 >[!Note]
 >Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
 
-1. Enable **prevent installation of devices not described by other policy settings** to all users.
-2. Enable **allow installation of devices using drivers that match these device setup classes** for all [device setup classes](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+1. Enable **Prevent installation of devices not described by other policy settings** to all users.
+2. Enable **Allow installation of devices using drivers that match these device setup classes** for all [device setup classes](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
 
 To enforce the policy for already installed devices, apply the prevent policies that have this setting.
 
@@ -169,7 +169,7 @@ In this example, the following classes needed to be added: HID, Keyboard, and {3
 
 ![Device host controller](images/devicehostcontroller.jpg)
 
-If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. To find the vendor or product IDs, see [Look up a device vendor ID or product ID](#look-up-device-vendor-id-or-product-id). 
+If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. To find the vendor or product IDs, see [Look up device vendor ID or product ID](#look-up-device-vendor-id-or-product-id). 
 
 For example:
 
@@ -193,7 +193,7 @@ To prevent installation of devices that match any of these device IDs:
 
 1. [Look up device vendor ID or product ID](#look-up-device-vendor-id-or-product-id) for devices that you want Windows to prevent from installing.
 ![Look up vendor or product ID](images/lookup-vendor-product-id.png)
-2. Enable the **Prevent installation of devices that match any of these device IDs** and add the vendor or product IDs to the list.
+2. Enable **Prevent installation of devices that match any of these device IDs** and add the vendor or product IDs to the list.
 ![Add vendor ID to prevent list](images/add-vendor-id-to-prevent-list.png)
 
 #### Look up device vendor ID or product ID
