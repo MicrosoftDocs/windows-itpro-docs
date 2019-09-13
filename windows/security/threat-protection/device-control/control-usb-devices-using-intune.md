@@ -117,7 +117,7 @@ DMA attacks can lead to disclosure of sensitive information residing on a PC, or
 
    Peripherals that support device memory isolation can always connect. Peripherals that don't can be blocked, allowed, or allowed only after the user signs in (default).
 
-2. On Windows 10 systems that do not suppprt Kernel DMA Protection, you can:
+2. On Windows 10 systems that do not support Kernel DMA Protection, you can:
 
    - [Block DMA until a user signs in](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
    - [Block all connections via the Thunderbolt ports (including USB devices)](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d)
@@ -158,7 +158,7 @@ When configuring the allow device installation policy, you will need to allow al
 
 ![Device by Connection](images/devicesbyconnection.png)
 
-In this example, the following classes needed to be added: HID, Keboard, and {36fc9e60-c465-11cf-8056-444553540000}. More information on [Microsoft-provided USB drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/supported-usb-classes).
+In this example, the following classes needed to be added: HID, Keyboard, and {36fc9e60-c465-11cf-8056-444553540000}. More information on [Microsoft-provided USB drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/supported-usb-classes).
 
 ![Device host controller](images/devicehostcontroller.jpg)
 
