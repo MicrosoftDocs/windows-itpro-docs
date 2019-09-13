@@ -40,10 +40,12 @@ Classes of Bluetooth devices supported by HoloLens (1st gen):
 
 1. Turn on your keyboard or mouse and make it discoverable. The way you make it discoverable depends on the device. To learn how to do this, check the device or visit the manufacturer's website.
 
-1. Go to **Start**, then select **Settings**.
+1. Use the bloom gesture (HoloLens (1st gen) or the start gesture (HoloLens 2) to go to **Start**, then select **Settings**.
 1. Select **Devices** and make sure that Bluetooth is on. When you see the device name, select **Pair** and follow the instructions.
 
 ### Pair the clicker
+
+> Applies to HoloLens (1st gen) only.
 
 1. Use the bloom gesture to go to **Start**, then select **Settings**.
 
