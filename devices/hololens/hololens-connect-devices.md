@@ -8,14 +8,14 @@ author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 8/12/19
+ms.date: 9/13/2019
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ---
 
-# Connect devices and accessories
+# Connect to Bluetooth and USB-C devices
 
 ## Pair Bluetooth devices
 
@@ -38,18 +38,20 @@ Classes of Bluetooth devices supported by HoloLens (1st gen):
 
 ### Pair a Bluetooth keyboard or mouse
 
-1. Turn on your keyboard or mouse and make it discoverable. The way you make it discoverable depends on the device. Check the device or visit the manufacturer's website to learn how.
+1. Turn on your keyboard or mouse and make it discoverable. The way you make it discoverable depends on the device. To learn how to do this, check the device or visit the manufacturer's website.
 
-1. Go to **Start**, then select **Settings**.
-1. Select **Devices** and make sure Bluetooth is on. When you see the device name, select **Pair** and follow the instructions.
+1. Use the bloom gesture (HoloLens (1st gen) or the start gesture (HoloLens 2) to go to **Start**, then select **Settings**.
+1. Select **Devices** and make sure that Bluetooth is on. When you see the device name, select **Pair** and follow the instructions.
 
 > Learn more about supported languages for HoloLens [here]().
 
 ### Pair the clicker
 
+> Applies to HoloLens (1st gen) only.
+
 1. Use the bloom gesture to go to **Start**, then select **Settings**.
 
-1. Select **Devices** and make sure Bluetooth is on.
+1. Select **Devices** and make sure that Bluetooth is on.
 1. Use the tip of a pen to press and hold the clicker's pairing button until the status light blinks white. Make sure to hold the button down until the light starts blinking. [Where's the pairing button?](hololens-clicker.md)
 1. On the pairing screen, select **Clicker** > **Pair**.
 
@@ -57,11 +59,15 @@ Classes of Bluetooth devices supported by HoloLens (1st gen):
 
 > Applies to HoloLens 2 only.
 
+<<<<<<< HEAD
 HoloLens 2 lets you connect a wide range of USB-C devices.
+=======
+You can connect a wide range of USB-c devices to your HoloLens 2 device.
+>>>>>>> 4aded6340829591f44959c9e1b1428ac25d711b0
 
-Devices classes supported by HoloLens 2:
+HoloLens 2 supports the following devices classes:
 
-- Mass storage devices (e.g. thumb drives)
+- Mass storage devices (such as thumb drives)
 - Ethernet adapters (including ethernet with charging)
 - USB-C to 3.5mm digital audio adapters
 - USB-C digital audio headsets (including headset adapters with charging)
