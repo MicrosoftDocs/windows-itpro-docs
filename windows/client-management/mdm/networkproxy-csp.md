@@ -118,7 +118,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
     </Item>
 </Replace> 
 
-
+```xml
 <Replace>
 
     <CmdID>3</CmdID>
