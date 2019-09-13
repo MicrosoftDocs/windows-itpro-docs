@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 ms.reviewer: 
 manager: jarrettr
 appliesto:
-- HoloLens (1st Gen)
+- HoloLens (1st gen)
 - HoloLens 2
 ---
 
 # Improve visual quality and comfort
 
-HoloLens (1st Gen), HoloLens 2 and Windows Mixed Reality immersive headsets offer different ways to improve quality of your visual experience. During the setup process, both [HoloLens 2](#calibrating-your-hololens-2) and [HoloLens (1st Gen)](#calibrating-your-hololens-1st-gen) offer a calibration process that adapts the visuals to your eyes. Similarly, Windows Mixed Reality immersive headsets offer an [app]() that you can use to adapt the visuals to your eyes.
+HoloLens (1st gen), HoloLens 2 and Windows Mixed Reality immersive headsets offer different ways to improve quality of your visual experience. During the setup process, both [HoloLens 2](#calibrating-your-hololens-2) and [HoloLens (1st gen)](#calibrating-your-hololens-1st-gen) offer a calibration process that adapts the visuals to your eyes. Similarly, Windows Mixed Reality immersive headsets offer an [app]() that you can use to adapt the visuals to your eyes.
 
 ## Calibrating your HoloLens 2
 
@@ -88,11 +88,11 @@ If you follow all of these guidelines and calibration still fails, you can disab
 > [!IMPORTANT]
 > Please understand that this setting may adversely affect hologram rendering quality and comfort.
 
-## Calibrating your HoloLens (1st Gen)
+## Calibrating your HoloLens (1st gen)
 
-HoloLens (1st Gen) adjusts hologram display according to the your [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). If the IPD is not accurate, holograms may appear unstable or at an incorrect distance. You can improve the quality of your visuals by calibrating the device to your interpupillary distance (IPD).
+HoloLens (1st gen) adjusts hologram display according to the your [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). If the IPD is not accurate, holograms may appear unstable or at an incorrect distance. You can improve the quality of your visuals by calibrating the device to your interpupillary distance (IPD).
 
-When you set up your Hololens (1st Gen) device, it prompts to calibrate your visuals after Cortana introduces herself. It's recommended that you complete the calibration step during this setup phase. However you can skip it by waiting until Cortana prompts you and then saying "Skip."
+When you set up your Hololens (1st gen) device, it prompts to calibrate your visuals after Cortana introduces herself. It's recommended that you complete the calibration step during this setup phase. However you can skip it by waiting until Cortana prompts you and then saying "Skip."
 
 During the calibration process, HoloLens asks you to align your finger with a series of six targets per eye. HoloLens uses this process to set the IPD correctly for your eyes. 
 
