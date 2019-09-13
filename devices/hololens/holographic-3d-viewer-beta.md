@@ -11,7 +11,7 @@ ms.date: 9/3/19
 ms.reviewer: 
 manager: jarrettr
 appliesto:
-- HoloLens 1
+- HoloLens (1st gen)
 ---
 
 # Using 3D Viewer Beta on HoloLens
