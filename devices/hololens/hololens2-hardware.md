@@ -90,13 +90,13 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 | - | - |
 | Hand tracking | Two-handed fully articulated model, direct manipulation |
 | Eye tracking | Real-time tracking |
-| Voice | Command and control on-device; natural language with internet connectivity |
+| Voice | Command and control on-device; Cortana natural language with internet connectivity |
 
 ### Environment understanding
 
 |   |   |
 | - | - |
-| Six Degree of Freedom (6DoF) tracking | World-scale positional tracking |
+| Six Degrees of Freedom (6DoF) tracking | World-scale positional tracking |
 | Spatial Mapping | Real-time environment mesh |
 | Mixed Reality Capture | Mixed hologram and physical environment photos and videos |
 
@@ -109,6 +109,8 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 - Dynamics 365 Guides
 - 3D Viewer
 - OneDrive for Business
+- HoloLens Tips
+- Cortana
 
 ## Device certifications
 
