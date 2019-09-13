@@ -82,7 +82,7 @@ Calibration should work for most people, but there are cases where calibration f
   
 Some potential reasons for calibration failure include:
 
-- User getting distracted and not following the calibration targets during calibration.
+- Getting distracted and not following the calibration targets
 - Dirty or scratched device visor or device visor not positioned properly
 - Dirty or scratched glasses
 - Certain types of contact lenses and glasses (colored contact lenses, some toric contact lenses, IR blocking glasses, some high prescription glasses, sunglasses, or similar)
@@ -95,7 +95,7 @@ If calibration is unsuccessful try:
 - Cleaning your device visor
 - Cleaning your glasses
 - Pushing your device visor as close to your eyes as possible
-- Moving objects in your visor out of the way (such as hair).
+- Moving objects in your visor out of the way (such as hair)
 - Turning on a light in your room or moving out of direct sunlight
 
 If you followed all guidelines and calibration is still failing, please let us know by filing feedback in [Feedback Hub](hololens-feedback.md).

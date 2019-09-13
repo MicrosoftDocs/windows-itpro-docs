@@ -63,24 +63,23 @@ The eye-tracking data itself remains internal, and is not available to developer
 
 Calibration should work for most users, but there are cases in which you may not be able to calibrate successfully. The following factors (and others like them) can interfere with the calibration process:
 
-- Distraction during the calibration process (not following the calibration targets)
-- The device visor is dirty, scratched, or not positioned properly
-- Glasses are dirty or scratched
-- Contact lenses or glasses of a certain type (such as colored contact lenses, some toric contact lenses, IR blocking glasses, some high prescription glasses, sunglasses, and so forth)
-- Pronounced makeup, or certain eyelash extensions
-- Something such as hair or some thick eyeglass frames that blocks the eyes and/or the device visor
-- Eye physiology, certain eye conditions and/or eye surgery (some narrow eyes, long eyelashes, amblyopia, nystagmus, some cases of LASIK or other eye surgeries, and so forth)
+- Getting distracted and not following the calibration targets
+- Dirty or scratched device visor or device visor not positioned properly
+- Dirty or scratched glasses
+- Certain types of contact lenses and glasses (colored contact lenses, some toric contact lenses, IR blocking glasses, some high prescription glasses, sunglasses, or similar)
+- More-pronounced makeup and some eyelash extensions
+- Hair or thick eyeglass frames if they are blocking the device from seeing your eyes
+- Certain eye physiology, eye conditions or eye surgery such as narrow eyes, long eyelashes, amblyopia, nystagmus, some cases of LASIK or other eye surgeries
 
-If the device cannot calibrate, try one of these fixes:
+If calibration is unsuccessful try:
 
-- Clean your device visor
-- Clean your glasses
-- Push your device visor all the way in
-- Make sure that nothing (such as hair) obstructs the sensors or your eyes
-- Make sure that there is enough light in your room, but you are not under direct sunlight
-- Make sure that you carefully follow the targets during the calibration process
+- Cleaning your device visor
+- Cleaning your glasses
+- Pushing your device visor as close to your eyes as possible
+- Moving objects in your visor out of the way (such as hair)
+- Turning on a light in your room or moving out of direct sunlight
 
-If you follow all of these guidelines and calibration still fails, you can disable the calibration prompt by following these steps:
+If you followed all guidelines and calibration is still failing, please let us know by filing feedback in [Feedback Hub](hololens-feedback.md). You can also disable the calibration prompt by following these steps:
 
 1. Select **Settings** > **System** > **Calibration**. 
 1. Turn off **When a new person uses this HoloLens, automatically ask to run eye calibration**.
