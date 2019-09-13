@@ -23,7 +23,7 @@ Just like the Windows PC experience starts with the desktop, Windows Mixed Reali
 
 The **Start** menu on HoloLens is where you'll open apps and get to the HoloLens camera.
 
-Wherever you are in HoloLens, you can always open the **Start** menu by using Start gesture.  On HoloLens (1st gen) the Start gesture is [bloom](https://support.microsoft.com/help/12644/hololens-use-gestures). On HoloLens 2, the [Start gesture](hololens2-basic-usage.md#navigate-windows-holographic) is to tap the Start icon that appears on your wrist. 
+Wherever you are in HoloLens, you can always open the **Start** menu by using Start gesture.  On HoloLens (1st gen) the Start gesture is [bloom](https://support.microsoft.com/help/12644/hololens-use-gestures). On HoloLens 2, the [Start gesture](hololens2-basic-usage.md#navigate-windows-holographic) is to tap the Start icon that appears on your wrist.
 
 > [!TIP]
 > When the **Start** menu is open, use the start gesture to close it.
@@ -39,7 +39,7 @@ The Start menu has a **Pinned apps** list and an **All apps** list.
 - The **All apps** list shows all apps that are installed on the device.  Select the **All apps** button on the right side of the **Start** menu to get to the list. 
 
 On both lists, use the **Page up** and **Page down** buttons to page through all the apps in the list.  Both app lists will automatically open to the page that was last used during a device session.
- 
+
 > [!TIP]
 > On HoloLens 2, you can directly scroll the app lists using your index finger.
 
@@ -57,12 +57,11 @@ When you open an app from the Start menu, one of the following will happen, depe
 
 Apps on HoloLens can use app window view or immersive view. An app using app window view simply shows its content inside a window. An app using immersive view takes you away from mixed realty home where it can then display its content in the physical environment all around you. 
 
->[!NOTE]
->- Up to three 2D app windows can be active at a time. You can open more, but only three will remain active.
->- Each open app can have one active window at a time, except Microsoft Edge, which can have up to three.
->- If you're having problems with apps, make sure there's enough light in your space, and walk around so HoloLens has a current scan. If you keep having trouble, see [HoloLens and holograms: FAQ](https://support.microsoft.com/help/13456/hololens-and-holograms-faq) for more info.
-
-
+> [!NOTE]
+>
+> - Up to three 2D app windows can be active at a time. You can open more, but only three will remain active.
+> - Each open app can have one active window at a time, except Microsoft Edge, which can have up to three.
+> - If you're having problems with apps, make sure there's enough light in your space, and walk around so HoloLens has a current scan. If you keep having trouble, see [HoloLens and holograms: FAQ](https://support.microsoft.com/help/13456/hololens-and-holograms-faq) for more info.
 
 ## Move, resize, and rotate apps
 
