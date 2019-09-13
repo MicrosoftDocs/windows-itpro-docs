@@ -1,8 +1,8 @@
 ---
-title: Cortana on HoloLens
+title: Use your voice with HoloLens
 description: Cortana can help you do all kinds of things on your HoloLens
 ms.assetid: fd96fb0e-6759-4dbe-be1f-58bedad66fed
-ms.date: 08/14/2019
+ms.date: 9/13/2019
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -18,14 +18,14 @@ appliesto:
 
 # Use your voice with HoloLens
 
-You can use your voice to do almost anything on HoloLens, like taking a quick photo or opening an app.  Many voice commands are built into HoloLens, others are available through Cortana.
+You can use your voice to do almost anything on HoloLens, such as taking a quick photo or opening an app.  Many voice commands are built into HoloLens, while others are available through Cortana.
 
-This article will teach you how to control HoloLens and your holographic world with your voice and with Cortana.
+This article teachs you how to control HoloLens and your holographic world with your voice and with Cortana.
 
 > [!NOTE]
->
 > Speech is only supported in [some languages](https://support.microsoft.com/en-us/help/4039262#Languages).  The speech language is based on the Windows display language, not the keyboard language.  
-> You can verify the Windows display language in **Settings** > **Time and Language** > **Language**.
+>  
+> You can verify the Windows display language by selecting **Settings** > **Time and Language** > **Language**.
 
 ## Built-in voice commands
 
@@ -60,14 +60,14 @@ Many buttons and other elements on HoloLens also respond to your voice—for exa
 
 ### Dictation mode
 
-Tired of typing? Switch to dictation mode any time the holographic keyboard is active. Select the microphone icon to get started, or say "Start dictating." To stop dictating, select **Done** or say "Stop dictating." To delete what you just dictated, say "Delete that."
+Tired of typing? Switch to dictation mode any time that the holographic keyboard is active. To get started, select the microphone icon or say "Start dictating." To stop dictating, select **Done** or say "Stop dictating." To delete what you just dictated, say "Delete that."
 
 > [!NOTE]
-> You need an Internet connection to use dictation mode.
+> To use dictation mode, you have to have an internet connection.
 
 HoloLens dictation uses explicit punctuation, meaning that you say the name of the punctuation you want to use. For instance, you might say "Hey **comma** what are you up to **question mark**."
 
-Here are the punctuation keywords you can use:
+Here are the punctuation keywords that you can use:
 
 - Period, comma, question mark, exclamation point/exclamation mark
 - New line/new paragraph
@@ -80,7 +80,7 @@ Sometimes it's helpful to spell out things like email addresses. For instance, t
 
 ## Do more with Cortana
 
-Cortana can help you do all kinds of things on your HoloLens, from searching the web to shutting down your device. To get her attention, select Cortana  on Start or say "Hey Cortana" anytime.
+Cortana can help you do all kinds of things on your HoloLens, from searching the web to shutting down your device. She can give you suggestions, ideas, reminders, alerts, and more. To get her attention, select Cortana  on **Start** or say "Hey Cortana" anytime.
 
 ![Hey Cortana!](images/cortana-on-hololens.png)
 
@@ -95,22 +95,22 @@ Here are some things you can try saying (remember to say "Hey Cortana" first).
 - Restart.
 - Go to sleep.
 - Mute.
-- Launch `<app name>`.
-- Move `<app name>` here (gaze at the spot you want the app to move to).
+- Launch /<*app name*/>.
+- Move /<*app name*/>`here (gaze at the spot that you want the app to move to).
 - Go to Start.
 - Take a picture.
 - Start recording. (Starts recording a video.)
 - Stop recording. (Stops recording a video.)
-- Call `<contact>`. (Requires Skype.)
+- Call /<*contact*/>. (Requires Skype.)
 - What time is it?
 - Show me the latest NBA scores. 
 - How much battery do I have left?
 - Tell me a joke.
 
-Some Cortana features you're used to from Windows on your PC or phone (for example, reminders and notifications) aren't supported in Microsoft HoloLens Development Edition. Cortana on HoloLens is English-only, and the Cortana experience may vary among regions.
+Some Cortana features that you're used to from Windows on your PC or phone (for example, reminders and notifications) aren't supported in Microsoft HoloLens Development Edition. Cortana on HoloLens is English-only, and the Cortana experience may vary from one region to another.
 
 ### Turn Cortana off
 
-Cortana is on the first time you use HoloLens. You can turn her off in Cortana's settings. In the **All apps** list, select **Cortana > Settings**. Then turn off Cortana can give you suggestions, ideas, reminders, alerts, and more.
+The first time that you use HoloLens, Cortana is turned on. You can turn her off in Cortana's settings. In the **All apps** list, select **Cortana > Settings**. Then turn off Cortana.
 
 If Cortana isn't responding to "Hey Cortana," go to Cortana's settings and check to make sure she's on.
