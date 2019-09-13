@@ -52,9 +52,15 @@ For more information about controlling USB devices, see the [Microsoft Defender 
 
 | Control  | Description |
 |----------|-------------|
-| [Block installation and usage of removable storage](#block-installation-and-usage-of-removable-storage) | Users can't install or use removable storage |
-| [Only allow installation and usage of specifically approved peripherals](#only-allow-installation-and-usage-of-specifically-approved-peripherals)   | Users can only install and use approved peripherals that report specific properties in their firmware |
-| [Prevent installation of specifically prohibited peripherals](#prevent-installation-of-specifically-prohibited-peripherals) | Users can't install or use prohibited peripherals that report specific properties in their firmware |
+| [Enable Windows Defender Antivirus Scanning](#enable-windows-defender-antivirus-scanning) | You can enable Windows Defender Antivirus scanning for real-time protection or scheduled scans.|
+| [Block untrusted and unsigned processes on USB peripherals](#block-untrusted-and-unsigned-processes-on-usb-peripherals) | You can block USB files that are unsigned or untrusted. |
+| [Protect against Direct Memory Access (DMA) attacks](#protect-against-direct-memory-access-dma-attacks) | You can protect against DMA attacks. |
+| [Restrict USB Drives and Other Peripherals](#restrict-usb-drives-and-other-peripherals) | You can allow/prevent users to install only the USB drives and other peripherals included on a list of authorized/unauthorized devices or device types. |
+| [Block installation and usage of removable storage](#block-installation-and-usage-of-removable-storage) | You can't install or use removable storage. |
+| [Only allow installation and usage of specifically approved peripherals](#only-allow-installation-and-usage-of-specifically-approved-peripherals)   | You can only install and use approved peripherals that report specific properties in their firmware. |
+| [Prevent installation of specifically prohibited peripherals](#prevent-installation-of-specifically-prohibited-peripherals) | You can't install or use prohibited peripherals that report specific properties in their firmware. |
+| [Limit services that use Bluetooth](#limit-services-that-use-bluetooth) | You can limit the services that can use Bluetooth. |
+| [Use Microsoft Defender ATP security baseline](#use-microsoft-defender-atp-security-baseline) | You can set the recommended configuration for ATP by using the Microsoft Defender ATP security baseline. |
 
 >[!NOTE]
 >Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
@@ -124,65 +130,91 @@ DMA attacks can lead to disclosure of sensitive information residing on a PC, or
 
 ### Restrict USB Drives and Other Peripherals
 
-To prevent malware infections or data loss, an organization may restrict USB drives and other peripherals. The following table describes the ways Microsoft Defender Advanced Threat Protection can help prevent installation and usage of USB drives and other peripherals.
+To prevent malware infections or data loss, an organization may restrict USB drives and other peripherals. The following table describes the ways Microsoft Defender ATP can help prevent installation and usage of USB drives and other peripherals.
 
  Control  | Description
 -|-
- Allow installation and usage of USB drives and other peripherals | Allow users to install only the USB drives and other peripherals included on a list of authorized devices or device types
- Prevent installation and usage of USB drives and other peripherals | Prevent users from installing USB drives and other peripherals included on a list of unauthorized devices and device types
+ [Allow installation and usage of USB drives and other peripherals](#allow-installation-and-usage-of-usb-drives-and-other-peripherals) | Allow users to install only the USB drives and other peripherals included on a list of authorized devices or device types
+ [Prevent installation and usage of USB drives and other peripherals](#prevent-installation-and-usage-of-usb-drives-and-other-peripherals) | Prevent users from installing USB drives and other peripherals included on a list of unauthorized devices and device types
 
 All of the above controls can be set through the Intune [Administrative Templates](https://docs.microsoft.com/intune/administrative-templates-windows). The relevant policies are located here in the Intune Administrator Templates:
 
 ![AdminTemplates](images/admintemplates.png)
 
 >[!Note]
->Using Intune, you can apply device configuration policies to AAD user and/or device groups.
+>Using Intune, you can apply device configuration policies to Azure AD user and/or device groups.
 The above policies can also be set through the [Device Installation CSP settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) and the [Device Installation GPOs](https://docs.microsoft.com/previous-versions/dotnet/articles/bb530324(v=msdn.10)).
 
 > [!Note]
 > Always test and refine these settings with a pilot group of users and devices first before applying them in production.
 For more information about controlling USB devices, see the [Microsoft Defender ATP blog](https://www.microsoft.com/security/blog/2018/12/19/windows-defender-atp-has-protections-for-usb-and-removable-devices/).
 
-### Allow installation and usage of USB drives and other peripherals
+#### Allow installation and usage of USB drives and other peripherals
 
 One way to approach allowing installation and usage of USB drives and other peripherals is to start by allowing everything. Afterwards, you can start reducing the allowable USB drivers and other peripherals.
 
 >[!Note]
 >Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
->
->1. Enable **prevent installation of devices not described by other policy settings** to all users.
->2. Enable **allow installation of devices using drivers that match these device setup classes** for all [device setup classes](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+
+1. Enable **prevent installation of devices not described by other policy settings** to all users.
+2. Enable **allow installation of devices using drivers that match these device setup classes** for all [device setup classes](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+
 To enforce the policy for already installed devices, apply the prevent policies that have this setting.
 
-When configuring the allow device installation policy, you will need to allow all parent attributes as well.  You can view the parents of a device by opening device manager and view by connection.
+When configuring the allow device installation policy, you must allow all parent attributes as well. You can view the parents of a device by opening Device Manager and view by connection.
 
-![Device by Connection](images/devicesbyconnection.png)
+![Devices by connection](images/devicesbyconnection.png)
 
-In this example, the following classes needed to be added: HID, Keyboard, and {36fc9e60-c465-11cf-8056-444553540000}. More information on [Microsoft-provided USB drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/supported-usb-classes).
+In this example, the following classes needed to be added: HID, Keyboard, and {36fc9e60-c465-11cf-8056-444553540000}. See [Microsoft-provided USB drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/supported-usb-classes) for  more information.
 
 ![Device host controller](images/devicehostcontroller.jpg)
 
-If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device id that you want to add. For example,
+If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. To find the vendor or product IDs, see [Look up a device vendor ID or product ID](#look-up-device-vendor-id-or-product-id). 
 
-1. Remove class USBDevice from the **allow installation of devices using drivers that match these device setup**
-2. Add the VID/PID to allow in the **allow installation of device that match any of these device IDs**
+For example:
 
-> [!Note]
-> How to locate the VID/PID: Using Device Manager; right click on the device and select properties.  Click details tab, click property drop down list, and choose hardware Ids. Right click the top ID value and select copy.
+1. Remove class USBDevice from the **Allow installation of devices using drivers that match these device setup**.
+2. Add the vendor ID or product ID to allow in the **Allow installation of device that match any of these device IDs**. 
 
->Using PowerShell: Get-WMIObject -Class Win32_DiskDrive |
-Select-Object -Property *  
->For the typical format for the USB ID please reference the following link; (https://docs.microsoft.com/windows-hardware/drivers/install/standard-usb-identifiers)
 
-### Prevent installation and usage of USB drives and other peripherals
+#### Prevent installation and usage of USB drives and other peripherals
 
-If you want to prevent a device class or certain devices, you can use the prevent device installation policies.
+If you want to prevent the installation of a device class or certain devices, you can use the prevent device installation policies:
 
 1. Enable **Prevent installation of devices that match any of these device IDs**.
-2. Enable the **Prevent installation of devices that match these device setup classes policy**.
+2. Enable **Prevent installation of devices that match these device setup classes**.
 
 > [!Note]
 > The prevent device installation policies take precedence over the allow device installation policies.
+
+The **Prevent installation of devices that match any of these device IDs** policy allows you to specify a list of vendor or product IDs for devices that Windows is prevented from installing. 
+
+To prevent installation of devices that match any of these device IDs: 
+
+1. [Look up device vendor ID or product ID](#look-up-device-vendor-id-or-product-id) for devices that you want Windows to prevent from installing.
+![Look up vendor or product ID](images/lookup-vendor-product-id.png)
+2. Enable the **Prevent installation of devices that match any of these device IDs** and add the vendor or product IDs to the list.
+![Add vendor ID to prevent list](images/add-vendor-id-to-prevent-list.png)
+
+#### Look up device vendor ID or product ID
+You can use Device Manager to look up a device vendor or product ID.
+
+1. Open Device Manager.
+2. Click **View** and select **Devices by connection**.
+3. From the tree, right-click the device and select **Properties**.
+4. In the dialog box for the selected device, click the **Details** tab.
+5. Click the **Property** drop-down list and select **Hardware Ids**.
+6. Right-click the top ID value and select **Copy**.
+
+For information on vendor and product ID formats, see [Standard USB Identifiers](https://docs.microsoft.com/windows-hardware/drivers/install/standard-usb-identifiers).
+
+For information on vendor IDs, see [USB members](https://www.usb.org/members).
+
+The following is an example for looking up a device vendor ID or product ID using PowerShell: 
+``` PowerShell
+Get-WMIObject -Class Win32_DiskDrive |
+Select-Object -Property * 
+```
 
 ### Block installation and usage of removable storage
 
@@ -224,17 +256,17 @@ Microsoft Defender ATP blocks installation and usage of prohibited peripherals b
 - [Administrative Templates](https://docs.microsoft.com/intune/administrative-templates-windows) can block any device with a matching hardware ID or setup class.  
 - [Device Installation CSP settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) with a custom profile in Intune. You can [prevent installation of specific device IDs](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids) or [prevent specific device classes](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses).
 
-### Security Baseline
+### Limit services that use Bluetooth
 
-The Microsoft Defender Advanced Threat Protection (ATP) baseline settings, represent the recommended configuration for ATP.  Configuration settings for baseline are located here in the edit profile page of the configuration settings.
-
-![Baselines](images/baselines.png)
-
-### Bluetooth
-
-Using Intune, you can limited the services that can use Bluetooth through the “Bluetooth allowed services”. The default state of “Bluetooth allowed services” settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and don’t add the file transfer GUIDs, file transfer should be blocked.
+Using Intune, you can limit the services that can use Bluetooth through the “Bluetooth allowed services”. The default state of “Bluetooth allowed services” settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and don’t add the file transfer GUIDs, file transfer should be blocked.
 
 ![Bluetooth](images/bluetooth.png)
+
+### Use Microsoft Defender ATP baseline settings
+
+The Microsoft Defender ATP baseline settings represent the recommended configuration for ATP. Configuration settings for baseline are located in the edit profile page of the configuration settings.
+
+![Baselines](images/baselines.png)
 
 ## Respond to threats
 
