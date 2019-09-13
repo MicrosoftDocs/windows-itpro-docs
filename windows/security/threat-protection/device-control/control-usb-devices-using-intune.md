@@ -48,7 +48,7 @@ Note that if you block USB devices or any other device classes using the device 
 
 The following table describes the ways Microsoft Defender ATP can help prevent installation and usage of USB peripherals.
 
-For more information about controlling USB devices, see the [Microsoft Secure blog "WDATP has protections for USB and removable devices"](https://aka.ms/devicecontrolblog).
+For more information about controlling USB devices, see the [Microsoft Defender ATP blog](https://aka.ms/devicecontrolblog).
 
 | Control  | Description |
 |----------|-------------|
