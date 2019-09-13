@@ -141,7 +141,7 @@ The above policies can also be set through the [Device Installation CSP settings
 
 > [!Note]
 > Always test and refine these settings with a pilot group of users and devices first before applying them in production.
-For more information about controlling USB devices, see the [Microsoft Secure blog "WDATP has protections for USB and removable devices"](https://www.microsoft.com/security/blog/2018/12/19/windows-defender-atp-has-protections-for-usb-and-removable-devices/).
+For more information about controlling USB devices, see the [Microsoft Defender ATP blog](https://www.microsoft.com/security/blog/2018/12/19/windows-defender-atp-has-protections-for-usb-and-removable-devices/).
 
 ### Allow installation and usage of USB drives and other peripherals
 
