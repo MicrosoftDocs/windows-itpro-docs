@@ -41,7 +41,7 @@ The first run experience will let you Set up Windows Holographic on your HoloLen
 
 1. Select your region. 
 
-1. Calibrate HoloLens to your eyes. 
+1. [Calibrate](hololens2-start.md#calibration) HoloLens to your eyes. 
 
 1. Connect to the internet (select Wi-Fi or your ethernet connection).
 
@@ -55,15 +55,17 @@ The first run experience will let you Set up Windows Holographic on your HoloLen
         1. Enter your Microsoft account.
         2. Enter your password. If your Microsoft account requires [two-step verification (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), complete the verification process.
 
-    > The device sets your time zone based on information obtained from the Wi-Fi network.
+    > The device sets your time zone automatically based on information obtained from the Wi-Fi network. This can be changed later from Settings. 
 
 1. Make a choice for enabling speech on HoloLens 2 and diagnostic telemetry. 
 
+1. Learn how to use the Start gesture on HoloLens 2. 
+
 ## Calibration
 
-HoloLens 2 uses eye-tracking to make holograms clear and easy to interact with. You'll be prompted to calibrate during device setup and for every new HoloLens 2 user.  HoloLens 2 will work without calibration and, if you choose to skip calibration in setup, you can calibrate later.
+HoloLens 2 uses eye-tracking to make holograms clear and easy to interact with. You'll be prompted to calibrate during device setup and for every new HoloLens 2 user.  HoloLens 2 will work without calibration and, if you choose to skip calibration in setup, you can calibrate later from **Settings** > **System** > **Utilities**.
 
-To calibrate, you'll look at a set of targets (gems). It's fine if you blink or close your eyes during calibration but try not to stare at other objects in the room.  This allows HoloLens to learn about your eye position and build your holographic world around your specific eye position.  After calibration, holograms will appear correctly even when the visors position changes as the HoloLens shifts on your head.
+To calibrate, you'll look at a set of targets (gems). It's fine if you blink or close your eyes during calibration but try not to stare at other objects in the room.  This allows HoloLens to learn about your eye position to render your holographic world.  After calibration, holograms will appear correctly even as the visor shifts on your head.
 
 ![Calibration prompt](./images/A-Calibration-2-Adjust-Hololens.png)
 ![Image shown during the calibration process](./images/B-Calibration-4-Gem.png)
@@ -78,25 +80,25 @@ Calibration information can always be deleted from the device in **Settings** > 
 
 Calibration should work for most people, but there are cases where calibration fails.
   
-Here are some common reasons for calibration failure:
+Some potential reasons for calibration failure include:
 
 - User getting distracted and not following the calibration targets during calibration.
 - Dirty or scratched device visor or device visor not positioned properly
 - Dirty or scratched glasses
-- Certain types of contact lenses and glasses (colored contact lenses, some toric contact lenses, IR blocking glasses, some high prescription glasses, sunglasses, and so forth)
-- More-pronounced makeup, some eyelash extensions
-- Occlusions of eye and/or device visor (hair, some thick eyeglass frames)
-- Eye physiology, certain eye conditions and/or eye surgery (some narrow eyes, long eyelashes, amblyopia, nystagmus, some cases of LASIK or other eye surgeries, and so forth)
+- Certain types of contact lenses and glasses (colored contact lenses, some toric contact lenses, IR blocking glasses, some high prescription glasses, sunglasses, or similar)
+- More-pronounced makeup and some eyelash extensions
+- Hair or thick eyeglass frames if they are blocking the device from seeing your eyes
+- Certain eye physiology, eye conditions or eye surgery such as narrow eyes, long eyelashes, amblyopia, nystagmus, some cases of LASIK or other eye surgeries
 
 If calibration is unsuccessful try:
 
 - Cleaning your device visor
 - Cleaning your glasses
-- Pushing your device visor all the way in
+- Pushing your device visor as close to your eyes as possible
 - Moving objects in your visor out of the way (such as hair).
-- Turning on a light in your room or move out of direct sunlight
+- Turning on a light in your room or moving out of direct sunlight
 
-If you followed all guidelines and calibration is still failing, please file feedback in FeedbackHub.
+If you followed all guidelines and calibration is still failing, please let us know by filing feedback in [Feedback Hub](hololens-feedback.md).
 
 Congratulations!  Setup is complete and you can begin using HoloLens.
 
