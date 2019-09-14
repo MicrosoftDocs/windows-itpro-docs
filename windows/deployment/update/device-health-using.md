@@ -194,7 +194,8 @@ For example:
 
 *DHAppReliability | where AppFileDisplayName == "Microsoft Outlook"*
 
-
+#### Why does computer name shown as Unknow?
+To enhance consumer privacy, recent versions of Windows 10 no longer include the device name in Windows Diagnostic Data by default. To enable the devices to send their device name, you need to configure ***AllowDeviceNameInTelemetry*** via CSP or Group Policy.
 
 ## Login Health
 
