@@ -46,7 +46,39 @@ To replace the strap, push the connection tabs back into the slots until they cl
 
 To turn on your HoloLens 2, press the power button.  The LED lights below the power button show the battery level.
 
-Putting to sleep: Briefly press the power button.  • Turning off: Press and hold the power button until the display and all of the LED lights turn off.  
+### Power button actions for different power transitions
+
+|  Description | Action and Lights |
+| - | - |
+| **Single Click** to turn on | ![press power button - no lights lit](images/hololens-2-button-turn-on.png) |
+| **Single Click** to sleep | ![press power button - three lights lit](images/hololens-2-button-sleep.png) |
+| **Single Click** to wake from sleep | ![press power button - no lights lit](images/hololens-2-button-wake.png) |
+| **Press and hold 5s** to turn off | ![press and hold power button - all lights lit](images/hololens-2-button-turn-off.png) |
+| **Press and hold 10s** to force restart if the HoloLens 2 is unresponsive. | ![press power button - all lights lit](images/hololens-2-button-turn-off.png) |
+
+## HoloLens indicator lights
+
+Not sure what the indicator lights on your HoloLens mean? Here's some help.
+
+### Lights to indicate device state
+
+| When the lights do this | It means |
+| - | - |
+| LEDs fade on to battery level as soon as power button is pressed and device starts booting. A sound will play 4s after user pressed the power button to indicate device boot is in progress. | HoloLens is starting up. |
+| Same LED pattern as device boot. A sound will play immediately after user pressed the power button to indicate device is awake. | HoloLens is on and ready to use. |
+| When power button is pressed and held LEDs all come on and fade off one by one, at which point shutdown is committed (a sound will play and “Goodbye” text will be shown on screen). If user lets go of power button before 5s is up device goes to sleep state. | HoloLens is going to sleep or shutting down, depending on press length. |
+| On attempt to power on LED flashes 5 times, then turns off. | Battery is critically low. HoloLens needs to charge. |
+| Blink all 5 LEDs 5 times then turn off | Boot Error |
+
+### Lights to indicate battery level
+
+| Number of lights | Battery level |
+| - | - |
+| One light fading in and out | < Critical battery (5%)* to  20 Percent |
+| One solid light, one light fading in and out | 21 to 40 Percent |
+| Two solid lights, one light fading in and out | 41 to 60 Percent |
+| Three solid light, one light fading in and out | 61 to 80 Percent |
+| Four solid light, one light fading in and out | 81 to 100 Percent (fully charged) |
 
 ## Safety and Comfort
 
