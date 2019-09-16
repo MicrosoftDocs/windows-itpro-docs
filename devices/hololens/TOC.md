@@ -47,7 +47,7 @@
 
 # Hologram optics and placement in space
 ## [Tips for viewing clear Holograms](hololens-calibration.md)
-## [Spatial mapping on HoloLens](hololens-spaces.md)
+## [Mapping physical spaces with HoloLens](hololens-spaces.md)
 
 # Recovery and troubleshooting
 ## [Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md)
