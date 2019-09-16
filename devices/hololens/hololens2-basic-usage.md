@@ -128,7 +128,7 @@ When you open an app, it will appear right in front of you.  Some apps use a 2D 
 
 For example, **Tips** is a holographic app while **Settings** is a 2D app.
 
-### Move and resize near-by holograms and apps by grabbing them
+### Move and resize nearby holograms and apps by grabbing them
 
 To perform the grab gesture, pinch your thumb and index finger together and hold. To let go, release your fingers. Use the grab gesture to move, resize, and rotate app windows and 3D objects.
 
