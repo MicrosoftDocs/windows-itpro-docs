@@ -109,7 +109,7 @@ The procedures in this article first describe how to set the order, and then how
 
 > [!NOTE]
 > For Windows 10, versions 1703 up to and including 1809, the policy path is **Windows Components > Windows Defender Antivirus > Signature Updates**
-      For Windows 10, version 1903, the policy path is Windows Components > Windows Defender Antivirus > Security Intelligence Updates
+> For Windows 10, version 1903, the policy path is **Windows Components > Windows Defender Antivirus > Security Intelligence Updates**
 
 **Use Configuration Manager to manage the update location:**
 
