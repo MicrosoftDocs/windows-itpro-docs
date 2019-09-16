@@ -12,26 +12,25 @@ ms.localizationpriority: medium
 ms.reviewer: 
 manager: jarrettr
 appliesto:
-- Hololens
 - HoloLens (1st gen)
 - HoloLens 2
 ---
 
 # Connect to a network
 
-You'll need to be connected to a network to do most things on your HoloLens. [What can I do offline](hololens-offline.md)?
+To do most things on your HoloLens, you have to be connected to a network. [What can I do offline](hololens-offline.md)?
 
 ## Connecting for the first time
 
-The first time you use your HoloLens, you'll be guided through connecting to a Wi-Fi network. If you have trouble connecting to Wi-Fi during setup, make sure your network is either open, password protected, or a captive portal network and doesn't require using certificates to connect. After setup, you can connect to other types of Wi-Fi networks.
+The first time you use your HoloLens, you'll be guided through connecting to a Wi-Fi network. If you have trouble connecting to Wi-Fi during setup, make sure that your network is either an open, password-protected network or a captive portal network. Make sure that the network doesn't require you to use a certificate to connect. After setup, you can connect to other types of Wi-Fi networks.
 
 ## Connecting to Wi-Fi after setup
 
-1. Go to **Start**, then select **Settings**.
-1. _HoloLens (1st gen) only_ - Use your gaze to position the Settings app, then air tap to place it, or say "Place."
+1. Select **Start** > **Settings**.
+   - *HoloLens (1st gen) only*: Use your gaze to position the Settings app, then air tap to place it, or say "Place."
 1. Select **Network & Internet** > **Wi-Fi**. If you don't see your network, scroll down the list.
-1. Select a network > **Connect**.
-1. Type the network password if asked for one, then select **Next**.
+1. Select a network, then select **Connect**.
+1. If you are prompted for a network password type it and then select **Next**.
 
 ## Connecting to Wi-Fi on HoloLens (1st gen)
 
@@ -49,7 +48,7 @@ HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio. Connecting HoloLens to a 
 You can also confirm you are connected to a Wi-Fi network by checking the Wi-Fi status in the **Start** menu:
 
 1. Open the **Start** menu.
-2. Look at the top left of the **Start** menu for Wi-Fi status. The state of Wi-Fi and the SSID of the connected network will be shown.
+1. Look at the top left of the **Start** menu for Wi-Fi status. The state of Wi-Fi and the SSID of the connected network will be shown.
 
 ## Disabling Wi-Fi on HoloLens (1st gen)
 
@@ -67,7 +66,7 @@ You can also confirm you are connected to a Wi-Fi network by checking the Wi-Fi 
 
 ## Identifying the IP Address of your HoloLens on the Wi-Fi network
 
-### Using the Settings app
+### By using the Settings app
 
 1. Open the **Start** menu.
 1. Select the **Settings** app from **Start** or from the **All Apps** list on the right of the **Start** menu. The **Settings** app will be auto-placed in front of you.
@@ -76,14 +75,14 @@ You can also confirm you are connected to a Wi-Fi network by checking the Wi-Fi 
 
     ![Hardware properties in Wi-Fi settings](./images/wifi-hololens-hwdetails.jpg)
 
-   The IP address will be shown next to **IPv4 address**.
+   The IP address appears next to **IPv4 address**.
 
-### Using Cortana
+### By using Cortana
 
 Say "Hey Cortana, What's my IP address?" and Cortana will display and read out your IP address.
 
-### Using Windows Device Portal
+### By using Windows Device Portal
 
-1. Open the [device portal](/windows/mixed-reality/using-the-windows-device-portal.md#networking) in a web browser on your PC.
+1. In a web browser on your PC, open the [device portal](/windows/mixed-reality/using-the-windows-device-portal.md#networking).
 1. Navigate to the **Networking** section.  
-   Your IP address and other network information will be displayed there. This method allows for easy copy and paste of the IP address on your development PC.
+   This section displays your IP address and other network information. By using this method, you can copy and paste of the IP address on your development PC.
