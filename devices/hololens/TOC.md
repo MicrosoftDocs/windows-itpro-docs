@@ -41,7 +41,7 @@
 
 # Accessories and connectivity
 ## [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
-## [HoloLens (1st gen) clicker](hololens1-clicker.md)
+## [Use the HoloLens (1st gen) clicker](hololens1-clicker.md)
 ## [Connect to a network](hololens-network.md)
 ## [Use HoloLens offline](hololens-offline.md)
 
