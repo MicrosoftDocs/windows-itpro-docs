@@ -101,7 +101,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
         <Data>0</Data>
     </Item>
 </Replace>
-```xml
+```
 
 ```xml
 <Replace>
@@ -117,7 +117,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
         <Data>1</Data>
     </Item>
 </Replace> 
-```xml
+```
 
 ```xml
 <Replace>
@@ -133,4 +133,4 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
         <Data>Insert the proxy PAC URL location here:</Data>
     </Item>
 </Replace>
-```xml
+```
