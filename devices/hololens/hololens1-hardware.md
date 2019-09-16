@@ -2,13 +2,14 @@
 title: HoloLens (1st gen) hardware
 description: An outline of the components that make up Microsoft HoloLens (1st gen), the world's first fully untethered holographic computer running Windows.
 ms.assetid: 527d494e-2ab6-46ca-bd5a-bfc6b43cc833
-ms.date: 08/07/2019
+ms.date: 09/16/2019
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
 ms.author: mazeller
 ms.topic: article
+manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
@@ -29,7 +30,7 @@ Your HoloLens includes the following features:
 - **Visor**. Contains the HoloLens sensors and displays. You can rotate the visor up while you are wearing the HoloLens.
 - **Headband**. To put the HoloLens on, use the adjustment wheel to expand the headband. With the HoloLens in place, tighten the adjustment wheel until the headband is comfortable.
 - **Brightness buttons**. When you're wearing the HoloLens, the brightness buttons are on the left side of the device.
-- **Volume buttons**. When you're wearing the HoloLens, the volume buttons are on the right side of the device.- .
+- **Volume buttons**. When you're wearing the HoloLens, the volume buttons are on the right side of the device.
 - **Device arms**. When you pick up, put on, or take off your HoloLens, always grasp or hold it by the device arms.
 
 ## In the box
@@ -57,14 +58,14 @@ The HoloLens box contains the following items:
 | - | - |
 | Optics | See-through holographic lenses (waveguides) |
 | Holographic resolution | 2 HD 16:9 light engines producing 2.3M total light points |
-| Holographic density | >2.5k radiants (light points per radian) |
+| Holographic density | \>2.5k radiants (light points per radian) |
 | Eye-based rendering | Automatic pupillary distance calibration |
 
 ### Sensors
 
-![HoloLens has sensors for environment understanding and human understanding](images/sensor-bar-400px.jpg)
+![HoloLens has sensors for understanding its environment and user actions](images/sensor-bar-400px.jpg)
 
-- 1 IMU
+- 1 inertial measurement unit (IMU)
 - 4 environment understanding cameras
 - 1 depth camera
 - 1 2MP photo / HD video camera
@@ -108,18 +109,18 @@ The HoloLens box contains the following items:
 
 |   |   |
 | - | - |
-| Sizing | Single size with adjustable band.  Fits over glasses |
+| Sizing | Single size with adjustable band. Fits over glasses |
 | Weight | 579 grams |
 
 ## Device capabilities
 
-Human understanding using:
+Using the following to understand user actions:
 
 - Gaze tracking
 - Gesture input
 - Voice support
 
-Environmental understanding via:
+Using the following to understand the environment:
 
 - Spatial sound
 
@@ -143,13 +144,13 @@ HoloLens has been tested and found to conform to the basic impact protection req
 
 ## Care and cleaning
 
-Handle your HoloLens carefully. Use the device arms&mdash;not the overhead strap&mdash;to lift, carry, and adjust it. To keep the visor free of dust and fingerprints, avoid touching it. Repeated cleaning could damage the visor, so try to keep your device clean.
+Handle your HoloLens carefully. To lift, carry, and adjust your HoloLens, use the device arms&mdash;not the overhead strap. To keep the visor free of dust and fingerprints and avoid touching it. Repeated cleaning could damage the visor, so try to keep your device clean.
 
 Don't use any cleaners or solvents on your HoloLens, and don't submerge it in water or apply water directly to it.
 
 To clean the visor, remove any dust using a camel or goat hair lens brush or a bulb-style lens blower. Lightly moisten the microfiber cloth with a small amount of distilled water, then use it to wipe the visor gently in a circular motion.
 
-Clean the rest of the device, including the headband and device arms, with a lint-free cloth moistened with mild soap and water. Let your HoloLens dry completely before using it again.
+To clean the rest of the device, including the headband and device arms, use a lint-free cloth moistened with mild soap and water. Let your HoloLens dry completely before using it again.
 
 ![Image that shows how to clean the visor](images/hololens-cleaning-visor.png)
 
