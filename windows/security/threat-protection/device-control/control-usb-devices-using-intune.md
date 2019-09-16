@@ -22,13 +22,13 @@ Microsoft recommends [a layered approach to securing removable media](https://ak
 
 1. [Discover plug and play (PnP) connected events for peripherals in Microsoft Defender ATP advanced hunting](#discover-plug-and-play-connected-events). Identify or investigate suspicious usage activity.
 
-2. Configure to prevent threats and allow/block only certain removable devices
+2. Configure to prevent threats and allow/block only certain removable devices.
     1. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling:  
            - [Windows Defender Antivirus real-time protection (RTP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) to scan removable storage for malware.
-           - The [Attack Surface Reduction (ASR) USB rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) to block untrusted and unsigned processes that run from USB.  
+           - The [Attack Surface Reduction (ASR) USB rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) to block untrusted and unsigned processes that run from USB.
            - [Direct Memory Access (DMA) protection settings](#protect-against-direct-memory-access-dma-attacks) to mitigate DMA attacks, including [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) and blocking DMA until a user signs in.
     2. [Allow or block removable devices](#allow-or-block-removable-devices) based on granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination. Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
-3. [Monitor usage of removable devices by creating customized alerts and response actions](#monitor-usage-of-removable-devices-by-creating-customized-alerts-and-response-actions) based on these PnP events or any other Microsoft Defender ATP events with [custom detection rules](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules).
+3. [Create customized alerts and response actions](#create-customized-alerts-and-response-actions) to monitor usage of removable devices based on these PnP events or any other Microsoft Defender ATP events with [custom detection rules](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules).
 
 4. [Respond to threats](#respond-to-threats) from peripherals in real-time based on properties reported by each peripheral.
 
@@ -61,7 +61,7 @@ For more information about controlling USB devices, see the [Microsoft Defender 
 |----------|-------------|
 | [Enable Windows Defender Antivirus Scanning](#enable-windows-defender-antivirus-scanning) | Enable Windows Defender Antivirus scanning for real-time protection or scheduled scans.|
 | [Block untrusted and unsigned processes on USB peripherals](#block-untrusted-and-unsigned-processes-on-usb-peripherals) | Block USB files that are unsigned or untrusted. |
-| [Protect against Direct Memory Access (DMA) attacks](#protect-against-direct-memory-access-dma-attacks) | Configure settings to protect against against DMA attacks. |
+| [Protect against Direct Memory Access (DMA) attacks](#protect-against-direct-memory-access-dma-attacks) | Configure settings to protect against DMA attacks. |
 
 >[!NOTE]
 >Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
@@ -281,7 +281,7 @@ The Microsoft Defender ATP baseline settings represent the recommended configura
 
 ![Baselines](images/baselines.png)
 
-## Monitor usage of removable devices by creating customized alerts and response actions
+## Create customized alerts and response actions
 
 You can create custom alerts and response actions with the WDATP Connector and the custom detection rules:
 
