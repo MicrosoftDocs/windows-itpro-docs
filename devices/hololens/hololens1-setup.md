@@ -1,5 +1,5 @@
 ---
-title: Set up a new HoloLens
+title: Prepare a new HoloLens
 description: This guide walks through first time set up.
 ms.prod: hololens
 ms.sitesec: library
@@ -14,7 +14,7 @@ appliesto:
 - Hololens (1st gen)
 ---
 
-# Set up HoloLens (1st gen)
+# Get your HoloLens (1st gen) ready to use
 
 Follow along to set up a HoloLens (1st gen) for the first time.
 
