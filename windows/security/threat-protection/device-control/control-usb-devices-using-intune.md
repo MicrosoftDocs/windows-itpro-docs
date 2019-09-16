@@ -24,9 +24,9 @@ Microsoft recommends [a layered approach to securing removable media](https://ak
 
 2. Configure to prevent threats and allow/block only certain removable devices.
     1. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling:  
-           - [Windows Defender Antivirus real-time protection (RTP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) to scan removable storage for malware.
-           - The [Attack Surface Reduction (ASR) USB rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) to block untrusted and unsigned processes that run from USB.
-           - [Direct Memory Access (DMA) protection settings](#protect-against-direct-memory-access-dma-attacks) to mitigate DMA attacks, including [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) and blocking DMA until a user signs in.
+           - [Windows Defender Antivirus real-time protection (RTP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) to scan removable storage for malware.  
+           - The [Attack Surface Reduction (ASR) USB rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) to block untrusted and unsigned processes that run from USB.  
+           - [Direct Memory Access (DMA) protection settings](#protect-against-direct-memory-access-dma-attacks) to mitigate DMA attacks, including [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) and blocking DMA until a user signs in.  
     2. [Allow or block removable devices](#allow-or-block-removable-devices) based on granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination. Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
 3. [Create customized alerts and response actions](#create-customized-alerts-and-response-actions) to monitor usage of removable devices based on these PnP events or any other Microsoft Defender ATP events with [custom detection rules](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules).
 
@@ -271,7 +271,7 @@ Microsoft Defender ATP blocks installation and usage of prohibited peripherals b
 
 ### Limit services that use Bluetooth
 
-Using Intune, you can limit the services that can use Bluetooth through the “Bluetooth allowed services”. The default state of “Bluetooth allowed services” settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and don’t add the file transfer GUIDs, file transfer should be blocked.
+Using Intune, you can limit the services that can use Bluetooth through the “Bluetooth allowed services”. The default state of “Bluetooth allowed services” settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and doesn’t add the file transfer GUIDs, file transfer should be blocked.
 
 ![Bluetooth](images/bluetooth.png)
 
