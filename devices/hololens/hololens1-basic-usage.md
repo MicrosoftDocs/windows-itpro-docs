@@ -76,9 +76,44 @@ You'll find your installed apps in the Start menu and there are more apps for Ho
 
 Open the Start menu and select an app!
 
-Using apps on HoloLens is a little different from on a PC: once you open an app, you'll need to place it in your world to run it. Place it wherever you'd like.  Some apps use a 2D view and look like other Windows applications, other apps (holographic apps) use a 3D view and become the only app you see.
+Using apps on HoloLens is a little different from on a PC: Some apps use a 2D view and look like other Windows applications, other apps (immersive apps) use a 3D view and become the only app you see.
 
-Once you've placed an app, it will stay put until you remove it.  You can move or resize 2D apps at any time.
+Once an app is placed, it will stay put until you remove it.  You can move or resize 2D apps at any time.
+
+
+## Move, resize, and rotate apps
+
+Moving and resizing apps on HoloLens works a bit differently than it does on a PC. Instead of dragging the app, you'll use your gaze, along with a [gesture](https://support.microsoft.com/help/12644/hololens-use-gestures) or the [clicker](hololens-clicker.md). You can also rotate an app window in 3D space.
+
+> [!TIP]
+> Rearrange apps using your voice&mdash;gaze at an app and say "Face me," "Bigger," or "Smaller." Or have Cortana move an app for you: say "Hey Cortana, move &lt;*app name*&gt; here."
+
+### Move an app
+
+Gaze at the app, and then do one of the following.
+
+- Tap and hold to select the app. Move your hand to position the app, and raise your finger to place it. On an app window, you need to gaze at the title bar.
+- Select **Adjust**,&nbsp;tap and hold, and move your hand to position the app. Raise your finger to place it, then select **Done**.
+- Select **Adjust**, click and hold the clicker, and move your hand to position the app. Release the clicker, then select **Done**.
+
+> [!TIP]
+> If you drop apps when you move them, make sure to keep your hand in the gesture frame by following it with your gaze.
+
+### Resize an app
+
+Gaze at the app,&nbsp;and then do one of the following.
+
+- Gaze at a corner or edge of an app window, and tap and hold. Move your hand to change the app's size, and raise your finger when you're done.
+
+- Select **Adjust**. Gaze at one of the blue squares at the corners of the app, tap and hold, then move your hand to resize the app. Raise your finger to release it, then select **Done**.
+- Select **Adjust**. Gaze at one of the blue squares at the corners of the app, click and hold the clicker, then move your hand to resize the app. Release the clicker, then select **Done**.
+
+> [!TIP]
+> In Adjust mode, you can move or resize any hologram.
+
+### Rotate an app
+
+Gaze at the app, and tap and hold with both hands to select it. Rotate the app by keeping one hand steady and moving your other hand around it. When you're done, raise both index fingers.
 
 ### Help! I don't see my holograms
 

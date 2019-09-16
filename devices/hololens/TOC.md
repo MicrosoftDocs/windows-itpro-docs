@@ -29,7 +29,7 @@
 ## [Set up limited application access](hololens-kiosk.md)
 
 # Navigating Windows Holographic
-## [Navigate the mixed reality home](holographic-home.md)
+## [Start menu and mixed reality home](holographic-home.md)
 ## [Use your voice with HoloLens](hololens-cortana.md)
 ## [Find and save files](hololens-find-and-save-files.md)
 ## [Create, share, and view photos and video](holographic-photos-and-video.md)
