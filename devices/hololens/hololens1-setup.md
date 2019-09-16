@@ -20,7 +20,7 @@ Follow along to set up a HoloLens (1st gen) for the first time.
 
 ## Charge your HoloLens (1st gen)
 
-To charge your HoloLens, connect the power supply to the charging port using the included Micro USB cable. Then plug the power supply into a power outlet. When the device is charging, the battery indicator will light up in a wave pattern.
+To charge your HoloLens, connect the power supply to the charging port by using the included Micro USB cable. Then plug the power supply into a power outlet. When the device is charging, the battery indicator will light up in a wave pattern.
 
 ![Image that shows how to attach the Micro USB cable to the HoloLens](./images/hololens-charging.png)
 
@@ -35,19 +35,19 @@ When your HoloLens is on, the battery indicator shows the battery level in incre
 
 |     |     |
 |:--- |:--- |
-|1. Rotate the headband up to about 20-30 degrees.|![Step one](./images/FitGuideStep1.png)|
-|2. Push the headband back. Do not pull it back, or manipulate the band behind the hinge, as this can break the band over time.|![Step two](./images/FitGuideStep2.png)|
-|3. Turn the adjustment wheel to extend the headband all the way out. Show the user where the band should rest on the forehead, and show them the adjustment wheel.|![Step three](./images/FitGuideStep3.png)|
-|4. Hold the headband for the user, and have them grab the arms of the device and place in on their head. Make sure the band rests in the correct spot, and let them tighten the adjustment wheel. Slide the visor back.|![Step four](./images/FitGuideStep4.png)|
-|5. The headband should sit at the top of the forehead, just below your hairline, with the speakers above the ears. By looking at them from the front, you should be able to tell that the lenses are centered over their eyes.|![Step five](./images/FitGuideSetep5.png)|
+|1. Rotate&nbsp;the&nbsp;headband up to about 20-30 degrees.|![Step one, rotate the headbanc](./images/FitGuideStep1.png)|
+|2. Push the headband back. Do not pull it back, or manipulate the band behind the hinge, because over time this can break the band.|![Step two, push the headband back](./images/FitGuideStep2.png)|
+|3. Turn the adjustment wheel to extend the headband all the way out. |![Step three, use the adjustment wheel to extend the headband](./images/FitGuideStep3.png)|
+|4. Hold the device by the device arms, and place it on your head. Make sure that the headband sits at the top of your forehead, and then tighten the adjustment wheel.|![Step four, put on the device and adjust the headband](./images/FitGuideStep4.png)|
+|5. Slide the visor back, and then check the fit of the device. The headband should sit at the top of the forehead, just below your hairline, with the speakers above your ears. The lenses should be centered over your eyes.|![Step five, slide the visor back and check the fit](./images/FitGuideSetep5.png)|
 
 ## Turn on your HoloLens
 
-Use the power button to turn HoloLens on and off or put it in standby mode.
-
-If your device doesn't respond or won't start, see [Restart, reset, or recover HoloLens](hololens-restart-recover.md).
+Use the power button to turn HoloLens on and off or to put it in standby mode.
 
 ![Image that shows the HoloLens power button](./images/hololens-power.png)
+
+If your device doesn't respond or won't start, see [Restart, reset, or recover HoloLens](hololens-restart-recover.md).
 
 When your HoloLens is off or in standby, turn it on by pressing the power button for one second. If it doesn't turn on, plug it in and charge it for at least 30 minutes.
 
@@ -56,19 +56,19 @@ When your HoloLens is off or in standby, turn it on by pressing the power button
 
 ### Put HoloLens in standby
 
-To put your HoloLens in standby when it's turned on, press the power button once. The battery indicators blink off. To wake it from standby, press the power button again.
+To put your HoloLens in standby while it's turned on, press the power button once. The battery indicators blink off. To wake it from standby, press the power button again.
 
 HoloLens automatically goes into standby after 3 minutes of inactivity. When it's in standby, it automatically shuts down after 4 hours, or after the battery level drops by 10 percent.
 
 ### Shut down HoloLens
 
-To shut down (turn off) HoloLens, hold the power button down for four seconds. The battery indicators turn off one by one and the device will shut down.
+To shut down (turn off) HoloLens, hold the power button down for four seconds. The battery indicators turn off one by one and the device shuts down.
 
 HoloLens automatically shuts down when the battery level drops to one percent, even if it's plugged in. After you've recharged the battery to three percent, you'll be able to turn HoloLens on again.
 
 ## Adjust volume and brightness
 
-The brightness and volume buttons are on top of the device arms - volume to your right and brightness to your left.
+The brightness and volume buttons are on top of the device arms&mdash;volume to your right and brightness to your left.
 
 ![Image that shows the HoloLens buttons](./images/hololens-buttons.jpg)
 
