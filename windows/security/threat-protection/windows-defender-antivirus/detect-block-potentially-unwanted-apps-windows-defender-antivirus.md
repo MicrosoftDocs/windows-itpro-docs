@@ -22,28 +22,37 @@ manager: dansimp
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Edge on Windows 10](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge)
 
 The potentially unwanted application (PUA) protection feature in Windows Defender Antivirus can detect and block PUAs on endpoints in your network.
 
-These applications are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints that adversely affect their performance or use. _PUA_ can also refer to a application that has a poor reputation, due to certain kinds of undesirable behavior.
+These applications are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints that adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender ATP, due to certain kinds of undesirable behavior.
 
-Typical PUA behavior includes:
+These kinds of undesirable PUA behavior include:
 
 - Ad injection into web browsers
 - Various types of software bundling
 - Driver and registry optimizers that detect issues, request payment to fix the errors, and then make no changes or optimizations (also known as "rogue antivirus" programs)
 
-These applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up.
+Potentially unwanted applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up.
 
 > [!TIP]
 > You can visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm that the feature is working, and see it in action.
 
 ## How it works
 
-PUAs may operate entirely on a local machine, or rely on remote resources located at an outside URL. PUA protection protects you from local files.
+### Microsoft Edge
 
-> [!TIP]
-> If you are running the next major version of Microsoft Edge, which is Chromium-based, PUA protection will also block URLs associated with potentially unwanted activities.
+The next major version of Microsoft Edge, which is Chromium-based, blocks potentially unwanted application downloads and associated resource URLs. This feature is provided via [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md). Although potentially unwanted application protection in Microsoft Edge (Chromium-based) is off by default, it can easily be turned on from within the browser.
+
+1. From the tool bar, select **Settings and more** > **Settings**
+1. Select **Privacy and services**
+1. Under the **Services** section, you can toggle **Potentially unwanted app blocking** on or off
+
+> [!TIP] <!-- NOT currently up and running. From Matt Esquivel: "We need to add something to the test pages. [...] The URL I use now is: https://test.smartscreen.msft.net/urlrep_download/puaa_090_download_link.exe"-->
+> If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen demo pages.
+
+### Windows Defender Antivirus
 
 Windows Defender Antivirus blocks detected PUA files, and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine.
 
@@ -113,17 +122,6 @@ See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use
 ## Allow-listing apps
 
 Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files which are currently blocked by PUA protection.
-
-## URL blocking
-
-URL blocking is a new feature, exclusive to the next major version of Microsoft Edge, which is Chromium-based and currently in public preview. URL blocking is provided via [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md). This feature is off by default, but can easily be turned on in Microsoft Edge (Chromium-based).
-
-1. From the tool bar, select **Settings and more** > **Settings**
-1. Select **Privacy and services**
-1. Under the **Services** section, you can toggle **Poentially unwanted app blocking** on or off
-
-> [!TIP]
-> If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen demo pages.
 
 ## Related topics
 
