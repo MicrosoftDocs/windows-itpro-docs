@@ -26,7 +26,7 @@ manager: dansimp
 
 The potentially unwanted application (PUA) protection feature in Windows Defender Antivirus can detect and block PUAs on endpoints in your network.
 
-These applications are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints that adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender ATP, due to certain kinds of undesirable behavior.
+Potentially unwanted applications are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints that adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender ATP, due to certain kinds of undesirable behavior.
 
 These kinds of undesirable PUA behavior include:
 
@@ -60,7 +60,7 @@ When a PUA is detected on an endpoint, Windows Defender Antivirus sends a notifi
 
 The notification will appear in the usual [quarantine list within the Windows Security app](windows-defender-security-center-antivirus.md#detection-history).
 
-## View PUA events
+#### View PUA events
 
 PUA events are reported in the Windows Event Viewer, but not in System Center Configuration Manager or in Intune.
 
@@ -68,7 +68,7 @@ You can turn on email notifications to receive mail about PUA detections.
 
 See [Troubleshoot event IDs](troubleshoot-windows-defender-antivirus.md) for details on viewing Windows Defender Antivirus events. PUA events are recorded under event ID **1160**.
 
-## Configure PUA protection
+#### Configure PUA protection
 
 You can enable PUA protection with Microsoft Intune, System Center Configuration Manager, Group Policy, or via PowerShell cmdlets.
 
@@ -76,11 +76,11 @@ You can also use the PUA audit mode to detect PUAs without blocking them. The de
 
 PUA audit mode is useful if your company is conducting an internal software security compliance check and you'd like to avoid any false positives.
 
-### Use Intune to configure PUA protection
+##### Use Intune to configure PUA protection
 
 See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
 
-### Use Configuration Manager to configure PUA protection
+##### Use Configuration Manager to configure PUA protection
 
 PUA protection is enabled by default in the System Center Configuration Manager (current branch), starting with  version 1606.
 
@@ -91,21 +91,21 @@ For Configuration Manager 2012, see [How to Deploy Potentially Unwanted Applicat
 > [!NOTE]
 > PUA events are reported in the Windows Event Viewer and not in System Center Configuration Manager.
 
-### Use Group Policy to configure PUA protection
+##### Use Group Policy to configure PUA protection
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure, and click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure, and select **Edit**.
 
-2. In the **Group Policy Management Editor**, go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
 3. Expand the tree to **Windows components > Windows Defender Antivirus**.
 
 4. Double-click **Configure protection for potentially unwanted applications**.
 
-5. Click **Enabled** to enable PUA protection.
+5. Select **Enabled** to enable PUA protection.
 
-6. In **Options**, select **Block** to block potentially unwanted applications, or select **Audit Mode** to test how the setting will work in your environment. Click **OK**.
+6. In **Options**, select **Block** to block potentially unwanted applications, or select **Audit Mode** to test how the setting will work in your environment. Select **OK**.
 
-**Use PowerShell cmdlets to configure PUA protection:**
+##### Use PowerShell cmdlets to configure PUA protection
 
 Use the following cmdlet:
 
@@ -119,7 +119,7 @@ Setting `AuditMode` will detect PUAs without blocking them.
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-## Allow-listing apps
+#### Allow-listing apps
 
 Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files which are currently blocked by PUA protection.
 
