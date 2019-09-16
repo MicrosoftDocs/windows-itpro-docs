@@ -9,8 +9,8 @@
 
 # Get started with HoloLens (1st gen)
 ## [HoloLens (1st gen) hardware](hololens1-hardware.md)
-## [Set up your HoloLens (1st gen)](hololens1-setup.md)
-## [Start your HoloLens (1st gen) for the first time](hololens1-start.md)
+## [Get your HoloLens (1st gen) ready to use](hololens1-setup.md)
+## [Set up your HoloLens (1st gen)](hololens1-start.md)
 ## [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
 ## [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
 
