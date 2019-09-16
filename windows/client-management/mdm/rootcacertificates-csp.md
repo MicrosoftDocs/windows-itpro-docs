@@ -52,7 +52,7 @@ Addeded in Windows 10, version 1803. Node for certificates that are not trusted.
 <a href="" id="certhash"></a>**_CertHash_**  
 Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value. This node is common for all the principal root nodes.  The supported operations are Get and Delete.
 
-The following nodes, are all common to the **_CertHash_** node:
+The following nodes are all common to the **_CertHash_** node:
 
 <a href="" id="-encodedcertificate"></a>**/EncodedCertificate**  
 Specifies the X.509 certificate as a Base64-encoded string. The Base-64 string value cannot include extra formatting characters such as embedded linefeeds, etc.  The supported operations are Add, Get, and Replace.
