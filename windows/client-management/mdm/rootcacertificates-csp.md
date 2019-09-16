@@ -21,7 +21,7 @@ The RootCATrustedCertificates configuration service provider enables the enterpr
  
 The following image shows the RootCATrustedCertificates configuration service provider in tree format.
 
-Here the detailed specfiication of the principal root nodes:
+Detailed specification of the principal root nodes:
 
 ![roocacertificate](images/provisioning-csp-rootcacertificate.png)
 
