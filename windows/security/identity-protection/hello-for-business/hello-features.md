@@ -25,9 +25,10 @@ ms.date: 05/05/2018
 
 Consider these additional features you can use after your organization deploys Windows Hello for Business.
 
-- [Dynamic lock](hello-feature-dynamic-lock.md)
 - [Conditional Access](hello-feature-conditional-access.md)
 - [Dual Enrollment](hello-feature-dual-enrollment.md)
+- [Dynamic lock](hello-feature-dynamic-lock.md)
+- [Multifactor Unlock](feature-multifactor-unlock.md)
 - [PIN Reset](hello-feature-pin-reset.md)
 - [Remote Desktop](hello-feature-remote-desktop.md)
 

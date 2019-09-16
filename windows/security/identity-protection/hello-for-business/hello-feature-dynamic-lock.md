@@ -17,7 +17,7 @@ ms.date: 09/09/2019
 ms.reviewer: 
 ---
 
-## Dynamic lock
+# Dynamic lock
 
 **Requirements:**
 
