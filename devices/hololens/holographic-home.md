@@ -64,9 +64,9 @@ Apps on HoloLens can use app window view or immersive view. An app using app win
 
 ### Using app windows
 
-On HoloLens (1st gen) app windows are placed and used in mixed reality home, where you can [move, resize, and rotate](hololens1-basic-usage.md#Move,-resize,-and-rotate-apps) them as you like. 
+On HoloLens (1st gen) app windows are placed and used in mixed reality home, where you can [move, resize, and rotate](hololens1-basic-usage.md#move-resize-and-rotate-apps) them as you like. 
 
-On HoloLens 2, in addition to using app windows in mixed reality home, you can also use one app window at a time inside an immersive app itself. You can also put an app window into **Follow me** mode where it will stay in front of you as you walk around. When you open an app window while inside an immersive app, it will open in **Follow me** mode automatically. You can [move, resize, and rotate](hololens2-basic-usage.md#Move-and-resize-near-by-holograms-and-apps-by-grabbing-them) app windows directly using your hands in both mixed reality home and inside an immersive app. 
+On HoloLens 2, in addition to using app windows in mixed reality home, you can also use one app window at a time inside an immersive app itself. You can also put an app window into **Follow me** mode where it will stay in front of you as you walk around. When you open an app window while inside an immersive app, it will open in **Follow me** mode automatically. You can [move, resize, and rotate](hololens2-basic-usage.md#move-and-resize-nearby-holograms-and-apps-by-grabbing-them) app windows directly using your hands in both mixed reality home and inside an immersive app. 
 
 > [!NOTE]
 >
