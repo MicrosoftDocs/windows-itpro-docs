@@ -1,3 +1,15 @@
+---
+title: Deploying MBAM 2.5 in a stand-alone configuration
+description: Introducing how to deploy MBAM 2.5 in a stand-alone configuration.
+author: delhan
+ms.reviewer: 
+manager: dcscontentpm
+ms.author: delhan
+ms.sitesec: library
+ms.prod: w10
+ms.date: 09/16/2019
+--- 
+
 # Deploying MBAM 2.5 in a stand-alone configuration
 
 This article provides step-by-step instructions for installing Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 in a stand-alone configuration. In this guide we will use a two-server configuration. One of the two servers will be a database server that is running Microsoft SQL Server 2012. This server will host the MBAM databases and reports. The additional server will be a Windows Server 2012 web server and will host "Administration and Monitoring Server" and "Self-Service Portal."

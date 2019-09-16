@@ -1,3 +1,15 @@
+---
+title: Troubleshooting MBAM 2.5 installation problems
+description: Introducing how to troubleshoot MBAM 2.5 installation problems.
+author: delhan
+ms.reviewer: 
+manager: dcscontentpm
+ms.author: delhan
+ms.sitesec: library
+ms.prod: w10
+ms.date: 09/16/2019
+--- 
+
 # Troubleshooting MBAM 2.5 installation problems
 
 This article introduces how to troubleshoot Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 installation issues in a stand-alone configuration.
