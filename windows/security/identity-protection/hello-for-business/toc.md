@@ -8,10 +8,10 @@
 
 ## [Windows Hello for Business Features](hello-features.md)
 ### [Conditional Access](hello-feature-conditional-access.md)
+### [Dual Enrollment](hello-feature-dual-enrollment.md)
 ### [Dynamic Lock](hello-feature-dynamic-lock.md)
 ### [Multifactor Unlock](feature-multifactor-unlock.md)
 ### [PIN Reset](hello-feature-pin-reset.md)
-### [Dual Enrollment](hello-feature-dual-enrollment.md)
 ### [Remote Desktop](hello-feature-remote-desktop.md)
 
 ## [How Windows Hello for Business works](hello-how-it-works.md)
