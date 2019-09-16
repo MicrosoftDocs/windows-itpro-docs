@@ -24,8 +24,6 @@ manager: dansimp
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 - [Microsoft Edge on Windows 10](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge)
 
-The potentially unwanted application (PUA) protection feature in Windows Defender Antivirus can detect and block PUAs on endpoints in your network.
-
 Potentially unwanted applications are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints that adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender ATP, due to certain kinds of undesirable behavior.
 
 These kinds of undesirable PUA behavior include:
@@ -53,6 +51,8 @@ The next major version of Microsoft Edge, which is Chromium-based, blocks potent
 > If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen demo pages.
 
 ### Windows Defender Antivirus
+
+The potentially unwanted application (PUA) protection feature in Windows Defender Antivirus can detect and block PUAs on endpoints in your network.
 
 Windows Defender Antivirus blocks detected PUA files, and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine.
 
