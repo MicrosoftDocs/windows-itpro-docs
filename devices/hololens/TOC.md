@@ -24,7 +24,7 @@
 ## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
 
 # User management and access management
-## [Sharing a HoloLens with many people](hololens-multiple-users.md)
+## [Share your HoloLens with multiple people](hololens-multiple-users.md)
 ## [Set up HoloLens as a kiosk (single application access)](hololens-kiosk.md)
 ## [Set up limited application access](hololens-kiosk.md)
 
