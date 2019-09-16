@@ -20,20 +20,27 @@ audience: ITPro
 
 Microsoft recommends [a layered approach to securing removable media](https://aka.ms/devicecontrolblog), and Microsoft Defender ATP provides multiple monitoring and control features to help prevent threats in unauthorized peripherals from compromising your devices:
 
-1. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling:
-   - [Windows Defender Antivirus real-time protection (RTP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) to scan removable storage for malware.
-   - The [Attack Surface Reduction (ASR) USB rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) to block untrusted and unsigned processes that run from USB.  
-   - [Direct Memory Access (DMA) protection settings](#protect-against-direct-memory-access-dma-attacks) to mitigate DMA attacks, including [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) and blocking DMA until a user signs in.
+1. [Discover plug and play (PnP) connected events for peripherals in Microsoft Defender ATP advanced hunting](#discover-plug-and-play-connected-events). Identify or investigate suspicious usage activity.
 
-2. [Detect plug and play connected events for peripherals in Microsoft Defender ATP advanced hunting](#detect-plug-and-play-connected-events)
-   - Identify or investigate suspicious usage activity. Create customized alerts based on these PnP events or any other Microsoft Defender ATP events with [custom detection rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/custom-detection-rules).
+2. Configure to prevent threats and allow/block only certain removable devices
+    1. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling:  
+           - [Windows Defender Antivirus real-time protection (RTP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) to scan removable storage for malware.
+           - The [Attack Surface Reduction (ASR) USB rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) to block untrusted and unsigned processes that run from USB.  
+           - [Direct Memory Access (DMA) protection settings](#protect-against-direct-memory-access-dma-attacks) to mitigate DMA attacks, including [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) and blocking DMA until a user signs in.
+    2. [Allow or block removable devices](#allow-or-block-removable-devices) based on granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination. Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
+3. [Monitor usage of removable devices by creating customized alerts and response actions](#monitor-usage-of-removable-devices-by-creating-customized-alerts-and-response-actions) based on these PnP events or any other Microsoft Defender ATP events with [custom detection rules](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules).
 
-3. [Respond to threats](#respond-to-threats) from peripherals in real-time based on properties reported by each peripheral:
-   - Granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination.
-   - Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
+4. [Respond to threats](#respond-to-threats) from peripherals in real-time based on properties reported by each peripheral.
 
 >[!Note]
 >These threat reduction measures help prevent malware from coming into your environment. To protect enterprise data from leaving your environment, you can also configure data loss prevention measures. For example, on Windows 10 devices you can configure [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview) and [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure), which will encrypt company data even if it is stored on a personal device, or use the [Storage/RemovableDiskDenyWriteAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) to deny write access to removable disks. Additionally, you can [classify and protect files on Windows devices](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview) (including their mounted USB devices) by using Microsoft Defender ATP and Azure Information Protection.
+
+## Discover plug and play connected events
+
+You can view plug and play connected events in Microsoft Defender ATP advanced hunting to identify suspicious usage activity or perform internal investigations.
+For examples of Microsoft Defender ATP advanced hunting queries, see the [Microsoft Defender ATP hunting queries GitHub repo](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries).
+
+Sample Power BI report templates are available for Microsoft Defender ATP that you can use for Advanced hunting queries. With these sample templates, including one for device control, you can integrate the power of Advanced hunting into Power BI. See the [GitHub repository for PowerBI templates](https://github.com/microsoft/MDATP-PowerBI-Templates) for more information. See [Create custom reports using Power BI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi) to learn more about Power BI integration.
 
 ## Prevent threats from removable storage
   
@@ -46,21 +53,15 @@ Note that if you block USB devices or any other device classes using the device 
 >[!NOTE]
 >Always test and refine these settings with a pilot group of users and devices first before widely distributing to your organization. 
 
-The following table describes the ways Microsoft Defender ATP can help prevent installation and usage of USB peripherals.
+The following table describes the ways Microsoft Defender ATP can help prevent threats from removable storage.
 
 For more information about controlling USB devices, see the [Microsoft Defender ATP blog](https://aka.ms/devicecontrolblog).
 
 | Control  | Description |
 |----------|-------------|
-| [Enable Windows Defender Antivirus Scanning](#enable-windows-defender-antivirus-scanning) | You can enable Windows Defender Antivirus scanning for real-time protection or scheduled scans.|
-| [Block untrusted and unsigned processes on USB peripherals](#block-untrusted-and-unsigned-processes-on-usb-peripherals) | You can block USB files that are unsigned or untrusted. |
-| [Protect against Direct Memory Access (DMA) attacks](#protect-against-direct-memory-access-dma-attacks) | You can protect against DMA attacks. |
-| [Restrict USB Drives and Other Peripherals](#restrict-usb-drives-and-other-peripherals) | You can allow/prevent users to install only the USB drives and other peripherals included on a list of authorized/unauthorized devices or device types. |
-| [Block installation and usage of removable storage](#block-installation-and-usage-of-removable-storage) | You can't install or use removable storage. |
-| [Only allow installation and usage of specifically approved peripherals](#only-allow-installation-and-usage-of-specifically-approved-peripherals)   | You can only install and use approved peripherals that report specific properties in their firmware. |
-| [Prevent installation of specifically prohibited peripherals](#prevent-installation-of-specifically-prohibited-peripherals) | You can't install or use prohibited peripherals that report specific properties in their firmware. |
-| [Limit services that use Bluetooth](#limit-services-that-use-bluetooth) | You can limit the services that can use Bluetooth. |
-| [Use Microsoft Defender ATP baseline settings](#use-microsoft-defender-atp-baseline-settings) | You can set the recommended configuration for ATP by using the Microsoft Defender ATP security baseline. |
+| [Enable Windows Defender Antivirus Scanning](#enable-windows-defender-antivirus-scanning) | Enable Windows Defender Antivirus scanning for real-time protection or scheduled scans.|
+| [Block untrusted and unsigned processes on USB peripherals](#block-untrusted-and-unsigned-processes-on-usb-peripherals) | Block USB files that are unsigned or untrusted. |
+| [Protect against Direct Memory Access (DMA) attacks](#protect-against-direct-memory-access-dma-attacks) | Configure settings to protect against against DMA attacks. |
 
 >[!NOTE]
 >Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
@@ -128,14 +129,26 @@ DMA attacks can lead to disclosure of sensitive information residing on a PC, or
    - [Block DMA until a user signs in](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
    - [Block all connections via the Thunderbolt ports (including USB devices)](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d)
 
-### Restrict USB Drives and Other Peripherals
+## Allow or block removable devices
+The following table describes the ways Microsoft Defender ATP can allow or block removable devices based on granular configuration.
+
+| Control  | Description |
+|----------|-------------|
+| [Restrict USB drives and other peripherals](#restrict-usb-drives-and-other-peripherals) | You can allow/prevent users to install only the USB drives and other peripherals included on a list of authorized/unauthorized devices or device types. |
+| [Block installation and usage of removable storage](#block-installation-and-usage-of-removable-storage) | You can't install or use removable storage. |
+| [Only allow installation and usage of specifically approved peripherals](#only-allow-installation-and-usage-of-specifically-approved-peripherals)   | You can only install and use approved peripherals that report specific properties in their firmware. |
+| [Prevent installation of specifically prohibited peripherals](#prevent-installation-of-specifically-prohibited-peripherals) | You can't install or use prohibited peripherals that report specific properties in their firmware. |
+| [Limit services that use Bluetooth](#limit-services-that-use-bluetooth) | You can limit the services that can use Bluetooth. |
+| [Use Microsoft Defender ATP baseline settings](#use-microsoft-defender-atp-baseline-settings) | You can set the recommended configuration for ATP by using the Microsoft Defender ATP security baseline. |
+
+### Restrict USB drives and other peripherals
 
 To prevent malware infections or data loss, an organization may restrict USB drives and other peripherals. The following table describes the ways Microsoft Defender ATP can help prevent installation and usage of USB drives and other peripherals.
 
- Control  | Description
--|-
- [Allow installation and usage of USB drives and other peripherals](#allow-installation-and-usage-of-usb-drives-and-other-peripherals) | Allow users to install only the USB drives and other peripherals included on a list of authorized devices or device types
- [Prevent installation and usage of USB drives and other peripherals](#prevent-installation-and-usage-of-usb-drives-and-other-peripherals) | Prevent users from installing USB drives and other peripherals included on a list of unauthorized devices and device types
+| Control  | Description
+|----------|-------------|
+| [Allow installation and usage of USB drives and other peripherals](#allow-installation-and-usage-of-usb-drives-and-other-peripherals) | Allow users to install only the USB drives and other peripherals included on a list of authorized devices or device types |
+| [Prevent installation and usage of USB drives and other peripherals](#prevent-installation-and-usage-of-usb-drives-and-other-peripherals) | Prevent users from installing USB drives and other peripherals included on a list of unauthorized devices and device types |
 
 All of the above controls can be set through the Intune [Administrative Templates](https://docs.microsoft.com/intune/administrative-templates-windows). The relevant policies are located here in the Intune Administrator Templates:
 
@@ -268,22 +281,9 @@ The Microsoft Defender ATP baseline settings represent the recommended configura
 
 ![Baselines](images/baselines.png)
 
-## Respond to threats
+## Monitor usage of removable devices by creating customized alerts and response actions
 
-You can create custom alerts and automatic response actions with the [Microsoft Defender ATP Custom Detection Rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules). Response actions within the custom detection cover both machine and file level actions. You can also create alerts and automatic response actions using [PowerApps](https://powerapps.microsoft.com/) and [Flow](https://flow.microsoft.com/) with the [Microsoft Defender ATP connector](https://docs.microsoft.com/connectors/wdatp/). The connector supports actions for investigation, threat scanning, and restricting running applications. It is one of over 200 pre-defined connectors including Outlook, Teams, Slack, and more. Custom connectors can also be built. See [Connectors](https://docs.microsoft.com/connectors/) to learn more about connectors.
- 
-For example, using either approach, you can automatically have the Microsoft Defender Antivirus run when a USB device is mounted onto a machine.
-
-## Detect plug and play connected events
-
-You can view plug and play connected events in Microsoft Defender ATP advanced hunting to identify suspicious usage activity or perform internal investigations.
-For examples of Microsoft Defender ATP advanced hunting queries, see the [Microsoft Defender ATP hunting queries GitHub repo](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries).
-
-Sample Power BI report templates are available for Microsoft Defender ATP that you can use for Advanced hunting queries. With these sample templates, including one for device control, you can integrate the power of Advanced hunting into Power BI. See the [GitHub repository for PowerBI templates](https://github.com/microsoft/MDATP-PowerBI-Templates) for more information. See [Create custom reports using Power BI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi) to learn more about Power BI integration.
-
-### Custom Alerts and Response Actions
-
-You can create custom alerts and response actions with the WDATP Connector and the Custom Detection Rules:
+You can create custom alerts and response actions with the WDATP Connector and the custom detection rules:
 
 **Wdatp Connector response Actions:**
 
@@ -298,6 +298,12 @@ MDATP connector is one of over 200 pre-defined connectors including Outlook, Tea
 **Custom Detection Rules Response Action:**
 Both machine and file level actions can be applied.
 - [More information on Custom Detection Rules Response Actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
+
+## Respond to threats
+
+You can create custom alerts and automatic response actions with the [Microsoft Defender ATP Custom Detection Rules](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules). Response actions within the custom detection cover both machine and file level actions. You can also create alerts and automatic response actions using [PowerApps](https://powerapps.microsoft.com/) and [Flow](https://flow.microsoft.com/) with the [Microsoft Defender ATP connector](https://docs.microsoft.com/connectors/wdatp/). The connector supports actions for investigation, threat scanning, and restricting running applications. It is one of over 200 pre-defined connectors including Outlook, Teams, Slack, and more. Custom connectors can also be built. See [Connectors](https://docs.microsoft.com/connectors/) to learn more about connectors.
+ 
+For example, using either approach, you can automatically have the Microsoft Defender Antivirus run when a USB device is mounted onto a machine.
 
 ## Related topics
 
