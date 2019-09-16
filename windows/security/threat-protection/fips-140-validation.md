@@ -109,6 +109,7 @@ The following list contains some of the Windows components and Microsoft product
 - Some Microsoft .NET Framework Applications (.NET also provides cryptographic algorithm implementations that have not been FIPS 140 validated.)
 - BitLocker® Drive Full-volume Encryption
 - IPsec Settings of Windows Firewall
+- Server Message Block (SMB) 3.x 
 
 ## Information for System Integrators
 
