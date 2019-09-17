@@ -78,7 +78,7 @@ This built-in capability uses a game-changing risk-based approach to the discove
 <a name="asr"></a>
 
 **[Attack surface reduction](overview-attack-surface-reduction.md)**<br>
-The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
+The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation. 
 
 <a name="ngp"></a>
 
