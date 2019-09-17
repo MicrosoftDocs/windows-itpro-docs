@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/28/2019 
+ms.date: 02/28/2019
 ---
 
 # BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker

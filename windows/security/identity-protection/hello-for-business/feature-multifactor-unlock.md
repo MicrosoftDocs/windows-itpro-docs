@@ -332,6 +332,7 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 > * PIN **must** be in at least one of the groups
 > * Trusted signals **must** be combined with another credential provider
 > * You cannot use the same unlock factor to satisfy both categories. Therefore, if you include any credential provider in both categories, it means it can satisfy either category, but not both.
+> * The multifactor unlock feature is also supported via the Passport for Work CSP. See [Passport For Work CSP](https://docs.microsoft.com/windows/client-management/mdm/passportforwork-csp) for more information.
 
 1. Start the **Group Policy Management Console** (gpmc.msc)
 2. Expand the domain and select the **Group Policy Object** node in the navigation pane.

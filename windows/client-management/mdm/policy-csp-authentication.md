@@ -241,7 +241,7 @@ Preview release in Windows 10, version 1709. Supported in the next release. Spe
 
 Value type is integer.
 
-Here is an example scenario: At Contoso, there are a lot of shared devices and kiosks that employees throughout the day using as many as 20 different devices. To minimize the loss in productivity when employees have to login with username and password everytime they pick up a device, the IT admin deploys SharePC CSP and Authentication/AllowFidoDeviceSignon policy to shared devices. The IT admin provisions and distributes FIDO 2.0 devices to employees, which allows them to authenticate to various shared devices and PCs.
+Here is an example scenario: At Contoso, there are a lot of shared devices and kiosks that employees throughout the day using as many as 20 different devices. To minimize the loss in productivity when employees have to login with username and password every time they pick up a device, the IT admin deploys SharePC CSP and Authentication/AllowFidoDeviceSignon policy to shared devices. The IT admin provisions and distributes FIDO 2.0 devices to employees, which allows them to authenticate to various shared devices and PCs.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -364,7 +364,7 @@ This policy is intended for use on Shared PCs to enable a quick first sign-in ex
 Value type is integer. Supported values:
 
 - 0 - (default) The feature defaults to the existing SKU and device capabilities.
-- 1 - Enabled. Auto connect new non-admin AZure AD accounts to pre-configured candidate local accounts
+- 1 - Enabled. Auto connect new non-admin Azure AD accounts to pre-configured candidate local accounts
 - 2 - Disabled. Do not auto connect new non-admin Azure AD accounts to pre-configured local accounts
 
 <!--/Description-->
@@ -499,30 +499,6 @@ Value type is string.
 
 <!--/Validation-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Authentication policies supported by HoloLens 2
-
-- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
-- [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
-  <!--EndHoloLens2-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Authentication policies supported by HoloLens (1st gen) Commercial Suite
-
-- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
-- [Authentication/PreferredAadTenantDomainName](#authentication-preferredaadtenantdomainname)
-  <!--EndHoloLensBusiness-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Authentication policies supported by HoloLens (1st gen) Development Edition
-
-- [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
-<!--EndHoloLens-->
-
-
   <hr/>
 
 Footnotes:
@@ -533,3 +509,4 @@ Footnotes:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
+<!--/Policies-->

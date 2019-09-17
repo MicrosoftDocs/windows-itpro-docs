@@ -1,7 +1,7 @@
 ---
 title: Planning for DaRT 7.0
 description: Planning for DaRT 7.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 9a60cb08-5efb-40fe-b1e3-9ece831f3b43
 ms.reviewer: 
 manager: dansimp

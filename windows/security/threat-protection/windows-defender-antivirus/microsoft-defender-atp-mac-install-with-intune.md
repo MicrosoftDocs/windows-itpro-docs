@@ -166,6 +166,12 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 
     ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
 
+## Troubleshooting
+
+Issue: No license found
+
+Solution: Follow the steps above to create a device profile using WindowsDefenderATPOnboarding.xml
+
 ## Logging installation issues
 
 For more information on how to find the automatically generated log that is created by the installer when an error occurs, see [Logging installation issues](microsoft-defender-atp-mac-resources.md#logging-installation-issues) .

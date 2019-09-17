@@ -4,7 +4,7 @@ description: AssignedAccess DDF
 ms.assetid: 224FADDB-0EFD-4E5A-AE20-1BD4ABE24306
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

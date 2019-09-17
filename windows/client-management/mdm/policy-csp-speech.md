@@ -84,27 +84,6 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Speech policies supported by HoloLens 2
-
-- [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
-<!--EndHoloLens2-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Speech policies supported by HoloLens (1st gen) Commercial Suite
-
-- [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
-<!--EndHoloLensBusiness-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Speech policies supported by HoloLens (1st gen) Development Edition
-
-- [Speech/AllowSpeechModelUpdate](#speech-allowspeechmodelupdate)
-<!--EndHoloLens-->
-
 <hr/>
 
 Footnotes:
@@ -115,3 +94,4 @@ Footnotes:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
+<!--/Policies-->

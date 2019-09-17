@@ -3951,69 +3951,6 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Update policies supported by HoloLens 2
-
-- [Update/AllowAutoUpdate](#update-allowautoupdate)
-- [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/BranchReadinessLevel](#update-branchreadinesslevel)
-- [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)
-- [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)
-- [Update/ManagePreviewBuilds](#update-managepreviewbuilds)
-- [Update/PauseFeatureUpdates](#update-pausefeatureupdates)
-- [Update/PauseQualityUpdates](#update-pausequalityupdates)
-- [Update/ScheduledInstallDay](#update-scheduledinstallday)
-- [Update/ScheduledInstallTime](#update-scheduledinstalltime)
-- [Update/UpdateServiceUrl](#update-updateserviceurl)
-
-<!--EndHoloLens2-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Update policies supported by HoloLens (1st gen) Commercial Suite
-
-- [Update/AllowAutoUpdate](#update-allowautoupdate)
-- [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
-- [Update/RequireUpdateApproval](#update-requireupdateapproval)
-- [Update/ScheduledInstallDay](#update-scheduledinstallday)
-- [Update/ScheduledInstallTime](#update-scheduledinstalltime)
-- [Update/UpdateServiceUrl](#update-updateserviceurl)
-
-<!--EndHoloLensBusiness-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Update policies supported by HoloLens (1st gen) Development Edition
-
-- [Update/AllowAutoUpdate](#update-allowautoupdate)
-- [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
-- [Update/RequireUpdateApproval](#update-requireupdateapproval)
-- [Update/ScheduledInstallDay](#update-scheduledinstallday)
-- [Update/ScheduledInstallTime](#update-scheduledinstalltime)
-- [Update/UpdateServiceUrl](#update-updateserviceurl)
-
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Update policies supported by IoT Core  
-
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
-<!--EndIoTCore-->
-
-<!--StartIoTEnterprise-->
-## <a href="" id="iotcore"></a>Update policies supported by IoT Enterprise  
-
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
-  <!--EndIoTEnterprise-->
   <hr/>
 
 Footnotes:
@@ -4024,3 +3961,4 @@ Footnotes:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
+<!--/Policies-->

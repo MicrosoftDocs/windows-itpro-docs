@@ -1,7 +1,7 @@
 ---
 title: Managing the UE-V 1.0 Agent and Packages with PowerShell and WMI
 description: Managing the UE-V 1.0 Agent and Packages with PowerShell and WMI
-author: levinec
+author: dansimp
 ms.assetid: c8989b01-1769-4e69-82b1-4aadb261d2d5
 ms.reviewer: 
 manager: dansimp

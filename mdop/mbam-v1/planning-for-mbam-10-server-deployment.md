@@ -1,7 +1,7 @@
 ---
 title: Planning for MBAM 1.0 Server Deployment
 description: Planning for MBAM 1.0 Server Deployment
-author: msfttracyp
+author: dansimp
 ms.assetid: 3cbef284-3092-4c42-9234-2826b18ddef1
 ms.reviewer: 
 manager: dansimp

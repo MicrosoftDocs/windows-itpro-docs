@@ -1,7 +1,7 @@
 ---
 title: Packaging Method (Learn More)
 description: Packaging Method (Learn More)
-author: eavena
+author: dansimp
 ms.assetid: 3975a640-1ffd-4b4c-95fd-608469f4c205
 ms.reviewer: 
 manager: dansimp

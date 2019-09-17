@@ -42,14 +42,13 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 The following features are included in the preview release:
 
+- [Tamper Protection settings in Intune](../windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-with-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management portal (Intune).
+
+- [Microsoft Threat Experts - Experts on Demand](microsoft-threat-experts.md) <BR> You now have the option to consult with Microsoft Threat Experts from several places in the portal to help you in the context of your investigation.   
+
 - [Indicators for IP addresses, URLs/Domains](manage-indicators.md) <BR> You can now allow or block URLs/domains using your own threat intelligence. 
 
-- [Evaluation lab](evaluation-lab.md) <BR> The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of machine and environment configuration so that you can
- focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
-
 - [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac) <BR> Microsoft Defender ATP for Mac brings the next-generation protection, and endpoint detection and response coverage to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices.
-
-- [Live response](live-response.md)<BR> Get instantaneous access to a machine using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats – real-time.
 
 - [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) <BR> A new built-in capability that uses a risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
 

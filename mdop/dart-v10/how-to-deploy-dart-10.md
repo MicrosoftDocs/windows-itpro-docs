@@ -1,7 +1,7 @@
 ---
 title: How to Deploy DaRT 10
 description: How to Deploy DaRT 10
-author: msfttracyp
+author: dansimp
 ms.assetid: 13e8ba20-21c3-4870-94ed-6d3106d69f21
 ms.reviewer: 
 manager: dansimp

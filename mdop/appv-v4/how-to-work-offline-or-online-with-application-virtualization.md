@@ -1,7 +1,7 @@
 ---
 title: How to Work Offline or Online with Application Virtualization
 description: How to Work Offline or Online with Application Virtualization
-author: eavena
+author: dansimp
 ms.assetid: aa532b37-8a00-4db4-9b51-e1e8354b2495
 ms.reviewer: 
 manager: dansimp

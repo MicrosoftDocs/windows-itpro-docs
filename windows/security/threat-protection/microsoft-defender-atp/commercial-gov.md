@@ -71,6 +71,10 @@ The following capabilities are not currently available:
 - Integration with third-party products
 
 
+## Email notifications
+Not currently available.
+
+
 ## Integrations
 Integrations with the following Microsoft products are not currently available:
 - Azure Security Center
