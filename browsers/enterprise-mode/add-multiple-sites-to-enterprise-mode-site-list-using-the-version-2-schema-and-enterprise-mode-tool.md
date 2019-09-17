@@ -3,7 +3,7 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Add multiple sites to your Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2).
-author: eavena
+author: dansimp
 ms.prod: ie11
 ms.assetid: da659ff5-70d5-4852-995e-4df67c4871dd
 ms.reviewer: 

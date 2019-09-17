@@ -8,7 +8,7 @@ ms.prod: ie11
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 ms.sitesec: library
-author: eavena
+author: dansimp
 ms.author: eravena
 ms.date: 08/14/2017
 ms.localizationpriority: low
