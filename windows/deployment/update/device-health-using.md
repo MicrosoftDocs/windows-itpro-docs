@@ -194,7 +194,8 @@ For example:
 
 *DHAppReliability | where AppFileDisplayName == "Microsoft Outlook"*
 
-
+#### Why does the computer name show up as Unknown?
+Starting with Windows 10, version 1803, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics.](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started) Allowing device names to be collected can make it easier for you to identify individual devices that report problems. Without the device name, Windows Analytics can only label devices by a GUID that it generates.
 
 ## Login Health
 
