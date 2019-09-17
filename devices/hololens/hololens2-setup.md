@@ -53,7 +53,7 @@ To turn on your HoloLens 2, press the power button.  The LED lights below the po
 
 |To do this |Perform this action and watch for these indicator lights |
 | - | - |
-|To&nbsp:turn&nbsp;on |**Single click**  ![Press power button - no lights lit](images/hololens-2-button-turn-on.png) |
+|To&nbsp;turn&nbsp;on |**Single click**  ![Press power button - no lights lit](images/hololens-2-button-turn-on.png) |
 |To sleep |**Single click**  ![Press power button - three lights lit](images/hololens-2-button-sleep.png) |
 |To wake from sleep |**Single click**  ![Press power button - no lights lit](images/hololens-2-button-wake.png) |
 |To turn off |**Press and for hold 5s**  ![Press and hold power button - all lights lit](images/hololens-2-button-turn-off.png) |
