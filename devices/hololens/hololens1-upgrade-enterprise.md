@@ -18,7 +18,7 @@ appliesto:
 
 Microsoft HoloLens is available in the *Development Edition*, which runs Windows Holographic (an edition of Windows 10 that is designed for HoloLens), and in the [Commercial Suite](hololens-commercial-features.md), which provides extra features that are designed for business.
 
-When you purchase the Commercial Suite, you receive a license that upgrades Windows Holographic to Windows Holographic for Business. You can apply this license to the device either by using the organization's [mobile device management (MDM) provider](#edition-upgrade-using-mdm) or a [provisioning package](#edition-upgrade-using-a-provisioning-package).
+When you purchase the Commercial Suite, you receive a license that upgrades Windows Holographic to Windows Holographic for Business. You can apply this license to the device either by using the organization's [mobile device management (MDM) provider](#edition-upgrade-by-using-mdm) or a [provisioning package](#edition-upgrade-by-using-a-provisioning-package).
 
 > [!TIP]
 > In Windows 10, version 1803, you can tell that the HoloLens has been upgraded to the business edition by selecting **Settings** > **System**.
