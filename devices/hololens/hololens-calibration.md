@@ -43,7 +43,7 @@ During this process, you'll look at a set of targets (gems). It's fine if you bl
 
 ![Calibration prompt](./images/09-et-adjusting.png)
 
-If calibration was successful, you'll see a success screen.  If not, read more about diagnosing calibration failures [here](#Troubleshooting-HoloLens-2-calibration).
+If calibration was successful, you'll see a success screen.  If not, read more about diagnosing calibration failures [here](#troubleshooting-hololens-2-calibration).
 
 ![Calibration prompt](./images/10-et-success.png)
 
