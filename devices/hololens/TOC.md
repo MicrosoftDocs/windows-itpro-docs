@@ -3,8 +3,8 @@
 
 # Get Started with HoloLens 2
 ## [HoloLens 2 hardware](hololens2-hardware.md)
-## [Set up your HoloLens 2](hololens2-setup.md)
-## [Start your HoloLens 2 for the first time](hololens2-start.md)
+## [Get your HoloLens 2 ready to use](hololens2-setup.md)
+## [Set up your HoloLens 2](hololens2-start.md)
 ## [Getting around HoloLens 2](hololens2-basic-usage.md)
 
 # Get started with HoloLens (1st gen)
