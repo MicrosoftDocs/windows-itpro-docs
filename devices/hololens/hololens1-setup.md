@@ -1,5 +1,5 @@
 ---
-title: Set up a new HoloLens
+title: Prepare a new HoloLens
 description: This guide walks through first time set up.
 ms.prod: hololens
 ms.sitesec: library
@@ -14,7 +14,7 @@ appliesto:
 - Hololens (1st gen)
 ---
 
-# Set up HoloLens (1st gen)
+# Get your HoloLens (1st gen) ready to use
 
 Follow along to set up a HoloLens (1st gen) for the first time.
 
@@ -35,7 +35,7 @@ When your HoloLens is on, the battery indicator shows the battery level in incre
 
 |     |     |
 |:--- |:--- |
-|1. Rotate&nbsp;the&nbsp;headband up to about 20-30 degrees.|![Step one, rotate the headbanc](./images/FitGuideStep1.png)|
+|1.&nbsp;Rotate&nbsp;the headband up to about 20-30 degrees.|![Step one, rotate the headbanc](./images/FitGuideStep1.png)|
 |2. Push the headband back. Do not pull it back, or manipulate the band behind the hinge, because over time this can break the band.|![Step two, push the headband back](./images/FitGuideStep2.png)|
 |3. Turn the adjustment wheel to extend the headband all the way out. |![Step three, use the adjustment wheel to extend the headband](./images/FitGuideStep3.png)|
 |4. Hold the device by the device arms, and place it on your head. Make sure that the headband sits at the top of your forehead, and then tighten the adjustment wheel.|![Step four, put on the device and adjust the headband](./images/FitGuideStep4.png)|
