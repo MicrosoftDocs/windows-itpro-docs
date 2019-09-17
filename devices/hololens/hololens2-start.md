@@ -35,15 +35,30 @@ The first time you connect, you'll need an open or password-protected network th
 
 ## Set up Windows
 
-The first run experience will let you Set up Windows Holographic on your HoloLens 2 and walk you through the following steps:
+The first run experience will let you Set up Windows Holographic on your HoloLens 2.  When you start your HoloLens, you will hear music and see a Windows logo to get started.
+
+![First screen during first boot](images/01-magic-moment.png)
+
+HoloLens 2 will walk you through the following steps:
 
 1. Select your language.
+    ![Select language](images/04-language.png)
 
 1. Select your region.
+    ![Select region](images/05-region.png)
 
-1. [Calibrate](hololens2-start.md#calibration) HoloLens to your eyes.
+1. Calibrate HoloLens to your eyes.  You can choose to skip calibration, in which case you'll be prompted next time you log in.
+
+    To calibrate, you'll look at a set of targets (gems). It's fine if you blink or close your eyes during calibration but try not to stare at other objects in the room.  This allows HoloLens to learn about your eye position to render your holographic world.  After calibration, holograms will appear correctly even as the visor shifts on your head.
+
+    Calibration information is stored locally on the device and is not associated with any account information. Read more about data security [here].
+
+    ![Calibration selection screen](images/06-et-corners.png)
 
 1. Connect to the internet (select Wi-Fi or your ethernet connection).
+    > HoloLens sets your time zone automatically based on information obtained from the Wi-Fi network. This can be changed later from Settings.
+
+    ![Connect to Wi-Fi](images/11-network.png)
 
 1. Sign in to your user account.  You'll choose between **My work or school owns it** and **I own it**.
     - When you choose **My work or school owns it**, you sign in with an Azure AD account. If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens will be enrolled in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available, so you will need to [enroll HoloLens in device management manually](hololens-enroll-mdm.md#enroll-through-settings-app).
@@ -55,50 +70,17 @@ The first run experience will let you Set up Windows Holographic on your HoloLen
         1. Enter your Microsoft account.
         2. Enter your password. If your Microsoft account requires [two-step verification (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/), complete the verification process.
 
-    > The device sets your time zone automatically based on information obtained from the Wi-Fi network. This can be changed later from Settings. 
+    ![Set user](images/13-device-owner.png)
 
 1. Make a choice for enabling speech on HoloLens 2 and diagnostic telemetry.
+    ![Enable Cortana](images/22-do-more-with-voice.png)
+
+1. Choose your telemetry level.  If you can, please enable Full telemetry, it really helps the HoloLens engineering team.
+     ![Telemetry level](images/24-telemetry.png)
 
 1. Learn how to use the Start gesture on HoloLens 2.
-
-## Calibration
-
-HoloLens 2 uses eye-tracking to make holograms clear and easy to interact with. You'll be prompted to calibrate during device setup and for every new HoloLens 2 user.  HoloLens 2 will work without calibration and, if you choose to skip calibration in setup, you can calibrate later from **Settings** > **System** > **Utilities**.
-
-To calibrate, you'll look at a set of targets (gems). It's fine if you blink or close your eyes during calibration but try not to stare at other objects in the room.  This allows HoloLens to learn about your eye position to render your holographic world.  After calibration, holograms will appear correctly even as the visor shifts on your head.
-
-![Calibration prompt](./images/A-Calibration-2-Adjust-Hololens.png)
-![Image shown during the calibration process](./images/B-Calibration-4-Gem.png)
-
-### Calibration data and security
-
-Calibration information is stored locally on the device and is not associated with any account information. There is no record of who has used the device without calibration. This mean new users will get prompted to calibrate visuals when they use the device for the first time, as well as users who opted out of calibration previously or if calibration was unsuccessful.
-
-Calibration information can always be deleted from the device in **Settings** > **Privacy** > **Eye tracker**.  
-
-### Calibration failures
-
-Calibration should work for most people, but there are cases where calibration fails.
-  
-Some potential reasons for calibration failure include:
-
-- Getting distracted and not following the calibration targets
-- Dirty or scratched device visor or device visor not positioned properly
-- Dirty or scratched glasses
-- Certain types of contact lenses and glasses (colored contact lenses, some toric contact lenses, IR blocking glasses, some high prescription glasses, sunglasses, or similar)
-- More-pronounced makeup and some eyelash extensions
-- Hair or thick eyeglass frames if they are blocking the device from seeing your eyes
-- Certain eye physiology, eye conditions or eye surgery such as narrow eyes, long eyelashes, amblyopia, nystagmus, some cases of LASIK or other eye surgeries
-
-If calibration is unsuccessful try:
-
-- Cleaning your device visor
-- Cleaning your glasses
-- Pushing your device visor as close to your eyes as possible
-- Moving objects in your visor out of the way (such as hair)
-- Turning on a light in your room or moving out of direct sunlight
-
-If you followed all guidelines and calibration is still failing, please let us know by filing feedback in [Feedback Hub](hololens-feedback.md).
+     ![Learn how to use the Start gesture](images/26-01-startmenu-learning.png)
+     ![Learn how to use the Start gesture](images/26-02-startmenu-learning.png)
 
 Congratulations!  Setup is complete and you can begin using HoloLens.
 
