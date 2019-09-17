@@ -6,7 +6,7 @@ ms.reviewer:
 audience: itpro
 manager: dansimp
 author: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.prod: edge
 ms.sitesec: library
 ms.topic: article

@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.date: 07/27/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ---
 
 # Add employees to the Enterprise Mode Site List Portal

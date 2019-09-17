@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 ms.sitesec: library
 author: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.date: 08/14/2017
 ms.localizationpriority: low
 ---
