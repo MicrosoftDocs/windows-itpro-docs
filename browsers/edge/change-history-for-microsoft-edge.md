@@ -10,7 +10,7 @@ audience: itpro
 manager: dansimp
 author: dansimp
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.author: dansimp 
 ---
 
 # Change history for Microsoft Edge
