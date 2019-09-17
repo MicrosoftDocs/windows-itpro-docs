@@ -23,7 +23,7 @@ The following image shows the RootCATrustedCertificates configuration service pr
 
 Detailed specification of the principal root nodes:
 
-![roocacertificate](images/provisioning-csp-rootcacertificate.png)
+![rootcacertificate](images/provisioning-csp-rootcacertificate.png)
 
 <a href="" id="device-or-user"></a>**Device or User**  
 For device certificates, use **./Device/Vendor/MSFT** path and for user certificates use **./User/Vendor/MSFT** path.
