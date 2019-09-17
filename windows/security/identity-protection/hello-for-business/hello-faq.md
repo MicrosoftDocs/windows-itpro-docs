@@ -22,7 +22,7 @@ ms.reviewer:
 -   Windows 10
 
 ## What about virtual smart cards?
-Windows Hello for Business is the modern, two-factor credential for Windows 10.  Microsoft will be deprecating virtual smart cards in the future but not date at this time.  Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business.  Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business.  Microsoft recommends new Windows 10 deployments to use Windows Hello for Business. Virtual smart card remain supported for Windows 7 and Windows 8.
+Windows Hello for Business is the modern, two-factor credential for Windows 10.  Microsoft will be deprecating virtual smart cards in the future, but no date is set at this time.  Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business.  Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business.  Microsoft recommends new Windows 10 deployments to use Windows Hello for Business. Virtual smart card remain supported for Windows 7 and Windows 8.
 
 ## What about convenience PIN?
 Microsoft is committed to its vision of a <u>world without passwords.</u> We recognize the *convenience* provided by convenience PIN, but it stills uses a password for authentication.  Microsoft recommends customers using Windows 10 and convenience PINs should move to Windows Hello for Business.  New Windows 10 deployments should deploy Windows Hello for Business and not convenience PINs.  Microsoft will be deprecating convenience PINs in the future and will publish the date early to ensure customers have adequate lead time to deploy Windows Hello for Business. 
@@ -45,7 +45,7 @@ The statement "PIN is stronger than Password" is not directed at the strength of
 The **Key Admins** and **Enterprise Key Admins** groups are created when you install the first Windows Server 2016 domain controller into a domain. Domain controllers running previous versions of Windows Server cannot translate the security identifier (SID) to a name.  To resolve this, transfer the PDC emulator domain role to a domain controller running Windows Server 2016.
 
 ## Can I use a convenience PIN with Azure AD?
-It is currently possible to set a convience PIN on Azure Active Directory Joined or Hybrid Active Directory Joined devices. Convenience PIN is not supported for Azure Active Directory user accounts. It is only supported for on-premises only Domain Joined users and local account users.
+It is currently possible to set a convenience PIN on Azure Active Directory Joined or Hybrid Active Directory Joined devices. Convenience PIN is not supported for Azure Active Directory user accounts. It is only supported for on-premises only Domain Joined users and local account users.
 
 ## Can I use an external camera when my laptop is closed or docked?
 No. Windows 10 currently only supports one Windows Hello for Business camera and does not fluidly switch to an external camera when the computer is docked with the lid closed.  The product group is aware of this and is investigating this topic further.
