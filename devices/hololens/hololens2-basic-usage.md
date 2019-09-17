@@ -2,7 +2,7 @@
 title: Getting around HoloLens 2
 description: A brief tour of the HoloLens 2 interface
 ms.assetid: 5f791a5c-bdb2-4c5d-bf46-4a198de68f21
-ms.date: 08/07/2019
+ms.date: 9/17/2019
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -20,15 +20,15 @@ Ready to step into the world of holograms?
 
 This guide provides an intro to:
 
-- mixed reality
-- using your hands and voice for interacting with holograms on HoloLens 2
-- navigating Windows 10 on HoloLens (Windows Holographic)
+- Interacting with mixed reality
+- Using your hands and voice for interacting with holograms on HoloLens 2
+- Navigating Windows 10 on HoloLens (Windows Holographic)
 
 ## Discover mixed reality
 
-On HoloLens, holograms blend the digital world with your physical environment to look and sound like they're part of your world.  Even when holograms are all around you, you can always see your surroundings, move freely, and interact with people and objects. We call this experience "mixed reality".
+On HoloLens, holograms blend the digital world with your physical environment to look and sound like they're part of your world. Even when holograms are all around you, you can always see your surroundings, move freely, and interact with people and objects. We call this experience "mixed reality".
 
-The holographic frame positions your holograms where your eyes are most sensitive to detail and the see-through lenses leave your peripheral vision unobscured. With spatial sound, you can pinpoint a hologram even if it’s behind you using sound. And, because HoloLens understands your physical environment, you can place holograms on and around real objects like tables and walls.
+The holographic frame positions your holograms where your eyes are most sensitive to detail and the see-through lenses leave your peripheral vision unobscured. With spatial sound, you can pinpoint a hologram by listening, even if it’s behind you. And, because HoloLens understands your physical environment, you can place holograms on and around real objects such as tables and walls.
 
 ## Use HoloLens with your hands
 
@@ -38,7 +38,7 @@ Once you know these basic interactions, getting around on HoloLens will be a sna
 
 > [!TIP]
 > If you have a HoloLens near you right now, the **Tips** app gives you a hands-on tutorials for hand interactions on HoloLens.  
-> Use the Start gesture to go to **Start** or say "Go to Start" and select **Tips**.
+> Use the start gesture to go to **Start** or say "Go to Start" and select **Tips**.
 
 ### The hand-tracking frame
 
@@ -48,10 +48,10 @@ HoloLens has sensors that can see a few feet to either side of you. When you use
 
 ### Hand rays
 
-Use hand rays to interact with holograms from a distance. When your hands are not in the vicinity of any holograms, hand rays automatically appear from your palms. Use hand rays while performing the air-tap and air-tap and hold gestures.
+Use hand rays to interact with holograms from a distance. When your hands are not in the vicinity of any holograms, hand rays automatically appear from your palms. Use hand rays while performing the air-tap and tap-and-hold gestures.
 
 > [!TIP]
-> If you find hand rays distracting, you can hide them by saying “Hide hand rays”. To make them reappear, say "Show hand rays."
+> If you find hand rays distracting, you can hide them by saying “Hide hand rays.” To make them reappear, say "Show hand rays."
 
 ### The Grab gesture
 
@@ -101,56 +101,56 @@ Open the Start menu and select an app!
 
 ### Open the Start menu
 
-The Start gesture opens the **Start** menu.  To perform the Start gesture, hold out your hand with your palm facing you. You’ll see a **Start** icon appear over your inner wrist. Tap this icon using your other hand.  The **Start** menu opens where you’re looking.
+The start gesture opens the **Start** menu.  To perform the start gesture, hold out your hand with your palm facing you. You’ll see a **Start** icon appear over your inner wrist. Tap this icon using your other hand.  The **Start** menu opens where you’re looking.
 
-You can use the Start gesture as long as your hands are inside the hand-tracking frame.  You do not need to be looking down at the **Start** icon.
+You can use the start gesture as long as your hands are inside the hand-tracking frame.  You do not need to be looking down at the **Start** icon.
 
-![Image that shows the Start icon and the Start gesture](./images/hololens-2-start-gesture.png)
+![Image that shows the Start icon and the start gesture](./images/hololens-2-start-gesture.png)
 
-Alternatively, you can also perform the Start gesture with one hand. To do this, hold out your hand with your palm facing you and look at the **Start** icon on your inner wrist. While looking at the icon, pinch your thumb and index finger together. This action opens the **Start** menu.
+Alternatively, you can also perform the start gesture with one hand. To do this, hold out your hand with your palm facing you and look at the **Start** icon on your inner wrist. While looking at the icon, pinch your thumb and index finger together. This action opens the **Start** menu.
 
 > [!IMPORTANT]
-> For the one-handed Start gesture to work, your device must be calibrated to your eyes so that eye-tracking functions correctly.
+> For the one-handed start gesture to work, your device must be calibrated to your eyes so that eye-tracking functions correctly.
 
-![Image that shows the Start icon and the one-handed Start gesture](./images/hololens-2-start-alternative.jpg)
+![Image that shows the Start icon and the one-handed start gesture](./images/hololens-2-start-alternative.jpg)
 
 We'll talk more about voice commands later, but you can also open the **Start** menu by saying "Go to Start."
 
 ### Open apps
 
-Now that the start menu is open, select an apps using touch.  We'll use the Tips app as an example.
+Now that the **Start** menu is open, select an apps using touch. We'll use the Tips app as an example.
 
-1. bring your hand close to the **Start** menu and **Tips** app.
-1. look for a white ring to appear on your index fingertip on the **Tips** icon.
-1. move to touch the white ring/hologram.  **Tips** should open as a Hologram with a play button.
+1. Bring your hand close to the **Start** menu and the **Tips** icon.
+1. Look for a white ring to appear on your index fingertip on the **Tips** icon.
+1. Touch the white ring. The Tips app should open as a hologram that has a play button.
 
-When you open an app, it will appear right in front of you.  Some apps use a 2D view and look like other Windows applications, other apps (holographic apps) use a 3D view and appear as a cube with a hologram icon.  
+When you open an app, it appears right in front of you. Some apps use a 2D view and look like other Windows applications. Other apps (holographic apps) use a 3D view and appear as a cube with a hologram icon.  
 
-For example, **Tips** is a holographic app while **Settings** is a 2D app.
+For example, the Tips app is a holographic app while the Settings app is a 2D app.
 
 ### Move and resize nearby holograms and apps by grabbing them
 
 To perform the grab gesture, pinch your thumb and index finger together and hold. To let go, release your fingers. Use the grab gesture to move, resize, and rotate app windows and 3D objects.
 
-Move a hologram or app by:
+Move a hologram or app by following these steps:
 
-1. Grabbing the hologram - pinch your index finger and thumb on the hologram it or close your fist facing down.
-1. Without letting go, move your hand to position the hologram.  When moving an app window this way, the app window will automatically turn to face you as it moves, making it easier to use at its new position.  
-1. Release your fingers to place it
+1. Grab the hologram by pinching your index finger and thumb on the hologram or face your hand down and then close your fist over it.
+1. Without letting go, move your hand to position the hologram. When moving an app window this way, the app window will automatically turn to face you as it moves, making it easier to use at its new position.  
+1. To place the hologram, release your fingers.
 
 > [!TIP]
 > If you're having trouble moving a 2D app, try grabbing the top tool bar.
 
-Resize a hologram close to you by:
+Resize a hologram that is close to you by following these steps:
 
-1. move one hand close to one edge of the hologram and your other hand to the other
-1. Grab the edges of the hologram with both hands
-1. Move your hands closer together to shrink the hologram and further apart ot make it bigger
-1. release your fingers to keep the current size
+1. Move one hand close to one edge of the hologram, and your other hand to the other edge.
+1. Use both hands to grab the edges of the hologram.
+1. To shrink the hologram, move your hands closer together. To make the hologram larger, move your hands further apart.
+1. To keep the current size, release your fingers.
 
 ### Move and resize further-away holograms and apps using hand rays
 
-To move a hologram that's further away from you:
+To move a hologram that's further away from you, follow these steps:
 
 1. Target your hand ray on the hologram.
 1. Pinch (air-tap) and hold to grab it.
@@ -160,34 +160,33 @@ To move a hologram that's further away from you:
 > [!TIP]
 > If you're having trouble moving a 2D app, try grabbing the top tool bar.
 
-There are two ways o resize a hologram that's further away from you.  You can either use the resize tool or grab two corners of the hologram.
+There are two ways to resize a hologram that's further away from you. You can either grab two corners of the hologram, or use the resize controls.
 
-Resize an app or hologram with two hands by grabbing the corners:
+To resize an app or hologram with two hands by grabbing the corners, follow these steps:
 
-1. Point one hand ray at one corner of the hologram and the other hand ray at another corner
-1. Grab the resize controls on the window corners with your hand rays.
-1. Do air-tap and hold gesture, then as you move your hands closer together and apart the window will resize. You can also move your hands closer and further away from your body to rotate the window (on Y axis).
+1. Point one hand ray at one corner of the hologram and the other hand ray at another corner.
+1. Use your hand rays to grab the hologram corners.
+1. Tap and hold the corners. To resize the hologram, move your hands closer together or further apart. You can also rotate the window (on Y axis) by moving your hands closer to or further away from your body.
 
-Resize an app or hologram with the resize control:
+To resize an app or hologram by using the resize controls, follow these steps:
 
-1. Move your hand close to the window.  You’ll see resize controls appear on the corners of the app window.
-1. Grab the resize control by pinching your index finger and thumb on the control, move your hand to change the window size.
-1. Release your fingers when you're done.
-
-You can also move your hands closer and further away from your body to rotate the window (on Y axis).
+1. Move your hand close to the window. You’ll see resize controls appear on the corners of the app window.
+1. Grab the resize control by pinching your index finger and thumb on the control 
+1. To change the size of the app window, move your hand. You can also rotate the window (on Y axis) by moving your hand closer to or further away from your body.
+1. When you're done, release your fingers.
 
 ### Follow me, stay there
 
-Generally, holograms and apps stay where you placed them.  That's not always convenient if you need to move around and want an application to stay visible.  Select "follow me" in the top right corner of applications (next to the close button) to ask apps to follow or unfollow.
+Generally, holograms and apps stay where you place them. That's not always convenient if you need to move around and you want an application to stay visible. To ask an app to start following you or stop following you, select **Follow me** in the top right corner of the app window (next to the **Close** button).
 
 ## Help! I can’t see or place holograms
 
 If you’re using HoloLens and having trouble placing holograms, here are some things to try:
 
-- Make sure you’re in a well-lit room without a lot of direct sunlight.
-- Stand 1 to 3 meters from where you’re trying to place the hologram.
+- Make sure that you’re in a well-lit room that does not receive a lot of direct sunlight.
+- Stand one to three meters from the location where you’re trying to place the hologram.
 - Don’t place holograms on black or reflective surfaces.
-- Look around so HoloLens can rescan your surroundings and incase a hologram was left behind somewhere.
+- Look around so that HoloLens can rescan your surroundings, and to check whether a hologram was left behind somewhere.
 
 ## Next Steps
 
