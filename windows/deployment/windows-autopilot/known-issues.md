@@ -28,6 +28,7 @@ ms.topic: article
 <tr><td>The following known issue will be resolved by installing the KB4517211 update, due to be released in late September 2019:
 
 - TPM attestation fails on Windows 10 1903 due to missing AKI extension in EK certificate.  (An additional validation added in Windows 10 1903 to check that the TPM EK certs had the proper attributes according to the TCG specifications uncovered that a number of them don’t, so that validation will be removed).
+<td>Download and install the <a href="https://support.microsoft.com/help/4517211">KB4517211 update</a>. <br><br>This update is currently pending release.
 <tr><td>The following known issues are resolved by installing the August 30, 2019 KB4512941 update (OS Build 18362.329):
 
 - Windows Autopilot for existing devices feature does not properly suppress “Activities” page during OOBE.  (Because of this, you’ll see that extra page during OOBE).
