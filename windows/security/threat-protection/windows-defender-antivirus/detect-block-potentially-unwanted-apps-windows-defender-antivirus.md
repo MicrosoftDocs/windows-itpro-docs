@@ -24,7 +24,7 @@ manager: dansimp
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 - [Microsoft Edge on Windows 10](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge)
 
-Potentially unwanted applications are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints that adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender ATP, due to certain kinds of undesirable behavior.
+Potentially unwanted applications are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints which adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender ATP, due to certain kinds of undesirable behavior.
 
 These kinds of undesirable PUA behavior include:
 
