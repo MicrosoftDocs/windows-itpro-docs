@@ -1,7 +1,7 @@
 ---
 title: Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings (Windows 10)
 description: A list of all available setttings for Windows Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
-keywords: SmartScreen Filter, Windows SmartScreen
+keywords: SmartScreen Filter, Windows SmartScreen, Windows Defender SmartScreen
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -60,17 +60,17 @@ SmartScreen uses registry-based Administrative Template policy settings. For mor
 <tr>
 <td>Administrative Templates\Windows Components\Internet Explorer\Prevent managing SmartScreen Filter</td>
 <td>Internet Explorer 9 or later</td>
-<td>This policy setting prevents the employee from managing SmartScreen Filter.<p>If you enable this policy setting, the employee isn't prompted to turn on SmartScreen Filter. All website addresses that are not on the filter's allow list are sent automatically to Microsoft without prompting the employee.<p>If you disable or don't configure this policy setting, the employee is prompted to decide whether to turn on SmartScreen Filter during the first-run experience.</td>
+<td>This policy setting prevents the employee from managing Windows Defender SmartScreen.<p>If you enable this policy setting, the employee isn't prompted to turn on Windows Defender SmartScreen. All website addresses that are not on the filter's allow list are sent automatically to Microsoft without prompting the employee.<p>If you disable or don't configure this policy setting, the employee is prompted to decide whether to turn on Windows Defender SmartScreen during the first-run experience.</td>
 </tr>
 <tr>
 <td>Administrative Templates\Windows Components\Internet Explorer\Prevent bypassing SmartScreen Filter warnings</td>
 <td>Internet Explorer 8 or later</td>
-<td>This policy setting determines whether an employee can bypass warnings from SmartScreen Filter.<p>If you enable this policy setting, SmartScreen Filter warnings block the employee.<p>If you disable or don't configure this policy setting, the employee can bypass SmartScreen Filter warnings.</td>
+<td>This policy setting determines whether an employee can bypass warnings from Windows Defender SmartScreen.<p>If you enable this policy setting, Windows Defender SmartScreen warnings block the employee.<p>If you disable or don't configure this policy setting, the employee can bypass Windows Defender SmartScreen warnings.</td>
 </tr>
 <tr>
 <td>Administrative Templates\Windows Components\Internet Explorer\Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the Internet</td>
 <td>Internet Explorer 9 or later</td>
-<td>This policy setting determines whether the employee can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the employee about executable files that Internet Explorer users do not commonly download from the Internet.<p>If you enable this policy setting, SmartScreen Filter warnings block the employee.<p>If you disable or don't configure this policy setting, the employee can bypass SmartScreen Filter warnings.</td>
+<td>This policy setting determines whether the employee can bypass warnings from Windows Defender SmartScreen. Windows Defender SmartScreen warns the employee about executable files that Internet Explorer users do not commonly download from the Internet.<p>If you enable this policy setting, Windows Defender SmartScreen warnings block the employee.<p>If you disable or don't configure this policy setting, the employee can bypass Windows Defender SmartScreen warnings.</td>
 </tr>
 </table>
 

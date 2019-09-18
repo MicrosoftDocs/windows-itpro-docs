@@ -1,7 +1,7 @@
 ---
 title: Set up and use Windows Defender SmartScreen on individual devices (Windows 10)
 description: Steps about what happens when an employee tries to run an app, how employees can report websites as safe or unsafe, and how employees can use the Windows Security to set Windows Defender SmartScreen for individual devices.
-keywords: SmartScreen Filter, Windows SmartScreen
+keywords: SmartScreen Filter, Windows SmartScreen, Windows Defender SmartScreen
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library

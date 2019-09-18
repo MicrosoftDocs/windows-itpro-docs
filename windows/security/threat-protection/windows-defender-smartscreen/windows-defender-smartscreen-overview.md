@@ -1,7 +1,7 @@
 ---
 title: Windows Defender SmartScreen overview (Windows 10)
 description: Conceptual info about Windows Defender SmartScreen.
-keywords: SmartScreen Filter, Windows SmartScreen
+keywords: SmartScreen Filter, Windows SmartScreen, Windows Defender SmartScreen
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -35,7 +35,7 @@ Windows Defender SmartScreen helps to protect your employees if they try to visi
 - Checking downloaded files against a list of files that are well known and downloaded by many Windows users. If the file isn't on that list, SmartScreen shows a warning, advising caution.
 
     >[!NOTE]
-    >Before Windows 10, version 1703 this feature was called the SmartScreen Filter when used within the browser and Windows SmartScreen when used outside of the browser.
+    >Before Windows 10, version 1703 this feature was called the Windows Defender SmartScreen when used within the browser and Windows SmartScreen when used outside of the browser.
 
 ## Benefits of Windows Defender SmartScreen
 Windows Defender SmartScreen helps to provide an early warning system against websites that might engage in phishing attacks or attempt to distribute malware through a socially-engineered attack. The primary benefits are:
