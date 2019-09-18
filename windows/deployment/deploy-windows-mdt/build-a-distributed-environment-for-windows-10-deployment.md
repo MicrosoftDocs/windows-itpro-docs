@@ -167,7 +167,7 @@ When you have multiple deployment servers sharing the same content, you need to 
     1.  In the **Staging** tab, set the quota to **20480 MB**.
     2.  In the **Advanced** tab, set the quota to **8192 MB**.
 
->[!NOTE]
+> [!NOTE]
 > It will take some time for the replication configuration to be picked up by the replication members (MDT01 and MDT02). The time for the initial sync will depend on the WAN link speed between the sites. After that, delta changes are replicated quickly.
  
 ### Verify replication
