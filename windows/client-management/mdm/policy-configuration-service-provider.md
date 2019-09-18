@@ -3887,7 +3887,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 ## Policies supported by HoloLens devices
 - [Policies supported by HoloLens 2](policies-supported-by-hololens2.md)  
-- [Policcies supported by HoloLens (1st gen) Commercial Suite](policies-supported-by-hololens-1st-gen-commercial-suite.md)  
+- [Policies supported by HoloLens (1st gen) Commercial Suite](policies-supported-by-hololens-1st-gen-commercial-suite.md)  
 - [Policies supported by HoloLens (1st gen) Development Edition](policies-supported-by-hololens-1st-gen-development-edition.md)
 
 ## Policies supported by Windows 10 IoT
