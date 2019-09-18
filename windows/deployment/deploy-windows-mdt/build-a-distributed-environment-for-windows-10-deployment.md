@@ -103,7 +103,7 @@ When you have multiple deployment servers sharing the same content, you need to 
    UserID=MDT_BA
    SkipBDDWelcome=YES
    ```
->[!NOTE]
+> [!NOTE]
 > The DeployRoot value needs to go into the Bootstrap.ini file, but you can use the same logic in the CustomSettings.ini file. For example, you can redirect the logs to the local deployment server (SLSHARE), or have the User State Migration Tool (USMT) migration store (UDDIR) local. To learn more about USMT, see [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md) and [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md).
      
 2. Save the Bootstrap.ini file.
