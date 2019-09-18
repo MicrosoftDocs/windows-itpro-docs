@@ -1,7 +1,7 @@
 ---
 title: DaRT 8.0 Deployment Checklist
 description: DaRT 8.0 Deployment Checklist
-author: msfttracyp
+author: dansimp
 ms.assetid: 74e071fb-697c-463f-adce-d09b8d86495f
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

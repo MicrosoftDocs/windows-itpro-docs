@@ -1,34 +1,45 @@
-# [Microsoft HoloLens](index.md)
-# [What's new in HoloLens](hololens-whats-new.md)
-# [HoloLens in the enterprise: requirements and FAQ](hololens-requirements.md)
-# [Set up HoloLens](hololens-setup.md)
+# [HoloLens overview](index.md)
+# [Hololens status](hololens-status.md)
 
-# Device Management
-## [Unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md)
+# Get started with HoloLens (gen 1)
+## [Start your HoloLens (1st gen) for the first time](hololens-start.md)
 ## [Install localized version of HoloLens](hololens-install-localized.md)
+
+# Get started with HoloLens in commercial environments
+## [Overview and deployment planning](hololens-requirements.md)
+## [Unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md)
 ## [Configure HoloLens using a provisioning package](hololens-provisioning.md)
 ## [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
-## [Manage updates to HoloLens](hololens-updates.md)
-## [Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md)
-## [Use the HoloLens Clicker](hololens-clicker.md)
-## [Restart, reset, or recover the HoloLens](hololens-restart-recover.md)
-## [Restart or recover the HoloLens clicker](hololens-clicker-restart-recover.md)
+## [Set up ring based updates for HoloLens](hololens-updates.md)
+## [Manage custom enterprise apps](hololens-install-apps.md)
+## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
+
+# Navigating Windows Holographic
+## [Windows Mixed Reality home](holographic-home.md)
+## [Voice and Cortana](hololens-cortana.md)
+## [Find and save files](hololens-find-and-save-files.md)
+## [Create, share, and view photos and video](holographic-photos-and-video.md)
+
+# Accessories and connectivity
+## [Connect to Bluetooth and USB-C devices](hololens-connect-devices.md)
+## [Restart or recover the HoloLens (1st gen) clicker](hololens-clicker-restart-recover.md)
+## [Connect to a network](hololens-network.md)
+## [Use HoloLens offline](hololens-offline.md)
 
 # Application Management 
-## [Install apps on HoloLens](hololens-install-apps.md)
 ## [Share HoloLens with multiple people](hololens-multiple-users.md)
-## [Cortana on HoloLens](hololens-cortana.md)
 ## [Get apps for HoloLens](hololens-get-apps.md)
 ## [Use apps on HoloLens](hololens-use-apps.md)
 ## [Use HoloLens offline](hololens-offline.md)
 ## [Spaces on HoloLens](hololens-spaces-on-hololens.md)
+## [How HoloLens stores data for spaces](hololens-spaces.md)
+
+# Recovery and troubleshooting
+## [Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md)
+## [Restart, reset, or recover the HoloLens](hololens-restart-recover.md)
 
 # User/Access Management
 ## [Set up single application access](hololens-kiosk.md)
-## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
-## [How HoloLens stores data for spaces](hololens-spaces.md)
-## [Find and save files](hololens-find-and-save-files.md)
 
 # [Insider preview for Microsoft HoloLens](hololens-insider.md)
 # [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
-

@@ -1,7 +1,7 @@
 ---
 title: Operations for UE-V 1.0
 description: Operations for UE-V 1.0
-author: levinec
+author: dansimp
 ms.assetid: 5b4a82fd-3145-49e8-ac06-f9cc583abe5f
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

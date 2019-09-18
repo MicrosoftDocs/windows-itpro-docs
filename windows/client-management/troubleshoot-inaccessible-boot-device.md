@@ -17,7 +17,7 @@ manager: dansimp
 
 This article provides steps to troubleshoot **Stop error 7B: Inaccessible_Boot_Device**. This error may occur after some changes are made to the computer, or immediately after you deploy Windows on the computer.
 
-##  Causes of the  Inaccessible_Boot_Device  Stop error
+## Causes of the  Inaccessible_Boot_Device  Stop error
 
 Any one of the following factors may cause the stop error:
 
@@ -37,7 +37,7 @@ Any one of the following factors may cause the stop error:
 
 *	Corrupted files in the **Boot**  partition (for example, corruption in the volume that is labeled **SYSTEM**  when you run the `diskpart`  > `list vol`  command)
 
-##  Troubleshoot this error
+## Troubleshoot this error
 
 Start the computer in [Windows Recovery Mode (WinRE)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference#span-identrypointsintowinrespanspan-identrypointsintowinrespanspan-identrypointsintowinrespanentry-points-into-winre). To do this, follow these steps.
 
@@ -47,9 +47,9 @@ Start the computer in [Windows Recovery Mode (WinRE)](https://docs.microsoft.com
 
 3. On the **System Recovery Options**  screen, select **Next**  > **Command Prompt** .
 
-###  Verify that the boot disk is connected and accessible
+### Verify that the boot disk is connected and accessible
 
-####  Step 1
+#### Step 1
 
  At the WinRE Command prompt, run `diskpart`, and then run `list disk`.
 
@@ -67,7 +67,7 @@ If the computer uses a Unified Extensible Firmware Interface (UEFI) startup inte
 
 If the computer uses a basic input/output system (BIOS) interface, there will not be an asterisk in the **Dyn**  column.
 
-####  Step 2
+#### Step 2
 
 If the `list disk` command lists the OS disks correctly, run the `list vol` command in `diskpart`.
 
@@ -88,7 +88,7 @@ If the `list disk` command lists the OS disks correctly, run the `list vol` comm
 >[!NOTE]
 >If the disk that contains the OS is not listed in the output, you will have to engage the OEM or virtualization manufacturer.
 
-###  Verify the integrity of Boot Configuration Database
+### Verify the integrity of Boot Configuration Database
 
 Check whether the Boot Configuration Database (BCD) has all the correct entries. To do this, run `bcdedit` at the WinRE command prompt.
 
@@ -163,7 +163,7 @@ If you do not have a Windows 10 ISO, you must format the partition and copy **bo
 
 4. Right-click the partition, and then format it.
 
-###  Troubleshooting if this issue occurs after a Windows Update installation
+### Troubleshooting if this issue occurs after a Windows Update installation
 
 Run the following command to verify the Windows update installation and dates:
 
@@ -171,7 +171,7 @@ Run the following command to verify the Windows update installation and dates:
 Dism /Image:<Specify the OS drive>: /Get-packages
 ```
 
-After you run this command, you will see the **Install pending** and **Uninstall Pending ** packages:
+After you run this command, you will see the **Install pending** and **Uninstall Pending** packages:
 
 ![Dism output](images/pendingupdate.png)
 
@@ -203,9 +203,9 @@ After you run this command, you will see the **Install pending** and **Uninstall
 
 11.	 Expand **Control\Session Manager**. Check whether the **PendingFileRenameOperations** key exists. If it does, back up the **SessionManager** key, and then delete the **PendingFileRenameOperations** key.
 
-###  Verifying boot critical drivers and services
+### Verifying boot critical drivers and services
 
-####  Check services	
+#### Check services	
 
 1.	 Follow steps 1-10 in the "Troubleshooting if this issue occurs after an Windows Update installation" section. (Step 11 does not apply to this procedure.)
 
@@ -235,7 +235,7 @@ ren SYSTEM SYSTEM.old
 copy OSdrive:\Windows\System32\config\RegBack\SYSTEM OSdrive:\Windows\System32\config\
 ```
 
-####  Check upper and lower filter drivers
+#### Check upper and lower filter drivers
 
 Check whether there are any non-Microsoft upper and lower filter drivers on the computer and that they do not exist on another, similar working computer. if they do exist, remove the upper and lower filter drivers:
 
@@ -268,7 +268,7 @@ The reason that these entries may affect us is because there may be an entry in 
 >[!NOTE]
 >If there actually is a service that is set to **0** or **1** that corresponds to an **UpperFilters** or **LowerFilters** entry, setting the service to disabled in the **Services** registry (as discussed in steps 2 and 3 of the Check services section) without removing the **Filter Driver** entry causes the computer to crash and generate a 0x7b Stop error.
 
-###  Running SFC and Chkdsk
+### Running SFC and Chkdsk
 
  If the computer still does not start, you can try to run a **chkdisk**  process on the system drive, and also run System File Checker. To do this, run the following commands at a WinRE command prompt:
 

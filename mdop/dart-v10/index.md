@@ -1,7 +1,7 @@
 ---
 title: Diagnostics and Recovery Toolset 10
 description: Diagnostics and Recovery Toolset 10
-author: jamiejdt
+author: dansimp
 ms.assetid: 64403eca-ff05-4327-ac33-bdcc96e706c8
 ms.pagetype: mdop
 ms.mktglfcycl: support

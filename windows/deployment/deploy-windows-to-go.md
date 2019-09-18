@@ -4,13 +4,15 @@ description: This topic helps you to deploy Windows To Go in your organization.
 ms.assetid: cfe550be-ffbd-42d1-ab4d-80efae49b07f
 ms.reviewer: 
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
 keywords: deployment, USB, device, BitLocker, workspace, security, data
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobility
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -106,7 +108,7 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 
 2. In the Windows PowerShell session type the following commands to partition a master boot record (MBR) disk for use with a FAT32 system partition and an NTFS-formatted operating system partition. This disk layout can support computers that use either UEFI or BIOS firmware:
 
-    ``` syntax
+    ```
    # The following command will set $Disk to all USB drives with >20 GB of storage
 
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
@@ -145,7 +147,7 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
     >[!TIP]
     >The index number must be set correctly to a valid Enterprise image in the .WIM file.
 
-    ``` syntax
+    ``` 
     #The WIM file must contain a sysprep generalized image.
     dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\
     ```
@@ -154,14 +156,14 @@ The following Windows PowerShell cmdlet or cmdlets perform the same function as 
 
 
 ~~~
-``` syntax
+``` 
 W:\Windows\System32\bcdboot W:\Windows /f ALL /s S:
 ```
 ~~~
 
 5. Apply SAN policy—OFFLINE\_INTERNAL - “4” to prevent the operating system from automatically bringing online any internally connected disk. This is done by creating and saving a **san\_policy.xml** file on the disk. The following example illustrates this step:
 
-    ``` syntax
+    ``` 
     <?xml version='1.0' encoding='utf-8' standalone='yes'?>
     <unattend xmlns="urn:schemas-microsoft-com:unattend">
       <settings pass="offlineServicing">
@@ -193,13 +195,13 @@ W:\Windows\System32\bcdboot W:\Windows /f ALL /s S:
 
 6. Place the **san\_policy.xml** file created in the previous step into the root directory of the Windows partition on the Windows To Go drive (W: from the previous examples) and run the following command:
 
-    ``` syntax
+    ``` 
     Dism.exe /Image:W:\ /Apply-Unattend:W:\san_policy.xml
     ```
 
 7. Create an answer file (unattend.xml) that disables the use of Windows Recovery Environment with Windows To Go. You can use the following code sample to create a new answer file or you can paste it into an existing answer file:
 
-    ``` syntax
+    ``` 
     <?xml version="1.0" encoding="utf-8"?>
     <unattend xmlns="urn:schemas-microsoft-com:unattend">
         <settings pass="oobeSystem">
@@ -299,7 +301,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 
 1. Start the host computer and sign in using a user account with privileges to add workstations to the domain and then run the following command from an elevated command prompt replacing the example placeholder parameters (denoted by &lt;&gt;) with the ones applicable for your environment:
 
-    ``` syntax
+    ``` 
     djoin /provision /domain <exampledomain.com> /machine <examplewindowstogo_workspace_name> /certtemplate <WorkstationAuthentication_template> /policynames <DirectAccess Client Policy: {GUID}> /savefile <C:\example\path\domainmetadatafile> /reuse
     ```
 
@@ -312,7 +314,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 
 4. From the Windows PowerShell command prompt run:
 
-    ``` syntax
+    ``` 
    # The following command will set $Disk to all USB drives with >20 GB of storage
 
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
@@ -353,7 +355,7 @@ Making sure that Windows To Go workspaces are effective when used off premises i
 >[!TIP]
 >The index number must be set correctly to a valid Enterprise image in the .WIM file.
 
-``` syntax
+``` 
 #The WIM file must contain a sysprep generalized image.
 dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\
 ```
@@ -361,13 +363,13 @@ dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /ind
 
 6. After those commands have completed, run the following command:
 
-   ``` syntax
+   ``` 
    djoin /requestodj /loadfile C:\example\path\domainmetadatafile /windowspath W:\Windows
    ```
 
 7. Next, we will need to edit the unattend.xml file to configure the first run (OOBE) settings. In this example we are hiding the Microsoft Software License Terms (EULA) page, configuring automatic updates to install important and recommended updates automatically, and identifying this workspace as part of a private office network. You can use other OOBE settings that you have configured for your organization if desired. For more information about the OOBE settings, see [OOBE](https://go.microsoft.com/fwlink/p/?LinkId=619172):
 
-   ``` syntax
+   ``` 
    <?xml version="1.0" encoding="utf-8"?>
    <unattend xmlns="urn:schemas-microsoft-com:unattend">
        <settings pass="oobeSystem">
@@ -460,7 +462,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
     >[!NOTE]
     >If you used the [manual method for creating a workspace](https://go.microsoft.com/fwlink/p/?LinkId=619174) you should have already provisioned the Windows To Go drive. If so, you can continue on to the next step.
 
-   ``` syntax
+   ``` 
    # The following command will set $Disk to all USB drives with >20 GB of storage
 
     $Disk = Get-Disk | Where-Object {$_.Path -match "USBSTOR" -and $_.Size -gt 20Gb -and -not $_.IsBoot }
@@ -499,20 +501,20 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
    >[!TIP]
    >The index number must be set correctly to a valid Enterprise image in the .WIM file.
 
-   ``` syntax
+   ``` 
    #The WIM file must contain a sysprep generalized image.
    dism /apply-image /imagefile:n:\imagefolder\deploymentimages\mywtgimage.wim /index:1 /applydir:W:\
    ```
 
 5. In the same PowerShell session use the following cmdlet to add a recovery key to the drive:
 
-   ``` syntax
+   ``` 
    $BitlockerRecoveryProtector = Add-BitLockerKeyProtector W: -RecoveryPasswordProtector
    ```
 
 6. Next, use the following cmdlets to save the recovery key to a file:
 
-   ``` syntax
+   ``` 
    #The BitLocker Recovery key is essential if for some reason you forget the BitLocker password
    #This recovery key can also be backed up into Active Directory using manage-bde.exe or the
    #PowerShell cmdlet Backup-BitLockerKeyProtector.
@@ -522,7 +524,7 @@ BitLocker recovery keys are the keys that can be used to unlock a BitLocker prot
 
 7. Then, use the following cmdlets to add the password as a secure string. If you omit the password the cmdlet will prompt you for the password before continuing the operation:
 
-   ``` syntax
+   ``` 
    # Create a variable to store the password
    $spwd = ConvertTo-SecureString -String <password> -AsplainText –Force
    Enable-BitLocker W: -PasswordProtector $spwd
@@ -586,7 +588,7 @@ The sample script creates an unattend file that streamlines the deployment proce
 
 3. Configure the PowerShell execution policy. By default PowerShell’s execution policy is set to Restricted; that means that scripts won’t run until you have explicitly given them permission to. To configure PowerShell’s execution policy to allow the script to run, use the following command from an elevated PowerShell prompt:
 
-    ``` syntax
+    ``` 
     Set-ExecutionPolicy RemoteSigned
     ```
 
@@ -601,7 +603,7 @@ The sample script creates an unattend file that streamlines the deployment proce
 
 #### Windows To Go multiple drive provisioning sample script
 
-``` syntax
+``` 
 <#
 .SYNOPSIS
 Windows To Go multiple drive provisioning sample script.
@@ -976,7 +978,7 @@ Before provisioning your Windows To Go drive you need to consider if your worksp
 
 In the PowerShell provisioning script, after the image has been applied, you can add the following commands that will correctly set the keyboard settings. The following example uses the Japanese keyboard layout:
 
-``` syntax
+``` 
             reg load HKLM\WTG-Keyboard ${OSDriveLetter}:\Windows\System32\config\SYSTEM > info.log
             reg add HKLM\WTG-Keyboard\ControlSet001\Services\i8042prt\Parameters /v LayerDriver /d JPN:kbd106dll /t REG_SZ /f
             reg add HKLM\WTG-Keyboard\ControlSet001\Services\i8042prt\Parameters /v OverrideKeyboardIdentifier /d PCAT_106KEY /t REG_SZ /f

@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 There are some minimum requirements for onboarding machines to the service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 
 >[!TIP]
@@ -38,7 +38,7 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 - Windows 10 Education E5
 - Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5
 
-For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/en-us/windowsforbusiness/compare).
+For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
 For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://go.microsoft.com/fwlink/p/?linkid=2069559).
 

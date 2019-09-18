@@ -1,7 +1,7 @@
 ---
 title: How to Create a Test Environment
 description: How to Create a Test Environment
-author: levinec
+author: dansimp
 ms.assetid: a0db2299-16f3-4516-8769-7d55ca4a1e98
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

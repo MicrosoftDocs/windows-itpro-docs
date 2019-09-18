@@ -1,7 +1,7 @@
 ---
 title: Installing App-V Management Server or Streaming Server Securely
 description: Installing App-V Management Server or Streaming Server Securely
-author: eavena
+author: dansimp
 ms.assetid: d2a51a81-a80f-427c-a727-611e1eb74f02
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

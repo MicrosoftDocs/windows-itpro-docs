@@ -1068,7 +1068,7 @@ If you disable or don't configure this policy setting, the Delete diagnostic dat
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable deleting diagnostic data *
+-   GP English name: *Disable deleting diagnostic data*
 -   GP name: *DisableDeviceDelete*
 -   GP element: *DisableDeviceDelete*
 -   GP path: *Data Collection and Preview Builds*
@@ -1131,7 +1131,7 @@ If you disable or don't configure this policy setting, the Diagnostic Data Viewe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable diagnostic data viewer. *
+-   GP English name: *Disable diagnostic data viewer.*
 -   GP name: *DisableDiagnosticDataViewer*
 -   GP element: *DisableDiagnosticDataViewer*
 -   GP path: *Data Collection and Preview Builds*
@@ -1578,32 +1578,6 @@ The following list shows the supported values:
 
 <!--/Validation-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>System policies supported by HoloLens 2
-
-- [System/AllowCommercialDataPipeline](#system-allowcommercialdatapipeline)
-- [System/AllowLocation](#system-allowlocation)
-- [System/AllowStorageCard](#system-allowstoragecard)
-- [System/AllowTelemetry](#system-allowtelemetry)
- <!--EndHoloLens2-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>System policies supported by HoloLens (1st gen) Commercial Suite
-
-- [System/AllowLocation](#system-allowlocation)
-- [System/AllowTelemetry](#system-allowtelemetry)
- <!--EndHoloLensBusiness-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>System policies supported by HoloLens (1st gen) Development Edition
-
-- [System/AllowLocation](#system-allowlocation)
-- [System/AllowTelemetry](#system-allowtelemetry)
-<!--EndHoloLens-->
-
 <hr/>
 
 Footnotes:
@@ -1614,3 +1588,5 @@ Footnotes:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
+
+<!--/Policies-->

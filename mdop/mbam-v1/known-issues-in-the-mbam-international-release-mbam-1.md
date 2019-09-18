@@ -1,7 +1,7 @@
 ---
 title: Known Issues in the MBAM International Release
 description: Known Issues in the MBAM International Release
-author: msfttracyp
+author: dansimp
 ms.assetid: bbf888dc-93c1-4323-b43c-0ded098e9b93
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

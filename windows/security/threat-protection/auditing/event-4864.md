@@ -44,7 +44,7 @@ There is no example of this event in this document.
 
 *Security ID:%7*
 
-*New Flags:%8 *
+*New Flags:%8*
 
 ***Required Server Roles:*** Active Directory domain controller.
 

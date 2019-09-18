@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Understanding AppLocker rule exceptions
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic describes the result of applying AppLocker rule exceptions to rule collections.
 

@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -101,8 +102,8 @@ If you decide to use the centralized compatibility-fix database deployment strat
 
 5.  The team that manages the centralized database opens Custom DB1 and uses the Compatibility Administrator to include the new compatibility fixes that were included in Custom DB2.
 
-    **Note**  
-    Custom DB1 contains a unique GUID that makes updating the database easier. For example, if you install a new version of the custom compatibility-fix database that uses the same GUID as the previous version, the computer will automatically uninstall the old version.
+    > [!NOTE]  
+    > Custom DB1 contains a unique GUID that makes updating the database easier. For example, if you install a new version of the custom compatibility-fix database that uses the same GUID as the previous version, the computer will automatically uninstall the old version.
 
 
 
@@ -122,23 +123,17 @@ In order to meet the two requirements above, we recommend that you use one of th
 
     You can package your .sdb file and a custom deployment script into an .msi file, and then deploy the .msi file into your organization.
 
-    **Important**  
-    You must ensure that you mark your custom script so that it does not impersonate the calling user. For example, if you use Microsoft® Visual Basic® Scripting Edition (VBScript), the custom action type would be:
+    > [!IMPORTANT]
+    > You must ensure that you mark your custom script so that it does not impersonate the calling user. For example, if you use Microsoft® Visual Basic® Scripting Edition (VBScript), the custom action type would be:
+    >`msidbCustomActionTypeVBScript + msidbCustomActionTypeInScript + msidbCustomActionTypeNoImpersonate = 0x0006 + 0x0400 + 0x0800 = 0x0C06 = 3078 decimal)`
 
-
-
-~~~
-``` syntax
-msidbCustomActionTypeVBScript + msidbCustomActionTypeInScript + msidbCustomActionTypeNoImpersonate = 0x0006 + 0x0400 + 0x0800 = 0x0C06 = 3078 decimal)
-```
-~~~
 
 -   **Using a network share and a custom script**
 
 You can store your .sdb file on your network share and then call to a script that resides on your specified computers.
 
-**Important**  
-You must ensure that you call the script at a time when it will receive elevated rights. For example, you should call the script by using computer startup scripts instead of a user logon script. You must also ensure that the installation of the custom compatibility-fix database occurs with Administrator rights.
+> [!IMPORTANT]  
+> You must ensure that you call the script at a time when it will receive elevated rights. For example, you should call the script by using computer startup scripts instead of a user logon script. You must also ensure that the installation of the custom compatibility-fix database occurs with Administrator rights.
 
 
 
@@ -146,7 +141,7 @@ You must ensure that you call the script at a time when it will receive elevated
 
 The following examples show an installation of a custom compatibility-fix database based on an .msi file.
 
-``` syntax
+```
 'InstallSDB.vbs
 Function Install
 Dim WshShell

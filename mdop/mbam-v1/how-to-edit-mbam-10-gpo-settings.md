@@ -1,7 +1,7 @@
 ---
 title: How to Edit MBAM 1.0 GPO Settings
 description: How to Edit MBAM 1.0 GPO Settings
-author: msfttracyp
+author: dansimp
 ms.assetid: 03d12fbc-4302-43fc-9b38-440607d778a1
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

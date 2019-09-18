@@ -1,7 +1,7 @@
 ---
 title: Operations for DaRT 8.0
 description: Operations for DaRT 8.0
-author: msfttracyp
+author: dansimp
 ms.assetid: a31615de-eb6e-41af-909c-d0b6f3eb3f2f
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

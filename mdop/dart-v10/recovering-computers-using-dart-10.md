@@ -1,7 +1,7 @@
 ---
 title: Recovering Computers Using DaRT 10
 description: Recovering Computers Using DaRT 10
-author: msfttracyp
+author: dansimp
 ms.assetid: 2ad7fab0-c22d-4171-8b5a-b2b7d7c0ad2d
 ms.reviewer: 
 manager: dansimp

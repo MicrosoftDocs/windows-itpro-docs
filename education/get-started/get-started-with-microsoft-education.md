@@ -5,11 +5,11 @@ keywords: education, Microsoft Education, full cloud IT solution, school, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.topic: hero-article
+ms.topic: article
 ms.localizationpriority: medium
 ms.pagetype: edu
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.date: 10/09/2017
 ms.reviewer: 
 manager: dansimp

@@ -122,6 +122,7 @@ The following fields are collected:
 | cloud_service.service_uri                           | URI used to communicate with the cloud. |
 | cloud_service.diagnostic_level                      | Diagnostic level of the device (required, optional). |
 | cloud_service.automatic_sample_submission           | Whether automatic sample submission is turned on or not. |
+| edr.early_preview                                   | Whether the machine should run EDR early preview features. |
 | features.\[optional feature name\]                  | List of preview features, along with whether they are enabled or not. |
 
 #### Product and service performance data events
@@ -148,6 +149,8 @@ Diagnostic logs are collected only with the consent of the user as part of the f
 - All files under */Library/Logs/Microsoft/mdatp/*
 - Subset of files under */Library/Application Support/Microsoft/Defender/* that are created and used by Microsoft Defender ATP for Mac
 - Subset of files under */Library/Managed Preferences* that are used by Microsoft Defender ATP for Mac
+- /Library/Logs/Microsoft/autoupdate.log
+- $HOME/Library/Preferences/com.microsoft.autoupdate2.plist
 
 ### Optional diagnostic data
 

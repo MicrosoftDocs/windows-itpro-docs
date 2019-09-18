@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Plan for AppLocker policy management
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies.
 

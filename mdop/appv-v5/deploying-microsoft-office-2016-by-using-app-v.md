@@ -222,7 +222,7 @@ The XML file that is included in the Office Deployment Tool specifies the produc
 
    2. With the sample configuration.xml file open and ready for editing, you can specify products, languages, and the path to which you save the Office 2016 applications. The following is a basic example of the configuration.xml file:
 
-      ``` syntax
+      ```xml
       <Configuration>
          <Add SourcePath= ”\\Server\Office2016” OfficeClientEdition="32" >
           <Product ID="O365ProPlusRetail ">
@@ -633,7 +633,7 @@ You may want to disable specific applications in your Office App-V package. For 
 
 5.  Add the Office 2016 App-V Package with the new Deployment Configuration File.
 
-    ``` syntax
+    ```xml
     <Application Id="[{AppVPackageRoot}]\office16\lync.exe" Enabled="true">
       <VisualElements>
         <Name>Lync 2016</Name>

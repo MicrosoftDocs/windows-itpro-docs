@@ -5241,49 +5241,6 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens2-->  
-## <a href="" id="hololens2policies"></a>Privacy policies supported by HoloLens 2
-
-- [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
-- [LetAppsAccessAccountInfo](#privacy-letappsaccessaccountinfo)
-- [LetAppsAccessAccountInfo_ForceAllowTheseApps](#privacy-letappsaccessaccountinfo-forceallowtheseapps)
-- [LetAppsAccessAccountInfo_ForceDenyTheseApps](#privacy-letappsaccessaccountinfo-forcedenytheseapps)
-- [LetAppsAccessAccountInfo_UserInControlOfTheseApps](#privacy-letappsaccessaccountinfo-userincontroloftheseapps)
-- [LetAppsAccessBackgroundSpatialPerception](#privacy-letappsaccessbackgroundspatialperception)
-- [LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps](#privacy-letappsaccessbackgroundspatialperception-forceallowtheseapps)
-- [LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps](#privacy-letappsaccessbackgroundspatialperception-forcedenytheseapps)
-- [LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps](#privacy-letappsaccessbackgroundspatialperception-userincontroloftheseapps)
-- [Privacy/LetAppsAccessCamera](#privacy-letappsaccesscamera)
-- [Privacy/LetAppsAccessLocation](#privacy-letappsaccesslocation)
-- [Privacy/LetAppsAccessMicrophone](#privacy-letappsaccessmicrophone)
-<!--EndHoloLens2-->
-
-<!--StartHoloLensBusiness-->  
-## <a href="" id="hololensbusinessspolicies"></a>Privacy policies supported by HoloLens (1st gen) Commercial Suite
-
-- [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
-<!--EndHoloLensBusiness-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Privacy policies supported by HoloLens (1st gen) Development Edition
-
-- [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)
-<!--EndHoloLens-->
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Privacy policies supported by Windows 10 IoT Core
-- [Privacy/LetAppsActivateWithVoice](#privacy-letappsactivatewithvoice)
-- [Privacy/LetAppsActivateWithVoiceAboveLock](#privacy-letappsactivatewithvoiceabovelock)
-<!--EndIoTCore-->
-
-<!--StartIoTEnterprise-->
-## <a href="" id="iotenterprise"></a>Privacy policies supported by Windows 10 IoT Enterprise
-- [Privacy/LetAppsActivateWithVoice](#privacy-letappsactivatewithvoice)
-- [Privacy/LetAppsActivateWithVoiceAboveLock](#privacy-letappsactivatewithvoiceabovelock)
-<!--EndIoTEnterprise-->
-
 <hr/>
 
 Footnotes:
@@ -5294,3 +5251,5 @@ Footnotes:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
+<!--/Policies-->
+

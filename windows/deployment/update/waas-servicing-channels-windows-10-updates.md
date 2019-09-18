@@ -4,10 +4,9 @@ description: tbd
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
-ms.audience: itproauthor: greg-lindsay
-ms.date: 10/13/2017
+ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
@@ -19,75 +18,63 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
+
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 >[!TIP]
 >If you're not familiar with the Windows 10 servicing or release channels, read [Servicing Channels](waas-overview.md#servicing-channels) first.
 >
->Due to [naming changes](waas-overview.md#naming-changes), older terms like CB, CBB and LTSB may still be displayed in some of our products.
+>Due to [naming changes](waas-overview.md#naming-changes), older terms like CB and CBB might still be displayed in some of our products, such as in Group Policy. If you encounter these terms, "CB" refers to the Semi-Annual Channel (Targeted)--which is no longer used--while "CBB" refers to the Semi-Annual Channel.
 
-Semi-Annual Channel is the default servicing channel for all Windows 10 devices except those with the LTSB edition installed. The following table shows the servicing channels available to each Windows 10 edition. 
+The Semi-Annual Channel is the default servicing channel for all Windows 10 devices except those with the LTSB edition installed. The following table shows the servicing channels available to each Windows 10 edition. 
 
-| Windows 10 edition | Semi-Annual Channel (Targeted) | Semi-Annual Channel | Long-Term Servicing Channel | Insider Program |
-| --- | --- | --- | --- | --- |
-| Home | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Pro | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Enterprise | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Enterprise LTSB | ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
-| Pro Education | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Education | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Mobile | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Mobile Enterprise | ![yes](images/checkmark.png) | ![yes](images/checkmark.png)  | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Windows 10 edition | Semi-Annual Channel | Long-Term Servicing Channel | Insider Program |
+| --- | --- | --- | --- |
+| Home | ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Pro | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Enterprise  | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Enterprise LTSB  | ![no](images/crossmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
+| Pro Education | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Education  | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Mobile | ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Mobile Enterprise  | ![yes](images/checkmark.png)  | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 
 
 
 >[!NOTE]
 >The LTSB edition of Windows 10 is only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
->[!NOTE]
->Semi-Annual Channel (Targeted) should be used only by the customers that are using [Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb). For those who don't use Windows Update for Business, Semi-Annual Channel (Targeted) would be the same as Semi-Annual Channel.
+
 
 ## Assign devices to Semi-Annual Channel
 
 >[!IMPORTANT]
->Due to [naming changes](waas-overview.md#naming-changes), older terms like CB, CBB and LTSB may still be displayed in some of our products.
->
->In the following settings CB refers to Semi-Annual Channel (Targeted), while CBB refers to Semi-Annual Channel.
+>Due to [naming changes](waas-overview.md#naming-changes), older terms like CB and CBB might still be displayed in some of our products, such as in Group Policy. If you encounter these terms, "CB" refers to the Semi-Annual Channel (Targeted)--which is no longer used--while "CBB" refers to the Semi-Annual Channel.
 
-**To assign a single PC locally to CBB**
+**To assign a single devices locally to the Semi-Annual Channel**
 
 1. Go to **Settings** > **Update & security** > **Windows Update** > **Advanced options**.
 2. Select **Defer feature updates**.
 
-**To assign PCs to CBB using Group Policy**
+**To assign devicess to the Semi-Annual Channel by using Group Policy**
 
-- In Windows 10, version 1511:
 
-    Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates**
+- In Windows 10, version 1607 and later releases:
 
-- In Windows 10, version 1607:
-
-    Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** - enable policy and set branch readiness level to CBB
+    Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** - enable policy and set branch readiness level to the Semi-Annual Channel
     
-**To assign PCs to CBB using MDM**
+**To assign devicess to to the Semi-Annual Channel by using MDM**
 
-- In Windows 10, version 1511:
 
-    ../Vendor/MSFT/Policy/Config/Update/**RequireDeferUpgrade**
-
-- In Windows 10, version 1607:
+- In Windows 10, version 1607 and later releases:
 
     ../Vendor/MSFT/Policy/Config/Update/**BranchReadinessLevel**
     
-**To assign Windows 10 Mobile Enterprise to CBB using MDM**
+**To assign Windows 10 Mobile Enterprise devices to the Semi-Annual Channel by using MDM**
 
-- In Windows 10 Mobile Enterprise, version 1511:
 
-    ../Vendor/MSFT/Policy/Config/Update/RequireDeferUpgrade
-
-- In Windows 10 Mobile Enterprise, version 1607:
+- In Windows 10 Mobile Enterprise, version 1607 and later releases:
 
     ../Vendor/MSFT/Policy/Config/Update/BranchReadinessLevel
 
@@ -125,7 +112,7 @@ To prevent devices in your enterprise from being enrolled in the Insider Program
 
 ## Switching channels
 
-During the life of a device, it may be necessary or desirable to switch between the available channels. Depending on the channel you are using, the exact mechanism for doing this can be different; some will be simple, others more involved.
+During the life of a device, it might be necessary or desirable to switch between the available channels. Depending on the channel you are using, the exact mechanism for doing this can be different; some will be simple, others more involved.
 
 <table>
 <colgroup>
@@ -143,27 +130,12 @@ During the life of a device, it may be necessary or desirable to switch between 
 <tbody>
 <tr class="odd">
 <td align="left" rowspan="3">Windows Insider Program</td>
-<td align="left">Semi-Annual Channel (Targeted)</td>
-<td align="left">Wait for the final Semi-Annual Channel release.</td>
 </tr>
 <tr class="even">
 <td align="left">Semi-Annual Channel</td>
-<td align="left">Not directly possible, because Windows Insider Program devices are automatically upgraded to the Semi-Annual Channel (Targeted) release at the end of the development cycle.</td>
+<td align="left">Not directly possible</td>
 </tr>
 <tr class="odd">
-<td align="left">Long-Term Servicing Channel</td>
-<td align="left">Not directly possible (requires wipe-and-load).</td>
-</tr>
-<tr class="even">
-<td align="left" rowspan="3">Semi-Annual Channel (Targeted)</td>
-<td align="left">Insider</td>
-<td align="left">Use the Settings app to enroll the device in the Windows Insider Program.</td>
-</tr>
-<tr class="odd">
-<td align="left">Semi-Annual Channel</td>
-<td align="left">Select the <strong>Defer upgrade</strong> setting, or move the PC to a target group or flight that will not receive the next upgrade until it is business ready. Note that this change will not have any immediate impact; it only prevents the installation of the next Semi-Annual Channel release.</td>
-</tr>
-<tr class="even">
 <td align="left">Long-Term Servicing Channel</td>
 <td align="left">Not directly possible (requires wipe-and-load).</td>
 </tr>
@@ -173,8 +145,6 @@ During the life of a device, it may be necessary or desirable to switch between 
 <td align="left">Use the Settings app to enroll the device in the Windows Insider Program.</td>
 </tr>
 <tr class="even">
-<td align="left">Semi-Annual Channel (Targeted)</td>
-<td align="left">Disable the <strong>Defer upgrade</strong> setting, or move the device to a target group or flight that will receive the latest Current Semi-Annual Channel release.</td>
 </tr>
 <tr class="odd">
 <td align="left">Long-Term Servicing Channel</td>
@@ -184,11 +154,6 @@ During the life of a device, it may be necessary or desirable to switch between 
 <td align="left" rowspan="3">Long-Term Servicing Channel</td>
 <td align="left">Insider</td>
 <td align="left">Use media to upgrade to the latest Windows Insider Program build.</td>
-</tr>
-<tr class="odd">
-<td align="left">Semi-Annual Channel (Targeted)</td>
-<td align="left">Use media to upgrade. Note that the Semi-Annual Channel build must be a later build.</td>
-</tr>
 <tr class="even">
 <td align="left">Semi-Annual Channel</td>
 <td align="left">Use media to upgrade. Note that the Semi-Annual Channel build must be a later build.</td>
@@ -224,5 +189,5 @@ By enabling the Group Policy setting under **Computer Configuration\Administrati
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
+- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Manage device restarts after updates](waas-restart.md)

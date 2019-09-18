@@ -1,7 +1,7 @@
 ---
 title: How to Set Up or Disable Database Size
 description: How to Set Up or Disable Database Size
-author: eavena
+author: dansimp
 ms.assetid: 4abaf349-132d-4186-8873-a0e515593b93
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

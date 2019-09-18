@@ -8,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: mjcaparas
+ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -24,7 +24,7 @@ ms.topic: article
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-supportedapis-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-supportedapis-abovefoldlink) 
 
 ## End Point URI and Versioning
 

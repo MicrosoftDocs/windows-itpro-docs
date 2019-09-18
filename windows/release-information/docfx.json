@@ -38,6 +38,7 @@
       "breadcrumb_path": "/windows/release-information/breadcrumb/toc.json",
       "ms.prod": "w10",
       "ms.date": "4/30/2019",
+      "audience": "ITPro",
       "titleSuffix": "Windows Release Information",
       "extendBreadcrumb": true,
       "feedback_system": "None"

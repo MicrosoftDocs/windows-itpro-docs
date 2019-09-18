@@ -1,7 +1,7 @@
 ---
 title: Run Each Program Page
 description: Run Each Program Page
-author: eavena
+author: dansimp
 ms.assetid: 4f09a64e-9545-47aa-bc43-fda0089f7adb
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

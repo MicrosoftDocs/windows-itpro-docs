@@ -1,7 +1,7 @@
 ---
 title: History Window
 description: History Window
-author: mjcaparas
+author: dansimp
 ms.assetid: 5bea62e7-d267-40b2-a66d-fb1be7373a1c
 ms.reviewer: 
 manager: dansimp

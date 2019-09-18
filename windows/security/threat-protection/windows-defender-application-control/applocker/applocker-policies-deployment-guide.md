@@ -21,8 +21,8 @@ ms.date: 09/21/2017
 # AppLocker deployment guide
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies.
 

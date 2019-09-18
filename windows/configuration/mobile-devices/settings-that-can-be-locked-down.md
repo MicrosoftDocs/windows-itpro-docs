@@ -462,7 +462,7 @@ Quick action buttons are locked down in exactly the same way as Settings pages/g
 
 You can specify the quick actions as follows:
 
-``` syntax
+```xml
 <Settings>
     <System name="QuickActions_Launcher_AllSettings" />
     <System name="QuickActions_Launcher_DeviceDiscovery" />

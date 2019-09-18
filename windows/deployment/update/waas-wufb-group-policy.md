@@ -4,10 +4,9 @@ description: Configure Windows Update for Business settings using Group Policy.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
-ms.audience: itproauthor: greg-lindsay
-ms.date: 07/27/2017
+ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
@@ -138,7 +137,7 @@ We recommend that you set up a ring to receive preview builds by joining the Win
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
+- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
 - [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)
 - [Manage device restarts after updates](waas-restart.md)

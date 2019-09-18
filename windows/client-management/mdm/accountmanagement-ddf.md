@@ -1,7 +1,7 @@
 ---
 title: AccountManagement DDF file
 description: Used to configure settings in the Account Manager service
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

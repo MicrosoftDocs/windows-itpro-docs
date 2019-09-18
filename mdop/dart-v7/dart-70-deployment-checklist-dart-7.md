@@ -1,7 +1,7 @@
 ---
 title: DaRT 7.0 Deployment Checklist
 description: DaRT 7.0 Deployment Checklist
-author: msfttracyp
+author: dansimp
 ms.assetid: 2c68ec15-0624-4a75-8237-05c68b61ad07
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -50,11 +50,6 @@ New or changed topic | Description
 --- | ---
 Insider preview for Microsoft HoloLens | New (topic retired on release of Windows 10, version 1809)
 
-## June 2018
-
-New or changed topic | Description
---- | ---
-[HoloLens in the enterprise: requirements and FAQ](hololens-requirements.md#pin) | Added instructions for creating a sign-in PIN. 
 
 ## May 2018
 
@@ -85,12 +80,6 @@ New or changed topic | Description
 New or changed topic | Description
 --- | ---
 [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md) | New
-
-## May 2017
-
-| New or changed topic | Description |
-| --- | --- |
-| [Microsoft HoloLens in the enterprise: requirements](hololens-requirements.md) | Changed title to **Microsoft HoloLens in the enterprise: requirements and FAQ**, added questions and answers in new [FAQ section](hololens-requirements.md#faq-for-hololens) |
 
 ## January 2017
 

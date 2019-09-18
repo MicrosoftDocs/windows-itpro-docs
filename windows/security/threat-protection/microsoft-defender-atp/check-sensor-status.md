@@ -23,7 +23,7 @@ ms.date: 04/24/2018
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-checksensor-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-checksensor-abovefoldlink)
 
 The sensor health tile is found on the Security Operations dashboard. This tile provides information on the individual machine’s ability to provide sensor data and communicate with the Microsoft Defender ATP service. It reports how many machines require attention and helps you identify problematic machines and take action to correct known issues.
 

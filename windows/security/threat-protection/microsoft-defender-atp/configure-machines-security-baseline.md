@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
 Security baselines ensure that security features are configured according to guidance from both security experts and expert Windows system administrators. When deployed, the Microsoft Defender ATP security baseline sets Microsoft Defender ATP security controls to provide optimal protection.
 
@@ -95,7 +95,7 @@ Machine configuration management monitors baseline compliance only of Windows 10
 >[!TIP]
 >Security baselines on Intune provide a convenient way to comprehensively secure and protect your machines. [Learn more about security baselines on Intune](https://docs.microsoft.com/intune/security-baselines).
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 # Related topics
 - [Ensure your machines are configured properly](configure-machines.md)

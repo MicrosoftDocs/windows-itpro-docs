@@ -7,8 +7,8 @@ manager: dansimp
 keywords: device account for Surface Hub, online deployment
 ms.prod: surface-hub
 ms.sitesec: library
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 02/21/2018
 ms.localizationpriority: medium

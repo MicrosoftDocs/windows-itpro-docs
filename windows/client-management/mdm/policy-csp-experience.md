@@ -1639,28 +1639,6 @@ Supported values:
 
 <!--/Validation-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Experience policies supported by HoloLens 2
-
-- [Experience/AllowCortana](#experience-allowcortana)
-- [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)
-<!--EndHoloLens2-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Experience policies supported by HoloLens (1st gen) Commercial Suite
-
-- [Experience/AllowCortana](#experience-allowcortana)
-<!--EndHoloLensBusiness-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Experience policies supported by HoloLens (1st gen)  Development Edition
-
-- [Experience/AllowCortana](#experience-allowcortana)
-<!--EndHoloLens-->
-
 <hr/>
 
 Footnotes:
@@ -1671,3 +1649,4 @@ Footnotes:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
+<!--/Policies-->

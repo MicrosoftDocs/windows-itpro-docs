@@ -1,7 +1,7 @@
 ---
 title: LOAD APP
 description: LOAD APP
-author: eavena
+author: dansimp
 ms.assetid: 7b727d0c-5423-419d-92ef-7ebbc6343e79
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

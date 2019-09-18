@@ -56,7 +56,7 @@ Here is an easy way to get the EAP configuration from your desktop using the ras
 
 9.  Switch over to PowerShell and use the following cmdlets to retrieve the EAP configuration XML.
 
-    ``` syntax
+    ```powershell
     Get-VpnConnection -Name Test
     ```
 
@@ -80,17 +80,17 @@ Here is an easy way to get the EAP configuration from your desktop using the ras
     IdleDisconnectSeconds : 0
     ```
 
-    ``` syntax
+    ```powershell
     $a = Get-VpnConnection -Name Test
     ```
 
-    ``` syntax
+    ```powershell
     $a.EapConfigXmlStream.InnerXml
     ```
 
     Here is an example output
 
-    ``` syntax
+    ```xml
     <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><EapMethod><Type xmlns="http://www.microsoft.co
     m/provisioning/EapCommon">13</Type><VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId><VendorTy
     pe xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType><AuthorId xmlns="http://www.microsoft.com/provisi
@@ -158,7 +158,7 @@ The following XML sample explains the properties for the EAP TLS XML including c
 
  
 
-``` syntax
+```xml
 <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
  <EapMethod>
   <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">13</Type>
