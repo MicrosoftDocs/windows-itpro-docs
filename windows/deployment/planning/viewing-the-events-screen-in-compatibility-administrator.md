@@ -9,8 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
-ms.date: 04/19/2017
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -28,14 +28,14 @@ ms.topic: article
 
 The **Events** screen enables you to record and to view your activities in the Compatibility Administrator tool, provided that the screen is open while you perform the activities.
 
-**Important**  
-The **Events** screen only records your activities when the screen is open. If you perform an action before opening the **Events** screen, the action will not appear in the list.
+>[!IMPORTANT]
+>The **Events** screen only records your activities when the screen is open. If you perform an action before opening the **Events** screen, the action will not appear in the list.
 
  
 
 **To open the Events screen**
 
--   On the **View** menu, click **Events**.
+- On the **View** menu, click **Events**.
 
 ## Handling Multiple Copies of Compatibility Fixes
 
@@ -45,15 +45,5 @@ Compatibility Administrator enables you to copy your compatibility fixes from on
 If you open the **Events** screen and then perform the copy operation, you can see a description of the action, along with the time stamp, which enables you to view your fix information without confusion.
 
 ## Related topics
-[Creating a Custom Compatibility Mode in Compatibility Administrator](creating-a-custom-compatibility-mode-in-compatibility-administrator.md)
-
+[Creating a Custom Compatibility Mode in Compatibility Administrator](creating-a-custom-compatibility-mode-in-compatibility-administrator.md)<br>
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
-
- 
-
- 
-
-
-
-
-

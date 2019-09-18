@@ -1,13 +1,14 @@
 ---
 ms.mktglfcycl: plan
 description: IEAK 11 - Internet Explorer Administration Kit 11 Users Guide
-author: shortpatti
+author: lomayor
+ms.author: lomayor
 ms.prod: ie11
 ms.assetid: 847bd7b4-d5dd-4e10-87b5-4d7d3a99bbac
 title: Internet Explorer Administration Kit 11 (IEAK 11) - Administrator's Guide (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+manager: dansimp
 ---
 
 

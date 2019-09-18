@@ -342,7 +342,7 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 machin
 </tbody>
 </table>
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## Related topics
 - [Onboard Windows 10 machines](configure-endpoints.md)

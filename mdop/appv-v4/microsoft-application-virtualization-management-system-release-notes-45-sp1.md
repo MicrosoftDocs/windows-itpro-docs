@@ -1,7 +1,7 @@
 ---
 title: Microsoft Application Virtualization Management System Release Notes 4.5 SP1
 description: Microsoft Application Virtualization Management System Release Notes 4.5 SP1
-author: eavena
+author: dansimp
 ms.assetid: 5d6b11ea-7b87-4084-9a7c-0d831f247aa3
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

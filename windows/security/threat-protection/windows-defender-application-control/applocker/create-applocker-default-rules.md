@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Create AppLocker default rules
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes the steps to create a standard set of AppLocker rules that will allow Windows system files to run.
 

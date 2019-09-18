@@ -1,7 +1,7 @@
 ---
 title: Check In a GPO
 description: Check In a GPO
-author: mjcaparas
+author: dansimp
 ms.assetid: b838c8a2-eb9e-4e5b-8740-d7701a4294ac
 ms.reviewer: 
 manager: dansimp

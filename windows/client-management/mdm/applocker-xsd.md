@@ -4,7 +4,7 @@ description: Here's the XSD for the AppLocker CSP.
 ms.assetid: 70CF48DD-AD7D-4BCF-854F-A41BFD95F876
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

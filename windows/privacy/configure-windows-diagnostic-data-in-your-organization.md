@@ -36,12 +36,12 @@ At Microsoft, we use Windows diagnostic data to inform our decisions and focus o
 
 To frame a discussion about diagnostic data, it is important to understand Microsoft’s privacy principles. We earn customer trust every day by focusing on six key privacy principles as described at [privacy.microsoft.com](https://privacy.microsoft.com/). These principles guided the implementation of the Windows diagnostic data system in the following ways:
 
--	**Control.** We offer customers control of the diagnostic data they share with us by providing easy-to-use management tools.
--	**Transparency.** We provide information about the diagnostic data that Windows and Windows Server collects so our customers can make informed decisions.
--	**Security.** We encrypt diagnostic data in transit from your device via TLS 1.2, and additionally use certificate pinning to secure the connection.
--	**Strong legal protections.** We respect customers’ local privacy laws and fight for legal protection of their privacy as a fundamental human right.
--	**No content-based targeting.** We take steps to avoid and minimize the collection of customer content, such as the content of files, chats, or emails, through the Windows diagnostic data system.  Customer content inadvertently collected is kept confidential and not used for user targeting.
--	**Benefits to you.** We collect Windows diagnostic data to help provide you with an up-to-date, more secure, reliable and performant product, and to improve Windows for all our customers.
+- **Control.** We offer customers control of the diagnostic data they share with us by providing easy-to-use management tools.
+- **Transparency.** We provide information about the diagnostic data that Windows and Windows Server collects so our customers can make informed decisions.
+- **Security.** We encrypt diagnostic data in transit from your device via TLS 1.2, and additionally use certificate pinning to secure the connection.
+- **Strong legal protections.** We respect customers’ local privacy laws and fight for legal protection of their privacy as a fundamental human right.
+- **No content-based targeting.** We take steps to avoid and minimize the collection of customer content, such as the content of files, chats, or emails, through the Windows diagnostic data system.  Customer content inadvertently collected is kept confidential and not used for user targeting.
+- **Benefits to you.** We collect Windows diagnostic data to help provide you with an up-to-date, more secure, reliable and performant product, and to improve Windows for all our customers.
 
 In previous versions of Windows and Windows Server, Microsoft used diagnostic data to check for updated or new Windows Defender signatures, check whether Windows Update installations were successful, gather reliability information through the Reliability Analysis Component (RAC), and gather reliability information through the Windows Customer Experience Improvement Program (CEIP) on Windows. In Windows 10 and Windows Server, you can control diagnostic data streams by using the Privacy option in Settings, Group Policy, or MDM.
 
@@ -56,16 +56,16 @@ The release cadence of Windows may be fast, so feedback is critical to its succe
 ### What is Windows diagnostic data?
 Windows diagnostic data is vital technical data from Windows devices about the device and how Windows and related software are performing. It's used in the following ways:
 
-- 	Keep Windows up to date
--	Keep Windows secure, reliable, and performant
--	Improve Windows – through the aggregate analysis of the use of Windows
--	Personalize Windows engagement surfaces
+- Keep Windows up to date
+- Keep Windows secure, reliable, and performant
+- Improve Windows – through the aggregate analysis of the use of Windows
+- Personalize Windows engagement surfaces
 
 Here are some specific examples of Windows diagnostic data:
 
--	Type of hardware being used
--	Applications installed and usage details
--	Reliability information on device drivers
+- Type of hardware being used
+- Applications installed and usage details
+- Reliability information on device drivers
 
 ### What is NOT diagnostic data?
 
@@ -96,9 +96,9 @@ There was a version of a video driver that was crashing on some devices running 
 
 Windows diagnostic data also helps Microsoft better understand how customers use (or do not use) the operating system’s features and related services. The insights we gain from this data helps us prioritize our engineering effort to directly impact our customers’ experiences. Examples are:
 
--	**Start menu.** How do people change the Start menu layout? Do they pin other apps to it? Are there any apps that they frequently unpin? We use this dataset to adjust the default Start menu layout to better reflect people’s expectations when they turn on their device for the first time.
--	**Cortana.** We use diagnostic data to monitor the scalability of our cloud service, improving search performance.
--	**Application switching.**  Research and observations from earlier Windows versions showed that people rarely used Alt+Tab to switch between applications.  After discussing this with some users, we learned they loved the feature, saying that it would be highly productive, but they did not know about it previously. Based on this, we created the Task View button in Windows 10 to make this feature more discoverable. Later diagnostic data showed significantly higher usage of this feature.
+- **Start menu.** How do people change the Start menu layout? Do they pin other apps to it? Are there any apps that they frequently unpin? We use this dataset to adjust the default Start menu layout to better reflect people’s expectations when they turn on their device for the first time.
+- **Cortana.** We use diagnostic data to monitor the scalability of our cloud service, improving search performance.
+- **Application switching.**  Research and observations from earlier Windows versions showed that people rarely used Alt+Tab to switch between applications.  After discussing this with some users, we learned they loved the feature, saying that it would be highly productive, but they did not know about it previously. Based on this, we created the Task View button in Windows 10 to make this feature more discoverable. Later diagnostic data showed significantly higher usage of this feature.
 
 **These examples show how the use of diagnostic data enables Microsoft to build or enhance features which can help organizations increase employee productivity while lowering help desk calls.**
 

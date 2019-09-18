@@ -1,7 +1,7 @@
 ---
 title: Publishing Servers Results Pane
 description: Publishing Servers Results Pane
-author: eavena
+author: dansimp
 ms.assetid: ee0662e8-9623-4a7c-b6dc-657fa3f56161
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

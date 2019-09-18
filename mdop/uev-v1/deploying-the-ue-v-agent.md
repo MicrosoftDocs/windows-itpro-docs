@@ -1,7 +1,7 @@
 ---
 title: Deploying the UE-V Agent
 description: Deploying the UE-V Agent
-author: levinec
+author: dansimp
 ms.assetid: ec1c16c4-4be0-41ff-93bc-3e2b1afb5832
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

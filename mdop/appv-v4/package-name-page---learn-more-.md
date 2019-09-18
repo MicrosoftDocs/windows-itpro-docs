@@ -1,7 +1,7 @@
 ---
 title: Package Name Page (Learn More)
 description: Package Name Page (Learn More)
-author: eavena
+author: dansimp
 ms.assetid: ee75b8f0-bd9d-4460-a256-016ff97c2386
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

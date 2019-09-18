@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Deploy the AppLocker policy into production
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for the IT professional describes the tasks that should be completed before you deploy AppLocker application control settings.
 

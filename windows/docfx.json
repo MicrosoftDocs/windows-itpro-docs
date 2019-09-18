@@ -15,6 +15,7 @@
     ],
     "globalMetadata": {
         "ROBOTS": "INDEX, FOLLOW",
+        "audience": "ITPro",
         "breadcrumb_path": "/itpro/windows/breadcrumb/toc.json",
 		"_op_documentIdPathDepotMapping": {
 			"./": {

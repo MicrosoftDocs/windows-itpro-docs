@@ -1,7 +1,7 @@
 ---
 title: Performance Guidance for Application Virtualization 5.1
 description: Performance Guidance for Application Virtualization 5.1
-author: msfttracyp
+author: dansimp
 ms.assetid: 5f2643c7-5cf7-4a29-adb7-45bf9f5b0364
 ms.reviewer: 
 manager: dansimp

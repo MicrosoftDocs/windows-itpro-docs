@@ -1,7 +1,7 @@
 ---
 title: Parse Items Tab
 description: Parse Items Tab
-author: eavena
+author: dansimp
 ms.assetid: bdf3fe0d-404a-4745-af52-f415fa321564
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

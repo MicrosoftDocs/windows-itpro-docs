@@ -55,7 +55,7 @@ The following table lists the services and their associated URLs that your netwo
 | ---------------------------------------- | ----------------------- |
 | Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> *.blob.core.windows.net <br/> officecdn-microsoft-com.akamaized.net |
 | European Union                           | europe.x.cp.wd.microsoft.com |
-| United Kingdon                           | unitedkingdom.x.cp.wd.microsoft.com |
+| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com |
 | United States                            | unitedstates.x.cp.wd.microsoft.com |
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:

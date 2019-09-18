@@ -11,7 +11,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -48,7 +49,7 @@ When the database is populated, you can use the MDT simulation environment to si
 1.  On PC0001, log on as **CONTOSO\\MDT\_BA**.
 2.  Modify the C:\\MDT\\CustomSettings.ini file to look like the following:
 
-    ``` syntax
+    ``` 
     [Settings]
     Priority=CSettings, CRoles, RApplications, Default
     [Default]
@@ -113,7 +114,7 @@ When the database is populated, you can use the MDT simulation environment to si
 
 3.  Using an elevated Windows PowerShell prompt (run as Administrator), run the following commands. Press **Enter** after each command:
 
-    ``` syntax
+    ``` powershell
     Set-Location C:\MDT
     .\Gather.ps1
 

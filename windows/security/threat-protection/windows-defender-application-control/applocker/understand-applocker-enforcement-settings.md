@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Understand AppLocker enforcement settings
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic describes the AppLocker enforcement settings for rule collections.
 

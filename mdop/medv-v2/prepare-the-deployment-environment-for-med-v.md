@@ -1,7 +1,7 @@
 ---
 title: Prepare the Deployment Environment for MED-V
 description: Prepare the Deployment Environment for MED-V
-author: levinec
+author: dansimp
 ms.assetid: d15ea370-7fdb-4852-a1ba-730ec7568e3e
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -1,7 +1,7 @@
 # [Microsoft Store for Business](index.md)
 ## [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md)
 ## [Sign up and get started](sign-up-microsoft-store-for-business-overview.md)
-###[Microsoft Store for Business and Microsoft Store for Education overview](microsoft-store-for-business-overview.md)
+### [Microsoft Store for Business and Microsoft Store for Education overview](microsoft-store-for-business-overview.md)
 ### [Prerequisites for Microsoft Store for Business and Education](prerequisites-microsoft-store-for-business.md)
 ### [Sign up for Microsoft Store for Business or Microsoft Store for Education](sign-up-microsoft-store-for-business.md)
 ### [Roles and permissions in the Microsoft Store for Business and Education](roles-and-permissions-microsoft-store-for-business.md)

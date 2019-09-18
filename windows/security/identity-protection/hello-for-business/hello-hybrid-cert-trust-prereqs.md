@@ -74,6 +74,9 @@ The two directories used in hybrid deployments must be synchronized.  You need A
   
 Organizations using older directory synchronization technology, such as DirSync or Azure AD sync, need to upgrade to Azure AD Connect. In case the schema of your local AD DS was changed since the last directory synchronization, you may need to [refresh directory schema](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-installation-wizard#refresh-directory-schema).
  
+> [!NOTE]
+> Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Azure Active Directory and Active Directory.
+ 
 ### Section Review 
 > [!div class="checklist"]
 > * Azure Active Directory Connect directory synchronization

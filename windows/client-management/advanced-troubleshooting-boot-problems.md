@@ -14,8 +14,8 @@ ms.topic: troubleshooting
 
 # Advanced troubleshooting for Windows boot problems
 
->[!NOTE]
->This article is intended for use by support agents and IT professionals. If you're looking for more general information about recovery options, see [Recovery options in Windows 10](https://support.microsoft.com/help/12415).
+> [!NOTE]
+> This article is intended for use by support agents and IT professionals. If you're looking for more general information about recovery options, see [Recovery options in Windows 10](https://support.microsoft.com/help/12415).
 
 ## Summary
 
@@ -58,14 +58,14 @@ Here is a summary of the boot sequence, what will be seen on the display, and ty
 
 Each phase has a different approach to troubleshooting. This article provides troubleshooting techniques for problems that occur during the first three phases.
 
->[!NOTE]
->If the computer repeatedly boots to the recovery options, run the following command at a command prompt to break the cycle:
+> [!NOTE]
+> If the computer repeatedly boots to the recovery options, run the following command at a command prompt to break the cycle:
 >
->`Bcdedit /set {default} recoveryenabled no`
+> `Bcdedit /set {default} recoveryenabled no`
 >
->If the F8 options don't work, run the following command:
+> If the F8 options don't work, run the following command:
 >
->`Bcdedit /set {default} bootmenupolicy legacy`
+> `Bcdedit /set {default} bootmenupolicy legacy`
 
 
 ## BIOS phase
@@ -98,11 +98,10 @@ The Startup Repair tool automatically fixes many common problems. The tool also 
 
 To do this, follow these steps.
 
->[!NOTE]
->For additional methods to start WinRE, see [Entry points into WinRE](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference#span-identrypointsintowinrespanspan-identrypointsintowinrespanspan-identrypointsintowinrespanentry-points-into-winre).
+> [!NOTE]
+> For additional methods to start WinRE, see [Windows Recovery Environment (Windows RE)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference#span-identrypointsintowinrespanspan-identrypointsintowinrespanspan-identrypointsintowinrespanentry-points-into-winre).
 
-1. Start the system to the installation media for the installed version of Windows.  
-    **Note** For more information, see [Create installation media for Windows](https://support.microsoft.com/help/15088).
+1. Start the system to the installation media for the installed version of Windows. For more information, see [Create installation media for Windows](https://support.microsoft.com/help/15088).
 
 2. On the **Install Windows** screen, select **Next** > **Repair your computer**.
 
@@ -132,8 +131,8 @@ To repair the boot sector, run the following command:
 BOOTREC /FIXBOOT
 ```
 
->[!NOTE]
->Running **BOOTREC** together with **Fixmbr** overwrites only the master boot code. If the corruption in the MBR affects the partition table, running **Fixmbr** may not fix the problem.
+> [!NOTE]
+> Running **BOOTREC** together with **Fixmbr** overwrites only the master boot code. If the corruption in the MBR affects the partition table, running **Fixmbr** may not fix the problem.
 
 ### Method 3: Fix BCD errors
 
@@ -152,20 +151,25 @@ If you receive BCD-related errors, follow these steps:
     ```
 
 4. You might receive one of the following outputs:
-
-    - Scanning all disks for Windows installations. Please wait, since this may take a while...Successfully scanned Windows installations. Total identified Windows installations: 0
+    ```dos
+    Scanning all disks for Windows installations. Please wait, since this may take a while ...
+    Successfully scanned Windows installations. Total identified Windows installations: 0
     The operation completed successfully.
+    ```
 
-    - Scanning all disks for Windows installations. Please wait, since this may take a while... Successfully scanned Windows installations. Total identified Windows installations: 1
+    ```dos
+    Scanning all disks for Windows installations. Please wait, since this may take a while ...
+    Successfully scanned Windows installations. Total identified Windows installations: 1
     D:\Windows  
     Add installation to boot list? Yes/No/All:
+    ```
 
 If the output shows **windows installation: 0**, run the following commands:
 
 ```dos
 bcdedit /export c:\bcdbackup
 
-attrib c:\\boot\\bcd -h -r –s
+attrib c:\\boot\\bcd -r –s -h
 
 ren c:\\boot\\bcd bcd.old
 
@@ -174,39 +178,41 @@ bootrec /rebuildbcd
 
 After you run the command, you receive the following output:
 
-    Scanning all disks for Windows installations. Please wait, since this may take a while...Successfully scanned Windows installations. Total identified Windows installations: 1{D}:\Windows  
+```dos
+Scanning all disks for Windows installations. Please wait, since this may take a while ...
+Successfully scanned Windows installations. Total identified Windows installations: 1
+{D}:\Windows
 Add installation to boot list? Yes/No/All: Y
+```
 
-5. Try again to start the system.
+5. Try restarting the system.
 
 ### Method 4: Replace Bootmgr
 
-If methods 1 and 2 do not fix the problem, replace the Bootmgr file from drive C to the System Reserved partition. To do this, follow these steps:
+If methods 1, 2 and 3 do not fix the problem, replace the Bootmgr file from drive C to the System Reserved partition. To do this, follow these steps:
 
 1. At a command prompt, change the directory to the System Reserved partition.
 
 2. Run the **attrib** command to unhide the file:
     ```dos
-    attrib-s -h -r
+    attrib -r -s -h
     ```
 
 3. Run the same **attrib** command on the Windows (system drive):
     ```dos
-    attrib-s -h –r
+    attrib -r -s -h
     ```
 
 4. Rename the Bootmgr file as Bootmgr.old:
     ```dos
-    ren c:\\bootmgr bootmgr.old
+    ren c:\bootmgr bootmgr.old
     ```
 
-5. Start a text editor, such as Notepad.
+5. Navigate to the system drive.
 
-6. Navigate to the system drive.
+6. Copy the Bootmgr file, and then paste it to the System Reserved partition.
 
-7.  Copy the Bootmgr file, and then paste it to the System Reserved partition.
-
-8.  Restart the computer.
+7. Restart the computer.
 
 ### Method 5: Restore System Hive
 
@@ -267,16 +273,16 @@ For detailed instructions, see [How to perform a clean boot in Windows](https://
 If the computer starts in Disable Driver Signature mode, start the computer in Disable Driver Signature Enforcement mode, and then follow the steps that are documented in the following article to determine which drivers or files require driver signature enforcement:
 [Troubleshooting boot problem caused by missing driver signature (x64)](https://blogs.technet.microsoft.com/askcore/2012/04/15/troubleshooting-boot-issues-due-to-missing-driver-signature-x64/)
 
->[!NOTE]
->If the computer is a domain controller, try Directory Services Restore mode (DSRM).
+> [!NOTE]
+> If the computer is a domain controller, try Directory Services Restore mode (DSRM).
 >
->This method is an important step if you encounter Stop error "0xC00002E1" or "0xC00002E2"
+> This method is an important step if you encounter Stop error "0xC00002E1" or "0xC00002E2"
 
 
 **Examples**
 
->[!WARNING]
->Serious problems might occur if you modify the registry incorrectly by using Registry Editor or by using another method. These problems might require that you reinstall the operating system. Microsoft cannot guarantee that these
+> [!WARNING]
+> Serious problems might occur if you modify the registry incorrectly by using Registry Editor or by using another method. These problems might require that you reinstall the operating system. Microsoft cannot guarantee that these
 problems can be solved. Modify the registry at your own risk.
 
 *Error code INACCESSIBLE_BOOT_DEVICE (STOP 0x7B)*
@@ -307,11 +313,11 @@ For additional troubleshooting steps, see the following articles:
 
 To fix problems that occur after you install Windows updates, check for pending updates by using these steps:
 
-1. Open a Command Prompt winodw in WinRE.
+1. Open a Command Prompt window in WinRE.
 
 2. Run the command:
     ```dos
-    dism /image:C:\ /get-packages
+    DISM /image:C:\ /get-packages
     ```
 
 3. If there are any pending updates, uninstall them by running the following commands:
@@ -319,7 +325,7 @@ To fix problems that occur after you install Windows updates, check for pending 
     DISM /image:C:\ /remove-package /packagename: name of the package
     ```
     ```dos
-    Dism /Image:C:\ /Cleanup-Image /RevertPendingActions
+    DISM /Image:C:\ /Cleanup-Image /RevertPendingActions
     ```
 
 Try to start the computer.

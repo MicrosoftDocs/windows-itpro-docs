@@ -32,6 +32,8 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 [Domain joined provisioning in an On-premises Key Trust deployment](#domain-joined-provisioning-in-an-on-premises-key-trust-deployment)<br>
 [Domain joined provisioning in an On-premises Certificate Trust deployment](#domain-joined-provisioning-in-an-on-premises-certificate-trust-deployment)<br>
 
+> [!NOTE]
+> The flows in this section are not exhaustive for every possible scenario. For example, Federated Key Trust is also a supported configuration.
 
 
 ## Azure AD joined provisioning in a Managed environment

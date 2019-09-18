@@ -481,7 +481,7 @@ Adding a SUPL and a V2 UPL account to the same device. Values in italic must be 
 
 Adding a SUPL account to a device. Values in italic must be replaced with correct settings for the mobile operator network. A valid binary blob must be included for the root certificate data value.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">
     <SyncBody>
         <Add>

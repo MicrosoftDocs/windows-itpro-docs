@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-managealerts-abovefoldlink)
 
 Microsoft Defender ATP notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Security operations dashboard**, and you can access all alerts in the **Alerts queue**.
 
@@ -36,7 +36,7 @@ Selecting an alert in either of those places brings up the **Alert management pa
 You can create a new incident from the alert or link to an existing incident. 
 
 ## Assign alerts
-If an alert is no yet assigned, you can select **Assign to me** to assign the alert to yourself.
+If an alert is not yet assigned, you can select **Assign to me** to assign the alert to yourself.
 
 
 ## Suppress alerts

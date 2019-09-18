@@ -329,30 +329,13 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
-<!--StartEAS-->
-## <a href="" id="eas"></a>Cellular policies that can be set using Exchange Active Sync (EAS)  
-
-- [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
-  <!--EndEAS-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Cellular policies supported by IoT Core  
-
-- [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
-  <!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Cellular policies supported by Microsoft Surface Hub  
-
-- [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
-  <!--EndSurfaceHub-->
-

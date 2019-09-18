@@ -1,7 +1,7 @@
 ---
 title: Overview of MED-V
 description: Overview of MED-V
-author: levinec
+author: dansimp
 ms.assetid: 393daa9b-2d76-43e1-861a-9d8c00f68cf6
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

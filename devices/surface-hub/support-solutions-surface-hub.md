@@ -7,8 +7,8 @@ manager: dansimp
 keywords: Troubleshoot common problems, setup issues
 ms.prod: surface-hub
 ms.sitesec: library
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 10/24/2017
 ms.localizationpriority: medium

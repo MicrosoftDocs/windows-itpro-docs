@@ -26,7 +26,7 @@ ms.prod: w10
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-us/education/itdm/default.aspx" target="_blank">
+                                <a href="https://www.microsoft.com/education/itdm/default.aspx" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -56,7 +56,7 @@ ms.prod: w10
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Deployment Guidance</h3>
-                                                    <p>Dive right into the step-by-step process for the easiest deployment path to M365 EDU. We walk you through setting up cloud infrastructure, configuring and managing devices, and migrating on-premise servers for Sharepoint and Exchange to the cloud.</p>
+                                                    <p>Learn the easiest path to deploy Microsoft 365 Education through our step-by-step process. We walk you through cloud deployment, device management,apps set up and configuration, and how to find deployment assistance.</p>
                                                 </div>
                                             </div>
                                         </div>

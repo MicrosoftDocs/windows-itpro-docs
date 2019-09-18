@@ -1,7 +1,7 @@
 ---
 title: About DaRT 8.0
 description: About DaRT 8.0
-author: msfttracyp
+author: dansimp
 ms.assetid: ce91efd6-7d78-44cb-bb8f-1f43f768ebaa
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

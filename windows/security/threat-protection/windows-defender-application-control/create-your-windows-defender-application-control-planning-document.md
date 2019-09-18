@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Create your Windows Defender Application Control (WDAC) planning document
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This planning topic for the IT professional summarizes the information you need to research and include in your WDAC planning document.
 

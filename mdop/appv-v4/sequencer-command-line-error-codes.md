@@ -1,7 +1,7 @@
 ---
 title: Sequencer Command-Line Error Codes
 description: Sequencer Command-Line Error Codes
-author: eavena
+author: dansimp
 ms.assetid: 3d491314-4923-45fd-9839-c541c5e620bd
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

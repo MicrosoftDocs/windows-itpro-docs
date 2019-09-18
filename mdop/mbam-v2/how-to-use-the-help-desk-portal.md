@@ -1,7 +1,7 @@
 ---
 title: How to Use the Help Desk Portal
 description: How to Use the Help Desk Portal
-author: msfttracyp
+author: dansimp
 ms.assetid: c27f7737-10c8-4164-9de8-57987292c89c
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

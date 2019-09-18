@@ -4,10 +4,9 @@ description: Deployment rings in Windows 10 are similar to the deployment groups
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greglin
-ms.date: 07/11/2018
+ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.collection: M365-modern-desktop
@@ -20,9 +19,11 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+
+> [!NOTE]
+> We're in the process of updating this topic with more definitive guidance. In the meantime, see [this post](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Tactical-considerations-for-creating-Windows-deployment-rings/ba-p/746979) on the Windows 10 IT Pro blog for some great suggestions for a deployment ring structure.
 
 For Windows as a service, maintenance is ongoing and iterative. Deploying previous versions of Windows required organizations to build sets of users to roll out the changes in phases. Typically, these users ranged (in order) from the most adaptable and least risky to the least adaptable or riskiest. With Windows 10, a similar methodology exists, but construction of the groups is a little different. 
 
@@ -37,7 +38,6 @@ Table 1 provides an example of the deployment rings you might use.
 | Deployment ring | Servicing channel | Deferral for feature updates | Deferral for quality updates | Example |
 | --- | --- | --- | --- | --- |
 | Preview | Windows Insider Program | None | None | A few machines to evaluate early builds prior to their arrival to the semi-annual channel |
-| Targeted | Semi-annual channel (Targeted) | None | None | Select devices across various teams used to evaluate the major release prior to broad deployment |
 | Broad | Semi-annual channel | 120 days | 7-14 days | Broadly deployed to most of the organization and monitored for feedback</br>Pause updates if there are critical issues |
 | Critical | Semi-annual channel | 180 days | 30 days | Devices that are critical and will only receive updates once they've been vetted for a period of time by the majority of the organization |
 
@@ -69,6 +69,6 @@ As Table 1 shows, each combination of servicing channel and deployment group is 
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Manage software updates in Intune](https://docs.microsoft.com/intune/windows-update-for-business-configure)
-- [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
+- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Manage device restarts after updates](waas-restart.md)
 

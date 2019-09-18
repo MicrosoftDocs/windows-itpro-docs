@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Working with AppLocker policies
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals provides links to procedural topics about creating, maintaining, and testing AppLocker policies.
 
@@ -30,7 +30,7 @@ This topic for IT professionals provides links to procedural topics about creati
 | Topic | Description |
 | - | - |
 | [Configure the Application Identity service](configure-the-application-identity-service.md) | This topic for IT professionals shows how to configure the Application Identity service to start automatically or manually.| 
-| [Configure an AppLocker policy for audit only](configure-an-applocker-policy-for-audit-only.md) | This topic for IT professionals describes how to set AppLocker policies to  **Audit only ** within your IT environment by using AppLocker.| 
+| [Configure an AppLocker policy for audit only](configure-an-applocker-policy-for-audit-only.md) | This topic for IT professionals describes how to set AppLocker policies to  **Audit only** within your IT environment by using AppLocker.| 
 | [Configure an AppLocker policy for enforce rules](configure-an-applocker-policy-for-enforce-rules.md) | This topic for IT professionals describes the steps to enable the AppLocker policy enforcement setting.| 
 | [Display a custom URL message when users try to run a blocked app](display-a-custom-url-message-when-users-try-to-run-a-blocked-application.md) | This topic for IT professionals describes the steps for displaying a customized message to users when an AppLocker policy denies access to an app.| 
 | [Export an AppLocker policy from a GPO](export-an-applocker-policy-from-a-gpo.md) | This topic for IT professionals describes the steps to export an AppLocker policy from a Group Policy Object (GPO) so that it can be modified.| 

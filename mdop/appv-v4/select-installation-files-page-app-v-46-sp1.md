@@ -1,7 +1,7 @@
 ---
 title: Select Installation Files Page
 description: Select Installation Files Page
-author: eavena
+author: dansimp
 ms.assetid: 4c8cd49e-ba39-4918-9863-5b3c315d14a5
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

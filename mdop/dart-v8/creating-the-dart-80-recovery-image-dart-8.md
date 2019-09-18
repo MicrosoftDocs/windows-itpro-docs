@@ -1,7 +1,7 @@
 ---
 title: Creating the DaRT 8.0 Recovery Image
 description: Creating the DaRT 8.0 Recovery Image
-author: msfttracyp
+author: dansimp
 ms.assetid: 39001b8e-86c0-45ef-8f34-2d6199f9922d
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/21/2017
 ---
 

@@ -11,7 +11,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -175,11 +176,13 @@ When you import drivers to the MDT driver repository, MDT creates a single insta
         -   Surface Pro 3
 
 The preceding folder names are selected because they match the actual make and model values that MDT reads from the machines during deployment. You can find out the model values for your machines via the following command in Windows PowerShell:
-``` syntax
+
+``` powershell
 Get-WmiObject -Class:Win32_ComputerSystem
 ```
 Or, you can use this command in a normal command prompt:
-``` syntax
+
+``` 
 wmic csproduct get name
 ```
 
@@ -312,7 +315,7 @@ In this section, you will learn how to configure the MDT Build Lab deployment sh
 2. Right-click the **MDT Production** deployment share and select **Properties**.
 3. Select the **Rules** tab and modify using the following information:
 
-   ``` syntax
+   ``` 
    [Settings]
    Priority=Default
    [Default]
@@ -349,7 +352,7 @@ In this section, you will learn how to configure the MDT Build Lab deployment sh
    ```
 4. Click **Edit Bootstrap.ini** and modify using the following information:
 
-   ``` syntax
+   ``` 
    [Settings]
    Priority=Default
    [Default]
@@ -393,7 +396,7 @@ The rules for the MDT Production deployment share are somewhat different from th
 ### The Bootstrap.ini file
 
 This is the MDT Production Bootstrap.ini without the user credentials (except domain information):
-``` syntax
+``` 
 [Settings]
 Priority=Default
 [Default]
@@ -405,7 +408,7 @@ SkipBDDWelcome=YES
 ### The CustomSettings.ini file
 
 This is the CustomSettings.ini file with the new join domain information:
-``` syntax
+``` 
 [Settings]
 Priority=Default
 [Default]

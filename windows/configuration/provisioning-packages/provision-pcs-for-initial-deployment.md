@@ -5,7 +5,7 @@ ms.assetid: 66D14E97-E116-4218-8924-E2A326C9367E
 ms.reviewer: 
 manager: dansimp
 keywords: ["runtime provisioning", "provisioning package"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: dansimp

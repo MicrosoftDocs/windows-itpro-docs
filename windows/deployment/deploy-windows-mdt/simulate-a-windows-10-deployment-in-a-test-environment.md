@@ -11,7 +11,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -39,7 +40,7 @@ For the purposes of this topic, you already will have either downloaded and inst
    Figure 6. The C:\\MDT folder with the files added for the simulation environment.
 
 10. Using an elevated Windows PowerShell prompt (run as Administrator), run the following commands. Press Enter after each command:
-    ``` syntax
+    ``` powershell
     Set-Location C:\MDT
     .\Gather.ps1
     ```

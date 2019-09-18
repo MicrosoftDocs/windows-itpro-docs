@@ -1,7 +1,7 @@
 ---
 title: Evaluating MBAM 2.0
 description: Evaluating MBAM 2.0
-author: msfttracyp
+author: dansimp
 ms.assetid: bfc77eec-0fd7-4fec-9c78-6870afa87152
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

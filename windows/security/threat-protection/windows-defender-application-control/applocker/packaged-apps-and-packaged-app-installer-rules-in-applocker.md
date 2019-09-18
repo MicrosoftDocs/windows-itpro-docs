@@ -20,8 +20,8 @@ ms.date: 10/13/2017
 # Packaged apps and packaged app installer rules in AppLocker
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic explains the AppLocker rule collection for packaged app installers and packaged apps.
 

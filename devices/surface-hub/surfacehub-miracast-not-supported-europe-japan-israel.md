@@ -2,8 +2,6 @@
 title: Surface Hub Miracast channels 149-165 not supported in Europe, Japan, Israel
 description: Surface Hub Miracast channels 149-165 not supported in Europe, Japan, Israel
 ms.assetid: 8af3a832-0537-403b-823b-12eaa7a1af1f
-ms.reviewer: 
-manager: 
 keywords:
 ms.prod: surface-hub
 ms.sitesec: library

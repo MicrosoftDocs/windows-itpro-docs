@@ -163,6 +163,6 @@ Because the tool is open-source, the source code is readily available for examin
 
 - [Web Application Compatibility Lab Kit](https://technet.microsoft.com/microsoft-edge/mt612809.aspx)
 
-- [Microsoft Services Support](https://www.microsoft.com/en-us/microsoftservices/support.aspx)
+- [Microsoft Services Support](https://www.microsoft.com/microsoftservices/support.aspx)
 
 - [Find a Microsoft partner on Pinpoint](https://partnercenter.microsoft.com/pcv/search)
