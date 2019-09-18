@@ -10,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article
@@ -24,6 +25,7 @@ ms.topic: article
 -   Windows Server 2012 R2
 -   Windows Server 2012
 -   Windows Server 2016
+-   Windows Server 2019
 
 **Looking for retail activation?**
 -   [Get Help Activating Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=618644)
