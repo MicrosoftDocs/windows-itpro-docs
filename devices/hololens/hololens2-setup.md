@@ -16,20 +16,23 @@ appliesto:
 
 # Get your HoloLens 2 ready to use
 
-Follow along to set up a HoloLens 2 for the first time.
+The procedures below will help you set up a HoloLens 2 for the first time.
 
 ## Charge your HoloLens
 
-To charge your HoloLens, connect the power supply to the charging port by using the included USB-C cable. Then plug the power supply into a power outlet. When the device is charging, the battery indicator will light up in a wave pattern.
+Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet. 
 
-When your HoloLens is on, the battery indicator shows the battery level in increments. When only one of the five lights is on, the battery level is below 20 percent. If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
+    -When the device is charging, the battery indicator lights up in a wave pattern.
+    -When your HoloLens is on, the battery indicator displays the battery level in increments. 
+    -When only one of the five lights is on, the battery level is below 20 percent. 
+    -If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
 
 > [!TIP]
 > To get an estimate of your current battery level, say "Hey Cortana, how much battery do I have left?"
 
 ## Adjust fit
 
-Place the HoloLens 2 on your head. If you wear glasses, leave them on.  The brow pad should sit comfortably on your forehead and the back band should sit in the middle-back of your head.
+Place the HoloLens 2 on your head. If you wear eyeglasses, leave them on.  The brow pad should sit comfortably on your forehead and the back band should sit in the middle-back of your head.
 
 If necessary, extend the headband by turning the adjustment wheel, and then loosen the overhead strap.
 
@@ -37,7 +40,7 @@ If necessary, extend the headband by turning the adjustment wheel, and then loos
 
 ### Attach and detach the overhead strap
 
-The overhead strap isn't required, but it can make wearing HoloLens 2 more comfortable over longer periods of time.
+The overhead strap isn't required, but it can make wearing HoloLens 2 more comfortable during long periods of use.
 
 To detach the front of the overhead strap, unhook the strap and slide it through the retractable loop on the brow pad. To reattach it, pull out the loop and slide the strap back through.
 
@@ -47,7 +50,7 @@ To detach the back of the overhead strap, press the button below each connection
 
 ## Turn on the HoloLens 2
 
-To turn on your HoloLens 2, press the power button.  The LED lights below the power button show the battery level.
+To turn on your HoloLens 2, press the Power button.  The LED lights below the Power button display the battery level.
 
 ### Power button actions for different power transitions
 
@@ -61,18 +64,18 @@ To turn on your HoloLens 2, press the power button.  The LED lights below the po
 
 ## HoloLens indicator lights
 
-Not sure what the indicator lights on your HoloLens mean? Here's some help.
+Not sure what the indicator lights on your HoloLens mean? Here's some help!
 
 ### Lights that indicate the state of the device
 
 |When you do this | And then the lights do this | It means |
 | - | - | - |
-|You press the power button. |All five lights turn on, then change to indicate the battery level. After four seconds, a sound plays. | HoloLens is starting up. |
-|You press the power button. |All five lights turn on, then change to indicate the battery level. A sound immediately plays. | HoloLens is on, awake, and ready to use. |
-|You press and hold the power button for five seconds or longer. |All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |HoloLens is shutting down. |
-|You press and hold the power button for less than five seconds. |All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |HoloLens is entering sleep. |
-|You press the power button. |One light flashes five times, then turns off. |The HoloLens battery is critically low. Charge your HoloLens. |
-|You press the power button. |All five lights flash five times, then turn off. |HoloLens cannot start correctly and is in an error state. |
+|You press the Power button. |All five lights turn on, then change to indicate the battery level. After four seconds, a sound plays. | HoloLens is starting up. |
+|You press the Power button. |All five lights turn on, then change to indicate the battery level. A sound immediately plays. | HoloLens is on, awake, and ready to use. |
+|You press and hold the Power button for five seconds or longer. |All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |HoloLens is shutting down. |
+|You press and hold the Power button for less than five seconds. |All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |HoloLens is entering sleep. |
+|You press the Power button. |One light flashes five times, then turns off. |The HoloLens battery is critically low. Charge your HoloLens. |
+|You press the Power button. |All five lights flash five times, then turn off. |HoloLens cannot start correctly and is in an error state. |
 
 ### Lights that indicate the battery level
 
@@ -88,7 +91,7 @@ Not sure what the indicator lights on your HoloLens mean? Here's some help.
 
 ### Use HoloLens in safe surroundings
 
-Use your HoloLens in a safe space that’s free of obstructions and tripping hazards. Don’t use it when you need a clear field of view and your full attention, such as while you’re operating a vehicle or doing other potentially hazardous activities.
+Use your HoloLens in a safe space, free of obstructions and tripping hazards. Don’t use it when you need a clear field of view or can't commit your full attention, such as while you’re operating a vehicle or doing other potentially hazardous activities.
 
 ### Stay comfortable
 

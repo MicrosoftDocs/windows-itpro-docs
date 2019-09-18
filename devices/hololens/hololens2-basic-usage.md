@@ -16,7 +16,7 @@ appliesto:
 
 # Getting around HoloLens 2
 
-Ready to step into the world of holograms?
+Ready to explore the world of holograms?
 
 This guide provides an intro to:
 
@@ -35,18 +35,18 @@ Getting around HoloLens is a lot like using your smart phone. You can use your h
 Once you know these basic interactions, getting around on HoloLens will be a snap.
 
 > [!TIP]
-> If you have a HoloLens near you right now, the **Tips** app gives you a hands-on tutorials for hand interactions on HoloLens.  
+> If you have a HoloLens near you right now, the **Tips** app provides literal hands-on tutorials for hand interactions on HoloLens.  
 > Use the start gesture to go to **Start** or say "Go to Start" and select **Tips**.
 
 ## The hand-tracking frame
 
-HoloLens has sensors that can see a few feet to either side of you. When you use your hands, you'll need to keep them inside that frame, or HoloLens won't see them. As you move around, the frame moves with you.  
+HoloLens has sensors that can see a few feet to either side of you. When you use your hands, you'll need to keep them inside that frame, or HoloLens won't see them. However, the frame moves with you as you move around.  
 
 ![Image that shows the HoloLens hand-tracking frame](./images/hololens-2-gesture-frame.png)
 
 ## Touch holograms near you
 
-When a hologram is near you, bring your hand close to it and you should see a white ring appear on the tip of your index finger.  This is the **touch cursor** which helps you touch and interact with holograms with precision. To **select** something, simply **tap** it with the touch cursor. **Scroll** content by **swiping** on the surface of the content with your finger, just like on a touch screen.
+When a hologram is near you, bring your hand close to it and a white ring should appear on the tip of your index finger.  This is the **touch cursor** which helps you touch and interact with holograms with precision. To **select** something, simply **tap** it with the touch cursor. **Scroll** content by **swiping** on the surface of the content with your finger, just like you're using a touch screen.
 
 To **grab** a hologram near you, pinch your **thumb** and **index finger** together on the hologram and hold. To let go, release your fingers. Use this **grab gesture** to move, resize, and rotate 3D objects and app windows in mixed reality home.
 
@@ -54,7 +54,7 @@ To bring up a **context menu**, like the ones you'll find on an app tile in the 
 
 ## Use hand ray for holograms out of reach
 
-When there are no holograms near your hands, the **touch cursor** will be hide automatically and **hand rays** will appear from the palm of your hands. Hand rays allow you to interact with holograms from a distance.
+When there are no holograms near your hands, the **touch cursor** will hide automatically and **hand rays** will appear from the palm of your hands. Hand rays allow you to interact with holograms from a distance.
 
 > [!TIP]
 > If you find hand rays distracting, you can hide them by saying “Hide hand rays”. To make them reappear, say "Show hand rays."
@@ -63,7 +63,7 @@ When there are no holograms near your hands, the **touch cursor** will be hide a
 
 To select something using **hand ray**, follow these steps:
 
-1. Use a had ray from your palm to target the item. You don't have to raise your whole arm—keep your elbow low and comfortable.
+1. Use a hand ray from your palm to target the item. You don't need to raise your entire arm, you can keep your elbow low and comfortable.
 1. Point your index finger straight up toward the ceiling.
 1. To perform the **air tap** gesture, pinch your thumb and index finger together and then quickly release them.
 
@@ -81,13 +81,14 @@ Use **air tap and hold** to perform the following actions with hand ray:
 
 ## Start gesture
 
-The Start gesture opens the **Start menu**.  To perform the Start gesture, hold out your hand with your palm facing you. You’ll see a **Start icon** appear over your inner wrist. Tap this icon using your other hand.  The Start menu will open **where you’re looking**.
+The Start gesture opens the **Start menu**.  To perform the Start gesture, hold out your hand with your palm facing you. You’ll see a **Start icon** appear over your inner wrist. Tap this icon using your other hand.  The Start menu will open **where you’re looking**. 
 
 > [!TIP]
 >
 > - You can use the Start gesture as long as your hands are inside the hand-tracking frame.  You do not need to be looking down at the Start icon. Keep your elbow low and comfortable, and look in the direction where you want the Start menu to open.
 > - If the Start menu didn't open at the position you want, simply move your head around to reposition it.
 > - If you have trouble reading the smaller text on the Start menu, step closer to it after it opens.
+> - If your hand is slightly off to the side of the frame, you may still be able to view the Start menu by tapping your inner wrist, even if you don't see the icon.
 
 ![Image that shows the Start icon and the Start gesture](./images/hololens-2-start-gesture.png)
 
@@ -95,7 +96,7 @@ To **close** the Start menu, do the Start gesture when the Start menu is open.  
 
 ### One-handed Start gesture
 
-You can also perform the Start gesture with one hand. To do this, hold out your hand with your palm facing you and look at the **Start icon** on your inner wrist. **While keeping your eye on the icon**, pinch your thumb and index finger together. 
+You can also perform the Start gesture with only one hand. To do this, hold out your hand with your palm facing you and look at the **Start icon** on your inner wrist. **While keeping your eye on the icon**, pinch your thumb and index finger together.
 
 > [!IMPORTANT]
 > For the one-handed Start gesture to work, your eyes must be calibrated on the device so that eye tracking functions correctly. If you do not see orbiting dots around the Start icon when you look at it, your eyes are not calibrated on the device.
@@ -104,19 +105,19 @@ You can also perform the Start gesture with one hand. To do this, hold out your 
 
 ## Start menu, mixed reality home, and apps
 
-Now it's time to put all these hand interactions to the test!
+Ready to put all these hand interactions to the test?!
 
-You'll find your installed apps in the [Start menu](holographic-home.md) and there are more apps for HoloLens in the [Microsoft Store](holographic-store-apps.md).
+You'll find your installed apps in the [Start menu](holographic-home.md) and you can find additional apps for HoloLens in the [Microsoft Store](holographic-store-apps.md).
 
-Just like Windows PC always starts its experience at the desktop, HoloLens always starts in **mixed reality home** when it's turned on.  Using the Start menu you can open and place app windows, app launchers, and 3D content in mixed reality home, and their placement in your physical space will be remembered.
+Just as Windows PC always starts its experience at the desktop, HoloLens always starts in **mixed reality home** when turned on.  Using the Start menu, you can open and place app windows, as well as app launchers and 3D content in mixed reality home. Their placements in your physical space will be remembered by HoloLens.
 
-Open the **Start menu**, then select the **Settings** app tile. An app window will be placed before you.
+Open the **Start menu**, then select the **Settings** app tile. An app window will open in front of you.
 
 Settings is an example of a HoloLens app that uses a 2D **app window**.  It's very similar to a Windows application on PC.
 
-Now open the **Start menu** again and select the **Tips** app tile. A 3D **app launcher** for the app will be placed before you. To open the app you need to select the **play** button on the launcher.
+Now you can open the **Start menu** again and select the **Tips** app tile. A 3D **app launcher** for the app will appear in front of you. To open the app, you need to select the **play** button on the launcher.
 
-Tips is an example of an **immersive app**. An immersive app takes you away from mixed reality home when it runs and becomes the only app you see.  To exit it, you need to bring up the Start menu and select the **mixed reality home** button at the bottom of the Start menu.
+Tips is an example of an **immersive app**. An immersive app takes you away from mixed reality home when it runs and becomes the only app you see.  To exit, you need to bring up the Start menu and select the **mixed reality home** button at the bottom.
 
 [Go here to learn more](holographic-home.md) about Start menu and mixed reality home, including info on how to use and manage apps on HoloLens 2.
 
@@ -128,15 +129,15 @@ In mixed reality home you can move, resize, and rotate app windows and 3D object
 
 Move a hologram or app by following these steps:
 
-1. Grab the hologram by pinching your index finger and thumb on the hologram or face your hand down and then close your fist over it.  Grab a 3D hologram anywhere inside its blue bounding box.  For an app window grab its title bar.
-1. Without letting go, move your hand to position the hologram. When moving an app window this way, the app window will automatically turn to face you as it moves, making it easier to use at its new position.  
+1. Grab the hologram by pinching your index finger and thumb on the hologram or face your hand down and then close your fist over it.  Grab a 3D hologram anywhere inside its blue bounding box.  For an app window, grab its title bar.
+1. Without letting go, move your hand to position the hologram. When moving an app window this way, the app window automatically turns to face you as it moves, making it easier to use at its new position.  
 1. Release your fingers to place it.
 
 ### Resizing holograms
 
 Grab and use the **resize handles** that appear on the corners of 3D holograms and app windows to resize them.
 
-For an app window, when resized this way the window content will correspondingly increase in size and become easier to read.
+For an app window, when resized this way the window content correspondingly increases in size and becomes easier to read.
 
 If you want to resize an app window so that **more content** appears in the window, use the resize handles located on the sides and bottom edges of the app window.
 
@@ -150,12 +151,12 @@ For app windows, moving an app window will cause it to automatically rotate and 
 
 You can also grab a 3D hologram or app window with **both hands** (or hand ray) at once and then:
 
-- Move your hands closer together or apart to resize the hologram.
+- Move your hands closer together or further apart to resize the hologram.
 - Move your hands closer and further away from your body to rotate the hologram.
 
 ### Follow me, stop following
 
-Holograms and app windows stay where you placed them in the world.  That's not always convenient if you need to move around and you want an application to stay visible. To ask an app to start following you or stop following you, select **Follow me** in the top right corner of the app window (next to the **Close** button).  An app window that is following you will also follow you into, an out of, an immersive app.
+Holograms and app windows stay where you placed them in the world.  That's not always convenient if you need to move around and you want an application to stay visible. To ask an app to start or stop following you, select **Follow me** in the top right corner of the app window (next to the **Close** button).  An app window that is following you will also follow you into, an out of, an immersive app.
 
 ## Use HoloLens with your voice
 
@@ -171,8 +172,10 @@ You can use your voice to do most of the same things you do with hands on HoloLe
 
 ## Next Steps
 
-Congratulations! you're ready to use HoloLens 2.
+Congratulations! You're ready to use HoloLens 2!
 
-Now you can configure your HoloLens 2 to meet your specific needs.
+Now you can configure your HoloLens 2 to meet your specific needs.  Other things you may want to try include:
 
-[Connect bluetooth devices like mouse and keyboard](hololens-connect-devices.md)
+- [Connecting bluetooth devices like a mouse and keyboard](hololens-connect-devices.md)
+- [Installing apps from the store](holographic-store-apps.md)
+- [Sharing your HoloLens with other people](hololens-multiple-users.md)

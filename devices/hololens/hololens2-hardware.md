@@ -22,18 +22,18 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 
 ## HoloLens components
 
-- **Visor**. Contains the HoloLens sensors and displays. You can rotate the visor up while you are wearing the HoloLens.
-- **Headband**. To put the HoloLens on, use the adjustment wheel to expand the headband. With the HoloLens in place, tighten the adjustment wheel until the headband is comfortable.
-- **Brightness buttons**. When you're wearing the HoloLens, the brightness buttons are on the left side of the device.
-- **Volume buttons**. When you're wearing the HoloLens, the volume buttons are on the right side of the device.
+- **Visor**. Contains the HoloLens sensors and displays. You can rotate the visor up while wearing the HoloLens.
+- **Headband**. To put the HoloLens on, use the adjustment wheel to expand the headband. With the HoloLens in place, tighten the adjustment wheel by turning to the right, until the headband is comfortable.
+- **Brightness buttons**. When wearing the HoloLens, the brightness buttons are on the left side of the device.
+- **Volume buttons**. When wearing the HoloLens, the volume buttons are on the right side of the device.
 
 ## In the box
 
-- **Brow pad**. You can remove and replace the brow pad as needed.
-- **Overhead strap**. When you're wearing the HoloLens while you move around, use the overhead strap to help keep the device in place. Additionally, if you're wearing the HoloLens for extended periods, using the overhead strap may make the device more comfortable to wear.
-- **USB-C cable**. Use the USB-C cable to connect your HoloLens to the power supply for charging, or use it to connect your HoloLens to your computer.
+- **Brow pad**. You can remove and replace the brow pad, as needed.
+- **Overhead strap**. When you're wearing the HoloLens while moving around, use the overhead strap to help keep the device in place. When wearing the HoloLens for extended periods, the overhead strap may make the device more comfortable to wear.
+- **USB-C cable**. Use the USB-C cable to connect your HoloLens to the power supply for charging, or to connect your HoloLens to your computer.
 - **Power supply**. Plugs into a power outlet.
-- **Microfiber cloth**. Use the cloth to clean your HoloLens visor.
+- **Microfiber cloth**. Use to clean your HoloLens visor.
 
 ## Device specifications
 
@@ -79,7 +79,7 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 
 |   |   |
 | - | - |
-| Sizing | Single size with adjustable band.  Fits over glasses |
+| Sizing | Single size with adjustable band.  Fits over eyeglasses |
 | Weight | 566 grams |
 
 ## Device capabilities
@@ -116,19 +116,19 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 
 ### Safety
 
-HoloLens 2 has been tested and found to conform to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
+HoloLens 2 has been tested and conforms to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
 
 ## Care and cleaning
 
 Handle your HoloLens carefully. Use the headband to lift and carry the HoloLens 2.
 
-As you would for glasses or protective eye-wear, try to keep the HoloLens visor free of dust and fingerprints. When possible, avoid touching the visor. Repeated cleaning could damage the visor, so try to keep your device clean.
+As you would for eyeglasses or protective eye-wear, try to keep the HoloLens visor free of dust and fingerprints. When possible, avoid touching the visor. Repeated cleaning could damage the visor, so keep your device clean!
 
 Don't use any cleaners or solvents on your HoloLens, and don't submerge it in water or apply water directly to it.
 
 To clean the visor, remove any dust by using a camel or goat hair lens brush or a bulb-style lens blower. Lightly moisten the microfiber cloth with a small amount of distilled water, then use it to wipe the visor gently in a circular motion.
 
-Clean the rest of the device, including the headband and device arms, with a lint-free cloth moistened with mild soap and water. Let your HoloLens dry completely before using it again.
+Clean the rest of the device, including the headband and device arms, with a lint-free microfiber cloth moistened with mild soap and water. Let your HoloLens dry completely before reuse.
 
 ![Image that shows how to clean the visor](images/hololens-cleaning-visor.png)
 

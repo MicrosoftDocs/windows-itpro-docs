@@ -16,7 +16,7 @@ appliesto:
 
 # Set up your HoloLens 2
 
-The first time you turn on your HoloLens, you'll be guided through setting up your device, signing in with a user account, and calibrating HoloLens to your eyes.  This section walks through the HoloLens 2 first start and setup experience.
+The first time you turn on your HoloLens, you'll be guided through setting up your device, signing in with a user account, and calibrating the HoloLens to your eyes.  This section walks through the HoloLens 2 initial setup experience.
 
 In the next section, you'll learn how to work with HoloLens and interact with holograms. To skip ahead to that article, see [Get started with HoloLens 2](hololens2-basic-usage.md).
 
@@ -24,7 +24,7 @@ In the next section, you'll learn how to work with HoloLens and interact with ho
 
 Before you get started, make sure you have the following available:
 
-**A network connection**. You'll need to connect your HoloLens to a network to set it up. With HoloLens 2, you can connect with Wi-Fi or by using ethernet (you'll need a USB-C-to-Ethernet adapter). The first that time you connect, you'll need an open or password-protected network that doesn't require navigating to a website or using certificates to connect. [Learn more about the websites that HoloLens uses](hololens-offline.md).
+**A network connection**. You'll need to connect your HoloLens to a network to set it up. With HoloLens 2, you can connect with Wi-Fi or by using ethernet (you'll need a USB-C-to-Ethernet adapter). The first time you connect, you'll need an open or password-protected network that doesn't require navigating to a website or using certificates to connect. [Learn more about the websites that HoloLens uses](hololens-offline.md).
 
 **A Microsoft account**. You'll also need to sign in to HoloLens with a Microsoft account (or with your work account, if your organization owns the device). If you don't have a Microsoft account, go to [account.microsoft.com](http://account.microsoft.com) and set one up for free.
 
@@ -46,9 +46,9 @@ HoloLens 2 will walk you through the following steps:
 1. Select your region.
     ![Select region](images/05-region.png)
 
-1. Calibrate HoloLens to your eyes.  You can choose to skip calibration, in which case you'll be prompted next time you log in.
+1. Calibrate HoloLens to your eyes.  If you choose to skip calibration, you'll be prompted the next time you log in.
 
-    To calibrate, you'll look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room. HoloLens uses this process to learn about your eye position so that ic can better render your holographic world. After calibration, holograms will appear correctly even as the visor shifts on your head.
+    To calibrate, you'll look at a set of targets (referred to as gems). It's fine if you blink or close your eyes during calibration, but try not to stare at other objects in the room or physical space. HoloLens uses this process to learn about your eye position so that it can better render your holographic world. After calibration, holograms will appear correctly even as the visor shifts on your head.
 
     Calibration information is stored locally on the device and is not associated with any account information. For more information, see [Calibration data and security](hololens-calibration.md#calibration-data-and-security).
 
@@ -60,7 +60,7 @@ HoloLens 2 will walk you through the following steps:
     ![Connect to Wi-Fi](images/11-network.png)
 
 1. Sign in to your user account. You'll choose between **My work or school owns it** and **I own it**.
-    - When you choose **My work or school owns it**, you sign in with an Azure AD account. If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available. In that case, you have to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#enroll-through-settings-app).
+    - When you choose **My work or school owns it**, you sign in with an Azure AD account. If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available. In that case, you need to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#enroll-through-settings-app).
         1. Enter your organizational account information.
         1. Accept the privacy statement and the end user license agreement.
         1. Sign in by using your Azure AD credentials. This may redirect to your organization's sign-in page.
@@ -81,7 +81,7 @@ HoloLens 2 will walk you through the following steps:
      ![Learn how to use the start gesture, image 1](images/26-01-startmenu-learning.png)
      ![Learn how to use the start gesture, image 2](images/26-02-startmenu-learning.png)
 
-Congratulations!  Setup is complete and you can begin using HoloLens.
+Congratulations!  Setup is complete and you're ready to use HoloLens!
 
 ## Next steps
 
