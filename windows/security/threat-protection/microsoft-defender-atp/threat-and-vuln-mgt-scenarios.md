@@ -42,8 +42,7 @@ Ensure that your machines:
 >- RS5 customers | KB 4516077
 >- RS4 customers | KB 4516045
 >- RS3 customers | KB 4516071
->
->Downloading and deploying the above-mentioned security updates will be mandatory starting Patch Tuesday, October 8, 2019.
+><P>Downloading and deploying the above-mentioned security updates will be mandatory starting Patch Tuesday, October 8, 2019.
 
 ## Reduce your threat and vulnerability exposure
 Threat & Vulnerability Management introduces a new exposure score metric, which visually represents how exposed your machines are to imminent threats.
