@@ -53,7 +53,7 @@ Multiple users can share a HoloLens 2 device, without a need for each person to 
 
 ### Manually starting the calibration process
 
-1. Use the start gesture to open the [**Start** menu](hololens2-basic-usage.md#navigate-windows-holographic).
+1. Use the start gesture to open the [**Start** menu](hololens2-basic-usage.md#start-gesture).
 1. If the Settings app isn't pinned to **Start**, select **All Apps**.
 1. Select **Settings**, and then select **System** > **Calibration** > **Eye Calibration** > **Run eye calibration**.
 

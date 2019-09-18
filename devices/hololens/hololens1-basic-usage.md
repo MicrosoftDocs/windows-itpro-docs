@@ -77,14 +77,14 @@ Open the **Start** menu and select an app!
 
 Using apps on HoloLens is a little different from on a PC: Some apps use a 2D view and look like other Windows applications. Other apps (immersive apps) use a 3D view and when you launch them, they become the only app you see.
 
-When you place an app window or app launcher, it will stay put until you remove it. You can move or resize these holograms in your [mixed reality home](holographic-home.md#Open-apps-from-Start-menu) at any time.
+When you place an app window or app launcher, it will stay put until you remove it. You can move or resize these holograms in your mixed reality home at any time.
 
 ## Move, resize, and rotate apps
 
 Moving and resizing apps on HoloLens works a bit differently than it does on a PC. Instead of dragging the app, you'll use your gaze, along with a [gesture](https://support.microsoft.com/help/12644/hololens-use-gestures) or the [clicker](hololens-clicker.md). You can also rotate an app window in 3D space.
 
 > [!TIP]
-> Rearrange apps using your voice&mdash;gaze at an app and say "Face me," "Bigger," or "Smaller." Or have Cortana move an app for you: say "Hey Cortana, move &lt;*app name*&gt; here."
+> Rearrange apps using your voice - gaze at an app and say "Face me," "Bigger," or "Smaller." Or have Cortana move an app for you: say "Hey Cortana, move \**app name\** here."
 
 ### Move an app
 
