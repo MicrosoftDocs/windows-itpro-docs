@@ -65,7 +65,7 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 
  ![Surface Dock Firmware Update installation process](images/regeditDock.png)
 
-3. Verify the new registry key values match the updated registry key values listed below in the [Versions reference](#Surface-Dock-Firmware-Update-versions-reference). If the values match, the firmware was updated successfully.
+3. Verify the new registry key values match the updated registry key values listed in the Versions reference at the end of this document. If the values match, the firmware was updated successfully.
 
 4. If unable to verify, review Event logging and Troubleshooting tips in the next section.
 
@@ -110,9 +110,6 @@ This version, contained in Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 
 - Component10CurrentFwVersion updated to **4ac3970**.
 - Component20CurrentFwVersion updated to **4a1d570**.
-
-> [!NOTE]
->You can verify successful completion of Surface Dock Firmware Update by looking for these values in the Windows Registry, as described earlier in [How to verify completion of firmware update.](#How-to-verify-completion-of-firmware-update).
 
 ## Legacy versions
 
