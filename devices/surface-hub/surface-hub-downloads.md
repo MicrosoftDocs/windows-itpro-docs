@@ -3,8 +3,8 @@ title: Useful downloads for Microsoft Surface Hub
 description: Downloads related to the Microsoft Surface Hub.
 ms.prod: surface-hub
 ms.sitesec: library
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 08/22/2017
 ms.reviewer: 
