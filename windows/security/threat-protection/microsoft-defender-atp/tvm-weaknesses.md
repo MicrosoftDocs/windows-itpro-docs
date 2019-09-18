@@ -23,7 +23,20 @@ ms.date: 04/11/2019
 
 Threat & Vulnerability Management leverages the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
 
-The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, corresponding breach, and threat insights. 
+The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, corresponding breach, and threat insights.
+
+>[!IMPORTANT]
+>To boost your vulnerability assessment detection rates, you can download the new set of optional security updates and deploy them in your network:
+- KB 4512941
+- KB 4516077
+- KB 4516045
+- KB 4516071
+
+To download the security updates:
+1. Go to [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/home.aspx).
+2. Key-in the security update KB number that you need to download, then click **Search**.
+  
+Downloading the above-mentioned security updates will be mandatory starting Patch Tuesday, October 8, 2019.
 
 ## Navigate through your organization's weaknesses page
 You can see the list of vulnerabilities in four ways: 
