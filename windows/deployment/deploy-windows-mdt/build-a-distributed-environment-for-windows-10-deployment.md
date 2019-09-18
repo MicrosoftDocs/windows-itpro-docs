@@ -168,7 +168,7 @@ When you have multiple deployment servers sharing the same content, you need to 
     2.  In the **Advanced** tab, set the quota to **8192 MB**.
 
 >[!NOTE]
->It will take some time for the replication configuration to be picked up by the replication members (MDT01 and MDT02). The time for the initial sync will depend on the WAN link speed between the sites. After that, delta changes are replicated quickly.
+> It will take some time for the replication configuration to be picked up by the replication members (MDT01 and MDT02). The time for the initial sync will depend on the WAN link speed between the sites. After that, delta changes are replicated quickly.
  
 ### Verify replication
 1.  On MDT02, wait until you start to see content appear in the **E:\\MDTProduction** folder.
