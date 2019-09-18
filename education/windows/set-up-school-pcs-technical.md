@@ -7,8 +7,8 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: mjcaparas
-ms.author: macapara
+author: dansimp
+ms.author: dansimp
 ms.date: 07/11/2018
 ms.reviewer: 
 manager: dansimp
