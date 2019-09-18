@@ -13,8 +13,6 @@ manager: dansimp
 
 # Policy CSP - Bitlocker
 
-
-
 <hr/>
 
 <!--Policies-->
