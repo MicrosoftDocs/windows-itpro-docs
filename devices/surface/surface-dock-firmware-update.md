@@ -1,7 +1,7 @@
 ---
 title: Microsoft Surface Dock Firmware Update
 description: This article explains how to use Microsoft Surface Dock Firmware Update, newly redesigned to automatically update Surface Dock firmware while running in the background on your Surface device.
-ms.localizationpriority: medium
+ms.localizationpriority: normal
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,6 +11,7 @@ ms.topic: article
 ms.date: 09/18/2019
 ms.reviewer: scottmca
 manager: dansimp
+ms.audience: itpro
 ---
 # Microsoft Surface Dock Firmware Update
 
