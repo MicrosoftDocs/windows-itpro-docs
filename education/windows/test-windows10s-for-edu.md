@@ -7,8 +7,8 @@ ms.prod: w10
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: medium
-author: mjcaparas
-ms.author: macapara
+author: dansimp
+ms.author: dansimp
 ms.date: 07/30/2019
 ms.reviewer: 
 manager: dansimp
