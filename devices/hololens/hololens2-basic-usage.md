@@ -2,7 +2,7 @@
 title: Getting around HoloLens 2
 description: A guide to using HoloLens 2 with your hands
 ms.assetid: 5f791a5c-bdb2-4c5d-bf46-4a198de68f21
-ms.date: 08/07/2019
+ms.date: 9/17/2019
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -20,24 +20,23 @@ Ready to step into the world of holograms?
 
 This guide provides an intro to:
 
-- Hand tracking
-- Basic hand interactions
-- Start gesture
-- Move, resize, rotate 
+- Interacting with mixed reality
+- Using your hands and voice for interacting with holograms on HoloLens 2
+- Navigating Windows 10 on HoloLens (Windows Holographic)
 
 ## Discover mixed reality
 
-On HoloLens, holograms blend the digital world with your physical environment to look and sound like they're part of your world.  Even when holograms are all around you, you can always see your surroundings, move freely, and interact with people and objects. We call this experience "mixed reality".
+On HoloLens, holograms blend the digital world with your physical environment to look and sound like they're part of your world. Even when holograms are all around you, you can always see your surroundings, move freely, and interact with people and objects. We call this experience "mixed reality".
 
-The holographic frame positions your holograms where your eyes are most sensitive to detail and the see-through lenses leave your peripheral vision unobscured. With spatial sound, you can pinpoint a hologram even if it’s behind you using sound. And, because HoloLens understands your physical environment, you can place holograms on and around real objects like tables and walls.
+The holographic frame positions your holograms where your eyes are most sensitive to detail and the see-through lenses leave your peripheral vision unobscured. With spatial sound, you can pinpoint a hologram by listening, even if it’s behind you. And, because HoloLens understands your physical environment, you can place holograms on and around real objects such as tables and walls.
 
 Getting around HoloLens is a lot like using your smart phone. You can use your hands to touch and manipulate holographic windows, menus, and buttons.  
 
 Once you know these basic interactions, getting around on HoloLens will be a snap.
 
 > [!TIP]
-> If you have a HoloLens near you right now, the **Tips** app gives you a hands-on tutorials for hand and voice interactions on HoloLens.  
-> Use the Start gesture to go to **Start** menu and select **Tips**.
+> If you have a HoloLens near you right now, the **Tips** app gives you a hands-on tutorials for hand interactions on HoloLens.  
+> Use the start gesture to go to **Start** or say "Go to Start" and select **Tips**.
 
 ## The hand-tracking frame
 
@@ -53,14 +52,12 @@ To **grab** a hologram near you, pinch your **thumb** and **index finger** toget
 
 To bring up a **context menu**, like the ones you'll find on an app tile in the Start menu, **tap and hold** like you do on a touch screen.
 
-
 ## Use hand ray for holograms out of reach
 
 When there are no holograms near your hands, the **touch cursor** will be hide automatically and **hand rays** will appear from the palm of your hands. Hand rays allow you to interact with holograms from a distance.
 
 > [!TIP]
 > If you find hand rays distracting, you can hide them by saying “Hide hand rays”. To make them reappear, say "Show hand rays."
-
 
 ### Select using air tap
 
@@ -87,6 +84,7 @@ Use **air tap and hold** to perform the following actions with hand ray:
 The Start gesture opens the **Start menu**.  To perform the Start gesture, hold out your hand with your palm facing you. You’ll see a **Start icon** appear over your inner wrist. Tap this icon using your other hand.  The Start menu will open **where you’re looking**.
 
 > [!TIP]
+>
 > - You can use the Start gesture as long as your hands are inside the hand-tracking frame.  You do not need to be looking down at the Start icon. Keep your elbow low and comfortable, and look in the direction where you want the Start menu to open.
 > - If the Start menu didn't open at the position you want, simply move your head around to reposition it.
 > - If you have trouble reading the smaller text on the Start menu, step closer to it after it opens.
@@ -102,8 +100,7 @@ You can also perform the Start gesture with one hand. To do this, hold out your 
 > [!IMPORTANT]
 > For the one-handed Start gesture to work, your eyes must be calibrated on the device so that eye tracking functions correctly. If you do not see orbiting dots around the Start icon when you look at it, your eyes are not calibrated on the device.
 
-![Image that shows the Start icon and the one-handed Start gesture](./images/hololens-2-start-alternative.jpg)
-
+![Image that shows the Start icon and the one-handed start gesture](./images/hololens-2-start-alternative.jpg)
 
 ## Start menu, mixed reality home, and apps
 
@@ -123,26 +120,27 @@ Tips is an example of an **immersive app**. An immersive app takes you away from
 
 [Go here to learn more](holographic-home.md) about Start menu and mixed reality home, including info on how to use and manage apps on HoloLens 2.
 
-
 ## Move, resize, and rotate holograms
 
 In mixed reality home you can move, resize, and rotate app windows and 3D objects using your hands, hand ray and voice commands.
 
 ### Moving holograms
 
-Move a hologram or app window using your hand or hand ray by:
+Move a hologram or app by following these steps:
 
-1. Grabbing the hologram - Grab a 3D hologram anywhere inside its blue bounding box.  For an app window grab its title bar.
-1. Without letting go, move your hand to position the hologram.   
+1. Grab the hologram by pinching your index finger and thumb on the hologram or face your hand down and then close your fist over it.  Grab a 3D hologram anywhere inside its blue bounding box.  For an app window grab its title bar.
+1. Without letting go, move your hand to position the hologram. When moving an app window this way, the app window will automatically turn to face you as it moves, making it easier to use at its new position.  
 1. Release your fingers to place it.
 
-### Resizing holograms 
+### Resizing holograms
 
 Grab and use the **resize handles** that appear on the corners of 3D holograms and app windows to resize them.
 
 For an app window, when resized this way the window content will correspondingly increase in size and become easier to read.
 
 If you want to resize an app window so that **more content** appears in the window, use the resize handles located on the sides and bottom edges of the app window.
+
+There are two ways to resize a hologram that's further away from you. You can either grab two corners of the hologram, or use the resize controls.
 
 ### Rotating holograms
 
@@ -151,13 +149,13 @@ For 3D holograms, grab and use the rotate handles that appear on the vertical ed
 For app windows, moving an app window will cause it to automatically rotate and face you.
 
 You can also grab a 3D hologram or app window with **both hands** (or hand ray) at once and then:
+
 - Move your hands closer together or apart to resize the hologram.
 - Move your hands closer and further away from your body to rotate the hologram.
 
-
 ### Follow me, stop following
 
-Holograms and app windows stay where you placed them in the world.  That's not always convenient if you need to move around and want an app window to stay visible.  Select the "follow me" button on the title bar to make an app window follow you as you move around.  An app window that is following you will also follow you into, an out of, an immersive app.
+Holograms and app windows stay where you placed them in the world.  That's not always convenient if you need to move around and you want an application to stay visible. To ask an app to start following you or stop following you, select **Follow me** in the top right corner of the app window (next to the **Close** button).  An app window that is following you will also follow you into, an out of, an immersive app.
 
 ## Use HoloLens with your voice
 
@@ -170,7 +168,6 @@ You can use your voice to do most of the same things you do with hands on HoloLe
 | See available speech commands | "What can I say?" |
 
  [See more voice commands and ways to use speech with HoloLens](hololens-cortana.md)
-
 
 ## Next Steps
 

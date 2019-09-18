@@ -1,8 +1,8 @@
 ---
 title: HoloLens 2 hardware
-description: An outline of the components that make up Microsoft HoloLens 2, the evolution of Microsoft's fully untethered holographic computer running Windows 10.
+description: An outline of the components that make up Microsoft HoloLens 2, the latest evolution of Microsoft's fully untethered holographic computer running Windows 10.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
-ms.date: 08/07/2019
+ms.date: 9/17/2019
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -18,7 +18,7 @@ appliesto:
 
 ![HoloLens 2 side view](images/hololens2-exploded-medium.png)
 
-Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holographic computing journey started with HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality.
+Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality.
 
 ## HoloLens components
 
@@ -51,9 +51,9 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 |   |   |
 | - | - |
 | Head tracking | 4 visible light cameras |
-| Eye tracking | 2 IR cameras |
+| Eye tracking | 2 Infrared (IR) cameras |
 | Depth | 1-MP Time-of-Flight depth sensor |
-| IMU | Accelerometer, gyroscope, magnetometer |
+| Inertial measurement unit (IMU) | Accelerometer, gyroscope, magnetometer |
 | Camera | 8-MP stills, 1080p30 video |
 
 ### Audio and speech
@@ -97,8 +97,8 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 |   |   |
 | - | - |
 | Six Degrees of Freedom (6DoF) tracking | World-scale positional tracking |
-| Spatial Mapping | Real-time environment mesh |
-| Mixed Reality Capture | Mixed hologram and physical environment photos and videos |
+| Spatial mapping | Real-time environment mesh |
+| Mixed reality capture | Mixed hologram and physical environment photos and videos |
 
 ## Pre-installed software
 
@@ -116,17 +116,17 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 
 ### Safety
 
-HoloLens 2 has been tested and found to conform to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166
+HoloLens 2 has been tested and found to conform to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
 
 ## Care and cleaning
 
 Handle your HoloLens carefully. Use the headband to lift and carry the HoloLens 2.
 
-Like seeing glasses or protective eye-wear, try to keep the HoloLens visor free of dust and fingerprints.  Avoid touching the visor when possible.  Repeated cleaning could damage the visor, so try to keep your device clean.
+As you would for glasses or protective eye-wear, try to keep the HoloLens visor free of dust and fingerprints. When possible, avoid touching the visor. Repeated cleaning could damage the visor, so try to keep your device clean.
 
 Don't use any cleaners or solvents on your HoloLens, and don't submerge it in water or apply water directly to it.
 
-To clean the visor, remove any dust using a camel or goat hair lens brush or a bulb-style lens blower. Lightly moisten the microfiber cloth with a small amount of distilled water, then use it to wipe the visor gently in a circular motion.
+To clean the visor, remove any dust by using a camel or goat hair lens brush or a bulb-style lens blower. Lightly moisten the microfiber cloth with a small amount of distilled water, then use it to wipe the visor gently in a circular motion.
 
 Clean the rest of the device, including the headband and device arms, with a lint-free cloth moistened with mild soap and water. Let your HoloLens dry completely before using it again.
 

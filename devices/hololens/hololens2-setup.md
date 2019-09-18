@@ -1,8 +1,8 @@
 ---
-title: HoloLens 2 setup
+title: Prepare a new HoloLens 2
 description: This guide walks through first time set up and hardware guide.
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
-ms.date: 08/07/2019
+ms.date: 9/17/2019
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
@@ -14,13 +14,18 @@ appliesto:
 - HoloLens 2
 ---
 
-# Set up HoloLens 2
+# Get your HoloLens 2 ready to use
 
 Follow along to set up a HoloLens 2 for the first time.
 
 ## Charge your HoloLens
 
-[Charge your HoloLens](https://support.microsoft.com/en-us/help/12627)
+To charge your HoloLens, connect the power supply to the charging port by using the included USB-C cable. Then plug the power supply into a power outlet. When the device is charging, the battery indicator will light up in a wave pattern.
+
+When your HoloLens is on, the battery indicator shows the battery level in increments. When only one of the five lights is on, the battery level is below 20 percent. If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
+
+> [!TIP]
+> To get an estimate of your current battery level, say "Hey Cortana, how much battery do I have left?"
 
 ## Adjust fit
 
@@ -34,11 +39,9 @@ If necessary, extend the headband by turning the adjustment wheel, and then loos
 
 The overhead strap isn't required, but it can make wearing HoloLens 2 more comfortable over longer periods of time.
 
-To detach the back of the overhead strap, press the button below each connection tab and pull gently.
+To detach the front of the overhead strap, unhook the strap and slide it through the retractable loop on the brow pad. To reattach it, pull out the loop and slide the strap back through.
 
-To detach the front of the overhead strap, unhook the strap and slide it through the retractable loop on the brow pad. To replace it, pull out the loop and slide the strap back through.
-
-To replace the strap, push the connection tabs back into the slots until they click.
+To detach the back of the overhead strap, press the button below each connection tab and pull gently. To reattach it, push the connection tabs back into the slots until they click.
 
 ![attach or remove the HoloLens 2 head strap](images/hololens2-headstrap.png)
 
@@ -48,41 +51,42 @@ To turn on your HoloLens 2, press the power button.  The LED lights below the po
 
 ### Power button actions for different power transitions
 
-|  Description | Action and Lights |
+|To do this |Perform this action and watch for these indicator lights |
 | - | - |
-| **Single Click** to turn on | ![press power button - no lights lit](images/hololens-2-button-turn-on.png) |
-| **Single Click** to sleep | ![press power button - three lights lit](images/hololens-2-button-sleep.png) |
-| **Single Click** to wake from sleep | ![press power button - no lights lit](images/hololens-2-button-wake.png) |
-| **Press and hold 5s** to turn off | ![press and hold power button - all lights lit](images/hololens-2-button-turn-off.png) |
-| **Press and hold 10s** to force restart if the HoloLens 2 is unresponsive. | ![press power button - all lights lit](images/hololens-2-button-turn-off.png) |
+|To&nbsp;turn&nbsp;on |**Single click**  ![Press power button - no lights lit](images/hololens-2-button-turn-on.png) |
+|To sleep |**Single click**  ![Press power button - three lights lit](images/hololens-2-button-sleep.png) |
+|To wake from sleep |**Single click**  ![Press power button - no lights lit](images/hololens-2-button-wake.png) |
+|To turn off |**Press and for hold 5s**  ![Press and hold power button - all lights lit](images/hololens-2-button-turn-off.png) |
+|To force the Hololens to restart if it is unresponsive |**Press and hold for 10s**  ![Press and hold power button - all lights lit](images/hololens-2-button-turn-off.png) |
 
 ## HoloLens indicator lights
 
 Not sure what the indicator lights on your HoloLens mean? Here's some help.
 
-### Lights to indicate device state
+### Lights that indicate the state of the device
 
-| When the lights do this | It means |
-| - | - |
-| LEDs fade on to battery level as soon as power button is pressed and device starts booting. A sound will play 4s after user pressed the power button to indicate device boot is in progress. | HoloLens is starting up. |
-| Same LED pattern as device boot. A sound will play immediately after user pressed the power button to indicate device is awake. | HoloLens is on and ready to use. |
-| When power button is pressed and held LEDs all come on and fade off one by one, at which point shutdown is committed (a sound will play and “Goodbye” text will be shown on screen). If user lets go of power button before 5s is up device goes to sleep state. | HoloLens is going to sleep or shutting down, depending on press length. |
-| On attempt to power on LED flashes 5 times, then turns off. | Battery is critically low. HoloLens needs to charge. |
-| Blink all 5 LEDs 5 times then turn off | Boot Error |
+|When you do this | And then the lights do this | It means |
+| - | - | - |
+|You press the power button. |All five lights turn on, then change to indicate the battery level. After four seconds, a sound plays. | HoloLens is starting up. |
+|You press the power button. |All five lights turn on, then change to indicate the battery level. A sound immediately plays. | HoloLens is on, awake, and ready to use. |
+|You press and hold the power button for five seconds or longer. |All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |HoloLens is shutting down. |
+|You press and hold the power button for less than five seconds. |All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |HoloLens is entering sleep. |
+|You press the power button. |One light flashes five times, then turns off. |The HoloLens battery is critically low. Charge your HoloLens. |
+|You press the power button. |All five lights flash five times, then turn off. |HoloLens cannot start correctly and is in an error state. |
 
-### Lights to indicate battery level
+### Lights that indicate the battery level
 
 | Number of lights | Battery level |
 | - | - |
-| One light fading in and out | < Critical battery (5%)* to  20 Percent |
-| One solid light, one light fading in and out | 21 to 40 Percent |
-| Two solid lights, one light fading in and out | 41 to 60 Percent |
-| Three solid light, one light fading in and out | 61 to 80 Percent |
-| Four solid light, one light fading in and out | 81 to 100 Percent (fully charged) |
+|Four solid lights, one light fading in and out |Between 100% and 81% (fully charged) |
+|Three solid lights, one light fading in and out |Between 80% and 61% |
+|Two solid lights, one light fading in and out |Between 60% and 41% |
+|One solid light, one light fading in and out |Between 40% and 21% |
+|One light fading in and out |Between 20% and 5% or lower (critical battery) |
 
 ## Safety and Comfort
 
-### Use in safe surroundings
+### Use HoloLens in safe surroundings
 
 Use your HoloLens in a safe space that’s free of obstructions and tripping hazards. Don’t use it when you need a clear field of view and your full attention, such as while you’re operating a vehicle or doing other potentially hazardous activities.
 
