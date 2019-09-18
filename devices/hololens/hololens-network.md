@@ -18,7 +18,12 @@ appliesto:
 
 # Connect to a network
 
-To do most things on your HoloLens, you have to be connected to a network. [What can I do offline](hololens-offline.md)?
+To do most things on your HoloLens, you have to be connected to a network. This guide will help you:
+
+- Connect to a network using Wi-Fi or (for HoloLens 2 only) Ethernet over USB-C
+- Disable and re-enable Wi-Fi
+
+Read more about [using HoloLens offline](hololens-offline.md).
 
 ## Connecting for the first time
 

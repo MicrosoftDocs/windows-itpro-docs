@@ -35,10 +35,10 @@ To use HoloLens, each user follows these steps:
 
 1. If another user has been using the device, do one of the following:
    - Press the power button once to go to standby, and then press the power button again to return to the lock screen
-   - Select the user tile on the upper right of the Pins panel to sign out the current user. 
-1. Use your Azure AD account credentials to sign in to the device.
-  > [!IMPORTANT]
-  > If this is the first time that you have used the device, you have to [calibrate](hololens-calibration.md) HoloLens to your own eyes.
+   - Select the user tile on the upper right of the Pins panel to sign out the current user.
+
+1. Use your Azure AD account credentials to sign in to the device.  
+    If this is the first time that you have used the device, you have to [calibrate](hololens-calibration.md) HoloLens to your own eyes.
 
 To see a list of the device users or to remove a user from the device, go to **Settings** > **Accounts** > **Other users**.
 
@@ -46,4 +46,6 @@ To see a list of the device users or to remove a user from the device, go to **S
 
 Multiple users can also share a HoloLens device while using a single user account.
 
-On HoloLens 2, when a new user puts the device on their head for the first time (while keeping the same account signed in), the device prompts the new user to quickly calibrate and personalize the viewing experience. The device can store the calibration information so that in the future, the device can automatically optimize the quality and comfort of each user's viewing experience. The users do not need to calibrate the device again.
+**On HoloLens 2**, when a new user puts the device on their head for the first time (while keeping the same account signed in), the device prompts the new user to quickly calibrate and personalize the viewing experience. The device can store the calibration information so that in the future, the device can automatically optimize the quality and comfort of each user's viewing experience. The users do not need to calibrate the device again.
+
+**On HoloLens (1st gen)** users sharing an account will need to ask to recalibrate in the Settings app.  Read more about [calibration](hololens-calibration.md).
