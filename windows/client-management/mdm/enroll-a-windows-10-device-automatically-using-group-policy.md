@@ -68,7 +68,7 @@ Also verify that the **MAM user scope** is set to **None**. Otherwise, it will h
 
     ![Azure AD device list](images/azure-ad-device-list.png)
 
-5. Verify that the MDM discovery URL during auto-enrollment is https://enrollment.manage.microsoft.com/enrollmentserver/discovery.
+5. Verify that the MDM discovery URL during auto-enrollment is https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc
 
     ![MDM discovery URL](images/auto-enrollment-mdm-discovery-url.png)
 
