@@ -31,11 +31,6 @@ The **Weaknesses** page lists down the vulnerabilities found in the infected sof
 >- RS5 customers | KB 4516077
 >- RS4 customers | KB 4516045
 >- RS3 customers | KB 4516071
-
->To download the security updates:
->1. Go to [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/home.aspx).
->2. Key-in the security update KB number that you need to download, then click **Search**.
-  
 >Downloading the above-mentioned security updates will be mandatory starting Patch Tuesday, October 8, 2019.
 
 ## Navigate through your organization's weaknesses page
