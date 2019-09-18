@@ -36,6 +36,14 @@ Ensure that your machines:
 - Have at least one security recommendation that can be viewed in the machine page
 - Are tagged or marked as co-managed
 
+>[!IMPORTANT]
+>To boost your vulnerability assessment detection rates, you can download the following set of optional security updates and deploy them in your network:
+>- 19H1 customers | KB 4512941
+>- RS5 customers | KB 4516077
+>- RS4 customers | KB 4516045
+>- RS3 customers | KB 4516071
+
+>Downloading and deploying the above-mentioned security updates will be mandatory starting Patch Tuesday, October 8, 2019.
 
 ## Reduce your threat and vulnerability exposure
 Threat & Vulnerability Management introduces a new exposure score metric, which visually represents how exposed your machines are to imminent threats.
