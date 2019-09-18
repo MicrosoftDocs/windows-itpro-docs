@@ -5,8 +5,8 @@ manager: dansimp
 description: Learn how to replace the solid state drive in a Surface Hub.
 ms.prod: surface-hub
 ms.sitesec: library
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ---
