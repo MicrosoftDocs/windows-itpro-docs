@@ -22,7 +22,7 @@ manager: dansimp
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-- [Microsoft Edge on Windows 10](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge)
+- [Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge)
 
 Potentially unwanted applications are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints which adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender ATP, due to certain kinds of undesirable behavior.
 
@@ -33,9 +33,6 @@ These kinds of undesirable PUA behavior include:
 - Driver and registry optimizers that detect issues, request payment to fix the errors, and then make no changes or optimizations (also known as "rogue antivirus" programs)
 
 Potentially unwanted applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up.
-
-> [!TIP]
-> You can visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm that the feature is working, and see it in action.
 
 ## How it works
 
@@ -52,7 +49,10 @@ The next major version of Microsoft Edge, which is Chromium-based, blocks potent
 
 ### Windows Defender Antivirus
 
-The potentially unwanted application (PUA) protection feature in Windows Defender Antivirus can detect and block PUAs on endpoints in your network.
+The potentially unwanted application (PUA) protection feature in Windows Defender Antivirus can detect and block PUAs on endpoints in your network. 
+
+> [!NOTE]
+> This feature is only available in Windows 10.
 
 Windows Defender Antivirus blocks detected PUA files, and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine.
 
@@ -60,19 +60,14 @@ When a PUA is detected on an endpoint, Windows Defender Antivirus sends a notifi
 
 The notification will appear in the usual [quarantine list within the Windows Security app](windows-defender-security-center-antivirus.md#detection-history).
 
-#### View PUA events
-
-PUA events are reported in the Windows Event Viewer, but not in System Center Configuration Manager or in Intune.
-
-You can turn on email notifications to receive mail about PUA detections.
-
-See [Troubleshoot event IDs](troubleshoot-windows-defender-antivirus.md) for details on viewing Windows Defender Antivirus events. PUA events are recorded under event ID **1160**.
-
 #### Configure PUA protection
 
 You can enable PUA protection with Microsoft Intune, System Center Configuration Manager, Group Policy, or via PowerShell cmdlets.
 
 You can also use the PUA audit mode to detect PUAs without blocking them. The detections will be captured in the Windows event log.
+
+> [!TIP]
+> You can visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) to confirm that the feature is working, and see it in action.
 
 PUA audit mode is useful if your company is conducting an internal software security compliance check and you'd like to avoid any false positives.
 
@@ -118,6 +113,14 @@ Setting the value for this cmdlet to `Enabled` will turn the feature on if it ha
 Setting `AuditMode` will detect PUAs without blocking them.
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+
+#### View PUA events
+
+PUA events are reported in the Windows Event Viewer, but not in System Center Configuration Manager or in Intune.
+
+You can turn on email notifications to receive mail about PUA detections.
+
+See [Troubleshoot event IDs](troubleshoot-windows-defender-antivirus.md) for details on viewing Windows Defender Antivirus events. PUA events are recorded under event ID **1160**.
 
 #### Allow-listing apps
 
