@@ -58,10 +58,12 @@ See how you can [improve your security configuration](https://docs.microsoft.com
 >- KB 4516077
 >- KB 4516045
 >- KB 4516071
-><P>To download the security updates:
-><P> 1. Go to [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/home.aspx).
-><P> 2. Key-in the security update KB number that you need to download, then click **Search**.  
-><P>Downloading the above-mentioned security updates will be mandatory starting Patch Tuesday, October 8, 2019.
+>
+>To download the security updates:
+>1. Go to [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/home.aspx).
+>2. Key-in the security update KB number that you need to download, then click **Search**.  
+>
+>Downloading the above-mentioned security updates will be mandatory starting Patch Tuesday, October 8, 2019.
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
