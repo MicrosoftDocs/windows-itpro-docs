@@ -34,7 +34,7 @@ Figure 1. The machines used in this topic.
 Replicating the content between MDT01 (New York) and MDT02 (Stockholm) can be done in a number of different ways. The most common content replication solutions with Microsoft Deployment Toolkit (MDT) use either the Linked Deployment Shares (LDS) feature or Distributed File System Replication (DFS-R). Some organizations have used a simple robocopy script for replication of the content.
 
 > [!NOTE]
->Robocopy has options that allow for synchronization between folders. It has a simple reporting function; it supports transmission retry; and, by default, it will only copy/remove files from the source that are newer than files on the target.
+> Robocopy has options that allow for synchronization between folders. It has a simple reporting function; it supports transmission retry and, by default, it will only copy/remove files from the source that are newer than files on the target.
  
 ### Linked deployment shares in MDT
 
