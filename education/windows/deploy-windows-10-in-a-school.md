@@ -164,7 +164,7 @@ In this section, you installed the Windows ADK and MDT on the admin device. You 
 
 Office 365 is one of the core components of your classroom environment. You create and manage student identities in Office 365, and students and teachers use the suite as their email, contacts, and calendar system. Teachers and students use Office 365 collaboration features such as SharePoint, OneNote, and OneDrive for Business.
 
-As a first step in deploying your classroom, create an Office 365 Education subscription, and then configure Office 365 for the classroom. For more information about Office 365 Education deployment, see [School deployment of Office 365 Education](https://www.microsoft.com/en-us/education/products/office-365-deployment-resources/default.aspx).
+As a first step in deploying your classroom, create an Office 365 Education subscription, and then configure Office 365 for the classroom. For more information about Office 365 Education deployment, see [School deployment of Office 365 Education](https://www.microsoft.com/education/products/office-365-deployment-resources/default.aspx).
 
 ### Select the appropriate Office 365 Education license plan
 

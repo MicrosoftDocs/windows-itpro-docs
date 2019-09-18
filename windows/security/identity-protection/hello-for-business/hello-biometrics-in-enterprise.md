@@ -44,7 +44,7 @@ Windows Hello provides many benefits, including:
 
 -   Support for Windows Hello is built into the operating system so you can add additional biometric devices and polices as part of a coordinated rollout or to individual employees or groups using Group Policy or Mobile Device Management (MDM) configurations service provider (CSP) policies.<br>For more info about the available Group Policies and MDM CSPs, see the [Implement Windows Hello for Business in your organization](hello-manage-in-organization.md) topic.
 
-## Where is Microsoft Hello data stored?
+## Where is Windows Hello data stored?
 The biometric data used to support Windows Hello is stored on the local device only. It doesn’t roam and is never sent to external devices or servers. This separation helps to stop potential attackers by providing no single collection point that an attacker could potentially compromise to steal biometric data. Additionally, even if an attacker was actually able to get the biometric data, it still can’t be easily converted to a form that could be recognized by the biometric sensor.
 
 ## Has Microsoft set any device requirements for Windows Hello?

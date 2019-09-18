@@ -8,6 +8,7 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
@@ -95,7 +96,7 @@ The following example specifies that all locked files, regardless of their locat
 
 Additionally, the order in the **&lt;ErrorControl&gt;** section implies priority. In this example, the first **&lt;nonFatal&gt;** tag takes precedence over the second **&lt;fatal&gt;** tag. This precedence is applied, regardless of how many tags are listed.
 
-``` syntax
+``` xml
 <ErrorControl>
   <fileError>
     <nonFatal errorCode="33">* [*]</nonFatal>
@@ -265,7 +266,7 @@ The **&lt;ErrorControl&gt;** section can be configured to conditionally ignore f
 
  
 
-``` syntax
+``` xml
 <Policy>
    <HardLinkStoreControl>
       <fileLocked>

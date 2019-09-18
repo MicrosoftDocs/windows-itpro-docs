@@ -4,7 +4,7 @@ title: Full-sized flowchart detailing how document modes are chosen in IE11
 author: lomayor
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 ---
 

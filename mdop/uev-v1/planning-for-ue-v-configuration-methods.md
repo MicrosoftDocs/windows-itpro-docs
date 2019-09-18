@@ -1,7 +1,7 @@
 ---
 title: Planning for UE-V Configuration Methods
 description: Planning for UE-V Configuration Methods
-author: levinec
+author: dansimp
 ms.assetid: 57bce7ab-1be5-434b-9ee5-c96026bbe010
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: ellevin
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

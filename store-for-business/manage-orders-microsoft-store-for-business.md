@@ -42,14 +42,14 @@ Refunds work a little differently for free apps, and apps that have a price. In 
 
 **Refunds for free apps**
 
- For free apps, there isn't really a refund to request -- you're removing the app from your inventory. You must first reclaim any assigned licenses, and then you can remove the app from your organization's inventory.
+For free apps, there isn't really a refund to request -- you're removing the app from your inventory. You must first reclaim any assigned licenses, and then you can remove the app from your organization's inventory.
 
- **Refunds for apps that have a price**
+**Refunds for apps that have a price**
 
- There are a few requirements for apps that have a price:
- - **Timing** - Refunds are available for the first 30 days after you place your order. For example, if your order is placed on June 1, you can self-refund through June 30.
- - **Available licenses** - You need to have enough available licenses to cover the number of licenses in the order you are refunding. For example, if you purchased 10 copies of an app and you want to request a refund, you must have at least 10 licenses of the app available in your inventory -- those 10 licenses can't be assigned to people in your organization.
- - **Whole order refunds only** - You must refund the complete amount of apps in an order. You can't refund a part of an order. For example, if you purchased 10 copies of an app, but later found you only needed 5 copies, you'll need to request a refund for the 10 apps, and then make a separate order for 5 apps. If you have had multiple orders of the same app, you can refund one order but still keep the rest of the inventory.
+There are a few requirements for apps that have a price:
+- **Timing** - Refunds are available for the first 30 days after you place your order. For example, if your order is placed on June 1, you can self-refund through June 30.
+- **Available licenses** - You need to have enough available licenses to cover the number of licenses in the order you are refunding. For example, if you purchased 10 copies of an app and you want to request a refund, you must have at least 10 licenses of the app available in your inventory -- those 10 licenses can't be assigned to people in your organization.
+- **Whole order refunds only** - You must refund the complete amount of apps in an order. You can't refund a part of an order. For example, if you purchased 10 copies of an app, but later found you only needed 5 copies, you'll need to request a refund for the 10 apps, and then make a separate order for 5 apps. If you have had multiple orders of the same app, you can refund one order but still keep the rest of the inventory.
 
 **To refund an order**
 

@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: f6ecaa75-ebcb-4f8d-8721-4cd6e73c0ac9
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Remove sites from a local compatibility view list (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

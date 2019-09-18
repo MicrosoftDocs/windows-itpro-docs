@@ -1,7 +1,7 @@
 ---
 title: Getting Started with DaRT 10
 description: Getting Started with DaRT 10
-author: msfttracyp
+author: dansimp
 ms.assetid: 593dd317-4fba-4d51-8a80-951590acede6
 ms.reviewer: 
 manager: dansimp

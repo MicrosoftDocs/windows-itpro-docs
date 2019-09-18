@@ -9,7 +9,7 @@ title: Create a change request using the Enterprise Mode Site List Portal (Inter
 ms.sitesec: library
 ms.date: 07/27/2017
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 ---
 

@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: e3607cde-a498-4e04-9daa-b331412967fc
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Group Policy, Windows Powershell, and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

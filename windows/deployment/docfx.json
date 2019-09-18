@@ -34,6 +34,7 @@
     "globalMetadata": {
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
       "ms.technology": "windows",
+      "audience": "ITPro",
       "ms.topic": "article",
       "ms.author": "greglin",
       "feedback_system": "GitHub",

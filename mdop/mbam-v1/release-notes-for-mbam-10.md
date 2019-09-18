@@ -1,7 +1,7 @@
 ---
 title: Release Notes for MBAM 1.0
 description: Release Notes for MBAM 1.0
-author: msfttracyp
+author: dansimp
 ms.assetid: d82fddde-c360-48ef-86a0-d9b5fe066861
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

@@ -9,7 +9,7 @@ title: Schedule approved change requests for production using the Enterprise Mod
 ms.sitesec: library
 ms.date: 07/27/2017
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 ---
 

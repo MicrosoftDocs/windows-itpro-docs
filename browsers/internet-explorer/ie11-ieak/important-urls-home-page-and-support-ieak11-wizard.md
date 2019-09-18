@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 19e34879-ba9d-41bf-806a-3b9b9b752fc1
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the Important URLs - Home Page and Support page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

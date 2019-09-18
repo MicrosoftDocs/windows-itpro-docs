@@ -1,7 +1,7 @@
 ---
 title: Planning for MBAM 1.0
 description: Planning for MBAM 1.0
-author: msfttracyp
+author: dansimp
 ms.assetid: d4e8a42f-2836-48c8-83c1-40bd58270e19
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

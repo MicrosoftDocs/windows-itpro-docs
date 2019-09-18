@@ -1,7 +1,7 @@
 ---
 title: Planning for Application Virtualization System Deployment
 description: Planning for Application Virtualization System Deployment
-author: eavena
+author: dansimp
 ms.assetid: 8215269f-c083-468a-bf0b-886b0d2dd69e
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

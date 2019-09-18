@@ -9,19 +9,16 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 07/26/2017
+ms.date: 07/29/2019
 ---
 
 # PassportForWork DDF
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **PassportForWork** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, version 1809.
+The XML below is for Windows 10, version 1903.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -47,7 +44,7 @@ The XML below is for Windows 10, version 1809.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.5/MDM/PassportForWork</MIME>
+            <MIME>com.microsoft/1.6/MDM/PassportForWork</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -1264,7 +1261,7 @@ Note that enhanced anti-spoofing for Windows Hello face authentication is not re
                     <Replace />
                 </AccessType>
                 <DefaultValue>False</DefaultValue>
-                <Description>Enables/Disables Dynamic Lock</Description>
+                <Description>Enables/Disables Dyanamic Lock</Description>
                 <DFFormat>
                     <bool />
                 </DFFormat>
@@ -1301,6 +1298,52 @@ Note that enhanced anti-spoofing for Windows Hello face authentication is not re
               <DFType>
                 <MIME>text/plain</MIME>
               </DFType>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>SecurityKey</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Security Key</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>UseSecurityKeyForSignin</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                    <Add />
+                    <Delete />
+                    <Replace />
+                </AccessType>
+                <DefaultValue>0</DefaultValue>
+                <Description>Use security key for signin. 0 is disabled. 1 is enable. If you do not configure this policy setting, the default is disabled.</Description>
+                <DFFormat>
+                    <int />
+                </DFFormat>
+                <Occurrence>
+                    <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                    <Dynamic />
+                </Scope>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
             </DFProperties>
           </Node>
         </Node>

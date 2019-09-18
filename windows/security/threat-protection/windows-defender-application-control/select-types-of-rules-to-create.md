@@ -111,15 +111,16 @@ They could also choose to create a catalog that captures information about the u
 
 Beginning with Windows 10 version 1903, Windows Defender Application Control (WDAC) policies can contain path-based rules.
 
-- New-CIPolicy parameters
+- New-CIPolicy parameter
   - FilePath: create path rules under path \<path to scan> for anything not user-writeable (at the individual file level)
 
     ```powershell
-    New-CIPolicy -f .\mypolicy.xml -l FilePath -s <path to scan> -u
+    New-CIPolicy -FilePath .\mypolicy.xml -Level FileName -ScanPath <path to scan> -UserPEs
     ```
 
     Optionally, add -UserWriteablePaths to ignore user writeability
-
+    
+- New-CIPolicyRule parameter
   - FilePathRule: create a rule where filepath string is directly set to value of \<any path string>
 
     ```powershell
@@ -134,7 +135,7 @@ Beginning with Windows 10 version 1903, Windows Defender Application Control (WD
   $rules = New-CIPolicyRule …
   $rules += New-CIPolicyRule …
   …
-  New-CIPolicyRule -f .\mypolicy.xml -u
+  New-CIPolicy -FilePath .\mypolicy.xml -Rules $rules -UserPEs
   ```
 
 - Wildcards supported
@@ -149,6 +150,6 @@ Beginning with Windows 10 version 1903, Windows Defender Application Control (WD
 - Disable default FilePath rule protection of enforcing user-writeability. For example, to add “Disabled:Runtime FilePath Rule Protection” to the policy:
 
   ```powershell
-  Set-RuleOption -o 18 .\policy.xml
+  Set-RuleOption -Option 18 .\policy.xml
   ```
 

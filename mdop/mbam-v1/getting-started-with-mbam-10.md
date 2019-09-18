@@ -1,7 +1,7 @@
 ---
 title: Getting Started with MBAM 1.0
 description: Getting Started with MBAM 1.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 4fab4e4a-d25e-4661-b235-2b45bf5ac3e4
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

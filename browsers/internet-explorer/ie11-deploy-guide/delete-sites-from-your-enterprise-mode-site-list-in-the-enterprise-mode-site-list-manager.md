@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 41413459-b57f-48da-aedb-4cbec1e2981a
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Delete sites from your Enterprise Mode site list in the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

@@ -309,13 +309,13 @@ Sign-in a workstation with access equivalent to a _domain user_.
 ![Intune Windows Hello for Business policy settings](images/aadj/IntuneWHFBPolicy-01.png)
 
 11. Select the appropriate configuration for the following settings.
-   * **Lowercase letters in PIN**
-   * **Uppercase letters in PIN**
-   * **Special characters in PIN**
-   * **PIN expiration (days)**
-   * **Remember PIN history**
-     > [!NOTE]
-     > The Windows Hello for Business PIN is not a symmetric key (a password).  A copy of the current PIN is not stored locally or on a server like in the case of passwords.  Making the PIN as complex and changed frequently as a password increases the likelihood of forgotten PINs.  Additionally, enabling PIN history is the only scenario that requires Windows 10 to store older PIN combinations (protected to the current PIN). Windows Hello for Business combined with a TPM provides anti-hammering functionality that prevents brute force attacks of the user's PIN.  If you are concerned with user-to-user shoulder surfacing, rather that forcing complex PIN that change frequently, consider using the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
+    * **Lowercase letters in PIN**
+    * **Uppercase letters in PIN**
+    * **Special characters in PIN**
+    * **PIN expiration (days)**
+    * **Remember PIN history**
+    > [!NOTE]
+    > The Windows Hello for Business PIN is not a symmetric key (a password).  A copy of the current PIN is not stored locally or on a server like in the case of passwords.  Making the PIN as complex and changed frequently as a password increases the likelihood of forgotten PINs.  Additionally, enabling PIN history is the only scenario that requires Windows 10 to store older PIN combinations (protected to the current PIN). Windows Hello for Business combined with a TPM provides anti-hammering functionality that prevents brute force attacks of the user's PIN.  If you are concerned with user-to-user shoulder surfacing, rather that forcing complex PIN that change frequently, consider using the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
 
 12. Select **Yes** next to **Allow biometric authentication** if you want to allow users to use biometrics (fingerprint and/or facial recognition) to unlock the device.  To further secure the use of biometrics, select **Yes** to **Use enhanced anti-spoofing, when available**.
 13. Select **No** to **Allow phone sign-in**.  This feature has been deprecated.

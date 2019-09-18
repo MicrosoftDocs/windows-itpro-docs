@@ -10,7 +10,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 07/1/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
 # How to pack and ship your Surface Hub 2S for service

@@ -61,7 +61,7 @@ machineId | String | Id of the machine on which the event was identified. **Requ
 severity | String | Severity of the alert. The property values are: 'Low', 'Medium' and 'High'. **Required**.
 title | String | Title for the alert. **Required**.
 description | String | Description of the alert. **Required**.
-recommendedAction| String | Action that is recommended to be taken by security officer when analyzing the alert.
+recommendedAction| String | Action that is recommended to be taken by security officer when analyzing the alert. **Required**.
 eventTime | DateTime(UTC) | The time of the event, as obtained from the advanced query. **Required**.
 reportId | String | The reportId, as obtained from the advanced query. **Required**.
 category| String | Category of the alert. The property values are: 'None', 'SuspiciousActivity', 'Malware', 'CredentialTheft', 'Exploit', 'WebExploit', 'DocumentExploit', 'PrivilegeEscalation', 'Persistence', 'RemoteAccessTool', 'CommandAndControl', 'SuspiciousNetworkTraffic', 'Ransomware', 'MalwareDownload', 'Reconnaissance', 'WebFingerprinting', 'Weaponization', 'Delivery', 'SocialEngineering', 'CredentialStealing', 'Installation', 'Backdoor', 'Trojan', 'TrojanDownloader', 'LateralMovement', 'ExplorationEnumeration', 'NetworkPropagation', 'Exfiltration', 'NotApplicable', 'EnterprisePolicy' and	'General'.

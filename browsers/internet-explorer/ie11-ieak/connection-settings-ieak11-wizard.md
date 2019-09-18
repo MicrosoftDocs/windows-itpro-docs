@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: dc93ebf7-37dc-47c7-adc3-067d07de8b78
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the Connection Settings page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

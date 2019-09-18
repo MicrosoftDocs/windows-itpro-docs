@@ -3,7 +3,7 @@ title: Microsoft Edge system and language requirements
 description: Overview information about Microsoft Edge, the default browser for Windows 10. This topic includes links to other Microsoft Edge topics.
 ms.assetid: 70377735-b2f9-4b0b-9658-4cf7c1d745bb
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: eravena
 author: eavena
 ms.prod: edge
@@ -45,7 +45,7 @@ Some of the components might also need additional system resources. Check the co
 
 ## Supported languages
 
-Microsoft Edge supports all of the same languages as Windows 10 and you can use the [Microsoft Translator extension](https://www.microsoft.com/en-us/p/translator-for-microsoft-edge/9nblggh4n4n3) to translate foreign language web pages and text selections for 60+ languages. 
+Microsoft Edge supports all of the same languages as Windows 10 and you can use the [Microsoft Translator extension](https://www.microsoft.com/p/translator-for-microsoft-edge/9nblggh4n4n3) to translate foreign language web pages and text selections for 60+ languages. 
 
 If the extension does not work after install, restart Microsoft Edge. If the extension still does not work, provide feedback through the Feedback Hub.
 

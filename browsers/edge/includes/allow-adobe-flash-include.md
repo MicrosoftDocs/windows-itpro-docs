@@ -3,6 +3,7 @@ author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
 ms.reviewer: 
+audience: itpro
 manager: dansimp
 ms.prod: edge
 ms.topic: include
@@ -34,7 +35,7 @@ ms.topic: include
 #### MDM settings
 - **MDM name:** Browser/[AllowFlash](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser\#browser-allowflash)
 - **Supported devices:** Desktop
-- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowAdobeFlash 
+- **URI full path:** ./Vendor/MSFT/Policy/Config/Browser/AllowFlash 
 - **Data type:** Integer
 
 #### Registry settings

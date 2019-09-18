@@ -1,7 +1,7 @@
 ---
 title: Server Management Console Packages Node
 description: Server Management Console Packages Node
-author: eavena
+author: dansimp
 ms.assetid: 458424f6-d586-4fa8-bf61-44c5028a4490
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

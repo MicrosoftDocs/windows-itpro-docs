@@ -4,7 +4,7 @@ description: Microsoft Edge, by default, shows a list of search suggestions in t
 services: 
 keywords: 
 ms.localizationpriority: medium
-manager: dansimp
+audience: itpromanager: dansimp
 author: eavena
 ms.author: eravena
 ms.date: 10/02/2018

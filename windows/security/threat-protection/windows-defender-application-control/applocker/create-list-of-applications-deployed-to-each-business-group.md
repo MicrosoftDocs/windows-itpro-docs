@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Create a list of apps deployed to each business group
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic describes the process of gathering app usage requirements from each business group in order to implement application control policies by using AppLocker.
 

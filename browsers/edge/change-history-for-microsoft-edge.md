@@ -6,7 +6,7 @@ ms.topic: reference
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.localizationpriority: medium
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: eravena
 author: eavena
 ms.date: 10/02/2018

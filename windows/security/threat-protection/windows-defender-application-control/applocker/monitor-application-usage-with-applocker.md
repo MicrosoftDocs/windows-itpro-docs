@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Monitor app usage with AppLocker
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes how to monitor app usage when AppLocker policies are applied.
 

@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Script rules in AppLocker
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic describes the file formats and available default rules for the script rule collection.
 

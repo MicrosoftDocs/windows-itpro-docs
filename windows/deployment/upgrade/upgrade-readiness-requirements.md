@@ -5,7 +5,7 @@ manager: laurawi
 description: Provides requirements for Upgrade Readiness.
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics,
 ms.prod: w10
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.author: greglin
 ms.localizationpriority: medium
 ms.topic: article
@@ -31,7 +31,7 @@ If you need to update user computers to Windows 7 SP1 or Windows 8.1, use Window
 > [!NOTE]
 > Upgrade Readiness is designed to best support in-place upgrades. In-place upgrades do not support migrations from BIOS to UEFI or from 32-bit to 64-bit architecture. If you need to migrate computers in these scenarios, use the wipe-and-reload method. Upgrade Readiness insights are still valuable in this scenario, however, you can ignore in-place upgrade specific guidance.
 
-See [Windows 10 Specifications](https://www.microsoft.com/en-US/windows/windows-10-specifications) for additional information about computer system requirements.
+See [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications) for additional information about computer system requirements.
 
 ### Windows 10
 

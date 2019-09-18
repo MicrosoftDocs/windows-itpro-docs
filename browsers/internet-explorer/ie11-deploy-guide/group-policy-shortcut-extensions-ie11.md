@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: c6fbf990-13e4-4be7-9f08-5bdd43179b3b
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Group Policy, Shortcut Extensions, and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

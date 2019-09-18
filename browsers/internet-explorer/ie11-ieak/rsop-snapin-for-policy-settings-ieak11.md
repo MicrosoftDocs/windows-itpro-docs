@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 0f21b320-e879-4a06-8589-aae6fc264666
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the RSoP snap-in to review policy settings (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

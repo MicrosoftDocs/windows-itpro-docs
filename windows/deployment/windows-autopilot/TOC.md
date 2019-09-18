@@ -26,3 +26,4 @@
 ## [Contacts](autopilot-support.md)
 ## [Registration authorization](registration-auth.md)
 ## [Device guidelines](autopilot-device-guidelines.md)
+## [Motherboard replacement](autopilot-mbr.md)

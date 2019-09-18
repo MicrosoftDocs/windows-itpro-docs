@@ -19,7 +19,7 @@ ms.topic: conceptual
 
 # Overview of Automated investigations
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 
 The Microsoft Defender ATP service has a wide breadth of visibility on multiple machines. With this kind of optics, the service generates a multitude of alerts. The volume of alerts generated can be challenging for a typical security operations team to individually address.
 
@@ -40,7 +40,7 @@ Entities are the starting point for Automated investigations. When an alert cont
 >- Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/en-us/help/4493464/windows-10-update-kb4493464)) or later
 >- Later versions of Windows 10
 
-The alerts start by analyzing the supported entities from the alert and also runs a generic machine playbook to see if there is anything else suspicious on that machine. The outcome and details from the investigation is seen in the Automated investigation view.
+The Automated investigation starts by analyzing the supported entities from the alert and also runs a generic machine playbook to see if there is anything else suspicious on that machine. The outcome and details from the investigation is seen in the Automated investigation view.
 
 ### Details of an Automated investigation
 

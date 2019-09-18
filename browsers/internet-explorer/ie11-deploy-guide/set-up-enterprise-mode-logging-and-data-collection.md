@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 2e98a280-f677-422f-ba2e-f670362afcde
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Set up Enterprise Mode logging and data collection (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

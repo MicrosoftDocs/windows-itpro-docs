@@ -741,27 +741,6 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Security policies supported by HoloLens 2
-
-- [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
-<!--EndHoloLens2-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Security policies supported by HoloLens (1st gen) Commercial Suite
-
-- [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
-<!--EndHoloLensBusiness-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Security policies supported by HoloLens (1st gen) Development Edition
-
-- [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
-<!--EndHoloLens-->
-
 <hr/>
 
 Footnotes:
@@ -772,3 +751,4 @@ Footnotes:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
+<!--/Policies-->

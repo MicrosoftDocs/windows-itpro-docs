@@ -1,7 +1,7 @@
 ---
 title: Server Management Console Application Licenses Node
 description: Server Management Console Application Licenses Node
-author: eavena
+author: dansimp
 ms.assetid: ad3fa486-2b3c-4efd-91f5-507e9c5057d5
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

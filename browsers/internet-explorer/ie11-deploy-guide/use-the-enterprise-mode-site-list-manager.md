@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: f4dbed4c-08ff-40b1-ab3f-60d3b6e8ec9b
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

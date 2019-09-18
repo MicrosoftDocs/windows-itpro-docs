@@ -176,7 +176,7 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 2.  [Export the Start layout](#export-the-start-layout).
 3.  Open the layout .xml file. There is a `<DefaultLayoutOverride>` element. Add `LayoutCustomizationRestrictionType="OnlySpecifiedGroups"` to the **DefaultLayoutOverride** element as follows:
 
-    ``` syntax
+    ```xml
     <DefaultLayoutOverride LayoutCustomizationRestrictionType="OnlySpecifiedGroups">
     ```
 

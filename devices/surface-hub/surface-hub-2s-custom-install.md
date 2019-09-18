@@ -10,7 +10,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
 # Customize wall mount of Surface Hub 2S

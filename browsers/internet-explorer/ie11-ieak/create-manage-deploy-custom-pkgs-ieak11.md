@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: fe71c603-bf07-41e1-a477-ade5b28c9fb3
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Tasks and references to consider before creating and deploying custom packages using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

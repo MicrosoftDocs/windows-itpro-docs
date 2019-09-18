@@ -138,7 +138,7 @@ This event generates when a logon session is created (on destination machine). I
 
 -   **Logon ID** \[Type = HexInt64\]**:** hexadecimal value that can help you correlate this event with recent events that might contain the same Logon ID, for example, “[4672](event-4672.md)(S): Special privileges assigned to new logon.”
 
-**Logon Information** \[Version 2\]**: **
+**Logon Information** \[Version 2\]**:**
 
 -   **Logon Type** \[Version 0, 1, 2\] \[Type = UInt32\]**:** the type of logon which was performed. The table below contains the list of possible values for this field.
 

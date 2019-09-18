@@ -1,7 +1,7 @@
 ---
 title: Deploying MBAM 1.0
 description: Deploying MBAM 1.0
-author: msfttracyp
+author: dansimp
 ms.assetid: ff952ed6-08b2-4ed0-97b8-bf89f22cccbc
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

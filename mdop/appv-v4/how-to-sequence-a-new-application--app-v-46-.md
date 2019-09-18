@@ -1,7 +1,7 @@
 ---
 title: How to Sequence a New Application (App-V 4.6)
 description: How to Sequence a New Application (App-V 4.6)
-author: eavena
+author: dansimp
 ms.assetid: f2c398c6-9200-4be3-b502-e00386fcd150
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

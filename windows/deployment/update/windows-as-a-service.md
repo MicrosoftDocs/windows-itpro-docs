@@ -4,8 +4,8 @@ ms.prod: windows-10
 layout: LandingPage  
 ms.topic: landing-page
 ms.manager: elizapo
-author: greg-lindsay
-ms.author: greg-lindsay
+audience: itproauthor: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
 ms.date: 01/24/2019
 ms.reviewer: 
 manager: laurawi
@@ -80,7 +80,7 @@ Prepare to implement Windows as a service effectively using the right tools, pro
 
 <img src="images/plan-land.png" alt="" />
 
-<a href="https://www.microsoft.com/en-us/windowsforbusiness/simplified-updates">Simplified updates</a>
+<a href="https://www.microsoft.com/windowsforbusiness/simplified-updates">Simplified updates</a>
 
 <a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness">Windows 10 end user readiness</a>
 

@@ -17,7 +17,7 @@ ms.topic: troubleshooting
  
 ## Overview
 
-This is a general troubleshooting of 802.1X wireless and wired clients. With 802.1X and wireless troubleshooting, it's important to know how the flow of authentication works, and then figuring out where it's breaking. It involves a lot of third party devices and software. Most of the time, we have to identify where the problem is, and another vendor has to fix it. Since we don't make access points or wwitches, it won't be an end-to-end Microsoft solution.
+This is a general troubleshooting of 802.1X wireless and wired clients. With 802.1X and wireless troubleshooting, it's important to know how the flow of authentication works, and then figuring out where it's breaking. It involves a lot of third party devices and software. Most of the time, we have to identify where the problem is, and another vendor has to fix it. Since we don't make access points or switches, it won't be an end-to-end Microsoft solution.
  
 ## Scenarios
 

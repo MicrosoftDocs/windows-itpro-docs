@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 098707e9-d712-4297-ac68-7d910ca8f43b
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the CabSigning .INS file to customize the digital signature info for your apps (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

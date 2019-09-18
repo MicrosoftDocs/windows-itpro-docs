@@ -1,7 +1,7 @@
 ---
 title: Server Management Console Server Groups Node
 description: Server Management Console Server Groups Node
-author: eavena
+author: dansimp
 ms.assetid: 83b86fc5-3f77-4470-985a-cf0bb8686067
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

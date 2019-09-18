@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 7ae4e747-49d2-4551-8790-46a61b5fe838
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the Add a Root Certificate page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

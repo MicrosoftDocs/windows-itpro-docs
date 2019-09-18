@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -169,6 +169,17 @@ You can try any of the processes included in these scenarios, but you should foc
         <td>
             <ul>
                 <li>Check that protected app data doesn&#39;t appear on the Lock screen of a Windows 10 Mobile phone.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Stop Google Drive from syncing WIP protected files and folders.</td>
+        <td>
+            <ul>
+                <li>In silent configuration, add Google Drive to Protected Apps and set it to Deny. This way, Google Drive will not sync WIP protected files and folders.</li>
+                <li>Google Drive details</li>
+                Publisher=O=GOOGLE LLC, L=MOUNTAIN VIEW, S=CA, C=US
+                File=GOOGLEDRIVESYNC.EXE
             </ul>
         </td>
     </tr>

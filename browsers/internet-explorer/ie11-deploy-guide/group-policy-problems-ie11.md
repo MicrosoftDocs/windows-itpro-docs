@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 0da0d9a9-200c-46c4-96be-630e82de017b
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Group Policy problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

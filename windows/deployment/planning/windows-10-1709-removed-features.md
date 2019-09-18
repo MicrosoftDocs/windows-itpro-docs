@@ -5,6 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
+audience: ITPro
 author: greg-lindsay
 manager: laurawi
 ms.topic: article
@@ -20,10 +21,10 @@ This list is intended to help customers consider these removals and deprecations
 For more information about a listed feature or functionality and its replacement, see the documentation for that feature. You can also follow the provided links in this table to see additional resources. 
 
 | Feature  | Removed | Not actively developed |
-|----------|---------|------------|
+-|-|-
 |**3D Builder app**  <br> No longer installed by default. Consider using Print 3D and Paint 3D in its place. However, 3D Builder is still available for download from the Windows Store. | X | |
 |**Apndatabase.xml**  <br>    For more information about the replacement database, see the following Hardware Dev Center articles: <br> [MO Process to update COSA](/windows-hardware/drivers/mobilebroadband/planning-your-apn-database-submission) <br> [COSA FAQ](/windows-hardware/drivers/mobilebroadband/cosa---faq) | X | |
-|**Enhanced Mitigation Experience Toolkit (EMET)**  <br>Use will be blocked. Consider using the [Exploit Protection](https://blogs.windows.com/windowsexperience/2017/06/28/announcing-windows-10-insider-preview-build-16232-pc-build-15228-mobile/#fMH3bUDAb5HEstZ5.97) feature of Windows Defender Exploit Guard as a replacement.| X | |
+|**Enhanced Mitigation Experience Toolkit (EMET)**  <br>Use will be blocked. Consider using [Exploit Protection](https://blogs.windows.com/windowsexperience/2017/06/28/announcing-windows-10-insider-preview-build-16232-pc-build-15228-mobile/#fMH3bUDAb5HEstZ5.97) as a replacement.| X | |
 |**IIS 6 Management Compatibility**  <br> We recommend that users use alternative scripting tools and a newer management console. | | X |
 |**IIS Digest Authentication**  <br> We recommend that users use alternative authentication methods.| | X |
 |**Microsoft Paint**  <br> Will be available through the Windows Store. Functionality integrated into Paint 3D.| | X |

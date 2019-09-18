@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: e33bbfeb-6b80-4e71-8bba-1d0369a87312
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Group Policy management tools (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

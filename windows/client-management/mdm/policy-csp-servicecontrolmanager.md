@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - ServiceControlManager
 description: Policy CSP - ServiceControlManager
-ms.author: Heidi.Lohr
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

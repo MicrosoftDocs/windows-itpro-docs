@@ -13428,7 +13428,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove "Run this time" button for outdated ActiveX controls in Internet Explorer *
+-   GP English name: *Remove "Run this time" button for outdated ActiveX controls in Internet Explorer*
 -   GP name: *VerMgmtDisableRunThisTime*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
 -   GP ADMX file name: *inetres.admx*
@@ -16504,7 +16504,7 @@ Also, see the "Security zones: Do not allow users to change policies" policy.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Security Zones: Use only machine settings *
+-   GP English name: *Security Zones: Use only machine settings*
 -   GP name: *Security_HKLM_only*
 -   GP path: *Windows Components/Internet Explorer*
 -   GP ADMX file name: *inetres.admx*
@@ -17427,38 +17427,6 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens-->
-
-<!--EndHoloLens-->
-
-<!--StartHoloLensBusiness-->
-
-<!--EndHoloLensBusiness-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>InternetExplorer policies supported by IoT Core  
-
-- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)  
-- [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
-- [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
-<!--EndIoTCore-->
-
-<!--StartIoTEnterprise-->
-## <a href="" id="iotcore"></a>InternetExplorer policies supported by IoT Enterprise  
-
-- [InternetExplorer/AllowEnhancedSuggestionsInAddressBar](#internetexplorer-allowenhancedsuggestionsinaddressbar)
-- [InternetExplorer/DisableActiveXVersionListAutoDownload](#internetexplorer-disableactivexversionlistautodownload)
-- [InternetExplorer/DisableCompatView](#internetexplorer-disablecompatview)
-- [InternetExplorer/DisableFeedsBackgroundSync](#internetexplorer-disablefeedsbackgroundsync)
-- [InternetExplorer/DisableGeolocation](#internetexplorer-disablegeolocation)
-- [InternetExplorer/DisableWebAddressAutoComplete](#internetexplorer-disablewebaddressautocomplete)
-- [InternetExplorer/NewTabDefaultPage](#internetexplorer-newtabdefaultpage)
-<!--EndIoTEnterprise-->
-
-
 <hr/>
 
 Footnotes:
@@ -17469,3 +17437,7 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+<!--/Policies-->
+
+
+

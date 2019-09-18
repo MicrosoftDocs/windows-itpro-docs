@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 33d078e3-75b8-455b-9126-f0d272ed676f
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the Internal Install page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

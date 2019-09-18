@@ -6,11 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 02/13/2018
 ms.reviewer: 
 manager: laurawi
-ms.author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -452,5 +452,5 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
 ## Related topics
 
 [Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
-<BR>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
+<BR>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 <BR>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)

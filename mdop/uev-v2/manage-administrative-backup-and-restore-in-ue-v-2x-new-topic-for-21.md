@@ -1,7 +1,7 @@
 ---
 title: Manage Administrative Backup and Restore in UE-V 2.x
 description: Manage Administrative Backup and Restore in UE-V 2.x
-author: levinec
+author: dansimp
 ms.assetid: 2eb5ae75-65e5-4afc-adb6-4e83cf4364ae
 ms.reviewer: 
 manager: dansimp

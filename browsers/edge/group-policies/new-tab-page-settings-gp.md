@@ -1,7 +1,7 @@
 ---
 title: Microsoft Edge - New Tab page group policies
 description: Microsoft Edge loads the default New tab page by default.  With the relevant New Tab policies, you can set a URL to load in the New Tab page and prevent users from making changes.  You can also load a blank page instead or let the users choose what loads.
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: eravena
 author: eavena
 ms.date: 10/02/2018

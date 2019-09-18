@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: ae3d227d-3da7-46b8-8a61-c71bfeae0c63
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Group Policy, the Group Policy Management Console (GPMC), and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

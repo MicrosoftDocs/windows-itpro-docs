@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 8257aa41-58de-4339-81dd-9f2ffcc10a08
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use Setup information (.inf) files to uninstall custom components (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

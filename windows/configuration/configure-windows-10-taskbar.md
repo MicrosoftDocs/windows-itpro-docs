@@ -2,7 +2,7 @@
 title: Configure Windows 10 taskbar (Windows 10)
 description: Admins can pin apps to users' taskbars. 
 keywords: ["taskbar layout","pin apps"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: dansimp

@@ -26,7 +26,7 @@ ms.date: 04/24/2018
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
 
 Investigate alerts that are affecting your network, understand what they mean, and how to resolve them.
 

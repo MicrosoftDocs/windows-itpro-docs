@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-threatindicator-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-threatindicator-abovefoldlink) 
 
 Advanced cybersecurity attacks comprise of multiple complex malicious events, attributes, and contextual information. Identifying and deciding which of these activities qualify as suspicious can be a challenging task. Your knowledge of known attributes and abnormal activities specific to your industry is fundamental in knowing when to call an observed behavior as suspicious.
 
@@ -44,9 +44,9 @@ In the context of Microsoft Defender ATP, alert definitions are containers for I
 Each IOC defines the concrete detection logic based on its type and value as well as its action, which determines how it is matched. It is bound to a specific alert definition that defines how a detection is displayed as an alert on the Microsoft Defender ATP console.
 
 Here is an example of an IOC:
-  - Type: Sha1
-  - Value:  92cfceb39d57d914ed8b14d0e37643de0797ae56
-  - Action: Equals
+- Type: Sha1
+- Value:  92cfceb39d57d914ed8b14d0e37643de0797ae56
+- Action: Equals
 
 IOCs have a many-to-one relationship with alert definitions such that an alert definition can have many IOCs that correspond to it.
 

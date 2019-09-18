@@ -9,13 +9,22 @@ ms.pagetype: edu
 ms.localizationpriority: medium  
 author: mjcaparas
 ms.author: macapara
-ms.date: 06/03/2019 
+ms.date: 08/15/2019 
 ms.reviewer: 
 manager: dansimp
 ---  
 
 # What's new in Set up School PCs
 Learn what’s new with the Set up School PCs app each week. Find out about new app features and functionality, and see updated screenshots. You'll also find information about past releases.   
+
+
+## Week of June 24, 2019  
+
+### Resumed support for Windows 10, version 1903 and later   
+The previously mentioned provisioning problem was resolved, so the Set up School PCs app once again supports Windows 10, version 1903 and later. The Windows 10 settings that were removed are now back in the app. 
+
+### Device rename made optional for Azure AD joined devices  
+When you set up your Azure AD join devices in the Set up School PCs app, you no longer need to rename your devices. Set up School PCs will let you keep existing device names.  
 
 ## Week of May 23, 2019   
 

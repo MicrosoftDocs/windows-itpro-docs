@@ -25,7 +25,7 @@ ms.topic: article
  
 [!include[Prerelease information](prerelease.md)]
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-responddile-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
 Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check activity details in the Action center.
 
@@ -36,9 +36,22 @@ Response actions run along the top of the file page, and include:
 - Stop and Quarantine File
 - Add Indicator
 - Download file
+- Consult a threat expert
 - Action center
 
 You can also submit files for deep analysis, to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. You can submit files for deep analysis and read past reports by selecting the **Deep analysis** tab. It's located below the file information cards.
+
+Some actions require certain permissions. The following table describes what action certain permissions can take on portable executable (PE) and non-PE files:
+
+Permission | PE files | Non-PE files
+:---|:---|:---
+View data | X | X
+Alerts investigation | &#x2611; | X
+Live response basic | X | X
+Live response advanced | &#x2611; |&#x2611;
+
+For more information on roles, see [Create and manage roles for role-based access control](user-roles.md).
+
 
 ## Stop and quarantine files in your network
 
@@ -63,7 +76,7 @@ This action takes effect on machines with Windows 10, version 1703 or later, whe
 1. Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
 
     - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
-    - **Search box** - select File from the drop–down menu and enter the file name
+    - **Search box** - select **File** from the drop–down menu and enter the file name
 
 2. Go to the top bar and select **Stop and Quarantine File**.
 
@@ -98,7 +111,7 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 
 1. Open an elevated command–line prompt on the machine:
 
-    a. Go to **Start** and type cmd.
+    a. Go to **Start** and type _cmd_.
 
     b. Right–click **Command prompt** and select **Run as administrator**.
 
@@ -156,6 +169,26 @@ When you select this action, a fly-out will appear. From the fly-out, you can re
 ![Image of download file fly-out](images/atp-download-file.png)
 
 If a file is not already stored by Microsoft Defender ATP, you cannot download it. Instead, you will see a **Collect file** button in the same location. If a file has not been seen in the organization in the past 30 days, **Collect file** will be disabled.
+
+## Consult a threat expert
+
+You can consult a Microsoft threat expert for more insights regarding a potentially compromised machine or already compromised ones. Microsoft Threat Experts can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights not just regarding a potentially compromised machine, but also to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, or a threat intelligence context that you see on your portal dashboard.
+
+See [Consult a Microsoft Threat Expert](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) for details.
+
+## Check activity details in Action center
+
+The **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view the following details:
+
+- Investigation package collection
+- Antivirus scan
+- App restriction
+- Machine isolation
+
+All other related details are also shown, for example, submission date/time, submitting user, and if the action succeeded or failed.
+
+![Image of action center with information](images/action-center-details.png)
+
 
 ## Deep analysis
 

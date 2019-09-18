@@ -2,11 +2,11 @@
 title: Windows 10, version 1703 removed features
 description: Learn about features that were removed in Windows 10, version 1703
 ms.prod: w10
+manager: laurawi
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-author: lizap
-ms.date: 10/09/2017
+author: greg-lindsay
 ms.topic: article
 ---
 # Features that are removed or deprecated in Windows 10, version 1703

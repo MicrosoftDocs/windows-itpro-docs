@@ -9,7 +9,7 @@ title: Verify the change request update in the production environment using the 
 ms.sitesec: library
 ms.date: 07/27/2017
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 ---
 

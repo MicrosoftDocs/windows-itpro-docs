@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: bddc8f23-9ac1-449d-ad71-f77f43ae3b5c
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Customize the toolbar button and Favorites List icons using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

@@ -1,7 +1,7 @@
 ---
 title: DaRT 8.0 Planning Checklist
 description: DaRT 8.0 Planning Checklist
-author: msfttracyp
+author: dansimp
 ms.assetid: 0a0f5a71-b1d6-424c-8174-fc5aad506928
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -27,7 +27,7 @@ The child node names of the result from a WMI query are separated by a forward s
 
 Get the list of network adapters from the device.
 
-``` syntax
+```xml
 <Get>
    <Target>
       <LocURI>./cimV2/Win32_NetworkAdapter</LocURI>
@@ -37,7 +37,7 @@ Get the list of network adapters from the device.
 
 Result
 
-``` syntax
+```xml
 <Item>
    <Source>
       <LocURI>./cimV2/Win32_NetworkAdapter</LocURI>

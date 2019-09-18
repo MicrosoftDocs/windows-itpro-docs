@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 76aa9a85-6190-4c3a-bc25-0f914de228ea
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Edit the Enterprise Mode site list using the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

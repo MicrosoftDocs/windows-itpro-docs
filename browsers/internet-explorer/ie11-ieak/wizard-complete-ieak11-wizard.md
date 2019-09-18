@@ -6,7 +6,7 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: aaaac88a-2022-4d0b-893c-b2404b45cabc
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: dansimp
 title: Use the Wizard Complete - Next Steps page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

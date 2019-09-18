@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: caca18c1-d5c4-4404-84f8-d02bc562915f
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Install and Deploy Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

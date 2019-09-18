@@ -2,8 +2,6 @@
 title: Known issues and additional information about Microsoft Surface Hub
 description: Outlines known issues with Microsoft Surface Hub.
 ms.assetid: aee90a0c-fb05-466e-a2b1-92de89d0f2b7
-ms.reviewer: 
-manager: 
 keywords: surface, hub, issues
 ms.prod: surface-hub
 ms.sitesec: library

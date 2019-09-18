@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: f2264c97-7f09-4f28-bb5c-58ab80dcc6ee
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Group policy preferences and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

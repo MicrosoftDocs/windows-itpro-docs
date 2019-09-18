@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: levinec
+ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
@@ -50,4 +50,4 @@ To be eligible for VIA your organization must:
 
 3. Be willing to sign and adhere to the VIA membership agreement.
 
-If your organization meets these criteria and is interested in joining, [apply for membership now](https://www.microsoft.com/en-us/wdsi/alliances/apply-alliance-membership). If you have questions, [contact us for more information](https://www.microsoft.com/en-us/wdsi/alliances/collaboration-inquiry).
+If your organization meets these criteria and is interested in joining, [apply for membership now](https://www.microsoft.com/wdsi/alliances/apply-alliance-membership). If you have questions, [contact us for more information](https://www.microsoft.com/wdsi/alliances/collaboration-inquiry).

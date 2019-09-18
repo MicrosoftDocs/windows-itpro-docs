@@ -21,8 +21,9 @@
 ### [Configure Easy Authentication for Surface Hub 2S](surface-hub-2s-phone-authenticate.md)
 
 ## Deploy
-### [Surface Hub 2S adoption toolkit](surface-hub-2s-adoption-kit.md)
+### [Surface Hub 2S adoption and training](surface-hub-2s-adoption-kit.md)
 ### [First time setup for Surface Hub 2S](surface-hub-2s-setup.md)
+### [Connect devices to Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Surface Hub 2S deployment checklist](surface-hub-2s-deploy-checklist.md)
 ### [Create Surface Hub 2S device account](surface-hub-2s-account.md)
 ### [Create provisioning packages for Surface Hub 2S](surface-hub-2s-deploy.md)
@@ -43,7 +44,7 @@
 ### [Secure and manage Surface Hub 2S with SEMM and UEFI](surface-hub-2s-secure-with-uefi-semm.md)
 ### [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md)
 
-## Support
+## Troubleshoot
 ### [Recover and reset Surface Hub 2S](surface-hub-2s-recover-reset.md)
 ### [Troubleshoot Miracast on Surface Hub](miracast-troubleshooting.md)
 ### [How to pack and ship your Surface Hub 2S for service](surface-hub-2s-pack-components.md)
@@ -105,7 +106,7 @@
 ### [Save your BitLocker key](save-bitlocker-key-surface-hub.md)
 ### [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md)
 
-## Support
+## Troubleshoot
 ### [Using the Surface Hub Recovery Tool](surface-hub-recovery-tool.md)
 ### [Surface Hub SSD replacement](surface-hub-ssd-replacement.md)
 

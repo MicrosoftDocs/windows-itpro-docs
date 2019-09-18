@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: c57bae60-d520-49a9-a77d-da43f7ebe5b8
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the Media .INS file to specify your install media (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

@@ -1,7 +1,7 @@
 ---
 title: Publishing Virtual Applications Using Application Virtualization Management Servers
 description: Publishing Virtual Applications Using Application Virtualization Management Servers
-author: eavena
+author: dansimp
 ms.assetid: f3d79284-3f82-4ca3-b741-1a80b61490da
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

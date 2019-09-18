@@ -1,7 +1,7 @@
 ---
 title: How to Move an Application Group
 description: How to Move an Application Group
-author: eavena
+author: dansimp
 ms.assetid: 7f9f9f2e-f394-4ad3-8615-4237a7dcfb95
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -20,9 +20,9 @@ manager: dansimp
 -   Windows 10 
 
 You have two tools to choose from to set up PCs for your classroom: 
-  * Set up School PCs 
-  * Windows Configuration Designer
-  
+* Set up School PCs 
+* Windows Configuration Designer
+
 Choose the tool that is appropriate for how your students will sign in (Active Directory, Azure Active Directory, or no account). 
 
 You can use the following diagram to compare the tools.

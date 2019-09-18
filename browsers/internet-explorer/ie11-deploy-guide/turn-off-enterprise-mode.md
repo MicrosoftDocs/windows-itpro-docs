@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 5027c163-71e0-49b8-9dc0-f0a7310c7ae3
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Turn off Enterprise Mode (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

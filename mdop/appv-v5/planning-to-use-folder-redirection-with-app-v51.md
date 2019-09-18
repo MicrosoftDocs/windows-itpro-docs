@@ -1,7 +1,7 @@
 ---
 title: Planning to Use Folder Redirection with App-V
 description: Planning to Use Folder Redirection with App-V
-author: msfttracyp
+author: dansimp
 ms.assetid: 6bea9a8f-a915-4d7d-be67-ef1cca1398ed
 ms.reviewer: 
 manager: dansimp

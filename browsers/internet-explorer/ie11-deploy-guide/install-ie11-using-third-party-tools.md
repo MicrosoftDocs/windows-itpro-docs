@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 30190c66-49f7-4ca4-8b57-a47656aa0c7e
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Install Internet Explorer 11 (IE11) using third-party tools (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

@@ -56,7 +56,7 @@ You can opt-in to Microsoft Update on the mobile device in one of the following 
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates**.
 
-6.  Double-click the **Allow definition updates from Microsoft Update** setting and set the option to **Enabled**. Click **OK**.
+6.  Double-click the **Allow security intelligence updates from Microsoft Update** setting and set the option to **Enabled**. Click **OK**.
 
 
 **Use a VBScript to opt-in to Microsoft Update**
@@ -75,7 +75,7 @@ You can opt-in to Microsoft Update on the mobile device in one of the following 
 
 You can configure Windows Defender Antivirus to only download protection updates when the PC is connected to a wired power source. 
 
-**Use Group Policy to prevent definition updates on battery power:**
+**Use Group Policy to prevent security intelligence updates on battery power:**
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -85,7 +85,7 @@ You can configure Windows Defender Antivirus to only download protection updates
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates** and configure the following setting:
 
-    1. Double-click the **Allow definition updates when running on battery power** setting and set the option to **Disabled**. 
+    1. Double-click the **Allow security intelligence updates when running on battery power** setting and set the option to **Disabled**. 
     2. Click **OK**. This will prevent protection updates from downloading when the PC is on battery power.
 
 

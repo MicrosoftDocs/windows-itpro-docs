@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,22 +21,20 @@ ms.topic: article
 
 **Applies to:**
 
-- Windows Server 2008 R2 SP1 (pre-release)
+- Windows Server 2008 R2 SP1
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
 - Windows Server, 2019
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configserver-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
 
 Microsoft Defender ATP extends support to also include the Windows Server operating system, providing advanced attack detection and investigation capabilities, seamlessly through the Microsoft Defender Security Center console.
 
 The service supports the onboarding of the following servers:
-- Windows Server 2008 R2 SP1 (pre-release)
+- Windows Server 2008 R2 SP1 
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
@@ -66,7 +65,7 @@ You'll need to take the following steps if you choose to onboard servers through
 - For Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
     - Install the [February monthly update rollup](https://support.microsoft.com/en-us/help/4074598/windows-7-update-kb4074598)
     - Install the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/en-us/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
-    - Install either [.NET framework 4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
+    - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
 
 - For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: Configure and update System Center Endpoint Protection clients.
@@ -75,7 +74,7 @@ You'll need to take the following steps if you choose to onboard servers through
     >This step is required only if your organization uses System Center Endpoint Protection (SCEP) and you're onboarding Windows Server 2008 R2 SP1 and Windows Server 2012 R2.
 
 - Turn on server monitoring from Microsoft Defender Security Center.
-- If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), simply attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multi Homing support. Otherwise, install and configure MMA to report sensor data to Microsoft Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
+- If you're already leveraging System Center Operations Manager (SCOM) or Azure Monitor (formerly known as Operations Management Suite (OMS)), simply attach the Microsoft Monitoring Agent (MMA) to report to your Microsoft Defender ATP workspace through Multihoming support. Otherwise, install and configure MMA to report sensor data to Microsoft Defender ATP as instructed below. For more information, see [Collect log data with Azure Log Analytics agent](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent).
 
 
 >[!TIP]
@@ -139,13 +138,18 @@ Agent Resource    |    Ports
 ## Windows Server, version 1803 and Windows Server 2019
 To onboard Windows Server, version 1803 or Windows Server 2019, please refer to the supported methods and versions below.
 
+>[!NOTE]
+>The Onboarding package for Windows Server 2019 through System Center Configuration Manager currently ships a script. For more information on how to deploy scripts in System Center Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
+
 Supported tools include:
 - Local script
 - Group Policy 
 - System Center Configuration Manager 2012 / 2012 R2  1511 / 1602
 - VDI onboarding scripts for non-persistent machines
 
-  For more information, see  [Onboard Windows 10 machines](configure-endpoints.md). Support for Windows Server, version 1803 and Windows 2019 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
+For more information, see  [Onboard Windows 10 machines](configure-endpoints.md).
+
+Support for Windows Server, version 1803 and Windows 2019 provides deeper insight into activities happening on the server, coverage for kernel and memory attack detection, and enables response actions on Windows Server endpoint as well. 
 
 1. Configure Microsoft Defender ATP onboarding settings on the server. For more information, see [Onboard Windows 10 machines](configure-endpoints.md). 
 
@@ -162,7 +166,7 @@ Supported tools include:
 
     c. Confirm  that a recent event containing the passive mode event is found:
        
-       ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
+    ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
 3. Run the following command to check if Windows Defender AV is installed:
 
@@ -202,7 +206,7 @@ For other server versions, you have two options to offboard servers from the ser
 >[!NOTE]
 >Offboarding causes the server to stop sending sensor data to the portal but data from the server, including reference to any alerts it has had will be retained for up to 6 months.
 
-### Uninstall servers by uinstalling the MMA agent
+### Uninstall servers by uninstalling the MMA agent
 To offboard the server, you can uninstall the MMA agent from the server or detach it from reporting to your Microsoft Defender ATP workspace. After offboarding the agent, the server will no longer send sensor data to Microsoft Defender ATP.
 For more information, see [To disable an agent](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
 

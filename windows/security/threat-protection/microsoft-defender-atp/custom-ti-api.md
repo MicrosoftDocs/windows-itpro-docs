@@ -25,7 +25,7 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-customti-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-customti-abovefoldlink) 
 
 You can define custom alert definitions and indicators of compromise (IOC) using the threat intelligence API. Creating custom threat intelligence alerts allows you to generate specific alerts that are applicable to your organization.
 

@@ -10,7 +10,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
 # Surface Hub 2S ports and keypad overview
@@ -41,4 +41,3 @@ The figure below shows the location of ports and physical buttons on a keypad at
 | 11 | **Power** | Power device on/off. <br> Use also to navigate display menus and select items. | n/a |
 
  ![Rear facing view of wireless, audio, & related components](images/hub2s-rear.png)
-

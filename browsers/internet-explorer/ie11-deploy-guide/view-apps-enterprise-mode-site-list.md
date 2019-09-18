@@ -9,7 +9,7 @@ title: View the apps included in the active Enterprise Mode Site List from the E
 ms.sitesec: library
 ms.date: 07/27/2017
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 ---
 

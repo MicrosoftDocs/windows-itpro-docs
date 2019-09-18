@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: f9d4ab57-9b1d-4cbc-9398-63f4938df1f6
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Use the Language Selection page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

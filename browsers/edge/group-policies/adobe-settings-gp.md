@@ -4,7 +4,7 @@ description: Adobe Flash Player still has a significant presence on the internet
 services: 
 keywords: 
 ms.localizationpriority: medium
-manager: dansimp
+audience: itpromanager: dansimp
 author: eavena
 ms.author: eravena
 ms.date: 10/02/2018

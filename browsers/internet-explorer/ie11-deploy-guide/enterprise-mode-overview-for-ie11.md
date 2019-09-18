@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: d52ba8ba-b3c7-4314-ba14-0610e1d8456e
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Enterprise Mode for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

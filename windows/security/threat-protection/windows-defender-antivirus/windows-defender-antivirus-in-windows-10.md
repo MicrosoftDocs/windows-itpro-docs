@@ -37,6 +37,10 @@ Next-gen protection services include:
 >- Fast learning (including Block at first sight)
 >- Potentially unwanted application blocking
 
+> [!NOTE]
+> For more information regarding what's new in each Windows version, please refer to [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp).
+
+<a id="sysreq"></a>
 ## Minimum system requirements
 
 Windows Defender Antivirus is our main vehicle for next-gen protection.

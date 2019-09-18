@@ -5,7 +5,7 @@ keywords: education, Microsoft Education, full cloud IT solution, school, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.topic: get-started
+ms.topic: quickstart
 ms.localizationpriority: medium
 ms.pagetype: edu
 author: levinec

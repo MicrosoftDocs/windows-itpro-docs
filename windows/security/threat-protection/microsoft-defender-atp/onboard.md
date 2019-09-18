@@ -9,7 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: mjcaparas
+ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -33,8 +33,8 @@ Topic | Description
 [Configure next generation protection](../windows-defender-antivirus/configure-windows-defender-antivirus-features.md) | Configure next generation protection to catch all types of emerging threats.
 [Configure Secure score dashboard security controls](secure-score-dashboard.md) | Configure the security controls in Secure score to increase the security posture of your organization.
 [Configure Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md) | Configure and manage how you would like to get cybersecurity threat intelligence from Microsoft Threat Experts.
-Configure Microsoft Threat Protection integration| Configure other solutions that integrate with Microsoft Defender ATP.
-Management and API support| Pull alerts to your SIEM or use APIs to create custom alerts. Create and build Power BI reports. 
+[Configure Microsoft Threat Protection integration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-protection-integration)| Configure other solutions that integrate with Microsoft Defender ATP.
+[Management and API support](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis)| Pull alerts to your SIEM or use APIs to create custom alerts. Create and build Power BI reports. 
 [Configure Microsoft Defender Security Center settings](preferences-setup.md) |  Configure portal related settings such as general settings, advanced features, enable the preview experience and others.
 
 

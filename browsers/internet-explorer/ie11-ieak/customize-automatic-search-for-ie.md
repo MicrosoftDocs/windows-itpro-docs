@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 694e2f92-5e08-49dc-b83f-677d61fa918a
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Customize Automatic Search using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

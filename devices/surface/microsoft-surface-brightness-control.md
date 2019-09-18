@@ -25,16 +25,16 @@ designed to help reduce thermal load and lower the overall carbon
 footprint for deployed Surface devices. The tool automatically dims the screen when not in use and
 includes the following configuration options:
 
-  - Period of inactivity before dimming the display.
+- Period of inactivity before dimming the display.
 
-  - Brightness level when dimmed.
+- Brightness level when dimmed.
 
-  - Maximum brightness level when in use.
+- Maximum brightness level when in use.
 
 **To run Surface Brightness Control:**
 
-  - Install surfacebrightnesscontrol.msi on the target device and Surface Brightness Control
-    will begin working immediately.
+- Install surfacebrightnesscontrol.msi on the target device and Surface Brightness Control
+  will begin working immediately.
 
 ## Configuring Surface Brightness Control
 

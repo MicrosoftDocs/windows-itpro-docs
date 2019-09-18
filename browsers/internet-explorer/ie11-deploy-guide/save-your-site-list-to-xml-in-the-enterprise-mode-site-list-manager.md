@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 254a986b-494f-4316-92c1-b089ee8b3e0a
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Save your site list to XML in the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

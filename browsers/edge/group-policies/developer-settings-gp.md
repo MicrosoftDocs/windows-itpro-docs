@@ -9,7 +9,7 @@ author: eavena
 ms.author: eravena
 ms.date: 10/02/2018
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.topic: reference
 ms.prod: edge
 ms.mktglfcycl: explore

@@ -6,7 +6,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: eb3cce62-fc7b-41e3-97b6-2916b85bcf55
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Manage Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

@@ -1,7 +1,7 @@
 ---
 title: About App-V 5.0 Reporting
 description: About App-V 5.0 Reporting
-author: manikadhiman
+author: dansimp
 ms.assetid: 27c33dda-f017-41e3-8a78-1b681543ec4f
 ms.reviewer: 
 manager: dansimp

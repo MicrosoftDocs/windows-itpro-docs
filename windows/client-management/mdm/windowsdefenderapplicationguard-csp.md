@@ -30,9 +30,9 @@ Interior node. Supported operation is Get.
 
 <a href="" id="allowwindowsdefenderapplicationguard"></a>**Settings/AllowWindowsDefenderApplicationGuard**  
 Turn on Windows Defender Application Guard in Enterprise Mode. Value type is integer. Supported operations are Add, Get, Replace, and Delete.
- 
- - 0 - Stops Application Guard in Enterprise Mode. Trying to access non-enterprise domains on the host will not automatically get transferred into the insolated environment.
- - 1 - Enables Application Guard in Enterprise Mode. Trying to access non-enterprise websites on the host will automatically get transferred into the container. 
+
+- 0 - Stops Application Guard in Enterprise Mode. Trying to access non-enterprise domains on the host will not automatically get transferred into the insolated environment.
+- 1 - Enables Application Guard in Enterprise Mode. Trying to access non-enterprise websites on the host will automatically get transferred into the container. 
 
 <a href="" id="clipboardfiletype"></a>**Settings/ClipboardFileType**  
 Determines the type of content that can be copied from the host to Application Guard environment and vice versa. Value type is integer. Supported operations are Add, Get, Replace, and Delete.

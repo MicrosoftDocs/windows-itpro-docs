@@ -1,7 +1,7 @@
 ---
 title: System Utilization Report
 description: System Utilization Report
-author: manikadhiman
+author: dansimp
 ms.assetid: 4d490d15-2d1f-4f2c-99bb-0685447c0672
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

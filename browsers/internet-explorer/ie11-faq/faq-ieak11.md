@@ -9,7 +9,7 @@ ms.manager: elizapo
 ms.prod: ie11
 ms.assetid:
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 title: IEAK 11 - Frequently Asked Questions
 ms.sitesec: library
 ms.date: 05/10/2018

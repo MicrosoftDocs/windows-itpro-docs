@@ -23,6 +23,8 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+[!include[Prerelease information](prerelease.md)]
+
 Learn how you can use Microsoft Defender ATP to expand the coverage of Windows Information Protection (WIP) to protect files based on their label, regardless of their origin.
 
 >[!TIP]

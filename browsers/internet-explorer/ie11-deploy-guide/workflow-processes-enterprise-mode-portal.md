@@ -9,7 +9,7 @@ title: Workflow-based processes for employees using the Enterprise Mode Site Lis
 ms.sitesec: library
 ms.date: 07/27/2017
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Select Primary Page (Learn More)
 description: Select Primary Page (Learn More)
-author: eavena
+author: dansimp
 ms.assetid: 17c779da-f683-4967-b136-94fe65373c1b
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

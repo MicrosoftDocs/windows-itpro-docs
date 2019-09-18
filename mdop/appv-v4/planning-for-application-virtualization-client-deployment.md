@@ -1,7 +1,7 @@
 ---
 title: Planning for Application Virtualization Client Deployment
 description: Planning for Application Virtualization Client Deployment
-author: eavena
+author: dansimp
 ms.assetid: a352f80f-f0f9-4fbf-ac10-24c510b2d6be
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

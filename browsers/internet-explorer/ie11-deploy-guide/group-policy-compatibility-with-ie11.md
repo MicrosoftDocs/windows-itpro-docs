@@ -7,7 +7,7 @@ author: lomayor
 ms.prod: ie11
 ms.assetid: 7482c99f-5d79-4344-9e1c-aea9f0a68e18
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: lomayor
 title: Group Policy and compatibility with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

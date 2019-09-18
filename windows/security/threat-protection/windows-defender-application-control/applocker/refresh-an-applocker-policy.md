@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Refresh an AppLocker policy
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes the steps to force an update for an AppLocker policy.
 
