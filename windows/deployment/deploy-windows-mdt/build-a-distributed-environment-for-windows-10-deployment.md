@@ -33,8 +33,8 @@ Figure 1. The machines used in this topic.
 
 Replicating the content between MDT01 (New York) and MDT02 (Stockholm) can be done in a number of different ways. The most common content replication solutions with Microsoft Deployment Toolkit (MDT) use either the Linked Deployment Shares (LDS) feature or Distributed File System Replication (DFS-R). Some organizations have used a simple robocopy script for replication of the content.
 
-**Note**  
-Robocopy has options that allow for synchronization between folders. It has a simple reporting function; it supports transmission retry; and, by default, it will only copy/remove files from the source that are newer than files on the target.
+> [!NOTE]
+> Robocopy has options that allow for synchronization between folders. It has a simple reporting function; it supports transmission retry and, by default, it will only copy/remove files from the source that are newer than files on the target.
  
 ### Linked deployment shares in MDT
 
@@ -103,8 +103,8 @@ When you have multiple deployment servers sharing the same content, you need to 
    UserID=MDT_BA
    SkipBDDWelcome=YES
    ```
-   **Note**  
-   The DeployRoot value needs to go into the Bootstrap.ini file, but you can use the same logic in the CustomSettings.ini file. For example, you can redirect the logs to the local deployment server (SLSHARE), or have the User State Migration Tool (USMT) migration store (UDDIR) local. To learn more about USMT, see [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md) and [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md).
+> [!NOTE]
+> The DeployRoot value needs to go into the Bootstrap.ini file, but you can use the same logic in the CustomSettings.ini file. For example, you can redirect the logs to the local deployment server (SLSHARE), or have the User State Migration Tool (USMT) migration store (UDDIR) local. To learn more about USMT, see [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md) and [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md).
      
 2. Save the Bootstrap.ini file.
 3. Using the Deployment Workbench, right-click the **MDT Production** deployment share and select **Update Deployment Share**.
@@ -167,8 +167,8 @@ When you have multiple deployment servers sharing the same content, you need to 
     1.  In the **Staging** tab, set the quota to **20480 MB**.
     2.  In the **Advanced** tab, set the quota to **8192 MB**.
 
-**Note**  
-It will take some time for the replication configuration to be picked up by the replication members (MDT01 and MDT02). The time for the initial sync will depend on the WAN link speed between the sites. After that, delta changes are replicated quickly.
+> [!NOTE]
+> It will take some time for the replication configuration to be picked up by the replication members (MDT01 and MDT02). The time for the initial sync will depend on the WAN link speed between the sites. After that, delta changes are replicated quickly.
  
 ### Verify replication
 1.  On MDT02, wait until you start to see content appear in the **E:\\MDTProduction** folder.
