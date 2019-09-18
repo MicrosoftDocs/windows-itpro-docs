@@ -20,7 +20,7 @@ ms.topic: article
 
 As of Windows 10 version 1709, you can't use Windows Server Update Services (WSUS) to host [Features on Demand](https://docs.microsoft.com/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) (FODs) locally. Starting with Windows 10 version 1803, language packs can no longer be hosted on WSUS.
 
-The **Specify settings for optional component installation and component repair** policy, located under `Computer Configuration\Administrative Templates\System` in the Group Policy Editor, can be used to specify alternate ways to acquire FOD packages, language packages, and content for corruption repair. However, it’s important to note this policy only allows specifying one alternate location and behaves across OS versions.
+The **Specify settings for optional component installation and component repair** policy, located under `Computer Configuration\Administrative Templates\System` in the Group Policy Editor, can be used to specify alternate ways to acquire FOD packages, language packages, and content for corruption repair. However, it’s important to note this policy only allows specifying one alternate location and behaves differently across OS versions.
 
 In Windows 10 version 1709 and 1803, changing the **Specify settings for optional component installation and component repair** policy to download content from Windows Update enables acquisition of FOD packages while also enabling corruption repair. Specifying a network location works for either, depending on the content is found at that location.  Changing this policy on these OS versions does not influence how language packs are acquired.
 
