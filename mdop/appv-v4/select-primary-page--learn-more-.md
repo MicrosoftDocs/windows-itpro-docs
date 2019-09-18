@@ -1,7 +1,7 @@
 ---
 title: Select Primary Page (Learn More)
 description: Select Primary Page (Learn More)
-author: eavena
+author: dansimp
 ms.assetid: 17c779da-f683-4967-b136-94fe65373c1b
 ms.reviewer: 
 manager: dansimp

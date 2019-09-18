@@ -1,7 +1,7 @@
 ---
 title: Contents Tab
 description: Contents Tab
-author: mjcaparas
+author: dansimp
 ms.assetid: 6ada6430-cd93-47aa-af6e-d7f5b5620132
 ms.reviewer: 
 manager: dansimp

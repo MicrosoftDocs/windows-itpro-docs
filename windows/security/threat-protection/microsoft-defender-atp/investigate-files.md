@@ -52,6 +52,7 @@ Along the top of the profile page, above the file information cards. Actions you
 - Stop and quarantine
 - Add/edit indicator
 - Download file
+- Consult a threat expert
 - Action center
 
 For more information on these actions, see [Take response action on a file](respond-file-alerts.md).

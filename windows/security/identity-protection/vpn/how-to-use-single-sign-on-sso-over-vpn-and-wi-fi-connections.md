@@ -9,7 +9,7 @@ author: dulcemontemayor
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dolmont
+ms.author: dansimp
 ---
 
 # How to use single sign on (SSO) over VPN and Wi-Fi connections

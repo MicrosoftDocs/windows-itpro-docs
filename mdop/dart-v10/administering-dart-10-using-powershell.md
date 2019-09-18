@@ -1,7 +1,7 @@
 ---
 title: Administering DaRT 10 Using PowerShell
 description: Administering DaRT 10 Using PowerShell
-author: msfttracyp
+author: dansimp
 ms.assetid: eefe992f-077b-4e4b-8a5d-45b451614d7b
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: Security and Protection for MED-V
 description: Security and Protection for MED-V
-author: levinec
+author: dansimp
 ms.assetid: 5db66d56-eb65-4bff-a9e4-3d52de4256bd
 ms.reviewer: 
 manager: dansimp

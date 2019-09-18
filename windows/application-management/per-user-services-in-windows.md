@@ -1,11 +1,11 @@
 ---
-title: Per-user services in Windows 10 and Windows Server 
+title: Per-user services in Windows 10 and Windows Server
 description: Learn about per-user services introduced in Windows 10.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: tracyp
+ms.author: dansimp
 author: msfttracyp
 ms.date: 09/14/2017
 ms.reviewer: 

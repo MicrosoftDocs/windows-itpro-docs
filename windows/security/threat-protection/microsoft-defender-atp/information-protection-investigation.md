@@ -57,9 +57,6 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
     ![Image of machine timeline with narrowed down search results based on label](images/machine-timeline-labels.png)
 
->[!NOTE]
-> The event side pane now provides additional insight to the WIP and AIP protection status.  
-
 
 >[!TIP]
 >These data points are also exposed through the ‘FileCreationEvents’ in advanced hunting, allowing advanced queries and schedule detection to take into account sensitivity labels and file protection status. 

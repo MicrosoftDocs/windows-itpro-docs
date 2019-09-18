@@ -1,7 +1,7 @@
 ---
 title: User Experience Virtualization Privacy Statement
 description: User Experience Virtualization Privacy Statement
-author: levinec
+author: dansimp
 ms.assetid: c2919034-f2cf-48d6-b18e-4dd318252426
 ms.reviewer: 
 manager: dansimp

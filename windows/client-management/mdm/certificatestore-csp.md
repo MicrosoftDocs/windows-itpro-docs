@@ -4,7 +4,7 @@ description: CertificateStore CSP
 ms.assetid: 0fe28629-3cc3-42a0-91b3-3624c8462fd3
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

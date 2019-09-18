@@ -1,7 +1,7 @@
 ---
 title: Migrating to App-V 5.1 from a Previous Version
 description: Migrating to App-V 5.1 from a Previous Version
-author: msfttracyp
+author: dansimp
 ms.assetid: e7ee0edc-7544-4c0a-aaca-d922a33bc1bb
 ms.reviewer: 
 manager: dansimp

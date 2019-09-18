@@ -1040,34 +1040,6 @@ XSD:
 
 <!--/Validation-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens2-->  
-## <a href="" id="hololens2policies"></a>ApplicationManagement policies supported by HoloLens 2
-
-- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
-- [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
-- [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
-
-<!--EndHoloLens2-->
-
-<!--StartHoloLensBusiness-->  
-## <a href="" id="hololensbusinessspolicies"></a>ApplicationManagement policies supported by HoloLens (ist gen) Commercial Suite
-
-- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
-- [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
-- [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
-<!--EndHoloLensBusiness-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>ApplicationManagement policies supported by HoloLens (1st gen) Development Edition
-
-- [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
-- [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
-- [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
-<!--EndHoloLens-->
-
 <hr/>
 
 Footnotes:
@@ -1078,3 +1050,4 @@ Footnotes:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
+<!--/Policies-->

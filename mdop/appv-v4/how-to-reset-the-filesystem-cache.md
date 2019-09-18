@@ -1,7 +1,7 @@
 ---
 title: How to Reset the FileSystem Cache
 description: How to Reset the FileSystem Cache
-author: eavena
+author: dansimp
 ms.assetid: 7777259d-8c21-4c06-9384-9599b69f9828
 ms.reviewer: 
 manager: dansimp

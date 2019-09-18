@@ -1,7 +1,7 @@
 ---
 title: Planning for the App-V 5.1 Sequencer and Client Deployment
 description: Planning for the App-V 5.1 Sequencer and Client Deployment
-author: msfttracyp
+author: dansimp
 ms.assetid: d92f8773-fa7d-4926-978a-433978f91202
 ms.reviewer: 
 manager: dansimp

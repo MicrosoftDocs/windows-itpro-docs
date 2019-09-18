@@ -1,7 +1,7 @@
 ---
 title: Editing a GPO
 description: Editing a GPO
-author: mjcaparas
+author: dansimp
 ms.assetid: ec77d3bb-8a64-4d8e-9c28-87763de02ec0
 ms.reviewer: 
 manager: dansimp

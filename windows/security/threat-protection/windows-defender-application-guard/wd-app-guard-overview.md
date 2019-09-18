@@ -37,17 +37,6 @@ Application Guard has been created to target several types of systems:
 
 - **Personal devices.** These personally-owned desktops or mobile laptops are not domain-joined or managed by an organization. The user is an admin on the device and uses a high-bandwidth wireless personal network while at home or a comparable public network while outside.
 
-## Frequently Asked Questions
-
-Please see [Frequently asked questions - Windows Defender Application Guard](faq-wd-app-guard.md) for common user-submitted questions.
-
-|        |                                                                                                                                                                                                                                                                              |
-|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Q:** |                                                                                                                Are there differences between using Application Guard on Windows Pro vs Windows Enterprise?                                                          |
-| **A:** | When using Windows Pro and Windows Enterprise, you will have access to using Application Guard's Standalone Mode. However, when using Enterprise you will have access to Application Guard's Enterprise-Managed Mode. This mode has some extra features that the Standalone Mode does not. For more information, see [Prepare to install Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard).  |
-
-<br>
-
 ## Related topics
 
 |Topic |Description |
@@ -55,5 +44,5 @@ Please see [Frequently asked questions - Windows Defender Application Guard](faq
 |[System requirements for Windows Defender Application Guard](reqs-wd-app-guard.md) |Specifies the pre-requisites necessary to install and use Application Guard.|
 |[Prepare and install Windows Defender Application Guard](install-wd-app-guard.md) |Provides instructions about determining which mode to use, either Standalone or Enterprise-managed, and how to install Application Guard in your organization.|
 |[Configure the Group Policy settings for Windows Defender Application Guard](configure-wd-app-guard.md) |Provides info about the available Group Policy and MDM settings.|
-|[Testing scenarios using Windows Defender Application Guard in your business or organization](test-scenarios-wd-app-guard.md)|Provides a list of suggested testing scenarios that you can use to test Windows Defender Application Guard (Application Guard) in your organization.|
-
+|[Testing scenarios using Windows Defender Application Guard in your business or organization](test-scenarios-wd-app-guard.md)|Provides a list of suggested testing scenarios that you can use to test Application Guard in your organization.|
+|[Frequently asked questions - Windows Defender Application Guard](faq-wd-app-guard.md)|Provides answers to frequently asked questions about Application Guard features, integration with the Windows operating system, and general configuration.|

@@ -1,7 +1,7 @@
 ---
 title: Planning for Client Security
 description: Planning for Client Security
-author: eavena
+author: dansimp
 ms.assetid: 4840a60f-4c91-489c-ad0b-6671882abf9b
 ms.reviewer: 
 manager: dansimp

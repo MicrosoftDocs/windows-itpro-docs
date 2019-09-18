@@ -1,7 +1,7 @@
 ---
 title: Approve or Reject a Pending Action
 description: Approve or Reject a Pending Action
-author: mjcaparas
+author: dansimp
 ms.assetid: 078ea8b5-9ac5-45fc-9ac1-a1aa629c10b4
 ms.reviewer: 
 manager: dansimp
