@@ -109,7 +109,7 @@ Files automatically blocked by an indicator won't show up in the files's Action 
 
 
 ## Create indicators for IPs and URLs/domains (preview)
-Microsoft Defender ATP can block what Microsoft deems as malicious IPs/URLs through SmartScreen for Microsoft browsers and Network Protection for non-Microsoft browsers and calls made outside the browser.
+Microsoft Defender ATP can block what Microsoft deems as malicious IPs/URLs through Windows Defender SmartScreen for Microsoft browsers and Network Protection for non-Microsoft browsers and calls made outside the browser.
 
 The threat intelligence data set for this has been managed by Microsoft.
 

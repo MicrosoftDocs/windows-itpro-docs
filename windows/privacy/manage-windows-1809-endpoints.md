@@ -411,7 +411,7 @@ If you [turn off traffic for these endpoints](manage-connections-from-windows-op
 |MpCmdRun.exe|HTTPS|go.microsoft.com |
 
 The following endpoints are used for Windows Defender Smartscreen reporting and notifications.
-If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender-smartscreen), Smartscreen notifications will no appear.
+If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender-smartscreen), Windows Defender Smartscreen notifications will no appear.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
