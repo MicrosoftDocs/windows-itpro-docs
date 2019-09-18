@@ -67,10 +67,8 @@ First, you create a default user profile with the customizations that you want, 
 3. Uninstall any application you do not need or want from the PC. For examples on how to uninstall Windows 10 Application see [Remove-AppxProvisionedPackage](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage?view=winserver2012-ps). For a list of uninstallable applications, see [Understand the different apps included in Windows 10](https://docs.microsoft.com/windows/application-management/apps-in-windows-10).
 
 
-~~~
  >[!NOTE]
  >It is highly recommended to uninstall unwanted or unneeded apps as it will speed up user sign-in times.
-~~~
 
 3. At a command prompt, type the following command and press **ENTER**.
 
