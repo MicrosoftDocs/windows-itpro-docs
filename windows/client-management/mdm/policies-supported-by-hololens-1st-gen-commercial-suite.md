@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 07/18/2019
+ms.date: 09/17/2019
 ---
 
 # Policies supported by HoloLens (1st gen) Commercial Suite  
