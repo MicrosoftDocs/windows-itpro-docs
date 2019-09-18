@@ -35,7 +35,7 @@
 ## [Create, share, and view photos and video](holographic-photos-and-video.md)
 
 # Holographic Applications
-## [Try 3D Viewer (Beta)](holographic-3d-viewer-beta.md)
+## [Try 3D Viewer](holographic-3d-viewer-beta.md)
 ## [Find, install, and uninstall applications](holographic-store-apps.md)
 ## [Install and uninstall custom applications](holographic-custom-apps.md)
 

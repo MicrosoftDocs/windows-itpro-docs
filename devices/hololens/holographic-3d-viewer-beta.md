@@ -1,5 +1,5 @@
 ---
-title: Using 3D Viewer Beta on HoloLens
+title: Using 3D Viewer on HoloLens
 description: Describes the types of files and features that 3D Viewer Beta on HoloLens supports, and how to use and troubleshoot the app.
 ms.prod: hololens
 ms.sitesec: library
@@ -14,13 +14,13 @@ appliesto:
 - HoloLens (1st gen)
 ---
 
-# Using 3D Viewer Beta on HoloLens
+# Using 3D Viewer on HoloLens
 
-3D Viewer Beta lets you view 3D models on HoloLens. You can open and view *supported* .fbx files from Microsoft Edge, OneDrive, and other apps.
+3D Viewer lets you view 3D models on HoloLens. You can open and view *supported* .fbx files from Microsoft Edge, OneDrive, and other apps.
 
-If you're having trouble opening a 3D model in 3D Viewer Beta, or certain features of your 3D model are unsupported, see [Supported content specifications](#supported-content-specifications).
+If you're having trouble opening a 3D model in 3D Viewer, or certain features of your 3D model are unsupported, see [Supported content specifications](#supported-content-specifications).
 
-To build or optimize 3D models for use with 3D Viewer Beta, see [Optimizing 3D models for 3D Viewer Beta](#optimizing-3d-models-for-3d-viewer-beta).
+To build or optimize 3D models for use with 3D Viewer, see [Optimizing 3D models for 3D Viewer](#optimizing-3d-models-for-3d-viewer-beta).
 
 There are two ways to open a 3D model on HoloLens. See [Viewing 3D models on HoloLens](#viewing-3d-models-on-hololens) to learn more.
 

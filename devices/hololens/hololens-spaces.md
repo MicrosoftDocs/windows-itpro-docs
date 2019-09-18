@@ -38,7 +38,7 @@ Only use HoloLens in safe places with no tripping hazards. [More on safety](http
 
 ## Mapping your space
 
-Now you're ready to start mapping your spare.  When HoloLens starts mapping your surroundings, you'll see a mesh graphic spreading over the space.
+Now you're ready to start mapping your spare.  When HoloLens starts mapping your surroundings, you'll see a mesh graphic spreading over the space.  In mixed reality home, you can trigger the map to show by selecting on a mapped surface.
 
 Here are guidelines for building a great spatial map.
 

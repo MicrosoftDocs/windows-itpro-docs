@@ -63,7 +63,7 @@ To select an app or other hologram, air tap it while looking directly at the hol
 
 ### Select a hologram by using your voice
 
-1. To bring up the gaze cursor, say “Select.” The gaze cursor is a dot that you move around by moving your head. You can use it to target voice commands with precision.
+1. The gaze cursor is a dot that you move around by moving your head. You can use it to target voice commands with precision.
 1. Gaze at the hologram that you want to select.
 1. To select the hologram, say "Select."
 
@@ -71,13 +71,13 @@ To select an app or other hologram, air tap it while looking directly at the hol
 
 Now it's time to put gestures to the test!
 
-You'll find your installed apps in the **Start** menu and there are more apps for HoloLens (1st gen) in the Microsoft Store.
+You'll find your installed apps in the [Start menu](holographic-home.md) and there are more apps for HoloLens (1st gen) in the Microsoft Store.
 
 Open the **Start** menu and select an app!
 
 Using apps on HoloLens is a little different from on a PC: Some apps use a 2D view and look like other Windows applications. Other apps (immersive apps) use a 3D view and when you launch them, they become the only app you see.
 
-When you place an app, it will stay put until you remove it. You can move or resize 2D apps at any time.
+When you place an app window or app launcher, it will stay put until you remove it. You can move or resize these holograms in your [mixed reality home](holographic-home.md#Open-apps-from-Start-menu) at any time.
 
 ## Move, resize, and rotate apps
 
@@ -112,22 +112,9 @@ Gaze at the app, and then do one of the following.
 
 Gaze at the app, and tap and hold with both hands to select it. Rotate the app by keeping one hand steady and moving your other hand around it. When you're done, raise both index fingers.
 
-### Help! I don't see my holograms
+### Scroll content in an app window
 
-If you don’t see holograms that you’ve placed while using HoloLens, here are some things to try:
-
-- Make sure that you’re looking in the right area&mdash;remember, holograms stay where you left them!
-- Make sure that you're in a well-lit room without a lot of direct sunlight.
-- Select **Settings** > **System** > **Spaces**, and make sure that the right space is loaded.
-
-## Help! I can’t place holograms on HoloLens
-
-If you’re using HoloLens and having trouble placing holograms, here are some things to try:
-
-- Make sure that you’re in a well-lit room without a lot of direct sunlight.
-- Stand one to three meters from where you’re trying to place the hologram.
-- Don’t place holograms on black or reflective surfaces.
-- Walk around so that HoloLens can rescan your surroundings.
+Gaze at the content of the app window. Tap and hold and then move your hand slightly upwards or downwards to scroll the content.
 
 ## Meet the HoloLens (1st gen) Clicker
 
@@ -139,6 +126,15 @@ Congratulations! you're ready to use HoloLens (1st gen).
 
 Now you can configure your HoloLens (1st gen) to meet your specific needs.
 
-[Connect bluetooth devices](hololens-connect-devices.md)
+[Connect bluetooth devices like mouse and keyboard](hololens-connect-devices.md)
 
 [Learn more about Voice and Cortana](hololens-cortana.md)
+
+### Help! I don't see my holograms
+
+If you don’t see holograms that you’ve placed while using HoloLens, here are some things to try:
+
+- Make sure that you’re looking in the right area&mdash;remember, holograms stay where you left them!
+- Make sure that you're in a well-lit room without a lot of direct sunlight.
+- Wait. When HoloLens has trouble recognizing your space, previously placed holograms can take up to a minute to reappear.
+- If issue persists, you may want to clear out your Holograms storage data in **Settings** > **System** > **Holograms**, then place holograms in mixed reality home again.

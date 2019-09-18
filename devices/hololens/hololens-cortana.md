@@ -41,9 +41,10 @@ Use these commands throughout Windows Mixed Reality to get around faster. Some c
 |Open the Start menu | "Go to Start" |
 |Close the Start menu | "Close" |
 |Leave an immersive app | Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home." |
+|Hide and show hand ray | "Hide hand ray" / "Show hand ray" |
 |See available speech commands | "What can I say?" |
 
-### 3D object commands
+### Hologram commands
 
 To use these commands, gaze at a 3D object, hologram, or app window.
 
@@ -53,11 +54,12 @@ To use these commands, gaze at a 3D object, hologram, or app window.
 | "Smaller" | Make it smaller |
 | "Face me" | Turn it to face you |
 | "Move this" | Move it (follow your gaze) |
-| "There" | Place it when you’re done moving it |
+| "Close" | Close it |
+| "Follow" / "Stop following" | Make it follow you as you move around |
 
 ### See it, say it
 
-Many buttons and other elements on HoloLens also respond to your voice—for example, **Follow me** and **Close** on the app bar. To find out if a button is voice-enabled, rest your gaze on it for a moment to see a voice tip.
+Many buttons and other elements on HoloLens also respond to your voice—for example, **Follow me** and **Close** on the app bar, or the **Back** button in Edge. To find out if a button is voice-enabled, rest your **gaze cursor** on it for a moment to see a voice tip.
 
 ### Dictation mode
 
