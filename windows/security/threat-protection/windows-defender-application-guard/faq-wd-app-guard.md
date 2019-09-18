@@ -99,8 +99,8 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 
 |        |                                                                                               |
 |--------|-----------------------------------------------------------------------------------------------|
-| **Q:** |                          How do I trust a subdomain in my site list?                          |
-| **A:** | To trust a subdomain, you must precede your domain with two dots, for example: ..contoso.com. |
+| **Q:** | How do I trust a subdomain in my site list?                          |
+| **A:** | To trust a subdomain, you must precede your domain with two dots, for example: ..contoso.com will ensure mail.contoso.com or news.contoso.com are trusted. The first dot represents the strings for the subdomain name (mail or news), the second dot recognizes the start of the domain name (contoso.com). This prevents sites such as fakesitecontoso.com from being trusted.|
 
 <br>
 
