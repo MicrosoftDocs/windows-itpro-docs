@@ -27,10 +27,10 @@ The **Weaknesses** page lists down the vulnerabilities found in the infected sof
 
 >[!IMPORTANT]
 >To boost your vulnerability assessment detection rates, you can download the following set of optional security updates and deploy them in your network:
->- KB 4512941
->- KB 4516077
->- KB 4516045
->- KB 4516071
+>- 19H1 customers | KB 4512941
+>- RS5 customers | KB 4516077
+>- RS4 customers | KB 4516045
+>- RS3 customers | KB 4516071
 
 >To download the security updates:
 >1. Go to [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/home.aspx).
