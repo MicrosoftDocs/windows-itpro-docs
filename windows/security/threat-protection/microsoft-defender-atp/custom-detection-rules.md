@@ -2,7 +2,7 @@
 title: Create and manage custom detection rules in Microsoft Defender ATP
 ms.reviewer: 
 description: Learn how to create and manage custom detections rules based on advanced hunting queries
-keywords: custom detections, create, alerts, detection rules, advanced hunting, hunt, query, response actions, mdatp, microsoft defender atp
+keywords: custom detections, create, manage, alerts, edit, run on demand, frequency, detection rules, advanced hunting, hunt, query, response actions, mdatp, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -77,20 +77,39 @@ Select one or more actions to automatically apply to files in the `SHA1` or the 
 ### 4. Click **Create** to save and turn on the rule.
 
 ## Manage existing custom detection rules
-View your existing detection rules and check their results to assess how effective they have been. You can also run a rule on demand and modify it.
+In **Settings** > **Custom detections**, you can view the list of existing custom detection rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
 
-1. In the navigation pane, select **Settings** > **Custom detections** to see all the detection rules.
+### View existing rules
 
-2. Select one of the rules to take any of the following actions:
-   - **Open detection rule page** — see all rule details, including all the alerts that were triggered and actions taken
-   - **Run** — run the rule immediately. This resets the interval for the next run.
-   - **Edit** — modify the rule without changing the query
-   - **Modify query** - open the query in Advanced hunting to edit it 
-   - **Turn on** / **Turn off** - enable the rule or stop it from running
-   - **Delete**
+To view all existing custom detection rules, navigate to **Settings** > **Custom detections**. The page lists all the rules with the following status information:
 
-   >[!TIP]
-   >You can also take these actions from the detection rule page.  
+- **Last run** — when a rule was last run to check for query matches and generate alerts
+- **Last run status** — whether a rule ran successfully
+- **Next run** — the next scheduled run
+- **Status** — whether a rule has been turned on or off
+
+### View rule details, modify rule, and run rule
+
+To view comprehensive information about a custom detection rule, select the name of rule from the list of rules in **Settings** > **Custom detections**. 
+
+This opens a page about the custom detection rule with the following information:
+
+- General information about the rule, including the details of the alert, run status, and scope
+- List of triggered alerts
+
+![Custom detection rule page](images/atp-custom-detection-rule-details.png)<br>
+*Custom detection rule page*
+
+You can also take the following actions on the rule from this page:
+
+- **Run** — runs the rule immediately. This also resets the interval for the next run.
+- **Edit** — modify the rule without changing the query
+- **Modify query** — edit the query in Advanced hunting
+- **Turn on** / **Turn off** — enable the rule or stop it from running
+- **Delete** — turn off the rule and remove it
+
+>[!TIP]
+>To quickly view information and take action on an item in a table, use the selection column [&#10004;] at the left of the table.
 
 ## Related topic
 - [Custom detections overview](overview-custom-detections.md)
