@@ -16,12 +16,12 @@ appliesto:
 
 # Unlock Windows Holographic for Business features
 
-Microsoft HoloLens is available in the *Development Edition*, which runs Windows Holographic (an edition of Windows 10 that is designed for HoloLens), and in the [Commercial Suite](hololens-commercial-features.md), which provides extra features that are designed for business.
+Microsoft HoloLens is available in the *Development Edition*, which runs Windows Holographic (an edition of Windows 10 that is designed for HoloLens), and in the [Commercial Suite](hololens-commercial-features.md), which provides extra features designed for business.
 
 When you purchase the Commercial Suite, you receive a license that upgrades Windows Holographic to Windows Holographic for Business. You can apply this license to the device either by using the organization's [mobile device management (MDM) provider](#edition-upgrade-by-using-mdm) or a [provisioning package](#edition-upgrade-by-using-a-provisioning-package).
 
 > [!TIP]
-> In Windows 10, version 1803, you can tell that the HoloLens has been upgraded to the business edition by selecting **Settings** > **System**.
+> In Windows 10, version 1803, you can check that the HoloLens has been upgraded to the business edition by selecting **Settings** > **System**.
 
 ## Edition upgrade by using MDM
 
@@ -33,7 +33,7 @@ For step-by-step instructions for upgrading HoloLens by using Microsoft Intune, 
 
 ## Edition upgrade by using a provisioning package
 
-Provisioning packages are files that are created by the Windows Configuration Designer tool that apply a specified configuration to a device.
+Provisioning packages are files created by the Windows Configuration Designer tool that apply a specified configuration to a device.
 
 ### Create a provisioning package that upgrades the Windows Holographic edition
 
@@ -42,21 +42,21 @@ Provisioning packages are files that are created by the Windows Configuration De
 
     ![Upgrade edition with license setting selected](images/icd1.png)
 
-1. Browse to and select the XML license file that was provided when you purchased the Commercial Suite.
+1. Find the XML license file that was provided when you purchased the Commercial Suite.
 
     > [!NOTE]
     > You can configure [additional settings in the provisioning package](hololens-provisioning.md).
 
 1. On the **File** menu, select **Save**. 
 
-1. Read the warning that project files may contain sensitive information, and click **OK**.
+1. Read the warning that project files may contain sensitive information and click **OK**.
 
     > [!IMPORTANT]
-    > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+    > When you build a provisioning package, you may include sensitive information in the project files and provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when no longer needed.
 
 1. On the **Export** menu, select **Provisioning package**.
 
-1. Change **Owner** to **IT Admin**, which sets the precedence of this provisioning package to be higher than that of provisioning packages that are applied to this device from other sources, and then select **Next**.
+1. Change **Owner** to **IT Admin**, which sets the precedence of this provisioning package to be higher than others applied to this device from different sources, and then select **Next**.
 
 1. Set a value for **Package Version**.
 
@@ -84,8 +84,8 @@ Provisioning packages are files that are created by the Windows Configuration De
 
 1. In File Explorer, drag and drop the provisioning package (.ppkg) onto the device storage.
 
-1. While HoloLens is still non the **fit** page, briefly press and release the **Volume Down** and **Power** buttons simultaneously again.
+1. While HoloLens is still on the **fit** page, briefly press and release the **Volume Down** and **Power** buttons simultaneously again.
 
 1. HoloLens asks you if you trust the package and would like to apply it. Confirm that you trust the package.
 
-1. You will see whether the package was applied successfully or not. If it was not applied successfully, you can fix your package and try again. If it succeeded, proceed with device setup.
+1. You will see whether the package was applied successfully or not. If it was not applied successfully, you can fix your package and try again. If successful, proceed with device setup.

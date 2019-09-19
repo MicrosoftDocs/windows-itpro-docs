@@ -22,7 +22,7 @@ You can manage multiple Microsoft HoloLens devices simultaneously using solution
 
 ## Requirements
 
- Your organization will need to have mobile device management (MDM) set up in order to manage HoloLens devices. Your MDM provider can be Microsoft Intune or a 3rd party provider that uses Microsoft MDM APIs.
+ Your organization will need to have Mobile Device Management (MDM) set up in order to manage HoloLens devices. Your MDM provider can be Microsoft Intune or a 3rd party provider that uses Microsoft MDM APIs.
 
 ## Auto-enrollment in MDM
 

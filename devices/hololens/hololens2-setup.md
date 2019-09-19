@@ -20,7 +20,7 @@ The procedures below will help you set up a HoloLens 2 for the first time.
 
 ## Charge your HoloLens
 
-Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet. 
+Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet.
 
     -When the device is charging, the battery indicator lights up in a wave pattern.
     -When your HoloLens is on, the battery indicator displays the battery level in increments. 
@@ -56,7 +56,7 @@ To turn on your HoloLens 2, press the Power button.  The LED lights below the Po
 
 |To do this |Perform this action and watch for these indicator lights |
 | - | - |
-|To&nbsp;turn&nbsp;on |**Single click**  ![Press power button - no lights lit](images/hololens-2-button-turn-on.png) |
+|To turn on |**Single click**  ![Press power button - no lights lit](images/hololens-2-button-turn-on.png) |
 |To sleep |**Single click**  ![Press power button - three lights lit](images/hololens-2-button-sleep.png) |
 |To wake from sleep |**Single click**  ![Press power button - no lights lit](images/hololens-2-button-wake.png) |
 |To turn off |**Press and for hold 5s**  ![Press and hold power button - all lights lit](images/hololens-2-button-turn-off.png) |
