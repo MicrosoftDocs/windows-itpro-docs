@@ -81,7 +81,7 @@ In **Settings** > **Custom detections**, you can view the list of existing custo
 
 ### View existing rules
 
-To view all existing custom detection rules, navigate to **Settings** > **Custom detections**. The page lists all the rules with the following status information:
+To view all existing custom detection rules, navigate to **Settings** > **Custom detections**. The page lists all the rules with the following run information:
 
 - **Last run** — when a rule was last run to check for query matches and generate alerts
 - **Last run status** — whether a rule ran successfully
@@ -94,6 +94,7 @@ To view comprehensive information about a custom detection rule, select the name
 
 - General information about the rule, including the details of the alert, run status, and scope
 - List of triggered alerts
+- List of triggered actions
 
 ![Custom detection rule page](images/atp-custom-detection-rule-details.png)<br>
 *Custom detection rule page*
