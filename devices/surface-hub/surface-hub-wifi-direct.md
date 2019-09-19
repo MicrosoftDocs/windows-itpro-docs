@@ -4,8 +4,8 @@ description: This topic provides guidance on Wi-Fi Direct security risks.
 keywords: change history
 ms.prod: surface-hub
 ms.sitesec: library
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 06/20/2019
 ms.reviewer: 
