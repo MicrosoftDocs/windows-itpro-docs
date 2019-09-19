@@ -87,6 +87,7 @@ The table below lists the current categories and how they generally map to previ
 | Suspicious activity  | General, None, NotApplicable, EnterprisePolicy, SuspiciousNetworkTraffic | Atypicaly activity that could be malware activity or part of an attack |
 | Unwanted software    | UnwantedSoftware | Low-reputation apps and apps that impact productivity and the user experience; detected as potentially unwanted applications (PUAs) |
 
+
 ### Status
 You can choose to limit the list of alerts based on their status.
 
@@ -114,6 +115,11 @@ If you have specific machine groups that you're interested in checking the alert
 
 ### Associated threat
 Use this filter to focus on alerts that are related to high profile threats. You can see the full list of high-profile threats in [Threat analytics](threat-analytics.md).
+
+
+
+
+
 
 ## Related topics
 - [Manage Microsoft Defender Advanced Threat Protection alerts](manage-alerts.md)
