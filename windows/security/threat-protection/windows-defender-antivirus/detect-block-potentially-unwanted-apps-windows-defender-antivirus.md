@@ -38,18 +38,24 @@ Potentially unwanted applications can increase the risk of your network being in
 
 ### Microsoft Edge
 
-The next major version of Microsoft Edge, which is Chromium-based, blocks potentially unwanted application downloads and associated resource URLs. This feature is provided via [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md). Although potentially unwanted application protection in Microsoft Edge (Chromium-based) is off by default, it can easily be turned on from within the browser.
+The next major version of Microsoft Edge, which is Chromium-based, blocks potentially unwanted application downloads and associated resource URLs. This feature is provided via [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md).
+
+#### Enable PUA protection in Chromium-based Microsoft Edge
+
+Although potentially unwanted application protection in Microsoft Edge (Chromium-based) is off by default, it can easily be turned on from within the browser.
 
 1. From the tool bar, select **Settings and more** > **Settings**
 1. Select **Privacy and services**
 1. Under the **Services** section, you can toggle **Potentially unwanted app blocking** on or off
 
-> [!TIP] <!-- NOT currently up and running. From Matt Esquivel: "We need to add something to the test pages. [...] The URL I use now is: https://test.smartscreen.msft.net/urlrep_download/puaa_090_download_link.exe"-->
+> [!TIP]
 > If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen demo pages.
+
+<!-- ^^ NOT currently up and running. From Matt Esquivel: "We need to add something to the test pages. [...] The URL I use now is: https://test.smartscreen.msft.net/urlrep_download/puaa_090_download_link.exe"-->
 
 ### Windows Defender Antivirus
 
-The potentially unwanted application (PUA) protection feature in Windows Defender Antivirus can detect and block PUAs on endpoints in your network. 
+The potentially unwanted application (PUA) protection feature in Windows Defender Antivirus can detect and block PUAs on endpoints in your network.
 
 > [!NOTE]
 > This feature is only available in Windows 10.
@@ -60,7 +66,7 @@ When a PUA is detected on an endpoint, Windows Defender Antivirus sends a notifi
 
 The notification will appear in the usual [quarantine list within the Windows Security app](windows-defender-security-center-antivirus.md#detection-history).
 
-#### Configure PUA protection
+#### Configure PUA protection in Windows Defender Antivirus
 
 You can enable PUA protection with Microsoft Intune, System Center Configuration Manager, Group Policy, or via PowerShell cmdlets.
 
@@ -124,7 +130,7 @@ See [Troubleshoot event IDs](troubleshoot-windows-defender-antivirus.md) for det
 
 #### Allow-listing apps
 
-Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files which are currently blocked by PUA protection.
+Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files which are currently blocked by PUA protection in Windows Defender Antivirus.
 
 ## Related topics
 
