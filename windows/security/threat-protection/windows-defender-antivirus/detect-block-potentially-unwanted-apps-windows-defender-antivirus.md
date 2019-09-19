@@ -90,7 +90,7 @@ See [How to create and deploy antimalware policies: Scheduled scans settings](ht
 For Configuration Manager 2012, see [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508770.aspx#BKMK_PUA).
 
 > [!NOTE]
-> PUA events are reported in the Windows Event Viewer and not in System Center Configuration Manager.
+> PUA events blocked by Windows Defender Antivirus are reported in the Windows Event Viewer and not in System Center Configuration Manager.
 
 ##### Use Group Policy to configure PUA protection
 
