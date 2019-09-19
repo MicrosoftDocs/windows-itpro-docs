@@ -64,7 +64,7 @@ Whether real-time protection (scan files as they are accessed) is enabled or not
 
 #### Enable / disable passive mode
 
-Whether the antivirus engine runs in passive more or not. In passive mode:
+Whether the antivirus engine runs in passive mode or not. In passive mode:
 - Real-time protection is turned off
 - On demand scanning is turned on
 - Automatic threat remediation is turned off
