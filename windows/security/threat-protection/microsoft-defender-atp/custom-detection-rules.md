@@ -64,7 +64,7 @@ Your custom detection rule can automatically take actions on files or machines t
 
 #### Actions on machines
 These actions are automatically applied to machines in the `MachineId` column in the query results:
-- **Isolate machine** — prevent the machine from connecting to the network. [Learn more about machine isolation](respond-machine-alerts.md#isolate-machines-from-the-network)
+- **Isolate machine** — applies full network isolation, preventing the machine from connecting to any application or service, except for the Microsoft Defender ATP service. [Learn more about machine isolation](respond-machine-alerts.md#isolate-machines-from-the-network)
 - **Collect investigation package** — collects machine information in a ZIP file. [Learn more about the investigation package](respond-machine-alerts.md#collect-investigation-package-from-machines)
 - **Run antivirus scan** — perform a full Windows Defender Antivirus scan on the machine
 - **Initiate investigation** — initiate an [automated investigation](automated-investigations.md) on the machine
