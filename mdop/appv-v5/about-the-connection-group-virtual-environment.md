@@ -1,7 +1,7 @@
 ---
 title: About the Connection Group Virtual Environment
 description: About the Connection Group Virtual Environment
-author: manikadhiman
+author: dansimp
 ms.assetid: 535fa640-cbd9-425e-8437-94650a70c264
 ms.reviewer: 
 manager: dansimp

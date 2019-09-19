@@ -13,7 +13,8 @@ manager: dansimp
 
 # Policy CSP - Bitlocker
 
-
+> [!NOTE]
+> To manage encryption of PCs and devices, use [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp).
 
 <hr/>
 
@@ -68,7 +69,7 @@ manager: dansimp
 Specifies the BitLocker Drive Encryption method and cipher strength.
 
 > [!NOTE]
-> XTS-AES 128-bit and XTS-AES 256-bit values are only supported on Windows 10 for desktop.
+> XTS-AES 128-bit and XTS-AES 256-bit values are supported only on Windows 10 for desktop.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -83,10 +84,7 @@ The following list shows the supported values:
 <!--/Policy-->
 <hr/>
 
-> [!NOTE]
-> To manage encryption of PCs and devices, use [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)
-
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
@@ -96,4 +94,3 @@ Footnote:
 -   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-

@@ -1,7 +1,7 @@
 ---
 title: Virtual Services Tab
 description: Virtual Services Tab
-author: manikadhiman
+author: dansimp
 ms.assetid: 9fc4679d-ccb5-4df7-99de-dd7d3a367ecc
 ms.reviewer: 
 manager: dansimp

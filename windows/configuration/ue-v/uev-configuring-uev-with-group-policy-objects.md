@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: trudyha
+ms.author: dansimp
 ms.topic: article
 ---
 

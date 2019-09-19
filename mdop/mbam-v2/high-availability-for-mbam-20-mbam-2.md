@@ -1,7 +1,7 @@
 ---
 title: High Availability for MBAM 2.0
 description: High Availability for MBAM 2.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 244ee013-9e2a-48d2-b842-4e10594fd74f
 ms.reviewer: 
 manager: dansimp

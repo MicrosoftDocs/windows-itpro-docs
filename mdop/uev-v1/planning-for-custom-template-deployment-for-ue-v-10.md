@@ -1,7 +1,7 @@
 ---
 title: Planning for Custom Template Deployment for UE-V 1.0
 description: Planning for Custom Template Deployment for UE-V 1.0
-author: levinec
+author: dansimp
 ms.assetid: be76fc9a-31ca-4290-af11-7640dcb87d50
 ms.reviewer: 
 manager: dansimp

@@ -2773,45 +2773,13 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
+-   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Defender policies supported by Microsoft Surface Hub  
-
-- [Defender/AllowArchiveScanning](#defender-allowarchivescanning)  
-- [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)  
-- [Defender/AllowCloudProtection](#defender-allowcloudprotection)  
-- [Defender/AllowEmailScanning](#defender-allowemailscanning)  
-- [Defender/AllowFullScanOnMappedNetworkDrives](#defender-allowfullscanonmappednetworkdrives)  
-- [Defender/AllowFullScanRemovableDriveScanning](#defender-allowfullscanremovabledrivescanning)  
-- [Defender/AllowIOAVProtection](#defender-allowioavprotection)  
-- [Defender/AllowIntrusionPreventionSystem](#defender-allowintrusionpreventionsystem)  
-- [Defender/AllowOnAccessProtection](#defender-allowonaccessprotection)  
-- [Defender/AllowRealtimeMonitoring](#defender-allowrealtimemonitoring)  
-- [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)  
-- [Defender/AllowScriptScanning](#defender-allowscriptscanning)  
-- [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)  
-- [Defender/AvgCPULoadFactor](#defender-avgcpuloadfactor)  
-- [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)  
-- [Defender/ExcludedExtensions](#defender-excludedextensions)  
-- [Defender/ExcludedPaths](#defender-excludedpaths)  
-- [Defender/ExcludedProcesses](#defender-excludedprocesses)  
-- [Defender/PUAProtection](#defender-puaprotection)  
-- [Defender/RealTimeScanDirection](#defender-realtimescandirection)  
-- [Defender/ScanParameter](#defender-scanparameter)  
-- [Defender/ScheduleQuickScanTime](#defender-schedulequickscantime)  
-- [Defender/ScheduleScanDay](#defender-schedulescanday)  
-- [Defender/ScheduleScanTime](#defender-schedulescantime)  
-- [Defender/SignatureUpdateInterval](#defender-signatureupdateinterval)  
-- [Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)  
-- [Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)  
-  <!--EndSurfaceHub-->

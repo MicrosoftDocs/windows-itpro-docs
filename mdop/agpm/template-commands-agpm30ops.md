@@ -1,7 +1,7 @@
 ---
 title: Template Commands
 description: Template Commands
-author: mjcaparas
+author: dansimp
 ms.assetid: 2ec11b3f-0c5c-4788-97bd-bd4bf64ba51a
 ms.reviewer: 
 manager: dansimp

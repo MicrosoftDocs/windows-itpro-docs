@@ -1,7 +1,7 @@
 ---
 title: How to Publish a Virtual Application on the Client
 description: How to Publish a Virtual Application on the Client
-author: eavena
+author: dansimp
 ms.assetid: 90af843e-b5b3-4a71-a3a1-fa5f4c087f28
 ms.reviewer: 
 manager: dansimp

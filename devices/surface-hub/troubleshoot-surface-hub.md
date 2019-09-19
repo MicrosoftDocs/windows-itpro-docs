@@ -7,8 +7,8 @@ manager: dansimp
 keywords: Troubleshoot common problems, setup issues, Exchange ActiveSync errors
 ms.prod: surface-hub
 ms.sitesec: library
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 03/16/2018
 ms.localizationpriority: medium

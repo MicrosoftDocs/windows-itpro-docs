@@ -1,7 +1,7 @@
 ---
 title: Performing AGPM Administrator Tasks
 description: Performing AGPM Administrator Tasks
-author: mjcaparas
+author: dansimp
 ms.assetid: bc746f39-bdc9-4e2a-bc48-c3c7905de098
 ms.reviewer: 
 manager: dansimp

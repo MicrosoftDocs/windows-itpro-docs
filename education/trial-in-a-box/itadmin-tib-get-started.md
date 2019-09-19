@@ -9,8 +9,8 @@ ms.topic: quickstart
 ms.localizationpriority: medium
 ms.pagetype: edu
 ROBOTS: noindex,nofollow
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.date: 03/18/2018
 ms.reviewer: 
 manager: dansimp

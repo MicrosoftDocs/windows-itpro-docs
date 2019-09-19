@@ -1,7 +1,7 @@
 ---
 title: DaRT 7.0 Supported Configurations
 description: DaRT 7.0 Supported Configurations
-author: msfttracyp
+author: dansimp
 ms.assetid: e9ee87b0-3254-4625-b178-17b2f5b8f8c8
 ms.reviewer: 
 manager: dansimp
