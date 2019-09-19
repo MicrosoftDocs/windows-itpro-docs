@@ -30,8 +30,8 @@ Ensure that your machines:
 >Threat & Vulnerability Management can also scan machines that run on Windows 7 and Windows Server 2019 operating systems and detects vulnerabilities addressed in patch Tuesday.
 
 - Have the following mandatory updates installed:
-- (1) RS3 customers | [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)
-- (2) RS4 customers | [KB4493464](https://support.microsoft.com/en-us/help/4493464)
+- (1) RS3 customers | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)
+- (2) RS4 customers | [KB4493464](https://support.microsoft.com/help/4493464)
 - Are onboarded to Microsoft Intune and System Center Configuration Manager (SCCM). If you are use SCCM, update your console to the latest May version 1905
 - Have at least one security recommendation that can be viewed in the machine page
 - Are tagged or marked as co-managed
