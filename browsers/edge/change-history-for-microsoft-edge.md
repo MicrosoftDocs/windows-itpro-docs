@@ -6,11 +6,11 @@ ms.topic: reference
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.localizationpriority: medium
-audience: itpromanager: dansimp
-ms.author: eravena
-author: eavena
+audience: itpro
+manager: dansimp
+author: dansimp
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.author: dansimp 
 ---
 
 # Change history for Microsoft Edge

@@ -20,7 +20,6 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
 
 Conducting a comprehensive security product evaluation can be a complex process requiring cumbersome environment and machine configuration before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
 
@@ -42,6 +41,13 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
 When you access the evaluation lab for the first time, you'll find an introduction page with a link to the evaluation guide. The guide contains tips and recommendations to keep in mind when evaluating an advanced threat protection product. 
 
 It's a good idea to read the guide before starting the evaluation process so that you can conduct a thorough assessment of the platform.
+
+>[!NOTE]
+>- Each environment is provisioned with only three test machines.
+>- Each machine will be available for only three days from the day of activation.
+>- When you've used up these three machines, no new machines are provided.
+Deleting a machine does not refresh the available test machine count.
+>- Given the limited resources, it’s advisable to use the machines carefully.
 
 
 ## Evaluation setup 
@@ -78,7 +84,11 @@ Automated investigation settings will be dependent on tenant settings. It will b
 3. Select **Add machine**.
 
     >[!WARNING]
-    > The evaluation environment can only be provisioned up to three test machines. Each machine will only be available for three days from the day of activation. 
+    >- Each environment is provisioned with only three test machines.
+    >- Each machine will be available for only three days from the day of activation.
+    >- When you've used up these three machines, no new machines are provided.
+        Deleting a machine does not refresh the available test machine count.
+    >- Given the limited resources, it’s advisable to use the machines carefully.
 
    ![Image of add machine](images/evaluation-add-machine.png)
 

@@ -35,7 +35,7 @@ Critical cloud services include:
 - Azure active directory (AAD)
 - Windows Update (WU)
 
-Commercial customers will need enterprise mobility management (EMM) or mobile device management (MDM) infrastructure in order to manage HoloLens devices at scale.  This guide uses [Microsoft Intune](https://www.microsoft.com/en-us/enterprise-mobility-security/microsoft-intune) as an example though any provider with full support for Microsoft Policy can support HoloLens.  Ask your mobile device management provider if they support HoloLens 2.
+Commercial customers will need enterprise mobility management (EMM) or mobile device management (MDM) infrastructure in order to manage HoloLens devices at scale.  This guide uses [Microsoft Intune](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) as an example though any provider with full support for Microsoft Policy can support HoloLens.  Ask your mobile device management provider if they support HoloLens 2.
 
 HoloLens does support a limited set of cloud disconnected experiences.
 

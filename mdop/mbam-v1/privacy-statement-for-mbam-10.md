@@ -1,7 +1,7 @@
 ---
 title: Privacy Statement for MBAM 1.0
 description: Privacy Statement for MBAM 1.0
-author: msfttracyp
+author: dansimp
 ms.assetid: db18cc93-a1c1-44da-a450-a5399a4427b9
 ms.reviewer: 
 manager: dansimp

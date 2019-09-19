@@ -28,7 +28,7 @@ ms.topic: article
 > [!TIP]
 > Go to **Advanced features** in the **Settings** page to turn on the preview features.
 > 
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
 
 Understand the security status of your organization, including the status of machines, alerts, and investigations using the Microsoft Defender ATP reporting feature that integrates with Power BI. 
 
@@ -202,7 +202,7 @@ In general, if you know of a specific threat name, CVE, or KB, you can identify 
 
 
 ## Related topic
-- [**Beta** Create custom Power BI reports](run-advanced-query-sample-power-bi-app-token.md)
+- [Create custom Power BI reports](api-power-bi.md)
 
 
 

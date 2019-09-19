@@ -1,10 +1,11 @@
 ---
-title: Microsoft Edge - Frequently Asked Questions (FAQs) for IT Pros 
+title: Microsoft Edge - Frequently Asked Questions (FAQs) for IT Pros
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 description: Answers to frequently asked questions about Microsoft Edge features, integration, support, and potential problems.
-author: msdmaguire
-ms.author: dmaguire
+author: dansimp
+ms.author: dansimp
 ms.prod: edge
 ms.topic: article
 ms.mktglfcycl: general

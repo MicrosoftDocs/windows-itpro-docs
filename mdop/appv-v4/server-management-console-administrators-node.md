@@ -1,7 +1,7 @@
 ---
 title: Server Management Console Administrators Node
 description: Server Management Console Administrators Node
-author: eavena
+author: dansimp
 ms.assetid: ab421454-69d1-4c10-8f58-2a35ae89c8b1
 ms.reviewer: 
 manager: dansimp

@@ -1,7 +1,7 @@
 ---
 title: UE-V 1.0 Security Considerations
 description: UE-V 1.0 Security Considerations
-author: levinec
+author: dansimp
 ms.assetid: c5cdf9ff-dc96-4491-98e9-0eada898ffe0
 ms.reviewer: 
 manager: dansimp

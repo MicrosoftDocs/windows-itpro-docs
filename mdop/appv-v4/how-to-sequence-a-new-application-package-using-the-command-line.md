@@ -1,7 +1,7 @@
 ---
 title: How to Sequence a New Application Package Using the Command Line
 description: How to Sequence a New Application Package Using the Command Line
-author: eavena
+author: dansimp
 ms.assetid: de72912b-d9e7-45b5-a601-12528f1a4cac
 ms.reviewer: 
 manager: dansimp

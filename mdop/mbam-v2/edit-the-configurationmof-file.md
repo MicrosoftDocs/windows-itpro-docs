@@ -1,7 +1,7 @@
 ---
 title: Edit the Configuration.mof File
 description: Edit the Configuration.mof File
-author: msfttracyp
+author: dansimp
 ms.assetid: 23e50ec9-4083-4b12-ad96-626cf30960bb
 ms.reviewer: 
 manager: dansimp

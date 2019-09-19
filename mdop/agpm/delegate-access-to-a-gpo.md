@@ -1,7 +1,7 @@
 ---
 title: Delegate Access to a GPO
 description: Delegate Access to a GPO
-author: mjcaparas
+author: dansimp
 ms.assetid: f1d6bb6c-d5bf-4080-a6cb-32774689f804
 ms.reviewer: 
 manager: dansimp

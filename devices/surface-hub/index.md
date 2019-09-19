@@ -65,9 +65,9 @@ Surface Hub 2S is an all-in-one digital interactive whiteboard, meetings platfor
                     </div>
                     <div class="cardText">
                         <h3>Deploy</h3>
-                        <p><a href="surface-hub-2s-deploy-checklist.md">Surface Hub 2S deployment checklist</a></p>
-                        <p><a href="surface-hub-2s-account.md">Create device account</a></p>
-                        <p><a href="surface-hub-2s-deploy.md">Deploy with provisioning package</a></p>
+                              <p><a href="surface-hub-2s-adoption-kit.md">Surface Hub 2S adoption and training</a></p>
+                              <p><a href="surface-hub-2s-deploy-checklist.md">Surface Hub 2S deployment checklist</a></p>
+                              <p><a href="surface-hub-2s-account.md">Create device account</a></p>
                     </div>
                 </div>
             </div>

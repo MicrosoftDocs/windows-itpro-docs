@@ -1,7 +1,7 @@
 ---
 title: Modify the AGPM Service Account
 description: Modify the AGPM Service Account
-author: mjcaparas
+author: dansimp
 ms.assetid: 0d8d8c7b-f299-4fee-8414-406492156942
 ms.reviewer: 
 manager: dansimp

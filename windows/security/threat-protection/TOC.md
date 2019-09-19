@@ -28,10 +28,10 @@
 ##### [System integrity](windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
 
 #### [Application control](windows-defender-application-control/windows-defender-application-control.md)
-#### [Exploit protection](windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
-#### [Network protection](windows-defender-exploit-guard/network-protection-exploit-guard.md)
-#### [Controlled folder access](windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
-#### [Attack surface reduction](windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
+#### [Exploit protection](microsoft-defender-atp/exploit-protection.md)
+#### [Network protection](microsoft-defender-atp/network-protection.md)
+#### [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
+#### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 
 ### [Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
@@ -71,19 +71,22 @@
 ###### [Run antivirus scan](microsoft-defender-atp/respond-machine-alerts.md#run-windows-defender-antivirus-scan-on-machines)
 ###### [Restrict app execution](microsoft-defender-atp/respond-machine-alerts.md#restrict-app-execution)
 ###### [Isolate machines from the network](microsoft-defender-atp/respond-machine-alerts.md#isolate-machines-from-the-network)
-####### [Check activity details in Action center](microsoft-defender-atp/respond-machine-alerts.md#check-activity-details-in-action-center)
+###### [Consult a threat expert](microsoft-defender-atp/respond-machine-alerts.md#consult-a-threat-expert)
+###### [Check activity details in Action center](microsoft-defender-atp/respond-machine-alerts.md#check-activity-details-in-action-center)
  
 ##### [Take response actions on a file]()
 ###### [Response actions on files](microsoft-defender-atp/respond-file-alerts.md)
 ###### [Stop and quarantine files in your network](microsoft-defender-atp/respond-file-alerts.md#stop-and-quarantine-files-in-your-network)
 ###### [Restore file from quarantine](microsoft-defender-atp/respond-file-alerts.md#restore-file-from-quarantine)
 ###### [Add indicators to block or allow a file](microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
+###### [Consult a threat expert](microsoft-defender-atp/respond-file-alerts.md#consult-a-threat-expert)
 ###### [Check activity details in Action center](microsoft-defender-atp/respond-file-alerts.md#check-activity-details-in-action-center)
 ###### [Download or collect file](microsoft-defender-atp/respond-file-alerts.md#download-or-collect-file)
 ###### [Deep analysis](microsoft-defender-atp/respond-file-alerts.md#deep-analysis)
 ###### [Submit files for analysis](microsoft-defender-atp/respond-file-alerts.md#submit-files-for-analysis)
 ###### [View deep analysis reports](microsoft-defender-atp/respond-file-alerts.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](microsoft-defender-atp/respond-file-alerts.md#troubleshoot-deep-analysis)
+
 
 ##### [Investigate entities using Live response]()
 ###### [Investigate entities on machines](microsoft-defender-atp/live-response.md)
@@ -100,6 +103,7 @@
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/overview-hunting.md)
 #### [Query data using Advanced hunting](microsoft-defender-atp/advanced-hunting.md)
+#### [Stream Advanced hunting events to Azure Event Hubs](microsoft-defender-atp/raw-data-export-event-hub.md)
 #### [Advanced hunting schema reference]()
 ##### [All tables in the Advanced hunting schema](microsoft-defender-atp/advanced-hunting-reference.md)
 ##### [AlertEvents table](microsoft-defender-atp/advanced-hunting-alertevents-table.md)
@@ -114,24 +118,24 @@
 ##### [RegistryEvents table](microsoft-defender-atp/advanced-hunting-registryevents-table.md)
 #### [Advanced hunting query language best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
 
+
 #### [Custom detections]()
 ##### [Understand custom detection rules](microsoft-defender-atp/overview-custom-detections.md)
 ##### [Create custom detections rules](microsoft-defender-atp/custom-detection-rules.md)
 
-#### [Management and APIs]()
-##### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
-##### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
-##### [Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
-##### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
+### [Management and APIs]()
+#### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
+#### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
+#### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
 
-#### [Integrations]()
-##### [Microsoft Defender ATP integrations](microsoft-defender-atp/threat-protection-integration.md)
-##### [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
-##### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
+### [Integrations]()
+#### [Microsoft Defender ATP integrations](microsoft-defender-atp/threat-protection-integration.md)
+#### [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
+#### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
 
-#### [Information protection in Windows overview]()
-##### [Windows integration](microsoft-defender-atp/information-protection-in-windows-overview.md)
-##### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
+### [Information protection in Windows overview]()
+#### [Windows integration](microsoft-defender-atp/information-protection-in-windows-overview.md)
+#### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
 
 ### [Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)
 
@@ -155,10 +159,10 @@
 ##### [Attack surface reduction and nex-generation evaluation overview](microsoft-defender-atp/evaluate-atp.md)
 ##### [Hardware-based isolation](windows-defender-application-guard/test-scenarios-wd-app-guard.md)
 ##### [Application control](windows-defender-application-control/audit-windows-defender-application-control-policies.md)
-##### [Exploit protection](windows-defender-exploit-guard/evaluate-exploit-protection.md)
-##### [Network Protection](windows-defender-exploit-guard/evaluate-network-protection.md)
-##### [Controlled folder access](windows-defender-exploit-guard/evaluate-controlled-folder-access.md)
-##### [Attack surface reduction](windows-defender-exploit-guard/evaluate-attack-surface-reduction.md)
+##### [Exploit protection](microsoft-defender-atp/evaluate-exploit-protection.md)
+##### [Network Protection](microsoft-defender-atp/evaluate-network-protection.md)
+##### [Controlled folder access](microsoft-defender-atp/evaluate-controlled-folder-access.md)
+##### [Attack surface reduction](microsoft-defender-atp/evaluate-attack-surface-reduction.md)
 ##### [Network firewall](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
 ##### [Evaluate next generation protection](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
@@ -184,20 +188,20 @@
 ###### [Code integrity](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 
 ###### [Memory integrity]()
-####### [Understand memory integrity](windows-defender-exploit-guard/memory-integrity.md)
-####### [Hardware qualifications](windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
-####### [Enable HVCI](windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity.md)
+####### [Understand memory integrity](device-guard/memory-integrity.md)
+####### [Hardware qualifications](device-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity.md)
+####### [Enable HVCI](device-guard/enable-virtualization-based-protection-of-code-integrity.md)
 
 #### [Exploit protection]()
-##### [Enable exploit protection](windows-defender-exploit-guard/enable-exploit-protection.md)
-##### [Import/export configurations](windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md)
+##### [Enable exploit protection](microsoft-defender-atp/enable-exploit-protection.md)
+##### [Import/export configurations](microsoft-defender-atp/import-export-exploit-protection-emet-xml.md)
 
-#### [Network protection](windows-defender-exploit-guard/enable-network-protection.md)
-#### [Controlled folder access](windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md)
+#### [Network protection](microsoft-defender-atp/enable-network-protection.md)
+#### [Controlled folder access](microsoft-defender-atp/enable-controlled-folders.md)
 
 #### [Attack surface reduction controls]()
-##### [Enable attack surface reduction rules](windows-defender-exploit-guard/enable-attack-surface-reduction.md)
-##### [Customize attack surface reduction](windows-defender-exploit-guard/customize-attack-surface-reduction.md)
+##### [Enable attack surface reduction rules](microsoft-defender-atp/enable-attack-surface-reduction.md)
+##### [Customize attack surface reduction](microsoft-defender-atp/customize-attack-surface-reduction.md)
 
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)
 
@@ -334,6 +338,8 @@
 ##### [Run a detection test on a newly onboarded machine](microsoft-defender-atp/run-detection-test.md)
 ##### [Run simulated attacks on machines](microsoft-defender-atp/attack-simulations.md)
 ##### [Configure proxy and Internet connectivity settings](microsoft-defender-atp/configure-proxy-internet.md)
+##### [Create an onboarding or offboarding notification rule](microsoft-defender-atp/onboarding-notification.md)
+
 
 ##### [Troubleshoot onboarding issues]()
 ###### [Troubleshoot issues during onboarding](microsoft-defender-atp/troubleshoot-onboarding.md)
@@ -397,7 +403,6 @@
 ####### [Get domain related alerts](microsoft-defender-atp/get-domain-related-alerts.md)
 ####### [Get domain related machines](microsoft-defender-atp/get-domain-related-machines.md)
 ####### [Get domain statistics](microsoft-defender-atp/get-domain-statistics.md)
-####### [Is domain seen in organization (Deprecated)](microsoft-defender-atp/is-domain-seen-in-org.md)
 
 ###### [File]()
 ####### [File methods and properties](microsoft-defender-atp/files.md)
@@ -408,9 +413,7 @@
 
 ###### [IP]()
 ####### [Get IP related alerts](microsoft-defender-atp/get-ip-related-alerts.md)
-####### [Get IP related machines (Deprecated)](microsoft-defender-atp/get-ip-related-machines.md)
 ####### [Get IP statistics](microsoft-defender-atp/get-ip-statistics.md)
-####### [Is IP seen in organization (Deprecated)](microsoft-defender-atp/is-ip-seen-org.md)
 
 ###### [User]()
 ####### [User methods](microsoft-defender-atp/user.md)
@@ -418,15 +421,10 @@
 ####### [Get user related machines](microsoft-defender-atp/get-user-related-machines.md)
 
 ##### [How to use APIs - Samples]()
-###### [Advanced Hunting API]()
-####### [Schedule advanced Hunting using Microsoft Flow](microsoft-defender-atp/run-advanced-query-sample-ms-flow.md)
-####### [Advanced Hunting using PowerShell](microsoft-defender-atp/run-advanced-query-sample-powershell.md)
-####### [Advanced Hunting using Python](microsoft-defender-atp/run-advanced-query-sample-python.md)
-####### [Create custom Power BI reports](microsoft-defender-atp/run-advanced-query-sample-power-bi-app-token.md)
-
-###### [Multiple APIs]()
-####### [PowerShell](microsoft-defender-atp/exposed-apis-full-sample-powershell.md)
-
+###### [Microsoft Flow](microsoft-defender-atp/api-microsoft-flow.md)
+###### [Power BI](microsoft-defender-atp/api-power-bi.md)
+###### [Advanced Hunting using Python](microsoft-defender-atp/run-advanced-query-sample-python.md)
+###### [Advanced Hunting using PowerShell](microsoft-defender-atp/run-advanced-query-sample-powershell.md)
 ###### [Using OData Queries](microsoft-defender-atp/exposed-apis-odata-samples.md)
 
 #### [Windows updates (KB) info]()
@@ -436,7 +434,6 @@
 ##### [Get CVE-KB map](microsoft-defender-atp/get-cvekbmap-collection.md)
 
 #### [API for custom alerts (Deprecated)]()
-##### [Enable the custom threat intelligence application (Deprecated)](microsoft-defender-atp/enable-custom-ti.md)
 ##### [Use the threat intelligence API to create custom alerts (Deprecated)](microsoft-defender-atp/use-custom-ti.md)
 ##### [Create custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/custom-ti-api.md)
 ##### [PowerShell code examples (Deprecated)](microsoft-defender-atp/powershell-example-code.md)
@@ -444,13 +441,13 @@
 ##### [Experiment with custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/experiment-custom-ti.md)
 ##### [Troubleshoot custom threat intelligence issues (Deprecated)](microsoft-defender-atp/troubleshoot-custom-ti.md)
 
-#### [Pull alerts to your SIEM tools]()
-##### [Learn about different ways to pull alerts](microsoft-defender-atp/configure-siem.md)
+#### [Pull detections to your SIEM tools]()
+##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
 ##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
-##### [Configure Splunk to pull alerts](microsoft-defender-atp/configure-splunk.md)
-##### [Configure HP ArcSight to pull alerts](microsoft-defender-atp/configure-arcsight.md)
-##### [Microsoft Defender ATP SIEM alert API fields](microsoft-defender-atp/api-portal-mapping.md)
-##### [Pull alerts using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
+##### [Configure Splunk to pull detections](microsoft-defender-atp/configure-splunk.md)
+##### [Configure HP ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
+##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
+##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
 
 #### [Reporting]()
@@ -458,8 +455,11 @@
 ##### [Threat protection reports](microsoft-defender-atp/threat-protection-reports.md)
 ##### [Machine health and compliance reports](microsoft-defender-atp/machine-reports.md)
 
-#### [Interoperability]()
+#### [Partners & APIs]()
 ##### [Partner applications](microsoft-defender-atp/partner-applications.md)
+##### [Connected applications](microsoft-defender-atp/connected-applications.md)
+##### [API explorer](microsoft-defender-atp/api-explorer.md)
+
 
 #### [Manage machine configuration]()
 ##### [Ensure your machines are configured properly](microsoft-defender-atp/configure-machines.md)
@@ -505,7 +505,6 @@
   
 #### [Rules]()
 ##### [Manage suppression rules](microsoft-defender-atp/manage-suppression-rules.md)
-##### [Manage automation allowed/blocked lists](microsoft-defender-atp/manage-automation-allowed-blocked-list.md)
 ##### [Manage indicators](microsoft-defender-atp/manage-indicators.md)
 ##### [Manage automation file uploads](microsoft-defender-atp/manage-automation-file-uploads.md)
 ##### [Manage automation folder exclusions](microsoft-defender-atp/manage-automation-folder-exclusions.md)
@@ -533,8 +532,8 @@
 #### [Troubleshoot issues related to live response](microsoft-defender-atp/troubleshoot-live-response.md)
 
 ### [Troubleshoot attack surface reduction]()
-#### [Network protection](windows-defender-exploit-guard/troubleshoot-np.md)
-#### [Attack surface reduction rules](windows-defender-exploit-guard/troubleshoot-asr.md)
+#### [Network protection](microsoft-defender-atp/troubleshoot-np.md)
+#### [Attack surface reduction rules](microsoft-defender-atp/troubleshoot-asr.md)
  
 ### [Troubleshoot next generation protection](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 

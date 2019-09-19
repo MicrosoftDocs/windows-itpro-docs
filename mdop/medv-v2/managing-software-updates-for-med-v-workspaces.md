@@ -1,7 +1,7 @@
 ---
 title: Managing Software Updates for MED-V Workspaces
 description: Managing Software Updates for MED-V Workspaces
-author: levinec
+author: dansimp
 ms.assetid: a28d6dcd-cb9f-46ba-8dac-1d990837a3a3
 ms.reviewer: 
 manager: dansimp

@@ -504,7 +504,7 @@ This error has more than one possible cause. Attempt [quick fixes](quick-fixes.m
 <tr>
 <td>0xC1900200</td>
 <td>Setup.exe has detected that the machine does not meet the minimum system requirements.</td>
-<td>Ensure the system you are trying to upgrade meets the minimum system requirements. <br>See <a href="https://www.microsoft.com/en-us/windows/windows-10-specifications" data-raw-source="[Windows 10 specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications)">Windows 10 specifications</a>  for information.</td>
+<td>Ensure the system you are trying to upgrade meets the minimum system requirements. <br>See <a href="https://www.microsoft.com/windows/windows-10-specifications" data-raw-source="[Windows 10 specifications](https://www.microsoft.com/windows/windows-10-specifications)">Windows 10 specifications</a>  for information.</td>
 </tr>
 
 
@@ -524,14 +524,14 @@ This error has more than one possible cause. Attempt [quick fixes](quick-fixes.m
 <tr>
 <td>0x80190001</td>
 <td>An unexpected error was encountered while attempting to download files required for upgrade.</td>
-<td>To resolve this issue, download and run the media creation tool. See <a href="https://www.microsoft.com/en-us/software-download/windows10" data-raw-source="[Download windows 10](https://www.microsoft.com/en-us/software-download/windows10)">Download windows 10</a>.
+<td>To resolve this issue, download and run the media creation tool. See <a href="https://www.microsoft.com/software-download/windows10" data-raw-source="[Download windows 10](https://www.microsoft.com/software-download/windows10)">Download windows 10</a>.
 </td>
 </tr>
 <tr>
 <td>0x80246007</td>
 <td>The update was not downloaded successfully.</td>
 <td>Attempt other methods of upgrading the operating system.<br>
-Download and run the media creation tool. See <a href="https://www.microsoft.com/en-us/software-download/windows10" data-raw-source="[Download windows 10](https://www.microsoft.com/en-us/software-download/windows10)">Download windows 10</a>.
+Download and run the media creation tool. See <a href="https://www.microsoft.com/software-download/windows10" data-raw-source="[Download windows 10](https://www.microsoft.com/software-download/windows10)">Download windows 10</a>.
 <br>Attempt to upgrade using .ISO or USB.<br>
 <strong>Note</strong>: Windows 10 Enterprise isn’t available in the media creation tool. For more information, go to the <a href="https://www.microsoft.com/licensing/servicecenter/default.aspx" data-raw-source="[Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx)">Volume Licensing Service Center</a>.
 </td>
@@ -640,7 +640,7 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 <tr><td>0x8007025D - 0x2000C
 <td>This error occurs if the ISO file&#39;s metadata is corrupt.<td>&quot;Re-download the ISO/Media and re-attempt the upgrade.
 
-Alternatively, re-create installation media the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10).
+Alternatively, re-create installation media the [Media Creation Tool](https://www.microsoft.com/software-download/windows10).
 
 </td></tr>
 <tr><td>0x80070490 - 0x20007<td>An incompatible device driver is present.
@@ -656,7 +656,7 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 
 <td>The computer doesn’t meet the minimum requirements to download or upgrade to Windows 10.
 
-<td>See <a href="https://www.microsoft.com/en-us/windows/windows-10-specifications" data-raw-source="[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications)">Windows 10 Specifications</a> and verify the computer meets minimum requirements.
+<td>See <a href="https://www.microsoft.com/windows/windows-10-specifications" data-raw-source="[Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)">Windows 10 Specifications</a> and verify the computer meets minimum requirements.
 
 <br>Review logs for [compatibility information](https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/).</td></tr>
 <tr><td>0x80070004 - 0x3000D
@@ -766,6 +766,6 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 
 [Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
-<br>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
+<br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
 <br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)

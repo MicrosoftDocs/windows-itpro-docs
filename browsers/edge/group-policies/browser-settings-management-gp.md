@@ -4,9 +4,10 @@ description: Not only do the other Microsoft Edge group policies enhance the bro
 services: 
 keywords: 
 ms.localizationpriority: medium
-audience: itpromanager: dansimp
-author: eavena
-ms.author: eravena
+audience: itpro
+manager: dansimp
+author: dansimp
+ms.author: dansimp
 ms.date: 10/02/2018
 ms.reviewer: 
 ms.topic: reference

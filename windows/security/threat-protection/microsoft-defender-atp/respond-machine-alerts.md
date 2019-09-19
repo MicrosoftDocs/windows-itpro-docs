@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-respondmachine-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-respondmachine-abovefoldlink) 
 
 Quickly respond to detected attacks by isolating machines or collecting an investigation package. After taking action on machines, you can check activity details on the Action center.
 
@@ -35,6 +35,7 @@ Response actions run along the top of a specific machine page and include:
 - Run antivirus scan
 - Restrict app execution
 - Isolate machine
+- Consult a threat expert
 - Action center
 
 ![Image of response actions](images/response-actions.png)
@@ -173,6 +174,13 @@ When a machine is being isolated, the following notification is displayed to inf
 
 ![Image of no network connection](images/atp-notification-isolate.png)
 
+## Consult a threat expert
+
+You can consult a Microsoft threat expert for more insights regarding a potentially compromised machine or already compromised ones. Microsoft Threat Experts can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights not just regarding a potentially compromised machine, but also to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, or a threat intelligence context that you see on your portal dashboard.
+
+See [Consult a Microsoft Threat Expert](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) for details.
+
+
 ## Check activity details in Action center
 
 The **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view the following details:
@@ -188,3 +196,4 @@ All other related details are also shown, for example, submission date/time, sub
 
 ## Related topic
 - [Take response actions on a file](respond-file-alerts.md)
+- [Report inaccuracy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#report-inaccuracy)

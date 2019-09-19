@@ -133,18 +133,13 @@ Setting used by Windows 8.1 Selective Wipe.
 <!--/Policy-->
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>DataProtection policies supported by IoT Core  
-
-- [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
-  <!--EndIoTCore-->
-

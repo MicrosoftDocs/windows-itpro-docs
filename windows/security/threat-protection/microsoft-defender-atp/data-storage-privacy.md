@@ -90,6 +90,6 @@ Microsoft Defender ATP for Government (soon to be in preview) is currently under
 
 By providing customers with compliant, independently-verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run.
 
-For more information on the Microsoft Defender ATP ISO certification reports, see [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001). 
+For more information on the Microsoft Defender ATP ISO certification reports, see [Microsoft Trust Center](https://www.microsoft.com/trustcenter/compliance/iso-iec-27001). 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-datastorage-belowfoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-datastorage-belowfoldlink) 

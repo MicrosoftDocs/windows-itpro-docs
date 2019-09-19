@@ -21,8 +21,8 @@ ms.sitesec: library
 Area|HoloLens (1st gen)|HoloLens 2
 ----|:----:|:----:
 [Azure services](https://status.azure.com/en-us/status)|✔️|✔️
-[Store app](https://www.microsoft.com/en-us/store/collections/hlgettingstarted/hololens)|✔️|✔️
-[Apps](https://www.microsoft.com/en-us/hololens/apps)|✔️|✔️
+[Store app](https://www.microsoft.com/store/collections/hlgettingstarted/hololens)|✔️|✔️
+[Apps](https://www.microsoft.com/hololens/apps)|✔️|✔️
 [MDM](https://docs.microsoft.com/en-us/hololens/hololens-enroll-mdm)|✔️|✔️
 
 ## Notes and related topics

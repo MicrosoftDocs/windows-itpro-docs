@@ -1,7 +1,7 @@
 ---
 title: Create or Edit the Sms\_def.mof File
 description: Create or Edit the Sms\_def.mof File
-author: msfttracyp
+author: dansimp
 ms.assetid: d1747e43-484e-4031-a63b-6342fe588aa2
 ms.reviewer: 
 manager: dansimp
