@@ -161,7 +161,7 @@ Select-Object -Property *
 
 4. Click **Configure** > **General**.  
 
-5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, where **USB connection (mobile only)** excludes USB charging but includes other USB connections on mobile devices only. 
+5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, whereas **USB connection (mobile only)** excludes USB charging but includes other USB connections on mobile devices only. 
 
    ![General settings](images/general-settings.png)
 
