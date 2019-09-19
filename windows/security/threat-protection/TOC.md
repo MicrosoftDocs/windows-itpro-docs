@@ -303,7 +303,7 @@
 
 
 ### [Microsoft Defender Advanced Threat Protection for Mac](windows-defender-antivirus/microsoft-defender-atp-mac.md)
-## [What's New in Microsoft Defender ATP for Mac] (windows-defender-antivirus/microsoft-defender-atp-mac-whatsnew.md)
+#### [What's New in Microsoft Defender ATP for Mac] (windows-defender-antivirus/microsoft-defender-atp-mac-whatsnew.md)
 #### [Deploy Microsoft Defender Advanced Threat Protection for Mac]()
 ##### [Microsoft Intune-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-intune.md)
 ##### [JAMF-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-jamf.md)
