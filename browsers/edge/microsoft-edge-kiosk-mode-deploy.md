@@ -5,13 +5,13 @@ ms.assetid:
 ms.reviewer: 
 audience: itpro
 manager: dansimp
-author: eavena
-ms.author: eravena
+author: dansimp
+ms.author: dansimp
 ms.prod: edge
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/29/2018 
+ms.date: 10/29/2018
 ---
 
 # Deploy Microsoft Edge kiosk mode
