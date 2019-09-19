@@ -38,7 +38,7 @@
 ### [Surface firmware and driver updates](update.md)
 ### [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ### [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)
-### [Surface Dock Updater](surface-dock-updater.md)
+### [Surface Dock Firmware Update](surface-dock-firmware-update.md)
 
 
 ## Secure

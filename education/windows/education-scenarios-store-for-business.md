@@ -6,10 +6,10 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-searchScope:
+searchScope: 
   - Store
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.date: 03/30/2018
 ms.reviewer: 
 manager: dansimp

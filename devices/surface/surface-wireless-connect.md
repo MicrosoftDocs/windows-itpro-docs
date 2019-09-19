@@ -75,7 +75,7 @@ Leave the roaming aggressiveness setting in the default state unless you’re en
 1. Go to **Start > Control Panel** > **Network and Internet** > **Network and Sharing Center.**
 2. Under **Connections** select **Wi-Fi** and then select **Properties.**
 3. Select **Client for Microsoft Networks** and then select **Configure**
-4. Select **Advanced** > **Roaming Aggressiveness** and choose ****your preferred value from the drop-down menu.
+4. Select **Advanced** > **Roaming Aggressiveness** and choose your preferred value from the drop-down menu.
 
 ![* Roaming aggressiveness settings *](images/wifi-roaming.png) <br>
 
