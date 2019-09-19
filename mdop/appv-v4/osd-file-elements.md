@@ -1,7 +1,7 @@
 ---
 title: OSD File Elements
 description: OSD File Elements
-author: eavena
+author: dansimp
 ms.assetid: 8211b562-7549-4331-8321-144f52574e99
 ms.reviewer: 
 manager: dansimp

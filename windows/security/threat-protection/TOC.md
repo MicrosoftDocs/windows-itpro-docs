@@ -71,19 +71,22 @@
 ###### [Run antivirus scan](microsoft-defender-atp/respond-machine-alerts.md#run-windows-defender-antivirus-scan-on-machines)
 ###### [Restrict app execution](microsoft-defender-atp/respond-machine-alerts.md#restrict-app-execution)
 ###### [Isolate machines from the network](microsoft-defender-atp/respond-machine-alerts.md#isolate-machines-from-the-network)
-####### [Check activity details in Action center](microsoft-defender-atp/respond-machine-alerts.md#check-activity-details-in-action-center)
+###### [Consult a threat expert](microsoft-defender-atp/respond-machine-alerts.md#consult-a-threat-expert)
+###### [Check activity details in Action center](microsoft-defender-atp/respond-machine-alerts.md#check-activity-details-in-action-center)
  
 ##### [Take response actions on a file]()
 ###### [Response actions on files](microsoft-defender-atp/respond-file-alerts.md)
 ###### [Stop and quarantine files in your network](microsoft-defender-atp/respond-file-alerts.md#stop-and-quarantine-files-in-your-network)
 ###### [Restore file from quarantine](microsoft-defender-atp/respond-file-alerts.md#restore-file-from-quarantine)
 ###### [Add indicators to block or allow a file](microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
+###### [Consult a threat expert](microsoft-defender-atp/respond-file-alerts.md#consult-a-threat-expert)
 ###### [Check activity details in Action center](microsoft-defender-atp/respond-file-alerts.md#check-activity-details-in-action-center)
 ###### [Download or collect file](microsoft-defender-atp/respond-file-alerts.md#download-or-collect-file)
 ###### [Deep analysis](microsoft-defender-atp/respond-file-alerts.md#deep-analysis)
 ###### [Submit files for analysis](microsoft-defender-atp/respond-file-alerts.md#submit-files-for-analysis)
 ###### [View deep analysis reports](microsoft-defender-atp/respond-file-alerts.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](microsoft-defender-atp/respond-file-alerts.md#troubleshoot-deep-analysis)
+
 
 ##### [Investigate entities using Live response]()
 ###### [Investigate entities on machines](microsoft-defender-atp/live-response.md)
@@ -100,6 +103,7 @@
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/overview-hunting.md)
 #### [Query data using Advanced hunting](microsoft-defender-atp/advanced-hunting.md)
+#### [Stream Advanced hunting events to Azure Event Hubs](microsoft-defender-atp/raw-data-export-event-hub.md)
 #### [Advanced hunting schema reference]()
 ##### [All tables in the Advanced hunting schema](microsoft-defender-atp/advanced-hunting-reference.md)
 ##### [AlertEvents table](microsoft-defender-atp/advanced-hunting-alertevents-table.md)
@@ -113,6 +117,7 @@
 ##### [ProcessCreationEvents table](microsoft-defender-atp/advanced-hunting-processcreationevents-table.md)
 ##### [RegistryEvents table](microsoft-defender-atp/advanced-hunting-registryevents-table.md)
 #### [Advanced hunting query language best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
+
 
 #### [Custom detections]()
 ##### [Understand custom detection rules](microsoft-defender-atp/overview-custom-detections.md)
@@ -429,7 +434,6 @@
 ##### [Get CVE-KB map](microsoft-defender-atp/get-cvekbmap-collection.md)
 
 #### [API for custom alerts (Deprecated)]()
-##### [Enable the custom threat intelligence application (Deprecated)](microsoft-defender-atp/enable-custom-ti.md)
 ##### [Use the threat intelligence API to create custom alerts (Deprecated)](microsoft-defender-atp/use-custom-ti.md)
 ##### [Create custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/custom-ti-api.md)
 ##### [PowerShell code examples (Deprecated)](microsoft-defender-atp/powershell-example-code.md)
@@ -451,8 +455,11 @@
 ##### [Threat protection reports](microsoft-defender-atp/threat-protection-reports.md)
 ##### [Machine health and compliance reports](microsoft-defender-atp/machine-reports.md)
 
-#### [Interoperability]()
+#### [Partners & APIs]()
 ##### [Partner applications](microsoft-defender-atp/partner-applications.md)
+##### [Connected applications](microsoft-defender-atp/connected-applications.md)
+##### [API explorer](microsoft-defender-atp/api-explorer.md)
+
 
 #### [Manage machine configuration]()
 ##### [Ensure your machines are configured properly](microsoft-defender-atp/configure-machines.md)

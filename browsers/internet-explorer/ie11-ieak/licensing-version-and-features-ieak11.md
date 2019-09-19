@@ -2,8 +2,8 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: plan
 description: Learn about the version of the IEAK 11 you should run, based on your license agreement.
-author: lomayor
-ms.author: lomayor
+author: dansimp
+ms.author: dansimp
 ms.prod: ie11
 ms.assetid: 69d25451-08af-4db0-9daa-44ab272acc15
 ms.reviewer: 

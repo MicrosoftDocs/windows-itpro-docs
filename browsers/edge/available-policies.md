@@ -1,10 +1,11 @@
 ---
-description: You can customize your organization’s browser settings in Microsoft Edge with Group Policy or Microsoft Intune, or other MDM service. When you do this, you set the policy once and then copy it onto many computers—that is, touch once, configure many. 
+description: You can customize your organization’s browser settings in Microsoft Edge with Group Policy or Microsoft Intune, or other MDM service. When you do this, you set the policy once and then copy it onto many computers—that is, touch once, configure many.
 ms.assetid: 2e849894-255d-4f68-ae88-c2e4e31fa165
 ms.reviewer: 
-author: eavena
-ms.author: eravena
-audience: itpromanager: dansimp
+author: dansimp
+ms.author: dansimp
+audience: itpro
+manager: dansimp
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.topic: reference

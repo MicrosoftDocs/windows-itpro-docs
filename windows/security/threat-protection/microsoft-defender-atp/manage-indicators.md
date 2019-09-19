@@ -121,6 +121,10 @@ It's important to understand the following prerequisites prior to creating indic
 - The Antimalware client version must be 4.18.1906.x or later. 
 - Supported on machines on Windows 10, version 1709 or later. 
 - Ensure that **Custom network indicators** is enabled in **Microsoft Defender Security Center > Settings > Advanced features**. For more information, see [Advanced features](advanced-features.md).
+
+
+>[!IMPORTANT]
+> Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs.
  
 >[!NOTE]
 >There may be up to 2 hours latency (usually less) between the time the action is taken, and the URL and IP being blocked. 

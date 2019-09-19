@@ -199,26 +199,6 @@ In most cases, an IT Pro does not need to define this policy. Instead, it is exp
 <!--/Policy-->
 <hr/>
 
-
-<!--/Policies-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>DeviceHealthMonitoring policies supported by IoT Core  
-
--   [DeviceHealthMonitoring/AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring)  
--   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope](#devicehealthmonitoring-configdevicehealthmonitoringscope)  
--   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination](#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination)  
-<!--EndIoTCore-->
-
-<!--StartIoTEnterprise-->
-## <a href="" id="iotcore"></a>DeviceHealthMonitoring policies supported by IoT Enterprise  
-
--   [DeviceHealthMonitoring/AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring)  
--   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope](#devicehealthmonitoring-configdevicehealthmonitoringscope)  
--   [DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination](#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination)  
-<!--EndIoTEnterprise-->
-
-<hr/>
 Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
@@ -227,3 +207,5 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+
+<!--/Policies-->

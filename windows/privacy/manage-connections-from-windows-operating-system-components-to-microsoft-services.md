@@ -7,14 +7,14 @@ keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: high
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: medgarmedgar
+ms.author: v-medgar
+manager: sanashar
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 8/23/2019
+ms.date: 9/17/2019
 ---
 
 # Manage connections from Windows 10 operating system components to Microsoft services
@@ -271,7 +271,6 @@ Find the Cortana Group Policy objects under **Computer Configuration** &gt; **Ad
 | Allow search and Cortana to use location             | Choose whether Cortana and Search can provide location-aware search results.<br/><br/>**Disable** this policy to block access to location information for Cortana. |
 | Do not allow web search                              | Choose whether to search the web from Windows Desktop Search.<br/><br/>**Enable** this policy to remove the option to search the Internet from Cortana. |
 | Don't search the web or display web results in Search| Choose whether to search the web from Cortana.<br/><br/>**Enable** this policy to stop web queries and results from showing in Search. |
-| Set what information is shared in Search             | Control what information is shared with Bing in Search.<br/><br/>If you **enable** this policy and set it to **Anonymous info**, usage information will be shared but not search history, Microsoft Account information, or specific location. |
 
 You can also apply the Group Policies using the following registry keys:
 
@@ -281,7 +280,7 @@ You can also apply the Group Policies using the following registry keys:
 | Allow search and Cortana to use location             | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: AllowSearchToUseLocation <br/>Value: 0 |
 | Do not allow web search                              | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: DisableWebSearch <br/>Value: 1 |
 | Don't search the web or display web results in Search| HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: ConnectedSearchUseWeb <br/>Value: 0 |
-| Set what information is shared in Search             | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search<br/>REG_DWORD: ConnectedSearchPrivacy <br/>Value: 3 |
+
 
 >[!IMPORTANT]
 > Using the Group Policy editor these steps are required for all supported versions of Windows 10, however they are not required for devices running Windows 10, version 1607 or Windows Server 2016.

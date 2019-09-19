@@ -1,7 +1,7 @@
 ---
 title: Administering App-V by Using PowerShell
 description: Administering App-V by Using PowerShell
-author: manikadhiman
+author: dansimp
 ms.assetid: 1ff4686a-1e19-4eff-b648-ada091281094
 ms.reviewer: 
 manager: dansimp

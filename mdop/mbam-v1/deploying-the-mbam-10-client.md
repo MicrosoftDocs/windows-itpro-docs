@@ -1,7 +1,7 @@
 ---
 title: Deploying the MBAM 1.0 Client
 description: Deploying the MBAM 1.0 Client
-author: msfttracyp
+author: dansimp
 ms.assetid: f7ca233f-5035-4ff9-ab3a-f2453b4929d1
 ms.reviewer: 
 manager: dansimp

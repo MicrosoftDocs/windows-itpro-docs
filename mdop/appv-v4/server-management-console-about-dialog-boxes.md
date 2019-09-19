@@ -1,7 +1,7 @@
 ---
 title: Server Management Console About Dialog Boxes
 description: Server Management Console About Dialog Boxes
-author: eavena
+author: dansimp
 ms.assetid: b5fdee0b-4269-4a48-98a0-ed3f06cff041
 ms.reviewer: 
 manager: dansimp

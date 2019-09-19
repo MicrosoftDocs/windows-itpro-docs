@@ -1,7 +1,7 @@
 ---
 title: How to Publish Application Shortcuts
 description: How to Publish Application Shortcuts
-author: eavena
+author: dansimp
 ms.assetid: fc5efe86-1bbe-438b-b7d8-4f9b815cc58e
 ms.reviewer: 
 manager: dansimp
