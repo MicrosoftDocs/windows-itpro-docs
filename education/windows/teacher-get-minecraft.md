@@ -6,10 +6,10 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: mjcaparas
-searchScope:
+author: dansimp
+searchScope: 
   - Store
-ms.author: macapara
+ms.author: dansimp
 ms.date: 01/05/2018
 ms.reviewer: 
 manager: dansimp
