@@ -106,11 +106,15 @@ Requirements:
 
     ![MDM policies](images/autoenrollment-mdm-policies.png)
 
-4. Double-click **Auto MDM Enrollment with AAD Token**.
+4. Double-click **Enable Automatic MDM enrollment using default Azure AD credentials**.
 
     ![MDM autoenrollment policy](images/autoenrollment-policy.png)
 
 5. Click **Enable**, then click **OK**.
+
+>[!IMPORTANT]
+>In Windows 10, version 1903, the MDM.admx file was updated to include the possibility to select which credential is used to enroll the device. The **Device Credential** is a new option that will only have effect on clients that have the Windows 10 1903 feature update installed. 
+>The default behaviour for older releases is to fallback to **User Credential**.
 
      A task is created and scheduled to run every 5 minutes for the duration of 1 day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
 
@@ -154,15 +158,15 @@ Requirements:
 - Ensure that PCs belong to same computer group.
 
 >[!IMPORTANT]
->If you do not see the policy, it may be because you don’t have the ADMX installed for Windows 10, version 1803 or version 1809. To fix the issue, follow these steps:        
+>If you do not see the policy, it may be because you don’t have the ADMX installed for Windows 10, version 1803, version 1809 or version 1903. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):        
 >   1. Download:  
 >   1803 -->[Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)](https://www.microsoft.com/download/details.aspx?id=56880) or  
 >   1809 --> [Administrative Templates for Windows 10 October 2018 Update (1809)](https://www.microsoft.com/download/details.aspx?id=57576).
+>   1903 --> [Administrative Templates for Windows 10 May 2019 Update (1903)](https://www.microsoft.com/en-us/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all) (recommended).
 >   2. Install the package on the Primary Domain Controller (PDC).
 >   3. Navigate, depending on the version to the folder:
->   1803 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 April 2018 Update (1803) v2**, or  
->   1809 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2018 Update (1809) v2**
->   4. Copy policy definitions folder to **C:\Windows\SYSVOL\domain\Policies**.
+>   **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 \<month\> \<year\> Update (\<feature release\>) \<policy version\>**
+>   4. Copy policy definitions folder to **C:\Windows\SYSVOL\domain\Policies** (N.B. If this folder does not exist, then be aware that you will be switching to a [central policy store](https://support.microsoft.com/da-dk/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) for your entire domain).
 >   5. Restart the Primary Domain Controller for the policy to be available.
 >   This procedure will work for any future version as well.
 
