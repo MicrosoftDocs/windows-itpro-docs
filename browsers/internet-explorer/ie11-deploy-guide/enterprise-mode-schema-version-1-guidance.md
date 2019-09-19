@@ -3,12 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the Enterprise Mode Site List Manager to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 17c61547-82e3-48f2-908d-137a71938823
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Enterprise Mode schema v.1 guidance (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
