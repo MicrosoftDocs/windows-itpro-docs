@@ -3,14 +3,15 @@ title: Troubleshoot Microsoft Edge
 description: 
 ms.assetid: 
 ms.reviewer: 
-audience: itpromanager: dansimp
-author: eavena
-ms.author: eravena
+audience: itpro
+manager: dansimp
+author: dansimp
+ms.author: dansimp
 ms.prod: edge
 ms.sitesec: library
 title: Deploy Microsoft Edge kiosk mode
 ms.localizationpriority: medium
-ms.date: 10/15/2018 
+ms.date: 10/15/2018
 ---
 
 # Troubleshoot Microsoft Edge

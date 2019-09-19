@@ -42,6 +42,10 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 The following features are included in the preview release:
 
+- [Connected Azure AD applications](connected-applications.md)<br> The Connected applications page provides information about the Azure AD applications connected to Microsoft Defender ATP in your organization. 
+
+- [API Explorer](api-explorer.md)<br> The API explorer makes it easy to construct and perform API queries, test and send requests for any available Microsoft Defender ATP API endpoint.
+
 - [Tamper Protection settings in Intune](../windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-with-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management portal (Intune).
 
 - [Microsoft Threat Experts - Experts on Demand](microsoft-threat-experts.md) <BR> You now have the option to consult with Microsoft Threat Experts from several places in the portal to help you in the context of your investigation.   

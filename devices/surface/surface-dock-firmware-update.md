@@ -36,7 +36,7 @@ If preferred, you can manually complete the update as follows:
 
 > [!NOTE]
 >
-> - Manually installing the MSI file may prompt you to restart Surface.; however, restarting >is optional and not required. 
+> - Manually installing the MSI file may prompt you to restart Surface; however, restarting is optional and not required.
 >- You will need to disconnect and reconnect the dock twice before the update fully completes.
 
 ## Network deployment
