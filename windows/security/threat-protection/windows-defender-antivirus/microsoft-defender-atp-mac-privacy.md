@@ -125,7 +125,7 @@ The following fields are collected:
 | cloud_service.automatic_sample_submission           | Whether automatic sample submission is turned on or not. |
 | edr.early_preview                                   | Whether the machine should run EDR early preview features. |
 | edr.group_id                                        | Group identifier used by the detection and response component. |
-| edr.tags                                            | User defined tags. |
+| edr.tags                                            | User-defined tags. |
 | features.\[optional feature name\]                  | List of preview features, along with whether they are enabled or not. |
 
 #### Product and service performance data events
