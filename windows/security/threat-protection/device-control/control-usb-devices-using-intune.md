@@ -23,12 +23,13 @@ Microsoft recommends [a layered approach to securing removable media](https://ak
 1. [Discover plug and play (PnP) connected events for peripherals in Microsoft Defender ATP advanced hunting](#discover-plug-and-play-connected-events). Identify or investigate suspicious usage activity.
 
 2. Configure to prevent threats and allow/block only certain removable devices.
-    1. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling:  
-           - [Windows Defender Antivirus real-time protection (RTP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) to scan removable storage for malware.  
-           - The [Attack Surface Reduction (ASR) USB rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) to block untrusted and unsigned processes that run from USB.  
-           - [Direct Memory Access (DMA) protection settings](#protect-against-direct-memory-access-dma-attacks) to mitigate DMA attacks, including [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) and blocking DMA until a user signs in.  
-    2. [Allow or block removable devices](#allow-or-block-removable-devices) based on granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination. Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
-3. [Create customized alerts and response actions](#create-customized-alerts-and-response-actions) to monitor usage of removable devices based on these PnP events or any other Microsoft Defender ATP events with [custom detection rules](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules).
+    1. [Allow or block removable devices](#allow-or-block-removable-devices) based on granular configuration to deny write access to removable disks and approve or deny devices by USB vendor code, product code, device IDs, or a combination. Flexible policy assignment of device installation settings based on an individual or group of Azure Active Directory (Azure AD) users and devices.
+
+    2. [Prevent threats from removable storage](#prevent-threats-from-removable-storage) introduced by removable storage devices by enabling:  
+           - Windows Defender Antivirus real-time protection (RTP) to scan removable storage for malware.  
+           - The Attack Surface Reduction (ASR) USB rule to block untrusted and unsigned processes that run from USB.  
+           - Direct Memory Access (DMA) protection settings to mitigate DMA attacks, including Kernel DMA Protection for Thunderbolt and blocking DMA until a user signs in.  
+1. [Create customized alerts and response actions](#create-customized-alerts-and-response-actions) to monitor usage of removable devices based on these PnP events or any other Microsoft Defender ATP events with [custom detection rules](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules).
 
 4. [Respond to threats](#respond-to-threats) from peripherals in real-time based on properties reported by each peripheral.
 
@@ -41,93 +42,6 @@ You can view plug and play connected events in Microsoft Defender ATP advanced h
 For examples of Microsoft Defender ATP advanced hunting queries, see the [Microsoft Defender ATP hunting queries GitHub repo](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries).
 
 Sample Power BI report templates are available for Microsoft Defender ATP that you can use for Advanced hunting queries. With these sample templates, including one for device control, you can integrate the power of Advanced hunting into Power BI. See the [GitHub repository for PowerBI templates](https://github.com/microsoft/MDATP-PowerBI-Templates) for more information. See [Create custom reports using Power BI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi) to learn more about Power BI integration.
-
-## Prevent threats from removable storage
-  
-Removable storage devices can introduce additional security risk to your organization. Microsoft Defender ATP can help identify and block malicious files on removable storage devices.
-
-Microsoft Defender ATP can also prevent USB peripherals from being used on devices to help prevent external threats. It does this by using the properties reported by USB peripherals to determine whether or not they can be installed and used on the device.
-
-Note that if you block USB devices or any other device classes using the device installation policies, connected devices, such as phones, can still charge.
-
->[!NOTE]
->Always test and refine these settings with a pilot group of users and devices first before widely distributing to your organization. 
-
-The following table describes the ways Microsoft Defender ATP can help prevent threats from removable storage.
-
-For more information about controlling USB devices, see the [Microsoft Defender ATP blog](https://aka.ms/devicecontrolblog).
-
-| Control  | Description |
-|----------|-------------|
-| [Enable Windows Defender Antivirus Scanning](#enable-windows-defender-antivirus-scanning) | Enable Windows Defender Antivirus scanning for real-time protection or scheduled scans.|
-| [Block untrusted and unsigned processes on USB peripherals](#block-untrusted-and-unsigned-processes-on-usb-peripherals) | Block USB files that are unsigned or untrusted. |
-| [Protect against Direct Memory Access (DMA) attacks](#protect-against-direct-memory-access-dma-attacks) | Configure settings to protect against DMA attacks. |
-
->[!NOTE]
->Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
-
-### Enable Windows Defender Antivirus Scanning
-
-Protecting authorized removable storage with Windows Defender Antivirus requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) or scheduling scans and configuring removable drives for scans.
-
-- If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives. You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted, so that Windows Defender Antivirus starts scanning all files on a removable device once the removable device is attached. However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.
-- If scheduled scans are used, then you need to disable the DisableRemovableDriveScanning setting (enabled by default) to scan the removable device during a full scan. Removable devices are scanned during a quick or custom scan regardless of the DisableRemovableDriveScanning setting.
-
->[!NOTE]
->We recommend enabling real-time monitoring for scanning. In Intune, you can enable real-time monitoring for Windows 10 in **Device Restrictions** > **Configure** > **Windows Defender Antivirus** > **Real-time monitoring**.
-
-<!-- Need to build out point in the preceding note. 
--->
-
-### Block untrusted and unsigned processes on USB peripherals
-
-End-users might plug in removable devices that are infected with malware.
-To prevent infections, a company can block USB files that are unsigned or untrusted.
-Alternatively, companies can leverage the audit feature of attack surface reduction rules to monitor the activity of untrusted and unsigned processes that execute on a USB peripheral.
-This can be done by setting **Untrusted and unsigned processes that run from USB** to either **Block** or **Audit only**, respectively.
-With this rule, admins can prevent or audit unsigned or untrusted executable files from running from USB removable drives, including SD cards.
-Affected file types include executable files (such as .exe, .dll, or .scr) and script files such as a PowerShell (.ps), VisualBasic (.vbs), or JavaScript (.js) files.
-
-These settings require [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).
-
-1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
-2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**.
-
-   ![Create device configuration profile](images/create-device-configuration-profile.png)
-
-3. Use the following settings:
-
-   - Name: Type a name for the profile
-   - Description: Type a description
-   - Platform: Windows 10 or later
-   - Profile type: Endpoint protection
-
-   ![Create endpoint protection profile](images/create-endpoint-protection-profile.png)
-
-4. Click **Configure** > **Windows Defender Exploit Guard** > **Attack Surface Reduction**.
-
-5. For **Unsigned and untrusted processes that run from USB**, choose **Block**.
-
-   ![Block untrusted processes](images/block-untrusted-processes.png)
-
-6. Click **OK** to close **Attack Surface Reduction**, **Windows Defender Exploit Guard**, and **Endpoint protection**.
-
-7. Click **Create** to save the profile.
-
-### Protect against Direct Memory Access (DMA) attacks
-
-DMA attacks can lead to disclosure of sensitive information residing on a PC, or even injection of malware that allows attackers to bypass the lock screen or control PCs remotely. The following settings help to prevent DMA attacks:
-
-1. Beginning with Windows 10 version 1803, Microsoft introduced [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) to provide native protection against DMA attacks via Thunderbolt ports. Kernel DMA Protection for Thunderbolt is enabled by system manufacturers and cannot be turned on or off by users.
-
-   Beginning with Windows 10 version 1809, you can adjust the level of Kernel DMA Protection by configuring the [DMA Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy). This is an additional control for peripherals that don't support device memory isolation (also known as DMA-remapping). Memory isolation allows the OS to leverage the I/O Memory Management Unit (IOMMU) of a device to block unallowed I/O, or memory access, by the peripheral (memory sandboxing). In other words, the OS assigns a certain memory range to the peripheral. If the peripheral attempts to read/write to memory outside of the assigned range, the OS blocks it.
-
-   Peripherals that support device memory isolation can always connect. Peripherals that don't can be blocked, allowed, or allowed only after the user signs in (default).
-
-2. On Windows 10 systems that do not support Kernel DMA Protection, you can:
-
-   - [Block DMA until a user signs in](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
-   - [Block all connections via the Thunderbolt ports (including USB devices)](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d)
 
 ## Allow or block removable devices
 The following table describes the ways Microsoft Defender ATP can allow or block removable devices based on granular configuration.
@@ -271,7 +185,7 @@ Microsoft Defender ATP blocks installation and usage of prohibited peripherals b
 
 ### Limit services that use Bluetooth
 
-Using Intune, you can limit the services that can use Bluetooth through the “Bluetooth allowed services”. The default state of “Bluetooth allowed services” settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and doesn’t add the file transfer GUIDs, file transfer should be blocked.
+Using Intune, you can limit the services that can use Bluetooth through the “Bluetooth allowed services”. The default state of [Bluetooth allowed services](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and doesn’t add the file transfer GUIDs, file transfer should be blocked.
 
 ![Bluetooth](images/bluetooth.png)
 
@@ -280,6 +194,93 @@ Using Intune, you can limit the services that can use Bluetooth through the “B
 The Microsoft Defender ATP baseline settings represent the recommended configuration for ATP. Configuration settings for baseline are located in the edit profile page of the configuration settings.
 
 ![Baselines](images/baselines.png)
+
+## Prevent threats from removable storage
+  
+Removable storage devices can introduce additional security risk to your organization. Microsoft Defender ATP can help identify and block malicious files on removable storage devices.
+
+Microsoft Defender ATP can also prevent USB peripherals from being used on devices to help prevent external threats. It does this by using the properties reported by USB peripherals to determine whether or not they can be installed and used on the device.
+
+Note that if you block USB devices or any other device classes using the device installation policies, connected devices, such as phones, can still charge.
+
+>[!NOTE]
+>Always test and refine these settings with a pilot group of users and devices first before widely distributing to your organization. 
+
+The following table describes the ways Microsoft Defender ATP can help prevent threats from removable storage.
+
+For more information about controlling USB devices, see the [Microsoft Defender ATP blog](https://aka.ms/devicecontrolblog).
+
+| Control  | Description |
+|----------|-------------|
+| [Enable Windows Defender Antivirus Scanning](#enable-windows-defender-antivirus-scanning) | Enable Windows Defender Antivirus scanning for real-time protection or scheduled scans.|
+| [Block untrusted and unsigned processes on USB peripherals](#block-untrusted-and-unsigned-processes-on-usb-peripherals) | Block USB files that are unsigned or untrusted. |
+| [Protect against Direct Memory Access (DMA) attacks](#protect-against-direct-memory-access-dma-attacks) | Configure settings to protect against DMA attacks. |
+
+>[!NOTE]
+>Because an unauthorized USB peripheral can have firmware that spoofs its USB properties, we recommend only allowing specifically approved USB peripherals and limiting the users who can access them.
+
+### Enable Windows Defender Antivirus Scanning
+
+Protecting authorized removable storage with Windows Defender Antivirus requires [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) or scheduling scans and configuring removable drives for scans.
+
+- If real-time protection is enabled, files are scanned before they are accessed and executed. The scanning scope includes all files, including those on mounted removable devices such as USB drives. You can optionally [run a PowerShell script to perform a custom scan](https://aka.ms/scanusb) of a USB drive after it is mounted, so that Windows Defender Antivirus starts scanning all files on a removable device once the removable device is attached. However, we recommend enabling real-time protection for improved scanning performance, especially for large storage devices.
+- If scheduled scans are used, then you need to disable the DisableRemovableDriveScanning setting (enabled by default) to scan the removable device during a full scan. Removable devices are scanned during a quick or custom scan regardless of the DisableRemovableDriveScanning setting.
+
+>[!NOTE]
+>We recommend enabling real-time monitoring for scanning. In Intune, you can enable real-time monitoring for Windows 10 in **Device Restrictions** > **Configure** > **Windows Defender Antivirus** > **Real-time monitoring**.
+
+<!-- Need to build out point in the preceding note. 
+-->
+
+### Block untrusted and unsigned processes on USB peripherals
+
+End-users might plug in removable devices that are infected with malware.
+To prevent infections, a company can block USB files that are unsigned or untrusted.
+Alternatively, companies can leverage the audit feature of [attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) to monitor the activity of untrusted and unsigned processes that execute on a USB peripheral.
+This can be done by setting **Untrusted and unsigned processes that run from USB** to either **Block** or **Audit only**, respectively.
+With this rule, admins can prevent or audit unsigned or untrusted executable files from running from USB removable drives, including SD cards.
+Affected file types include executable files (such as .exe, .dll, or .scr) and script files such as a PowerShell (.ps), VisualBasic (.vbs), or JavaScript (.js) files.
+
+These settings require [enabling real-time protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus).
+
+1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
+2. Click **Intune** > **Device configuration** > **Profiles** > **Create profile**.
+
+   ![Create device configuration profile](images/create-device-configuration-profile.png)
+
+3. Use the following settings:
+
+   - Name: Type a name for the profile
+   - Description: Type a description
+   - Platform: Windows 10 or later
+   - Profile type: Endpoint protection
+
+   ![Create endpoint protection profile](images/create-endpoint-protection-profile.png)
+
+4. Click **Configure** > **Windows Defender Exploit Guard** > **Attack Surface Reduction**.
+
+5. For **Unsigned and untrusted processes that run from USB**, choose **Block**.
+
+   ![Block untrusted processes](images/block-untrusted-processes.png)
+
+6. Click **OK** to close **Attack Surface Reduction**, **Windows Defender Exploit Guard**, and **Endpoint protection**.
+
+7. Click **Create** to save the profile.
+
+### Protect against Direct Memory Access (DMA) attacks
+
+DMA attacks can lead to disclosure of sensitive information residing on a PC, or even injection of malware that allows attackers to bypass the lock screen or control PCs remotely. The following settings help to prevent DMA attacks:
+
+1. Beginning with Windows 10 version 1803, Microsoft introduced [Kernel DMA Protection for Thunderbolt](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) to provide native protection against DMA attacks via Thunderbolt ports. Kernel DMA Protection for Thunderbolt is enabled by system manufacturers and cannot be turned on or off by users.
+
+   Beginning with Windows 10 version 1809, you can adjust the level of Kernel DMA Protection by configuring the [DMA Guard CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy). This is an additional control for peripherals that don't support device memory isolation (also known as DMA-remapping). Memory isolation allows the OS to leverage the I/O Memory Management Unit (IOMMU) of a device to block unallowed I/O, or memory access, by the peripheral (memory sandboxing). In other words, the OS assigns a certain memory range to the peripheral. If the peripheral attempts to read/write to memory outside of the assigned range, the OS blocks it.
+
+   Peripherals that support device memory isolation can always connect. Peripherals that don't can be blocked, allowed, or allowed only after the user signs in (default).
+
+2. On Windows 10 systems that do not support Kernel DMA Protection, you can:
+
+   - [Block DMA until a user signs in](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+   - [Block all connections via the Thunderbolt ports (including USB devices)](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d)
 
 ## Create customized alerts and response actions
 
