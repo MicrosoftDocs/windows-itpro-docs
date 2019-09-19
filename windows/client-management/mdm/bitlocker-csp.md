@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: lomayor
-ms.date: 08/05/2019
+ms.date: 09/19/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -25,7 +25,7 @@ For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation 
 
 The following diagram shows the BitLocker configuration service provider in tree format.
 
-![bitlocker csp](images/provisioning-csp-bitlocker.png)
+![BitLocker csp](images/provisioning-csp-bitlocker.png)
 
 <a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
 Defines the root node for the BitLocker configuration service provider.
@@ -57,7 +57,7 @@ Allows the administrator to require storage card encryption on the device. This 
 Data type is integer. Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the storage card, but the user will no longer be prompted to turn it on.
 
 - 0 (default) – Storage cards do not need to be encrypted.
-- 1 – Require Storage cards to be encrypted.  
+- 1 – Require storage cards to be encrypted.  
 
 Disabling this policy will not turn off the encryption on the system card, but the user will no longer be prompted to turn it on.
 
@@ -125,10 +125,10 @@ Encryptable fixed data volumes are treated similarly to OS volumes. However, fix
 
 The following list shows the supported values:
 
--   0 (default) – Disable. If the policy setting is not set or is set to 0, the device's enforcement status will not be checked. The policy will not enforce encryption and it will not decrypt encrypted volumes.
--   1 – Enable. The device's enforcement status will be checked. Setting this policy to 1 will trigger encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).  
+-   0 (default) — Disable. If the policy setting is not set or is set to 0, the device's enforcement status is not checked. The policy does not enforce encryption and it does not decrypt encrypted volumes.
+-   1 – Enable. The device's enforcement status is checked. Setting this policy to 1 triggers encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).  
 
-If you want to disable this policy use the following SyncML:
+If you want to disable this policy, use the following SyncML:
 
 ```xml
 <SyncML>
@@ -151,7 +151,7 @@ If you want to disable this policy use the following SyncML:
 
 <a href="" id="encryptionmethodbydrivetype"></a>**EncryptionMethodByDriveType**
 
-Allows you to set the default encrytion method for each of the different drive types: operating system drives, fixed data drives, and removable data drives. Hidden, system and recovery partitions are skipped from encryption. This setting is a direct mapping to the Bitlocker Group Policy &quot;Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)&quot;. 
+Allows you to set the default encryption method for each of the different drive types: operating system drives, fixed data drives, and removable data drives. Hidden, system, and recovery partitions are skipped from encryption. This setting is a direct mapping to the Bitlocker Group Policy &quot;Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)&quot;. 
 <table>
 <tr>
     <th>Home</th>
