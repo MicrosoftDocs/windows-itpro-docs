@@ -185,7 +185,7 @@ Microsoft Defender ATP blocks installation and usage of prohibited peripherals b
 
 ### Limit services that use Bluetooth
 
-Using Intune, you can limit the services that can use Bluetooth through the “Bluetooth allowed services”. The default state of [Bluetooth allowed services](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and doesn’t add the file transfer GUIDs, file transfer should be blocked.
+Using Intune, you can limit the services that can use Bluetooth through the ["Bluetooth allowed services"](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide). The default state of "Bluetooth allowed services" settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and doesn’t add the file transfer GUIDs, file transfer should be blocked.
 
 ![Bluetooth](images/bluetooth.png)
 
