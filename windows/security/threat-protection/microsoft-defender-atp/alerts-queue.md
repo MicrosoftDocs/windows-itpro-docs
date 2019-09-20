@@ -84,7 +84,7 @@ The table below lists the current categories and how they generally map to previ
 | Persistence          | Installation, Persistence | Creating autostart extensibility points (ASEPs) to remain active and survive system restarts |
 | Privilege escalation | PrivilegeEscalation | Obtaining higher permission levels for code by running it in the context of a privileged process or account |
 | Ransomware           | Ransomware | Malware that encrypts files and extorts payment to restore access |
-| Suspicious activity  | General, None, NotApplicable, EnterprisePolicy, SuspiciousNetworkTraffic | Atypicaly activity that could be malware activity or part of an attack |
+| Suspicious activity  | General, None, NotApplicable, EnterprisePolicy, SuspiciousNetworkTraffic | Atypical activity that could be malware activity or part of an attack |
 | Unwanted software    | UnwantedSoftware | Low-reputation apps and apps that impact productivity and the user experience; detected as potentially unwanted applications (PUAs) |
 
 
