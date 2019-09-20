@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 08/09/2018
+ms.date: 09/20/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -14,7 +14,7 @@ manager: dansimp
 # Policy CSP - TextInput
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -733,10 +733,10 @@ This setting supports a range of values between 0 and 1.
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -757,15 +757,15 @@ This setting supports a range of values between 0 and 1.
 > - This policy is enforced only in Windows 10 for desktop.  
 > - This policy requires reboot to take effect.
 
-Added in 20H1. Allows IT admins to configure the Microsoft Simplified Chinese IME version in the desktop.
+Added in next major release of Windows 10. Allows IT admins to configure Microsoft Simplified Chinese IME version in the desktop.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) - Allows you to configure which Microsoft Simplified Chinese IME version to use. The new Microsoft Simplified Chinese IME version is configured by default.
-- 1 - Does not allow you to configure which Microsoft Simplified Chinese IME version to use. The previous version of Microsoft Simplified Chinese IME is always selected.
-- 2 - Does not allow you to configure which Microsoft Simplified Chinese IME version to use. The new Microsoft Simplified Chinese IME version is always selected.
+- 0 (default) - Allows you to configure Microsoft Simplified Chinese IME version to use. The new Microsoft Simplified Chinese IME version is configured by default.
+- 1 - Does not allow you to configure Microsoft Simplified Chinese IME version to use. The previous version of Microsoft Simplified Chinese IME is always selected.
+- 2 - Does not allow you to configure Microsoft Simplified Chinese IME version to use. The new Microsoft Simplified Chinese IME version is always selected.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -788,10 +788,10 @@ The following list shows the supported values:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -812,15 +812,15 @@ The following list shows the supported values:
 > - This policy is enforced only in Windows 10 for desktop.  
 > - This policy requires reboot to take effect.
 
-Added in 20H1. Allows IT admins to configure the Microsoft Traditional Chinese IME version in the desktop.
+Added in next major release of Windows 10. Allows IT admins to configure Microsoft Traditional Chinese IME version in the desktop.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) - Allows you to configure which Microsoft Traditional Chinese IME version to use. The new Microsoft Traditional Chinese IME version is configured by default.
-- 1 - Does not allow you to configure which Microsoft Traditional Chinese IME version to use. The previous version of Microsoft Traditional Chinese IME is always selected.
-- 2 - Does not allow you to configure which Microsoft Traditional Chinese IME version to use. The new Microsoft Traditional Chinese IME version is always selected.
+- 0 (default) - Allows you to configure Microsoft Traditional Chinese IME version to use. The new Microsoft Traditional Chinese IME version is configured by default.
+- 1 - Does not allow you to configure Microsoft Traditional Chinese IME version to use. The previous version of Microsoft Traditional Chinese IME is always selected.
+- 2 - Does not allow you to configure Microsoft Traditional Chinese IME version to use. The new Microsoft Traditional Chinese IME version is always selected.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -843,10 +843,10 @@ The following list shows the supported values:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -867,15 +867,15 @@ The following list shows the supported values:
 > - The policy is only enforced in Windows 10 for desktop.  
 > - This policy requires reboot to take effect.
 
-Added in 20H1. Allows IT admins to configure the Microsoft Japanese IME version in the desktop.
+Added in next major release of Windows 10. Allows IT admins to configure Microsoft Japanese IME version in the desktop.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) - Allows you to configure which Microsoft Japanese IME version to use. The new Microsoft Japanese IME version is configured by default.
-- 1 - Does not allow you to configure which Microsoft Japanese IME version to use. The previous version of Microsoft Japanese IME is always selected.
-- 2 - Does not allow you to configure which Microsoft Japanese IME version to use. The new Microsoft Japanese IME version is always selected.
+- 0 (default) - Allows you to configure Microsoft Japanese IME version to use. The new Microsoft Japanese IME version is configured by default.
+- 1 - Does not allow you to configure Microsoft Japanese IME version to use. The previous version of Microsoft Japanese IME is always selected.
+- 2 - Does not allow you to configure Microsoft Japanese IME version to use. The new Microsoft Japanese IME version is always selected.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -898,10 +898,10 @@ The following list shows the supported values:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>8</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -922,15 +922,15 @@ The following list shows the supported values:
 > - This policy is enforced only in Windows 10 for desktop.  
 > - This policy requires reboot to take effect.
 
-Added in 20H1. Allows IT admins to configure the Microsoft Korean IME version in the desktop.
+Added in next major release of Windows 10. Allows IT admins to configure Microsoft Korean IME version in the desktop.
 
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0 (default) - Allows you to configure which Microsoft Korean IME version to use. The new Microsoft Korean IME version is configured by default.
-- 1 - Does not allow you to configure which Microsoft Korean IME version to use. The previous version of Microsoft Korean IME is always selected.
-- 2 - Does not allow you to configure which Microsoft Korean IME version to use. The new Microsoft Korean IME version is always selected.
+- 0 (default) - Allows you to configure Microsoft Korean IME version to use. The new Microsoft Korean IME version is configured by default.
+- 1 - Does not allow you to configure Microsoft Korean IME version to use. The previous version of Microsoft Korean IME is always selected.
+- 2 - Does not allow you to configure Microsoft Korean IME version to use. The new Microsoft Korean IME version is always selected.
 
 <!--/SupportedValues-->
 <!--/Policy-->
