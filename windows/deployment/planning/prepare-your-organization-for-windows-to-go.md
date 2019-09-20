@@ -10,6 +10,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: mobility
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.topic: article
 ---
@@ -58,10 +59,10 @@ The following scenarios are examples of situations in which Windows To Go worksp
 
 -   **Travel lightly.** In this situation you have employees who are moving from site to site, but who always will have access to a compatible host computer on site. Using Windows To Go workspaces allows them to travel without the need to pack their PC.
 
-**Note**  
-If the employee wants to work offline for the majority of the time, but still maintain the ability to use the drive on the enterprise network, they should be informed of how often the Windows To Go workspace needs to be connected to the enterprise network. Doing so will ensure that the drive retains its access privileges and the workspace’s computer object is not potentially deleted from Active Directory Domain Services (AD DS).
+> [!NOTE]
+> If the employee wants to work offline for the majority of the time, but still maintain the ability to use the drive on the enterprise network, they should be informed of how often the Windows To Go workspace needs to be connected to the enterprise network. Doing so will ensure that the drive retains its access privileges and the workspace’s computer object is not potentially deleted from Active Directory Domain Services (AD DS).
 
- 
+ 
 
 ## Infrastructure considerations
 
@@ -77,10 +78,10 @@ Microsoft software, such as Microsoft Office, distributed to a Windows To Go wor
 
 You should investigate other software manufacturer’s licensing requirements to ensure they are compatible with roaming usage before deploying them to a Windows To Go workspace.
 
-**Note**  
-Using Multiple Activation Key (MAK) activation is not a supported activation method for Windows To Go as each different PC-host would require separate activation. MAK activation should not be used for activating Windows, Office, or any other application on a Windows To Go drive.
+> [!NOTE]
+> Using Multiple Activation Key (MAK) activation is not a supported activation method for Windows To Go as each different PC-host would require separate activation. MAK activation should not be used for activating Windows, Office, or any other application on a Windows To Go drive.
 
- 
+ 
 
 See [Plan for Volume Activation](https://go.microsoft.com/fwlink/p/?LinkId=618923) for more information about these activation methods and how they can be used in your organization.
 
@@ -121,9 +122,9 @@ If you want Windows To Go to be able to connect back to organizational resources
 
 [Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
 
- 
+ 
 
- 
+ 
 
 
 

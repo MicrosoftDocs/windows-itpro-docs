@@ -42,7 +42,7 @@ This topic describes the following methods for securing the Microsoft BitLocker 
 </tbody>
 </table>
 
- 
+
 
 For more information about how to secure your MBAM deployment, see [MBAM 2.5 Security Considerations](mbam-25-security-considerations.md).
 
@@ -57,10 +57,10 @@ We recommend that you use a certificate to secure the communication between the:
 
 For information about requesting and installing a certificate, see [Configuring Internet Server Certificates](https://technet.microsoft.com/library/cc731977.aspx).
 
-**Note**  
+**Note**  
 You can configure the websites and web services on different servers only if you are using Windows PowerShell. If you use the MBAM Server Configuration wizard to configure the websites, you must configure the websites and the web services on the same server.
 
- 
+
 
 To secure the communication between the web services and the databases, we also recommend that you force encryption in SQL Server. For information about securing all connections to SQL Server, including communication between the web services and SQL Server, see [MBAM 2.5 Security Considerations](mbam-25-security-considerations.md#bkmk-secure-databases).
 
@@ -94,14 +94,13 @@ Review the information in the following table before you start creating SPNs.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Create a service account in Active Directory Domain Services (AD DS).</p></td>
+<td align="left"><p>Create a service account in Active Directory Domain Services (AD DS).</p></td>
 <td align="left"><p>The service account is a user account that you create in AD DS to provide security for the MBAM websites. The MBAM websites run under an application pool, whose identity is the name of the service account. The SPNs are then registered in the application pool account.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>You must use the same application pool account for all web servers.</p>
+<strong>Note</strong><br/><p>You must use the same application pool account for all web servers.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -119,7 +118,7 @@ Review the information in the following table before you start creating SPNs.
 </tbody>
 </table>
 
- 
+
 
 ### Registering SPNs when you use a fully qualified domain host name
 
@@ -144,13 +143,13 @@ If you use a fully qualified domain host name when you configure MBAM, you have 
 </tr>
 <tr class="even">
 <td align="left"><p>Configure constrained delegation for the SPN that you are registering for the application pool account.</p></td>
-<td align="left"><p>[Configuring Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=394335)</p>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=394335" data-raw-source="[Configuring Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=394335)">Configuring Constrained Delegation</a></p>
 <p>This requirement only applies to MBAM 2.5; it is not necessary in MBAM 2.5 SP1.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### Registering SPNs when you use a NetBIOS host name
 
@@ -180,13 +179,13 @@ If you use a NetBIOS host name when you configure MBAM, register one SPN for the
 </tr>
 <tr class="odd">
 <td align="left"><p>Configure constrained delegation for the SPNs that you are registering for the application pool account.</p></td>
-<td align="left"><p>[Configuring Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=394335)</p>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=394335" data-raw-source="[Configuring Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=394335)">Configuring Constrained Delegation</a></p>
 <p>This requirement only applies to MBAM 2.5; it is not necessary in MBAM 2.5 SP1.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-regvirtualspn"></a>Registering SPNs when you use a virtual host name
 
@@ -221,18 +220,18 @@ If you configure MBAM with a virtual host name that is a fully qualified domain 
 </tr>
 <tr class="even">
 <td align="left"><p>On the Domain Name Server (DNS) server, create an “A record” for the custom host name and point it to a web server or a load balancer.</p></td>
-<td align="left"><p>See the “To configure DNS Host A Records” section in [Configure DNS Host Records](https://go.microsoft.com/fwlink/?LinkId=394337).</p>
+<td align="left"><p>See the “To configure DNS Host A Records” section in <a href="https://go.microsoft.com/fwlink/?LinkId=394337" data-raw-source="[Configure DNS Host Records](https://go.microsoft.com/fwlink/?LinkId=394337)">Configure DNS Host Records</a>.</p>
 <p>We recommend that you use A records instead of CNAMES. If you use CNAMES to point to the domain address, you must also register SPNs for the web server name in the application pool account.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Configure constrained delegation for the SPNs that you are registering for the application pool account.</p></td>
-<td align="left"><p>[Configuring Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=394335)</p>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=394335" data-raw-source="[Configuring Constrained Delegation](https://go.microsoft.com/fwlink/?LinkId=394335)">Configuring Constrained Delegation</a></p>
 <p>This requirement only applies to MBAM 2.5; it is not necessary in MBAM 2.5 SP1.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="bkmk-registerspn"></a>Registering an SPN when you upgrade from previous versions of MBAM
 
@@ -240,7 +239,7 @@ Complete the steps in this section only if you want to:
 
 -   Upgrade from a previous version of MBAM.
 
--   Run the websites in MBAM 2.5 in a load-balanced or distributed configuration, and you are currently running in a configuration that is not load balanced.
+-   Run the websites in MBAM 2.5 in a load-balanced or distributed configuration, and you are currently running in a configuration that is not load balanced.
 
 If you already registered SPNs on the machine account rather than in an application pool account, MBAM uses the existing SPNs, and you cannot configure the websites in a load-balanced or distributed configuration.
 
@@ -257,12 +256,12 @@ If you already registered SPNs on the machine account rather than in an applicat
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Create an application pool account in Active Directory Domain Services (AD DS).</p></td>
+<td align="left"><p>Create an application pool account in Active Directory Domain Services (AD DS).</p></td>
 <td align="left"><p></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Remove the currently installed websites and web services.</p></td>
-<td align="left"><p>[Removing MBAM Server Features or Software](removing-mbam-server-features-or-software.md)</p></td>
+<td align="left"><p><a href="removing-mbam-server-features-or-software.md" data-raw-source="[Removing MBAM Server Features or Software](removing-mbam-server-features-or-software.md)">Removing MBAM Server Features or Software</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Remove SPNs from the machine account.</p></td>
@@ -271,11 +270,11 @@ If you already registered SPNs on the machine account rather than in an applicat
 </tr>
 <tr class="even">
 <td align="left"><p>Register SPNs in the application pool account.</p></td>
-<td align="left"><p>Follow the steps for [Registering SPNs when you use a virtual host name](#bkmk-regvirtualspn).</p></td>
+<td align="left"><p>Follow the steps for <a href="#bkmk-regvirtualspn" data-raw-source="[Registering SPNs when you use a virtual host name](#bkmk-regvirtualspn)">Registering SPNs when you use a virtual host name</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Reconfigure the web applications and web services.</p></td>
-<td align="left"><p>[How to Configure the MBAM 2.5 Web Applications](how-to-configure-the-mbam-25-web-applications.md)</p></td>
+<td align="left"><p><a href="how-to-configure-the-mbam-25-web-applications.md" data-raw-source="[How to Configure the MBAM 2.5 Web Applications](how-to-configure-the-mbam-25-web-applications.md)">How to Configure the MBAM 2.5 Web Applications</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Do one of the following, depending on the method you use for the configuration:</p>
@@ -301,13 +300,12 @@ If you already registered SPNs on the machine account rather than in an applicat
 </tr>
 </tbody>
 </table>
-<p> </p></td>
+<p> </p></td>
 <td align="left"><div class="alert">
-<strong>Important</strong>  
-<p>The host name that you enter must be the same name as the virtual host name for which you are creating the SPNs. Also, in your web farm, the host names and the application pool credentials must be the same on every server that you are configuring.</p>
+<strong>Important</strong><br/><p>The host name that you enter must be the same name as the virtual host name for which you are creating the SPNs. Also, in your web farm, the host names and the application pool credentials must be the same on every server that you are configuring.</p>
 </div>
 <div>
- 
+
 </div>
 <p>When MBAM configures the web applications, it will try to register the SPNs for you, but it can do so only if you have Domain Admin rights on the server on which you are installing MBAM. If you do not have these rights, you can complete the configuration, but you will have to set the SPNs before or after you configure MBAM.</p></td>
 </tr>
@@ -315,7 +313,7 @@ If you already registered SPNs on the machine account rather than in an applicat
 </table>
 
 ## Required Request Filtering Settings
- 
+
  'Allow unlisted file name extensions' is required for the application to operate as expected.  This can be found by navigating to the 'Microsoft BitLocker Administration and Monitoring' -> Request Filtering -> Edit Feature Settings.
 
 
@@ -326,9 +324,9 @@ If you already registered SPNs on the machine account rather than in an applicat
 
 [MBAM 2.5 Deployment Prerequisites](mbam-25-deployment-prerequisites.md)
 
- 
 
- 
+
+
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).

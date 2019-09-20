@@ -28,7 +28,7 @@ There is no example of this event in this document.
 
 ***Event Schema:***
 
-*BranchCache: Hosted cache could not be authenticated using the provisioned SSL certificate. *
+*BranchCache: Hosted cache could not be authenticated using the provisioned SSL certificate.*
 
 *Domain name of the hosted cache:%1*
 

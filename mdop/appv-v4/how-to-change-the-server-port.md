@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -34,7 +34,7 @@ From the Application Virtualization Server Management Console, you can use the f
     **Note**  
     The port number can be any value between 1 and 65,535. The default values are 554 for RTSP and 322 for RTSPS.
 
-     
+     
 
 6.  Click **OK** to change the port number.
 
@@ -49,9 +49,9 @@ From the Application Virtualization Server Management Console, you can use the f
 
 [How to Manage Servers in the Server Management Console](how-to-manage-servers-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

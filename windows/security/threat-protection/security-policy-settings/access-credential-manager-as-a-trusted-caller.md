@@ -53,7 +53,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Use
 | Domain controller effective default settings | Not defined |
 | Member server effective default settings | Not defined |
 | Client computer effective default settings | Not defined |
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -90,4 +90,4 @@ None. Not defined is the default configuration.
 
 ## Related topics
 [User Rights Assignment](user-rights-assignment.md)
- 
+ 

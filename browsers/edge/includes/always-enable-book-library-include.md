@@ -3,9 +3,9 @@ author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.prod: edge
-ms:topic: include
+ms.topic: include
 ---
 
 <!-- ## Always show the Books Library in Microsoft Edge -->
@@ -17,10 +17,11 @@ ms:topic: include
 
 ### Supported values
 
-|Group Policy  |MDM |Registry |Description |Most restricted |
-|---|:---:|:---:|---|:---:|
-|Disabled or not configured<br>**(default)** |0 |0 |Show the Books Library only in countries or regions where supported. |![Most restricted value](../images/check-gn.png) |
-|Enabled |1 |1 |Show the Books Library, regardless of the device’s country or region. | |
+|                Group Policy                 | MDM | Registry |                              Description                              |                 Most restricted                  |
+|---------------------------------------------|:---:|:--------:|-----------------------------------------------------------------------|:------------------------------------------------:|
+| Disabled or not configured<br>**(default)** |  0  |    0     | Show the Books Library only in countries or regions where supported.  | ![Most restricted value](../images/check-gn.png) |
+|                   Enabled                   |  1  |    1     | Show the Books Library, regardless of the device’s country or region. |                                                  |
+
 ---
 
 ### ADMX info and settings

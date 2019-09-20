@@ -37,7 +37,7 @@ If the WDAC policy was deployed by using Group Policy, the GPO that is currently
 
 Signed policies protect Windows from administrative manipulation as well as malware that has gained administrative-level access to the system. For this reason, signed WDAC policies are intentionally more difficult to remove than unsigned policies. They inherently protect themselves from modification or removal and therefore are difficult even for administrators to remove successfully. If the signed WDAC policy is manually enabled and copied to the CodeIntegrity folder, to remove the policy, you must complete the following steps.
 
-> [!Note] 
+> [!NOTE]
 > For reference, signed WDAC policies should be replaced and removed from the following locations:
 
 -   &lt;EFI System Partition&gt;\\Microsoft\\Boot\\

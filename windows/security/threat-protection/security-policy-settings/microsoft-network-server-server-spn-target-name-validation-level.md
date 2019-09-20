@@ -53,7 +53,7 @@ The default setting is Off.
 This setting affects the server SMB behavior, and its implementation should be carefully evaluated and tested to prevent disruptions to file and print serving capabilities.
 
 >**Note:**  All Windows operating systems support a client-side SMB component and a server-side SMB component.
- 
+ 
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
@@ -70,7 +70,7 @@ The following table lists the actual and effective default values for this polic
 | Domain controller effective default settings| Validation level check not implemented| 
 | Member server effective default settings | Validation level check not implemented| 
 | Effective GPO default settings on client computers | Validation level check not implemented| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

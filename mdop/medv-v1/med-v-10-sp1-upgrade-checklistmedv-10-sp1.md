@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -45,16 +45,16 @@ To upgrade Microsoft Enterprise Desktop Virtualization (MED-V) 1.0 to MED-V 1.
 **Note**  
 If the server configuration has been changed from the default, the files might be stored in a different location.
 
- 
+ 
 
 ## Client Upgrade
 
 
 To upgrade the MED-V 1.0 client to MED-V 1.0 SP1, install the .msp file on a MED-V 1.0 client. The client and MED-V are automatically upgraded.
 
- 
+ 
 
- 
+ 
 
 
 

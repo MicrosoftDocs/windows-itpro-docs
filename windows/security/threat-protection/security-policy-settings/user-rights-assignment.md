@@ -78,7 +78,7 @@ The following table links to each security policy setting and provides the const
 | [Shut down the system](shut-down-the-system.md) | SeShutdownPrivilege| 
 | [Synchronize directory service data](synchronize-directory-service-data.md)| SeSyncAgentPrivilege| 
 | [Take ownership of files or other objects](take-ownership-of-files-or-other-objects.md) | SeTakeOwnershipPrivilege| 
- 
+ 
 ## Related topics
 
 - [Security policy settings reference](security-policy-settings-reference.md)

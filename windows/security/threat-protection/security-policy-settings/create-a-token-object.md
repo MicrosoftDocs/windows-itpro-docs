@@ -59,7 +59,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain Controller Effective Default Settings | Local System | 
 | Member Server Effective Default Settings | Local System | 
 | Client Computer Effective Default Settings | Local System | 
- 
+ 
 ## Policy management
 
 A restart of the device is not required for this policy setting to be effective.
@@ -84,7 +84,7 @@ This section describes how an attacker might exploit a feature or its configurat
 ### Vulnerability
 
 >**Caution:**  A user account that is given this user right has complete control over the system, and it can lead to the system being compromised. We highly recommend that you do not assign this right to any user accounts.
- 
+ 
 Windows examines a user's access token to determine the level of the user's privileges. Access tokens are built when users log on to the local device or connect to a remote device over a network. When you revoke a privilege, the change is immediately recorded, but the change is not reflected in the user's access token until the next time the user logs on or connects. Users with the ability to create or modify tokens can change the level of access for any account on a computer if they are currently logged on. They could escalate their privileges or create a DoS condition.
 
 ### Countermeasure

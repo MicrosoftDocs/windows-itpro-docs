@@ -22,12 +22,12 @@ When you publish a package to a specific user, you'll also need to specify a dyn
 
 Here's how to specify a user-specific configuration file:
 
->[!NOTE]
->The following example cmdlets use this example file path for its package:
-    >
-    >* C:\\Packages\\Contoso\\MyApp.appv.
-    >
->If your package file uses a different file path than the example, feel free to replace it as needed.
+> [!NOTE]
+> The following example cmdlets use this example file path for its package:
+> 
+> * C:\\Packages\\Contoso\\MyApp.appv.
+> 
+> If your package file uses a different file path than the example, feel free to replace it as needed.
 
 1. Enter the following cmdlet in Windows PowerShell to add the package to the computer:
 

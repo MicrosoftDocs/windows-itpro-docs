@@ -29,7 +29,7 @@ The following topics are available to help you troubleshoot common problems rela
 [802.1X authenticated wired access overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831831(v=ws.11))<br>
 [802.1X authenticated wireless access overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh994700(v%3dws.11))<br>
 [Wireless cccess deployment overview](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/wireless/b-wireless-access-deploy-overview)<br>
-[TCP/IP technical reference](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd379473(v=ws.10))<br>
+[TCP/IP technical reference](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd379473(v=ws.10))<br>
 [Network Monitor](https://docs.microsoft.com/windows/desktop/netmon2/network-monitor)<br>
 [RPC and the network](https://docs.microsoft.com/windows/desktop/rpc/rpc-and-the-network)<br>
 [How RPC works](https://docs.microsoft.com/windows/desktop/rpc/how-rpc-works)<br>

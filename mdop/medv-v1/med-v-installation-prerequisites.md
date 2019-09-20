@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -94,7 +94,7 @@ To prevent antivirus activity from affecting the performance of the virtual desk
 **Important**  
 If Virtual PC for Windows exists on the host computer, uninstall it before installing Virtual PC 2007 SP1.
 
- 
+ 
 
 **To install Microsoft Virtual PC 2007 SP1**
 
@@ -109,16 +109,16 @@ If Virtual PC for Windows exists on the host computer, uninstall it before insta
     **Note**  
     The Virtual PC 2007 SP1 update is required for running Virtual PC 2007 SP1.
 
-     
+     
 
 ## Related topics
 
 
 [Supported Configurations](supported-configurationsmedv-orientation.md)
 
- 
+ 
 
- 
+ 
 
 
 

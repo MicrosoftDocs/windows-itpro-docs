@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Security
 description: Policy CSP - Security
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/01/2019
 ms.reviewer: 
 manager: dansimp
@@ -741,21 +741,6 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Security policies supported by Windows Holographic
-
-- [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
-<!--EndHoloLens-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Security policies supported by Windows Holographic for Business
-
-- [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
-<!--EndHoloLensBusiness-->
-
 <hr/>
 
 Footnotes:
@@ -765,4 +750,5 @@ Footnotes:
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
-- 6 - Added in the next major release of Windows 10.
+- 6 - Added in Windows 10, version 1903.
+<!--/Policies-->

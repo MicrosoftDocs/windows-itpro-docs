@@ -51,7 +51,7 @@ The following groups might be interested in using MBAM to manage BitLocker:
 **Note**  
 BitLocker is not explained in detail in this MBAM documentation. For more information, see [BitLocker Drive Encryption Overview](https://go.microsoft.com/fwlink/p/?LinkId=225013).
 
- 
+ 
 
 ## <a href="" id="what-s-new-in-mbam-2-5-sp1"></a>What’s new in MBAM 2.5 SP1
 
@@ -129,7 +129,7 @@ The Windows team has backported FIPS-compliant recovery keys with a hotfix, and 
 **Note**  
 Client computers that are running the Windows 8 operating system still require a DRA protector since the hotfix was not backported to that OS. See [Hotfix Package 2 for BitLocker Administration and Monitoring 2.5](https://support.microsoft.com/kb/3015477) to download and install the BitLocker hotfix for Windows 7 and Windows 8 computers. For information about DRA, see [Using Data Recovery Agents with BitLocker](https://go.microsoft.com/fwlink/?LinkId=393557).
 
- 
+ 
 
 To enable FIPS compliance in your organization, you must configure the Federal Information Processing Standard (FIPS) Group Policy settings. For configuration instructions, see [BitLocker Group Policy Settings](https://go.microsoft.com/fwlink/?LinkId=393560).
 
@@ -243,9 +243,9 @@ For more information and late-breaking news that is not included in this documen
 
 [Getting Started with MBAM 2.5](getting-started-with-mbam-25.md)
 
- 
+ 
 
- 
+ 
 
 
 

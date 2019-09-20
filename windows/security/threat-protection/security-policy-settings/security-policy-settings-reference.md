@@ -37,5 +37,5 @@ Each policy setting described contains referential content such as a detailed ex
 | [Security Options](security-options.md) | Provides an introduction to the settings under **Security Options** of the local security policies and links to information about each setting.| 
 | [Advanced security audit policy settings](secpol-advanced-security-audit-policy-settings.md) | Provides information about the advanced security audit policy settings that are available in Windows and the audit events that they generate.| 
 | [User Rights Assignment](user-rights-assignment.md) | Provides an overview and links to information about the User Rights Assignment security policy settings user rights that are available in Windows.  |
- 
- 
+ 
+ 

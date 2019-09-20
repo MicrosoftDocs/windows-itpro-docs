@@ -4,11 +4,11 @@ description: Mobile device enrollment is the first phase of enterprise managemen
 ms.assetid: 08C8B3DB-3263-414B-A368-F47B94F47A11
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 08/11/2017
 ---
 
@@ -103,7 +103,7 @@ To manually trigger enrollment migration, you can run MDMMaintenenceTask.
 
 The enrollment server can decline enrollment messages using the SOAP Fault format. Errors created can be sent as follows:
 
-``` syntax
+```xml
 <s:envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
     <s:header>
         <a:action s:mustunderstand="1">http://schemas.microsoft.com/windows/pki/2009/01/enrollment/rstrc/wstep</a:action>
@@ -200,7 +200,7 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
 
 In Windows 10, version 1507, we added the deviceenrollmentserviceerror element. Here is an example:
 
-``` syntax
+```xml
 <s:envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">
     <s:header>
         <a:action s:mustunderstand="1">http://schemas.microsoft.com/windows/pki/2009/01/enrollment/rstrc/wstep</a:action>

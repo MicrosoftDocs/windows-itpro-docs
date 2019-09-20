@@ -77,7 +77,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain Controller Effective Default Settings | Administrators<br>Backup Operators<br>Server Operators|
 | Member Server Effective Default Settings | Administrators<br>Backup Operators|
 | Client Computer Effective Default Settings | Administrators<br>Backup Operators|
- 
+ 
 ## Policy management
 
 A restart of the device is not required for this policy setting to be effective.
@@ -114,5 +114,5 @@ Changes in the membership of the groups that have the **Back up files and direct
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)
- 
- 
+ 
+ 

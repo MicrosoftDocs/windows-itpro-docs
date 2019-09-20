@@ -49,13 +49,13 @@ Before you can use the tool, you must have a built provisioning package. The pac
     cd C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86
     ```
 
-    - or -
+   - or -
 
-    On an x86 computer, type:
+     On an x86 computer, type:
     
-    ```
-    cd C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86
-    ```
+     ```
+     cd C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86
+     ```
 
 3. Run `ppkgtobase64.exe`. The [syntax](#syntax) and [switches and arguments](#switches-and-arguments) sections provide details for the command.
 
@@ -83,9 +83,9 @@ ppkgtobase64.exe -i <InputFile> -o <OutputDirectory> -s <BlockSize>  [-c]  [/?]
 ## Related topics
 
 
- 
+ 
 
- 
+ 
 
 
 

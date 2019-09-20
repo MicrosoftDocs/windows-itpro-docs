@@ -54,7 +54,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Administrator |
 | Member Server Effective Default Settings | Administrator |
 | Client Computer Effective Default Settings | Administrator |
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -92,5 +92,5 @@ You must provide users who are authorized to use this account with the new accou
 ## Related topics
 
 [Security Options](security-options.md)
- 
- 
+ 
+ 

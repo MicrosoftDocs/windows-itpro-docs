@@ -64,7 +64,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Disabled |
 | Member Server Effective Default Settings | Disabled |
 | Client Computer Effective Default Settings | Disabled |
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -92,5 +92,5 @@ Establishing greater control over accounts in your organization can give you mor
 ## Related topics
 
 [Security Options](security-options.md)
- 
- 
+ 
+ 

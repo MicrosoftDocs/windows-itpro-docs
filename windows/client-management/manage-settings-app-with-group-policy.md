@@ -41,7 +41,7 @@ Policy paths:
 
 The Group Policy can be configured in one of two ways: specify a list of pages that are shown or specify a list of pages to hide. To do this, add either **ShowOnly:** or **Hide:** followed by a semicolon delimited list of URIs in **Settings Page Visiblity**. For a full list of URIs, see the URI scheme reference section in [Launch the Windows Settings app](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference). 
 
->[!NOTE]  
+>[!NOTE]
 > When you specify the URI in the Settings Page Visibility textbox, don't include **ms-settings:** in the string.
 
 Here are some examples:

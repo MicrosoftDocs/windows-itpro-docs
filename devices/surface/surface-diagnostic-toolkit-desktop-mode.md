@@ -16,9 +16,9 @@ manager: dansimp
 
 This topic explains how to use the Surface Diagnostic Toolkit (SDT) to help users in your organization run the tool to identify and diagnose issues with the Surface device. Successfully running SDT can quickly determine if a reported issue is caused by failed hardware or user error.
 
-1.	Direct the user to install [the SDT package](surface-diagnostic-toolkit-business.md#create-custom-sdt) from a software distribution point or network share. After it is installed, you’re ready to guide the user through a series of tests. 
+1. Direct the user to install [the SDT package](surface-diagnostic-toolkit-business.md#create-custom-sdt) from a software distribution point or network share. After it is installed, you’re ready to guide the user through a series of tests. 
 
-2.	Begin at the home page, which allows users to enter a description of the issue, and click **Continue**, as shown in figure 1.
+2. Begin at the home page, which allows users to enter a description of the issue, and click **Continue**, as shown in figure 1.
 
     ![Start SDT in desktop mode](images/sdt-desk-1.png)
 
@@ -63,9 +63,9 @@ For each test, if functionality does not work as expected and the user clicks **
 
 *Figure 4. Running hardware diagnostics*
 
-1.	If the brightness successfully adjusts from 0-100 percent as expected, direct the user to click **Yes** and then click **Continue**. 
-2.	If the brightness fails to adjust from 0-100 percent as expected, direct the user to click **No** and then click **Continue**. 
-3.	Guide users through remaining tests as appropriate. When finished, SDT automatically provides a high-level summary of the report, including the possible causes of any hardware issues along with guidance for resolution.
+1. If the brightness successfully adjusts from 0-100 percent as expected, direct the user to click **Yes** and then click **Continue**. 
+2. If the brightness fails to adjust from 0-100 percent as expected, direct the user to click **No** and then click **Continue**. 
+3. Guide users through remaining tests as appropriate. When finished, SDT automatically provides a high-level summary of the report, including the possible causes of any hardware issues along with guidance for resolution.
 
 
 ### Repairing applications

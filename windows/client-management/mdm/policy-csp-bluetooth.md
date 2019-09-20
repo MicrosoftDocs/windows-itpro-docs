@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Bluetooth
 description: Policy CSP - Bluetooth
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/01/2019
 ms.reviewer: 
 manager: dansimp
@@ -335,32 +335,13 @@ If this policy is not set or it is deleted, the default local radio name is used
 
 <!--/Scope-->
 <!--Description-->
-Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7CAA-436C-8BF0-78CD0FFBD4AF}.
+Added in Windows 10, version 1511. Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7CAA-436C-8BF0-78CD0FFBD4AF}.
 
 The default value is an empty string. For more information, see [ServicesAllowedList usage guide](#servicesallowedlist-usage-guide)
 
 <!--/Description-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Bluetooth policies supported by Windows Holographic
-
-- [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
-- [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
-- [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
-<!--EndHoloLens-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Bluetooth policies supported by Windows Holographic for Business
-
-- [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
-- [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
-- [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
-<!--EndHoloLensBusiness-->
 <hr/>
-
 Footnotes:
 
 - 1 - Added in Windows 10, version 1607.
@@ -368,6 +349,10 @@ Footnotes:
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
+- 6 - Added in Windows 10, version 1903.
+<!--/Policies-->
+
+<hr/>
 
 ## ServicesAllowedList usage guide
 

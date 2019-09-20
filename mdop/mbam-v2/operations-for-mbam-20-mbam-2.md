@@ -1,7 +1,7 @@
 ---
 title: Operations for MBAM 2.0
 description: Operations for MBAM 2.0
-author: msfttracyp
+author: dansimp
 ms.assetid: ece72016-4ffa-48df-8c12-1e442ee9e980
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

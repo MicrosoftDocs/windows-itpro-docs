@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -32,7 +32,7 @@ Use the App-V Management Console to add the certificate and configure the App-V 
     **Note**  
     If no certificates are displayed in the wizard, a certificate has not been provisioned or the certificate does meet the requirements of App-V.
 
-     
+     
 
 5.  Click **Next** to continue on to the **Welcome To Certificate Wizard** page.
 
@@ -51,9 +51,9 @@ Use the App-V Management Console to add the certificate and configure the App-V 
 
 [Troubleshooting Certificate Permission Issues](troubleshooting-certificate-permission-issues.md)
 
- 
+ 
 
- 
+ 
 
 
 

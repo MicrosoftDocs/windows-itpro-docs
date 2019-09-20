@@ -55,7 +55,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Netlogon, samr, lsarpc| 
 | Member Server Effective Default Settings | Not defined| 
 | Client Computer Effective Default Settings | Not defined| 
- 
+ 
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.
@@ -86,7 +86,7 @@ You can restrict access over named pipes such as COMNAP and LOCATOR to help prev
 | LOCATOR | Remote Procedure Call Locator service named pipe.| 
 | TrlWks | Distributed Link Tracking Client named pipe.| 
 | TrkSvr | Distributed Link Tracking Server named pipe.| 
- 
+ 
 ### Countermeasure
 
 Configure the **Network access: Named Pipes that can be accessed anonymously** setting to a null value (enable the setting but do not specify named pipes in the text box).

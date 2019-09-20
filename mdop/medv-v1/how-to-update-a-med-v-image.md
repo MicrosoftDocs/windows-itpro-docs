@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -25,7 +25,7 @@ An existing MED-V image can be updated, thereby creating a new version of the im
 **Note**  
 When a new version is deployed on the client, it overwrites the existing image. When updating an image, ensure that no data on the client needs to be saved.
 
- 
+ 
 
 **To update a MED-V image**
 
@@ -42,7 +42,7 @@ When a new version is deployed on the client, it overwrites the existing image. 
     **Note**  
     If you name the image a different name than the existing version, a new image will be created rather than a new version of the existing image.
 
-     
+     
 
 6.  Upload the new version to the server or distribute it via a deployment package.
 
@@ -59,9 +59,9 @@ When a new version is deployed on the client, it overwrites the existing image. 
 
 [Updating a MED-V Workspace Image](updating-a-med-v-workspace-image.md)
 
- 
+ 
 
- 
+ 
 
 
 

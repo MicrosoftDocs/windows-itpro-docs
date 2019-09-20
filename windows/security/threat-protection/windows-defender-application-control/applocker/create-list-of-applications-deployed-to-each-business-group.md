@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Create a list of apps deployed to each business group
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic describes the process of gathering app usage requirements from each business group in order to implement application control policies by using AppLocker.
 
@@ -49,7 +49,7 @@ initially. Therefore, you should continue your evaluation until you can verify t
 
 >**Tip:**  If you run Application Verifier against a custom application with any AppLocker policies enabled, it might prevent the application from running. You should either disable Application Verifier or AppLocker.
 You can create an inventory of Universal Windows apps on a device by using two methods: the **Get-AppxPackage** Windows PowerShell cmdlet or the AppLocker console.
- 
+ 
 The following topics in the [AppLocker Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=160261) describe how to perform each method:
 
 -   [Automatically generating executable rules from a reference computer](https://go.microsoft.com/fwlink/p/?LinkId=160264)
@@ -76,5 +76,5 @@ To do this, see the following topics:
 
 -   [Select the types of rules to create](select-types-of-rules-to-create.md)
 -   [Determine the Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md)
- 
- 
+ 
+ 

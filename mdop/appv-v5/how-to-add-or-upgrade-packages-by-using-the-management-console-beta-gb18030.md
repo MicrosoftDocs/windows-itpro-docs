@@ -34,7 +34,7 @@ You can the following procedure to add or upgrade a package to the App-V 5.0 Man
     **Important**  
     You must select a package with the **.appv** file name extension.
 
-     
+     
 
 4.  The page displays the status message **Adding &lt;Packagename&gt;**. Click **IMPORT STATUS** to check the status of a package that you have imported.
 
@@ -42,16 +42,16 @@ You can the following procedure to add or upgrade a package to the App-V 5.0 Man
 
 5.  Click **Close** to close the **Add or Upgrade Packages** page.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
 
 [Operations for App-V 5.0](operations-for-app-v-50.md)
 
- 
+ 
 
- 
+ 
 
 
 

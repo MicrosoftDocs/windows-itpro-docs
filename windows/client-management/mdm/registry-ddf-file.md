@@ -4,11 +4,11 @@ description: Registry DDF file
 ms.assetid: 29b5cc07-f349-4567-8a77-387d816a9d15
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -17,7 +17,7 @@ ms.date: 06/26/2017
 
 This topic shows the OMA DM device description framework (DDF) for the **Registry** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-``` syntax
+```xml
 <MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
     <VerDTD>1.2</VerDTD>
     <Node>

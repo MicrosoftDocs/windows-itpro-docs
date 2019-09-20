@@ -51,7 +51,7 @@ The following groups might be interested in using MBAM to manage BitLocker:
 **Note**  
 BitLocker is not explained in detail in this MBAM documentation. For more information, see [BitLocker Drive Encryption Overview](https://go.microsoft.com/fwlink/p/?LinkId=225013).
 
- 
+ 
 
 ## <a href="" id="what-s-new-in-mbam-2-5"></a>What’s new in MBAM 2.5
 
@@ -69,7 +69,7 @@ The MBAM Group Policy Templates must be downloaded separately from the MBAM inst
 **Important**  
 Do not change the Group Policy settings in the **BitLocker Drive Encryption** node, or MBAM will not work correctly. When you configure the Group Policy settings in the **MDOP MBAM (BitLocker Management)** node, MBAM automatically configures the BitLocker Drive Encryption settings for you.
 
- 
+ 
 
 The template files that you need to copy to a server or workstation are:
 
@@ -83,59 +83,59 @@ The template files that you need to copy to a server or workstation are:
 
 Copy the template files to the location that best meets your needs. For the language-specific files, which must be copied to a language-specific folder, the Group Policy Management Console is required to view the files.
 
--   To install the template files locally on a server or workstation, copy the files to one of the following locations.
+- To install the template files locally on a server or workstation, copy the files to one of the following locations.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">File type</th>
-    <th align="left">File location</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>language neutral (.admx)</p></td>
-    <td align="left"><p><em>%systemroot%</em>\policyDefinitions</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>language specific (.adml)</p></td>
-    <td align="left"><p><em>%systemroot%</em>\policyDefinitions\[<em>MUIculture</em>] (for example, the U.S. English language specific file will be stored in <em>%systemroot%\</em>policyDefinitions\en-us)</p></td>
-    </tr>
-    </tbody>
-    </table>
+  <table>
+  <colgroup>
+  <col width="50%" />
+  <col width="50%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">File type</th>
+  <th align="left">File location</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p>language neutral (.admx)</p></td>
+  <td align="left"><p><em>%systemroot%</em>\policyDefinitions</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p>language specific (.adml)</p></td>
+  <td align="left"><p><em>%systemroot%</em>\policyDefinitions[<em>MUIculture</em>] (for example, the U.S. English language specific file will be stored in <em>%systemroot%&lt;/em&gt;policyDefinitions\en-us)</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-     
+     
 
--   To make the templates available to all Group Policy administrators in a domain, copy the files to one of the following locations on a domain controller.
+- To make the templates available to all Group Policy administrators in a domain, copy the files to one of the following locations on a domain controller.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">File type</th>
-    <th align="left">Domain controller file location</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Language neutral (.admx)</p></td>
-    <td align="left"><p><em>%systemroot%</em>sysvol\domain\policies\PolicyDefinitions</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Language specific (.adml)</p></td>
-    <td align="left"><p><em>%systemroot%</em>\sysvol\domain\policies\PolicyDefinitions\[<em>MUIculture</em>] (for example, the U.S. English language-specific file will be stored in <em>%systemroot%</em>\sysvol\domain\policies\PolicyDefinitions\en-us)</p></td>
-    </tr>
-    </tbody>
-    </table>
+  <table>
+  <colgroup>
+  <col width="50%" />
+  <col width="50%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th align="left">File type</th>
+  <th align="left">Domain controller file location</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td align="left"><p>Language neutral (.admx)</p></td>
+  <td align="left"><p><em>%systemroot%</em>sysvol\domain\policies\PolicyDefinitions</p></td>
+  </tr>
+  <tr class="even">
+  <td align="left"><p>Language specific (.adml)</p></td>
+  <td align="left"><p><em>%systemroot%</em>\sysvol\domain\policies\PolicyDefinitions[<em>MUIculture</em>] (for example, the U.S. English language-specific file will be stored in <em>%systemroot%</em>\sysvol\domain\policies\PolicyDefinitions\en-us)</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-     
+     
 
 For more information about template files, see [Managing Group Policy ADMX Files Step-by-Step Guide](https://go.microsoft.com/fwlink/?LinkId=392818).
 
@@ -179,7 +179,7 @@ To enable you to configure encryption policy enforcement, a new Group Policy set
 </tbody>
 </table>
 
- 
+ 
 
 ### Ability to provide a URL in the BitLocker Drive Encryption wizard to point to your security policy
 
@@ -250,7 +250,7 @@ The following table lists the security groups that you must create in AD DS. You
 </tbody>
 </table>
 
- 
+ 
 
 After you create the security groups in AD DS, assign users and/or groups to the appropriate security group to enable the corresponding level of access to the Administration and Monitoring Website. To enable individuals with each role to access the Administration and Monitoring Website, you must also specify each security group when you are configuring the Administration and Monitoring Website.
 
@@ -286,20 +286,20 @@ Windows PowerShell Help for MBAM is available in the following formats:
 </tr>
 <tr class="even">
 <td align="left"><p>On TechNet as webpages</p></td>
-<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393498</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=393498" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=393498">https://go.microsoft.com/fwlink/?LinkId=393498</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>On the Download Center as a Word .docx file</p></td>
-<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393497</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=393497" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=393497">https://go.microsoft.com/fwlink/?LinkId=393497</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>On the Download Center as a .pdf file</p></td>
-<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393499</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=393499" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=393499">https://go.microsoft.com/fwlink/?LinkId=393499</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### Support for ASCII-only and enhanced PINs and ability to prevent sequential and repeating characters
 
@@ -358,7 +358,7 @@ MBAM is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part o
 For more information and late-breaking news that is not included in this documentation, see [Release Notes for MBAM 2.5](release-notes-for-mbam-25.md).
 
 ## Got a suggestion for MBAM?
-- Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- Send your feedback [here](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
 ## Related topics
@@ -368,9 +368,9 @@ For more information and late-breaking news that is not included in this documen
 
 [Getting Started with MBAM 2.5](getting-started-with-mbam-25.md)
 
- 
+ 
 
- 
+ 
 
 
 

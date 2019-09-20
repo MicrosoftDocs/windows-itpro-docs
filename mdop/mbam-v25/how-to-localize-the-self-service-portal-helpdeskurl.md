@@ -24,7 +24,7 @@ If you create a localized version, as described in the following instructions, M
 **Note**  
 In the following instructions, *SelfService* is the default virtual directory name for the Self-Service Portal. You might have used a different name when you configured the Self-Service Portal.
 
- 
+ 
 
 **To localize the Self-Service Portal URL**
 
@@ -49,9 +49,9 @@ In the following instructions, *SelfService* is the default virtual directory na
 
 [Customizing the Self-Service Portal for Your Organization](customizing-the-self-service-portal-for-your-organization.md)
 
- 
+ 
 
- 
+ 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).

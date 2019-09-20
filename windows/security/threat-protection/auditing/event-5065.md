@@ -20,7 +20,7 @@ ms.author: dansimp
 -   Windows Server 2016
 
 
-This event generates in [BCryptConfigureContext](https://msdn.microsoft.com/es-es/vstudio/aa375379)() function. This is a Cryptographic Next Generation (CNG) function.
+This event generates in [BCryptConfigureContext](https://msdn.microsoft.com/vstudio/aa375379)() function. This is a Cryptographic Next Generation (CNG) function.
 
 This event generates when configuration information was changed for existing CNG context.
 

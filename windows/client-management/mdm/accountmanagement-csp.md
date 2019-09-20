@@ -1,7 +1,7 @@
 ---
 title: AccountManagement CSP
 description: Used to configure settings in the Account Manager service
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -16,7 +16,7 @@ manager: dansimp
 
 AccountManagement CSP is used to configure setting in the Account Manager service in Windows Holographic for Business edition. Added in Windows 10, version 1803.
 
-> [!Note]  
+> [!NOTE]
 > The AccountManagement CSP is only supported in Windows Holographic for Business edition.
 
 

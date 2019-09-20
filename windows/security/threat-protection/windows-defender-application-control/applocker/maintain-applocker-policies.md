@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Maintain AppLocker policies
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic describes how to maintain rules within AppLocker policies.
 

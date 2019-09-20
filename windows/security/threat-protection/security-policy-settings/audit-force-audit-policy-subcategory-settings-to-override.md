@@ -55,7 +55,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled |
 | Member Server Effective Default Settings | Enabled | 
 | Client Computer Effective Default Settings | Enabled | 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -95,9 +95,9 @@ Enable audit policy subcategories as needed to track specific events.
 If you attempt to modify an audit setting by using Group Policy after enabling this setting through the command-line tools, the Group Policy audit setting is ignored in favor of the custom policy setting. To modify audit settings by using Group Policy, you must first disable the 
 **SCENoApplyLegacyAuditPolicy** key.
 > **Important:**  Be very cautious about audit settings that can generate a large volume of traffic. For example, if you enable success or failure auditing for all of the Privilege Use subcategories, the high volume of audit events that are generated can make it difficult to find other types of entries in the security event log. Such a configuration could also have a significant impact on system performance.
- 
+ 
 ## Related topics
 
 - [Security Options](security-options.md)
- 
- 
+ 
+ 

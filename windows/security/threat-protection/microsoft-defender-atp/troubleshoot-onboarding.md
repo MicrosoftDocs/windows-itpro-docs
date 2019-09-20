@@ -25,20 +25,22 @@ ms.topic: troubleshooting
 - Windows Server 2016
 
 
-
 You might need to troubleshoot the Microsoft Defender ATP onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the machines.
 
+
+## Troubleshoot issues with onboarding tools
+
 If you have completed the onboarding process and don't see machines in the [Machines list](investigate-machines.md) after an hour, it might indicate an onboarding or connectivity problem.
 
-## Troubleshoot onboarding when deploying with Group Policy
+### Troubleshoot onboarding when deploying with Group Policy
 Deployment with Group Policy is done by running the onboarding script on the machines.  The Group Policy console does not indicate if the deployment has succeeded or not.
 
 If you have completed the onboarding process and don't see machines in the [Machines list](investigate-machines.md) after an hour, you can check the output of the script on the machines. For more information, see [Troubleshoot onboarding when deploying with a script](#troubleshoot-onboarding-when-deploying-with-a-script).
 
 If the script completes successfully, see [Troubleshoot onboarding issues on the machines](#troubleshoot-onboarding-issues-on-the-machine) for additional errors that might occur.
 
-## Troubleshoot onboarding issues when deploying with System Center Configuration Manager
+### Troubleshoot onboarding issues when deploying with System Center Configuration Manager
 When onboarding machines using the following versions of System Center Configuration Manager:
 - System Center 2012 Configuration Manager
 - System Center 2012 R2 Configuration Manager
@@ -52,7 +54,7 @@ If the deployment fails, you can check the output of the script on the machines.
 
 If the onboarding completed successfully but the machines are not showing up in the **Machines list** after an hour, see [Troubleshoot onboarding issues on the machine](#troubleshoot-onboarding-issues-on-the-machine) for additional errors that might occur.
 
-## Troubleshoot onboarding when deploying with a script
+### Troubleshoot onboarding when deploying with a script
 
 **Check the result of the script on the machine**:
 1. Click **Start**, type **Event Viewer**, and press **Enter**.
@@ -76,7 +78,7 @@ Event ID | Error Type | Resolution steps
 40 | SENSE service onboarding status is not set to **1** | The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).
 65 | Insufficient privileges| Run the script again with administrator privileges.
 
-## Troubleshoot onboarding issues using Microsoft Intune
+### Troubleshoot onboarding issues using Microsoft Intune
 You can use Microsoft Intune to check error codes and attempt to troubleshoot the cause of the issue.
 
 If you have configured policies in Intune and they are not propagated on machines, you might need to configure automatic MDM enrollment. 
@@ -101,7 +103,7 @@ Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause a
  0x87D101A9 | -2016345687 |Syncml(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.  | All |  **Possible cause:** Attempt to deploy Microsoft Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional.
 
 <br>
-**Known issues with non-compliance**
+<strong>Known issues with non-compliance</strong>
 
 The following table provides information on issues with non-compliance and how you can address the issues.
 
@@ -112,7 +114,7 @@ Case | Symptoms | Possible cause and troubleshooting steps
 3 | Machine is non-compliant | **Troubleshooting steps:** Ensure that Onboarding and Offboarding policies are not deployed on the same machine at same time.
 
 <br>
-**Mobile Device Management (MDM) event logs**
+<strong>Mobile Device Management (MDM) event logs</strong>
 
 View the MDM event logs to troubleshoot issues that might arise during onboarding:
 
@@ -139,7 +141,7 @@ If the deployment tools used does not indicate an error in the onboarding proces
 
 2. In the **Event Viewer (Local)** pane, expand **Applications and Services Logs** > **Microsoft** > **Windows** > **SENSE**.
 
-  > [!NOTE]
+   > [!NOTE]
 	> SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender ATP.
 
 3. Select **Operational** to load the log.
@@ -148,7 +150,7 @@ If the deployment tools used does not indicate an error in the onboarding proces
 
 5. On the **Filter** tab, under **Event level:** select **Critical**, **Warning**, and **Error**, and click **OK**.
 
-  ![Image of Event Viewer log filter](images/filter-log.png)
+   ![Image of Event Viewer log filter](images/filter-log.png)
 
 6. Events which can indicate issues will appear in the **Operational** pane. You can attempt to troubleshoot them based on the solutions in the following table:
 
@@ -176,8 +178,9 @@ Event ID | Message | Resolution steps
 There are additional components on the machine that the Microsoft Defender ATP agent depends on to function properly. If there are no onboarding related errors in the Microsoft Defender ATP agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
 
 <span id="ensure-the-diagnostics-service-is-enabled" />
+
 ### Ensure the diagnostic data service is enabled
-If the machines aren't reporting correctly, you might need to check that the Windows 10 diagnostic data service is set to automatically start and is running on the machine. The service might have been disabled by other programs or user configuration changes.
+If the machines aren&#39;t reporting correctly, you might need to check that the Windows 10 diagnostic data service is set to automatically start and is running on the machine. The service might have been disabled by other programs or user configuration changes.
 
 First, you should check that the service is set to start automatically when Windows starts, then you should check that the service is currently running (and start it if it isn't).
 
@@ -185,52 +188,52 @@ First, you should check that the service is set to start automatically when Wind
 
 **Use the command line to check the Windows 10 diagnostic data service startup type**:
 
-1.  Open an elevated command-line prompt on the machine:
+1. Open an elevated command-line prompt on the machine:
 
-  a.  Click **Start**, type **cmd**, and press **Enter**.
+   a.  Click **Start**, type **cmd**, and press **Enter**.
 
-  b.  Right-click **Command prompt** and select **Run as administrator**.
+   b.  Right-click **Command prompt** and select **Run as administrator**.
 
-2.  Enter the following command, and press **Enter**:
+2. Enter the following command, and press **Enter**:
 
-    ```text
-    sc qc diagtrack
-    ```
+   ```text
+   sc qc diagtrack
+   ```
 
-    If the service is enabled, then the result should look like the following screenshot:
+   If the service is enabled, then the result should look like the following screenshot:
 
-    ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
+   ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
-    If the `START_TYPE` is not set to `AUTO_START`, then you'll need to set the service to automatically start.
+   If the `START_TYPE` is not set to `AUTO_START`, then you'll need to set the service to automatically start.
 
 
 **Use the command line to set the Windows 10 diagnostic data service to automatically start:**
 
-1.  Open an elevated command-line prompt on the machine:
+1. Open an elevated command-line prompt on the machine:
 
-  a.  Click **Start**, type **cmd**, and press **Enter**.
+   a.  Click **Start**, type **cmd**, and press **Enter**.
 
-  b.  Right-click **Command prompt** and select **Run as administrator**.
+   b.  Right-click **Command prompt** and select **Run as administrator**.
 
-2.  Enter the following command, and press **Enter**:
+2. Enter the following command, and press **Enter**:
 
-    ```text
-    sc config diagtrack start=auto
-    ```
+   ```text
+   sc config diagtrack start=auto
+   ```
 
-3.  A success message is displayed. Verify the change by entering the following command, and press **Enter**:
+3. A success message is displayed. Verify the change by entering the following command, and press **Enter**:
 
-    ```text
-    sc qc diagtrack
-    ```
+   ```text
+   sc qc diagtrack
+   ```
 
 4. Start the service.
 
-  a. In the command prompt, type the following command and press **Enter**:
+   a. In the command prompt, type the following command and press **Enter**:
 
-  ```text
-  sc start diagtrack
-  ```
+   ```text
+   sc start diagtrack
+   ```
 
 ### Ensure the machine has an Internet connection
 
@@ -258,14 +261,14 @@ If the verification fails and your environment is using a proxy to connect to th
 
   - ```<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiSpyware"/></Key>```
   - ```<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>```
--  After clearing the policy, run the onboarding steps again.
+- After clearing the policy, run the onboarding steps again.
 
 - You can also check the following registry key values to verify that the policy is disabled:
 
   1. Open the registry ```key HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender```.
   2. Ensure that the value ```DisableAntiSpyware``` is not present.
 
-    ![Image of registry key for Windows Defender Antivirus](images/atp-disableantispyware-regkey.png)
+     ![Image of registry key for Windows Defender Antivirus](images/atp-disableantispyware-regkey.png)
 
 
 ## Troubleshoot onboarding issues on a server
@@ -295,14 +298,14 @@ You might also need to check the following:
 ## Licensing requirements
 Microsoft Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
 
-  -	Windows 10 Enterprise E5
-  -	Windows 10 Education E5
-  - Microsoft 365 Enterprise E5 which includes Windows 10 Enterprise E5
+- Windows 10 Enterprise E5
+- Windows 10 Education E5
+- Microsoft 365 Enterprise E5 which includes Windows 10 Enterprise E5
 
-For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
+For more information, see [Windows 10 Licensing](https://www.microsoft.com/Licensing/product-licensing/windows10.aspx#tab=2).
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootonboarding-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootonboarding-belowfoldlink)
 
 
 ## Related topics

@@ -58,7 +58,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain Controller Effective Default Settings | Administrators<br/>Backup Operators<br/>Performance Log Users| 
 | Member Server Effective Default Settings | Administrators<br/>Backup Operators<br/>Performance Log Users| 
 | Client Computer Effective Default Settings | Administrators| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

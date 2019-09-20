@@ -48,7 +48,7 @@ If your client secret expires or if you've misplaced the copy provided when you 
 7. Copy the value and save it in a safe place.
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootcustomti-belowfoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootcustomti-belowfoldlink) 
 
 
 ## Related topics

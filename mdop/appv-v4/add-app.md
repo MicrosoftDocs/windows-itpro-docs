@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -60,7 +60,7 @@ Adds an application record.
 </tbody>
 </table>
 
- 
+ 
 
 For version 4.6, the following option has been added.
 
@@ -77,21 +77,21 @@ For version 4.6, the following option has been added.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 The resulting name of the application will be taken from the OSD file and not from the name provided in APP:&lt;application&gt;.
 
- 
+ 
 
 ## Related topics
 
 
 [SFTMIME Command Reference](sftmime--command-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

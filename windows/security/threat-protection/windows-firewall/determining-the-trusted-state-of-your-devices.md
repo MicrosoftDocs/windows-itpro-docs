@@ -144,4 +144,4 @@ With the other information that you have gathered in this section, this informat
 
 The costs identified in this section only capture the projected cost of the device upgrades. Many additional design, support, test, and training costs should be accounted for in the overall project plan.
 
-**Next: **[Planning Your Windows Defender Firewall with Advanced Security Design](planning-your-windows-firewall-with-advanced-security-design.md)
+**Next:** [Planning Your Windows Defender Firewall with Advanced Security Design](planning-your-windows-firewall-with-advanced-security-design.md)

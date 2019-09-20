@@ -3,12 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Info about Group Policy preferences versus Group Policy settings
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: f2264c97-7f09-4f28-bb5c-58ab80dcc6ee
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Group policy preferences and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

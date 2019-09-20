@@ -81,16 +81,17 @@ Windows Server 2008 R2 |[SP1](https://technet.microsoft.com/library/gg236605.asp
 
 **Microsoft Products**
 
-| Name | Details | Security Tools |
-|---|---|---|
-Internet Explorer 11 | [SecGuide](https://blogs.technet.microsoft.com/secguide/2014/08/13/security-baselines-for-windows-8-1-windows-server-2012-r2-and-internet-explorer-11-final/)|[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)|[SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)|
-|Internet Explorer 10|[Technet](https://technet.microsoft.com/library/jj898540.aspx)|[SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
-|Internet Explorer 9|[Technet](https://technet.microsoft.com/library/hh539027.aspx)|[SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
-|Internet Explorer 8|[Technet](https://technet.microsoft.com/library/ee712766.aspx)|[SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
-|Exchange Server 2010|[Technet](https://technet.microsoft.com/library/hh913521.aspx)| [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
-|Exchange Server 2007|[Technet](https://technet.microsoft.com/library/hh913520.aspx)| [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
-|Microsoft Office 2010|[Technet](https://technet.microsoft.com/library/gg288965.aspx)| [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
-|Microsoft Office 2007 SP2|[Technet](https://technet.microsoft.com/library/cc500475.aspx)| [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
+
+|           Name            |                                                                            Details                                                                            |                               Security Tools                                |
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+|   Internet Explorer 11    | [SecGuide](https://blogs.technet.microsoft.com/secguide/2014/08/13/security-baselines-for-windows-8-1-windows-server-2012-r2-and-internet-explorer-11-final/) |     [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)     |
+|   Internet Explorer 10    |                                                [Technet](https://technet.microsoft.com/library/jj898540.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
+|    Internet Explorer 9    |                                                [Technet](https://technet.microsoft.com/library/hh539027.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
+|    Internet Explorer 8    |                                                [Technet](https://technet.microsoft.com/library/ee712766.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
+|   Exchange Server 2010    |                                                [Technet](https://technet.microsoft.com/library/hh913521.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
+|   Exchange Server 2007    |                                                [Technet](https://technet.microsoft.com/library/hh913520.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
+|   Microsoft Office 2010   |                                                [Technet](https://technet.microsoft.com/library/gg288965.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
+| Microsoft Office 2007 SP2 |                                                [Technet](https://technet.microsoft.com/library/cc500475.aspx)                                                 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
 
 <br />
 

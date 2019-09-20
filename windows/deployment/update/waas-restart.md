@@ -4,12 +4,11 @@ description: tbd
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: lomayor
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: lomayor
-ms.date: 07/27/2017
+ms.author: jaimeo
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 ms.topic: article
 ---
 
@@ -19,7 +18,7 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
+
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
@@ -205,4 +204,4 @@ There are 3 different registry combinations for controlling restart behavior:
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
+- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)

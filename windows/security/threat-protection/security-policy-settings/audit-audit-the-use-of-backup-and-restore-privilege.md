@@ -54,7 +54,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Disabled | 
 | Member Server Effective Default Settings | Disabled | 
 | Client Computer Effective Default Settings | Disabled | 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -91,5 +91,5 @@ If you enable this policy setting, a large number of security events could be ge
 ## Related topics
 
 - [Security Options](security-options.md)
- 
- 
+ 
+ 

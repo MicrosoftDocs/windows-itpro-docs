@@ -4,11 +4,11 @@ description: The Get product package operation retrieves the information about a
 ms.assetid: 4314C65E-6DDC-405C-A591-D66F799A341F
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 09/18/2017
 ---
 

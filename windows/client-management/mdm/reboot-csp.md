@@ -4,11 +4,11 @@ description: Reboot CSP
 ms.assetid: 4E3F1225-BBAD-40F5-A1AB-FF221B6BAF48
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -29,7 +29,7 @@ The following diagram shows the Reboot configuration service provider management
 <a href="" id="rebootnow"></a>**RebootNow**  
 <p style="margin-left: 20px">This node executes a reboot of the device. RebootNow triggers a reboot within 5 minutes to allow the user to wrap up any active work.</p>
 
-> [!Note]  
+> [!NOTE]
 > If this node is set to execute during a sync session, the device will reboot at the end of the sync session.
 
 <p style="margin-left: 20px">The supported operations are Execute and Get.</p>
@@ -54,9 +54,9 @@ Example to configure: 2018-10-25T18:00:00</p>
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

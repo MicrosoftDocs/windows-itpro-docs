@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -26,7 +26,7 @@ If you want to stream applications from a file server, you should enhance the se
 
 -   For Windows Server 2008, <https://go.microsoft.com/fwlink/?LinkId=133227>
 
- 
+ 
 
 ## MIME Types
 
@@ -55,9 +55,9 @@ To create an SPN, run `setspn.exe` from a command prompt while logged in as a me
 
 [Configuring Management or Streaming Server for Secure Communications Post-Installation](configuring-management-or-streaming-server-for-secure-communications-post-installation.md)
 
- 
+ 
 
- 
+ 
 
 
 

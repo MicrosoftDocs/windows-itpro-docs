@@ -1,7 +1,7 @@
 ---
 title: How to Run a Report
 description: How to Run a Report
-author: eavena
+author: dansimp
 ms.assetid: 72a5419b-aa65-4e60-b23e-3751186b7aed
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -22,7 +22,7 @@ The process for running a report is the same regardless of the report type. When
 **Note**  
 Reports are not run automatically; you must run them explicitly to generate output data. The length of time it takes to run a report is determined by the amount of data collected in the data store.
 
- 
+ 
 
 **To run a report**
 
@@ -55,9 +55,9 @@ Reports are not run automatically; you must run them explicitly to generate outp
 
 [How to Print a Report](how-to-print-a-reportserver.md)
 
- 
+ 
 
- 
+ 
 
 
 

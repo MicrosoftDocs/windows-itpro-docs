@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -21,9 +21,6 @@ ms.reviewer:
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
-
-Prefer video? See [Credentials Protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=mD3geLJyC_8304300474)
-in the **Deep Dive into Windows Defender Credential Guard** video series.
 
 Passwords are still weak. We recommend that in addition to deploying Windows Defender Credential Guard, organizations move away from passwords to other authentication methods, such as physical smart cards, virtual smart cards, or Windows Hello for Business.
 
@@ -99,6 +96,6 @@ When data protected with user DPAPI is unusable, then the user loses access to a
 
 ## See also
 
-**Deep Dive into Windows Defender Credential Guard: Related videos**
+**Related videos**
 
-[Virtualization-based security](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=1CoELLJyC_6704300474)
+[What is virtualization-based security?](https://www.linkedin.com/learning/microsoft-cybersecurity-stack-advanced-identity-and-endpoint-protection/what-is-virtualization-based-security)

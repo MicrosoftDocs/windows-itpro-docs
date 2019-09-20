@@ -81,7 +81,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain controller effective default settings | Enabled| 
 | Member server effective default settings | Enabled| 
 | Effective GPO default settings on client computers | Disabled| 
- 
+ 
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.

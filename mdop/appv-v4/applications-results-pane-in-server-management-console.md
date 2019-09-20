@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -35,8 +35,6 @@ Organizes the icons in the **Results** pane.
 
 <a href="" id="help"></a>**Help**  
 Displays the help system for the Application Virtualization Management Console.
-
-[]()  
 
 Right-click any application in the **Results** pane to display a pop-up menu that contains the following elements.
 

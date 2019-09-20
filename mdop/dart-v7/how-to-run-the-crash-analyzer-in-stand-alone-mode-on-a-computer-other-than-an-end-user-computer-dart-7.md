@@ -1,7 +1,7 @@
 ---
 title: How to Run the Crash Analyzer in Stand-alone Mode on a Computer Other than an End-user Computer
 description: How to Run the Crash Analyzer in Stand-alone Mode on a Computer Other than an End-user Computer
-author: msfttracyp
+author: dansimp
 ms.assetid: 881d573f-2f18-4c5f-838e-2f5320179f94
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -36,7 +36,7 @@ If you cannot access the Microsoft Debugging Tools for Windows or the symbol fil
         **Note**  
         Use the Search tool in DaRT 7 to locate the copied crash dump file.
 
-         
+         
 
 3.  The **Crash Analyzer** scans the crash dump file and reports a probable cause of the crash. You can view more information about the crash, such as the specific crash message and description, the drivers loaded at the time of the crash, and the full output of the analysis.
 
@@ -47,9 +47,9 @@ If you cannot access the Microsoft Debugging Tools for Windows or the symbol fil
 
 [Diagnosing System Failures with Crash Analyzer](diagnosing-system-failures-with-crash-analyzer--dart-7.md)
 
- 
+ 
 
- 
+ 
 
 
 

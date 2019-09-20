@@ -44,7 +44,7 @@ MBAM supports the following types of BitLocker protectors.
 <li><p><strong>TPM + USB key</strong> – supported only when the operating system volume is encrypted before MBAM is installed</p></li>
 <li><p><strong>TPM + PIN + USB key</strong> - supported only when the operating system volume is encrypted before MBAM is installed</p></li>
 <li><p><strong>Password</strong> - supported only for Windows To Go devices, fixed data drives, and Windows 8, Windows 8.1, and Windows 10 devices that do not have a TPM</p></li>
-<li><p><strong>Numerical password</strong> - applied automatically as part of volume encryption and does not need to be configured except in FIPS mode on Windows 7</p></li>
+<li><p><strong>Numerical password</strong> - applied automatically as part of volume encryption and does not need to be configured except in FIPS mode on Windows 7</p></li>
 <li><p><strong>Data recovery agent (DRA)</strong></p></li>
 </ul></td>
 </tr>
@@ -53,7 +53,7 @@ MBAM supports the following types of BitLocker protectors.
 <td align="left"><ul>
 <li><p><strong>Password</strong></p></li>
 <li><p><strong>Auto-unlock</strong></p></li>
-<li><p><strong>Numerical password</strong> - applied automatically as part of volume encryption and does not need to be configured except in FIPS mode on Windows 7</p></li>
+<li><p><strong>Numerical password</strong> - applied automatically as part of volume encryption and does not need to be configured except in FIPS mode on Windows 7</p></li>
 <li><p><strong>Data recovery agent (DRA)</strong></p></li>
 </ul></td>
 </tr>
@@ -69,7 +69,7 @@ MBAM supports the following types of BitLocker protectors.
 </tbody>
 </table>
 
- 
+
 
 ### Support for the Used Space Encryption BitLocker policy
 
@@ -95,27 +95,27 @@ When you are ready to configure the MBAM Group Policy settings you want, do the 
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Copy the MBAM Group Policy Templates from [How to Get MDOP Group Policy (.admx) Templates](https://go.microsoft.com/fwlink/p/?LinkId=393941) and install them on a computer that is capable of running the Group Policy Management Console (GPMC) or Advanced Group Policy Management (AGPM).</p></td>
-<td align="left"><p>[Copying the MBAM 2.5 Group Policy Templates](copying-the-mbam-25-group-policy-templates.md)</p></td>
+<td align="left"><p>Copy the MBAM Group Policy Templates from <a href="https://go.microsoft.com/fwlink/p/?LinkId=393941" data-raw-source="[How to Get MDOP Group Policy (.admx) Templates](https://go.microsoft.com/fwlink/p/?LinkId=393941)">How to Get MDOP Group Policy (.admx) Templates</a> and install them on a computer that is capable of running the Group Policy Management Console (GPMC) or Advanced Group Policy Management (AGPM).</p></td>
+<td align="left"><p><a href="copying-the-mbam-25-group-policy-templates.md" data-raw-source="[Copying the MBAM 2.5 Group Policy Templates](copying-the-mbam-25-group-policy-templates.md)">Copying the MBAM 2.5 Group Policy Templates</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Configure the Group Policy settings that you want to use in your enterprise.</p></td>
-<td align="left"><p>[Editing the MBAM 2.5 Group Policy Settings](editing-the-mbam-25-group-policy-settings.md)</p></td>
+<td align="left"><p><a href="editing-the-mbam-25-group-policy-settings.md" data-raw-source="[Editing the MBAM 2.5 Group Policy Settings](editing-the-mbam-25-group-policy-settings.md)">Editing the MBAM 2.5 Group Policy Settings</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ## Descriptions of the MBAM Group Policy settings
 
 
 The **MDOP MBAM (BitLocker Management)** GPO node contains four global policy settings and four child GPO nodes: **Client Management**, **Fixed Drive**, **Operating System Drive**, and **Removable Drive**. The following sections describe and suggest settings for the MBAM Group Policy settings.
 
-**Important**  
+**Important**  
 Do not change the Group Policy settings in the **BitLocker Drive Encryption** node, or MBAM will not work correctly. MBAM automatically configures the settings in this node for you when you configure the settings in the **MDOP MBAM (BitLocker Management)** node.
 
- 
+
 
 ### Global Group Policy definitions
 
@@ -139,14 +139,13 @@ This section describes MBAM Global Group Policy definitions at the following GPO
 <p>Configure this policy to use a specific encryption method and cipher strength.</p>
 <p>When this policy is not configured, BitLocker uses the default encryption method: AES 128-bit with Diffuser.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>An issue with the BitLocker Computer Compliance report causes it to display &quot;unknown&quot; for the cipher strength, even if you are using the default value. To work around this issue, make sure you enable this setting and set a value for cipher strength.</p>
+<strong>Note</strong><br/><p>An issue with the BitLocker Computer Compliance report causes it to display &quot;unknown&quot; for the cipher strength, even if you are using the default value. To work around this issue, make sure you enable this setting and set a value for cipher strength.</p>
 </div>
 <div>
- 
+
 </div>
 <ul>
-<li><p>AES 128-bit with Diffuser – for Windows 7 only</p></li>
+<li><p>AES 128-bit with Diffuser – for Windows 7 only</p></li>
 <li><p>AES 128 for Windows 8, Windows 8.1, and Windows 10</p></li>
 </ul></td>
 </tr>
@@ -172,7 +171,7 @@ This section describes MBAM Global Group Policy definitions at the following GPO
 </tbody>
 </table>
 
- 
+
 
 ### Client Management Group Policy definitions
 
@@ -212,14 +211,13 @@ You can set the same Group Policy settings for the Stand-alone and System Center
 <td align="left"><p>Configure user exemption policy</p></td>
 <td align="left"><p>Suggested configuration: <strong>Not Configured</strong></p>
 <p>This policy setting lets you configure a website address, email address, or phone number that instructs a user to request an exemption from BitLocker encryption.</p>
-<p>If you enable this policy setting and provide a website address, email address, or phone number, users see a dialog box with instructions on how to apply for an exemption from BitLocker protection. For more information about enabling BitLocker encryption exemptions for users, see [How to Manage User BitLocker Encryption Exemptions](how-to-manage-user-bitlocker-encryption-exemptions-mbam-25.md).</p>
+<p>If you enable this policy setting and provide a website address, email address, or phone number, users see a dialog box with instructions on how to apply for an exemption from BitLocker protection. For more information about enabling BitLocker encryption exemptions for users, see <a href="how-to-manage-user-bitlocker-encryption-exemptions-mbam-25.md" data-raw-source="[How to Manage User BitLocker Encryption Exemptions](how-to-manage-user-bitlocker-encryption-exemptions-mbam-25.md)">How to Manage User BitLocker Encryption Exemptions</a>.</p>
 <p>If you either disable or do not configure this policy setting, the exemption request instructions are not displayed to users.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>User exemption is managed per user, not per computer. If multiple users log on to the same computer and any one user is not exempt, the computer is encrypted.</p>
+<strong>Note</strong><br/><p>User exemption is managed per user, not per computer. If multiple users log on to the same computer and any one user is not exempt, the computer is encrypted.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
@@ -240,7 +238,7 @@ You can set the same Group Policy settings for the Stand-alone and System Center
 </tbody>
 </table>
 
- 
+
 
 ### Fixed Drive Group Policy definitions
 
@@ -278,9 +276,9 @@ This section describes Fixed Drive policy definitions for Microsoft BitLocker Ad
 <tr class="odd">
 <td align="left"><p>Allow access to BitLocker-protected fixed drives from earlier versions of Windows</p></td>
 <td align="left"><p>Suggested configuration: <strong>Not Configured</strong></p>
-<p>Enable this policy so that fixed drives with the FAT file system can be unlocked and viewed on computers that are running Windows Server 2008, Windows Vista, Windows XP with SP3, or Windows XP with SP2.</p>
-<p>When the policy is enabled or not configured, fixed drives that are formatted with the FAT file system can be unlocked and their content can be viewed on computers that are running Windows Server 2008, Windows Vista, Windows XP with SP3, or Windows XP with SP2. These operating systems have read-only permission to BitLocker-protected drives.</p>
-<p>When the policy is disabled, fixed drives that are formatted with the FAT file system cannot be unlocked and their content cannot be viewed on computers that are running Windows Server 2008, Windows Vista, Windows XP with SP3, or Windows XP with SP2.</p></td>
+<p>Enable this policy so that fixed drives with the FAT file system can be unlocked and viewed on computers that are running Windows Server 2008, Windows Vista, Windows XP with SP3, or Windows XP with SP2.</p>
+<p>When the policy is enabled or not configured, fixed drives that are formatted with the FAT file system can be unlocked and their content can be viewed on computers that are running Windows Server 2008, Windows Vista, Windows XP with SP3, or Windows XP with SP2. These operating systems have read-only permission to BitLocker-protected drives.</p>
+<p>When the policy is disabled, fixed drives that are formatted with the FAT file system cannot be unlocked and their content cannot be viewed on computers that are running Windows Server 2008, Windows Vista, Windows XP with SP3, or Windows XP with SP2.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Configure use of password for fixed drives</p></td>
@@ -312,7 +310,7 @@ This section describes Fixed Drive policy definitions for Microsoft BitLocker Ad
 </tbody>
 </table>
 
- 
+
 
 ### Operating System Drive Group Policy definitions
 
@@ -339,7 +337,7 @@ This section describes Operating System Drive policy definitions for Microsoft B
 <li><p>Allow Standby States (S1-S3) When Sleeping (Plugged In)</p></li>
 <li><p>Allow Standby States (S1-S3) When Sleeping (On Battery)</p></li>
 </ul>
-<p>If you are running Microsoft Windows 8 or later, and you want to use BitLocker on a computer without a TPM, select the <strong>Allow BitLocker without a compatible TPM</strong> check box. In this mode, a password is required for startup. If you forget the password, you have to use one of the BitLocker recovery options to access the drive.</p>
+<p>If you are running Microsoft Windows 8 or later, and you want to use BitLocker on a computer without a TPM, select the <strong>Allow BitLocker without a compatible TPM</strong> check box. In this mode, a password is required for startup. If you forget the password, you have to use one of the BitLocker recovery options to access the drive.</p>
 <p>On a computer with a compatible TPM, two types of authentication methods can be used at startup to provide added protection for encrypted data. When the computer starts, it can use only the TPM for authentication, or it can also require the entry of a personal identification number (PIN).</p>
 <p>If you enable this policy setting, users have to put the operating system drive under BitLocker protection, and the drive is then encrypted.</p>
 <p>If you disable this policy, users cannot put the operating system drive under BitLocker protection. If you apply this policy after the operating system drive is encrypted, the drive is then decrypted.</p>
@@ -365,24 +363,22 @@ This section describes Operating System Drive policy definitions for Microsoft B
 <td align="left"><p>Suggested configuration: <strong>Not Configured</strong></p>
 <p>Use this policy setting to set the constraints for passwords that are used to unlock BitLocker-protected operating system drives. If non-TPM protectors are allowed on operating system drives, you can provision a password, enforce complexity requirements on the password, and configure a minimum length for the password. For the complexity requirement setting to be effective, you must also enable the Group Policy setting &quot;Password must meet complexity requirements&quot; located in Computer Configuration &gt; Windows Settings &gt; Security Settings &gt; Account Policies &gt; Password Policy.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>These settings are enforced when you turn on BitLocker, not when you unlock a volume. BitLocker lets you unlock a drive with any of the protectors that are available on the drive.</p>
+<strong>Note</strong><br/><p>These settings are enforced when you turn on BitLocker, not when you unlock a volume. BitLocker lets you unlock a drive with any of the protectors that are available on the drive.</p>
 </div>
 <div>
- 
+
 </div>
 <p>If you enable this policy setting, users can configure a password that meets the requirements that you define. To enforce complexity requirements on the password, click <strong>Require password complexity</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Configure TPM platform validation profile for BIOS-based firmware configurations</p></td>
 <td align="left"><p>Suggested configuration: <strong>Not Configured</strong></p>
-<p>This policy setting allows you to configure how the computer's Trusted Platform Module (TPM) security hardware secures the BitLocker encryption key. This policy setting does not apply if the computer does not have a compatible TPM or if BitLocker has already been turned on with TPM protection.</p>
+<p>This policy setting allows you to configure how the computer&#39;s Trusted Platform Module (TPM) security hardware secures the BitLocker encryption key. This policy setting does not apply if the computer does not have a compatible TPM or if BitLocker has already been turned on with TPM protection.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>This Group Policy setting applies only to computers with BIOS configurations or to computers with UEFI firmware with a Compatibility Service Module (CSM) enabled. Computers that use a native UEFI firmware configuration store different values into the Platform Configuration Registers (PCRs). Use the &quot;Configure TPM platform validation profile for native UEFI firmware configurations&quot; Group Policy setting to configure the TPM PCR profile for computers that use native UEFI firmware.</p>
+<strong>Important</strong><br/><p>This Group Policy setting applies only to computers with BIOS configurations or to computers with UEFI firmware with a Compatibility Service Module (CSM) enabled. Computers that use a native UEFI firmware configuration store different values into the Platform Configuration Registers (PCRs). Use the &quot;Configure TPM platform validation profile for native UEFI firmware configurations&quot; Group Policy setting to configure the TPM PCR profile for computers that use native UEFI firmware.</p>
 </div>
 <div>
- 
+
 </div>
 <p>If you enable this policy setting before you turn on BitLocker, you can configure the boot components that the TPM validates before you unlock access to the BitLocker-encrypted operating system drive. If any of these components change while BitLocker protection is in effect, the TPM does not release the encryption key to unlock the drive and the computer instead displays the BitLocker Recovery console and requires that you provide either the recovery password or recovery key to unlock the drive.</p>
 <p>If you disable or do not configure this policy setting, BitLocker uses the default platform validation profile or the platform validation profile that is specified by the Setup script.</p></td>
@@ -390,20 +386,19 @@ This section describes Operating System Drive policy definitions for Microsoft B
 <tr class="even">
 <td align="left"><p>Configure TPM platform validation profile</p></td>
 <td align="left"><p>Suggested configuration: <strong>Not Configured</strong></p>
-<p>This policy setting enables you to configure how the computer's Trusted Platform Module (TPM) security hardware secures the BitLocker encryption key. This policy setting does not apply if the computer does not have a compatible TPM or if BitLocker has already been turned on with TPM protection.</p>
+<p>This policy setting enables you to configure how the computer&#39;s Trusted Platform Module (TPM) security hardware secures the BitLocker encryption key. This policy setting does not apply if the computer does not have a compatible TPM or if BitLocker has already been turned on with TPM protection.</p>
 <p>If you enable this policy setting before you turn on BitLocker, you can configure the boot components that the TPM validates before you unlock access to the BitLocker-encrypted operating system drive. If any of these components change while BitLocker protection is in effect, the TPM does not release the encryption key to unlock the drive and the computer instead displays the BitLocker Recovery console and requires that you provide either the recovery password or recovery key to unlock the drive.</p>
 <p>If you disable or do not configure this policy setting, BitLocker uses the default platform validation profile or the platform validation profile that is specified by the setup script.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Configure TPM platform validation profile for native UEFI firmware configurations</p></td>
 <td align="left"><p>Suggested configuration: <strong>Not Configured</strong></p>
-<p>This policy setting allows you to configure how the computer's Trusted Platform Module (TPM) security hardware secures the BitLocker encryption key. This policy setting does not apply if the computer does not have a compatible TPM or if BitLocker has already been turned on with TPM protection.</p>
+<p>This policy setting allows you to configure how the computer&#39;s Trusted Platform Module (TPM) security hardware secures the BitLocker encryption key. This policy setting does not apply if the computer does not have a compatible TPM or if BitLocker has already been turned on with TPM protection.</p>
 <div class="alert">
-<strong>Important</strong>  
-<p>This Group Policy setting applies only to computers with a native UEFI firmware configuration.</p>
+<strong>Important</strong><br/><p>This Group Policy setting applies only to computers with a native UEFI firmware configuration.</p>
 </div>
 <div>
- 
+
 </div>
 <p>If you enable this policy setting before you turn on BitLocker, you can configure the boot components that the TPM validates before unlocking access to the BitLocker-encrypted operating system drive. If any of these components change while BitLocker protection is in effect, the TPM does not release the encryption key to unlock the drive and the computer instead displays the BitLocker Recovery console and requires that you provide either the recovery password or recovery key to unlock the drive.</p>
 <p>If you disable or do not configure this policy setting, BitLocker uses the default platform validation profile or the platform validation profile that is specified by the setup script.</p></td>
@@ -418,13 +413,12 @@ This section describes Operating System Drive policy definitions for Microsoft B
 <td align="left"><p>Use enhanced Boot Configuration Data validation profile</p></td>
 <td align="left"><p>Suggested configuration: <strong>Not Configured</strong></p>
 <p>This policy setting allows you to choose specific Boot Configuration Data (BCD) settings to verify during platform validation.</p>
-<p>If you enable this policy setting, you can add additional settings, remove the default settings, or both. If you disable this policy setting, the computer reverts to a BCD profile similar to the default BCD profile that is used by Windows 7. If you do not configure this policy setting, the computer verifies the default Windows BCD settings.</p>
+<p>If you enable this policy setting, you can add additional settings, remove the default settings, or both. If you disable this policy setting, the computer reverts to a BCD profile similar to the default BCD profile that is used by Windows 7. If you do not configure this policy setting, the computer verifies the default Windows BCD settings.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>When BitLocker uses Secure Boot for platform and Boot Configuration Data (BCD) integrity validation, as defined by the &quot;Allow Secure Boot for integrity validation&quot; policy, the &quot;Use enhanced Boot Configuration Data validation profile&quot; policy is ignored.</p>
+<strong>Note</strong><br/><p>When BitLocker uses Secure Boot for platform and Boot Configuration Data (BCD) integrity validation, as defined by the &quot;Allow Secure Boot for integrity validation&quot; policy, the &quot;Use enhanced Boot Configuration Data validation profile&quot; policy is ignored.</p>
 </div>
 <div>
- 
+
 </div>
 <p>The setting that controls boot debugging (0x16000010) is always validated and has no effect if it is included in the provided fields.</p></td>
 </tr>
@@ -447,17 +441,16 @@ This section describes Operating System Drive policy definitions for Microsoft B
 <li><p><strong>Use default recovery message and URL</strong>: Select this option to display the default BitLocker recovery message and URL in the pre-boot BitLocker recovery screen. If you previously configured a custom recovery message or URL and want to revert to the default message, you must enable this policy and select the <strong>Use default recovery message and URL</strong> option.</p></li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  
-<p>Not all characters and languages are supported in pre-boot. We recommend that you test that the characters you use for the custom message or URL appear correctly on the pre-boot BitLocker recovery screen.</p>
+<strong>Note</strong><br/><p>Not all characters and languages are supported in pre-boot. We recommend that you test that the characters you use for the custom message or URL appear correctly on the pre-boot BitLocker recovery screen.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### Removable Drive Group Policy definitions
 
@@ -492,9 +485,9 @@ This section describes Removable Drive Group Policy definitions for Microsoft Bi
 <tr class="odd">
 <td align="left"><p>Allow access to BitLocker-protected removable drives from earlier versions of Windows</p></td>
 <td align="left"><p>Suggested configuration: <strong>Not Configured</strong></p>
-<p>Enable this policy to allow fixed drives with the FAT file system to be unlocked and viewed on computers that are running Windows Server 2008, Windows Vista, Windows XP with SP3, or Windows XP with SP2.</p>
-<p>When this policy is not configured, removable drives that are formatted with the FAT file system can be unlocked on computers that are running Windows Server 2008, Windows Vista, Windows XP with SP3, or Windows XP with SP2, and their content can be viewed. These operating systems have read-only permission to BitLocker-protected drives.</p>
-<p>When the policy is disabled, removable drives formatted with the FAT file system cannot be unlocked and their content cannot be viewed on computers that are running Windows Server 2008, Windows Vista, Windows XP with SP3, or Windows XP with SP2.</p></td>
+<p>Enable this policy to allow fixed drives with the FAT file system to be unlocked and viewed on computers that are running Windows Server 2008, Windows Vista, Windows XP with SP3, or Windows XP with SP2.</p>
+<p>When this policy is not configured, removable drives that are formatted with the FAT file system can be unlocked on computers that are running Windows Server 2008, Windows Vista, Windows XP with SP3, or Windows XP with SP2, and their content can be viewed. These operating systems have read-only permission to BitLocker-protected drives.</p>
+<p>When the policy is disabled, removable drives formatted with the FAT file system cannot be unlocked and their content cannot be viewed on computers that are running Windows Server 2008, Windows Vista, Windows XP with SP3, or Windows XP with SP2.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Configure use of password for removable data drives</p></td>
@@ -513,7 +506,7 @@ This section describes Removable Drive Group Policy definitions for Microsoft Bi
 </tbody>
 </table>
 
- 
+
 
 
 ## Related topics
@@ -523,11 +516,11 @@ This section describes Removable Drive Group Policy definitions for Microsoft Bi
 
 [MBAM 2.5 Deployment Prerequisites](mbam-25-deployment-prerequisites.md)
 
- 
+
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
- 
+
 
 
 

@@ -10,9 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.pagetype: mdt
-ms.date: 10/16/2017
 ms.topic: article
 ---
 

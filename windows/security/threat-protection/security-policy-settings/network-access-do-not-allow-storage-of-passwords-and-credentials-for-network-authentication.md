@@ -60,7 +60,7 @@ The following table lists the actual and effective default values for this polic
 | Domain controller effective default settings| Not defined| 
 | Member server effective default settings | Not defined| 
 | Effective GPO default settings on client computers | Not defined| 
- 
+ 
 ### Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -82,7 +82,7 @@ This section describes how an attacker might exploit a feature or its configurat
 Passwords that are cached can be accessed by the user when logged on to the device. Although this information may sound obvious, a problem can arise if the user unknowingly runs malicious software that reads the passwords and forwards them to another, unauthorized user.
 
 >**Note:**  The chances of success for this exploit and others that involve malicious software are reduced significantly for organizations that effectively implement and manage an enterprise antivirus solution combined with sensible software restriction policies.
- 
+ 
 Regardless of what encryption algorithm is used to encrypt the password verifier, a password verifier can be overwritten so that an attacker can authenticate as the user to whom the verifier belongs. Therefore, the administrator's password may be overwritten. This procedure requires physical access to the device. Utilities exist that can help overwrite the cached verifier. By using one of these utilities, an attacker can authenticate by using the overwritten value.
 
 Overwriting the administrator's password does not help the attacker access data that is encrypted by using that password. Also, overwriting the password does not help the attacker access any Encrypting File System (EFS) data that belongs to other users on that device. Overwriting the password does not help an attacker replace the verifier, because the base keying material is incorrect. Therefore, data that is encrypted by using Encrypting File System or by using the Data Protection API (DPAPI) will not decrypt.

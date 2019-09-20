@@ -9,7 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---
@@ -53,6 +53,6 @@ The product keys that are installed on the client products must have a sufficien
 
     **Note**  
     You can use proxy activation to select products that have different key types and activate the products at the same time.
- 
- 
- 
+ 
+ 
+ 

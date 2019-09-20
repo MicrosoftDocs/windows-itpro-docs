@@ -1,7 +1,7 @@
 ---
 title: Deploying the DaRT Recovery Image
 description: Deploying the DaRT Recovery Image
-author: msfttracyp
+author: dansimp
 ms.assetid: df5cb54a-be8c-4ed2-89ea-d3c67c2ef4d4
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -30,7 +30,7 @@ Extract the boot.wim file from the ISO image and deploy in the recovery partitio
 **Important**  
 The **DaRT Recovery Image Wizard** provides the option to burn the image to a CD, DVD or UFD, but the other methods of saving and deploying the recovery image require additional steps that involve tools that are not included in DaRT. Some guidance and links for these other methods are provided in this section.
 
- 
+ 
 
 ## Deploy the DaRT recovery image as part of a recovery partition
 
@@ -51,9 +51,9 @@ You can host the recovery image on a central network boot server, such as Window
 
 [Deploying DaRT 8.0](deploying-dart-80-dart-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

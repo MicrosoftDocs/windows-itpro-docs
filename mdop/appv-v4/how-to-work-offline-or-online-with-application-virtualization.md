@@ -1,7 +1,7 @@
 ---
 title: How to Work Offline or Online with Application Virtualization
 description: How to Work Offline or Online with Application Virtualization
-author: eavena
+author: dansimp
 ms.assetid: aa532b37-8a00-4db4-9b51-e1e8354b2495
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -22,7 +22,7 @@ If you plan to be disconnected from the network for an extended period of time, 
 **Note**  
 By default, **Work Offline** is disabled for the Client for Remote Desktop Services (formerly Terminal Services). Your system administrator must change your user permissions to allow you to use this setting on a Client for Remote Desktop Services.
 
- 
+ 
 
 **To work offline**
 
@@ -37,9 +37,9 @@ By default, **Work Offline** is disabled for the Client for Remote Desktop Servi
 
 [How to Use the Desktop Notification Area for Application Virtualization Client Management](how-to-use-the-desktop-notification-area-for-application-virtualization-client-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,13 +4,13 @@ description: This topic for the IT professional describes the advanced security 
 ms.assetid: D3D2BFAF-F2C0-462A-9377-673DB49D5486
 ms.reviewer: 
 manager: dansimp
-ms.author: dolmont
+ms.author: dansimp
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dulcemontemayor
+author: dansimp
 ms.date: 04/19/2017
 ---
 

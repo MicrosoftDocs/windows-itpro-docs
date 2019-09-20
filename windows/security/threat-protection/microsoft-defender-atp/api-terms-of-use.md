@@ -20,7 +20,13 @@ ms.topic: article
 
 ## APIs
 
-Microsoft Defender ATP APIs are governed by [Microsoft API License and Terms of use](https://docs.microsoft.com/en-us/legal/microsoft-apis/terms-of-use).
+Microsoft Defender ATP APIs are governed by [Microsoft API License and Terms of use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+
+### Throttling limits
+
+Name | Calls | Renewal period 
+:---|:---|:---
+API calls per connection | 100 | 60 seconds
 
 
 ## Legal Notices

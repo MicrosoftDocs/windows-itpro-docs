@@ -34,7 +34,7 @@ The MBAM Server infrastructure depends on a set of server features that can be c
 **Note**  
 An MBAM installation on a single server is recommended only for lab environments.
 
- 
+ 
 
 The MBAM Client enables administrators to enforce and monitor BitLocker drive encryption on computers in the enterprise. The BitLocker client can be integrated into an organization by deploying the client through an enterprise software delivery system or by installing the Client on client computers as part of the initial imaging process.
 
@@ -53,9 +53,9 @@ With MBAM, you can encrypt a computer in your organization either before the end
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
- 
+ 
 
- 
+ 
 
 
 

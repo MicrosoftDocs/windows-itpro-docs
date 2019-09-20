@@ -48,9 +48,9 @@ Review the following requirements for using the App-V PowerShell cmdlets:
 <td align="left"><p>Users can run App-V Server cmdlets only if you grant them access by using one of the following methods:</p></td>
 <td align="left"><ul>
 <li><p><strong>When you are deploying and configuring the App-V Server</strong>:</p>
-<p>Specify an Active Directory group or individual user that has permissions to manage the App-V environment. See [How to Deploy the App-V 5.1 Server](how-to-deploy-the-app-v-51-server.md).</p></li>
+<p>Specify an Active Directory group or individual user that has permissions to manage the App-V environment. See <a href="how-to-deploy-the-app-v-51-server.md" data-raw-source="[How to Deploy the App-V 5.1 Server](how-to-deploy-the-app-v-51-server.md)">How to Deploy the App-V 5.1 Server</a>.</p></li>
 <li><p><strong>After you’ve deployed the App-V Server</strong>:</p>
-<p>Use the App-V Management console to add an additional Active Directory group or user. See [How to Add or Remove an Administrator by Using the Management Console](how-to-add-or-remove-an-administrator-by-using-the-management-console51.md).</p></li>
+<p>Use the App-V Management console to add an additional Active Directory group or user. See <a href="how-to-add-or-remove-an-administrator-by-using-the-management-console51.md" data-raw-source="[How to Add or Remove an Administrator by Using the Management Console](how-to-add-or-remove-an-administrator-by-using-the-management-console51.md)">How to Add or Remove an Administrator by Using the Management Console</a>.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -91,13 +91,13 @@ Review the following requirements for using the App-V PowerShell cmdlets:
 <tr class="odd">
 <td align="left"><p>Run the <strong>Set-AppvClientConfiguration</strong> cmdlet with the <strong>-RequirePublishAsAdmin</strong> parameter.</p></td>
 <td align="left"><ul>
-<li><p>[How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell](how-to-manage-connection-groups-on-a-stand-alone-computer-by-using-powershell51.md#bkmk-admin-only-posh-topic-cg)</p></li>
-<li><p>[How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell](how-to-manage-app-v-51-packages-running-on-a-stand-alone-computer-by-using-powershell.md)</p></li>
+<li><p><a href="how-to-manage-connection-groups-on-a-stand-alone-computer-by-using-powershell51.md#bkmk-admin-only-posh-topic-cg" data-raw-source="[How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell](how-to-manage-connection-groups-on-a-stand-alone-computer-by-using-powershell51.md#bkmk-admin-only-posh-topic-cg)">How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell</a></p></li>
+<li><p><a href="how-to-manage-app-v-51-packages-running-on-a-stand-alone-computer-by-using-powershell.md" data-raw-source="[How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell](how-to-manage-app-v-51-packages-running-on-a-stand-alone-computer-by-using-powershell.md)">How to Manage App-V 5.1 Packages Running on a Stand-Alone Computer by Using PowerShell</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Enable the “Require publish as administrator” Group Policy setting for App-V Clients.</p></td>
-<td align="left"><p>[How to Publish a Package by Using the Management Console](how-to-publish-a-package-by-using-the-management-console-51.md)</p></td>
+<td align="left"><p><a href="how-to-publish-a-package-by-using-the-management-console-51.md" data-raw-source="[How to Publish a Package by Using the Management Console](how-to-publish-a-package-by-using-the-management-console-51.md)">How to Publish a Package by Using the Management Console</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -106,7 +106,7 @@ Review the following requirements for using the App-V PowerShell cmdlets:
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-load-cmdlets"></a>Loading the PowerShell cmdlets
 
@@ -195,7 +195,7 @@ Starting in App-V 5.0 SP3, cmdlet help is available in two formats:
 </tr>
 <tr class="even">
 <td align="left"><p>On TechNet as web pages</p></td>
-<td align="left"><p>See the App-V node under [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](https://technet.microsoft.com/library/dn520245.aspx).</p></td>
+<td align="left"><p>See the App-V node under <a href="https://technet.microsoft.com/library/dn520245.aspx" data-raw-source="[Microsoft Desktop Optimization Pack Automation with Windows PowerShell](https://technet.microsoft.com/library/dn520245.aspx)">Microsoft Desktop Optimization Pack Automation with Windows PowerShell</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -209,9 +209,9 @@ To display help for a specific PowerShell cmdlet:
 
 **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -28,7 +28,7 @@ There is no example of this event in this document.
 
 ***Event Schema:***
 
-*BranchCache: A service connection point object could not be parsed. *
+*BranchCache: A service connection point object could not be parsed.*
 
 *SCP object GUID: %1*
 

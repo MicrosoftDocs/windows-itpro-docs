@@ -40,7 +40,7 @@ With **Audit: Shut down system immediately if unable to log security audits** se
 </tr>
 </tbody>
 </table>
- 
+ 
 To recover, you must log on, archive the log (optional), clear the log, and reset this option as desired.
 
 If the computer is unable to record events to the security log, critical evidence or important troubleshooting information might not be available for review after a security incident.
@@ -71,7 +71,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Disabled 
 | Member Server Effective Default Settings | Disabled 
 | Client Computer Effective Default Settings | Disabled 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -104,5 +104,5 @@ If you enable this policy setting, the administrative burden can be significant,
 ## Related topics
 
 - [Security Options](security-options.md)
- 
- 
+ 
+ 

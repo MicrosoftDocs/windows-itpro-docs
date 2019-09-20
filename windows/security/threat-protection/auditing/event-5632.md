@@ -70,7 +70,6 @@ It typically generates when network adapter connects to new wireless network.
  <Data Name="EAPErrorCode">0x0</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** None.

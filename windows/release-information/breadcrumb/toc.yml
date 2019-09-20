@@ -1,3 +1,11 @@
 - name: Docs
   tocHref: /
   topicHref: /
+  items:
+    - name: Windows
+      tocHref: /windows
+      topicHref: /windows/windows-10
+      items:
+        - name: Release information
+          tocHref: /windows/release-information/
+          topicHref: /windows/release-information/index

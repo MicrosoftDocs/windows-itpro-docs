@@ -9,7 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---
@@ -24,6 +24,6 @@ This section describes how to add and remove a product key from the Volume Activ
 |[Add and Remove a Product Key](add-remove-product-key-vamt.md) |Describes how to add a product key to the VAMT database. |
 |[Install a Product Key](install-product-key-vamt.md) |Describes how to install a product key for specific product. |
 |[Install a KMS Client Key](install-kms-client-key-vamt.md) |Describes how to install a GVLK (KMS client) key. |
- 
- 
- 
+ 
+ 
+ 

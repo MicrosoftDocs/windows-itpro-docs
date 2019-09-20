@@ -22,7 +22,7 @@ This topic describes how to hide the **BitLocker Drive Encryption** Control Pane
 **Note**  
 Microsoft BitLocker Administration and Monitoring (MBAM) creates an additional, custom Control Panel item, called **BitLocker Encryption Options**, which enables end users to manage their PIN and password, turn on BitLocker for a drive, and check encryption.
 
- 
+ 
 
 See [Understanding the BitLocker Encryption Options and BitLocker Drive Encryption Items in Control Panel](understanding-the-bitlocker-encryption-options-and-bitlocker-drive-encryption-items-in-control-panel.md) to read about:
 
@@ -33,7 +33,7 @@ See [Understanding the BitLocker Encryption Options and BitLocker Drive Encrypti
 **Important**  
 Do not change the Group Policy settings in the **BitLocker Drive Encryption** node. If you do, MBAM will not work correctly. When you configure the Group Policy settings in the **MDOP MBAM (BitLocker Management)** node, MBAM automatically configures the **BitLocker Drive Encryption** settings for you.
 
- 
+ 
 
 **To hide the default BitLocker Drive Encryption item in Control Panel**
 
@@ -52,7 +52,7 @@ Do not change the Group Policy settings in the **BitLocker Drive Encryption** no
 
 [Deploying MBAM 2.5 Group Policy Objects](deploying-mbam-25-group-policy-objects.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 

@@ -38,7 +38,7 @@ There are a couple of things we need to know when you pay for apps. You can add 
 ## Allow users to shop
 
 **Allow users to shop** controls the shopping experience in Microsoft Store for Education. When this setting is on, **Purchasers** and **Basic Purchasers** can purchase products and services from Microsoft Store for Education. If your school chooses to closely control how purchases are made, admins can turn off **Allow users to shop**. When the setting is off:
-- The shopping experience is not availalbe 
+- The shopping experience is not available 
 - **Purchasers** and **Basic Purchasers** can't purchase products and services from Microsoft Store for Education
 - Admins can't assign shopping roles to users
 - Products and services previously purchased by **Basic Purchasers** can be managed by admins. 
@@ -61,13 +61,13 @@ People in your org can request license for apps that they need, or that others n
 
 ## Acquire apps
 **To acquire an app**  
-1.	Sign in to http://businessstore.microsoft.com
-2.	Select **Shop for my group**, or use Search to find an app. 
-3.	Select the app you want to purchase. 
-4.	On the product description page, choose your license type - either online or offline. 
+1. Sign in to http://businessstore.microsoft.com
+2. Select **Shop for my group**, or use Search to find an app. 
+3. Select the app you want to purchase. 
+4. On the product description page, choose your license type - either online or offline. 
 5.  Free apps will be added to **Products & services**. For apps with a price, you can set the quantity you want to buy. Type the quantity and select **Next**.
-6.	If you don’t have a payment method saved in **Billing & payments**, we will prompt you for one.
-7.	Add your credit card or debit card info, and select **Next**. Your card info is saved as a payment option on **Billing & payments - Payment methods**.
+6. If you don’t have a payment method saved in **Billing & payments**, we will prompt you for one.
+7. Add your credit card or debit card info, and select **Next**. Your card info is saved as a payment option on **Billing & payments - Payment methods**.
 
 You’ll also need to have your business address saved on **My organization - Profile**. The address is used to generate tax rates. For more information on taxes for apps, see [organization tax information](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings#organization-tax-information). 
 

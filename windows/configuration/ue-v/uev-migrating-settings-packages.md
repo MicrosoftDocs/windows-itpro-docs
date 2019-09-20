@@ -42,7 +42,7 @@ Simply copying the files and folders does not preserve the security settings and
     **Note**  
     To monitor the copy progress, open MySettings.txt with a log viewer such as Trace32.
 
-     
+     
 
 4.  Grant share-level permissions to the new share. Leave the NTFS file system permissions as they were set by Robocopy.
 

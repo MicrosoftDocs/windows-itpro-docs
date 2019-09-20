@@ -1,6 +1,6 @@
 ---
 title: How Windows Defender Credential Guard works
-description: Using virtualization-based security, Windows Defender Credential Guard features a new component called the isolated LSA process, which stores and protects secrets, isolating them from the rest of the operating system, so that only privileged system software can access them. 
+description: Using virtualization-based security, Windows Defender Credential Guard features a new component called the isolated LSA process, which stores and protects secrets, isolating them from the rest of the operating system, so that only privileged system software can access them.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -35,14 +35,8 @@ Here's a high-level overview on how the LSA is isolated by using virtualization-
 
 ![Windows Defender Credential Guard overview](images/credguard.png)  
 
-<br>
-
 ## See also
 
-**Deep Dive into Windows Defender Credential Guard: Related videos**
+**Related videos**
 
-[Credential Theft and Lateral Traversal](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=cfGBPlIyC_9404300474)
-
-[Virtualization-based security](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=1CoELLJyC_6704300474)
-
-[Credentials protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
+[What is virtualization-based security?](https://www.linkedin.com/learning/microsoft-cybersecurity-stack-advanced-identity-and-endpoint-protection/what-is-virtualization-based-security)

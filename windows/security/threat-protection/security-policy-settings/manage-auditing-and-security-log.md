@@ -59,7 +59,7 @@ The following table lists the actual and effective default policy values for the
 | Domain Controller Effective Default Settings | Administrators| 
 | Member Server Effective Default Settings | Administrators| 
 | Client Computer Effective Default Settings| Administrators| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.
@@ -100,7 +100,7 @@ Ensure that only the local Administrators group has the **Manage auditing and se
 Restricting the **Manage auditing and security log** user right to the local Administrators group is the default configuration.
 
 >**Warning:**  If groups other than the local Administrators group have been assigned this user right, removing this user right might cause performance issues with other applications. Before removing this right from a group, investigate whether applications are dependent on this right.
- 
+ 
 ## Related topics
 
 - [User Rights Assignment](user-rights-assignment.md)

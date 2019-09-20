@@ -52,7 +52,7 @@ There is no example of this event in this document.
 >
 > *Layer Name:%9*
 >
-> *Layer Run-Time ID:%10 *
+> *Layer Run-Time ID:%10*
 
 ***Required Server Roles:*** None.
 

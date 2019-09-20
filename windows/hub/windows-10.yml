@@ -40,7 +40,7 @@ sections:
 - items:
   - type: markdown
     text: "
-      Get answers to commom questions, or get help with a specific problem.<br> 
+      Get answers to common questions, or get help with a specific problem.<br> 
       <table><tr><td><a href='https://docs.microsoft.com/windows/deployment/planning/windows-10-enterprise-faq-itpro'>Windows 10 FAQ for IT Pros</a><br><a href='https://go.microsoft.com/fwlink/p/?linkid=861444'>Windows 10 forums</a><br><a href='https://techcommunity.microsoft.com/t5/Windows-10/bd-p/Windows10space'>Windows 10 TechCommunity</a><br><a href='https://go.microsoft.com/fwlink/p/?linkid=861445'>Which edition is right for your organization?</a><br><a href='https://docs.microsoft.com/windows/deployment/planning/windows-10-infrastructure-requirements'>Infrastructure requirements</a><br><a href='https://www.microsoft.com/itpro/windows-10/windows-as-a-service'>What's Windows as a service?</a><br><a href='https://docs.microsoft.com/en-us/windows/client-management/windows-10-mobile-and-mdm'>Windows 10 Mobile deployment and management guide</a></td><td><img src='images/faq.png'></td></tr>
       </table>
       "

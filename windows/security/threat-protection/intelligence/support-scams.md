@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: levinec
+ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
@@ -63,6 +63,6 @@ It is also important to keep the following in mind:
 
 Help Microsoft stop scammers, whether they claim to be from Microsoft or from another tech company, by reporting tech support scams:
 
-**www.microsoft.com/reportascam**
+<strong>www.microsoft.com/reportascam</strong>
 
 You can also report any **unsafe website** that you suspect is a phishing website or contains malicious content directly to Microsoft by filling out a [Report an unsafe site form](https://www.microsoft.com/wdsi/support/report-unsafe-site) or using built in web browser functionality.

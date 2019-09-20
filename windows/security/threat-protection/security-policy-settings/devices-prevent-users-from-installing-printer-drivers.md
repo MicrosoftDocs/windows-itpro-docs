@@ -58,7 +58,7 @@ Server type or GPO | Default value |
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings | Enabled| 
 | Client Computer Effective Default Settings | Disabled| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

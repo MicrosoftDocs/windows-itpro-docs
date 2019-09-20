@@ -1,7 +1,7 @@
 ---
 title: Planning for MBAM 2.0
 description: Planning for MBAM 2.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 1206bd18-05ea-4ca8-9362-07e512503c3f
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

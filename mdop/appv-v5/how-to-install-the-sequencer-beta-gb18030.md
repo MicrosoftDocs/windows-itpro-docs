@@ -24,7 +24,7 @@ Upgrading a previous installation of the App-V sequencer is not supported.
 **Important**  
 For a full list of the sequencer requirements see sequencer sections of [App-V 5.0 Prerequisites](app-v-50-prerequisites.md) and [App-V 5.0 Supported Configurations](app-v-50-supported-configurations.md).
 
- 
+ 
 
 You can also use the command line to install the App-V 5.0 sequencer. The following list displays information about options for installing the sequencer using the command line and **appv\_sequencer\_setup.exe**:
 
@@ -79,7 +79,7 @@ You can also use the command line to install the App-V 5.0 sequencer. The follow
 </tbody>
 </table>
 
- 
+ 
 
 **To install the App-V 5.0 sequencer**
 
@@ -97,16 +97,16 @@ You can also use the command line to install the App-V 5.0 sequencer. The follow
 
 -   For more information regarding the sequencer installation, you can view the error log in the **%temp%** folder. To review the log files, click **Start**, type **%temp%**, and then look for the **appv\_ log**.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
 
 [Planning to Deploy App-V](planning-to-deploy-app-v.md)
 
- 
+ 
 
- 
+ 
 
 
 

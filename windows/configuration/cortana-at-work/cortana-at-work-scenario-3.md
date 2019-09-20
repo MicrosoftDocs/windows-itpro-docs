@@ -85,4 +85,4 @@ This process helps you to edit or archive and existing or completed reminder.
 
     ![Cortana at work, showing the reminder editing screen](../images/cortana-reminder-edit.png)
 
-3.	Change any text that you want to change, click **Add photo** if you want to add or replace an image, click **Delete** if you want to delete the entire reminder, click **Save** to save your changes, and click **Complete and move to History** if you want to save a completed reminder in your **Reminder History**.
+3. Change any text that you want to change, click **Add photo** if you want to add or replace an image, click **Delete** if you want to delete the entire reminder, click **Save** to save your changes, and click **Complete and move to History** if you want to save a completed reminder in your **Reminder History**.

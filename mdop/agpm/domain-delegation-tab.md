@@ -1,7 +1,7 @@
 ---
 title: Domain Delegation Tab
 description: Domain Delegation Tab
-author: mjcaparas
+author: dansimp
 ms.assetid: 15a9bfff-e25b-4b62-9ebc-521a5f4eae96
 ms.reviewer: 
 manager: dansimp

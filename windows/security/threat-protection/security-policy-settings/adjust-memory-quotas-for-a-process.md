@@ -60,7 +60,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain Controller Effective Default Settings | Administrators<br>Local Service<br>Network Service |
 | Member Server Effective Default Settings | Administrators<br>Local Service<br>Network Service |
 | Client Computer Effective Default Settings | Administrators<br>Local Service<br>Network Service |
- 
+ 
 ## Policy management
 
 A restart of the device is not required for this policy setting to be effective.
@@ -96,5 +96,5 @@ Organizations that have not restricted users to roles with limited privileges ma
 
 ## Related topics
 - [User Rights Assignment](user-rights-assignment.md)
- 
- 
+ 
+ 

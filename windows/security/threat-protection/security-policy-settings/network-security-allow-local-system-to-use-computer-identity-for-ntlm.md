@@ -37,7 +37,7 @@ When a service connects with the device identity, signing and encryption are sup
 | Enabled | Services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.| Services running as Local System that use Negotiate will use the computer identity. This is the default behavior. |
 | Disabled| Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. This is the default behavior.| Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously.|
 |Neither|Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. | Services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.| 
- 
+ 
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
@@ -53,7 +53,7 @@ The following table lists the actual and effective default values for this polic
 | Domain controller effective default settings | Not applicable| 
 | Member server effective default settings | Not applicable| 
 | Effective GPO default settings on client computers | Not defined| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

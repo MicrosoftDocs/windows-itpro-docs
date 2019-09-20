@@ -1,8 +1,8 @@
 ---
 title: Deploy Windows 10 Enterprise licenses
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: laurawi
+ms.audience: itproauthor: greg-lindsay
 description: Steps to deploy Windows 10 Enterprise licenses for Windows 10 Enterprise E3 or E5 Subscription Activation, or for Windows 10 Enterprise E3 in CSP
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: dansimp
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 
@@ -37,11 +37,11 @@ If the device has a firmware-embedded activation key, it will be displayed in th
 
 If you are an EA customer with an existing Office 365 tenant, use the following steps to enable Windows 10 Subscription licenses on your existing tenant:
 
-1.	Work with your reseller to place an order for one $0 SKU per user. There are two SKUs available, depending on their current Windows Enterprise SA license:
--  **AAA-51069** - Win10UsrOLSActv Alng MonthlySub Addon E3
-- **AAA-51068** - Win10UsrOLSActv Alng MonthlySub Addon E5
-2.	After placing an order, the OLS admin on the agreement will receive a service activation email, indicating their subscription licenses have been provisioned on the tenant.
-3.	The admin can now assign subscription licenses to users.
+1. Work with your reseller to place an order for one $0 SKU per user. There are two SKUs available, depending on their current Windows Enterprise SA license:
+2. **AAA-51069** - Win10UsrOLSActv Alng MonthlySub Addon E3
+3. **AAA-51068** - Win10UsrOLSActv Alng MonthlySub Addon E5
+4. After placing an order, the OLS admin on the agreement will receive a service activation email, indicating their subscription licenses have been provisioned on the tenant.
+5. The admin can now assign subscription licenses to users.
 
 >Use the following process if you need to update contact information and retrigger activation in order to resend the activation email:
 
@@ -63,7 +63,7 @@ You probably have on-premises Active Directory Domain Services (AD DS) domains. 
 
 You might ask why you need to synchronize these identities. The answer is so that users will have a *single identity* that they can use to access their on-premises apps and cloud services that use Azure AD (such as Windows 10 Enterprise E3 or E5). This means that users can use their existing credentials to sign in to Azure AD and access the cloud services that you provide and manage for them.
 
-**Figure 1** illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](https://www.microsoft.com/en-us/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
+**Figure 1** illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](https://www.microsoft.com/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
 
 ![Illustration of Azure Active Directory Connect](images/enterprise-e3-ad-connect.png)
 
@@ -161,7 +161,7 @@ Now the device is Azure AD joined to the company’s subscription.
 
 <span id="win-10-pro-activated"/>
 <img src="images/sa-pro-activation.png" alt="Windows 10 Pro activated" width="710" height="440" />
-**Figure 7a - Windows 10 Pro activation in Settings** 
+<strong>Figure 7a - Windows 10 Pro activation in Settings</strong> 
 
 Windows 10 Pro activation is required before Enterprise E3 or E5 can be enabled (Windows 10, versions 1703 and 1709 only).
 
@@ -186,7 +186,7 @@ You can verify the Windows 10 Enterprise E3 or E5 subscription in **Settings &g
 
 If there are any problems with the Windows 10 Enterprise E3 or E5 license or the activation of the license, the **Activation** panel will display the appropriate error message or status. You can use this information to help you diagnose the licensing and activation process.
 
->[!NOTE] 
+>[!NOTE]
 >If you use slmgr /dli or /dlv commands to retrieve the activation information for the Windows 10 E3 or E5 license, the license information displayed will be the following:
 >Name: Windows(R), Professional edition
 >Description: Windows(R) Operating System, RETAIL channel
@@ -194,7 +194,7 @@ If there are any problems with the Windows 10 Enterprise E3 or E5 license or th
 
 ## Virtual Desktop Access (VDA)
 
-Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx).
+Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx).
 
 Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscriptions for VDA. Active Directory-joined and Azure Active Directory-joined clients are supported. See [Enable VDA for Enterprise Subscription Activation](vda-subscription-activation.md).
 
@@ -219,17 +219,17 @@ Use the following figures to help you troubleshoot when users experience these c
 
 <span id="win-10-not-activated"/>
 <img src="images/enterprise-e3-win-10-not-activated-enterprise-subscription-active.png" alt="Windows 10 not activated and subscription active" width="624" height="407" />
-**Figure 10 - Windows 10 Pro, version 1703 edition not activated in Settings**
+<strong>Figure 10 - Windows 10 Pro, version 1703 edition not activated in Settings</strong>
 
 
 <span id="subscription-not-active"/>
 <img src="images/enterprise-e3-win-10-activated-enterprise-subscription-not-active.png" alt="Windows 10 activated and subscription not active" width="624" height="407" />
-**Figure 11 - Windows 10 Enterprise subscription lapsed or removed in Settings**
+<strong>Figure 11 - Windows 10 Enterprise subscription lapsed or removed in Settings</strong>
 
 
 <span id="win-10-not-activated-subscription-not-active"/>
 <img src="images/enterprise-e3-win-10-not-activated-enterprise-subscription-not-active.png" alt="Windows 10 not activated and subscription not active" width="624" height="407" />
-**Figure 12 - Windows 10 Pro, version 1703 edition not activated and Windows 10 Enterprise subscription lapsed or removed in Settings**
+<strong>Figure 12 - Windows 10 Pro, version 1703 edition not activated and Windows 10 Enterprise subscription lapsed or removed in Settings</strong>
 
 
 ### Review requirements on devices

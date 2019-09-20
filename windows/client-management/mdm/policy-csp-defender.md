@@ -1,12 +1,12 @@
 ---
 title: Policy CSP - Defender
 description: Policy CSP - Defender
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
-ms.date: 01/26/2019
+author: manikadhiman
+ms.date: 08/26/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -205,8 +205,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Turns off scanning on archived files.
+-   1 (default) – Allowed. Scans the archive files.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -252,7 +252,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Allows or disallows Windows Defender Behavior Monitoring functionality.
 
 <!--/Description-->
@@ -267,8 +267,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Turns off behavior monitoring.
+-   1 (default) – Allowed. Turns on real-time behavior monitoring.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -330,8 +330,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Turns off the Microsoft Active Protection Service.
+-   1 (default) – Allowed. Turns on the Microsoft Active Protection Service.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -392,8 +392,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not allowed.
--   1 – Allowed.
+-   0 (default) – Not allowed. Turns off email scanning.
+-   1 – Allowed. Turns on email scanning.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -454,8 +454,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) – Not allowed.
--   1 – Allowed.
+-   0 (default) – Not allowed. Disables scanning on mapped network drives.
+-   1 – Allowed. Scans mapped network drives.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -502,7 +502,7 @@ The following list shows the supported values:
 > This policy is only enforced in Windows 10 for desktop.
 
 
-Allows or disallows a full scan of removable drives.
+Allows or disallows a full scan of removable drives. During a quick scan, removable drives may still be scanned.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -516,8 +516,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Turns off scanning on removable drives.
+-   1 (default) – Allowed. Scans removable drives.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -563,7 +563,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Allows or disallows Windows Defender IOAVP Protection functionality.
 
 <!--/Description-->
@@ -756,8 +756,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Turns off the real-time monitoring service.
+-   1 (default) – Allowed. Turns on and runs the real-time monitoring service.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -803,7 +803,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Allows or disallows a scanning of network files.
 
 <!--/Description-->
@@ -818,8 +818,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Turns off scanning of network files.
+-   1 (default) – Allowed. Scans network files.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -934,8 +934,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+-   0 – Not allowed. Prevents users from accessing UI.
+-   1 (default) – Allowed. Lets users access UI.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1099,7 +1099,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Represents the average CPU load factor for the Windows Defender scan (in percent).
 
 
@@ -1243,8 +1243,8 @@ Added in Windows 10, version 1709. This policy setting determines how aggressive
 If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. 
 
 For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
-      
-> [!Note]  
+      
+> [!NOTE]
 > This feature requires the "Join Microsoft MAPS" setting enabled in order to function.
 
 <!--/Description-->
@@ -1315,7 +1315,7 @@ The typical cloud check timeout is 10 seconds. To enable the extended cloud chec
 
 For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds. 
 
-> [!Note]  
+> [!NOTE]
 > This feature depends on three other MAPS settings the must all be enabled- "Configure the 'Block at First Sight' feature; "Join Microsoft MAPS"; "Send file samples when further analysis is required".
 
 <!--/Description-->
@@ -1481,7 +1481,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Time period (in days) that quarantine items will be stored on the system.
 
 
@@ -1821,7 +1821,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
-Added in Windows 10, version 1709. This policy allows you to turn network protection on (block/audit) or off in Windows Defender Exploit Guard. Network protection is a feature of Windows Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites. Value type is integer.
+Added in Windows 10, version 1709. This policy allows you to turn network protection on (block/audit) or off. Network protection protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites. Value type is integer.
 
 If you enable this setting, network protection is turned on and employees can't turn it off. Its behavior can be controlled by the following options: Block and Audit.
 If you enable this policy with the ""Block"" option, users/apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Windows Defender Security Center.
@@ -1890,7 +1890,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Allows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a **|**. For example, "lib|obj".
 
 <!--/Description-->
@@ -2008,7 +2008,7 @@ Allows an administrator to specify a list of files opened by processes to ignore
 > [!IMPORTANT]
 > The process itself is not excluded from the scan, but can be by using the **Defender/ExcludedPaths** policy to exclude its path.
 
- 
+ 
 Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\Example1.exe".
 
 <!--/Description-->
@@ -2249,13 +2249,13 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Selects the time of day that the Windows Defender quick scan should run.
 
 > [!NOTE]
 > The scan type will depends on what scan type is selected in the **Defender/ScanParameter** setting.
 
- 
+ 
 
 For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM.
 
@@ -2607,7 +2607,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Specifies the interval (in hours) that will be used to check for signatures, so instead of using the ScheduleDay and ScheduleTime the check for new signatures will be set according to the interval.
 
 
@@ -2674,7 +2674,7 @@ Valid values: 0–24.
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
- 
+ 
 Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not, (and if the user has specified never to ask), the UI is launched to ask for user consent (when **Defender/AllowCloudProtection** is allowed) before sending data.
 
 <!--/Description-->
@@ -2738,11 +2738,11 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
- 
+ 
 
 Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take.
 
-This value is a list of threat severity level IDs and corresponding actions, separated by a**|** using the format "*threat level*=*action*|*threat level*=*action*". For example "1=6|2=2|4=10|5=3
+This value is a list of threat severity level IDs and corresponding actions, separated by a<strong>|</strong> using the format "*threat level*=*action*|*threat level*=*action*". For example "1=6|2=2|4=10|5=3
 
 The following list shows the supported values for threat severity levels:
 
@@ -2773,46 +2773,13 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
+-   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Defender policies supported by Microsoft Surface Hub  
-
--   [Defender/AllowArchiveScanning](#defender-allowarchivescanning)  
--   [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)  
--   [Defender/AllowCloudProtection](#defender-allowcloudprotection)  
--   [Defender/AllowEmailScanning](#defender-allowemailscanning)  
--   [Defender/AllowFullScanOnMappedNetworkDrives](#defender-allowfullscanonmappednetworkdrives)  
--   [Defender/AllowFullScanRemovableDriveScanning](#defender-allowfullscanremovabledrivescanning)  
--   [Defender/AllowIOAVProtection](#defender-allowioavprotection)  
--   [Defender/AllowIntrusionPreventionSystem](#defender-allowintrusionpreventionsystem)  
--   [Defender/AllowOnAccessProtection](#defender-allowonaccessprotection)  
--   [Defender/AllowRealtimeMonitoring](#defender-allowrealtimemonitoring)  
--   [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)  
--   [Defender/AllowScriptScanning](#defender-allowscriptscanning)  
--   [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)  
--   [Defender/AvgCPULoadFactor](#defender-avgcpuloadfactor)  
--   [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)  
--   [Defender/ExcludedExtensions](#defender-excludedextensions)  
--   [Defender/ExcludedPaths](#defender-excludedpaths)  
--   [Defender/ExcludedProcesses](#defender-excludedprocesses)  
--   [Defender/PUAProtection](#defender-puaprotection)  
--   [Defender/RealTimeScanDirection](#defender-realtimescandirection)  
--   [Defender/ScanParameter](#defender-scanparameter)  
--   [Defender/ScheduleQuickScanTime](#defender-schedulequickscantime)  
--   [Defender/ScheduleScanDay](#defender-schedulescanday)  
--   [Defender/ScheduleScanTime](#defender-schedulescantime)  
--   [Defender/SignatureUpdateInterval](#defender-signatureupdateinterval)  
--   [Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)  
--   [Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)  
-<!--EndSurfaceHub-->
-

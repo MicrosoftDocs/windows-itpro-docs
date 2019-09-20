@@ -1,7 +1,7 @@
 ---
 title: Delegate Domain-Level Access to the Archive
 description: Delegate Domain-Level Access to the Archive
-author: mjcaparas
+author: dansimp
 ms.assetid: 11ca1d40-4b5c-496e-8922-d01412717858
 ms.reviewer: 
 manager: dansimp
@@ -36,7 +36,7 @@ A user account with the AGPM Administrator (Full Control) role or necessary perm
         **Note**  
         Editor and Approver include Reviewer permissions.
 
-         
+         
 
 ### Additional considerations
 
@@ -52,9 +52,9 @@ A user account with the AGPM Administrator (Full Control) role or necessary perm
 
 -   [Managing the Archive](managing-the-archive-agpm40.md)
 
- 
+ 
 
- 
+ 
 
 
 

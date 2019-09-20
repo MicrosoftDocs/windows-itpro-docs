@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Test and update an AppLocker policy
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic discusses the steps required to test an AppLocker policy prior to deployment.
 

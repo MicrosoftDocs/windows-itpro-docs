@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Search
 description: Policy CSP - Search
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/21/2019
 ms.reviewer: 
 manager: dansimp
@@ -918,21 +918,6 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Search policies supported by Windows Holographic
-
-- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
-<!--EndHoloLens-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololenbusinessspolicies"></a>Search policies supported by Windows Holographic for Business
-
-- [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
-<!--EndHoloLensBusiness-->
-
 <hr/>
 
 Footnotes:
@@ -943,3 +928,5 @@ Footnotes:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
+
+<!--/Policies-->

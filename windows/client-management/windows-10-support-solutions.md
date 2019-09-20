@@ -49,26 +49,26 @@ These are the top Microsoft Support solutions for the most common issues experie
 
 ## Solutions related to installing Windows Updates
 
-- [How does Windows Update work](https://docs.microsoft.com/en-us/windows/deployment/update/how-windows-update-works)
-- [Windows Update log files](https://docs.microsoft.com/en-us/windows/deployment/update/windows-update-logs)
-- [Windows Update troubleshooting](https://docs.microsoft.com/en-us/windows/deployment/update/windows-update-troubleshooting)
-- [Windows Update common errors and mitigation](https://docs.microsoft.com/en-us/windows/deployment/update/windows-update-errors)
-- [Windows Update - additional resources](https://docs.microsoft.com/en-us/windows/deployment/update/windows-update-resources)
+- [How does Windows Update work](https://docs.microsoft.com/windows/deployment/update/how-windows-update-works)
+- [Windows Update log files](https://docs.microsoft.com/windows/deployment/update/windows-update-logs)
+- [Windows Update troubleshooting](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting)
+- [Windows Update common errors and mitigation](https://docs.microsoft.com/windows/deployment/update/windows-update-errors)
+- [Windows Update - additional resources](https://docs.microsoft.com/windows/deployment/update/windows-update-resources)
 
 ## Solutions related to installing or upgrading Windows
 
-- [Quick Fixes](https://docs.microsoft.com/en-us/windows/deployment/upgrade/quick-fixes)
-- [Troubleshooting upgrade errors](https://docs.microsoft.com/en-us/windows/deployment/upgrade/troubleshoot-upgrade-errors)
-- [Resolution procedures](https://docs.microsoft.com/en-us/windows/deployment/upgrade/resolution-procedures)
+- [Quick Fixes](https://docs.microsoft.com/windows/deployment/upgrade/quick-fixes)
+- [Troubleshooting upgrade errors](https://docs.microsoft.com/windows/deployment/upgrade/troubleshoot-upgrade-errors)
+- [Resolution procedures](https://docs.microsoft.com/windows/deployment/upgrade/resolution-procedures)
 - [0xc1800118 error when you push Windows 10 Version 1607 by using WSUS](https://support.microsoft.com/en-in/help/3194588/0xc1800118-error-when-you-push-windows-10-version-1607-by-using-wsus)
 - [0xC1900101 error when Windows 10 upgrade fails after the second system restart](https://support.microsoft.com/en-in/help/3208485/0xc1900101-error-when-windows-10-upgrade-fails-after-the-second-system)
 
 ## Solutions related to BitLocker
 
-- [BitLocker recovery guide](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan)
-- [BitLocker: How to enable Network Unlock](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock)
-- [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker)
-- [BitLocker Group Policy settings](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)
+- [BitLocker recovery guide](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan)
+- [BitLocker: How to enable Network Unlock](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock)
+- [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker)
+- [BitLocker Group Policy settings](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)
 
 ## Solutions related to Bugchecks or Stop Errors
 - [Troubleshooting Stop error problems for IT Pros](https://support.microsoft.com/help/3106831/troubleshooting-stop-error-problems-for-it-pros)
@@ -92,8 +92,8 @@ These are the top Microsoft Support solutions for the most common issues experie
 - [Modern apps are blocked by security software when you start the applications on Windows 10 Version 1607](https://support.microsoft.com/help/4016973/modern-apps-are-blocked-by-security-software-when-you-start-the-applic)
 
 ## Solutions related to wireless networking and 802.1X authentication
-- [Advanced Troubleshooting Wireless Network](Connectivity]https://docs.microsoft.com/en-us/windows/client-management/advanced-troubleshooting-wireless-network-connectivity)
-- [Advanced Troubleshooting 802.1x Authentication](https://docs.microsoft.com/en-us/windows/client-management/advanced-troubleshooting-802-authentication)
-- [Troubleshooting Windows 802.11 Wireless Connections](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc766215(v=ws.10))
-- [Troubleshooting Windows Secure 802.3 Wired Connections](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc749352(v%3dws.10))
+- [Advanced Troubleshooting Wireless Network](Connectivity]https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-wireless-network-connectivity)
+- [Advanced Troubleshooting 802.1x Authentication](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication)
+- [Troubleshooting Windows 802.11 Wireless Connections](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc766215(v=ws.10))
+- [Troubleshooting Windows Secure 802.3 Wired Connections](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-vista/cc749352(v%3dws.10))
 - [Windows 10 devices can't connect to an 802.1X environment](https://support.microsoft.com/kb/3121002)

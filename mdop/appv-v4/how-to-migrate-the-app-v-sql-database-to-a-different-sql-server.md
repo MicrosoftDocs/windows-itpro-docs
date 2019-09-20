@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -22,7 +22,7 @@ The following procedures describe in detail how to migrate the SQL database of t
 **Important**  
 This procedure requires that the App-V server service is stopped and this will prevent end-users from using their applications.
 
- 
+ 
 
 **To back up the App-V SQL database**
 
@@ -110,9 +110,9 @@ This procedure requires that the App-V server service is stopped and this will p
 
 7.  Open the App-V Management Console, right-click the **Applications** node and select **Refresh**. The list of applications should be displayed as before.
 
- 
+ 
 
- 
+ 
 
 
 

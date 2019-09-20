@@ -93,11 +93,11 @@ Catalog signing is a vital step to adding your unsigned apps to your code integr
 3. Click **Upload** to upload your unsigned catalog files. These are the catalog files you created earlier in [Create catalog files for your unsigned app](#create-catalog-files).
 4. After the files are uploaded, click **Sign** to sign the catalog files.
 5. Click Download to download each item:
-    - signed catalog file
-    - default policy
-    - root certificate for your organization
+   - signed catalog file
+   - default policy
+   - root certificate for your organization
 
-    When you use the Device Guard signing portal to sign a catalog file, the signing certificate is added to the default policy. When you download the signed catalog file, you should also download the default policy and merge this code integrity policy with your existing code integrity policies to protect machines running the catalog file. You need to do this step to trust and run your catalog files. For more information, see the Merging code integrity policies in the [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+     When you use the Device Guard signing portal to sign a catalog file, the signing certificate is added to the default policy. When you download the signed catalog file, you should also download the default policy and merge this code integrity policy with your existing code integrity policies to protect machines running the catalog file. You need to do this step to trust and run your catalog files. For more information, see the Merging code integrity policies in the [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
 
 6. Open the root certificate that you downloaded, and follow the steps in **Certificate Import wizard** to install the certificate in your machine's certificate store.
 7. Deploy signed catalogs to your managed devices. For more information, see Deploy catalog files with Group Policy, or Deploy catalog files with System Center Configuration Manager in the [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).

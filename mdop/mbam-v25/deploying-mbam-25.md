@@ -40,32 +40,32 @@ Use this information to identify the procedures you can follow to deploy and con
 <li><p>How to install the MBAM Server software.</p></li>
 <li><p>How to configure the MBAM Server features.</p></li>
 </ul></td>
-<td align="left"><p>[Deploying the MBAM 2.5 Server Infrastructure](deploying-the-mbam-25-server-infrastructure.md)</p></td>
+<td align="left"><p><a href="deploying-the-mbam-25-server-infrastructure.md" data-raw-source="[Deploying the MBAM 2.5 Server Infrastructure](deploying-the-mbam-25-server-infrastructure.md)">Deploying the MBAM 2.5 Server Infrastructure</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>How to download and deploy the MBAM Group Policy Templates, which are required to manage MBAM Clients and BitLocker encryption policies in the enterprise.</p></td>
-<td align="left"><p>[Deploying MBAM 2.5 Group Policy Objects](deploying-mbam-25-group-policy-objects.md)</p></td>
+<td align="left"><p><a href="deploying-mbam-25-group-policy-objects.md" data-raw-source="[Deploying MBAM 2.5 Group Policy Objects](deploying-mbam-25-group-policy-objects.md)">Deploying MBAM 2.5 Group Policy Objects</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>How to use the MBAM Client Windows Installer files to deploy the MBAM Client software.</p></td>
-<td align="left"><p>[Deploying the MBAM 2.5 Client](deploying-the-mbam-25-client.md)</p></td>
+<td align="left"><p><a href="deploying-the-mbam-25-client.md" data-raw-source="[Deploying the MBAM 2.5 Client](deploying-the-mbam-25-client.md)">Deploying the MBAM 2.5 Client</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Checklist that can assist you in deploying the MBAM Server features and MBAM Client.</p></td>
-<td align="left"><p>[MBAM 2.5 Deployment Checklist](mbam-25-deployment-checklist.md)</p></td>
+<td align="left"><p><a href="mbam-25-deployment-checklist.md" data-raw-source="[MBAM 2.5 Deployment Checklist](mbam-25-deployment-checklist.md)">MBAM 2.5 Deployment Checklist</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>How to upgrade MBAM from previous versions.</p></td>
-<td align="left"><p>[Upgrading to MBAM 2.5 or MBAM 2.5 SP1 from Previous Versions](upgrading-to-mbam-25-or-mbam-25-sp1-from-previous-versions.md)</p></td>
+<td align="left"><p><a href="upgrading-to-mbam-25-or-mbam-25-sp1-from-previous-versions.md" data-raw-source="[Upgrading to MBAM 2.5 or MBAM 2.5 SP1 from Previous Versions](upgrading-to-mbam-25-or-mbam-25-sp1-from-previous-versions.md)">Upgrading to MBAM 2.5 or MBAM 2.5 SP1 from Previous Versions</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>How to remove MBAM Server features or software.</p></td>
-<td align="left"><p>[Removing MBAM Server Features or Software](removing-mbam-server-features-or-software.md)</p></td>
+<td align="left"><p><a href="removing-mbam-server-features-or-software.md" data-raw-source="[Removing MBAM Server Features or Software](removing-mbam-server-features-or-software.md)">Removing MBAM Server Features or Software</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Other resources for deploying MBAM
 
@@ -88,9 +88,9 @@ Use this information to identify the procedures you can follow to deploy and con
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
- 
+ 
 
- 
+ 
 
 
 

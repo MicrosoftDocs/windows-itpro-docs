@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -37,21 +37,21 @@ The Windows Hello for Business Users group is used to make it easy to deploy Win
 
 Sign-in a domain controller or management workstation with *Domain Admin* equivalent credentials.
 
-1.	Open **Active Directory Users and Computers**.
-2.	Click **View** and click **Advanced Features**.
-3.	Expand the domain node from the navigation pane.
-4.	Right-click the **Users** container. Click **New**. Click **Group**.
-5.	Type **Windows Hello for Business Users** in the **Group Name** text box.
-6.	Click **OK**.
+1. Open **Active Directory Users and Computers**.
+2. Click **View** and click **Advanced Features**.
+3. Expand the domain node from the navigation pane.
+4. Right-click the **Users** container. Click **New**. Click **Group**.
+5. Type **Windows Hello for Business Users** in the **Group Name** text box.
+6. Click **OK**.
 
 ### Section Review
 
 > [!div class="checklist"]
 > * Create the Windows Hello for Business Users group
-
->[!div class="step-by-step"]
-[< Configure Windows Hello for Business](hello-hybrid-key-whfb-settings.md)
-[Configure Azure AD Connect >](hello-hybrid-key-whfb-settings-dir-sync.md)
+> 
+> [!div class="step-by-step"]
+> [< Configure Windows Hello for Business](hello-hybrid-key-whfb-settings.md)
+> [Configure Azure AD Connect >](hello-hybrid-key-whfb-settings-dir-sync.md)
 
 <br><br>
 

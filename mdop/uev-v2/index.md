@@ -1,7 +1,7 @@
 ---
 title: Microsoft User Experience Virtualization (UE-V) 2.x
 description: Microsoft User Experience Virtualization (UE-V) 2.x
-author: jamiejdt
+author: dansimp
 ms.assetid: b860fed0-b846-415d-bdd6-ba60231a64be
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
@@ -67,24 +67,23 @@ This diagram shows how deployed UE-V components work together to synchronize set
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Settings location templates</strong></p></td>
-<td align="left"><p>UE-V uses XML files as settings location templates to monitor and synchronize desktop application settings and Windows desktop settings between user computers. By default, some settings location templates are included in UE-V . You can also create, edit, or validate custom settings location templates by [managing settings synchronization for custom applications](#customapps).</p>
+<td align="left"><p>UE-V uses XML files as settings location templates to monitor and synchronize desktop application settings and Windows desktop settings between user computers. By default, some settings location templates are included in UE-V . You can also create, edit, or validate custom settings location templates by <a href="#customapps" data-raw-source="[managing settings synchronization for custom applications](#customapps)">managing settings synchronization for custom applications</a>.</p>
 <div class="alert">
-<strong>Note</strong>  
-<p>Settings location templates are not required for Windows apps.</p>
+<strong>Note</strong><br/><p>Settings location templates are not required for Windows apps.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Windows app list</strong></p></td>
 <td align="left"><p>Settings for Windows apps are captured and applied dynamically. The app developer specifies the settings that are synchronized for each app. UE-V determines which Windows apps are enabled for settings synchronization using a managed list of apps. By default, this list includes most Windows apps.</p>
-<p>You can add or remove applications in the Windows app list by following the procedures shown [here](https://technet.microsoft.com/library/dn458925.aspx).</p></td>
+<p>You can add or remove applications in the Windows app list by following the procedures shown <a href="https://technet.microsoft.com/library/dn458925.aspx" data-raw-source="[here](https://technet.microsoft.com/library/dn458925.aspx)">here</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ### <a href="" id="customapps"></a>Managing Settings Synchronization for Custom Applications
 
@@ -103,12 +102,12 @@ Use these UE-V components to create and manage custom templates for your third-p
 <tr class="even">
 <td align="left"><p><strong>Settings template catalog</strong></p></td>
 <td align="left"><p>The <strong>settings template catalog</strong> is a folder path on UE-V computers or a Server Message Block (SMB) network share that stores the custom settings location templates. The UE-V Agent checks this location once a day, retrieves new or updated templates, and updates its synchronization behavior.</p>
-<p>If you use only the UE-V default settings location templates, then a settings template catalog is unnecessary. For more information about settings deployment catalogs, see [Configure a UE-V settings template catalog](https://technet.microsoft.com/library/dn458942.aspx#deploycatalogue).</p></td>
+<p>If you use only the UE-V default settings location templates, then a settings template catalog is unnecessary. For more information about settings deployment catalogs, see <a href="https://technet.microsoft.com/library/dn458942.aspx#deploycatalogue" data-raw-source="[Configure a UE-V settings template catalog](https://technet.microsoft.com/library/dn458942.aspx#deploycatalogue)">Configure a UE-V settings template catalog</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+
 
 ![ue-v generator process](images/ue-vgeneratorprocess.gif)
 
@@ -133,15 +132,15 @@ Many Windows desktop applications, such as Notepad
 
 Many Windows settings, such as desktop background or wallpaper
 
-**Note**  
+**Note**  
 You can also [customize UE-V to synchronize settings](https://technet.microsoft.com/library/dn458942.aspx) for applications other than those synchronized by default.
 
- 
+
 
 ## Compare UE-V to other Microsoft products
 
 
-Use this table to compare UE-V to Synchronize Profiles in Windows 7, Synchronize Profiles in Windows 8, and the Sync PC Settings feature of Microsoft account.
+Use this table to compare UE-V to Synchronize Profiles in Windows 7, Synchronize Profiles in Windows 8, and the Sync PC Settings feature of Microsoft account.
 
 <table style="width:100%;">
 <colgroup>
@@ -156,7 +155,7 @@ Use this table to compare UE-V to Synchronize Profiles in Windows 7, Synchroniz
 <thead>
 <tr class="header">
 <th align="left">Feature</th>
-<th align="left">Synchronize Profiles using Windows 7</th>
+<th align="left">Synchronize Profiles using Windows 7</th>
 <th align="left">Synchronize Profiles using Windows 8</th>
 <th align="left">Synchronize Profiles using Windows 10</th>
 <th align="left">Microsoft account</th>
@@ -276,7 +275,7 @@ Use this table to compare UE-V to Synchronize Profiles in Windows 7, Synchroniz
 </tbody>
 </table>
 
- 
+
 
 ## UE-V 2.x Release Notes
 
@@ -315,9 +314,9 @@ Find documentation, videos, and other resources for MDOP technologies. You can a
 
 
 
- 
 
- 
+
+
 
 
 

@@ -1,11 +1,11 @@
 ---
 title: Office CSP
 description: The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device. This CSP was added in Windows 10, version 1703.
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 08/15/2018
 ms.reviewer: 
 manager: dansimp
@@ -13,8 +13,6 @@ manager: dansimp
 
 # Office CSP
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool (ODT). For more information, see [Configuration options for the Office Deployment Tool](https://technet.microsoft.com/library/jj219426.aspx) and [How to assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365). 
 
@@ -32,12 +30,12 @@ The root node for the Office configuration service provider.</p>
 <a href="" id="installation"></a>**Installation**  
 Specifies the options for the Microsoft Office installation.
 
-The supported operations are Add, Delete, Get, and Replace.
+The supported operations are Add, Delete, and Get.
 
 <a href="" id="id"></a>**Installation/_id_**  
 Specifies a unique identifier that represents the ID of the Microsoft Office product to install. 
 
-The supported operations are Add, Delete, Get, and Replace.
+The supported operations are Add, Delete, and Get.
 
 <a href="" id="install"></a>**Installation/_id_/Install**  
 Installs Office by using the XML data specified in the configuration.xml file. 
@@ -69,7 +67,7 @@ The only supported operation is Get.
 
 Sample SyncML to install Office 365 Business Retail from current channel.
 
-```syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
@@ -91,7 +89,7 @@ Sample SyncML to install Office 365 Business Retail from current channel.
 
 To uninstall the Office 365 from the system:
 
-```syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
@@ -113,7 +111,7 @@ To uninstall the Office 365 from the system:
 
 To get the current status of Office 365 on the device.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>

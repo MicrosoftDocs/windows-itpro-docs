@@ -4,11 +4,11 @@ description: DeviceLock CSP
 ms.assetid: 9a547efb-738e-4677-95d3-5506d350d8ab
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -126,7 +126,7 @@ Required. This node has the same set of policy nodes as the **ProviderID** node.
 
 Set device lock policies:
 
-``` syntax
+```xml
 <Atomic>
    <CmdID>13</CmdID>
    <Add>

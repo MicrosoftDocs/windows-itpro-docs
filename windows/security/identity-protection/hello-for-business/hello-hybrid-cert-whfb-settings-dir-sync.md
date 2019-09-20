@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -56,8 +56,8 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 
 1. Open **Active Directory Users and Computers**.
 2. Click the **Users** container in the navigation pane.
->[!IMPORTANT]
-> If you already have a Windows Server 2016 domain controller in your domain, use the Keyadmins group in the next step, otherwise use the KeyCredential admins group you previously created.
+   >[!IMPORTANT]
+   > If you already have a Windows Server 2016 domain controller in your domain, use the Keyadmins group in the next step, otherwise use the KeyCredential admins group you previously created.
 
 3. Right-click either the **KeyAdmins** or **KeyCredential Admins** in the details pane and click **Properties**.
 4. Click the **Members** tab and click **Add**
@@ -69,10 +69,10 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 > [!div class="checklist"]
 > * Configure Permissions for Key Synchronization
 > * Configure group membership for Azure AD Connect
-
->[!div class="step-by-step"]
-[< Configure Active Directory](hello-hybrid-cert-whfb-settings-ad.md)
-[Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+> 
+> [!div class="step-by-step"]
+> [< Configure Active Directory](hello-hybrid-cert-whfb-settings-ad.md)
+> [Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
 
 <br><br>
 

@@ -34,9 +34,9 @@ This topic describes how to install the Microsoft BitLocker Administration and M
 <tr class="odd">
 <td align="left"><p>Review the MBAM 2.5 planning information</p></td>
 <td align="left"><ul>
-<li><p>[MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies](mbam-25-server-prerequisites-for-stand-alone-and-configuration-manager-integration-topologies.md)</p></li>
-<li><p>[MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)</p></li>
-<li><p>[High-Level Architecture for MBAM 2.5](high-level-architecture-for-mbam-25.md)</p></li>
+<li><p><a href="mbam-25-server-prerequisites-for-stand-alone-and-configuration-manager-integration-topologies.md" data-raw-source="[MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies](mbam-25-server-prerequisites-for-stand-alone-and-configuration-manager-integration-topologies.md)">MBAM 2.5 Server Prerequisites for Stand-alone and Configuration Manager Integration Topologies</a></p></li>
+<li><p><a href="mbam-25-supported-configurations.md" data-raw-source="[MBAM 2.5 Supported Configurations](mbam-25-supported-configurations.md)">MBAM 2.5 Supported Configurations</a></p></li>
+<li><p><a href="high-level-architecture-for-mbam-25.md" data-raw-source="[High-Level Architecture for MBAM 2.5](high-level-architecture-for-mbam-25.md)">High-Level Architecture for MBAM 2.5</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -47,7 +47,7 @@ This topic describes how to install the Microsoft BitLocker Administration and M
 </tbody>
 </table>
 
- 
+ 
 
 ## Installing the MBAM 2.5 Server software by using the Microsoft BitLocker Administration and Monitoring Setup wizard
 
@@ -127,7 +127,7 @@ The following table describes the command-line parameters for installing the MBA
 </tbody>
 </table>
 
- 
+ 
 
 
 
@@ -138,7 +138,7 @@ The following table describes the command-line parameters for installing the MBA
 
 [Configuring the MBAM 2.5 Server Features](configuring-the-mbam-25-server-features.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 

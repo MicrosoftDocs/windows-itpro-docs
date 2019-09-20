@@ -1,7 +1,7 @@
 ---
 title: DaRT 8.0 Supported Configurations
 description: DaRT 8.0 Supported Configurations
-author: msfttracyp
+author: dansimp
 ms.assetid: 95d68e5c-d202-4f4a-adef-d2098328172e
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -63,7 +63,7 @@ The following table lists the installation prerequisites for the administrator c
 </tbody>
 </table>
 
- 
+ 
 
 ### Help desk computer prerequisites
 
@@ -96,7 +96,7 @@ The following table lists the installation prerequisites for the help desk compu
 </tbody>
 </table>
 
- 
+ 
 
 ### End-user computer prerequisites
 
@@ -112,12 +112,12 @@ The following table lists the operating systems that are supported for the DaRT 
 **Note**  
 Make sure that you allocate enough space for any additional tools that you want to install on the administrator computer.
 
- 
+ 
 
 **Note**  
 Microsoft provides support for the current service pack and, in some cases, the immediately preceding service pack. To find the support timelines for your product, see the [Lifecycle Supported Service Packs](https://go.microsoft.com/fwlink/p/?LinkId=31975). For additional information about Microsoft Support Lifecycle Policy, see [Microsoft Support Lifecycle Support Policy FAQ](https://go.microsoft.com/fwlink/p/?LinkId=31976).
 
- 
+ 
 
 <table style="width:100%;">
 <colgroup>
@@ -166,7 +166,7 @@ Microsoft provides support for the current service pack and, in some cases, the 
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="-------------dart-help-desk-computer-system-requirements"></a> DaRT help desk computer system requirements
 
@@ -231,7 +231,7 @@ The following table lists the operating systems that are supported for the DaRT 
 </tbody>
 </table>
 
- 
+ 
 
 DaRT also has the following minimum hardware requirements for the end-user computer:
 
@@ -290,16 +290,16 @@ The Diagnostics and Recovery Toolset window in DaRT requires that the end-user c
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
 
 [Planning to Deploy DaRT 8.0](planning-to-deploy-dart-80-dart-8.md)
 
- 
+ 
 
- 
+ 
 
 
 

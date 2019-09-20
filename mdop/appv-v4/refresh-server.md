@@ -1,7 +1,7 @@
 ---
 title: REFRESH SERVER
 description: REFRESH SERVER
-author: eavena
+author: dansimp
 ms.assetid: 232df842-a160-46cd-b60b-f464cd9a0086
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -79,7 +79,6 @@ This event generates on domain controllers, member servers, and workstations.
  <Data Name="IpPort">0</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** None.
@@ -167,7 +166,7 @@ This event generates on domain controllers, member servers, and workstations.
 | 0xC0000072              | User logon to account disabled by administrator                                                                                                                  |
 | 0XC00000DC              | Indicates the Sam Server was in the wrong state to perform the desired operation.                                                                                |
 | 0XC0000133              | Clocks between DC and other computer too far out of sync                                                                                                         |
-| 0XC000015B              | The user has not been granted the requested logon type (aka logon right) at this machine                                                                         |
+| 0XC000015B              | The user has not been granted the requested logon type (aka logon right) at this machine                                                                         |
 | 0XC000018C              | The logon request failed because the trust relationship between the primary domain and the trusted domain failed.                                                |
 | 0XC0000192              | An attempt was made to logon, but the N**etlogon** service was not started.                                                                                      |
 | 0xC0000193              | User logon with expired account                                                                                                                                  |
@@ -179,7 +178,7 @@ This event generates on domain controllers, member servers, and workstations.
 | 0x0                     | Status OK.                                                                                                                                                       |
 
 > <span id="_Ref433822658" class="anchor"></span>Table: Windows logon status codes.
-
+> 
 > **Note**&nbsp;&nbsp;To see the meaning of other status\\sub-status codes you may also check for status code in the Window header file ntstatus.h in Windows SDK.
 
 More information: <https://dev.windows.com/en-us/downloads>

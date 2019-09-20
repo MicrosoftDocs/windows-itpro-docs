@@ -9,7 +9,7 @@ ms.manager: elizapo
 ms.prod: ie11
 ms.assetid: 
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 title: What IEAK can do for you
 ms.sitesec: library
 ms.date: 05/10/2018

@@ -63,7 +63,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Prompt for credentials on the secure desktop| 
 | Member Server Effective Default Settings | Prompt for credentials on the secure desktop| 
 | Client Computer Effective Default Settings | Prompt for credentials on the secure desktop| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

@@ -25,6 +25,11 @@ ms.topic: article
 
 Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
 
+When you investigate an incident, you'll see:
+- Incident details
+- Incident comments and actions
+- Tabs (alerts, machines, investigations, evidence, graph)
+
 ## Analyze incident details 
 Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, machines, investigations, evidence, graph). 
 
@@ -39,8 +44,6 @@ Alerts are grouped into incidents based on the following reasons:
 - Proximate time - The alerts were triggered on the same machine within a certain timeframe
 - Same file - The files associated with the alert are exactly the same
 - Same URL - The URL that triggered the alert is exactly the same
-
-![Image of alerts tab in incident page showing the Linked by tool tip](images/atp-incidents-alerts-tooltip.png)
 
 ![Image of alerts tab with incident details page showing the reasons the alerts were linked together in that incident](images/atp-incidents-alerts-reason.png)
 

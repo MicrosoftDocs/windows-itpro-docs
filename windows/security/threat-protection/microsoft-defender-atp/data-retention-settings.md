@@ -26,11 +26,11 @@ ms.date: 04/24/2018
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
 
 During the onboarding process, a wizard takes you through the general settings of Microsoft Defender ATP. After onboarding, you might want to update the data retention settings.
 
-1. In the navigation pane, select **Settings** > **Data rention**.
+1. In the navigation pane, select **Settings** > **Data retention**.
 
 2. Select the data retention duration from the drop-down list.
 

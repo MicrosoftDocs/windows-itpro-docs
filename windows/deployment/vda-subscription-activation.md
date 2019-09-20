@@ -1,8 +1,8 @@
 ---
 title: Configure VDA for Windows 10 Subscription Activation
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: laurawi
+ms.audience: itproauthor: greg-lindsay
 description: How to enable Windows 10 Enterprise E3 and E5 subscriptions for VDA
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: dansimp
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
@@ -29,23 +29,23 @@ Deployment instructions are provided for the following scenarios:
 - VMs must be running Windows 10 Pro, version 1703 (also known as the Creator's Update) or later.
 - VMs must be Active Directory-joined or Azure Active Directory (AAD)-joined.
 - VMs must be generation 1.
-- VMs must hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
+- VMs must hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx) (QMTH).
 
 ## Activation
 
 ### Scenario 1
 - The VM is running Windows 10, version 1803 or later.
-- The VM is hosted in Azure or another [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
+- The VM is hosted in Azure or another [Qualified Multitenant Hoster](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx) (QMTH).
 
     When a user with VDA rights signs in to the VM using their AAD credentials, the VM is automatically stepped-up to Enterprise and activated. There is no need to perform Windows 10 Pro activation. This eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
 
 ### Scenario 2
 - The Hyper-V host and the VM are both running Windows 10, version 1803 or later.
 
-    [Inherited Activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation#inherited-activation) is enabled. All VMs created by a user with a Windows 10 E3 or E5 license are automatically activated independent of whether a user signs in iwth a local account or using an Azure Active Directory account.
+    [Inherited Activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation#inherited-activation) is enabled. All VMs created by a user with a Windows 10 E3 or E5 license are automatically activated independent of whether a user signs in with a local account or using an Azure Active Directory account.
 
 ### Scenario 3
-- The VM is running Windows 10, version 1703 or 1709, or the hoster is not an authorized [QMTH](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) partner.
+- The VM is running Windows 10, version 1703 or 1709, or the hoster is not an authorized [QMTH](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx) partner.
 
     In this scenario, the underlying Windows 10 Pro license must be activated prior to Subscription Activation of Windows 10 Enterprise. Activation is accomplished using a Windows 10 Pro Generic Volume License Key (GVLK) and a Volume License KMS activation server provided by the hoster. Alternatively, a KMS activation server on your corporate network can be used if you have configured a private connection, such as [ExpressRoute](https://azure.microsoft.com/services/expressroute/) or [VPN Gateway](https://azure.microsoft.com/services/vpn-gateway/).
 
@@ -85,7 +85,7 @@ For examples of activation issues, see [Troubleshoot the user experience](https:
     Dism.exe /Image=G:\ /Add-ProvisioningPackage /PackagePath: "Desktop AD Enrollment Pro GVLK.ppkg"
     ```
     3. Right-click the mounted image in file explorer and click **Eject**.
-1. See instructions at [Upload and create VM from generalized VHD](https://docs.microsoft.com/azure/virtual-machines/windows/upload-generalized-managed#log-in-to-azure) to log in to Azure, get your storage account details, upload the VHD, and create a managed image.
+16. See instructions at [Upload and create VM from generalized VHD](https://docs.microsoft.com/azure/virtual-machines/windows/upload-generalized-managed#log-in-to-azure) to log in to Azure, get your storage account details, upload the VHD, and create a managed image.
 
 ## Azure Active Directory-joined VMs
 

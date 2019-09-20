@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -22,7 +22,7 @@ You can enforce licensing restrictions on an application by associating the appl
 **Important**  
 One or more application license groups must exist for you to associate an application with a license group.
 
- 
+ 
 
 **To associate an application with a license group**
 
@@ -35,9 +35,9 @@ One or more application license groups must exist for you to associate an applic
 4.  Click **OK**.
 
     **Note**  
-       You can alter the **Properties** tab of one application at a time.
+       You can alter the **Properties** tab of one application at a time.
 
-     
+     
 
 ## Related topics
 
@@ -48,9 +48,9 @@ One or more application license groups must exist for you to associate an applic
 
 [How to Manage Reports in the Server Management Console](how-to-manage-reports-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

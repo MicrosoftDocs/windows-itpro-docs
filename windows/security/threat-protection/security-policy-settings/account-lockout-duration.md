@@ -54,7 +54,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain controller effective default settings | Not defined |
 | Member server effective default settings | Not defined |
 | Client computer effective default settings | Not applicable |
- 
+ 
 ## Security considerations
 
 More than a few unsuccessful password submissions during an attempt to log on to a computer might represent an attacker's attempts to determine an account password by trial and error. The Windows and Windows Server operating systems can track logon attempts, and you can configure the operating system to disable the account for a preset period of time after a specified number of failed attempts. Account lockout policy settings control the threshold for this response and what action to take after the threshold is reached.
@@ -74,5 +74,5 @@ Configuring the **Account lockout duration** policy setting to 0 so that account
 ## Related topics
 
 [Account Lockout Policy](account-lockout-policy.md)
- 
- 
+ 
+ 

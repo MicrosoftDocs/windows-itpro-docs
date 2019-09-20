@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Education
 description: Policy CSP - Education
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 03/12/2018
 ms.reviewer: 
 manager: dansimp
@@ -182,12 +182,14 @@ The policy value is expected to be a ```&#xF000;``` seperated list of printer na
 <!--/Policy-->
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
 

@@ -37,359 +37,137 @@ Before attempting this procedure, you should read and understand the information
 
 **To convert any number of Active Directory Domain Services (AD DS) user or machine accounts into formatted Security Identifiers (SIDs)**
 
-1.  Copy the following script into a text editor and save it as a PowerShell script file, for example **ConvertToSIDs.ps1**.
+1. Copy the following script into a text editor and save it as a PowerShell script file, for example **ConvertToSIDs.ps1**.
 
-2.  To open a PowerShell console click **Start** and type **PowerShell**. Right-click **Windows PowerShell** and select **Run as Administrator**.
+2. To open a PowerShell console click **Start** and type **PowerShell**. Right-click **Windows PowerShell** and select **Run as Administrator**.
 
-    ``` syntax
-    <#
-    ```
+   ```powershell
+   <#
+   .SYNOPSIS
+   This PowerShell script will take an array of account names and try to convert each of them to the corresponding SID in standard and hexadecimal formats.
 
-    ``` syntax
-    .SYNOPSIS
-    ```
+   .DESCRIPTION
+   This is a PowerShell script that converts any number of Active Directory (AD) user or machine accounts into formatted Security Identifiers (SIDs) both in the standard format and in the hexadecimal format used by SQL server when running SQL scripts.
 
-    ``` syntax
-    This PowerShell script will take an array of account names and try to convert each of them to the corresponding SID in standard and hexadecimal formats.
-    ```
+   .INPUTS
+   The account(s) to convert to SID format. This can be a single account name or an array of account names. Please see examples below.
 
-    ``` syntax
-    .DESCRIPTION
-    ```
+   .OUTPUTS
+   A list of account names with the corresponding SID in standard and hexadecimal formats
 
-    ``` syntax
-    This is a PowerShell script that converts any number of Active Directory (AD) user or machine accounts into formatted Security Identifiers (SIDs) both in the standard format and in the hexadecimal format used by SQL server when running SQL scripts.
-    ```
+   .EXAMPLE
+   .\ConvertToSID.ps1 DOMAIN\user_account1 DOMAIN\machine_account1$ DOMAIN\user_account2 | Format-List
 
-    ``` syntax
-    .INPUTS
-    ```
+   .EXAMPLE
+   $accountsArray = @("DOMAIN\user_account1", "DOMAIN\machine_account1$", "DOMAIN_user_account2")
 
-    ``` syntax
-    The account(s) to convert to SID format. This can be a single account name or an array of account names. Please see examples below.
-    ```
+   .\ConvertToSID.ps1 $accountsArray | Write-Output -FilePath .\SIDs.txt -Width 200
+   #>
 
-    ``` syntax
-    .OUTPUTS
-    ```
+   function ConvertSIDToHexFormat
+   {
+      param([System.Security.Principal.SecurityIdentifier]$sidToConvert)
 
-    ``` syntax
-    A list of account names with the corresponding SID in standard and hexadecimal formats
-    ```
+      $sb = New-Object System.Text.StringBuilder
 
-    ``` syntax
-    .EXAMPLE
-    ```
+      [int] $binLength = $sidToConvert.BinaryLength
 
-    ``` syntax
-    .\ConvertToSID.ps1 DOMAIN\user_account1 DOMAIN\machine_account1$ DOMAIN\user_account2 | Format-List
-    ```
+      [Byte[]] $byteArray = New-Object Byte[] $binLength
 
-    ``` syntax
-    .EXAMPLE
-    ```
+      $sidToConvert.GetBinaryForm($byteArray, 0)
 
-    ``` syntax
-    $accountsArray = @("DOMAIN\user_account1", "DOMAIN\machine_account1$", "DOMAIN_user_account2")
-    ```
+      foreach($byte in $byteArray)
+      {
+          $sb.Append($byte.ToString("X2")) |Out-Null
+      }
+      return $sb.ToString()
+   }
 
-    ``` syntax
-    .\ConvertToSID.ps1 $accountsArray | Write-Output -FilePath .\SIDs.txt -Width 200
-    ```
+   [string[]]$myArgs = $args
 
-    ``` syntax
-#>
-    ```
 
-    ``` syntax
-    ```
 
-    []()  
+   if(($myArgs.Length -lt 1) -or ($myArgs[0].CompareTo("/?") -eq 0))
+   {
+       [string]::Format("{0}====== Description ======{0}{0}" +
+                  "  Converts any number of user or machine account names to string and hexadecimal SIDs.{0}" +
+                  "  Pass the account(s) as space separated command line parameters. (For example 'ConvertToSID.exe DOMAIN\\Account1 DOMAIN\\Account2 ...'){0}" +
+                  "  The output is written to the console in the format 'Account name    SID as string   SID as hexadecimal'{0}" +
+                  "  And can be written out to a file using standard PowerShell redirection{0}" +
+                  "  Please specify user accounts in the format 'DOMAIN\username'{0}" +
+                  "  Please specify machine accounts in the format 'DOMAIN\machinename$'{0}" +
+                  "  For more help content, please run 'Get-Help ConvertToSID.ps1'{0}" +
+                  "{0}====== Arguments ======{0}" +
 
-    []()  
 
-    ``` syntax
-    function ConvertSIDToHexFormat
-    ```
 
-    {
+                  "{0}  /?    Show this help message", [Environment]::NewLine)
+   }
+   else
+   {
+       #If an array was passed in, try to split it
+       if($myArgs.Length -eq 1)
+       {
+           $myArgs = $myArgs.Split(' ')
+       }
 
-       param(\[System.Security.Principal.SecurityIdentifier\]$sidToConvert)
+       #Parse the arguments for account names
+       foreach($accountName in $myArgs)
+       {
+           [string[]] $splitString = $accountName.Split('\')  # We're looking for the format "DOMAIN\Account" so anything that does not match, we reject
 
-    ``` syntax
-    ```
+           if($splitString.Length -ne 2)
+           {
+               $message = [string]::Format("{0} is not a valid account name. Expected format 'Domain\username' for user accounts or 'DOMAIN\machinename$' for machine accounts.", $accountName)
 
-    ``` syntax
-       $sb = New-Object System.Text.StringBuilder
-    ```
+               Write-Error -Message $message
+               continue
+           }
 
-    ``` syntax
-        [int] $binLength = $sidToConvert.BinaryLength
-    ```
+           #Convert any account names to SIDs
+           try
+           {
+               [System.Security.Principal.NTAccount] $account = New-Object System.Security.Principal.NTAccount($splitString[0], $splitString[1])
 
-    ``` syntax
-        [Byte[]] $byteArray = New-Object Byte[] $binLength
-    ```
+               [System.Security.Principal.SecurityIdentifier] $SID = [System.Security.Principal.SecurityIdentifier]($account.Translate([System.Security.Principal.SecurityIdentifier]))
+           }
+           catch [System.Security.Principal.IdentityNotMappedException]
+           {
+               $message = [string]::Format("Failed to translate account object '{0}' to a SID. Please verify that this is a valid user or machine account.", $account.ToString())
 
-    ``` syntax
-       $sidToConvert.GetBinaryForm($byteArray, 0)
-    ```
+               Write-Error -Message $message
 
-    ``` syntax
-       foreach($byte in $byteArray)
-    ```
+               continue
+           }
 
-    ``` syntax
-       {
-    ```
+           #Convert regular SID to binary format used by SQL
 
-    ``` syntax
-       $sb.Append($byte.ToString("X2")) |Out-Null
-    ```
+           $hexSIDString = ConvertSIDToHexFormat $SID
 
-    ``` syntax
-       }
-    ```
+           $SIDs = New-Object PSObject
 
-    ``` syntax
-       return $sb.ToString()
-    ```
+           $SIDs | Add-Member NoteProperty Account $accountName
 
-    ``` syntax
-    }
-    ```
+           $SIDs | Add-Member NoteProperty SID $SID.ToString()
 
-    ``` syntax
-     [string[]]$myArgs = $args
-    ```
+           $SIDs | Add-Member NoteProperty Hexadecimal $hexSIDString
 
-    ``` syntax
-    if(($myArgs.Length -lt 1) -or ($myArgs[0].CompareTo("/?") -eq 0))
-    ```
+           Write-Output $SIDs
+       }
+   }
+   ```
 
-    {
+3. Run the script you saved in step one of this procedure passing the accounts to convert as arguments.
 
-    ``` syntax
-     [string]::Format("{0}====== Description ======{0}{0}" +
-    ```
+   For example,
 
-    ``` syntax
-    "  Converts any number of user or machine account names to string and hexadecimal SIDs.{0}" +
-    ```
+   **.\\ConvertToSID.ps1 DOMAIN\\user\_account1 DOMAIN\\machine\_account1$ DOMAIN\\user\_account2 | Format-List” or “$accountsArray = @("DOMAIN\\user\_account1", "DOMAIN\\machine\_account1$", "DOMAIN\_user\_account2")**
 
-    ``` syntax
-                   "  Pass the account(s) as space separated command line parameters. (For example 'ConvertToSID.exe DOMAIN\\Account1 DOMAIN\\Account2 ...'){0}" +
-    ```
+   **.\\ConvertToSID.ps1 $accountsArray | Write-Output -FilePath .\\SIDs.txt -Width 200”**
 
-    ``` syntax
-                   "  The output is written to the console in the format 'Account name    SID as string   SID as hexadecimal'{0}" +
-    ```
-
-    ``` syntax
-                   "  And can be written out to a file using standard PowerShell redirection{0}" +
-    ```
-
-    ``` syntax
-                   "  Please specify user accounts in the format 'DOMAIN\username'{0}" + 
-    ```
-
-    ``` syntax
-                   "  Please specify machine accounts in the format 'DOMAIN\machinename$'{0}" +
-    ```
-
-    ``` syntax
-                   "  For more help content, please run 'Get-Help ConvertToSID.ps1'{0}" + 
-    ```
-
-    ``` syntax
-                   "{0}====== Arguments ======{0}" +
-    ```
-
-    ``` syntax
-                   "{0}  /?    Show this help message", [Environment]::NewLine) 
-    ```
-
-    ``` syntax
-    {
-    ```
-
-    ``` syntax
-    else
-    ```
-
-    ``` syntax
-    {  
-        #If an array was passed in, try to split it
-    ```
-
-    ``` syntax
-        if($myArgs.Length -eq 1)
-    ```
-
-    ``` syntax
-        {
-    ```
-
-    ``` syntax
-            $myArgs = $myArgs.Split(' ')
-    ```
-
-    ``` syntax
-        }
-    ```
-
-    ``` syntax
-
-        #Parse the arguments for account names
-    ```
-
-    ``` syntax
-        foreach($accountName in $myArgs)
-    ```
-
-    ``` syntax
-        {    
-    ```
-
-    ``` syntax
-            [string[]] $splitString = $accountName.Split('\')  # We're looking for the format "DOMAIN\Account" so anything that does not match, we reject
-    ```
-
-    ``` syntax
-            if($splitString.Length -ne 2)
-    ```
-
-    ``` syntax
-            {
-    ```
-
-    ``` syntax
-                $message = [string]::Format("{0} is not a valid account name. Expected format 'Domain\username' for user accounts or 'DOMAIN\machinename$' for machine accounts.", $accountName)
-    ```
-
-    ``` syntax
-                Write-Error -Message $message
-    ```
-
-    ``` syntax
-                continue
-    ```
-
-    ``` syntax
-            }
-    ```
-
-    ``` syntax
-            
-    ```
-
-    ``` syntax
-            #Convert any account names to SIDs
-    ```
-
-    ``` syntax
-            try
-    ```
-
-    ``` syntax
-            {
-    ```
-
-    ``` syntax
-                [System.Security.Principal.NTAccount] $account = New-Object System.Security.Principal.NTAccount($splitString[0], $splitString[1])
-    ```
-
-    ``` syntax
-                [System.Security.Principal.SecurityIdentifier] $SID = [System.Security.Principal.SecurityIdentifier]($account.Translate([System.Security.Principal.SecurityIdentifier]))
-    ```
-
-    ``` syntax
-            }
-    ```
-
-    ``` syntax
-            catch [System.Security.Principal.IdentityNotMappedException]
-    ```
-
-    ``` syntax
-            {
-    ```
-
-    ``` syntax
-                $message = [string]::Format("Failed to translate account object '{0}' to a SID. Please verify that this is a valid user or machine account.", $account.ToString())
-    ```
-
-    ``` syntax
-                Write-Error -Message $message
-    ```
-
-    ``` syntax
-                continue
-    ```
-
-    ``` syntax
-            }
-    ```
-
-    ``` syntax
-
-            #Convert regular SID to binary format used by SQL
-    ```
-
-    ``` syntax
-            $hexSIDString = ConvertSIDToHexFormat $SID
-    ```
-
-    ``` syntax
-            
-            $SIDs = New-Object PSObject
-    ```
-
-    ``` syntax
-            $SIDs | Add-Member NoteProperty Account $accountName
-    ```
-
-    ``` syntax
-            $SIDs | Add-Member NoteProperty SID $SID.ToString()
-    ```
-
-    ``` syntax
-            $SIDs | Add-Member NoteProperty Hexadecimal $hexSIDString
-    ```
-
-    ``` syntax
-
-            Write-Output $SIDs
-    ```
-
-    ``` syntax
-        }
-    ```
-
-    ``` syntax
-    }
-    ```
-
-3.  Run the script you saved in step one of this procedure passing the accounts to convert as arguments.
-
-    For example,
-
-    **.\\ConvertToSID.ps1 DOMAIN\\user\_account1 DOMAIN\\machine\_account1$ DOMAIN\\user\_account2 | Format-List” or “$accountsArray = @("DOMAIN\\user\_account1", "DOMAIN\\machine\_account1$", "DOMAIN\_user\_account2")**
-
-    **.\\ConvertToSID.ps1 $accountsArray | Write-Output -FilePath .\\SIDs.txt -Width 200”**
-
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+   **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
 
 [Administering App-V by Using PowerShell](administering-app-v-by-using-powershell.md)
-
- 
-
- 
-
-
-
-
-

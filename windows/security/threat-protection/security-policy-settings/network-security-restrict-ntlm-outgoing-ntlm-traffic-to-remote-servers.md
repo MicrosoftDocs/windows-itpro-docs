@@ -29,7 +29,7 @@ Describes the best practices, location, values, management aspects, and security
 The **Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers** policy setting allows you to deny or audit outgoing NTLM traffic from a computer running Windows 7, Windows Server 2008, or later to any remote server running the Windows operating system.
 
 >**Warning:**  Modifying this policy setting may affect compatibility with client computers, services, and applications.
- 
+ 
 ### <a href="" id="bkmk-resoutntlm-possvals"></a>Possible values
 
 -   **Allow all**
@@ -66,7 +66,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 | Domain controller effective default settings | Not defined| 
 | Member server effective default settings | Not defined| 
 | Client computer effective default settings | Not defined| 
- 
+ 
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.

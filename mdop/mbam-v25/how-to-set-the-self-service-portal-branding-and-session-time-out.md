@@ -19,15 +19,15 @@ ms.date: 06/16/2016
 
 After you configure the Self-Service Portal, you can brand it with your company name, Help Desk URL, and "notice" text. You can also change the Session Time-out setting to make the end user’s session expire after a specified period of inactivity.
 
-**Note**  
+**Note**  
 You can also brand the Self-Service Portal by using the **Enable-MbamWebApplication** Windows PowerShell cmdlet or the MBAM Server Configuration wizard. For instructions on using the wizard, see [How to Configure the MBAM 2.5 Web Applications](how-to-configure-the-mbam-25-web-applications.md).
 
- 
 
-**Note**  
+
+**Note**  
 In the following instructions, *SelfService* is the default virtual directory name for the Self-Service Portal. You might have used a different name when you configured the Self-Service Portal.
 
- 
+
 
 **To set the session time-out and branding for the Self-Service Portal**
 
@@ -41,102 +41,104 @@ In the following instructions, *SelfService* is the default virtual directory na
 
 5.  In the **Name** column, select the item that you want to change, and change the default value to reflect the name that you want to use. The following table lists the values that you can set.
 
-    **Caution**  
+    **Caution**  
     Do not change the value in the Name column (CompanyName\*), as it will cause Self-Service Portal to stop working.
 
-     
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Name</th>
-    <th align="left">Default value</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>ClientValidationEnabled</p></td>
-    <td align="left"><p>true</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>CompanyName</p></td>
-    <td align="left"><p>Contoso IT</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>DisplayNotice</p></td>
-    <td align="left"><p>true</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>HelpdeskText</p></td>
-    <td align="left"><p>Contact Helpdesk or IT Department</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>HelpdeskUrl</p></td>
-    <td align="left"><p>#</p>
-    <div class="alert">
-    <strong>Note</strong>  
-    <p>In MBAM 2.5 SP1, the HelpdeskUrl default value is empty.</p>
-    </div>
-    <div>
-     
-    </div></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>jQueryPath</p></td>
-    <td align="left"><p>[//go.microsoft.com/fwlink/?LinkID=390515](//go.microsoft.com/fwlink/?LinkID=390515)</p>
-    <div class="alert">
-    <strong>Note</strong>  
-    <p>In MBAM 2.5 SP1, this has been changed to a local JavaScript file shipped with the product, located at ~/Scripts/jquery-1.10.2.min.js</p>
-    </div>
-    <div>
-     
-    </div></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>jQueryValidatePath</p></td>
-    <td align="left"><p>[//go.microsoft.com/fwlink/?LinkID=390516](//go.microsoft.com/fwlink/?LinkID=390516)</p>
-    <div class="alert">
-    <strong>Note</strong>  
-    <p>In MBAM 2.5 SP1, this has been changed to a local JavaScript file shipped with the product, located at ~/Scripts/jquery.validate.min.js</p>
-    </div>
-    <div>
-     
-    </div></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>jQueryValidateUnobtrusivePath</p></td>
-    <td align="left"><p>[//go.microsoft.com/fwlink/?LinkID=390517](//go.microsoft.com/fwlink/?LinkID=390517)</p>
-    <div class="alert">
-    <strong>Note</strong>  
-    <p>In MBAM 2.5 SP1, this has been changed to a local JavaScript file shipped with the product, located at ~/Scripts/jquery.validate.unobtrusive.min.js</p>
-    </div>
-    <div>
-     
-    </div></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>NoticeTextPath</p></td>
-    <td align="left"><p>Notice.txt</p>
-    <div class="alert">
-    <strong>Note</strong>  
-    <p>You can edit the notice text either by using the Internet Information Services (IIS) Manager or by opening and changing the Notice.txt file in the installation directory.</p>
-    </div>
-    <div>
-     
-    </div></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>UnobtrusiveJavaScriptEnabled</p></td>
-    <td align="left"><p>true</p></td>
-    </tr>
-    </tbody>
-    </table>
 
-     
+~~~
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Name</th>
+<th align="left">Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><p>ClientValidationEnabled</p></td>
+<td align="left"><p>true</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>CompanyName</p></td>
+<td align="left"><p>Contoso IT</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>DisplayNotice</p></td>
+<td align="left"><p>true</p></td>
+</tr>
+<tr class="even">
+<td align="left"><p>HelpdeskText</p></td>
+<td align="left"><p>Contact Helpdesk or IT Department</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>HelpdeskUrl</p></td>
+<td align="left"><p>#</p>
+<div class="alert">
+<strong>Note</strong>  
+<p>In MBAM 2.5 SP1, the HelpdeskUrl default value is empty.</p>
+</div>
+<div>
+
+</div></td>
+</tr>
+<tr class="even">
+<td align="left"><p>jQueryPath</p></td>
+<td align="left"><p>[//go.microsoft.com/fwlink/?LinkID=390515](//go.microsoft.com/fwlink/?LinkID=390515)</p>
+<div class="alert">
+<strong>Note</strong>  
+<p>In MBAM 2.5 SP1, this has been changed to a local JavaScript file shipped with the product, located at ~/Scripts/jquery-1.10.2.min.js</p>
+</div>
+<div>
+
+</div></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>jQueryValidatePath</p></td>
+<td align="left"><p>[//go.microsoft.com/fwlink/?LinkID=390516](//go.microsoft.com/fwlink/?LinkID=390516)</p>
+<div class="alert">
+<strong>Note</strong>  
+<p>In MBAM 2.5 SP1, this has been changed to a local JavaScript file shipped with the product, located at ~/Scripts/jquery.validate.min.js</p>
+</div>
+<div>
+
+</div></td>
+</tr>
+<tr class="even">
+<td align="left"><p>jQueryValidateUnobtrusivePath</p></td>
+<td align="left"><p>[//go.microsoft.com/fwlink/?LinkID=390517](//go.microsoft.com/fwlink/?LinkID=390517)</p>
+<div class="alert">
+<strong>Note</strong>  
+<p>In MBAM 2.5 SP1, this has been changed to a local JavaScript file shipped with the product, located at ~/Scripts/jquery.validate.unobtrusive.min.js</p>
+</div>
+<div>
+
+</div></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>NoticeTextPath</p></td>
+<td align="left"><p>Notice.txt</p>
+<div class="alert">
+<strong>Note</strong>  
+<p>You can edit the notice text either by using the Internet Information Services (IIS) Manager or by opening and changing the Notice.txt file in the installation directory.</p>
+</div>
+<div>
+
+</div></td>
+</tr>
+<tr class="even">
+<td align="left"><p>UnobtrusiveJavaScriptEnabled</p></td>
+<td align="left"><p>true</p></td>
+</tr>
+</tbody>
+</table>
+~~~
+
+
 
 
 
@@ -145,11 +147,11 @@ In the following instructions, *SelfService* is the default virtual directory na
 
 [Customizing the Self-Service Portal for Your Organization](customizing-the-self-service-portal-for-your-organization.md)
 
- 
+
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
-- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
+- For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam). 
 
 
 

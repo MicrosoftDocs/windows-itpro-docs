@@ -9,7 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---
@@ -28,6 +28,6 @@ This section describes how to activate a client computer, by using a variety of 
 |[Perform Local Reactivation](local-reactivation-vamt.md) |Describes how to reactivate an operating system or Office program that was reinstalled. |
 |[Activate an Active Directory Forest Online](activate-forest-vamt.md) |Describes how to use Active Directory-Based Activation to online activate an Active Directory forest. |
 |[Activate by Proxy an Active Directory Forest](activate-forest-by-proxy-vamt.md) |Describes how to use Active Directory-Based Activation to proxy activate an Active Directory forest that is not connected to the Internet. |
- 
- 
- 
+ 
+ 
+ 

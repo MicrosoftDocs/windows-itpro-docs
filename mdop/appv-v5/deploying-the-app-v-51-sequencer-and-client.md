@@ -45,7 +45,7 @@ You can use the Microsoft ADMX template to configure the client settings for the
 **Important**  
 You can obtain the App-V 5.1 ADMX template from the Microsoft Download Center.
 
- 
+ 
 
 After you download and install the ADMX template, perform the following steps on the computer that you will use to manage Group Policy. This is typically the Domain Controller.
 
@@ -67,7 +67,7 @@ The App-V 5.1 Shared Content Store (SCS) mode enables the SCS App-V 5.1 clients 
 **Important**  
 If the App-V 5.1 client is configured to run in the SCS mode, the location where the App-V 5.1 packages are streamed from must be available, otherwise, the virtualized package will fail. Additionally, we do not recommend deployment of virtualized applications to computers that run the App-V 5.1 client in the SCS mode across the internet.
 
- 
+ 
 
 Additionally, the SCS is not a physical location that contains virtualized packages. It is a mode that allows the App-V 5.1 client to stream the required virtualized package data across the network.
 
@@ -113,9 +113,9 @@ You can use the App-V 5.1 Sequencer log information to help troubleshoot the Seq
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,12 @@
 ---
 description: A full-sized view of how document modes are chosen in IE11.
 title: Full-sized flowchart detailing how document modes are chosen in IE11
-author: lomayor
+author: dansimp
 ms.date: 04/19/2017
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ---
 
 Return to: [Deprecated document modes and Internet Explorer 11](deprecated-document-modes.md)<br>

@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -24,7 +24,7 @@ You must have administrative rights on the computer you are using to sequence th
 **Important**  
 After you have sequenced an application, before you can properly sequence a new application you must reinstall the operating system and the Sequencer on the computer you are using to sequence applications.
 
- 
+ 
 
 **To install the Microsoft Application Virtualization Sequencer**
 
@@ -49,9 +49,9 @@ After you have sequenced an application, before you can properly sequence a new 
 
 [Application Virtualization Deployment Requirements](application-virtualization-deployment-requirements.md)
 
- 
+ 
 
- 
+ 
 
 
 

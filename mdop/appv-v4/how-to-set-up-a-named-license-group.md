@@ -1,7 +1,7 @@
 ---
 title: How to Set Up a Named License Group
 description: How to Set Up a Named License Group
-author: eavena
+author: dansimp
 ms.assetid: 8ef6716c-0cb7-4706-ad3b-ac6f27b2e7ad
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

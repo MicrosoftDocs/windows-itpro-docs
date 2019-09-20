@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Script rules in AppLocker
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic describes the file formats and available default rules for the script rule collection.
 
@@ -39,7 +39,7 @@ The following table lists the default rules that are available for the script ru
 | Allows members of the local Administrators group to run all scripts| (Default Rule) All scripts| BUILTIN\Administrators | Path: *|
 | Allow all users to run scripts in the Windows folder| (Default Rule) All scripts located in the Windows folder| Everyone | Path: %windir%\*| 
 | Allow all users to run scripts in the Program Files folder| (Default Rule) All scripts located in the Program Files folder|Everyone | Path: %programfiles%\*| 
- 
+ 
 ## Related topics
 
 - [Understanding AppLocker default rules](understanding-applocker-default-rules.md)

@@ -29,7 +29,7 @@ After configuring Group Policy settings, you can use an enterprise software depl
 **Note**  
 Beginning in MBAM 2.5 SP1, a separate MSI is no longer included with the MBAM product. However, you can extract the MSI from the executable file (.exe) that is included with the product.
 
- 
+ 
 
 [How to Deploy the MBAM Client to Desktop or Laptop Computers](how-to-deploy-the-mbam-client-to-desktop-or-laptop-computers-mbam-25.md)
 
@@ -61,11 +61,11 @@ This section explains how to install the MBAM Client by using a command line.
 
 [Planning for MBAM 2.5](planning-for-mbam-25.md)
 
- 
+ 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
- 
+ 
 
 
 

@@ -28,7 +28,7 @@ There is no example of this event in this document.
 
 ***Event Schema:***
 
-*BranchCache: Received invalid data from a peer. Data discarded. *
+*BranchCache: Received invalid data from a peer. Data discarded.*
 
 *IP address of the client that sent this data:%1*
 

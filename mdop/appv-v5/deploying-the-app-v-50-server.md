@@ -24,7 +24,7 @@ For information about deploying the App-V 5.0 SP3 Server, see [About App-V 5.0 S
 **Important**  
 Before you install and configure the App-V 5.0 servers, you must specify a port where each component will be hosted. You must also add the associated firewall rules to allow incoming requests to access the specified ports. The installer does not modify firewall settings.
 
- 
+ 
 
 ## <a href="" id="---------app-v-5-0-server-overview"></a> App-V 5.0 Server overview
 
@@ -73,7 +73,7 @@ You can also deploy the App-V 5.0 clients and packages by using an ESD without h
 **Note**  
 The App-V 5.0 reporting server and reporting database can still be deployed alongside the ESD to collect the reporting data from the App-V 5.0 clients. However, the other three server components should not be deployed, because they will conflict with the ESD functionality.
 
- 
+ 
 
 [Deploying App-V 5.0 Packages by Using Electronic Software Distribution (ESD)](deploying-app-v-50-packages-by-using-electronic-software-distribution--esd-.md)
 
@@ -119,9 +119,9 @@ Use the following link for more information [About App-V 5.0 Reporting](about-ap
 
 
 
- 
+ 
 
- 
+ 
 
 
 

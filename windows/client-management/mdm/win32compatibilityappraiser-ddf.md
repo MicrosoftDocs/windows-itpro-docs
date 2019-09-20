@@ -1,11 +1,11 @@
 ---
 title: Win32CompatibilityAppraiser DDF file
 description: XML file containing the device description framework
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 07/19/2018
 ms.reviewer: 
 manager: dansimp
@@ -22,7 +22,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 The XML below is for Windows 10, version 1809.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

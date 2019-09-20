@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the File Locations page in the IEAK 11 Customization Wizard to change the location of your install package and IE11 folders.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: bd0620e1-0e07-4560-95ac-11888c2c389e
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Use the File Locations page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

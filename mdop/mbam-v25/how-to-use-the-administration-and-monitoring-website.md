@@ -22,7 +22,7 @@ The Administration and Monitoring Website, also referred to as the Help Desk, is
 **Note**  
 If you are using MBAM in the Stand-alone topology, you view all reports from the Administration and Monitoring Website. If you are using the Configuration Manager Integration topology, you view all reports in Configuration Manager, except the Recovery Audit report, which you continue to view from the Administration and Monitoring Website. For more information about reports, see [Monitoring and Reporting BitLocker Compliance with MBAM 2.5](monitoring-and-reporting-bitlocker-compliance-with-mbam-25.md).
 
- 
+ 
 
 ## Required roles for using the Administration and Monitoring Website
 
@@ -58,7 +58,7 @@ To access specific areas of the Administration and Monitoring Website, you must 
 </tbody>
 </table>
 
- 
+ 
 
 ## Tasks you can perform on the Administration and Monitoring Website
 
@@ -85,13 +85,13 @@ The following table summarizes the tasks you can perform on the Administration a
 <td align="left"><p>View reports</p></td>
 <td align="left"><p>Reports</p></td>
 <td align="left"><p>Enables you to run reports to monitor BitLocker usage, compliance, and key recovery activity. Reports provide data about enterprise compliance, individual computers, and who requested recovery keys or the TPM OwnerAuth package for a specific computer.</p></td>
-<td align="left"><p>[Viewing MBAM 2.5 Reports for the Stand-alone Topology](viewing-mbam-25-reports-for-the-stand-alone-topology.md)</p></td>
+<td align="left"><p><a href="viewing-mbam-25-reports-for-the-stand-alone-topology.md" data-raw-source="[Viewing MBAM 2.5 Reports for the Stand-alone Topology](viewing-mbam-25-reports-for-the-stand-alone-topology.md)">Viewing MBAM 2.5 Reports for the Stand-alone Topology</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Determine the BitLocker encryption status of lost or stolen computers</p></td>
 <td align="left"><p>Reports</p></td>
 <td align="left"><p>Determine if a volume was encrypted if the computer is lost or stolen.</p></td>
-<td align="left"><p>[How to Determine BitLocker Encryption State of Lost Computers](how-to-determine-bitlocker-encryption-state-of-lost-computers-mbam-25.md)</p></td>
+<td align="left"><p><a href="how-to-determine-bitlocker-encryption-state-of-lost-computers-mbam-25.md" data-raw-source="[How to Determine BitLocker Encryption State of Lost Computers](how-to-determine-bitlocker-encryption-state-of-lost-computers-mbam-25.md)">How to Determine BitLocker Encryption State of Lost Computers</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Recover lost drives</p></td>
@@ -103,21 +103,21 @@ The following table summarizes the tasks you can perform on the Administration a
 <li><p>Are corrupted</p></li>
 </ul></td>
 <td align="left"><ul>
-<li><p>[How to Recover a Drive in Recovery Mode](how-to-recover-a-drive-in-recovery-mode-mbam-25.md)</p></li>
-<li><p>[How to Recover a Moved Drive](how-to-recover-a-moved-drive-mbam-25.md)</p></li>
-<li><p>[How to Recover a Corrupted Drive](how-to-recover-a-corrupted-drive-mbam-25.md)</p></li>
+<li><p><a href="how-to-recover-a-drive-in-recovery-mode-mbam-25.md" data-raw-source="[How to Recover a Drive in Recovery Mode](how-to-recover-a-drive-in-recovery-mode-mbam-25.md)">How to Recover a Drive in Recovery Mode</a></p></li>
+<li><p><a href="how-to-recover-a-moved-drive-mbam-25.md" data-raw-source="[How to Recover a Moved Drive](how-to-recover-a-moved-drive-mbam-25.md)">How to Recover a Moved Drive</a></p></li>
+<li><p><a href="how-to-recover-a-corrupted-drive-mbam-25.md" data-raw-source="[How to Recover a Corrupted Drive](how-to-recover-a-corrupted-drive-mbam-25.md)">How to Recover a Corrupted Drive</a></p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Reset a TPM lockout</p></td>
 <td align="left"><p>Manage TPM</p></td>
 <td align="left"><p>Provides access to TPM data that has been collected by the MBAM Client. In a TPM lockout, use the Administration and Monitoring Website to retrieve the necessary password file to unlock the TPM.</p></td>
-<td align="left"><p>[How to Reset a TPM Lockout](how-to-reset-a-tpm-lockout-mbam-25.md)</p></td>
+<td align="left"><p><a href="how-to-reset-a-tpm-lockout-mbam-25.md" data-raw-source="[How to Reset a TPM Lockout](how-to-reset-a-tpm-lockout-mbam-25.md)">How to Reset a TPM Lockout</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 
 ## Related topics
@@ -125,7 +125,7 @@ The following table summarizes the tasks you can perform on the Administration a
 
 [Performing BitLocker Management with MBAM 2.5](performing-bitlocker-management-with-mbam-25.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 

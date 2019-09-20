@@ -64,7 +64,6 @@ It typically generates when network adapter connects to new wired network.
  <Data Name="ErrorCode">0x0</Data> 
  </EventData>
 </Event>
-
 ```
 
 ***Required Server Roles:*** None.

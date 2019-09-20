@@ -57,7 +57,7 @@ To add a new item under the browser's **Favorites** list:
 
 2. In the **Available customizations** pane, select the friendly name that you just created, and in the text field, enter the URL for the item.
 
-For example, to include the corporate Web site to the list of browser favorites, a company called Contoso can specify **Contoso** as the value for the name and "http://www.contoso.com" for the URL. 
+For example, to include the corporate Web site to the list of browser favorites, a company called Contoso can specify **Contoso** as the value for the name and "<http://www.contoso.com>" for the URL. 
 
 
 ## PartnerSearchCode

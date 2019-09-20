@@ -22,7 +22,7 @@ Use the following procedure to create a new App-V 5.1 package using PowerShell.
 **Note**  
 Before you use this procedure you must copy the associated installer files to the computer running the sequencer and you have read and understand the sequencer section of [Planning for the App-V 5.1 Sequencer and Client Deployment](planning-for-the-app-v-51-sequencer-and-client-deployment.md).
 
- 
+ 
 
 **To create a new virtual application using PowerShell**
 
@@ -56,7 +56,7 @@ Before you use this procedure you must copy the associated installer files to th
 
     -   InstallMediaPath - specifies the path to where the installation media is
 
-    -   TemplateFilePath - specifies the path to a template fileif you want to customize the sequencing process.
+    -   TemplateFilePath - specifies the path to a template file if you want to customize the sequencing process.
 
     -   FullLoad - specifies that the package must be fully downloaded to the computer running the App-V 5.1 before it can be opened.
 
@@ -67,9 +67,9 @@ Before you use this procedure you must copy the associated installer files to th
 
 [Administering App-V 5.1 by Using PowerShell](administering-app-v-51-by-using-powershell.md)
 
- 
+ 
 
- 
+ 
 
 
 

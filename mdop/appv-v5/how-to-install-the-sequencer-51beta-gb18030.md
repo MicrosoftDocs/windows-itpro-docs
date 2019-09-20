@@ -24,7 +24,7 @@ Upgrading a previous installation of the App-V sequencer is not supported.
 **Important**  
 For a full list of the sequencer requirements see sequencer sections of [App-V 5.1 Prerequisites](app-v-51-prerequisites.md) and [App-V 5.1 Supported Configurations](app-v-51-supported-configurations.md).
 
- 
+ 
 
 You can also use the command line to install the App-V 5.1 sequencer. The following list displays information about options for installing the sequencer using the command line and **appv\_sequencer\_setup.exe**:
 
@@ -79,7 +79,7 @@ You can also use the command line to install the App-V 5.1 sequencer. The follow
 </tbody>
 </table>
 
- 
+ 
 
 **To install the App-V 5.1 sequencer**
 
@@ -104,9 +104,9 @@ You can also use the command line to install the App-V 5.1 sequencer. The follow
 
 [Planning to Deploy App-V](planning-to-deploy-app-v51.md)
 
- 
+ 
 
- 
+ 
 
 
 

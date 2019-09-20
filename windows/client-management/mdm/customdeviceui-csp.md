@@ -4,11 +4,11 @@ description: CustomDeviceUI CSP
 ms.assetid: 20ED1867-7B9E-4455-B397-53B8B15C95A3
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -30,7 +30,7 @@ AppID string value is the default appid/AUMID to launch during startup. The supp
 <a href="" id="BackgroundTasksToLaunch"></a>**BackgroundTasksToLaunch**  
 List of package names of background tasks that need to be launched on device startup. The supported operation is Get.
 
-<a href="" id="BackgroundTasksToLaunch/BackgroundTaskPackageName"></a>**BackgroundTasksToLaunch/****_BackgroundTaskPackageName_**  
+<a href="" id="BackgroundTasksToLaunch/BackgroundTaskPackageName"></a>**BackgroundTasksToLaunch/**<strong>*BackgroundTaskPackageName*</strong>  
 Package Full Name of the App that needs be launched in the background. This can contain no entry points, a single entry point, or multiple entry points. The supported operations are Add, Delete, Get, and Replace.
 
 ## SyncML examples
@@ -38,7 +38,7 @@ Package Full Name of the App that needs be launched in the background. This can 
 
 **Set StartupAppID**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>      
         <Replace>
@@ -60,7 +60,7 @@ Package Full Name of the App that needs be launched in the background. This can 
 
 **Get all background tasks**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>      
         <Get>
@@ -78,7 +78,7 @@ Package Full Name of the App that needs be launched in the background. This can 
 
 **Add background task**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>      
         <Add>
@@ -98,9 +98,9 @@ Package Full Name of the App that needs be launched in the background. This can 
 </SyncML>
 ```
 
- 
+ 
 
- 
+ 
 
 
 

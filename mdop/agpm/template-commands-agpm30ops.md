@@ -1,7 +1,7 @@
 ---
 title: Template Commands
 description: Template Commands
-author: mjcaparas
+author: dansimp
 ms.assetid: 2ec11b3f-0c5c-4788-97bd-bd4bf64ba51a
 ms.reviewer: 
 manager: dansimp
@@ -30,7 +30,7 @@ Because a template cannot be altered, templates have no history. However, like a
 **Note**  
 A template is an uneditable, static version of a GPO for use as a starting point for creating new, editable GPOs.
 
- 
+ 
 
 Right-clicking the **Group Policy Objects** list on this tab displays a shortcut menu, including whichever of the following options are applicable.
 
@@ -56,7 +56,7 @@ Right-clicking the **Group Policy Objects** list on this tab displays a shortcut
 </tbody>
 </table>
 
- 
+ 
 
 ## Reports
 
@@ -84,7 +84,7 @@ Right-clicking the **Group Policy Objects** list on this tab displays a shortcut
 </tbody>
 </table>
 
- 
+ 
 
 ## Template management
 
@@ -116,7 +116,7 @@ Right-clicking the **Group Policy Objects** list on this tab displays a shortcut
 </tbody>
 </table>
 
- 
+ 
 
 ## Miscellaneous
 
@@ -144,7 +144,7 @@ Right-clicking the **Group Policy Objects** list on this tab displays a shortcut
 </tbody>
 </table>
 
- 
+ 
 
 ### Additional references
 
@@ -154,9 +154,9 @@ Right-clicking the **Group Policy Objects** list on this tab displays a shortcut
 
 -   [Performing Reviewer Tasks](performing-reviewer-tasks-agpm30ops.md)
 
- 
+ 
 
- 
+ 
 
 
 

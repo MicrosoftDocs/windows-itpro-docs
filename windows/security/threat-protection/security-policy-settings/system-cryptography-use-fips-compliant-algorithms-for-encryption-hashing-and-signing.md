@@ -74,7 +74,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Disabled| 
 | Member Server Effective Default Settings | Disabled| 
 | Client Computer Effective Default Settings | Disabled| 
- 
+ 
 ### Operating system version differences
 
 When this setting is enabled, the Encrypting File System (EFS) service supports only the Triple DES encryption algorithm for encrypting file data. By default, the Windows Vista and the Windows Server 2003 implementation of EFS uses the Advanced Encryption Standard (AES) with a 256-bit key. The Windows XP implementation uses DESX.
@@ -87,7 +87,7 @@ When this setting is enabled, BitLocker generates recovery password or recovery 
 | Windows Server 2012 and Windows 8 | When created on these operating systems, the recovery key can be used on other systems listed in this table as well.| 
 | Windows Server 2008 R2 and Windows 7 | When created on these operating systems, the recovery key can be used on other systems listed in this table as well.| 
 | Windows Server 2008 and Windows Vista | When created on these operating systems, the recovery key can be used on other systems listed in this table as well.| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

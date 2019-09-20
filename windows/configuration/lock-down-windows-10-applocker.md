@@ -114,7 +114,7 @@ In addition to specifying the apps that users can run, you should also restrict 
     **Note**  
     To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**.
 
-     
+     
 
 To learn more about locking down features, see [Customizations for Windows 10 Enterprise](https://go.microsoft.com/fwlink/p/?LinkId=691442).
 

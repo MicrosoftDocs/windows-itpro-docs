@@ -11,8 +11,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: greg-lindsay
-ms.date: 07/27/2017
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 

@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -31,7 +31,7 @@ This guide explains how credential theft attacks occur and the strategies and co
 - Respond to suspicious activity
 - Recover from a breach
 
-![Security stages](images\security-stages.png)
+![Security stages](images/security-stages.png)
 
 ## Attacks that steal credentials
 

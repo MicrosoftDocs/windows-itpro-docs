@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -69,7 +69,7 @@ Specifies the size of the primary and secondary feature blocks into which the SF
 **Note**  
 After the initial package has been created, the block size value is not changeable.
 
- 
+ 
 
 ## Related topics
 
@@ -78,9 +78,9 @@ After the initial package has been created, the block size value is not changeab
 
 [Sequencer Console](sequencer-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

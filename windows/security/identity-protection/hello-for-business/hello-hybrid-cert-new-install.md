@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -66,12 +66,12 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
 1. Open an elevated Windows PowerShell prompt.
 2. Use the following command to install the Active Directory Certificate Services role.   
     ```PowerShell
-    Add-WindowsFeature Adcs-Cert-Authority -IncludeManageTools
+    Add-WindowsFeature Adcs-Cert-Authority -IncludeManagementTools
     ```
 
 3. Use the following command to configure the Certificate Authority using a basic certificate authority configuration.   
     ```PowerShell
-    Install-AdcsCertificateAuthority
+    Install-AdcsCertificationAuthority
     ```   
     
 ### Configure a Production Public Key Infrastructure
@@ -104,11 +104,11 @@ Review the [What is Azure Multi-Factor Authentication](https://docs.microsoft.co
 
 ### Azure Multi-Factor Authentication (MFA) Cloud ###
 > [!IMPORTANT]
-As long as your users have licenses that include Azure Multi-Factor Authentication, there's nothing that you need to do to turn on Azure MFA. You can start requiring two-step verification on an individual user basis. The licenses that enable Azure MFA are:
+> As long as your users have licenses that include Azure Multi-Factor Authentication, there's nothing that you need to do to turn on Azure MFA. You can start requiring two-step verification on an individual user basis. The licenses that enable Azure MFA are:
 > * Azure Multi-Factor Authentication
 > * Azure Active Directory Premium
 > * Enterprise Mobility + Security
->
+> 
 > If you have one of these subscriptions or licenses, skip the Azure MFA Adapter section. 
 
 #### Azure MFA Provider #### 

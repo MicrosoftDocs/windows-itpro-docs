@@ -1,7 +1,7 @@
 ---
 title: Planning for MBAM 2.0 Server Deployment
 description: Planning for MBAM 2.0 Server Deployment
-author: msfttracyp
+author: dansimp
 ms.assetid: b57f1a42-134f-4997-8697-7fbed08e2fc4
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: tracyp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -22,7 +22,7 @@ The Microsoft BitLocker Administration and Monitoring (MBAM) server infrastructu
 **Note**  
 Installations of Microsoft BitLocker Administration and Monitoring on a single server are recommended only for test environments.
 
- 
+ 
 
 ## Planning for MBAM Server Deployment
 
@@ -69,7 +69,7 @@ To deploy MBAM features on multiple servers, you have to install the features in
 **Note**  
 Keep track of the names of the computers on which you install each feature. You have to use this information throughout the installation process. You can print and use a deployment checklist to assist in this effort. For more information about the MBAM Deployment Checklist, see [MBAM 2.0 Deployment Checklist](mbam-20-deployment-checklist-mbam-2.md).
 
- 
+ 
 
 ## Related topics
 
@@ -78,9 +78,9 @@ Keep track of the names of the computers on which you install each feature. You 
 
 [Deploying the MBAM 2.0 Server Infrastructure](deploying-the-mbam-20-server-infrastructure-mbam-2.md)
 
- 
+ 
 
- 
+ 
 
 
 

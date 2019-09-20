@@ -23,7 +23,7 @@ For a list of the supported versions of the software mentioned in this topic, se
 **Important**  
 Windows To Go is not supported for the Configuration Manager Integration topology installation when you are using Configuration Manager 2007.
 
- 
+ 
 
 ## Recommended number of servers and supported number of clients
 
@@ -54,7 +54,7 @@ The recommended number of servers and supported number of clients in a productio
 </tbody>
 </table>
 
- 
+ 
 
 ## Differences between Configuration Manager Integration and stand-alone topologies
 
@@ -130,7 +130,7 @@ The **monitoring web services** are used by the MBAM Client and the websites to 
 
 **Important**<br>The Monitoring Web Service is no longer available in Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 SP1 since the MBAM websites communicate directly with the Recovery Database. 
 
- 
+ 
 
 ### Management workstation
 
@@ -142,7 +142,7 @@ The **monitoring web services** are used by the MBAM Client and the websites to 
 
     **NOTE**<br>The workstation does not have to be a dedicated computer.
 
-     
+     
 
 ### MBAM Client and Configuration Manager Client computer
 
@@ -160,7 +160,7 @@ The **MBAM Client**:
 
 The **Configuration Manager Client** enables Configuration Manager to collect hardware compatibility data about the client computers and report compliance information.
 
- 
+ 
 
 ## Differences in MBAM deployment for supported Configuration Manager versions
 
@@ -193,7 +193,7 @@ When you deploy MBAM with the Configuration Manager Integration topology, you ca
 </tbody>
 </table>
 
- 
+ 
 
 ## How MBAM works with Configuration Manager
 
@@ -273,7 +273,7 @@ The integration of MBAM with Configuration Manager is based on a configuration p
 </tbody>
 </table>
 
- 
+ 
 
 
 ## Related topics
@@ -285,9 +285,9 @@ The integration of MBAM with Configuration Manager is based on a configuration p
 
 [Illustrated Features of an MBAM 2.5 Deployment](illustrated-features-of-an-mbam-25-deployment.md)
 
- 
+ 
 
- 
+ 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).

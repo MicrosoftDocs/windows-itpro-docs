@@ -7,7 +7,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
+manager: laurawi
 ms.collection: M365-modern-desktop
 search.appverid:
 - MET150
@@ -92,10 +93,10 @@ If devices are running Windows 7 or Windows 8.1, see [New Windows 10 upgrade ben
 
 ### Windows 10 Education requirements
 
-1.	Windows 10 Pro Education, version 1903 or later installed on the devices to be upgraded.
-2.	A device with a Windows 10 Pro Education digital license. You can confirm this information in Settings > Update & Security> Activation. 
-3.	The Education tenant must have an active subscription to Microsoft 365 with a Windows 10 Enterprise license or a Windows 10 Enterprise or Education subscription. 
-4.	Devices must be Azure AD-joined or Hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices are not supported.
+1. Windows 10 Pro Education, version 1903 or later installed on the devices to be upgraded.
+2. A device with a Windows 10 Pro Education digital license. You can confirm this information in Settings > Update & Security> Activation. 
+3. The Education tenant must have an active subscription to Microsoft 365 with a Windows 10 Enterprise license or a Windows 10 Enterprise or Education subscription. 
+4. Devices must be Azure AD-joined or Hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices are not supported.
 
 >If Windows 10 Pro is converted to Windows 10 Pro Education [using benefits available in Store for Education](https://docs.microsoft.com/education/windows/change-to-pro-education#change-using-microsoft-store-for-education), then the feature will not work. You will need to re-image the device using a Windows 10 Pro Education edition.  
 
@@ -104,8 +105,8 @@ If devices are running Windows 7 or Windows 8.1, see [New Windows 10 upgrade ben
 
 With Windows 10 Enterprise or Windows 10 Education, businesses and institutions can benefit from enterprise-level security and control. Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Education or Windows 10 Enterprise to their users. Now, with Windows 10 Enterprise E3 or A3 and E5 or A5 being available as a true online service, it is available in select channels thus allowing all organizations to take advantage of enterprise-grade Windows 10 features. To compare Windows 10 editions and review pricing, see the following:
 
-- [Compare Windows 10 editions](https://www.microsoft.com/en-us/windowsforbusiness/compare)
-- [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-security-pricing)
+- [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare)
+- [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)
 
 You can benefit by moving to Windows as an online service in the following ways:
 
@@ -136,8 +137,8 @@ After Windows 10, version 1903:<br>
 ![1903](images/after.png)
 
 Note: 
-1.	A Windows 10 Pro Education device will only step up to Windows 10 Education edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
-2.	A Windows 10 Pro device will only step up to Windows 10 Enterprise edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
+1. A Windows 10 Pro Education device will only step up to Windows 10 Education edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
+2. A Windows 10 Pro device will only step up to Windows 10 Enterprise edition when “Windows 10 Enterprise” license is assigned from M365 Admin center (as of May 2019).
 
 ### Scenarios
 
@@ -214,12 +215,12 @@ See [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md).
 
 ## Virtual Desktop Access (VDA)
 
-Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx).
+Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx).
 
 Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscriptions for VDA. Active Directory-joined and Azure Active Directory-joined clients are supported. See [Enable VDA for Subscription Activation](vda-subscription-activation.md).
 
 ## Related topics
 
 [Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-devices-group-policy/)<br>
-[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)<br>
-[Windows for business](https://www.microsoft.com/en-us/windowsforbusiness/default.aspx)<br>
+[Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)<br>
+[Windows for business](https://www.microsoft.com/windowsforbusiness/default.aspx)<br>

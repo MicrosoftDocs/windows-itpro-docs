@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - Camera
 description: Policy CSP - Camera
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/14/2018
 ms.reviewer: 
 manager: dansimp
@@ -88,30 +88,13 @@ The following list shows the supported values:
 <!--/Policy-->
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
-<!--StartEAS-->
-## <a href="" id="eas"></a>Camera policies that can be set using Exchange Active Sync (EAS)  
-
--   [Camera/AllowCamera](#camera-allowcamera)  
-<!--EndEAS-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Camera policies supported by IoT Core  
-
--   [Camera/AllowCamera](#camera-allowcamera)  
-<!--EndIoTCore-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Camera policies supported by Microsoft Surface Hub  
-
--   [Camera/AllowCamera](#camera-allowcamera)  
-<!--EndSurfaceHub-->
-

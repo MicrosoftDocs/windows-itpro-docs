@@ -4,13 +4,13 @@ description: This topic for the IT professional describes the Advanced Security 
 ms.assetid: 915abf50-42d2-45f6-9fd1-e7bd201b193d
 ms.reviewer: 
 manager: dansimp
-ms.author: dolmont
+ms.author: dansimp
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: dulcemontemayor
+author: dansimp
 ms.date: 04/19/2017
 ---
 
@@ -71,6 +71,7 @@ If you configure this policy setting, an audit event is generated when sensitive
 
 -   [4985](event-4985.md)(S): The state of a transaction has changed.
 
->**Note**&nbsp;&nbsp;For some reason event “[4985](event-4985.md)(S): The state of a transaction has changed" from [Audit File System](audit-file-system.md) subcategory generates also in this subcategory. See description of event [4985](event-4985.md) in [Audit File System](audit-file-system.md) subcategory.
+>[!NOTE] 
+> The event “[4985](event-4985.md)(S): The state of a transaction has changed" from [Audit File System](audit-file-system.md) subcategory also generates in this subcategory. See description of event [4985](event-4985.md) in [Audit File System](audit-file-system.md) subcategory.
 
 

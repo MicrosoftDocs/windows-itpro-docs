@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - EnterpriseCloudPrint
 description: Policy CSP - EnterpriseCloudPrint
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 05/14/2018
 ms.reviewer: 
 manager: dansimp
@@ -325,12 +325,14 @@ The default value is an empty string. Otherwise, the value should contain a URL.
 <!--/Policy-->
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
 

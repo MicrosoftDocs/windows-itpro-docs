@@ -1,7 +1,7 @@
 ---
 title: Configuring UE-V 2.x with System Center Configuration Manager 2012
 description: Configuring UE-V 2.x with System Center Configuration Manager 2012
-author: levinec
+author: dansimp
 ms.assetid: 9a4e2a74-7646-4a77-b58f-2b4456487295
 ms.reviewer: 
 manager: dansimp
@@ -79,7 +79,7 @@ The UE-V Configuration Pack includes tools to perform the following tasks:
     </tbody>
     </table>
 
-     
+     
 
 -   Verify compliance by confirming that UE-V is running.
 
@@ -238,9 +238,9 @@ The UE-V Configuration Pack for Configuration Manager 2012 SP1 or later can be d
 
 [Manage Configurations for UE-V 2.x](manage-configurations-for-ue-v-2x-new-uevv2.md)
 
- 
+ 
 
- 
+ 
 
 
 

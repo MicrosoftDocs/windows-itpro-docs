@@ -59,7 +59,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain controller effective default settings | 1 day| 
 | Member server effective default settings | 1 day| 
 | Effective GPO default settings on client computers| 1 day| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

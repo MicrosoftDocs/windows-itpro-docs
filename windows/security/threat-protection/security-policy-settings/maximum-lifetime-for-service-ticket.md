@@ -57,7 +57,7 @@ The following table lists the actual and effective default policy values. Defaul
 | DC Effective Default Settings | 600 minutes| 
 | Member Server Effective Default Settings | Not applicable| 
 | Client Computer Effective Default Settings | Not applicable| 
- 
+ 
 ## Policy management
 
 This section describes features, tools, and guidance to help you manage this policy.

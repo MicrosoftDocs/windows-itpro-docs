@@ -38,9 +38,9 @@ The following topics provide a discussion of each policy setting's implementatio
 | [Account lockout threshold](account-lockout-threshold.md) | Describes the best practices, location, values, and security considerations for the **Account lockout threshold** security policy setting. |
 | [Account lockout duration](account-lockout-duration.md) | Describes the best practices, location, values, and security considerations for the **Account lockout duration** security policy setting. |
 | [Reset account lockout counter after](reset-account-lockout-counter-after.md) | Describes the best practices, location, values, and security considerations for the **Reset account lockout counter after** security policy setting. |
- 
+ 
 ## Related topics
 
 [Configure security policy settings](how-to-configure-security-policy-settings.md)
- 
- 
+ 
+ 

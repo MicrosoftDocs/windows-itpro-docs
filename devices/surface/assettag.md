@@ -20,16 +20,16 @@ for Surface devices. It works on Surface Pro 3 and all newer Surface devices.
 
 ## System requirements
 
-  - Surface Pro 3 or later
+- Surface Pro 3 or later
 
-  - UEFI firmware version 3.9.150.0 or later
+- UEFI firmware version 3.9.150.0 or later
 
 ## Using Surface Asset Tag 
 
 To run Surface Asset Tag:
 
-1.  On the Surface device, download **Surface Pro 3 AssetTag.zip** from the [Microsoft Download
-    Center](https://www.microsoft.com/en-us/download/details.aspx?id=46703),
+1.  On the Surface device, download **Surface Asset Tag.zip** from the [Microsoft Download
+    Center](https://www.microsoft.com/download/details.aspx?id=46703),
     extract the zip file, and save AssetTag.exe in desired folder (in
     this example, C:\\assets).
 

@@ -1,7 +1,7 @@
 ---
 title: Test a GPO in a Separate Organizational Unit
 description: Test a GPO in a Separate Organizational Unit
-author: mjcaparas
+author: dansimp
 ms.assetid: 9a9e6d22-74e6-41d8-ac2f-12a1b76ad5a0
 ms.reviewer: 
 manager: dansimp

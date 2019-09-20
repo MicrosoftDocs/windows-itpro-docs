@@ -30,15 +30,16 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.windows-plan",
-			  "folder_relative_path_in_docset": "./"
-			}
-		}
-	},
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.windows-plan",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "windows-plan"
+    "dest": "windows-plan",
+    "markdownEngineName": "markdig"
   }
 }

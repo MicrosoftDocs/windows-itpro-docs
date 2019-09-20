@@ -1,7 +1,7 @@
 ---
 title: Installation Files Page
 description: Installation Files Page
-author: eavena
+author: dansimp
 ms.assetid: b0aad26f-b143-4f09-87a1-9f016a23cb62
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: eravena
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -30,7 +30,7 @@ Click **Browse** to specify the installation files that have been installed loca
 **Note**  
 The default installation location you provide depends on the following conditions:
 
- 
+ 
 
 -   The package root specified when the package was originally created.
 
@@ -49,9 +49,9 @@ When you create a package using a package accelerator, each file in the package,
 
 [Create Package Accelerator Wizard (AppV 4.6 SP1)](create-package-accelerator-wizard--appv-46-sp1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

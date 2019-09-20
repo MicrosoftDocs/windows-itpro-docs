@@ -56,7 +56,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Require 128-bit encryption| 
 | Member Server Effective Default Settings | Require 128-bit encryption| 
 | Client Computer Effective Default Settings | Require 128-bit encryption| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -65,7 +65,7 @@ This section describes features and tools that are available to help you manage 
 
 None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
 
-###  Policy dependencies
+### Policy dependencies
 
 The settings for this security policy are dependent on the [Network security: LAN Manager authentication level](network-security-lan-manager-authentication-level.md) setting value.
 

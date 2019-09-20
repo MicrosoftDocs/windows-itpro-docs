@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -33,7 +33,7 @@ The File Transfer Tool can be used to copy files or folders from the MED-V works
 **Note**  
 The File Transfer Tool is enabled only when the MED-V workspace is running.
 
- 
+ 
 
 **To copy files or folders from a MED-V workspace that is currently running**
 
@@ -101,9 +101,9 @@ The following functions can be performed using the diagnostic tool:
 
 -   Browse image store—View all available MED-V workspace images.
 
- 
+ 
 
- 
+ 
 
 
 

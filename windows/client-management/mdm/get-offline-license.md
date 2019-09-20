@@ -4,11 +4,11 @@ description: The Get offline license operation retrieves the offline license inf
 ms.assetid: 08DAD813-CF4D-42D6-A783-994A03AEE051
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 09/18/2017
 ---
 

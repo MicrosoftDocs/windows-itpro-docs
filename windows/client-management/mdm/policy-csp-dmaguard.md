@@ -1,11 +1,11 @@
 ---
 title: Policy CSP - DmaGuard
 description: Policy CSP - DmaGuard
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 12/17/2018
 ms.reviewer: 
 manager: dansimp
@@ -73,7 +73,7 @@ Device memory sandboxing allows the OS to leverage the I/O Memory Management Uni
 
 This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that cannot be controlled via policy or by end user. It has to be supported by the system at the time of manufacturing. To check if the system supports Kernel DMA Protection, please check the Kernel DMA Protection field in the Summary page of MSINFO32.exe.
 
-> [!Note]   
+> [!NOTE]
 > This policy does not apply to 1394/Firewire, PCMCIA, CardBus, or ExpressCard devices.
 
 Supported values:
@@ -105,14 +105,14 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
+-   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
 

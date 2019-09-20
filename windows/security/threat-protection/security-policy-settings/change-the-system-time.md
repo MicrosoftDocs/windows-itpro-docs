@@ -57,7 +57,7 @@ The following table lists the actual and effective default policy values. Defaul
 | DC Effective Default Settings | Administrators <br/>Server Operators <br/>Local Service| 
 | Member Server Effective Default Settings | Administrators <br/>Local Service|
 | Client Computer Effective Default Settings | Administrators <br/>Local Service| 
- 
+ 
 ## Policy management
 
 This section describes features, tools and guidance to help you manage this policy.

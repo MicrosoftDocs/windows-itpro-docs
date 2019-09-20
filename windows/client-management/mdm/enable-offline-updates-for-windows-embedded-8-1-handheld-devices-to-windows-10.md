@@ -4,11 +4,11 @@ description: Like any Windows devices, Windows 10 Mobile devices use Microsoft 
 ms.assetid: ED3DAF80-847C-462B-BDB1-486577906772
 ms.reviewer: 
 manager: dansimp
-ms.author: v-madhi
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: v-madhi
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -275,7 +275,7 @@ After the installation of updates is completed, the IT Admin can use the DURepor
 <a href="" id="example-script"></a>
 ## Example PowerShell script
 
-``` syntax
+```powershell
 param (
 # [Parameter (Mandatory=$true, HelpMessage="Input File")]
         [String]$inputFile,

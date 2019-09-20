@@ -22,7 +22,7 @@ Use the following procedure to publish an App-V 5.0 package. Once you publish a 
 **Note**  
 The ability to enable only administrators to publish or unpublish packages (described below) is supported starting in App-V 5.0 SP3.
 
- 
+ 
 
 **To publish an App-V 5.0 package**
 
@@ -42,7 +42,7 @@ The ability to enable only administrators to publish or unpublish packages (desc
 
     To alternatively use PowerShell to set this item, see [How to Manage App-V 5.0 Packages Running on a Stand-Alone Computer by Using PowerShell](how-to-manage-app-v-50-packages-running-on-a-stand-alone-computer-by-using-powershell.md#bkmk-admins-pub-pkgs).
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
@@ -51,9 +51,9 @@ The ability to enable only administrators to publish or unpublish packages (desc
 
 [How to Configure Access to Packages by Using the Management Console](how-to-configure-access-to-packages-by-using-the-management-console-50.md)
 
- 
+ 
 
- 
+ 
 
 
 

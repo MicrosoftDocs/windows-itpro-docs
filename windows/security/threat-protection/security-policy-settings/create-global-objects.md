@@ -59,7 +59,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain Controller Effective Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service| 
 | Member Server Effective Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service| 
 | Client Computer Effective Default Settings | Administrators<br/>Local Service<br/>Network Service<br/>Service| 
- 
+ 
 ## Policy management
 
 A restart of the device is not required for this policy setting to take effect.

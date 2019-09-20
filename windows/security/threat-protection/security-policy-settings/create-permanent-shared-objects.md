@@ -57,7 +57,7 @@ The following table lists the actual and effective default policy values for the
 | Domain Controller Effective Default Settings | **LocalSystem**| 
 | Member Server Effective Default Settings | **LocalSystem**| 
 | Client Computer Effective Default Settings | **LocalSystem**| 
- 
+ 
 ## Policy management
 
 This section describes different features and tools available to help you manage this policy.

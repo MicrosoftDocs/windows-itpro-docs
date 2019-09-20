@@ -74,7 +74,7 @@ Before signing up for Microsoft Store, make sure you're the global administrator
 
         Be sure to save the portal sign-in page and your user ID info. Click **You're ready to go**.
 
-        ![Image showing sign-in page and user ID for Microsoft Store for Business. ](images/wsfb-onboard-5.png)
+        ![Image showing sign-in page and user ID for Microsoft Store for Business.](images/wsfb-onboard-5.png)
 
     -   At this point, you'll have an Azure AD directory created with one user account. That user account is the global administrator. You can use that account to sign in to Store for Business.
 
