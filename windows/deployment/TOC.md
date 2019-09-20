@@ -24,12 +24,12 @@
 ## Deploy Windows 10
 ### [In this section](deploy.md)
 
-### [Versions and licensing]
+### Versions and licensing
 #### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 #### [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md)
 #### [Windows 10 volume license media](windows-10-media.md)
 #### [Windows 10 in S mode](s-mode.md)
-##### [Switch to Windows 10 Pro/Enterprise from S mode](windows-10-pro-in-s-mode.md)
+#### [Switching to Windows 10 Pro/Enterprise from S mode](windows-10-pro-in-s-mode.md)
 
 ### Windows 10 deployment test lab
 #### [Windows 10 deployment proof of concept guide](windows-10-poc.md)
@@ -90,8 +90,8 @@
 #### Compatibility fixes
 ##### [Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista](planning/compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md)
 
-#### [Deploy Windows 10 with the Microsoft Deployment Toolkit (MDT)](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
-#### [Deploy Windows 10 with System Center Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
+### [Deploy Windows 10 with the Microsoft Deployment Toolkit (MDT)](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
+### [Deploy Windows 10 with System Center Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
 
 ### [Windows 10 deployment tools](windows-10-deployment-tools.md)
 
