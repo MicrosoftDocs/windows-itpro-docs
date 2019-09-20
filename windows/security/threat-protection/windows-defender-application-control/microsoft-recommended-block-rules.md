@@ -88,7 +88,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
 - msxml6.dll
 - jscript9.dll
 
-Pick the correct version of each .dll for the Windows release you plan to support, and remove the other versions.
+Pick the correct version of each .dll for the Windows release you plan to support, and remove the other versions. Ensure that you also uncomment them in the signing scenarios section.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -888,9 +888,11 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <FileRuleRef RuleID="ID_DENY_WMIC"/>
   <FileRuleRef RuleID="ID_DENY_MWFC" /> 
   <FileRuleRef RuleID="ID_DENY_WFC" /> 
+  <!-- Uncomment the below if you have uncommented them in the above rule definition
   <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
   <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
   <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
+  -->
   <FileRuleRef RuleID="ID_DENY_MSBUILD_DLL" /> 
   <FileRuleRef RuleID="ID_DENY_DOTNET" /> 
   <FileRuleRef RuleID="ID_DENY_MS_BUILD" /> 
