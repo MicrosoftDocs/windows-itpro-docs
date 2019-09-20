@@ -19,7 +19,7 @@ ms.date: 04/19/2017
 
 # Interactive logon: Message text for users attempting to log on
 
-## Applies to
+**Applies to:**
 
 - Windows 10
 
