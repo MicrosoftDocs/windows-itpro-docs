@@ -9,7 +9,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -34,6 +35,7 @@ This topic describes how to convert Windows 7 or Windows 8.1 domain-joined compu
 - Assigned Microsoft Intune Licenses
 - Azure Active Directory Premium
 - Windows 10 version 1809 or later imported into Config Mgr as an Operating System Image
+  - See [Known issues](known-issues.md) if you are using Windows 10 1903 with Configuration Manager’s built-in **Windows Autopilot existing device** task sequence template.)
 
 ## Procedures
 
