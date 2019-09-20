@@ -29,14 +29,14 @@ Custom detection rules built from [Advanced hunting](overview-hunting.md) querie
 >To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.  
 
 ## Create a custom detection rule
-### 1. Prepare the query
+### 1. Prepare the query.
 
 In Microsoft Defender Security Center, go to **Advanced hunting** and select an existing query or create a new query. When using an new query, run the query to identify errors and understand possible results.
 
 >[!NOTE]
->To use a query for a custom detection rule, the query must return the `EventTime`, `MachineId`, and `ReportId` columns in the results. Queries that don’t `project` results will usually return these common columns.
+>To use a query for a custom detection rule, the query must return the `EventTime`, `MachineId`, and `ReportId` columns in the results. Queries that don’t use the `project` operator to customize results usually return these common columns.
 
-### 2. Create new rule and provide alert details 
+### 2. Create new rule and provide alert details.
 
 With the query in the query editor, select **Create detection rule** and specify the following alert details:
 
@@ -57,20 +57,20 @@ When saved, custom detections rules immediately run. They then run again at fixe
 - **Every 3 hours** — checks data from the past 6 hours
 - **Every hour** — checks data from the past 2 hours
 
-Similar detections on the same machine could be aggregated into fewer alerts, so running a rule less frequently can generate fewer alerts. Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
+Whenever a rule runs, similar detections on the same machine could be aggregated into fewer alerts, so running a rule less frequently can generate fewer alerts. Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
 
-### 3. Specify actions on files or machines
+### 3. Specify actions on files or machines.
 Your custom detection rule can automatically take actions on files or machines that are returned by the query.
 
 #### Actions on machines
-These actions are automatically applied to machines in the `MachineId` column in the query results:
+These actions are applied to machines in the `MachineId` column of the query results:
 - **Isolate machine** — applies full network isolation, preventing the machine from connecting to any application or service, except for the Microsoft Defender ATP service. [Learn more about machine isolation](respond-machine-alerts.md#isolate-machines-from-the-network)
 - **Collect investigation package** — collects machine information in a ZIP file. [Learn more about the investigation package](respond-machine-alerts.md#collect-investigation-package-from-machines)
 - **Run antivirus scan** — performs a full Windows Defender Antivirus scan on the machine
 - **Initiate investigation** — initiates an [automated investigation](automated-investigations.md) on the machine
 
 #### Actions on files
-Select one or more actions to automatically apply to files in the `SHA1` or the `InitiatingProcessSHA1` column in the query results:
+These actions are applied to files in the `SHA1` or the `InitiatingProcessSHA1` column of the query results:
 - **Allow/Block** — automatically adds the file to your [custom indicator list](manage-indicators.md) so that it is always allowed to run or blocked from running. You can set the scope of this action so that it is taken only on selected machine groups. This scope is independent of the scope of the rule.
 - **Quarantine file** — deletes the file from its current location and places a copy in quarantine
 
