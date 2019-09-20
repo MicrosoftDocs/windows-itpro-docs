@@ -28,7 +28,7 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Microsoft Defender ATP extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
 
@@ -112,7 +112,7 @@ Agent Resource    |    Ports
 ## Offboard client endpoints
 To offboard, you can uninstall the MMA agent from the endpoint or detach it from reporting to your Microsoft Defender ATP workspace. After offboarding the agent, the endpoint will no longer send sensor data to Microsoft Defender ATP. 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-downlevele-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink)
 
 
 
