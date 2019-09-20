@@ -716,6 +716,7 @@ This setting supports a range of values between 0 and 1.
 <!--/Policy-->
 
 <hr/>
+
 <!--Policy-->
 <a href="" id="textinput-configurejapaneseimeversion"></a>**TextInput/ConfigureJapaneseIMEVersion**
 
@@ -993,6 +994,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+
 <a href="" id="textinput-excludejapaneseimeexceptjis0208"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208**  
 
 <!--SupportedSKUs-->
