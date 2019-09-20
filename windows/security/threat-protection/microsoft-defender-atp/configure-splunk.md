@@ -40,19 +40,19 @@ You'll need to configure Splunk so that it can pull Microsoft Defender ATP detec
 - Make sure you have enabled the **SIEM integration** feature from the **Settings** menu. For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
 
 - Have the details file you saved from enabling the **SIEM integration** feature ready. You'll need to get the following values:
-  - OAuth 2 Token refresh URL
-  - OAuth 2 Client ID
-  - OAuth 2 Client secret
+- Tenant ID
+- Client ID
+- Client Secret
+- Resource URL
 
-- Have the refresh token that you generated from the SIEM integration feature ready.
 
 ## Configure Splunk
 
 1. Login in to Splunk.
 
-2. Click **Search & Reporting**, then **Settings** > **Data inputs**.
+2. Go to **Settings** > **Data inputs**.
 
-3. Click **REST** under **Local inputs**.
+3. Select **Windows Defender ATP alerts** under **Local inputs**.
 
    NOTE:
    This input will only appear after you install the [Windows Defender ATP Modular Inputs TA](https://splunkbase.splunk.com/app/4128/).
@@ -71,55 +71,30 @@ You'll need to configure Splunk so that it can pull Microsoft Defender ATP detec
    <th>Value</th>
    </tr>
    <tr>
-   <td>Endpoint URL</td>
+   <td>Name</td>
+   <td>Name for the Data Input</td>
+   </tr>
+    <td>Login URL</td>
+   <td>URL to authenticate the azure app (Default : https://login.microsoftonline.com)</td>
+   </tr>
+   <td>Endpoint</td>
    <td>Depending on the location of your datacenter, select any of the following URL: </br></br> <strong>For EU</strong>:  <code>https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts</code><br></br><strong>For US:</strong><code>https://wdatp-alertexporter-us.securitycenter.windows.com/api/alerts</code> <br><br> <strong>For UK:</strong><code>https://wdatp-alertexporter-uk.securitycenter.windows.com/api/alerts</code>
    </tr>
    <tr>
-   <td>HTTP Method</td>
-   <td>GET</td>
+   <td>Tenant ID</td>
+   <td>Azure Tenant ID</td>
    </tr>
-   <td>Authentication Type</td>
-   <td>oauth2</td>
+   <td>Resource</td>
+   <td>Value from the SIEM integration feature page</td>
    <tr>
-   <td>OAuth 2 Access token</td>
-   <td>Use the value that you generated when you enabled the SIEM integration feature. </br></br> NOTE: The access token expires after an hour. </td>
-   </tr>
-   <tr>
-   <td>OAuth 2 Refresh Token</td>
-   <td>Use the value that you generated when you enabled the <strong>SIEM integration</strong> feature.</td>
+   <td>Client ID</td>
+   <td>Value from the SIEM integration feature page</td>
    </tr>
    <tr>
-   <td>OAuth 2 Token Refresh URL</td>
-   <td>Use the value from the details file you saved when you enabled the <strong>SIEM integration</strong> feature.</td>
+   <td>Client Secret</td>
+   <td>Value from the SIEM integration feature page</td>
    </tr>
-   <tr>
-   <td>OAuth 2 Client ID</td>
-   <td>Use the value from the details file you saved when you enabled the <strong>SIEM integration</strong> feature.</td>
-   </tr>
-   <tr>
-   <td>OAuth 2 Client Secret</td>
-   <td>Use the value from the details file you saved when you enabled the <strong>SIEM integration</strong> feature.</td>
-   </tr>
-   <tr>
-   <td>Response type</td>
-   <td>Json</td>
-   </tr>
-   <tr>
-   <td>Response Handler</td>
-   <td>JSONArrayHandler</td>
-   </tr>
-   <tr>
-   <td>Polling Interval</td>
-   <td>Number of seconds that Splunk will ping the Microsoft Defender ATP machine. Accepted values are in seconds.</td>
-   </tr>
-   <tr>
-   <td>Set sourcetype</td>
-   <td>Manual</td>
-   </tr>
-   <tr>
-   <td>Source type</td>
-   <td>_json</td>
-   </tr>
+   
    </tr>
    </table>
 
@@ -133,20 +108,20 @@ Use the solution explorer to view detections in Splunk.
 2. Select **New**.
 
 3. Enter the following details:
-   - Destination app: Select Search & Reporting (search)
-   - Search name: Enter a name for the query
    - Search: Enter a query, for example:</br>
-     `source="rest://windows atp alerts"|spath|table*`
+     `sourcetype=”wdatp:alerts” |spath|table*`
+   - App: Add-on for Windows Defender (TA_Windows-defender)
 
      Other values are optional and can be left with the default values.
+
 4. Click **Save**. The query is saved in the list of searches.
 
 5. Find the query you saved in the list and click **Run**. The results are displayed based on your query.
 
 
 >[!TIP]
-> To mininimize Detection duplications, you can use the following query:
->```source="rest://windows atp alerts" | spath | dedup _raw | table *``` 
+> To minimize Detection duplications, you can use the following query:
+>```source="rest://wdatp:alerts" | spath | dedup _raw | table *``` 
 
 ## Related topics
 - [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
