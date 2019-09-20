@@ -40,10 +40,10 @@ You'll need to configure Splunk so that it can pull Microsoft Defender ATP detec
 - Make sure you have enabled the **SIEM integration** feature from the **Settings** menu. For more information, see [Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)
 
 - Have the details file you saved from enabling the **SIEM integration** feature ready. You'll need to get the following values:
-- Tenant ID
-- Client ID
-- Client Secret
-- Resource URL
+   - Tenant ID
+   - Client ID
+   - Client Secret
+   - Resource URL
 
 
 ## Configure Splunk
@@ -109,7 +109,7 @@ Use the solution explorer to view detections in Splunk.
 
 3. Enter the following details:
    - Search: Enter a query, for example:</br>
-     `sourcetype=”wdatp:alerts” |spath|table*`
+     `sourcetype="wdatp:alerts" |spath|table*`
    - App: Add-on for Windows Defender (TA_Windows-defender)
 
      Other values are optional and can be left with the default values.
