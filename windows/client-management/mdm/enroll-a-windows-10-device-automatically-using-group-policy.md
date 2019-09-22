@@ -166,7 +166,7 @@ Requirements:
 >   2. Install the package on the Primary Domain Controller (PDC).
 >   3. Navigate, depending on the version to the folder:
 >   **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 \<month\> \<year\> Update (\<feature release\>) \<policy version\>**
->   4. Copy policy definitions folder to **C:\Windows\SYSVOL\domain\Policies** (N.B. If this folder does not exist, then be aware that you will be switching to a [central policy store](https://support.microsoft.com/da-dk/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) for your entire domain).
+>   4. Copy policy definitions folder to **C:\Windows\SYSVOL\domain\Policies** (N.B. If this folder does not exist, then be aware that you will be switching to a [central policy store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) for your entire domain).
 >   5. Restart the Primary Domain Controller for the policy to be available.
 >   This procedure will work for any future version as well.
 
