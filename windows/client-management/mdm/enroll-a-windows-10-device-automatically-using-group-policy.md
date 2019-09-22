@@ -162,7 +162,7 @@ Requirements:
 >   1. Download:  
 >   1803 -->[Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)](https://www.microsoft.com/download/details.aspx?id=56880) or  
 >   1809 --> [Administrative Templates for Windows 10 October 2018 Update (1809)](https://www.microsoft.com/download/details.aspx?id=57576).
->   1903 --> [Administrative Templates for Windows 10 May 2019 Update (1903)](https://www.microsoft.com/en-us/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all) (recommended).
+>   1903 --> [Administrative Templates for Windows 10 May 2019 Update (1903)](https://www.microsoft.com/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all) (recommended).
 >   2. Install the package on the Primary Domain Controller (PDC).
 >   3. Navigate, depending on the version to the folder:
 >   **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 \<month\> \<year\> Update (\<feature release\>) \<policy version\>**
