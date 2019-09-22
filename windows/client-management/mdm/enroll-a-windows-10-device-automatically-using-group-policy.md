@@ -22,13 +22,13 @@ Requirements:
 - The enterprise has configured a mobile device management (MDM) service  
 - The enterprise AD must be [registered with Azure Active Directory (Azure AD)](azure-active-directory-integration-with-mdm.md)
 - The device should not already be enrolled in Intune using the classic agents (devices managed using agents will fail enrollment with `error 0x80180026`)
-- The minimum Windows Server version requirement is based on the Hybrid AAD join requirement. See [How to plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/en-us/azure/active-directory/devices/hybrid-azuread-join-plan) for more information.
+- The minimum Windows Server version requirement is based on the Hybrid AAD join requirement. See [How to plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) for more information.
 
 > [!TIP]
 > For additional information, see the following topics:
 > - [How to configure automatic registration of Windows domain-joined devices with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
-> - [How to plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/en-us/azure/active-directory/devices/hybrid-azuread-join-plan)
-> - [Azure Active Directory integration with MDM](https://docs.microsoft.com/en-us/windows/client-management/mdm/azure-active-directory-integration-with-mdm)
+> - [How to plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)
+> - [Azure Active Directory integration with MDM](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm)
 
 The auto-enrollment relies on the presence of an MDM service and the Azure Active Directory registration for the PC. Starting in Windows 10, version 1607, once the enterprise has registered its AD with Azure AD, a Windows PC that is domain joined is automatically AAD registered.
 
@@ -48,7 +48,7 @@ The following steps demonstrate required settings using the Intune service:
 
     ![Intune license verification](images/auto-enrollment-intune-license-verification.png)
 
-2. Verify that auto-enrollment is activated for those users who are going to enroll the devices into Intune. For additional details, see [Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal](https://docs.microsoft.com/en-us/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal). 
+2. Verify that auto-enrollment is activated for those users who are going to enroll the devices into Intune. For additional details, see [Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal](https://docs.microsoft.com/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal). 
 Also verify that the **MAM user scope** is set to **None**. Otherwise, it will have precedence over the MDM scope that will lead to issues. 
 
     ![Auto-enrollment activation verification](images/auto-enrollment-activation-verification.png)
@@ -116,13 +116,17 @@ Requirements:
 >In Windows 10, version 1903, the MDM.admx file was updated to include the possibility to select which credential is used to enroll the device. The **Device Credential** is a new option that will only have effect on clients that have the Windows 10 1903 feature update installed. 
 The default behaviour for older releases is to fallback to **User Credential**.
 
-A task is created and scheduled to run every 5 minutes for the duration of 1 day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
+When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of 1 day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
 
 To see the scheduled task, launch the [Task Scheduler app](#task-scheduler-app).
 
 If two-factor authentication is required, you will be prompted to complete the process. Here is an example screenshot.
 
 ![Two-factor authentication notification](images/autoenrollment-2-factor-auth.png)
+
+>[!Tip]
+> You can avoid this behaviour using Conditional Access Policies in Azure AD.
+Learn more by reading [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 6. To verify successful enrollment to MDM , click **Start > Settings > Accounts > Access work or school**, then select your domain account.
 
