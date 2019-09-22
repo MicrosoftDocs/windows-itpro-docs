@@ -76,7 +76,7 @@ Also verify that the **MAM user scope** is set to **None**. Otherwise, it will h
 
     ![Mobility setting MDM intune](images/auto-enrollment-microsoft-intune-setting.png)
 
-7. Verify that the *Enable automatic MDM enrollment using default Azure AD credentials* group policy (Local Group Policy Editor > Computer Configuration > Policies > Administrative Templates > Windows Components > MDM) is properly deployed to all devices which should be enrolled into Intune. 
+7. Verify that the *Enable Automatic MDM enrollment using default Azure AD credentials* group policy (Local Group Policy Editor > Computer Configuration > Policies > Administrative Templates > Windows Components > MDM) is properly deployed to all devices which should be enrolled into Intune. 
 You may contact your domain administrators to verify if the group policy has been deployed successfully.
 
 8. Verify that the device is not enrolled with the old Intune client used on the Intune Silverlight Portal (this is the Intune portal used before the Azure portal).
@@ -112,17 +112,17 @@ Requirements:
 
 5. Click **Enable**, then click **OK**.
 
->[!IMPORTANT]
+>[!NOTE]
 >In Windows 10, version 1903, the MDM.admx file was updated to include the possibility to select which credential is used to enroll the device. The **Device Credential** is a new option that will only have effect on clients that have the Windows 10 1903 feature update installed. 
->The default behaviour for older releases is to fallback to **User Credential**.
+The default behaviour for older releases is to fallback to **User Credential**.
 
-     A task is created and scheduled to run every 5 minutes for the duration of 1 day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
+A task is created and scheduled to run every 5 minutes for the duration of 1 day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
 
-     To see the scheduled task, launch the [Task Scheduler app](#task-scheduler-app).
+To see the scheduled task, launch the [Task Scheduler app](#task-scheduler-app).
 
-     If two-factor authentication is required, you will be prompted to complete the process. Here is an example screenshot.
+If two-factor authentication is required, you will be prompted to complete the process. Here is an example screenshot.
 
-     ![Two-factor authentication notification](images/autoenrollment-2-factor-auth.png)
+![Two-factor authentication notification](images/autoenrollment-2-factor-auth.png)
 
 6. To verify successful enrollment to MDM , click **Start > Settings > Accounts > Access work or school**, then select your domain account.
 
