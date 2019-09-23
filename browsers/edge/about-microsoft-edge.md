@@ -3,9 +3,10 @@ title: Microsoft Edge system and language requirements
 description: Overview information about Microsoft Edge, the default browser for Windows 10. This topic includes links to other Microsoft Edge topics.
 ms.assetid: 70377735-b2f9-4b0b-9658-4cf7c1d745bb
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: eravena
-author: eavena
+audience: itpro
+manager: dansimp
+ms.author: dansimp
+author: dansimp
 ms.prod: edge
 ms.mktglfcycl: general
 ms.topic: reference

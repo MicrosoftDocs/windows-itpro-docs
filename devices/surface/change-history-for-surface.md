@@ -15,6 +15,13 @@ ms.topic: article
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## September 2019
+
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+| [Surface Dock Firmware Update](surface-dock-firmware-update.md)| New document for Microsoft Surface Dock Firmware Update, newly redesigned to automatically update Surface Dock firmware while running in the background on your Surface device.|
+
+
 ## August 2019
 
 | **New or changed topic** | **Description** |
@@ -89,7 +96,6 @@ New or changed topic | Description
 
 |New or changed topic | Description |
 | --- | --- |
-|[Surface Dock Updater](surface-dock-updater.md) | Added version 2.12.136.0 information  |
 |[Microsoft Surface Data Eraser](microsoft-surface-data-eraser.md) | Added version 3.2.46.0 information  |
 
 ## January 2018
@@ -106,12 +112,6 @@ New or changed topic | Description
 |New or changed topic | Description |
 | --- | --- |
 |[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Book 2, Surface Laptop, Surface Pro, and Surface Pro with LTE Advanced information  |
-
-## November 2017
-
-|New or changed topic | Description |
-| --- | --- |
-|[Surface Dock Updater](surface-dock-updater.md) | Added version 2.7.136.0 information  |
 
 ## October 2017
 
@@ -131,7 +131,6 @@ New or changed topic | Description
 | --- | --- |
 |[Surface Data Eraser](microsoft-surface-data-eraser.md) | Update compatible devices, added version 3.2.36 information  |
 |[Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md) | Added version 2.0.8.0 information  |
-|[Surface Dock Updater](surface-dock-updater.md) | Added version 2.1.15.0 information  |
 
 
 ## April 2017

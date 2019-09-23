@@ -23,5 +23,5 @@ Find out how to download and manage the latest firmware and driver updates for y
 | --- | --- |
 | [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)| Explore the available options to manage firmware and driver updates for Surface devices.|
 | [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)| Find links to manually deploy firmware and drivers, outside of Windows Update. | 
-| [Surface Dock Updater](surface-dock-updater.md)| Get a detailed walkthrough of Microsoft Surface Dock Updater.|
+| [Surface Dock Firmware Update](surface-dock-firmware-update.md)| See how you can update Surface Dock firmware automatically.|
 |[Wake On LAN for Surface devices](wake-on-lan-for-surface-devices.md) | See how you can use Wake On LAN to remotely wake up devices to perform management or maintenance tasks, or to enable management solutions automatically. |

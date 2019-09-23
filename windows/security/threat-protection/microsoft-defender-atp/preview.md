@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 The Microsoft Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-abovefoldlink) 
 
 Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 
@@ -41,6 +41,10 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 
 ## Preview features
 The following features are included in the preview release:
+
+- [Connected Azure AD applications](connected-applications.md)<br> The Connected applications page provides information about the Azure AD applications connected to Microsoft Defender ATP in your organization. 
+
+- [API Explorer](api-explorer.md)<br> The API explorer makes it easy to construct and perform API queries, test and send requests for any available Microsoft Defender ATP API endpoint.
 
 - [Tamper Protection settings in Intune](../windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-with-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management portal (Intune).
 
@@ -70,4 +74,4 @@ Information protection is an integral part of Microsoft 365 Enterprise suite, pr
 - [Power BI reports using Microsoft Defender ATP data](powerbi-reports.md) <br>
 Microsoft Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  
