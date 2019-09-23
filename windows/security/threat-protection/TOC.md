@@ -303,6 +303,7 @@
 
 
 ### [Microsoft Defender Advanced Threat Protection for Mac](windows-defender-antivirus/microsoft-defender-atp-mac.md)
+#### [What's New in Microsoft Defender ATP for Mac] (windows-defender-antivirus/microsoft-defender-atp-mac-whatsnew.md)
 #### [Deploy Microsoft Defender Advanced Threat Protection for Mac]()
 ##### [Microsoft Intune-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-intune.md)
 ##### [JAMF-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-jamf.md)
@@ -455,8 +456,11 @@
 ##### [Threat protection reports](microsoft-defender-atp/threat-protection-reports.md)
 ##### [Machine health and compliance reports](microsoft-defender-atp/machine-reports.md)
 
-#### [Interoperability]()
+#### [Partners & APIs]()
 ##### [Partner applications](microsoft-defender-atp/partner-applications.md)
+##### [Connected applications](microsoft-defender-atp/connected-applications.md)
+##### [API explorer](microsoft-defender-atp/api-explorer.md)
+
 
 #### [Manage machine configuration]()
 ##### [Ensure your machines are configured properly](microsoft-defender-atp/configure-machines.md)
