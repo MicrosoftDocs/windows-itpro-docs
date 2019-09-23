@@ -131,9 +131,10 @@ FBX files can be opened directly from a website using Microsoft Edge on HoloLens
 1. Select the file to download it.
 1. When the download is complete, select the **Open** button in Microsoft Edge to open the file in 3D Viewer Beta.
 
-The downloaded file can be accessed and opened again later by using Downloads in Microsoft Edge. To save a 3D model and ensure continued access, download the file on your PC and save it to your OneDrive account. The file can then be opened from the OneDrive app on HoloLens. See [Open an FBX file from OneDrive]() for more information.
+The downloaded file can be accessed and opened again later by using Downloads in Microsoft Edge. To save a 3D model and ensure continued access, download the file on your PC and save it to your OneDrive account. The file can then be opened from the OneDrive app on HoloLens.
 
-Note: Some websites with downloadable FBX models provide them in compressed ZIP format. 3D Viewer Beta cannot open ZIP files directly. Instead, use your PC to extract the FBX file and save it to your OneDrive account. The file can then be opened from the OneDrive app on HoloLens.
+> [!NOTE]
+> Some websites with downloadable FBX models provide them in compressed ZIP format. 3D Viewer Beta cannot open ZIP files directly. Instead, use your PC to extract the FBX file and save it to your OneDrive account. The file can then be opened from the OneDrive app on HoloLens.
 
 ### Open an FBX file from OneDrive
 

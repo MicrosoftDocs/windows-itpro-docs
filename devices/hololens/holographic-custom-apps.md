@@ -20,7 +20,7 @@ appliesto:
 
 HoloLens supports many existing applications from the Microsoft Store, as well as new apps built specifically for HoloLens. This article focuses on custom holographic applications.  
 
-For more information about store apps, see [Manage apps with the store](holographic-store-apps.md) .
+For more information about store apps, see [Manage apps with the store](holographic-store-apps.md).
 
 ## Install custom apps
 
@@ -36,14 +36,12 @@ You can install your own applications on HoloLens either by using the Device Por
 
 1. Select **Go**.
 
-   [!div class="mx-imgBorder"]
-   ![Install app form in Windows Device Portal on Microsoft HoloLens](images/deviceportal-appmanager.jpg)  
-   *Using Windows Device Portal to install an app on HoloLens*
+   ![Install app form in Windows Device Portal on Microsoft HoloLens](images/deviceportal-appmanager.jpg)
 
 ### Deploying from Microsoft Visual Studio 2015
 
 1. Open your app's Visual Studio solution (.sln file).
-1. Open the project's **Properties** .
+1. Open the project's **Properties**.
 1. Select the following build configuration: **Master/x86/Remote Machine**.
 1. When you select **Remote Machine**:
 

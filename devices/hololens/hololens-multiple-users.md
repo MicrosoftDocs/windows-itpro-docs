@@ -25,7 +25,7 @@ When they use their own Azure Active Directory (Azure AD) accounts, multiple use
 
 To make sure that multiple people can use their own accounts on your HoloLens, follow these steps to configure it:
 
-1. Make sure tht the device is running Windows 10, version 1803 or later.
+1. Make sure the the device is running Windows 10, version 1803 or later.
    > [!IMPORTANT]
    > If you are using a HoloLens (1st gen) device, [upgrade the device to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 1. When you set up the device, select **My work or school owns it** and sign in by using an Azure AD account.
