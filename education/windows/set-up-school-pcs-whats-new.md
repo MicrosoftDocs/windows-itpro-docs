@@ -9,13 +9,19 @@ ms.pagetype: edu
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 08/15/2019
+ms.date: 09/23/2019
 ms.reviewer: 
 manager: dansimp
 ---  
 
 # What's new in Set up School PCs
 Learn what’s new with the Set up School PCs app each week. Find out about new app features and functionality, and see updated screenshots. You'll also find information about past releases.   
+
+
+## Week of September 23, 2019  
+
+### Easier way to deploy Office 365 to your classroom devices 
+ Microsoft Office now appears as an option on the Set up School PCs > Apps screen. Select the app to add it to your provisioning package. Devices will install Office 365 ProPlus, which includes the cloud-connected and most current versions of apps such as Word, PowerPoint, Excel, and Teams.   
 
 
 ## Week of June 24, 2019  
