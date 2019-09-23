@@ -128,13 +128,6 @@ For the specified boot order to take effect, you must set the **Enable Alternate
 
 You can also turn on and off IPv6 support for PXE with the **Enable IPv6 for PXE Network Boot** option, for example when performing a Windows deployment using PXE where the PXE server is configured for IPv4 only.  
 
-## About 
-
-The **About** page displays regulatory information, such as compliance with FCC rules, as shown in Figure 7. 
-
-![Regulatory information displayed on the About page](images/manage-surface-uefi-fig7.png "Regulatory information displayed on the About page")
-
-*Figure 7. Regulatory information displayed on the About page*
 
 ## Exit 
 
