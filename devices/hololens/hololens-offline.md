@@ -28,7 +28,7 @@ HoloLens need a network connection to go through initial device set up.  If your
 | Purpose | URL |
 |------|------|
 | IDPS | https://sdx.microsoft.com/frx/idps |
-| [NCSI](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-ncsi) |  http://www.msftconnecttest.com/connecttest.txt  |
+| [NCSI](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-ncsi) |  http://www.msftconnecttest.com/connecttest.txt  |
 | AADv9 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/9 |
 | AADv10 | https://login.microsoftonline.com/WebApp/CloudDomainJoin/10 |
 | AAD Pin | https://account.live.com/aadngc?uiflavor=win10&showSuccess=1 |

@@ -23,7 +23,7 @@ You can use your voice to do almost anything on HoloLens, such as taking a quick
 This article teachs you how to control HoloLens and your holographic world with your voice and with Cortana.
 
 > [!NOTE]
-> Speech is only supported in [some languages](https://support.microsoft.com/en-us/help/4039262#Languages).  The speech language is based on the Windows display language, not the keyboard language.  
+> Speech is only supported in [some languages](https://support.microsoft.com/help/4039262#Languages).  The speech language is based on the Windows display language, not the keyboard language.  
 >  
 > You can verify the Windows display language by selecting **Settings** > **Time and Language** > **Language**.
 

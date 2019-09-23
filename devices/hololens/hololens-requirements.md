@@ -13,7 +13,7 @@ ms.date: 07/15/2019
 
 # Deploy HoloLens in a commercial environment
 
-TODO - [Commercial features](https://docs.microsoft.com/en-us/windows/mixed-reality/commercial-features)
+TODO - [Commercial features](https://docs.microsoft.com/windows/mixed-reality/commercial-features)
 
 You can deploy and configure HoloLens at scale in a commercial setting.  
 
@@ -106,14 +106,14 @@ Intune includes a feature called Update rings for Windows 10 devices, including 
 
 For example, you can create a maintenance window to install updates, or choose to restart after updates are installed.  You can also choose to pause updates indefinitely until you're ready to update.
 
-Read more about [configuring update rings with Intune](https://docs.microsoft.com/en-us/intune/windows-update-for-business-configure).
+Read more about [configuring update rings with Intune](https://docs.microsoft.com/intune/windows-update-for-business-configure).
 
 ## Application management
 
 Manage HoloLens applications through:
 
 1. Microsoft Store  
-  The Microsoft Store is the best way to distribute and consume applications on HoloLens.  There is a great set of core HoloLens applications already available in the store or you can [publish your own](https://docs.microsoft.com/en-us/windows/uwp/publish/).  
+  The Microsoft Store is the best way to distribute and consume applications on HoloLens.  There is a great set of core HoloLens applications already available in the store or you can [publish your own](https://docs.microsoft.com/windows/uwp/publish/).  
   All applications in the store are available publicly to everyone, but if it isn't acceptable, checkout the Microsoft Store for Business.  
 
 1. [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/)  
@@ -131,7 +131,7 @@ Read more about [installing apps on HoloLens](https://docs.microsoft.com/hololen
 
 Get support through the Microsoft support site.
 
-[File a support request](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f).
+[File a support request](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f).
 
 ## Technical Reference
 
