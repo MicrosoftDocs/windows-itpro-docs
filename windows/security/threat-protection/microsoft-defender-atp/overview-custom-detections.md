@@ -2,7 +2,7 @@
 title: Overview of custom detections in Microsoft Defender ATP
 ms.reviewer: 
 description: Understand how you can use Advanced hunting to create custom detections and generate alerts
-keywords: custom detections, alerts, detection rules, advanced hunting, hunt, query, response actions, intervals, mdatp, microsoft defender atp
+keywords: custom detections, alerts, detection rules, advanced hunting, hunt, query, response actions, interval, mdatp, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -25,11 +25,10 @@ ms.topic: conceptual
 
 With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured machines. This is made possible by customizable detection rules that automatically trigger alerts as well as response actions.
 
-Custom detections work with [Advanced hunting](overview-hunting.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network. The queries run regularly based on your preferred intervals, generating alerts and taking response actions whenever there are matches.
+Custom detections work with [Advanced hunting](overview-hunting.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network. The queries run every 24 hours, generating alerts and taking response actions whenever there are matches.
 
 Custom detections provide:
 - Alerts from rule-based detections built from Advanced hunting queries
-- Configurable query intervals from 1 hour to 24 hours
 - Automatic response actions that apply to files and machines
 
 >[!NOTE]
