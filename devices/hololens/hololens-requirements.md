@@ -13,8 +13,6 @@ ms.date: 07/15/2019
 
 # Deploy HoloLens in a commercial environment
 
-TODO - [Commercial features](https://docs.microsoft.com/windows/mixed-reality/commercial-features)
-
 You can deploy and configure HoloLens at scale in a commercial setting.  
 
 This article includes:
@@ -45,8 +43,8 @@ The HoloLens out of box experience is great for setting up one or two devices or
 
 This section:
 
-1. Introduces Windows provisioning using provisioning packages
-1. Walks through applying a provisioning package during first setup
+- Introduces Windows provisioning using provisioning packages
+- Walks through applying a provisioning package during first setup
 
 ### Create and apply a provisioning package
 
@@ -75,10 +73,10 @@ The last step in setting up HoloLens for management at scale is to enroll device
 1. Bulk enrollment with a security token in a provisioning package.  
   Pros: this is the most automated approach  
   Cons: takes initial server-side setup  
-1. Auto-enroll on user sign in
+1. Auto-enroll on user sign in.  
   Pros: easiest approach  
-  Cons: users will need to complete set up after the provisioning package has been applied  
-1. _not recommended_ - Manually enroll post-setup  
+  Cons: users will need to complete set up after the provisioning package has been applied
+1. _not recommended_ - Manually enroll post-setup.  
   Pros: possible to enroll after set up  
   Cons: most manual approach and devices aren't centrally manageable until they're manually enrolled.
 

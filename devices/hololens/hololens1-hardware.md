@@ -48,7 +48,7 @@ The HoloLens box contains the following items:
 >[!TIP]
 >The [clicker](hololens1-clicker.md) ships with HoloLens (1st Gen), in a separate box.
 
-## Device Specifications
+## Device specifications
 
 ### Display
 
@@ -73,7 +73,7 @@ The HoloLens box contains the following items:
 - 4 microphones
 - 1 ambient light sensor
 
-### Input / Output / Connectivity
+### Input, output, and connectivity
 
 - Built-in speakers
 - Audio 3.5mm jack
@@ -140,7 +140,7 @@ Using the following to understand the environment:
 
 ### Safety
 
-HoloLens has been tested and found to conform to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166
+HoloLens has been tested and found to conform to the basic impact protection requirements of ANSI Z87.1, CSA Z94.3 and EN 166.
 
 ## Care and cleaning
 

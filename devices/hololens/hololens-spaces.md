@@ -72,7 +72,7 @@ It can take between 15 and 20 minutes for the HoloLens to fully map and adjust i
 
 ## Possible errors in the spatial map
 
-Errors in spatial mapping data fall into one of three categories:
+Errors in spatial mapping data fall into a few categories:
 
 - *Holes*: Real-world surfaces are missing from the spatial mapping data.
 - *Hallucinations*: Surfaces exist in the spatial mapping data that do not exist in the real world.

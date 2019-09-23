@@ -17,7 +17,7 @@ appliesto:
 - HoloLens 2
 ---
 
-# Find, Install, and Uninstall Applications from the Microsoft Store
+# Find, install, and uninstall applications from the Microsoft Store
 
 The Microsoft Store is your go-to source for apps and games that work with HoloLens. When you go to the Store on your HoloLens, any apps you see there will run on it.
 

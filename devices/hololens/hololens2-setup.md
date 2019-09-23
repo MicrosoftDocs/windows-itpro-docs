@@ -22,10 +22,10 @@ The procedures below will help you set up a HoloLens 2 for the first time.
 
 Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet.
 
-    -When the device is charging, the battery indicator lights up in a wave pattern.
-    -When your HoloLens is on, the battery indicator displays the battery level in increments. 
-    -When only one of the five lights is on, the battery level is below 20 percent. 
-    -If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
+    - When the device is charging, the battery indicator lights up in a wave pattern.
+    - When your HoloLens is on, the battery indicator displays the battery level in increments. 
+    - When only one of the five lights is on, the battery level is below 20 percent. 
+    - If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
 
 > [!TIP]
 > To get an estimate of your current battery level, say "Hey Cortana, how much battery do I have left?"
@@ -61,7 +61,7 @@ To turn on your HoloLens 2, press the Power button.  The LED lights below the Po
 |To wake from sleep |**Single click**  ![Press power button - no lights lit](images/hololens-2-button-wake.png) |
 |To turn off |**Press and for hold 5s**  ![Press and hold power button - all lights lit](images/hololens-2-button-turn-off.png) |
 |To force the Hololens to restart if it is unresponsive |**Press and hold for 10s**  ![Press and hold power button - all lights lit](images/hololens-2-button-turn-off.png) |
-
+</br>
 ## HoloLens indicator lights
 
 Not sure what the indicator lights on your HoloLens mean? Here's some help!
@@ -87,7 +87,7 @@ Not sure what the indicator lights on your HoloLens mean? Here's some help!
 |One solid light, one light fading in and out |Between 40% and 21% |
 |One light fading in and out |Between 20% and 5% or lower (critical battery) |
 
-## Safety and Comfort
+## Safety and comfort
 
 ### Use HoloLens in safe surroundings
 

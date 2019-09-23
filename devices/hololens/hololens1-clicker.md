@@ -27,12 +27,6 @@ The HoloLens (1st gen) clicker has a finger loop to make it easier to hold, and 
 
 ![The HoloLens Clicker](images/use-hololens-clicker-1.png)
 
-It can do three things:
-
-1. Pair with HoloLens (1st gen) using bluetooth
-1. Charge
-1.when paired) Click.
-
 ### Clicker indicator lights
 
 Here's what the lights on the clicker mean.

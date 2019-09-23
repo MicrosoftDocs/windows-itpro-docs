@@ -170,7 +170,7 @@ You can use your voice to do most of the same things you do with hands on HoloLe
 
  [See more voice commands and ways to use speech with HoloLens](hololens-cortana.md)
 
-## Next Steps
+## Next steps
 
 Congratulations! You're ready to use HoloLens 2!
 

@@ -88,7 +88,7 @@ Not sure what the indicator lights on your HoloLens mean? Here's some help.
 |All light up, then one blinks briefly, then all turn off. |Battery is critically low. HoloLens needs to charge. |
 |All scroll, then one blinks, then all scroll. |Battery is critically low. HoloLens is charging. |
 
-## Safety and Comfort
+## Safety and comfort
 
 ### Use in safe surroundings
 

@@ -48,8 +48,7 @@ To open the **Start** menu:
 
 1. Hold your hand in front of you so it's in the gesture frame.
 1. Bloom: bring all of your fingers together then open your hand.
-
-![Animation that shows the bloom gesture](./images/hololens-bloom.gif)
+  ![Animation that shows the bloom gesture](./images/hololens-bloom.gif)
 
 ### Select holograms with gaze and air tap
 
@@ -58,8 +57,7 @@ To select an app or other hologram, air tap it while looking directly at the hol
 1. Gaze at the hologram you want to select.
 1. Point your index finger straight up toward the ceiling.
 1. Air tap: lower your finger, then quickly raise it.
-
-    ![Air-tap gesture animation](./images/hololens-air-tap.gif)
+   ![Air-tap gesture animation](./images/hololens-air-tap.gif)
 
 ### Select a hologram by using your voice
 
@@ -120,7 +118,7 @@ Gaze at the content of the app window. Tap and hold and then move your hand slig
 
 The [HoloLens (1st Gen) clicker](hololens1-clicker.md) gives you another way to interact with holograms. [Pair it](hololens-connect-devices.md) with your HoloLens and then use it along with your gaze to select, scroll, and more.
 
-## Next Steps
+## Next steps
 
 Congratulations! you're ready to use HoloLens (1st gen).
 

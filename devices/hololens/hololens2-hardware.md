@@ -138,5 +138,7 @@ The brow pad is magnetically attached to the device. To detach it, pull gently a
 
 ![Remove or replace the brow pad](images/hololens2-remove-browpad.png)
 
+## Next step
+
 > [!div class="nextstepaction"]
 > [Set up and start your HoloLens 2](hololens2-setup.md)
