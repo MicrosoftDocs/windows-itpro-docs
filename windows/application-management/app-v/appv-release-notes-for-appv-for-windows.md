@@ -145,6 +145,8 @@ App-V doesn't support Visual Studio 2012.
 
 **Workaround**: Use a newer version of Microsoft Visual Studio.
 
+Today, we do not support app virtualization with Visual Studio, whether using Microsoft’s App-V or third party solutions such as VMWare’s ThinApp. While it is possible that customers might find that Visual Studio works well enough for their purposes when running within one of these environments, at this time we are unable to address any bugs or issues found when running in a virtualized environment.
+
 ## Application filename restrictions for App-V Sequencer
 The App-V Sequencer cannot sequence applications with filenames matching "CO_&lt;x&gt;" where x is any numeral. Error 0x8007139F will be generated.
 
