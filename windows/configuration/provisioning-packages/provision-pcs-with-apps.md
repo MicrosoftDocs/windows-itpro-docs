@@ -41,6 +41,9 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 ### MSI installer
 
+> [!NOTE]
+> You can find more information about command-line options for Msiexec.exe [here](https://docs.microsoft.com/en-us/windows/win32/msi/command-line-options).
+
 - **Command line arguments**: Optionally, append additional command arguments. The silent flag is appended for you. Example: PROPERTY=VALUE 
 
 - **Continue installations after failure**: Optionally, specify if you want to continue installing additional apps if this app fails to install 
