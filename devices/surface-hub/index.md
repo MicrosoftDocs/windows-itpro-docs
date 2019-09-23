@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 description: "Get started with Microsoft Surface Hub."
-localization_priority: High
+ms.localizationpriority: High
 ---
 # Get started with Surface Hub
 
