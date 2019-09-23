@@ -888,7 +888,7 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <FileRuleRef RuleID="ID_DENY_WMIC"/>
   <FileRuleRef RuleID="ID_DENY_MWFC" /> 
   <FileRuleRef RuleID="ID_DENY_WFC" /> 
-  <!-- Uncomment the below if you have uncommented them in the above rule definition
+  <!-- Uncomment the relevant line(s) below if you have uncommented them in the rule definitions above.
   <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
   <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
   <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
