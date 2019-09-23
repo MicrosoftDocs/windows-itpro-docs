@@ -25,6 +25,10 @@ ms.topic: article
 
 <table>
 <th>Issue<th>More information
+<tr><td>Windows Autopilot for existing devices does not work for Windows 10, version 1903.
+
+- You see screens that you've disabled in your Windows Autopilot profile, such as the Windows 10 License Agreement screen. This happens because Windows 10, version 1903 deletes the AutopilotConfigurationFile.json file.
+<td>To fix this issue, edit the Configuration Manager task sequence to disable the <b>Prepare Windows for Capture</b> step and add a new <b>Run command line</b> step that runs <b>c:\windows\system32\sysprep\sysprep.exe /oobe /reboot</b>.  For more information, see Michael Niehaus' blog entry: <a href="https://oofhours.com/2019/09/19/a-challenge-with-windows-autopilot-for-existing-devices-and-windows-10-1903/">A challenge with Windows Autopilot for existing devices and Windows 10 1903</a>.
 <tr><td>The following known issue will be resolved by installing the KB4517211 update, due to be released in late September 2019:
 
 - TPM attestation fails on Windows 10 1903 due to missing AKI extension in EK certificate.  (An additional validation added in Windows 10 1903 to check that the TPM EK certs had the proper attributes according to the TCG specifications uncovered that a number of them don’t, so that validation will be removed).
