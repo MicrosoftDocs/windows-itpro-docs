@@ -198,6 +198,10 @@ To collect Event Viewer logs:
     The auto-enrollment process is triggered by a task (Microsoft > Windows > EnterpriseMgmt) within the task-scheduler. This task appears if the *Enable automatic MDM enrollment using default Azure AD credentials* group policy (Computer Configuration > Policies > Administrative Templates > Windows Components > MDM) is successfully deployed to the target machine as shown in the following screenshot:
     ![Task scheduler](images/auto-enrollment-task-scheduler.png)
 
+
+    > [!Note]
+    > This task isn't visible to standard users - run Scheduled Tasks with administrative credentials to find the task.
+
     This task runs every 5 minutes for the duration of 1 day. To confirm if the task succeeded, check the task scheduler event logs:
     Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational.
     Look for an entry where the task scheduler created by enrollment client for automatically enrolling in MDM from AAD is triggered by event ID 107.
