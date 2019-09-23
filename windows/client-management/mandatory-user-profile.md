@@ -38,7 +38,7 @@ The name of the folder in which you store the mandatory profile must use the cor
 | Client operating system version | Server operating system version | Profile extension |
 | --- | --- | --- |
 | Windows XP | Windows Server 2003 </br>Windows Server 2003 R2 | none |
-| Windows Vista</br>Windows 7 | Windows Server 2008</br>Windows Server 2008 R2 | v2 |
+| Windows Vista</br>Windows 7 | Windows Server 2008 </br>Windows Server 2008 R2 | v2 |
 | Windows 8 | Windows Server 2012 | v3 |
 | Windows 8.1 | Windows Server 2012 R2 | v4 |
 | Windows 10, versions 1507 and 1511 | N/A | v5 |
