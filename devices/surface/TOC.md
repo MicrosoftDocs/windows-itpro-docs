@@ -40,7 +40,6 @@
 ### [Surface firmware and driver updates](update.md)
 ### [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)
 
-
 ## Secure
 ### [Manage Surface UEFI settings](manage-surface-uefi-settings.md)
 ### [Advanced UEFI security features for Surface Pro 3](advanced-uefi-security-features-for-surface-pro-3.md)
