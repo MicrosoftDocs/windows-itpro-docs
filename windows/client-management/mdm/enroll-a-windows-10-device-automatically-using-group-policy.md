@@ -116,7 +116,7 @@ Requirements:
 >In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have the Windows 10, version 1903 feature update installed. 
 The default behavior for older releases is to revert to **User Credential**.
 
-When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of 1 day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
+When a group policy refresh occurs on the client, a task is created and scheduled to run every 5 minutes for the duration of one day. The task is called " Schedule created by enrollment client for automatically enrolling in MDM from AAD." 
 
 To see the scheduled task, launch the [Task Scheduler app](#task-scheduler-app).
 
