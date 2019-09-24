@@ -57,7 +57,7 @@ To verify the presence of this issue, follow these steps:
 
    > D:(A;;CCDCLCSWRPWPDTLORCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLORCWDWO;;;BA)(A;;CCLCSWRPLORC;;;BU)(A;;CCLCSWRPLORC;;;AU)S:(AU;FA;CCDCLCSWRPWPDTLOSDRCWDWO;;;WD)
 
-1. Copy this output, and then use it as part of the [**ConvertFrom-SddlString**](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/convertfrom-sddlstring?view=powershell-6) command in the PowerShell window, as follows:
+1. Copy this output, and then use it as part of the [**ConvertFrom-SddlString**](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/convertfrom-sddlstring?view=powershell-6) command in the PowerShell window, as follows:
 
    ![](./images/ts-bitlocker-usb-sddl.png)
 
@@ -84,7 +84,7 @@ The issue should now be resolved.
 
 ## <a id="scenario-2"></a>In Windows 10, BitLocker takes more time to encrypt a drive than in Windows 7
 
-Reference: <https://internal.support.services.microsoft.com/en-us/help/3217793>
+Reference: <https://internal.support.services.microsoft.com/help/3217793>
 
 ### Symptoms
 
@@ -123,11 +123,11 @@ After Windows 7 was released, several other areas of BitLocker were improved:
 
 - **Integration with Azure Active Directory**. BitLocker can store keys in Azure AD, which makes them easier to recover.
 
-- **[Direct memory access (DMA) port protection](https://docs.microsoft.com/en-us/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**. By using MDM policies to manage BitLocker, you can block a device's DMA ports and secure the device during its startup.
+- **[Direct memory access (DMA) port protection](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**. By using MDM policies to manage BitLocker, you can block a device's DMA ports and secure the device during its startup.
 
-- **[BitLocker Network Unlock](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock)**. If your BitLocker-enabled desktop or server computer is connected to a wired corporate network in a domain environment, you can automatically unlock its operating system volume during a system restart.
+- **[BitLocker Network Unlock](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock)**. If your BitLocker-enabled desktop or server computer is connected to a wired corporate network in a domain environment, you can automatically unlock its operating system volume during a system restart.
 
-- **Support for [Encrypted Hard Drives](https://docs.microsoft.com/en-us/windows/security/information-protection/encrypted-hard-drive)**. Encrypted Hard Drives are a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. By offloading the cryptographic operations to hardware, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption.
+- **Support for [Encrypted Hard Drives](https://docs.microsoft.com/windows/security/information-protection/encrypted-hard-drive)**. Encrypted Hard Drives are a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. By offloading the cryptographic operations to hardware, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption.
 
 - **Support for classes of HDD/SSD hybrid disks**. BitLocker can encrypt a disk that uses a small SSD as a non-volatile cache in front of the HDD, such as Intel Rapid Storage Technology.
 

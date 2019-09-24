@@ -16,14 +16,14 @@ ms.date: 9/19/2019
 
 # Decode Measured Boot logs to track PCR changes
 
-From [https://internal.support.services.microsoft.com/en-us/help/4345799](https://internal.support.services.microsoft.com/en-us/help/4345799)
+From [https://internal.support.services.microsoft.com/help/4345799](https://internal.support.services.microsoft.com/help/4345799)
 
-[TPM fundamentals: Measured Boot with support for attestation](https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)
-[Understanding PCR banks on TPM 2.0 devices](https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices)
+[TPM fundamentals: Measured Boot with support for attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)
+[Understanding PCR banks on TPM 2.0 devices](https://docs.microsoft.com/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices)
 
 Measured Boot logs are located under C:\\Windows\\Logs\\MeasuredBoot\\ directory.
 
-These logs can be used to figure out which Platform Configuration Register (PCR) got changed resulting into Bitlocker recovery and also figure out what all events were measured into a particular PCR helping us to explain why that PCR changed in the first place.
+These logs can be used to figure out which Platform Configuration Register (PCR) got changed resulting into BitLocker recovery and also figure out what all events were measured into a particular PCR helping us to explain why that PCR changed in the first place.
 
 ## Install TBSLogGenerator
 
@@ -33,7 +33,7 @@ Install Hardware Lab Kit&mdash;Controller + Studio on a Windows Server 2016 mach
 
 1. Download the Windows Hardware Lab Kit from one of the following locations:
 
-   - [Windows Hardware Lab Kit](https://docs.microsoft.com/en-us/windows-hardware/test/hlk/)
+   - [Windows Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/)
    - Direct Download link for Windows Server 2016: [Windows HLK, version 1607](https://go.microsoft.com/fwlink/p/?LinkID=404112)
 
 1. Accept the default installation path.

@@ -36,8 +36,8 @@ Windows 10 prompts you for a BitLocker recovery key. However, you have not confi
 
 The BitLocker and Active Directory Domain Services (AD DS) FAQ addresses two situations that may produce this symptom, and provides information about how to resolve the issue:
 
-- [What if BitLocker is enabled on a computer before the computer has joined the domain?](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-and-adds-faq#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain)
-- [What happens if the backup initially fails? Will BitLocker retry the backup?](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-and-adds-faq#what-happens-if-the-backup-initially-fails-will-bitlocker-retry-the-backup)
+- [What if BitLocker is enabled on a computer before the computer has joined the domain?](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-and-adds-faq#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain)
+- [What happens if the backup initially fails? Will BitLocker retry the backup?](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-and-adds-faq#what-happens-if-the-backup-initially-fails-will-bitlocker-retry-the-backup)
 
 [Back to list](#list)
 
@@ -51,7 +51,7 @@ The BitLocker Windows Management Instrumentation (WMI) interface does allow admi
 
 ## <a id="scenario-3"></a>"Manage-bde -forcerecovery" command is unsupported for testing recovery mode on tablet devices
 
-Reference: <https://internal.support.services.microsoft.com/en-us/help/3119451/manage-bde-forcerecovery-command-is-unsupported-for-testing-recovery-m>
+Reference: <https://internal.support.services.microsoft.com/help/3119451/manage-bde-forcerecovery-command-is-unsupported-for-testing-recovery-m>
 
 ### Symptoms
 
@@ -94,7 +94,7 @@ To resolve this issue, follow these steps:
 
 ## <a id="scenario-4"></a>Prompted for BitLocker recovery key after installing updates to Surface UEFI or TPM firmware on Surface device
 
-Reference: <https://internal.support.services.microsoft.com/en-us/help/4057282/bitlocker-recovery-key-prompt-after-surface-uefi-tpm-firmware-update>
+Reference: <https://internal.support.services.microsoft.com/help/4057282/bitlocker-recovery-key-prompt-after-surface-uefi-tpm-firmware-update>
 
 ### Symptoms
 
@@ -222,7 +222,7 @@ To reset your device by using a Surface recovery image: Follow the instructions
 
 ## <a id="scenario-5"></a>Some devices running Windows 10 with Hyper-V enabled may start into BitLocker recovery with error 0xC0210000
 
-Reference: <https://internal.support.services.microsoft.com/en-us/help/4505821/some-devices-running-windows-10-with-hyper-v-enabled-may-start-into-bi>
+Reference: <https://internal.support.services.microsoft.com/help/4505821/some-devices-running-windows-10-with-hyper-v-enabled-may-start-into-bi>
 
 ### Symptoms
 
@@ -264,8 +264,8 @@ To prevent this issue, execute the following command to temporarily suspend BitL
 {check update KBs--WA no longer needed with updates?}
 This issue is now resolved for all platforms in the following updates:  
 
-- [KB4507450](https://internal.support.services.microsoft.com/en-us/help/4507450) LCU for Windows 10, version 1703.
-- [KB4507460](https://internal.support.services.microsoft.com/en-us/help/4507460) LCU for Windows 10, version 1607 and Windows Server 2016.
+- [KB4507450](https://internal.support.services.microsoft.com/help/4507450) LCU for Windows 10, version 1703.
+- [KB4507460](https://internal.support.services.microsoft.com/help/4507460) LCU for Windows 10, version 1607 and Windows Server 2016.
 
 [Back to list](#list)
 

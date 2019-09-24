@@ -27,7 +27,7 @@ Open Event Viewer and review the following logs under applications and services 
 - **BitLocker-DrivePreparationTool**. Review the Admin log and the Operational log, and any other logs that are generated in this folder.
 
 > [!NOTE]
-> If you intend to contact Microsoft Support, we recommend that you export the logs listed in this section. Use the [wevtutil.exe](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil) command-line tool to export logs.
+> If you intend to contact Microsoft Support, we recommend that you export the logs listed in this section. Use the [wevtutil.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/wevtutil) command-line tool to export logs.
 
 ### Check the status of the components that BitLocker uses
 
@@ -35,10 +35,10 @@ Open an elevated Windows PowerShell window, and run each of the following comman
 
 |Command |Notes |
 | - | - |
-|[**get-tpm \> C:\\TPM.txt**](https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule/get-tpm?view=win10-ps) |Exports information about the local computer's Trusted Platform Module (TPM). This cmdlet shows different values depending on whether the TPM chip is version 1.2 or 2.0. This cmdlet is not supported in Windows 7. |
-|[**manage-bde –status \>&nbsp;C:\\BDEStatus.txt**](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/manage-bde-status) |Exports information about the general encryption status of all drives on the computer. |
-|[**manage-bde c: <br />-protectors -get \>&nbsp;C:\\Protectors**](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/manage-bde-protectors) |Exports information about the protection methods that are used for the BitLocker encryption key.  |
-|[**reagentc /info \> C:\\reagent.txt**](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/reagentc-command-line-options) |Exports information about the current status of the Windows Recovery Environment (Windows RE) and any available recovery image on an online or offline image |
+|[**get-tpm \> C:\\TPM.txt**](https://docs.microsoft.com/powershell/module/trustedplatformmodule/get-tpm?view=win10-ps) |Exports information about the local computer's Trusted Platform Module (TPM). This cmdlet shows different values depending on whether the TPM chip is version 1.2 or 2.0. This cmdlet is not supported in Windows 7. |
+|[**manage-bde –status \>&nbsp;C:\\BDEStatus.txt**](https://docs.microsoft.com/windows-server/administration/windows-commands/manage-bde-status) |Exports information about the general encryption status of all drives on the computer. |
+|[**manage-bde c: <br />-protectors -get \>&nbsp;C:\\Protectors**](https://docs.microsoft.com/windows-server/administration/windows-commands/manage-bde-protectors) |Exports information about the protection methods that are used for the BitLocker encryption key.  |
+|[**reagentc /info \> C:\\reagent.txt**](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reagentc-command-line-options) |Exports information about the current status of the Windows Recovery Environment (Windows RE) and any available recovery image on an online or offline image |
 
 ### Other information to gather
 
@@ -46,8 +46,8 @@ Open an elevated Windows PowerShell window, and run each of the following comman
 
    |Command |Notes |
    | - | - |
-   |[**gpresult /h \<Filename>**](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/gpresult) |Exports the resultant set of Group Policy, and saves the information as an HTML file. |
-   |[**msinfo /report \<Path> /computer&nbsp;\<ComputerName>**](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/msinfo32) |Exports comprehensive information about the hardware, system components, and software environment on the local computer. The **/report** option saves the information as a TXT file. |
+   |[**gpresult /h \<Filename>**](https://docs.microsoft.com/windows-server/administration/windows-commands/gpresult) |Exports the resultant set of Group Policy, and saves the information as an HTML file. |
+   |[**msinfo /report \<Path> /computer&nbsp;\<ComputerName>**](https://docs.microsoft.com/windows-server/administration/windows-commands/msinfo32) |Exports comprehensive information about the hardware, system components, and software environment on the local computer. The **/report** option saves the information as a TXT file. |
 
 1. Open Registry Editor, and export the entries in the following subkeys:
 
@@ -65,7 +65,7 @@ Common settings that can cause problems for BitLocker&mdash;or may help you narr
   - On legacy computers, the system reserved partition must be formatted as NTFS.
 - If the device that you are troubleshooting is a Slate, use <https://gpsearch.azurewebsites.net/#8153> to verify the status of the **Enable use of BitLocker authentication requiring preboot keyboard input on slates**.
 
-For more information about the BitLocker prerequisites, see [BitLocker basic deployment: Using BitLocker to encrypt volumes](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-basic-deployment#using-bitlocker-to-encrypt-volumes)
+For more information about the BitLocker prerequisites, see [BitLocker basic deployment: Using BitLocker to encrypt volumes](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-basic-deployment#using-bitlocker-to-encrypt-volumes)
 
 ## Next steps
 

@@ -16,13 +16,13 @@ ms.date: 9/19/2019
 
 # Enforcing BitLocker policies by using Intune--known issues
 
-Reference: <https://internal.support.services.microsoft.com/en-us/help/4502051>
+Reference: <https://internal.support.services.microsoft.com/help/4502051>
 
-On the portal, you should see the Bitlocker encryption failing as shown here:
+On the portal, you should see the BitLocker encryption failing as shown here:
 
 ![](./images/4509189_en_1.png)
 
-Reasons for failure can be many. The best place to start looking for error reason is the event viewer **Applications and Services log** > **Windows** > **Bitlocker API**.
+Reasons for failure can be many. The best place to start looking for error reason is the event viewer **Applications and Services log** > **Windows** > **BitLocker API**.
 
 The following sections provide more information about resolving the following events and error messages:
 
@@ -74,7 +74,7 @@ Windows Recovery Environment (WinRE) is the minimal OS based on Windows Preinsta
 
 If the main OS doesn’t boot on some reason, the computer tries to run WinRE.
 
-In case of Silent Bitlocker Encryption, Bitlocker encryption is enabled on OS drive while Windows is still in Pre Boot Environment (Win PE). This is to protect the OS drive contents.
+In case of Silent BitLocker Encryption, BitLocker encryption is enabled on OS drive while Windows is still in Pre Boot Environment (Win PE). This is to protect the OS drive contents.
 
 As such it is necessary to have WinRE (Recovery Environment) enabled so that Windows can be recovered in any system crash issues.
 
@@ -110,7 +110,7 @@ BCD config is out of Intune scope so I will not dig into it.
 
 ### Cause
 
-Silent Bitlocker Encryption requires UEFI BIOS as it does not supports BIOS in legacy mode. Check the BIOS mode by using msinfo32.
+Silent BitLocker Encryption requires UEFI BIOS as it does not supports BIOS in legacy mode. Check the BIOS mode by using msinfo32.
 
 ![](./images/4509198_en_1.png)
 
@@ -160,11 +160,11 @@ However if you see something like below, your device does not have support:
 
 ![](./images/4509204_en_1.png)
 
-You can also verify if the Bitlocker Recovery Key has been uploaded to Azure by checking the device details from under Azure AD devices section.
+You can also verify if the BitLocker Recovery Key has been uploaded to Azure by checking the device details from under Azure AD devices section.
 
 ![](./images/4509205_en_1.png)
 
-Registry path to verify the Bitlocker policy as delivered to the device: **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device\\BitLocker**
+Registry path to verify the BitLocker policy as delivered to the device: **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device\\BitLocker**
 
 ![](./images/4509206_en_1.png)
 
@@ -174,7 +174,7 @@ The registry path **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\cu
 
 When deploying Intune Policy to encrypt the device and store the recovery key into Azure Active Directory might fail with Error 0x80072f9a on Windows 10 1809, after enabling the option **Allow standard users to enable encryption during Azure AD Join**.
 
-Checking the event viewer, Bitlocker API Log, you will see the following events:
+Checking the event viewer, BitLocker API Log, you will see the following events:
 
 > Event ID:846
 > 
@@ -210,4 +210,4 @@ The logged on user does not have permission to read the private key on the certi
 
 ### Resolution
 
-In order to resolve this issue please install [kb4497934](https://support.microsoft.com/en-us/help/4497934/windows-10-update-kb4497934)
+In order to resolve this issue please install [kb4497934](https://support.microsoft.com/help/4497934/windows-10-update-kb4497934)

@@ -19,23 +19,23 @@ Use BitLocker without entering a PIN at startup
 
 The most recommended way would be to use the “Network Unlock” feature using which the device could be unlocked remotely without user intervention.
 
-For general guidelines about how to troubleshoot Network Unlock, see [Troubleshoot Network Unlock](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock#troubleshoot-network-unlock)
+For general guidelines about how to troubleshoot Network Unlock, see [Troubleshoot Network Unlock](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock#troubleshoot-network-unlock)
 
 <a id="list"></a>
 
-- [Surface: Bitlocker Network unlock does not work on Surface Pro 4 device due to incorrect configuration of UEFI network stack](#scenario-1)
+- [Surface: BitLocker Network unlock does not work on Surface Pro 4 device due to incorrect configuration of UEFI network stack](#scenario-1)
 - [Tip: Detect programmatically whether BitLocker Network Unlock is enabled on a specific computer](#scenario-2)
-- [Unable to use Bitlocker Network Unlock feature on Windows client computer](#scenario-4)
+- [Unable to use BitLocker Network Unlock feature on Windows client computer](#scenario-4)
 
-## <a id="scenario-1"></a>Surface: Bitlocker Network unlock does not work on Surface Pro 4 device due to incorrect configuration of UEFI network stack
+## <a id="scenario-1"></a>Surface: BitLocker Network unlock does not work on Surface Pro 4 device due to incorrect configuration of UEFI network stack
 
 ### Symptom
 
-Bitlocker Network unlock was configured as described in [BitLocker: How to enable Network Unlock](https://docs.microsoft.com/en-us/windows/device-security/bitlocker/bitlocker-how-to-enable-network-unlock).
+BitLocker Network unlock was configured as described in [BitLocker: How to enable Network Unlock](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-how-to-enable-network-unlock).
 
 UEFI is set for DHCP, however, when booting a prompt for the PIN is still shown.
 
-Testing with another device (HP Elite X2 tablet) we could conclude that the Bitlocker Network unlock configuration is correct.
+Testing with another device (HP Elite X2 tablet) we could conclude that the BitLocker Network unlock configuration is correct.
 
 ### Cause
 
@@ -45,7 +45,7 @@ Very likely network stack was not configured correctly.
 
 SEMM is required to enable the network stack, it is not visible in the UI. Otherwise, setting network as the first boot option will also allow network stack loading in the UEFI if we cannot use SEMM.
 
-For information about SEMM, see [Enroll and configure Surface devices with SEMM](https://docs.microsoft.com/en-us/surface/enroll-and-configure-surface-devices-with-semm)
+For information about SEMM, see [Enroll and configure Surface devices with SEMM](https://docs.microsoft.com/surface/enroll-and-configure-surface-devices-with-semm)
 
 [Back to list](#list)
 
@@ -61,9 +61,9 @@ Detect the following values:
 
 [Back to list](#list)
 
-## <a id="scenario-4"></a>Unable to use Bitlocker Network Unlock feature on Windows client computer
+## <a id="scenario-4"></a>Unable to use BitLocker Network Unlock feature on Windows client computer
 
-From [A Windows 8-based client computer does not use the BitLocker Network Unlock feature](https://internal.support.services.microsoft.com/en-us/help/2891694/a-windows-8-based-client-computer-does-not-use-the-bitlocker-network-u)
+From [A Windows 8-based client computer does not use the BitLocker Network Unlock feature](https://internal.support.services.microsoft.com/help/2891694/a-windows-8-based-client-computer-does-not-use-the-bitlocker-network-u)
 
 On a Windows 8-based client computer, you are prompted to enter the BitLocker PIN to start Windows. This occurs even though the computer is connected through an Ethernet cable to the physical corporate LAN and the BitLocker Network Unlock feature is enabled and implemented.
 
