@@ -89,6 +89,9 @@ First, create the WMI filter and configure it to look for a specified version (o
 
 10. Click **Save** to save your completed filter.
 
+>[!NOTE]
+>If you are using multiple queries in the same WMI filter, these queries must all return TRUE for the filter requirements to be met and for GPO to be applied.
+
 ## To link a WMI filter to a GPO
 
 After you have created a filter with the correct query, link the filter to the GPO. Filters can be reused with many GPOs simultaneously; you do not have to create a new one for each GPO if an existing one meets your needs.
