@@ -26,7 +26,7 @@ This article explains how to use Microsoft Surface Dock Firmware Update, newly r
     - The file is released in the following naming format: **Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI** and installs by default to C:\Program Files\SurfaceUpdate.
     - Requires Surface devices running at least Windows 10 version 1803 or later.
 
-2. Click **Start > All Apps > Microsoft Surface Dock Updater.** After you connect Surface Dock to your Surface device, the tool checks the firmware status while running in the background.
+2. After you connect Surface Dock to your Surface device, the tool checks the firmware status while running in the background.
  
 4. After several seconds, disconnect your Surface Dock from your device and then wait for 5 seconds before reconnecting. The Surface Dock Firmware Update will normally update the dock silently in background after you disconnect from the dock and reconnect. The process can take a few minutes to complete and will continue even if interrupted. 
 
