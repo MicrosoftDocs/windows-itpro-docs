@@ -124,7 +124,7 @@ If two-factor authentication is required, you will be prompted to complete the p
 
 ![Two-factor authentication notification](images/autoenrollment-2-factor-auth.png)
 
->[!Tip]
+> [!Tip]
 > You can avoid this behavior by using Conditional Access Policies in Azure AD.
 Learn more by reading [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
