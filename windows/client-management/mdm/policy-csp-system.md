@@ -763,16 +763,14 @@ Specifies whether to allow the user to factory reset the device by using control
 
 Most restricted value is 0.
 
-<!--/Description-->
 > [!TIP]
 > This policy is also applicable to Windows 10 and not exclusive to phone.
-> <!--SupportedValues-->
-> The following list shows the supported values:
-> orted values:
+<!--/Description-->
 
+<!--SupportedValues-->
+The following list shows the supported values:  
 -   0 – Not allowed.
 -   1 (default) – Allowed to reset to factory default settings.
-
 <!--/SupportedValues-->
 <!--/Policy-->
 

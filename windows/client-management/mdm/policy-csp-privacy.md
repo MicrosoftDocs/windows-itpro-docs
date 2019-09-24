@@ -1116,11 +1116,11 @@ Value type is chr.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info: 
--	GP English name: Let Windows apps access background spatial perception
--	GP name: LetAppsAccessBackgroundSpatialPerception
--	GP element: LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps_List
--	GP path: Windows Components/App Privacy
--	GP ADMX file name: AppPrivacy.admx
+-	GP English name: *Let Windows apps access background spatial perception*
+-	GP name: *LetAppsAccessBackgroundSpatialPerception*
+-	GP element: *LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps_List*
+-	GP path: *Windows Components/App Privacy*
+-	GP ADMX file name: *AppPrivacy.admx*
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 
