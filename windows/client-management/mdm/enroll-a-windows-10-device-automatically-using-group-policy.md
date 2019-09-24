@@ -161,7 +161,7 @@ Requirements:
 - Enterprise AD must be integrated with Azure AD.
 - Ensure that PCs belong to same computer group.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >If you do not see the policy, it may be because you don’t have the ADMX installed for Windows 10, version 1803, version 1809, or version 1903. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):        
 >   1. Download:  
 >   1803 -->[Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)](https://www.microsoft.com/download/details.aspx?id=56880) or  
