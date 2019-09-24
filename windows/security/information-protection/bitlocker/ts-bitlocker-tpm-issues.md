@@ -14,8 +14,6 @@ ms.topic: conceptual
 ms.date: 9/19/2019
 ---
 
-
-
 # BitLocker and TPM--known issues
 
 [Troubleshoot the TPM](https://docs.microsoft.com/en-us/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm)

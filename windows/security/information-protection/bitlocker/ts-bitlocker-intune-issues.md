@@ -1,5 +1,5 @@
 ---
-title: Intune: Troubleshoot BitLocker enforcement
+title: Intune Troubleshoot BitLocker enforcement
 description: 
 ms.reviewer: 
 ms.prod: w10

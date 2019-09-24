@@ -1,3 +1,19 @@
+---
+title: Troubleshoot BitLocker
+description: 
+ms.reviewer: 
+ms.prod: w10
+ms.sitesec: library
+ms.localizationpriority: medium
+author: Teresa-Motiv
+ms.author: v-tea
+manager: kaushika
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
+ms.date: 9/19/2019
+---
+
 # Troubleshoot BitLocker
 
 
