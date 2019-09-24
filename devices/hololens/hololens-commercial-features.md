@@ -8,7 +8,7 @@ ms.topic: article
 keywords: HoloLens, commercial, features, mdm, mobile device management, kiosk mode
 ms.prod: hololens
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.reviewer: 
 manager: jarrettr
 appliesto:
