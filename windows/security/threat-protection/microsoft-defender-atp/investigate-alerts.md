@@ -26,13 +26,17 @@ ms.date: 04/24/2018
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatealerts-abovefoldlink) 
 
 Investigate alerts that are affecting your network, understand what they mean, and how to resolve them.
 
 Click an alert to see the alert details view and the various tiles that provide information about the alert.
 
-You can also manage an alert and see alert metadata along with other information that can help you make better decisions on how to approach them. You'll also see a status of the automated investigation on the upper right corner. Clicking on the link will take you to the Automated investigations view. For more information, see [Automated investigations](automated-investigations.md).
+From the alert details view, you can manage an alert and see alert data such as severity, category, technique, along with other information that can help you make better decisions on how to approach them. 
+
+The techniques reflected in the card are based on [MITRE enterprise techniques](https://attack.mitre.org/techniques/enterprise/).
+
+You'll also see a status of the automated investigation on the upper right corner. Clicking on the link will take you to the Automated investigations view. For more information, see [Automated investigations](automated-investigations.md).
 
 ![Image of the alert page](images/atp-alert-view.png)
 

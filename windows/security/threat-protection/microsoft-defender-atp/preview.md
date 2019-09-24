@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 The Microsoft Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-abovefoldlink) 
 
 Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 
@@ -74,4 +74,4 @@ Information protection is an integral part of Microsoft 365 Enterprise suite, pr
 - [Power BI reports using Microsoft Defender ATP data](powerbi-reports.md) <br>
 Microsoft Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  
