@@ -53,11 +53,11 @@ manager: dansimp
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
