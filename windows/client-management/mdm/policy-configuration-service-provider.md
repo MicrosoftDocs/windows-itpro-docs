@@ -343,6 +343,188 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### Audit policies  
+
+<dl>
+  <dd>
+    <a href="#audit-accountlogonlogoff-auditaccountlockout">Audit/AccountLogonLogoff_AuditAccountLockout</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogonlogoff-auditgroupmembership">Audit/AccountLogonLogoff_AuditGroupMembership</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogonlogoff-auditipsecextendedmode">Audit/AccountLogonLogoff_AuditIPsecExtendedMode</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogonlogoff-auditipsecmainmode">Audit/AccountLogonLogoff_AuditIPsecMainMode</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogonlogoff-auditipsecquickmode">Audit/AccountLogonLogoff_AuditIPsecQuickMode</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogonlogoff-auditlogoff">Audit/AccountLogonLogoff_AuditLogoff</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogonlogoff-auditlogon">Audit/AccountLogonLogoff_AuditLogon</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogonlogoff-auditnetworkpolicyserver">Audit/AccountLogonLogoff_AuditNetworkPolicyServer</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogonlogoff-auditotherlogonlogoffevents">Audit/AccountLogonLogoff_AuditOtherLogonLogoffEvents</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogonlogoff-auditspeciallogon">Audit/AccountLogonLogoff_AuditSpecialLogon</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogonlogoff-audituserdeviceclaims">Audit/AccountLogonLogoff_AuditUserDeviceClaims</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogon-auditcredentialvalidation">Audit/AccountLogon_AuditCredentialValidation</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogon-auditkerberosauthenticationservice">Audit/AccountLogon_AuditKerberosAuthenticationService</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogon-auditkerberosserviceticketoperations">Audit/AccountLogon_AuditKerberosServiceTicketOperations</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountlogon-auditotheraccountlogonevents">Audit/AccountLogon_AuditOtherAccountLogonEvents</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountmanagement-auditapplicationgroupmanagement">Audit/AccountManagement_AuditApplicationGroupManagement</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountmanagement-auditcomputeraccountmanagement">Audit/AccountManagement_AuditComputerAccountManagement</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountmanagement-auditdistributiongroupmanagement">Audit/AccountManagement_AuditDistributionGroupManagement</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountmanagement-auditotheraccountmanagementevents">Audit/AccountManagement_AuditOtherAccountManagementEvents</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountmanagement-auditsecuritygroupmanagement">Audit/AccountManagement_AuditSecurityGroupManagement</a>
+  </dd>
+  <dd>
+    <a href="#audit-accountmanagement-audituseraccountmanagement">Audit/AccountManagement_AuditUserAccountManagement</a>
+  </dd>
+  <dd>
+    <a href="#audit-dsaccess-auditdetaileddirectoryservicereplication">Audit/DSAccess_AuditDetailedDirectoryServiceReplication</a>
+  </dd>
+  <dd>
+    <a href="#audit-dsaccess-auditdirectoryserviceaccess">Audit/DSAccess_AuditDirectoryServiceAccess</a>
+  </dd>
+  <dd>
+    <a href="#audit-dsaccess-auditdirectoryservicechanges">Audit/DSAccess_AuditDirectoryServiceChanges</a>
+  </dd>
+  <dd>
+    <a href="#audit-dsaccess-auditdirectoryservicereplication">Audit/DSAccess_AuditDirectoryServiceReplication</a>
+  </dd>
+  <dd>
+    <a href="#audit-detailedtracking-auditdpapiactivity">Audit/DetailedTracking_AuditDPAPIActivity</a>
+  </dd>
+  <dd>
+    <a href="#audit-detailedtracking-auditpnpactivity">Audit/DetailedTracking_AuditPNPActivity</a>
+  </dd>
+  <dd>
+    <a href="#audit-detailedtracking-auditprocesscreation">Audit/DetailedTracking_AuditProcessCreation</a>
+  </dd>
+  <dd>
+    <a href="#audit-detailedtracking-auditprocesstermination">Audit/DetailedTracking_AuditProcessTermination</a>
+  </dd>
+  <dd>
+    <a href="#audit-detailedtracking-auditrpcevents">Audit/DetailedTracking_AuditRPCEvents</a>
+  </dd>
+  <dd>
+    <a href="#audit-detailedtracking-audittokenrightadjusted">Audit/DetailedTracking_AuditTokenRightAdjusted</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-auditapplicationgenerated">Audit/ObjectAccess_AuditApplicationGenerated</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-auditcentralaccesspolicystaging">Audit/ObjectAccess_AuditCentralAccessPolicyStaging</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-auditcertificationservices">Audit/ObjectAccess_AuditCertificationServices</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-auditdetailedfileshare">Audit/ObjectAccess_AuditDetailedFileShare</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-auditfileshare">Audit/ObjectAccess_AuditFileShare</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-auditfilesystem">Audit/ObjectAccess_AuditFileSystem</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-auditfilteringplatformconnection">Audit/ObjectAccess_AuditFilteringPlatformConnection</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-auditfilteringplatformpacketdrop">Audit/ObjectAccess_AuditFilteringPlatformPacketDrop</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-audithandlemanipulation">Audit/ObjectAccess_AuditHandleManipulation</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-auditkernelobject">Audit/ObjectAccess_AuditKernelObject</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-auditotherobjectaccessevents">Audit/ObjectAccess_AuditOtherObjectAccessEvents</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-auditregistry">Audit/ObjectAccess_AuditRegistry</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-auditremovablestorage">Audit/ObjectAccess_AuditRemovableStorage</a>
+  </dd>
+  <dd>
+    <a href="#audit-objectaccess-auditsam">Audit/ObjectAccess_AuditSAM</a>
+  </dd>
+  <dd>
+    <a href="#audit-policychange-auditauthenticationpolicychange">Audit/PolicyChange_AuditAuthenticationPolicyChange</a>
+  </dd>
+  <dd>
+    <a href="#audit-policychange-auditauthorizationpolicychange">Audit/PolicyChange_AuditAuthorizationPolicyChange</a>
+  </dd>
+  <dd>
+    <a href="#audit-policychange-auditfilteringplatformpolicychange">Audit/PolicyChange_AuditFilteringPlatformPolicyChange</a>
+  </dd>
+  <dd>
+    <a href="#audit-policychange-auditmpssvcrulelevelpolicychange">Audit/PolicyChange_AuditMPSSVCRuleLevelPolicyChange</a>
+  </dd>
+  <dd>
+    <a href="#audit-policychange-auditotherpolicychangeevents">Audit/PolicyChange_AuditOtherPolicyChangeEvents</a>
+  </dd>
+  <dd>
+    <a href="#audit-policychange-auditpolicychange">Audit/PolicyChange_AuditPolicyChange</a>
+  </dd>
+  <dd>
+    <a href="#audit-privilegeuse-auditnonsensitiveprivilegeuse">Audit/PrivilegeUse_AuditNonSensitivePrivilegeUse</a>
+  </dd>
+  <dd>
+    <a href="#audit-privilegeuse-auditotherprivilegeuseevents">Audit/PrivilegeUse_AuditOtherPrivilegeUseEvents</a>
+  </dd>
+  <dd>
+    <a href="#audit-privilegeuse-auditsensitiveprivilegeuse">Audit/PrivilegeUse_AuditSensitivePrivilegeUse</a>
+  </dd>
+  <dd>
+    <a href="#audit-system-auditipsecdriver">Audit/System_AuditIPsecDriver</a>
+  </dd>
+  <dd>
+    <a href="#audit-system-auditothersystemevents">Audit/System_AuditOtherSystemEvents</a>
+  </dd>
+  <dd>
+    <a href="#audit-system-auditsecuritystatechange">Audit/System_AuditSecurityStateChange</a>
+  </dd>
+  <dd>
+    <a href="#audit-system-auditsecuritysystemextension">Audit/System_AuditSecuritySystemExtension</a>
+  </dd>
+  <dd>
+    <a href="#audit-system-auditsystemintegrity">Audit/System_AuditSystemIntegrity</a>
+  </dd>
+</dl>
+
 ### Authentication policies
 
 <dl>
