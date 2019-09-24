@@ -1291,7 +1291,7 @@ Validated Editions: Ultimate Edition
 <td><strong>Algorithms</strong></td>
 </tr>
 <tr class="even">
-<td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enchanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
+<td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enhanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
 <td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp76.pdf">5.0.2150.1</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/76">76</a></td>
 <td><p><em>FIPS Approved algorithms:</em> Triple-DES (vendor affirmed); DSA/SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#28">#28</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#29">29</a>); RSA (vendor affirmed)</p>
@@ -1318,7 +1318,7 @@ Validated Editions: Ultimate Edition
 <td><strong>Algorithms</strong></td>
 </tr>
 <tr class="even">
-<td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enchanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
+<td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enhanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
 <td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp75.pdf">5.0.1877.6 and 5.0.1877.7</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/75">75</a></td>
 <td><p><em>FIPS Approved algorithms:</em> Triple-DES (vendor affirmed); SHA-1 (Certs. <a href="https://social.msdn.microsoft.com/forums/en-us/f93c9ee5-89b9-41a4-96c4-6eb9346625b9/msrai-msra-parsing-remote-assistance-packets-in-network-monitor?forum=os_windowsprotocolshttps://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#20">#20</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#21">21</a>); DSA/SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#25">#25</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#26">26</a>); RSA (vendor- affirmed)</p>
@@ -6220,7 +6220,7 @@ Version 6.3.9600</td>
 <strong>SHA-256</strong> (BYTE-only)<br />
 <strong>SHA-384</strong> (BYTE-only)<br />
 <strong>SHA-512</strong> (BYTE-only)</td>
-<td><p>Windows 7and SP1 and Windows Server 2008 R2 and SP1 Symmetric Algorithm Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a></p>
+<td><p>Windows 7 and SP1 and Windows Server 2008 R2 and SP1 Symmetric Algorithm Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a></p>
 <p>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816.">#816</a></p></td>
 </tr>
 <tr class="odd">
