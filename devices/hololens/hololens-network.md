@@ -8,7 +8,7 @@ keywords: HoloLens, wifi, wireless, internet, ip, ip address
 ms.date: 08/30/19
 ms.prod: hololens
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.reviewer: 
 manager: jarrettr
 appliesto:
