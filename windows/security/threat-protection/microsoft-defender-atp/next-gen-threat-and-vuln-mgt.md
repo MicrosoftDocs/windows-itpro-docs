@@ -1,7 +1,7 @@
 ---
-title: Next-generation Threat & Vulnerability Management
+title: Threat & Vulnerability Management
 description: This new capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
-keywords: threat and vulnerability management, MDATP-TVM, vulnerability management, threat and vulnerability scanning 
+keywords: threat & vulnerability management, threat and vulnerability management, MDATP TVM, MDATP-TVM, vulnerability management, vulnerability assessment, threat and vulnerability scanning, secure configuration asessment, windows defender atp, microsoft defender atp, endpoint vulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
