@@ -9,7 +9,7 @@ ms.topic: article
 ms.date: 8/12/19
 manager: jarrettr
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 ---
