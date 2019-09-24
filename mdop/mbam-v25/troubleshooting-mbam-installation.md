@@ -404,7 +404,7 @@ You can make a concurrent network trace between the client and the server, and r
 >[!Note]
 >If you can browse to the service URLs from the client computer and there are connectivity error entries in the MBAM admin event logs, this might be because of a connectivity failure between the administration server and the database server.
 
-If you can successfully browse to both service URLs, connectivity between the client and the server that is running, and IIS is working. However, there may be a problem in communication between the server that is running IIS and the database server.
+If you can successfully browse to both service URLs, and there is connectivity between the client and the server that is running, IIS is working. However, there may be a problem in communication between the server that is running IIS and the database server.
 
 The MBAM services may be unable to connect to the database server because of a network issue or an incorrect database connection string setting. Review the Application logs on the administration and monitoring server. You might see errors entries or warnings from source ASP.NET 2.0.50727.0 that resemble the following log entry:
 
