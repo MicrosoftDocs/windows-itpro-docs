@@ -9,7 +9,7 @@ keywords: calibration, comfort, visuals, quality, ipd
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.reviewer: 
 manager: jarrettr
 appliesto:
