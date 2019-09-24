@@ -162,7 +162,7 @@ Requirements:
 - Ensure that PCs belong to same computer group.
 
 > [!IMPORTANT]
->If you do not see the policy, it may be because you don’t have the ADMX installed for Windows 10, version 1803, version 1809, or version 1903. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):        
+> If you do not see the policy, it may be because you don’t have the ADMX installed for Windows 10, version 1803, version 1809, or version 1903. To fix the issue, follow these steps (Note: the latest MDM.admx is backwards compatible):        
 >   1. Download:  
 >   1803 -->[Administrative Templates (.admx) for Windows 10 April 2018 Update (1803)](https://www.microsoft.com/download/details.aspx?id=56880) or  
 >   1809 --> [Administrative Templates for Windows 10 October 2018 Update (1809)](https://www.microsoft.com/download/details.aspx?id=57576).
