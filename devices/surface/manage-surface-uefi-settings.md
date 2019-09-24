@@ -167,7 +167,7 @@ When you update Surface device firmware, by using either Windows Update or manua
 
 ![Surface ISH firmware with pink progress bar](images/manage-surface-uefi-fig14.png "Surface ISH firmware with pink progress bar")
 
-*Figure 14. The Surface ISH firmware update displays a liht pink progress bar*
+*Figure 14. The Surface ISH firmware update displays a light pink progress bar*
 
 ![Surface Trackpad firmware with gray progress bar](images/manage-surface-uefi-fig15.png "Surface Trackpad firmware with gray progress bar")
 
@@ -178,9 +178,9 @@ When you update Surface device firmware, by using either Windows Update or manua
 *Figure 16. The Surface TCON firmware update displays a light gray progress bar*
 
 
-![Surface IFX TPM firmware with light purple progress bar](images/manage-surface-uefi-fig17.png "Surface IFX TPM firmware with purple progress bar")
+![Surface TPM firmware with light purple progress bar](images/manage-surface-uefi-fig17.png "Surface TPM firmware with purple progress bar")
 
-*Figure 17. The Surface IFX TPM firmware update displays a purple progress bar*
+*Figure 17. The Surface TPM firmware update displays a purple progress bar*
 
 
 >[!NOTE]
