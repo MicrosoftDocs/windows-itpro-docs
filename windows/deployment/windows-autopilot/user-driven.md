@@ -26,7 +26,7 @@ Windows Autopilot user-driven mode is designed to enable new Windows 10 devices 
 - Connect it to a wireless or wired network with internet access.
 - Specify your e-mail address and password for your organization account.
 
-After completing those simple steps, the remainder of the process is completely automated, with the device being joined to the organization, enrolled in Intune (or another MDM service), and fully configured as defined by the organization.  Any additional prompts during the Out-of-Box Experience (OOBE) can be supressed; see [Configuring Autopilot Profiles](profiles.md) for options that are available.
+After completing those simple steps, the remainder of the process is completely automated, with the device being joined to the organization, enrolled in Intune (or another MDM service), and fully configured as defined by the organization.  Any additional prompts during the Out-of-Box Experience (OOBE) can be suppressed; see [Configuring Autopilot Profiles](profiles.md) for options that are available.
 
 Today, Windows Autopilot user-driven mode supports joining devices to Azure Active Directory.  Support for Hybrid Azure Active Directory Join (with devices joined to an on-premises Active Directory domain) will be available in a future Windows 10 release.  See [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) for more information about the differences between these two join options.
 
