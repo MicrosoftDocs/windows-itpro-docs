@@ -347,181 +347,181 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="#audit-accountlogonlogoff-auditaccountlockout">Audit/AccountLogonLogoff_AuditAccountLockout</a>
+    <a href="./policy-csp-audit.md#audit-accountlogonlogoff-auditaccountlockout"id="audit-accountlogonlogoff-auditaccountlockout">Audit/AccountLogonLogoff_AuditAccountLockout</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogonlogoff-auditgroupmembership">Audit/AccountLogonLogoff_AuditGroupMembership</a>
+    <a href="./policy-csp-audit.md#audit-accountlogonlogoff-auditgroupmembership"id="audit-accountlogonlogoff-auditgroupmembership">Audit/AccountLogonLogoff_AuditGroupMembership</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogonlogoff-auditipsecextendedmode">Audit/AccountLogonLogoff_AuditIPsecExtendedMode</a>
+    <a href="./policy-csp-audit.md#audit-accountlogonlogoff-auditipsecextendedmode"id="audit-accountlogonlogoff-auditipsecextendedmode">Audit/AccountLogonLogoff_AuditIPsecExtendedMode</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogonlogoff-auditipsecmainmode">Audit/AccountLogonLogoff_AuditIPsecMainMode</a>
+    <a href="./policy-csp-audit.md#audit-accountlogonlogoff-auditipsecmainmode"id="audit-accountlogonlogoff-auditipsecmainmode">Audit/AccountLogonLogoff_AuditIPsecMainMode</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogonlogoff-auditipsecquickmode">Audit/AccountLogonLogoff_AuditIPsecQuickMode</a>
+    <a href="./policy-csp-audit.md#audit-accountlogonlogoff-auditipsecquickmode"id="audit-accountlogonlogoff-auditipsecquickmode">Audit/AccountLogonLogoff_AuditIPsecQuickMode</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogonlogoff-auditlogoff">Audit/AccountLogonLogoff_AuditLogoff</a>
+    <a href="./policy-csp-audit.md#audit-accountlogonlogoff-auditlogoff"id="audit-accountlogonlogoff-auditlogoff">Audit/AccountLogonLogoff_AuditLogoff</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogonlogoff-auditlogon">Audit/AccountLogonLogoff_AuditLogon</a>
+    <a href="./policy-csp-audit.md#audit-accountlogonlogoff-auditlogon"id="audit-accountlogonlogoff-auditlogon">Audit/AccountLogonLogoff_AuditLogon</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogonlogoff-auditnetworkpolicyserver">Audit/AccountLogonLogoff_AuditNetworkPolicyServer</a>
+    <a href="./policy-csp-audit.md#audit-accountlogonlogoff-auditnetworkpolicyserver"id="audit-accountlogonlogoff-auditnetworkpolicyserver">Audit/AccountLogonLogoff_AuditNetworkPolicyServer</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogonlogoff-auditotherlogonlogoffevents">Audit/AccountLogonLogoff_AuditOtherLogonLogoffEvents</a>
+    <a href="./policy-csp-audit.md#audit-accountlogonlogoff-auditotherlogonlogoffevents"id="audit-accountlogonlogoff-auditotherlogonlogoffevents">Audit/AccountLogonLogoff_AuditOtherLogonLogoffEvents</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogonlogoff-auditspeciallogon">Audit/AccountLogonLogoff_AuditSpecialLogon</a>
+    <a href="./policy-csp-audit.md#audit-accountlogonlogoff-auditspeciallogon"id="audit-accountlogonlogoff-auditspeciallogon">Audit/AccountLogonLogoff_AuditSpecialLogon</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogonlogoff-audituserdeviceclaims">Audit/AccountLogonLogoff_AuditUserDeviceClaims</a>
+    <a href="./policy-csp-audit.md#audit-accountlogonlogoff-audituserdeviceclaims"id="audit-accountlogonlogoff-audituserdeviceclaims">Audit/AccountLogonLogoff_AuditUserDeviceClaims</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogon-auditcredentialvalidation">Audit/AccountLogon_AuditCredentialValidation</a>
+    <a href="./policy-csp-audit.md#audit-accountlogon-auditcredentialvalidation"id="audit-accountlogon-auditcredentialvalidation">Audit/AccountLogon_AuditCredentialValidation</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogon-auditkerberosauthenticationservice">Audit/AccountLogon_AuditKerberosAuthenticationService</a>
+    <a href="./policy-csp-audit.md#audit-accountlogon-auditkerberosauthenticationservice"id="audit-accountlogon-auditkerberosauthenticationservice">Audit/AccountLogon_AuditKerberosAuthenticationService</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogon-auditkerberosserviceticketoperations">Audit/AccountLogon_AuditKerberosServiceTicketOperations</a>
+    <a href="./policy-csp-audit.md#audit-accountlogon-auditkerberosserviceticketoperations"id="audit-accountlogon-auditkerberosserviceticketoperations">Audit/AccountLogon_AuditKerberosServiceTicketOperations</a>
   </dd>
   <dd>
-    <a href="#audit-accountlogon-auditotheraccountlogonevents">Audit/AccountLogon_AuditOtherAccountLogonEvents</a>
+    <a href="./policy-csp-audit.md#audit-accountlogon-auditotheraccountlogonevents"id="audit-accountlogon-auditotheraccountlogonevents">Audit/AccountLogon_AuditOtherAccountLogonEvents</a>
   </dd>
   <dd>
-    <a href="#audit-accountmanagement-auditapplicationgroupmanagement">Audit/AccountManagement_AuditApplicationGroupManagement</a>
+    <a href="./policy-csp-audit.md#audit-accountmanagement-auditapplicationgroupmanagement"id="audit-accountmanagement-auditapplicationgroupmanagement">Audit/AccountManagement_AuditApplicationGroupManagement</a>
   </dd>
   <dd>
-    <a href="#audit-accountmanagement-auditcomputeraccountmanagement">Audit/AccountManagement_AuditComputerAccountManagement</a>
+    <a href="./policy-csp-audit.md#audit-accountmanagement-auditcomputeraccountmanagement"id="audit-accountmanagement-auditcomputeraccountmanagement">Audit/AccountManagement_AuditComputerAccountManagement</a>
   </dd>
   <dd>
-    <a href="#audit-accountmanagement-auditdistributiongroupmanagement">Audit/AccountManagement_AuditDistributionGroupManagement</a>
+    <a href="./policy-csp-audit.md#audit-accountmanagement-auditdistributiongroupmanagement"id="audit-accountmanagement-auditdistributiongroupmanagement">Audit/AccountManagement_AuditDistributionGroupManagement</a>
   </dd>
   <dd>
-    <a href="#audit-accountmanagement-auditotheraccountmanagementevents">Audit/AccountManagement_AuditOtherAccountManagementEvents</a>
+    <a href="./policy-csp-audit.md#audit-accountmanagement-auditotheraccountmanagementevents"id="audit-accountmanagement-auditotheraccountmanagementevents">Audit/AccountManagement_AuditOtherAccountManagementEvents</a>
   </dd>
   <dd>
-    <a href="#audit-accountmanagement-auditsecuritygroupmanagement">Audit/AccountManagement_AuditSecurityGroupManagement</a>
+    <a href="./policy-csp-audit.md#audit-accountmanagement-auditsecuritygroupmanagement"id="audit-accountmanagement-auditsecuritygroupmanagement">Audit/AccountManagement_AuditSecurityGroupManagement</a>
   </dd>
   <dd>
-    <a href="#audit-accountmanagement-audituseraccountmanagement">Audit/AccountManagement_AuditUserAccountManagement</a>
+    <a href="./policy-csp-audit.md#audit-accountmanagement-audituseraccountmanagement"id="audit-accountmanagement-audituseraccountmanagement">Audit/AccountManagement_AuditUserAccountManagement</a>
   </dd>
   <dd>
-    <a href="#audit-dsaccess-auditdetaileddirectoryservicereplication">Audit/DSAccess_AuditDetailedDirectoryServiceReplication</a>
+    <a href="./policy-csp-audit.md#audit-dsaccess-auditdetaileddirectoryservicereplication"id="audit-dsaccess-auditdetaileddirectoryservicereplication">Audit/DSAccess_AuditDetailedDirectoryServiceReplication</a>
   </dd>
   <dd>
-    <a href="#audit-dsaccess-auditdirectoryserviceaccess">Audit/DSAccess_AuditDirectoryServiceAccess</a>
+    <a href="./policy-csp-audit.md#audit-dsaccess-auditdirectoryserviceaccess"id="audit-dsaccess-auditdirectoryserviceaccess">Audit/DSAccess_AuditDirectoryServiceAccess</a>
   </dd>
   <dd>
-    <a href="#audit-dsaccess-auditdirectoryservicechanges">Audit/DSAccess_AuditDirectoryServiceChanges</a>
+    <a href="./policy-csp-audit.md#audit-dsaccess-auditdirectoryservicechanges"id="audit-dsaccess-auditdirectoryservicechanges">Audit/DSAccess_AuditDirectoryServiceChanges</a>
   </dd>
   <dd>
-    <a href="#audit-dsaccess-auditdirectoryservicereplication">Audit/DSAccess_AuditDirectoryServiceReplication</a>
+    <a href="./policy-csp-audit.md#audit-dsaccess-auditdirectoryservicereplication"id="audit-dsaccess-auditdirectoryservicereplication">Audit/DSAccess_AuditDirectoryServiceReplication</a>
   </dd>
   <dd>
-    <a href="#audit-detailedtracking-auditdpapiactivity">Audit/DetailedTracking_AuditDPAPIActivity</a>
+    <a href="./policy-csp-audit.md#audit-detailedtracking-auditdpapiactivity"id="audit-detailedtracking-auditdpapiactivity">Audit/DetailedTracking_AuditDPAPIActivity</a>
   </dd>
   <dd>
-    <a href="#audit-detailedtracking-auditpnpactivity">Audit/DetailedTracking_AuditPNPActivity</a>
+    <a href="./policy-csp-audit.md#audit-detailedtracking-auditpnpactivity"id="audit-detailedtracking-auditpnpactivity">Audit/DetailedTracking_AuditPNPActivity</a>
   </dd>
   <dd>
-    <a href="#audit-detailedtracking-auditprocesscreation">Audit/DetailedTracking_AuditProcessCreation</a>
+    <a href="./policy-csp-audit.md#audit-detailedtracking-auditprocesscreation"id="audit-detailedtracking-auditprocesscreation">Audit/DetailedTracking_AuditProcessCreation</a>
   </dd>
   <dd>
-    <a href="#audit-detailedtracking-auditprocesstermination">Audit/DetailedTracking_AuditProcessTermination</a>
+    <a href="./policy-csp-audit.md#audit-detailedtracking-auditprocesstermination"id="audit-detailedtracking-auditprocesstermination">Audit/DetailedTracking_AuditProcessTermination</a>
   </dd>
   <dd>
-    <a href="#audit-detailedtracking-auditrpcevents">Audit/DetailedTracking_AuditRPCEvents</a>
+    <a href="./policy-csp-audit.md#audit-detailedtracking-auditrpcevents"id="audit-detailedtracking-auditrpcevents">Audit/DetailedTracking_AuditRPCEvents</a>
   </dd>
   <dd>
-    <a href="#audit-detailedtracking-audittokenrightadjusted">Audit/DetailedTracking_AuditTokenRightAdjusted</a>
+    <a href="./policy-csp-audit.md#audit-detailedtracking-audittokenrightadjusted"id="audit-detailedtracking-audittokenrightadjusted">Audit/DetailedTracking_AuditTokenRightAdjusted</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-auditapplicationgenerated">Audit/ObjectAccess_AuditApplicationGenerated</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-auditapplicationgenerated"id="audit-objectaccess-auditapplicationgenerated">Audit/ObjectAccess_AuditApplicationGenerated</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-auditcentralaccesspolicystaging">Audit/ObjectAccess_AuditCentralAccessPolicyStaging</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-auditcentralaccesspolicystaging"id="audit-objectaccess-auditcentralaccesspolicystaging">Audit/ObjectAccess_AuditCentralAccessPolicyStaging</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-auditcertificationservices">Audit/ObjectAccess_AuditCertificationServices</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-auditcertificationservices"id="audit-objectaccess-auditcertificationservices">Audit/ObjectAccess_AuditCertificationServices</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-auditdetailedfileshare">Audit/ObjectAccess_AuditDetailedFileShare</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-auditdetailedfileshare"id="audit-objectaccess-auditdetailedfileshare">Audit/ObjectAccess_AuditDetailedFileShare</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-auditfileshare">Audit/ObjectAccess_AuditFileShare</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-auditfileshare"id="audit-objectaccess-auditfileshare">Audit/ObjectAccess_AuditFileShare</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-auditfilesystem">Audit/ObjectAccess_AuditFileSystem</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-auditfilesystem"id="audit-objectaccess-auditfilesystem">Audit/ObjectAccess_AuditFileSystem</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-auditfilteringplatformconnection">Audit/ObjectAccess_AuditFilteringPlatformConnection</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-auditfilteringplatformconnection"id="audit-objectaccess-auditfilteringplatformconnection">Audit/ObjectAccess_AuditFilteringPlatformConnection</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-auditfilteringplatformpacketdrop">Audit/ObjectAccess_AuditFilteringPlatformPacketDrop</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-auditfilteringplatformpacketdrop"id="audit-objectaccess-auditfilteringplatformpacketdrop">Audit/ObjectAccess_AuditFilteringPlatformPacketDrop</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-audithandlemanipulation">Audit/ObjectAccess_AuditHandleManipulation</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-audithandlemanipulation"id="audit-objectaccess-audithandlemanipulation">Audit/ObjectAccess_AuditHandleManipulation</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-auditkernelobject">Audit/ObjectAccess_AuditKernelObject</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-auditkernelobject"id="audit-objectaccess-auditkernelobject">Audit/ObjectAccess_AuditKernelObject</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-auditotherobjectaccessevents">Audit/ObjectAccess_AuditOtherObjectAccessEvents</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-auditotherobjectaccessevents"id="audit-objectaccess-auditotherobjectaccessevents">Audit/ObjectAccess_AuditOtherObjectAccessEvents</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-auditregistry">Audit/ObjectAccess_AuditRegistry</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-auditregistry"id="audit-objectaccess-auditregistry">Audit/ObjectAccess_AuditRegistry</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-auditremovablestorage">Audit/ObjectAccess_AuditRemovableStorage</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-auditremovablestorage"id="audit-objectaccess-auditremovablestorage">Audit/ObjectAccess_AuditRemovableStorage</a>
   </dd>
   <dd>
-    <a href="#audit-objectaccess-auditsam">Audit/ObjectAccess_AuditSAM</a>
+    <a href="./policy-csp-audit.md#audit-objectaccess-auditsam"id="audit-objectaccess-auditsam">Audit/ObjectAccess_AuditSAM</a>
   </dd>
   <dd>
-    <a href="#audit-policychange-auditauthenticationpolicychange">Audit/PolicyChange_AuditAuthenticationPolicyChange</a>
+    <a href="./policy-csp-audit.md#audit-policychange-auditauthenticationpolicychange"id="audit-policychange-auditauthenticationpolicychange">Audit/PolicyChange_AuditAuthenticationPolicyChange</a>
   </dd>
   <dd>
-    <a href="#audit-policychange-auditauthorizationpolicychange">Audit/PolicyChange_AuditAuthorizationPolicyChange</a>
+    <a href="./policy-csp-audit.md#audit-policychange-auditauthorizationpolicychange"id="audit-policychange-auditauthorizationpolicychange">Audit/PolicyChange_AuditAuthorizationPolicyChange</a>
   </dd>
   <dd>
-    <a href="#audit-policychange-auditfilteringplatformpolicychange">Audit/PolicyChange_AuditFilteringPlatformPolicyChange</a>
+    <a href="./policy-csp-audit.md#audit-policychange-auditfilteringplatformpolicychange"id="audit-policychange-auditfilteringplatformpolicychange">Audit/PolicyChange_AuditFilteringPlatformPolicyChange</a>
   </dd>
   <dd>
-    <a href="#audit-policychange-auditmpssvcrulelevelpolicychange">Audit/PolicyChange_AuditMPSSVCRuleLevelPolicyChange</a>
+    <a href="./policy-csp-audit.md#audit-policychange-auditmpssvcrulelevelpolicychange"id="audit-policychange-auditmpssvcrulelevelpolicychange">Audit/PolicyChange_AuditMPSSVCRuleLevelPolicyChange</a>
   </dd>
   <dd>
-    <a href="#audit-policychange-auditotherpolicychangeevents">Audit/PolicyChange_AuditOtherPolicyChangeEvents</a>
+    <a href="./policy-csp-audit.md#audit-policychange-auditotherpolicychangeevents"id="audit-policychange-auditotherpolicychangeevents">Audit/PolicyChange_AuditOtherPolicyChangeEvents</a>
   </dd>
   <dd>
-    <a href="#audit-policychange-auditpolicychange">Audit/PolicyChange_AuditPolicyChange</a>
+    <a href="./policy-csp-audit.md#audit-policychange-auditpolicychange"id="audit-policychange-auditpolicychange">Audit/PolicyChange_AuditPolicyChange</a>
   </dd>
   <dd>
-    <a href="#audit-privilegeuse-auditnonsensitiveprivilegeuse">Audit/PrivilegeUse_AuditNonSensitivePrivilegeUse</a>
+    <a href="./policy-csp-audit.md#audit-privilegeuse-auditnonsensitiveprivilegeuse"id="audit-privilegeuse-auditnonsensitiveprivilegeuse">Audit/PrivilegeUse_AuditNonSensitivePrivilegeUse</a>
   </dd>
   <dd>
-    <a href="#audit-privilegeuse-auditotherprivilegeuseevents">Audit/PrivilegeUse_AuditOtherPrivilegeUseEvents</a>
+    <a href="./policy-csp-audit.md#audit-privilegeuse-auditotherprivilegeuseevents"id="audit-privilegeuse-auditotherprivilegeuseevents">Audit/PrivilegeUse_AuditOtherPrivilegeUseEvents</a>
   </dd>
   <dd>
-    <a href="#audit-privilegeuse-auditsensitiveprivilegeuse">Audit/PrivilegeUse_AuditSensitivePrivilegeUse</a>
+    <a href="./policy-csp-audit.md#audit-privilegeuse-auditsensitiveprivilegeuse"id="audit-privilegeuse-auditsensitiveprivilegeuse">Audit/PrivilegeUse_AuditSensitivePrivilegeUse</a>
   </dd>
   <dd>
-    <a href="#audit-system-auditipsecdriver">Audit/System_AuditIPsecDriver</a>
+    <a href="./policy-csp-audit.md#audit-system-auditipsecdriver"id="audit-system-auditipsecdriver">Audit/System_AuditIPsecDriver</a>
   </dd>
   <dd>
-    <a href="#audit-system-auditothersystemevents">Audit/System_AuditOtherSystemEvents</a>
+    <a href="./policy-csp-audit.md#audit-system-auditothersystemevents"id="audit-system-auditothersystemevents">Audit/System_AuditOtherSystemEvents</a>
   </dd>
   <dd>
-    <a href="#audit-system-auditsecuritystatechange">Audit/System_AuditSecurityStateChange</a>
+    <a href="./policy-csp-audit.md#audit-system-auditsecuritystatechange"id="audit-system-auditsecuritystatechange">Audit/System_AuditSecurityStateChange</a>
   </dd>
   <dd>
-    <a href="#audit-system-auditsecuritysystemextension">Audit/System_AuditSecuritySystemExtension</a>
+    <a href="./policy-csp-audit.md#audit-system-auditsecuritysystemextension"id="audit-system-auditsecuritysystemextension">Audit/System_AuditSecuritySystemExtension</a>
   </dd>
   <dd>
-    <a href="#audit-system-auditsystemintegrity">Audit/System_AuditSystemIntegrity</a>
+    <a href="./policy-csp-audit.md#audit-system-auditsystemintegrity"id="audit-system-auditsystemintegrity">Audit/System_AuditSystemIntegrity</a>
   </dd>
 </dl>
 
