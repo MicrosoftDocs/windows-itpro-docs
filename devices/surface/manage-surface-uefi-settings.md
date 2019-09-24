@@ -160,12 +160,35 @@ When you update Surface device firmware, by using either Windows Update or manua
 ![Surface touch firmware with gray progress bar](images/manage-surface-uefi-fig13.png "Surface touch firmware with gray progress bar")
 
 *Figure 13. The Surface touch firmware update displays a gray progress bar*
+
+![Surface KIP firmware with light green progress bar](images/manage-surface-uefi-fig14.png "Surface touch firmware with light green progress bar")
+
+*Figure 14. The Surface KIP firmware update displays a light green progress bar*
+
+![Surface ISH firmware with pink progress bar](images/manage-surface-uefi-fig15.png "Surface ISH firmware with pink progress bar")
+
+*Figure 15. The Surface ISH firmware update displays a liht pink progress bar*
+
+![Surface Trackpad firmware with gray progress bar](images/manage-surface-uefi-fig16.png "Surface Trackpad firmware with gray progress bar")
+
+*Figure 16. The Surface Trackpad firmware update displays a pink progress bar*
+
+![Surface TCON firmware with light gray progress bar](images/manage-surface-uefi-fig17.png "Surface TCON firmware with light gray progress bar")
+
+*Figure 17. The Surface TCON firmware update displays a light gray progress bar*
+
+
+![Surface IFX TPM firmware with light purple progress bar](images/manage-surface-uefi-fig18.png "Surface IFX TPM firmware with purple progress bar")
+
+*Figure 18. The Surface IFX TPM firmware update displays a purple progress bar*
+
+
 >[!NOTE]
->An additional warning message that indicates Secure Boot is disabled is displayed, as shown in Figure 14.
+>An additional warning message that indicates Secure Boot is disabled is displayed, as shown in Figure 19.
 
-![Surface boot screen that indicates Secure Boot has been disabled](images/manage-surface-uefi-fig14.png "Surface boot screen that indicates Secure Boot has been disabled")
+![Surface boot screen that indicates Secure Boot has been disabled](images/manage-surface-uefi-fig19.png "Surface boot screen that indicates Secure Boot has been disabled")
 
-*Figure 14. Surface boot screen that indicates Secure Boot has been disabled in Surface UEFI settings*
+*Figure 19. Surface boot screen that indicates Secure Boot has been disabled in Surface UEFI settings*
 
 ## Related topics
 
