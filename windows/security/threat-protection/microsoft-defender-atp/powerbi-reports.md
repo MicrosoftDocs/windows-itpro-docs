@@ -150,7 +150,7 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 
 8. Select **New table and matrix visuals** and **Custom data connectors** and click **OK**.
 
-    >[!NOTE]
+    > [!NOTE]
     >If you plan on using Custom Connectors or connectors that you or a third party have developed, you must select *(Not Recommended) Allow any extension to load without warning* under **Power BI Desktop** > **File** > **Options and settings** > **Options** > **Security** > **Data Extensions**".
     
     >[!NOTE]
