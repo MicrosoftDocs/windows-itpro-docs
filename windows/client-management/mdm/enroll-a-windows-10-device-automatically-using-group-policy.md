@@ -112,7 +112,7 @@ Requirements:
 
 5. Click **Enable**, then click **OK**.
 
->[!NOTE]
+> [!NOTE]
 >In Windows 10, version 1903, the MDM.admx file was updated to include an option to select which credential is used to enroll the device. **Device Credential** is a new option that will only have an effect on clients that have the Windows 10, version 1903 feature update installed. 
 The default behavior for older releases is to revert to **User Credential**.
 
