@@ -9,7 +9,7 @@ ms.sitesec: library
 author: scooley
 ms.author: scooley
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ---
