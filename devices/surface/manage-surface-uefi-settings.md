@@ -133,7 +133,7 @@ You can also turn on and off IPv6 support for PXE with the **Enable IPv6 for PXE
 
 Use the **Restart Now** button on the **Exit** page to exit UEFI settings, as shown in Figure 7. 
 
-![Exit Surface UEFI and restart the device](images/manage-surface-uefi-fig8.png "Exit Surface UEFI and restart the device")
+![Exit Surface UEFI and restart the device](images/manage-surface-uefi-fig7.png "Exit Surface UEFI and restart the device")
 
 *Figure 7. Click Restart Now to exit Surface UEFI and restart the device*
 
