@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot BitLocker recovery scenarios
+title: BitLocker recovery known issues
 description: 
 ms.reviewer: 
 ms.prod: w10
@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 9/19/2019
 ---
 
-# Troubleshoot BitLocker recovery scenarios
+# BitLocker recovery--known issues
 
 <a id="list"></a>
 

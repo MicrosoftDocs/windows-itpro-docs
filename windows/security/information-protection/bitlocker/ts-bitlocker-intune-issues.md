@@ -1,5 +1,5 @@
 ---
-title: Intune Troubleshoot BitLocker enforcement
+title: Enforcing BitLocker policies by using Intune known issues
 description: 
 ms.reviewer: 
 ms.prod: w10
@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 9/19/2019
 ---
 
-# Intune: Troubleshoot BitLocker enforcement
+# Enforcing BitLocker policies by using Intune--known issues
 
 Reference: <https://internal.support.services.microsoft.com/en-us/help/4502051>
 

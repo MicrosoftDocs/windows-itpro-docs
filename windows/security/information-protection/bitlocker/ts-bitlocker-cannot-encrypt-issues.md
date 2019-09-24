@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot BitLocker configuration scenarios
+title: BitLocker cannot encrypt a drive  known issues
 description: 
 ms.reviewer: 
 ms.prod: w10
@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 9/19/2019
 ---
 
-# Troubleshoot BitLocker configuration scenarios
+# BitLocker cannot encrypt a drive--known issues
 
 <a id="list"></a>
 - ["Access is denied" message when you try to encrypt removable drives](#scenario-1)

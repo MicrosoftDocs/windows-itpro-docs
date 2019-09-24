@@ -24,6 +24,16 @@
 ### [BitLocker Recovery Guide](bitlocker\bitlocker-recovery-guide-plan.md)
 ### [BitLocker Countermeasures](bitlocker\bitlocker-countermeasures.md)
 ### [Protecting cluster shared volumes and storage area networks with BitLocker](bitlocker\protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)
+### Troubleshoot BitLocker
+#### [Troubleshoot BitLocker](bitlocker\troubleshoot-bitlocker.md)
+#### [BitLocker configuration--known issues](bitlocker\ts-bitlocker-config-issues.md)
+#### [BitLocker cannot encrypt a drive--known issues](bitlocker\ts-bitlocker-cannot-encrypt-issues.md)
+#### [BitLocker recovery--known issues](bitlocker\ts-bitlocker-recovery-issues.md)
+#### [Enforcing BitLocker policies by using Intune--known issues](bitlocker\ts-bitlocker-intune-issues.md)
+#### Troubleshoot BitLocker and TPM issues
+##### [BitLocker and TPM--known issues](bitlocker\ts-bitlocker-tpm-issues.md)
+##### [Decode Measured Boot logs to track PCR changes](bitlocker\ts-bitlocker-decode-measured-boot-logs.md)
+#### [BitLocker Network Unlock--known issues](bitlocker\ts-bitlocker-network-unlock-issues.md)
 
 ## [Encrypted Hard Drive](encrypted-hard-drive.md)
 
