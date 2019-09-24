@@ -234,7 +234,7 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1709. Allows IT Admins to automatically provision printers based on their names (network host names).
 
-The policy value is expected to be a ```&#xF000;``` seperated list of printer names.  The OS will attempt to search and install the matching printer driver for each listed printer.
+The policy value is expected to be a ```&#xF000;``` separated list of printer names.  The OS will attempt to search and install the matching printer driver for each listed printer.
 
 <!--/Description-->
 <!--/Policy-->
