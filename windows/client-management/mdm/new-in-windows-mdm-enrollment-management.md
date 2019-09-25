@@ -137,7 +137,11 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li><a href="policy-csp-windowslogon.md#windowslogon-allowautomaticrestartsignon" data-raw-source="[WindowsLogon/AllowAutomaticRestartSignOn](policy-csp-windowslogon.md#windowslogon-allowautomaticrestartsignon)">WindowsLogon/AllowAutomaticRestartSignOn</a></li>
 <li><a href="policy-csp-windowslogon.md#windowslogon-configautomaticrestartsignon" data-raw-source="[WindowsLogon/ConfigAutomaticRestartSignOn](policy-csp-windowslogon.md#windowslogon-configautomaticrestartsignon)">WindowsLogon/ConfigAutomaticRestartSignOn</a></li>
 <li><a href="policy-csp-windowslogon.md#windowslogon-enablefirstlogonanimation" data-raw-source="[WindowsLogon/EnableFirstLogonAnimation](policy-csp-windowslogon.md#windowslogon-enablefirstlogonanimation)">WindowsLogon/EnableFirstLogonAnimation</a></li>
-</ul>
+<tr>
+<td style="vertical-align:top"><a href="policy-csp-audit.md" data-raw-source="[Policy CSP - Audit](applicationcontrol-csp.md)">Policy CSP - Audit</a></td>
+<td style="vertical-align:top"><p>Added new Audit policies in Windows 10, version 1903.</p>
+</td></tr>
+<tr>
 </td></tr>
 <tr>
 <td style="vertical-align:top"><a href="applicationcontrol-csp.md" data-raw-source="[ApplicationControl CSP](applicationcontrol-csp.md)">ApplicationControl CSP</a></td>
