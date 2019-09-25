@@ -661,9 +661,9 @@ GP Info:
 <!--SupportedValues-->
 The following are the supported values:  
 - 0 — Off/None
-- 1 (default on Client editions) — Success
+- 1 (default) — Success
 - 2 — Failure
-- 3 (default on Server editions) — Success+Failure
+- 3 — Success+Failure
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -729,9 +729,8 @@ The following are the supported values:
 - 0 — Off/None
 - 1 — Success
 - 2 — Failure
-- 3 — Success+Failure
+- 3 (default) — Success+Failure
 
-Default: Success, Failure.
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -999,8 +998,8 @@ GP Info:
 <!--/DbMapped-->
 <!--SupportedValues-->
 The following are the supported values:  
-- 0 (default on Client editions) — Off/None
-- 1 (default on Server editions) — Success
+- 0 (default) — Off/None
+- 1 — Success
 - 2 — Failure
 - 3 — Success+Failure
 
@@ -1066,8 +1065,8 @@ GP Info:
 <!--/DbMapped-->
 <!--SupportedValues-->
 The following are the supported values:  
-- 0 (default on Client editions) — Off/None
-- 1 (default on Server editions) — Success
+- 0 (default) — Off/None
+- 1 — Success
 - 2 — Failure
 - 3 — Success+Failure
 
@@ -1133,8 +1132,8 @@ GP Info:
 <!--/DbMapped-->
 <!--SupportedValues-->
 The following are the supported values:  
-- 0 (default on Client editions) — Off/None
-- 1 (default on Server editions) — Success
+- 0 (default) — Off/None
+- 1 — Success
 - 2 — Failure
 - 3 — Success+Failure
 
@@ -1334,8 +1333,8 @@ GP Info:
 <!--/DbMapped-->
 <!--SupportedValues-->
 The following are the supported values:  
-- 0 (default on Client editions) — Off/None
-- 1 (default on Server editions) — Success
+- 0 (default) — Off/None
+- 1 — Success
 - 2 — Failure
 - 3 — Success+Failure
 
@@ -1756,8 +1755,8 @@ GP Info:
 <!--/DbMapped-->
 <!--SupportedValues-->
 The following are the supported values:  
-- 0 (default on Client editions) — Off/None
-- 1 (default on Server editions) — Success
+- 0 (default) — Off/None
+- 1 — Success
 - 2 — Failure
 - 3 — Success+Failure
 
@@ -4107,9 +4106,8 @@ The following are the supported values:
 - 0 — Off/None
 - 1 — Success
 - 2 — Failure
-- 3 — Success+Failure
+- 3 (default) — Success+Failure
 
-Default: Success, Failure.
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -4313,9 +4311,8 @@ The following are the supported values:
 - 0 — Off/None
 - 1 — Success
 - 2 — Failure
-- 3 — Success+Failure
+- 3 (default) — Success+Failure
 
-Default: Success, Failure.
 <!--/SupportedValues-->
 <!--Example-->
 
