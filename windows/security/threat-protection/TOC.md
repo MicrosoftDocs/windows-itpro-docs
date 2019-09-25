@@ -102,10 +102,10 @@
 
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/overview-hunting.md)
-#### [Learn the query language](advanced-hunting.md)
-#### [Use shared queries](advanced-hunting-shared-queries.md)
+#### [Learn the query language](microsoft-defender-atp/advanced-hunting.md)
+#### [Use shared queries](microsoft-defender-atp/advanced-hunting-shared-queries.md)
 #### [Advanced hunting schema reference]()
-##### [Understand the schema](advanced-hunting-reference.md)
+##### [Understand the schema](microsoft-defender-atp/advanced-hunting-reference.md)
 ##### [AlertEvents](microsoft-defender-atp/advanced-hunting-alertevents-table.md)
 ##### [FileCreationEvents](microsoft-defender-atp/advanced-hunting-filecreationevents-table.md)
 ##### [ImageLoadEvents](microsoft-defender-atp/advanced-hunting-imageloadevents-table.md)
@@ -116,7 +116,7 @@
 ##### [NetworkCommunicationEvents](microsoft-defender-atp/advanced-hunting-networkcommunicationevents-table.md)
 ##### [ProcessCreationEvents](microsoft-defender-atp/advanced-hunting-processcreationevents-table.md)
 ##### [RegistryEvents](microsoft-defender-atp/advanced-hunting-registryevents-table.md)
-#### [Apply query best practices](advanced-hunting-best-practices.md)
+#### [Apply query best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
 #### [Stream Advanced hunting events to Azure Event Hubs](microsoft-defender-atp/raw-data-export-event-hub.md)
 
 
