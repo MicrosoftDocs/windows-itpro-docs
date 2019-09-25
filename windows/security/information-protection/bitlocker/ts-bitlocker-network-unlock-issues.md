@@ -29,8 +29,6 @@ For general guidelines about how to troubleshoot Network Unlock, see [Troublesho
 
 ## <a id="scenario-1"></a>Surface: BitLocker Network unlock does not work on Surface Pro 4 device due to incorrect configuration of UEFI network stack
 
-### Symptom
-
 BitLocker Network unlock was configured as described in [BitLocker: How to enable Network Unlock](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-how-to-enable-network-unlock).
 
 UEFI is set for DHCP, however, when booting a prompt for the PIN is still shown.

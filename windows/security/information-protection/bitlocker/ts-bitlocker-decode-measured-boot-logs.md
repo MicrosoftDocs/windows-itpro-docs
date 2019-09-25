@@ -18,7 +18,7 @@ ms.date: 9/19/2019
 
 From [https://internal.support.services.microsoft.com/help/4345799](https://internal.support.services.microsoft.com/help/4345799)
 
-[TPM fundamentals: Measured Boot with support for attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)
+[TPM fundamentals: Measured Boot with support for attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)  
 [Understanding PCR banks on TPM 2.0 devices](https://docs.microsoft.com/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices)
 
 Measured Boot logs are located under C:\\Windows\\Logs\\MeasuredBoot\\ directory.

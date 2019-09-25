@@ -14,83 +14,15 @@ ms.topic: conceptual
 ms.date: 9/19/2019
 ---
 
-# BitLocker configuration--known issues
+# BitLocker configuration&mdash;known issues
 
 <a id="list"></a>
-- ["Access is denied" message when you try to encrypt removable drives](#scenario-1)
-- [In Windows 10, BitLocker takes more time to encrypt a drive than in Windows 7](#scenario-2)
-- [Hyper-V Gen 2 VM: Cannot access the volume after BitLocker encryption](#scenario-3)
-- [Production snapshots fail for virtualized domain controllers that use BitLocker-encrypted disks](#scenario-4)
-- [Cannot turn on BitLocker encryption on Windows 10 Professional](#scenario-5)
 
-## <a id="scenario-1"></a>"Access is denied" message when you try to encrypt removable drives
+- [In Windows 10, BitLocker takes more time to encrypt a drive than in Windows 7](#scenario-1)
+- [Hyper-V Gen 2 VM: Cannot access the volume after BitLocker encryption](#scenario-2)
+- [Production snapshots fail for virtualized domain controllers that use BitLocker-encrypted disks](#scenario-3)
 
-### Symptoms
-
-You have a computer that is running Windows 10, version 1607 or version 1709.
-
-You try to encrypt a USB drive by following these steps:
-
-1. In Windows Explorer, right-click the USB drive and select **Turn on BitLocker**.
-1. On the **Choose how you want to unlock this drive** page, select **Use a password to unlock the drive**.
-1. Follow the instructions on the page to enter your password and then re-enter it.
-1. On the **are you ready to encrypt this drive?** page, select **Start encrypting**.
-1. The **Starting encryption** page displays the message "Access is denied."
-
-You receive this message on any computer that runs Windows 10 version 1607 or version 1709, and with any USB drive.
-
-### Cause
-
-The security descriptor of the BitLocker Drive Encryption service (BDESvc) has an incorrect entry. Instead of NT AUTHORITY\Authenticated Users, the security descriptor uses NT AUTHORITY\INTERACTIVE.
-
-To verify the presence of this issue, follow these steps:
-
-1. On an affected computer, open an elevated Command Prompt window and an elevated Powershell window.
-
-1. In the Command Prompt window, enter the following command:
-
-   ```cmd
-   C:\>sc sdshow bdesvc
-   ```
-
-   The output of this command resembles the following:
-
-   > D:(A;;CCDCLCSWRPWPDTLORCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLORCWDWO;;;BA)(A;;CCLCSWRPLORC;;;BU)(A;;CCLCSWRPLORC;;;AU)S:(AU;FA;CCDCLCSWRPWPDTLOSDRCWDWO;;;WD)
-
-1. Copy this output, and then use it as part of the [**ConvertFrom-SddlString**](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/convertfrom-sddlstring?view=powershell-6) command in the PowerShell window, as follows:
-
-   ![](./images/ts-bitlocker-usb-sddl.png)
-
-   If you see NT AUTHORITY\INTERACTIVE (as highlighted), in the output of this command, this is the cause of the problem. Under normal conditions, the output should resemble the following:
-
-   ![default](./images/ts-bitlocker-usb-default-sddl.png)
-
-> [!NOTE]
-> Group Policy Objects that change the security descriptors of services have been known to cause this issue.
-
-### Resolution
-
-1. To repair the security descriptor of BDESvc, open an elevated PowerShell window and enter the following command:
-
-   ```ps
-   sc sdset bdesvc D:(A;;CCDCLCSWRPWPDTLORCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLORCWDWO;;;BA)(A;;CCLCSWRPLORC;;;BU)(A;;CCLCSWRPLORC;;;AU)S:(AU;FA;CCDCLCSWRPWPDTLOSDRCWDWO;;;WD)
-   ```
-
-1. Restart the computer.
-
-The issue should now be resolved.
-
-[Back to list](#list)
-
-## <a id="scenario-2"></a>In Windows 10, BitLocker takes more time to encrypt a drive than in Windows 7
-
-Reference: <https://internal.support.services.microsoft.com/help/3217793>
-
-### Symptoms
-
-Encryption on the same hardware takes longer on Window 10 as compared to Windows 7.
-
-### Cause
+## <a id="scenario-1"></a>In Windows 10, BitLocker takes more time to encrypt a drive than in Windows 7
 
 In both Windows 10 and Windows 7, BitLocker runs in the background to encrypt drives. However, in Windows 10, BitLocker is less aggressive about requesting resources. this behavior reduces the chance of BitLocker affecting the computer's performance.
 
@@ -99,13 +31,13 @@ To compensate for these changes, BitLocker uses a new conversion model. This mod
 > [!IMPORTANT]
 > To preserve backward compatibility, BitLocker uses the previous conversion model to encrypt removable drives.
 
-#### Benefits of using the new conversion model
+### Benefits of using the new conversion model
 
 Using the previous conversion model, you cannot consider an internal drive to be protected (and compliant with data protection standards) until the BitLocker conversion is 100% complete. Before the process completes, the data that existed on the drive before encryption began&mdash;potentially compromised data&mdash;can still be read and written without encryption. Therefore, you must wait for the encryption process to complete before you store sensitive data on the drive. Depending on the size of the drive, this wait time can be substantial.
 
 Using the new conversion model, you can safely store sensitive data on the drive as soon as you turn on BitLocker, before the encryption process finishes. You can use the drive immediately, and the encryption process does not adversely affect performance. The tradeoff is that the encryption process for pre-existing data takes more time.
 
-#### Other BitLocker enhancements
+### Other BitLocker enhancements
 
 After Windows 7 was released, several other areas of BitLocker were improved:
 
@@ -133,9 +65,7 @@ After Windows 7 was released, several other areas of BitLocker were improved:
 
 [Back to list](#list)
 
-## <a id="scenario-3"></a>Hyper-V Gen 2 VM: Cannot access the volume after BitLocker encryption
-
-### Symptoms
+## <a id="scenario-2"></a>Hyper-V Gen 2 VM: Cannot access the volume after BitLocker encryption
 
 1. You turn on BitLocker on a generation-2 virtual machine that runs on Hyper-V.
 1. You add data to the data disk as it encrypts.
@@ -143,7 +73,6 @@ After Windows 7 was released, several other areas of BitLocker were improved:
    - The system volume is not encrypted.
    - The encrypted volume is not accessible, and the computer lists the volume's file system as "Unknown."
    - You see a message that resembles: "You need to format the disk in \<*x:*> drive before you can use it"
-
 
 ### Cause
 
@@ -157,9 +86,7 @@ To resolve this issue, remove the third-party software.
 
 [Back to list](#list)
 
-## <a id="scenario-4"></a>Production snapshots fail for virtualized domain controllers that use BitLocker-encrypted disks
-
-### Symptoms
+## <a id="scenario-3"></a>Production snapshots fail for virtualized domain controllers that use BitLocker-encrypted disks
 
 You have a Windows Server 2019 or 2016 Hyper-V Server that is hosting virtual machines (guests) that are configured as Windows domain controllers. BitLocker has encrypted the disks that store the Active Directory database and log files. When you run a “production snapshot” of the domain controller guests, the Volume Snap-Shot (VSS) service does not correctly process the backup.
 
@@ -187,7 +114,7 @@ In the domain controller Application Event Log, the VSS event source records Eve
 > Execution Context: Writer
 > Writer Class Id: {b2014c9e-8711-4c5c-a5a9-3cf384484757}  
 > Writer Name: NTDS  
->  Writer Instance ID: {d170b355-a523-47ba-a5c8-732244f70e75}
+> Writer Instance ID: {d170b355-a523-47ba-a5c8-732244f70e75}
 > Command Line: C:\\Windows\\system32\\lsass.exe
 >  
 > Process ID: 680  
@@ -259,33 +186,5 @@ The operation produces the following callstack:
 ‎ 0a 00000086\`b357ccc0 00007ffc\`e8022193 VSSAPI\!CVssWriterImpl::OnPostSnapshotGuard+0x1d \[d:\\rs1\\base\\stor\\vss\\modules\\vswriter\\vswrtimp.cpp @ 5228\]
 ‎ 0b 00000086\`b357ccf0 00007ffc\`e80214f0 VSSAPI\!CVssWriterImpl::PostSnapshotInternal+0xc3b \[d:\\rs1\\base\\stor\\vss\\modules\\vswriter\\vswrtimp.cpp @ 3552\]
 ```
-
-## <a id="scenario-5"></a>Cannot turn on BitLocker encryption on Windows 10 Professional
-
-### Symptom
-
-When you turn on BitLocker encryption on a computer that is running Windows 10 Professional, you receive a message that resembles the following:
-
-> ERROR: An error occurred (code 0x80310059):BitLocker Drive Encryption is already performing an operation on this drive. Please complete all operations before continuing.NOTE: If the -on switch has failed to add key protectors or start encryption,you may need to call manage-bde -off before attempting -on again.
-
-### Cause
-
-Settings that are controlled by Group Policy Objects (GPOs) may be responsible for this issue.
-
-### Resolution
-
-> [!IMPORTANT]
-> Follow the steps in this section carefully. Serious problems might occur if you modify the registry incorrectly. Before you modify it, [back up the registry for restoration](https://support.microsoft.com/help/322756) in case problems occur.
-
-To resolve this issue, follow these steps:
-
-1. Open Registry Editor, and navigate to **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE**
-
-1. Delete the following sub-keys:
-   - **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE\\OSPlatformValidation\_BIOS**
-   - **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE\\OSPlatformValidation\_UEFI**
-   - **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE\\PlatformValidation**
-
-1. Exit Registry Editor, and turn on BitLocker encryption again.
 
 [Back to list](#list)
