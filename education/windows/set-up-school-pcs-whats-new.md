@@ -21,7 +21,7 @@ Learn what’s new with the Set up School PCs app each week. Find out about new 
 ## Week of September 23, 2019  
 
 ### Easier way to deploy Office 365 to your classroom devices 
- Microsoft Office now appears as an option on the Set up School PCs > Apps screen. Select the app to add it to your provisioning package. Devices install Office 365 ProPlus. This version includes the cloud-connected and most current versions of apps such as Word, PowerPoint, Excel, and Teams.   
+ Microsoft Office now appears as an option on the **Apps** screen. Select the app to add it to your provisioning package. Devices install Office 365 ProPlus. This version includes the cloud-connected and most current versions of apps such as Word, PowerPoint, Excel, and Teams.   
 
 
 ## Week of June 24, 2019  
@@ -30,7 +30,7 @@ Learn what’s new with the Set up School PCs app each week. Find out about new 
 The previously mentioned provisioning problem was resolved, so the Set up School PCs app once again supports Windows 10, version 1903 and later. The Windows 10 settings that were removed are now back in the app. 
 
 ### Device rename made optional for Azure AD joined devices  
-When you set up your Azure AD join devices in the Set up School PCs app, you no longer need to rename your devices. You can keep existing device names.  
+When you set up your Azure AD join devices in the app, you no longer need to rename your devices. You can keep existing device names.  
 
 ## Week of May 23, 2019   
 
@@ -38,7 +38,7 @@ When you set up your Azure AD join devices in the Set up School PCs app, you no 
 Due to a provisioning problem, Set up School PCs has temporarily stopped support for Windows 10, version 1903 and later. All settings in the app that were for Windows 10, version 1903 and later have been removed. When the problem is resolved, support will resume again.  
 
 ### Mandatory device rename for Azure AD joined devices
-If you configure Azure AD Join, you're now required to rename your devices during setup. Set up School PCs won't let you keep existing device names.    
+If you configure Azure AD Join, you're now required to rename your devices during setup. You can't keep existing device names.    
 
 ## Week of April 15, 2019  
 
@@ -48,19 +48,19 @@ If you configure Azure AD Join, you're now required to rename your devices durin
 ## Week of April 8, 2019  
 
 ### Apps configured as non-removeable  
-All apps that are deployed by Set up School PCs are configured on the device as non-removable apps. This feature prevents students from unpinning or uninstalling the apps they need.  
+Apps that you deploy with Set up School PCs are configured as non-removable apps. This feature prevents students from unpinning or uninstalling the apps they need.  
 
 ### Domain name automatically added during sign-in  
 Specify your preferred Azure Active Directory tenant domain name to automatically append it to the username on the sign-in screen. With this setting, students don't need to type out long school domain names. To sign in, they type only their unique usernames.  
 
 ### Set up devices with hidden Wi-Fi network
-Set up devices so that they connect to a hidden Wi-Fi network. To configure a hidden network, open Set up School PCs. When you get to **Wireless network**, choose **Add a Wi-Fi network**. Enter in your Wi-Fi information and select **Hidden network**.  
+Set up devices so that they connect to a hidden Wi-Fi network. To configure a hidden network, open the app. When you get to **Wireless network**, choose **Add a Wi-Fi network**. Enter in your Wi-Fi information and select **Hidden network**.  
 
 
 ## Week of December 31, 2018
 
 ### Add Microsoft Whiteboard to provisioning package  
-Microsoft Whiteboard has been added to the list of Microsoft-recommended apps for schools. Whiteboard is a freeform digital canvas where ideas, content, and people come together; students can create and collaborate in real time in the classroom. Add Whiteboard to your provisioning package in Set up School PCs, on the **Add apps** page. For more information, see [Use Set up School PCs app](use-set-up-school-pcs-app.md#create-the-provisioning-package).  
+Microsoft Whiteboard is now a Microsoft-recommended app for schools. Whiteboard is a freeform digital canvas where ideas, content, and people come together; students can create and collaborate in real time in the classroom. Add the app to your provisioning package on the **Add apps** page. For more information, see [Use Set up School PCs app](use-set-up-school-pcs-app.md#create-the-provisioning-package).  
 
 ## Week of November 5, 2018  
 
@@ -95,7 +95,7 @@ The Skype and Messaging apps are part of a selection of apps that are, by defaul
 
 
 ## Next steps    
-Learn how to set up devices with the Set up School PCs app.  
+Learn how to create provisioning packages and set up devices in the app.   
 * [What's in my provisioning package?](set-up-school-pcs-provisioning-package.md)
 * [Shared PC mode for schools](set-up-school-pcs-shared-pc-mode.md)
 * [Set up School PCs technical reference](set-up-school-pcs-technical.md)
