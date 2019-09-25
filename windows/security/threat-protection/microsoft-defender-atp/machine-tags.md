@@ -61,6 +61,9 @@ You can also delete tags from this view.
 >- Windows Server, version 1803 or later
 >- Windows Server 2016
 >- Windows Server 2012 R2
+>- Windows Server 2008 R2 SP1
+>- Windows 8.1
+>- Windows 7 SP1
 
 Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines.
 
