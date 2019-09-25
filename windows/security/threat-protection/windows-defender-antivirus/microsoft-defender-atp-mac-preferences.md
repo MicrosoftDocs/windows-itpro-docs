@@ -66,7 +66,7 @@ Whether real-time protection (scan files as they are accessed) is enabled or not
 
 Whether the antivirus engine runs in passive mode or not. In passive mode:
 - Real-time protection is turned off
-- On demand scanning is turned on
+- On-demand scanning is turned on
 - Automatic threat remediation is turned off
 - Security intelligence updates are turned on
 - Status menu icon is hidden
@@ -253,7 +253,7 @@ The *userInterface* section of the configuration profile is used to manage the p
 
 #### Show / hide status menu icon
 
-Whether the status menu icon (shown in the top right corner of the screen) is hidden or not.
+Whether the status menu icon (shown in the top-right corner of the screen) is hidden or not.
 
 |||
 |:---|:---|
