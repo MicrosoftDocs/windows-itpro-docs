@@ -6,14 +6,15 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 03/12/2018
+ms.date: 09/23/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Policy CSP - Education
 
-
+> [!WARNING]
+> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
@@ -21,6 +22,9 @@ manager: dansimp
 ## Education policies  
 
 <dl>
+  <dd>
+    <a href="#education-allowgraphingcalculator">Education/AllowGraphingCalculator</a>
+  </dd>
   <dd>
     <a href="#education-defaultprintername">Education/DefaultPrinterName</a>
   </dd>
@@ -32,6 +36,60 @@ manager: dansimp
   </dd>
 </dl>
 
+<hr/>
+
+<!--Policy-->
+<a href="" id="education-allowgraphingcalculator"></a>**Education/AllowGraphingCalculator**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Added in next major release of Windows 10. This policy setting allows you to control whether graphing functionality is available in the Windows Calculator app. If you disable this policy setting, graphing functionality will not be accessible in the Windows Calculator app. If you enable or don't configure this policy setting, you will be able to access graphing functionality.
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Graphing Calculator*
+-   GP name: *AllowGraphingCalculator*
+-   GP path: *Windows Components/Calculator*
+-   GP ADMX file name: *Programs.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:  
+- 0 - Disabled
+- 1 (default) - Enabled
+<!--/SupportedValues-->
+<!--/Policy-->
 
 <hr/>
 
@@ -176,7 +234,7 @@ The following list shows the supported values:
 <!--Description-->
 Added in Windows 10, version 1709. Allows IT Admins to automatically provision printers based on their names (network host names).
 
-The policy value is expected to be a ```&#xF000;``` seperated list of printer names.  The OS will attempt to search and install the matching printer driver for each listed printer.
+The policy value is expected to be a ```&#xF000;``` separated list of printer names.  The OS will attempt to search and install the matching printer driver for each listed printer.
 
 <!--/Description-->
 <!--/Policy-->
@@ -190,6 +248,7 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+-   7 - Added in next major release of Windows 10.
 
 <!--/Policies-->
 
