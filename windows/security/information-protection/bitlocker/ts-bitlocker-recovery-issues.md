@@ -265,7 +265,7 @@ This issue is now resolved for all platforms in the following updates:
 
 Windows 10 1809 with Virtualization Based Security enabled (Credential Guard/Device Guard) on TPM 1.2 causing bitlocker recovery on every reboot with : "error code 0xc0210000"
 
-![Recovery Your PC/Device needs to be repaired A be 't ve•d 10 use media a ](./media/4496645_en_1.png)
+![Recovery Your PC/Device needs to be repaired A be 't ve•d 10 use media a ](./images/4496645_en_1.png)
 
 ### Cause
 
