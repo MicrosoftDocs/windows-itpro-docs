@@ -1132,6 +1132,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
+    <a href="./policy-csp-education.md#education-allowgraphingcalculator"id="education-allowgraphingcalculator">Education/AllowGraphingCalculator</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-education.md#education-defaultprintername" id="education-defaultprintername">Education/DefaultPrinterName</a>
   </dd>
   <dd>

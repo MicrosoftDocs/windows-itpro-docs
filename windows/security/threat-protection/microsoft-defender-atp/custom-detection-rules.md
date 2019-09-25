@@ -2,7 +2,7 @@
 title: Create and manage custom detection rules in Microsoft Defender ATP
 ms.reviewer: 
 description: Learn how to create and manage custom detections rules based on advanced hunting queries
-keywords: custom detections, create, manage, alerts, edit, run on demand, frequency, detection rules, advanced hunting, hunt, query, response actions, mdatp, microsoft defender atp
+keywords: custom detections, create, manage, alerts, edit, run on demand, frequency, interval, detection rules, advanced hunting, hunt, query, response actions, mdatp, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -23,7 +23,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Custom detection rules built from [Advanced hunting](overview-hunting.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured machines. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
+Custom detection rules built from [Advanced hunting](overview-hunting.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured machines. The queries run every 24 hours, generating alerts and taking response actions whenever there are matches.
 
 >[!NOTE]
 >To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.  
@@ -42,22 +42,11 @@ With the query in the query editor, select **Create detection rule** and specify
 
 - **Alert title**
 - **Severity**
-- **Frequency** (see additional guidance below)
 - **Category**
 - **Description**
 - **Recommended actions**
 
 For more information about these alert details, [read about managing alerts](manage-alerts.md).
-
-#### Rule frequency
-When saved, custom detections rules immediately run. They then run again at fixed intervals based on the frequency you choose. Rules that run less frequently will have longer lookback durations:
-
-- **Every 24 hours** — checks data from the past 30 days
-- **Every 12 hours** — checks data from the past 24 hours
-- **Every 3 hours** — checks data from the past 6 hours
-- **Every hour** — checks data from the past 2 hours
-
-Whenever a rule runs, similar detections on the same machine could be aggregated into fewer alerts, so running a rule less frequently can generate fewer alerts. Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.
 
 ### 3. Specify actions on files or machines.
 Your custom detection rule can automatically take actions on files or machines that are returned by the query.
@@ -75,6 +64,7 @@ These actions are applied to files in the `SHA1` or the `InitiatingProcessSHA1` 
 - **Quarantine file** — deletes the file from its current location and places a copy in quarantine
 
 ### 4. Click **Create** to save and turn on the rule.
+When saved, the custom detection rule immediately runs. It runs again every 24 hours to check for matches, generate alerts, and take response actions.
 
 ## Manage existing custom detection rules
 In **Settings** > **Custom detections**, you can view the list of existing custom detection rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
