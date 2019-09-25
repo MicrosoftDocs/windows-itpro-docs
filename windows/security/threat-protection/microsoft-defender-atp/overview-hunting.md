@@ -69,3 +69,4 @@ The filter selections are added as additional query elements and the results are
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Understand the schema](advanced-hunting-reference.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
+- [Custom detections overview](overview-custom-detections.md)

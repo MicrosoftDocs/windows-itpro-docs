@@ -135,6 +135,5 @@ For more information on Kusto query language and supported operators, see  [Quer
 
 ## Related topics
 - [Advanced hunting overview](overview-hunting.md)
-- [Use shared queries](advanced-hunting-shared-queries.md)
 - [Understand the schema](advanced-hunting-reference.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)

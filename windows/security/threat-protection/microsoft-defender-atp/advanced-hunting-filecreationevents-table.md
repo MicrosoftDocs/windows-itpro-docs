@@ -73,9 +73,6 @@ For information on other tables in the Advanced hunting schema, see  [the Advanc
 | IsAzureInfoProtectionApplied | boolean | Indicates whether the file is encrypted by Azure Information Protection |
 
 ## Related topics
-
 - [Advanced hunting overview](overview-hunting.md)
 - [Learn the query language](advanced-hunting.md)
-- [Use shared queries](advanced-hunting-shared-queries.md)
 - [Understand the schema](advanced-hunting-reference.md)
-- [Apply query best practices](advanced-hunting-best-practices.md)

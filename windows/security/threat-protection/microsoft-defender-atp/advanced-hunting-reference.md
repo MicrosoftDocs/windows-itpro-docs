@@ -49,5 +49,3 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 ## Related topics
 - [Advanced hunting overview](overview-hunting.md)
 - [Learn the query language](advanced-hunting.md)
-- [Use shared queries](advanced-hunting-shared-queries.md)
-- [Apply query best practices](advanced-hunting-best-practices.md)

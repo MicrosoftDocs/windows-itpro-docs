@@ -80,9 +80,6 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 
 ## Related topics
-
 - [Advanced hunting overview](overview-hunting.md)
 - [Learn the query language](advanced-hunting.md)
-- [Use shared queries](advanced-hunting-shared-queries.md)
 - [Understand the schema](advanced-hunting-reference.md)
-- [Apply query best practices](advanced-hunting-best-practices.md)

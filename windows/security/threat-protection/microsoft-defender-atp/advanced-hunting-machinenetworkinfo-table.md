@@ -49,9 +49,6 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 | IPAddresses | string | JSON array containing all the IP addresses assigned to the adapter, along with their respective subnet prefix and IP address space, such as public, private, or link-local |
 
 ## Related topics
-
 - [Advanced hunting overview](overview-hunting.md)
 - [Learn the query language](advanced-hunting.md)
-- [Use shared queries](advanced-hunting-shared-queries.md)
 - [Understand the schema](advanced-hunting-reference.md)
-- [Apply query best practices](advanced-hunting-best-practices.md)

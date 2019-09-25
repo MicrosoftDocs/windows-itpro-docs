@@ -47,9 +47,6 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 | Table | string | Table that contains the details of the event |
 
 ## Related topics
-
 - [Advanced hunting overview](overview-hunting.md)
 - [Learn the query language](advanced-hunting.md)
-- [Use shared queries](advanced-hunting-shared-queries.md)
 - [Understand the schema](advanced-hunting-reference.md)
-- [Apply query best practices](advanced-hunting-best-practices.md)

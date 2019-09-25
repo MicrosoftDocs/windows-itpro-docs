@@ -96,6 +96,5 @@ ProcessCreationEvents
 
 ## Related topics
 - [Advanced hunting overview](overview-hunting.md)
-- [Use shared queries](advanced-hunting-shared-queries.md)
 - [Learn the query language](advanced-hunting.md)
 - [Understand the schema](advanced-hunting-schema-reference.md)
