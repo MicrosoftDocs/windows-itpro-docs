@@ -1,7 +1,7 @@
 ---
 title: Operations for MBAM 1.0
 description: Operations for MBAM 1.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 2c358fa1-4795-45ab-9316-02db4aaa6d5f
 ms.reviewer: 
 manager: dansimp

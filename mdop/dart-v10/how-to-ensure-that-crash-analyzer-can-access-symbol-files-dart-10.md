@@ -1,7 +1,7 @@
 ---
 title: How to Ensure that Crash Analyzer Can Access Symbol Files
 description: How to Ensure that Crash Analyzer Can Access Symbol Files
-author: msfttracyp
+author: dansimp
 ms.assetid: 39e307bd-5d21-4e44-bed6-bf532f580775
 ms.reviewer: 
 manager: dansimp

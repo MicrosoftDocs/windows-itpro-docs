@@ -319,7 +319,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 1.  Open Microsoft Edge.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
-4.  Verify the setting **Save form entries** is greyed out.
+4.  Verify the setting **Save form entries** is grayed out.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -641,7 +641,7 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
-4.  Verify the setting **Send Do Not Track requests** is greyed out.
+4.  Verify the setting **Send Do Not Track requests** is grayed out.
 
 <!--/Validation-->
 <!--/Policy-->
@@ -3961,44 +3961,6 @@ Supported values:
 Most restricted value: 0
 <!--/SupportedValues-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Browser policies supported by HoloLens 2
-
-- [Browser/AllowAutofill](#browser-allowautofill)
-- [Browser/AllowCookies](#browser-allowcookies)
-- [Browser/AllowDoNotTrack](#browser-allowdonottrack)
-- [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
-- [Browser/AllowPopups](#browser-allowpopups)
-- [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
-- [Browser/AllowSmartScreen](#browser-allowsmartscreen)
- <!--EndHoloLens2-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Browser policies supported by HoloLens (1st gen) Commercial Suite
-
-- [Browser/AllowAutofill](#browser-allowautofill)
-- [Browser/AllowCookies](#browser-allowcookies)
-- [Browser/AllowDoNotTrack](#browser-allowdonottrack)
-- [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
-- [Browser/AllowPopups](#browser-allowpopups)
-- [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
-- [Browser/AllowSmartScreen](#browser-allowsmartscreen)
-<!--EndHoloLensBusiness-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Browser policies supported by HoloLens (1st gen) Development Edition
-
-- [Browser/AllowCookies](#browser-allowcookies)
-- [Browser/AllowDoNotTrack](#browser-allowdonottrack)
-- [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
-- [Browser/AllowPopups](#browser-allowpopups)
-- [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
-- [Browser/AllowSmartScreen](#browser-allowsmartscreen)
-<!--EndHoloLens-->
-
 <hr/>
 
 Footnotes:
@@ -4009,3 +3971,5 @@ Footnotes:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
+<!--/Policies-->
+

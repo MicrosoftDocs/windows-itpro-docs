@@ -1,11 +1,11 @@
 ---
 title: Online or hybrid deployment using Skype Hybrid Voice environment  (Surface Hub)
 description: This topic explains how to enable Skype for Business Cloud PBX with on premises PSTN connectivity via Cloud Connector Edition or Skype for Business 2015 pool.
-keywords: hybrid deployment, Skype Hybrid Voice 
+keywords: hybrid deployment, Skype Hybrid Voice
 ms.prod: surface-hub
 ms.sitesec: library
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
 ms.reviewer: 

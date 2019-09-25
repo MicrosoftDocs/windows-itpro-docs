@@ -1,7 +1,7 @@
 ---
 title: Sequencer Dialog Boxes
 description: Sequencer Dialog Boxes
-author: eavena
+author: dansimp
 ms.assetid: f660d56b-0244-4167-b077-96ad482e6b36
 ms.reviewer: 
 manager: dansimp

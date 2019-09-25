@@ -861,7 +861,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <!--/Policy-->
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.

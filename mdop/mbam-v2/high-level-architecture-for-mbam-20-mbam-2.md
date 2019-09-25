@@ -1,7 +1,7 @@
 ---
 title: High-Level Architecture for MBAM 2.0
 description: High-Level Architecture for MBAM 2.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 7f73dd3a-0b1f-4af6-a2f0-d0c5bc5d183a
 ms.reviewer: 
 manager: dansimp

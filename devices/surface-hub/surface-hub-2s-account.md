@@ -83,7 +83,7 @@ Set-MsolUserLicense -UserPrincipalName "account@YourDomain.com" -AddLicenses "co
 ### Install prerequisites
 
 - [Visual C++ 2017 Redistributable](https://aka.ms/vs/15/release/vc_redist.x64.exe)
-- [Skype for Business Online PowerShell Module](https://www.microsoft.com/en-us/download/confirmation.aspx?id=39366)
+- [Skype for Business Online PowerShell Module](https://www.microsoft.com/download/confirmation.aspx?id=39366)
 
 ```
 Import-Module LyncOnlineConnector

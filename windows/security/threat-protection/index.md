@@ -7,12 +7,12 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
+ms.author: dansimp
 author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -132,7 +132,7 @@ Microsoft Defender ATP's new managed threat hunting service provides proactive h
 Integrate Microsoft Defender Advanced Threat Protection into your existing workflows.
 - [Onboarding](microsoft-defender-atp/onboard-configure.md)
 - [API and SIEM integration](microsoft-defender-atp/configure-siem.md)
-- [Exposed APIs](microsoft-defender-atp/use-apis.md)
+- [Exposed APIs](microsoft-defender-atp/apis-intro.md)
 - [Role-based access control (RBAC)](microsoft-defender-atp/rbac.md)
 - [Reporting and trends](microsoft-defender-atp/powerbi-reports.md)
 

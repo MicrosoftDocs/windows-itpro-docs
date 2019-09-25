@@ -1330,30 +1330,13 @@ The following list shows the supported values:
 <!--/Policy-->
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
+-   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>TextInput policies supported by Microsoft Surface Hub  
-
-- [TextInput/AllowIMELogging](#textinput-allowimelogging)  
-- [TextInput/AllowIMENetworkAccess](#textinput-allowimenetworkaccess)  
-- [TextInput/AllowInputPanel](#textinput-allowinputpanel)  
-- [TextInput/AllowJapaneseIMESurrogatePairCharacters](#textinput-allowjapaneseimesurrogatepaircharacters)  
-- [TextInput/AllowJapaneseIVSCharacters](#textinput-allowjapaneseivscharacters)  
-- [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)  
-- [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)  
-- [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)  
-- [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)  
-- [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)  
-- [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)  
-  <!--EndSurfaceHub-->
-

@@ -1,7 +1,7 @@
 ---
 title: Review GPO Settings
 description: Review GPO Settings
-author: mjcaparas
+author: dansimp
 ms.assetid: e82570b2-d8ce-4bf0-8ad7-8910409f3041
 ms.reviewer: 
 manager: dansimp

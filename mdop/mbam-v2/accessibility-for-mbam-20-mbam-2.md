@@ -1,7 +1,7 @@
 ---
 title: Accessibility for MBAM 2.0
 description: Accessibility for MBAM 2.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 9cd628f1-f594-43ab-8095-4663272940a9
 ms.reviewer: 
 manager: dansimp

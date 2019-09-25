@@ -27,7 +27,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ## What’s new in the latest release
 
-Since the announcement of the public preview, Microsoft has been working non-stop to enhance the product, by listening to customer feedback. We've added management features and more granular controls for diagnostic data collection, refined the user experience, and fixed bugs.
+[What's new](microsoft-defender-atp-mac-whatsnew.md)
 
 If you have any feedback that you would like to share, submit it by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
 

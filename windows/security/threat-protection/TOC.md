@@ -71,19 +71,22 @@
 ###### [Run antivirus scan](microsoft-defender-atp/respond-machine-alerts.md#run-windows-defender-antivirus-scan-on-machines)
 ###### [Restrict app execution](microsoft-defender-atp/respond-machine-alerts.md#restrict-app-execution)
 ###### [Isolate machines from the network](microsoft-defender-atp/respond-machine-alerts.md#isolate-machines-from-the-network)
-####### [Check activity details in Action center](microsoft-defender-atp/respond-machine-alerts.md#check-activity-details-in-action-center)
+###### [Consult a threat expert](microsoft-defender-atp/respond-machine-alerts.md#consult-a-threat-expert)
+###### [Check activity details in Action center](microsoft-defender-atp/respond-machine-alerts.md#check-activity-details-in-action-center)
  
 ##### [Take response actions on a file]()
 ###### [Response actions on files](microsoft-defender-atp/respond-file-alerts.md)
 ###### [Stop and quarantine files in your network](microsoft-defender-atp/respond-file-alerts.md#stop-and-quarantine-files-in-your-network)
 ###### [Restore file from quarantine](microsoft-defender-atp/respond-file-alerts.md#restore-file-from-quarantine)
 ###### [Add indicators to block or allow a file](microsoft-defender-atp/respond-file-alerts.md#add-indicator-to-block-or-allow-a-file)
+###### [Consult a threat expert](microsoft-defender-atp/respond-file-alerts.md#consult-a-threat-expert)
 ###### [Check activity details in Action center](microsoft-defender-atp/respond-file-alerts.md#check-activity-details-in-action-center)
 ###### [Download or collect file](microsoft-defender-atp/respond-file-alerts.md#download-or-collect-file)
 ###### [Deep analysis](microsoft-defender-atp/respond-file-alerts.md#deep-analysis)
 ###### [Submit files for analysis](microsoft-defender-atp/respond-file-alerts.md#submit-files-for-analysis)
 ###### [View deep analysis reports](microsoft-defender-atp/respond-file-alerts.md#view-deep-analysis-reports)
 ###### [Troubleshoot deep analysis](microsoft-defender-atp/respond-file-alerts.md#troubleshoot-deep-analysis)
+
 
 ##### [Investigate entities using Live response]()
 ###### [Investigate entities on machines](microsoft-defender-atp/live-response.md)
@@ -100,6 +103,7 @@
 ### [Advanced hunting]()
 #### [Advanced hunting overview](microsoft-defender-atp/overview-hunting.md)
 #### [Query data using Advanced hunting](microsoft-defender-atp/advanced-hunting.md)
+#### [Stream Advanced hunting events to Azure Event Hubs](microsoft-defender-atp/raw-data-export-event-hub.md)
 #### [Advanced hunting schema reference]()
 ##### [All tables in the Advanced hunting schema](microsoft-defender-atp/advanced-hunting-reference.md)
 ##### [AlertEvents table](microsoft-defender-atp/advanced-hunting-alertevents-table.md)
@@ -114,24 +118,24 @@
 ##### [RegistryEvents table](microsoft-defender-atp/advanced-hunting-registryevents-table.md)
 #### [Advanced hunting query language best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
 
+
 #### [Custom detections]()
 ##### [Understand custom detection rules](microsoft-defender-atp/overview-custom-detections.md)
-##### [Create custom detections rules](microsoft-defender-atp/custom-detection-rules.md)
+##### [Create and manage custom detections rules](microsoft-defender-atp/custom-detection-rules.md)
 
-#### [Management and APIs]()
-##### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
-##### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
-##### [Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
-##### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
+### [Management and APIs]()
+#### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
+#### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
+#### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
 
-#### [Integrations]()
-##### [Microsoft Defender ATP integrations](microsoft-defender-atp/threat-protection-integration.md)
-##### [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
-##### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
+### [Integrations]()
+#### [Microsoft Defender ATP integrations](microsoft-defender-atp/threat-protection-integration.md)
+#### [Protect users, data, and devices with conditional access](microsoft-defender-atp/conditional-access.md)
+#### [Microsoft Cloud App Security integration overview](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
 
-#### [Information protection in Windows overview]()
-##### [Windows integration](microsoft-defender-atp/information-protection-in-windows-overview.md)
-##### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
+### [Information protection in Windows overview]()
+#### [Windows integration](microsoft-defender-atp/information-protection-in-windows-overview.md)
+#### [Use sensitivity labels to prioritize incident response](microsoft-defender-atp/information-protection-investigation.md)
 
 ### [Microsoft Threat Experts](microsoft-defender-atp/microsoft-threat-experts.md)
 
@@ -299,6 +303,7 @@
 
 
 ### [Microsoft Defender Advanced Threat Protection for Mac](windows-defender-antivirus/microsoft-defender-atp-mac.md)
+#### [What's New in Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-whatsnew.md)
 #### [Deploy Microsoft Defender Advanced Threat Protection for Mac]()
 ##### [Microsoft Intune-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-intune.md)
 ##### [JAMF-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-jamf.md)
@@ -399,7 +404,6 @@
 ####### [Get domain related alerts](microsoft-defender-atp/get-domain-related-alerts.md)
 ####### [Get domain related machines](microsoft-defender-atp/get-domain-related-machines.md)
 ####### [Get domain statistics](microsoft-defender-atp/get-domain-statistics.md)
-####### [Is domain seen in organization (Deprecated)](microsoft-defender-atp/is-domain-seen-in-org.md)
 
 ###### [File]()
 ####### [File methods and properties](microsoft-defender-atp/files.md)
@@ -410,9 +414,7 @@
 
 ###### [IP]()
 ####### [Get IP related alerts](microsoft-defender-atp/get-ip-related-alerts.md)
-####### [Get IP related machines (Deprecated)](microsoft-defender-atp/get-ip-related-machines.md)
 ####### [Get IP statistics](microsoft-defender-atp/get-ip-statistics.md)
-####### [Is IP seen in organization (Deprecated)](microsoft-defender-atp/is-ip-seen-org.md)
 
 ###### [User]()
 ####### [User methods](microsoft-defender-atp/user.md)
@@ -433,7 +435,6 @@
 ##### [Get CVE-KB map](microsoft-defender-atp/get-cvekbmap-collection.md)
 
 #### [API for custom alerts (Deprecated)]()
-##### [Enable the custom threat intelligence application (Deprecated)](microsoft-defender-atp/enable-custom-ti.md)
 ##### [Use the threat intelligence API to create custom alerts (Deprecated)](microsoft-defender-atp/use-custom-ti.md)
 ##### [Create custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/custom-ti-api.md)
 ##### [PowerShell code examples (Deprecated)](microsoft-defender-atp/powershell-example-code.md)
@@ -441,13 +442,13 @@
 ##### [Experiment with custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/experiment-custom-ti.md)
 ##### [Troubleshoot custom threat intelligence issues (Deprecated)](microsoft-defender-atp/troubleshoot-custom-ti.md)
 
-#### [Pull alerts to your SIEM tools]()
-##### [Learn about different ways to pull alerts](microsoft-defender-atp/configure-siem.md)
+#### [Pull detections to your SIEM tools]()
+##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
 ##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
-##### [Configure Splunk to pull alerts](microsoft-defender-atp/configure-splunk.md)
-##### [Configure HP ArcSight to pull alerts](microsoft-defender-atp/configure-arcsight.md)
-##### [Microsoft Defender ATP SIEM alert API fields](microsoft-defender-atp/api-portal-mapping.md)
-##### [Pull alerts using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
+##### [Configure Splunk to pull detections](microsoft-defender-atp/configure-splunk.md)
+##### [Configure HP ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
+##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
+##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
 
 #### [Reporting]()
@@ -455,8 +456,11 @@
 ##### [Threat protection reports](microsoft-defender-atp/threat-protection-reports.md)
 ##### [Machine health and compliance reports](microsoft-defender-atp/machine-reports.md)
 
-#### [Interoperability]()
+#### [Partners & APIs]()
 ##### [Partner applications](microsoft-defender-atp/partner-applications.md)
+##### [Connected applications](microsoft-defender-atp/connected-applications.md)
+##### [API explorer](microsoft-defender-atp/api-explorer.md)
+
 
 #### [Manage machine configuration]()
 ##### [Ensure your machines are configured properly](microsoft-defender-atp/configure-machines.md)
@@ -502,7 +506,6 @@
   
 #### [Rules]()
 ##### [Manage suppression rules](microsoft-defender-atp/manage-suppression-rules.md)
-##### [Manage automation allowed/blocked lists](microsoft-defender-atp/manage-automation-allowed-blocked-list.md)
 ##### [Manage indicators](microsoft-defender-atp/manage-indicators.md)
 ##### [Manage automation file uploads](microsoft-defender-atp/manage-automation-file-uploads.md)
 ##### [Manage automation folder exclusions](microsoft-defender-atp/manage-automation-folder-exclusions.md)

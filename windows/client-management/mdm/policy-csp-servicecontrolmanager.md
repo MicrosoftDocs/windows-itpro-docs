@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - ServiceControlManager
 description: Policy CSP - ServiceControlManager
-ms.author: Heidi.Lohr
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -97,9 +97,6 @@ Supported values:
 
 <!--/Validation-->
 <!--/Policy-->
-
-<!--/Policies-->
-
 <hr/>
 
 Footnotes:
@@ -110,3 +107,5 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+<!--/Policies-->
+

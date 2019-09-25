@@ -14,7 +14,7 @@ ms.date: 04/19/2017
 
 Microsoft BitLocker Administration and Monitoring (MBAM) 2.5 provides a simplified administrative interface that you can use to manage BitLocker Drive Encryption. You configure MBAM Group Policy Templates that enable you to set BitLocker Drive Encryption policy options that are appropriate for your enterprise, and then use them to monitor client compliance with those policies. You can also report on the encryption status of an individual computer and on the enterprise as a whole. In addition, you can access recovery key information when users forget their PIN or password or when their BIOS or boot record changes. For a more detailed description of MBAM, see [About MBAM 2.5](about-mbam-25.md).
 
-To obtain MBAM, see [How Do I Get MDOP](index.md#how-to-get-mdop).
+To obtain MBAM, see [How Do I Get MDOP](https://docs.microsoft.com/microsoft-desktop-optimization-pack/index#how-to-get-mdop).
 
 ## Outline
 

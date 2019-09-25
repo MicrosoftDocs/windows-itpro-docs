@@ -18,7 +18,7 @@ ms.topic: article
 **Applies to**
 
 - Windows 10 Mobile
-- [Windows 10 IoT Mobile](https://www.microsoft.com/en-us/WindowsForBusiness/windows-iot)
+- [Windows 10 IoT Mobile](https://www.microsoft.com/WindowsForBusiness/windows-iot)
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 

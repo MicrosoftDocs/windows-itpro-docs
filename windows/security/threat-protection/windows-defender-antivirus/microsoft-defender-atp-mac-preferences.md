@@ -35,6 +35,9 @@ This topic describes the structure of this profile (including a recommended prof
 
 The configuration profile is a .plist file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
 
+>[!CAUTION]
+>The layout of the configuration profile depends on the management console that you are using. The following sections contain examples of configuration profiles for JAMF and Intune.
+
 The top level of the configuration profile includes product-wide preferences and entries for subareas of the product, which are explained in more detail in the next sections.
 
 ### Antivirus engine preferences
@@ -58,6 +61,23 @@ Whether real-time protection (scan files as they are accessed) is enabled or not
 | **Key** | enableRealTimeProtection |
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
+
+#### Enable / disable passive mode
+
+Whether the antivirus engine runs in passive mode or not. In passive mode:
+- Real-time protection is turned off
+- On demand scanning is turned on
+- Automatic threat remediation is turned off
+- Security intelligence updates are turned on
+- Status menu icon is hidden
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | passiveMode |
+| **Data type** | Boolean |
+| **Possible values** | false (default) <br/> true |
+| **Comments** | Available in Microsoft Defender ATP version 100.67.60 or higher. |
 
 #### Scan exclusions
 
@@ -210,6 +230,28 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
 
+### User interface preferences
+
+The *userInterface* section of the configuration profile is used to manage the preferences of the user interface of the product.
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | userInterface |
+| **Data type** | Dictionary (nested preference) |
+| **Comments** | See the following sections for a description of the dictionary contents. |
+
+#### Show / hide status menu icon
+
+Whether the status menu icon (shown in the top right corner of the screen) is hidden or not.
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | hideStatusMenuIcon |
+| **Data type** | Boolean |
+| **Possible values** | false (default) <br/> true |
+
 ## Recommended configuration profile
 
 To get started, we recommend the following configuration profile for your enterprise to take advantage of all protection features that Microsoft Defender ATP provides.
@@ -221,6 +263,8 @@ The following configuration profile will:
   - **Archive bombs** (file with a high compression rate) are audited to the product logs
 - Enable cloud delivered protection
 - Enable automatic sample submission
+
+### JAMF profile
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -258,9 +302,90 @@ The following configuration profile will:
 </plist>
 ```
 
+### Intune profile
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
+        <key>PayloadUUID</key>
+        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadOrganization</key>
+        <string>Microsoft</string>
+        <key>PayloadIdentifier</key>
+        <string>com.microsoft.wdav</string>
+        <key>PayloadDisplayName</key>
+        <string>Microsoft Defender ATP settings</string>
+        <key>PayloadDescription</key>
+        <string>Microsoft Defender ATP configuration settings</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                <key>PayloadType</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft</string>
+                <key>PayloadIdentifier</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadDisplayName</key>
+                <string>Microsoft Defender ATP configuration settings</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>antivirusEngine</key>
+                <dict>
+                    <key>enableRealTimeProtection</key>
+                    <true/>
+                    <key>threatTypeSettings</key>
+                    <array>
+                        <dict>
+                            <key>key</key>
+                            <string>potentially_unwanted_application</string>
+                            <key>value</key>
+                            <string>block</string>
+                        </dict>
+                        <dict>
+                            <key>key</key>
+                            <string>archive_bomb</string>
+                            <key>value</key>
+                            <string>audit</string>
+                        </dict>
+                    </array>
+                </dict>
+                <key>cloudService</key>
+                <dict>
+                    <key>enabled</key>
+                    <true/>
+                    <key>automaticSampleSubmission</key>
+                    <true/>
+                </dict>
+            </dict>
+        </array>
+    </dict>
+</plist>
+```
+
 ## Full configuration profile example
 
 The following configuration profile contains entries for all settings described in this document and can be used for more advanced scenarios where you want more control over the product.
+
+### JAMF profile
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
@@ -271,6 +396,8 @@ The following configuration profile contains entries for all settings described 
     <dict>
         <key>enableRealTimeProtection</key>
         <true/>
+        <key>passiveMode</key>
+        <false/>
         <key>exclusions</key>
         <array>
             <dict>
@@ -325,7 +452,129 @@ The following configuration profile contains entries for all settings described 
         <key>automaticSampleSubmission</key>
         <true/>
     </dict>
+    <key>userInterface</key>
+    <dict>
+        <key>hideStatusMenuIcon</key>
+        <false/>
+    </dict>
 </dict>
+</plist>
+```
+
+### Intune profile
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
+        <key>PayloadUUID</key>
+        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadOrganization</key>
+        <string>Microsoft</string>
+        <key>PayloadIdentifier</key>
+        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+        <key>PayloadDisplayName</key>
+        <string>Microsoft Defender ATP settings</string>
+        <key>PayloadDescription</key>
+        <string>Microsoft Defender ATP configuration settings</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                <key>PayloadType</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft</string>
+                <key>PayloadIdentifier</key>
+                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                <key>PayloadDisplayName</key>
+                <string>Microsoft Defender ATP configuration settings</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>antivirusEngine</key>
+                <dict>
+                    <key>enableRealTimeProtection</key>
+                    <true/>
+                    <key>passiveMode</key>
+                    <false/>
+                    <key>exclusions</key>
+                    <array>
+                        <dict>
+                            <key>$type</key>
+                            <string>excludedPath</string>
+                            <key>isDirectory</key>
+                            <false/>
+                            <key>path</key>
+                            <string>/var/log/system.log</string>
+                        </dict>
+                        <dict>
+                            <key>$type</key>
+                            <string>excludedPath</string>
+                            <key>isDirectory</key>
+                            <true/>
+                            <key>path</key>
+                            <string>/home</string>
+                        </dict>
+                        <dict>
+                            <key>$type</key>
+                            <string>excludedFileExtension</string>
+                            <key>extension</key>
+                            <string>pdf</string>
+                        </dict>
+                    </array>
+                    <key>allowedThreats</key>
+                    <array>
+                        <string>eicar</string>
+                    </array>
+                    <key>threatTypeSettings</key>
+                    <array>
+                        <dict>
+                            <key>key</key>
+                            <string>potentially_unwanted_application</string>
+                            <key>value</key>
+                            <string>block</string>
+                        </dict>
+                        <dict>
+                            <key>key</key>
+                            <string>archive_bomb</string>
+                            <key>value</key>
+                            <string>audit</string>
+                        </dict>
+                    </array>
+                </dict>
+                <key>cloudService</key>
+                <dict>
+                    <key>enabled</key>
+                    <true/>
+                    <key>diagnosticLevel</key>
+                    <string>optional</string>
+                    <key>automaticSampleSubmission</key>
+                    <true/>
+                </dict>
+                <key>userInterface</key>
+                <dict>
+                    <key>hideStatusMenuIcon</key>
+                    <false/>
+                </dict>
+            </dict>
+        </array>
+    </dict>
 </plist>
 ```
 

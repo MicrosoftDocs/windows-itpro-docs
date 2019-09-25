@@ -180,6 +180,6 @@ The following topics provide a change history for Windows 10 ITPro TechNet libra
 [Overview of Windows as a service](update/waas-overview.md)
 <BR>[Windows 10 deployment considerations](planning/windows-10-deployment-considerations.md)
 <BR>[Windows 10 release information](https://docs.microsoft.com/windows/windows-10/release-information)
-<BR>[Windows 10 Specifications & Systems Requirements](https://www.microsoft.com/en-us/windows/windows-10-specifications)
+<BR>[Windows 10 Specifications & Systems Requirements](https://www.microsoft.com/windows/windows-10-specifications)
 <BR>[Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 <BR>[Windows 10 deployment tools](windows-deployment-scenarios-and-tools.md)

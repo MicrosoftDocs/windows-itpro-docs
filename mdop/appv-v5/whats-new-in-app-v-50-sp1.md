@@ -1,7 +1,7 @@
 ---
 title: What's new in App-V 5.0 SP1
 description: What's new in App-V 5.0 SP1
-author: msfttracyp
+author: dansimp
 ms.assetid: e97c2dbb-7b40-46a0-8137-9ee4fc2bd071
 ms.reviewer: 
 manager: dansimp

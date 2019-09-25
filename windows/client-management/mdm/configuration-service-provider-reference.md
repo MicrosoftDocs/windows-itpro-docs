@@ -2553,8 +2553,6 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-
-<!--StartCSP-->
 [WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)
 
 <!--StartSKU-->

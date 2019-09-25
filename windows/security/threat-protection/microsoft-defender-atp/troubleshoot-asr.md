@@ -79,7 +79,7 @@ To add an exclusion, see [Customize Attack surface reduction](customize-attack-s
 
 ## Report a false positive or false negative
 
-Use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/en-us/wdsi/filesubmission) to report a false negative or false positive for network protection. With an E5 subscription, you can also [provide a link to any associated alert](../microsoft-defender-atp/alerts-queue.md).
+Use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/filesubmission) to report a false negative or false positive for network protection. With an E5 subscription, you can also [provide a link to any associated alert](../microsoft-defender-atp/alerts-queue.md).
 
 ## Collect diagnostic data for file submissions
 

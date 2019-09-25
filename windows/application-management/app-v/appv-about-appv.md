@@ -42,7 +42,7 @@ Previous versions of App-V have required you to manually remove your unpublished
 
 ### App-V is now a feature in Windows 10
 
-With Windows 10, version 1607 and later releases, App-V is now included with [Windows 10 for Enterprise and Windows 10 for Education](https://www.microsoft.com/en-us/WindowsForBusiness/windows-product-home) and is no longer part of the Microsoft Desktop Optimization Pack.
+With Windows 10, version 1607 and later releases, App-V is now included with [Windows 10 for Enterprise and Windows 10 for Education](https://www.microsoft.com/WindowsForBusiness/windows-product-home) and is no longer part of the Microsoft Desktop Optimization Pack.
 
 To learn more about earlier versions of App-V, see [MDOP Information Experience](https://docs.microsoft.com/microsoft-desktop-optimization-pack/index).
 

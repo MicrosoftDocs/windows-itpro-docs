@@ -1,7 +1,7 @@
 ---
 title: Set a Default Template
 description: Set a Default Template
-author: mjcaparas
+author: dansimp
 ms.assetid: 07208b6b-cb3a-4f6c-9c84-36d4dc1486d8
 ms.reviewer: 
 manager: dansimp

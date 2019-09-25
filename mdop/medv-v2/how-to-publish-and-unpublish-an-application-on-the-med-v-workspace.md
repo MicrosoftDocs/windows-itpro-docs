@@ -1,7 +1,7 @@
 ---
 title: How to Publish and Unpublish an Application on the MED-V Workspace
 description: How to Publish and Unpublish an Application on the MED-V Workspace
-author: levinec
+author: dansimp
 ms.assetid: fd5a62e9-0577-44d2-ae17-61c0aef78ce8
 ms.reviewer: 
 manager: dansimp

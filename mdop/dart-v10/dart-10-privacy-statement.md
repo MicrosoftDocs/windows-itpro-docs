@@ -1,7 +1,7 @@
 ---
 title: DaRT 10 Privacy Statement
 description: DaRT 10 Privacy Statement
-author: msfttracyp
+author: dansimp
 ms.assetid: 27ad36fe-6816-4fe8-8838-500c05b5b184
 ms.reviewer: 
 manager: dansimp

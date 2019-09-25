@@ -1,7 +1,7 @@
 ---
 title: MBAM 1.0 Supported Configurations
 description: MBAM 1.0 Supported Configurations
-author: msfttracyp
+author: dansimp
 ms.assetid: 1f5ac58e-6a3f-47df-8a9b-4b57631ab9ee
 ms.reviewer: 
 manager: dansimp
