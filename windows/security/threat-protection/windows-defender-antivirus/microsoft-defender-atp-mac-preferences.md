@@ -149,6 +149,16 @@ Used to exclude content from the scan by file name.
 | **Possible values** | any string |
 | **Comments** | Applicable only if *$type* is *excludedFileName* |
 
+#### Allowed threats
+
+List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | allowedThreats |
+| **Data type** | Array of strings |
+
 #### Threat type settings
 
 The *threatTypeSettings* preference in the antivirus engine is used to control how certain threat types are handled by the product.
@@ -425,7 +435,7 @@ The following configuration profile contains entries for all settings described 
         </array>
         <key>allowedThreats</key>
         <array>
-            <string>eicar</string>
+            <string>EICAR-Test-File (not a virus)</string>
         </array>
         <key>threatTypeSettings</key>
         <array>
@@ -540,7 +550,7 @@ The following configuration profile contains entries for all settings described 
                     </array>
                     <key>allowedThreats</key>
                     <array>
-                        <string>eicar</string>
+                        <string>EICAR-Test-File (not a virus)</string>
                     </array>
                     <key>threatTypeSettings</key>
                     <array>
