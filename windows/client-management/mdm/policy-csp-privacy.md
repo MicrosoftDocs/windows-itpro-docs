@@ -1054,7 +1054,7 @@ ADMX Info:
 -	GP English name: *Let Windows apps access background spatial perception*
 -	GP name: *LetAppsAccessBackgroundSpatialPerception*
 -	GP element: *LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps_List*
--	GP path: Windows *Components/App Privacy*
+-	GP path: *Windows Components/App Privacy*
 -	GP ADMX file name: *AppPrivacy.admx*
 <!--/ADMXMapped-->
 <!--SupportedValues-->
