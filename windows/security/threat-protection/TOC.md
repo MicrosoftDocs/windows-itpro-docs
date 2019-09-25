@@ -121,7 +121,7 @@
 
 #### [Custom detections]()
 ##### [Understand custom detection rules](microsoft-defender-atp/overview-custom-detections.md)
-##### [Create custom detections rules](microsoft-defender-atp/custom-detection-rules.md)
+##### [Create and manage custom detections rules](microsoft-defender-atp/custom-detection-rules.md)
 
 ### [Management and APIs]()
 #### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
@@ -303,6 +303,7 @@
 
 
 ### [Microsoft Defender Advanced Threat Protection for Mac](windows-defender-antivirus/microsoft-defender-atp-mac.md)
+#### [What's New in Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-whatsnew.md)
 #### [Deploy Microsoft Defender Advanced Threat Protection for Mac]()
 ##### [Microsoft Intune-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-intune.md)
 ##### [JAMF-based deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-jamf.md)

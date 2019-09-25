@@ -65,7 +65,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Allows the user to invoke any system user interface by swiping in from any screen edge using touch.
+Added in Windows 10, version 1607. Allows the user to invoke any system user interface by swiping in from any screen edge using touch.
 
 The easiest way to verify the policy is to restart the explorer process or to reboot after the policy is applied. And then try to swipe from the right edge of the screen. The desired result is for Action Center to not be invoked by the swipe. You can also enter tablet mode and attempt to swipe from the top of the screen to rearrange. That will also be disabled.
 
