@@ -395,7 +395,7 @@ The following list shows the supported values:
 
 -   0 – Disabled.
 -   1 (default) – Permits Microsoft to configure device settings only.
--   2 – Allows Microsoft to conduct full experimentations.
+-   2 – Allows Microsoft to conduct full experimentation.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -532,9 +532,9 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Force Location Off. All Location Privacy settings are toggled off and greyed out. Users cannot change the settings, and no apps are allowed access to the Location service, including Cortana and Search.
+-   0 – Force Location Off. All Location Privacy settings are toggled off and grayed out. Users cannot change the settings, and no apps are allowed access to the Location service, including Cortana and Search.
 -   1 (default) – Location service is allowed. The user has control and can change Location Privacy settings on or off.
--   2 – Force Location On. All Location Privacy settings are toggled on and greyed out. Users cannot change the settings and all consent permissions will be automatically suppressed.
+-   2 – Force Location On. All Location Privacy settings are toggled on and grayed out. Users cannot change the settings and all consent permissions will be automatically suppressed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -763,16 +763,14 @@ Specifies whether to allow the user to factory reset the device by using control
 
 Most restricted value is 0.
 
-<!--/Description-->
 > [!TIP]
 > This policy is also applicable to Windows 10 and not exclusive to phone.
-> <!--SupportedValues-->
-> The following list shows the supported values:
-> orted values:
+<!--/Description-->
 
+<!--SupportedValues-->
+The following list shows the supported values:  
 -   0 – Not allowed.
 -   1 (default) – Allowed to reset to factory default settings.
-
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -1006,10 +1004,10 @@ This policy setting determines whether people can change their own telemetry lev
 
 If you set this policy setting to "Disable Telemetry opt-in Settings", telemetry levels are disabled in Settings, preventing people from changing them.
 
-If you set this policy setting to "Enable Telemetry opt-in Setings" or don't configure this policy setting, people can change their own telemetry levels in Settings.
+If you set this policy setting to "Enable Telemetry opt-in Settings" or don't configure this policy setting, people can change their own telemetry levels in Settings.
 
-Note:
-Set the Allow Telemetry policy setting to prevent people from sending diagnostic data to Microsoft beyond your organization's limit.
+> [!Note]
+> Set the Allow Telemetry policy setting to prevent people from sending diagnostic data to Microsoft beyond your organization's limit.
 
 <!--/Description-->
 <!--ADMXMapped-->
