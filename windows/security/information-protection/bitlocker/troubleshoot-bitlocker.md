@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot BitLocker
+title: Guidelines for troubleshooting BitLocker
 description: 
 ms.reviewer: 
 ms.prod: w10
@@ -11,15 +11,14 @@ manager: kaushika
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 9/19/2019
+ms.date: 9/24/2019
 ---
 
-# Troubleshoot BitLocker
+# Guidelines for troubleshooting BitLocker
 
+This section addresses common issues and provides troubleshooting guidelines for BitLocker. This article provides pointers for starting the troubleshooting process, including what data to collect and what settings to check to narrow down where the issue may have occurred.
 
-## Collect data
-
-### Review the Event logs on the affected computer
+## Review the event logs
 
 Open Event Viewer and review the following logs under applications and services logs\\Microsoft\\Windows:
 
@@ -29,7 +28,7 @@ Open Event Viewer and review the following logs under applications and services 
 > [!NOTE]
 > If you intend to contact Microsoft Support, we recommend that you export the logs listed in this section. Use the [wevtutil.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/wevtutil) command-line tool to export logs.
 
-### Check the status of the components that BitLocker uses
+## Gather status information from the BitLocker technologies
 
 Open an elevated Windows PowerShell window, and run each of the following commands:
 
@@ -40,7 +39,7 @@ Open an elevated Windows PowerShell window, and run each of the following comman
 |[**manage-bde c: <br />-protectors -get \>&nbsp;C:\\Protectors**](https://docs.microsoft.com/windows-server/administration/windows-commands/manage-bde-protectors) |Exports information about the protection methods that are used for the BitLocker encryption key.  |
 |[**reagentc /info \> C:\\reagent.txt**](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reagentc-command-line-options) |Exports information about the current status of the Windows Recovery Environment (Windows RE) and any available recovery image on an online or offline image |
 
-### Other information to gather
+## Review the configuration information
 
 1. Open an elevated Command Prompt window, and run the following commands:
 
@@ -73,11 +72,11 @@ If the information that you have examined so far indicates a specific problem (f
 
 Resolving issues that do not have obvious causes depends on exactly which components are involved and what behavior you see. The information you have gathered can help you narrow down the areas to investigate.
 
-- If you are working with a device that is managed by Microsoft Intune, see [Enforcing BitLocker policies by using Intune--known issues](ts-bitlocker-intune-issues.md).
-- If BitLocker does not encrypt a drive and you note errors or events that are related to the TPM, see [BitLocker and TPM--known issues](ts-bitlocker-tpm-issues.md).
-- If BitLocker does not start or cannot encrypt a drive, see [BitLocker cannot encrypt a drive--known issues](ts-bitlocker-cannot-encrypt-issues.md).
-- If BitLocker Network Unlock does not behave as expected, see [BitLocker Network Unlock--known issues](ts-bitlocker-network-unlock-issues.md.md).
-- If BitLocker does not behave as expected when you recover an encrypted drive, or if you did not expect BitLocker to recover the drive, see [BitLocker recovery--known issues](ts-bitlocker-recovery-issues.md).
-- If BitLocker does not behave as expected or the encrypted drive does not behave as expected, see [BitLocker configuration--known issues](ts-bitlocker-config-issues.md).
+- If you are working with a device that is managed by Microsoft Intune, see [Enforcing BitLocker policies by using Intune&mdash;known issues](ts-bitlocker-intune-issues.md).
+- If BitLocker does not encrypt a drive and you note errors or events that are related to the TPM, see [BitLocker and TPM&mdash;known issues](ts-bitlocker-tpm-issues.md).
+- If BitLocker does not start or cannot encrypt a drive, see [BitLocker cannot encrypt a drive&mdash;known issues](ts-bitlocker-cannot-encrypt-issues.md).
+- If BitLocker Network Unlock does not behave as expected, see [BitLocker Network Unlock&mdash;known issues](ts-bitlocker-network-unlock-issues.md).
+- If BitLocker does not behave as expected when you recover an encrypted drive, or if you did not expect BitLocker to recover the drive, see [BitLocker recovery&mdash;known issues](ts-bitlocker-recovery-issues.md).
+- If BitLocker does not behave as expected or the encrypted drive does not behave as expected, see [BitLocker configuration&mdash;known issues](ts-bitlocker-config-issues.md).
 
 If you decide to contact Microsoft Support to resolve your issue, remember to keep the information that you have gathered handy.
