@@ -20,13 +20,11 @@ ms.date: 9/19/2019
 
 <a id="list"></a>
 
-- [](#scenario-1)
-- [](#scenario-2)
+- [Azure AD: Windows Hello for Business and single sign-on do not work](#scenario-1)
+- [Loading the management console failed. The device that is required by the cryptographic provider is not ready for use](#scenario-2)
+- [Azure AD-joined devices fail because of a TPM issue](#scenario-3)
 
-## Scenario 1
-
-
-### Symptom: The TPM is defending against dictionary attacks and is in a time-out period (specific to AAD)
+## <a id="scenario-1"></a>Azure AD: Windows Hello for Business and single sign-on do not work
 
 Not able to acquire a PRT can lead to various issues
 
@@ -77,33 +75,9 @@ To clear / reset the TPM:
 
    You will be prompted to restart the computer. During the restart, you might be prompted by the UEFI to press a button to confirm that you wish to clear the TPM. After the PC restarts, your TPM will be automatically prepared for use by Windows 10.  
 
+[Back to list](#list)
 
-### EST/WIN8.1/ Unable to enable BitLocker ,getting error msg "The TPM is defending against dictionary attacks and is in a time-out period." on Surface pro 3 named "{NAMEPII}-8744853".
-
-Unable to enable BitLocker ,getting error msg "The TPM is defending against dictionary attacks and is in a time-out period." on Surface pro 3 named "{NAMEPII}-8744853".
-
-### Cause
-
-TPM Lockout
-
-### Resolution
-
-open Powershell as Admin $Tpm = Get-WmiObject -class Win32\_Tpm -namespace "root\\CIMv2\\Security\\MicrosoftTpm" $ConfirmationStatus = $Tpm.GetPhysicalPresenceConfirmationStatus(22).ConfirmationStatus if($ConfirmationStatus -ne 4) {$Tpm.SetPhysicalPresenceRequest(22)} - Reboot - if prompted at boot screen agree with F12 - Try again to configure BitLocker (we use some scripts, but the GUI is also ok J)
-
-### PTSMEDEP\PRE\W8.1\unable to enable bitlocker with error The TPM is defending against dictionary attacks and is in a time-out period
-
-[PTSMEDEP\PRE\W8.1\unable to enable bitlocker with error The TPM is defending against dictionary attacks and is in a time-out period.](https://internal.support.services.microsoft.com/help/4327939)
-
-This Surface Pro 3 was shipped with Windows 10 and reimaged with Windows 8.1.  BitLocker can not be enabled.
-The TPM on this computer is currently locked out.
-
-Classification Path: Routing Surface Pro\Software Issues (Windows 8.1)\BitLocker or device encryption
-
-### Resolution
-
-When we tried to Prepare the TPM using tpm.msc console of the Surface Pro 3, we received the error "The TPM is defending against dictionary attacks and is in a time-out period." We rebooted into BIOS, disabled TPM and when we booted into OS, the tpm.msc showed “Compatible Trusted Platform Module (TPM) cannot be found on this computer. verify that this computer has 1.2 TPM and its is turned on in the BIOS “ We then booted into BIOS, enabled the TPM and then we found that it required us to clear the existing TPM keys and rebooted. Now, we were able to successfully prepare the TPM and the TPM state was “ready for use”. Now, we started the encryption on OS drive with TPM protector and the encryption was successful.
-
-## Scenario 2: Loading the management console failed. The device that is required by the cryptographic provider is not ready for use.
+## <a id="scenario-2"></a>Loading the management console failed. The device that is required by the cryptographic provider is not ready for use
 
 Reference: [https://internal.support.services.microsoft.com/help/4313961](https://internal.support.services.microsoft.com/help/4313961)
 
@@ -119,9 +93,7 @@ Hardware/firmware issues within TPM.
 
 Recommended action plan: After consulting with the TPM feature team, We advised you to test this out on a different device of the same model. Apart from that we also suggested you to switch the TPM operation mode to Spec v1.2 to v2.0 and check if the issue continues to occur.Current status: As of now, you have reached out to {Namepii} to get the mainboard on the device replaced by 18th August. Post that you will be changing the operation mode of TPM to 2.0 to see if that resolves the problem. Since we don’t have any active troubleshooting plan we are closing this case temporarily for now and we will re-engage on 10 AM EST 26th Sept. to discuss this issue further. I will be sending you a meeting invite for the same.
 
-
-
-## Scenario 3: Troubleshooting hybrid Azure Active Directory joined devices failure due to TPM
+## <a id="scenario-3"></a>Azure AD-joined devices fail because of a TPM issue
 
 Reference: [https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current](https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)
 
@@ -166,57 +138,4 @@ Reference: [https://internal.support.services.microsoft.com/help/4467030](https:
 
 - **Resolution:** Transient error. Wait for the cooldown period. Join attempt after some time should succeed. More Information can be found in the article [TPM fundamentals](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#anti-hammering)
 
-## Scenario 4: Failed to backup TPM Owner Authorization information to Active Directory Domain Services. Errorcode: 0x80070005
-
-
-### Symptom: 
-Unable to backup TPM Information to ADDS.
-
-### Cause
-
-Insufficient permissions for SELF on TPM Devices Container.
-
-### Resolution  
-
-1. Problem - LDAP trace between client and DC to find cause of ACCESS DENIED error 0x80070005 - 12/20/2016 12:52 AM
-
-Errors seen in the LDAP traces : ldap\_modify call for CN=TestOU,CN=TPM Devices,DC=XYZ,DC=com which is failing with Insufficient Rights.
-
-1. Run following command to identify the TPM Attributes :
-
-Get-ADComputer -Filter {Name -like "TPMTest"} -Property 1. | Format-Table name,msTPM-TPMInformationForComputer TPMTest – Is the name of my test computer which has the attribute filled.
-
-1. Provided proper permissions of SELF:
-
-Reference: [https://internal.support.services.microsoft.com/help/4337282](https://internal.support.services.microsoft.com/help/4337282)
-
-## Scenario 5: 0x80072030 There is no such object on the server when a policy to back up TPM information to active directory is enabled
-
-Reference: [https://internal.support.services.microsoft.com/help/4319021](https://internal.support.services.microsoft.com/help/4319021)
-
-Support Topic: Routing Windows V3\Group Policy\Managing BitLocker configuration through Group Policy
-
-### Symptom: 
-
-We have already run the adprep as mention when we did a upgrade to our domain a while ago.
-
-We have GPO setup for storing the keys and tpm info as well.
-
-Prepare the TPM gives error:
-
-> 0x80072030 There is no such object on the server when a policy to back up TPM information to active directory is enabled
-
-
-
-### Cause
-
-Add-TPMSelfWriteACE.vbs {available?}
-
-### Resolution
-
-DC: Windows Server 2012 r2. The attributes include ms-TPM-OwnerInformation and msTPM-TpmInformationForComputer are present.
-
-We noticed that he had not added the self-write permissions for the computer objects. So, we downloaded the script Add-TPMSelfWriteACE.vbs and modified the value of strPathToDomain to your domain.Post modification, ran Add-TPMSelfWriteACE.vbs and it ran successfully.We then discovered that the domain and forest functional level are still at 2008 R2 and we wanted to update them first Post updating the domain and forest functional level and setting the required permissions , he confirmed that he was able to successfully back up the TPM information to Active Directory without error : “0x80072030 There is no such object on the server when a policy to back up TPM information to active directory is enabled”.
-
-- [Back up the TPM Recovery Information to AD DS](https://docs.microsoft.com/windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds)
-- [Prepare your organization for BitLocker: Planning and Policies](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies)
+[Back to list](#list)

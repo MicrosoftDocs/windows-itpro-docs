@@ -1,7 +1,7 @@
 ---
 title: BitLocker Network Unlock known issues
 description: 
-ms.reviewer: 
+ms.reviewer: kaushika
 ms.prod: w10
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,15 +11,20 @@ manager: kaushika
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 9/19/2019
+ms.date: 9/25/2019
 ---
 # BitLocker Network Unlock--known issues
 
-Use BitLocker without entering a PIN at startup
+By using the BitLocker Network Unlock feature, you can manage computers remotely without having to enter a BitLocker PIN for each computer when it starts up. Your environment must have the following configuration:
 
-The most recommended way would be to use the “Network Unlock” feature using which the device could be unlocked remotely without user intervention.
+- The computers must belong to a domain
+- The computers must have a wired connection to the corporate network
+- The corporate network must use DHCP to manage IP addresses
+- Each computer must have a DHCP drive rimplemented in its UEFI firmware
 
-For general guidelines about how to troubleshoot Network Unlock, see [Troubleshoot Network Unlock](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock#troubleshoot-network-unlock)
+For general guidelines about how to troubleshoot Network Unlock, see [How to enable Network Unlock: Troubleshoot Network Unlock](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock#troubleshoot-network-unlock)
+
+This article describes several known issues that you may encounter while using Network Unlock:
 
 <a id="list"></a>
 

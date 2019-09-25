@@ -1,7 +1,7 @@
 ---
 title: BitLocker recovery known issues
 description: 
-ms.reviewer: 
+ms.reviewer: kaushika
 ms.prod: w10
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,24 +11,23 @@ manager: kaushika
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 9/19/2019
+ms.date: 9/25/2019
 ---
 
-# BitLocker recovery--known issues
+# BitLocker recovery&mdash;known issues
+
+The following list describes common issues that can occur that prevent BitLocker from behaving as expected when recovering a drive, or may cause BitLocker to start recovery unexpectedly. The list provides links to guidance for addressing the issues.
 
 <a id="list"></a>
 
 - [Windows 10 asks for a BitLocker recovery key even though you did not set up a recovery key](#scenario-1)
-- [](#scenario-2)
-- ["Manage-bde -forcerecovery" command is unsupported for testing recovery mode on tablet devices](#scenario-3)
-- [Prompted for BitLocker recovery key after installing updates to Surface UEFI or TPM firmware on Surface device](#scenario-4)
-- [Some devices running Windows 10 with Hyper-V enabled may start into BitLocker recovery with error 0xC0210000](#scenario-5)
-- [Some devices running Windows 10 with Hyper-V enabled may start into BitLocker recovery with error 0xC0210000](#scenario-6)
-- [Intune: Troubleshooting BitLocker enforcement](#scenario-7)
+- [The recovery key for a laptop was not backed up, and the laptop is locked](#scenario-2)
+- [Tablet devices do not support **Manage-bde -forcerecovery** to test recovery mode](#scenario-3)
+- [Surface: After you install updates to Surface UEFI or TPM firmware, BitLocker prompts for the recovery key](#scenario-4)
+- [Hyper-V: After you install an update to a Hyper V-enabled computer, BitLocker prompts for the recovery key and gives error 0xC0210000](#scenario-5)
+- [Credential Guard/Device Guard on TPM 1.2: At every restart, BitLocker prompts for the recovery key and gives error 0xC0210000](#scenario-6)
 
 ## <a id="scenario-1"></a>Windows 10 asks for a BitLocker recovery key even though you did not set up a recovery key
-
-### Symptom
 
 Windows 10 prompts you for a BitLocker recovery key. However, you have not configured a BitLocker recovery key.
 
@@ -41,7 +40,7 @@ The BitLocker and Active Directory Domain Services (AD DS) FAQ addresses two sit
 
 [Back to list](#list)
 
-## <a id="scenario-2"></a>Scenario 2
+## <a id="scenario-2"></a>The recovery key for a laptop was not backed up, and the laptop is locked
 
 We have a Windows 10 Home laptop which is being used by one onsite engineers. He is in California and spilled Coffee in his laptop on Wednesday. The laptop will not work but the hard drive is good. When we hook it up to a docking station, it asks us for a bit locker encryption key to access the drive. Whomever used the laptop before must have turned on bit locker. We have no way of knowing the bit locker password. We need the data in My Documents. It is a SSD drive and is in good condition.
 
@@ -49,11 +48,9 @@ The BitLocker Windows Management Instrumentation (WMI) interface does allow admi
 
 [Back to list](#list)
 
-## <a id="scenario-3"></a>"Manage-bde -forcerecovery" command is unsupported for testing recovery mode on tablet devices
+## <a id="scenario-3"></a>Tablet devices do not support Manage-bde -forcerecovery to test recovery mode
 
 Reference: <https://internal.support.services.microsoft.com/help/3119451/manage-bde-forcerecovery-command-is-unsupported-for-testing-recovery-m>
-
-### Symptoms
 
 Assume that you have a tablet or slate device, and you're trying to test the recovery method by running the following command:
 
@@ -92,11 +89,9 @@ To resolve this issue, follow these steps:
 
 [Back to list](#list)
 
-## <a id="scenario-4"></a>Prompted for BitLocker recovery key after installing updates to Surface UEFI or TPM firmware on Surface device
+## <a id="scenario-4"></a>Surface: After you install updates to Surface UEFI or TPM firmware, BitLocker prompts for the recovery key
 
 Reference: <https://internal.support.services.microsoft.com/help/4057282/bitlocker-recovery-key-prompt-after-surface-uefi-tpm-firmware-update>
-
-### Symptoms
 
 You encounter one or more of the following symptoms on your Surface device:
 
@@ -220,11 +215,9 @@ To reset your device by using a Surface recovery image: Follow the instructions
 
 [Back to list](#list)
 
-## <a id="scenario-5"></a>Some devices running Windows 10 with Hyper-V enabled may start into BitLocker recovery with error 0xC0210000
+## <a id="scenario-5"></a>Hyper-V: After you install an update to a Hyper V-enabled computer, BitLocker prompts for the recovery key and gives error 0xC0210000
 
 Reference: <https://internal.support.services.microsoft.com/help/4505821/some-devices-running-windows-10-with-hyper-v-enabled-may-start-into-bi>
-
-### Symptoms
 
 After installing an affected update and restarting, some devices running Windows 10, Version 1703, Windows 10, version 1607 or Windows Server 2016 with Hyper-V enabled may enter BitLocker recovery mode and receive an error, "0xC0210000".
 
@@ -260,7 +253,6 @@ To prevent this issue, execute the following command to temporarily suspend BitL
 > [!NOTE]
 > This command will suspend BitLocker for one restart of the device (`-rc 1` option only works inside OS and does not work from recovery environment).
 
-
 {check update KBs--WA no longer needed with updates?}
 This issue is now resolved for all platforms in the following updates:  
 
@@ -269,3 +261,22 @@ This issue is now resolved for all platforms in the following updates:
 
 [Back to list](#list)
 
+## <a id="scenario-6"></a> Credential Guard/Device Guard on TPM 1.2: At every restart, BitLocker prompts for the recovery key and gives error 0xC0210000
+
+Windows 10 1809 with Virtualization Based Security enabled (Credential Guard/Device Guard) on TPM 1.2 causing bitlocker recovery on every reboot with : "error code 0xc0210000"
+
+![Recovery Your PC/Device needs to be repaired A be 't ve•d 10 use media a ](./media/4496645_en_1.png)
+
+### Cause
+
+TPM 1.2 is not supported for use with “SecureLaunch” and this is well documented under minimum requirements for Secure Launch on the below URL.
+
+[System Guard Secure Launch and SMM protection: Requirements Met by System Guard Enabled Machines](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection\#requirements-met-by-system-guard-enabled-machines)
+
+### Resolution
+
+Once you will disable the secure Launch in policy on devices with TPM 1.2, it will fix the issue.
+
+![](./images/4496674_en_1.png)
+
+[Back to list](#list)

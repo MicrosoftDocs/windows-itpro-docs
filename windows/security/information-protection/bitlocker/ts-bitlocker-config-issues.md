@@ -1,7 +1,7 @@
 ---
 title: BitLocker configuration known issues
 description: 
-ms.reviewer: 
+ms.reviewer: kaushika
 ms.prod: w10
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,10 +11,12 @@ manager: kaushika
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 9/19/2019
+ms.date: 9/25/2019
 ---
 
 # BitLocker configuration&mdash;known issues
+
+The following list describes common issues that involve your BitLocker configuration and BitLocker's general functionality, linked to guidance for addressing the issues.
 
 <a id="list"></a>
 

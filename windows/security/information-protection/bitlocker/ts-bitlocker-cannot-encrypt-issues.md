@@ -18,12 +18,15 @@ ms.date: 9/19/2019
 
 The following list describes common issues that can occur that prevent BitLocker from encrypting a drive, linked to guidance for addressing the issues.
 
+> [!NOTE]
+> If you have determined that your BitLocker issue involves the Trusted Platform Module (TPM), see [BitLocker cannot encrypt a drive--known TPM issues](ts-bitlocker-cannot-encrypt-tpm-issues.md).
+
 <a id="list"></a>
 
-- [Cannot turn on BitLocker encryption on Windows 10 Professional](#scenario-1)
+- [Error 0x80310059 when you turn on BitLocker encryption on Windows 10 Professional](#scenario-1)
 - ["Access is denied" message when you try to encrypt removable drives](#scenario-2)
 
-## <a id="scenario-1"></a>Cannot turn on BitLocker encryption on Windows 10 Professional
+## <a id="scenario-1"></a>Error 0x80310059 when you turn on BitLocker encryption on Windows 10 Professional
 
 When you turn on BitLocker encryption on a computer that is running Windows 10 Professional, you receive a message that resembles the following:
 
@@ -69,7 +72,7 @@ You receive this message on any computer that runs Windows 10 version 1607 or ve
 
 The security descriptor of the BitLocker Drive Encryption service (BDESvc) has an incorrect entry. Instead of NT AUTHORITY\Authenticated Users, the security descriptor uses NT AUTHORITY\INTERACTIVE.
 
-To verify the presence of this issue, follow these steps:
+To verify that this issue has occurred, follow these steps:
 
 1. On an affected computer, open an elevated Command Prompt window and an elevated Powershell window.
 
@@ -107,5 +110,3 @@ To verify the presence of this issue, follow these steps:
 The issue should now be resolved.
 
 [Back to list](#list)
-
-
