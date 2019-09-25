@@ -1,27 +1,26 @@
 ---
 title: Advanced hunting best practices in Microsoft Defender ATP
 description: Learn about Advanced hunting best practices such as what filters and keywords to use to effectively query data.
-keywords: advanced hunting, best practices, keyword, filters, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics
+keywords: advanced hunting, best practices, keyword, filters, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: lomayor
+author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: conceptual
-ms.date: 04/24/2018
+ms.topic: article
+ms.date: 09/25/2019
 ---
 
-# Advanced hunting query best practices in Microsoft Defender ATP
+# Advanced hunting query best practices
 
 **Applies to:**
-
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-bestpractices-abovefoldlink)
@@ -36,7 +35,7 @@ The following best practices serve as a guideline of query performance best prac
 - When joining between two tables, specify the table with fewer rows first.
 - When joining between two tables, project only needed columns from both sides of the join.
 
->[!Tip]
+>[!TIP]
 >For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
 ## Query tips and pitfalls
@@ -94,3 +93,9 @@ ProcessCreationEvents
 ```
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)
+
+## Related topics
+- [Advanced hunting overview](overview-hunting.md)
+- [Use shared queries](advanced-hunting-shared-queries.md)
+- [Learn the query language](advanced-hunting.md)
+- [Understand the schema](advanced-hunting-schema-reference.md)

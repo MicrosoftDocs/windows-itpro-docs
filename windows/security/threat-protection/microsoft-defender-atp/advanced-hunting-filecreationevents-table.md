@@ -75,6 +75,7 @@ For information on other tables in the Advanced hunting schema, see  [the Advanc
 ## Related topics
 
 - [Advanced hunting overview](overview-hunting.md)
-- [All Advanced hunting tables](advanced-hunting-reference.md)
-- [Advanced hunting query best practices](advanced-hunting-best-practices.md)
-- [Query data using Advanced hunting](advanced-hunting.md)
+- [Learn the query language](advanced-hunting.md)
+- [Use shared queries](advanced-hunting-shared-queries.md)
+- [Understand the schema](advanced-hunting-reference.md)
+- [Apply query best practices](advanced-hunting-best-practices.md)
