@@ -34,6 +34,7 @@ This update to the Surface Hub includes quality improvements and security fixes.
  * Addressed an issue with the Windows Team Edition shell background displaying incorrectly.
  * Addressed an issue with Start Menu layout persistence when configured using MDM policy.
  * Fixed an issue in Microsoft Edge that occurs when browsing some internal websites.
+ * Fixed an issue in Skype for Business that occurs when presenting in full-screen mode.
 
 Please refer to the [Surface Hub Admin guide](https://docs.microsoft.com/surface-hub/) for enabling/disabling device features and services.
 *[KB4503289](https://support.microsoft.com/help/4503289)
