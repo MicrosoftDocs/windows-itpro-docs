@@ -63,9 +63,6 @@ manager: dansimp
     <a href="#textinput-configurejapaneseimeversion">TextInput/ConfigureJapaneseIMEVersion</a>
   </dd>  
   <dd>
-    <a href="#textinput-configurekoreanimeversion">TextInput/ConfigureKoreanIMEVersion</a>
-  </dd>  
-  <dd>
     <a href="#textinput-configuresimplifiedchineseimeversion">TextInput/ConfigureSimplifiedChineseIMEVersion</a>
   </dd>
   <dd>
@@ -766,61 +763,6 @@ The following list shows the supported values:
 - 0 (default) - Allows you to configure which Microsoft Japanese IME version to use. The new Microsoft Japanese IME version is configured by default.
 - 1 - Does not allow you to configure which Microsoft Japanese IME version to use. The previous version of Microsoft Japanese IME is always selected.
 - 2 - Does not allow you to configure which Microsoft Japanese IME version to use. The new Microsoft Japanese IME version is always selected.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="textinput-configurekoreanimeversion"></a>**TextInput/ConfigureKoreanIMEVersion**
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> - This policy is enforced only in Windows 10 for desktop.  
-> - This policy requires reboot to take effect.
-
-Added in next major release of Windows 10. Allows IT admins to configure Microsoft Korean IME version in the desktop.
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
-- 0 (default) - Allows you to configure which Microsoft Korean IME version to use. The new Microsoft Korean IME version is configured by default.
-- 1 - Does not allow you to configure which Microsoft Korean IME version to use. The previous version of Microsoft Korean IME is always selected.
-- 2 - Does not allow you to configure which Microsoft Korean IME version to use. The new Microsoft Korean IME version is always selected.
 
 <!--/SupportedValues-->
 <!--/Policy-->
