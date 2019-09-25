@@ -121,7 +121,7 @@
 
 #### [Custom detections]()
 ##### [Understand custom detection rules](microsoft-defender-atp/overview-custom-detections.md)
-##### [Create custom detections rules](microsoft-defender-atp/custom-detection-rules.md)
+##### [Create and manage custom detections rules](microsoft-defender-atp/custom-detection-rules.md)
 
 ### [Management and APIs]()
 #### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)

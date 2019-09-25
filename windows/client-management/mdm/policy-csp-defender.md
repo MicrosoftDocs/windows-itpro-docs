@@ -6,16 +6,12 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 08/26/2019
+ms.date: 09/24/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Policy CSP - Defender
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 
 <hr/>
 
@@ -2335,17 +2331,17 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+The following list shows the supported values:  
 
--   0 (default) – Every day
--   1 – Monday
--   2 – Tuesday
--   3 – Wednesday
--   4 – Thursday
--   5 – Friday
--   6 – Saturday
--   7 – Sunday
--   8 – No scheduled scan
+- 0 (default) – Every day
+- 1 – Sunday 
+- 2 – Monday 
+- 3 – Tuesday  
+- 4 – Wednesday
+- 5 – Thursday  
+- 6 – Friday  
+- 7 – Saturday  
+- 8 – No scheduled scan
 
 <!--/SupportedValues-->
 <!--/Policy-->
