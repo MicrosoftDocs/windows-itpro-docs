@@ -26,11 +26,13 @@ manager: dansimp
 
 Potentially unwanted applications are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints which adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender ATP, due to certain kinds of undesirable behavior.
 
-These kinds of undesirable PUA behavior include:
+For example:
 
-- Ad injection into web browsers
-- Various types of software bundling
-- Driver and registry optimizers that detect issues, request payment to fix the errors, and then make no changes or optimizations (also known as "rogue antivirus" programs)
+* **Advertising software:** Software that displays advertisements or promotions, including software that inserts advertisements to webpages.
+* **Bundling software:** Software that offers to install other software that is not digitally signed by the same entity. Also, software that offers to install other software that qualify as PUA.
+* **Evasion software:** Software that actively tries to evade detection by security products, including software that behaves differently in the presence of security products.
+
+For more examples and a discussion of the criteria we use to label applications for special attention from security features, see [How Microsoft identifies malware and potentially unwanted applications](../intelligence/criteria.md).
 
 Potentially unwanted applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up.
 
