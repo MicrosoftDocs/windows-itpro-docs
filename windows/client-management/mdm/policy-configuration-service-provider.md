@@ -1210,6 +1210,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-deviceinstallation.md#deviceinstallation-allowinstallationofmatchingdevicesetupclasses" id="deviceinstallation-allowinstallationofmatchingdevicesetupclasses">DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses</a>
   </dd>
   <dd>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-allowinstallationofmatchingdeviceinstanceids"id="deviceinstallation-allowinstallationofmatchingdeviceinstanceids">DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-deviceinstallation.md#deviceinstallation-preventdevicemetadatafromnetwork" id="deviceinstallation-preventdevicemetadatafromnetwork">DeviceInstallation/PreventDeviceMetadataFromNetwork</a>
   </dd>
   <dd>
@@ -1217,6 +1220,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdeviceids" id="deviceinstallation-preventinstallationofmatchingdeviceids">DeviceInstallation/PreventInstallationOfMatchingDeviceIDs</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdeviceinstanceids"id="deviceinstallation-preventinstallationofmatchingdeviceinstanceids">DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs</a>
   </dd>
   <dd>
     <a href="./policy-csp-deviceinstallation.md#deviceinstallation-preventinstallationofmatchingdevicesetupclasses" id="deviceinstallation-preventinstallationofmatchingdevicesetupclasses">DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses</a>
