@@ -26,14 +26,14 @@ ms.date: 09/25/2019
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-bestpractices-abovefoldlink)
 
 ## Performance best practices
-The following best practices serve as a guideline of query performance best practices and for you to get faster results and be able to run complex queries. 
-- When trying new queries, always use `limit` to avoid extremely large result sets or use `count` to assess the size of the result set.
+Apply the following best practices to get results faster and avoid timeouts while running complex queries. 
+- When trying new queries, always use `limit` to avoid extremely large result sets. You can also initially assess the size of the result set using `count`.
 - Use time filters first. Ideally, limit your queries to 7 days.
 - Put filters that are expected to remove most of the data in the beginning of the query, right after the time filter.
 - Use the `has` operator over `contains` when looking for full tokens.
-- Use looking in specific column rather than using full text search across all columns.
-- When joining between two tables, specify the table with fewer rows first.
-- When joining between two tables, project only needed columns from both sides of the join.
+- Look in a specific column rather than running full text searches across all columns.
+- When joining tables, specify the table with fewer rows first.
+- `project` only the necessary columns from tables you have joined.
 
 >[!TIP]
 >For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
@@ -41,14 +41,12 @@ The following best practices serve as a guideline of query performance best prac
 ## Query tips and pitfalls
 
 ### Using process IDs
-Process IDs (PIDs) are recycled in Windows and reused for new processes and therefore can't serve as a unique identifier for a specific process.
-To address this issue, Microsoft Defender ATP created the time process. To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time.
+Process IDs (PIDs) are recycled in Windows and reused for new processes. On their own, they can't serve as unique identifiers for specific processes. To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time.
 
-So, when you join data based on a specific process or summarize data for each process, you'll need to use a machine identifier (either `MachineId` or `ComputerName`), a process ID (`ProcessId` or `InitiatingProcessId`) and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`)
+When you join data based on a specific process or summarize data for each process, you'll need to use a machine identifier (either `MachineId` or `ComputerName`), a process ID (`ProcessId` or `InitiatingProcessId`), and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`)
 
-The following example query is created to find processes that access more than 10 IP addresses over port 445 (SMB), possibly scanning for file shares.
+The following example query finds processes that access more than 10 IP addresses over port 445 (SMB), possibly scanning for file shares.
 
-Example query:
 ```
 NetworkCommunicationEvents
 | where RemotePort == 445 and EventTime > ago(12h) and InitiatingProcessId !in (0, 4)
@@ -62,16 +60,14 @@ The query summarizes by both `InitiatingProcessId` and `InitiatingProcessCreatio
 
 Command lines can vary. When applicable, filter on file names and do fuzzy matching.
 
-There are numerous ways to construct a command line to accomplish a task.
-
-For example, a malicious attacker could specify the process image file name without a path, with full path, without the file extension, using environment variables, add quotes, and others. In addition, the attacker can also change the order of some parameters, add multiple quotes or spaces, and much more.
+There are numerous ways to construct a command line to accomplish a task. For example, an attacker could specify the process image file name without a path, with the full path, without the file extension, using environment variables, or with quotes. In addition, the attacker can also change the order of some parameters or add multiple quotes and spaces.
 
 To create more durable queries using command lines, we recommended the following guidelines:
 
-- Identify the known processes (such as net.exe, psexec.exe, and others) by matching on the filename fields, instead of filtering on the command line field.
+- Identify the known processes (such as *net.exe* or *psexec.exe*) by matching on the filename fields, instead of filtering on the command line field.
 - When querying for command line arguments, don't look for an exact match on multiple unrelated arguments in a certain order. Instead, use regular expressions or use multiple separate contains operators.
 - Use case insensitive matches. For example, use `=~`, `in~`, `contains` instead of `==`, `in` or `contains_cs`
-- To mitigate DOS command line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space. This is just the start of handling DOS obfuscation techniques, but it does mitigate the most common ones.
+- To mitigate DOS command line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space. Note that there are more complex DOS obfuscation techniques that require other approaches, but these can help address the most common ones.
 
 The following example query shows various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:
 

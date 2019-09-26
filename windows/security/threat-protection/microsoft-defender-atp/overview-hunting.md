@@ -58,11 +58,11 @@ Right-click a value in the result set to quickly enhance your query. You can use
 ## Filter the query results
 The filters displayed to the right provide a summary of the result set. Each column has its own section that lists the distinct values found for that column and the number of instances.
 
-Refine your query by selecting the "+" or "-" buttons on the values that you want to include or exclude and then selecting **Run query**.
+Refine your query by selecting the "+" or "-" buttons next to the values that you want to include or exclude.
 
 ![Image of Advanced hunting filter](images/atp-filter-advanced-hunting.png)
 
-The filter selections are added as additional query elements and the results are updated accordingly.
+Once you apply the filter to modify the query and then run the query, the results are updated accordingly.
 
 ## Related topics
 - [Learn the query language](advanced-hunting.md)

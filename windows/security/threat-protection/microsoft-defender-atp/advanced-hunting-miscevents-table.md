@@ -26,9 +26,9 @@ ms.date: 07/24/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The MiscEvents table in the Advanced hunting schema contains information about multiple event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from the table.
+The MiscEvents table in the [Advanced hunting](overview-hunting.md) schema contains information about various event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from the table.
 
-For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-reference.md).
+For information on other tables in the Advanced hunting schema, see [the Advanced hunting schema reference](advanced-hunting-reference.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|

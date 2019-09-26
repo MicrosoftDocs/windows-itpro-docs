@@ -25,6 +25,8 @@ ms.date: 09/25/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
+Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/en-us/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-reference.md) specifically structured for Advanced hunting. To understand these concepts better, run your first query.
+
 ## Try your first query
 
 In Microsoft Defender Security Center, go to **Advanced hunting** to run your first query. Use the following example:
@@ -47,6 +49,7 @@ This is how it will look like in Advanced hunting.
 
 ![Image of Microsoft Defender ATP Advanced hunting query](images/advanced-hunting-query-example.png)
 
+### Describe the query and specify the table to search
 The query starts with a short comment describing what it is for. This helps if you later decide to save your query and share it with others in your organization.
 
 ```
@@ -56,18 +59,19 @@ ProcessCreationEvents
 
 The query itself will typically start with a table name followed by a series of elements started by a pipe (`|`). In this example, we start by adding  with the table name `ProcessCreationEvents` and add piped elements as needed.
 
+### Set the time range
 The first piped element is a time filter scoped within the previous seven days. Keeping the time range as narrow as possible ensures that queries perform well, return manageable results, and don't time out.
 
 ```
 | where EventTime > ago(7d)
 ```
-
+### Search for specific executable files
 The time range is immediately followed by a search for files representing the PowerShell application.
 
 ```
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE")
 ```
-
+### Search for specific command lines
 Afterwards, the query looks for command lines that are typically used with PowerShell to download files.
 
 ```
@@ -77,7 +81,7 @@ Afterwards, the query looks for command lines that are typically used with Power
         or ProcessCommandLine has "Invoke-Shellcode"
         or ProcessCommandLine contains "http:"
 ```
-
+### Select result columns and length 
 Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. `project` returns specific columns and `top` limits the number of results, making the results well-formatted and reasonably large and easy to process.
 
 ```
@@ -104,7 +108,7 @@ Now that you've run your first query and have a general idea of its components, 
 | **makeset** |  Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group. |
 | **find** | Find rows that match a predicate across a set of tables. |
 
-To see a live example of these operators, run them from the **Get started** section in advanced hunting.
+To see a live example of these operators, run them from the **Get started** section of the Advanced hunting page.
 
 ## Understand data types
 
