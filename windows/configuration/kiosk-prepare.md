@@ -77,7 +77,7 @@ In addition to the settings in the table, you may want to set up **automatic log
  
 2. Go to
 
-   **HKEY\_LOCAL\_MACHINE\SOFTWARE\\Microsoft\WindowsNT\CurrentVersion\Winlogon**
+   **HKEY\_LOCAL\_MACHINE\SOFTWARE\\Microsoft\Windows NT\CurrentVersion\Winlogon**
 
 3. Set the values for the following keys.
 

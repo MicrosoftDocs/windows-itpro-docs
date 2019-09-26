@@ -25,11 +25,28 @@ Please refer to the “[Surface Hub Important Information](https://support.micro
 ## Windows 10 Team Creators Update 1703
 
 <details>
+<summary>September 24, 2019—update for Team edition based on KB4516059*  (OS Build 15063.2078)</summary>
+
+This update to the Surface Hub includes quality improvements and security fixes. Key updates to Surface Hub, not already outlined in [Windows 10 Update History](https://support.microsoft.com/help/4018124/windows-10-update-history), include:
+
+ * Update to Surface Hub 2S Recovery Settings page to accurately reflect recovery options.
+ * Update to Surface Hub 2S Welcome screen to improve device recognizability.
+ * Addressed an issue with the Windows Team Edition shell background displaying incorrectly.
+ * Addressed an issue with Start Menu layout persistence when configured using MDM policy.
+ * Fixed an issue in Microsoft Edge that occurs when browsing some internal websites.
+ * Fixed an issue in Skype for Business that occurs when presenting in full-screen mode.
+
+Please refer to the [Surface Hub Admin guide](https://docs.microsoft.com/surface-hub/) for enabling/disabling device features and services.
+*[KB4503289](https://support.microsoft.com/help/4503289)
+ </details>
+
+<details>
 <summary>August 17, 2019—update for Team edition based on KB4512474*  (OS Build 15063.2021)</summary>
 
 This update to the Surface Hub includes quality improvements and security fixes. Key updates to Surface Hub, not already outlined in [Windows 10 Update History](https://support.microsoft.com/help/4018124/windows-10-update-history), include:
 
  * Ensures that Video Out on Hub 2S defaults to "Duplicate" mode.
+ * Improves reliability for some Arabic language usage scenarios on Surface Hub.
 
 Please refer to the [Surface Hub Admin guide](https://docs.microsoft.com/surface-hub/) for enabling/disabling device features and services.
 *[KB4503289](https://support.microsoft.com/help/4503289)
