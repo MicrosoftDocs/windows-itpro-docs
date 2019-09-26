@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 08/09/2018
+ms.date: 09/20/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -14,7 +14,7 @@ manager: dansimp
 # Policy CSP - TextInput
 
 > [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Some information relates to prereleased products, which may be substantially modified before they are commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -60,6 +60,15 @@ manager: dansimp
     <a href="#textinput-allowlinguisticdatacollection">TextInput/AllowLinguisticDataCollection</a>
   </dd>
   <dd>
+    <a href="#textinput-configurejapaneseimeversion">TextInput/ConfigureJapaneseIMEVersion</a>
+  </dd>  
+  <dd>
+    <a href="#textinput-configuresimplifiedchineseimeversion">TextInput/ConfigureSimplifiedChineseIMEVersion</a>
+  </dd>
+  <dd>
+    <a href="#textinput-configuretraditionalchineseimeversion">TextInput/ConfigureTraditionalChineseIMEVersion</a>
+  </dd>
+   <dd>
     <a href="#textinput-enabletouchkeyboardautoinvokeindesktopmode">TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode</a>
   </dd>
   <dd>
@@ -706,6 +715,171 @@ This setting supports a range of values between 0 and 1.
 <hr/>
 
 <!--Policy-->
+<a href="" id="textinput-configurejapaneseimeversion"></a>**TextInput/ConfigureJapaneseIMEVersion**
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+> [!NOTE]
+> - The policy is only enforced in Windows 10 for desktop.  
+> - This policy requires reboot to take effect.
+
+Added in next major release of Windows 10. Allows IT admins to configure Microsoft Japanese IME version in the desktop.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) - Allows you to configure which Microsoft Japanese IME version to use. The new Microsoft Japanese IME version is configured by default.
+- 1 - Does not allow you to configure which Microsoft Japanese IME version to use. The previous version of Microsoft Japanese IME is always selected.
+- 2 - Does not allow you to configure which Microsoft Japanese IME version to use. The new Microsoft Japanese IME version is always selected.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="textinput-configuresimplifiedchineseimeversion"></a>**TextInput/ConfigureSimplifiedChineseIMEVersion**
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+> [!NOTE]
+> - This policy is enforced only in Windows 10 for desktop.  
+> - This policy requires reboot to take effect.
+
+Added in next major release of Windows 10. Allows IT admins to configure Microsoft Simplified Chinese IME version in the desktop.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) - Allows you to configure which Microsoft Simplified Chinese IME version to use. The new Microsoft Simplified Chinese IME version is configured by default.
+- 1 - Does not allow you to configure which Microsoft Simplified Chinese IME version to use. The previous version of Microsoft Simplified Chinese IME is always selected.
+- 2 - Does not allow you to configure which Microsoft Simplified Chinese IME version to use. The new Microsoft Simplified Chinese IME version is always selected.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="textinput-configuretraditionalchineseimeversion"></a>**TextInput/ConfigureTraditionalChineseIMEVersion**
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup></sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+> [!NOTE]
+> - This policy is enforced only in Windows 10 for desktop.  
+> - This policy requires reboot to take effect.
+
+Added in next major release of Windows 10. Allows IT admins to configure Microsoft Traditional Chinese IME version in the desktop.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) - Allows you to configure which Microsoft Traditional Chinese IME version to use. The new Microsoft Traditional Chinese IME version is configured by default.
+- 1 - Does not allow you to configure which Microsoft Traditional Chinese IME version to use. The previous version of Microsoft Traditional Chinese IME is always selected.
+- 2 - Does not allow you to configure which Microsoft Traditional Chinese IME version to use. The new Microsoft Traditional Chinese IME version is always selected.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="textinput-enabletouchkeyboardautoinvokeindesktopmode"></a>**TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode**  
 
 <!--SupportedSKUs-->
@@ -762,6 +936,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+
 <a href="" id="textinput-excludejapaneseimeexceptjis0208"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208**  
 
 <!--SupportedSKUs-->
