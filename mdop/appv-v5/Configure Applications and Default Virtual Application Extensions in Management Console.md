@@ -1,5 +1,5 @@
 ---
-title: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
+title: Configure Applications and Default Virtual Application Extensions in Management Console
 description: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
 author: dansimp
 ms.assetid: 1e1941d3-fb22-4077-8ec6-7a0cb80335d8
@@ -10,14 +10,12 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 03/16/2017
+ms.date: 09/26/2019
 ---
 
+# 	Configure Applications and Default Virtual Application Extensions in Management Console
 
-# How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
-
-
-Use the following procedure to view and configure default package extensions.
+Use the following procedure to *view* and *configure* default package extensions.
 
 **To view and configure default virtual application extensions**
 
