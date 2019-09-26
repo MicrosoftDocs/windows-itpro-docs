@@ -15401,6 +15401,11 @@
     "source_path": "windows-itpro-docs/mdop/appv-v5/how-to-view-and-configure-applications-and-default-virtual-application-extensions-by-using-the-management-console-beta.md",
     "redirect_url": "https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/appv-v5/configure-applications-and-default-virtual-application-extensions-in-management-console",
     "redirect_document_id": true
+    },
+    {
+    "source_path": "Windows-itpro-docs/mdop/dart-v8/use-windows-defender-offline-wdo-for-malware-protection-not-dart.md",
+    "redirect_url": "https://github.com/MicrosoftDocs/windows-docs-pr/blob/live/mdop/dart-v8/use-windows-defender-offline-wdo-for-malware-protection-not-dart",
+    "redirect_document_id": true
     }
     ]
     }
