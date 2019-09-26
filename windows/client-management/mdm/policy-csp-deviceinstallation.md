@@ -314,7 +314,7 @@ If you enable this policy setting, Windows is allowed to install or update any d
 
 If you disable or do not configure this policy setting, and no other policy setting describes the device, the "Prevent installation of devices not described by other policy settings" policy setting determines whether the device can be installed.
 
-Peripherals can be specified by their [device instance ID](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-instance-ids). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+Peripherals can be specified by their [device instance ID](https://docs.microsoft.com/windows-hardware/drivers/install/device-instance-ids). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
 
 <!--/Description-->
 > [!TIP]
@@ -697,7 +697,7 @@ If you enable this policy setting, Windows is prevented from installing a device
 
 If you disable or do not configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
 
-Peripherals can be specified by their [device instance ID](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/device-instance-ids). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+Peripherals can be specified by their [device instance ID](https://docs.microsoft.com/windows-hardware/drivers/install/device-instance-ids). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
 
 <!--/Description-->
 > [!TIP]
