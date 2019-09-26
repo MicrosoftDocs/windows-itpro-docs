@@ -5,9 +5,9 @@ ms.reviewer:
 ms.prod: w10
 ms.sitesec: library
 ms.localizationpriority: medium
-author: Teresa-Motiv; kaushika-msft
+author: Teresa-Motiv, kaushika-msft
 ms.author: v-tea
-manager: dcscontentpm
+manager: kaushika
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
