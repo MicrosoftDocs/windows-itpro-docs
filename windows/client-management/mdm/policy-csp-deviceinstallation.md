@@ -4,6 +4,7 @@ ms.reviewer:
 manager: dansimp
 description: Policy CSP - DeviceInstallation
 ms.author: dansimp
+ms.date: 09/26/2019
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -139,7 +140,7 @@ To enable this policy, use the following SyncML. This example allows Windows to 
 </SyncML>
 ```
 
-To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 ```txt
 >>>  [Device Installation Restrictions Policy Check]
@@ -254,7 +255,7 @@ Enclose the class GUID within curly brackets {}. To configure multiple classes, 
 </SyncML>
 ```
 
-To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
+To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and see if the following is listed near the end of the log:
 
 
 ```txt
