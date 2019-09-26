@@ -5,7 +5,7 @@ ms.reviewer:
 ms.prod: w10
 ms.sitesec: library
 ms.localizationpriority: medium
-author: Teresa-Motiv, kaushika-msft
+author: Teresa-Motiv
 ms.author: v-tea
 manager: kaushika
 audience: ITPro
