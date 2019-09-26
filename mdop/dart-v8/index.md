@@ -38,7 +38,7 @@ DaRT 8.0 is an important part of the Microsoft Desktop Optimization Pack (MDOP),
 
 <a href="" id="technical-reference-for-dart-8-0"></a>[Technical Reference for DaRT 8.0](technical-reference-for-dart-80-new-ia.md)  
 
-[Microsoft Diagnostics and Recovery Toolset (DaRT) users should use Windows Defender Offline (WDO) for malware detection](microsoft-diagnostics-and-recovery-toolset--dart--users-should-use-windows-defender-offline--wdo--for-malware-detection.md)
+[Microsoft Diagnostics and Recovery Toolset (DaRT) users should use Windows Defender Offline (WDO) for malware detection](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/dart-v8/microsoft-diagnostics-and-recovery-toolset--dart--users-should-use-windows-defender-offline--wdo--for-malware-detection)
 
 <a href="" id="troubleshooting-dart-8-0"></a>[Troubleshooting DaRT 8.0](troubleshooting-dart-80-dart-8.md)  
 
