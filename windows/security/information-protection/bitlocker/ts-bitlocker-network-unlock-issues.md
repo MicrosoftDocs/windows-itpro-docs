@@ -10,7 +10,7 @@ ms.author: v-tea
 manager: kaushika
 audience: ITPro
 ms.collection: M365-security-compliance
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 9/25/2019
 ---
 # BitLocker Network Unlock--known issues

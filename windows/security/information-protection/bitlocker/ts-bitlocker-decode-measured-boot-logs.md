@@ -1,7 +1,7 @@
 ---
 title: Decode Measured Boot logs to track PCR changes
 description: 
-ms.reviewer: 
+ms.reviewer: kaushika
 ms.prod: w10
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -10,7 +10,7 @@ ms.author: v-tea
 manager: kaushika
 audience: ITPro
 ms.collection: M365-security-compliance
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 9/19/2019
 ---
 
