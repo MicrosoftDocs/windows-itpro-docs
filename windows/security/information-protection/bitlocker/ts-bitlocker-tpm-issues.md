@@ -1,5 +1,5 @@
 ---
-title: BitLocker and TPM known issues
+title: BitLocker and TPM other known issues
 description: 
 ms.reviewer: 
 ms.prod: w10
@@ -14,7 +14,7 @@ ms.topic: troubleshooting
 ms.date: 9/19/2019
 ---
 
-# BitLocker and TPM&mdash;known issues
+# BitLocker and TPM&mdash;other known issues
 
 [Troubleshoot the TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm)
 
