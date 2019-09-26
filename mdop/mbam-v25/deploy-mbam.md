@@ -33,8 +33,8 @@ Before we start to configure MBAM 2.5, we have to make sure that we have both se
     * Client Tools Connectivity
     * Management Tools – Complete
 
-    >[!Note]
-    >Optionally, you can also install the [Transparent Data Encryption (TDE) feature in SQL Server](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/mbam-25-security-considerations).
+    > [!Note]
+    > Optionally, you can also install the [Transparent Data Encryption (TDE) feature in SQL Server](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/mbam-25-security-considerations).
 
     SQL Server Reporting Services must be installed and configured in "native" mode and not in unconfigured or "SharePoint" mode.
 
@@ -44,11 +44,11 @@ Before we start to configure MBAM 2.5, we have to make sure that we have both se
 
     You can follow [Configure SSL Connections](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server?view=sql-server-2017) on a Native Mode Report Server to configure SSL on Report Server.
     
-    >[!Note]
-    >You can follow the SQL Server Installation Guide for your respective version of SQL Server to install SQL Server. The links are as follows:
-        >* [SQL Server 2014](https://docs.microsoft.com/sql/sql-server/install/planning-a-sql-server-installation?view=sql-server-2014)
-        >* [SQL Server 2012](https://docs.microsoft.com/previous-versions/sql/sql-server-2012/bb500442(v=sql.110))
-        >* [SQL Server 2008 R2](https://docs.microsoft.com/previous-versions/sql/sql-server-2012/bb500442(v=sql.110))
+    > [!Note]
+    > You can follow the SQL Server Installation Guide for your respective version of SQL Server to install SQL Server. The links are as follows:
+        > * [SQL Server 2014](https://docs.microsoft.com/sql/sql-server/install/planning-a-sql-server-installation?view=sql-server-2014)
+        > * [SQL Server 2012](https://docs.microsoft.com/previous-versions/sql/sql-server-2012/bb500442(v=sql.110))
+        > * [SQL Server 2008 R2](https://docs.microsoft.com/previous-versions/sql/sql-server-2012/bb500442(v=sql.110))
 
 5. In the post-installation of SQL Server, make sure that you provision the user account in SQL Server, and assign the following permissions to the user who will configure the MBAM database and reporting roles on the database server.
 
@@ -214,8 +214,8 @@ After the certificate is issued, you should add the certificate to the personal 
    
    ![Certificates (Local Computer) snap-in window](images/deploying-MBAM-9.png)
 
-   >[!Note]
-   >The Certificates snap-in may not be listed. If it is not, no certificates are installed.
+   > [!Note]
+   > The Certificates snap-in may not be listed. If it is not, no certificates are installed.
 
 10. Right-select **Certificates**, select **All Tasks**, and then select **Import**.
 
@@ -229,15 +229,15 @@ After the certificate is issued, you should add the certificate to the personal 
 
    ![Enter password window](images/deploying-MBAM-12.png)
 
-   >[!Note]
-   >Make sure that the **Mark the key as exportable** option is selected if you want to be able to export the key pair again from this computer. As an added security measure, you may want to leave this option cleared to make sure that no one can make a backup of your private key.
+   > [!Note]
+   > Make sure that the **Mark the key as exportable** option is selected if you want to be able to export the key pair again from this computer. As an added security measure, you may want to leave this option cleared to make sure that no one can make a backup of your private key.
  
 13. Select **Next**, and then select the **Certificate Store** to which you want to save the certificate.
 
     ![Certificate Import Wizard window](images/deploying-MBAM-13.png)
 
-    >[!Note]
-    >You should select **Personal**, because it is a web server certificate. If you included the certificate in the certification hierarchy, it will also be added to this store.
+    > [!Note]
+    > You should select **Personal**, because it is a web server certificate. If you included the certificate in the certification hierarchy, it will also be added to this store.
  
 14. Select **Next**, and then select **Finish**.
 
@@ -275,8 +275,8 @@ The steps to configure SSL communication by using MBAM are described in the foll
 
 ### Step 5: Register SPNS for the application pool account and configure constrained delegation
 
->[!Note]
->Constrained delegation is required only for 2.5 and is not required for 2.5 Service Pack 1 and later.
+> [!Note]
+> Constrained delegation is required only for 2.5 and is not required for 2.5 Service Pack 1 and later.
 
 To enable the MBAM servers to authenticate communication from the Administration and Monitoring Website and the Self-Service Portal, you must register a Service Principal Name (SPN) for the host name under the domain account that you are using for the web application pool. The following article contains step-by-step instructions to register SPNs: [Planning How to Secure the MBAM Websites](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/planning-how-to-secure-the-mbam-websites)
 
@@ -453,8 +453,8 @@ Do one of the following:
 To validate your MBAM Server deployment to use the standalone topology, follow these steps.
 
 1. On each server on which an MBAM feature is deployed, select **Control Panel** > **Programs** > **Programs and Features**. Verify that **Microsoft BitLocker Administration and Monitoring** appears in the **Programs and Features** list.
-   >[!Note]
-   >To perform the validation, you must use a domain account that has local computer administrative credentials on each server.
+   > [!Note]
+   > To perform the validation, you must use a domain account that has local computer administrative credentials on each server.
 
 2. On the server on which the Recovery Database is configured, open SQL Server Management Studio, and verify that the **MBAM Recovery and Hardware** database is configured.
 
@@ -469,10 +469,10 @@ To validate your MBAM Server deployment to use the standalone topology, follow t
    
 5. Verify that a reports folder that is named Microsoft BitLocker Administration and Monitoring contains a data source that is named MaltaDataSource. This data source contains folders that have names that represent language locales (for example, en-us). The reports are in the language folders.
 
-   >[!Note]If SQL Server Reporting Services (SSRS) was configured as a named instance, the URL should resemble the following:
-   >http(s)://\<MBAM Reports Server Name\>:\<port\>/Reports_\<SSRS Instance Name\>
+   > [!Note]If SQL Server Reporting Services (SSRS) was configured as a named instance, the URL should resemble the following:
+   > http(s)://\<MBAM Reports Server Name\>:\<port\>/Reports_\<SSRS Instance Name\>
    >
-   >If SSRS was not configured to use Secure Socket Layer (SSL), the URL for the reports will be set to "HTTP" instead of "HTTPS" when you install the MBAM server. If you then go to the Administration and Monitoring Website (also known as Helpdesk) and select a report, you receive the following message: "Only Secure Content is Displayed." To show the report, select **Show All Content**.
+   > If SSRS was not configured to use Secure Socket Layer (SSL), the URL for the reports will be set to "HTTP" instead of "HTTPS" when you install the MBAM server. If you then go to the Administration and Monitoring Website (also known as Helpdesk) and select a report, you receive the following message: "Only Secure Content is Displayed." To show the report, select **Show All Content**.
 
 6. On the server on which the Administration and Monitoring Website feature is configured, run Server Manager, browse to **Roles**, and then select **Web Server (IIS)** > **Internet Information Services (IIS)** Manager.
 
@@ -488,11 +488,11 @@ To validate your MBAM Server deployment to use the standalone topology, follow t
    * https(s)://\<MBAM Administration Server Name\>:\<port\>/HelpDesk/ (confirm each link for navigation and reports)
    * http(s)://\<MBAM Administration Server Name\>:\<port\>/SelfService/
 
-   >[!Note]
-   >It is assumed that you configured the server features on the default port without network encryption. If you configured the server features on a different port or virtual directory, change the URLs to include the appropriate port. For example:
-   >http(s)://\<host name\>:\<port\>/HelpDesk/
-   >http(s)://\<host name\>:\<port\>/\<virtualdirectory\>/
-   >If the server features were configured to use network encryption, change http:// to https://.
+   > [!Note]
+   > It is assumed that you configured the server features on the default port without network encryption. If you configured the server features on a different port or virtual directory, change the URLs to include the appropriate port. For example:
+   > http(s)://\<host name\>:\<port\>/HelpDesk/
+   > http(s)://\<host name\>:\<port\>/\<virtualdirectory\>/
+   > If the server features were configured to use network encryption, change http:// to https://.
    
 10. Browse to the following web services to verify that they load successfully. A page opens to indicate that the service is running. However, the page displays no metadata.
 
@@ -505,8 +505,8 @@ To validate your MBAM Server deployment to use the standalone topology, follow t
 
 To deploy MBAM, you have to set Group Policy settings that define MBAM implementation settings for BitLocker Drive Encryption. To complete this task, you must copy the MBAM Group Policy templates to a server or workstation that can run Group Policy Management Console (GPMC) or Advanced Group Policy Management (AGPM), and then edit the settings.
 
->[!Important]
->Do not change the Group Policy settings in the **BitLocker Drive Encryption** node or MBAM will not work correctly. When you configure the Group Policy settings in the **MDOP MBAM (BitLocker Management)** node, MBAM automatically configures the **BitLocker Drive Encryption** settings for you.
+> [!Important]
+> Do not change the Group Policy settings in the **BitLocker Drive Encryption** node or MBAM will not work correctly. When you configure the Group Policy settings in the **MDOP MBAM (BitLocker Management)** node, MBAM automatically configures the **BitLocker Drive Encryption** settings for you.
  
 #### Copying the MBAM 2.5 Group Policy templates
 
@@ -568,18 +568,18 @@ Create an account for MBAM App Pool, and give it only SecurityAdmin, Public, and
 
 See [MBAM Database configuration – minimum permissions](https://blogs.technet.microsoft.com/dubaisec/2016/02/02/mbam-database-configuration-minimum-permissions/) for more information.
 
->[!Note]
->* In some situations, more permissions are required for the initial installation and upgrade operations.
->* Use an account that has temporary SA for the installation.
->* Do not start the Configurator in the context of a user account (Run As) that does not have enough permissions to make changes to SQL Server because this will cause installation errors.
->* You must be logged on by using an account that has permissions on SQL Server. Only SQL Server databases can be created or updated by running MBAM Configurator remotely. For SSRS server, you must install MBAM and run Configurator locally to install or update the MBAM SSRS reports.
+> [!Note]
+> * In some situations, more permissions are required for the initial installation and upgrade operations.
+> * Use an account that has temporary SA for the installation.
+> * Do not start the Configurator in the context of a user account (Run As) that does not have enough permissions to make changes to SQL Server because this will cause installation errors.
+> * You must be logged on by using an account that has permissions on SQL Server. Only SQL Server databases can be created or updated by running MBAM Configurator remotely. For SSRS server, you must install MBAM and run Configurator locally to install or update the MBAM SSRS reports.
 
 ### The permission required for SPN Registration
 
 An account that's used for IIS portal installation must have Write ServicePrincipalName and Write Validated SPN permissions. Without these permissions, the installation will return a warning message that states that it cannot register the SPN.
 
->[!Note]
->You will this receive warning message two times. This does not mean that the SPN must have two objects registered to it.
+> [!Note]
+> You will this receive warning message two times. This does not mean that the SPN must have two objects registered to it.
 
 For more information, see [MBAM Setup fails with “Register SPN Deferred” error message](https://support.microsoft.com/help/2754138/).
 

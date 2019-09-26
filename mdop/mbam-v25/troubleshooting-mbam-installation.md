@@ -313,8 +313,8 @@ By default, the URL for KeyRecoveryServiceEndPoint (MBAM Recovery and Hardware s
 By default, the URL for StatusReportingServiceEndpoint (MBAM Status reporting service endpoint) is in the following format:<br />
 **http://\<servername\>:\<port\>/MBAMComplianceStatusService/StatusReportingService.svc**
 
->[!Note]
->There should be no spaces in the URL.
+> [!Note]
+> There should be no spaces in the URL.
 
 If the service URL is incorrect, you should correct the service URL in the following Group Policy setting:
 
@@ -394,15 +394,15 @@ Make sure that the service URL that is configured on the client is correct. Copy
 
 Similarly, copy the value of the URL for StatusReportingServiceEndpoint (**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE\MDOPBitLockerManagement**), and open it in Internet Explorer.
 
->[!Note]
->If you cannot browse to the URL from the client computer, you should test basic network connectivity from the client to the server that is running IIS. See points 1, 2, 3, and 4 in the previous section.
+> [!Note]
+> If you cannot browse to the URL from the client computer, you should test basic network connectivity from the client to the server that is running IIS. See points 1, 2, 3, and 4 in the previous section.
 
 Additionally, review the Application logs on the administration and monitoring server for any errors.
 
 You can make a concurrent network trace between the client and the server, and review the trace to determine the cause of connection failure between the client agent and the MBAM administration server.
 
->[!Note]
->If you can browse to the service URLs from the client computer and there are connectivity error entries in the MBAM admin event logs, this might be because of a connectivity failure between the administration server and the database server.
+> [!Note]
+> If you can browse to the service URLs from the client computer and there are connectivity error entries in the MBAM admin event logs, this might be because of a connectivity failure between the administration server and the database server.
 
 If you can successfully browse to both service URLs, and there is connectivity between the client and the server that is running, IIS is working. However, there may be a problem in communication between the server that is running IIS and the database server.
 
