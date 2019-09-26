@@ -1911,7 +1911,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 |New or updated topic | Description|
 |--- | ---|
 |[Policy CSP - Defender](policy-csp-defender.md)|Updated the supported value list for Defender/ScheduleScanDay policy.|
-|[Policy CSP - DeviceInstallation](policy-csp-deviceinstallation.md)|Added the following new policices: <br>DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs, DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs.|
+|[Policy CSP - DeviceInstallation](policy-csp-deviceinstallation.md)|Added the following new policies: <br>DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs, DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs.|
 
 ### August 2019
 
