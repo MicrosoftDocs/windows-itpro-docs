@@ -69,7 +69,7 @@ To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/ap
 If you prefer the command line, you can also check the connection by running the following command in Terminal:
 
 ```bash
-curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
+$ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
 The output from this command should be similar to the following:
