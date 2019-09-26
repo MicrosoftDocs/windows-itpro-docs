@@ -1040,7 +1040,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1903. 
+Added in Windows 10, version 1903. 
 > [!NOTE]
 > Currently, this policy is supported only in HoloLens 2.
 
