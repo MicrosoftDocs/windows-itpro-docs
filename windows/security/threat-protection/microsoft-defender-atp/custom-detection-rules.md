@@ -116,3 +116,5 @@ You can also take the following actions on the rule from this page:
 
 ## Related topic
 - [Custom detections overview](overview-custom-detections.md)
+- [Advanced hunting overview](overview-hunting.md)
+- [Learn the Advanced hunting query language](advanced-hunting.md)
