@@ -39,10 +39,10 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 2. Reproduce the problem
 
-3. Run `mdatp --diagnostic --create` to backup Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
+3. Run `sudo mdatp --diagnostic --create` to backup Microsoft Defender ATP's logs. The files will be stored inside of a .zip archive. This command will also print out the file path to the backup after the operation succeeds.
 
    ```bash
-   $ mdatp --diagnostic --create
+   $ sudo mdatp --diagnostic --create
    Creating connection to daemon
    Connection established
    ```
@@ -82,13 +82,13 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |-------------|-------------------------------------------|-----------------------------------------------------------------------|
 |Configuration|Turn on/off real-time protection           |`mdatp --config realTimeProtectionEnabled [true/false]`                |
 |Configuration|Turn on/off cloud protection               |`mdatp --config cloudEnabled [true/false]`                             |
-|Configuration|Turn on/off product diagnostics            |`mdatp --config diagnostic [true/false]`                               |
+|Configuration|Turn on/off product diagnostics            |`mdatp --config cloudDiagnosticEnabled [true/false]`                               |
 |Configuration|Turn on/off automatic sample submission    |`mdatp --config cloudAutomaticSampleSubmission [true/false]`           |
 |Configuration|Turn on PUA protection                     |`mdatp --threat --type-handling potentially_unwanted_application block`|
 |Configuration|Turn off PUA protection                    |`mdatp --threat --type-handling potentially_unwanted_application off`  |
 |Configuration|Turn on audit mode for PUA protection      |`mdatp --threat --type-handling potentially_unwanted_application audit`|
 |Diagnostics  |Change the log level                       |`mdatp --log-level [error/warning/info/verbose]`                       |
-|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic`                                                   |
+|Diagnostics  |Generate diagnostic logs                   |`mdatp --diagnostic --create`                                                   |
 |Health       |Check the product's health                 |`mdatp --health`                                                       |
 |Protection   |Scan a path                                |`mdatp --scan --path [path]`                                           |
 |Protection   |Do a quick scan                            |`mdatp --scan --quick`                                                 |
