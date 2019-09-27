@@ -89,7 +89,7 @@ Setting up DFS-R for replication is a quick and straightforward process. You pre
 When you have multiple deployment servers sharing the same content, you need to configure the Bootstrap.ini file with information about which server to connect to based on where the client is located. In MDT, that can be done by using the DefaultGateway property.
 1. On MDT01, using Notepad, navigate to the **E:\\MDTProduction\\Control** folder and modify the Boostrap.ini file to look like this:
 
-   ```
+   ```ini
    [Settings]
    Priority=DefaultGateway, Default
 
