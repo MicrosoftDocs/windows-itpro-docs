@@ -21,6 +21,7 @@
 
 ## Deploy
 ### [Deploy Surface devices](deploy.md)
+### [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ### [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)
 ### [Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
 ### [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md)
@@ -30,16 +31,14 @@
 ### [Surface System SKU reference](surface-system-sku-reference.md)
 
 ## Manage
-### [Optimizing wireless connectivity for Surface devices](surface-wireless-connect.md)
+### [Optimize Wi-Fi connectivity for Surface devices](surface-wireless-connect.md)
 ### [Best practice power settings for Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)
+### [Surface Dock Firmware Update](surface-dock-firmware-update.md)
 ### [Battery Limit setting](battery-limit.md)
 ### [Surface Brightness Control](microsoft-surface-brightness-control.md)
 ### [Surface Asset Tag](assettag.md)
 ### [Surface firmware and driver updates](update.md)
-### [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ### [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)
-### [Surface Dock Firmware Update](surface-dock-firmware-update.md)
-
 
 ## Secure
 ### [Manage Surface UEFI settings](manage-surface-uefi-settings.md)

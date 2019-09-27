@@ -450,7 +450,7 @@ Required for native profiles. Type of tunneling protocol used. This value can be
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
-> **Note** The **Automatic** option means that the device will try each of the built-in tunneling protocols until one succeeds. It will attempt protocols in following order: IKEv2, PPTP and then L2TP. This order is not customizable. 
+> **Note** The **Automatic** option means that the device will try each of the built-in tunneling protocols until one succeeds. It will attempt protocols in following order: SSTP, IKEv2, PPTP and then L2TP. This order is not customizable. 
 
 <a href="" id="vpnv2-profilename-nativeprofile-authentication"></a>**VPNv2/**<em>ProfileName</em>**/NativeProfile/Authentication**  
 Required node for native profile. It contains authentication information for the native VPN profile.

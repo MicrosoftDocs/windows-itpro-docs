@@ -305,7 +305,7 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/Licensing/product-licensing/windows10.aspx#tab=2).
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootonboarding-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshootonboarding-belowfoldlink)
 
 
 ## Related topics

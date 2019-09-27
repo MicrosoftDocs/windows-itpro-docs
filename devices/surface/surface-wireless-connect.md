@@ -1,18 +1,19 @@
 ---
-title: Optimizing wireless connectivity for Surface devices
-description: This topic provides guidance around recommended  wireless connectivity settings for network admins and users.
+title: Optimize Wi-Fi connectivity for Surface devices
+description: This topic describes recommended Wi-Fi settings to ensure Surface devices stay connected in congested network environments and mobile scenarios.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: dansimp
-ms.localizationpriority: medium
+ms.audience: itpro
+ms.localizationpriority: normal
 ms.author: dansimp
 ms.topic: article
 ms.date: 08/15/2019
-ms.reviewer: 
+ms.reviewer: tokatz
 manager: dansimp
 ---
-# Optimizing wireless connectivity for Surface devices
+# Optimize Wi-Fi connectivity for Surface devices
 
 ## Introduction
 

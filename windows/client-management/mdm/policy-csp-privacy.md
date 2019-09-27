@@ -922,11 +922,11 @@ Value type is integer.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info: 
--	GP English name: Let Windows apps access background spatial perception
--	GP name: LetAppsAccessBackgroundSpatialPerception
--	GP element: LetAppsAccessBackgroundSpatialPerception_Enum
--	GP path: Windows Components/App Privacy
--	GP ADMX file name: AppPrivacy.admx
+-	GP English name: *Let Windows apps access background spatial perception*
+-	GP name: *LetAppsAccessBackgroundSpatialPerception*
+-	GP element: *LetAppsAccessBackgroundSpatialPerception_Enum*
+-	GP path: *Windows Components/App Privacy*
+-	GP ADMX file name: *AppPrivacy.admx*
 
 
 <!--/ADMXMapped-->
@@ -989,11 +989,11 @@ Value type is chr.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info: 
--	GP English name: Let Windows apps access background spatial perception
--	GP name: LetAppsAccessBackgroundSpatialPerception
--	GP element: LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps_List
--	GP path: Windows Components/App Privacy
--	GP ADMX file name: AppPrivacy.admx
+-	GP English name: *Let Windows apps access background spatial perception*
+-	GP name: *LetAppsAccessBackgroundSpatialPerception*
+-	GP element: *LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps_List*
+-	GP path: *Windows Components/App Privacy*
+-	GP ADMX file name: *AppPrivacy.admx*
 
 
 <!--/ADMXMapped-->
@@ -1040,7 +1040,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1903. 
+Added in Windows 10, version 1903. 
 > [!NOTE]
 > Currently, this policy is supported only in HoloLens 2.
 
@@ -1051,11 +1051,11 @@ Value type is chr.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info: 
--	GP English name: Let Windows apps access background spatial perception
--	GP name: LetAppsAccessBackgroundSpatialPerception
--	GP element: LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps_List
--	GP path: Windows Components/App Privacy
--	GP ADMX file name: AppPrivacy.admx
+-	GP English name: *Let Windows apps access background spatial perception*
+-	GP name: *LetAppsAccessBackgroundSpatialPerception*
+-	GP element: *LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps_List*
+-	GP path: *Windows Components/App Privacy*
+-	GP ADMX file name: *AppPrivacy.admx*
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 
@@ -1116,11 +1116,11 @@ Value type is chr.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info: 
--	GP English name: Let Windows apps access background spatial perception
--	GP name: LetAppsAccessBackgroundSpatialPerception
--	GP element: LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps_List
--	GP path: Windows Components/App Privacy
--	GP ADMX file name: AppPrivacy.admx
+-	GP English name: *Let Windows apps access background spatial perception*
+-	GP name: *LetAppsAccessBackgroundSpatialPerception*
+-	GP element: *LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps_List*
+-	GP path: *Windows Components/App Privacy*
+-	GP ADMX file name: *AppPrivacy.admx*
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 
