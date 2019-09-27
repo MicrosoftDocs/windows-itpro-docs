@@ -9,9 +9,9 @@ author: Teresa-Motiv
 ms.author: v-tea
 manager: kaushika
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 9/25/2019
+ms.date: 9/27/2019
 ---
 
 # BitLocker configuration&mdash;known issues
