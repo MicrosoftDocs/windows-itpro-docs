@@ -1,5 +1,5 @@
 ---
-title: Enforcing BitLocker policies by using Intune known issues
+title: Enforcing BitLocker policies by using Intune  known issues
 description: 
 ms.reviewer: kaushika
 ms.prod: w10
@@ -22,11 +22,7 @@ This article provides assistance for issues you may see if you use Microsoft Int
 
 ![The BitLocker status indictors on the Intune portal](./images/4509189_en_1.png)
 
-To start narrowing down the cause of the problem, review the event logs (as described in [Troubleshoot BitLocker](troubleshoot-bitlocker.md). Concentrate on the Management and Operations logs in the **Applications and Services logs\\Microsoft\\Windows\\BitLocker-API** folder.
-
-In addition, check your BitLocker policy settings as described in [Reviewing BitLocker policy](#prelim).
-
-The following sections provide more information about resolving the following events and error messages:
+To start narrowing down the cause of the problem, review the event logs (as described in [Troubleshoot BitLocker](troubleshoot-bitlocker.md). Concentrate on the Management and Operations logs in the **Applications and Services logs\\Microsoft\\Windows\\BitLocker-API** folder. The following sections provide more information about resolving the following events and error messages:
 
 <a id="list"></a>
 
@@ -38,56 +34,12 @@ The following sections provide more information about resolving the following ev
 - [Error message: The UEFI variable 'SecureBoot' could not be read](#issue-6)
 - [Event ID 846, 778, and 851: Error 0x80072f9a](#issue-7)
 
+If you do not have a clear trail of events or error messages to follow, other areas to investigate include the following:
+
+- [Review the hardware requirements for using Intune to manage BitLocker on devices](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-bitlocker#bitlocker-automatic-device-encryption-hardware-requirements)
+- [Review your BitLocker policy configuration](#policy)
+
 For information about how to verify that Intune policies are enforcing BitLocker correctly, see [Verifying that BitLocker is operating correctly](#verifying-that-bitlocker-is-operating-correctly).
-
-## <a id="prelim"></a>Reviewing BitLocker policy
-
-When troubleshooting BitLocker policy enforcement issues, start by reading the following KB: [Intune: Requirements for automatic BitLocker encryption during AAD join](https://internal.support.services.microsoft.com/en-us/help/4502023)
-
-BitLocker enforcement on the end device can be of three types:
-
-- Automatic (during AADJ for Windows v 1703+) [I sent this in my previous email]
-- Silent (Endpoint protection policy for Windows v 1803+)
-- Interactive (Endpoint policy for pre Windows v 1803)
-
-If your device supports modern Standby (Instant Go) and is HSTI compliant, AADJ will trigger automatic device encryption for Windows version 1703 and above. This does not requires the admin to enforce/deploy an endpoint protection policy.
-If your device is HSTI compliant but does not supports modern Standby (Instant Go), you would require an endpoint protection policy to enforce silent BitLocker encryption. Below settings allow for the same.
-
-![](./images/4509186_en_1.png)
-
-The OMA-URI reference for the above settings:
-
-- OMA-URI: **./Device/Vendor/MSFT/BitLocker/RequireDeviceEncryption**  
-   Value Type: **Integer**  
-   Value: **1**  (1 = Require, 0 = Not Configured)
-
-- OMA-URI: **./Device/Vendor/MSFT/BitLocker/AllowWarningForOtherDiskEncryption**  
-   Value Type: **Integer**  
-   Value: **0** (0 = Blocked, 1 = Allowed)  
-
-> [!NOTE]
-> If the setting **Waiting for other disk encryption** is set to **Not configured**, then user receives the toast notification and enabling the encryption would require user interaction to go through the BitLocker activation guide.
-
-![](./images/4509187_en_1.png)
-
-If your device does not supports modern Standby but is HSTI compliant, for pre Windows v 1803, an endpoint protection policy with the above settings will deliver the policy to the device but user will need to manually enable BitLocker encryption by clicking on the toast notification as received and going through the BitLocker activation guide.  
-
-For Autopilot devices, from 1803 and above, automatic device encryption is supported for standard users vide the settings made available in UI with 1901 Intune release as below. System requirement still remains same as above (HSTI compliant and support for modern Standby)
-
-![](./images/4509188_en_1.png)
-
-The OMA-URI reference for the above settings:
-
-- OMA-URI: ./Device/Vendor/MSFT/BitLocker/AllowStandardUserEncryption  
-   Value Type: Integer
-   Value: 1  
-
-> [!NOTE]
-> This node works in tandem with the **RequireDeviceEncryption** and **AllowWarningForOtherDiskEncryption** node. As such when you have **RequireDeviceEncryption** set to **1**, **AllowStandardUserEncryption** set to **1** and **AllowWarningForOtherDiskEncryption** set to **0**, this allows silent BitLocker encryption for Autopilot devices with standard user profiles.
-
-With update to the BitLocker Policy CSP, starting with Windows version 1809 and above, the endpoint protection policy can enable silent BitLocker encryption on the end device even if the device is non-HSTI compliant.
-
-[Back to list](#list)
 
 ## <a id="issue-1"></a>Event ID 853: TPM not available
 
@@ -207,21 +159,6 @@ However if you see something like below, your device does not have support:
 
 ![](./images/4509202_en_1.png)
 
-## Verifying that BitLocker is operating correctly
-
-![](./images/4509203_en_1.png)
-
-![](./images/4509204_en_1.png)
-
-You can also verify if the BitLocker Recovery Key has been uploaded to Azure by checking the device details from under Azure AD devices section.
-
-![](./images/4509205_en_1.png)
-
-Registry path to verify the BitLocker policy as delivered to the device: **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device\\BitLocker**
-
-![](./images/4509206_en_1.png)
-
-The registry path **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device** will contain all the policy as received/enforced by the MDM
 
 ## <a id="issue-7"></a>Event ID 846, 778, and 851: Error 0x80072f9a
 
@@ -260,3 +197,70 @@ The logged on user does not have permission to read the private key on the certi
 ### Resolution
 
 In order to resolve this issue please install [kb4497934](https://support.microsoft.com/help/4497934/windows-10-update-kb4497934)
+
+## <a id="policy"></a>Review your BitLocker policy configuration
+
+When troubleshooting BitLocker policy enforcement issues, start by reading the following KB: [Intune: Requirements for automatic BitLocker encryption during AAD join](https://internal.support.services.microsoft.com/en-us/help/4502023)
+
+BitLocker enforcement on the end device can be of three types:
+
+- Automatic (during AADJ for Windows v 1703+) [I sent this in my previous email]
+- Silent (Endpoint protection policy for Windows v 1803+)
+- Interactive (Endpoint policy for pre Windows v 1803)
+
+If your device supports modern Standby (Instant Go) and is HSTI compliant, AADJ will trigger automatic device encryption for Windows version 1703 and above. This does not requires the admin to enforce/deploy an endpoint protection policy.
+If your device is HSTI compliant but does not supports modern Standby (Instant Go), you would require an endpoint protection policy to enforce silent BitLocker encryption. Below settings allow for the same.
+
+![](./images/4509186_en_1.png)
+
+The OMA-URI reference for the above settings:
+
+- OMA-URI: **./Device/Vendor/MSFT/BitLocker/RequireDeviceEncryption**  
+   Value Type: **Integer**  
+   Value: **1**  (1 = Require, 0 = Not Configured)
+
+- OMA-URI: **./Device/Vendor/MSFT/BitLocker/AllowWarningForOtherDiskEncryption**  
+   Value Type: **Integer**  
+   Value: **0** (0 = Blocked, 1 = Allowed)  
+
+> [!NOTE]
+> If the setting **Waiting for other disk encryption** is set to **Not configured**, then user receives the toast notification and enabling the encryption would require user interaction to go through the BitLocker activation guide.
+
+![](./images/4509187_en_1.png)
+
+If your device does not supports modern Standby but is HSTI compliant, for pre Windows v 1803, an endpoint protection policy with the above settings will deliver the policy to the device but user will need to manually enable BitLocker encryption by clicking on the toast notification as received and going through the BitLocker activation guide.  
+
+For Autopilot devices, from 1803 and above, automatic device encryption is supported for standard users vide the settings made available in UI with 1901 Intune release as below. System requirement still remains same as above (HSTI compliant and support for modern Standby)
+
+![](./images/4509188_en_1.png)
+
+The OMA-URI reference for the above settings:
+
+- OMA-URI: ./Device/Vendor/MSFT/BitLocker/AllowStandardUserEncryption  
+   Value Type: Integer
+   Value: 1  
+
+> [!NOTE]
+> This node works in tandem with the **RequireDeviceEncryption** and **AllowWarningForOtherDiskEncryption** node. As such when you have **RequireDeviceEncryption** set to **1**, **AllowStandardUserEncryption** set to **1** and **AllowWarningForOtherDiskEncryption** set to **0**, this allows silent BitLocker encryption for Autopilot devices with standard user profiles.
+
+With update to the BitLocker Policy CSP, starting with Windows version 1809 and above, the endpoint protection policy can enable silent BitLocker encryption on the end device even if the device is non-HSTI compliant.
+
+[Back to list](#list)
+
+## Verifying that BitLocker is operating correctly
+
+![](./images/4509203_en_1.png)
+
+![](./images/4509204_en_1.png)
+
+You can also verify if the BitLocker Recovery Key has been uploaded to Azure by checking the device details from under Azure AD devices section.
+
+![](./images/4509205_en_1.png)
+
+Registry path to verify the BitLocker policy as delivered to the device: **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device\\BitLocker**
+
+![](./images/4509206_en_1.png)
+
+The registry path **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device** will contain all the policy as received/enforced by the MDM
+
+[Back to list](#list)
