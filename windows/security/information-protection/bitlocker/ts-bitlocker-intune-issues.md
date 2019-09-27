@@ -57,13 +57,13 @@ If your device is HSTI compliant but does not supports modern Standby (Instant G
 
 The OMA-URI reference for the above settings:
 
-- OMA-URI: ./Device/Vendor/MSFT/BitLocker/RequireDeviceEncryption  
-   Value Type: Integer  
-   Value: 1  (1 = Require, 0 = Not Configured)
+- OMA-URI: **./Device/Vendor/MSFT/BitLocker/RequireDeviceEncryption**  
+   Value Type: **Integer**  
+   Value: **1**  (1 = Require, 0 = Not Configured)
 
-- OMA-URI: ./Device/Vendor/MSFT/BitLocker/AllowWarningForOtherDiskEncryption  
-   Value Type: Integer  
-   Value: 0 (0 = Blocked, 1 = Allowed)  
+- OMA-URI: **./Device/Vendor/MSFT/BitLocker/AllowWarningForOtherDiskEncryption**  
+   Value Type: **Integer**  
+   Value: **0** (0 = Blocked, 1 = Allowed)  
 
 > [!NOTE]
 > If the setting **Waiting for other disk encryption** is set to **Not configured**, then user receives the toast notification and enabling the encryption would require user interaction to go through the BitLocker activation guide.
