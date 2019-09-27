@@ -39,17 +39,17 @@ sections:
       html: Get the update >
       image: 
         src: https://docs.microsoft.com/media/common/i_deploy.svg
-      title: Windows 10, version 1903 rollout begins
-    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064
-      html: Read about the latest enhancements > 
+      title: Windows 10, version 1903 rollout in progress
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Using-machine-learning-to-improve-the-Windows-10-update/ba-p/877860
+      html: Learn how machine learning informs each rollout >
       image: 
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-      title: What’s new in Windows Update for Business
-    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024
-      html: Get an overview > 
+        src: https://docs.microsoft.com/media/common/i_multi-connect.svg
+      title: Improving the Windows 10 update experience
+    - href: https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-update-servicing-cadence/ba-p/222376
+      html: Learn more >
       image: 
         src: https://docs.microsoft.com/media/common/i_investigate.svg
-      title: What’s new for businesses and IT pros in Windows 10
+      title: Windows 10 update servicing cadence
 - items:
   - type: markdown
     text: "
