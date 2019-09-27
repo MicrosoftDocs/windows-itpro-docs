@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
-The potentially unwanted application (PUA) protection feature in Microsoft Defender ATP for Mac can detect and block PUAs on endpoints in your network.
+The potentially unwanted application (PUA) protection feature in Microsoft Defender ATP for Mac can detect and block PUA files on endpoints in your network.
 
 These applications are not considered viruses, malware, or other types of threats, but might perform actions on endpoints that adversely affect their performance or use. PUA can also refer to applications that are considered to have poor reputation.
 
