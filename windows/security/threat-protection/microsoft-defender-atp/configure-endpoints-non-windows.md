@@ -1,6 +1,6 @@
 ---
 title: Onboard non-Windows machines to the Microsoft Defender ATP service
-description: Configure non-Winodws machines so that they can send sensor data to the Microsoft Defender ATP service.
+description: Configure non-Windows machines so that they can send sensor data to the Microsoft Defender ATP service.
 keywords: onboard non-Windows machines, macos, linux, machine management, configure Windows ATP machines, configure Microsoft Defender Advanced Threat Protection machines
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -8,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author macaparas
+ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -27,13 +27,9 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
 
-
-
 Microsoft Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network. 
 
 You'll need to know the exact Linux distros and macOS versions that are compatible with Microsoft Defender ATP for the integration to work. 
-
-
 
 ## Onboarding non-Windows machines
 You'll need to take the following steps to onboard non-Windows machines:
