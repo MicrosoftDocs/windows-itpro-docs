@@ -1,7 +1,7 @@
 ---
 title: How to Repair an Application
 description: How to Repair an Application
-author: eavena
+author: dansimp
 ms.assetid: 80b08416-ad86-4ed6-966a-b943e3efb951
 ms.reviewer: 
 manager: dansimp

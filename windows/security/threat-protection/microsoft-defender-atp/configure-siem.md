@@ -24,7 +24,7 @@ ms.date: 10/16/2017
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
 ## Pull detections using security information and events management (SIEM) tools
 
@@ -32,7 +32,7 @@ ms.date: 10/16/2017
 >- [Microsoft Defender ATP Alert](alerts.md) is composed from one or more detections
 >- [Microsoft Defender ATP Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Machine and its related Alert details.
 
-Microsoft Defender ATP supports (SIEM) tools to pull detections. Microsoft Defender ATP exposes alerts through an HTTPS endpoint hosted in Azure. The endpoint can be configured to pull detections from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for an AAD application that represents the specific SIEM connector installed in your environment.
+Microsoft Defender ATP supports security information and event management (SIEM) tools to pull detections. Microsoft Defender ATP exposes alerts through an HTTPS endpoint hosted in Azure. The endpoint can be configured to pull detections from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for an AAD application that represents the specific SIEM connector installed in your environment.
 
 
 Microsoft Defender ATP currently supports the following SIEM tools:

@@ -1,7 +1,7 @@
 ---
 title: Deploy Required Features for UE-V 2.x
 description: Deploy Required Features for UE-V 2.x
-author: levinec
+author: dansimp
 ms.assetid: 10399bb3-cc7b-4578-bc0c-2f6b597abe4d
 ms.reviewer: 
 manager: dansimp

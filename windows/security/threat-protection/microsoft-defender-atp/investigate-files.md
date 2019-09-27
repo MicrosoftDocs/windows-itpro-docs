@@ -26,7 +26,7 @@ ms.date: 04/24/2018
 
 [!include[Prerelease information](prerelease.md)]
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink)
 
 Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
 
@@ -52,6 +52,7 @@ Along the top of the profile page, above the file information cards. Actions you
 - Stop and quarantine
 - Add/edit indicator
 - Download file
+- Consult a threat expert
 - Action center
 
 For more information on these actions, see [Take response action on a file](respond-file-alerts.md).

@@ -1,7 +1,7 @@
 ---
 title: About the Computer TPM Chip
 description: About the Computer TPM Chip
-author: msfttracyp
+author: dansimp
 ms.assetid: 6f1cf18c-277a-4932-886d-14202ca8d175
 ms.reviewer: 
 manager: dansimp

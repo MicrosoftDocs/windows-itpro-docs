@@ -1,7 +1,7 @@
 ---
 title: Release Notes for MBAM 1.0
 description: Release Notes for MBAM 1.0
-author: msfttracyp
+author: dansimp
 ms.assetid: d82fddde-c360-48ef-86a0-d9b5fe066861
 ms.reviewer: 
 manager: dansimp

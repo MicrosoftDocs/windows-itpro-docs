@@ -48,11 +48,11 @@ Download the installation and onboarding packages from Windows Defender Security
     Extract the contents of the .zip files:
   
     ```bash
-    ls -l
+    $ ls -l
     total 721152
     -rw-r--r--  1 test  staff       6185 Mar 15 10:45 WindowsDefenderATPOnboardingPackage.zip
     -rw-r--r--  1 test  staff  354531845 Mar 13 08:57 wdav.pkg
-    mavel-macmini:Downloads test$ unzip WindowsDefenderATPOnboardingPackage.zip
+    $ unzip WindowsDefenderATPOnboardingPackage.zip
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     inflating: WindowsDefenderATPOnboarding.py
     ```
@@ -92,7 +92,7 @@ If you did not enable Microsoft's driver during installation, then the applicati
 You can also run ```mdatp --health```. It reports if Real-Time Protection is enabled but not available:
 
 ```bash
-mdatp --health
+$ mdatp --health
 ...
 realTimeProtectionAvailable             : false
 realTimeProtectionEnabled               : true
@@ -112,7 +112,7 @@ In this case, you need to perform the following steps to enable Real-Time Protec
 
 1. In Terminal, attempt to install the driver. (The operation will fail)
     ```bash
-    sudo kextutil /Library/Extensions/wdavkext.kext
+    $ sudo kextutil /Library/Extensions/wdavkext.kext
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Diagnostics for /Library/Extensions/wdavkext.kext:
@@ -125,13 +125,13 @@ In this case, you need to perform the following steps to enable Real-Time Protec
 4. In Terminal, install the driver again. This time the operation will succeed:
 
 ```bash
-sudo kextutil /Library/Extensions/wdavkext.kext
+$ sudo kextutil /Library/Extensions/wdavkext.kext
 ```
 
 The banner should disappear from the Defender application, and ```mdatp --health``` should now report that Real-Time Protection is both enabled and available:
 
 ```bash
-mdatp --health
+$ mdatp --health
 ...
 realTimeProtectionAvailable             : true
 realTimeProtectionEnabled               : true
@@ -145,20 +145,20 @@ realTimeProtectionEnabled               : true
     The client machine is not associated with orgId. Note that the *orgId* attribute is blank.
 
     ```bash
-    mdatp --health orgId
+    $ mdatp --health orgId
     ```
 
 2. Run the Python script to install the configuration file:
 
     ```bash
-    /usr/bin/python WindowsDefenderATPOnboarding.py
+    $ /usr/bin/python WindowsDefenderATPOnboarding.py
     Generating /Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist ... (You may be required to enter sudos password)
     ```
 
 3. Verify that the machine is now associated with your organization and reports a valid *orgId*:
 
     ```bash
-    mdatp --health orgId
+    $ mdatp --health orgId
     E6875323-A6C0-4C60-87AD-114BBE7439B8
     ```
 

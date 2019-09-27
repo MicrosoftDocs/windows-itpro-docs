@@ -274,9 +274,12 @@ B. If you experience software or device malfunction after using the above proced
 
 C. If you experience a critical error during boot or your system is unstable after using the above procedure to turn on HVCI, you can recover using the Windows Recovery Environment (Windows RE). To boot to Windows RE, see [Windows RE Technical Reference](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference). After logging in to Windows RE, you can turn off HVCI by renaming or deleting the SIPolicy.p7b file from the file location in step 3 above and then restart your device.
 
-## How to turn off HVCI on the Windows 10 Fall Creators Update
+## How to turn off HVCI
 
-1. Rename or delete the SIPolicy.p7b file located at C:\Windows\System32\CodeIntegrity.
+1. Run the following command from an elevated prompt to set the HVCI registry key to off
+```ini
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 0 /f
+```
 2. Restart the device.
 3. To confirm HVCI has been successfully disabled, open System Information and check **Virtualization-based security Services Running**, which should now have no value displayed.
 

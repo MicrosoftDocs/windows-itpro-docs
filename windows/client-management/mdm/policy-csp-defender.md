@@ -6,16 +6,12 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 08/26/2019
+ms.date: 09/24/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Policy CSP - Defender
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 
 <hr/>
 
@@ -2335,17 +2331,17 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The following list shows the supported values:
+The following list shows the supported values:  
 
--   0 (default) – Every day
--   1 – Monday
--   2 – Tuesday
--   3 – Wednesday
--   4 – Thursday
--   5 – Friday
--   6 – Saturday
--   7 – Sunday
--   8 – No scheduled scan
+- 0 (default) – Every day
+- 1 – Sunday 
+- 2 – Monday 
+- 3 – Tuesday  
+- 4 – Wednesday
+- 5 – Thursday  
+- 6 – Friday  
+- 7 – Saturday  
+- 8 – No scheduled scan
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2773,45 +2769,13 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
+-   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Defender policies supported by Microsoft Surface Hub  
-
-- [Defender/AllowArchiveScanning](#defender-allowarchivescanning)  
-- [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)  
-- [Defender/AllowCloudProtection](#defender-allowcloudprotection)  
-- [Defender/AllowEmailScanning](#defender-allowemailscanning)  
-- [Defender/AllowFullScanOnMappedNetworkDrives](#defender-allowfullscanonmappednetworkdrives)  
-- [Defender/AllowFullScanRemovableDriveScanning](#defender-allowfullscanremovabledrivescanning)  
-- [Defender/AllowIOAVProtection](#defender-allowioavprotection)  
-- [Defender/AllowIntrusionPreventionSystem](#defender-allowintrusionpreventionsystem)  
-- [Defender/AllowOnAccessProtection](#defender-allowonaccessprotection)  
-- [Defender/AllowRealtimeMonitoring](#defender-allowrealtimemonitoring)  
-- [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)  
-- [Defender/AllowScriptScanning](#defender-allowscriptscanning)  
-- [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)  
-- [Defender/AvgCPULoadFactor](#defender-avgcpuloadfactor)  
-- [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)  
-- [Defender/ExcludedExtensions](#defender-excludedextensions)  
-- [Defender/ExcludedPaths](#defender-excludedpaths)  
-- [Defender/ExcludedProcesses](#defender-excludedprocesses)  
-- [Defender/PUAProtection](#defender-puaprotection)  
-- [Defender/RealTimeScanDirection](#defender-realtimescandirection)  
-- [Defender/ScanParameter](#defender-scanparameter)  
-- [Defender/ScheduleQuickScanTime](#defender-schedulequickscantime)  
-- [Defender/ScheduleScanDay](#defender-schedulescanday)  
-- [Defender/ScheduleScanTime](#defender-schedulescantime)  
-- [Defender/SignatureUpdateInterval](#defender-signatureupdateinterval)  
-- [Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)  
-- [Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)  
-  <!--EndSurfaceHub-->

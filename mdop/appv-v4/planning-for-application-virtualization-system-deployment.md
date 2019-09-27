@@ -1,7 +1,7 @@
 ---
 title: Planning for Application Virtualization System Deployment
 description: Planning for Application Virtualization System Deployment
-author: eavena
+author: dansimp
 ms.assetid: 8215269f-c083-468a-bf0b-886b0d2dd69e
 ms.reviewer: 
 manager: dansimp

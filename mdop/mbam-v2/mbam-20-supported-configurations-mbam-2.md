@@ -1,7 +1,7 @@
 ---
 title: MBAM 2.0 Supported Configurations
 description: MBAM 2.0 Supported Configurations
-author: msfttracyp
+author: dansimp
 ms.assetid: dca63391-39fe-4273-a570-76d0a2f8a0fd
 ms.reviewer: 
 manager: dansimp

@@ -116,6 +116,7 @@ The following fields are collected:
 | Field                                               | Description |
 | --------------------------------------------------- | ----------- |
 | antivirus_engine.enable_real_time_protection        | Whether real-time protection is enabled on the device or not. |
+| antivirus_engine.passive_mode                       | Whether passive mode is enabled on the device or not. |
 | cloud_service.enabled                               | Whether cloud delivered protection is enabled on the device or not. |
 | cloud_service.timeout                               | Time out when the application communicates with the Microsoft Defender ATP cloud. |
 | cloud_service.heartbeat_interval                    | Interval between consecutive heartbeats sent by the product to the cloud. |
@@ -123,6 +124,8 @@ The following fields are collected:
 | cloud_service.diagnostic_level                      | Diagnostic level of the device (required, optional). |
 | cloud_service.automatic_sample_submission           | Whether automatic sample submission is turned on or not. |
 | edr.early_preview                                   | Whether the machine should run EDR early preview features. |
+| edr.group_id                                        | Group identifier used by the detection and response component. |
+| edr.tags                                            | User-defined tags. |
 | features.\[optional feature name\]                  | List of preview features, along with whether they are enabled or not. |
 
 #### Product and service performance data events
@@ -230,37 +233,44 @@ The following fields are collected:
 | Field                          | Description |
 | ------------------------------ | ----------- |
 | pkt_ack_timeout                | The following properties are aggregated numerical values, representing count of events that happened since kernel extension startup. |
-| pkt_ack_conn_timeout           | |
-| ipc.ack_pkts                   | |
-| ipc.nack_pkts                  | |
-| ipc.send.ack_no_conn           | |
-| ipc.send.nack_no_conn          | |
-| ipc.send.ack_no_qsq            | |
-| ipc.send.nack_no_qsq           | |
-| ipc.ack.no_space               | |
-| ipc.ack.timeout                | |
-| ipc.ack.ackd_fast              | |
-| ipc.ack.ackd                   | |
-| ipc.recv.bad_pkt_len           | |
-| ipc.recv.bad_reply_len         | |
-| ipc.recv.no_waiter             | |
-| ipc.recv.copy_failed           | |
-| ipc.kauth.vnode.mask           | |
-| ipc.kauth.vnode.read           | |
-| ipc.kauth.vnode.write          | |
-| ipc.kauth.vnode.exec           | |
-| ipc.kauth.vnode.del            | |
-| ipc.kauth.vnode.read_attr      | |
-| ipc.kauth.vnode.write_attr     | |
-| ipc.kauth.vnode.read_ex_attr   | |
-| ipc.kauth.vnode.write_ex_attr  | |
-| ipc.kauth.vnode.read_sec       | |
-| ipc.kauth.vnode.write_sec      | |
-| ipc.kauth.vnode.take_own       | |
-| ipc.kauth.vnode.denied         | |
-| ipc.kauth.file_op.mask         | |
-| ipc.kauth_file_op.open         | |
-| ipc.kauth.file_op.close        | |
+| pkt_ack_conn_timeout             | |
+| ipc.ack_pkts                     | |
+| ipc.nack_pkts                    | |
+| ipc.send.ack_no_conn             | |
+| ipc.send.nack_no_conn            | |
+| ipc.send.ack_no_qsq              | |
+| ipc.send.nack_no_qsq             | |
+| ipc.ack.no_space                 | |
+| ipc.ack.timeout                  | |
+| ipc.ack.ackd_fast                | |
+| ipc.ack.ackd                     | |
+| ipc.recv.bad_pkt_len             | |
+| ipc.recv.bad_reply_len           | |
+| ipc.recv.no_waiter               | |
+| ipc.recv.copy_failed             | |
+| ipc.kauth.vnode.mask             | |
+| ipc.kauth.vnode.read             | |
+| ipc.kauth.vnode.write            | |
+| ipc.kauth.vnode.exec             | |
+| ipc.kauth.vnode.del              | |
+| ipc.kauth.vnode.read_attr        | |
+| ipc.kauth.vnode.write_attr       | |
+| ipc.kauth.vnode.read_ex_attr     | |
+| ipc.kauth.vnode.write_ex_attr    | |
+| ipc.kauth.vnode.read_sec         | |
+| ipc.kauth.vnode.write_sec        | |
+| ipc.kauth.vnode.take_own         | |
+| ipc.kauth.vnode.denied           | |
+| ipc.kauth.file_op.mask           | |
+| ipc.kauth_file_op.open           | |
+| ipc.kauth.file_op.close          | |
+| ipc.kauth.file_op.close_modified | |
+| ipc.kauth.file_op.move           | |
+| ipc.kauth.file_op.link           | |
+| ipc.kauth.file_op.exec           | |
+| ipc.kauth.file_op.remove         | |
+| ipc.kauth.file_op.fork           | |
+| ipc.kauth.file_op.create         | |
 
 ## Resources
 

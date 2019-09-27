@@ -62,6 +62,23 @@ Whether real-time protection (scan files as they are accessed) is enabled or not
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
 
+#### Enable / disable passive mode
+
+Whether the antivirus engine runs in passive mode or not. In passive mode:
+- Real-time protection is turned off
+- On-demand scanning is turned on
+- Automatic threat remediation is turned off
+- Security intelligence updates are turned on
+- Status menu icon is hidden
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | passiveMode |
+| **Data type** | Boolean |
+| **Possible values** | false (default) <br/> true |
+| **Comments** | Available in Microsoft Defender ATP version 100.67.60 or higher. |
+
 #### Scan exclusions
 
 Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.
@@ -131,6 +148,16 @@ Used to exclude content from the scan by file name.
 | **Data type** | String |
 | **Possible values** | any string |
 | **Comments** | Applicable only if *$type* is *excludedFileName* |
+
+#### Allowed threats
+
+List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | allowedThreats |
+| **Data type** | Array of strings |
 
 #### Threat type settings
 
@@ -212,6 +239,28 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 | **Key** | automaticSampleSubmission |
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
+
+### User interface preferences
+
+The *userInterface* section of the configuration profile is used to manage the preferences of the user interface of the product.
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | userInterface |
+| **Data type** | Dictionary (nested preference) |
+| **Comments** | See the following sections for a description of the dictionary contents. |
+
+#### Show / hide status menu icon
+
+Whether the status menu icon (shown in the top-right corner of the screen) is hidden or not.
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | hideStatusMenuIcon |
+| **Data type** | Boolean |
+| **Possible values** | false (default) <br/> true |
 
 ## Recommended configuration profile
 
@@ -357,6 +406,8 @@ The following configuration profile contains entries for all settings described 
     <dict>
         <key>enableRealTimeProtection</key>
         <true/>
+        <key>passiveMode</key>
+        <false/>
         <key>exclusions</key>
         <array>
             <dict>
@@ -384,7 +435,7 @@ The following configuration profile contains entries for all settings described 
         </array>
         <key>allowedThreats</key>
         <array>
-            <string>eicar</string>
+            <string>EICAR-Test-File (not a virus)</string>
         </array>
         <key>threatTypeSettings</key>
         <array>
@@ -410,6 +461,11 @@ The following configuration profile contains entries for all settings described 
         <string>optional</string>
         <key>automaticSampleSubmission</key>
         <true/>
+    </dict>
+    <key>userInterface</key>
+    <dict>
+        <key>hideStatusMenuIcon</key>
+        <false/>
     </dict>
 </dict>
 </plist>
@@ -465,6 +521,8 @@ The following configuration profile contains entries for all settings described 
                 <dict>
                     <key>enableRealTimeProtection</key>
                     <true/>
+                    <key>passiveMode</key>
+                    <false/>
                     <key>exclusions</key>
                     <array>
                         <dict>
@@ -492,7 +550,7 @@ The following configuration profile contains entries for all settings described 
                     </array>
                     <key>allowedThreats</key>
                     <array>
-                        <string>eicar</string>
+                        <string>EICAR-Test-File (not a virus)</string>
                     </array>
                     <key>threatTypeSettings</key>
                     <array>
@@ -518,6 +576,11 @@ The following configuration profile contains entries for all settings described 
                     <string>optional</string>
                     <key>automaticSampleSubmission</key>
                     <true/>
+                </dict>
+                <key>userInterface</key>
+                <dict>
+                    <key>hideStatusMenuIcon</key>
+                    <false/>
                 </dict>
             </dict>
         </array>
