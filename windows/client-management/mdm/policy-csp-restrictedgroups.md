@@ -121,9 +121,9 @@ Here is an example:
 
 ```
 <groupmembership>
-    <accessgroup desc="Administrators">
-        <member name="AzureAD\CSPTest@contoso.com" />
-        <member name="CSPTest22306\administrator" />
+    <accessgroup desc = "Administrators">
+        <member name = "AzureAD\CSPTest@contoso.com" />
+        <member name = "CSPTest22306\administrator" />
         <member name = "AzureAD\patlewis@contoso.com" />
     </accessgroup>
     <accessgroup desc = "testcsplocal">
