@@ -79,6 +79,9 @@ When merging, the policy type and ID of the leftmost/first policy specified is u
 
 ### Deploying policies
 
+> [!NOTE]
+> You cannot use the "Deploy Windows Defender Application Control" group policy setting to deploy multiple CI policies. You will have to copy the `*.cip` files, both the baseline and the supplemental ones, to C:\Windows\System32\CodeIntegrity\CiPolicies\Active\.
+
 In order to deploy policies using the new multiple policy format you will need to:
 
 1. Ensure policies are copied to the right location
