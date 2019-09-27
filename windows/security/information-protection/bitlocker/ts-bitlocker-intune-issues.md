@@ -202,6 +202,9 @@ In order to resolve this issue please install [kb4497934](https://support.micros
 
 When troubleshooting BitLocker policy enforcement issues, start by reading the following KB: [Intune: Requirements for automatic BitLocker encryption during AAD join](https://internal.support.services.microsoft.com/en-us/help/4502023)
 
+[Policy CSP&mdash;BitLocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker)
+
+
 BitLocker enforcement on the end device can be of three types:
 
 - Automatic (during AADJ for Windows v 1703+) [I sent this in my previous email]
