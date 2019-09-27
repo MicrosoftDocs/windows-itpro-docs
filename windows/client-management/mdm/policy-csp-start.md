@@ -668,13 +668,7 @@ The following list shows the supported values:
 Enabling this policy prevents context menus from being invoked in the Start Menu.
 
 <!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
 
--   0 (default) – False (Do not disable).
--   1 - True (disable).
-
-<!--/SupportedValues-->
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Disable context menus in the Start Menu*
@@ -684,6 +678,10 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (Do not disable).
+-   1 - True (disable).
 
 <!--/SupportedValues-->
 <!--Example-->
@@ -1100,13 +1098,7 @@ Added in Windows 10, version 1709. Enabling this policy removes the people icon
 Value type is integer.
 
 <!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
 
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
-<!--/SupportedValues-->
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP English name: *Remove the People Bar from the taskbar*
@@ -1115,6 +1107,13 @@ ADMX Info:
 -   GP ADMX file name: *StartMenu.admx*
 
 <!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--/Policy-->
 
 <hr/>
@@ -1856,14 +1855,14 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnote:
+Footnotes:
 
 -   1 - Added in Windows 10, version 1607.
 -   2 - Added in Windows 10, version 1703.
 -   3 - Added in Windows 10, version 1709.
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
--   6 - Added in the next major release of Windows 10.
+-   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
 

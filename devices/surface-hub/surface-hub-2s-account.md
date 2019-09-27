@@ -83,12 +83,12 @@ Set-MsolUserLicense -UserPrincipalName "account@YourDomain.com" -AddLicenses "co
 ### Install prerequisites
 
 - [Visual C++ 2017 Redistributable](https://aka.ms/vs/15/release/vc_redist.x64.exe)
-- [Skype for Business Online PowerShell Module](https://www.microsoft.com/en-us/download/confirmation.aspx?id=39366)
+- [Skype for Business Online PowerShell Module](https://www.microsoft.com/download/confirmation.aspx?id=39366)
 
 ```
 Import-Module LyncOnlineConnector
 $SfBSession = New-CsOnlineSession -Credential (Get-Credential)
 Import-PSSession $SfBSession -AllowClobber
 Enable the Skype for Business meeting room
-Enable-CsMeetingRoom -Identity account@YourDomain.com -RegistrarPoo(Get-CsTenant).Registrarpool -SipAddressType EmailAddress
+Enable-CsMeetingRoom -Identity account@YourDomain.com -RegistrarPool(Get-CsTenant).Registrarpool -SipAddressType EmailAddress
 ```

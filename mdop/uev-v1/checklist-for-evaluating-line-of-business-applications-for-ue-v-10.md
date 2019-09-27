@@ -1,7 +1,7 @@
 ---
 title: Checklist for Evaluating Line-of-Business Applications for UE-V 1.0
 description: Checklist for Evaluating Line-of-Business Applications for UE-V 1.0
-author: levinec
+author: dansimp
 ms.assetid: 3bfaab30-59f7-4099-abb1-d248ce0086b8
 ms.reviewer: 
 manager: dansimp

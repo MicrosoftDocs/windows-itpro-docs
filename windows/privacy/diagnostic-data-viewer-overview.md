@@ -42,7 +42,7 @@ Before you can use this tool for viewing Windows diagnostic data, you must turn 
     ![Location to turn on data viewing](images/ddv-data-viewing.png)
 
 ### Download the Diagnostic Data Viewer
-Download the app from the [Microsoft Store Diagnostic Data Viewer](https://www.microsoft.com/en-us/store/p/diagnostic-data-viewer/9n8wtrrsq8f7?rtc=1) page.
+Download the app from the [Microsoft Store Diagnostic Data Viewer](https://www.microsoft.com/store/p/diagnostic-data-viewer/9n8wtrrsq8f7?rtc=1) page.
 
     >[!Important]
     >It's possible that your Windows device doesn't have the Microsoft Store available (for example, Windows Server). If this is the case, see [Diagnostic Data Viewer for PowerShell](https://go.microsoft.com/fwlink/?linkid=2023830).

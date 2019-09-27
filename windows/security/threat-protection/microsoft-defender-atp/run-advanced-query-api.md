@@ -147,4 +147,3 @@ If the 'roles' section in the token does not include the necessary permission:
 - [Microsoft Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting from Portal](advanced-hunting.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
-- [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)

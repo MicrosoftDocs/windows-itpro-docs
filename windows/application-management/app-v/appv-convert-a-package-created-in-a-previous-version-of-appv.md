@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 07/10/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ---
 # How to convert a package created in a previous version of App-V

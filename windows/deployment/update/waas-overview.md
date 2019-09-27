@@ -90,7 +90,7 @@ With Windows 10, Microsoft will package new features into feature updates that c
 
 Monthly updates in previous Windows versions were often overwhelming because of the sheer number of updates available each month. Many organizations selectively chose which updates they wanted to install and which they didn’t, and this created countless scenarios in which organizations deployed essential security updates but picked only a subset of non-security fixes.
 
-In Windows 10, rather than receiving several updates each month and trying to figure out which the organization needs, which ultimately causes platform fragmentation, administrators will see one cumulative monthly update that supersedes the previous month’s update, containing both security and non-security fixes. This approach makes patching simpler and ensures that customers’ devices are more closely aligned with the testing done at Microsoft, reducing unexpected issues resulting from patching. The left side of Figure 1 provides an example of Windows 7 devices in an enterprise and what their current patch level might look like. On the right is what Microsoft’s test environment devicess contain. This drastic difference is the basis for many compatibility issues and system anomalies related to Windows updates.
+In Windows 10, rather than receiving several updates each month and trying to figure out which the organization needs, which ultimately causes platform fragmentation, administrators will see one cumulative monthly update that supersedes the previous month’s update, containing both security and non-security fixes. This approach makes patching simpler and ensures that customers’ devices are more closely aligned with the testing done at Microsoft, reducing unexpected issues resulting from patching. The left side of Figure 1 provides an example of Windows 7 devices in an enterprise and what their current patch level might look like. On the right is what Microsoft’s test environment devices contain. This drastic difference is the basis for many compatibility issues and system anomalies related to Windows updates.
 
 **Figure 1**
 
@@ -132,7 +132,7 @@ Specialized systems—such as devices that control medical equipment, point-of-s
 > [!NOTE]
 > Windows 10 Enterprise LTSB is a separate Long Term Servicing Channel version.
 >
->Long-term Servicing channel is not intended for deployment on most or all the devicess in an organization; it should be used only for special-purpose devices. As a general guideline, a device with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the Semi-Annual servicing channel.
+> Long-term Servicing channel is not intended for deployment on most or all the devices in an organization; it should be used only for special-purpose devices. As a general guideline, a device with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the Semi-Annual servicing channel.
 
 Microsoft never publishes feature updates through Windows Update on devices that run Windows 10 Enterprise LTSB. Instead, it typically offers new LTSC releases every 2–3 years, and organizations can choose to install them as in-place upgrades or even skip releases over a 10-year life cycle.
 

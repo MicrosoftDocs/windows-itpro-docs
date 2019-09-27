@@ -22,7 +22,7 @@ Password-less phone sign-in simplifies signing-in to your meetings and files on 
 
 ## To set up password-less phone sign-in
 
-1. Download the [Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator) app for iPhone or Android to your phone.
+1. Download the [Microsoft Authenticator](https://www.microsoft.com/account/authenticator) app for iPhone or Android to your phone.
 2. From your PC, go to [https://aka.ms/MFASetup](https://aka.ms/MFASetup) , sign in with your account, and select **Next.**
 3. In the Additional security verification screen, select Mobile App and Use verification code, and then select **Setup**.
 

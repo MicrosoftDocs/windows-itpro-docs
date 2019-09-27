@@ -24,12 +24,12 @@ Microsoft Safety Scanner is a scan tool designed to find and remove malware from
 - [Download Microsoft Safety Scanner (64-bit)](https://go.microsoft.com/fwlink/?LinkId=212732)
 
 > [!NOTE]
-> The security intelligence update version of the Microsoft Safety Scanner matches the version described [in this web page](https://www.microsoft.com/en-us/wdsi/definitions).
+> The security intelligence update version of the Microsoft Safety Scanner matches the version described [in this web page](https://www.microsoft.com/wdsi/definitions).
 
 Safety Scanner only scans when manually triggered and is available for use 10 days after being downloaded. We recommend that you always download the latest version of this tool before each scan.
 
 > [!NOTE]
-> This tool does not replace your antimalware product. For real-time protection with automatic updates, use [Windows Defender Antivirus on Windows 10 and Windows 8](https://www.microsoft.com/windows/comprehensive-security) or [Microsoft Security Essentials on Windows 7](https://support.microsoft.com/help/14210/security-essentials-download). These antimalware products also provide powerful malware removal capabilities. If you are having difficulties removing malware with these products, you can refer to our help on [removing difficult threats](https://www.microsoft.com/en-us/wdsi/help/troubleshooting-infection).
+> This tool does not replace your antimalware product. For real-time protection with automatic updates, use [Windows Defender Antivirus on Windows 10 and Windows 8](https://www.microsoft.com/windows/comprehensive-security) or [Microsoft Security Essentials on Windows 7](https://support.microsoft.com/help/14210/security-essentials-download). These antimalware products also provide powerful malware removal capabilities. If you are having difficulties removing malware with these products, you can refer to our help on [removing difficult threats](https://www.microsoft.com/wdsi/help/troubleshooting-infection).
 
 > [!NOTE]
 > Safety scanner is a portable executable and does not appear in the Windows Start menu or as an icon on the desktop. Note where you saved this download.

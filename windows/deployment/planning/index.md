@@ -4,11 +4,11 @@ description: Windows 10 provides new deployment capabilities, scenarios, and to
 ms.assetid: 002F9B79-B50F-40C5-A7A5-0B4770E6EC15
 keywords: deploy, upgrade, update, configure
 ms.prod: w10
+manager: laurawi
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-author: TrudyHa
-ms.date: 07/27/2017
+author: greg-lindsay
 ms.topic: article
 ---
 

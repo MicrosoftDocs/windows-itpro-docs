@@ -23,11 +23,8 @@ ms.reviewer:
 -   On-premises deployment
 -   Certificate trust
 
-
-To get the latest Windows Hello for Business and PIN Complexity Group Policy settings, you need to create a Group Policy Central Store and update your Group Policy Central Store ADMX files with the latest Administrative Template files. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows).
-
-Alternatively, you need a Windows 10, version 1703 workstation to run the Group Policy Management Console.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520). Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1703. Or you can copy the .ADMX and .ADML files from a computer running Windows 10, version 1703 to their respective language folder on a Windows Server .
-
+You need a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
+Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1703.
 
 On-premises certificate-based deployments of Windows Hello for Business needs three Group Policy settings:
 * Enable Windows Hello for Business

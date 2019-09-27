@@ -1,7 +1,7 @@
 ---
 title: Policy CSP - Troubleshooting
 description: Policy CSP - Troubleshooting
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -113,10 +113,11 @@ By default, this policy is not configured and the SKU based defaults are used fo
 
 <!--/SupportedValues-->
 <!--ADMXMapped-->
-ADMX Info:<br/>-   GP English name: <em>Troubleshooting: Allow users to access recommended troubleshooting for known problems</em>
--   GP name: <em>TroubleshootingAllowRecommendations</em>
--   GP path: <em>Troubleshooting and Diagnostics/Microsoft Support Diagnostic Tool</em>
--   GP ADMX file name: <em>MSDT.admx</em>
+ADMX Info:  
+-   GP English name: *Troubleshooting: Allow users to access recommended troubleshooting for known problems*
+-   GP name: *TroubleshootingAllowRecommendations*
+-   GP path: *Troubleshooting and Diagnostics/Microsoft Support Diagnostic Tool*
+-   GP ADMX file name: *MSDT.admx*
 
 <!--/ADMXMapped-->
 
@@ -127,8 +128,6 @@ ADMX Info:<br/>-   GP English name: <em>Troubleshooting: Allow users to access r
 
 <!--/Validation-->
 <!--/Policy-->
-
-<!--/Policies-->
 <hr/>
 
 Footnotes:
@@ -139,3 +138,4 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+<!--/Policies-->

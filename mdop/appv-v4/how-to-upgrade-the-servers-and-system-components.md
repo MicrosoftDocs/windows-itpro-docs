@@ -1,7 +1,7 @@
 ---
 title: How to Upgrade the Servers and System Components
 description: How to Upgrade the Servers and System Components
-author: eavena
+author: dansimp
 ms.assetid: 7d8374fe-5897-452e-923e-556a854b2024
 ms.reviewer: 
 manager: dansimp

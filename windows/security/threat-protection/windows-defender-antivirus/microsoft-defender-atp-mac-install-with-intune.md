@@ -50,28 +50,29 @@ Download the installation and onboarding packages from Microsoft Defender Securi
     Extract the contents of the .zip files:
 
     ```bash
-    mavel-macmini:Downloads test$ ls -l
+    $ ls -l
     total 721688
     -rw-r--r--  1 test  staff     269280 Mar 15 11:25 IntuneAppUtil
     -rw-r--r--  1 test  staff      11821 Mar 15 09:23 WindowsDefenderATPOnboardingPackage.zip
     -rw-r--r--  1 test  staff  354531845 Mar 13 08:57 wdav.pkg
-    mavel-macmini:Downloads test$ unzip WindowsDefenderATPOnboardingPackage.zip
+    $ unzip WindowsDefenderATPOnboardingPackage.zip
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     warning:  WindowsDefenderATPOnboardingPackage.zip appears to use backslashes as path separators
       inflating: intune/kext.xml
       inflating: intune/WindowsDefenderATPOnboarding.xml
       inflating: jamf/WindowsDefenderATPOnboarding.plist
-    mavel-macmini:Downloads test$
     ```
 
 7. Make IntuneAppUtil an executable:
 
-    ```mavel-macmini:Downloads test$ chmod +x IntuneAppUtil```
+    ```bash
+    $ chmod +x IntuneAppUtil
+    ```
 
 8. Create the wdav.pkg.intunemac package from wdav.pkg:
 
     ```bash
-    mavel-macmini:Downloads test$ ./IntuneAppUtil -c wdav.pkg -o . -i "com.microsoft.wdav" -n "1.0.0"
+    $ ./IntuneAppUtil -c wdav.pkg -o . -i "com.microsoft.wdav" -n "1.0.0"
     Microsoft Intune Application Utility for Mac OS X
     Version: 1.0.0.0
     Copyright 2018 Microsoft Corporation
@@ -165,6 +166,12 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 3. You should also see the Microsoft Defender icon in the top-right corner:
 
     ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
+
+## Troubleshooting
+
+Issue: No license found
+
+Solution: Follow the steps above to create a device profile using WindowsDefenderATPOnboarding.xml
 
 ## Logging installation issues
 

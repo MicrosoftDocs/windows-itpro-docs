@@ -1,7 +1,7 @@
 ---
 title: Release Notes for Microsoft Advanced Group Policy Management 4.0 SP3
 description: Release Notes for Microsoft Advanced Group Policy Management 4.0 SP3
-author: mjcaparas
+author: dansimp
 ms.assetid: 955d7674-a8d9-4fc5-b18a-5a1639e38014
 ms.reviewer: 
 manager: dansimp

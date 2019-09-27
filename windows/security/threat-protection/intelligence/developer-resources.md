@@ -24,9 +24,9 @@ If you believe that your application or program has been incorrectly detected by
 
 Check out the following resources for information on how to submit and view submissions:
 
-- [Submit files](https://www.microsoft.com/en-us/wdsi/filesubmission)
+- [Submit files](https://www.microsoft.com/wdsi/filesubmission)
 
-- [View your submissions](https://www.microsoft.com/en-us/wdsi/submissionhistory)
+- [View your submissions](https://www.microsoft.com/wdsi/submissionhistory)
 
 ## Additional resources
 

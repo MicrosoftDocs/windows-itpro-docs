@@ -6,13 +6,15 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 05/21/2019
+ms.date: 08/16/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Policy CSP - Update
 
+> [!NOTE]
+> If the MSA service is disabled, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
 <hr/>
 
@@ -201,11 +203,6 @@ manager: dansimp
     <a href="#update-updateserviceurlalternate">Update/UpdateServiceUrlAlternate</a>
   </dd>
 </dl>
-
-<hr/>
-
-> [!NOTE]
-> If the MSA service is disabled, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
 <hr/>
 
@@ -1072,7 +1069,7 @@ The following list shows the supported values:
 -  4  {0x4}  - Windows Insider build - Slow (added in Windows 10, version 1709)
 -  8  {0x8}  - Release Windows Insider build (added in Windows 10, version 1709)
 -  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted). 
--  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel. (*Only applicable to releases prior to 1903)
+-  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel. (*Only applicable to releases prior to 1903, for all releases 1903 and after the Semi-annual Channel and Semi-annual Channel (Targeted) into a single Semi-annual Channel with a value of 16)
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -1373,49 +1370,6 @@ Supported values:
 <!--/Scope-->
 <!--Description-->
 Added in Windows 10, version 1803. Enable IT admin to configure feature update uninstall period. Values range 2 - 60 days. Default is 10 days.
-
-<!--/Description-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="update-configurefeatureupdateuninstallperiod"></a>**Update/ConfigureFeatureUpdateUninstallPeriod**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1803. Enable IT admin to configure feature update uninstall period. Values range 2 - 60 days. Default is 10 days.
 
 <!--/Description-->
 <!--/Policy-->
@@ -2418,13 +2372,11 @@ The following list shows the supported values:
 <!--Validation-->
 To validate this policy:
 
-1.  Enable the policy ensure the device is on a cellular network.
+1.  Enable the policy and ensure the device is on a cellular network.
 2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
-      - `regd delete HKEY_USERS\S-1-5-21-2702878673-795188819-444038987-2781\software\microsoft\windows\currentversion\windowsupdate /v LastAutoAppUpdateSearchSuccessTime /f`
-
-      - `exec-device schtasks.exe -arguments ""/run /tn """"\Microsoft\Windows\WindowsUpdate\Automatic App Update"""" /I""`
-
-3.   Verify that any downloads that are above the download size limit will complete without being paused.
+    ```TShell
+       exec-device schtasks.exe -arguments '/run /tn "\Microsoft\Windows\WindowsUpdate\Automatic App Update" /I'
+    ```
 
 <!--/Validation-->
 <!--/Policy-->
@@ -2472,11 +2424,6 @@ Added in Windows 10, version 1703. Specifies whether to ignore the MO download 
 > [!WARNING]
 > Setting this policy might cause devices to incur costs from MO operators.
 
-
-      - `exec-device schtasks.exe -arguments ""/run /tn """"\Microsoft\Windows\WindowsUpdate\AUScheduledInstall"""" /I""`
-
-3. Verify that any downloads that are above the download size limit will complete without being paused.
-
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -2489,7 +2436,10 @@ The following list shows the supported values:
 To validate this policy:
 
 1.  Enable the policy and ensure the device is on a cellular network.
-2.  Run the scheduled task on phone to check for OS updates in the background. For example, on a mobile device, run the following commands in TShell:
+2.  Run the scheduled task on your device to check for app updates in the background. For example, on a mobile device, run the following commands in TShell: 
+    ```TShell
+       exec-device schtasks.exe -arguments '/run /tn "\Microsoft\Windows\WindowsUpdate\Automatic App Update" /I'
+    ```
 
 <!--/Validation-->
 <!--/Policy-->
@@ -3955,69 +3905,6 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>Update policies supported by HoloLens 2
-
-- [Update/AllowAutoUpdate](#update-allowautoupdate)
-- [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/BranchReadinessLevel](#update-branchreadinesslevel)
-- [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)
-- [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)
-- [Update/ManagePreviewBuilds](#update-managepreviewbuilds)
-- [Update/PauseFeatureUpdates](#update-pausefeatureupdates)
-- [Update/PauseQualityUpdates](#update-pausequalityupdates)
-- [Update/ScheduledInstallDay](#update-scheduledinstallday)
-- [Update/ScheduledInstallTime](#update-scheduledinstalltime)
-- [Update/UpdateServiceUrl](#update-updateserviceurl)
-
-<!--EndHoloLens2-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>Update policies supported by HoloLens (1st gen) Commercial Suite
-
-- [Update/AllowAutoUpdate](#update-allowautoupdate)
-- [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
-- [Update/RequireUpdateApproval](#update-requireupdateapproval)
-- [Update/ScheduledInstallDay](#update-scheduledinstallday)
-- [Update/ScheduledInstallTime](#update-scheduledinstalltime)
-- [Update/UpdateServiceUrl](#update-updateserviceurl)
-
-<!--EndHoloLensBusiness-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>Update policies supported by HoloLens (1st gen) Development Edition
-
-- [Update/AllowAutoUpdate](#update-allowautoupdate)
-- [Update/AllowUpdateService](#update-allowupdateservice)
-- [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
-- [Update/RequireUpdateApproval](#update-requireupdateapproval)
-- [Update/ScheduledInstallDay](#update-scheduledinstallday)
-- [Update/ScheduledInstallTime](#update-scheduledinstalltime)
-- [Update/UpdateServiceUrl](#update-updateserviceurl)
-
-<!--EndHoloLens-->
-
-<!--StartIoTCore-->
-## <a href="" id="iotcore"></a>Update policies supported by IoT Core  
-
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
-<!--EndIoTCore-->
-
-<!--StartIoTEnterprise-->
-## <a href="" id="iotcore"></a>Update policies supported by IoT Enterprise  
-
-- [Update/ConfigureDeadlineForFeatureUpdates](#update-configuredeadlineforfeatureupdates)
-- [Update/ConfigureDeadlineForQualityUpdates](#update-configuredeadlineforqualityupdates)
-- [Update/ConfigureDeadlineGracePeriod](#update-configuredeadlinegraceperiod)
-- [Update/ConfigureDeadlineNoAutoReboot](#update-configuredeadlinenoautoreboot)
-  <!--EndIoTEnterprise-->
   <hr/>
 
 Footnotes:
@@ -4028,3 +3915,4 @@ Footnotes:
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
+<!--/Policies-->

@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -71,8 +72,8 @@ At this point, you probably cannot resolve any unresolved application compatibil
 
 -   Apply specific compatibility modes, or run the program as an Administrator, by using the Compatibility Administrator tool.
 
-    **Note**  
-    For more information about using Compatibility Administrator to apply compatibility fixes and compatibility modes, see [Using the Compatibility Administrator Tool](using-the-compatibility-administrator-tool.md).
+    > [!NOTE]
+    > For more information about using Compatibility Administrator to apply compatibility fixes and compatibility modes, see [Using the Compatibility Administrator Tool](using-the-compatibility-administrator-tool.md).
 
      
 

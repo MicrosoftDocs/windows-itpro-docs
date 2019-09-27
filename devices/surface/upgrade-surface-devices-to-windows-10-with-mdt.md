@@ -52,7 +52,7 @@ You will also need to have available the following resources:
 * Windows 10 installation files, such as the installation media downloaded from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx)
 
    >[!NOTE]
-   >Installation media for use with MDT must contain a Windows image in Windows Imaging Format (.wim). Installation media produced by the [Get Windows 10](https://www.microsoft.com/en-us/software-download/windows10/) page does not use a .wim file, instead using an Electronic Software Download (.esd) file, which is not compatible with MDT.
+   >Installation media for use with MDT must contain a Windows image in Windows Imaging Format (.wim). Installation media produced by the [Get Windows 10](https://www.microsoft.com/software-download/windows10/) page does not use a .wim file, instead using an Electronic Software Download (.esd) file, which is not compatible with MDT.
 * [Surface firmware and drivers](https://technet.microsoft.com/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices) for Windows 10
 
 * Application installation files for any applications you want to install, such as the Surface app
