@@ -54,7 +54,7 @@ Dynamic lock enables you to configure Windows 10 devices to automatically lock w
 
 The Group Policy Editor, when the policy is enabled, creates a default signal rule policy with the following value:
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >Microsoft recommends using the default values for this policy settings.  Measurements are relative based on the varying conditions of each environment.  Therefore, the same values may produce different results. Test policy settings in each environment prior to broadly deploying the setting. 
 
 ```
