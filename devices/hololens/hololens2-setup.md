@@ -22,13 +22,10 @@ The procedures below will help you set up a HoloLens 2 for the first time.
 
 Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet.
 
-  - When the device is charging, the battery indicator lights up in a wave pattern.
-  - When your HoloLens is on, the battery indicator displays the battery level in increments. 
-  - When only one of the five lights is on, the battery level is below 20 percent. 
-  - If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
-
-> [!TIP]
-> To get an estimate of your current battery level, say "Hey Cortana, how much battery do I have left?"
+- When the device is charging, the battery indicator lights up to indicate the current level of charge.  The last light will fade in and out to indicate active charging.  Read more about [charge level](#holoLens-indicator-lights).
+- When your HoloLens is on, the battery indicator displays the battery level in increments.
+- When only one of the five lights is on, the battery level is below 20 percent.
+- If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
 
 ## Adjust fit
 
@@ -52,40 +49,39 @@ To detach the back of the overhead strap, press the button below each connection
 
 To turn on your HoloLens 2, press the Power button.  The LED lights below the Power button display the battery level.
 
+> [!NOTE]
+> If you're turning on HoloLens 2 for the very first time (right after unboxing), you'll have to hold the power button for 4+ seconds to turn it on.  Next time you turn on your HoloLens, it'll start after a short button press.
+
 ### Power button actions for different power transitions
 
-| To do this | Perform this action and watch for these indicator lights |
-| - | - |
-| To turn on | Single button press - lights will indicate battery state. |
-| To sleep | Single button press - lights will indicate battery state then go dark on sleep. |
-| To wake from sleep | Single button press - lights will indicate battery state. |
-| To turn off | Press and for hold 5s - all five lights will light then go dark on shutdown. |
-| To force the Hololens to restart if it is unresponsive | Press and hold for 10s - all lights will light then go dark on shutdown.  They'll relight on restart. |
+| To do this | Perform this action | The HoloLens 2 will do this |
+| - | - | - |
+| To turn on | Single button press. | All five lights turn on, then change to indicate the battery level. After four seconds, a sound plays. |
+| To sleep | Single button press. | All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |
+| To wake from sleep | Single button press. | All five lights turn on, then change to indicate the battery level. A sound immediately plays. |
+| To turn off | Press and for hold 5s. |  All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |
+| To force the Hololens to restart if it is unresponsive | Press and hold for 10s. | All five lights turn on, then fade off one at a time. After the lights turn off. |
 
 ## HoloLens indicator lights
 
 Not sure what the indicator lights on your HoloLens mean? Here's some help!
 
-### Lights that indicate the state of the device
-
-|When you do this | And then the lights do this | It means |
-| - | - | - |
-| You press the Power button. |All five lights turn on, then change to indicate the battery level. After four seconds, a sound plays. | HoloLens is starting up. |
-| You press the Power button. |All five lights turn on, then change to indicate the battery level. A sound immediately plays. | HoloLens is on, awake, and ready to use. |
-| You press and hold the Power button for five seconds or longer. |All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |HoloLens is shutting down. |
-| You press and hold the Power button for less than five seconds. |All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |HoloLens is entering sleep. |
-| You press the Power button. |One light flashes five times, then turns off. |The HoloLens battery is critically low. Charge your HoloLens. |
-| You press the Power button. |All five lights flash five times, then turn off. | HoloLens cannot start correctly and is in an error state. |
-
 ### Lights that indicate the battery level
 
 | Number of lights | Battery level |
 | - | - |
-|Four solid lights, one light fading in and out |Between 100% and 81% (fully charged) |
-|Three solid lights, one light fading in and out |Between 80% and 61% |
-|Two solid lights, one light fading in and out |Between 60% and 41% |
-|One solid light, one light fading in and out |Between 40% and 21% |
-|One light fading in and out |Between 20% and 5% or lower (critical battery) |
+| Four solid lights, one light fading in and out | Between 100% and 81% (fully charged) |
+| Three solid lights, one light fading in and out | Between 80% and 61% |
+| Two solid lights, one light fading in and out | Between 60% and 41% |
+| One solid light, one light fading in and out | Between 40% and 21% |
+| One light fading in and out | Between 20% and 5% or lower (critical battery) |
+
+### Lights to indicate problems
+
+| When you do this | The lights do this | It means this |
+| - | - | - |
+| You press the Power button. | One light flashes five times, then turns off. | The HoloLens battery is critically low. Charge your HoloLens. |
+| You press the Power button. | All five lights flash five times, then turn off. |  HoloLens cannot start correctly and is in an error state. |
 
 ## Safety and comfort
 
