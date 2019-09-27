@@ -25,7 +25,7 @@ These are the top Microsoft Support solutions for common issues experienced when
 
 ## Screen cracked or scratched issues
 
-- [Contact Microsoft Support](https://support.microsoft.com/en-us/supportforbusiness/productselection) 
+- [Contact Microsoft Support](https://support.microsoft.com/supportforbusiness/productselection) 
 
 ## Surface Power or battery Issues
 
