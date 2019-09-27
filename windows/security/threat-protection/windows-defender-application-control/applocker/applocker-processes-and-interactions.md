@@ -47,7 +47,7 @@ An AppLocker rule is a control placed on a file to govern whether or not it is a
 
 -   An executable rule controls whether a user or group can run an executable file. Executable files most often have the .exe or .com file name extensions and apply to applications.
 -   A script rule controls whether a user or group can run scripts with a file name extension of .ps1, .bat, .cmd, .vbs, and .js.
--   A Windows Installer rule controls whether a user or group can run files with a file name extension of .msi, mst and .msp (Windows Installer patch).
+-   A Windows Installer rule controls whether a user or group can run files with a file name extension of .msi, .mst and .msp (Windows Installer patch).
 -   A DLL rule controls whether a user or group can run files with a file name extension of .dll and .ocx.
 -   A packaged app and packaged app installer rule controls whether a user or group can run or install a packaged app. A Packaged app installer has the .appx extension.
 

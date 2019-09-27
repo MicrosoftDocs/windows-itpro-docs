@@ -5,7 +5,7 @@ author: dansimp
 ms.assetid: f1d6bb6c-d5bf-4080-a6cb-32774689f804
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
