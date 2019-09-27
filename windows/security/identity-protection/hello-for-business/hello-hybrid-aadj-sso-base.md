@@ -122,7 +122,7 @@ You need to host your new certificate revocation list of a web server so Azure A
 5. Select **CDP** under **Default Web Site** in the navigation pane.  Double-click **Configuration Editor**.
 6. In the **Section** list, navigate to **system.webServer/security/requestFiltering**.
    ![IIS Configuration Editor requestFiltering](images/aadj/iis-config-editor-requestFiltering.png)   
-   In the list of named value-pairs in the content pane, configure **allowDoubleEscapting** to **True**.  Click **Apply** in the actions pane.
+   In the list of named value-pairs in the content pane, configure **allowDoubleEscaping** to **True**.  Click **Apply** in the actions pane.
    ![IIS Configuration Editor double escaping](images/aadj/iis-config-editor-allowDoubleEscaping.png)
 7. Close **Internet Information Services (IIS) Manager**. 
 
