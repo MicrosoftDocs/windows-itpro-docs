@@ -140,7 +140,7 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 
     ![Settings with download connector button](images/atp-download-connector.png)
 
-4. Create a new directory `Microsoft Power BI Desktop\Custom Connectors` under the user's Documents folder.
+4. Create a new directory `[Documents]\Power BI Desktop\Custom Connectors`.
 
 5. Copy WDATPDataConnector.mez from the zip to the directory you just created.
 
@@ -149,6 +149,9 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 7. Click **File** > **Options and settings** > **Custom data connectors**.
 
 8. Select **New table and matrix visuals** and **Custom data connectors** and click **OK**.
+
+    > [!NOTE]
+    > If you plan on using Custom Connectors or connectors that you or a third party has developed, you must select *(Not Recommended) Allow any extension to load without warning* under **Power BI Desktop** > **File** > **Options and settings** > **Options** > **Security** > **Data Extensions**".
     
     >[!NOTE]
     >If you are using Power BI Desktop July 2017 version (or later), you won't need to select **New table and matrix visuals**. You'll only need to select **Custom data connectors**.
