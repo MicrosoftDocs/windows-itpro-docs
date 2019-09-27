@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 09/23/2019
+ms.date: 09/27/2019
 ---
 
 # EnterpriseModernAppManagement CSP
