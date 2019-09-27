@@ -20,7 +20,7 @@ This section addresses common issues and provides troubleshooting guidelines for
 
 ## Review the event logs
 
-Open Event Viewer and review the following logs under applications and services logs\\Microsoft\\Windows:
+Open Event Viewer and review the following logs under **Applications and Services logs\\Microsoft\\Windows**:
 
 - **BitLocker-API**. Review the Management log and the Operational log, and any other logs that are generated in this folder.
 - **BitLocker-DrivePreparationTool**. Review the Admin log and the Operational log, and any other logs that are generated in this folder.
