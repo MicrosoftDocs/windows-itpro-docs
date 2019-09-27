@@ -238,14 +238,10 @@ Checking the event viewer, BitLocker API Log, you will see the following events:
 > TraceId: {cbac2b6f-1434-4faa-a9c3-597b17c1dfa3}
 > 
 > Error: Unknown HResult Error code: 0x80072f9a
-> 
-> \------------------------------------------------------------------------------
 
 > Event ID:778
 > 
 > Event: The BitLocker volume C: was reverted to an unprotected state.
-> 
-> \------------------------------------------------------------------------
 
 > Event ID: 851
 > 
@@ -254,7 +250,7 @@ Checking the event viewer, BitLocker API Log, you will see the following events:
 > Failed to enable Silent Encryption.
 > 
 > Error: Unknown HResult Error code: 0x80072f9a.
-> 
+
 The issue affects Windows v1809, and this is because the BitLocker MDM policy Refresh fails with an access denied when impersonating the logged on Azure AD user on the PCPKEY file i.e. Private Key for the cert used for Azure AD Communication.
 
 ### Cause
