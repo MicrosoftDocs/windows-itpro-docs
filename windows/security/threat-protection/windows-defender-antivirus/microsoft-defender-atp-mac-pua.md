@@ -34,23 +34,24 @@ These applications can increase the risk of your network being infected with mal
 
 Microsoft Defender ATP for Mac can detect and report PUA files. When configured in blocking mode, PUA files are moved to the quarantine.
 
-When a PUA is detected on an endpoint, Microsoft Defender ATP for Mac presents a notification to the user (unless notifications have been disabled) in the same format as normal threat detections (but will contain "Application" in the threat name).
+When a PUA is detected on an endpoint, Microsoft Defender ATP for Mac presents a notification to the user, unless notifications have been disabled. The threat name will contain the word "Application".
 
 ## Configure PUA protection
 
 PUA protection in Microsoft Defender ATP for Mac can be configured in one of the following ways:
+
 - **Off**: PUA protection is disabled.
 - **Audit**: PUA files are reported in the product logs, but not in Microsoft Defender Security Center. No notification is presented to the user and no action is taken by the product.
-- **Block**: PUA files are reported in the product logs and in Microsoft Defender Security Center, the user is presented with a notification and action is taken by the product.
+- **Block**: PUA files are reported in the product logs and in Microsoft Defender Security Center. The user is presented with a notification and action is taken by the product.
 
 >[!WARNING]
 >By default, PUA protection is configured in **Audit** mode.
 
-You can configure how PUA files are handled by the product from the command line or from the management console.
+You can configure how PUA files are handled from the command line or from the management console.
 
 ### Use the command-line tool to configure PUA protection:
 
-In Terminal, execute the following command in order to configure PUA protection:
+In Terminal, execute the following command to configure PUA protection:
 
 ```bash
 $ mdatp --threat --type-handling potentially_unwanted_application [off|audit|block]
@@ -58,7 +59,7 @@ $ mdatp --threat --type-handling potentially_unwanted_application [off|audit|blo
 
 ### Use the management console to configure PUA protection:
 
-In your enterprise, you can configure PUA protection from a management console (such as JAMF or Intune) similarly to how other product settings are configured. Refer to the [threat type settings](microsoft-defender-atp-mac-preferences.md#threat-type-settings) section of the [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md) topic for more information.
+In your enterprise, you can configure PUA protection from a management console, such as JAMF or Intune, similarly to how other product settings are configured. For more information, refer to the [Threat type settings](microsoft-defender-atp-mac-preferences.md#threat-type-settings) section of the [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md) topic.
 
 ## Related topics
 
