@@ -46,7 +46,7 @@ You can enroll your Surface Hubs using bulk, manual, or automatic enrollment.
 
 Surface Hub now supports the ability to automatically enroll in Intune by joining the device to Azure Active Directory. 
 
-First step is to setup Automatic MDM enrollment, see [Enable Windows 10 automatic enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment).
+First step is to set up Automatic MDM enrollment, see [Enable Windows 10 automatic enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment).
 
 Then, when devices are setup during First-run, pick the option to join to Azure Active Directory, see [Set up admins for this device page](https://docs.microsoft.com/surface-hub/first-run-program-surface-hub#set-up-admins-for-this-device-page)
 
