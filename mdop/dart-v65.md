@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ---
 
 # Diagnostics and Recovery Toolset 6.5
