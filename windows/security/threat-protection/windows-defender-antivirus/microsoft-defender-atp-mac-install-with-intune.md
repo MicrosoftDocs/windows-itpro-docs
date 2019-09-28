@@ -118,6 +118,7 @@ You may now enroll more devices. You can also enroll them later, after you have 
 6. Repeat steps 1 through 5 for more profiles.
 7. Create another profile, give it a name, and upload the intune/WindowsDefenderATPOnboarding.xml file.
 8. Create tcc.xml file with content below. Create another profile, give it any name and upload this file to it.
+
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -180,9 +181,10 @@ You may now enroll more devices. You can also enroll them later, after you have 
        </array>
    </dict>
    </plist>
-```
-> [!CAUTION]
-> This is a new configuration we add for Catalina. If you set your configuration profile for Defender without it, please modify it and add this option.
+   ```
+
+   > [!CAUTION]
+   > This is a new configuration we add for Catalina. If you set your configuration profile for Defender without it, please modify it and add this option.
 
 9. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
 
