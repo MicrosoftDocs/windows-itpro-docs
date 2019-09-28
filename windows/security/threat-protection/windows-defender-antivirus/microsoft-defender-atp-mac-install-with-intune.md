@@ -116,8 +116,75 @@ You may now enroll more devices. You can also enroll them later, after you have 
 
 5. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 6. Repeat steps 1 through 5 for more profiles.
-7. Create a new profile one more time, give it a name, and upload the intune/WindowsDefenderATPOnboarding.xml file.
-8. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
+7. Create another profile, give it a name, and upload the intune/WindowsDefenderATPOnboarding.xml file.
+8. Create tcc.xml file with content below. Create another profile, give it any name and upload this file to it.
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+   <plist version="1.0">
+   <dict>
+       <key>PayloadDescription</key>
+       <string>Allows Microsoft Defender to access all files on Catalina+</string>
+       <key>PayloadDisplayName</key>
+       <string>TCC - Microsoft Defender</string>
+       <key>PayloadIdentifier</key>
+       <string>com.microsoft.wdav.tcc</string>
+       <key>PayloadOrganization</key>
+       <string>Microsoft Corp.</string>
+       <key>PayloadRemovalDisallowed</key>
+       <false/>
+       <key>PayloadScope</key>
+       <string>system</string>
+       <key>PayloadType</key>
+       <string>Configuration</string>
+       <key>PayloadUUID</key>
+       <string>C234DF2E-DFF6-11E9-B279-001C4299FB44</string>
+       <key>PayloadVersion</key>
+       <integer>1</integer>
+       <key>PayloadContent</key>
+       <array>
+       <dict>
+           <key>PayloadDescription</key>
+           <string>Allows Microsoft Defender to access all files on Catalina+</string>
+           <key>PayloadDisplayName</key>
+           <string>TCC - Microsoft Defender</string>
+           <key>PayloadIdentifier</key>
+           <string>com.microsoft.wdav.tcc.C233A5E6-DFF6-11E9-BDAD-001C4299FB44</string>
+           <key>PayloadOrganization</key>
+           <string>Microsoft Corp.</string>
+           <key>PayloadType</key>
+           <string>com.apple.TCC.configuration-profile-policy</string>
+           <key>PayloadUUID</key>
+           <string>C233A5E6-DFF6-11E9-BDAD-001C4299FB44</string>
+           <key>PayloadVersion</key>
+           <integer>1</integer>
+           <key>Services</key>
+           <dict>
+               <key>SystemPolicyAllFiles</key>
+               <array>
+               <dict>
+                   <key>Allowed</key>
+                   <true/>
+                   <key>CodeRequirement</key>
+                   <string>identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                   <key>Comment</key>
+                   <string>Allow SystemPolicyAllFiles control for Microsoft Defender ATP</string>
+                   <key>Identifier</key>
+                   <string>com.microsoft.wdav</string>
+                   <key>IdentifierType</key>
+                   <string>bundleID</string>
+               </dict>
+               </array>
+           </dict>
+       </dict>
+       </array>
+   </dict>
+   </plist>
+```
+> [!CAUTION]
+> This is a new configuration we add for Catalina. If you set your configuration profile for Defender without it, please modify it and add this option.
+
+9. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
 
 Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:
 
