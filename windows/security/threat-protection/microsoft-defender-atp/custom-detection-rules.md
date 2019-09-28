@@ -26,7 +26,7 @@ ms.topic: article
 Custom detection rules built from [Advanced hunting](overview-hunting.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured machines. The queries run every 24 hours, generating alerts and taking response actions whenever there are matches.
 
 >[!NOTE]
->To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.  
+>To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
 
 ## Create a custom detection rule
 ### 1. Prepare the query.
@@ -35,6 +35,13 @@ In Microsoft Defender Security Center, go to **Advanced hunting** and select an 
 
 >[!NOTE]
 >To use a query for a custom detection rule, the query must return the `EventTime`, `MachineId`, and `ReportId` columns in the results. Queries that don’t use the `project` operator to customize results usually return these common columns.
+
+>[Example]
+>MiscEvents
+| where EventTime > ago(7d)
+| where ActionType == "AntivirusDetection"
+| summarize (EventTime, ReportId)=arg_max(EventTime, ReportId), count() by MachineId
+This will fetch latest EventTime and ReportId of the latest event among multiple events returned by the query and adds the count by MachineId.
 
 ### 2. Create new rule and provide alert details.
 
