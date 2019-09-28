@@ -184,7 +184,7 @@ You may now enroll more devices. You can also enroll them later, after you have 
    ```
 
    > [!CAUTION]
-   > This is a new configuration we add for Catalina. If you set your configuration profile for Defender without it, please modify it and add this option.
+   > This is a new configuration we add for Catalina. If you previously configured Defender in Intune without it, please modify it and add this option.
 
 9. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
 
