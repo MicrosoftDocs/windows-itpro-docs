@@ -22,7 +22,7 @@ The procedures below will help you set up a HoloLens 2 for the first time.
 
 Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet.
 
-- When the device is charging, the battery indicator lights up to indicate the current level of charge.  The last light will fade in and out to indicate active charging.  Read more about [charge level](#holoLens-indicator-lights).
+- When the device is charging, the battery indicator lights up to indicate the current level of charge.  The last light will fade in and out to indicate active charging.
 - When your HoloLens is on, the battery indicator displays the battery level in increments.
 - When only one of the five lights is on, the battery level is below 20 percent.
 - If the battery level is critically low and you try to turn on the device, one light will blink briefly, then go out.
@@ -50,7 +50,7 @@ To detach the back of the overhead strap, press the button below each connection
 To turn on your HoloLens 2, press the Power button.  The LED lights below the Power button display the battery level.
 
 > [!NOTE]
-> If you're turning on HoloLens 2 for the very first time (right after unboxing), you'll have to hold the power button for 4+ seconds to turn it on.  Next time you turn on your HoloLens, it'll start after a short button press.
+> To power on HoloLens 2 for the very first time, after unboxing, press and hold the power button for at least 4 seconds to turn it on. Next time you power on HoloLens 2, it’ll start after a short power button press.
 
 ### Power button actions for different power transitions
 
