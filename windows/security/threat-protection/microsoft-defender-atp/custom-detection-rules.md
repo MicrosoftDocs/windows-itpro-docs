@@ -26,7 +26,7 @@ ms.topic: article
 Custom detection rules built from [Advanced hunting](overview-hunting.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured machines. The queries run every 24 hours, generating alerts and taking response actions whenever there are matches.
 
 > [!NOTE]
->To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
+> To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
 
 ## Create a custom detection rule
 ### 1. Prepare the query.
