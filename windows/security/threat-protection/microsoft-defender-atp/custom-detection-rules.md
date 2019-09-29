@@ -36,7 +36,7 @@ In Microsoft Defender Security Center, go to **Advanced hunting** and select an 
 > [!NOTE]
 >To use a query for a custom detection rule, the query must return the `EventTime`, `MachineId`, and `ReportId` columns in the results. Queries that don’t use the `project` operator to customize results usually return these common columns.
 
->[Example]
+> [Example]
 >MiscEvents
 | where EventTime > ago(7d)
 | where ActionType == "AntivirusDetection"
