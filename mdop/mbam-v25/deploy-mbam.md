@@ -18,7 +18,7 @@ This article provides step-by-step instructions for installing Microsoft BitLock
 
 ### Step 1: Installation and configuration of servers
 
-Before we start to configure MBAM 2.5, we have to make sure that we have both servers configured per MBAM system requirements. See the [MBAM minimum system requirements](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/mbam-25-supported-configurations#-mbam-server-system-requirements), and select a configuration that meets these requirements. 
+Before we start configuring MBAM 2.5, we have to make sure that both servers are configured as per MBAM system requirements. See the [MBAM minimum system requirements](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/mbam-25-supported-configurations#-mbam-server-system-requirements), and select a configuration that meets these requirements. 
 
 #### Step 1.1: Deploying prerequisites for database and reporting server
 
