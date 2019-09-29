@@ -26,7 +26,7 @@ Before we start configuring MBAM 2.5, we have to make sure that both servers are
 
 2. Install Windows PowerShell 3.0.
 
-3. Install Microsoft SQL Server 2008 R2 or a later version that includes the latest service pack. If you are installing a new instance of SQL Server for MBAM, make sure that you install SQL Server to have SQL_Latin1_General_CP1_CI_AS collation. You’ll have to install the following SQL Server features:
+3. Install Microsoft SQL Server 2008 R2 or a later version that includes the latest service pack. If you are installing a new instance of SQL Server for MBAM, make sure the SQL Server you install includes the SQL_Latin1_General_CP1_CI_AS collation. You’ll have to install the following SQL Server features:
 
     * Database Engine
     * Reporting Services
