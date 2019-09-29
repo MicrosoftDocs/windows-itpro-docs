@@ -609,7 +609,7 @@ For example, The name of account in the lab is **MBAMWrite**. The Application Po
 
 ![DB properties](images/troubleshooting-MBAM-installation-5.png)
 
-Browse to **Security** and then **Logins** in SQL Management Studio. Browse to the account that is shown in the previous screenshot.
+Browse to **Security** and then **Logins** in SQL Management Studio. Browse to the account shown in the previous screenshot.
 
 ![SQL Security](images/troubleshooting-MBAM-installation-6.png)
 
