@@ -40,7 +40,7 @@ Before we start configuring MBAM 2.5, we have to make sure that both servers are
 
     ![The required SQL Server features](images/deploying-MBAM-1.png)
 
-4. If you plan to use SSL for the Administration and Monitoring website, make sure that you configure SQL Server Reporting Services (SSRS) to use the Secure Sockets Layer (SSL) protocol before you configure the Administration and Monitoring website. Otherwise, the Reports feature will use "HTTP" instead of "HTTPS."
+4. If you plan to use SSL for the Administration and Monitoring website, make sure that you configure SQL Server Reporting Services (SSRS) to use the Secure Sockets Layer (SSL) protocol before you configure the Administration and Monitoring website. Otherwise, the Reports feature will use unencrypted (HTTP) data transport instead of encrypted (HTTPS).
 
     You can follow [Configure SSL Connections](https://docs.microsoft.com/sql/reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server?view=sql-server-2017) on a Native Mode Report Server to configure SSL on Report Server.
     
