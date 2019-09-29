@@ -637,7 +637,7 @@ MaltaDataSource should have the ReadOnly Account name and should be used in MBAM
 
 ##Reference
 
-For more information, see the following articles.
+For more information, see the following articles:
 
 [Deploying MBAM 2.5 in a standalone configuration](https://support.microsoft.com/help/3046555)
 
