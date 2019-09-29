@@ -22,7 +22,7 @@ Before we start configuring MBAM 2.5, we have to make sure that both servers are
 
 #### Step 1.1: Deploying prerequisites for database and reporting server
 
-1. Install and configure a server that is running Windows Server 2008 R2 or a later operating system.
+1. Install and configure a server running Windows Server 2008 R2 (or later) operating system.
 
 2. Install Windows PowerShell 3.0.
 
