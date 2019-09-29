@@ -579,7 +579,7 @@ See [MBAM Database configuration – minimum permissions](https://blogs.technet.
 An account that's used for IIS portal installation must have Write ServicePrincipalName and Write Validated SPN permissions. Without these permissions, the installation will return a warning message that states that it cannot register the SPN.
 
 > [!Note]
-> You will this receive warning message two times. This does not mean that the SPN must have two objects registered to it.
+> You will this receive this warning message twice. This does not mean that the SPN must have two objects registered to it.
 
 For more information, see [MBAM Setup fails with “Register SPN Deferred” error message](https://support.microsoft.com/help/2754138/).
 

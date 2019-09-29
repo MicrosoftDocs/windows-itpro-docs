@@ -585,7 +585,7 @@ This provides information such as Helpdesk Group, Advanced Helpdesk Group, Repor
 
 ### SQL Server name and database (DB) names
 
-To find the SQL Server names and instances that are hosting the MBAM DBs, log on to the MBAM Web (IIS) server, and browse to the folowing registry subkey:
+To find the SQL Server names and instances hosting the MBAM DBs, log on to the MBAM Web (IIS) server and browse to the folowing registry subkey:
 
 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MBAM Server\Web**
 
@@ -603,7 +603,7 @@ This information will be in the SQL Server database, for which we already found 
 
 2. Right-click **MBAM Recovery and Hardware**, select **Properties**, and then select **Permissions**.
 
-For example, The name of account in the lab is **MBAMWrite**. The Application Pool and ReadWrite account are set to be the same.
+For example, The the lab account name is **MBAMWrite**. The Application Pool and ReadWrite accounts are set to be the same.
 
 ![SQL DB](images/troubleshooting-MBAM-installation-4.png)
 
