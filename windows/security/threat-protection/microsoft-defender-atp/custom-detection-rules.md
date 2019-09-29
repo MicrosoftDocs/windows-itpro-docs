@@ -33,7 +33,7 @@ Custom detection rules built from [Advanced hunting](overview-hunting.md) querie
 
 In Microsoft Defender Security Center, go to **Advanced hunting** and select an existing query or create a new query. When using an new query, run the query to identify errors and understand possible results.
 
->[!NOTE]
+> [!NOTE]
 >To use a query for a custom detection rule, the query must return the `EventTime`, `MachineId`, and `ReportId` columns in the results. Queries that don’t use the `project` operator to customize results usually return these common columns.
 
 >[Example]
