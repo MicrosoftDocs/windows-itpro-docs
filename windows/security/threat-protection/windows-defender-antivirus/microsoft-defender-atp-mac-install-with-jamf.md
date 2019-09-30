@@ -92,6 +92,11 @@ To approve the kernel extension:
 
 ### Privacy Preferences Policy Control
 
+> [!CAUTION]
+> macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender ATP is not able to fully protect your device.
+>
+> If you previously configured Microsoft Defender ATP through JAMF, we recommend applying the following configuration.
+
 By default, starting with Catalina, Microsoft Defender cannot access files in a user's home directory. To resolve it, add a JAMF policy to allow Defender Full Disk Access.
 
 1. Select **Options > Privacy Preferences Policy Control**.

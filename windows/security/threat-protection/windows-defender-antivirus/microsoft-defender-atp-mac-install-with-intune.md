@@ -119,6 +119,11 @@ You may now enroll more devices. You can also enroll them later, after you have 
 7. Create another profile, give it a name, and upload the intune/WindowsDefenderATPOnboarding.xml file.
 8. Create tcc.xml file with content below. Create another profile, give it any name and upload this file to it.
 
+   > [!CAUTION]
+   > macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender ATP is not able to fully protect your device.
+   >
+   > The following configuration profile grants Full Disk Access to Microsoft Defender ATP. If you previously configured Microsoft Defender ATP through Intune, we recommend you update the deployment with this configuration profile.
+
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -182,9 +187,6 @@ You may now enroll more devices. You can also enroll them later, after you have 
    </dict>
    </plist>
    ```
-
-   > [!CAUTION]
-   > This is a new configuration we add for Catalina. If you previously configured Defender in Intune without it, please modify it and add this option.
 
 9. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
 

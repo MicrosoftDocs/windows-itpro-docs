@@ -169,12 +169,12 @@ After installation, you'll see the Microsoft Defender icon in the macOS status b
 
    ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
 
-## Catalina
+## How to Allow Full Disk Access
 
 > [!CAUTION]
-> macOS 10.15 (Catalina) does not allow us to scan certain user's directories (Documents, etc.) without a user's consent.
+> macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender ATP is not able to fully protect your device.
 
-To grant consent, open System Preferences, Security & Privacy, Privacy, Full Disk Access. Click the lock to make changes (bottom of the dialog box). Select Microsoft Defender.
+To grant consent, open System Preferences -> Security & Privacy -> Privacy -> Full Disk Access. Click the lock icon to make changes (bottom of the dialog box). Select Microsoft Defender ATP.
 
 ## Logging installation issues
 
