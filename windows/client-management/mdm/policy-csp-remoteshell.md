@@ -497,7 +497,7 @@ ADMX Info:
 <!--Description-->
 This policy setting configures the maximum number of concurrent shells any user can remotely open on the same system.
 
-Any number from 0 to 0x7FFFFFFF cand be set, where 0 means unlimited number of shells.
+Any number from 0 to 0x7FFFFFFF can be set, where 0 means unlimited number of shells.
 
 If you enable this policy setting, the user cannot open new remote shells if the count exceeds the specified limit.
 

@@ -471,7 +471,7 @@ ADMX Info:
 Valid values:
 
 - 0 - (Disable) The users can see the display of the Device security area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the Device secuirty area in Windows Defender Security Center.
+- 1 - (Enable) The users cannot see the display of the Device security area in Windows Defender Security Center.
 
 <!--/SupportedValues-->
 <!--/Policy-->

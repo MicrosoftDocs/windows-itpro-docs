@@ -234,7 +234,7 @@ This user right is used by Credential Manager during Backup/Restore. No accounts
 <!--/Description-->
 <!--DbMapped-->
 GP Info:  
--   GP English name: *Access Credential Manager ase a trusted caller*
+-   GP English name: *Access Credential Manager as a trusted caller*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->

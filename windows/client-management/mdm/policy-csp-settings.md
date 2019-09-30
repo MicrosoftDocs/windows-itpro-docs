@@ -1059,7 +1059,7 @@ ADMX Info:
 <!--Validation-->
 To validate on Desktop, do the following:
 
-1.   Open System Settings and verfiy that the About page is visible and accessible.
+1.   Open System Settings and verify that the About page is visible and accessible.
 2.   Configure the policy with the following string: "hide:about".
 3.   Open System Settings again and verify that the About page is no longer accessible.
 

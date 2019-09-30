@@ -792,7 +792,7 @@ ADMX Info:
 Example for setting the device custom OMA-URI setting to enable this policy:  
 To deny write access to removable storage within Intune’s custom profile, set OMA-URI to ```.\[device|user]\vendor\msft\policy\[config|result]\Storage/RemovableDiskDenyWriteAccess```, Data type to Integer, and Value to 1.
 
-See [Use custom settings for Windows 10 devices in Intune](https://docs.microsoft.com/en-us/intune/custom-settings-windows-10) for information on how to create custom profiles.
+See [Use custom settings for Windows 10 devices in Intune](https://docs.microsoft.com/intune/custom-settings-windows-10) for information on how to create custom profiles.
 <!--/Example-->
 <!--Validation-->
 
