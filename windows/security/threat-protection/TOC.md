@@ -30,6 +30,12 @@
 #### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 #### [Exploit protection](microsoft-defender-atp/exploit-protection.md)
 #### [Network protection](microsoft-defender-atp/network-protection.md)
+
+#### [Web protection]()
+##### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
+##### [Monitor web security](microsoft-defender-atp/web-protection-monitoring.md)
+##### [Respond to web threats](microsoft-defender-atp/web-protection-response.md)
+
 #### [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
 #### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
