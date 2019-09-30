@@ -50,7 +50,7 @@ The recovery process included in this topic only works for desktop devices. WIP 
 4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as [Microsoft Intune](create-wip-policy-using-intune-azure.md) or [System Center Configuration Manager](create-wip-policy-using-sccm.md).
 
 > [!NOTE]
->This certificate could be used in Intune for both policies with device enrollment (MDM) and without device enrollment (MAM).
+> This certificate can be used in Intune for policies both _with_ device enrollment (MDM) and _without_ device enrollment (MAM).
 
 ## Verify your data recovery certificate is correctly set up on a WIP client computer
 
