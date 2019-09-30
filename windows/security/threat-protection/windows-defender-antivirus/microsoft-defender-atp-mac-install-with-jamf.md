@@ -90,7 +90,7 @@ To approve the kernel extension:
 
 ![Approved kernel extensions screenshot](images/MDATP_17_approvedKernelExtensions.png)
 
-### Privacy Preferenes Policy Control
+### Privacy Preferences Policy Control
 
 By default, starting with Catalina, Microsoft Defender cannot access files in a user's home directory. To resolve it, add a JAMF policy to allow Defender Full Disk Access.
 
