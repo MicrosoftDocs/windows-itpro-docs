@@ -101,7 +101,7 @@ When you run the onboarding wizard for the first time, you must choose where you
 ### Diagnostic data settings
 
 > [!NOTE]
-> Microsoft Defender ATP doesn't require any specific diagnostic level as long as its enabled.
+> Microsoft Defender ATP doesn't require any specific diagnostic level as long as it's enabled.
 
 You must ensure that the diagnostic data service is enabled on all the machines in your organization.
 By default, this service is enabled, but it&#39;s good practice to check to ensure that you&#39;ll get sensor data from them.
