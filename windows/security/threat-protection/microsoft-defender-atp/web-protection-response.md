@@ -20,7 +20,7 @@ ms.date: 08/30/2019
 
 # Respond to web threats
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 [!include[Prerelease information](prerelease.md)]
 
