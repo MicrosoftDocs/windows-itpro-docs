@@ -97,7 +97,7 @@ To approve the kernel extension:
 >
 > If you previously configured Microsoft Defender ATP through JAMF, we recommend applying the following configuration.
 
-By default, starting with Catalina, Microsoft Defender cannot access files in a user's home directory. To resolve it, add a JAMF policy to allow Defender Full Disk Access.
+Add the following JAMF policy to grant Full Disk Access to Microsoft Defender ATP.
 
 1. Select **Options > Privacy Preferences Policy Control**.
 2. Use any identifier and identifier type = Bundle.
@@ -105,9 +105,6 @@ By default, starting with Catalina, Microsoft Defender cannot access files in a 
 4. Set app or service to SystemPolicyAllFiles and access to Allow.
 
 ![Privacy Preferences Policy Control](images/MDATP_35_JAMF_PrivacyPreferences.png)
-
-> [!CAUTION]
-> This is a new configuration we add for Catalina. If you set your configuration profile for Defender without it, please modify it and add this option.
 
 #### Configuration Profile's Scope
 
