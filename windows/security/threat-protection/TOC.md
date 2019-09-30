@@ -30,6 +30,12 @@
 #### [Application control](windows-defender-application-control/windows-defender-application-control.md)
 #### [Exploit protection](microsoft-defender-atp/exploit-protection.md)
 #### [Network protection](microsoft-defender-atp/network-protection.md)
+
+#### [Web protection]()
+##### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
+##### [Monitor web security](microsoft-defender-atp/web-protection-monitoring.md)
+##### [Respond to web threats](microsoft-defender-atp/web-protection-response.md)
+
 #### [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
 #### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
@@ -310,7 +316,9 @@
 ##### [Deployment with a different Mobile Device Management (MDM) system](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-other-mdm.md)
 ##### [Manual deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-manually.md)
 #### [Update Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-updates.md)
-#### [Set preferences for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-preferences.md)
+#### [Configure Microsoft Defender ATP for Mac]()
+##### [Set preferences for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-preferences.md)
+##### [Detect and block Potentially Unwanted Applications](windows-defender-antivirus/microsoft-defender-atp-mac-pua.md)
 #### [Privacy for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-privacy.md)
 #### [Resources for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-resources.md)
 

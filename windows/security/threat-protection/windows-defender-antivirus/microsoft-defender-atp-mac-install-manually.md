@@ -83,6 +83,9 @@ The installation proceeds.
 > [!NOTE]
 > If you don't select **Allow**, the installation will proceed after 5 minutes. Defender ATP will be loaded, but real-time protection will be disabled.
 
+> [!NOTE]
+> macOS may request to reboot the machine upon the first installation of Microsoft Defender. Real-Time Protection will not be available until the machine is rebooted.
+
 ### Fixing disabled Real-Time Protection
 
 If you did not enable Microsoft's driver during installation, then the application displays a banner prompting you to enable it:
@@ -165,6 +168,13 @@ realTimeProtectionEnabled               : true
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
    ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
+
+## Catalina
+
+> [!CAUTION]
+> macOS 10.15 (Catalina) does not allow us to scan certain user's directories (Documents, etc.) without a user's consent.
+
+To grant consent, open System Preferences, Security & Privacy, Privacy, Full Disk Access. Click the lock to make changes (bottom of the dialog box). Select Microsoft Defender.
 
 ## Logging installation issues
 

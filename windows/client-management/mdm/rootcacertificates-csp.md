@@ -49,7 +49,7 @@ Node for trusted publisher certificates.
 Node for trusted people certificates.
 
 <a href="" id="rootcatrustedcertificates-untrustedcertificates"></a>**RootCATrustedCertificates/UntrustedCertificates**  
-Addeded in Windows 10, version 1803. Node for certificates that are not trusted. IT admin can use this node to immediately flag certificates that have been compromised and no longer usable.
+Added in Windows 10, version 1803. Node for certificates that are not trusted. IT admin can use this node to immediately flag certificates that have been compromised and no longer usable.
 
 <a href="" id="certhash"></a>**_CertHash_**  
 Defines the SHA1 hash for the certificate. The 20-byte value of the SHA1 certificate hash is specified as a hexadecimal string value. This node is common for all the principal root nodes.  The supported operations are Get and Delete.
