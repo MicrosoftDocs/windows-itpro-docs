@@ -310,7 +310,9 @@
 ##### [Deployment with a different Mobile Device Management (MDM) system](windows-defender-antivirus/microsoft-defender-atp-mac-install-with-other-mdm.md)
 ##### [Manual deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-manually.md)
 #### [Update Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-updates.md)
-#### [Set preferences for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-preferences.md)
+#### [Configure Microsoft Defender ATP for Mac]()
+##### [Set preferences for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-preferences.md)
+##### [Detect and block Potentially Unwanted Applications](windows-defender-antivirus/microsoft-defender-atp-mac-pua.md)
 #### [Privacy for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-privacy.md)
 #### [Resources for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-resources.md)
 
