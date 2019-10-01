@@ -11,7 +11,7 @@ ms.author: v-tea
 ms.topic: article
 ms.date: 10/1/2019
 ms.reviewer: scottmca
-manager: kaushika
+manager: jarrettr
 appliesto:
 - Surface Laptop (1st Gen)
 - Surface Laptop 2
