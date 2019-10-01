@@ -67,7 +67,7 @@ For more information about Intune device profiles, including how to create and c
     4. **Zero tolerance blocking level** blocks all unknown executables.
 
         > [!WARNING]
-        > While unlikely, setting this switch to **High** and **High +** might cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection).
+        > While unlikely, setting this switch to **High** or **High +** may cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection).
 6. Click **OK**.
 
   
