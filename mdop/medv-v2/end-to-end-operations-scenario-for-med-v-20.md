@@ -5,7 +5,7 @@ author: dansimp
 ms.assetid: 1d87f5f3-9fc5-4731-8bd1-c155714f34ee
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
