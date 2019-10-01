@@ -36,13 +36,15 @@ In Microsoft Defender Security Center, go to **Advanced hunting** and select an 
 > [!NOTE]
 > To use a query for a custom detection rule, the query must return the `EventTime`, `MachineId`, and `ReportId` columns in the results. Queries that don’t use the `project` operator to customize results usually return these common columns.
 
-> [Example]
-> MiscEvents
+The sample query below counts the number of unique machines (`MachineId`) with antivirus detections and uses this count to find only the machines with more than five detections. To return the latest `EventTime` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.
+
+```
+MiscEvents
 | where EventTime > ago(7d)
 | where ActionType == "AntivirusDetection"
 | summarize (EventTime, ReportId)=arg_max(EventTime, ReportId), count() by MachineId
 | where count_ > 5
-This will fetch the EventTime and ReportId of the latest event from multiple events returned by the query and adds the count by MachineId.
+```
 
 ### 2. Create new rule and provide alert details.
 
