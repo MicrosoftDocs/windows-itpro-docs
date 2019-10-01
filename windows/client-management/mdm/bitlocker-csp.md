@@ -925,7 +925,7 @@ Supported values are:
 <a href="" id="rotaterecoverypasswords"></a>**RotateRecoveryPasswords**  
 This setting refreshes all recovery passwords for OS and fixed drives (removable drives are not included so they can be shared between users). All recovery passwords for all drives will be refreshed and only one password per volume is retained. In case of errors, an error code will be returned so that server can take appropriate action to remediate.
 
-The client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure. After the recovery password has been successfully backed up to Azure AD, the recovery key that was used locally will be removed.  
+The client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure.  
 
 Policy type is Execute. When “Execute Policy” is pushed, the client sets the status as Pending and initiates an asynchronous rotation operation. After refresh is complete, pass or fail status is updated. The client will not retry, but if needed, the server can re-issue the execute request. 
 
