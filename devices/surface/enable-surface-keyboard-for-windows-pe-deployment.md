@@ -39,7 +39,7 @@ To add the keyboard drivers to the selection profile, follow these steps:
    Msiexec.exe /a SurfaceLaptop_Win10_15063_1703008_1.msi targetdir=c:\surface_laptop_drivers /qn
    ```
 
-1. Open the Deployment Workbench and expand the Deployment Shares node and your deployment share. Navigate to the **WindowsPEX64** folder.
+1. Open the Deployment Workbench and then expand the **Deployment Shares** node and your deployment share. Navigate to the **WindowsPEX64** folder.
 
    ![Image that shows the location of the WindowsPEX64 folder in the Deployment Workbench](./images/surface-laptop-keyboard-1.png)
 
