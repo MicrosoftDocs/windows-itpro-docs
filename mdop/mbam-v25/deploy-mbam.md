@@ -2,8 +2,8 @@
 title: Deploying MBAM 2.5 in a stand-alone configuration
 description: Introducing how to deploy MBAM 2.5 in a stand-alone configuration.
 author: delhan
-ms.reviewer: 
-manager: dcscontentpm
+ms.reviewer: dcscontentpm
+manager: dansimp
 ms.author: delhan
 ms.sitesec: library
 ms.prod: w10
@@ -469,7 +469,8 @@ To validate your MBAM Server deployment to use the standalone topology, follow t
    
 5. Verify that a reports folder that is named Microsoft BitLocker Administration and Monitoring contains a data source that is named MaltaDataSource. This data source contains folders that have names that represent language locales (for example, en-us). The reports are in the language folders.
 
-   > [!Note]If SQL Server Reporting Services (SSRS) was configured as a named instance, the URL should resemble the following:
+   > [!Note]
+   > If SQL Server Reporting Services (SSRS) was configured as a named instance, the URL should resemble the following:
    > http(s)://\<MBAM Reports Server Name\>:\<port\>/Reports_\<SSRS Instance Name\>
    >
    > If SSRS was not configured to use Secure Socket Layer (SSL), the URL for the reports will be set to "HTTP" instead of "HTTPS" when you install the MBAM server. If you then go to the Administration and Monitoring Website (also known as Helpdesk) and select a report, you receive the following message: "Only Secure Content is Displayed." To show the report, select **Show All Content**.
