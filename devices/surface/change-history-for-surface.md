@@ -15,12 +15,17 @@ ms.topic: article
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## October 2019
+
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+| [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)| New document providing an overview of key considerations for deploying, managing, and servicing Surface Pro X.|
+
 ## September 2019
 
 | **New or changed topic** | **Description** |
 | ------------------------ | --------------- |
-| [Surface Dock Firmware Update](surface-dock-firmware-update.md)| New document for Microsoft Surface Dock Firmware Update, newly redesigned to automatically update Surface Dock firmware while running in the background on your Surface device.|
-
+| [Surface Dock Firmware Update](surface-dock-firmware-update.md)| New document for Microsoft Surface Dock Firmware Update, newly redesigned to update Surface Dock firmware while running in the background on your Surface device.|
 
 ## August 2019
 
