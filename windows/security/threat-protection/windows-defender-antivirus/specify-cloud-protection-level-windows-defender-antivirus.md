@@ -39,7 +39,7 @@ You can specify the level of cloud-protection offered by Windows Defender Antivi
 
     1. **High**: Applies a strong level of detection.
     2. **High +**: Uses the **High** level and applies additional protection measures (may impact client performance).
-    3. **Zero tolerance** Block all unknown executables.
+    3. **Zero tolerance**: Block all unknown executables.
 
 8. Click **OK** to exit the **Windows Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
 
