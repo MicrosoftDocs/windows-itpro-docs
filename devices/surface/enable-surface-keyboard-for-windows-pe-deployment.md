@@ -9,9 +9,9 @@ ms.sitesec: library
 author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
-ms.date: 9/30/2019
+ms.date: 10/1/2019
 ms.reviewer: scottmca
-manager: dcscontentpm
+manager: kaushika
 appliesto:
 - Surface Laptop (1st Gen)
 - Surface Laptop 2
