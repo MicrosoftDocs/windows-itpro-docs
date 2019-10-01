@@ -63,7 +63,7 @@ For more information about Intune device profiles, including how to create and c
 1.  Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:  
      1.  **Default Windows Defender Antivirus blocking level** provides strong detection without increasing the risk of detecting legitimate files.  
     2.  **High blocking level** applies a strong level of detection while optimizing client performance (greater chance of false positives).
-    3. **High + blocking level** applies additional protection measures(may impact client performance and increase rsik of false positives).
+    3. **High + blocking level** applies additional protection measures (may impact client performance and increase risk of false positives).
     4. **Zero tolerance blocking level** blocks all unknown executables.
 
         > [!WARNING]
