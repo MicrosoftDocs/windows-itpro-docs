@@ -37,7 +37,7 @@ You can specify the level of cloud-protection offered by Windows Defender Antivi
 4. Select **Properties**, select **Settings: Configure**, and then select **Windows Defender Antivirus**.
 5. On the **File Blocking Level** switch, select one of the following:
 
-    1. **High** Applies a strong level of detection.
+    1. **High**: Applies a strong level of detection.
     2. **High +** Uses the high level and applies additional protection measures(may impact client performance).
     3. **Zero tolerance** Block all unknown executables.
 
