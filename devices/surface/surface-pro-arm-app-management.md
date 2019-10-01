@@ -36,7 +36,7 @@ Organizations already using modern management, security, and productivity soluti
 
 ## Image-based deployment considerations
 
-Surface Pro X will be released without a standard Windows .ISO deployment image, which means it’s not easily deployable using established tools like the Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager (SCCM) aka ConfiMgr. Customers relying on image-based deployment may wish to consider Surface Pro 7 while they continue to evaluate the right time to transition to the cloud.
+Surface Pro X will be released without a standard Windows .ISO deployment image, which means it’s not supported on the Microsoft Deployment Toolkit (MDT) or operating system deployment methods using System Center Configuration Manager (SCCM) aka ConfiMgr. Customers relying on image-based deployment should consider Surface Pro 7 while they continue to evaluate the right time to transition to the cloud.
 
 ## Managing Surface Pro X devices
 
@@ -58,11 +58,11 @@ You may be able to use third-party MDM tools to manage Surface Pro X devices. Fo
 
 Windows Defender will help protect Windows 10 on ARM-based PCs for the supported lifetime of the Windows 10 device. 
 
-Some third-party antivirus software cannot be installed on a Windows 10 PC running on an ARM-based processor. Collaboration with third-party antivirus software providers is continuing for AV app readiness on on ARM-based PCs. Contact the antivirus software provider to understand when their apps will be available.
+Some third-party antivirus software cannot be installed on a Windows 10 PC running on an ARM-based processor. Collaboration with third-party antivirus software providers is continuing for AV app readiness on ARM-based PCs. Contact your antivirus software provider to understand when their apps will be available.
 
 ## Servicing Surface Pro X
 
-Outside of personal devices that rely on Windows Update, servicing devices in most corporate environments requires downloading and managing the deployment of .MSI files to update target devices. Once Surface Pro X becomes available, refer to the following documentation, which will include guidance for servicing Surface Pro X:
+Outside of personal devices that rely on Windows Update, servicing devices in most corporate environments requires downloading and managing the deployment of .MSI files to update target devices. Refer to the following documentation, which will be updated later to include guidance for servicing Surface Pro X:
 
 - [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).  
 
@@ -87,7 +87,6 @@ For more information about running apps on Surface Pro X, refer to:
 
 - [Windows 10 ARM-based PCs Support FAQ](https://support.microsoft.com/help/4521606)
 - [Windows 10 on ARM documentation](https://docs.microsoft.com/windows/arm)
-- [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
 
 ## Virtual Desktops (VDI)
 
@@ -121,8 +120,8 @@ The following tables show the availability of selected key features on Surface P
 | Support for Network Boot (PXE)          | Yes           | Yes           |                                                                                                                                 |
 | Windows Configuration Designer          | Yes           | No            | Not recommended for Surface Pro X.                                                                                              |
 | WinPE                                   | Yes           | Yes           | Not recommended for Surface Pro X. Microsoft does not provide the necessary .ISO and drivers to support WinPE with Surface Pro X. |
-| SCCM: Operating System Deployment (OSD) | Yes           | No            | Not recommended for Surface Pro X.                                                                                              |
-| MDT                                     | Yes           | No            | Not recommended for Surface Pro X.                                                                                              |
+| SCCM: Operating System Deployment (OSD) | Yes           | No            | Not supported on Surface Pro X.                                                                                              |
+| MDT                                     | Yes           | No            | Not supported on Surface Pro X.                                                                                              |
 
 
 | Management                                    | Surface Pro 7       | Surface Pro X | Notes                                                                                 |
@@ -135,16 +134,16 @@ The following tables show the availability of selected key features on Surface P
 | Surface Diagnostic Toolkit (SDT) for Business | Yes                 | Yes           |                                                                                   |
 | Surface Dock Firmware Update                  | Yes                 | Yes           |                                                                                   |
 | Asset Tag Utility                             | Yes                 | Yes           |                                                                                   |
-| Surface Enterprise management Mode (SEMM)     | Hardware & Software | Partial       | No option to disable hardware on Surface Pro X at the firmware level.                 |
-| Surface UEFI Configurator                     | Hardware & Software |               | No option to disable hardware. on Surface Pro X at the firmware level.                |
-| Surface UEFI Manager                          | Hardware & Software | Partial       | No option to disable hardware on Surface Pro X at the firmware level.                 |
+| Surface Enterprise management Mode (SEMM)     | Yes | Partial       | No option to disable hardware on Surface Pro X at the firmware level.                 |
+| Surface UEFI Configurator                     | Yes |               | No option to disable hardware. on Surface Pro X at the firmware level.                |
+| Surface UEFI Manager                          | Yes | Partial       | No option to disable hardware on Surface Pro X at the firmware level.                 |
 
 
 | Security                          | Surface Pro 7 | Surface Pro X | Notes                                                                                                                                                                                                                                                                                                                                                |
 | --------------------------------- | ------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BitLocker                         | Yes           | Yes           |                                                                                                                                                                                                                                                                                                                                                      |
 | Windows Defender                  | Yes           | Yes           |                                                                                                                                                                                                                                                                                                                                                      |
-| Support for third-party antivirus | Yes           | See note      | Some third-party antivirus software can’t be installed on a Windows 10 PC running on an ARM-based processor. Microsoft is working with third-party antivirus software providers so they can make their apps ready for Windows 10 on an ARM-based processor. Contact the antivirus software provider to understand when their apps will be available. |
+| Support for third-party antivirus | Yes           | See note      |Some third-party antivirus software cannot be installed on a Windows 10 PC running on an ARM-based processor. Collaboration with third-party antivirus software providers is continuing for AV app readiness on ARM-based PCs. Contact your antivirus software provider to understand when their apps will be available. |
 | Conditional Access                | Yes           | Yes           |                                                                                                                                                                                                                                                                                                                                                      |
 | Secure Boot                       | Yes           | Yes           |                                                                                                                                                                                                                                                                                                                                                      |
 | Windows Information Protection    | Yes           | Yes           |                                                                                                                                                                                                                                                                                                                                                      |
