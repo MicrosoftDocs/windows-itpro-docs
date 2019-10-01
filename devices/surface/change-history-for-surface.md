@@ -19,7 +19,7 @@ This topic lists new and updated topics in the Surface documentation library.
 
 | **New or changed topic** | **Description** |
 | ------------------------ | --------------- |
-| [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)| New document providing an overview of key considerations for deploying, managing, and servicing Surface Pro X.|
+| [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)| New document highlighting key considerations for deploying, managing, and servicing Surface Pro X.|
 
 ## September 2019
 

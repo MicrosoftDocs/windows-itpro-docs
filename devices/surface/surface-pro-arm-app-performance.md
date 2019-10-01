@@ -14,7 +14,7 @@ ms.audience: itpro
 ---
 # Windows 10 ARM-based PC app compatibility
 
-Applications run differently on a Windows 10 ARM-based PC such as Surface Pro X. Limitations include the following:
+Applications run differently on ARM-based Windows 10 PCs such as Surface Pro X. Limitations include the following:
 
 - **Drivers for hardware, games and apps will only work if they're designed for a Windows 10 ARM-based PC**. For more info, check with the hardware manufacturer or the organization that developed the driver. Drivers are software programs that communicate with hardware devices—they're commonly used for antivirus and antimalware software, printing or PDF software, assistive technologies, CD and DVD utilities, and virtualization software. If a driver doesn’t work, the app or hardware that relies on it won’t work either (at least not fully). Peripherals and devices only work if the drivers they depend on are built into Windows 10, or if the hardware developer has released ARM64 drivers for the device.
 - **64-bit (x64) apps won’t work**. You'll need 64-bit (ARM64) apps, 32-bit (ARM32) apps, or 32-bit (x86) apps. You can usually find 32-bit (x86) versions of apps, but some app developers only offer 64-bit (x64) apps.

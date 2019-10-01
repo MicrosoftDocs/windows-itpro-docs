@@ -22,8 +22,8 @@
 ## Deploy
 ### [Deploy Surface devices](deploy.md)
 ### [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
-### [Windows 10 ARM-based PC app compatibility] (surface-pro-arm-app-performance.md)
-### [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
+### [Windows 10 ARM-based PC app compatibility](surface-pro-arm-app-performance.md)
+### [Deploy the latest firmware & drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ### [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)
 ### [Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
 ### [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md)

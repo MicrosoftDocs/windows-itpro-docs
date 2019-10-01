@@ -19,7 +19,7 @@ ms.audience: itpro
 
 Built to handle high performance commercial requirements, Surface Pro X breaks new ground by incorporating the most powerful processor ever released on an ARM device, the Microsoft SQ1 ARM chipset.
 
-Powered by a 3GHz CPU and a 2.1 teraflop GPU, Surface Pro X delivers a full Windows experience. Its 13-hour battery life and built-in 4G LTE make it ideally suited for mobile first-line workers and professionals across the financial, legal, and medical fields or any role demanding extended battery life and continuous connectivity capabilities.
+Powered by a 3GHz CPU and a 2.1 teraflop GPU, Surface Pro X provides a full Windows experience. Its 13-hour battery life and built-in 4G LTE make it ideally suited for mobile first-line workers and professionals across the financial, legal, and medical fields or any role demanding extended battery life and continuous connectivity capabilities.
 
 Surface Pro X is designed almost exclusively for a modern, cloud-based environment centered around Microsoft 365, Intune and Windows Autopilot. This article highlights what that looks like and outlines key considerations for deploying, managing, and servicing Surface Pro X.
 
@@ -131,10 +131,10 @@ The following tables show the availability of selected key features on Surface P
 | Windows Autopilot                             | Yes                 | Yes           |                                                                                       |
 | Azure AD (co-management)                      | Yes                 | Yes           | Ability to join Surface Pro X to Azure AD or Active Directory (Hybrid Azure AD Join). |
 | SCCM                                          | Yes               | Yes           |                                                                                       |
-| Power on When AC Restore                      | Yes                 | Yes           | ****                                                                                  |
-| Surface Diagnostic Toolkit (SDT) for Business | Yes                 | Yes           | ****                                                                                  |
-| Surface Dock Firmware Update                  | Yes                 | Yes           | ****                                                                                  |
-| Asset Tag Utility                             | Yes                 | Yes           | ****                                                                                  |
+| Power on When AC Restore                      | Yes                 | Yes           |                                                                                   |
+| Surface Diagnostic Toolkit (SDT) for Business | Yes                 | Yes           |                                                                                   |
+| Surface Dock Firmware Update                  | Yes                 | Yes           |                                                                                   |
+| Asset Tag Utility                             | Yes                 | Yes           |                                                                                   |
 | Surface Enterprise management Mode (SEMM)     | Hardware & Software | Partial       | No option to disable hardware on Surface Pro X at the firmware level.                 |
 | Surface UEFI Configurator                     | Hardware & Software |               | No option to disable hardware. on Surface Pro X at the firmware level.                |
 | Surface UEFI Manager                          | Hardware & Software | Partial       | No option to disable hardware on Surface Pro X at the firmware level.                 |

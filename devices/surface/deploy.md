@@ -15,17 +15,18 @@ ms.topic: article
 
 # Deploy Surface devices
 
-Learn about about deploying Surface devices using Windows Autopilot or on-premises tools.
+Learn about about deploying ARM- and Intel-based Surface devices.
 
 ## Deploying ARM-based devices
 
 | Topic | Description |
 | --- | --- |
 | [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md) | Get an overview of key considerations for deploying, managing, and servicing Surface Pro X running the Microsoft SQ1 ARM processor. |
-| [Get application compatibility information for Surface Pro X](surface-pro-arm-app-performance.md) | Learn about key app deployment considerations for Surface Pro X. |
+| [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md) | Learn about Autopilot, the recommended method for deploying Surface Pro X. |
+| [Windows 10 ARM-based PC app compatibility](surface-pro-arm-app-performance.md) | Review app  compatibility guidance for Surface Pro X. |
 
 
-## In this section
+## Deploying Intel-based devices 
 
 | Topic | Description |
 | --- | --- |
