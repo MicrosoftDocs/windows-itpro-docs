@@ -41,6 +41,7 @@ In Microsoft Defender Security Center, go to **Advanced hunting** and select an 
 | where EventTime > ago(7d)
 | where ActionType == "AntivirusDetection"
 | summarize (EventTime, ReportId)=arg_max(EventTime, ReportId), count() by MachineId
+| where count_ > 5
 This will fetch the EventTime and ReportId of the latest event from multiple events returned by the query and adds the count by MachineId.
 
 ### 2. Create new rule and provide alert details.
