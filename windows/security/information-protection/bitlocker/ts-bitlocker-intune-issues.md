@@ -22,11 +22,11 @@ This article provides assistance for issues you may see if you use Microsoft Int
 
 ![The BitLocker status indictors on the Intune portal](./images/4509189_en_1.png)
 
-To start narrowing down the cause of the problem, review the event logs (as described in [Troubleshoot BitLocker](troubleshoot-bitlocker.md). Concentrate on the Management and Operations logs in the **Applications and Services logs\\Microsoft\\Windows\\BitLocker-API** folder. The following sections provide more information about resolving the following events and error messages:
+To start narrowing down the cause of the problem, review the event logs as described in [Troubleshoot BitLocker](troubleshoot-bitlocker.md). Concentrate on the Management and Operations logs in the **Applications and Services logs\\Microsoft\\Windows\\BitLocker-API** folder. The following sections provide more information about resolving the following events and error messages:
 
 <a id="list"></a>
 
-- [Event ID 853: TPM not available](#issue-1)
+- [Event ID 853: Failed to enable Silent Encryption. TPM is not available](#issue-1)
 - [Event ID 853: Bootable media detected](#issue-2)
 - [Event ID 854: WinRE not configured](#issue-3)
 - [Event ID 851: Contact manufacturer for BIOS upgrade](#issue-4)
@@ -41,19 +41,22 @@ If you do not have a clear trail of events or error messages to follow, other ar
 
 For information about how to verify that Intune policies are enforcing BitLocker correctly, see [Verifying that BitLocker is operating correctly](#verifying-that-bitlocker-is-operating-correctly).
 
-## <a id="issue-1"></a>Event ID 853: TPM not available
+## <a id="issue-1"></a>Event ID 853: Error: A compatible Trusted Platform Module (TPM) Security Device cannot be found on this computer
 
-![](./images/4509190_en_1.png)
+You see event ID 853, which indicates that the TPM cannot be found.
+
+![Image that shows the details of Event 853 (TPM is not available)](./images/4509190_en_1.png)
 
 ### Cause
 
-Device may not have a TPM chip or it might be disabled from BIOS
+The device that you are trying to secure may not have a TPM chip, or the device BIOS might be configured to disable the TPM.
 
 ### Resolution
 
+
 TPM needs to be enabled in BIOS and you can check the TPM status running tpm.msc from Run. TPM needs to be in ready state (TPM version 2.0)
 
-## <a id="issue-2"></a>Event ID 853: Bootable media detected
+## <a id="issue-2"></a>Event ID 853: BitLocker Drive Encryption detected bootable media (CD or DVD) in the computer
 
 ![](./images/4509191_en_1.png)
 
