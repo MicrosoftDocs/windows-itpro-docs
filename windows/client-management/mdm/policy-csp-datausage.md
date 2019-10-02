@@ -35,43 +35,6 @@ manager: dansimp
 <!--Policy-->
 <a href="" id="datausage-setcost3g"></a>**DataUsage/SetCost3G**  
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
 <hr/>
 
 <!--Description-->
