@@ -107,7 +107,7 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 <p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
 
 
-# Related Links
+## Related topics
 
 Found out the XML DDF structure to create this policy on the following links:
 
