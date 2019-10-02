@@ -109,7 +109,7 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 
 ## Related topics
 
-Found out the XML DDF structure to create this policy on the following links:
+Read more about the XML DDF structure to create this policy by following the links below:
 
 - [More Information about DDF and structure](./networkqospolicy-ddf)
 - [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
