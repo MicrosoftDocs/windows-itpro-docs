@@ -8,7 +8,7 @@ manager: jarrettr
 audience: Admin
 ms.topic: article
 ms.prod: hololens
-localization_priority: Medium 
+ms.localizationpriority: Medium 
 ms.sitesec: library
 ---
 

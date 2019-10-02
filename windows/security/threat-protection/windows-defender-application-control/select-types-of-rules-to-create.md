@@ -110,6 +110,8 @@ They could also choose to create a catalog that captures information about the u
 ## Create path-based rules 
 
 Beginning with Windows 10 version 1903, Windows Defender Application Control (WDAC) policies can contain path-based rules.
+> [!NOTE]
+> Due to an existing bug, you can not combine Path-based ALLOW rules with any DENY rules in a single policy. Instead, either separate DENY rules into a separate Base policy or move the Path-based ALLOW rules into a supplemental policy as described in [Deploy multiple WDAC policies.](deploy-multiple-windows-defender-application-control-policies.md)
 
 - New-CIPolicy parameter
   - FilePath: create path rules under path \<path to scan> for anything not user-writeable (at the individual file level)

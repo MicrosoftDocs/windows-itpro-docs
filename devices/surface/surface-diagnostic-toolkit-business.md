@@ -3,13 +3,15 @@ title: Deploy Surface Diagnostic Toolkit for Business
 description: This topic explains how to use the Surface Diagnostic Toolkit for Business.
 ms.prod: w10
 ms.mktglfcycl: manage
+ms.localizationpriority: normal
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 11/15/2018
-ms.reviewer: 
+ms.date: 09/27/2019
+ms.reviewer: hachidan
 manager: dansimp
+ms.audience: itpro
 ---
 
 # Deploy Surface Diagnostic Toolkit for Business
@@ -165,8 +167,13 @@ You can select to run a wide range of logs across applications, drivers, hardwar
 - [Use Surface Diagnostic Toolkit for Business in desktop mode](surface-diagnostic-toolkit-desktop-mode.md)
 - [Use Surface Diagnostic Toolkit for Business using commands](surface-diagnostic-toolkit-command-line.md)
 
-
 ## Changes and updates
+### Version 2.42.139.0
+*Release date: September 24, 2019*<br>
+This version of Surface Diagnostic Toolkit for Business adds support for the following: 
+- Ability to download hardware reports.
+- Ability to contact Microsoft Support directly from the tool. <br>
+
 ### Version 2.41.139.0
 *Release date: June 24, 2019*<br>
 This version of Surface Diagnostic Toolkit for Business adds support for the following: 
