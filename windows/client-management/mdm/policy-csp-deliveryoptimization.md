@@ -1783,54 +1783,8 @@ ADMX Info:
 <!--Policy-->
 <a href="" id="deliveryoptimization-dopercentagemaxdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxDownloadBandwidth**  
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
 <hr/>
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
 <!--Description-->
 This policy is deprecated. Use [DOPercentageMaxForegroundBandwidth](#deliveryoptimization-dopercentagemaxforegroundbandwidth) and [DOPercentageMaxBackgroundBandwidth](#deliveryoptimization-dopercentagemaxbackgroundbandwidth) policies instead.
 
