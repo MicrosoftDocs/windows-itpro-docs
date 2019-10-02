@@ -9,7 +9,7 @@ ms.sitesec: library
 author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
-ms.date: 10/1/2019
+ms.date: 10/2/2019
 ms.reviewer: scottmca
 manager: jarrettr
 appliesto:
@@ -75,7 +75,7 @@ To add the keyboard drivers to the selection profile, follow these steps:
    
    ![Image that shows the Windows PE properties of the MDT Deployment Share](./images/surface-laptop-keyboard-4.png)
 
-1. Verify that you have configured the rest of the Surface Laptop drivers by using a selection profile or a **DriverGroup001** variable. 
+1. Verify that you have configured the rest of the Surface Laptop drivers by using a selection profile or a **DriverGroup001** variable.  
    - For Surface Laptop (1st Gen), the model is **Surface Laptop**. The rest of the Surface Laptop drivers should reside in the \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop folder as shown in the figure that follows this list.
    - For Surface Laptop 2, the model is **Surface Laptop 2**. The rest of the Surface Laptop drivers should reside in the \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 2 folder.  
 
