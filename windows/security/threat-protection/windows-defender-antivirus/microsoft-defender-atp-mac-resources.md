@@ -118,4 +118,4 @@ In the Microsoft Defender ATP portal, you'll see two categories of information:
   - Whether the device is a virtual machine
   
   > [!NOTE]
-  > Certain device information might be subject to upcoming releases. To send us feedback, use the Microsoft Defender ATP for Mac app" **Help** > **Send feedback** on your device. Optionally, use the **Feedback** button in the Microsoft Defender Security Center.
+  > Certain device information might be subject to upcoming releases. To send us feedback, use the Microsoft Defender ATP for Mac app and select **Help** > **Send feedback** on your device. Optionally, use the **Feedback** button in the Microsoft Defender Security Center.
