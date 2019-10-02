@@ -75,8 +75,10 @@ To add the keyboard drivers to the selection profile, follow these steps:
    
    ![Image that shows the Windows PE properties of the MDT Deployment Share](./images/surface-laptop-keyboard-4.png)
 
-1. Verify that you have configured the rest of the Surface Laptop drivers by using a selection profile or a **DriverGroup001** variable. The model is **Surface Laptop**. The rest of the Surface Laptop drivers should reside in the \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop folder:
+1. Verify that you have configured the rest of the Surface Laptop drivers by using a selection profile or a **DriverGroup001** variable. 
+   - For Surface Laptop (1st Gen), the model is **Surface Laptop**. The rest of the Surface Laptop drivers should reside in the \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop folder as shown in the figure that follows this list.
+   - For Surface Laptop 2, the model is **Surface Laptop 2**. The rest of the Surface Laptop drivers should reside in the \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 2 folder.  
 
-   ![Image that shows the regular Surface Laptop drivers in the Surface Laptop folder of the Deployment Workbench](./images/surface-laptop-keyboard-5.png)
+   ![Image that shows the regular Surface Laptop (1st Gen) drivers in the Surface Laptop folder of the Deployment Workbench](./images/surface-laptop-keyboard-5.png)
 
 After you have configured the MDT Deployment Share to use the new selection profile and related settings, you can continue the deployment process as described in [Deploy a Windows 10 image using MDT: Step 6: Create the deployment task sequence](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt#step-6-create-the-deployment-task-sequence).
