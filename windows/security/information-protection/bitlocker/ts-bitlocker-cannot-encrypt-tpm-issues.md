@@ -11,24 +11,17 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 9/27/2019
+ms.date: 10/3/2019
 ---
 
-# BitLocker cannot encrypt a drive&mdash;known TPM issues
+# BitLocker cannot encrypt a drive: known TPM issues
 
-The following list describes common issues that can involve the Trusted Platform Module (TPM) that prevent BitLocker from encrypting a drive, linked to guidance for addressing the issues.
+This article describes common issues that can involve the Trusted Platform Module (TPM) that prevent BitLocker from encrypting a drive, and provides guidance for addressing those issues.
 
 > [!NOTE]
-> If you have determined that your BitLocker issue does not involve the TPM, see [BitLocker cannot encrypt a drive--known issues](ts-bitlocker-cannot-encrypt-issues.md).
+> If you have determined that your BitLocker issue does not involve the TPM, see [BitLocker cannot encrypt a drive: known issues](ts-bitlocker-cannot-encrypt-issues.md).
 
-<a id="list"></a>
-
-- [TPM is locked, message "The TPM is defending against dictionary attacks and is in a time-out period"](#scenario-1)
-- [Cannot prepare the TPM, message "The TPM is defending against dictionary attacks and is in a time-out period"](#scenario-2)
-- [Cannot prepare the TPM, error 0x80070005 "Insufficient Rights"](#scenario-3)
-- [Cannot prepare the TPM, error 0x80072030 "There is no such object on the server"](#scenario-4)
-
-## <a id="scenario-1"></a>TPM is locked, message "The TPM is defending against dictionary attacks and is in a time-out period"
+## TPM is locked, message "The TPM is defending against dictionary attacks and is in a time-out period"
 
 Unable to enable BitLocker ,getting error msg "The TPM is defending against dictionary attacks and is in a time-out period."
 
@@ -40,7 +33,7 @@ TPM Lockout
 
 open Powershell as Admin $Tpm = Get-WmiObject -class Win32\_Tpm -namespace "root\\CIMv2\\Security\\MicrosoftTpm" $ConfirmationStatus = $Tpm.GetPhysicalPresenceConfirmationStatus(22).ConfirmationStatus if($ConfirmationStatus -ne 4) {$Tpm.SetPhysicalPresenceRequest(22)} - Reboot - if prompted at boot screen agree with F12 - Try again to configure BitLocker (we use some scripts, but the GUI is also ok J)
 
-## <a id="scenario-2"></a>Cannot prepare the TPM, getting message "The TPM is defending against dictionary attacks and is in a time-out period"
+## Cannot prepare the TPM, getting message "The TPM is defending against dictionary attacks and is in a time-out period"
 
 [PTSMEDEP\PRE\W8.1\unable to enable bitlocker with error The TPM is defending against dictionary attacks and is in a time-out period.](https://internal.support.services.microsoft.com/help/4327939)
 
@@ -53,9 +46,7 @@ Classification Path: Routing Surface Pro\Software Issues (Windows 8.1)\BitLocker
 
 When we tried to Prepare the TPM using tpm.msc console of the Surface Pro 3, we received the error "The TPM is defending against dictionary attacks and is in a time-out period." We rebooted into BIOS, disabled TPM and when we booted into OS, the tpm.msc showed “Compatible Trusted Platform Module (TPM) cannot be found on this computer. verify that this computer has 1.2 TPM and its is turned on in the BIOS “ We then booted into BIOS, enabled the TPM and then we found that it required us to clear the existing TPM keys and rebooted. Now, we were able to successfully prepare the TPM and the TPM state was “ready for use”. Now, we started the encryption on OS drive with TPM protector and the encryption was successful.
 
-[Back to list](#list)
-
-## <a id="scenario-3"></a>Cannot prepare the TPM, error 0x80070005 "Insufficient Rights"
+## Cannot prepare the TPM, error 0x80070005 "Insufficient Rights"
 
 Unable to backup TPM Information to ADDS.
 
@@ -77,9 +68,7 @@ Get-ADComputer -Filter {Name -like "TPMTest"} -Property 1. | Format-Table name,m
 
 Reference: [https://internal.support.services.microsoft.com/help/4337282](https://internal.support.services.microsoft.com/help/4337282)
 
-[Back to list](#list)
-
-## <a id="scenario-4"></a>Cannot prepare the TPM, Error 0x80072030 "There is no such object on the server"
+## Cannot prepare the TPM, Error 0x80072030 "There is no such object on the server"
 
 Reference: [https://internal.support.services.microsoft.com/help/4319021](https://internal.support.services.microsoft.com/help/4319021)
 
@@ -105,6 +94,3 @@ We noticed that he had not added the self-write permissions for the computer obj
 
 - [Back up the TPM Recovery Information to AD DS](https://docs.microsoft.com/windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds)
 - [Prepare your organization for BitLocker: Planning and Policies](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies)
-
-
-[Back to list](#list)

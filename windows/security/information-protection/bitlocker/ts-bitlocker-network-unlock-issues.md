@@ -13,26 +13,20 @@ ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
 ms.date: 9/27/2019
 ---
-# BitLocker Network Unlock--known issues
+# BitLocker Network Unlock: known issues
 
 By using the BitLocker Network Unlock feature, you can manage computers remotely without having to enter a BitLocker PIN for each computer when it starts up. Your environment must have the following configuration:
 
 - The computers must belong to a domain
 - The computers must have a wired connection to the corporate network
 - The corporate network must use DHCP to manage IP addresses
-- Each computer must have a DHCP drive rimplemented in its UEFI firmware
+- Each computer must have a DHCP driver implemented in its UEFI firmware
 
 For general guidelines about how to troubleshoot Network Unlock, see [How to enable Network Unlock: Troubleshoot Network Unlock](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock#troubleshoot-network-unlock)
 
-This article describes several known issues that you may encounter while using Network Unlock:
+This article describes several known issues that you may encounter while using Network Unlock, and provided guidance for addressing those issues.
 
-<a id="list"></a>
-
-- [Surface: BitLocker Network unlock does not work on Surface Pro 4 device due to incorrect configuration of UEFI network stack](#scenario-1)
-- [Tip: Detect programmatically whether BitLocker Network Unlock is enabled on a specific computer](#scenario-2)
-- [Unable to use BitLocker Network Unlock feature on Windows client computer](#scenario-4)
-
-## <a id="scenario-1"></a>Surface: BitLocker Network unlock does not work on Surface Pro 4 device due to incorrect configuration of UEFI network stack
+## Surface: BitLocker Network unlock does not work on Surface Pro 4 device due to incorrect configuration of UEFI network stack
 
 BitLocker Network unlock was configured as described in [BitLocker: How to enable Network Unlock](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-how-to-enable-network-unlock).
 
@@ -50,9 +44,7 @@ SEMM is required to enable the network stack, it is not visible in the UI. Other
 
 For information about SEMM, see [Enroll and configure Surface devices with SEMM](https://docs.microsoft.com/surface/enroll-and-configure-surface-devices-with-semm)
 
-[Back to list](#list)
-
-## <a id="scenario-2"></a>Tip: Detect programmatically whether BitLocker Network Unlock is enabled on a specific computer
+## Tip: Detect programmatically whether BitLocker Network Unlock is enabled on a specific computer
 
 Applies for both x64 and x32 UEFI systems.
 
@@ -62,9 +54,7 @@ Detect the following values:
 - A Network Unlock protector (key protector of type **TpmCertificate (9)**) exists on the boot volume
 - A registry entry exists in the **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\SystemCertificates\\FVE\_NKP\\Certificates** subkey that matches the name of the certificate thumbprint of the Network Unlock protector
 
-[Back to list](#list)
-
-## <a id="scenario-4"></a>Unable to use BitLocker Network Unlock feature on Windows client computer
+## Unable to use BitLocker Network Unlock feature on Windows client computer
 
 From [A Windows 8-based client computer does not use the BitLocker Network Unlock feature](https://internal.support.services.microsoft.com/help/2891694/a-windows-8-based-client-computer-does-not-use-the-bitlocker-network-u)
 
@@ -92,5 +82,3 @@ If a DHCP server that is not configured to support BOOTP clients receives a BOOT
 ### Resolution
 
 To resolve this issue, turn off the BOOTP option on the DHCP server, log on to the DHCP server, and then change the DHCP option from DHCP and BOOTP to DHCP
-
-[Back to list](#list)

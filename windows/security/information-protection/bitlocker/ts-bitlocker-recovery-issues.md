@@ -11,23 +11,14 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 9/27/2019
+ms.date: 10/3/2019
 ---
 
-# BitLocker recovery&mdash;known issues
+# BitLocker recovery: known issues
 
-The following list describes common issues that can occur that prevent BitLocker from behaving as expected when recovering a drive, or may cause BitLocker to start recovery unexpectedly. The list provides links to guidance for addressing the issues.
+This article describes common issues that can occur that prevent BitLocker from behaving as expected when recovering a drive, or may cause BitLocker to start recovery unexpectedly. The article provides guidance for addressing those issues.
 
-<a id="list"></a>
-
-- [Windows 10 asks for a BitLocker recovery key even though you did not set up a recovery key](#scenario-1)
-- [The recovery key for a laptop was not backed up, and the laptop is locked](#scenario-2)
-- [Tablet devices do not support **Manage-bde -forcerecovery** to test recovery mode](#scenario-3)
-- [Surface: After you install updates to Surface UEFI or TPM firmware, BitLocker prompts for the recovery key](#scenario-4)
-- [Hyper-V: After you install an update to a Hyper V-enabled computer, BitLocker prompts for the recovery key and gives error 0xC0210000](#scenario-5)
-- [Credential Guard/Device Guard on TPM 1.2: At every restart, BitLocker prompts for the recovery key and gives error 0xC0210000](#scenario-6)
-
-## <a id="scenario-1"></a>Windows 10 asks for a BitLocker recovery key even though you did not set up a recovery key
+## Windows 10 asks for a BitLocker recovery key even though you did not set up a recovery key
 
 Windows 10 prompts you for a BitLocker recovery key. However, you have not configured a BitLocker recovery key.
 
@@ -38,17 +29,13 @@ The BitLocker and Active Directory Domain Services (AD DS) FAQ addresses two sit
 - [What if BitLocker is enabled on a computer before the computer has joined the domain?](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-and-adds-faq#what-if-bitlocker-is-enabled-on-a-computer-before-the-computer-has-joined-the-domain)
 - [What happens if the backup initially fails? Will BitLocker retry the backup?](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-and-adds-faq#what-happens-if-the-backup-initially-fails-will-bitlocker-retry-the-backup)
 
-[Back to list](#list)
-
-## <a id="scenario-2"></a>The recovery key for a laptop was not backed up, and the laptop is locked
+## The recovery key for a laptop was not backed up, and the laptop is locked
 
 We have a Windows 10 Home laptop which is being used by one onsite engineers. He is in California and spilled Coffee in his laptop on Wednesday. The laptop will not work but the hard drive is good. When we hook it up to a docking station, it asks us for a bit locker encryption key to access the drive. Whomever used the laptop before must have turned on bit locker. We have no way of knowing the bit locker password. We need the data in My Documents. It is a SSD drive and is in good condition.
 
 The BitLocker Windows Management Instrumentation (WMI) interface does allow administrators to write a script to back up or synchronize an online client's existing recovery information; however, BitLocker does not automatically manage this process. The manage-bde command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the C: drive to AD DS, you would use the following command from an elevated command prompt: **manage-bde -protectors -adbackup C:**.
 
-[Back to list](#list)
-
-## <a id="scenario-3"></a>Tablet devices do not support Manage-bde -forcerecovery to test recovery mode
+## Tablet devices do not support Manage-bde -forcerecovery to test recovery mode
 
 Reference: <https://internal.support.services.microsoft.com/help/3119451/manage-bde-forcerecovery-command-is-unsupported-for-testing-recovery-m>
 
@@ -87,9 +74,7 @@ To resolve this issue, follow these steps:
 1. Shut down the device.
    When you restart the device, Windows should start.
 
-[Back to list](#list)
-
-## <a id="scenario-4"></a>Surface: After you install updates to Surface UEFI or TPM firmware, BitLocker prompts for the recovery key
+## Surface: After you install updates to Surface UEFI or TPM firmware, BitLocker prompts for the recovery key
 
 Reference: <https://internal.support.services.microsoft.com/help/4057282/bitlocker-recovery-key-prompt-after-surface-uefi-tpm-firmware-update>
 
@@ -213,9 +198,7 @@ To recover data from your Surface device if you are unable to boot into Windows:
 
 To reset your device by using a Surface recovery image: Follow the instructions in  "How to reset your Surface using your USB recovery drive" at [Creating and using a USB recovery drive](https://support.microsoft.com/help/4023512).  
 
-[Back to list](#list)
-
-## <a id="scenario-5"></a>Hyper-V: After you install an update to a Hyper V-enabled computer, BitLocker prompts for the recovery key and gives error 0xC0210000
+## Hyper-V: After you install an update to a Hyper V-enabled computer, BitLocker prompts for the recovery key and gives error 0xC0210000
 
 Reference: <https://internal.support.services.microsoft.com/help/4505821/some-devices-running-windows-10-with-hyper-v-enabled-may-start-into-bi>
 
@@ -259,9 +242,7 @@ This issue is now resolved for all platforms in the following updates:
 - [KB4507450](https://internal.support.services.microsoft.com/help/4507450) LCU for Windows 10, version 1703.
 - [KB4507460](https://internal.support.services.microsoft.com/help/4507460) LCU for Windows 10, version 1607 and Windows Server 2016.
 
-[Back to list](#list)
-
-## <a id="scenario-6"></a> Credential Guard/Device Guard on TPM 1.2: At every restart, BitLocker prompts for the recovery key and gives error 0xC0210000
+## Credential Guard/Device Guard on TPM 1.2: At every restart, BitLocker prompts for the recovery key and gives error 0xC0210000
 
 Windows 10 1809 with Virtualization Based Security enabled (Credential Guard/Device Guard) on TPM 1.2 causing bitlocker recovery on every reboot with : "error code 0xc0210000"
 
@@ -278,5 +259,3 @@ TPM 1.2 is not supported for use with “SecureLaunch” and this is well docume
 Once you will disable the secure Launch in policy on devices with TPM 1.2, it will fix the issue.
 
 ![](./images/4496674_en_1.png)
-
-[Back to list](#list)

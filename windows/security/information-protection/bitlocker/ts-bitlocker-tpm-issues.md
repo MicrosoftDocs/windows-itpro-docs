@@ -11,20 +11,14 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 9/27/2019
+ms.date: 10/3/2019
 ---
 
-# BitLocker and TPM&mdash;other known issues
+# BitLocker and TPM: other known issues
 
 [Troubleshoot the TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm)
 
-<a id="list"></a>
-
-- [Azure AD: Windows Hello for Business and single sign-on do not work](#scenario-1)
-- [Loading the management console failed. The device that is required by the cryptographic provider is not ready for use](#scenario-2)
-- [Azure AD-joined devices fail because of a TPM issue](#scenario-3)
-
-## <a id="scenario-1"></a>Azure AD: Windows Hello for Business and single sign-on do not work
+## Azure AD: Windows Hello for Business and single sign-on do not work
 
 Not able to acquire a PRT can lead to various issues
 
@@ -93,7 +87,7 @@ Hardware/firmware issues within TPM.
 
 Recommended action plan: After consulting with the TPM feature team, We advised you to test this out on a different device of the same model. Apart from that we also suggested you to switch the TPM operation mode to Spec v1.2 to v2.0 and check if the issue continues to occur.Current status: As of now, you have reached out to {Namepii} to get the mainboard on the device replaced by 18th August. Post that you will be changing the operation mode of TPM to 2.0 to see if that resolves the problem. Since we don’t have any active troubleshooting plan we are closing this case temporarily for now and we will re-engage on 10 AM EST 26th Sept. to discuss this issue further. I will be sending you a meeting invite for the same.
 
-## <a id="scenario-3"></a>Azure AD-joined devices fail because of a TPM issue
+## Azure AD-joined devices fail because of a TPM issue
 
 Reference: [https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current](https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)
 
@@ -137,5 +131,3 @@ Reference: [https://internal.support.services.microsoft.com/help/4467030](https:
 - **Reason:** TPM locked out.
 
 - **Resolution:** Transient error. Wait for the cooldown period. Join attempt after some time should succeed. More Information can be found in the article [TPM fundamentals](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#anti-hammering)
-
-[Back to list](#list)

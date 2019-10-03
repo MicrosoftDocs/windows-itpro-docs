@@ -14,17 +14,11 @@ ms.topic: troubleshooting
 ms.date: 9/27/2019
 ---
 
-# BitLocker configuration&mdash;known issues
+# BitLocker configuration: known issues
 
-The following list describes common issues that involve your BitLocker configuration and BitLocker's general functionality, linked to guidance for addressing the issues.
+This article describes common issues that involve your BitLocker configuration and BitLocker's general functionality, and provides guidance for addressing those issues.
 
-<a id="list"></a>
-
-- [In Windows 10, BitLocker takes more time to encrypt a drive than in Windows 7](#scenario-1)
-- [Hyper-V Gen 2 VM: Cannot access the volume after BitLocker encryption](#scenario-2)
-- [Production snapshots fail for virtualized domain controllers that use BitLocker-encrypted disks](#scenario-3)
-
-## <a id="scenario-1"></a>In Windows 10, BitLocker takes more time to encrypt a drive than in Windows 7
+## In Windows 10, BitLocker takes more time to encrypt a drive than in Windows 7
 
 In both Windows 10 and Windows 7, BitLocker runs in the background to encrypt drives. However, in Windows 10, BitLocker is less aggressive about requesting resources. this behavior reduces the chance of BitLocker affecting the computer's performance.
 
@@ -65,9 +59,7 @@ After Windows 7 was released, several other areas of BitLocker were improved:
 
 - **Support for classes of HDD/SSD hybrid disks**. BitLocker can encrypt a disk that uses a small SSD as a non-volatile cache in front of the HDD, such as Intel Rapid Storage Technology.
 
-[Back to list](#list)
-
-## <a id="scenario-2"></a>Hyper-V Gen 2 VM: Cannot access the volume after BitLocker encryption
+## Hyper-V Gen 2 VM: Cannot access the volume after BitLocker encryption
 
 1. You turn on BitLocker on a generation-2 virtual machine that runs on Hyper-V.
 1. You add data to the data disk as it encrypts.
@@ -86,9 +78,7 @@ To resolve this issue, remove the third-party software.
 
 {Note to reviewers: the original text says "We uninstalled the 3rd party Storage craft software and could fix the issue." This section needs to include *how* to fix the issue. Does the VM recognize the drive as soon as the 3rd-party app is gone? Do you have to restore the drive from a backup, then re-encrypt it?}
 
-[Back to list](#list)
-
-## <a id="scenario-3"></a>Production snapshots fail for virtualized domain controllers that use BitLocker-encrypted disks
+## Production snapshots fail for virtualized domain controllers that use BitLocker-encrypted disks
 
 You have a Windows Server 2019 or 2016 Hyper-V Server that is hosting virtual machines (guests) that are configured as Windows domain controllers. BitLocker has encrypted the disks that store the Active Directory database and log files. When you run a “production snapshot” of the domain controller guests, the Volume Snap-Shot (VSS) service does not correctly process the backup.
 
@@ -188,5 +178,3 @@ The operation produces the following callstack:
 ‎ 0a 00000086\`b357ccc0 00007ffc\`e8022193 VSSAPI\!CVssWriterImpl::OnPostSnapshotGuard+0x1d \[d:\\rs1\\base\\stor\\vss\\modules\\vswriter\\vswrtimp.cpp @ 5228\]
 ‎ 0b 00000086\`b357ccf0 00007ffc\`e80214f0 VSSAPI\!CVssWriterImpl::PostSnapshotInternal+0xc3b \[d:\\rs1\\base\\stor\\vss\\modules\\vswriter\\vswrtimp.cpp @ 3552\]
 ```
-
-[Back to list](#list)

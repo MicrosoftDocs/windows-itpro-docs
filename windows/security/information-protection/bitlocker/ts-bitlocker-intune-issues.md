@@ -14,15 +14,13 @@ ms.topic: troubleshooting
 ms.date: 10/2/2019
 ---
 
-# Enforcing BitLocker policies by using Intune&mdash;known issues
+# Enforcing BitLocker policies by using Intune: known issues
 
 This article provides assistance for issues you may see if you use Microsoft Intune policy to manage silent BitLocker encryption on devices. The Intune portal indicates if BitLocker has failed to encrypt on or more managed devices.
 
 ![The BitLocker status indictors on the Intune portal](./images/4509189_en_1.png)
 
 To start narrowing down the cause of the problem, review the event logs as described in [Troubleshoot BitLocker](troubleshoot-bitlocker.md). Concentrate on the Management and Operations logs in the **Applications and Services logs\\Microsoft\\Windows\\BitLocker-API** folder. The following sections provide more information about resolving the following events and error messages:
-
-<a id="list"></a>
 
 - [Event ID 853: Error: A compatible Trusted Platform Module (TPM) Security Device cannot be found on this computer](#issue-1)
 - [Event ID 853: Error: BitLocker Drive Encryption detected bootable media (CD or DVD) in the computer](#issue-2)
@@ -307,5 +305,3 @@ Registry path to verify the BitLocker policy as delivered to the device: **HKEY\
 ![](./images/4509206_en_1.png)
 
 The registry path **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device** will contain all the policy as received/enforced by the MDM
-
-[Back to list](#list)

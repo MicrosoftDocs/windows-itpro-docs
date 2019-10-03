@@ -11,22 +11,17 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 9/27/2019
+ms.date: 10/3/2019
 ---
 
-# BitLocker cannot encrypt a drive&mdash;known issues
+# BitLocker cannot encrypt a drive: known issues
 
-The following list describes common issues that can occur that prevent BitLocker from encrypting a drive, linked to guidance for addressing the issues.
+This article describes common issues that can occur that prevent BitLocker from encrypting a drive, and provides guidance for addressing those issues.
 
 > [!NOTE]
 > If you have determined that your BitLocker issue involves the Trusted Platform Module (TPM), see [BitLocker cannot encrypt a drive--known TPM issues](ts-bitlocker-cannot-encrypt-tpm-issues.md).
 
-<a id="list"></a>
-
-- [Error 0x80310059 when you turn on BitLocker encryption on Windows 10 Professional](#scenario-1)
-- ["Access is denied" message when you try to encrypt removable drives](#scenario-2)
-
-## <a id="scenario-1"></a>Error 0x80310059 when you turn on BitLocker encryption on Windows 10 Professional
+## Error 0x80310059 when you turn on BitLocker encryption on Windows 10 Professional
 
 When you turn on BitLocker encryption on a computer that is running Windows 10 Professional, you receive a message that resembles the following:
 
@@ -52,9 +47,7 @@ To resolve this issue, follow these steps:
 
 1. Exit Registry Editor, and turn on BitLocker encryption again.
 
-[Back to list](#list)
-
-## <a id="scenario-2"></a>"Access is denied" message when you try to encrypt removable drives
+## "Access is denied" message when you try to encrypt removable drives
 
 You have a computer that is running Windows 10, version 1607 or version 1709.
 
@@ -108,5 +101,3 @@ To verify that this issue has occurred, follow these steps:
 1. Restart the computer.
 
 The issue should now be resolved.
-
-[Back to list](#list)
