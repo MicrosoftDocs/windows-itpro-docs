@@ -591,6 +591,7 @@ To create a multi-app kiosk that can run mixed reality apps, you must include th
 <App AppUserModelId="MixedRealityLearning_cw5n1h2txyewy!MixedRealityLearning" />
 <App AppUserModelId="HoloShell_cw5n1h2txyewy!HoloShell" />
 <App AppUserModelId="Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy!App" />
+<App AppUserModelId="Microsoft.MixedReality.Portal_8wekyb3d8bbwe!App" />
 ```
 
 These are in addition to any mixed reality apps that you allow.

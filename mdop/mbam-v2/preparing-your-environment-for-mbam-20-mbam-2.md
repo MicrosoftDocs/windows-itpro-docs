@@ -1,11 +1,11 @@
 ---
 title: Preparing your Environment for MBAM 2.0
 description: Preparing your Environment for MBAM 2.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 5fb01da9-620e-4992-9e54-2ed3fb69e6af
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

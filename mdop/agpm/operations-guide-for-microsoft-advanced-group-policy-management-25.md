@@ -1,11 +1,11 @@
 ---
 title: Operations Guide for Microsoft Advanced Group Policy Management 2.5
 description: Operations Guide for Microsoft Advanced Group Policy Management 2.5
-author: mjcaparas
+author: dansimp
 ms.assetid: 005f0bb5-789f-42a9-bcaf-7e8c31a8df66
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

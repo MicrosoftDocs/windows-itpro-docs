@@ -105,13 +105,13 @@ Once the device is in the pending restart state, it will attempt to restart the 
 
 
 
-#### Suggested configuration {OK} 
+#### Suggested configuration
 
 |Policy|Location|3-day compliance|5-day compliance|7-day compliance|
 |-|-|-|-|-|
 |Specify deadline before auto-restart for update installation| GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadline before auto-restart for update installation |State: Enabled<br>**Specify the number of days before pending restart will automatically be executed outside of active hours:** 2| State: Enabled<br>**Specify the number of days before pending restart will automatically be executed outside of active hours:** 3 | State: Enabled<br>**Specify the number of days before pending restart will automatically be executed outside of active hours:** 4|
 
-#### Controlling notification experience for deadline {OK}
+#### Controlling notification experience for deadline
 
 |Policy| Location|Suggested Configuration |
 |-|-|-|

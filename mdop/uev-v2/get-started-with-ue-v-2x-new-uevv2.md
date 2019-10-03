@@ -1,11 +1,11 @@
 ---
 title: Get Started with UE-V 2.x
 description: Get Started with UE-V 2.x
-author: levinec
+author: dansimp
 ms.assetid: 526ecbf0-0dee-4f0b-b017-8f8d25357b14
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -114,7 +114,7 @@ Before you proceed, make sure your environment includes these requirements for r
 </tbody>
 </table>
 
-**Note:** Starting with Windows 10, version 1607, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack
+**Note:** Starting with Windows 10, version 1607, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack
 
 Also…
 

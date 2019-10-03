@@ -1,18 +1,19 @@
 ---
-title: Optimizing wireless connectivity for Surface devices
-description: This topic provides guidance around recommended  wireless connectivity settings for network admins and users.
+title: Optimize Wi-Fi connectivity for Surface devices
+description: This topic describes recommended Wi-Fi settings to ensure Surface devices stay connected in congested network environments and mobile scenarios.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: dansimp
-ms.localizationpriority: medium
+ms.audience: itpro
+ms.localizationpriority: normal
 ms.author: dansimp
 ms.topic: article
 ms.date: 08/15/2019
-ms.reviewer: 
+ms.reviewer: tokatz
 manager: dansimp
 ---
-# Optimizing wireless connectivity for Surface devices
+# Optimize Wi-Fi connectivity for Surface devices
 
 ## Introduction
 
@@ -75,7 +76,7 @@ Leave the roaming aggressiveness setting in the default state unless you’re en
 1. Go to **Start > Control Panel** > **Network and Internet** > **Network and Sharing Center.**
 2. Under **Connections** select **Wi-Fi** and then select **Properties.**
 3. Select **Client for Microsoft Networks** and then select **Configure**
-4. Select **Advanced** > **Roaming Aggressiveness** and choose ****your preferred value from the drop-down menu.
+4. Select **Advanced** > **Roaming Aggressiveness** and choose your preferred value from the drop-down menu.
 
 ![* Roaming aggressiveness settings *](images/wifi-roaming.png) <br>
 

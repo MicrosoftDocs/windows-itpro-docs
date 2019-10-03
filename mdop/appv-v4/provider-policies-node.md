@@ -1,11 +1,11 @@
 ---
 title: Provider Policies Node
 description: Provider Policies Node
-author: eavena
+author: dansimp
 ms.assetid: 89b47076-7732-4128-93cc-8e6d5b671c8e
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

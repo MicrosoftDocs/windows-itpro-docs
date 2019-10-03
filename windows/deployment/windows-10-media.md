@@ -77,7 +77,7 @@ Features on demand is a method for adding features to your Windows 10 image that
 
 ## Related topics
 
-[Microsoft Volume Licensing Service Center (VLSC) User Guide](https://www.microsoft.com/en-us/download/details.aspx?id=10585)
+[Microsoft Volume Licensing Service Center (VLSC) User Guide](https://www.microsoft.com/download/details.aspx?id=10585)
 <br>[Volume Activation for Windows 10](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-windows-10)
 <br>[Plan for volume activation](https://docs.microsoft.com/windows/deployment/volume-activation/plan-for-volume-activation-client)
 <br>[VLSC downloads FAQ](https://www.microsoft.com/Licensing/servicecenter/Help/FAQDetails.aspx?id=150)

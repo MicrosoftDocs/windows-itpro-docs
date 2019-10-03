@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: tracyp
+ms.author: dansimp
 author: msfttracyp
 ms.date: 07/20/2017
 ms.reviewer: 

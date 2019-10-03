@@ -4,7 +4,7 @@ description: BrowserFavorite CSP
 ms.assetid: 5d2351ff-2d6a-4273-9b09-224623723cbf
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

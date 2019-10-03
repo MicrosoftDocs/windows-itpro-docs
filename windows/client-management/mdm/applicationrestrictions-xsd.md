@@ -4,7 +4,7 @@ description: Here's the XSD for the ApplicationManagement/ApplicationRestriction
 ms.assetid: A5AA2B59-3736-473E-8F70-A90FD61EE426
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

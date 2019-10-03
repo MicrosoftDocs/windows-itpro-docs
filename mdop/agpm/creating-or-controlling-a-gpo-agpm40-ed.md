@@ -1,11 +1,11 @@
 ---
 title: Creating or Controlling a GPO
 description: Creating or Controlling a GPO
-author: mjcaparas
+author: dansimp
 ms.assetid: 807f3b3f-ad3d-4851-9772-7f54a065632a
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -2,16 +2,16 @@
 title: Windows 10 for small to midsize businesses
 description: Microsoft products and devices to transform and grow your businessLearn how to use Windows 10 for your small to midsize business.
 keywords: Windows 10, SMB, small business, midsize business, business
-ms.prod: w10
-ms.technology: smb-windows
+ms.prod: 
+ms.technology: 
 ms.topic: article
 ms.author: celested
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: smb
 author: CelesteDG
-ms.date: 05/01/2017
 ms.localizationpriority: medium
+manager: dansimp
 ---
 
 # Windows 10 for SMB

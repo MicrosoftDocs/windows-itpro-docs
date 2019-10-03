@@ -15,9 +15,18 @@ ms.topic: article
 
 # Deploy Surface devices
 
-Get deployment guidance for your Surface devices including information about Microsoft Deployment Toolkit (MDT), out-of-box-experience (OOBE) customization, Ethernet adaptors, Surface Deployment Accelerator, and the Battery Limit setting.
+Learn about about deploying ARM- and Intel-based Surface devices.
 
-## In this section
+## Deploying ARM-based devices
+
+| Topic | Description |
+| --- | --- |
+| [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md) | Get an overview of key considerations for deploying, managing, and servicing Surface Pro X running the Microsoft SQ1 ARM processor. |
+| [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md) | Learn about Autopilot, the recommended method for deploying Surface Pro X. |
+| [Windows 10 ARM-based PC app compatibility](surface-pro-arm-app-performance.md) | Review app  compatibility guidance for Surface Pro X. |
+
+
+## Deploying Intel-based devices 
 
 | Topic | Description |
 | --- | --- |
@@ -35,9 +44,6 @@ Get deployment guidance for your Surface devices including information about Mic
  
 
 ## Related topics
-
-
-[Surface TechCenter](https://technet.microsoft.com/windows/surface)
 
 [Surface for IT pros blog](http://blogs.technet.com/b/surface/)
 

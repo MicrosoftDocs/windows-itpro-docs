@@ -1,11 +1,11 @@
 ---
 title: Security and Protection Overview
 description: Security and Protection Overview
-author: eavena
+author: dansimp
 ms.assetid: a43e1c53-7936-4d48-a110-0be26c8e9d97
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

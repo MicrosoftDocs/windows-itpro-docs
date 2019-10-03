@@ -114,7 +114,7 @@ Example: Export the Debug logs
 
 ## Collect logs from Windows 10 Mobile devices
 
-Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medic](https://www.microsoft.com/en-us/p/field-medic/9wzdncrfjb82?activetab=pivot%3aoverviewtab) app to collect logs.
+Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medic](https://www.microsoft.com/p/field-medic/9wzdncrfjb82?activetab=pivot%3aoverviewtab) app to collect logs.
 
 **To collect logs manually**
 

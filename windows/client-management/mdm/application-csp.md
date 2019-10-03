@@ -4,7 +4,7 @@ description: APPLICATION configuration service provider
 ms.assetid: 0705b5e9-a1e7-4d70-a73d-7f758ffd8099
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

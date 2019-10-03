@@ -1,11 +1,11 @@
 ---
 title: PUBLISH APP
 description: PUBLISH APP
-author: eavena
+author: dansimp
 ms.assetid: f25f06a8-ca23-435b-a0c2-16a5f39b6b97
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -44,16 +44,16 @@ Rules wizard and the **Audit only** enforcement configuration to assist you with
 
 Using the Automatically Generate Rules wizard quickly creates rules for the applications you specify. The wizard is designed specifically to build a rule collection. You can use the Local Security Policy snap-in to view and edit the rules. This method is very useful when creating rules from a reference computer, and when creating and evaluating AppLocker policies in a testing environment. However, it does require that the files be accessible on the reference computer or through a network drive. This might mean additional work in setting up the reference computer and determining a maintenance policy for that computer.
 
-Using the **Audit only** enforcement method permits you to view the logs because it collects information about every process on the computers receiving the Group Policy Object (GPO). Therefore, you can see what the enforcement will be on the computers in a business group. AppLocker includes Windows PowerShell cmdlets that you can use to analyze the events from the event log and cmdlets to create rules. However, when you use Group Policy to deploy to several computers, a means to collect events in a central location is very important for manageability. Because AppLocker logs information about files that users or other processes start on a computer, you could miss creating some rules 
-initially. Therefore, you should continue your evaluation until you can verify that all required applications that are allowed to run are accessed successfully.
+Using the **Audit only** enforcement method permits you to view the logs because it collects information about every process on the computers receiving the Group Policy Object (GPO). Therefore, you can see what the enforcement will be on the computers in a business group. AppLocker includes Windows PowerShell cmdlets that you can use to analyze the events from the event log and cmdlets to create rules. However, when you use Group Policy to deploy to several computers, a means to collect events in a central location is very important for manageability. Because AppLocker logs information about files that users or other processes start on a computer, you could miss creating some rules initially. Therefore, you should continue your evaluation until you can verify that all required applications that are allowed to run are accessed successfully.
 
->**Tip:**  If you run Application Verifier against a custom application with any AppLocker policies enabled, it might prevent the application from running. You should either disable Application Verifier or AppLocker.
+> [!TIP]
+> If you run Application Verifier against a custom application with any AppLocker policies enabled, it might prevent the application from running. You should either disable Application Verifier or AppLocker.  
 You can create an inventory of Universal Windows apps on a device by using two methods: the **Get-AppxPackage** Windows PowerShell cmdlet or the AppLocker console.
  
-The following topics in the [AppLocker Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=160261) describe how to perform each method:
+The following topics describe how to perform each method:
 
--   [Automatically generating executable rules from a reference computer](https://go.microsoft.com/fwlink/p/?LinkId=160264)
--   [Using auditing to track which apps are used](https://go.microsoft.com/fwlink/p/?LinkId=160281)
+-   [Run the Automatically Generate Rules wizard](run-the-automatically-generate-rules-wizard.md)
+-   [Configure an AppLocker policy for audit only](configure-an-applocker-policy-for-audit-only.md)
 
 ### Prerequisites to completing the inventory
 

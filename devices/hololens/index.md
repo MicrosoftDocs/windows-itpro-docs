@@ -51,4 +51,4 @@ ms.date: 07/14/2019
 
 * [Documentation for Holographic app development](https://developer.microsoft.com/windows/mixed-reality/development)
 * [HoloLens Commercial Suite](https://www.microsoft.com/microsoft-hololens/hololens-commercial)
-* [HoloLens release notes](https://developer.microsoft.com/en-us/windows/mixed-reality/release_notes)
+* [HoloLens release notes](https://developer.microsoft.com/windows/mixed-reality/release_notes)

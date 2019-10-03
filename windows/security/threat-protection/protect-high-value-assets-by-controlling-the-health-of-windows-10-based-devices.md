@@ -4,14 +4,13 @@ description: This article details an end-to-end solution that helps you protect 
 ms.assetid: 45DB1C41-C35D-43C9-A274-3AD5F31FE873
 ms.reviewer: 
 manager: dansimp
-ms.author: dolmont
+ms.author: dansimp
 keywords: security, BYOD, malware, device health attestation, mobile
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, devices
 author: dulcemontemayor
-
 ms.date: 10/13/2017
 ms.localizationpriority: medium
 ---

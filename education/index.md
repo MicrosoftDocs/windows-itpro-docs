@@ -1,11 +1,11 @@
---- 
+---
 layout: HubPage
 hide_bc: true
 title: Microsoft 365 Education documentation and resources | Microsoft Docs
 description: Learn about product documentation and resources available for school IT administrators, teachers, students, and education app developers.
-author: CelesteDG
+author: dansimp
 ms.topic: hub-page
-ms.author: celested
+ms.author: dansimp
 ms.collection: ITAdminEDU
 ms.date: 10/30/2017
 ms.prod: w10
@@ -26,7 +26,7 @@ ms.prod: w10
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/en-us/education/itdm/default.aspx" target="_blank">
+                                <a href="https://www.microsoft.com/education/itdm/default.aspx" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
