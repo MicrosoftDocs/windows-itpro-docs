@@ -78,7 +78,6 @@ You can click the circles on the incident graph to view the details of the malic
 ![Image of indcident details](images/atp-incident-graph-details.png)
 
 ## Related topics
-- [Incidents queue](incidents-queue.md)
 - [View and organize the Incidents queue](view-incidents-queue.md)
 - [Manage incidents](manage-incidents.md)
 
