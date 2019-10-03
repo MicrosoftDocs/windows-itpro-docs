@@ -5,7 +5,7 @@ author: dansimp
 ms.assetid: 9a3e5413-2621-49ce-8bd2-992616691703
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

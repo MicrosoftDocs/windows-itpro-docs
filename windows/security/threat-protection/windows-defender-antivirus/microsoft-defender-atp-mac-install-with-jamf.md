@@ -90,6 +90,22 @@ To approve the kernel extension:
 
 ![Approved kernel extensions screenshot](images/MDATP_17_approvedKernelExtensions.png)
 
+### Privacy Preferences Policy Control
+
+> [!CAUTION]
+> macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender ATP is not able to fully protect your device.
+>
+> If you previously configured Microsoft Defender ATP through JAMF, we recommend applying the following configuration.
+
+Add the following JAMF policy to grant Full Disk Access to Microsoft Defender ATP.
+
+1. Select **Options > Privacy Preferences Policy Control**.
+2. Use any identifier and identifier type = Bundle.
+3. Set Code Requirement to `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`.
+4. Set app or service to SystemPolicyAllFiles and access to Allow.
+
+![Privacy Preferences Policy Control](images/MDATP_35_JAMF_PrivacyPreferences.png)
+
 #### Configuration Profile's Scope
 
 Configure the appropriate scope to specify the devices that will receive the configuration profile.
