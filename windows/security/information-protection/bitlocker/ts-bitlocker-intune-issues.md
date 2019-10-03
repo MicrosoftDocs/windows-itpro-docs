@@ -16,9 +16,7 @@ ms.date: 10/2/2019
 
 # Enforcing BitLocker policies by using Intune&mdash;known issues
 
-Reference: <https://internal.support.services.microsoft.com/help/4502051>
-
-This article provides assistance for issues you may see if you use Microsoft Intune policy to manage BitLocker encryption on devices. The Intune portal indicates if BitLocker has failed to encrypt on or more managed devices.
+This article provides assistance for issues you may see if you use Microsoft Intune policy to manage silent BitLocker encryption on devices. The Intune portal indicates if BitLocker has failed to encrypt on or more managed devices.
 
 ![The BitLocker status indictors on the Intune portal](./images/4509189_en_1.png)
 
@@ -42,13 +40,14 @@ If you do not have a clear trail of events or error messages to follow, other ar
 For information about how to verify that Intune policies are enforcing BitLocker correctly, see [Verifying that BitLocker is operating correctly](#verifying-that-bitlocker-is-operating-correctly).
 
 > [!NOTE]
-> For some of the procedures in this article, you have to use the TPM management console (tpm.msc). To open the TPM management console, select **Start**, and in the **Search** box, type **tpm.msc**, and then press **Enter**.
+> - For some of the procedures in this article, you have to use the TPM management console (tpm.msc). To open the TPM management console, select **Start**, and in the **Search** box, type **tpm.msc**, and then press **Enter**.
+> - For some of the procedures in this article, you have to use an elevated Command Prompt window. To open and elevated Command Prompt window, select **Start**, and in the **Search** box, type **cmd**. Right-click **Command Prompt**, and select **Run as administrator**.
 
 ## <a id="issue-1"></a>Event ID 853: Error: A compatible Trusted Platform Module (TPM) Security Device cannot be found on this computer
 
-Event ID 853 can carry different error messages, depending on context. In this case, you see event ID 853, and the error message in the event indicates that the device does not appear to have a TPM.
+Event ID 853 can carry different error messages, depending on context. In this case, you see event ID 853, and the error message in the event indicates that the device does not appear to have a TPM. The event information resembles the following:
 
-![Image that shows the details of Event 853 (TPM is not available)](./images/4509190_en_1.png)
+![Details of event ID 853 (TPM is not available, cannot find TPM)](./images/4509190_en_1.png)
 
 ### Cause
 
@@ -56,80 +55,113 @@ The device that you are trying to secure may not have a TPM chip, or the device 
 
 ### Resolution
 
+To resolve this issue, verify the following:
 
-TPM needs to be enabled in BIOS and you can check the TPM status running tpm.msc from Run. TPM needs to be in ready state (TPM version 2.0)
+- The TPM is enabled in the device BIOS.  
+- The TPM status in the TPM management console resembles the following:
+   - Ready (TPM 2.0)
+   - Initialized (TPM 1.2)
 
-
+For more information, see [Troubleshoot the TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm).
 
 ## <a id="issue-2"></a>Event ID 853: Error: BitLocker Drive Encryption detected bootable media (CD or DVD) in the computer
 
+In this case, you see event ID 853, and the error message in the event indicates that bootable media is available to the device. The event information resembles the following:
 
-
-![](./images/4509191_en_1.png)
+![Details of event ID 853 (TPM is not available, bootable media found)](./images/4509191_en_1.png)
 
 ### Cause
 
-During BitLocker and TPM provisioning, the platform takes into account any additional removable media connected to the system as the normal platform verification parameters.
+During the provisioning process, BitLocker Drive Encryption records the configuration of the device to establish a baseline. If the device configuration changes at a later time, BitLocker Recovery automatically starts. If the device has removable bootable media on board during the provisioning process, removing that media triggers BitLocker Recovery.
 
-As such if BitLocker provisioning continues with removable media being attached to the device, on absence of those media drives, it would prompt for the BitLocker Recovery as the platform verification will detect changes in parameters.
-
-Windows 10 takes care of this situation and does not starts the BitLocker provisioning if it detects that additional removable media is connected.
+To avoid this situation, the provisioning process stops if it detects removable bootable media.
 
 ### Resolution
 
-Remove the bootable media and restart. Check the encryption status post restart.
+Remove the bootable media and then restart the device. After the device restarts, verify the encryption status.
 
-## <a id="issue-3"></a>Event ID 854: WinRE not configured
+## <a id="issue-3"></a>Event ID 854: WinRE is not configured
 
-![](./images/4509192_en_1.png)
+The event information resembles the following:
+
+![Details of event ID 854](./images/4509192_en_1.png)
 
 ### Cause
 
-Windows Recovery Environment (WinRE) is the minimal OS based on Windows Preinstallation Environment (WinPE) which includes a number of tools to recover, reset and diagnose Windows.
+Windows Recovery Environment (WindowsRE) is a minimal Windows operating system that is based on Windows Preinstallation Environment (WindowsPE). WindowsRE includes a number of tools to recover or reset Windows and diagnose Windows issues. If a device cannot start the regular Windows operating system, the device tries to start Windows RE.
 
-If the main OS doesn’t boot on some reason, the computer tries to run WinRE.
+The provisioning process enables BitLocker Drive Encryption on the operating system drive during the WindowsPE phase of provisioning. This action makes sure that the drive is protected before the full operating system is installed. The provisioning process also creates a system partition for WindowsRE to use, in case of any system crashes.
 
-In case of Silent BitLocker Encryption, BitLocker encryption is enabled on OS drive while Windows is still in Pre Boot Environment (Win PE). This is to protect the OS drive contents.
-
-As such it is necessary to have WinRE (Recovery Environment) enabled so that Windows can be recovered in any system crash issues.
-
-During Windows 10 installation, Windows automatically creates a system partition for recovery.
+If WindowsRE is not available on the device, provisioning stops.
 
 ### Resolution
 
-Check if WinRE is enabled. Run the command **reagentc /info** on an elevated command prompt:
+#### 1. Verify the configuration of the disk partitions
 
-![](./images/4509193_en_1.png)
+The procedures described in this section depend on the default disk partitions that Windows configures during installation. Windows 10 automatically creates a recovery partition that contains the Winre.wim file. The partition configuration resembles the following:
 
-If disabled, to fix this issue or configure WinRE, you need to run command **reagentc /enable** in administrative command prompt.
+![Default disk partitions, including the recovery partition](./images/4509194_en_1.png)
 
-> [!IMPORTANT]
-> This command will work only if you did not made any changes to the system partitions as created by Windows in default. Windows 10 during installation by default creates a recovery partition (499MB) which will contain the Winre.wim file:
-> ![](./images/4509194_en_1.png)
+To verify the configuration of the disk partitions, open an elevated Command Prompt window and run the following commands:
 
-Running the **diskpart \> list volume** command will show you the volumes as created on the hard drive. If you see that Volume 1 status is not healthy, you are out of luck and would require to re-install Windows:
+```
+diskpart 
+list volume
+```
+![Output of the list volume command in the Diskpart app](./images/4509195_en_1.png)
 
-![](./images/4509195_en_1.png)
+If the status of any of the volumes is not Healthy, you may have to reinstall Windows.
 
-If the partition status is heathy, but running the **reagentc /enable** command gives you an error, you can go and check the BCD entry if Windows Boot Loader contains the recovery sequence GUID by running **bcdedit /enum all**.
+#### 2. Verify the status of WindowsRE
 
-![](./images/4509196_en_1.png)
+To verify the status of WindowsRE on the device, open an elevated Command Prompt window and run the following command:
 
-In the list of boot variants, find the Windows Boot Loader section with **identifier={current}**. The GUID value of the **recoverysequence** attribute should be unique and not a string of zeros.
+```cmd
+reagentc /info
+```
+The output of this command resembles the following:
 
-BCD config is out of Intune scope so I will not dig into it.
+![Output of the reagentc /info command](./images/4509193_en_1.png)
 
-## <a id="issue-4"></a>Event ID 851: Contact manufacturer for BIOS upgrade
+If the **Windows RE status** is not **Enabled**, run the following command to enable it:
 
-![](./images/4509197_en_1.png)
+```cmd
+reagentc /enable
+```
+
+#### 3. Verify the Windows Boot Loader configuration
+
+If the partition status is heathy, but the **reagentc /enable** command results in an error, verify that Windows Boot Loader contains the recovery sequence GUID. To do so, run the following command in an elevated Command Prompt window:
+
+```cmd
+bcdedit /enum all
+```
+
+The output of this command resembles the following:
+
+![Output of the bcdedit /enum all command](./images/4509196_en_1.png)
+
+In the output, locate the **Windows Boot Loader** section that includes the line **identifier={current}**. In that section, locate the **recoverysequence** attribute. The value of this attribute should be a GUID value, and not a string of zeros.
+
+## <a id="issue-4"></a>Event ID 851: Contact the manufacturer for BIOS upgrade instructions
+
+The event information resembles the following:
+
+![Details of event ID 851](./images/4509197_en_1.png)
 
 ### Cause
 
-Silent BitLocker Encryption requires UEFI BIOS as it does not supports BIOS in legacy mode. Check the BIOS mode by using msinfo32.
+The device must have Unified Extensible Firmware Interface (UEFI) BIOS. Silent BitLocker Drive Encryption does not support legacy BIOS.
+
+### Resolution
+
+To verify the BIOS mode, use msinfo32. To do this, follow these steps:
+
+1. 
+
+Check the BIOS mode by using msinfo32.
 
 ![](./images/4509198_en_1.png)
-
-### Resolution
 
 You need to enable UEFI BIOS by booting to BIOS if your device supports EFI/UEFI. If your device only supports legacy BIOS, then you are out of luck.
 
