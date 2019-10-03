@@ -11,7 +11,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -28,7 +29,7 @@ For the purposes of this topic, we will use four machines: DC01, MDT01, and PC00
 
 ![fig 1](../images/upgrademdt-fig1-machines.png)
 
-Figure 1. The machines used in this topic.
+Figure 1. The computers used in this topic.
 
 ## Set up the upgrade task sequence
 
