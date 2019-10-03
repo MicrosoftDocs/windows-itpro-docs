@@ -35,9 +35,9 @@ description: Windows 10 deployment resources and documentation for admins & IT p
                                             </div>
                                             <div class="cardText">
                                                 <h3>Explore</h3>
-                                                <P><a href="microsoft-365-overview.md" target="_blank">Overview</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-it-architecture-resources" target="_blank">Architecture models</a></p>
-                                                <P><a href="http://Microsoft365.com/it" target="_blank">Microsoft 365 for IT</a></p>
+                                                <P><a href="deploy-whats-new.md" target="_blank">What's new</a></p>
+                                                <P><a href="windows-10-deployment-scenarios.md" target="_blank">Deployment scenarios</a></p>
+                                                <P><a href="deploy-m365.md" target="_blank">Windows 10 and Microsoft 365</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -54,8 +54,8 @@ description: Windows 10 deployment resources and documentation for admins & IT p
                                             </div>
                                             <div class="cardText">
                                                 <h3>Deploy</h3>
-                                                <P><a href="https://www.microsoft.com/fasttrack/microsoft-365" target="_blank">FastTrack</a></p>
-                                                <P><a href="deploy-microsoft-365-enterprise.md" target="_blank">Deployment guide</a></p>
+                                                <P><a href="deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md" target="_blank">Windows 10 deployment guides</a></p>
+                                                <P><a href="https://www.microsoft.com/en-us/fasttrack/microsoft-365/windows-10" target="_blank">FastTrack</a></p>
                                                 <P><a href="https://aka.ms/howtoshift" target="_blank">Modern Desktop deployment</a></p>
                                             </div>
                                         </div>
