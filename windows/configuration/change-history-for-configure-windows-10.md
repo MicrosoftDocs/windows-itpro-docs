@@ -134,7 +134,7 @@ Set up a kiosk on Windows 10 Pro, Enterprise, or Education | Renamed it **Set up
 
 New or changed topic | Description
 --- | ---
-[Windows 10, version 1709 basic diagnostic events and fields](https://docs.microsoft.com/en-us/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1709) and [Windows 10, version 1703 basic level Windows diagnostic events and fields](https://docs.microsoft.com/en-us/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1809) | Added events and fields that were added in the February update.
+[Windows 10, version 1709 basic diagnostic events and fields](https://docs.microsoft.com/en-us/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1709) and [Windows 10, version 1703 basic level Windows diagnostic events and fields](https://docs.microsoft.com/en-us/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703) | Added events and fields that were added in the February update.
 [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md) | Added steps for configuring a kiosk in Microsoft Intune.
 [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md) | Updated the instructions for applying a customized Start layout using Microsoft Intune.
 
@@ -171,16 +171,16 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 
 - [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md)
 - [Multi-app kiosk XML reference](multi-app-kiosk-xml.md)
-- [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)
-- [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](enhanced-diagnostic-data-windows-analytics-events-and-fields.md)
-
+- [Windows 10, version 1709 basic diagnostic events and fields](https://docs.microsoft.com/en-us/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1709)
+- [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/en-us/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)
+    
 
 ## September 2017
 
 |New or changed topic | Description|
 |--- | ---|
-|[Beginning your General Data Protection Regulation (GDPR) journey for Windows 10](gdpr-win10-whitepaper.md)|New conceptual info about Windows 10 and the upcoming GDPR-compliance requirements.|
-|[Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added that Windows Spotlight can be managed by the Experience/AllowWindowsSpotlight MDM policy. |
+|[Beginning your General Data Protection Regulation (GDPR) journey for Windows 10](https://docs.microsoft.com/en-us/windows/privacy/gdpr-win10-whitepaper)|New conceptual info about Windows 10 and the upcoming GDPR-compliance requirements.|
+|[Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services) | Added that Windows Spotlight can be managed by the Experience/AllowWindowsSpotlight MDM policy. |
 
 
 
@@ -195,12 +195,12 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 
 | New or changed topic | Description |
 | --- | --- |
-|[Windows 10, version 1703 Diagnostic Data](windows-diagnostic-data-1703.md)|Updated categories and included diagnostic data.|
+|[Windows 10, version 1703 Diagnostic Data](https://docs.microsoft.com/en-us/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703)|Updated categories and included diagnostic data.|
 |[Add image for secondary tiles](start-secondary-tiles.md) | Added XML example for Edge secondary tiles and **ImportEdgeAssets** |
 |[Customize and export Start layout](customize-and-export-start-layout.md) | Added explanation for tile behavior when the app is not installed |
 |[Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md) | Added that Microsoft Edge is not supported for assigned access |
-|[Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)|Updated several Appraiser events and added Census.Speech. |
-|[Manage connections from Windows operating system components to Microsoft-services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Updated Date & Time and Windows spotlight sections. |
+|[Windows 10, version 1703 basic level Windows diagnostic events and fields](https://docs.microsoft.com/en-us/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703)|Updated several Appraiser events and added Census.Speech. |
+|[Manage connections from Windows operating system components to Microsoft-services](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services) | Updated Date & Time and Windows spotlight sections. |
 
 ## June 2017
 
@@ -215,7 +215,7 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 | New or changed topic | Description |
 | --- | --- |
 | [Configure cellular settings for tablets and PCs](provisioning-apn.md) | New |
-| [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added MDM policies for privacy settings |
+| [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services) | Added MDM policies for privacy settings |
 
 
 ## April 2017
@@ -233,5 +233,4 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 - [Use the Lockdown Designer app to create a Lockdown XML file](mobile-devices/mobile-lockdown-designer.md)
 - [Add image for secondary tiles](start-secondary-tiles.md)
 - [Provision PCs with apps](provisioning-packages/provision-pcs-with-apps.md)
-- [Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
-- [Windows 10, version 1703 Diagnostic Data](windows-diagnostic-data-1703.md)
+- [Windows 10, version 1703 basic level Windows diagnostic events and fields](https://docs.microsoft.com/en-us/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703)
