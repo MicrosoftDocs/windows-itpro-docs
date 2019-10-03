@@ -32,6 +32,7 @@ sections:
   - type: markdown
     text: "
       <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Date resolved</td></tr>
+      <tr><td><div id='351msg'></div><b>Intermittent issues when printing</b><br>The print spooler service may intermittently have issues completing a print job and may result in a print job being canceled or failing.<br><br><a href = '#351msgdesc'>See details ></a></td><td>OS Build 10240.18334<br><br>September 23, 2019<br><a href ='https://support.microsoft.com/help/4522009' target='_blank'>KB4522009</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4524153' target='_blank'>KB4524153</a></td><td>October 03, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='315msg'></div><b>Apps using Visual Basic 6 (VB6), VBA, and VBScript may stop responding with error</b><br>Applications that were made using Visual Basic 6 (VB6), macros using Visual Basic for Applications (VBA), and VBScript may stop responding and you may receive an error.<br><br><a href = '#315msgdesc'>See details ></a></td><td>OS Build 10240.18305<br><br>August 13, 2019<br><a href ='https://support.microsoft.com/help/4512497' target='_blank'>KB4512497</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4517276' target='_blank'>KB4517276</a></td><td>August 17, 2019 <br>02:00 PM PT</td></tr>
       <tr><td><div id='306msg'></div><b>MacOS may be unable to access network shares via CIFS or SMBv1 on Windows devices</b><br>You may receive an error on MacOS when trying to access network shares via CIFS or SMBv1 on Windows devices that installed updates on June 11, 2019 or later.<br><br><a href = '#306msgdesc'>See details ></a></td><td>OS Build 10240.18244<br><br>June 11, 2019<br><a href ='https://support.microsoft.com/help/4503291' target='_blank'>KB4503291</a></td><td>Resolved External<br></td><td>August 09, 2019 <br>07:03 PM PT</td></tr>
       <tr><td><div id='243msg'></div><b>Event Viewer may close or you may receive an error when using Custom Views</b><br>When trying to expand, view or create Custom Views in Event Viewer, you may receive an error and the app may stop responding or close.<br><br><a href = '#243msgdesc'>See details ></a></td><td>OS Build 10240.18244<br><br>June 11, 2019<br><a href ='https://support.microsoft.com/help/4503291' target='_blank'>KB4503291</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4507458' target='_blank'>KB4507458</a></td><td>July 09, 2019 <br>10:00 AM PT</td></tr>
@@ -49,6 +50,15 @@ sections:
         <div>
         </div> 
       "
+- title: September 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='351msgdesc'></div><b>Intermittent issues when printing</b><div>The print spooler service may intermittently have issues completing a print job and may result in a print job being canceled or failing. Some apps may close or error when the print spooler fails and you may receive&nbsp;a remote procedure call error (RPC error) from some printing utility or printing apps.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1903; Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709; Windows 10, version 1703; Windows 10 Enterprise LTSC 2016; Windows 10, version 1607; Windows 10 Enterprise LTSC 2015; Windows 8.1; Windows 7 SP1</li><li>Server: Windows Server, version 1903; Windows Server, version 1809; Windows Server 2019; Windows Server, version 1803; Windows Server, version 1709 ; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2 SP1; Windows Server 2008 SP2</li></ul><div></div><div><strong>Resolution:</strong> This issue was resolved in <a href='https://support.microsoft.com/help/4524153' target='_blank'>KB4524153</a>.</div><br><a href ='#351msg'>Back to top</a></td><td>OS Build 10240.18334<br><br>September 23, 2019<br><a href ='https://support.microsoft.com/help/4522009' target='_blank'>KB4522009</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4524153' target='_blank'>KB4524153</a></td><td>Resolved:<br>October 03, 2019 <br>10:00 AM PT<br><br>Opened:<br>September 30, 2019 <br>06:26 PM PT</td></tr>
+      </table>
+      "
+
 - title: August 2019
 - items:
   - type: markdown
