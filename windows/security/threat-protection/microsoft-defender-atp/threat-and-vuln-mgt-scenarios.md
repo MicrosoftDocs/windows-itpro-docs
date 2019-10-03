@@ -25,11 +25,6 @@ ms.topic: article
 Ensure that your machines:
 - Are onboarded to Microsoft Defender Advanced Threat Protection
 - Run with Windows 10 1709 (Fall Creators Update) or later
-- Download the following set of optional security updates and deploy them in your network to boost your vulnerability detection rates:
--- KB 4512941
--- KB 4516077
--- KB 4516045
--- KB 4516071
 
 >[!NOTE]
 >Threat & Vulnerability Management can also scan machines that run on Windows 7 and Windows Server 2019 operating systems and detects vulnerabilities addressed in patch Tuesday.
