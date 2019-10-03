@@ -1,6 +1,6 @@
 --- 
 layout: HubPage
-hide_bc: true
+hide_bc: false
 description: Windows 10 deployment resources and documentation for admins & IT professionals
 ms.author: greglin
 author: greg-lindsay

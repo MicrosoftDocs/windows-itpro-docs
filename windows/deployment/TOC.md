@@ -21,8 +21,7 @@
 ### [Resolution procedures](upgrade/resolution-procedures.md)
 ### [Submit Windows 10 upgrade errors](upgrade/submit-errors.md)
 
-## Deploy Windows 10
-### [Documentation and resources](deploy.md)
+## [Deploy Windows 10](deploy.md)
 
 ## Update Windows 10
 ### [Update Windows 10 in enterprise deployments](update/index.md)
