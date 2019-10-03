@@ -1,47 +1,212 @@
----
-title: Deploy Windows 10 (Windows 10)
-description: Deploying Windows 10 for IT professionals.
-ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
-ms.reviewer: 
-manager: laurawi
-ms.audience: itproauthor: greg-lindsay
+--- 
+layout: HubPage
+hide_bc: true
+description: Windows 10 deployment resources and documentation for admins & IT professionals
+ms.author: greglin
+author: greg-lindsay
+ms.topic: hub-page
+keywords: Windows 10 Enterprise, deploy, plan, test
+localization_priority: Normal
+audience: itpro
 ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.localizationpriority: medium
-ms.date: 11/06/2018
-audience: itproauthor: greg-lindsay
-ms.topic: article
+title: Windows 10 deployment resources and documentation for admins & IT professionals
+description: Windows 10 deployment resources and documentation for admins & IT professionals
 ---
-
-# Deploy Windows 10
-
-Windows 10 upgrade options are discussed and information is provided about planning, testing, and managing your production deployment. Procedures are provided to help you with a new deployment of the Windows 10 operating system, or to upgrade from a previous version of Windows to Windows 10. The following sections and topics are available.
-
-
-|Topic |Description |
-|------|------------|
-|[Overview of Windows Autopilot](windows-autopilot/windows-autopilot.md) |This topic provides an overview of Windows Autopilot deployment, a new zero-touch method for deploying Windows 10 in the enterprise. |
-|[Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md) |This topic provides information about support for upgrading directly to Windows 10 from a previous operating system. |
-|[Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md) |This topic provides information about support for upgrading from one edition of Windows 10 to another. |
-|[Windows 10 volume license media](windows-10-media.md) |This topic provides information about updates to volume licensing media in the current version of Windows 10. |
-|[Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md) |With Upgrade Readiness, enterprises now have the tools to plan and manage the upgrade process end to end, allowing them to adopt new Windows releases more quickly. With Windows diagnostic data enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft. The Upgrade Readiness workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded. | 
-|[Windows 10 deployment test lab](windows-10-poc.md) |This guide contains instructions to configure a proof of concept (PoC) environment requiring a minimum amount of resources. The guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, additional guides are provided to  deploy Windows 10 in the test lab using [Microsoft Deployment Toolkit](windows-10-poc-mdt.md) or [System Center Configuration Manager](windows-10-poc-sc-config-mgr.md). |
-|[Plan for Windows 10 deployment](planning/index.md) | This section describes Windows 10 deployment considerations and provides information to assist in Windows 10 deployment planning. |
-|[Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md) |This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT). |
-|[Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) |If you have Microsoft System Center 2012 R2 Configuration Manager in your environment, you will most likely want to use it to deploy Windows 10. This topic will show you how to set up Configuration Manager for operating system deployment and how to integrate Configuration Manager with the Microsoft Deployment Toolkit (MDT) or. |
-|[Windows 10 deployment tools](windows-10-deployment-tools-reference.md) |Learn about available tools to deploy Windows 10, such as the Windows ADK, DISM, USMT, WDS, MDT, Windows PE and more. |
-|[How to install fonts that are missing after upgrading to Windows 10](windows-10-missing-fonts.md)|Windows 10 introduced changes to the fonts that are included in the image by default. Learn how to install additional fonts from **Optional features** after you install Windows 10 or upgrade from a previous version.|
-
-## Related topics
-
-[Modern Destop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home)
-
- 
-
- 
-
-
-
-
-
+<div id="main" class="v2">
+    <div class="container">
+        <h1>Windows 10 deployment resources and documentation</h1>
+        <P>Learn how to test, plan, and deploy Windows 10 in your organization.</p>
+        <P></p>
+        <ul class="pivots">
+            <li>
+                <a href="#home"></a>
+                <ul id="home">
+                    <li>
+                        <a href="#home-all"></a>
+                        <ul id="home-all" class="cardsF">
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/office/media/icons/blocks-blue.svg" alt="Building blocks" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Explore</h3>
+                                                <P><a href="microsoft-365-overview.md" target="_blank">Overview</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/Enterprise/microsoft-cloud-it-architecture-resources" target="_blank">Architecture models</a></p>
+                                                <P><a href="http://Microsoft365.com/it" target="_blank">Microsoft 365 for IT</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/office/media/icons/deploy-blue.svg" alt="Deploy arrow" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Deploy</h3>
+                                                <P><a href="https://www.microsoft.com/fasttrack/microsoft-365" target="_blank">FastTrack</a></p>
+                                                <P><a href="deploy-microsoft-365-enterprise.md" target="_blank">Deployment guide</a></p>
+                                                <P><a href="https://aka.ms/howtoshift" target="_blank">Modern Desktop deployment</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/office/media/icons/security-blue.svg" alt="A shield with an exclamation mark" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Manage security &amp; compliance</h3>
+                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Compliance solutions</a></p>
+                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 Security &amp; Compliance</a></p>
+                                                <P><a href="microsoft-365-policies-configurations.md" target="_blank">Identity &amp; device access</a></p>
+                                                <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">Windows Defender ATP</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg" alt="Graduation cap" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Train your admins & users</h3>
+                                                <P><a href="https://docs.microsoft.com/learn/browse/?products=m365" target="_blank">Microsoft 365</a></p>
+                                                <P><a href="https://support.office.com/office-training-center" target="_blank">Office 365</a></p>
+                                                <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done" target="_blank">Intune &amp; Company Portal app</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/media/logos/logo_Office.svg" alt="Office logo" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Manage Office 365</h3>
+                                                <P><a href="https://docs.microsoft.com/office365/enterprise/" target="_blank">Office 365 Enterprise</a></p>
+                                                <P><a href="https://support.office.com/office365admin" target="_blank">Office 365 Business</a></p>
+                                                <P><a href="https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus" target="_blank">Office 365 ProPlus</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cardSize">
+                                    <div class="cardPadding">
+                                        <div class="card">
+                                            <div class="cardImageOuter">
+                                                <div class="cardImage">
+                                                    <img src="https://docs.microsoft.com/office/media/icons/lock-protected-blue.svg" alt="Lock protected" />
+                                                </div>
+                                            </div>
+                                            <div class="cardText">
+                                                <h3>Manage Enterprise Mobility + Security</h3>
+                                                <P><a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security" target="_blank">Microsoft Cloud App Security</a></p>
+                                                <P><a href="https://docs.microsoft.com/intune/index" target="_blank">Microsoft Intune</a></p>                              <P><a href="https://docs.microsoft.com/azure/active-directory" target="_blank">Azure Active Directory</a></p>
+                                                <P><a href="https://docs.microsoft.com/azure/information-protection/" target="_blank">Azure Information Protection</a></p>
+                                                <P><a href="https://docs.microsoft.com/azure-advanced-threat-protection/" target="_blank">Azure Advanced Threat Protection</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="fullSpan">
+                              <hr />
+                              <br>
+                              <ul class="cardsF panelContent singlePanelContent" style="display:flex!important;">
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardImageOuter">
+                                                        <div class="cardImage">
+                                                            <img src="https://docs.microsoft.com/office/media/icons/developer-blue.svg" alt="Code, developer" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="cardText">
+                                                        <h3>Develop for Microsoft 365</h3>
+                                                        <P><a href="https://developer.microsoft.com/office" target="_blank">Office 365 Dev Center</a></p>
+                                                        <P><a href="https://developer.microsoft.com/windows/enterprise" target="_blank">Windows Dev Center</a></p>
+                                                        <P><a href="https://developer.microsoft.com/graph" target="_blank">Microsoft Graph</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardImageOuter">
+                                                        <div class="cardImage">
+                                                            <img src="https://docs.microsoft.com/office/media/icons/caret-right-blue.svg" alt="More arrow" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="cardText">
+                                                        <h3>Other Microsoft 365 products</h3>
+                                                        <P><a href="https://docs.microsoft.com/microsoft-365/business/" target="_blank">Microsoft 365 Business</a></p>
+                                                        <P><a href="https://docs.microsoft.com/education/" target="_blank">Microsoft 365 Education</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="cardSize">
+                                            <div class="cardPadding">
+                                                <div class="card">
+                                                    <div class="cardImageOuter">
+                                                        <div class="cardImage">
+                                                            <img src="https://docs.microsoft.com/office/media/icons/chat.svg" alt="Chat" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="cardText">
+                                                        <h3>Need support?</h3>
+                                                        <P><a href="https://azure.microsoft.com/support/options/" target="_blank">Azure</a></p>
+                                                        <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b" target="_blank">Office 365</a></p>
+                                                        <P><a href="http://support.microsoft.com/products/windows" target="_blank">Windows 10</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                              </ul>
+                            </li>
+                       </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
