@@ -30,7 +30,6 @@ ms.date: 07/14/2019
 | --- | --- |
 | [Get started with HoloLens](hololens1-setup.md) | Set up HoloLens for the first time.  |
 | [Deploy HoloLens in a commercial environment](hololens-requirements.md) | Configure HoloLens for scale enterprise deployment and ongoing device management.  |
-| [Install and manage applications on HoloLens](hololens-install-apps.md) |Install and manage important applications on HoloLens at scale.  |
 | [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary.  |
 | [Get support](https://support.microsoft.com/products/hololens) |Connect with Microsoft support resources for HoloLens in enterprise.  |
 
