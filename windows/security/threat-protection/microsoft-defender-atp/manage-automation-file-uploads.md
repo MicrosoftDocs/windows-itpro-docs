@@ -45,5 +45,4 @@ For example, if you add *exe* and *bat* as file or attachment extension names, t
   
 
 ## Related topics
-- [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list.md)
 - [Manage automation folder exclusions](manage-automation-folder-exclusions.md)
