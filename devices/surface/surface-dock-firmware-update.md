@@ -48,6 +48,10 @@ You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firm
 
 For more information, refer to [Command line options](https://docs.microsoft.com/windows/win32/msi/command-line-options) documentation.
 
+> [!IMPORTANT]
+> if you want to keep your surface dock updated please follow the options [here](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock).
+
+
 ## How to verify completion of firmware update
 
 Surface dock firmware consists of two components:
