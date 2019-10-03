@@ -288,8 +288,6 @@ The OMA-URI reference for the above settings:
 
 With update to the BitLocker Policy CSP, starting with Windows version 1809 and above, the endpoint protection policy can enable silent BitLocker encryption on the end device even if the device is non-HSTI compliant.
 
-[Back to list](#list)
-
 ## Verifying that BitLocker is operating correctly
 
 ![](./images/4509203_en_1.png)

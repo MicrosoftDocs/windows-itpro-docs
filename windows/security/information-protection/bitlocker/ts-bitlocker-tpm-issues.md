@@ -69,9 +69,7 @@ To clear / reset the TPM:
 
    You will be prompted to restart the computer. During the restart, you might be prompted by the UEFI to press a button to confirm that you wish to clear the TPM. After the PC restarts, your TPM will be automatically prepared for use by Windows 10.  
 
-[Back to list](#list)
-
-## <a id="scenario-2"></a>Loading the management console failed. The device that is required by the cryptographic provider is not ready for use
+## Loading the management console failed. The device that is required by the cryptographic provider is not ready for use
 
 Reference: [https://internal.support.services.microsoft.com/help/4313961](https://internal.support.services.microsoft.com/help/4313961)
 
