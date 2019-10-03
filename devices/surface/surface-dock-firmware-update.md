@@ -74,7 +74,6 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 
 ## Event logging
 
-
 **Table 1. Event logging for Surface Dock Firmware Update**
 
 | Log                              | Location                               | Notes                                                                                                                                                                                                         |
