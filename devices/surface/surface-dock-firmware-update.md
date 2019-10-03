@@ -36,7 +36,6 @@ If preferred, you can manually complete the update as follows:
 - Reconnect your Surface Dock for 2 minutes and then disconnect it from your device. The DisplayPort firmware update will be installed while the hardware is disconnected. The LED in the Ethernet port of the dock will blink while the update is in progress. Please wait until the LED stops blinking before you unplug your Surface Dock from power.
 
 > [!NOTE]
->
 > - Manually installing the MSI file may prompt you to restart Surface; however, restarting is optional and not required.
 >- You will need to disconnect and reconnect the dock twice before the update fully completes.
 
@@ -47,6 +46,9 @@ You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firm
 - **Msiexec.exe /i <name of msi> /quiet /norestart**
 
 For more information, refer to [Command line options](https://docs.microsoft.com/windows/win32/msi/command-line-options) documentation.
+
+> [!IMPORTANT]
+> if you want to keep your surface dock updated please follow the options [here](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock).
 
 ## How to verify completion of firmware update
 
