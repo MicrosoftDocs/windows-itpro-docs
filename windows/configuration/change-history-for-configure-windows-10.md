@@ -126,7 +126,7 @@ New or changed topic | Description
 
 New or changed topic | Description
 --- | ---
-[Windows 10, version 1709 basic level Windows diagnostic events and fields](https://docs.microsoft.com/en-us/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1709) and [Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md) | Added events and fields that were added in the March update.
+[Windows 10, version 1709 basic level Windows diagnostic events and fields](https://docs.microsoft.com/en-us/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1709) and [Windows 10, version 1703 basic level Windows diagnostic events and fields](https://docs.microsoft.com/en-us/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703) | Added events and fields that were added in the March update.
 Set up a kiosk on Windows 10 Pro, Enterprise, or Education | Renamed it **Set up a kiosk or digital signage on Windows 10 Pro, Enterprise, or Education** and reorganized the information to make the choices clearer.
 
 
