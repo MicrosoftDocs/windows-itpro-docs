@@ -60,6 +60,6 @@ Added comments instantly appear on the pane.
 
 
 ## Related topics
-- [Incidents queue](incidents-queue.md)
+- [Incidents queue](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue)
 - [View and organize the Incidents queue](view-incidents-queue.md)
 - [Investigate incidents](investigate-incidents.md)
