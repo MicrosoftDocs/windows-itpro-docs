@@ -5863,12 +5863,12 @@
 },
 {
 "source_path": "education/windows/switch-to-pro-education.md",
-"redirect_url": "/education/windows/change-to-pro-education",
-"redirect_document_id": true
+"redirect_url": "https://docs.microsoft.com/education/windows/change-to-pro-education",
+"redirect_document_id": false
 },
 {
     "source_path": "education/windows/swithc-to-pro-de.md",
-    "redirect_url": "/education/windows/switch-to-pro-education",
+    "redirect_url": "https://docs.microsoft.com/education/windows/switch-to-pro-education",
     "redirect_document_id": false
     },
 {
@@ -5933,22 +5933,22 @@
 },
 {
 "source_path": "devices/surface/surface-diagnostic-toolkit.md",
-"redirect_url": "/surface/index",
+"redirect_url": "https://docs.microsoft.com/surface/index",
 "redirect_document_id": true
 },
 {
 "source_path": "devices/surface/manage-surface-dock-firmware-updates.md",
-"redirect_url": "devices/surface/update",
+"redirect_url": "https://docs.microsoft.com/surface/indexdevices/surface/update",
 "redirect_document_id": true   
 },
 {
 "source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
-"redirect_url": "/surface-hub/finishing-your-surface-hub-meeting",
+"redirect_url": "https://docs.microsoft.com/surface-hub/finishing-your-surface-hub-meeting",
 "redirect_document_id": true
 },
 {
 "source_path": "devices/hololens/hololens-microsoft-layout-app.md",
-"redirect_url": "/hololens/hololens-microsoft-dynamics-365-layout-app",
+"redirect_url": "https://docs.microsoft.com/hololens/hololens-microsoft-dynamics-365-layout-app",
 "redirect_document_id": true
 },
 {
@@ -5968,12 +5968,12 @@
 },
 {
 "source_path": "devices/surface-hub/provisioning-packages-for-certificates-surface-hub.md",
-"redirect_url": "/surface-hub/provisioning-packages-for-surface-hub",
+"redirect_url": "https://docs.microsoft.com/surface-hub/provisioning-packages-for-surface-hub",
 "redirect_document_id": true
 },
 {
 "source_path": "devices/surface-hub/manage-settings-with-local-admin-account-surface-hub.md",
-"redirect_url": "/surface-hub/admin-group-management-for-surface-hub",
+"redirect_url": "https://docs.microsoft.com/surface-hub/admin-group-management-for-surface-hub",
 "redirect_document_id": true
 },
 {
@@ -5983,7 +5983,7 @@
 },
 {
 "source_path": "devices/surface-hub/intro-to-surface-hub.md",
-"redirect_url": "/surface-hub/index",
+"redirect_url": "https://docs.microsoft.com/surface-hub/index",
 "redirect_document_id": false
 },
 {
