@@ -52,8 +52,8 @@ threatFamilyName | string | Threat family.
 title | string | Alert title.
 description | String | Description of the threat, identified by the alert.
 alertCreationTime | DateTimeOffset | The date and time (in UTC) the alert was created.
-lastEventTime | DateTimeOffset | The last occurance of the event that triggered the alert on the same machine.
-firstEventTime | DateTimeOffset | The first occurance of the event that triggered the alert on that machine.
+lastEventTime | DateTimeOffset | The last occurrence of the event that triggered the alert on the same machine.
+firstEventTime | DateTimeOffset | The first occurrence of the event that triggered the alert on that machine.
 resolvedTime | DateTimeOffset | The date and time in which the status of the alert was changed to 'Resolved'.
 machineId | String | ID of a [machine](machine.md) entity that is associated with the alert.
 
