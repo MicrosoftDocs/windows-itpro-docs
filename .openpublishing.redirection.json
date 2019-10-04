@@ -5843,7 +5843,7 @@
 },
 {
 "source_path": "devices/surface/surface-device-compatibility-with-windows-10-ltsb.md",
-"redirect_url": "/devices/surface/surface-device-compatibility-with-windows-10-ltsc",
+"redirect_url": "https://docs.microsoft.com/surface/surface-device-compatibility-with-windows-10-ltsc",
 "redirect_document_id": true
 },
 {
@@ -5858,7 +5858,7 @@
 },
 {
 "source_path": "education/windows/windows-10-pro-to-pro-edu-upgrade.md",
-"redirect_url": "/education/windows/switch-to-pro-education",
+"redirect_url": "https://docs.microsoft.com/education/windows/change-to-pro-education",
 "redirect_document_id": false
 },
 {
