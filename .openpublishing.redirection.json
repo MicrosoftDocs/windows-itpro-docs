@@ -3228,147 +3228,147 @@
 },
 {
 "source_path": "windows/device-security/auditing/audit-kernel-object.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-logoff.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-logoff",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-logon.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-mpssvc-rule-level-policy-change.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-mpssvc-rule-level-policy-change",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-network-policy-server.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-non-sensitive-privilege-use.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-non-sensitive-privilege-use",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-other-account-logon-events.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-other-account-management-events.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-other-account-management-events",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-other-logonlogoff-events.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-other-object-access-events.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-other-object-access-events",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-other-policy-change-events.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-other-privilege-use-events.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-other-privilege-use-events",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-other-system-events.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-pnp-activity.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-pnp-activity",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-process-creation.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-process-termination.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-process-termination",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-registry.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-removable-storage.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-removable-storage",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-rpc-events.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-sam.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-sam",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-security-group-management.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-state-change.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-state-change",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-security-system-extension.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-sensitive-privilege-use.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-sensitive-privilege-use",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-special-logon.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-system-integrity.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-system-integrity",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-user-account-management.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-user-device-claims.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-user-device-claims",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/basic-audit-account-logon-events.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/basic-audit-account-management.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/basic-audit-account-management",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/basic-audit-directory-service-access.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/basic-audit-logon-events.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/basic-audit-logon-events",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/basic-audit-object-access.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/basic-audit-policy-change.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/basic-audit-policy-change",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/basic-audit-privilege-use.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/basic-audit-process-tracking.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/basic-audit-process-tracking",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/basic-audit-system-events.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/basic-security-audit-policies.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/basic-security-audit-policies",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/basic-security-audit-policy-settings.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/create-a-basic-audit-policy-settings-for-an-event-category.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/create-a-basic-audit-policy-settings-for-an-event-category",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/event-1100.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-1102.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-1102",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/event-1104.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-1105.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-1105",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/event-1108.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4608.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4608",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/event-4610.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4611.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4611",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/event-4612.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4614.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4614",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/event-4615.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4616.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4616",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/event-4618.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4621.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4621",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/event-4622.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4624.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4624",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/event-4625.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4626.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4626",
 "redirect_document_id": true
 },
 {
