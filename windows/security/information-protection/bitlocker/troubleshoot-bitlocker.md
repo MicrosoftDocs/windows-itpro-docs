@@ -72,11 +72,11 @@ If the information that you have examined so far indicates a specific problem (f
 
 Resolving issues that do not have obvious causes depends on exactly which components are involved and what behavior you see. The information you have gathered can help you narrow down the areas to investigate.
 
-- If you are working with a device that is managed by Microsoft Intune, see [Enforcing BitLocker policies by using Intune&mdash;known issues](ts-bitlocker-intune-issues.md).
-- If BitLocker does not encrypt a drive and you note errors or events that are related to the TPM, see [BitLocker and TPM&mdash;known issues](ts-bitlocker-tpm-issues.md).
-- If BitLocker does not start or cannot encrypt a drive, see [BitLocker cannot encrypt a drive&mdash;known issues](ts-bitlocker-cannot-encrypt-issues.md).
-- If BitLocker Network Unlock does not behave as expected, see [BitLocker Network Unlock&mdash;known issues](ts-bitlocker-network-unlock-issues.md).
-- If BitLocker does not behave as expected when you recover an encrypted drive, or if you did not expect BitLocker to recover the drive, see [BitLocker recovery&mdash;known issues](ts-bitlocker-recovery-issues.md).
-- If BitLocker does not behave as expected or the encrypted drive does not behave as expected, see [BitLocker configuration&mdash;known issues](ts-bitlocker-config-issues.md).
+- If you are working with a device that is managed by Microsoft Intune, see [Enforcing BitLocker policies by using Intune: known issues](ts-bitlocker-intune-issues.md).
+- If BitLocker does not encrypt a drive and you note errors or events that are related to the TPM, see [BitLocker and TPM: known issues](ts-bitlocker-tpm-issues.md).
+- If BitLocker does not start or cannot encrypt a drive, see [BitLocker cannot encrypt a drive: known issues](ts-bitlocker-cannot-encrypt-issues.md).
+- If BitLocker Network Unlock does not behave as expected, see [BitLocker Network Unlock: known issues](ts-bitlocker-network-unlock-issues.md).
+- If BitLocker does not behave as expected when you recover an encrypted drive, or if you did not expect BitLocker to recover the drive, see [BitLocker recovery: known issues](ts-bitlocker-recovery-issues.md).
+- If BitLocker does not behave as expected or the encrypted drive does not behave as expected, see [BitLocker configuration: known issues](ts-bitlocker-config-issues.md).
 
 If you decide to contact Microsoft Support to resolve your issue, remember to keep the information that you have gathered handy.
