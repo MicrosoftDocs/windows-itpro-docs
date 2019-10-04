@@ -5,7 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.author: greglin
 ms.date: 11/16/2018
 ms.reviewer: 
@@ -20,7 +21,7 @@ Each release of Windows 10 adds new features and functionality; we also occasion
 
 > [!TIP]
 > - You can get early access to Windows 10 builds by joining the [Windows Insider program](https://insider.windows.com) - this is a great way to test feature changes.
-> - Have questions about other releases? Check out the information for [Windows 10, version 1803](windows-10-1803-removed-features.md), [Windows 10, version 1709](windows-10-fall-creators-deprecation.md), and [Windows 10, version 1703](windows-10-creators-update-deprecation.md).
+> - Have questions about other releases? Check out the information for [Features removed or planned for replacement starting with Windows 10, version 1809](https://docs.microsoft.com/en-us/windows/deployment/planning/windows-10-1809-removed-features), [Features removed or planned for replacement starting with Windows Server, version 1709](https://docs.microsoft.com/en-us/windows-server/get-started/removed-features-1709), and [Features that are removed or deprecated in Windows 10, version 1703](https://docs.microsoft.com/en-us/windows/deployment/planning/windows-10-1703-removed-features).
 
 **The list is subject to change and might not include every affected feature or functionality.** 
 
