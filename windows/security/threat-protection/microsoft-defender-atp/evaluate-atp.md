@@ -45,4 +45,4 @@ Next gen protections help detect and block the latest threats.
 
 ## See Also
 
-[Get started with Microsoft Defender Advanced Threat Protection](get-started.md)
+[Microsoft Defender Advanced Threat Protection overview](microsoft-defender-advanced-threat-protection.md)

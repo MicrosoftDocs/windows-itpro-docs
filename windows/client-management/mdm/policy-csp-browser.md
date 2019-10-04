@@ -3019,8 +3019,6 @@ Most restricted value: 0
 > [!IMPORTANT]
 > This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the [Microsoft browser extension policy](https://docs.microsoft.com/legal/windows/agreements/microsoft-browser-extension-policy).
 
-Most restricted value:  0
-
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -3033,8 +3031,8 @@ ADMX Info:
 <!--SupportedValues-->
 Supported values:
 
-- 0 – Lock down Start pages configured in either the ConfigureOpenEdgeWith policy and HomePages policy.
-- 1 (default) – Unlocked. Users can make changes to all configured start pages.<p><p>When you enable this policy and define a set of URLs in the HomePages policy, Microsoft Edge uses the URLs defined in the ConfigureOpenEdgeWith policy.
+- 0 (default) – Lock down Start pages configured in either the ConfigureOpenEdgeWith policy and HomePages policy.
+- 1 – Unlocked. Users can make changes to all configured start pages.<p><p>When you enable this policy and define a set of URLs in the HomePages policy, Microsoft Edge uses the URLs defined in the ConfigureOpenEdgeWith policy.
 
 Most restricted value: 0
 <!--/SupportedValues-->
