@@ -81,7 +81,7 @@ To verify that this issue has occurred, follow these steps:
 
    ![](./images/ts-bitlocker-usb-sddl.png)
 
-   If you see NT AUTHORITY\INTERACTIVE (as highlighted), in the output of this command, this is the cause of the problem. Under normal conditions, the output should resemble the following:
+   If you see NT AUTHORITY\INTERACTIVE (as highlighted), in the output of this command, this is the cause of the problem. Under typical conditions, the output should resemble the following:
 
    ![default](./images/ts-bitlocker-usb-default-sddl.png)
 
