@@ -22,7 +22,7 @@ This article includes:
 - Instructions for remote device management
 - Options for application deployment
 
-This guide assumes basic familiarity with HoloLens. Follow the [get started guide](./hololens-setup.md) to set up HoloLens for the first time.
+This guide assumes basic familiarity with HoloLens. Follow the [get started guide](hololens1-setup.md) to set up HoloLens for the first time.
 
 ## Infrastructure for managing HoloLens
 
