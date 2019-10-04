@@ -1438,7 +1438,7 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-atp/manage-alerts-windows-defender-advanced-threat-protection.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/manage-alerts-windows-defender-advanced-threat-protection.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/manage-alerts-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
 },
 {
@@ -1814,7 +1814,7 @@
 {
 "source_path": "windows/keep-secure/troubleshoot-windows-defender-in-windows-10.md",
 "redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/troubleshoot-windows-defender-advanced-threat-protection.md",
@@ -2409,7 +2409,7 @@
 {
 "source_path": "windows/device-security/security-policy-settings/dcom-machine-launch-restrictions-in-security-descriptor-definition-language-sddl-syntax.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/dcom-machine-launch-restrictions-in-security-descriptor-definition-language-sddl-syntax",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/device-security/security-policy-settings/debug-programs.md",
@@ -3143,87 +3143,87 @@
 },
 {
 "source_path": "windows/device-security/auditing/advanced-security-auditing-faq.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/appendix-a-security-monitoring-recommendations-for-many-audit-events.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-account-lockout.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-application-generated.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-application-generated",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-application-group-management.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-audit-policy-change.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-audit-policy-change",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-authentication-policy-change.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-authorization-policy-change.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-authorization-policy-change",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-central-access-policy-staging.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-certification-services.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-certification-services",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-computer-account-management.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-credential-validation.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-credential-validation",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-detailed-directory-service-replication.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-detailed-file-share.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-detailed-file-share",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-directory-service-access.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-directory-service-changes.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-directory-service-changes",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-directory-service-replication.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-distribution-group-management.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-distribution-group-management",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-dpapi-activity.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-file-share.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-file-share",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-file-system.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-filtering-platform-packet-drop.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-policy-change.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-policy-change",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-group-membership.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-handle-manipulation.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-handle-manipulation",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-ipsec-driver.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-ipsec-extended-mode.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-ipsec-extended-mode",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-ipsec-main-mode.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-ipsec-quick-mode.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-ipsec-quick-mode",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/audit-kerberos-authentication-service.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-kerberos-service-ticket-operations.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-kerberos-service-ticket-operations",
 "redirect_document_id": true
 },
 {
