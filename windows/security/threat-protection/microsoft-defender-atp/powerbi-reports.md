@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
-ms.author: macaparas
+ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -172,7 +172,7 @@ After completing the steps in the Before you begin section, you can proceed with
 
 
 ## Mashup Microsoft Defender ATP data with other data sources
-You can use Power BI Desktop to analyse data from Microsoft Defender ATP and mash that data up with other data sources to gain better security perspective in your organization.
+You can use Power BI Desktop to analyze data from Microsoft Defender ATP and mash that data up with other data sources to gain better security perspective in your organization.
 
 1. In Power BI Desktop, in the Home ribbon, click **Get data** and search for **Microsoft Defender Advanced Threat Protection**.
 

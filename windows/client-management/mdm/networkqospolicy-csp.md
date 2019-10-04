@@ -106,3 +106,10 @@ The following diagram shows the NetworkQoSPolicy configuration service provider 
 
 <p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
 
+
+## Related topics
+
+Read more about the XML DDF structure to create this policy by following the links below:
+
+- [More Information about DDF and structure](networkqospolicy-ddf.md)
+- [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)
