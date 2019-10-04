@@ -28,8 +28,7 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Plan</h3>
-                        <p><a href="windows-autopilot-and-surface-devices.md">Autopilot and Surface devices</a></p>
-                        <p><a href="considerations-for-surface-and-system-center-configuration-manager.md">Surface and SCCM considerations</a></p>
+                         <p><a href="considerations-for-surface-and-system-center-configuration-manager.md">Surface and SCCM considerations</a></p>
                          <p><a href="deploy-surface-app-with-windows-store-for-business.md">Deploy Surface app with Microsoft Store for Business</a></p>
                     </div>
                 </div>
@@ -47,9 +46,9 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Deploy</h3>
+                        <p><a href="windows-autopilot-and-surface-devices.md">Autopilot and Surface devices</a></p>
+                        <p><a href="surface-pro-arm-app-management.md">Deploying, managing, and servicing Surface Pro X</a></p>
                         <p><a href="deploy-the-latest-firmware-and-drivers-for-surface-devices.md">Deploy the latest firmware and drivers</a></p>
-                        <p><a href="customize-the-oobe-for-surface-deployments.md">Customize start-up experience</a></p>
-                        <p><a href="surface-system-sku-reference.md">Surface SKU reference</a></p>
                     </div>
                 </div>
             </div>
