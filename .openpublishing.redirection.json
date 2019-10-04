@@ -6438,7 +6438,7 @@
 },
 {
 "source_path": "windows/keep-secure/ad-ds-schema-extensions-to-support-tpm-backup.md",
-"redirect_url": "https://technet.microsoft.com/library/jj635854.aspx",
+"redirect_url": "https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj635854(v=ws.11)",
 "redirect_document_id": true
 },
 {
@@ -6508,12 +6508,12 @@
 },
 {
 "source_path": "windows/manage/app-inventory-managemement-windows-store-for-business.md",
-"redirect_url": "/microsoft-store/app-inventory-management-windows-store-for-business#manage-apps-in-your-inventory",
+"redirect_url": "https://docs.microsoft.com/microsoft-store/app-inventory-management-windows-store-for-business",
 "redirect_document_id": true
 },
 {
 "source_path": "store-for-business/app-inventory-management-windows-store-for-business.md",
-"redirect_url": "/microsoft-store/app-inventory-management-microsoft-store-for-business",
+"redirect_url": "https://docs.microsoft.com/microsoft-store/app-inventory-management-microsoft-store-for-business",
 "redirect_document_id": false
 },
 {
@@ -6573,12 +6573,12 @@
 },
 {
 "source_path": "windows/manage/manage-inventory-windows-store-for-business.md",
-"redirect_url": "/microsoft-store/app-inventory-management-windows-store-for-business",
+"redirect_url": "https://docs.microsoft.com/microsoft-store/app-inventory-management-windows-store-for-business",
 "redirect_document_id": true
 },
 {
 "source_path": "store-for-business/app-inventory-managemement-windows-store-for-business.md",
-"redirect_url": "/microsoft-store/app-inventory-management-microsoft-store-for-business",
+"redirect_url": "https://docs.microsoft.com/microsoft-store/app-inventory-management-microsoft-store-for-business",
 "redirect_document_id": true
 },
 {
@@ -6963,7 +6963,7 @@
 },
 {
 "source_path": "windows/plan/windows-10-guidance-for-education-environments.md",
-"redirect_url": "/edu/windows/index",
+"redirect_url": "https://docs.microsoft.com/education/windows",
 "redirect_document_id": true
 },
 {
