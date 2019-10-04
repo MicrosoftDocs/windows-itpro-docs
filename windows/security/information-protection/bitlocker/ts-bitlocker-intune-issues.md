@@ -26,9 +26,9 @@ To start narrowing down the cause of the problem, review the event logs as descr
 - [Event ID 853: Error: BitLocker Drive Encryption detected bootable media (CD or DVD) in the computer](#issue-2)
 - [Event ID 854: WinRE not configured](#issue-3)
 - [Event ID 851: Contact manufacturer for BIOS upgrade](#issue-4)
-- [Error message: Conflicting Group Policy settings for recovery options on operating system drives](#issue-5)
 - [Error message: The UEFI variable 'SecureBoot' could not be read](#issue-6)
 - [Event ID 846, 778, and 851: Error 0x80072f9a](#issue-7)
+- [Error message: Conflicting Group Policy settings for recovery options on operating system drives](#issue-5)
 
 If you do not have a clear trail of events or error messages to follow, other areas to investigate include the following:
 
@@ -153,67 +153,65 @@ The device must have Unified Extensible Firmware Interface (UEFI) BIOS. Silent B
 
 ### Resolution
 
-To verify the BIOS mode, use msinfo32. To do this, follow these steps:
+To verify the BIOS mode, use the System Information app. To do this, follow these steps:
 
-1. 
-
-Check the BIOS mode by using msinfo32.
-
-![](./images/4509198_en_1.png)
-
-You need to enable UEFI BIOS by booting to BIOS if your device supports EFI/UEFI. If your device only supports legacy BIOS, then you are out of luck.
-
-## <a id="issue-5"></a>Error message: Conflicting Group Policy settings for recovery options on operating system drives
-
-You receive a message that resembles the following:
-
-> Error: BitLocker Drive Encryption cannot be applied to this drive because there are conflicting Group Policy settings for recovery options on operating system drives. Storing recovery information to Active Directory Domain Services cannot be required when the generation of recovery passwords is not permitted. Please have your system administrator resolve these policy conflicts before attempting to enable BitLocker…
-
-### Resolution
-
-You need to get rid of the conflicting GPO.
+1. Select **Start**, and in the **Search** box, type **msinfo32**, and then press **Enter**.
+1. Verify that the **BIOS Mode** setting is **UEFI** and not **Legacy**.  
+   ![System Information app, showing the BIOS Mode setting](./images/4509198_en_1.png)
+1. If the **BIOS Mode** setting is **Legacy**, you have to switch the BIOS into **UEFI** or **EFI** mode. The steps for doing this are specific to the device.
+   > [!NOTE]
+   > If the device supports only Legacy mode, you cannot use Intune to manage BitLocker Device Encryption on the device.
 
 ## <a id="issue-6"></a>Error message: The UEFI variable 'SecureBoot' could not be read
 
 You receive a message that resembles the following:
 
-> Error: BitLocker cannot use Secure Boot for integrity because the UEFI variable ‘SecureBoot’ could not be read. A required privilege is not held by the client.
+> **Error:** BitLocker cannot use Secure Boot for integrity because the UEFI variable ‘SecureBoot’ could not be read. A required privilege is not held by the client.
 
 ### Cause
 
-Check to see if the system TPM supports PCR \[7\] and is used by BitLocker/Device Encryption. Run the command **Manage-bde -protectors -get %systemdrive%**.
-
-![](./images/4509199_en_1.png)
-
-If PCR validation profile doesn't show that BitLocker uses Secure Boot for integrity validation (for example, PCR validation profile says PCR 0, 2, 4, 11), this indicates that BitLocker cannot use PCR \[7\] which is a requirement for silent encryption.
-
-![](./images/4509200_en_1.png)
+A Platform Configuration Register (PCR) is a memory location in the TPM. PCR 7, in particular, measures the state of Secure Boot. Silent BitLocker Drive Encryption requires that Secure Boot be turned on.
 
 ### Resolution
 
-Ensure Secure Boot is enabled in UEFI settings. Run **msinfo32** to check:
+### Verify the PCR validation profile of the TPM
 
-![](./images/4509201_en_1.png)
+To verify that PCR 7 is in use, open an elevated Command Prompt window and run the following command:
 
-However if you see something like below, your device does not have support:
+```cmd
+Manage-bde -protectors -get %systemdrive%
+```
 
-![](./images/4509202_en_1.png)
+In the TPM section of the output of this command, verify that the **PCR Validation Profile** setting includes **7**, as follows:
 
+![Output of the manage-bde command](./images/4509199_en_1.png)
+
+If **PCR Validation Profile** doesn't include **7** (for example, the values include **0**, **2**, **4**, **11**, but not **7**), then Secure Boot is not turned on.
+
+![Output of the manage-bde command when PCR 7 is not present](./images/4509200_en_1.png)
+
+#### 2. Verify the Secure Boot State
+
+To verify the Secure Boot State, use the System Information app. To do this, follow these steps:
+
+1. Select **Start**, and in the **Search** box, type **msinfo32**, and then press **Enter**.
+1. Verify that the **Secure Boot State** setting is **On**, as follows:  
+   ![System Information app, showing a supported Secure Boot State](./images/4509201_en_1.png)
+1. If the **Secure Boot State** setting is **Unsupported**, you will not be able to use Silent BitLocker Encryption on this device.
+   ![System Information app, showing a supported Secure Boot State](./images/4509202_en_1.png)
 
 ## <a id="issue-7"></a>Event ID 846, 778, and 851: Error 0x80072f9a
 
-When deploying Intune Policy to encrypt the device and store the recovery key into Azure Active Directory might fail with Error 0x80072f9a on Windows 10 1809, after enabling the option **Allow standard users to enable encryption during Azure AD Join**.
+In this case, you are deploying Intune policy to encrypt a Windows 10, version 1809 device and store the recovery key in Azure Active Directory. As part of the policy configuration, you have enabled the **Allow standard users to enable encryption during Azure AD Join** option.
 
-Checking the event viewer, BitLocker API Log, you will see the following events:
+The policy deployment fails and generates the following events (visible in the **Applications and Services logs\\Microsoft\\Windows\\BitLocker API Log**):
 
 > Event ID:846
 > 
 > Event:
-> 
 > Failed to backup BitLocker Drive Encryption recovery information for volume C: to your Azure AD.
 > 
 > TraceId: {cbac2b6f-1434-4faa-a9c3-597b17c1dfa3}
-> 
 > Error: Unknown HResult Error code: 0x80072f9a
 
 > Event ID:778
@@ -223,40 +221,59 @@ Checking the event viewer, BitLocker API Log, you will see the following events:
 > Event ID: 851
 > 
 > Event:
-> 
 > Failed to enable Silent Encryption.
 > 
 > Error: Unknown HResult Error code: 0x80072f9a.
 
-The issue affects Windows v1809, and this is because the BitLocker MDM policy Refresh fails with an access denied when impersonating the logged on Azure AD user on the PCPKEY file i.e. Private Key for the cert used for Azure AD Communication.
+These events refer to Error code 0x80072f9a.
 
 ### Cause
 
-The logged on user does not have permission to read the private key on the certificate that is generated during joining the Azure AD
+These events indicate that the logged-on user does not have permission to read the private key on the certificate that is generated as part of the provisioning and enrollment process. As a result, the BitLocker MDM policy refresh fails.
+
+The issue affects Windows 10 version 1809.
 
 ### Resolution
 
-In order to resolve this issue please install [kb4497934](https://support.microsoft.com/help/4497934/windows-10-update-kb4497934)
+In order to resolve this issue, install the [May 21, 2019](https://support.microsoft.com/help/4497934/windows-10-update-kb4497934) update.
+
+## <a id="issue-5"></a>Error message: There are conflicting Group Policy settings for recovery options on operating system drives
+
+You receive a message that resembles the following:
+
+> **Error:** BitLocker Drive Encryption cannot be applied to this drive because there are conflicting Group Policy settings for recovery options on operating system drives. Storing recovery information to Active Directory Domain Services cannot be required when the generation of recovery passwords is not permitted. Please have your system administrator resolve these policy conflicts before attempting to enable BitLocker…
+
+### Resolution
+
+To resolve this issue, review your Group Policy Object (GPO) settings for conflicts. For further guidance, see the next section, [Reivew your BitLocker policy configuration](#policy).
+
+For more information about GPOs and BitLocker, see [BitLocker Group Policy Reference](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/ee706521(v=ws.10)?redirectedfrom=MSDN).
 
 ## <a id="policy"></a>Review your BitLocker policy configuration
 
-When troubleshooting BitLocker policy enforcement issues, start by reading the following KB: [Intune: Requirements for automatic BitLocker encryption during AAD join](https://internal.support.services.microsoft.com/en-us/help/4502023)
+For information about using policy with BitLocker and Intune, see the following resources:
 
-[Policy CSP&mdash;BitLocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker)
+- [BitLocker management for enterprises: Managing devices joined to Azure Active Directory](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-management-for-enterprises#managing-devices-joined-to-azure-active-directory)
+- [BitLocker Group Policy Reference](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/ee706521(v=ws.10)?redirectedfrom=MSDN)
+- [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)
+- [Policy CSP &ndash; BitLocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker)
+- [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)
+- [Enable ADMX-backed policies in MDM](https://docs.microsoft.com/windows/client-management/mdm/enable-admx-backed-policies-in-mdm)
+- [gpresult](https://docs.microsoft.com/windows-server/administration/windows-commands/gpresult)
 
+Intune offers three types of enforcement for BitLocker:
 
-BitLocker enforcement on the end device can be of three types:
+- **Automatic** (Enforced when the device joins Azure Active Directory during the provisioning process. This option is available in Windows 10 version 1703 and later.)
+- **Silent** (Endpoint protection policy. This option is available in Windows 10 version 1803 and later.)
+- **Interactive** (Endpoint policy for Windows versions older than Windows 10 version 1803.)
 
-- Automatic (during AADJ for Windows v 1703+) [I sent this in my previous email]
-- Silent (Endpoint protection policy for Windows v 1803+)
-- Interactive (Endpoint policy for pre Windows v 1803)
+If your device runs Windows 10 version 1703 or later, supports Modern Standby (also known as Instant Go) and is HSTI-compliant, joining the device to Azure Active Directory triggers automatic device encryption. A separate endpoint protection policy is not needed to enforce device encryption.
 
-If your device supports modern Standby (Instant Go) and is HSTI compliant, AADJ will trigger automatic device encryption for Windows version 1703 and above. This does not requires the admin to enforce/deploy an endpoint protection policy.
-If your device is HSTI compliant but does not supports modern Standby (Instant Go), you would require an endpoint protection policy to enforce silent BitLocker encryption. Below settings allow for the same.
+If your device is HSTI-compliant but does not support Modern Standby, you have to configure an endpoint protection policy to enforce silent BitLocker Drive Encryption. The settings for this policy should resemble the following:
 
-![](./images/4509186_en_1.png)
+![Intune policy settings](./images/4509186_en_1.png)
 
-The OMA-URI reference for the above settings:
+The OMA-URI references for these settings are the following:
 
 - OMA-URI: **./Device/Vendor/MSFT/BitLocker/RequireDeviceEncryption**  
    Value Type: **Integer**  
@@ -267,39 +284,47 @@ The OMA-URI reference for the above settings:
    Value: **0** (0 = Blocked, 1 = Allowed)  
 
 > [!NOTE]
-> If the setting **Waiting for other disk encryption** is set to **Not configured**, then user receives the toast notification and enabling the encryption would require user interaction to go through the BitLocker activation guide.
-
-![](./images/4509187_en_1.png)
-
-If your device does not supports modern Standby but is HSTI compliant, for pre Windows v 1803, an endpoint protection policy with the above settings will deliver the policy to the device but user will need to manually enable BitLocker encryption by clicking on the toast notification as received and going through the BitLocker activation guide.  
-
-For Autopilot devices, from 1803 and above, automatic device encryption is supported for standard users vide the settings made available in UI with 1901 Intune release as below. System requirement still remains same as above (HSTI compliant and support for modern Standby)
-
-![](./images/4509188_en_1.png)
-
-The OMA-URI reference for the above settings:
-
-- OMA-URI: ./Device/Vendor/MSFT/BitLocker/AllowStandardUserEncryption  
-   Value Type: Integer
-   Value: 1  
+> Because of an update to the BitLocker Policy CSP, if the device uses Windows 10 version 1809 or later, you can use an endpoint protection policy to enforce silent BitLocker Device Encryption even if the device is not HSTI-compliant.
 
 > [!NOTE]
-> This node works in tandem with the **RequireDeviceEncryption** and **AllowWarningForOtherDiskEncryption** node. As such when you have **RequireDeviceEncryption** set to **1**, **AllowStandardUserEncryption** set to **1** and **AllowWarningForOtherDiskEncryption** set to **0**, this allows silent BitLocker encryption for Autopilot devices with standard user profiles.
+> If the setting **Waiting for other disk encryption** is set to **Not configured**, then you need to manually start the BitLocker Drive Encryption wizard.  
+>  
+> ![Notification to manually start encryption](./images/4509187_en_1.png)
 
-With update to the BitLocker Policy CSP, starting with Windows version 1809 and above, the endpoint protection policy can enable silent BitLocker encryption on the end device even if the device is non-HSTI compliant.
+If the device does not support Modern Standby but is HSTI-compliant, and it uses a version of Windows older than Windows 10 version 1803, an endpoint protection policy that has the settings that are described previously delivers the policy configuration to the device. However, Windows then notifies the user to manually enable BitLocker Drive Encryption. To do this, the user selects the notification. This action starts the BitLocker Drive Encryption wizard.  
+
+The Intune 1901 release provides settings that you can use to configure automatic device encryption for Autopilot devices for standard users. The devices must meet the following requirements:
+
+- HSTI compliant
+- Support Modern Standby
+- Use Windows 10 version 1803 or later
+
+![Intune policy setting](./images/4509188_en_1.png)
+
+The OMA-URI references for these settings are the following:
+
+- OMA-URI: **./Device/Vendor/MSFT/BitLocker/AllowStandardUserEncryption**  
+   Value Type: **Integer**
+   Value: **1**  
+
+> [!NOTE]
+> This node works in tandem with the **RequireDeviceEncryption** and **AllowWarningForOtherDiskEncryption** nodes. Because of this, when you set **RequireDeviceEncryption** to **1**, **AllowStandardUserEncryption** to **1**, and **AllowWarningForOtherDiskEncryption** to **0**. Intune can enforce silent BitLocker encryption for Autopilot devices that have standard user profiles.
 
 ## Verifying that BitLocker is operating correctly
+
+During regular operations, BitLocker Drive Encryption generates events such as event ID 796 and event ID 845.
 
 ![](./images/4509203_en_1.png)
 
 ![](./images/4509204_en_1.png)
 
-You can also verify if the BitLocker Recovery Key has been uploaded to Azure by checking the device details from under Azure AD devices section.
+You can also verify if the BitLocker Recovery Key has been uploaded to Azure by checking the device details in the Azure AD Devices section.
 
 ![](./images/4509205_en_1.png)
 
-Registry path to verify the BitLocker policy as delivered to the device: **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device\\BitLocker**
+On the device, check the Registry Editor to verify the policy settings on the device. Verify the entries under the following subkeys:
 
-![](./images/4509206_en_1.png)
+- **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device\\BitLocker**
+- **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device**  
 
-The registry path **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device** will contain all the policy as received/enforced by the MDM
+![Registry subkeys that relate to Intune policy](./images/4509206_en_1.png)
