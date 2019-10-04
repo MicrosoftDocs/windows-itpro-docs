@@ -19,17 +19,17 @@ ms.date: 10/3/2019
 This article describes common issues that can occur that prevent BitLocker from encrypting a drive, and provides guidance for addressing those issues.
 
 > [!NOTE]
-> If you have determined that your BitLocker issue involves the Trusted Platform Module (TPM), see [BitLocker cannot encrypt a drive--known TPM issues](ts-bitlocker-cannot-encrypt-tpm-issues.md).
+> If you have determined that your BitLocker issue involves the Trusted Platform Module (TPM), see [BitLocker cannot encrypt a drive: known TPM issues](ts-bitlocker-cannot-encrypt-tpm-issues.md).
 
-## Error 0x80310059 when you turn on BitLocker encryption on Windows 10 Professional
+## Error 0x80310059: BitLocker Drive Encryption is already performing an operation on this drive
 
-When you turn on BitLocker encryption on a computer that is running Windows 10 Professional, you receive a message that resembles the following:
+When you turn on BitLocker Drive Encryption on a computer that is running Windows 10 Professional, you receive a message that resembles the following:
 
-> ERROR: An error occurred (code 0x80310059):BitLocker Drive Encryption is already performing an operation on this drive. Please complete all operations before continuing.NOTE: If the -on switch has failed to add key protectors or start encryption,you may need to call manage-bde -off before attempting -on again.
+> **ERROR:** An error occurred (code 0x80310059):BitLocker Drive Encryption is already performing an operation on this drive. Please complete all operations before continuing.NOTE: If the -on switch has failed to add key protectors or start encryption,you may need to call manage-bde -off before attempting -on again.
 
 ### Cause
 
-Settings that are controlled by Group Policy Objects (GPOs) may be responsible for this issue.
+This issue may be caused by settings that are controlled by Group Policy Objects (GPOs).
 
 ### Resolution
 
@@ -45,21 +45,19 @@ To resolve this issue, follow these steps:
    - **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE\\OSPlatformValidation\_UEFI**
    - **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE\\PlatformValidation**
 
-1. Exit Registry Editor, and turn on BitLocker encryption again.
+1. Exit Registry Editor, and turn on BitLocker Drive Encryption again.
 
 ## "Access is denied" message when you try to encrypt removable drives
 
-You have a computer that is running Windows 10, version 1607 or version 1709.
-
-You try to encrypt a USB drive by following these steps:
+You have a computer that is running Windows 10, version 1607 or version 1709. You try to encrypt a USB drive by following these steps:
 
 1. In Windows Explorer, right-click the USB drive and select **Turn on BitLocker**.
 1. On the **Choose how you want to unlock this drive** page, select **Use a password to unlock the drive**.
 1. Follow the instructions on the page to enter your password and then re-enter it.
-1. On the **are you ready to encrypt this drive?** page, select **Start encrypting**.
+1. On the **Are you ready to encrypt this drive?** page, select **Start encrypting**.
 1. The **Starting encryption** page displays the message "Access is denied."
 
-You receive this message on any computer that runs Windows 10 version 1607 or version 1709, and with any USB drive.
+You receive this message on any computer that runs Windows 10 version 1607 or version 1709, when using any USB drive.
 
 ### Cause
 
@@ -88,7 +86,7 @@ To verify that this issue has occurred, follow these steps:
    ![default](./images/ts-bitlocker-usb-default-sddl.png)
 
 > [!NOTE]
-> Group Policy Objects that change the security descriptors of services have been known to cause this issue.
+> GPOs that change the security descriptors of services have been known to cause this issue.
 
 ### Resolution
 
