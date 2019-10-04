@@ -7008,7 +7008,7 @@
 },
 {
 "source_path": "windows/whats-new/edge-ie11-whats-new-overview.md",
-"redirect_url": "/microsoft-edge/deploy/enterprise-guidance-using-microsoft-edge-and-ie11",
+"redirect_url": "https://docs.microsoft.com/microsoft-edge/deploy/emie-to-improve-compatibility",
 "redirect_document_id": true
 },
 {
@@ -7053,12 +7053,12 @@
 },
 {
 "source_path": "windows/whats-new/windows-store-for-business-overview.md",
-"redirect_url": "/microsoft-store/windows-store-for-business-overview",
+"redirect_url": "https://docs.microsoft.com/microsoft-store/windows-store-for-business-overview",
 "redirect_document_id": true
 },
 {
 "source_path": "store-for-business/windows-store-for-business-overview.md",
-"redirect_url": "/microsoft-store/microsoft-store-for-business-overview",
+"redirect_url": "https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-overview",
 "redirect_document_id": true
 },
 {
@@ -7864,7 +7864,7 @@
 {
 "source_path": "windows/deploy/troubleshoot-upgrade-readiness.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/upgrade/troubleshoot-upgrade-readiness",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/deploy/understanding-migration-xml-files.md",
@@ -8014,7 +8014,7 @@
 {
 "source_path": "windows/deploy/use-upgrade-readiness-to-manage-windows-upgrades.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/upgrade/use-upgrade-readiness-to-manage-windows-upgrades",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/deploy/use-vamt-in-windows-powershell.md",
