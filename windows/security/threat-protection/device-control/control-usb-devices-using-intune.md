@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 ms.author: dansimp
 author: dansimp
-ms.date: 09/12/2019
+ms.date: 10/04/2019
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
@@ -290,7 +290,7 @@ You can create custom alerts and response actions with the WDATP Connector and t
 
 **Investigate:** Initiate investigations, collect investigation package, and isolate a machine.
 
-**Threat Scanning** on USB devices
+**Threat Scanning** on USB devices.
 
 **Restrict execution of all applications** on the machine except a predefined set
 MDATP connector is one of over 200 pre-defined connectors including Outlook, Teams, Slack, etc. Custom connectors can be built.
@@ -299,6 +299,8 @@ MDATP connector is one of over 200 pre-defined connectors including Outlook, Tea
 **Custom Detection Rules Response Action:**
 Both machine and file level actions can be applied.
 - [More information on Custom Detection Rules Response Actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules)
+
+For information on device control related advance hunting events and examples on how to create custom alerts, see [Advanced hunting updates: USB events, machine-level actions, and schema changes](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Advanced-hunting-updates-USB-events-machine-level-actions-and/ba-p/824152).
 
 ## Respond to threats
 
