@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -28,7 +29,7 @@ ms.topic: article
 > [!TIP]
 > Go to **Advanced features** in the **Settings** page to turn on the preview features.
 > 
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
 
 Understand the security status of your organization, including the status of machines, alerts, and investigations using the Microsoft Defender ATP reporting feature that integrates with Power BI. 
 
@@ -171,7 +172,7 @@ After completing the steps in the Before you begin section, you can proceed with
 
 
 ## Mashup Microsoft Defender ATP data with other data sources
-You can use Power BI Desktop to analyse data from Microsoft Defender ATP and mash that data up with other data sources to gain better security perspective in your organization.
+You can use Power BI Desktop to analyze data from Microsoft Defender ATP and mash that data up with other data sources to gain better security perspective in your organization.
 
 1. In Power BI Desktop, in the Home ribbon, click **Get data** and search for **Microsoft Defender Advanced Threat Protection**.
 

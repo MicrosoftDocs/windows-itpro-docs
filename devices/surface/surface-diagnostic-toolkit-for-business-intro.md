@@ -10,6 +10,8 @@ ms.topic: article
 ms.date: 06/11/2019
 ms.reviewer: cottmca
 manager: dansimp
+ms.localizationpriority: normal
+ms.audience: itpro
 ---
 
 # Fix common Surface problems using the Surface Diagnostic Toolkit for Business

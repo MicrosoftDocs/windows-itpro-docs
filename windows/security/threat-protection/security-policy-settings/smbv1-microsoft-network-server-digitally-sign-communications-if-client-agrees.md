@@ -57,7 +57,7 @@ There are three other policy settings that relate to packet-signing requirements
 
     -   Disable [Microsoft network client: Digitally sign communications (always)](smbv1-microsoft-network-client-digitally-sign-communications-always.md).
     -   Disable [Microsoft network server: Digitally sign communications (always)](smbv1-microsoft-network-server-digitally-sign-communications-always.md).
-    -   Enable [Microsoft network server: Digitally sign communications (always)](smbv1-microsoft-network-server-digitally-sign-communications-always.md).
+    -   Enable [Microsoft Network Client: Digitally Sign Communications (If Server Agrees)](smbv1-microsoft-network-server-digitally-sign-communications-always.md).
     -   Enable **Microsoft Network Server: Digitally Sign Communications (If Client Agrees)**.
 
 2.  Alternately, you can set all of these policy settings to Enabled, but enabling them can cause slower performance on client devices and prevent them from communicating with legacy SMB applications and operating systems.
