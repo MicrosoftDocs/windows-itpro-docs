@@ -3933,32 +3933,32 @@
 },
 {
 "source_path": "windows/device-security/auditing/event-6424.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/file-system-global-object-access-auditing.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/file-system-global-object-access-auditing",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/monitor-central-access-policy-and-rule-definitions.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/monitor-claim-types.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/monitor-claim-types",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/monitor-resource-attribute-definitions.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/monitor-the-central-access-policies-associated-with-files-and-folders.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/monitor-the-central-access-policies-associated-with-files-and-folders",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/monitor-the-central-access-policies-that-apply-on-a-file-server.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/monitor-the-resource-attributes-on-files-and-folders.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/monitor-the-resource-attributes-on-files-and-folders",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/monitor-the-use-of-removable-storage-devices.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/monitor-user-and-device-claims-during-sign-in.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/monitor-user-and-device-claims-during-sign-in",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/device-security/auditing/other-events.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/planning-and-deploying-advanced-security-audit-policies.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/planning-and-deploying-advanced-security-audit-policies",
 "redirect_document_id": true
 },
 {
@@ -3967,7 +3967,7 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/device-security/auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md",
+"source_path": "windows/device-security/auditing/using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/auditing/view-the-security-event-log.md",
 "redirect_document_id": true
 },
