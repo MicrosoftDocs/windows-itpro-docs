@@ -51,7 +51,7 @@ Feature | Details
 Localized Chinese and Japanese builds | Use HoloLens with localized user interface for Simplified Chinese or Japanese, including localized Pinyin keyboard, dictation, and voice commands.  
 Speech Synthesis (TTS) | Speech synthesis feature now supports Chinese, Japanese, and English. 
 
-[Learn how to install the Chinese and Japanese versions of HoloLens.](hololens-install-localized.md) 
+[Learn how to install the Chinese and Japanese versions of HoloLens.](hololens1-install-localized.md) 
 
 
 ## Windows 10, version 1803 for Microsoft HoloLens
@@ -60,7 +60,7 @@ Speech Synthesis (TTS) | Speech synthesis feature now supports Chinese, Japanese
 
 Windows 10, version 1803, is the first feature update to Windows Holographic for Business since its release in Windows 10, version 1607. This update introduces the following changes:
 
-- Previously, you could only verify that upgrade license for Commercial Suite had been applied to your HoloLens device by checking to see if VPN was an available option on the device. Now, **Settings** > **System** will display **Windows Holographic for Business** after the upgrade license is applied. [Learn how to unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md). 
+- Previously, you could only verify that upgrade license for Commercial Suite had been applied to your HoloLens device by checking to see if VPN was an available option on the device. Now, **Settings** > **System** will display **Windows Holographic for Business** after the upgrade license is applied. [Learn how to unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md). 
 
 - You can view the operating system build number in device properties in the File Explorer app and in the [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq).
     
