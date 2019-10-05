@@ -11,7 +11,7 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 9/27/2019
+ms.date: 10/4/2019
 ---
 
 # Decode Measured Boot logs to track PCR changes
