@@ -16,20 +16,21 @@ ms.date: 9/27/2019
 
 # Decode Measured Boot logs to track PCR changes
 
-From [https://internal.support.services.microsoft.com/help/4345799](https://internal.support.services.microsoft.com/help/4345799)
+Platform Configuration Registers (PCRs) are a memory locations in the Trusted Protection Module (TPM). BitLocker and its related technologies depend on specific PCR configurations. In addition, specific change in PCRs can cause a device or computer to enter BitLocker Recovery. Tracking changes in the PCRs, and identifying when they changed, can provide insight into issues that may be occurring or explain why a device or computer entered BitLocker Recovery. The Measured Boot logs, located in the C:\\Windows\\Logs\\MeasuredBoot\\ folder, record PCR changes and other information.  
 
-[TPM fundamentals: Measured Boot with support for attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)  
-[Understanding PCR banks on TPM 2.0 devices](https://docs.microsoft.com/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices)
+For more information about Measured Boot and PCRs, see the following articles:
 
-Measured Boot logs are located under C:\\Windows\\Logs\\MeasuredBoot\\ directory.
-
-These logs can be used to figure out which Platform Configuration Register (PCR) got changed resulting into BitLocker recovery and also figure out what all events were measured into a particular PCR helping us to explain why that PCR changed in the first place.
+- [TPM fundamentals: Measured Boot with support for attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)  
+- [Understanding PCR banks on TPM 2.0 devices](https://docs.microsoft.com/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices)
 
 ## Install TBSLogGenerator
 
-You can follow the same steps and thereby use the same tool (TBSLogGenerator.exe) so as to decode the Measured Boot logs collected from pre-Windows 10 machine(s) as well.
+Use TBSLogGenerator to decode Measured Boot logs that you have collected from Windows 10 and older versions. You can install this tool on the following systems:
 
-Install Hardware Lab Kit&mdash;Controller + Studio on a Windows Server 2016 machine which has TPM enabled and ready for use. You can also install HLK on a W2K16 Gen 2 Hyper-V VM as we could make use of the virtual TPM. You can also install HLK on a W2K16 Gen 2 Hyper-V VM as we could make use of the virtual TPM.
+- A computer running Windows Server 2016, that has a TPM enabled
+- A Gen 2 virtual machine (running on Hyper-V) that is running Windows Server 2016 (you can use the virtual TPM)
+
+To install the tool, follow these steps:
 
 1. Download the Windows Hardware Lab Kit from one of the following locations:
 
@@ -48,9 +49,10 @@ Install Hardware Lab Kit&mdash;Controller + Studio on a Windows Server 2016 mach
 
 ## Use TBSLogGenerator to decode Measured Boot logs
 
-1. Once installed, launch an elevated command prompt and navigate to the following directory: C:\\Program Files (x86)\\Windows Kits\\10\\Hardware Lab Kit\\Tests\\amd64\\NTTEST\\BASETEST\\ngscb
+1. After the installation has finished, open an elevated Command Prompt window and navigate to the following folder:  
+   **C:\\Program Files (x86)\\Windows Kits\\10\\Hardware Lab Kit\\Tests\\amd64\\NTTEST\\BASETEST\\ngscb**
 
-   This directory contains a tool named as TBSLogGenerator.exe, which is going to be used to decode the Measured Boot logs.
+   The TBSLogGenerator.exe file resides in this folder.
 
    ![](./images/ts-tpm-3.png)
 
@@ -59,7 +61,7 @@ Install Hardware Lab Kit&mdash;Controller + Studio on a Windows Server 2016 mach
    TBSLogGenerator.exe -LF <directory which contains the Measuredboot log to be decoded>\<name of the log>.log > <Target directory where the decoded file should be placed>\<name of the file>.txt
    ```
 
-   For example, in the following screenshot, the MeasuredBoot logs have been collected from a target Windows 10 machine and placed in the C:\\MeasuredBoot\\ directory. I have executed the command as follows so as to decode the **0000000005-0000000000.log** file:
+   For example, the following figure shows Measured Boot logs that were collected from a Windows 10 computer and placed in the C:\\MeasuredBoot\\ folder. The figure also shows a Command Prompt window and the command to decode the **0000000005-0000000000.log** file:
 
     ```cmd
     TBSLogGenerator.exe -LF C:\MeasuredBoot\0000000005-0000000000.log > C:\MeasuredBoot\0000000005-0000000000.txt
@@ -67,14 +69,14 @@ Install Hardware Lab Kit&mdash;Controller + Studio on a Windows Server 2016 mach
 
    ![](./images/ts-tpm-4.png)
 
-   After the command finishes, you will get a text file with the name specified. As per the above screenshot it is **0000000005-0000000000.txt**  in the same directory where the original .log file is present.
+   The command produces a text file that uses the specified name. In the case of the example, the file is **0000000005-0000000000.txt**. The file resides in the same folder as the original .log file.
 
    ![](./images/ts-tpm-5.png)
 
-1. Open this **0000000005-0000000000.txt** file and you should see something like below:
+The content of this text file resembles the following:
 
-   ![](./images/ts-tpm-6.png)
+![](./images/ts-tpm-6.png)
 
-1. If you go to the end of the text file, you will see the PCR info.
+To find the PCR information, go to the end of the file.
 
    ![](./images/ts-tpm-7.png)
