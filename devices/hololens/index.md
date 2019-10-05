@@ -29,7 +29,6 @@ ms.date: 07/14/2019
 | Guide | Description |
 | --- | --- |
 | [Get started with HoloLens](hololens1-setup.md) | Set up HoloLens for the first time.  |
-| [Deploy HoloLens in a commercial environment](hololens-requirements.md) | Configure HoloLens for scale enterprise deployment and ongoing device management.  |
 | [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary.  |
 | [Get support](https://support.microsoft.com/products/hololens) |Connect with Microsoft support resources for HoloLens in enterprise.  |
 
@@ -38,6 +37,7 @@ ms.date: 07/14/2019
 | Topic | Description |
 | --- | --- |
 | [What's new in Microsoft HoloLens](hololens-whats-new.md) | Discover new features in the latest updates. |
+| [Deploy HoloLens in a commercial environment](hololens-requirements.md) | Configure HoloLens for scale enterprise deployment and ongoing device management.  |
 | [Configure HoloLens using a provisioning package](hololens-provisioning.md) | Provisioning packages make it easy for IT administrators to configure HoloLens devices without imaging |
 | [HoloLens MDM support](hololens-enroll-mdm.md) | Manage multiple HoloLens devices simultaneously using Mobile Device Management (MDM) solutions like Microsoft Intune. |
 | [HoloLens update management](hololens-updates.md) | Use mobile device management (MDM) policies to configure settings for updates. |
