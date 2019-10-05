@@ -1,7 +1,7 @@
 ---
 title: BitLocker and TPM other known issues
 description: 
-ms.reviewer: 
+ms.reviewer: kaushika
 ms.prod: w10
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,21 +16,21 @@ ms.date: 10/3/2019
 
 # BitLocker and TPM: other known issues
 
-[Troubleshoot the TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm)
+This article describes common issues that relate directly to the TPM.
 
 ## Azure AD: Windows Hello for Business and single sign-on do not work
 
-Not able to acquire a PRT can lead to various issues
+You have an Azure AD-joined client computer that cannot authenticate properly. You observe one or more of the following issues:
 
 - Windows Hello for business not working
 - Conditional access failing
 - SSO not working.
 
-On the client machine collect the output of DSREGCMD /STATUS, under User state or SSO State look for AzureAdPrt, if the Value is "NO" then the user did not get a PRT. One of the reason the PRT was not issued is the Device authentication failed. The device was not able to present it's certificate for some reason.
+Additionally, the computer logs event ID 1026, which resembles the following:
 
 > Log Name: System  
 > Source: Microsoft-Windows-TPM-WMI  
-> Date: \<Date and Time\>  
+> Date: \<Date and Time>  
 > Event ID: 1026  
 > Task Category: None  
 > Level: Information  
@@ -41,91 +41,74 @@ On the client machine collect the output of DSREGCMD /STATUS, under User state o
 > The Trusted Platform Module (TPM) hardware on this computer cannot be provisioned for use automatically.  To set up the TPM interactively use the TPM management console (Start-\>tpm.msc) and use the action to make the TPM ready.  
 > Error: The TPM is defending against dictionary attacks and is in a time-out period.  
 > Additional Information: 0x840000  
->  
-
-#### Resolution
-
-The above events are indicating the TPM is not ready or has some setting that is preventing from accessing the TPM keys.
-
-Launch TPM.MSC and see if you get the option to unlock the TPM or reset the lockout. If not then the only option is to initialize the TPM. Before you do this,
-
-1. Check the BIOS settings for TPM for any setting to reset the lockout or disable it.
-
-1. Have the customer engage the hardware vendor on getting this fixed.
-
-Initializing the TPM or clearing the TPM might break other applications like bitlocker. if customer is not using bitlocker or no other service depends on TPM the below steps can be followed to clear the TPM
-
-To clear / reset the TPM:  
-
-1. Open the Windows Defender Security Center app.
-
-1. Click Device security.
-
-1. Click Security processor details.
-
-1. Click Security processor troubleshooting.
-
-1. Click Clear TPM.
-
-   You will be prompted to restart the computer. During the restart, you might be prompted by the UEFI to press a button to confirm that you wish to clear the TPM. After the PC restarts, your TPM will be automatically prepared for use by Windows 10.  
-
-## Loading the management console failed. The device that is required by the cryptographic provider is not ready for use
-
-Reference: [https://internal.support.services.microsoft.com/help/4313961](https://internal.support.services.microsoft.com/help/4313961)
-
-### Symptom
-
-You are not able to view the TPM management console on your Windows 10 v1703 machine. Error message/code: Loading the management console failed. The device that is required by the cryptographic provider is not ready for use. HRESULT 0x800900300x80090030 - NTE\_DEVICE\_NOT\_READY The device that is required by this cryptographic provider is not ready for use.TPM Spec version: TPM v1.2Firmware type: {Namepii}OS: Windows 10 Enterprise v1703 Build 15063.540System Name: {NAMEPII}-5510System Model: {Namepii} Inc. Precision 5510
-
-### Cause (suspected)
-
-Hardware/firmware issues within TPM.
-
-### Resolution
-
-Recommended action plan: After consulting with the TPM feature team, We advised you to test this out on a different device of the same model. Apart from that we also suggested you to switch the TPM operation mode to Spec v1.2 to v2.0 and check if the issue continues to occur.Current status: As of now, you have reached out to {Namepii} to get the mainboard on the device replaced by 18th August. Post that you will be changing the operation mode of TPM to 2.0 to see if that resolves the problem. Since we don’t have any active troubleshooting plan we are closing this case temporarily for now and we will re-engage on 10 AM EST 26th Sept. to discuss this issue further. I will be sending you a meeting invite for the same.
-
-## Azure AD-joined devices fail because of a TPM issue
-
-Reference: [https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current](https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)
-
-### Symptom: 
-
-Get the device status to see if the device is Hybrid Joined or failed to Hybrid Join. Execute the command **DSREGCMD /STATUS **
-
-If the device is Hybrid Joined the following will be set:
-
-- **AzureAdJoined: YES**
-- **DomainName: \<on-prem Domain name\>**
-
-If AzureAdJoined is set to **NO** then the device is not Hybrid Azure AD Joined.
 
 ### Cause
 
-Windows operating system is not the owner of the TPM
+This event indicates that the TPM is not ready or has some setting that prevents access to the TPM keys.  
 
-#### Error 1: NTE\_BAD\_KEYSET (0x80090016/-2146893802)  
- 
-- **Reason:** TPM operation failed or was invalid
+Additionally, the observed behavior indicates that the client computer cannot obtain a [Primary Refresh Token (PRT)](https://docs.microsoft.com/azure/active-directory/devices/concept-primary-refresh-token).  
 
-- **Resolution:** Likely due to a bad sysprep image. Ensure the machine from which the sysprep image was created is not Azure AD joined, hybrid Azure AD joined, or Azure AD registered.
+### Resolution
 
-Reference: [https://internal.support.services.microsoft.com/help/4467030](https://internal.support.services.microsoft.com/help/4467030)
+To verify the status of the PRT, use the [dsregcmd /status utility](https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-device-dsregcmd) to collect information. In the utility output, verify that either **User state** or **SSO state** contains the **AzureAdPrt** attribute. If the value of this attribute is **No**, then the PRT was not issued. This may indicate that the computer could not present its certificate for authentication.
 
-#### Error 2: TPM\_E\_PCP\_INTERNAL\_ERROR (0x80290407/-2144795641)
+To resolve this issue, use the following steps to troubleshoot the TPM:
 
-- **Reason:** Generic TPM error.
+1. Open the TPM management console (tpm.msc). To do this, select **Start**, and in the **Search** box, type **tpm.msc**, and then press **Enter**.
+1. If you see a prompt to either unlock the TPM or reset the lockout, follow those instructions.  
+1. If you do not see such a prompt, review the BIOS settings of the computer for any setting that you can use to reset or disable the lockout.
+1. Engage the hardware vendor to find out if there is a known fix for the issue.
+1. If you still cannot resolve the issue, clear and re-initialize the TPM. To do this, follow the instructions in [Troubleshoot the TPM: Clear all the keys from the TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm#clear-all-the-keys-from-the-tpm).
+   > [!WARNING]
+   > Clearing the TPM can result in data loss.  
 
-- **Resolution:** Disable TPM on devices with this error. Windows 10 version 1809 and higher automatically detects TPM failures and completes hybrid Azure AD join without using the TPM.
+## TPM 1.2 Error: Loading the management console failed. The device that is required by the cryptographic provider is not ready for use
 
-#### Error 3: TPM\_E\_NOTFIPS (0x80280036/-2144862154)
+You have a Windows 10 version 1703 computer that uses TPM version 1.2. When you try to open the TPM management console, you receive a message that resembles the following:
 
-- **Reason:** TPM in FIPS mode not currently supported.
+> Loading the management console failed. The device that is required by the cryptographic provider is not ready for use.  
+> HRESULT 0x800900300x80090030 - NTE\_DEVICE\_NOT\_READY  
+> The device that is required by this cryptographic provider is not ready for use.  
+> TPM Spec version: TPM v1.2  
 
-- **Resolution:** Disable TPM on devices with this error. Windows 1809 automatically detects TPM failures and completes hybrid Azure AD join without using the TPM.
+On a different device that's running the same version of Windows, you can open the TPM management console.
 
-#### Error 4: NTE\_AUTHENTICATION\_IGNORED (0x80090031/-2146893775)
+### Cause (suspected)
 
-- **Reason:** TPM locked out.
+These symptoms indicate hardware or firmware issues within the TPM.
 
-- **Resolution:** Transient error. Wait for the cooldown period. Join attempt after some time should succeed. More Information can be found in the article [TPM fundamentals](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#anti-hammering)
+### Resolution
+
+To resolve this issue, use the following steps to troubleshoot the TPM:
+
+1. Switch the TPM operating mode from version 1.2 to version 2.0.
+1. If the preceding action does not resolve the issue, consider replacing the device motherboard.
+1. After replacing the motherboard, switch the TPM operating mode from version 1.2 to version 2.0.
+
+## Devices fail to join hybrid Azure AD because of a TPM issue
+
+You have a device that you are trying to join to a hybrid Azure AD. However, the join operation appears to fail.
+
+To verify whether the join succeeded, use the [dsregcmd /status utility](https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-device-dsregcmd). In the utility output, the following attributes indicate that the join succeeded:
+
+- **AzureAdJoined: YES**
+- **DomainName: \<*on-prem Domain name*\>**
+
+If the value of **AzureADJoined** is **No**, then the join failed. 
+
+### Causes and Resolutions
+
+This issue may result when the Windows operating system is not the owner of the TPM. The specific remedy for this issue depends on which errors or events you observe:
+
+|Message |Reason | Resolution|
+| - | - | - |
+|NTE\_BAD\_KEYSET (0x80090016/-2146893802) |TPM operation failed or was invalid |This issue was probably caused by a corrupted sysprep image. Make sure that you create the sysprep image by using a computer that is not joined or registered with Azure AD or hybrid Azure AD. |
+|TPM\_E\_PCP\_INTERNAL\_ERROR (0x80290407/-2144795641) |Generic TPM error. |If the device gives this error, disable its TPM. Windows 10 version 1809 and newer automatically detects TPM failures and completes the hybrid Azure AD join without using the TPM. |
+|TPM\_E\_NOTFIPS (0x80280036/-2144862154) |The FIPS mode of the TPM is not currently supported. |If the device gives this error, disable its TPM. Windows 10 version 1809 and newer automatically detects TPM failures and completes the hybrid Azure AD join without using the TPM. |
+|NTE\_AUTHENTICATION\_IGNORED (0x80090031/-2146893775) |The TPM is locked out. |This error is transient. Wait for the cooldown period, and then try the join operation again. |
+
+For more information about TPM issues, see the following articles:
+
+- [TPM fundamentals: Anti-hammering](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#anti-hammering)
+- [Troubleshooting hybrid Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)
+- [Troubleshoot the TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm)
