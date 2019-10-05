@@ -49,7 +49,7 @@ After Windows 7 was released, several other areas of BitLocker were improved:
    - Windows PowerShell
    - Windows Management Interface (WMI)
 
-- **Integration with Azure Active Directory**. BitLocker can store keys in Azure AD, which makes them easier to recover.
+- **Integration with Azure Active Directory** (Azure AD). BitLocker can store keys in Azure AD, which makes them easier to recover.
 
 - **[Direct memory access (DMA) port protection](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**. By using MDM policies to manage BitLocker, you can block a device's DMA ports and secure the device during its startup.
 
@@ -61,7 +61,7 @@ After Windows 7 was released, several other areas of BitLocker were improved:
 
 ## Hyper-V Gen 2 VM: Cannot access the volume after BitLocker encryption
 
-1. You turn on BitLocker on a generation-2 virtual machine that runs on Hyper-V.
+1. You turn on BitLocker on a generation-2 virtual machine (VM) that runs on Hyper-V.
 1. You add data to the data disk as it encrypts.
 1. You restart the virtual machine, and observe the following:
    - The system volume is not encrypted.
@@ -88,7 +88,7 @@ This issue occurs regardless of any of the following variations in the environme
 - Whether the virtual machines are generation 1 or generation 2.
 - whether the guest operating system is Windows Server 2019, 2016 or 2012 R2.
 
-In the domain controller Application Event Log, the VSS event source records Event ID 8229:
+In the domain controller Application event log, the VSS event source records event ID 8229:
 
 > ID: 8229  
 > Level: Warning  
@@ -111,7 +111,7 @@ In the domain controller Application Event Log, the VSS event source records Eve
 >  
 > Process ID: 680  
 
-In the domain controller Directory Services Event Log, you see an event that resembles the following:
+In the domain controller Directory Services event log, you see an event that resembles the following:
 
 > Error Microsoft-Windows-ActiveDirectory\_DomainService 1168  
 > Internal Processing Internal error: An Active Directory Domain Services error has occurred.
@@ -153,7 +153,7 @@ For more information and recommendations about backing up virtualized domain con
 
 ### More information
 
-When LSASS processes the access request of the VSS NTDS writer, the result is an error that resembles the following:
+When the VSS NTDS writer requests access to the encrypted drive, the Local Security Authority Subsystem Service (LSASS) produces an error that resembles the following:
 
 ```
 \# for hex 0xc0210000 / decimal -1071579136
