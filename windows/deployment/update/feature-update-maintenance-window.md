@@ -4,7 +4,8 @@ description: Learn how to deploy feature updates during a maintenance window
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.author: greglin
 ms.date: 07/09/2018
@@ -49,7 +50,7 @@ Use **Peer Cache** to help manage deployment of content to clients in remote loc
 
 [Enable Configuration Manager client in full OS to share content](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-settings#enable-configuration-manager-client-in-full-os-to-share-content) if you have clients in remote locations that would benefit from downloading feature update content from a peer instead of downloading it from a distribution point (or Microsoft Update). 
 
-> [!NOTE]
+> In any enterprise, content delivery optimization via caching and peering solutions is imperative to mitigate the risk of interrupting business operations. It is important when downloading large payloads from the cloud (feature updates, quality updates, and so on). Most smaller organizations may have this enabled by default, but larger enterprises may need to plan an implementation to logically group different sites via AD Site or SCCM boundary group, as the egress/ingress point may be a data center in another location, rather than an Internet connection local to them. Otherwise they will peer with clients potentially not in the same physical location.
 > In the enterprise, content delivery optimization via caching and peering solutions is imperative to mitigate the risk of interrupting business operations. It is important when downloading large payloads from the cloud (feature updates, quality updates, and so on). Most smaller organizations may have this enabled by default, but larger enterprises may need to plan an implementation to logically group different sites via AD Site or SCCM boundary group, as the egress/ingress point may be a data center in another location, rather than an internet connection local to them. Otherwise they will peer with clients potentially not in the same physical location.
 
 ### Step 4: Override the default Windows setup priority (Windows 10, version 1709 and later)
