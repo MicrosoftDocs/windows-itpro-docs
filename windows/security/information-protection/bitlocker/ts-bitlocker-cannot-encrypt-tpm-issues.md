@@ -21,76 +21,107 @@ This article describes common issues that can involve the Trusted Platform Modul
 > [!NOTE]
 > If you have determined that your BitLocker issue does not involve the TPM, see [BitLocker cannot encrypt a drive: known issues](ts-bitlocker-cannot-encrypt-issues.md).
 
-## TPM is locked, message "The TPM is defending against dictionary attacks and is in a time-out period"
+## You see the message "The TPM is defending against dictionary attacks and is in a time-out period" and the TPM is locked
 
-Unable to enable BitLocker ,getting error msg "The TPM is defending against dictionary attacks and is in a time-out period."
-
-### Cause
-
-TPM Lockout
-
-### Resolution
-
-open Powershell as Admin $Tpm = Get-WmiObject -class Win32\_Tpm -namespace "root\\CIMv2\\Security\\MicrosoftTpm" $ConfirmationStatus = $Tpm.GetPhysicalPresenceConfirmationStatus(22).ConfirmationStatus if($ConfirmationStatus -ne 4) {$Tpm.SetPhysicalPresenceRequest(22)} - Reboot - if prompted at boot screen agree with F12 - Try again to configure BitLocker (we use some scripts, but the GUI is also ok J)
-
-## Cannot prepare the TPM, getting message "The TPM is defending against dictionary attacks and is in a time-out period"
-
-[PTSMEDEP\PRE\W8.1\unable to enable bitlocker with error The TPM is defending against dictionary attacks and is in a time-out period.](https://internal.support.services.microsoft.com/help/4327939)
-
-This Surface Pro 3 was shipped with Windows 10 and reimaged with Windows 8.1.  BitLocker can not be enabled.
-The TPM on this computer is currently locked out.
-
-Classification Path: Routing Surface Pro\Software Issues (Windows 8.1)\BitLocker or device encryption
-
-### Resolution
-
-When we tried to Prepare the TPM using tpm.msc console of the Surface Pro 3, we received the error "The TPM is defending against dictionary attacks and is in a time-out period." We rebooted into BIOS, disabled TPM and when we booted into OS, the tpm.msc showed “Compatible Trusted Platform Module (TPM) cannot be found on this computer. verify that this computer has 1.2 TPM and its is turned on in the BIOS “ We then booted into BIOS, enabled the TPM and then we found that it required us to clear the existing TPM keys and rebooted. Now, we were able to successfully prepare the TPM and the TPM state was “ready for use”. Now, we started the encryption on OS drive with TPM protector and the encryption was successful.
-
-## Cannot prepare the TPM, error 0x80070005 "Insufficient Rights"
-
-Unable to backup TPM Information to ADDS.
+When you turn on BitLocker Drive Encryption, it does not start and instead you see a message that resembles "The TPM is defending against dictionary attacks and is in a time-out period."
 
 ### Cause
 
-Insufficient permissions for SELF on TPM Devices Container.
+The TPM is locked out.
+
+### Resolution
+
+To resolve this issue, follow these steps:
+
+1. Open an elevated PowerShell window and run the following script:
+
+   ```ps
+   $Tpm = Get-WmiObject -class Win32_Tpm -namespace "root\CIMv2\Security\MicrosoftTpm" $ConfirmationStatus = $Tpm.GetPhysicalPresenceConfirmationStatus(22).ConfirmationStatus if($ConfirmationStatus -ne 4) {$Tpm.SetPhysicalPresenceRequest(22)}
+   ```
+
+1. Restart the computer. If you receive a prompt at the restart screen, press F12 to agree.
+1. Try to start BitLocker Drive Encryption again.
+
+## You cannot prepare the TPM, and you see the message "The TPM is defending against dictionary attacks and is in a time-out period"
+
+You cannot turn on BitLocker Drive Encryption on a device. You use the TPM management console (tpm.msc) to prepare the TPM on a device. The operation fails and you see a message that resembles "The TPM is defending against dictionary attacks and is in a time-out period."
+
+### Cause
+
+The TPM is locked out.
+
+### Resolution
+
+To resolve this issue, follow these steps:
+
+1. Disable and re-enable the TPM. To do this, follow these steps:
+   1. Restart the device and change the BIOS configuration to disable the TPM. 
+   1. Restart the device again, and return to the TPM management console. You should see a message that resembles "Compatible Trusted Platform Module (TPM) cannot be found on this computer. verify that this computer has 1.2 TPM and its is turned on in the BIOS."
+   1. Restart the device and change the BIOS configuration to enable the TPM.
+   1. Restart the device and return to the TPM management console.
+1. If you still cannot prepare the TPM, clear the existing TPM keys. To do this, follow the instructions in [Troubleshoot the TPM: Clear all the keys from the TPM](https://docs.microsoft.com/windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm#clear-all-the-keys-from-the-tpm).
+   > [!WARNING]
+   > Clearing the TPM can result in data loss.  
+
+## "Access Denied"Failed to backup TPM Owner Authorization information to Active Directory Domain Services. Errorcode: 0x80070005
+
+You have an environment that enforces the policy **Do not enable BitLocker until recovery information is stored in AD DS**. You try to turn on BitLocker Drive Encryption on a computer that runs Windows 7 and the operation fails. You see a message that resembles "Access Denied" or "Insufficient Rights."
+
+### Cause
+
+The TPM did not have sufficient permissions on the TPM Devices container in AD DS. Therefore, the BitLocker recovery key could not be backed up to AD DS, and BitLocker Drive Encryption could not run.
+
+This issue appears to be limited to computers that run versions of Windows that are older than Windows 10.
 
 ### Resolution  
 
-1. Problem - LDAP trace between client and DC to find cause of ACCESS DENIED error 0x80070005 - 12/20/2016 12:52 AM
+To verify that you have correctly identified this issue, you can use these approaches:
 
-Errors seen in the LDAP traces : ldap\_modify call for CN=TestOU,CN=TPM Devices,DC=XYZ,DC=com which is failing with Insufficient Rights.
+- Disable the policy or remove the computer from the domain, and try to turn on BitLocker Drive Encryption again. This time the operation should succeed.
+- Use LDAP and network trace tools to examine the LDAP exchanges between the client and the AD DS domain controller and identify the cause of the Access Denied or Insufficient Rights error. In this case, you should see the error when the client tries to access its object in the CN=TPM Devices,DC=\<*domain*>,DC=com container.
 
-1. Run following command to identify the TPM Attributes :
+1. To review the TPM information for the affected computer, open an elevated Windows PowerShell window and run the following command:
 
-Get-ADComputer -Filter {Name -like "TPMTest"} -Property 1. | Format-Table name,msTPM-TPMInformationForComputer TPMTest – Is the name of my test computer which has the attribute filled.
+   ```ps
+   Get-ADComputer -Filter {Name -like "ComputerName"} -Property * | Format-Table name,msTPM-TPMInformationForComputer
+   ```
 
-1. Provided proper permissions of SELF:
+   In this command, ComputerName is the name of the affected computer.
 
-Reference: [https://internal.support.services.microsoft.com/help/4337282](https://internal.support.services.microsoft.com/help/4337282)
+1. To resolve the issue, use a tool such as dsacls.exe to make sure that the access control list of msTPM-TPMInformationForComputer grants both Read and Write permissions to NTAUTHORITY/SELF.
 
 ## Cannot prepare the TPM, Error 0x80072030 "There is no such object on the server"
 
-Reference: [https://internal.support.services.microsoft.com/help/4319021](https://internal.support.services.microsoft.com/help/4319021)
+Your domain controllers were upgraded from Windows Server 2008 R2to Windows Server 2012 R2. A Group Policy Object (GPO) enforces the policy **Do not enable BitLocker until recovery information is stored in AD DS**.  
 
-Support Topic: Routing Windows V3\Group Policy\Managing BitLocker configuration through Group Policy
-
-We have already run the adprep as mention when we did a upgrade to our domain a while ago.
-
-We have GPO setup for storing the keys and tpm info as well.
-
-Prepare the TPM gives error:
+You cannot turn on BitLocker Drive Encryption on a device. You use the TPM management console (tpm.msc) to prepare the TPM on a device. The operation fails and you see a message that resembles the following:
 
 > 0x80072030 There is no such object on the server when a policy to back up TPM information to active directory is enabled
 
+You have confirmed that the attributes ms-TPM-OwnerInformation and msTPM-TpmInformationForComputer are present.
+
 ### Cause
 
-Add-TPMSelfWriteACE.vbs {available?}
+The domain and forest functional level of the environment may still be set to Windows 2008 R2. Additionally, the permissions in AD DS may not be correctly set.
 
 ### Resolution
 
-DC: Windows Server 2012 r2. The attributes include ms-TPM-OwnerInformation and msTPM-TpmInformationForComputer are present.
+To resolve this issue, follow these steps:
 
-We noticed that he had not added the self-write permissions for the computer objects. So, we downloaded the script Add-TPMSelfWriteACE.vbs and modified the value of strPathToDomain to your domain.Post modification, ran Add-TPMSelfWriteACE.vbs and it ran successfully.We then discovered that the domain and forest functional level are still at 2008 R2 and we wanted to update them first Post updating the domain and forest functional level and setting the required permissions , he confirmed that he was able to successfully back up the TPM information to Active Directory without error : “0x80072030 There is no such object on the server when a policy to back up TPM information to active directory is enabled”.
+1. Upgrade the functional level of the domain and forest to Windows Server 2012 R2.
+1. Download [Add-TPMSelfWriteACE.vbs](https://go.microsoft.com/fwlink/p/?LinkId=167133).
+1. In the script, modify the value of **strPathToDomain** to your domain name.
+1. Open an elevated PowerShell window, and run the following command:
+
+   ```ps
+   cscript <Path>Add-TPMSelfWriteACE.vbs
+   ```
+   
+   Where \<Path> is the path to the script file.
+
+Post modification, ran Add-TPMSelfWriteACE.vbs and it ran successfully.
+
+For more information, see the following articles:
 
 - [Back up the TPM Recovery Information to AD DS](https://docs.microsoft.com/windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds)
 - [Prepare your organization for BitLocker: Planning and Policies](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies)
