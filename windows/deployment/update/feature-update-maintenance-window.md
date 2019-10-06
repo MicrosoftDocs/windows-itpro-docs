@@ -38,16 +38,19 @@ If you’re not suppressing computer restarts and the feature update will be ins
 
 For example, by default, 90 minutes will be honored before the system is rebooted after the feature update install. If users will not be impacted by the user logoff or restart, there is no need to wait a full 90 minutes before rebooting the computer. If a delay and notification is needed, ensure that the maintenance window takes this into account along with the total time needed to install the feature update.
 
->[!NOTE]
+> [!NOTE]
 > The following settings must be shorter in duration than the shortest maintenance window applied to the computer. 
->- **Display a temporary notification to the user that indicates the interval before the user is logged off or the computer restarts (minutes).**
->- **Display a dialog box that the user cannot close, which displays the countdown interval before the user is logged off or the computer restarts (minutes).**
+> - **Display a temporary notification to the user that indicates the interval before the user is logged off or the computer restarts (minutes).**
+> - **Display a dialog box that the user cannot close, which displays the countdown interval before the user is logged off or the computer restarts (minutes).**
 
 ### Step 3: Enable Peer Cache
 
 Use **Peer Cache** to help manage deployment of content to clients in remote locations. Peer Cache is a built-in Configuration Manager solution that enables clients to share content with other clients directly from their local cache.
 
 [Enable Configuration Manager client in full OS to share content](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-settings#enable-configuration-manager-client-in-full-os-to-share-content) if you have clients in remote locations that would benefit from downloading feature update content from a peer instead of downloading it from a distribution point (or Microsoft Update). 
+
+> [!NOTE]
+> In the enterprise, content delivery optimization via caching and peering solutions is imperative to mitigate the risk of interrupting business operations. It is important when downloading large payloads from the cloud (feature updates, quality updates, and so on). Most smaller organizations may have this enabled by default, but larger enterprises may need to plan an implementation to logically group different sites via AD Site or SCCM boundary group, as the egress/ingress point may be a data center in another location, rather than an internet connection local to them. Otherwise they will peer with clients potentially not in the same physical location.
 
 ### Step 4: Override the default Windows setup priority (Windows 10, version 1709 and later)
 
@@ -102,8 +105,8 @@ loss of business information, or other pecuniary loss) arising out of the use of
 or documentation, even if Microsoft has been advised of the possibility of such damages.
 ```
 
->[!NOTE]
->If you elect not to override the default setup priority, you will need to increase the [maximum run time](https://docs.microsoft.com/sccm/sum/get-started/manage-settings-for-software-updates#BKMK_SetMaxRunTime) value for Feature Update to Windows 10, version 1709 or higher from the default of 60 minutes. A value of 240 minutes may be required. Remember to ensure that your maintenance window duration is larger than your defined maximum run time value. 
+> [!NOTE]
+> If you elect not to override the default setup priority, you will need to increase the [maximum run time](https://docs.microsoft.com/sccm/sum/get-started/manage-settings-for-software-updates#BKMK_SetMaxRunTime) value for Feature Update to Windows 10, version 1709 or higher from the default of 60 minutes. A value of 240 minutes may be required. Remember to ensure that your maintenance window duration is larger than your defined maximum run time value. 
 
 ## Manually deploy feature updates
 
@@ -133,20 +136,20 @@ Before you deploy the feature updates, you can download the content as a separat
      - **Description**: Specifies the description of the deployment package. The package description provides information about the package contents and is limited to 127 characters. 
      - **Package source**: Specifies the location of the feature update source files. Type a network path for the source location, for example, \\server\sharename\path, or click **Browse** to find the network location. You must create the shared folder for the deployment package source files before you proceed to the next page. 
 
-   >[!NOTE]
-   >The deployment package source location that you specify cannot be used by another software deployment package. 
+   > [!NOTE]
+   > The deployment package source location that you specify cannot be used by another software deployment package. 
 
-   >[!IMPORTANT]
-   >The SMS Provider computer account and the user that is running the wizard to download the feature updates must both have Write NTFS permissions on the download location. You should carefully restrict access to the download location to reduce the risk of attackers tampering with the feature update source files. 
+   > [!IMPORTANT]
+   > The SMS Provider computer account and the user that is running the wizard to download the feature updates must both have Write NTFS permissions on the download location. You should carefully restrict access to the download location to reduce the risk of attackers tampering with the feature update source files. 
 
-   >[!IMPORTANT]
-   >You can change the package source location in the deployment package properties after Configuration Manager creates the deployment package. But if you do so, you must first copy the content from the original package source to the new package source location. 
+   > [!IMPORTANT]
+   > You can change the package source location in the deployment package properties after Configuration Manager creates the deployment package. But if you do so, you must first copy the content from the original package source to the new package source location. 
 
    Click **Next**. 
 4. On the **Distribution Points** page, specify the distribution points or distribution point groups that will host the feature update files, and then click **Next**. For more information about distribution points, see [Distribution point configurations](https://docs.microsoft.com/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_configs). 
 
-   >[!NOTE]
-   >The Distribution Points page is available only when you create a new software update deployment package. 
+   > [!NOTE]
+   > The Distribution Points page is available only when you create a new software update deployment package. 
 5. On the **Distribution Settings** page, specify the following settings: 
 
    - **Distribution priority**: Use this setting to specify the distribution priority for the deployment package. The distribution priority applies when the deployment package is sent to distribution points at child sites. Deployment packages are sent in priority order: High, Medium, or Low. Packages with identical priorities are sent in the order in which they were created. If there is no backlog, the package will process immediately regardless of its priority. By default, packages are sent using Medium priority. 
@@ -163,8 +166,8 @@ Before you deploy the feature updates, you can download the content as a separat
    - **Download software updates from the Internet**: Select this setting to download the software updates from the location on the Internet. This is the default setting.
    - **Download software updates from a location on the local network**: Select this setting to download software updates from a local folder or shared network folder. Use this setting when the computer running the wizard does not have Internet access. 
    
-     >[!NOTE]
-     >When you use this setting, download the software updates from any computer with Internet access, and then copy the software updates to a location on the local network that is accessible from the computer running the wizard.
+     > [!NOTE]
+     > When you use this setting, download the software updates from any computer with Internet access, and then copy the software updates to a location on the local network that is accessible from the computer running the wizard.
 
    Click **Next**. 
 7. On the **Language Selection** page, specify the languages for which the selected feature updates are to be downloaded, and then click **Next**. Ensure that your language selection matches the language(s) of the feature updates selected for download. For example, if you selected English and German based feature updates for download, select those same languages on the language selection page. 
@@ -195,52 +198,52 @@ After you determine which feature updates you intend to deploy, you can manually
 
    - **Type of deployment**: Specify the deployment type for the software update deployment. Select **Required** to create a mandatory software update deployment in which the feature updates are automatically installed on clients before a configured installation deadline. 
    
-     >[!IMPORTANT]
+     > [!IMPORTANT]
      > After you create the software update deployment, you cannot later change the type of deployment. 
    
-     >[!NOTE]
-     >A software update group deployed as Required will be downloaded in background and honor BITS settings, if configured.
+     > [!NOTE]
+     > A software update group deployed as Required will be downloaded in background and honor BITS settings, if configured.
 
    - **Use Wake-on-LAN to wake up clients for required deployments**: Specify whether to enable Wake On LAN at the deadline to send wake-up packets to computers that require one or more software updates in the deployment. Any computers that are in sleep mode at the installation deadline time will be awakened so the software update installation can initiate. Clients that are in sleep mode that do not require any software updates in the deployment are not started. By default, this setting is not enabled and is available only when Type of deployment is set to Required. 
 
-     >[!WARNING]
-     >Before you can use this option, computers and networks must be configured for Wake On LAN. 
+     > [!WARNING]
+     > Before you can use this option, computers and networks must be configured for Wake On LAN. 
 
    - **Detail level**: Specify the level of detail for the state messages that are reported by client computers. 
 6. On the Scheduling page, configure the following settings:
 
    - **Schedule evaluation**: Specify whether the available time and installation deadline times are evaluated according to UTC or the local time of the computer running the Configuration Manager console. 
    
-     >[!NOTE]
-     >When you select local time, and then select **As soon as possible** for the **Software available time** or **Installation deadline**, the current time on the computer running the Configuration Manager console is used to evaluate when updates are available or when they are installed on a client. If the client is in a different time zone, these actions will occur when the client's time reaches the evaluation time. 
+     > [!NOTE]
+     > When you select local time, and then select **As soon as possible** for the **Software available time** or **Installation deadline**, the current time on the computer running the Configuration Manager console is used to evaluate when updates are available or when they are installed on a client. If the client is in a different time zone, these actions will occur when the client's time reaches the evaluation time. 
 
    - **Software available time**: Select **As soon as possible** to specify when the software updates will be available to clients: 
      - **As soon as possible**: Select this setting to make the software updates in the deployment available to clients as soon as possible. When the deployment is created, the client policy is updated, the clients are made aware of the deployment at their next client policy polling cycle, and then the software updates are available for installation. 
    - **Installation deadline**: Select **Specific time** to specify the installation deadline for the software updates in the deployment. 
    
-     >[!NOTE]
-     >You can configure the installation deadline setting only when **Type of deployment** is set to **Required** on the Deployment Settings page. 
+     > [!NOTE]
+     > You can configure the installation deadline setting only when **Type of deployment** is set to **Required** on the Deployment Settings page. 
 
    - **Specific time**: Select this setting to automatically install the software updates in the deployment at a specific date and time. Set the date and time value to correspond with your defined maintenance window for the target collection. Allow sufficient time for clients to download the content in advance of the deadline. Adjust accordingly if clients in your environment will need additional download time. E.g., slow or unreliable network links. 
 
-   >[!NOTE]
-   >The actual installation deadline time is the specific time that you configure plus a random amount of time up to 2 hours. This reduces the potential impact of all client computers in the destination collection installing the software updates in the deployment at the same time. Configure the Computer Agent client setting, Disable deadline randomization to disable the installation randomization delay for the required software updates to allow a greater chance for the installation to start and complete within your defined maintenance window. For more information, see [Computer Agent](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-settings#computer-agent). 
+   > [!NOTE]
+   > The actual installation deadline time is the specific time that you configure plus a random amount of time up to 2 hours. This reduces the potential impact of all client computers in the destination collection installing the software updates in the deployment at the same time. Configure the Computer Agent client setting, Disable deadline randomization to disable the installation randomization delay for the required software updates to allow a greater chance for the installation to start and complete within your defined maintenance window. For more information, see [Computer Agent](https://docs.microsoft.com/sccm/core/clients/deploy/about-client-settings#computer-agent). 
 7. On the User Experience page, configure the following settings: 
    - **User notifications**: Specify whether to display notification of the software updates in Software Center on the client computer at the configured **Software available time** and whether to display user notifications on the client computers. When **Type of deployment** is set to **Available** on the Deployment Settings page, you cannot select **Hide in Software Center and all notifications**. 
    - **Deadline behavior**: Available only when **Type of deployment** is set to **Required** on the Deployment Settings page. Specify the behavior that is to occur when the deadline is reached for the software update deployment. Specify whether to install the software updates in the deployment. Also specify whether to perform a system restart after software update installation regardless of a configured maintenance window. For more information about maintenance windows, see [How to use maintenance windows](https://docs.microsoft.com/sccm/core/clients/manage/collections/use-maintenance-windows). 
    - **Device restart behavior**: Available only when **Type of deployment** is set to **Required** on the Deployment Settings page. Specify whether to suppress a system restart on servers and workstations after software updates are installed and a system restart is required to complete the installation. 
 
-     >[!IMPORTANT]
-     >Suppressing system restarts can be useful in server environments or for cases in which you do not want the computers that are installing the software updates to restart by default. However, doing so can leave computers in an insecure state, whereas allowing a forced restart helps to ensure immediate completion of the software update installation.
+     > [!IMPORTANT]
+     > Suppressing system restarts can be useful in server environments or for cases in which you do not want the computers that are installing the software updates to restart by default. However, doing so can leave computers in an insecure state, whereas allowing a forced restart helps to ensure immediate completion of the software update installation.
    - **Write filter handling for Windows Embedded devices**: When you deploy software updates to Windows Embedded devices that are write filter enabled, you can specify to install the software update on the temporary overlay and either commit changes later or commit the changes at the installation deadline or during a maintenance window. When you commit changes at the installation deadline or during a maintenance window, a restart is required and the changes persist on the device. 
 
-     >[!NOTE]
-     >When you deploy a software update to a Windows Embedded device, make sure that the device is a member of a collection that has a configured maintenance window. 
+     > [!NOTE]
+     > When you deploy a software update to a Windows Embedded device, make sure that the device is a member of a collection that has a configured maintenance window. 
    - **Software updates deployment re-evaluation behavior upon restart**: Starting in Configuration Manager version 1606, select this setting to configure software updates deployments to have clients run a software updates compliance scan immediately after a client installs software updates and restarts. This enables the client to check for additional software updates that become applicable after the client restarts, and to then install them (and become compliant) during the same maintenance window. 
 8. On the Alerts page, configure how Configuration Manager and System Center Operations Manager will generate alerts for this deployment. You can configure alerts only when **Type of deployment** is set to **Required** on the Deployment Settings page. 
 
-   >[!NOTE]
-   >You can review recent software updates alerts from the Software Updates node in the Software Library workspace. 
+   > [!NOTE]
+   > You can review recent software updates alerts from the Software Updates node in the Software Library workspace. 
 9. On the Download Settings page, configure the following settings: 
    - Specify whether the client will download and install the software updates when a client is connected to a slow network or is using a fallback content location. 
    - Specify whether to have the client download and install the software updates from a fallback distribution point when the content for the software updates is not available on a preferred distribution point. 
@@ -248,8 +251,8 @@ After you determine which feature updates you intend to deploy, you can manually
    - **If software updates are not available on distribution point in current, neighbor or site groups, download content from Microsoft Updates**: Select this setting to have clients that are connected to the intranet download software updates from Microsoft Update if software updates are not available on distribution points. Internet-based clients can always go to Microsoft Update for software updates content.
    - Specify whether to allow clients to download after an installation deadline when they use metered Internet connections. Internet providers sometimes charge by the amount of data that you send and receive when you are on a metered Internet connection. 
 
-     >[!NOTE]
-     >Clients request the content location from a management point for the software updates in a deployment. The download behavior depends upon how you have configured the distribution point, the deployment package, and the settings on this page. For more information, see [Content source location scenarios](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/content-source-location-scenarios). 
+     > [!NOTE]
+     > Clients request the content location from a management point for the software updates in a deployment. The download behavior depends upon how you have configured the distribution point, the deployment package, and the settings on this page. For more information, see [Content source location scenarios](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/content-source-location-scenarios). 
 10. On the Summary page, review the settings. To save the settings to a deployment template, click **Save As Template**, enter a name and select the settings that you want to include in the template, and then click **Save**. To change a configured setting, click the associated wizard page and change the setting. 
 11. Click **Next** to deploy the feature update(s). 
 
