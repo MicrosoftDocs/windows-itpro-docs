@@ -51,8 +51,6 @@ BitLocker does not automatically manage this backup process.
 
 ## Tablet devices do not support Manage-bde -forcerecovery to test recovery mode
 
-Reference: <https://internal.support.services.microsoft.com/help/3119451/manage-bde-forcerecovery-command-is-unsupported-for-testing-recovery-m>
-
 You have a tablet or slate device, and you try to test BitLocker Recovery by running the following command:
 
 ```cmd
