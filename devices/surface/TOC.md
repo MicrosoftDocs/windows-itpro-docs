@@ -10,7 +10,6 @@
 ### [Surface Laptop 2 Tech specs](https://www.microsoft.com/surface/devices/surface-laptop/tech-specs)
 
 ## Plan
-### [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md)
 ### [Surface device compatibility with Windows 10 Long-Term Servicing Branch](surface-device-compatibility-with-windows-10-ltsc.md)
 ### [Long-Term Servicing Branch for Surface devices](ltsb-for-surface.md)
 ### [Wake On LAN for Surface devices](wake-on-lan-for-surface-devices.md)
@@ -21,6 +20,7 @@
 
 ## Deploy
 ### [Deploy Surface devices](deploy.md)
+### [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md)
 ### [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
 ### [Windows 10 ARM-based PC app compatibility](surface-pro-arm-app-performance.md)
 ### [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
