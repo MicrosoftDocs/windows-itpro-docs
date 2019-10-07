@@ -216,7 +216,7 @@ To suspend BitLocker while you install TPM or UEFI firmware updates:
    Resume-BitLocker -MountPoint "<DriveLetter>:"
    ```
 
-## After you install an update to a Hyper V-enabled computer, BitLocker prompts for the recovery key and gives error 0xC0210000
+## After you install an update to a Hyper V-enabled computer, BitLocker prompts for the recovery password and gives error 0xC0210000
 
 You have a device that runs Windows 10, version 1703, Windows 10, version 1607, or Windows Server 2016, and Hyper-V is enabled on the device. After you install an affected update and restart the computer, it enters BitLocker recovery mode and you see error code 0xC0210000.
 
@@ -224,13 +224,13 @@ You have a device that runs Windows 10, version 1703, Windows 10, version 1607, 
 
 If your device is already in this state, follow these steps:
 
-you can successfully start Windows after suspending BitLocker from the Windows Recovery Environment (WinRE)
+you can successfully start Windows after suspending BitLocker from the Windows Recovery Environment (WindowsRE)
 
-1. Retrieve the 48-digit BitLocker recovery key for the operating system drive from your organization's portal or from wherever the key was stored when BitLocker Drive Encryption was first turned on.
-1. On the Recovery screen, press Enter. When prompted, enter the recovery key.
+1. Retrieve the 48-digit BitLocker recovery password for the operating system drive from your organization's portal or from wherever the key was stored when BitLocker Drive Encryption was first turned on.
+1. On the Recovery screen, press Enter. When prompted, enter the recovery password.
 1. If your device starts in the Windows Recovery Environment (WindowsRE) and prompts for the recovery key again, select **Skip the drive**.
 1. Select **Advanced options** > **Troubleshoot** > **Advanced options** > **Command Prompt**.
-1. In the Command Prompt window, run the following commands: 
+1. In the Command Prompt window, run the following commands:
    ```cmd
    Manage-bde -unlock c: -rp <48 digit numerical recovery password separated by “-“ in 6 digit group>
    Manage-bde -protectors -disable c:
