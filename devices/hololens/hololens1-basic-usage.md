@@ -79,7 +79,7 @@ When you place an app window or app launcher, it will stay put until you remove 
 
 ## Move, resize, and rotate apps
 
-Moving and resizing apps on HoloLens works a bit differently than it does on a PC. Instead of dragging the app, you'll use your gaze, along with a [gesture](https://support.microsoft.com/help/12644/hololens-use-gestures) or the [clicker](hololens-clicker.md). You can also rotate an app window in 3D space.
+Moving and resizing apps on HoloLens works a bit differently than it does on a PC. Instead of dragging the app, you'll use your gaze, along with a [gesture](https://support.microsoft.com/help/12644/hololens-use-gestures) or the [clicker](hololens1-clicker.md). You can also rotate an app window in 3D space.
 
 > [!TIP]
 > Rearrange apps using your voice - gaze at an app and say "Face me," "Bigger," or "Smaller." Or have Cortana move an app for you: say "Hey Cortana, move \**app name\** here."
