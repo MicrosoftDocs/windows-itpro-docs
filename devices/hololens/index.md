@@ -28,9 +28,8 @@ ms.date: 07/14/2019
 
 | Guide | Description |
 | --- | --- |
-| [Get started with HoloLens](hololens-setup.md) | Set up HoloLens for the first time.  |
+| [Get started with HoloLens](hololens1-setup.md) | Set up HoloLens for the first time.  |
 | [Deploy HoloLens in a commercial environment](hololens-requirements.md) | Configure HoloLens for scale enterprise deployment and ongoing device management.  |
-| [Install and manage applications on HoloLens](hololens-install-apps.md) |Install and manage important applications on HoloLens at scale.  |
 | [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary.  |
 | [Get support](https://support.microsoft.com/products/hololens) |Connect with Microsoft support resources for HoloLens in enterprise.  |
 
@@ -45,10 +44,10 @@ ms.date: 07/14/2019
 | [HoloLens user management](hololens-multiple-users.md) | Multiple users can shared a HoloLens device by using their Azure Active Directory accounts. |
 | [HoloLens application access management](hololens-kiosk.md) | Manage application access for different user groups.  |
 | [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md) | Learn how to use Bitlocker device encryption to protect files and information stored on the HoloLens. |
-| [Install localized version of HoloLens](hololens-install-localized.md) | Configure HoloLens for different locale.  |
+| [Install localized version of HoloLens](hololens1-install-localized.md) | Configure HoloLens for different locale.  |
 
 ## Related resources
 
 * [Documentation for Holographic app development](https://developer.microsoft.com/windows/mixed-reality/development)
 * [HoloLens Commercial Suite](https://www.microsoft.com/microsoft-hololens/hololens-commercial)
-* [HoloLens release notes](https://developer.microsoft.com/en-us/windows/mixed-reality/release_notes)
+* [HoloLens release notes](https://developer.microsoft.com/windows/mixed-reality/release_notes)

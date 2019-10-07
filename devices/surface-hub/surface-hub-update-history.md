@@ -38,7 +38,7 @@ This update to the Surface Hub includes quality improvements and security fixes.
 
 Please refer to the [Surface Hub Admin guide](https://docs.microsoft.com/surface-hub/) for enabling/disabling device features and services.
 *[KB4503289](https://support.microsoft.com/help/4503289)
- </details>
+</details>
 
 <details>
 <summary>August 17, 2019—update for Team edition based on KB4512474*  (OS Build 15063.2021)</summary>

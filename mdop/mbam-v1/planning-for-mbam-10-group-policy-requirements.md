@@ -1,11 +1,11 @@
 ---
 title: Planning for MBAM 1.0 Group Policy Requirements
 description: Planning for MBAM 1.0 Group Policy Requirements
-author: msfttracyp
+author: dansimp
 ms.assetid: 0fc9c509-7850-4a8e-bb82-b949025bcb02
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

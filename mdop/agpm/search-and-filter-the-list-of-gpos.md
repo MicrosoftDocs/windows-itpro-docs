@@ -1,11 +1,11 @@
 ---
 title: Search and Filter the List of GPOs
 description: Search and Filter the List of GPOs
-author: mjcaparas
+author: dansimp
 ms.assetid: 1bc58a38-033c-4aed-9eb4-c239827f5501
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

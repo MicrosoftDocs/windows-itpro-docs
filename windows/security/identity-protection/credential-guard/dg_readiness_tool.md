@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: SteveSyfuhs
-ms.author: steve.syfuhs
+ms.author: stsyfuhs
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article

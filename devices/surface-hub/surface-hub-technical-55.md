@@ -1,12 +1,12 @@
 ---
-title: Technical information for 55" Surface Hub   
+title: Technical information for 55" Surface Hub
 ms.reviewer: 
 manager: dansimp
 description: Specifications for the 55" Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ---

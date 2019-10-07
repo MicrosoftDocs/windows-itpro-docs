@@ -1,11 +1,11 @@
 ---
 title: Planning Your Streaming Solution in an Electronic Software Distribution Implementation
 description: Planning Your Streaming Solution in an Electronic Software Distribution Implementation
-author: eavena
+author: dansimp
 ms.assetid: bc18772a-f169-486f-adb1-7af1a31845aa
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

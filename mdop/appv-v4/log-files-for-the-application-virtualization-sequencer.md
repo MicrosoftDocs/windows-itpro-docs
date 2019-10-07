@@ -1,11 +1,11 @@
 ---
 title: Log Files for the Application Virtualization Sequencer
 description: Log Files for the Application Virtualization Sequencer
-author: eavena
+author: dansimp
 ms.assetid: 1a296544-eab4-46f9-82ce-3136f8b578af
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

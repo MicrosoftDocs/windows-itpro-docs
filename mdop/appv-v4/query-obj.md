@@ -1,11 +1,11 @@
 ---
 title: QUERY OBJ
 description: QUERY OBJ
-author: eavena
+author: dansimp
 ms.assetid: 55abf0d1-c779-4172-8357-552ab010933b
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

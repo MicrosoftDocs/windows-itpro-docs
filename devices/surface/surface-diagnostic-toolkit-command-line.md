@@ -8,8 +8,10 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 11/15/2018
-ms.reviewer: 
+ms.reviewer: hachidan
 manager: dansimp
+ms.localizationpriority: normal
+ms.audience: itpro
 ---
 
 # Run Surface Diagnostic Toolkit for Business using commands

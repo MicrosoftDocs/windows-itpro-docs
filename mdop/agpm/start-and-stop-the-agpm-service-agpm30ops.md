@@ -1,11 +1,11 @@
 ---
 title: Start and Stop the AGPM Service
 description: Start and Stop the AGPM Service
-author: mjcaparas
+author: dansimp
 ms.assetid: b9d26920-c439-4992-9a78-73e4fba8309d
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

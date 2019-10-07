@@ -4,8 +4,8 @@ ms.assetid: 89c75f7e-35ca-4ca8-96fa-b3b498b53bE4
 ms.reviewer: 
 audience: itpro
 manager: dansimp
-author: eavena
-ms.author: eravena
+author: dansimp
+ms.author: dansimp
 ms.manager: dansimp
 ms.prod: edge
 ms.topic: reference

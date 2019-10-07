@@ -1,11 +1,11 @@
 ---
 title: Technical Reference for DaRT 8.0
 description: Technical Reference for DaRT 8.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 1d0bf98b-b56b-4ce6-ad19-eb85e1ff1287
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

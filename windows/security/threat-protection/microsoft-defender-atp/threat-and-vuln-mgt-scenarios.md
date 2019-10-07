@@ -25,22 +25,24 @@ ms.topic: article
 Ensure that your machines:
 - Are onboarded to Microsoft Defender Advanced Threat Protection
 - Run with Windows 10 1709 (Fall Creators Update) or later
-- Download the following set of optional security updates and deploy them in your network to boost your vulnerability detection rates:
--- KB 4512941
--- KB 4516077
--- KB 4516045
--- KB 4516071
 
 >[!NOTE]
 >Threat & Vulnerability Management can also scan machines that run on Windows 7 and Windows Server 2019 operating systems and detects vulnerabilities addressed in patch Tuesday.
 
 - Have the following mandatory updates installed:
-- (1) RS3 customers | [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)
-- (2) RS4 customers | [KB4493464](https://support.microsoft.com/en-us/help/4493464)
+- (1) RS3 customers | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)
+- (2) RS4 customers | [KB4493464](https://support.microsoft.com/help/4493464)
 - Are onboarded to Microsoft Intune and System Center Configuration Manager (SCCM). If you are use SCCM, update your console to the latest May version 1905
 - Have at least one security recommendation that can be viewed in the machine page
 - Are tagged or marked as co-managed
 
+>[!IMPORTANT]
+>To boost your vulnerability assessment detection rates, you can download the following set of optional security updates and deploy them in your network:
+>- 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+>- RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+>- RS4 customers | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+>- RS3 customers | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+><P>Downloading and deploying the above-mentioned security updates will be mandatory starting Patch Tuesday, October 8, 2019.
 
 ## Reduce your threat and vulnerability exposure
 Threat & Vulnerability Management introduces a new exposure score metric, which visually represents how exposed your machines are to imminent threats.

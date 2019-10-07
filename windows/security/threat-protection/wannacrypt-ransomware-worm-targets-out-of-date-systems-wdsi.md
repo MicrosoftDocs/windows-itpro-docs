@@ -12,7 +12,7 @@ author: dulcemontemayor
 ms.date: 07/27/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dolmont
+ms.author: dansimp
 ---
 
 # WannaCrypt ransomware worm targets out-of-date systems
@@ -195,7 +195,7 @@ For enterprises, use [Device Guard](https://technet.microsoft.com/itpro/windows/
 
 Use [Office 365 Advanced Threat Protection](https://blogs.office.com/2015/04/08/introducing-exchange-online-advanced-threat-protection/), which has machine learning capability that blocks dangerous email threats, such as the emails carrying ransomware.
 
-Monitor networks with [Windows Defender Advanced Threat Protection](https://www.microsoft.com/WindowsForBusiness/windows-atp), which alerts security operations teams about suspicious activities. Download this playbook to see how you can leverage Windows Defender ATP to detect, investigate, and mitigate ransomware in networks: [Windows Defender Advanced Threat Protection - Ransomware response playbook](https://www.microsoft.com/download/details.aspx?id=55090).
+Monitor networks with [Windows Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), which alerts security operations teams about suspicious activities. Download this playbook to see how you can leverage Windows Defender ATP to detect, investigate, and mitigate ransomware in networks: [Windows Defender Advanced Threat Protection - Ransomware response playbook](https://www.microsoft.com/download/details.aspx?id=55090).
 
 ## Resources
 

@@ -1,11 +1,11 @@
 ---
 title: How to Manually Install the MED-V Host Agent
 description: How to Manually Install the MED-V Host Agent
-author: levinec
+author: dansimp
 ms.assetid: 4becc90b-6481-4e1f-a4d3-aec74c8821ec
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,11 +1,11 @@
 ---
 title: How to Use Optional Packages in Connection Groups
 description: How to Use Optional Packages in Connection Groups
-author: msfttracyp
+author: dansimp
 ms.assetid: 4d08a81b-55e5-471a-91dc-9a684fb3c9a1
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

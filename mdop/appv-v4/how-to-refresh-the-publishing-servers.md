@@ -1,11 +1,11 @@
 ---
 title: How to Refresh the Publishing Servers
 description: How to Refresh the Publishing Servers
-author: eavena
+author: dansimp
 ms.assetid: 92e1d7b0-10ee-4531-9049-1056b44934e2
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

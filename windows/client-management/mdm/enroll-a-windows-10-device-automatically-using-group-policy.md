@@ -68,7 +68,7 @@ Also verify that the **MAM user scope** is set to **None**. Otherwise, it will h
 
     ![Azure AD device list](images/azure-ad-device-list.png)
 
-5. Verify that the MDM discovery URL during auto-enrollment is https://enrollment.manage.microsoft.com/enrollmentserver/discovery.
+5. Verify that the MDM discovery URL during auto-enrollment is https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc
 
     ![MDM discovery URL](images/auto-enrollment-mdm-discovery-url.png)
 
@@ -174,7 +174,7 @@ Requirements:
 >   1903 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2019 Update (1903) v3**
 >   4. Rename the extracted Policy Definitions folder to **PolicyDefinitions**.
 >   5. Copy PolicyDefinitions folder to **C:\Windows\SYSVOL\domain\Policies**. 
->   (N.B. If this folder does not exist, then be aware that you will be switching to a [central policy store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) for your entire domain).
+>   (If this folder does not exist, then be aware that you will be switching to a [central policy store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) for your entire domain).
 >   6. Restart the Primary Domain Controller for the policy to be available.
 >   This procedure will work for any future version as well.
 
@@ -184,10 +184,8 @@ Requirements:
 4. Filter using Security Groups.
 5. Enforce a GPO link.
 
-> [!NOTE]
-> Version 1903 (March 2019) is actually on the Insider program and doesn't yet contain a downloadable version of Templates (version 1903).
-
 ## Troubleshoot auto-enrollment of devices
+
 Investigate the log file if you have issues even after performing all the mandatory verification steps. The first log file to investigate is the event log on the target Windows 10 device. 
 
 To collect Event Viewer logs:
@@ -209,6 +207,9 @@ To collect Event Viewer logs:
 
     The auto-enrollment process is triggered by a task (Microsoft > Windows > EnterpriseMgmt) within the task-scheduler. This task appears if the *Enable automatic MDM enrollment using default Azure AD credentials* group policy (Computer Configuration > Policies > Administrative Templates > Windows Components > MDM) is successfully deployed to the target machine as shown in the following screenshot:
     ![Task scheduler](images/auto-enrollment-task-scheduler.png)
+
+    > [!Note]
+    > This task isn't visible to standard users - run Scheduled Tasks with administrative credentials to find the task.
 
     This task runs every 5 minutes for the duration of 1 day. To confirm if the task succeeded, check the task scheduler event logs:
     Applications and Services Logs > Microsoft > Windows > Task Scheduler > Operational.
@@ -241,5 +242,6 @@ To collect Event Viewer logs:
 
 ### Useful Links
 
+- [Windows 10 Administrative Templates for Windows 10 May 2019 Update 1903](https://www.microsoft.com/download/details.aspx?id=58495)
 - [Windows 10 Administrative Templates for Windows 10 October 2018 Update 1809](https://www.microsoft.com/download/details.aspx?id=57576)
 - [Windows 10 Administrative Templates for Windows 10 April 2018 Update 1803](https://www.microsoft.com/download/details.aspx?id=56880)

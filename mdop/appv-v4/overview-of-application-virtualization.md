@@ -1,11 +1,11 @@
 ---
 title: Overview of Application Virtualization
 description: Overview of Application Virtualization
-author: eavena
+author: dansimp
 ms.assetid: 80545ef4-cf4c-420c-88d6-48e9f226051f
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,12 +1,13 @@
 ---
-title:  Upgrading from MBAM 2.5 to MBAM 2.5 SP1 Servicing Release Update
-author: TobyTu 
+title: Upgrading from MBAM 2.5 to MBAM 2.5 SP1 Servicing Release Update
+author: dansimp
 ms.author: ksharma
-manager: DCSCPMCAIM365 
+manager: 
 audience: ITPro  
 ms.topic: article  
-ms.prod: mbam
-localization_priority: Normal
+ms.prod: w10
+manager: miaposto
+ms.localizationpriority: Normal
 --- 
 
 # Upgrade from MBAM 2.5 to MBAM 2.5 SP1 Servicing Release Update

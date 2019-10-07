@@ -3,13 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the Enterprise Mode Site List Manager to create and update your Enterprise Mode site list for devices running Windows 10.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 909ca359-5654-4df9-b9fb-921232fc05f5
 ms.reviewer: 
 audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Enterprise Mode schema v.2 guidance (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 12/04/2017

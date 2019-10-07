@@ -5,11 +5,12 @@ ms.author: robmazz
 manager: laurawi
 layout: LandingPage
 ms.assetid: 
+ms.audience: itpro
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 description: "Get started with Microsoft Surface devices"
-localization_priority: High
+ms.localizationpriority: High
 ---
 # Get started with Surface devices
 
@@ -27,8 +28,8 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Plan</h3>
-                        <p><a href="windows-autopilot-and-surface-devices.md">Autopilot and Surface devices</a></p>
-                        <p><a href="considerations-for-surface-and-system-center-configuration-manager.md">Surface and SCCM considerations</a></p>
+                         <p><a href="considerations-for-surface-and-system-center-configuration-manager.md">Surface and SCCM considerations</a></p>
+                         <p><a href="deploy-surface-app-with-windows-store-for-business.md">Deploy Surface app with Microsoft Store for Business</a></p>
                     </div>
                 </div>
             </div>
@@ -45,9 +46,9 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Deploy</h3>
-                        <p><a href="deploy-windows-10-to-surface-devices-with-mdt.md">Deploy with Microsoft Deployment Toolkit</a></p>
-                        <p><a href="customize-the-oobe-for-surface-deployments.md">Customize start-up experience</a></p>
-                        <p><a href="surface-system-sku-reference.md">Surface SKU reference</a></p>
+                        <p><a href="windows-autopilot-and-surface-devices.md">Autopilot and Surface devices</a></p>
+                        <p><a href="surface-pro-arm-app-management.md">Deploying, managing, and servicing Surface Pro X</a></p>
+                        <p><a href="deploy-the-latest-firmware-and-drivers-for-surface-devices.md">Deploy the latest firmware and drivers</a></p>
                     </div>
                 </div>
             </div>
@@ -64,16 +65,15 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Manage</h3>
+                        <p><a href="surface-wireless-connect.md">Optimize Wi-Fi connectivity for Surface devices</a></p>
                         <p><a href="maintain-optimal-power-settings-on-Surface-devices.md">Best practice power settings for Surface devices</a></p>
                         <p><a href="battery-limit.md">Manage battery limit with UEFI</a></p>
-                        <p><a href="deploy-the-latest-firmware-and-drivers-for-surface-devices.md">Manage driver and firmware updates</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </li>
 </ul>
-
 <ul class="panelContent cardsF">
     <li>
         <div class="cardSize">
@@ -138,10 +138,10 @@ Harness the power of Surface, Windows, and Office connected together through the
                 <div class="card">
                     <div class="cardText">
                         <h3>Discover Surface tools</h3>
+                         <P><a href="surface-dock-firmware-update.md">Surface Dock Firmware Update</a></p>
                          <P><a href="surface-diagnostic-toolkit-for-business-intro.md">Surface Diagnostic Toolkit for Business</a></p>
                          <P><a href="surface-enterprise-management-mode.md">SEMM and UEFI</a></p>
                          <P><a href="microsoft-surface-brightness-control.md">Surface Brightness Control</a></p>
-                         <P><a href="microsoft-surface-data-eraser.md">Surface Data Eraser</a></p>
                          <P><a href="battery-limit.md">Battery Limit setting</a></p>
                     </div>
                 </div>

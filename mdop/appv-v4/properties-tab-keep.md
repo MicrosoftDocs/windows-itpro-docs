@@ -1,11 +1,11 @@
 ---
 title: Properties Tab
 description: Properties Tab
-author: eavena
+author: dansimp
 ms.assetid: 6ff20678-6766-4f0d-8bbb-f19b224682a1
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

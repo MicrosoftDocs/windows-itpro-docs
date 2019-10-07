@@ -1,11 +1,11 @@
 ---
 title: DaRT 10 Planning Checklist
 description: DaRT 10 Planning Checklist
-author: msfttracyp
+author: dansimp
 ms.assetid: d6482534-cdf3-4997-bec0-33d0edf6924a
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

@@ -1,11 +1,11 @@
 ---
 title: Troubleshooting DaRT 10
 description: Troubleshooting DaRT 10
-author: msfttracyp
+author: dansimp
 ms.assetid: 76d42a00-3f6b-4730-8857-39fe49535d37
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
