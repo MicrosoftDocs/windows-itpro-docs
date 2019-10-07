@@ -1,6 +1,6 @@
 ---
 title: Enforcing BitLocker policies by using Intune  known issues
-description: 
+description: provides assistance for issues that you may see if you use Microsoft Intune policy to manage silent BitLocker encryption on devices.
 ms.reviewer: kaushika
 ms.prod: w10
 ms.sitesec: library
@@ -11,12 +11,12 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/2/2019
+ms.date: 10/7/2019
 ---
 
 # Enforcing BitLocker policies by using Intune: known issues
 
-This article provides assistance for issues you may see if you use Microsoft Intune policy to manage silent BitLocker encryption on devices. The Intune portal indicates if BitLocker has failed to encrypt on or more managed devices.
+This article provides assistance for issues that you may see if you use Microsoft Intune policy to manage silent BitLocker encryption on devices. The Intune portal indicates whether BitLocker has failed to encrypt on or more managed devices.
 
 ![The BitLocker status indictors on the Intune portal](./images/4509189_en_1.png)
 
@@ -314,13 +314,13 @@ The OMA-URI references for these settings are the following:
 
 During regular operations, BitLocker Drive Encryption generates events such as event ID 796 and event ID 845.
 
-![](./images/4509203_en_1.png)
+![Event ID 796, as shown in Event Viewer](./images/4509203_en_1.png)
 
-![](./images/4509204_en_1.png)
+![Event ID 845, as shown in Event Viewer](./images/4509204_en_1.png)
 
 You can also verify if the BitLocker Recovery Key has been uploaded to Azure by checking the device details in the Azure AD Devices section.
 
-![](./images/4509205_en_1.png)
+![BitLocker recovery key information as viewed in Azure AD](./images/4509205_en_1.png)
 
 On the device, check the Registry Editor to verify the policy settings on the device. Verify the entries under the following subkeys:
 

@@ -1,6 +1,6 @@
 ---
 title: Decode Measured Boot logs to track PCR changes
-description: 
+description: Provides instructions for installing and using a tool for analyzing log information to identify changes to PCRs
 ms.reviewer: kaushika
 ms.prod: w10
 ms.sitesec: library
@@ -11,7 +11,7 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/4/2019
+ms.date: 10/7/2019
 ---
 
 # Decode Measured Boot logs to track PCR changes
@@ -39,11 +39,11 @@ To install the tool, follow these steps:
 
 1. Accept the default installation path.
 
-   ![](./images/ts-tpm-1.png)
+   ![Specify Location page of the Windows Hardware Lab Kit installation wizard](./images/ts-tpm-1.png)
 
 1. Under **Select the features you want to install**, select **Windows Hardware Lab Kit&mdash;Controller + Studio**.
 
-   ![](./images/ts-tpm-2.png)
+   ![Select features page of the Windows Hardware Lab Kit installation wizard](./images/ts-tpm-2.png)
 
 1. Finish the installation.
 
@@ -54,7 +54,7 @@ To install the tool, follow these steps:
 
    The TBSLogGenerator.exe file resides in this folder.
 
-   ![](./images/ts-tpm-3.png)
+   ![Properties and location of the TBSLogGenerator.exe file](./images/ts-tpm-3.png)
 
 1. Run the following command:
    ```cmd
@@ -67,16 +67,16 @@ To install the tool, follow these steps:
     TBSLogGenerator.exe -LF C:\MeasuredBoot\0000000005-0000000000.log > C:\MeasuredBoot\0000000005-0000000000.txt
     ```
 
-   ![](./images/ts-tpm-4.png)
+   ![Command Prompt window that shows an example of how to use TBSLogGenerator](./images/ts-tpm-4.png)
 
    The command produces a text file that uses the specified name. In the case of the example, the file is **0000000005-0000000000.txt**. The file resides in the same folder as the original .log file.
 
-   ![](./images/ts-tpm-5.png)
+   ![Windows Explorer window that shows the text file that TBSLogGenerator produces](./images/ts-tpm-5.png)
 
 The content of this text file resembles the following:
 
-![](./images/ts-tpm-6.png)
+![Contents of the text file, as shown in NotePad](./images/ts-tpm-6.png)
 
 To find the PCR information, go to the end of the file.
 
-   ![](./images/ts-tpm-7.png)
+   ![View of NotePad that shows the PCR information at the end of the text file](./images/ts-tpm-7.png)

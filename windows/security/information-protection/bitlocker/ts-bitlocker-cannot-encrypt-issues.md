@@ -1,6 +1,6 @@
 ---
 title: BitLocker cannot encrypt a drive  known issues
-description: 
+description: Provides guidance for troubleshooting known issues that may prevent BitLocker Drive Encryption from encrypting a drive
 ms.reviewer: kaushika
 ms.prod: w10
 ms.sitesec: library
@@ -79,11 +79,11 @@ To verify that this issue has occurred, follow these steps:
 
 1. Copy this output, and then use it as part of the [**ConvertFrom-SddlString**](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/convertfrom-sddlstring?view=powershell-6) command in the PowerShell window, as follows:
 
-   ![](./images/ts-bitlocker-usb-sddl.png)
+   ![Output of the ConvertFrom-SddlString command, showing NT AUTHORITY\\INTERACTIVE](./images/ts-bitlocker-usb-sddl.png)
 
    If you see NT AUTHORITY\INTERACTIVE (as highlighted), in the output of this command, this is the cause of the problem. Under typical conditions, the output should resemble the following:
 
-   ![default](./images/ts-bitlocker-usb-default-sddl.png)
+   ![Output of the ConvertFrom-SddlString command, showing NT AUTHORITY\\Authenticated Users](./images/ts-bitlocker-usb-default-sddl.png)
 
 > [!NOTE]
 > GPOs that change the security descriptors of services have been known to cause this issue.
