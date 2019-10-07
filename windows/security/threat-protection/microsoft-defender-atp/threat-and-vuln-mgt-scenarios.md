@@ -30,8 +30,8 @@ Ensure that your machines:
 >Threat & Vulnerability Management can also scan machines that run on Windows 7 and Windows Server 2019 operating systems and detects vulnerabilities addressed in patch Tuesday.
 
 - Have the following mandatory updates installed and deployed in your network to boost your vulnerability assessment detection rates:
-<br></br>
-Releas | Security update KB number and link
+
+> Releas | Security update KB number and link
 :---|:---
 RS3 customers | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) and [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
 RS4 customers| [KB4493464](https://support.microsoft.com/help/4493464) and [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
