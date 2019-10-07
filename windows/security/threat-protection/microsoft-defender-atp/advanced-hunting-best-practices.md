@@ -25,25 +25,23 @@ ms.date: 09/25/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-bestpractices-abovefoldlink)
 
-## Performance best practices
-Apply the following best practices to get results faster and avoid timeouts while running complex queries. 
+## Optimize query performance
+Apply the recommendations to get results faster and avoid timeouts while running complex queries: 
 - When trying new queries, always use `limit` to avoid extremely large result sets. You can also initially assess the size of the result set using `count`.
-- Use time filters first. Ideally, limit your queries to 7 days.
+- Use time filters first. Ideally, limit your queries to seven days.
 - Put filters that are expected to remove most of the data in the beginning of the query, right after the time filter.
 - Use the `has` operator over `contains` when looking for full tokens.
 - Look in a specific column rather than running full text searches across all columns.
 - When joining tables, specify the table with fewer rows first.
-- `project` only the necessary columns from tables you have joined.
+- `project` only the necessary columns from tables you've joined.
 
 >[!TIP]
 >For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
 ## Query tips and pitfalls
 
-### Using process IDs
-Process IDs (PIDs) are recycled in Windows and reused for new processes. On their own, they can't serve as unique identifiers for specific processes. To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time.
-
-When you join data based on a specific process or summarize data for each process, you'll need to use a machine identifier (either `MachineId` or `ComputerName`), a process ID (`ProcessId` or `InitiatingProcessId`), and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`)
+### Queries with process IDs
+Process IDs (PIDs) are recycled in Windows and reused for new processes. On their own, they can't serve as unique identifiers for specific processes. To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time. When you join or summarize data around processes, include columns for the machine identifier (either `MachineId` or `ComputerName`), the process ID (`ProcessId` or `InitiatingProcessId`), and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`).
 
 The following example query finds processes that access more than 10 IP addresses over port 445 (SMB), possibly scanning for file shares.
 
@@ -56,20 +54,19 @@ NetworkCommunicationEvents
 
 The query summarizes by both `InitiatingProcessId` and `InitiatingProcessCreationTime` so that it looks at a single process, without mixing multiple processes with the same process ID.
 
-### Using command lines
-
+### Queries with command lines
 Command lines can vary. When applicable, filter on file names and do fuzzy matching.
 
-There are numerous ways to construct a command line to accomplish a task. For example, an attacker could specify the process image file name without a path, with the full path, without the file extension, using environment variables, or with quotes. In addition, the attacker can also change the order of some parameters or add multiple quotes and spaces.
+There are numerous ways to construct a command line to accomplish a task. For example, an attacker could reference an image file with or without a path, without a file extension, using environment variables, or with quotes. In addition, the attacker could also change the order of parameters or add multiple quotes and spaces.
 
-To create more durable queries using command lines, we recommended the following guidelines:
+To create more durable queries using command lines, apply the following practices:
 
-- Identify the known processes (such as *net.exe* or *psexec.exe*) by matching on the filename fields, instead of filtering on the command line field.
-- When querying for command line arguments, don't look for an exact match on multiple unrelated arguments in a certain order. Instead, use regular expressions or use multiple separate contains operators.
+- Identify the known processes (such as *net.exe* or *psexec.exe*) by matching on the filename fields, instead of filtering on the command-line field.
+- When querying for command-line arguments, don't look for an exact match on multiple unrelated arguments in a certain order. Instead, use regular expressions or use multiple separate contains operators.
 - Use case insensitive matches. For example, use `=~`, `in~`, `contains` instead of `==`, `in` or `contains_cs`
-- To mitigate DOS command line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space. Note that there are more complex DOS obfuscation techniques that require other approaches, but these can help address the most common ones.
+- To mitigate DOS command-line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space. Note that there are more complex DOS obfuscation techniques that require other approaches, but these can help address the most common ones.
 
-The following example query shows various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:
+The following examples show various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:
 
 ```
 // Non-durable query - do not use

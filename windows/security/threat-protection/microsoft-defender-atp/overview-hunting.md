@@ -25,7 +25,7 @@ ms.topic: article
 
 Advanced hunting provides access to 30 days of raw data through a flexible query-based interface, allowing you to proactively explore events in your environment and locate interesting indicators and entities. This flexible access to data enables unconstrained hunting for both known and potential threats. 
 
-With custom detection rules, you can also leverage Advanced hunting queries to proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured machines.
+With custom detection rules, you can also use Advanced hunting queries to proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured machines.
 
 ## Get started with Advanced hunting
 
@@ -33,14 +33,14 @@ We recommend going through several steps to quickly get up and running with Adva
 
 | Learning goal | Description | Resource |
 |--|--|--|
-| **Get a feel for the language** | Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/en-us/azure/kusto/query/) and thus supports the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting.md) |
+| **Get a feel for the language** | Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/en-us/azure/kusto/query/), supporting the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting.md) |
 | **Understand the schema** | Get a good, high-level understanding of the tables in the schema and their columns. This will help you determine where to look for data and how to construct your queries. | [Schema reference](advanced-hunting-reference.md) |
 | **Use predefined queries** | Explore collections of predefined queries covering different threat hunting scenarios. | [Shared queries](advanced-hunting-shared-queries.md) |
 | **Learn about custom detections** | Understand how you can use advanced hunting queries to trigger alerts and apply response actions automatically. | [Custom detections overview](overview-custom-detections.md) |  
 
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:
-- **Autosuggest** — as you write queries, Advanced hunting provides suggestions.. 
+- **Autosuggest** — as you write queries, Advanced hunting provides suggestions. 
 - **Schema reference** — a schema reference that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
 
 ## Drilldown from query results

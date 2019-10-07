@@ -198,7 +198,7 @@ Use the following snippet in your kiosk configuration XML to enable the **Guest*
     ![Kiosk Mode](images/kiosk.png)
 
     >[!NOTE]
-    >The kiosk mode option will be available if the device is [enrolled in device management](hololens-enroll-mdm.md) and has a [license to upgrade to Windows Holographic for Business](hololens-upgrade-enterprise.md).
+    >The kiosk mode option will be available if the device is [enrolled in device management](hololens-enroll-mdm.md) and has a [license to upgrade to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 
 5. Select **Enable Kiosk Mode**, choose an app to run when the device starts, and click **Save**.
 
