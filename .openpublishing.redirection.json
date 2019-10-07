@@ -721,11 +721,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/audit-windows-defender-exploit-guard.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-exploit-protection",
 "redirect_document_id": true
