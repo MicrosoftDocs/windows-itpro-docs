@@ -11,7 +11,6 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 12/10/2018
 ms.reviewer: 
 manager: dansimp
 ---
@@ -41,7 +40,7 @@ MpCmdRun.exe [command] [-options]
 | Command                                                                                                 | Description                                                                                            |
 |:--------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------|
 | \-? **or** -h                                                                                           | Displays all available options for this tool                                                           |
-| \-Scan [-ScanType #] [-File \<path> [-DisableRemediation] [-BootSectorScan]] [-Timeout \<days>] [-Cancel] | Scans for malicious software                                                                           |
+| \-Scan [-ScanType [0\|1\|2\|3]] [-File \<path> [-DisableRemediation] [-BootSectorScan]] [-Timeout \<days>] [-Cancel] | Scans for malicious software. Values for **ScanType** are: **0** Default, according to your configuration, **1** Quick scan, **2** Full scan, **3** File and directory custom scan.                                                                            |
 | \-Trace [-Grouping #] [-Level #]                                                                        | Starts diagnostic tracing                                                                              |
 | \-GetFiles                                                                                              | Collects support information                                                                           |
 | \-GetFilesDiagTrack                                                                                     | Same as Getfiles but outputs to temporary DiagTrack folder                                             |
