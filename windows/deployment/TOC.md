@@ -240,6 +240,16 @@
 #### [Delivery Optimization reference](update/waas-delivery-optimization-reference.md)
 #### [Configure BranchCache for Windows 10 updates](update/waas-branchcache.md)
 #### [Whitepaper: Windows Updates using forward and reverse differentials](update/PSFxWhitepaper.md)
+### Monitor Windows Updates
+#### [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md)
+#### [Get started with Update Compliance](update/update-compliance-get-started.md)
+#### [Use Update Compliance](update/update-compliance-using.md)
+##### [Need Attention! report](update/update-compliance-need-attention.md)
+##### [Security Update Status report](update/update-compliance-security-update-status.md)
+##### [Feature Update Status report](update/update-compliance-feature-update-status.md)
+##### [Windows Defender AV Status report](update/update-compliance-wd-av-status.md)
+##### [Delivery Optimization in Update Compliance](update/update-compliance-delivery-optimization.md)
+##### [Update Compliance Perspectives](update/update-compliance-perspectives.md)
 ### Best practices
 #### [Best practices for feature updates on mission-critical devices](update/feature-update-mission-critical.md)
 #### [Deploy feature updates during maintenance windows](update/feature-update-maintenance-window.md)
@@ -260,7 +270,6 @@
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
 ### [Determine the source of Windows updates](update/windows-update-sources.md)
-
 ## Windows Analytics
 ### [Windows Analytics overview](update/windows-analytics-overview.md)
 ### [Windows Analytics in the Azure Portal](update/windows-analytics-azure-portal.md)
@@ -281,16 +290,6 @@
 ##### [Step 4: Monitor deployment](upgrade/upgrade-readiness-monitor-deployment.md)
 ##### [Additional insights](upgrade/upgrade-readiness-additional-insights.md)
 ##### [Targeting a new operating system version](upgrade/upgrade-readiness-target-new-OS.md)
-### Monitor Windows Updates
-#### [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md)
-#### [Get started with Update Compliance](update/update-compliance-get-started.md)
-#### [Use Update Compliance](update/update-compliance-using.md)
-##### [Need Attention! report](update/update-compliance-need-attention.md)
-##### [Security Update Status report](update/update-compliance-security-update-status.md)
-##### [Feature Update Status report](update/update-compliance-feature-update-status.md)
-##### [Windows Defender AV Status report](update/update-compliance-wd-av-status.md)
-##### [Delivery Optimization in Update Compliance](update/update-compliance-delivery-optimization.md)
-##### [Update Compliance Perspectives](update/update-compliance-perspectives.md)
 ### Device Health
 #### [Device Health overview](update/device-health-monitor.md)
 #### [Get started with Device Health](update/device-health-get-started.md)
