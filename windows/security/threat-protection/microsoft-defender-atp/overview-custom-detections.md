@@ -28,7 +28,7 @@ With custom detections, you can proactively monitor for and respond to various e
 Custom detections work with [Advanced hunting](overview-hunting.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network. The queries run every 24 hours, generating alerts and taking response actions whenever there are matches.
 
 Custom detections provide:
-- Alerts from rule-based detections built from Advanced hunting queries
+- Alerts for rule-based detections built from Advanced hunting queries
 - Automatic response actions that apply to files and machines
 
 >[!NOTE]
@@ -36,3 +36,4 @@ Custom detections provide:
 
 ## Related topic
 - [Create and manage custom detection rules](custom-detection-rules.md)
+- [Advanced hunting overview](overview-hunting.md)
