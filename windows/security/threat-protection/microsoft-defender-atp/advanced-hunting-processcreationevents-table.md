@@ -26,9 +26,9 @@ ms.date: 07/24/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The ProcessCreationEvents table in the Advanced hunting schema contains information about process creation and related events. Use this reference to construct queries that return information from the table.
+The ProcessCreationEvents table in the [Advanced hunting](overview-hunting.md) schema contains information about process creation and related events. Use this reference to construct queries that return information from the table.
 
-For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-reference.md).
+For information on other tables in the Advanced hunting schema, see [the Advanced hunting schema reference](advanced-hunting-reference.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
@@ -71,8 +71,6 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 
 ## Related topics
-
 - [Advanced hunting overview](overview-hunting.md)
-- [All Advanced hunting tables](advanced-hunting-reference.md)
-- [Advanced hunting query best practices](advanced-hunting-best-practices.md)
-- [Query data using Advanced hunting](advanced-hunting.md)
+- [Learn the query language](advanced-hunting.md)
+- [Understand the schema](advanced-hunting-reference.md)
