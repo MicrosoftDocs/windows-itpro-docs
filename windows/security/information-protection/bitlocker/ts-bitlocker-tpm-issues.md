@@ -1,6 +1,6 @@
 ---
 title: BitLocker and TPM other known issues
-description: 
+description: Describes common issues that relate directly to the TPM, and provides guidance for resolving those issues.
 ms.reviewer: kaushika
 ms.prod: w10
 ms.sitesec: library
@@ -11,12 +11,12 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/3/2019
+ms.date: 10/7/2019
 ---
 
 # BitLocker and TPM: other known issues
 
-This article describes common issues that relate directly to the TPM.
+This article describes common issues that relate directly to the TPM, and provides guidance for resolving those issues.
 
 ## Azure AD: Windows Hello for Business and single sign-on do not work
 
