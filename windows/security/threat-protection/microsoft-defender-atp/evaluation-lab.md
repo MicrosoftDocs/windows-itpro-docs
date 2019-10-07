@@ -26,8 +26,9 @@ Conducting a comprehensive security product evaluation can be a complex process 
 The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of machine and environment configuration so that you can
  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
 
-When you get started with the lab, you'll be guided through a simple set-up process where your tenant will be provisioned with test machines.
-You can choose to use Windows 10 or Windows Server 2019 machines. These test machines will come pre-configured to have the latest and greatest OS versions with the right security components in place and Office 2019 Standard installed.
+When you get started with the lab, you'll be guided through a simple set-up process where you can specify the type of configuration that best suits your needs.
+
+After the lab setup process is complete, you can add Windows 10 or Windows Server 2019 machines. These test machines come pre-configured to have the latest and greatest OS versions with the right security components in place and Office 2019 Standard installed.
 
 With the simplified set-up experience, you can focus on running your own test scenarios and the pre-made simulations to see how Microsoft Defender ATP performs. 
 
