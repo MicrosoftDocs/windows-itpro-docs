@@ -162,7 +162,7 @@ Requirements:
 >   3. Navigate, depending on the version to the folder:
 >   1903 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2019 Update (1903) v3**, or  
 >   1809 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 October 2018 Update (1809) v2**
->   4. Copy policy definitions folder to **C:\Windows\SYSVOL\domain\Policies** or **%windir%\sysvol\domain_name\policies\PolicyDefinitions** if an Group Policy Central Store exists.
+>   4. Copy the policy definitions folder to **C:\Windows\SYSVOL\domain\Policies** or **%windir%\sysvol\domain_name\policies\PolicyDefinitions** if a Group Policy Central Store exists.
 >   This procedure will work for any future version as well.
 
 1. Create a Group Policy Object (GPO) and enable the Group Policy **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
