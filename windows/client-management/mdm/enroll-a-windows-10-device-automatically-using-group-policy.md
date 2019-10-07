@@ -37,7 +37,7 @@ The auto-enrollment relies on the presence of an MDM service and the Azure Activ
 
 When the auto-enrollment Group Policy is enabled, a task is created in the background that initiates the MDM enrollment. The task will use the existing MDM service configuration from the Azure Active Directory information of the user. If multi-factor authentication is required, the user will get a prompt to complete the authentication. Once the enrollment is configured, the user can check the status in the Settings page.
 
-In Windows 10, version 1709, when the same policy is configured in GP and MDM, the GP policy wins (GP policy takes precedence over MDM). Since Windows 10, version 1803, a new setting allows you to change the policy conflict winner to MDM. For additional information, see [Windows 10 Group Policy vs. Intune MDM Policy who wins?](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/).
+In Windows 10, version 1709 or later, when the same policy is configured in GP and MDM, the GP policy wins (GP policy takes precedence over MDM). Since Windows 10, version 1803, a new setting allows you to change the policy conflict winner to MDM. For additional information, see [Windows 10 Group Policy vs. Intune MDM Policy who wins?](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/).
 
 For this policy to work, you must verify that the MDM service provider allows the GP triggered MDM enrollment for domain joined devices.
 
@@ -90,7 +90,7 @@ You may contact your domain administrators to verify if the group policy has bee
 This procedure is only for illustration purposes to show how the new auto-enrollment policy works. It is not recommended for the production environment in the enterprise. For bulk deployment, you should use the [Group Policy Management Console process](#configure-the-auto-enrollment-for-a-group-of-devices).
 
 Requirements:
-- AD-joined PC running Windows 10, version 1709
+- AD-joined PC running Windows 10, version 1709 or later
 - Enterprise has MDM service already configured 
 - Enterprise AD must be registered with Azure AD
 
@@ -148,7 +148,7 @@ Requirements:
 ## Configure the auto-enrollment for a group of devices
 
 Requirements:
-- AD-joined PC running Windows 10, version 1709
+- AD-joined PC running Windows 10, version 1709 or later
 - Enterprise has MDM service already configured (with Intune or a third party service provider)
 - Enterprise AD must be integrated with Azure AD.
 - Ensure that PCs belong to same computer group.
