@@ -1,6 +1,6 @@
 ---
 title: BitLocker Network Unlock known issues
-description: 
+description: Describes several known issues that you may encounter while using Network Unlock, and provided guidance for addressing those issues.
 ms.reviewer: kaushika
 ms.prod: w10
 ms.sitesec: library
@@ -11,7 +11,7 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 9/27/2019
+ms.date: 10/7/2019
 ---
 # BitLocker Network Unlock: known issues
 
