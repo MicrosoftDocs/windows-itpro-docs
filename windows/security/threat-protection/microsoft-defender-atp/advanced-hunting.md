@@ -25,7 +25,7 @@ ms.date: 09/25/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
-Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/en-us/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-reference.md) specifically structured for Advanced hunting. To understand these concepts better, run your first query.
+Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-reference.md) specifically structured for Advanced hunting. To understand these concepts better, run your first query.
 
 ## Try your first query
 
@@ -133,7 +133,7 @@ The **Get started** section provides a few simple queries using commonly used op
 
 ## Access query language documentation
 
-For more information on Kusto query language and supported operators, see  [Query Language](https://docs.microsoft.com/en-us/azure/kusto/query/).
+For more information on Kusto query language and supported operators, see  [Query Language](https://docs.microsoft.com/azure/kusto/query/).
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
 

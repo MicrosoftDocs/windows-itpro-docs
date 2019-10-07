@@ -57,7 +57,7 @@ You can save a new or existing query so that it is only accessible to you or sha
 Microsoft security researchers regularly share Advanced hunting queries in a [designated public repository on GitHub](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries). This repository is open to contributions. To contribute, [join GitHub for free](https://github.com/). 
 
 >[!TIP]
->Microsoft security researchers also provide Advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.
+>Microsoft security researchers also provide Advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](threat-analytics.md) reports in Microsoft Defender Security Center.
 
 ## Related topics
 - [Advanced hunting overview](overview-hunting.md)
