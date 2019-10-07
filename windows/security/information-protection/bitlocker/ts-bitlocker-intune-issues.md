@@ -70,7 +70,7 @@ In this case, you see event ID 853, and the error message in the event indicates
 
 ### Cause
 
-During the provisioning process, BitLocker Drive Encryption records the configuration of the device to establish a baseline. If the device configuration changes at a later time, BitLocker Recovery automatically starts. If the device has removable bootable media on board during the provisioning process, removing that media triggers BitLocker Recovery.
+During the provisioning process, BitLocker Drive Encryption records the configuration of the device to establish a baseline. If the device configuration changes at a later time, BitLocker recovery mode automatically starts. If the device has removable bootable media on board during the provisioning process, removing that media triggers BitLocker recovery mode.
 
 To avoid this situation, the provisioning process stops if it detects removable bootable media.
 
@@ -318,7 +318,7 @@ During regular operations, BitLocker Drive Encryption generates events such as e
 
 ![Event ID 845, as shown in Event Viewer](./images/4509204_en_1.png)
 
-You can also verify if the BitLocker Recovery Key has been uploaded to Azure by checking the device details in the Azure AD Devices section.
+You can also verify if the BitLocker recovery Key has been uploaded to Azure by checking the device details in the Azure AD Devices section.
 
 ![BitLocker recovery key information as viewed in Azure AD](./images/4509205_en_1.png)
 
