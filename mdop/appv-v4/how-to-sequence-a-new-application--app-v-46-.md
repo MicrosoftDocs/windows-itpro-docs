@@ -5,7 +5,7 @@ author: dansimp
 ms.assetid: f2c398c6-9200-4be3-b502-e00386fcd150
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
