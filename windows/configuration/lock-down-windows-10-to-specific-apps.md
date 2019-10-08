@@ -411,7 +411,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups are not supporte
 <span id="add-xml" />
 
 #### [Preview] Global Profile
-Global profile is added in curernt Windows 10 Prerelease. There are times when IT Admin wants to everyone who logging into a specific devices are assigned access users, even there is no dedicated profile for that user, or there are times that Assigned Access could not identify a profile for the user and a fallback profile is wished to use. Global Profile is designed for these scenarios.
+Global profile is added in current Windows 10 Prerelease. There are times when IT Admin wants to everyone who logging into a specific devices are assigned access users, even there is no dedicated profile for that user, or there are times that Assigned Access could not identify a profile for the user and a fallback profile is wished to use. Global Profile is designed for these scenarios.
 
 Usage is demonstrated below, by using the new xml namespace and specify GlobalProfile from that namespace. When GlobalProfile is configured, a non-admin account logs in, if this user does not have designated profile in Assigned Access, or Assigned Access fails to determine a profile for current user, global profile will be applied for the user.
 
