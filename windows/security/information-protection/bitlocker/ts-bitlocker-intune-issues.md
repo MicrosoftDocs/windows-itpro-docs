@@ -174,7 +174,7 @@ A Platform Configuration Register (PCR) is a memory location in the TPM. PCR 7, 
 
 ### Resolution
 
-### Verify the PCR validation profile of the TPM
+#### 1. Verify the PCR validation profile of the TPM
 
 To verify that PCR 7 is in use, open an elevated Command Prompt window and run the following command:
 
