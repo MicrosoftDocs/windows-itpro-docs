@@ -37,6 +37,7 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 - Windows 10 Enterprise E5
 - Windows 10 Education E5
 - Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5
+- Microsoft 365 E3 (M365 E3) with Identity and Threat Protection package
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
@@ -99,6 +100,10 @@ When you run the onboarding wizard for the first time, you must choose where you
 
 
 ### Diagnostic data settings
+
+> [!NOTE]
+> Microsoft Defender ATP doesn't require any specific diagnostic level as long as it's enabled.
+
 You must ensure that the diagnostic data service is enabled on all the machines in your organization.
 By default, this service is enabled, but it&#39;s good practice to check to ensure that you&#39;ll get sensor data from them.
 

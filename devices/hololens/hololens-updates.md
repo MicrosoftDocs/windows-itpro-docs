@@ -15,7 +15,7 @@ manager: dansimp
 # Manage updates to HoloLens
 
 >[!NOTE]
->HoloLens devices must be [upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md) to manage updates.
+>HoloLens devices must be [upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md) to manage updates.
 
 For a complete list of Update policies, see [Policies supported by Windows Holographic for Business](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#a-href-idhololenspoliciesapolicies-supported-by-windows-holographic-for-business).
 

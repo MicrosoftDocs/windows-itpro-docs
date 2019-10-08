@@ -36,9 +36,9 @@ Attack surface reduction rules target behaviors that malware and malicious apps 
 * Obfuscated or otherwise suspicious scripts
 * Behaviors that apps don't usually initiate during normal day-to-day work
 
-You can use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks similar to malware. By monitoring audit data and [adding exclusions](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
+You can use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
 
-Triggered rules display a notification on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays in the Microsoft Defender Security Center and in the Microsoft 365 securty center.
+Triggered rules display a notification on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays in the Microsoft Defender Security Center and in the Microsoft 365 security center.
 
 For information about configuring attack surface reduction rules, see [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 
