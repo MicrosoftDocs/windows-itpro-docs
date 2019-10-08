@@ -22,7 +22,7 @@ ms.topic: article
 Windows Analytics is a set of solutions for Azure Portal that provide you with extensive data about the state of devices in your deployment. There are currently three solutions which you can use singly or in any combination:
 
 >[!IMPORTANT]
->[Update Compliance](update-compliance-get-started.md) is moving out of Windows Analytics. Windows Analytics is being retired, but Update Compliance will continue to be supported. For more information, see the [Update Compliance FAQ](windows-analytics-get-started.md).
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/en-us/help/4521815/windows-analytics-retirement).
 
 
 ## Device Health
