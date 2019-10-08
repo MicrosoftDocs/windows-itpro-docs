@@ -60,7 +60,7 @@ If the error occurs again, check the error code against the following table to s
 
 <tr class="odd">
 <td align="left">0x80090036</td>
-<td align="left">User cancelled an interactive dialog</td>
+<td align="left">User canceled an interactive dialog</td>
 <td align="left">User will be asked to try again</td>
 </tr>
 <tr class="even">
