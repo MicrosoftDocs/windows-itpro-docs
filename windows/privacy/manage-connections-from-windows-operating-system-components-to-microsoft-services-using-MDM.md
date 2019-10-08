@@ -164,6 +164,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 |client.wns.windows.com|
 |crl.microsoft.com/pki/crl/*|
 |ctldl.windowsupdate.com|
+|*displaycatalog.mp.microsoft.com|
 |dm3p.wns.windows.com|
 |\*microsoft.com/pkiops/\*|
 |ocsp.digicert.com/*|
