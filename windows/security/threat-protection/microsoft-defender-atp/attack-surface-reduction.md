@@ -207,7 +207,7 @@ This rule blocks the following file types from launching unless they either meet
 * Executable files (such as .exe, .dll, or .scr)
 
 > [!NOTE]
-> You must [enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus) to use this rule.
+> You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule.
 
 > [!IMPORTANT]
 > The rule **Block executable files from running unless they meet a prevalence, age, or trusted list criterion** with GUID 01443614-cd74-433a-b99e-2ecdc07bfc25 is owned by Microsoft and is not specified by admins. It uses cloud-delivered protection to update its trusted list regularly.
@@ -227,7 +227,7 @@ GUID: 01443614-cd74-433a-b99e-2ecdc07bfc25
 This rule provides an extra layer of protection against ransomware. It scans executable files entering the system to determine whether they're trustworthy. If the files closely resemble ransomware, this rule blocks them from running, unless they're in a trusted list or exclusion list.
 
 > [!NOTE]
-> You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus) to use this rule.
+> You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule.
 
 This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, SCCM CB 1802
 
@@ -328,4 +328,4 @@ GUID: e6db77e5-3df2-4cf1-b95a-636979351e5b
 
 * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-* [Compatibility of Microsoft Defender with other antivirus/antimalware](../windows-defender-antivirus/windows-defender-antivirus-compatibility)
+* [Compatibility of Microsoft Defender with other antivirus/antimalware](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md)
