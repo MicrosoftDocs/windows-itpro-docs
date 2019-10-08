@@ -49,7 +49,7 @@ You can use either of the following approaches to manually back up or synchroniz
 
 BitLocker does not automatically manage this backup process. 
 
-## Tablet devices do not support Manage-bde -forcerecovery to test recovery mode
+## Tablet devices do not support using Manage-bde -forcerecovery to test recovery mode
 
 You have a tablet or slate device, and you try to test BitLocker Recovery by running the following command:
 
