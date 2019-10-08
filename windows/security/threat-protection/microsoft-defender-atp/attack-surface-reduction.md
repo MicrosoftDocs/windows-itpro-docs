@@ -1,7 +1,7 @@
 ---
 title: Use attack surface reduction rules to prevent malware infection
 description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect machines with malware
-keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention
+keywords: Attack surface reduction, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention,
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -27,7 +27,7 @@ manager: dansimp
 
 Attack surface reduction rules help prevent behaviors malware often uses to infect computers with malicious code. You can set attack surface reduction rules for computers running Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, or Windows Server 2019.
 
-To use the entire feature set of attack surface reduction rules, you need a Windows 10 Enterprise license. With a Windows E5 license you get advanced management capabilities including monitoring, analytics, and workflows available in [Microsoft Defender Advanced Threat Protection](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the Microsoft 365 security Center. These advanced capabilities aren't available with an E3 license or with Windows 10 Enterprise without subscription, but you can use attack surface reduction rule events in Event Viewer to help facilitate deployment.
+To use the entire feature set of attack surface reduction rules, you need a Windows 10 Enterprise license. With a Windows E5 license you get advanced management capabilities including monitoring, analytics, and workflows available in [Microsoft Defender Advanced Threat Protection](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the Microsoft 365 security center. These advanced capabilities aren't available with an E3 license or with Windows 10 Enterprise without subscription, but you can use attack surface reduction rule events in Event Viewer to help facilitate deployment.
 
 Attack surface reduction rules target behaviors that malware and malicious apps typically use to infect computers, including:
 
