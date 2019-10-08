@@ -15252,6 +15252,11 @@
 "redirect_document_id": false
 },
 {
+    "source_path": "devices/surface/surface-dock-updater.md",
+    "redirect_url": "/surface/surface-dock-firmware-update",
+    "redirect_document_id": true
+    },
+{
 "source_path": "education/get-started/use-school-data-sync.md",
 "redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy/school-data-sync",
 "redirect_document_id": false
