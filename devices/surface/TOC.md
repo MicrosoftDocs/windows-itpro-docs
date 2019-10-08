@@ -39,8 +39,7 @@
 ### [Battery Limit setting](battery-limit.md)
 ### [Surface Brightness Control](microsoft-surface-brightness-control.md)
 ### [Surface Asset Tag](assettag.md)
-### [Surface firmware and driver updates](update.md)
-### [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)
+### [Manage Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md)
 
 ## Secure
 ### [Manage Surface UEFI settings](manage-surface-uefi-settings.md)
