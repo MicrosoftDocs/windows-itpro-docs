@@ -962,7 +962,9 @@ Value type is string. Supported operation is Execute. Request ID is expected as 
 Interior node. Supported operation is Get.
 
 <a href="" id="status-deviceencryptionstatus"></a>**Status/DeviceEncryptionStatus**  
-This node reports compliance state of device encryption on the system.
+This node reports compliance state of device encryption on the system. 
+See [Monitor device encryption with Intune](https://docs.microsoft.com/intune/protect/encryption-monitor) for more information.
+
 <table>
 <tr>
     <th>Home</th>
