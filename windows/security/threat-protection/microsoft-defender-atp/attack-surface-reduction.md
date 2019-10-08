@@ -1,7 +1,7 @@
 ---
 title: Use attack surface reduction rules to prevent malware infection
 description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect machines with malware
-keywords: Attack surface reduction, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention,
+keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -27,7 +27,7 @@ manager: dansimp
 
 Attack surface reduction rules help prevent behaviors malware often uses to infect computers with malicious code. You can set attack surface reduction rules for computers running Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, or Windows Server 2019.
 
-To use the entire feature set of attack surface reduction rules, you need a Windows 10 Enterprise license. With a Windows E5 license you get advanced management capabilities including monitoring, analytics, and workflows available in [Microsoft Defender Advanced Threat Protection](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the Microsoft 365 security center. These advanced capabilities aren't available with an E3 license or with Windows 10 Enterprise without subscription, but you can use attack surface reduction rule events in Event Viewer to help facilitate deployment.
+To use the entire feature set of attack surface reduction rules, you need a Windows 10 Enterprise license. With a Windows E5 license you get advanced management capabilities including monitoring, analytics, and workflows available in [Microsoft Defender Advanced Threat Protection](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the Microsoft 365 security center. These advanced capabilities aren't available with an E3 license, but you can use Event Viewer to review attack surface reduction rule events.
 
 Attack surface reduction rules target behaviors that malware and malicious apps typically use to infect computers, including:
 
@@ -45,7 +45,7 @@ For information about configuring attack surface reduction rules, see [Enable at
 
 Microsoft Defender ATP provides detailed reporting into events and blocks as part of its alert investigation scenarios.
 
-You can query Microsoft Defender ATP data by using [Advanced hunting](advanced-hunting.md). If you're using [audit mode](audit-windows-defender.md), you can use Advanced hunting to see how controlled folder access settings could affect your environment.
+You can query Microsoft Defender ATP data by using [Advanced hunting](advanced-hunting.md). If you're using [audit mode](audit-windows-defender.md), you can use Advanced hunting to understand how attack surface reduction rules could affect your environment.
 
 Here is an example query:
 
