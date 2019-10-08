@@ -1,7 +1,7 @@
 ---
 title: Overview of web protection in Microsoft Defender ATP
 description: Learn about web protection in Microsoft Defender ATP and how it can protect your organization
-keywords: web protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser 
+keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -21,8 +21,6 @@ ms.date: 08/30/2019
 # Protect your organization against web threats
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
-
-[!include[Prerelease information](prerelease.md)]
 
 Web protection in Microsoft Defender ATP leverages [network protection](network-protection.md) to secure your machines against web threats without relying on a web proxy, providing security for devices that are either away or on premises. By integrating with Microsoft Edge as well as popular third-party browsers like Chrome and Firefox, web protection stops access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, as well as sites that you have blocked in your [custom indicator list](manage-indicators.md).
 

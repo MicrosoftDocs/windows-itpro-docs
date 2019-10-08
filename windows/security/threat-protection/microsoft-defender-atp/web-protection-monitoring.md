@@ -1,7 +1,7 @@
 ---
 title: Monitoring web browsing security in Microsoft Defender ATP
 description: Use web protection in Microsoft Defender ATP to monitor web browsing security
-keywords: web protection, web browsing, monitoring, reports, cards, domain list, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser 
+keywords: web protection, web threat protection, web browsing, monitoring, reports, cards, domain list, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -21,8 +21,6 @@ ms.date: 08/30/2019
 # Monitor web browsing security
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
-
-[!include[Prerelease information](prerelease.md)]
 
 Web protection lets you monitor your organization’s web browsing security through reports under **Reports > Web protection** in the Microsoft Defender Security Center. The report contains the following cards that provide web threat detection statistics:
 
