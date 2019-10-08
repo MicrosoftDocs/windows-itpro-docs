@@ -1516,6 +1516,6 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
 > [!Note]
 > To create a policy that works on both Windows 10, version 1803 and version 1809, you can create two different policies, or merge them into one broader policy.
 
-## Further reading (How-To)
+## More information
 
 - [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md)
