@@ -22,7 +22,7 @@ ms.date: 08/30/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web protection lets you monitor your organization’s web browsing security through reports under **Reports > Web protection** in the Microsoft Defender Security Center. The report contains the following cards that provide web threat detection statistics:
+Web protection lets you monitor your organization’s web browsing security through reports under **Reports > Web protection** in the Microsoft Defender Security Center. The report contains cards that provide web threat detection statistics.
 
 - **Web threat protection detections over time** — this trending card displays the number of web threats detected by type during the selected time period (Last 30 days, Last 3 months, Last 6 months)
  
@@ -42,7 +42,7 @@ Web protection categorizes malicious and unwanted websites as:
 - **Custom indicator** — websites whose URLs or domains you've added to your [custom indicator list](manage-indicators.md) for blocking
 
 ## View the domain list
-Clicking on a specific web threat category in the **Web threat protection summary** card opens the **Domains** page, which shows a list of the domains prefiltered under that threat category. The page provides the following information for each domain:
+Select a specific web threat category in the **Web threat protection summary** card to open the **Domains** page and display the list of the domains under that threat category. The page provides the following information for each domain:
 
 - **Access count** — number of requests for URLs in the domain
 - **Blocks** — number of times requests were blocked
@@ -50,7 +50,7 @@ Clicking on a specific web threat category in the **Web threat protection summar
 - **Threat category** — type of web threat
 - **Machines** — number of machines with access attempts
 
-Selecting a domain opens a panel that shows the list of URLs in that domain that have been accessed. The panel also lists machines that have attempted to access URLs in the domain.
+Select a domain to view the list of machines that have attempted to access URLs in that domain as well as the list of URLs.
 
 ## Related topics
 - [Web protection overview](web-protection-overview.md)
