@@ -103,9 +103,9 @@ To do this, follow these steps:
 
 ### Use the keyboard
 
-[Forcing a System Crash from the Keyboard](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard)
+[Forcing a System Crash from the Keyboard](https://docs.microsoft.com/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard)
 
 ### Use Debugger
 
-[Forcing a System Crash from the Debugger](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-debugger)
+[Forcing a System Crash from the Debugger](https://docs.microsoft.com/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-debugger)
 

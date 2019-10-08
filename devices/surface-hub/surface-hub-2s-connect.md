@@ -131,4 +131,4 @@ You can connect the following accessories to Surface Hub-2S using Bluetooth:
 - Speakers
 
 > [!NOTE]
-> After you connect a Bluetooth headset or speaker, you might need to change the default microphone and speaker settings. For more information, see [**Local management for Surface Hub settings**](https://docs.microsoft.com/en-us/surface-hub/local-management-surface-hub-settings).
+> After you connect a Bluetooth headset or speaker, you might need to change the default microphone and speaker settings. For more information, see [**Local management for Surface Hub settings**](https://docs.microsoft.com/surface-hub/local-management-surface-hub-settings).
