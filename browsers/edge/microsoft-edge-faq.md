@@ -17,6 +17,9 @@ ms.localizationpriority: medium
 
 >Applies to: Microsoft Edge on Windows 10 and Windows 10 Mobile
 
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+
 ## How can I get the next major version of Microsoft Edge, based on Chromium?
 In December 2018, Microsoft [announced](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/#8jv53blDvL6TIKuS.97) our intention to adopt the Chromium open source project in the development of Microsoft Edge on the desktop, to create better web compatibility for our customers and less fragmentation of the web for all web developers. You can get more information at the [Microsoft Edge Insiders site](https://www.microsoftedgeinsider.com/).
 
