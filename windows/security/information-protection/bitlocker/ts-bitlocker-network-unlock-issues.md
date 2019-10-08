@@ -22,7 +22,7 @@ By using the BitLocker Network Unlock feature, you can manage computers remotely
 - The corporate network uses DHCP to manage IP addresses
 - Each computer has a DHCP driver implemented in its Unified Extensible Firmware Interface (UEFI) firmware
 
-For general guidelines about how to troubleshoot Network Unlock, see [How to enable Network Unlock: Troubleshoot Network Unlock](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock#troubleshoot-network-unlock)
+For general guidelines about how to troubleshoot Network Unlock, see [How to enable Network Unlock: Troubleshoot Network Unlock](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock#troubleshoot-network-unlock).
 
 This article describes several known issues that you may encounter while using Network Unlock, and provided guidance for addressing those issues.
 

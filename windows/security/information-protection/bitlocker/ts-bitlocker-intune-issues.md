@@ -197,7 +197,7 @@ To verify the Secure Boot State, use the System Information app. To do this, fol
 1. Select **Start**, and in the **Search** box, type **msinfo32**, and then press **Enter**.
 1. Verify that the **Secure Boot State** setting is **On**, as follows:  
    ![System Information app, showing a supported Secure Boot State](./images/4509201_en_1.png)
-1. If the **Secure Boot State** setting is **Unsupported**, you will not be able to use Silent BitLocker Encryption on this device.
+1. If the **Secure Boot State** setting is **Unsupported**, you will not be able to use Silent BitLocker Encryption on this device.  
    ![System Information app, showing a supported Secure Boot State](./images/4509202_en_1.png)
 
 ## <a id="issue-7"></a>Event ID 846, 778, and 851: Error 0x80072f9a
