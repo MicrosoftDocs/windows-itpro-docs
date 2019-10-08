@@ -1514,7 +1514,7 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
 <br />
 
 > [!Note]
-> To create a policy that works on both version 1803 and 1809, you can create two diff policies, or merge them into one broader policy.
+> To create a policy that works on both Windows 10, version 1803 and version 1809, you can create two different policies, or merge them into one broader policy.
 
 ## Further reading (How-To)
 
