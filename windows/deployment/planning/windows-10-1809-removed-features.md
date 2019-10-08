@@ -21,7 +21,7 @@ Each release of Windows 10 adds new features and functionality; we also occasion
 
 > [!TIP]
 > You can get early access to Windows 10 builds by joining the [Windows Insider program](https://insider.windows.com) - this is a great way to test feature changes.
-> Have questions about other releases? Check out the information for [Features removed or planned for replacement starting with Windows 10, version 1809](https://docs.microsoft.com/en-us/windows/deployment/planning/windows-10-1809-removed-features), [Features removed or planned for replacement starting with Windows Server, version 1709](https://docs.microsoft.com/en-us/windows-server/get-started/removed-features-1709), and [Features that are removed or deprecated in Windows 10, version 1703](https://docs.microsoft.com/en-us/windows/deployment/planning/windows-10-1703-removed-features).
+> Have questions about other releases? Check out the information for [Features removed or planned for replacement starting with Windows 10, version 1809](https://docs.microsoft.com/windows/deployment/planning/windows-10-1809-removed-features), [Features removed or planned for replacement starting with Windows Server, version 1709](https://docs.microsoft.com/windows-server/get-started/removed-features-1709), and [Features that are removed or deprecated in Windows 10, version 1703](https://docs.microsoft.com/windows/deployment/planning/windows-10-1703-removed-features).
 
 
 **The list is subject to change and might not include every affected feature or functionality.** 

@@ -64,7 +64,7 @@ You can choose to limit the list of incidents shown based on their status to see
 Use this filter to show incidents that contain sensitivity labels.
 
 ## Related topics
-- [Incidents queue](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue)
+- [Incidents queue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue)
 - [Manage incidents](manage-incidents.md)
 - [Investigate incidents](investigate-incidents.md)
 

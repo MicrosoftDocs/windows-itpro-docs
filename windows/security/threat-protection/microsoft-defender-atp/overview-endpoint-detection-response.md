@@ -37,7 +37,7 @@ The response capabilities give you the power to promptly remediate threats by ac
 Topic | Description
 :---|:---
 [Security operations dashboard](security-operations-dashboard.md) | Explore a high level overview of detections, highlighting where response actions are needed.
-[Incidents queue](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue) | View and organize the incidents queue, and manage and investigate alerts.
+[Incidents queue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue) | View and organize the incidents queue, and manage and investigate alerts.
 [Alerts queue](alerts-queue.md) | View and organize the machine alerts queue, and manage and investigate alerts.
 [Machines list](machines-view-overview.md) | Investigate machines with generated alerts and search for specific events over time.
 [Take response actions](response-actions.md) | Learn about the available response actions and apply them to machines and files.

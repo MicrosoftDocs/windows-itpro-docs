@@ -553,7 +553,7 @@ Now that you have finished the deployment activity, you should review the follow
 
 * If a certificate is used, the certificate must have both FQDN and NetBIOS names entered into the **Subject Alternative Name** field for all IIS servers in the load balance group and also as the Friendly Name (for example: bitlocker.corp.net). Otherwise, the certificate will be reported as not trusted by the browser when you browse load-balanced addresses.
 
-For more information, see [IIS Network Load Balancing](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/planning-for-mbam-25-high-availability#a-href-idbkmk-load-balanceaiis-network-load-balancing) and [Registering SPNs for the application pool account](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/mbam-v25/planning-how-to-secure-the-mbam-websites#registering-spns-for-the-application-pool-account).
+For more information, see [IIS Network Load Balancing](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/planning-for-mbam-25-high-availability#a-href-idbkmk-load-balanceaiis-network-load-balancing) and [Registering SPNs for the application pool account](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/planning-how-to-secure-the-mbam-websites#registering-spns-for-the-application-pool-account).
 
 ### How to configure a certificate
 
@@ -589,6 +589,6 @@ For more information, see [MBAM Setup fails with “Register SPN Deferred” err
 You'll see multiple OS options in the MBAM root node for GPO after you update the ADMX templates to their latest versions. For example, Windows 7, Windows 8.1, and Windows 10, version 1511 and later versions.
 
 For more information about how to update the ADMX templates, see the following articles:
-* [How to Download and Deploy MDOP Group Policy (.admx) Templates](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/solutions/how-to-download-and-deploy-mdop-group-policy--admx--templates)
-* [Planning for MBAM 2.5 Group Policy Requirements](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/mbam-v25/planning-for-mbam-25-group-policy-requirements)
+* [How to Download and Deploy MDOP Group Policy (.admx) Templates](https://docs.microsoft.com/microsoft-desktop-optimization-pack/solutions/how-to-download-and-deploy-mdop-group-policy--admx--templates)
+* [Planning for MBAM 2.5 Group Policy Requirements](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/planning-for-mbam-25-group-policy-requirements)
 * [Microsoft Desktop Optimization Pack Group Policy Administrative Templates](https://www.microsoft.com/en-us/download/details.aspx?id=55531)

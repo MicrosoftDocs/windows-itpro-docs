@@ -78,6 +78,6 @@ You can click the circles on the incident graph to view the details of the malic
 ![Image of incident details](images/atp-incident-graph-details.png)
 
 ## Related topics
-- [Incidents queue](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue)
-- [Investigate incidents in Microsoft Defender ATP](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/investigate-incidents)
-- [Manage Microsoft Defender ATP incidents](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/manage-incidents)
+- [Incidents queue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue)
+- [Investigate incidents in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-incidents)
+- [Manage Microsoft Defender ATP incidents](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-incidents)

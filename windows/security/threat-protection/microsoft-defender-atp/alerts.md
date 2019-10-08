@@ -39,7 +39,7 @@ Method|Return Type |Description
 Property |	Type	|	Description
 :---|:---|:---
 id | String | Alert ID.
-incidentId | String | The [Incident](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue) ID of the Alert. 
+incidentId | String | The [Incident](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue) ID of the Alert. 
 assignedTo | String | Owner of the alert.
 severity | Enum | Severity of the alert. Possible values are: 'UnSpecified', 'Informational', 'Low', 'Medium' and 'High'.
 status | Enum | Specifies the current status of the alert. Possible values are: 'Unknown', 'New', 'InProgress' and 'Resolved'.

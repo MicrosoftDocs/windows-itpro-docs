@@ -124,4 +124,4 @@ There are no additional hardware requirements to use Windows 10 Autopilot, beyon
 
 ## Related topics
 
-[Configure Autopilot deployment](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/)
+[Configure Autopilot deployment](https://docs.microsoft.com/windows/deployment/windows-autopilot/)
