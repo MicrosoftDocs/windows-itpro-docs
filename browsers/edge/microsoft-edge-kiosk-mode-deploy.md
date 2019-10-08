@@ -20,7 +20,7 @@ ms.date: 10/29/2018
 >Professional, Enterprise, and Education
 
 > [!NOTE]
-> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/index.yml).
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/index?).
 
 In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge as a kiosk using assigned access. With assigned access, you create a tailored browsing experience locking down a Windows 10 device to only run as a single-app or multi-app kiosk.  Assigned access restricts a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode.
 
