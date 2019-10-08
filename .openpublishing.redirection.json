@@ -15077,6 +15077,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/deployment/planning/windows-10-fall-creators-deprecation.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/planning/windows-10-1709-removed-features",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/deployment/planning/windows-10-creators-update-deprecation.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/planning/windows-10-1703-removed-features",
 "redirect_document_id": true
