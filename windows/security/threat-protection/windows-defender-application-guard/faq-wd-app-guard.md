@@ -111,3 +111,17 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 
 <br>
 
+|        |                                                                                               |
+|--------|-----------------------------------------------------------------------------------------------|
+| **Q:** | Is there a size limit to the domain lists that I need to configure?                                                          |
+| **A:** | Yes, both the Enterprise Resource domains hosted in the cloud and the Domains categorized as both work and personal have a 16383B limit.|
+
+<br>
+
+|        |                                                                                               |
+|--------|-----------------------------------------------------------------------------------------------|
+| **Q:** | Why does my encryption driver break WDAG?                                                          |
+| **A:** | WDAG accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work. |
+
+<br>
+
