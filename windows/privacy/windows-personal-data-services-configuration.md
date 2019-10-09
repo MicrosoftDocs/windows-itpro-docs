@@ -399,7 +399,7 @@ These settings whether employees send “Do Not Track” header from the Microso
 ### Windows Privacy on docs.microsoft.com
 
 * [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
-* [Manage Windows 10 connection endpoints](manage-windows-endpoints.md)
+* [Manage connections from Windows 10 operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 * [Understanding Windows diagnostic data](configure-windows-diagnostic-data-in-your-organization.md#understanding-windows-diagnostic-data)
 * [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md)
 
