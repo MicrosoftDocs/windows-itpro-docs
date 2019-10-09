@@ -1,7 +1,7 @@
 ---
 title: Threat Protection (Windows 10)
 description: Learn how Microsoft Defender ATP helps protect against threats.
-keywords: threat protection, Microsoft Defender Advanced Threat Protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, microsoft threat experts, secure score, advanced hunting
+keywords: threat protection, Microsoft Defender Advanced Threat Protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, microsoft threat experts, secure score, advanced hunting, cyber threat hunting
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -64,7 +64,7 @@ The attack surface reduction set of capabilities provide the first line of defen
 - [Application control](windows-defender-application-control/windows-defender-application-control.md)
 - [Device control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 - [Exploit protection](microsoft-defender-atp/exploit-protection.md)
-- [Network protection](microsoft-defender-atp/network-protection.md)
+- [Network protection](microsoft-defender-atp/network-protection.md), [Web protection](microsoft-defender-atp/web-protection-overview.md)
 - [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
 - [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 - [Attack surface reduction rules](microsoft-defender-atp/attack-surface-reduction.md)
@@ -83,7 +83,7 @@ To further reinforce the security perimeter of your network, Microsoft Defender 
 <a name="edr"></a>
 
 **[Endpoint detection and response](microsoft-defender-atp/overview-endpoint-detection-response.md)**<br>
-Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
+Endpoint detection and response capabilities are put in place to detect, investigate, and respond to intrusion attempts and active breaches. With Advanced hunting, you have a query-based threat-hunting tool that lets your proactively find breaches and create custom detections.
 
 - [Alerts](microsoft-defender-atp/alerts-queue.md)
 - [Historical endpoint data](microsoft-defender-atp/investigate-machines.md#timeline)
@@ -91,9 +91,8 @@ Endpoint detection and response capabilities are put in place to detect, investi
 - [Forensic collection](microsoft-defender-atp/respond-machine-alerts.md#collect-investigation-package-from-machines)
 - [Threat intelligence](microsoft-defender-atp/threat-indicator-concepts.md)
 - [Advanced detonation and analysis service](microsoft-defender-atp/respond-file-alerts.md#deep-analysis)
-- [Advanced hunting](microsoft-defender-atp/overview-hunting.md)
-    - [Custom detection](microsoft-defender-atp/overview-custom-detections.md)
-    - [Realtime and historical hunting](microsoft-defender-atp/advanced-hunting.md)
+- [Advanced hunting](microsoft-defender-atp/advanced-hunting-overview.md)
+    - [Custom detections](microsoft-defender-atp/overview-custom-detections.md)
 
 <a name="ai"></a>
 
