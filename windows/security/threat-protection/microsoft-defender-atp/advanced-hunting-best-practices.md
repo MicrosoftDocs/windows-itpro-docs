@@ -88,6 +88,6 @@ ProcessCreationEvents
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)
 
 ## Related topics
-- [Advanced hunting overview](overview-hunting.md)
-- [Learn the query language](advanced-hunting.md)
-- [Understand the schema](advanced-hunting-reference.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
+- [Understand the schema](advanced-hunting-schema-reference.md)

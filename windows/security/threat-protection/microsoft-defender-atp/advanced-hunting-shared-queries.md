@@ -25,7 +25,7 @@ ms.date: 10/08/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
-[Advanced hunting](overview-hunting.md) queries can be shared among users in the same organization. You can also find queries shared publicly on GitHub. These queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.
+[Advanced hunting](advanced-hunting-overview.md) queries can be shared among users in the same organization. You can also find queries shared publicly on GitHub. These queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.
 
 ![Image of shared queries](images/atp-advanced-hunting-shared-queries.png)
 
@@ -60,5 +60,5 @@ Microsoft security researchers regularly share Advanced hunting queries in a [de
 >Microsoft security researchers also provide Advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](threat-analytics.md) reports in Microsoft Defender Security Center.
 
 ## Related topics
-- [Advanced hunting overview](overview-hunting.md)
-- [Learn the query language](advanced-hunting.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)

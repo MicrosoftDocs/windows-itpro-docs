@@ -27,7 +27,7 @@ ms.date: 10/08/2019
 
 ## Schema tables
 
-The [Advanced hunting](overview-hunting.md) schema is made up of multiple tables that provide either event information or information about machines and other entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the Advanced hunting schema.
+The [Advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about machines and other entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the Advanced hunting schema.
 
 The following reference lists all the tables in the Advanced hunting schema. Each table name links to a page describing the column names for that table.
 
@@ -47,5 +47,5 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 | **[MiscEvents](advanced-hunting-miscevents-table.md)** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
 
 ## Related topics
-- [Advanced hunting overview](overview-hunting.md)
-- [Learn the query language](advanced-hunting.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)

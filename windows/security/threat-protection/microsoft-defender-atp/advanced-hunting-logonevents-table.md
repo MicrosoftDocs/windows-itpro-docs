@@ -26,9 +26,9 @@ ms.date: 10/08/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The LogonEvents table in the [Advanced hunting](overview-hunting.md) schema contains information about user logons and other authentication events. Use this reference to construct queries that return information from the table.
+The LogonEvents table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about user logons and other authentication events. Use this reference to construct queries that return information from the table.
 
-For information on other tables in the Advanced hunting schema, see [the Advanced hunting schema reference](advanced-hunting-reference.md).
+For information on other tables in the Advanced hunting schema, see [the Advanced hunting schema reference](advanced-hunting-schema-reference.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
@@ -67,6 +67,6 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 | IsLocalAdmin | boolean | Boolean indicator of whether the user is a local administrator on the machine |
 
 ## Related topics
-- [Advanced hunting overview](overview-hunting.md)
-- [Learn the query language](advanced-hunting.md)
-- [Understand the schema](advanced-hunting-reference.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
+- [Understand the schema](advanced-hunting-schema-reference.md)
