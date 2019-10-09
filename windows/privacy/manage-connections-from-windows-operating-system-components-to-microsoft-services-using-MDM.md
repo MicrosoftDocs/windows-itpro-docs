@@ -138,6 +138,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 1. **Windows Defender**
    1. [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection). Disconnect from the Microsoft Antimalware Protection Service. **Set to 0 (zero)** 
    1. [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent). Stop sending file samples back to Microsoft. **Set to 2 (two)**
+   1. [Defender/EnableSmartScreenInShell](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-available-settings#mdm-settings). Turns off SmartScreen in Windows for app and file execution. **Set to 0 (zero)**
    1. Windows Defender Smartscreen - [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen). Disable Windows Defender Smartscreen. **Set to 0 (zero)**
    1. Windows Defender Smartscreen EnableAppInstallControl - [SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol). Controls whether users are allowed to install apps from places other than the Microsoft Store. **Set to 0 (zero)** 
    1. Windows Defender Potentially Unwanted Applications(PUA) Protection - [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection). Specifies the level of detection for potentially unwanted applications (PUAs). **Set to 1 (one)**
@@ -164,6 +165,7 @@ For Windows 10, the following MDM policies are available in the [Policy CSP](htt
 |client.wns.windows.com|
 |crl.microsoft.com/pki/crl/*|
 |ctldl.windowsupdate.com|
+|*displaycatalog.mp.microsoft.com|
 |dm3p.wns.windows.com|
 |\*microsoft.com/pkiops/\*|
 |ocsp.digicert.com/*|
