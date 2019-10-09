@@ -36,6 +36,7 @@ Compatible Surface devices include:
 * Surface Pro (Model 1796)
 * Surface Laptop
 * Surface Studio
+* Surface Studio 2
 * Surface Book
 * Surface Pro 4
 * Surface 3 LTE

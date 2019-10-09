@@ -224,7 +224,7 @@ IT Professionals that are interested in this configuration, see [Windows 10 pers
 
 ### Windows 10 connections to Microsoft
 
-To find out more about the network connections that Windows components make to Microsoft as well as the privacy settings that affect data shared with either Microsoft or apps, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) and [Manage Windows 10 connection endpoints](manage-windows-endpoints.md). These articles describe how these settings can be managed by an IT Professional.
+To find out more about the network connections that Windows components make to Microsoft as well as the privacy settings that affect data shared with either Microsoft or apps, see [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services). This article describe how these settings can be managed by an IT Professional, and fronts an array of Windows version-specific articles.
 
 ### At-a-glance: the relationship between an IT organization and the GDPR
 

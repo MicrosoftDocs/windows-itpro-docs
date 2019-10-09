@@ -204,8 +204,9 @@ If the error occurs again, check the error code against the following table to s
 </tr>
 </tbody>
 </table>
- 
+
 ## Errors with unknown mitigation
+
 For errors listed in this table, contact Microsoft Support for assistance.
 
 | Hex         | Cause     |

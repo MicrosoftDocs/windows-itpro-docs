@@ -9,7 +9,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -34,7 +35,7 @@ Once deployed, Windows 10 devices can be managed by tools such as Microsoft Intu
 
 Windows Autopilot enables you to:
 * Automatically join devices to Azure Active Directory (Azure AD) or Active Directory (via Hybrid Azure AD Join).  See [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) for more information about the differences between these two join options.
-* Auto-enroll devices into MDM services, such as Microsoft Intune ([*Requires an Azure AD Premium subscription*](windows-autopilot-requirements-configuration.md)).
+* Auto-enroll devices into MDM services, such as Microsoft Intune ([*Requires an Azure AD Premium subscription for configuration*](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Windows-10-Azure-AD-and-Microsoft-Intune-Automatic-MDM/ba-p/244067)).
 * Restrict the Administrator account creation.
 * Create and auto-assign devices to configuration groups based on a device's profile.
 * Customize OOBE content specific to the organization.
