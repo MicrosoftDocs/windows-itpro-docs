@@ -722,12 +722,12 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/audit-windows-defender-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/audit-windows-defender-exploit-guard",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-exploit-protection",
 "redirect_document_id": true
 },
 {
@@ -737,7 +737,12 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders",
 "redirect_document_id": true
 },
 {
@@ -802,7 +807,7 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/evaluate-windows-defender-exploit-guard",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-exploit-protection",
 "redirect_document_id": true
 },
 {
@@ -827,7 +832,12 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/network-protection",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/network-protection",
 "redirect_document_id": true
 },
 {
@@ -852,7 +862,7 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
 "redirect_document_id": true
 },
 {
@@ -872,7 +882,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language",
 "redirect_document_id": true
 },
 {
@@ -882,8 +892,23 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/advanced-hunting-reference-windows-defender-advanced-threat-protection.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/overview-hunting.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md",
@@ -1568,7 +1593,7 @@
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-hunting",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview",
 "redirect_document_id": true
 },
 {
@@ -15072,6 +15097,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/deployment/planning/windows-10-fall-creators-deprecation.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/planning/windows-10-1709-removed-features",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/deployment/planning/windows-10-creators-update-deprecation.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/planning/windows-10-1703-removed-features",
 "redirect_document_id": true
@@ -15242,9 +15272,19 @@
 "redirect_document_id": false
 },
 {
+    "source_path": "devices/surface/surface-dock-updater.md",
+    "redirect_url": "/surface/surface-dock-firmware-update",
+    "redirect_document_id": true
+    },
+{
 "source_path": "education/get-started/use-school-data-sync.md",
 "redirect_url": "https://docs.microsoft.com/microsoft-365/education/deploy/school-data-sync",
 "redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
+"redirect_document_id": true
 }
 ]
 }

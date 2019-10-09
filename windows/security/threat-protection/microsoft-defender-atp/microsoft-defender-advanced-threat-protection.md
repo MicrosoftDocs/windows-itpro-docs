@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Advanced Threat Protection
 description: Microsoft Defender Advanced Threat Protection is an enterprise security platform that helps secops to prevent, detect, investigate, and respond to possible cybersecurity threats related to advanced persistent threats.
-keywords: introduction to Microsoft Defender Advanced Threat Protection, introduction to Microsoft Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection
+keywords: introduction to Microsoft Defender Advanced Threat Protection, introduction to Microsoft Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection, cyber threat hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -78,7 +78,7 @@ This built-in capability uses a game-changing risk-based approach to the discove
 <a name="asr"></a>
 
 **[Attack surface reduction](overview-attack-surface-reduction.md)**<br>
-The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation. 
+The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation. This set of capabilities also includes [network protection](network-protection.md) and [web protection](web-protection-overview.md), which regulate access to malicious IP addresses, domains, and URLs. 
 
 <a name="ngp"></a>
 
@@ -88,8 +88,7 @@ To further reinforce the security perimeter of your network, Microsoft Defender 
 <a name="edr"></a>
 
 **[Endpoint detection and response](overview-endpoint-detection-response.md)**<br>
-Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
-You can also do advanced hunting to create custom threat intelligence and use a powerful search and query tool to hunt for possible threats in your organization.
+Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. [Advanced hunting](advanced-hunting-overview.md) provides a query-based threat-hunting tool that lets you proactively find breaches and create custom detections.
 
 <a name="ai"></a>
 

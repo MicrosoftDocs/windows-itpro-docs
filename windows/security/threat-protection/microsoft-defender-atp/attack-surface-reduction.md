@@ -1,7 +1,7 @@
 ---
 title: Use attack surface reduction rules to prevent malware infection
 description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect machines with malware
-keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention
+keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 audience: ITPro
 author: levinec
 ms.author: ellevin
-ms.date: 05/07/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -28,7 +27,7 @@ manager: dansimp
 
 Attack surface reduction rules help prevent behaviors malware often uses to infect computers with malicious code. You can set attack surface reduction rules for computers running Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, or Windows Server 2019.
 
-To use attack surface reduction rules, you need a Windows 10 Enterprise license. If you have a Windows E5 license, it gives you the advanced management capabilities to power them. These include monitoring, analytics, and workflows available in [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the Microsoft 365 Security Center. These advanced capabilities aren't available with an E3 license or with Windows 10 Enterprise without subscription, but you can use attack surface reduction rule events in Event Viewer to help facilitate deployment.
+To use the entire feature set of attack surface reduction rules, you need a Windows 10 Enterprise license. With a Windows E5 license you get advanced management capabilities including monitoring, analytics, and workflows available in [Microsoft Defender Advanced Threat Protection](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the Microsoft 365 security center. These advanced capabilities aren't available with an E3 license, but you can use Event Viewer to review attack surface reduction rule events.
 
 Attack surface reduction rules target behaviors that malware and malicious apps typically use to infect computers, including:
 
@@ -36,17 +35,17 @@ Attack surface reduction rules target behaviors that malware and malicious apps 
 * Obfuscated or otherwise suspicious scripts
 * Behaviors that apps don't usually initiate during normal day-to-day work
 
-You can use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks similar to malware. By monitoring audit data and [adding exclusions](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
+You can use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
 
-Triggered rules display a notification on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays in the Microsoft Defender Security Center and in the Microsoft 365 securty center.
+Triggered rules display a notification on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays in the Microsoft Defender Security Center and in the Microsoft 365 security center.
 
 For information about configuring attack surface reduction rules, see [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 
-## Review attack surface reduction events in the Microsoft Security Center
+## Review attack surface reduction events in the Microsoft Defender Security Center
 
 Microsoft Defender ATP provides detailed reporting into events and blocks as part of its alert investigation scenarios.
 
-You can query Microsoft Defender ATP data by using [Advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection). If you're using [audit mode](audit-windows-defender.md), you can use Advanced hunting to see how controlled folder access settings could affect your environment.
+You can query Microsoft Defender ATP data by using [Advanced hunting](advanced-hunting-query-language.md). If you're using [audit mode](audit-windows-defender.md), you can use Advanced hunting to understand how attack surface reduction rules could affect your environment.
 
 Here is an example query:
 
@@ -208,7 +207,7 @@ This rule blocks the following file types from launching unless they either meet
 * Executable files (such as .exe, .dll, or .scr)
 
 > [!NOTE]
-> You must [enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus) to use this rule.
+> You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule.
 
 > [!IMPORTANT]
 > The rule **Block executable files from running unless they meet a prevalence, age, or trusted list criterion** with GUID 01443614-cd74-433a-b99e-2ecdc07bfc25 is owned by Microsoft and is not specified by admins. It uses cloud-delivered protection to update its trusted list regularly.
@@ -228,7 +227,7 @@ GUID: 01443614-cd74-433a-b99e-2ecdc07bfc25
 This rule provides an extra layer of protection against ransomware. It scans executable files entering the system to determine whether they're trustworthy. If the files closely resemble ransomware, this rule blocks them from running, unless they're in a trusted list or exclusion list.
 
 > [!NOTE]
-> You must [enable cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus) to use this rule.
+> You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule.
 
 This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, SCCM CB 1802
 
@@ -329,4 +328,4 @@ GUID: e6db77e5-3df2-4cf1-b95a-636979351e5b
 
 * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-* [Compatibility of Microsoft Defender with other antivirus/antimalware](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility)
+* [Compatibility of Microsoft Defender with other antivirus/antimalware](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md)
