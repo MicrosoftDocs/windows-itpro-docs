@@ -1470,7 +1470,7 @@ To turn this Off in the UI:
 
      -and-
 
-- Create a REG_DWORD registry setting named **LetAppsActivateWithVoiceAboveLock** in HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\AppPrivacy with a **value of 2 (two)**
+- Create a REG_DWORD registry setting named **LetAppsActivateWithVoiceAboveLock** in **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\AppPrivacy** with a **value of 2 (two)**
 
 
 
