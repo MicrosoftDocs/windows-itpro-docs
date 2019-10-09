@@ -39,5 +39,5 @@
 #### [How to Use a PowerShell Script to Create the Recovery Image](how-to-use-a-powershell-script-to-create-the-recovery-image-dart-8.md)
 ## [Troubleshooting DaRT 8.0](troubleshooting-dart-80-dart-8.md)
 ## [Technical Reference for DaRT 8.0](technical-reference-for-dart-80-new-ia.md)
-### [Microsoft Diagnostics and Recovery Toolset (DaRT) users should use Windows Defender Offline (WDO) for malware detection](microsoft-diagnostics-and-recovery-toolset--dart--users-should-use-windows-defender-offline--wdo--for-malware-detection.md)
+### [Use Windows Defender Offline (WDO) for malware protection, not DaRT ](use-windows-defender-offline-wdo-for-malware-protection-not-dart.md)
 

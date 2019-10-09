@@ -10,7 +10,7 @@ ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.prod: w10
-ms.date: 06/16/2016
+ms.date: 10/03/2016
 ---
 
 
@@ -48,7 +48,7 @@ For more information about **Crash Analyzer**, see [Diagnosing System Failures w
 ### Defender
 
 **Important**  
-Environments with the DaRT Defender deployed should instead use the Windows Defender Offline (WDO) protection image for malware detection. Because of how the Defender tool integrates into DaRT, all supported DaRT version deployments cannot apply these anti-malware updates to their DaRT images. For more information, see [Microsoft Diagnostics and Recovery Toolset (DaRT) users should use Windows Defender Offline (WDO) for malware detection](microsoft-diagnostics-and-recovery-toolset--dart--users-should-use-windows-defender-offline--wdo--for-malware-detection.md).
+Environments with the DaRT Defender deployed should instead use the Windows Defender Offline (WDO) protection image for malware detection. Because of how the Defender tool integrates into DaRT, all supported DaRT version deployments cannot apply these anti-malware updates to their DaRT images. For more information, see  [Microsoft Diagnostics and Recovery Toolset (DaRT) users should use Windows Defender Offline (WDO) for malware detection-->](use-windows-defender-offline-wdo-for-malware-protection-not-dart.md).
 
  
 
