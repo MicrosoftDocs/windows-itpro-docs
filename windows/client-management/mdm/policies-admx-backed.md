@@ -1,7 +1,6 @@
 ---
 title: ADMX-backed policies
-description: Policy CSP
-ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
+description: ADMX-backed policies
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp

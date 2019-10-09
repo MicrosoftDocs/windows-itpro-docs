@@ -1,7 +1,6 @@
 ---
 title: Policies supported by Windows 10 IoT Core
 description: Policies supported by Windows 10 IoT Core
-ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
