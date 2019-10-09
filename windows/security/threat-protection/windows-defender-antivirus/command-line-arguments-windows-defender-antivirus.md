@@ -35,12 +35,16 @@ The utility has the following commands:
 ```DOS
 MpCmdRun.exe [command] [-options]
 ```
+For example,
+```
+MpCmdRun.exe -scan -2
+``` 
 
 
 | Command                                                                                                 | Description                                                                                            |
 |:--------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------|
 | \-? **or** -h                                                                                           | Displays all available options for this tool                                                           |
-| \-Scan [-ScanType [0\|1\|2\|3]] [-File \<path> [-DisableRemediation] [-BootSectorScan]] [-Timeout \<days>] [-Cancel] | Scans for malicious software. Values for **ScanType** are: **0** Default, according to your configuration, **1** Quick scan, **2** Full scan, **3** File and directory custom scan.                                                                            |
+| \-Scan [-ScanType [0\|1\|2\|3]] [-File \<path> [-DisableRemediation] [-BootSectorScan]] [-Timeout \<days>] [-Cancel] | Scans for malicious software. Values for **ScanType** are: **0** Default, according to your configuration, **-1** Quick scan, **-2** Full scan, **-3** File and directory custom scan.                                                                            |
 | \-Trace [-Grouping #] [-Level #]                                                                        | Starts diagnostic tracing                                                                              |
 | \-GetFiles                                                                                              | Collects support information                                                                           |
 | \-GetFilesDiagTrack                                                                                     | Same as Getfiles but outputs to temporary DiagTrack folder                                             |
@@ -53,7 +57,10 @@ MpCmdRun.exe [command] [-options]
 | \-ListAllDynamicSignatures                                                                              | Lists the loaded dynamic Security intelligence                                                         |
 | \-RemoveDynamicSignature [-SignatureSetID]                                                              | Removes dynamic Security intelligence                                                                  |
 | \-CheckExclusion -path \<path>                                                                           | Checks whether a path is excluded                                                                      |
-
+For example,
+```
+mpcmdrun.exe -scan -2
+```
 ## Related topics
 
 - [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)

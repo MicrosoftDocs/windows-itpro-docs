@@ -1,21 +1,21 @@
 ---
 title: MiscEvents table in the advanced hunting schema
-description: Learn about the MiscEvents table in the Advanced hunting schema, such as column names, data types, and descriptions
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, miscEvents
+description: Learn about antivirus, firewall, and other event types in the miscellaneous events (MiscEvents) table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-maave
-author: martyav
+ms.author: lomayor
+author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 07/24/2019
+ms.date: 10/08/2019
 ---
 
 # MiscEvents
@@ -26,9 +26,9 @@ ms.date: 07/24/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The MiscEvents table in the [Advanced hunting](overview-hunting.md) schema contains information about various event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from the table.
+The miscellaneous events or MiscEvents table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about various event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from the table.
 
-For information on other tables in the Advanced hunting schema, see [the Advanced hunting schema reference](advanced-hunting-reference.md).
+For information on other tables in the Advanced hunting schema, see [the Advanced hunting schema reference](advanced-hunting-schema-reference.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
@@ -80,6 +80,6 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 
 ## Related topics
-- [Advanced hunting overview](overview-hunting.md)
-- [Learn the query language](advanced-hunting.md)
-- [Understand the schema](advanced-hunting-reference.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
+- [Understand the schema](advanced-hunting-schema-reference.md)
