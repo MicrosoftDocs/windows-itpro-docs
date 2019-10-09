@@ -2030,7 +2030,7 @@ The content below are the latest versions of the DDF files:
                     <Delete />
                     <Replace />
                   </AccessType>
-                  <Description>SDDL String controlling access to the channel. Default: https://docs.microsoft.com/en-us/windows/desktop/WES/eventmanifestschema-channeltype-complextype</Description>
+                  <Description>SDDL String controlling access to the channel. Default: https://docs.microsoft.com/windows/desktop/WES/eventmanifestschema-channeltype-complextype</Description>
                   <DFFormat>
                     <chr />
                   </DFFormat>
