@@ -1,7 +1,7 @@
 ---
 title: Overview of Advanced hunting
-description: Hunt for possible threats across your organization using a powerful search and query tool
-keywords: advanced hunting, hunting, search, query, tool, telemetry, custom detection, schema, kusto
+description: Use threat hunting capabilities in Microsoft Defender ATP to build queries that find threats and weaknesses in your network
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+ms.date: 10/08/2019
 ---
 
 # Proactively hunt for threats with Advanced hunting

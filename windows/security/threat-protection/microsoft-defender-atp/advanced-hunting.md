@@ -1,7 +1,7 @@
 ---
 title: Learn the Advanced hunting query language
-description: Get an overview of the common operators and other aspects of the Advanced hunting query language you can use to formulate queries
-keywords: advanced hunting, atp query, query atp data, atp telemetry, events, events telemetry, kusto
+description: Create your first threat hunting query and learn about common operators and other aspects of the Advanced hunting query language
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/25/2019
+ms.date: 10/08/2019
 ---
 
 # Learn the Advanced hunting query language

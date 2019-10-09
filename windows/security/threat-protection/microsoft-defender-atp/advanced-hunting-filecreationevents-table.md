@@ -1,21 +1,21 @@
 ---
 title: FileCreationEvents table in the Advanced hunting schema 
-description: Learn about the FileCreationEvents table in the Advanced hunting schema, such as column names, data types, and descriptions
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description, filecreationevents
+description: Learn about file-related events in the FileCreationEvents table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, filecreationevents, files, path, hash, sha1, sha256, md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-maave
-author: martyav
+ms.author: lomayor
+author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 07/24/2019
+ms.date: 10/08/2019
 ---
 
 # FileCreationEvents

@@ -1,7 +1,7 @@
 ---
 title: Advanced hunting schema reference
-description: Learn about the tables in the advanced hunting schema
-keywords: advanced hunting, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, column name, data type, description
+description: Learn about the tables in the Advanced hunting schema to understand the data you can run threat hunting queries on 
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/25/2019
+ms.date: 10/08/2019
 ---
 
 # Understand the Advanced hunting schema

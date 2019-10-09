@@ -1,7 +1,7 @@
 ---
-title: Advanced hunting best practices in Microsoft Defender ATP
-description: Learn about Advanced hunting best practices such as what filters and keywords to use to effectively query data.
-keywords: advanced hunting, best practices, keyword, filters, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, kusto
+title: Query best practices for Advanced hunting
+description: Learn how to construct fast, efficient, and error-free threat hunting queries when using Advanced hunting
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, avoid timeout, command lines, process id
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/25/2019
+ms.date: 10/08/2019
 ---
 
 # Advanced hunting query best practices

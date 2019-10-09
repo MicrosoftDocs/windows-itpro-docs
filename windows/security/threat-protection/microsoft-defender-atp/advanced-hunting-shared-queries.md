@@ -1,7 +1,7 @@
 ---
-title: Use shared queries in advanced hunting
-description: Take advantage of shared advanced hunting queries. Share your queries to the public or to your organization.
-keywords: advanced hunting, atp query, query atp data, atp telemetry, events, events telemetry, kusto, github repo
+title: Use shared queries in Advanced hunting
+description: Start threat hunting immediately with predefined and shared queries. Share your queries to the public or to your organization.
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, github repo, my queries, shared queries
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/25/2019
+ms.date: 10/08/2019
 ---
 
 # Use shared queries in Advanced hunting
