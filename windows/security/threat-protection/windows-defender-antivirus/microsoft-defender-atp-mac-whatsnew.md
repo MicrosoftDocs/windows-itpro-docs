@@ -22,7 +22,7 @@ ms.topic: conceptual
 
 ## 100.70.99
 
-- Addressed an issue that prevents some users from upgrading to macOS Catalina when real-time protection is enabled. This was caused by Microsoft Defender ATP locking files from the upgrade package (to scan them for antiviruses), which in turn triggered failures in the upgrade sequence.
+- Addressed an issue that prevents some users from upgrading to macOS Catalina when real-time protection is enabled. This problem was caused by Microsoft Defender ATP locking files from the upgrade package (to scan them for antiviruses). In turn this triggered failures in the upgrade sequence.
 
 ## 100.68.99
 
