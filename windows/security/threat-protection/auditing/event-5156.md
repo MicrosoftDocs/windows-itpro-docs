@@ -102,7 +102,7 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
     -   Outbound – for unbound connections.
 
--   **Source Address** \[Type = UnicodeString\]**:**  IP address from which connection was initiated.
+-   **Source Address** \[Type = UnicodeString\]**:**  IP address from which the connection was initiated.
 
     -   IPv4 Address
 
@@ -114,9 +114,9 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
     -   127.0.0.1 , ::1 - localhost
 
--   **Source Port** \[Type = UnicodeString\]**:** port number on which connection was initiated.
+-   **Source Port** \[Type = UnicodeString\]**:** port number on which the connection was initiated.
 
--   **Destination Address** \[Type = UnicodeString\]**:** IP address to which connection was attempted.
+-   **Destination Address** \[Type = UnicodeString\]**:** IP address to which the connection was initiated.
 
     -   IPv4 Address
 
@@ -128,7 +128,7 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
     -   127.0.0.1 , ::1 - localhost
 
--   **Destination Port** \[Type = UnicodeString\]**:** port number on which connection was attempted.
+-   **Destination Port** \[Type = UnicodeString\]**:** port number on which the connection was initiated.
 
 -   **Protocol** \[Type = UInt32\]: number of protocol which was used.
 
