@@ -105,11 +105,11 @@
 
 
 ### [Advanced hunting]()
-#### [Advanced hunting overview](overview-hunting.md)
+#### [Advanced hunting overview](advanced-hunting-overview.md)
 
 #### [Query data using Advanced hunting]()
-##### [Data querying basics](advanced-hunting.md)
-##### [Advanced hunting reference](advanced-hunting-reference.md)
+##### [Data querying basics](advanced-hunting-query-language.md)
+##### [Advanced hunting reference](advanced-hunting-schema-reference.md)
 ##### [Advanced hunting query language best practices](advanced-hunting-best-practices.md)
 
 #### [Custom detections]()

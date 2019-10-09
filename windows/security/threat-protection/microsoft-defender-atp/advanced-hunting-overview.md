@@ -1,7 +1,7 @@
 ---
 title: Overview of Advanced hunting
-description: Hunt for possible threats across your organization using a powerful search and query tool
-keywords: advanced hunting, hunting, search, query, tool, telemetry, custom detection, schema, kusto
+description: Use threat hunting capabilities in Microsoft Defender ATP to build queries that find threats and weaknesses in your network
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+ms.date: 10/08/2019
 ---
 
 # Proactively hunt for threats with Advanced hunting
@@ -33,8 +34,8 @@ We recommend going through several steps to quickly get up and running with Adva
 
 | Learning goal | Description | Resource |
 |--|--|--|
-| **Get a feel for the language** | Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/), supporting the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting.md) |
-| **Understand the schema** | Get a good, high-level understanding of the tables in the schema and their columns. This will help you determine where to look for data and how to construct your queries. | [Schema reference](advanced-hunting-reference.md) |
+| **Get a feel for the language** | Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/), supporting the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting-query-language.md) |
+| **Understand the schema** | Get a good, high-level understanding of the tables in the schema and their columns. This will help you determine where to look for data and how to construct your queries. | [Schema reference](advanced-hunting-schema-reference.md) |
 | **Use predefined queries** | Explore collections of predefined queries covering different threat hunting scenarios. | [Shared queries](advanced-hunting-shared-queries.md) |
 | **Learn about custom detections** | Understand how you can use advanced hunting queries to trigger alerts and apply response actions automatically. | [Custom detections overview](overview-custom-detections.md) |  
 
@@ -65,8 +66,8 @@ Refine your query by selecting the "+" or "-" buttons next to the values that yo
 Once you apply the filter to modify the query and then run the query, the results are updated accordingly.
 
 ## Related topics
-- [Learn the query language](advanced-hunting.md)
+- [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Understand the schema](advanced-hunting-reference.md)
+- [Understand the schema](advanced-hunting-schema-reference.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 - [Custom detections overview](overview-custom-detections.md)
