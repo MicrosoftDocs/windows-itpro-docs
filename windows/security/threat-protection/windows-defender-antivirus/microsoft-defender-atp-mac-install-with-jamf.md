@@ -51,17 +51,16 @@ Download the installation and onboarding packages from Windows Defender Security
 5. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
 
     ```bash
-    mavel-macmini:Downloads test$ ls -l
+    $ ls -l
     total 721160
     -rw-r--r--  1 test  staff      11821 Mar 15 09:23 WindowsDefenderATPOnboardingPackage.zip
     -rw-r--r--  1 test  staff  354531845 Mar 13 08:57 wdav.pkg
-    mavel-macmini:Downloads test$ unzip WindowsDefenderATPOnboardingPackage.zip
+    $ unzip WindowsDefenderATPOnboardingPackage.zip
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     warning:  WindowsDefenderATPOnboardingPackage.zip appears to use backslashes as path separators
     inflating: intune/kext.xml
      inflating: intune/WindowsDefenderATPOnboarding.xml
      inflating: jamf/WindowsDefenderATPOnboarding.plist
-    mavel-macmini:Downloads test$
     ```
 
 ## Create JAMF policies
@@ -90,6 +89,22 @@ To approve the kernel extension:
 2. Use **UBF8T346G9** for Team Id.
 
 ![Approved kernel extensions screenshot](images/MDATP_17_approvedKernelExtensions.png)
+
+### Privacy Preferences Policy Control
+
+> [!CAUTION]
+> macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender ATP is not able to fully protect your device.
+>
+> If you previously configured Microsoft Defender ATP through JAMF, we recommend applying the following configuration.
+
+Add the following JAMF policy to grant Full Disk Access to Microsoft Defender ATP.
+
+1. Select **Options > Privacy Preferences Policy Control**.
+2. Use any identifier and identifier type = Bundle.
+3. Set Code Requirement to `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`.
+4. Set app or service to SystemPolicyAllFiles and access to Allow.
+
+![Privacy Preferences Policy Control](images/MDATP_35_JAMF_PrivacyPreferences.png)
 
 #### Configuration Profile's Scope
 
@@ -166,7 +181,7 @@ Once the policy is applied, you'll see the Microsoft Defender ATP icon in the ma
 You can monitor policy installation on a device by following the JAMF log file:
 
 ```bash
-    mavel-mojave:~ testuser$ tail -f /var/log/jamf.log
+    $ tail -f /var/log/jamf.log
     Thu Feb 21 11:11:41 mavel-mojave jamf[7960]: No patch policies were found.
     Thu Feb 21 11:16:41 mavel-mojave jamf[8051]: Checking for policies triggered by "recurring check-in" for user "testuser"...
     Thu Feb 21 11:16:43 mavel-mojave jamf[8051]: Executing Policy WDAV
@@ -179,7 +194,7 @@ You can monitor policy installation on a device by following the JAMF log file:
 You can also check the onboarding status:
 
 ```bash
-mavel-mojave:~ testuser$ mdatp --health
+$ mdatp --health
 ...
 licensed                                : true
 orgId                                   : "4751b7d4-ea75-4e8f-a1f5-6d640c65bc45"
@@ -195,7 +210,7 @@ orgId                                   : "4751b7d4-ea75-4e8f-a1f5-6d640c65bc45"
 You can check that devices have been correctly onboarded by creating a script. For example, the following script checks enrolled devices for onboarding status:
 
 ```bash
-mdatp --health healthy
+$ mdatp --health healthy
 ```
 
 The above command prints "1" if the product is onboarded and functioning as expected.
@@ -219,6 +234,8 @@ Create a script in **Settings > Computer Management > Scripts**.
 This script removes Microsoft Defender ATP from the /Applications directory:
 
 ```bash
+   #!/bin/bash
+
    echo "Is WDAV installed?"
    ls -ld '/Applications/Microsoft Defender ATP.app' 2>/dev/null
 

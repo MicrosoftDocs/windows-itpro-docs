@@ -18,6 +18,7 @@ ms.author: dansimp
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
+-   Windows Server 2019
 
 Members of the security community<sup>\*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
 
@@ -69,8 +70,8 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 
 <br />
 
->[!Note]
->This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
+> [!Note]
+> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
 
 Certain software applications may allow additional code to run by design. 
 These types of applications should be blocked by your Windows Defender Application Control policy. 
@@ -88,7 +89,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
 - msxml6.dll
 - jscript9.dll
 
-Pick the correct version of each .dll for the Windows release you plan to support, and remove the other versions.
+Pick the correct version of each .dll for the Windows release you plan to support, and remove the other versions. Ensure that you also uncomment them in the signing scenarios section.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -888,9 +889,11 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <FileRuleRef RuleID="ID_DENY_WMIC"/>
   <FileRuleRef RuleID="ID_DENY_MWFC" /> 
   <FileRuleRef RuleID="ID_DENY_WFC" /> 
+  <!-- Uncomment the relevant line(s) below if you have uncommented them in the rule definitions above.
   <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
   <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
   <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
+  -->
   <FileRuleRef RuleID="ID_DENY_MSBUILD_DLL" /> 
   <FileRuleRef RuleID="ID_DENY_DOTNET" /> 
   <FileRuleRef RuleID="ID_DENY_MS_BUILD" /> 
@@ -1511,3 +1514,10 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   </SiPolicy>
 ```
 <br />
+
+> [!Note]
+> To create a policy that works on both Windows 10, version 1803 and version 1809, you can create two different policies, or merge them into one broader policy.
+
+## More information
+
+- [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md)

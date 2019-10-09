@@ -117,7 +117,7 @@ Diagnostic data is categorized into the levels "Security", "Basic", "Enhanced", 
 
 ### Windows services where Microsoft is the processor under the GDPR
 
-Most Windows 10 services are controller services in terms of the GDPR – for both Windows functional data and Windows diagnostic data. But there are a few Windows services where Microsoft is a processor for functional data under the GDPR, such as [Windows Analytics](https://www.microsoft.com/windowsforbusiness/windows-analytics) and [Windows Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/windowsforbusiness/windows-atp).
+Most Windows 10 services are controller services in terms of the GDPR – for both Windows functional data and Windows diagnostic data. But there are a few Windows services where Microsoft is a processor for functional data under the GDPR, such as [Windows Analytics](https://www.microsoft.com/windowsforbusiness/windows-analytics) and [Windows Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
 >[!NOTE]
 >Both Windows Analytics and Windows Defender ATP are subscription services for organizations. Some functionality requires a certain license (please see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare)).
@@ -137,7 +137,7 @@ As a result, in terms of the GDPR, the organization that has subscribed to Windo
 
 #### Windows Defender ATP
 
-[Windows Defender ATP](https://www.microsoft.com/WindowsForBusiness/windows-atp) is cloud-based service that collects and analyzes usage data from an organization’s devices to detect security threats. Some of the data can contain personal data as defined by the GDPR. Enrolled devices transmit usage data to Microsoft datacenters, where that data is analyzed, processed, and stored. The security operations center (SOC) of the organization can view the analyzed data using the [Windows Defender ATP portal](https://securitycenter.windows.com/).
+[Windows Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) is cloud-based service that collects and analyzes usage data from an organization’s devices to detect security threats. Some of the data can contain personal data as defined by the GDPR. Enrolled devices transmit usage data to Microsoft datacenters, where that data is analyzed, processed, and stored. The security operations center (SOC) of the organization can view the analyzed data using the [Windows Defender ATP portal](https://securitycenter.windows.com/).
 
 As a result, in terms of the GDPR, the organization that has subscribed to Windows Defender ATP is acting as the controller, while Microsoft is the processor for Windows Defender ATP.
 
@@ -224,7 +224,7 @@ IT Professionals that are interested in this configuration, see [Windows 10 pers
 
 ### Windows 10 connections to Microsoft
 
-To find out more about the network connections that Windows components make to Microsoft as well as the privacy settings that affect data shared with either Microsoft or apps, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) and [Manage Windows 10 connection endpoints](manage-windows-endpoints.md). These articles describe how these settings can be managed by an IT Professional.
+To find out more about the network connections that Windows components make to Microsoft as well as the privacy settings that affect data shared with either Microsoft or apps, see [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services). This article describe how these settings can be managed by an IT Professional, and fronts an array of Windows version-specific articles.
 
 ### At-a-glance: the relationship between an IT organization and the GDPR
 

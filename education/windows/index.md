@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: CelesteDG
-ms.author: celested
+author: dansimp
+ms.author: dansimp
 ms.date: 10/13/2017
 ---
 

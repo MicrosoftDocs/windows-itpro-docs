@@ -71,16 +71,17 @@ You can output video to another display using MiniDP, as indicated in the follow
 
 ### Surface Hub 2S video-out settings
 
-| **Signal Type** | **Resolution** | **Frame rate** | **USB-C** | **MiniDP** |
-| --------------- | -------------- | -------------- | --------- | ---------- |
-| PC              | 640 x 480      | 60             | X         | X          |
-| PC              | 720 x 480      | 60             | X         | X          |
-| PC              | 1024 x 768     | 60             | X         | X          |
-| PC              | 1920 x 1080    | 60             | X         | X          |
-| PC              | 3840x2560      | 60             | X         | X          |
-| HDTV            | 720p           | 60             | X         | X          |
-| HDTV            | 1080p          | 60             | X         | X          |
-| 4K UHD          | 3840x2560      | 60             | X         | X          |
+| **Signal Type** | **Resolution** | **Frame rate** | **MiniDP** |
+| --------------- | -------------- | -------------- | ---------- |
+| PC              | 640 x 480      | 60             | X          |
+| PC              | 720 x 480      | 60             | X          |
+| PC              | 1024 x 768     | 60             | X          |
+| PC              | 1920 x 1080    | 60             | X          |
+| PC              | 3840 x 2560    | 60             | X          |
+| HDTV            | 720p           | 60             | X          |
+| HDTV            | 1080p          | 60             | X          |
+| 4K UHD          | 3840 x 2560    | 60             | X          |
+
 
  
 Surface Hub 2S includes a MiniDP video-out port for projecting visual content from Surface Hub 2S to another display. If you plan to use Surface Hub 2S to project to another display, note the following recommendations:
@@ -130,4 +131,4 @@ You can connect the following accessories to Surface Hub-2S using Bluetooth:
 - Speakers
 
 > [!NOTE]
-> After you connect a Bluetooth headset or speaker, you might need to change the default microphone and speaker settings. For more information, see [**Local management for Surface Hub settings**](https://docs.microsoft.com/en-us/surface-hub/local-management-surface-hub-settings).
+> After you connect a Bluetooth headset or speaker, you might need to change the default microphone and speaker settings. For more information, see [**Local management for Surface Hub settings**](https://docs.microsoft.com/surface-hub/local-management-surface-hub-settings).

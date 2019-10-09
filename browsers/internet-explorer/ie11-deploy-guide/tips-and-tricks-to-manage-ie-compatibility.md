@@ -3,12 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Find out how to achieve better backward compatibility for your legacy web applications with the Enterprise Mode Site List.
-author: lomayor
-ms.author: lomayor
+author: dansimp
+ms.author: dansimp
 ms.prod: ie11
 ms.assetid: 
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 title: Tips and tricks to manage Internet Explorer compatibility
 ms.sitesec: library
 ms.date: 05/10/2018

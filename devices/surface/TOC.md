@@ -10,7 +10,6 @@
 ### [Surface Laptop 2 Tech specs](https://www.microsoft.com/surface/devices/surface-laptop/tech-specs)
 
 ## Plan
-### [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md)
 ### [Surface device compatibility with Windows 10 Long-Term Servicing Branch](surface-device-compatibility-with-windows-10-ltsc.md)
 ### [Long-Term Servicing Branch for Surface devices](ltsb-for-surface.md)
 ### [Wake On LAN for Surface devices](wake-on-lan-for-surface-devices.md)
@@ -21,6 +20,10 @@
 
 ## Deploy
 ### [Deploy Surface devices](deploy.md)
+### [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md)
+### [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
+### [Windows 10 ARM-based PC app compatibility](surface-pro-arm-app-performance.md)
+### [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ### [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)
 ### [Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
 ### [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md)
@@ -30,16 +33,14 @@
 ### [Surface System SKU reference](surface-system-sku-reference.md)
 
 ## Manage
-### [Optimizing wireless connectivity for Surface devices](surface-wireless-connect.md)
+### [Optimize Wi-Fi connectivity for Surface devices](surface-wireless-connect.md)
 ### [Best practice power settings for Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)
+### [Surface Dock Firmware Update](surface-dock-firmware-update.md)
 ### [Battery Limit setting](battery-limit.md)
 ### [Surface Brightness Control](microsoft-surface-brightness-control.md)
 ### [Surface Asset Tag](assettag.md)
 ### [Surface firmware and driver updates](update.md)
-### [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ### [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)
-### [Surface Dock Updater](surface-dock-updater.md)
-
 
 ## Secure
 ### [Manage Surface UEFI settings](manage-surface-uefi-settings.md)
