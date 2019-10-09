@@ -119,8 +119,6 @@ To resolve this issue, follow these steps:
    
    Where \<Path> is the path to the script file.
 
-Post modification, ran Add-TPMSelfWriteACE.vbs and it ran successfully.
-
 For more information, see the following articles:
 
 - [Back up the TPM Recovery Information to AD DS](https://docs.microsoft.com/windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds)
