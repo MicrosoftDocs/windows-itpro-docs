@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender ATP evaluation lab
 description: Learn about Microsoft Defender ATP capabilities, run attack simulations, and see how it prevents, detects, and remediates threats.
-keywords: 
+keywords: evaluate mdatp, evaluation, lab, simulation, windows 10, windows server 2019, evaluation lab
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -34,6 +34,10 @@ With the simplified set-up experience, you can focus on running your own test sc
 
 You'll have full access to all the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Microsoft Defender ATP offers. 
 
+## Before you begin
+You'll need to fulfill the [licensing requirements](minimum-requirements.md#licensing-requirements) or have trial access to Microsoft Defender ATP to access the evaluation lab.
+
+Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink)
 
 ## Get started with the lab
 You can access the lab from the menu. In the navigation menu, select **Evaluation and tutorials > Evaluation lab**.
@@ -47,26 +51,26 @@ It's a good idea to read the guide before starting the evaluation process so tha
 >[!NOTE]
 >- Each environment is provisioned with a limited set of test machines.
 >- Depending the type of environment structure you select, machines will be available for the specified number of hours from the day of activation.
->- When you've used up the provisioned machines, no new machines are provided. Deleting a machine does not refresh the available test machine count.
+>- When you've used up the provisioned machines, no new machines are provided. A deleted machine does not refresh the available test machine count.
 >- Given the limited resources, it’s advisable to use the machines carefully.
 
 
 ## Setup the evaluation lab
 
-1. In the navigation pane, select **Evaluation and tutorials > Evaluation lab**.
+1. In the navigation pane, select **Evaluation and tutorials > Evaluation lab**, then select **Setup lab**.
+
+    ![Image of the evaluation lab welcome page](images/evaluation-lab-setup.png)
 
 2. Depending on your evaluation needs, you can choose to setup an environment with fewer machines for a longer period or more machines for a shorter period. Select your preferred lab configuration then select **Create lab**.
 
-    >[!WARNING]
-    >- Each environment is provisioned with a limited set of test machines.
-    >- Depending the type of configuration you select, machines will be available for the specified number of hours from the day of activation.
-    >- When you've used up the provisioned machines, no new machines are provided. Deleting a machine does not refresh the available test machine count.
-    >- Given the limited resources, it’s advisable to use the machines carefully.
+    ![Image of lab configuration options](images/lab-creation-page.png)
 
 When the environment completes the setup process, you're ready to add machines.
 
-## Add machine - [RAN AND HADAR PLS CHECK IF THE FOLLOWING STATEMENTS ARE TRUE FOR SERVER2019 TOO]
-When you add a machine to your environment, Microsoft Defender ATP sets up a well-configured machine with connection details. The machine will be configured with the most up to date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals. 
+## Add machines
+When you add a machine to your environment, Microsoft Defender ATP sets up a well-configured machine with connection details. You can add Windows 10 or Windows Server 2019 machines.
+
+The machine will be configured with the most up-to-date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals. 
 
 The machine will automatically be onboarded to your tenant with the recommended Windows security components turned on and in audit mode - with no effort on your side. 
 
@@ -91,7 +95,13 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 1. From the dashboard, select **Add machine**. 
 
+    ![Image of lab setup page](images/lab-setup-page.png)
+
+
 2. Choose the type of machine to add. You can choose to add Windows 10 or Windows Server 2019.
+
+    ![Image of lab setup with machine options](images/add-machine-options.png)
+
 
     >[!NOTE]
     >If something goes wrong with the machine creation process, you'll be notified and you'll need to submit a new request. If the machine creation fails, it will not be counted against the overall allowed quota. 
@@ -101,7 +111,9 @@ Automated investigation settings will be dependent on tenant settings. It will b
     >[!NOTE]
     >The password is only displayed once. Be sure to save it for later use.
 
-5. Machine set up begins. This can take up to approximately 30 minutes. 
+    ![Image of machine added with connection details](images/add-machine-eval-lab.png)
+
+4. Machine set up begins. This can take up to approximately 30 minutes. 
 
 The environment will reflect your test machine status through the evaluation - including risk score, exposure score, and alerts created through the simulation.
 
@@ -166,5 +178,5 @@ Your feedback helps us get better in protecting your environment from advanced a
 
 Let us know what you think, by selecting **Provide feedback**.
 
-![Image of provide feedback](images/eval-feedback.png)
+![Image of provide feedback](images/send-us-feedback-eval-lab.png)
 
