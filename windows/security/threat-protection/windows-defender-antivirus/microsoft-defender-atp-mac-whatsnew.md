@@ -20,6 +20,10 @@ ms.topic: conceptual
 
 # What's new in Microsoft Defender Advanced Threat Protection for Mac
 
+## 100.70.99
+
+- Addressed an issue that impacts the ability of some users to upgrade to macOS Catalina when real-time protection is enabled. This sporadic issue was caused by Microsoft Defender ATP locking files within Catalina upgrade package while scanning them for threats, which led to failures in the upgrade sequence.
+
 ## 100.68.99
 
 - Added the ability to configure the antivirus functionality to run in [passive mode](microsoft-defender-atp-mac-preferences.md#enable--disable-passive-mode)

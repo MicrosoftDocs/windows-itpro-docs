@@ -10,7 +10,7 @@ ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
 ms.prod: w10
-ms.date: 06/16/2016
+ms.date: 10/03/2016
 ---
 
 
@@ -22,7 +22,7 @@ This section includes technical reference information about Microsoft Diagnostic
 ## Technical reference
 
 
--   [Microsoft Diagnostics and Recovery Toolset (DaRT) users should use Windows Defender Offline (WDO) for malware detection](microsoft-diagnostics-and-recovery-toolset--dart--users-should-use-windows-defender-offline--wdo--for-malware-detection.md)
+[Microsoft Diagnostics and Recovery Toolset (DaRT) users should use Windows Defender Offline (WDO) for malware detection-->](use-windows-defender-offline-wdo-for-malware-protection-not-dart.md)
 
     Environments with the Microsoft Diagnostics and Recovery Toolset (DaRT) Defender tool deployed should instead use the Windows Defender Offline (WDO) protection image for malware detection.
 

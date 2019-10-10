@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
+ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
 manager: dansimp
@@ -436,6 +437,31 @@ The following list shows the supported values:
 -   1 (default) – Allow NFC capabilities.
 
 <!--/SupportedValues-->
+<!--Example-->
+
+The following example shows how to disallow NFC capabilities.
+
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+    <SyncBody>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Vendor/MSFT/Policy/Config/Connectivity/AllowNFC</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">int</Format>
+                </Meta>
+                <Data>0</Data>
+            </Item>
+        </Replace>
+        <Final/>
+    </SyncBody>
+</SyncML>
+```
+
+<!--/Example-->
 <!--/Policy-->
 
 <hr/>

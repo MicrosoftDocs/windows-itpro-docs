@@ -149,7 +149,7 @@ In this case, Tamper Protection status changes, and this feature is no longer ap
 
 ### Will there be an alert about Tamper Protection status changing in the Microsoft Defender Advanced Threat Protection portal?
 
-Yes. The alert is shown in [https://microsoft.securitycenter.com](https://microsoft.securitycenter.com) under **Alerts**. 
+Yes. The alert is shown in [https://securitycenter.microsoft.com](https://microsoft.securitycenter.com) under **Alerts**. 
 
 In addition, your security operations team can use hunting queries, such as the following:
 

@@ -19,6 +19,9 @@ ms.date: 10/02/2018
 # Microsoft Edge system and language requirements
 >Applies to:  Microsoft Edge on Windows 10 and Windows 10 Mobile
 
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
+
 Microsoft Edge is the new, default web browser for Windows 10, helping you to experience modern web standards, better performance, improved security, and increased reliability. Microsoft Edge lets you stay up-to-date through the Microsoft Store and to manage your enterprise through Group Policy or your mobile device management (MDM) tools.
 
 
