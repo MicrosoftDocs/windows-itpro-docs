@@ -128,7 +128,7 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
     -   127.0.0.1 , ::1 - localhost
 
--   **Destination Port** \[Type = UnicodeString\]**:** port number on which the connection was initiated.
+-   **Destination Port** \[Type = UnicodeString\]**:** port number where the connection was received.
 
 -   **Protocol** \[Type = UInt32\]: number of protocol which was used.
 
