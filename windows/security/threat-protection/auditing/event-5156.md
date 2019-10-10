@@ -116,7 +116,7 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
 -   **Source Port** \[Type = UnicodeString\]**:** port number from which the connection was initiated.
 
--   **Destination Address** \[Type = UnicodeString\]**:** IP address to which the connection was initiated.
+-   **Destination Address** \[Type = UnicodeString\]**:** IP address where the connection was received.
 
     -   IPv4 Address
 
