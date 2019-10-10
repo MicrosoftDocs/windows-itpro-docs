@@ -28,9 +28,6 @@ manager: dansimp
     <a href="#browser-allowautofill">Browser/AllowAutofill</a>
   </dd>
   <dd>
-    <a href="#browser-allowbrowser">Browser/AllowBrowser</a>
-  </dd>
-  <dd>
     <a href="#browser-allowconfigurationupdateforbookslibrary">Browser/AllowConfigurationUpdateForBooksLibrary</a>
   </dd>
   <dd>
@@ -131,9 +128,6 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#browser-enterprisesitelistserviceurl">Browser/EnterpriseSiteListServiceUrl</a>
-  </dd>
-  <dd>
-    <a href="#browser-firstrunurl">Browser/FirstRunURL</a>
   </dd>
   <dd>
     <a href="#browser-homepages">Browser/HomePages</a>
@@ -359,79 +353,6 @@ To verify AllowAutofill is set to 0 (not allowed):
 4.  Verify the setting **Save form entries** is grayed out.
 
 <!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="browser-allowbrowser"></a>**Browser/AllowBrowser**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-csp.md) instead.
-
-The device allows Microsoft Edge on Windows 10 Mobile by default. With this policy, you can disable the Microsoft Edge tile, and when clicking the tile, a message opens indicating that the administrator disabled Internet browsing.
-
-
-
-<!--/Description-->
-<!--SupportedValues-->
-Supported values:
-
--   0 – Prevented/not allowed.
--   1 (default) – Allowed.
-
-Most restricted value: 0
-<!--/SupportedValues-->
 <!--/Policy-->
 
 <hr/>
@@ -3255,69 +3176,6 @@ Supported values:
 <!--Description-->
 > [!IMPORTANT]
 > Discontinued in Windows 10, version 1511. Use the [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist) policy instead.
-
-<!--/Description-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="browser-firstrunurl"></a>**Browser/FirstRunURL**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
-
-Enter a URL in string format for the site you want to load when Microsoft Edge for Windows 10 Mobile opens for the first time, for example, contoso.com.
 
 <!--/Description-->
 <!--/Policy-->

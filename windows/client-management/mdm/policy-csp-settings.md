@@ -31,9 +31,6 @@ manager: dansimp
     <a href="#settings-allowdatetime">Settings/AllowDateTime</a>
   </dd>
   <dd>
-    <a href="#settings-alloweditdevicename">Settings/AllowEditDeviceName</a>
-  </dd>
-  <dd>
     <a href="#settings-allowlanguage">Settings/AllowLanguage</a>
   </dd>
   <dd>
@@ -260,72 +257,6 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 Allows the user to change date and time settings.
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="settings-alloweditdevicename"></a>**Settings/AllowEditDeviceName**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allows editing of the device name.
 
 <!--/Description-->
 <!--SupportedValues-->
