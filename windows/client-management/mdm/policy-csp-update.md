@@ -4631,7 +4631,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Enables IT administrators to specify which version they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy.
+Enables IT administrators to specify which version they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see [Windows 10 release information](https://docs.microsoft.com/windows/release-information/).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -4643,7 +4643,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Value type is a string containing version number. For example, 1809, 1903.
+Value type is a string containing Windows 10 version number. For example, 1809, 1903.
 <!--/SupportedValues-->
 <!--Example-->
 
