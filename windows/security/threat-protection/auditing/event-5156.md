@@ -114,7 +114,7 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
     -   127.0.0.1 , ::1 - localhost
 
--   **Source Port** \[Type = UnicodeString\]**:** port number on which the connection was initiated.
+-   **Source Port** \[Type = UnicodeString\]**:** port number from which the connection was initiated.
 
 -   **Destination Address** \[Type = UnicodeString\]**:** IP address to which the connection was initiated.
 
