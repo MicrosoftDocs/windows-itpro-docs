@@ -24,7 +24,6 @@ This topic provides information about what's new and breaking changes in Windows
 For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347). 
 
 - **What’s new in MDM for Windows 10 versions**
-  - [What's new in MDM for Windows 10, version 1909](#whats-new-in-mdm-for-windows-10-version-1903)
   - [What’s new in MDM for Windows 10, version 1903](#whats-new-in-mdm-for-windows-10-version-1903)
   - [What’s new in MDM for Windows 10, version 1809](#whats-new-in-mdm-for-windows-10-version-1809)
   - [What’s new in MDM for Windows 10, version 1803](#whats-new-in-mdm-for-windows-10-version-1803)
@@ -83,27 +82,6 @@ For details about Microsoft mobile device management protocols for Windows 10 s
     - [October 2017](#october-2017)
     - [September 2017](#september-2017)
     - [August 2017](#august-2017)
-
-## What's new in MDM for Windows 10, version 1909
-<table class="mx-tdBreakAll">
-<colgroup>
-<col width="25%" />
-<col width="75%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>New or updated topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="vertical-align:top"><a href="bitlocker-csp.md" data-raw-source="[BitLocker CSP](bitlocker-csp.md)">BitLocker CSP</a></td>
-<td style="vertical-align:top"><p>Added the following new nodes in Windows 10, version 1909:<br>ConfigureRecoveryPasswordRotation, RotateRecoveryPasswords, RotateRecoveryPasswordsStatus, RotateRecoveryPasswordsRequestID.</p>
-</li>
-</td></tr>
-</tbody>
-</table>
 
 ## What’s new in MDM for Windows 10, version 1903
 <table class="mx-tdBreakAll">
