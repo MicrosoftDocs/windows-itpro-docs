@@ -23,7 +23,7 @@ ms.reviewer:
 - Windows 10 Professional, version 1803
 - Windows 10 Education, version 1803
 
-In addition to the endpoints listed for [Windows 10 Enterprise](manage-windows-endpoints.md), the following endpoints are available on other editions of Windows 10, version 1803.
+In addition to the endpoints listed for [Windows 10 Enterprise](https://docs.microsoft.com/en-gb/windows/privacy/manage-windows-1803-endpoints ), the following endpoints are available on other editions of Windows 10, version 1803.
 
 We used the following methodology to derive these network endpoints:
 

@@ -114,43 +114,6 @@ manager: dansimp
 <!--Policy-->
 <a href="" id="textinput-allowhardwarekeyboardtextsuggestions"></a>**TextInput/AllowHardwareKeyboardTextSuggestions**  
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
 <hr/>
 
 <!--Scope-->
@@ -755,43 +718,6 @@ To validate that text prediction is disabled on Windows 10 for desktop, do the f
 <!--Policy-->
 <a href="" id="textinput-allowkoreanextendedhanja"></a>**TextInput/AllowKoreanExtendedHanja**  
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
 <hr/>
 
 <!--Description-->

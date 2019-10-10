@@ -23,7 +23,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Custom detection rules built from [Advanced hunting](overview-hunting.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured machines. The queries run every 24 hours, generating alerts and taking response actions whenever there are matches.
+Custom detection rules built from [Advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured machines. The queries run every 24 hours, generating alerts and taking response actions whenever there are matches.
 
 > [!NOTE]
 > To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
@@ -33,8 +33,10 @@ Custom detection rules built from [Advanced hunting](overview-hunting.md) querie
 
 In Microsoft Defender Security Center, go to **Advanced hunting** and select an existing query or create a new query. When using an new query, run the query to identify errors and understand possible results.
 
-> [!NOTE]
-> To use a query for a custom detection rule, the query must return the `EventTime`, `MachineId`, and `ReportId` columns in the results. Queries that don’t use the `project` operator to customize results usually return these common columns.
+#### Required columns in the query results
+To use a query for a custom detection rule, the query must return the `EventTime`, `MachineId`, and `ReportId` columns in the results. Simple queries, such as those that don’t use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.
+
+There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by `MachineId`, you can still return `EventTime` and `ReportId` by getting them from the most recent event involving each machine. 
 
 The sample query below counts the number of unique machines (`MachineId`) with antivirus detections and uses this count to find only the machines with more than five detections. To return the latest `EventTime` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.
 
@@ -112,3 +114,5 @@ You can also take the following actions on the rule from this page:
 
 ## Related topic
 - [Custom detections overview](overview-custom-detections.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
+- [Learn the Advanced hunting query language](advanced-hunting-query-language.md)

@@ -73,7 +73,7 @@ The topics in this library have been updated for Windows 10 Holographic for Busi
 
 New or changed topic | Description
 --- | ---
-[Unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md)  | Replaced the instructions for upgrading to Windows Holographic for Business using Microsoft Intune with a link to the new Intune topic.
+[Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)  | Replaced the instructions for upgrading to Windows Holographic for Business using Microsoft Intune with a link to the new Intune topic.
 
 ## December 2017
 

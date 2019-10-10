@@ -3,7 +3,7 @@ title: Deploying, managing, and servicing Surface Pro X
 description: This article provides an overview of key considerations for deploying, managing, and servicing Surface Pro X.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.localizationpriority: normal
+ms.localizationpriority: high
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp

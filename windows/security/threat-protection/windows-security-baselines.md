@@ -20,8 +20,8 @@ ms.reviewer:
 **Applies to**  
 
 -   Windows 10
--   Windows Server 2016 
--   Office 2016 
+-   Windows Server 
+-   Office 365 ProPlus 
 
 ## Using security baselines in your organization 
 
