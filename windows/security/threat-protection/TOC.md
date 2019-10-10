@@ -301,7 +301,6 @@
 
 #### [Manage next generation protection in your business]()
 ##### [Management overview](windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus.md)
-##### [Management overview](windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus.md)
 ##### [Use Microsoft Intune and System Center Configuration Manager to manage next generation protection](windows-defender-antivirus/use-intune-config-manager-windows-defender-antivirus.md)
 ##### [Use Group Policy settings to manage next generation protection](windows-defender-antivirus/use-group-policy-windows-defender-antivirus.md)
 ##### [Use PowerShell cmdlets to manage next generation protection](windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus.md)
