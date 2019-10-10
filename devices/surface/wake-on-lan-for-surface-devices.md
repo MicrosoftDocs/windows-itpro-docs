@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
+ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.topic: article
@@ -42,7 +43,7 @@ The following devices are supported for WOL:
 * Surface Laptop 2
 * Surface Go
 * Surface Go with LTE Advanced
-* Surface Studio (See Surface Studio instructions below)
+* Surface Studio (see Surface Studio instructions below)
 
 ## WOL driver
 
