@@ -12,6 +12,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
+ms.localizationpriority: medium
 ms.date: 07/01/2019
 ---
 
@@ -627,7 +628,7 @@ Policy, Policy/Channels, Policy/Channels/ChannelName, Policy/Channels/ChannelNam
 <td style="vertical-align:top"><p>Changed the minimum personal identification number (PIN) length to 4 digits in SystemDrivesRequireStartupAuthentication and SystemDrivesMinimumPINLength in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="policy-configuration-service-provider.md#admx-backed-policies" data-raw-source="[ADMX-backed policies in Policy CSP](policy-configuration-service-provider.md#admx-backed-policies)">ADMX-backed policies in Policy CSP</a></td>
+<td style="vertical-align:top"><a href="policies-admx-backed.md" data-raw-source="[ADMX-backed policies in Policy CSP](policies-admx-backed.md)">ADMX-backed policies in Policy CSP</a></td>
 <td style="vertical-align:top"><p>Added new policies.</p>
 </td></tr>
 <tr class="odd">
@@ -2377,7 +2378,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 </ul>
 <p>Added a new section:</p>
 <ul>
-<li><a href="policy-configuration-service-provider.md#policies-supported-by-gp" data-raw-source="[Policies supported by GP](policy-configuration-service-provider.md#policies-supported-by-gp)">Policies supported by GP</a> - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.</li>
+<li><a href="policies-supported-by-group-policy.md" data-raw-source="[Policies supported by Group Policy](policies-supported-by-group-policy.md)">Policies supported by Group Policy</a> - list of policies in Policy CSP that has corresponding Group Policy. The policy description contains the GP information, such as GP policy name and variable name.</li>
 </ul>
 </td></tr>
 <tr>
