@@ -271,7 +271,7 @@ Scope is permanent. Supported operation is Get.
 
 
 <a href="" id="securitykey-usesecuritykeyforsignin"></a>**SecurityKey/UseSecurityKeyForSignin** (only for ./Device/Vendor/MSFT)  
-Added in Windows 10, version 1903. Enables users to sign-in to their device with a [FIDO2 security key](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) that is compatible with Microsoft’s implementation.
+Added in Windows 10, version 1903. Enables users to sign-in to their device with a [FIDO2 security key](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) that is compatible with Microsoft’s implementation.
 
 Scope is dynamic. Supported operations are Add, Get, Replace, and Delete.
 
