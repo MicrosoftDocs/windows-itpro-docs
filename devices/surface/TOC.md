@@ -27,6 +27,7 @@
 ### [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)
 ### [Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
 ### [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md)
+### [Enable the Surface Laptop keyboard during MDT deployment](enable-surface-keyboard-for-windows-pe-deployment.md)
 ### [Upgrade Surface devices to Windows 10 with MDT](upgrade-surface-devices-to-windows-10-with-mdt.md)
 ### [Customize the OOBE for Surface deployments](customize-the-oobe-for-surface-deployments.md)
 ### [Using the Surface Deployment Accelerator deployment share](using-the-sda-deployment-share.md)
