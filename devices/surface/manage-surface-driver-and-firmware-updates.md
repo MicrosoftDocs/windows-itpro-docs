@@ -45,7 +45,7 @@ For instructions on how to deploy updates by using System Center Configuration M
 > [!NOTE]
 > You can deploy applications separately from an operating system deployment through MDT by using a Post OS Installation task sequence.
 
-## Operating system deployment considerations
+## Considerations when deploying updates and operating systems together
 
 The process of deploying firmware updates during an operating system deployment is straightforward. You can import the firmware and driver pack into either System Center Configuration Manager or MDT, and use them to deploy a fully updated environment to a target Surface device, complete with firmware. For a complete step-by-step guide to using MDT to deploy Windows to a Surface device, see [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](deploy-windows-10-to-surface-devices-with-mdt.md).
 
