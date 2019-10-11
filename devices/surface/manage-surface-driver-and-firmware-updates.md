@@ -28,7 +28,7 @@ On Surface devices, the firmware is exposed to the operating system as a driver 
 
 Windows Update automatically provides firmware for computers that receive updates directly from Microsoft. However, in environments where  Windows Server Update Services (WSUS) manages updates, Windows Update cannot update the firmware. For managed environments, there are a number of options you can use to deploy firmware updates.
 
-**Windows Update**
+### Windows Update
 
 The simplest solution to ensure that firmware on Surface devices in your organization is kept up to date is to allow Surface devices to receive updates directly from Microsoft. You can implement this solution easily by excluding Surface devices from Group Policy that directs computers to receive updates from WSUS.
 
@@ -36,7 +36,7 @@ Although this solution ensures that firmware will be updated as new releases are
 
 For details about Group Policy for client configuration of WSUS or Windows Update, see [Step 4: Configure Group Policy Settings for Automatic Updates](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/deploy/4-configure-group-policy-settings-for-automatic-updates).
 
-**Windows Installer Package**
+### Windows Installer Package
 
 Surface driver and firmware updates are packaged as Windows Installer (MSI) files. To deploy these Windows Installer packages, you can use application deployment utilities such as the Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager. Such solutions provide the means for administrators to test and review updates before deploying them, and to centralize deployment. For each device, it is important to select the correct MSI file for the device and its operating system. For more information see [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
 
@@ -44,6 +44,10 @@ For instructions on how to deploy updates by using System Center Configuration M
 
 > [!NOTE]
 > You can deploy applications separately from an operating system deployment through MDT by using a Post OS Installation task sequence.
+
+### Microsoft System Center Configuration Manager
+
+Starting in Microsoft System Center Configuration Manager version 1710, you can synchronize and deploy Microsoft Surface firmware and driver updates by using the Configuration Manager client. The process resembles that for deploying regular updates. For additional information, see KB 4098906, [How to manage Surface driver updates in Configuration Manager](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager).
 
 ## Considerations when deploying updates and operating systems together
 
