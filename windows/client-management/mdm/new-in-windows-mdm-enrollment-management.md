@@ -1935,12 +1935,6 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 |--- | ---|
 |[BitLocker CSP](bitlocker-csp.md)|Added the following new nodes:<br>ConfigureRecoveryPasswordRotation, RotateRecoveryPasswords, RotateRecoveryPasswordsStatus, RotateRecoveryPasswordsRequestID|
 
-### October 2019
-
-|New or updated topic | Description|
-|--- | ---|
-|[Policy CSP - Update](policy-csp-update.md)|Added the following new policy:<br>Update/TargetReleaseVersion|
-
 ### September 2019
 
 |New or updated topic | Description|
