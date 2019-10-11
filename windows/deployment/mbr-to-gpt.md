@@ -6,11 +6,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 02/13/2018
 ms.reviewer: 
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -346,7 +348,7 @@ MBR2GPT has the following associated return codes:
 | Return code | Description |
 |----|-------------|
 |0| Conversion completed successfully.|
-|1| Conversion was canceled by the user.|
+|1| Conversion was cancelled by the user.|
 |2| Conversion failed due to an internal error.|
 |3| Conversion failed due to an initialization error.|
 |4| Conversion failed due to invalid command-line parameters. |
