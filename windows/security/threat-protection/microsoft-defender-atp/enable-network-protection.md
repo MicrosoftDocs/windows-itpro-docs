@@ -83,8 +83,8 @@ You can use the following procedure to enable network protection on domain-joine
 You can confirm network protection is enabled on a local computer by using Registry editor:
 
 1. Click **Start** and type **regedit** to open **Registry Editor**.
-1. Navigate to Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection
-1. Click **EnableNetworkProtection** and confirm the value:
+2. Navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection
+3. Click **EnableNetworkProtection** and confirm the value:
    * 0=Off
    * 1=On
    * 2=Audit
