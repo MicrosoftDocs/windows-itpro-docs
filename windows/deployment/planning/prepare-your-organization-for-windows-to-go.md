@@ -30,7 +30,7 @@ The following information is provided to help you plan and design a new deployme
 ## What is Windows To Go?
 
 
-Windows To Go is a feature of Windows 10 Enterprise and Windows 10 Education that enables users to boot Windows from a USB-connected external drive. Windows To Go drives can use the same image that enterprises use for their desktops and laptops, and can be managed the same way. Offering a new mobility option, a Windows To Go workspace is not intended to replace desktops or laptops, or supplant other mobility offerings.
+Windows To Go is a feature of Windows 10 Enterprise and Windows 10 Education that enables users to boot Windows from a USB-connected external drive. Windows To Go drives can use the same image that enterprises use for their desktops and laptops, and can be managed the same way. Offering a new mobility option, a Windows To Go workspace is not intended to replace desktops or laptops or supplant other mobility offerings.
 
 Enterprise customers utilizing Volume Activation Windows licensing will be able to deploy USB drives provisioned with Windows To Go workspace. These drives will be bootable on multiple compatible host computers. Compatible host computers are computers that are:
 
