@@ -24,6 +24,7 @@ This topic provides information about what's new and breaking changes in Windows
 For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347). 
 
 - **What’s new in MDM for Windows 10 versions**
+  - [What’s new in MDM for Windows 10, version 1909](#whats-new-in-mdm-for-windows-10-version-1909)
   - [What’s new in MDM for Windows 10, version 1903](#whats-new-in-mdm-for-windows-10-version-1903)
   - [What’s new in MDM for Windows 10, version 1809](#whats-new-in-mdm-for-windows-10-version-1809)
   - [What’s new in MDM for Windows 10, version 1803](#whats-new-in-mdm-for-windows-10-version-1803)
@@ -57,6 +58,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [October 2019](#october-2019)
     - [September 2019](#september-2019)
     - [August 2019](#august-2019)
     - [July 2019](#july-2019)
@@ -81,6 +83,27 @@ For details about Microsoft mobile device management protocols for Windows 10 s
     - [October 2017](#october-2017)
     - [September 2017](#september-2017)
     - [August 2017](#august-2017)
+
+## What’s new in MDM for Windows 10, version 1909
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top"><a href="bitlocker-csp.md" data-raw-source="[BitLocker CSP](bitlocker-csp.md)">BitLocker CSP</a></td>
+<td style="vertical-align:top"><br>Added the following new nodes in Windows 10, version 1909:</p>
+ConfigureRecoveryPasswordRotation, RotateRecoveryPasswords, RotateRecoveryPasswordsStatus, RotateRecoveryPasswordsRequestID.</li>
+</td></tr>
+</tbody>
+</table>
 
 ## What’s new in MDM for Windows 10, version 1903
 <table class="mx-tdBreakAll">
@@ -1906,6 +1929,17 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+### October 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|[BitLocker CSP](bitlocker-csp.md)|Added the following new nodes:<br>ConfigureRecoveryPasswordRotation, RotateRecoveryPasswords, RotateRecoveryPasswordsStatus, RotateRecoveryPasswordsRequestID|
+
+### October 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - Update](policy-csp-update.md)|Added the following new policy:<br>Update/TargetReleaseVersion|
 
 ### September 2019
 
