@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
+ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
 manager: dansimp
@@ -1199,6 +1200,29 @@ The following list shows the supported values:
 -   The default value is 4 for mobile devices and desktop devices.
 
 <!--/SupportedValues-->
+<!--Example-->
+The following example shows how to set the minimum password length to 4 characters.
+
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+    <SyncBody>
+        <Replace>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Vendor/MSFT/Policy/Config/DeviceLock/MinDevicePasswordLength</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">int</Format>
+                </Meta>
+                <Data>4</Data>
+            </Item>
+        </Replace>
+        <Final/>
+    </SyncBody>
+</SyncML>
+```
+<!--/Example-->
 <!--/Policy-->
 
 <hr/>
