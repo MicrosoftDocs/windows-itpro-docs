@@ -57,6 +57,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
   - [What is dmwappushsvc?](#what-is-dmwappushsvc)
 
 - **Change history in MDM documentation**
+    - [October 2019](#october-2019)
     - [September 2019](#september-2019)
     - [August 2019](#august-2019)
     - [July 2019](#july-2019)
@@ -1906,6 +1907,12 @@ What data is handled by dmwappushsvc? | It is a component handling the internal 
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
 
 ## Change history in MDM documentation
+
+### October 2019
+
+|New or updated topic | Description|
+|--- | ---|
+|[Policy CSP - Update](policy-csp-update.md)|Added the following new policy:<br>Update/TargetReleaseVersion|
 
 ### September 2019
 
