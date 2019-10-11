@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: mdsakibMSFT
+ms.author: mdsakib
 ms.date: 05/17/2019
 ---
 
@@ -78,6 +79,9 @@ Note that "ResetPolicyId" reverts a supplemental policy to a base policy, and re
 When merging, the policy type and ID of the leftmost/first policy specified is used. If the leftmost is a base policy with ID \<ID>, then regardless of what the GUIDS and types are for any subsequent policies, the merged policy will be a base policy with ID \<ID>.
 
 ### Deploying policies
+
+> [!NOTE]
+> You cannot use the "Deploy Windows Defender Application Control" group policy setting to deploy multiple CI policies. You will have to copy the `*.cip` files, both the baseline and the supplemental ones, to C:\Windows\System32\CodeIntegrity\CiPolicies\Active\.
 
 In order to deploy policies using the new multiple policy format you will need to:
 

@@ -28,6 +28,8 @@ These settings, located at **Computer Configuration\Administrative Templates\Net
 >[!NOTE]
 >You must configure either the Enterprise resource domains hosted in the cloud or Private network ranges for apps settings on your employee devices to successfully turn on Application Guard using enterprise mode. 
 
+>Proxy servers must be a neutral resource listed in the "Domains categorized as both work and personal" policy.
+
 
  
 |Policy name|Supported versions|Description|

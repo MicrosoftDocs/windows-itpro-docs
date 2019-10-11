@@ -23,7 +23,7 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
 ## Before you begin:
 
@@ -62,7 +62,7 @@ Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://w
 
 - Each blob contains multiple rows.
 - Each row contains the event name, the time Microsoft Defender ATP received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".
-- For more information about the schema of Microsoft Defender ATP events, see [Advanced Hunting overview](overview-hunting.md).
+- For more information about the schema of Microsoft Defender ATP events, see [Advanced Hunting overview](advanced-hunting-overview.md).
 
 ## Data types mapping:
 
@@ -83,7 +83,7 @@ In order to get the data types for our events properties do the following:
 ![Image of event hub resource ID](images/machine-info-datatype-example.png)
 
 ## Related topics
-- [Overview of Advanced Hunting](overview-hunting.md)
+- [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft Defender Advanced Threat Protection Streaming API](raw-data-export.md)
 - [Stream Microsoft Defender Advanced Threat Protection events to your Azure storage account](raw-data-export-storage.md)
 - [Azure Storage Account documentation](https://docs.microsoft.com/azure/storage/common/storage-account-overview)

@@ -5,7 +5,7 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: chris.jackson
+ms.author: cjacks
 author: appcompatguy
 manager: dansimp
 audience: ITPro

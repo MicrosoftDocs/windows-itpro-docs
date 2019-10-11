@@ -1,6 +1,6 @@
 ---
-title: Navigate the Windows Mixed Reality home
-description: Navigate the Windows Mixed Reality home in Windows Holographic.
+title: Start menu and mixed reality home
+description: Navigate the mixed reality home in Windows Holographic.
 ms.assetid: 742bc126-7996-4f3a-abb2-cf345dff730c
 ms.date: 08/07/2019
 keywords: hololens
@@ -9,82 +9,79 @@ ms.sitesec: library
 author: scooley
 ms.author: scooley
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority: high
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
 ---
 
-# Navigate the Windows Mixed Reality home
+# Start menu and mixed reality home
 
-## [Navigating MR Home](https://docs.microsoft.com/en-us/windows/mixed-reality/navigating-the-windows-mixed-reality-home)
+Just like the Windows PC experience starts with the desktop, Windows Holographic starts with mixed reality home.  Using the Start menu you can open and place app windows, immersive app launchers, and 3D content in mixed reality home, and their placement in your physical space will be remembered.
 
 ## Use the Start menu
 
-The **Start** menu on HoloLens is where you'll open apps and get to the HoloLens camera.
+The Start menu on HoloLens is where you'll open apps, see important status info, and access tools like the camera.
 
-Wherever you are in HoloLens, you can always open the **Start** menu by using the [bloom gesture](https://support.microsoft.com/help/12644/hololens-use-gestures) on HoloLens (1st gen) or tapping your wrist on HoloLens 2. Usually, you'll use it once to get to **Start**, but sometimes you might need to use it twice.
-
-> [!TIP]
-> When the **Start** menu is open, use the start gesture to hide it again.
-
-At the top of the **Start** menu, you'll see status indicators for Wi-Fi, battery, and volume, plus a clock. The tiles are your pinned apps. To talk to Cortana, select her tile, or just say "Hey Cortana" from anywhere on HoloLens. At the bottom you'll find the photo and video icons, which open the camera app.
-
-To see the rest of your apps, select **All apps**. To get back to **Start** from the **All apps** list, select **Pinned apps**.
-
-## Use apps on HoloLens
-
-Apps on HoloLens use either 2D view or holographic view. Apps with 2D view look like windows, and apps with holographic view surround you and become the only app you see.
-
-### Open apps
-
-You'll find your apps either pinned to **Start** or in the **All apps** list. To get to the **All apps** list, use the bloom gesture to go to **Start**, then select **All apps**.
-
-On **Start** or in the **All apps** list, select an app. It will open in a good position for viewing.
-
->[!NOTE]
->- Up to three 2D app windows can be active at a time. You can open more, but only three will remain active.
->- Each open app can have one active window at a time, except Microsoft Edge, which can have up to three.
->- If you're having problems with apps, make sure there's enough light in your space, and walk around so HoloLens has a current scan. If you keep having trouble, see [HoloLens and holograms: FAQ](https://support.microsoft.com/help/13456/hololens-and-holograms-faq) for more info.
-
-## Move, resize, and rotate apps
-
-Moving and resizing apps on HoloLens works a bit differently than it does on a PC. Instead of dragging the app, you'll use your gaze, along with a [gesture](https://support.microsoft.com/help/12644/hololens-use-gestures) or the [clicker](hololens-clicker.md). You can also rotate an app window in 3D space.
+Wherever you are in HoloLens, you can always open the Start menu by using **Start gesture**.  On HoloLens (1st gen) the Start gesture is [bloom](https://support.microsoft.com/help/12644/hololens-use-gestures). On HoloLens 2, the [Start gesture](hololens2-basic-usage.md#start-gesture) is to tap the Start icon that appears on your wrist.  You can also open the Start menu using your voice by saying "Go to Start".
 
 > [!TIP]
-> Rearrange apps using your voice&mdash;gaze at an app and say "Face me," "Bigger," or "Smaller." Or have Cortana move an app for you: say "Hey Cortana, move &lt;*app name*&gt; here."
+> When the Start menu is open, use the Start gesture to close it, or look at the Start menu and say "Close".
 
-### Move an app
+At the top of the Start menu, you'll see status indicators for Wi-Fi, battery, volume, and a clock. On HoloLens 2 there is also a listening indicator that shows whether the device is speech enabled and is listening for voice commands. At the bottom you'll find the **Photo** and **Video** buttons which allow you to take photos and video recordings.  There is also a **Connect** button that allows you to project what you see to another device using Miracast.
 
-Gaze at the app, and then do one of the following.
+### Find apps on Start menu
 
-- Tap and hold to select the app. Move your hand to position the app, and raise your finger to place it.
+The Start menu has a **Pinned apps** list and an **All apps** list.
 
-- Select **Adjust**,&nbsp;tap and hold, and move your hand to position the app. Raise your finger to place it, then select **Done**.
-- Select **Adjust**, click and hold the clicker, and move your hand to position the app. Release the clicker, then select **Done**.
+- The **Pinned apps** list shows apps that have been pinned. You can add and remove apps from the **Pinned apps** list using the context menu that appears when you **select and hold** on an app tile.
 
-> [!TIP]
-> If you drop apps when you move them, make sure to keep your hand in the gesture frame by following it with your gaze.
+- The **All apps** list shows all apps that are installed on the device.  Select the **All apps** button on the right side of the **Start** menu to get to the list.
 
-### Resize an app
-
-Gaze at the app,&nbsp;and then do one of the following.
-
-- Gaze at a corner or edge of an app window, and tap and hold. Move your hand to change the app's size, and raise your finger when you're done.
-
-- Select **Adjust**. Gaze at one of the blue squares at the corners of the app, tap and hold, then move your hand to resize the app. Raise your finger to release it, then select **Done**.
-- Select **Adjust**. Gaze at one of the blue squares at the corners of the app, click and hold the clicker, then move your hand to resize the app. Release the clicker, then select **Done**.
+On both app lists, use the **Page up** and **Page down** buttons on the right side of the Start menu to page through all the apps in the list.  Both app lists will automatically open to the page that was last used during a device session.
 
 > [!TIP]
-> In Adjust mode, you can move or resize any hologram.
+> On HoloLens 2, you can directly scroll the app lists using your index finger. Just touch the list with your finger tip and drag upwards or downwards.
 
-### Rotate an app
+### Open apps from Start menu
 
-Gaze at the app, and tap and hold with both hands to select it. Rotate the app by keeping one hand steady and moving your other hand around it. When you're done, raise both index fingers.
+To open an app from the Start menu, simply **select** an **app tile**. You can also say the name of an app to open it.
 
-## Close apps
+When you open an app from the Start menu, one of the following will happen, depending on how the app is designed:
 
-To close an app that uses 2D view, gaze at it, then select **Close**.
+- An **app window** is placed. The app is then loaded in the window and you can use it like a touch screen.
+- A **3D app launcher** for an immersive app is placed. You need to then **select** the launcher to open the immersive app.
+- An app window is placed which acts as a **launcher** for an immersive app. The immersive app will proceed to launch automatically.
 
-To close an app that uses holographic view, use the bloom gesture to leave holographic view, then select **Close**.
+App windows and app launchers placed in mixed reality home will stay around until you decide to remove them.  They give you a convenient shortcut in the world to use those app windows or to launch immersive apps without having to open them again from the Start menu. 
 
-## Pin apps
+> [!NOTE]
+>Like on a phone, system resources is managed automatically on HoloLens.  For example, when you open a new immersive app, all other running apps will immediately become inactive. There is no need to remove app windows and launchers in mixed reality home to free up system resources. 
 
-Keep your favorite apps handy by pinning them to **Start**. In the **All apps** list, gaze at an app to highlight it. Tap and hold until the menu appears, then select **Pin**. To unpin an app, gaze at the app on **Start**, then tap and hold and select **Unpin**.
+## Using apps on HoloLens
+
+Apps on HoloLens can use app window view or immersive view. With app window view the app simply shows its content inside a window. With immersive view an app takes you away from mixed realty home where it can then display its content in the physical environment all around you. Apps can also choose to use both views.
+
+### Use app windows
+
+On HoloLens (1st gen) app windows are placed and used in mixed reality home, where you can [move, resize, and rotate](hololens1-basic-usage.md#move-resize-and-rotate-apps) them as you like. In addition to using app windows with gaze and gesture, you can also use them with Bluetooth connected mouse and keyboard.
+
+On HoloLens 2, in addition to using app windows in mixed reality home, you can also use one app window at a time inside an immersive app. You can also put an app window into **Follow me** mode where it will stay in front of you as you walk around. When you open an app window while inside an immersive app, it will open in **Follow me** mode automatically. You can [move, resize, and rotate](hololens2-basic-usage.md#move-resize-and-rotate-holograms) app windows directly using your hands in both mixed reality home and inside an immersive app.
+
+> [!NOTE]
+>
+> - Up to three app windows can be active in mixed reality home at a time. You can open more, but only three will remain active.
+> - When an app window is not active, it will show content that looks darkened compared to an active window.  Some will simply show the app icon instead of any content.  To activate an inactive window simply **select** it.
+> - Each open app can have one active window at a time, except Microsoft Edge, which can have up to three.
+
+### Close apps
+
+To close an app that uses an app window, simply close the app window with the **Close** button on the title bar.  You can also look at the window and say "Close".
+
+To exit an app that uses immersive view, use the Start gesture to bring up the **Start menu**, then select the **Mixed reality home** button.
+
+If an immersive app is in a broken state and you need to restart it, you can make sure the app is first completely shut down by closing its launcher in mixed reality home, then launching it from the Start menu.
+
+## Related info
+
+[Find, Install, and Uninstall applications from the Microsoft Store](holographic-store-apps.md)

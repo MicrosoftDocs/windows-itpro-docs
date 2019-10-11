@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
+ms.localizationpriority: medium
 ms.date: 11/01/2017
 ms.reviewer: 
 manager: dansimp
@@ -32,9 +33,9 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 ## Enable a policy
 
 > [!NOTE]
-> See [Understanding ADMX-backed policies](https://docs.microsoft.com/en-us/windows/client-management/mdm/understanding-admx-backed-policies).
+> See [Understanding ADMX-backed policies](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies).
 
-1.  Find the policy from the list [ADMX-backed policies](policy-configuration-service-provider.md#admx-backed-policies). You need the following information listed in the policy description.  
+1.  Find the policy from the list [ADMX-backed policies](policies-admx-backed.md). You need the following information listed in the policy description.  
     - GP English name
     - GP name
     - GP ADMX file name
