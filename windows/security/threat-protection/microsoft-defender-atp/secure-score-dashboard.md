@@ -184,15 +184,14 @@ You can take the following actions to increase the overall security score of you
 * Turn on  Microsoft Defender AG on compatible machines
 * Turn on managed mode
 
-
 For more information, see [Microsoft Defender Application Guard overview](../windows-defender-application-guard/wd-app-guard-overview.md).
 
 ### Windows Defender SmartScreen optimization
 
-A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Windows Defender SmartScreen.
+A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Microsoft Defender SmartScreen.
 
 > [!WARNING]
-> Data collected by Windows Defender SmartScreen might be stored and processed outside of the storage location you have selected for your Microsoft Defender ATP data.
+> Data collected by Microsoft Defender SmartScreen might be stored and processed outside of the storage location you have selected for your Microsoft Defender ATP data.
 
 > [!IMPORTANT]
 > This security control is only applicable for machines with Windows 10, version 1709 or later.
@@ -202,8 +201,8 @@ A well-configured machine complies to a minimum baseline configuration setting. 
 The following settings must be configured with the following settings:
 
 * Check apps and files: **Warn** or **Block**
-* Windows Defender SmartScreen for Microsoft Edge: **Warn** or **Block**
-* Windows Defender SmartScreen for Microsoft store apps: **Warn** or **Off**
+* Microsoft Defender SmartScreen for Microsoft Edge: **Warn** or **Block**
+* Microsoft Defender SmartScreen for Microsoft store apps: **Warn** or **Off**
 
 You can take the following actions to increase the overall security score of your organization:
 
