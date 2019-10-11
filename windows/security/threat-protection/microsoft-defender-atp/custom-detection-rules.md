@@ -23,7 +23,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Custom detection rules built from [Advanced hunting](overview-hunting.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured machines. The queries run every 24 hours, generating alerts and taking response actions whenever there are matches.
+Custom detection rules built from [Advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured machines. The queries run every 24 hours, generating alerts and taking response actions whenever there are matches.
 
 > [!NOTE]
 > To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
@@ -114,5 +114,5 @@ You can also take the following actions on the rule from this page:
 
 ## Related topic
 - [Custom detections overview](overview-custom-detections.md)
-- [Advanced hunting overview](overview-hunting.md)
-- [Learn the Advanced hunting query language](advanced-hunting.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
+- [Learn the Advanced hunting query language](advanced-hunting-query-language.md)

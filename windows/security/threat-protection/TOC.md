@@ -107,11 +107,11 @@
 ### [Threat analytics](microsoft-defender-atp/threat-analytics.md)
 
 ### [Advanced hunting]()
-#### [Advanced hunting overview](microsoft-defender-atp/overview-hunting.md)
-#### [Learn the query language](microsoft-defender-atp/advanced-hunting.md)
+#### [Advanced hunting overview](microsoft-defender-atp/advanced-hunting-overview.md)
+#### [Learn the query language](microsoft-defender-atp/advanced-hunting-query-language.md)
 #### [Use shared queries](microsoft-defender-atp/advanced-hunting-shared-queries.md)
 #### [Advanced hunting schema reference]()
-##### [Understand the schema](microsoft-defender-atp/advanced-hunting-reference.md)
+##### [Understand the schema](microsoft-defender-atp/advanced-hunting-schema-reference.md)
 ##### [AlertEvents](microsoft-defender-atp/advanced-hunting-alertevents-table.md)
 ##### [FileCreationEvents](microsoft-defender-atp/advanced-hunting-filecreationevents-table.md)
 ##### [ImageLoadEvents](microsoft-defender-atp/advanced-hunting-imageloadevents-table.md)
@@ -300,7 +300,6 @@
 ##### [Restore quarantined files](windows-defender-antivirus/restore-quarantined-files-windows-defender-antivirus.md)
 
 #### [Manage next generation protection in your business]()
-##### [Management overview](windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus.md)
 ##### [Management overview](windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus.md)
 ##### [Use Microsoft Intune and System Center Configuration Manager to manage next generation protection](windows-defender-antivirus/use-intune-config-manager-windows-defender-antivirus.md)
 ##### [Use Group Policy settings to manage next generation protection](windows-defender-antivirus/use-group-policy-windows-defender-antivirus.md)
