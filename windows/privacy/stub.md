@@ -15,7 +15,7 @@ ms.topic: article
 ms.date: 10/11/2019
 ms.reviewer: 
 ---
-# Windows and the GDPR: Information for IT Administrators and Decision Makers
+# Stub topic
 
 Applies to:
 - Windows 10, version 1809
