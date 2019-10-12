@@ -25,12 +25,12 @@ Use the following information to deploy feature updates during a maintenance win
 
 ### Step 1: Configure maintenance windows
 
-1. In the Configuration Manager console, choose **Assets and Compliance> Device Collections**.
+1. In the Configuration Manager console, choose **Assets and Compliance > Device Collections**.
 2. In the **Device Collections** list, select the collection for which you intended to deploy the feature update(s).
 3. On the **Home** tab, in the **Properties** group, choose **Properties**.
-4. In the **Maintenance Windows** tab of the `<collection name>` Properties dialog box, choose the New icon.
-5. Complete the `<new>` Schedule dialog.
-6. Select from the Apply this schedule to drop-down list.
+4. In the **Maintenance Windows** tab of the **`<collection name>` Properties** dialog box, choose the **New** icon.
+5. Complete the **`<new>` Schedule** dialog.
+6. Select **Apply this schedule** from the drop-down list.
 7. Choose **OK** and then close the **\<collection name\> Properties** dialog box.
 
 ### Step 2: Review computer restart device settings
@@ -59,14 +59,14 @@ If you’re deploying **Feature update to Windows 10, version 1709** or later, b
 
 %systemdrive%\Users\Default\AppData\Local\Microsoft\Windows\WSUS\SetupConfig.ini
 
-```
+```ini
 [SetupConfig]
 Priority=Normal
 ```
 
 You can use the new [Run Scripts](https://docs.microsoft.com/sccm/apps/deploy-use/create-deploy-scripts) feature to run a PowerShell script like the sample below to create the SetupConfig.ini on target devices.
 
-```
+```PowerShell
 #Parameters
 Param(
   [string] $PriorityValue = "Normal"
