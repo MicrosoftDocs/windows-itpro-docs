@@ -24,7 +24,7 @@ To start narrowing down the cause of the problem, review the event logs as descr
 
 - [Event ID 853: Error: A compatible Trusted Platform Module (TPM) Security Device cannot be found on this computer](#issue-1)
 - [Event ID 853: Error: BitLocker Drive Encryption detected bootable media (CD or DVD) in the computer](#issue-2)
-- [Event ID 854: WinRE not configured](#issue-3)
+- [Event ID 854: WinRE is not configured](#issue-3)
 - [Event ID 851: Contact manufacturer for BIOS upgrade](#issue-4)
 - [Error message: The UEFI variable 'SecureBoot' could not be read](#issue-6)
 - [Event ID 846, 778, and 851: Error 0x80072f9a](#issue-7)
@@ -86,13 +86,16 @@ The event information resembles the following:
 
 ### Cause
 
-Windows Recovery Environment (WindowsRE) is a minimal Windows operating system that is based on Windows Preinstallation Environment (WindowsPE). WindowsRE includes a number of tools to recover or reset Windows and diagnose Windows issues. If a device cannot start the regular Windows operating system, the device tries to start Windows RE.
+Windows Recovery Environment (WindowsRE, or WinRE) is a minimal Windows operating system that is based on Windows Preinstallation Environment (WindowsPE). WindowsRE includes a number of tools that an administrator can use to recover or reset Windows and diagnose Windows issues. If a device cannot start the regular Windows operating system, the device tries to start Windows RE.
 
 The provisioning process enables BitLocker Drive Encryption on the operating system drive during the WindowsPE phase of provisioning. This action makes sure that the drive is protected before the full operating system is installed. The provisioning process also creates a system partition for WindowsRE to use, in case of any system crashes.
 
 If WindowsRE is not available on the device, provisioning stops.
 
 ### Resolution
+
+I would add suggestion to ensure that WinRE is configured in the SCCM/MDT/other image provisioning system. Problem is that sometimes SCCM/MDT admins forget to properly configure disk layout
+Below is example (pic form internet as I don’t have SCCM lab):
 
 #### 1. Verify the configuration of the disk partitions
 
@@ -108,7 +111,9 @@ list volume
 ```
 ![Output of the list volume command in the Diskpart app](./images/4509195_en_1.png)
 
-If the status of any of the volumes is not Healthy, you may have to reinstall Windows.
+If the status of any of the volumes is not healthy or if the recovery partition is missing, you may have to reinstall Windows. Before you do so, check the configuration of the Windows image that you are using for provisioning. Make sure that the image uses the correct disk configuration. The image configuration should resemble the following (the example is from System Center Configuration Manager):
+
+![Windows image configuration in System Center Configuration Manager](./images/SCCM_ImageConfig.jpg)
 
 #### 2. Verify the status of WindowsRE
 
