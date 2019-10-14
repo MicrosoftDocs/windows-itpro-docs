@@ -14,9 +14,6 @@ manager: dansimp
 
 # Policy CSP - Update
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before they are commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
 > [!NOTE]
 > If the MSA service is disabled, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
@@ -196,9 +193,6 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#update-setedurestart">Update/SetEDURestart</a>
-  </dd>
-  <dd> 
-    <a href="#update-targetreleaseversion">Update/TargetReleaseVersion</a> 
   </dd>
   <dd>
     <a href="#update-updatenotificationlevel">Update/UpdateNotificationLevel</a>
@@ -4581,82 +4575,6 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-targetreleaseversion"></a>**Update/TargetReleaseVersion**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>7</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Enables IT administrators to specify which version they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see [Windows 10 release information](https://docs.microsoft.com/windows/release-information/).
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Select the target Feature Update version*
--   GP name: *TargetReleaseVersion*
--   GP element: *TargetReleaseVersionId*
--   GP path: *Windows Components/Windows Update/Windows Update for Business*
--   GP ADMX file name: *WindowsUpdate.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Value type is a string containing Windows 10 version number. For example, 1809, 1903.
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
 <a href="" id="update-updatenotificationlevel"></a>**Update/UpdateNotificationLevel**  
 
 <!--SupportedSKUs-->
@@ -4927,6 +4845,5 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
--   7 - Added in the next major release of Windows 10.
 <!--/Policies-->
 
