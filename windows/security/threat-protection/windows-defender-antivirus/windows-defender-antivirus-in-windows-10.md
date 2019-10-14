@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 10/10/2019
+ms.date: 10/14/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -22,9 +22,7 @@ manager: dansimp
 
 - [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Next-generation protection provides enhanced safety, alongside more traditional security measures. These services use machine learning and the cloud to keep all devices in your enterprise organization network safe.
-
-Next-generation protection services include:
+Next-generation protection includes services that use machine learning together with the cloud to protect devices in your enterprise organization. Next-generation protection services include:
 
 - [Always-on scanning](configure-real-time-protection-windows-defender-antivirus.md), also known as "real-time protection", for advanced file and process behavior monitoring
 - [Cloud-based delivery](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for near-instant detection and blocking of new and emerging threats
@@ -32,7 +30,6 @@ Next-generation protection services include:
 
 >[!TIP]
 >Visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to see how the following features work:
->
 >- [Cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
 >- Fast learning (including [block at first sight](configure-block-at-first-sight-windows-defender-antivirus.md))
 >- [Potentially unwanted application blocking](detect-block-potentially-unwanted-apps-windows-defender-antivirus.md)
@@ -49,7 +46,7 @@ Windows Defender Antivirus is your main vehicle for next-generation protection, 
 
 ## Configuring Next-generation services
 
-You can use the following to configure and manage next-generation services in Windows 10, while running Windows Defender Antivirus:
+You can use the following to configure and manage next-generation services in Windows 10 while running Windows Defender Antivirus:
 
 - System Center Configuration Manager (as System Center Endpoint Protection, or SCEP)
 - Microsoft Intune
@@ -57,7 +54,7 @@ You can use the following to configure and manage next-generation services in Wi
 - Windows Management Instrumentation (WMI)
 - Group Policy
 
-Configuration and management is largely the same in Windows Server 2016, while running Windows Defender Antivirus; however, [there are some differences](windows-defender-antivirus-on-windows-server-2016.md).
+Configuration and management is largely the same in Windows Server 2016, while running Windows Defender Antivirus; however, there are some differences. To learn more, see [Windows Defender Antivirus on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md).
 
 ## Related topics
 
