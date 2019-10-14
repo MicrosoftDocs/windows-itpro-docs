@@ -2,15 +2,19 @@
 title: Upgrade Readiness - Upgrade Overview (Windows 10)
 ms.reviewer: 
 manager: laurawi
-ms.author: greglin
+ms.author: jaimeo
 description: Displays the total count of computers sharing data and upgraded.
 ms.prod: w10
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: jaimeo
 ms.topic: article
 ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness - Upgrade overview
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/en-us/help/4521815/windows-analytics-retirement).
 
 The first blade in the Upgrade Readiness solution is the upgrade overview blade. This blade displays the total count of computers sharing data with Microsoft, and the count of computers upgraded. As you successfully upgrade computers, the count of computers upgraded increases.
 

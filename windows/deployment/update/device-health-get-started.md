@@ -18,6 +18,9 @@ ms.topic: article
 
 # Get started with Device Health
 
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/en-us/help/4521815/windows-analytics-retirement).
+
 This topic explains the steps necessary to configure your environment for Windows Analytics Device Health. 
 
 - [Get started with Device Health](#get-started-with-device-health)

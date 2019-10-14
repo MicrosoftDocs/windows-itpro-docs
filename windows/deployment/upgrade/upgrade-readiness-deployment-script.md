@@ -2,19 +2,22 @@
 title: Upgrade Readiness deployment script (Windows 10)
 ms.reviewer: 
 manager: laurawi
-ms.author: greglin
+ms.author: jaimeo
 description: Deployment script for Upgrade Readiness.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
+author: jaimeo
 ms.topic: article
 ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness deployment script
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/en-us/help/4521815/windows-analytics-retirement).
 
 To automate the steps provided in [Get started with Upgrade Readiness](upgrade-readiness-get-started.md), and to troubleshoot data sharing issues, you can run the [Upgrade Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409), developed by Microsoft.
 
