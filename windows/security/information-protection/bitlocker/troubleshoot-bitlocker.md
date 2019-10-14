@@ -11,7 +11,7 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 9/27/2019
+ms.date: 10/14/2019
 ---
 
 # Guidelines for troubleshooting BitLocker
@@ -25,8 +25,28 @@ Open Event Viewer and review the following logs under **Applications and Service
 - **BitLocker-API**. Review the Management log and the Operational log, and any other logs that are generated in this folder.
 - **BitLocker-DrivePreparationTool**. Review the Admin log and the Operational log, and any other logs that are generated in this folder.
 
+Additionally, review the **Windows logs\\System** log for events that were produced by the event sources **TCM** and **TCM-WMI**.
+
+To filter and display or export logs, you can use the [wevtutil.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/wevtutil) command-line tool or the [Get-WinEvent](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-6) cmdlet.
+
+To use the wevtutil tool, open an elevated Command Prompt window and run the following command:
+
+```cmd
+wevtutil qe "logname" /f:text > logname.txt
+```
+
+To use the Get-WinEvent cmdlet, open an elevated Windows Powershell window and run the following command:
+
+```ps
+Get-WinEvent -logname "Microsoft-Windows-BitLocker/BitLocker Management"  | Export-Csv -Path Bitlocker-Management.csv
+```
+```ps
+Get-WinEvent -FilterHashtable @{LogName='System'} | Where-Object -Property Message -Match 'Bitlocker' | fl
+Get-WinEvent -FilterHashtable @{LogName='System'} | Where-Object -Property Message -Match 'Bitlocker' | Export-Csv -Path System-Bitlocker.csv 
+```
+
 > [!NOTE]
-> If you intend to contact Microsoft Support, we recommend that you export the logs listed in this section. Use the [wevtutil.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/wevtutil) command-line tool to export logs.
+> If you intend to contact Microsoft Support, we recommend that you export the logs listed in this section.
 
 ## Gather status information from the BitLocker technologies
 
@@ -37,7 +57,7 @@ Open an elevated Windows PowerShell window, and run each of the following comman
 |[**get-tpm \> C:\\TPM.txt**](https://docs.microsoft.com/powershell/module/trustedplatformmodule/get-tpm?view=win10-ps) |Exports information about the local computer's Trusted Platform Module (TPM). This cmdlet shows different values depending on whether the TPM chip is version 1.2 or 2.0. This cmdlet is not supported in Windows 7. |
 |[**manage-bde –status \>&nbsp;C:\\BDEStatus.txt**](https://docs.microsoft.com/windows-server/administration/windows-commands/manage-bde-status) |Exports information about the general encryption status of all drives on the computer. |
 |[**manage-bde c: <br />-protectors -get \>&nbsp;C:\\Protectors**](https://docs.microsoft.com/windows-server/administration/windows-commands/manage-bde-protectors) |Exports information about the protection methods that are used for the BitLocker encryption key.  |
-|[**reagentc /info \> C:\\reagent.txt**](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reagentc-command-line-options) |Exports information about the current status of the Windows Recovery Environment (Windows RE) and any available recovery image on an online or offline image |
+|[**reagentc&nbsp;/info&nbsp;\>&nbsp;C:\\reagent.txt**](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reagentc-command-line-options) |Exports information about the current status of the Windows Recovery Environment (Windows RE) and any available recovery image on an online or offline image |
 
 ## Review the configuration information
 
