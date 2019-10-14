@@ -11,16 +11,19 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/7/2019
+ms.date: 10/14/2019
 ---
 
 # BitLocker recovery: known issues
 
 This article describes common issues that can occur that prevent BitLocker from behaving as expected when recovering a drive, or may cause BitLocker to start recovery unexpectedly. The article provides guidance for addressing those issues.
 
-## Windows 10 asks for a BitLocker recovery key even though you did not set up a recovery key
+> [!NOTE]
+> In this article, "recovery password" refers to the 48-digit recovery password and "recovery key" refers to 32-digit recovery key. For more information, see [BitLocker key protectors](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies#bitlocker-key-protectors).
 
-Windows 10 prompts you for a BitLocker recovery key. However, you have not configured a BitLocker recovery key.
+## Windows 10 asks for a BitLocker recovery password even though you did not set up a recovery password
+
+Windows 10 prompts you for a BitLocker recovery password. However, you have not configured a BitLocker recovery password.
 
 ### Resolution
 
