@@ -11,19 +11,21 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/7/2019
+ms.date: 10/14/2019
 ---
 
 # Decode Measured Boot logs to track PCR changes
 
 Platform Configuration Registers (PCRs) are memory locations in the Trusted Protection Module (TPM). BitLocker and its related technologies depend on specific PCR configurations. In addition, specific change in PCRs can cause a device or computer to enter BitLocker recovery mode. Tracking changes in the PCRs, and identifying when they changed, can provide insight into issues that may be occurring or explain why a device or computer entered BitLocker recovery mode. The Measured Boot logs, located in the C:\\Windows\\Logs\\MeasuredBoot\\ folder, record PCR changes and other information.  
 
+This article describes two tools that you can use to decode these logs: TBSLogGenerator and PCPTool.
+
 For more information about Measured Boot and PCRs, see the following articles:
 
 - [TPM fundamentals: Measured Boot with support for attestation](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals#measured-boot-with-support-for-attestation)  
 - [Understanding PCR banks on TPM 2.0 devices](https://docs.microsoft.com/windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices)
 
-## Install TBSLogGenerator
+## Use TBSLogGenerator to decode Measured Boot logs
 
 Use TBSLogGenerator to decode Measured Boot logs that you have collected from Windows 10 and older versions. You can install this tool on the following systems:
 
@@ -47,7 +49,7 @@ To install the tool, follow these steps:
 
 1. Finish the installation.
 
-## Use TBSLogGenerator to decode Measured Boot logs
+To use TBSLogGenerator, follow these steps:
 
 1. After the installation has finished, open an elevated Command Prompt window and navigate to the following folder:  
    **C:\\Program Files (x86)\\Windows Kits\\10\\Hardware Lab Kit\\Tests\\amd64\\NTTEST\\BASETEST\\ngscb**
@@ -58,8 +60,13 @@ To install the tool, follow these steps:
 
 1. Run the following command:
    ```cmd
-   TBSLogGenerator.exe -LF <directory which contains the Measuredboot log to be decoded>\<name of the log>.log > <Target directory where the decoded file should be placed>\<name of the file>.txt
+   TBSLogGenerator.exe -LF <LogFolderName>\<LogFileName>.log > <DestinationFolderName>\<DecodedFileName>.txt
    ```
+   where the variables represent the following values:
+   - \<*LogFolderName*> = the name of the folder that contains the file to be decoded
+   - \<*LogFileName*> = the name of the the file to be decoded
+   - \<*DestinationFolderName*> = the name of the folder for the decoded text file
+   - \<*DecodedFileName*> = the name of the decoded text file
 
    For example, the following figure shows Measured Boot logs that were collected from a Windows 10 computer and placed in the C:\\MeasuredBoot\\ folder. The figure also shows a Command Prompt window and the command to decode the **0000000005-0000000000.log** file:
 
@@ -80,3 +87,24 @@ The content of this text file resembles the following:
 To find the PCR information, go to the end of the file.
 
    ![View of NotePad that shows the PCR information at the end of the text file](./images/ts-tpm-7.png)
+
+## Use PCPTool to decode Measured Boot logs
+
+PCPTool is part of the [TPM Platform Crypto-Provider Toolkit](https://www.microsoft.com/download/details.aspx?id=52487). The tool decodes a Measured Boot log file into an XML file.
+
+To download and install PCPTool, go to the Toolkit page, select **Download**, and follow the instructions.
+
+To decode a log, run the following command:
+```cmd
+PCPTool.exe decodelog <LogFolderPath>\<LogFileName>.log > <DestinationFolderName>\<DecodedFileName>.xml
+```  
+
+where the variables represent the following values:
+- \<*LogFolderPath*> = the path to the folder that contains the file to be decoded
+- \<*LogFileName*> = the name of the the file to be decoded
+- \<*DestinationFolderName*> = the name of the folder for the decoded text file
+- \<*DecodedFileName*> = the name of the decoded text file
+
+The content of the XML file resembles the following:
+
+![Command Prompt window that shows an example of how to use PCPTool](./images/PCPTool_Output.jpg)
