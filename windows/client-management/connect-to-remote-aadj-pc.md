@@ -46,7 +46,7 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
      >`net localgroup "Remote Desktop Users" /add "AzureAD\the-UPN-attribute-of-your-user"`, where *FirstnameLastname* is the name of the user profile in C:\Users\, which is created based on DisplayName attribute in Azure AD.
      > This command works only for the user , who already added into the AADJ device any of the local group (administrators)
 Otherwise this command throws the below error. For example: 
- for cloud only user --> "There is no such global user or group : Azuread\Shenry"
+     > for cloud only user --> "There is no such global user or group : Azuread\Shenry"
      > for synced user -->"There is no such global user or group : baz\user2"
 
      >In Windows 10, version 1709, the user does not have to sign in to the remote device first.
