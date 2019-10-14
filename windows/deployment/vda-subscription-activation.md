@@ -2,7 +2,8 @@
 title: Configure VDA for Windows 10 Subscription Activation
 ms.reviewer: 
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
 description: How to enable Windows 10 Enterprise E3 and E5 subscriptions for VDA
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -10,7 +11,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
@@ -29,7 +31,7 @@ Deployment instructions are provided for the following scenarios:
 - VMs must be running Windows 10 Pro, version 1703 (also known as the Creator's Update) or later.
 - VMs must be Active Directory-joined or Azure Active Directory (AAD)-joined.
 - VMs must be generation 1.
-- VMs must hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx) (QMTH).
+- VMs must hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
 
 ## Activation
 
