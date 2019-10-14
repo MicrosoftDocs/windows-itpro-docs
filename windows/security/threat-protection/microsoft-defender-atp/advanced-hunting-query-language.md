@@ -131,13 +131,13 @@ The **Get started** section provides a few simple queries using commonly used op
 >[!NOTE]
 >Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the GitHub query repository.
 
-## Access query language documentation
+## Access comprehensive query language reference
 
-For more information on Kusto query language and supported operators, see  [Query Language](https://docs.microsoft.com/azure/kusto/query/).
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
+For detailed information about the query language, see [Kusto query language documentation](https://docs.microsoft.com/azure/kusto/query/).
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Understand the schema](advanced-hunting-schema-reference.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
+
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
