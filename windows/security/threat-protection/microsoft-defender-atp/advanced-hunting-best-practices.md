@@ -1,7 +1,7 @@
 ---
-title: Advanced hunting best practices in Microsoft Defender ATP
-description: Learn about Advanced hunting best practices such as what filters and keywords to use to effectively query data.
-keywords: advanced hunting, best practices, keyword, filters, atp query, query atp data, intellisense, atp telemetry, events, events telemetry, azure log analytics, kusto
+title: Query best practices for Advanced hunting
+description: Learn how to construct fast, efficient, and error-free threat hunting queries when using Advanced hunting
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, avoid timeout, command lines, process id
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 09/25/2019
+ms.date: 10/08/2019
 ---
 
 # Advanced hunting query best practices
@@ -26,7 +26,7 @@ ms.date: 09/25/2019
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-bestpractices-abovefoldlink)
 
 ## Optimize query performance
-Apply the recommendations to get results faster and avoid timeouts while running complex queries: 
+Apply these recommendations to get results faster and avoid timeouts while running complex queries. 
 - When trying new queries, always use `limit` to avoid extremely large result sets. You can also initially assess the size of the result set using `count`.
 - Use time filters first. Ideally, limit your queries to seven days.
 - Put filters that are expected to remove most of the data in the beginning of the query, right after the time filter.
@@ -63,7 +63,7 @@ To create more durable queries using command lines, apply the following practice
 
 - Identify the known processes (such as *net.exe* or *psexec.exe*) by matching on the filename fields, instead of filtering on the command-line field.
 - When querying for command-line arguments, don't look for an exact match on multiple unrelated arguments in a certain order. Instead, use regular expressions or use multiple separate contains operators.
-- Use case insensitive matches. For example, use `=~`, `in~`, `contains` instead of `==`, `in` or `contains_cs`
+- Use case insensitive matches. For example, use `=~`, `in~`, and `contains` instead of `==`, `in` and `contains_cs`
 - To mitigate DOS command-line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space. Note that there are more complex DOS obfuscation techniques that require other approaches, but these can help address the most common ones.
 
 The following examples show various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:
@@ -88,6 +88,6 @@ ProcessCreationEvents
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-bestpractices-belowfoldlink)
 
 ## Related topics
-- [Advanced hunting overview](overview-hunting.md)
-- [Learn the query language](advanced-hunting.md)
-- [Understand the schema](advanced-hunting-reference.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
+- [Understand the schema](advanced-hunting-schema-reference.md)

@@ -34,7 +34,7 @@ Select Windows Defender Firewall.
 
 ## Firewall rule components
 
-The firewall rule configurations in Intune use the Windows 10 CSP for Firewall. For more information, see [Firewall CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/firewall-csp).
+The firewall rule configurations in Intune use the Windows 10 CSP for Firewall. For more information, see [Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp).
 
 ## Application
 Control connections for an app or program. 

@@ -6,14 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 09/27/2019
+ms.localizationpriority: medium
+ms.date: 10/04/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Policy CSP - Update
-
-
 
 > [!NOTE]
 > If the MSA service is disabled, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
@@ -4846,6 +4845,5 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
-
 <!--/Policies-->
 
