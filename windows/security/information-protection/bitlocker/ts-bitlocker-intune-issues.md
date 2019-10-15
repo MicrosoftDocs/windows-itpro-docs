@@ -94,8 +94,11 @@ If WindowsRE is not available on the device, provisioning stops.
 
 ### Resolution
 
-I would add suggestion to ensure that WinRE is configured in the SCCM/MDT/other image provisioning system. Problem is that sometimes SCCM/MDT admins forget to properly configure disk layout
-Below is example (pic form internet as I don’t have SCCM lab):
+You can resolve this issue by following these steps:
+
+1. [Verify the configuration of the disk partitions](#1-verify-the-configuration-of-the-disk-partitions)
+1. [Verify the status of WindowsRE](#2-verify-the-status-of-windowsre)
+1. [Verify the Windows Boot Loader configuration](#3-verify-the-windows-boot-loader-configuration)
 
 #### 1. Verify the configuration of the disk partitions
 
@@ -179,6 +182,11 @@ A Platform Configuration Register (PCR) is a memory location in the TPM. PCR 7, 
 
 ### Resolution
 
+You can resolve this issue by following these steps:
+
+1. [Verify the PCR validation profile of the TPM](#1-verify-the-pcr-validation-profile-of-the-TPM)
+1. [Verify the Secure Boot State](#2-verify-the-secure-boot-state)
+
 #### 1. Verify the PCR validation profile of the TPM
 
 To verify that PCR 7 is in use, open an elevated Command Prompt window and run the following command:
@@ -205,11 +213,22 @@ To verify the Secure Boot State, use the System Information app. To do this, fol
 1. If the **Secure Boot State** setting is **Unsupported**, you will not be able to use Silent BitLocker Encryption on this device.  
    ![System Information app, showing a supported Secure Boot State](./images/4509202_en_1.png)
 
+> [!NOTE]
+> You can also use the [Confirm-SecureBootUEFI](https://docs.microsoft.com/powershell/module/secureboot/confirm-securebootuefi?view=win10-ps) cmdlet to verify the Secure Boot State. To do this, open and elevated PowerShell window and run the following command:
+> ```ps
+> PS C:\> Confirm-SecureBootUEFI
+> ```
+> If the computer supports Secure Boot and Secure Boot is enabled, this cmdlet returns "True."  
+>  
+> If the computer supports Secure Boot and Secure Boot is disabled, this cmdlet returns "False."  
+>  
+> If the computer does not support Secure Boot or is a BIOS (non-UEFI) computer, this cmdlet returns "Cmdlet not supported on this platform."  
+
 ## <a id="issue-7"></a>Event ID 846, 778, and 851: Error 0x80072f9a
 
 In this case, you are deploying Intune policy to encrypt a Windows 10, version 1809 device and store the recovery key in Azure Active Directory. As part of the policy configuration, you have enabled the **Allow standard users to enable encryption during Azure AD Join** option.
 
-The policy deployment fails and generates the following events (visible in the **Applications and Services logs\\Microsoft\\Windows\\BitLocker API Log**):
+The policy deployment fails and generates the following events (visible in the **Applications and Services logs\\Microsoft\\Windows\\BitLocker API** logs):
 
 > Event ID:846
 > 
