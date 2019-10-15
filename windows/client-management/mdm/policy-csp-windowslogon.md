@@ -76,14 +76,6 @@ manager: dansimp
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -168,14 +160,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
 </tr>
 </table>
 
@@ -262,14 +246,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -339,14 +315,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -443,14 +411,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -530,14 +490,6 @@ Supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -607,14 +559,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 

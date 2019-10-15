@@ -79,14 +79,6 @@ manager: dansimp
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -145,14 +137,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -228,14 +212,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -293,14 +269,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -361,14 +329,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -432,14 +392,6 @@ Here are the steps to create canonical domain names:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -500,14 +452,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -565,14 +509,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>

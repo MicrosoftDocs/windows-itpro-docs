@@ -136,14 +136,6 @@ manager: dansimp
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -209,14 +201,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -289,14 +273,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -366,14 +342,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -435,14 +403,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
 </tr>
 </table>
 
@@ -517,14 +477,6 @@ Supported values: 0 - one month (in seconds)
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -595,14 +547,6 @@ Supported values: 0 - one month (in seconds)
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -677,14 +621,6 @@ The following list shows the supported values as number of seconds:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -761,14 +697,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -835,14 +763,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -921,14 +841,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -994,14 +906,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1069,14 +973,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1142,14 +1038,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1217,14 +1105,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1291,14 +1171,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1363,14 +1235,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1441,14 +1305,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1514,14 +1370,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1589,14 +1437,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1662,14 +1502,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1738,14 +1570,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1822,14 +1646,6 @@ This policy is deprecated. Use [DOPercentageMaxForegroundBandwidth](#deliveryopt
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1891,14 +1707,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1968,14 +1776,6 @@ The following list shows the supported values:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2050,14 +1850,6 @@ This policy allows an IT Admin to define the following:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 

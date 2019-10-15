@@ -81,14 +81,6 @@ author: manikadhiman
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -203,14 +195,6 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -317,14 +301,6 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
 </tr>
 </table>
 
@@ -449,14 +425,6 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -535,14 +503,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
 </tr>
 </table>
 
@@ -655,14 +615,6 @@ You can also block installation by using a custom profile in Intune.
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -781,14 +733,6 @@ For example, this custom profile blocks installation and usage of USB devices wi
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -896,14 +840,6 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
