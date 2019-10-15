@@ -97,7 +97,7 @@ You can also disable the calibration prompt by following these steps:
 1. Turn off **When a new person uses this HoloLens, automatically ask to run eye calibration**.
 
 > [!IMPORTANT]
-> Please understand that this setting may adversely affect hologram rendering quality and comfort.  If there is an immersive application that is using eye tracking, for instance text scrolling, then that feature will no longer work.  
+> This setting may adversely affect hologram rendering quality and comfort.  When you turn off this setting, features that depend on eye tracking (such as text scrolling) no longer work in immersive applications.
 
 ### HoloLens 2 eye-tracking technology
 
