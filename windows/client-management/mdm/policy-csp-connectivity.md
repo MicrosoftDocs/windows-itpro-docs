@@ -38,6 +38,9 @@ manager: dansimp
     <a href="#connectivity-allowphonepclinking">Connectivity/AllowPhonePCLinking</a>
   </dd>
   <dd>
+    <a href="#connectivity-allowusbconnection">Connectivity/AllowUSBConnection</a>
+  </dd>
+  <dd>
     <a href="#connectivity-allowvpnovercellular">Connectivity/AllowVPNOverCellular</a>
   </dd>
   <dd>
@@ -402,6 +405,71 @@ If the Connectivity/AllowPhonePCLinking policy is configured to value 0, the add
 Device that has previously opt-in to MMX will also stop showing on the device list.
 
 <!--/Validation-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="connectivity-allowusbconnection"></a>**Connectivity/AllowUSBConnection**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+> [!NOTE]
+> Currently, this policy is supported only in HoloLens 2, Hololens (1st gen) Commercial Suite, and HoloLens (1st gen) Development Edition.
+
+Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy does not affect USB charging.
+
+Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy is enforced.
+
+Most restricted value is 0.
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
+
+<!--/SupportedValues-->
 <!--/Policy-->
 
 <hr/>
