@@ -25,7 +25,7 @@ Now that you have started deploying an update with Upgrade Readiness, you can us
  
 ## Update progress
 
-The **Update progress** blade allows you to monitor the progress and status of your deployment. Any device that has attepted to upgrade in the last 30 days displays the **DeploymentStatus** attribute. You'll be able to see the number of computers that have successfully upgraded, failed to upgrade, are stalled, etc.
+The **Update progress** blade allows you to monitor the progress and status of your deployment. Any device that has attempted to upgrade in the last 30 days displays the **DeploymentStatus** attribute. You'll be able to see the number of computers that have successfully upgraded, failed to upgrade, are stalled, etc.
  
  
 Selecting this blade allows you to view device-level details about the deployment. For example, select **Failed** to view the original operating system version, the target operating system version, and the reason the update failed for each of the devices that failed to upgrade. In the case of the device illustrated in the following image, an attempt was made to upgrade from Windows 10, version 1703 to 1709, but the operation timed out.

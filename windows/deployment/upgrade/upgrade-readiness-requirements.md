@@ -63,7 +63,7 @@ Upgrade Readiness can be integrated with your installation of Configuration Mana
 
 ## Important information about this release
 
-Before you get started configuring Upgrade Anatlyics, review the following tips and limitations about this release.
+Before you get started configuring Upgrade Readiness, review the following tips and limitations about this release.
 
 **Upgrade Readiness does not support on-premises Windows deployments.** Upgrade Readiness is built as a cloud service, which allows Upgrade Readiness to provide you with insights based on the data from user computers and other Microsoft compatibility services. Cloud services are easy to get up and running and are cost-effective because there is no requirement to physically implement and maintain services on-premises.
 

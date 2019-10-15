@@ -50,7 +50,7 @@ Update Compliance is offered as a solution which is linked to a new or existing 
 ![Update Compliance solution creation](images/UC_01_marketplace_create.png)
 
 4. Choose an existing workspace or create a new workspace that will be assigned to the Update Compliance solution. 
-   - [Desktop Analytics](TODO: Add Desktop Analytics reference: https://docs.microsoft.com/en-us/sccm/desktop-analytics/overview) customers are advised to use the same workspace for Update Compliance. 
+   - [Desktop Analytics](https://docs.microsoft.com/en-us/sccm/desktop-analytics/overview) customers are advised to use the same workspace for Update Compliance. 
    - If you are creating a new workspace, and your organization does not have policies governing naming conventions and structure, consider the following workspace settings to get started:
        - Choose a workspace name which reflects the scope of planned usage in your organization, for example *PC-Analytics*.
        - For the resource group setting select **Create new** and use the same name you chose for your new workspace.
@@ -106,7 +106,7 @@ To enable data sharing between devices, your network, and Microsoft's Diagnostic
 | `https://login.live.com` | This endpoint is optional but allows for the Update Compliance service to more reliably identify and process devices. If you want to disable end-user managed service account (MSA) access, you should apply the appropriate [policy](https://docs.microsoft.com/windows/security/identity-protection/access-control/microsoft-accounts#block-all-consumer-microsoft-account-user-authentication) instead of blocking this endpoint. |
 
 ### Set diagnostic data levels
-Update Compliance requries that devices are configured to send Microsoft at least the Basic level of diagnostic data in order to function. For more information on Windows diagnostic data, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
+Update Compliance requires that devices are configured to send Microsoft at least the Basic level of diagnostic data in order to function. For more information on Windows diagnostic data, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
 
 #### Configuring Telemetry level using Group Policy
 You can set Allow Telemetry through Group Policy, this setting is in the same place as the Commercial ID policy, under **Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds\Allow Telemetry**. Update Compliance requires at least Basic (level 1) to function.
