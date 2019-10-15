@@ -184,7 +184,7 @@ A Platform Configuration Register (PCR) is a memory location in the TPM. PCR 7, 
 
 You can resolve this issue by following these steps:
 
-1. [Verify the PCR validation profile of the TPM](#1-verify-the-pcr-validation-profile-of-the-TPM)
+1. [Verify the PCR validation profile of the TPM](#1-verify-the-pcr-validation-profile-of-the-tpm)
 1. [Verify the Secure Boot State](#2-verify-the-secure-boot-state)
 
 #### 1. Verify the PCR validation profile of the TPM
