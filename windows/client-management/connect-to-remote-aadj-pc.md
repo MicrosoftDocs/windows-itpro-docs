@@ -48,7 +48,7 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
      > Otherwise this command throws the below error. For example: 
      > for cloud only user --> "There is no such global user or group : Azuread\Shenry"
      > for synced user -->"There is no such global user or group : baz\user2"
->
+     >
      >In Windows 10, version 1709, the user does not have to sign in to the remote device first.
      >
      >In Windows 10, version 1709, you can add other Azure AD users to the **Administrators** group on a device in **Settings** and restrict remote credentials to **Administrators**. If there is a problem connecting remotely, make sure that both devices are joined to Azure AD and that TPM is functioning properly on both devices.
