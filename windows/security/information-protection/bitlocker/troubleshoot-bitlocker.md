@@ -22,28 +22,59 @@ This section addresses common issues and provides troubleshooting guidelines for
 
 Open Event Viewer and review the following logs under **Applications and Services logs\\Microsoft\\Windows**:
 
-- **BitLocker-API**. Review the Management log and the Operational log, and any other logs that are generated in this folder.
-- **BitLocker-DrivePreparationTool**. Review the Admin log and the Operational log, and any other logs that are generated in this folder.
+- **BitLocker-API**. Review the **Management** log and the **Operational** log, and any other logs that are generated in this folder. The default logs have the following unique names:
+   - Microsoft-Windows-BitLocker/BitLocker Operational
+   - Microsoft-Windows-BitLocker/BitLocker Management
+
+- **BitLocker-DrivePreparationTool**. Review the **Admin** log and the **Operational** log, and any other logs that are generated in this folder. The default logs have the following unique names:
+   - Microsoft-Windows-BitLocker-DrivePreparationTool/Operational
+   - Microsoft-Windows-BitLocker-DrivePreparationTool/Admin
 
 Additionally, review the **Windows logs\\System** log for events that were produced by the event sources **TCM** and **TCM-WMI**.
 
 To filter and display or export logs, you can use the [wevtutil.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/wevtutil) command-line tool or the [Get-WinEvent](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-6) cmdlet.
 
-To use the wevtutil tool, open an elevated Command Prompt window and run the following command:
+For example, to use wevtutil to export the contents of the **Operational** log from the **BitLocker-API** folder to a text file that is named BitLockerAPIOpsLog.txt, open a Command Prompt window and run a command that resembles the following:
 
 ```cmd
-wevtutil qe "logname" /f:text > logname.txt
+wevtutil qe "Microsoft-Windows-BitLocker/BitLocker Operational" /f:text > BitLockerAPIOpsLog.txt
 ```
 
-To use the Get-WinEvent cmdlet, open an elevated Windows Powershell window and run the following command:
+To use the Get-WinEvent cmdlet to export the same log to a comma-separated text file, open a Windows Powershell window and run a command that resembles the following:
 
 ```ps
-Get-WinEvent -logname "Microsoft-Windows-BitLocker/BitLocker Management"  | Export-Csv -Path Bitlocker-Management.csv
+Get-WinEvent -logname "Microsoft-Windows-BitLocker/BitLocker Operational"  | Export-Csv -Path Bitlocker-Operational.csv
 ```
-```ps
-Get-WinEvent -FilterHashtable @{LogName='System'} | Where-Object -Property Message -Match 'Bitlocker' | fl
-Get-WinEvent -FilterHashtable @{LogName='System'} | Where-Object -Property Message -Match 'Bitlocker' | Export-Csv -Path System-Bitlocker.csv 
-```
+
+You can use Get-WinEvent in an elevated PowerShell window to display filtered information from the **System** or **Application** logs by using syntax that resembles the following:
+
+- To display BitLocker-related information:
+   ```ps
+   Get-WinEvent -FilterHashtable @{LogName='System'} | Where-Object -Property Message -Match 'BitLocker' | fl
+   ```
+
+   The output of such a command resembles the following:
+
+   ![Display of events that is produced by using Get-WinEvent and a BitLocker filter](./images/PSGet_WinEvent_1.png)
+
+- To export BitLocker-related information:
+   ```ps
+   Get-WinEvent -FilterHashtable @{LogName='System'} | Where-Object -Property Message -Match 'BitLocker' | Export-Csv -Path System-BitLocker.csv
+   ```
+
+- To display TPM-related information:
+   ```ps
+   Get-WinEvent -FilterHashtable @{LogName='System'} | Where-Object -Property Message -Match 'TPM' | fl
+   ```
+
+- To export TPM-related information:
+   ```
+   Get-WinEvent -FilterHashtable @{LogName='System'} | Where-Object -Property Message -Match 'TPM' | Export-Csv -Path System-TPM.csv
+   ```
+
+   The output of such a command resembles the following:
+
+   ![Display of events that is produced by using Get-WinEvent and a TPM filter](./images/PSGet_WinEvent_2.png)
 
 > [!NOTE]
 > If you intend to contact Microsoft Support, we recommend that you export the logs listed in this section.
@@ -58,6 +89,7 @@ Open an elevated Windows PowerShell window, and run each of the following comman
 |[**manage-bde –status \>&nbsp;C:\\BDEStatus.txt**](https://docs.microsoft.com/windows-server/administration/windows-commands/manage-bde-status) |Exports information about the general encryption status of all drives on the computer. |
 |[**manage-bde c: <br />-protectors -get \>&nbsp;C:\\Protectors**](https://docs.microsoft.com/windows-server/administration/windows-commands/manage-bde-protectors) |Exports information about the protection methods that are used for the BitLocker encryption key.  |
 |[**reagentc&nbsp;/info&nbsp;\>&nbsp;C:\\reagent.txt**](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reagentc-command-line-options) |Exports information about the current status of the Windows Recovery Environment (Windows RE) and any available recovery image on an online or offline image |
+|[**get-BitLockerVolume \| fl**](https://docs.microsoft.com/powershell/module/bitlocker/get-bitlockervolume?view=win10-ps) |Gets information about volumes that BitLocker Drive Encryption can protect. |
 
 ## Review the configuration information
 
