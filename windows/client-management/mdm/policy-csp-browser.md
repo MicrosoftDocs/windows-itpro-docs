@@ -9,6 +9,7 @@ ms.author: dansimp
 ms.date: 09/27/2019
 ms.reviewer: 
 manager: dansimp
+ms.localizationpriority: medium
 ---
 
 # Policy CSP - Browser

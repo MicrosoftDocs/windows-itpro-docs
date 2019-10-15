@@ -9,6 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
+ms.localizationpriority: medium
 ---
 
 # Policy CSP - DeviceInstallation

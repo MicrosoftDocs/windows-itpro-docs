@@ -2,6 +2,7 @@
 title: Policy CSP - AboveLock
 description: Policy CSP - AboveLock
 ms.author: dansimp
+ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

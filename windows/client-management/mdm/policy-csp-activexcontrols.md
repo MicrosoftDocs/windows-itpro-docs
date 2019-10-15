@@ -2,6 +2,7 @@
 title: Policy CSP - ActiveXControls
 description: Policy CSP - ActiveXControls
 ms.author: dansimp
+ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
