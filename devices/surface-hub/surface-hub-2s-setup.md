@@ -27,7 +27,7 @@ When you first start Surface Hub 2S, the device automatically enters first time 
 - This option is not shown if connected using an Ethernet cable.
 - You cannot connect to a wireless network in hotspots (captive portals) that redirect sign-in requests to a provider’s website.
 
-3. **Enter device account info.** Use **domain\user** for on-premises and hybrid environments and **user@example.com** for online environments. Select **Next.**
+3. **Enter device account info.** Use **domain\user** for on-premises and hybrid environments and **user\@example.com** for online environments. Select **Next.**
 
    ![* Enter device account info *](images/sh2-run2.png) <br>
 1. **Enter additional info.** If requested, provide your Exchange server address and then select **Next.**
