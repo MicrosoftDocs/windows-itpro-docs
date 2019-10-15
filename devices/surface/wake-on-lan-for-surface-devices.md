@@ -43,7 +43,7 @@ The following devices are supported for WOL:
 * Surface Laptop 2
 * Surface Go
 * Surface Go with LTE Advanced
-* Surface Studio (see Surface Studio instructions below)
+* Surface Studio 2 (see Surface Studio 2 instructions below)
 
 ## WOL driver
 
@@ -60,9 +60,9 @@ To extract the contents of SurfaceWOL.msi, use the MSIExec administrative instal
 
    `msiexec /a surfacewol.msi targetdir=C:\WOL /qn`
 
-## Surface Studio instructions
+## Surface Studio 2 instructions
 
-To enable WOL on Surface Studio, you must use the following procedure
+To enable WOL on Surface Studio 2, you must use the following procedure
 
 1. Create the following registry keys:
 
