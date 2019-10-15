@@ -27,17 +27,6 @@ This topic for the IT professional explains how can you plan your BitLocker depl
 
 When you design your BitLocker deployment strategy, define the appropriate policies and configuration requirements based on the business requirements of your organization. The following topics will help you collect information that you can use to frame your decision-making process about deploying and managing BitLocker systems.
 
-- [Audit your environment](#audit-your-environment)
-- [Encryption keys and authentication](#encryption-keys-and-authentication)
-- [TPM hardware configurations](#tpm-hardware-configurations)
-- [Non-TPM hardware configurations](#non-tpm-hardware-configurations)
-- [Disk configuration considerations](#disk-configuration-considerations)
-- [BitLocker provisioning](#bitlocker-provisioning)
-- [Used Disk Space Only encryption](#used-disk-space-only-encryption)
-- [Active Directory Domain Services considerations](#active-directory-domain-services-considerations)
-- [FIPS support for recovery password protector](#fips-support-for-recovery-password-protector)
-- [BitLocker Group Policy settings](bitlocker-group-policy-settings.md)
-
 ## Audit your environment
 
 To plan your enterprise deployment of BitLocker, you must first understand your current environment. Conduct an informal audit to define your current policies, procedures, and hardware environment. Begin by reviewing your existing corporate security policies as they relate to disk encryption software. If your organization is not currently using disk encryption software, none of these policies will exist. If you are using disk encryption software, then you might need to modify your organization's policies to address the capabilities of BitLocker.
