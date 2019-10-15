@@ -44,7 +44,8 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
      >You can specify individual Azure AD accounts for remote connections by having the user sign in to the remote device at least once and then running the following PowerShell cmdlet:
      >
      >`net localgroup "Remote Desktop Users" /add "AzureAD\the-UPN-attribute-of-your-user"`, where *FirstnameLastname* is the name of the user profile in C:\Users\, which is created based on DisplayName attribute in Azure AD.
-     > This command works only for the user , who already added into the AADJ device any of the local group (administrators)
+     >
+     > This command only works for AADJ device users already added to any of the local groups (administrators).
      > Otherwise this command throws the below error. For example: 
      > for cloud only user --> "There is no such global user or group : Azuread\Shenry"
      > for synced user -->"There is no such global user or group : baz\user2"
