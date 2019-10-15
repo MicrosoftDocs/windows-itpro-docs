@@ -14,7 +14,7 @@ ms.localizationpriority: High
 ---
 # Get started with Surface devices
 
-Harness the power of Surface, Windows, and Office connected together through the cloud. Find tools, step-by-step guides, and other resources to help you plan, deploy, and manage Surface devices in your organization.
+Harness the power of Surface, Windows,and Office connected together through the cloud. Find tools, step-by-step guides, and other resources to help you plan, deploy, and manage Surface devices in your organization.
 
 <ul class="panelContent cardsF">
     <li>
@@ -121,12 +121,13 @@ Harness the power of Surface, Windows, and Office connected together through the
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Technical specifications</h3>
-                         <P><a href="https://www.microsoft.com/surface/devices/surface-pro/tech-specs" target="_blank">Surface Pro</a></p>
-                         <P><a href="https://www.microsoft.com/p/surface-book-2/8mcpzjjcc98c?activetab=pivot:techspecstab" target="_blank">Surface Book</a></p>
-                         <P><a href="https://www.microsoft.com/surface/devices/surface-studio/tech-specs" target="_blank">Surface Studio</a><p>
-                         <P><a href="https://www.microsoft.com/surface/devices/surface-go/tech-specs" target="_blank">Surface Go</a></p>
-                         <P><a href="https://www.microsoft.com/surface/devices/surface-laptop/tech-specs" target="_blank">Surface Laptop 2</a></p>
+                        <h3>Tech specs</h3>
+                           <P><a href="https://www.microsoft.com/surface/business/surface-pro-7" target="_blank">Surface Pro 7 for Business</a></P>
+                            <P><a href="https://www.microsoft.com/surface/business/surface-pro-x" target="_blank">Surface Pro X for Business</a></p>
+                            <P><a href="https://www.microsoft.com/surface/business/surface-laptop-3" target="_blank">Surface Laptop 3 for Business</a></p>
+                              <P><a href="https://www.microsoft.com/surface/business/surface-book-2" target="_blank">Surface Book 2 for Business</a></p>
+                              <P><a href="https://www.microsoft.com/surface/business/surface-studio-2" target="_blank">Surface Studio 2 for Business</a></p>
+                              <P><a href="https://www.microsoft.com/surface/business/surface-go" target="_blank">Surface Go</a></p>
                     </div>
                 </div>
             </div>

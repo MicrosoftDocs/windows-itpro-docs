@@ -3,13 +3,17 @@
 ## [Get started](get-started.md)
 
 ## Overview
-### [Surface Pro Tech specs](https://www.microsoft.com/surface/devices/surface-pro/tech-specs)
-### [Surface Book Tech specs](https://www.microsoft.com/surface/devices/surface-book/tech-specs)
-### [Surface Studio Tech specs](https://www.microsoft.com/surface/devices/surface-studio/tech-specs)
-### [Surface Go Tech specs](https://www.microsoft.com/surface/devices/surface-go/tech-specs)
-### [Surface Laptop 2 Tech specs](https://www.microsoft.com/surface/devices/surface-laptop/tech-specs)
+
+### [Surface Pro 7 for Business](https://www.microsoft.com/surface/business/surface-pro-7)
+### [Surface Pro X for Business](https://www.microsoft.com/surface/business/surface-pro-x)
+### [Surface Laptop 3 for Business](https://www.microsoft.com/surface/business/surface-laptop-3)
+### [Surface Book 2 for Business](https://www.microsoft.com/surface/business/surface-book-2)
+### [Surface Studio 2 for Business](https://www.microsoft.com/surface/business/surface-studio-2)
+### [Surface Go](https://www.microsoft.com/surface/business/surface-go)
+### [Secure, work-anywhere mobility with LTE Advanced](https://www.microsoft.com/surface/business/lte-laptops-and-tablets)
 
 ## Plan
+
 ### [Surface device compatibility with Windows 10 Long-Term Servicing Branch](surface-device-compatibility-with-windows-10-ltsc.md)
 ### [Long-Term Servicing Branch for Surface devices](ltsb-for-surface.md)
 ### [Wake On LAN for Surface devices](wake-on-lan-for-surface-devices.md)
@@ -19,6 +23,7 @@
 ### [Ethernet adapters and Surface deployment](ethernet-adapters-and-surface-device-deployment.md)
 
 ## Deploy
+
 ### [Deploy Surface devices](deploy.md)
 ### [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md)
 ### [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
@@ -33,6 +38,7 @@
 ### [Surface System SKU reference](surface-system-sku-reference.md)
 
 ## Manage
+
 ### [Optimize Wi-Fi connectivity for Surface devices](surface-wireless-connect.md)
 ### [Best practice power settings for Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)
 ### [Surface Dock Firmware Update](surface-dock-firmware-update.md)
