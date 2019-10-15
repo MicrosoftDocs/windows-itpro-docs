@@ -68,7 +68,7 @@ You can use Get-WinEvent in an elevated PowerShell window to display filtered in
    ```
 
 - To export TPM-related information:
-   ```
+   ```ps
    Get-WinEvent -FilterHashtable @{LogName='System'} | Where-Object -Property Message -Match 'TPM' | Export-Csv -Path System-TPM.csv
    ```
 
