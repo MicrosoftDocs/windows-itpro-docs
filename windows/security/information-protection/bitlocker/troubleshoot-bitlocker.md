@@ -120,7 +120,7 @@ For more information about the BitLocker prerequisites, see [BitLocker basic dep
 
 ## Next steps
 
-If the information that you have examined so far indicates a specific problem (for example, if Windows RE is not enabled), the problem that you have may have a straightforward fix.
+If the information that you have examined so far indicates a specific problem (for example, if WindowsRE is not enabled), the problem that you have may have a straightforward fix.
 
 Resolving issues that do not have obvious causes depends on exactly which components are involved and what behavior you see. The information you have gathered can help you narrow down the areas to investigate.
 
