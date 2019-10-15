@@ -46,7 +46,7 @@ To enable BitLocker to store the recovery key and TPM information in Active Dire
 > [!NOTE]
 > Depending on the Active Directory Schema version, you might need to update the Schema before you can store BitLocker information in Active Directory.
 
-In Windows Server version from 2008 R2 and onwards, you have access to the BitLocker Drive Encryption Administration Utilities features, which will help you manage BitLocker. When you install the features, the BitLocker Active Directory Recovery Password Viewer is included, and it extends Active Directory Users and Computers with BitLocker Recovery information.
+In Windows Server version from 2008 R2 and later, you have access to the BitLocker Drive Encryption Administration Utilities features, which will help you manage BitLocker. When you install the features, the BitLocker Active Directory Recovery Password Viewer is included, and it extends Active Directory Users and Computers with BitLocker Recovery information.
 
 ![figure 2](../images/mdt-09-fig02.png)
 
