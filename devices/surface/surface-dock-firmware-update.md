@@ -48,6 +48,12 @@ You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firm
 
 For more information, refer to [Command line options](https://docs.microsoft.com/windows/win32/msi/command-line-options) documentation.
 
+## Intune deployment
+You can use Intune to distribute Surface Dock Firmware Update to your devices. First you will need to convert the MSI file to the .intunewin format, as described in the following documentation: [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps/apps-win32-app-management).
+
+Use the following command:
+  - **msiexec /i <name of msi> /quiet /q**
+
 ## How to verify completion of firmware update
 
 Surface dock firmware consists of two components:
