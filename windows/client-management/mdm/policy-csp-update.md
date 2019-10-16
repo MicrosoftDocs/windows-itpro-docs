@@ -237,14 +237,6 @@ manager: dansimp
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -312,14 +304,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -382,14 +366,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
@@ -457,14 +433,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -547,14 +515,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -625,14 +585,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -700,14 +652,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -768,14 +712,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -849,14 +785,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
@@ -935,14 +863,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1019,14 +939,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1091,14 +1003,6 @@ Supported values are 15, 30, 60, 120, and 240 (minutes).
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
@@ -1167,14 +1071,6 @@ The following list shows the supported values:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
 </tr>
 </table>
 
@@ -1252,14 +1148,6 @@ Supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1329,14 +1217,6 @@ The following list shows the supported values:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
 </tr>
 </table>
 
@@ -1409,14 +1289,6 @@ Default value is 7.
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1487,14 +1359,6 @@ Default value is 7.
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1564,14 +1428,6 @@ Default value is 2.
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
 </tr>
 </table>
 
@@ -1645,14 +1501,6 @@ Supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1703,14 +1551,6 @@ Added in Windows 10, version 1803. Enable IT admin to configure feature update u
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1779,14 +1619,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1847,14 +1679,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -2008,14 +1832,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2086,14 +1902,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2153,14 +1961,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2232,14 +2032,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
@@ -2320,14 +2112,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2401,14 +2185,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2480,14 +2256,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2557,14 +2325,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
@@ -2638,14 +2398,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2717,14 +2469,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2794,14 +2538,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2870,14 +2606,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
@@ -2951,14 +2679,6 @@ To validate this policy:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3030,14 +2750,6 @@ To validate this policy:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3104,14 +2816,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -3188,14 +2892,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3266,14 +2962,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3334,14 +3022,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
@@ -3409,14 +3089,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
@@ -3492,14 +3164,6 @@ This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupd
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3569,14 +3233,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3639,14 +3295,6 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
@@ -3713,14 +3361,6 @@ Supported values are 15, 30, or 60 (minutes).
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
@@ -3791,14 +3431,6 @@ Supported values are 2, 4, 8, 12, or 24 (hours).
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -3878,14 +3510,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3949,14 +3573,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4022,14 +3638,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -4093,14 +3701,6 @@ ADMX Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4166,14 +3766,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -4236,14 +3828,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -4318,14 +3902,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -4393,14 +3969,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -4460,14 +4028,6 @@ ADMX Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -4525,14 +4085,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
@@ -4602,14 +4154,6 @@ The following list shows the supported values:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
 </tr>
 </table>
 
@@ -4686,14 +4230,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -4787,14 +4323,6 @@ Example
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
