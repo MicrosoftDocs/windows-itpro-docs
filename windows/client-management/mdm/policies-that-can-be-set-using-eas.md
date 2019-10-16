@@ -14,12 +14,10 @@ ms.date: 07/18/2019
 
 # Policies that can be set using Exchange Active Sync (EAS)
 
-- [Browser/AllowBrowser](policy-csp-browser.md#browser-allowbrowser)  
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)  
 - [Cellular/ShowAppCellularAccessUI](policy-csp-cellular.md#cellular-showappcellularaccessui)  
 - [Connectivity/AllowBluetooth](policy-csp-connectivity.md#connectivity-allowbluetooth)  
 - [Connectivity/AllowCellularDataRoaming](policy-csp-connectivity.md#connectivity-allowcellulardataroaming)  
-- [Connectivity/AllowUSBConnection](policy-csp-connectivity.md#connectivity-allowusbconnection)  
 - [DeviceLock/AllowSimpleDevicePassword](policy-csp-devicelock.md#devicelock-allowsimpledevicepassword)  
 - [DeviceLock/AlphanumericDevicePasswordRequired](policy-csp-devicelock.md#devicelock-alphanumericdevicepasswordrequired)  
 - [DeviceLock/DevicePasswordEnabled](policy-csp-devicelock.md#devicelock-devicepasswordenabled)  
