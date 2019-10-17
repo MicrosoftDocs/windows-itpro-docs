@@ -342,7 +342,7 @@ This is what happens when you choose an option.
     > [!IMPORTANT]
     > Administrators added to the Azure Device Administrators role after you join the device to Azure AD will be unable to use the Settings app.
     >
-    >If you join Surface Hub to Azure AD during first-run setup, single sign-on (SSO) for Office apps will not work properly. Users will have to sign in to each Office app individually.
+    > If you join Surface Hub to Azure AD during first-run setup, single sign-on (SSO) for Office apps will not work properly. Users will have to sign in to each Office app individually.
 
 -   **Use Active Directory Domain Services**
 
