@@ -11,7 +11,7 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/14/2019
+ms.date: 10/17/2019
 ---
 
 # Guidelines for troubleshooting BitLocker

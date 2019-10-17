@@ -11,12 +11,12 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/7/2019
+ms.date: 10/17/2019
 ---
 
 # BitLocker cannot encrypt a drive: known issues
 
-This article describes common issues that can occur that prevent BitLocker from encrypting a drive, and provides guidance for addressing those issues.
+This article describes common issues that may prevent BitLocker from encrypting a drive. This article also provides guidance to address these issues.
 
 > [!NOTE]
 > If you have determined that your BitLocker issue involves the Trusted Platform Module (TPM), see [BitLocker cannot encrypt a drive: known TPM issues](ts-bitlocker-cannot-encrypt-tpm-issues.md).
@@ -38,26 +38,27 @@ This issue may be caused by settings that are controlled by Group Policy Objects
 
 To resolve this issue, follow these steps:
 
-1. Open Registry Editor, and navigate to **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE**
+1. Start Registry Editor, and navigate to the following subkey:
+   **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE**
 
-1. Delete the following sub-keys:
-   - **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE\\OSPlatformValidation\_BIOS**
-   - **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE\\OSPlatformValidation\_UEFI**
-   - **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE\\PlatformValidation**
+1. Delete the following entries:
+   - **OSPlatformValidation\_BIOS**
+   - **OSPlatformValidation\_UEFI**
+   - **PlatformValidation**
 
 1. Exit Registry Editor, and turn on BitLocker Drive Encryption again.
 
 ## "Access is denied" message when you try to encrypt removable drives
 
-You have a computer that is running Windows 10, version 1607 or version 1709. You try to encrypt a USB drive by following these steps:
+You have a computer that is running Windows 10, version 1709 or version 1607. You try to encrypt a USB drive by following these steps:
 
 1. In Windows Explorer, right-click the USB drive and select **Turn on BitLocker**.
 1. On the **Choose how you want to unlock this drive** page, select **Use a password to unlock the drive**.
-1. Follow the instructions on the page to enter your password and then re-enter it.
+1. Follow the instructions on the page to enter your password.
 1. On the **Are you ready to encrypt this drive?** page, select **Start encrypting**.
 1. The **Starting encryption** page displays the message "Access is denied."
 
-You receive this message on any computer that runs Windows 10 version 1607 or version 1709, when using any USB drive.
+You receive this message on any computer that runs Windows 10 version 1709 or version 1607, when you use any USB drive.
 
 ### Cause
 
@@ -65,9 +66,9 @@ The security descriptor of the BitLocker Drive Encryption service (BDESvc) has a
 
 To verify that this issue has occurred, follow these steps:
 
-1. On an affected computer, open an elevated Command Prompt window and an elevated Powershell window.
+1. On an affected computer, open an elevated Command Prompt window and an elevated PowerShell window.
 
-1. In the Command Prompt window, enter the following command:
+1. At the command prompt, enter the following command:
 
    ```cmd
    C:\>sc sdshow bdesvc
@@ -77,11 +78,11 @@ To verify that this issue has occurred, follow these steps:
 
    > D:(A;;CCDCLCSWRPWPDTLORCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLORCWDWO;;;BA)(A;;CCLCSWRPLORC;;;BU)(A;;CCLCSWRPLORC;;;AU)S:(AU;FA;CCDCLCSWRPWPDTLOSDRCWDWO;;;WD)
 
-1. Copy this output, and then use it as part of the [**ConvertFrom-SddlString**](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/convertfrom-sddlstring?view=powershell-6) command in the PowerShell window, as follows:
+1. Copy this output, and use it as part of the [**ConvertFrom-SddlString**](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/convertfrom-sddlstring?view=powershell-6) command in the PowerShell window, as follows.
 
    ![Output of the ConvertFrom-SddlString command, showing NT AUTHORITY\\INTERACTIVE](./images/ts-bitlocker-usb-sddl.png)
 
-   If you see NT AUTHORITY\INTERACTIVE (as highlighted), in the output of this command, this is the cause of the problem. Under typical conditions, the output should resemble the following:
+   If you see NT AUTHORITY\INTERACTIVE (as highlighted), in the output of this command, this is the cause of the issue. Under typical conditions, the output should resemble the following:
 
    ![Output of the ConvertFrom-SddlString command, showing NT AUTHORITY\\Authenticated Users](./images/ts-bitlocker-usb-default-sddl.png)
 
