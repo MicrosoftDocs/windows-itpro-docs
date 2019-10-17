@@ -11,33 +11,33 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/7/2019
+ms.date: 10/17/2019
 ---
 
 # BitLocker configuration: known issues
 
-This article describes common issues that involve your BitLocker configuration and BitLocker's general functionality, and provides guidance for addressing those issues.
+This article describes common issues that affect your BitLocker configuration and BitLocker's general functionality. This article also provides guidance to address these issues.
 
-## In Windows 10, BitLocker takes more time to encrypt a drive than in Windows 7
+## BitLocker encryption is slower in Windows 10
 
-In both Windows 10 and Windows 7, BitLocker runs in the background to encrypt drives. However, in Windows 10, BitLocker is less aggressive about requesting resources. this behavior reduces the chance of BitLocker affecting the computer's performance.
+In both Windows 10 and Windows 7, BitLocker runs in the background to encrypt drives. However, in Windows 10, BitLocker is less aggressive about requesting resources. This behavior reduces the chance that BitLocker will affect the computer's performance.
 
-To compensate for these changes, BitLocker uses a new conversion model. This model, (referred to as Encrypt-On-Write), ensures that on all client SKUs and on any internal drives, any new disk writes are always encrypted *as soon as you turn on BitLocker*.
+To compensate for these changes, BitLocker uses a new conversion model. This model, (referred to as Encrypt-On-Write), makes sure that any new disk writes on all client SKUs and any internal drives are always encrypted *as soon as you turn on BitLocker*.
 
 > [!IMPORTANT]
 > To preserve backward compatibility, BitLocker uses the previous conversion model to encrypt removable drives.
 
 ### Benefits of using the new conversion model
 
-Using the previous conversion model, you cannot consider an internal drive to be protected (and compliant with data protection standards) until the BitLocker conversion is 100% complete. Before the process completes, the data that existed on the drive before encryption began&mdash;potentially compromised data&mdash;can still be read and written without encryption. Therefore, you must wait for the encryption process to complete before you store sensitive data on the drive. Depending on the size of the drive, this wait time can be substantial.
+By using the previous conversion model, you cannot consider an internal drive to be protected (and compliant with data protection standards) until the BitLocker conversion is 100 percent complete. Before the process finishes, the data that existed on the drive before encryption began&mdash;that is, potentially compromised data&mdash;can still be read and written without encryption. Therefore, you must wait for the encryption process to finish before you store sensitive data on the drive. Depending on the size of the drive, this delay can be substantial.
 
-Using the new conversion model, you can safely store sensitive data on the drive as soon as you turn on BitLocker, before the encryption process finishes. You can use the drive immediately, and the encryption process does not adversely affect performance. The tradeoff is that the encryption process for pre-existing data takes more time.
+By using the new conversion model, you can safely store sensitive data on the drive as soon as you turn on BitLocker. You don't have to wait for the encryption process to finish, and encryption does not adversely affect performance. The tradeoff is that the encryption process for pre-existing data takes more time.
 
 ### Other BitLocker enhancements
 
 After Windows 7 was released, several other areas of BitLocker were improved:
 
-- **New encryption algorithm, XTS-AES**. The new algorithm provides additional protection from a class of attacks on encryption that rely on manipulating cipher text to cause predictable changes in plain text.
+- **New encryption algorithm, XTS-AES**. The new algorithm provides additional protection from a class of attacks on encrypted data that rely on manipulating cipher text to cause predictable changes in plain text.
 
    By default, this algorithm complies with the Federal Information Processing Standards (FIPS). FIPS are United States Government standards that provide a benchmark for implementing cryptographic software.
 
@@ -49,46 +49,46 @@ After Windows 7 was released, several other areas of BitLocker were improved:
    - Windows PowerShell
    - Windows Management Interface (WMI)
 
-- **Integration with Azure Active Directory** (Azure AD). BitLocker can store keys in Azure AD, which makes them easier to recover.
+- **Integration with Azure Active Directory** (Azure AD). BitLocker can store keys in Azure AD to make them easier to recover.
 
 - **[Direct memory access (DMA) port protection](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**. By using MDM policies to manage BitLocker, you can block a device's DMA ports and secure the device during its startup.
 
 - **[BitLocker Network Unlock](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock)**. If your BitLocker-enabled desktop or server computer is connected to a wired corporate network in a domain environment, you can automatically unlock its operating system volume during a system restart.
 
-- **Support for [Encrypted Hard Drives](https://docs.microsoft.com/windows/security/information-protection/encrypted-hard-drive)**. Encrypted Hard Drives are a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. By offloading the cryptographic operations to hardware, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption.
+- **Support for [Encrypted Hard Drives](https://docs.microsoft.com/windows/security/information-protection/encrypted-hard-drive)**. Encrypted Hard Drives are a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. By taking on that workload, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption.
 
 - **Support for classes of HDD/SSD hybrid disks**. BitLocker can encrypt a disk that uses a small SSD as a non-volatile cache in front of the HDD, such as Intel Rapid Storage Technology.
 
 ## Hyper-V Gen 2 VM: Cannot access the volume after BitLocker encryption
 
+Consider the following scenario:
+
 1. You turn on BitLocker on a generation-2 virtual machine (VM) that runs on Hyper-V.
 1. You add data to the data disk as it encrypts.
-1. You restart the virtual machine, and observe the following:
+1. You restart the VM, and observe the following:
    - The system volume is not encrypted.
    - The encrypted volume is not accessible, and the computer lists the volume's file system as "Unknown."
    - You see a message that resembles: "You need to format the disk in \<*x:*> drive before you can use it"
 
 ### Cause
 
-The third-party filter driver Stcvsm.sys (from StorageCraft) is installed on the virtual machine.
+This issue occurs because the third-party filter driver Stcvsm.sys (from StorageCraft) is installed on the VM.
 
 ### Resolution
 
 To resolve this issue, remove the third-party software.
 
-{Note to reviewers: the original text says "We uninstalled the 3rd party Storage craft software and could fix the issue." This section needs to include *how* to fix the issue. Does the VM recognize the drive as soon as the 3rd-party app is gone? Do you have to restore the drive from a backup, then re-encrypt it?}
-
 ## Production snapshots fail for virtualized domain controllers that use BitLocker-encrypted disks
 
-You have a Windows Server 2019 or 2016 Hyper-V Server that is hosting virtual machines (guests) that are configured as Windows domain controllers. BitLocker has encrypted the disks that store the Active Directory database and log files. When you run a “production snapshot” of the domain controller guests, the Volume Snap-Shot (VSS) service does not correctly process the backup.
+You have a Windows Server 2019 or 2016 Hyper-V Server that is hosting VMs (guests) that are configured as Windows domain controllers. BitLocker has encrypted the disks that store the Active Directory database and log files. When you run a “production snapshot” of the domain controller guests, the Volume Snap-Shot (VSS) service does not correctly process the backup.
 
 This issue occurs regardless of any of the following variations in the environment:
 
 - How the domain controller volumes are unlocked.
-- Whether the virtual machines are generation 1 or generation 2.
-- whether the guest operating system is Windows Server 2019, 2016 or 2012 R2.
+- Whether the VMs are generation 1 or generation 2.
+- Whether the guest operating system is Windows Server 2019, 2016 or 2012 R2.
 
-In the domain controller Application event log, the VSS event source records event ID 8229:
+In the domain controller Application log, the VSS event source records event ID 8229:
 
 > ID: 8229  
 > Level: Warning  
@@ -123,7 +123,8 @@ In the domain controller Directory Services event log, you see an event that res
 >  
 > Internal ID: 160207d9  
 
-The internal ID of this event may differ based on your operating system release and path level.
+> [!NOTE]
+> The internal ID of this event may differ based on your operating system release and path level.
 
 After this issue occurs, if you run the **VSSADMIN list writers** command, you see output that resembles the following for the Active Directory Domain Services (NTDS) VSS Writer:  
 
@@ -133,11 +134,11 @@ After this issue occurs, if you run the **VSSADMIN list writers** command, you s
 > &nbsp;&nbsp;State: \[11\] Failed  
 > &nbsp;&nbsp;Last error: Non-retryable error  
 
-Additionally, you cannot back up the virtual machines until you restart them.
+Additionally, you cannot back up the VMs until you restart them.
 
 ### Cause
 
-After VSS creates a snapshot of a volume, the VSS writer performs "post snapshot" actions. In the case of a "production snapshot", which you initiate from the host server, Hyper-V attempts to mount the snapshotted volume. However, it cannot unlock the volume for unencrypted access. BitLocker on the Hyper-V server does not recognize the volume. Therefore, the access attempt fails and eventually fails the snapshot.
+After VSS creates a snapshot of a volume, the VSS writer takes "post snapshot" actions. In the case of a "production snapshot," which you initiate from the host server, Hyper-V tries to mount the snapshotted volume. However, it cannot unlock the volume for unencrypted access. BitLocker on the Hyper-V server does not recognize the volume. Therefore, the access attempt fails and then the snapshot operation fails.
 
 This behavior is by design.
 
@@ -153,7 +154,7 @@ For more information and recommendations about backing up virtualized domain con
 
 ### More information
 
-When the VSS NTDS writer requests access to the encrypted drive, the Local Security Authority Subsystem Service (LSASS) produces an error that resembles the following:
+When the VSS NTDS writer requests access to the encrypted drive, the Local Security Authority Subsystem Service (LSASS) generates an error entry that resembles the following:
 
 ```
 \# for hex 0xc0210000 / decimal -1071579136
