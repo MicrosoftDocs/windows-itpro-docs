@@ -51,11 +51,11 @@ This happens because Windows 10, version 1903 deletes the AutopilotConfiguration
 - You are unable to install UWP apps from the Microsoft Store, causing failures during Windows Autopilot.  If you are deploying Company Portal as a blocking app during Windows Autopilot ESP, you’ve probably seen this error.
 - A user is not granted administrator rights in the Windows Autopilot user-driven Hybrid Azure AD join scenario.  This is another non-English OS issue.
 <td>Download and install the <a href="https://support.microsoft.com/help/4505903">KB4505903 update</a>. <br><br>See the section: <b>How to get this update</b> for information on specific release channels you can use to obtain the update.
-<tr><td>Windows Autopilot <a href="self-deploying">self-deploying mode</a> fails with an error code:
+<tr><td>Windows Autopilot <a href="https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying">self-deploying mode</a> fails with an error code:
 <td><table>
-<tr><td>0x800705B4<td>The device is not TPM 2.0 capable, such as a VM. You cannot use this device with self-deploying mode.
-<tr><td>0x801c03ea<td>The device is TPM 2.0 capable, but the TPM is not currently 2.0 and needs to be upgraded.
-<tr><td>0xc1036501<td>The device cannot do an automatic MDM enrollment because there are multiple MDM configurations in Azure AD. Remove the duplicate configurations.
+<tr><td>0x800705B4<td>This is a general error indicating a timeout. A common cause of this error in self-deploying mode is that the device is not TPM 2.0 capable (ex: a virtual machine). Devices that are not TPM 2.0 capable cannot be used with self-deploying mode.
+<tr><td>0x801c03ea<td>This error indictes that TPM attestation failed, causing a failure to join Azure Active Directory with a device token.
+<tr><td>0xc1036501<td>The device cannot do an automatic MDM enrollment because there are multiple MDM configurations in Azure AD. See <a href="https://oofhours.com/2019/10/01/inside-windows-autopilot-self-deploying-mode/">Inside Windows Autopilot self-deploying mode</a>.
 </table>
 <tr><td>White glove gives a red screen and the <b>Microsoft-Windows-User Device Registration/Admin</b> event log displays <b>HResult error code 0x801C03F3</b><td>This can happen if Azure AD can’t find an AAD device object for the device that you are trying to deploy. This will occur if you manually delete the object. To fix it, remove the device from AAD, Intune, and Autopilot, then re-register it with Autopilot, which will recreate the AAD device object.<br> 
 <br>To obtain troubleshooting logs use: <b>Mdmdiagnosticstool.exe -area Autopilot;TPM -cab c:\autopilot.cab</b>
