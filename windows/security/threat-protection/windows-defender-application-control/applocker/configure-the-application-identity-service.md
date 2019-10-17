@@ -20,8 +20,8 @@ ms.date: 04/02/2018
 # Configure the Application Identity service
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals shows how to configure the Application Identity service to start automatically or manually.
 

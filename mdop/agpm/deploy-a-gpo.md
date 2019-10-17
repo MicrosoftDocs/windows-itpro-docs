@@ -1,11 +1,11 @@
 ---
 title: Deploy a GPO
 description: Deploy a GPO
-author: mjcaparas
+author: dansimp
 ms.assetid: a0a3f292-e3ab-46ae-a0fd-d7b2b4ad8883
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

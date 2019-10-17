@@ -7,8 +7,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: dansimp
+ms.author: dansimp
+author: DulceMontemayor
 ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: conceptual
 ---
 
 # Threat Protection
@@ -39,24 +44,30 @@ ms.localizationpriority: medium
 
 **[Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)**<br>
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
+
 - [Risk-based Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md) 
 - [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
+- [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
 - [Configuration score](microsoft-defender-atp/configuration-score.md)
+- [Security recommendations](microsoft-defender-atp/tvm-security-recommendation.md)
+- [Remediation](microsoft-defender-atp/tvm-remediation.md)
+- [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
+- [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
 - [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
 
 <a name="asr"></a>
 
 **[Attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)**<br>
-The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
+The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations.
 
-- [Hardware based isolation](microsoft-defender-atp/overview-hardware-based-isolation.md) 
+- [Hardware based isolation](microsoft-defender-atp/overview-hardware-based-isolation.md)
 - [Application control](windows-defender-application-control/windows-defender-application-control.md)
 - [Device control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
-- [Exploit protection](windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
-- [Network protection](windows-defender-exploit-guard/network-protection-exploit-guard.md)
-- [Controlled folder access](windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
+- [Exploit protection](microsoft-defender-atp/exploit-protection.md)
+- [Network protection](microsoft-defender-atp/network-protection.md)
+- [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
 - [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
-- [Attack surface reduction controls](windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
+- [Attack surface reduction rules](microsoft-defender-atp/attack-surface-reduction.md)
 
 <a name="ngp"></a>
 
@@ -97,6 +108,9 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 <a name="ss"></a>
 
 **[Secure score](microsoft-defender-atp/overview-secure-score.md)**<br>
+>[!NOTE]
+>  Secure score is now part of [Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)  as [Configuration score](microsoft-defender-atp/configuration-score.md). The secure score page will be available for a few weeks. View the [Secure score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score) page.
+
 Microsoft Defender ATP includes a secure score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
 - [Asset inventory](microsoft-defender-atp/secure-score-dashboard.md)
 - [Recommended improvement actions](microsoft-defender-atp/secure-score-dashboard.md)
@@ -118,7 +132,7 @@ Microsoft Defender ATP's new managed threat hunting service provides proactive h
 Integrate Microsoft Defender Advanced Threat Protection into your existing workflows.
 - [Onboarding](microsoft-defender-atp/onboard-configure.md)
 - [API and SIEM integration](microsoft-defender-atp/configure-siem.md)
-- [Exposed APIs](microsoft-defender-atp/use-apis.md)
+- [Exposed APIs](microsoft-defender-atp/apis-intro.md)
 - [Role-based access control (RBAC)](microsoft-defender-atp/rbac.md)
 - [Reporting and trends](microsoft-defender-atp/powerbi-reports.md)
 
@@ -127,7 +141,7 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 **[Microsoft Threat Protection](microsoft-defender-atp/threat-protection-integration.md)** <br>
  Microsoft Defender ATP is part of the Microsoft Threat Protection solution that helps implement end-to-end security across possible attack surfaces in the modern workplace. Bring the power of Microsoft threat protection to your organization.
 - [Conditional access](microsoft-defender-atp/conditional-access.md)
-- [O365 ATP](microsoft-defender-atp/threat-protection-integration.md)
+- [Office 365 ATP](microsoft-defender-atp/threat-protection-integration.md)
 - [Azure ATP](microsoft-defender-atp/threat-protection-integration.md)
 - [Azure Security Center](microsoft-defender-atp/threat-protection-integration.md)
 - [Skype for Business](microsoft-defender-atp/threat-protection-integration.md) 

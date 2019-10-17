@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ---
 
 # Release Notes for App-V for Windows 10, version 1607
@@ -144,6 +144,8 @@ The Permissions.sql script should be updated according to **Step 2** in [KB arti
 App-V doesn't support Visual Studio 2012.
 
 **Workaround**: Use a newer version of Microsoft Visual Studio.
+
+Currently, Visual Studio 2012 doesn't support app virtualization, whether using Microsoft App-V or third party solutions such as VMWare ThinApp. While it is possible you might find that Visual Studio works well enough for your purposes when running within one of these environments, we are unable to address any bugs or issues found when running in a virtualized environment at this time.
 
 ## Application filename restrictions for App-V Sequencer
 The App-V Sequencer cannot sequence applications with filenames matching "CO_&lt;x&gt;" where x is any numeral. Error 0x8007139F will be generated.

@@ -8,6 +8,7 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.topic: article
 ---
@@ -36,7 +37,7 @@ Because the tables in this topic are wide, you may need to adjust the width of i
 
 The following is a template for the sections that you need to migrate your application. The template is not functional on its own, but you can use it to write your own .xml file.
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migtestapp">
   <component type="Application">
     <!-- Name of the application -->
@@ -195,7 +196,7 @@ This table describes the behavior in the following example .xml file.
 
  
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/testfilemig">
   <component type="Application" context="System">
    <displayName>File Migration Test</displayName>
@@ -231,7 +232,7 @@ This table describes the behavior in the following example .xml file.
 
 The behavior for this custom .xml file is described within the &lt;`displayName`&gt; tags in the code.
 
-``` syntax
+``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 
 <component type="Documents" context="System">

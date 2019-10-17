@@ -52,4 +52,4 @@ The information that you gather will help you answer the following questions. Th
 
 This guide describes how to plan your groups and GPOs for an environment with a mix of operating systems. Details can be found in the section [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) later in this guide.
 
-**Next: **[Gathering the Information You Need](gathering-the-information-you-need.md)
+**Next:** [Gathering the Information You Need](gathering-the-information-you-need.md)

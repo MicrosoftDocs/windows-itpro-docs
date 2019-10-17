@@ -1,15 +1,15 @@
 ---
 title: Release Notes for DaRT 8.1
 description: Release Notes for DaRT 8.1
-author: msfttracyp
+author: dansimp
 ms.assetid: 44303107-60f4-485c-848a-7e0529f142d4
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

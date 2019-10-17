@@ -51,7 +51,7 @@ Content-Type | String | application/json. **Required**.
 
 
 ## Request body
-In the request body, supply the values for the relevant fields that should be updated.Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't change.
+In the request body, supply the values for the relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't change.
 
 Property | Type | Description
 :---|:---|:---
@@ -60,6 +60,7 @@ assignedTo | String | Owner of the alert
 classification | String | Specifies the specification of the alert. The property values are: 'Unknown', 'FalsePositive', 'TruePositive'. 
 determination | String | Specifies the determination of the alert. The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 
+[!include[Improve request performance](improve-request-performance.md)]
 
 ## Response
 If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body with the updated properties. If alert with the specified id was not found - 404 Not Found.
@@ -70,8 +71,6 @@ If successful, this method returns 200 OK, and the [alert](alerts.md) entity in 
 **Request**
 
 Here is an example of the request.
-
-[!include[Improve request performance](improve-request-performance.md)]
 
 ```
 PATCH https://api.securitycenter.windows.com/api/alerts/121688558380765161_2136280442

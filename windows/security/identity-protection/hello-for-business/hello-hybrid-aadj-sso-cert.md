@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -79,7 +79,7 @@ The easiest way to verify the onPremisesDistingushedNamne attribute is synchroni
 
 1. Open a web browser and navigate to https://graphexplorer.azurewebsites.net/
 2. Click **Login** and provide Azure credentials
-3. In the Azure AD Graph Explorer URL, type <strong>https://graph.windows.net/myorganization/users/[userid], where **[userid]</strong> is the user principal name of user in Azure Active Directory.  Click **Go**
+3. In the Azure AD Graph Explorer URL, type https://graph.windows.net/myorganization/users/[userid], where **[userid]** is the user principal name of user in Azure Active Directory.  Click **Go**
 4. In the returned results, review the JSON data for the **onPremisesDistinguishedName** attribute.  Ensure the attribute has a value and the value is accurate for the given user.
    ![Azure AD Connect On-Prem DN Attribute](images/aadjcert/aadconnectonpremdn.png)
 
@@ -90,16 +90,16 @@ The deployment uses the **NDES Servers** security group to assign the NDES servi
 
 Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
 
-1.	Open **Active Directory Users and Computers**.
-2.	Expand the domain node from the navigation pane.
-3.	Right-click the **Users** container. Hover over **New** and click **Group**.
-4.	Type **NDES Servers** in the **Group Name** text box.
-5.	Click **OK**.
+1. Open **Active Directory Users and Computers**.
+2. Expand the domain node from the navigation pane.
+3. Right-click the **Users** container. Hover over **New** and click **Group**.
+4. Type **NDES Servers** in the **Group Name** text box.
+5. Click **OK**.
 
 ### Add the NDES server to the NDES Servers global security group
 Sign-in to a domain controller or management workstation with access equivalent to _domain administrator_.
 
-1.	Open **Active Directory Users and Computers**.
+1. Open **Active Directory Users and Computers**.
 2.  Expand the domain node from the navigation pane.
 3.  Click **Computers** from the navigation pane. Right-click the name of the NDES server that will host the NDES server role.  Click **Add to a group...**.
 4. Type **NDES Servers** in **Enter the object names to select**.  Click **OK**.  Click **OK** on the **Active Directory Domain Services** success dialog.
@@ -189,9 +189,9 @@ NDES uses a server authentication certificate to authenticate the server endpoin
 Sign-in to the issuing certificate authority or management workstations with _Domain Admin_ equivalent credentials.
 
 1.  Open the **Certificate Authority** management console.
-2.	Right-click **Certificate Templates** and click **Manage**.
-3.	In the **Certificate Template Console**, right-click the **Computer** template in the details pane and click **Duplicate Template**.
-4.	On the **General** tab, type **NDES-Intune Authentication** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise's needs.  
+2. Right-click **Certificate Templates** and click **Manage**.
+3. In the **Certificate Template Console**, right-click the **Computer** template in the details pane and click **Duplicate Template**.
+4. On the **General** tab, type **NDES-Intune Authentication** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise's needs.  
     **Note:** If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
 5.  On the **Subject** tab, select **Supply in the request**.
 6.  On the **Cryptography** tab, validate the **Minimum key size** is **2048**.
@@ -214,10 +214,10 @@ Sign-in a certificate authority or management workstations with _Domain Admin eq
 6. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  
 7. On the **Extensions** tab, verify the **Application Policies** extension includes **Smart Card Logon**.
 8. On the **Subject** tab, select **Supply in the request**.
-9.	On the **Request Handling** tab, select **Signature and encryption** from the **Purpose** list.  Select the **Renew with same key** check box. Select **Enroll subject without requiring any user input**.
-10.	On the **Security** tab, click **Add**. Type **NDESSvc** in the **Enter the object names to select** text box and click **OK**.
-12.	Select  **NDESSvc** from the **Group or users names** list. In the **Permissions for NDES Servers** section, select the **Allow** check box for the **Read**, **Enroll**. Clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared. Click **OK**. 
-13.	Close the console.
+9. On the **Request Handling** tab, select **Signature and encryption** from the **Purpose** list.  Select the **Renew with same key** check box. Select **Enroll subject without requiring any user input**.
+10. On the **Security** tab, click **Add**. Type **NDESSvc** in the **Enter the object names to select** text box and click **OK**.
+12. Select  **NDESSvc** from the **Group or users names** list. In the **Permissions for NDES Servers** section, select the **Allow** check box for the **Read**, **Enroll**. Clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared. Click **OK**. 
+13. Close the console.
 
 ### Publish certificate templates
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
@@ -227,12 +227,12 @@ The certificate authority may only issue certificates for certificate templates 
 
 Sign-in to the certificate authority or management workstations with an _Enterprise Admin_ equivalent credentials.
 
-1.	Open the **Certificate Authority** management console.
-2.	Expand the parent node from the navigation pane.
-3.	Click **Certificate Templates** in the navigation pane.
-4.	Right-click the **Certificate Templates** node.  Click **New**, and click **Certificate Template** to issue.
-5.	In the **Enable Certificates Templates** window, select the **NDES-Intune Authentication** and **AADJ WHFB Authentication** templates you created in the previous steps.  Click **OK** to publish the selected certificate templates to the certificate authority.   
-6.	Close the console.
+1. Open the **Certificate Authority** management console.
+2. Expand the parent node from the navigation pane.
+3. Click **Certificate Templates** in the navigation pane.
+4. Right-click the **Certificate Templates** node.  Click **New**, and click **Certificate Template** to issue.
+5. In the **Enable Certificates Templates** window, select the **NDES-Intune Authentication** and **AADJ WHFB Authentication** templates you created in the previous steps.  Click **OK** to publish the selected certificate templates to the certificate authority.   
+6. Close the console.
 
 ## Install and Configure the NDES Role
 This section includes the following topics:
@@ -535,7 +535,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 1. Sign-in to the [Azure Portal](https://portal.azure.com/).
 2. Select **All Services**.  Type **Intune** to filter the list of services.  Click **Microsoft Intune**.
 ![Microsoft Intune Console](images/aadjcert/microsoftintuneconsole.png)
-3. Select **Device Configuration**, and then select **Certificate Authority**.
+3. Select **Device Configuration**, and then select **Certificate Connectors**.
 ![Intune Certificate Authority](images/aadjcert/intunedeviceconfigurationcertauthority.png)
 4. Click **Add**, and then click **Download the certificate connector software** under the **Steps to install connector for SCEP** section.
 ![Intune Download Certificate connector](images/aadjcert/intunedownloadcertconnector.png)
@@ -610,7 +610,7 @@ Sign-in the NDES server with access equivalent to _domain admin_.
 
 1. Open a command prompt.
 2. Type the following command to confirm the NDES Connector's last connection time is current.</br>
-```reg query hklm\software\Micosoft\MicrosoftIntune\NDESConnector\ConnectionStatus```</br>
+```reg query hklm\software\Microsoft\MicrosoftIntune\NDESConnector\ConnectionStatus```</br>
 3. Close the command prompt.
 4. Open **Internet Explorer**.
 5. In the navigation bar, type</br>
@@ -636,7 +636,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 8. Click **Members**.  Use the  **Select members** pane to add members to this group. When finished click **Select**.
 9. Click **Create**.
 
-### Create a SCEP Certificte Profile
+### Create a SCEP Certificate Profile
 Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure Portal](https://portal.azure.com/).
@@ -656,15 +656,16 @@ Sign-in a workstation with access equivalent to a _domain user_.
 10. Select **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)** from the **Key storage provider (KSP)** list.
 11. Select **Custom** from the **Subject name format** list.
 12. Next to **Custom**, type **CN={{OnPrem_Distinguished_Name}}** to make the on-premises distinguished name the subject of the issued certificate.
-13. Refer to the "Configure Certificate Templates on NDES" task for how you configured the **AADJ WHFB Authentication** certificate template in the registry. Select the appropriate combination of key usages from the **Key Usages** list that map to configured NDES template in the registry. In this example, the **AADJ WHFB Authentication** certificate template was added to the **SignatureTemplate** registry value name.  The **Key usage** that maps to that registry value name is **Digital Signature**.
-14. Select a previously configured **Trusted certificate** profile that matches the root certificate of the issuing certificate authority.
+13. Specify **User Principal Name (UPN)** as a **Subject Alternative Name** value.
+14. Refer to the "Configure Certificate Templates on NDES" task for how you configured the **AADJ WHFB Authentication** certificate template in the registry. Select the appropriate combination of key usages from the **Key Usages** list that map to configured NDES template in the registry. In this example, the **AADJ WHFB Authentication** certificate template was added to the **SignatureTemplate** registry value name. The **Key usage** that maps to that registry value name is **Digital Signature**.
+15. Select a previously configured **Trusted certificate** profile that matches the root certificate of the issuing certificate authority.
     ![WHFB SCEP certificate profile Trusted Certificate selection](images/aadjcert/intunewhfbscepprofile-01.png)
-15. Under **Extended key usage**, type **Smart Card Logon** under <strong>Name. Type **1.3.6.1.4.1.311.20.2.2</strong> under **Object identifier**.  Click **Add**.
-16. Type a percentage (without the percent sign) next to **Renewal Threshold** to determine when the certificate should attempt to renew. The recommended value is **20**.
+16. Under **Extended key usage**, type **Smart Card Logon** under **Name**. Type **1.3.6.1.4.1.311.20.2.2** under **Object identifier**. Click **Add**.
+17. Type a percentage (without the percent sign) next to **Renewal Threshold** to determine when the certificate should attempt to renew. The recommended value is **20**.
     ![WHFB SCEP certificate Profile EKUs](images/aadjcert/intunewhfbscepprofile-03.png)
-17. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**.  For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll.  Click **Add**.  Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests amongst the URLs listed in the SCEP certificate profile.
-18. Click **OK**.
-19. Click **Create**.
+18. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**. For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll. Click **Add**. Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests among the URLs listed in the SCEP certificate profile.
+19. Click **OK**.
+20. Click **Create**.
 
 ### Assign Group to the WHFB Certificate Enrollment Certificate Profile
 Sign-in a workstation with access equivalent to a _domain user_.

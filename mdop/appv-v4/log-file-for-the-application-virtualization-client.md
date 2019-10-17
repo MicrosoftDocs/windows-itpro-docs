@@ -1,15 +1,15 @@
 ---
 title: Log File for the Application Virtualization Client
 description: Log File for the Application Virtualization Client
-author: eavena
+author: dansimp
 ms.assetid: ac4b3e4a-a220-4c06-bd60-af7dc318b3a9
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

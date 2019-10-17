@@ -67,4 +67,4 @@ The GPO for devices that are running at least Windows Server 2008 should includ
 
 -   If domain member devices must communicate with devices in the encryption zone, ensure that you include in the isolated domain GPOs quick mode combinations that are compatible with the requirements of the encryption zone GPOs.
 
-**Next: **[Planning Server Isolation Zones](planning-server-isolation-zones.md)
+**Next:** [Planning Server Isolation Zones](planning-server-isolation-zones.md)

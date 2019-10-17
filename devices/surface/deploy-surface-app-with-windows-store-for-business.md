@@ -54,7 +54,7 @@ Before users can install or deploy an app from a company’s Microsoft Store for
    ![Show offline licenses apps checkbox](images/deploysurfapp-figure1-enablingapps.png "Show offline licenses apps checkbox")<br/>
    *Figure 1. Enable apps for offline use*
 
-4.	Add Surface app to your Microsoft Store for Business account by following this procedure:
+4. Add Surface app to your Microsoft Store for Business account by following this procedure:
     * Click the **Shop** menu.
     * In the search box, type **Surface app**, and then click the search icon.
     * After the Surface app is presented in the search results, click the app’s icon.
@@ -99,21 +99,21 @@ Figure 5 shows the required frameworks for the Surface app.
 >The version numbers of the Surface app and required frameworks will change as the apps are updated. Check for the latest version of Surface app and each framework in Microsoft Store for Business. Always use the Surface app and recommended framework versions as provided by Microsoft Store for Business. Using outdated frameworks or the incorrect versions may result in errors or application crashes.
 
 To download the required frameworks for the Surface app, follow these steps:
-1.	Click the **Download** button under **Microsoft.VCLibs.140.00_14.0.23816.0_x64__8wekyb3d8bbwe**. This downloads the Microsoft.VCLibs.140.00_14.0.23816.0_x64__8wekyb3d8bbwe.Appx file to your specified folder.
-2.	Click the **Download** button under **Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe**. This downloads the Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe.Appx file to your specified folder.
+1. Click the **Download** button under **Microsoft.VCLibs.140.00_14.0.23816.0_x64__8wekyb3d8bbwe**. This downloads the Microsoft.VCLibs.140.00_14.0.23816.0_x64__8wekyb3d8bbwe.Appx file to your specified folder.
+2. Click the **Download** button under **Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe**. This downloads the Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe.Appx file to your specified folder.
 
 >[!NOTE]
 >Only the 64-bit (x64) version of each framework is required for Surface devices. Surface devices are native 64-bit UEFI devices and are not compatible with 32-bit (x86) versions of Windows that would require 32-bit frameworks. 
 
 ## Install Surface app on your computer with PowerShell
 The following procedure provisions the Surface app onto your computer and makes it available for any user accounts created on the computer afterwards.
-1.	Using the procedure described in the [How to download Surface app from a Microsoft Store for Business account](#download-surface-app-from-a-microsoft-store-for-business-account) section of this article, download the Surface app AppxBundle and license file. 
-2.	Begin an elevated PowerShell session.
+1. Using the procedure described in the [How to download Surface app from a Microsoft Store for Business account](#download-surface-app-from-a-microsoft-store-for-business-account) section of this article, download the Surface app AppxBundle and license file. 
+2. Begin an elevated PowerShell session.
 
     >[!NOTE]
     >If you don’t run PowerShell as an Administrator, the session won’t have the required permissions to install the app.
     
-3.	In the elevated PowerShell session, copy and paste the following command:
+3. In the elevated PowerShell session, copy and paste the following command:
     ```
     Add-AppxProvisionedPackage –Online –PackagePath <DownloadPath>\ Microsoft.SurfaceHub_10.0.342.0_neutral_~_8wekyb3d8bbwe.AppxBundle –LicensePath <DownloadPath>\ Microsoft.SurfaceHub_8wekyb3d8bbwe_a53ef8ab-9dbd-dec1-46c5-7b664d4dd003.xml
     ```
@@ -125,7 +125,7 @@ The following procedure provisions the Surface app onto your computer and makes 
     Add-AppxProvisionedPackage –Online –PackagePath c:\Temp\ Microsoft.SurfaceHub_10.0.342.0_neutral_~_8wekyb3d8bbwe.AppxBundle –LicensePath c:\Temp\ Microsoft.SurfaceHub_8wekyb3d8bbwe_a53ef8ab-9dbd-dec1-46c5-7b664d4dd003.xml
     ```
 
-4.	The Surface app will now be available on your current Windows computer. 
+4. The Surface app will now be available on your current Windows computer. 
 
 Before the Surface app is functional on the computer where it has been provisioned, you must also provision the frameworks described earlier in this article. To provision these frameworks, use the following procedure in the elevated PowerShell session you used to provision the Surface app.
 
@@ -151,18 +151,18 @@ The following procedure uses MDT to automate installation of the Surface app at 
    * Working Directory: %DEPLOYROOT%\Applications\SurfaceApp
 
 For the Surface app to function on the target computer, it will also require the frameworks described earlier in this article. Use the following procedure to import the frameworks required for the Surface app into MDT and to configure them as dependencies.
-1.	Using the procedure described earlier in this article, download the framework files. Store each framework in a separate folder.
-2.	Using the New Application Wizard in the MDT Deployment Workbench, import the downloaded files as a new **Application with source files**.
-3.	On the **Command Details** page, type the file name of each application you downloaded in the **Command** field and the default Working Directory.
+1. Using the procedure described earlier in this article, download the framework files. Store each framework in a separate folder.
+2. Using the New Application Wizard in the MDT Deployment Workbench, import the downloaded files as a new **Application with source files**.
+3. On the **Command Details** page, type the file name of each application you downloaded in the **Command** field and the default Working Directory.
 
 To configure the frameworks as dependencies of the Surface app, use this process:
-1.	Open the properties of the Surface app in the MDT Deployment Workbench.
-2.	Click the **Dependencies** tab, and then click **Add**.
-3.	Select the check box for each framework using the name you provided in the New Application Wizard.
+1. Open the properties of the Surface app in the MDT Deployment Workbench.
+2. Click the **Dependencies** tab, and then click **Add**.
+3. Select the check box for each framework using the name you provided in the New Application Wizard.
 
 After import, the Surface app will be available for selection in the **Applications** step of the Windows Deployment Wizard. You can also install the application automatically by specifying the application in the deployment task sequence by following this process:
-1.	Open your deployment task sequence in the MDT Deployment Workbench.
-2.	Add a new **Install Application** task in the **State Restore** section of deployment.
-3.	Select **Install a single application** and specify the **Surface App** as the **Application to be installed**.
+1. Open your deployment task sequence in the MDT Deployment Workbench.
+2. Add a new **Install Application** task in the **State Restore** section of deployment.
+3. Select **Install a single application** and specify the **Surface App** as the **Application to be installed**.
 
 For more information about including apps into your Windows deployments, see [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit).

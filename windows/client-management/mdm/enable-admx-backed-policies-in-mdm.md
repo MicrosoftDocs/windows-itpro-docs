@@ -19,20 +19,23 @@ This is a step-by-step guide to configuring ADMX-backed policies in MDM.
 Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of select Group Policy administrative templates (ADMX-backed policies) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX-backed policies in Policy CSP is different from the typical way you configure a traditional MDM policy. 
 
 Summary of steps to enable a policy:
--	Find the policy from the list ADMX-backed policies. 
--	Find the Group Policy related information from the MDM policy description.
--	Use the Group Policy Editor to determine whether there are parameters necessary to enable the policy.
--	Create the data payload for the SyncML.
+- Find the policy from the list ADMX-backed policies. 
+- Find the Group Policy related information from the MDM policy description.
+- Use the Group Policy Editor to determine whether there are parameters necessary to enable the policy.
+- Create the data payload for the SyncML.
 
-See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Ingesting-Office-ADMX-Backed-policies-using/ba-p/354824) for a walk-through using Intune.
+See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Ingesting-Office-ADMX-Backed-policies-using/ba-p/354824) and [Deploying ADMX-Backed policies using Microsoft Intune](https://blogs.technet.microsoft.com/senthilkumar/2018/05/21/intune-deploying-admx-backed-policies-using-microsoft-intune/) for a walk-through using Intune.
 
 >[!TIP]
 >Intune has added a number of ADMX-backed administrative templates in public preview. Check if the policy settings you need are available in a template before using the SyncML method described below. [Learn more about Intune's administrative templates.](https://docs.microsoft.com/intune/administrative-templates-windows)
 
 ## Enable a policy
 
+> [!NOTE]
+> See [Understanding ADMX-backed policies](https://docs.microsoft.com/en-us/windows/client-management/mdm/understanding-admx-backed-policies).
+
 1.  Find the policy from the list [ADMX-backed policies](policy-configuration-service-provider.md#admx-backed-policies). You need the following information listed in the policy description.  
-	- GP English name
+    - GP English name
     - GP name
     - GP ADMX file name
     - GP path
@@ -64,7 +67,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 > [!NOTE]
 > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
      
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
@@ -114,7 +117,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
     
       Here is the snippet from appv.admx:
 
-      ``` syntax
+      ```xml
       <!--  Publishing Server 2  -->
       <policy name="Publishing_Server2_Policy" class="Machine" displayName="$(string.PublishingServer2)" 
           explainText="$(string.Publishing_Server_Help)" presentation="$(presentation.Publishing_Server2)" 
@@ -206,7 +209,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
       Here is the example XML for Publishing_Server2_Policy :
         
-      ``` syntax
+      ```xml
       <data id="Publishing_Server2_Name_Prompt" value="Name"/>
       <data id="Publishing_Server_URL_Prompt" value="http://someuri"/>
       <data id="Global_Publishing_Refresh_Options" value="1"/>
@@ -226,7 +229,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 > [!NOTE]
 > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
     
-    ``` syntax
+    ```xml
     <?xml version="1.0" encoding="utf-8"?>
        <SyncML xmlns="SYNCML:SYNCML1.2">
          <SyncBody>
@@ -264,7 +267,7 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
 The \<Data> payload is \<disabled/>. Here is an example to disable AppVirtualization/PublishingAllowServer2.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>

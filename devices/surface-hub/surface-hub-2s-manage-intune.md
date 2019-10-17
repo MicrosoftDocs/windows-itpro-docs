@@ -6,10 +6,11 @@ ms.prod: surface-hub
 ms.sitesec: library
 author: robmazz
 ms.author: robmazz
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
 # Manage Surface Hub 2S with Intune
@@ -35,11 +36,11 @@ Select Windows 10 Team for preset device restriction settings for Surface Hub an
 
  ![Set device restrictions for Surface Hub 2S.](images/sh2-set-intune3.png) <br>
 
-These settings include user experience and app behavior, Azure Log Analytics registration, Maintenance windows configuration, Session settings, and Miracast settings. For a complete list of configuration service providers (CSPs) for the Windows 10 Team operating system, see [Surface Hub CSPs in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
+These settings include user experience and app behavior, Azure Log Analytics registration, Maintenance windows configuration, Session settings, and Miracast settings. For a complete list of available Windows 10 Team settings, see [SurfaceHub CSP](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp).
 
-## Additional supported configuration service providers
+## Additional supported configuration service providers (CSPs)
 
-For additional supported CSPs, see [SurfaceHub CSP](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsuppor).
+For additional supported CSPs, see [Surface Hub CSPs in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport).
 
 ## Quality of Service (QoS) settings
 
@@ -47,9 +48,9 @@ To ensure optimal video and audio quality on Surface Hub 2S, add the following Q
 
 |**Name**|**Description**|**OMA-URI**|**Type**|**Value**|
 |:------ |:------------- |:--------- |:------ |:------- |
-|**Audio Ports**| Audio Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition | String  | 50000–50019 |
+|**Audio Ports**| Audio Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/SourcePortMatchCondition | String  | 50000-50019 |
 |**Audio DSCP**| Audio ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubAudio/DSCPAction | Integer | 46 |
-|**Video Ports**| Video Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition | String  | 50020–50039 |
+|**Video Ports**| Video Port range | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/SourcePortMatchCondition | String  | 50020-50039 |
 |**Video DSCP**| Video ports marking | ./Device/Vendor/MSFT/NetworkQoSPolicy/HubVideo/DSCPAction | Integer | 34 |
 
 > [!NOTE]

@@ -1,15 +1,15 @@
 ---
 title: Planning to Deploy MBAM with Configuration Manager
 description: Planning to Deploy MBAM with Configuration Manager
-author: msfttracyp
+author: dansimp
 ms.assetid: fb768306-48c2-40b4-ac4e-c279db987391
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

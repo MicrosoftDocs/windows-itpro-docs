@@ -70,7 +70,7 @@ Supported operation is Get.
 
 The following is a Get command example.
 
-``` syntax
+```xml
 <Get>
    <CmdID>12</CmdID>
    <Item>
@@ -173,7 +173,7 @@ To work around the timeout, you can use this setting to keep the session alive b
 
 Here is an example of DM message sent by the device when it is in pending state:
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncHdr>
 <VerDTD>1.2</VerDTD>
@@ -229,7 +229,7 @@ Added in Windows 10, version 1607. The list of management server URLs in the fo
 
  
 
-``` syntax
+```xml
    <Replace>
        <CmdID>101</CmdID>
        <Item>
@@ -770,7 +770,7 @@ Note that &lt;LocURI&gt;./Vendor/MSFT/DMClient/Unenroll&lt;/LocURI&gt; is suppor
 
 The following SyncML shows how to remotely unenroll the device. Note that this command should be inserted in the general DM packages sent from the server to the device.
 
-``` syntax
+```xml
     <Exec>
        <CmdID>2</CmdID>
        <Item>

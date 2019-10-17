@@ -1,15 +1,15 @@
 ---
 title: Planning Your Streaming Solution in an Application Virtualization Server-Based Implementation
 description: Planning Your Streaming Solution in an Application Virtualization Server-Based Implementation
-author: eavena
+author: dansimp
 ms.assetid: 3a57306e-5c54-4fde-8593-fe3b788f18d3
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

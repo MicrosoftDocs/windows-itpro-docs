@@ -1,15 +1,15 @@
 ---
 title: How to Install and Configure MBAM on Distributed Servers
 description: How to Install and Configure MBAM on Distributed Servers
-author: msfttracyp
+author: dansimp
 ms.assetid: 9ee766aa-6339-422a-8d00-4f58e4646a5e
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

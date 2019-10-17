@@ -1,11 +1,11 @@
 ---
 title: Delegate Domain-Level Access
 description: Delegate Domain-Level Access
-author: mjcaparas
+author: dansimp
 ms.assetid: 64c8e773-38cc-4991-9ed2-5a801094d06e
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

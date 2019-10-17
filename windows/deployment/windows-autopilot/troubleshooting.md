@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -26,20 +26,20 @@ Windows Autopilot is designed to simplify all parts of the Windows device lifecy
 
 Regardless of whether performing user-driven or self-deploying device deployments, the troubleshooting process is the mostly the same.  It is useful to understand the flow for a specific device:
 
--   Network connection established.  This can be a wireless (Wi-fi) or wired (Ethernet) connection.
--   Windows Autopilot profile downloaded.  Whether using a wired connection or manually establishing a wireless connection, the Windows Autopilot profile will be downloaded from the Autopilot deployment service as soon as the network connection is in place.
--   User authentication.  When performing a user-driven deployment, the user will enter their Azure Active Directory credentials, which will be validated.
--   Azure Active Directory join.  For user-driven deployments, the device will be joined to Azure AD using the specified user credentials.  For self-deploying scenarios, the device will be joined without specifying any user credentials.
--   Automatic MDM enrollment.  As part of the Azure AD join process, the device will enroll in the MDM service configured in Azure AD (e.g. Microsoft Intune).
--   Settings are applied.  If the [enrollment status page](enrollment-status.md) is configured, most settings will be applied while the enrollment status page is displayed.  If not configured or available, settings will be applied after the user is signed in.
+- Network connection established.  This can be a wireless (Wi-fi) or wired (Ethernet) connection.
+- Windows Autopilot profile downloaded.  Whether using a wired connection or manually establishing a wireless connection, the Windows Autopilot profile will be downloaded from the Autopilot deployment service as soon as the network connection is in place.
+- User authentication.  When performing a user-driven deployment, the user will enter their Azure Active Directory credentials, which will be validated.
+- Azure Active Directory join.  For user-driven deployments, the device will be joined to Azure AD using the specified user credentials.  For self-deploying scenarios, the device will be joined without specifying any user credentials.
+- Automatic MDM enrollment.  As part of the Azure AD join process, the device will enroll in the MDM service configured in Azure AD (e.g. Microsoft Intune).
+- Settings are applied.  If the [enrollment status page](enrollment-status.md) is configured, most settings will be applied while the enrollment status page is displayed.  If not configured or available, settings will be applied after the user is signed in.
 
 For troubleshooting, key activities to perform are:
 
--   Configuration.  Has Azure Active Directory and Microsoft Intune (or an equivalent MDM service) been configured as specified in [Windows Autopilot configuration requirements](windows-autopilot-requirements.md)?
--   Network connectivity.  Can the device access the services described in [Windows Autopilot networking requirements](windows-autopilot-requirements.md)?
--   Autopilot OOBE behavior.  Were only the expected out-of-box experience screens displayed?  Was the Azure AD credentials page customized with organization-specific details as expected?
--   Azure AD join issues.  Was the device able to join Azure Active Directory?
--   MDM enrollment issues.  Was the device able to enroll in Microsoft Intune (or an equivalent MDM service)?
+- Configuration.  Has Azure Active Directory and Microsoft Intune (or an equivalent MDM service) been configured as specified in [Windows Autopilot configuration requirements](windows-autopilot-requirements.md)?
+- Network connectivity.  Can the device access the services described in [Windows Autopilot networking requirements](windows-autopilot-requirements.md)?
+- Autopilot OOBE behavior.  Were only the expected out-of-box experience screens displayed?  Was the Azure AD credentials page customized with organization-specific details as expected?
+- Azure AD join issues.  Was the device able to join Azure Active Directory?
+- MDM enrollment issues.  Was the device able to enroll in Microsoft Intune (or an equivalent MDM service)?
 
 ## Troubleshooting Autopilot OOBE issues
 
@@ -109,8 +109,13 @@ When a profile is downloaded depends on the version of Windows 10 that is runnin
 | 1803 | The profile is downloaded as soon as possible.  If wired, it is downloaded at the start of OOBE. If wireless, it is downloaded after the network connection page. |
 | 1809 | The profile is downloaded as soon as possible (same as 1803), and again after each reboot. |
 
-If you need to reboot a computer during OOBE: 
+If you need to reboot a computer during OOBE:
 - Press Shift-F10 to open a command prompt.
 - Enter **shutdown /r /t 0** to restart immediately, or **shutdown /s /t 0** to shutdown immediately.
 
 For more information, see [Windows Setup Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options).
+
+## Related topics
+
+[Windows Autopilot - known issues](known-issues.md)<br>
+[Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)<br>

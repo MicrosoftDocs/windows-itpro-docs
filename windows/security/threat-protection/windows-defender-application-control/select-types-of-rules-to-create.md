@@ -36,13 +36,13 @@ To modify the policy rule options of an existing WDAC policy, use [Set-RuleOptio
 
 -   To ensure that UMCI is enabled for a WDAC policy that was created with the `-UserPEs` (user mode) option, add rule option 0 to an existing policy by running the following command:
 
-    ` Set-RuleOption -FilePath <Path to policy> -Option 0`
+    `Set-RuleOption -FilePath <Path to policy> -Option 0`
 
     Note that a policy that was created without the `-UserPEs` option is empty of user mode executables, that is, applications. If you enable UMCI (Option 0) for such a policy and then attempt to run an application, Windows Defender Application Control will see that the application is not on its list (which is empty of applications), and respond. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. To create a policy that includes user mode executables (applications), when you run `New-CIPolicy`, include the `-UserPEs` option. 
 
 -   To disable UMCI on an existing WDAC policy, delete rule option 0 by running the following command:
 
-    ` Set-RuleOption -FilePath <Path to policy> -Option 0 -Delete`
+    `Set-RuleOption -FilePath <Path to policy> -Option 0 -Delete`
 
 You can set several rule options within a WDAC policy. Table 2 describes each rule option. 
 
@@ -110,16 +110,19 @@ They could also choose to create a catalog that captures information about the u
 ## Create path-based rules 
 
 Beginning with Windows 10 version 1903, Windows Defender Application Control (WDAC) policies can contain path-based rules.
+> [!NOTE]
+> Due to an existing bug, you can not combine Path-based ALLOW rules with any DENY rules in a single policy. Instead, either separate DENY rules into a separate Base policy or move the Path-based ALLOW rules into a supplemental policy as described in [Deploy multiple WDAC policies.](deploy-multiple-windows-defender-application-control-policies.md)
 
-- New-CIPolicy parameters
+- New-CIPolicy parameter
   - FilePath: create path rules under path \<path to scan> for anything not user-writeable (at the individual file level)
 
     ```powershell
-    New-CIPolicy -f .\mypolicy.xml -l FilePath -s <path to scan> -u
+    New-CIPolicy -FilePath .\mypolicy.xml -Level FileName -ScanPath <path to scan> -UserPEs
     ```
 
     Optionally, add -UserWriteablePaths to ignore user writeability
-
+    
+- New-CIPolicyRule parameter
   - FilePathRule: create a rule where filepath string is directly set to value of \<any path string>
 
     ```powershell
@@ -134,7 +137,7 @@ Beginning with Windows 10 version 1903, Windows Defender Application Control (WD
   $rules = New-CIPolicyRule …
   $rules += New-CIPolicyRule …
   …
-  New-CIPolicyRule -f .\mypolicy.xml -u
+  New-CIPolicy -FilePath .\mypolicy.xml -Rules $rules -UserPEs
   ```
 
 - Wildcards supported
@@ -149,6 +152,6 @@ Beginning with Windows 10 version 1903, Windows Defender Application Control (WD
 - Disable default FilePath rule protection of enforcing user-writeability. For example, to add “Disabled:Runtime FilePath Rule Protection” to the policy:
 
   ```powershell
-  Set-RuleOption -o 18 .\policy.xml
+  Set-RuleOption -Option 18 .\policy.xml
   ```
 

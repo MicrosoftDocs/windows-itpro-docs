@@ -4,7 +4,7 @@ description: Learn about an approach to collect events from devices in your orga
 ms.assetid: 733263E5-7FD1-45D2-914A-184B9E3E6A3F
 ms.reviewer: 
 manager: dansimp
-ms.author: dolmont
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -413,7 +413,7 @@ Here are the minimum steps for WEF to operate:
 
 ## <a href="" id="bkmk-appendixe"></a>Appendix E – Annotated baseline subscription event query
 
-``` syntax
+```xml
 <QueryList>
   <Query Id="0" Path="System">
     <!-- Anti-malware *old* events, but only detect events (cuts down noise) -->
@@ -578,8 +578,7 @@ Here are the minimum steps for WEF to operate:
 
 ## <a href="" id="bkmk-appendixf"></a>Appendix F – Annotated Suspect Subscription Event Query
 
-``` syntax
-
+```xml
 <QueryList>
   <Query Id="0" Path="Security">
     <!-- Network logon events-->

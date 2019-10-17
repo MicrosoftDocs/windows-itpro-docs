@@ -3,7 +3,7 @@ author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.prod: edge
 ms.topic: include
 ---
@@ -20,7 +20,7 @@ ms.topic: include
 |---------------------------------|:-----:|:--------:|---------------------------------------------------------------------------------------------------------|:------------------------------------------------:|
 | Not configured<br>**(default)** | Blank |  Blank   | Do not send tracking information but let users choose to send tracking information to sites they visit. |                                                  |
 |            Disabled             |   0   |    0     |                                    Never send tracking information.                                     |                                                  |
-|             Enabled             |   1   |    1     |                                       Send tracking information.                                        | ![Most restricted value](/images/check-gn.png) |
+|             Enabled             |   1   |    1     |                                       Send tracking information.                                        | ![Most restricted value](../images/check-gn.png) |
 
 ---
 

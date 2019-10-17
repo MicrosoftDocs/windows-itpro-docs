@@ -4,6 +4,7 @@ description: Learn how to manually deploy feature updates
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.localizationpriority: medium
 ms.author: greglin
@@ -69,6 +70,7 @@ foreach ($k in $iniSetupConfigKeyValuePair.Keys)
 #Write content to file 
 New-Item $iniFilePath -ItemType File -Value $iniSetupConfigContent -Force
 
+<#
 Disclaimer 
 Sample scripts are not supported under any Microsoft standard support program or service. The sample scripts is 
 provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without 
@@ -78,6 +80,7 @@ Microsoft, its authors, or anyone else involved in the creation, production, or 
 for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, 
 loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample script 
 or documentation, even if Microsoft has been advised of the possibility of such damages.
+#>
 ```
 
 >[!NOTE]
@@ -150,10 +153,10 @@ Before you deploy the feature updates, you can download the content as a separat
 9. On the **Completion** page, verify that the software updates were successfully downloaded, and then click **Close**. 
 
 #### To monitor content status
-1.	To monitor the content status for the feature updates, click **Monitoring** in the Configuration Manager console. 
-2.	In the Monitoring workspace, expand **Distribution Status**, and then click **Content Status**. 
-3.	Select the feature update package that you previously identified to download the feature updates. 
-4.	On the **Home** tab, in the Content group, click **View Status**.
+1. To monitor the content status for the feature updates, click **Monitoring** in the Configuration Manager console. 
+2. In the Monitoring workspace, expand **Distribution Status**, and then click **Content Status**. 
+3. Select the feature update package that you previously identified to download the feature updates. 
+4. On the **Home** tab, in the Content group, click **View Status**.
 
 ### Step 3: Deploy the feature update(s) 
 After you determine which feature updates you intend to deploy, you can manually deploy the feature update(s). Use the following procedure to manually deploy the feature update(s). 
@@ -228,12 +231,12 @@ After you determine which feature updates you intend to deploy, you can manually
 
      >[!NOTE]
      >Clients request the content location from a management point for the software updates in a deployment. The download behavior depends upon how you have configured the distribution point, the deployment package, and the settings on this page. For more information, see [Content source location scenarios](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/content-source-location-scenarios). 
-10.	On the Summary page, review the settings. To save the settings to a deployment template, click **Save As Template**, enter a name and select the settings that you want to include in the template, and then click **Save**. To change a configured setting, click the associated wizard page and change the setting. 
-11.	Click **Next** to deploy the feature update(s). 
+10. On the Summary page, review the settings. To save the settings to a deployment template, click **Save As Template**, enter a name and select the settings that you want to include in the template, and then click **Save**. To change a configured setting, click the associated wizard page and change the setting. 
+11. Click **Next** to deploy the feature update(s). 
 
 ### Step 4: Monitor the deployment status
 After you deploy the feature update(s), you can monitor the deployment status. Use the following procedure to monitor the deployment status:
 
-1.	In the Configuration Manager console, navigate to **Monitoring > Overview > Deployments**. 
-2.	Click the software update group or software update for which you want to monitor the deployment status. 
-3.	On the **Home** tab, in the **Deployment** group, click **View Status**. 
+1. In the Configuration Manager console, navigate to **Monitoring > Overview > Deployments**. 
+2. Click the software update group or software update for which you want to monitor the deployment status. 
+3. On the **Home** tab, in the **Deployment** group, click **View Status**. 

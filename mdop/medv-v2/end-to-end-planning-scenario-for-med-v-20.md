@@ -1,15 +1,15 @@
 ---
 title: End-to-End Planning Scenario for MED-V 2.0
 description: End-to-End Planning Scenario for MED-V 2.0
-author: levinec
+author: dansimp
 ms.assetid: e7833883-be93-4b42-9fa3-5c4d9a919058
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

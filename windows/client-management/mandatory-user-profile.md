@@ -38,11 +38,11 @@ The name of the folder in which you store the mandatory profile must use the cor
 | Client operating system version | Server operating system version | Profile extension |
 | --- | --- | --- |
 | Windows XP | Windows Server 2003 </br>Windows Server 2003 R2 | none |
-| Windows Vista</br>Windows 7 | Windows Server 2008</br>Windows Server 2008 R2 | v2 |
+| Windows Vista</br>Windows 7 | Windows Server 2008 </br>Windows Server 2008 R2 | v2 |
 | Windows 8 | Windows Server 2012 | v3 |
 | Windows 8.1 | Windows Server 2012 R2 | v4 |
 | Windows 10, versions 1507 and 1511 | N/A | v5 |
-| Windows 10, versions 1607, 1703, 1709, 1803, and 1809 |  Windows Server 2016 | v6 |
+| Windows 10, versions 1607, 1703, 1709, 1803, 1809 and 1903 |  Windows Server 2016 and Windows Server 2019 | v6 |
 
 For more information, see [Deploy Roaming User Profiles, Appendix B](https://technet.microsoft.com/library/jj649079.aspx) and [Roaming user profiles versioning in Windows 10 and Windows Server Technical Preview](https://support.microsoft.com/kb/3056198).
 
@@ -67,10 +67,8 @@ First, you create a default user profile with the customizations that you want, 
 3. Uninstall any application you do not need or want from the PC. For examples on how to uninstall Windows 10 Application see [Remove-AppxProvisionedPackage](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage?view=winserver2012-ps). For a list of uninstallable applications, see [Understand the different apps included in Windows 10](https://docs.microsoft.com/windows/application-management/apps-in-windows-10).
 
 
-~~~
  >[!NOTE]
  >It is highly recommended to uninstall unwanted or unneeded apps as it will speed up user sign-in times.
-~~~
 
 3. At a command prompt, type the following command and press **ENTER**.
 
@@ -150,6 +148,8 @@ When a user is configured with a mandatory profile, Windows 10 starts as though 
 | Computer Configuration > Administrative Templates > Windows Components > Search > **Allow Cortana** = Disabled | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) | ![not supported](images/crossmark.png)  | ![not supported](images/crossmark.png)  |
 | Computer Configuration > Administrative Templates > Windows Components > Cloud Content > **Turn off Microsoft consumer experience** = Enabled | ![supported](images/checkmark.png) | ![not supported](images/crossmark.png) | ![not supported](images/crossmark.png) | ![not supported](images/crossmark.png) |
 
+> [!Note]
+> The Group Policy settings above can be applied in Windows 10 Professional edition.
 
 
 

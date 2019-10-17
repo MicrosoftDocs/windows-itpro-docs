@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Run the Automatically Generate Rules wizard
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes steps to run the wizard to create AppLocker rules on a reference device.
 

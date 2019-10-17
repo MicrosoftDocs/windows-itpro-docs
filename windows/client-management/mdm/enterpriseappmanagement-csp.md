@@ -209,7 +209,7 @@ The Microsoft Store application has a GUID of d5dc1ebb-a7f1-df11-9264-00237de2db
 
 Use the following SyncML format to query to see if the application is installed on a managed device:
 
-``` syntax
+```xml
 <Get>
       <CmdID>1</CmdID>
       <Item>
@@ -222,7 +222,7 @@ Use the following SyncML format to query to see if the application is installed 
 
 Response from the device (it contains list of subnodes if this app is installed in the device).
 
-``` syntax
+```xml
 <Results>
    <CmdID>3</CmdID>
    <MsgRef>1</MsgRef>
@@ -266,7 +266,7 @@ The value actually applied to the device can be queried via the nodes under the 
 
 Enroll enterprise ID “4000000001” for the first time:
 
-``` syntax
+```xml
 <Add>
    <CmdID>2</CmdID>
    <Item>
@@ -293,7 +293,7 @@ Enroll enterprise ID “4000000001” for the first time:
 
 Update the enrollment token (for example, to update an expired application enrollment token):
 
-``` syntax
+```xml
 <Replace>
    <CmdID>2</CmdID>
    <Item>
@@ -310,7 +310,7 @@ Update the enrollment token (for example, to update an expired application enrol
 
 Query all installed applications that belong to enterprise id “4000000001”:
 
-``` syntax
+```xml
 <Get>
    <CmdID>2</CmdID>
    <Item>
@@ -325,7 +325,7 @@ Query all installed applications that belong to enterprise id “4000000001”:
 
 Response from the device (that contains two installed applications):
 
-``` syntax
+```xml
 <Results>
    <CmdID>3</CmdID>
    <MsgRef>1</MsgRef>
@@ -444,7 +444,7 @@ To perform an XAP update, create the Name, URL, Version, and DownloadInstall nod
 
  
 
-``` syntax
+```xml
 <Atomic>
    <CmdID>2</CmdID>
    <!-- The Add command can be used if the download node does not have a matching product ID
@@ -514,7 +514,7 @@ To perform an XAP update, create the Name, URL, Version, and DownloadInstall nod
 
 Uninstall an installed enterprise application with product ID “{7BB316008A-141D-4A79-810F-8B764C4CFDFB }”:
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Delete>

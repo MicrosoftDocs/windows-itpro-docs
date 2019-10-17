@@ -1,15 +1,15 @@
 ---
 title: How to Upgrade a Virtual Application by Using the Command Line
 description: How to Upgrade a Virtual Application by Using the Command Line
-author: eavena
+author: dansimp
 ms.assetid: 83c97767-6ea1-42aa-b411-ccc9fa61cf81
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

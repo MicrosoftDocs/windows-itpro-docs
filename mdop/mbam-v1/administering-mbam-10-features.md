@@ -1,15 +1,15 @@
 ---
 title: Administering MBAM 1.0 Features
 description: Administering MBAM 1.0 Features
-author: msfttracyp
+author: dansimp
 ms.assetid: dd9a9eff-f1ad-4af3-85d9-c19131a4ad22
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

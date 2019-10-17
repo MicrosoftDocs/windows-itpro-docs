@@ -15,19 +15,47 @@ ms.topic: article
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## October 2019
+
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+| [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)| New document highlighting key considerations for deploying, managing, and servicing Surface Pro X.|
+
+## September 2019
+
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+| [Surface Dock Firmware Update](surface-dock-firmware-update.md)| New document for Microsoft Surface Dock Firmware Update, newly redesigned to update Surface Dock firmware while running in the background on your Surface device.|
+
+## August 2019
+
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+| [Optimizing wireless connectivity for Surface devices](surface-wireless-connect.md)             | New document highlights key wireless connectivity considerations for Surface devices in mobile scenarios. |
+| [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)              | Updated to reflect minor changes in the file naming convention for Surface MSI files. |
+
+
+## July 2019
+
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+| [Deploy Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md)              | Renamed to reflect focus on deployment guidance for IT professionals. Covers minor changes in Version 2.41.139.0.   |
+
+
+
 ## June 2019
 
-New or changed topic | Description
---- | ---
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+|[Fix common Surface problems using the Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-for-business-intro.md)             | New introductory page for the Surface Diagnostic Toolkit for Business.  |
+| [Best practice power settings for Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)               |Updated with summary of recommendations for managing power settings and optimizing battery life.   |
 
-[Fix common Surface problems using the Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-for-business-intro.md) | New
 
 ## March 2019
 
-New or changed topic | Description
---- | ---
-
-[Surface System SKU reference](surface-system-sku-reference.md) | New
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+| [Surface System SKU reference](surface-system-sku-reference.md) | New    |
 
 
 ## February 2019
@@ -73,7 +101,6 @@ New or changed topic | Description
 
 |New or changed topic | Description |
 | --- | --- |
-|[Surface Dock Updater](surface-dock-updater.md) | Added version 2.12.136.0 information  |
 |[Microsoft Surface Data Eraser](microsoft-surface-data-eraser.md) | Added version 3.2.46.0 information  |
 
 ## January 2018
@@ -90,12 +117,6 @@ New or changed topic | Description
 |New or changed topic | Description |
 | --- | --- |
 |[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Book 2, Surface Laptop, Surface Pro, and Surface Pro with LTE Advanced information  |
-
-## November 2017
-
-|New or changed topic | Description |
-| --- | --- |
-|[Surface Dock Updater](surface-dock-updater.md) | Added version 2.7.136.0 information  |
 
 ## October 2017
 
@@ -115,7 +136,6 @@ New or changed topic | Description
 | --- | --- |
 |[Surface Data Eraser](microsoft-surface-data-eraser.md) | Update compatible devices, added version 3.2.36 information  |
 |[Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md) | Added version 2.0.8.0 information  |
-|[Surface Dock Updater](surface-dock-updater.md) | Added version 2.1.15.0 information  |
 
 
 ## April 2017

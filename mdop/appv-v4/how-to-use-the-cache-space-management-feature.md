@@ -1,15 +1,15 @@
 ---
 title: How to Use the Cache Space Management Feature
 description: How to Use the Cache Space Management Feature
-author: eavena
+author: dansimp
 ms.assetid: 60965660-c015-46a8-88ac-54cbc050fe33
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

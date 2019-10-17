@@ -36,6 +36,7 @@ Compatible Surface devices include:
 * Surface Pro (Model 1796)
 * Surface Laptop
 * Surface Studio
+* Surface Studio 2
 * Surface Book
 * Surface Pro 4
 * Surface 3 LTE
@@ -68,7 +69,7 @@ Some scenarios where Microsoft Surface Data Eraser can be helpful include:
 
 To create a Microsoft Surface Data Eraser USB stick, first install the Microsoft Surface Data Eraser setup tool from the Microsoft Download Center using the link provided at the beginning of this article. You do not need a Surface device to *create* the USB stick. After you have downloaded the installation file to your computer, follow these steps to install the Microsoft Surface Data Eraser creation tool:
 
-1.  Run the DataEraserSetup.msi installation file that you downloaded from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=46703).
+1.  Run the DataEraserSetup.msi installation file that you downloaded from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=46703).
 
 2.  Select the check box to accept the terms of the license agreement, and then click **Install**.
 

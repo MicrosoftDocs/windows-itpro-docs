@@ -1,15 +1,15 @@
 ---
 title: Planning for MBAM 2.0 Group Policy Requirements
 description: Planning for MBAM 2.0 Group Policy Requirements
-author: msfttracyp
+author: dansimp
 ms.assetid: f5e19dcb-eb15-4722-bb71-0734b3799eb8
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -142,7 +142,7 @@ This section describes Client Management policy definitions for Microsoft BitLoc
 
 
 
-##  Fixed Drive Policy Definitions
+## Fixed Drive Policy Definitions
 
 
 This section describes Fixed Drive policy definitions for Microsoft BitLocker Administration and Monitoring found at the following GPO node: **Computer Configuration**\\**Policies**\\**Administrative Templates**\\**Windows Components**\\**MDOP MBAM (BitLocker Management)**\\**Fixed Drive**.

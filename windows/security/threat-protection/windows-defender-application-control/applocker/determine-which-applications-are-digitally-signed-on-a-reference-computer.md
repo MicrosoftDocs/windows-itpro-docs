@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Determine which apps are digitally signed on a reference device
 
 **Applies to**
- -   Windows 10
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for the IT professional describes how to use AppLocker logs and tools to determine which applications are digitally signed.
 

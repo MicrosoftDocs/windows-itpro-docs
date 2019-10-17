@@ -27,7 +27,7 @@ ms.date: 10/23/2017
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-fixsensor-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
 Machines that are categorized as misconfigured or inactive can be flagged due to varying causes. This section provides some explanations as to what might have caused a machine to be categorized as inactive or misconfigured.
 
@@ -53,8 +53,8 @@ Do you expect a machine to be in ‘Active’ status? [Open a support ticket](ht
 
 ## Misconfigured machines
 Misconfigured machines can further be classified to:
-  - Impaired communications
-  - No sensor data
+- Impaired communications
+- No sensor data
 
 ### Impaired communications
 This status indicates that there's limited communication between the machine and the service.

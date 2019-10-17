@@ -77,13 +77,13 @@ Use the following procedure after you have been running a computer with a WDAC p
 
 2. In an elevated Windows PowerShell session, initialize the variables that will be used. The example filename shown here is **DeviceGuardAuditPolicy.xml**:
 
-   ` $CIPolicyPath=$env:userprofile+"\Desktop\"`
+   `$CIPolicyPath=$env:userprofile+"\Desktop\"`
 
-   ` $CIAuditPolicy=$CIPolicyPath+"DeviceGuardAuditPolicy.xml"`
+   `$CIAuditPolicy=$CIPolicyPath+"DeviceGuardAuditPolicy.xml"`
 
 3. Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) to generate a new WDAC policy from logged audit events. This example uses a file rule level of **Hash** and includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
-   ` New-CIPolicy -Audit -Level Hash -FilePath $CIAuditPolicy –UserPEs 3> CIPolicylog.txt`
+   `New-CIPolicy -Audit -Level Hash -FilePath $CIAuditPolicy –UserPEs 3> CIPolicylog.txt`
 
    > [!NOTE]
    > When you create policies from audit events, you should carefully consider the file rule level that you select to trust. The preceding example uses the **Hash** rule level, which is the most specific. Any change to the file (such as replacing the file with a newer version of the same file) will change the Hash value, and require an update to the policy.

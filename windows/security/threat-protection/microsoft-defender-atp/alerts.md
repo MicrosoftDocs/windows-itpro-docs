@@ -39,21 +39,21 @@ Method|Return Type |Description
 Property |	Type	|	Description
 :---|:---|:---
 id | String | Alert ID.
-incidentId | String | The [Incident](incidents-queue.md) ID of the Alert. 
+incidentId | String | The [Incident](view-incidents-queue.md) ID of the Alert. 
 assignedTo | String | Owner of the alert.
 severity | Enum | Severity of the alert. Possible values are: 'UnSpecified', 'Informational', 'Low', 'Medium' and 'High'.
 status | Enum | Specifies the current status of the alert. Possible values are: 'Unknown', 'New', 'InProgress' and 'Resolved'.
 investigationState | Nullable Enum | The current state of the investigation. Possible values are: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign Failed PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert' .
 classification | Nullable Enum | Specification of the alert. Possible values are: 'Unknown', 'FalsePositive', 'TruePositive'. 
 determination | Nullable Enum | Specifies the determination of the alert. Possible values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'.
-category| String | Category of the alert. The property values are: 'None', 'SuspiciousActivity', 'Malware', 'CredentialTheft', 'Exploit', 'WebExploit', 'DocumentExploit', 'PrivilegeEscalation', 'Persistence', 'RemoteAccessTool', 'CommandAndControl', 'SuspiciousNetworkTraffic', 'Ransomware', 'MalwareDownload', 'Reconnaissance', 'WebFingerprinting', 'Weaponization', 'Delivery', 'SocialEngineering', 'CredentialStealing', 'Installation', 'Backdoor', 'Trojan', 'TrojanDownloader', 'LateralMovement', 'ExplorationEnumeration', 'NetworkPropagation', 'Exfiltration', 'NotApplicable', 'EnterprisePolicy' and	'General' .
+category| String | Category of the alert. Possible values are: 'Collection', 'Command and control', 'Credential access', 'Defense evasion', 'Discovery', 'Execution', 'Exfiltration', 'Exploit', 'Initial access', 'Lateral movement', 'Malware', 'Persistence', 'Privilege escalation', 'Ransomware', 'Suspicious activity', 'Unwanted software'. 
 detectionSource | string | Detection source.
 threatFamilyName | string | Threat family.
 title | string | Alert title.
 description | String | Description of the threat, identified by the alert.
 alertCreationTime | DateTimeOffset | The date and time (in UTC) the alert was created.
-lastEventTime | DateTimeOffset | The last occurance of the event that triggered the alert on the same machine.
-firstEventTime | DateTimeOffset | The first occurance of the event that triggered the alert on that machine.
+lastEventTime | DateTimeOffset | The last occurrence of the event that triggered the alert on the same machine.
+firstEventTime | DateTimeOffset | The first occurrence of the event that triggered the alert on that machine.
 resolvedTime | DateTimeOffset | The date and time in which the status of the alert was changed to 'Resolved'.
 machineId | String | ID of a [machine](machine.md) entity that is associated with the alert.
 

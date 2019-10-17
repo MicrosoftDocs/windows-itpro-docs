@@ -8,6 +8,7 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
@@ -247,7 +248,7 @@ USMT provides several command-line options that you can use to analyze problems 
 <td align="left"><p><strong>/progress:</strong>[<em>Path&lt;/em&gt;]<em>FileName</em></p></td>
 <td align="left"><p>Creates the optional progress log. You cannot store any of the log files in <em>StorePath</em>. <em>Path</em> can be either a relative or full path. If you do not specify the <em>Path</em> variable, then <em>FileName</em> will be created in the current directory.</p>
 <p>For example:</p>
-<p><code>loadstate /i:migapp.xml /i:migdocs.xml \server\share\migration\mystore /progress:prog.log /l:scanlog.log</code></p></td>
+<p><code>loadstate /i:migapp.xml /i:migdocs.xml \server\share\migration\mystore /progress:prog.log /l:loadlog.log</code></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>/c</strong></p></td>

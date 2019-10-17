@@ -177,7 +177,7 @@ REQUESTED\_ACCESS: RESULT ACE\_WHICH\_ ALLOWED\_OR\_DENIED\_ACCESS.
 
 -   ACE\_WHICH\_ ALLOWED\_OR\_DENIED\_ACCESS: the Security Descriptor Definition Language (SDDL) value for Access Control Entry (ACE), which granted or denied access.
 
-> **Note**&nbsp;&nbsp;The ** <span id="SDDL" class="anchor"></span>Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
+> **Note**&nbsp;&nbsp;The **<a id="SDDL" class="anchor"></a>Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
 > 
 > Example:
 > 

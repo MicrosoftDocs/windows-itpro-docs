@@ -9,6 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
+audience: itpro
 author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
@@ -143,7 +144,7 @@ In this step, you export VAMT from the workgroup’s host computer and save it i
 1.  Select the products to which you want to apply CIDs. If needed, sort and filter the list to find the products.
 2.  In the right-side **Selected Items** menu, click **Activate**, click **Apply Confirmation ID**, and then select the appropriate credential option. If you click the **Alternate Credentials** option, you will be prompted to enter an alternate user name and password.
 
-    VAMT displays the **Applying Confirmation Id** dialog box while it installs the CIDs on the selected products. When VAMT finishes installing the CIDs, the status appears in the **Action Sataus** column of the dialog box. Click **Close** to close the dialog box. You can also click the **Automatically close when done** check box when the dialog box appears.
+    VAMT displays the **Applying Confirmation Id** dialog box while it installs the CIDs on the selected products. When VAMT finishes installing the CIDs, the status appears in the **Action Status** column of the dialog box. Click **Close** to close the dialog box. You can also click the **Automatically close when done** check box when the dialog box appears.
     The same status appears under the **Status of Last Action** column in the product list view in the center pane.
 
 ## Step 13: (Optional) Reactivating Reimaged Computers in the Isolated Lab

@@ -42,6 +42,8 @@ On the top navigation you can:
 ## Sort and filter the incidents queue
 You can apply the following filters to limit the list of incidents and get a more focused view.
 
+### Severity
+
 Incident severity | Description
 :---|:---
 High </br>(Red) | Threats often associated with advanced persistent threats (APT). These incidents indicate a high risk due to the severity of damage they can inflict on machines.
@@ -49,27 +51,17 @@ Medium </br>(Orange) | Threats rarely observed in the organization, such as anom
 Low </br>(Yellow) | Threats associated with prevalent malware and hack-tools that do not necessarily indicate an advanced threat targeting the organization.
 Informational </br>(Grey) | Informational incidents are those that might not be considered harmful to the network but might be good to keep track of.
 
+## Assigned to
+You can choose to filter the list by selecting assigned to anyone or ones that are assigned to you.
+
 ### Category
 Incidents are categorized based on the description of the stage by which the cybersecurity kill chain is in. This view helps the threat analyst to determine priority, urgency, and corresponding response strategy to deploy based on context.
 
-### Alerts
-Indicates the number of alerts associated with or part of the incidents.
-
-
-### Machines
-You can limit to show only the machines at risk which are associated with incidents.
-
-### Users
-You can limit to show only the users of the machines at risk which are associated with incidents. 
-
-### Assigned to
-You can choose to show between unassigned incidents or those which are assigned to you.
-
 ### Status
-You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved
+You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved.
 
-### Classification
-Use this filter to choose between focusing on incidents flagged as true or false incidents.
+### Data sensitivity
+Use this filter to show incidents that contain sensitivity labels.
 
 ## Related topics
 - [Incidents queue](incidents-queue.md)

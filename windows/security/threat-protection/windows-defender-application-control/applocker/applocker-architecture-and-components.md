@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # AppLocker architecture and components
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professional describes AppLocker’s basic architecture and its major components.
 

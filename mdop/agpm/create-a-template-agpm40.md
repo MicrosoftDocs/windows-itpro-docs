@@ -1,11 +1,11 @@
 ---
 title: Create a Template
 description: Create a Template
-author: mjcaparas
+author: dansimp
 ms.assetid: b38423af-7d24-437a-98bc-01f1ae891127
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

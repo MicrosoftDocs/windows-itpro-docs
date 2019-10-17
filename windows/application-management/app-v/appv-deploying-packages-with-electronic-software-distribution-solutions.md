@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 09/27/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ---
 # Deploying App-V packages by using electronic software distribution (ESD)
@@ -30,7 +30,7 @@ To learn how to configure the App-V client to enable only administrators to publ
 
 ## Related topics
 
-- [App-V and Citrix integration](https://www.microsoft.com/en-us/download/details.aspx?id=40885)
+- [App-V and Citrix integration](https://www.microsoft.com/download/details.aspx?id=40885)
 - [Operations for App-V](appv-operations.md)
 
 

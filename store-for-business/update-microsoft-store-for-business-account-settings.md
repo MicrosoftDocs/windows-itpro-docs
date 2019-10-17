@@ -94,7 +94,7 @@ If you qualify for tax-exempt status in your market, start a service request to 
 
 **To start a service request**
 1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com).
-2.	Select **Manage**, click **Support**, and then under **Store settings & configuration** select **Create technical support ticket**.
+2. Select **Manage**, click **Support**, and then under **Store settings & configuration** select **Create technical support ticket**.
 
 You’ll need this documentation:
 

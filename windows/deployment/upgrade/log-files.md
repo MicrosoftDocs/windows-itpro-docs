@@ -9,7 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -142,7 +142,7 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 27:00, Info [0x0803e5] MIG    Not unmapping HKCU\Software\Classes; it is not mapped
 27:00, Info [0x0803e5] MIG    Not unmapping HKCU; it is not mapped
 27:00, Info            SP     ExecuteProgress: Elapsed events:1 of 4, Percent: 12
-27:00, Info [0x0802c6] MIG    Processing GATHER for migration unit: <System>\UpgradeFramework (CMXEAgent)
+27:00, Info [0x0802c6] MIG    Processing GATHER for migration unit: &lt;System&gt;\UpgradeFramework (CMXEAgent)
 27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
 27:08, Error           MIG    Error 1392 while gathering object C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Shell application requested abort![gle=0x00000570]
 27:08, Info            SP     ExecuteProgress: Elapsed events:2 of 4, Percent: 25
@@ -166,6 +166,6 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 
 [Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
-<br>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
+<br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
 <br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)

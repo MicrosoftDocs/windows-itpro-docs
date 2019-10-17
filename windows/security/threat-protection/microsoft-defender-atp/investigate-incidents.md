@@ -25,6 +25,11 @@ ms.topic: article
 
 Investigate incidents that affect your network, understand what they mean, and collate evidence to resolve them. 
 
+When you investigate an incident, you'll see:
+- Incident details
+- Incident comments and actions
+- Tabs (alerts, machines, investigations, evidence, graph)
+
 ## Analyze incident details 
 Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, machines, investigations, evidence, graph). 
 
@@ -39,8 +44,6 @@ Alerts are grouped into incidents based on the following reasons:
 - Proximate time - The alerts were triggered on the same machine within a certain timeframe
 - Same file - The files associated with the alert are exactly the same
 - Same URL - The URL that triggered the alert is exactly the same
-
-![Image of alerts tab in incident page showing the Linked by tool tip](images/atp-incidents-alerts-tooltip.png)
 
 ![Image of alerts tab with incident details page showing the reasons the alerts were linked together in that incident](images/atp-incidents-alerts-reason.png)
 
@@ -72,10 +75,9 @@ The **Graph** tells the story of the cybersecurity attack. For example, it shows
 
 You can click the circles on the incident graph to view the details of the malicious files, associated file detections, how many instances has there been worldwide, whether it’s been observed in your organization, if so, how many instances.
 
-![Image of indcident details](images/atp-incident-graph-details.png)
+![Image of incident details](images/atp-incident-graph-details.png)
 
 ## Related topics
-- [Incidents queue](incidents-queue.md)
 - [View and organize the Incidents queue](view-incidents-queue.md)
 - [Manage incidents](manage-incidents.md)
 

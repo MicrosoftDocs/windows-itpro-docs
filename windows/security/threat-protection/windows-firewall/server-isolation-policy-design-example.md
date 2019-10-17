@@ -82,4 +82,4 @@ If Woodgrove Bank wants to implement server isolation without domain isolation, 
 
 You do not have to include the encryption-capable rules on all devices. Instead, you can create GPOs that are applied only to members of the NAG, in addition to the standard domain isolation GPO, that contain connection security rules to support encryption.
 
-**Next: **[Certificate-based Isolation Policy Design Example](certificate-based-isolation-policy-design-example.md)
+**Next:** [Certificate-based Isolation Policy Design Example](certificate-based-isolation-policy-design-example.md)

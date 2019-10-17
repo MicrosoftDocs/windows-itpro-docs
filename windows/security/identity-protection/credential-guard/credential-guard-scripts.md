@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -25,7 +25,7 @@ Here is a list of scripts mentioned in this topic.
 
 Save this script file as get-IssuancePolicy.ps1.
 
-``` syntax
+```powershell
 #######################################
 ##     Parameters to be defined      ##
 ##     by the user                   ##
@@ -216,7 +216,7 @@ write-host "There are no issuance policies which are not mapped to groups"
 
 Save the script file as set-IssuancePolicyToGroupLink.ps1.
 
-``` syntax
+```powershell
 #######################################
 ##     Parameters to be defined      ##
 ##     by the user                   ##

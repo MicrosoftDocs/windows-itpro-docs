@@ -14,7 +14,9 @@
     "resource": [
       {
         "files": [
-          "**/images/**"
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**"
@@ -22,11 +24,12 @@
       }
     ],
     "globalMetadata": {
-      "uhfHeaderId": "MSDocsHeader-WindowsIT",
       "ROBOTS": "INDEX, FOLLOW",
-      "ms.author": "celested",
       "audience": "windows-education",
       "ms.topic": "article",
+      "ms.technology": "windows",
+      "manager": "laurawi",
+      "audience": "ITPro",
       "breadcrumb_path": "/education/breadcrumb/toc.json",
       "ms.date": "05/09/2017",
       "feedback_system": "GitHub",

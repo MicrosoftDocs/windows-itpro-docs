@@ -314,16 +314,16 @@ For DHA-OnPrem & DHA-EMC scenarios, send a SyncML command to the HASEndpoint nod
 
 The following example shows a sample call that instructs a managed device to communicate with an enterprise managed DHA-Service.
 
-``` syntax
-      <Replace>
-         <CmdID>1</CmdID>
-         <Item>
-            <Target>
-               <LocURI>./Vendor/MSFT/HealthAttestation/HASEndpoint</LocURI>
-            </Target>
-            <Data> www.ContosoDHA-Service</Data>
-         </Item>
-      </Replace>
+```xml
+<Replace>
+    <CmdID>1</CmdID>
+    <Item>
+      <Target>
+          <LocURI>./Vendor/MSFT/HealthAttestation/HASEndpoint</LocURI>
+      </Target>
+      <Data> www.ContosoDHA-Service</Data>
+    </Item>
+</Replace>
 ```
 
 
@@ -334,24 +334,24 @@ Send a SyncML call to start collection of the DHA-Data.
 
 The following example shows a sample call that triggers collection and verification of health attestation data from a managed device.
 
-``` syntax
-      <Exec>
-         <CmdID>1</CmdID>
-         <Item>
-            <Target>
-               <LocURI>./Vendor/MSFT/HealthAttestation/VerifyHealth</LocURI>
-            </Target>
-         </Item>
-      </Exec>
+```xml
+<Exec>
+    <CmdID>1</CmdID>
+    <Item>
+      <Target>
+          <LocURI>./Vendor/MSFT/HealthAttestation/VerifyHealth</LocURI>
+      </Target>
+    </Item>
+</Exec>
 
-      <Get>
-         <CmdID>2</CmdID>
-         <Item>
-            <Target>
-               <LocURI>./Vendor/MSFT/HealthAttestation/Status</LocURI>
-            </Target>
-         </Item>
-      </Get>
+<Get>
+    <CmdID>2</CmdID>
+    <Item>
+      <Target>
+          <LocURI>./Vendor/MSFT/HealthAttestation/Status</LocURI>
+      </Target>
+    </Item>
+</Get>
 ```
 
 ## <a href="" id="take-action-client-response"></a>**Step 4: Take action based on the clients response**
@@ -364,21 +364,21 @@ After the client receives the health attestation request, it sends a response. T
 
 Here is a sample alert that is issued by DHA_CSP:
 
-``` syntax
-        <Alert>
-            <CmdID>1</CmdID>
-            <Data>1226</Data>
-            <Item>
-                <Source>
-                    <LocURI>./Vendor/MSFT/HealthAttestation/VerifyHealth</LocURI>
-                </Source>
-                <Meta>
-                    <Type xmlns="syncml:metinf">com.microsoft.mdm:HealthAttestation.Result</Type>
-                    <Format xmlns="syncml:metinf">int</Format>
-                </Meta>
-                <Data>3</Data>
-            </Item>
-        </Alert>
+```xml
+<Alert>
+    <CmdID>1</CmdID>
+    <Data>1226</Data>
+    <Item>
+        <Source>
+            <LocURI>./Vendor/MSFT/HealthAttestation/VerifyHealth</LocURI>
+        </Source>
+        <Meta>
+            <Type xmlns="syncml:metinf">com.microsoft.mdm:HealthAttestation.Result</Type>
+            <Format xmlns="syncml:metinf">int</Format>
+        </Meta>
+        <Data>3</Data>
+    </Item>
+</Alert>
 ```
 - If the response to the status node is not 0, 1 or 3, then troubleshoot the issue. For the complete list of status codes see [Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes).
 
@@ -389,35 +389,34 @@ Create a call to the **Nonce**, **Certificate** and **CorrelationId** nodes, and
 
 Here is an example:
 
-``` syntax
+```xml
 <Replace>
-           <CmdID>1</CmdID>
-           <Item>
-               <Target>
-                   <LocURI>./Vendor/MSFT/HealthAttestation/Nonce</LocURI>
-               </Target>
-               <Data>AAAAAAAAAFFFFFFF</Data>
-           </Item>
+    <CmdID>1</CmdID>
+    <Item>
+        <Target>
+            <LocURI>./Vendor/MSFT/HealthAttestation/Nonce</LocURI>
+        </Target>
+        <Data>AAAAAAAAAFFFFFFF</Data>
+    </Item>
 </Replace>
 
-    <Get>
-            <CmdID>2</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Vendor/MSFT/HealthAttestation/Certificate</LocURI>
-                </Target>
-            </Item>
-        </Get>
+<Get>
+    <CmdID>2</CmdID>
+    <Item>
+        <Target>
+            <LocURI>./Vendor/MSFT/HealthAttestation/Certificate</LocURI>
+        </Target>
+    </Item>
+</Get>
 
-     <Get>
-            <CmdID>3</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Vendor/MSFT/HealthAttestation/CorrelationId </LocURI>
-                </Target>
-            </Item>
-     </Get>
-
+<Get>
+    <CmdID>3</CmdID>
+    <Item>
+        <Target>
+            <LocURI>./Vendor/MSFT/HealthAttestation/CorrelationId </LocURI>
+        </Target>
+    </Item>
+</Get>
 ```
 
 ## <a href="" id="forward-data-to-has"></a>**Step 6: Forward device health attestation data to DHA-service**
@@ -1019,8 +1018,8 @@ Each of these are described in further detail in the following sections, along w
 ## DHA-Report V3 schema
 
 
-``` syntax
- <?xml version="1.0" encoding="UTF-8"?>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v3"
            targetNamespace="http://schemas.microsoft.com/windows/security/healthcertificate/validation/response/v3"

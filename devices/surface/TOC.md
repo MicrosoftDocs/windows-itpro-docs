@@ -1,6 +1,6 @@
 # [Surface](index.md)
 
-## Get started
+## [Get started](get-started.md)
 
 ## Overview
 ### [Surface Pro Tech specs](https://www.microsoft.com/surface/devices/surface-pro/tech-specs)
@@ -10,7 +10,6 @@
 ### [Surface Laptop 2 Tech specs](https://www.microsoft.com/surface/devices/surface-laptop/tech-specs)
 
 ## Plan
-### [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md)
 ### [Surface device compatibility with Windows 10 Long-Term Servicing Branch](surface-device-compatibility-with-windows-10-ltsc.md)
 ### [Long-Term Servicing Branch for Surface devices](ltsb-for-surface.md)
 ### [Wake On LAN for Surface devices](wake-on-lan-for-surface-devices.md)
@@ -21,6 +20,10 @@
 
 ## Deploy
 ### [Deploy Surface devices](deploy.md)
+### [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md)
+### [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
+### [Windows 10 ARM-based PC app compatibility](surface-pro-arm-app-performance.md)
+### [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ### [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)
 ### [Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
 ### [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md)
@@ -30,15 +33,14 @@
 ### [Surface System SKU reference](surface-system-sku-reference.md)
 
 ## Manage
-### [Maintain optimal power settings on Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)
+### [Optimize Wi-Fi connectivity for Surface devices](surface-wireless-connect.md)
+### [Best practice power settings for Surface devices](maintain-optimal-power-settings-on-Surface-devices.md)
+### [Surface Dock Firmware Update](surface-dock-firmware-update.md)
 ### [Battery Limit setting](battery-limit.md)
 ### [Surface Brightness Control](microsoft-surface-brightness-control.md)
 ### [Surface Asset Tag](assettag.md)
 ### [Surface firmware and driver updates](update.md)
-### [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ### [Manage Surface driver and firmware updates](manage-surface-pro-3-firmware-updates.md)
-### [Surface Dock Updater](surface-dock-updater.md)
-### [Use System Center Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md)
 
 ## Secure
 ### [Manage Surface UEFI settings](manage-surface-uefi-settings.md)
@@ -46,11 +48,14 @@
 ### [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
 ### [Enroll and configure Surface devices with SEMM](enroll-and-configure-surface-devices-with-semm.md)
 ### [Unenroll Surface devices from SEMM](unenroll-surface-devices-from-semm.md)
-
-## Support
-### [Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md)
-### [Use Surface Diagnostic Toolkit for Business in desktop mode](surface-diagnostic-toolkit-desktop-mode.md)
-### [Run Surface Diagnostic Toolkit for Business using commands](surface-diagnostic-toolkit-command-line.md)
+### [Use System Center Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md)
 ### [Surface Data Eraser](microsoft-surface-data-eraser.md)
+
+## Troubleshoot
 ### [Top support solutions for Surface devices](support-solutions-surface.md)
+### [Fix common Surface problems using the Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-for-business-intro.md)
+#### [Deploy Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md)
+#### [Use Surface Diagnostic Toolkit for Business in desktop mode](surface-diagnostic-toolkit-desktop-mode.md)
+#### [Run Surface Diagnostic Toolkit for Business using commands](surface-diagnostic-toolkit-command-line.md)
+
 ### [Change history for Surface documentation](change-history-for-surface.md)

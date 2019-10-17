@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: mdsakibMSFT
+ms.author: mdsakib
 ms.date: 05/17/2019
 ---
 
@@ -52,10 +53,10 @@ Beginning with Windows 10 version 1903, Windows Defender Application Control (WD
   - Suffix (ex. C:\foo\\*) OR Prefix (ex. *\foo\bar.exe)
     - One or the other, not both at the same time
     - Does not support wildcard in the middle (ex. C:\\*\foo.exe)
-  - Examples:
-    - %WINDIR%\\...
-    - %SYSTEM32%\\...
-    - %OSDRIVE%\\...
+- Supported Macros:
+  - %WINDIR%\\...
+  - %SYSTEM32%\\...
+  - %OSDRIVE%\\...
 
 - Disable default FilePath rule protection of enforcing user-writeability. For example, to add “Disabled:Runtime FilePath Rule Protection” to the policy:
 

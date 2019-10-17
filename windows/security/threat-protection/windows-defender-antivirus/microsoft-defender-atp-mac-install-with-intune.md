@@ -22,21 +22,24 @@ ms.topic: conceptual
 
 **Applies to:**
 
-[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
->[!IMPORTANT]
->This topic relates to the pre-release version of Microsoft Defender ATP for Mac. Microsoft Defender ATP for Mac is not yet widely available. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+This topic describes how to deploy Microsoft Defender ATP for Mac through Intune. A successful deployment requires the completion of all of the following steps:
+- [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
+- [Client device setup](#client-device-setup)
+- [Create System Configuration profiles](#create-system-configuration-profiles)
+- [Publish application](#publish-application)
 
 ## Prerequisites and system requirements
 
-Before you get started, please see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
+Before you get started, see [the main Microsoft Defender ATP for Mac page](microsoft-defender-atp-mac.md) for a description of prerequisites and system requirements for the current software version.
 
 ## Download installation and onboarding packages
 
 Download the installation and onboarding packages from Microsoft Defender Security Center:
 
 1. In Microsoft Defender Security Center, go to **Settings** > **Device Management** > **Onboarding**.
-2. In Section 1 of the page, set the operating system to **Linux, macOS, iOS or Android** and the deployment method to **Mobile Device Management / Microsoft Intune**.
+2. In Section 1 of the page, set the operating system to **Linux, macOS, iOS, or Android** and the deployment method to **Mobile Device Management / Microsoft Intune**.
 3. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 5. Download **IntuneAppUtil** from [https://docs.microsoft.com/intune/lob-apps-macos](https://docs.microsoft.com/intune/lob-apps-macos).
@@ -47,28 +50,29 @@ Download the installation and onboarding packages from Microsoft Defender Securi
     Extract the contents of the .zip files:
 
     ```bash
-    mavel-macmini:Downloads test$ ls -l
+    $ ls -l
     total 721688
     -rw-r--r--  1 test  staff     269280 Mar 15 11:25 IntuneAppUtil
     -rw-r--r--  1 test  staff      11821 Mar 15 09:23 WindowsDefenderATPOnboardingPackage.zip
     -rw-r--r--  1 test  staff  354531845 Mar 13 08:57 wdav.pkg
-    mavel-macmini:Downloads test$ unzip WindowsDefenderATPOnboardingPackage.zip
+    $ unzip WindowsDefenderATPOnboardingPackage.zip
     Archive:  WindowsDefenderATPOnboardingPackage.zip
     warning:  WindowsDefenderATPOnboardingPackage.zip appears to use backslashes as path separators
       inflating: intune/kext.xml
       inflating: intune/WindowsDefenderATPOnboarding.xml
       inflating: jamf/WindowsDefenderATPOnboarding.plist
-    mavel-macmini:Downloads test$
     ```
 
 7. Make IntuneAppUtil an executable:
 
-    ```mavel-macmini:Downloads test$ chmod +x IntuneAppUtil```
+    ```bash
+    $ chmod +x IntuneAppUtil
+    ```
 
 8. Create the wdav.pkg.intunemac package from wdav.pkg:
 
     ```bash
-    mavel-macmini:Downloads test$ ./IntuneAppUtil -c wdav.pkg -o . -i "com.microsoft.wdav" -n "1.0.0"
+    $ ./IntuneAppUtil -c wdav.pkg -o . -i "com.microsoft.wdav" -n "1.0.0"
     Microsoft Intune Application Utility for Mac OS X
     Version: 1.0.0.0
     Copyright 2018 Microsoft Corporation
@@ -85,19 +89,19 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 
 You need no special provisioning for a Mac device beyond a standard [Company Portal installation](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
 
-1. You'll be asked to confirm device management.
+1. You are asked to confirm device management.
 
 ![Confirm device management screenshot](images/MDATP_3_ConfirmDeviceMgmt.png)
 
-Select **Open System Preferences**, locate **Management Profile** on the list and select **Approve...**. Your Management Profile would be displayed as **Verified**:
+Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:
 
 ![Management profile screenshot](images/MDATP_4_ManagementProfile.png)
 
 2. Select **Continue** and complete the enrollment.
 
-You may now enroll additional devices. You can also enroll them later, after you have finished provisioning system configuration and application packages.
+You may now enroll more devices. You can also enroll them later, after you have finished provisioning system configuration and application packages.
 
-3. In Intune, open **Manage** > **Devices** > **All devices**. You'll see your device among those listed:
+3. In Intune, open **Manage** > **Devices** > **All devices**. Here you can see your device among those listed:
 
 ![Add Devices screenshot](images/MDATP_5_allDevices.png)
 
@@ -105,17 +109,88 @@ You may now enroll additional devices. You can also enroll them later, after you
 
 1. In Intune, open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create Profile**.
 2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Custom**. Select **Configure**.
-3. Open the configuration profile and upload intune/kext.xml. This file was created during the Generate settings step above.
+3. Open the configuration profile and upload intune/kext.xml. This file was created in one of the preceding sections.
 4. Select **OK**.
 
     ![System configuration profiles screenshot](images/MDATP_6_SystemConfigurationProfiles.png)
 
 5. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
-6. Repeat steps 1 through 5 for additional profiles.
-7. Create a new profile one more time, give it a name, and upload the intune/WindowsDefenderATPOnboarding.xml file.
-8. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
+6. Repeat steps 1 through 5 for more profiles.
+7. Create another profile, give it a name, and upload the intune/WindowsDefenderATPOnboarding.xml file.
+8. Create tcc.xml file with content below. Create another profile, give it any name and upload this file to it.
 
-Once the Intune changes are propagated to the enrolled devices, you'll see them listed under **Monitor** > **Device status**:
+   > [!CAUTION]
+   > macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender ATP is not able to fully protect your device.
+   >
+   > The following configuration profile grants Full Disk Access to Microsoft Defender ATP. If you previously configured Microsoft Defender ATP through Intune, we recommend you update the deployment with this configuration profile.
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+   <plist version="1.0">
+   <dict>
+       <key>PayloadDescription</key>
+       <string>Allows Microsoft Defender to access all files on Catalina+</string>
+       <key>PayloadDisplayName</key>
+       <string>TCC - Microsoft Defender</string>
+       <key>PayloadIdentifier</key>
+       <string>com.microsoft.wdav.tcc</string>
+       <key>PayloadOrganization</key>
+       <string>Microsoft Corp.</string>
+       <key>PayloadRemovalDisallowed</key>
+       <false/>
+       <key>PayloadScope</key>
+       <string>system</string>
+       <key>PayloadType</key>
+       <string>Configuration</string>
+       <key>PayloadUUID</key>
+       <string>C234DF2E-DFF6-11E9-B279-001C4299FB44</string>
+       <key>PayloadVersion</key>
+       <integer>1</integer>
+       <key>PayloadContent</key>
+       <array>
+       <dict>
+           <key>PayloadDescription</key>
+           <string>Allows Microsoft Defender to access all files on Catalina+</string>
+           <key>PayloadDisplayName</key>
+           <string>TCC - Microsoft Defender</string>
+           <key>PayloadIdentifier</key>
+           <string>com.microsoft.wdav.tcc.C233A5E6-DFF6-11E9-BDAD-001C4299FB44</string>
+           <key>PayloadOrganization</key>
+           <string>Microsoft Corp.</string>
+           <key>PayloadType</key>
+           <string>com.apple.TCC.configuration-profile-policy</string>
+           <key>PayloadUUID</key>
+           <string>C233A5E6-DFF6-11E9-BDAD-001C4299FB44</string>
+           <key>PayloadVersion</key>
+           <integer>1</integer>
+           <key>Services</key>
+           <dict>
+               <key>SystemPolicyAllFiles</key>
+               <array>
+               <dict>
+                   <key>Allowed</key>
+                   <true/>
+                   <key>CodeRequirement</key>
+                   <string>identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                   <key>Comment</key>
+                   <string>Allow SystemPolicyAllFiles control for Microsoft Defender ATP</string>
+                   <key>Identifier</key>
+                   <string>com.microsoft.wdav</string>
+                   <key>IdentifierType</key>
+                   <string>bundleID</string>
+               </dict>
+               </array>
+           </dict>
+       </dict>
+       </array>
+   </dict>
+   </plist>
+   ```
+
+9. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
+
+Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:
 
 ![System configuration profiles screenshot](images/MDATP_7_DeviceStatusBlade.png)
 
@@ -125,7 +200,10 @@ Once the Intune changes are propagated to the enrolled devices, you'll see them 
 2. Select **App type=Other/Line-of-business app**.
 3. Select **file=wdav.pkg.intunemac**. Select **OK** to upload.
 4. Select **Configure** and add the required information.
-5. Use **macOS Sierra 10.12** as the minimum OS. Other settings can be any arbitrary value.
+5. Use **macOS Sierra 10.12** as the minimum OS and set *Ignore app version* to **Yes**. Other settings can be any arbitrary value.
+
+    > [!CAUTION]
+    > Failure to set *Ignore app version* to **Yes** impacts the ability of the application to receive updates through Microsoft AutoUpdate. See [Deploy updates for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-updates.md) for additional information about how the product is updated.
 
     ![Device status blade screenshot](images/MDATP_8_IntuneAppInfo.png)
 
@@ -138,11 +216,11 @@ Once the Intune changes are propagated to the enrolled devices, you'll see them 
     ![Client apps screenshot](images/MDATP_10_ClientApps.png)
 
 8. Change **Assignment type** to **Required**.
-9. Select **Included Groups**. Select **Make this app required for all devices=Yes**. Select **Select group to include** and add a group that contains the users you want to target. Select **OK** and **Save**.
+9. Select **Included Groups**. Select **Make this app required for all devices=Yes**. Click **Select group to include** and add a group that contains the users you want to target. Select **OK** and **Save**.
 
     ![Intune assignments info screenshot](images/MDATP_11_Assignments.png)
 
-10. After some time the application will be published to all enrolled devices. You'll see it listed on **Monitor** > **Device**, under **Device install status**:
+10. After some time the application will be published to all enrolled devices. You can see it listed in **Monitor** > **Device**, under **Device install status**:
 
     ![Intune device status screenshot](images/MDATP_12_DeviceInstall.png)
 
@@ -153,16 +231,22 @@ Once the Intune changes are propagated to the enrolled devices, you'll see them 
     ![System Preferences screenshot](images/MDATP_13_SystemPreferences.png)
     ![System Preferences Profiles screenshot](images/MDATP_14_SystemPreferencesProfiles.png)
 
-2. Verify that the following configuration profiles are present and installed. The **Management Profile** should be the Intune system profile. _Wdav-config_ and _wdav-kext_ are system configuration profiles that we added in Intune.:
+2. Verify that the following configuration profiles are present and installed. The **Management Profile** should be the Intune system profile. _Wdav-config_ and _wdav-kext_ are system configuration profiles that were added in Intune:
     ![Profiles screenshot](images/MDATP_15_ManagementProfileConfig.png)
 
 3. You should also see the Microsoft Defender icon in the top-right corner:
 
     ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
 
+## Troubleshooting
+
+Issue: No license found
+
+Solution: Follow the steps above to create a device profile using WindowsDefenderATPOnboarding.xml
+
 ## Logging installation issues
 
-See [Logging installation issues](microsoft-defender-atp-mac-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+For more information on how to find the automatically generated log that is created by the installer when an error occurs, see [Logging installation issues](microsoft-defender-atp-mac-resources.md#logging-installation-issues) .
 
 ## Uninstallation
 

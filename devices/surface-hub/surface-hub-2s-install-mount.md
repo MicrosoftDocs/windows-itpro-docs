@@ -6,10 +6,11 @@ ms.prod: surface-hub
 ms.sitesec: library
 author: robmazz
 ms.author: robmazz
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
 # Install and mount Surface Hub 2S
@@ -22,7 +23,7 @@ For more information, see [Officially licensed third-party accessories](http://l
 
  ![Surface Hub 2S on Roam Mobile Stand](images/sh2-mobile-stand.png)<br>
 
-If you’re not using licensed accessories, see [Customizing installation of Surface Hub 2S](surface-hub-2s-connect.md).
+If you’re not using licensed accessories, see [Customize wall mount of Surface Hub 2S](surface-hub-2s-custom-install.md).
 
 | 1. **Set up your mount first** | |
 |:------ |:-------- |
@@ -33,4 +34,3 @@ If you’re not using licensed accessories, see [Customizing installation of Sur
 | Get someone to help you lift and mount your Surface Hub. Make sure to hold and lift the Surface Hub from the bottom. | ![* Remove the instructional label before mounting *](images/sh2-setup-3.png) <br> |
 | 4. **Attach accessories and power on** | |
 | Install accessories and attach power cable as shown. See guides on the screen cling. Remove cling wrap from the screen. Press the power button to power on. | ![* Attach accessories and power on *](images/sh2-setup-4.png) <br> |
-

@@ -1,15 +1,15 @@
 ---
 title: How to Modify Private Key Permissions to Support Management Server or Streaming Server
 description: How to Modify Private Key Permissions to Support Management Server or Streaming Server
-author: eavena
+author: dansimp
 ms.assetid: 1ebe86fa-0fbc-4512-aebc-0a5da991cd43
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

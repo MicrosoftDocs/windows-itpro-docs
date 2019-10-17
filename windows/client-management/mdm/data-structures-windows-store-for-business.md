@@ -975,7 +975,7 @@ Specifies the properties of the publisher details.
 <tr class="odd">
 <td><p>assignedTo</p></td>
 <td><p>string</p></td>
-<td><p>Format = UPN (user<xref href="domain)" data-throw-if-not-resolved="False" data-raw-source="@domain)"></xref></p></td>
+<td><p>Format = UPN (user@domain)</p></td>
 </tr>
 <tr class="even">
 <td><p>dateAssigned</p></td>

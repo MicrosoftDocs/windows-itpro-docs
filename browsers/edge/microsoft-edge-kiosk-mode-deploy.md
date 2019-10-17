@@ -3,14 +3,15 @@ title: Deploy Microsoft Edge kiosk mode
 description: Microsoft Edge kiosk mode works with assigned access to allow IT admins to create a tailored browsing experience designed for kiosk devices. To use Microsoft Edge kiosk mode, you must configure Microsoft Edge as an application in assigned access.
 ms.assetid: 
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-author: eavena
-ms.author: eravena
+author: dansimp
+ms.author: dansimp
 ms.prod: edge
 ms.sitesec: library
-ms.topic: get-started-article
+ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/29/2018 
+ms.date: 10/29/2018
 ---
 
 # Deploy Microsoft Edge kiosk mode

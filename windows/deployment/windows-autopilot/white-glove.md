@@ -7,8 +7,11 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: low
 ms.sitesec: library
 ms.pagetype: deploy
+audience: itpro
 author: greg-lindsay
-ms.author: greg-lindsay
+manager: laurawi
+ms.audience: itpro
+author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -38,9 +41,12 @@ In addition to [Windows Autopilot requirements](windows-autopilot-requirements.m
 - Physical devices that support TPM 2.0 and device attestation; virtual machines are not supported.  The white glove provisioning process leverages Windows Autopilot self-deploying capabilities, hence the TPM 2.0 requirements.
 - Physical devices with Ethernet connectivity; Wi-fi connectivity is not supported due to the requirement to choose a language, locale, and keyboard to make that Wi-fi connection; doing that in a pre-provisioning process could prevent the user from choosing their own language, locale, and keyboard when they receive the device.
 
+>[!IMPORTANT]
+>Because the OEM or vendor performs the white glove process, this <u>doesn’t require access to an end-user's on-prem domain infrastructure</u>. This is unlike a typical hybrid Azure AD-joined scenario because rebooting the device is postponed. The device is resealed prior to the time when connectivity to a domain controller is expected, and the domain network is contacted when the device is unboxed on-prem by the end-user.
+
 ## Preparation
 
-Devices slated for WG provisioning are registered for Autopilot via the normal registration process. 
+Devices slated for white glove provisioning are registered for Autopilot via the normal registration process. 
 
 To be ready to try out Windows Autopilot for white glove deployment, ensure that you can first successfully use existing Windows Autopilot user-driven scenarios:
 
@@ -65,7 +71,7 @@ Windows Autopilot for white glove deployment supports two distinct scenarios:
 - User-driven deployments with Hybrid Azure AD Join.  The device will be joined to an on-premises Active Directory domain, and separately registered with Azure AD.
 Each of these scenarios consists of two parts, a technician flow and a user flow.  At a high level, these parts are the same for Azure AD Join and Hybrid Azure AD join; differences are primarily seen by the end user in the authentication steps.
 
-### Technican flow
+### Technician flow
 
 After the customer or IT Admin has targeted all the apps and settings they want for their devices through Intune, the white glove technician can begin the white glove process.  The technician could be a member of the IT staff, a services partner, or an OEM – each organization can decide who should perform these activities. Regardless of the scenario, the process to be performed by the technician is the same:
 - Boot the device (running Windows 10 Pro, Enterprise, or Education SKUs, version 1903 or later).

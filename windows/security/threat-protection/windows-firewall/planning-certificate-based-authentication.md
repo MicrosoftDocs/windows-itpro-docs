@@ -59,4 +59,4 @@ When the clients and servers have the certificates available, you can configure 
 
 Starting in Windows Server 2012,you can configure certificate selection criteria so the desired certificate is selected and/or validated. Enhanced Key Usage (EKU) criteria can be configured, as well as name restrictions and certificate thumbprints. This is configured using the **Advanced** button when choosing certificates for the authentication method in the user interface, or through Windows PowerShell.
 
-**Next: **[Documenting the Zones](documenting-the-zones.md)
+**Next:** [Documenting the Zones](documenting-the-zones.md)

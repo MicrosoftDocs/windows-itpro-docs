@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: Turn off natural metrics for Internet Explorer 11
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: e31a27d7-662e-4106-a3d2-c6b0531961d5
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Fix font rendering problems by turning off natural metrics (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

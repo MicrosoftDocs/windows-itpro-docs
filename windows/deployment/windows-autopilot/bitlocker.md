@@ -5,11 +5,11 @@ manager: laurawi
 description: Microsoft Intune provides a comprehensive set of configuration options to manage BitLocker on Windows 10 devices. 
 keywords: Autopilot, BitLocker, encryption, 256-bit, Windows 10
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 ms.localizationpriority: medium
+audience: itpro
 author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop

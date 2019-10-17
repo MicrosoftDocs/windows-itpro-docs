@@ -88,4 +88,4 @@ This GPO provides the following rules:
 
     -   Authentication mode is set to **Do not authenticate**.
 
-**Next: **[GPO\_DOMISO\_IsolatedDomain\_Servers](gpo-domiso-isolateddomain-servers.md)
+**Next:** [GPO\_DOMISO\_IsolatedDomain\_Servers](gpo-domiso-isolateddomain-servers.md)

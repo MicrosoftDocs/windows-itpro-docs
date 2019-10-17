@@ -123,7 +123,7 @@ See the following for more information:
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Advanced scan** label:
 
     
-3.	Select **Windows Defender Offline scan** and click **Scan now**.
+3. Select **Windows Defender Offline scan** and click **Scan now**.
 
 
 > [!NOTE]

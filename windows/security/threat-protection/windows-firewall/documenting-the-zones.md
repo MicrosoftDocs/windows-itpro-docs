@@ -32,4 +32,4 @@ Generally, the task of determining zone membership is not complex, but it can be
 | SENSITIVE001 | Yes| Yes| Not required.| Running Windows Server 2012. Ready for inclusion.| $0| Isolated server (in zone by itself)| 
 | PRINTSVR1 | Yes| Yes| Not required.| Running Windows Server 2008 R2. Ready for inclusion.| $0| Boundary| 
 
-**Next: **[Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md)
+**Next:** [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md)

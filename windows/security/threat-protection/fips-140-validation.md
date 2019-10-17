@@ -4,7 +4,7 @@ description: This topic provides information on how Microsoft products and crypt
 ms.prod: w10
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -18,14 +18,14 @@ ms.reviewer:
 
 On this page
 
-  - [Introduction](https://technet.microsoft.com/library/cc750357.aspx#id0eo)
-  - [FIPS 140 Overview](https://technet.microsoft.com/library/cc750357.aspx#id0ebd)
-  - [Microsoft Product Validation (Information for Procurement Officers and Auditors)](https://technet.microsoft.com/library/cc750357.aspx#id0ezd)
-  - [Information for System Integrators](https://technet.microsoft.com/library/cc750357.aspx#id0eve)
-  - [Information for Software Developers](https://technet.microsoft.com/library/cc750357.aspx#id0eibac)
-  - [FIPS 140 FAQ](https://technet.microsoft.com/library/cc750357.aspx#id0eqcac)
-  - [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#id0ewfac)
-  - [Cryptographic Algorithms](https://technet.microsoft.com/library/cc750357.aspx#id0erobg)
+- [Introduction](https://technet.microsoft.com/library/cc750357.aspx#id0eo)
+- [FIPS 140 Overview](https://technet.microsoft.com/library/cc750357.aspx#id0ebd)
+- [Microsoft Product Validation (Information for Procurement Officers and Auditors)](https://technet.microsoft.com/library/cc750357.aspx#id0ezd)
+- [Information for System Integrators](https://technet.microsoft.com/library/cc750357.aspx#id0eve)
+- [Information for Software Developers](https://technet.microsoft.com/library/cc750357.aspx#id0eibac)
+- [FIPS 140 FAQ](https://technet.microsoft.com/library/cc750357.aspx#id0eqcac)
+- [Microsoft FIPS 140 Validated Cryptographic Modules](https://technet.microsoft.com/library/cc750357.aspx#id0ewfac)
+- [Cryptographic Algorithms](https://technet.microsoft.com/library/cc750357.aspx#id0erobg)
 
 Updated: March 2018
 
@@ -103,12 +103,13 @@ Rather than validate individual components and products, Microsoft chooses to va
 
 The following list contains some of the Windows components and Microsoft products that rely on FIPS 140 validated cryptographic modules:
 
-  - Schannel Security Package
-  - Remote Desktop Protocol (RDP) Client
-  - Encrypting File System (EFS)
-  - Some Microsoft .NET Framework Applications (.NET also provides cryptographic algorithm implementations that have not been FIPS 140 validated.)
-  - BitLocker® Drive Full-volume Encryption
-  - IPsec Settings of Windows Firewall
+- Schannel Security Package
+- Remote Desktop Protocol (RDP) Client
+- Encrypting File System (EFS)
+- Some Microsoft .NET Framework Applications (.NET also provides cryptographic algorithm implementations that have not been FIPS 140 validated.)
+- BitLocker® Drive Full-volume Encryption
+- IPsec Settings of Windows Firewall
+- Server Message Block (SMB) 3.x 
 
 ## Information for System Integrators
 
@@ -145,12 +146,12 @@ While there are alternative methods for setting the FIPS local/group security po
 
 The following list details some of the Microsoft components that use the cryptographic functionality implemented by either CNG or legacy CAPI. When the FIPS Local/Group Security Policy is set, the following components will enforce the validated module Security Policy.
 
-  - Schannel Security Package
-  - Remote Desktop Protocol (RDP) Client
-  - Encrypting File System (EFS)
-  - Some Microsoft .NET Framework Applications (.NET also provides cryptographic algorithm implementations that have not been FIPS 140 validated.)
-  - BitLocker® Drive Full-volume Encryption
-  - IPsec Settings of Windows Firewall
+- Schannel Security Package
+- Remote Desktop Protocol (RDP) Client
+- Encrypting File System (EFS)
+- Some Microsoft .NET Framework Applications (.NET also provides cryptographic algorithm implementations that have not been FIPS 140 validated.)
+- BitLocker® Drive Full-volume Encryption
+- IPsec Settings of Windows Firewall
 
 #### Effects of Setting FIPS Local/Group Security Policy Flag
 
@@ -1290,7 +1291,7 @@ Validated Editions: Ultimate Edition
 <td><strong>Algorithms</strong></td>
 </tr>
 <tr class="even">
-<td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enchanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
+<td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enhanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
 <td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp76.pdf">5.0.2150.1</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/76">76</a></td>
 <td><p><em>FIPS Approved algorithms:</em> Triple-DES (vendor affirmed); DSA/SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#28">#28</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#29">29</a>); RSA (vendor affirmed)</p>
@@ -1317,7 +1318,7 @@ Validated Editions: Ultimate Edition
 <td><strong>Algorithms</strong></td>
 </tr>
 <tr class="even">
-<td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enchanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
+<td>Base DSS Cryptographic Provider, Base Cryptographic Provider, DSS/Diffie-Hellman Enhanced Cryptographic Provider, and Enhanced Cryptographic Provider</td>
 <td><a href="http://csrc.nist.gov/groups/stm/cmvp/documents/140-1/140sp/140sp75.pdf">5.0.1877.6 and 5.0.1877.7</a></td>
 <td><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/75">75</a></td>
 <td><p><em>FIPS Approved algorithms:</em> Triple-DES (vendor affirmed); SHA-1 (Certs. <a href="https://social.msdn.microsoft.com/forums/en-us/f93c9ee5-89b9-41a4-96c4-6eb9346625b9/msrai-msra-parsing-remote-assistance-packets-in-network-monitor?forum=os_windowsprotocolshttps://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#20">#20</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#21">21</a>); DSA/SHA-1 (Certs. <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#25">#25</a> and <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/dsa#26">26</a>); RSA (vendor- affirmed)</p>
@@ -6219,7 +6220,7 @@ Version 6.3.9600</td>
 <strong>SHA-256</strong> (BYTE-only)<br />
 <strong>SHA-384</strong> (BYTE-only)<br />
 <strong>SHA-512</strong> (BYTE-only)</td>
-<td><p>Windows 7and SP1 and Windows Server 2008 R2 and SP1 Symmetric Algorithm Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a></p>
+<td><p>Windows 7 and SP1 and Windows Server 2008 R2 and SP1 Symmetric Algorithm Implementation <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#1081">#1081</a></p>
 <p>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/shs#816.">#816</a></p></td>
 </tr>
 <tr class="odd">

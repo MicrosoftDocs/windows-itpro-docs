@@ -1,11 +1,11 @@
 ---
 title: Other Enhancements to the GPMC
 description: Other Enhancements to the GPMC
-author: mjcaparas
+author: dansimp
 ms.assetid: ef344101-17e1-4e06-9dc8-2f20ca796774
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

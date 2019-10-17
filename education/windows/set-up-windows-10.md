@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 ms.localizationpriority: medium
-author: mjcaparas
-ms.author: macapara
+author: dansimp
+ms.author: dansimp
 ms.date: 07/27/2017
 ms.reviewer: 
 manager: dansimp
@@ -20,9 +20,9 @@ manager: dansimp
 -   Windows 10 
 
 You have two tools to choose from to set up PCs for your classroom: 
-  * Set up School PCs 
-  * Windows Configuration Designer
-  
+* Set up School PCs 
+* Windows Configuration Designer
+
 Choose the tool that is appropriate for how your students will sign in (Active Directory, Azure Active Directory, or no account). 
 
 You can use the following diagram to compare the tools.

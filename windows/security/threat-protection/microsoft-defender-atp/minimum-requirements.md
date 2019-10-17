@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 There are some minimum requirements for onboarding machines to the service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 
 >[!TIP]
@@ -37,12 +37,23 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 - Windows 10 Enterprise E5
 - Windows 10 Education E5
 - Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5
+- Microsoft 365 E3 (M365 E3) with Identity and Threat Protection package
 
-For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/en-us/windowsforbusiness/compare).
+For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
 For a detailed comparison table of Windows 10 commercial edition comparison, see the [comparison PDF](https://go.microsoft.com/fwlink/p/?linkid=2069559).
 
 For more information about licensing requirements for Microsoft Defender ATP platform on Windows Server, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114).
+
+
+## Browser requirements
+Access to Microsoft Defender ATP is done through a browser, supporting the following browsers:
+- Microsoft Edge
+- Internet Explorer version 11
+- Google Chrome  
+
+>[!NOTE]
+>While other browsers might work, the mentioned browsers are the ones supported.
 
 
 ## Hardware and software requirements
@@ -89,6 +100,10 @@ When you run the onboarding wizard for the first time, you must choose where you
 
 
 ### Diagnostic data settings
+
+> [!NOTE]
+> Microsoft Defender ATP doesn't require any specific diagnostic level as long as it's enabled.
+
 You must ensure that the diagnostic data service is enabled on all the machines in your organization.
 By default, this service is enabled, but it&#39;s good practice to check to ensure that you&#39;ll get sensor data from them.
 
@@ -144,6 +159,9 @@ The Microsoft Defender ATP sensor can utilize a daily average bandwidth of 5MB t
 For more information on additional proxy configuration settings see, [Configure machine proxy and Internet connectivity settings](configure-proxy-internet.md) .
 
 Before you onboard machines, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
+
+
+
 
 
 ## Windows Defender Antivirus configuration requirement

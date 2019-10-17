@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Connection Settings page in IEAK 11 Customization Wizard to import and preset connection settings on your employee’s computers.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: dc93ebf7-37dc-47c7-adc3-067d07de8b78
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Use the Connection Settings page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

@@ -2,7 +2,7 @@
 title: Provision PCs with apps  (Windows 10)
 description: Add apps to a Windows 10 provisioning package. 
 keywords: ["runtime provisioning", "provisioning package"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: dansimp
@@ -40,6 +40,9 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 ## Settings for Windows desktop applications
 
 ### MSI installer
+
+> [!NOTE]
+> You can find more information about command-line options for Msiexec.exe [here](https://docs.microsoft.com/windows/win32/msi/command-line-options).
 
 - **Command line arguments**: Optionally, append additional command arguments. The silent flag is appended for you. Example: PROPERTY=VALUE 
 
@@ -103,7 +106,7 @@ Universal apps that you can distribute in the provisioning package can be line-o
     
 6. In the **Available customizations** pane, click the **LicenseProductId** that you just added. 
 
-7. For **LicenseInstall**, click **Browse**, navigate to the license file that you renamed *<file name>*.**ms-windows-store-license**, and select the license file.
+7. For **LicenseInstall**, click **Browse**, navigate to the license file that you renamed *\<file name>*.**ms-windows-store-license**, and select the license file.
 
 [Learn more about distributing offline apps from the Microsoft Store for Business.](/microsoft-store/distribute-offline-apps)
 

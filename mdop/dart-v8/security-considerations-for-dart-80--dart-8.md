@@ -1,15 +1,15 @@
 ---
 title: Security Considerations for DaRT 8.0
 description: Security Considerations for DaRT 8.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 45ef8164-fee7-41a1-9a36-de4e3264e7a8
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

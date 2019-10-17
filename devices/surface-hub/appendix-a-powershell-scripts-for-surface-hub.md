@@ -534,7 +534,7 @@ if ($status.Count -gt 0)
         elseif ($v[0] -eq "F")
         {
             $color = "red"
-            $v += " Go to http://aka.ms/shubtshoot"
+            $v += " Go to https://aka.ms/shubtshoot"
         }
 
         Write-Host -NoNewline $k -ForegroundColor $color
@@ -611,7 +611,7 @@ function ExitIfError($strMsg)
 
 ## Check dependencies ##
 try {
-    Import-Module LyncOnlineConnector
+    Import-Module SkypeOnlineConnector
     Import-Module MSOnline
 }
 catch
@@ -978,7 +978,7 @@ if ($status.Count -gt 0)
         elseif ($v[0] -eq "F")
         {
             $color = "red"
-            $v += " Go to http://aka.ms/shubtshoot for help"
+            $v += " Go to https://aka.ms/shubtshoot for help"
         }
 
         Write-Host -NoNewline $k -ForegroundColor $color
@@ -1100,7 +1100,7 @@ if ($fSfbIsOnline -or $fExIsOnline)
 if ($fSfbIsOnline)
 {
     try {
-        Import-Module LyncOnlineConnector
+        Import-Module SkypeOnlineConnector
     }
     catch
     {
@@ -1513,7 +1513,7 @@ else
 if ($online)
 {
     try {
-        Import-Module LyncOnlineConnector
+        Import-Module SkypeOnlineConnector
     }
     catch
     {

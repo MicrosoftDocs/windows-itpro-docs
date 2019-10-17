@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: You can deploy Internet Explorer 11 to your users' computers by using your custom browser packages and Automatic Version Synchronization (AVS).
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: f51224bd-3371-4551-821d-1d62310e3384
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Deploy Internet Explorer 11 using Automatic Version Synchronization (AVS) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

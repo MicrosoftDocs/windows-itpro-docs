@@ -102,7 +102,7 @@ Supported operation is Get.
 ## Examples
 
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
     <SyncBody>
         <Atomic>  

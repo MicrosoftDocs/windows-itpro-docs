@@ -24,9 +24,9 @@ manager: dansimp
 
 Windows Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10.
 
-However, on endpoints and devices that are protected with a non-Microsoft antivirus or antimalware app, Windows Defender Antivirus will automatically disable itself. You can then choose to enable an optional, limited protection feature, called [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md).
+However, on endpoints and devices that are protected with a non-Microsoft antivirus or antimalware app, Windows Defender Antivirus will automatically disable itself.
 
-If you are also using Microsoft Defender Advanced Threat Protection, then Windows Defender AV will enter a passive mode.
+If you are also using Microsoft Defender Advanced Threat Protection, then Windows Defender AV will enter a passive mode. Important: Real time protection and and threats will not be remediated by Windows Defender AV.
 
 The following matrix illustrates the states that Windows Defender AV will enter when third-party antivirus products or Microsoft Defender ATP are also used. 
 
@@ -43,6 +43,10 @@ The following matrix illustrates the states that Windows Defender AV will enter 
 | Windows Server 2016 |                         Windows Defender AV                         |                       No                        |            Active mode            |
 
 (<a id="fn1">1</a>)  On Windows Server 2016, Windows Defender AV will not enter passive or disabled mode if you have also installed a third-party antivirus product. If you install a third-party antivirus product, you should [uninstall Windows Defender AV on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md) to prevent problems caused by having multiple antivirus products installed on a machine.
+If you are Using Windows Server, version 1803 and Windows 2019, you can enable passive mode by setting this registry key: 
+- Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection 
+- Name: ForceDefenderPassiveMode 
+- Value: 1
 
 See the [Windows Defender Antivirus on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md#install-or-uninstall-windows-defender-av-on-windows-server-2016) topic for key differences and management options for Windows Server installations.
 
