@@ -812,7 +812,7 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/event-views-exploit-guard",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/event-views",
 "redirect_document_id": true
 },
 {
