@@ -1,5 +1,5 @@
 ---
-title: Cloud-based management of Surface UEFI settings
+title: Intune management of Surface UEFI settings
 description: This article explains 
 ms.localizationpriority: medium
 ms.prod: w10
@@ -13,18 +13,20 @@ ms.reviewer: jessko
 manager: dansimp
 ms.audience: itpro
 ---
-# Cloud-based management of Surface UEFI settings
+# Intune management of Surface UEFI settings
 
 ## Introduction
 
-The ability to manage devices from the cloud has dramatically simplified IT deployment and provisioning across the lifecycle. With Device Firmware Configuration Interface (DFCI) profiles built into Microsoft Intune, Surface UEFI management extends the modern management stack down to the UEFI hardware level. DFCI supports zero-touch provisioning, eliminates BIOS passwords, provides control of security settings including boot options and built-in peripherals, and lays the groundwork for advanced security scenarios in the future.
+The ability to manage devices from the cloud has dramatically simplified IT deployment and provisioning across the lifecycle. With Device Firmware Configuration Interface (DFCI) profiles built into Microsoft Intune (now available in public preview), Surface UEFI management extends the modern management stack down to the UEFI hardware level. DFCI supports zero-touch provisioning, eliminates BIOS passwords, provides control of security settings including boot options and built-in peripherals, and lays the groundwork for advanced security scenarios in the future.
 
 ### Background
+
 Like any computer running Windows 10, Surface devices rely on code stored in the SoC that enables the CPU to interface with hard drives, display devices, USB ports, and other devices. The programs stored in this read-only memory (ROM) are collectively known as firmware (while programs stored in dynamic media are known as software).
 
 In contrast to other Windows 10 devices available in the market today, Surface provides IT admins with the ability to configure and manage firmware through a rich set of UEFI configuration settings. This provides a layer of hardware control on top of software-based policy management as implemented via mobile device management (MDM) policies, Configuration Manager or Group Policy. For example, organizations deploying devices in highly secure areas with sensitive information can prevent camera use by removing functionality at the hardware level. From a device standpoint, turning the camera off via a firmware setting is equivalent to physically removing the camera. Compare the added security of managing at the firmware level to relying only on operating system software settings. For example, if you disable the Windows audio service via a policy setting in a domain environment, a local admin could still re-enable the service.
 
 ### DFCI versus SEMM
+
 Until now, managing firmware required enrolling devices into Surface Enterprise Management Mode (SEMM) with the overhead of ongoing manual IT-intensive tasks. As an example, SEMM requires IT staff to physically access each PC to enter a two-digit pin as part of the certificate management process. Although SEMM remains a good solution for organizations in a strictly on-premises environment, its complexity and IT-intensive requirements make it costly to use.
 
 Now with newly integrated UEFI firmware management capabilities in Microsoft Intune, the ability to lock down hardware is simplified and easier to use with new features for provisioning, security, and streamlined updating all in a single console.
@@ -49,7 +51,7 @@ At this time, DFCI is supported in the following devices:
 
 Add your target Surface devices to an Azure AD security group. For more information about creating and managing security groups, refer to [Azure AD documentation](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 
-## Configuring DFCI management for Surface devices
+## Configure DFCI management for Surface devices
 
 A DFCI environment requires setting up a DFCI profile that contains  the settings and an Autopilot profile to apply the settings to registered devices. An enrollment status profile is also recommended to ensure settings are pushed down during OOBE setup when users first start the device. This guide explains how to configure the DFCI environment, verify DFCI settings are applied on target devices, remove DFCI policy settings, and unregister devices to prepare for transfer or resale.
 
@@ -61,7 +63,7 @@ Before configuring DFCI policy settings, first create a DFCI profile and assign 
 2. Select Windows 10 and later for platform type.
 3. In the Profile type drop down list, select **Device Firmware Configuration Interface** to open the DFCI blade containing all available policy settings. For information on DFCI settings, refer to Table 2 on this page below or the [Intune documentation](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows). You can configure DFCI settings during the initial setup process or later by editing the DFCI profile.
 
-![Create DFCI profile](images/df1.png)
+> ![Create DFCI profile](images/df1.png)
 
 4. Click **OK** and then select **Create**.
 5. Select **Assignments** and under **Select groups to include** select the Azure AD security group that contains your target devices, as shown in the following figure. Click **Save**.
@@ -86,27 +88,10 @@ Before configuring DFCI policy settings, first create a DFCI profile and assign 
 
 To ensure that devices apply the DFCI configuration during OOBE before users sign in, you need to configure enrollment status.
 
-1. Open Intune and select **Device enrollment > Windows enrollment > Enrollment Status Page** and then select the Default profile. Notice that the default profile assigned to all users on all devices is always applied.
-2. To edit the default profile, select **Settings** and configure the enrollment status settings, as recommended in the following table or as appropriate for your scenario.
-
-### Table 1. Recommended enrollment status settings for Surface devices
-
-| Setting                                                                                          | Value | Notes                                                                                                                                              |
-| ------------------------------------------------------------------------------------------------ | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Show app and profile installation progress                                                       | Yes   | The enrollment status page appears during initial device setup. If enabled, users can see the installation progress of assigned apps and profiles. |
-| Show time limit error when installation takes longer than specified number of minutes            | 60    | This is the default value.                                                                                                                         |
-| Show custom message when time limit error occurs                                                 | No    | This is the default value.                                                                                                                         |
-| Allow users to collect logs about installation errors                                            | Yes   | This is the default value.                                                                                                                         |
-| Block device use until all apps and profiles are installed                                       | Yes   | This ensures that the device applies the DFCI configuration during OOBE before the user signs in to the desktop.                                   |
-| Allow users to reset device if installation error occurs                                         | Yes   | Not the default value.                                                                                                                             |
-| Allow users to use device if installation error occurs                                           | Yes   | Not the default value.                                                                                                                             |
-| Block device use until these required apps are installed if they are assigned to the user/device | All   | This is the default value.                                                                                                                         |
-
- 
 For more information, refer to [Set up an enrollment status page](https://docs.microsoft.com/en-us/intune/enrollment/windows-enrollment-status).
 
 
-## Configuring DFCI settings on Surface devices
+## Configure DFCI settings on Surface devices
 
 DFCI includes a streamlined set of UEFI configuration policies that provide an extra level of security by locking down devices at the hardware level. DFCI is designed to be used in conjunction with mobile device management settings at the software level. Note that DFCI settings only affect hardware components built into Surface devices and do not extend to attached peripherals such as USB webcams. (However, you can use Device restriction policies in Intune to turn off access to attached peripherals at the software level).
 
@@ -114,12 +99,12 @@ You configure DFCI policy settings by editing the DFCI profile:
 
 - **Intune > Device configuration > Profiles > “DFCI profile name” > Properties > Settings**
 
-### Blocking user access to UEFI settings
+### Block user access to UEFI settings
 
 For many customers, the ability to block users from changing UEFI settings is critically important and a primary reason to use DFCI. As listed in Table 2, this is managed via Allow local user to change UEFI settings. If you do not edit or configure this setting, local users will be able to change any UEFI setting not managed by Intune. Therefore, it’s highly recommended to disable Allow local user to change UEFI settings.
 The rest of the DFCI settings enable you to turn off functionality that would otherwise be available to users. For example, if you need to protect sensitive information in highly secure areas, you can disable the camera. If you don’t want users booting from USB drives, you can disable that also.
 
-### Table 2. DFCI scenarios
+### Table 1. DFCI scenarios
 
 | Device management goal                        | Configuration steps                                                                           |
 | --------------------------------------------- | --------------------------------------------------------------------------------------------- |
@@ -136,11 +121,11 @@ NOTE: DFCI in Intune includes two settings that do not currently apply to Surfac
  
 Intune provides Scope tags to delegate administrative rights and Applicability Rules to manage device types. For more information about policy management support and full details on all DFCI settings, refer to [Microsoft Intune documentation](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows).
 
-## Registering devices in Autopilot
+## Register devices in Autopilot
 
 As stated above, DFCI can only be applied on devices registered in Windows Autopilot by your reseller or distributor and is only supported, at this time, on Surface Pro 7, Surface Pro X, and Surface Laptop 3. For security reasons, it’s not possible to “self-provision” your devices into Autopilot.
 
-## Manually Syncing Autopilot devices
+## Manually Sync Autopilot devices
 
 Although Intune policy settings typically get applied almost immediately, there may be a delay of 10 minutes before the settings take effect on targeted devices. In rare circumstances, delays of up to 8 hours are possible. To ensure settings apply as soon as possible, (such as in test scenarios), you can manually sync the target devices.
 
