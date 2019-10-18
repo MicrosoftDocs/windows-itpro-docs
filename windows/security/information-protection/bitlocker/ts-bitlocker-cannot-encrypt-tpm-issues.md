@@ -1,5 +1,5 @@
 ---
-title: BitLocker cannot encrypt a drive  known TPM issues 
+title: BitLocker cannot encrypt a drive known TPM issues 
 description: Provides guidance for troubleshooting known issues that may prevent BitLocker Drive Encryption from encrypting a drive, and that you can attribute to the TPM
 ms.reviewer: kaushika
 ms.prod: w10
@@ -11,7 +11,7 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/7/2019
+ms.date: 10/18/2019
 ---
 
 # BitLocker cannot encrypt a drive: known TPM issues
@@ -69,7 +69,7 @@ You have an environment that enforces the policy **Do not enable BitLocker until
 
 ### Cause
 
-The TPM did not have sufficient permissions on the TPM Devices container in AD DS. Therefore, the BitLocker recovery key could not be backed up to AD DS, and BitLocker Drive Encryption could not run.
+The TPM did not have sufficient permissions on the TPM Devices container in AD DS. Therefore, the BitLocker recovery information could not be backed up to AD DS, and BitLocker Drive Encryption could not run.
 
 This issue appears to be limited to computers that run versions of Windows that are older than Windows 10.
 

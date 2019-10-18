@@ -49,7 +49,7 @@ After Windows 7 was released, several other areas of BitLocker were improved:
    - Windows PowerShell
    - Windows Management Interface (WMI)
 
-- **Integration with Azure Active Directory** (Azure AD). BitLocker can store keys in Azure AD to make them easier to recover.
+- **Integration with Azure Active Directory** (Azure AD). BitLocker can store recovery information in Azure AD to make it easier to recover.
 
 - **[Direct memory access (DMA) port protection](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**. By using MDM policies to manage BitLocker, you can block a device's DMA ports and secure the device during its startup.
 

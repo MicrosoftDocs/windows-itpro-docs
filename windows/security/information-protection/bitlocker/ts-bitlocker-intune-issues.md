@@ -11,7 +11,7 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/14/2019
+ms.date: 10/18/2019
 ---
 
 # Enforcing BitLocker policies by using Intune: known issues
@@ -82,7 +82,7 @@ The event information resembles the following:
 
 ### Cause
 
-Windows Recovery Environment (WinRE) is a minimal Windows operating system that is based on Windows Preinstallation Environment (Windows PE). WinRE includes several tools that an administrator can use to recover or reset Windows and diagnose Windows issues. If a device cannot start the regular Windows operating system, the device tries to start Windows RE.
+Windows Recovery Environment (WinRE) is a minimal Windows operating system that is based on Windows Preinstallation Environment (Windows PE). WinRE includes several tools that an administrator can use to recover or reset Windows and diagnose Windows issues. If a device cannot start the regular Windows operating system, the device tries to start WinRE.
 
 The provisioning process enables BitLocker Drive Encryption on the operating system drive during the Windows PE phase of provisioning. This action makes sure that the drive is protected before the full operating system is installed. The provisioning process also creates a system partition for WinRE to use if the system crashes.
 
@@ -90,7 +90,7 @@ If WinRE is not available on the device, provisioning stops.
 
 ### Resolution
 
-You can resolve this issue by verifying the configuration of the disk partitions, the status of Windows RE, and the Windows Boot Loader configuration. To do this, follow these steps.
+You can resolve this issue by verifying the configuration of the disk partitions, the status of WinRE, and the Windows Boot Loader configuration. To do this, follow these steps.
 
 #### Step 1: Verify the configuration of the disk partitions
 
@@ -215,7 +215,7 @@ To verify the Secure Boot state, use the System Information app. To do this, fol
 
 ## <a id="issue-7"></a>Event ID 846, 778, and 851: Error 0x80072f9a
 
-In this case, you are deploying Intune policy to encrypt a Windows 10, version 1809 device and store the recovery key in Azure Active Directory (Azure AD). As part of the policy configuration, you have selected the **Allow standard users to enable encryption during Azure AD Join** option.
+In this case, you are deploying Intune policy to encrypt a Windows 10, version 1809 device and store the recovery password in Azure Active Directory (Azure AD). As part of the policy configuration, you have selected the **Allow standard users to enable encryption during Azure AD Join** option.
 
 The policy deployment fails and generates the following events (visible in Event Viewer in the **Applications and Services Logs\\Microsoft\\Windows\\BitLocker API** folder):
 
@@ -242,7 +242,7 @@ These events refer to Error code 0x80072f9a.
 
 ### Cause
 
-These events indicate that the logged-on user does not have permission to read the private key on the certificate that is generated as part of the provisioning and enrollment process. Therefore, the BitLocker MDM policy refresh fails.
+These events indicate that the signed-in user does not have permission to read the private key on the certificate that is generated as part of the provisioning and enrollment process. Therefore, the BitLocker MDM policy refresh fails.
 
 The issue affects Windows 10 version 1809.
 
@@ -331,9 +331,9 @@ During regular operations, BitLocker Drive Encryption generates events such as E
 
 ![Event ID 845, as shown in Event Viewer](./images/4509204_en_1.png)
 
-You can also determine whether the BitLocker recovery key has been uploaded to Azure by checking the device details in the Azure AD Devices section.
+You can also determine whether the BitLocker recovery password has been uploaded to Azure AD by checking the device details in the Azure AD Devices section.
 
-![BitLocker recovery key information as viewed in Azure AD](./images/4509205_en_1.png)
+![BitLocker recovery information as viewed in Azure AD](./images/4509205_en_1.png)
 
 On the device, check the Registry Editor to verify the policy settings on the device. Verify the entries under the following subkeys:
 
