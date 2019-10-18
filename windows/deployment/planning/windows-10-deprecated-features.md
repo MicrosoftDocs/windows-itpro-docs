@@ -27,6 +27,11 @@ If you have feedback about the proposed replacement of any of these features, yo
 
 |Feature    |  Details  | 
 | ----------- | --------------------- | 
+| Fresh Paint app | In a future release, the Fresh Paint app will be removed from the Microsoft Store on Windows 10. |
+| Hyper-V vSwitch on LBFO | In a future release, the Hyper-V vSwitch will no longer be able to be bound to an LBFO team.  Instead, it will have to be bound to a SET team.|
+| Language Community tab in Feedback Hub | We are planning to remove the Language Community tab in Feedback Hub in a future release. Users will be able to provide translation feedback using the normal feedback process ([Feedback Hub - Feedback](feedback-hub://?newFeedback=true&feedbackType=2)).  |
+| My People / People in the Shell |  My People is deprecated. It may be removed in a future update. | 
+| TFS1/TFS2 IME |  TSF1 and TSF2 IME will be replaced by TSF3 IME in a future release. This replacement is planned for a future release. TSF IME are Windows components you can add to enable typing text for Japanese, Simplified Chinese, Traditional Chinese, and Korean languages. ​|
 | Bing IME | Bing IME is still downloadable but is no longer being developed. | 
 | Taskbar settings roaming | Roaming of taskbar settings is no longer being developed and we plan to remove this capability in a future release. | 
 | Wi-Fi WEP and TKIP | Since the 1903 release, a warning message has appeared when connecting to Wi-Fi networks secured with WEP or TKIP (which are not as secure as those using WPA2 or WPA3). In a future release, any connection to a Wi-Fi network using these old ciphers will be disallowed. Wi-Fi routers should be updated to use AES ciphers, available with WPA2 or WPA3. | 
