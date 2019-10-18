@@ -5,7 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 manager: laurawi
 ms.author: greglin
 ms.topic: article
@@ -16,7 +17,7 @@ ms.topic: article
 
 Each release of Windows 10 contains many new and improved features. Occasionally we also remove features and functionality, usually because there is a better option.
 
-## Features removed or planned for replacement
+## Features removed
 
 See the following for details about feature support for each release of Windows 10.
 
@@ -25,6 +26,12 @@ See the following for details about feature support for each release of Windows 
 [Windows 10, version 1803](windows-10-1803-removed-features.md)<br>
 [Windows 10, version 1709](windows-10-1709-removed-features.md)<br>
 [Windows 10, version 1703](windows-10-1703-removed-features.md)
+
+## Features no longer being developed
+
+See the following topic for a list of features that are not removed, but are no longer being developed. These features might be removed in a future release.
+
+[Windows 10 removed features](windows-10-removed.features.md)
 
 Also see: [Windows 10 release information](https://docs.microsoft.com/windows/release-information/)
 
