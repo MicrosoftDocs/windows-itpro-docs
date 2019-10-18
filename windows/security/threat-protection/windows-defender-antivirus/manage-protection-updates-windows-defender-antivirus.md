@@ -30,11 +30,15 @@ Keeping your antivirus protection up to date is critical. There are two componen
 - *Where* the updates are downloaded from; and 
 - *When* updates are downloaded and applied. 
 
-This article describes the *where*: how to specify where updates should be downloaded from (this is also known as the fallback order).
+This article describes the *where*: how to specify where updates should be downloaded from (this is also known as the fallback order). See [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) topic for an overview on how updates work, and how to configure other aspects of updates (such as scheduling updates).
 
-See [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) topic for an overview on how updates work, and how to configure other aspects of updates (such as scheduling updates).
+> [!IMPORTANT]
+> Microsoft Defender Antivirus Security intelligence updates are delivered thru Windows Update and starting Monday October 21, 2019, all security intelligence updates will be SHA-2 signed exclusively. Your devices must be updated to support SHA-2 in order to update the security intelligence. To learn more, see [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).  
+
 
 <a id="fallback-order"></a>
+
+## Fallback order
 
 Typically, you configure endpoints to individually download updates from a primary source, followed by other sources in order of priority, based on your network configuration. Updates are obtained from sources in the order you specify. If a source is not available, the next source in the list is used.
 
@@ -136,7 +140,7 @@ SignatureDefinitionUpdateFileSharesSource
 ```
 
 See the following for more information:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
+- [Windows Defender WMIv2 APIs](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## Use Mobile Device Management (MDM) to manage the update location
 
