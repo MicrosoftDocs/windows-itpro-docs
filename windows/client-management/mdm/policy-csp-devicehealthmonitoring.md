@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
+ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
 manager: dansimp
@@ -63,14 +64,6 @@ manager: dansimp
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
 </tr>
 </table>
 
@@ -136,14 +129,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -206,14 +191,6 @@ IT Pros do not need to set this policy. Instead, Microsoft Intune is expected to
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
 </tr>
 </table>
 
