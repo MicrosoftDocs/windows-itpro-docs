@@ -11,7 +11,7 @@ manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
 ms.topic: troubleshooting
-ms.date: 10/7/2019
+ms.date: 10/18/2019
 ---
 
 # BitLocker and TPM: other known issues
