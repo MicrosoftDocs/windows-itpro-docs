@@ -20,7 +20,7 @@ Each version of Windows 10 adds new features and functionality; occasionally we 
 > [!NOTE]
 > Join the [Windows Insider program](https://insider.windows.com) to get early access to new Windows 10 builds and test these changes yourself.
 
-## Features we removed or will remove soon
+## Features we removed
 
 The following features and functionalities are removed from the installed product image for Windows 10, version 1903, or are planned for removal in an upcoming release. Applications or code that depend on these features won't function in this release unless you use another method.
 
