@@ -817,7 +817,7 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
 "redirect_document_id": true
 },
 {
