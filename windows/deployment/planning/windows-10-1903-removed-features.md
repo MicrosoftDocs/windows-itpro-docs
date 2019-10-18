@@ -17,7 +17,7 @@ ms.topic: article
 
 Each version of Windows 10 adds new features and functionality; occasionally we also remove features and functionality, often because we've added a better option. Below are the details about the features and functionalities that we removed in Windows 10, version 1903. **The list below is subject to change and might not include every affected feature or functionality.**
 
-For information about features that might be removed in a future release, see [Windows 10 deprecated features](windows-10-deprecated-features.md)
+For information about features that might be removed in a future release, see [Windows 10 features we’re no longer developing](windows-10-deprecated-features.md)
 
 > [!NOTE]
 > Join the [Windows Insider program](https://insider.windows.com) to get early access to new Windows 10 builds and test these changes yourself.

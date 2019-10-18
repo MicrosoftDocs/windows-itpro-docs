@@ -13,7 +13,9 @@ ms.topic: article
 
 > Applies to: Windows 10, version 1703
 
-The following features and functionalities in the Windows 10 Creators Update edition (Windows 10, version 1703) have either been removed from the product in the current release (*Removed*) or are not in active development and are planned for potential removal in subsequent releases.
+The following features and functionalities in the Windows 10 Creators Update edition (Windows 10, version 1703) have been removed from the product in the current release.
+
+For information about features that might be removed in a future release, see [Windows 10 features we’re no longer developing](windows-10-deprecated-features.md)
 
 This list is intended for IT professionals who are updating operating systems in a commercial environment. The plan and list are subject to change and may not include every deprecated feature or functionality. For more details about a listed feature or functionality and its replacement, see the documentation for that feature.
 

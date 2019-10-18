@@ -14,11 +14,13 @@ ms.topic: article
 
 > Applies to: Windows 10, version 1709
 
-The following features and functionalities in the Windows 10, version 1709 are either removed from the product in the current release (*Removed*) or are not in active development and might be removed in future releases.
+The following features and functionalities in the Windows 10, version 1709 are removed from the product in the current release.
 
-This list is intended to help customers consider these removals and deprecations for their own planning. The list is subject to change and may not include every deprecated feature or functionality.
+For information about features that might be removed in a future release, see [Windows 10 features we’re no longer developing](windows-10-deprecated-features.md)
 
-For more information about a listed feature or functionality and its replacement, see the documentation for that feature. You can also follow the provided links in this table to see additional resources. 
+The list is subject to change and may not include every deprecated feature or functionality.
+
+For more information about a listed feature or functionality and its replacement, see the documentation for that feature. You can also follow the links provided in this table to see additional resources. 
 
 | Feature  | Removed | Not actively developed |
 -|-|-

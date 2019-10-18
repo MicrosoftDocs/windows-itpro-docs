@@ -18,7 +18,7 @@ ms.topic: article
 
 Each release of Windows 10 adds new features and functionality; we also occasionally remove features and functionality, usually because we've added a better option. Here are the details about the features and functionalities that we removed in Windows 10, version 1809.
 
-For information about features that might be removed in a future release, see [Windows 10 deprecated features](windows-10-deprecated-features.md)
+For information about features that might be removed in a future release, see [Windows 10 features we’re no longer developing](windows-10-deprecated-features.md)
 
 > [!TIP]
 > You can get early access to Windows 10 builds by joining the [Windows Insider program](https://insider.windows.com) - this is a great way to test feature changes.
