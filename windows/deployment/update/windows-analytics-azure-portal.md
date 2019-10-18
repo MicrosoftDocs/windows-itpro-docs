@@ -70,7 +70,7 @@ To adjust settings for a Windows Analytics solution, first navigate to the **Sol
 
 From there, select the settings page to adjust specific settings:
 
-[![Settings page for Upgrade Readiness in Azure portsl](images/azure-portal-UR-settings.png)](images/azure-portal-UR-settings.png)
+[![Settings page for Upgrade Readiness in Azure portal](images/azure-portal-UR-settings.png)](images/azure-portal-UR-settings.png)
 
 >[!NOTE]
 >To access these settings, both the subscription and workspace require "contributor" permissions. You can view your current role and make changes in other roles by using the **Access control (IAM)** tab in Azure.
