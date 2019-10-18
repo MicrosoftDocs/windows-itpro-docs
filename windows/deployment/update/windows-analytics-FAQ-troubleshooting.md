@@ -153,7 +153,7 @@ For more information, see [Enrolling devices in Windows Analytics](windows-analy
 
 ### Apps not appearing in Device Health App Reliability
 
-[![App Reliability tile showing relability events trend](images/app-reliability.png)](images/app-reliability.png)
+[![App Reliability tile showing reliability events trend](images/app-reliability.png)](images/app-reliability.png)
 
 If apps that you know are crashing do not appear in App Reliability, follow these steps to investigate the issue:
 
