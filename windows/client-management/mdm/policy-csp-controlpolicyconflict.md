@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
+ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
 manager: dansimp
@@ -58,14 +59,6 @@ manager: dansimp
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -107,8 +100,8 @@ The [Policy DDF](policy-ddf-file.md) contains the following tags to identify the
 -  \<MSFT:GPRegistryMappedName\>    
 -  \<MSFT:GPDBMappedName\>  
 
-For the list MDM-GP mapping list, see [Policies supported by GP
-](policy-configuration-service-provider.md#policies-supported-by-gp).
+For the list MDM-GP mapping list, see [Policies supported by Group Policy
+](policies-supported-by-group-policy.md).
 
 The MDM Diagnostic report shows the applied configurations states of a device including policies, certificates, configuration sources, and resource information. The report includes a list of blocked GP settings because MDM equivalent is configured, if any. To get the diagnostic report, go to **Settings** > **Accounts** > **Access work or school** > and then click the desired work or school account. Scroll to the bottom of the page to **Advanced Diagnostic Report** and then click **Create Report**.
 

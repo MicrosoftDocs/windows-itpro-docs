@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
+ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
 manager: dansimp
@@ -201,14 +202,6 @@ manager: dansimp
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -280,14 +273,6 @@ The following list shows the supported values:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -366,14 +351,6 @@ Valid values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -437,14 +414,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -507,14 +476,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -580,14 +541,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -651,14 +604,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -726,14 +671,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -796,14 +733,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -892,14 +821,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -984,14 +905,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1071,14 +984,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1145,14 +1050,6 @@ Valid values:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1226,14 +1123,6 @@ Valid values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1306,14 +1195,6 @@ Valid values:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1389,14 +1270,6 @@ Valid values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1466,14 +1339,6 @@ Valid values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1539,14 +1404,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1609,14 +1466,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1696,14 +1545,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1780,14 +1621,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -1850,14 +1683,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td></td>
 </tr>
 </table>
 
@@ -1936,14 +1761,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2033,14 +1850,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2121,14 +1930,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2202,14 +2003,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2272,14 +2065,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2344,14 +2129,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2414,14 +2191,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2491,14 +2260,6 @@ Valid values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2566,14 +2327,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2658,14 +2411,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2733,14 +2478,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2815,14 +2552,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2902,14 +2631,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -2987,14 +2708,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3074,14 +2787,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3135,14 +2840,6 @@ Valid values:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3218,14 +2915,6 @@ Valid values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3291,14 +2980,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3355,14 +3036,6 @@ Default: Enabled.
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3436,14 +3109,6 @@ Valid values:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3520,14 +3185,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3596,14 +3253,6 @@ The following list shows the supported values:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3669,14 +3318,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3741,14 +3382,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3821,14 +3454,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3895,14 +3520,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -3968,14 +3585,6 @@ GP Info:
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -4040,14 +3649,6 @@ GP Info:
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 

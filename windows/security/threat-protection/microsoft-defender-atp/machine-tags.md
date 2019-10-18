@@ -49,6 +49,9 @@ To add machine tags using API, see [Add or remove machine tags API](add-or-remov
 
 Tags are added to the machine view and will also be reflected on the **Machines list** view. You can then use the **Tags** filter to see the relevant list of machines.
 
+>[!NOTE]
+> Filtering might not work on tag names that contain parenthesis.
+
 You can also delete tags from this view.
 
 ![Image of adding tags on a machine](images/more-manage-tags.png)
