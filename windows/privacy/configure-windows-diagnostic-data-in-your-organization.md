@@ -390,20 +390,26 @@ However, before more data is gathered, Microsoft’s privacy governance team, in
 > [!NOTE]
 > Crash dumps collected at this diagnostic data level may unintentionally contain personal data, such as portions of memory from a documents, a web page, etc.
 
-## Limit Enhanced diagnostic data to the minimum required by Windows Analytics
+## Limit Enhanced diagnostic data to the minimum required by Desktop Analytics
 
-Windows Analytics Device Health reports are powered by diagnostic data not included in the **Basic** level, such as crash reports and certain operating system events. In the past, organizations sending **Enhanced** or **Full** level diagnostic data were able to participate in Device Health. However, organizations that required detailed event and field level documentation were unable to move from **Basic** to **Enhanced**.
+> [!IMPORTANT]
+> The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported.
+> For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/en-us/help/4521815/windows-analytics-retirement).
 
-In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data to the minimum required by Windows Analytics** feature. When enabled, this feature lets you send only the following subset of **Enhanced** level diagnostic data. For more info about Device Health, see the [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor) topic.
+Desktop Analytics reports are powered by diagnostic data not included in the **Basic** level, such as crash reports and certain operating system events.
 
-- **Operating system events.** Limited to a small set required for analytics reports and documented in the [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) topic.
+In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data to the minimum required by Windows Analytics** feature. When enabled, this feature lets you send only the following subset of **Enhanced** level diagnostic data.
+
+- **Operating system events.** Limited to a small set required for analytics reports and documented in the [Windows 10 diagnostic data events and fields collected through the limit enhanced diagnostic data policy](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) topic.
 
 - **Some crash dump types.** Triage dumps for user mode and mini dumps for kernel mode.
 
 >[!NOTE]
 > Triage dumps are a type of [minidumps](https://docs.microsoft.com/windows/desktop/debug/minidump-files) that go through a process of user-sensitive information scrubbing. Some user-sensitive information may be missed in the process, and will therefore be sent with the dump.
 
-### Enable limiting enhanced diagnostic data to the minimum required by Windows Analytics
+With the retirement of Windows Analytics, this policy will continue to be supported by Desktop Analytics, but will not include Office related diagnostic data.
+
+### Enable limiting enhanced diagnostic data to the minimum required by Desktop Analytics
 
 1. Set the diagnostic data level to **Enhanced**, using either Group Policy or MDM.
 
