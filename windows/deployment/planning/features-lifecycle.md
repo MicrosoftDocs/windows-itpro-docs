@@ -29,9 +29,9 @@ See the following for details about feature support for each release of Windows 
 
 ## Features no longer being developed
 
-See the following topic for a list of features that are not removed, but are no longer being developed. These features might be removed in a future release.
+See the following topic for a list of features that are no longer being developed. These features might be removed in a future release.
 
-[Windows 10 removed features](windows-10-removed.features.md)
+[Windows 10 features we’re no longer developing](windows-10-deprecated-features.md)
 
 Also see: [Windows 10 release information](https://docs.microsoft.com/windows/release-information/)
 
