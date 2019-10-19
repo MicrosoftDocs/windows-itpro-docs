@@ -25,7 +25,7 @@ ms.reviewer:
 - Windows 10, version 1709 and newer
 
 > [!IMPORTANT]
-> The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](..\deployment\update\update-compliance-get-started.md) will continue to be supported.
+> The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](/windows/deployment/update/update-compliance-get-started) will continue to be supported.
 > For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/en-us/help/4521815/windows-analytics-retirement).
 
 Desktop Analytics reports are powered by diagnostic data not included in the Basic level.
