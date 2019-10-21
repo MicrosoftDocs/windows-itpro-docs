@@ -842,12 +842,12 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/prerelease.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/prerelease",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prerelease",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/troubleshoot-asr.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-asr",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr",
 "redirect_document_id": true
 },
 {
