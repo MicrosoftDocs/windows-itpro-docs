@@ -9,6 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
+ms.localizationpriority: medium
 ms.date: 10/21/2019
 ---
 
@@ -138,7 +139,7 @@ The following list shows the supported values:
 -   2 = Manual steps required
 -   3 = Full scan required
 -   4 = Reboot required
--   5 = Remediated with non critical failures
+-   5 = Remediated with noncritical failures
 -   6 = Quarantined
 -   7 = Removed
 -   8 = Cleaned
@@ -243,7 +244,7 @@ The following list shows the supported values:
 -   2 = Pending reboot
 -   4 = Pending manual steps (Windows Defender is waiting for the user to take some action, such as restarting the computer or running a full scan)
 -   8 = Pending offline scan
--   16 = Pending critical failure (Windows Defender has failed critically and an Adminsitrator needs to investigate and take some action, such as restarting the computer or reinstalling Windows Defender)
+-   16 = Pending critical failure (Windows Defender has failed critically and an Administrator needs to investigate and take some action, such as restarting the computer or reinstalling Windows Defender)
 
 Supported operation is Get.
 
