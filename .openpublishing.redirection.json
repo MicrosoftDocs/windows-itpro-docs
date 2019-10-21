@@ -822,12 +822,12 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/graphics.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/graphics",
-"redirect_document_id": true
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/import-export-exploit-protection-emet-xml.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/import-export-exploit-protection-emet-xml",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml",
 "redirect_document_id": true
 },
 {
