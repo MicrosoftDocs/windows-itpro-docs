@@ -1,6 +1,6 @@
 ---
 title: Intune management of Surface UEFI settings
-description: This article explains 
+description: This article explains how to configure a DFCI environment in Microsoft Intune and manage firmware settings for targeted Surface devices.
 ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -53,7 +53,7 @@ Add your target Surface devices to an Azure AD security group. For more informat
 
 ## Configure DFCI management for Surface devices
 
-A DFCI environment requires setting up a DFCI profile that contains  the settings and an Autopilot profile to apply the settings to registered devices. An enrollment status profile is also recommended to ensure settings are pushed down during OOBE setup when users first start the device. This guide explains how to configure the DFCI environment, verify DFCI settings are applied on target devices, remove DFCI policy settings, and unregister devices to prepare for transfer or resale.
+A DFCI environment requires setting up a DFCI profile that contains  the settings and an Autopilot profile to apply the settings to registered devices. An enrollment status profile is also recommended to ensure settings are pushed down during OOBE setup when users first start the device. This guide explains how to configure the DFCI environment and manage UEFI configuration settings for targeted Surface devices.
 
 ## Create DFCI profile
 
