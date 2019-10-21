@@ -2,7 +2,7 @@
 title: Installing Microsoft Defender ATP for Linux manually
 ms.reviewer: 
 description: Describes how to install Microsoft Defender ATP for Linux manually, from the command line.
-keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, edhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
