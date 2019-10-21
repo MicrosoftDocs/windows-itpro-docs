@@ -26,7 +26,7 @@ ms.topic: article
 
 
 
-Set the baselines for calculating the score of Microsoft Defender security controls on the Secure Score dashboard. If you use third-party solutions, consider excluding the corresponding controls from the calculations.
+Set the baselines for calculating the score of security controls on the Secure Score dashboard. If you use third-party solutions, consider excluding the corresponding controls from the calculations.
 
   >[!NOTE]
   >Changes might take up to a few hours to reflect on the dashboard. 
