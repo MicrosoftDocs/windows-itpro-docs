@@ -21,6 +21,7 @@ Each release of Windows 10 contains many new and improved features. Occasionally
 
 See the following for details about feature support for each release of Windows 10.
 
+[Windows 10, version 1909](windows-10-1909-removed-features.md)<br>
 [Windows 10, version 1903](windows-10-1903-removed-features.md)<br>
 [Windows 10, version 1809](windows-10-1809-removed-features.md)<br>
 [Windows 10, version 1803](windows-10-1803-removed-features.md)<br>
