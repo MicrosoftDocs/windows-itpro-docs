@@ -792,12 +792,12 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/evaluate-controlled-folder-access.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/evaluate-controlled-folder-access",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-controlled-folder-access",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/evaluate-exploit-protection.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/evaluate-exploit-protection",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluate-exploit-protection",
 "redirect_document_id": true
 },
 {
