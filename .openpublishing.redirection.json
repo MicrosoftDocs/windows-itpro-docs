@@ -747,17 +747,17 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/customize-attack-surface-reduction.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/customize-attack-surface-reduction",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/customize-controlled-folders-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/customize-controlled-folders-exploit-guard",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-controlled-folders",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/customize-exploit-protection.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/customize-exploit-protection",
+"redirect_url": "https://docs.microsoft.com/windows/security/microsoft-defender-atp/customize-exploit-protection",
 "redirect_document_id": true
 },
 {
