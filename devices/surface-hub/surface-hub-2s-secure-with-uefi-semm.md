@@ -4,8 +4,8 @@ description: "Learn more about securing Surface Hub 2S with SEMM."
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
