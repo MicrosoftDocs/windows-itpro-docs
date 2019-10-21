@@ -767,7 +767,7 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction",
 "redirect_document_id": true
 },
 {
