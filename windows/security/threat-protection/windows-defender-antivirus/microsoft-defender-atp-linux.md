@@ -2,7 +2,7 @@
 title: Microsoft Defender ATP for Linux
 ms.reviewer: 
 description: Describes how to install and use Microsoft Defender ATP for Linux.
-keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, edhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
