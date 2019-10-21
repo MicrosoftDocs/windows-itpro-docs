@@ -40,7 +40,8 @@ Before you get started, see [the main Microsoft Defender ATP for Linux page](mic
 Follow the steps given in [Configure Microsoft's Linux Software Repository](https://docs.microsoft.com/en-us/windows-server/administration/linux-package-repository-for-microsoft-software) to setup the repository.
 
 > [!NOTE]
-> **TODO:** Use a forward link for above instead of URL
+> * **TODO:** Use a forward link for above instead of URL  
+> * I am assuming that ring 0 customers will download the onboarding package from ATP portal
 
 ## Download onboarding package
 
@@ -97,10 +98,10 @@ To complete this process, you must have admin privileges on the machine.
 
     ```bash
     $ /usr/bin/python WindowsDefenderATPOnboarding.py
-    Generating /Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist ... (You may be required to enter sudo password)
+    Generating /etc/opt/microsoft/mdatp/mdatp_onboard.json ... (You may be required to enter sudo password)
     ```
 > [!NOTE]
-> **TODO:** update the path associated with Generating ...
+> **TODO:** verify the path associated with above command.
 
 3. Verify that the machine is now associated with your organization and reports a valid *orgId*:
 
@@ -109,13 +110,15 @@ To complete this process, you must have admin privileges on the machine.
     E6875323-A6C0-4C60-87AD-114BBE7439B8
     ```
 
-After installation, you'll see the status by running the following command:
+After installation, you can see the status by running the following command:
 
 ```bash
-mdatp --health
+$ mdatp --health healthy
+1
 ```
 
-**TODO:** Add step to verify
+> [!NOTE]
+> **TODO:** Should we add eicar detection step?
 
 ## Logging installation issues
 

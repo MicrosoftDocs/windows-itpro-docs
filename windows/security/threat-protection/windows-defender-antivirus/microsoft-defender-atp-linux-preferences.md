@@ -1,8 +1,8 @@
 ---
-title: Set preferences for Microsoft Defender ATP for Mac
+title: Set preferences for Microsoft Defender ATP for Linux
 ms.reviewer: 
-description: Describes how to configure Microsoft Defender ATP for Mac in enterprises.
-keywords: microsoft, defender, atp, mac, management, preferences, enterprise, intune, jamf, macos, mojave, high sierra, sierra
+description: Describes how to configure Microsoft Defender ATP for Linux in enterprises.
+keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, edhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -18,27 +18,30 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Set preferences for Microsoft Defender ATP for Mac
+# Set preferences for Microsoft Defender ATP for Linux
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
 >[!IMPORTANT]
->This topic contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise environments. If you are interested in configuring the product on a device from the command-line, please refer to the [Resources](microsoft-defender-atp-mac-resources.md#configuring-from-the-command-line) page.
+>This topic contains instructions for how to set preferences for Microsoft Defender ATP for Linux in enterprise environments. If you are interested in configuring the product on a device from the command-line, please refer to the [Resources](microsoft-defender-atp-linux-resources.md#configuring-from-the-command-line) page.
 
-In enterprise environments, Microsoft Defender ATP for Mac can be managed through a configuration profile. This profile is deployed from management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
+In enterprise environments, Microsoft Defender ATP for Linux can be managed through a configuration profile. This profile is deployed from management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
 
 This topic describes the structure of this profile (including a recommended profile that you can use to get started) and instructions for how to deploy the profile.
 
 ## Configuration profile structure
 
-The configuration profile is a .plist file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
-
->[!CAUTION]
->The layout of the configuration profile depends on the management console that you are using. The following sections contain examples of configuration profiles for JAMF and Intune.
+The configuration profile is a .json file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
 
 The top level of the configuration profile includes product-wide preferences and entries for subareas of the product, which are explained in more detail in the next sections.
+
+>[!NOTE]
+> **TODO:**
+> * Should Domain be removed from all the entries below?
+> * Should we add path to wdavcfg?
+> * Verify each of below?
 
 ### Antivirus engine preferences
 
@@ -240,33 +243,12 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
 
-### User interface preferences
-
-The *userInterface* section of the configuration profile is used to manage the preferences of the user interface of the product.
-
-|||
-|:---|:---|
-| **Domain** | com.microsoft.wdav |
-| **Key** | userInterface |
-| **Data type** | Dictionary (nested preference) |
-| **Comments** | See the following sections for a description of the dictionary contents. |
-
-#### Show / hide status menu icon
-
-Whether the status menu icon (shown in the top-right corner of the screen) is hidden or not.
-
-|||
-|:---|:---|
-| **Domain** | com.microsoft.wdav |
-| **Key** | hideStatusMenuIcon |
-| **Data type** | Boolean |
-| **Possible values** | false (default) <br/> true |
-
 ## Recommended configuration profile
 
 To get started, we recommend the following configuration profile for your enterprise to take advantage of all protection features that Microsoft Defender ATP provides.
 
 The following configuration profile will:
+
 - Enable real-time protection (RTP)
 - Specify how the following threat types are handled:
   - **Potentially unwanted applications (PUA)** are blocked
@@ -274,350 +256,79 @@ The following configuration profile will:
 - Enable cloud delivered protection
 - Enable automatic sample submission
 
-### JAMF profile
+### Sample profile
 
-```XML
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>antivirusEngine</key>
-    <dict>
-        <key>enableRealTimeProtection</key>
-        <true/>
-        <key>threatTypeSettings</key>
-        <array>
-            <dict>
-                <key>key</key>
-                <string>potentially_unwanted_application</string>
-                <key>value</key>
-                <string>block</string>
-            </dict>
-            <dict>
-                <key>key</key>
-                <string>archive_bomb</string>
-                <key>value</key>
-                <string>audit</string>
-            </dict>
-        </array>
-    </dict>
-    <key>cloudService</key>
-    <dict>
-        <key>enabled</key>
-        <true/>
-        <key>automaticSampleSubmission</key>
-        <true/>
-    </dict>
-</dict>
-</plist>
-```
-
-### Intune profile
-
-```XML
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1">
-    <dict>
-        <key>PayloadUUID</key>
-        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
-        <key>PayloadType</key>
-        <string>Configuration</string>
-        <key>PayloadOrganization</key>
-        <string>Microsoft</string>
-        <key>PayloadIdentifier</key>
-        <string>com.microsoft.wdav</string>
-        <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
-        <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
-        <key>PayloadVersion</key>
-        <integer>1</integer>
-        <key>PayloadEnabled</key>
-        <true/>
-        <key>PayloadRemovalDisallowed</key>
-        <true/>
-        <key>PayloadScope</key>
-        <string>System</string>
-        <key>PayloadContent</key>
-        <array>
-            <dict>
-                <key>PayloadUUID</key>
-                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
-                <key>PayloadType</key>
-                <string>com.microsoft.wdav</string>
-                <key>PayloadOrganization</key>
-                <string>Microsoft</string>
-                <key>PayloadIdentifier</key>
-                <string>com.microsoft.wdav</string>
-                <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
-                <key>PayloadDescription</key>
-                <string/>
-                <key>PayloadVersion</key>
-                <integer>1</integer>
-                <key>PayloadEnabled</key>
-                <true/>
-                <key>antivirusEngine</key>
-                <dict>
-                    <key>enableRealTimeProtection</key>
-                    <true/>
-                    <key>threatTypeSettings</key>
-                    <array>
-                        <dict>
-                            <key>key</key>
-                            <string>potentially_unwanted_application</string>
-                            <key>value</key>
-                            <string>block</string>
-                        </dict>
-                        <dict>
-                            <key>key</key>
-                            <string>archive_bomb</string>
-                            <key>value</key>
-                            <string>audit</string>
-                        </dict>
-                    </array>
-                </dict>
-                <key>cloudService</key>
-                <dict>
-                    <key>enabled</key>
-                    <true/>
-                    <key>automaticSampleSubmission</key>
-                    <true/>
-                </dict>
-            </dict>
-        </array>
-    </dict>
-</plist>
+```JSON
+{
+   "antivirusEngine":{
+      "enableRealTimeProtection":true,
+      "threatTypeSettings":[
+         {
+            "key":"potentially_unwanted_application",
+            "value":"block"
+         },
+         {
+            "key":"archive_bomb",
+            "value":"audit"
+         }
+      ]
+   },
+   "cloudService":{
+      "automaticSampleSubmission":true,
+      "enabled":true,
+   },
+}
 ```
 
 ## Full configuration profile example
 
 The following configuration profile contains entries for all settings described in this document and can be used for more advanced scenarios where you want more control over the product.
 
-### JAMF profile
+### Full profile
 
-```XML
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>antivirusEngine</key>
-    <dict>
-        <key>enableRealTimeProtection</key>
-        <true/>
-        <key>passiveMode</key>
-        <false/>
-        <key>exclusions</key>
-        <array>
-            <dict>
-                <key>$type</key>
-                <string>excludedPath</string>
-                <key>isDirectory</key>
-                <false/>
-                <key>path</key>
-                <string>/var/log/system.log</string>
-            </dict>
-            <dict>
-                <key>$type</key>
-                <string>excludedPath</string>
-                <key>isDirectory</key>
-                <true/>
-                <key>path</key>
-                <string>/home</string>
-            </dict>
-            <dict>
-                <key>$type</key>
-                <string>excludedFileExtension</string>
-                <key>extension</key>
-                <string>pdf</string>
-            </dict>
-        </array>
-        <key>allowedThreats</key>
-        <array>
-            <string>EICAR-Test-File (not a virus)</string>
-        </array>
-        <key>threatTypeSettings</key>
-        <array>
-            <dict>
-                <key>key</key>
-                <string>potentially_unwanted_application</string>
-                <key>value</key>
-                <string>block</string>
-            </dict>
-            <dict>
-                <key>key</key>
-                <string>archive_bomb</string>
-                <key>value</key>
-                <string>audit</string>
-            </dict>
-        </array>
-    </dict>
-    <key>cloudService</key>
-    <dict>
-        <key>enabled</key>
-        <true/>
-        <key>diagnosticLevel</key>
-        <string>optional</string>
-        <key>automaticSampleSubmission</key>
-        <true/>
-    </dict>
-    <key>userInterface</key>
-    <dict>
-        <key>hideStatusMenuIcon</key>
-        <false/>
-    </dict>
-</dict>
-</plist>
-```
-
-### Intune profile
-
-```XML
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1">
-    <dict>
-        <key>PayloadUUID</key>
-        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
-        <key>PayloadType</key>
-        <string>Configuration</string>
-        <key>PayloadOrganization</key>
-        <string>Microsoft</string>
-        <key>PayloadIdentifier</key>
-        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
-        <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP settings</string>
-        <key>PayloadDescription</key>
-        <string>Microsoft Defender ATP configuration settings</string>
-        <key>PayloadVersion</key>
-        <integer>1</integer>
-        <key>PayloadEnabled</key>
-        <true/>
-        <key>PayloadRemovalDisallowed</key>
-        <true/>
-        <key>PayloadScope</key>
-        <string>System</string>
-        <key>PayloadContent</key>
-        <array>
-            <dict>
-                <key>PayloadUUID</key>
-                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
-                <key>PayloadType</key>
-                <string>com.microsoft.wdav</string>
-                <key>PayloadOrganization</key>
-                <string>Microsoft</string>
-                <key>PayloadIdentifier</key>
-                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
-                <key>PayloadDisplayName</key>
-                <string>Microsoft Defender ATP configuration settings</string>
-                <key>PayloadDescription</key>
-                <string/>
-                <key>PayloadVersion</key>
-                <integer>1</integer>
-                <key>PayloadEnabled</key>
-                <true/>
-                <key>antivirusEngine</key>
-                <dict>
-                    <key>enableRealTimeProtection</key>
-                    <true/>
-                    <key>passiveMode</key>
-                    <false/>
-                    <key>exclusions</key>
-                    <array>
-                        <dict>
-                            <key>$type</key>
-                            <string>excludedPath</string>
-                            <key>isDirectory</key>
-                            <false/>
-                            <key>path</key>
-                            <string>/var/log/system.log</string>
-                        </dict>
-                        <dict>
-                            <key>$type</key>
-                            <string>excludedPath</string>
-                            <key>isDirectory</key>
-                            <true/>
-                            <key>path</key>
-                            <string>/home</string>
-                        </dict>
-                        <dict>
-                            <key>$type</key>
-                            <string>excludedFileExtension</string>
-                            <key>extension</key>
-                            <string>pdf</string>
-                        </dict>
-                    </array>
-                    <key>allowedThreats</key>
-                    <array>
-                        <string>EICAR-Test-File (not a virus)</string>
-                    </array>
-                    <key>threatTypeSettings</key>
-                    <array>
-                        <dict>
-                            <key>key</key>
-                            <string>potentially_unwanted_application</string>
-                            <key>value</key>
-                            <string>block</string>
-                        </dict>
-                        <dict>
-                            <key>key</key>
-                            <string>archive_bomb</string>
-                            <key>value</key>
-                            <string>audit</string>
-                        </dict>
-                    </array>
-                </dict>
-                <key>cloudService</key>
-                <dict>
-                    <key>enabled</key>
-                    <true/>
-                    <key>diagnosticLevel</key>
-                    <string>optional</string>
-                    <key>automaticSampleSubmission</key>
-                    <true/>
-                </dict>
-                <key>userInterface</key>
-                <dict>
-                    <key>hideStatusMenuIcon</key>
-                    <false/>
-                </dict>
-            </dict>
-        </array>
-    </dict>
-</plist>
+```JSON
+{ 
+   "antivirusEngine":{ 
+      "enableRealTimeProtection":true,
+      "passiveMode":false,
+      "exclusions":[ 
+         { 
+            "$type":"excludedPath",
+            "isDirectory":false,
+            "path":"/var/log/system.log"
+         },
+         { 
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/home"
+         },
+         { 
+            "$type":"excludedFileExtension",
+            "extension":"pdf"
+         }
+      ],
+      "allowedThreats":[ 
+         "EICAR-Test-File (not a virus)"
+      ],
+      "threatTypeSettings":[ 
+         { 
+            "key":"potentially_unwanted_application",
+            "value":"block"
+         },
+         { 
+            "key":"archive_bomb",
+            "value":"audit"
+         }
+      ]
+   },
+   "cloudService":{ 
+      "enabled":true,
+      "diagnosticLevel":"optional",
+      "automaticSampleSubmission":true,
+   },
+}
 ```
 
 ## Configuration profile deployment
 
-Once you've built the configuration profile for your enterprise, you can deploy it through the management console that your enterprise is using. The following sections provide instructions on how to deploy this profile using JAMF and Intune.
-
-### JAMF deployment
-
-From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with *com.microsoft.wdav* as the preference domain and upload the .plist produced earlier.
-
->[!CAUTION]
->You must enter the correct preference domain (*com.microsoft.wdav*), otherwise the preferences will not be recognized by the product.
-
-### Intune deployment
-
-1. Open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create Profile**.
-
-2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Custom**. Select Configure.
-
-3. Save the .plist produced earlier as **com.microsoft.wdav.xml**.
-
-4. Enter **com.microsoft.wdav** as the **custom configuration profile name**.
-
-5. Open the configuration profile and upload **com.microsoft.wdav.xml**. This file was created in step 3.
-
-6. Select **OK**.
-
-7. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
-
->[!CAUTION]
->You must enter the correct custom configuration profile name, otherwise these preferences will not be recognized by the product.
-
-## Resources
-
-- [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)
+Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using.
