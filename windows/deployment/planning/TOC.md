@@ -6,7 +6,7 @@
 
 ## Features removed or planned for replacement
 ### [Windows 10 features lifecycle](features-lifecycle.md)
-### [Deprecated features](windows-10-deprecated-features.md)
+### [Features planned for replacement](windows-10-deprecated-features.md)
 ### Features removed
 #### [Windows 10, version 1909](windows-10-1909-removed-features.md)
 #### [Windows 10, version 1903](windows-10-1903-removed-features.md)
