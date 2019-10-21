@@ -7,8 +7,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
-ms.author: greglin
+audience: itproauthor: jaimeo
+author: jaimeo
+ms.author: jaimeo
 ms.collection: M365-analytics
 ms.topic: article
 ---

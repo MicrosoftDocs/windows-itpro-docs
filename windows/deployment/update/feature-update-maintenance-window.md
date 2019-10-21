@@ -4,9 +4,10 @@ description: Learn how to deploy feature updates during a maintenance window
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itproauthor: jaimeo
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: jaimeo
 ms.date: 07/09/2018
 ms.reviewer: 
 manager: laurawi

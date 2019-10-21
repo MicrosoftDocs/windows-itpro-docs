@@ -5,9 +5,9 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: article
-ms.author: greglin
+ms.author: jaimeo
 audience: itpro
-author: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
 ms.date: 03/13/2019
 ms.reviewer: 

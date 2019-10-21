@@ -4,9 +4,9 @@ description: Use BranchCache to optimize network bandwidth during update deploym
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: jaimeo
 ms.date: 07/27/2017
 ms.reviewer: 
 manager: laurawi

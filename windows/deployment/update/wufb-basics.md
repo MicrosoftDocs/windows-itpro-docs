@@ -4,9 +4,11 @@ description: Learn how to get started using the Basic GPO in Windows Update for 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
-ms.localizationpriority: medium
-ms.audience: itproauthor: greg-lindsay
+audience: itproauthor: jaimeo
+author: jaimeo
+ms.localizationprioauthor: jaimeo
+ms.audience: itpro
+author: jaimeo
 ms.date: 06/20/2018
 ms.reviewer: 
 manager: laurawi
