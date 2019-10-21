@@ -9,7 +9,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.date: 10/20/2019
-ms.reviewer: jessko
+ms.reviewer: jesko
 manager: dansimp
 ms.audience: itpro
 ---
@@ -73,7 +73,7 @@ Before configuring DFCI policy settings, first create a DFCI profile and assign 
 ## Create Autopilot profile
 
 1. Go to **Intune > Device enrollment > Windows enrollment** and scroll down to select **Deployment Profiles**.
-2. Select **Create profile**, enter a name; for example, My Autopilot profile, and select Next.
+2. Select **Create profile**, enter a name; for example, My Autopilot profile, and select **Next**.
 3. Select the following settings:
 
 - Deployment mode: **User-Driven**.
@@ -82,7 +82,7 @@ Before configuring DFCI policy settings, first create a DFCI profile and assign 
 4. Leave the remaining default settings unchanged and select **Next**
 5. On the Scope tags page, select **Next**.
 6. On the Assignments page, choose **Select groups to include** and click your Azure AD security group. Select **Next**.
-7. Accept the summary and then select **Create**. This Autopilot profile is now created and assigned to the group.
+7. Accept the summary and then select **Create**. The Autopilot profile is now created and assigned to the group.
 
 ## Configure Enrollment Status Page
 
@@ -101,21 +101,22 @@ You configure DFCI policy settings by editing the DFCI profile:
 
 ### Block user access to UEFI settings
 
-For many customers, the ability to block users from changing UEFI settings is critically important and a primary reason to use DFCI. As listed in Table 2, this is managed via Allow local user to change UEFI settings. If you do not edit or configure this setting, local users will be able to change any UEFI setting not managed by Intune. Therefore, it’s highly recommended to disable Allow local user to change UEFI settings.
-The rest of the DFCI settings enable you to turn off functionality that would otherwise be available to users. For example, if you need to protect sensitive information in highly secure areas, you can disable the camera. If you don’t want users booting from USB drives, you can disable that also.
+For many customers, the ability to block users from changing UEFI settings is critically important and a primary reason to use DFCI. As listed in the followng table, this is managed via the setting **Allow local user to change UEFI settings**. If you do not edit or configure this setting, local users will be able to change any UEFI setting not managed by Intune. Therefore, it’s highly recommended to disable **Allow local user to change UEFI settings.**
+The rest of the DFCI settings enable you to turn off functionality that would otherwise be available to users. For example, if you need to protect sensitive information in highly secure areas, you can disable the camera, and if you don’t want users booting from USB drives, you can disable that also.
 
 ### Table 1. DFCI scenarios
 
 | Device management goal                        | Configuration steps                                                                           |
 | --------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| Block local users from changing UEFI settings | Under Security Features > Allow local user to change UEFI settings, select None.              |
-| Disable cameras                               | Under Built in Hardware > Cameras, select Disabled.                                       |
-| Disable Microphones and speakers              | Under Built in Hardware > Microphones and speakers, select Disabled.                      |
-| Disable radios (Bluetooth, Wi-Fi)             | Under Built in Hardware > Radios (Bluetooth, Wi-Fi, etc…), select Disabled.                   |
-| Disable Boot from external media (USB, SD)    | Under Built in Hardware > Boot Options > Boot from external media (USB, SD), select Disabled. |
+| Block local users from changing UEFI settings | Under **Security Features > Allow local user to change UEFI settings**, select **None**.              |
+| Disable cameras                               | Under **Built in Hardware > Cameras**, select **Disabled**.                                       |
+| Disable Microphones and speakers              | Under **Built in Hardware > Microphones and speakers**, select **Disabled**.                      |
+| Disable radios (Bluetooth, Wi-Fi)             | Under **Built in Hardware > Radios (Bluetooth, Wi-Fi, etc…)**, select **Disabled**.                   |
+| Disable Boot from external media (USB, SD)    | Under **Built in Hardware > Boot Options > Boot from external media (USB, SD)**, select **Disabled**. |
 
  
-NOTE: DFCI in Intune includes two settings that do not currently apply to Surface devices:
+> [!NOTE]
+>  DFCI in Intune includes two settings that do not currently apply to Surface devices:
 - CPU and IO virtualization
 - Disable Boot from network adapters
  
@@ -129,11 +130,12 @@ As stated above, DFCI can only be applied on devices registered in Windows Autop
 
 Although Intune policy settings typically get applied almost immediately, there may be a delay of 10 minutes before the settings take effect on targeted devices. In rare circumstances, delays of up to 8 hours are possible. To ensure settings apply as soon as possible, (such as in test scenarios), you can manually sync the target devices.
 
-- In Intune, go to Device enrollment > Windows enrollment > Windows Autopilot Devices and select Sync.
+- In Intune, go to **Device enrollment > Windows enrollment > Windows Autopilot Devices** and select **Sync**.
 
  For more information, refer to [Sync your Windows device manually](https://docs.microsoft.com/en-us/intune-user-help/sync-your-device-manually-windows).
 
-NOTE: When adjusting settings directly in UEFI, you need to ensure the device fully restarts to the standard Windows login.
+> [!NOTE]
+> When adjusting settings directly in UEFI, you need to ensure the device fully restarts to the standard Windows login.
 
 ## Verifying UEFI settings on DFCI-managed devices
 
@@ -146,8 +148,9 @@ In a test environment, you can verify settings in the Surface UEFI interface.
 
 Note how:
 
-- The settings are greyed out because Allow local user to change UEFI setting is set to None.
-- Audio is set to off because Microphones and speakers are set to Disabled.
+- The settings are greyed out because **Allow local user to change UEFI setting** is set to None.
+- Audio is set to off because **Microphones and speakers** are set to **Disabled**.
+
 ## Removing DFCI policy settings
 
 When you create a DFCI profile, all configured settings will remain in effect across all devices within the profile’s scope of management. You can only remove DFCI policy settings by editing the DFCI profile directly.
@@ -162,3 +165,8 @@ If the original DFCI profile has been deleted, you can remove policy settings by
 4. Open Surface UEFI, which involves pressing the **Volume +** and **Power** buttons at the same time.
 5. Select **Management > Configure > Refresh from Network**.
 6. Validate DFCI is removed from the device in the UEFI.
+
+## Learn more
+- [Windows Autopilot](https://www.microsoft.com/microsoft-365/windows/windows-autopilot)
+- [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md) 
+- [Use DFCI profiles on Windows devices in Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)
