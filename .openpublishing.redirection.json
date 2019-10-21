@@ -732,7 +732,7 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/collect-cab-files-exploit-guard-submission",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/collect-investigation-package",
 "redirect_document_id": true
 },
 {
@@ -3158,7 +3158,7 @@
 },
 {
 "source_path": "windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection",
 "redirect_document_id": true
 },
 {
@@ -12198,8 +12198,8 @@
 },
 {
 "source_path": "windows/keep-secure/requirements-and-deployment-planning-guidelines-for-device-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/requirements-and-deployment-planning-guidelines-for-virtualization-based-protection-of-code-integrity",
-"redirect_document_id": true
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/requirements-for-deploying-applocker-policies.md",
