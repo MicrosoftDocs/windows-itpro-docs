@@ -852,12 +852,12 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/troubleshoot-exploit-protection-mitigations.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-exploit-protection-mitigations",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-exploit-protection-mitigations",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/troubleshoot-np.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/troubleshoot-np",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-np",
 "redirect_document_id": true
 },
 {
