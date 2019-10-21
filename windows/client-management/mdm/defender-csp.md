@@ -9,7 +9,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 07/19/2018
+ms.localizationpriority: medium
+ms.date: 10/21/2019
 ---
 
 # Defender CSP
@@ -138,7 +139,7 @@ The following list shows the supported values:
 -   2 = Manual steps required
 -   3 = Full scan required
 -   4 = Reboot required
--   5 = Remediated with non critical failures
+-   5 = Remediated with noncritical failures
 -   6 = Quarantined
 -   7 = Removed
 -   8 = Cleaned
@@ -243,7 +244,7 @@ The following list shows the supported values:
 -   2 = Pending reboot
 -   4 = Pending manual steps (Windows Defender is waiting for the user to take some action, such as restarting the computer or running a full scan)
 -   8 = Pending offline scan
--   16 = Pending critical failure (Windows Defender has failed critically and an Adminsitrator needs to investigate and take some action, such as restarting the computer or reinstalling Windows Defender)
+-   16 = Pending critical failure (Windows Defender has failed critically and an Administrator needs to investigate and take some action, such as restarting the computer or reinstalling Windows Defender)
 
 Supported operation is Get.
 
@@ -352,6 +353,53 @@ The data type is a string.
 
 Supported operation is Get.
 
+<a href="" id="health-tamperprotectionenabled"></a>**Health/TamperProtectionEnabled**  
+Indicates whether the Windows Defender tamper protection feature is enabled.​
+
+The data type is a boolean.
+
+Supported operation is Get.
+
+<a href="" id="health-isvirtualmachine"></a>**Health/IsVirtualMachine**  
+Indicates whether the device is a virtual machine.
+
+The data type is a string.
+
+Supported operation is Get.
+
+<a href="" id="configuration"></a>**Configuration**  
+An interior node to group Windows Defender configuration information.
+
+Supported operation is Get.
+
+<a href="" id="configuration-tamperprotection"></a>**Configuration/TamperProtection**  
+Tamper protection helps protect important security features from unwanted changes and interference.  This includes real-time protection, behavior monitoring, and more. Accepts signed string to turn the feature on or off. Settings are configured with an MDM solution, such as Intune and is available in Windows 10 Enterprise E5 or equivalent subscriptions.
+
+Send off blob to device to reset tamper protection state before setting this configuration to "not configured" or "unassigned" in Intune.
+
+The data type is a Signed blob.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Intune tamper protection setting UX supports three states:  
+- Not configured (default): Does not have any impact on the default state of the device.
+- Enabled: Enables the tamper protection feature.
+- Disabled: Turns off the tamper protection feature.
+
+When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.
+
+<a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
+Enables or disables file hash computation feature.
+When this feature is enabled Windows defender will compute hashes for files it scans.
+
+The data type is a integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:  
+- 1 – Enable.
+- 0 (default) – Disable.
+
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.
 
@@ -375,4 +423,3 @@ Supported operations are Get and Execute.
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
