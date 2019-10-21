@@ -378,14 +378,14 @@ Send off blob to device to reset tamper protection state before setting this con
 
 The data type is a Signed blob.
 
-Supported operation is Add, Delete, Get. Replace.
+Supported operations are Add, Delete, Get. Replace.
 
-Intune tamper protection setting UX supports 3 states:  
+Intune tamper protection setting UX supports three states:  
 - Not configured (default): Does not have any impact on the default state of the device.
-- Enabled: Enables the tamper protection feature
-- Disabled: Turns off the tamper protection feature
+- Enabled: Enables the tamper protection feature.
+- Disabled: Turns off the tamper protection feature.
 
-When enabled or disabled exist on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state either enabled or disabled would require to be set explicitly.
+When enabled or disabled exists on the client and admin moves the setting to not configured, it will not have any impact on the device state. To change the state to either enabled or disabled would require to be set explicitly.
 
 <a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
 Enables or disables file hash computation feature.
@@ -393,7 +393,7 @@ When this feature is enabled Windows defender will compute hashes for files it s
 
 The data type is a integer.
 
-Supported operation is Add, Delete, Get. Replace.
+Supported operations are Add, Delete, Get. Replace.
 
 Valid values are:  
 - 1 – Enable.
