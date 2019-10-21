@@ -772,17 +772,17 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-controlled-folders",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/enable-exploit-protection.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection",
 "redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/enable-network-protection.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-network-protection",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection",
 "redirect_document_id": true
 },
 {
