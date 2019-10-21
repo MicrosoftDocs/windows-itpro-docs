@@ -378,7 +378,7 @@ Send off blob to device to reset tamper protection state before setting this con
 
 The data type is a Signed blob.
 
-Supported operations are Add, Delete, Get. Replace.
+Supported operations are Add, Delete, Get, Replace.
 
 Intune tamper protection setting UX supports three states:  
 - Not configured (default): Does not have any impact on the default state of the device.
@@ -393,7 +393,7 @@ When this feature is enabled Windows defender will compute hashes for files it s
 
 The data type is a integer.
 
-Supported operations are Add, Delete, Get. Replace.
+Supported operations are Add, Delete, Get, Replace.
 
 Valid values are:  
 - 1 – Enable.
