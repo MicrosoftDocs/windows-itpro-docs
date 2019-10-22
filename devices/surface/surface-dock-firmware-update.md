@@ -119,6 +119,8 @@ This version, contained in Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 - Component10CurrentFwVersion updated to **4ac3970**.
 - Component20CurrentFwVersion updated to **4a1d570**.
 
+It adds support for Surface Pro 7 and Surface Laptop 3.
+
 ## Legacy versions
 
 ### Version 2.23.139.0

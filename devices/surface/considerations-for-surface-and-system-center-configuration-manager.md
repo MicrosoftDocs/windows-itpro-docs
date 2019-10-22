@@ -9,7 +9,9 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 10/16/2017
+ms.localizationpriority: medium
+ms.audience: itpro
+ms.date: 10/21/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -17,6 +19,9 @@ manager: dansimp
 # Considerations for Surface and System Center Configuration Manager
 
 Fundamentally, management and deployment of Surface devices with System Center Configuration Manager is the same as the management and deployment of any other PC. Like any other PC, a deployment to Surface devices includes importing drivers, importing a Windows image, preparing a deployment task sequence, and then deploying the task sequence to a collection. After deployment, Surface devices are like any other Windows client – to publish apps, settings, and policies, you use the same process that you would use for any other device.
+
+> [!NOTE]
+>  SCCM is not supported on Surface Pro X. For more information, refer to [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md).
 
 You can find more information about how to use Configuration Manager to deploy and manage devices in the [Documentation for System Center Configuration Manager](https://docs.microsoft.com/sccm/index).
 
@@ -79,3 +84,4 @@ To apply an asset tag using the [Surface Asset Tag CLI Utility](https://www.micr
 When you deploy Windows to a Surface device, the push-button reset functionality of Windows is configured by default to revert the system back to a state where the environment is not yet configured. When the reset function is used, the system discards any installed applications and settings. Although in some situations it can be beneficial to restore the system to a state without applications and settings, in a professional environment this effectively renders the system unusable to the end user.
 
 Push-button reset can be configured, however, to restore the system configuration to a state where it is ready for use by the end user. Follow the process outlined in [Deploy push-button reset features](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/deploy-push-button-reset-features) to customize the push-button reset experience for your devices.
+
