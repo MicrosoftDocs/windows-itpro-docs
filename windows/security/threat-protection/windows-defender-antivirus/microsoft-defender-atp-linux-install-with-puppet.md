@@ -46,7 +46,7 @@ Download the onboarding package from Windows Defender Security Center:
 2. In Section 1 of the page, set operating system to **Linux, macOS, iOS, and Android** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
 
-    ![Windows Defender Security Center screenshot](images/ATP_Portal_Onboarding_page.png)
+    ![Windows Defender Security Center screenshot](images/ATP_Portal_Onboarding_win_intune.png)
 
 4. From a command prompt, verify that you have the file.
     Extract the contents of the .zip file and create mdatp_onboard.json file as follows
