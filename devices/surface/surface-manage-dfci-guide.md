@@ -43,13 +43,13 @@ At this time, DFCI is supported in the following devices:
 
 ## Prerequisites
 
-- Devices must be registered with Windows Autopilot by your reseller or distributor. For more information, refer to the [Microsoft Device Partner Center](https://devicepartner.microsoft.com/en-us/support).
+- Devices must be registered with Windows Autopilot by your reseller or distributor. For more information, refer to the [Microsoft Device Partner Center](https://devicepartner.microsoft.com/support).
 
-- Before configuring DFCI for Surface, you should already be familiar with [Microsoft Intune](https://docs.microsoft.com/en-us/intune/) and [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/) (Azure AD).
+- Before configuring DFCI for Surface, you should already be familiar with [Microsoft Intune](https://docs.microsoft.com/intune/) and [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) (Azure AD).
 
 ## Before you begin
 
-Add your target Surface devices to an Azure AD security group. For more information about creating and managing security groups, refer to [Azure AD documentation](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+Add your target Surface devices to an Azure AD security group. For more information about creating and managing security groups, refer to [Azure AD documentation](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 
 ## Configure DFCI management for Surface devices
 
@@ -88,7 +88,7 @@ Before configuring DFCI policy settings, first create a DFCI profile and assign 
 
 To ensure that devices apply the DFCI configuration during OOBE before users sign in, you need to configure enrollment status.
 
-For more information, refer to [Set up an enrollment status page](https://docs.microsoft.com/en-us/intune/enrollment/windows-enrollment-status).
+For more information, refer to [Set up an enrollment status page](https://docs.microsoft.com/intune/enrollment/windows-enrollment-status).
 
 
 ## Configure DFCI settings on Surface devices
@@ -132,7 +132,7 @@ Although Intune policy settings typically get applied almost immediately, there 
 
 - In Intune, go to **Device enrollment > Windows enrollment > Windows Autopilot Devices** and select **Sync**.
 
- For more information, refer to [Sync your Windows device manually](https://docs.microsoft.com/en-us/intune-user-help/sync-your-device-manually-windows).
+ For more information, refer to [Sync your Windows device manually](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows).
 
 > [!NOTE]
 > When adjusting settings directly in UEFI, you need to ensure the device fully restarts to the standard Windows login.
