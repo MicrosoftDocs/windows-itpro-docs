@@ -1365,7 +1365,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>This is not a well-known SID. The RID part may vary from domain to domain.</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-&lt;variable RID&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -1426,7 +1426,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>This is not a well-known SID. The RID part may vary from domain to domain.</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-&lt;variable RID&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
