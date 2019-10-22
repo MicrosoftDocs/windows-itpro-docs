@@ -34,7 +34,19 @@ BitLocker and Mobile Device Management (MDM) with Azure Active Directory work to
 
 Windows Sandbox is an isolated desktop environment where you can install software without the fear of lasting impact to your device. This feature is available in Windows 10, version 1903. In version 1909 we went one step further and now include support for mixed-version container scenarios, allowing you to run a sandbox in a different version of Windows 10 than the host operating system.
 
+### Key-rolling or Key-rotation security improvements
+
+Windows 10 19H2 update also includes two new features called 'Key-rolling' and 'Key-rotation' to enable secure delivery of Recovery passwords on MDM managed AAD devices and the process is based on the request from Microsoft Intune, MDM and similar tools.
+
+'Key-rolling' and 'Key-rotation' could boost the security of Windows PCs by preventing accidental recovery of password.
+
+Key-rolling or Key-rotation feature enables secure rolling of Recovery passwords on MDM managed AAD devices upon on demand request from Microsoft Intune/MDM tools or upon every time recovery password is used to unlock the BitLocker protected drive. This feature will help prevent accidental recovery password disclosure as part of manual BitLocker drive unlock by users.
+
 ## Deployment
+
+## Windows Autopilot
+
+
 
 ## Windows 10 kiosk mode
 
@@ -123,10 +135,7 @@ When a CPU is manufactured, not all of the cores are created equal. Some of the 
 
 With Intel Turbo Boost Max Technology 3.0, an operating system will use information stored in the CPU to identify which cores are the fastest and then push more of the CPU intensive tasks to those cores. According to Intel, this technology "delivers more than 15% better single-threaded performance".
 
-### Key-rolling or Key-rotation security improvements
-Windows 10 19H2 update also includes two new features called 'Key-rolling' and 'Key-rotation' to enable secure delivery of Recovery passwords on MDM managed AAD devices and the process is based on the request from Microsoft Intune, MDM and similar tools.
 
-'Key-rolling' and 'Key-rotation' could boost the security of Windows PCs by preventing accidental recovery of password.
 
 ## Stuff
 
