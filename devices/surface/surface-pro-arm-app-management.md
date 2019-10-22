@@ -28,6 +28,7 @@ Surface Pro X is designed almost exclusively for a modern, cloud-based environme
 For the best experience, deploy Surface Pro X using Windows Autopilot either with the assistance of a Microsoft Cloud Solution Provider or self-provisioned using Autopilot deployment profiles and related features. For more information, refer to:
 
 - [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md)
+- [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)
 
 Autopilot deployment has several advantages: It allows you to use the factory provisioned operating system, streamlined for zero-touch deployment, to include pre-installation of Office Pro Plus.
 
