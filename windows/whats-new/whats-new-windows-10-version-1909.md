@@ -46,7 +46,7 @@ Key-rolling or Key-rotation feature enables secure rolling of Recovery passwords
 
 ## Windows Autopilot
 
-
+A TPM attestation issue is fixed that affected [Autopilot white glove]() in Azure AD joined, Hybrid Azure AD joined and self-deploying mode scenarios.
 
 ## Windows 10 kiosk mode
 
