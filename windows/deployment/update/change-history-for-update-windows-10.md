@@ -22,7 +22,7 @@ This topic lists new and updated topics in the [Update Windows 10](index.md) doc
 
 | New or changed topic | Description |
 | --- | --- |
-| [Get started with Windows Update](windows-update-overview.md) | New | 
+| [Get started with Windows Update](windows-update-overview.md) | New |
 
 
 ## RELEASE: Windows 10, version 1709
@@ -33,7 +33,7 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 
 | New or changed topic | Description |
 | --- | --- |
-| [Olympia Corp](olympia/olympia-enrollment-guidelines.md) | New | 
+| [Olympia Corp](olympia/olympia-enrollment-guidelines.md) | New |
 
 ## July 2017
 
@@ -43,7 +43,7 @@ All topics were updated to reflect the new [naming changes](waas-overview.md#nam
 
 | New or changed topic | Description |
 | --- | --- |
-| [Manage additional Windows Update settings](waas-wu-settings.md) | New | 
+| [Manage additional Windows Update settings](waas-wu-settings.md) | New |
 
 ## RELEASE: Windows 10, version 1703
 
