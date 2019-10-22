@@ -17,7 +17,6 @@ ms.topic: article
 
 # Introduction to the Windows Insider Program for Business
 
-
 **Applies to**
 
 - Windows 10
@@ -41,7 +40,6 @@ The Windows Insider Program doesn't replace Semi-Annual Channel deployments in a
 
 [![Illustration showing the Windows Insider PreviewFast Ring for exploration, the Slow Ring for validation, the Semi-Annual Channel Targeted ring for Pilot deployment, and the Semi-Annual Channel for broad deployment](images/WIP4Biz_deployment.png)](images/WIP4Biz_deployment.png)<br>
 Windows 10 Insider Preview builds enable organizations to prepare sooner for Windows Semi-Annual releases and reduce the overall validation effort required with traditional deployments. 
-
 
 ## Explore new Windows 10 features in Insider Previews
 Windows 10 Insider Preview builds offer organizations a valuable and exciting opportunity to evaluate new Windows features well before general release. What’s more, by providing feedback to Microsoft on these features, you and other Insiders in your organization can help shape Windows for your specific business needs. Here’s how to get the most out of your feature exploration: 
