@@ -28,7 +28,6 @@ This topic describes how to deploy Microsoft Defender ATP for Linux through Pupp
 
 - [Download installation and onboarding packages](#download-onboarding-package)
 - [Create Puppet manifest](#create-puppet-manifest)
-- [Client device setup](#client-device-setup)
 - [Deployment](#deployment)
 - [Check onboarding status](#check-onboarding-status)
 
