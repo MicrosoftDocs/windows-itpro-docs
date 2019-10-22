@@ -235,7 +235,7 @@ To collect Event Viewer logs:
 - [Link a Group Policy Object](https://technet.microsoft.com/library/cc732979(v=ws.11).aspx)
 - [Filter Using Security Groups](https://technet.microsoft.com/library/cc752992(v=ws.11).aspx)
 - [Enforce a Group Policy Object Link](https://technet.microsoft.com/library/cc753909(v=ws.11).aspx)
-- [Group Policy Central Store](https://support.microsoft.com/en-gb/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)
+- [Group Policy Central Store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)
 
 ### Useful Links
 
