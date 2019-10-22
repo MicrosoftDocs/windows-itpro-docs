@@ -43,4 +43,4 @@ When you purchase Surface devices from a Surface partner enabled for Windows Aut
 ## Learn more
 For more information about Windows Autopilot, refer to:
 - [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)
-- [Windows Autopilot requirements](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/windows-autopilot-requirements)
+- [Windows Autopilot requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements)
