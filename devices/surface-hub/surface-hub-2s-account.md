@@ -4,8 +4,8 @@ description: "This page describes the procedure for creating the Surface Hub 2S 
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -35,7 +35,7 @@ Create the account using the Microsoft 365 admin center or by using PowerShell. 
 
 ![Leave remaining settings unchanged in the default state](images/sh2-account3.png)
 
-3. Set the password for the device account. Ensure that you **do not** select the option **Make this user change their password when they first sign in.**
+3. Set the password for the device account. To set the password, choose **Users** and then select **Active Users**. Now search for the newly created user to set the password. Ensure that you **do not** select the option **Make this user change their password when they first sign in.**
 
 ![Set the password for the device account](images/sh2-account4.png)
 
