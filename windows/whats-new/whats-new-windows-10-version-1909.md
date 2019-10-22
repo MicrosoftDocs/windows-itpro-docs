@@ -20,6 +20,74 @@ ms.topic: article
 
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10 version 1909, also known as the Windows 10 November 2019 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1903. 
 
+## Security
+
+### Windows Defender Credential Guard
+
+Windows Defender Credential Guard is now available for ARM64 devices, for additional protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
+
+### Microsoft BitLocker
+
+BitLocker and Mobile Device Management (MDM) with Azure Active Directory work together to protect your devices from accidental password disclosure. Now, a new key-rolling feature securely rotates recovery passwords on MDM managed devices. The feature is activated whenever Microsoft Intune/MDM tools or a recovery password is used to unlock a BitLocker protected drive. As a result, the recovery password will be better protected when users manually unlock a BitLocker drive.
+
+### Windows Sandbox
+
+Windows Sandbox is an isolated desktop environment where you can install software without the fear of lasting impact to your device. This feature is available in Windows 10, version 1903. In version 1909 we went one step further and now include support for mixed-version container scenarios, allowing you to run a sandbox in a different version of Windows 10 than the host operating system.
+
+## Deployment
+
+## Windows 10 kiosk mode
+
+Users can customize their experience in Kiosk mode, while keeping the devices locked down. For example, you can allow a user to switch to a different language while blocking access to network settings.
+
+### Windows 10 Pro and Enterprise in S mode
+
+ You can deploy and run traditional Win32 (desktop) apps without leaving the security of S mode by configuring the Windows 10 in S mode policy to support Win32 apps, and deploy them with Mobile Device Management (MDM) software such as Microsoft Intune1.
+
+### SetupDiag
+
+[SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) version 1.6.0.42 is available.
+
+SetupDiag is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
+
+## Windows shell
+
+### Calendar
+
+You can now create new events in your Calendar app by clicking the date and time on the Taskbar.
+
+### Cloud Clipboard
+
+Let’s face it, you work on multiple devices. With this feature enabled, you can copy text, links, graphics – just about anything! – from one device, and paste it onto another. Or you can go back and view the history of what’s recently been copied. You can use Cloud Clipboard with either an Azure Active Directory or Microsoft Account (MSA). Cloud Clipboard requires users to be signed into all devices using either MSA or AAD. Users must be signed into the same account across all devices.
+
+### Notifications
+
+We’ve made several improvements to manage and configure notifications including:
+
+- Added a “Manage Notifications” button to the top of Action Center
+- Configure and turn off notifications directly from the notification, both from the banner and from Action Center.
+- Set default to sorting notification senders by most recently shown notification, rather than sender name.
+
+### Windows Search 
+
+The Search box in Explorer is now powered by Windows Search, allowing results to include online OneDrive and OneDrive for Business content. Additionally, the results appear instantly as you type       .
+
+## Desktop Analytics
+
+Desktop Analytics is now generally available globally! Desktop Analytics is a cloud-connected service, integrated with Configuration Manager, which gives you data-driven insights to the management of your Windows endpoints. It provides insight and intelligence that you can use to make more informed decisions about the update readiness of your Windows endpoints. Desktop Analytics requires a Windows E3 or E5 license, or a Microsoft 365 E3 or E5 license.
+
+## Microsoft Connected Cache
+
+Together with Delivery Optimization, Microsoft Connected Cache installed on Windows Server or Linux can seamlessly offload your traffic to local sources, caching content efficiently at the byte range level. Connected Cache is configured as a “configure once and forget it” solution that transparently caches content that your devices on your network need. 
+
+## Microsoft Endpoint Manager
+
+As announced at Microsoft Ignite 
+
+## Windows Virtual Desktop
+
+Windows Virtual Desktop (WVD) is now generally available globally! Windows Virtual Desktop is a comprehensive desktop and app virtualization service running in the cloud. It’s the only virtual desktop infrastructure (VDI) that delivers simplified management, multi-session Windows 10, optimizations for Office 365 ProPlus, and support for Remote Desktop Services (RDS) environments. Deploy and scale your Windows desktops and apps on Azure in minutes, and get built-in security and compliance features. Windows Virtual Desktop requires a Microsoft E3 or E5 license, or a Microsoft 365 E3 or E5 license, as well as an Azure tenant. Each sold separately.
+
 See 
 https://blogs.windows.com/windowsexperience/2019/07/15/announcing-windows-10-insider-preview-build-18362-10005-19h2/
 
@@ -68,11 +136,7 @@ We have enabled Windows Defender Credential Guard for ARM64 devices for addition
 We have enabled the ability for enterprises to supplement the Windows 10 in S Mode policy to allow traditional Win32 (desktop) apps from Microsoft Intune.
 We have added additional debugging capabilities for newer Intel processors. This is only relevant for hardware manufacturers.
 
-### SetupDiag
 
-[SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) version 1.6.0.42 is available.
-
-SetupDiag is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
 
 ## See Also
 
