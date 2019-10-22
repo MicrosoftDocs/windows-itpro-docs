@@ -70,7 +70,9 @@ You can set several rule options within a WDAC policy. Table 2 describes each ru
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
 | **15 Enabled:Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically re-validate the reputation for files that were authorized by the ISG.| 
 | **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. |
-| **17 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically-loaded libraries. |
+| **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. |
+| **18 Disabled:Runtime FilePath Rule Protection** | Disable default FilePath rule protection of enforcing user-writeability and only allowing admin-writeable locations. |
+| **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically-loaded libraries. |
 
 ## Windows Defender Application Control file rule levels
 
@@ -84,6 +86,12 @@ Table 3. Windows Defender Application Control policy - file rule levels
 |----------- | ----------- |
 | **Hash** | Specifies individual hash values for each discovered binary. Although this level is specific, it can cause additional administrative overhead to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. |
 | **FileName** | Specifies individual binary file names. Although the hash values for an application are modified when updated, the file names are typically not. This offers less specific security than the hash level but does not typically require a policy update when any binary is modified. |
+| **FilePath** | Beginning with Windows 10 version 1903, this specifies rules that allow execution of binaries contained in paths that are admin-writeable only. By default, WDAC performs a user-writeability check at runtime which ensures that the current permissions on the specified filepath and its parent directories (recursively) do not allow standard users write access. <br> Note that filepath rules do not provide the same security guarantees that explicit signer rules do, as they are based on mutable access permissions. Filepath rules are best suited for environments where most users are running as standard rather than admin. IT Pros should take care while crafting path rules to allow paths that they know are likely to remain to be admin-writeable only and deny execution from sub-directories where standard users can modify ACLs on the folder. <br> There is a defined list of SIDs which are recognized as admins (below). If a file has write permissions for a SID not in this list, the file will be flagged as user writeable. <br> S-1-3-0; S-1-5-18; S-1-5-19; S-1-5-20; S-1-5-32-544; S-1-5-32-549; S-1-5-32-550; S-1-5-32-551; S-1-5-32-577; S-1-5-32-559; S-1-5-32-568; S-1-15-2-1430448594-2639229838-973813799-439329657-1197984847-4069167804-1277922394; S-1-15-2-95739096-486727260-2033287795-3853587803-1685597119-444378811-2746676523. <br> Wildcards can be used at the beginning or end of a path rule: only one wildcard is allowed per path rule. Wildcards placed at the end of a path authorize all files in that path and its subdirectories recursively (ex. C:\\* would include C:\foo\\* ). Wildcards placed at the beginning of a path scan all directories for files with a specific name (ex. \*\bar.exe would allow C:\bar.exe and C:\foo\bar.exe). Wildcards in the middle of a path are not supported (ex. C:\\*\foo.exe). Without a wildcard, the rule will allow only a specific file (ex. C:\foo\bar.exe). <br> Supported macros: %WINDIR%, %SYSTEM32%, %OSDRIVE%.|
+> [!NOTE]
+> Due to an existing bug, you can not combine Path-based ALLOW rules with any DENY rules in a single policy. Instead, either separate DENY rules into a separate Base policy or move the Path-based ALLOW rules into a supplemental policy as described in [Deploy multiple WDAC policies.](deploy-multiple-windows-defender-application-control-policies.md) 
+
+| Rule level | Description |
+|----------- | ----------- |
 | **SignedVersion** | This combines the publisher rule with a version number. This option allows anything from the specified publisher, with a version at or above the specified version number, to run. |
 | **Publisher** | This is a combination of the PcaCertificate level (typically one certificate below the root) and the common name (CN) of the leaf certificate. This rule level allows organizations to trust a certificate from a major CA (such as Symantec), but only if the leaf certificate is from a specific company (such as Intel, for device drivers). |
 | **FilePublisher** | This is a combination of the “FileName” attribute of the signed file, plus “Publisher” (PCA certificate with CN of leaf), plus a minimum version number. This option trusts specific files from the specified publisher, with a version at or above the specified version number. |
@@ -106,52 +114,4 @@ To create the WDAC policy, they build a reference server on their standard hardw
 As part of normal operations, they will eventually install software updates, or perhaps add software from the same software providers. Because the "Publisher" remains the same on those updates and software, they will not need to update their WDAC policy. If they come to a time when the internally-written, unsigned application must be updated, they must also update the WDAC policy so that the hash in the policy matches the hash of the updated internal application.
 
 They could also choose to create a catalog that captures information about the unsigned internal application, then sign and distribute the catalog. Then the internal application could be handled by WDAC policies in the same way as any other signed application. An update to the internal application would only require that the catalog be regenerated, signed, and distributed (no restarts would be required).
-
-## Create path-based rules 
-
-Beginning with Windows 10 version 1903, Windows Defender Application Control (WDAC) policies can contain path-based rules.
-> [!NOTE]
-> Due to an existing bug, you can not combine Path-based ALLOW rules with any DENY rules in a single policy. Instead, either separate DENY rules into a separate Base policy or move the Path-based ALLOW rules into a supplemental policy as described in [Deploy multiple WDAC policies.](deploy-multiple-windows-defender-application-control-policies.md)
-
-- New-CIPolicy parameter
-  - FilePath: create path rules under path \<path to scan> for anything not user-writeable (at the individual file level)
-
-    ```powershell
-    New-CIPolicy -FilePath .\mypolicy.xml -Level FileName -ScanPath <path to scan> -UserPEs
-    ```
-
-    Optionally, add -UserWriteablePaths to ignore user writeability
-    
-- New-CIPolicyRule parameter
-  - FilePathRule: create a rule where filepath string is directly set to value of \<any path string>
-
-    ```powershell
-    New-CIPolicyRule -FilePathRule <any path string>
-    ```
-
-    Useful for wildcards like C:\foo\\*
-
-- Usage follows the same flow as per-app rules:
-
-  ```powershell
-  $rules = New-CIPolicyRule …
-  $rules += New-CIPolicyRule …
-  …
-  New-CIPolicy -FilePath .\mypolicy.xml -Rules $rules -UserPEs
-  ```
-
-- Wildcards supported
-  - Suffix (ex. C:\foo\\*) OR Prefix (ex. *\foo\bar.exe)
-    - One or the other, not both at the same time
-    - Does not support wildcard in the middle (ex. C:\\*\foo.exe)
-  - Examples:
-    - %WINDIR%\\...
-    - %SYSTEM32%\\...
-    - %OSDRIVE%\\...
-
-- Disable default FilePath rule protection of enforcing user-writeability. For example, to add “Disabled:Runtime FilePath Rule Protection” to the policy:
-
-  ```powershell
-  Set-RuleOption -Option 18 .\policy.xml
-  ```
 
