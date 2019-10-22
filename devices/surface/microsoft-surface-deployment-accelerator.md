@@ -2,7 +2,7 @@
 title: Microsoft Surface Deployment Accelerator (Surface)
 description: Microsoft Surface Deployment Accelerator provides a quick and simple deployment mechanism for organizations to reimage Surface devices.
 ms.assetid: E7991E90-4AAE-44B6-8822-58BFDE3EADE4
-ms.reviewer: 
+ms.reviewer: hachidan
 manager: dansimp
 ms.date: 07/27/2017
 ms.localizationpriority: medium
@@ -14,14 +14,16 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
+ms.audience: itpro
 ---
 
 # Microsoft Surface Deployment Accelerator
 
 
-Microsoft Surface Deployment Accelerator (SDA) provides a quick and simple deployment mechanism for organizations to reimage Surface devices.
+Microsoft Surface Deployment Accelerator (SDA) automates the creation and configuration of a Microsoft recommended deployment experience by using free Microsoft deployment tools. 
 
-SDA includes a wizard that automates the creation and configuration of a Microsoft recommended deployment experience by using free Microsoft deployment tools. The resulting deployment solution is complete with everything you need to immediately begin the deployment of Windows to a Surface device. You can also use SDA to create and capture a Windows reference image and then deploy it with the latest Windows updates.
+> [!NOTE]
+> SDA is not currently supported on Surface Pro 7, Surface Pro X, and Surface Laptop 3. For more information refer to [Deploy Surface devices](deploy.md).
 
 SDA is built on the powerful suite of deployment tools available from Microsoft including the Windows Assessment and Deployment Kit (ADK), the Microsoft Deployment Toolkit (MDT), and Windows Deployment Services (WDS). The resulting deployment share encompasses the recommended best practices for managing drivers during deployment and automating image creation and can serve as a starting point upon which you build your own customized deployment solution.
 
