@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender ATP for Mac Resources
+title: Microsoft Defender ATP for Linux Resources
 ms.reviewer: 
-description: Describes resources for Microsoft Defender ATP for Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
+description: Describes resources for Microsoft Defender ATP for Linux, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
+keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -22,7 +22,7 @@ ms.topic: conceptual
 
 **Applies to:**
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Linux](microsoft-defender-atp-linux.md)
 
 ## Collecting diagnostic information
 
@@ -64,7 +64,7 @@ The detailed log will be saved to /Library/Logs/Microsoft/mdatp/install.log. If 
 
 ## Uninstalling
 
-There are several ways to uninstall Microsoft Defender ATP for Mac. Please note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
+There are several ways to uninstall Microsoft Defender ATP for Linux. Please note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
 
 ### Interactive uninstallation
 

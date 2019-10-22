@@ -331,4 +331,4 @@ The following configuration profile contains entries for all settings described 
 
 ## Configuration profile deployment
 
-Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using.
+Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Microsoft M reads the managed configuration from the file */etc/opt/microsoft/mdatp/managed/mdatp_managed.json*
