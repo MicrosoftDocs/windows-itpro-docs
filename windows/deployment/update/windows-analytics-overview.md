@@ -6,7 +6,6 @@ description: Introduction and overview of Windows Analytics
 keywords: Device Health, Upgrade Readiness, Update Compliance, oms, operations management suite, prerequisites, requirements, monitoring, crash, drivers
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
 author: jaimeo

@@ -3,8 +3,8 @@ title: Best practices and recommendations for deploying Windows 10 Feature updat
 description: Learn how to deploy feature updates to your mission critical devices
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-audience: itproauthor: jaimeo
+audience: 
+itproauthor: jaimeo
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo

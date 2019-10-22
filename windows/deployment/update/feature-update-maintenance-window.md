@@ -3,8 +3,8 @@ title: Best practices - deploy feature updates during maintenance windows
 description: Learn how to deploy feature updates during a maintenance window
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-audience: itproauthor: jaimeo
+audience: 
+itproauthor: jaimeo
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo

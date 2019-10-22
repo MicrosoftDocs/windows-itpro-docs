@@ -5,9 +5,9 @@ manager: laurawi
 description: an overview of the Update Compliance Need Attention! report
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: jaimeo
+audience: 
+itproauthor: jaimeo
 author: jaimeo
 ms.author: jaimeo
 ms.collection: M365-analytics

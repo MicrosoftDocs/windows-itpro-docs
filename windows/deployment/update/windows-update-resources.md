@@ -3,7 +3,7 @@ title: Windows Update - Additional resources
 description: Additional resources for Windows Update
 ms.prod: w10
 ms.mktglfcycl:
-ms.sitesec: library
+
 audience: itpro
 author: jaimeo
 ms.localizationpriority: medium

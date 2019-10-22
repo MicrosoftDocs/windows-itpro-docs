@@ -3,7 +3,7 @@ title: Windows 10 - How to make FoD and language packs available when you're usi
 description: Learn how to make FoD and language packs available when you're using WSUS/SCCM
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
+
 ms.pagetype: article
 ms.author: jaimeo
 audience: itpro

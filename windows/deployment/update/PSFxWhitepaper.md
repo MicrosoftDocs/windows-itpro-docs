@@ -4,8 +4,8 @@ description: A technique to produce compact software updates optimized for any o
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-audience: itproauthor: jaimeo
+audience: 
+itproauthor: jaimeo
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo

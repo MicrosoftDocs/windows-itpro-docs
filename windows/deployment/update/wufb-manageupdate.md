@@ -3,8 +3,8 @@ title: Managing feature and quality updates with policies in Windows Update for 
 description: Learn how to get started using Windows Update for Business.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-audience: itproauthor: jaimeo
+audience: 
+itproauthor: jaimeo
 author: jaimeo
 ms.localizationprioauthor: jaimeo
 ms.audience: itpro

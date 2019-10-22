@@ -4,7 +4,8 @@ ms.prod: windows-10
 layout: LandingPage  
 ms.topic: landing-page
 ms.manager: elizapo
-audience: itproauthor: jaimeo
+audience: 
+itproauthor: jaimeo
 author: greg-lindsaauthor: jaimeo
 ms.audience: itpro
 author: jaimeo

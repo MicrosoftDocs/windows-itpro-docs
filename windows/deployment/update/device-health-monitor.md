@@ -6,7 +6,7 @@ description: You can use Device Health in Azure Portal to monitor the frequency 
 keywords: oms, operations management suite, wdav, health, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
+
 ms.localizationpriority: medium
 ms.pagetype: deploy
 audience: itpro

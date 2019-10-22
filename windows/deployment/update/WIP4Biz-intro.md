@@ -4,8 +4,8 @@ description: Introduction to the Windows Insider Program for Business and why IT
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, WiP4Biz, enterprise, rings, flight
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-audience: itproauthor: jaimeo
+audience: 
+itproauthor: jaimeo
 author: jaimeo
 ms.localizationprioauthor: jaimeo
 ms.audience: itpro

@@ -3,7 +3,6 @@ title: Best practices - deploy feature updates for user-initiated installations
 description: Learn how to manually deploy feature updates
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
 audience: itpro
 author: jaimeo
 ms.localizationpriority: medium
