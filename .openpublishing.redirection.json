@@ -863,7 +863,7 @@
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/advanced-features-windows-defender-advanced-threat-protection.md",
@@ -15284,7 +15284,7 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard.md",
