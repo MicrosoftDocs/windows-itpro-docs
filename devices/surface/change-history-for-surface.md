@@ -19,6 +19,7 @@ This topic lists new and updated topics in the Surface documentation library.
 
 | **New or changed topic** | **Description** |
 | ------------------------ | --------------- |
+| [Intune management of Surface UEFI settings](surface-manage-dfci-guide.md)| New document explaining how to configure a DFCI environment in Microsoft Intune and manage firmware settings for targeted Surface devices.|
 | [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)| New document highlighting key considerations for deploying, managing, and servicing Surface Pro X.|
 
 ## September 2019
