@@ -63,7 +63,7 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 
 
 
-By default in Windows 10 Enterprise and Education editions, Delivery Optimization allows peer-to-peer sharing on the organization's own network only (specifically, all of the devices must be behind the same NAT), but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
+In Windows 10 Enterprise, Professional and Education editions, Delivery Optimization is enabled by default for peer-to-peer sharing on the local network (NAT). Specifically, all of the devices must be behind the same NAT, but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
 
 For more details, see "Download mode" in [Delivery optimization reference](waas-delivery-optimization-reference.md).
 
