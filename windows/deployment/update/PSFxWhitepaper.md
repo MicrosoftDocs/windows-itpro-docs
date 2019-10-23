@@ -46,7 +46,7 @@ its reverse differential back to the base version. Both forward and reverse
 differentials are then packaged as an update and distributed to the endpoints
 running the software to be updated. The update package contents can be symbolized as follows:
 
-![Symbolic representation of update package contents. a box containing two expressions: delta sub zero transform to sub N, followed delta sub N transform to sub zero](images/PSF1.png)
+![Symbolic representation of update package contents. A box containing two expressions: delta sub zero transform to sub N, followed delta sub N transform to sub zero](images/PSF1.png)
 
 The endpoints that have the base version of the file (V<sub>0</sub>) hydrate the target
 revision (V<sub>N</sub>) by applying a simple transformation:
@@ -74,7 +74,7 @@ Historically, download sizes of Windows 10 quality updates (Windows 10, version 
 
 For example, if the October monthly quality update has updated Notepad.exe, differentials for Notepad.exe file changes from September to October, August to October, July to October, June to October, and from the original feature release to October are generated. All these differentials are stored in a Patch Storage File (PSF, also referred to as “express download files”) and hosted or cached on Windows Update or other update management or distribution servers (for example, Windows Server Update Services (WSUS), System Center Configuration Manager, or a non-Microsoft update management or distribution server that supports express updates). A device leveraging express updates uses network protocol to determine optimal differentials, then downloads only what is needed from the update distribution endpoints.
 
-The flipside of express download is that the size of PSF files can be very large depending on the number of historical baselines against which differentials were calculated. Downloading and caching large PSF files to on-premises or remote update distribution servers is problematic for most organizations, hence they are unable to leverage express updates to keep their fleet of devices running Windows 10 up to date. Secondly, due to the complexity of generating differentials and size of the express files that need to be cached on update distribution servers, it is only feasible to generate express download files for the most common baselines, thus express updates are only applicable to selected baselines. Finally, calculation of optimal differentials is expensive in terms of system memory utilization, especially for low-cost systems, impacting their ability to download and apply an update seamlessly.
+The flip side of express download is that the size of PSF files can be very large depending on the number of historical baselines against which differentials were calculated. Downloading and caching large PSF files to on-premises or remote update distribution servers is problematic for most organizations, hence they are unable to leverage express updates to keep their fleet of devices running Windows 10 up to date. Secondly, due to the complexity of generating differentials and size of the express files that need to be cached on update distribution servers, it is only feasible to generate express download files for the most common baselines, thus express updates are only applicable to selected baselines. Finally, calculation of optimal differentials is expensive in terms of system memory utilization, especially for low-cost systems, impacting their ability to download and apply an update seamlessly.
 
 In the following sections, we describe how Windows 10 quality updates will leverage this technique based on forward and reverse differentials for newer releases of Windows 10 and Windows Server to overcome the challenges with express downloads.
 
@@ -86,7 +86,7 @@ Windows 10 quality update packages will contain forward differentials from quali
 
 There can be cases where new files are added to the system during servicing. These files will not have RTM baselines, thus forward and reverse differentials cannot be used. In these scenarios, null differentials will be used to handle servicing. Null differentials are the slightly compressed and optimized version of the full binaries. Update packages can have either forward or reverse differentials, or null differential of any given binary in them. The following image symbolizes the content of a Windows 10 quality update installer:
 
-![Outer box labeled .msu containing two sub-boxes: 1) Applicability Logic, 2) box labeled .cab containg four sub-boxes: 1) update metadata, 2) content manifests, 3) delta sub RTM transform to sub N (file 1, file2, etc.), and 4) delta sub N transform to RTM (file 1, file 2, etc.)](images/PSF4.png)
+![Outer box labeled .msu containing two sub-boxes: 1) Applicability Logic, 2) box labeled .cab containing four sub-boxes: 1) update metadata, 2) content manifests, 3) delta sub RTM transform to sub N (file 1, file2, etc.), and 4) delta sub N transform to RTM (file 1, file 2, etc.)](images/PSF4.png)
 
 ### Hydration and installation 
 
