@@ -29,11 +29,11 @@ If you have feedback about the proposed replacement of any of these features, yo
 
 |Feature    |  Details  | 
 | ----------- | --------------------- | 
-| Fresh Paint app | In a future release, the Fresh Paint app will be removed from the Microsoft Store on Windows 10. |
-| Hyper-V vSwitch on LBFO | In a future release, the Hyper-V vSwitch will no longer be able to be bound to an LBFO team.  Instead, it will have to be bound to a SET team.|
-| Language Community tab in Feedback Hub | We are planning to remove the Language Community tab in Feedback Hub in a future release. Users will be able to provide translation feedback using the normal feedback process ([Feedback Hub - Feedback](feedback-hub://?newFeedback=true&feedbackType=2)).  |
-| My People / People in the Shell |  My People is deprecated. It may be removed in a future update. | 
-| TFS1/TFS2 IME |  TSF1 and TSF2 IME will be replaced by TSF3 IME in a future release. This replacement is planned for a future release. TSF IME are Windows components you can add to enable typing text for Japanese, Simplified Chinese, Traditional Chinese, and Korean languages. ​|
+| Fresh Paint app | The Fresh Paint app will be removed from the Microsoft Store on Windows 10 in a future release. |
+| Hyper-V vSwitch on LBFO | In a future release, the Hyper-V vSwitch will no longer have the capability to be bound to an LBFO team.  Instead, it must be bound via [Switch Embedded Teaming](https://docs.microsoft.com/windows-server/virtualization/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming#bkmk_sswitchembedded) (SET).|
+| Language Community tab in Feedback Hub | We are planning to remove the Language Community tab in Feedback Hub. Users will be able to provide translation feedback using the normal feedback process: [Feedback Hub - Feedback](feedback-hub://?newFeedback=true&feedbackType=2).  |
+| My People / People in the Shell |  My People is deprecated. It may be removed in a future update. |
+| TFS1/TFS2 IME |  TSF1 and TSF2 IME will be replaced by TSF3 IME in a future release. [Text Services Framework](https://docs.microsoft.com/windows/win32/tsf/what-is-text-services-framework) (TFS) enables language technologies. TSF IME are Windows components that you can add to enable typing text for Japanese, Simplified Chinese, Traditional Chinese, and Korean languages. ​|
 | Bing IME | Bing IME is still downloadable but is no longer being developed. | 
 | Taskbar settings roaming | Roaming of taskbar settings is no longer being developed and we plan to remove this capability in a future release. | 
 | Wi-Fi WEP and TKIP | Since the 1903 release, a warning message has appeared when connecting to Wi-Fi networks secured with WEP or TKIP (which are not as secure as those using WPA2 or WPA3). In a future release, any connection to a Wi-Fi network using these old ciphers will be disallowed. Wi-Fi routers should be updated to use AES ciphers, available with WPA2 or WPA3. | 
@@ -65,8 +65,7 @@ If you have feedback about the proposed replacement of any of these features, yo
 |Windows Hello for Business deployment that uses System Center Configuration Manager   |Windows Server 2016 Active Directory Federation Services – Registration Authority (ADFS RA) deployment is simpler and provides a better user experience and a more deterministic certificate enrollment experience. |
 |Windows PowerShell 2.0  | Applications and components should be migrated to PowerShell 5.0+. |
 |Apndatabase.xml | Apndatabase.xml is being replaced by the COSA database. Therefore, some constructs will no longer function. This includes Hardware ID, incoming SMS messaging rules in mobile apps, a list of privileged apps in mobile apps, autoconnect order, APN parser, and CDMAProvider ID. |
-|Reading List |  |
-|Tile Data Layer |  |
+|Tile Data Layer | The [Tile Data Layer](https://docs.microsoft.com/windows/configuration/start-layout-troubleshoot#symptom-start-menu-issues-with-tile-data-layer-corruption) database was deprecated in Windows 10, version 1703. |
 |TLS DHE_DSS ciphers DisabledByDefault|  |
-|TCPChimney |  |
-|IPsec task offload|  |
+|TCPChimney | TCP Chimney Offload is deprecated.  See (Performance Tuning Network Adapters)[https://docs.microsoft.com/windows-server/networking/technologies/network-subsystem/net-sub-performance-tuning-nics]. |
+|IPsec Task Offload| [IPsec Task Offload](https://docs.microsoft.com/windows-hardware/drivers/network/task-offload) versions 1 and 2 are deprecated and should not be used. |
