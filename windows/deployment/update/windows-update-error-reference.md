@@ -3,7 +3,7 @@ title: Windows Update error code list by component
 description: Reference information for Windows Update error codes
 ms.prod: w10
 ms.mktglfcycl: 
-audience: 
+audience: itpro
 itproauthor: jaimeo
 author: jaimeo
 ms.localizationprioauthor: jaimeo

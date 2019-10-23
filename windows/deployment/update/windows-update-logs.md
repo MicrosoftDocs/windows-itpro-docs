@@ -3,7 +3,7 @@ title: Windows Update log files
 description: Learn about the Windows Update log files
 ms.prod: w10
 ms.mktglfcycl: 
-audience: 
+audience: itpro
 itproauthor: jaimeo
 author: jaimeo
 ms.localizationprioauthor: jaimeo

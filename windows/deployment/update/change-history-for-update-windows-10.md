@@ -3,7 +3,7 @@ title: Change history for Update Windows 10 (Windows 10)
 description: This topic lists new and updated topics in the Update Windows 10 documentation for Windows 10 and Windows 10 Mobile.
 ms.prod: w10
 ms.mktglfcycl: manage
-audience: 
+audience: itpro
 itproauthor: jaimeo
 author: jaimeo
 ms.author: jaimeo

@@ -3,12 +3,11 @@ title: How Windows Update works
 description: Learn how Windows Update works, including architecture and troubleshooting
 ms.prod: w10
 ms.mktglfcycl: 
-audience: 
+audience: itpro
 itproauthor: jaimeo
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 09/18/2018
 ms.reviewer: 
 manager: laurawi
 ms.collection: M365-modern-desktop

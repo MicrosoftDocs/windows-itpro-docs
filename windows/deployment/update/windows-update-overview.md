@@ -3,7 +3,7 @@ title: Get started with Windows Update
 description: Learn how Windows Update works, including architecture and troubleshooting
 ms.prod: w10
 ms.mktglfcycl: 
-audience: 
+audience: itpro
 itproauthor: jaimeo
 author: jaimeo
 ms.localizationprioauthor: jaimeo

@@ -3,7 +3,7 @@ title: Windows Update common errors and mitigation
 description: Learn about some common issues you might experience with Windows Update
 ms.prod: w10
 ms.mktglfcycl: 
-audience: 
+audience: itpro
 itproauthor: jaimeo
 author: jaimeo
 ms.localizationprioauthor: jaimeo

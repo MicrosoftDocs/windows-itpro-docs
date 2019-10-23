@@ -6,7 +6,7 @@ description: an overview of the Feature Update Status report
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
-audience: 
+audience: itpro
 itproauthor: jaimeo
 author: jaimeo
 ms.author: jaimeo

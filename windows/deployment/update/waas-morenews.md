@@ -3,7 +3,7 @@ title: Windows as a service
 ms.prod: w10
 ms.topic: article
 ms.manager: elizapo
-audience: 
+audience: itpro
 itproauthor: jaimeo
 author: jaimeo
 ms.author: jaimeo

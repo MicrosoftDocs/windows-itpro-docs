@@ -3,7 +3,7 @@ title: Setting up Automatic Update in Windows Update for Business (Windows 10)
 description: Learn how to get started using Windows Update for Business.
 ms.prod: w10
 ms.mktglfcycl: manage
-audience: 
+audience: itpro
 itproauthor: jaimeo
 author: jaimeo
 ms.localizationprioauthor: jaimeo
