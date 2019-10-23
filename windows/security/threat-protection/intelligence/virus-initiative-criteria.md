@@ -21,7 +21,7 @@ The Microsoft Virus Initiative (MVI) helps organizations to get their products w
 
 MVI members will receive access to Windows APIs (such as those used by Windows Defender Antivirus), and other technologies including IOAV, AMSI and Cloud Files, malware telemetry and samples, and invitations to security related events and conferences.
 
-## Eligibility to join
+## Becoming a member
 
 A request for membership is made by an individual as a representative of an organization that develops and produces antimalware or antivirus technology. Your organization must meet the following eligibility requirements to qualify for the MVI program:
 
