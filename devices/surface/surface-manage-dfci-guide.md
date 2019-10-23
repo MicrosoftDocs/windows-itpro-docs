@@ -43,13 +43,13 @@ At this time, DFCI is supported in the following devices:
 
 ## Prerequisites
 
-- Devices must be registered with Windows Autopilot by your reseller or distributor. For more information, refer to the [Microsoft Partner Network](https://partner.microsoft.com/en-US/membership/cloud-solution-provider).
+- Devices must be registered with Windows Autopilot by your reseller or distributor. For more information, refer to the [Microsoft Partner Network](https://partner.microsoft.com/membership/cloud-solution-provider).
 
 - Before configuring DFCI for Surface, you should be familiar with Autopilot configuration requirements in  [Microsoft Intune](https://docs.microsoft.com/intune/) and [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) (Azure AD).
 
 ## Before you begin
 
-Add your target Surface devices to an Azure AD security group. For more information about creating and managing security groups, refer to [Intune documentation](https://docs.microsoft.com/en-us/intune/configuration/device-firmware-configuration-interface-windows#create-your-azure-ad-security-groups).
+Add your target Surface devices to an Azure AD security group. For more information about creating and managing security groups, refer to [Intune documentation](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows#create-your-azure-ad-security-groups).
 
 ## Configure DFCI management for Surface devices
 
