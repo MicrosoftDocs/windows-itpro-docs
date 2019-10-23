@@ -6,7 +6,6 @@ description: Enroll devices to enable use of Update Compliance, Upgrade Readines
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, azure portal
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo

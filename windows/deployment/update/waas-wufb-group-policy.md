@@ -3,7 +3,6 @@ title: Walkthrough use Group Policy to configure Windows Update for Business - W
 description: Configure Windows Update for Business settings using Group Policy.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo

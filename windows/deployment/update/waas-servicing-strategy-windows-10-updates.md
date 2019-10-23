@@ -3,7 +3,6 @@ title: Prepare servicing strategy for Windows 10 updates (Windows 10)
 description: A strong Windows 10 deployment strategy begins with establishing a simple, repeatable process for testing and deploying each feature update. 
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
