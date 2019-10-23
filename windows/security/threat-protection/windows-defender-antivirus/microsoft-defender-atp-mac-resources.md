@@ -72,7 +72,7 @@ There are several ways to uninstall Microsoft Defender ATP for Mac. Please note 
 
 ### From the command line
 
-- ```sudo rm -rf '/Applications/Microsoft Defender ATP'```
+- ```sudo rm -rf '/Applications/Microsoft Defender ATP.app'```
 
 ## Configuring from the command line
 

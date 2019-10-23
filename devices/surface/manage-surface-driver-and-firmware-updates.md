@@ -13,12 +13,13 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 10/10/2019
+ms.audience: itpro
+ms.date: 10/21/2019
 ---
 
 # Manage Surface driver and firmware updates
 
-This article describes the available options that you can use to manage firmware and driver updates for Surface devices.
+This article describes the available options that you can use to manage firmware and driver updates for Surface devices including Surface Pro 3 and later. 
 
 To see a list of the available downloads for Surface devices and links to download the drivers and firmware for your device, see [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
 
@@ -59,3 +60,6 @@ The process of deploying firmware updates during an operating system deployment 
 **WindowsPE and Surface firmware and drivers**
 
 System Center Configuration Manager and MDT both use the Windows Preinstallation Environment (WindowsPE) during the deployment process. WindowsPE only supports a limited set of basic drivers such as those for network adapters and storage controllers. Drivers for Windows components that are not part of WindowsPE might produce errors. As a best practice, you can prevent such errors by configuring the deployment process to use only the required drivers during the WindowsPE phase.
+
+## Supported devices
+Downloadable MSI files are available for Surface devices from Surface Pro 2 and later. Information about MSI files for the newest Surface devices such as Surface Pro 7, Surface Pro X, and Surface Laptop 3 will be available from this page upon release. 

@@ -9,7 +9,9 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 09/21/2017
+ms.localizationpriority: medium
+ms.audience: itpro
+ms.date: 10/21/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -17,12 +19,25 @@ manager: dansimp
 # Deploy Surface app with Microsoft Store for Business and Education
 
 **Applies to**
-* Surface Pro 4
-* Surface Book
-* Surface 3
 
->[!NOTE]
->The Surface app ships in Surface Studio.
+- Surface Pro 7
+- Surface Laptop 3
+- Surface Pro 6
+- Surface Laptop 2
+- Surface Go
+- Surface Go with LTE
+- Surface Book 2
+- Surface Pro with LTE Advanced (Model 1807)
+- Surface Pro (Model 1796)
+- Surface Laptop
+- Surface Studio
+- Surface Studio 2
+- Surface Book
+- Surface Pro 4
+- Surface 3 LTE
+- Surface 3
+- Surface Pro 3
+
 
 The Surface app is a lightweight Microsoft Store app that provides control of many Surface-specific settings and options, including: 
 
@@ -34,9 +49,12 @@ The Surface app is a lightweight Microsoft Store app that provides control of ma
 
 * Enable or disable Surface audio enhancements 
 
-* Quick access to support documentation and information for your device 
+* Quick access to support documentation and information for your device
 
-If your organization is preparing images that will be deployed to your Surface devices, you may want to include the Surface app (formerly called the Surface Hub) in your imaging and deployment process instead of requiring users of each individual device to download and install the app from the Microsoft Store or your Microsoft Store for Business. 
+Customers using Windows Update will ordinarily receive Surface app as part of automatic updates. But if your organization is preparing images for deployment to your Surface devices, you may want to include the Surface app (formerly called the Surface Hub) in your imaging and deployment process instead of requiring users of each individual device to download and install the app from the Microsoft Store or your Microsoft Store for Business. 
+
+> [!NOTE]
+> This article does not apply to Surface Pro X. For more information, refer to [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
 
 ## Surface app overview
 

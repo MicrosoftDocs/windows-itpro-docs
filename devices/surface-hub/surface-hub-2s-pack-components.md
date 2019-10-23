@@ -4,8 +4,8 @@ description: "Instructions for packing Surface Hub 2S components, replacing the 
 keywords: pack, replace components, camera, compute cartridge
 ms.prod: surface-hub
 ms.sitesec: library
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
