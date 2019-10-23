@@ -36,7 +36,7 @@ Organizations already using modern management, security, and productivity soluti
 
 ## Image-based deployment considerations
 
-Surface Pro X will be released without a standard Windows .ISO deployment image, which means it’s not supported on the Microsoft Deployment Toolkit (MDT) or operating system deployment methods using System Center Configuration Manager (SCCM) aka ConfiMgr. Customers relying on image-based deployment should consider Surface Pro 7 while they continue to evaluate the right time to transition to the cloud.
+Microsoft Deployment Toolkit (MDT) and System Center Configuration Manager (SCCM) operating system deployment currently do not support Surface Pro X. Customers relying on image-based deployment should consider Surface Pro 7 while they continue to evaluate the right time to transition to the cloud.
 
 ## Managing Surface Pro X devices
 
@@ -147,13 +147,12 @@ The following tables show the availability of selected key features on Surface P
 | Conditional Access                | Yes           | Yes           |                                                                                                                                                                                                                                                                                                                                                      |
 | Secure Boot                       | Yes           | Yes           |                                                                                                                                                                                                                                                                                                                                                      |
 | Windows Information Protection    | Yes           | Yes           |                                                                                                                                                                                                                                                                                                                                                      |
-| Surface Data Eraser (SDE)         | Yes           | Yes           |                                                                                                                                                                                                                                                                                                                                                      |
-
+| Surface Data Eraser (SDE)         | Yes           | Yes           |                                                                                                                                                                                                                                                                                                                                                     
 ## FAQ
 
-### Will an OS image be available at launch?
+### Can I deploy Surface Pro X with MDT or SCCM?
 
-No. Surface Pro X will be released without a standard Windows .ISO deployment image, which means it’s not supported on the Microsoft Deployment Toolkit (MDT) or operating system deployment methods using System Center Configuration Manager (SCCM) aka ConfiMgr. Customers relying on image-based deployment should consider Surface Pro 7 while they continue to evaluate the right time to transition to the cloud.
+The Microsoft Deployment Toolkit and System Center Configuration Manager operating system deployment currently do not support Surface Pro X. Customers relying on image-based deployment should consider Surface Pro 7 while they continue to evaluate the right time to transition to the cloud.
 
 ### How can I deploy Surface Pro X?
 
