@@ -49,7 +49,7 @@ At this time, DFCI is supported in the following devices:
 
 ## Before you begin
 
-Add your target Surface devices to an Azure AD security group. For more information about creating and managing security groups, refer to [Intune documentation](https://docs.microsoft.com/en-us/intune/configuration/device-firmware-configuration-interface-windows#create-your-azure-ad-security-groups).
+Add your target Surface devices to an Azure AD security group. For more information about creating and managing security groups, refer to [Intune documentation](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows#create-your-azure-ad-security-groups).
 
 ## Configure DFCI management for Surface devices
 
