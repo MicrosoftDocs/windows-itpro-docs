@@ -22,8 +22,6 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
 The Microsoft Defender ATP API Explorer is a tool that helps you explore various Microsoft Defender ATP APIs interactively. 
 
 The API Explorer makes it easy to construct and perform API queries, test and send requests for any available Microsoft Defender ATP API endpoint. You can also use the API Explorer to perform actions or find data that might not yet be available through the user interface.
