@@ -20,7 +20,7 @@ The UEFI configuration service provider (CSP) interfaces to UEFI's Device Firmwa
 > The UEFI CSP version published in Windows 10, version 1803 is replaced with this one (version 1809).
 
 > [!NOTE]
-> The production UEFI CSP is present in 1809, but it depends upon the Device Firmware Configuration Interface (DFCI) and UEFI firmware to comply with this interface.  The specification for this interface and compatible firmware is not yet available.
+> The production UEFI CSP is present in 1809, but it depends upon the [Device Firmware Configuration Interface (DFCI) and UEFI firmware](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/) to comply with this interface.
 
 The following diagram shows the UEFI CSP in tree format.
 
