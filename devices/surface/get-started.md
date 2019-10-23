@@ -1,7 +1,7 @@
 ---
 title: Get started with Surface devices
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 layout: LandingPage
 ms.assetid: 

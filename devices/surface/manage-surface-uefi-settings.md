@@ -17,12 +17,16 @@ manager: dansimp
 
 # Manage Surface UEFI settings
 
-Current and future generations of Surface devices, including Surface Pro 4, Surface Book, and Surface Studio, use a unique UEFI firmware engineered by Microsoft specifically for these devices. This firmware allows for significantly greater control of the device’s operation over firmware versions in earlier generation Surface devices, including the support for touch, mouse, and keyboard operation. By using the Surface UEFI settings you can easily enable or disable internal devices or components, configure security to protect UEFI settings from being changed, and adjust the Surface device boot settings. 
+Current and future generations of Surface devices, including Surface Pro 7, Surface Book 2, and Surface Studio 2,use a unique UEFI firmware engineered by Microsoft specifically for these devices. This firmware allows for significantly greater control of the device’s operation over firmware versions in earlier generation Surface devices, including the support for touch, mouse, and keyboard operation. By using the Surface UEFI settings you can easily enable or disable internal devices or components, configure security to protect UEFI settings from being changed, and adjust the Surface device boot settings. 
 
 >[!NOTE]
 >Surface Pro 3, Surface 3, Surface Pro 2, Surface 2, Surface Pro, and Surface do not use the Surface UEFI and instead use firmware provided by third-party manufacturers, such as AMI.
 
 You can enter the Surface UEFI settings on your Surface device by pressing the **Volume Up** button and the **Power** button simultaneously. Hold the **Volume Up** button until the Surface logo is displayed, which indicates that the device has begun to boot. 
+
+## Support for cloud-based management
+With Device Firmware Configuration Interface (DFCI) profiles built into Microsoft Intune (now available in public preview), Surface UEFI management extends the modern management stack down to the UEFI hardware level. DFCI supports zero-touch provisioning, eliminates BIOS passwords, provides control of security settings including boot options and built-in peripherals, and lays the groundwork for advanced security scenarios in the future. DFCI is currently available for Surface Pro 7, Surface Pro X, and Surface Laptop 3. For more information, refer to [Intune management of Surface UEFI settings](surface-manage-dfci-guide.md).
+
 
 ## PC information 
 
