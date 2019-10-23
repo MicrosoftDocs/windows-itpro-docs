@@ -9,7 +9,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -125,8 +126,8 @@ A summary of each platform's capabilities is provided below.
 
 <tr>
 <td><a href="https://docs.microsoft.com/intune/enrollment-autopilot">Intune</a></td>
-<td>YES - 500 at a time max<b>\*</b></td>
-<td>YES<b>\*</b></td>
+<td>YES - 500 at a time max<b>*</b></td>
+<td>YES<b>*</b></td>
 <td>4K HH</td>
 </tr>
 
