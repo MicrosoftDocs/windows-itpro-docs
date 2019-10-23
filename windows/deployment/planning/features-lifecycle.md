@@ -19,22 +19,20 @@ Each release of Windows 10 contains many new and improved features. Occasionally
 
 ## Features removed
 
-See the following for details about feature support for each release of Windows 10.
+The following topics have details about features that have been removed in a specific version of Windows 10.
 
-[Windows 10, version 1909](windows-10-1909-removed-features.md)<br>
-[Windows 10, version 1903](windows-10-1903-removed-features.md)<br>
-[Windows 10, version 1809](windows-10-1809-removed-features.md)<br>
-[Windows 10, version 1803](windows-10-1803-removed-features.md)<br>
-[Windows 10, version 1709](windows-10-1709-removed-features.md)<br>
-[Windows 10, version 1703](windows-10-1703-removed-features.md)
+- [Windows 10, version 1909](windows-10-1909-removed-features.md)
+- [Windows 10, version 1903](windows-10-1903-removed-features.md)
+- [Windows 10, version 1809](windows-10-1809-removed-features.md)
+- [Windows 10, version 1803](windows-10-1803-removed-features.md)
+- [Windows 10, version 1709](windows-10-1709-removed-features.md)
+- [Windows 10, version 1703](windows-10-1703-removed-features.md)
 
 ## Features no longer being developed
 
-See the following topic for a list of features that are no longer being developed. These features might be removed in a future release.
+The following topic lists features that are no longer being developed. These features might be removed in a future release.
 
 [Windows 10 features we’re no longer developing](windows-10-deprecated-features.md)
-
-Also see: [Windows 10 release information](https://docs.microsoft.com/windows/release-information/)
 
 ## Terminology
 
@@ -45,3 +43,7 @@ The following terms can be used to describe the status that might be assigned to
 - **Retirement**: The stage of the product lifecycle when an online service is shut down so that it is no longer available for use.
 - **Remove or retire a feature**: The stage of the product lifecycle when a feature or functionality is removed from an online service after it has been deprecated.
 - **Replace a feature**: The stage of the product lifecycle when a feature or functionality in an online service is replaced with a different feature or functionality.
+
+## Also see
+
+[Windows 10 release information](https://docs.microsoft.com/windows/release-information/)
