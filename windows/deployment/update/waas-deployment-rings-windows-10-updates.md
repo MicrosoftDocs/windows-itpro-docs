@@ -3,7 +3,6 @@ title: Build deployment rings for Windows 10 updates (Windows 10)
 description: Deployment rings in Windows 10 are similar to the deployment groups most organizations constructed for previous major revision upgrades.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo

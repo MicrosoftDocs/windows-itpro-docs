@@ -3,7 +3,6 @@ title: Optimize update delivery for Windows 10 updates (Windows 10)
 description: Two methods of peer-to-peer content distribution are available in Windows 10, Delivery Optimization and BranchCache.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo

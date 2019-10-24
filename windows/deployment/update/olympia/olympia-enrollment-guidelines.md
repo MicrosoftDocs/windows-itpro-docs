@@ -1,11 +1,13 @@
 ---
 title: Olympia Corp enrollment guidelines
 description: Olympia Corp enrollment guidelines
-ms.author: greglin
+ms.author: jaimeo
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-audience: itproauthor: greg-lindsay
+audience: itpro
+itproauthor: jaimeo
+author: jaimeo
 ms.reviewer: 
 manager: laurawi
 keywords: insider, trial, enterprise, lab, corporation, test

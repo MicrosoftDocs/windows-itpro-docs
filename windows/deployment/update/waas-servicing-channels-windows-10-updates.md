@@ -3,7 +3,7 @@ title: Assign devices to servicing channels for Windows 10 updates (Windows 10)
 description: tbd
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
+
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo

@@ -224,7 +224,7 @@ The XML file that is included in the Office Deployment Tool specifies the produc
 
       ```xml
       <Configuration>
-         <Add SourcePath= ”\\Server\Office2016” OfficeClientEdition="32" >
+         <Add SourcePath= "\\Server\Office2016” OfficeClientEdition="32" >
           <Product ID="O365ProPlusRetail ">
             <Language ID="en-us" />
           </Product>

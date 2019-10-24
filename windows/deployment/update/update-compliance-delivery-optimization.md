@@ -5,7 +5,6 @@ manager: laurawi
 description: new Delivery Optimization data displayed in Update Compliance
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
 author: jaimeo
