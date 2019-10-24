@@ -6136,6 +6136,11 @@
     "redirect_document_id": true
     },
     {
+        "source_path": "devices/hololens/hololens-restart-recover.md",
+        "redirect_url": "/hololens/hololens-recovery",
+        "redirect_document_id": false
+    },
+    {
     "source_path": "devices/hololens/hololens-get-apps.md",
     "redirect_url": "/hololens/holographic-store-apps",
     "redirect_document_id": false
