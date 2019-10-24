@@ -35,6 +35,10 @@ HoloLens need a network connection to go through initial device set up.  If your
 | MSA | https://login.live.com/ppsecure/inlineconnect.srf?id=80600 |
 | MSA Pin | https://account.live.com/msangc?fl=enroll |
 
+Additional references:
+
+- [Technical reference for AAD related IP ranges and URLs](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges)
+
 ## HoloLens limitations
 
 After your HoloLens is set up, you can use it without a Wi-Fi connection, but apps that use Internet connections will have limited capabilities when you use HoloLens offline.
