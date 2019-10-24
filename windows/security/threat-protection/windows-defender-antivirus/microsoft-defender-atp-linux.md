@@ -25,12 +25,6 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 > [!CAUTION]
 > Running other third-party endpoint protection products alongside Microsoft Defender ATP for Linux is likely to lead to performance problems and unpredictable side effects.
  
-> [!NOTE]
->How would users give us feedback?  
-> **TODO:** Should we add atp --feedback "Feedback" that will send the feedback to us / OCV. I am keeping the original line for reference.  
->
-> If you have any feedback that you would like to share, submit it by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
-
 ## How to install Microsoft Defender ATP for Linux
 
 ### Prerequisites
@@ -41,14 +35,10 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ### System requirements
 
-- Supported Linux distributions and versions: RHEL 7, Oracle 7, CentOS 7, Ubuntu 16 and 18, Debian 9
+- Supported Linux server distributions and versions: RHEL 7, Oracle Linux 7, CentOS 7, Ubuntu 16 and 18, Debian 9
 - Disk space: 650 MB. 
-> [!NOTE]
->**TODO**: Verify this
 
-After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
-
-The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
+If your Linux server is behind firewall or proxy, you will likely need to allow outbound connections between it and following servers. The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
 | Service location                         | DNS record              |
 | ---------------------------------------- | ----------------------- |
@@ -56,9 +46,6 @@ The following table lists the services and their associated URLs that your netwo
 | European Union                           | europe.x.cp.wd.microsoft.com |
 | United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com |
 | United States                            | unitedstates.x.cp.wd.microsoft.com |
-
->[!NOTE]
-> **TODO:** Verify the proxy paragraph
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
 - Web Proxy Auto-discovery Protocol (WPAD)

@@ -60,19 +60,16 @@ If you can reproduce a problem, please increase the logging level, run the syste
 
 If an error occurs during installation, the installer will only report a general failure.
 
-The detailed log will be saved to /Library/Logs/Microsoft/mdatp/install.log. If you experience issues during installation, send us this file so we can help diagnose the cause.
+The detailed log will be saved to /var/log/microsoft/mdatp_install.log. If you experience issues during installation, send us this file so we can help diagnose the cause.
 
 ## Uninstalling
 
-There are several ways to uninstall Microsoft Defender ATP for Linux. Please note that while centrally managed uninstall is available on JAMF, it is not yet available for Microsoft Intune.
+There are several ways to uninstall Microsoft Defender ATP for Linux. If you are using a configuration tool such as Puppet, please follow the package uninstallation instructions for the configuration tool.
 
-### Interactive uninstallation
+### Manual uninstallation
 
-- Open **Finder > Applications**. Right click on **Microsoft Defender ATP > Move to Trash**.
-
-### From the command line
-
-- ```sudo rm -rf '/Applications/Microsoft Defender ATP'```
+- ```sudo apt-get purge mdatp``` for Debian and Ubuntu systems
+- ```sudo yum remove mdatp``` for RHEL, Oracle Linux, CentOS based systems
 
 ## Configuring from the command line
 

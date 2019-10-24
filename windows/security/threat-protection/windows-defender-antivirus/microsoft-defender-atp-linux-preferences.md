@@ -35,13 +35,9 @@ This topic describes the structure of this profile (including a recommended prof
 
 The configuration profile is a .json file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
 
-The top level of the configuration profile includes product-wide preferences and entries for subareas of the product, which are explained in more detail in the next sections.
+Typically, you would use a configuration management tool to push a file with name ```mdatp_maanged.json``` at location ```/etc/opt/microsoft/mdatp/managed/```
 
->[!NOTE]
-> **TODO:**
-> * Should Domain be removed from all the entries below?
-> * Should we add path to wdavcfg?
-> * Verify each of below?
+The top level of the configuration profile includes product-wide preferences and entries for subareas of the product, which are explained in more detail in the next sections.
 
 ### Antivirus engine preferences
 
@@ -49,7 +45,6 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | antivirusEngine |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
@@ -60,7 +55,6 @@ Whether real-time protection (scan files as they are accessed) is enabled or not
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | enableRealTimeProtection |
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
@@ -76,7 +70,6 @@ Whether the antivirus engine runs in passive mode or not. In passive mode:
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | passiveMode |
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
@@ -88,7 +81,6 @@ Entities that have been excluded from the scan. Exclusions can be specified by f
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | exclusions |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
@@ -99,7 +91,6 @@ Specifies the type of content excluded from the scan.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | $type |
 | **Data type** | String |
 | **Possible values** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
@@ -110,7 +101,6 @@ Used to exclude content from the scan by full file path.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | path |
 | **Data type** | String |
 | **Possible values** | valid paths |
@@ -122,7 +112,6 @@ Indicates if the *path* property refers to a file or directory.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | isDirectory |
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
@@ -134,7 +123,6 @@ Used to exclude content from the scan by file extension.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | extension |
 | **Data type** | String |
 | **Possible values** | valid file extensions |
@@ -146,7 +134,6 @@ Used to exclude content from the scan by file name.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | name |
 | **Data type** | String |
 | **Possible values** | any string |
@@ -158,7 +145,6 @@ List of threats (identified by their name) that are not blocked by the product a
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | allowedThreats |
 | **Data type** | Array of strings |
 
@@ -168,7 +154,6 @@ The *threatTypeSettings* preference in the antivirus engine is used to control h
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | threatTypeSettings |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
@@ -179,7 +164,6 @@ Type of the threat for which the behavior is configured.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | key |
 | **Data type** | String |
 | **Possible values** | potentially_unwanted_application <br/> archive_bomb |
@@ -194,7 +178,6 @@ Action to take when coming across a threat of the type specified in the precedin
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | value |
 | **Data type** | String |
 | **Possible values** | audit (default) <br/> block <br/> off |
@@ -205,7 +188,6 @@ The *cloudService* entry in the configuration profile is used to configure the c
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | cloudService |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
@@ -216,7 +198,6 @@ Whether cloud delivered protection is enabled on the device or not. To improve t
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | enabled |
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
@@ -227,7 +208,6 @@ Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, de
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | diagnosticLevel |
 | **Data type** | String |
 | **Possible values** | optional (default) <br/> required |
@@ -238,7 +218,6 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
 | **Key** | automaticSampleSubmission |
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
