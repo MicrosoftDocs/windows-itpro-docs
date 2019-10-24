@@ -62,9 +62,20 @@ To turn on your HoloLens 2, press the Power button.  The LED lights below the Po
 | To turn off | Press and for hold 5s. |  All five lights turn on, then fade off one at a time. After the lights turn off, a sound plays and the screen displays "Goodbye." |
 | To force the Hololens to restart if it is unresponsive | Press and hold for 10s. | All five lights turn on, then fade off one at a time. After the lights turn off. |
 
-## HoloLens indicator lights
+## HoloLens behavior reference
 
-Not sure what the indicator lights on your HoloLens mean? Here's some help!
+Not sure what the indicator lights on your HoloLens mean? Want to know how HoloLens should behave while charging?  Here's some help!
+
+### Charging behavior
+
+| State of the Device	| Action	| HoloLens 2 will do this |
+| - | - | - |
+| OFF |	Plug in USB Cable	| Device transitions to ON with indicator lights showing battery level and device starts charging.
+| ON	| Remove USB Cable	| Device stops charging
+| ON	| Plug in USB Cable	| Device starts charging
+| SLEEP	| Plug in USB Cable	| Device starts charging
+| SLEEP	| Remove USB Cable |	Device stops charging
+| ON with USB cable pluged in	| Turn off Device |	Device transitions to ON with indicator lights showing battery level and device will start charging |
 
 ### Lights that indicate the battery level
 
@@ -75,6 +86,14 @@ Not sure what the indicator lights on your HoloLens mean? Here's some help!
 | Two solid lights, one light fading in and out | Between 60% and 41% |
 | One solid light, one light fading in and out | Between 40% and 21% |
 | One light fading in and out | Between 20% and 5% or lower (critical battery) |
+
+### Sleep Behavior
+
+| State of the Device	| Action	| HoloLens 2 will do this |
+| - | - | - |
+| ON	| Single Power button press	| Device transitions to SLEEP and turns off all indicator lights |
+| ON	| No movement for 3 minutes	| Device transition to SLEEP and turns off all indicator lights |
+| SLEEP	| Single Power button Press	| Device transitions to ON and turns on indicator lights |
 
 ### Lights to indicate problems
 

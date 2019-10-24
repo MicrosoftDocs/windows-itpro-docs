@@ -6,7 +6,6 @@ description: Frequently asked questions about Windows Analytics and steps to tak
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, FAQ, problems, troubleshooting, error
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
 author: jaimeo
