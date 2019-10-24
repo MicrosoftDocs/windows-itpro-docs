@@ -97,7 +97,6 @@ There are two settings which enable users to “clean up” holograms and cause 
 
 1. **Delete all holograms**.By selecting this setting, HoloLens will erase ALL map data and anchored holograms in the entire databases of spaces. No holograms will be rediscovered and any holograms need to be newly placed to again store map sections in the database.
 
-
 ## Hologram quality
 
 Holograms can be placed throughout your environment—high, low, and all around you—but you’ll see them through a [holographic frame](https://docs.microsoft.com/windows/mixed-reality/holographic-frame) that sits in front of your eyes. To get the best view, make sure to adjust your device so you can see the entire frame. And don’t hesitate to walk around your environment and explore!
