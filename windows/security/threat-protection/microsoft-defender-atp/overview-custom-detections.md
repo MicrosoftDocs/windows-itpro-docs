@@ -25,10 +25,10 @@ ms.topic: conceptual
 
 With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured machines. This is made possible by customizable detection rules that automatically trigger alerts as well as response actions.
 
-Custom detections work with [Advanced hunting](overview-hunting.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network. The queries run every 24 hours, generating alerts and taking response actions whenever there are matches.
+Custom detections work with [Advanced hunting](advanced-hunting-overview.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network. The queries run every 24 hours, generating alerts and taking response actions whenever there are matches.
 
 Custom detections provide:
-- Alerts from rule-based detections built from Advanced hunting queries
+- Alerts for rule-based detections built from Advanced hunting queries
 - Automatic response actions that apply to files and machines
 
 >[!NOTE]
@@ -36,3 +36,4 @@ Custom detections provide:
 
 ## Related topic
 - [Create and manage custom detection rules](custom-detection-rules.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)

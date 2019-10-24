@@ -6,12 +6,14 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
+ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 01/03/2018
-ms.reviewer: 
+ms.date: 10/10/2019
+ms.reviewer: scottmca
 manager: dansimp
+ms.audience: itpro
 ---
 
 # Wake On LAN for Surface devices
@@ -41,6 +43,7 @@ The following devices are supported for WOL:
 * Surface Laptop 2
 * Surface Go
 * Surface Go with LTE Advanced
+* Surface Studio 2 (see Surface Studio 2 instructions below)
 
 ## WOL driver
 
@@ -56,6 +59,26 @@ You can run this Microsoft Windows Installer (.msi) file on a Surface device to 
 To extract the contents of SurfaceWOL.msi, use the MSIExec administrative installation option (**/a**), as shown in the following example, to extract the contents to the C:\WOL\ folder:
 
    `msiexec /a surfacewol.msi targetdir=C:\WOL /qn`
+
+## Surface Studio 2 instructions
+
+To enable WOL on Surface Studio 2, you must use the following procedure
+
+1. Create the following registry keys:
+
+ ```
+; Set CONNECTIVITYINSTANDBY to 1:
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\F15576E8-98B7-4186-B944-EAFA664402D9]
+"Attributes"=dword:00000001
+; Set EnforceDisconnectedStandby to 0 and AllowSystemRequiredPowerRequests to 1:
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"EnforceDisconnectedStandby"=dword:00000000
+"AllowSystemRequiredPowerRequests"=dword:00000001
+```
+
+2. Run the following command
+
+    ```powercfg /SETACVALUEINDEX SCHEME_BALANCED SUB_NONE CONNECTIVITYINSTANDBY 1```
 
 ## Using Surface WOL
 

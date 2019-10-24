@@ -116,8 +116,174 @@ You may now enroll more devices. You can also enroll them later, after you have 
 
 5. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 6. Repeat steps 1 through 5 for more profiles.
-7. Create a new profile one more time, give it a name, and upload the intune/WindowsDefenderATPOnboarding.xml file.
-8. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
+7. Create another profile, give it a name, and upload the intune/WindowsDefenderATPOnboarding.xml file.
+8. Create tcc.xml file with content below. Create another profile, give it any name and upload this file to it.
+
+   > [!CAUTION]
+   > macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender ATP is not able to fully protect your device.
+   >
+   > The following configuration profile grants Full Disk Access to Microsoft Defender ATP. If you previously configured Microsoft Defender ATP through Intune, we recommend you update the deployment with this configuration profile.
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+   <plist version="1.0">
+   <dict>
+       <key>PayloadDescription</key>
+       <string>Allows Microsoft Defender to access all files on Catalina+</string>
+       <key>PayloadDisplayName</key>
+       <string>TCC - Microsoft Defender</string>
+       <key>PayloadIdentifier</key>
+       <string>com.microsoft.wdav.tcc</string>
+       <key>PayloadOrganization</key>
+       <string>Microsoft Corp.</string>
+       <key>PayloadRemovalDisallowed</key>
+       <false/>
+       <key>PayloadScope</key>
+       <string>system</string>
+       <key>PayloadType</key>
+       <string>Configuration</string>
+       <key>PayloadUUID</key>
+       <string>C234DF2E-DFF6-11E9-B279-001C4299FB44</string>
+       <key>PayloadVersion</key>
+       <integer>1</integer>
+       <key>PayloadContent</key>
+       <array>
+       <dict>
+           <key>PayloadDescription</key>
+           <string>Allows Microsoft Defender to access all files on Catalina+</string>
+           <key>PayloadDisplayName</key>
+           <string>TCC - Microsoft Defender</string>
+           <key>PayloadIdentifier</key>
+           <string>com.microsoft.wdav.tcc.C233A5E6-DFF6-11E9-BDAD-001C4299FB44</string>
+           <key>PayloadOrganization</key>
+           <string>Microsoft Corp.</string>
+           <key>PayloadType</key>
+           <string>com.apple.TCC.configuration-profile-policy</string>
+           <key>PayloadUUID</key>
+           <string>C233A5E6-DFF6-11E9-BDAD-001C4299FB44</string>
+           <key>PayloadVersion</key>
+           <integer>1</integer>
+           <key>Services</key>
+           <dict>
+               <key>SystemPolicyAllFiles</key>
+               <array>
+               <dict>
+                   <key>Allowed</key>
+                   <true/>
+                   <key>CodeRequirement</key>
+                   <string>identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9</string>
+                   <key>Comment</key>
+                   <string>Allow SystemPolicyAllFiles control for Microsoft Defender ATP</string>
+                   <key>Identifier</key>
+                   <string>com.microsoft.wdav</string>
+                   <key>IdentifierType</key>
+                   <string>bundleID</string>
+               </dict>
+               </array>
+           </dict>
+       </dict>
+       </array>
+   </dict>
+   </plist>
+   ```
+
+9. To whitelist Defender and Auto Update for displaying notifications in UI on macOS 10.15 (Catalina), import the following .mobileconfig as a custom payload:
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+   <plist version="1.0">
+     <dict>
+       <key>PayloadContent</key>
+       <array>
+         <dict>
+           <key>NotificationSettings</key>
+           <array>
+             <dict>
+               <key>AlertType</key>
+               <integer>2</integer>
+               <key>BadgesEnabled</key>
+               <true/>
+               <key>BundleIdentifier</key>
+               <string>com.microsoft.autoupdate2</string>
+               <key>CriticalAlertEnabled</key>
+               <false/>
+               <key>GroupingType</key>
+               <integer>0</integer>
+               <key>NotificationsEnabled</key>
+               <true/>
+               <key>ShowInLockScreen</key>
+               <false/>
+               <key>ShowInNotificationCenter</key>
+               <true/>
+               <key>SoundsEnabled</key>
+               <true/>
+             </dict>
+             <dict>
+               <key>AlertType</key>
+               <integer>2</integer>
+               <key>BadgesEnabled</key>
+               <true/>
+               <key>BundleIdentifier</key>
+               <string>com.microsoft.wdavtray</string>
+               <key>CriticalAlertEnabled</key>
+               <false/>
+               <key>GroupingType</key>
+               <integer>0</integer>
+               <key>NotificationsEnabled</key>
+               <true/>
+               <key>ShowInLockScreen</key>
+               <false/>
+               <key>ShowInNotificationCenter</key>
+               <true/>
+               <key>SoundsEnabled</key>
+               <true/>
+             </dict>
+           </array>
+           <key>PayloadDescription</key>
+           <string/>
+           <key>PayloadDisplayName</key>
+           <string>notifications</string>
+           <key>PayloadEnabled</key>
+           <true/>
+           <key>PayloadIdentifier</key>
+           <string>BB977315-E4CB-4915-90C7-8334C75A7C64</string>
+           <key>PayloadOrganization</key>
+           <string>Microsoft</string>
+           <key>PayloadType</key>
+           <string>com.apple.notificationsettings</string>
+           <key>PayloadUUID</key>
+           <string>BB977315-E4CB-4915-90C7-8334C75A7C64</string>
+           <key>PayloadVersion</key>
+           <integer>1</integer>
+         </dict>
+       </array>
+       <key>PayloadDescription</key>
+       <string/>
+       <key>PayloadDisplayName</key>
+       <string>mdatp - allow notifications</string>
+       <key>PayloadEnabled</key>
+       <true/>
+       <key>PayloadIdentifier</key>
+       <string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string>
+       <key>PayloadOrganization</key>
+       <string>Microsoft</string>
+       <key>PayloadRemovalDisallowed</key>
+       <false/>
+       <key>PayloadScope</key>
+       <string>System</string>
+       <key>PayloadType</key>
+       <string>Configuration</string>
+       <key>PayloadUUID</key>
+       <string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string>
+       <key>PayloadVersion</key>
+       <integer>1</integer>
+     </dict>
+   </plist>
+   ```
+
+10. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
 
 Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:
 

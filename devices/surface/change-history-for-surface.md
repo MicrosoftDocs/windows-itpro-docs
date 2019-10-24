@@ -9,18 +9,28 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
+ms.localizationpriority: medium
+ms.audience: itpro
+ms.date: 10/21/2019
 ---
 
 # Change history for Surface documentation
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## October 2019
+
+| **New or changed topic** | **Description** |
+| ------------------------ | --------------- |
+| [Intune management of Surface UEFI settings](surface-manage-dfci-guide.md)| New document explaining how to configure a DFCI environment in Microsoft Intune and manage firmware settings for targeted Surface devices.|
+| [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)| New document highlighting key considerations for deploying, managing, and servicing Surface Pro X.|
+|Multiple topics| Updated with information on Surface Pro 7, Surface Pro X, and Surface Laptop 3.|
+
 ## September 2019
 
 | **New or changed topic** | **Description** |
 | ------------------------ | --------------- |
-| [Surface Dock Firmware Update](surface-dock-firmware-update.md)| New document for Microsoft Surface Dock Firmware Update, newly redesigned to automatically update Surface Dock firmware while running in the background on your Surface device.|
-
+| [Surface Dock Firmware Update](surface-dock-firmware-update.md)| New document for Microsoft Surface Dock Firmware Update, newly redesigned to update Surface Dock firmware while running in the background on your Surface device.|
 
 ## August 2019
 

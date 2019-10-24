@@ -14,7 +14,7 @@
 ### [Windows 10, version 1709 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
 ### [Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
 ## Enhanced level Windows diagnostic data events and fields
-### [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](enhanced-diagnostic-data-windows-analytics-events-and-fields.md)
+### [Windows 10 diagnostic data events and fields collected through the limit enhanced diagnostic data policy](enhanced-diagnostic-data-windows-analytics-events-and-fields.md)
 ## Full level categories
 ### [Windows 10, version 1709 and newer diagnostic data for the Full level](windows-diagnostic-data.md)
 ### [Windows 10, version 1703 diagnostic data for the Full level](windows-diagnostic-data-1703.md)

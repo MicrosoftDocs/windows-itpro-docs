@@ -10,7 +10,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
-ms.date: 06/16/2016
+ms.date: 10/03/2016
 ---
 
 
@@ -54,7 +54,7 @@ The most common tasks that you can perform with the App-V 5.0 Management console
 
 -   [How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console](how-to-customize-virtual-applications-extensions-for-a-specific-ad-group-by-using-the-management-console.md)
 
--   [How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console](how-to-view-and-configure-applications-and-default-virtual-application-extensions-by-using-the-management-console-beta.md)
+-   [Configure Applications and Default Virtual Application Extensions in Management Console](configure-applications-and-default-virtual-application-extensions-in-management-console.md)
 
 The main elements of the App-V 5.0 Management Console are:
 

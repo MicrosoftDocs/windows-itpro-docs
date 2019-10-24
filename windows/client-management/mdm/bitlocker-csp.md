@@ -6,11 +6,15 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: lomayor
-ms.date: 08/05/2019
+ms.localizationpriority: medium
+ms.date: 09/27/2019
 ms.reviewer: 
 manager: dansimp
 ---
 # BitLocker CSP
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices. This CSP was added in Windows 10, version 1703. Starting in Windows 10, version 1809, it is also supported in Windows 10 Pro.
 
@@ -25,7 +29,7 @@ For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation 
 
 The following diagram shows the BitLocker configuration service provider in tree format.
 
-![bitlocker csp](images/provisioning-csp-bitlocker.png)
+![BitLocker csp](images/provisioning-csp-bitlocker.png)
 
 <a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
 Defines the root node for the BitLocker configuration service provider.
@@ -57,7 +61,7 @@ Allows the administrator to require storage card encryption on the device. This 
 Data type is integer. Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the storage card, but the user will no longer be prompted to turn it on.
 
 - 0 (default) – Storage cards do not need to be encrypted.
-- 1 – Require Storage cards to be encrypted.  
+- 1 – Require storage cards to be encrypted.  
 
 Disabling this policy will not turn off the encryption on the system card, but the user will no longer be prompted to turn it on.
 
@@ -125,10 +129,10 @@ Encryptable fixed data volumes are treated similarly to OS volumes. However, fix
 
 The following list shows the supported values:
 
--   0 (default) – Disable. If the policy setting is not set or is set to 0, the device's enforcement status will not be checked. The policy will not enforce encryption and it will not decrypt encrypted volumes.
--   1 – Enable. The device's enforcement status will be checked. Setting this policy to 1 will trigger encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).  
+-   0 (default) — Disable. If the policy setting is not set or is set to 0, the device's enforcement status is not checked. The policy does not enforce encryption and it does not decrypt encrypted volumes.
+-   1 – Enable. The device's enforcement status is checked. Setting this policy to 1 triggers encryption of all drives (silently or non-silently based on [AllowWarningForOtherDiskEncryption](#allowwarningforotherdiskencryption) policy).  
 
-If you want to disable this policy use the following SyncML:
+If you want to disable this policy, use the following SyncML:
 
 ```xml
 <SyncML>
@@ -151,7 +155,7 @@ If you want to disable this policy use the following SyncML:
 
 <a href="" id="encryptionmethodbydrivetype"></a>**EncryptionMethodByDriveType**
 
-Allows you to set the default encrytion method for each of the different drive types: operating system drives, fixed data drives, and removable data drives. Hidden, system and recovery partitions are skipped from encryption. This setting is a direct mapping to the Bitlocker Group Policy &quot;Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)&quot;. 
+Allows you to set the default encryption method for each of the different drive types: operating system drives, fixed data drives, and removable data drives. Hidden, system, and recovery partitions are skipped from encryption. This setting is a direct mapping to the Bitlocker Group Policy &quot;Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)&quot;. 
 <table>
 <tr>
     <th>Home</th>
@@ -520,7 +524,8 @@ Set &quot;OSActiveDirectoryBackup_Name&quot; (Save BitLocker recovery informatio
 
 Set the &quot;OSRequireActiveDirectoryBackup_Name&quot; (Do not enable BitLocker until recovery information is stored in AD DS for operating system drives) data field if you want to prevent users from enabling BitLocker unless the computer is connected to the domain and the backup of BitLocker recovery information to AD DS succeeds.
 
-&gt; [!Note]<br/>&gt; If the &quot;OSRequireActiveDirectoryBackup_Name&quot; (Do not enable BitLocker until recovery information is stored in AD DS for operating system drives) data field is set, a recovery password is automatically generated.
+> [!Note]
+> If the &quot;OSRequireActiveDirectoryBackup_Name&quot; (Do not enable BitLocker until recovery information is stored in AD DS for operating system drives) data field is set, a recovery password is automatically generated.
 
 If you enable this setting, you can control the methods available to users to recover data from BitLocker-protected operating system drives.
 
@@ -532,26 +537,18 @@ Sample value for this node to enable this policy is:
 <enabled/><data id="OSAllowDRA_Name" value="xx"/><data id="OSRecoveryPasswordUsageDropDown_Name" value="yy"/><data id="OSRecoveryKeyUsageDropDown_Name" value="yy"/><data id="OSHideRecoveryPage_Name" value="xx"/><data id="OSActiveDirectoryBackup_Name" value="xx"/><data id="OSActiveDirectoryBackupDropDown_Name" value="zz"/><data id="OSRequireActiveDirectoryBackup_Name" value="xx"/>
 ```
 
-The possible values for &#39;xx&#39; are:
-<ul>
-<li>true = Explicitly allow</li>
-<li>false = Policy not set</li>
-<li></li>
-</ul>
+The possible values for &#39;xx&#39; are:  
+- true = Explicitly allow
+- false = Policy not set
 
-The possible values for &#39;yy&#39; are:
-<ul>
-<li>2 = Allowed</li>
-<li>1 = Required</li>
-<li>0 = Disallowed</li>
-</ul>
+The possible values for &#39;yy&#39; are:  
+- 2 = Allowed
+- 1 = Required
+- 0 = Disallowed
 
-The possible values for &#39;zz&#39; are:
-<ul>
-<li>2 = Store recovery passwords only</li>
-<li>1 = Store recovery passwords and key packages</li>
-<li></li>
-</ul>
+The possible values for &#39;zz&#39; are:  
+- 2 = Store recovery passwords only
+- 1 = Store recovery passwords and key packages
 
 Disabling the policy will let the system choose the default behaviors. If you want to disable this policy use the following SyncML:
 
@@ -896,6 +893,161 @@ If you want to disable this policy use the following SyncML:
    </Item>
  </Replace>
 ```
+
+<a href="" id="configurerecoverypasswordrotation"></a>**ConfigureRecoveryPasswordRotation**  
+This setting initiates a client-driven recovery password refresh after an OS drive recovery (either by using bootmgr or WinRE) and recovery password unlock on a Fixed data drive. This setting will refresh the specific recovery password that was used, and other unused passwords on the volume will remain unchanged. If the initialization of the refresh fails, the device will retry the refresh during the next reboot. When password refresh is initiated, the client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure. After the recovery password has been successfully backed up to Azure AD, the recovery key that was used locally will be removed. This setting refreshes only the used key and retains other unused keys. 
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table> 
+Value type is int. Supported operations are Add, Delete, Get, and Replace.
+
+Supported values are:
+- 0 – Refresh off (default)
+- 1 – Refresh on for Azure AD-joined devices 
+- 2 – Refresh on for both Azure AD-joined and hybrid-joined devices 
+
+<a href="" id="rotaterecoverypasswords"></a>**RotateRecoveryPasswords**  
+This setting refreshes all recovery passwords for OS and fixed drives (removable drives are not included so they can be shared between users). All recovery passwords for all drives will be refreshed and only one password per volume is retained. In case of errors, an error code will be returned so that server can take appropriate action to remediate.
+
+The client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure.  
+
+Policy type is Execute. When “Execute Policy” is pushed, the client sets the status as Pending and initiates an asynchronous rotation operation. After refresh is complete, pass or fail status is updated. The client will not retry, but if needed, the server can re-issue the execute request. 
+
+Server can call Get on the RotateRecoveryPasswordsRotationStatus node to query the status of the refresh. 
+
+Recovery password refresh will only occur for devices that are joined to Azure AD or joined to both Azure AD and on-premises (hybrid Azure AD-joined) that run a Windows 10 edition with the BitLocker CSP (Pro/Enterprise). Devices cannot refresh recovery passwords if they are only registered in Azure AD (also known as workplace-joined) or signed in with a Microsoft account. 
+
+Each server-side recovery key rotation is represented by a request ID. The server can query the following nodes to make sure it reads status/result for same rotation request.
+- RotateRecoveryPasswordsRequestID: Returns request ID of last request processed.
+- RotateRecoveryPasswordsRotationStatus: Returns status of last request processed.
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table> 
+Value type is string. Supported operation is Execute. Request ID is expected as a parameter.
+
+<a href="" id="status"></a>**Status**  
+Interior node. Supported operation is Get.
+
+<a href="" id="status-deviceencryptionstatus"></a>**Status/DeviceEncryptionStatus**  
+This node reports compliance state of device encryption on the system.
+
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table> 
+
+Supported values:  
+- 0 - Indicates that the device is compliant.
+- Any other value represents a non-compliant device.
+
+Value type is int. Supported operation is Get.
+
+<a href="" id="status-rotaterecoverypasswordsstatus"></a>**Status/RotateRecoveryPasswordsStatus**  
+This node reports the status of RotateRecoveryPasswords request. 
+
+Status code can be one of the following:  
+
+- 2 – Not started
+- 1 - Pending
+- 0 - Pass
+- Any other code - Failure HRESULT
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table> 
+Value type is int. Supported operation is Get.
+
+<a href="" id="status-rotaterecoverypasswordsrequestid"></a>**Status/RotateRecoveryPasswordsRequestID**  
+This node reports the RequestID corresponding to RotateRecoveryPasswordsStatus. 
+This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus to ensure the status is correctly matched to the request ID.
+<table>
+<tr>
+    <th>Home</th>
+    <th>Pro</th>
+    <th>Business</th>
+    <th>Enterprise</th>
+    <th>Education</th>
+    <th>Mobile</th>
+    <th>Mobile Enterprise</th>
+</tr>
+<tr>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table> 
+Value type is string. Supported operation is Get.
+
 ### SyncML example
 
 The following example is provided to show proper format and should not be taken as a recommendation.

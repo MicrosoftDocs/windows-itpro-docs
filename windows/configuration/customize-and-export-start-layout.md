@@ -93,7 +93,7 @@ When you have the Start layout that you want your users to see, use the [Export-
 
     `Export-StartLayout –path <path><file name>.xml`
     
-    On a device running Windows 10, version 1809, run the **Export-StartLayout** with the switch **-UseDesktopApplicationID**. For example:
+    On a device running Windows 10, version 1809 or higher, run the **Export-StartLayout** with the switch **-UseDesktopApplicationID**. For example:
 
     ```PowerShell
     Export-StartLayout -UseDesktopApplicationID -Path layout.xml
@@ -191,7 +191,7 @@ If the Start layout is applied by Group Policy or MDM, and the policy is removed
 - [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 - [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
 
 

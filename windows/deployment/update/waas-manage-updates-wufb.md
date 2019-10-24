@@ -5,7 +5,6 @@ manager: laurawi
 description: Windows Update for Business lets you manage when devices received updates from Windows Update.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
