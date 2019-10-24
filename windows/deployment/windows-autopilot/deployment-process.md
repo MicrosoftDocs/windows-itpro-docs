@@ -28,6 +28,6 @@ The following poster is two pages in portrait mode (11x17). Click the image belo
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) format.
 
-[![Deploy Windows 10 with Autopilot](./media/windows10-autopilot-flowchart.png)](./media/Windows10AutopilotFlowchart.pdf)
+[![Deploy Windows 10 with Autopilot](../media/windows10-autopilot-flowchart.png)](../media/Windows10AutopilotFlowchart.pdf)
 
 **Note**: The Windows Autopilot for existing devices process is part of the [System Center Configuration Manager deployment poster](../windows-10-deployment-posters.md#deploy-windows-10-with-system-center-configuration-manager).
