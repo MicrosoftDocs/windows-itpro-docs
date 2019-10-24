@@ -63,9 +63,21 @@ $ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'http
 
 The output from this command should be similar to the following:
 
-> `OK https://x.cp.wd.microsoft.com/api/report`
->
+> `OK https://x.cp.wd.microsoft.com/api/report`  
 > `OK https://cdn.x.cp.wd.microsoft.com/ping`
+
+You can also use ```mdatp --connectivity-test``` to verify the connectivity.
+
+```bash
+$ mdatp --connectivity-test
+Running connectivity test
+Testing connection with https://cdn.x.cp.wd.microsoft.com/ping ... [OK]
+Testing connection with https://eu-cdn.x.cp.wd.microsoft.com/ping ... [OK]
+Testing connection with https://wu-cdn.x.cp.wd.microsoft.com/ping ... [OK]
+Testing connection with https://unitedstates.x.cp.wd.microsoft.com/api/report ... [OK]
+Testing connection with https://ussus1eastprod.blob.core.windows.net ... [OK]
+Testing connection with https://ussus1westprod.blob.core.windows.net ... [OK]
+```
 
 ### Installation instructions
 
@@ -84,8 +96,6 @@ In general you need to take the following steps:
 
 ## How to update Microsoft Defender ATP for Linux
 
->[!NOTE]
-> **TODO:** Upgrade story is not very clear right now!
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender ATP for Linux, refer to [Deploy updates for Microsoft Defender ATP for Linux](microsoft-defender-atp-linux-updates.md)
 
