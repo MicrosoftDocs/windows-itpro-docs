@@ -229,7 +229,7 @@ If the system gets stuck during the kernel phase, you experience multiple sympto
 
 -   Specific error code is displayed.
     For example, "0x00000C2" , "0x0000007B" , "inaccessible boot device" and so on.
-    [Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device](https://docs.microsoft.com/en-us/windows/client-management/troubleshoot-inaccessible-boot-device)
+    [Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device](https://docs.microsoft.com/windows/client-management/troubleshoot-inaccessible-boot-device)
 
 -   The screen is stuck at the "spinning wheel" (rolling dots) "system busy" icon.
 
@@ -307,7 +307,7 @@ To troubleshoot this Stop error, follow these steps to filter the drivers:
 
 For additional troubleshooting steps, see the following articles:
 
-- [Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device](https://docs.microsoft.com/en-us/windows/client-management/troubleshoot-inaccessible-boot-device)
+- [Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device](https://docs.microsoft.com/windows/client-management/troubleshoot-inaccessible-boot-device)
 
 To fix problems that occur after you install Windows updates, check for pending updates by using these steps:
 
@@ -364,7 +364,7 @@ For more information about page file problems in Windows 10 or Windows Server 20
 - [Introduction to page files](https://docs.microsoft.com/windows/client-management/introduction-page-file)
 
 For more information about Stop errors, see the following Knowledge Base article:
-- [Advanced troubleshooting for Stop error or blue screen error issue](https://docs.microsoft.com/en-us/windows/client-management/troubleshoot-stop-errors)
+- [Advanced troubleshooting for Stop error or blue screen error issue](https://docs.microsoft.com/windows/client-management/troubleshoot-stop-errors)
 
 
 If the dump file shows an error that is related to a driver (for example, windows\system32\drivers\stcvsm.sys is missing or corrupted), follow these guidelines:
