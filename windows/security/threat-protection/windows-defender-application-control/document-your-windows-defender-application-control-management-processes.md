@@ -1,16 +1,19 @@
 ---
 title: Document your application control management processes (Windows 10)
 description: This planning topic describes the WDAC policy maintenance information to record for your design document.
-ms.assetid: 6397f789-0e36-4933-9f86-f3f6489cf1fb
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: brbrahm
+ms.author: dansimp
+manager: dansimp
 ms.topic: conceptual
 ms.date: 09/21/2017
 ---

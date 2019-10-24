@@ -1,14 +1,19 @@
 ---
 title: Windows Defender Application Control design guide (Windows 10)
 description: Microsoft Windows Defender Device Guard is a feature set that consists of both hardware and software system integrity hardening features that revolutionize the Windows operating system’s security.
-keywords: virtualization, security, malware
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: brbrahm
+ms.author: dansimp
+manager: dansimp
 ms.topic: conceptual
 ms.date: 02/20/2018
 ---

@@ -1,11 +1,19 @@
 ---
 title: Deploy Managed Installer for Windows Defender Device Guard (Windows 10)
 description: Explains how you can use a managed installer to automatically authorize applications deployed and installed by a designated software distribution solution, such as System Center Configuration Manager. 
-keywords: virtualization, security, malware
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 ms.localizationpriority: medium
-author: mdsakibMSFT
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: brbrahm
+ms.author: dansimp
+manager: dansimp
 ms.date: 06/13/2018
 ---
 

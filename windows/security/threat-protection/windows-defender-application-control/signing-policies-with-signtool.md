@@ -1,12 +1,19 @@
 ---
 title: Signing Windows Defender Application Control policies with SignTool.exe  (Windows 10)
 description: SSigned WDAC policies give organizations the highest level of malware protection available in Windows 10. 
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+audience: ITPro
+ms.collection: M365-security-compliance
 author: jsuther1974
+ms.reviewer: brbrahm
+ms.author: dansimp
+manager: dansimp
 ms.date: 02/21/2018
 ---
 
