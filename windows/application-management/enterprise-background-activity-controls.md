@@ -8,7 +8,6 @@ ms.reviewer:
 manager: dansimp
 ms.topic: article
 ms.prod: w10
-ms.technology: uwp
 keywords: windows 10, uwp, enterprise, background task, resources
 ---
 
