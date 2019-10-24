@@ -1,16 +1,20 @@
 ---
 title: Select the types of rules to create  (Windows 10)
 description: Select the types of rules to create. 
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.date: 04/20/2018
-ms.reviewer: 
-manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: brbrahm
 ms.author: dansimp
+manager: dansimp
+ms.date: 04/20/2018
 ---
 
 # Deploy Windows Defender Application Control policy rules and file rules

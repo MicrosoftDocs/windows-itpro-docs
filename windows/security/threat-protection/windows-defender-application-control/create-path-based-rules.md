@@ -1,13 +1,19 @@
 ---
 title: Windows Defender Application Control path-based rules (Windows 10)
 description: Beginning with Windows 10 version 1903, Windows Defender Application Control (WDAC) policies can contain path-based rules.
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: mdsakibMSFT
-ms.author: mdsakib
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: brbrahm
+ms.author: dansimp
+manager: dansimp
 ms.date: 05/17/2019
 ---
 

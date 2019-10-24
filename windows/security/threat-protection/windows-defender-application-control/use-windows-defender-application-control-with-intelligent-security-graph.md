@@ -1,14 +1,20 @@
 ---
 title: Deploy Windows Defender Application Control with Intelligent Security Graph (ISG) (Windows 10)
 description: Automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation.
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.date: 06/14/2018
-ms.reviewer: 
-manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: brbrahm
 ms.author: dansimp
+manager: dansimp
+ms.date: 06/14/2018
 ---
 
 # Use Windows Defender Application Control (WDAC) with the Microsoft Intelligent Security Graph 
@@ -98,6 +104,9 @@ Modern apps are not supported with the ISG heuristic and will need to be separat
 The ISG heuristic does not authorize kernel mode drivers. The WDAC policy must have rules that allow the necessary drivers to run.  
 
 In some cases, the code integrity logs where WDAC errors and warnings are written will contain error events for native images generated for .NET assemblies. Typically, the error is functionally benign as a blocked native image will result in the corresponding assembly being re-interpreted. Review for functionality and performance for the related applications using the native images maybe necessary in some cases. 
+<<<<<<< HEAD
 
 >[!NOTE]
 > A rule that explicitly allows an application will take precedence over the ISG rule that does not allow it. In this scenario, this policy is not compatible with Intune, where there is no option to add rules to the template that enables ISG. In most circumstances you would need to build a custom WDAC policy, including ISG if desired.
+=======
+>>>>>>> Update WDAC metadata
