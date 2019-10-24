@@ -15,10 +15,10 @@ author: greg-lindsay
 ms.topic: article
 ---
 
+#  Windows 10 deployment process posters
+
 **Applies to**
 -   Windows 10
-
-#  Windows 10 deployment process posters
 
 The following posters step through various options for deploying Windows 10 with Windows Autopilot or System Center Configuration Manager.  
 
