@@ -12,7 +12,7 @@ ms.topic: article
 ms.localizationpriority: 
 manager: jarrettr
 appliesto:
-- HoloLens 1
+- HoloLens (1st gen)
 - HoloLens 2
 ---
 
