@@ -37,7 +37,7 @@ HoloLens need a network connection to go through initial device set up.  If your
 
 Additional references:
 
-- [Technical reference for AAD related IP ranges and URLs](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges)
+- [Technical reference for AAD related IP ranges and URLs](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 
 ## HoloLens limitations
 
