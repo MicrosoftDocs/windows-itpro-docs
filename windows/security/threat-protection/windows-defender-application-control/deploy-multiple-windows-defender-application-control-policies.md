@@ -53,7 +53,7 @@ New-CIPolicy -MultiplePolicyFormat -foo –bar
 Optionally, you can choose to make the new base policy supplementable (allow supplemental policies).
 
 ```powershell
-Set-RuleOption -FilePath <string> Enabled:Allow Supplemental Policies
+Set-RuleOption -FilePath <string> -Option 17
 ```
 
 For signed base policies that are being made supplementable, you need to ensure that supplemental signers are defined. Use the "Supplemental" switch in Add-SignerRule to provide supplemental signers.
