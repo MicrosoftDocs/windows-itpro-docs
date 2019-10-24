@@ -8,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
-author: msfttracyp
+author: dansimp
 ms.author: dansimp
 ms.topic: article
 ---

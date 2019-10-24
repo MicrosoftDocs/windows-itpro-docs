@@ -1,5 +1,5 @@
 ---
-author: msfttracyp
+author: dansimp
 title: Remove background task resource restrictions
 description: Allow enterprise background tasks unrestricted access to computer resources.
 ms.author: dansimp

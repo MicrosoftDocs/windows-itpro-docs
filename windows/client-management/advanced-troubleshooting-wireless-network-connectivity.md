@@ -5,11 +5,11 @@ manager: dansimp
 description: Learn how troubleshooting of establishing Wi-Fi connections
 keywords: troubleshooting, wireless network connectivity, wireless, Wi-Fi
 ms.prod: w10
-ms.mktglfcycl:
+ms.mktglfcycl: 
 ms.sitesec: library
-author: msfttracyp
+author: dansimp
 ms.localizationpriority: medium
-ms.author: tracyp
+ms.author: dansimp
 ms.topic: troubleshooting
 ---
 
