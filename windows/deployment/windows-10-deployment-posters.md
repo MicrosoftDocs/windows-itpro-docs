@@ -1,7 +1,6 @@
 ---
-title: Windows 10 deployment processes (Windows 10)
+title: Windows 10 deployment process posters
 description: View and download Windows 10 deployment process flows for System Center Configuration Manager and Windows Autopilot.
-ms.assetid: 7A29D546-52CC-482C-8870-8123C7DC04B5
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
@@ -19,7 +18,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-# Deployment process posters for Windows 10
+#  Windows 10 deployment process posters
 
 The following posters step through various options for deploying Windows 10 with Windows Autopilot or System Center Configuration Manager.  The Windows Autopilot poster is two pages in portrait mode. The Configuration Manager poster is one page in landscape mode. 
 
