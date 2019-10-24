@@ -35,20 +35,20 @@ This topic describes how to deploy Microsoft Defender ATP for Linux through Pupp
 
 Before you get started, please see [the main Microsoft Defender ATP for Linux page](microsoft-defender-atp-linux.md) for a description of prerequisites and system requirements for the current software version.
 
-In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have a Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported puppet modules such as *apt*, *lsb-release* to help deploy the package. Your organization might use a different workflow.
+In addition, for Puppet deployment, you need to be familiar with Puppet administration tasks, have a Puppet configured, and know how to deploy packages. Puppet has many ways to complete the same task. These instructions assume availability of supported puppet modules such as *apt* to help deploy the package. Your organization might use a different workflow. Please refer to [Puppet documentation](https://puppet.com/docs) for details.
 
 ## Download onboarding package
 
-Download the onboarding package from Windows Defender Security Center:
+Download the onboarding package from Microsoft Defender Security Center:
 
-1. In Windows Defender Security Center, go to **Settings > Machine Management > Onboarding**.
-2. In Section 1 of the page, set operating system to **Linux, macOS, iOS, and Android** and Deployment method to **Local script**.
-3. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
+1. In Microsoft Defender Security Center, go to **Settings > Machine Management > Onboarding**.
+2. In the first drop down, set operating system to **Windows 10** and in second drop down, Deployment method to **Mobile Device Management / Microsoft Intune**.
+3. Click on **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
 
     ![Windows Defender Security Center screenshot](images/ATP_Portal_Onboarding_win_intune.png)
 
 4. From a command prompt, verify that you have the file.
-    Extract the contents of the .zip file and create mdatp_onboard.json file as follows
+    Extract the contents of the .zip file and create mdatp_onboard.json file as follows:
   
     ```bash
     $ ls -l
@@ -61,7 +61,7 @@ Download the onboarding package from Windows Defender Security Center:
 
 You need to create a puppet manifest for deploying Microsoft Defender ATP for Linux to devices managed by puppet server. This example makes use of *apt* module available from puppetlabs and assumes that apt module has been installed on your puppet server.
 
-Create a folders *install_mdatp/files* and *install_mdatp/manifests* under the modules folder of your puppet installation. This typically is located in */etc/puppetlabs/code/environments/production/modules* on your puppet server. Copy the mdatp.json file created in above step to *install_mdatp/files* folder. Create *init.pp* file which will contain the deployment instructions.
+Create a folders *install_mdatp/files* and *install_mdatp/manifests* under the modules folder of your puppet installation. This typically is located in */etc/puppetlabs/code/environments/production/modules* on your puppet server. Copy the mdatp_onboard.json file created in above step to *install_mdatp/files* folder. Create *init.pp* file which will contain the deployment instructions.
 
 ```bash
 $ pwd
