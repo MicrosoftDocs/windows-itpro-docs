@@ -7,10 +7,11 @@ ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
 author: greg-lindsay
-manager: laurawi
 ms.author: greglin
+manager: laurawi
 ms.topic: article
 ---
+
 # Features removed starting with Windows 10, version 1903
 
 > Applies to: Windows 10, version 1903

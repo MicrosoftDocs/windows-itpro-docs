@@ -8,10 +8,10 @@ ms.sitesec: library
 audience: itpro
 author: greg-lindsay
 ms.author: greglin
-ms.reviewer: 
 manager: laurawi
 ms.topic: article
 ---
+
 # Features removed starting with Windows 10, version 1809
 
 > Applies to: Windows 10, version 1809
