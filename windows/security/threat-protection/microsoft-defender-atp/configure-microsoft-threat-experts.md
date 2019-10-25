@@ -76,6 +76,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 >A flyout screen opens. The following screen shows when you are on a trial subscription. 
 >![Image of Microsoft Threat Experts Experts on Demand screen](images/mte-eod.png)
+
 > The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription. 
 >![Image of Microsoft Threat Experts Experts on Demand full subscription screen](images/mte-eod-fullsubscription.png)
 
