@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -29,7 +30,7 @@ When Windows Setup fails, the result and extend code are recorded as an informat
 To use Windows PowerShell, type the following commands from an elevated Windows PowerShell prompt:
 
 >[!IMPORTANT]
->}The following source will be available only if you have updated from a previous version of Windows 10 to a new version. If you installed the current version and have not updated, the source named **WinSetupDiag02** will be unavailable.
+>The following source will be available only if you have updated from a previous version of Windows 10 to a new version. If you installed the current version and have not updated, the source named **WinSetupDiag02** will be unavailable.
 
 ```Powershell
 $events = Get-WinEvent -FilterHashtable @{LogName="Application";ID="1001";Data="WinSetupDiag02"}
