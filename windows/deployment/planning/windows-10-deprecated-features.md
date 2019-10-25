@@ -25,7 +25,7 @@ The features described below are longer being actively developed, and might be r
 
 <!-- | Fresh Paint app | The Fresh Paint app will be removed from the Microsoft Store on Windows 10 in a future release. | -->
 
-|Feature    |  Details and mitigation  | Announced version |
+|Feature    |  Details and mitigation  | Announced in version |
 | ----------- | --------------------- | ---- |
 | Hyper-V vSwitch on LBFO | In a future release, the Hyper-V vSwitch will no longer have the capability to be bound to an LBFO team.  Instead, it must be bound via [Switch Embedded Teaming](https://docs.microsoft.com/windows-server/virtualization/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming#bkmk_sswitchembedded) (SET).| 1909 |
 | Language Community tab in Feedback Hub | We are planning to remove the Language Community tab in Feedback Hub. Users will be able to provide translation feedback using the normal feedback process: [Feedback Hub - Feedback](feedback-hub://?newFeedback=true&feedbackType=2).  | 1909 |
