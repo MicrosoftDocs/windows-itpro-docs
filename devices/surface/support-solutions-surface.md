@@ -47,7 +47,7 @@ These are the top Microsoft Support solutions for common issues experienced when
 
 - [Troubleshoot connecting Surface to a second screen](https://support.microsoft.com/help/4023496)
 
-- [Microsoft Surface Dock Updater](https://docs.microsoft.com/surface/surface-dock-updater)
+- [Microsoft Surface Dock Firmware Update](https://docs.microsoft.com/surface/surface-dock-updater)
 
 ## Surface Drivers and Firmware
 
