@@ -117,23 +117,27 @@ Diagnostic data is categorized into the levels "Security", "Basic", "Enhanced", 
 
 ### Windows services where Microsoft is the processor under the GDPR
 
-Most Windows 10 services are controller services in terms of the GDPR – for both Windows functional data and Windows diagnostic data. But there are a few Windows services where Microsoft is a processor for functional data under the GDPR, such as [Windows Analytics](https://www.microsoft.com/windowsforbusiness/windows-analytics) and [Windows Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
+Most Windows 10 services are controller services in terms of the GDPR – for both Windows functional data and Windows diagnostic data. But there are a few Windows services where Microsoft is a processor for functional data under the GDPR, such as [Desktop Analytics](https://aka.ms/dadocs), [Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) and [Windows Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
 >[!NOTE]
->Both Windows Analytics and Windows Defender ATP are subscription services for organizations. Some functionality requires a certain license (please see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare)).
+>Both Desktop Analytics and Windows Defender ATP are subscription services for organizations. Some functionality requires a certain license (please see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare)).
 
-#### Windows Analytics
+#### Desktop Analytics
 
-[Windows Analytics](https://www.microsoft.com/windowsforbusiness/windows-analytics) is a service that provides rich, actionable information for helping organizations to gain deep insights into the operational efficiency and health of the Windows devices in their environment. It uses Windows diagnostic data from devices enrolled by the IT organization of an enterprise into the Windows Analytics service.
+> [!IMPORTANT]
+> The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](/windows/deployment/update/update-compliance-get-started) will continue to be supported.
+> For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/en-us/help/4521815/windows-analytics-retirement).
 
-Windows [transmits Windows diagnostic data](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) to Microsoft datacenters, where that data is analyzed and stored. With Windows Analytics, the IT organization can then view the analyzed data to detect and fix issues or to improve their processes for upgrading to Windows 10.
+[Desktop Analytics](https://aka.ms/dadocs) is a cloud-based service that integrates with Configuration Manager. The service provides insight and intelligence for you to make more informed decisions about the update readiness of Windows Windows devices in their environment. It uses Windows diagnostic data from devices enrolled by the IT organization of an enterprise with data aggregated from millions of devices into the Desktop Analytics service.
 
-As a result, in terms of the GDPR, the organization that has subscribed to Windows Analytics is acting as the controller, while Microsoft is the processor for Windows Analytics.
+Windows [transmits Windows diagnostic data](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) to Microsoft datacenters, where that data is analyzed and stored. With Desktop Analytics, the IT organization can then view the analyzed data to detect and fix issues or to improve their processes for upgrading to Windows 10.
+
+As a result, in terms of the GDPR, the organization that has subscribed to Desktop Analytics is acting as the controller, while Microsoft is the processor for Desktop Analytics.
 >[!NOTE]
->The IT organization must explicitly enable Windows Analytics for a device after the organization subscribes.
+>The IT organization must explicitly enable Desktop Analytics for a device after the organization subscribes.
 
 >[!IMPORTANT]
->Windows Analytics does not collect Windows Diagnostic data by itself. Instead, Windows Analytics only uses a subset of Windows Diagnostic data that is collected by Windows for an enrolled device. The Windows Diagnostic data collection is controlled by the IT department of an organization or the user of a device.
+>Desktop Analytics does not collect Windows Diagnostic data by itself. Instead, Desktop Analytics only uses a subset of Windows Diagnostic data that is collected by Windows for an enrolled device. The Windows Diagnostic data collection is controlled by the IT department of an organization or the user of a device. See [Enable data sharing for Desktop Analytics](https://docs.microsoft.com/sccm/desktop-analytics/enable-data-sharing)
 
 #### Windows Defender ATP
 
