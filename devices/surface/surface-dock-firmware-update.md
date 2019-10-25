@@ -45,7 +45,10 @@ If preferred, you can manually complete the update as follows:
 
 You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firmware Update to multiple devices across your network. When using System Center Configuration Manager or other deployment tool, enter the following syntax to ensure the installation is silent:
 
-- **Msiexec.exe /i <name of msi> /quiet /norestart**
+- **Msiexec.exe /i <name of msi> /quiet /norestart** 
+
+> [!NOTE]
+> A log file is not created by default. In order to create a log file, you will need to append "/l*v [path]"
 
 For more information, refer to [Command line options](https://docs.microsoft.com/windows/win32/msi/command-line-options) documentation.
 
@@ -83,9 +86,9 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 **Table 1. Event logging for Surface Dock Firmware Update**
 
 | Log                              | Location                               | Notes                                                                                                                                                                                                         |
-| -------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Surface Dock Firmware Update log | /l*v %windir%\logs\Applications\SurfaceDockFWI.log | Earlier versions of this tool wrote events to Applications and Services Logs\Microsoft Surface Dock Updater.                                                                                                  |
-| Windows Device Install log       | %windir%\inf\ setupapi.dev.log         | For more information about using Device Install Log, refer [to SetupAPI Logging](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi-logging--windows-vista-and-later-) documentation. |
+| -------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Surface Dock Firmware Update log | Path needs to be specified (Check note) | Earlier versions of this tool wrote events to Applications and Services Logs\Microsoft Surface Dock Updater.                                                                                                  |
+| Windows Device Install log       | %windir%\inf\ setupapi.dev.log          | For more information about using Device Install Log, refer [to SetupAPI Logging](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi-logging--windows-vista-and-later-) documentation. |
 
  
 **Table 2. Event log IDs for Surface Dock Firmware Update**
@@ -97,6 +100,10 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 | 2003     | Dock firmware update failed to get firmware version.                 |
 | 2004     | Querying the firmware version.                                       |
 | 2005     | Dock firmware failed to start update.                                |
+| 2006     | Failed to send offer/payload pairs.                                  |
+| 2007     | Firmware update finished.                                            |
+| 2008     | BEGIN dock telemetry.                                                |
+| 2011     | END dock telemetry.                                                  |
 
 ## Troubleshooting tips
 
