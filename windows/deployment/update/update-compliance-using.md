@@ -6,7 +6,6 @@ description: Explains how to begin using Update Compliance.
 keywords: oms, operations management suite, wdav, updates, upgrades, antivirus, antimalware, signature, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
 author: jaimeo

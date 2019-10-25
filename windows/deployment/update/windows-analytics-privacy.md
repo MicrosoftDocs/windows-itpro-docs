@@ -6,7 +6,6 @@ description: How Windows Analytics uses data
 keywords: windows analytics, oms, privacy, data, diagnostic, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, FAQ, problems, troubleshooting, error
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
 author: jaimeo
