@@ -25,7 +25,7 @@ For information about features that might be removed in a future release, see [W
 
 The following features and functionalities are removed from the installed product image for Windows 10. Applications or code that depend on these features won't function in the release when it was removed, or in later releases.
 
-|Feature    |  Details  | Removed in version |
+|Feature    |  Details and mitigation  | Removed in version |
 | ----------- | --------------------- | ------ |
 | Video project OneDrive syncing in Photos | The option to upload and projects in OneDrive in when using the Video Editor in the Photos app is being removed.| 1909 |
 | Cortana voice commands (VCD) | After upgrading and the new Cortana UWP app is deployed, users will no longer be able to use custom voice commands to invoke apps locally using Cortana. | 1909 |
