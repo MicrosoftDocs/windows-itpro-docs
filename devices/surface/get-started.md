@@ -14,7 +14,7 @@ ms.localizationpriority: High
 ---
 # Get started with Surface devices
 
-Harness the power of Surface for Business, Windows, and Office connected together through the cloud. Find tools, step-by-step guides, and other resources to help you plan, deploy, and manage Surface devices in your organization.
+Harness the power of Surface, Windows, and Office connected together through the cloud. Find tools, step-by-step guides, and other resources to help you plan, deploy, and manage Surface for Business devices in your organization.
 
 <ul class="panelContent cardsF">
     <li>
@@ -29,7 +29,7 @@ Harness the power of Surface for Business, Windows, and Office connected togethe
                     <div class="cardText">
                         <h3>Plan</h3>
                          <p><a href="considerations-for-surface-and-system-center-configuration-manager.md">Surface and SCCM considerations</a></p>
-                         <p><a href="deploy-surface-app-with-windows-store-for-business.md">Deploy Surface app with Microsoft Store for Business</a></p>
+                         <p><a href="wake-on-lan-for-surface-devices.md">Wake On LAN for Surface devices</a></p>
                     </div>
                 </div>
             </div>
