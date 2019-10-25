@@ -5997,6 +5997,11 @@
 "redirect_document_id": true
 },
 {
+    "source_path": "devices/hololens/hololens-restart-recover.md",
+    "redirect_url": "/hololens/hololens-recovery",
+    "redirect_document_id": false
+},
+{
 "source_path": "devices/surface-hub/provisioning-packages-for-certificates-surface-hub.md",
 "redirect_url": "https://docs.microsoft.com/surface-hub/provisioning-packages-for-surface-hub",
 "redirect_document_id": true

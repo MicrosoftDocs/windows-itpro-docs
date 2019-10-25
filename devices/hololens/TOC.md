@@ -47,12 +47,12 @@
 
 # Hologram optics and placement in space
 ## [Tips for viewing clear Holograms](hololens-calibration.md)
-## [Mapping physical spaces with HoloLens](hololens-spaces.md)
+## [Environment considerations for HoloLens](hololens-environment-considerations.md)
+## [Spatial mapping on HoloLens](hololens-spaces.md)
 
-# Recovery and troubleshooting
-## [Restore HoloLens 2 using Advanced Recovery Companion](hololens-recovery.md)
-## [Restart, reset, or recover the HoloLens](hololens-restart-recover.md)
+# Update and recovery
+## [Join the Windows Insider program](hololens-insider.md)
+## [Restart, reset, or recover](hololens-recovery.md)
 
 # [Give us feedback](hololens-feedback.md)
-# [Insider preview for Microsoft HoloLens](hololens-insider.md)
 # [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
