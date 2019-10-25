@@ -7,7 +7,7 @@
 ## Features removed or planned for replacement
 ### [Windows 10 features lifecycle](features-lifecycle.md)
 ### [Features we're no longer developing](windows-10-deprecated-features.md)
-### [Features removed](windows-10-removed-features.md)
+### [Features we removed](windows-10-removed-features.md)
 
 ## Application Compatibility Toolkit (ACT)
 ### [Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md)
