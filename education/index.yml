@@ -36,8 +36,6 @@ productDirectory:
         - url: anchor-2-Partners.md
           text: Looking for resources available to Microsoft Education partners? Start here.
 
-# additionalContent section (optional)
-# Card with links style
 additionalContent:
   # Supports up to 3 sections
   sections:
@@ -116,10 +114,6 @@ additionalContent:
               url: https://docs.microsoft.com/en-us/power-bi/service-admin-administering-power-bi-in-your-organization
             - text: Dynamics 365
               url: https://docs.microsoft.com/en-us/dynamics365/#pivot=get-started
-            
-additionalContent:
-  # Supports up to 3 sections
-  sections:
     - title: M365 Education Documentation for developers
       summary: Are you an app developer looking for information about developing solutions on Microsoft Education products? Start here.
       items:
@@ -139,10 +133,6 @@ additionalContent:
         - title: Data Streamer
           summary: Bring new STEM experiences into the classroom with real-time data in Excel using Data Streamer. Data Streamer can send data to Excel from a sensor or application.
           url: https://docs.microsoft.com/en-us/microsoft-365/education/data-streamer
-
-additionalContent:
-  # Supports up to 3 sections
-  sections:
     - title: M365 Education Documentation for partners
       summary: Looking for resources available to Microsoft Education partners? Start here.
       items:
