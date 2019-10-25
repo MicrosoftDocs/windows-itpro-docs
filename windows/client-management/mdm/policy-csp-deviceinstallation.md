@@ -814,13 +814,13 @@ For example, this custom profile prevents installation of devices with matching 
 
 To prevent installation of devices with matching device instance IDs by using custom profile in Intune:
 1. Locate the device instance ID.
-2. In the sample SyncML, replace `&` in the device instance IDs with `&amp;`.  
+2. Replace `&` in the device instance IDs with `&amp;`.  
 For example:  
 Replace  
 ```USBSTOR\DISK&VEN_SAMSUNG&PROD_FLASH_DRIVE&REV_1100\0376319020002347&0```  
 with  
 ```USBSTOR\DISK&amp;VEN_SAMSUNG&amp;PROD_FLASH_DRIVE&amp;REV_1100\0376319020002347&amp;0```
-3. Add the SyncML into the Intune custom device configuration profile.
+3. Replace the device instance IDs with `&amp;` into the sample SyncML. Add the SyncML into the Intune custom device configuration profile.
 
 <!--/Example-->
 <!--Validation-->
