@@ -35,9 +35,9 @@ The following terms can be used to describe the status that might be assigned to
 
 - **Deprecation**: The stage of the product lifecycle when a feature or functionality is no longer in active development and may be removed in future releases of a product or online service.
 - **End of support**: The stage of the product lifecycle when support and servicing are no longer available for a product.
-- **Retirement**: The stage of the product lifecycle when an online service is shut down so that it is no longer available for use.
-- **Remove or retire a feature**: The stage of the product lifecycle when a feature or functionality is removed from an online service after it has been deprecated.
-- **Replace a feature**: The stage of the product lifecycle when a feature or functionality in an online service is replaced with a different feature or functionality.
+- **Retirement**: The stage of the product lifecycle when an service is shut down so that it is no longer available for use.
+- **Remove or retire a feature**: The stage of the product lifecycle when a feature or functionality is removed from a service after it has been deprecated.
+- **Replace a feature**: The stage of the product lifecycle when a feature or functionality in a service is replaced with a different feature or functionality.
 
 ## Also see
 
