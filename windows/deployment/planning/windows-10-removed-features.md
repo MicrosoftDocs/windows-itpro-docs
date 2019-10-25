@@ -1,6 +1,6 @@
 ---
-title: Windows 10, version 1909 - Features that have been removed
-description: Learn about features that will be removed in Windows 10, version 1903
+title: Windows 10 - Features that have been removed
+description: Learn about features and functionality that has been removed or replaced in Windows 10
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
@@ -12,7 +12,7 @@ manager: laurawi
 ms.topic: article
 ---
 
-# Features removed starting with Windows 10, version 1909
+# Features and functionality removed in Windows 10
 
 > Applies to: Windows 10, version 1909
 
@@ -23,9 +23,7 @@ For information about features that might be removed in a future release, see [W
 > [!NOTE]
 > Join the [Windows Insider program](https://insider.windows.com) to get early access to new Windows 10 builds and test these changes yourself.
 
-## Features we removed
-
-The following features and functionalities are removed from the installed product image for Windows 10. Applications or code that depend on these features won't function in the release when it was removed, or later releases.
+The following features and functionalities are removed from the installed product image for Windows 10. Applications or code that depend on these features won't function in the release when it was removed, or in later releases.
 
 |Feature    |  Details  | Removed in version |
 | ----------- | --------------------- | ------ |
