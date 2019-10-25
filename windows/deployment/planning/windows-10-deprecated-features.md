@@ -27,9 +27,10 @@ The features described below are longer being actively developed, and might be r
 
 If you have feedback about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app). 
 
+<!-- | Fresh Paint app | The Fresh Paint app will be removed from the Microsoft Store on Windows 10 in a future release. | -->
+
 |Feature    |  Details  | 
 | ----------- | --------------------- | 
-<!-- | Fresh Paint app | The Fresh Paint app will be removed from the Microsoft Store on Windows 10 in a future release. | -->
 | Hyper-V vSwitch on LBFO | In a future release, the Hyper-V vSwitch will no longer have the capability to be bound to an LBFO team.  Instead, it must be bound via [Switch Embedded Teaming](https://docs.microsoft.com/windows-server/virtualization/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming#bkmk_sswitchembedded) (SET).|
 | Language Community tab in Feedback Hub | We are planning to remove the Language Community tab in Feedback Hub. Users will be able to provide translation feedback using the normal feedback process: [Feedback Hub - Feedback](feedback-hub://?newFeedback=true&feedbackType=2).  |
 | My People / People in the Shell |  My People is deprecated. It may be removed in a future update. |

@@ -17,6 +17,12 @@ ms.topic: article
 
 Each release of Windows 10 contains many new and improved features. Occasionally we also remove features and functionality, usually because there is a better option.
 
+## Features no longer being developed
+
+The following topic lists features that are no longer being developed. These features might be removed in a future release.
+
+[Windows 10 features we’re no longer developing](windows-10-deprecated-features.md)
+
 ## Features removed
 
 The following topics have details about features that have been removed in a specific version of Windows 10.
@@ -27,12 +33,6 @@ The following topics have details about features that have been removed in a spe
 - [Windows 10, version 1803](windows-10-1803-removed-features.md)
 - [Windows 10, version 1709](windows-10-1709-removed-features.md)
 - [Windows 10, version 1703](windows-10-1703-removed-features.md)
-
-## Features no longer being developed
-
-The following topic lists features that are no longer being developed. These features might be removed in a future release.
-
-[Windows 10 features we’re no longer developing](windows-10-deprecated-features.md)
 
 ## Terminology
 
