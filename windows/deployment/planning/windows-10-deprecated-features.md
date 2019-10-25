@@ -21,11 +21,9 @@ Each version of Windows 10 adds new features and functionality; occasionally we 
 
 For information about features that have been removed, see [Features removed](features-lifecycle.md#features-removed).
 
-## Features and capabilities we’re no longer developing
-
 The features described below are longer being actively developed, and might be removed in a future update. Some features have been replaced with other features or functionality and some are now available from other sources.
 
-If you have feedback about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app). 
+>If you have feedback about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app). 
 
 <!-- | Fresh Paint app | The Fresh Paint app will be removed from the Microsoft Store on Windows 10 in a future release. | -->
 
