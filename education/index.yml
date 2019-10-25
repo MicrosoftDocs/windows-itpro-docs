@@ -16,33 +16,31 @@ productDirectory:
   title: M365 Education Documentation
   summary: Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education. # < 160 chars (optional)
   items:
-    # Card
-    ## <a id="admins" />
+    # Card    
     - title: IT Admins
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/media/common/i_configure-teams.svg
       links:
-        - url: anchor-2-ITAdmins.md 
+        - url: index.yml#admins
           text: Get started with deploying and managing a full cloud IT solution for your school.
     # Card
-    ## <a id="developers" />
     - title: Developers
       imageSrc: https://docs.microsoft.com/media/common/i_configure-teams.svg
       links:
-        - url: anchor-2-Dev.md 
+        - url: index.yml#developers
           text: Looking for information about developing solutions on Microsoft Education products? Start here. 
-    # Card
-    ## <a id="partners" />
+    # Card    
     - title: Partners
       imageSrc: https://docs.microsoft.com/media/common/i_configure-teams.svg
       links:
-        - url: anchor-2-Partners.md
+        - url: index.yml#partners
           text: Looking for resources available to Microsoft Education partners? Start here.
 
 additionalContent:
   # Supports up to 3 sections  
   sections:
-    - title: M365 Education Documentation for IT admins (#admins)
+    ## <a id="admins" />
+    - title: M365 Education Documentation for IT admins
       summary: M365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.  This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments. Check out the Microsoft Education Journey. Find help now.
       items:
         # Card
@@ -79,7 +77,7 @@ additionalContent:
             - text: 2. Set up Teams for Education
               url: https://docs.microsoft.com/en-us/microsoft-365/education/deploy/deploy-office-365
             - text: 3. Set up Office 365
-              url: https://docs.microsoft.com/en-us/microsoft-365/education/deploy/deploy-office-365
+              url: https://docs.microsoft.com/en-us/microsoft-365/education/deploy/set-up-teams-for-education
             - text: 4. Install apps from Microsoft Store for Education
               url: https://docs.microsoft.com/en-us/microsoft-365/education/deploy/microsoft-store-for-education       
             - text: 5. Install Minecraft - Education Edition
@@ -117,6 +115,7 @@ additionalContent:
               url: https://docs.microsoft.com/en-us/power-bi/service-admin-administering-power-bi-in-your-organization
             - text: Dynamics 365
               url: https://docs.microsoft.com/en-us/dynamics365/#pivot=get-started
+    ## <a id="developers" />
     - title: M365 Education Documentation for developers (#developers)
       summary: Are you an app developer looking for information about developing solutions on Microsoft Education products? Start here.
       items:
@@ -136,6 +135,7 @@ additionalContent:
         - title: Data Streamer
           summary: Bring new STEM experiences into the classroom with real-time data in Excel using Data Streamer. Data Streamer can send data to Excel from a sensor or application.
           url: https://docs.microsoft.com/en-us/microsoft-365/education/data-streamer
+    ## <a id="partners" />
     - title: M365 Education Documentation for partners (#partners)
       summary: Looking for resources available to Microsoft Education partners? Start here.
       items:
