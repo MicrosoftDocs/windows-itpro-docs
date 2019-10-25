@@ -1,13 +1,19 @@
 ---
 title: Deploy multiple Windows Defender Application Control Policies  (Windows 10)
 description: Windows Defender Application Control supports multiple code integrity policies for one device.
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: mdsakibMSFT
-ms.author: mdsakib
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: brbrahm
+ms.author: dansimp
+manager: dansimp
 ms.date: 05/17/2019
 ---
 
@@ -44,16 +50,16 @@ Note that multiple policies will not work on pre-1903 systems.
 
 ### Allow Multiple Policies
 
-In order to allow multiple policies to exist and take effect on a single system, policies must be created using the new Multiple Policy Format. The "MultiplePolicyFormat" switch in New-CIPolicy results in 1) random GUIDs being generated for the policy ID and 2) the policy type being specified as base.
+In order to allow multiple policies to exist and take effect on a single system, policies must be created using the new Multiple Policy Format. The "MultiplePolicyFormat" switch in [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps) results in 1) random GUIDs being generated for the policy ID and 2) the policy type being specified as base. The below is an example of creating a new policy in the multiple policy format.
 
 ```powershell
-New-CIPolicy -MultiplePolicyFormat -foo –bar
+New-CIPolicy -MultiplePolicyFormat -ScanPath '.\temp\' -UserPEs -FilePath ".\policy.xml" -Level Publisher -Fallback Hash
 ```
 
 Optionally, you can choose to make the new base policy supplementable (allow supplemental policies).
 
 ```powershell
-Set-RuleOption -FilePath <string> Enabled:Allow Supplemental Policies
+Set-RuleOption -FilePath <string> -Option 17
 ```
 
 For signed base policies that are being made supplementable, you need to ensure that supplemental signers are defined. Use the "Supplemental" switch in Add-SignerRule to provide supplemental signers.
