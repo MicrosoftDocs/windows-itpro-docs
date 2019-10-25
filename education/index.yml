@@ -24,13 +24,13 @@ productDirectory:
         - url: index.yml#admins
           text: Get started with deploying and managing a full cloud IT solution for your school.
     # Card
-    - title: Developers#developers
+    - title: Developers
       imageSrc: ./images/EDUDevelopers.svg
       links:
         - url: index.yml#developers
           text: Looking for information about developing solutions on Microsoft Education products? Start here. 
     # Card    
-    - title: Partners#partners
+    - title: Partners
       imageSrc: ./images/EDUPartners.svg
       links:
         - url: index.yml#partners
@@ -39,10 +39,11 @@ productDirectory:
 additionalContent:
   # Supports up to 3 sections  
   sections:
-    - title: <a id="admins">M365 Education Documentation for IT admins</a>
-      summary: M365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.  This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments. Check out the Microsoft Education Journey. Find help now.
+    - title: M365 Education Documentation for IT admins
+      summary: M365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.  This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments. Check out the [Microsoft Education Journey](https://edujourney.microsoft.com/). Find help now.
       items:
         # Card
+        ## <a name="admins" />
         - title: Phase 1 - Cloud deployment
           links:
             - text: 1. Create your Office 365 tenant
@@ -114,10 +115,11 @@ additionalContent:
               url: https://docs.microsoft.com/en-us/power-bi/service-admin-administering-power-bi-in-your-organization
             - text: Dynamics 365
               url: https://docs.microsoft.com/en-us/dynamics365/#pivot=get-started
-    - title: <a id="developers">M365 Education Documentation for developers</a>
+    - title: M365 Education Documentation for developers
       summary: Are you an app developer looking for information about developing solutions on Microsoft Education products? Start here.
       items:
         # Card
+        ## <a name="developers" />
         - title: UWP apps for education
           summary: Learn how to write universal apps for education.
           url: https://docs.microsoft.com/en-us/windows/uwp/apps-for-education/
@@ -137,6 +139,7 @@ additionalContent:
       summary: Looking for resources available to Microsoft Education partners? Start here.
       items:
         # Card
+        ## <a name="partners" />
         - title: Microsoft Partner Network
           summary: Discover the latest news and resources for Microsoft Education products, solutions, licensing and readiness.
           url: https://partner.microsoft.com/solutions/education
