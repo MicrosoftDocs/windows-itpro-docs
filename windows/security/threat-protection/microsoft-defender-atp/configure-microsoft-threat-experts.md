@@ -74,12 +74,10 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 >![Image of Microsoft Threat Experts Experts on Demand from the menu](images/mte-eod-menu.png)
 
->A flyout screen opens.
-Trial version | Full subscription
-:---|:---
->![Image of Microsoft Threat Experts Experts on Demand trial version screen](images/mte-eod.png) | >![Image of Microsoft Threat Experts Experts on Demand full subscription screen](images/mte-eod-fullsubscription.png)
-
+>A flyout screen opens. The following screen shows when you are on a trial subscription. 
 >![Image of Microsoft Threat Experts Experts on Demand screen](images/mte-eod.png)
+> The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription. 
+>![Image of Microsoft Threat Experts Experts on Demand full subscription screen](images/mte-eod-fullsubscription.png)
 
 >The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or machine details page that you were at when you made the request.
 
