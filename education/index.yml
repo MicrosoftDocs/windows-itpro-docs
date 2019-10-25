@@ -21,19 +21,19 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: ./images/EDUAdmins.svg
       links:
-          url: index.yml#admins
+        - url: index.yml#admins
           text: Get started with deploying and managing a full cloud IT solution for your school.
     # Card
     - title: Developers#developers
       imageSrc: ./images/EDUDevelopers.svg
       links:
-          url: index.yml#developers
+        - url: index.yml#developers
           text: Looking for information about developing solutions on Microsoft Education products? Start here. 
     # Card    
     - title: Partners#partners
       imageSrc: ./images/EDUPartners.svg
       links:
-          url: index.yml#partners
+        - url: index.yml#partners
           text: Looking for resources available to Microsoft Education partners? Start here.
 
 additionalContent:
