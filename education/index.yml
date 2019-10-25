@@ -17,6 +17,7 @@ productDirectory:
   summary: Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education. # < 160 chars (optional)
   items:
     # Card
+    ## <a id="admins" />
     - title: IT Admins
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/media/common/i_configure-teams.svg
@@ -24,12 +25,14 @@ productDirectory:
         - url: anchor-2-ITAdmins.md 
           text: Get started with deploying and managing a full cloud IT solution for your school.
     # Card
+    ## <a id="developers" />
     - title: Developers
       imageSrc: https://docs.microsoft.com/media/common/i_configure-teams.svg
       links:
         - url: anchor-2-Dev.md 
           text: Looking for information about developing solutions on Microsoft Education products? Start here. 
     # Card
+    ## <a id="partners" />
     - title: Partners
       imageSrc: https://docs.microsoft.com/media/common/i_configure-teams.svg
       links:
@@ -37,10 +40,10 @@ productDirectory:
           text: Looking for resources available to Microsoft Education partners? Start here.
 
 additionalContent:
-  # Supports up to 3 sections
+  # Supports up to 3 sections  
   sections:
-    - title: M365 Education Documentation for IT admins
-      summary: <b>M365 Education</b> consists of <b>Office 365 Education, Windows 10 Education,</b> and security and management tools such as <b>Intune for Education</b> and <b>School Data Sync</b>.  This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments. Check out the <a href="https://edujourney.microsoft.com/">Microsoft Education Journey</a>. Find <a href="https://docs.microsoft.com/en-us/microsoft-365/education/deploy/find-deployment-help">help</a> now.
+    - title: M365 Education Documentation for IT admins (#admins)
+      summary: M365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.  This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments. Check out the Microsoft Education Journey. Find help now.
       items:
         # Card
         - title: Phase 1 - Cloud deployment
@@ -114,7 +117,7 @@ additionalContent:
               url: https://docs.microsoft.com/en-us/power-bi/service-admin-administering-power-bi-in-your-organization
             - text: Dynamics 365
               url: https://docs.microsoft.com/en-us/dynamics365/#pivot=get-started
-    - title: M365 Education Documentation for developers
+    - title: M365 Education Documentation for developers (#developers)
       summary: Are you an app developer looking for information about developing solutions on Microsoft Education products? Start here.
       items:
         # Card
@@ -133,7 +136,7 @@ additionalContent:
         - title: Data Streamer
           summary: Bring new STEM experiences into the classroom with real-time data in Excel using Data Streamer. Data Streamer can send data to Excel from a sensor or application.
           url: https://docs.microsoft.com/en-us/microsoft-365/education/data-streamer
-    - title: M365 Education Documentation for partners
+    - title: M365 Education Documentation for partners (#partners)
       summary: Looking for resources available to Microsoft Education partners? Start here.
       items:
         # Card
