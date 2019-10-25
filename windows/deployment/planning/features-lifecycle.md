@@ -25,14 +25,9 @@ The following topic lists features that are no longer being developed. These fea
 
 ## Features removed
 
-The following topics have details about features that have been removed in a specific version of Windows 10.
+The following topic has details about features that have been removed from Windows 10.
 
-- [Windows 10, version 1909](windows-10-1909-removed-features.md)
-- [Windows 10, version 1903](windows-10-1903-removed-features.md)
-- [Windows 10, version 1809](windows-10-1809-removed-features.md)
-- [Windows 10, version 1803](windows-10-1803-removed-features.md)
-- [Windows 10, version 1709](windows-10-1709-removed-features.md)
-- [Windows 10, version 1703](windows-10-1703-removed-features.md)
+[Windows 10 features we removed](windows-10-removed-features.md)
 
 ## Terminology
 

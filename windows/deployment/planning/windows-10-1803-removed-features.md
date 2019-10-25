@@ -28,10 +28,10 @@ For information about features that might be removed in a future release, see [W
 
 ## Features we removed in this release
 
-We've removed the following features and functionalities from the installed product image in Windows 10, version 1803. Applications or code that depend on these features won't function in this release unless you use an alternate method.   
+We've removed the following features and functionalities from the installed product image in Windows 10, version 1803. Applications or code that depend on these features won't function in this release or later releases.
 
-|Feature	|Instead you can use...|
-|-----------|--------------------
+| Feature | Details |
+|-----------|--------------------|
 |Groove Music Pass|[We ended the Groove streaming music service and music track sales through the Microsoft Store in 2017](https://support.microsoft.com/help/4046109/groove-music-and-spotify-faq). The Groove app is being updated to reflect this change. You can still use Groove Music to play the music on your PC or to stream music from OneDrive. You can use Spotify or other music services to stream music on Windows 10, or to buy music to own.|
 |People - Suggestions will no longer include unsaved contacts for non-Microsoft accounts|Manually save the contact details for people you send mail to or get mail from.|
 |Language control in the Control Panel|	Use the Settings app to change your language settings.|

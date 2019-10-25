@@ -28,10 +28,10 @@ For information about features that might be removed in a future release, see [W
 
 ## Features we removed in this release
 
-We're removing the following features and functionalities from the installed product image in Windows 10, version 1809. Applications or code that depend on these features won't function in this release unless you use an alternate method.   
+We're removing the following features and functionalities from the installed product image in Windows 10, version 1809. Applications or code that depend on these features won't function in this release or later releases.
 
-|Feature	|Instead you can use...|
-|-----------|--------------------
+| Feature | Details |
+|-----------|--------------------|
 |Business Scanning, also called Distributed Scan Management (DSM)|We're removing this secure scanning and scanner management capability - there are no devices that support this feature.|
 |[FontSmoothing setting](https://docs.microsoft.com/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-visualeffects-fontsmoothing) in unattend.xml|The FontSmoothing setting let you specify the font antialiasing strategy to use across the system. We've changed Windows 10 to use [ClearType](https://docs.microsoft.com/typography/cleartype/) by default, so we're removing this setting as it is no longer necessary. If you include this setting in the unattend.xml file, it'll be ignored.|
 |Hologram app|We've replaced the Hologram app with the [Mixed Reality Viewer](https://support.microsoft.com/help/4041156/windows-10-mixed-reality-help). If you would like to create 3D word art, you can still do that in Paint 3D and view your art in VR or Hololens with the Mixed Reality Viewer.|

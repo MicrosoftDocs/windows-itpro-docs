@@ -7,14 +7,7 @@
 ## Features removed or planned for replacement
 ### [Windows 10 features lifecycle](features-lifecycle.md)
 ### [Features we're no longer developing](windows-10-deprecated-features.md)
-### Features removed
-#### [Windows 10, version 1909](windows-10-1909-removed-features.md)
-#### [Windows 10, version 1903](windows-10-1903-removed-features.md)
-#### [Windows 10, version 1809](windows-10-1809-removed-features.md)
-#### [Windows 10, version 1803](windows-10-1803-removed-features.md)
-#### [Windows 10, version 1709](windows-10-1709-removed-features.md)
-#### [Windows 10, version 1703](windows-10-1703-removed-features.md)
-
+### [Features removed](windows-10-removed-features.md)
 
 ## Application Compatibility Toolkit (ACT)
 ### [Application Compatibility Toolkit (ACT) Technical Reference](act-technical-reference.md)
