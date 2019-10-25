@@ -20,6 +20,9 @@ ms.date: 07/27/2017
 
 This article shows you how to install Microsoft Surface Deployment Accelerator (SDA), configure a deployment share for the deployment of Windows to Surface devices, and perform a deployment to Surface devices. This article also contains instructions on how to perform these tasks without an Internet connection or without support for Windows Deployment Services network boot (PXE).
 
+> [!NOTE]
+> SDA is not supported on Surface Pro 7, Surface Pro X, and Surface Laptop 3. For more information refer to [Deploy Surface devices](deploy.md).
+
 ## How to install Surface Deployment Accelerator
 
 For information about prerequisites and instructions for how to download and install SDA, see [Microsoft Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md).
