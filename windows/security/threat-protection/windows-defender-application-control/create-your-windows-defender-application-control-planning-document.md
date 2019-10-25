@@ -1,19 +1,19 @@
 ---
 title: Create your Windows Defender Application Control (WDAC) planning document (Windows 10)
 description: This planning topic for the IT professional summarizes the information you need to research and include in your WDAC planning document.
-ms.assetid: 41e49644-baf4-4514-b089-88adae2d624e
-ms.reviewer: 
-ms.author: dansimp
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
-ms.topic: conceptual
+author: jsuther1974
+ms.reviewer: brbrahm
+ms.author: dansimp
+manager: dansimp
 ms.date: 09/21/2017
 ---
 

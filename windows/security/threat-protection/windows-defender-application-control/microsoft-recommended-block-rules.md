@@ -1,16 +1,20 @@
 ---
 title: Microsoft recommended block rules (Windows 10)
 description: To help you plan and begin the initial test stages of a deployment of Microsoft Windows Defender Application Control, this article outlines how to gather information, create a plan, and begin to create and test initial code integrity policies. 
-keywords: virtualization, security, malware
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
 audience: ITPro
-ms.date: 04/09/2019
-ms.reviewer: 
-manager: dansimp
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: brbrahm
 ms.author: dansimp
+manager: dansimp
+ms.date: 04/09/2019
 ---
 
 # Microsoft recommended block rules
