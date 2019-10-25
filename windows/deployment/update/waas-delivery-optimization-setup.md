@@ -6,7 +6,7 @@ description: Delivery Optimization is a new peer-to-peer distribution method in 
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
+
 audience: itpro
 author: jaimeo
 ms.localizationpriority: medium

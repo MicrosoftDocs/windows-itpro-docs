@@ -3,10 +3,11 @@ title: Servicing stack updates (Windows 10)
 description: Servicing stack updates improve the code that installs the other updates.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+itproauthor: jaimeo
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: jaimeo
 ms.date: 11/29/2018
 ms.reviewer: 
 manager: laurawi
