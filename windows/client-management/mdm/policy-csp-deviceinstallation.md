@@ -777,7 +777,7 @@ ADMX Info:
 
 <!--/SupportedValues-->
 <!--Example-->
-To enable this policy, use the following SyncML. 
+To enable this policy, use the following SyncML. This example prevents Windows from installing compatible devices with device instance IDs of USB\VID_1F75 and USB\VID_0781. To configure multiple classes, use `&#xF000;` as a delimiter.
 
 ``` xml
 <SyncML>
@@ -805,6 +805,23 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <<<  Section end 2018/11/15 12:26:41.751
 <<<  [Exit status: SUCCESS]
 ```
+
+You can also block installation and usage of prohibited peripherals by using a custom profile in Intune. 
+
+For example, this custom profile prevents installation of devices with matching device instance IDs.
+
+![Custom profile](images/custom-profile-prevent-device-instance-ids.png)
+
+To prevent installation of devices with matching device instance IDs by using custom profile in Intune:
+1. Locate the device instance ID.
+2. In the sample SyncML, replace `&` in the device instance IDs with `&amp;`.  
+For example:  
+Replace  
+```USBSTOR\DISK&VEN_SAMSUNG&PROD_FLASH_DRIVE&REV_1100\0376319020002347&0```  
+with  
+```USBSTOR\DISK&amp;VEN_SAMSUNG&amp;PROD_FLASH_DRIVE&amp;REV_1100\0376319020002347&amp;0```
+3. Add the SyncML into the Intune custom device configuration profile.
+
 <!--/Example-->
 <!--Validation-->
 
