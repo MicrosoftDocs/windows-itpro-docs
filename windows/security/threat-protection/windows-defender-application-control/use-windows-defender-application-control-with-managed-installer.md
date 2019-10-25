@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: brbrahm
+ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 06/13/2018
