@@ -51,7 +51,7 @@ As a cloud service, it is required that computers have access to the internet an
 
 | **Service**| **Description** |**URL** |
 | :--: | :-- | :-- |
-| *Windows Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)*|Used by Windows Defender Antivirus to provide cloud-delivered protection|\*.wdcp.microsoft.com  \*.wdcpalt.microsoft.com  \*.wd.microsoft.com|
+| *Windows Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)*|Used by Windows Defender Antivirus to provide cloud-delivered protection|wdcp.microsoft.com  wdcpalt.microsoft.com|
 | *Microsoft Update Service (MU)*|	Security intelligence and product updates	|\*.update.microsoft.com|
 | *Security intelligence updates Alternate Download Location (ADL)*|	Alternate location for Windows Defender Antivirus Security intelligence updates if the installed Security intelligence is out of date (7 or more days behind)|	\*.download.microsoft.com|
 | *Malware submission storage*|Upload location for files submitted to Microsoft via the Submission form or automatic sample submission	| ussus1eastprod.blob.core.windows.net   ussus1westprod.blob.core.windows.net   usseu1northprod.blob.core.windows.net   usseu1westprod.blob.core.windows.net   ussuk1southprod.blob.core.windows.net   ussuk1westprod.blob.core.windows.net   ussas1eastprod.blob.core.windows.net   ussas1southeastprod.blob.core.windows.net   ussau1eastprod.blob.core.windows.net   ussau1southeastprod.blob.core.windows.net |
