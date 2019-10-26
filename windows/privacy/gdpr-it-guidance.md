@@ -170,7 +170,7 @@ The following table lists in what GDPR mode – controller or processor – Wind
 
 Windows diagnostic data collection level for Windows 10 can be set by a user in Windows (*Start > Settings > Privacy > Diagnostics & feedback*) or by the IT department of an organization, using Group Policy or Mobile Device Management (MDM) techniques.
 
-* For Windows 10, version 1803 and version 1809, Microsoft recommends setting the Windows diagnostic level to “Enhanced”. This enables organizations to get the full functionality of [Windows Analytics](#windows-analytics).
+* For Windows 10, version 1803 and version 1809, Microsoft recommends setting the Windows diagnostic level to “Enhanced”. This enables organizations to get the full functionality of [Desktop Analytics](#desktop-analytics).
 
 >[!NOTE]
 >For more information on the Enhanced level, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
