@@ -580,7 +580,7 @@ Sign-in the NDES server with access equivalent to _domain administrator_.
 3. Click **Sign-in**.  Type credentials for your Intune administrator, or tenant administrator that has the **Global Administrator** directory role.
    ![Intune Certificate Connector Configuration 02](images/aadjcert/intunecertconnectorconfig-02.png)
    > [!IMPORTANT]
-   > The user account must have a valid Intune licenese asssigned.  If the user account does not have a valid Intune license, the sign-in fails.
+   > The user account must have a valid Intune licenese assigned.  If the user account does not have a valid Intune license, the sign-in fails.
 
 4. Optionally, you can configure the NDES Connector for certificate revocation. If you want to do this, continue to the next task. Otherwise, Click **Close**, restart the **Intune Connector Service** and the **World Wide Web Publishing Service**, and skip the next task. 
 

@@ -104,27 +104,8 @@ Windows diagnostic data also helps Microsoft better understand how customers use
 
 ### Insights into your own organization
 
-Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better, as well.  Microsoft is in the process of developing a set of analytics customized for your internal use. The first of these, called [Upgrade Readiness](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
+Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better. Microsoft provides a set of solutions that leverage information shared by customers to provide insights customized for your internal use. The first of these was [Upgrade Readiness](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness), followed by [Desktop Analytics](https://aka.ms/DADocs) (coming soon). Both help organizations with [Windows as a Service](/windows/deployment/update/wass-overview) adoption and potential compatibility challenges. For E5 customers, [Microsoft Defender Advanced Threat Protection](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
-#### Upgrade Readiness
-
-Upgrading to new operating system versions has traditionally been a challenging, complex, and slow process for many enterprises. Discovering applications and drivers and then testing them for potential compatibility issues have been among the biggest pain points.
-
-To better help customers through this difficult process, Microsoft developed Upgrade Readiness to give enterprises the tools to plan and manage the upgrade process end to end and allowing them to adopt new Windows releases more quickly and on an ongoing basis.
-
-With Windows diagnostic data enabled, Microsoft collects computer, application, and driver compatibility-related information for analysis. We then identify compatibility issues that can block your upgrade and suggest fixes when they are known to Microsoft.
-
-Use Upgrade Readiness to get:
-
-- A visual workflow that guides you from pilot to production
-- Detailed computer, driver, and application inventory
-- Powerful computer level search and drill-downs
-- Guidance and insights into application and driver compatibility issues with suggested fixes
-- Data driven application rationalization tools
-- Application usage information, allowing targeted validation; workflow to track validation progress and decisions
-- Data export to commonly used software deployment tools
-
-The Upgrade Readiness workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
 
 ## How Microsoft handles diagnostic data
 

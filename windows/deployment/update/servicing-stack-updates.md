@@ -8,7 +8,6 @@ itproauthor: jaimeo
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 11/29/2018
 ms.reviewer: 
 manager: laurawi
 ms.collection: M365-modern-desktop
