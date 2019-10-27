@@ -6,7 +6,6 @@ description: Use the Azure Portal to add and configure Windows Analytics solutio
 keywords: Device Health, oms, Azure, portal, operations management suite, add, manage, configure, Upgrade Readiness, Update Compliance
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
 author: jaimeo

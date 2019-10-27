@@ -4,7 +4,6 @@ description: Configure Device Health in Azure Monitor to monitor health (such as
 keywords: Device Health, oms, operations management suite, prerequisites, requirements, monitoring, crash, drivers, azure
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.reviewer: 
 manager: laurawi
 ms.pagetype: deploy

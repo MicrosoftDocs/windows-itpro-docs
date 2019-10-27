@@ -184,7 +184,7 @@ For 5156(S): The Windows Filtering Platform has permitted a connection.
 
 -   If you need to monitor all inbound connections to a specific local port, monitor for [5156](event-5156.md) events with that “**Source Port**.**”**
 
--   Monitor for all connections with a “**Protocol Number”** that is not typical for this device or compter, for example, anything other than 1, 6, or 17.
+-   Monitor for all connections with a “**Protocol Number”** that is not typical for this device or computer, for example, anything other than 1, 6, or 17.
 
 -   If the computer’s communication with “**Destination Address”** should always use a specific “**Destination Port**,**”** monitor for any other “**Destination Port**.”
 

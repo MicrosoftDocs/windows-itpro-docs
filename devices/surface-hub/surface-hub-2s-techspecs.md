@@ -4,9 +4,9 @@ description: "View tech specs for Surface Hub 2S including pen, camera, and opti
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
-author: robmazz
+author: greg-lindsay
 manager: laurawi
-ms.author: robmazz
+ms.author: greglin
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019

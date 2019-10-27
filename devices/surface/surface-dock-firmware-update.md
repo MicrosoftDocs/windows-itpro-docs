@@ -108,7 +108,7 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 
 ## Changes and updates
 
-Microsoft periodically releases new versions of Surface Dock Firmware Update. To update a Surface Dock to the latest firmware, you must use the latest version of Surface Dock Firmware Update.
+Microsoft periodically releases new versions of Surface Dock Firmware Update.Note that the MSI file is not self-updating. If you have deployed the MSI to Surface devices and a new version of the firmware is released, you will need to deploy the new version of the MSI.
 
 ## Versions reference
 ### Version 1.42.139 
@@ -119,6 +119,8 @@ This version, contained in Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 
 - Component10CurrentFwVersion updated to **4ac3970**.
 - Component20CurrentFwVersion updated to **4a1d570**.
+
+It adds support for Surface Pro 7 and Surface Laptop 3.
 
 ## Legacy versions
 
