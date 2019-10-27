@@ -64,9 +64,21 @@ The hybrid deployment model is for organizations that:
 * Have identities synchronized to Azure Active Directory using Azure Active Directory Connect
 * Use applications hosted in Azure Active Directory, and want a single sign-in user experience for both on-premises and Azure Active Directory resources
 
+> [!Important]
+> Hybrid deployments support non-destructive PIN reset that only works with the certificate trust model.</br>
+> **Requirements:**</br>
+> Microsoft PIN Reset Service - Windows 10, version 1709 or later, Enterprise Edition</br>
+> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+
 ##### On-premises
 The on-premises deployment model is for organizations that do not have cloud identities or use applications hosted in Azure Active Directory.
 
+> [!Important]
+> On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.</br>
+> **Requirements:**</br>
+> Reset from settings - Windows 10, version 1703, Professional</br>
+> Reset above lock screen - Windows 10, version 1709, Professional</br>
+> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 It’s fundamentally important to understand which deployment model to use for a successful deployment.  Some of aspects of the deployment may already be decided for you based on your current infrastructure.
 

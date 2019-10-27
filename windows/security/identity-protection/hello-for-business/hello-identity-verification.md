@@ -28,12 +28,23 @@ Windows Hello addresses the following problems with passwords:
 -   Passwords are subject to [replay attacks](https://go.microsoft.com/fwlink/p/?LinkId=615673).
 -   Users can inadvertently expose their passwords due to [phishing attacks](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing).
 
->[!div class="mx-tdBreakAll"]
->| | | |
->| :---: | :---: | :---: |
->| [![Overview Icon](images/hello_filter.png)](hello-overview.md)</br>[Overview](hello-overview.md) | [![Why a PIN is better than a password Icon](images/hello_lock.png)](hello-why-pin-is-better-than-password.md)</br>[Why PIN is better than a password](hello-why-pin-is-better-than-password.md) | [![Manage Hello Icon](images/hello_gear.png)](hello-manage-in-organization.md)</br>[Manage Windows Hello in your Organization](hello-manage-in-organization.md) |
+> | | | |
+> | :---: | :---: | :---: |
+> | [![Overview Icon](images/hello_filter.png)](hello-overview.md)</br>[Overview](hello-overview.md) | [![Why a PIN is better than a password Icon](images/hello_lock.png)](hello-why-pin-is-better-than-password.md)</br>[Why PIN is better than a password](hello-why-pin-is-better-than-password.md) | [![Manage Hello Icon](images/hello_gear.png)](hello-manage-in-organization.md)</br>[Manage Windows Hello in your Organization](hello-manage-in-organization.md) |
 
 ## Prerequisites 
+
+> [!Important]
+> 1. Hybrid deployments support non-destructive PIN reset that only works with the certificate trust model.</br>. 
+> **Requirements:**</br>
+> Microsoft PIN Reset Service - Windows 10, version 1709 or later, Enterprise Edition</br>
+> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+>
+> 2. On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.</br>
+> **Requirements:**</br>
+> Reset from settings - Windows 10, version 1703, Professional</br>
+> Reset above lock screen - Windows 10, version 1709, Professional</br>
+> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 ### Cloud Only Deployment
 * Windows 10, version 1511 or later
@@ -74,5 +85,5 @@ The table shows the minimum requirements for each deployment.
 | AD FS with Azure MFA Server, or</br>AD FS with 3rd Party MFA Adapter | AD FS with Azure MFA Server, or</br>AD FS with 3rd Party MFA Adapter |
 | Azure Account, optional for Azure MFA billing | Azure Account, optional for Azure MFA billing |
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > For Windows Hello for Business deployment, if you have several domains, at least one Windows Server Domain Controller 2016 is required for each domain. For more information, see the [planning guide](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-adequate-domain-controllers).
