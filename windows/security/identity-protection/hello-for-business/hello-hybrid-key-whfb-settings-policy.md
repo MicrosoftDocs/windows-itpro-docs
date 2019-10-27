@@ -91,7 +91,7 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 3. Right-click **Group Policy object** and select **New**.
 4. Type *Enable Windows Hello for Business* in the name box and click **OK**.
 5. In the content pane, right-click the **Enable Windows Hello for Business** Group Policy object and click **Edit**.
-6. In the navigation pane, expand **Policies** under **User Configuration**.
+6. In the navigation pane, expand **Policies** under **Computer Configuration**.
 7. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**.
 8. In the content pane, double-click **Use Windows Hello for Business**. Click **Enable** and click **OK**. Close the **Group Policy Management Editor**.
 
