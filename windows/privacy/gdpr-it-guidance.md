@@ -112,8 +112,8 @@ Some examples of diagnostic data include:
 
 Diagnostic data is categorized into the levels "Security", "Basic", "Enhanced", and "Full". For a detailed discussion about these diagnostic data levels please see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md). To find more about what information is collected and how it is handled, see [Understanding Windows diagnostic data](configure-windows-diagnostic-data-in-your-organization.md#understanding-windows-diagnostic-data).
 
->[!IMPORTANT]
->Other Microsoft services as well as 3rd party applications and drivers running on Windows devices may implement their own functionality, independently from Windows, to transport their diagnostic data. Please contact the publisher for further guidance on how to control the diagnostic data collection level and transmission of these applications and services.
+> [!IMPORTANT]
+> Other Microsoft services as well as 3rd party applications and drivers running on Windows devices may implement their own functionality, independently from Windows, to transport their diagnostic data. Please contact the publisher for further guidance on how to control the diagnostic data collection level and transmission of these applications and services.
 
 ### Windows services where Microsoft is the processor under the GDPR
 
@@ -133,11 +133,11 @@ Most Windows 10 services are controller services in terms of the GDPR – for bo
 Windows [transmits Windows diagnostic data](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) to Microsoft datacenters, where that data is analyzed and stored. With Desktop Analytics, the IT organization can then view the analyzed data to detect and fix issues or to improve their processes for upgrading to Windows 10.
 
 As a result, in terms of the GDPR, the organization that has subscribed to Desktop Analytics is acting as the controller, while Microsoft is the processor for Desktop Analytics.
->[!NOTE]
->The IT organization must explicitly enable Desktop Analytics for a device after the organization subscribes.
+> [!NOTE]
+> The IT organization must explicitly enable Desktop Analytics for a device after the organization subscribes.
 
->[!IMPORTANT]
->Desktop Analytics does not collect Windows Diagnostic data by itself. Instead, Desktop Analytics only uses a subset of Windows Diagnostic data that is collected by Windows for an enrolled device. The Windows Diagnostic data collection is controlled by the IT department of an organization or the user of a device. See [Enable data sharing for Desktop Analytics](https://docs.microsoft.com/sccm/desktop-analytics/enable-data-sharing)
+> [!IMPORTANT]
+> Desktop Analytics does not collect Windows Diagnostic data by itself. Instead, Desktop Analytics only uses a subset of Windows Diagnostic data that is collected by Windows for an enrolled device. The Windows Diagnostic data collection is controlled by the IT department of an organization or the user of a device. See [Enable data sharing for Desktop Analytics](https://docs.microsoft.com/sccm/desktop-analytics/enable-data-sharing)
 
 #### Windows Defender ATP
 
@@ -145,8 +145,8 @@ As a result, in terms of the GDPR, the organization that has subscribed to Deskt
 
 As a result, in terms of the GDPR, the organization that has subscribed to Windows Defender ATP is acting as the controller, while Microsoft is the processor for Windows Defender ATP.
 
->[!NOTE]
->The IT organization must explicitly enable Windows Defender ATP for a device after the organization subscribes.
+> [!NOTE]
+> The IT organization must explicitly enable Windows Defender ATP for a device after the organization subscribes.
 
 #### At a glance – Windows 10 services GDPR mode of operations
 
@@ -186,8 +186,8 @@ The basic functionality of Desktop Analytics works at the “Basic” diagnostic
 
 Those organizations who wish to share the smallest set of events for Desktop Analytics and have set the Windows diagnostic level to “Enhanced” can use the [“Limit Enhanced diagnostic data to the minimum required by Desktop Analytics”](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#limit-enhanced-diagnostic-data-to-the-minimum-required-by-desktop-analytics) setting. This filtering mechanism was that Microsoft introduced in Windows 10, version 1709. When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to the smallest set of data required by Desktop Analytics.
 
->[!NOTE]
->Additional information can be found at [Desktop Analytics and privacy](/sccm/desktop-analytics/privacy).
+> [!NOTE]
+> Additional information can be found at [Desktop Analytics and privacy](/sccm/desktop-analytics/privacy).
 
 ## Controlling Windows 10 data collection and notification about it
 
@@ -261,8 +261,8 @@ Backups, including live backups and backups that are stored locally within an or
 
 Surface Hub is a shared device used within an organization. The device identifier collected as part of diagnostic data is not connected to a user. For removing Windows diagnostic data sent to Microsoft for a Surface Hub, Microsoft created the Surface Hub Delete Diagnostic Data tool available in the Microsoft Store.
 
->[!NOTE]
->Additional apps running on the device, that are not delivered as part of the in-box experience of Surface Hub, may implement their own diagnostic data collection and transmission functionality independently to collect and process personal data. Please contact the app publisher for further guidance on how to control this.
+> [!NOTE]
+> Additional apps running on the device, that are not delivered as part of the in-box experience of Surface Hub, may implement their own diagnostic data collection and transmission functionality independently to collect and process personal data. Please contact the app publisher for further guidance on how to control this.
 
 An IT administrator can configure privacy- related settings, such as setting the Windows diagnostic data level to Basic. Surface Hub does not support group policy for centralized management; however, IT administrators can use MDM to apply these settings to Surface Hub. For more information about Surface Hub and MDM, please see [Manage settings with an MDM provider](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub).
 
@@ -272,8 +272,8 @@ An IT administrator can configure privacy- related settings, such as setting the
 
 Personal data protection is one of the goals of the GDPR. One way of improving personal data protection is to use the modern and advanced security features of Windows 10. An IT organization can learn more at [Mitigate threats by using Windows 10 security features](/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10) and [Standards for a highly secure Windows 10 device](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure).
 
->[!NOTE]
->Some of these features might require a particular Windows hardware, such as a computer with a Trusted Platform Module (TPM) chip, and can depend on a particular Windows product (such as Windows 10 E5).
+> [!NOTE]
+> Some of these features might require a particular Windows hardware, such as a computer with a Trusted Platform Module (TPM) chip, and can depend on a particular Windows product (such as Windows 10 E5).
 
 ### Windows Security Baselines
 
