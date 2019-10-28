@@ -22,8 +22,6 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
 Microsoft Threat Experts is a managed detection and response (MDR) service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don’t get missed.
   
 This new capability provides expert-driven insights and data through targeted attack notification and access to experts on demand. 
@@ -36,9 +34,6 @@ Microsoft Threat Experts provides proactive hunting for the most important threa
 - Scope of compromise and as much context as can be quickly delivered to enable fast SOC response. 
  
 ## Collaborate with experts, on demand 
->[!NOTE]
->The Microsoft Threat Experts' experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved.
-
 Customers can engage our security experts directly from within Microsoft Defender Security Center for timely and accurate response. Experts provide insights needed to better understand the complex threats affecting your organization, from alert inquiries, potentially compromised machines, root cause of a suspicious network connection, to additional threat intelligence regarding ongoing advanced persistent threat campaigns. With this capability, you can:
 
 - Get additional clarification on alerts including root cause or scope of the incident 
