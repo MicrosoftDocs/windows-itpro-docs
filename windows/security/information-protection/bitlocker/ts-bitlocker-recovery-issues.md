@@ -106,7 +106,7 @@ This issue occurs if the Surface device TPM is configured to use Platform Config
 - Secure Boot is turned off.
 - PCR values have been explicitly defined, such as by Group Policy.
 
-Devices that support Connected Standby (also known as *InstantGO* or *Always On, Always Connected PCs*), including Surface devices, must use PCR 7 of the TPM. In its default configuration on such systems, BitLocker binds to PCR 7 and PCR 11 if PCR 7 and Secure Boot are correctly configured. For more information, see "About the Platform Configuration Register (PCR)" at [BitLocker Group Policy Settings](https://technet.microsoft.com/library/jj679890\(v=ws.11\).aspx?#About%20the%20Platform%20Configuration%20Register%20\(PCR\)).
+Devices that support Connected Standby (also known as *InstantGO* or *Always On, Always Connected PCs*), including Surface devices, must use PCR 7 of the TPM. In its default configuration on such systems, BitLocker binds to PCR 7 and PCR 11 if PCR 7 and Secure Boot are correctly configured. For more information, see "About the Platform Configuration Register (PCR)" at [BitLocker Group Policy Settings]https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj679890(v=ws.11)#about-the-platform-configuration-register-pcr)).
 
 ### Resolution
 
@@ -258,19 +258,19 @@ Manage-bde -protectors -disable c: -rc 1
 To resolve this issue, install the appropriate update on the affected device:  
 
 - For Windows 10, version 1703: [July 9, 2019—KB4507450 (OS Build 15063.1928)](https://support.microsoft.com/help/4507450/windows-10-update-kb4507450)
-- For Windows 10, version 1607 and Windows Server 2016: [July 9, 2019—KB4507460 (OS Build 14393.3085)](https://support.microsoft.com/en-us/help/4507460/windows-10-update-kb4507460)
+- For Windows 10, version 1607 and Windows Server 2016: [July 9, 2019—KB4507460 (OS Build 14393.3085)](https://support.microsoft.com/help/4507460/windows-10-update-kb4507460)
 
 ## Credential Guard/Device Guard on TPM 1.2: At every restart, BitLocker prompts for the recovery password and returns error 0xC0210000
 
-You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the device uses [Virtualization-based Security](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-vbs) features such as [Device Guard and Credential Guard](https://docs.microsoft.com/en-us/windows-hardware/drivers/bringup/device-guard-and-credential-guard). Every time that you start the device, the device enters BitLocker Recovery mode and you see error code 0xc0210000.
+You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the device uses [Virtualization-based Security](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-vbs) features such as [Device Guard and Credential Guard](https://docs.microsoft.com/windows-hardware/drivers/bringup/device-guard-and-credential-guard). Every time that you start the device, the device enters BitLocker Recovery mode and you see error code 0xc0210000.
 
 ![Recovery Your PC/Device needs to be repaired](./images/4496645_en_1.png)
 
 ### Cause
 
-TPM 1.2 does not support Secure Launch. For more information, see [System Guard Secure Launch and SMM protection: Requirements Met by System Guard Enabled Machines](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection\#requirements-met-by-system-guard-enabled-machines)
+TPM 1.2 does not support Secure Launch. For more information, see [System Guard Secure Launch and SMM protection: Requirements Met by System Guard Enabled Machines](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection\#requirements-met-by-system-guard-enabled-machines)
 
-For more information about this technology, see [Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
+For more information about this technology, see [Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows)
 
 ### Resolution
 
