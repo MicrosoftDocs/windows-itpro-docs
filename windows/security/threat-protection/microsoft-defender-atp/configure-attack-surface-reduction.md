@@ -33,10 +33,10 @@ The topics in this section describe how to configure attack surface reduction. E
 
 Topic | Description
 -|-
-[Enable hardware-based isolation for Microsoft Edge](../windows-defender-application-guard/install-wd-app-guard.md) | How to preprare for and install Application Guard, including hardware and softeware requirements
-[Enable application control](../windows-defender-application-control/windows-defender-application-control.md)|How to control applications run by users and potect kernel mode processes
+[Enable hardware-based isolation for Microsoft Edge](../windows-defender-application-guard/install-wd-app-guard.md) | How to prepare for and install Application Guard, including hardware and software requirements
+[Enable application control](../windows-defender-application-control/windows-defender-application-control.md)|How to control applications run by users and protect kernel mode processes
 [Exploit protection](./enable-exploit-protection.md)|How to automatically apply exploit mitigation techniques on both operating system processes and on individual apps
-[Network protection](./enable-network-protection.md)|How to prevent users from using any apps to acces dangerous domains
+[Network protection](./enable-network-protection.md)|How to prevent users from using any apps to access dangerous domains
 [Controlled folder access](./enable-controlled-folders.md)|How to protect valuable data from malicious apps
 [Attack surface reduction](./enable-attack-surface-reduction.md)|How to prevent actions and apps that are typically used for by exploit-seeking malware
 [Network firewall](../windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)|How to protect devices and data across a network
