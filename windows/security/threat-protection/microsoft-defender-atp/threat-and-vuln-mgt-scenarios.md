@@ -150,7 +150,7 @@ When an exception is created for a recommendation, the recommendation is no long
 
 6. Navigate to the **Remediation** page under the **Threat & Vulnerability Management** menu and click the **Exceptions** tab to view all your exceptions (current and past). 
 
-## Use Advanced hunting query to search for machines with High active alerts or Critical CVE public exploit 
+## Use Advanced hunting query to search for machines with High active alerts or critical CVE public exploit 
 
 1. Go to **Advanced hunting** from the left-hand navigation pane.
 
