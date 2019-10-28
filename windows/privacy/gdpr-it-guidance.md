@@ -26,7 +26,7 @@ Applies to:
 - Windows 10 Team Edition, version 1703 for Surface Hub
 - Windows Server 2019
 - Windows Server 2016
-- Windows Analytics
+- Desktop Analytics
 
 This topic provides IT Decision Makers with a basic understanding of the relationship between users in an organization and Microsoft in the context of the GDPR (General Data Protection Regulation). You will also learn what role an IT organization plays for that relationship.
 
@@ -156,7 +156,7 @@ The following table lists in what GDPR mode – controller or processor – Wind
 | --- | --- |
 | Windows Functional data | Controller or Processor* |
 | Windows Diagnostic data | Controller |
-| Windows Analytics | Processor |
+| Desktop Analytics | Processor |
 | Windows Defender Advanced Threat Detection (ATP) | Processor |
 
 *Table 1: Windows 10 GDPR modes of operations for different Windows 10 services*
@@ -178,17 +178,16 @@ Windows diagnostic data collection level for Windows 10 can be set by a user in 
 * For Windows 10, version 1709, and Windows 10, version 1703, the recommended Windows diagnostic level configuration for EEA and Switzerland commercial users is “Basic”.
 
 >[!NOTE]
->For Windows 7, Microsoft recommends [configuring enterprise devices for Windows Analytics](/windows/deployment/update/windows-analytics-get-started) to facilitate upgrade planning to Windows 10.
+>For Windows 7, Microsoft recommends [using  Commercial Data Opt-in setting](/previous-versions/windows/it-pro/windows-7/ee126127(v=ws.10)) to facilitate upgrade planning to Windows 10.
 
-### Additional information for Windows Analytics
+### Additional information for Desktop Analytics
 
-Some Windows Analytics solutions and functionality, such as Update Compliance, works with “Basic” as minimum Windows diagnostic level. Other solutions and functionality of Windows Analytics, such as Device Health, require “Enhanced”.
+The basic functionality of Desktop Analytics works at the “Basic” diagnostic data level. Other functionality of Desktop Analytics, such as usage or health data for updated devices, require “Enhanced”. 
 
-Those organizations who wish to share the smallest set of events for Windows Analytics and have set the Windows diagnostic level to “Enhanced” can use the “Limit Enhanced diagnostic data to the minimum required by Windows Analytics” setting. This filtering mechanism was that Microsoft introduced in Windows 10, version 1709. When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to the smallest set of data required by Windows Analytics.
+Those organizations who wish to share the smallest set of events for Desktop Analytics and have set the Windows diagnostic level to “Enhanced” can use the [“Limit Enhanced diagnostic data to the minimum required by Desktop Analytics”](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#limit-enhanced-diagnostic-data-to-the-minimum-required-by-desktop-analytics) setting. This filtering mechanism was that Microsoft introduced in Windows 10, version 1709. When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to the smallest set of data required by Desktop Analytics.
 
 >[!NOTE]
->Additional information can be found at [Windows Analytics and privacy](/windows/deployment/update/windows-analytics-privacy
-).
+>Additional information can be found at [Desktop Analytics and privacy](/sccm/desktop-analytics/privacy).
 
 ## Controlling Windows 10 data collection and notification about it
 
