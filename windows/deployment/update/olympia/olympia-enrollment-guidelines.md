@@ -88,7 +88,7 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
 -   This method will upgrade your Windows 10 Pro license to Enterprise and create a new account. See [Set up Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup) for more information.
 
     > [!NOTE]
-    > Make sure to save your PRO license key before upgrading to Enterprise. In case of disconnection from Olympia, if the license fails to downgrade back to Pro automatically (unlikely event), it will allow re-activating Pro license [manually](https://docs.microsoft.com/windows/deployment/upgrade/windows-10-edition-upgrades#upgrade-by-manually-entering-a-product-key).
+    > Make sure to save your PRO license key before upgrading to Enterprise. In case of disconnection from Olympia, if the license fails to downgrade back to Pro automatically (unlikely event), it will allow you to re-activate the Pro license [manually](https://docs.microsoft.com/windows/deployment/upgrade/windows-10-edition-upgrades#upgrade-by-manually-entering-a-product-key).
 
 1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your device (see [local administrator](https://support.microsoft.com/instantanswers/5de907f1-f8ba-4fd9-a89d-efd23fee918c/create-a-local-user-or-administrator-account-in-windows-10)).
 
