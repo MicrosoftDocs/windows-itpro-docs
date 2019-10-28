@@ -32,7 +32,7 @@ Open Event Viewer and review the following logs under Applications and Services 
 
 Additionally, review the Windows logs\\System log for events that were produced by the TCM and TCM-WMI event sources.
 
-To filter and display or export logs, you can use the [wevtutil.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/wevtutil) command-line tool or the [Get-WinEvent](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-6) cmdlet.
+To filter and display or export logs, you can use the [wevtutil.exe](https://docs.microsoft.com/windows-server/administration/windows-commands/wevtutil) command-line tool or the [Get-WinEvent](https://docs.microsoft.com/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-6) cmdlet.
 
 For example, to use wevtutil to export the contents of the Operational log from the BitLocker-API folder to a text file that is named BitLockerAPIOpsLog.txt, open a Command Prompt window, and run a command that resembles the following:
 
