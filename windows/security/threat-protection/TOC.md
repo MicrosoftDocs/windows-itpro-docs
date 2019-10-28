@@ -118,7 +118,10 @@
 ###### [NetworkCommunicationEvents table](microsoft-defender-atp/advanced-hunting-networkcommunicationevents-table.md)
 ###### [ProcessCreationEvents table](microsoft-defender-atp/advanced-hunting-processcreationevents-table.md)
 ###### [RegistryEvents table](microsoft-defender-atp/advanced-hunting-registryevents-table.md)
-
+##### [DeviceTvmSoftwareInventoryVulnerabilities](microsoft-defender-atp/advanced-hunting-tvm-softwareinventory-table.md)
+##### [DeviceTvmSoftwareVulnerabilitiesKB](microsoft-defender-atp/advanced-hunting-tvm-softwarevulnerability-table.md)
+##### [DeviceTvmSecureConfigurationAssessment](microsoft-defender-atp/advanced-hunting-tvm-configassessment-table.md)
+##### [DeviceTvmSecureConfigurationAssessmentKB](microsoft-defender-atp/advanced-hunting-tvm-secureconfigkb-table.md)
 ##### [Advanced hunting query language best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
 
 #### [Custom detections]()
