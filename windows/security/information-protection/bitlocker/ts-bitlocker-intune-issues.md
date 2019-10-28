@@ -266,7 +266,7 @@ For more information about GPOs and BitLocker, see [BitLocker Group Policy Refer
 
 For information about how to use policy together with BitLocker and Intune, see the following resources:
 
-- [BitLocker management for enterprises: Managing devices joined to Azure Active Directory](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-management-for-enterprises#managing-devices-joined-to-azure-active-directory)
+- [BitLocker management for enterprises: Managing devices joined to Azure Active Directory](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-management-for-enterprises#managing-devices-joined-to-azure-active-directory)
 - [BitLocker Group Policy Reference](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/ee706521(v=ws.10)?redirectedfrom=MSDN)
 - [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)
 - [Policy CSP &ndash; BitLocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker)
