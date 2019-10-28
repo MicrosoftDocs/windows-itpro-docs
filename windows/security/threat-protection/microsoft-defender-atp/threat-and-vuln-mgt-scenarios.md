@@ -182,3 +182,5 @@ ComputerName=any(ComputerName) by MachineId, AlertId
 - [Remediation](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Advanced hunting overview](overview-hunting.md)
+- [All Advanced hunting tables](advanced-hunting-reference.md)
