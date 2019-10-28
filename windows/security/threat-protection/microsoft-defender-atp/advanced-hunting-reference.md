@@ -48,7 +48,7 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 | **[MiscEvents](advanced-hunting-miscevents-table.md)** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
 | **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-tvm-softwareinventory-table.md)** | Vulnerabilities in your software inventory |
 | **[DeviceTvmSoftwareVulnerabilitiesKB ](advanced-hunting-tvm-softwarevulnerability-table.md)** | Publicly-available vulnerabilities and whether they exist in your software inventory |
-| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-tvm-configassessment-table.md)** | Security configuration assessment for devices |
+| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-tvm-configassessment-table.md)** | Security configuration assessment information |
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-tvm-secureconfigkb-table.md)** | Basis of security configuration assessment such as security industry standards and benchmarks |
 
 ## Related topics
