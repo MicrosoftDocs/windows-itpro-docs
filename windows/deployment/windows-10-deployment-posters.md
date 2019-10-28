@@ -29,8 +29,12 @@ The Windows Autopilot poster is two pages in portrait mode (11x17). Click the im
 
 [![Deploy Windows 10 with Autopilot](./media/windows10-autopilot-flowchart.png)](./media/Windows10AutopilotFlowchart.pdf)
 
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10AutopilotFlowchart.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10Autopilotflowchart.vsdx) format.)
+
 ## Deploy Windows 10 with System Center Configuration Manager
 
 The Configuration Manager poster is one page in landscape mode (17x11). Click the image below to view a PDF in your browser. 
 
 [![Deploy Windows 10 with Configuration Manager](./media/windows10-deployment-config-manager.png)](./media/Windows10DeploymentConfigManager.pdf)
+
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.pdf) or [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/deployment/media/Windows10DeploymentConfigManager.vsdx) format.)
