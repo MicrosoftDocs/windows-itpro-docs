@@ -82,8 +82,8 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 
 To get started with the Windows Insider Program for Business, you will need to follow a few simple steps:
 
-1. On the [Windows Insider](https://insider.windows.com) website, go to **For Business > Getting Started** to [register your organizational Azure AD account](https://insider.windows.com/en-us/insidersigninaad/).
-2. **Register your domain**. Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/en-us/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
+1. On the [Windows Insider](https://insider.windows.com) website, go to **For Business > Getting Started** to [register your organizational Azure AD account](https://insider.windows.com/insidersigninaad/).
+2. **Register your domain**. Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
 3. Make sure the **Allow Telemetry** setting is set to **2** or higher.
 4. Starting with Windows 10, version 1709, set policies to manage preview builds and their delivery:
 
