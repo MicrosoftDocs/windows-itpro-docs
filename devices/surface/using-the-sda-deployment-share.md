@@ -23,7 +23,7 @@ With Microsoft Surface Deployment Accelerator (SDA), you can quickly and easily 
 For more information about SDA and information on how to download SDA, see [Microsoft Surface Deployment Accelerator (SDA)](https://technet.microsoft.com/itpro/surface/microsoft-surface-deployment-accelerator).
 
 > [!NOTE]
-> SDA is not currently supported on Surface Pro 7, Surface Pro X, and Surface Laptop 3. For more information refer to [Deploy Surface devices](deploy.md).
+> SDA is not supported on Surface Pro 7, Surface Pro X, and Surface Laptop 3. For more information refer to [Deploy Surface devices](deploy.md).
 
 Using SDA provides these primary benefits:
 

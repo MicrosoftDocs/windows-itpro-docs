@@ -42,7 +42,7 @@ A full scan can be useful on endpoints that have encountered a malware threat to
 
 See [Antimalware and firewall tasks: How to perform an on-demand scan](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers) for details on using System Center Configuration Manager (current branch) to run a scan.
 
-**Use the mpcmdrum.exe command-line utility to run a scan:**
+**Use the mpcmdrun.exe command-line utility to run a scan:**
 
 Use the following `-scan` parameter:
 

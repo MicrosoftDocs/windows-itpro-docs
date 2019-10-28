@@ -160,4 +160,3 @@ When deploying new devices using Windows Autopilot, the following steps are requ
 ## Other configuration settings
 
 - [Bitlocker encryption settings](bitlocker.md): You can configure the BitLocker encryption settings to be applied before automatic encryption is started.
-

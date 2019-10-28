@@ -1,4 +1,5 @@
 # [Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment)
+## [Deployment process posters](windows-10-deployment-posters.md)
 ## [Deploy Windows 10 with Microsoft 365](deploy-m365.md)
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
