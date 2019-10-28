@@ -124,7 +124,7 @@ If you have installed a TPM or UEFI update and your device cannot start, even if
 
 To do this, follow these steps:
 
-1. Obtain your BitLocker recovery password from [go.microsoft.com/fwlink/p/?LinkId=237614](http://go.microsoft.com/fwlink/p/?LinkId=237614). If BitLocker is managed by a different method, such as Microsoft BitLocker Administration and Monitoring (MBAM), contact your administrator for help.
+1. Obtain your BitLocker recovery password from [your Microsoft.com account](https://account.microsoft.com/devices/recoverykey). If BitLocker is managed by a different method, such as Microsoft BitLocker Administration and Monitoring (MBAM), contact your administrator for help.
 1. Use another computer to download the Surface recovery image from [Download a recovery image for your Surface](https://support.microsoft.com/surfacerecoveryimage). Use the downloaded image to create a USB recovery drive.
 1. Insert the USB Surface recovery image drive into the Surface device, and start the device.
 1. When you are prompted, select the following items:
@@ -199,7 +199,7 @@ You can avoid this scenario when you install updates to system firmware or TPM f
 > [!IMPORTANT]
 > TPM and UEFI firmware updates may require multiple restarts while they install. To keep BitLocker suspended during this process, you must use [Suspend-BitLocker](https://docs.microsoft.com/powershell/module/bitlocker/suspend-bitlocker?view=winserver2012r2-ps) and set the **Reboot Count** parameter to either of the following values:
 > - **2** or greater: This value sets the number of times the device can restart before BitLocker Device Encryption resumes.
-> - **0**: This value suspends BitLocker Drive Encryption indefinitely, until you use [Resume-BitLocker](https://docs.microsoft.com/en-us/powershell/module/bitlocker/resume-bitlocker?view=winserver2012r2-ps) or another mechanism to resume protection.
+> - **0**: This value suspends BitLocker Drive Encryption indefinitely, until you use [Resume-BitLocker](https://docs.microsoft.com/powershell/module/bitlocker/resume-bitlocker?view=winserver2012r2-ps) or another mechanism to resume protection.
 
 To suspend BitLocker while you install TPM or UEFI firmware updates:
 
