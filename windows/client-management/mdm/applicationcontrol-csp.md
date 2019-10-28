@@ -117,16 +117,7 @@ Value type is char.
 To use ApplicationControl CSP, you must:
 - Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyTypeID>`.
 - Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
-- Create a policy node (a Base64-encoded blob of the binary policy representation) using the [certutil -encode](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)#BKMK_encode) command line tool.
 
-Here is a sample certutil invocation:
-```
-certutil -encode WinSiPolicy.p7b WinSiPolicy.cer 
-```
-An alternative to using certutil would be to use the following PowerShell invocation:
-```
-[Convert]::ToBase64String($(Get-Content -Encoding Byte -ReadCount 0 -Path <bin file>))
-```
 If you are using hybrid MDM management with System Center Configuration Manager or using Intune, ensure that you are using Base64 as the Data type when using Custom OMA-URI
 functionality to apply the Code Integrity policy.
 
