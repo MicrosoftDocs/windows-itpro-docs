@@ -10,6 +10,8 @@ ms.author: dansimp
 ms.topic: article
 ms.reviewer: 
 manager: dansimp
+ms.localizationpriority: medium
+ms.audience: itpro
 ---
 
 # Long-Term Servicing Channel (LTSC) for Surface devices

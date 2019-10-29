@@ -12,6 +12,8 @@ ms.topic: article
 ms.date: 02/01/2017
 ms.reviewer: 
 manager: dansimp
+ms.localizationpriority: medium
+ms.audience: itpro
 ---
 
 # Use System Center Configuration Manager to manage devices with SEMM

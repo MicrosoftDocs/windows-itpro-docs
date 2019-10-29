@@ -10,7 +10,7 @@ ms.topic: article
 ms.date: 11/15/2018
 ms.reviewer: hachidan
 manager: dansimp
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.audience: itpro
 ---
 

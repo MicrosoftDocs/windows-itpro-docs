@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: dansimp
 ms.audience: itpro
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
 ms.date: 08/15/2019
