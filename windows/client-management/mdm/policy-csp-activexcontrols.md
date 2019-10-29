@@ -2,6 +2,7 @@
 title: Policy CSP - ActiveXControls
 description: Policy CSP - ActiveXControls
 ms.author: dansimp
+ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -57,14 +58,6 @@ manager: dansimp
 <tr>
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 

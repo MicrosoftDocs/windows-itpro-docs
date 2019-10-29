@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
+ms.localizationpriority: medium
 ms.date: 09/27/2019
 ms.reviewer: 
 manager: dansimp
@@ -73,14 +74,6 @@ manager: dansimp
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -134,14 +127,6 @@ The default value is an empty string. Otherwise, the value should contain the UR
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
@@ -199,14 +184,6 @@ The default value is an empty string. Otherwise, the value should contain a GUID
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -260,14 +237,6 @@ The default value is an empty string. Otherwise, the value should contain a URL.
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
@@ -325,14 +294,6 @@ The default value is an empty string. Otherwise, the value should contain the UR
     <td>Education</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
 </table>
 
 <!--/SupportedSKUs-->
@@ -386,14 +347,6 @@ For Windows Mobile, the default value is 20.
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Mobile Enterprise</td>
     <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>

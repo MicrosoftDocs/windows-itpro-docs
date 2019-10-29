@@ -2,14 +2,14 @@
 title: Using Update Compliance (Windows 10)
 ms.reviewer: 
 manager: laurawi
-description: Explains how to begin usihg Update Compliance.
+description: Explains how to begin using Update Compliance.
 keywords: oms, operations management suite, wdav, updates, upgrades, antivirus, antimalware, signature, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
-ms.author: greglin
+audience: itpro
+author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
@@ -32,7 +32,7 @@ After Update Compliance has successfully been [added to your Azure subscription]
 
 ![Update Compliance tile no data](images/UC_tile_assessing.png)
 
-When the solution is added, data is not immediately available. Data will begin to be collected after data is sent up that belongs to the Commercial ID associated with the device. This process assumes that Windows diagnostic data is enabled and data sharing is enabled as described in [Enrolling devices in Windows Analytics](windows-analytics-get-started.md). After Microsoft has collected and processed any device data associated with your Commercial ID, the tile will be replaced with the following summary:
+When the solution is added, data is not immediately available. Data will begin to be collected after data is sent up that belongs to the Commercial ID associated with the device. This process assumes that Windows diagnostic data is enabled and data sharing is enabled as described in [Enrolling devices in Update Compliance](update-compliance-get-started.md#enroll-devices-in-update-compliance). After Microsoft has collected and processed any device data associated with your Commercial ID, the tile will be replaced with the following summary:
 
 ![Update Compliance tile with data](images/UC_tile_filled.png)
 
@@ -59,16 +59,15 @@ The following is a breakdown of the different sections available in Update Compl
 * [Need Attention!](update-compliance-need-attention.md) - This section is the default section when arriving to your Update Compliance workspace. It provides a summary of the different issues devices are facing relative to Windows 10 updates.
 * [Security Update Status](update-compliance-security-update-status.md) - This section lists the percentage of devices that are on the latest security update released for the version of Windows 10 it is running. Selecting this section provides blades that summarize the overall status of security updates across all devices and a summary of their deployment progress towards the latest two security updates. 
 * [Feature Update Status](update-compliance-feature-update-status.md) - This section lists the percentage of devices that are on the latest feature update that is applicable to a given device. Selecting this section provides blades that summarize the overall feature update status across all devices and a summary of deployment status for different versions of Windows 10 in your environment.
-* [Windows Defender AV Status](update-compliance-wd-av-status.md) - This section lists the percentage of devices running Windows Defender Antivirus that are not sufficiently protected. Selecting this section provides a summary of signature and threat status across all devices that are running Windows Defender Antivirus. This section is not applicable to devices not running Windows Defender Antivirus or devices that do not meet the [prerequisites](update-compliance-get-started.md#update-compliance-prerequisites) to be assessed. 
 * [Delivery Optimization Status](update-compliance-delivery-optimization.md) - This section summarizes bandwidth savings incurred by utilizing Delivery Optimization in your environment. It provides a breakdown of Delivery Optimization configuration across devices, and summarizes bandwidth savings and utilization across multiple content types.
 
 
 ## Update Compliance data latency
 Update Compliance uses Windows 10 diagnostic data as its data source. After you add Update Compliance and appropriately configure your devices, it could take 48-72 hours before they first appear. The  process that follows is as follows:
 
-Update Compliance is refreshed every 12 hours. This means that every 12 hours all data that has been gathered over the last 12-hour interval is pushed to Log Analytics. However, the rate that each data type is sent and how long it takes to be ready for Update Compliance varies, roughly outlined below.
+Update Compliance is refreshed every 12 hours. This means that every 12 hours all data that has been gathered over the last 12-hour interval is pushed to Log Analytics. However, the rate at which each type of data is sent from the device and how long it takes to be ready for Update Compliance varies, roughly outlined below.
 
-| Data Type | Refresh Rate | Data Latency |
+| Data Type | Data upload rate from device | Data Latency |
 |--|--|--|
 |WaaSUpdateStatus | Once per day |4 hours |
 |WaaSInsiderStatus| Once per day |4 hours |
@@ -78,7 +77,7 @@ Update Compliance is refreshed every 12 hours. This means that every 12 hours al
 |WUDOAggregatedStatus|On update event, aggregated over time|24-36 hours |
 |WUDOStatus|Once per day|12 hours |
 
-This means you should generally expect to see new data every 24-36 hours, except for WaaSDeploymentStatus and WUDOAggregatedStatus, which may take 36-48 hours (if it misses the 36th hour refresh, it would be in the 48th, so the data will be present in the 48th hour refresh). 
+This means you should generally expect to see new data device data every 24 hours, except for WaaSDeploymentStatus and WUDOAggregatedStatus, which may take 36-48 hours (if it misses the 36th hour refresh, it would be in the 48th, so the data will be present in the 48th hour refresh). 
 
 ## Using Log Analytics
 

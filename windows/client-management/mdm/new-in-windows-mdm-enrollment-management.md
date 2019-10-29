@@ -24,6 +24,7 @@ This topic provides information about what's new and breaking changes in Windows
 For details about Microsoft mobile device management protocols for Windows 10 see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347). 
 
 - **What’s new in MDM for Windows 10 versions**
+  - [What’s new in MDM for Windows 10, version 1909](#whats-new-in-mdm-for-windows-10-version-1909)
   - [What’s new in MDM for Windows 10, version 1903](#whats-new-in-mdm-for-windows-10-version-1903)
   - [What’s new in MDM for Windows 10, version 1809](#whats-new-in-mdm-for-windows-10-version-1809)
   - [What’s new in MDM for Windows 10, version 1803](#whats-new-in-mdm-for-windows-10-version-1803)
@@ -82,6 +83,27 @@ For details about Microsoft mobile device management protocols for Windows 10 s
     - [October 2017](#october-2017)
     - [September 2017](#september-2017)
     - [August 2017](#august-2017)
+
+## What’s new in MDM for Windows 10, version 1909
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top"><a href="bitlocker-csp.md" data-raw-source="[BitLocker CSP](bitlocker-csp.md)">BitLocker CSP</a></td>
+<td style="vertical-align:top"><br>Added the following new nodes in Windows 10, version 1909:</p>
+ConfigureRecoveryPasswordRotation, RotateRecoveryPasswords, RotateRecoveryPasswordsStatus, RotateRecoveryPasswordsRequestID.</li>
+</td></tr>
+</tbody>
+</table>
 
 ## What’s new in MDM for Windows 10, version 1903
 <table class="mx-tdBreakAll">
@@ -143,7 +165,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li><a href="policy-csp-windowslogon.md#windowslogon-configautomaticrestartsignon" data-raw-source="[WindowsLogon/ConfigAutomaticRestartSignOn](policy-csp-windowslogon.md#windowslogon-configautomaticrestartsignon)">WindowsLogon/ConfigAutomaticRestartSignOn</a></li>
 <li><a href="policy-csp-windowslogon.md#windowslogon-enablefirstlogonanimation" data-raw-source="[WindowsLogon/EnableFirstLogonAnimation](policy-csp-windowslogon.md#windowslogon-enablefirstlogonanimation)">WindowsLogon/EnableFirstLogonAnimation</a></li>
 <tr>
-<td style="vertical-align:top"><a href="policy-csp-audit.md" data-raw-source="[Policy CSP - Audit](applicationcontrol-csp.md)">Policy CSP - Audit</a></td>
+<td style="vertical-align:top"><a href="policy-csp-audit.md" data-raw-source="[Policy CSP - Audit](policy-csp-audit.md)">Policy CSP - Audit</a></td>
 <td style="vertical-align:top"><p>Added new Audit policies in Windows 10, version 1903.</p>
 </td></tr>
 <tr>
@@ -151,6 +173,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <tr>
 <td style="vertical-align:top"><a href="applicationcontrol-csp.md" data-raw-source="[ApplicationControl CSP](applicationcontrol-csp.md)">ApplicationControl CSP</a></td>
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1903.</p>
+</td></tr>
+<tr>
+<td style="vertical-align:top"><a href="defender-csp.md" data-raw-source="[Defender CSP](defender-csp.md)">Defender CSP</a></td>
+<td style="vertical-align:top"><p>Added the following new nodes:<br>Health/TamperProtectionEnabled, Health/IsVirtualMachine, Configuration, Configuration/TamperProtection, Configuration/EnableFileHashComputation.</p>
 </td></tr>
 <tr>
 <td style="vertical-align:top"><a href="diagnosticlog-csp.md" data-raw-source="[DiagnosticLog CSP](diagnosticlog-csp.md)">DiagnosticLog CSP</a><br>
@@ -1912,13 +1938,14 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 
 |New or updated topic | Description|
 |--- | ---|
-|[Policy CSP - Update](policy-csp-update.md)|Added the following new policy:<br>Update/TargetReleaseVersion|
+|[BitLocker CSP](bitlocker-csp.md)|Added the following new nodes:<br>ConfigureRecoveryPasswordRotation, RotateRecoveryPasswords, RotateRecoveryPasswordsStatus, RotateRecoveryPasswordsRequestID.|
+|[Defender CSP](defender-csp.md)|Added the following new nodes:<br>Health/TamperProtectionEnabled, Health/IsVirtualMachine, Configuration, Configuration/TamperProtection, Configuration/EnableFileHashComputation.|
 
 ### September 2019
 
 |New or updated topic | Description|
 |--- | ---|
-|[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)|Added the following new node:<br>IsStub|
+|[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)|Added the following new node:<br>IsStub.|
 |[Policy CSP - Defender](policy-csp-defender.md)|Updated the supported value list for Defender/ScheduleScanDay policy.|
 |[Policy CSP - DeviceInstallation](policy-csp-deviceinstallation.md)|Added the following new policies: <br>DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs, DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs.|
 
@@ -1937,7 +1964,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 |[ApplicationControl CSP](applicationcontrol-csp.md)|Added new CSP in Windows 10, version 1903.|
 |[PassportForWork CSP](passportforwork-csp.md)|Added the following new nodes in Windows 10, version 1903:<br>SecurityKey, SecurityKey/UseSecurityKeyForSignin|
 |[Policy CSP - Privacy](policy-csp-privacy.md)|Added the following new policies:<br>LetAppsActivateWithVoice, LetAppsActivateWithVoiceAboveLock|
-|Create a custom configuration service provider|Deleted the following documents from the CSP reference because extensibility via CSPs is not currently supported:<br>Create a custom configuration service provider<br>Design a custom configuration service provider<br>IConfigServiceProvider2<br>IConfigServiceProvider2::ConfigManagerNotification<br>IConfigServiceProvider2::GetNode<br>ICSPNode<br>ICSPNode::Add<br>ICSPNode::Clear<br>ICSPNode::Copy<br>ICSPNode::DeleteChild<br>ICSPNode::DeleteProperty<br>ICSPNode::Execute<br>ICSPNode::GetChildNodeNames<br>ICSPNode::GetProperty<br>ICSPNode::GetPropertyIdentifiers<br>ICSPNode::GetValue<br>ICSPNode::Move<br>ICSPNode::SetProperty<br>ICSPNode::SetValue<br>ICSPNodeTransactioning<br>ICSPValidate<br>Samples for writing a custom configuration service provider|
+|Create a custom configuration service provider|Deleted the following documents from the CSP reference because extensibility via CSPs is not currently supported:<br>Create a custom configuration service provider<br>Design a custom configuration service provider<br>IConfigServiceProvider2<br>IConfigServiceProvider2::ConfigManagerNotification<br>IConfigServiceProvider2::GetNode<br>ICSPNode<br>ICSPNode::Add<br>ICSPNode::Clear<br>ICSPNode::Copy<br>ICSPNode::DeleteChild<br>ICSPNode::DeleteProperty<br>ICSPNode::Execute<br>ICSPNode::GetChildNodeNames<br>ICSPNode::GetProperty<br>ICSPNode::GetPropertyIdentifiers<br>ICSPNode::GetValue<br>ICSPNode::Move<br>ICSPNode::SetProperty<br>ICSPNode::SetValue<br>ICSPNodeTransactioning<br>ICSPValidate<br>Samples for writing a custom configuration service provider.|
 
 
 ### June 2019

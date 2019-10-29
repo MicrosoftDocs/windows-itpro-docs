@@ -3,11 +3,12 @@ title: Windows Update troubleshooting
 description: Learn how to troubleshoot Windows Update
 ms.prod: w10
 ms.mktglfcycl: 
-ms.sitesec: library
-audience: itproauthor: greg-lindsay
-ms.localizationpriority: medium
-ms.audience: itproauthor: greg-lindsay
-ms.date: 09/18/2018
+audience: itpro
+itproauthor: jaimeo
+author: jaimeo
+ms.localizationprioauthor: jaimeo
+ms.audience: itpro
+author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article

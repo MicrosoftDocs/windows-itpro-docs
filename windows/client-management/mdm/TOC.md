@@ -168,7 +168,6 @@
 #### [Policies supported by Windows 10 IoT Core](policies-supported-by-iot-core.md)
 #### [Policies supported by Microsoft Surface Hub](policies-supported-by-surface-hub.md)
 #### [Policies that can be set using Exchange Active Sync (EAS)](policies-that-can-be-set-using-eas.md)
-#### [ApplicationRestrictions XSD](applicationrestrictions-xsd.md)
 #### [AboveLock](policy-csp-abovelock.md)
 #### [Accounts](policy-csp-accounts.md)
 #### [ActiveXControls](policy-csp-activexcontrols.md)

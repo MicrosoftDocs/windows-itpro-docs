@@ -226,6 +226,10 @@ create a reset package using PowerShell to reset SEMM.
 
 ## Version History
 
+### Version 2.59.139
+* Support to Surface Pro 7 and Surface Laptop 3
+- Support to Wake on Power feature
+
 ### Version 2.54.139.0
 * Support to Surface Hub 2S
 * Bug fixes

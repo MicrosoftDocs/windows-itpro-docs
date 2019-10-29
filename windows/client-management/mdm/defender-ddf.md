@@ -9,7 +9,8 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 07/12/2018
+ms.localizationpriority: medium
+ms.date: 10/21/2019
 ---
 
 # Defender DDF file
@@ -19,7 +20,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Defende
 
 Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
-The XML below is for Windows 10, version 1809.
+The XML below is the current version for this CSP.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -616,6 +617,112 @@ The XML below is for Windows 10, version 1809.
               </AccessType>
               <DFFormat>
                 <chr />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>TamperProtectionEnabled</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DFFormat>
+                <bool />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>IsVirtualMachine</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DFFormat>
+                <bool />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>Configuration</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>TamperProtection</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+                <Add />
+                <Delete />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>EnableFileHashComputation</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+                <Add />
+                <Delete />
+              </AccessType>
+              <DFFormat>
+                <int />
               </DFFormat>
               <Occurrence>
                 <One />

@@ -4,8 +4,8 @@ description: "Learn how to update and manage Surface Hub 2S using Intune."
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -28,7 +28,7 @@ Surface Hub 2S allows IT administrators to manage settings and policies using a 
 
 ### Auto registration — Azure Active Directory Affiliated
 
-When affiliating Surface Hub 2S with a tenant that has Intune auto enrollment enabled, the device will automatically enroll with Intune.
+When affiliating Surface Hub 2S with a tenant that has Intune auto enrollment enabled, the device will automatically enroll with Intune. For more information, refer to [Intune enrollment methods for Windows devices](https://docs.microsoft.com/intune/enrollment/windows-enrollment-methods).
 
 ## Windows 10 Team Edition settings
 

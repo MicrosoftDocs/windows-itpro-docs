@@ -6,18 +6,20 @@ description: How Windows Analytics uses data
 keywords: windows analytics, oms, privacy, data, diagnostic, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, FAQ, problems, troubleshooting, error
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
+author: jaimeo
 ms.audience: itpro
-author: greg-lindsay
+author: jaimeo
 ms.localizationpriority: high
 ms.collection: M365-analytics
 ms.topic: article
 ---
 
 # Windows Analytics and privacy
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/en-us/help/4521815/windows-analytics-retirement).
 
 Windows Analytics is fully committed to privacy, centering on these tenets:
 

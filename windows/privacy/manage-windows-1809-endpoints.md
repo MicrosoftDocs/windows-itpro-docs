@@ -261,6 +261,8 @@ If you [turn off traffic for these endpoints](manage-connections-from-windows-op
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 |  |   | login.msa.akadns6.net  |
+|  |   | login.live.com  |
+|  |   | account.live.com |
 | system32\Auth.Host.exe | HTTPS | auth.gfx.ms |
 |  |   | us.configsvc1.live.com.akadns.net |
 

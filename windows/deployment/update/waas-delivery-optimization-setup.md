@@ -6,10 +6,11 @@ description: Delivery Optimization is a new peer-to-peer distribution method in 
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itproauthor: greg-lindsay
+
+audience: itpro
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: jaimeo
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -24,7 +25,7 @@ ms.topic: article
 
 ## Recommended Delivery Optimization settings
 
-Delivery Optimization offers a great many settings to fine-tune its behavior (see [Delivery Optimization reference](waas-delivery-optimization-reference.md) for a comprehensive list), but for the most efficient performance, there are just a few key parameters that will have the greates impact if particular situations exist in your deployment:
+Delivery Optimization offers a great many settings to fine-tune its behavior (see [Delivery Optimization reference](waas-delivery-optimization-reference.md) for a comprehensive list), but for the most efficient performance, there are just a few key parameters that will have the greatest impact if particular situations exist in your deployment:
 
 - Does your topology include multiple breakouts to the internet (i.e., a "hybrid WAN") or are there only a few connections to the internet, so that all requests appear to come from a single external IP address (a "hub and spoke" topology)?
 - If you use boundary groups in your topology, how many devices are present in a given group?
@@ -155,7 +156,7 @@ You can now "pin" files to keep them persistent in the cache. You can only do th
 
 `set-DeliveryOptimizationStatus -Pin [True] -File ID [FileID]` keeps a specific file in the cache such that it won't be deleted until the expiration date and time (which you set with `set-DeliveryOptimizationStatus -ExpireOn [date time] -FileID [FileID]`). The file is also excluded from the cache quota calculation.
 
-`set-DeliveryOptimizationStatus -Pin [False] -File ID [FileID]` "unpins" a file, so that it will be deleted when the expiration date and time are rreached. The file is included in the cache quota calculation.
+`set-DeliveryOptimizationStatus -Pin [False] -File ID [FileID]` "unpins" a file, so that it will be deleted when the expiration date and time are reached. The file is included in the cache quota calculation.
 
 `delete-DeliveryOptimizationCache` lets you clear files from the cache and remove all persisted data related to them. You can use these options with this cmdlet:
 
