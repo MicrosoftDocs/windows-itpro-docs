@@ -14,7 +14,7 @@ metadata:
 
 additionalContent:
   sections:
-      items:
+    - items:
         # Card
         - title: UWP apps for education
           summary: Learn how to write universal apps for education.
