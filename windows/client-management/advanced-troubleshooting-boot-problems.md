@@ -1,11 +1,11 @@
 ---
 title: Advanced troubleshooting for Windows boot problems
-description: Learn how to troubleshoot when Windows is unable to boot 
+description: Learn how to troubleshoot when Windows is unable to boot
 ms.prod: w10
 ms.sitesec: library
-author: msfttracyp
+author: dansimp
 ms.localizationpriority: medium
-ms.author: tracyp
+ms.author: dansimp
 ms.date: 11/16/2018
 ms.reviewer: 
 manager: dansimp
@@ -229,7 +229,7 @@ If the system gets stuck during the kernel phase, you experience multiple sympto
 
 -   Specific error code is displayed.
     For example, "0x00000C2" , "0x0000007B" , "inaccessible boot device" and so on.
-    (To troubleshoot the 0x0000007B error, see [Error code INACCESSIBLE_BOOT_DEVICE (STOP    0x7B)](https://internal.support.services.microsoft.com/help/4343769/troubleshooting-guide-for-windows-boot-problems#0x7bstoperror))
+    [Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device](https://docs.microsoft.com/windows/client-management/troubleshoot-inaccessible-boot-device)
 
 -   The screen is stuck at the "spinning wheel" (rolling dots) "system busy" icon.
 
@@ -307,9 +307,7 @@ To troubleshoot this Stop error, follow these steps to filter the drivers:
 
 For additional troubleshooting steps, see the following articles:
 
-- [Troubleshooting a Stop 0x7B in Windows](https://blogs.technet.microsoft.com/askcore/2013/08/05/troubleshooting-a-stop-0x7b-in-windows/)  
-  
-- [Advanced troubleshooting for "Stop error code 0x0000007B (INACCESSIBLE_BOOT_DEVICE)" errors in Windows XP](https://internal.support.services.microsoft.com/help/324103).
+- [Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device](https://docs.microsoft.com/windows/client-management/troubleshoot-inaccessible-boot-device)
 
 To fix problems that occur after you install Windows updates, check for pending updates by using these steps:
 
@@ -358,17 +356,15 @@ If the computer does not start, follow these steps:
 
 12. Try to start the computer.
 
-If the Stop error occurs late in the startup process, or if the Stop error is still being generated, you can capture a memory dump. A good memory dump can help determine the root cause of the Stop error. For details, see the following Knowledge Base article:
+If the Stop error occurs late in the startup process, or if the Stop error is still being generated, you can capture a memory dump. A good memory dump can help determine the root cause of the Stop error. For details, see the following articles:
 
-- [969028](https://support.microsoft.com/help/969028) How to generate a kernel or a complete memory dump file in Windows Server 2008 and Windows Server 2008 R2
+- [Generate a kernel or complete crash dump](https://docs.microsoft.com/windows/client-management/generate-kernel-or-complete-crash-dump) 
 
-For more information about page file problems in Windows 10 or Windows Server 2016, see the following Knowledge Base article:
-
-- [4133658](https://support.microsoft.com/help/4133658) Introduction of page file in Long-Term Servicing Channel and Semi-Annual Channel of Windows
+For more information about page file problems in Windows 10 or Windows Server 2016, see the following:
+- [Introduction to page files](https://docs.microsoft.com/windows/client-management/introduction-page-file)
 
 For more information about Stop errors, see the following Knowledge Base article:
-
-- [3106831](https://support.microsoft.com/help/3106831) Troubleshooting Stop error problems for IT Pros
+- [Advanced troubleshooting for Stop error or blue screen error issue](https://docs.microsoft.com/windows/client-management/troubleshoot-stop-errors)
 
 
 If the dump file shows an error that is related to a driver (for example, windows\system32\drivers\stcvsm.sys is missing or corrupted), follow these guidelines:

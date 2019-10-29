@@ -1,18 +1,21 @@
 ---
 title: Windows Defender Application Control design guide (Windows 10)
 description: Microsoft Windows Defender Device Guard is a feature set that consists of both hardware and software system integrity hardening features that revolutionize the Windows operating system’s security.
-keywords: virtualization, security, malware
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: isbrahm
+ms.author: dansimp
+manager: dansimp
 ms.topic: conceptual
 ms.date: 02/20/2018
-ms.reviewer: 
-ms.author: dansimp
 ---
 
 # Windows Defender Application Control design guide
@@ -34,4 +37,3 @@ This guide covers design and planning for Windows Defender Application Control (
 | [Create your WDAC planning document](create-your-windows-defender-application-control-planning-document.md) | This planning topic summarizes the information you need to research and include in your planning document. | 
  
 After planning is complete, the next step is to deploy WDAC. The [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md) covers the creation and testing of policies, deploying the enforcement setting, and managing and maintaining the policies.
- 

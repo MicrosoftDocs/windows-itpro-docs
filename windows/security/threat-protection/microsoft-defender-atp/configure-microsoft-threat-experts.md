@@ -23,8 +23,6 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
-
 ## Before you begin 
 Ensure that you have Microsoft Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up. 
 
@@ -63,9 +61,6 @@ You'll start receiving targeted attack notification from Microsoft Threat Expert
 
 
 ## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization 
->[!NOTE]
->The Microsoft Threat Experts' experts-on-demand capability is still in preview. You can only use the experts-on-demand capability if you have applied for preview and your application has been approved.
-
 You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised machine, or a threat intelligence context that you see on your portal dashboard. 
 
 >[!NOTE]
@@ -77,9 +72,11 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 >![Image of Microsoft Threat Experts Experts on Demand from the menu](images/mte-eod-menu.png)
 
->A flyout screen opens.
-
+>A flyout screen opens. The following screen shows when you are on a trial subscription. 
 >![Image of Microsoft Threat Experts Experts on Demand screen](images/mte-eod.png)
+
+> The following screen shows when you are on a full Microsoft Threat Experts - Experts on Demand subscription. 
+>![Image of Microsoft Threat Experts Experts on Demand full subscription screen](images/mte-eod-fullsubscription.png)
 
 >The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or machine details page that you were at when you made the request.
 
@@ -120,7 +117,7 @@ Response from Microsoft Threat Experts varies according to your inquiry. They wi
 - Investigation requires more time   
 - Initial information was enough to conclude the investigation 
 
-It is crucial to respond in a timely manner to keep the investigation moving. See the Premier customer service and support service level agreement for details.  
+It is crucial to respond in a timely manner to keep the investigation moving. 
 
 ## Related topic
 - [Microsoft Threat Experts overview](microsoft-threat-experts.md)

@@ -32,6 +32,7 @@ sections:
   - type: markdown
     text: "
       <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Date resolved</td></tr>
+      <tr><td><div id='358msg'></div><b>Unable to discover or connect to Bluetooth devices using some Qualcomm adapters</b><br>Microsoft has identified compatibility issues with some versions of Qualcomm Bluetooth radio drivers.<br><br><a href = '#358msgdesc'>See details ></a></td><td>OS Build 18362.116<br><br>May 20, 2019<br><a href ='https://support.microsoft.com/help/4505057' target='_blank'>KB4505057</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4517389' target='_blank'>KB4517389</a></td><td>October 08, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='338msg'></div><b>Safeguard on certain devices with some Intel and Broadcom Wi-Fi adapters</b><br>Some devices with Intel Centrino 6205/6235 and Broadcom 802.11ac Wi-Fi cards may experience compatibility issues.<br><br><a href = '#338msgdesc'>See details ></a></td><td>N/A <br><br><a href ='' target='_blank'></a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4522355' target='_blank'>KB4522355</a></td><td>October 24, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='248msg'></div><b>dGPU occasionally disappear from device manager on Surface Book 2</b><br>Some apps or games may close or fail to open on Surface Book 2 devices with Nvidia dGPU.<br><br><a href = '#248msgdesc'>See details ></a></td><td>OS Build 18362.145<br><br>May 29, 2019<br><a href ='https://support.microsoft.com/help/4497935' target='_blank'>KB4497935</a></td><td>Resolved<br><a href = '' target='_blank'></a></td><td>October 18, 2019 <br>04:33 PM PT</td></tr>
       <tr><td><div id='351msg'></div><b>Intermittent issues when printing</b><br>The print spooler service may intermittently have issues completing a print job and results print job failure.<br><br><a href = '#351msgdesc'>See details ></a></td><td>OS Build 18362.357<br><br>September 23, 2019<br><a href ='https://support.microsoft.com/help/4522016' target='_blank'>KB4522016</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4517389' target='_blank'>KB4517389</a></td><td>October 08, 2019 <br>10:00 AM PT</td></tr>
@@ -67,6 +68,15 @@ sections:
         <div>
         </div> 
       "
+- title: October 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='358msgdesc'></div><b>Unable to discover or connect to Bluetooth devices using some Qualcomm adapters</b><div>Microsoft has identified compatibility issues with some driver versions for Bluetooth radios made by Qualcomm. To safeguard your update experience, we have applied a compatibility hold on devices with affected driver versions for Qualcomm Bluetooth radios from being offered Windows 10, version 1903 or Windows Server, version 1903 until the driver has been updated.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1903</li><li>Server: Windows Server, version 1903</li></ul><div></div><div><strong>Resolution:&nbsp;</strong>This issue was resolved in&nbsp;<a href='https://support.microsoft.com/help/4517389' target='_blank'>KB4517389</a> and the safeguard hold has been removed. Please note, it can take up to 48 hours before you can update to offered Windows 10, version 1903 or Windows Server, version 1903.</div><br><a href ='#358msg'>Back to top</a></td><td>OS Build 18362.116<br><br>May 20, 2019<br><a href ='https://support.microsoft.com/help/4505057' target='_blank'>KB4505057</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4517389' target='_blank'>KB4517389</a></td><td>Resolved:<br>October 08, 2019 <br>10:00 AM PT<br><br>Opened:<br>October 25, 2019 <br>04:21 PM PT</td></tr>
+      </table>
+      "
+
 - title: September 2019
 - items:
   - type: markdown
