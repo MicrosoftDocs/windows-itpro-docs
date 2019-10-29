@@ -57,14 +57,14 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 1. Go to **Settings** > **Update & security** > **Windows Update** > **Advanced options**.
 2. Select **Defer feature updates**.
 
-**To assign devicess to the Semi-Annual Channel by using Group Policy**
+**To assign devices to the Semi-Annual Channel by using Group Policy**
 
 
 - In Windows 10, version 1607 and later releases:
 
     Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** - enable policy and set branch readiness level to the Semi-Annual Channel
     
-**To assign devicess to to the Semi-Annual Channel by using MDM**
+**To assign devices to to the Semi-Annual Channel by using MDM**
 
 
 - In Windows 10, version 1607 and later releases:
