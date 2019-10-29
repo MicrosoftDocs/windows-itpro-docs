@@ -57,6 +57,7 @@ You can file exceptions to exclude certain recommendation from showing up in rep
 When you select a security recommendation, it opens up a flyout screen with details and options for next step. You can either **Open software page**, choose from **Remediation options**, go through **Exception options** to file for exceptions, or **Report inaccuracy**.
 
 Select **Exception options** and a flyout screen opens.
+
 ![Screenshot of exception flyout screen](images/tvm-exception-flyout.png)
 
 ### Exception justification
@@ -67,7 +68,9 @@ If the security recommendation stemmed from a false positive report, or if there
 -   Accept risk - Poses low risk and/or implementing a compensating control is too expensive
 -   Planned remediation (grace) - Already planned but is awaiting execution or authorization
 -   Other - False positive
-    ![Screenshot of exception reason dropdown menu](images/tvm-exception-dropdown.png)
+   
+   
+   ![Screenshot of exception reason dropdown menu](images/tvm-exception-dropdown.png)
 
 ### Exception visibility
 The exceptions you've filed will show up in the **Remediation** page, in the **Exceptions** tab.
