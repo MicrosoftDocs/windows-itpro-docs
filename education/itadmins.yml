@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 
 title: M365 Education Documentation for IT admins
-summary: M365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.  This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments. Check out at https://edujourney.microsoft.com/. Find help now at https://docs.microsoft.com/en-us/microsoft-365/education/deploy/find-deployment-help.
+summary: M365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.
 
 metadata:
   title: M365 Education Documentation for IT admins
-  description: M365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.  
+  description: M365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.
   ms.service: help
   ms.topic: hub-page
   author: v-lamoyn

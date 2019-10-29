@@ -12,8 +12,8 @@ metadata:
   ms.author: v-lamoyn
   ms.date: 10/24/2019
 
-  additionalContent:
-    sections:
+additionalContent:
+  sections:
       items:
         # Card
         - title: UWP apps for education
