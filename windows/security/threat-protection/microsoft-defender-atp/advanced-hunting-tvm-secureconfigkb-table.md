@@ -26,7 +26,7 @@ ms.date: 10/27/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The DeviceTvmSecureConfigurationAssessmentKB table in the Advanced hunting schema contains the knowledge base for all the various configurations assessments related to your organization, for example, what configuration is being assessed. Use this reference to construct queries that return information from the table.
+The DeviceTvmSecureConfigurationAssessmentKB table in the Advanced hunting schema contains information about the various secure configuration TVM checks during assessments related to your organization. An example of a security configuration is to block JavaScript or VBScript from launching downloaded executable content to prevent accidentally downloading malicious files in your network. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-reference.md).
 
@@ -40,8 +40,8 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 | ConfigurationCategory | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls|
 | ConfigurationSubcategory | string |Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features. |
 | ConfigurationBenchmarks | string | List of industry benchmarks recommending the same or similar configuration |
-| RelatedMitreTechniques | string | List of Mitre ATT&CK framework techniques observed |
-| RelatedMitreTactics  | string | List of Mitre ATT&CK framework tactics observed |
+| RelatedMitreTechniques | string | List of Mitre ATT&CK framework techniques related to the configuration |
+| RelatedMitreTactics  | string | List of Mitre ATT&CK framework tactics related to the configuration|
 
 ## Related topics
 
