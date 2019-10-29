@@ -821,7 +821,7 @@ Replace
 with  
 ```USBSTOR\DISK&amp;VEN_SAMSUNG&amp;PROD_FLASH_DRIVE&amp;REV_1100\0376319020002347&amp;0```
     > [!Note]
-    > Do not use spaces in the values.
+    > Do not use spaces in the value.
 3. Replace the device instance IDs with `&amp;` into the sample SyncML. Add the SyncML into the Intune custom device configuration profile.
 
 <!--/Example-->
