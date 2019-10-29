@@ -29,7 +29,7 @@ ms.date: 10/27/2019
 
 [!include[Prerelease information](prerelease.md)]
 
-The DeviceTvmSoftwareInventoryVulnerabilities table in the Advanced hunting schema contains information for your general software inventory search, and checking for vulnerabilities in your software inventory. Use this reference to construct queries that return information from the table.
+The DeviceTvmSoftwareInventoryVulnerabilities table in the Advanced hunting schema contains an inventory of the software on your devices as well as any known vulnerabilities in the software products. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-reference.md).
 
