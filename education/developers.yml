@@ -14,8 +14,6 @@ metadata:
 
 additionalContent:
   sections:
-    - title: M365 Education Documentation for IT developers
-      summary: Start here.
       items:
         # Card
         - title: UWP apps for education
