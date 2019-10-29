@@ -27,19 +27,11 @@ If you've entered the correct recovery key multiple times, follow these steps to
 
 1. On the initial recovery screen, don't enter your recovery key. Instead, select **Skip this drive**.
 
-![](placeholder-1.png)
-
 2. On the next screen, select **Troubleshoot**.
  
-![](placeholder-2.png)
-
 3. On the Troubleshoot screen, select **Advanced options**.
 
-![](placeholder-3.png)
-
 4. On the Advanced options screen, select **Command prompt**.
-
-![](placeholder-4.png)
 
 5. From the WinRE command prompt, manually unlock your drive: `manage-bde.exe -unlock C: -rp <recovery password>`
 
