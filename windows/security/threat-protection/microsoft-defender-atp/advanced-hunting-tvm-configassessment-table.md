@@ -26,7 +26,7 @@ ms.date: 10/27/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The DeviceTvmSecureConfigurationAssessment table in the Advanced hunting schema contains an assessment event for a specific security configuratio. Use this reference to check the latest assessment results and determine whether device are compliant.
+Each row in the DeviceTvmSecureConfigurationAssessment table contains an assessment event for a specific security configuration. Use this reference to check the latest assessment results and determine whether device are compliant.
 
 For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-reference.md).
 
