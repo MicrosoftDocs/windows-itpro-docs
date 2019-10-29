@@ -38,5 +38,5 @@ Topic | Description
 [Exploit protection](./enable-exploit-protection.md)|How to automatically apply exploit mitigation techniques on both operating system processes and on individual apps
 [Network protection](./enable-network-protection.md)|How to prevent users from using any apps to access dangerous domains
 [Controlled folder access](./enable-controlled-folders.md)|How to protect valuable data from malicious apps
-[Attack surface reduction](./enable-attack-surface-reduction.md)|How to prevent actions and apps that are typically used for by exploit-seeking malware
+[Attack surface reduction](./enable-attack-surface-reduction.md)|How to prevent actions and apps that are typically used by exploit-seeking malware
 [Network firewall](../windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md)|How to protect devices and data across a network
