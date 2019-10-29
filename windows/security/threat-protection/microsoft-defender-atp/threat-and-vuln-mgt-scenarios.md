@@ -143,12 +143,16 @@ When an exception is created for a recommendation, the recommendation is no long
 2. Click the top-most recommendation. A flyout panel opens with the recommendation details.
 
 3. Click **Exception options**.
+![Screenshot of the exception option in the remediation flyout pane](images/tvm-exception-option.png)
 
 4. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
+![Screenshot of exception flyout page which details justification and context](images/tvm-exception-flyout.png)
 
 5. Click **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
+![Screenshot of exception confirmation message](images/tvm-exception-confirmation.png)
 
 6. Navigate to the **Remediation** page under the **Threat & Vulnerability Management** menu and click the **Exceptions** tab to view all your exceptions (current and past). 
+![Screenshot of exception list of exceptions in the Remediation page](images/tvm-exception-list.png) 
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
