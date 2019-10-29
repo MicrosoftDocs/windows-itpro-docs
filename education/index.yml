@@ -13,8 +13,6 @@ metadata:
   ms.date: 10/24/2019
 
 productDirectory:
-  title: M365 Education Documentation
-  summary: Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education. # < 160 chars (optional)
   items:
     # Card    
     - title: IT Admins
