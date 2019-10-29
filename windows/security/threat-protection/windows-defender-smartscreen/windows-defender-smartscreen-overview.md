@@ -30,12 +30,12 @@ Windows Defender SmartScreen helps to protect your employees if they try to visi
 
 **Windows Defender SmartScreen determines whether a downloaded app or app installer is potentially malicious by:**
 
-- Checking downloaded files against a list of reported malicious software sites and programs known to be unsafe. If it finds a match, Windows Defender SmartScreen shows a warning to let the user know that the site might be malicious. 
+- Checking downloaded files against a list of reported malicious software sites and programs known to be unsafe. If it finds a match, Windows Defender SmartScreen shows a warning to let the user know that the site might be malicious.
 
 - Checking downloaded files against a list of files that are well known and downloaded by many Windows users. If the file isn't on that list, Windows Defender SmartScreen shows a warning, advising caution.
 
     >[!NOTE]
-    >Before Windows 10, version 1703 this feature was called the Windows Defender SmartScreen when used within the browser and Windows Defender SmartScreen when used outside of the browser.
+    >Before Windows 10, version 1703 this feature was called the SmartScreen filter when used within the browser and Windows SmartScreen when used outside of the browser.
 
 ## Benefits of Windows Defender SmartScreen
 Windows Defender SmartScreen helps to provide an early warning system against websites that might engage in phishing attacks or attempt to distribute malware through a socially-engineered attack. The primary benefits are:

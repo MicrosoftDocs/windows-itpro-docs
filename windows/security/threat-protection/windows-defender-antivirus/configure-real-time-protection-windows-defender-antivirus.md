@@ -43,7 +43,7 @@ To configure these settings:
 Location | Setting | Description | Default setting (if not configured)
 ---|---|---|---
 Real-time protection | Monitor file and program activity on your computer | The Windows Defender Antivirus engine makes note of any file changes (file writes, such as moves, copies, or modifications) and general program activity (programs that are opened or running and that cause other programs to run) | Enabled
-Real-time protection | Scan all downloaded files and attachments | Downloaded files and attachments are automatically scanned. This operates in addition to the Windows Defender SmartScreen, which scans files before and during downloading | Enabled
+Real-time protection | Scan all downloaded files and attachments | Downloaded files and attachments are automatically scanned. This operates in addition Windows Defender SmartScreen, which scans files before and during downloading | Enabled
 Real-time protection | Turn on process scanning whenever real-time protection is enabled | You can independently enable the Windows Defender Antivirus engine to scan running processes for suspicious modifications or behaviors. This is useful if you have temporarily disabled real-time protection and want to automatically scan processes that started while it was disabled | Enabled
 Real-time protection | Turn on behavior monitoring | The AV engine will monitor file processes, file and registry changes, and other events on your endpoints for suspicious and known malicious activity | Enabled
 Real-time protection | Turn on raw volume write notifications | Information about raw volume writes will be analyzed by behavior monitoring | Enabled
