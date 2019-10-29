@@ -59,29 +59,29 @@ When you select a security recommendation, it opens up a flyout screen with deta
 Select **Exception options** and a flyout screen opens.
 ![Screenshot of exception flyout screen](images/tvm-exception-flyout.png)
 
-###Exception justification
+### Exception justification
 If the security recommendation stemmed from a false positive report, or if there are existing business justification that blocks the remediation, such as compensating control, productivity needs, compliance, or if there's already a planned remediation grace period, you can file an exception and indicate the reason. 
 
-Compensating/alternate control - A 3rd party control that mitigates this recommendation exists, for example, if Network Firewall prevents access to a machine, third party antivirus
-Productivity/business need - Remediation will impact productivity or interrupt business-critical workflow 
-Accept risk - Poses low risk and/or implementing a compensating control is too expensive
-Planned remediation (grace) - Already planned but is awaiting execution or authorization
-Other - False positive
-![Screenshot of exception reason dropdown menu](images/tvm-exception-dropdown.png)
+-   Compensating/alternate control - A 3rd party control that mitigates this recommendation exists, for example, if Network Firewall -   -   prevents access to a machine, third party antivirus
+-   Productivity/business need - Remediation will impact productivity or interrupt business-critical workflow 
+-   Accept risk - Poses low risk and/or implementing a compensating control is too expensive
+-   Planned remediation (grace) - Already planned but is awaiting execution or authorization
+-   Other - False positive
+    ![Screenshot of exception reason dropdown menu](images/tvm-exception-dropdown.png)
 
-###Exception visibility
+### Exception visibility
 The exceptions you've filed will show up in the **Remediation** page, in the **Exceptions** tab.
 However, you also have the option to filter your view based on exception justification, type, and status.  
 ![Screenshot of exception tab and filters](images/tvm-exception-filters.png)
 
-###Actions on exceptions
-- Cancel - You can cancel the exceptions you've filed any time
-- Resurface - The exception that you've filed automatically becomes void and resurfaces in the security recommendation section when dynamic environmental factors change, which adversely affect the exposure impact associated with a recommendation that had previously been excluded
+### Actions on exceptions
+-   Cancel - You can cancel the exceptions you've filed any time
+-   Resurface - The exception that you've filed automatically becomes void and resurfaces in the security recommendation section when dynamic environmental factors change, which adversely affect the exposure impact associated with a recommendation that had previously been excluded
 
-###Exception status
-- Cancelled - The exception has been cancelled and is no longer in effect  
-- Expired - The exception that you've filed is no longer in effect
-- In effect - The exception that you've filed is in progress
+### Exception status
+-   Cancelled - The exception has been cancelled and is no longer in effect  
+-   Expired - The exception that you've filed is no longer in effect
+-   In effect - The exception that you've filed is in progress
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
