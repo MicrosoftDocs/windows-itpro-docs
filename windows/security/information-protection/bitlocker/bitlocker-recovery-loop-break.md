@@ -13,30 +13,28 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 10/28/2019
 ---
 
 # Breaking out of a Bitlocker recovery loop
 
-Sometimes, you can get stuck in a loop where you are repeatedly prompted to enter your Bitlocker recovery key. This can be very frustrating.
+Sometimes, following a crash, you might be unable to successfully restart your device, due to the recovery screen repeatedly prompting you to enter your recovery key. This can be very frustrating.
 
-If you've entered the correct recovery key multiple times, follow these steps to break out of the loop.
+If you've entered the correct Bitlocker recovery key multiple times, and are still unable to continue past the first recovery screen, follow these steps to break out of the loop.
 
 > [!NOTE]
 > Only try these steps after you have restarted your device at least once.
 
 1. On the initial recovery screen, don't enter your recovery key. Instead, select **Skip this drive**.
 
-2. On the next screen, select **Troubleshoot**.
- 
-3. On the Troubleshoot screen, select **Advanced options**.
+1. On the next screen, select **Troubleshoot**.
 
-4. On the Advanced options screen, select **Command prompt**.
+1. On the Troubleshoot screen, select **Advanced options**.
 
-5. From the WinRE command prompt, manually unlock your drive: `manage-bde.exe -unlock C: -rp <recovery password>`
+1. On the Advanced options screen, select **Command prompt**.
 
-6. Next, suspend operating system drive protection: `manage-bde.exe -protectors -disable C:`
+1. From the WinRE command prompt, manually unlock your drive: `manage-bde.exe -unlock C: -rp <recovery password>`
 
-7. Once the last command is run, you can safely exit the command prompt and continue booting.
+1. Suspend operating system drive protection: `manage-bde.exe -protectors -disable C:`
 
-After you exit the command prompt in step 7, you will be able to successfully boot into your operating system.
+1. Once the last command is run, you can safely exit the command prompt and continue to boot into your operating system
