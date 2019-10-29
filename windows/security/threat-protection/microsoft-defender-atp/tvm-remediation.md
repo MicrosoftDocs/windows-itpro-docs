@@ -53,14 +53,14 @@ The dashboard will show that status of your top remediation activities. Click an
 ## When to file for exception instead of remediating issues 
 You can file exceptions to exclude certain recommendation from showing up in reports and affecting risk scores or secure scores.
 
-When you select a security recommendation, it opens up a flyout screen with details and options for next step. You can either **Open software page**, choose from **Remediation options**, go through **Exception options** to file for exceptions, or **Report inaccuracy**.
+When you select a security recommendation, it opens up a flyout screen with details and options for your next step. You can either **Open software page**, choose from **Remediation options**, go through **Exception options** to file for exceptions, or **Report inaccuracy**.
 
 Select **Exception options** and a flyout screen opens.
 
 ![Screenshot of exception flyout screen](images/tvm-exception-flyout.png)
 
 ### Exception justification
-If the security recommendation stemmed from a false positive report, or if there are existing business justification that blocks the remediation, such as compensating control, productivity needs, compliance, or if there's already a planned remediation grace period, you can file an exception and indicate the reason. 
+If the security recommendation stemmed from a false positive report, or if there are existing business justification that blocks the remediation, such as compensating control, productivity needs, compliance, or if there's already a planned remediation grace period, you can file an exception and indicate the reason. The following list details the justifications behind the exception options:
 
 -   **Compensating/alternate control** - A 3rd party control that mitigates this recommendation exists, for example, if Network Firewall -   -   prevents access to a machine, third party antivirus
 -   **Productivity/business need** - Remediation will impact productivity or interrupt business-critical workflow 
@@ -84,6 +84,13 @@ However, you also have the option to filter your view based on exception justifi
 -   **Cancelled** - The exception has been cancelled and is no longer in effect  
 -   **Expired** - The exception that you've filed is no longer in effect
 -   **In effect** - The exception that you've filed is in progress
+
+### Exception impact on scores
+Creating an exception can potentially affect the Exposure Score (for both types of weaknesses) and Secure Score (for configurations) of your organization in the following manner:
+-   **No impact** - Removes the recommendation from the lists (which can be reverse through filters), but will not affect the scores
+-   **Mitigation-like impact** - As if the recommendation was mitigated (and scores will be adjusted accordingly) when you select it as a compensating control.
+-   **Hybrid** - Provides visibility on both No impact and Mitigation-like impact. It shows both the Exposure Score and Secure Score the exception option created
+
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
