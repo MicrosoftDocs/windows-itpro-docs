@@ -5,7 +5,7 @@ summary: M365 Education consists of Office 365 Education, Windows 10 Education, 
 
 metadata:
   title: M365 Education Documentation for IT admins
-  description: M365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.  This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments. Check out at https://edujourney.microsoft.com/. Find help now at https://docs.microsoft.com/en-us/microsoft-365/education/deploy/find-deployment-help.
+  description: M365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.  
   ms.service: help
   ms.topic: hub-page
   author: v-lamoyn
@@ -13,6 +13,7 @@ metadata:
   ms.date: 10/24/2019
 
 productDirectory:
+  summary: This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments. Check out at https://edujourney.microsoft.com/. Find help now at https://docs.microsoft.com/en-us/microsoft-365/education/deploy/find-deployment-help.
   items:
     # Card    
     - title: Phase 1 - Cloud deployment
@@ -48,9 +49,9 @@ productDirectory:
       links:
         - url: https://docs.microsoft.com/en-us/microsoft-365/education/deploy/configure-admin-settings
           text: 1. Configure admin settings
-        - url: https://docs.microsoft.com/en-us/microsoft-365/education/deploy/deploy-office-365
-          text: 2. Set up Teams for Education
         - url: https://docs.microsoft.com/en-us/microsoft-365/education/deploy/set-up-teams-for-education
+          text: 2. Set up Teams for Education
+        - url: https://docs.microsoft.com/en-us/microsoft-365/education/deploy/deploy-office-365
           text: 3. Set up Office 365
         - url: https://docs.microsoft.com/en-us/microsoft-365/education/deploy/microsoft-store-for-education     
           text: 4. Install apps from Microsoft Store for Education
