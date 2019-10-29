@@ -93,6 +93,8 @@ Creating an exception can potentially affect the Exposure Score (for both types 
 
 The exception impact shows on both the Security recommendations page column and in the flyout pane.
 
+![Screenshot of where to find the exception impact](images/tvm-exception-impact.png)
+
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
