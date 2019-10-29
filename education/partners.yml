@@ -5,7 +5,7 @@ summary: Looking for resources available to Microsoft Education partners?
 
 metadata:
   title: M365 Education Documentation for partners
-  description: Looking for resources available to Microsoft Education partners? Start here.
+  description: Looking for resources available to Microsoft Education partners?
   ms.service: help
   ms.topic: hub-page
   author: v-lamoyn
@@ -13,6 +13,9 @@ metadata:
   ms.date: 10/24/2019
 
 additionalContent:
+    sections:
+    - title: M365 Education Documentation for IT partners
+      summary: Start here.
       items:
         # Card
         - title: Microsoft Partner Network
