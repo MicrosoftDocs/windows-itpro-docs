@@ -91,6 +91,7 @@ Creating an exception can potentially affect the Exposure Score (for both types 
 -   **Mitigation-like impact** - As if the recommendation was mitigated (and scores will be adjusted accordingly) when you select it as a compensating control.
 -   **Hybrid** - Provides visibility on both No impact and Mitigation-like impact. It shows both the Exposure Score and Secure Score the exception option created
 
+The exception impact shows on both the Security recommendations page column and in the flyout pane.
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
