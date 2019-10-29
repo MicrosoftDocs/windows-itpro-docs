@@ -18,9 +18,9 @@ ms.date: 10/28/2019
 
 # Breaking out of a Bitlocker recovery loop
 
-Sometimes, following a crash, you might be unable to successfully restart your device, due to the recovery screen repeatedly prompting you to enter your recovery key. This can be very frustrating.
+Sometimes, following a crash, you might be unable to successfully boot into your operating system, due to the recovery screen repeatedly prompting you to enter your recovery key. This can be very frustrating.
 
-If you've entered the correct Bitlocker recovery key multiple times, and are still unable to continue past the first recovery screen, follow these steps to break out of the loop.
+If you've entered the correct Bitlocker recovery key multiple times, and are still unable to continue past the initial recovery screen, follow these steps to break out of the loop.
 
 > [!NOTE]
 > Only try these steps after you have restarted your device at least once.
