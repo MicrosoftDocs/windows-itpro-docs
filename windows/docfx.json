@@ -9,7 +9,7 @@
       ],
     "resource": [
         {
-          "files": ["**/images/**"],
+          "files": ["**/images/**", "**/*.pdf"],
           "exclude": ["**/obj/**"]
         }
     ],

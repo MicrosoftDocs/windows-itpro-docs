@@ -31,7 +31,7 @@ Root node for the AccountManagement configuration service provider.
 Interior node. 
 
 <a href="" id="accountmanagement-userprofilemanagement-deletionpolicy"></a>**UserProfileManagement/EnableProfileManager**  
-Enable profile lifetime mangement for shared or communal device scenarios. Default value is false.
+Enable profile lifetime management for shared or communal device scenarios. Default value is false.
 
 Supported operations are Add, Get,Replace, and Delete. Value type is bool.
 
