@@ -147,7 +147,7 @@ When an exception is created for a recommendation, the recommendation is no long
 
 4. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
 
-![Screenshot of exception flyout page which details justification and context](images/tvm-exception-flyout.png)
+> ![Screenshot of exception flyout page which details justification and context](images/tvm-exception-flyout.png)
 
 5. Click **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
 ![Screenshot of exception confirmation message](images/tvm-exception-confirmation.png)
