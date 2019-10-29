@@ -47,7 +47,6 @@ When you submit a remediation request from Threat & Vulnerability Management, it
 
 It creates a security task which will be tracked in Threat & Vulnerability Management **Remediation** page, and it also creates a remediation ticket in Microsoft Intune.
 
-You also have the option to export all remediation activity data to CSV for records, reporting purposes, or if you want to notify your IT administration counterpart that a remediation ticket has been submitted. 
 
 The dashboard will show that status of your top remediation activities. Click any of the entries and it will take you to the **Remediation** page. You can mark the remediation activity as completed after the IT administration team remediates the task. 
 
@@ -63,11 +62,11 @@ Select **Exception options** and a flyout screen opens.
 ### Exception justification
 If the security recommendation stemmed from a false positive report, or if there are existing business justification that blocks the remediation, such as compensating control, productivity needs, compliance, or if there's already a planned remediation grace period, you can file an exception and indicate the reason. 
 
--   Compensating/alternate control - A 3rd party control that mitigates this recommendation exists, for example, if Network Firewall -   -   prevents access to a machine, third party antivirus
--   Productivity/business need - Remediation will impact productivity or interrupt business-critical workflow 
--   Accept risk - Poses low risk and/or implementing a compensating control is too expensive
--   Planned remediation (grace) - Already planned but is awaiting execution or authorization
--   Other - False positive
+-   **Compensating/alternate control** - A 3rd party control that mitigates this recommendation exists, for example, if Network Firewall -   -   prevents access to a machine, third party antivirus
+-   **Productivity/business need** - Remediation will impact productivity or interrupt business-critical workflow 
+-   **Accept risk** - Poses low risk and/or implementing a compensating control is too expensive
+-   **Planned remediation (grace)** - Already planned but is awaiting execution or authorization
+-   **Other** - False positive
    
    
    ![Screenshot of exception reason dropdown menu](images/tvm-exception-dropdown.png)
@@ -78,13 +77,13 @@ However, you also have the option to filter your view based on exception justifi
 ![Screenshot of exception tab and filters](images/tvm-exception-filters.png)
 
 ### Actions on exceptions
--   Cancel - You can cancel the exceptions you've filed any time
--   Resurface - The exception that you've filed automatically becomes void and resurfaces in the security recommendation section when dynamic environmental factors change, which adversely affect the exposure impact associated with a recommendation that had previously been excluded
+-  Cancel - You can cancel the exceptions you've filed any time
+-  Resurface - Your exception automatically becomes void and resurfaces in the security recommendation list when dynamic environmental factors change, which adversely affect the exposure impact associated with a recommendation that had previously been excluded
 
 ### Exception status
--   Cancelled - The exception has been cancelled and is no longer in effect  
--   Expired - The exception that you've filed is no longer in effect
--   In effect - The exception that you've filed is in progress
+-   **Cancelled** - The exception has been cancelled and is no longer in effect  
+-   **Expired** - The exception that you've filed is no longer in effect
+-   **In effect** - The exception that you've filed is in progress
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
