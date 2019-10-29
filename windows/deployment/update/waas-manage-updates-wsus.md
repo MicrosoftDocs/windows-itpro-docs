@@ -3,7 +3,6 @@ title: Deploy Windows 10 updates using Windows Server Update Services (Windows 1
 description: WSUS allows companies to defer, selectively approve, choose when delivered, and determine which devices receive updates.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo

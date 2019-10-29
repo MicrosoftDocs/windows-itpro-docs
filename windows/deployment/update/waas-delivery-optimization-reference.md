@@ -6,11 +6,11 @@ description: Reference of all Delivery Optimization settings and descriptions of
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
+
 audience: itpro
-author: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: jaimeo
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

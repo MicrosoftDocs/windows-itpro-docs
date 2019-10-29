@@ -89,7 +89,7 @@ The application which is causing the reset (identified by port numbers) should b
 >The above information is about resets from a TCP standpoint and not UDP. UDP is a connectionless protocol and the packets are sent unreliably. You would not see retransmission or resets when using UDP as a transport protocol. However, UDP makes use of ICMP as a error reporting protocol. When you have the UDP packet sent out on a port and the destination does not have port listed, you will see the destination sending out  **ICMP Destination host unreachable: Port unreachable** message immediately after the UDP packet
  
  
-```typescript
+```
 10.10.10.1  10.10.10.2  UDP UDP:SrcPort=49875,DstPort=3343
  
 10.10.10.2  10.10.10.1  ICMP    ICMP:Destination Unreachable Message, Port Unreachable,10.10.10.2:3343
@@ -98,7 +98,7 @@ The application which is causing the reset (identified by port numbers) should b
  
 During the course of troubleshooting connectivity issue, you might also see in the network trace that a machine receives packets but does not respond to. In such cases, there could be a drop at the server level. You should enable firewall auditing on the machine to understand if the local firewall is dropping the packet.
  
-```typescript
+```
 auditpol /set /subcategory:"Filtering Platform Packet Drop" /success:enable /failure:enable
 ```
  

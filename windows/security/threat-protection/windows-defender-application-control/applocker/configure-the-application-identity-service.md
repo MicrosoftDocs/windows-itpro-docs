@@ -37,7 +37,7 @@ The Application Identity service determines and verifies the identity of an app.
 4.  In the details pane, double-click **Application Identity**.
 5.  In **Application Identity Properties**, configure the service to start automatically.
 
-Membership in the local **Administrators** group, or equivalent, is the minimum required to complete this procedure.
+Membership in the local **Administrators** group, or equivalent, is the minimum access required to complete this procedure.
 
 **To start the Application Identity service manually**
 
@@ -47,7 +47,7 @@ Membership in the local **Administrators** group, or equivalent, is the minimum 
 
 Starting with Windows 10, the Application Identity service is now a protected process. Because of this, you can no longer manually set the service **Startup type** to **Automatic** by using the Sevices snap-in. Try either of these methods instead:
 
-- Open an elevated commnad prompt or PowerShell session and type:
+- Open an elevated command prompt or PowerShell session and type:
 
    ```powershell
    sc.exe config appidsvc start= auto

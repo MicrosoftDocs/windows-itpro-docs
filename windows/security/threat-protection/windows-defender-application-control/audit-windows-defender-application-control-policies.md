@@ -1,16 +1,19 @@
 ---
 title: Audit Windows Defender Application Control (WDAC) policies (Windows 10)
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: isbrahm
+ms.author: dansimp
+manager: dansimp
 ms.date: 05/03/2018
 ---
 
@@ -21,7 +24,7 @@ ms.date: 05/03/2018
 -   Windows 10
 -   Windows Server 2016
 
-Running Appication Control in audit mode allows administrators to discover any applications that were missed during an initial policy scan and to identify any new applications that have been installed and run since the original policy was created. While a WDAC policy is running in audit mode, any binary that runs and would have been denied had the policy been enforced is logged in the **Applications and Services Logs\\Microsoft\\Windows\\CodeIntegrity\\Operational** event log. When these logged binaries have been validated, they can easily be added to a new WDAC policy. When the new exception policy is created, you can merge it with your existing WDAC policies.
+Running **Application Control** in audit mode allows administrators to discover any applications that were missed during an initial policy scan and to identify any new applications that have been installed and run since the original policy was created. While a WDAC policy is running in audit mode, any binary that runs and would have been denied had the policy been enforced is logged in the **Applications and Services Logs\\Microsoft\\Windows\\CodeIntegrity\\Operational** event log. When these logged binaries have been validated, they can easily be added to a new WDAC policy. When the new exception policy is created, you can merge it with your existing WDAC policies.
 
 Before you begin this process, you need to create a WDAC policy binary file. If you have not already done so, see [Create an initial Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md).
 
@@ -96,5 +99,5 @@ Use the following procedure after you have been running a computer with a WDAC p
 
 You can now use this file to update the existing WDAC policy that you ran in audit mode by merging the two policies. For instructions on how to merge this audit policy with the existing WDAC policy, see the next section, [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md).
 
-> [!NOTE]
-> You may have noticed that you did not generate a binary version of this policy as you did in [Create a Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md). This is because WDAC policies created from an audit log are not intended to run as stand-alone policies but rather to update existing WDAC policies.
+> [!Note] 
+> You may have noticed that you did not generate a binary version of this policy as you did in [Create a Windows Defender Application Control policy from a reference computer](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy). This is because WDAC policies created from an audit log are not intended to run as stand-alone policies but rather to update existing WDAC policies.

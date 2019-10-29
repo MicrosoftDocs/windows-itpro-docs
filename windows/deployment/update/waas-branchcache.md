@@ -3,11 +3,9 @@ title: Configure BranchCache for Windows 10 updates (Windows 10)
 description: Use BranchCache to optimize network bandwidth during update deployment.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greglin
-ms.date: 07/27/2017
+ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article

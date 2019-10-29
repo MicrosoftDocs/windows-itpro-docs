@@ -4,9 +4,11 @@ ms.prod: windows-10
 layout: LandingPage  
 ms.topic: landing-page
 ms.manager: elizapo
-audience: itproauthor: greg-lindsay
-ms.audience: itproauthor: greg-lindsay
-ms.date: 01/24/2019
+audience: itpro
+itproauthor: jaimeo
+author: jaimeo
+ms.audience: itpro
+author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.localizationpriority: high

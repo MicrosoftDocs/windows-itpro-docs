@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 12/07/2018
 ms.topic: article
 ---
@@ -37,7 +38,7 @@ VAMT enables IT Professionals to manage and activate the ADBA object. Activation
 
 ## Related topics
 
-- [How to Activate an Active Directory Forest Online](https://go.microsoft.com/fwlink/p/?LinkId=246565)
-- [How to Proxy Activate an Active Directory Forest](https://go.microsoft.com/fwlink/p/?LinkId=246566)
+- [How to Activate an Active Directory Forest Online](https://docs.microsoft.com/windows/deployment/volume-activation/activate-forest-vamt)
+- [How to Proxy Activate an Active Directory Forest](https://docs.microsoft.com/windows/deployment/volume-activation/activate-forest-by-proxy-vamt)
  
  
