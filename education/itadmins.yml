@@ -43,7 +43,7 @@ productDirectory:
         - url: https://docs.microsoft.com/en-us/intune/enrollment/enrollment-autopilot
           text: 5. Enroll devices using Windows Autopilot
     # Card    
-    - title:Phase 3 - Apps management
+    - title: Phase 3 - Apps management
       imageSrc: ./images/EDU-Apps-Mgmt.svg
       links:
         - url: https://docs.microsoft.com/en-us/microsoft-365/education/deploy/configure-admin-settings
