@@ -89,7 +89,7 @@ However, you also have the option to filter your view based on exception justifi
 Creating an exception can potentially affect the Exposure Score (for both types of weaknesses) and Secure Score (for configurations) of your organization in the following manner:
 -   **No impact** - Removes the recommendation from the lists (which can be reverse through filters), but will not affect the scores
 -   **Mitigation-like impact** - As if the recommendation was mitigated (and scores will be adjusted accordingly) when you select it as a compensating control.
--   **Hybrid** - Provides visibility on both No impact and Mitigation-like impact. It shows both the Exposure Score and Secure Score the exception option created
+-   **Hybrid** - Provides visibility on both No impact and Mitigation-like impact. It shows both the Exposure Score and Secure Score results out of the exception option that you made
 
 The exception impact shows on both the Security recommendations page column and in the flyout pane.
 
