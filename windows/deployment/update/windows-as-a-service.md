@@ -29,8 +29,17 @@ Everyone wins when transparency is a top priority. We want you to know when upda
 
 The latest news:
 <ul compact style="list-style: none"> 
+<li><a href="techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/How-to-get-Extended-Security-Updates-for-eligible-Windows/ba-p/917807">How to get Extended Security Updates for eligible Windows devices </a> - October 17, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/End-of-service-reminders-for-Windows-10-versions-1703-and-1803/ba-p/903715">End of service reminders for Windows 10, versions 1703 and 1803  </a> - October 9, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Using-machine-learning-to-improve-the-Windows-10-update/ba-p/877860">Using machine learning to improve the Windows 10 update experience  </a> - September 26, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054
+">Publishing pre-release Windows 10 feature updates to WSUS  </a> - September 24, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-extended-support-dates-for-MDOP-tools/ba-p/837312">New extended support dates for MDOP tools   </a> - September 4, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/FastTrack-for-Windows-10-deployment-and-other-migration/ba-p/800406">FastTrack for Windows 10 deployment and other migration resources   </a> - August 12, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Tactical-considerations-for-creating-Windows-deployment-rings/ba-p/746979">Tactical considerations for creating Windows deployment rings   </a> - July 10, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Upgrading-Windows-10-devices-with-installation-media-different/ba-p/746126">Upgrading Windows 10 devices with installation media different than the original OS install language</a> - July 9, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Moving-to-the-next-Windows-10-feature-update-for-commercial/ba-p/732968">Moving to the next Windows 10 feature update for commercial customers</a> - July 1, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-Enterprise-vs-Windows-10-Pro-Modern-management/ba-p/720445">Windows 10 Enterprise vs. Windows 10 Pro: Modern management considerations for your organization  </a> - June 25, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Updating-Windows-10-version-1903-using-Configuration-Manager-or/ba-p/639100">Updating Windows 10, version 1903 using Configuration Manager or WSUS</a> - May 23, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064">What’s new in Windows Update for Business in Windows 10, version 1903</a> - May 21, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024">What’s new for IT pros in Windows 10, version 1903</a> - May 21, 2019</li>
