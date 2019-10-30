@@ -53,7 +53,7 @@ HoloLens (1st gen) came with two licensing options, the developer license and a 
 |Ability to block unenrollment | |✔️ |✔️ |
 |Cert-based corporate Wi-Fi access | |✔️ |✔️ |
 |Microsoft Store (Consumer) |Consumer |Filter by using MDM |Filter by using MDM |
-[Business Store Portal](https://docs.microsoft.com/microsoft-store/working-with-line-of-business-apps) | |✔️ |✔️ |
+|[Business Store Portal](https://docs.microsoft.com/microsoft-store/working-with-line-of-business-apps) | |✔️ |✔️ |
 |**Security and identity** | | | |
 |Sign in by using Azure Active Directory (AAD) account |✔️ |✔️ |✔️ |
 |Sign in by using Microsoft Account (MSA) |✔️ |✔️ |✔️ |
