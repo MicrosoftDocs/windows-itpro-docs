@@ -22,7 +22,7 @@ manager: dansimp
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-- [Microsoft Edge](https://docs.microsoft.com/en-us/microsoft-edge/deploy/microsoft-edge)
+- [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge)
 
 Potentially unwanted applications are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints which adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender ATP, due to certain kinds of undesirable behavior.
 
@@ -132,7 +132,7 @@ See [Troubleshoot event IDs](troubleshoot-windows-defender-antivirus.md) for det
 
 #### Allow-listing apps
 
-Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files which are currently blocked by PUA protection in Windows Defender Antivirus.
+Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files which are currently blocked by PUA protection in Windows Defender Antivirus.
 
 ## Related topics
 
