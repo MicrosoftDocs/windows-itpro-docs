@@ -90,8 +90,8 @@ Instead of authorizing signers external to your organization, Intune has added n
 
 The basic process is to generate a catalog file for each app using Package Inspector, then sign the catalog files using the DGSS or a custom PKI. After that, IT Pros can use the standard Intune app deployment process outlined above. Refer to [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md) for more in-depth guidance on generating catalogs. 
 
-> [!Note]
-> Every time an app updates, you will need to deploy an updated catalog. Because of this, IT Pros should try to avoid using catalog files for applications that auto-update and instead use offline installers so that updates can be centrally managed through Intune instead of done by individual users.
+> [!Note] 
+> Every time an app updates, you will need to deploy an updated catalog. Because of this, IT Pros should try to avoid using catalog files for applications that auto-update and direct users not to update applications on their own.
 
 # Sample Policy
 Below is a sample policy that allows kernel debuggers, PowerShell ISE, and Registry Editor. It also demonstrates how to specify your organization's code signing and policy signing certificates.
