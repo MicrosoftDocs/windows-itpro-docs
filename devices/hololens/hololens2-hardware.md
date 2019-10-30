@@ -75,6 +75,15 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 | Bluetooth | 5.0 |
 | USB | USB Type-C |
 
+### Power
+
+|   |   |
+| - | - |
+| Battery Life | 2-3 hours of active use. Up to 2 weeks of standby time. |
+| Battery technology | [Lithium batteries](https://www.microsoft.com/download/details.aspx?id=43388) |
+| Charging behavior | Fully functional when charging |
+| Cooling type | Passively cooled (no fans) |
+
 ### Fit
 
 |   |   |

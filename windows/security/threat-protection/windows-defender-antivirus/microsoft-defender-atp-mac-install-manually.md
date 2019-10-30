@@ -70,7 +70,7 @@ To complete this process, you must have admin privileges on the machine.
     ![App install screenshot](images/MDATP_29_AppInstallLogin.png)
 
    > [!IMPORTANT]
-   > You will be prompted to allow a driver from Microsoft to be installed (either "System Exception Blocked" or "Installation is on hold" or both. The driver must be allowed to be installed.
+   > You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold" or both. The driver must be allowed to be installed.
 
    ![App install screenshot](images/MDATP_30_SystemExtension.png)
 

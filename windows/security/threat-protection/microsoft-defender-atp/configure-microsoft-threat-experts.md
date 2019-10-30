@@ -24,7 +24,10 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 ## Before you begin 
-Ensure that you have Microsoft Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up. 
+Ensure that you have Microsoft Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up.
+
+>[!NOTE]
+>Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive targeted attack notifications and to collaborate with experts on demand. A Microsoft Threat Experts subscription is a prerequisite for experts on demand collaboration.
 
 ## Register to Microsoft Threat Experts managed threat hunting service 
 If you're already a Microsoft Defender ATP customer, you can apply through the Microsoft Defender ATP portal. 
@@ -117,7 +120,7 @@ Response from Microsoft Threat Experts varies according to your inquiry. They wi
 - Investigation requires more time   
 - Initial information was enough to conclude the investigation 
 
-It is crucial to respond in a timely manner to keep the investigation moving. See the Premier customer service and support service level agreement for details.  
+It is crucial to respond in a timely manner to keep the investigation moving. 
 
 ## Related topic
 - [Microsoft Threat Experts overview](microsoft-threat-experts.md)

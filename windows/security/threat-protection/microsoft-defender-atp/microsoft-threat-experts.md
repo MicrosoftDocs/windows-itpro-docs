@@ -25,6 +25,9 @@ ms.topic: conceptual
 Microsoft Threat Experts is a managed detection and response (MDR) service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don’t get missed.
   
 This new capability provides expert-driven insights and data through targeted attack notification and access to experts on demand. 
+
+>[!NOTE]
+>Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive targeted attack notifications and to collaborate with experts on demand. A Microsoft Threat Experts subscription is a prerequisite for experts on demand collaboration. See [Configure Microsoft Threat Experts capabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts#before-you-begin) for details. 
  
 ## Targeted attack notification 
 Microsoft Threat Experts provides proactive hunting for the most important threats to your network, including human adversary intrusions, hands-on-keyboard attacks, or advanced attacks like cyberespionage. The managed hunting service includes:  
