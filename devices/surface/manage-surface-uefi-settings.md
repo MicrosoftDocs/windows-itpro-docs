@@ -17,22 +17,25 @@ manager: dansimp
 
 # Manage Surface UEFI settings
 
-Current and future generations of Surface devices, including Surface Pro 7, Surface Book 2, and Surface Studio 2,use a unique UEFI firmware engineered by Microsoft specifically for these devices. This firmware allows for significantly greater control of the device’s operation over firmware versions in earlier generation Surface devices, including the support for touch, mouse, and keyboard operation. By using the Surface UEFI settings you can easily enable or disable internal devices or components, configure security to protect UEFI settings from being changed, and adjust the Surface device boot settings. 
-
->[!NOTE]
->Surface Pro 3, Surface 3, Surface Pro 2, Surface 2, Surface Pro, and Surface do not use the Surface UEFI and instead use firmware provided by third-party manufacturers, such as AMI.
-
-You can enter the Surface UEFI settings on your Surface device by pressing the **Volume Up** button and the **Power** button simultaneously. Hold the **Volume Up** button until the Surface logo is displayed, which indicates that the device has begun to boot. 
+All current and future generations of Surface devices use a unique Unified Extensible Firmware Interface (UEFI) engineered by Microsoft specifically for these devices. Surface UEFI settings provide the ability to enable or disable built-in devices and components, protect UEFI settings from being changed, and adjust the Surface device boot settings. 
 
 ## Support for cloud-based management
+
 With Device Firmware Configuration Interface (DFCI) profiles built into Microsoft Intune (now available in public preview), Surface UEFI management extends the modern management stack down to the UEFI hardware level. DFCI supports zero-touch provisioning, eliminates BIOS passwords, provides control of security settings including boot options and built-in peripherals, and lays the groundwork for advanced security scenarios in the future. DFCI is currently available for Surface Pro 7, Surface Pro X, and Surface Laptop 3. For more information, refer to [Intune management of Surface UEFI settings](surface-manage-dfci-guide.md).
 
+## Open Surface UEFI menu
+
+To adjust UEFI settings during system startup:
+
+1. Shut down your Surface and wait about 10 seconds to make sure it's off.
+2. Press and hold the **Volume-up** button  and - at the same time - press and release the **Power button.**
+3. As the Microsoft or Surface logo appears on your screen, continue to hold the **Volume-up** button until the UEFI screen appears.
 
 ## PC information 
 
 On the **PC information** page, detailed information about your Surface device is provided: 
 
-- **Model** – Your Surface device’s model will be displayed here, such as Surface Book or Surface Pro 4. The exact configuration of your device is not shown, (such as processor, disk size, or memory size). 
+- **Model** – Your Surface device’s model will be displayed here, such as Surface Book 2 or Surface Pro 7. The exact configuration of your device is not shown, (such as processor, disk size, or memory size). 
 - **UUID** – This Universally Unique Identification number is specific to your device and is used to identify the device during deployment or management. 
 
 - **Serial Number** – This number is used to identify this specific Surface device for asset tagging and support scenarios.
