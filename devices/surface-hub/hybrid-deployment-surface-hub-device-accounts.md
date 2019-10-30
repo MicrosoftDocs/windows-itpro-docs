@@ -27,45 +27,45 @@ Use this procedure if you use Exchange on-premises.
 
 1. For this procedure, you'll be using AD admin tools to add an email address for your on-premises domain account. This account will be synced to Office 365.
 
-    - In **Active Directory Users and Computers** AD tool, right-click on the folder or Organizational Unit that your Surface Hub accounts will be created in, click **New**, and **User**.
-    - Type the display name from the previous cmdlet into the **Full name** box, and the alias into the **User logon name** box. Click **Next**.<p>
+- In **Active Directory Users and Computers** AD tool, right-click on the folder or Organizational Unit that your Surface Hub accounts will be created in, click **New**, and **User**.
+- Type the display name from the previous cmdlet into the **Full name** box, and the alias into the **User logon name** box. Click **Next**.<p>
 
-    ![New object box for creating a new user in active directory.](images/hybriddeployment-01a.png)
+![New object box for creating a new user in active directory.](images/hybriddeployment-01a.png)
 
-    - Type the password for this account. You'll need to retype it for verification. Make sure the **Password never expires** checkbox is the only option selected.
+- Type the password for this account. You'll need to retype it for verification. Make sure the **Password never expires** checkbox is the only option selected.
 
-    > **Important** Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
+> **Important** Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
 
-    ![Image showing password dialog box.](images/hybriddeployment-02a.png)
+![Image showing password dialog box.](images/hybriddeployment-02a.png)
 
-    -   Click **Finish** to create the account.
+-   Click **Finish** to create the account.
 
-    ![Image with account name, logon name, and password options for new user.](images/hybriddeployment-03a.png)
+![Image with account name, logon name, and password options for new user.](images/hybriddeployment-03a.png)
 
 2. Enable the remote mailbox.
 
-    Open your on-premises Exchange Management Shell with administrator permissions, and run this cmdlet.
+Open your on-premises Exchange Management Shell with administrator permissions, and run this cmdlet.
 
 ```PowerShell
 Enable-RemoteMailbox 'HUB01@contoso.com' -RemoteRoutingAddress 'HUB01@contoso.com' -Room
 ```
 
-    > [!NOTE]
-    > If you don't have an on-premises Exchange environment to run this cmdlet, you can make the same changes directly to the Active Directory object for the account.
-    >
-    > msExchRemoteRecipientType = 33
-    >
-    > msExchRecipientDisplayType = -2147481850
-    >
-    > msExchRecipientTypeDetails = 8589934592
+> [!NOTE]
+> If you don't have an on-premises Exchange environment to run this cmdlet, you can make the same changes directly to the Active Directory object for the account.
+>
+> msExchRemoteRecipientType = 33
+>
+> msExchRecipientDisplayType = -2147481850
+>
+> msExchRecipientTypeDetails = 8589934592
 
 3. After you've created the account, run a directory synchronization. When it's complete, go to the users page in your Microsoft 365 admin center and verify that the account created in the previous steps has merged to online.
 
 4. Connect to Microsoft Exchange Online and set some properties for the account in Office 365.
 
-    Start a remote PowerShell session on a PC and connect to Microsoft Exchange. Be sure you have the right permissions set to run the associated cmdlets.
+Start a remote PowerShell session on a PC and connect to Microsoft Exchange. Be sure you have the right permissions set to run the associated cmdlets.
 
-    The next steps will be run on your Office 365 tenant.
+The next steps will be run on your Office 365 tenant.
 
 ```PowerShell
 Set-ExecutionPolicy RemoteSigned
@@ -76,17 +76,17 @@ Import-PSSession $sess
 
 5. Create a new Exchange ActiveSync policy, or use a compatible existing policy.
 
-    After setting up the mailbox, you will need to either create a new Exchange ActiveSync policy or use a compatible existing policy.
+After setting up the mailbox, you will need to either create a new Exchange ActiveSync policy or use a compatible existing policy.
 
-    Surface Hubs are only compatible with device accounts that have an ActiveSync policy where the **PasswordEnabled** property is set to False. If this isn’t set properly, then Exchange services on the Surface Hub (mail, calendar, and joining meetings), will not be enabled.
+Surface Hubs are only compatible with device accounts that have an ActiveSync policy where the **PasswordEnabled** property is set to False. If this isn’t set properly, then Exchange services on the Surface Hub (mail, calendar, and joining meetings), will not be enabled.
 
-    If you haven’t created a compatible policy yet, use the following cmdlet—-this one creates a policy called "Surface Hubs". Once it’s created, you can apply the same policy to other device accounts.
+If you haven’t created a compatible policy yet, use the following cmdlet—-this one creates a policy called "Surface Hubs". Once it’s created, you can apply the same policy to other device accounts.
 
 ```PowerShell
 $easPolicy = New-MobileDeviceMailboxPolicy -Name “SurfaceHubs” -PasswordEnabled $false
 ```
 
-    Once you have a compatible policy, then you will need to apply the policy to the device account. 
+Once you have a compatible policy, then you will need to apply the policy to the device account. 
 
 ```PowerShell
 Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy.id
@@ -94,7 +94,7 @@ Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy.id
 
 6. Set Exchange properties.
 
-    Setting Exchange properties on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
+Setting Exchange properties on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
 
 ```PowerShell
 Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
@@ -103,12 +103,13 @@ Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AddAdditionalResponse $tru
 
 7. Connect to Azure AD.
 
-    You first need to install Azure AD module for PowerShell version 2. In an elevated powershell prompt run the following command :
+You first need to install Azure AD module for PowerShell version 2. In an elevated powershell prompt run the following command :
+
 ```PowerShell
 Install-Module -Name AzureAD
 ```
 
-    You need to connect to Azure AD to apply some account settings. You can run this cmdlet to connect.
+You need to connect to Azure AD to apply some account settings. You can run this cmdlet to connect.
 
 ```PowerShell
 Import-Module AzureAD
@@ -117,11 +118,11 @@ Connect-AzureAD -Credential $cred
 
 8. Assign an Office 365 license.
 
-    The device account needs to have a valid Office 365 (O365) license, or Exchange and Skype for Business will not work. If you have the license, you need to assign a usage location to your device account—this determines what license SKUs are available for your account.
+The device account needs to have a valid Office 365 (O365) license, or Exchange and Skype for Business will not work. If you have the license, you need to assign a usage location to your device account—this determines what license SKUs are available for your account.
 
-    You can use `Get-AzureADSubscribedSku` to retrieve a list of available SKUs for your O365 tenant.
+You can use `Get-AzureADSubscribedSku` to retrieve a list of available SKUs for your O365 tenant.
 
-    Once you list out the SKUs, you'll need to assign the SkuId you want to the `$License.SkuId` variable.
+Once you list out the SKUs, you'll need to assign the SkuId you want to the `$License.SkuId` variable.
 
 ```PowerShell
 Set-AzureADUser -ObjectId "HUB01@contoso.com" -UsageLocation "US"
@@ -174,7 +175,7 @@ Import-PSSession $cssess -AllowClobber
 Enable-CsMeetingRoom -Identity 'HUB01@contoso.com' -RegistrarPool 'sippoolbl20a04.infra.lync.com' -SipAddressType UserPrincipalName
 ```
 
-    If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
+If you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet:
 
 ```PowerShell
 Get-CsOnlineUser -Identity ‘HUB01@contoso.com’| fl *registrarpool*
@@ -182,22 +183,22 @@ Get-CsOnlineUser -Identity ‘HUB01@contoso.com’| fl *registrarpool*
 
 3. Assign Skype for Business license to your Surface Hub account.
 
-    Once you've completed the preceding steps to enable your Surface Hub account in Skype for Business Online, you need to assign a license to the Surface Hub. Using the O365 administrative portal, assign either a Skype for Business Online (Plan 2) or a Skype for Business Online (Plan 3) to the device.
+ Once you've completed the preceding steps to enable your Surface Hub account in Skype for Business Online, you need to assign a license to the Surface Hub. Using the O365 administrative portal, assign either a Skype for Business Online (Plan 2) or a Skype for Business Online (Plan 3) to the device.
 
-   - Login as a tenant administrator, open the O365 Administrative Portal, and click on the Admin app.
+- Login as a tenant administrator, open the O365 Administrative Portal, and click on the Admin app.
 
-   - Click on **Users and Groups** and then **Add users, reset passwords, and more**.
+- Click on **Users and Groups** and then **Add users, reset passwords, and more**.
 
-   - Click the Surface Hub account, and then click the pen icon to edit the account information.
+- Click the Surface Hub account, and then click the pen icon to edit the account information.
 
-   - Click **Licenses**.
+- Click **Licenses**.
 
-   - In **Assign licenses**, select Skype for Business (Plan 1) or Skype for Business (Plan 2), depending on your licensing and Enterprise Voice requirements. You'll have to use a Plan 2 license if you want to use Enterprise Voice on your Surface Hub.
+- In **Assign licenses**, select Skype for Business (Plan 1) or Skype for Business (Plan 2), depending on your licensing and Enterprise Voice requirements. You'll have to use a Plan 2 license if you want to use Enterprise Voice on your Surface Hub.
 
-   - Click **Save**.
+- Click **Save**.
 
-    > [!NOTE]
-    > You can also use the Windows Azure Active Directory Module for Windows Powershell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
+> [!NOTE]
+> You can also use the Windows Azure Active Directory Module for Windows Powershell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
 For validation, you should be able to use any Skype for Business client (PC, Android, etc.) to sign in to this account.
 
@@ -227,7 +228,7 @@ Use this procedure if you use Exchange online.
 
 1. Create an email account in Office 365.
 
-    Start a remote PowerShell session on a PC and connect to Exchange. Be sure you have the right permissions set to run the associated cmdlets.
+Start a remote PowerShell session on a PC and connect to Exchange. Be sure you have the right permissions set to run the associated cmdlets.
 
 ```PowerShell
 Set-ExecutionPolicy RemoteSigned
@@ -238,15 +239,15 @@ Import-PSSession $sess
 
 2. Set up a mailbox.
 
-    After establishing a session, you’ll either create a new mailbox and enable it as a RoomMailboxAccount, or change the settings for an existing room mailbox. This will allow the account to authenticate into the Surface Hub.
+After establishing a session, you’ll either create a new mailbox and enable it as a RoomMailboxAccount, or change the settings for an existing room mailbox. This will allow the account to authenticate into the Surface Hub.
 
-    If you're changing an existing resource mailbox:
+If you're changing an existing resource mailbox:
 
 ```PowerShell
 Set-Mailbox -Identity 'HUB01' -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
 ```
 
-    If you’re creating a new resource mailbox:
+If you’re creating a new resource mailbox:
 
 ```PowerShell
 New-Mailbox -MicrosoftOnlineServicesID 'HUB01@contoso.com' -Alias HUB01 -Name "Hub-01" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
@@ -254,17 +255,17 @@ New-Mailbox -MicrosoftOnlineServicesID 'HUB01@contoso.com' -Alias HUB01 -Name "H
 
 3. Create Exchange ActiveSync policy.
 
-    After setting up the mailbox, you will need to either create a new Exchange ActiveSync policy, or use a compatible existing policy.
+After setting up the mailbox, you will need to either create a new Exchange ActiveSync policy, or use a compatible existing policy.
 
-    Surface Hubs are only compatible with device accounts that have an ActiveSync policy where the **PasswordEnabled** property is set to False. If this isn’t set properly, then Exchange services on the Surface Hub (mail, calendar, and joining meetings), will not be enabled.
+Surface Hubs are only compatible with device accounts that have an ActiveSync policy where the **PasswordEnabled** property is set to False. If this isn’t set properly, then Exchange services on the Surface Hub (mail, calendar, and joining meetings), will not be enabled.
 
-    If you haven’t created a compatible policy yet, use the following cmdlet—this one creates a policy called "Surface Hubs". Once it’s created, you can apply the same policy to other device accounts.
+If you haven’t created a compatible policy yet, use the following cmdlet—this one creates a policy called "Surface Hubs". Once it’s created, you can apply the same policy to other device accounts.
 
 ```PowerShell
 $easPolicy = New-MobileDeviceMailboxPolicy -Name “SurfaceHubs” -PasswordEnabled $false
 ```
 
-    Once you have a compatible policy, then you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not resource mailboxes. You need to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox—you may need to re-enable it and set the password again too.
+Once you have a compatible policy, then you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not resource mailboxes. You need to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox—you may need to re-enable it and set the password again too.
 
 ```PowerShell
 Set-Mailbox 'HUB01@contoso.com' -Type Regular
@@ -276,7 +277,7 @@ Set-Mailbox 'HUB01@contoso.com' -RoomMailboxPassword $credNewAccount.Password -E
 
 4. Set Exchange properties.
 
-    Various Exchange properties must be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
+Various Exchange properties must be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
 
 ```PowerShell
 Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
@@ -285,37 +286,37 @@ Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AddAdditionalResponse $tru
 
 5. Add email address for your on-premises domain account.
 
-    For this procedure, you'll be using AD admin tools to add an email address for your on-premises domain account.
+For this procedure, you'll be using AD admin tools to add an email address for your on-premises domain account.
 
-    - In **Active Directory Users and Computers** AD tool, right-click on the folder or Organizational Unit that your Surface Hub accounts will be created in, click **New**, and **User**.
-    - Type the display name from the previous cmdlet into the **Full name** box, and the alias into the **User logon name** box. Click **Next**.
+- In **Active Directory Users and Computers** AD tool, right-click on the folder or Organizational Unit that your Surface Hub accounts will be created in, click **New**, and **User**.
+- Type the display name from the previous cmdlet into the **Full name** box, and the alias into the **User logon name** box. Click **Next**.
 
-    ![New object box for creating a new user in Active Directory.](images/hybriddeployment-01a.png)
+![New object box for creating a new user in Active Directory.](images/hybriddeployment-01a.png)
 
-    - Type the password for this account. You'll need to retype it for verification. Make sure the **Password never expires** checkbox is the only option selected.
+- Type the password for this account. You'll need to retype it for verification. Make sure the **Password never expires** checkbox is the only option selected.
 
-    > [!IMPORTANT]
-    > Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
+> [!IMPORTANT]
+> Selecting **Password never expires** is a requirement for Skype for Business on the Surface Hub. Your domain rules may prohibit passwords that don't expire. If so, you'll need to create an exception for each Surface Hub device account.
 
-    ![Image showing password dialog box.](images/hybriddeployment-02a.png)
+![Image showing password dialog box.](images/hybriddeployment-02a.png)
 
-    - Click **Finish** to create the account.
+- Click **Finish** to create the account.
 
-    ![Image with account name, logon name, and password options for new user.](images/hybriddeployment-03a.png)
+![Image with account name, logon name, and password options for new user.](images/hybriddeployment-03a.png)
 
 6. Run directory synchronization.
 
-    After you've created the account, run a directory synchronization. When it's complete, go to the users page and verify that the two accounts created in the previous steps have merged.
+After you've created the account, run a directory synchronization. When it's complete, go to the users page and verify that the two accounts created in the previous steps have merged.
 
 7. Connect to Azure AD.
 
-    You first need to install Azure AD module for PowerShell version 2. In an elevated powershell prompt run the following command :
+You first need to install Azure AD module for PowerShell version 2. In an elevated powershell prompt run the following command :
 
 ```PowerShell
 Install-Module -Name AzureAD
 ```
 
-    You need to connect to Azure AD to apply some account settings. You can run this cmdlet to connect:
+You need to connect to Azure AD to apply some account settings. You can run this cmdlet to connect:
 
 ```PowerShell
 Import-Module AzureAD
@@ -324,11 +325,11 @@ Connect-AzureAD -Credential $cred
 
 8. Assign an Office 365 license.
 
-    The device account needs to have a valid Office 365 (O365) license, or Exchange and Skype for Business will not work. If you have the license, you need to assign a usage location to your device account—this determines what license SKUs are available for your account.
+The device account needs to have a valid Office 365 (O365) license, or Exchange and Skype for Business will not work. If you have the license, you need to assign a usage location to your device account—this determines what license SKUs are available for your account.
 
-    Next, you can use `Get-AzureADSubscribedSku` to retrieve a list of available SKUs for your O365 tenant.
+Next, you can use `Get-AzureADSubscribedSku` to retrieve a list of available SKUs for your O365 tenant.
 
-    Once you list out the SKUs, you'll need to assign the SkuId you want to the `$License.SkuId` variable.
+Once you list out the SKUs, you'll need to assign the SkuId you want to the `$License.SkuId` variable.
 
 ```PowerShell
 Set-AzureADUser -ObjectId "HUB01@contoso.com" -UsageLocation "US"
@@ -373,22 +374,22 @@ Get-CsOnlineUser -Identity 'HUB01@contoso.com'| fl *registrarpool*
 
 10. Assign Skype for Business license to your Surface Hub account
 
-    Once you've completed the preceding steps to enable your Surface Hub account in Skype for Business Online, you need to assign a license to the Surface Hub. Using the O365 administrative portal, assign either a Skype for Business Online (Plan 2) or a Skype for Business Online (Plan 3) to the device.
+Once you've completed the preceding steps to enable your Surface Hub account in Skype for Business Online, you need to assign a license to the Surface Hub. Using the O365 administrative portal, assign either a Skype for Business Online (Plan 2) or a Skype for Business Online (Plan 3) to the device.
 
-    - Sign in as a tenant administrator, open the O365 Administrative Portal, and click on the Admin app.
+- Sign in as a tenant administrator, open the O365 Administrative Portal, and click on the Admin app.
 
-    - Click on **Users and Groups** and then **Add users, reset passwords, and more**.
+- Click on **Users and Groups** and then **Add users, reset passwords, and more**.
 
-    - Click the Surface Hub account, and then click the pen icon to edit the account information.
+- Click the Surface Hub account, and then click the pen icon to edit the account information.
 
-    - Click **Licenses**.
+- Click **Licenses**.
 
-    - In **Assign licenses**, select Skype for Business (Plan 2) or Skype for Business (Plan 3), depending on your licensing and Enterprise Voice requirements. You'll have to use a Plan 3 license if you want to use Enterprise Voice on your Surface Hub.
+- In **Assign licenses**, select Skype for Business (Plan 2) or Skype for Business (Plan 3), depending on your licensing and Enterprise Voice requirements. You'll have to use a Plan 3 license if you want to use Enterprise Voice on your Surface Hub.
 
-    - Click **Save**.
+- Click **Save**.
 
-    > [!NOTE]
-    > You can also use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
+> [!NOTE]
+> You can also use the Windows Azure Active Directory Module for Windows PowerShell to run the cmdlets needed to assign one of these licenses, but that's not covered here.
 
 For validation, you should be able to use any Skype for Business client (PC, Android, etc) to sign in to this account.
 
