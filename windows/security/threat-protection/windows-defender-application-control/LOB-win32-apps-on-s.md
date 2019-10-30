@@ -36,7 +36,8 @@ The general steps for expanding the S mode base policy on your devices are to ge
 
     Refer to [Deploy multiple Windows Defender Application Control Policies](deploy-multiple-windows-defender-application-control-policies.md) for guidance on creating supplemental policies and [Deploy Windows Defender Application Control policy rules and file rules](select-types-of-rules-to-create.md) to choose the right type of rules to create for your policy.
 
-    > [!Note] Policies which are supplementing the S mode base policy must use **-SupplementsBasePolicyID 5951A96A-E0B5-4D3D-8FB8-3E5B61030784**, as this is the S mode policy ID.
+    > [!Note] 
+    > Policies which are supplementing the S mode base policy must use **-SupplementsBasePolicyID 5951A96A-E0B5-4D3D-8FB8-3E5B61030784**, as this is the S mode policy ID.
 2. Sign policy
     
     Supplemental S mode policies must be digitally signed. To sign your policy, you can choose to use the Device Guard Signing Service or your organization's custom Public Key Infrastructure (PKI). Refer to [Use the Device Guard Signing Portal in the Microsoft Store for Business](use-device-guard-signing-portal-in-microsoft-store-for-business.md) for guidance on using DGSS and [Create a code signing cert for WDAC](create-code-signing-cert-for-windows-defender-application-control.md) for guidance on signing using an internal CA.
@@ -49,7 +50,8 @@ The general steps for expanding the S mode base policy on your devices are to ge
     Upload the signed policy to Intune and assign it to user or device groups. Intune will generate tenant- and device- specific authorization tokens. Intune then deploys the corresponding authorization token and supplemental policy to each device in the assigned group. Together, these expand the S mode base policy on the device. 
     <!-- Intune link?-->
 
-> [!Note] When updating your supplemental policy, ensure that the new version number is strictly greater than the previous one. Using the same version number is not allowed by Intune. Refer to [Set-CIPolicyVersion](https://docs.microsoft.com/powershell/module/configci/set-cipolicyversion?view=win10-ps) for information on setting the version number.
+> [!Note] 
+> When updating your supplemental policy, ensure that the new version number is strictly greater than the previous one. Using the same version number is not allowed by Intune. Refer to [Set-CIPolicyVersion](https://docs.microsoft.com/powershell/module/configci/set-cipolicyversion?view=win10-ps) for information on setting the version number.
 
 # Standard Process for Deploying Apps through Intune
 ![Deploying Apps through Intune](images/wdac-intune-app-deployment.png)
@@ -63,7 +65,8 @@ Instead of authorizing signers external to your organization, Intune has added n
 
 The basic process is to generate a catalog file for each app using Package Inspector, then sign the catalog files using the DGSS or a custom PKI. After that, IT Pros can use the standard Intune app deployment process outlined above. Refer to [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md) for more in-depth guidance on generating catalogs. 
 
-> [!Note] Every time an app updates, you will need to deploy an updated catalog. Because of this, IT Pros should try to avoid using catalog files for applications that auto-update and direct users not to update applications on their own.
+> [!Note] 
+> Every time an app updates, you will need to deploy an updated catalog. Because of this, IT Pros should try to avoid using catalog files for applications that auto-update and direct users not to update applications on their own.
 
 # Sample Policy
 Below is a sample policy that allows kernel debuggers, PowerShell ISE, and Registry Editor. It also demonstrates how to specify your organization's code signing and policy signing certificates.
@@ -149,7 +152,8 @@ Below is a sample policy that allows kernel debuggers, PowerShell ISE, and Regis
 </SiPolicy>
 ```
 # Policy Removal
-> [!Note] There is currently a policy deletion error, with a fix expected in the 2D update in late February 2020. Devices of users who are unenrolled will still have their WDAC policies removed. In the mentime, IT Pros are recommended to update their policy with the below 'empty' policy which makes no changes to S mode.
+> [!Note] 
+> There is currently a policy deletion error, with a fix expected in the 2D update in late February 2020. Devices of users who are unenrolled will still have their WDAC policies removed. In the mentime, IT Pros are recommended to update their policy with the below 'empty' policy which makes no changes to S mode.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
