@@ -183,7 +183,7 @@ If you're having trouble using the clicker, make sure its charged and paired wit
 
 If the clicker is charged and paired and you're still having problems, reset it by holding down the main button and the pairing button for 15 seconds. Then pair the clicker with your HoloLens again.
 
-If that doesn't help, see [Restart or recover the HoloLens clicker](https://support.microsoft.com/en-us/help/15555/hololens-restart-or-recover-the-hololens-clicker).
+If that doesn't help, see [Restart or recover the HoloLens clicker](https://support.microsoft.com/help/15555/hololens-restart-or-recover-the-hololens-clicker).
 
 [Back to list](#list)
 

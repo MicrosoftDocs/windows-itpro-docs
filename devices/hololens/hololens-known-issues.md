@@ -1,11 +1,12 @@
 ---
 title: HoloLens known issues
 description: This is the list of known issues that may affect HoloLens developers.
+keywords: troubleshoot, known issue, help
 author: mattzmsft
 ms.author: mazeller
 ms.date: 8/30/2019
 ms.topic: article
-keywords: troubleshoot, known issue, help
+HoloLens and holograms: Frequently asked questions
 manager: jarrettr
 ms.prod: hololens
 appliesto:
@@ -24,7 +25,7 @@ This is the current list of known issues for HoloLens that affect developers. Ch
 Visual Studio has released VS 2019 Version 16.2 which includes a fix to this issue. We recommend updating to this newest version to avoid experiencing this error.
 
 Issue root-cause: Users who used Visual Studio 2015 or early releases of Visual Studio 2017 to deploy and debug applications on their HoloLens and then subsequently used the latest versions of Visual Studio 2017 or Visual Studio 2019 with the same HoloLens will be affected. The newer releases of Visual Studio deploy a new version of a component, but files from the older version are left over on the device, causing the newer version to fail.  This causes the following error message: DEP0100: Please ensure that target device has developer mode enabled. Could not obtain a developer license on \<ip\> due to error 80004005.
- 
+
 ### Workaround
 
 Our team is currently working on a fix. In the meantime, you can use the following steps to work around the issue and help unblock deployment and debugging:  
@@ -34,7 +35,8 @@ Our team is currently working on a fix. In the meantime, you can use the followi
 1. Select **Visual C#** > **Windows Desktop** > **Console App (.NET Framework)**.
 1. Give the project a name (such as "HoloLensDeploymentFix") and make sure the Framework is set to at least .NET Framework 4.5, then Select **OK**.
 1. Right-click on the **References** node in Solution Explorer and add the following references (select to the **Browse** section and select **Browse**):
-    ```
+
+    ``` CMD
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Connectivity.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\SirepInterop.dll
@@ -42,19 +44,21 @@ Our team is currently working on a fix. In the meantime, you can use the followi
 
     >[!NOTE]
     >If you don't have 10.0.18362.0 installed, use the most recent version that you have. 
- 
+
 1. Right-click on the project in Solution Explorer and select **Add** > **Existing Item**.
 1. Browse to C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86 and change the filter to **All Files (\*.\*)**.
 1. Select both SirepClient.dll and SshClient.dll, and Select **Add**.
 1. Locate and select both files in Solution Explorer (they should be at the bottom of the list of files) and change **Copy to Output Directory** in the **Properties** window to **Copy always**.
-1. At the top of the file, add the following to the existing list of `using` statements:  
-    ```
+1. At the top of the file, add the following to the existing list of `using` statements:
+
+    ``` CMD
     using Microsoft.Tools.Deploy;
     using System.Net;
     ```
 
 1. Inside of `static void Main(...)`, add the following code:
-    ```
+
+    ``` PowerShell
     RemoteDeployClient client = RemoteDeployClient.CreateRemoteDeployClient();
     client.Connect(new ConnectionOptions()
     {
@@ -95,7 +99,7 @@ To see if your device can take the update, please:
 1. If update to 17763.380 is available, please update to this build to receive the fix for the App Hang bug
 1. Upon updating to this version of the OS, the Apps should work as expected.
 
-Additionally, as we do with every HoloLens OS release, we have posted the FFU image to the Microsoft Download Center at <https://aka.ms/hololensdownload/10.0.17763.380>. 
+Additionally, as we do with every HoloLens OS release, we have posted the FFU image to the [Microsoft Download Center](https://aka.ms/hololensdownload/10.0.17763.380).
 
 If you would not like to take the update, we have released a new version of the Microsoft Store UWP app as of 3/29. After you have the updated version of the Store:
 
@@ -107,7 +111,7 @@ If you would not like to take the update, we have released a new version of the 
 
 If your device is still unable to load apps, you can sideload a version of the .NET Native Framework and Runtime through the download center by following these steps:
 
-1. Please download [this zip file](http://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) from the Microsoft Download Center. Unzipping will produce two files.  Microsoft.NET.Native.Runtime.1.7.appx and Microsoft.NET.Native.Framework.1.7.appx
+1. Please download [this zip file](https://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) from the Microsoft Download Center. Unzipping will produce two files.  Microsoft.NET.Native.Runtime.1.7.appx and Microsoft.NET.Native.Framework.1.7.appx
 1. Please verify that your device is dev unlocked.  If you haven’t done that before the instructions to do that are [here](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).
 1. You then want to get into the Windows Device Portal. Our recommendation is to do this over USB and you would do that by typing http://127.0.0.1:10080 into your browser.
 1. After you have the Windows Device Portal up we need you to “side load” the two files that you downloaded. To do that you need to go down the left side bar until you get to the **Apps** section and select **Apps**.
@@ -125,7 +129,7 @@ During HoloLens Setup, there is a credential timeout of 2 minutes. The username/
 
 We recommend using a Bluetooth keyboard for entering long passwords.
 
->[!NOTE]
+> [!NOTE]
 > If the wrong network is selected during HoloLens Setup, the device will need to be fully reset. Instructions can be found [here.](hololens-restart-recover.md)  
 
 ## Device Update
@@ -156,7 +160,7 @@ We recommend using a Bluetooth keyboard for entering long passwords.
 
 ## API
 
-- If the application sets the [focus point](https://docs.microsoft.com/en-us/windows/mixed-reality/focus-point-in-unity) behind the user or the normal to camera.forward, holograms will not appear in Mixed Reality Capture photos or videos. Until this bug is fixed in Windows, if applications actively set the [focus point](https://docs.microsoft.com/en-us/windows/mixed-reality/focus-point-in-unity) they should ensure the plane normal is set opposite camera-forward (for example, normal = -camera.forward).
+- If the application sets the [focus point](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity) behind the user or the normal to camera.forward, holograms will not appear in Mixed Reality Capture photos or videos. Until this bug is fixed in Windows, if applications actively set the [focus point](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity) they should ensure the plane normal is set opposite camera-forward (for example, normal = -camera.forward).
 
 ## Xbox Wireless Controller
 
