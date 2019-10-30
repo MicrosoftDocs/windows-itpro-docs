@@ -6,7 +6,7 @@ ms.sitesec: library
 author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.date: 9/3/19
 ms.reviewer: 
 manager: jarrettr

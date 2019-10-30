@@ -11,7 +11,7 @@ ms.sitesec: library
 author: mattzmsft
 ms.author: mazeller
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
