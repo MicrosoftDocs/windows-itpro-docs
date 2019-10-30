@@ -65,4 +65,139 @@ The basic process is to generate a catalog file for each app using Package Inspe
 
 > [!Note] Every time an app updates, you will need to deploy an updated catalog. Because of this, IT Pros should try to avoid using catalog files for applications that auto-update and direct users not to update applications on their own.
 
+# Sample Policy
+Below is a sample policy that allows kernel debuggers, PowerShell ISE, and Registry Editor. It also demonstrates how to specify your organization's code signing and policy signing certificates.
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy" PolicyType="Supplemental Policy">
+  <VersionEx>10.0.0.0</VersionEx>
+  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
+  <!--Standard S mode GUID-->
+  <BasePolicyID>{5951A96A-E0B5-4D3D-8FB8-3E5B61030784}</BasePolicyID>
+  <!--Unique policy GUID-->
+  <PolicyID>{52671094-ACC6-43CF-AAF1-096DC69C1345}</PolicyID>
+  <!--EKUS-->
+  <EKUs />
+  <!--File Rules-->
+  <FileRules>
+    <!--Allow kernel debuggers-->
+    <Allow ID="ID_ALLOW_CBD_0" FriendlyName="cdb.exe" FileName="CDB.Exe" />
+    <Allow ID="ID_ALLOW_KD_0" FriendlyName="kd.exe" FileName="kd.Exe" />
+    <Allow ID="ID_ALLOW_WINDBG_0" FriendlyName="windbg.exe" FileName="windbg.Exe" />
+    <Allow ID="ID_ALLOW_MSBUILD_0" FriendlyName="MSBuild.exe" FileName="MSBuild.Exe" />
+    <Allow ID="ID_ALLOW_NTSD_0" FriendlyName="ntsd.exe" FileName="ntsd.Exe" />
+    <!--Allow PowerShell ISE and Registry Editor-->
+    <Allow ID="ID_ALLOW_POWERSHELLISE_0" FriendlyName="powershell_ise.exe" FileName="powershell_ise.exe" />
+    <Allow ID="ID_ALLOW_REGEDIT_0" FriendlyName="regedit.exe" FileName="regedit.exe" />
+  </FileRules>
+  <!--Signers-->
+  <Signers>
+    <!--info of the certificate you will use to do any code/catalog signing-->
+    <Signer ID="EXAMPLE_ID_SIGNER_CODE" Name="Example Code Signing Certificate Friendly Name">
+      <CertRoot Type="TBS" Value="<value>" />
+    </Signer>
+    
+    <!--info of the certificate you will use to sign your policy-->
+    <Signer ID="EXAMPLE_ID_SIGNER_POLICY" Name="Example Policy Signing Certificate Friendly Name">
+      <CertRoot Type="TBS" Value="<value>" />
+    </Signer>
+  </Signers>
+  <!--Driver Signing Scenarios-->
+  <SigningScenarios>
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_KMCI" FriendlyName="Example Name">
+      <ProductSigners />
+    </SigningScenario>
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_UMCI" FriendlyName="Example Name">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="EXAMPLE_ID_SIGNER_CODE" />          
+        </AllowedSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_ALLOW_CBD_0" />
+          <FileRuleRef RuleID="ID_ALLOW_KD_0" />
+          <FileRuleRef RuleID="ID_ALLOW_WINDBG_0" />
+          <FileRuleRef RuleID="ID_ALLOW_MSBUILD_0" />
+          <FileRuleRef RuleID="ID_ALLOW_NTSD_0" />
+          <FileRuleRef RuleID="ID_ALLOW_POWERSHELLISE_0" />
+          <FileRuleRef RuleID="ID_ALLOW_REGEDIT_0" />
+        </FileRulesRef>
+      </ProductSigners>
+    </SigningScenario>
+  </SigningScenarios>
+  <!--Specify one or more certificates that can be used to sign updated policy-->
+  <UpdatePolicySigners>
+    <UpdatePolicySigner SignerId="EXAMPLE_ID_SIGNER_POLICY" />
+  </UpdatePolicySigners>
+  <!--Specify one or more codesigning certificates to trust-->
+  <CiSigners>
+    <CiSigner SignerId="EXAMPLE_ID_SIGNER_CODE" />
+  </CiSigners>
+  <!-- example remove core isolation a.k.a. Hypervisor Enforced Code Integrity (HVCI) options, consider enabling if your system supports it-->
+  <HvciOptions>0</HvciOptions>
+  <Settings>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+      <Value>
+        <String>Example Policy Name</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
+      <Value>
+        <String>Example-Policy-10.0.0.0</String>
+      </Value>
+    </Setting>
+  </Settings>
+</SiPolicy>
+```
+# Policy Removal
+> [!Note] There is currently a policy deletion error, with a fix expected in the 2D update in late February 2020. Devices of users who are unenrolled will still have their WDAC policies removed. In the mentime, IT Pros are recommended to update their policy with the below 'empty' policy which makes no changes to S mode.
 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy" PolicyType="Supplemental Policy">
+  <VersionEx>10.0.0.1</VersionEx>
+  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
+  <BasePolicyID>{5951A96A-E0B5-4D3D-8FB8-3E5B61030784}</BasePolicyID>
+  <PolicyID>{52671094-ACC6-43CF-AAF1-096DC69C1345}</PolicyID>
+  <Rules>
+  </Rules>
+  <!--EKUS-->
+  <EKUs />
+  <!--File Rules-->
+
+  <!--Signers-->
+  <Signers>
+    <!--info of the certificate you will use to sign your policy-->
+    <Signer ID="EXAMPLE_ID_SIGNER_POLICY" Name="Example Policy Signing Certificate Friendly Name">
+      <CertRoot Type="TBS" Value="<value>" />
+    </Signer>
+  </Signers>
+  <!--Driver Signing Scenarios-->
+  <SigningScenarios>
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_KMCI" FriendlyName="KMCI">
+      <ProductSigners>
+      </ProductSigners>
+    </SigningScenario>
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_UMCI" FriendlyName="UMCI">
+      <ProductSigners>
+      </ProductSigners>
+    </SigningScenario>
+  </SigningScenarios>
+  <UpdatePolicySigners>
+    <UpdatePolicySigner SignerId="EXAMPLE_ID_SIGNER_POLICY" />
+  </UpdatePolicySigners>
+  <!-- example remove core isolation a.k.a. Hypervisor Enforced Code Integrity (HVCI) options, consider enabling if your system is supported-->
+  <HvciOptions>0</HvciOptions>
+  <Settings>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+      <Value>
+        <String>Example Policy Name - Empty</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
+      <Value>
+        <String>Example-Policy-Empty-10.0.0.1</String>
+      </Value>
+    </Setting>
+  </Settings>
+</SiPolicy>
+```
