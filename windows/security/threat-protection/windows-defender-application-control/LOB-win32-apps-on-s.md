@@ -33,23 +33,50 @@ The general steps for expanding the S mode base policy on your devices are to ge
 1. Generate a supplemental policy with WDAC tooling
 
     This policy will expand the S mode base policy to authorize additional applications. Anything authorized by either the S mode base policy or your supplemental policy will be allowed to run. Your supplemental policies can specify filepath rules, trusted publishers, and more. 
+    
+    Refer to [Deploy multiple Windows Defender Application Control Policies](deploy-multiple-windows-defender-application-control-policies.md) for guidance on creating supplemental policies and [Deploy Windows Defender Application Control policy rules and file rules](select-types-of-rules-to-create.md) to choose the right type of rules to create for your policy. 
 
-    Refer to [Deploy multiple Windows Defender Application Control Policies](deploy-multiple-windows-defender-application-control-policies.md) for guidance on creating supplemental policies and [Deploy Windows Defender Application Control policy rules and file rules](select-types-of-rules-to-create.md) to choose the right type of rules to create for your policy.
+    Below are a basic set of instructions for creating an S mode supplemental policy:
+    - Create a new base policy using [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps)
 
-    > [!Note] Policies which are supplementing the S mode base policy must use **-SupplementsBasePolicyID 5951A96A-E0B5-4D3D-8FB8-3E5B61030784**, as this is the S mode policy ID.
+        ```powershell
+        New-CIPolicy -MultiplePolicyFormat -ScanPath <path> -UserPEs -FilePath "<path>\SupplementalPolicy.xml" -Level Publisher -Fallback Hash
+        ```
+    - Change it to a supplemental policy using [Set-CIPolicyIdInfo](https://docs.microsoft.com/powershell/module/configci/set-cipolicyidinfo?view=win10-ps)
+
+        ```powershell
+        Set-CIPolicyIdInfo -SupplementsBasePolicyID 5951A96A-E0B5-4D3D-8FB8-3E5B61030784 -FilePath "<path>\SupplementalPolicy.xml"
+        ```
+        Policies which are supplementing the S mode base policy must use **-SupplementsBasePolicyID 5951A96A-E0B5-4D3D-8FB8-3E5B61030784**, as this is the S mode policy ID.
+    - Put the policy in enforce mode using [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption?view=win10-ps)
+
+        ```powershell
+        Set-RuleOption -FilePath "<path>\SupplementalPolicy.xml>" -Option 3 –Delete
+        ```
+        This deletes the ‘audit mode’ qualifier.
+    - Convert to .bin using [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy?view=win10-ps)
+
+        ```powershell
+        ConvertFrom-CIPolicy -XmlFilePath "<path>\SupplementalPolicy.xml" -BinaryFilePath "<path>\SupplementalPolicy.bin>
+        ```
+
 2. Sign policy
     
     Supplemental S mode policies must be digitally signed. To sign your policy, you can choose to use the Device Guard Signing Service or your organization's custom Public Key Infrastructure (PKI). Refer to [Use the Device Guard Signing Portal in the Microsoft Store for Business](use-device-guard-signing-portal-in-microsoft-store-for-business.md) for guidance on using DGSS and [Create a code signing cert for WDAC](create-code-signing-cert-for-windows-defender-application-control.md) for guidance on signing using an internal CA.
 
-    Once your policy is signed, you must authorize the signing certificate you used to sign the policy and optionally one or more additional signers that can be used to sign updates to the policy in the future. Use Add-SignerRule to add the signing certificate to the WDAC policy, filling in the correct path and filenames for `<policypath>` and `<certpath>`: 
+    Once your policy is signed, you must authorize the signing certificate you used to sign the policy and optionally one or more additional signers that can be used to sign updates to the policy in the future. Use Add-SignerRule to add the signing certificate to the WDAC policy: 
        
-    `Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User -Update`
+    ```powershell
+    Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User -Update`
+    ```
+    Rename your policy to "{PolicyID}.p7b" after you've signed it. PolicyID can be found by inspecting the Supplemental Policy XML
+
 3. Deploy the signed supplemental policy using Microsoft Intune
 
-    Upload the signed policy to Intune and assign it to user or device groups. Intune will generate tenant- and device- specific authorization tokens. Intune then deploys the corresponding authorization token and supplemental policy to each device in the assigned group. Together, these expand the S mode base policy on the device. 
-    <!-- Intune link?-->
+    Go to the Azure portal online and navigate to the Microsoft Intune page, then go to the Client apps blade and select 'S mode supplemental policies'. Upload the signed policy to Intune and assign it to user or device groups. Intune will generate tenant- and device- specific authorization tokens. Intune then deploys the corresponding authorization token and supplemental policy to each device in the assigned group. Together, these expand the S mode base policy on the device. 
 
-> [!Note] When updating your supplemental policy, ensure that the new version number is strictly greater than the previous one. Using the same version number is not allowed by Intune. Refer to [Set-CIPolicyVersion](https://docs.microsoft.com/powershell/module/configci/set-cipolicyversion?view=win10-ps) for information on setting the version number.
+> [!Note]
+> When updating your supplemental policy, ensure that the new version number is strictly greater than the previous one. Using the same version number is not allowed by Intune. Refer to [Set-CIPolicyVersion](https://docs.microsoft.com/powershell/module/configci/set-cipolicyversion?view=win10-ps) for information on setting the version number.
 
 # Standard Process for Deploying Apps through Intune
 ![Deploying Apps through Intune](images/wdac-intune-app-deployment.png)
@@ -63,7 +90,8 @@ Instead of authorizing signers external to your organization, Intune has added n
 
 The basic process is to generate a catalog file for each app using Package Inspector, then sign the catalog files using the DGSS or a custom PKI. After that, IT Pros can use the standard Intune app deployment process outlined above. Refer to [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md) for more in-depth guidance on generating catalogs. 
 
-> [!Note] Every time an app updates, you will need to deploy an updated catalog. Because of this, IT Pros should try to avoid using catalog files for applications that auto-update and direct users not to update applications on their own.
+> [!Note]
+> Every time an app updates, you will need to deploy an updated catalog. Because of this, IT Pros should try to avoid using catalog files for applications that auto-update and instead use offline installers so that updates can be centrally managed through Intune instead of done by individual users.
 
 # Sample Policy
 Below is a sample policy that allows kernel debuggers, PowerShell ISE, and Registry Editor. It also demonstrates how to specify your organization's code signing and policy signing certificates.
@@ -149,7 +177,8 @@ Below is a sample policy that allows kernel debuggers, PowerShell ISE, and Regis
 </SiPolicy>
 ```
 # Policy Removal
-> [!Note] There is currently a policy deletion error, with a fix expected in the 2D update in late February 2020. Devices of users who are unenrolled will still have their WDAC policies removed. In the mentime, IT Pros are recommended to update their policy with the below 'empty' policy which makes no changes to S mode.
+> [!Note]
+> This feature currently has a known a policy deletion bug, with a fix expected in the 2D update in late February 2020. Devices of users who are unenrolled will still have their WDAC policies removed. In the mentime, IT Pros are recommended to update their policy with the below 'empty' policy which makes no changes to S mode.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
