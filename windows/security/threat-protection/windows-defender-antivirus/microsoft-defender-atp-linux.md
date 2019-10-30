@@ -103,6 +103,13 @@ Microsoft regularly publishes software updates to improve performance, security,
 
 Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender ATP for Linux](microsoft-defender-atp-linux-preferences.md).
 
+## Known Issues
+
+- Logged on users do not appear in the ATP portal
+- Quarantining a threat requires elevated permissions. Run with ```sudo mdatp --threat --quarantine <trackingid>```
+- Product has not been evaluated yet side by side with SELinux 
+
+
 ## Resources
 
 - For more information about logging, uninstalling, or other topics, see the [Resources](microsoft-defender-atp-linux-resources.md) page.
