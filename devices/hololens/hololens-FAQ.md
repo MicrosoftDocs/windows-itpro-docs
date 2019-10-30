@@ -1,11 +1,13 @@
 ---
-title: HoloLens and holograms FAQ
-description: 
+title: Frequently asked questions about HoloLens and holograms
+description: Do you have a quick question about HoloLens or interacting with holograms?  This article provides a quick answer and more resources.
+keywords: hololens, faq, known issue, help
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
+audience: ITPro
 ms.localizationpriority: medium
 ms.date: 9/3/2019
 ms.reviewer: 
