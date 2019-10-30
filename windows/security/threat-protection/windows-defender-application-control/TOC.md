@@ -37,7 +37,6 @@
 ### [Disable WDAC policies](disable-windows-defender-application-control-policies.md)
 ### [Device Guard and AppLocker](windows-defender-device-guard-and-applocker.md)
 ### [LOB Win32 Apps on S Mode](LOB-win32-apps-on-s.md)
-### [temp](temp.md)
 
 
 ## [AppLocker](applocker\applocker-overview.md) 
