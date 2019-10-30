@@ -46,7 +46,7 @@ Windows Update for Business provides management policies for several types of up
 
 ## Offering
 
-You can control when updates are applied, for example by deferring when an update is installed on a device or by pausing updates for a certain period of time.
+You can control when updates are applied, for example by deferring when an update is installed on a device or by pausing updates for a certain period.
 
 ### Manage which updates are offered
 
@@ -91,17 +91,18 @@ The branch readiness level enables administrators to specify which channel of fe
 Prior to Windows 10, version 1903, there are two channels for released updates: Semi-annual Channel and Semi-annual Channel (Targeted). Deferral days are calculated against the release date of the chosen channel. Starting with Windows 10, version 1903 there is only the one release channel: Semi-annual Channel. All deferral days will be calculated against a release’s Semi-annual Channel release date. To see release dates, visit [Windows Release Information](https://docs.microsoft.com/windows/release-information/). You can set the branch readiness level by using the **Select when Preview Builds and Feature Updates are Received** policy. In order to use this to manage pre-release builds, first enable preview builds by using the **Manage preview Builds** policy.
 
 ## Recommendations
-These recommendations ensure that your devices stay up to date with Windows Updates: 
 
--	Devices are used for at least 6 hours a month with at least 2 hours of continuous use.
--	Devices are regularly charged (plugging in devices overnight will enable them to automatically update outside of active hours)
--	Devices have at least 10 GB of free space 
--	Devices have unobstructed access to the Windows Update service
+For the best experience with Windows Update, follow these guidelines: 
+
+-	Use devices for at least 6 hours per month, including at least 2 hours of continuous use.
+-	Keep devices regularly charged. Plugging in devices overnight enables them to automatically update outside of active hours.
+-	Make sure that devices have at least 10 GB of free space.
+-	Give devices unobstructed access to the Windows Update service.
 
 
 ## Monitor Windows Updates by using Update Compliance
 
-Update Compliance provides a holistic view of operating system update compliance, update deployment progress, and failure troubleshooting for Windows 10 devices. This  service uses diagnostic data including installation progress, Windows Update configuration, and other information to provide such insights, at no extra cost and without additional infrastructure requirements. Whether used with Windows Update for Business or other management tools, you can be assured that your devices are properly updated.
+Update Compliance provides a holistic view of operating system update compliance, update deployment progress, and failure troubleshooting for Windows 10 devices. This  service uses diagnostic data including installation progress, Windows Update configuration, and other information to provide such insights, at no extra cost and without extra infrastructure requirements. Whether used with Windows Update for Business or other management tools, you can be assured that your devices are properly updated.
 
 ![Update Compliance Dashboard](images/waas-wufb-update-compliance.png)
 
