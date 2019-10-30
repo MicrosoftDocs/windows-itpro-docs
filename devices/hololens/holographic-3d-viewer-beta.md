@@ -7,7 +7,7 @@ author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 9/3/19
+ms.date: 09/03/19
 ms.reviewer: 
 manager: jarrettr
 appliesto:
