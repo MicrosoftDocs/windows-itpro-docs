@@ -43,6 +43,9 @@ The service supports the onboarding of the following servers:
 
 For a practical guidance on what needs to be in place for licensing and infrastructure, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
 
+>[!NOTE]
+>An Azure Security Center Standard license is required, per node, to enroll Microsoft Defender ATP on a supported Windows Server platform, see [Supported features available in Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-services)
+
 ## Windows Server 2008 R2 SP1,  Windows Server 2012 R2 and Windows Server 2016
 
 There are two options to onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2 and Windows Server 2016 to Microsoft Defender ATP:
@@ -177,9 +180,6 @@ Support for Windows Server, version 1803 and Windows 2019 provides deeper insigh
 
 ## Integration with Azure Security Center
 Microsoft Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Microsoft Defender ATP to provide improved threat detection for Windows Servers.
-
->[!NOTE]
->You'll need to have the appropriate license to enable this feature. 
 
 The following capabilities are included in this integration:
 - Automated onboarding - Microsoft Defender ATP sensor is automatically enabled on Windows Servers that are onboarded to Azure Security Center. For more information on Azure Security Center onboarding, see [Onboarding to Azure Security Center Standard for enhanced security](https://docs.microsoft.com/azure/security-center/security-center-onboarding).
