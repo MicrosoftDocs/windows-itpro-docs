@@ -26,6 +26,8 @@ ms.date: 10/27/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
+[!includePrerelease information]
+
 The DeviceTvmSecureConfigurationAssessmentKB table in the Advanced hunting schema contains information about the various secure configuration TVM checks during assessments related to your organization. An example of a security configuration is to block JavaScript or VBScript from launching downloaded executable content to prevent accidentally downloading malicious files in your network. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-reference.md).
