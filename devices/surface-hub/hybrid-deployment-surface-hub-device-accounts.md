@@ -265,7 +265,7 @@ If you haven’t created a compatible policy yet, use the following cmdlet—thi
 $easPolicy = New-MobileDeviceMailboxPolicy -Name “SurfaceHubs” -PasswordEnabled $false
 ```
 
-Once you have a compatible policy, then you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not resource mailboxes. You need to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox—you may need to re-enable it and set the password again too.
+Once you have a compatible policy, you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not resource mailboxes. You need to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox—you may need to re-enable it and set the password again too.
 
 ```PowerShell
 Set-Mailbox 'HUB01@contoso.com' -Type Regular
