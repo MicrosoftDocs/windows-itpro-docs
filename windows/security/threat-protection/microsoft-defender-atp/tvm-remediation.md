@@ -1,6 +1,6 @@
 ---
-title: Remediation
-description: You can lower down your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations. Threat & Vulnerability Management bridges the gap between security administration and IT administration during remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM). 
+title: Remediation and exception
+description: You can lower down your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations or filing exceptions provided there are compensation controls. Threat & Vulnerability Management bridges the gap between security administration and IT administration during remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM). 
 keywords: microsoft defender atp tvm remediation, mdatp tvm, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
