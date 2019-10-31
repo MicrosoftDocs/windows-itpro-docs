@@ -76,11 +76,11 @@ of new supplemental policy
 Set-CIPolicyIdInfo [-FilePath] <string> [-PolicyName <string>] [-SupplementsBasePolicyID <guid>] [-BasePolicyToSupplementPath <string>] [-ResetPolicyID] [-PolicyId <string>]  [<CommonParameters>]
 ```
 
-Note that "ResetPolicyId" reverts a supplemental policy to a base policy, and resets the policy GUIDS back to a random GUID.
+Note that "ResetPolicyId" reverts a supplemental policy to a base policy, and resets the policy GUIDs back to a random GUID.
 
 ### Merging policies
 
-When merging, the policy type and ID of the leftmost/first policy specified is used. If the leftmost is a base policy with ID \<ID>, then regardless of what the GUIDS and types are for any subsequent policies, the merged policy will be a base policy with ID \<ID>.
+When merging, the policy type and ID of the leftmost/first policy specified is used. If the leftmost is a base policy with ID \<ID>, then regardless of what the GUIDs and types are for any subsequent policies, the merged policy will be a base policy with ID \<ID>.
 
 ### Deploying policies
 
