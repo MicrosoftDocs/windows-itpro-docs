@@ -76,6 +76,12 @@ The exceptions you've filed will show up in the **Remediation** page, in the **E
 However, you also have the option to filter your view based on exception justification, type, and status.  
 ![Screenshot of exception tab and filters](images/tvm-exception-filters.png)
 
+Aside from that, there's also an option to **Show exceptions** at the bottom of the **Top security recommendations** card in the dashboard. 
+![Screenshot of Show exceptions link in the  Top security recommendatations card in the dashboard](images/tvm-exception-dashboard.png)
+
+Clicking the link opens up to the **Security recommendations** page, where you can select the item exempted item with details.
+![Screenshot of exception details in the Security recommendation page](images/tvm-exception-details.png)
+
 ### Actions on exceptions
 -  Cancel - You can cancel the exceptions you've filed any time
 -  Resurface - Your exception automatically becomes void and resurfaces in the security recommendation list when dynamic environmental factors change, which adversely affect the exposure impact associated with a recommendation that had previously been excluded
