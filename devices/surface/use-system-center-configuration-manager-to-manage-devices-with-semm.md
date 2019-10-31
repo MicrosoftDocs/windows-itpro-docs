@@ -384,7 +384,7 @@ To configure Surface UEFI settings or permissions for Surface UEFI settings, you
 
 The computer where ShowSettingsOptions.ps1 is run must have Microsoft Surface UEFI Manager installed, but the script does not require a Surface device.
 
-The following tables show the available settings for Surface Pro 4 and Surface Book:
+The following tables show the available settings for Surface Pro 4 and later including Surface Pro 7 and Surface Pro X; Surface Book, Surface Laptop 3, and Surface Go. 
 
 *Table 1. Surface UEFI settings for Surface Pro 4*
 

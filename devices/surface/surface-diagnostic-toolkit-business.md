@@ -172,9 +172,10 @@ You can select to run a wide range of logs across applications, drivers, hardwar
 ## Changes and updates
 ### Version 2.43.139.0
 *Release date: October 21, 2019*<br>
-This version of Surface Diagnostic Toolkit for Business adds support for the following: 
--Surface Pro 7
--Surface Laptop 3
+This version of Surface Diagnostic Toolkit for Business adds support for the following:
+
+- Surface Pro 7
+- Surface Laptop 3
 
 ### Version 2.42.139.0
 *Release date: September 24, 2019*<br>

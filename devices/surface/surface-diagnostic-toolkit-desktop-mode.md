@@ -16,7 +16,8 @@ ms.audience: itpro
 
 # Use Surface Diagnostic Toolkit for Business in desktop mode
 
-This topic explains how to use the Surface Diagnostic Toolkit (SDT) to help users in your organization run the tool to identify and diagnose issues with the Surface device. Successfully running SDT can quickly determine if a reported issue is caused by failed hardware or user error.
+This topic explains how to use the Surface Diagnostic Toolkit (SDT) to help users in your organization run the tool to identify and diagnose issues with the Surface device. Successfully running SDT can quickly determine if a reported issue is caused by failed hardware or user error. For a list of supported Surface devices in SDT, refer to [Deploy Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md).
+
 
 1. Direct the user to install [the SDT package](surface-diagnostic-toolkit-business.md#create-custom-sdt) from a software distribution point or network share. After it is installed, you’re ready to guide the user through a series of tests. 
 
