@@ -33,7 +33,11 @@ The **Weaknesses** page lists down the vulnerabilities found in the infected sof
 >- RS3 customers | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
 
 ## Navigate through your organization's weaknesses page
-You can see the list of vulnerabilities in four ways: 
+You can access the list of vulnerabilities in a few places in the portal:
+- Global search
+- Weaknesses option in the navigation menu
+- Top vulnerable software widget in the dashboard
+- Discovered vulnerabilities page in the machine page
 
 *Vulnerabilities in global search*
 1. Click the global search drop-down menu.
