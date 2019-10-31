@@ -1,7 +1,7 @@
 ---
 title: Installing Microsoft Defender ATP for Mac with different MDM product
 description: Describes how to install Microsoft Defender ATP for Mac on other management solutions.
-keywords: microsoft, defender, atp, mac, installation, deploy, macos, mojave, high sierra, sierra
+keywords: microsoft, defender, atp, mac, installation, deploy, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
