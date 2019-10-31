@@ -19,21 +19,28 @@ ms.date: 04/11/2019
 ---
 # Weaknesses
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559
+
+[!include[Prerelease information](prerelease.md)]
 
 Threat & Vulnerability Management leverages the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
 
 The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, corresponding breach, and threat insights.
 
 >[!IMPORTANT]
->To boost your vulnerability assessment detection rates, download the following mandatory security updates and deploy them in your network:
+>To boost your vulnerability assessment detection rates, you can download the following mandatory security updates and deploy them in your network:
 >- 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 >- RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
 >- RS4 customers | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
 >- RS3 customers | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+><P>Downloading the above-mentioned security updates will be mandatory starting Patch Tuesday, October 8, 2019.
 
 ## Navigate through your organization's weaknesses page
-You can see the list of vulnerabilities in four ways: 
+You can access the list of vulnerabilities in a few places in the portal:
+- Global search
+- Weaknesses option in the navigation menu
+- Top vulnerable software widget in the dashboard
+- Discovered vulnerabilities page in the machine page
 
 *Vulnerabilities in global search*
 1. Click the global search drop-down menu.
@@ -46,12 +53,13 @@ You can see the list of vulnerabilities in four ways:
 
 *Weaknesses page in the menu* 
 1. Go to the Threat & Vulnerability Management navigation menu and select **Weaknesses** to open up the list of vulnerabilities found in your organization.
-2. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
+2. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, dates when it was published and updated, related software, exploit kits available, vulnerability type, link to useful reference, and number of exposed machines which users can also export.    
+![Screenshot of the CVE details in the flyout pane in the Weaknesses page](images/tvm-weaknesses-page.png)
 
 *Top vulnerable software widget in the dashboard* 
 1. Go to the Threat & Vulnerability Management dashboard and scroll down to the **Top vulnerable software** widget. You will see the number of vulnerabilities found in each software along with threat information and a high-level view of the device exposure trend over time. 
 ![tvm-top-vulnerable-software](images/tvm-top-vulnerable-software.png)
-2. Click the software that you want to investigate and it takes you to the software page. You will the weaknesses found in your machine per severity level, in which machines are they installed, version distribution, and the corresponding security recommendation. 
+2. Click the software that you want to investigate and it takes you to the software page. You will see the weaknesses found in your machine per severity level, in which machines are they installed, version distribution, and the corresponding security recommendation. 
 3. Select the **Discovered vulnerabilities** tab. 
 4. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.  
 
@@ -68,22 +76,25 @@ You can see the list of vulnerabilities in four ways:
 5. Select the vulnerability that you want to investigate to open up a flyout panel with the vulnerability details, such as: CVE description, CVE ID, exploits available, CVSS V3 rating, severity, publish, and update dates.
 
 ## How it works
-When new vulnerabilities are released, you would want know how many of your assets are exposed. You can see the list of vulnerabilities and the details in the **Weaknesses** page. 
+When new vulnerabilities are released, you would want to know how many of your assets are exposed. You can see the list of vulnerabilities and the details in the **Weaknesses** page. 
 
-If the **Exposed Machines** column shows 0, that means you are not infected. 
+If the **Exposed Machines** column shows 0, that means you are not at risk. 
 
-If there's a number in the **Exposed Machines**, that means you need to remediate the vulnerabilities in those machines because they  put the rest of your assets and your organization at risk. 
+If exposed machines exist, that means you need to remediate the vulnerabilities in those machines because they  put the rest of your assets and your organization at risk. 
 
 You can also see the related alert and threat insights in the **Threat** column.
 
-The breach insights icons are highlighted if there are active alerts associated with the vulnerability found in your organization.  
+The breach insights icon is highlighted if there is a vulnerability found in your organization. Prioritize an investigation because it  means there might be a breach in your organization.  
+
 ![tvm-breach-insights](images/tvm-breach-insights.png)
 
-The threat insights icons are highlighted if there are associated exploits in the vulnerability found in your organization. It also shows whether the threat is connected to specific campaign for which, Threat Analytics report links are provided that you can read.  
+The threat insights icons are highlighted if there are associated exploits in the vulnerability found in your organization. It also shows whether the threat is a part of an exploit kit, connected to specific advanced persistent campaigns or activity groups for which, Threat Analytics report links are provided that you can read, has zero-day exploitation news, disclosures, or related security advisories.  
+
 ![tvm-threat-insights](images/tvm-threat-insights.png)
 
+
  >[!NOTE]
- > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon and possible active alert ![possible active alert](images/tvm_alert_icon.png) icon.  
+ > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight ![threat insight](images/tvm_bug_icon.png) icon and breach insight ![possible active alert](images/tvm_alert_icon.png) icon.  
 
 ## Report inaccuracy
 
