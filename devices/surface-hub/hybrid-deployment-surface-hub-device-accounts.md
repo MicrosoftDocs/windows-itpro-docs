@@ -284,7 +284,7 @@ Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AutomateProcessing AutoAcc
 Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
 ```
 
-5. Add email address for your on-premises domain account.
+5. Add an email address for your on-premises domain account.
 
 For this procedure, you'll be using AD admin tools to add an email address for your on-premises domain account.
 
