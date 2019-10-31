@@ -59,7 +59,7 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
             - Basic commands allow users to:
                 - Start a live response session
                 - Run read only live response commands on a remote machine 
-        - Advanced commands allow users to:
+             - Advanced commands allow users to:
                 - Run basic actions
                 - Download a file from the remote machine
                 - View a script from the files library
