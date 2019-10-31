@@ -653,7 +653,7 @@ Before we can pull an application into Intune to make it part of our AP profile,
 
 For the purposes of this lab, we’ll use the Notepad++ tool as our Win32 app.
 
-Download the Notepad++ msi package [here](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available) and then opy the file to a known location, such as C:\Notepad++msi.
+Download the Notepad++ msi package [here](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available) and then copy the file to a known location, such as C:\Notepad++msi.
 
 Run the IntuneWinAppUtil tool, supplying answers to the three questions, for example:
 
