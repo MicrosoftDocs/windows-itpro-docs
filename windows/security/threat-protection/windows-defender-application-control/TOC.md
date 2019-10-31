@@ -13,7 +13,6 @@
 ### [Types of devices](types-of-devices.md)
 ### Use WDAC with custom policies
 #### [Create an initial default policy](create-initial-default-policy.md)
-#### [Create path-based rules](create-path-based-rules.md)
 #### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
 ### [Audit WDAC policies](audit-windows-defender-application-control-policies.md)
 ### [Merge WDAC policies](merge-windows-defender-application-control-policies.md)
