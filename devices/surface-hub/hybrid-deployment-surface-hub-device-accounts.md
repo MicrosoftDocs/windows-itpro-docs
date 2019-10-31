@@ -183,7 +183,7 @@ Get-CsOnlineUser -Identity ‘HUB01@contoso.com’| fl *registrarpool*
 
 3. Assign Skype for Business license to your Surface Hub account.
 
- Once you've completed the preceding steps to enable your Surface Hub account in Skype for Business Online, you need to assign a license to the Surface Hub. Using the O365 administrative portal, assign either a Skype for Business Online (Plan 2) or a Skype for Business Online (Plan 3) to the device.
+ Once you've completed the preceding steps to enable your Surface Hub account in Skype for Business Online, you need to assign a license to the Surface Hub. Using the O365 administrative portal, assign either a Skype for Business Online (Plan 2) or a Skype for Business Online (Plan 3) license to the device.
 
 - Login as a tenant administrator, open the O365 Administrative Portal, and click on the Admin app.
 
