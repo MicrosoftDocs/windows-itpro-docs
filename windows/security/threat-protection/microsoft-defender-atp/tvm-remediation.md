@@ -74,6 +74,7 @@ If the security recommendation stemmed from a false positive report, or if there
 ### Exception visibility
 The exceptions you've filed will show up in the **Remediation** page, in the **Exceptions** tab.
 However, you also have the option to filter your view based on exception justification, type, and status.  
+
 ![Screenshot of exception tab and filters](images/tvm-exception-filters.png)
 
 Aside from that, there's also an option to **Show exceptions** at the bottom of the **Top security recommendations** card in the dashboard. 
@@ -81,6 +82,7 @@ Aside from that, there's also an option to **Show exceptions** at the bottom of 
 ![Screenshot of Show exceptions link in the  Top security recommendatations card in the dashboard](images/tvm-exception-dashboard.png)
 
 Clicking the link opens up to the **Security recommendations** page, where you can select the item exempted item with details.
+
 ![Screenshot of exception details in the Security recommendation page](images/tvm-exception-details.png)
 
 ### Actions on exceptions
