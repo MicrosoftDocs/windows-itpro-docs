@@ -53,7 +53,7 @@ You can control when updates are applied, for example by deferring when an updat
 Windows Update for Business offers you the ability to turn on or off both driver and Microsoft product updates.   
 
 - Drivers (on/off): When "on," this policy will not include drivers with Windows Update.
-- Microsoft product updates (on/off): When "on" this policy will install udpates for other Microsoft products.
+- Microsoft product updates (on/off): When "on" this policy will install updates for other Microsoft products.
 
 
 ### Manage when updates are offered
