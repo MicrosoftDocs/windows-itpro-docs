@@ -50,6 +50,7 @@ Provisioning packages are files created by the Windows Configuration Designer to
 
 1. Find the XML license file that was provided when you purchased the Commercial Suite.
 
+1. Browse to and select the XML license file that was provided when you purchased the Commercial Suite.
     >[!NOTE]
     >You can configure [additional settings in the provisioning package](hololens-provisioning.md).
 
@@ -87,7 +88,7 @@ Provisioning packages are files created by the Windows Configuration Designer to
 1. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with device setup.
 
 >[!NOTE]
->If the device was purchased before August 2016, you will need to sign into the device with a Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package. 
+>If the device was purchased before August 2016, you will need to sign into the device with a Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package.
 
 ## Verify device encryption
 

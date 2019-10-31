@@ -24,9 +24,6 @@ ms.date: 05/17/2019
 -   Windows 10
 -   Windows Server 2016
 
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 The restriction of only having a single code integrity policy active on a system at any given time has felt limiting for customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports multiple simultaneous code integrity policies for one device in order to enable the following scenarios:
 
 1. Enforce and Audit Side-by-Side
@@ -53,7 +50,7 @@ Note that multiple policies will not work on pre-1903 systems.
 In order to allow multiple policies to exist and take effect on a single system, policies must be created using the new Multiple Policy Format. The "MultiplePolicyFormat" switch in [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps) results in 1) random GUIDs being generated for the policy ID and 2) the policy type being specified as base. The below is an example of creating a new policy in the multiple policy format.
 
 ```powershell
-New-CIPolicy -MultiplePolicyFormat -ScanPath '.\temp\' -UserPEs -FilePath ".\policy.xml" -Level Publisher -Fallback Hash
+New-CIPolicy -MultiplePolicyFormat -ScanPath "<path>" -UserPEs -FilePath ".\policy.xml" -Level Publisher -Fallback Hash
 ```
 
 Optionally, you can choose to make the new base policy supplementable (allow supplemental policies).
@@ -71,18 +68,19 @@ Add-SignerRule -FilePath <string> -CertificatePath <string> [-Kernel] [-User] [-
 ### Supplemental Policy Creation
 
 In order to create a supplemental policy, begin by creating a new policy in the Multiple Policy Format. From there, use Set-CIPolicyIdInfo to convert it to a supplemental policy and specify which base policy it expands.
-- "SupplementsBasePolicyID": guid of new supplemental policy
+- "SupplementsBasePolicyID": 
+of new supplemental policy
 - "BasePolicyToSupplementPath": base policy that the supplemental policy applies to
 
 ```powershell
 Set-CIPolicyIdInfo [-FilePath] <string> [-PolicyName <string>] [-SupplementsBasePolicyID <guid>] [-BasePolicyToSupplementPath <string>] [-ResetPolicyID] [-PolicyId <string>]  [<CommonParameters>]
 ```
 
-Note that "ResetPolicyId" reverts a supplemental policy to a base policy, and resets the policy guids back to a random guid.
+Note that "ResetPolicyId" reverts a supplemental policy to a base policy, and resets the policy GUIDs back to a random GUID.
 
 ### Merging policies
 
-When merging, the policy type and ID of the leftmost/first policy specified is used. If the leftmost is a base policy with ID \<ID>, then regardless of what the GUIDS and types are for any subsequent policies, the merged policy will be a base policy with ID \<ID>.
+When merging, the policy type and ID of the leftmost/first policy specified is used. If the leftmost is a base policy with ID \<ID>, then regardless of what the GUIDs and types are for any subsequent policies, the merged policy will be a base policy with ID \<ID>.
 
 ### Deploying policies
 

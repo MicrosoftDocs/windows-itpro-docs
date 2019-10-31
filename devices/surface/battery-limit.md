@@ -11,6 +11,8 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.topic: article
+ms.localizationpriority: medium
+ms.audience: itpro
 ---
 
 # Battery Limit setting
