@@ -103,7 +103,7 @@ Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AddAdditionalResponse $tru
 
 7. Connect to Azure AD.
 
-You first need to install Azure AD module for PowerShell version 2. In an elevated powershell prompt run the following command :
+You first need to install Azure AD module for PowerShell version 2. In an elevated PowerShell prompt, run the following command:
 
 ```PowerShell
 Install-Module -Name AzureAD
