@@ -43,6 +43,8 @@ If you have any feedback that you would like to share, submit it by opening Micr
 
 > [!CAUTION]
 > The three most recent major releases of macOS are supported. Beta versions of macOS are not supported.
+>
+> macOS Sierra (10.12) support will end on January 1, 2020.
 
 - Supported macOS versions: 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
 - Disk space: 650 MB
