@@ -26,7 +26,7 @@ Threat & Vulnerability Management leverages the same signals in Microsoft Defend
 The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, corresponding breach, and threat insights.
 
 >[!IMPORTANT]
->To boost your vulnerability assessment detection rates, you can download the following set of optional security updates and deploy them in your network:
+>To boost your vulnerability assessment detection rates, you can download the following mandatory security updates and deploy them in your network:
 >- 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 >- RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
 >- RS4 customers | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
