@@ -9,11 +9,11 @@ ms.author: v-tea
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: medium
-ms.date: 9/3/2019
+ms.date: 10/30/2019
 ms.reviewer: 
 manager: jarrettr
 appliesto:
-- HoloLens 1
+- HoloLens (1st gen)
 - HoloLens 2
 ---
 
@@ -50,7 +50,7 @@ This FAQ addresses the following questions and issues:
 
 If your holograms don't look right (for example, they're jittery or shaky, or you see black patches on top of them), try one of these fixes:
 
-- [Clean your device visor](https://support.microsoft.com/help/12649/hololens-whats-in-the-box) and make sure nothing is blocking the sensors.
+- [Clean your device visor](hololens1-hardware.md#care-and-cleaning) and make sure nothing is blocking the sensors.
 - Make sure you're in a well-lit room without a lot of direct sunlight.
 - Try walking around and gazing at your surroundings so HoloLens can scan them more completely.
 - If you've placed a lot of holograms, try removing some.
@@ -68,7 +68,7 @@ These messages mean that HoloLens is having trouble mapping your space. When thi
 If you see these messages often, try the following:
 
 - Make sure you're in a well-lit room without a lot of direct sunlight.
-- Make sure your device visor is clean. [Learn how](https://support.microsoft.com/help/12649/hololens-whats-in-the-box).
+- Make sure your device visor is clean. [Learn how](hololens1-hardware.md#care-and-cleaning).
 - Make sure you have a strong Wi-Fi signal. If you enter a new environment that has no Wi-Fi or a weak signal, HoloLens won't be able find your space. Check your Wi-Fi connection by going to **Settings **> **Network &amp; Internet** >** Wi-Fi**.
 - Try moving more slowly.
 
@@ -129,7 +129,7 @@ Holograms placed on walls will appear to be an inch or so away from the wall. If
 
 ## Apps appear too close to me when I'm trying to move them
 
-Try walking around and looking at the area where you're placing the app so HoloLens will scan it from different angles. [Cleaning your device visor](https://support.microsoft.com/help/12649/hololens-whats-in-the-box) may also help.
+Try walking around and looking at the area where you're placing the app so HoloLens will scan it from different angles. [Cleaning your device visor](hololens1-hardware.md#care-and-cleaning) may also help.
 
 [Back to list](#list)
 
@@ -145,7 +145,7 @@ Free up some storage space by doing one or more of the following:
 
 ## HoloLens doesn't respond to my gestures
 
-To make sure HoloLens can see your gestures, keep your hand in the gesture frame, which extends a couple of feet on either side of you. HoloLens can also best see your hand when you hold it about 18 inches in front of your body (though you don't have to be precise about this). When HoloLens can see your hand, the cursor will change from a dot to a ring. [Learn more about using gestures](hololens-use-gestures.md).
+To make sure HoloLens can see your gestures, keep your hand in the gesture frame, which extends a couple of feet on either side of you. HoloLens can also best see your hand when you hold it about 18 inches in front of your body (though you don't have to be precise about this). When HoloLens can see your hand, the cursor will change from a dot to a ring. Learn more about [using gestures in HoloLens 2](hololens2-basic-usage.md) or [using gestures in HoloLens (1st gen)](hololens1-basic-usage.md).
 
 [Back to list](#list)
 
@@ -161,13 +161,13 @@ If you're having problems [pairing a Bluetooth device](hololens-connect-devices.
 
 - Go to **Settings** > **Devices** and make sure Bluetooth is turned on. If it is, try turning if off and on again.
 - Make sure your Bluetooth device is fully charged or has fresh batteries.
-- If you still can't connect, [restart your HoloLens](hololens-restart-recover.md).
+- If you still can't connect, [restart your HoloLens](hololens-recovery.md).
 
 If you're having trouble using a Bluetooth device, make sure it's a supported device. Supported devices include:
 
 - English-language QWERTY Bluetooth keyboards, which can be used anywhere you use the holographic keyboard.
 - Bluetooth mice.
-- The [HoloLens clicker](hololens-clicker.md).
+- The [HoloLens clicker](hololens1-clicker.md).
 
 Other Bluetooth HID and GATT devices can be paired, but they might require a companion app from Microsoft Store to work with HoloLens.
 
@@ -177,13 +177,13 @@ HoloLens doesn't support Bluetooth audio profiles. Bluetooth audio devices, such
 
 ## I'm having problems with the HoloLens clicker
 
-Use the [clicker](hololens-clicker.md) to select, scroll, move, and resize holograms. Additional clicker gestures may vary from app to app.
+Use the [clicker](hololens1-clicker.md) to select, scroll, move, and resize holograms. Additional clicker gestures may vary from app to app.
 
-If you're having trouble using the clicker, make sure its charged and paired with your HoloLens. If the battery is low, the indicator light will blink amber. To see if its paired, go to **Settings** > **Devices** and see if it shows up there. [Pair the clicker](hololens-connect-devices.md).
+If you're having trouble using the clicker, make sure its charged and paired with your HoloLens. If the battery is low, the indicator light will blink amber. To see if its paired, go to **Settings** > **Devices** and see if it shows up there. [Pair the clicker](hololens-connect-devices.md#pair-the-clicker).
 
 If the clicker is charged and paired and you're still having problems, reset it by holding down the main button and the pairing button for 15 seconds. Then pair the clicker with your HoloLens again.
 
-If that doesn't help, see [Restart or recover the HoloLens clicker](https://support.microsoft.com/help/15555/hololens-restart-or-recover-the-hololens-clicker).
+If that doesn't help, see [Restart or recover the HoloLens clicker](hololens1-clicker#restart-or-recover-the-clicker).
 
 [Back to list](#list)
 
@@ -193,14 +193,14 @@ Here are some things to try if you can't connect to Wi-Fi on HoloLens:
 
 - Make sure Wi-Fi is turned on. Bloom to go to Start, then select **Settings** > **Network &amp; Internet** > **Wi-Fi** to check. If Wi-Fi is on, try turning it off and on again.
 - Move closer to the router or access point.
-- Restart your Wi-Fi router, then [restart HoloLens](hololens-restart-recover.md). Try connecting again.
+- Restart your Wi-Fi router, then [restart HoloLens](hololens-recovery.md). Try connecting again.
 - If none of these things work, check to make sure your router is using the latest firmware. You can find this information on the manufacturers website.
 
 [Back to list](#list)
 
 ## My HoloLens isn't running well, is unresponsive, or won't start
 
-If your device isn't performing properly, see [Restart, reset, or recover HoloLens](hololens-restart-recover.md).
+If your device isn't performing properly, see [Restart, reset, or recover HoloLens](hololens-recovery.md).
 
 [Back to list](#list)
 
