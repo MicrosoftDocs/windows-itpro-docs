@@ -39,31 +39,31 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
     - **Role name**
     - **Description**
     - **Permissions**
-      - **View data** - Users can view information in the portal.
-        >[!NOTE]
-        >To view Threat & Vulnerability Management data, select **Threat and vulnerability management**
+        - **View data** - Users can view information in the portal.
+         >[!NOTE]
+         >To view Threat & Vulnerability Management data, select **Threat and vulnerability management**
       
-      - **Alerts investigation** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
-      - **Active remediation actions** - Users can take response actions and approve or dismiss pending remediation actions.
-        >[!NOTE]
-        >To enable your Security operation personnel to choose remediation options and file exceptions, select **Threat and vulnerability management - Remediation handling**, and **Threat and vulnerability management - Exception handling**.
+        - **Alerts investigation** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
+         - **Active remediation actions** - Users can take response actions and approve or dismiss pending remediation actions.
+         >[!NOTE]
+         >To enable your Security operation personnel to choose remediation options and file exceptions, select **Threat and vulnerability management - Remediation handling**, and **Threat and vulnerability management - Exception handling**.
         
-      - **Manage portal system settings** - Users can configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and machine groups.
+        - **Manage portal system settings** - Users can configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and machine groups.
 
         > [!NOTE]
         > This setting is only available in the Microsoft Defender ATP administrator (default) role.
 
-      - **Manage security settings** - Users can configure alert suppression settings, manage allowed/blocked lists for automation, create and manage custom detections, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
+        - **Manage security settings** - Users can configure alert suppression settings, manage allowed/blocked lists for automation, create and manage custom detections, manage folder exclusions for automation, onboard and offboard machines, and manage email notifications.
 
-      - **Live response capabilities** - Users can take basic or advanced live response commands.
-        - Basic commands allow users to:
-          - Start a live response session
-          - Run read only live response commands on a remote machine 
+        - **Live response capabilities** - Users can take basic or advanced live response commands.
+            - Basic commands allow users to:
+                - Start a live response session
+                - Run read only live response commands on a remote machine 
         - Advanced commands allow users to:
-          - Run basic actions
-          - Download a file from the remote machine
-          - View a script from the files library
-          - Run a script on the remote machine from the files library take read and write commands. 
+                - Run basic actions
+                - Download a file from the remote machine
+                - View a script from the files library
+                - Run a script on the remote machine from the files library take read and write commands. 
 
         For more information on the available commands, see [Investigate machines using Live response](live-response.md).
   
