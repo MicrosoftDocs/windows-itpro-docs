@@ -67,10 +67,9 @@ Add-SignerRule -FilePath <string> -CertificatePath <string> [-Kernel] [-User] [-
 
 ### Supplemental Policy Creation
 
-In order to create a supplemental policy, begin by creating a new policy in the Multiple Policy Format. From there, use Set-CIPolicyIdInfo to convert it to a supplemental policy and specify which base policy it expands.
-- "SupplementsBasePolicyID": 
-of new supplemental policy
-- "BasePolicyToSupplementPath": base policy that the supplemental policy applies to
+In order to create a supplemental policy, begin by creating a new policy in the Multiple Policy Format. From there, use Set-CIPolicyIdInfo to convert it to a supplemental policy and specify which base policy it expands. You can use either SupplementsBasePolicyID or BasePolicyToSupplementPath to specify the base policy.
+- "SupplementsBasePolicyID": GUID of base policy that the supplemental policy applies to
+- "BasePolicyToSupplementPath": path to base policy file that the supplemental policy applies to
 
 ```powershell
 Set-CIPolicyIdInfo [-FilePath] <string> [-PolicyName <string>] [-SupplementsBasePolicyID <guid>] [-BasePolicyToSupplementPath <string>] [-ResetPolicyID] [-PolicyId <string>]  [<CommonParameters>]
