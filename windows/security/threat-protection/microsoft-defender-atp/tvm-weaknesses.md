@@ -115,6 +115,6 @@ You can report a false positive when you see any vague, inaccurate, missing, or 
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendation](tvm-security-recommendation.md)
-- [Remediation](tvm-remediation.md)
+- [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
