@@ -368,7 +368,7 @@ Approximately 60 days prior to enrollment agent certificate’s expiration, the 
 
 Now you will add the Service connection Point to ADFS device registration Service for your Active directory by running the following script:
 
->[!TIP] 
+> [!TIP]
 > Make sure to change the $enrollmentService and $configNC variables before running the script.
 
 ```Powershell
