@@ -41,7 +41,7 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
     - **Permissions**
         - **View data** - Users can view information in the portal.
          >[!NOTE]
-         >To view Threat & Vulnerability Management data, select **Threat and vulnerability management**
+         >To view Threat & Vulnerability Management data, select **Threat and vulnerability management**.
       
         - **Alerts investigation** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
          - **Active remediation actions** - Users can take response actions and approve or dismiss pending remediation actions.
