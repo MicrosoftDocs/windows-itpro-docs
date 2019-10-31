@@ -25,6 +25,8 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-roles-abovefoldlink)
 
+[!includePrerelease information]
+
 ## Create roles and assign the role to an Azure Active Directory group
 The following steps guide you on how to create roles in Microsoft Defender Security Center. It assumes that you have already created Azure Active Directory user groups.
 
@@ -38,8 +40,14 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
     - **Description**
     - **Permissions**
       - **View data** - Users can view information in the portal.
+        >[!NOTE]
+        >To view Threat & Vulnerability Management data, select **Threat and vulnerability management**
+      
       - **Alerts investigation** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
       - **Active remediation actions** - Users can take response actions and approve or dismiss pending remediation actions.
+        >[!NOTE]
+        >To enable your Security operation personnel to choose remediation options and file exceptions, select **Threat and vulnerability management - Remediation handling**, and **Threat and vulnerability management - Exception handling**.
+        
       - **Manage portal system settings** - Users can configure storage settings, SIEM and threat intel API settings (applies globally), advanced settings, automated file uploads, roles and machine groups.
 
         > [!NOTE]
