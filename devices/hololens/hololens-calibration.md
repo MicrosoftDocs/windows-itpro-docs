@@ -25,7 +25,7 @@ While both devices need to calibrate for the best hologram viewing experience, t
 
 ## Calibrating your HoloLens 2
 
-HoloLens 2 uses eye-tracking technology to improve your experience seeing and interacting with the virtual environment. Calibrating the HoloLens 2 ensures that it can accurately track your eyes (and the eyes of anyone else who uses the device).  After calibration, holograms will appear correctly even as the visor shifts on your head.
+HoloLens 2 uses eye-tracking technology to improve your experience seeing and interacting with the virtual environment. Calibrating the HoloLens 2 also ensures that it can accurately track your eyes (and the eyes of anyone else who uses the device).  After calibration, holograms will appear correctly even as the visor shifts on your head.
 
 HoloLens 2 prompts a user to calibrate the device under the following circumstances:
 
@@ -35,7 +35,7 @@ HoloLens 2 prompts a user to calibrate the device under the following circumstan
 
 ![Calibration prompt](./images/07-et-adjust-for-your-eyes.png)
 
-During this process, you'll look at a set of targets (gems). It's fine if you blink or close your eyes during calibration but try not to stare at other objects in the room.  This allows HoloLens to learn about your eye position to render your holographic world.
+During this process, you'll look at a set of targets (gems). It's fine if you blink, but try to stay focused on the gems during calibration, and not stare at other objects in the room.  This allows HoloLens to learn about your eye position to render your holographic world.
 
 ![Calibration prompt](./images/07-et-hold-head-still.png)
 
@@ -81,13 +81,7 @@ If calibration is unsuccessful try:
 - Moving objects in your visor out of the way (such as hair)
 - Turning on a light in your room or moving out of direct sunlight
 
-If you followed all guidelines and calibration is still failing, please let us know by filing feedback in [Feedback Hub](hololens-feedback.md).
-
-### Calibration data and security
-
-Calibration information is stored locally on the device and is not associated with any account information. There is no record of who has used the device without calibration. This mean new users will get prompted to calibrate visuals when they use the device for the first time, as well as users who opted out of calibration previously or if calibration was unsuccessful.
-
-Calibration information can always be deleted from the device in **Settings** > **Privacy** > **Eye tracker**.  
+If you followed all guidelines and calibration is still failing, you can disable the calibration prompt in Settings. Please also let us know by filing feedback in [Feedback Hub](hololens-feedback.md).
 
 ### Disable calibration
 
@@ -95,6 +89,15 @@ You can also disable the calibration prompt by following these steps:
 
 1. Select **Settings** > **System** > **Calibration**.
 1. Turn off **When a new person uses this HoloLens, automatically ask to run eye calibration**.
+
+### Calibration data and security
+
+Calibration information is stored locally on the device and is not associated with any account information. There is no record of who has used the device without calibration. This mean new users will get prompted to calibrate visuals when they use the device for the first time, as well as users who opted out of calibration previously or if calibration was unsuccessful.
+Device can store up to 50 calibration profiles locally. After this number has been reached, the oldest unused profile will be automatically deleted. 
+
+Calibration information can always be deleted from the device in **Settings** > **Privacy** > **Eye tracker**.  
+
+
 
 > [!IMPORTANT]
 > Please understand that this setting may adversely affect hologram rendering quality and comfort.
