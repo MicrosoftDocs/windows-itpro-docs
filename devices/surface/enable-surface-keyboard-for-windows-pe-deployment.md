@@ -11,6 +11,8 @@ ms.author: v-tea
 ms.topic: article
 ms.date: 10/2/2019
 ms.reviewer: scottmca
+ms.localizationpriority: medium
+ms.audience: itpro
 manager: jarrettr
 appliesto:
 - Surface Laptop (1st Gen)

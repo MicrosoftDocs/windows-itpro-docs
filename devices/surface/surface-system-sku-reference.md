@@ -12,6 +12,8 @@ ms.topic: article
 ms.date: 03/20/2019
 ms.reviewer: 
 manager: dansimp
+ms.localizationpriority: medium
+ms.audience: itpro
 ---
 
 # System SKU reference

@@ -53,6 +53,8 @@
 # Update and recovery
 ## [Join the Windows Insider program](hololens-insider.md)
 ## [Restart, reset, or recover](hololens-recovery.md)
+## [Known issues](hololens-known-issues.md)
+## [Frequently asked questions](hololens-faq.md)
 
 # [Give us feedback](hololens-feedback.md)
 # [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
