@@ -86,7 +86,7 @@ If you haven’t created a compatible policy yet, use the following cmdlet—thi
 $easPolicy = New-MobileDeviceMailboxPolicy -Name “SurfaceHubs” -PasswordEnabled $false
 ```
 
-Once you have a compatible policy, then you will need to apply the policy to the device account. 
+Once you have a compatible policy, you will need to apply the policy to the device account. 
 
 ```PowerShell
 Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy.id
