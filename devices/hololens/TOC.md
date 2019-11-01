@@ -23,16 +23,16 @@
 ## [Set up ring based updates for HoloLens](hololens-updates.md)
 ## [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md)
 
-# User management and access management
-## [Share your HoloLens with multiple people](hololens-multiple-users.md)
-## [Set up HoloLens as a kiosk (single application access)](hololens-kiosk.md)
-## [Set up limited application access](hololens-kiosk.md)
-
 # Navigating Windows Holographic
 ## [Start menu and mixed reality home](holographic-home.md)
 ## [Use your voice with HoloLens](hololens-cortana.md)
 ## [Find and save files](hololens-find-and-save-files.md)
 ## [Create, share, and view photos and video](holographic-photos-and-video.md)
+
+# User management and access management
+## [Share your HoloLens with multiple people](hololens-multiple-users.md)
+## [Set up HoloLens as a kiosk (single application access)](hololens-kiosk.md)
+## [Set up limited application access](hololens-kiosk.md)
 
 # Holographic Applications
 ## [Try 3D Viewer](holographic-3d-viewer-beta.md)
