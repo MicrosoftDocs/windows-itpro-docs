@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot kernel extension issues in Microsoft Defender ATP for Mac
 ms.reviewer: 
-description: Describes how to troubleshoot kernel extension related issues in Microsoft Defender ATP for Mac.
+description: Describes how to troubleshoot kernel extension-related issues in Microsoft Defender ATP for Mac.
 keywords: microsoft, defender, atp, mac, kernel, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -28,7 +28,7 @@ This topic provides information on how to troubleshoot issues with the kernel ex
 
 Starting with macOS High Sierra (10.13), macOS requires all kernel extensions to be explicitly approved before they are allowed to run on the device.
 
-If you did not approve Microsoft's kernel extension during the deployment / installation of Microsoft Defender ATP for Mac, then the application displays a banner prompting you to enable it:
+If you did not approve the kernel extension during the deployment / installation of Microsoft Defender ATP for Mac, then the application displays a banner prompting you to enable it:
 
    ![RTP disabled screenshot](images/MDATP_32_Main_App_Fix.png)
 
