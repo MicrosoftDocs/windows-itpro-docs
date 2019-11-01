@@ -7,8 +7,8 @@ author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 09/03/2019
-ms.reviewer: 
+ms.date: 10/30/2019
+ms.reviewer: scooley
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
