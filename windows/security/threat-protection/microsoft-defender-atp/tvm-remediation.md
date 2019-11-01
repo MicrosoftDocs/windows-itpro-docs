@@ -79,7 +79,7 @@ However, you also have the option to filter your view based on exception justifi
 
 Aside from that, there's also an option to **Show exceptions** at the bottom of the **Top security recommendations** card in the dashboard. 
 
-![Screenshot of Show exceptions link in the  Top security recommendatations card in the dashboard](images/tvm-exception-dashboard.png)
+![Screenshot of Show exceptions link in the  Top security recommendations card in the dashboard](images/tvm-exception-dashboard.png)
 
 Clicking the link opens up to the **Security recommendations** page, where you can select the item exempted item with details.
 
@@ -90,7 +90,7 @@ Clicking the link opens up to the **Security recommendations** page, where you c
 -  Resurface - Your exception automatically becomes void and resurfaces in the security recommendation list when dynamic environmental factors change, which adversely affect the exposure impact associated with a recommendation that had previously been excluded
 
 ### Exception status
--   **Cancelled** - The exception has been cancelled and is no longer in effect  
+-   **Canceled** - The exception has been canceled and is no longer in effect  
 -   **Expired** - The exception that you've filed is no longer in effect
 -   **In effect** - The exception that you've filed is in progress
 
