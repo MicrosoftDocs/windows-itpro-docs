@@ -77,7 +77,7 @@ The cameras can see no closer than 15cm from an object.
 
 ### Surfaces in a space
 
-Strongly reflective surfaces will likely look different depending on the angle, which affects tracking. Think of a brand new car&mdash;when you move around it, light reflects and you see different objects in the surface as you move. To the tracker, the different objects reflected in the surface represent a changing environment, and the device loses tracking.
+Strongly reflective surfaces will likely look different depending on the angle, which affects tracking. Think of a brand new car - when you move around it, light reflects and you see different objects in the surface as you move. To the tracker, the different objects reflected in the surface represent a changing environment, and the device loses tracking.
 
 Less shiny objects are easier to track against.
 
