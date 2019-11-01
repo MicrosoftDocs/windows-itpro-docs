@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -294,7 +295,7 @@ This error has more than one possible cause. Attempt [quick fixes](quick-fixes.m
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 0x80073BC3 - 0x20009<br>
-0x8007002 - 0x20009<br>
+0x80070002 - 0x20009<br>
 0x80073B92 - 0x20009
 
 </table>
