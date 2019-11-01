@@ -24,7 +24,7 @@ ms.topic: conceptual
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
-This article provides information for how to define exclusions that apply to on-demand scans, and real-time protection and monitoring.
+This article provides information on how to define exclusions that apply to on-demand scans, and real-time protection and monitoring.
 
 >[!IMPORTANT]
 >The exclusions described in this article don't apply to other Microsoft Defender ATP for Mac capabilities, including endpoint detection and response (EDR). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections.
