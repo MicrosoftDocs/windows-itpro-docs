@@ -51,27 +51,29 @@ Process | A specific process (specified either by the full path or file name) an
 
 ### From the management console
 
-See [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md) for more details on how to configure exclusions from JAMF, Intune, or another management console.
+For more information on how to configure exclusions from JAMF, Intune, or another management console, see [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
 
 ### From the user interface
 
-Open the Microsoft Defender ATP application and navigate to **Manage settings** > **Add or Remove Exclusion...**, as shown in the following screenshot. Select the type of exclusion that you wish to add and follow the prompts.
+Open the Microsoft Defender ATP application and navigate to **Manage settings** > **Add or Remove Exclusion...**, as shown in the following screenshot:
 
 ![Manage exclusions screenshot](images/MDATP_37_Exclusions.png)
+
+Select the type of exclusion that you wish to add and follow the prompts.
 
 ## Validate exclusions lists with the EICAR test file
 
 You can validate that your exclusion lists are working by using `curl` to download a test file.
 
-In the following Bash snippet, replace *test.txt* with a file that conforms to your exclusion rules. For example, if you have excluded the .testing extension, replace *test.txt* with *test.testing*. If you are testing a path, ensure you run the command within that path.
+In the following Bash snippet, replace *test.txt* with a file that conforms to your exclusion rules. For example, if you have excluded the *.testing extension*, replace *test.txt* with *test.testing*. If you are testing a path, ensure that you run the command within that path.
 
 ```bash
 $ curl -o test.txt http://www.eicar.org/download/eicar.com.txt
 ```
 
-If Microsoft Defender ATP for Mac reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm the contents are the same as what is described on the [EICAR testfile website](http://www.eicar.org/86-0-Intended-use.html).
+If Microsoft Defender ATP for Mac reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm that the contents are the same as what is described on the [EICAR test file website](http://www.eicar.org/86-0-Intended-use.html).
 
-If you do not have Internet access, you can create your own EICAR test file by writing the EICAR string to a new text file with the following Bash command:
+If you do not have internet access, you can create your own EICAR test file. Write the EICAR string to a new text file with the following Bash command:
 
 ```bash
 echo 'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*' > test.txt

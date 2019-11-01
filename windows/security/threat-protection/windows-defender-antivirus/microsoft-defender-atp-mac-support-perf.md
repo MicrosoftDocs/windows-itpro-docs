@@ -28,11 +28,11 @@ This topic provides some general steps that can be used to narrow down performan
 
 Real-time protection (RTP) is a feature of Microsoft Defender ATP for Mac that continuously monitors and protects your device against threats. It consists of file and process monitoring and other heuristics.
 
-Depending on the applications that you are running and your device characteristics, you may experience suboptimal performance when running Microsoft Defender ATP for Mac. In particular, applications or system processes that access a large number of resources over a short timespan can lead to performance issues in Microsoft Defender ATP for Mac.
+Depending on the applications that you are running and your device characteristics, you may experience suboptimal performance when running Microsoft Defender ATP for Mac. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Microsoft Defender ATP for Mac.
 
 The following steps can be used to troubleshoot and mitigate these issues:
 
-1. Disable real-time protection using one of the following methods and observe whether the performance improves. This helps narrow down whether Microsoft Defender ATP for Mac is contributing to the performance issues.
+1. Disable real-time protection using one of the following methods and observe whether the performance improves. This approach helps narrow down whether Microsoft Defender ATP for Mac is contributing to the performance issues.
 
     If your device is not managed by your organization, real-time protection can be disabled using one of the following options:
 
@@ -40,7 +40,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
     ![Manage real-time protection screenshot](images/MDATP_36_RTP.png)
 
-    - From the Terminal using the following command. Note that, for security purposes, this operation requires elevation.
+    - From the Terminal. For security purposes, this operation requires elevation.
 
     ```bash
     $ mdatp --config realTimeProtectionEnabled false
