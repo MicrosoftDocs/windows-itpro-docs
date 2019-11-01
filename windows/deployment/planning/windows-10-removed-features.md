@@ -14,23 +14,22 @@ ms.topic: article
 
 # Features and functionality removed in Windows 10
 
-> Applies to: Windows 10, version 1909
+> Applies to: Windows 10
 
-Each version of Windows 10 adds new features and functionality; occasionally we also remove features and functionality, often because we've added a better option. Below are the details about the features and functionalities that we removed in Windows 10, version 1909. **The list below is subject to change and might not include every affected feature or functionality.** 
+Each version of Windows 10 adds new features and functionality; occasionally we also remove features and functionality, often because we've added a better option. Below are the details about the features and functionalities that we removed in Windows 10. **The list below is subject to change and might not include every affected feature or functionality.** 
 
 For information about features that might be removed in a future release, see [Windows 10 features we’re no longer developing](windows-10-deprecated-features.md)
 
 > [!NOTE]
 > Join the [Windows Insider program](https://insider.windows.com) to get early access to new Windows 10 builds and test these changes yourself.
 
-The following features and functionalities are removed from the installed product image for Windows 10. Applications or code that depend on these features won't function in the release when it was removed, or in later releases.
+The following features and functionalities have been removed from the installed product image for Windows 10. Applications or code that depend on these features won't function in the release when it was removed, or in later releases.
 
 |Feature    |  Details and mitigation  | Removed in version |
 | ----------- | --------------------- | ------ |
-| Video project OneDrive syncing in Photos | The option to upload and projects in OneDrive in when using the Video Editor in the Photos app is being removed.| 1909 |
-| Cortana voice commands (VCD) | After upgrading and the new Cortana UWP app is deployed, users will no longer be able to use custom voice commands to invoke apps locally using Cortana. | 1909 |
+| Video project OneDrive syncing in Photos | The feature that syncs in-progress video projects to OneDrive is being removed from the Video Editor in the Windows 10 Photos app. This is not directly tied to a Windows 10 release because the feature uses OneDrive, but it will affect the Windows 10 Photos app. The change is happening on January 10, 2020. More information is available [here](https://support.microsoft.com/help/4512628/windows-10-onedrive-video-project-syncing-in-photos).| 1909 |
+| Cortana voice commands | After upgrading and the new Cortana UWP app is deployed, users will no longer be able to use custom voice commands to invoke apps locally using Cortana. | 1909 |
 | PNRP APIs| ​The PNRP cloud service was removed in Windows 10, version 1809. We are planning to complete the removal process by removing the corresponding APIs.  | 1909 |
-| Problem Steps Recorder (PSR) and Setting Sync Framework (SSF) |  PSR and SSF are planned for removal in this release. SSF (Sync your settings) was deprecated in Windows 10, version 1703.​ | 1909 |
 | XDDM-based remote display driver  | Starting with this release the Remote Desktop Services uses a Windows Display Driver Model (WDDM) based Indirect Display Driver (IDD) for a single session remote desktop. The support for Windows 2000 Display Driver Model (XDDM) based remote display drivers will be removed in a future release. Independent Software Vendors that use XDDM-based remote display driver should plan a migration to the WDDM driver model. For more information on implementing remote indirect display driver ISVs can reach out to [rdsdev@microsoft.com](mailto:rdsdev@microsoft.com). | 1903 |
 | Desktop messaging app doesn't offer messages sync |  The messaging app on Desktop has a sync feature that can be used to sync SMS text messages received from Windows Mobile and keep a copy of them on the Desktop. The sync feature has been removed from all devices. Due to this change, you will only be able to access messages from the device that received the message.  | 1903 |
 |Business Scanning, also called Distributed Scan Management (DSM)|We're removing this secure scanning and scanner management capability - there are no devices that support this feature.| 1809 |
