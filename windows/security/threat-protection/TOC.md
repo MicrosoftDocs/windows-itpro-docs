@@ -9,7 +9,7 @@
 #### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
 #### [Configuration score](microsoft-defender-atp/configuration-score.md)
 #### [Security recommendation](microsoft-defender-atp/tvm-security-recommendation.md)
-#### [Remediation](microsoft-defender-atp/tvm-remediation.md)
+#### [Remediation and exception](microsoft-defender-atp/tvm-remediation.md)
 #### [Software inventory](microsoft-defender-atp/tvm-software-inventory.md)
 #### [Weaknesses](microsoft-defender-atp/tvm-weaknesses.md)
 #### [Scenarios](microsoft-defender-atp/threat-and-vuln-mgt-scenarios.md)
