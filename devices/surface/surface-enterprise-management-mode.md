@@ -9,8 +9,8 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 01/06/2017
-ms.reviewer: 
+ms.date: 10/31/2019
+ms.reviewer: scottmca
 manager: dansimp
 ms.localizationpriority: medium
 ms.audience: itpro
