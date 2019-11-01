@@ -320,8 +320,12 @@
 ##### [Manual deployment](windows-defender-antivirus/microsoft-defender-atp-mac-install-manually.md)
 #### [Update Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-updates.md)
 #### [Configure Microsoft Defender ATP for Mac]()
+##### [Configure and validate exclusions](windows-defender-antivirus/microsoft-defender-atp-mac-exclusions.md)
 ##### [Set preferences for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](windows-defender-antivirus/microsoft-defender-atp-mac-pua.md)
+#### [Troubleshoot Microsoft Defender ATP for Mac]()
+##### [Troubleshoot performance issues](windows-defender-antivirus/microsoft-defender-atp-mac-support-perf.md)
+##### [Troubleshoot kernel extension issues](windows-defender-antivirus/microsoft-defender-atp-mac-support-kext.md)
 #### [Privacy for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-privacy.md)
 #### [Resources for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-resources.md)
 
