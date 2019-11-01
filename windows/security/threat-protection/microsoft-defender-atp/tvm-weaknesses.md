@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: conceptual
-ms.date: 04/11/2019
+ms.date: 10/31/2019
 ---
 # Weaknesses
 **Applies to:**
@@ -126,6 +126,6 @@ You can report a false positive when you see any vague, inaccurate, missing, or 
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendation](tvm-security-recommendation.md)
-- [Remediation](tvm-remediation.md)
+- [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)

@@ -42,8 +42,8 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 | OSArchitecture | string | Architecture of the operating system running on the machine|
 | SoftwareVendor | string | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape|
 | SoftwareName | string | Name of the software product|
-|SoftwareVersion | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system|
-| CveId | string | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape|
+|SoftwareVersion | string | Version number of the software product|
+| CveId | string | Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system|
 | VulnerabilitySeverityLevel | string | Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape|
 
 
