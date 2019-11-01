@@ -60,7 +60,7 @@ See how you can [improve your security configuration](https://docs.microsoft.com
 >- RS3 customers | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
 >
 >To download the security updates:
->1. Go to [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/home.aspx).
+>1. Go to [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/home.aspx).
 >2. Key-in the security update KB number that you need to download, then click **Search**.  
 
 ## Related topics
