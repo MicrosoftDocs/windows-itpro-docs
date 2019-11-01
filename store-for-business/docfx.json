@@ -41,6 +41,7 @@
         "Store"
       ],
       "feedback_system": "None",
+      "hideEdit": true,
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.store-for-business",
