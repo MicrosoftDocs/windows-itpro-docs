@@ -57,7 +57,7 @@ For more information on how to configure exclusions from JAMF, Intune, or anothe
 
 Open the Microsoft Defender ATP application and navigate to **Manage settings** > **Add or Remove Exclusion...**, as shown in the following screenshot:
 
-![Manage exclusions screenshot](images/MDATP_37_Exclusions.png)
+![Manage exclusions screenshot](images/mdatp-37-Exclusions.png)
 
 Select the type of exclusion that you wish to add and follow the prompts.
 
