@@ -43,7 +43,7 @@ The follow table shows the exclusion types supported by Microsoft Defender ATP f
 Exclusion | Definition | Examples
 ---|---|---
 File extension | All files with the extension, anywhere on the machine | .test
-File | A specific file in the specified folder | /var/log/test.log
+File | A specific file identified by the full path | /var/log/test.log
 Folder | All files under the specified folder | /var/log/
 Process | A specific process (specified either by the full path or file name) and all files opened by it | /bin/cat<br/>cat
 
@@ -71,7 +71,7 @@ In the following Bash snippet, replace *test.txt* with a file that conforms to y
 $ curl -o test.txt http://www.eicar.org/download/eicar.com.txt
 ```
 
-If Microsoft Defender ATP for Mac reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm that the contents are the same as what is described on the [EICAR test file website](http://www.eicar.org/86-0-Intended-use.html).
+If Microsoft Defender ATP for Mac reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm that the contents are the same as what is described on the [EICAR test file website](http://2016.eicar.org/86-0-Intended-use.html).
 
 If you do not have internet access, you can create your own EICAR test file. Write the EICAR string to a new text file with the following Bash command:
 
