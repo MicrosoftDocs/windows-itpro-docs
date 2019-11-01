@@ -50,8 +50,6 @@ Cortana can also take a picture. Say: "Hey Cortana, take a picture."
 
 Use the Start gesture to go to **Start**, then select the **camera** icon.
 
-![Select the camera icon at the bottom of the Start menu](./images/cameraiconinpins-300px.png)
-
 Point your head in the direction of what you want to capture, then [air tap](hololens2-basic-usage.md#touch-holograms-near-you) to take a photo. You can continue to air tap and capture additional photos. Any photos you capture will be saved to your device.
 
 Use the Start gesture again to end photo capture.  
@@ -93,7 +91,7 @@ You can share what you see in HoloLens with friends and colleagues in real-time.
 > [!NOTE]
 > Sharing what you see via Windows Device Portal or Microsoft HoloLens companion app requires your HoloLens to be in [Developer mode](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal).
 
-**Miracast**
+### Stream video with Miracast
 
 Use the Start gesture to go to **Start**, then select the **connect** icon. From the picker that appears, select the Miracast-enabled device or adapter to which you want to connect.
 
@@ -102,11 +100,11 @@ To stop sharing, use the Start gesture and select the highlighted **connect** ic
 > [!NOTE]
 > Miracast support was enabled on HoloLens (1st gen) beginning with the [Windows 10 October 2018 Update](https://docs.microsoft.com/windows/mixed-reality/release-notes-october-2018).
 
-**Windows Device Portal**
+### Real time video with Windows Device Portal
 
 Because sharing via Windows Device Portal requires Developer mode to be enabled on HoloLens, follow the instructions in our developer documentation to [set up Developer mode and navigate Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal).
 
-**Microsoft HoloLens companion app**
+### Microsoft HoloLens companion app
 
 Because sharing via the Microsoft HoloLens companion app requires Developer mode to be enabled on HoloLens, follow the instructions in our developer documentation to [set up Developer mode](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal). Then, download the [Microsoft HoloLens companion app](https://www.microsoft.com/store/productId/9NBLGGH4QWNX) and follow the instructions within the app to connect to your HoloLens.
 
