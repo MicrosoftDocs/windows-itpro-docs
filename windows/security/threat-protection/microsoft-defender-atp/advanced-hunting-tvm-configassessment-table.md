@@ -26,7 +26,7 @@ ms.date: 10/27/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-[!includePrerelease information]
+[!include[Prerelease information](prerelease.md)]
 
 Each row in the DeviceTvmSecureConfigurationAssessment table contains an assessment event for a specific security configuration. Use this reference to check the latest assessment results and determine whether device are compliant.
 
