@@ -13,7 +13,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 07/27/2017
+ms.date: 10/31/2019
 ---
 
 # Step by step: Surface Deployment Accelerator
