@@ -25,6 +25,8 @@ ms.date: 10/08/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
+[!include[Prerelease information](prerelease.md)]
+
 The [Advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about machines and other entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the Advanced hunting schema.
 
 ## Schema tables
