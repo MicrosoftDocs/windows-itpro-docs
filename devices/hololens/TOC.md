@@ -34,11 +34,6 @@
 ## [Set up HoloLens as a kiosk (single application access)](hololens-kiosk.md)
 ## [Set up limited application access](hololens-kiosk.md)
 
-# User management and access management
-## [Share your HoloLens with multiple people](hololens-multiple-users.md)
-## [Set up HoloLens as a kiosk (single application access)](hololens-kiosk.md)
-## [Set up limited application access](hololens-kiosk.md)
-
 # Holographic Applications
 ## [Try 3D Viewer](holographic-3d-viewer-beta.md)
 ## [Find, install, and uninstall applications](holographic-store-apps.md)
