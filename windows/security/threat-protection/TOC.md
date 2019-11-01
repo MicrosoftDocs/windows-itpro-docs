@@ -322,6 +322,7 @@
 ##### [Detect and block Potentially Unwanted Applications](windows-defender-antivirus/microsoft-defender-atp-mac-pua.md)
 #### [Troubleshoot Microsoft Defender ATP for Mac]()
 ##### [Troubleshoot performance issues](windows-defender-antivirus/microsoft-defender-atp-mac-support-perf.md)
+##### [Troubleshoot kernel extension issues](windows-defender-antivirus/microsoft-defender-atp-mac-support-kext.md)
 #### [Privacy for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-privacy.md)
 #### [Resources for Microsoft Defender ATP for Mac](windows-defender-antivirus/microsoft-defender-atp-mac-resources.md)
 
