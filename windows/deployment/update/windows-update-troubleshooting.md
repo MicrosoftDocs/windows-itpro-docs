@@ -145,7 +145,21 @@ Go to Services.msc and ensure that Windows Firewall Service is enabled. Stopping
 Windows Update provides a wide range configuration policies to control the behavior of WU service in a managed environment. While these policies let you configure the settings at a granular level, misconfiguration or setting conflicting polices may lead to unexpected behaviors. 
  
 See [How to configure automatic updates by using Group Policy or registry settings](https://support.microsoft.com/help/328010/how-to-configure-automatic-updates-by-using-group-policy-or-registry-s) for more information.
- 
+
+## Whitelist URLs
+Ensure that your machine can access below Windows Update URLs:
+
+- http://windowsupdate.microsoft.com
+- http://*.windowsupdate.microsoft.com
+- https://*.windowsupdate.microsoft.com
+- http://*.update.microsoft.com
+- https://*.update.microsoft.com
+- http://*.windowsupdate.com
+- http://download.windowsupdate.com
+- https://download.microsoft.com
+- http://*.download.windowsupdate.com
+- http://wustat.windows.com
+- http://ntservicepack.microsoft.com
  
 ## Updates aren't downloading from the intranet endpoint (WSUS/SCCM) 
 Windows 10 devices can receive updates from a variety of sources, including Windows Update online, a Windows Server Update Services server, and others. To determine the source of Windows Updates currently being used on a device, follow these steps:  
