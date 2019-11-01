@@ -4,7 +4,7 @@ description: Microsoft Surface Deployment Accelerator provides a quick and simpl
 ms.assetid: E7991E90-4AAE-44B6-8822-58BFDE3EADE4
 ms.reviewer: hachidan
 manager: dansimp
-ms.date: 07/27/2017
+ms.date: 10/31/2019
 ms.localizationpriority: medium
 keywords: deploy, install, tool
 ms.prod: w10
@@ -18,7 +18,6 @@ ms.audience: itpro
 ---
 
 # Microsoft Surface Deployment Accelerator
-
 
 Microsoft Surface Deployment Accelerator (SDA) automates the creation and configuration of a Microsoft recommended deployment experience by using free Microsoft deployment tools. 
 
