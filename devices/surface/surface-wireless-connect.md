@@ -9,13 +9,12 @@ ms.audience: itpro
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.date: 08/15/2019
+ms.date: 10/31/2019
 ms.reviewer: tokatz
 manager: dansimp
 ---
 # Optimize Wi-Fi connectivity for Surface devices
 
-## Introduction
 
 To stay connected with all-day battery life, Surface devices implement wireless connectivity settings that balance performance and power conservation. Outside of the most demanding mobility scenarios, users can maintain sufficient wireless connectivity without modifying default network adapter or related settings. 
 
@@ -32,7 +31,7 @@ If you’re managing a wireless network that’s typically accessed by many diff
 - **802.11r.** “**Fast BSS Transition”** accelerates connecting to new wireless access points by reducing the number of frames required before your device can access another AP as you move around with your device.
 - **802.11k.** **“Neighbor Reports”** provides devices with information on current conditions at neighboring access points. It can help your Surface device choose the best AP using criteria other than signal strength such as AP utilization.
 
-Surface Go devices can also use 802.11v “BSS Transition Management Frames,” which functions much like 802.11k in providing information on nearby candidate APs.
+Specific Surface devices can also use 802.11v “BSS Transition Management Frames,” which functions much like 802.11k in providing information on nearby candidate APs. These include Surface Go, Surface Pro 7, Surface Pro X, and Surface Laptop 3. 
 
 ## Managing user settings
 
