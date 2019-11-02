@@ -33,7 +33,7 @@ A frequently observed result code is 0xC1900101. This result code can be thrown 
 - Event logs: $Windows.~bt\Sources\Rollback\*.evtx
 - The device install log: $Windows.~bt\Sources\Rollback\setupapi\setupapi.dev.log
 
-The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/kb/929135) before initiating the upgrade process. You can find the log file segment for error code at [Log files](https://docs.microsoft.com/windows/deployment/upgrade/log-files#analyze-log-files).
+The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/kb/929135) before initiating the upgrade process. For more details on the log file segment of the error code, see [Log files](https://docs.microsoft.com/windows/deployment/upgrade/log-files#analyze-log-files).
 
 <br>See the following general troubleshooting procedures associated with a result code of 0xC1900101:
 
