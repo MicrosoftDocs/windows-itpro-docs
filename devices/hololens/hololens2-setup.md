@@ -102,6 +102,7 @@ Not sure what the indicator lights on your HoloLens mean? Want to know how HoloL
 | - | - | - |
 | You press the Power button. | One light flashes five times, then turns off. | The HoloLens battery is critically low. Charge your HoloLens. |
 | You press the Power button. | All five lights flash five times, then turn off. |  HoloLens cannot start correctly and is in an error state. [Reinstall the operating system](hololens-recovery.md) to recover your device. |
+| You press the Power button. | The 1st, 3rd, and 5th lights flash together continually. |  HoloLens may have a Display failure. To be sure, [re-install the OS](hololens-recovery.md#hololens-2), and try again |
 
 ## Safety and comfort
 
