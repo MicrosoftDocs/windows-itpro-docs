@@ -1,20 +1,20 @@
 ---
-title: Optimizing wireless connectivity for Surface devices
-description: This topic provides guidance around recommended  wireless connectivity settings for network admins and users.
+title: Optimize Wi-Fi connectivity for Surface devices
+description: This topic describes recommended Wi-Fi settings to ensure Surface devices stay connected in congested network environments and mobile scenarios.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: dansimp
+ms.audience: itpro
 ms.localizationpriority: medium
 ms.author: dansimp
 ms.topic: article
-ms.date: 08/15/2019
-ms.reviewer: 
+ms.date: 10/31/2019
+ms.reviewer: tokatz
 manager: dansimp
 ---
-# Optimizing wireless connectivity for Surface devices
+# Optimize Wi-Fi connectivity for Surface devices
 
-## Introduction
 
 To stay connected with all-day battery life, Surface devices implement wireless connectivity settings that balance performance and power conservation. Outside of the most demanding mobility scenarios, users can maintain sufficient wireless connectivity without modifying default network adapter or related settings. 
 
@@ -26,12 +26,12 @@ This document assumes you have successfully deployed a wireless network that sup
 
 ## Configuring access points for optimal roaming capabilities
 
-If you’re managing a wireless network that’s typically accessed by many different types of client devices, it’s recommended to enable specific protocols on access points (APs) in your WLAN, as described in [Fast Roaming with 802.11k, 802.11v, and 802.11r](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/fast-roaming-with-802-11k--802-11v--and-802-11r). Surface devices can take advantage of the following wireless protocols:
+If you’re managing a wireless network that’s typically accessed by many different types of client devices, it’s recommended to enable specific protocols on access points (APs) in your WLAN, as described in [Fast Roaming with 802.11k, 802.11v, and 802.11r](https://docs.microsoft.com/windows-hardware/drivers/network/fast-roaming-with-802-11k--802-11v--and-802-11r). Surface devices can take advantage of the following wireless protocols:
 
 - **802.11r.** “**Fast BSS Transition”** accelerates connecting to new wireless access points by reducing the number of frames required before your device can access another AP as you move around with your device.
 - **802.11k.** **“Neighbor Reports”** provides devices with information on current conditions at neighboring access points. It can help your Surface device choose the best AP using criteria other than signal strength such as AP utilization.
 
-Surface Go devices can also use 802.11v “BSS Transition Management Frames,” which functions much like 802.11k in providing information on nearby candidate APs.
+Specific Surface devices can also use 802.11v “BSS Transition Management Frames,” which functions much like 802.11k in providing information on nearby candidate APs. These include Surface Go, Surface Pro 7, Surface Pro X, and Surface Laptop 3. 
 
 ## Managing user settings
 
@@ -75,7 +75,7 @@ Leave the roaming aggressiveness setting in the default state unless you’re en
 1. Go to **Start > Control Panel** > **Network and Internet** > **Network and Sharing Center.**
 2. Under **Connections** select **Wi-Fi** and then select **Properties.**
 3. Select **Client for Microsoft Networks** and then select **Configure**
-4. Select **Advanced** > **Roaming Aggressiveness** and choose ****your preferred value from the drop-down menu.
+4. Select **Advanced** > **Roaming Aggressiveness** and choose your preferred value from the drop-down menu.
 
 ![* Roaming aggressiveness settings *](images/wifi-roaming.png) <br>
 

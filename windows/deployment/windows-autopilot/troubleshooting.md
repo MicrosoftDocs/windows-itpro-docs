@@ -9,7 +9,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -47,7 +48,7 @@ If the expected Autopilot behavior does not occur during the out-of-box experien
 
 ### Windows 10 version 1803 and above
 
-To see details related to the Autopilot profile settings and OOBE flow, Windows 10 version 1803 and above adds event log entries.  These can be viewed using Event Viewer, navigating to the log at **Application and Services Logs –> Microsoft –> Windows –> Provisioning-Diagnostics-Provider –> AutoPilot**.  The following events may be recorded, depending on the scenario and profile configuration.
+To see details related to the Autopilot profile settings and OOBE flow, Windows 10 version 1803 and above adds event log entries.  These can be viewed using Event Viewer, navigating to the log at **Application and Services Logs –> Microsoft –> Windows –> Provisioning-Diagnostics-Provider –> AutoPilot** for versions before 1903, or **Application and Services Logs –> Microsoft –> Windows –> ModernDeployment-Diagnostics-Provider –> AutoPilot** for 1903 and above.  The following events may be recorded, depending on the scenario and profile configuration.
 
 | Event ID | Type | Description |
 |----------|------|-------------| 

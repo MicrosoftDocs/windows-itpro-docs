@@ -8,9 +8,11 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 1/15/2019
-ms.reviewer: 
+ms.date: 10/31/2019
+ms.reviewer: hachidan
 manager: dansimp
+ms.localizationpriority: medium
+ms.audience: itpro
 ---
 
 # Surface Brightness Control
@@ -59,6 +61,11 @@ Full Brightness   | Default: 100  <br>Option: Range of 0-100 percent of screen b
 | Telemetry  Enabled | Default: 01 <br>Option: 01, 00 <br> Type: REG_BINARY  | This setting allows you to manage the sharing of app usage information to improve software and provide better user experience. To disable telemetry, set the value to 00. If you do not configure this setting, telemetry information is shared with Microsoft in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). |
 
 ## Changes and updates
+
+### Version 1.16.137<br>
+*Release Date: 22 October 2019*<br>
+This version of Surface Brightness Control adds support for the following:
+-Recompiled for x86, adding support for Surface Pro 7, Surface Pro X, and Surface Laptop 3. 
 
 ### Version 1.12.239.0
 *Release Date: 26 April 2019*<br>

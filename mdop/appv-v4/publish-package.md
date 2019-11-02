@@ -1,11 +1,11 @@
 ---
 title: PUBLISH PACKAGE
 description: PUBLISH PACKAGE
-author: eavena
+author: dansimp
 ms.assetid: a33e72dd-194f-4283-8e99-4584ab13de53
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

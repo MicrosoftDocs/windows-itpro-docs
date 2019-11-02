@@ -42,7 +42,7 @@ Reduce the exposure score by addressing what needs to be remediated based on the
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
-- [Remediation](tvm-remediation.md)
+- [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)

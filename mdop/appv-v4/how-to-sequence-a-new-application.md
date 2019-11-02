@@ -1,11 +1,11 @@
 ---
 title: How to Sequence a New Application
 description: How to Sequence a New Application
-author: eavena
+author: dansimp
 ms.assetid: e01e98cd-2378-478f-9739-f72c465bf79a
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

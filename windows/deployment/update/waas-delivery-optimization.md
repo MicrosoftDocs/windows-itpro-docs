@@ -6,11 +6,11 @@ description: Delivery Optimization is a peer-to-peer distribution method in Wind
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
+
 audience: itpro
-author: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: jaimeo
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -63,9 +63,9 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 
 
 
-By default in Windows 10 Enterprise and Education editions, Delivery Optimization allows peer-to-peer sharing on the organization's own network only (specifically, all of the devices must be behind the same NAT), but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
+In Windows 10 Enterprise, Professional, and Education editions, Delivery Optimization is enabled by default for peer-to-peer sharing on the local network (NAT). Specifically, all of the devices must be behind the same NAT, but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
 
-For more details, see "Download mode" in [Delivery optimization reference](waas-delivery-optimization-reference.md#download-mode).
+For more details, see "Download mode" in [Delivery optimization reference](waas-delivery-optimization-reference.md).
 
 
 ## Set up Delivery Optimization
@@ -97,7 +97,12 @@ For more details, check out the [Adopting Windows as a Service at Microsoft](htt
 
 **Does Delivery Optimization work with WSUS?**: Yes. Devices will obtain the update payloads from the WSUS server, but must also have an internet connection as they communicate with the Delivery Optimization cloud service for coordination.
 
-**Which ports does Delivery Optimization use?**: For peer-to-peer traffic, it uses 7680 for TCP/IP or 3544 for NAT traversal (optionally Teredo). For client-service communication, it uses HTTP or HTTPS over port 80/443.
+**Which ports does Delivery Optimization use?**: Delivery Optimization listens on port 7680 for requests from other peers by using TCP/IP. The service will register and open this port on the device, but you might need to set this port to accept inbound traffic through your firewall yourself. If you don't allow inbound traffic over port 7680, you can't use the peer-to-peer functionality of Delivery Optimization. However, devices can still successfully download by using HTTP or HTTPS traffic over port 80 (such as for default Windows Update data).
+
+If you set up Delivery Optimization to create peer groups that include devices across NATs (or any form of internal subnet that uses gateways or firewalls between subnets), it will use Teredo. For this to work, you must allow inbound TCP/IP traffic over port 3544. Look for a "NAT traversal" setting in your firewall to set this up.
+
+Delivery Optimization also communicates with its cloud service by using HTTP/HTTPS over port 80.
+
 
 **What are the requirements if I use a proxy?**: You must allow Byte Range requests. See [Proxy requirements for Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update) for details.
 

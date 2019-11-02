@@ -1,11 +1,11 @@
 ---
 title: Publishing Virtual Applications Using Electronic Software Distribution
 description: Publishing Virtual Applications Using Electronic Software Distribution
-author: eavena
+author: dansimp
 ms.assetid: 295fbc1d-ed1c-43b4-aeee-0df384d4e630
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

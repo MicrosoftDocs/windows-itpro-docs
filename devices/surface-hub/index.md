@@ -1,7 +1,7 @@
 ---
 title: Surface Hub
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 layout: LandingPage
 ms.prod: surface-hub
@@ -9,7 +9,7 @@ ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 description: "Get started with Microsoft Surface Hub."
-localization_priority: High
+ms.localizationpriority: High
 ---
 # Get started with Surface Hub
 

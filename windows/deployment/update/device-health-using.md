@@ -2,11 +2,11 @@
 title: Using Device Health
 ms.reviewer: 
 manager: laurawi
-description: Explains how to begin usihg Device Health.
+description: Explains how to begin using Device Health.
 ms.prod: w10
 ms.mktglfcycl: deploy
 keywords: oms, operations management suite, wdav, health, log analytics
-ms.sitesec: library
+
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
@@ -16,6 +16,9 @@ ms.topic: article
 ---
 
 # Using Device Health
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 This section describes how to use Device Health to monitor devices deployed on your network and troubleshoot the causes if they crash.
 
@@ -93,7 +96,7 @@ Clicking a listed driver on the Driver-Induced OS Crashes blade opens a driver p
 ![Driver detail and history](images/driver-detail-1-sterile.png)
 ![Driver detail and history scrolldown](images/driver-detail-2-sterile.png)
 
-The driver version table can help you determine whether deploying a newer version of the driver might help you reduce the crash rate. In the example shown above, the most commonly installed driver version (19.15.1.5) has a crash rate of about one-half of one percent--this is low, so this driver is probably fine. However, driver version 19.40.0.3 has a crash rate of almost 20%. If that driver had been widely deployed, updating it would substantially reduce the overal number of crashes in your organization.
+The driver version table can help you determine whether deploying a newer version of the driver might help you reduce the crash rate. In the example shown above, the most commonly installed driver version (19.15.1.5) has a crash rate of about one-half of one percent--this is low, so this driver is probably fine. However, driver version 19.40.0.3 has a crash rate of almost 20%. If that driver had been widely deployed, updating it would substantially reduce the overall number of crashes in your organization.
 
 
 ## App Reliability
@@ -194,7 +197,8 @@ For example:
 
 *DHAppReliability | where AppFileDisplayName == "Microsoft Outlook"*
 
-
+#### Why does the computer name show up as Unknown?
+Starting with Windows 10, version 1803, the device name is no longer collected by default and requires a separate opt-in. For more information, see [Enrolling devices in Windows Analytics.](https://docs.microsoft.com/windows/deployment/update/windows-analytics-get-started) Allowing device names to be collected can make it easier for you to identify individual devices that report problems. Without the device name, Windows Analytics can only label devices by a GUID that it generates.
 
 ## Login Health
 
@@ -206,7 +210,7 @@ The Login Health blades appear in the Device Health dashboard:
 ![Main Login health view](images/login-health.png)
 
 ### Login Errors
-The **Login errors** blade displays data on the frequency and type of errors, with statistics on specific errors. They are generally categorized into user-generated (caused by bad input) or non-user-generated (might need IT intervention) errors. Click any individual error to see all instances of the error's occurence for the specified time period.
+The **Login errors** blade displays data on the frequency and type of errors, with statistics on specific errors. They are generally categorized into user-generated (caused by bad input) or non-user-generated (might need IT intervention) errors. Click any individual error to see all instances of the error's occurrence for the specified time period.
 
 ### Login Metrics by Type
 The **Login metrics by type** blade shows the success rate for your devices, as well as the success rate for other environments with a mix of operating system versions and device models similar to yours (the **Commercial average success rate**).
@@ -303,7 +307,7 @@ You can run these queries from the Azure Portal **Log Search** interface (availa
 
 ### Exporting data and configuring alerts
 
-Azure Portal enables you to export data to other tools. To do this, in any view that shows **Log Search** just click the **Export** button. Similarly, clicking the **Alert** button will enable you to run a query automaticlaly on a schedule and receive email alerts for particular query results that you set. If you have a PowerBI account, then you will also see a **PowerBI** button that enables you to run a query on a schedule and have the results automatically saved as a PowerBI data set.
+Azure Portal enables you to export data to other tools. To do this, in any view that shows **Log Search** just click the **Export** button. Similarly, clicking the **Alert** button will enable you to run a query automatically on a schedule and receive email alerts for particular query results that you set. If you have a PowerBI account, then you will also see a **PowerBI** button that enables you to run a query on a schedule and have the results automatically saved as a PowerBI data set.
 
 
 

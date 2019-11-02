@@ -2,15 +2,19 @@
 title: Upgrade Readiness - Targeting a new operating system version
 ms.reviewer: 
 manager: laurawi
-ms.author: greglin
+ms.author: jaimeo
 description: Explains how to run Upgrade Readiness again to target a different operating system version or bulk-approve all apps from a given vendor
 ms.prod: w10
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: jaimeo
 ms.topic: article
 ms.collection: M365-analytics
 ---
 
 # Targeting a new operating system version
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Get started with Update Compliance](../update/update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 After you've used Upgrade Readiness to help deploy a given version of Windows 10, you might want to use it again to help deploy a newer version of Windows 10. When you change the target operating system version (as described in [Use Upgrade Readiness to manage Windows upgrades](use-upgrade-readiness-to-manage-windows-upgrades.md#target-version)), the app states (Importance, AppOwner, UpgradeDecision, TestPlan, and TestResult) are not reset. Follow this guidance to preserve or reset these states as needed: 
  

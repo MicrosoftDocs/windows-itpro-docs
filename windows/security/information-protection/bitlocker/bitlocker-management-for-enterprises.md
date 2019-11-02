@@ -6,13 +6,13 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
-ms.author: dolmont
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/28/2019 
+ms.date: 02/28/2019
 ms.reviewer: 
 ---
 
@@ -136,10 +136,7 @@ PS C:\> Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpace
 
 <br />
 
-
-
-<a id="powershell"></a>
-# **PowerShell**
+**Powershell**
 
 [BitLocker cmdlets for Windows PowerShell](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md#bitlocker-cmdlets-for-windows-powershell) 
 

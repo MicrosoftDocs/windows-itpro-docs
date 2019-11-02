@@ -1,11 +1,11 @@
 ---
 title: Open Package Wizard (AppV 4.6 SP1)
 description: Open Package Wizard (AppV 4.6 SP1)
-author: eavena
+author: dansimp
 ms.assetid: 26bdef59-2ea3-4e30-9095-0ee0d0085b2d
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

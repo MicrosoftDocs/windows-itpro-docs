@@ -1,11 +1,11 @@
 ---
 title: Planning to Create the DaRT 8.0 Recovery Image
 description: Planning to Create the DaRT 8.0 Recovery Image
-author: msfttracyp
+author: dansimp
 ms.assetid: cfd0e1e2-c379-4460-b545-3f7be9f33583
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

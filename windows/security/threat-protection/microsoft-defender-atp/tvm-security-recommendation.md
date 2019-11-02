@@ -79,14 +79,12 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 6. Click **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts with its context.
 
 
-
-
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
-- [Remediation](tvm-remediation.md)
+- [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md) 

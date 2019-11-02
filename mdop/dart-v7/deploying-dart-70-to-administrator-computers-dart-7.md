@@ -1,11 +1,11 @@
 ---
 title: Deploying DaRT 7.0 to Administrator Computers
 description: Deploying DaRT 7.0 to Administrator Computers
-author: msfttracyp
+author: dansimp
 ms.assetid: 8baf26aa-b168-463c-810f-a165918b9d9f
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

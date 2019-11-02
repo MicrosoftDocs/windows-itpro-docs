@@ -7,8 +7,8 @@ manager: dansimp
 keywords: single forest deployment, on prem deployment, device account, Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.date: 08/28/2018
 ms.localizationpriority: medium
 ---

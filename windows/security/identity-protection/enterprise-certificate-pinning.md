@@ -2,10 +2,10 @@
 title: Enterprise Certificate Pinning
 ms.mktglfcycl: manage
 ms.sitesec: library
-description: Enterprise certificate pinning is a Windows feature for remembering, or “pinning” a root, issuing certificate authority, or end entity certificate to a given domain name.  
+description: Enterprise certificate pinning is a Windows feature for remembering, or “pinning” a root, issuing certificate authority, or end entity certificate to a given domain name.
 audience: ITPro
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article

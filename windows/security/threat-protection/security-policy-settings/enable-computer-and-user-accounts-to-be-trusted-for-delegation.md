@@ -84,6 +84,9 @@ Settings are applied in the following order through a Group Policy Object (GPO),
 
 When a local setting is greyed out, it indicates that a GPO currently controls that setting.
 
+> [!NOTE]
+> More information about configuring the policy can be found [here](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/how-to-configure-security-policy-settings).
+
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.

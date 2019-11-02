@@ -2,9 +2,9 @@
 title: What's in the dashboard and what it means for my organization's security posture
 description: What's in the Threat & Vulnerability Management dashboard and how it can help SecOps and Security Administrators arrive at informed decisions to address cybersecurity threat vulnerabilities and build their organization's security resilience. 
 keywords: mdatp-tvm, mdatp-tvm dashboard, threat & vulnerability management, risk-based threat & vulnerability management, security configuration, configuration score, exposure score    
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: eADQiWindows 10XVcnh
+search.product: eADQiWindows 10XVcnh
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,7 +21,7 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
 
 Threat & Vulnerability Management is a component of Microsoft Defender ATP, and provides both security administrators and security operations teams with unique value, including:
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
@@ -53,7 +53,7 @@ Area | Description
 (2) Threat & Vulnerability Management navigation pane | Use the navigation pane to move across the **Threat and Vulnerability Management Dashboard**, **Security recommendations**, **Remediation**, **Software inventory**, and **Weaknesses**.
 **Dashboards**	| Get a high-level view of the organization exposure score, organization configuration score, machine exposure distribution, top security recommendations, top vulnerable software, top remediation activities, and top exposed machines data.
 **Security recommendations** | See the list of security recommendations, their related components, insights, number or exposed devices, impact, and request for remediation. You can click each item on the list, a flyout panel opens with vulnerability details, open the software page, see the remediation, and exception options. You can also open a ticket in Intune if your machines are joined through Azure Active Directory and you have enabled your Intune connections in Microsoft Defender ATP. See [Security recommendations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) for more information.
-**Remediation** | See the remediation activity, related component, remediation type, status, due date, option to export the remediation and process data to CSV, and active exceptions. See [Remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-remediation) for more information.
+**Remediation** | See the remediation activity, related component, remediation type, status, due date, option to export the remediation and process data to CSV, and active exceptions. See [Remediation and exception](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-remediation) for more information.
 **Software inventory** | See the list of applications, versions, weaknesses, whether there’s an exploit found on the application, prevalence in the organization, how many were installed, how many exposed devices are there, and the numerical value of the impact. You can select each item in the list and opt to open the software page which shows the associated vulnerabilities, misconfigurations, affected machine, version distribution details, and missing KBs or security updates. See [Software inventory](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-software-inventory) for more information.
 **Weaknesses** | See the list of common vulnerabilities and exposures, the severity, its common vulnerability scoring system (CVSS) V3 score, related software, age, when it was published, related threat alerts, and how many exposed machines are there. You can select each item in the list and it opens a flyout panel with the vulnerability description and other details. See [Weaknesses](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses) for more information.
 (3) Threat & Vulnerability Management dashboard | Access the **Exposure score**, **Configuration score**, **Exposure distribution**, **Top security recommendations**, **Top vulnerable software**, **Top remediation activities**, and **Top exposed machines**.
@@ -73,7 +73,7 @@ See [Microsoft Defender ATP icons](https://docs.microsoft.com/windows/security/t
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
-- [Remediation](tvm-remediation.md)
+- [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)

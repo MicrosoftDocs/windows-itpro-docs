@@ -1,16 +1,16 @@
 ---
-title: Custom detections overview
+title: Overview of custom detections in Microsoft Defender ATP
 ms.reviewer: 
-description: Understand how you can leverage the power of advanced hunting to create custom detections
-keywords: custom detections, detections, advanced hunting, hunt, detect, query
+description: Understand how you can use Advanced hunting to create custom detections and generate alerts
+keywords: custom detections, alerts, detection rules, advanced hunting, hunt, query, response actions, interval, mdatp, microsoft defender atp
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: lomayor
+author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -23,18 +23,17 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured machines. This is made possible by customizable detection rules that automatically trigger alerts as well as response actions.
 
-Alerts in Microsoft Defender ATP are surfaced through the system based on signals gathered from endpoints. With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious events or emerging threats.
+Custom detections work with [Advanced hunting](advanced-hunting-overview.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network. The queries run every 24 hours, generating alerts and taking response actions whenever there are matches.
 
-This can be done by leveraging the power of [Advanced hunting](overview-hunting.md) through the creation of custom detection rules. 
-Custom detections are queries that run periodically every 24 hours and can be configured so that when the query meets the criteria you set, alerts are created and are surfaced in Microsoft Defender Security Center. These alerts will be treated like any other alert in the system.
-
-This capability is particularly useful for scenarios when you want to pro-actively prevent threats and be notified quickly of emerging threats.
+Custom detections provide:
+- Alerts for rule-based detections built from Advanced hunting queries
+- Automatic response actions that apply to files and machines
 
 >[!NOTE]
 >To create and manage custom detections, [your role](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) needs to have the **manage security settings** permission.
 
 ## Related topic
-- [Create custom detection rules](custom-detection-rules.md)
-
-
+- [Create and manage custom detection rules](custom-detection-rules.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)

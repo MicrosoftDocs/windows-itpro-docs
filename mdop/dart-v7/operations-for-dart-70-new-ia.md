@@ -1,11 +1,11 @@
 ---
 title: Operations for DaRT 7.0
 description: Operations for DaRT 7.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 5566d817-fc14-4408-ba01-1d87fbc132d9
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

@@ -5,7 +5,7 @@ manager: laurawi
 description: You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices.
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
+
 audience: itpro
 author: jaimeo
 ms.localizationpriority: medium

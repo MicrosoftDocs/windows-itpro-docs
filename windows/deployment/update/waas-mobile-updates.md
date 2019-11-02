@@ -3,7 +3,6 @@ title: Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile
 description: tbd
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo

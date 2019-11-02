@@ -5,14 +5,18 @@ manager: laurawi
 description: Describes how to resolve application and driver issues that can occur during an upgrade with Upgrade Readiness.
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics, 
 ms.prod: w10
-audience: itproauthor: greg-lindsay
-ms.author: greglin
+audience: itpro
+author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: medium
 ms.topic: article
 ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness - Step 2: Resolve app and driver issues
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Get started with Update Compliance](../update/update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 This section of the Upgrade Readiness workflow reports application and driver inventory and shows you which applications have known issues, which applications have no known issues, and which drivers have issues. We identify applications and drivers that need attention and suggest fixes when we know about them.
 
@@ -103,7 +107,7 @@ If you query with RollupLevel="NamePublisher", each version of the application c
 > 
 > Upgrade Readiness also has a roll up level of **NamePublisher**, This level enables you to ignore different app versions within your organization for a particular app.  In other words, **NamePublisher** displays statistics about a given app, aggregated across all versions.
 
-The following table lists possible values for **ReadyForWindows** and what they mean. For more information, see [What does the Adoption Status mean?](https://developer.microsoft.com/en-us/windows/ready-for-windows#/faq/?scrollTo=faqStatuses)
+The following table lists possible values for **ReadyForWindows** and what they mean. For more information, see [What does the Adoption Status mean?](https://developer.microsoft.com/windows/ready-for-windows#/faq/?scrollTo=faqStatuses)
 
 | Ready for Windows Status | Query rollup level | What this means | Guidance |
 |-------------------|--------------------------|-----------------|----------|
@@ -170,7 +174,7 @@ Planning and executing an OS upgrade project can be overwhelming. When you are t
 
 The Upgrade Readiness proposed action plan is an optimally ordered list of apps and drivers that are in need of review.  By testing apps and drivers in the order suggested by the proposed action plan, you are able to increase your number of “Ready to upgrade” computers in an efficient manner.  The action plan can be a very powerful tool during upgrade planning – but it’s most helpful when it’s used correctly.  This topic explains the proposed action plan, describes how to use it, and calls out a few misconceptions and invalid use cases that you should avoid.
 
-The proposed action plan represents the order thath Microsoft recommends you rationalize the upgrade-readiness of your apps and drivers.  By validating apps and drivers in the order proposed, you can ensure that you are testing efficiently.  
+The proposed action plan represents the order that Microsoft recommends you rationalize the upgrade-readiness of your apps and drivers.  By validating apps and drivers in the order proposed, you can ensure that you are testing efficiently.  
 
 Each item in the proposed action plan represents either an application or a driver that you have not yet marked “Ready to upgrade.”
 

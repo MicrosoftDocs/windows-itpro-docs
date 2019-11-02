@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender ATP for Mac
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to install and use Microsoft Defender ATP for Mac.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
+keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -14,7 +14,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -27,7 +27,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ## What’s new in the latest release
 
-Since the announcement of the public preview, Microsoft has been working non-stop to enhance the product, by listening to customer feedback. We've added management features and more granular controls for diagnostic data collection, refined the user experience, and fixed bugs.
+[What's new](microsoft-defender-atp-mac-whatsnew.md)
 
 If you have any feedback that you would like to share, submit it by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
 
@@ -43,8 +43,10 @@ If you have any feedback that you would like to share, submit it by opening Micr
 
 > [!CAUTION]
 > The three most recent major releases of macOS are supported. Beta versions of macOS are not supported.
+>
+> macOS Sierra (10.12) support will end on January 1, 2020.
 
-- Supported macOS versions: 10.14 (Mojave), 10.13 (High Sierra), 10.12 (Sierra)
+- Supported macOS versions: 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
 - Disk space: 650 MB
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
@@ -69,7 +71,7 @@ To test that a connection is not blocked, open [https://x.cp.wd.microsoft.com/ap
 If you prefer the command line, you can also check the connection by running the following command in Terminal:
 
 ```bash
-curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
+$ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping'
 ```
 
 The output from this command should be similar to the following:

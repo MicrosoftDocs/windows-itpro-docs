@@ -6,12 +6,14 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 05/21/2019
+ms.localizationpriority: medium
+ms.date: 09/27/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Policy CSP - System
+
 
 
 <hr/>
@@ -100,26 +102,34 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -164,26 +174,34 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td></td>
-	<td></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -238,26 +256,34 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td></td>
-	<td></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -299,26 +325,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -351,26 +385,34 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -395,7 +437,7 @@ The following list shows the supported values:
 
 -   0 – Disabled.
 -   1 (default) – Permits Microsoft to configure device settings only.
--   2 – Allows Microsoft to conduct full experimentations.
+-   2 – Allows Microsoft to conduct full experimentation.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -408,26 +450,34 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -479,26 +529,34 @@ To verify if System/AllowFontProviders is set to true:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -532,9 +590,9 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 – Force Location Off. All Location Privacy settings are toggled off and greyed out. Users cannot change the settings, and no apps are allowed access to the Location service, including Cortana and Search.
+-   0 – Force Location Off. All Location Privacy settings are toggled off and grayed out. Users cannot change the settings, and no apps are allowed access to the Location service, including Cortana and Search.
 -   1 (default) – Location service is allowed. The user has control and can change Location Privacy settings on or off.
--   2 – Force Location On. All Location Privacy settings are toggled on and greyed out. Users cannot change the settings and all consent permissions will be automatically suppressed.
+-   2 – Force Location On. All Location Privacy settings are toggled on and grayed out. Users cannot change the settings and all consent permissions will be automatically suppressed.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -547,26 +605,34 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -599,26 +665,34 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -729,26 +803,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -763,16 +845,13 @@ Specifies whether to allow the user to factory reset the device by using control
 
 Most restricted value is 0.
 
-<!--/Description-->
 > [!TIP]
 > This policy is also applicable to Windows 10 and not exclusive to phone.
-> <!--SupportedValues-->
-> The following list shows the supported values:
-> orted values:
-
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:  
 -   0 – Not allowed.
 -   1 (default) – Allowed to reset to factory default settings.
-
 <!--/SupportedValues-->
 <!--/Policy-->
 
@@ -784,26 +863,34 @@ Most restricted value is 0.
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -852,26 +939,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td></td>
-	<td></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -918,26 +1013,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td></td>
-	<td></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -972,26 +1075,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td></td>
-	<td></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1006,10 +1117,10 @@ This policy setting determines whether people can change their own telemetry lev
 
 If you set this policy setting to "Disable Telemetry opt-in Settings", telemetry levels are disabled in Settings, preventing people from changing them.
 
-If you set this policy setting to "Enable Telemetry opt-in Setings" or don't configure this policy setting, people can change their own telemetry levels in Settings.
+If you set this policy setting to "Enable Telemetry opt-in Settings" or don't configure this policy setting, people can change their own telemetry levels in Settings.
 
-Note:
-Set the Allow Telemetry policy setting to prevent people from sending diagnostic data to Microsoft beyond your organization's limit.
+> [!Note]
+> Set the Allow Telemetry policy setting to prevent people from sending diagnostic data to Microsoft beyond your organization's limit.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1031,26 +1142,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td></td>
-	<td></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1094,26 +1213,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td></td>
-	<td></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1157,26 +1284,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1209,26 +1344,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1283,26 +1426,34 @@ To validate on Desktop, do the following:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1351,26 +1502,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td></td>
-	<td></td>
+    <td>Home</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1401,26 +1560,34 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1466,26 +1633,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1520,26 +1695,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td></td>
-	<td></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 </tr>
 </table>
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1578,39 +1761,16 @@ The following list shows the supported values:
 
 <!--/Validation-->
 <!--/Policy-->
-
-<!--/Policies-->
-
-<!--StartHoloLens2-->
-## <a href="" id="hololens2policies"></a>System policies supported by HoloLens 2
-
-- [System/AllowCommercialDataPipeline](#system-allowcommercialdatapipeline)
-- [System/AllowLocation](#system-allowlocation)
-- [System/AllowStorageCard](#system-allowstoragecard)
-- [System/AllowTelemetry](#system-allowtelemetry)
- <!--EndHoloLens2-->
-
-<!--StartHoloLensBusiness-->
-## <a href="" id="hololensbusinessspolicies"></a>System policies supported by HoloLens (1st gen) Commercial Suite
-
-- [System/AllowLocation](#system-allowlocation)
-- [System/AllowTelemetry](#system-allowtelemetry)
- <!--EndHoloLensBusiness-->
-
-<!--StartHoloLens-->
-## <a href="" id="hololenspolicies"></a>System policies supported by HoloLens (1st gen) Development Edition
-
-- [System/AllowLocation](#system-allowlocation)
-- [System/AllowTelemetry](#system-allowtelemetry)
-<!--EndHoloLens-->
-
 <hr/>
 
 Footnotes:
 
-- 1 - Added in Windows 10, version 1607.
-- 2 - Added in Windows 10, version 1703.
-- 3 - Added in Windows 10, version 1709.
-- 4 - Added in Windows 10, version 1803.
-- 5 - Added in Windows 10, version 1809.
-- 6 - Added in Windows 10, version 1903.
+-   1 - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
+-   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in Windows 10, version 1903.
+
+<!--/Policies-->
+

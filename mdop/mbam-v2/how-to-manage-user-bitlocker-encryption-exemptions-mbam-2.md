@@ -1,11 +1,11 @@
 ---
 title: How to Manage User BitLocker Encryption Exemptions
 description: How to Manage User BitLocker Encryption Exemptions
-author: msfttracyp
+author: dansimp
 ms.assetid: 1bfd9d66-6a9a-4d0e-b54a-e5a6627f5ada
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -37,6 +37,9 @@ This means that if you have a mix of computers, such as member servers that run 
 
 This topic also covers related events, and how to enable audit mode before constraining the security principals that are allowed to remotely enumerate users and groups so that your environment remains secure without impacting application compatibility. 
 
+> [!NOTE]
+> Implementation of this policy [could affect offline address book generation](https://support.microsoft.com/help/4055652/access-checks-fail-because-of-authz-access-denied-error-in-windows-ser) on servers running Microsoft Exchange 2016 or Microsoft Exchange 2013.
+
 ## Reference
 
 The SAMRPC protocol makes it possible for a low privileged user to query a machine on a network for data. 

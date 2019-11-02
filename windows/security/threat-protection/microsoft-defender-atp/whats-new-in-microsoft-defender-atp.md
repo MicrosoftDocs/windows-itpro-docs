@@ -25,11 +25,30 @@ ms.topic: conceptual
 
 The following features are generally available (GA) in the latest release of Microsoft Defender ATP as well as security features in Windows 10 and Windows Server.
 
-
 For more information preview features, see [Preview features](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-windows-defender-advanced-threat-protection).
 
 
+## October 2019
+
+- [Indicators for IP addresses, URLs/Domains](manage-indicators.md) <BR> You can now allow or block URLs/domains using your own threat intelligence. 
+
+
+- [Microsoft Threat Experts - Experts on Demand](microsoft-threat-experts.md) <BR> You now have the option to consult with Microsoft Threat Experts from several places in the portal to help you in the context of your investigation.   
+ 
+- [Connected Azure AD applications](connected-applications.md)<br> The Connected applications page provides information about the Azure AD applications connected to Microsoft Defender ATP in your organization. 
+
+- [API Explorer](api-explorer.md)<br> The API explorer makes it easy to construct and perform API queries, test and send requests for any available Microsoft Defender ATP API endpoint.
+
+
 ## September 2019
+
+- [Tamper Protection settings using Intune](../windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-using-intune)<br/>You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management portal (Intune).
+
+- [Live response](live-response.md)<BR> Get instantaneous access to a machine using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats - real-time.
+
+- [Evaluation lab](evaluation-lab.md) <BR> The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of machine and environment configuration so that you can
+ focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
+
 - [Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016) <BR> You can now onboard Windows Server 2008 R2 SP1.
 
 

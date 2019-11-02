@@ -1,11 +1,11 @@
 ---
 title: Accessibility for UE-V 2.x
 description: Accessibility for UE-V 2.x
-author: levinec
+author: dansimp
 ms.assetid: ec05da5f-4558-4d4d-9b58-3b8ed68cf2fe
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

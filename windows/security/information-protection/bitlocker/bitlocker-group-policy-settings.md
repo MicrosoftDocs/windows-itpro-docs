@@ -8,8 +8,8 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
-ms.author: dolmont
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -400,7 +400,7 @@ This policy setting allows you to block direct memory access (DMA) for all hot p
 
 **Reference**
 
-This policy setting is only enforced when BitLocker or device encyption is enabled. As explained in the [Microoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2018/01/18/issue-with-bitlockerdma-setting-in-windows-10-fall-creators-update-v1709/), in some cases when this setting is enabled, internal, PCI-based peripherals can fail, including wireless network drivers and input and audio peripherals. This problem is fixed in the [April 2018 quality update](https://support.microsoft.com/help/4093105/windows-10-update-kb4093105).
+This policy setting is only enforced when BitLocker or device encryption is enabled. As explained in the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2018/01/18/issue-with-bitlockerdma-setting-in-windows-10-fall-creators-update-v1709/), in some cases when this setting is enabled, internal, PCI-based peripherals can fail, including wireless network drivers and input and audio peripherals. This problem is fixed in the [April 2018 quality update](https://support.microsoft.com/help/4093105/windows-10-update-kb4093105).
 
 ### <a href="" id="bkmk-dpinchange"></a>Disallow standard users from changing the PIN or password
 
@@ -2435,7 +2435,7 @@ You can configure the Federal Information Processing Standard (FIPS) setting for
 </tr>
 <tr class="even">
 <td align="left"><p><strong>When enabled</strong></p></td>
-<td align="left"><p>Users will be unable to save a recovery password to any location. This includes AD DS and network folders. In addition, you cannot use WMI or the BitLocker Drive Encryption Setup izard to create a recovery password.</p></td>
+<td align="left"><p>Users will be unable to save a recovery password to any location. This includes AD DS and network folders. In addition, you cannot use WMI or the BitLocker Drive Encryption Setup wizard to create a recovery password.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>When disabled or not configured</strong></p></td>

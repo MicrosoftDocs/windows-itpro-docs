@@ -49,6 +49,9 @@ To add machine tags using API, see [Add or remove machine tags API](add-or-remov
 
 Tags are added to the machine view and will also be reflected on the **Machines list** view. You can then use the **Tags** filter to see the relevant list of machines.
 
+>[!NOTE]
+> Filtering might not work on tag names that contain parenthesis.
+
 You can also delete tags from this view.
 
 ![Image of adding tags on a machine](images/more-manage-tags.png)
@@ -61,6 +64,9 @@ You can also delete tags from this view.
 >- Windows Server, version 1803 or later
 >- Windows Server 2016
 >- Windows Server 2012 R2
+>- Windows Server 2008 R2 SP1
+>- Windows 8.1
+>- Windows 7 SP1
 
 Machines with similar tags can be handy when you need to apply contextual action on a specific list of machines.
 

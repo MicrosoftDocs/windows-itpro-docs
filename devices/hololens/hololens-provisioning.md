@@ -36,7 +36,7 @@ The HoloLens wizard helps you configure the following settings in a provisioning
 - Upgrade to the enterprise edition
 
     >[!NOTE]
-    >Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
+    >Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 
 - Configure the HoloLens first experience (OOBE)
 - Configure Wi-Fi network 
@@ -90,7 +90,7 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 ## Create a provisioning package for HoloLens using advanced provisioning
 
 >[!NOTE]
->Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
+>Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 
 1. On the Windows Configuration Designer start page, select **Advanced provisioning**.
 2. In the **Enter project details** window, specify a name for your project and the location for your project. Optionally, enter a brief description to describe your project.
@@ -186,7 +186,7 @@ In Windows Configuration Designer, when you create a provisioning package for Wi
 | --- | --- |
 | **Certificates** | Deploy a certificate to HoloLens.  |
 | **ConnectivityProfiles** | Deploy a Wi-Fi profile to HoloLens.   |
-| **EditionUpgrade** | [Upgrade to Windows Holographic for Business.](hololens-upgrade-enterprise.md)  |
+| **EditionUpgrade** | [Upgrade to Windows Holographic for Business.](hololens1-upgrade-enterprise.md)  |
 | **Policies** | Allow or prevent developer mode on HoloLens. [Policies supported by Windows Holographic for Business](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies) |
 
 >[!NOTE]

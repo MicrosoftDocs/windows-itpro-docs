@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender Advanced Threat Protection
 description: Microsoft Defender Advanced Threat Protection is an enterprise security platform that helps secops to prevent, detect, investigate, and respond to possible cybersecurity threats related to advanced persistent threats.
-keywords: introduction to Microsoft Defender Advanced Threat Protection, introduction to Microsoft Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection
+keywords: introduction to Microsoft Defender Advanced Threat Protection, introduction to Microsoft Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection, cyber threat hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -19,9 +19,9 @@ ms.topic: conceptual
 
 # Microsoft Defender Advanced Threat Protection
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink)
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink)
 >
->For more info about Windows 10 Enterprise Edition features and functionality, see [Windows 10 Enterprise edition](https://www.microsoft.com/WindowsForBusiness/buy).
+> For more info about Windows 10 Enterprise Edition features and functionality, see [Windows 10 Enterprise edition](https://www.microsoft.com/WindowsForBusiness/buy).
 
 Microsoft Defender Advanced Threat Protection is a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
@@ -66,9 +66,9 @@ Microsoft Defender ATP uses the following combination of technology built into W
 <br>
 
 
->[!TIP]
->- Learn about the latest enhancements in Microsoft Defender ATP: [What's new in Microsoft Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
->- Microsoft Defender ATP demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> [!TIP]
+> - Learn about the latest enhancements in Microsoft Defender ATP: [What's new in Microsoft Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+> - Microsoft Defender ATP demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 <a name="tvm"></a>
 
@@ -78,7 +78,7 @@ This built-in capability uses a game-changing risk-based approach to the discove
 <a name="asr"></a>
 
 **[Attack surface reduction](overview-attack-surface-reduction.md)**<br>
-The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
+The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation. This set of capabilities also includes [network protection](network-protection.md) and [web protection](web-protection-overview.md), which regulate access to malicious IP addresses, domains, and URLs. 
 
 <a name="ngp"></a>
 
@@ -88,8 +88,7 @@ To further reinforce the security perimeter of your network, Microsoft Defender 
 <a name="edr"></a>
 
 **[Endpoint detection and response](overview-endpoint-detection-response.md)**<br>
-Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
-You can also do advanced hunting to create custom threat intelligence and use a powerful search and query tool to hunt for possible threats in your organization.
+Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. [Advanced hunting](advanced-hunting-overview.md) provides a query-based threat-hunting tool that lets you proactively find breaches and create custom detections.
 
 <a name="ai"></a>
 
@@ -99,7 +98,7 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 <a name="ss"></a>
 
 **[Secure score](overview-secure-score.md)**<br>
->[!NOTE]
+> [!NOTE]
 >  Secure score is now part of [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) as [Configuration score](configuration-score.md). The secure score page will be available for a few weeks. View the [Secure score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score) page.
 
 Microsoft Defender ATP includes a secure score to help you dynamically assess the security state of your enterprise network, identify unprotected systems, and take recommended actions to improve the overall security of your organization.
@@ -127,7 +126,7 @@ To help you maximize the effectiveness of the security platform, you can configu
 Topic | Description
 :---|:---
 [Overview](overview.md) | Understand the concepts behind the capabilities in Microsoft Defender ATP so you take full advantage of the complete threat protection platform. 
-[Get started](get-started.md) | Learn about the requirements of the platform and the initial steps you need to take to get started with Microsoft Defender ATP.
+[Minimum requirements](minimum-requirements.md) | Learn about the requirements of the platform and the initial steps you need to take to get started with Microsoft Defender ATP.
 [Configure and manage capabilities](onboard.md)| Configure and manage the individual capabilities in Microsoft Defender ATP. 
 [Troubleshoot Microsoft Defender ATP](troubleshoot-mdatp.md) | Learn how to address issues that you might encounter while using the platform.
 

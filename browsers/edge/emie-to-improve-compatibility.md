@@ -4,8 +4,8 @@ ms.assetid: 89c75f7e-35ca-4ca8-96fa-b3b498b53bE4
 ms.reviewer: 
 audience: itpro
 manager: dansimp
-author: eavena
-ms.author: eravena
+author: dansimp
+ms.author: dansimp
 ms.manager: dansimp
 ms.prod: edge
 ms.topic: reference
@@ -19,6 +19,9 @@ ms.localizationpriority: medium
 # Use Enterprise Mode to improve compatibility
 
 > Applies to: Windows 10
+
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
 If you have specific websites and apps that have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the websites open in Internet Explorer 11 automatically. Additionally, if you know that your intranet sites aren't going to work correctly with Microsoft Edge, you can set all intranet sites to automatically open using IE11 with the **Send all intranet sites to IE** group policy.
 

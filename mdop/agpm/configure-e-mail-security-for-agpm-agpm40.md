@@ -1,11 +1,11 @@
 ---
 title: Configure E-Mail Security for AGPM
 description: Configure E-Mail Security for AGPM
-author: mjcaparas
+author: dansimp
 ms.assetid: b9c48894-0a10-4d03-8027-50ed3b02485a
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

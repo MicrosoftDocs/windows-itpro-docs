@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
+ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -28,7 +29,7 @@ ms.topic: article
 > [!TIP]
 > Go to **Advanced features** in the **Settings** page to turn on the preview features.
 > 
-> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
 
 Understand the security status of your organization, including the status of machines, alerts, and investigations using the Microsoft Defender ATP reporting feature that integrates with Power BI. 
 
@@ -140,7 +141,7 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 
     ![Settings with download connector button](images/atp-download-connector.png)
 
-4. Create a new directory `Microsoft Power BI Desktop\Custom Connectors` under the user's Documents folder.
+4. Create a new directory `[Documents]\Power BI Desktop\Custom Connectors`.
 
 5. Copy WDATPDataConnector.mez from the zip to the directory you just created.
 
@@ -149,6 +150,9 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 7. Click **File** > **Options and settings** > **Custom data connectors**.
 
 8. Select **New table and matrix visuals** and **Custom data connectors** and click **OK**.
+
+    > [!NOTE]
+    > If you plan on using Custom Connectors or connectors that you or a third party has developed, you must select *(Not Recommended) Allow any extension to load without warning* under **Power BI Desktop** > **File** > **Options and settings** > **Options** > **Security** > **Data Extensions**".
     
     >[!NOTE]
     >If you are using Power BI Desktop July 2017 version (or later), you won't need to select **New table and matrix visuals**. You'll only need to select **Custom data connectors**.
@@ -171,7 +175,7 @@ After completing the steps in the Before you begin section, you can proceed with
 
 
 ## Mashup Microsoft Defender ATP data with other data sources
-You can use Power BI Desktop to analyse data from Microsoft Defender ATP and mash that data up with other data sources to gain better security perspective in your organization.
+You can use Power BI Desktop to analyze data from Microsoft Defender ATP and mash that data up with other data sources to gain better security perspective in your organization.
 
 1. In Power BI Desktop, in the Home ribbon, click **Get data** and search for **Microsoft Defender Advanced Threat Protection**.
 

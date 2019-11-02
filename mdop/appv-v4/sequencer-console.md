@@ -1,11 +1,11 @@
 ---
 title: Sequencer Console
 description: Sequencer Console
-author: eavena
+author: dansimp
 ms.assetid: 69e0202d-be2c-41cc-99cb-2a08a034e804
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

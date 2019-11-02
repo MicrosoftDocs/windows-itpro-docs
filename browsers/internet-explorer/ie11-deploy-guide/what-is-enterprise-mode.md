@@ -3,12 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Info about the features included in Enterprise Mode with Internet Explorer 11.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 3c77e9f3-eb21-46d9-b5aa-f9b2341cfefa
 ms.reviewer: 
-audience: itpromanager: dansimp
-ms.author: lomayor
+audience: itpro
+manager: dansimp
+ms.author: dansimp
 title: Enterprise Mode and the Enterprise Mode Site List (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 10/25/2018

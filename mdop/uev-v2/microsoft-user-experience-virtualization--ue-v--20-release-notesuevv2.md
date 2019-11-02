@@ -1,11 +1,11 @@
 ---
 title: Microsoft User Experience Virtualization (UE-V) 2.0 Release Notes
 description: Microsoft User Experience Virtualization (UE-V) 2.0 Release Notes
-author: levinec
+author: dansimp
 ms.assetid: 5ef66cd1-ba2b-4383-9f45-e7cde41f1ba1
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
