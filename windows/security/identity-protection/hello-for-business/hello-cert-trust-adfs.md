@@ -364,7 +364,7 @@ Approximately 60 days prior to enrollment agent certificate’s expiration, the 
 
 ### Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service
 > [!NOTE]
-> Normally this script is not needed as enabling Device Registration via the ADFS Management console already creates the objects. You can validate the SCP using the below script.
+> Normally this script is not needed, as enabling Device Registration via the ADFS Management console already creates the objects. You can validate the SCP using the below script.
 
 Now you will add the Service connection Point to ADFS device registration Service for your Active directory by running the following script:
 
