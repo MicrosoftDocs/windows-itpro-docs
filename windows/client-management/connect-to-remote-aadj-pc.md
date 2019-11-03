@@ -52,7 +52,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
 
   4. Enter **Authenticated Users**, then click **Check Names**. If the **Name Not Found** window opens, click **Locations** and select this PC.
 
-  >[!TIP]
+  > [!TIP]
   >When you connect to the remote PC, enter your account name in this format: `AzureAD UPN`. The local PC must either be domain-joined or Azure AD-joined. The local PC and remote PC must be in the same Azure AD tenant.
 
 > [!Note]
