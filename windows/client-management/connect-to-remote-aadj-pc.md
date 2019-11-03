@@ -53,7 +53,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
   4. Enter **Authenticated Users**, then click **Check Names**. If the **Name Not Found** window opens, click **Locations** and select this PC.
 
   > [!TIP]
-  >When you connect to the remote PC, enter your account name in this format: `AzureAD UPN`. The local PC must either be domain-joined or Azure AD-joined. The local PC and remote PC must be in the same Azure AD tenant.
+  > When you connect to the remote PC, enter your account name in this format: `AzureAD UPN`. The local PC must either be domain-joined or Azure AD-joined. The local PC and remote PC must be in the same Azure AD tenant.
 
 > [!Note]
 > If you cannot connect using Remote Desktop Connection 6.0, then turn off new features of RDP 6.0 and revert back to RDP 5.0 by tweaking a few changes in the RDP file. See the details in the [support article](https://support.microsoft.com/en-ph/help/941641/remote-desktop-connection-6-0-prompts-you-for-credentials-before-you-e).
