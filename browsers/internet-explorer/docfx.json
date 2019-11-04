@@ -31,6 +31,7 @@
       "manager": "laurawi",
       "ms.date": "04/05/2017",
       "feedback_system": "None",
+      "hideEdit": true,
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "Win.internet-explorer",
