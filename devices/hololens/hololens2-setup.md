@@ -1,6 +1,7 @@
 ---
 title: Prepare a new HoloLens 2
 description: This guide walks through first time set up and hardware guide.
+keywords: hololens, lights, fit, comfort, parts
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
 keywords: hololens
@@ -68,14 +69,14 @@ Not sure what the indicator lights on your HoloLens mean? Want to know how HoloL
 
 ### Charging behavior
 
-| State of the Device	| Action	| HoloLens 2 will do this |
+| State of the Device | Action | HoloLens 2 will do this |
 | - | - | - |
-| OFF |	Plug in USB Cable	| Device transitions to ON with indicator lights showing battery level and device starts charging.
-| ON	| Remove USB Cable	| Device stops charging
-| ON	| Plug in USB Cable	| Device starts charging
-| SLEEP	| Plug in USB Cable	| Device starts charging
-| SLEEP	| Remove USB Cable |	Device stops charging
-| ON with USB cable pluged in	| Turn off Device |	Device transitions to ON with indicator lights showing battery level and device will start charging |
+| OFF | Plug in USB Cable | Device transitions to ON with indicator lights showing battery level and device starts charging.
+| ON | Remove USB Cable | Device stops charging
+| ON | Plug in USB Cable | Device starts charging
+| SLEEP | Plug in USB Cable | Device starts charging
+| SLEEP | Remove USB Cable | Device stops charging
+| ON with USB cable plugged in | Turn off Device | Device transitions to ON with indicator lights showing battery level and device will start charging |
 
 ### Lights that indicate the battery level
 
@@ -89,18 +90,18 @@ Not sure what the indicator lights on your HoloLens mean? Want to know how HoloL
 
 ### Sleep Behavior
 
-| State of the Device	| Action	| HoloLens 2 will do this |
+| State of the Device | Action | HoloLens 2 will do this |
 | - | - | - |
-| ON	| Single Power button press	| Device transitions to SLEEP and turns off all indicator lights |
-| ON	| No movement for 3 minutes	| Device transition to SLEEP and turns off all indicator lights |
-| SLEEP	| Single Power button Press	| Device transitions to ON and turns on indicator lights |
+| ON | Single Power button press | Device transitions to SLEEP and turns off all indicator lights |
+| ON | No movement for 3 minutes | Device transition to SLEEP and turns off all indicator lights |
+| SLEEP | Single Power button Press | Device transitions to ON and turns on indicator lights |
 
 ### Lights to indicate problems
 
 | When you do this | The lights do this | It means this |
 | - | - | - |
 | You press the Power button. | One light flashes five times, then turns off. | The HoloLens battery is critically low. Charge your HoloLens. |
-| You press the Power button. | All five lights flash five times, then turn off. |  HoloLens cannot start correctly and is in an error state. |
+| You press the Power button. | All five lights flash five times, then turn off. |  HoloLens cannot start correctly and is in an error state. [Reinstall the operating system](hololens-recovery.md) to recover your device. |
 
 ## Safety and comfort
 

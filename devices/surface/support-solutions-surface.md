@@ -14,6 +14,7 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
+ms.audience: itpro
 ---
 
 # Top support solutions for Surface devices
