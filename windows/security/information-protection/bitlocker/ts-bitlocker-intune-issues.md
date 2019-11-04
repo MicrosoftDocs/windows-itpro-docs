@@ -157,7 +157,7 @@ To verify the BIOS mode, use the System Information app. To do this, follow thes
 
 1. Select **Start**, and enter **msinfo32** in the **Search** box.
 1. Verify that the **BIOS Mode** setting is **UEFI** and not **Legacy**.  
-   ![System Information app, showing the BIOS Mode setting](./images/4509198_en_1.png)
+   ![System Information app, showing the BIOS Mode setting](./images/4509198-en-1.png)
 1. If the **BIOS Mode** setting is **Legacy**, you have to switch the BIOS into **UEFI** or **EFI** mode. The steps for doing this are specific to the device.
    > [!NOTE]
    > If the device supports only Legacy mode, you cannot use Intune to manage BitLocker Device Encryption on the device.
