@@ -27,7 +27,7 @@
 ## [Start menu and mixed reality home](holographic-home.md)
 ## [Use your voice with HoloLens](hololens-cortana.md)
 ## [Find and save files](hololens-find-and-save-files.md)
-## [Create, share, and view photos and video](holographic-photos-and-video.md)
+## [Create, share, and view photos and video](holographic-photos-and-videos.md)
 
 # User management and access management
 ## [Share your HoloLens with multiple people](hololens-multiple-users.md)

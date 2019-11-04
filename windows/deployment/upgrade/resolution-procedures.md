@@ -594,7 +594,7 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 <tr>
 <td>0x80240FFF </td>
 <td>Occurs when update synchronization fails. It can occur when you are using Windows Server Update Services on its own or when it is integrated with System Center Configuration Manager. If you enable update synchronization before you install <a href="https://support.microsoft.com/help/3095113/en-us">hotfix 3095113</a>, WSUS doesn&#39;t recognize the Upgrades classification and instead treats the upgrade like a regular update.</td>
-<td> You can prevent this by installing <a href="http://blogs.technet.com/b/wsus/archive/2015/12/04/important-update-for-wsus-4-0-kb-3095113.aspx">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following:
+<td> You can prevent this by installing <a href="https://blogs.technet.com/b/wsus/archive/2015/12/04/important-update-for-wsus-4-0-kb-3095113.aspx">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following:
 
 <ol>
 <li>Disable the Upgrades classification.</li>
@@ -603,7 +603,7 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 <li>Enable the Upgrades classification.</li>
 <li>Perform a full synch.</li>
 </ol>
-<br>For detailed information on how to run these steps check out <a href="http://blogs.technet.com/b/wsus/archive/2016/01/30/quot-help-i-synched-upgrades-too-soon-quot.aspx">How to delete upgrades in WSUS</a>.</p>
+<br>For detailed information on how to run these steps check out <a href="https://blogs.technet.com/b/wsus/archive/2016/01/30/quot-help-i-synched-upgrades-too-soon-quot.aspx">How to delete upgrades in WSUS</a>.</p>
 </td>
 </tr>
 
