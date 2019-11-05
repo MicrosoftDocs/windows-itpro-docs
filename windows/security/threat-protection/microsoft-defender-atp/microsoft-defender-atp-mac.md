@@ -37,7 +37,7 @@ To learn how to configure a macOS machine running Microsoft Defender ATP to be a
 
 ### Prerequisites
 
-- Access to the Microsoft Defender Security Center portal
+- A Microsoft Defender ATP subscription and access to the Microsoft Defender Security Center portal
 - Beginner-level experience in macOS and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
@@ -45,28 +45,26 @@ To learn how to configure a macOS machine running Microsoft Defender ATP to be a
 
 There are several methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac.
 
-In general you need to take the following steps:
+* Third-party management tools:
+    * [Microsoft Intune-based deployment](mac-install-with-intune.md)
+    * [JAMF-based deployment](mac-install-with-jamf.md)
+    * [Other MDM products](mac-install-with-other-mdm.md)
 
-- Ensure that you have a Microsoft Defender ATP subscription and have access to the Microsoft Defender ATP Portal
-- Deploy Microsoft Defender ATP for Mac using one of the following deployment methods:
-  - Via third-party management tools:
-    - [Microsoft Intune-based deployment](mac-install-with-intune.md)
-    - [JAMF-based deployment](mac-install-with-jamf.md)
-    - [Other MDM products](mac-install-with-other-mdm.md)
-  - Via the command-line tool:
-    - [Manual deployment](mac-install-manually.md)
+* Command-line tool:
+    * [Manual deployment](mac-install-manually.md)
 
 ### System requirements
 
-> [!CAUTION]
-> The three most recent major releases of macOS are supported. Beta versions of macOS are not supported.
->
-> macOS Sierra (10.12) support will end on January 1, 2020.
+The three most recent major releases of macOS are supported.
 
-- Supported macOS versions: 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
+- 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
 - Disk space: 650 MB
 
+Beta versions of macOS are not supported. macOS Sierra (10.12) support will end on January 1, 2020.
+
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
+
+### Network connections
 
 The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
@@ -104,7 +102,6 @@ Once Microsoft Defender ATP is installed, connectivity can be validated by runni
 ```bash
 $ mdatp --connectivity-test
 ```
-
 
 ## How to update Microsoft Defender ATP for Mac
 
