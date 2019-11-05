@@ -32,7 +32,7 @@ Whether you are a small or large business, a Surface Hub adoption plan is critic
 - [Training guide – help desk](downloads/TrainingGuide-SurfaceHub2S-HelpDesk.pdf)
 - [Training guide – Microsoft Teams desktop](downloads/Guide-SurfaceHub2S-Teams.pptx)
 
-[Download all training guides](http://download.microsoft.com/download/2/2/3/2234F70E-E65A-4790-93DF-F4C373A75B8E/SurfaceHub2S-TrainerGuides-July2019.zip)
+[Download all training guides](https://download.microsoft.com/download/2/2/3/2234F70E-E65A-4790-93DF-F4C373A75B8E/SurfaceHub2S-TrainerGuides-July2019.zip)
 
 ## End user guides
 
@@ -41,7 +41,7 @@ Whether you are a small or large business, a Surface Hub adoption plan is critic
 - [Guide to Microsoft Whiteboard on Surface Hub](downloads/Guide-SurfaceHub2S-Whiteboard.pptx)
 - [Guide to Microsoft Teams on Surface Hub](downloads/Guide-SurfaceHub2S-Teams.pptx)
 
-[Download all end user guides](http://download.microsoft.com/download/E/7/F/E7FC6611-BB55-43E1-AF36-7BD5CE6E0FE0/SurfaceHub2S-EndUserGuides-July2019.zip)
+[Download all end user guides](https://download.microsoft.com/download/E/7/F/E7FC6611-BB55-43E1-AF36-7BD5CE6E0FE0/SurfaceHub2S-EndUserGuides-July2019.zip)
 
 ## Quick reference cards
 
@@ -56,4 +56,4 @@ Whether you are a small or large business, a Surface Hub adoption plan is critic
 - [Whiteboard advanced](downloads/QRCWhiteboardAdvanced.pdf)
 - [Whiteboard tools](downloads/QRCWhiteboardTools.pdf)
 
-[Download all quick reference cards](http://download.microsoft.com/download/E/7/F/E7FC6611-BB55-43E1-AF36-7BD5CE6E0FE0/SurfaceHub2S-EndUserGuides-July2019.zip)
+[Download all quick reference cards](https://download.microsoft.com/download/E/7/F/E7FC6611-BB55-43E1-AF36-7BD5CE6E0FE0/SurfaceHub2S-EndUserGuides-July2019.zip)
