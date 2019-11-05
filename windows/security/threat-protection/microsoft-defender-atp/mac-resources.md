@@ -18,7 +18,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Resources
+# Microsoft Defender ATP for Mac Resources
 
 **Applies to:**
 
