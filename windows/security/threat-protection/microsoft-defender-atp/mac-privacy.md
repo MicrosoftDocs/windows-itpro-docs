@@ -62,7 +62,7 @@ When this feature is enabled and the sample that is collected is likely to conta
 
 If you're an IT administrator, you might want to configure these controls at the enterprise level. 
 
-The privacy controls for the various types of data described in the preceding section are described in detail in [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
+The privacy controls for the various types of data described in the preceding section are described in detail in [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).
 
 As with any new policy settings, you should carefully test them out in a limited, controlled environment to ensure the settings that you configure have the desired effect before you implement the policy settings more widely in your organization.
 
