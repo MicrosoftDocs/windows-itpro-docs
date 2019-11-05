@@ -31,7 +31,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 
 ## Chapter  2  Getting started with Surface Hub
 
-> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46Ejt>]<br>
+> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE26zQm>]<br>
 
 - What is Surface Hub?
 - Technical overview
