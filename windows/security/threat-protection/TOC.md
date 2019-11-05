@@ -316,7 +316,7 @@
 #### [Deploy Microsoft Defender Advanced Threat Protection for Mac]()
 ##### [Microsoft Intune-based deployment](microsoft-defender-atp/mac-install-with-intune.md)
 ##### [JAMF-based deployment](microsoft-defender-atp/mac-install-with-jamf.md)
-##### [Deployment with a different Mobile Device Management (MDM) system](windows-defender-atp/mac-install-with-other-mdm.md)
+##### [Deployment with a different Mobile Device Management (MDM) system](microsoft-defender-atp/mac-install-with-other-mdm.md)
 ##### [Manual deployment](microsoft-defender-atp/mac-install-manually.md)
 #### [Update Microsoft Defender ATP for Mac](microsoft-defender-atp/mac-updates.md)
 #### [Configure Microsoft Defender ATP for Mac]()
