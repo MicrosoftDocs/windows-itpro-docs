@@ -30,7 +30,7 @@ ms.topic: conceptual
 
 ## 100.68.99
 
-- Added the ability to configure the antivirus functionality to run in [passive mode](microsoft-defender-atp-mac-preferences.md#enable--disable-passive-mode)
+- Added the ability to configure the antivirus functionality to run in [passive mode](mac-preferences.md#enable--disable-passive-mode)
 - Performance improvements & bug fixes
 
 ## 100.65.28
@@ -42,7 +42,7 @@ ms.topic: conceptual
 >
 > The mechanism for granting this consent depends on how you deployed Microsoft Defender ATP:
 >
-> - For manual deployments, see the updated instructions in the [Manual deployment](microsoft-defender-atp-mac-install-manually.md#how-to-allow-full-disk-access) topic.
-> - For managed deployments, see the updated instructions in the [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf.md#privacy-preferences-policy-control) and [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune.md#create-system-configuration-profiles) topics.
+> - For manual deployments, see the updated instructions in the [Manual deployment](mac-install-manually.md#how-to-allow-full-disk-access) topic.
+> - For managed deployments, see the updated instructions in the [JAMF-based deployment](mac-install-with-jamf.md#privacy-preferences-policy-control) and [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles) topics.
 
 - Performance improvements & bug fixes
