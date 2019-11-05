@@ -231,11 +231,11 @@ If the product is not healthy, the exit code (which can be checked through `echo
 
 ## Logging installation issues
 
-See [Logging installation issues](microsoft-defender-atp-mac-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+See [Logging installation issues](mac-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
 ## Uninstallation
 
-This method is based on the script described in [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling).
+This method is based on the script described in [Uninstalling](mac-resources.md#uninstalling).
 
 ### Script
 
