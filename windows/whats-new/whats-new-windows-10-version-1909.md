@@ -20,6 +20,12 @@ ms.topic: article
 
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10 version 1909, also known as the Windows 10 November 2019 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1903. 
 
+## Servicing
+
+In 2019 the release model for Windows 10 is changing. The spring release will be a full release, and the fall release will be a servicing update.  The key difference is that the full release enables a broader set of changes, including data migration, while the servicing update will be released via the Windows Servicing and Delivery channel, similar to how monthly updates are released.  
+
+In the past, new Windows 10 features have been delivered using a twice-per-year feature update model that requires a full operating system (OS) install that is larger and takes more time to complete. The Windows monthly update process use a lighter-weight servicing technology for delivering smaller and faster feature updates. Using the servicing delivery approach for feature updates will provide a less disruptive user update experience due to both smaller package size and shorter offline time, while supporting the established semi-annual update cadence aligned with Office365.
+
 ## Security
 
 ### Windows Defender Credential Guard
