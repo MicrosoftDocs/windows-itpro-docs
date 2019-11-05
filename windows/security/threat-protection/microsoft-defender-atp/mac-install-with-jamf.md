@@ -156,7 +156,7 @@ You'll need no special provisioning for a macOS computer, beyond the standard JA
 
 1. Open **Device Profiles**, from the **General** tab, and make sure that **User Approved MDM** is set to **Yes**. If it's currently set to No, the user needs to open **System Preferences > Profiles** and select **Approve** on the MDM Profile.
 
-![MDM approve button screenshot](../windows-defender-antivirus/images/MDATP_21_MDMProfile1.png)<br/>
+![MDM approve button screenshot](../windows-defender-antivirus/images/MDATP-21-MDMProfile1.png)<br/>
 ![MDM screenshot](../windows-defender-antivirus/images/MDATP-22-MDMProfileApproved.png)
 
 After a moment, the device's User Approved MDM status will change to **Yes**.
