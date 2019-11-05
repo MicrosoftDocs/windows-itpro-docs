@@ -107,14 +107,14 @@ $ mdatp --connectivity-test
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender ATP for Mac, a program named Microsoft AutoUpdate (MAU) is used.
 
-To read more on how to configure MAU in enterprise environments, refer to [Deploy updates for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-updates.md)
+To read more on how to configure MAU in enterprise environments, refer to [Deploy updates for Microsoft Defender ATP for Mac](mac-updates.md)
 
 ## How to configure Microsoft Defender ATP for Mac
 
-Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
+Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).
 
 ## Resources
 
-- For more information about logging, uninstalling, or other topics, see the [Resources](microsoft-defender-atp-mac-resources.md) page.
+- For more information about logging, uninstalling, or other topics, see the [Resources](mac-resources.md) page.
 
-- [Privacy for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-privacy.md)
+- [Privacy for Microsoft Defender ATP for Mac](mac-privacy.md)
