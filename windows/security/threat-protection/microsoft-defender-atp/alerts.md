@@ -22,8 +22,6 @@ ms.topic: article
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Represents an alert entity in Microsoft Defender ATP.
-
 # Methods
 Method |Return Type |Description
 :---|:---|:---
@@ -66,14 +64,15 @@ alertIPs | List of Alert IPs | **This list will be populated on $expand option, 
 alertDomains | List of Alert Domains | **This list will be populated on $expand option, see example below** Alert Domain is an object that contains: host string field. 
 
 
-# JSON representation:
+
+## JSON representation:
 
 - When querying for alert list the regular way (without expand option, e.g. https://api.securitycenter.windows.com/api/alerts) the expandable properties will not get populated (empty lists)
 - To expand expandable properties use $expand option (e.g. to expand all send https://api.securitycenter.windows.com/api/alerts?$expand=files,ips,domains).
 - When querying single alert all expandable properties will be expanded. 
 - Check out [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md) for more OData examples. 
 
-## Response example for getting single alert:
+### Response example for getting single alert:
 
 ```
 GET https://api.securitycenter.windows.com/api/alerts/da637084217856368682_-292920499
@@ -84,7 +83,7 @@ GET https://api.securitycenter.windows.com/api/alerts/da637084217856368682_-2929
     "id": "da637084217856368682_-292920499",
     "incidentId": 66860,
     "investigationId": 4416234,
-    "assignedTo": secop@contoso.com,
+    "assignedTo": "secop@contoso.com",
     "severity": "Low",
     "status": "New",
     "classification": "TruePositive",

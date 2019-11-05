@@ -24,8 +24,8 @@ ms.topic: article
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 ## Limitations
-1. You can only run a query on data from the last 30 days
-2. The results will include a maximum of 100,000 rows
+1. You can only run a query on data from the last 30 days.
+2. The results will include a maximum of 100,000 rows.
 3. The number of executions is limited per tenant: up to 15 calls per minute, 15 minutes of running time every hour and 4 hours of running time a day.
 4. The maximal execution time of a single request is 10 minutes.
 

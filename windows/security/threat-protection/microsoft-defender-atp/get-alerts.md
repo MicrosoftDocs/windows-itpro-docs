@@ -96,7 +96,7 @@ Here is an example of the response.
             "id": "da637084217856368682_-292920499",
 			"incidentId": 66860,
 			"investigationId": 4416234,
-			"assignedTo": secop@contoso.com,
+			"assignedTo": "secop@contoso.com",
 			"severity": "Low",
 			"status": "New",
 			"classification": "TruePositive",
@@ -123,6 +123,7 @@ Here is an example of the response.
 			"alertFiles": [],
 			"alertDomains": [],
 			"alertIps": []
+		}
 	]
 }
 ```
