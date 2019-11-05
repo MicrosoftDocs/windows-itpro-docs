@@ -44,7 +44,7 @@ Download the installation and onboarding packages from Microsoft Defender Securi
 4. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 5. Download **IntuneAppUtil** from [https://docs.microsoft.com/intune/lob-apps-macos](https://docs.microsoft.com/intune/lob-apps-macos).
 
-    ![Windows Defender Security Center screenshot](images/MDATP_2_DownloadPackages.png)
+    ![Windows Defender Security Center screenshot](../windows-defender-antivirus/images/MDATP-2-DownloadPackages.png)
 
 6. From a command prompt, verify that you have the three files.
     Extract the contents of the .zip files:
@@ -91,11 +91,11 @@ You need no special provisioning for a Mac device beyond a standard [Company Por
 
 1. You are asked to confirm device management.
 
-![Confirm device management screenshot](images/MDATP_3_ConfirmDeviceMgmt.png)
+![Confirm device management screenshot](../windows-defender-antivirus/images/MDATP-3-ConfirmDeviceMgmt.png)
 
 Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:
 
-![Management profile screenshot](images/MDATP_4_ManagementProfile.png)
+![Management profile screenshot](../windows-defender-antivirus/images/MDATP-4-ManagementProfile.png)
 
 2. Select **Continue** and complete the enrollment.
 
@@ -103,7 +103,7 @@ You may now enroll more devices. You can also enroll them later, after you have 
 
 3. In Intune, open **Manage** > **Devices** > **All devices**. Here you can see your device among those listed:
 
-![Add Devices screenshot](images/MDATP_5_allDevices.png)
+![Add Devices screenshot](../windows-defender-antivirus/images/MDATP-5-allDevices.png)
 
 ## Create System Configuration profiles
 
@@ -112,7 +112,7 @@ You may now enroll more devices. You can also enroll them later, after you have 
 3. Open the configuration profile and upload intune/kext.xml. This file was created in one of the preceding sections.
 4. Select **OK**.
 
-    ![System configuration profiles screenshot](images/MDATP_6_SystemConfigurationProfiles.png)
+    ![System configuration profiles screenshot](../windows-defender-antivirus/images/MDATP-6-SystemConfigurationProfiles.png)
 
 5. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 6. Repeat steps 1 through 5 for more profiles.
@@ -287,7 +287,7 @@ You may now enroll more devices. You can also enroll them later, after you have 
 
 Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:
 
-![System configuration profiles screenshot](images/MDATP_7_DeviceStatusBlade.png)
+![System configuration profiles screenshot](../windows-defender-antivirus/images/MDATP-7-DeviceStatusBlade.png)
 
 ## Publish application
 
@@ -300,38 +300,38 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
     > [!CAUTION]
     > Failure to set *Ignore app version* to **Yes** impacts the ability of the application to receive updates through Microsoft AutoUpdate. See [Deploy updates for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-updates.md) for additional information about how the product is updated.
 
-    ![Device status blade screenshot](images/MDATP_8_IntuneAppInfo.png)
+    ![Device status blade screenshot](../windows-defender-antivirus/images/MDATP-8-IntuneAppInfo.png)
 
 6. Select **OK** and **Add**.
 
-    ![Device status blade screenshot](images/MDATP_9_IntunePkgInfo.png)
+    ![Device status blade screenshot](../windows-defender-antivirus/images/MDATP-9-IntunePkgInfo.png)
 
 7. It may take a few moments to upload the package. After it's done, select the package from the list and go to **Assignments** and **Add group**.
 
-    ![Client apps screenshot](images/MDATP_10_ClientApps.png)
+    ![Client apps screenshot](../windows-defender-antivirus/images/MDATP-10-ClientApps.png)
 
 8. Change **Assignment type** to **Required**.
 9. Select **Included Groups**. Select **Make this app required for all devices=Yes**. Click **Select group to include** and add a group that contains the users you want to target. Select **OK** and **Save**.
 
-    ![Intune assignments info screenshot](images/MDATP_11_Assignments.png)
+    ![Intune assignments info screenshot](../windows-defender-antivirus/images/MDATP-11-Assignments.png)
 
 10. After some time the application will be published to all enrolled devices. You can see it listed in **Monitor** > **Device**, under **Device install status**:
 
-    ![Intune device status screenshot](images/MDATP_12_DeviceInstall.png)
+    ![Intune device status screenshot](../windows-defender-antivirus/images/MDATP-12-DeviceInstall.png)
 
 ## Verify client device state
 
 1. After the configuration profiles are deployed to your devices, open **System Preferences** > **Profiles** on your Mac device.
 
-    ![System Preferences screenshot](images/MDATP_13_SystemPreferences.png)
-    ![System Preferences Profiles screenshot](images/MDATP_14_SystemPreferencesProfiles.png)
+    ![System Preferences screenshot](../windows-defender-antivirus/images/MDATP-13-SystemPreferences.png)<br/>
+    ![System Preferences Profiles screenshot](../windows-defender-antivirus/images/MDATP-14-SystemPreferencesProfiles.png)
 
 2. Verify that the following configuration profiles are present and installed. The **Management Profile** should be the Intune system profile. _Wdav-config_ and _wdav-kext_ are system configuration profiles that were added in Intune:
-    ![Profiles screenshot](images/MDATP_15_ManagementProfileConfig.png)
+    ![Profiles screenshot](../windows-defender-antivirus/images/MDATP-15-ManagementProfileConfig.png)
 
 3. You should also see the Microsoft Defender icon in the top-right corner:
 
-    ![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
+    ![Microsoft Defender icon in status bar screenshot](../windows-defender-antivirus/images/MDATP-Icon-Bar.png)
 
 ## Troubleshooting
 
