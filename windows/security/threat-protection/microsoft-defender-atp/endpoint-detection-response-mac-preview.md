@@ -20,29 +20,29 @@ ms.topic: conceptual
 
 # Enable Microsoft Defender ATP Insider Machine
 
-The following instructions specify how to configure set a macOS machine running MDATP to be Insider” machine. For scale deployment we recommend using Jamf, or Intune. 
+The following instructions specify how to configure set a macOS machine running Microsoft Defender ATP to be "Insider" machine. For scale deployment we recommend using Jamf, or Intune.
 
 >[!NOTE]
 >For machines already running Microsoft Defender ATP for Mac, please pay attention to the “earlyPreview” flag. See documentation of Jamf, Intune and manual deployment instructions below.
 
-## Deploying centrally with Jamf 
+## Deploying centrally with Jamf
 
 ### Step 1: Enable the "Insider" program
 
 a. Create configuration profile com.microsoft.wdav.plist with the following content:
 
 ```XML
-    <?xml version="1.0" encoding="UTF-8"?> 
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-    <plist version="1.0"> 
-    <dict> 
-        <key>edr</key> 
-        <dict> 
-            <key>earlyPreview</key> 
-            <true/> 
-        </dict> 
-    </dict> 
-    </plist> 
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+        <key>edr</key>
+        <dict>
+            <key>earlyPreview</key>
+            <true/>
+        </dict>
+    </dict>
+    </plist>
 ```
 
 b. From the JAMF console, navigate to Computers > Configuration Profiles, navigate to the configuration profile you'd like to use, then select Custom Settings. 
@@ -63,73 +63,73 @@ Follow the instruction in docs about [JAMF-based deployment](microsoft-defender-
 a. Create configuration profile com.microsoft.wdav.plist with the following content:
 
  ```XML
-    <?xml version="1.0" encoding="utf-8"?> 
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-    <plist version="1"> 
-        <dict> 
-            <key>PayloadUUID</key> 
-            <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string> 
-            <key>PayloadType</key> 
-            <string>Configuration</string> 
-            <key>PayloadOrganization</key> 
-            <string>Microsoft</string> 
-            <key>PayloadIdentifier</key> 
-            <string>com.microsoft.wdav</string> 
-            <key>PayloadDisplayName</key> 
-            <string>Microsoft Defender ATP settings</string> 
-            <key>PayloadDescription</key> 
-            <string>Microsoft Defender ATP configuration settings</string> 
-            <key>PayloadVersion</key> 
-            <integer>1</integer> 
-            <key>PayloadEnabled</key> 
-            <true/> 
-            <key>PayloadRemovalDisallowed</key> 
-            <true/> 
-            <key>PayloadScope</key> 
-            <string>System</string> 
-            <key>PayloadContent</key> 
-            <array> 
-                <dict> 
-                    <key>PayloadUUID</key> 
-                    <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string> 
-                    <key>PayloadType</key> 
-                    <string>com.microsoft.wdav</string> 
-                    <key>PayloadOrganization</key> 
-                    <string>Microsoft</string> 
-                    <key>PayloadIdentifier</key> 
-                    <string>com.microsoft.wdav</string> 
-                    <key>PayloadDisplayName</key> 
-                    <string>Microsoft Defender ATP configuration settings</string> 
-                    <key>PayloadDescription</key> 
-                    <string/> 
-                    <key>PayloadVersion</key> 
-                    <integer>1</integer> 
-                    <key>PayloadEnabled</key> 
-                    <true/> 
-                    <key>edr</key> 
-                    <dict> 
-                        <key>earlyPreview</key> 
-                        <true/> 
-                    </dict> 
-                </dict> 
-            </array> 
-        </dict> 
-    </plist> 
+    <?xml version="1.0" encoding="utf-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1">
+        <dict>
+            <key>PayloadUUID</key>
+            <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+            <key>PayloadType</key>
+            <string>Configuration</string>
+            <key>PayloadOrganization</key>
+            <string>Microsoft</string>
+            <key>PayloadIdentifier</key>
+            <string>com.microsoft.wdav</string>
+            <key>PayloadDisplayName</key>
+            <string>Microsoft Defender ATP settings</string>
+            <key>PayloadDescription</key>
+            <string>Microsoft Defender ATP configuration settings</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadEnabled</key>
+            <true/>
+            <key>PayloadRemovalDisallowed</key>
+            <true/>
+            <key>PayloadScope</key>
+            <string>System</string>
+            <key>PayloadContent</key>
+            <array>
+                <dict>
+                    <key>PayloadUUID</key>
+                    <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                    <key>PayloadType</key>
+                    <string>com.microsoft.wdav</string>
+                    <key>PayloadOrganization</key>
+                    <string>Microsoft</string>
+                    <key>PayloadIdentifier</key>
+                    <string>com.microsoft.wdav</string>
+                    <key>PayloadDisplayName</key>
+                    <string>Microsoft Defender ATP configuration settings</string>
+                    <key>PayloadDescription</key>
+                    <string/>
+                    <key>PayloadVersion</key>
+                    <integer>1</integer>
+                    <key>PayloadEnabled</key>
+                    <true/>
+                    <key>edr</key>
+                    <dict>
+                        <key>earlyPreview</key>
+                        <true/>
+                    </dict>
+                </dict>
+            </array>
+        </dict>
+    </plist>
 ```
 
-b. Open Manage > Device configuration. Select Manage > Profiles > Create Profile. 
+b. Open Manage > Device configuration. Select Manage > Profiles > Create Profile.
 
-c. Choose a name for the profile. Change Platform=macOS to Profile type=Custom. Select Configure. 
+c. Choose a name for the profile. Change Platform=macOS to Profile type=Custom. Select Configure.
 
-d. Save the .plist created earlier as com.microsoft.wdav.xml. 
+d. Save the .plist created earlier as com.microsoft.wdav.xml.
 
-e. Enter com.microsoft.wdav as the custom configuration profile name. 
+e. Enter com.microsoft.wdav as the custom configuration profile name.
 
-f. Open the configuration profile and upload com.microsoft.wdav.xml. This file was created in step 3. 
+f. Open the configuration profile and upload com.microsoft.wdav.xml. This file was created in step 1.
 
-g. Select OK. 
+g. Select OK.
 
-h. Select Manage > Assignments. In the Include tab, select Assign to All Users & All devices. 
+h. Select Manage > Assignments. In the Include tab, select Assign to All Users & All devices.
 
 >[!WARNING]
 >You must enter the correct custom configuration profile name, otherwise these preferences will not be recognized by the product.
@@ -142,28 +142,27 @@ Follow the instruction in docs about [Microsoft Intune-based deployment](microso
 
 ### Step 1: Enable the "Insider" program
 
-a. Create configuration profile com.microsoft.wdav.plist with the following content: 
+a. Create configuration profile com.microsoft.wdav.plist with the following content:
 
 ```XML
-    <?xml version="1.0" encoding="UTF-8"?> 
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-    <plist version="1.0"> 
-    <dict> 
-        <key>edr</key> 
-        <dict> 
-            <key>earlyPreview</key> 
-            <true/> 
-        </dict> 
-    </dict> 
-    </plist> 
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+        <key>edr</key>
+        <dict>
+            <key>earlyPreview</key>
+            <true/>
+        </dict>
+    </dict>
+    </plist>
 ```
 
-b. Copy plist file to /Library/Managed Preferences/ 
+b. Copy plist file to /Library/Managed Preferences/
 
 ### Step 2: Deployment and onboarding
 
 Follow the instruction in docs about [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md)
-
 
 ## Troubleshooting
 
@@ -180,6 +179,6 @@ To verify you are running the correct version, run ‘mdatp --health’ on the m
 
 After a successful deployment and onboarding of the correct version, check that the machine has connectivity to the cloud service by running ‘mdatp --connectivity-test’.
 
-* Check that you enabled the early preview flag. In terminal run “mdatp –health” and look for the value of “edrEarlyPreviewEnabled”. It should be “Enabled”. 
+* Check that you enabled the early preview flag. In terminal run “mdatp –health” and look for the value of “edrEarlyPreviewEnabled”. It should be “Enabled”.
 
-If you followed the manual deployment instructions, you were prompted to enable Kernel Extensions. Pay attention to the “System Extension note” in the manual deployment documentation and use the “Manual Deployment” section in the troubleshoot kernel extension documentation. 
+If you followed the manual deployment instructions, you were prompted to enable Kernel Extensions. Pay attention to the “System Extension note” in the manual deployment documentation and use the “Manual Deployment” section in the troubleshoot kernel extension documentation.
