@@ -27,7 +27,7 @@
 ### [Deploy Surface devices](deploy.md)
 ### [Windows Autopilot and Surface devices](windows-autopilot-and-surface-devices.md)
 ### [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
-### [Windows 10 ARM-based PC app compatibility](surface-pro-arm-app-performance.md)
+### [Surface Pro X app compatibility](surface-pro-arm-app-performance.md)
 ### [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
 ### [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)
 ### [Step by step: Surface Deployment Accelerator](step-by-step-surface-deployment-accelerator.md)
@@ -49,6 +49,7 @@
 ### [Manage Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md)
 
 ## Secure
+### [Intune management of Surface UEFI settings](surface-manage-dfci-guide.md)
 ### [Manage Surface UEFI settings](manage-surface-uefi-settings.md)
 ### [Advanced UEFI security features for Surface Pro 3](advanced-uefi-security-features-for-surface-pro-3.md)
 ### [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)

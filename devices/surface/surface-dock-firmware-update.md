@@ -8,7 +8,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 09/18/2019
+ms.date: 10/09/2019
 ms.reviewer: scottmca
 manager: dansimp
 ms.audience: itpro
@@ -38,7 +38,8 @@ If preferred, you can manually complete the update as follows:
 > [!NOTE]
 >
 > - Manually installing the MSI file may prompt you to restart Surface; however, restarting is optional and not required.
->- You will need to disconnect and reconnect the dock twice before the update fully completes.
+> - You will need to disconnect and reconnect the dock twice before the update fully completes.
+> - To create a log file, specify the path in the Msiexec command. For example, append /l*v %windir%\logs\ SurfaceDockFWI.log".
 
 ## Network deployment
 
@@ -83,7 +84,7 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 
 | Log                              | Location                               | Notes                                                                                                                                                                                                         |
 | -------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Surface Dock Firmware Update log | /l*v %windir%\logs\ SurfaceDockFWI.log | Earlier versions of this tool wrote events to Applications and Services Logs\Microsoft Surface Dock Updater.                                                                                                  |
+| Surface Dock Firmware Update log | /l*v %windir%\logs\Applications\SurfaceDockFWI.log | Earlier versions of this tool wrote events to Applications and Services Logs\Microsoft Surface Dock Updater.                                                                                                  |
 | Windows Device Install log       | %windir%\inf\ setupapi.dev.log         | For more information about using Device Install Log, refer [to SetupAPI Logging](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi-logging--windows-vista-and-later-) documentation. |
 
  
@@ -107,7 +108,7 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 
 ## Changes and updates
 
-Microsoft periodically releases new versions of Surface Dock Firmware Update. To update a Surface Dock to the latest firmware, you must use the latest version of Surface Dock Firmware Update.
+Microsoft periodically releases new versions of Surface Dock Firmware Update.Note that the MSI file is not self-updating. If you have deployed the MSI to Surface devices and a new version of the firmware is released, you will need to deploy the new version of the MSI.
 
 ## Versions reference
 ### Version 1.42.139 
@@ -118,6 +119,8 @@ This version, contained in Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 
 - Component10CurrentFwVersion updated to **4ac3970**.
 - Component20CurrentFwVersion updated to **4a1d570**.
+
+It adds support for Surface Pro 7 and Surface Laptop 3.
 
 ## Legacy versions
 

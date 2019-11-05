@@ -14,6 +14,7 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
+ms.audience: itpro
 ---
 
 # Top support solutions for Surface devices
@@ -47,7 +48,7 @@ These are the top Microsoft Support solutions for common issues experienced when
 
 - [Troubleshoot connecting Surface to a second screen](https://support.microsoft.com/help/4023496)
 
-- [Microsoft Surface Dock Updater](https://docs.microsoft.com/surface/surface-dock-updater)
+- [Microsoft Surface Dock Firmware Update](https://docs.microsoft.com/surface/surface-dock-updater)
 
 ## Surface Drivers and Firmware
 

@@ -1,5 +1,5 @@
 ---
-title: How Windows Hello for Business works - Techincal Deep Dive
+title: How Windows Hello for Business works - Technical Deep Dive
 description: Explains registration, authentication, key material, and infrastructure for Windows Hello for Business.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust, works 
 ms.prod: w10

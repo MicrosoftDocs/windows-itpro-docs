@@ -2,7 +2,7 @@
 title: Microsoft Defender ATP for Mac Resources
 ms.reviewer: 
 description: Describes resources for Microsoft Defender ATP for Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
+keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -72,7 +72,7 @@ There are several ways to uninstall Microsoft Defender ATP for Mac. Please note 
 
 ### From the command line
 
-- ```sudo rm -rf '/Applications/Microsoft Defender ATP'```
+- ```sudo rm -rf '/Applications/Microsoft Defender ATP.app'```
 
 ## Configuring from the command line
 
@@ -116,3 +116,6 @@ In the Microsoft Defender ATP portal, you'll see two categories of information:
   - Computer model
   - Processor architecture
   - Whether the device is a virtual machine
+  
+  > [!NOTE]
+  > Certain device information might be subject to upcoming releases. To send us feedback, use the Microsoft Defender ATP for Mac app and select **Help** > **Send feedback** on your device. Optionally, use the **Feedback** button in the Microsoft Defender Security Center.

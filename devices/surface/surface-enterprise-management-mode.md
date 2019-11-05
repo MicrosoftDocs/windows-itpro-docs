@@ -9,9 +9,11 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 01/06/2017
-ms.reviewer: 
+ms.date: 10/31/2019
+ms.reviewer: scottmca
 manager: dansimp
+ms.localizationpriority: medium
+ms.audience: itpro
 ---
 
 # Microsoft Surface Enterprise Management Mode
@@ -19,11 +21,13 @@ manager: dansimp
 Microsoft Surface Enterprise Management Mode (SEMM) is a feature of Surface devices with Surface UEFI that allows you to secure and manage firmware settings within your organization. With SEMM, IT professionals can prepare configurations of UEFI settings and install them on a Surface device. In addition to the ability to configure UEFI settings, SEMM also uses a certificate to protect the configuration from unauthorized tampering or removal.
 
 >[!NOTE]
->SEMM is only available on devices with Surface UEFI firmware such as Surface Pro 4 and later, Surface Go, Surface Laptop, Surface Book, and Surface Studio. For more information about Surface UEFI, see [Manage Surface UEFI Settings](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings).
+>SEMM is only available on devices with Surface UEFI firmware. 
+
 
 When Surface devices are configured by SEMM and secured with the SEMM certificate, they are considered *enrolled* in SEMM. When the SEMM certificate is removed and control of UEFI settings is returned to the user of the device, the Surface device is considered *unenrolled* in SEMM.
 
 There are two administrative options you can use to manage SEMM and enrolled Surface devices – a standalone tool or integration with System Center Configuration Manager. The SEMM standalone tool, called the Microsoft Surface UEFI Configurator, is described in this article. For more information about how to manage SEMM with System Center Configuration Manager, see [Use System Center Configuration Manager to manage devices with SEMM](https://technet.microsoft.com/itpro/surface/use-system-center-configuration-manager-to-manage-devices-with-semm).
+
 
 ## Microsoft Surface UEFI Configurator
 
@@ -33,8 +37,6 @@ The primary workspace of SEMM is Microsoft Surface UEFI Configurator, as shown i
 
 *Figure 1. Microsoft Surface UEFI Configurator*
 
->[!NOTE]
->Windows 10 is required to run Microsoft Surface UEFI Configurator
 
 You can use the Microsoft Surface UEFI Configurator tool in three modes:
 
@@ -62,17 +64,9 @@ See the [Surface Enterprise Management Mode certificate requirements](#surface-e
 
 After a device is enrolled in SEMM, the configuration file is read and the settings specified in the file are applied to UEFI. When you run a configuration package on a device that is already enrolled in SEMM, the signature of the configuration file is checked against the certificate that is stored in the device firmware. If the signature does not match, no changes are applied to the device.
 
-You can use Surface UEFI settings to enable or disable the operation of individual components, such as cameras, wireless communication, or docking USB port (as shown in Figure 3), and configure advanced settings (as shown in Figure 4).
+### Enable or disable devices in Surface UEFI with SEMM
 
-![Enable or disable devices in Surface UEFI with SEMM](images/surface-ent-mgmt-fig3-enabledisable.png "Enable or disable devices in Surface UEFI with SEMM")
-
-*Figure 3. Enable or disable devices in Surface UEFI with SEMM*
-
-![Configure advanced settings in SEMM](images/surface-ent-mgmt-fig4-advancedsettings.png "Configure advanced settings in SEMM")
-
-*Figure 4. Configure advanced settings with SEMM*
-
-You can enable or disable the following devices with SEMM:
+The following list shows all the available devices you can manage in SEMM:
 
 * Docking USB Port
 * On-board Audio
@@ -86,31 +80,40 @@ You can enable or disable the following devices with SEMM:
 * Wi-Fi and Bluetooth
 * LTE
 
-You can configure the following advanced settings with SEMM:
+ >[!NOTE]
+>The built-in devices that appear in the UEFI Devices page may vary depending on your device or corporate environment. For example, the UEFI Devices page is not supported on Surface Pro X; LTE only appears on LTE-equipped devices. 
+### Configure advanced settings with SEMM
+**Table 1. Advanced settings**
 
-* IPv6 support for PXE boot
-* Alternate boot order, where the Volume Down button and Power button can be pressed together during boot, to boot directly to a USB or Ethernet device
-* Lock the boot order to prevent changes
-* Support for booting to USB devices
-* Enable Network Stack boot settings
-* Enable Auto Power On boot settings
-* Display of the Surface UEFI **Security** page
-* Display of the Surface UEFI **Devices** page
-* Display of the Surface UEFI **Boot** page
-* Display of the Surface UEFI **DateTime** page
+| Setting                            | Description                                                                                                                                                                                        |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| IPv6 for PXE Boot                  | Allows you to manage Ipv6 support for PXE boot. If you do not configure this setting, IPv6 support for PXE boot is disabled.                                                                               |
+| Alternate Boot                     | Allows you to manage use of an Alternate boot order to boot directly to a USB or Ethernet device by pressing both the Volume Down button and Power button during boot. If you do not configure this setting, Alternate boot is enabled. |
+| Boot Order Lock                    | Allows you to lock the boot order to prevent changes. If you do not configure this setting, Boot Order Lock is disabled.                                                                                                        |
+| USB Boot                           | Allows you to manage booting to USB devices. If you do not configure this setting, USB Boot is enabled.                                                                                                                 |
+| Network Stack                      | Allows you to manage Network Stack boot settings. If you do not configure this setting,  the ability to manage Network Stack boot settings is enabled.                                                                                                           |
+| Auto Power On                      | Allows you to manage Auto Power On boot settings. If you do not configure this setting, Auto Power on is enabled.                                                                                                        |
+| Simultaneous Multi-Threading (SMT) | Allows you to manage Simultaneous Multi-Threading (SMT) to enable or disable hyperthreading. If you do not configure this setting, SMT is enabled.                                                  |
+|Enable Battery limit| Allows you to manage Battery limit functionality. If you do not configure this setting, Battery limit is enabled |
+| Security                           | Displays the Surface UEFI **Security** page. If you do not configure this setting, the Security page is displayed.                                                                                                                 |
+| Devices                            | Displays the Surface UEFI **Devices** page. If you do not configure this setting,  the Devices page is displayed.                                                                                                                     |
+| Boot                               | Displays the Surface UEFI **Boot** page. If you do not configure this setting, the DateTime page is displayed.                                                                                                                                                            |
+| DateTime                           | Displays the Surface UEFI **DateTime** page. If you do not configure this setting, the DateTime page is displayed.                                                                                                                |
+
+
 
 >[!NOTE]
->When you create a SEMM configuration package, two characters are shown on the **Successful** page, as shown in Figure 5.
+>When you create a SEMM configuration package, two characters are shown on the **Successful** page, as shown in Figure 3.
 
 ![Certificate thumbprint display](images/surface-ent-mgmt-fig5-success.png "Certificate thumbprint display")
 
-*Figure 5. Display of the last two characters of the certificate thumbprint on the Successful page*
+*Figure 3. Display of the last two characters of the certificate thumbprint on the Successful page*
 
-These characters are the last two characters of the certificate thumbprint and should be written down or recorded. The characters are required to confirm enrollment in SEMM on a Surface device, as shown in Figure 6.
+These characters are the last two characters of the certificate thumbprint and should be written down or recorded. The characters are required to confirm enrollment in SEMM on a Surface device, as shown in Figure 4.
 
 ![Enrollment confirmation in SEMM](images/surface-ent-mgmt-fig6-enrollconfirm.png "Enrollment confirmation in SEMM")
 
-*Figure 6. Enrollment confirmation in SEMM with the SEMM certificate thumbprint*
+*Figure 4. Enrollment confirmation in SEMM with the SEMM certificate thumbprint*
 
 >[!NOTE]
 >Administrators with access to the certificate file (.pfx) can read the thumbprint at any time by opening the .pfx file in CertMgr. To view the thumbprint with CertMgr, follow this process:
@@ -132,11 +135,11 @@ A Surface UEFI reset package is used to perform only one task — to unenroll a 
 
 ### Recovery request
 
-In some scenarios, it may be impossible to use a Surface UEFI reset package. (For example, if Windows becomes unusable on the Surface device.) In these scenarios you can unenroll the Surface device from SEMM through the **Enterprise Management** page of Surface UEFI (shown in Figure 7) with a Recovery Request operation.
+In some scenarios, it may be impossible to use a Surface UEFI reset package. (For example, if Windows becomes unusable on the Surface device.) In these scenarios you can unenroll the Surface device from SEMM through the **Enterprise Management** page of Surface UEFI (shown in Figure 5) with a Recovery Request operation.
 
 ![Initiate a SEMM recovery request](images/surface-ent-mgmt-fig7-semmrecovery.png "Initiate a SEMM recovery request")
 
-*Figure 7. Initiate a SEMM recovery request on the Enterprise Management page*
+*Figure 5. Initiate a SEMM recovery request on the Enterprise Management page*
 
 When you use the process on the **Enterprise Management** page to reset SEMM on a Surface device, you are provided with a Reset Request. This Reset Request can be saved as a file to a USB drive, copied as text, or read as a QR Code with a mobile device to be easily emailed or messaged. Use the Microsoft Surface UEFI Configurator Reset Request option to load a Reset Request file or enter the Reset Request text or QR Code. Microsoft Surface UEFI Configurator will generate a verification code that can be entered on the Surface device. If you enter the code on the Surface device and click **Restart**, the device will be unenrolled from SEMM. 
 
@@ -225,6 +228,10 @@ serial-number independent. If the certificate is still valid, you can
 create a reset package using PowerShell to reset SEMM.
 
 ## Version History
+
+### Version 2.59.139
+* Support to Surface Pro 7 and Surface Laptop 3
+- Support to Wake on Power feature
 
 ### Version 2.54.139.0
 * Support to Surface Hub 2S

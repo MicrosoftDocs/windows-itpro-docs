@@ -3,7 +3,6 @@ title: Deploy Windows 10 updates using System Center Configuration Manager (Wind
 description: System Center Configuration Manager provides maximum control over quality and feature updates for Windows 10.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo

@@ -6,12 +6,11 @@ description: Learn the differences between servicing Windows 10 and servicing ol
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
 audience: itpro
-author: greg-lindsay
+author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
-author: greg-lindsay
+author: jaimeo
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---

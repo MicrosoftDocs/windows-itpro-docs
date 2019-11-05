@@ -2,7 +2,7 @@
 title: Installing Microsoft Defender ATP for Mac with Microsoft Intune
 ms.reviewer: 
 description: Describes how to install Microsoft Defender ATP for Mac, using Microsoft Intune.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
+keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -188,7 +188,102 @@ You may now enroll more devices. You can also enroll them later, after you have 
    </plist>
    ```
 
-9. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
+9. To whitelist Defender and Auto Update for displaying notifications in UI on macOS 10.15 (Catalina), import the following .mobileconfig as a custom payload:
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+   <plist version="1.0">
+     <dict>
+       <key>PayloadContent</key>
+       <array>
+         <dict>
+           <key>NotificationSettings</key>
+           <array>
+             <dict>
+               <key>AlertType</key>
+               <integer>2</integer>
+               <key>BadgesEnabled</key>
+               <true/>
+               <key>BundleIdentifier</key>
+               <string>com.microsoft.autoupdate2</string>
+               <key>CriticalAlertEnabled</key>
+               <false/>
+               <key>GroupingType</key>
+               <integer>0</integer>
+               <key>NotificationsEnabled</key>
+               <true/>
+               <key>ShowInLockScreen</key>
+               <false/>
+               <key>ShowInNotificationCenter</key>
+               <true/>
+               <key>SoundsEnabled</key>
+               <true/>
+             </dict>
+             <dict>
+               <key>AlertType</key>
+               <integer>2</integer>
+               <key>BadgesEnabled</key>
+               <true/>
+               <key>BundleIdentifier</key>
+               <string>com.microsoft.wdavtray</string>
+               <key>CriticalAlertEnabled</key>
+               <false/>
+               <key>GroupingType</key>
+               <integer>0</integer>
+               <key>NotificationsEnabled</key>
+               <true/>
+               <key>ShowInLockScreen</key>
+               <false/>
+               <key>ShowInNotificationCenter</key>
+               <true/>
+               <key>SoundsEnabled</key>
+               <true/>
+             </dict>
+           </array>
+           <key>PayloadDescription</key>
+           <string/>
+           <key>PayloadDisplayName</key>
+           <string>notifications</string>
+           <key>PayloadEnabled</key>
+           <true/>
+           <key>PayloadIdentifier</key>
+           <string>BB977315-E4CB-4915-90C7-8334C75A7C64</string>
+           <key>PayloadOrganization</key>
+           <string>Microsoft</string>
+           <key>PayloadType</key>
+           <string>com.apple.notificationsettings</string>
+           <key>PayloadUUID</key>
+           <string>BB977315-E4CB-4915-90C7-8334C75A7C64</string>
+           <key>PayloadVersion</key>
+           <integer>1</integer>
+         </dict>
+       </array>
+       <key>PayloadDescription</key>
+       <string/>
+       <key>PayloadDisplayName</key>
+       <string>mdatp - allow notifications</string>
+       <key>PayloadEnabled</key>
+       <true/>
+       <key>PayloadIdentifier</key>
+       <string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string>
+       <key>PayloadOrganization</key>
+       <string>Microsoft</string>
+       <key>PayloadRemovalDisallowed</key>
+       <false/>
+       <key>PayloadScope</key>
+       <string>System</string>
+       <key>PayloadType</key>
+       <string>Configuration</string>
+       <key>PayloadUUID</key>
+       <string>85F6805B-0106-4D23-9101-7F1DFD5EA6D6</string>
+       <key>PayloadVersion</key>
+       <integer>1</integer>
+     </dict>
+   </plist>
+   ```
+
+10. Select **Manage > Assignments**.  In the **Include** tab, select **Assign to All Users & All devices**.
 
 Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** > **Device status**:
 
@@ -200,7 +295,7 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 2. Select **App type=Other/Line-of-business app**.
 3. Select **file=wdav.pkg.intunemac**. Select **OK** to upload.
 4. Select **Configure** and add the required information.
-5. Use **macOS Sierra 10.12** as the minimum OS and set *Ignore app version* to **Yes**. Other settings can be any arbitrary value.
+5. Use **macOS High Sierra 10.13** as the minimum OS and set *Ignore app version* to **Yes**. Other settings can be any arbitrary value.
 
     > [!CAUTION]
     > Failure to set *Ignore app version* to **Yes** impacts the ability of the application to receive updates through Microsoft AutoUpdate. See [Deploy updates for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-updates.md) for additional information about how the product is updated.

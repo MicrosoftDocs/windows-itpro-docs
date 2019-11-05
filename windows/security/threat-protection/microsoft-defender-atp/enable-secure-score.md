@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 04/24/2018
 ---
 
 # Enable Secure Score security controls
@@ -27,7 +26,7 @@ ms.date: 04/24/2018
 
 
 
-Set the baselines for calculating the score of Windows Defender security controls on the Secure Score dashboard. If you use third-party solutions, consider excluding the corresponding controls from the calculations.
+Set the baselines for calculating the score of security controls on the Secure Score dashboard. If you use third-party solutions, consider excluding the corresponding controls from the calculations.
 
   >[!NOTE]
   >Changes might take up to a few hours to reflect on the dashboard. 
