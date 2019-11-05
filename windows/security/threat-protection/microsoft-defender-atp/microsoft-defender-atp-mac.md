@@ -217,6 +217,6 @@ To read more on how to configure MAU in enterprise environments, refer to [Deplo
 
 ## Resources
 
-- [Microsoft Defender ATP for Mac Resources](microsoft-defender-atp-mac-resources.md) has more information about logging, uninstalling, or other topics
+- [Microsoft Defender ATP for Mac resources](microsoft-defender-atp-mac-resources.md) has more information about logging, uninstalling, or other topics
 - [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md) has guidance on how to configure the product in enterprise environments
 - [Privacy for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-privacy.md) has privacy info
