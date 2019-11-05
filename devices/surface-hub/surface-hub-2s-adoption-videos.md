@@ -29,9 +29,9 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 - Overview of training services
 - Training best practices
 
-## Chapter  2  Getting started with Surface Hub
+## Chapter 2 - Getting started with Surface Hub
 
-> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE26zQm>]<br>
+> ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46Ejt>]<br>
 
 - What is Surface Hub?
 - Technical overview
@@ -40,7 +40,8 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 - Getting started with Surface Hub
 - Gathering expectations
 
-## Chapter  3  Navigating Surface Hub
+## Chapter 3 - Navigating Surface Hub
+
 > ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46OFW>]<br>
 
 - Welcome screen
@@ -51,7 +52,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 - Teams/Skype
 - End Session
 
-## Chapter  4 Whiteboarding and collaboration
+## Chapter 4 - Whiteboarding and collaboration
 
 > ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46M4v>]<br>
 
@@ -63,7 +64,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 - Sharing the whiteboard
 - Export the Whiteboard	
  
-## Chapter  5 Exploring Surface Hub apps
+## Chapter 5 - Exploring Surface Hub apps
 
 > ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46Ejz>]<br>
 
@@ -73,7 +74,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 - Microsoft Excel
 - Microsoft Edge
 
-## Chapter  6  Advanced apps and Office 365
+## Chapter 6 - Advanced apps and Office 365
 
 > ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46EjA>]<br>
 
@@ -85,7 +86,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 - OneDrive
 - CoAuthor documents
 
-## Chapter  7  Connecting devices
+## Chapter 7 - Connecting devices
 
 > ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46M4w>]<br>
 
@@ -96,7 +97,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 - Line of Business app workflows
 - Troubleshooting Miracast and wired connect	
  
-## Chapter  8 Skype for Business meetings
+## Chapter 8 - Skype for Business meetings
 
 > ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46M4x>]<br>
 
@@ -108,7 +109,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 - Managing a Skype for Business meeting
 - Present content
 	
-## Chapter  9 Microsoft Teams meetings
+## Chapter 9 - Microsoft Teams meetings
 
 > ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46OFZ>]<br>
 
@@ -121,7 +122,7 @@ This page contains comprehensive training for Surface Hub 2S, available on deman
 - Present content
 - Conclusion
 
-## Chapter  10  Basic troubleshooting
+## Chapter 10 - Basic troubleshooting
 
 > ![VIDEO <https://www.microsoft.com/videoplayer/embed/RE46z65>]<br>
 
