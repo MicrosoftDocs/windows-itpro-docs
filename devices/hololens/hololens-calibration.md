@@ -93,7 +93,7 @@ You can also disable the calibration prompt by following these steps:
 ### Calibration data and security
 
 Calibration information is stored locally on the device and is not associated with any account information. There is no record of who has used the device without calibration. This mean new users will get prompted to calibrate visuals when they use the device for the first time, as well as users who opted out of calibration previously or if calibration was unsuccessful.
-Device can store up to 50 calibration profiles locally. After this number has been reached, the oldest unused profile will be automatically deleted. 
+The device can store up to 50 calibration profiles locally. After this number has been reached, the oldest unused profile will be automatically deleted. 
 
 Calibration information can always be deleted from the device in **Settings** > **Privacy** > **Eye tracker**.  
 
