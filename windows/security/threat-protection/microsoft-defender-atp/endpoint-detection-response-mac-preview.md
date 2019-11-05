@@ -136,7 +136,7 @@ h. Select Manage > Assignments. In the Include tab, select Assign to All
 
 ### Step 2: Intune deployment and onboarding
 
-Follow the instruction in docs about [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune.md).
+Follow the instruction in docs about [Microsoft Intune-based deployment](mac-install-with-intune.md).
 
 ## Deploy manually on a single machine
 
