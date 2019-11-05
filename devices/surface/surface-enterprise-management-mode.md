@@ -66,9 +66,7 @@ After a device is enrolled in SEMM, the configuration file is read and the setti
 
 ### Enable or disable devices in Surface UEFI with SEMM
 
- The built in devices that appear in the UEFI Devices page may vary depending on your device or corporate environment; for example, LTE only appears on devices equipped with LTE support.
-
- The following list shows all the available devices you can manage in SEMM:
+The following list shows all the available devices you can manage in SEMM:
 
 * Docking USB Port
 * On-board Audio
@@ -82,6 +80,8 @@ After a device is enrolled in SEMM, the configuration file is read and the setti
 * Wi-Fi and Bluetooth
 * LTE
 
+ >[!NOTE]
+>The built-in devices that appear in the UEFI Devices page may vary depending on your device or corporate environment. For example, the UEFI Devices page is not supported on Surface Pro X; LTE only appears on LTE-equipped devices. 
 ### Configure advanced settings with SEMM
 **Table 1. Advanced settings**
 
