@@ -20,14 +20,12 @@ ms.topic: conceptual
 
 # Enable Microsoft Defender ATP Insider Machine
 
-The following instructions specify how to configure set a macOS machine running Microsoft Defender ATP to be "Insider" machine. For scale deployment we recommend using Jamf, or Intune.
+The following instructions specify how to configure a macOS machine running Microsoft Defender ATP to be an "Insider" machine. For scale deployment we recommend using Jamf, or Intune.
 
->[!NOTE]
->For machines already running Microsoft Defender ATP for Mac, please pay attention to the “earlyPreview” flag. See documentation of Jamf, Intune and manual deployment instructions below.
+>[!IMPORTANT]
+>Make sure you have enabled [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac#how-to-install-microsoft-defender-atp-for-mac.md), and pay attention to the “earlyPreview” flag. See documentation for [Jamf](mac-install-with-jamf.md), [Intune](mac-install-with-intune.md) and [manual deployment](mac-install-manually.md) instructions.
 
-## Deploying centrally with Jamf
-
-### Step 1: Enable the "Insider" program
+## Enable the "Insider" program with Jamf
 
 a. Create configuration profile com.microsoft.wdav.plist with the following content:
 
@@ -52,13 +50,7 @@ c. Create an entry with com.microsoft.wdav as the preference domain and uplo
 >[!WARNING]
 >You must enter the correct preference domain (com.microsoft.wdav), otherwise the preferences will not be recognized by the product
 
-### Step 2: Jamf deployment and onboarding
-
-Follow the instruction in docs about [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf.md).
-
-## Deploy centrally with Intune
-
-### Step 1: Enable the "Insider" program
+## Enable the "Insider" program with Intune
 
 a. Create configuration profile com.microsoft.wdav.plist with the following content:
 
@@ -134,35 +126,14 @@ h. Select Manage > Assignments. In the Include tab, select Assign to All
 >[!WARNING]
 >You must enter the correct custom configuration profile name, otherwise these preferences will not be recognized by the product.
 
-### Step 2: Intune deployment and onboarding
 
-Follow the instruction in docs about [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune.md).
+## Enable the "Insider" program manually on a single machine
 
-## Deploy manually on a single machine
+In the command prompt, run
 
-### Step 1: Enable the "Insider" program
-
-a. Create configuration profile com.microsoft.wdav.plist with the following content:
-
-```XML
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-    <plist version="1.0">
-    <dict>
-        <key>edr</key>
-        <dict>
-            <key>earlyPreview</key>
-            <true/>
-        </dict>
-    </dict>
-    </plist>
-```
-
-b. Copy plist file to /Library/Managed Preferences/
-
-### Step 2: Deployment and onboarding
-
-Follow the instruction in docs about [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md)
+```bash
+    mdatp --edr --early-preview true
+ ```
 
 ## Troubleshooting
 
