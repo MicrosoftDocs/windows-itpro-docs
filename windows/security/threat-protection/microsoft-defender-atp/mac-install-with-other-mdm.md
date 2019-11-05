@@ -54,7 +54,7 @@ Most MDM solutions use the same model for managing macOS machines, with similar 
 ### Package
 
 Configure deployment of a [required application package](mac-install-with-jamf.md#package), 
-with the installation package (wdav.pkg) downloaded from [Microsoft Defender Security Center](microsoft-defender-atp-mac-install-with-jamf.md#download-installation-and-onboarding-packages).
+with the installation package (wdav.pkg) downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md#download-installation-and-onboarding-packages).
 
 In order to deploy the package to your enterprise, use the instructions associated with your MDM solution.
 
