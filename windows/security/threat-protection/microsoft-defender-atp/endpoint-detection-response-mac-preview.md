@@ -25,7 +25,7 @@ The following instructions specify how to configure a macOS machine running Micr
 >[!IMPORTANT]
 >Make sure you have enabled [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac#how-to-install-microsoft-defender-atp-for-mac.md), and pay attention to the “earlyPreview” flag. See documentation for [Jamf](mac-install-with-jamf.md), [Intune](mac-install-with-intune.md) and [manual deployment](mac-install-manually.md) instructions.
 
-## Enable the "Insider" program with Jamf
+## Enable the Insider program with Jamf
 
 a. Create configuration profile com.microsoft.wdav.plist with the following content:
 
@@ -43,14 +43,14 @@ a. Create configuration profile com.microsoft.wdav.plist with the following cont
     </plist>
 ```
 
-b. From the JAMF console, navigate to Computers > Configuration Profiles, navigate to the configuration profile you'd like to use, then select Custom Settings. 
+b. From the JAMF console, navigate to **Computers > Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**.
 
 c. Create an entry with com.microsoft.wdav as the preference domain and upload the .plist created earlier.
 
 >[!WARNING]
 >You must enter the correct preference domain (com.microsoft.wdav), otherwise the preferences will not be recognized by the product
 
-## Enable the "Insider" program with Intune
+## Enable the Insider program with Intune
 
 a. Create configuration profile com.microsoft.wdav.plist with the following content:
 
@@ -109,9 +109,9 @@ a. Create configuration profile com.microsoft.wdav.plist with the following cont
     </plist>
 ```
 
-b. Open Manage > Device configuration. Select Manage > Profiles > Create Profile.
+b. Open **Manage > Device configuration**. Select **Manage > Profiles > Create Profile**.
 
-c. Choose a name for the profile. Change Platform=macOS to Profile type=Custom. Select Configure.
+c. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Custom**. Select **Configure**.
 
 d. Save the .plist created earlier as com.microsoft.wdav.xml.
 
@@ -119,15 +119,14 @@ e. Enter com.microsoft.wdav as the custom configuration profile name.
 
 f. Open the configuration profile and upload com.microsoft.wdav.xml. This file was created in step 1.
 
-g. Select OK.
+g. Select **OK**.
 
-h. Select Manage > Assignments. In the Include tab, select Assign to All Users & All devices.
+h. Select **Manage > Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 
 >[!WARNING]
 >You must enter the correct custom configuration profile name, otherwise these preferences will not be recognized by the product.
 
-
-## Enable the "Insider" program manually on a single machine
+## Enable the Insider program manually on a single machine
 
 In the command prompt, run:
 
