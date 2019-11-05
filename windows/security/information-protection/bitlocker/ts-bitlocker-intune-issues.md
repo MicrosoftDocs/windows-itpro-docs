@@ -78,7 +78,9 @@ Remove the bootable media, and restart the device. After the device restarts, ve
 
 The event information resembles the following:
 
-![Details of event ID 854](./images/4509192_en_1.png)
+> Failed to enable Silent Encryption. WinRe is not configured.
+>  
+> Error: This PC cannot support device encryption because WinRE is not properly configured.
 
 ### Cause
 
@@ -145,7 +147,9 @@ In the output, locate the **Windows Boot Loader** section that includes the line
 
 The event information resembles the following:
 
-![Details of event ID 851](./images/4509197_en_1.png)
+> Failed to enable Silent Encryption.
+>  
+> Error: BitLocker Drive Encryption cannot be enabled on the operating system drive. Contact the computer manufacturer for BIOS upgrade instructions.
 
 ### Cause
 
