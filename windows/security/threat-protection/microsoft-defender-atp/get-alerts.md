@@ -18,16 +18,15 @@ ms.topic: article
 
 # List alerts API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 Retrieves a collection of Alerts.
 
 Supports [OData V4 queries](https://www.odata.org/documentation/).
 
-The OData's Filter query is supported on: "Id", "IncidentId", "AlertCreationTime", "Status", "Severity" and "Category".
+The OData's Filter query is supported on: "alertCreationTime", "incidentId", "InvestigationId", "status", "severity" and "category".
 
 See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
@@ -52,7 +51,8 @@ GET /api/alerts
 ```
 
 ## Optional query parameters
-Method supports $skip and $top query parameters.
+Method supports $top, $select, $filter, $expand and $skip query parameters.
+$expand is available on Files, IPs and Domains. e.g. $expand=files,domains
 
 ## Request headers
 
@@ -85,7 +85,7 @@ GET https://api.securitycenter.windows.com/api/alerts
 Here is an example of the response.
 
 >[!NOTE]
->The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+>The response list shown here may be truncated for brevity. All alerts will be returned from an actual call.
 
 
 ```json
@@ -93,45 +93,36 @@ Here is an example of the response.
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Alerts",
     "value": [
         {
-            "id": "121688558380765161_2136280442",
-			"incidentId": 7696,
-			"assignedTo": "secop@contoso.com",
-			"severity": "High",
+            "id": "da637084217856368682_-292920499",
+			"incidentId": 66860,
+			"investigationId": 4416234,
+			"assignedTo": secop@contoso.com,
+			"severity": "Low",
 			"status": "New",
 			"classification": "TruePositive",
-			"determination": "Malware",
+			"determination": null,
 			"investigationState": "Running",
-			"category": "MalwareDownload",
-			"detectionSource": "WindowsDefenderAv",
-			"threatFamilyName": "Mikatz",
-			"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
-			"description": "Some description",
-			"alertCreationTime": "2018-11-26T16:19:21.8409809Z",
-			"firstEventTime": "2018-11-26T16:17:50.0948658Z",
-			"lastEventTime": "2018-11-26T16:18:01.809871Z",
+			"detectionSource": "WindowsDefenderAtp",
+			"category": "CommandAndControl",
+			"threatFamilyName": null,
+			"title": "Network connection to a risky host",
+			"description": "A network connection was made to a risky host which has exhibited malicious activity.",
+			"alertCreationTime": "2019-11-03T23:49:45.3823185Z",
+			"firstEventTime": "2019-11-03T23:47:16.2288822Z",
+			"lastEventTime": "2019-11-03T23:47:51.2966758Z",
+			"lastUpdateTime": "2019-11-03T23:55:52.6Z",
 			"resolvedTime": null,
-			"machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
-        },
-        {
-            "id": "441688558380765161_2136280442",
-			"incidentId": 8633,
-			"assignedTo": "secop@contoso.com",
-			"severity": "Low",
-			"status": "InProgress",
-			"classification": "TruePositive",
-			"determination": "Malware",
-			"investigationState": "Running",
-			"category": "MalwareDownload",
-			"detectionSource": "WindowsDefenderAv",
-			"threatFamilyName": "Mikatz",
-			"title": "Windows Defender AV detected 'Mikatz', high-severity malware",
-			"description": "Some description",
-			"alertCreationTime": "2018-11-25T16:19:21.8409809Z",
-			"firstEventTime": "2018-11-25T16:17:50.0948658Z",
-			"lastEventTime": "2018-11-25T16:18:01.809871Z",
-			"resolvedTime": null,
-			"machineId": "9d80fbbc1bdbc5ce968f1d37c72384cbe17ee337"
-        }
+			"machineId": "986e5df8b73dacd43c8917d17e523e76b13c75cd",
+			"comments": [
+				{
+					"comment": "test comment for docs",
+					"createdBy": "secop@contoso.com",
+					"createdTime": "2019-11-05T14:08:37.8404534Z"
+				}
+			],
+			"alertFiles": [],
+			"alertDomains": [],
+			"alertIps": []
 	]
 }
 ```

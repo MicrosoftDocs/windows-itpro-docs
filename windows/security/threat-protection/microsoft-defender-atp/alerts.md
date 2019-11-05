@@ -79,7 +79,7 @@ alertDomains | List of Alert Domains | **This list will be populated on $expand 
 GET https://api.securitycenter.windows.com/api/alerts/da637084217856368682_-292920499
 ```
 
-```
+```json
 {
     "id": "da637084217856368682_-292920499",
     "incidentId": 66860,
@@ -101,10 +101,6 @@ GET https://api.securitycenter.windows.com/api/alerts/da637084217856368682_-2929
     "lastUpdateTime": "2019-11-03T23:55:52.6Z",
     "resolvedTime": null,
     "machineId": "986e5df8b73dacd43c8917d17e523e76b13c75cd",
-    "alertUser": {
-        "accountName": "test1212",
-        "domainName": "neba-phjfkum2"
-    },
     "comments": [
         {
             "comment": "test comment for docs",
