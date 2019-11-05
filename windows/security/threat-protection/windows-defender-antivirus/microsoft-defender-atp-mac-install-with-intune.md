@@ -2,7 +2,7 @@
 title: Installing Microsoft Defender ATP for Mac with Microsoft Intune
 ms.reviewer: 
 description: Describes how to install Microsoft Defender ATP for Mac, using Microsoft Intune.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
+keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -295,7 +295,7 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 2. Select **App type=Other/Line-of-business app**.
 3. Select **file=wdav.pkg.intunemac**. Select **OK** to upload.
 4. Select **Configure** and add the required information.
-5. Use **macOS Sierra 10.12** as the minimum OS and set *Ignore app version* to **Yes**. Other settings can be any arbitrary value.
+5. Use **macOS High Sierra 10.13** as the minimum OS and set *Ignore app version* to **Yes**. Other settings can be any arbitrary value.
 
     > [!CAUTION]
     > Failure to set *Ignore app version* to **Yes** impacts the ability of the application to receive updates through Microsoft AutoUpdate. See [Deploy updates for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-updates.md) for additional information about how the product is updated.

@@ -25,6 +25,8 @@ ms.date: 10/08/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
+[!include[Prerelease information](prerelease.md)]
+
 The [Advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about machines and other entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the Advanced hunting schema.
 
 ## Schema tables
@@ -45,6 +47,10 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 | **[LogonEvents](advanced-hunting-logonevents-table.md)** | Sign-ins and other authentication events |
 | **[ImageLoadEvents](advanced-hunting-imageloadevents-table.md)** | DLL loading events |
 | **[MiscEvents](advanced-hunting-miscevents-table.md)** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
+| **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-tvm-softwareinventory-table.md)** | Vulnerabilities in your software inventory |
+| **[DeviceTvmSoftwareVulnerabilitiesKB ](advanced-hunting-tvm-softwarevulnerability-table.md)** | Publicly-available vulnerabilities and whether they exist in your software inventory |
+| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-tvm-configassessment-table.md)** | Security configuration assessment information |
+| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-tvm-secureconfigkb-table.md)** | Basis of security configuration assessment such as security industry standards and benchmarks |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

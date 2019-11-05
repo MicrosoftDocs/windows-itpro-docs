@@ -13,7 +13,6 @@
 ### [Types of devices](types-of-devices.md)
 ### Use WDAC with custom policies
 #### [Create an initial default policy](create-initial-default-policy.md)
-#### [Create path-based rules](create-path-based-rules.md)
 #### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
 ### [Audit WDAC policies](audit-windows-defender-application-control-policies.md)
 ### [Merge WDAC policies](merge-windows-defender-application-control-policies.md)
@@ -35,6 +34,8 @@
 ### [Use signed policies to protect Windows Defender Application Control against tampering](use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md)
 #### [Signing WDAC policies with SignTool.exe](signing-policies-with-signtool.md)
 ### [Disable WDAC policies](disable-windows-defender-application-control-policies.md)
+### [LOB Win32 Apps on S Mode](LOB-win32-apps-on-s.md)
+
 
 ## [AppLocker](applocker\applocker-overview.md) 
 ### [Administer AppLocker](applocker\administer-applocker.md)

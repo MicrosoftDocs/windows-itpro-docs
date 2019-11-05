@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -294,7 +295,7 @@ This error has more than one possible cause. Attempt [quick fixes](quick-fixes.m
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 0x80073BC3 - 0x20009<br>
-0x8007002 - 0x20009<br>
+0x80070002 - 0x20009<br>
 0x80073B92 - 0x20009
 
 </table>
@@ -593,7 +594,7 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 <tr>
 <td>0x80240FFF </td>
 <td>Occurs when update synchronization fails. It can occur when you are using Windows Server Update Services on its own or when it is integrated with System Center Configuration Manager. If you enable update synchronization before you install <a href="https://support.microsoft.com/help/3095113/en-us">hotfix 3095113</a>, WSUS doesn&#39;t recognize the Upgrades classification and instead treats the upgrade like a regular update.</td>
-<td> You can prevent this by installing <a href="http://blogs.technet.com/b/wsus/archive/2015/12/04/important-update-for-wsus-4-0-kb-3095113.aspx">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following:
+<td> You can prevent this by installing <a href="https://blogs.technet.com/b/wsus/archive/2015/12/04/important-update-for-wsus-4-0-kb-3095113.aspx">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following:
 
 <ol>
 <li>Disable the Upgrades classification.</li>
@@ -602,7 +603,7 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 <li>Enable the Upgrades classification.</li>
 <li>Perform a full synch.</li>
 </ol>
-<br>For detailed information on how to run these steps check out <a href="http://blogs.technet.com/b/wsus/archive/2016/01/30/quot-help-i-synched-upgrades-too-soon-quot.aspx">How to delete upgrades in WSUS</a>.</p>
+<br>For detailed information on how to run these steps check out <a href="https://blogs.technet.com/b/wsus/archive/2016/01/30/quot-help-i-synched-upgrades-too-soon-quot.aspx">How to delete upgrades in WSUS</a>.</p>
 </td>
 </tr>
 
@@ -698,12 +699,12 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 | 0XC1900105 | MOSETUP_E_TEST_MODE | The installation process is being used in a test environment. |
 | 0XC1900106 | MOSETUP_E_TERMINATE_PROCESS | The installation process was terminated. |
 | 0XC1900107 | MOSETUP_E_CLEANUP_PENDING | A cleanup operation from a previous installation attempt is still pending. A system reboot is required. |
-| 0XC1900108 | MOSETUP_E_REPORTING | An error has occured and the result value must be consolidated for telemetry purposes. |
+| 0XC1900108 | MOSETUP_E_REPORTING | An error has occurred and the result value must be consolidated for telemetry purposes. |
 | 0XC1900109 | MOSETUP_E_COMPAT_TERMINATE | The installation process was terminated during the actionable compatibility phase. |
-| 0XC190010a | MOSETUP_E_UNKNOWN_CMD_LINE | The installation process was launched with an unknown command line argument. |
+| 0XC190010a | MOSETUP_E_UNKNOWN_CMD_LINE | The installation process was launched with an unknown command-line argument. |
 | 0XC190010b | MOSETUP_E_INSTALL_IMAGE_NOT_FOUND | The installation image was not found. |
 | 0XC190010c | MOSETUP_E_AUTOMATION_INVALID | The provided automation information was invalid. |
-| 0XC190010d | MOSETUP_E_INVALID_CMD_LINE | The installation process was launched with an invalid command line argument. |
+| 0XC190010d | MOSETUP_E_INVALID_CMD_LINE | The installation process was launched with an invalid command-line argument. |
 | 0XC190010e | MOSETUP_E_EULA_ACCEPT_REQUIRED | The installation process requires that the user accept the license agreement. |
 | 0XC1900110 | MOSETUP_E_EULA_CANCEL | The user has chosen to cancel for license agreement. |
 | 0XC1900111 | MOSETUP_E_ADVERTISE_CANCEL | The user has chosen to cancel for advertisement. |

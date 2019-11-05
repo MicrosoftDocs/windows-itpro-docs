@@ -786,11 +786,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/customize-attack-surface-reduction.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/customize-attack-surface-reduction",
 "redirect_document_id": true
@@ -877,11 +872,6 @@
 },
 {
 "source_path": "windows/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/network-protection",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/network-protection",
 "redirect_document_id": true
 },
@@ -6044,6 +6034,11 @@
 {
     "source_path": "devices/hololens/hololens-restart-recover.md",
     "redirect_url": "/hololens/hololens-recovery",
+    "redirect_document_id": false
+},
+{
+    "source_path": "devices/hololens/holographic-photos-and-video.md",
+    "redirect_url": "/hololens/holographic-photos-and-videos",
     "redirect_document_id": false
 },
 {
@@ -15340,6 +15335,11 @@
 "source_path": "windows/security/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
 "redirect_document_id": false
+},
+{
+    "source_path": "windows/security/threat-protection/windows-defender-application-control/create-path-based-rules.md",
+    "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create",
+    "redirect_document_id": false
 }
 ]
 }

@@ -141,7 +141,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 1. Download the [connectivity verification tool](https://aka.ms/mdatpanalyzer) to the PC where Microsoft Defender ATP sensor is running on.
 
-2. Extract the contents of WDATPConnectivityAnalyzer on the machine.
+2. Extract the contents of MDATPClientAnalyzer on the machine.
 
 3. Open an elevated command-line:
 
@@ -152,19 +152,19 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 4. Enter the following command and press **Enter**:
 
     ```PowerShell
-    HardDrivePath\WDATPConnectivityAnalyzer.cmd
+    HardDrivePath\MDATPClientAnalyzer.cmd
     ```
 
-    Replace *HardDrivePath* with the path where the WDATPConnectivityAnalyzer tool was downloaded to, for example
+    Replace *HardDrivePath* with the path where the MDATPClientAnalyzer tool was downloaded to, for example
 
     ```PowerShell
-    C:\Work\tools\WDATPConnectivityAnalyzer\WDATPConnectivityAnalyzer.cmd
+    C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
     ```
 
-5. Extract the *WDATPConnectivityAnalyzerResult.zip* file created by tool in the folder used in the *HardDrivePath*.
+5. Extract the *MDATPClientAnalyzerResult.zip* file created by tool in the folder used in the *HardDrivePath*.
 
-6. Open *WDATPConnectivityAnalyzer.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. <br><br>
-   The tool checks the connectivity of Microsoft Defender ATP service URLs that Microsoft Defender ATP client is configured to interact with. It then prints the results into the *WDATPConnectivityAnalyzer.txt* file for each URL that can potentially be used to communicate with the Microsoft Defender ATP  services. For example:
+6. Open *MDATPClientAnalyzerResult.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs. <br><br>
+   The tool checks the connectivity of Microsoft Defender ATP service URLs that Microsoft Defender ATP client is configured to interact with. It then prints the results into the *MDATPClientAnalyzerResult.txt* file for each URL that can potentially be used to communicate with the Microsoft Defender ATP  services. For example:
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx
