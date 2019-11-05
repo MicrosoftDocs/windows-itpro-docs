@@ -17,6 +17,10 @@ ms.localizationpriority: Medium
 
 Whether you are a small or large business, a Surface Hub adoption plan is critical in generating the right use cases and helping your users become comfortable with the device. Check out these downloadable guides designed to help you deliver training across your organization.
 
+## On-demand training
+
+- [Surface Hub 2S adoption and training videos](surface-hub-2s-adoption-videos.md)
+
 ## Adoption toolkit
 
 - [Surface Hub adoption toolkit](downloads/SurfaceHubAdoptionToolKit.pdf)
