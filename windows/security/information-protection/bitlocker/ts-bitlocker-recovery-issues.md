@@ -287,5 +287,3 @@ To resolve this issue, do one of the following:
 
 - Remove any device that uses TPM 1.2 from any group that is subject to Group Policy Objects (GPOs) that enforce Secure Launch.
 - Edit the **Turn On Virtualization Based Security** GPO to set **Secure Launch Configuration** to **Disabled**.
-
-   ![The Turn On Virtualization Based Security policy dialog box](./images/4496674_en_1.png)
