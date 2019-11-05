@@ -33,10 +33,12 @@ This topic describes the structure of this profile (including a recommended prof
 
 ## Configuration profile structure
 
-The configuration profile is a .plist file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences. The top level of the configuration profile includes product-wide preferences and entries for subareas of the product, which are explained in more detail in the next sections.
+The configuration profile is a .plist file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
 
->[!NOTE]
+>[!CAUTION]
 >The layout of the configuration profile depends on the management console that you are using. The following sections contain examples of configuration profiles for JAMF and Intune.
+
+The top level of the configuration profile includes product-wide preferences and entries for subareas of the product, which are explained in more detail in the next sections.
 
 ### Antivirus engine preferences
 
