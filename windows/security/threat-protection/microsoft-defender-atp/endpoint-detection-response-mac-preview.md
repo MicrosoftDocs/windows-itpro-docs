@@ -162,7 +162,7 @@ b. Copy plist file to /Library/Managed Preferences/
 
 ### Step 2: Deployment and onboarding
 
-Follow the instruction in docs about [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md)
+Follow the instruction in docs about [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md)
 
 ## Troubleshooting
 
