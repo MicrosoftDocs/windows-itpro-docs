@@ -54,7 +54,7 @@ c. Create an entry with com.microsoft.wdav as the preference domain and uplo
 
 ### Step 2: Jamf deployment and onboarding
 
-Follow the instruction in docs about [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf.md).
+Follow the instruction in docs about [JAMF-based deployment](mac-install-with-jamf.md).
 
 ## Deploy centrally with Intune
 
