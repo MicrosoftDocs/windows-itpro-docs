@@ -30,6 +30,9 @@ For more information preview features, see [Preview features](https://docs.micro
 
 ## October 2019
 
+- [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac.md) <BR> Microsoft Defender ATP for Mac brings the next-generation protection to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices.
+
+
 - [Indicators for IP addresses, URLs/Domains](manage-indicators.md) <BR> You can now allow or block URLs/domains using your own threat intelligence. 
 
 
