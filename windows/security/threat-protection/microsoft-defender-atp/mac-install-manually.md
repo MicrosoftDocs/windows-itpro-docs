@@ -81,7 +81,7 @@ To complete this process, you must have admin privileges on the machine.
 The installation proceeds.
 
 > [!CAUTION]
-> If you don't select **Allow**, the installation will proceed after 5 minutes. Defender ATP will be loaded, but some features, such as real-time protection, will be disabled. See [Troubleshoot kernel extension issues](microsoft-defender-atp-mac-support-kext.md) for information on how to resolve this.
+> If you don't select **Allow**, the installation will proceed after 5 minutes. Defender ATP will be loaded, but some features, such as real-time protection, will be disabled. See [Troubleshoot kernel extension issues](mac-support-kext.md) for information on how to resolve this.
 
 > [!NOTE]
 > macOS may request to reboot the machine upon the first installation of Microsoft Defender. Real-time protection will not be available until the machine is rebooted.
@@ -123,8 +123,8 @@ To grant consent, open System Preferences -> Security & Privacy -> Privacy -> Fu
 
 ## Logging installation issues
 
-See [Logging installation issues](microsoft-defender-atp-mac-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+See [Logging installation issues](mac-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
 ## Uninstallation
 
-See [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for Mac from client devices.
+See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for Mac from client devices.

@@ -51,7 +51,7 @@ Process | A specific process (specified either by the full path or file name) an
 
 ### From the management console
 
-For more information on how to configure exclusions from JAMF, Intune, or another management console, see [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
+For more information on how to configure exclusions from JAMF, Intune, or another management console, see [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).
 
 ### From the user interface
 

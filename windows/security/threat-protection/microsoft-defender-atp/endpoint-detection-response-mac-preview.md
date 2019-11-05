@@ -129,7 +129,7 @@ h. Select Manage > Assignments. In the Include tab, select Assign to All
 
 ## Enable the "Insider" program manually on a single machine
 
-In the command prompt, run
+In the command prompt, run:
 
 ```bash
     mdatp --edr --early-preview true

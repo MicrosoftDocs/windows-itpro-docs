@@ -298,7 +298,7 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 5. Use **macOS High Sierra 10.13** as the minimum OS and set *Ignore app version* to **Yes**. Other settings can be any arbitrary value.
 
     > [!CAUTION]
-    > Failure to set *Ignore app version* to **Yes** impacts the ability of the application to receive updates through Microsoft AutoUpdate. See [Deploy updates for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-updates.md) for additional information about how the product is updated.
+    > Failure to set *Ignore app version* to **Yes** impacts the ability of the application to receive updates through Microsoft AutoUpdate. See [Deploy updates for Microsoft Defender ATP for Mac](mac-updates.md) for additional information about how the product is updated.
 
     ![Device status blade screenshot](../windows-defender-antivirus/images/MDATP-8-IntuneAppInfo.png)
 
@@ -341,8 +341,8 @@ Solution: Follow the steps above to create a device profile using WindowsDefende
 
 ## Logging installation issues
 
-For more information on how to find the automatically generated log that is created by the installer when an error occurs, see [Logging installation issues](microsoft-defender-atp-mac-resources.md#logging-installation-issues) .
+For more information on how to find the automatically generated log that is created by the installer when an error occurs, see [Logging installation issues](mac-resources.md#logging-installation-issues) .
 
 ## Uninstallation
 
-See [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for Mac from client devices.
+See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender ATP for Mac from client devices.
