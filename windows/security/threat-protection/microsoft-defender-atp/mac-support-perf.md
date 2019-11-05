@@ -46,10 +46,10 @@ The following steps can be used to troubleshoot and mitigate these issues:
     $ mdatp --config realTimeProtectionEnabled false
     ```
 
-    If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
+    If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).
 
 2. Open Finder and navigate to **Applications** > **Utilities**. Open **Activity Monitor** and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
 3. Configure Microsoft Defender ATP for Mac with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
 
-    See [Configure and validate exclusions for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-exclusions.md) for details.
+    See [Configure and validate exclusions for Microsoft Defender ATP for Mac](mac-exclusions.md) for details.

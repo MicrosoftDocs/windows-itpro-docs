@@ -23,7 +23,7 @@ ms.topic: conceptual
 The following instructions specify how to configure a macOS machine running Microsoft Defender ATP to be an "Insider" machine. For scale deployment we recommend using Jamf, or Intune.
 
 >[!IMPORTANT]
->Make sure you have enabled [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac#how-to-install-microsoft-defender-atp-for-mac.md), and pay attention to the “earlyPreview” flag. See documentation for [Jamf](mac-install-with-jamf.md), [Intune](mac-install-with-intune.md) and [manual deployment](mac-install-manually.md) instructions.
+>Make sure you have enabled [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac.md#how-to-install-microsoft-defender-atp-for-mac), and pay attention to the “earlyPreview” flag. See documentation for [Jamf](mac-install-with-jamf.md), [Intune](mac-install-with-intune.md) and [manual deployment](mac-install-manually.md) instructions.
 
 ## Enable the Insider program with Jamf
 
