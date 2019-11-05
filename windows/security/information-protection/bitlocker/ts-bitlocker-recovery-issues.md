@@ -264,9 +264,16 @@ To resolve this issue, install the appropriate update on the affected device:
 
 ## Credential Guard/Device Guard on TPM 1.2: At every restart, BitLocker prompts for the recovery password and returns error 0xC0210000
 
-You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the device uses [Virtualization-based Security](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-vbs) features such as [Device Guard and Credential Guard](https://docs.microsoft.com/windows-hardware/drivers/bringup/device-guard-and-credential-guard). Every time that you start the device, the device enters BitLocker Recovery mode and you see error code 0xc0210000.
+You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the device uses [Virtualization-based Security](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-vbs) features such as [Device Guard and Credential Guard](https://docs.microsoft.com/windows-hardware/drivers/bringup/device-guard-and-credential-guard). Every time that you start the device, the device enters BitLocker Recovery mode and you see error code 0xc0210000, and a message that resembles the following.
 
-![Recovery Your PC/Device needs to be repaired](./images/4496645_en_1.png)
+> Recovery
+> 
+> Your PC/Device needs to be repaired.
+> A required file couldn't be accessed because your BitLocker key wasn't loaded correctly.
+>  
+> Error code 0xc0210000
+>  
+> You'll need to use recovery tools. If you don't have any installation media (like a disc or USB device), contact your PC administrator or PC/Device manufacturer.
 
 ### Cause
 
