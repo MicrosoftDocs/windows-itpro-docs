@@ -1,7 +1,6 @@
 ---
 title: Configure and validate exclusions for Microsoft Defender ATP for Mac
-ms.reviewer:
-description: Describes how to provide and validate exclusions for Microsoft Defender ATP for Mac. Exclusions can be set for files, folders, and processes.
+description: Provide and validate exclusions for Microsoft Defender ATP for Mac. Exclusions can be set for files, folders, and processes.
 keywords: microsoft, defender, atp, mac, exclusions, scans, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

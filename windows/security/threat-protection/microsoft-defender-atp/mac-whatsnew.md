@@ -1,6 +1,5 @@
 ---
-title: Microsoft Defender ATP for Mac What's New
-ms.reviewer: 
+title: What's new in Microsoft Defender Advanced Threat Protection for Mac
 description: List of major changes for Microsoft Defender ATP for Mac.
 keywords: microsoft, defender, atp, mac, installation, macos, whatsnew
 search.product: eADQiWindows 10XVcnh

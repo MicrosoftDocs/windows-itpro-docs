@@ -1,7 +1,6 @@
 ---
 title: Troubleshoot kernel extension issues in Microsoft Defender ATP for Mac
-ms.reviewer: 
-description: Describes how to troubleshoot kernel extension-related issues in Microsoft Defender ATP for Mac.
+description: Troubleshoot kernel extension-related issues in Microsoft Defender ATP for Mac.
 keywords: microsoft, defender, atp, mac, kernel, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Troubleshoot kernel extension issues
+# Troubleshoot kernel extension issues in Microsoft Defender ATP for Mac
 
 **Applies to:**
 

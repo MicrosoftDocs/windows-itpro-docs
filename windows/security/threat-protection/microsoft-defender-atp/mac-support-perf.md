@@ -1,7 +1,6 @@
 ---
-title: Troubleshoot performance issues
-ms.reviewer: 
-description: Describes how to troubleshoot performance issues in Microsoft Defender ATP for Mac.
+title: Troubleshoot performance issues for Microsoft Defender ATP for Mac
+description: Troubleshoot performance issues in Microsoft Defender ATP for Mac.
 keywords: microsoft, defender, atp, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Troubleshoot performance issues
+# Troubleshoot performance issues for Microsoft Defender ATP for Mac
 
 **Applies to:**
 
