@@ -52,7 +52,7 @@ GET /api/alerts
 
 ## Optional query parameters
 Method supports $top, $select, $filter, $expand and $skip query parameters.
-$expand is available on Files, IPs and Domains. e.g. $expand=files,domains
+<br>$expand is available on Files, IPs and Domains. e.g. $expand=files,domains
 
 ## Request headers
 
