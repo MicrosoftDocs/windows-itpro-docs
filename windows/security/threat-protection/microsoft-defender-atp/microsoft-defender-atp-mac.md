@@ -27,9 +27,11 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ## What’s new in the latest release
 
-[What's new](microsoft-defender-atp-mac-whatsnew.md)
+[What's new](mac-whatsnew.md)
 
 If you have any feedback that you would like to share, submit it by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
+
+To learn how to configure a macOS machine running Microsoft Defender ATP to be an "Insider" machine, go to [Enable Microsoft Defender ATP Insider Machine](endpoint-detection-response-mac-preview.md)
 
 ## How to install Microsoft Defender ATP for Mac
 
@@ -38,6 +40,21 @@ If you have any feedback that you would like to share, submit it by opening Micr
 - Access to the Microsoft Defender Security Center portal
 - Beginner-level experience in macOS and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
+
+### Installation instructions
+
+There are several methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac.
+
+In general you need to take the following steps:
+
+- Ensure that you have a Microsoft Defender ATP subscription and have access to the Microsoft Defender ATP Portal
+- Deploy Microsoft Defender ATP for Mac using one of the following deployment methods:
+  - Via third-party management tools:
+    - [Microsoft Intune-based deployment](mac-install-with-intune.md)
+    - [JAMF-based deployment](mac-install-with-jamf.md)
+    - [Other MDM products](mac-install-with-other-mdm.md)
+  - Via the command-line tool:
+    - [Manual deployment](mac-install-manually.md)
 
 ### System requirements
 
@@ -88,114 +105,6 @@ Once Microsoft Defender ATP is installed, connectivity can be validated by runni
 $ mdatp --connectivity-test
 ```
 
-### Installation instructions
-
-There are several methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac.
-
-In general you need to take the following steps:
-
-- Ensure that you have a Microsoft Defender ATP subscription and have access to the Microsoft Defender ATP Portal
-- Deploy Microsoft Defender ATP for Mac using one of the following deployment methods:
-  - Via third-party management tools:
-    - [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune.md)
-    - [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf.md)
-    - [Other MDM products](microsoft-defender-atp-mac-install-with-other-mdm.md)
-  - Via the command-line tool:
-    - [Manual deployment](microsoft-defender-atp-mac-install-manually.md)
-
-## How to enable EDR preview
-
-If you are an EDR private \ public preview customer, you can enable your machine to receive EDR preview features.
-Currently this flag enables \ disables the entire EDR functionality.
-- Intune-based enable
-  - Create configuration profile com.microsoft.wdav.plist with the following content: 
-    ```XML
-    <?xml version="1.0" encoding="utf-8"?> 
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-    <plist version="1"> 
-        <dict> 
-            <key>PayloadUUID</key> 
-            <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string> 
-            <key>PayloadType</key> 
-            <string>Configuration</string> 
-            <key>PayloadOrganization</key> 
-            <string>Microsoft</string> 
-            <key>PayloadIdentifier</key> 
-            <string>com.microsoft.wdav</string> 
-            <key>PayloadDisplayName</key> 
-            <string>Microsoft Defender ATP settings</string> 
-            <key>PayloadDescription</key> 
-            <string>Microsoft Defender ATP configuration settings</string> 
-            <key>PayloadVersion</key> 
-            <integer>1</integer> 
-            <key>PayloadEnabled</key> 
-            <true/> 
-            <key>PayloadRemovalDisallowed</key> 
-            <true/> 
-            <key>PayloadScope</key> 
-            <string>System</string> 
-            <key>PayloadContent</key> 
-            <array> 
-                <dict> 
-                    <key>PayloadUUID</key> 
-                    <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string> 
-                    <key>PayloadType</key> 
-                    <string>com.microsoft.wdav</string> 
-                    <key>PayloadOrganization</key> 
-                    <string>Microsoft</string> 
-                    <key>PayloadIdentifier</key> 
-                    <string>com.microsoft.wdav</string> 
-                    <key>PayloadDisplayName</key> 
-                    <string>Microsoft Defender ATP configuration settings</string> 
-                    <key>PayloadDescription</key> 
-                    <string/> 
-                    <key>PayloadVersion</key> 
-                    <integer>1</integer> 
-                    <key>PayloadEnabled</key> 
-                    <true/> 
-                    <key>edr</key> 
-                    <dict> 
-                        <key>earlyPreview</key> 
-                        <true/> 
-                    </dict> 
-                </dict> 
-            </array> 
-        </dict> 
-    </plist> 
-    ```
-    For more info, refer to [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune.md)
-- JAMF-based enable
-  - Create configuration profile com.microsoft.wdav.plist with the following content: 
-    ```XML
-    <?xml version="1.0" encoding="UTF-8"?> 
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-    <plist version="1.0"> 
-    <dict> 
-        <key>edr</key> 
-        <dict> 
-            <key>earlyPreview</key> 
-            <true/> 
-        </dict> 
-    </dict> 
-    </plist> 
-    ```
-    For more info, refer to [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf.md)
-- Manual enable
-  - In command prompt, run
-    ```bash
-    $ mdatp --early-preview true
-    ```
-    For more info, refer to [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md)
-
-To test if EDR is enabled and functioning properly on a machine, visit machine details. Timeline tab should contain events.
-- If timeline shows no events, please make sure System Extension were approved for machine.
-- If you are on Catalina and seeing no file events, make sure Full Disk Access was allowed.
-For more info, refer to deployment instructions:
-    - [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune.md)
-    - [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf.md)
-    - [Other MDM products](microsoft-defender-atp-mac-install-with-other-mdm.md)
-  - Via the command-line tool:
-    - [Manual deployment](microsoft-defender-atp-mac-install-manually.md)
 
 ## How to update Microsoft Defender ATP for Mac
 
