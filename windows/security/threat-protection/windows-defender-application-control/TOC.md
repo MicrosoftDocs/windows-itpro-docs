@@ -35,7 +35,6 @@
 ### [Use signed policies to protect Windows Defender Application Control against tampering](use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md)
 #### [Signing WDAC policies with SignTool.exe](signing-policies-with-signtool.md)
 ### [Disable WDAC policies](disable-windows-defender-application-control-policies.md)
-### [Device Guard and AppLocker](windows-defender-device-guard-and-applocker.md)
 
 ## [AppLocker](applocker\applocker-overview.md) 
 ### [Administer AppLocker](applocker\administer-applocker.md)

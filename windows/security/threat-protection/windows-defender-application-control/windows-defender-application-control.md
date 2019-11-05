@@ -72,7 +72,7 @@ AppLocker policies can apply to all users on a computer or to individual users a
 
 ### AppLocker System Requirements
 
-AppLocker policies can only be configured on and applied to computers that are running on the supported versions and editions of the Windows operating system. For more info, see [Requirements to Use AppLocker](requirements-to-use-applocker.md). 
+AppLocker policies can only be configured on and applied to computers that are running on the supported versions and editions of the Windows operating system. For more info, see [Requirements to Use AppLocker](applocker/requirements-to-use-applocker.md). 
 AppLocker policies can be deployed using Group Policy or MDM.
 
 ## Choose when to use WDAC or AppLocker
