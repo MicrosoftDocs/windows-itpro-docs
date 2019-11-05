@@ -106,15 +106,17 @@ This issue occurs if the Surface device TPM is configured to use Platform Config
 - Secure Boot is turned off.
 - PCR values have been explicitly defined, such as by Group Policy.
 
-Devices that support Connected Standby (also known as *InstantGO* or *Always On, Always Connected PCs*), including Surface devices, must use PCR 7 of the TPM. In its default configuration on such systems, BitLocker binds to PCR 7 and PCR 11 if PCR 7 and Secure Boot are correctly configured. For more information, see "About the Platform Configuration Register (PCR)" at [BitLocker Group Policy Settings]https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj679890(v=ws.11)#about-the-platform-configuration-register-pcr)).
+Devices that support Connected Standby (also known as *InstantGO* or *Always On, Always Connected PCs*), including Surface devices, must use PCR 7 of the TPM. In its default configuration on such systems, BitLocker binds to PCR 7 and PCR 11 if PCR 7 and Secure Boot are correctly configured. For more information, see "About the Platform Configuration Register (PCR)" at [BitLocker Group Policy Settings](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj679890(v=ws.11)#about-the-platform-configuration-register-pcr)).
 
 ### Resolution
 
 To verify the PCR values that are in use on a device, open and elevated Command Prompt window and run the following command:
 
 ```cmd
-manage-bde.exe -protectors -get \<OSDriveLetter\>:
+manage-bde.exe -protectors -get <OSDriveLetter>:
 ```
+
+In this command, &lt;*OSDriveLetter*&gt; represents the drive letter of the operating system drive.  
 
 To resolve this issue and repair the device, follow these steps.
 
