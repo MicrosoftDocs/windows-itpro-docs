@@ -1,7 +1,6 @@
 ---
-title: Microsoft Defender ATP for Mac
-ms.reviewer:
-description: Describes how to install and use Microsoft Defender ATP for Mac.
+title: Enable Microsoft Defender ATP Insider Machine
+description: Install and use Microsoft Defender ATP for Mac.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -43,7 +42,7 @@ a. Create configuration profile com.microsoft.wdav.plist with the following cont
     </plist>
 ```
 
-b. From the JAMF console, navigate to **Computers > Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**.
+b. From the JAMF console, navigate to  **Computers > Configuration Profiles**, navigate to the configuration profile you'd like to use, then select  **Custom Settings**.
 
 c. Create an entry with com.microsoft.wdav as the preference domain and upload the .plist created earlier.
 
@@ -109,9 +108,9 @@ a. Create configuration profile com.microsoft.wdav.plist with the following cont
     </plist>
 ```
 
-b. Open **Manage > Device configuration**. Select **Manage > Profiles > Create Profile**.
+b. Open  **Manage > Device configuration**. Select  **Manage > Profiles > Create Profile**.
 
-c. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Custom**. Select **Configure**.
+c. Choose a name for the profile. Change  **Platform=macOS**  to  **Profile type=Custom**. Select  **Configure**.
 
 d. Save the .plist created earlier as com.microsoft.wdav.xml.
 
@@ -119,9 +118,9 @@ e. Enter com.microsoft.wdav as the custom configuration profile name.
 
 f. Open the configuration profile and upload com.microsoft.wdav.xml. This file was created in step 1.
 
-g. Select **OK**.
+g. Select  **OK**.
 
-h. Select **Manage > Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
+h. Select  **Manage > Assignments**. In the  **Include**  tab, select  **Assign to All Users & All devices**.
 
 >[!WARNING]
 >You must enter the correct custom configuration profile name, otherwise these preferences will not be recognized by the product.
@@ -142,7 +141,7 @@ To verify you are running the correct version, run ‘mdatp --health’ on the m
 
 * The required version is 100.72.15 or later.
 * If the version is not as expected, verify that Microsoft Auto Update is set to automatically download and install updates by running ‘defaults read com.microsoft.autoupdate2’ from terminal.
-* To change update settings use documentation in Update Office for Mac automatically.
+* To change update settings use documentation in [Update Office for Mac automatically](https://support.office.com/article/update-office-for-mac-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).
 * If you are not using Office for Mac, download and run the AutoUpdate tool.
 
 ### A machine still does not appear on Microsoft Defender Security Center
@@ -151,4 +150,4 @@ After a successful deployment and onboarding of the correct version, check that 
 
 * Check that you enabled the early preview flag. In terminal run “mdatp –health” and look for the value of “edrEarlyPreviewEnabled”. It should be “Enabled”.
 
-If you followed the manual deployment instructions, you were prompted to enable Kernel Extensions. Pay attention to the “System Extension note” in the manual deployment documentation and use the “Manual Deployment” section in the troubleshoot kernel extension documentation.
+If you followed the manual deployment instructions, you were prompted to enable Kernel Extensions. Pay attention to the “System Extension note” in the [manual deployment documentation](mac-install-manually.md#application-installation) and use the “Manual Deployment” section in the [troubleshoot kernel extension documentation](mac-support-kext.md#manual-deployment).
