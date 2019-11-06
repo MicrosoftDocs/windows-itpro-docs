@@ -34,7 +34,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 > [!TIP]
 > If you have any feedback that you would like to share, submit it by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
 
-To configure a macOS machine running Microsoft Defender ATP to be an "Insider" machine, see [Enable Microsoft Defender ATP Insider Machine](endpoint-detection-response-mac-preview.md).
+To get the latest features, including preview capabilities (such as endpoint detection and response for your Mac machines), configure your macOS machine running Microsoft Defender ATP to be an "Insider" machine. See [Enable Microsoft Defender ATP Insider Machine](endpoint-detection-response-mac-preview.md). 
 
 ## How to install Microsoft Defender ATP for Mac
 
