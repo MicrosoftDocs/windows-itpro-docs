@@ -27,38 +27,53 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ## What’s new in the latest release
 
-[What's new](microsoft-defender-atp-mac-whatsnew.md)
+[What's new](mac-whatsnew.md)
 
 If you have any feedback that you would like to share, submit it by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
+
+To learn how to configure a macOS machine running Microsoft Defender ATP to be an "Insider" machine, go to [Enable Microsoft Defender ATP Insider Machine](endpoint-detection-response-mac-preview.md)
 
 ## How to install Microsoft Defender ATP for Mac
 
 ### Prerequisites
 
-- Access to the Microsoft Defender Security Center portal
+- A Microsoft Defender ATP subscription and access to the Microsoft Defender Security Center portal
 - Beginner-level experience in macOS and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
+### Installation instructions
+
+There are several methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac.
+
+* Third-party management tools:
+    * [Microsoft Intune-based deployment](mac-install-with-intune.md)
+    * [JAMF-based deployment](mac-install-with-jamf.md)
+    * [Other MDM products](mac-install-with-other-mdm.md)
+
+* Command-line tool:
+    * [Manual deployment](mac-install-manually.md)
+
 ### System requirements
 
-> [!CAUTION]
-> The three most recent major releases of macOS are supported. Beta versions of macOS are not supported.
->
-> macOS Sierra (10.12) support will end on January 1, 2020.
+The three most recent major releases of macOS are supported.
 
-- Supported macOS versions: 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
+- 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
 - Disk space: 650 MB
 
+Beta versions of macOS are not supported. macOS Sierra (10.12) support will end on January 1, 2020.
+
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
+
+### Network connections
 
 The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
 | Service location                         | DNS record              |
 | ---------------------------------------- | ----------------------- |
-| Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> *.blob.core.windows.net <br/> officecdn-microsoft-com.akamaized.net |
-| European Union                           | europe.x.cp.wd.microsoft.com |
-| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com |
-| United States                            | unitedstates.x.cp.wd.microsoft.com |
+| Common URLs for all locations            |  x.cp.wd.microsoft.com <br/> cdn.x.cp.wd.microsoft.com <br/> eu-cdn.x.cp.wd.microsoft.com <br/> wu-cdn.x.cp.wd.microsoft.com <br/> *.blob.core.windows.net <br/> officecdn-microsoft-com.akamaized.net <br/> crl.microsoft.com <br/>  events.data.microsoft.com |
+| European Union                           | europe.x.cp.wd.microsoft.com <br/> eu-v20.events.data.microsoft.com |
+| United Kingdom                           | unitedkingdom.x.cp.wd.microsoft.com <br/> uk-v20.events.data.microsoft.com |
+| United States                            | unitedstates.x.cp.wd.microsoft.com  <br/> us-v20.events.data.microsoft.com |
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
 - Web Proxy Auto-discovery Protocol (WPAD)
@@ -83,33 +98,23 @@ The output from this command should be similar to the following:
 > [!CAUTION]
 > We recommend that you keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) (SIP) enabled on client machines. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
 
-### Installation instructions
-
-There are several methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac.
-
-In general you need to take the following steps:
-
-- Ensure that you have a Microsoft Defender ATP subscription and have access to the Microsoft Defender ATP Portal
-- Deploy Microsoft Defender ATP for Mac using one of the following deployment methods:
-  - Via third-party management tools:
-    - [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune.md)
-    - [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf.md)
-    - [Other MDM products](microsoft-defender-atp-mac-install-with-other-mdm.md)
-  - Via the command-line tool:
-    - [Manual deployment](microsoft-defender-atp-mac-install-manually.md)
+Once Microsoft Defender ATP is installed, connectivity can be validated by running the following command in Terminal:
+```bash
+$ mdatp --connectivity-test
+```
 
 ## How to update Microsoft Defender ATP for Mac
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender ATP for Mac, a program named Microsoft AutoUpdate (MAU) is used.
 
-To read more on how to configure MAU in enterprise environments, refer to [Deploy updates for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-updates.md)
+To read more on how to configure MAU in enterprise environments, refer to [Deploy updates for Microsoft Defender ATP for Mac](mac-updates.md)
 
 ## How to configure Microsoft Defender ATP for Mac
 
-Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
+Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).
 
 ## Resources
 
-- For more information about logging, uninstalling, or other topics, see the [Resources](microsoft-defender-atp-mac-resources.md) page.
+- For more information about logging, uninstalling, or other topics, see the [Resources](mac-resources.md) page.
 
-- [Privacy for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-privacy.md)
+- [Privacy for Microsoft Defender ATP for Mac](mac-privacy.md)

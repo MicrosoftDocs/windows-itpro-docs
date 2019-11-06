@@ -1,6 +1,6 @@
 ---
-title: Installing Microsoft Defender ATP for Mac with different MDM product
-description: Describes how to install Microsoft Defender ATP for Mac on other management solutions.
+title: Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender ATP for Mac
+description: Install Microsoft Defender ATP for Mac on other management solutions.
 keywords: microsoft, defender, atp, mac, installation, deploy, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Deployment with a different Mobile Device Management (MDM) system
+# Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender ATP for Mac
 
 **Applies to:**
 
@@ -49,21 +49,21 @@ You can deploy Defender without the last requirement from the preceding list, ho
 
 ## Deployment
 
-Most MDM solutions use the same model for managing macOS machines, with similar terminology. Use [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf.md) as a template.
+Most MDM solutions use the same model for managing macOS machines, with similar terminology. Use [JAMF-based deployment](mac-install-with-jamf.md) as a template.
 
 ### Package
 
-Configure deployment of a [required application package](microsoft-defender-atp-mac-install-with-jamf.md#package), 
-with the installation package (wdav.pkg) downloaded from [Microsoft Defender Security Center](microsoft-defender-atp-mac-install-with-jamf.md#download-installation-and-onboarding-packages).
+Configure deployment of a [required application package](mac-install-with-jamf.md#package), 
+with the installation package (wdav.pkg) downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md#download-installation-and-onboarding-packages).
 
 In order to deploy the package to your enterprise, use the instructions associated with your MDM solution.
 
 ### License settings
 
-Set up [a system configuration profile](microsoft-defender-atp-mac-install-with-jamf.md#configuration-profile). 
+Set up [a system configuration profile](mac-install-with-jamf.md#configuration-profile). 
 Your MDM solution may call it something like "Custom Settings Profile", as Microsoft Defender ATP for Mac is not part of macOS.
 
-Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft Defender Security Center](microsoft-defender-atp-mac-install-with-jamf.md#download-installation-and-onboarding-packages).
+Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md#download-installation-and-onboarding-packages).
 Your system may support an arbitrary property list in XML format. You can upload the jamf/WindowsDefenderATPOnboarding.plist file as-is in that case.
 Alternatively, it may require you to convert the property list to a different format first.
 
@@ -76,4 +76,4 @@ Set up a KEXT or kernel extension policy. Use team identifier **UBF8T346G9** to 
 
 ## Check installation status
 
-Run [mdatp](microsoft-defender-atp-mac-install-with-jamf.md#check-onboarding-status) on a client machine to check the onboarding status.
+Run [mdatp](mac-install-with-jamf.md#check-onboarding-status) on a client machine to check the onboarding status.
