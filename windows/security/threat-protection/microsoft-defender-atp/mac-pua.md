@@ -1,7 +1,6 @@
 ---
-title: Detect and block potentially unwanted applications
-ms.reviewer:
-description: Describes how to detect and block Potentially Unwanted Applications (PUA) using Microsoft Defender ATP for Mac.
+title: Detect and block potentially unwanted applications with Microsoft Defender ATP for Mac
+description: Detect and block Potentially Unwanted Applications (PUA) using Microsoft Defender ATP for Mac.
 keywords: microsoft, defender, atp, mac, pua, pus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Detect and block potentially unwanted applications
+# Detect and block potentially unwanted applications with Microsoft Defender ATP for Mac
 
 **Applies to:**
 
@@ -59,8 +58,8 @@ $ mdatp --threat --type-handling potentially_unwanted_application [off|audit|blo
 
 ### Use the management console to configure PUA protection:
 
-In your enterprise, you can configure PUA protection from a management console, such as JAMF or Intune, similarly to how other product settings are configured. For more information, see the [Threat type settings](microsoft-defender-atp-mac-preferences.md#threat-type-settings) section of the [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md) topic.
+In your enterprise, you can configure PUA protection from a management console, such as JAMF or Intune, similarly to how other product settings are configured. For more information, see the [Threat type settings](mac-preferences.md#threat-type-settings) section of the [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md) topic.
 
 ## Related topics
 
-- [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md)
+- [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md)
