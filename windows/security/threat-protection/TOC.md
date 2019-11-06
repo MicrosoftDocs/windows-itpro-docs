@@ -321,7 +321,6 @@
 #### [Update](microsoft-defender-atp/mac-updates.md)
 #### [Configure]()
 ##### [Configure and validate exclusions](microsoft-defender-atp/mac-exclusions.md)
-##### [Set up your Mac to receive Microsoft Defender ATP preview features](microsoft-defender-atp/endpoint-detection-response-mac-preview.md)
 ##### [Set preferences](microsoft-defender-atp/mac-preferences.md)
 ##### [Detect and block Potentially Unwanted Applications](microsoft-defender-atp/mac-pua.md)
 #### [Troubleshoot]()
