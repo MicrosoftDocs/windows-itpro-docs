@@ -15350,26 +15350,26 @@
 "source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac-whatsnew",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-whatsnew",
 "redirect_document_id": true
-},,
+},
 {
 "source_path": "windows-defender-antivirus/microsoft-defender-atp-mac-install-with-intune.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-install-with-intune",
 "redirect_document_id": true
-},,
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
-"redirect_document_id": false
-},,
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
-"redirect_document_id": false
-},,
-{
-"source_path": "windows/security/threat-protection/windows-defender-exploit-guard/exploit-protection-exploit-guard.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection",
-"redirect_document_id": false
 },
+{
+"source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac-install-with-jamf.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-install-with-jamf",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac-install-with-other-mdm.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-install-with-other-mdm",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac-install-manually.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-install-manually",
+"redirect_document_id": true
+}
 ]
 }
