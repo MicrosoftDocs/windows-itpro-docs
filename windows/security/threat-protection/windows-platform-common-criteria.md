@@ -43,7 +43,7 @@ The Security Target describes security functionality and assurance measures used
 - [Windows 8 and Windows Server 2012 BitLocker](http://www.commoncriteriaportal.org/files/epfiles/st_vid10540-st.pdf)
 - [Windows 8, Windows RT, and Windows Server 2012 IPsec VPN Client](http://www.commoncriteriaportal.org/files/epfiles/st_vid10529-st.pdf)
 - [Windows 7 and Windows Server 2008 R2](http://www.commoncriteriaportal.org/files/epfiles/st_vid10390-st.pdf)
-- [Microsoft Windows Server 2008 R2 Hyper-V Role](http://www.microsoft.com/download/en/details.aspx?id=29305)
+- [Microsoft Windows Server 2008 R2 Hyper-V Role](https://www.microsoft.com/download/en/details.aspx?id=29305)
 - [Windows Vista and Windows Server 2008 at EAL4+](http://www.commoncriteriaportal.org/files/epfiles/st_vid10291-st.pdf)
 - [Microsoft Windows Server 2008 Hyper-V Role](http://www.commoncriteriaportal.org/files/epfiles/0570b_pdf.pdf)
 - [Windows Vista and Windows Server 2008 at EAL1](http://www.commoncriteriaportal.org/files/epfiles/efs-t005_msvista_msserver2008_eal1_st_v1.0.pdf)
