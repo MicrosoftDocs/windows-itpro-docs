@@ -10,8 +10,8 @@ ms.mktglfcycl:
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: stephow-MSFT
-ms.author: stephow
+author: LauraWi
+ms.author: laurawi
 manager: laurawi
 audience: ITPro
 ms.collection: M365-security-compliance
