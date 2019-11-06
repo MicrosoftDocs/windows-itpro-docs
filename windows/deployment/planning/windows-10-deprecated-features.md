@@ -25,10 +25,10 @@ The features described below are longer being actively developed, and might be r
 
 <!-- | Fresh Paint app | The Fresh Paint app will be removed from the Microsoft Store on Windows 10 in a future release. | -->
 <!-- | Cortana voice commands | After upgrading and the new Cortana UWP app is deployed, users will no longer be able to use custom voice commands to invoke apps locally using Cortana. | -->
+<!-- | Cortana | In a future release, Cortana will be transitioning to a new Universal Windows Platform (UWP) app.  The set of skills included with Cortana will be changing and may vary by market.  Please see this support article for more information. | 1909 | -->
 
 |Feature    |  Details and mitigation  | Announced in version |
 | ----------- | --------------------- | ---- |
-| Cortana | In a future release, Cortana will be transitioning to a new Universal Windows Platform (UWP) app.  The set of skills included with Cortana will be changing and may vary by market.  Please see this support article for more information. | 1909 |
 | Hyper-V vSwitch on LBFO | In a future release, the Hyper-V vSwitch will no longer have the capability to be bound to an LBFO team.  Instead, it must be bound via [Switch Embedded Teaming](https://docs.microsoft.com/windows-server/virtualization/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming#bkmk_sswitchembedded) (SET).| 1909 |
 | Language Community tab in Feedback Hub | We are planning to remove the Language Community tab in Feedback Hub. Users will be able to provide translation feedback using the normal feedback process: [Feedback Hub - Feedback](feedback-hub://?newFeedback=true&feedbackType=2). The Feedback Hub app will also be updated in the Windows Store. | 1909 |
 | My People / People in the Shell |  My People is deprecated. It may be removed in a future update. | 1909 |
