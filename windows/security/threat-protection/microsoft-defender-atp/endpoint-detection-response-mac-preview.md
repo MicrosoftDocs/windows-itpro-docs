@@ -131,7 +131,7 @@ h. Select **Manage > Assignments**. In the **Include** tab, select **Ass
 In the command prompt, run:
 
 ```bash
-    mdatp --edr --early-preview true
+    mdatp --edr --earlyPreview true
  ```
 
 ## Troubleshooting
