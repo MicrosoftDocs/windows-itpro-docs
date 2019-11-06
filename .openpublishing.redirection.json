@@ -15337,17 +15337,17 @@
 "redirect_document_id": false
 },
 {
-    "source_path": "windows/security/threat-protection/windows-defender-application-control/create-path-based-rules.md",
-    "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create",
-    "redirect_document_id": false
+"source_path": "windows/security/threat-protection/windows-defender-application-control/create-path-based-rules.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create",
+"redirect_document_id": false
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac",
+"source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac",
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac-whatsnew",
+"source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac-whatsnew.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-whatsnew",
 "redirect_document_id": true
 },
