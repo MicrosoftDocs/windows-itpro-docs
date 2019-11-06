@@ -31,6 +31,7 @@
     "externalReference": [],
     "globalMetadata": {
       "feedback_system": "None",
+      "hideEdit": true,
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.windows-configure"
