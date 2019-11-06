@@ -22,9 +22,9 @@ ms.author: dansimp
 
 A Stop error is displayed as a blue screen that contains the name of the faulty driver, such as any of the following example drivers:
 
-- atikmpag.sys
-- igdkmd64.sys
-- nvlddmkm.sys
+- `atikmpag.sys`
+- `igdkmd64.sys`
+- `nvlddmkm.sys`
 
 There is no simple explanation for the cause of Stop errors (also known as blue screen errors or bug check errors). Many different factors can be involved. However, various studies indicate that Stop errors usually are not caused by Microsoft Windows components. Instead, these errors are generally related to malfunctioning hardware drivers or drivers that are installed by third-party software. This includes video cards, wireless network cards, security programs, and so on.
 
@@ -138,7 +138,7 @@ You can use the tools such as Windows Software Development KIT (SDK) and Symbols
 
 1. Verify that the computer is set up to generate a complete memory dump file when a crash occurs. See the steps [here](troubleshoot-windows-freeze.md#method-1-memory-dump) for more information. 
 2. Locate the memory.dmp file in your Windows directory on the computer that is crashing, and copy that file to another computer.
-3. On the other computer, download the [Windows 10 SDK](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk).
+3. On the other computer, download the [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 4. Start the install and choose **Debugging Tools for Windows**. This will install the WinDbg tool.
 5. Open the WinDbg tool and set the symbol path by clicking **File** and then clicking **Symbol File Path**.<br>
     a. If the computer is connected to the Internet, enter the [Microsoft public symbol server](https://docs.microsoft.com/windows-hardware/drivers/debugger/microsoft-public-symbols) (https://msdl.microsoft.com/download/symbols) and click **OK**. This is the recommended method.<br>
@@ -149,7 +149,7 @@ You can use the tools such as Windows Software Development KIT (SDK) and Symbols
 8. A detailed bugcheck analysis will appear. See the example below.
     ![Bugcheck analysis](images/bugcheck-analysis.png)
 9. Scroll down to the section where it says **STACK_TEXT**. There will be rows of numbers with each row followed by a colon and some text. That text should tell you what DLL is causing the crash and if applicable what service is crashing the DLL.
-10. See [Using the !analyze Exension](https://docs.microsoft.com/windows-hardware/drivers/debugger/using-the--analyze-extension) for details about how to interpret the STACK_TEXT output.
+10. See [Using the !analyze Extension](https://docs.microsoft.com/windows-hardware/drivers/debugger/using-the--analyze-extension) for details about how to interpret the STACK_TEXT output.
 
 There are many possible causes of a bugcheck and each case is unique. In the example provided above, the important lines that can be identified from the STACK_TEXT are 20, 21, and 22:
 
