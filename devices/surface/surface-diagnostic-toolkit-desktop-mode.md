@@ -7,36 +7,34 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 11/15/2018
+ms.date: 10/31/2019
 ms.reviewer: hachidan
 manager: dansimp
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.audience: itpro
 ---
 
 # Use Surface Diagnostic Toolkit for Business in desktop mode
 
-This topic explains how to use the Surface Diagnostic Toolkit (SDT) to help users in your organization run the tool to identify and diagnose issues with the Surface device. Successfully running SDT can quickly determine if a reported issue is caused by failed hardware or user error.
+This topic explains how to use the Surface Diagnostic Toolkit (SDT) to help users in your organization run the tool to identify and diagnose issues with the Surface device. Successfully running SDT can quickly determine if a reported issue is caused by failed hardware or user error. For a list of supported Surface devices in SDT, refer to [Deploy Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-business.md).
+
 
 1. Direct the user to install [the SDT package](surface-diagnostic-toolkit-business.md#create-custom-sdt) from a software distribution point or network share. After it is installed, you’re ready to guide the user through a series of tests. 
 
 2. Begin at the home page, which allows users to enter a description of the issue, and click **Continue**, as shown in figure 1.
 
     ![Start SDT in desktop mode](images/sdt-desk-1.png)
-
-    *Figure 1. SDT in desktop mode*
+*Figure 1. SDT in desktop mode*
 
 3. When SDT indicates the device has the latest updates, click **Continue** to advance to the catalog of available tests, as shown in figure 2.
 
     ![Select from SDT options](images/sdt-desk-2.png)
-
-    *Figure 2. Select from SDT options*
+*Figure 2. Select from SDT options*
 
 4. You can choose to run all the diagnostic tests. Or, if you already suspect a particular issue such as a faulty display or a power supply problem, click **Select** to choose from the available tests and click **Run Selected**, as shown in figure 3. See the following table for details of each test. 
 
     ![Select hardware tests](images/sdt-desk-3.png)
-
-    *Figure 3. Select hardware tests*
+*Figure 3. Select hardware tests*
 
     Hardware test | Description
     --- | ---
@@ -55,6 +53,7 @@ This topic explains how to use the Surface Diagnostic Toolkit (SDT) to help user
 
 
 <span id="multiple" />
+
 ## Running multiple hardware tests to troubleshoot issues
 
 SDT is designed as an interactive tool that runs a series of tests. For each test, SDT provides instructions summarizing  the nature of the test and what users should expect or look for in order for the test to be successful. For example, to diagnose if the display brightness is working properly, SDT starts at zero and increases the brightness to 100 percent, asking users to confirm – by answering **Yes** or **No** -- that brightness is functioning as expected, as shown in figure 4. 
@@ -62,7 +61,6 @@ SDT is designed as an interactive tool that runs a series of tests. For each tes
 For each test, if functionality does not work as expected and the user clicks **No**, SDT generates a report of the possible causes and ways to troubleshoot it. 
 
 ![Running hardware diagnostics](images/sdt-desk-4.png)
-
 *Figure 4. Running hardware diagnostics*
 
 1. If the brightness successfully adjusts from 0-100 percent as expected, direct the user to click **Yes** and then click **Continue**. 
@@ -75,24 +73,18 @@ For each test, if functionality does not work as expected and the user clicks **
 SDT enables you to diagnose and repair applications that may be causing issues, as shown in figure 5.
 
 ![Running repairs](images/sdt-desk-5.png)
-
 *Figure 5. Running repairs*
-
-
-
-
 <span id="logs" />
+
 ### Generating logs for analyzing issues 
 
 SDT provides extensive log-enabled diagnosis support across applications, drivers, hardware, and operating system issues, as shown in figure 6.
 
 ![Generating logs](images/sdt-desk-6.png)
-
 *Figure 6. Generating logs*
 
-
-
 <span id="detailed-report" />
+
 ### Generating detailed report comparing device vs. optimal configuration
 
 Based on the logs, SDT generates a report for software- and firmware-based issues that you can save to a preferred location.
