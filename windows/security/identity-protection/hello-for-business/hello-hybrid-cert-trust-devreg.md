@@ -107,7 +107,7 @@ Federation server proxies are computers that run AD FS software that have been c
 Use the [Setting of a Federation Proxy](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/checklist--setting-up-a-federation-server-proxy) checklist to configure AD FS proxy servers in your environment.
 
 ### Deploy Azure AD Connect
-Next, you need to synchronize the on-premises Active Directory with Azure Active Directory.  To do this, first review the [Integrating on-prem directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) and [hardware and prerequisites](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](http://go.microsoft.com/fwlink/?LinkId=615771).
+Next, you need to synchronize the on-premises Active Directory with Azure Active Directory.  To do this, first review the [Integrating on-prem directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) and [hardware and prerequisites](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](https://go.microsoft.com/fwlink/?LinkId=615771).
 
 When you are ready to install, follow the **Configuring federation with AD FS** section of [Custom installation of Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).  Select the **Federation with AD FS** option on the **User sign-in** page.  At the **AD FS Farm** page, select the use an existing option and click **Next**.  
 

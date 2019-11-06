@@ -391,7 +391,7 @@ ANALYSIS_SESSION_ELAPSED_TIME:  8377
 ANALYSIS_SOURCE:  KM
 FAILURE_ID_HASH_STRING:  km:av_ndis!ndisqueueioworkitem
 FAILURE_ID_HASH:  {10686423-afa1-4852-ad1b-9324ac44ac96}
-FAILURE_ID_REPORT_LINK: http://go.microsoft.com/fwlink/?LinkID=397724&FailureHash=10686423-afa1-4852-ad1b-9324ac44ac96
+FAILURE_ID_REPORT_LINK: https://go.microsoft.com/fwlink/?LinkID=397724&FailureHash=10686423-afa1-4852-ad1b-9324ac44ac96
 Followup:     ndiscore
 ---------
 ```
@@ -564,7 +564,7 @@ ANALYSIS_SESSION_ELAPSED_TIME:  162bd
 ANALYSIS_SOURCE:  KM
 FAILURE_ID_HASH_STRING:  km:av_r_invalid_wwanusbmp!unknown_function
 FAILURE_ID_HASH:  {31e4d053-0758-e43a-06a7-55f69b072cb3}
-FAILURE_ID_REPORT_LINK: http://go.microsoft.com/fwlink/?LinkID=397724&FailureHash=31e4d053-0758-e43a-06a7-55f69b072cb3
+FAILURE_ID_REPORT_LINK: https://go.microsoft.com/fwlink/?LinkID=397724&FailureHash=31e4d053-0758-e43a-06a7-55f69b072cb3
 
 Followup:     MachineOwner
 ---------
