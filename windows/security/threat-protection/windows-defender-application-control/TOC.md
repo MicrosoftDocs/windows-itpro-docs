@@ -2,10 +2,8 @@
 
 ## [Windows Defender Application Control design guide](windows-defender-application-control-design-guide.md)
 ### [Understand WDAC policy design decisions](understand-windows-defender-application-control-policy-design-decisions.md)
-### [Select the types of rules to create](select-types-of-rules-to-create.md)
 ### [Plan for WDAC policy management](plan-windows-defender-application-control-management.md)
-#### [Document your application control management processes](document-your-windows-defender-application-control-management-processes.md)
-### [Create your WDAC planning document](create-your-windows-defender-application-control-planning-document.md)
+### [Select the types of rules to create](select-types-of-rules-to-create.md)
 
 
 
@@ -35,6 +33,7 @@
 #### [Signing WDAC policies with SignTool.exe](signing-policies-with-signtool.md)
 ### [Disable WDAC policies](disable-windows-defender-application-control-policies.md)
 ### [LOB Win32 Apps on S Mode](LOB-win32-apps-on-s.md)
+
 
 
 ## [AppLocker](applocker\applocker-overview.md) 

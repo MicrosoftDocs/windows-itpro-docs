@@ -1,6 +1,6 @@
 ---
 title: Windows Defender Application Control design guide (Windows 10)
-description: Microsoft Windows Defender Device Guard is a feature set that consists of both hardware and software system integrity hardening features that revolutionize the Windows operating system’s security.
+description: Microsoft Windows Defender Application Control allows organizations to control what apps and drivers will run on their managed Windows 10 devices.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
@@ -22,10 +22,20 @@ ms.date: 02/20/2018
 
 **Applies to**
 - Windows 10
-- Windows Server
+- Windows Server 2016 and above
 
 This guide covers design and planning for Windows Defender Application Control (WDAC). It is intended to help security architects, security administrators, and system administrators create a plan that addresses specific application control requirements for different departments or business groups within an organization.
 
+## Plan for success
+
+A common refrain you may hear about application control is that it is "too hard". While it is true that application control is not as simple as flipping a switch, organizations can be very successful if they take a methodical approach and carefully plan their approach. In reality, the issues that lead to failure with application control often arise from business issues rather than technology challenges. Organizations that have successfully deployed application control have ensured the following before starting their planning:
+
+-   Executive sponsorship and organizational buy-in is in place.
+-   There is a clear **business** objective for using application control and it is not being planned as a purely technical problem from IT.
+-   The organization has a plan to handle potential helpdesk support requests for users who are blocked from running some apps.
+-   The organization has considered where application control can be most useful (e.g. securing sensitive workloads or business functions) and also where it may be difficult to achieve (e.g. developer workstations).
+
+Once these business factors are in place, you are ready to begin planning your WDAC deployment. The following topics can help guide you through your planning process.
 
 ## In this section
 
