@@ -27,11 +27,14 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ## What’s new in the latest release
 
-[What's new](mac-whatsnew.md)
+[What's new in Microsoft Defender ATP](whats-new-in-microsoft-defender-atp.md)
 
-If you have any feedback that you would like to share, submit it by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
+[What's new in Microsoft Defender ATP for Mac](mac-whatsnew.md)
 
-To learn how to configure a macOS machine running Microsoft Defender ATP to be an "Insider" machine, go to [Enable Microsoft Defender ATP Insider Machine](endpoint-detection-response-mac-preview.md)
+> [!TIP]
+> If you have any feedback that you would like to share, submit it by opening Microsoft Defender ATP for Mac on your device and navigating to **Help** > **Send feedback**.
+
+To configure a macOS machine running Microsoft Defender ATP to be an "Insider" machine, see [Enable Microsoft Defender ATP Insider Machine](endpoint-detection-response-mac-preview.md).
 
 ## How to install Microsoft Defender ATP for Mac
 
@@ -45,13 +48,13 @@ To learn how to configure a macOS machine running Microsoft Defender ATP to be a
 
 There are several methods and deployment tools that you can use to install and configure Microsoft Defender ATP for Mac.
 
-* Third-party management tools:
-    * [Microsoft Intune-based deployment](mac-install-with-intune.md)
-    * [JAMF-based deployment](mac-install-with-jamf.md)
-    * [Other MDM products](mac-install-with-other-mdm.md)
+- Third-party management tools:
+    - [Microsoft Intune-based deployment](mac-install-with-intune.md)
+    - [JAMF-based deployment](mac-install-with-jamf.md)
+    - [Other MDM products](mac-install-with-other-mdm.md)
 
-* Command-line tool:
-    * [Manual deployment](mac-install-manually.md)
+- Command-line tool:
+    - [Manual deployment](mac-install-manually.md)
 
 ### System requirements
 
@@ -91,9 +94,9 @@ $ curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'http
 
 The output from this command should be similar to the following:
 
-> `OK https://x.cp.wd.microsoft.com/api/report`
->
-> `OK https://cdn.x.cp.wd.microsoft.com/ping`
+ `OK https://x.cp.wd.microsoft.com/api/report`
+
+ `OK https://cdn.x.cp.wd.microsoft.com/ping`
 
 > [!CAUTION]
 > We recommend that you keep [System Integrity Protection](https://support.apple.com/en-us/HT204899) (SIP) enabled on client machines. SIP is a built-in macOS security feature that prevents low-level tampering with the OS, and is enabled by default.
@@ -105,9 +108,7 @@ $ mdatp --connectivity-test
 
 ## How to update Microsoft Defender ATP for Mac
 
-Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender ATP for Mac, a program named Microsoft AutoUpdate (MAU) is used.
-
-To read more on how to configure MAU in enterprise environments, refer to [Deploy updates for Microsoft Defender ATP for Mac](mac-updates.md)
+Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender ATP for Mac, a program named Microsoft AutoUpdate (MAU) is used. To learn more, see [Deploy updates for Microsoft Defender ATP for Mac](mac-updates.md)
 
 ## How to configure Microsoft Defender ATP for Mac
 
