@@ -106,7 +106,7 @@ Here are some things you can try saying (remember to say "Hey Cortana" first).
 - Stop recording. (Stops recording a video.)
 - Call <*contact*>. (Requires Skype.)
 - What time is it?
-- Show me the latest NBA scores. 
+- Show me the latest NBA scores.
 - How much battery do I have left?
 - Tell me a joke.
 

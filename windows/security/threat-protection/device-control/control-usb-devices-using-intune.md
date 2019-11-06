@@ -50,8 +50,10 @@ The following table describes the ways Microsoft Defender ATP can allow or block
 |----------|-------------|
 | [Restrict USB drives and other peripherals](#restrict-usb-drives-and-other-peripherals) | You can allow/prevent users to install only the USB drives and other peripherals included on a list of authorized/unauthorized devices or device types. |
 | [Block installation and usage of removable storage](#block-installation-and-usage-of-removable-storage) | You can't install or use removable storage. |
-| [Only allow installation and usage of specifically approved peripherals](#only-allow-installation-and-usage-of-specifically-approved-peripherals)   | You can only install and use approved peripherals that report specific properties in their firmware. |
+| [Allow installation and usage of specifically approved peripherals](#allow-installation-and-usage-of-specifically-approved-peripherals)   | You can only install and use approved peripherals that report specific properties in their firmware. |
 | [Prevent installation of specifically prohibited peripherals](#prevent-installation-of-specifically-prohibited-peripherals) | You can't install or use prohibited peripherals that report specific properties in their firmware. |
+| [Allow installation and usage of specifically approved peripherals with matching device instance IDs](#allow-installation-and-usage-of-specifically-approved-peripherals-with-matching-device-instance-ids) | You can only install and use approved peripherals that match any of these device instance IDs. |
+| [Prevent installation and usage of specifically prohibited peripherals with matching device instance IDs](#prevent-installation-and-usage-of-specifically-prohibited-peripherals-with-matching-device-instance-ids) | You can't install or use prohibited peripherals that match any of these device instance IDs. |
 | [Limit services that use Bluetooth](#limit-services-that-use-bluetooth) | You can limit the services that can use Bluetooth. |
 | [Use Microsoft Defender ATP baseline settings](#use-microsoft-defender-atp-baseline-settings) | You can set the recommended configuration for ATP by using the Microsoft Defender ATP security baseline. |
 
@@ -169,7 +171,7 @@ Select-Object -Property *
 
 7. Click **Create** to save the profile.
 
-### Only allow installation and usage of specifically approved peripherals
+### Allow installation and usage of specifically approved peripherals
 
 Peripherals that are allowed to be installed can be specified by their [hardware identity](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings). For a list of common identifier structures, see [Device Identifier Formats](https://docs.microsoft.com/windows-hardware/drivers/install/device-identifier-formats). Test the configuration prior to rolling it out to ensure it blocks and allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
 
@@ -182,6 +184,18 @@ Microsoft Defender ATP blocks installation and usage of prohibited peripherals b
 
 - [Administrative Templates](https://docs.microsoft.com/intune/administrative-templates-windows) can block any device with a matching hardware ID or setup class.  
 - [Device Installation CSP settings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) with a custom profile in Intune. You can [prevent installation of specific device IDs](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids) or [prevent specific device classes](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdevicesetupclasses).
+
+### Allow installation and usage of specifically approved peripherals with matching device instance IDs
+
+Peripherals that are allowed to be installed can be specified by their [device instance IDs](https://docs.microsoft.com/windows-hardware/drivers/install/device-instance-ids). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+
+You can allow installation and usage of approved peripherals with matching device instance IDs by configuring [DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdeviceinstanceids) policy setting.
+
+### Prevent installation and usage of specifically prohibited peripherals with matching device instance IDs
+
+Peripherals that are prohibited to be installed can be specified by their [device instance IDs](https://docs.microsoft.com/windows-hardware/drivers/install/device-instance-ids). Test the configuration prior to rolling it out to ensure it allows the devices expected. Ideally test various instances of the hardware. For example, test multiple USB keys rather than only one.
+
+You can prevent installation of the prohibited peripherals with matching device instance IDs by configuring [DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceinstanceids) policy setting.
 
 ### Limit services that use Bluetooth
 

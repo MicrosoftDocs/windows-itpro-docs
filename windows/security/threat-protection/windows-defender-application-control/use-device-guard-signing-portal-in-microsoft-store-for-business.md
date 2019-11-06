@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: brbrahm
+ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 02/19/2019
@@ -36,11 +36,11 @@ Before you get started, be sure to review these best practices:
 **Best practices**
 
 - Test your code integrity policies on a pilot group of devices before deploying them to production.
-- Use rule options 9 and 10 during testing. For more information, see the section Code integrity policy rules in the [Deploy Windows Defender Application Control policy rules and file rules](hhttps://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create).
+- Use rule options 9 and 10 during testing. For more information, see the section Code integrity policy rules in the [Deploy Windows Defender Application Control policy rules and file rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create).
 
 **To sign a code integrity policy**
 
-1.  Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
+1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2.  Click **Manage**, click **Store settings**, and then click **Device Guard**.
 3.  Click **Upload** to upload your code integrity policy.
 4.  After the files are uploaded, click **Sign** to sign the code integrity policy.

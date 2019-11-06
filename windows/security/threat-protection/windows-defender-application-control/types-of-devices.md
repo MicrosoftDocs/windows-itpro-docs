@@ -1,5 +1,5 @@
 ---
-title: types of devices (Windows 10)
+title: Types of devices (Windows 10)
 description: Typically, deployment of Windows Defender Application Control happens best in phases, rather than being a feature that you simply “turn on.” The choice and sequence of phases depends on the way various computers and other devices are used in your organization, and to what degree IT manages those devices.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: brbrahm
+ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 03/01/2018

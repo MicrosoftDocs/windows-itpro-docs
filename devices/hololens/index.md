@@ -1,6 +1,6 @@
 ---
-title: Microsoft HoloLens (HoloLens)
-description: Landing page for HoloLens commercial and enterprise management.
+title: Microsoft HoloLens
+description: Landing page Microsoft HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
@@ -8,7 +8,12 @@ author: scooley
 ms.author: scooley
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/14/2019
+ms.date: 10/14/2019
+audience: ITPro
+appliesto:
+- HoloLens 1
+- HoloLens 2
+
 ---
 
 # Microsoft HoloLens
@@ -21,33 +26,33 @@ ms.date: 07/14/2019
 
 <p>To learn more about HoloLens 2 for developers, check out the <a href="https://docs.microsoft.com/windows/mixed-reality/">mixed reality developer documentation</a>.</p>
 
-</td><td align="left" style="border: 0px"><img alt="HoloLens 2 side view" src="images/hololens2-side-render-xs.png"/></td></tr>
+<p>To buy HoloLens, check out <a href="https://www.microsoft.com/hololens/buy">HoloLens pricing and sales</a> on <a href="https://www.microsoft.com/hololens">microsoft.com/HoloLens</a>.</p>
+</td>
+
+<td align="left" style="border: 0px"><img alt="HoloLens 2 side view" src="images/hololens2-side-render-xs.png"/></td></tr>
 </tbody></table>
 
 ## Guides in this section
 
 | Guide | Description |
 | --- | --- |
-| [Get started with HoloLens](hololens1-setup.md) | Set up HoloLens for the first time.  |
-| [Deploy HoloLens in a commercial environment](hololens-requirements.md) | Configure HoloLens for scale enterprise deployment and ongoing device management.  |
-| [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary.  |
-| [Get support](https://support.microsoft.com/products/hololens) |Connect with Microsoft support resources for HoloLens in enterprise.  |
+| [Get started with HoloLens 2](hololens2-setup.md) | Set up HoloLens 2 for the first time.  |
+| [Get started with HoloLens (1st gen)](hololens1-setup.md) | Set up HoloLens (1st gen) for the first time.  |
+| [Get started with HoloLens in a commercial or classroom environment](hololens-requirements.md) | Plan for a multi-device HoloLens deployment and create a strategy for ongoing device management.</br>This section is tailored to IT professionals managing devices with existing device management infrastructure.  |
 
 ## Quick reference by topic
 
 | Topic | Description |
 | --- | --- |
-| [What's new in Microsoft HoloLens](hololens-whats-new.md) | Discover new features in the latest updates. |
-| [Configure HoloLens using a provisioning package](hololens-provisioning.md) | Provisioning packages make it easy for IT administrators to configure HoloLens devices without imaging |
-| [HoloLens MDM support](hololens-enroll-mdm.md) | Manage multiple HoloLens devices simultaneously using Mobile Device Management (MDM) solutions like Microsoft Intune. |
+| [What's new in HoloLens](hololens-whats-new.md) | Discover new features in the latest updates via HoloLens release notes. |
+| [Install and manage applications on HoloLens](hololens-install-apps.md) | Install and manage important applications on HoloLens at scale.  |
 | [HoloLens update management](hololens-updates.md) | Use mobile device management (MDM) policies to configure settings for updates. |
 | [HoloLens user management](hololens-multiple-users.md) | Multiple users can shared a HoloLens device by using their Azure Active Directory accounts. |
 | [HoloLens application access management](hololens-kiosk.md) | Manage application access for different user groups.  |
-| [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md) | Learn how to use Bitlocker device encryption to protect files and information stored on the HoloLens. |
-| [Install localized version of HoloLens](hololens1-install-localized.md) | Configure HoloLens for different locale.  |
+| [Recover and troubleshoot HoloLens issues](https://support.microsoft.com/products/hololens) |  Learn how to gather logs from HoloLens, recover a misbehaving device, or reset HoloLens when necessary.  |
+| [Get support](https://support.microsoft.com/products/hololens) | Connect with Microsoft support resources for HoloLens in enterprise.  |
 
 ## Related resources
 
 * [Documentation for Holographic app development](https://developer.microsoft.com/windows/mixed-reality/development)
-* [HoloLens Commercial Suite](https://www.microsoft.com/microsoft-hololens/hololens-commercial)
 * [HoloLens release notes](https://developer.microsoft.com/windows/mixed-reality/release_notes)

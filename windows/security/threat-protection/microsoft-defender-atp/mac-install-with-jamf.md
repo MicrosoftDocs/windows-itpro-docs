@@ -1,8 +1,7 @@
 ---
-title: Installing Microsoft Defender ATP for Mac with JAMF
-ms.reviewer: 
-description: Describes how to install Microsoft Defender ATP for Mac, using JAMF.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, mojave, high sierra, sierra
+title: JAMF-based deployment for Microsoft Defender ATP for Mac
+description: Install Microsoft Defender ATP for Mac, using JAMF.
+keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -18,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# JAMF-based deployment
+# JAMF-based deployment for Microsoft Defender ATP for Mac
 
 **Applies to:**
 
@@ -46,7 +45,7 @@ Download the installation and onboarding packages from Windows Defender Security
 3. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 
-    ![Windows Defender Security Center screenshot](images/MDATP_2_DownloadPackages.png)
+    ![Windows Defender Security Center screenshot](../windows-defender-antivirus/images/MDATP-2-DownloadPackages.png)
 
 5. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
 
@@ -79,7 +78,7 @@ To set the onboarding information, add a property list file with the name, _jamf
   >[!IMPORTANT]
   > You must set the Preference Domain as "com.microsoft.wdav.atp"
 
-![Configuration profile screenshot](images/MDATP_16_PreferenceDomain.png)
+![Configuration profile screenshot](../windows-defender-antivirus/images/MDATP-16-PreferenceDomain.png)
 
 ### Approved Kernel Extension
 
@@ -88,7 +87,7 @@ To approve the kernel extension:
 1. In **Computers > Configuration Profiles** select **Options > Approved Kernel Extensions**.
 2. Use **UBF8T346G9** for Team Id.
 
-![Approved kernel extensions screenshot](images/MDATP_17_approvedKernelExtensions.png)
+![Approved kernel extensions screenshot](../windows-defender-antivirus/images/MDATP-17-approvedKernelExtensions.png)
 
 ### Privacy Preferences Policy Control
 
@@ -104,7 +103,7 @@ Add the following JAMF policy to grant Full Disk Access to Microsoft Defender AT
 3. Set Code Requirement to `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`.
 4. Set app or service to SystemPolicyAllFiles and access to Allow.
 
-![Privacy Preferences Policy Control](images/MDATP_35_JAMF_PrivacyPreferences.png)
+![Privacy Preferences Policy Control](../windows-defender-antivirus/images/MDATP-35-JAMF-PrivacyPreferences.png)
 
 #### Configuration Profile's Scope
 
@@ -112,7 +111,7 @@ Configure the appropriate scope to specify the devices that will receive the con
 
 Open **Computers** > **Configuration Profiles**, and select **Scope > Targets**. From there, select the devices you want to target.
 
-![Configuration profile scope screenshot](images/MDATP_18_ConfigurationProfilesScope.png)
+![Configuration profile scope screenshot](../windows-defender-antivirus/images/MDATP-18-ConfigurationProfilesScope.png)
 
 Save the **Configuration Profile**.
 
@@ -132,7 +131,7 @@ Starting in macOS 10.15 (Catalina) a user must manually allow to display notific
 
 1. Create a package in **Settings > Computer Management > Packages**.
 
-    ![Computer management packages screenshot](images/MDATP_19_MicrosoftDefenderWDAVPKG.png)
+    ![Computer management packages screenshot](../windows-defender-antivirus/images/MDATP-19-MicrosoftDefenderWDAVPKG.png)
 
 2. Upload the package to the Distribution Point.
 3. In the **filename** field, enter the name of the package. For example, _wdav.pkg_.
@@ -141,7 +140,7 @@ Starting in macOS 10.15 (Catalina) a user must manually allow to display notific
 
 Your policy should contain a single package for Microsoft Defender.
 
-![Microsoft Defender packages screenshot](images/MDATP_20_MicrosoftDefenderPackages.png)
+![Microsoft Defender packages screenshot](../windows-defender-antivirus/images/MDATP-20-MicrosoftDefenderPackages.png)
 
 Configure the appropriate scope to specify the computers that will receive this policy.
 
@@ -156,12 +155,12 @@ You'll need no special provisioning for a macOS computer, beyond the standard JA
 
 1. Open **Device Profiles**, from the **General** tab, and make sure that **User Approved MDM** is set to **Yes**. If it's currently set to No, the user needs to open **System Preferences > Profiles** and select **Approve** on the MDM Profile.
 
-![MDM approve button screenshot](images/MDATP_21_MDMProfile1.png)
-![MDM screenshot](images/MDATP_22_MDMProfileApproved.png)
+![MDM approve button screenshot](../windows-defender-antivirus/images/MDATP-21-MDMProfile1.png)<br/>
+![MDM screenshot](../windows-defender-antivirus/images/MDATP-22-MDMProfileApproved.png)
 
 After a moment, the device's User Approved MDM status will change to **Yes**.
 
-![MDM status screenshot](images/MDATP_23_MDMStatus.png)
+![MDM status screenshot](../windows-defender-antivirus/images/MDATP-23-MDMStatus.png)
 
 You may now enroll additional devices. You may also enroll them later, after you have finished provisioning system configuration and application packages.
 
@@ -176,17 +175,17 @@ You can monitor deployment status in the **Logs** tab:
 - **Pending** means that the deployment is scheduled but has not yet happened
 - **Completed** means that the deployment succeeded and is no longer scheduled
 
-![Status on server screenshot](images/MDATP_24_StatusOnServer.png)
+![Status on server screenshot](../windows-defender-antivirus/images/MDATP-24-StatusOnServer.png)
 
 ### Status on client device
 
 After the Configuration Profile is deployed, you'll see the profile for the device in  **System Preferences** > **Profiles >**.
 
-![Status on client screenshot](images/MDATP_25_StatusOnClient.png)
+![Status on client screenshot](../windows-defender-antivirus/images/MDATP-25-StatusOnClient.png)
 
 Once the policy is applied, you'll see the Microsoft Defender ATP icon in the macOS status bar in the top-right corner.
 
-![Microsoft Defender icon in status bar screenshot](images/MDATP_Icon_Bar.png)
+![Microsoft Defender icon in status bar screenshot](../windows-defender-antivirus/images/MDATP-Icon-Bar.png)
 
 You can monitor policy installation on a device by following the JAMF log file:
 
@@ -231,11 +230,11 @@ If the product is not healthy, the exit code (which can be checked through `echo
 
 ## Logging installation issues
 
-See [Logging installation issues](microsoft-defender-atp-mac-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+See [Logging installation issues](mac-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
 
 ## Uninstallation
 
-This method is based on the script described in [Uninstalling](microsoft-defender-atp-mac-resources.md#uninstalling).
+This method is based on the script described in [Uninstalling](mac-resources.md#uninstalling).
 
 ### Script
 
@@ -258,12 +257,12 @@ This script removes Microsoft Defender ATP from the /Applications directory:
    echo "Done!"
 ```
 
-![Microsoft Defender uninstall screenshot](images/MDATP_26_Uninstall.png)
+![Microsoft Defender uninstall screenshot](../windows-defender-antivirus/images/MDATP-26-Uninstall.png)
 
 ### Policy
 
 Your policy should contain a single script:
 
-![Microsoft Defender uninstall script screenshot](images/MDATP_27_UninstallScript.png)
+![Microsoft Defender uninstall script screenshot](../windows-defender-antivirus/images/MDATP-27-UninstallScript.png)
 
 Configure the appropriate scope in the **Scope** tab to specify the machines that will receive this policy.
