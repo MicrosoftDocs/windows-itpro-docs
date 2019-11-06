@@ -22,9 +22,9 @@ This article lists new and updated features and content that are of interest to 
 
 ## Servicing
 
-In 2019 the release model for Windows 10 is changing. The spring release will be a full release, and the fall release will be a servicing update.  The key difference is that the full release enables a broader set of changes, including data migration, while the servicing update will be released via the Windows Servicing and Delivery channel, similar to how monthly updates are released.  
+The Windows 10 November 2019 Update (version 1909) will be a scoped set of features for select performance improvements, enterprise features and quality enhancements. To deliver these updates in a less disruptive fashion, we will deliver this feature update in a new way, using servicing technology (like the monthly update process) for customers running the May 2019 Update who choose to update to the new release. In other words, anyone running the May 2019 Update and updating to the new release will have a far faster update experience because the update will install like a monthly update.
 
-In the past, new Windows 10 features have been delivered using a twice-per-year feature update model that requires a full operating system (OS) install that is larger and takes more time to complete. The Windows monthly update process use a lighter-weight servicing technology for delivering smaller and faster feature updates. Using the servicing delivery approach for feature updates will provide a less disruptive user update experience due to both smaller package size and shorter offline time, while supporting the established semi-annual update cadence aligned with Office365.
+For consumer or commercial users coming from versions of Windows 10 earlier than the May 2019 Update (version 1903), the process of updating to the November Update will be the same as it has been and work in a similar manner to previous Windows 10 feature updates, using the same tools and processes.
 
 ## Security
 
