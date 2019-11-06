@@ -15385,6 +15385,11 @@
 "source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac-preferences.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-preferences",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac-pua.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-pua",
+"redirect_document_id": true
 }
 ]
 }
