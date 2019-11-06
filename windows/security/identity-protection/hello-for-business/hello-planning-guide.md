@@ -80,7 +80,7 @@ The on-premises deployment model is for organizations that do not have cloud ide
 > Reset above lock screen - Windows 10, version 1709, Professional</br>
 > Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
-It’s fundamentally important to understand which deployment model to use for a successful deployment.  Some of aspects of the deployment may already be decided for you based on your current infrastructure.
+It’s fundamentally important to understand which deployment model to use for a successful deployment.  Some aspects of the deployment may have already been decided for you based on your current infrastructure.
 
 #### Trust types
 
