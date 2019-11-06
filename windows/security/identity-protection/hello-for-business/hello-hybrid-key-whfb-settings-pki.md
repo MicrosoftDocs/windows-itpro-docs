@@ -77,8 +77,8 @@ Sign-in a certificate authority or management workstations with _Enterprise Admi
 
 The certificate template is configured to supersede all the certificate templates provided in the certificate templates superseded templates list.  However, the certificate template and the superseding of certificate templates is not active until you publish the certificate template to one or more certificate authorities.
 
->[!NOTE]
->The issuing CA's certificate must be present in the NTAuth store. By default, Microsoft Enterprise CAs are added to the NTAuth store. If you are using a 3rd party CA, this may not be done by default. If the issuing CA's certificate is not present in the NTAuth store, user authentication will fail. Use the <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil#-dspublish">certutil -dsPublish</a> command to manually add a certificate in the NTAuth store.
+> [!NOTE]
+> The issuing CA's certificate must be present in the NTAuth store. By default, Microsoft Enterprise CAs are added to the NTAuth store. If you are using a 3rd party CA, this may not be done by default. If the issuing CA's certificate is not present in the NTAuth store, user authentication will fail. Use the <a href="https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/certutil#-dspublish">certutil -dsPublish</a> command to manually add a certificate in the NTAuth store.
 
 ### Publish Certificate Templates to a Certificate Authority
 
