@@ -67,7 +67,7 @@ The hybrid deployment model is for organizations that:
 > [!Important]
 > Hybrid deployments support non-destructive PIN reset that only works with the certificate trust model.</br>
 > **Requirements:**</br>
-> Microsoft PIN Reset Service - Windows 10, version 1709 or later, Enterprise Edition</br>
+> Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903</br>
 > Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 ##### On-premises
