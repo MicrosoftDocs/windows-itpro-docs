@@ -1,7 +1,6 @@
 ---
-title: Troubleshoot performance issues
-ms.reviewer: 
-description: Describes how to troubleshoot performance issues in Microsoft Defender ATP for Mac.
+title: Troubleshoot performance issues for Microsoft Defender ATP for Mac
+description: Troubleshoot performance issues in Microsoft Defender ATP for Mac.
 keywords: microsoft, defender, atp, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Troubleshoot performance issues
+# Troubleshoot performance issues for Microsoft Defender ATP for Mac
 
 **Applies to:**
 
@@ -38,7 +37,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
     - From the user interface. Open Microsoft Defender ATP for Mac and navigate to **Manage settings**.
 
-    ![Manage real-time protection screenshot](images/mdatp-36-RTP.png)
+    ![Manage real-time protection screenshot](../windows-defender-antivirus/images/mdatp-36-rtp.png)
 
     - From the Terminal. For security purposes, this operation requires elevation.
 
@@ -46,10 +45,10 @@ The following steps can be used to troubleshoot and mitigate these issues:
     $ mdatp --config realTimeProtectionEnabled false
     ```
 
-    If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
+    If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).
 
 2. Open Finder and navigate to **Applications** > **Utilities**. Open **Activity Monitor** and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
 3. Configure Microsoft Defender ATP for Mac with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
 
-    See [Configure and validate exclusions for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-exclusions.md) for details.
+    See [Configure and validate exclusions for Microsoft Defender ATP for Mac](mac-exclusions.md) for details.
