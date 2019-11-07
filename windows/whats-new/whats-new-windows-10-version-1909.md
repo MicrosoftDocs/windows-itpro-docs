@@ -64,23 +64,19 @@ Windows Virtual Desktop is a comprehensive desktop and app virtualization servic
 
 Pre-release Windows 10 feature updates are now available to IT administrators using Windows Server Update Service (WSUS). System Center Configuration Manager version 1906 or later is required. For more information, see [Publishing pre-release Windows 10 feature updates to WSUS](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054).
 
-Also see the [announcement](https://www.microsoft.com/en-us/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/) about [Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/).
+#### Microsoft Endpoint Manager
+
+Configuration Manager, Intune, Desktop Analytics, Co-Management, and Device Management Admin Console are now are [Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/). See the Nov. 4 2019 [announcement](https://www.microsoft.com/en-us/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/). Also see [Modern management and security principles driving our Microsoft Endpoint Manager vision](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Modern-management-and-security-principles-driving-our-Microsoft/ba-p/946797).
 
 ### Windows 10 Pro and Enterprise in S mode
 
- You can now deploy and run traditional Win32 (desktop) apps without leaving the security of S mode by configuring the Windows 10 in S mode policy to support Win32 apps, and deploy them with Mobile Device Management (MDM) software such as Microsoft Intune1.
+ You can now deploy and run traditional Win32 (desktop) apps without leaving the security of S mode by configuring the Windows 10 in S mode policy to support Win32 apps, and deploy them with Mobile Device Management (MDM) software such as Microsoft Intune. For more information, see [Allow Line-of-Business Win32 Apps on Intune-Managed S Mode Devices](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/lob-win32-apps-on-s).
 
 ### SetupDiag
 
 [SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) version 1.6.0.42 is available.
 
 SetupDiag is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available.        .
-
-## Configuration
-
-### Windows 10 kiosk mode
-
-Users can now customize their experience in Kiosk mode, while keeping the devices locked down. For example, you can allow a user to switch to a different language while blocking access to network settings.
 
 ## Desktop Analytics
 
@@ -89,10 +85,6 @@ Users can now customize their experience in Kiosk mode, while keeping the device
 ## Microsoft Connected Cache
 
 Together with Delivery Optimization, Microsoft Connected Cache installed on Windows Server or Linux can seamlessly offload your traffic to local sources, caching content efficiently at the byte range level. Connected Cache is configured as a “configure once and forget it” solution that transparently caches content that your devices on your network need.
-
-## Microsoft Endpoint Manager
-
-[Microsoft Endpoint Manager](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Modern-management-and-security-principles-driving-our-Microsoft/ba-p/946797) is the single management solution to manage and empower your users across all of their devices.  Configuration Manager, Intune, Desktop Analytics, Co-Management, and Device Management Admin Console are now are Microsoft Endpoint Manager.
 
 ## Accessibility
 
