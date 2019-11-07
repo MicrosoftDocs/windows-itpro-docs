@@ -85,7 +85,7 @@ If you followed all guidelines and calibration is still failing, please let us k
 
 ### Calibration data and security
 
-Calibration information is stored locally on the device and is not associated with any account information. There is no record of who has used the device without calibration. This mean new users will get prompted to calibrate visuals when they use the device for the first time, as well as users who opted out of calibration previously or if calibration was unsuccessful.
+Calibration information is stored locally on the device and is not associated with any account information. There is no record of who has used the device without calibration. This mean new users will get prompted to calibrate visuals when they use the device for the first time, as well as users who opted out of calibration previously or if calibration was unsuccessful. The telemetry collected by Microsoft for diagnostic and quality control purposes does not include images. 
 
 Calibration information can always be deleted from the device in **Settings** > **Privacy** > **Eye tracker**.  
 
