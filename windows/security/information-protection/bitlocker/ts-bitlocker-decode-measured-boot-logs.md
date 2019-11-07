@@ -109,4 +109,4 @@ where the variables represent the following values:
 
 The content of the XML file resembles the following.
 
-![Command Prompt window that shows an example of how to use PCPTool](./images/PCPTool-Output.jpg)
+![Command Prompt window that shows an example of how to use PCPTool](./images/pcptool-output.jpg)
