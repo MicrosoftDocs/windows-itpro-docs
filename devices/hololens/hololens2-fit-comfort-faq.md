@@ -50,10 +50,10 @@ You can also experiment with the positioning of the headband&mdash;depending on 
 
 ## How can I adjust HoloLens to fit with my glasses?
 
-The device visor can slide in and out to accommodate eyewear. Grasp the device arms just behind the visor and pull forward gently to adjust it.
+To accommodate eyewear, you can tilt the visor.
 
 ## My arm gets tired when I use gestures. What can I do?
 
-When using gestures, there's no need to extend your arm out far from your body. Keep it closer to your side, where it's more comfortable and will get less tired. [Learn more about gestures](hololens2-basic-usage.md#the-hand-tracking-frame).
+When using gestures, there's no need to extend your arm out far from your body. Keep it closer to your side, where it's more comfortable and will get less tired. You can also use hand rays to interact with holograms without raising your arms [Learn more about gestures and hand rays](hololens2-basic-usage.md#the-hand-tracking-frame).
 
 And be sure to try out [voice commands](hololens-cortana.md).
