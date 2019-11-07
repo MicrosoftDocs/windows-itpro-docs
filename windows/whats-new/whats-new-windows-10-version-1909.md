@@ -84,7 +84,7 @@ SetupDiag is a command-line tool that can help diagnose why a Windows 10 update 
 
 ## Microsoft Connected Cache
 
-Together with Delivery Optimization, Microsoft Connected Cache installed on Windows Server or Linux can seamlessly offload your traffic to local sources, caching content efficiently at the byte range level. Connected Cache is configured as a “configure once and forget it” solution that transparently caches content that your devices on your network need.
+Together with Delivery Optimization, [Microsoft Connected Cache](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Introducing-Microsoft-Connected-Cache-Microsoft-s-cloud-managed/ba-p/963898) installed on Windows Server or Linux can seamlessly offload your traffic to local sources, caching content efficiently at the byte range level. Connected Cache is configured as a “configure once and forget it” solution that transparently caches content that your devices on your network need.
 
 ## Accessibility
 
@@ -115,9 +115,10 @@ General battery life and power efficiency improvements for PCs with certain proc
 ## See Also
 
 [What's New in Windows Server](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
-[Windows 10 Features](https://www.microsoft.com/windows/features): Review general information about Windows 10 features.<br>
+[Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
 [What Windows 10, version 1909 Means for Developers](https://blogs.windows.com/windowsdeveloper/2019/10/16/what-windows-10-version-1909-means-for-developers/): New and updated features in Windows 10 that are of interest to developers.
+[What's new in Windows 10, version 1909 - Windows Insiders](https://docs.microsoft.com/windows-insider/at-home/whats-new-wip-at-home-1909)
 
 <!--
 
@@ -145,8 +146,6 @@ The Search box in Explorer is now powered by Windows Search, allowing results to
 
 As announced at Microsoft Ignite 
 
-
-
 See 
 https://blogs.windows.com/windowsexperience/2019/07/15/announcing-windows-10-insider-preview-build-18362-10005-19h2/
 
@@ -154,8 +153,6 @@ https://blogs.windows.com/windowsexperience/2019/08/08/announcing-windows-10-ins
 
 https://blogs.windows.com/windowsexperience/2019/08/19/announcing-windows-10-insider-preview-build-18362-10014-18362-10015-19h2/
 
-
-## Raw list (to be parsed)
 
 ### Insider list
 
