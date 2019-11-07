@@ -1,17 +1,17 @@
 # [Windows Defender Application Control](windows-defender-application-control.md)
 
 ## [Windows Defender Application Control design guide](windows-defender-application-control-design-guide.md)
-### [Understand WDAC policy design decisions](understand-windows-defender-application-control-policy-design-decisions.md)
-### [Plan for WDAC policy management](plan-windows-defender-application-control-management.md)
-### [Select the types of rules to create](select-types-of-rules-to-create.md)
+### [Plan for WDAC policy lifecycle management](plan-windows-defender-application-control-management.md)
+### Design and create your WDAC policy
+#### [Understand WDAC policy design decisions](understand-windows-defender-application-control-policy-design-decisions.md)
+#### [Understand WDAC policy rules and file rules](select-types-of-rules-to-create.md)
+#### [Create an initial default policy](create-initial-default-policy.md)
+#### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
 
 
 
 ## [Windows Defender Application Control deployment guide](windows-defender-application-control-deployment-guide.md)
 ### [Types of devices](types-of-devices.md)
-### Use WDAC with custom policies
-#### [Create an initial default policy](create-initial-default-policy.md)
-#### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
 ### [Audit WDAC policies](audit-windows-defender-application-control-policies.md)
 ### [Merge WDAC policies](merge-windows-defender-application-control-policies.md)
 ### [Deploy multiple WDAC policies](deploy-multiple-windows-defender-application-control-policies.md)

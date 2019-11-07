@@ -17,43 +17,35 @@ manager: dansimp
 ms.date: 04/20/2018
 ---
 
-# Deploy Windows Defender Application Control policy rules and file rules
+# Understand WDAC policy rules and file rules
 
 **Applies to:**
 
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 and above
 
 Windows Defender Application Control (WDAC) provides control over a computer running Windows 10 by using policies that specify whether a driver or application is trusted and can be run. A policy includes *policy rules* that control options such as audit mode or whether user mode code integrity (UMCI) is enabled in a WDAC policy, and *file rules* (or *file rule levels*) that specify the level at which applications will be identified and trusted.
 
-## Overview of the process of creating Windows Defender Application Control policies
-
-A common system imaging practice in today’s IT organization is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone additional company assets. WDAC policies follow a similar methodology, that begins with the establishment of a golden computer. As with imaging, you can have multiple golden computers based on model, department, application set, and so on. Although the thought process around the creation of WDAC policies is similar to imaging, these policies should be maintained independently. Assess the necessity of additional WDAC policies based on what should be allowed to be installed and run and for whom. For more details on doing this assessment, see the [WDAC Design Guide](windows-defender-application-control-design-guide.md).
-
-Optionally, WDAC can align with your software catalog as well as any IT department–approved applications. One straightforward method to implement WDAC is to use existing images to create one master WDAC policy. You do so by creating a WDAC policy from each image, and then by merging the policies. This way, what is installed on all of those images will be allowed to run, if the applications are installed on a computer based on a different image. Alternatively, you may choose to create a base applications policy and add policies based on the computer’s role or department. Organizations have a choice of how their policies are created, merged or serviced, and managed.
-
-If you plan to use an internal CA to sign catalog files or WDAC policies, see the steps in [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md). 
-
 ## Windows Defender Application Control policy rules
 
-To modify the policy rule options of an existing WDAC policy, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption). Note the following examples of how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
+To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption). Note the following examples of how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
 
 -   To ensure that UMCI is enabled for a WDAC policy that was created with the `-UserPEs` (user mode) option, add rule option 0 to an existing policy by running the following command:
 
-    `Set-RuleOption -FilePath <Path to policy> -Option 0`
+    `Set-RuleOption -FilePath <Path to policy XML> -Option 0`
 
     Note that a policy that was created without the `-UserPEs` option is empty of user mode executables, that is, applications. If you enable UMCI (Option 0) for such a policy and then attempt to run an application, Windows Defender Application Control will see that the application is not on its list (which is empty of applications), and respond. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. To create a policy that includes user mode executables (applications), when you run `New-CIPolicy`, include the `-UserPEs` option. 
 
 -   To disable UMCI on an existing WDAC policy, delete rule option 0 by running the following command:
 
-    `Set-RuleOption -FilePath <Path to policy> -Option 0 -Delete`
+    `Set-RuleOption -FilePath <Path to policy XML> -Option 0 -Delete`
 
-You can set several rule options within a WDAC policy. Table 2 describes each rule option. 
+You can set several rule options within a WDAC policy. Table 1 describes each rule option. 
 
 > [!NOTE]
 > We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
 
-**Table 2. Windows Defender Application Control policy - policy rule options**
+**Table 1. Windows Defender Application Control policy - policy rule options**
 
 | Rule option | Description |
 |------------ | ----------- |
@@ -68,7 +60,7 @@ You can set several rule options within a WDAC policy. Table 2 describes each ru
 | **8 Required:EV Signers** | In addition to being WHQL signed, this rule requires that drivers must have been submitted by a partner that has an Extended Verification (EV) certificate. All future Windows 10 and later drivers will meet this requirement. |
 | **9 Enabled:Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. |
 | **10 Enabled:Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. |
-| **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to Restricted Language Mode. NOTE: This option is only supported with the Windows 10 May 2019 Update (1903) and higher. Using it on earlier versions of Windows 10 is not supported and may have unintended results. |
+| **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is only supported with the Windows 10 May 2019 Update (1903) and higher. Using it on earlier versions of Windows 10 is not supported and may have unintended results. |
 | **12 Required:Enforce Store Applications** | If this rule option is enabled, WDAC policies will also apply to Universal Windows applications. |
 | **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as System Center Configuration Manager, that has been defined as a managed installer. |
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
@@ -82,9 +74,9 @@ You can set several rule options within a WDAC policy. Table 2 describes each ru
 
 File rule levels allow administrators to specify the level at which they want to trust their applications. This level of trust could be as fine-tuned as the hash of each binary or as general as a CA certificate. You specify file rule levels both when you create a new WDAC policy from a scan and when you create a policy from audit events. In addition, to combine rule levels found in multiple policies, you can merge the policies. When merged, WDAC policies combine their file rules, so that any application that would be allowed by either of the original policies will be allowed by the combined policy. 
 
-Each file rule level has its benefit and disadvantage. Use Table 3 to select the appropriate protection level for your available administrative resources and Windows Defender Application Control deployment scenario.
+Each file rule level has its benefit and disadvantage. Use Table 2 to select the appropriate protection level for your available administrative resources and Windows Defender Application Control deployment scenario.
 
-Table 3. Windows Defender Application Control policy - file rule levels
+**Table 2. Windows Defender Application Control policy - file rule levels**
 
 | Rule level | Description |
 |----------- | ----------- |

@@ -17,7 +17,7 @@ manager: dansimp
 ms.date: 02/21/2018
 ---
 
-# Plan for Windows Defender Application Control policy management
+# Plan for Windows Defender Application Control lifecycle policy management
 
 **Applies to:**
 
@@ -30,13 +30,28 @@ This topic describes the decisions you need to make to establish the processes f
 
 Before you begin deploying WDAC, consider how your policies will be managed and maintained over time. Developing a process for managing WDAC policies helps assure that WDAC continues to effectively control how applications are allowed to run in your organization.
 
+<!-- We should insert a diagram to show this visually -->
+Most WDAC policies will evolve over time and proceed through a set of identifiable phases during their lifetime. Typically, these phases include:
+
+1. [Define (or refine) the "circle-of-trust"](understand-windows-defender-application-control-policy-design-decisions.md) for the policy and build an audit mode version of the policy XML.
+2. Deploy the audit mode policy to intended computers.
+3. Monitor audit block events from the intended computers and add/edit/delete rules as needed to address unexpected/unwanted blocks.
+4. Repeat steps 2-3 until the remaining block events meet expectations.
+5. Generate the enforced mode version of the policy.
+6. Deploy the enforced mode policy to intended computers. We recommend using staged rollouts for enforced policies to detect and respond to issues before deploying the policy broadly.
+7. Repeat steps 1-6 anytime the desired "circle-of-trust" changes.  
+
 ### Keep WDAC policies in a source control or document management solution
 
 To effectively manage WDAC policies, you should store and maintain your policy XML documents in a central repository that is accessible to everyone responsible for WDAC policy management. We recommend a source control solution such as [GitHub](https://github.com/) or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration), which provide version control and allow you to specify metadata about the XML documents.
 
 ### Set PolicyName, PolicyID, and Version metadata for each policy
 
-Use the [Set-CIPolicyIDInfo](https://docs.microsoft.com/powershell/module/configci/set-cipolicyidinfo) cmdlet to give each policy a descriptive name and set a unique ID. This should be done once per policy in order to differentiate them when reviewing WDAC events or when viewing the policy XML document. Although you can specify a string value for PolicyId, we recommend using the -ResetPolicyId switch to let the system auto-generate a unique ID for the policy.
+Use the [Set-CIPolicyIDInfo](https://docs.microsoft.com/powershell/module/configci/set-cipolicyidinfo) cmdlet to give each policy a descriptive name and set a unique ID in order to differentiate each policy when reviewing WDAC events or when viewing the policy XML document. Although you can specify a string value for PolicyId, we recommend using the -ResetPolicyId switch to let the system auto-generate a unique ID for the policy.
+
+> [!NOTE]
+> PolicyID only applies to policies using the [multiple policy format](deploy-multiple-windows-defender-application-control-policies.md) on computers running Windows 10, version 1903 and above.
+> PolicyID should be set only once per policy and use different PolicyID's for the audit and enforced mode versions of each policy.
 
 In addition, we recommend using the [Set-CIPolicyVersion](https://docs.microsoft.com/powershell/module/configci/set-cipolicyversion) cmdlet to increment the policy's internal version number when you make changes to the policy. The version must be defined as a standard four-part version string (e.g. "1.0.0.0").
 
