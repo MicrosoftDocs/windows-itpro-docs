@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 fit and comfort frequently asked questions
+title: HoloLens 2 fit and comfort FAQ
 description: Answers to frequently asked questions about how to fit your HoloLens 2.
 ms.prod: hololens
 ms.sitesec: library
@@ -54,6 +54,6 @@ The device visor can slide in and out to accommodate eyewear. Grasp the device a
 
 ## My arm gets tired when I use gestures. What can I do?
 
-When using gestures, there's no need to extend your arm out far from your body. Keep it closer to your side, where it's more comfortable and will get less tired. [Learn more about gestures](hololens2-basic-usage.md#use-hololens-with-your-hands).
+When using gestures, there's no need to extend your arm out far from your body. Keep it closer to your side, where it's more comfortable and will get less tired. [Learn more about gestures](hololens2-basic-usage.md#the-hand-tracking-frame).
 
 And be sure to try out [voice commands](hololens-cortana.md).
