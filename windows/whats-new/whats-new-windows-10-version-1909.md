@@ -22,15 +22,17 @@ This article lists new and updated features and content that are of interest to 
 
 ## Servicing
 
-Windows 10, version 1909 is a scoped set of features for select performance improvements, enterprise features and quality enhancements. To deliver these updates in a less disruptive fashion, we are providing this feature update in a new way, using servicing technology (like the monthly update process) for customers that are already running Windows 10, version 1903 (the May 2019 Update). Anyone running version 1903 and updating to the new release will have a much faster update experience because the update will install like a monthly update.
+Windows 10, version 1909 is a scoped set of features for select performance improvements, enterprise features and quality enhancements.
 
-For users that are updating from version 1809 or an older version, the process of updating to version 1909 will be the same as it has been for previous Windows 10 feature updates. For more information, see [Evolving Windows 10 servicing and quality: the next steps](https://blogs.windows.com/windowsexperience/2019/07/01/evolving-windows-10-servicing-and-quality-the-next-steps/#rl2G5ETPhkhMvDeX.97).
+To deliver these updates in an optimal fashion, we are providing this feature update in a new way: using servicing technology. Users that are already running Windows 10, version 1903 (the May 2019 Update) will receive this update similar to how they receive monthly updates. If you are running version 1903, then updating to the new release will have a much faster update experience because the update will install like a monthly update.
+
+If you are updating from an older version of Windows 10 (version 1809 or earlier), the process of updating to the current version will be the same as it has been for previous Windows 10 feature updates. For more information, see [Evolving Windows 10 servicing and quality: the next steps](https://blogs.windows.com/windowsexperience/2019/07/01/evolving-windows-10-servicing-and-quality-the-next-steps/#rl2G5ETPhkhMvDeX.97).
 
 ## Security
 
 ### Windows Defender Credential Guard
 
-Windows Defender Credential Guard is now available for ARM64 devices, for additional protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
+[Windows Defender Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) is now available for ARM64 devices, for additional protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
 
 ### Microsoft BitLocker
 
