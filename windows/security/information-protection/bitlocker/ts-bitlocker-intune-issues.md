@@ -131,7 +131,7 @@ reagentc /enable
 
 #### Step 3: Verify the Windows Boot Loader configuration
 
-If the partition status is heathy, but the **reagentc /enable** command results in an error, verify that Windows Boot Loader contains the recovery sequence GUID. To do this, run the following command in an elevated Command Prompt window:
+If the partition status is healthy, but the **reagentc /enable** command results in an error, verify that Windows Boot Loader contains the recovery sequence GUID. To do this, run the following command in an elevated Command Prompt window:
 
 ```cmd
 bcdedit /enum all

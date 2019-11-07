@@ -45,13 +45,13 @@ After Windows 7 was released, several other areas of BitLocker were improved:
    -  BitLocker Wizard
    - manage-bde
    - Group Policy Objects (GPOs)
-   - Mobile Device Managment (MDM) policy
+   - Mobile Device Management (MDM) policy
    - Windows PowerShell
    - Windows Management Interface (WMI)
 
 - **Integration with Azure Active Directory** (Azure AD). BitLocker can store recovery information in Azure AD to make it easier to recover.
 
-- **[Direct memory access (DMA) port protection](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**. By using MDM policies to manage BitLocker, you can block a device's DMA ports and secure the device during its startup.
+- **[Direct memory access (DMA) Port Protection](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**. By using MDM policies to manage BitLocker, you can block a device's DMA ports and secure the device during its startup.
 
 - **[BitLocker Network Unlock](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock)**. If your BitLocker-enabled desktop or server computer is connected to a wired corporate network in a domain environment, you can automatically unlock its operating system volume during a system restart.
 
@@ -162,7 +162,7 @@ When the VSS NTDS writer requests access to the encrypted drive, the Local Secur
 ‎ \# This volume is locked by BitLocker Drive Encryption.
 ```
 
-The operation produces the following callstack:
+The operation produces the following call stack:
 
 ```
 \# Child-SP RetAddr Call Site

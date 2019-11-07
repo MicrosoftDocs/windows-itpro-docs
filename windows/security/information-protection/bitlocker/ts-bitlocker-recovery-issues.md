@@ -209,7 +209,7 @@ To suspend BitLocker while you install TPM or UEFI firmware updates:
    ```ps
    Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0  
    ```
-   In this cmdlet <*DriveLetter*> is the letter htat is assigned to your drive.
+   In this cmdlet <*DriveLetter*> is the letter that is assigned to your drive.
 1. Install the Surface device driver and firmware updates.
 1. After you install the firmware updates, restart the computer, open an elevated PowerShell window, and then run the following cmdlet:  
    ```ps
