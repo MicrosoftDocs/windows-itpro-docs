@@ -104,13 +104,12 @@ Here are some things you can try saying (remember to say "Hey Cortana" first).
 - Take a picture.
 - Start recording. (Starts recording a video.)
 - Stop recording. (Stops recording a video.)
-- Call <*contact*>. (Requires Skype.)
 - What time is it?
 - Show me the latest NBA scores.
 - How much battery do I have left?
 - Tell me a joke.
 
-Some Cortana features that you're used to from Windows on your PC or phone (for example, reminders and notifications) aren't supported in Microsoft HoloLens Development Edition. Cortana on HoloLens is English-only, and the Cortana experience may vary from one region to another.
+Some Cortana features that you're used to from Windows on your PC or phone (for example, reminders and notifications) aren't supported in Microsoft HoloLens, and the Cortana experience may vary from one region to another.
 
 ### Turn Cortana off
 
