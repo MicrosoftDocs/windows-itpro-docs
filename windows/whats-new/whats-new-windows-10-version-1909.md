@@ -22,9 +22,9 @@ This article lists new and updated features and content that are of interest to 
 
 ## Servicing
 
-Windows 10, version 1909 is a scoped set of features for select performance improvements, enterprise features and quality enhancements. To deliver these updates in a less disruptive fashion, we are providing this feature update in a new way, using servicing technology (like the monthly update process) for customers that are already running Windows 10, version 1903 (the May 2019 Update). Anyone running version 1903 and updating to the new release will have a far faster update experience because the update will install like a monthly update.
+Windows 10, version 1909 is a scoped set of features for select performance improvements, enterprise features and quality enhancements. To deliver these updates in a less disruptive fashion, we are providing this feature update in a new way, using servicing technology (like the monthly update process) for customers that are already running Windows 10, version 1903 (the May 2019 Update). Anyone running version 1903 and updating to the new release will have a much faster update experience because the update will install like a monthly update.
 
-For users that are updating from version 1809 or an older version, the process of updating to version 1909 will be the same as it has been and work in a similar manner to previous Windows 10 feature updates. For more information, see [Evolving Windows 10 servicing and quality: the next steps](https://blogs.windows.com/windowsexperience/2019/07/01/evolving-windows-10-servicing-and-quality-the-next-steps/#rl2G5ETPhkhMvDeX.97).
+For users that are updating from version 1809 or an older version, the process of updating to version 1909 will be the same as it has been for previous Windows 10 feature updates. For more information, see [Evolving Windows 10 servicing and quality: the next steps](https://blogs.windows.com/windowsexperience/2019/07/01/evolving-windows-10-servicing-and-quality-the-next-steps/#rl2G5ETPhkhMvDeX.97).
 
 ## Security
 
@@ -48,19 +48,21 @@ This update includes 5 fixes to allow the host to run down-level containers on u
 
 ### Windows Sandbox
 
-Windows Sandbox is an isolated desktop environment where you can install software without the fear of lasting impact to your device. This feature is available in Windows 10, version 1903. In version 1909 we went one step further and now include support for mixed-version container scenarios, allowing you to run a sandbox in a different version of Windows 10 than the host operating system.
+[Windows Sandbox](https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849) is an isolated desktop environment where you can install software without the fear of lasting impact to your device. This feature is available in Windows 10, version 1903. In Windows 10, version 1909 you have even more control over the level of isolation.
 
 ## Windows Virtual Desktop
 
-[Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) (WVD) is now generally available globally! 
+[Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) (WVD) is now generally available globally!
 
 Windows Virtual Desktop is a comprehensive desktop and app virtualization service running in the cloud. It’s the only virtual desktop infrastructure (VDI) that delivers simplified management, multi-session Windows 10, optimizations for Office 365 ProPlus, and support for Remote Desktop Services (RDS) environments. Deploy and scale your Windows desktops and apps on Azure in minutes, and get built-in security and compliance features. Windows Virtual Desktop requires a Microsoft E3 or E5 license, or a Microsoft 365 E3 or E5 license, as well as an Azure tenant.
 
 ## Deployment
 
-## Configuration Manager
+### Configuration Manager
 
 Pre-release Windows 10 feature updates are now available to IT administrators using Windows Server Update Service (WSUS). System Center Configuration Manager version 1906 or later is required. For more information, see [Publishing pre-release Windows 10 feature updates to WSUS](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054).
+
+Also see the [announcement](https://www.microsoft.com/en-us/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/) about [Microsoft Endpoint Manager](https://docs.microsoft.com/configmgr/).
 
 ### Windows 10 Pro and Enterprise in S mode
 
@@ -80,7 +82,7 @@ Users can now customize their experience in Kiosk mode, while keeping the device
 
 ## Desktop Analytics
 
-Desktop Analytics is now generally available globally! Desktop Analytics is a cloud-connected service, integrated with Configuration Manager, which gives you data-driven insights to the management of your Windows endpoints. It provides insight and intelligence that you can use to make more informed decisions about the update readiness of your Windows endpoints. Desktop Analytics requires a Windows E3 or E5 license, or a Microsoft 365 E3 or E5 license.
+[Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview) is now generally available globally! Desktop Analytics is a cloud-connected service, integrated with Configuration Manager, which gives you data-driven insights to the management of your Windows endpoints. It provides insight and intelligence that you can use to make more informed decisions about the update readiness of your Windows endpoints. Desktop Analytics requires a Windows E3 or E5 license, or a Microsoft 365 E3 or E5 license.
 
 ## Microsoft Connected Cache
 
