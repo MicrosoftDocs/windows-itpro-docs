@@ -6,10 +6,10 @@ ms.sitesec: library
 author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
-audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.date: 10/30/2019
-ms.reviewer: 
+ms.reviewer: scooley
+audience: ITPro
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)

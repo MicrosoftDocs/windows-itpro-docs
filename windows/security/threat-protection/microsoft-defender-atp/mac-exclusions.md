@@ -1,7 +1,6 @@
 ---
 title: Configure and validate exclusions for Microsoft Defender ATP for Mac
-ms.reviewer:
-description: Describes how to provide and validate exclusions for Microsoft Defender ATP for Mac. Exclusions can be set for files, folders, and processes.
+description: Provide and validate exclusions for Microsoft Defender ATP for Mac. Exclusions can be set for files, folders, and processes.
 keywords: microsoft, defender, atp, mac, exclusions, scans, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -51,13 +50,13 @@ Process | A specific process (specified either by the full path or file name) an
 
 ### From the management console
 
-For more information on how to configure exclusions from JAMF, Intune, or another management console, see [Set preferences for Microsoft Defender ATP for Mac](microsoft-defender-atp-mac-preferences.md).
+For more information on how to configure exclusions from JAMF, Intune, or another management console, see [Set preferences for Microsoft Defender ATP for Mac](mac-preferences.md).
 
 ### From the user interface
 
 Open the Microsoft Defender ATP application and navigate to **Manage settings** > **Add or Remove Exclusion...**, as shown in the following screenshot:
 
-![Manage exclusions screenshot](images/mdatp-37-Exclusions.png)
+![[Manage exclusions screenshot](../windows-defender-antivirus/images/mdatp-37-exclusions.png)
 
 Select the type of exclusion that you wish to add and follow the prompts.
 

@@ -99,8 +99,8 @@ There are three ways to mount your Surface Hub:
 
 For specifications on available mounts for the original Surface Hub, see the following:
 
-- [Surface Hub Mounts and Stands Datasheet](http://download.microsoft.com/download/5/0/1/501F98D9-1BCC-4448-A1DB-47056CEE33B6/20160711_Surface_Hub_Mounts_and_Stands_Datasheet.pdf)
-- [Surface Hub Stand and Wall Mount Specifications](http://download.microsoft.com/download/7/A/7/7A75BD0F-5A46-4BCE-B313-A80E47AEB581/20160720_Combined_Stand_Wall_Mount_Drawings.pdf)
+- [Surface Hub Mounts and Stands Datasheet](https://download.microsoft.com/download/5/0/1/501F98D9-1BCC-4448-A1DB-47056CEE33B6/20160711_Surface_Hub_Mounts_and_Stands_Datasheet.pdf)
+- [Surface Hub Stand and Wall Mount Specifications](https://download.microsoft.com/download/7/A/7/7A75BD0F-5A46-4BCE-B313-A80E47AEB581/20160720_Combined_Stand_Wall_Mount_Drawings.pdf)
 
 ## The Connect experience
 

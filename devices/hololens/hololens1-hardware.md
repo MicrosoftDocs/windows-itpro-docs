@@ -15,7 +15,7 @@ appliesto:
 - HoloLens (1st gen)
 ---
 
-# HoloLens (1st Gen) hardware
+# HoloLens (1st gen) hardware
 
 ![Microsoft HoloLens (1st gen)](images/see-through-400px.jpg)
 
