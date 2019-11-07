@@ -42,7 +42,7 @@ Windows 10 includes two technologies that can be used for application control de
 
 ## Windows Defender Application Control
 
-Windows Defender Application Control (WDAC) was introduced with Windows 10 and allows organizations to control what drivers and applications are allowed to run on their Windows 10 clients. WDAC was designed as a security feature under the [servicing criteria](https://www.microsoft.com/en-us/msrc/windows-security-servicing-criteria) defined by the Microsoft Security Response Center (MSRC).
+Windows Defender Application Control (WDAC) was introduced with Windows 10 and allows organizations to control what drivers and applications are allowed to run on their Windows 10 clients. WDAC was designed as a security feature under the [servicing criteria](https://www.microsoft.com/msrc/windows-security-servicing-criteria) defined by the Microsoft Security Response Center (MSRC).
 
 > [!NOTE]
 > Prior to Windows 10, version 1709, Windows Defender Application Control was known as configurable code integrity policies.
