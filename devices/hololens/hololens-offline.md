@@ -11,7 +11,7 @@ manager: v-miegge
 ms.topic: article
 ms.prod: hololens
 ms.sitesec: library
-ms.localizationpriority: medium
+ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
