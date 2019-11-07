@@ -44,8 +44,8 @@ Before you can use this tool for viewing Windows diagnostic data, you must turn 
 ### Download the Diagnostic Data Viewer
 Download the app from the [Microsoft Store Diagnostic Data Viewer](https://www.microsoft.com/store/p/diagnostic-data-viewer/9n8wtrrsq8f7?rtc=1) page.
 
-    >[!Important]
-    >It's possible that your Windows device doesn't have the Microsoft Store available (for example, Windows Server). If this is the case, see [Diagnostic Data Viewer for PowerShell](https://go.microsoft.com/fwlink/?linkid=2023830).
+>[!Important]
+>It's possible that your Windows device doesn't have the Microsoft Store available (for example, Windows Server). If this is the case, see [Diagnostic Data Viewer for PowerShell](https://go.microsoft.com/fwlink/?linkid=2023830).
 
 ### Start the Diagnostic Data Viewer
 You can start this app from the **Settings** panel.
@@ -118,17 +118,17 @@ When you're done reviewing your diagnostic data, you should turn of data viewing
 ## Modifying the size of your data history
 By default, Diagnostic Data Viewer shows you up to 1GB or 30 days of data (whichever comes first) for Windows diagnostic data. Once either the time or space limit is reached, the data is incrementally dropped with the oldest data points dropped first. 
 
-    >[!Important]
-    >Note that if you have [Office diagnostic data viewing enabled](#view-office-diagnostic-data), the Office data history is fixed at 1 GB and cannot be modified.
+>[!Important]
+>Note that if you have [Office diagnostic data viewing enabled](#view-office-diagnostic-data), the Office data history is fixed at 1 GB and cannot be modified.
 
 **Modify the size of your data history**
     
-    To make changes to the size of your Windows diagnostic data history, visit the **app settings**, located at the bottom of the navigation menu. Data will be incrementally dropped with the oldest data points first once your chosen size or time limit is reached.  
+To make changes to the size of your Windows diagnostic data history, visit the **app settings**, located at the bottom of the navigation menu. Data will be incrementally dropped with the oldest data points first once your chosen size or time limit is reached.  
 
-    >[!Important]
-    >Decreasing the maximum amount of diagnostic data viewable through the tool will remove all data history and requires a reboot of your device. Additionally, increasing the maximum amount of diagnostic data viewable by the tool may come with performance impacts to your machine.
+>[!Important]
+>Decreasing the maximum amount of diagnostic data viewable through the tool will remove all data history and requires a reboot of your device. Additionally, increasing the maximum amount of diagnostic data viewable by the tool may come with performance impacts to your machine.
 
-    ![Change the size of your data history through the app settings](images/ddv-change-db-size.png) 
+![Change the size of your data history through the app settings](images/ddv-change-db-size.png) 
 
 ## View additional diagnostic data in the View problem reports tool
 Available on Windows 1809 and higher, you can review additional Windows Error Reporting diagnostic data in the **View problem reports** page within the Diagnostic Data Viewer. 
