@@ -17,7 +17,7 @@ ms.topic: article
 
 Each version of Windows 10 adds new features and functionality; occasionally we also remove features and functionality, often because we've added a better option. Below are the details about the features and functionalities that are no longer being developed in Windows 10. For information about features that have been removed, see [Features we removed](windows-10-removed-features.md).
 
-The features described below are longer being actively developed, and might be removed in a future update. Some features have been replaced with other features or functionality and some are now available from other sources.
+The features described below are no longer being actively developed, and might be removed in a future update. Some features have been replaced with other features or functionality and some are now available from other sources.
 
 **The following list is subject to change and might not include every affected feature or functionality.**
 
@@ -29,8 +29,8 @@ The features described below are longer being actively developed, and might be r
 
 |Feature    |  Details and mitigation  | Announced in version |
 | ----------- | --------------------- | ---- |
-| Hyper-V vSwitch on LBFO | In a future release, the Hyper-V vSwitch will no longer have the capability to be bound to an LBFO team.  Instead, it must be bound via [Switch Embedded Teaming](https://docs.microsoft.com/windows-server/virtualization/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming#bkmk_sswitchembedded) (SET).| 1909 |
-| Language Community tab in Feedback Hub | We are planning to remove the Language Community tab in Feedback Hub. Users will be able to provide translation feedback using the normal feedback process: [Feedback Hub - Feedback](feedback-hub://?newFeedback=true&feedbackType=2). The Feedback Hub app will also be updated in the Windows Store. | 1909 |
+| Hyper-V vSwitch on LBFO | In a future release, the Hyper-V vSwitch will no longer have the capability to be bound to an LBFO team.  Instead, it can be bound via [Switch Embedded Teaming](https://docs.microsoft.com/windows-server/virtualization/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming#bkmk_sswitchembedded) (SET).| 1909 |
+| Language Community tab in Feedback Hub | The Language Community tab will be removed from the Feedback Hub. The standard feedback process: [Feedback Hub - Feedback](feedback-hub://?newFeedback=true&feedbackType=2) is the recommended way to provide translation feedback. | 1909 |
 | My People / People in the Shell |  My People is no longer being developed. It may be removed in a future update. | 1909 |
 | TFS1/TFS2 IME |  TSF1 and TSF2 IME will be replaced by TSF3 IME in a future release. [Text Services Framework](https://docs.microsoft.com/windows/win32/tsf/what-is-text-services-framework) (TFS) enables language technologies. TSF IME are Windows components that you can add to enable typing text for Japanese, Simplified Chinese, Traditional Chinese, and Korean languages. ​| 1909 |
 | Package State Roaming (PSR) |  PSR will be removed in a future update. PSR allows non-Microsoft developers to access roaming data on devices, enabling developers of UWP applications to write data to Windows and synchronize it to other instantiations of Windows for that user. <br>&nbsp;<br>The recommended replacement for PSR is [Azure App Service](https://docs.microsoft.com/azure/app-service/). Azure App Service is widely supported, well documented, reliable, and supports cross-platform/cross-ecosystem scenarios such as iOS, Android and web. | 1909 |
