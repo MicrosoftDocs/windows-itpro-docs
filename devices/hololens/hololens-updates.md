@@ -37,8 +37,8 @@ In some cases, you might want to go back to a previous version of the HoloLens s
 To go back to a previous version of HoloLens 2, follow these steps:
 
 1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
-1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/en-us/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
-1. Download the [most recent HoloLens 2 release](http://aka.ms/hololens2download).
+1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
+1. Download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
 1. When you have finished these downloads, open **File explorer** > **Downloads**. Right-click the zipped folder that you just downloaded, and select **Extract all** > **Extract** to unzip it.
 1. Connect your HoloLens to your PC using a USB-A to USB-C cable . (Even if you've been using other cables to connect your HoloLens, this one works best.)
 1. The Advanced Recovery Companion automatically detects your HoloLens. Select the **Microsoft HoloLens** tile.
@@ -55,8 +55,8 @@ In some cases, you might want to go back to a previous version of the HoloLens s
 To go back to a previous version of HoloLens (1st gen), follow these steps:
 
 1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
-1. On your PC, download the [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/en-us/help/12379).
-1. Download the [HoloLens Anniversary Update recovery package](http://aka.ms/hololensrecovery).
+1. On your PC, download the [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379).
+1. Download the [HoloLens Anniversary Update recovery package](https://aka.ms/hololensrecovery).
 1. When the downloads finish, open **File explorer** > **Downloads**. Right-click the zipped folder you just downloaded, and select **Extract all** > **Extract** to unzip it.
 1. Connect your HoloLens to your PC using the micro-USB cable that it came with. (Even if you've been using other cables to connect your HoloLens, this one works best.)
 1. The WDRT will automatically detect your HoloLens. Select the **Microsoft HoloLens** tile.
@@ -91,6 +91,6 @@ For devices on Windows 10, version 1607 only: You can use the following update p
 
 ## Related topics
 
-- [Policies supported by HoloLens 2](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-hololens-2)
+- [Policies supported by HoloLens 2](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-hololens-2)
 - [Policies supported by Windows Holographic for Business](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#a-href-idhololenspoliciesapolicies-supported-by-windows-holographic-for-business)
 - [Manage software updates in Microsoft Intune](https://docs.microsoft.com/intune/windows-update-for-business-configure)
