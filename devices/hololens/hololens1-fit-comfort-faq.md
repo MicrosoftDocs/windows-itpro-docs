@@ -7,7 +7,7 @@ author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 10/9/19
+ms.date: 10/09/2019
 ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
@@ -29,7 +29,7 @@ Here are some tips on how to stay comfortable and have the best experience using
 
 If you experience discomfort, take a break until you feel better. Try sitting in a well-lit room and relaxing for a bit. The next time your use your HoloLens, try using it for a shorter period of time at first.
 
-For more information, see [Health and safety on HoloLens](http://go.microsoft.com/fwlink/p/?LinkId=746661).
+For more information, see [Health and safety on HoloLens](https://go.microsoft.com/fwlink/p/?LinkId=746661).
 
 ## I can't see the whole holographic frame, or my holograms are cut off
 
