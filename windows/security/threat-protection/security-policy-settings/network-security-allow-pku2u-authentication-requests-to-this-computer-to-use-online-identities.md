@@ -30,7 +30,8 @@ Starting with Windows Server 2008 R2 and Windows 7, the Negotiate Security Su
 
 When devices are configured to accept authentication requests by using online IDs, Negoexts.dll calls the PKU2U SSP on the computer that is used to log on. The PKU2U SSP obtains a local certificate and exchanges the policy between the peer computers. When validated on the peer computer, the certificate within the metadata is sent to the logon peer for validation. It associates the user's certificate to a security token, and then the logon process completes.
 
->**Note:**  The ability to link online IDs can be performed by anyone with an account that has standard user’s credentials through **Credential Manager**.
+> [!Note]
+> The ability to link online IDs can be performed by anyone with an account that has standard user’s credentials through **Credential Manager**.
  
 This policy is not configured by default on domain-joined devices. This would disallow the online identities to be able to authenticate to the domain-joined computers in Windows 7 and later.
 
@@ -39,6 +40,9 @@ This policy is not configured by default on domain-joined devices. This would di
 -   **Enabled**
 
     This will allow authentication to successfully complete between the two (or more) computers that have established a peer relationship through the use on online IDs. The PKU2U SSP obtains a local certificate and exchanges the policy between the peer devices. When validated on the peer computer, the certificate within the metadata is sent to the logon peer for validation. It associates the user's certificate to a security token, and then the logon process completes.
+
+> [!Note]
+> KU2U is disabled by default on server SKUs and thus RDP from a hybrid Azure AD joined server to a Azure AD joined Windows 10 device or Hybrid Azure AD joined domain member Windows 10 device fails. To resolve this PKU2U needs to be enabled on server SKU.
 
 -   **Disabled**
 
