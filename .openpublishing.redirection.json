@@ -241,6 +241,16 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-application-control/create-your-windows-defender-application-control-planning-document.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/plan-windows-defender-application-control-management",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/windows-defender-application-control/document-your-windows-defender-application-control-management-processes.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/plan-windows-defender-application-control-management",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/security-policy-settings/microsoft-network-client-digitally-sign-communications-if-server-agrees.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/smbv1-microsoft-network-client-digitally-sign-communications-if-server-agrees",
 "redirect_document_id": true
