@@ -82,7 +82,8 @@ In organizations using only Azure AD, you can connect from an Azure AD-joined PC
 - Password
 - Windows Hello for Business, with or without an MDM subscription. 
 
-
+> [!NOTE]
+> If the RDP client is running Windows Server 2016 or Windows Server 2019, to be able to connect to Azure Active Directory-joined PCs, it must [allow Public Key Cryptography Based User-to-User (PKU2U) authentication requests to use online identities](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities).
 
 ## Related topics
 
