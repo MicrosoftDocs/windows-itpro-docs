@@ -1,7 +1,6 @@
 ---
 title: Troubleshoot kernel extension issues in Microsoft Defender ATP for Mac
-ms.reviewer: 
-description: Describes how to troubleshoot kernel extension-related issues in Microsoft Defender ATP for Mac.
+description: Troubleshoot kernel extension-related issues in Microsoft Defender ATP for Mac.
 keywords: microsoft, defender, atp, mac, kernel, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Troubleshoot kernel extension issues
+# Troubleshoot kernel extension issues in Microsoft Defender ATP for Mac
 
 **Applies to:**
 
@@ -30,7 +29,7 @@ Starting with macOS High Sierra (10.13), macOS requires all kernel extensions to
 
 If you did not approve the kernel extension during the deployment / installation of Microsoft Defender ATP for Mac, then the application displays a banner prompting you to enable it:
 
-   ![RTP disabled screenshot](images/MDATP_32_Main_App_Fix.png)
+   ![RTP disabled screenshot](../windows-defender-antivirus/images/MDATP-32-Main-App-Fix.png)
 
 You can also run ```mdatp --health```. It reports if real-time protection is enabled but not available. This is an indication that the kernel extension is not approved to run on your device.
 
@@ -48,8 +47,8 @@ The following sections provide guidance on how to address this issue, depending 
 
 See the instructions corresponding to the management tool that you used to deploy the product:
 
-- [JAMF-based deployment](microsoft-defender-atp-mac-install-with-jamf.md#configuration-profile)
-- [Microsoft Intune-based deployment](microsoft-defender-atp-mac-install-with-intune.md#create-system-configuration-profiles)
+- [JAMF-based deployment](mac-install-with-jamf.md#configuration-profile)
+- [Microsoft Intune-based deployment](mac-install-with-intune.md#create-system-configuration-profiles)
 
 ## Manual deployment
 
@@ -57,7 +56,7 @@ If less than 30 minutes have passed since the product was installed, navigate to
 
 If you don't see this prompt, it means that 30 or more minutes have passed, and the kernel extension still not been approved to run on your device:
 
-![Security and privacy window after prompt expired screenshot](images/MDATP_33_SecurityPrivacySettings_NoPrompt.png)
+![Security and privacy window after prompt expired screenshot](../windows-defender-antivirus/images/MDATP-33-SecurityPrivacySettings-NoPrompt.png)
 
 In this case, you need to perform the following steps to trigger the approval flow again.
 
