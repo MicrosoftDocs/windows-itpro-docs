@@ -60,7 +60,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 2. Click the **Users** container in the navigation pane.
 3. Right-click **Windows Hello for Business Users** group
 4. Click the **Members** tab and click **Add**
-5. In the **Enter the object names to select** text box, type **adfssvc** or substitute the name of the ADFS Service account in your ADFS deployment.  Click **OK**.
+5. In the **Enter the object names to select** text box, type **adfssvc** or substitute the name of the AD FS service account in your AD FS deployment.  Click **OK**.
 6. Click **OK** to return to **Active Directory Users and Computers**.
 7. Restart the AD FS server.
 
