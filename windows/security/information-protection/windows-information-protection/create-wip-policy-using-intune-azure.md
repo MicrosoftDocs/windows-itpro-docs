@@ -299,6 +299,8 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
 
 ## Create an Executable rule for unsigned apps
 
+The executable rule would help you to create an AppLocker rule to sign your unsigned Apps. This would allow you to add the file path or the App publisher contained in the file's digital signature needed for the WIP policy to be applied. 
+
 1. Open the Local Security Policy snap-in (SecPol.msc).
     
 2. In the left pane, click **Application Control Policies** > **AppLocker** > **Executable Rules**.
