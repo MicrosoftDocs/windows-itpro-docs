@@ -5,6 +5,7 @@ ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
 ms.author: v-tea
+audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
 ms.date: 11/7/2019
