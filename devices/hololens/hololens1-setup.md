@@ -29,6 +29,10 @@ When your HoloLens is on, the battery indicator shows the battery level in incre
 > [!TIP]
 > To get an estimate of your current battery level, say "Hey Cortana, how much battery do I have left?"
 
+The power supply and USB cable that come with the device are the best way to charge your HoloLens (1st gen).  The power supply provides 18W of power (9V 2A).
+
+Charging rate and speed may vary depending on the environment in which the device is running.
+
 ## Adjust fit
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/be3cb527-f2f1-4f85-b4f7-a34fbaba980d]

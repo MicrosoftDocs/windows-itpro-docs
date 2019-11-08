@@ -48,6 +48,12 @@ The HoloLens box contains the following items:
 >[!TIP]
 >The [clicker](hololens1-clicker.md) ships with HoloLens (1st Gen), in a separate box.
 
+### Power Supply details
+
+The power supply and the USB cable that come with the device are the best supported mechanism for charging. The power supply is an 18W charger.  It's supplies 9V at 2A.
+
+Charging rate and speed may vary depending on the environment in which the device is running.
+
 ## Device specifications
 
 ### Display
