@@ -102,7 +102,7 @@ You configure DFCI policy settings by editing the DFCI profile from the Microsof
 
 - **Home > Devices > Windows > Configuration Profiles > “DFCI profile name” > Properties > Settings**
 
-> ![Configure DFCI settings](images\DFCI-settings-config.png)
+> ![Configure DFCI settings](images/DFCI-settings-config.png)
 
 ### Block user access to UEFI settings
 
