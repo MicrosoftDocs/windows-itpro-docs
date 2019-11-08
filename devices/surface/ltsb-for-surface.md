@@ -10,6 +10,8 @@ ms.author: dansimp
 ms.topic: article
 ms.reviewer: 
 manager: dansimp
+ms.localizationpriority: medium
+ms.audience: itpro
 ---
 
 # Long-Term Servicing Channel (LTSC) for Surface devices
@@ -28,23 +30,7 @@ General-purpose Surface devices are intended to run on the Semi-Annual Channel t
 
 Surface devices in specialized scenarios–such as PCs that control medical equipment, point-of-sale systems, and ATMs–might consider the use of LTSC. These special-purpose systems typically perform a single task and do not require feature updates as frequently as other devices in the organization. 
 
-
-
-
-
 ## Related topics
 
-- [Surface TechCenter](https://technet.microsoft.com/windows/surface)
-
-- [Surface for IT pros blog](http://blogs.technet.com/b/surface/)
-
- 
-
- 
-
- 
-
-
-
-
+- [Surface IT Pro Blog](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro)
 

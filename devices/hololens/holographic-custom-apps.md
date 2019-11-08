@@ -35,7 +35,6 @@ You can install your own applications on HoloLens either by using the Device Por
    > Make sure to reference any associated dependency and certificate files.
 
 1. Select **Go**.
-
    ![Install app form in Windows Device Portal on Microsoft HoloLens](images/deviceportal-appmanager.jpg)
 
 ### Deploying from Microsoft Visual Studio 2015
@@ -44,7 +43,6 @@ You can install your own applications on HoloLens either by using the Device Por
 1. Open the project's **Properties**.
 1. Select the following build configuration: **Master/x86/Remote Machine**.
 1. When you select **Remote Machine**:
-
    - Make sure the address points to the Wi-Fi IP address of your HoloLens.
    - Set authentication to **Universal (Unencrypted Protocol)**.
 1. Build your solution.
