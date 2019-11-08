@@ -47,10 +47,10 @@ To effectively manage WDAC policies, you should store and maintain your policy X
 
 ### Set PolicyName, PolicyID, and Version metadata for each policy
 
-Use the [Set-CIPolicyIDInfo](https://docs.microsoft.com/powershell/module/configci/set-cipolicyidinfo) cmdlet to give each policy a descriptive name and set a unique ID in order to differentiate each policy when reviewing WDAC events or when viewing the policy XML document. Although you can specify a string value for PolicyId, we recommend using the -ResetPolicyId switch to let the system auto-generate a unique ID for the policy.
+Use the [Set-CIPolicyIDInfo](https://docs.microsoft.com/powershell/module/configci/set-cipolicyidinfo) cmdlet to give each policy a descriptive name and set a unique ID in order to differentiate each policy when reviewing WDAC events or when viewing the policy XML document. Although you can specify a string value for PolicyId, for policies using the multiple policy format we recommend using the -ResetPolicyId switch to let the system auto-generate a unique ID for the policy.
 
 > [!NOTE]
-> PolicyID only applies to policies using the [multiple policy format](deploy-multiple-windows-defender-application-control-policies.md) on computers running Windows 10, version 1903 and above.
+> PolicyID only applies to policies using the [multiple policy format](deploy-multiple-windows-defender-application-control-policies.md) on computers running Windows 10, version 1903 and above. Running -ResetPolicyId on a policy created for pre-1903 computers will convert it to multiple policy format and prevent it from running on those earlier versions of Windows 10.
 > PolicyID should be set only once per policy and use different PolicyID's for the audit and enforced mode versions of each policy.
 
 In addition, we recommend using the [Set-CIPolicyVersion](https://docs.microsoft.com/powershell/module/configci/set-cipolicyversion) cmdlet to increment the policy's internal version number when you make changes to the policy. The version must be defined as a standard four-part version string (e.g. "1.0.0.0").
