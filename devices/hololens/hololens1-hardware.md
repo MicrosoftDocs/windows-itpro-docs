@@ -54,6 +54,8 @@ The power supply and the USB cable that come with the device are the best suppor
 
 Charging rate and speed may vary depending on the environment in which the device is running.
 
+In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15W charger.
+
 ## Device specifications
 
 ### Display
