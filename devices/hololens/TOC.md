@@ -5,6 +5,7 @@
 ## [HoloLens 2 hardware](hololens2-hardware.md)
 ## [Get your HoloLens 2 ready to use](hololens2-setup.md)
 ## [Set up your HoloLens 2](hololens2-start.md)
+## [HoloLens 2 fit and comfort FAQ](hololens2-fit-comfort-faq.md)
 ## [Supported languages for HoloLens 2](hololens2-language-support.md)
 ## [Getting around HoloLens 2](hololens2-basic-usage.md)
 
