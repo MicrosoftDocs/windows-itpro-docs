@@ -7,7 +7,7 @@ author: JesseMcCulloch
 ms.author: jemccull
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 8/12/19
+ms.date: 8/12/2019
 ms.reviewer: 
 manager: jarrettr
 appliesto:
