@@ -8,7 +8,8 @@ ms.author: v-tea
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 9/12/2019
-ms.reviewer: 
+audience: ITPro
+ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
