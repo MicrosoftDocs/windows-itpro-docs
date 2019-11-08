@@ -78,6 +78,10 @@ Configuration Manager, Intune, Desktop Analytics, Co-Management, and Device Mana
 
 SetupDiag is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available.        .
 
+### Windows Assessment and Deployment Toolkit (ADK)
+
+A new [Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) will **not be released** for Windows 10, version 1909. You can use the Windows ADK for Windows 10, version 1903 to deploy Windows 10, version 1909.
+
 ## Desktop Analytics
 
 [Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview) is now generally available globally! Desktop Analytics is a cloud-connected service, integrated with Configuration Manager, which gives you data-driven insights to the management of your Windows endpoints. It provides insight and intelligence that you can use to make more informed decisions about the update readiness of your Windows endpoints. Desktop Analytics requires a Windows E3 or E5 license, or a Microsoft 365 E3 or E5 license.
