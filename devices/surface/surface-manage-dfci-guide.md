@@ -29,7 +29,7 @@ In contrast to other Windows 10 devices available in the market today, Surface p
 
 Until now, managing firmware required enrolling devices into Surface Enterprise Management Mode (SEMM) with the overhead of ongoing manual IT-intensive tasks. As an example, SEMM requires IT staff to physically access each PC to enter a two-digit pin as part of the certificate management process. Although SEMM remains a good solution for organizations in a strictly on-premises environment, its complexity and IT-intensive requirements make it costly to use.
 
-Now with newly integrated UEFI firmware management capabilities in Microsoft Intune, the ability to lock down hardware is simplified and easier to use with new features for provisioning, security, and streamlined updating all in a single console.
+Now with newly integrated UEFI firmware management capabilities in Microsoft Intune, the ability to lock down hardware is simplified and easier to use with new features for provisioning, security, and streamlined updating all in a single console, now unified as Microsoft Endpoint Manager. 
 
 DFCI leverages the device profiles capability in Intune and is deployed using Windows Autopilot, eliminating the need for manual interaction by IT admins or end users. A device profile allows you to add and configure settings which can then be deployed to devices enrolled in management within your organization. Once the device receives the device profile, the features and settings are applied automatically. Examples of common device profiles include Email, Device restrictions, VPN, Wi-Fi, and Administrative templates. DFCI is simply an additional device profile that enables you to manage UEFI configuration settings from the cloud without having to maintain a costly on-premises infrastructure.  
 
@@ -40,6 +40,9 @@ At this time, DFCI is supported in the following devices:
 - Surface Pro 7
 - Surface Pro X
 - Surface Laptop 3
+
+> [!NOTE]
+> Surface Pro X does not support DFCI settings management for built-in camera, audio, and Wi-Fi/Bluetooth.
 
 ## Prerequisites
 
@@ -59,7 +62,7 @@ A DFCI environment requires setting up a DFCI profile that contains  the setting
 
 Before configuring DFCI policy settings, first create a DFCI profile and assign it to the Azure AD security group that contains your target devices.
 
-1. Open Intune select **Device configuration > Profiles > Create profile** and enter a name; for example **My DFCI profile.**
+1. Go to devicemanagement.microsoft.com, select **Devices > Windows configuration profiles > Create profile** and enter a name; for example **DFCI Configuration Policy.**
 2. Select Windows 10 and later for platform type.
 3. In the Profile type drop down list, select **Device Firmware Configuration Interface** to open the DFCI blade containing all available policy settings. For information on DFCI settings, refer to Table 2 on this page below or the [Intune documentation](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows). You can configure DFCI settings during the initial setup process or later by editing the DFCI profile.
 
@@ -72,7 +75,7 @@ Before configuring DFCI policy settings, first create a DFCI profile and assign 
 
 ## Create Autopilot profile
 
-1. Go to **Intune > Device enrollment > Windows enrollment** and scroll down to select **Deployment Profiles**.
+1. In Endpoint Manager, go to **Devices > Device enrollment > Windows enrollment** and scroll down to select **Deployment Profiles**.
 2. Select **Create profile**, enter a name; for example, My Autopilot profile, and select **Next**.
 3. Select the following settings:
 
@@ -95,9 +98,11 @@ For more information, refer to [Set up an enrollment status page](https://docs.m
 
 DFCI includes a streamlined set of UEFI configuration policies that provide an extra level of security by locking down devices at the hardware level. DFCI is designed to be used in conjunction with mobile device management settings at the software level. Note that DFCI settings only affect hardware components built into Surface devices and do not extend to attached peripherals such as USB webcams. (However, you can use Device restriction policies in Intune to turn off access to attached peripherals at the software level).
 
-You configure DFCI policy settings by editing the DFCI profile:
+You configure DFCI policy settings by editing the DFCI profile from the Microsoft Endpoint Manager Admin Center, as shown in the figure below. 
 
-- **Intune > Device configuration > Profiles > “DFCI profile name” > Properties > Settings**
+- **Home > Devices > Windows > Configuration Profiles > “DFCI profile name” > Properties > Settings**
+
+> ![Configure DFCI settings](images\DFCI-settings-config.png)
 
 ### Block user access to UEFI settings
 
@@ -114,11 +119,11 @@ The rest of the DFCI settings enable you to turn off functionality that would ot
 | Disable radios (Bluetooth, Wi-Fi)             | Under **Built in Hardware > Radios (Bluetooth, Wi-Fi, etc…)**, select **Disabled**.                   |
 | Disable Boot from external media (USB, SD)    | Under **Built in Hardware > Boot Options > Boot from external media (USB, SD)**, select **Disabled**. |
 
+> [!CAUTION]
+> Disable radios (Bluetooth, Wi-Fi) should only be used on devices that have a wired Ethernet connection.
  
 > [!NOTE]
->  DFCI in Intune includes two settings that do not currently apply to Surface devices:
-- CPU and IO virtualization
-- Disable Boot from network adapters
+>  DFCI in Intune includes two settings that do not currently apply to Surface devices: (1) CPU and IO virtualization and (2) Disable Boot from network adapters.
  
 Intune provides Scope tags to delegate administrative rights and Applicability Rules to manage device types. For more information about policy management support and full details on all DFCI settings, refer to [Microsoft Intune documentation](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows).
 
@@ -130,7 +135,7 @@ As stated above, DFCI can only be applied on devices registered in Windows Autop
 
 Although Intune policy settings typically get applied almost immediately, there may be a delay of 10 minutes before the settings take effect on targeted devices. In rare circumstances, delays of up to 8 hours are possible. To ensure settings apply as soon as possible, (such as in test scenarios), you can manually sync the target devices.
 
-- In Intune, go to **Device enrollment > Windows enrollment > Windows Autopilot Devices** and select **Sync**.
+- In Endpoint Manager, go to **Devices > Device enrollment > Windows enrollment > Windows Autopilot Devices** and select **Sync**.
 
  For more information, refer to [Sync your Windows device manually](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows).
 
