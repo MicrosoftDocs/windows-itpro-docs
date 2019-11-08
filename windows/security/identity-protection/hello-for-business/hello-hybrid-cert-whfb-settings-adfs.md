@@ -52,7 +52,7 @@ Sign-in the AD FS server with *Domain Admin* equivalent credentials.
 The Windows Hello for Business group provides the AD FS service with the permissions needed to enroll a Windows Hello for Business authentication certificate on behalf of the provisioning user.
 
 > [!TIP]
-> The account adfssvc is the ADFS Service account.
+> The adfssvc account is the AD FS service account.
 
 Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
 
