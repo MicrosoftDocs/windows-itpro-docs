@@ -47,14 +47,14 @@ This process helps you to sign out of a Microsoft Account and to sign into an Az
 ## Use Cortana to manage the notebook content
 This process helps you to manage the content Cortana shows in your Notebook.
 
-1.	Click on the **Cortana** icon in the taskbar, click the **Notebook**, scroll down and click **Weather**.
+1. Click on the **Cortana** icon in the taskbar, click the **Notebook**, scroll down and click **Weather**.
 
-2.	In the **Weather** settings, scroll down to the **Cities your tracking** area, and then click **Add a city**.
+2. In the **Weather** settings, scroll down to the **Cities your tracking** area, and then click **Add a city**.
 
-3.	Add *Redmond, Washington*, double-click the search result, click **Add**, and then click **Save**.
+3. Add *Redmond, Washington*, double-click the search result, click **Add**, and then click **Save**.
 
     ![Cortana at work, showing the multiple Weather screens](../images/cortana-weather-multipanel.png)
  
-4.	Click on the **Home** icon and scroll to the weather forecast for Redmond, Washington.
+4. Click on the **Home** icon and scroll to the weather forecast for Redmond, Washington.
 
     ![Cortana at work, showing Redmond, WA weather](../images/cortana-redmond-weather.png)

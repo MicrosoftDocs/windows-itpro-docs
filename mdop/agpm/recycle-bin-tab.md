@@ -1,11 +1,11 @@
 ---
 title: Recycle Bin Tab
 description: Recycle Bin Tab
-author: mjcaparas
+author: dansimp
 ms.assetid: 9ce62e98-c03e-4a75-90e0-51be83c6d2db
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

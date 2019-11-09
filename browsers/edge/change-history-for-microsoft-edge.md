@@ -6,16 +6,18 @@ ms.topic: reference
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.localizationpriority: medium
+audience: itpro
 manager: dansimp
-ms.author: eravena
-author: eavena
+author: dansimp
 ms.date: 10/02/2018
-ms.reviewer: 
+ms.author: dansimp 
 ---
 
 # Change history for Microsoft Edge
 Discover what's new and updated in the Microsoft Edge for both Windows 10 and Windows 10 Mobile.
 
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
 #### [2018](#tab/2018/)
 ## October 2018

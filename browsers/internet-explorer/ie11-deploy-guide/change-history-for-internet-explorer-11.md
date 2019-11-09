@@ -8,7 +8,7 @@ ms.sitesec: library
 author: dansimp
 ms.date: 07/27/2017
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: dansimp
 ---
 

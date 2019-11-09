@@ -24,7 +24,7 @@
 # Previous versions
 ## Windows 8.1 and Windows Server 2012 R2
 ### [Known issues and notifications](status-windows-8.1-and-windows-server-2012-r2.yml)
-###[Resolved issues](resolved-issues-windows-8.1-and-windows-server-2012-r2.yml)
+### [Resolved issues](resolved-issues-windows-8.1-and-windows-server-2012-r2.yml)
 ## Windows Server 2012
 ### [Known issues and notifications](status-windows-server-2012.yml)
 ### [Resolved issues](resolved-issues-windows-server-2012.yml)

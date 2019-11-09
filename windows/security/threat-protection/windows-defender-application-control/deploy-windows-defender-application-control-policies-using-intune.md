@@ -1,18 +1,24 @@
 ---
 title: Deploy Windows Defender Application Control (WDAC) policies by using Microsoft Intune (Windows 10)
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: isbrahm
+ms.author: dansimp
+manager: dansimp
 ms.date: 05/17/2018
 ---
+
+> [!NOTE]
+> For WDAC enhancements see [Delivering major enhancements in Windows Defender Application Control with the Windows 10 May 2019 Update](https://www.microsoft.com/security/blog/2019/07/01/). 
 
 # Deploy Windows Defender Application Control policies by using Microsoft Intune
 

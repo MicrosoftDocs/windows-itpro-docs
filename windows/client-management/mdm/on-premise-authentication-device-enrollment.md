@@ -86,7 +86,7 @@ https://EnterpriseEnrollment.Contoso.com/EnrollmentServer/Discovery.svc
 
 The following example shows the discovery service request.
 
-``` syntax
+```xml
     <?xml version="1.0"?>
     <s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"
        xmlns:s="http://www.w3.org/2003/05/soap-envelope">
@@ -134,7 +134,7 @@ The discovery response is in the XML format and includes the following fields:
 
 The following example shows a response received from the discovery web service for OnPremise authentication:
 
-``` syntax
+```xml
     <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
        xmlns:a="http://www.w3.org/2005/08/addressing">
       <s:Header>
@@ -171,7 +171,7 @@ For the OnPremise authentication policy, the UsernameToken in GetPolicies contai
 
 The following example shows the policy web service request.
 
-``` syntax
+```xml
     <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
        xmlns:a="http://www.w3.org/2005/08/addressing"
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
@@ -219,7 +219,7 @@ MS-XCEP supports very flexible enrollment policies using various Complex Types a
 
 The following snippet shows the policy web service response.
 
-``` syntax
+```xml
       <s:Envelope
          xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
          xmlns:s="http://www.w3.org/2003/05/soap-envelope"
@@ -311,7 +311,7 @@ The RST may also specify a number of AdditionalContext items, such as DeviceType
 
 The following example shows the enrollment web service request for OnPremise authentication.
 
-``` syntax
+```xml
     <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" 
        xmlns:a="http://www.w3.org/2005/08/addressing" 
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
@@ -396,7 +396,7 @@ The following example shows the enrollment web service request for OnPremise aut
 
 The following example shows the enrollment web service response.
 
-``` syntax
+```xml
     <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" 
        xmlns:a="http://www.w3.org/2005/08/addressing" 
        xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">

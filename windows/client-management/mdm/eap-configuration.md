@@ -56,7 +56,7 @@ Here is an easy way to get the EAP configuration from your desktop using the ras
 
 9.  Switch over to PowerShell and use the following cmdlets to retrieve the EAP configuration XML.
 
-    ``` syntax
+    ```powershell
     Get-VpnConnection -Name Test
     ```
 
@@ -80,17 +80,17 @@ Here is an easy way to get the EAP configuration from your desktop using the ras
     IdleDisconnectSeconds : 0
     ```
 
-    ``` syntax
+    ```powershell
     $a = Get-VpnConnection -Name Test
     ```
 
-    ``` syntax
+    ```powershell
     $a.EapConfigXmlStream.InnerXml
     ```
 
     Here is an example output
 
-    ``` syntax
+    ```xml
     <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"><EapMethod><Type xmlns="http://www.microsoft.co
     m/provisioning/EapCommon">13</Type><VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorId><VendorTy
     pe xmlns="http://www.microsoft.com/provisioning/EapCommon">0</VendorType><AuthorId xmlns="http://www.microsoft.com/provisi
@@ -142,11 +142,11 @@ The following list describes the prerequisites for a certificate to be used with
 -   The certificate must have at least one of the following EKU (Extended Key Usage) properties:
 
     -   Client Authentication
-    -   As defined by RFC 5280, this is a well-defined OID with Value 1.3.6.1.5.5.7.3.2
+        -   As defined by RFC 5280, this is a well-defined OID with Value 1.3.6.1.5.5.7.3.2
     -   Any Purpose
-    -   An EKU Defined and published by Microsoft, is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that additional non-critical or custom EKUs can still be added to the certificate for effective filtering.
+        -   An EKU Defined and published by Microsoft, is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that additional non-critical or custom EKUs can still be added to the certificate for effective filtering.
     -   All Purpose
-    -   As defined by RFC 5280, If a CA includes extended key usages to satisfy some application needs, but does not want to restrict usage of the key, the CA can add an Extended Key Usage Value of 0. A certificate with such an EKU can be used for all purposes.
+        -   As defined by RFC 5280, If a CA includes extended key usages to satisfy some application needs, but does not want to restrict usage of the key, the CA can add an Extended Key Usage Value of 0. A certificate with such an EKU can be used for all purposes.
 -   The user or the computer certificate on the client chains to a trusted root CA
 -   The user or the computer certificate does not fail any one of the checks that are performed by the CryptoAPI certificate store, and the certificate passes requirements in the remote access policy.
 -   The user or the computer certificate does not fail any one of the certificate object identifier checks that are specified in the Internet Authentication Service (IAS)/Radius Server.
@@ -158,7 +158,7 @@ The following XML sample explains the properties for the EAP TLS XML including c
 
  
 
-``` syntax
+```xml
 <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
  <EapMethod>
   <Type xmlns="http://www.microsoft.com/provisioning/EapCommon">13</Type>

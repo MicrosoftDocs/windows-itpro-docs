@@ -37,12 +37,9 @@ You can specify the level of cloud-protection offered by Windows Defender Antivi
 4. Select **Properties**, select **Settings: Configure**, and then select **Windows Defender Antivirus**.
 5. On the **File Blocking Level** switch, select one of the following:
 
-    1. **High** to provide a strong level of detection
-    2. **High +** to apply additional protection measures
-    3. **Zero tolerance** to block all unknown executables
-
-        > [!WARNING]
-        > While unlikely, setting this switch to **High** might cause some legitimate files to be detected. The **High +** setting might impact client performance. We recommend you set this to the default level (**Not configured**).
+    1. **High**: Applies a strong level of detection.
+    2. **High +**: Uses the **High** level and applies additional protection measures (may impact client performance).
+    3. **Zero tolerance**: Blocks all unknown executables.
 
 8. Click **OK** to exit the **Windows Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
 
@@ -64,15 +61,14 @@ For more information about Intune device profiles, including how to create and c
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > MpEngine**.
 
 1.  Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:  
-    1.  Setting to **Default Windows Defender Antivirus blocking level** provides strong detection without increasing the risk of detecting legitimate files.  
-    2.  Setting to **High blocking level** applies a strong level of detection. 
-    3. **High + blocking level** applies additional protection measures.
+    1.  **Default Windows Defender Antivirus blocking level** provides strong detection without increasing the risk of detecting legitimate files.  
+    2.  **High blocking level** applies a strong level of detection while optimizing client performance (greater chance of false positives).
+    3. **High + blocking level** applies additional protection measures (may impact client performance and increase risk of false positives).
     4. **Zero tolerance blocking level** blocks all unknown executables.
 
         > [!WARNING]
-        > While unlikely, setting this switch to **High** might cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection). The **High +** setting might impact client performance. We recommend you set this to the default level (**Not configured**).
-
-1. Click **OK**.
+        > While unlikely, setting this switch to **High** or **High +** may cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection).
+6. Click **OK**.
 
   
 

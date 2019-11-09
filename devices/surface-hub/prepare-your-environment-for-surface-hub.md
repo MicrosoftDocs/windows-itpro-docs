@@ -7,8 +7,8 @@ manager: dansimp
 keywords: prepare environment, features of Surface Hub, create and test device account, check network availability
 ms.prod: surface-hub
 ms.sitesec: library
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 12/04/2017
 ms.localizationpriority: medium

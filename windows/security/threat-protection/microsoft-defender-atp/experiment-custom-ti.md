@@ -27,7 +27,7 @@ ms.date: 11/09/2017
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-experimentcustomti-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-experimentcustomti-abovefoldlink) 
 
 With the Microsoft Defender ATP threat intelligence API, you can create custom threat intelligence alerts that can help you keep track of possible attack activities in your organization.  
 
@@ -141,11 +141,11 @@ This step will guide you in simulating an event in connection to a malicious IP 
 ## Step 4: Explore the custom alert in the portal
 This step will guide you in exploring the custom alert in the portal.
 
-1.	Open [Microsoft Defender Security Center](http://securitycenter.windows.com/) on a browser.
+1. Open [Microsoft Defender Security Center](http://securitycenter.windows.com/) on a browser.
 
-2.	Log in with your Microsoft Defender ATP credentials.
+2. Log in with your Microsoft Defender ATP credentials.
 
-3.	The dashboard should display the custom TI alert for the victim machine resulting from the simulated attack.
+3. The dashboard should display the custom TI alert for the victim machine resulting from the simulated attack.
 
     ![Image of sample custom ti alert in the portal](images/atp-sample-custom-ti-alert.png)
 

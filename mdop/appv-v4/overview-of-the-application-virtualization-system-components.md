@@ -1,15 +1,15 @@
 ---
 title: Overview of the Application Virtualization System Components
 description: Overview of the Application Virtualization System Components
-author: eavena
+author: dansimp
 ms.assetid: 75d88ef7-44d8-4fa7-b7f5-9153f37e570d
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

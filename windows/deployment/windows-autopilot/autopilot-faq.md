@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: low
 ms.sitesec: library
 ms.pagetype: deploy
+audience: itpro
 author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
@@ -109,7 +110,7 @@ A [glossary](#glossary) of abbreviations used in this topic is provided at the e
 | --- | --- |
 | Must we use Intune for our MDM?  |  No.  No, any MDM will work with Autopilot, but others probably won’t have the same full suite of Windows Autopilot features as Intune.  You’ll get the best experience from Intune. |
 | Can Intune support Win32 app preinstalls?  | Yes.  Starting with the Windows 10 October Update (version 1809), Intune supports Win32 apps using .msi (and .msix) wrappers.  |
-| What is co-management?  | Co-management is when you use a combination of a cloud MDM tool (Intune) and an on-premise configuration tool like System Center Configuration Manager (SCCM). You only need to use SCCM if Intune can’t support what you want to do with your profile.  If you choose to co-manage using Intune + SCCM, you do it by including an SCCM agent in your Intune profile.  When that profile is pushed to the device, the device will see the SCCM agent and go out to SCCM to pull down any additional profile settings. |
+| What is co-management?  | Co-management is when you use a combination of a cloud MDM tool (Intune) and an on-premises configuration tool like System Center Configuration Manager (SCCM). You only need to use SCCM if Intune can’t support what you want to do with your profile.  If you choose to co-manage using Intune + SCCM, you do it by including an SCCM agent in your Intune profile.  When that profile is pushed to the device, the device will see the SCCM agent and go out to SCCM to pull down any additional profile settings. |
 | Must we use System Center Configuration Manager (SCCM) for Windows Autopilot  |  No.  Co-management (described above) is optional. |
 
 
@@ -118,7 +119,7 @@ A [glossary](#glossary) of abbreviations used in this topic is provided at the e
 | Question | Answer |
 | --- | --- |
 | Self-deploying mode  | A new version of Windows Autopilot where the user only turns on the device, and nothing else.  It’s useful for scenarios where a standard user account isn’t needed (e.g., shared devices, or KIOSK devices).  |
-| Hybrid Azure Active Directory join  |  Allows Windows Autopilot devices to connect to an on-premise Active Directory domain controller (in addition to being Azure AD joined). |
+| Hybrid Azure Active Directory join  |  Allows Windows Autopilot devices to connect to an on-premises Active Directory domain controller (in addition to being Azure AD joined). |
 | Windows Autopilot reset  | Removes user apps and settings from a device, but maintains AAD domain join and MDM enrollment.  Useful for when transferring a device from one user to another.  |
 | Personalization  | Adds the following to the OOBE experience: A personalized welcome message can be created A username hint can be added Sign-in page text can be personalized The company’s logo can be included |
 | [Autopilot for existing devices](existing-devices.md)  |  Offers an upgrade path to Windows Autopilot for all existing Win 7/8 devices. |

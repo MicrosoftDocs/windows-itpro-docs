@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -44,7 +44,7 @@ If you upgraded your Active Directory schema to the Windows Server 2016 schema a
 A fundamental prerequisite of all cloud and hybrid Windows Hello for Business deployments is device registration.  A user cannot provision Windows Hello for Business unless the device from which they are trying to provision has registered with Azure Active Directory.  For more information about device registration, read [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/overview).
 
 You can use the **dsregcmd.exe** command to determine if your device is registered to Azure Active Directory.
-![dsregcmd outpout](images/aadj/dsregcmd.png)
+![dsregcmd output](images/aadj/dsregcmd.png)
 
 ### CRL Distribution Point (CDP)
 
@@ -122,7 +122,7 @@ You need to host your new certificate revocation list of a web server so Azure A
 5. Select **CDP** under **Default Web Site** in the navigation pane.  Double-click **Configuration Editor**.
 6. In the **Section** list, navigate to **system.webServer/security/requestFiltering**.
    ![IIS Configuration Editor requestFiltering](images/aadj/iis-config-editor-requestFiltering.png)   
-   In the list of named value-pairs in the content pane, configure **allowDoubleEscapting** to **True**.  Click **Apply** in the actions pane.
+   In the list of named value-pairs in the content pane, configure **allowDoubleEscaping** to **True**.  Click **Apply** in the actions pane.
    ![IIS Configuration Editor double escaping](images/aadj/iis-config-editor-allowDoubleEscaping.png)
 7. Close **Internet Information Services (IIS) Manager**. 
 
@@ -264,7 +264,7 @@ Steps you will perform include:
 1. Sign-in a domain controller using administrative credentials.
 2. Open the **Run** dialog box.  Type **certlm.msc** to open the **Certificate Manager** for the local computer.
 3. In the navigation pane, expand **Personal**.  Click **Certificates**.  In the details pane, double-click the existing domain controller certificate includes **KDC Authentication** in the list of **Intended Purposes**.
-4. Click the **Certification Path** tab.  In the **Certifcation path** view, select the top most node and click **View Certificate**.
+4. Click the **Certification Path** tab.  In the **Certification path** view, select the top most node and click **View Certificate**.
 ![Certificate Path](images/aadj/certlm-cert-path-tab.png)
 5. In the new **Certificate** dialog box, click the **Details** tab. Click **Copy to File**.
 ![Details tab and copy to file](images/aadj/certlm-root-cert-details-tab.png)
@@ -309,13 +309,13 @@ Sign-in a workstation with access equivalent to a _domain user_.
 ![Intune Windows Hello for Business policy settings](images/aadj/IntuneWHFBPolicy-01.png)
 
 11. Select the appropriate configuration for the following settings.
-   * **Lowercase letters in PIN**
-   * **Uppercase letters in PIN**
-   * **Special characters in PIN**
-   * **PIN expiration (days)**
-   * **Remember PIN history**
-     > [!NOTE]
-     > The Windows Hello for Business PIN is not a symmetric key (a password).  A copy of the current PIN is not stored locally or on a server like in the case of passwords.  Making the PIN as complex and changed frequently as a password increases the likelihood of forgotten PINs.  Additionally, enabling PIN history is the only scenario that requires Windows 10 to store older PIN combinations (protected to the current PIN). Windows Hello for Business combined with a TPM provides anti-hammering functionality that prevents brute force attacks of the user's PIN.  If you are concerned with user-to-user shoulder surfacing, rather that forcing complex PIN that change frequently, consider using the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
+    * **Lowercase letters in PIN**
+    * **Uppercase letters in PIN**
+    * **Special characters in PIN**
+    * **PIN expiration (days)**
+    * **Remember PIN history**
+    > [!NOTE]
+    > The Windows Hello for Business PIN is not a symmetric key (a password).  A copy of the current PIN is not stored locally or on a server like in the case of passwords.  Making the PIN as complex and changed frequently as a password increases the likelihood of forgotten PINs.  Additionally, enabling PIN history is the only scenario that requires Windows 10 to store older PIN combinations (protected to the current PIN). Windows Hello for Business combined with a TPM provides anti-hammering functionality that prevents brute force attacks of the user's PIN.  If you are concerned with user-to-user shoulder surfacing, rather that forcing complex PIN that change frequently, consider using the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
 
 12. Select **Yes** next to **Allow biometric authentication** if you want to allow users to use biometrics (fingerprint and/or facial recognition) to unlock the device.  To further secure the use of biometrics, select **Yes** to **Use enhanced anti-spoofing, when available**.
 13. Select **No** to **Allow phone sign-in**.  This feature has been deprecated.

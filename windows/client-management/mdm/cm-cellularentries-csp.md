@@ -198,7 +198,7 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 
 To delete a connection, you must first delete any associated proxies and then delete the connection. The following example shows how to delete the proxy and then the connection.
 
-``` syntax
+```xml
 <wap-provisioningdoc>
    <characteristic type="CM_ProxyEntries">
       <nocharacteristic type="GPRS_Proxy"/>
@@ -214,7 +214,7 @@ To delete a connection, you must first delete any associated proxies and then de
 
 Configuring a GPRS connection:
 
-``` syntax
+```xml
 <wap-provisioningdoc>
    <characteristic type="CM_CellularEntries">
       <characteristic type="GPRSConn">
@@ -231,7 +231,7 @@ Configuring a GPRS connection:
 
 Configuring an LTE connection:
 
-``` syntax
+```xml
 <wap-provisioningdoc>
    <characteristic type="CM_CellularEntries">
       <characteristic type="LteConn">
@@ -250,7 +250,7 @@ Configuring an LTE connection:
 
 Configuring a CDMA connection:
 
-``` syntax
+```xml
 <wap-provisioningdoc>
    <characteristic type="CM_CellularEntries">
       <characteristic type="CDMAConn">

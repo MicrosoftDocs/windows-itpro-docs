@@ -126,7 +126,7 @@ Here is a list of GUIDs of the most downloaded reqions.
 
 Here is an example queuing a map package of New York for download.
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
        <Add>
@@ -144,7 +144,7 @@ Here is an example queuing a map package of New York for download.
 
 Here is an example that gets the status of the New York map package on the device.
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
        <Get>

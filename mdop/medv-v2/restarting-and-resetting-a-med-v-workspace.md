@@ -1,15 +1,15 @@
 ---
 title: Restarting and Resetting a MED-V Workspace
 description: Restarting and Resetting a MED-V Workspace
-author: levinec
+author: dansimp
 ms.assetid: a959cdb3-a727-47c7-967e-e58f224e74de
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

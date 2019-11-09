@@ -6,7 +6,7 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: d3378058-e4f0-4a11-a888-b550af994bfa
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: dansimp
 title: Use the User Experience page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library

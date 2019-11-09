@@ -9,8 +9,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -30,6 +30,7 @@ This event is created when Windows Hello for Business is successfully created an
 
 | **Product:** |                                                                                                                                            Windows 10 operating system                                                                                                                                            |
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Log:**     | Event Viewer > Applications and Service Logs\Microsoft\Windows\User Device Registration\Admin |
 |   **ID:**    |                                                                                                                                                        300                                                                                                                                                        |
 | **Source:**  |                                                                                                                                    Microsoft Azure Device Registration Service                                                                                                                                    |
 | **Version:** |                                                                                                                                                        10                                                                                                                                                         |

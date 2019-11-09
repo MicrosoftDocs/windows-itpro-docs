@@ -1,6 +1,6 @@
 ---
 title: Introduction to configuration service providers (CSPs) for IT pros (Windows 10)
-description: Configuration service providers (CSPs) expose device configuration settings in Windows 10. 
+description: Configuration service providers (CSPs) expose device configuration settings in Windows 10. 
 ms.assetid: 25C1FDCA-0E10-42A1-A368-984FFDB2B7B6
 ms.reviewer: 
 manager: dansimp
@@ -16,35 +16,33 @@ ms.date: 07/27/2017
 
 # Introduction to configuration service providers (CSPs) for IT pros
 
-
 **Applies to**
 
--   Windows 10
--   Windows 10 Mobile
+-   Windows 10
+-   Windows 10 Mobile
 
-Configuration service providers (CSPs) expose device configuration settings in Windows 10. This topic is written for people who have no experience with CSPs.
+Configuration service providers (CSPs) expose device configuration settings in Windows 10. This topic is written for people who have no experience with CSPs.
 
-The CSPs are documented on the [Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=717390) because CSPs are used by mobile device management (MDM) service providers. This topic explains how IT pros and system administrators can take advantage of many settings available through CSPs to configure devices running Windows 10 and Windows 10 Mobile in their organizations.
+The CSPs are documented on the [Hardware Dev Center](https://go.microsoft.com/fwlink/p/?LinkId=717390) because CSPs are used by mobile device management (MDM) service providers. This topic explains how IT pros and system administrators can take advantage of many settings available through CSPs to configure devices running Windows 10 and Windows 10 Mobile in their organizations.
 
 >[!NOTE]
->The explanation of CSPs and CSP documentation also apply to Windows Mobile 5, Windows Mobile 6, Windows Phone 7, and Windows Phone 8, but links to current CSPs are for Windows 10 and Windows 10 Mobile.
+>This explanation of CSPs and CSP documentation also applies to Windows Mobile 5, Windows Mobile 6, Windows Phone 7, and Windows Phone 8, but links to current CSPs are for Windows 10 and Windows 10 Mobile.
 
  [See what's new for CSPs in Windows 10, version 1809.](https://docs.microsoft.com/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1809)
 
 ## What is a CSP?
 
+A CSP is an interface in the client operating system, between configuration settings specified in a provisioning document, and configuration settings on the device. CSPs are similar to Group Policy client-side extensions, in that they provide an interface to read, set, modify, or delete configuration settings for a given feature. Typically, these settings map to registry keys, files or permissions. Some of these settings are configurable, and some are read-only.
 
-A CSP is an interface in the client operating system between configuration settings specified in a provisioning document and configuration settings on the device. Their function is similar to that of Group Policy client-side extensions in that they provide an interface to read, set, modify, or delete configuration settings for a given feature. Typically, these settings map to registry keys, files or permissions. Some of these settings are configurable and some are read-only.
-
-Starting in Windows Mobile 5.0, CSPs were used to manage Windows mobile devices. In the Windows 10 platform, the management approach for both desktop and mobile devices converges, taking advantage of the same CSPs to configure and manage all devices running Windows 10.
+Starting with Windows Mobile 5.0, CSPs were used to manage Windows mobile devices. On the Windows 10 platform, the management approach for both desktop and mobile devices converges, taking advantage of the same CSPs to configure and manage all devices running Windows 10.
 
 Each CSP provides access to specific settings. For example, the [Wi-Fi CSP](https://go.microsoft.com/fwlink/p/?LinkId=717438) contains the settings to create a Wi-Fi profile.
 
-CSPs are behind many of the management tasks and policies for Windows 10 in Microsoft Intune and non-Microsoft MDM service providers. For example, in Intune, the policy to allow search suggestions in the Microsoft Edge address bar uses **Browser/AllowSearchSuggestionsinAddressBar** in the [Policy CSP](https://go.microsoft.com/fwlink/p/?LinkID=623244).
+CSPs are behind many of the management tasks and policies for Windows 10, both in Microsoft Intune and in non-Microsoft MDM service providers. For example, in Intune, the policy to allow search suggestions in the Microsoft Edge address bar uses **Browser/AllowSearchSuggestionsinAddressBar** in the [Policy CSP](https://go.microsoft.com/fwlink/p/?LinkID=623244).
 
 ![how intune maps to csp](../images/policytocsp.png)
 
-CSPs receive configuration policies in the XML-based SyncML format pushed to it from an MDM-compliant management server such as Microsoft Intune. Traditional enterprise management systems, such as System Center Configuration Manager, can also target CSPs by using a client-side WMI-to-CSP bridge.
+CSPs receive configuration policies in the XML-based SyncML format, pushed from an MDM-compliant management server, such as Microsoft Intune. Traditional enterprise management systems, such as System Center Configuration Manager, can also target CSPs, by using a client-side WMI-to-CSP bridge.
 
 ### Synchronization Markup Language (SyncML)
 
@@ -52,22 +50,21 @@ The Open Mobile Alliance Device Management (OMA-DM) protocol uses the XML-based 
 
 ### The WMI-to-CSP Bridge
 
-The WMI-to-CSP Bridge is a component allowing configuration of Windows 10 CSPs via scripts and traditional enterprise management software such as Configuration Manager using Windows Management Instrumentation (WMI). The bridge is responsible for reading WMI commands and through a component called the common device configurator pass them to a CSP for application on the device.
+The WMI-to-CSP Bridge is a component allowing configuration of Windows 10 CSPs via scripts and traditional enterprise management software, such as Configuration Manager using Windows Management Instrumentation (WMI). The bridge is responsible for reading WMI commands and through a component called the common device configurator pass them to a CSP for application on the device.
 
 [Learn how to use the WMI Bridge Provider with PowerShell.](https://go.microsoft.com/fwlink/p/?LinkId=761090)
 
 ## Why should you learn about CSPs?
 
-
 Generally, enterprises rely on Group Policy or MDM to configure and manage devices. For devices running Windows, MDM services use CSPs to configure your devices.
 
-In addition, you may have unmanaged devices, or a large number of devices that you want to configure before enrolling them in management, or you want to apply custom settings that aren't available through your MDM service. The [CSP documentation](#bkmk-csp-doc) can help you understand the settings that can be configured or queried.
+In addition, you may have unmanaged devices, or a large number of devices that you want to configure before enrolling them in management. You may also want to apply custom settings that aren't available through your MDM service. The [CSP documentation](#bkmk-csp-doc) can help you understand the settings that can be configured or queried.
 
-In addition, some of the topics in the [Windows 10 and Windows 10 Mobile](/windows/windows-10) library on Technet include links to applicable CSP reference topics, such as [Cortana integration in your business or enterprise](../cortana-at-work/cortana-at-work-overview.md) which links to the [Policy CSP](https://go.microsoft.com/fwlink/p/?LinkID=623244). In the CSP topics, you can learn about all of the available configuration settings.
+Some of the topics in the [Windows 10 and Windows 10 Mobile](/windows/windows-10) library on Technet include links to applicable CSP reference topics, such as [Cortana integration in your business or enterprise](../cortana-at-work/cortana-at-work-overview.md), which links to the [Policy CSP](https://go.microsoft.com/fwlink/p/?LinkID=623244). In the CSP topics, you can learn about all of the available configuration settings.
 
-### CSPs in Windows Configuration Designer 
+### CSPs in Windows Configuration Designer
 
-You can use Windows Configuration Designer to create [provisioning packages](https://go.microsoft.com/fwlink/p/?LinkId=717466) to apply settings to devices during the out-of-box-experience (OOBE) and after devices are set up. You can use provisioning packages to configure a device's connectivity and enroll the device in MDM. Many of the runtime settings in Windows Configuration Designer are based on CSPs.
+You can use Windows Configuration Designer to create [provisioning packages](https://go.microsoft.com/fwlink/p/?LinkId=717466) to apply settings to devices during the out-of-box-experience (OOBE), and after the devices are set up. You can also use provisioning packages to configure a device's connectivity and enroll the device in MDM. Many of the runtime settings in Windows Configuration Designer are based on CSPs.
 
 Many settings in Windows Configuration Designer will display documentation for that setting in the center pane, and will include a reference to the CSP if the setting uses one, as shown in the following image.
 
@@ -83,12 +80,11 @@ When a CSP is available but is not explicitly included in your MDM solution, you
 
 ### CSPs in Lockdown XML
 
-Lockdown XML can be used to configure devices running Windows 10 Mobile. You can manually author a [Lockdown XML file](../mobile-devices/lockdown-xml.md) to make use of the configuration settings available through the [EnterpriseAssignedAccess configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=618601). In Windows 10, version 1703, you can also use the new [Lockdown Designer app](../mobile-devices/mobile-lockdown-designer.md) to configure your Lockdown XML.
+Lockdown XML can be used to configure devices running Windows 10 Mobile. You can manually author a [Lockdown XML file](../mobile-devices/lockdown-xml.md) to make use of the configuration settings available through the [EnterpriseAssignedAccess configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=618601). In Windows 10, version 1703, you can also use the new [Lockdown Designer app](../mobile-devices/mobile-lockdown-designer.md) to configure your Lockdown XML.
 
 ## <a href="" id="bkmk-csp-doc"></a>How do you use the CSP documentation?
 
-
-All CSPs in Windows 10 are documented in the [Configuration service provider reference](https://go.microsoft.com/fwlink/p/?LinkId=717390).
+All CSPs in Windows 10 are documented in the [Configuration service provider reference](https://go.microsoft.com/fwlink/p/?LinkId=717390).
 
 The [main CSP topic](https://go.microsoft.com/fwlink/p/?LinkId=717390) tells you which CSPs are supported on each edition of Windows 10, and links to the documentation for each individual CSP.
 
@@ -98,17 +94,17 @@ The documentation for each CSP follows the same structure. After an introduction
 
 The full path to a specific configuration setting is represented by its Open Mobile Alliance - Uniform Resource Identifier (OMA-URI). The URI is relative to the devices’ root node (MSFT, for example). Features supported by a particular CSP can be set by addressing the complete OMA-URI path.
 
-The following example shows the diagram for the [AssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=626608). The diagram maps to the XML for that CSP. Notice the different shapes in the diagram: rounded elements are nodes and rectangular elements are settings or policies for which a value must be supplied.
+The following example shows the diagram for the [AssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=626608). The diagram maps to the XML for that CSP. Notice the different shapes in the diagram: rounded elements are nodes, and rectangular elements are settings or policies for which a value must be supplied.
 
 ![assigned access csp tree](../images/provisioning-csp-assignedaccess.png)
 
-The element in the tree diagram after the root node tells you the name of the CSP. Knowing this structure, you would recognize in XML the parts of the URI path for that CSP and, if you saw it in XML, you would know which CSP reference to look up. For example, in the following OMS-URI path for the kiosk mode app settings, you can see it uses the [AssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=626608).
+The element in the tree diagram after the root node tells you the name of the CSP. Knowing this structure, you would recognize in XML the parts of the URI path for that CSP and, if you saw it in XML, you would know which CSP reference to look up. For example, in the following OMS-URI path for the kiosk mode app settings, you can see that it uses the [AssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=626608).
 
 ```XML
 ./Vendor/MSFT/AssignedAccess/KioskModeApp
 ```
 
-When an element in the diagram uses italic font, it indicates a placeholder for specific information, such as the tenant ID in the following example.
+When an element in the diagram uses _italic_ font, it indicates a placeholder for specific information, such as the tenant ID in the following example.
 
 ![placeholder in csp tree](../images/csp-placeholder.png)
 
@@ -120,12 +116,11 @@ The documentation for most CSPs will also include an XML example.
 
 ## CSP examples
 
-
 CSPs provide access to a number of settings useful to enterprises. This section introduces two CSPs that an enterprise might find particularly useful.
 
 -   [EnterpriseAssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=618601)
 
-    The EnterpriseAssignedAccess configuration service provider allows IT administrators to configure settings on a Windows 10 Mobile device. An enterprise can make use of this CSP to create single-use or limited-use mobile devices, such as a handheld device that only runs a price-checking app.
+    The EnterpriseAssignedAccess configuration service provider allows IT administrators to configure settings on a Windows 10 Mobile device. An enterprise can make use of this CSP to create single-use or limited-use mobile devices, such as a handheld device that only runs a price-checking app.
 
     In addition to lockscreen wallpaper, theme, time zone, and language, the EnterpriseAssignedAccess CSP includes AssignedAccessXml which can be used to lock down the device through the following settings:
 
@@ -139,7 +134,7 @@ CSPs provide access to a number of settings useful to enterprises. This section 
     -   Creating role-specific configurations.
 -   [Policy CSP](https://go.microsoft.com/fwlink/p/?LinkID=623244)
 
-    The Policy configuration service provider enables the enterprise to configure policies on Windows 10 and Windows 10 Mobile. Some of these policy settings can also be applied using Group Policy, and the CSP documentation lists the equivalent Group Policy settings.
+    The Policy configuration service provider enables the enterprise to configure policies on Windows 10 and Windows 10 Mobile. Some of these policy settings can also be applied using Group Policy, and the CSP documentation lists the equivalent Group Policy settings.
 
     Some of the settings available in the Policy CSP include the following:
 
@@ -159,7 +154,7 @@ CSPs provide access to a number of settings useful to enterprises. This section 
     -   **Update**, such as specifying whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store
     -   **WiFi**, such as whether to enable Internet sharing
 
-Here is a list of CSPs supported on Windows 10 Enterprise, Windows 10 Mobile Enterprise, or both:
+Here is a list of CSPs supported on Windows 10 Enterprise, Windows 10 Mobile Enterprise, or both:
 
 -   [ActiveSync CSP](https://go.microsoft.com/fwlink/p/?LinkId=723219)
 -   [Application CSP](https://go.microsoft.com/fwlink/p/?LinkId=723220)
@@ -218,13 +213,3 @@ Here is a list of CSPs supported on Windows 10 Enterprise, Windows 10 Mobile E
 -   [Wi-Fi CSP](https://go.microsoft.com/fwlink/p/?LinkID=71743)
 -   [WindowsLicensing CSP](https://go.microsoft.com/fwlink/p/?LinkId=723274)
 -   [WindowsSecurityAuditing CSP](https://go.microsoft.com/fwlink/p/?LinkId=723415)
-
-
- 
-
- 
-
-
-
-
-

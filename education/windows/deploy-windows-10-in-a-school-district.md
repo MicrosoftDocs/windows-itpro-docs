@@ -7,9 +7,8 @@ ms.mktglfcycl: plan
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: medium
-author: levinec
-ms.author: ellevin
-ms.date: 10/30/2017
+author: dansimp
+ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
 ---
@@ -27,7 +26,7 @@ This guide shows you how to deploy the Windows 10 operating system in a school d
 
 Proper preparation is essential for a successful district deployment. To avoid common mistakes, your first step is to plan a typical district configuration. Just as with building a house, you need a blueprint for what your district and individual schools should look like when it’s finished. The second step in preparation is to learn how you will manage the users, apps, and devices in your district. Just as a builder needs to have the right tools to build a house, you need the right set of tools to deploy your district.
 
->**Note**&nbsp;&nbsp;This guide focuses on Windows 10 deployment and management in a district. For management of other devices and operating systems in education environments, see [Manage BYOD and corporate-owned devices with MDM solutions](https://www.microsoft.com/en-us/cloud-platform/mobile-device-management).
+>**Note**&nbsp;&nbsp;This guide focuses on Windows 10 deployment and management in a district. For management of other devices and operating systems in education environments, see [Manage BYOD and corporate-owned devices with MDM solutions](https://www.microsoft.com/cloud-platform/mobile-device-management).
 
 ### Plan a typical district configuration
 
@@ -116,7 +115,7 @@ The configuration process requires the following devices:
 
 * **Admin device.** This is the device you use for your day-to-day job functions. It’s also the one you use to create and manage the Windows 10 and app deployment process. You install the Windows ADK, MDT, and the System Center Configuration Manager Console on this device.
 * **Reference devices.** These are the devices that you will use as a template for the faculty and student devices. You install Windows 10 and Windows desktop apps on these devices, and then capture an image (.wim file) of the devices.
-  You will have a reference device for each type of device in your district. For example, if your district has Surface, HP Stream, Dell Inspiron, and Lenovo Yoga devices, then you would have a reference device for each model. For more information about approved Windows 10 devices, see [Explore devices](https://www.microsoft.com/en-us/windows/view-all).
+  You will have a reference device for each type of device in your district. For example, if your district has Surface, HP Stream, Dell Inspiron, and Lenovo Yoga devices, then you would have a reference device for each model. For more information about approved Windows 10 devices, see [Explore devices](https://www.microsoft.com/windows/view-all).
 * **Faculty and staff devices.** These are the devices that the teachers, faculty, and staff use for their day-to-day job functions. You use the admin device to deploy (or upgrade) Windows 10 and apps to these devices.
 * **Student devices.** The students will use these devices. You will use the admin device deploy (or upgrade) Windows 10 and apps to them.
 
@@ -551,7 +550,7 @@ In this section, you installed the Windows ADK and MDT on the admin device. You 
 
 Office 365 is one of the core components of your classroom environment. You create and manage student identities in Office 365, and students and teachers use the suite as their email, contacts, and calendar system. They also use Office 365 collaboration features such as SharePoint, OneNote, and OneDrive for Business.
 
-As a first step in deploying your classroom, create an Office 365 Education subscription, and then configure Office 365 for the classroom. For more information about Office 365 Education deployment, see [School deployment of Office 365 Education](https://www.microsoft.com/en-us/education/products/office-365-deployment-resources/default.aspx).
+As a first step in deploying your classroom, create an Office 365 Education subscription, and then configure Office 365 for the classroom. For more information about Office 365 Education deployment, see [School deployment of Office 365 Education](https://www.microsoft.com/education/products/office-365-deployment-resources/default.aspx).
 
 ### Select the appropriate Office 365 Education license plan
 
@@ -616,7 +615,7 @@ Now that you have created your new Office 365 Education subscription, add the do
 
 #### To add additional domains and subdomains
 
-1. In the Office 365 admin center, in the list view, click **DOMAINS**.
+1. In the admin center, in the list view, click **DOMAINS**.
 
 2. In the details pane, above the list of domains, on the menu bar, click **Add domain**.
 
@@ -868,7 +867,7 @@ Now that you have created your new Office 365 Education subscription, you need t
 
 >**Note**&nbsp;&nbsp;If your institution has AD DS, don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
 
-You can use the Office 365 admin center to add individual Office 365 accounts manually—a reasonable process when you’re adding only a few users. If you have many users, however, you can automate the process by creating a list of those users, and then use that list to create user accounts (that is, bulk-add users).
+You can use the Microsoft 365 admin center to add individual Office 365 accounts manually—a reasonable process when you’re adding only a few users. If you have many users, however, you can automate the process by creating a list of those users, and then use that list to create user accounts (that is, bulk-add users).
 
 The bulk-add process assigns the same Office 365 Education license plan to all users on the list. Therefore, you must create a separate list for each license plan you recorded in Table 9. Depending on the number of faculty members who need to use the classroom, you may want to add the faculty Office 365 accounts manually; however, use the bulk-add process to add student accounts.
 
@@ -962,7 +961,7 @@ Now that you have created your Microsoft Store for Business portal, you’re rea
 
 You can deploy apps to individual users or make apps available to users through your private store. Deploying apps to individual users restricts the app to those specified users. Making apps available through your private store allows all your users to install the apps.
 
-For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Microsoft Store for Business](../../store-for-business/app-inventory-management-microsoft-store-for-business.md).
+For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/app-inventory-management-microsoft-store-for-business).
 
 #### Summary
 
@@ -992,7 +991,7 @@ Depending on your school’s requirements, you may need any combination of the f
 
 >**Note**&nbsp;&nbsp;Although you can use Windows 10 Home on institution-owned devices, Microsoft recommends that you use Windows 10 Pro or Windows 10 Education, instead. Windows 10 Pro and Windows 10 Education provide support for MDM, policy-based management, and Microsoft Store for Business—features not available in Windows 10 Home. For more information about how to upgrade Windows 10 Home to Windows 10 Pro or Windows 10 Education, see [Windows 10 edition upgrade](https://technet.microsoft.com/itpro/windows/deploy/windows-10-edition-upgrades).
 
-For more information about the Windows 10 editions, see [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+For more information about the Windows 10 editions, see [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 
 One other consideration is the mix of processor architectures you will support. If you can, support only 64-bit versions of Windows 10. If you have devices that can run only 32-bit versions of Windows 10, you will need to import both 64-bit and 32-bit versions of the Windows 10 editions listed above.
 
@@ -1248,7 +1247,7 @@ You can use Windows Deployment Services in conjunction with System Center Config
 
     To support PXE boot requests, you install the PXE service point site system role. Then, you must configure one or more distribution points to respond to PXE boot request.
     For more information about how to perform this step, see [Install site system roles for System Center Configuration Manager](https://technet.microsoft.com/library/mt704036.aspx), [Use PXE to deploy Windows over the network with System Center Configuration Manager](https://technet.microsoft.com/library/mt627940.aspx), and [Configuring distribution points to accept PXE requests](https://technet.microsoft.com/library/mt627944.aspx#BKMK_PXEDistributionPoint).
-3.	Configure the appropriate boot images (Windows PE images) to deploy from the PXE-enabled distribution point.
+3. Configure the appropriate boot images (Windows PE images) to deploy from the PXE-enabled distribution point.
 
     Before a device can start a boot image from a PXE-enabled distribution point, you must change the properties of the boot image to enable PXE booting. Typically, you create this boot image when you created your MDT task sequence in the Configuration Manager console.
 
@@ -1809,7 +1808,7 @@ For more information about how to:
 For more information about how to:
 <ul>
 <li>Create or modify security groups, see <a href="https://support.office.com/en-us/article/Create-an-Office-365-Group-in-the-admin-center-74a1ef8b-3844-4d08-9980-9f8f7a36000f?ui=en-US&amp;rs=en-001&amp;ad=US" data-raw-source="[Create an Office 365 Group in the admin center](https://support.office.com/en-us/article/Create-an-Office-365-Group-in-the-admin-center-74a1ef8b-3844-4d08-9980-9f8f7a36000f?ui=en-US&amp;rs=en-001&amp;ad=US)">Create an Office 365 Group in the admin center</a>.</li>
-<li>Manage group membership, see <a href="https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a" data-raw-source="[Manage Group membership in the Office 365 admin center](https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)">Manage Group membership in the Office 365 admin center</a>.</li>
+<li>Manage group membership, see <a href="https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a" data-raw-source="[Manage Group membership in the admin center](https://support.office.com/en-us/article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)">Manage Group membership in the admin center</a>.</li>
 </ul>
 </td>
 <td></td>

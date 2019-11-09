@@ -1,15 +1,15 @@
 ---
 title: Technical Reference for DaRT 7.0
 description: Technical Reference for DaRT 7.0
-author: msfttracyp
+author: dansimp
 ms.assetid: f55c7e5e-713a-42d1-84c9-88370155f934
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

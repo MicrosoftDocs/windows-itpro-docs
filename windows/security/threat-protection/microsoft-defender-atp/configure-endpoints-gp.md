@@ -29,11 +29,13 @@ ms.date: 04/24/2018
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
 
 > [!NOTE]
 > To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.
+
+> For Windows Server 2019, you may need to replace NT AUTHORITY\Well-Known-System-Account with NT AUTHORITY\SYSTEM of the XML file that the Group Policy preference creates.
 
 ## Onboard machines using Group Policy
 1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
@@ -46,15 +48,15 @@ ms.date: 04/24/2018
     
     d. Click **Download package** and save the .zip file.
 
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the machine. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the machine. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
 
 3. Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
 4. In the **Group Policy Management Editor**, go to **Computer configuration**, then **Preferences**, and then **Control panel settings**.
 
-5. Right-click **Scheduled tasks**, point to **New**, and then click **Immediate task**.
+5. Right-click **Scheduled tasks**, point to **New**, and then click **Immediate Task (At least Windows 7)**.
 
-6. In the **Task** window that opens, go to the **General** tab. Choose the local SYSTEM user account (BUILTIN\SYSTEM) under **Security options**.
+6. In the **Task** window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM and then click **Check Names** then **OK**. NT AUTHORITY\SYSTEM appears as the user account the task will run as.
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
 
@@ -84,7 +86,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 4.  Click **Policies**, then **Administrative templates**.
 
-5.  Click **Windows components** and then **Microsoft Defender ATP**.
+5.  Click **Windows components** and then **Windows Defender ATP**.
 
 6.  Choose to enable or disable sample sharing from your machines.
 
@@ -98,7 +100,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
 
-1.	Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     a. In the navigation pane, select **Settings** > **Offboarding**.
 
@@ -108,21 +110,21 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 
     d. Click **Download package** and save the .zip file.
 
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the machine. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the machine. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3.	Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
+3. Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
-4.	In the **Group Policy Management Editor**, go to **Computer configuration,** then **Preferences**, and then **Control panel settings**.
+4. In the **Group Policy Management Editor**, go to **Computer configuration,** then **Preferences**, and then **Control panel settings**.
 
-5.	Right-click **Scheduled tasks**, point to **New**, and then click **Immediate task**.
+5. Right-click **Scheduled tasks**, point to **New**, and then click **Immediate task**.
 
-6.	In the **Task** window that opens, go to the **General** tab. Choose the local SYSTEM user account (BUILTIN\SYSTEM) under **Security options**.
+6. In the **Task** window that opens, go to the **General** tab. Choose the local SYSTEM user account (BUILTIN\SYSTEM) under **Security options**.
 
-7.	Select **Run whether user is logged on or not** and check the **Run with highest privileges** check-box.
+7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check-box.
 
-8.	Go to the **Actions** tab and click **New...**. Ensure that **Start a program** is selected in the **Action** field. Enter the file name and location of the shared  *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* file.
+8. Go to the **Actions** tab and click **New...**. Ensure that **Start a program** is selected in the **Action** field. Enter the file name and location of the shared  *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* file.
 
-9.	Click **OK** and close any open GPMC windows.
+9. Click **OK** and close any open GPMC windows.
 
 > [!IMPORTANT]
 > Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
@@ -132,9 +134,9 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 With Group Policy there isn’t an option to monitor deployment of policies on the machines. Monitoring can be done directly on the portal, or by using the different deployment tools.
 
 ## Monitor machines using the portal
-1.	Go to [Microsoft Defender Security Center](https://securitycenter.windows.com/).
-2.	Click **Machines list**.
-3.	Verify that machines are appearing.
+1. Go to [Microsoft Defender Security Center](https://securitycenter.windows.com/).
+2. Click **Machines list**.
+3. Verify that machines are appearing.
 
 > [!NOTE]
 > It can take several days for machines to start showing on the **Machines list**. This includes the time it takes for the policies to be distributed to the machine, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.

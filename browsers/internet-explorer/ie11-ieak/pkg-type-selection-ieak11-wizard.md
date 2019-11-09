@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use the Package Type Selection page in the IEAK 11 Customization Wizard to pick the media type you’ll use to distribute your custom package.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: dd91f788-d05e-4f45-9fd5-d951abf04f2c
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Use the Package Type Selection page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

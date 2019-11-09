@@ -8,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: mjcaparas
+ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
@@ -145,6 +145,5 @@ If the 'roles' section in the token does not include the necessary permission:
 
 ## Related topic
 - [Microsoft Defender ATP APIs](apis-intro.md)
-- [Advanced Hunting from Portal](advanced-hunting.md)
+- [Advanced Hunting from Portal](advanced-hunting-query-language.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
-- [Schedule Advanced Hunting](run-advanced-query-sample-ms-flow.md)

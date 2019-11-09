@@ -5,7 +5,7 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: dolmont
+ms.author: dansimp
 author: dulcemontemayor
 manager: dansimp
 audience: ITPro
@@ -20,8 +20,8 @@ ms.reviewer:
 **Applies to**  
 
 -   Windows 10
--   Windows Server 2016 
--   Office 2016 
+-   Windows Server 
+-   Office 365 ProPlus 
 
 ## Using security baselines in your organization 
 

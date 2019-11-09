@@ -3,12 +3,12 @@ title: Microsoft Surface documentation and resources
 layout: HubPage
 hide_bc: true
 description: Surface and Surface Hub documentation for admins & IT professionals
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 ms.topic: hub-page
 keywords: Microsoft Surface, Microsoft Surface Hub, Surface documentation
-localization_priority: Normal
+ms.localizationpriority: High
 audience: ITPro
 ms.prod: Surface
 description: Learn about Microsoft Surface and Surface Hub devices.
@@ -116,6 +116,7 @@ description: Learn about Microsoft Surface and Surface Hub devices.
                                                         <h3>Learn</h3>
                                                         <P><a href="https://docs.microsoft.com/learn/browse/?term=Surface" target="_blank">Surface training on Microsoft Learn</a></p>
                                                         <P><a href="https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ" target="_blank">Microsoft Mechanics Surface videos</a></p>
+                                                       <P><a href="https://docs.microsoft.com/surface-hub/surface-hub-2s-adoption-kit" target="_blank">Surface Hub 2S adoption and training</a></p>
                                                     </div>
                                                 </div>
                                             </div>

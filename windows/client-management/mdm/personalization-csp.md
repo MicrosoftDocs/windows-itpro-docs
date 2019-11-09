@@ -71,7 +71,7 @@ The following diagram shows the Personalization configuration service provider i
 
 ## Example SyncML
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>

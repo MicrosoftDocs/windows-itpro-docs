@@ -1,15 +1,15 @@
 ---
 title: What's New in MED-V 2.0
 description: What's New in MED-V 2.0
-author: levinec
+author: dansimp
 ms.assetid: 53b10bff-2b6f-463b-bdc2-5edc56526792
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

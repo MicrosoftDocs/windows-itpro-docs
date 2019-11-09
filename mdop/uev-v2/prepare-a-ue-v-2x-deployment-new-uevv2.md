@@ -1,11 +1,11 @@
 ---
 title: Prepare a UE-V 2.x Deployment
 description: Prepare a UE-V 2.x Deployment
-author: levinec
+author: dansimp
 ms.assetid: c429fd06-13ff-48c5-b9c9-fa1ec01ab800
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -710,7 +710,7 @@ Also…
 
 **Note**  
 
--   Starting with WIndows 10, version 1607, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/en-us/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack.
+-   Starting with WIndows 10, version 1607, UE-V is included with [Windows 10 for Enterprise](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise) and is no longer part of the Microsoft Desktop Optimization Pack.
 
 -   The UE-V Windows PowerShell feature of the UE-V Agent requires .NET Framework 4 or higher and Windows PowerShell 3.0 or higher to be enabled. Download Windows PowerShell 3.0 [here](https://go.microsoft.com/fwlink/?LinkId=309609).
 

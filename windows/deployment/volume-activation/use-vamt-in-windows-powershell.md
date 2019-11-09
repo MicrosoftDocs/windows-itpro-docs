@@ -9,6 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
+audience: itpro
 author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
@@ -32,11 +33,11 @@ The Volume Activation Management Tool (VAMT) PowerShell cmdlets can be used to p
 
   For example, if the Windows ADK is installed in the default location of `C:\Program Files(x86)\Windows Kits\10`, type:
     
-  ``` ps1
+  ``` powershell
   cd “C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\VAMT 3.0”
   ```
 - Import the VAMT PowerShell module. To import the module, type the following at a command prompt:
-  ``` syntax
+  ``` powershell
   Import-Module .\VAMT.psd1
   ```
   Where **Import-Module** imports a module only into the current session. To import the module into all sessions, add an **Import-Module** command to a Windows PowerShell profile. For more information about profiles, type `get-help about_profiles`.
@@ -44,11 +45,11 @@ The Volume Activation Management Tool (VAMT) PowerShell cmdlets can be used to p
 ## To Get Help for VAMT PowerShell cmdlets
 
 You can view all of the help sections for a VAMT PowerShell cmdlet, or you can view only the section that you are interested in. To view all of the Help content for a VAMT cmdlet, type:
-``` ps1
+``` powershell
 get-help <cmdlet name> -all
 ```
 For example, type:
-``` ps1
+``` powershell
 get-help get-VamtProduct -all
 ```
 
@@ -58,18 +59,18 @@ The update-help cmdlet is not supported for VAMT PowerShell cmdlets. To view onl
 **To view VAMT PowerShell Help sections**
 
 1. To get the syntax to use with a cmdlet, type the following at a command prompt:
-   ``` ps1
+   ``` powershell
    get-help <cmdlet name>
    ```
    For example, type:
-   ``` ps1
+   ``` powershell
    get-help get-VamtProduct 
    ```
 2. To see examples using a cmdlet, type:
-   ``` ps1
+   ``` powershell
    get-help <cmdlet name> -examples
    ```
    For example, type:
-   ``` ps1
+   ``` powershell
    get-help get-VamtProduct -examples
    ```

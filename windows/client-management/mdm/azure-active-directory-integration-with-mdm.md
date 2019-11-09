@@ -4,7 +4,7 @@ description: Azure Active Directory is the world largest enterprise cloud identi
 ms.assetid: D03B0765-5B5F-4C7B-9E2B-18E747D504EE
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -653,7 +653,7 @@ An alert is send to the MDM server in DM package\#1.
 
 Here's an example.
 
-``` syntax
+```xml
 <SyncBody>
  <Alert>
   <CmdID>1</CmdID>

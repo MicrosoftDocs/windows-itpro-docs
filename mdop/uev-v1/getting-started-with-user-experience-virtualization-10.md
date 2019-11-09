@@ -1,15 +1,15 @@
 ---
 title: Getting Started With User Experience Virtualization 1.0
 description: Getting Started With User Experience Virtualization 1.0
-author: levinec
+author: dansimp
 ms.assetid: 74a068dc-4f87-4cb4-b114-8ca2a37149f7
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

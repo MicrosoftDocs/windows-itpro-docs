@@ -1,15 +1,15 @@
 ---
 title: Planning for MBAM 1.0 Client Deployment
 description: Planning for MBAM 1.0 Client Deployment
-author: msfttracyp
+author: dansimp
 ms.assetid: 3af2e7f3-134b-4ab9-9847-b07474ca6ac3
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

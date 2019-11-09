@@ -134,7 +134,7 @@ Changes to this node require a reboot.
 
 For CDMA networks that use a separate Network Access Identity (NAI) for Internet sharing, a new parm, TetheringNAI, has been added in the [CM\_CellularEntries configuration service provider](cm-cellularentries-csp.md) configuration service provider. The following sample demonstrates how to specify the connection.
 
-``` syntax
+```xml
 <wap-provisioningdoc>
     <characteristic type="CM_CellularEntries">
         <characteristic type="TetheringNAIConn">

@@ -141,7 +141,7 @@ This event generates every time network share object was modified.
 
 -   **New SD** \[Type = UnicodeString\]**:** the new Security Descriptor Definition Language (SDDL) value for network share security descriptor.
 
-> **Note**&nbsp;&nbsp;The ** Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
+> **Note**&nbsp;&nbsp;The **Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
 > 
 > Example:
 > 

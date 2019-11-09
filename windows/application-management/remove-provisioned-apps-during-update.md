@@ -4,7 +4,7 @@ description: How to keep provisioned apps that were removed from your machine fr
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.author: tracyp
+ms.author: dansimp
 author: msfttracyp
 ms.date: 05/25/2018
 ms.reviewer: 
@@ -162,9 +162,13 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ZuneMusic_8wekyb3d8bbwe]
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.ZuneVideo_8wekyb3d8bbwe]
-```
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.3DBuilder_8wekyb3d8bbwe]
 
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.HEVCVideoExtension_8wekyb3d8bbwe]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Deprovisioned\Microsoft.Messaging_8wekyb3d8bbwe]
+``` 
 
 [Get-AppxPackage](https://docs.microsoft.com/powershell/module/appx/get-appxpackage)
 [Get-AppxPackage -allusers](https://docs.microsoft.com/powershell/module/appx/get-appxpackage)

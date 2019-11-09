@@ -6,8 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -71,7 +71,7 @@ Azure AD Join is intended for organizations that desire to be cloud-first or clo
 [Join Type](#join-type), [Hybrid Azure AD Joined](#hybrid-azure-ad-joined)
 
 ### More information
- - [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
+- [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 
 [Return to Top](hello-how-it-works-technology.md)
 ## Azure AD Registered

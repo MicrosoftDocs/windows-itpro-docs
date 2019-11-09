@@ -1,11 +1,11 @@
 ---
 title: Release Notes for App-V 5.1
 description: Release Notes for App-V 5.1
-author: msfttracyp
+author: dansimp
 ms.assetid: 62c5be3b-0a46-4512-93ed-97c23184f343
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

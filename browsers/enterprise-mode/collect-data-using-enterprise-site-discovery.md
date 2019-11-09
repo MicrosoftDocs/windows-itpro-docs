@@ -2,12 +2,12 @@
 ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7.
-author: eavena
+author: dansimp
 ms.prod: ie11
 ms.assetid: a145e80f-eb62-4116-82c4-3cc35fd064b6
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 title: Collect data using Enterprise Site Discovery
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -154,11 +154,11 @@ If you choose to use WMI as your data output, you need to make sure that your WM
 
 **To set up your firewall**
 
-1.	In **Control Panel**, click **System and Security**, and then click **Windows Firewall**.
+1. In **Control Panel**, click **System and Security**, and then click **Windows Firewall**.
 
-2.	In the left pane, click **Allow an app or feature through Windows Firewall** and scroll down to check the box for **Windows Management Instrumentation (WMI)**.
+2. In the left pane, click **Allow an app or feature through Windows Firewall** and scroll down to check the box for **Windows Management Instrumentation (WMI)**.
 
-3.	Restart your computer to start collecting your WMI data.
+3. Restart your computer to start collecting your WMI data.
 
 ## Use PowerShell to finish setting up Enterprise Site Discovery
 You can determine which zones or domains are used for data collection, using PowerShell. If you don’t want to use PowerShell, you can do this using Group Policy. For more info, see [Use Group Policy to finish setting up Enterprise Site Discovery](#use-group-policy-to-finish-setting-up-enterprise-site-discovery).
@@ -171,13 +171,13 @@ You can determine which zones or domains are used for data collection, using Pow
 
 **To set up data collection using a domain allow list**
  
- - Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1, using this command: `.\IETelemetrySetUp.ps1 [other args] -SiteAllowList sharepoint.com,outlook.com,onedrive.com`.
+- Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1, using this command: `.\IETelemetrySetUp.ps1 [other args] -SiteAllowList sharepoint.com,outlook.com,onedrive.com`.
  
     >**Important**<br>Wildcards, like \*.microsoft.com, aren’t supported.
 
 **To set up data collection using a zone allow list**
  
- - Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1, using this command: `.\IETelemetrySetUp.ps1 [other args] -ZoneAllowList Computer,Intranet,TrustedSites,Internet,RestrictedSites`.
+- Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1, using this command: `.\IETelemetrySetUp.ps1 [other args] -ZoneAllowList Computer,Intranet,TrustedSites,Internet,RestrictedSites`.
  
     >**Important**<br>Only Computer, Intranet, TrustedSites, Internet, and RestrictedSites are supported.
 

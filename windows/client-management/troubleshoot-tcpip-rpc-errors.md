@@ -73,16 +73,16 @@ With Registry Editor, you can modify the following parameters for RPC. The RPC P
 
 In this example ports 5000 through 6000 inclusive have been arbitrarily selected to help illustrate how the new registry key can be configured. This is not a recommendation of a minimum number of ports needed for any particular system.
 
-1.	Add the Internet key under: HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc
+1. Add the Internet key under: HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc
 
-2.	Under the Internet key, add the values "Ports" (MULTI_SZ), "PortsInternetAvailable" (REG_SZ), and "UseInternetPorts" (REG_SZ).
+2. Under the Internet key, add the values "Ports" (MULTI_SZ), "PortsInternetAvailable" (REG_SZ), and "UseInternetPorts" (REG_SZ).
 
     For example, the new registry key appears as follows:
     Ports: REG_MULTI_SZ: 5000-6000
     PortsInternetAvailable: REG_SZ: Y
     UseInternetPorts: REG_SZ: Y
 
-3.	Restart the server. All applications that use RPC dynamic port allocation use ports 5000 through 6000, inclusive. 
+3. Restart the server. All applications that use RPC dynamic port allocation use ports 5000 through 6000, inclusive. 
 
 You should open up a range of ports above port 5000. Port numbers below 5000 may already be in use by other applications and could cause conflicts with your DCOM application(s). Furthermore, previous experience shows that a minimum of 100 ports should be opened, because several system services rely on these RPC ports to communicate with each other.
  

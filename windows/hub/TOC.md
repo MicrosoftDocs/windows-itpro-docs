@@ -1,4 +1,4 @@
-# [Windows 10 and Windows 10 Mobile](index.md)
+# [Windows 10](index.md)
 ## [What's new](/windows/whats-new)
 ## [Release information](/windows/release-information)
 ## [Deployment](/windows/deployment)
@@ -8,4 +8,4 @@
 ## [Security](/windows/security)
 ## [Privacy](/windows/privacy)
 ## [Troubleshooting](/windows/client-management/windows-10-support-solutions)
-## [Other Windows client versions](https://docs.microsoft.com/previous-versions/windows)
+## [Previous Windows versions](https://docs.microsoft.com/previous-versions/windows)

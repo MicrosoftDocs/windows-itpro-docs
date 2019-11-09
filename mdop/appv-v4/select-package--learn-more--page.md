@@ -1,15 +1,15 @@
 ---
 title: Select Package (Learn More) Page
 description: Select Package (Learn More) Page
-author: eavena
+author: dansimp
 ms.assetid: 0b3d4ca4-ff65-4aa5-87a9-61cbe2ffc8be
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

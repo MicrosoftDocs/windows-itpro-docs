@@ -5,11 +5,11 @@ author: manikadhiman
 ms.assetid: fc2d2375-8f17-4a6d-b374-771cb947cb8c
 ms.reviewer: 
 manager: dansimp
-ms.author: manikadhiman
+ms.author: v-madhi
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

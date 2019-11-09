@@ -1,15 +1,15 @@
 ---
 title: Planning for Security and Protection
 description: Planning for Security and Protection
-author: eavena
+author: dansimp
 ms.assetid: d0e2ef81-c197-4020-ad85-8d66fe5c178f
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

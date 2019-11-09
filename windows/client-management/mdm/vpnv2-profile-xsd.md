@@ -23,7 +23,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import namespace="http://www.microsoft.com/provisioning/EapHostConfig" />
+  <xs:import namespace="http://www.microsoft.com/provisioning/EapHostConfig" schemaLocation="EapHostConfig.xsd" />
   <xs:element name="VPNProfile">
     <xs:complexType>
       <xs:sequence>
@@ -344,7 +344,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
 ## Plug-in profile example
 
 
-``` syntax
+```xml
 <VPNProfile>
     <PluginProfile>
         <ServerUrlList>testserver1.contoso.com;testserver2.contoso..com</ServerUrlList>

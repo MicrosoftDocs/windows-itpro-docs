@@ -1,7 +1,7 @@
 ---
 title: Virtual Services Tab
 description: Virtual Services Tab
-author: manikadhiman
+author: dansimp
 ms.assetid: 9fc4679d-ccb5-4df7-99de-dd7d3a367ecc
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

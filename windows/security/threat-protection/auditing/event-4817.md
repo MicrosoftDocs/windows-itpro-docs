@@ -116,7 +116,7 @@ Separate events will be generated for “Registry” and “File system” polic
 | Job                     | Port         | FilterConnectionPort |                         |
 | ALPC Port               | Semaphore    | Adapter              |                         |
 
--   **Object Name: **
+-   **Object Name:**
 
     -   Key – if “Registry” Global Object Access Auditing policy was changed.
 
@@ -128,7 +128,7 @@ Separate events will be generated for “Registry” and “File system” polic
 
 -   **New Security Descriptor** \[Type = UnicodeString\]**:** the new Security Descriptor Definition Language (SDDL) value for the Global Object Access Auditing policy.
 
-> **Note**&nbsp;&nbsp;The ** Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
+> **Note**&nbsp;&nbsp;The **Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
 > 
 > Example:
 > 

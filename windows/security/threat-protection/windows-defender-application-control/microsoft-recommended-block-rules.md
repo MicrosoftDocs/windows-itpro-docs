@@ -1,15 +1,20 @@
 ---
 title: Microsoft recommended block rules (Windows 10)
-description: To help you plan and begin the initial test stages of a deployment of Microsoft Windows Defender Application Comntrol, this article outlines how to gather information, create a plan, and begin to create and test initial code integrity policies. 
-keywords: virtualization, security, malware
+description: To help you plan and begin the initial test stages of a deployment of Microsoft Windows Defender Application Control, this article outlines how to gather information, create a plan, and begin to create and test initial code integrity policies. 
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.date: 04/09/2019
-ms.reviewer: 
-manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: isbrahm
 ms.author: dansimp
+manager: dansimp
+ms.date: 04/09/2019
 ---
 
 # Microsoft recommended block rules
@@ -17,6 +22,7 @@ ms.author: dansimp
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
+-   Windows Server 2019
 
 Members of the security community<sup>\*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
 
@@ -68,8 +74,8 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 
 <br />
 
->[!Note]
->This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
+> [!Note]
+> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
 
 Certain software applications may allow additional code to run by design. 
 These types of applications should be blocked by your Windows Defender Application Control policy. 
@@ -87,7 +93,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
 - msxml6.dll
 - jscript9.dll
 
-Pick the correct version of each .dll for the Windows release you plan to support, and remove the other versions.
+Pick the correct version of each .dll for the Windows release you plan to support, and remove the other versions. Ensure that you also uncomment them in the signing scenarios section.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -149,6 +155,11 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="65535.65535.65535.65535" /> 
   <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="65535.65535.65535.65535" />   
   <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />  
+  <Deny ID="ID_DENY_MSBUILD_DLL" FriendlyName="MSBuild.dll" FileName="MSBuild.dll" MinimumFileVersion="65535.65535.65535.65535" />
+  <Deny ID="ID_DENY_DOTNET" FriendlyName="dotnet.exe" FileName="dotnet.exe" MinimumFileVersion="65535.65535.65535.65535" />
+  <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
+  <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
+
   <!-- msxml3.dll pick correct version based on release you are supporting -->
   <!-- msxml6.dll pick correct version based on release you are supporting -->     
   <!-- jscript9.dll pick correct version based on release you are supporting -->
@@ -882,9 +893,15 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <FileRuleRef RuleID="ID_DENY_WMIC"/>
   <FileRuleRef RuleID="ID_DENY_MWFC" /> 
   <FileRuleRef RuleID="ID_DENY_WFC" /> 
+  <!-- Uncomment the relevant line(s) below if you have uncommented them in the rule definitions above.
   <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
   <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
   <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
+  -->
+  <FileRuleRef RuleID="ID_DENY_MSBUILD_DLL" /> 
+  <FileRuleRef RuleID="ID_DENY_DOTNET" /> 
+  <FileRuleRef RuleID="ID_DENY_MS_BUILD" /> 
+  <FileRuleRef RuleID="ID_DENY_MS_BUILD_FMWK" /> 
   <FileRuleRef RuleID="ID_DENY_D_1"/>
   <FileRuleRef RuleID="ID_DENY_D_2"/> 
   <FileRuleRef RuleID="ID_DENY_D_3"/> 
@@ -1499,6 +1516,12 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <CiSigners /> 
   <HvciOptions>0</HvciOptions> 
   </SiPolicy>
-
-  ```
+```
 <br />
+
+> [!Note]
+> To create a policy that works on both Windows 10, version 1803 and version 1809, you can create two different policies, or merge them into one broader policy.
+
+## More information
+
+- [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md)

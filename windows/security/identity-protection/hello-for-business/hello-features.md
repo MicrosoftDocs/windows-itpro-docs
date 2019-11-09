@@ -9,8 +9,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -20,15 +20,10 @@ ms.date: 05/05/2018
 # Windows Hello for Business Features
 
 **Applies to:**
--   Windows 10
 
-Consider these additional features you can use after your organization deploys Windows Hello for Business. 
+- Windows 10
 
-- [Conditional access](#conditional-access)
-- [Dynamic lock](#dynamic-lock)
-- [PIN reset](#pin-reset)
-- [Dual Enrollment](#dual-enrollment)
-- [Remote Desktop with Biometrics](#remote-desktop-with-biometrics)
+Consider these additional features you can use after your organization deploys Windows Hello for Business.
 
 ## Conditional access 
 
@@ -54,7 +49,7 @@ Dynamic lock enables you to configure Windows 10 devices to automatically lock w
 
 The Group Policy Editor, when the policy is enabled, creates a default signal rule policy with the following value:
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >Microsoft recommends using the default values for this policy settings.  Measurements are relative based on the varying conditions of each environment.  Therefore, the same values may produce different results. Test policy settings in each environment prior to broadly deploying the setting. 
 
 ```
@@ -100,7 +95,7 @@ RSSI measurements are relative and lower as the bluetooth signals between the tw
 The Microsoft PIN reset services enables you to help users who have forgotten their PIN.  Using Group Policy, Microsoft Intune or a compatible MDM, you can configure Windows 10 devices to securely use the Microsoft PIN reset service that enables users to reset their forgotten PIN through settings or above the lock screen without requiring re-enrollment.
 
 >[!IMPORTANT]
-> The Microsoft PIN Reset service only works with Windows 10, version 1709 or later **Enterprise Edition**.  The feature does not work with the **Pro** edition.]
+> The Microsoft PIN Reset service only works with Windows 10, version 1709 or later **Enterprise Edition**.  The feature does not work with the **Pro** edition.
 
 #### Onboarding the Microsoft PIN reset service to your Intune tenant
 
@@ -147,7 +142,7 @@ To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 
 
 ### On-premises Deployments
 
-** Requirements**
+**Requirements**
 * Active Directory
 * On-premises Windows Hello for Business deployment
 * Reset from settings - Windows 10, version 1703, Professional
@@ -260,7 +255,8 @@ Users appreciate convenience of biometrics and administrators value the security
 ![WHFB Certificate GP Setting](images/rdpbio/rdpbiopolicysetting.png)
 
 > [!IMPORTANT]
-> The remote desktop with biometric feature does not work with [Dual Enrollment](#dual-enrollment) feature or scenarios where the user provides alternative credentials.  Microsoft continues to investigate supporting the feature.\
+> The remote desktop with biometric feature does not work with [Dual Enrollment](#dual-enrollment) feature or scenarios where the user provides alternative credentials.  Microsoft continues to investigate supporting the feature.
+
 
 ## Related topics
 

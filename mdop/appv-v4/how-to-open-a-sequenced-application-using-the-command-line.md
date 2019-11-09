@@ -1,15 +1,15 @@
 ---
 title: How to Open a Sequenced Application Using the Command Line
 description: How to Open a Sequenced Application Using the Command Line
-author: eavena
+author: dansimp
 ms.assetid: dc23ee65-8aea-470e-bb3f-a2f2b06cb241
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

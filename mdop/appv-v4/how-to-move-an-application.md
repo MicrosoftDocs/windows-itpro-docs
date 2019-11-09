@@ -1,15 +1,15 @@
 ---
 title: How to Move an Application
 description: How to Move an Application
-author: eavena
+author: dansimp
 ms.assetid: 3ebbf30c-b435-4a69-a0ba-2313aaf0017c
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

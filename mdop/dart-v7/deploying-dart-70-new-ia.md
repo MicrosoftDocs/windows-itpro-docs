@@ -1,15 +1,15 @@
 ---
 title: Deploying DaRT 7.0
 description: Deploying DaRT 7.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 7bc99bce-b94f-4074-ba88-986ed76f8a6c
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -1,15 +1,15 @@
 ---
 title: Understanding MBAM Reports
 description: Understanding MBAM Reports
-author: msfttracyp
+author: dansimp
 ms.assetid: 34e4aaeb-7f89-41a1-b816-c6fe8397b060
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
