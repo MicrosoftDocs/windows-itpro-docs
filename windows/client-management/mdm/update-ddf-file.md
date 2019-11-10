@@ -20,7 +20,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 The XML below is for Windows 10, version 1803.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -588,7 +588,7 @@ The XML below is for Windows 10, version 1803.
           </AccessType>
           <Description>
             Roll Back Latest Feature Update, if the machine meets the following conditions:
-            Condition 1: Device must be WUfB Connnected
+            Condition 1: Device must be WUfB Connected
             Condition 2: Device must be in Paused State
             Condition 3: Device must have the Latest Feature Update Installed on the device (Current State)
             Condition 4: Machine should be within the uninstall period
@@ -615,7 +615,7 @@ The XML below is for Windows 10, version 1803.
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Returns the result of last RollBack QualityUpdate opearation. </Description>
+          <Description>Returns the result of last RollBack QualityUpdate operation. </Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -637,7 +637,7 @@ The XML below is for Windows 10, version 1803.
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Returns the result of last RollBack FeatureUpdate opearation.</Description>
+          <Description>Returns the result of last RollBack FeatureUpdate operation.</Description>
           <DFFormat>
             <chr />
           </DFFormat>

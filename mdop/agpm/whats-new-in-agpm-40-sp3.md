@@ -30,7 +30,7 @@ AGPM 4.0 SP3 adds support for the Windows 10 and Windows Server 2016 operating
 
 ### Support for PowerShell
 
-AGPM 4.0 SP3 adds support for PowerShell cmdlets. For a list of the cmdlets available in AGPM 4.0 SP3, including descriptions and syntax, see [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](https://technet.microsoft.com/library/dn520245.aspx).
+AGPM 4.0 SP3 adds support for PowerShell cmdlets. For a list of the cmdlets available in AGPM 4.0 SP3, including descriptions and syntax, see [Microsoft Desktop Optimization Pack Automation with Windows PowerShell](https://docs.microsoft.com/powershell/mdop/get-started?view=win-mdop2-ps).
 
 ### Customer feedback and hotfix rollup
 
@@ -189,7 +189,7 @@ The following table describes the behavior of AGPM 4.0 SP3 Client and Server in
 ## How to Get MDOP Technologies
 
 
-AGPM 4.0 SP3 is a part of the Microsoft Desktop Optimization Pack (MDOP). MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
+AGPM 4.0 SP3 is a part of the Microsoft Desktop Optimization Pack (MDOP) since MDOP 2015. MDOP is part of Microsoft Software Assurance. For more information about Microsoft Software Assurance and acquiring MDOP, see [How Do I Get MDOP](https://go.microsoft.com/fwlink/?LinkId=322049) (https://go.microsoft.com/fwlink/?LinkId=322049).
 
 ## Related topics
 

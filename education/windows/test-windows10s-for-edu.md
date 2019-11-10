@@ -7,9 +7,9 @@ ms.prod: w10
 ms.pagetype: edu
 ms.sitesec: library
 ms.localizationpriority: medium
-author: mjcaparas
-ms.author: macapara
-ms.date: 04/30/2018
+author: dansimp
+ms.author: dansimp
+ms.date: 07/30/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -51,7 +51,7 @@ Due to these reasons, we recommend that you use the installation tool and avoid 
 Before you install Windows 10 in S mode on your existing Windows 10 Pro, Windows 10 Pro Education, Windows 10 Education, or Windows 10 Enterprise device:
 * Make sure that you updated your existing device to Windows 10, version 1703 (Creators Update).
 
-    See [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10) and follow the instructions to update your device to Windows 10, version 1703. You can verify your current version in **Settings > System > About**.
+    See [Download Windows 10](https://www.microsoft.com/software-download/windows10) and follow the instructions to update your device to Windows 10, version 1703. You can verify your current version in **Settings > System > About**.
 
 * Install the latest Windows Update.
 
@@ -90,7 +90,7 @@ Check with your device manufacturer before trying Windows 10 in S mode on your d
 | <a href="https://support.hp.com/us-en/document/c05588871" target="_blank">HP</a> | <a href="https://consumer.huawei.com/cn/support/notice/detail/index.htm?id=1541" target="_blank">Huawei</a> | <a href="https://www.i-life.us/not-available/" target="_blank">I Life</a> |
 | <a href="https://www.inet-tek.com/en/product-qadetail-86.html" target="_blank">iNET</a> | <a href="https://www.intel.com/content/www/us/en/support/boards-and-kits/000025096.html" target="_blank">Intel</a> | <a href="https://irbis-digital.ru/support/podderzhka-windows-10-s/" target="_blank">LANIT Trading</a> |
 | <a href="https://support.lenovo.com/us/en/solutions/ht504589" target="_blank">Lenovo</a> | <a href="https://www.lg.com/us/content/html/hq/windows10update/Win10S_UpdateInfo.html" target="_blank">LG</a> | <a href="https://www2.mouse-jp.co.jp/ssl/user_support2/info.asp?N_ID=361" target="_blank">MCJ</a> | 
-| <a href="https://support.linxtablets.com/WindowsSupport/Articles/Windows_10_S_Supported_Devices.aspx" target="_blank">Micro P/Exertis</a> | <a href="https://www.microsoft.com/surface/en-us/support/windows-and-office/surface-devices-that-work-with-windows-10-s" target="_blank">Microsoft</a> | <a href="https://www.msi.com/Landing/Win10S" target="_blank">MSI</a> | 
+| <a href="https://support.linxtablets.com/WindowsSupport/Articles/Windows_10_S_Supported_Devices.aspx" target="_blank">Micro P/Exertis</a> | <a href="https://support.microsoft.com/help/4094045/surface-devices-that-work-with-windows-10-s" target="_blank">Microsoft</a> | <a href="https://www.msi.com/Landing/Win10S" target="_blank">MSI</a> | 
 | <a href="https://panasonic.net/cns/pc/Windows10S/" target="_blank">Panasonic</a> | <a href="https://www.bangho.com.ar/windows10s" target="_blank">PC Arts</a> | <a href="https://www.positivoinformatica.com.br/atualizacao-windows-10" target="_blank">Positivo SA</a> | 
 | <a href="https://www.br.vaio.com/atualizacao-windows-10/" target="_blank">Positivo da Bahia</a> | <a href="https://www.samsung.com/us/support/windows10s/" target="_blank">Samsung</a> | <a href="https://www.teclast.com/zt/aboutwin10s/" target="_blank">Teclast</a> | 
 | <a href="https://www.dospara.co.jp/support/share.php?contents=about_windows10s" target="_blank">Thirdwave</a> | <a href="https://www.tongfangpc.com/service/win10.aspx" target="_blank">Tongfang</a> | <a href="https://win10upgrade.toshiba.com/win10s/information?region=TAIS&country=US&lang=en" target="_blank">Toshiba</a> | 
@@ -184,7 +184,7 @@ If you see this message, follow these steps to stop receiving the message:
 
 To use an installation media to reinstall Windows 10, follow these steps.
 
-1. On a working PC, go to the [Microsoft software download website](https://www.microsoft.com/en-us/software-download/windows10).
+1. On a working PC, go to the [Microsoft software download website](https://www.microsoft.com/software-download/windows10).
 2. Download the Media Creation Tool and then run it.
 3. Select **Create installation media for another PC**.
 4. Choose a language, edition, and architecture (64-bit or 32-bit).

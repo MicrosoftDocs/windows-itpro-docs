@@ -1,14 +1,14 @@
 ---
 title: What's new in Windows 10 Enterprise 2019 LTSC
 ms.reviewer: 
-manager: dansimp
-ms.author: macapara
+manager: laurawi
+ms.author: greglin
 description: New and updated IT Pro content about new features in Windows 10 Enterprise 2019 LTSC (also known as Windows 10 Enterprise 2019 LTSB).
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise 2019 LTSC"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mjcaparas
+author: greg-lindsay
 ms.localizationpriority: low
 ms.topic: article
 ---
@@ -24,10 +24,10 @@ This article lists new and updated features and content that are of interest to 
 >Features in Windows 10 Enterprise 2019 LTSC are equivalent to Windows 10, version 1809. 
 
 Windows 10 Enterprise LTSC 2019 builds on Windows 10 Pro, version 1809 adding premium features designed to address the needs of large and mid-size organizations (including large academic institutions), such as:
-   - Advanced protection against modern security threats 
-   - Full flexibility of OS deployment
-   - Updating and support options
-   - Comprehensive device and app management and control capabilities
+- Advanced protection against modern security threats 
+- Full flexibility of OS deployment
+- Updating and support options
+- Comprehensive device and app management and control capabilities
 
 The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC users because it includes the cumulative enhancements provided in Windows 10 versions 1703, 1709, 1803, and 1809. Details about these enhancements are provided below. 
 
@@ -36,8 +36,7 @@ The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC use
 
 ## Microsoft Intune
 
->Microsoft Intune supports LTSC 2019 and later. 
-
+>Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later.  This includes support for features such as [Windows Autopilot](#windows-autopilot). However, note that Windows Update for Business (WUfB) does not currently support any LTSC releases, therefore you should use WSUS or Configuration Manager for patching.
 
 ## Security
 
@@ -109,12 +108,12 @@ Endpoint detection and response is improved. Enterprise customers can now take a
   - [Take response actions on a file](/windows/threat-protection/windows-defender-atp/respond-file-alerts-windows-defender-advanced-threat-protection) - Quickly respond to detected attacks by stopping and quarantining files or blocking a file.
 
 Additional capabilities have been added to help you gain a holistic view on **investigations** include:
-   - [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics) - Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
-   - [Query data using Advanced hunting in Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)
-   - [Use Automated investigations to investigate and remediate threats](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)
-   - [Investigate a user account](/windows/threat-protection/windows-defender-atp/investigate-user-windows-defender-advanced-threat-protection) - Identify user accounts with the most active alerts and investigate cases of potential compromised credentials.
-   - [Alert process tree](/windows/threat-protection/windows-defender-atp/investigate-alerts-windows-defender-advanced-threat-protection#alert-process-tree) - Aggregates multiple detections and related events into a single view to reduce case resolution time.
-   - [Pull alerts using REST API](/windows/threat-protection/windows-defender-atp/pull-alerts-using-rest-api-windows-defender-advanced-threat-protection) - Use REST API to pull alerts from Windows Defender ATP.
+- [Threat analytics](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-analytics) - Threat Analytics is a set of interactive reports published by the Windows Defender ATP research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provides recommended actions to contain, increase organizational resilience, and prevent specific threats.
+- [Query data using Advanced hunting in Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection)
+- [Use Automated investigations to investigate and remediate threats](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection)
+- [Investigate a user account](/windows/threat-protection/windows-defender-atp/investigate-user-windows-defender-advanced-threat-protection) - Identify user accounts with the most active alerts and investigate cases of potential compromised credentials.
+- [Alert process tree](/windows/threat-protection/windows-defender-atp/investigate-alerts-windows-defender-advanced-threat-protection#alert-process-tree) - Aggregates multiple detections and related events into a single view to reduce case resolution time.
+- [Pull alerts using REST API](/windows/threat-protection/windows-defender-atp/pull-alerts-using-rest-api-windows-defender-advanced-threat-protection) - Use REST API to pull alerts from Windows Defender ATP.
 
 Other enhanced security features include:
 - [Check sensor health state](/windows/threat-protection/windows-defender-atp/check-sensor-status-windows-defender-advanced-threat-protection) - Check an endpoint's ability to provide sensor data and communicate with the Windows Defender ATP service and fix known issues.
@@ -168,7 +167,7 @@ This is an update to the [BitLocker CSP](https://docs.microsoft.com/windows/clie
 
 This feature will soon be enabled on Olympia Corp as an optional feature.
 
-####  Delivering BitLocker policy to AutoPilot devices during OOBE 
+#### Delivering BitLocker policy to AutoPilot devices during OOBE 
 
 You can choose which encryption algorithm to apply to BitLocker encryption capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before BitLocker encryption begins. 
 
@@ -279,33 +278,6 @@ To learn more about Autopilot self-deploying mode and to see step-by-step instru
 
 IT Pros can use Autopilot Reset to quickly remove personal files, apps, and settings. A custom login screen is available from the lock screen that enables you to apply original settings and management enrollment (Azure Active Directory and device management) so that devices are returned to a fully configured, known, IT-approved state and ready to use. For more information, see [Reset devices with Autopilot Reset](https://docs.microsoft.com/education/windows/autopilot-reset).
 
-## Sign-in
-
-### Faster sign-in to a Windows 10 shared pc
-
-If you have shared devices deployed in your work place, **Fast sign-in** enables users to sign in to a [shared Windows 10 PC](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) in a flash!
-
-**To enable fast sign-in:**
-1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise 2019 LTSC.
-2. Set the Policy CSP, and the **Authentication** and **EnableFastFirstSignIn** policies to enable fast sign-in.
-3. Sign-in to a shared PC with your account. You'll notice the difference!
-
-    ![fast sign-in](../images/fastsignin.png "fast sign-in")
-
-### Web sign-in to Windows 10
-
-Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing “web sign-in,” a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
-
-**To try out web sign-in:**
-1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
-2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
-3. On the lock screen, select web sign-in under sign-in options.
-4. Click the “Sign in” button to continue.
-
-![Web sign-in](../images/websignin.png "web sign-in")
-
-## Deployment
-
 ### MBR2GPT.EXE
 
 MBR2GPT.EXE is a new command-line tool introduced with Windows 10, version 1703 and also available in Windows 10 Enterprise 2019 LTSC (and later versions). MBR2GPT converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
@@ -315,10 +287,6 @@ The GPT partition format is newer and enables the use of larger and more disk pa
 Additional security features of Windows 10 that are enabled when you boot in UEFI mode include: Secure Boot, Early Launch Anti-malware (ELAM) driver, Windows Trusted Boot, Measured Boot, Device Guard, Credential Guard, and BitLocker Network Unlock.
 
 For details, see [MBR2GPT.EXE](/windows/deployment/mbr-to-gpt).
-
-### Windows Autopilot
-
-Information about Windows Autopilot support for LTSC 2019 is pending.
 
 ### DISM
 
@@ -371,6 +339,31 @@ Portions of the work done during the offline phases of a Windows update have bee
 [SetupDiag](https://docs.microsoft.com/windows/deployment/upgrade/setupdiag) is a new command-line tool that can help diagnose why a Windows 10 update failed.
 
 SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
+
+## Sign-in
+
+### Faster sign-in to a Windows 10 shared pc
+
+If you have shared devices deployed in your work place, **Fast sign-in** enables users to sign in to a [shared Windows 10 PC](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) in a flash!
+
+**To enable fast sign-in:**
+1. Set up a shared or guest device with Windows 10, version 1809 or Windows 10 Enterprise 2019 LTSC.
+2. Set the Policy CSP, and the **Authentication** and **EnableFastFirstSignIn** policies to enable fast sign-in.
+3. Sign-in to a shared PC with your account. You'll notice the difference!
+
+    ![fast sign-in](../images/fastsignin.png "fast sign-in")
+
+### Web sign-in to Windows 10
+
+Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing “web sign-in,” a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
+
+**To try out web sign-in:**
+1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
+2. Set the Policy CSP, and the Authentication and EnableWebSignIn polices to enable web sign-in. 
+3. On the lock screen, select web sign-in under sign-in options.
+4. Click the “Sign in” button to continue.
+
+![Web sign-in](../images/websignin.png "web sign-in")
 
 ## Windows Analytics
 

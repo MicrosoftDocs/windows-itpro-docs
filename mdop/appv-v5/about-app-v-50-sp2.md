@@ -1,7 +1,7 @@
 ---
 title: About App-V 5.0 SP2
 description: About App-V 5.0 SP2
-author: manikadhiman
+author: dansimp
 ms.assetid: 16ca8452-cef2-464e-b4b5-c10d4630fa6a
 ms.reviewer: 
 manager: dansimp

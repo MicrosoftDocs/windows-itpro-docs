@@ -3,12 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: virtualization
 description: Virtualization and compatibility with Internet Explorer 11
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: b0388c04-2584-4b6d-a7a8-4e0476773a80
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Virtualization and compatibility with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

@@ -71,4 +71,4 @@ For more information about this design:
 
 -   For a list of detailed tasks that you can use to deploy your basic firewall policy design, see [Checklist: Implementing a Basic Firewall Policy Design](checklist-implementing-a-basic-firewall-policy-design.md).
 
-**Next: **[Domain Isolation Policy Design](domain-isolation-policy-design.md)
+**Next:** [Domain Isolation Policy Design](domain-isolation-policy-design.md)

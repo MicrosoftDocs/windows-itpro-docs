@@ -1,15 +1,15 @@
 ---
 title: How to Generate MBAM Reports
 description: How to Generate MBAM Reports
-author: msfttracyp
+author: dansimp
 ms.assetid: cdf4ae76-040c-447c-8736-c9e57068d221
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

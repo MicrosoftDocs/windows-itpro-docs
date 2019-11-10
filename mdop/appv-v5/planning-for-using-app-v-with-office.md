@@ -1,11 +1,11 @@
 ---
 title: Planning for Using App-V with Office
 description: Planning for Using App-V with Office
-author: msfttracyp
+author: dansimp
 ms.assetid: c4371869-4bfc-4d13-9198-ef19f99fc192
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

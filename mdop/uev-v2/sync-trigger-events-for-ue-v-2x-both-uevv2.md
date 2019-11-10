@@ -1,11 +1,11 @@
 ---
 title: Sync Trigger Events for UE-V 2.x
 description: Sync Trigger Events for UE-V 2.x
-author: levinec
+author: dansimp
 ms.assetid: 4ed71a13-6a4f-4376-996f-74b126536bbc
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

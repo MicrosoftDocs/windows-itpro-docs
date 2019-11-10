@@ -1,15 +1,15 @@
 ---
 title: Installation Report Page (Learn More)
 description: Installation Report Page (Learn More)
-author: eavena
+author: dansimp
 ms.assetid: 499cf4db-a39c-4dcf-b1cf-85fd7da11701
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

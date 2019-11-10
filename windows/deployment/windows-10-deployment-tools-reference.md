@@ -4,11 +4,11 @@ description: Learn about the tools available to deploy Windows 10.
 ms.assetid: 5C4B0AE3-B2D0-4628-9E73-606F3FAA17BB
 ms.reviewer: 
 manager: laurawi
-ms.author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 07/12/2017
 ms.topic: article
 ---

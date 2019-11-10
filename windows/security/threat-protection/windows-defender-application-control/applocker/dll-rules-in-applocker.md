@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # DLL rules in AppLocker
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic describes the file formats and available default rules for the DLL rule collection.
 
@@ -41,9 +41,11 @@ The following table lists the default rules that are available for the DLL rule 
 | Allow all users to run DLLs in the Program Files folder | (Default Rule) All DLLs located in the Program Files folder| 
 | Everyone | Path: %programfiles%\*| 
  
-> **Important:**  If you use DLL rules, a DLL allow rule has to be created for each DLL that is used by all of the allowed apps
-> 
-> **Caution:**  When DLL rules are used, AppLocker must check each DLL that an app loads. Therefore, users may experience a reduction in performance if DLL rules are used.
+> [!IMPORTANT]
+> If you use DLL rules, a DLL allow rule has to be created for each DLL that is used by all of the allowed apps
+
+> [!CAUTION]
+> When DLL rules are used, AppLocker must check each DLL that an app loads. Therefore, users may experience a reduction in performance if DLL rules are used.
  
 ## Related topics
 

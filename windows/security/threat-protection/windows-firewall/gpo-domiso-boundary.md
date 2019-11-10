@@ -48,4 +48,4 @@ Copy the firewall rules for the boundary zone from the GPO that contains the fir
 
 Make sure that the GPO that contains firewall rules for the isolated domain does not also apply to the boundary zone to prevent overlapping, and possibly conflicting rules.
 
-**Next: **[Encryption Zone GPOs](encryption-zone-gpos.md)
+**Next:** [Encryption Zone GPOs](encryption-zone-gpos.md)

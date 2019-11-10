@@ -7,10 +7,10 @@ manager: dansimp
 keywords: Setup worksheet, pre-setup, first-time setup
 ms.prod: surface-hub
 ms.sitesec: library
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.topic: article
-ms.date: 07/27/2017
+ms.date: 06/20/2019
 ms.localizationpriority: medium
 ---
 

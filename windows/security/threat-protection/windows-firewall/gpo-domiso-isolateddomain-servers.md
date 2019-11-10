@@ -31,5 +31,5 @@ Because so many of the settings and rules for this GPO are common to those in th
 
     >**Important:**  Windows Vista and Windows Server 2008 support only one network location profile at a time. The profile for the least secure network type is applied to the device. If you attach a network adapter to a device that is not physically connected to a network, the public network location type is associated with the network adapter and applied to the device.
 
-**Next: **[Boundary Zone GPOs](boundary-zone-gpos.md)
+**Next:** [Boundary Zone GPOs](boundary-zone-gpos.md)
 

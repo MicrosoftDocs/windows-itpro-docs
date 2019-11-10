@@ -1,15 +1,15 @@
 ---
 title: Deploying the DaRT 7.0 Recovery Image
 description: Deploying the DaRT 7.0 Recovery Image
-author: msfttracyp
+author: dansimp
 ms.assetid: 6bba7bff-800f-44e4-bcfc-e143115607ca
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

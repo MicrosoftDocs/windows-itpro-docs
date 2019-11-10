@@ -4,7 +4,7 @@ description: BrowserFavorite CSP
 ms.assetid: 5d2351ff-2d6a-4273-9b09-224623723cbf
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -49,7 +49,7 @@ Optional. Specifies the complete URL for the favorite.
 
 Adding a new browser favorite.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <wap-provisioningdoc>
   <characteristic type="BrowserFavorite">

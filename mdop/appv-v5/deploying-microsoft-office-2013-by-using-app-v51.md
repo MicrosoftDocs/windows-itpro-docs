@@ -704,7 +704,7 @@ To exclude specific Office applications (for example, Access and InfoPath) when 
         <Description />
       </VisualElements>
     </Application>
-    <Application Id="[{AppVPackageRoot}]\officel5\lync.exe" Enabled="true">
+    <Application Id="[{AppVPackageRoot}]\office15\lync.exe" Enabled="true">
       <VisualElements>
         <Name>Lync 2013</Name>
         <Icon />
@@ -746,10 +746,10 @@ You may want to disable shortcuts for certain Office applications instead of unp
            <Arguments />
            <WorkingDirectory />
            <AppuserModelId>Microsoft.Office.MSACCESS.EXE.15</AppUserModelId>
-           <AppUsermodelExcludeFroeShowInNewInstall>true</AppUsermodelExcludeFroeShowInNewInstall>
+           <AppUserModelExcludeFromShowInNewInstall>true</AppUserModelExcludeFromShowInNewInstall>
            <Description>Build a professional app quickly to manage data.</Description>
            <ShowCommand>l</ShowCommand>
-           <ApplicationId>[{AppVPackageRoot}]\officel5\MSACCESS.EXE</ApplicationId>
+           <ApplicationId>[{AppVPackageRoot}]\office15\MSACCESS.EXE</ApplicationId>
         </Shortcut>
     ```
 

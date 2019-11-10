@@ -1,11 +1,11 @@
 ---
 title: Performing Editor Tasks
 description: Performing Editor Tasks
-author: mjcaparas
+author: dansimp
 ms.assetid: d4ac3277-2557-41cf-ac90-5adb6c30687c
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

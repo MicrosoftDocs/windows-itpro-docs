@@ -49,7 +49,7 @@ The Microsoft Defender ATP service utilizes state of the art data protection tec
 
 There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Microsoft Defender ATP service, see [Azure encryption overview](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). 
 
-In all scenarios, data is encrypted using 256-bit [AES encyption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) at the minimum.
+In all scenarios, data is encrypted using 256-bit [AES encryption](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) at the minimum.
 
 
 ## Do I have the flexibility to select where to store my data?
@@ -80,7 +80,7 @@ No. Customer data is isolated from other customers and is not shared. However, i
 You can choose the data retention policy for your data. This determines how long Window Defender ATP will store your data. There’s a flexibility of choosing in the range of 1 month to six months to meet your company’s regulatory compliance needs.
 
 **At contract termination or expiration**<br>
-Your data will be kept and will be available to you while the licence is under grace period or suspended mode. At the end of this period, that data will be erased from Microsoft’s systems to make it unrecoverable, no later than 180 days from contract termination or expiration.
+Your data will be kept and will be available to you while the license is under grace period or suspended mode. At the end of this period, that data will be erased from Microsoft’s systems to make it unrecoverable, no later than 180 days from contract termination or expiration.
 
 
 ## Can Microsoft help us maintain regulatory compliance?
@@ -90,6 +90,6 @@ Microsoft Defender ATP for Government (soon to be in preview) is currently under
 
 By providing customers with compliant, independently-verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run.
 
-For more information on the Microsoft Defender ATP ISO certification reports, see [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001). 
+For more information on the Microsoft Defender ATP ISO certification reports, see [Microsoft Trust Center](https://www.microsoft.com/trustcenter/compliance/iso-iec-27001). 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-datastorage-belowfoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-datastorage-belowfoldlink) 

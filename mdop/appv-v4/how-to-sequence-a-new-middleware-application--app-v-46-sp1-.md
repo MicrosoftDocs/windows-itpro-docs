@@ -1,15 +1,15 @@
 ---
 title: How to Sequence a New Middleware Application (App-V 4.6 SP1)
 description: How to Sequence a New Middleware Application (App-V 4.6 SP1)
-author: eavena
+author: dansimp
 ms.assetid: 304045c2-5e5e-4c91-b59e-a91fdf2500fb
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

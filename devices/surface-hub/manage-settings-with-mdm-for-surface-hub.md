@@ -46,7 +46,9 @@ You can enroll your Surface Hubs using bulk, manual, or automatic enrollment.
 
 Surface Hub now supports the ability to automatically enroll in Intune by joining the device to Azure Active Directory. 
 
-For more information, see [Enable Windows 10 automatic enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment).
+First step is to set up Automatic MDM enrollment. See [Enable Windows 10 automatic enrollment](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment).
+
+Then, when devices are setup during First-run, pick the option to join to Azure Active Directory, see [Set up admins for this device page](https://docs.microsoft.com/surface-hub/first-run-program-surface-hub#set-up-admins-for-this-device-page)
 
 ## Manage Surface Hub settings with MDM
 
@@ -140,7 +142,7 @@ The following tables include info on Windows 10 settings that have been validate
 |      Setting      |                                              Details                                               |                                                     CSP reference                                                      |            Supported with<br>Intune?             |    Supported with<br>Configuration Manager?     | Supported with<br>SyncML\*? |
 |-------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
 | Defender policies |            Use to configure various Defender settings, including a scheduled scan time.            | Defender/*`<name of policy>`* <br> See [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) | Yes <br> [Use a custom policy.](#example-intune) | Yes.<br> [Use a custom setting.](#example-sccm) |             Yes             |
-|  Defender status  | Use to initiate a Defender scan, force a Security intelligence update, query any threats detected. |                   [Defender CSP](https://msdn.microsoft.com/library/windows/hardware/mt187856.aspx)                    |                       No.                        |                       No.                       |             Yes             |
+|  Defender status  | Use to initiate a Defender scan, force a Security intelligence update, query any threats detected. |                   [Defender CSP](https://msdn.microsoft.com/library/windows/hardware/mt187856.aspx)                    |                       Yes                        |                       Yes                       |             Yes             |
 
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 

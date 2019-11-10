@@ -1,15 +1,15 @@
 ---
 title: How to Test URL Redirection
 description: How to Test URL Redirection
-author: levinec
+author: dansimp
 ms.assetid: 38d80088-da1d-4098-b27e-76f9e78f81dc
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 11/01/2016
 ---
 

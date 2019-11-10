@@ -28,7 +28,7 @@ ms.date: 12/11/2018
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 <span id="sccm1606"/>
 ## Onboard Windows 10 machines using System Center Configuration Manager (current branch) version 1606
@@ -36,6 +36,8 @@ System Center Configuration Manager (SCCM) (current branch) version 1606, has UI
 
 >[!NOTE]
 > If you’re using SCCM client version 1606 with server version 1610 or above, you must upgrade the client version to match the server version.
+> Starting with version 1606 of Configuration Manager, see [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/sccm/protect/deploy-use/windows-defender-advanced-threat-protection) for ATP configuration.
+
 
 <span id="sccm1602"/>
 ## Onboard Windows 10 machines using System Center Configuration Manager earlier versions
@@ -103,7 +105,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same machine at the same time, otherwise this will cause unpredictable collisions.
 
-1.	Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Get the offboarding package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     a. In the navigation pane, select **Settings** >  **Offboarding**.
 
@@ -113,7 +115,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
     
     d. Click **Download package**, and save the .zip file.
 
-2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 3. Deploy the package by following the steps in the [Packages and Programs in Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs) topic.
 

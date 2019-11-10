@@ -1,15 +1,15 @@
 ---
 title: How to Deploy the DaRT Recovery Image Using a USB Flash Drive
 description: How to Deploy the DaRT Recovery Image Using a USB Flash Drive
-author: msfttracyp
+author: dansimp
 ms.assetid: 5b7aa843-731e-47e7-b5f9-48d08da732d6
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

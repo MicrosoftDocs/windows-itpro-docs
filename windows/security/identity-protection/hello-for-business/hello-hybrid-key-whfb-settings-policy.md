@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: dulcemontemayor
-ms.author: dolmont
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -26,7 +26,7 @@ ms.reviewer:
 
 ## Policy Configuration
 
-You need a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45520).
+You need a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
 Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1703.
 
 Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10 Creators Edition (1703) to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows) for more information.
@@ -46,26 +46,26 @@ To continue automatic enrollment and renewal of domain controller certificates t
 
 Sign-in a domain controller or management workstations with _Domain Admin_ equivalent credentials.
 
-1.	Start the **Group Policy Management Console** (gpmc.msc)
-2.	Expand the domain and select the **Group Policy Object** node in the navigation pane.
-3.	Right-click **Group Policy object** and select **New**
-4.	Type *Domain Controller Auto Certificate Enrollment* in the name box and click **OK**.
-5.	Right-click the **Domain Controller Auto Certificate Enrollment** Group Policy object and click **Edit**.
-6.	In the navigation pane, expand **Policies** under **Computer Configuration**.
-7.	Expand **Windows Settings**, **Security Settings**, and click **Public Key Policies**.
-8.	In the details pane, right-click **Certificate Services Client � Auto-Enrollment** and select **Properties**.
-9.	Select **Enabled** from the **Configuration Model** list.
-10.	Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
-11.	Select the **Update certificates that use certificate templates** check box.
-12.	Click **OK**. Close the **Group Policy Management Editor**.
+1. Start the **Group Policy Management Console** (gpmc.msc)
+2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
+3. Right-click **Group Policy object** and select **New**
+4. Type *Domain Controller Auto Certificate Enrollment* in the name box and click **OK**.
+5. Right-click the **Domain Controller Auto Certificate Enrollment** Group Policy object and click **Edit**.
+6. In the navigation pane, expand **Policies** under **Computer Configuration**.
+7. Expand **Windows Settings**, **Security Settings**, and click **Public Key Policies**.
+8. In the details pane, right-click **Certificate Services Client � Auto-Enrollment** and select **Properties**.
+9. Select **Enabled** from the **Configuration Model** list.
+10. Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
+11. Select the **Update certificates that use certificate templates** check box.
+12. Click **OK**. Close the **Group Policy Management Editor**.
 
 #### Deploy the Domain Controller Auto Certificate Enrollment Group Policy Object
 
 Sign-in a domain controller or management workstations with _Domain Admin_ equivalent credentials.
 
-1.	Start the **Group Policy Management Console** (gpmc.msc)
-2.	In the navigation pane, expand the domain and expand the node that has your Active Directory domain name.  Right-click the **Domain Controllers** organizational unit and click **Link an existing GPO�**
-3.	In the **Select GPO** dialog box, select **Domain Controller Auto Certificate Enrollment** or the name of the domain controller certificate enrollment Group Policy object you previously created and click **OK**.
+1. Start the **Group Policy Management Console** (gpmc.msc)
+2. In the navigation pane, expand the domain and expand the node that has your Active Directory domain name.  Right-click the **Domain Controllers** organizational unit and click **Link an existing GPO�**
+3. In the **Select GPO** dialog box, select **Domain Controller Auto Certificate Enrollment** or the name of the domain controller certificate enrollment Group Policy object you previously created and click **OK**.
 
 >[!IMPORTANT]
 >If you don't find options in GPO, you have to load the [PolicyDefinitions folder](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra). 

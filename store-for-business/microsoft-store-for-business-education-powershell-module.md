@@ -72,7 +72,7 @@ To authorize the PowerShell module, run this command. You'll need to sign-in wit
 
 Grant-MSStoreClientAppAccess
 ```
-You will be promted to sign in with your work or school account and then to authorize the PowerShell Module to access your **Microsoft Store for Business and Education** account. Once the module has been imported into the current PowerShell session and authorized to call into your **Microsoft Store for Business and Education** account, Azure PowerShell cmdlets are loaded and ready to be used.
+You will be prompted to sign in with your work or school account and then to authorize the PowerShell Module to access your **Microsoft Store for Business and Education** account. Once the module has been imported into the current PowerShell session and authorized to call into your **Microsoft Store for Business and Education** account, Azure PowerShell cmdlets are loaded and ready to be used.
 
 ## View items in Products and Services
 Service management should encounter no breaking changes as a result of the separation of Azure Service Management and **Microsoft Store for Business and Education PowerShell** preview.

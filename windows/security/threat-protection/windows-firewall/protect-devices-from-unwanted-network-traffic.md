@@ -47,4 +47,4 @@ The following component is recommended for this deployment goal:
 
 Other means of deploying a firewall policy are available, such as creating scripts that use the netsh command-line tool, and then running those scripts on each computer in the organization. This guide uses Active Directory as a recommended means of deployment because of its ability to scale to very large organizations.
 
-**Next: **[Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)
+**Next:** [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)

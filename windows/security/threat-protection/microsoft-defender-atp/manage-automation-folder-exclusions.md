@@ -26,7 +26,7 @@ ms.topic: article
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automationexclusionfolder-abovefoldlink)
 
 Automation folder exclusions allow you to specify folders that the Automated investigation will skip. 
 
@@ -80,5 +80,5 @@ You can specify the file names that you want to be excluded in a specific direct
 
 
 ## Related topics
-- [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list.md)
+- [Manage automation allowed/blocked lists](manage-indicators.md)
 - [Manage automation file uploads](manage-automation-file-uploads.md)

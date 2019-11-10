@@ -68,8 +68,8 @@ The user agent string for the browser cannot be modified. By default, the string
 
 `Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; <Manufacturer>; <Device>) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Mobile Safari/537.36 Edge/12.10166` 
 
-- <Manufacturer> is automatically replaced with the OEM name. This is the same as the PhoneManufacturer setting value that is set as part of the customization Phone metadata in DeviceTargetingInfo.
-- <Device> is replaced with the device name or phone name. This is the same as the PhoneModelName setting value that is set as part of the customization Phone metadata in DeviceTargetingInfo.
+- `<Manufacturer>` is automatically replaced with the OEM name. This is the same as the PhoneManufacturer setting value that is set as part of the customization Phone metadata in DeviceTargetingInfo.
+- `<Device>` is replaced with the device name or phone name. This is the same as the PhoneModelName setting value that is set as part of the customization Phone metadata in DeviceTargetingInfo.
 
 
 **Limitations and restrictions:**

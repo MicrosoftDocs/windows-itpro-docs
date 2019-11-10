@@ -1,11 +1,11 @@
 ---
 title: Planning for Migrating from a Previous Version of App-V
 description: Planning for Migrating from a Previous Version of App-V
-author: msfttracyp
+author: dansimp
 ms.assetid: d4ca8f09-86fd-456f-8ec2-242ff94ae9a0
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

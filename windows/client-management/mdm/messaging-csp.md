@@ -55,7 +55,7 @@ The following diagram shows the Messaging configuration service provider in tree
 
 **SyncML example**
 
-``` syntax
+```xml
  <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>

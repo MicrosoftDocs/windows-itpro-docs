@@ -1,15 +1,15 @@
 ---
 title: How to Sequence an Application
 description: How to Sequence an Application
-author: eavena
+author: dansimp
 ms.assetid: bd643dd6-dbf6-4469-bc70-c43ad9c69da9
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

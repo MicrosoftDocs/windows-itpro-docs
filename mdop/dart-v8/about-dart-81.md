@@ -1,15 +1,15 @@
 ---
 title: About DaRT 8.1
 description: About DaRT 8.1
-author: msfttracyp
+author: dansimp
 ms.assetid: dcaddc57-0111-4a9d-8be9-f5ada0eefa7d
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

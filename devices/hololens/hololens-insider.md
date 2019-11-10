@@ -10,15 +10,15 @@ ms.localizationpriority: medium
 ms.date: 10/23/2018
 ms.reviewer: 
 manager: dansimp
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
 ---
 
 # Insider preview for Microsoft HoloLens
 
 Welcome to the latest Insider Preview builds for HoloLens!  It’s simple to get started and provide valuable feedback for our next major operating system update for HoloLens. 
  
-
- 
-<span id="get-insider" />
 ## How do I install the Insider builds? 
  
 On a device running the Windows 10 April 2018 Update, go to <strong>Settings -&gt; Update &amp; Security -&gt; Windows Insider Program</strong> and select <strong>Get started</strong>. Link the account you used to register as a Windows Insider. 

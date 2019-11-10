@@ -1,15 +1,15 @@
 ---
 title: How to Upgrade a Virtual Application Package (App-V 4.6)
 description: How to Upgrade a Virtual Application Package (App-V 4.6)
-author: eavena
+author: dansimp
 ms.assetid: 3566227e-f3dc-4c32-af1f-e0211588118c
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

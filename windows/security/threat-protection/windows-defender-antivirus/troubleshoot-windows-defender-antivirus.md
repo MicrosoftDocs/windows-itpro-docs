@@ -57,8 +57,7 @@ The table in this section lists the main Windows Defender Antivirus event IDs an
 
 
 
-<style type='text/css'> table.oridealign td,th { vertical-align: top; text-align: left; } </style>
- <table class="oridealign"> 
+<table> 
 <tr>
 <th colspan="2" >Event ID: 1000</th>
 </tr>
@@ -1488,7 +1487,7 @@ Symbolic name:
 Message:
 </td>
 <td >
-<b>The antimalware definition update failed. 
+<b>The security intelligence update failed. 
 </b>
 </td>
 </tr>
@@ -1499,12 +1498,12 @@ Description:
 <td >
 Windows Defender Antivirus has encountered an error trying to update signatures.
 <dl>
-<dt>New Signature Version: &lt;New version number&gt;</dt>
-<dt>Previous Signature Version: &lt;Previous signature version&gt;</dt>
+<dt>New security intelligence version: &lt;New version number&gt;</dt>
+<dt>Previous security intelligence version: &lt;Previous version&gt;</dt>
 <dt>Update Source: &lt;Update source&gt;, for example:
 <ul>
-<li>Signature update folder</li>
-<li>Internal definition update server</li>
+<li>Security intelligence update folder</li>
+<li>Internal security intelligence update server</li>
 <li>Microsoft Update Server</li>
 <li>File share</li>
 <li>Microsoft Malware Protection Center (MMPC)</li>
@@ -1687,7 +1686,7 @@ The Windows Defender Antivirus client attempted to download and install the late
 To troubleshoot this event:
 <ol>
 <li>Restart the computer and try again.</li>
-<li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Windows Defender Security Intelligence site</a>.
+<li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Microsoft Security Intelligence site</a>.
 Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
 </li>
 <li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
@@ -2716,7 +2715,7 @@ This section provides the following information about Windows Defender Antivirus
 Use the information in these tables to help troubleshoot Windows Defender Antivirus error codes.
 
 
- <table class="oridealign"> 
+<table> 
 <tr>
 <th colspan="2">Error code: 0x80508007</th>
 </tr>
@@ -2758,7 +2757,7 @@ This error indicates that there might be a problem with your security product.
 <li>Update the definitions. Either:<ol>
 <li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender Antivirus. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender Antivirus"/>Or,
 </li>
-<li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Windows Defender Security Intelligence site</a>.
+<li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Microsoft Security Intelligence site</a>.
 Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
 </li>
 </ol>
@@ -2916,7 +2915,7 @@ The following error codes are used during internal testing of Windows Defender A
 If you see these errors, you can try to [update definitions](manage-updates-baselines-windows-defender-antivirus.md) and force a rescan directly on the endpoint.
 
 
-<table class="oridealign"> 
+<table> 
 <tr>
 <th colspan="3">Internal error codes</th>
 </tr>

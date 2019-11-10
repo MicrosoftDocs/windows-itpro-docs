@@ -240,5 +240,6 @@
 ###### [AGPM Server Connection Settings](agpm-server-connection-settings.md)
 ###### [Feature Visibility Settings](feature-visibility-settings.md)
 ##### [Other Enhancements to the GPMC](other-enhancements-to-the-gpmc.md)
+## [Troubleshooting AGPM Upgrades](troubleshooting-agpm40-upgrades.md)
 ## [Resources for AGPM](resources-for-agpm.md)
 

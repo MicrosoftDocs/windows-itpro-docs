@@ -105,7 +105,7 @@ After the previous package is sent, the unenrollment process begins.
 
 When the server initiates disconnection, all undergoing sessions for the enrollment ID are aborted immediately to avoid deadlocks. The server will not get a response for the unenrollment, instead a generic alert notification is sent with messageid=1.
 
-``` syntax
+```xml
 <Alert>
       <CmdID>4</CmdID>
       <Data>1226</Data>

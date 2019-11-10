@@ -1,16 +1,16 @@
 ---
 title: Technical Reference for DaRT 8.0
 description: Technical Reference for DaRT 8.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 1d0bf98b-b56b-4ce6-ad19-eb85e1ff1287
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
-ms.date: 06/16/2016
+ms.prod: w10
+ms.date: 10/03/2016
 ---
 
 
@@ -22,7 +22,7 @@ This section includes technical reference information about Microsoft Diagnostic
 ## Technical reference
 
 
--   [Microsoft Diagnostics and Recovery Toolset (DaRT) users should use Windows Defender Offline (WDO) for malware detection](microsoft-diagnostics-and-recovery-toolset--dart--users-should-use-windows-defender-offline--wdo--for-malware-detection.md)
+[Microsoft Diagnostics and Recovery Toolset (DaRT) users should use Windows Defender Offline (WDO) for malware detection-->](use-windows-defender-offline-wdo-for-malware-protection-not-dart.md)
 
     Environments with the Microsoft Diagnostics and Recovery Toolset (DaRT) Defender tool deployed should instead use the Windows Defender Offline (WDO) protection image for malware detection.
 

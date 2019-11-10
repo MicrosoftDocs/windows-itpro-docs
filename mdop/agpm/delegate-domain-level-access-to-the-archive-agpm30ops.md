@@ -1,11 +1,11 @@
 ---
 title: Delegate Domain-Level Access to the Archive
 description: Delegate Domain-Level Access to the Archive
-author: mjcaparas
+author: dansimp
 ms.assetid: d232069e-71d5-4b4d-b22e-bef11de1cfd4
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

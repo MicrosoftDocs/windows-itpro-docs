@@ -145,8 +145,8 @@ If the computer is no longer frozen and now is running in a good state, use the 
 
 Use the Dump Check Utility (Dumpchk.exe) to read a memory dump file or verify that the file was created correctly. You can use the Microsoft DumpChk (Crash Dump File Checker) tool to verify that the memory dump files are not corrupted or invalid. 
 
--	[Using DumpChk]( https://docs.microsoft.com/windows-hardware/drivers/debugger/dumpchk)
--	[Download DumpCheck](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
+- [Using DumpChk]( https://docs.microsoft.com/windows-hardware/drivers/debugger/dumpchk)
+- [Download DumpCheck](https://developer.microsoft.com/windows/downloads/windows-10-sdk)
 
 Learn how to use Dumpchk.exe to check your dump files: 
 
@@ -204,7 +204,7 @@ If the physical computer is still running in a frozen state, follow these steps 
 
    2. From a remote computer that is preferably in the same network and subnet, go to **Registry Editor** \> **Connect Network Registry**. Then, connect to the concerned computer, and verify the following settings: 
 
-      * ` `*HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\CrashDumpEnabled`   
+      * `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\CrashDumpEnabled`   
 
          Make sure that the [CrashDumpEnabled](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/cc976050(v=technet.10)) registry entry is `1`.            
 

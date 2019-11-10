@@ -38,7 +38,7 @@ Package Full Name of the App that needs be launched in the background. This can 
 
 **Set StartupAppID**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>      
         <Replace>
@@ -60,7 +60,7 @@ Package Full Name of the App that needs be launched in the background. This can 
 
 **Get all background tasks**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>      
         <Get>
@@ -78,7 +78,7 @@ Package Full Name of the App that needs be launched in the background. This can 
 
 **Add background task**
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>      
         <Add>

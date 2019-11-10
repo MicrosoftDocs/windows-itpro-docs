@@ -3,12 +3,12 @@ ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Administrative templates and Internet Explorer 11
-author: eavena
+author: dansimp
 ms.prod: ie11
 ms.assetid: 2b390786-f786-41cc-bddc-c55c8a4c5af3
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 title: Administrative templates and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

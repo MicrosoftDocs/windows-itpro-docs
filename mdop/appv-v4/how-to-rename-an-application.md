@@ -1,15 +1,15 @@
 ---
 title: How to Rename an Application
 description: How to Rename an Application
-author: eavena
+author: dansimp
 ms.assetid: 983136b7-66bf-49f6-8dea-8933b622072d
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

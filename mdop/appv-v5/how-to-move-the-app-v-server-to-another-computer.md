@@ -28,7 +28,7 @@ The following list displays the steps necessary to create a new management serve
 
 2.  After you have completed the installation, use the following link to connect it to the App-V 5.0 database - [How to install the Management Server on a Standalone Computer and Connect it to the Database](how-to-install-the-management-server-on-a-standalone-computer-and-connect-it-to-the-database.md).
 
-**Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+**Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 

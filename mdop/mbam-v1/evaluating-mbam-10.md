@@ -1,15 +1,15 @@
 ---
 title: Evaluating MBAM 1.0
 description: Evaluating MBAM 1.0
-author: msfttracyp
+author: dansimp
 ms.assetid: a1e2b674-eda9-4e1c-9b4c-e748470c71f2
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

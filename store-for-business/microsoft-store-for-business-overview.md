@@ -60,7 +60,7 @@ Microsoft Azure Active Directory (AD) accounts for your employees:
 - Employees need Azure AD account when they access Store for Business content from Windows devices.
 - If you use a management tool to distribute and manage online-licensed apps, all employees will need an Azure AD account
 - For offline-licensed apps, Azure AD accounts are not required for employees.
-- Admins can add or remove user accounts in the Office 365 admin center, even if you don’t have an Office 365 subscription. You can access the Office 365 admin portal directly from the Store for Business and Education. 
+- Admins can add or remove user accounts in the Microsoft 365 admin center, even if you don’t have an Office 365 subscription. You can access the Office 365 admin portal directly from the Store for Business and Education. 
 
 For more information on Azure AD, see [About Office 365 and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
@@ -375,7 +375,7 @@ This table summarize what customers can purchase, depending on which Microsoft S
 > **Microsoft Store for Education customers with support for free apps and Minecraft: Education Edition**
 > - Admins can acquire free apps from **Microsoft Store for Education**.
 > - Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](https://docs.microsoft.com/education/windows/school-get-minecraft#invoices). 
-> - Teachers, or people with the Basic Purachaser role, can acquire free apps, but not **Minecraft: Education Edition**. 
+> - Teachers, or people with the Basic Purchaser role, can acquire free apps, but not **Minecraft: Education Edition**. 
 
 ## Privacy notice
 

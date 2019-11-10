@@ -7,7 +7,7 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: da659ff5-70d5-4852-995e-4df67c4871dd
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: dansimp
 title: Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

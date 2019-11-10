@@ -1,15 +1,15 @@
 ---
 title: How to Test Application Publishing
 description: How to Test Application Publishing
-author: levinec
+author: dansimp
 ms.assetid: 17ba2e12-50a0-4f41-8300-f61f09db9f6c
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 11/01/2016
 ---
 

@@ -67,7 +67,7 @@ netsh advfirewall set allprofiles state on
 
 **Windows PowerShell**
 
-``` syntax
+```powershell
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True
 ```
 
@@ -88,7 +88,7 @@ netsh advfirewall set allprofiles logging filename %SystemRoot%\System32\LogFile
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Set-NetFirewallProfile -DefaultInboundAction Block -DefaultOutboundAction Allow –NotifyOnListen True -AllowUnicastResponseToMulticast True –LogFileName %SystemRoot%\System32\LogFiles\Firewall\pfirewall.log
 ```
 
@@ -140,7 +140,7 @@ netsh advfirewall firewall add rule name="Allow Inbound Telnet" dir=in program= 
 
 Windows PowerShell
 
-``` syntax
+```powershell
 New-NetFirewallRule -DisplayName “Allow Inbound Telnet” -Direction Inbound -Program %SystemRoot%\System32\tlntsvr.exe -RemoteAddress LocalSubnet -Action Allow
 ```
 
@@ -157,7 +157,7 @@ netsh advfirewall firewall add rule name="Block Outbound Telnet" dir=out program
 
 Windows PowerShell
 
-``` syntax
+```powershell
 New-NetFirewallRule -DisplayName “Block Outbound Telnet” -Direction Outbound -Program %SystemRoot%\System32\tlntsvr.exe –Protocol TCP –LocalPort 23 -Action Block –PolicyStore domain.contoso.com\gpo_name
 ```
 
@@ -169,7 +169,7 @@ The following performs the same actions as the previous example (by adding a Tel
 
 Windows PowerShell
 
-``` syntax
+```powershell
 $gpo = Open-NetGPO –PolicyStore domain.contoso.com\gpo_name
 New-NetFirewallRule -DisplayName “Block Outbound Telnet” -Direction Outbound -Program %SystemRoot%\System32\telnet.exe –Protocol TCP –LocalPort 23 -Action Block –GPOSession $gpo
 Save-NetGPO –GPOSession $gpo
@@ -191,7 +191,7 @@ netsh advfirewall firewall set rule name="Allow Web 80" new remoteip=192.168.0.2
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Set-NetFirewallRule –DisplayName “Allow Web 80” -RemoteAddress 192.168.0.2
 ```
 
@@ -205,7 +205,7 @@ In the following example, we assume the query returns a single firewall rule, wh
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Get-NetFirewallPortFilter | ?{$_.LocalPort -eq 80} | Get-NetFirewallRule | ?{ $_.Direction –eq “Inbound” -and $_.Action –eq “Allow”} | Set-NetFirewallRule -RemoteAddress 192.168.0.2
 ```
 
@@ -213,7 +213,7 @@ You can also query for rules using the wildcard character. The following example
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Get-NetFirewallApplicationFilter -Program "*svchost*" | Get-NetFirewallRule
 ```
 
@@ -223,7 +223,7 @@ In the following example, we add both inbound and outbound Telnet firewall rules
 
 Windows PowerShell
 
-``` syntax
+```powershell
 New-NetFirewallRule -DisplayName “Allow Inbound Telnet” -Direction Inbound -Program %SystemRoot%\System32\tlntsvr.exe -RemoteAddress LocalSubnet -Action Allow –Group “Telnet Management”
 New-NetFirewallRule -DisplayName “Block Outbound Telnet” -Direction Outbound -Program %SystemRoot%\System32\tlntsvr.exe -RemoteAddress LocalSubnet -Action Allow –Group “Telnet Management”
 ```
@@ -232,7 +232,7 @@ If the group is not specified at rule creation time, the rule can be added to th
 
 Windows PowerShell
 
-``` syntax
+```powershell
 $rule = Get-NetFirewallRule -DisplayName “Allow Inbound Telnet”
 $rule.Group = “Telnet Management”
 $rule | Set-NetFirewallRule
@@ -250,7 +250,7 @@ netsh advfirewall firewall set rule group="Windows Defender Firewall remote mana
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Set-NetFirewallRule -DisplayGroup “Windows Defender Firewall Remote Management” –Enabled True
 ```
 
@@ -258,7 +258,7 @@ There is also a separate `Enable-NetFirewallRule` cmdlet for enabling rules by g
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Enable-NetFirewallRule -DisplayGroup “Windows Defender Firewall Remote Management” -Verbose
 ```
 
@@ -276,7 +276,7 @@ netsh advfirewall firewall delete rule name=“Allow Web 80”
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Remove-NetFirewallRule –DisplayName “Allow Web 80”
 ```
 
@@ -284,7 +284,7 @@ Like with other cmdlets, you can also query for rules to be removed. Here, all b
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Remove-NetFirewallRule –Action Block
 ```
 
@@ -292,7 +292,7 @@ Note that it may be safer to query the rules with the **Get** command and save i
 
 Windows PowerShell
 
-``` syntax
+```powershell
 $x = Get-NetFirewallRule –Action Block
 $x
 $x[0-3] | Remove-NetFirewallRule
@@ -306,7 +306,7 @@ The following example returns all firewall rules of the persistent store on a de
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Get-NetFirewallRule –CimSession RemoteDevice
 ```
 
@@ -314,7 +314,7 @@ We can perform any modifications or view rules on remote  devices by simply usin
 
 Windows PowerShell
 
-``` syntax
+```powershell
 $RemoteSession = New-CimSession –ComputerName RemoteDevice
 Remove-NetFirewallRule –DisplayName “AllowWeb80” –CimSession $RemoteSession -Confirm
 ```
@@ -342,7 +342,7 @@ netsh advfirewall consec add rule name="Require Inbound Authentication" endpoint
 
 Windows PowerShell
 
-``` syntax
+```powershell
 New-NetIPsecRule -DisplayName “Require Inbound Authentication” -PolicyStore domain.contoso.com\gpo_name
 ```
 
@@ -365,7 +365,7 @@ netsh advfirewall consec add rule name="Require Outbound Authentication" endpoin
 
 Windows PowerShell
 
-``` syntax
+```powershell
 $AHandESPQM = New-NetIPsecQuickModeCryptoProposal -Encapsulation AH,ESP –AHHash SHA1 -ESPHash SHA1 -Encryption DES3
 $QMCryptoSet = New-NetIPsecQuickModeCryptoSet –DisplayName “ah:sha1+esp:sha1-des3” -Proposal $AHandESPQM –PolicyStore domain.contoso.com\gpo_name
 New-NetIPsecRule -DisplayName “Require Inbound Authentication” -InboundSecurity Require -OutboundSecurity Request -QuickModeCryptoSet $QMCryptoSet.Name –PolicyStore domain.contoso.com\gpo_name
@@ -379,7 +379,7 @@ You can leverage IKEv2 capabilities in Windows Server 2012 by simply specifying 
 
 Windows PowerShell
 
-``` syntax
+```powershell
 New-NetIPsecRule -DisplayName “Require Inbound Authentication” -InboundSecurity Require -OutboundSecurity Request –Phase1AuthSet MyCertAuthSet -KeyModule IKEv2 –RemoteAddress $nonWindowsGateway
 ```
 
@@ -395,7 +395,7 @@ Copying individual rules is a task that is not possible through the Netsh interf
 
 Windows PowerShell
 
-``` syntax
+```powershell
 $Rule = Get-NetIPsecRule –DisplayName “Require Inbound Authentication”
 $Rule | Copy-NetIPsecRule –NewPolicyStore domain.costoso.com\new_gpo_name
 $Rule | Copy-NetPhase1AuthSet –NewPolicyStore domain.costoso.com\new_gpo_name
@@ -407,7 +407,7 @@ To handle errors in your Windows PowerShell scripts, you can use the *–ErrorAc
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Remove-NetFirewallRule –DisplayName “Contoso Messenger 98” –ErrorAction SilentlyContinue
 ```
 
@@ -415,7 +415,7 @@ Note that the use of wildcards can also suppress errors, but they could potentia
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Remove-NetFirewallRule –DisplayName “Contoso Messenger 98*”
 ```
 
@@ -423,7 +423,7 @@ When using wildcards, if you want to double-check the set of rules that is match
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Remove-NetFirewallRule –DisplayName “Contoso Messenger 98*” –WhatIf
 ```
 
@@ -431,7 +431,7 @@ If you only want to delete some of the matched rules, you can use the *–Confir
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Remove-NetFirewallRule –DisplayName “Contoso Messenger 98*” –Confirm
 ```
 
@@ -439,7 +439,7 @@ You can also just perform the whole operation, displaying the name of each rule 
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Remove-NetFirewallRule –DisplayName “Contoso Messenger 98*” –Verbose
 ```
 
@@ -457,7 +457,7 @@ netsh advfirewall consec show rule name=all
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Show-NetIPsecRule –PolicyStore ActiveStore
 ```
 
@@ -473,7 +473,7 @@ netsh advfirewall monitor show mmsa all
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Get-NetIPsecMainModeSA
 ```
 
@@ -485,7 +485,7 @@ For objects that come from a GPO (the *–PolicyStoreSourceType* parameter is sp
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Get-NetIPsecRule –DisplayName “Require Inbound Authentication” –TracePolicyStore
 ```
 
@@ -506,7 +506,7 @@ netsh advfirewall consec add rule name=“Basic Domain Isolation Policy” profi
 
 Windows PowerShell
 
-``` syntax
+```powershell
 $kerbprop = New-NetIPsecAuthProposal –Machine –Kerberos
 $Phase1AuthSet = New-NetIPsecPhase1AuthSet -DisplayName "Kerberos Auth Phase1" -Proposal $kerbprop –PolicyStore domain.contoso.com\domain_isolation
 New-NetIPsecRule –DisplayName “Basic Domain Isolation Policy” –Profile Domain –Phase1AuthSet $Phase1AuthSet.Name –InboundSecurity Require –OutboundSecurity Request –PolicyStore domain.contoso.com\domain_isolation
@@ -524,7 +524,7 @@ netsh advfirewall consec add rule name="Tunnel from 192.168.0.0/16 to 192.157.0.
 
 Windows PowerShell
 
-``` syntax
+```powershell
 $QMProposal = New-NetIPsecQuickModeCryptoProposal -Encapsulation ESP -ESPHash SHA1 -Encryption DES3
 $QMCryptoSet = New-NetIPsecQuickModeCryptoSet –DisplayName “esp:sha1-des3” -Proposal $QMProposal
 New-NetIPSecRule -DisplayName “Tunnel from HQ to Dallas Branch” -Mode Tunnel -LocalAddress 192.168.0.0/16 -RemoteAddress 192.157.0.0/16 -LocalTunnelEndpoint 1.1.1.1 -RemoteTunnelEndpoint 2.2.2.2 -InboundSecurity Require -OutboundSecurity Require -QuickModeCryptoSet $QMCryptoSet.Name
@@ -548,7 +548,7 @@ netsh advfirewall firewall add rule name="Allow Authenticated Telnet" dir=in pro
 
 Windows PowerShell
 
-``` syntax
+```powershell
 New-NetFirewallRule -DisplayName “Allow Authenticated Telnet” -Direction Inbound -Program %SystemRoot%\System32\tlntsvr.exe -Authentication Required -Action Allow
 ```
 
@@ -562,7 +562,7 @@ netsh advfirewall consec add rule name="Authenticate Both Computer and User" end
 
 Windows PowerShell
 
-``` syntax
+```powershell
 $mkerbauthprop = New-NetIPsecAuthProposal -Machine –Kerberos
 $mntlmauthprop = New-NetIPsecAuthProposal -Machine -NTLM
 $P1Auth = New-NetIPsecPhase1AuthSet -DisplayName “Machine Auth” –Proposal $mkerbauthprop,$mntlmauthprop
@@ -593,7 +593,7 @@ The following example shows you how to create an SDDL string that represents sec
 
 Windows PowerShell
 
-``` syntax
+```powershell
 $user = new-object System.Security.Principal.NTAccount (“corp.contoso.com\Administrators”)
 $SIDofSecureUserGroup = $user.Translate([System.Security.Principal.SecurityIdentifier]).Value
 $secureUserGroup = "D:(A;;CC;;;$SIDofSecureUserGroup)"
@@ -603,7 +603,7 @@ By using the previous scriptlet, you can also get the SDDL string for a secure c
 
 Windows PowerShell
 
-``` syntax
+```powershell
 $secureMachineGroup = "D:(A;;CC;;;$SIDofSecureMachineGroup)"
 ```
 
@@ -622,7 +622,7 @@ netsh advfirewall firewall add rule name=“Allow Encrypted Inbound Telnet to Gr
 
 Windows PowerShell
 
-``` syntax
+```powershell
 New-NetFirewallRule -DisplayName "Allow Encrypted Inbound Telnet to Group Members Only" -Program %SystemRoot%\System32\tlntsvr.exe -Protocol TCP -Direction Inbound -Action Allow -LocalPort 23 -Authentication Required -Encryption Required –RemoteUser $secureUserGroup –PolicyStore domain.contoso.com\Server_Isolation
 ```
 
@@ -634,7 +634,7 @@ In this example, we set the global IPsec setting to only allow transport mode tr
 
 Windows PowerShell
 
-``` syntax
+```powershell
 Set-NetFirewallSetting -RemoteMachineTransportAuthorizationList $secureMachineGroup
 ```
 
@@ -653,7 +653,7 @@ netsh advfirewall firewall add rule name="Inbound Secure Bypass Rule" dir=in sec
 
 Windows PowerShell
 
-``` syntax
+```powershell
 New-NetFirewallRule –DisplayName “Inbound Secure Bypass Rule" –Direction Inbound –Authentication Required –OverrideBlockRules $true -RemoteMachine $secureMachineGroup –RemoteUser $secureUserGroup –PolicyStore domain.contoso.com\domain_isolation
 ```
 

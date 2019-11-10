@@ -5,11 +5,11 @@ manager: laurawi
 description: Gives an overview of the Enrollment Status Page capabilities, configuration
 keywords: Autopilot Plug and Forget, Windows 10
 ms.prod: w10
-ms.technology: Windows
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 ms.localizationpriority: medium
+audience: itpro
 author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
@@ -29,22 +29,6 @@ The ESP will track the installation of applications, security policies, certific
  
  ![Enrollment Status Page](images/enrollment-status-page.png)
  
-
-## Installation progress tracking
-
-The Enrollment Status Page tracks a subset of the available MDM CSP policies that are delivered to the device as part of the complete device configuration process.  The specific types of policies that are tracked include:
-
-- Certain types of app installations.
-    - Enterprise modern apps (Appx/MSIX) installed by the [Enterprise Modern App Managment CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp).
-    - Enterprise desktop apps (single-file MSIs) installed by the [Enterprise Desktop App Management CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisedesktopappmanagement-csp).
-
-- Certain device configuration policies. The following types of policies and installations are not tracked:
-
-- Intune Management Extensions PowerShell scripts
-- Office 365 ProPlus installations<sup>**</sup>
-- System Center Configuration Manager apps, packages, and task sequences
-
-<sup>**</sup>The ability to track Office 365 ProPlus installations was added with Windows 10, version 1809.<br>
 
 ## More information
 

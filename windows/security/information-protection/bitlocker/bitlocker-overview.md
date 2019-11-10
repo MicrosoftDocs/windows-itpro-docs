@@ -3,13 +3,13 @@ title: BitLocker (Windows 10)
 description: This topic provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
 ms.assetid: 40526fcc-3e0d-4d75-90e0-c7d0615f33b2
 ms.reviewer: 
-ms.author: dolmont
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -59,6 +59,14 @@ For BitLocker to use the system integrity check provided by a Trusted Platform M
 A computer with a TPM must also have a Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware. The BIOS or UEFI firmware establishes a chain of trust for the pre-operating system startup, and it must include support for TCG-specified Static Root of Trust Measurement. A computer without a TPM does not require TCG-compliant firmware.
 
 The system BIOS or UEFI firmware (for TPM and non-TPM computers) must support the USB mass storage device class, including reading small files on a USB flash drive in the pre-operating system environment.
+
+> [!IMPORTANT]
+> From Windows 7, you can encrypt an OS drive without a TPM and USB flash drive. For this procedure, see [Tip of the Day: Bitlocker without TPM or USB](https://blogs.technet.microsoft.com/tip_of_the_day/2014/01/22/tip-of-the-day-bitlocker-without-tpm-or-usb/).
+
+> [!NOTE]
+> TPM 2.0 is not supported in Legacy and CSM Modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as Native UEFI only. The Legacy and Compatibility Support Module (CSM) options must be disabled. For added security Enable the Secure Boot feature.
+
+> Installed Operating System on hardware in legacy mode will stop the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](https://docs.microsoft.com/windows/deployment/mbr-to-gpt) before changing the BIOS mode which will prepare the OS and the disk to support UEFI.
 
 The hard disk must be partitioned with at least two drives:
 
