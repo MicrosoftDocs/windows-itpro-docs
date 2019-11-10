@@ -67,8 +67,8 @@ alertDomains | List of Alert Domains | **This list will be populated on $expand 
 
 ## JSON representation:
 
-- When querying for alert list the regular way (without expand option, e.g. https://api.securitycenter.windows.com/api/alerts) the expandable properties will not get populated (empty lists)
-- To expand expandable properties use $expand option (e.g. to expand all send https://api.securitycenter.windows.com/api/alerts?$expand=files,ips,domains).
+- When querying for alert list the regular way (without expand option, e.g. /api/alerts) the expandable properties will not get populated (empty lists)
+- To expand expandable properties use $expand option (e.g. to expand all send /api/alerts?$expand=files,ips,domains).
 - When querying single alert all expandable properties will be expanded. 
 - Check out [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md) for more OData examples. 
 
