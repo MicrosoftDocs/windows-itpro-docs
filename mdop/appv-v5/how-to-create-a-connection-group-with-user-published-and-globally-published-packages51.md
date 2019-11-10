@@ -53,9 +53,9 @@ You can create user-entitled connection groups that contain both user-published 
 
 1.  Add and publish packages by using the following commands:
 
-    **Add-AppvClientPackage Pacakage1\_AppV\_file\_Path**
+    **Add-AppvClientPackage Package1\_AppV\_file\_Path**
 
-    **Add-AppvClientPackage Pacakage2\_AppV\_file\_Path**
+    **Add-AppvClientPackage Package2\_AppV\_file\_Path**
 
     **Publish-AppvClientPackage -PackageId Package1\_ID -VersionId Package1\_Version ID -Global**
 

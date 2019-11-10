@@ -6,7 +6,6 @@ description: Enroll devices to enable use of Update Compliance, Upgrade Readines
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, azure portal
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
@@ -16,6 +15,9 @@ ms.topic: article
 ---
 
 # Enrolling devices in Windows Analytics
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 If you have not already done so, consult the topics for any of the three Windows Analytics solutions (Update Compliance, Upgrade Readiness, and Device Health) you intend to use and follow the steps there to add the solutions to Azure Portal.
 
@@ -37,7 +39,7 @@ To find your commercial ID, first navigate to the **Solutions** tab for your wor
 
 From there, select the settings page, where you can find and copy your commercial ID:
 
-[![Settings page for Upgrade Readiness in Azure portsl](images/azure-portal-UR-settings.png)](images/azure-portal-UR-settings.png)
+[![Settings page for Upgrade Readiness in Azure portal](images/azure-portal-UR-settings.png)](images/azure-portal-UR-settings.png)
 
 
 
@@ -75,6 +77,12 @@ To enable data sharing, configure your proxy server to whitelist the following e
 > [!IMPORTANT]
 > For privacy and data integrity, Windows checks for a Microsoft SSL certificate when communicating with the diagnostic data endpoints. SSL interception and inspection aren't possible. To use Desktop Analytics, exclude these endpoints from SSL inspection.<!-- BUG 4647542 --> 
 
+>[!NOTE]
+>Microsoft has a strong commitment to providing the tools and resources that put you in control of your privacy. As a result, Microsoft doesn't collect the following data from devices located in European countries (EEA and Switzerland):
+>- Windows diagnostic data from Windows 8.1 devices
+>- App usage data and [Internet Explorer site discovery](../upgrade/upgrade-readiness-additional-insights.md#site-discovery) features for Windows 7 devices
+
+
 
 ### Configuring endpoint access with SSL inspection
 To ensure privacy and data integrity Windows checks for a Microsoft SSL certificate when communicating with the diagnostic data endpoints. Accordingly SSL interception and inspection is not possible. To use Windows Analytics services you should exclude the above endpoints from SSL inspection.
@@ -93,14 +101,15 @@ The compatibility update scans your devices and enables application usage tracki
 | **Operating System** | **Updates** |
 |----------------------|-----------------------------------------------------------------------------|
 | Windows 10        | Windows 10 includes the compatibility update, so you will automatically have the latest compatibility update so long as you continue to keep your Windows 10 devices up to date with cumulative updates.  |
-| Windows 8.1          | The compatibility update is included in monthly quality updates for Windows 8.1. We recommend installing the latest [Windows Monthly Rollup](http://www.catalog.update.microsoft.com/Search.aspx?q=security%20monthly%20quality%20rollup%20for%20windows%208) before attempting to enroll devices into Windows Analytics. |
-| Windows 7 SP1        | The compatibility update is included in monthly quality updates for Windows 7. We recommend installing the latest [Windows Monthly Rollup](http://www.catalog.update.microsoft.com/Search.aspx?q=security%20monthly%20quality%20rollup%20for%20windows%207) before attempting to enroll devices into Windows Analytics. |
+| Windows 8.1          | The compatibility update is included in monthly quality updates for Windows 8.1. We recommend installing the latest [Windows Monthly Rollup](https://www.catalog.update.microsoft.com/Search.aspx?q=security%20monthly%20quality%20rollup%20for%20windows%208) before attempting to enroll devices into Windows Analytics. |
+| Windows 7 SP1        | The compatibility update is included in monthly quality updates for Windows 7. We recommend installing the latest [Windows Monthly Rollup](https://www.catalog.update.microsoft.com/Search.aspx?q=security%20monthly%20quality%20rollup%20for%20windows%207) before attempting to enroll devices into Windows Analytics. |
 
 ### Connected User Experiences and Telemetry service
+
 With Windows diagnostic data enabled, the Connected User Experience and Telemetry service (DiagTrack) collects system, application, and driver data. Microsoft analyzes this data, and shares it back to you through Windows Analytics. For the best experience, install these updates depending upon the operating system version.
 
 - For Windows 10, install the latest Windows 10 cumulative update.
-- For Windows 8.1, nstall the October 2018 monthly rollup, [KB4462926](https://support.microsoft.com/help/4462926)
+- For Windows 8.1, install the October 2018 monthly rollup, [KB4462926](https://support.microsoft.com/help/4462926)
 - For Windows 7, install the October 2018 monthly rollup, [KB4462923](https://support.microsoft.com/help/4462923)
 
 
@@ -134,7 +143,7 @@ You can use the Upgrade Readiness deployment script to automate and verify your 
 
 See the [Upgrade Readiness deployment script](../upgrade/upgrade-readiness-deployment-script.md) topic for information about obtaining and running the script, and for a description of the error codes that can be displayed. See ["Understanding connectivity scenarios and the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog for a summary of setting the ClientProxy for the script, which will enable the script properly check for diagnostic data endpoint connectivity.
 
-After data is sent from devices to Microsoft, it generally takes 48-56 hours for the data to populate in Windows Analytics. The compatibility update takes several minutes to run. If the update does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Windows Analytics. For this reason, you can expect most of your devices to be populated in Windows Analytics in about 1-2 weeks after deploying the update and configuration to user computers. As described in the Windows Analytics blog post ["You can now check on the status of your computers within hours of running the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/), you can verify that devices have successfully connected to the service within a few hours. Most of those devices should start to show up in the Windows Analytics console within a few days.
+After data is sent from devices to Microsoft, it generally takes 48-56 hours for the data to populate in Windows Analytics. The compatibility update takes several minutes to run. If the update does not get a chance to finish running or if the computers are inaccessible (turned off or sleeping for example), data will take longer to populate in Windows Analytics. For this reason, you can expect most of your devices to be populated in Windows Analytics within 1-2 days after deploying the update and configuration to user computers. As described in the Windows Analytics blog post ["You can now check on the status of your computers within hours of running the deployment script"](https://blogs.technet.microsoft.com/upgradeanalytics/2017/05/12/wheres-my-data/), you can verify that devices have successfully connected to the service within a few hours. Most of those devices should start to show up in the Windows Analytics console within a few days.
 
 ## Deploy additional optional settings
 
@@ -144,7 +153,7 @@ Certain Windows Analytics features have additional settings you can use.
 
 - For devices running Windows 10, version 1607 or earlier, Windows diagnostic data must also be set to Enhanced (see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization#enhanced-level)) in order to be compatible with Windows Defender Antivirus. See the [Windows Defender Antivirus in Windows 10 and Windows Server 2016](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) for more information about enabling, configuring, and validating Windows Defender AV.
 
-- **Device Health** is only compatible with Windows 10 desktop devices (workstations and laptops) and Windows Server 2016. The solution requires that at least the Enhanced level of diagnostic data is enabled on all devices that are intended to be displayed in the solution. In Windows 10, version 1709, a new policy was added to "limit enhanced telemetry to the minimum required by Windows Analytics". To learn more about Windows diagnostic data, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization).
+- **Device Health** is only compatible with Windows 10 desktop devices (workstations and laptops). The solution requires that at least the Enhanced level of diagnostic data is enabled on all devices that are intended to be displayed in the solution. In Windows 10, version 1709, a new policy was added to "limit enhanced telemetry to the minimum required by Windows Analytics". To learn more about Windows diagnostic data, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization).
 
 - **IE site discovery** is an optional feature of Upgrade Readiness that provides an inventory of websites that are accessed by client devices using Internet Explorer on Windows 7, Windows 8.1, and Windows 10. To enable IE site discovery, make sure the required updates are installed (per previous section) and enable IE site discovery in the deployment script batch file.
 
@@ -166,20 +175,23 @@ When you run the deployment script, it initiates a full scan. The daily schedule
 Use a software distribution system such as System Center Configuration Manager to distribute the Upgrade Readiness deployment script at scale. For more information, see [Upgrade Readiness deployment script](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-readiness-deployment-script). For information on how to deploy PowerShell scripts by using Windows Intune, see [Manage PowerShell scripts in Intune for Windows 10 devices](https://docs.microsoft.com/intune/intune-management-extension).
 
 ### Distributing policies at scale
+
 There are a number of policies that can be centrally managed to control Windows Analytics device configuration. All of these policies have *preference* registry key equivalents that can be set by using the deployment script. Policy settings override preference settings if both are set.
 >[!NOTE]
->You can only set the diagnostic data level to Enhanced by using policy. For example, this is necessary for using Device Health.
+>You can only set the diagnostic data level to Enhanced by using policy. For example, this is necessary to use Device Health.
 
-These policies are under Microsoft\Windows\DataCollection:
+These policies are defined by values under **Microsoft\Windows\DataCollection**. All are REG_DWORD policies (except CommercialId which is REG_SZ).
 
-| Policy   | Value  |
+>[!IMPORTANT]
+>Configuring these keys independently without using the enrollment script is not recommended. There is additional validation that occurs when you use the enrollment script.
+
+| Policy   | Value  | 
 |-----------------------|------------------|
-| CommercialId | In order for your devices to show up in Windows Analytics, they must be configured with your organization’s Commercial ID. |
-| AllowTelemetry (in Windows 10) |	1 (Basic), 2 (Enhanced) or 3 (Full) diagnostic data. Windows Analytics will work with basic diagnostic data, but more features are available when you use the Enhanced level (for example, Device Health requires Enhanced diagnostic data and Upgrade Readiness only collects app usage and site discovery data on Windows 10 devices with Enhanced diagnostic data). For more information, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization). |
-| LimitEnhancedDiagnosticDataWindowsAnalytics (in Windows 10) |	Only applies when AllowTelemetry=2. Limits the Enhanced diagnostic data events sent to Microsoft to just those needed by Windows Analytics. For more information, see [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields).|
-| AllowDeviceNameInTelemetry (in Windows 10) |	In Windows 10, version 1803, a separate opt-in is required to enable devices to continue to send the device name.  Allowing device names to be collected can make it easier for you to identify individual devices that report problems. Without the device name, Windows Analytics can only label devices by a GUID that it generates. |
-| CommercialDataOptIn (in Windows 7 and Windows 8) |	1 is required for Upgrade Readiness, which is the only solution that runs on Windows 7 or Windows 8. |
-
+| CommercialId | In order for your devices to show up in Windows Analytics, they must be configured with your organization’s Commercial ID. | 
+| AllowTelemetry  |	**In Windows 10**: 1 (Basic), 2 (Enhanced) or 3 (Full) diagnostic data. Windows Analytics will work with basic diagnostic data, but more features are available when you use the Enhanced level (for example, Device Health requires Enhanced diagnostic data and Upgrade Readiness only collects app usage and site discovery data on Windows 10 devices with Enhanced diagnostic data). For more information, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-diagnostic-data-in-your-organization). | 
+| LimitEnhancedDiagnosticDataWindowsAnalytics | **In Windows 10**: Only applies when AllowTelemetry=2. Limits the Enhanced diagnostic data events sent to Microsoft to just those needed by Windows Analytics. For more information, see [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](https://docs.microsoft.com/windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields).| 
+| AllowDeviceNameInTelemetry | **In Windows 10, version 1803**: A separate opt-in is required to enable devices to continue to send the device name.  Allowing device names to be collected can make it easier for you to identify individual devices that report problems. Without the device name, Windows Analytics can only label devices by a GUID that it generates. | 
+| CommercialDataOptIn  | **In Windows 7 and Windows 8**: 1 is required for Upgrade Readiness, which is the only solution that runs on Windows 7 or Windows 8. | 
 
 You can set these values by using Group Policy (in Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds) or by using Mobile Device Management (in Provider/*Provider ID*/CommercialID). (If you are using Microsoft Intune, use `MS DM Server` as the provider ID.) For more information about deployment using MDM, see the [DMClient CSP](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp) topic in MDM documentation.
 
@@ -196,8 +208,9 @@ For more information about Internet Explorer Security Zones, see [About URL Secu
 
 We recommend using the deployment script to configure devices. However if this is not an option, you can still manage settings by policy as described in the previous section. However, if you don't run the deployment script, you won't benefit from its error checking, and you might have to wait a long time (possibly weeks) before devices send the initial full inventory scan.
 
-Note that it is possible to intiate a full inventory scan on a device by calling these commands:
+Note that it is possible to initiate a full inventory scan on a device by calling these commands:
 - CompatTelRunner.exe -m:generaltel.dll -f:DoCensusRun
 - CompatTelRunner.exe -m:appraiser.dll -f:DoScheduledTelemetryRun ent
 
 For details on how to run these and how to check results, see the deployment script.
+

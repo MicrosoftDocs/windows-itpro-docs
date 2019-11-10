@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Understanding AppLocker rule behavior
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic describes how AppLocker rules are enforced by using the allow and deny options in AppLocker.
 

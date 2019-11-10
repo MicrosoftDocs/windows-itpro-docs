@@ -1,15 +1,15 @@
 ---
 title: How to Modify a Virtual Application Package (App-V 4.6)
 description: How to Modify a Virtual Application Package (App-V 4.6)
-author: eavena
+author: dansimp
 ms.assetid: 346ec470-3822-48a7-95e7-61f46eb38dc2
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -216,7 +216,7 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 machin
 <td>29</td>
 <td>Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3 </td>
 <td>This event occurs when the system can&#39;t read the offboarding parameters.</td>
-<td>Ensure the machine has Internet access, then run the entire offboarding process again.</td>
+<td>Ensure the machine has Internet access, then run the entire offboarding process again. Ensure the offboarding package has not expired.</td>
 </tr>
 <tr>
 <td>30</td>
@@ -342,7 +342,7 @@ See <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 machin
 </tbody>
 </table>
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## Related topics
 - [Onboard Windows 10 machines](configure-endpoints.md)

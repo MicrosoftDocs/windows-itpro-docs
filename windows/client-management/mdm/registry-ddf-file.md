@@ -17,7 +17,7 @@ ms.date: 06/26/2017
 
 This topic shows the OMA DM device description framework (DDF) for the **Registry** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-``` syntax
+```xml
 <MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
     <VerDTD>1.2</VerDTD>
     <Node>

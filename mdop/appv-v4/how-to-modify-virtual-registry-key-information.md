@@ -1,15 +1,15 @@
 ---
 title: How to Modify Virtual Registry Key Information
 description: How to Modify Virtual Registry Key Information
-author: eavena
+author: dansimp
 ms.assetid: cf2559f2-a8cc-4fc7-916e-8368843c7ebc
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: Migrating UE-V 2.x Settings Packages
 description: Migrating UE-V 2.x Settings Packages
-author: levinec
+author: dansimp
 ms.assetid: f79381f4-e142-405c-b728-5c048502aa70
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

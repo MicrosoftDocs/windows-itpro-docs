@@ -65,7 +65,7 @@ This section describes features and tools that are available to help you manage 
 
 None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
 
-###  Policy dependencies
+### Policy dependencies
 
 The settings for this security policy are dependent on the [Network security: LAN Manager authentication level](network-security-lan-manager-authentication-level.md) setting value.
 

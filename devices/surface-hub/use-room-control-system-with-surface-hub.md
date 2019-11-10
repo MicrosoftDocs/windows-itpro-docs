@@ -7,8 +7,8 @@ manager: dansimp
 keywords: room control system, Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium
@@ -76,7 +76,7 @@ In Replacement PC mode, the power states are only Ready and Off and only change 
 | 0 | S5 | Off |
 | 5 | S0 | Ready |
 
-For a control device, anything other than 5 / Ready should be considered off. Each PowerOn command results in two state changes and reponses. 
+For a control device, anything other than 5 / Ready should be considered off. Each PowerOn command results in two state changes and responses. 
 
 | Command | State change| Response |
 | --- | --- | --- |

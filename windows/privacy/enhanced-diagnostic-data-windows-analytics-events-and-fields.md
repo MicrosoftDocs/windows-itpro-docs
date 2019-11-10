@@ -1,6 +1,6 @@
 ---
-description: Use this article to learn more about the enhanced diagnostic data events used by Windows Analytics
-title: Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics (Windows 10)
+description: Use this article to learn more about the limit enhanced diagnostic data events policy used by Desktop Analytics
+title: Windows 10 diagnostic data events and fields collected through the limit enhanced diagnostic data policy (Windows 10)
 keywords: privacy, diagnostic data
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -18,19 +18,24 @@ ms.reviewer:
 ---
 
 
-# Windows 10 enhanced diagnostic data events and fields used by Windows Analytics
+# Windows 10 diagnostic data events and fields collected through the limit enhanced diagnostic data policy
 
  **Applies to**
 
 - Windows 10, version 1709 and newer
 
-Windows Analytics Device Health reports are powered by diagnostic data not included in the Basic level. This includes crash reports and certain OS diagnostic data events. Organizations sending Enhanced or Full level diagnostic data were able to participate in Device Health, but some organizations which required detailed event and field level documentation were unable to move from Basic to Enhanced. 
+> [!IMPORTANT]
+> The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](/windows/deployment/update/update-compliance-get-started) will continue to be supported.
+> For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/en-us/help/4521815/windows-analytics-retirement).
 
-In Windows 10, version 1709, we introduce a new feature: "Limit Enhanced diagnostic data to the minimum required by Windows Analytics". When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to only those described below. Note that the Enhanced level also includes limited crash reports, which are not described below. For more information on the Enhanced level, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
+Desktop Analytics reports are powered by diagnostic data not included in the Basic level.
 
+In Windows 10, version 1709, we introduced a new feature: "Limit Enhanced diagnostic data to the minimum required by Windows Analytics". When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to only those described below. Note that the Enhanced level also includes limited crash reports, which are not described below. For more information on the Enhanced level, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
+
+With the retirement of Windows Analytics, this policy will continue to be supported by Desktop Analytics, but will not include Office related diagnostic data.
 
 ## KernelProcess.AppStateChangeSummary
-This event summarizes application usage and performance characteristics to help Microsoft improve performance and reliability. Organizations can use this event with Windows Analytics to gain insights into application reliability.
+This event summarizes application usage and performance characteristics to help Microsoft improve performance and reliability. Organizations can use this event with Desktop Analytics to gain insights into application reliability.
 
 The following fields are available:
 
@@ -241,7 +246,7 @@ This event is fired when the office application suspends as per app life-cycle c
 - **SuspendType:** Type of suspend
 
 ## Microsoft.OSG.OSS.CredProvFramework.ReportResultStop
-This event indicates the result of an attempt to authenticate a user with a credential provider. It helps Microsoft to improve logon reliability. Using this event with Windows Analytics can help organizations monitor and improve logon success for different methods (for example, biometric) on managed devices.
+This event indicates the result of an attempt to authenticate a user with a credential provider. It helps Microsoft to improve logon reliability. Using this event with Desktop Analytics can help organizations monitor and improve logon success for different methods (for example, biometric) on managed devices.
 
 The following fields are available:
 
@@ -261,7 +266,7 @@ The following fields are available:
 - **UserTag:** Count of the number of times a user has selected a provider
 
 ## Microsoft.Windows.Kernel.Power.OSStateChange
-This event denotes the transition between operating system states (e.g., On, Off, Sleep, etc.). By using this event with Windows Analytics, organizations can use this to monitor reliability and performance of managed devices
+This event denotes the transition between operating system states (e.g., On, Off, Sleep, etc.). By using this event with Desktop Analytics, organizations can use this to monitor reliability and performance of managed devices
 
 The following fields are available:
 
@@ -322,7 +327,7 @@ The following field is available:
 - **ticksSinceBoot:** Duration of boot event (milliseconds)
 
 ## Microsoft.Windows.Shell.Desktop.LogonFramework.AllLogonTasks
-This event summarizes the logon procedure to help Microsoft improve performance and reliability. By using this event with Windows Analytics organizations can help identify logon problems on managed devices.
+This event summarizes the logon procedure to help Microsoft improve performance and reliability. By using this event with Desktop Analytics organizations can help identify logon problems on managed devices.
 
 The following fields are available:
 
@@ -359,7 +364,7 @@ The following fields are available:
 - **status:** Indicates whether errors occurred during WIP learning events
 
 ## Win32kTraceLogging.AppInteractivitySummary
-Summarizes which app windows are being used (for example, have focus) to help Microsoft improve compatibility and user experience. Also helps organizations (by using Windows Analytics) to understand and improve application reliability on managed devices.
+Summarizes which app windows are being used (for example, have focus) to help Microsoft improve compatibility and user experience. Also helps organizations (by using Desktop Analytics) to understand and improve application reliability on managed devices.
 
 The following fields are available:
    
@@ -415,8 +420,11 @@ A previous revision of this list stated that a field named PartA_UserSid was a m
 ### Office events added
 In Windows 10, version 1809 (also applies to versions 1709 and 1803 starting with [KB 4462932](https://support.microsoft.com/help/4462932/windows-10-update-kb4462932) and [KB 4462933](https://support.microsoft.com/help/4462933/windows-10-update-kb4462933) respectively), 16 events were added, describing Office app launch and availability. These events were added to improve the precision of Office data in Windows Analytics.
 
+> [!NOTE]
+> Office data will no longer be provided through this policy in Desktop Analytics.
+
 ### CertAnalytics events removed
-In Windows 10, version 1809 (also applies to versions 1709 and 1803 starting with [KB 4462932](https://support.microsoft.com/help/4462932/windows-10-update-kb4462932) and [KB 4462933](https://support.microsoft.com/help/4462933/windows-10-update-kb4462933) respectively), 3 "CertAnalytics" events were removed, as they are no longer required for Windows Analytics.
+In Windows 10, version 1809 (also applies to versions 1709 and 1803 starting with [KB 4462932](https://support.microsoft.com/help/4462932/windows-10-update-kb4462932) and [KB 4462933](https://support.microsoft.com/help/4462933/windows-10-update-kb4462933) respectively), 3 "CertAnalytics" events were removed, as they are no longer required for Desktop Analytics.
 
 >[!NOTE]
 >You can use the Windows Diagnostic Data Viewer to observe and review events and their fields as described in this topic.

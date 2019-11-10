@@ -20,14 +20,14 @@ ms.date: 09/21/2017
 # Understanding AppLocker allow and deny actions on rules
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic explains the differences between allow and deny actions on AppLocker rules.
 
 ## Allow action versus deny action on rules
 
-Unlike Software Restriction Policies (SRP), each AppLocker rule collection functions as an allowed list of files. Only the files that are listed within the rule collection are allowed to run. This configuration makes it easier to determine what will occur when an AppLocker rule is applied.
+Unlike Software Restriction Policies (SRP), each AppLocker rule collection functions as an allowed list of files. Only the files that are listed within the rule collection are allowed to run. This **block by default, allow by exception** configuration makes it easier to determine what will occur when an AppLocker rule is applied.
 
 You can also create rules that use the deny action. When applying rules, AppLocker first checks whether any explicit deny actions are specified in the rule list. If you have denied a file from running in a rule collection, the deny action will take precedence over any allow action, regardless of which Group Policy Object (GPO) the rule was originally applied in. Because AppLocker functions as an allowed list by default, if no rule explicitly allows or denies a file from running, AppLocker's default deny action will block the file.
 

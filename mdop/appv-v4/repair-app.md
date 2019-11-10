@@ -1,15 +1,15 @@
 ---
 title: REPAIR APP
 description: REPAIR APP
-author: eavena
+author: dansimp
 ms.assetid: 892b556b-612d-4531-890e-4cfc2ac88d9f
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

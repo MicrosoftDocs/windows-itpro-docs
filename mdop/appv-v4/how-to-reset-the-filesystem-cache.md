@@ -1,15 +1,15 @@
 ---
 title: How to Reset the FileSystem Cache
 description: How to Reset the FileSystem Cache
-author: eavena
+author: dansimp
 ms.assetid: 7777259d-8c21-4c06-9384-9599b69f9828
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

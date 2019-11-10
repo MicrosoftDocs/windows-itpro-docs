@@ -1,11 +1,11 @@
 ---
 title: Security Considerations for DaRT 10
 description: Security Considerations for DaRT 10
-author: msfttracyp
+author: dansimp
 ms.assetid: c653daf1-f12a-4667-98cc-f0c89fa38e3f
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library

@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to use IEAK 11 to add and approve ActiveX controls for your organization.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 33040bd1-f0e4-4541-9fbb-16e0c76752ab
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Add and approve ActiveX controls using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

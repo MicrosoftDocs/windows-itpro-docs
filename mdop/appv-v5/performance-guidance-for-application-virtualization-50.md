@@ -1,11 +1,11 @@
 ---
 title: Performance Guidance for Application Virtualization 5.0
 description: Performance Guidance for Application Virtualization 5.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 6b3a3255-b957-4b9b-8bfc-a93fe8438a81
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -448,7 +448,7 @@ The following section contains lists with information about Microsoft documentat
 
 About NGEN technology
 
--   [How to speed up NGEN optimaztion](https://blogs.msdn.com/b/dotnet/archive/2013/08/06/wondering-why-mscorsvw-exe-has-high-cpu-usage-you-can-speed-it-up.aspx)
+-   [How to speed up NGEN optimization](https://blogs.msdn.com/b/dotnet/archive/2013/08/06/wondering-why-mscorsvw-exe-has-high-cpu-usage-you-can-speed-it-up.aspx)
 
 -   [Script](https://aka.ms/DrainNGenQueue)
 
@@ -590,7 +590,7 @@ If, during sequencer monitoring, an SxS Assembly (such as a VC++ Runtime) is ins
 
 **Client Side**:
 
-When publishing a virtual application package, the App-V 5.0 SP2 Client will detect if a required SxS dependency is already installed. If the dependency is unavailable on the computer and it is included in the package, a traditional Windows Insataller (.**msi**) installation of the SxS assembly will be initiated. As previously documented, simply install the dependency on the computer running the client to ensure that the Windows Installer (.msi) installation will not occur.
+When publishing a virtual application package, the App-V 5.0 SP2 Client will detect if a required SxS dependency is already installed. If the dependency is unavailable on the computer and it is included in the package, a traditional Windows Installer (.**msi**) installation of the SxS assembly will be initiated. As previously documented, simply install the dependency on the computer running the client to ensure that the Windows Installer (.msi) installation will not occur.
 
 <table>
 <colgroup>

@@ -1,15 +1,15 @@
 ---
 title: Introduction to the Application Virtualization Security Guide
 description: Introduction to the Application Virtualization Security Guide
-author: eavena
+author: dansimp
 ms.assetid: 50e1d220-7a95-45b8-933b-3dadddebe26f
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

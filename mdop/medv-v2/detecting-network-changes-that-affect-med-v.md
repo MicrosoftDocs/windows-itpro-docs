@@ -1,15 +1,15 @@
 ---
 title: Detecting Network Changes that Affect MED-V
 description: Detecting Network Changes that Affect MED-V
-author: levinec
+author: dansimp
 ms.assetid: fd29b95a-cda2-464d-b86d-50b6bd64b4ca
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
+audience: itpro
 author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
@@ -34,6 +35,7 @@ This topic describes how to convert Windows 7 or Windows 8.1 domain-joined compu
 - Assigned Microsoft Intune Licenses
 - Azure Active Directory Premium
 - Windows 10 version 1809 or later imported into Config Mgr as an Operating System Image
+  - **Important**: See [Known issues](known-issues.md) if you are using Windows 10 1903 with Configuration Manager’s built-in **Windows Autopilot existing device** task sequence template. Currently, one of the steps in this task sequence must be edited to work properly with Windows 10, version 1903.
 
 ## Procedures
 
@@ -55,14 +57,14 @@ See the following examples.
 ### Create the JSON file 
 
 >[!TIP]
->To run the following commands on a computer running Windows Server 2012/2012 R2 or Windows 7/8.1, you must first download and install the [Windows Management Framework](https://www.microsoft.com/en-us/download/details.aspx?id=54616).
+>To run the following commands on a computer running Windows Server 2012/2012 R2 or Windows 7/8.1, you must first download and install the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=54616).
 
 1. On an Internet connected Windows PC or Server open an elevated Windows PowerShell command window
 2. Enter the following lines to install the necessary modules
 
     #### Install required modules
 
-    ```
+    ```powershell
     Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
     Install-Module AzureAD -Force
     Install-Module WindowsAutopilotIntune -Force
@@ -71,7 +73,7 @@ See the following examples.
 3. Enter the following lines and provide Intune administrative credentials
    - In the following command, replace the example user principal name for Azure authentication (admin@M365x373186.onmicrosoft.com) with your user account. Be sure that the user account you specify has sufficient administrative rights.
 
-     ```
+     ```powershell
      Connect-AutopilotIntune -user admin@M365x373186.onmicrosoft.com
      ```
      The password for your account will be requested using a standard Azure AD form. Type your password and then click **Sign in**. 
@@ -87,7 +89,7 @@ See the following examples.
 
     #### Retrieve profiles in Autopilot for existing devices JSON format
 
-    ```
+    ```powershell
     Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON
     ```
 
@@ -126,7 +128,7 @@ See the following examples.
 
 5. The Autopilot profile must be saved as a JSON file in ASCII or ANSI format. Windows PowerShell defaults to Unicode format, so if you attempt to redirect output of the commands to a file, you must also specify the file format. For example, to save the file in ASCII format using Windows PowerShell, you can create a directory (ex: c:\Autopilot) and save the profile as shown below: (use the horizontal scroll bar at the bottom if needed to view the entire command string)
 
-    ```
+    ```powershell
     Get-AutopilotProfile | ConvertTo-AutopilotConfigurationJSON | Out-File c:\Autopilot\AutopilotConfigurationFile.json -Encoding ASCII
     ```
     **IMPORTANT**: The file name must be named **AutopilotConfigurationFile.json** in addition to being encoded as ASCII/ANSI. 
@@ -196,7 +198,7 @@ See the following examples.
    - Click **Next**, and then on the Install Windows page click **Browse** and select a Windows 10 **Image package** and **Image Index**, version 1803 or later.
    - Select the **Partition and format the target computer before installing the operating system** checkbox.
    - Select or clear **Configure task sequence for use with Bitlocker** checkbox. This is optional.
-   - <u>Product Key</u> and <u>Server licensing mode</u>: Optionally enter a product key and server licencing mode.
+   - <u>Product Key</u> and <u>Server licensing mode</u>: Optionally enter a product key and server licensing mode.
    - <u>Randomly generate the local administrator password and disable the account on all support platforms (recommended)</u>: Optional.
    - <u>Enable the account and specify the local administrator password</u>: Optional.
    - Click **Next**, and then on the Configure Network page choose **Join a workgroup** and specify a name (ex: workgroup) next to **Workgroup**.
@@ -212,7 +214,7 @@ See the following examples.
    - Click **Next**.
 
      >[!NOTE]
-     >The Autopilot for existing devices task sequence will result in an Azure Active Directory Domain (AAD) joined device. The User State Migration Toolkit (USMT) does not support AAD joined devices.
+     >The Autopilot for existing devices task sequence will result in an Azure Active Directory Domain (AAD) joined device. The User State Migration Toolkit (USMT) does not support AAD joined or hybrid AAD joined devices.
 
 7. On the Include Updates page, choose one of the three available options. This selection is optional.
 8. On the Install applications page, add applications if desired. This is optional.
@@ -302,7 +304,7 @@ The Task Sequence will download content, reboot, format the drives and install W
 ![refresh-3](images/up-3.png)
 
 >[!NOTE]
->If joining devices to Active Directory (Hybrid Azure AD Join), it is necessary to create a Domain Join device configuration profile that is targeted to "All Devices" (since there is no Azure Active Directory device object for the computer to do group-based targeting).  See [User-driven mode for hybrid Azure Active Directory join](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven#user-driven-mode-for-hybrid-azure-active-directory-join) for more information.
+>If joining devices to Active Directory (Hybrid Azure AD Join), it is necessary to create a Domain Join device configuration profile that is targeted to "All Devices" (since there is no Azure Active Directory device object for the computer to do group-based targeting).  See [User-driven mode for hybrid Azure Active Directory join](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven#user-driven-mode-for-hybrid-azure-active-directory-join) for more information.
 
 ### Register the device for Windows Autopilot
 

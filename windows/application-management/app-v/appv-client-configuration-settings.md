@@ -94,7 +94,7 @@ The following table provides information about App-V client configuration settin
 |        **MigrationMode**<br>True(Enabled state); False (Disabled state)        |                       Coexistence\\MigrationMode                        |                                                   |
 |       **EnablePackageScripts**<br>True (Enabled); False (Disabled state)       |                    \\Scripting\\EnablePackageScripts                    |                                                   |
 |                      **RoamingFileExclusions**<br>String                       |                                                                         |                                                   |
-|                    **RoamingRegistryExclusions**<br>String                     |                 Integration\\RoamingReglstryExclusions                  | Policy value not written (same as Not Configured) |
+|                    **RoamingRegistryExclusions**<br>String                     |                 Integration\\RoamingRegistryExclusions                  | Policy value not written (same as Not Configured) |
 |                       **IntegrationRootUser**<br>String                        |                    Integration\\IntegrationRootUser                     | Policy value not written (same as Not Configured) |
 |                      **IntegrationRootGlobal**<br>String                       |                   Integration\\IntegrationRootGlobal                    | Policy value not written (same as Not Configured) |
 |                     **VirtualizableExtensions**<br>String                      |                  Integration\\VirtualizableExtensions                   |             Policy value not written              |

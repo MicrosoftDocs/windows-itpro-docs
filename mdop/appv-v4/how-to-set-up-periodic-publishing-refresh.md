@@ -1,15 +1,15 @@
 ---
 title: How to Set Up Periodic Publishing Refresh
 description: How to Set Up Periodic Publishing Refresh
-author: eavena
+author: dansimp
 ms.assetid: c358c765-cb88-4881-b4e7-0a2e87304870
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

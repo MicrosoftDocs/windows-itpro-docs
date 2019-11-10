@@ -30,22 +30,22 @@ You must be a CRM administrator to turn on and use Preview features. For more in
 
 **To turn on Cortana with Dynamics CRM**
 
-1.	Go to **Settings**, and then click **Administration**.
+1. Go to **Settings**, and then click **Administration**.
 
-2.	Choose **System Settings**, and then click the **Previews** tab.
+2. Choose **System Settings**, and then click the **Previews** tab.
 
-3.	Read the license terms, and if you agree, select the **I’ve read and agree to the license terms** check box.
+3. Read the license terms, and if you agree, select the **I’ve read and agree to the license terms** check box.
 
-4.	For each preview feature you want to enable, click **Yes**.
+4. For each preview feature you want to enable, click **Yes**.
 
 ## Turn on Cortana with Dynamics CRM on your employees’ devices
 You must tell your employees to turn on Cortana, before they’ll be able to use it with Dynamics CRM.
 
 **To turn on local Cortana with Dynamics CRM**
 
-1.	Click on the **Cortana** search box in the taskbar, and then click the **Notebook** icon.
+1. Click on the **Cortana** search box in the taskbar, and then click the **Notebook** icon.
 
-2.	Click on **Connected Services**, click **Dynamics CRM**, and then click **Connect**.
+2. Click on **Connected Services**, click **Dynamics CRM**, and then click **Connect**.
 
     ![Cotana at work, showing how to turn on the connected services for Dynamics CRM](../images/cortana-connect-crm.png)
 
@@ -55,10 +55,10 @@ You must tell your employees to turn on Cortana, before they’ll be able to use
 Cortana can only access data in Dynamics CRM when it’s turned on. If you don’t want Cortana to access your corporate data, you can turn it off.
 
 **To turn off Cortana with Dynamics CRM**
-1.	Go to **Settings**, and then click **Administration**.
+1. Go to **Settings**, and then click **Administration**.
 
-2.	Choose **System Settings**, and then click the **Previews** tab.
+2. Choose **System Settings**, and then click the **Previews** tab.
 
-3.	Click **No** for **Cortana**.
+3. Click **No** for **Cortana**.
 
     All Dynamics CRM functionality related to Cortana is turned off in your organization.

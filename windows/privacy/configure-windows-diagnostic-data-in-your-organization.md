@@ -36,12 +36,12 @@ At Microsoft, we use Windows diagnostic data to inform our decisions and focus o
 
 To frame a discussion about diagnostic data, it is important to understand Microsoft’s privacy principles. We earn customer trust every day by focusing on six key privacy principles as described at [privacy.microsoft.com](https://privacy.microsoft.com/). These principles guided the implementation of the Windows diagnostic data system in the following ways:
 
--	**Control.** We offer customers control of the diagnostic data they share with us by providing easy-to-use management tools.
--	**Transparency.** We provide information about the diagnostic data that Windows and Windows Server collects so our customers can make informed decisions.
--	**Security.** We encrypt diagnostic data in transit from your device via TLS 1.2, and additionally use certificate pinning to secure the connection.
--	**Strong legal protections.** We respect customers’ local privacy laws and fight for legal protection of their privacy as a fundamental human right.
--	**No content-based targeting.** We take steps to avoid and minimize the collection of customer content, such as the content of files, chats, or emails, through the Windows diagnostic data system.  Customer content inadvertently collected is kept confidential and not used for user targeting.
--	**Benefits to you.** We collect Windows diagnostic data to help provide you with an up-to-date, more secure, reliable and performant product, and to improve Windows for all our customers.
+- **Control.** We offer customers control of the diagnostic data they share with us by providing easy-to-use management tools.
+- **Transparency.** We provide information about the diagnostic data that Windows and Windows Server collects so our customers can make informed decisions.
+- **Security.** We encrypt diagnostic data in transit from your device via TLS 1.2, and additionally use certificate pinning to secure the connection.
+- **Strong legal protections.** We respect customers’ local privacy laws and fight for legal protection of their privacy as a fundamental human right.
+- **No content-based targeting.** We take steps to avoid and minimize the collection of customer content, such as the content of files, chats, or emails, through the Windows diagnostic data system.  Customer content inadvertently collected is kept confidential and not used for user targeting.
+- **Benefits to you.** We collect Windows diagnostic data to help provide you with an up-to-date, more secure, reliable and performant product, and to improve Windows for all our customers.
 
 In previous versions of Windows and Windows Server, Microsoft used diagnostic data to check for updated or new Windows Defender signatures, check whether Windows Update installations were successful, gather reliability information through the Reliability Analysis Component (RAC), and gather reliability information through the Windows Customer Experience Improvement Program (CEIP) on Windows. In Windows 10 and Windows Server, you can control diagnostic data streams by using the Privacy option in Settings, Group Policy, or MDM.
 
@@ -56,16 +56,16 @@ The release cadence of Windows may be fast, so feedback is critical to its succe
 ### What is Windows diagnostic data?
 Windows diagnostic data is vital technical data from Windows devices about the device and how Windows and related software are performing. It's used in the following ways:
 
-- 	Keep Windows up to date
--	Keep Windows secure, reliable, and performant
--	Improve Windows – through the aggregate analysis of the use of Windows
--	Personalize Windows engagement surfaces
+- Keep Windows up to date
+- Keep Windows secure, reliable, and performant
+- Improve Windows – through the aggregate analysis of the use of Windows
+- Personalize Windows engagement surfaces
 
 Here are some specific examples of Windows diagnostic data:
 
--	Type of hardware being used
--	Applications installed and usage details
--	Reliability information on device drivers
+- Type of hardware being used
+- Applications installed and usage details
+- Reliability information on device drivers
 
 ### What is NOT diagnostic data?
 
@@ -96,35 +96,16 @@ There was a version of a video driver that was crashing on some devices running 
 
 Windows diagnostic data also helps Microsoft better understand how customers use (or do not use) the operating system’s features and related services. The insights we gain from this data helps us prioritize our engineering effort to directly impact our customers’ experiences. Examples are:
 
--	**Start menu.** How do people change the Start menu layout? Do they pin other apps to it? Are there any apps that they frequently unpin? We use this dataset to adjust the default Start menu layout to better reflect people’s expectations when they turn on their device for the first time.
--	**Cortana.** We use diagnostic data to monitor the scalability of our cloud service, improving search performance.
--	**Application switching.**  Research and observations from earlier Windows versions showed that people rarely used Alt+Tab to switch between applications.  After discussing this with some users, we learned they loved the feature, saying that it would be highly productive, but they did not know about it previously. Based on this, we created the Task View button in Windows 10 to make this feature more discoverable. Later diagnostic data showed significantly higher usage of this feature.
+- **Start menu.** How do people change the Start menu layout? Do they pin other apps to it? Are there any apps that they frequently unpin? We use this dataset to adjust the default Start menu layout to better reflect people’s expectations when they turn on their device for the first time.
+- **Cortana.** We use diagnostic data to monitor the scalability of our cloud service, improving search performance.
+- **Application switching.**  Research and observations from earlier Windows versions showed that people rarely used Alt+Tab to switch between applications.  After discussing this with some users, we learned they loved the feature, saying that it would be highly productive, but they did not know about it previously. Based on this, we created the Task View button in Windows 10 to make this feature more discoverable. Later diagnostic data showed significantly higher usage of this feature.
 
 **These examples show how the use of diagnostic data enables Microsoft to build or enhance features which can help organizations increase employee productivity while lowering help desk calls.**
 
 ### Insights into your own organization
 
-Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better, as well.  Microsoft is in the process of developing a set of analytics customized for your internal use. The first of these, called [Upgrade Readiness](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
+Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better. Microsoft provides a set of solutions that leverage information shared by customers to provide insights customized for your internal use. The first of these was [Upgrade Readiness](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness), followed by [Desktop Analytics](https://aka.ms/DADocs) (coming soon). Both help organizations with [Windows as a Service](/windows/deployment/update/wass-overview) adoption and potential compatibility challenges. For E5 customers, [Microsoft Defender Advanced Threat Protection](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
-#### Upgrade Readiness
-
-Upgrading to new operating system versions has traditionally been a challenging, complex, and slow process for many enterprises. Discovering applications and drivers and then testing them for potential compatibility issues have been among the biggest pain points.
-
-To better help customers through this difficult process, Microsoft developed Upgrade Readiness to give enterprises the tools to plan and manage the upgrade process end to end and allowing them to adopt new Windows releases more quickly and on an ongoing basis.
-
-With Windows diagnostic data enabled, Microsoft collects computer, application, and driver compatibility-related information for analysis. We then identify compatibility issues that can block your upgrade and suggest fixes when they are known to Microsoft.
-
-Use Upgrade Readiness to get:
-
-- A visual workflow that guides you from pilot to production
-- Detailed computer, driver, and application inventory
-- Powerful computer level search and drill-downs
-- Guidance and insights into application and driver compatibility issues with suggested fixes
-- Data driven application rationalization tools
-- Application usage information, allowing targeted validation; workflow to track validation progress and decisions
-- Data export to commonly used software deployment tools
-
-The Upgrade Readiness workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
 
 ## How Microsoft handles diagnostic data
 
@@ -196,7 +177,7 @@ Microsoft believes in and practices information minimization. We strive to gathe
 
 ### Enterprise management
 
-Sharing diagnostic data with Microsoft provides many benefits to enterprises, so we do not recommend turning it off. For most enterprise customers, simply adjusting the diagnostic data level and managing specific components is the best option.
+Sharing diagnostic data with Microsoft is enabled by default on Windows 10, 1903 and later. Sharing this data provides many benefits to enterprises, so we do not recommend turning it off. For most enterprise customers, simply adjusting the diagnostic data level and managing specific components is the best option.
 
 Customers can set the diagnostic data level in both the user interface and with existing management tools. Users can change the diagnostic data level in the **Diagnostic data** setting. In the **Settings** app, in **Privacy** > **Diagnostics & feedback**. They can choose between Basic and Full. The Enhanced level will only be displayed as an option when Group Policy or Mobile Device Management (MDM) are invoked with this level. The Security level is not available.
 
@@ -390,22 +371,28 @@ However, before more data is gathered, Microsoft’s privacy governance team, in
 > [!NOTE]
 > Crash dumps collected at this diagnostic data level may unintentionally contain personal data, such as portions of memory from a documents, a web page, etc.
 
-## Limit Enhanced diagnostic data to the minimum required by Windows Analytics
+## Limit Enhanced diagnostic data to the minimum required by Desktop Analytics
 
-Windows Analytics Device Health reports are powered by diagnostic data not included in the **Basic** level, such as crash reports and certain operating system events. In the past, organizations sending **Enhanced** or **Full** level diagnostic data were able to participate in Device Health. However, organizations that required detailed event and field level documentation were unable to move from **Basic** to **Enhanced**.
+> [!IMPORTANT]
+> The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](/windows/deployment/update/update-compliance-get-started) will continue to be supported.
+> For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/en-us/help/4521815/windows-analytics-retirement).
 
-In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data to the minimum required by Windows Analytics** feature. When enabled, this feature lets you send only the following subset of **Enhanced** level diagnostic data. For more info about Device Health, see the [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor) topic.
+Desktop Analytics reports are powered by diagnostic data not included in the **Basic** level, such as crash reports and certain operating system events.
 
-- **Operating system events.** Limited to a small set required for analytics reports and documented in the [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) topic.
+In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data to the minimum required by Windows Analytics** feature. When enabled, this feature lets you send only the following subset of **Enhanced** level diagnostic data.
+
+- **Operating system events.** Limited to a small set required for analytics reports and documented in the [Windows 10 diagnostic data events and fields collected through the limit enhanced diagnostic data policy](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) topic.
 
 - **Some crash dump types.** Triage dumps for user mode and mini dumps for kernel mode.
 
 >[!NOTE]
 > Triage dumps are a type of [minidumps](https://docs.microsoft.com/windows/desktop/debug/minidump-files) that go through a process of user-sensitive information scrubbing. Some user-sensitive information may be missed in the process, and will therefore be sent with the dump.
 
-### Enable limiting enhanced diagnostic data to the minimum required by Windows Analytics
+With the retirement of Windows Analytics, this policy will continue to be supported by Desktop Analytics, but will not include Office related diagnostic data.
 
-1.	Set the diagnostic data level to **Enhanced**, using either Group Policy or MDM.
+### Enable limiting enhanced diagnostic data to the minimum required by Desktop Analytics
+
+1. Set the diagnostic data level to **Enhanced**, using either Group Policy or MDM.
 
     a. Using Group Policy, set the **Computer Configuration/Administrative Templates/Windows Components/Data Collection and Preview Builds/Allow telemetry** setting to **2**.
 
@@ -415,9 +402,9 @@ In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data 
 
     -AND-
 
-2.	Enable the **LimitEnhancedDiagnosticDataWindowsAnalytics** setting, using either Group Policy or MDM.
+2. Enable the **LimitEnhancedDiagnosticDataWindowsAnalytics** setting, using either Group Policy or MDM.
 
-    a.	Using Group Policy, set the **Computer Configuration/Administrative Templates/Windows Components/Data collection and Preview builds/Limit Enhanced diagnostic data to the minimum required by Windows Analytics** setting to **Enabled**.
+    a. Using Group Policy, set the **Computer Configuration/Administrative Templates/Windows Components/Data collection and Preview builds/Limit Enhanced diagnostic data to the minimum required by Windows Analytics** setting to **Enabled**.
 
     -OR-
 

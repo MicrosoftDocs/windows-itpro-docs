@@ -5,7 +5,7 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: dolmont
+ms.author: dansimp
 author: dulcemontemayor
 manager: dansimp
 audience: ITPro
@@ -31,9 +31,7 @@ The Security Compliance Toolkit consists of:
     -   Windows 10 Version 1809 (October 2018 Update)
     -   Windows 10 Version 1803 (April 2018 Update)
     -   Windows 10 Version 1709 (Fall Creators Update)
-    -   Windows 10 Version 1703 (Creators Update)
     -   Windows 10 Version 1607 (Anniversary Update)
-    -   Windows 10 Version 1511 (November Update)
     -   Windows 10 Version 1507
 
 -   Windows Server security baselines
@@ -42,14 +40,14 @@ The Security Compliance Toolkit consists of:
     -   Windows Server 2012 R2
 
 -   Microsoft Office security baseline
-    -   Office 2016 
+    -   Office365 ProPlus (Sept 2019)
 
 -   Tools
     -   Policy Analyzer tool
     -   Local Group Policy Object (LGPO) tool
 
 
-You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more details about security baseline recommendations, see the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/).
+You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more details about security baseline recommendations, see the [Microsoft Security Guidance blog](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/bg-p/Microsoft-Security-Baselines).
 
 ## What is the Policy Analyzer tool?
 

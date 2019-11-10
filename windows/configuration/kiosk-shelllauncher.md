@@ -94,7 +94,7 @@ You can use XML and a [custom OMA-URI setting](#custom-oma-uri-setting) to confi
 
 The following XML sample works for **Shell Launcher v1**:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?> 
 <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration"> 
   <Profiles> 
@@ -112,7 +112,7 @@ The following XML sample works for **Shell Launcher v1**:
 
 For **Shell Launcher v2**, you can use UWP app type for `Shell` by specifying the v2 namespace, and use `v2:AppType` to specify the type, as shown in the following example. If `v2:AppType` is not specified, it implies the shell is Win32 app.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?> 
 <ShellLauncherConfiguration xmlns="http://schemas.microsoft.com/ShellLauncher/2018/Configuration" 
 xmlns:v2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration"> 
@@ -150,7 +150,7 @@ For scripts for Shell Launcher v2, see [Shell Launcher v2 Bridge WMI sample scri
 
 For Shell Launcher v1, modify the following PowerShell script as appropriate. The comments in the sample script explain the purpose of each section and tell you where you will want to change the script for your purposes. Save your script with the extension .ps1, open Windows PowerShell as administrator, and run the script on the kiosk device.
 
-```
+```powershell
 # Check if shell launcher license is enabled
 function Check-ShellLauncherLicenseEnabled
 {
@@ -293,7 +293,7 @@ Value|Description
 2|Shut down the device
 3|Do nothing
 
-These action can be used as default action, or can be mapped to a specific exit code. Refer to [Shell Launcher](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/wesl-usersettingsetcustomshell) to see how these codes with Shell Launcher WMI.
+These action can be used as default action, or can be mapped to a specific exit code. Refer to [Shell Launcher](https://docs.microsoft.com/windows-hardware/customize/enterprise/wesl-usersettingsetcustomshell) to see how these codes with Shell Launcher WMI.
 
 To configure these action with Shell Launcher CSP, use below syntax in the shell launcher configuration xml. You can specify at most 4 custom actions mapping to 4 exit codes, and one default action for all other exit codes. When app exits and if the exit code is not found in the custom action mapping, or there is no default action defined, it will be no-op, i.e. nothing happens. So it's recommeded to at least define DefaultAction. [Get XML examples for different Shell Launcher v2 configurations.](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2)
 ``` xml

@@ -11,6 +11,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
+audience: itpro
 author: greg-lindsay
 ms.topic: article
 ---
@@ -42,7 +43,7 @@ When preparing for the computer replace, you need to create a folder in which to
 1. On MDT01, log on as **CONTOSO\\Administrator**.
 
 2. Create and share the **E:\\MigData** folder by running the following three commands in an elevated Windows PowerShell prompt:
-   ``` syntax
+   ``` powershell
    New-Item -Path E:\MigData -ItemType directory
    New-SmbShare ?Name MigData$ ?Path E:\MigData 
    -ChangeAccess EVERYONE

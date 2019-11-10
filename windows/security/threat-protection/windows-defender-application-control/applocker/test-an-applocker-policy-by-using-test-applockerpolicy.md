@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Test an AppLocker policy by using Test-AppLockerPolicy
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes the steps to test an AppLocker policy prior to importing it into a Group Policy Object (GPO) or another computer.
 

@@ -100,7 +100,7 @@ This event is always logged regardless of the "Audit Policy Change" sub-category
 
 -   **New Security Descriptor** \[Type = UnicodeString\]**:** new Security Descriptor Definition Language (SDDL) value for the audit policy.
 
-> **Note**&nbsp;&nbsp;The ** Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
+> **Note**&nbsp;&nbsp;The **Security Descriptor Definition Language (SDDL)** defines string elements for enumerating information contained in the security descriptor.
 > 
 > Example:
 > 

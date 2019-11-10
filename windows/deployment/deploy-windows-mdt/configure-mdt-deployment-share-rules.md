@@ -11,6 +11,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
+audience: itpro
 author: greg-lindsay
 ms.topic: article
 ---
@@ -36,7 +37,7 @@ Before adding the more advanced components like scripts, databases, and web serv
 
 If you have a small test environment, or simply want to assign settings to a very limited number of machines, you can edit the rules to assign settings directly for a given MAC Address. If you have many machines, it makes sense to use the database instead.
 
-``` syntax
+``` 
 [Settings]
 Priority=MacAddress, Default
 [Default]
@@ -51,7 +52,7 @@ In the preceding sample, you set the PC00075 computer name for a machine with a 
 
 Another way to assign a computer name is to identify the machine via its serial number.
 
-``` syntax
+``` 
 [Settings]
 Priority=SerialNumber, Default
 [Default]
@@ -66,7 +67,7 @@ In this sample, you set the PC00075 computer name for a machine with a serial nu
 
 You also can configure the rules engine to use a known property, like a serial number, to generate a computer name on the fly.
 
-``` syntax
+``` 
 [Settings]
 Priority=Default
 [Default]
@@ -83,7 +84,7 @@ Be careful when using the serial number to assign computer names. A serial numbe
 
 To avoid assigning a computer name longer than 15 characters, you can configure the rules in more detail by adding VBScript functions, as follows:
 
-``` syntax
+``` 
 [Settings]
 Priority=Default
 [Default]
@@ -97,7 +98,7 @@ In the preceding sample, you still configure the rules to set the computer name 
 
 In the rules, you find built-in properties that use a Windows Management Instrumentation (WMI) query to determine whether the machine you are deploying is a laptop, desktop, or server. In this sample, we assume you want to add laptops to different OUs in Active Directory. Note that ByLaptopType is not a reserved word; rather, it is the name of the section to read.
 
-``` syntax
+``` 
 [Settings]
 Priority=ByLaptopType, Default
 [Default]

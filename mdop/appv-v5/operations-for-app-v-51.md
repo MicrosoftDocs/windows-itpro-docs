@@ -1,11 +1,11 @@
 ---
 title: Operations for App-V 5.1
 description: Operations for App-V 5.1
-author: msfttracyp
+author: dansimp
 ms.assetid: dd13b5c9-2d1e-442f-91e4-43dec7f17ea2
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -9,7 +9,9 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 10/16/2017
+ms.localizationpriority: medium
+ms.audience: itpro
+ms.date: 10/21/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -19,6 +21,9 @@ manager: dansimp
 With Microsoft Surface Deployment Accelerator (SDA), you can quickly and easily set up a deployment solution that is ready to deploy Windows to Surface devices. The prepared environment is built on powerful deployment technologies available from Microsoft, such as the [Microsoft Deployment Toolkit (MDT)](https://technet.microsoft.com/windows/dn475741), and is capable of immediately performing a deployment after configuration. See [Step-by-Step: Surface Deployment Accelerator](https://technet.microsoft.com/itpro/surface/step-by-step-surface-deployment-accelerator) for a comprehensive walkthrough of using the SDA wizard to set up a deployment share and perform a deployment.
 
 For more information about SDA and information on how to download SDA, see [Microsoft Surface Deployment Accelerator (SDA)](https://technet.microsoft.com/itpro/surface/microsoft-surface-deployment-accelerator).
+
+> [!NOTE]
+> SDA is not supported on Surface Pro 7, Surface Pro X, and Surface Laptop 3. For more information refer to [Deploy Surface devices](deploy.md).
 
 Using SDA provides these primary benefits:
 
@@ -141,23 +146,23 @@ In the previous example for including drivers for a POS system, you would also n
 
 9. Click the **Task Sequence** tab to view the steps that are included in the new task sequence.
 
-10.	Select the **Windows Update (Pre-Application Installation)** step, and then click **Add**.
+10. Select the **Windows Update (Pre-Application Installation)** step, and then click **Add**.
 
-11.	Hover the mouse over **General** under the **Add** menu, and then click **Install Application**. This will add a new step after the selected step for the installation of a specific application as shown in Figure 3.
+11. Hover the mouse over **General** under the **Add** menu, and then click **Install Application**. This will add a new step after the selected step for the installation of a specific application as shown in Figure 3.
 
     ![A new Install Application step for Sample POS App](images/using-sda-newinstall-fig3.png "A new Install Application step for Sample POS App")
   
     *Figure 3. A new Install Application step for Sample POS App*
 
-12.	On the **Properties** tab of the new **Install Application** step, enter **Install - Sample POS App** in the **Name** field, where *Sample POS App* is the name of your app.
+12. On the **Properties** tab of the new **Install Application** step, enter **Install - Sample POS App** in the **Name** field, where *Sample POS App* is the name of your app.
 
-13.	Click **Install a Single Application**, and then click **Browse** to view available applications that have been imported into the deployment share.
+13. Click **Install a Single Application**, and then click **Browse** to view available applications that have been imported into the deployment share.
 
-14.	Select your app from the list of applications, and then click **OK**.
+14. Select your app from the list of applications, and then click **OK**.
 
-15.	Click **OK** to close the task sequence properties.
+15. Click **OK** to close the task sequence properties.
 
-16.	Close the Deployment Workbench.
+16. Close the Deployment Workbench.
 
 ## Work with existing deployment shares
 

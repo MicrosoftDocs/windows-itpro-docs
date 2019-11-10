@@ -37,7 +37,7 @@ Use the following procedure to access the client management console.
 
 2.  When the App-V 5.0 client management console is displayed, click the tab you want to review and perform any required tasks. For more information about the client management console tasks see, [Using the App-V 5.0 Client Management Console](using-the-app-v-50-client-management-console.md).
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 

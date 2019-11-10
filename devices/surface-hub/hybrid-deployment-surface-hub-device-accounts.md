@@ -59,7 +59,7 @@ Use this procedure if you use Exchange on-premises.
     >
     >msExchRecipientTypeDetails = 8589934592
     
-3.  After you've created the account, run a directory synchronization. When it's complete, go to the users page in your Office 365 admin center and verify that the account created in the previous steps has merged to online.
+3.  After you've created the account, run a directory synchronization. When it's complete, go to the users page in your Microsoft 365 admin center and verify that the account created in the previous steps has merged to online.
     
 4.  Connect to Microsoft Exchange Online and set some properties for the account in Office 365.
 

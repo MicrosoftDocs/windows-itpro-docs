@@ -1,11 +1,11 @@
 ---
 title: Microsoft User Experience Virtualization (UE-V) 2.1 SP1 Release Notes
 description: Microsoft User Experience Virtualization (UE-V) 2.1 SP1 Release Notes
-author: levinec
+author: dansimp
 ms.assetid: 561988c4-cc5c-4e15-970b-16e942c8f2ef
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -136,7 +136,7 @@ WORKAROUND: When migrating from UE-V 1 to UE-V 2 and it is likely you’ll have 
 
 ### UE-V logoff delay
 
-Occassionally on logoff, UE-V takes a long time to sync settings. Typically, this is due to a high latency network or incorrect use of Distrubuted File System (DFS).
+Occasionally on logoff, UE-V takes a long time to sync settings. Typically, this is due to a high latency network or incorrect use of Distrubuted File System (DFS).
 For DFS support, see [Microsoft’s Support Statement Around Replicated User Profile Data](https://support.microsoft.com/kb/2533009) for further details.
 
 WORKAROUND: Starting with HF03, a new registry key has been introduced

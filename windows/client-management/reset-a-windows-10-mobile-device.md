@@ -66,7 +66,7 @@ To perform a "wipe and persist" reset, preserving the provisioning applied to th
 </SyncML>
 ```
 
-##  Reset using the UI
+## Reset using the UI
 
 
 1.  On your mobile device, go to **Settings** > **System** > **About** > **Reset your Phone**

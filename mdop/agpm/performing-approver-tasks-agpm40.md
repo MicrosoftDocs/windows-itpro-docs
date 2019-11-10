@@ -1,11 +1,11 @@
 ---
 title: Performing Approver Tasks
 description: Performing Approver Tasks
-author: mjcaparas
+author: dansimp
 ms.assetid: e0a4b7fe-ce69-4755-9104-c7f523ea6b62
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -31,14 +31,14 @@ The supported operation is Exec.
 
 The following sample shows how to initiate a remote ring on the device.
 
-``` syntax
+```xml
 <Exec>
-  <CmdID>5</CmdID> 
-    <Item> 
-    <Target> 
-      <LocURI>./Vendor/MSFT/RemoteRing/Ring </LocURI> 
-    </Target> 
-    </Item> 
+  <CmdID>5</CmdID>
+    <Item>
+    <Target>
+      <LocURI>./Vendor/MSFT/RemoteRing/Ring </LocURI>
+    </Target>
+    </Item>
 </Exec>
 ```
 

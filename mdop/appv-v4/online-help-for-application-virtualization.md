@@ -1,15 +1,15 @@
 ---
 title: Online Help for Application Virtualization
 description: Online Help for Application Virtualization
-author: eavena
+author: dansimp
 ms.assetid: 261ede48-976f-473c-84bc-452577efdcdf
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

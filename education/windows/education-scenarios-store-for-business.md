@@ -6,10 +6,10 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: medium
-searchScope:
+searchScope: 
   - Store
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.date: 03/30/2018
 ms.reviewer: 
 manager: dansimp
@@ -130,7 +130,7 @@ Teachers can:
  
 ## Distribute apps
 
-Manage and distribute apps to students and others in your organization. Different options are avaialble for admins and teachers. 
+Manage and distribute apps to students and others in your organization. Different options are available for admins and teachers. 
 
 Applies to: IT admins
 

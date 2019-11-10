@@ -43,9 +43,7 @@ You must configure the package converter to always save the package ingredients 
 Import-Module AppVPkgConverter
 ```
 
-3. 
-
-   The following cmdlets are available:
+3. The following cmdlets are available:
 
    -   Test-AppvLegacyPackage – This cmdlet is designed to check packages. It will return information about any failures with the package such as missing **.sft** files, an invalid source, **.osd** file errors, or invalid package version. This cmdlet will not parse the **.sft** file or do any in depth validation. For information about options and basic functionality for this cmdlet, using the PowerShell cmdline, type `Test-AppvLegacyPackage -?`.
 
@@ -67,7 +65,7 @@ Import-Module AppVPkgConverter
 
 -   Other functionality - PowerShell has other built-in functionality for features such as aliases, piping, lazy-binding, .NET object, and many others. All of these are usable in PowerShell and can help you create advanced scenarios for the Package Converter.
 
-**Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+**Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 ~~~
 
 ## Related topics

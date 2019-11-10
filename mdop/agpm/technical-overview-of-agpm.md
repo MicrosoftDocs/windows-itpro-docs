@@ -1,11 +1,11 @@
 ---
 title: Technical Overview of AGPM
 description: Technical Overview of AGPM
-author: mjcaparas
+author: dansimp
 ms.assetid: 36bc0ab5-f752-474c-8559-721ea95169c2
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

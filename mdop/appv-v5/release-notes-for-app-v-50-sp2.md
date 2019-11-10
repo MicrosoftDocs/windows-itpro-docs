@@ -1,11 +1,11 @@
 ---
 title: Release Notes for App-V 5.0 SP2
 description: Release Notes for App-V 5.0 SP2
-author: msfttracyp
+author: dansimp
 ms.assetid: fe73139d-240c-4ed5-8e59-6ae76ee8e80c
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

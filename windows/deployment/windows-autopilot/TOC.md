@@ -7,6 +7,7 @@
 ## [Get started](demonstrate-deployment-on-vm.md)
 
 # Deployment scenarios
+## [Deployment processes](deployment-process.md)
 ## [User-driven mode](user-driven.md)
 ## [Self-deploying mode](self-deploying.md)
 ## [Windows Autopilot Reset](windows-autopilot-reset.md)
@@ -26,3 +27,4 @@
 ## [Contacts](autopilot-support.md)
 ## [Registration authorization](registration-auth.md)
 ## [Device guidelines](autopilot-device-guidelines.md)
+## [Motherboard replacement](autopilot-mbr.md)

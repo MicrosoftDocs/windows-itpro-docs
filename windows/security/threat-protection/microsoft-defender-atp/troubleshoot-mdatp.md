@@ -19,7 +19,7 @@ ms.topic: troubleshooting
 
 # Troubleshoot service issues
 
-This section addresses issues that might arise as you use the Windows Defender Advanced Threat service.
+This section addresses issues that might arise as you use the Microsoft Defender Advanced Threat service.
 
 ## Server error - Access is denied due to invalid credentials
 If you encounter a server error when trying to access the service, you’ll need to change your browser cookie settings.
@@ -62,7 +62,7 @@ The following date and time formats are currently not supported:
 **Use of comma to indicate thousand**<br>
 Support of use of comma as a separator in numbers are not supported. Regions where a number is separated with a comma to indicate a thousand, will only see the use of a dot as a separator. For example, 15,5K is displayed as 15.5K.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
 ## Microsoft Defender ATP tenant was automatically created in Europe
 When you use Azure Security Center to monitor servers, a Microsoft Defender ATP tenant is automatically created. The Microsoft Defender ATP data is stored in Europe by default.

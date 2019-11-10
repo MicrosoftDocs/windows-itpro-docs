@@ -31,7 +31,7 @@ A single-app kiosk uses the Assigned Access feature to run a single app above th
 >[!IMPORTANT]
 >[User account control (UAC)](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
 >
->Kiosk mode is not supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
+>Kiosk mode is not supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk. Apps that run in kiosk mode cannot use copy and paste.
 
 You have several options for configuring your single-app kiosk. 
 
@@ -51,6 +51,7 @@ Method | Description
 
 
 <span id="local"/>
+
 ## Set up a kiosk in local Settings
 
 >App type: UWP
@@ -122,6 +123,7 @@ To remove assigned access, choose **Turn off assigned access and sign out of the
 
 
 <span id="powershell"/>
+
 ## Set up a kiosk using Windows PowerShell
 
  
@@ -182,6 +184,7 @@ Clear-AssignedAccess
 
 
 <span id="wizard" />
+
 ## Set up a kiosk using the kiosk wizard in Windows Configuration Designer
 
 >App type: UWP or Windows desktop application
@@ -234,6 +237,7 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 
 
 <span id="mdm" />
+
 ## Set up a kiosk or digital sign using Microsoft Intune or other MDM service
 
 >App type: UWP 

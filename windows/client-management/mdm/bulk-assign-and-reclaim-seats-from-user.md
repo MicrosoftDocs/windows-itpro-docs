@@ -4,7 +4,7 @@ description: The Bulk assign and reclaim seats from users operation returns recl
 ms.assetid: 99E2F37D-1FF3-4511-8969-19571656780A
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

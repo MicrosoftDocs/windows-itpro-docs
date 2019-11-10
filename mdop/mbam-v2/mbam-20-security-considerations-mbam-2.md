@@ -1,15 +1,15 @@
 ---
 title: MBAM 2.0 Security Considerations
 description: MBAM 2.0 Security Considerations
-author: msfttracyp
+author: dansimp
 ms.assetid: 0aa5c6e2-d92c-4e30-9f6a-b48abb667ae5
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

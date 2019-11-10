@@ -88,7 +88,7 @@ This screen is shown only if the device fails to detect a wired network. If you 
 -   You can select one of the wireless networks shown. If the network is secured, you'll be taken to a login page. See [Wireless network setup](#wireless) for details.
 -   Click **Skip this step** to skip connecting to a network. You'll be taken to the [Set up for you page](#set-up-for-you).
     >[!NOTE]
-    >If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including system updates and email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
+    >If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including system updates and email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network management](wireless-network-management-for-surface-hub.md)).
 
      
 
@@ -123,7 +123,7 @@ This page will be shown when the device detects a wired connection with limited 
 
 -   You can select a wireless network to use instead of the limited wired connection.
 -   You can skip connecting to a network by selecting **Skip this step**. You'll be taken to the [Set up for you page](#set-up-for-you).
-    **Note**  If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
+    **Note**  If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network management](wireless-network-management-for-surface-hub.md)).
 
      
 
@@ -149,7 +149,7 @@ When you click **Next**, the device will attempt to connect to the proxy server.
 You can skip connecting to a network by selecting **Skip this step**. You'll be taken to the [Set up for you page](#set-up-for-you).
 
 >[!NOTE]
->If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
+>If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network management](wireless-network-management-for-surface-hub.md)).
 
  
 
@@ -337,12 +337,12 @@ This is what happens when you choose an option.
 
 -   **Use Microsoft Azure Active Directory**
 
-    Clicking this option allows you to join the device to Azure AD. Once you click **Next**, the device will restart to apply some settings, and then you’ll be taken to the [Use Microsoft Azure Active Directory](#use-microsoft-azure) page and asked to enter credentials that can allow you to join Azure AD. Members of the Azure Global Admins security group from the joined organization will be able to use the Settings app. The specific people that will be allowed depends on your Azure AD subscription and how you’ve configured the settings for your Azure AD organization.
+    Clicking this option allows you to join the device to Azure AD. Once you click **Next**, the device will restart to apply some settings, and then you’ll be taken to the [Use Microsoft Azure Active Directory](#use-microsoft-azure) page and asked to enter credentials that can allow you to join Azure AD. Members of the Azure Global Admins role from the joined organization will be able to use the Settings app. The specific people that will be allowed depends on your Azure AD subscription and how you’ve configured the settings for your Azure AD organization.
     
-    >[!IMPORTANT]
-    >Administrators added to the Azure Global Admins group after you join the device to Azure AD will be unable to use the Settings app.
+    > [!IMPORTANT]
+    > Administrators added to the Azure Device Administrators role after you join the device to Azure AD will be unable to use the Settings app.
     >
-    >If you join Surface Hub to Azure AD during first-run setup, single sign-on (SSO) for Office apps will not work properly. Users will have to sign in to each Office app individually.
+    > If you join Surface Hub to Azure AD during first-run setup, single sign-on (SSO) for Office apps will not work properly. Users will have to sign in to each Office app individually.
 
 -   **Use Active Directory Domain Services**
 

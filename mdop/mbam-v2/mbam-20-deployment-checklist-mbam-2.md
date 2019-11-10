@@ -1,15 +1,15 @@
 ---
 title: MBAM 2.0 Deployment Checklist
 description: MBAM 2.0 Deployment Checklist
-author: msfttracyp
+author: dansimp
 ms.assetid: 7905d31d-f21c-4683-b9c4-95b815e08fab
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

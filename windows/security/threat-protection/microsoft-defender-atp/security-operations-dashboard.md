@@ -22,7 +22,7 @@ ms.topic: conceptual
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
 The **Security operations dashboard** is where the endpoint detection and response capabilities are surfaced. It provides a high level overview of where detections were seen and highlights where response actions are needed. 
 
@@ -75,7 +75,7 @@ The **Sensor health** tile provides information on the individual machine’s ab
 ![Sensor health tile](images/atp-tile-sensor-health.png)
 
 There are two status indicators that provide information on the number of machines that are not reporting properly to the service:
--	**Misconfigured** – These machines might partially be reporting sensor data to the Microsoft Defender ATP service and might have configuration errors that need to be corrected.
+- **Misconfigured** – These machines might partially be reporting sensor data to the Microsoft Defender ATP service and might have configuration errors that need to be corrected.
 - **Inactive** - Machines that have stopped reporting to the Microsoft Defender ATP service for more than seven days in the past month.
 
 
@@ -116,18 +116,10 @@ The tile shows you a list of user accounts with the most active alerts and the n
 
 Click the user account to see details about the user account. For more information see [Investigate a user account](investigate-user.md).
 
-## Suspicious activities
-This tile shows audit events based on detections from various security components.
-
-![Suspicous activities tile](images/atp-suspicious-activities-tile.png)
-
-
-
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
 ## Related topics
 - [Understand the Microsoft Defender Advanced Threat Protection portal](use.md)
 - [Portal overview](portal-overview.md)
 - [View the Secure Score dashboard and improve your secure score](secure-score-dashboard.md)
 - [View the Threat analytics dashboard and take recommended mitigation actions](threat-analytics.md)
-

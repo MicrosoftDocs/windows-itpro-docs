@@ -10,8 +10,8 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu, devices
 ms.localizationpriority: medium
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.date: 10/13/2017
 ---
 

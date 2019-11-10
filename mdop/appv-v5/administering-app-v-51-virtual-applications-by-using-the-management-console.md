@@ -1,7 +1,7 @@
 ---
 title: Administering App-V 5.1 Virtual Applications by Using the Management Console
 description: Administering App-V 5.1 Virtual Applications by Using the Management Console
-author: manikadhiman
+author: dansimp
 ms.assetid: a4d078aa-ec54-4fa4-9463-bfb3b971d724
 ms.reviewer: 
 manager: dansimp
@@ -54,7 +54,7 @@ The most common tasks that you can perform with the App-V 5.1 Management console
 
 -   [How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console](how-to-customize-virtual-applications-extensions-for-a-specific-ad-group-by-using-the-management-console51.md)
 
--   [How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console](how-to-view-and-configure-applications-and-default-virtual-application-extensions-by-using-the-management-console-51.md)
+-   [How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console](how-to-view-and-configure-applications-and-default-virtual-application-extensions-by-using-the-management-console-beta.md)
 
 The main elements of the App-V 5.1 Management Console are:
 

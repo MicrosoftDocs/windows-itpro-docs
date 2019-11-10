@@ -28,7 +28,7 @@ The content below are the different versions of the DDF for this CSP.
 
 ### <a id="enterpriseapn-csp-version-1-0-ddf" />EnterpriseAPN CSP version 1.0 DDF
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -316,7 +316,7 @@ The content below are the different versions of the DDF for this CSP.
 
 ### <a id="enterpriseapn-csp-version-1-1-ddf" />EnterpriseAPN CSP version 1.1 DDF
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
@@ -741,7 +741,7 @@ The content below are the different versions of the DDF for this CSP.
 
 ### <a id="enterpriseapn-csp-version-1-2-ddf" />EnterpriseAPN CSP version 1.2 DDF
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

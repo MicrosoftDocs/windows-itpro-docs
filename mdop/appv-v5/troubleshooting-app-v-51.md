@@ -1,11 +1,11 @@
 ---
 title: Troubleshooting App-V 5.1
 description: Troubleshooting App-V 5.1
-author: msfttracyp
+author: dansimp
 ms.assetid: 435d0e56-0aa2-4168-b5a7-2f03a1f273d4
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

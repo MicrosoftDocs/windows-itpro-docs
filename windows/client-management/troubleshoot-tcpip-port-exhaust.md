@@ -78,9 +78,9 @@ Reboot of the server will resolve the issue temporarily, but you would see all t
 
 If you suspect that the machine is in a state of port exhaustion: 
  
-1.	Try making an outbound connection. From the server/machine, access a remote share or try an RDP to another server or telnet to a server on a port. If the outbound connection fails for all of these, go to the next step.
+1. Try making an outbound connection. From the server/machine, access a remote share or try an RDP to another server or telnet to a server on a port. If the outbound connection fails for all of these, go to the next step.
 
-2.	Open event viewer and under the system logs, look for the events which clearly indicate the current state: 
+2. Open event viewer and under the system logs, look for the events which clearly indicate the current state: 
 
     a.	**Event ID 4227**
 
@@ -133,12 +133,12 @@ For Windows 7 and Windows Server 2008 R2, you can update your Powershell version
 
 If method 1 does not help you identify the process (prior to Windows 10 and Windows Server 2012 R2), then have a look at Task Manager: 
 
-1.	Add a column called “handles” under details/processes.
-2.	Sort the column handles to identify the process with the highest number of handles. Usually the process with handles greater than 3000 could be the culprit except for processes like System, lsass.exe, store.exe, sqlsvr.exe.
+1. Add a column called “handles” under details/processes.
+2. Sort the column handles to identify the process with the highest number of handles. Usually the process with handles greater than 3000 could be the culprit except for processes like System, lsass.exe, store.exe, sqlsvr.exe.
 
     ![Screenshot of handles column in Windows Task Maner](images/tcp-ts-21.png)
 
-3.	If any other process than these has a higher number, stop that process and then try to login using domain credentials and see if it succeeds.
+3. If any other process than these has a higher number, stop that process and then try to login using domain credentials and see if it succeeds.
  
 ### Method 3
 
@@ -147,13 +147,13 @@ If Task Manager did not help you identify the process, then use Process Explorer
 Steps to use Process explorer: 
 
 1.	[Download Process Explorer](https://docs.microsoft.com/sysinternals/downloads/process-explorer) and run it **Elevated**. 
-2.	Alt + click the column header, select **Choose Columns**, and on the **Process Performance** tab, add **Handle Count**.
-3.	Select **View \ Show Lower Pane**.
-4.	Select **View \ Lower Pane View \ Handles**.
-5.	Click the **Handles** column to sort by that value.
-6.	Examine the processes with higher handle counts than the rest (will likely be over 10,000 if you can't make outbound connections).
-7.	Click to highlight one of the processes with a high handle count.
-8.	In the lower pane, the handles listed as below are sockets. (Sockets are technically file handles).
+2. Alt + click the column header, select **Choose Columns**, and on the **Process Performance** tab, add **Handle Count**.
+3. Select **View \ Show Lower Pane**.
+4. Select **View \ Lower Pane View \ Handles**.
+5. Click the **Handles** column to sort by that value.
+6. Examine the processes with higher handle counts than the rest (will likely be over 10,000 if you can't make outbound connections).
+7. Click to highlight one of the processes with a high handle count.
+8. In the lower pane, the handles listed as below are sockets. (Sockets are technically file handles).
     
     File   \Device\AFD
 

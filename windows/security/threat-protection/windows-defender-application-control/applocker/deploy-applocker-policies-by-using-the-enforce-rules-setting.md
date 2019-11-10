@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Deploy AppLocker policies by using the enforce rules setting
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes the steps to deploy AppLocker policies by using the enforcement setting method.
 

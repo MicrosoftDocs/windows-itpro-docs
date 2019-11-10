@@ -95,4 +95,4 @@ After you have selected a design and assigned your devices to zones, you can beg
 
 When you are ready to examine the options for the groups, filters, and GPOs, see the [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md) section.
 
-**Next: **[Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md)
+**Next:** [Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md)

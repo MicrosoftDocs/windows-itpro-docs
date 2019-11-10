@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 140" style="enable-background:new 0 0 400 140;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#939393;}
+	.st1{fill:#C2C2C2;}
+	.st2{opacity:0.2;fill:#2F2F2F;enable-background:new    ;}
+	.st3{opacity:0.2;enable-background:new    ;}
+	.st4{opacity:0.25;fill:#FFFFFF;enable-background:new    ;}
+	.st5{fill:#2F2F2F;}
+	.st6{fill:#808080;}
+	.st7{fill:#0078D4;}
+</style>
+<title>win_it-pro-6</title>
+<rect x="84.5" y="8.5" class="st0" width="231" height="123"/>
+<rect x="303.5" y="50.5" class="st1" width="11" height="80"/>
+<rect x="85.5" y="50.5" class="st1" width="11" height="80"/>
+<rect x="303.5" y="8.5" class="st1" width="1" height="42"/>
+<rect x="95.5" y="8.5" class="st1" width="1" height="42"/>
+<circle class="st2" cx="90.5" cy="44.5" r="2"/>
+<circle class="st2" cx="90.5" cy="55.5" r="2"/>
+<circle class="st3" cx="309.5" cy="44.5" r="2"/>
+<circle class="st3" cx="309.5" cy="55.5" r="2"/>
+<rect x="102" y="15" class="st1" width="195" height="111"/>
+<polygon class="st4" points="297,15 229.7,15 297,78 "/>
+<g>
+	<title>DevicesLaptopTablet-blue</title>
+	<path class="st1" d="M371.9-633v10h4v-2.5c0-0.9,0.5-1.8,1.2-2.4l-0.2,0.1l0,0v-2.6h2v1.4l0,0l-0.2,0.1c0.3-0.1,0.6-0.2,0.9-0.2
+		h0.3v-2.4h2v2.4h8v-4L371.9-633z M375.9-624.5h-2v-5h2V-624.5z"/>
+	<path class="st5" d="M365.9-616.9c0,0.3,0.1,0.5,0.2,0.7s0.2,0.4,0.4,0.6c0.2,0.2,0.4,0.3,0.6,0.4c0.2,0.1,0.5,0.2,0.7,0.2h8.1v-8
+		h-4v-10h18v4h2v-6h-22v12.6l-3.3,3.5c-0.3,0.3-0.4,0.6-0.6,1C366-617.6,365.9-617.3,365.9-616.9z"/>
+	<polygon class="st5" points="371.9,-623 375.9,-623 375.9,-623 	"/>
+	<polygon class="st5" points="371.9,-633 389.9,-633 389.9,-633 	"/>
+	<path class="st5" d="M397.3-611.6c0.2-0.2,0.3-0.4,0.4-0.6c0.1-0.3,0.2-0.5,0.2-0.8v-12c0-0.3-0.1-0.5-0.2-0.8
+		c-0.1-0.2-0.3-0.4-0.4-0.6c-0.2-0.2-0.4-0.3-0.6-0.4c-0.2-0.1-0.5-0.2-0.8-0.2h-16c-0.4,0-0.7,0.1-1,0.3c-0.6,0.3-1,0.9-1,1.6v10.1
+		l0,0v2c0,0.3,0,0.5,0.2,0.8c0.1,0.2,0.2,0.5,0.4,0.6c0.2,0.2,0.4,0.3,0.6,0.4c0.2,0.1,0.5,0.2,0.8,0.2h16c0.3,0,0.5,0,0.8-0.2
+		C396.9-611.2,397.1-611.4,397.3-611.6z M395.9-613h-16v-12h16V-613z"/>
+	<path class="st1" d="M379.9-613h16v-12h-16V-613z M387.9-621.2h2v6.3h-2V-621.2z M384.9-618h2v3.2h-2V-618z M381.9-619.8h2v5h-2
+		V-619.8z"/>
+	<path class="st6" d="M378.9-630.3h-2v2.6l0,0l0.1-0.1l0.2-0.1c0.1-0.1,0.3-0.2,0.5-0.3h0.1c0.2-0.1,0.3-0.2,0.5-0.3l0.4-0.2h0.1
+		l0.2-0.2v-1.4H378.9z"/>
+	<path class="st6" d="M378.9-628.9l-0.2,0.1L378.9-628.9z"/>
+	<rect x="381.9" y="-619.8" class="st6" width="2" height="5"/>
+	<rect x="384.9" y="-618" class="st6" width="2" height="3.2"/>
+	<rect x="387.9" y="-621.2" class="st7" width="2" height="6.3"/>
+	<rect x="373.9" y="-629.5" class="st6" width="2" height="5"/>
+	<polygon class="st7" points="381.9,-631.3 379.9,-631.3 379.9,-629 379.9,-629 381.9,-629 381.9,-629 381.9,-629 	"/>
+	<polygon class="st7" points="379.9,-631.4 381.9,-631.4 381.9,-631.4 	"/>
+</g>
+</svg>

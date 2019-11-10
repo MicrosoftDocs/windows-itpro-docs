@@ -1,15 +1,15 @@
 ---
 title: How to Set Up Publishing Servers
 description: How to Set Up Publishing Servers
-author: eavena
+author: dansimp
 ms.assetid: 2111f079-c202-4c49-b2a6-f4237068b2dc
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

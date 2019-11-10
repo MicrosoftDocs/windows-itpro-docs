@@ -4,14 +4,14 @@ description: To successfully deploy the Windows 10 operating system in your org
 ms.assetid: 7A29D546-52CC-482C-8870-8123C7DC04B5
 ms.reviewer: 
 manager: laurawi
-ms.author: greg-lindsay
+ms.audience: itproauthor: greg-lindsay
 keywords: upgrade, in-place, configuration, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.date: 11/06/2018
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 

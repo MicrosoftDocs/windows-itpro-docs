@@ -79,4 +79,4 @@ GPOs for devices running at least Windows Server 2008 should include the follow
 
     >**Note:**  For a sample template for these registry settings, see [Appendix A: Sample GPO Template Files for Settings Used in this Guide](appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md).
 
-**Next: **[Planning Certificate-based Authentication](planning-certificate-based-authentication.md)
+**Next:** [Planning Certificate-based Authentication](planning-certificate-based-authentication.md)

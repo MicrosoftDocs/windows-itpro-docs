@@ -1,11 +1,11 @@
 ---
 title: Release Notes for Microsoft Advanced Group Policy Management 4.0
 description: Release Notes for Microsoft Advanced Group Policy Management 4.0
-author: mjcaparas
+author: dansimp
 ms.assetid: 44c19e61-c8e8-48aa-a2c2-20396d14d5bb
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

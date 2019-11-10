@@ -117,7 +117,7 @@ A Get operation on this node must follow an Exec operation on the /RemoteLock/Lo
 
 Initiate a remote lock of the device.
 
-``` syntax
+```xml
 <Exec>
    <CmdID>1</CmdID>
    <Item>
@@ -130,7 +130,7 @@ Initiate a remote lock of the device.
 
 Initiate a remote lock and PIN reset of the device. To successfully retrieve the new device-generated PIN, the commands must be executed together and in the proper sequence as shown below.
 
-``` syntax
+```xml
 <Sequence>
     <CmdID>1</CmdID>
     <Exec>

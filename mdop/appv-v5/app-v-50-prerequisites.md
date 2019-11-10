@@ -1,7 +1,7 @@
 ---
 title: App-V 5.0 Prerequisites
 description: App-V 5.0 Prerequisites
-author: manikadhiman
+author: dansimp
 ms.assetid: 9756b571-c785-4ce6-a95c-d4e134e89429
 ms.reviewer: 
 manager: dansimp

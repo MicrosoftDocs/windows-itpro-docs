@@ -8,7 +8,7 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 07/19/2017
 ms.topic: article
 ---

@@ -17,7 +17,7 @@ ms.date: 06/26/2017
 
 Here is the XSD for the application parameters.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="utf-16"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="Data">

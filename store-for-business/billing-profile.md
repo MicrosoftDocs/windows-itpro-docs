@@ -16,7 +16,7 @@ manager: dansimp
 ---
 
 # Understand billing profiles
-For commercial customers purchasing software or hardware products from Microsoft using a Microsoft customer agreement, billing profiles let you customeize what products are included on your invoice, and how you pay your invoices. 
+For commercial customers purchasing software or hardware products from Microsoft using a Microsoft customer agreement, billing profiles let you customize what products are included on your invoice, and how you pay your invoices. 
 
 Billing profiles include:
 - **Payment methods** – Credit cards or check/wire transfer

@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: low
 ms.sitesec: library
 ms.pagetype: deploy
+audience: itpro
 author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
@@ -109,7 +110,7 @@ A [glossary](#glossary) of abbreviations used in this topic is provided at the e
 | --- | --- |
 | Must we use Intune for our MDM?  |  No.  No, any MDM will work with Autopilot, but others probably won’t have the same full suite of Windows Autopilot features as Intune.  You’ll get the best experience from Intune. |
 | Can Intune support Win32 app preinstalls?  | Yes.  Starting with the Windows 10 October Update (version 1809), Intune supports Win32 apps using .msi (and .msix) wrappers.  |
-| What is co-management?  | Co-management is when you use a combination of a cloud MDM tool (Intune) and an on-premise configuration tool like System Center Configuration Manager (SCCM). You only need to use SCCM if Intune can’t support what you want to do with your profile.  If you choose to co-manage using Intune + SCCM, you do it by including an SCCM agent in your Intune profile.  When that profile is pushed to the device, the device will see the SCCM agent and go out to SCCM to pull down any additional profile settings. |
+| What is co-management?  | Co-management is when you use a combination of a cloud MDM tool (Intune) and an on-premises configuration tool like System Center Configuration Manager (SCCM). You only need to use SCCM if Intune can’t support what you want to do with your profile.  If you choose to co-manage using Intune + SCCM, you do it by including an SCCM agent in your Intune profile.  When that profile is pushed to the device, the device will see the SCCM agent and go out to SCCM to pull down any additional profile settings. |
 | Must we use System Center Configuration Manager (SCCM) for Windows Autopilot  |  No.  Co-management (described above) is optional. |
 
 
@@ -118,7 +119,7 @@ A [glossary](#glossary) of abbreviations used in this topic is provided at the e
 | Question | Answer |
 | --- | --- |
 | Self-deploying mode  | A new version of Windows Autopilot where the user only turns on the device, and nothing else.  It’s useful for scenarios where a standard user account isn’t needed (e.g., shared devices, or KIOSK devices).  |
-| Hybrid Azure Active Directory join  |  Allows Windows Autopilot devices to connect to an on-premise Active Directory domain controller (in addition to being Azure AD joined). |
+| Hybrid Azure Active Directory join  |  Allows Windows Autopilot devices to connect to an on-premises Active Directory domain controller (in addition to being Azure AD joined). |
 | Windows Autopilot reset  | Removes user apps and settings from a device, but maintains AAD domain join and MDM enrollment.  Useful for when transferring a device from one user to another.  |
 | Personalization  | Adds the following to the OOBE experience: A personalized welcome message can be created A username hint can be added Sign-in page text can be personalized The company’s logo can be included |
 | [Autopilot for existing devices](existing-devices.md)  |  Offers an upgrade path to Windows Autopilot for all existing Win 7/8 devices. |
@@ -140,9 +141,10 @@ A [glossary](#glossary) of abbreviations used in this topic is provided at the e
 |Where is the Windows Autopilot data stored?                                                            |Windows Autopilot data is stored in the United States (US), not in a sovereign cloud, even when the AAD tenant is registered in a sovereign cloud. This is applicable to all Windows Autopilot data, regardless of the portal leveraged to deploy Autopilot.|
 |Why is Windows Autopilot data stored in the US and not in a sovereign cloud?|It is not customer data that we store, but business data which enables Microsoft to provide a service, therefore it is okay for the data to reside in the US. Customers can stop subscribing to the service any time, and, in that event, the business data is removed by Microsoft.|
 |How many ways are there to register a device for Windows Autopilot|There are six ways to register a device, depending on who is doing the registering: <br><br>1.  OEM Direct API (only available to TVOs) <br>2. MPC via the MPC API (must be a CSP) <br>3. MPC via manual upload of CSV file in the UI (must be a CSP) <br>4. MSfB via CSV file upload <br>5. Intune via CSV file upload <br>6.  Microsoft 365 Business portal via CSV file upload|
-|How many ways are there to create an Windows Autopilot profile?|There are four ways to create & assign an Windows Autopilot profile: <br><br>1.   Through MPC (must be a CSP) <br>2.  Through MSfB <br>3. Through Intune (or another MDM) <br>4.  Microsoft 365 Business portal <br><br>Microsoft recommends creation and assignment of profiles through Intune.  |
-| What are some common causes of registration failures? |<br>1.  Bad or missing Hardware hash entries can lead to faulty registration attempts <br>2.    Hidden special characters in CSV files.  <br><br>To avoid this issue, after creating your CSV file, open it in Notepad to look for hidden characters or trailing spaces or other corruptions.|
-|  Is Autopilot supported in all regions/countries? |  <br>Autopilot only supports customers using public Azure. Public Azure does not include the three entities listed below:<br>- Azure Germany <br>- Azure China<br>- Azure Government<br>So, if a customer is set up in global Azure, there are no region restrictions. For example, if Contoso uses global Azure but has employees working in China, the Contoso employees working in China would be able to use Autopilot to deploy devices. If Contoso uses Azure China, the Contoso employees would not be able to use Autopilot.|
+|How many ways are there to create a Windows Autopilot profile?|There are four ways to create & assign an Windows Autopilot profile: <br><br>1.   Through MPC (must be a CSP) <br>2.  Through MSfB <br>3. Through Intune (or another MDM) <br>4.  Microsoft 365 Business portal <br><br>Microsoft recommends creation and assignment of profiles through Intune.  |
+| What are some common causes of registration failures? |1.  Bad or missing Hardware hash entries can lead to faulty registration attempts <br>2.    Hidden special characters in CSV files.  <br><br>To avoid this issue, after creating your CSV file, open it in Notepad to look for hidden characters or trailing spaces or other corruptions.|
+|  Is Autopilot supported on IoT devices? |  Autopilot is not supported on IoT Core devices, and there are currently no plans to add this support. Autopilot is supported on Windows 10 IoT Enterprise SAC devices. Autopilot is supported on Windows 10 Enterprise LTSC 2019 and above; it is not supported on earlier versions of LTSC.|
+|  Is Autopilot supported in all regions/countries? |  Autopilot only supports customers using public Azure. Public Azure does not include the three entities listed below:<br>- Azure Germany <br>- Azure China<br>- Azure Government<br>So, if a customer is set up in global Azure, there are no region restrictions. For example, if Contoso uses global Azure but has employees working in China, the Contoso employees working in China would be able to use Autopilot to deploy devices. If Contoso uses Azure China, the Contoso employees would not be able to use Autopilot.|
 
 ## Glossary
 

@@ -1,7 +1,7 @@
 ---
 title: Tasks for the Application Virtualization Sequencer
 description: Tasks for the Application Virtualization Sequencer
-author: manikadhiman
+author: dansimp
 ms.assetid: 398018f4-297a-440d-b614-23f0ab03e7bd
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Use signed policies to protect Windows Defender Application Control against tampering  (Windows 10)
 description: Signed WDAC policies give organizations the highest level of malware protection available in Windows 10. 
+keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.reviewer: 
 manager: dansimp
@@ -10,7 +11,12 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: isbrahm
+ms.author: dansimp
+manager: dansimp
 ms.date: 05/03/2018
 ---
 
@@ -45,11 +51,11 @@ If you do not have a code signing certificate, see [Optional: Create a code sign
 
 1. Initialize the variables that will be used:
 
-   ` $CIPolicyPath=$env:userprofile+"\Desktop\"`
+   `$CIPolicyPath=$env:userprofile+"\Desktop\"`
     
-   ` $InitialCIPolicy=$CIPolicyPath+"InitialScan.xml"`
+   `$InitialCIPolicy=$CIPolicyPath+"InitialScan.xml"`
     
-   ` $CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
+   `$CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
 
    > [!NOTE]
    > This example uses the WDAC policy that you created in the [Create a Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md) section. If you are signing another policy, be sure to update the **$CIPolicyPath** and **$CIPolicyBin** variables with the correct information.
@@ -60,11 +66,11 @@ If you do not have a code signing certificate, see [Optional: Create a code sign
 
 4. Navigate to your desktop as the working directory:
 
-   ` cd $env:USERPROFILE\Desktop `
+   `cd $env:USERPROFILE\Desktop`
 
 5. Use [Add-SignerRule](https://docs.microsoft.com/powershell/module/configci/add-signerrule) to add an update signer certificate to the WDAC policy:
 
-   ` Add-SignerRule -FilePath $InitialCIPolicy -CertificatePath <Path to exported .cer certificate> -Kernel -User –Update`
+   `Add-SignerRule -FilePath $InitialCIPolicy -CertificatePath <Path to exported .cer certificate> -Kernel -User –Update`
 
    > [!NOTE]
    > *&lt;Path to exported .cer certificate&gt;* should be  the full path to the certificate that you exported in   step 3.
@@ -72,15 +78,15 @@ If you do not have a code signing certificate, see [Optional: Create a code sign
 
 6. Use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption) to remove the unsigned policy rule option:
 
-   ` Set-RuleOption -FilePath $InitialCIPolicy -Option 6 -Delete`
+   `Set-RuleOption -FilePath $InitialCIPolicy -Option 6 -Delete`
 
 7. Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy) to convert the policy to binary format:
 
-   ` ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin`
+   `ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin`
 
 8. Sign the WDAC policy by using SignTool.exe:
 
-   ` <Path to signtool.exe> sign -v /n "ContosoDGSigningCert" -p7 . -p7co 1.3.6.1.4.1.311.79.1 -fd sha256 $CIPolicyBin`
+   `<Path to signtool.exe> sign -v /n "ContosoDGSigningCert" -p7 . -p7co 1.3.6.1.4.1.311.79.1 -fd sha256 $CIPolicyBin`
 
    > [!NOTE]
    > The *&lt;Path to signtool.exe&gt;* variable should be the full path to the SignTool.exe utility. **ContosoDGSigningCert** is the subject name of the certificate that will be used to sign the WDAC policy. You should import this certificate to your personal certificate store on the computer you use to sign the policy.

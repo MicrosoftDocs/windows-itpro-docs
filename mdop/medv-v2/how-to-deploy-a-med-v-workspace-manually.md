@@ -1,15 +1,15 @@
 ---
 title: How to Deploy a MED-V Workspace Manually
 description: How to Deploy a MED-V Workspace Manually
-author: levinec
+author: dansimp
 ms.assetid: 94bfb209-2230-49b6-bb40-9c6ab088dbf4
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

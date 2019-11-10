@@ -1,15 +1,15 @@
 ---
 title: How to Upgrade the Application Virtualization Client
 description: How to Upgrade the Application Virtualization Client
-author: eavena
+author: dansimp
 ms.assetid: 2a75d8b5-da88-456c-85bb-f5bd3d470f7f
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

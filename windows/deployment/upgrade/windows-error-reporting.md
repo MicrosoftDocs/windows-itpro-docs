@@ -9,6 +9,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
+audience: itpro
 author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
@@ -19,7 +20,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
->[!NOTE]
+> [!NOTE]
 > This is a 300 level topic (moderately advanced).  
 > See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
@@ -28,8 +29,8 @@ When Windows Setup fails, the result and extend code are recorded as an informat
 
 To use Windows PowerShell, type the following commands from an elevated Windows PowerShell prompt:
 
->[!IMPORTANT]
->}The following source will be available only if you have updated from a previous version of Windows 10 to a new version. If you installed the current version and have not updated, the source named **WinSetupDiag02** will be unavailable.
+> [!IMPORTANT]
+> The following source will be available only if you have updated from a previous version of Windows 10 to a new version. If you installed the current version and have not updated, the source named **WinSetupDiag02** will be unavailable.
 
 ```Powershell
 $events = Get-WinEvent -FilterHashtable @{LogName="Application";ID="1001";Data="WinSetupDiag02"}
@@ -68,6 +69,6 @@ The event will also contain links to log files that can be used to perform a det
 
 [Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)  
 [Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)  
-[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)  
+[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)  
 [Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)  
 [Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)  

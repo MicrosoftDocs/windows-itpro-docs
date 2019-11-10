@@ -43,12 +43,10 @@ Microsoft Store adds the app to **Products and services**. Click **Manage**, **A
 
     <!--- ![Image showing Manage menu in Microsoft Store for Business.](images/wsfb-manageinventory.png) -->
 
-3.  Use **Refine results** to search for online-licensed apps under **License type**.
-4.  From the list of online-licensed apps, click the ellipses for the app you want, and then choose **Add to private store**.
+3.  Click on the application to open the application settings, then select **Private store availability**.
+4.  Select **Everyone** to make application available for all people in your organization.
 
     <!--- ![Image showing options from Action for each app in Inventory.](images/wsfb-inventoryaddprivatestore.png) -->
-
-The value under **Private store** for the app will change to pending. It will take approximately thirty-six hours before the app is available in the private store.
 
 >[!Note]
  > If you are working with a new Line-of-Business (LOB) app, you have to wait for the app to be available in **Products & services** before adding it to your private store. For more information, see [Working with line-of-business apps](working-with-line-of-business-apps.md). 

@@ -1,15 +1,15 @@
 ---
 title: How to Sequence a New Add-on or Plug-in Application (App-V 4.6 SP1)
 description: How to Sequence a New Add-on or Plug-in Application (App-V 4.6 SP1)
-author: eavena
+author: dansimp
 ms.assetid: 2c018215-66e5-4301-8481-159891a6b35b
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -79,13 +79,13 @@ Click **Next**.
 
 10. On the **Customize** page, if you are finished installing and configuring the virtual application, select **Stop now** and skip to step 14 of this procedure. If you want to customize any of the items in the following list, select **Customize**.
 
-   -   Edit the file type associations associated with an application.
+    -   Edit the file type associations associated with an application.
 
-   -   Prepare the virtual package for streaming. Streaming improves the experience when the virtual application package is run on target computers.
+    -   Prepare the virtual package for streaming. Streaming improves the experience when the virtual application package is run on target computers.
 
-   -   Specify the operating systems that can run this package.
+    -   Specify the operating systems that can run this package.
 
-   Click **Next**.
+    Click **Next**.
 
 11. On the **Edit Shortcuts** page, you can optionally configure the file type associations (FTA) that will be associated with the various applications in the package. To create a new FTA, in the left pane, select and expand the application that you want to customize, and then click **Add**. In the **Add File Type Association** dialog box, provide the necessary information for the new FTA. Under the application, select **Shortcuts** to review the shortcut information associated with an application. In the **Location** pane, you can review the icon file information. To edit an existing FTA, click **Edit**. To remove an FTA, select the FTA, and then click **Remove**. Click **Next**.
 
