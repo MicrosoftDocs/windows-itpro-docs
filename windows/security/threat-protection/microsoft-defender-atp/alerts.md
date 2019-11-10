@@ -22,7 +22,7 @@ ms.topic: article
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-# Methods
+## Methods
 Method |Return Type |Description
 :---|:---|:---
 [Get alert](get-alert-info-by-id.md) | [Alert](alerts.md) | Get a single [alert](alerts.md) object.
@@ -35,7 +35,7 @@ Method |Return Type |Description
 [Get related users](get-alert-related-user-info.md) | [User](user.md) | The [user](user.md) that is associated with the [alert](alerts.md).
 
 
-# Properties
+## Properties
 Property |	Type	|	Description
 :---|:---|:---
 id | String | Alert ID.
