@@ -9,9 +9,9 @@ ms.date: 8/29/2019
 ms.prod: hololens
 ms.topic: article
 audience: ITPro
-ms.localizationpriority: medium
+ms.localizationpriority: high
 appliesto:
-- HoloLens 1
+- HoloLens (1st gen)
 - HoloLens 2
 ---
 
