@@ -3,10 +3,12 @@ title: Managing drivers, dual-managed environments, and Delivery Optimization wi
 description: Learn how to manage drivers, dual managed environments, and bandwidth (Delivery Optimization) with GPOs in Windows Update for Business.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-audience: itproauthor: greg-lindsay
-ms.localizationpriority: medium
-ms.audience: itproauthor: greg-lindsay
+audience: itpro
+itproauthor: jaimeo
+author: jaimeo
+ms.localizationprioauthor: jaimeo
+ms.audience: itpro
+author: jaimeo
 ms.date: 06/21/2018
 ms.reviewer: 
 manager: laurawi

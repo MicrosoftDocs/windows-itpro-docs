@@ -14,7 +14,7 @@ ms.localizationpriority: High
 ---
 # Get started with Surface devices
 
-Harness the power of Surface, Windows,and Office connected together through the cloud. Find tools, step-by-step guides, and other resources to help you plan, deploy, and manage Surface devices in your organization.
+Harness the power of Surface, Windows, and Office connected together through the cloud. Find tools, step-by-step guides, and other resources to help you plan, deploy, and manage Surface for Business devices in your organization.
 
 <ul class="panelContent cardsF">
     <li>
@@ -29,7 +29,7 @@ Harness the power of Surface, Windows,and Office connected together through the 
                     <div class="cardText">
                         <h3>Plan</h3>
                          <p><a href="considerations-for-surface-and-system-center-configuration-manager.md">Surface and SCCM considerations</a></p>
-                         <p><a href="deploy-surface-app-with-windows-store-for-business.md">Deploy Surface app with Microsoft Store for Business</a></p>
+                         <p><a href="wake-on-lan-for-surface-devices.md">Wake On LAN for Surface devices</a></p>
                     </div>
                 </div>
             </div>
@@ -86,8 +86,8 @@ Harness the power of Surface, Windows,and Office connected together through the 
                     </div>
                     <div class="cardText">
                         <h3>Secure</h3>
-                        <p><a href="surface-enterprise-management-mode.md">Surface Enterprise Management Mode (SEMM)</a></p>
-                        <p><a href="manage-surface-uefi-settings.md">Manage UEFI</a></p>
+                          <p><a href="surface-manage-dfci-guide.md">Intune management of Surface UEFI settings</a></p>
+                          <p><a href="surface-enterprise-management-mode.md">Surface Enterprise Management Mode (SEMM)</a></p>                     
                         <p><a href="microsoft-surface-data-eraser.md">Surface Data Eraser tool</a></p>
                     </div>
                 </div>
@@ -105,6 +105,8 @@ Harness the power of Surface, Windows,and Office connected together through the 
                     </div>
                     <div class="cardText">
                         <h3>Support</h3>
+                         <p><a href="https://support.microsoft.com/help/4483194/maximize-surface-battery-life">Maximize your Surface battery life</a></p>
+                         <p><a href="https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations">Troubleshoot Surface Dock and docking stations</a></p>
                         <p><a href="support-solutions-surface.md">Top support solutions</a></p>
                     </div>
                 </div>

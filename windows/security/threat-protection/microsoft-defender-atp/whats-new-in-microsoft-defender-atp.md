@@ -27,6 +27,21 @@ The following features are generally available (GA) in the latest release of Mic
 
 For more information preview features, see [Preview features](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-windows-defender-advanced-threat-protection).
 
+## November 2019
+
+- [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac.md) <BR> Microsoft Defender ATP for Mac brings the next-generation protection to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices. ([Endpoint detection and response is currently in preview](preview.md).)
+
+## October 2019
+
+- [Indicators for IP addresses, URLs/Domains](manage-indicators.md) <BR> You can now allow or block URLs/domains using your own threat intelligence. 
+
+
+- [Microsoft Threat Experts - Experts on Demand](microsoft-threat-experts.md) <BR> You now have the option to consult with Microsoft Threat Experts from several places in the portal to help you in the context of your investigation.   
+ 
+- [Connected Azure AD applications](connected-applications.md)<br> The Connected applications page provides information about the Azure AD applications connected to Microsoft Defender ATP in your organization. 
+
+- [API Explorer](api-explorer.md)<br> The API explorer makes it easy to construct and perform API queries, test and send requests for any available Microsoft Defender ATP API endpoint.
+
 
 ## September 2019
 

@@ -38,8 +38,10 @@ The following diagram shows the Reboot configuration service provider management
 <p style="margin-left: 20px">The supported operation is Get.</p>
 
 <a href="" id="schedule-single"></a>**Schedule/Single**  
-<p style="margin-left: 20px">This node will execute a reboot at a scheduled date and time. Setting a null (empty) date will delete the existing schedule. The date and time value is ISO8601, and both the date and time are required.  </br>
+<p style="margin-left: 20px">This node will execute a reboot at a scheduled date and time. The date and time value is **ISO 8601**, and both the date and time are required.  </br>
 Example to configure: 2018-10-25T18:00:00</p>
+
+Setting a null (empty) date will delete the existing schedule. In accordance with the ISO 8601 format, the date and time representation needs to be 0000-00-00T00:00:00.
 
 <p style="margin-left: 20px">The supported operations are Get, Add, Replace, and Delete.</p>
 
@@ -53,13 +55,3 @@ Example to configure: 2018-10-25T18:00:00</p>
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

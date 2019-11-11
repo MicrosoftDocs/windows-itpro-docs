@@ -27,15 +27,15 @@ Before deploying a device using Windows Autopilot, the device must be registered
 
 ## OEM registration
 
-When you purchase devices directly from an OEM, that OEM can automatically register the devices with the Windows Autopilot deployment service.  For the list of OEMs that currently support this, see the "Participant device manufacturers" section of the [Windows Autopilot information page](https://www.microsoft.com/microsoft-365/windows/windows-autopilot).
+When you purchase devices directly from an OEM, that OEM can automatically register the devices with the Windows Autopilot deployment service.  For the list of OEMs that currently support this, see the "Participant device manufacturers and resellers" section of the [Windows Autopilot information page](https://aka.ms/windowsautopilot).
 
 Before an OEM can register devices on behalf of an organization, the organization must grant the OEM permission to do so.  This process is initiated by the OEM, with approval granted by an Azure AD global administrator from the organization.  See the "Customer Consent" section of the [Customer consent page](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#oem-authorization).
 
 ## Reseller, distributor, or partner registration
 
-Customers may purchase devices from resellers, distributors, or other partners.  As long as these resellers, distributors, and partners are part of the [Cloud Solution Partners (CSP) program](https://partner.microsoft.com/membership/cloud-solution-provider), they too can register devices on behalf of the customer.  
+Customers may purchase devices from resellers, distributors, or other partners.  As long as these resellers, distributors, and partners are part of the [Cloud Solution Partners (CSP) program](https://partner.microsoft.com/en-us/cloud-solution-provider), they too can register devices on behalf of the customer.  
 
-As with OEMs, CSP parnters must be granted permission to register devices on behalf of an organization.  This follows the process described on the [Customer consent page](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#csp-authorization).  The CSP partner initiates a request to establish a relationship with the organization, with approval granted by a global administrator from the organization.  Once approved, CSP partners add devices using [Partner Center](https://docs.microsoft.com/partner-center/), either directly through the web site or via available APIs that can automate the same tasks.
+As with OEMs, CSP partners must be granted permission to register devices on behalf of an organization.  This follows the process described on the [Customer consent page](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#csp-authorization).  The CSP partner initiates a request to establish a relationship with the organization, with approval granted by a global administrator from the organization.  Once approved, CSP partners add devices using [Partner Center](https://partner.microsoft.com/en-us/pcv/dashboard/overview), either directly through the web site or via available APIs that can automate the same tasks.
 
 Windows Autopilot does not require delegated administrator permissions when establishing the relationship between the CSP partner and the organization.  As part of the approval process performed by the global administrator, the global administrator can choose to uncheck the "Include delegated administration permissions" checkbox.
 
@@ -43,9 +43,9 @@ Windows Autopilot does not require delegated administrator permissions when esta
 
 If an existing device is already running Windows 10 version 1703 or later and enrolled in an MDM service such an Intune, that MDM service can ask the device for the hardware ID (also known as a hardware hash).  Once it has that, it can automatically register the device with Windows Autopilot.
 
-For instructions on how to do this with Microsoft Intune, see [Create an Autopilot deployment profile](https://docs.microsoft.com/intune/enrollment/enrollment-autopilot#create-an-autopilot-deployment-profile) documentation describing the "Convert all targeted devices to Autopilot" setting. 
+For instructions on how to do this with Microsoft Intune, see [Create an Autopilot deployment profile](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile) documentation describing the "Convert all targeted devices to Autopilot" setting. 
 
-Also note that when using the [Windows Autopilot for existing devices](hhttps://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) scenario, it is not necessary to pre-register the devices with Windows Autopilot.  Instead, a configuration file (AutopilotConfigurationFile.json) containing all the Windows Autopilot profile settings is used; the device can be registered with Windows Autopilot after the fact using the same "Convert all targeted devices to Autopilot" setting.
+Also note that when using the [Windows Autopilot for existing devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) scenario, it is not necessary to pre-register the devices with Windows Autopilot.  Instead, a configuration file (AutopilotConfigurationFile.json) containing all the Windows Autopilot profile settings is used; the device can be registered with Windows Autopilot after the fact using the same "Convert all targeted devices to Autopilot" setting.
 
 ## Manual registration
 
@@ -95,9 +95,9 @@ The commands can also be run remotely, as long as WMI permissions are in place a
 
 Once the hardware IDs have been captured from existing devices, they can be uploaded through a variety of means. See the detailed documentation for each available mechanism.
 
--   [Microsoft Intune](https://docs.microsoft.com/intune/enrollment/enrollment-autopilot).  This is the preferred mechanism for all customers.
+-   [Microsoft Intune](https://docs.microsoft.com/intune/enrollment-autopilot).  This is the preferred mechanism for all customers.
 -   [Partner Center](https://msdn.microsoft.com/partner-center/autopilot).  This is used by CSP partners to register devices on behalf of customers.
--   [Microsoft 365 Business & Office 365 Admin](https://docs.microsoft.com/microsoft-365/business/add-autopilot-devices-and-profile).  This is typically used by small and medium businesses (SMBs) who manage their devices using Microsoft 365 Business.
+-   [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa).  This is typically used by small and medium businesses (SMBs) who manage their devices using Microsoft 365 Business.
 -   [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles).  You might already be using MSfB to manage your apps and settings.
 
 A summary of each platform's capabilities is provided below.
@@ -125,9 +125,9 @@ A summary of each platform's capabilities is provided below.
 </tr>
 
 <tr>
-<td><a href="https://docs.microsoft.com/intune/enrollment/enrollment-autopilot">Intune</a></td>
-<td>YES - 500 at a time max<b>\*</b></td>
-<td>YES<b>\*</b></td>
+<td><a href="https://docs.microsoft.com/intune/enrollment-autopilot">Intune</a></td>
+<td>YES - 500 at a time max<b>*</b></td>
+<td>YES<b>*</b></td>
 <td>4K HH</td>
 </tr>
 
@@ -160,4 +160,3 @@ When deploying new devices using Windows Autopilot, the following steps are requ
 ## Other configuration settings
 
 - [Bitlocker encryption settings](bitlocker.md): You can configure the BitLocker encryption settings to be applied before automatic encryption is started.
-

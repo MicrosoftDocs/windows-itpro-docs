@@ -8,7 +8,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 09/18/2019
+ms.date: 10/09/2019
 ms.reviewer: scottmca
 manager: dansimp
 ms.audience: itpro
@@ -50,7 +50,13 @@ You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firm
 > [!NOTE]
 > A log file is not created by default. In order to create a log file, you will need to append "/l*v [path]"
 
+> [!NOTE]
+> A log file is not created by default. In order to create a log file, you will need to append "/l*v [path]"
+
 For more information, refer to [Command line options](https://docs.microsoft.com/windows/win32/msi/command-line-options) documentation.
+
+> [!IMPORTANT]
+> If you want to keep your Surface Dock updated using any other method, refer to [Update your Surface Dock](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) for details.
 
 ## Intune deployment
 You can use Intune to distribute Surface Dock Firmware Update to your devices. First you will need to convert the MSI file to the .intunewin format, as described in the following documentation: [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps/apps-win32-app-management).

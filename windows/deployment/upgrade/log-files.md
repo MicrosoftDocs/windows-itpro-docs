@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -159,6 +160,93 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 27:08, Error           SP     SPDoFrameworkGather: Gather operation failed. Error: 0x0000002C
 </pre>
 
+<br><B>setupapi.dev.log</B> content:
+
+<pre style="font-size: 10px; overflow-y: visible">
+>>>  [Device Install (UpdateDriverForPlugAndPlayDevices) - PCI\VEN_8086&DEV_8C4F]
+>>>  Section start 2019/09/26 20:13:01.623
+      cmd: rundll32.exe "C:\WINDOWS\Installer\MSI6E4C.tmp",zzzzInvokeManagedCustomActionOutOfProc SfxCA_95972906 484 ChipsetWiX.CustomAction!Intel.Deployment.ChipsetWiX.CustomActions.InstallDrivers
+     ndv: INF path: C:\WINDOWS\TEMP\{15B1CD41-69F5-48EA-9F45-0560A40FE2D8}\Drivers\lynxpoint\LynxPointSystem.inf
+     ndv: Install flags: 0x00000000
+     ndv: {Update Device Driver - PCI\VEN_8086&DEV_8C4F&SUBSYS_05BE1028&REV_04\3&11583659&0&F8}
+     ndv:      Search options: 0x00000081
+     ndv:      Searching single INF 'C:\WINDOWS\TEMP\{15B1CD41-69F5-48EA-9F45-0560A40FE2D8}\Drivers\lynxpoint\LynxPointSystem.inf'
+     dvi:      {Build Driver List} 20:13:01.643
+     dvi:           Searching for hardware ID(s):
+     dvi:                pci\ven_8086&dev_8c4f&subsys_05be1028&rev_04
+     dvi:                pci\ven_8086&dev_8c4f&subsys_05be1028
+     dvi:                pci\ven_8086&dev_8c4f&cc_060100
+     dvi:                pci\ven_8086&dev_8c4f&cc_0601
+     dvi:           Searching for compatible ID(s):
+     dvi:                pci\ven_8086&dev_8c4f&rev_04
+     dvi:                pci\ven_8086&dev_8c4f
+     dvi:                pci\ven_8086&cc_060100
+     dvi:                pci\ven_8086&cc_0601
+     dvi:                pci\ven_8086
+     dvi:                pci\cc_060100
+     dvi:                pci\cc_0601
+     sig:           {_VERIFY_FILE_SIGNATURE} 20:13:01.667
+     sig:                Key      = lynxpointsystem.inf
+     sig:                FilePath = c:\windows\temp\{15b1cd41-69f5-48ea-9f45-0560a40fe2d8}\drivers\lynxpoint\lynxpointsystem.inf
+     sig:                Catalog  = c:\windows\temp\{15b1cd41-69f5-48ea-9f45-0560a40fe2d8}\drivers\lynxpoint\LynxPoint.cat
+     sig:                Success: File is signed in catalog.
+     sig:           {_VERIFY_FILE_SIGNATURE exit(0x00000000)} 20:13:01.683
+     dvi:           Created Driver Node:
+     dvi:                HardwareID   - PCI\VEN_8086&DEV_8C4F
+     dvi:                InfName      - c:\windows\temp\{15b1cd41-69f5-48ea-9f45-0560a40fe2d8}\drivers\lynxpoint\lynxpointsystem.inf
+     dvi:                DevDesc      - Intel(R) QM87 LPC Controller - 8C4F
+     dvi:                Section      - Needs_ISAPNP_DRV
+     dvi:                Rank         - 0x00ff2001
+     dvi:                Signer Score - WHQL
+     dvi:                DrvDate      - 04/04/2016
+     dvi:                Version      - 10.1.1.18
+     dvi:      {Build Driver List - exit(0x00000000)} 20:13:01.699
+     ndv:      Searching currently installed INF
+     dvi:      {Build Driver List} 20:13:01.699
+     dvi:           Searching for hardware ID(s):
+     dvi:                pci\ven_8086&dev_8c4f&subsys_05be1028&rev_04
+     dvi:                pci\ven_8086&dev_8c4f&subsys_05be1028
+     dvi:                pci\ven_8086&dev_8c4f&cc_060100
+     dvi:                pci\ven_8086&dev_8c4f&cc_0601
+     dvi:           Searching for compatible ID(s):
+     dvi:                pci\ven_8086&dev_8c4f&rev_04
+     dvi:                pci\ven_8086&dev_8c4f
+     dvi:                pci\ven_8086&cc_060100
+     dvi:                pci\ven_8086&cc_0601
+     dvi:                pci\ven_8086
+     dvi:                pci\cc_060100
+     dvi:                pci\cc_0601
+     dvi:           Created Driver Node:
+     dvi:                HardwareID   - PCI\VEN_8086&DEV_8C4F
+     dvi:                InfName      - C:\WINDOWS\System32\DriverStore\FileRepository\lynxpointsystem.inf_amd64_cd1e518d883ecdfe\lynxpointsystem.inf
+     dvi:                DevDesc      - Intel(R) QM87 LPC Controller - 8C4F
+     dvi:                Section      - Needs_ISAPNP_DRV
+     dvi:                Rank         - 0x00ff2001
+     dvi:                Signer Score - WHQL
+     dvi:                DrvDate      - 10/03/2016
+     dvi:                Version      - 10.1.1.38
+     dvi:      {Build Driver List - exit(0x00000000)} 20:13:01.731
+     dvi:      {DIF_SELECTBESTCOMPATDRV} 20:13:01.731
+     dvi:           Default installer: Enter 20:13:01.735
+     dvi:                {Select Best Driver}
+     dvi:                     Class GUID of device changed to: {4d36e97d-e325-11ce-bfc1-08002be10318}.
+     dvi:                     Selected Driver:
+     dvi:                          Description - Intel(R) QM87 LPC Controller - 8C4F
+     dvi:                          InfFile     - c:\windows\system32\driverstore\filerepository\lynxpointsystem.inf_amd64_cd1e518d883ecdfe\lynxpointsystem.inf
+     dvi:                          Section     - Needs_ISAPNP_DRV
+     dvi:                {Select Best Driver - exit(0x00000000)}
+     dvi:           Default installer: Exit
+     dvi:      {DIF_SELECTBESTCOMPATDRV - exit(0x00000000)} 20:13:01.743
+     ndv:      Currently Installed Driver:
+     ndv:           Inf Name       - oem1.inf
+     ndv:           Driver Date    - 10/03/2016
+     ndv:           Driver Version - 10.1.1.38
+     ndv: {Update Device Driver - exit(00000103)}
+!    ndv: No better matching drivers found for device 'PCI\VEN_8086&DEV_8C4F&SUBSYS_05BE1028&REV_04\3&11583659&0&F8'.
+!    ndv: No devices were updated.
+<<<  Section end 2019/09/26 20:13:01.759
+<<<  [Exit status: FAILURE(0xC1900101)]
+</pre>
 
 <br>This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file. Note: In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
 
