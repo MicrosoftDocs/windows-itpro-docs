@@ -67,7 +67,7 @@ Before configuring DFCI policy settings, first create a DFCI profile and assign 
 1. Sign into your tenant at  devicemanagement.microsoft.com.
 2. In the Microsoft Endpoint Manager Admin Center, select **Devices > Configuration profiles > Create profile** and enter a name; for example, **DFCI Configuration Policy.**
 3. Select **Windows 10 and later** for platform type.
-4. In the Profile type drop down list, select **Device Firmware Configuration Interface** to open the DFCI blade containing all available policy settings. For information on DFCI settings, refer to [Table 1. DFCI Scenarios](#Table-1-DFCI-Scenarios) on this page or the [Intune documentation](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows). You can configure DFCI settings during the initial setup process or later by editing the DFCI profile.
+4. In the Profile type drop down list, select **Device Firmware Configuration Interface** to open the DFCI blade containing all available policy settings. For information on DFCI settings, refer to Table 1 on this page or the [Intune documentation](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows). You can configure DFCI settings during the initial setup process or later by editing the DFCI profile.
 
 > ![Create DFCI profile](images/df1.png)
 
