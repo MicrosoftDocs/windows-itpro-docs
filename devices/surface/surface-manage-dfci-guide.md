@@ -29,9 +29,11 @@ In contrast to other Windows 10 devices available in the market today, Surface p
 
 Until now, managing firmware required enrolling devices into Surface Enterprise Management Mode (SEMM) with the overhead of ongoing manual IT-intensive tasks. As an example, SEMM requires IT staff to physically access each PC to enter a two-digit pin as part of the certificate management process. Although SEMM remains a good solution for organizations in a strictly on-premises environment, its complexity and IT-intensive requirements make it costly to use.
 
-Now with newly integrated UEFI firmware management capabilities in Microsoft Intune, the ability to lock down hardware is simplified and easier to use with new features for provisioning, security, and streamlined updating all in a single console, now unified as Microsoft Endpoint Manager. 
+Now with newly integrated UEFI firmware management capabilities in Microsoft Intune, the ability to lock down hardware is simplified and easier to use with new features for provisioning, security, and streamlined updating all in a single console, now unified as [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager). The following figure shows UEFI settings viewed directly on the device (left) and viewed in the Endpoint Manager console (right).
 
-DFCI leverages the device profiles capability in Intune and is deployed using Windows Autopilot, eliminating the need for manual interaction by IT admins or end users. A device profile allows you to add and configure settings which can then be deployed to devices enrolled in management within your organization. Once the device receives the device profile, the features and settings are applied automatically. Examples of common device profiles include Email, Device restrictions, VPN, Wi-Fi, and Administrative templates. DFCI is simply an additional device profile that enables you to manage UEFI configuration settings from the cloud without having to maintain a costly on-premises infrastructure.  
+> ![UEFI settings shown on device (left) and in the Endpoint Manager console (right) ](images/uefidfci.png)
+
+Crucially, DFCI enables zero touch management, eliminating the need for manual interaction by IT admins. DFCI is deployed via Windows Autopilot using the device profiles capability in Intune. A device profile allows you to add and configure settings which can then be deployed to devices enrolled in management within your organization. Once the device receives the device profile, the features and settings are applied automatically. Examples of common device profiles include Email, Device restrictions, VPN, Wi-Fi, and Administrative templates. DFCI is simply an additional device profile that enables you to manage UEFI configuration settings from the cloud without having to maintain on-premises infrastructure.  
 
 ## Supported devices
 
@@ -62,27 +64,31 @@ A DFCI environment requires setting up a DFCI profile that contains  the setting
 
 Before configuring DFCI policy settings, first create a DFCI profile and assign it to the Azure AD security group that contains your target devices.
 
-1. Go to devicemanagement.microsoft.com, select **Devices > Windows configuration profiles > Create profile** and enter a name; for example **DFCI Configuration Policy.**
-2. Select Windows 10 and later for platform type.
-3. In the Profile type drop down list, select **Device Firmware Configuration Interface** to open the DFCI blade containing all available policy settings. For information on DFCI settings, refer to Table 2 on this page below or the [Intune documentation](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows). You can configure DFCI settings during the initial setup process or later by editing the DFCI profile.
+1. Sign into your tenant at  devicemanagement.microsoft.com.
+2. In the Microsoft Endpoint Manager Admin Center, select **Devices > Configuration profiles > Create profile** and enter a name; for example, **DFCI Configuration Policy.**
+3. Select **Windows 10 and later** for platform type.
+4. In the Profile type drop down list, select **Device Firmware Configuration Interface** to open the DFCI blade containing all available policy settings. For information on DFCI settings, refer to [Table 1. DFCI Scenarios](#Table-1-DFCI-Scenarios) on this page or the [Intune documentation](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows). You can configure DFCI settings during the initial setup process or later by editing the DFCI profile.
 
 > ![Create DFCI profile](images/df1.png)
 
-4. Click **OK** and then select **Create**.
-5. Select **Assignments** and under **Select groups to include** select the Azure AD security group that contains your target devices, as shown in the following figure. Click **Save**.
+5. Click **OK** and then select **Create**.
+6. Select **Assignments** and under **Select groups to include** select the Azure AD security group that contains your target devices, as shown in the following figure. Click **Save**.
 
 ![Assign security group](images/df2a.png)
 
 ## Create Autopilot profile
 
-1. In Endpoint Manager, go to **Devices > Device enrollment > Windows enrollment** and scroll down to select **Deployment Profiles**.
-2. Select **Create profile**, enter a name; for example, My Autopilot profile, and select **Next**.
+1. In Endpoint Manager at  devicemanagement.microsoft.com, select **devices > Windows enrollment** and scroll down to **Deployment profiles**.
+2. Select **Create profile** and enter a name; for example, **My Autopilot profile**, and select **Next**.
 3. Select the following settings:
 
-- Deployment mode: **User-Driven**.
-- Join type: Azure **AD joined**.
+ - Deployment mode: **User-Driven**.
+ - Join type: Azure **AD joined**.
 
-4. Leave the remaining default settings unchanged and select **Next**
+4. Leave the remaining default settings unchanged and select **Next**, as shown in the following figure.
+
+> ![Create Autopilot profile](images/df3b.png)
+
 5. On the Scope tags page, select **Next**.
 6. On the Assignments page, choose **Select groups to include** and click your Azure AD security group. Select **Next**.
 7. Accept the summary and then select **Create**. The Autopilot profile is now created and assigned to the group.
@@ -98,15 +104,15 @@ For more information, refer to [Set up an enrollment status page](https://docs.m
 
 DFCI includes a streamlined set of UEFI configuration policies that provide an extra level of security by locking down devices at the hardware level. DFCI is designed to be used in conjunction with mobile device management settings at the software level. Note that DFCI settings only affect hardware components built into Surface devices and do not extend to attached peripherals such as USB webcams. (However, you can use Device restriction policies in Intune to turn off access to attached peripherals at the software level).
 
-You configure DFCI policy settings by editing the DFCI profile from the Microsoft Endpoint Manager Admin Center, as shown in the figure below. 
+You configure DFCI policy settings by editing the DFCI profile from Endpoint Manager, as shown in the figure below. 
 
-- **Home > Devices > Windows > Configuration Profiles > “DFCI profile name” > Properties > Settings**
+- Select **Devices > Windows > Configuration Profiles > “DFCI profile name” > Properties > Settings**.
 
 > ![Configure DFCI settings](images/DFCI-settings-config.png)
 
 ### Block user access to UEFI settings
 
-For many customers, the ability to block users from changing UEFI settings is critically important and a primary reason to use DFCI. As listed in the followng table, this is managed via the setting **Allow local user to change UEFI settings**. If you do not edit or configure this setting, local users will be able to change any UEFI setting not managed by Intune. Therefore, it’s highly recommended to disable **Allow local user to change UEFI settings.**
+For many customers, the ability to block users from changing UEFI settings is critically important and a primary reason to use DFCI. As listed in Table 1, this is managed via the setting **Allow local user to change UEFI settings**. If you do not edit or configure this setting, local users will be able to change any UEFI setting not managed by Intune. Therefore, it’s highly recommended to disable **Allow local user to change UEFI settings.**
 The rest of the DFCI settings enable you to turn off functionality that would otherwise be available to users. For example, if you need to protect sensitive information in highly secure areas, you can disable the camera, and if you don’t want users booting from USB drives, you can disable that also.
 
 ### Table 1. DFCI scenarios
@@ -120,7 +126,7 @@ The rest of the DFCI settings enable you to turn off functionality that would ot
 | Disable Boot from external media (USB, SD)    | Under **Built in Hardware > Boot Options > Boot from external media (USB, SD)**, select **Disabled**. |
 
 > [!CAUTION]
-> Disable radios (Bluetooth, Wi-Fi) should only be used on devices that have a wired Ethernet connection.
+> The **Disable radios (Bluetooth, Wi-Fi)** setting should only be used on devices that have a wired Ethernet connection.
  
 > [!NOTE]
 >  DFCI in Intune includes two settings that do not currently apply to Surface devices: (1) CPU and IO virtualization and (2) Disable Boot from network adapters.
