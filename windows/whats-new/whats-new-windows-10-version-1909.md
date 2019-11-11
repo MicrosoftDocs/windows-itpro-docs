@@ -9,7 +9,7 @@ audience: itpro
 author: greg-lindsay
 ms.author: greglin
 manager: laurawi
-ms.localizationpriority: high
+ms.localization: high
 ms.topic: article
 ---
 
