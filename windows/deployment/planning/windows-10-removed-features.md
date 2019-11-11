@@ -3,7 +3,7 @@ title: Windows 10 - Features that have been removed
 description: Learn about features and functionality that has been removed or replaced in Windows 10
 ms.prod: w10
 ms.mktglfcycl: plan
-ms.localizationpriority: medium
+ms.localization: medium
 ms.sitesec: library
 audience: itpro
 author: greg-lindsay
@@ -50,7 +50,7 @@ The following features and functionalities have been removed from the installed 
 |Outlook Express  | This legacy application will be removed due to lack of functionality. | 1709 |
 |Reader app  | Functionality to be integrated into Microsoft Edge. | 1709 |
 |Reading List | Functionality to be integrated into Microsoft Edge. | 1709 |
-|Screen saver functionality in Themes   | This functionality is disabled in Themes, and classified as **Removed** in this table. Screen saver functionality in Group Policies, Control Panel, and Sysprep continues to be functional. Lockscreen features and policies are preferred. | 1709 |
+|Screen saver functionality in Themes   | This functionality is disabled in Themes, and classified as **Removed** in this table. Screen saver functionality in Group Policies, Control Panel, and Sysprep continues to be functional. Lock screen features and policies are preferred. | 1709 |
 |Syskey.exe | Removing this nonsecure security feature. We recommend that users use BitLocker instead. For more information, see [4025993 Syskey.exe utility is no longer supported in Windows 10 RS3 and Windows Server 2016 RS3](https://support.microsoft.com/help/4025993/syskey-exe-utility-is-no-longer-supported-in-windows-10-rs3-and-window). | 1709 |
 |TCP Offload Engine | Removing this legacy code. This functionality was previously transitioned to the Stack TCP Engine. For more information, see [Why Are We Deprecating Network Performance Features?](https://blogs.technet.microsoft.com/askpfeplat/2017/06/13/why-are-we-deprecating-network-performance-features-kb4014193).| 1709 |
 |Tile Data Layer |To be replaced by the Tile Store.| 1709 |

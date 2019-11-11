@@ -3,7 +3,7 @@ title: Windows 10 features we’re no longer developing
 description: Review the list of features that are no longer being developed in Windows 10
 ms.prod: w10
 ms.mktglfcycl: plan
-ms.localizationpriority: medium
+ms.localization: medium
 ms.sitesec: library
 audience: itpro
 author: greg-lindsay
@@ -49,7 +49,7 @@ The features described below are no longer being actively developed, and might b
 |IIS Digest Authentication | We recommend that users use alternative authentication methods.| 1709 |
 |Resilient File System (ReFS) (added: August 17, 2017)| Creation ability will be available in the following editions only: Windows 10 Enterprise and Windows 10 Pro for Workstations.  Creation ability will be removed from all other editions. All other editions will have Read and Write ability. | 1709 |
 |RSA/AES Encryption for IIS   | We recommend that users use CNG encryption provider. | 1709 |
-|Screen saver functionality in Themes   | Disabled in Themes. Screen saver functionality in Group Policies, Control Panel, and Sysprep continues to be functional. Lockscreen features and policies are preferred. | 1709 |
+|Screen saver functionality in Themes   | Disabled in Themes. Screen saver functionality in Group Policies, Control Panel, and Sysprep continues to be functional. Lock screen features and policies are preferred. | 1709 |
 |Sync your settings (updated: August 17, 2017) | Back-end changes: In future releases, the back-end storage for the current sync process will change. A single cloud storage system will be used for Enterprise State Roaming and all other users. The **Sync your settings** options and the Enterprise State Roaming feature will continue to work. | 1709 |
 |System Image Backup (SIB) Solution  | We recommend that users use full-disk backup solutions from other vendors. | 1709 |
 |TLS RC4 Ciphers  |To be disabled by default. For more information, see the following Windows IT Center topic: [TLS (Schannel SSP) changes in Windows 10 and Windows Server 2016](/windows-server/security/tls/tls-schannel-ssp-changes-in-windows-10-and-windows-server)| 1709 |
@@ -60,6 +60,6 @@ The features described below are no longer being actively developed, and might b
 |Windows PowerShell 2.0  | Applications and components should be migrated to PowerShell 5.0+. | 1709 |
 |Apndatabase.xml | Apndatabase.xml is being replaced by the COSA database. Therefore, some constructs will no longer function. This includes Hardware ID, incoming SMS messaging rules in mobile apps, a list of privileged apps in mobile apps, autoconnect order, APN parser, and CDMAProvider ID. | 1703 |
 |Tile Data Layer | The [Tile Data Layer](https://docs.microsoft.com/windows/configuration/start-layout-troubleshoot#symptom-start-menu-issues-with-tile-data-layer-corruption) database stopped development in Windows 10, version 1703. | 1703 |
-|TLS DHE_DSS ciphers DisabledByDefault|  | 1703 |
-|TCPChimney | TCP Chimney Offload is no longer being developed.  See (Performance Tuning Network Adapters)[https://docs.microsoft.com/windows-server/networking/technologies/network-subsystem/net-sub-performance-tuning-nics]. | 1703 |
+|TLS DHE_DSS ciphers DisabledByDefault| This registry setting will be removed in a future release. See [TLS registry settings](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings) | 1703 |
+|TCPChimney | TCP Chimney Offload is no longer being developed.  See [Performance Tuning Network Adapters](https://docs.microsoft.com/windows-server/networking/technologies/network-subsystem/net-sub-performance-tuning-nics). | 1703 |
 |IPsec Task Offload| [IPsec Task Offload](https://docs.microsoft.com/windows-hardware/drivers/network/task-offload) versions 1 and 2 are no longer being developed and should not be used. | 1703 |
