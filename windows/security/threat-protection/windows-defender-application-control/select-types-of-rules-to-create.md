@@ -17,43 +17,35 @@ manager: dansimp
 ms.date: 04/20/2018
 ---
 
-# Deploy Windows Defender Application Control policy rules and file rules
+# Understand WDAC policy rules and file rules
 
 **Applies to:**
 
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 and above
 
 Windows Defender Application Control (WDAC) provides control over a computer running Windows 10 by using policies that specify whether a driver or application is trusted and can be run. A policy includes *policy rules* that control options such as audit mode or whether user mode code integrity (UMCI) is enabled in a WDAC policy, and *file rules* (or *file rule levels*) that specify the level at which applications will be identified and trusted.
 
-## Overview of the process of creating Windows Defender Application Control policies
-
-A common system imaging practice in today’s IT organization is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone additional company assets. WDAC policies follow a similar methodology, that begins with the establishment of a golden computer. As with imaging, you can have multiple golden computers based on model, department, application set, and so on. Although the thought process around the creation of WDAC policies is similar to imaging, these policies should be maintained independently. Assess the necessity of additional WDAC policies based on what should be allowed to be installed and run and for whom. For more details on doing this assessment, see the [WDAC Design Guide](windows-defender-application-control-design-guide.md).
-
-Optionally, WDAC can align with your software catalog as well as any IT department–approved applications. One straightforward method to implement WDAC is to use existing images to create one master WDAC policy. You do so by creating a WDAC policy from each image, and then by merging the policies. This way, what is installed on all of those images will be allowed to run, if the applications are installed on a computer based on a different image. Alternatively, you may choose to create a base applications policy and add policies based on the computer’s role or department. Organizations have a choice of how their policies are created, merged or serviced, and managed.
-
-If you plan to use an internal CA to sign catalog files or WDAC policies, see the steps in [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md). 
-
 ## Windows Defender Application Control policy rules
 
-To modify the policy rule options of an existing WDAC policy, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption). Note the following examples of how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
+To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleOption](https://docs.microsoft.com/powershell/module/configci/set-ruleoption). Note the following examples of how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
 
 -   To ensure that UMCI is enabled for a WDAC policy that was created with the `-UserPEs` (user mode) option, add rule option 0 to an existing policy by running the following command:
 
-    `Set-RuleOption -FilePath <Path to policy> -Option 0`
+    `Set-RuleOption -FilePath <Path to policy XML> -Option 0`
 
     Note that a policy that was created without the `-UserPEs` option is empty of user mode executables, that is, applications. If you enable UMCI (Option 0) for such a policy and then attempt to run an application, Windows Defender Application Control will see that the application is not on its list (which is empty of applications), and respond. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. To create a policy that includes user mode executables (applications), when you run `New-CIPolicy`, include the `-UserPEs` option. 
 
 -   To disable UMCI on an existing WDAC policy, delete rule option 0 by running the following command:
 
-    `Set-RuleOption -FilePath <Path to policy> -Option 0 -Delete`
+    `Set-RuleOption -FilePath <Path to policy XML> -Option 0 -Delete`
 
-You can set several rule options within a WDAC policy. Table 2 describes each rule option. 
+You can set several rule options within a WDAC policy. Table 1 describes each rule option. 
 
 > [!NOTE]
 > We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
 
-**Table 2. Windows Defender Application Control policy - policy rule options**
+**Table 1. Windows Defender Application Control policy - policy rule options**
 
 | Rule option | Description |
 |------------ | ----------- |
@@ -68,7 +60,7 @@ You can set several rule options within a WDAC policy. Table 2 describes each ru
 | **8 Required:EV Signers** | In addition to being WHQL signed, this rule requires that drivers must have been submitted by a partner that has an Extended Verification (EV) certificate. All future Windows 10 and later drivers will meet this requirement. |
 | **9 Enabled:Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. |
 | **10 Enabled:Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. |
-| **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to Restricted Language Mode. NOTE: This option is only supported with the Windows 10 May 2019 Update (1903) and higher. Using it on earlier versions of Windows 10 is not supported and may have unintended results. |
+| **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is only supported with the Windows 10 May 2019 Update (1903) and higher. Using it on earlier versions of Windows 10 is not supported and may have unintended results. |
 | **12 Required:Enforce Store Applications** | If this rule option is enabled, WDAC policies will also apply to Universal Windows applications. |
 | **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as System Center Configuration Manager, that has been defined as a managed installer. |
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
@@ -82,15 +74,15 @@ You can set several rule options within a WDAC policy. Table 2 describes each ru
 
 File rule levels allow administrators to specify the level at which they want to trust their applications. This level of trust could be as fine-tuned as the hash of each binary or as general as a CA certificate. You specify file rule levels both when you create a new WDAC policy from a scan and when you create a policy from audit events. In addition, to combine rule levels found in multiple policies, you can merge the policies. When merged, WDAC policies combine their file rules, so that any application that would be allowed by either of the original policies will be allowed by the combined policy. 
 
-Each file rule level has its benefit and disadvantage. Use Table 3 to select the appropriate protection level for your available administrative resources and Windows Defender Application Control deployment scenario.
+Each file rule level has its benefit and disadvantage. Use Table 2 to select the appropriate protection level for your available administrative resources and Windows Defender Application Control deployment scenario.
 
-Table 3. Windows Defender Application Control policy - file rule levels
+**Table 2. Windows Defender Application Control policy - file rule levels**
 
 | Rule level | Description |
 |----------- | ----------- |
 | **Hash** | Specifies individual hash values for each discovered binary. Although this level is specific, it can cause additional administrative overhead to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. |
 | **FileName** | Specifies individual binary file names. Although the hash values for an application are modified when updated, the file names are typically not. This offers less specific security than the hash level but does not typically require a policy update when any binary is modified. |
-| **FilePath** | Beginning with Windows 10 version 1903, this specifies rules that allow execution of binaries contained in paths that are admin-writeable only. By default, WDAC performs a user-writeability check at runtime which ensures that the current permissions on the specified filepath and its parent directories (recursively) do not allow standard users write access. <br> Note that filepath rules do not provide the same security guarantees that explicit signer rules do, as they are based on mutable access permissions. Filepath rules are best suited for environments where most users are running as standard rather than admin. IT Pros should take care while crafting path rules to allow paths that they know are likely to remain to be admin-writeable only and deny execution from sub-directories where standard users can modify ACLs on the folder. <br> There is a defined list of SIDs which are recognized as admins (below). If a file has write permissions for a SID not in this list, the file will be flagged as user writeable. <br> S-1-3-0; S-1-5-18; S-1-5-19; S-1-5-20; S-1-5-32-544; S-1-5-32-549; S-1-5-32-550; S-1-5-32-551; S-1-5-32-577; S-1-5-32-559; S-1-5-32-568; S-1-15-2-1430448594-2639229838-973813799-439329657-1197984847-4069167804-1277922394; S-1-15-2-95739096-486727260-2033287795-3853587803-1685597119-444378811-2746676523. <br> Wildcards can be used at the beginning or end of a path rule: only one wildcard is allowed per path rule. Wildcards placed at the end of a path authorize all files in that path and its subdirectories recursively (ex. C:\\* would include C:\foo\\* ). Wildcards placed at the beginning of a path scan all directories for files with a specific name (ex. \*\bar.exe would allow C:\bar.exe and C:\foo\bar.exe). Wildcards in the middle of a path are not supported (ex. C:\\*\foo.exe). Without a wildcard, the rule will allow only a specific file (ex. C:\foo\bar.exe). <br> Supported macros: %WINDIR%, %SYSTEM32%, %OSDRIVE%.|
+| **FilePath** | Beginning with Windows 10 version 1903, this specifies rules that allow execution of binaries contained under specific file path locations. Additional information about FilePath level rules can be found below. |
 > [!NOTE]
 > Due to an existing bug, you can not combine Path-based ALLOW rules with any DENY rules in a single policy. Instead, either separate DENY rules into a separate Base policy or move the Path-based ALLOW rules into a supplemental policy as described in [Deploy multiple WDAC policies.](deploy-multiple-windows-defender-application-control-policies.md) 
 
@@ -119,3 +111,20 @@ As part of normal operations, they will eventually install software updates, or 
 
 They could also choose to create a catalog that captures information about the unsigned internal application, then sign and distribute the catalog. Then the internal application could be handled by WDAC policies in the same way as any other signed application. An update to the internal application would only require that the catalog be regenerated, signed, and distributed (no restarts would be required).
 
+## More information about filepath rules
+
+Filepath rules do not provide the same security guarantees that explicit signer rules do, as they are based on mutable access permissions. Filepath rules are best suited for environments where most users are running as standard rather than admin. IT Pros should take care while crafting path rules to allow paths that they know are likely to remain to be admin-writeable only and deny execution from sub-directories where standard users can modify ACLs on the folder. 
+
+By default, WDAC performs a user-writeability check at runtime which ensures that the current permissions on the specified filepath and its parent directories (recursively) do not allow standard users write access. 
+
+There is a defined list of SIDs which WDAC recognizes as admins. If a filepath allows write permissions for any SID not in this list, the filepath is considered to be user-writeable even if the additional SID is associated to a custom admin user. To handle these special cases, you can override WDAC's runtime admin-writeable check with the **Disabled:Runtime FilePath Rule Protection** option described above. 
+
+WDAC's list of well-known admin SIDs are: <br>
+S-1-3-0; S-1-5-18; S-1-5-19; S-1-5-20; S-1-5-32-544; S-1-5-32-549; S-1-5-32-550; S-1-5-32-551; S-1-5-32-577; S-1-5-32-559; S-1-5-32-568; S-1-15-2-1430448594-2639229838-973813799-439329657-1197984847-4069167804-1277922394; S-1-15-2-95739096-486727260-2033287795-3853587803-1685597119-444378811-2746676523. 
+
+When generating filepath rules using [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy), a unique, fully-qualified path rule is generated for every file discovered in the scanned path(s). To create rules that instead allow all files under a specified folder path, use [New-CIPolicyRule](https://docs.microsoft.com/powershell/module/configci/new-cipolicyrule) to define rules containing wildcards and include them in your [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) scan using the -Rules switch. 
+
+Wildcards can be used at the beginning or end of a path rule: only one wildcard is allowed per path rule. Wildcards placed at the end of a path authorize all files in that path and its subdirectories recursively (ex. C:\\* would include C:\foo\\* ). Wildcards placed at the beginning of a path will allow the exact specified filename under any path (ex. \*\bar.exe would allow C:\bar.exe and C:\foo\bar.exe). Wildcards in the middle of a path are not supported (ex. C:\\*\foo.exe). Without a wildcard, the rule will allow only a specific file (ex. C:\foo\bar.exe). <br> Supported macros: %WINDIR%, %SYSTEM32%, %OSDRIVE%.
+
+> [!NOTE]
+> Due to an existing bug, you can not combine Path-based ALLOW rules with any DENY rules in a single policy. Instead, either separate DENY rules into a separate Base policy or move the Path-based ALLOW rules into a supplemental policy as described in [Deploy multiple WDAC policies.](deploy-multiple-windows-defender-application-control-policies.md)

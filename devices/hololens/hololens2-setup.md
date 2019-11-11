@@ -21,7 +21,9 @@ The procedures below will help you set up a HoloLens 2 for the first time.
 
 ## Charge your HoloLens
 
-Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet.
+Connect the power supply to the charging port by using the USB-C cable (included). Plug the power supply into a power outlet. The power supply and USB-C-to-C cable that come with the device are the best way to charge your HoloLens 2. The charger supplies 18W of power (9V at 2A).
+
+Charging rate and speed may vary depending on the environment in which the device is running.
 
 - When the device is charging, the battery indicator lights up to indicate the current level of charge.  The last light will fade in and out to indicate active charging.
 - When your HoloLens is on, the battery indicator displays the battery level in increments.
@@ -102,6 +104,7 @@ Not sure what the indicator lights on your HoloLens mean? Want to know how HoloL
 | - | - | - |
 | You press the Power button. | One light flashes five times, then turns off. | The HoloLens battery is critically low. Charge your HoloLens. |
 | You press the Power button. | All five lights flash five times, then turn off. |  HoloLens cannot start correctly and is in an error state. [Reinstall the operating system](hololens-recovery.md) to recover your device. |
+| You press the Power button. | The 1st, 3rd, and 5th lights flash together continually. |  HoloLens may have a hardware failure. To be sure, [reinstall the OS](hololens-recovery.md#hololens-2), and try again. After reinstalling the OS, if the light-flash pattern persists, contact [support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
 
 ## Safety and comfort
 

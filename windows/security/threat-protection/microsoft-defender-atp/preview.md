@@ -42,7 +42,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 The following features are included in the preview release:
 
-- [Microsoft Defender ATP for Mac](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/microsoft-defender-atp-mac) <BR> Microsoft Defender ATP for Mac brings the next-generation protection, and endpoint detection and response coverage to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices.
+- [Endpoint detection and response for Mac devices](endpoint-detection-response-mac-preview.md). Recently, [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac.md) released. Expanding on the protection available in Microsoft Defender ATP for Mac, endpoint detection and response capabilities are now in preview. 
 
 - [Threat & Vulnerability Management Report inaccuracy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#report-inaccuracy) <BR> You can report a false positive when you see any vague, inaccurate, incomplete, or already remediated [security recommendation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#report-inaccuracy), [software inventory](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-software-inventory#report-inaccuracy), and [discovered vulnerabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses#report-inaccuracy).  
  

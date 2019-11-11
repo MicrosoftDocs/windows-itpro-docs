@@ -112,7 +112,7 @@ The following table lists the three group scopes and more information about each
 <p>Global groups from any domain in the same forest</p>
 <p>Other Universal groups from any domain in the same forest</p></td>
 <td><p>Can be converted to Domain Local scope</p>
-<p>Can be converted to Global scope if the group does not contain any other Universal groups</p></td>
+<p>Can be converted to Global scope if the group is not a member of any other Universal groups</p></td>
 <td><p>On any domain in the same forest or trusting forests</p></td>
 <td><p>Other Universal groups in the same forest</p>
 <p>Domain Local groups in the same forest or trusting forests</p>

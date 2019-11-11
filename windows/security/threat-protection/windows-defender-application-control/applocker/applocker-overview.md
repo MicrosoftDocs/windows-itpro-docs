@@ -80,12 +80,6 @@ The following are examples of scenarios in which AppLocker can be used:
 
 AppLocker can help you protect the digital assets within your organization, reduce the threat of malicious software being introduced into your environment, and improve the management of application control and the maintenance of application control policies.
 
-## System requirements
-
-AppLocker policies can only be configured on and applied to computers that are running on the supported versions and editions of the Windows operating system. Group Policy is required to distribute Group Policy Objects that contain AppLocker policies. For more info, see [Requirements to Use AppLocker](requirements-to-use-applocker.md).
-
-AppLocker rules can be created on domain controllers.
-
 ## Installing AppLocker
 
 AppLocker is included with enterprise-level editions of Windows. You can author AppLocker rules for a single computer or for a group of computers. For a single computer, you can author the rules by using the Local Security Policy editor (secpol.msc). For a group of computers, you can author the rules within a Group Policy Object by using the Group Policy Management Console (GPMC).

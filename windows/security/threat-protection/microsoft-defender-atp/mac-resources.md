@@ -1,7 +1,6 @@
 ---
-title: Microsoft Defender ATP for Mac Resources
-ms.reviewer: 
-description: Describes resources for Microsoft Defender ATP for Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
+title: Resources for Microsoft Defender ATP for Mac
+description: Resources for Microsoft Defender ATP for Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Resources
+# Resources for Microsoft Defender ATP for Mac
 
 **Applies to:**
 
@@ -95,18 +94,24 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Protection   |Do a full scan                             |`mdatp --scan --full`                                                  |
 |Protection   |Cancel an ongoing on-demand scan           |`mdatp --scan --cancel`                                                |
 |Protection   |Request a security intelligence update     |`mdatp --definition-update`                                            |
+|EDR          |Turn on/off EDR preview for Mac            |`mdatp --edr --early-preview [true/false]`                                   |
+|EDR          |Add group tag to machine. EDR tags are used for managing machine groups. For more information, please visit https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups |`mdatp --edr --set-tag GROUP [name]` |
+|EDR          |Remove group tag from machine              |`mdatp --edr --remove-tag [name]`                                            |
 
 ## Microsoft Defender ATP portal information
 
-In the Microsoft Defender ATP portal, you'll see two categories of information:
+In the Microsoft Defender ATP portal, you'll see two categories of information.
 
-- Antivirus alerts, including:
+Antivirus alerts, including:
+
   - Severity
   - Scan type
   - Device information (hostname, machine identifier, tenant identifier, app version, and OS type)
   - File information (name, path, size, and hash)
   - Threat information (name, type, and state)
-- Device information, including:
+
+Device information, including:
+
   - Machine identifier
   - Tenant identifier
   - App version
