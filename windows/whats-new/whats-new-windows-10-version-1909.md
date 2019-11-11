@@ -28,6 +28,18 @@ To deliver these updates in an optimal fashion, we are providing this feature up
 
 If you are updating from an older version of Windows 10 (version 1809 or earlier), the process of updating to the current version will be the same as it has been for previous Windows 10 feature updates. For more information, see [Evolving Windows 10 servicing and quality: the next steps](https://blogs.windows.com/windowsexperience/2019/07/01/evolving-windows-10-servicing-and-quality-the-next-steps/#rl2G5ETPhkhMvDeX.97).
 
+**Note**: Devices running the Enterprise, IoT Enterprise, or Education editions of Windows 10, version 1909 receive 30 months of support. For more information about the Windows servicing lifecycle, please see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
+
+### Windows Server Update Services (WSUS)
+
+Pre-release Windows 10 feature updates are now available to IT administrators using WSUS. System Center Configuration Manager version 1906 or later is required. For more information, see [Publishing pre-release Windows 10 feature updates to WSUS](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054).
+
+The Windows 10, version 1909 enablement package will be available on WSUS as [KB4517245](https://support.microsoft.com/kb/4517245), which can be deployed on existing deployments of Windows 10, version 1903.  
+
+### Windows Update for Business (WUfB)
+
+If you are using WUfB, you will receive the Windows 10, version 1909 update in the same way that you have for prior feature updates, and as defined by your feature update deferral policy.
+
 ## Security
 
 ### Windows Defender Credential Guard
@@ -41,6 +53,10 @@ BitLocker and Mobile Device Management (MDM) with Azure Active Directory work to
 ### Key-rolling and Key-rotation
 
 Windows 10, version 1909 also includes two new features called **Key-rolling** and **Key-rotation** enables secure rolling of Recovery passwords on MDM managed AAD devices on demand from Microsoft Intune/MDM tools or when a recovery password is used to unlock the BitLocker protected drive. This feature will help prevent accidental recovery password disclosure as part of manual BitLocker drive unlock by users.
+
+### Transport Layer Security (TLS)
+
+An experimental implementation of TLS 1.3 is included in Windows 10, version 1909. TLS 1.3 disabled by default system wide. If you enable TLS 1.3 on a device for testing, then it can also be enabled in Internet Explorer 11.0 and Microsoft Edge by using Internet Options. For beta versions of Microsoft Edge on Chromium, TLS 1.3 is not built on the Windows TLS stack, and is instead configured independently, using the **Edge://flags** dialog. Also see [Microsoft Edge platform status](https://developer.microsoft.com/microsoft-edge/platform/status/tls13/).
 
 ## Virtualization
 
@@ -59,10 +75,6 @@ This update includes 5 fixes to allow the host to run down-level containers on u
 Windows Virtual Desktop is a comprehensive desktop and app virtualization service running in the cloud. It’s the only virtual desktop infrastructure (VDI) that delivers simplified management, multi-session Windows 10, optimizations for Office 365 ProPlus, and support for Remote Desktop Services (RDS) environments. Deploy and scale your Windows desktops and apps on Azure in minutes, and get built-in security and compliance features. Windows Virtual Desktop requires a Microsoft E3 or E5 license, or a Microsoft 365 E3 or E5 license, as well as an Azure tenant.
 
 ## Deployment
-
-### Configuration Manager
-
-Pre-release Windows 10 feature updates are now available to IT administrators using Windows Server Update Service (WSUS). System Center Configuration Manager version 1906 or later is required. For more information, see [Publishing pre-release Windows 10 feature updates to WSUS](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054).
 
 #### Microsoft Endpoint Manager
 
@@ -123,46 +135,8 @@ General battery life and power efficiency improvements for PCs with certain proc
 [What's New in Windows 10](https://docs.microsoft.com/windows/whats-new/): See what’s new in other versions of Windows 10.<br>
 [What Windows 10, version 1909 Means for Developers](https://blogs.windows.com/windowsdeveloper/2019/10/16/what-windows-10-version-1909-means-for-developers/): New and updated features in Windows 10 that are of interest to developers.<br>
 [What's new in Windows 10, version 1909 - Windows Insiders](https://docs.microsoft.com/windows-insider/at-home/whats-new-wip-at-home-1909): This list also includes consumer focused new features.<br>
-[Features and functionality removed in Windows 10](https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features)<br>
-[Windows 10 features we’re no longer developing](https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features)
-
-
-<!--
-
-## Windows shell
-
-### Calendar
-
-You can now create new events in your Calendar app by clicking the date and time on the Taskbar.
-
-### Cloud Clipboard
-
-Let’s face it, you work on multiple devices. With this feature enabled, you can copy text, links, graphics – just about anything! – from one device, and paste it onto another. Or you can go back and view the history of what’s recently been copied. You can use Cloud Clipboard with either an Azure Active Directory or Microsoft Account (MSA). Cloud Clipboard requires users to be signed into all devices using either MSA or AAD. Users must be signed into the same account across all devices.
-
-### Notifications
-
-We’ve made several improvements to manage and configure notifications including:
-
-- Added a “Manage Notifications” button to the top of Action Center
-- Configure and turn off notifications directly from the notification, both from the banner and from Action Center.
-- Set default to sorting notification senders by most recently shown notification, rather than sender name.
-
-### Windows Search 
-
-The Search box in Explorer is now powered by Windows Search, allowing results to include online OneDrive and OneDrive for Business content. Additionally, the results appear instantly as you type
-
-As announced at Microsoft Ignite 
-
-See 
-https://blogs.windows.com/windowsexperience/2019/07/15/announcing-windows-10-insider-preview-build-18362-10005-19h2/
-
-https://blogs.windows.com/windowsexperience/2019/08/08/announcing-windows-10-insider-preview-build-18362-10012-18362-10013-19h2/
-
-https://blogs.windows.com/windowsexperience/2019/08/19/announcing-windows-10-insider-preview-build-18362-10014-18362-10015-19h2/
-
-
-### Insider list
-
-https://docs.microsoft.com/windows-insider/at-home/whats-new-wip-at-home-1909
-
--->
+[Features and functionality removed in Windows 10](https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
+[Windows 10 features we’re no longer developing](https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>
+[How to get the Windows 10 November 2019 Update](https://aka.ms/how-to-get-1909): John Cable blog.<br>
+[How to get Windows 10, Version 1909: Enablement Mechanics](https://aka.ms/1909mechanics): Mechanics blog.<br>
+[What’s new for IT pros in Windows 10, version 1909](https://aka.ms/whats-new-in-1909): Windows IT Pro blog.<br>
