@@ -25,12 +25,6 @@ For information about features that might be removed in a future release, see [W
 
 The following features and functionalities have been removed from the installed product image for Windows 10. Applications or code that depend on these features won't function in the release when it was removed, or in later releases.
 
-<!-- | Video project OneDrive syncing in Photos | The feature that syncs in-progress video projects to OneDrive is being removed from the Video Editor in the Windows 10 Photos app. This is not directly tied to a Windows 10 release because the feature uses OneDrive, but it will affect the Windows 10 Photos app. The change is happening on January 10, 2020. More information is available [here](https://support.microsoft.com/help/4512628/windows-10-onedrive-video-project-syncing-in-photos).| 1909 
-
-| Paint 3D: Publish to Remix 3D| The functionality within Paint 3D to publish to Remix 3D through the Remix panel is removed in Windows 10, version 1909. For more information, see [Remix 3D: Frequently asked questions](https://support.microsoft.com/help/4023824/windows-10-remix-3d-frequently-asked-questions).  | 1909 |
-
--->
-
 |Feature    |  Details and mitigation  | Removed in version |
 | ----------- | --------------------- | ------ |
 | PNRP APIs| ​The Peer Name Resolution Protocol (PNRP) cloud service was removed in Windows 10, version 1809. We are planning to complete the removal process by removing the corresponding APIs.  | 1909 |

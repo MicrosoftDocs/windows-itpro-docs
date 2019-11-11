@@ -23,10 +23,6 @@ The features described below are no longer being actively developed, and might b
 
 >If you have feedback about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app). 
 
-<!-- | Fresh Paint app | The Fresh Paint app will be removed from the Microsoft Store on Windows 10 in a future release. | -->
-<!-- | Cortana voice commands | After upgrading and the new Cortana UWP app is deployed, users will no longer be able to use custom voice commands to invoke apps locally using Cortana. | -->
-<!-- | Cortana | In a future release, Cortana will be transitioning to a new Universal Windows Platform (UWP) app.  The set of skills included with Cortana will be changing and may vary by market.  Please see this support article for more information. | 1909 | -->
-
 |Feature    |  Details and mitigation  | Announced in version |
 | ----------- | --------------------- | ---- |
 | Hyper-V vSwitch on LBFO | In a future release, the Hyper-V vSwitch will no longer have the capability to be bound to an LBFO team.  Instead, it can be bound via [Switch Embedded Teaming](https://docs.microsoft.com/windows-server/virtualization/hyper-v-virtual-switch/rdma-and-switch-embedded-teaming#bkmk_sswitchembedded) (SET).| 1909 |
