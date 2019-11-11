@@ -18,7 +18,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 1909
 
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 version 1909, also known as the Windows 10 November 2019 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1903. 
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10, version 1909, also known as the Windows 10 November 2019 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 1903. 
 
 ## Servicing
 
