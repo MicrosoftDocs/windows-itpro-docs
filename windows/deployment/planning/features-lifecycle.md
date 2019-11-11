@@ -3,7 +3,7 @@ title: Windows 10 features lifecycle
 description: Learn about the lifecycle of Windows 10 features
 ms.prod: w10
 ms.mktglfcycl: plan
-ms.localization: medium
+ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
 author: greg-lindsay
