@@ -114,19 +114,21 @@ Value type is char.
 
 ## MDM Usage Guidance
 To use ApplicationControl CSP, you must:
-- Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyTypeID>`.
+- Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyID>` or `<PolicyTypeID>` for pre-1903 systems.
 - Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
 
-If you are using hybrid MDM management with System Center Configuration Manager or using Intune, the steps to use Custom OMA-URI functionality to apply the Code Integrity policy are:
-- In the Intune portal, navigate to Device configuration, then Profiles, then create a profile with Custom OMA-URI Settings and add a row
-- OMA-URI: ./Vendor/MSFT/ApplicationControl/Policies/<Policy GUID>/Policy (filling in Policy GUID with your policy's ID)
+If you are using hybrid MDM management with System Center Configuration Manager (SCCM) or using Intune, the steps to use Custom OMA-URI functionality to apply the Code Integrity policy are:
+- In the Intune portal, navigate to Device configuration, then Profiles, then create a profile with Custom OMA-URI Settings and add a row.
+- OMA-URI: ./Vendor/MSFT/ApplicationControl/Policies/Policy GUID/Policy
 - Data type: Base64
-- Certificate file: upload your binary format policy file
-Intune handles the creation of a policy node and does all the below steps to deploy policies on your behalf, so you shouldn't do any of the below steps.
+- Certificate file: upload your binary format policy file.
+
+> ![Note]
+> Intune handles the creation of a policy node and does all the below steps to deploy policies on your behalf, so you shouldn't do any of the below steps.
 
 ## Non-MDM Usage Guidance  
-To use ApplicationControl CSP, you must:
-- Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyTypeID>`.
+If not using Intune or hybrid MDM management with SCCM, in order to use ApplicationControl CSP, you must:
+- Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyID>` or `<PolicyTypeID>` for pre-1903 systems.
 - Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
 - Create a policy node (a Base64-encoded blob of the binary policy representation) using the certutil -encode command line tool.
 
@@ -140,7 +142,7 @@ An alternative to using certutil would be to use the following PowerShell invoca
 ```
 
 ### Deploy policies
-If not using Intune, in order to deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the the Format section in the Example 1 below.
+If not using Intune or hybrid MDM management with SCCM, in order to deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the the Format section in the Example 1 below.
 
 To deploy base policy and supplemental policies:
 - Perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data} with the GUID and policy data for the base policy.
