@@ -70,7 +70,7 @@ With this release, Windows Defender ATP extends discovery and protection of sens
 
 ### Security configuration framework
 
-With this release of Windows 10, Microsoft is introducing a [new taxonomy for security configurations](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework), called the **SECCON framework**, comprised of 5 device security configurations.
+With this release of Windows 10, Microsoft is introducing a [new taxonomy for security configurations](https://github.com/microsoft/SecCon-Framework/blob/master/windows-security-configuration-framework.md), called the **SECCON framework**, comprised of 5 device security configurations.
 
 ### Security baseline for Windows 10 and Windows Server
 
