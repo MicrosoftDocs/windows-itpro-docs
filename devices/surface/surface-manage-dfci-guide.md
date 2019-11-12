@@ -82,8 +82,8 @@ Before configuring DFCI policy settings, first create a DFCI profile and assign 
 2. Select **Create profile** and enter a name; for example, **My Autopilot profile**, and select **Next**.
 3. Select the following settings:
 
- - Deployment mode: **User-Driven**.
- - Join type: Azure **AD joined**.
+    - Deployment mode: **User-Driven**.
+    - Join type: Azure **AD joined**.
 
 4. Leave the remaining default settings unchanged and select **Next**, as shown in the following figure.
 
@@ -157,10 +157,10 @@ In a test environment, you can verify settings in the Surface UEFI interface.
 
     ![Surface UEFI](images/df3.png)
 
-Note how:
+    Note how:
 
-- The settings are greyed out because **Allow local user to change UEFI setting** is set to None.
-- Audio is set to off because **Microphones and speakers** are set to **Disabled**.
+        - The settings are greyed out because **Allow local user to change UEFI setting** is set to None.
+        - Audio is set to off because **Microphones and speakers** are set to **Disabled**.
 
 ## Removing DFCI policy settings
 
