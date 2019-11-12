@@ -1,7 +1,7 @@
 ---
 title: Respond to web threats in Microsoft Defender ATP
 description: Respond to alerts related to malicious and unwanted websites. Understand how web threat protection informs end users through their web browsers and Windows notifications
-keywords: web protection, web browsing, alerts, response, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, notifications, end users, Windows notifications, blocking page,
+keywords: web protection, web threat protection, web browsing, alerts, response, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, notifications, end users, Windows notifications, blocking page,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -21,8 +21,6 @@ ms.date: 08/30/2019
 # Respond to web threats
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
-
-[!include[Prerelease information](prerelease.md)]
 
 Web protection in Microsoft Defender ATP lets you efficiently investigate and respond to alerts related to malicious websites and websites in your custom indicator list.
 
@@ -62,10 +60,10 @@ You can also check the machine that attempted to access a blocked URL. Selecting
 With web protection in Microsoft Defender ATP, your end users will be prevented from visiting malicious or unwanted websites using Microsoft Edge or other browsers. Because blocking is performed by [network protection](network-protection.md), they will see a generic error from the web browser. They will also see a notification from Windows.
 
 ![Image of Microsoft Edge showing a 403 error and the Windows notification](images/wtp-browser-blocking-page.png)
-*Web threat blocked by Microsoft Edge*
+*Web threat blocked on Microsoft Edge*
 
-![Image of Chrome showing a secure connection warning and the Windows notification](images/wtp-chrome-browser-blocking-page.png)
-*Web threat blocked by the Chrome web browser*
+![Image of Chrome web browser showing a secure connection warning and the Windows notification](images/wtp-chrome-browser-blocking-page.png)
+*Web threat blocked on Chrome*
 
 ## Related topics
 - [Web protection overview](web-protection-overview.md)

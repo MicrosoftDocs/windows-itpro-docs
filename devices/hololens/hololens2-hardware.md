@@ -35,6 +35,14 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 - **Power supply**. Plugs into a power outlet.
 - **Microfiber cloth**. Use to clean your HoloLens visor.
 
+### Power Supply details
+
+The power supply and the USB cable that come with the device are the best supported mechanism for charging. The power supply is an 18W charger.  It's supplies 9V at 2A.
+
+Charging rate and speed may vary depending on the environment in which the device is running.
+
+In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15W charger.
+
 ## Device specifications
 
 ### Display
@@ -74,6 +82,16 @@ Microsoft HoloLens 2 is an untethered holographic computer.  It refines the holo
 | WiFi | 802.11ac 2x2 |
 | Bluetooth | 5.0 |
 | USB | USB Type-C |
+
+### Power
+
+|   |   |
+| - | - |
+| Battery Life | 2-3 hours of active use. Up to 2 weeks of standby time. |
+| Battery technology | [Lithium batteries](https://www.microsoft.com/download/details.aspx?id=43388) |
+| Charging behavior | Fully functional when charging |
+| Cooling type | Passively cooled (no fans) |
+| Power draw | In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15W charger. |
 
 ### Fit
 

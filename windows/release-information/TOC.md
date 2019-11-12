@@ -1,5 +1,8 @@
 # [Windows 10 release information](index.md)
 # [Message center](windows-message-center.yml)
+# Version 1909
+## [Known issues and notifications](status-windows-10-1909.yml)
+## [Resolved issues](resolved-issues-windows-10-1909.yml)
 # Version 1903
 ## [Known issues and notifications](status-windows-10-1903.yml)
 ## [Resolved issues](resolved-issues-windows-10-1903.yml)
@@ -12,9 +15,6 @@
 # Version 1709
 ## [Known issues and notifications](status-windows-10-1709.yml)
 ## [Resolved issues](resolved-issues-windows-10-1709.yml)
-# Version 1703
-## [Known issues and notifications](status-windows-10-1703.yml)
-## [Resolved issues](resolved-issues-windows-10-1703.yml)
 # Version 1607 and Windows Server 2016
 ## [Known issues and notifications](status-windows-10-1607-and-windows-server-2016.yml)
 ## [Resolved issues](resolved-issues-windows-10-1607.yml)

@@ -10,6 +10,9 @@ ms.localizationpriority: medium
 ms.date: 10/23/2018
 ms.reviewer: 
 manager: dansimp
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
 ---
 
 # Insider preview for Microsoft HoloLens

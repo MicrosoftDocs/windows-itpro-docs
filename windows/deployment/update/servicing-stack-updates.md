@@ -33,7 +33,7 @@ Servicing stack updates improve the reliability of the update process to mitigat
 Servicing stack update are released depending on new issues or vulnerabilities. In rare occasions a servicing stack update may need to be released on demand to address an issue impacting systems installing the monthly security update. Starting in November 2018 new servicing stack updates will be classified as "Security" with a severity rating of "Critical."
 
 >[!NOTE]
->You can find a list of servicing stack updates at [Latest servicing stack updates](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001).
+>You can find a list of servicing stack updates at [Latest servicing stack updates](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV990001).
 
 ## What's the difference between a servicing stack update and a cumulative update?
 
@@ -53,5 +53,5 @@ Typically, the improvements are reliability and performance improvements that do
 * Servicing stack updates contain the full servicing stack; as a result, typically administrators only need to install the latest servicing stack update for the operating system.
 * Installing servicing stack update does not require restarting the device, so installation should not be disruptive. 
 * Servicing stack update releases are specific to the operating system version (build number), much like quality updates.
-* Search to install latest available [Servicing stack update for Windows 10](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001).
+* Search to install latest available [Servicing stack update for Windows 10](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV990001).
 * Once a servicing stack update is installed, it cannot be removed or uninstalled from the machine.

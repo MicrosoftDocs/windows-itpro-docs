@@ -21,6 +21,8 @@ It's common to share one HoloLens with many people or to have many people share 
 
 ## Share with multiple people, each using their own account
 
+**Prerequisite**: The HoloLens device must be running Windows 10, version 1803 or later.  HoloLens (1st gen) also need to be [upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
+
 When they use their own Azure Active Directory (Azure AD) accounts, multiple users can each keep their own user settings and user data on the device.
 
 To make sure that multiple people can use their own accounts on your HoloLens, follow these steps to configure it:

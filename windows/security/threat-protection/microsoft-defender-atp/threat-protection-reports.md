@@ -27,7 +27,7 @@ The threat protection report provides high-level information about alerts genera
 
 The dashboard is structured into two sections:
 
-![Image of the threat protection report](images/atp-threat-protection-reports.png)
+![Image of the threat protection report](images/threat-protection-reports.png)
 
 Section | Description 
 :---|:---
