@@ -73,7 +73,7 @@ GET https://api.securitycenter.windows.com/api/machines/findbyip(ip='10.248.240.
 ## Improve request performance
 
 > [!NOTE]
-> You can use a server closer to your geolocation for better performance :
+> You can use a server closer to your geolocation for better performance:
 > - api-us.securitycenter.windows.com
 > - api-eu.securitycenter.windows.com
 > - api-uk.securitycenter.windows.com
