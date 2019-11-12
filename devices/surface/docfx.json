@@ -43,5 +43,15 @@
     "template": "op.html",
     "dest": "devices/surface",
     "markdownEngineName": "markdig"
-  }
+},
+    "contributors_to_exclude": [ 
+    "rjagiewich", 
+    "traya1", 
+    "rmca14", 
+    "claydetels19", 
+    "Kellylorenebaker",
+    "jborsecnik",
+    "tiburd",
+    "garycentric"
+ ]
 }
