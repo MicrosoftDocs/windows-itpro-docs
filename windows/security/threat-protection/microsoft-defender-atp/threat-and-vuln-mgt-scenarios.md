@@ -143,12 +143,40 @@ When an exception is created for a recommendation, the recommendation is no long
 2. Click the top-most recommendation. A flyout panel opens with the recommendation details.
 
 3. Click **Exception options**.
+![Screenshot of the exception option in the remediation flyout pane](images/tvm-exception-option.png)
 
 4. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
 
+> ![Screenshot of exception flyout page which details justification and context](images/tvm-exception-flyout.png)
+
 5. Click **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
+![Screenshot of exception confirmation message](images/tvm-exception-confirmation.png)
 
 6. Navigate to the **Remediation** page under the **Threat & Vulnerability Management** menu and click the **Exceptions** tab to view all your exceptions (current and past). 
+![Screenshot of exception list of exceptions in the Remediation page](images/tvm-exception-list.png) 
+
+## Use Advanced hunting query to search for machines with High active alerts or critical CVE public exploit 
+
+1. Go to **Advanced hunting** from the left-hand navigation pane.
+
+2. Scroll down to the TVM advanced hunting schemas to familiarize yourself with the column names.
+
+3. Enter the following queries:
+
+```
+// Search for machines with High active alerts or Critical CVE public exploit 
+DeviceTvmSoftwareInventoryVulnerabilities 
+| join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId 
+| where IsExploitAvailable == 1 and CvssScore >= 7
+| summarize NumOfVulnerabilities=dcount(CveId), 
+ComputerName=any(ComputerName) by MachineId 
+| join kind =inner(AlertEvents) on MachineId  
+| summarize NumOfVulnerabilities=any(NumOfVulnerabilities), 
+ComputerName=any(ComputerName) by MachineId, AlertId 
+| project ComputerName, NumOfVulnerabilities, AlertId  
+| order by NumOfVulnerabilities desc 
+
+```
 
 ## Related topics
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
@@ -156,6 +184,8 @@ When an exception is created for a recommendation, the recommendation is no long
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
-- [Remediation](tvm-remediation.md)
+- [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Advanced hunting overview](overview-hunting.md)
+- [All Advanced hunting tables](advanced-hunting-reference.md)

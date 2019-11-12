@@ -1,8 +1,7 @@
 ---
 title: Set preferences for Microsoft Defender ATP for Mac
-ms.reviewer: 
-description: Describes how to configure Microsoft Defender ATP for Mac in enterprises.
-keywords: microsoft, defender, atp, mac, management, preferences, enterprise, intune, jamf, macos, mojave, high sierra, sierra
+description: Configure Microsoft Defender ATP for Mac in enterprises.
+keywords: microsoft, defender, atp, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -25,7 +24,7 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
->This topic contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise environments. If you are interested in configuring the product on a device from the command-line, please refer to the [Resources](microsoft-defender-atp-mac-resources.md#configuring-from-the-command-line) page.
+>This topic contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise environments. If you are interested in configuring the product on a device from the command-line, please refer to the [Resources](mac-resources.md#configuring-from-the-command-line) page.
 
 In enterprise environments, Microsoft Defender ATP for Mac can be managed through a configuration profile. This profile is deployed from management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
 
@@ -261,6 +260,28 @@ Whether the status menu icon (shown in the top-right corner of the screen) is hi
 | **Key** | hideStatusMenuIcon |
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
+
+### EDR preferences
+
+The *edr* section of the configuration profile is used to manage the preferences of the EDR component of the product.
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | edr |
+| **Data type** | Dictionary (nested preference) |
+| **Comments** | See the following sections for a description of the dictionary contents. |
+
+#### Enable / disable early preview
+
+Whether EDR early preview features are enabled or not.
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | earlyPreview |
+| **Data type** | Boolean |
+| **Possible values** | true (default) <br/> false |
 
 ## Recommended configuration profile
 

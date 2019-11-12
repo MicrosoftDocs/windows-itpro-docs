@@ -12,6 +12,9 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
+appliesto:
+- HoloLens (1st gen)
+- HoloLens 2
 ---
 
 # Find and save files on HoloLens

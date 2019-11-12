@@ -7,8 +7,8 @@ ms.sitesec: library
 author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
-ms.localizationpriority: medium
-ms.date: 9/13/2019
+ms.localizationpriority: high
+ms.date: 09/13/2019
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
@@ -34,7 +34,7 @@ Classes of Bluetooth devices supported by HoloLens (1st gen):
 - HoloLens (1st gen) clicker
 
 > [!NOTE]
-> Other types of Bluetooth devices, such as speakers, headsets, smartphones, and game pads, may appear as available in HoloLens settings, but aren't supported on HoloLens (1st gen). [Learn more](http://go.microsoft.com/fwlink/p/?LinkId=746660).
+> Other types of Bluetooth devices, such as speakers, headsets, smartphones, and game pads, may appear as available in HoloLens settings, but aren't supported on HoloLens (1st gen). [Learn more](https://go.microsoft.com/fwlink/p/?LinkId=746660).
 
 ### Pair a Bluetooth keyboard or mouse
 

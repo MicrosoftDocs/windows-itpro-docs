@@ -10,8 +10,8 @@ ms.mktglfcycl:
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: stephow-MSFT
-ms.author: stephow
+author: LauraWi
+ms.author: laurawi
 manager: laurawi
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -33,7 +33,7 @@ In the **Website learning report**, you can view a summary of the devices that h
 
 ## Access the WIP Learning reports
 
-1. Open the [Azure portal](http://portal.azure.com/). 
+1. Open the [Azure portal](https://portal.azure.com/). 
 
 1. Click **All services**, type **Intune** in the text box filter, and click the star to add it to **Favorites**.
 

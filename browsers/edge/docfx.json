@@ -35,6 +35,7 @@
       "manager": "laurawi",
       "ms.prod": "edge",
       "feedback_system": "None",
+      "hideEdit": true,
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "Win.microsoft-edge",
