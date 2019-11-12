@@ -17,7 +17,7 @@ appliesto:
 
 # Supported languages for HoloLens 2
 
-HoloLens 2 supports the following languages, including voice commands and dictation features.
+HoloLens 2 supports the following languages, including voice commands and dictation features, keyboard layouts, and OCR recognition within apps.
 
 - Chinese Simplified (China)
 - English (Australia)
@@ -42,4 +42,27 @@ HoloLens 2 is also available in the following languages. However, this support d
 >  
 # Changing language or keyboard
 
-To change the Windows display language, region, or keyboard settings, use the start gesture to open the **Start** menu, and then select **Settings** > **Time and Language** > **Language**.
+HoloLens is configured for a language and region during set up. You can change the configuration under the “Time & language” section of  Settings app. 
+
+## To change the Windows display language
+
+1. Go to **Start** menu, and then select **Settings** > **Time and Language** > **Language**.
+2. Choose a language from the **Windows display language** menu. 
+
+If the supported language you’re looking for is not in the menu, use the **Add a language button** in the **Preferred languages** section on the page to search for and add the language, then check in the **Windows display language menu** again.
+
+Changing Windows display language will:
+
+- Change the UI text language for Windows and apps (for apps that support localization).
+- Change the supported speech language for speech features in Windows and apps.
+- Add the default keyboard layout for the language.
+
+## To change the keyboard layout
+
+To add or remove a keyboard layout, go to **Start menu** > **Settings** > **Time & language** > **Keyboard**.
+
+When there is more than one keyboard layout added, you can switch between different keyboard layouts using the Layout key in the lower right corner of the on-screen keyboard.
+
+> [!NOTE]
+> While you can use the on-screen keyboard to enter text that requires Input Method Editor (IME) such as Chinese, using a Bluetooth hardware keyboard with IME is not currently supported. When a on-screen keyboard layout uses IME, you can continue to use a Bluetooth keyboard to type in English. To toggle a hardware keyboard to type in English, press the ~ key.
+>
