@@ -368,7 +368,7 @@
 ###### [Get access with user context](microsoft-defender-atp/exposed-apis-create-app-nativeapp.md)
 
 ##### [APIs]()
-###### [Supported Microsoft Defender ATP query APIs](microsoft-defender-atp/exposed-apis-list.md)
+###### [Supported Microsoft Defender ATP APIs](microsoft-defender-atp/exposed-apis-list.md)
 ###### [Advanced Hunting](microsoft-defender-atp/run-advanced-query-api.md)
 
 ###### [Alert]()
