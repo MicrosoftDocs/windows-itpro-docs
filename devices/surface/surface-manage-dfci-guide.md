@@ -108,7 +108,7 @@ You configure DFCI policy settings by editing the DFCI profile from Endpoint Man
 
 - Select **Devices > Windows > Configuration Profiles > “DFCI profile name” > Properties > Settings**.
 
-    ![Configure DFCI settings](images/DFCI-settings-config.png)
+    ![Configure DFCI settings](images/dfciconfig.png)
 
 ### Block user access to UEFI settings
 
