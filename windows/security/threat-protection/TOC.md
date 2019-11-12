@@ -1158,13 +1158,6 @@
 #### [Windows security baselines](windows-security-configuration-framework/windows-security-baselines.md)
 ##### [Security Compliance Toolkit](windows-security-configuration-framework/security-compliance-toolkit-10.md)
 ##### [Get support](windows-security-configuration-framework/get-support-for-security-baselines.md)
-#### [Windows security configuration framework](windows-security-configuration-framework/windows-security-configuration-framework.md)
-##### [Level 1 enterprise basic security](windows-security-configuration-framework/level-1-enterprise-basic-security.md)
-##### [Level 2 enterprise enhanced security](windows-security-configuration-framework/level-2-enterprise-enhanced-security.md)
-##### [Level 3 enterprise high security](windows-security-configuration-framework/level-3-enterprise-high-security.md)
-##### [Level 4 enterprise dev/ops workstation](windows-security-configuration-framework/level-4-enterprise-devops-security.md)
-##### [Level 5 enterprise administrator workstation](windows-security-configuration-framework/level-5-enterprise-administrator-security.md)
-
 ### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
