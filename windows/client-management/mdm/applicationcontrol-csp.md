@@ -112,17 +112,35 @@ Scope is dynamic. Supported operation is Get.
 
 Value type is char.
 
-## Usage guidance  
-
+## MDM Usage Guidance
 To use ApplicationControl CSP, you must:
 - Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyTypeID>`.
 - Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
 
-If you are using hybrid MDM management with System Center Configuration Manager or using Intune, ensure that you are using Base64 as the Data type when using Custom OMA-URI
-functionality to apply the Code Integrity policy.
+If you are using hybrid MDM management with System Center Configuration Manager or using Intune, the steps to use Custom OMA-URI functionality to apply the Code Integrity policy are:
+- In the Intune portal, navigate to Device configuration, then Profiles, then create a profile with Custom OMA-URI Settings and add a row
+- OMA-URI: ./Vendor/MSFT/ApplicationControl/Policies/<Policy GUID>/Policy (filling in Policy GUID with your policy's ID)
+- Data type: Base64
+- Certificate file: upload your binary format policy file
+Intune handles the creation of a policy node and does all the below steps to deploy policies on your behalf, so you shouldn't do any of the below steps.
+
+## Non-MDM Usage Guidance  
+To use ApplicationControl CSP, you must:
+- Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyTypeID>`.
+- Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
+- Create a policy node (a Base64-encoded blob of the binary policy representation) using the certutil -encode command line tool.
+
+Here is a sample certutil invocation:
+```
+certutil  -encode WinSiPolicy.p7b WinSiPolicy.cer
+```
+An alternative to using certutil would be to use the following PowerShell invocation:
+```powershell
+[Convert]::toBase64String($(Get-Content -Encoding Byte -ReadCount 0 -Path <bin file>))
+```
 
 ### Deploy policies
-To deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the the Format section in the Example 1 below.
+If not using Intune, in order to deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the the Format section in the Example 1 below.
 
 To deploy base policy and supplemental policies:
 - Perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data} with the GUID and policy data for the base policy.
