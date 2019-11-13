@@ -40,16 +40,16 @@ The DFCI management lifecycle can be viewed as UEFI integration, device registra
 
 ## Managing DFCI profile with Windows Autopilot
 
-There are four basic steps in managing DFCI profile with Windows Autopilot, see [Create DFCI Profiles in Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows#create-the-profiles).
+There are four basic steps in managing DFCI profile with Windows Autopilot:
 
 1. Create an Autopilot Profile
 2. Create an Enrollment status page profile
 3. Create a DFCI profile
-4. Assign the profiles 
+4. Assign the profiles
 
-The next time the device syncs, or the device reboots, the DFCI profile settings are applied. After the policy applies, device would reboot. If you want to change existing DFCI settings on devices that are in use, you can. In your existing DFCI profile, change the settings, and save your changes. Since the profile is already assigned, the new DFCI settings take effect when next time the device syncs, or the device reboots.
+See [Create the profiles](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows#create-the-profiles) and [Assign the profiles, and reboot](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows#assign-the-profiles-and-reboot) for details.
 
-For details, see [Use DFCI profiles on Windows devices in Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows).
+You can also [change existing DFCI settings](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows#update-existing-dfci-settings) on devices that are in use. In your existing DFCI profile, change the settings and save your changes. Since the profile is already assigned, the new DFCI settings take effect when next time the device syncs or the device reboots.
 
 ## OEMs that support DFCI
 
