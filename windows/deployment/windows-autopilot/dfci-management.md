@@ -23,38 +23,41 @@ ms.topic: article
 
 -   Windows 10
 
-With Windows Autopilot Deployment and Intune, you can manage Unified Extensible Firmware Interface (UEFI) settings after they're enrolled by using the Device Firmware Configuration Interface (DFCI).  DFCI enables Windows to pass management commands from Intune to UEFI to Autopilot Deployed devices. This allows you to limit end users control over BIOS settings, lock down the boot options to prevent users from booting up another OS, or an older version of Windows that doesn't have the same security features. When you reinstall an older Windows version, install a separate OS, or format the hard drive, you can't override DFCI management. This feature can prevent malware from communicating with OS processes, including elevated OS processes. DFCI’s trust chain uses public key cryptography, and doesn't depend on local UEFI password security. This layer of security blocks local users from accessing managed settings from the device’s UEFI menus.
+With Windows Autopilot Deployment and Intune, you can manage Unified Extensible Firmware Interface (UEFI) settings after they're enrolled by using the Device Firmware Configuration Interface (DFCI).  DFCI [enables Windows to pass management commands](https://docs.microsoft.com/windows/client-management/mdm/uefi-csp) from Intune to UEFI to Autopilot Deployed devices. This allows you to limit end users control over BIOS settings, lock down the boot options to prevent users from booting up another OS, or an older version of Windows that doesn't have the same security features. When you reinstall an older Windows version, install a separate OS, or format the hard drive, you can't override DFCI management. This feature can prevent malware from communicating with OS processes, including elevated OS processes. DFCI’s trust chain uses public key cryptography, and doesn't depend on local UEFI password security. This layer of security blocks local users from accessing managed settings from the device’s UEFI menus.
+
+## DFCI management lifecycle
 
 The DFCI management lifecycle can be viewed as UEFI integration, device registration, profile creation, enrollment, management, retirement, and recovery. For an overview of benefits, scenarios, and prerequisites, see Overview of DFCI.
 
-[graphic]
+   ![Lifecycle](images/dfci.png)
 
-DFCI Prerequisite:
-- Device must be Windows 10 RS5 (1809) and later on supported UEFI
-- Device manufacturer must have DFCI added to their UEFI firmware in the manufacturing process, or as a firmware update you install. Work with your device vendors to determine the manufacturers that support DFCI, or the firmware version needed to use DFCI.
-- Device must be registered for Windows Autopilot by a Microsoft Cloud Solution Provider (CSP) partner, or registered directly by the OEM.
-Device manually registered for Autopilot, such as imported from a csv file, aren't allowed to use DFCI. By design, DFCI management requires external attestation of the device’s commercial acquisition through an OEM or a Microsoft CSP partner registration to Windows Autopilot.
-Once your device is registered, its serial number is shown in the list of Windows Autopilot devices.
-- Device must be managed with Microsoft Intune. For more information on Autopilot, including any requirements, see Enroll Windows devices in Intune by using the Windows Autopilot. 
+## Requirements
 
-Managing DFCI profile with Windows Autopilot:
-There are four basic steps in managing DFCI profile with Windows Autopilot, see Create DFCI Profiles in Intune
-1.	Create an Autopilot Profile
-2.	Create an Enrollment status page profile
-3.	Create a DFCI profile
-4.	Assign the profiles 
+- Windows 10, version 1809 or later and a supported UEFI is requried.
+- The device manufacturer must have DFCI added to their UEFI firmware in the manufacturing process, or as a firmware update that you install. Work with your device vendors to determine the [manufacturers that support DFCI](#oems-that-support-dfci), or the firmware version needed to use DFCI.
+- The device must be registered for Windows Autopilot by a [Microsoft Cloud Solution Provider (CSP) partner](https://partner.microsoft.com/membership/cloud-solution-provider), or registered directly by the OEM. Devices manually registered for Autopilot (such as by [importing from a csv file](https://docs.microsoft.com/intune/enrollment/enrollment-autopilot#add-devices)) are not allowed to use DFCI. By design, DFCI management requires external attestation of the device’s commercial acquisition through an OEM or a Microsoft CSP partner registration to Windows Autopilot. When your device is registered, its serial number is displayed in the list of Windows Autopilot devices.
+- The device must be managed with Microsoft Intune. For more information, see [Enroll Windows devices in Intune using Windows Autopilot](https://docs.microsoft.com/intune/enrollment/enrollment-autopilot).
+
+## Managing DFCI profile with Windows Autopilot
+
+There are four basic steps in managing DFCI profile with Windows Autopilot, see [Create DFCI Profiles in Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows#create-the-profiles).
+
+1. Create an Autopilot Profile
+2. Create an Enrollment status page profile
+3. Create a DFCI profile
+4. Assign the profiles 
+
 The next time the device syncs, or the device reboots, the DFCI profile settings are applied. After the policy applies, device would reboot. If you want to change existing DFCI settings on devices that are in use, you can. In your existing DFCI profile, change the settings, and save your changes. Since the profile is already assigned, the new DFCI settings take effect when next time the device syncs, or the device reboots.
 
-For more details, see How-to guides: DFCI management in Intune
+For details, see [Use DFCI profiles on Windows devices in Microsoft Intune](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows).
 
-OEMs that support DFCI:
-•	Microsoft Surface
-Other OEMs are in process of supporting DFCI.
+## OEMs that support DFCI
 
+- [Microsoft Surface](https://docs.microsoft.com/surface/surface-manage-dfci-guide)
+
+Additional OEMs are pending.
 
 ## See also
 
-Microsoft DFCI Scenarios<br>
-Windows Autopilot and Surface devices<br>
-Use DFCI profiles on Windows devices in Microsoft Intune<br>
-
+[Microsoft DFCI Scenarios](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Scenarios/DfciScenarios/)<br>
+[Windows Autopilot and Surface devices](https://docs.microsoft.com/surface/windows-autopilot-and-surface-devices)<br>
