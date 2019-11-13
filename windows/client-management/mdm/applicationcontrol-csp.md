@@ -113,18 +113,10 @@ Scope is dynamic. Supported operation is Get.
 Value type is char.
 
 ## MDM Usage Guidance
-To use ApplicationControl CSP, you must:
-- Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyID>` or `<PolicyTypeID>` for pre-1903 systems.
-- Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
-
-If you are using hybrid MDM management with System Center Configuration Manager (SCCM) or using Intune, the steps to use Custom OMA-URI functionality to apply the Code Integrity policy are:
-- In the Intune portal, navigate to Device configuration, then Profiles, then create a profile with Custom OMA-URI Settings and add a row.
-- OMA-URI: ./Vendor/MSFT/ApplicationControl/Policies/Policy GUID/Policy
-- Data type: Base64
-- Certificate file: upload your binary format policy file.
+Refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) for more information.
 
 > ![Note]
-> Intune handles the creation of a policy node and does all the below steps to deploy policies on your behalf, so you shouldn't do any of the below steps.
+> Intune handles the creation of a policy node and does all the below steps to deploy policies on your behalf, so you shouldn't do any of the below steps if using Intune to leverage ApplicationControl CSP.
 
 ## Non-MDM Usage Guidance  
 If not using Intune or hybrid MDM management with SCCM, in order to use ApplicationControl CSP, you must:
