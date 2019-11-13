@@ -94,7 +94,7 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 | Windows Device Install log       | %windir%\inf\setupapi.dev.log         | For more information about using Device Install Log, refer to [SetupAPI Logging](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi-logging--windows-vista-and-later-). |
 
  
-**Table 2. Event log IDs for Surface Dock Firmware Update**
+**Table 2. Event log IDs for Surface Dock Firmware Update**<br>
 Events are logged in the Application Event Log.  Note:  Earlier versions of this tool wrote events to Applications and Services Logs\Microsoft Surface Dock Updater.
 
 | Event ID | Event type                                                           |
