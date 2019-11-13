@@ -28,7 +28,7 @@ ms.date: 11/12/2019
 
 [!include[Prerelease information](prerelease.md)]
 
-The DeviceTvmSecureConfigurationAssessmentKB table in the Advanced hunting schema contains information about the various secure configurations — such as whether a device has automatic updates on — checked by [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt). It also includes risk information, related industry benchmarks, and applicable MITRE ATT&CK techniques and tactics. Use this reference to construct queries that return information from the table.
+The DeviceTvmSecureConfigurationAssessmentKB table in the Advanced hunting schema contains information about the various secure configurations — such as whether a device has automatic updates on — checked by [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md). It also includes risk information, related industry benchmarks, and applicable MITRE ATT&CK techniques and tactics. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-reference.md).
 
@@ -51,4 +51,4 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 - [All Advanced hunting tables](advanced-hunting-reference.md)
 - [Advanced hunting query best practices](advanced-hunting-best-practices.md)
 - [Query data using Advanced hunting](advanced-hunting.md)
-- [Overview of Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt)
+- [Overview of Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)

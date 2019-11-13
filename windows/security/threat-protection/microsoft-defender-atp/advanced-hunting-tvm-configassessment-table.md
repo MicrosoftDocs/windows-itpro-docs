@@ -28,7 +28,7 @@ ms.date: 11/12/2019
 
 [!include[Prerelease information](prerelease.md)]
 
-Each row in the DeviceTvmSecureConfigurationAssessment table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt). Use this reference to check the latest assessment results and determine whether devices are compliant.
+Each row in the DeviceTvmSecureConfigurationAssessment table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md). Use this reference to check the latest assessment results and determine whether devices are compliant.
 
 For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-reference.md).
 
@@ -51,4 +51,4 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 - [All Advanced hunting tables](advanced-hunting-reference.md)
 - [Advanced hunting query best practices](advanced-hunting-best-practices.md)
 - [Query data using Advanced hunting](advanced-hunting.md)
-- [Overview of Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt)
+- [Overview of Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)

@@ -29,7 +29,7 @@ ms.date: 11/12/2019
 
 [!include[Prerelease information](prerelease.md)]
 
-The DeviceTvmSoftwareInventoryVulnerabilities table in the Advanced hunting schema contains the [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt) inventory of software on your devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information. Use this reference to construct queries that return information from the table.
+The DeviceTvmSoftwareInventoryVulnerabilities table in the Advanced hunting schema contains the [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) inventory of software on your devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the Advanced hunting schema, see [the Advanced hunting reference](advanced-hunting-reference.md).
 
@@ -54,4 +54,4 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 - [All Advanced hunting tables](advanced-hunting-reference.md)
 - [Advanced hunting query best practices](advanced-hunting-best-practices.md)
 - [Query data using Advanced hunting](advanced-hunting.md)
-- [Overview of Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt)
+- [Overview of Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
