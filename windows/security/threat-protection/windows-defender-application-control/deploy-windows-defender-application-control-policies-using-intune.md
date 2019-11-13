@@ -27,7 +27,7 @@ ms.date: 05/17/2018
 -   Windows 10
 -   Windows Server 2016
 
-You can use Microsoft Intune to configure Windows Defender Application Control (WDAC). Beginning in 1903, you can configure a custom profile using Custom OMA-URI to leverage the new ApplicationControl CSP. This CSP has support for [multiple policies](deploy-multiple-windows-defender-application-control-policies.md) and rebootless policies. Custom OMA-URI can also be used on pre-1903 systems to deploy custom policies.
+You can use Microsoft Intune to configure Windows Defender Application Control (WDAC). Beginning in 1903, you can configure a custom profile using Custom OMA-URI to leverage the new ApplicationControl CSP. This CSP has support for [multiple policies](deploy-multiple-windows-defender-application-control-policies.md) and rebootless policies (policies that have the “Enabled:Update Policy No Reboot” option set don't require a reboot to take effect). Custom OMA-URI can also be used on pre-1903 systems to deploy custom policies.
 
 Alternately, you can instead choose to configure an Endpoint Protection profile to deploy built-in Intune-managed WDAC policies on pre-1903 systems. Using Endpoint Protection, you can configure Windows 10 client computers to only run Windows components and Microsoft Store apps, or let them also run reputable apps defined by the Intelligent Security Graph.
 
