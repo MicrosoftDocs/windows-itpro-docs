@@ -28,16 +28,15 @@ ms.date: 05/17/2018
 -   Windows Server 2016
 
 You can use Microsoft Intune to configure Windows Defender Application Control (WDAC). Beginning in 1903, you can configure a custom profile using Custom OMA-URI to leverage the new ApplicationControl CSP. This CSP has support for [multiple policies](deploy-multiple-windows-defender-application-control-policies.md) and rebootless policies. Custom OMA-URI can also be used on pre-1903 systems to deploy custom policies.
+
 Alternately, you can instead choose to configure an Endpoint Protection profile to deploy built-in Intune-managed WDAC policies on pre-1903 systems. Using Endpoint Protection, you can configure Windows 10 client computers to only run Windows components and Microsoft Store apps, or let them also run reputable apps defined by the Intelligent Security Graph.
 
 ## Custom OMA-URI profile
 For information on using a custom OMA-URI profile on pre-1903 systems to leverage the AppLocker CSP and deploy custom WDAC policies, refer to [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).
 
-For 1903+ systems, in order to use ApplicationControl CSP through custom OMA-URI, you must:
+For 1903+ systems, the steps to use Custom OMA-URI functionality to leverage ApplicationControl CSP and apply the Code Integrity policy are:
 - Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyID>`
 - Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
-
-From there, the steps to use Custom OMA-URI functionality to apply the Code Integrity policy are:
 - In the Intune portal, navigate to Device configuration, then Profiles, then create a profile with Custom OMA-URI Settings and add a row.
 - OMA-URI: ./Vendor/MSFT/ApplicationControl/Policies/Policy GUID/Policy
 - Data type: Base64
