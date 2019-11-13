@@ -95,7 +95,7 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 
  
 **Table 2. Event log IDs for Surface Dock Firmware Update**
-Events are logged in the Application Event Log.  Note:  Earlier versions of this tool wrote events to Applications and Services Logs\Microsoft Surface Dock Updater.
+Events are logged in the Application Event Log. Note: Earlier versions of this tool wrote events to Applications and Services Logs\Microsoft Surface Dock Updater.
 
 | Event ID | Event type                                                           |
 | -------- | -------------------------------------------------------------------- |
