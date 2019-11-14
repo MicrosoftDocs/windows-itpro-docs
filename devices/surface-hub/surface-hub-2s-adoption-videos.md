@@ -1,6 +1,6 @@
 ---
 title: "Surface Hub 2S on-demand adoption and training videos"
-description: "This page contains comprehensive training for Surface Hub 2S via on-demand streaming"
+description: "This page contains on-demand training for Surface Hub 2S."
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
