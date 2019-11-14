@@ -61,7 +61,7 @@ Changing the Windows display language will:
 
 To add or remove a keyboard layout, go to **Start menu** > **Settings** > **Time & language** > **Keyboard**.
 
-When there is more than one keyboard layout added, you can switch between different keyboard layouts using the Layout key in the lower right corner of the on-screen keyboard.
+When there is more than one keyboard layout added, you can switch between different keyboard layouts using the **Layout** key in the lower right corner of the on-screen keyboard.
 
 > [!NOTE]
 > While you can use the on-screen keyboard to enter text that requires Input Method Editor (IME) such as Chinese, using a Bluetooth hardware keyboard with IME is not currently supported. When a on-screen keyboard layout uses IME, you can continue to use a Bluetooth keyboard to type in English. To toggle a hardware keyboard to type in English, press the ~ key.
