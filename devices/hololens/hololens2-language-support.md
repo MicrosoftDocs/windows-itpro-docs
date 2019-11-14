@@ -46,7 +46,7 @@ HoloLens is configured for a language and region during set up. You can change t
 
 ## To change the Windows display language
 
-1. Go to **Start** menu, and then select **Settings** > **Time and Language** > **Language**.
+1. Go to the **Start** menu, and then select **Settings** > **Time and Language** > **Language**.
 2. Choose a language from the **Windows display language** menu. 
 
 If the supported language you’re looking for is not in the menu, use the **Add a language button** in the **Preferred languages** section on the page to search for and add the language, then check in the **Windows display language menu** again.
