@@ -8,7 +8,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 10/20/2019
+ms.date: 11/13/2019
 ms.reviewer: jesko
 manager: dansimp
 ms.audience: itpro
@@ -89,9 +89,8 @@ Before configuring DFCI policy settings, first create a DFCI profile and assign 
 
     ![Create Autopilot profile](images/df3b.png)
 
-5. On the Scope tags page, select **Next**.
-6. On the Assignments page, choose **Select groups to include** and click your Azure AD security group. Select **Next**.
-7. Accept the summary and then select **Create**. The Autopilot profile is now created and assigned to the group.
+5. On the Assignments page, choose **Select groups to include** and click your Azure AD security group. Select **Next**.
+6. Accept the summary and then select **Create**. The Autopilot profile is now created and assigned to the group.
 
 ## Configure Enrollment Status Page
 

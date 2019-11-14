@@ -30,14 +30,14 @@ This guide is intended for use by an IT-specialist, system architect, or busines
 ## In this guide
 
 <table border="0">
-<tr><td><a href="windows-autopilot-whats-new.md">What's new</a> <td>Windows Autopilot is always being updated with new features! Check this topic to read about the latests capabilities.
+<tr><td><a href="windows-autopilot-whats-new.md">What's new</a> <td>Windows Autopilot is always being updated with new features! Check this topic to read about the latest capabilities.
 </table>
 
 ### Understanding Windows Autopilot
 
 <table>
 <tr><td><a href="windows-autopilot.md">Overview of Windows Autopilot</a><td>A review of Windows Autopilot is provided with a video walkthrough. Benefits and general requirements are discussed.
-<tr><td><a href="windows-autopilot-requirements.md">Requirements</a><td>Detailed software, network, licensiing, and configuration requirments are provided.
+<tr><td><a href="windows-autopilot-requirements.md">Requirements</a><td>Detailed software, network, licensing, and configuration requirements are provided.
 <tr><td><a href="windows-autopilot-scenarios.md">Scenarios and Capabilities</a><td>A summary of Windows Autopilot deployment scenarios and capabilities.
 <tr><td><a href="demonstrate-deployment-on-vm.md">Get started</a><td>Interested in trying out Autopilot? See this step-by-step walkthrough to test Windows Autopilot on a virtual machine or physical device with a free 30-day trial premium Intune account.
 </table>
@@ -56,10 +56,11 @@ This guide is intended for use by an IT-specialist, system architect, or busines
 
 <table>
 <tr><td><a href="add-devices.md">Registering devices</a><td>The process of registering a device with the Windows Autopilot deployment service is described.
-<tr><td><a href="profiles.md">Configuring device profiles</a><td>The device profile settings that specifie its behavior when it is deployed are described.
+<tr><td><a href="profiles.md">Configuring device profiles</a><td>The device profile settings that specific its behavior when it is deployed are described.
 <tr><td><a href="enrollment-status.md">Enrollment status page</a><td>Settings that are available on the Enrollment Status Page are described.
 <tr><td><a href="bitlocker.md">BitLocker encryption</a><td> Available options for configuring BitLocker on Windows Autopilot devices are described.
-<tr><td><a href="troubleshooting.md">Troubleshooting Windows Autopilot</a><td>Diagnotic event information and troubleshooting procedures are provided.
+<tr><td><a href="dfci-management.md">DFCI management</a><td> Manage UEFI settings using the Device Firmware Configuration Interface (DFCI) with Windows Autopilot and Intune.
+<tr><td><a href="troubleshooting.md">Troubleshooting Windows Autopilot</a><td>Diagnostic event information and troubleshooting procedures are provided.
 <tr><td><a href="known-issues.md">Known issues</a><td>A list of current known issues and solutions is provided.
 </table>
 
