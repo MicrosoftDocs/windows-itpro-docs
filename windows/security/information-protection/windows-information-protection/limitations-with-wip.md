@@ -134,7 +134,7 @@ This table provides info about the most common problems you might encounter whil
     </tr>
 </table>
 
->[!NOTE]
+> [!NOTE]
 >When corporate data is written to disk, WIP uses the Windows-provided Encrypting File System (EFS) to protect it and associate it with your enterprise identity. One caveat to keep in mind is that the Preview Pane in File Explorer will not work for encrypted files. 
 
 >[!NOTE]
