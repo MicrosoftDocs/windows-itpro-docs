@@ -51,7 +51,7 @@ HoloLens is configured for a language and region during set up. You can change t
 
 If the supported language you’re looking for is not in the menu, use the **Add a language button** in the **Preferred languages** section on the page to search for and add the language, then check in the **Windows display language menu** again.
 
-Changing Windows display language will:
+Changing the Windows display language will:
 
 - Change the UI text language for Windows and apps (for apps that support localization).
 - Change the supported speech language for speech features in Windows and apps.
