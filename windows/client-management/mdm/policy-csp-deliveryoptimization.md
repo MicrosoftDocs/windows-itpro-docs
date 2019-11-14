@@ -780,7 +780,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. Set this policy to restrict peer selection to a specific source.
+Added in Windows 10, version 1803. Set this policy to restrict peer selection to a specific source. Available options are: 1 = AD Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix, 5 = AAD.
 
 When set, the Group ID will be assigned automatically from the selected source.
 
