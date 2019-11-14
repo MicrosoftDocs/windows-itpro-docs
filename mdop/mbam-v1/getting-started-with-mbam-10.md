@@ -13,8 +13,11 @@ ms.prod: w10
 ms.date: 08/30/2016
 ---
 
-
 # Getting Started with MBAM 1.0
+
+> **IMPORTANT**
+> MBAM 1.0 will reach end of support on September 14, 2021. 
+> See our [lifecycle page](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20BitLocker%20Administration%20and%20Monitoring%201.0) for more information. We recommend [migrating to MBAM 2.5](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/upgrading-to-mbam-25-or-mbam-25-sp1-from-previous-versions) or another supported version of MBAM, or migrating your BitLocker management to [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager).
 
 
 Microsoft BitLocker Administration and Monitoring (MBAM) requires thorough planning before you deploy it or use its features. Because this product can affect every computer in your organization, you might disrupt your entire network if you do not plan your deployment carefully. However, if you plan your deployment carefully and manage it so that it meets your business needs, MBAM can help reduce your administrative overhead and total cost of ownership.
