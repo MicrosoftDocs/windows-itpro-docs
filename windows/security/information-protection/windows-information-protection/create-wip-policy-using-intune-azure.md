@@ -160,7 +160,7 @@ To add **Desktop apps**, complete the following fields, based on what results yo
     </tr>
     <tr>
         <td>All fields marked as “*”</td>
-        <td>All files signed by any publisher. (Not recommended)</td>
+        <td>All files signed by any publisher. (Not recommended and may not work)</td>
     </tr>
     <tr>
         <td>Publisher only</td>

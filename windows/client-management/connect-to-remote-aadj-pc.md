@@ -52,9 +52,11 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
 
   4. Enter **Authenticated Users**, then click **Check Names**. If the **Name Not Found** window opens, click **Locations** and select this PC.
 
-  >[!TIP]
-  >When you connect to the remote PC, enter your account name in this format: `AzureAD UPN`. The local PC must either be domain-joined or Azure AD-joined. The local PC and remote PC must be in the same Azure AD tenant.
+  > [!TIP]
+  > When you connect to the remote PC, enter your account name in this format: `AzureAD UPN`. The local PC must either be domain-joined or Azure AD-joined. The local PC and remote PC must be in the same Azure AD tenant.
 
+> [!Note]
+> If you cannot connect using Remote Desktop Connection 6.0, then you must turn off new features of RDP 6.0 and revert back to RDP 5.0 by changing a few changes in the RDP file. See the details in the [support article](https://support.microsoft.com/help/941641/remote-desktop-connection-6-0-prompts-you-for-credentials-before-you-e).
  
 ## Supported configurations
  
@@ -82,7 +84,8 @@ In organizations using only Azure AD, you can connect from an Azure AD-joined PC
 - Password
 - Windows Hello for Business, with or without an MDM subscription. 
 
-
+> [!NOTE]
+> If the RDP client is running Windows Server 2016 or Windows Server 2019, to be able to connect to Azure Active Directory-joined PCs, it must [allow Public Key Cryptography Based User-to-User (PKU2U) authentication requests to use online identities](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities).
 
 ## Related topics
 

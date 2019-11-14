@@ -44,13 +44,13 @@ The Automated investigation starts by analyzing the supported entities from the 
 
 ### Details of an Automated investigation
 
-As the investigation proceeds, you'll be able to view the details of the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Threats**, **Entities**, and **Log** tabs.
+As the investigation proceeds, you'll be able to view the details of the investigation. Selecting a triggering alert brings you to the investigation details view where you can pivot from the **Investigation graph**, **Alerts**, **Machines**, **Evidence**, **Entities**, and **Log** tabs.
 
 In the **Alerts** tab, you'll see the alert that started the investigation. 
 
 The **Machines** tab shows where the alert was seen.
 
-The **Threats** tab shows the entities that were found to be malicious during the investigation.
+The **Evidence** tab shows the entities that were found to be malicious during the investigation.
 
 During an Automated investigation, details about each analyzed entity is categorized in the **Entities** tab. You'll be able to see the determination for each entity type, such as whether it was determined to be malicious, suspicious, or clean.
 

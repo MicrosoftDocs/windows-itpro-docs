@@ -110,7 +110,7 @@ Choose a server that meets the hardware configuration as explained in the [MBAM 
     .NET Framework Environment<br />
     Configuration APIs
 
-For the self-service portal to work, you should also [download and install ASP.NET MVC 4.0](http://go.microsoft.com/fwlink/?linkid=392271).
+For the self-service portal to work, you should also [download and install ASP.NET MVC 4.0](https://go.microsoft.com/fwlink/?linkid=392271).
 
 The next step is to create the required MBAM users and groups in Active Directory.
 

@@ -504,7 +504,7 @@ Supported operation is Get.
 
 
 
-<a href="" id="appinstallation-packagefamilyname-lasterrordescription"></a>**AppInstallation/*PackageFamilyName*/LastErrorDescription**  
+<a href="" id="appinstallation-packagefamilyname-lasterrordescription"></a>**AppInstallation/*PackageFamilyName*/LastErrorDesc**  
 Required. Description of last error relating to the app installation.
 
 Supported operation is Get.

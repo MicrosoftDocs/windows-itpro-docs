@@ -15,7 +15,7 @@ appliesto:
 - HoloLens (1st gen)
 ---
 
-# HoloLens (1st Gen) hardware
+# HoloLens (1st gen) hardware
 
 ![Microsoft HoloLens (1st gen)](images/see-through-400px.jpg)
 
@@ -47,6 +47,14 @@ The HoloLens box contains the following items:
 
 >[!TIP]
 >The [clicker](hololens1-clicker.md) ships with HoloLens (1st Gen), in a separate box.
+
+### Power Supply details
+
+The power supply and the USB cable that come with the device are the best supported mechanism for charging. The power supply is an 18W charger.  It supplies 9V at 2A.
+
+Charging rate and speed may vary depending on the environment in which the device is running.
+
+In order to maintain/advance Internal Battery Charge Percentage while the device is on, it must be connected minimum to a 15W charger.
 
 ## Device specifications
 

@@ -102,7 +102,7 @@ You'll also have access to the following sections that help you see details of t
 - Investigation graph
 - Alerts
 - Machines
-- Key findings
+- Evidence
 - Entities
 - Log
 - Pending actions
@@ -138,7 +138,7 @@ Selecting a machine using the checkbox brings up the machine details pane where 
 
 Clicking on an machine name brings you the machine page.
 
-### Key findings
+### Evidence
 Shows details related to threats associated with this investigation. 
 
 ### Entities
