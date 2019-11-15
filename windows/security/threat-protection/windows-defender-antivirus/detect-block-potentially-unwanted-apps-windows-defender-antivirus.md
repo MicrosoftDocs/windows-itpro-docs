@@ -53,7 +53,9 @@ Although potentially unwanted application protection in Microsoft Edge (Chromium
 > [!TIP]
 > If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen demo pages.
 
-<!-- ^^ NOT currently up and running. From Matt Esquivel: "We need to add something to the test pages. [...] The URL I use now is: https://test.smartscreen.msft.net/urlrep_download/puaa_090_download_link.exe"-->
+#### Blocking URLs with Windows Defender SmartScreen
+
+In Chromium-based Edge with PUA protection turned on, Windows Defender SmartScreen will protect you from PUA-associated URLs. Although Microsoft Defender ATP has its own block list, based upon a data set managed by Microsoft, you can also customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains.md) in the Microsoft Defender ATP portal, SmartScreen will respect the new settings.
 
 ### Windows Defender Antivirus
 
