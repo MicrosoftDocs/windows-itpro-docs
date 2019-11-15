@@ -35,7 +35,14 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ### System requirements
 
-- Supported Linux server distributions and versions: RHEL 7, Oracle Linux 7, CentOS 7, Ubuntu 16 and 18, Debian 9
+- Supported Linux server distributions and versions: 
+
+  - Red Hat Enterprise Linux 7 or higher
+  - CentOS 7 or higher
+  - Ubuntu 16.04 LTS or higher
+  - Debian 9 or higher
+  - SUSE Linux Enterprise Server 12 or higher
+
 - Disk space: 650 MB. 
 
 If your Linux server is behind firewall or proxy, you will likely need to allow outbound connections between it and following servers. The following table lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
@@ -48,7 +55,7 @@ If your Linux server is behind firewall or proxy, you will likely need to allow 
 | United States                            | unitedstates.x.cp.wd.microsoft.com |
 
 Microsoft Defender ATP can discover a proxy server by using the following discovery methods:
-- Web Proxy Auto-discovery Protocol (WPAD)
+- Transparent proxy
 - Manual static proxy configuration
 
 If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.
@@ -95,7 +102,6 @@ In general you need to take the following steps:
     - [Manual deployment](microsoft-defender-atp-linux-install-manually.md)
 
 ## How to update Microsoft Defender ATP for Linux
-
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features. To update Microsoft Defender ATP for Linux, refer to [Deploy updates for Microsoft Defender ATP for Linux](microsoft-defender-atp-linux-updates.md)
 
