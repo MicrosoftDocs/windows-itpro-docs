@@ -39,7 +39,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
   - Red Hat Enterprise Linux 7 or higher
   - CentOS 7 or higher
-  - Ubuntu 16.04 LTS or higher
+  - Ubuntu 16.04 LTS or higher LTS
   - Debian 9 or higher
   - SUSE Linux Enterprise Server 12 or higher
 
