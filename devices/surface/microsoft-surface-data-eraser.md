@@ -14,7 +14,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.audience: itpro
-ms.date: 10/21/2019
+ms.date: 11/13/2019
 ---
 
 # Microsoft Surface Data Eraser
@@ -160,11 +160,17 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 
 Microsoft Surface Data Eraser is periodically updated by Microsoft. For information about the changes provided in each new version, see the following:
 
+### 3.28.137
+*Release Date: 11 Nov 2019*
+This version of Surface Data Eraser:
+
+- Includes bug fixes
+
 ### Version 3.21.137
 *Release Date: 21 Oct 2019*
 This version of Surface Data Eraser is compiled for x86 and adds support for the following devices:
 
-Supports Surface Pro 7, Surface Pro X, and Surface Laptop 3.
+- Supports Surface Pro 7, Surface Pro X, and Surface Laptop 3
 
 ### Version 3.2.78.0
 *Release Date: 4 Dec 2018*
