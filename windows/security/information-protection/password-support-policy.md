@@ -1,6 +1,6 @@
 ---
 title: Technical support policy for lost or forgotten passwords
-description: 
+description: Outlines the ways in which Microsoft can help you reset a lost or forgotten password, and provides links to instructions for doing so.
 ms.reviewer: kaushika
 manager: kaushika
 ms.author: v-tea
