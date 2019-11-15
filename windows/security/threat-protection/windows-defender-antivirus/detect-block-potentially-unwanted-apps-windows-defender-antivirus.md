@@ -55,7 +55,7 @@ Although potentially unwanted application protection in Microsoft Edge (Chromium
 
 #### Blocking URLs with Windows Defender SmartScreen
 
-In Chromium-based Edge with PUA protection turned on, Windows Defender SmartScreen will protect you from PUA-associated URLs. Although Microsoft Defender ATP has its own block list, based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains.md) in the Microsoft Defender ATP portal, Windows Defender SmartScreen will respect the new settings.
+In Chromium-based Edge with PUA protection turned on, Windows Defender SmartScreen will protect you from PUA-associated URLs. Although Microsoft Defender ATP has its own block list, based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators.md#create-indicators-for-ips-and-urlsdomains) in the Microsoft Defender ATP portal, Windows Defender SmartScreen will respect the new settings.
 
 Admins can also [configure](https://docs.microsoft.com/DeployEdge/configure-microsoft-edge) how Microsoft Edge and Windows Defender SmartScreen work together to protect groups of users from PUA-associated URLs. There are several group policy [settings](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreen-settings) explicitly for Windows
 Defender SmartScreen available, including [one for blocking PUA](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). In addition, admins can
