@@ -105,7 +105,7 @@ DFCI includes a streamlined set of UEFI configuration policies that provide an e
 
 You configure DFCI policy settings by editing the DFCI profile from Endpoint Manager, as shown in the figure below. 
 
-- Select **Devices > Windows > Configuration Profiles > “DFCI profile name” > Properties > Settings**.
+- In Endpoint Manager at  devicemanagement.microsoft.com, select **Devices > Windows > Configuration Profiles > “DFCI profile name” > Properties > Settings**.
 
     ![Configure DFCI settings](images/dfciconfig.png)
 
@@ -140,7 +140,7 @@ As stated above, DFCI can only be applied on devices registered in Windows Autop
 
 Although Intune policy settings typically get applied almost immediately, there may be a delay of 10 minutes before the settings take effect on targeted devices. In rare circumstances, delays of up to 8 hours are possible. To ensure settings apply as soon as possible, (such as in test scenarios), you can manually sync the target devices.
 
-- In Endpoint Manager, go to **Devices > Device enrollment > Windows enrollment > Windows Autopilot Devices** and select **Sync**.
+- In Endpoint Manager at  devicemanagement.microsoft.com, go to **Devices > Device enrollment > Windows enrollment > Windows Autopilot Devices** and select **Sync**.
 
  For more information, refer to [Sync your Windows device manually](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows).
 
@@ -167,14 +167,19 @@ When you create a DFCI profile, all configured settings will remain in effect ac
 
 If the original DFCI profile has been deleted, you can remove policy settings by creating a new profile and then editing the settings, as appropriate.
 
-## Unregistering devices from DFCI to prepare for resale or recycle
+## Removing DFCI management
 
-1. Contact your partner, OEM, or reseller to unregister the device from Autopilot.
-2. Remove the device from Intune.
-3. Connect a Surface-branded network adapter.
-4. Open Surface UEFI, which involves pressing the **Volume +** and **Power** buttons at the same time.
-5. Select **Management > Configure > Refresh from Network**.
-6. Validate DFCI is removed from the device in the UEFI.
+**To remove DFCI management and return device to factory new state:**
+
+1. Retire the device from Intune:
+    1. In Endpoint Manager at  devicemanagement.microsoft.com, choose **Groups > All Devices**. Select the devices you want to retire, and then choose **Retire/Wipe.** To learn more refer to [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/intune/remote-actions/devices-wipe). 
+2. Delete the Autopilot registration from Intune:
+    1.  Choose **Device enrollment > Windows enrollment > Devices**.
+    2. Under Windows Autopilot devices, choose the devices you want to delete, and then choose **Delete**.
+3. Connect device to wired internet with Surface-branded ethernet adapter. Restart device and open the UEFI menu (press and hold the volume-up button while also pressing and releasing the power button).
+4. Select **Management > Configure > Refresh from Network** and then choose **Opt-out.**
+
+To keep managing the device with Intune, but without DFCI management, self-register the device to Autopilot and enroll it to Intune. DFCI will not be applied to self-registered devices.
 
 ## Learn more
 - [Ignite 2019: Announcing remote management of Surface UEFI settings from Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)
