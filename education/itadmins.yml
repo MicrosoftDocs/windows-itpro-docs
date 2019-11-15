@@ -101,7 +101,7 @@ productDirectory:
         - url: https://docs.microsoft.com/microsoft-365/education/deploy/find-deployment-help
           text: IT admin help
         - url: https://social.technet.microsoft.com/forums/en-us/home
-          text: TechNet //docs.microsoft.com/microsoft-365/education/deploy/find-deployment-help
+          text: TechNet
     # Card    
     - title: Check out our education Journey
       imageSrc: ./images/EDU-ITJourney.svg
@@ -116,7 +116,7 @@ productDirectory:
       links:
         - url: https://support.office.com/en-us/education
           text: Education help center
-        - url: https://support.office.com/en-us/article/teacher-training-packs-7a9ee74a-8fe5-43d3-bc23-a55185896921https://support.office.com/en-us/article/teacher-training-packs-7a9ee74a-8fe5-43d3-bc23-a55185896921
+        - url: https://support.office.com/en-us/article/teacher-training-packs-7a9ee74a-8fe5-43d3-bc23-a55185896921
           text: Teacher training packs
         - url: https://outlook.live.com/mail/inbox
           text: Student help center
