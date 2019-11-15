@@ -305,7 +305,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
 ## Related Links
-[CIM Videocontroller](https://docs.microsoft.com/en-us/windows/win32/cimwin32prov/cim-videocontroller)
+[CIM Video Controller](https://docs.microsoft.com/en-us/windows/win32/cimwin32prov/cim-videocontroller)
  
 
  
