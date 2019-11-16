@@ -54,8 +54,6 @@
 
 ## [Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)
 
-## [Technical support policy for lost or forgotten passwords](password-support-policy.md)
-
 ## [Trusted Platform Module](tpm/trusted-platform-module-top-node.md)
 ### [Trusted Platform Module Overview](tpm/trusted-platform-module-overview.md)
 ### [TPM fundamentals](tpm/tpm-fundamentals.md)
