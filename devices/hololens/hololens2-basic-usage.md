@@ -102,12 +102,15 @@ To **close** the Start menu, do the Start gesture when the Start menu is open.  
 
 ### One-handed Start gesture
 
+> [!IMPORTANT]
+> For the one-handed Start gesture to work:
+>
+> 1. You must update to the November 2019 update (build 18363) or later.
+> 1. Your eyes must be calibrated on the device so that eye tracking functions correctly. If you do not see orbiting dots around the Start icon when you look at it, your eyes are not calibrated on the device.
+
 You can also perform the Start gesture with only one hand. To do this, hold out your hand with your palm facing you and look at the **Start icon** on your inner wrist. **While keeping your eye on the icon**, pinch your thumb and index finger together.
 
-> [!IMPORTANT]
-> For the one-handed Start gesture to work, your eyes must be calibrated on the device so that eye tracking functions correctly. If you do not see orbiting dots around the Start icon when you look at it, your eyes are not calibrated on the device.
-
-![Image that shows the Start icon and the one-handed start gesture](./images/hololens-2-start-alternative.jpg)
+![Image that shows the Start icon and the one-handed start gesture](./images/hololens-2-start-alternative.png)
 
 ## Start menu, mixed reality home, and apps
 
