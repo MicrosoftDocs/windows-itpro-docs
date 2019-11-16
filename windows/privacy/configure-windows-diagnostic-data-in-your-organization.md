@@ -146,9 +146,9 @@ The following table defines the endpoints for Connected User Experiences and Tel
 
 Windows release | Endpoint
 --- | ---
-Windows 10, versions 1703 or later, with the 2018-09 cumulative update installed| **Diagnostics data** - v10c.vortex-win.data.microsoft.com</br></br>**Functional** - v20.vortex-win.data.microsoft.com</br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>**Settings** - win.data.microsoft.com
-Windows 10, versions 1803 or later, without the 2018-09 cumulative update installed | **Diagnostics data** - v10.events.data.microsoft.com</br></br>**Functional** - v20.vortex-win.data.microsoft.com</br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>**Settings** - win.data.microsoft.com
-Windows 10, version 1709 or earlier | **Diagnostics data** - v10.vortex-win.data.microsoft.com</br></br>**Functional** - v20.vortex-win.data.microsoft.com</br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>**Settings** - win.data.microsoft.com
+Windows 10, versions 1703 or later, with the 2018-09 cumulative update installed| **Diagnostics data** - v10c.vortex-win.data.microsoft.com</br></br>**Functional** - v20.vortex-win.data.microsoft.com</br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>**Settings** - settings-win.data.microsoft.com
+Windows 10, versions 1803 or later, without the 2018-09 cumulative update installed | **Diagnostics data** - v10.events.data.microsoft.com</br></br>**Functional** - v20.vortex-win.data.microsoft.com</br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>**Settings** - settings-win.data.microsoft.com
+Windows 10, version 1709 or earlier | **Diagnostics data** - v10.vortex-win.data.microsoft.com</br></br>**Functional** - v20.vortex-win.data.microsoft.com</br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>**Settings** - settings-win.data.microsoft.com
 
 The following table defines the endpoints for other diagnostic data services:
 
