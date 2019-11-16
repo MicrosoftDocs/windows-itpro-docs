@@ -23,13 +23,13 @@ If you lose or forget the password for a domain account, contact your IT adminis
 
 ## How to reset a password for my Microsoft account
 
-If you lose or forget the password for your Microsoft Account, fill out the [] (https://account.live.com/ResetPassword.aspx) form.
+If you lose or forget the password for your Microsoft Account, go to the [Recover your account](https://account.live.com/ResetPassword.aspx) wizard.
 
-This form requests your security proofs. If you have forgotten your security proofs, or no longer have access to them, select **I no longer have these anymore**. After you select this option, fill out a form for the Microsoft Account team. Provide as much information as you can on this form. The Microsoft Account team will review the information that you provide to determine whether you are the account holder. This decision is final and Microsoft does not influence the team's choice of action.
+This wizard requests your security proofs. If you have forgotten your security proofs, or no longer have access to them, select **I no longer have these anymore**. After you select this option, fill out a form for the Microsoft Account team. Provide as much information as you can on this form. The Microsoft Account team will review the information that you provide to determine whether you are the account holder. This decision is final and Microsoft does not influence the team's choice of action.
 
 ## How to reset a password for a local account on a Windows 10 device
 
-If you lose or forget the password for a local account on a Windows 10 device, see [] (https://support.microsoft.com/help/4028457).
+If you lose or forget the password for a local account on a Windows 10 device, see [Reset your Windows 10 local account password](https://support.microsoft.com/help/4028457).
 
 ## How to reset a hardware BIOS password
 
