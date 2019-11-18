@@ -53,7 +53,15 @@ Although potentially unwanted application protection in Microsoft Edge (Chromium
 > [!TIP]
 > If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen demo pages.
 
-<!-- ^^ NOT currently up and running. From Matt Esquivel: "We need to add something to the test pages. [...] The URL I use now is: https://test.smartscreen.msft.net/urlrep_download/puaa_090_download_link.exe"-->
+#### Blocking URLs with Windows Defender SmartScreen
+
+In Chromium-based Edge with PUA protection turned on, Windows Defender SmartScreen will protect you from PUA-associated URLs.
+
+Admins can  [configure](https://docs.microsoft.com/DeployEdge/configure-microsoft-edge) how Microsoft Edge and Windows Defender SmartScreen work together to protect groups of users from PUA-associated URLs. There are several group policy [settings](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreen-settings) explicitly for Windows
+Defender SmartScreen available, including [one for blocking PUA](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). In addition, admins can
+[configure Windows Defender SmartScreen](https://docs.microsoft.com/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) as a whole, using group policy settings to turn Windows Defender SmartScreen on or off.
+
+Although Microsoft Defender ATP has its own block list, based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators.md#create-indicators-for-ips-and-urlsdomains) in the Microsoft Defender ATP portal, Windows Defender SmartScreen will respect the new settings.
 
 ### Windows Defender Antivirus
 
@@ -85,9 +93,9 @@ See [Configure device restriction settings in Microsoft Intune](https://docs.mic
 
 ##### Use Configuration Manager to configure PUA protection
 
-PUA protection is enabled by default in the System Center Configuration Manager (current branch), starting with  version 1606.
+PUA protection is enabled by default in the System Center Configuration Manager (Current Branch), starting with  version 1606.
 
-See [How to create and deploy antimalware policies: Scheduled scans settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring System Center Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Scheduled scans settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring System Center Configuration Manager (Current Branch).
 
 For Configuration Manager 2012, see [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](https://technet.microsoft.com/library/hh508770.aspx#BKMK_PUA).
 
