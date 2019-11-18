@@ -10,10 +10,11 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
+ms.custom: asr
 ---
 
 # Reduce attack surfaces with attack surface reduction rules
