@@ -12,9 +12,10 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
+ms.author: deniseb
+manager: denisebmsft
 ms.date: 01/08/2019
+ms.custom: asr
 ---
 
 # Application Control
@@ -79,18 +80,21 @@ AppLocker policies can be deployed using Group Policy or MDM.
 
 Although either AppLocker or WDAC can be used to control application execution on Windows 10 clients, the following factors can help you decide when to use each of the technologies. 
 
-**WDAC is best when:**
+### WDAC is best when:
+
 -   You are adopting application control primarily for security reasons.
 -   Your application control policy can be applied to all users on the managed computers.
 -   All of the devices you wish to manage are running Windows 10.
 
-**AppLocker is best when:**
+### AppLocker is best when:
+
 -   You have a mixed Windows operating system (OS) environment and need to apply the same policy controls to Windows 10 and earlier versions of the OS.
 -   You need to apply different policies for different users or groups on a shared computer.
 -   You are using application control to help users avoid running unapproved software, but you do not require a solution designed as a security feature.
 -   You do not wish to enforce application control on application files such as DLLs or drivers.
 
-**When to use both WDAC and AppLocker together**
+## When to use both WDAC and AppLocker together
+
 AppLocker can also be deployed as a complement to WDAC to add user- or group-specific rules for shared device scenarios where its important to prevent some users from running specific apps.
 As a best practice, you should enforce WDAC at the most restrictive level possible for your organization, and then you can use AppLocker to fine-tune the restrictions to an even lower level.
 
