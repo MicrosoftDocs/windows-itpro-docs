@@ -10,19 +10,20 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: denisebmsft
+ms.author: deniseb
 audience: ITPro
 ms.date: 08/05/2019
 ms.reviewer: v-maave
 manager: dansimp
+ms.custom: asr
 ---
 
 # Protect important folders with controlled folder access
 
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Controlled folder access helps you protect valuable data from malicious apps and threats, such as ransomware. It protects your data by checking against a list of known, trusted apps. Controlled folder access is supported on Windows Server 2019 as well as Windows 10 clients. It can be turned on via the Windows Security App, or from the System Center Configuration Manager (SCCM) and Intune, for managed devices. Controlled folder access works best with [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md), which gives you detailed reporting into controlled folder access events and blocks as part of the usual [alert investigation scenarios](../microsoft-defender-atp/investigate-alerts.md).
 
@@ -65,15 +66,15 @@ You can review the Windows event log to see events that are created when control
 
 1. Download the [Evaluation Package](https://aka.ms/mp7z2w) and extract the file *cfa-events.xml* to an easily accessible location on the machine.
 
-1. Type **Event viewer** in the Start menu to open the Windows Event Viewer.
+2. Type **Event viewer** in the Start menu to open the Windows Event Viewer.
 
-1. On the left panel, under **Actions**, click **Import custom view...**.
+3. On the left panel, under **Actions**, click **Import custom view...**.
 
-1. Navigate to where you extracted *cfa-events.xml* and select it. Alternatively, [copy the XML directly](event-views.md).
+4. Navigate to where you extracted *cfa-events.xml* and select it. Alternatively, [copy the XML directly](event-views.md).
 
-1. Click **OK**.
+5. Click **OK**.
 
-1. This will create a custom view that filters to only show the following events related to controlled folder access:
+This will create a custom view that filters to only show the following events related to controlled folder access:
 
 Event ID | Description
 -|-
