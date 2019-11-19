@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
@@ -92,7 +93,7 @@ You can run a Windows Defender Offline scan with the following:
 
 
 
-**Use PowerShell cmdlets to run an offline scan:**
+### Use PowerShell cmdlets to run an offline scan
 
 Use the following cmdlets:
 
@@ -102,7 +103,7 @@ Start-MpWDOScan
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-**Use Windows Management Instruction (WMI) to run an offline scan:**
+### Use Windows Management Instruction (WMI) to run an offline scan
 
 Use the [**MSFT_MpWDOScan**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class to run an offline scan.
 
@@ -116,7 +117,7 @@ See the following for more information:
 - [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
 
 
-**Use the Windows Defender Security app to run an offline scan:**
+### Use the Windows Defender Security app to run an offline scan
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
@@ -135,7 +136,7 @@ See the following for more information:
 Windows Defender Offline scan results will be listed in the [Scan history section of the Windows Security app](windows-defender-security-center-antivirus.md#detection-history). 
 
 
-## Related topics
+## Related articles
 
 - [Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
