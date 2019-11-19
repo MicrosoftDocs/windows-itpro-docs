@@ -364,7 +364,7 @@ Result
 <td><p>windowsPhoneLegacyId</p></td>
 <td><p>Same value maps to the ProductName and Publisher name</p>
 <p>This value will only be present if there is a XAP package associated with the app in the Store.</p>
-<p>If this value is populated then the simple thing to do to cover both the AppX and XAP package would be to create two rules for the app. One rule for AppX using the packageIdentityName and publisherCertificateName value and anothe one using the windowsPhoneLegacyId value.</p></td>
+<p>If this value is populated then the simple thing to do to cover both the AppX and XAP package would be to create two rules for the app. One rule for AppX using the packageIdentityName and publisherCertificateName value and another one using the windowsPhoneLegacyId value.</p></td>
 </tr>
 </tbody>
 </table>
@@ -713,12 +713,12 @@ The following list shows the apps that may be included in the inbox.
 <td>Microsoft.MSPodcast</td>
 </tr>
 <tr class="odd">
-<td>Posdcast downloads</td>
+<td>Podcast downloads</td>
 <td>063773e7-f26f-4a92-81f0-aa71a1161e30</td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Powerpoint</td>
+<td>PowerPoint</td>
 <td>b50483c4-8046-4e1b-81ba-590b24935798</td>
 <td>Microsoft.Office.PowerPoint</td>
 </tr>
