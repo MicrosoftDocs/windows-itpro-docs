@@ -1,6 +1,6 @@
 ---
 title: Use the command line to manage Windows Defender Antivirus
-description: Run Windows Defender Antivirus scans and configure next gen protection with a dedicated command-line utility.
+description: Run Windows Defender Antivirus scans and configure next-generation protection with a dedicated command-line utility.
 keywords: run windows defender scan, run antivirus scan from command line, run windows defender scan from command line, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
