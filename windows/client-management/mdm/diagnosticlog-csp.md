@@ -13,15 +13,14 @@ ms.date: 11/19/2019
 ---
 
 # DiagnosticLog CSP
-The DiagnosticLog configuration service provider (CSP) provides the following feature areas:
-
+The DiagnosticLog configuration service provider (CSP) provides the following feature areas:  
 - [DiagnosticArchive area](#diagnosticarchive-area). Capture and upload event logs, log files, and registry values for troubleshooting.
 - [Policy area](#policy-area). Configure Windows event log policies, such as maximum log size.
 - [EtwLog area](#etwlog-area). Control ETW trace sessions.
 - [DeviceStateData area](#devicestatedata-area). Provide additional device information.
 - [FileDownload area](#filedownload-area). Pull trace and state data directly from the device.
 
-Here are the links to the DDFs:
+The following are the links to the DDFs of the DiagnosticLog CSP:  
 -   [DiagnosticLog CSP version 1.4](diagnosticlog-ddf.md#version-1-4)
 -   [DiagnosticLog CSP version 1.3](diagnosticlog-ddf.md#version-1-3)
 -   [DiagnosticLog CSP version 1.2](diagnosticlog-ddf.md#version-1-2)
@@ -33,7 +32,7 @@ The following diagram shows the DiagnosticLog CSP in tree format.
 <a href="" id="--vendor-msft-diagnosticlog"></a>**./Vendor/MSFT/DiagnosticLog**  
 The root node for the DiagnosticLog CSP.
 
-Rest of the nodes in this CSP are described within their respective feature area sections.
+Rest of the nodes in the DiagnosticLog CSP are described within their respective feature area sections.
 
 ## DiagnosticArchive area
 
@@ -112,45 +111,45 @@ Assuming a case where the management server's customer (such as an IT admin) is 
   - Expected input value: The full command line including path and any arguments, such as `%windir%\\system32\\ipconfig.exe /all`.
   - Output format: Console text output from the command is captured in a text file and included in the overall output archive. For commands which may generate file output rather than console output, a subsequent FolderFiles directive would be used to capture that output. The example XML above demonstrates this pattern with mdmdiagnosticstool.exe's -out parameter.
   - Privacy guardrails: To enable diagnostic data capture while reducing the risk of an IT admin inadventantly capturing user-generated documents, only the following commands are allowed:  
-           - %windir%\\system32\\certutil.exe
-           - %windir%\\system32\\dxdiag.exe
-           - %windir%\\system32\\gpresult.exe
-           - %windir%\\system32\\msinfo32.exe
-           - %windir%\\system32\\netsh.exe
-           - %windir%\\system32\\nltest.exe
-           - %windir%\\system32\\ping.exe
-           - %windir%\\system32\\powercfg.exe
-           - %windir%\\system32\\w32tm.exe
-           - %windir%\\system32\\wpr.exe
-           - %windir%\\system32\\dsregcmd.exe
-           - %windir%\\system32\\dispdiag.exe
-           - %windir%\\system32\\ipconfig.exe
-           - %windir%\\system32\\logman.exe
-           - %windir%\\system32\\tracelog.exe
-           - %programfiles%\\windows defender\\mpcmdrun.exe
-           - %windir%\\system32\\MdmDiagnosticsTool.exe
-           - %windir%\\system32\\pnputil.exe
+          - %windir%\\system32\\certutil.exe  
+          - %windir%\\system32\\dxdiag.exe  
+          - %windir%\\system32\\gpresult.exe  
+          - %windir%\\system32\\msinfo32.exe  
+          - %windir%\\system32\\netsh.exe  
+          - %windir%\\system32\\nltest.exe  
+          - %windir%\\system32\\ping.exe  
+          - %windir%\\system32\\powercfg.exe  
+          - %windir%\\system32\\w32tm.exe  
+          - %windir%\\system32\\wpr.exe  
+          - %windir%\\system32\\dsregcmd.exe  
+          - %windir%\\system32\\dispdiag.exe  
+          - %windir%\\system32\\ipconfig.exe  
+          - %windir%\\system32\\logman.exe  
+          - %windir%\\system32\\tracelog.exe  
+          - %programfiles%\\windows defender\\mpcmdrun.exe  
+          - %windir%\\system32\\MdmDiagnosticsTool.exe  
+          - %windir%\\system32\\pnputil.exe  
 
 - **FoldersFiles**
   - Captures log files from a given path (without recursion).
   - Expected input value: File path with or without wildcards, such as "%windir%\\System32", or "%programfiles%\\*.log".
   - Privacy guardrails: To enable diagnostic log capture while reducing the risk of an IT admin inadventently capturing user-generated documents, only paths under the following roots are allowed:  
-           - %PROGRAMFILES%
-           - %PROGRAMDATA%
-           - %PUBLIC%
-           - %WINDIR%
-           - %TEMP%
-           - %TMP%
+          - %PROGRAMFILES%  
+          - %PROGRAMDATA%  
+          - %PUBLIC%  
+          - %WINDIR%  
+          - %TEMP%  
+          - %TMP%  
   - Additionally, only files with the following extensions are captured:  
-           - .log
-           - .txt
-           - .dmp
-           - .cab
-           - .zip
-           - .xml
-           - .html
-           - .evtx
-           - .etl
+          - .log  
+          - .txt  
+          - .dmp  
+          - .cab  
+          - .zip  
+          - .xml  
+          - .html  
+          - .evtx  
+          - .etl  
 
 <a href="" id="diagnosticarchive-archiveresults"></a>**DiagnosticArchive/ArchiveResults**  
 Added in version 1.4 of the CSP in Windows 10, version 1903. This policy setting displays the results of the last archive run. 
