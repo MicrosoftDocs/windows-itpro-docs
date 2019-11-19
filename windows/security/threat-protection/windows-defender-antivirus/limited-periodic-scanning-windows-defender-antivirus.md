@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
@@ -50,7 +51,7 @@ Sliding the swtich to **On** will show the standard Windows Defender AV options 
 
 ![When enabled, periodic scanning shows the normal Windows Defender Antivirus options](images/vtp-3ps-lps-on.png)
 
-## Related topics
+## Related articles
 
 - [Configure behavioral, heuristic, and real-time protection](configure-protection-features-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

@@ -150,7 +150,7 @@ If you have enabled cloud-delivered protection, Windows Defender AV will send fi
 > [!NOTE]
 > "Allow notifications to disable definitions based reports" enables Microsoft MAPS to disable those definitions known to cause false-positive reports. You must configure your computer to join Microsoft MAPS for this function to work.
 
-## Related artcles
+## Related articles
 
 - [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
 - [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
