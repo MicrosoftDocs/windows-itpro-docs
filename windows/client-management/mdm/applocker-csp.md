@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: lomayor
-ms.date: 07/25/2019
+ms.date: 11/19/2019
 ---
 
 # AppLocker CSP
