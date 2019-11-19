@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
@@ -28,7 +29,6 @@ You can use System Center Configuration Manager to [monitor Windows Defender Ant
 
 Microsoft Operations Management Suite has an [Update Compliance add-in](/windows/deployment/update/update-compliance-get-started) that reports on key Windows Defender Antivirus issues, including protection updates and real-time protection settings.
 
-
 If you have a third-party security information and event management (SIEM) tool, you can also consume [Windows Defender client events](https://msdn.microsoft.com/library/windows/desktop/aa964766(v=vs.85).aspx). 
 
 Windows events comprise several security event sources, including Security Account Manager (SAM) events ([enhanced for Windows 10](https://technet.microsoft.com/library/mt431757.aspx), also see the [Security audting](/windows/device-security/auditing/security-auditing-overview) topic) and  [Windows Defender events](troubleshoot-windows-defender-antivirus.md). 
@@ -39,7 +39,7 @@ You can also [monitor malware events using the Malware Assessment solution in Lo
 
 For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, see the [(Deployment, management, and reporting options table)](deploy-manage-report-windows-defender-antivirus.md#ref2).
 
-## Related topics
+## Related articles
 
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)

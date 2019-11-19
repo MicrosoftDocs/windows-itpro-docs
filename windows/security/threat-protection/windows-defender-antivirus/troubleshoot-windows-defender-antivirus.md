@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/11/2018
 ms.reviewer: 
 manager: dansimp
@@ -46,16 +47,13 @@ You can directly view the event log, or if you have a third-party security infor
 
 The table in this section lists the main Windows Defender Antivirus event IDs and, where possible, provides suggested solutions to fix or resolve the error. 
 
-**To view a Windows Defender Antivirus event**
+## To view a Windows Defender Antivirus event
 
 1.  Open **Event Viewer**.
 2.  In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender Antivirus**.
 3.  Double-click on **Operational**.
 4.  In the details pane, view the list of individual events to find your event.
 5.  Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
-
-
-
 
 <table> 
 <tr>

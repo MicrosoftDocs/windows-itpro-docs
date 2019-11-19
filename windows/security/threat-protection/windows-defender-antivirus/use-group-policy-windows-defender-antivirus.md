@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
@@ -143,12 +144,7 @@ Threats | Specify threat alert levels at which default action should not be take
 Threats | Specify threats upon which default action should not be taken when detected | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
 
 
-
-
-
-
-
-## Related topics
+## Related articles
 
 - [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
