@@ -47,8 +47,7 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 
 ## Related topics
 
-- [Advanced hunting overview](overview-hunting.md)
-- [All Advanced hunting tables](advanced-hunting-reference.md)
-- [Advanced hunting query best practices](advanced-hunting-best-practices.md)
-- [Query data using Advanced hunting](advanced-hunting.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
+- [Understand the schema](advanced-hunting-schema-reference.md)
 - [Overview of Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
