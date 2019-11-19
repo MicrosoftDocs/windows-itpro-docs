@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
@@ -28,7 +29,7 @@ Windows Defender Antivirus allows you to determine if updates should (or should 
 
 You can use System Center Configuration Manager, Group Policy, PowerShell cmdlets, and WMI to force Windows Defender Antivirus to check and download protection updates before running a scheduled scan.
 
-**Use Configuration Manager to check for protection updates before running a scan:**
+### Use Configuration Manager to check for protection updates before running a scan
 
 1. On your System Center Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
 
@@ -38,7 +39,7 @@ You can use System Center Configuration Manager, Group Policy, PowerShell cmdlet
 
 4.[Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
-**Use Group Policy to check for protection updates before running a scan:**
+### Use Group Policy to check for protection updates before running a scan
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -46,13 +47,13 @@ You can use System Center Configuration Manager, Group Policy, PowerShell cmdlet
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components > Windows Defender Antivirus > Scan**.
+4. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Scan**.
 
 5. Double-click **Check for the latest virus and spyware definitions before running a scheduled scan** and set the option to **Enabled**.
 
 6. Click **OK**.
 
-**Use PowerShell cmdlets to check for protection updates before running a scan:**
+### Use PowerShell cmdlets to check for protection updates before running a scan
 
 Use the following cmdlets:
 
@@ -62,7 +63,7 @@ Set-MpPreference -CheckForSignaturesBeforeRunningScan
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-**Use Windows Management Instruction (WMI) to check for protection updates before running a scan**
+### Use Windows Management Instruction (WMI) to check for protection updates before running a scan
 
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
@@ -91,7 +92,7 @@ You can use Group Policy to force Windows Defender Antivirus to check and downlo
 
 You can also use Group Policy, PowerShell, or WMI to configure Windows Defender Antivirus to check for updates at startup even when it is not running.
 
-**Use Group Policy to download updates when Windows Defender Antivirus is not present:**
+### Use Group Policy to download updates when Windows Defender Antivirus is not present
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -105,7 +106,7 @@ You can also use Group Policy, PowerShell, or WMI to configure Windows Defender 
 
 6. Click **OK**.
 
-**Use PowerShell cmdlets to download updates when Windows Defender Antivirus is not present:**
+### Use PowerShell cmdlets to download updates when Windows Defender Antivirus is not present
 
 Use the following cmdlets:
 
@@ -115,7 +116,7 @@ Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 
 See [Use PowerShell cmdlets to manage Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-**Use Windows Management Instruction (WMI) to download updates when Windows Defender Antivirus is not present:**
+### Use Windows Management Instruction (WMI) to download updates when Windows Defender Antivirus is not present
 
 Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
@@ -134,7 +135,7 @@ Windows Defender AV can make changes to its protection based on cloud-delivered 
 
 If you have enabled cloud-delivered protection, Windows Defender AV will send files it is suspicious about to the Windows Defender cloud. If the cloud service reports that the file is malicious, and the file is detected in a recent protection update, you can use Group Policy to configure Windows Defender AV to automatically receive that protection update. Other important protection updates can also be applied.
 
-**Use Group Policy to automatically download recent updates based on cloud-delivered protection:**
+### Use Group Policy to automatically download recent updates based on cloud-delivered protection
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -149,7 +150,7 @@ If you have enabled cloud-delivered protection, Windows Defender AV will send fi
 > [!NOTE]
 > "Allow notifications to disable definitions based reports" enables Microsoft MAPS to disable those definitions known to cause false-positive reports. You must configure your computer to join Microsoft MAPS for this function to work.
 
-## Related topics
+## Related artcles
 
 - [Deploy Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md)
 - [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
