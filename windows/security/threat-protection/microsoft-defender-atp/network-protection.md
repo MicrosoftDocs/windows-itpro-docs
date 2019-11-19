@@ -10,22 +10,24 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: denisebmsft
+ms.author: deniseb
 ms.date: 04/30/2019
 ms.reviewer: 
 manager: dansimp
+ms.custom: asr
+
 ---
 
 # Protect your network
 
 **Applies to:**
 
-* [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 Network protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet.
 
-It expands the scope of [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
+Network protection expands the scope of [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
 Network protection is supported beginning with Windows 10, version 1709.
 
@@ -75,7 +77,8 @@ You can review the Windows event log to see events that are created when network
    1125 | Event when network protection fires in audit mode
    1126 | Event when network protection fires in block mode
 
-## Related topics
+## Related articles
 
-[Evaluate network protection](evaluate-network-protection.md) | Undertake a quick scenario that demonstrate how the feature works, and what events would typically be created.
-[Enable network protection](enable-network-protection.md) | Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
+- [Evaluate network protection](evaluate-network-protection.md) | Undertake a quick scenario that demonstrate how the feature works, and what events would typically be created.
+
+- [Enable network protection](enable-network-protection.md) | Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
