@@ -99,7 +99,7 @@ Assuming a case where the management server's customer (such as an IT admin) is 
   - Exports all of the key names and values under a given path (recursive).
   - Expected input value: Registry path such as "HKLM\Software\Policies".
   - Output format: Creates a .reg file, similar to the output of reg.exe EXPORT command.
-  - Privacy guardrails: To enable diagnostic log capture while reducing the risk of an IT admin inadvertently capturing user-generated documents, registry paths are restricted to those under HKLM and HKCU.
+  - Privacy guardrails: To enable diagnostic log capture while reducing the risk of an IT admin inadvertently capturing user-generated documents, registry paths are restricted to those under HKLM and HKCR.
 
 - **Events**
   - Exports all events from the named Windows event log.
