@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 10/08/2018
 ms.reviewer: 
 manager: dansimp
@@ -26,7 +27,7 @@ To ensure Windows Defender Antivirus cloud-delivered protection works properly, 
 
 This topic lists the connections that must be allowed, such as by using firewall rules, and provides instructions for validating your connection. This will help ensure you receive the best protection from our cloud-delivered protection services.
 
-See the Enterprise Mobility and Security blog post [Important changes to Microsoft Active Protection Services endpoint](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/important-changes-to-microsoft-active-protection-service-maps-endpoint/) for some details about network connectivity.
+See the blog post [Important changes to Microsoft Active Protection Services endpoint](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) for some details about network connectivity.
 
 >[!TIP]
 >You can also visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
@@ -119,9 +120,9 @@ The Windows event log will also show [Windows Defender client event ID 2050](tro
 >[!IMPORTANT]
 >You will not be able to use a proxy auto-config (.pac) file to test network connections to these URLs. You will need to verify your proxy servers and any network filtering tools manually to ensure connectivity.
 
-## Related topics
+## Related articles
 
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
 - [Run an Windows Defender Antivirus scan from the command line](command-line-arguments-windows-defender-antivirus.md) and [Command line arguments](command-line-arguments-windows-defender-antivirus.md)
-- [Important changes to Microsoft Active Protection Services endpoint](https://blogs.technet.microsoft.com/enterprisemobility/2016/05/31/important-changes-to-microsoft-active-protection-service-maps-endpoint/) 
+- [Important changes to Microsoft Active Protection Services endpoint](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) 
