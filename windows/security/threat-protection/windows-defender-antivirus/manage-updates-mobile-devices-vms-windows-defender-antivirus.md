@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
@@ -46,7 +47,7 @@ You can opt-in to Microsoft Update on the mobile device in one of the following 
 2. Use a VBScript to create a script, then run it on each computer in your network.
 3. Manually opt-in every computer on your network through the **Settings** menu.
 
-**Use Group Policy to opt-in to Microsoft Update:**
+### Use Group Policy to opt-in to Microsoft Update
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -54,18 +55,17 @@ You can opt-in to Microsoft Update on the mobile device in one of the following 
 
 4.  Click **Policies** then **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates**.
+5.  Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Signature Updates**.
 
 6.  Double-click the **Allow security intelligence updates from Microsoft Update** setting and set the option to **Enabled**. Click **OK**.
 
 
-**Use a VBScript to opt-in to Microsoft Update**
+### Use a VBScript to opt-in to Microsoft Update
 
 1.  Use the instructions in the MSDN article [Opt-In to Microsoft Update](https://msdn.microsoft.com/library/windows/desktop/aa826676.aspx) to create the VBScript.
 2.  Run the VBScript you created on each computer in your network.
 
-
-**Manually opt-in to Microsoft Update**
+### Manually opt-in to Microsoft Update
 
 1.  Open **Windows Update** in **Update & security** settings on the computer you want to opt-in.
 2.  Click **Advanced** options.
@@ -75,7 +75,7 @@ You can opt-in to Microsoft Update on the mobile device in one of the following 
 
 You can configure Windows Defender Antivirus to only download protection updates when the PC is connected to a wired power source. 
 
-**Use Group Policy to prevent security intelligence updates on battery power:**
+### Use Group Policy to prevent security intelligence updates on battery power
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -89,10 +89,7 @@ You can configure Windows Defender Antivirus to only download protection updates
     2. Click **OK**. This will prevent protection updates from downloading when the PC is on battery power.
 
 
-
-
-
-## Related topics
+## Related articles
 
 - [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md)
 - [Update and manage Windows Defender Antivirus in Windows 10](deploy-manage-report-windows-defender-antivirus.md)
