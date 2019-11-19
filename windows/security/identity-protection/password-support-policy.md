@@ -2,7 +2,7 @@
 title: Technical support policy for lost or forgotten passwords
 description: Outlines the ways in which Microsoft can help you reset a lost or forgotten password, and provides links to instructions for doing so.
 ms.reviewer: kaushika
-manager: dcscontentpm
+manager: kaushika
 ms.custom:
 - CI ID 110060
 - CSSTroubleshoot 
