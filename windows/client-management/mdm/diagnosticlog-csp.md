@@ -20,7 +20,7 @@ The DiagnosticLog configuration service provider (CSP) provides the following fe
 - [DeviceStateData area](#devicestatedata-area). Provide additional device information.
 - [FileDownload area](#filedownload-area). Pull trace and state data directly from the device.
 
-The following are the links to the DDFs of the DiagnosticLog CSP:  
+The following are the links to different versions of the DiagnosticLog CSP DDF files:  
 -   [DiagnosticLog CSP version 1.4](diagnosticlog-ddf.md#version-1-4)
 -   [DiagnosticLog CSP version 1.3](diagnosticlog-ddf.md#version-1-3)
 -   [DiagnosticLog CSP version 1.2](diagnosticlog-ddf.md#version-1-2)
@@ -747,7 +747,7 @@ To gather diagnostics using this CSP:
 3.  Indicate one or more target ETW providers by supplying its *ProviderGUID* to the Add operation of EtwLog/Collectors/*CollectorName*/Providers/*ProviderGUID*.
 4.  (Optional) Set logging and log file parameters using the following options:
     - <a href="#etwlog-collectors-collectorname-providers-providerguid-tracelevel">TraceLevel</a>
-    -   <a href="#etwlog-collectors-collectorname-providers-providerguid-keywords">Keywords</a>
+    - <a href="#etwlog-collectors-collectorname-providers-providerguid-keywords">Keywords</a>
 5.  Start logging using **TraceControl** EXECUTE command “START”.
 6.  Perform actions on the target device that will generate activity in the log files.
 7.  Stop logging using **TraceControl** EXECUTE command “STOP”.
@@ -1066,7 +1066,8 @@ The data type is a boolean.
 
 Supported operations are Get and Replace. This change will be effective during active trace session.
 
-The following table lists the possible values:
+The following table lists the possible values:  
+
 | Value | Description        |
 |-------|--------------------|
 | TRUE | Provider is enabled in the trace session. This is the default. |
