@@ -70,7 +70,7 @@ The main real-time protection capability is enabled by default, but you can disa
 
 4. Double-click the **Turn off real-time protection** setting and set the option to **Enabled**. Click **OK**.
 
-## Related topics
+## Related articles
 
 - [Configure behavioral, heuristic, and real-time protection](configure-protection-features-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
