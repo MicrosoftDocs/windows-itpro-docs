@@ -6,11 +6,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.date: 02/19/2019
 ms.reviewer: 
 manager: dansimp
+ms.custom: asr
 ---
 
 # Prepare to install Windows Defender Application Guard
@@ -23,9 +24,6 @@ manager: dansimp
 See [System requirements for Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/reqs-wd-app-guard) to review the hardware and software installation requirements for Windows Defender Application Guard.
 >[!NOTE]
 >Windows Defender Application Guard is not supported on VMs and VDI environment. For testing and automation on non-production machines, you may enable WDAG on a VM by enabling Hyper-V nested virtualization on the host.
-
-
-
 
 ## Prepare for Windows Defender Application Guard 
 Before you can install and use Windows Defender Application Guard, you must determine which way you intend to use it in your enterprise. You can use Application Guard in either **Standalone** or **Enterprise-managed** mode.
