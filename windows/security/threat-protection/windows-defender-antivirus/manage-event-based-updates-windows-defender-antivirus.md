@@ -61,7 +61,7 @@ Use the following cmdlets:
 Set-MpPreference -CheckForSignaturesBeforeRunningScan
 ```
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+For more information, see [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender/index).
 
 ### Use Windows Management Instruction (WMI) to check for protection updates before running a scan
 
@@ -114,7 +114,7 @@ Use the following cmdlets:
 Set-MpPreference -SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-See [Use PowerShell cmdlets to manage Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+For more information, see [Use PowerShell cmdlets to manage Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 ### Use Windows Management Instruction (WMI) to download updates when Windows Defender Antivirus is not present
 
@@ -124,14 +124,13 @@ Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com
 SignatureDisableUpdateOnStartupWithoutEngine
 ```
 
-See the following for more information:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
+For more information, see [Windows Defender WMIv2 APIs](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 <a id="cloud-report-updates"></a>
 
 ## Allow ad hoc changes to protection based on cloud-delivered protection
 
-Windows Defender AV can make changes to its protection based on cloud-delivered protection. This can occur outside of normal or scheduled protection updates.
+Windows Defender AV can make changes to its protection based on cloud-delivered protection. Such changes can occur outside of normal or scheduled protection updates.
 
 If you have enabled cloud-delivered protection, Windows Defender AV will send files it is suspicious about to the Windows Defender cloud. If the cloud service reports that the file is malicious, and the file is detected in a recent protection update, you can use Group Policy to configure Windows Defender AV to automatically receive that protection update. Other important protection updates can also be applied.
 
@@ -143,9 +142,11 @@ If you have enabled cloud-delivered protection, Windows Defender AV will send fi
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates** and configure the following:
-    1. Double-click **Allow real-time security intelligence updates based on reports to Microsoft MAPS** and set the option to **Enabled**. Click **OK**.
-    2. Double-click **Allow notifications to disable definitions based reports to Microsoft MAPS** and set the option to **Enabled**. Click **OK**.
+4. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Signature Updates**.
+
+5. Double-click **Allow real-time security intelligence updates based on reports to Microsoft MAPS** and set the option to **Enabled**. Then click **OK**.
+
+6. **Allow notifications to disable definitions-based reports to Microsoft MAPS** and set the option to **Enabled**. Then click **OK**.
     
 > [!NOTE]
 > "Allow notifications to disable definitions based reports" enables Microsoft MAPS to disable those definitions known to cause false-positive reports. You must configure your computer to join Microsoft MAPS for this function to work.
