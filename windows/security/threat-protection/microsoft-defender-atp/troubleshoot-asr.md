@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot problems with attack surface reduction rules
-description: Check pre-requisites, use audit mode, add exclusions, or collect diagnostic data to help troubleshoot issues
+description: Check prerequisites, use audit mode, add exclusions, or collect diagnostic data to help troubleshoot issues
 keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -45,7 +45,7 @@ Attack surface reduction rules will only work on devices with the following cond
 > * [Real-time protection](../windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md) is enabled.
 > * Audit mode is not enabled. Use Group Policy to set the rule to **Disabled** (value: **0**) as described in [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 
-If these pre-requisites have all been met, proceed to the next step to test the rule in audit mode.
+If these prerequisites have all been met, proceed to the next step to test the rule in audit mode.
 
 ## Use audit mode to test the rule
 

@@ -24,7 +24,7 @@ manager: dansimp
 
 This topic describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Windows Defender AV Assessment section in the Update Compliance add-in.
 
-Before attempting this process, ensure you have read [Troubleshoot Windows Defender Antivirus reporting](troubleshoot-reporting.md), met all require pre-requisites, and taken any other suggested troubleshooting steps.
+Before attempting this process, ensure you have read [Troubleshoot Windows Defender Antivirus reporting](troubleshoot-reporting.md), met all require prerequisites, and taken any other suggested troubleshooting steps.
 
 1. On at least two endpoints that are not reporting or showing up in Update Compliance, obtain the .cab diagnostic file by following this process:
 

@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot problems with Network protection
-description: Check pre-requisites, use audit mode, add exclusions, or collect diagnostic data to help troubleshoot issues
+description: Check prerequisites, use audit mode, add exclusions, or collect diagnostic data to help troubleshoot issues
 keywords: troubleshoot, error, fix, windows defender eg, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security

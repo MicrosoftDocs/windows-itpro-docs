@@ -28,7 +28,7 @@ You can use Windows Defender Offline if you suspect a malware infection, or you 
 
 In Windows 10, Windows Defender Offline can be run with one click directly from the [Windows Security app](windows-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Windows Defender Offline to bootable media, restart the endpoint, and load the bootable media.
 
-## Pre-requisites and requirements
+## prerequisites and requirements
 
 Windows Defender Offline in Windows 10 has the same hardware requirements as Windows 10. 
 
