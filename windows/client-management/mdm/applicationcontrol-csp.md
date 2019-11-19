@@ -112,14 +112,11 @@ Scope is dynamic. Supported operation is Get.
 
 Value type is char.
 
-## MDM Usage Guidance
-Refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) for more information.
-
+## Usage Guidance  
 > ![Note]
-> Intune handles the creation of a policy node and does all the below steps to deploy policies on your behalf, so you shouldn't do any of the below steps if using Intune to leverage ApplicationControl CSP.
+> If using Intune standalone or for hybrid management with Configuration Manager (SCCM) through Microsoft Endpoint Manager, refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) for more information on deploying policies with ApplicationControl CSP. Microsoft Intune handles the creation of a policy node and does all the below steps to deploy policies on your behalf, so you shouldn't do any of the below steps if using Intune to leverage ApplicationControl CSP.
 
-## Non-MDM Usage Guidance  
-If not using Intune or hybrid MDM management with SCCM, in order to use ApplicationControl CSP, you must:
+In order to use ApplicationControl CSP, you must:
 - Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyID>` or `<PolicyTypeID>` for pre-1903 systems.
 - Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
 - Create a policy node (a Base64-encoded blob of the binary policy representation) using the certutil -encode command line tool.
@@ -134,13 +131,11 @@ An alternative to using certutil would be to use the following PowerShell invoca
 ```
 
 ### Deploy policies
-If not using Intune or hybrid MDM management with SCCM, in order to deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the the Format section in the Example 1 below.
-
-To deploy base policy and supplemental policies:
-- Perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data} with the GUID and policy data for the base policy.
+In order to deploy a new base policy or supplemental policy using the CSP:
+- Perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_{Policy GUID}_/Policy** using the Base64-encoded policy node as {Data} with the GUID and policy data for the base policy. Refer to the the Format section in the Example 1 below.
 - Repeat for each base or supplemental policy (with its own GUID and data).
 
-The following example shows the deployment of two base policies and a supplemental policy (which already specifies the base policy it supplements and does not need that reflected in the ADD).
+The following example shows the deployment of two base policies and a supplemental policy. Because the supplemental policy already specifies the base policy it supplements, that does not need to be repeated in the ADD.
 
 **Example 1: Add first base policy**
 ```xml
@@ -216,10 +211,9 @@ The following is an example of Get command:
 ```
 
 ### Delete policies
-To delete an unsigned policy, perform a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy**.
+To delete an unsigned policy, perform a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_{Policy GUID}_/Policy**.
 
-> [!Note]
->  Only signed things should be able to update signed policies. Hence, performing a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** is not sufficient to delete a signed policy.
+Only signed things should be able to update signed policies. Hence, performing a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_{Policy GUID}_/Policy** is not sufficient to delete a signed policy.
     
 To delete a signed policy:
 1. Replace it with a signed update allowing unsigned policy.
