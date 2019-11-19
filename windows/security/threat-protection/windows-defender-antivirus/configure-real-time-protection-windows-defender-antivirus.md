@@ -60,7 +60,7 @@ Root | Allow antimalware service to remain running always | If protection update
 
 The main real-time protection capability is enabled by default, but you can disable it with Group Policy:
 
-**Use Group Policy to disable real-time protection:**
+### Use Group Policy to disable real-time protection
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
