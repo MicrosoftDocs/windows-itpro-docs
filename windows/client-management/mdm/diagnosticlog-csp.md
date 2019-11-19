@@ -110,7 +110,7 @@ Assuming a case where the management server's customer (such as an IT admin) is 
   - This directive type allows the execution of specific commands such as ipconfig.exe. Note that DiagnosticArchive and the Commands directives are not a general-purpose scripting platform. These commands are allowed in the DiagnosticArchive context to handle cases where critical device information may not be available through existing log files.
   - Expected input value: The full command line including path and any arguments, such as `%windir%\\system32\\ipconfig.exe /all`.
   - Output format: Console text output from the command is captured in a text file and included in the overall output archive. For commands which may generate file output rather than console output, a subsequent FolderFiles directive would be used to capture that output. The example XML above demonstrates this pattern with mdmdiagnosticstool.exe's -out parameter.
-  - Privacy guardrails: To enable diagnostic data capture while reducing the risk of an IT admin inadventantly capturing user-generated documents, only the following commands are allowed:  
+  - Privacy guardrails: To enable diagnostic data capture while reducing the risk of an IT admin inadvertently capturing user-generated documents, only the following commands are allowed:  
           - %windir%\\system32\\certutil.exe  
           - %windir%\\system32\\dxdiag.exe  
           - %windir%\\system32\\gpresult.exe  
@@ -133,7 +133,7 @@ Assuming a case where the management server's customer (such as an IT admin) is 
 - **FoldersFiles**
   - Captures log files from a given path (without recursion).
   - Expected input value: File path with or without wildcards, such as "%windir%\\System32", or "%programfiles%\\*.log".
-  - Privacy guardrails: To enable diagnostic log capture while reducing the risk of an IT admin inadventently capturing user-generated documents, only paths under the following roots are allowed:  
+  - Privacy guardrails: To enable diagnostic log capture while reducing the risk of an IT admin inadvertently capturing user-generated documents, only paths under the following roots are allowed:  
           - %PROGRAMFILES%  
           - %PROGRAMDATA%  
           - %PUBLIC%  
@@ -1298,7 +1298,7 @@ The FileDownload feature of the DiagnosticLog CSP enables a management server to
 Both the FileDownload and DiagnosticArchive features can be used to get data from the device to the management server, but they are optimized for different workflows.
 
 - FileDownload enables the management server to directly pull byte-level trace data from the managed device. The data transfer takes place through the existing OMA-DM/SyncML context. It is typically used together with the EtwLogs feature as part of an advanced monitoring or diagnostic flow. FileDownlod requires granular orchestration by the management server, but avoids the need for dedicated cloud storage.
-- DiagnosticArchive allows the management server to give the CSP a full set of instructions as single command. Based on those instructions the CSP orchestrates the work client-side to package the requested diagnostic files into a zip archive and upload that archive to cloud storage. The data transfer happens outsite of the OMA-DM session, via an HTTP PUT.
+- DiagnosticArchive allows the management server to give the CSP a full set of instructions as single command. Based on those instructions the CSP orchestrates the work client-side to package the requested diagnostic files into a zip archive and upload that archive to cloud storage. The data transfer happens outside of the OMA-DM session, via an HTTP PUT.
 
 The following section describes the nodes for the FileDownload functionality.
 
