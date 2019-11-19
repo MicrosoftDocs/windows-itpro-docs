@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
@@ -44,7 +45,7 @@ In earlier versions of Windows 10, the setting will hide the Windows Defender cl
 
 ![Warning message when headless mode is enabled in Windows 10, versions earlier than 1703 that says Your system administrator has restricted access to this app](images/defender/wdav-headless-mode-1607.png)
 
-**Use Group Policy to hide the Windows Defender AV interface from users:**
+## Use Group Policy to hide the Windows Defender AV interface from users
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -64,7 +65,7 @@ Also see the [Prevent users from locally modifying policy settings](configure-lo
 You can prevent users from pausing scans. This can be helpful to ensure scheduled or on-demand scans are not interrupted by users.
 
 
-**Use Group Policy to prevent users from pausing a scan:**
+### Use Group Policy to prevent users from pausing a scan
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -77,7 +78,7 @@ You can prevent users from pausing scans. This can be helpful to ensure schedule
 6. Double-click the **Allow users to pause scan** setting and set the option to **Disabled**. Click **OK**. 
 
 
-## Related topics
+## Related articles
 
 
 - [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
