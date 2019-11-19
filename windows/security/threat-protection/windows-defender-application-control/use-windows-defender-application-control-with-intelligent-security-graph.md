@@ -1,5 +1,5 @@
 ---
-title: Deploy Windows Defender Application Control with Intelligent Security Graph (ISG) (Windows 10)
+title: Authorize reputable apps with the Intelligent Security Graph (ISG) (Windows 10)
 description: Automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -17,12 +17,12 @@ manager: dansimp
 ms.date: 06/14/2018
 ---
 
-# Use Windows Defender Application Control (WDAC) with the Microsoft Intelligent Security Graph 
+# Authorize reputable apps with the Intelligent Security Graph (ISG) 
 
 **Applies to:**
 
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 and above
 
 Application execution control can be difficult to implement in enterprises that do not have processes to effectively control the deployment of applications centrally through an IT managed system. 
 In such environments, users are empowered to acquire the applications they need for work, making accounting for all the applications that would need to be authorized for execution control a daunting task.  

@@ -1,5 +1,5 @@
 ---
-title: Create a Windows Defender Application Control policy from a reference computer (Windows 10)
+title: Create a WDAC policy for fixed-workload devices using a reference computer (Windows 10)
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -20,12 +20,12 @@ manager: dansimp
 ms.date: 05/03/2018
 ---
 
-# Create a Windows Defender Application Control policy from a reference computer
+# Create a WDAC policy for fixed-workload devices using a reference computer
 
 **Applies to:**
 
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 and above
 
 This section outlines the process to create a WDAC policy with Windows PowerShell. 
 For this example, you must initiate variables to be used during the creation process or use the full file paths in the command. 
