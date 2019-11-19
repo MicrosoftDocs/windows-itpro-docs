@@ -15,11 +15,11 @@ ms.date: 11/19/2019
 # DiagnosticLog CSP
 The DiagnosticLog configuration service provider (CSP) provides the following feature areas:
 
-- [DiagnosticArchive area: Capture and upload event logs, log files and registry values for troubleshooting](#DiagnosticArchive-area:-Capture-and-upload-event-logs,-log-files-and-registry-values-for-troubleshooting)
-- [Policy area: Configure Windows event log policies such as maximum log size](#Policy-area:-Configure-Windows-event-log-policies-such-as-maximum-log-size)
-- [EtwLog area: Control ETW trace sessions](#EtwLog-area:-control-etw-trace-sessions)
-- [DeviceStateData area: Additional device information](#DeviceStateData-area:-Additional-device-information)
-- [FileDownload area: Pull trace and state data directly from the device](#FileDownload-area:-Pull-trace-and-state-data-directly-from-the-device)
+- [DiagnosticArchive area](#diagnosticarchive-area). Capture and upload event logs, log files, and registry values for troubleshooting.
+- [Policy area](#policy-area). Configure Windows event log policies, such as maximum log size.
+- [EtwLog area](#etwlog-area). Control ETW trace sessions.
+- [DeviceStateData area](#devicestatedata-area). Provide additional device information.
+- [FileDownload area](#filedownload-area). Pull trace and state data directly from the device.
 
 Here are the links to the DDFs:
 -   [DiagnosticLog CSP version 1.4](diagnosticlog-ddf.md#version-1-4)
@@ -35,7 +35,8 @@ The root node for the DiagnosticLog CSP.
 
 Rest of the nodes in this CSP are described within their respective feature area sections.
 
-## DiagnosticArchive area: Capture and upload event logs, log files and registry values for troubleshooting
+## DiagnosticArchive area
+
 The DiagnosticArchive functionality within the DiagnosticLog CSP is used to trigger devices to gather troubleshooting data into a zip archive file and upload that archive to cloud storage. DiagnosticArchive is designed for ad-hoc troubleshooting scenarios, such as an IT admin investigating an app installation failure using a collection of event log events, registry values, and app or OS log files.
 
 > [!Note]
@@ -110,7 +111,7 @@ Assuming a case where the management server's customer (such as an IT admin) is 
   - This directive type allows the execution of specific commands such as ipconfig.exe. Note that DiagnosticArchive and the Commands directives are not a general-purpose scripting platform. These commands are allowed in the DiagnosticArchive context to handle cases where critical device information may not be available through existing log files.
   - Expected input value: The full command line including path and any arguments, such as `%windir%\\system32\\ipconfig.exe /all`.
   - Output format: Console text output from the command is captured in a text file and included in the overall output archive. For commands which may generate file output rather than console output, a subsequent FolderFiles directive would be used to capture that output. The example XML above demonstrates this pattern with mdmdiagnosticstool.exe's -out parameter.
-  - Privacy guardrails: To enable diagnostic data capture while reducing the risk of an IT admin inadventantly capturing user-generated documents, only the following commands are allowed:
+  - Privacy guardrails: To enable diagnostic data capture while reducing the risk of an IT admin inadventantly capturing user-generated documents, only the following commands are allowed:  
            - %windir%\\system32\\certutil.exe
            - %windir%\\system32\\dxdiag.exe
            - %windir%\\system32\\gpresult.exe
@@ -140,7 +141,7 @@ Assuming a case where the management server's customer (such as an IT admin) is 
            - %WINDIR%
            - %TEMP%
            - %TMP%
-  - Additionally, only files with the following extensions are captured:
+  - Additionally, only files with the following extensions are captured:  
            - .log
            - .txt
            - .dmp
@@ -209,7 +210,9 @@ Each data gathering node is annotated with the HRESULT of the action and the col
 The zip file which is created also contains a results.xml file whose contents align to the Data section in the SyncML for ArchiveResults. Accordingly, an IT admin using the zip file for troubleshooting can determine the order and success of each directive without needing a permanent record of the SyncML value for DiagnosticArchive/ArchiveResults.
 
 
-## Policy area: Configure Windows event log policies such as maximum log size
+## Policy area
+
+The Policy functionality within the DiagnosticLog CSP configures Windows event log policies, such as maximum log size.
 
 The following section describes the nodes for the Policy functionality.
 
@@ -680,10 +683,11 @@ Replace **Enabled**
 </SyncML>
 ```
 
-## EtwLog area: Control ETW trace sessions
+## EtwLog area
+
 The Event Tracing for Windows (ETW) log feature of the DiagnosticLog CSP is used to control the following types of event tracing:
-- Collector-based tracing
-- Channel-based tracing
+- [Collector-based tracing](#collector-based-tracing)
+- [Channel-based tracing](#channel-based-tracing)
 
 The ETW log feature is designed for advanced usage, and assumes developers' familiarity with ETW. For more information, see [About Event Tracing](https://docs.microsoft.com/windows/win32/etw/about-event-tracing).
 
@@ -1251,7 +1255,9 @@ Set channel **State**
 </SyncML>
 ```
 
-## DeviceStateData area: Additional device information
+## DeviceStateData area
+
+The DeviceStateData functionality within the DiagnosticLog CSP provides additional device information.
 
 The following section describes the nodes for the DeviceStateData functionality.
 
@@ -1284,7 +1290,7 @@ The supported value is Execute.
 </SyncML>
 ```
 
-## FileDownload area: Pull trace and state data directly from the device
+## FileDownload area
 The FileDownload feature of the DiagnosticLog CSP enables a management server to pull data directly from the device. In the FileDownload context the client and server roles are conceptually reversed, with the management server acting as a client to download the data from the managed device.
 
 ### Comparing FileDownload and DiagnosticArchive
