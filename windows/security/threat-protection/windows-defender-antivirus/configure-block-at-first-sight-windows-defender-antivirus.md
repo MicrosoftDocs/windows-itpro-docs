@@ -52,8 +52,8 @@ Block at first sight requires a number of settings to be configured correctly or
 
 1. In Intune, navigate to **Device configuration - Profiles > *Profile name* > Device restrictions > Windows Defender Antivirus**.
 
-> [!NOTE]
-> The profile you select must be a Device Restriction profile type, not an Endpoint Protection profile type.
+   > [!NOTE]
+   > The profile you select must be a Device Restriction profile type, not an Endpoint Protection profile type.
 
 2. Verify these settings are configured as follows:
 
@@ -64,8 +64,8 @@ Block at first sight requires a number of settings to be configured correctly or
 
    ![Intune config](images/defender/intune-block-at-first-sight.png)
 
-> [!WARNING]
-> Setting the file blocking level to **High** will apply a strong level of detection. In the unlikely event that it causes a false positive detection of legitimate files, use the option to [restore the quarantined files](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/restore-quarantined-files-windows-defender-antivirus).
+   > [!WARNING]
+   > Setting the file blocking level to **High** will apply a strong level of detection. In the unlikely event that it causes a false positive detection of legitimate files, use the option to [restore the quarantined files](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/restore-quarantined-files-windows-defender-antivirus).
 
 For more information about configuring Windows Defender Antivirus device restrictions in Intune, see [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
