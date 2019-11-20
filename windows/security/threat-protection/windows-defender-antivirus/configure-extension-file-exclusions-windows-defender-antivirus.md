@@ -191,7 +191,7 @@ The following table describes how the wildcards can be used and provides some ex
     <tr>
         <td><b>*</b> (asterisk)</td>
         <td>Replaces any number of characters. <br />Only applies to files in the last folder defined in the argument. </td>
-        <td>Replaces a single folder. <br />Use multiple <b>*</b> with folder slashes <b>\</b> to indicate multiple, nested folders. </br>After matching the number of wildcarded and named folders, all subfolders will also be included.</td>
+        <td>Replaces a single folder. <br />Use multiple <b>*</b> with folder slashes <b>\</b> to indicate multiple, nested folders. </br>After matching the number of wild carded and named folders, all subfolders will also be included.</td>
         <td>
             <ol>
                 <li>C:\MyData\<b>*</b>.txt</li>
@@ -225,7 +225,7 @@ The following table describes how the wildcards can be used and provides some ex
         </td>
         <td>
             Replaces a single character in a folder name. </br>
-            After matching the number of wildcarded and named folders, all subfolders will also be included.
+            After matching the number of wild carded and named folders, all subfolders will also be included.
         </td>
         <td>
             <ol>
@@ -270,7 +270,12 @@ The following table describes how the wildcards can be used and provides some ex
 
 ## Review the list of exclusions
 
-You can retrieve the items in the exclusion list with [Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune), [System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), MpCmdRun, PowerShell, or the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
+You can retrieve the items in the exclusion list using one of the following methods:
+- [Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)
+- MpCmdRun
+- PowerShell
+- [Windows Security app](windows-defender-security-center-antivirus.md#exclusions)
 
 >[!IMPORTANT]
 >Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
