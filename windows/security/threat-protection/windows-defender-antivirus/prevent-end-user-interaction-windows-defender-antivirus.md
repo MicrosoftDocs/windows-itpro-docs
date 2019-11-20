@@ -40,7 +40,7 @@ With the setting set to **Disabled** or not configured:
 >[!NOTE]
 >Hiding the interface will also prevent Windows Defender Antivirus notifications from appearing on the endpoint. Microsoft Defender Advanced Threat Protection notifications will still appear. You can also individually [configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
 
-In earlier versions of Windows 10, the setting will hide the Windows Defender client interface. If the user attempts to open it, they will receive a warning that says, "Your system administrator has restricted access to this app.":
+In earlier versions of Windows 10, the setting will hide the Windows Defender client interface. If the user attempts to open it, they will receive a warning that says, "Your system administrator has restricted access to this app."
 
 ![Warning message when headless mode is enabled in Windows 10, versions earlier than 1703](images/defender/wdav-headless-mode-1607.png)
 
