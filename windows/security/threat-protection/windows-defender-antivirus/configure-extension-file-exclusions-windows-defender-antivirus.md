@@ -71,7 +71,9 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
 ### Use Intune to configure file name, folder, or file extension exclusions
 
-See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
+See the following articles:
+- [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure)
+- [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus)
 
 ### Use Configuration Manager to configure file name, folder, or file extension exclusions
 
@@ -260,9 +262,9 @@ The following table describes how the wildcards can be used and provides some ex
 >[!IMPORTANT]
 >If you mix a file exclusion argument with a folder exclusion argument, the rules will stop at the file argument match in the matched folder, and will not look for file matches in any subfolders.
 >
->For example, you can exclude all files that start with "date" in the folders *c:\data\final\marked* and *c:\data\review\marked* by using the rule argument <b>c:\data\\\*\marked\date*.\*</b>.
+>For example, you can exclude all files that start with "date" in the folders `c:\data\final\marked` and `c:\data\review\marked` by using the rule argument <b>c:\data\\\*\marked\date*.\*</b>.
 >
->This argument, however, will not match any files in **subfolders** under *c:\data\final\marked* or *c:\data\review\marked*.
+>This argument, however, will not match any files in **subfolders** under `c:\data\final\marked` or `c:\data\review\marked`.
 
 <a id="review"></a>
 
