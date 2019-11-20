@@ -64,7 +64,7 @@ Follow these instructions in [Use the demo tool to see how attack surface reduct
 
 2. Perform the activity that is causing an issue (for example, open or execute the file or process that should be blocked but is being allowed).
 
-3. [Review the attack surface reductio rule event logs](attack-surface-reduction.md) to see if the rule would have blocked the file or process if the rule had been set to **Enabled**.
+3. [Review the attack surface reduction rule event logs](attack-surface-reduction.md) to see if the rule would have blocked the file or process if the rule had been set to **Enabled**.
 
 If a rule is not blocking a file or process that you are expecting it should block, first check if audit mode is enabled.
 
