@@ -142,6 +142,11 @@ The data transmitted at the Basic and Enhanced data diagnostic levels is quite s
 
 The Microsoft Data Management Service routes data back to our secure cloud storage. Only Microsoft personnel with a valid business justification are permitted access.
 
+Solutions like Desktop Analytics or Microsoft Defender Advanced Threat Protection need Windows devices to reach diagnostics endpoints to enable organizations leverage solutions based on diagnostics data. These solutions leverage Windows components like the Connected User Experiences and Telemetry service, Windows Defender Advanced Threat Protection service, Windows Error Reporting, and Online Crash Analysis.
+
+For a complete list of diagnostics endpoints leveraged by Desktop Analytics, see [here](https://docs.microsoft.com/configmgr/desktop-analytics/enable-data-sharing).
+For a complete list of diagnostics endpoints leveraged by Microsoft Defender Advanced Threat Protection, see [here](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
+
 The following table defines the endpoints for Connected User Experiences and Telemetry component:
 
 | Windows release                                                                     | Endpoint                                                                            |
@@ -149,6 +154,13 @@ The following table defines the endpoints for Connected User Experiences and Tel
 | Windows 10, versions 1703 or later, with the 2018-09 cumulative update installed    | **Diagnostics data:** v10c.vortex-win.data.microsoft.com</br></br>**Functional:** v20.vortex-win.data.microsoft.com</br></br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country,</br>for example: **de**.vortex-win.data.microsoft.com</br></br>**Settings:** settings-win.data.microsoft.com |
 | Windows 10, versions 1803 or later, without the 2018-09 cumulative update installed | **Diagnostics data:** v10.events.data.microsoft.com</br></br>**Functional:** v20.vortex-win.data.microsoft.com</br></br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country,</br>for example: **de**.vortex-win.data.microsoft.com</br></br>**Settings:** settings-win.data.microsoft.com      |
 | Windows 10, version 1709 or earlier                                                 | **Diagnostics data:** v10.vortex-win.data.microsoft.com</br></br>**Functional:** v20.vortex-win.data.microsoft.com</br></br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country,</br>for example: **de**.vortex-win.data.microsoft.com</br></br>**Settings:** settings-win.data.microsoft.com  |
+
+The following table defines **additional diagnostics endpoints** not covered by services in the links above:
+
+| Service | Endpoint                                                                            |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| Onedrive app for Windows 10    | https://vortex.data.microsoft.com/collect/v1 |
+
 
 The following table defines the endpoints for other diagnostic data services:
 
