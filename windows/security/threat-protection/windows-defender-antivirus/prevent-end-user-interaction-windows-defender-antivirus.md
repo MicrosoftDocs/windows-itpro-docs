@@ -35,12 +35,12 @@ With the setting set to **Enabled**:
 
 With the setting set to **Disabled** or not configured:
 
-![Scheenshot of Windows Security showing the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-off-1703.png)
+![Screenshot of Windows Security showing the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-off-1703.png)
 
 >[!NOTE]
 >Hiding the interface will also prevent Windows Defender Antivirus notifications from appearing on the endpoint. Microsoft Defender Advanced Threat Protection notifications will still appear. You can also individually [configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
 
-In earlier versions of Windows 10, the setting will hide the Windows Defender client interface. If the user attempts to open it, they will receive a warning "Your system administrator has restricted access to this app.":
+In earlier versions of Windows 10, the setting will hide the Windows Defender client interface. If the user attempts to open it, they will receive a warning that says, "Your system administrator has restricted access to this app.":
 
 ![Warning message when headless mode is enabled in Windows 10, versions earlier than 1703 that says Your system administrator has restricted access to this app](images/defender/wdav-headless-mode-1607.png)
 
@@ -48,7 +48,7 @@ In earlier versions of Windows 10, the setting will hide the Windows Defender cl
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
+2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 
 3. Click **Administrative templates**.
 
@@ -60,7 +60,7 @@ See [Prevent users from locally modifying policy settings](configure-local-polic
 
 ## Prevent users from pausing a scan
 
-You can prevent users from pausing scans. This can be helpful to ensure scheduled or on-demand scans are not interrupted by users.
+You can prevent users from pausing scans, which can be helpful to ensure scheduled or on-demand scans are not interrupted by users.
 
 ### Use Group Policy to prevent users from pausing a scan
 
