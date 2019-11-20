@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 
-title: M365 Education Documentation for IT admins
-summary: M365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.
+title: Microsoft 365 Education Documentation for IT admins
+summary: Microsoft 365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.
 
 metadata:
-  title: M365 Education Documentation for IT admins
+  title: Microsoft 365 Education Documentation for IT admins
   description: M365 Education consists of Office 365 Education, Windows 10 Education, and security and management tools such as Intune for Education and School Data Sync.
   ms.service: help
   ms.topic: hub-page
@@ -13,7 +13,7 @@ metadata:
   ms.date: 10/24/2019
 
 productDirectory:
-  summary: This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments. Check out at https://edujourney.microsoft.com/. Find help now at https://docs.microsoft.com/microsoft-365/education/deploy/find-deployment-help.
+  summary: This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments.
   items:
     # Card    
     - title: Phase 1 - Cloud deployment
@@ -71,7 +71,7 @@ productDirectory:
         - url: https://docs.microsoft.com/microsoft-365/education/deploy/deploy-sharepoint-server-hybrid
           text: Deploy SharePoint Server Hybrid
     # Card
-    - title: Security & Compliance
+    - title: Security & compliance
       imageSrc: ./images/EDU-Lockbox.svg
       links:
         - url: https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2
@@ -87,10 +87,34 @@ productDirectory:
         - url: https://social.technet.microsoft.com/wiki/contents/articles/35748.office-365-what-is-customer-lockbox-and-how-to-enable-it.aspx
           text: Deploying Lockbox
     # Card    
-    - title: Analytics & Insights
+    - title: Analytics & insights
       imageSrc: ./images/EDU-Education.svg
       links:
         - url: https://docs.microsoft.com/en-us/power-bi/service-admin-administering-power-bi-in-your-organization
           text: Power BI for IT admins
         - url: https://docs.microsoft.com/en-us/dynamics365/#pivot=get-started
           text: Dynamics 365
+    # Card    
+    - title: Find deployment help
+      imageSrc: ./images/EDU-FindHelp.svg
+      links:
+        - url: https://docs.microsoft.com/microsoft-365/education/deploy/find-deployment-help
+          text: IT admin help
+        - url: https://social.technet.microsoft.com/forums/en-us/home
+          text: TechNet
+    # Card    
+    - title: Check out our education journey
+      imageSrc: ./images/EDU-ITJourney.svg
+      links:
+        - url: https://edujourney.microsoft.com/k-12/
+          text: K-12
+        - url: https://edujourney.microsoft.com/hed/
+          text: Higher education
+    # Card    
+    - title: Additional support resources
+      imageSrc: ./images/EDU-Teachers.svg
+      links:
+        - url: https://support.office.com/en-us/education
+          text: Education help center
+        - url: https://support.office.com/en-us/article/teacher-training-packs-7a9ee74a-8fe5-43d3-bc23-a55185896921
+          text: Teacher training packs
