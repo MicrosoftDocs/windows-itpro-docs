@@ -157,9 +157,7 @@ ExclusionPath
 
 The use of **Set**, **Add**, and **Remove** is analogous to their counterparts in PowerShell: `Set-MpPreference`, `Add-MpPreference`, and `Remove-MpPreference`.
 
-See the following for more information and allowed parameters:
-
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
+For more information, see [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx).
 
 <a id="man-tools"></a>
 
@@ -337,7 +335,7 @@ Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.t
 
 If Windows Defender Antivirus reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm the contents are the same as what is described on the [EICAR test file website](http://www.eicar.org/86-0-Intended-use.html).
 
-You can also use the following PowerShell code, which calls the .NET WebClient class to download the testfile - as with the `Invoke-WebRequest` cmdlet; replace *c:\test.txt* with a file that conforms to the rule you are validating:
+You can also use the following PowerShell code, which calls the .NET WebClient class to download the test file - as with the `Invoke-WebRequest` cmdlet; replace *c:\test.txt* with a file that conforms to the rule you are validating:
 
 ```PowerShell
 $client = new-object System.Net.WebClient
