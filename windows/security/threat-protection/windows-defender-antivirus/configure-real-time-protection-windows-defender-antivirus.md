@@ -37,19 +37,20 @@ You can use **Local Group Policy Editor** to enable and configure Windows Defend
 2. In **Local Group Policy Editor** right pane, expand the tree to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus**. 
 ![Windows Defender Antivirus](images/gpedit-windows-defender-antivirus.png)
 3. Configure the Windows Defender Antivirus antimalware service policy settings.
-    1. Double-click the **Setting** as specified in the following table:
+    1. Double-click the policy setting as specified in the **Setting** column of the following table:
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|
     | Allow antimalware service to startup with normal priority | You can lower the priority of the Windows Defender Antivirus engine, which may be useful in lightweight deployments where you want to have as lean a startup process as possible. This may impact protection on the endpoint. | Enabled
-    | Allow antimalware service to remain running always | If protection updates have been disabled, you can set Windows Defender Antivirus to still run. This lowers the protection on the endpoint. | Disabled
+    | Allow antimalware service to remain running always | If protection updates have been disabled, you can set Windows Defender Antivirus to still run. This lowers the protection on the endpoint. | Disabled |
+
     2. Configure the setting as appropriate, and click **OK**.
     3. Repeat the previous steps for each setting in the table.
 
 4. Configure the Windows Defender Antivirus real-time protection policy settings.
-    1. In the **Windows Defender Antivirus** details pane, double-click **Real-time Protection**. Or, from Windows Defender Antivirus console tree on left pane, click **Real-time Protection**.
+    1. In the **Windows Defender Antivirus** details pane, double-click **Real-time Protection**. Or, from the **Windows Defender Antivirus** tree on left pane, click **Real-time Protection**.
     ![Windows Defender Antivirus Real-time Protection options](images/gpedit-real-time-protection.png)
-    2. In the **Real-time Protection** details pane, double-click the setting as specified in the following table:
+    2. In the **Real-time Protection** details pane, double-click the policy setting as specified in the **Setting** column of the following table:
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|
@@ -60,6 +61,7 @@ You can use **Local Group Policy Editor** to enable and configure Windows Defend
     | Turn on raw volume write notifications | Information about raw volume writes will be analyzed by behavior monitoring | Enabled |
     | Define the maximum size of downloaded files and attachments to be scanned | You can define the size in kilobytes | Enabled |
     | Configure monitoring for incoming and outgoing file and program activity | Specify whether monitoring should occur on incoming, outgoing, both, or neither direction. This is relevant for Windows Server installations where you have defined specific servers or Server Roles that see large amounts of file changes in only one direction and you want to improve network performance. Fully updated endpoints (and servers) on a network will see little performance impact irrespective of the number or direction of file changes. | Enabled (both directions) |
+
     3. Configure the setting as appropriate, and click **OK**.
     4. Repeat the previous steps for each setting in the table.
 
@@ -67,11 +69,12 @@ You can use **Local Group Policy Editor** to enable and configure Windows Defend
     1. From the **Windows Defender Antivirus** tree on left pane, click **Scan**.
     ![Windows Defender Antivirus Scan options](images/gpedit-windows-defender-antivirus-scan.png)
 
-    2. In the **Scan** details pane, double-click the setting as specified in the following table:
+    2. In the **Scan** details pane, double-click the policy setting as specified in the **Setting** column of the following table:
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|    
     | Turn on heuristics | Heuristic protection will disable or block suspicious activity immediately before the Windows Defender Antivirus engine is asked to detect the activity | Enabled |
+    
     3. Configure the setting as appropriate, and click **OK**.
 6. Close **Local Group Policy Editor**.
 
