@@ -42,7 +42,7 @@ With the setting set to **Disabled** or not configured:
 
 In earlier versions of Windows 10, the setting will hide the Windows Defender client interface. If the user attempts to open it, they will receive a warning that says, "Your system administrator has restricted access to this app.":
 
-![Warning message when headless mode is enabled in Windows 10, versions earlier than 1703 that says Your system administrator has restricted access to this app](images/defender/wdav-headless-mode-1607.png)
+![Warning message when headless mode is enabled in Windows 10, versions earlier than 1703 that says Your system administrator has restricted access to this ](images/defender/wdav-headless-mode-1607.png)
 
 ## Use Group Policy to hide the Windows Defender AV interface from users
 
@@ -66,7 +66,7 @@ You can prevent users from pausing scans, which can be helpful to ensure schedul
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
+2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 
 3. Click **Administrative templates**.
 
