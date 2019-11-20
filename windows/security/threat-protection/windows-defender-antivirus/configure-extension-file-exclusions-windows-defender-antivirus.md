@@ -191,7 +191,7 @@ The following table describes how the wildcards can be used and provides some ex
     <tr>
         <td><b>*</b> (asterisk)</td>
         <td>Replaces any number of characters. <br />Only applies to files in the last folder defined in the argument. </td>
-        <td>Replaces a single folder. <br />Use multiple <b>*</b> with folder slashes <b>\</b> to indicate multiple, nested folders. </br>After matching the number of wilcarded and named folders, all subfolders will also be included.</td>
+        <td>Replaces a single folder. <br />Use multiple <b>*</b> with folder slashes <b>\</b> to indicate multiple, nested folders. </br>After matching the number of wildcarded and named folders, all subfolders will also be included.</td>
         <td>
             <ol>
                 <li>C:\MyData\<b>*</b>.txt</li>
@@ -225,7 +225,7 @@ The following table describes how the wildcards can be used and provides some ex
         </td>
         <td>
             Replaces a single character in a folder name. </br>
-            After matching the number of wilcarded and named folders, all subfolders will also be included.
+            After matching the number of wildcarded and named folders, all subfolders will also be included.
         </td>
         <td>
             <ol>
@@ -305,7 +305,7 @@ In the following example, the items contained in the `ExclusionExtension` list a
 
 ![PowerShell output for Get-MpPreference showing the exclusion list alongside other preferences](images/defender/wdav-powershell-get-exclusions-all.png)
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
+For more information, see [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index).
 
 ### Retrieve a specific exclusions list by using PowerShell
 
