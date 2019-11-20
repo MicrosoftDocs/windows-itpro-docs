@@ -48,16 +48,15 @@ In earlier versions of Windows 10, the setting will hide the Windows Defender cl
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+2. In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Administrative templates**.
+3. Click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Antivirus > Client interface**.
+4. Expand the tree to **Windows components > Windows Defender Antivirus > Client interface**.
 
-6. Double-click the **Enable headless UI mode** setting and set the option to **Enabled**. Click **OK**. 
+5. Double-click the **Enable headless UI mode** setting and set the option to **Enabled**. Click **OK**. 
 
-
-Also see the [Prevent users from locally modifying policy settings](configure-local-policy-overrides-windows-defender-antivirus.md) topic for more options on preventing users form modifying protection on their PCs.
+See [Prevent users from locally modifying policy settings](configure-local-policy-overrides-windows-defender-antivirus.md) for more options on preventing users form modifying protection on their PCs.
 
 ## Prevent users from pausing a scan
 
