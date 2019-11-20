@@ -71,8 +71,7 @@ Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com
 CheckForSignaturesBeforeRunningScan
 ```
 
-See the following for more information:
-- [Windows Defender WMIv2 APIs](https://msdn.microsoft.com/library/dn439477(v=vs.85).aspx)
+For more information, see [Windows Defender WMIv2 APIs](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 ## Check for protection updates on startup
 
