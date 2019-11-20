@@ -62,22 +62,22 @@ See [Prevent users from locally modifying policy settings](configure-local-polic
 
 You can prevent users from pausing scans. This can be helpful to ensure scheduled or on-demand scans are not interrupted by users.
 
-
 ### Use Group Policy to prevent users from pausing a scan
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+2. In the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Administrative templates**.
+3. Click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Antivirus > Scan**.
+4. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Scan**.
 
-6. Double-click the **Allow users to pause scan** setting and set the option to **Disabled**. Click **OK**. 
+5. Double-click the **Allow users to pause scan** setting and set the option to **Disabled**. Click **OK**. 
 
 ## Related articles
 
-
 - [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
+
 - [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-windows-defender-antivirus.md)
+
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
