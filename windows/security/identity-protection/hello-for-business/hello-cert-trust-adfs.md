@@ -486,7 +486,7 @@ Before you continue with the deployment, validate your deployment progress by re
 * Confirm you properly configured the Windows Hello for Business authentication certificate template—to include:   
     * Issuance requirements of an authorized signature from a certificate request agent.
     * The certificate template was properly marked as a Windows Hello for Business certificate template using certutil.exe
-    * The Windows Hello for Business Users group, or equivalent has the allow enroll and allow auto enroll permissions
+    * The Windows Hello for Business Users group, or equivalent has the allow enroll permissions
 * Confirm all certificate templates were properly published to the appropriate issuing certificate authorities.
 * Confirm the AD FS service account has the allow enroll permission for the Windows Hello Business authentication certificate template.
 * Confirm the AD FS certificate registration authority is properly configured using the `Get-AdfsCertificateAuthority` Windows PowerShell cmdlet.
