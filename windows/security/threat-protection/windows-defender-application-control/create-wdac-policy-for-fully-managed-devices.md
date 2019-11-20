@@ -64,7 +64,7 @@ Based on the above, Alice defines the pseudo-rules for the policy:
 2. **"MEMCM works”** rules which includes signer and hash rules for MEMCM components to properly function
 3. **Allow Managed Installer** (MEMCM and *LamnaITInstaller.exe* configured as a managed installer)
 
-The critical differences between this set of pseudo-rules and those defined for Lamna's [lightly-managed devices](create-wdac-policy-for-lightly-managed-devices.md#Define-the-"circle-of-trust"-for-lightly-managed-devices) are:
+The critical differences between this set of pseudo-rules and those defined for Lamna's [lightly-managed devices](create-wdac-policy-for-lightly-managed-devices#Define-the-"circle-of-trust"-for-lightly-managed-devices) are:
 
 - Removal of the Intelligent Security Graph (ISG) option; and
 - Removal of filepath rules.
@@ -150,7 +150,7 @@ Alice has defined a policy for Lamna's fully-managed devices that makes some tra
     Possible mitigations:
   - Use signed WDAC policies and UEFI BIOS access protection to prevent tampering of WDAC policies.
 - **Managed installer**<br>
-    See [security considerations with managed installer](use-windows-defender-application-control-with-managed-installer.md#Security-considerations-with-managed-installer)
+    See [security considerations with managed installer](use-windows-defender-application-control-with-managed-installer#Security-considerations-with-managed-installer)
 
     Existing mitigations applied:
   - Limit who can elevate to administrator on the device.

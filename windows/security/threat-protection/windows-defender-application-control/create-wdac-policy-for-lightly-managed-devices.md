@@ -156,13 +156,13 @@ In order to minimize user productivity impact, Alice has defined a policy that m
   - Use signed WDAC policies and UEFI BIOS access protection to prevent tampering of WDAC policies.
   - Limit who can elevate to administrator on the device.
 - **Managed installer**<br>
-    See [security considerations with managed installer](use-windows-defender-application-control-with-managed-installer.md#Security-considerations-with-managed-installer)
+    See [security considerations with managed installer](use-windows-defender-application-control-with-managed-installer#Security-considerations-with-managed-installer)
 
     Possible mitigations:
   - Create and deploy signed catalog files as part of the app deployment process in order to remove the requirement for managed installer.
   - Limit who can elevate to administrator on the device.
 - **Intelligent Security Graph (ISG)**<br>
-    See [security considerations with the Intelligent Security Graph](use-windows-defender-application-control-with-intelligent-security-graph.md#Security-considerations-with-the-Intelligent-Security-Graph)
+    See [security considerations with the Intelligent Security Graph](use-windows-defender-application-control-with-intelligent-security-graph#Security-considerations-with-the-Intelligent-Security-Graph)
 
     Possible mitigations:
   - Implement policies requiring apps are managed by IT; audit existing app usage and deploy authorized apps using a software distribution solution such as Microsoft Endpoint Manager; move from ISG to managed installer or signature based rules.
@@ -174,7 +174,7 @@ In order to minimize user productivity impact, Alice has defined a policy that m
   - Use signed WDAC policies which allow authorized signed supplemental policies only.
   - Use a restrictive audit mode policy to audit app usage and augment vulnerability detection.
 - **FilePath rules**<br>
-    See [more information about filepath rules](select-types-of-rules-to-create.md#More-information-about-filepath-rules)
+    See [more information about filepath rules](select-types-of-rules-to-create#More-information-about-filepath-rules)
 
     Possible mitigations:
   - Limit who can elevate to administrator on the device.
