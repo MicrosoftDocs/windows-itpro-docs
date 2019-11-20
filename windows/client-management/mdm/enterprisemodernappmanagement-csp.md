@@ -501,7 +501,7 @@ ForceUpdateToAnyVersion
 DeferRegistration="1" - If the app is in use at time of installation.  This stages the files for an app update and completes the registration of the app update after the app closes. Available latest insider flight of 20H1
 StageOnly="1"  - Stages the files for an app installation or update without installing the app. Available in 1803
 LicenseUri="\\server\license.lic" - option is deploying an offline license from the Microsoft Store for Business. Available in 1607 
-ValidateDependencies="1" - (need to check with dev on the actual functionality) . Available in the latest Insider flight of 20H1
+ValidateDependencies="1" - ValidateDependencies is used at provisioning/staging time. If it is set to 1, deployment will perform the same dependency validation during staging that we would normally do at registration time, failing and rejecting the provision request if the dependencies are not present. Available in the latest Insider flight of 20H1
 ExcludeAppFromLayoutModification="1" - (need to check with dev on the actual functionality). Available in 1809 
 
 Supported operation is Execute, Add, Delete, and Get.
