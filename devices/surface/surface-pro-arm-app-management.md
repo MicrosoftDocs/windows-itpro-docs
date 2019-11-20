@@ -8,7 +8,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 10/03/2019
+ms.date: 11/20/2019
 ms.reviewer: jessko
 manager: dansimp
 ms.audience: itpro
@@ -36,7 +36,7 @@ Organizations already using modern management, security, and productivity soluti
 
 ## Image-based deployment considerations
 
-Microsoft Deployment Toolkit (MDT) and System Center Configuration Manager (SCCM) operating system deployment currently do not support Surface Pro X. Customers relying on image-based deployment should consider Surface Pro 7 while they continue to evaluate the right time to transition to the cloud.
+Microsoft Deployment Toolkit (MDT) and Microsoft Endpoint Configuration Manager (formerly System Center Configuration Manager) currently do not support Surface Pro X for operating system deployment. Customers relying on image-based deployment should consider Surface Pro 7 while they continue to evaluate the right time to transition to the cloud.
 
 ## Managing Surface Pro X devices
 
@@ -48,7 +48,7 @@ For more information about setting up Intune, refer to the [Intune documentation
 
 ### Co-management
 
-Once deployed in Autopilot, you can join Surface Pro X devices to Azure AD or Active Directory (Hybrid Azure AD Join) where you will be able to manage the devices with Intune or co-manage them with SCCM, which will install the 32-bit x86 ConfigMgr client.
+Once deployed in Autopilot, you can join Surface Pro X devices to Azure AD or Active Directory (Hybrid Azure AD Join) where you will be able to manage the devices with Intune or co-manage them with Endpoint Configuration Manager, which will install the 32-bit x86 ConfigMgr client.
 
 ### Third party MDM solutions
 
@@ -68,6 +68,12 @@ Outside of personal devices that rely on Windows Update, servicing devices in mo
 
 > [!NOTE]
 > Surface Pro X supports Windows 10, version 1903 and later.
+
+### Windows Server Update Services
+Windows Server Update Services (WSUS) does not support the ability to deliver drivers and firmware to Surface Pro X. 
+
+For more information, refer to the [Microsoft Endpoint Configuration Manager documentation] (https://docs.microsoft.com/configmgr/sum/get-started/configure-classifications-and-products).
+
 
 ## Running apps on Surface Pro X
 
@@ -120,7 +126,7 @@ The following tables show the availability of selected key features on Surface P
 | Support for Network Boot (PXE)          | Yes           | Yes           |                                                                                                                                 |
 | Windows Configuration Designer          | Yes           | No            | Not recommended for Surface Pro X.                                                                                              |
 | WinPE                                   | Yes           | Yes           | Not recommended for Surface Pro X. Microsoft does not provide the necessary .ISO and drivers to support WinPE with Surface Pro X. |
-| SCCM: Operating System Deployment (OSD) | Yes           | No            | Not supported on Surface Pro X.                                                                                              |
+| Endpoint Configuration Manager: Operating System Deployment (OSD) | Yes           | No            | Not supported on Surface Pro X.                                                                                              |
 | MDT                                     | Yes           | No            | Not supported on Surface Pro X.                                                                                              |
 
 
@@ -129,7 +135,7 @@ The following tables show the availability of selected key features on Surface P
 | Intune                                        | Yes                 | Yes           | Manage LTE with eSIM profiles.                                                        |
 | Windows Autopilot                             | Yes                 | Yes           |                                                                                       |
 | Azure AD (co-management)                      | Yes                 | Yes           | Ability to join Surface Pro X to Azure AD or Active Directory (Hybrid Azure AD Join). |
-| SCCM                                          | Yes               | Yes           |                                                                                       |
+| Endpoint Configuration Manager                                          | Yes               | Yes           |                                                                                       |
 | Power on When AC Restore                      | Yes                 | Yes           |                                                                                   |
 | Surface Diagnostic Toolkit (SDT) for Business | Yes                 | Yes           |                                                                                   |
 | Surface Dock Firmware Update                  | Yes                 | Yes           |                                                                                   |
@@ -150,7 +156,7 @@ The following tables show the availability of selected key features on Surface P
 | Surface Data Eraser (SDE)         | Yes           | Yes           |                                                                                                                                                                                                                                                                                                                                                     
 ## FAQ
 
-### Can I deploy Surface Pro X with MDT or SCCM?
+### Can I deploy Surface Pro X with MDT or Endpoint Configuration Manager?
 
 The Microsoft Deployment Toolkit and System Center Configuration Manager operating system deployment currently do not support Surface Pro X. Customers relying on image-based deployment should consider Surface Pro 7 while they continue to evaluate the right time to transition to the cloud.
 
@@ -164,4 +170,4 @@ Yes.
 
 ### Is Intune required to manage Surface Pro X?
 
-Intune is recommended but not required. Once deployed in Autopilot, you can join Surface Pro X devices to Azure AD or Active Directory (Hybrid Azure AD Join) where you will be able to manage the devices with Intune or co-manage them with SCCM, which will install the 32-bit x86 ConfigMgr client.
+Intune is recommended but not required. Once deployed in Autopilot, you can join Surface Pro X devices to Azure AD or Active Directory (Hybrid Azure AD Join) where you will be able to manage the devices with Intune or co-manage them with Endpoint Configuration Manager, which will install the 32-bit x86 ConfigMgr client.

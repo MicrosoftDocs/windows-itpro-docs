@@ -229,8 +229,8 @@ create a reset package using PowerShell to reset SEMM.
 
 ## Version History
 
-### Version 2.59.139
-* Support to Surface Pro 7 and Surface Laptop 3
+### Version 2.59.
+* Support to Surface Pro 7 and Surface Laptop 3 13 inch.  Note:  Surface Laptop 3 15inch AMD processor is not supported.
 - Support to Wake on Power feature
 
 ### Version 2.54.139.0
