@@ -9,11 +9,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.date: 11/13/2018
 ms.reviewer: 
 manager: dansimp
+ms.custom: nextgen
 ---
 
 # Enable and configure antivirus always-on protection and monitoring
@@ -59,7 +60,7 @@ Root | Allow antimalware service to remain running always | If protection update
 
 The main real-time protection capability is enabled by default, but you can disable it with Group Policy:
 
-**Use Group Policy to disable real-time protection:**
+### Use Group Policy to disable real-time protection
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -69,7 +70,7 @@ The main real-time protection capability is enabled by default, but you can disa
 
 4. Double-click the **Turn off real-time protection** setting and set the option to **Enabled**. Click **OK**.
 
-## Related topics
+## Related articles
 
 - [Configure behavioral, heuristic, and real-time protection](configure-protection-features-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
