@@ -42,11 +42,11 @@ This guide will show you how to configure your VMs for optimal protection and pe
 
 You can also download the whitepaper [Windows Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf) which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > While the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
 
 
->[!NOTE]
+> [!NOTE]
 > There are performance and feature improvements to the way in which Windows Defender AV operates on virtual machines in Windows 10 Insider Preview, build 18323 (and later). We'll identify in this guide if you need to be using an Insider Preview build; if it isn't specified, then the minimum required version for the best protection and performance is Windows 10 1607.
 
 
@@ -88,7 +88,7 @@ Open the Intune management portal either by searching for Intune on https://port
 1. Click **Assignments**. The **Include** tab is automatically selected. In the drop-down menu, select **Selected Groups**, then click **Select groups to include**. Click the **VDI test VMs** group and then **Select**. 
 1. Click **Evaluate** to see how many users/devices will be impacted. If the number makes sense, click **Save**. If the number doesn’t make sense, go back to the groups blade and confirm the group contains the right users or devices.
 1. The profile will now be deployed to the impacted devices. Note that this may take some time.
-    
+
 #### Use Group Policy to enable the shared security intelligence feature:
 1. On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure and click Edit.
 1. In the **Group Policy Management Editor** go to **Computer configuration**.
@@ -96,7 +96,7 @@ Open the Intune management portal either by searching for Intune on https://port
 1. Expand the tree to **Windows components > Windows Defender Antivirus > Security Intelligence Updates**
 1. Double-click Define security intelligence location for VDI clients and set the option to Enabled. A field automatically appears, enter *\\<sharedlocation\>\wdav-update *(see the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what this will be). Click **OK**.
 1. Deploy the GPO to the VMs you want to test.
-    
+
 #### Use PowerShell to enable the shared security intelligence feature:
 Use the following cmdlet to enable the feature. You’ll need to then push this as you normally would push PowerShell-based configuration policies onto the VMs:
     
@@ -105,10 +105,10 @@ Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update
 ```
 
 See the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what the \<shared location\> will be.
-    
+
 ### Download and unpackage the latest updates
 Now you can get started on downloading and installing new updates. We’ve created a sample PowerShell script for you below. This script is the easiest way to download new updates and get them ready for your VMs. You should then set the script to run at a certain time on the management machine by using a scheduled task (or, if you’re familiar with using PowerShell scripts in Azure, Intune, or SCCM, you could also use those).
-    
+
 ```PowerShell
 $vdmpathbase = 'c:\wdav-update\{00000000-0000-0000-0000-'
 $vdmpathtime = Get-Date -format "yMMddHHmmss"
@@ -176,8 +176,8 @@ Sometimes, Windows Defender Antivirus notifications may be sent to or persist ac
 
 This setting will prevent a scan from occurring after receiving an update. You can apply this when creating the base image if you have also run a quick scan. This prevents the newly updated VM from performing a scan again (as you've already scanned it when you created the base image).
 
->[!IMPORTANT]
->Running scans after an update will help ensure your VMs are protected with the latest Security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
+> [!IMPORTANT]
+> Running scans after an update will help ensure your VMs are protected with the latest Security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
 
 1. Expand the tree to **Windows components > Windows Defender > Signature Updates** and configure the following setting:
 
@@ -204,4 +204,4 @@ On Windows Server 2016, Windows Defender Antivirus will automatically deliver th
 
 - [Video: Microsoft Senior Program Manager Bryan Keller on how System Center Configuration Manger 2012 manages VDI and integrates with App-V]( http://channel9.msdn.com/Shows/Edge/Edge-Show-5-Manage-VDI-using-SCCM-2012#time=03m02s)
 - [TechNet forums on Remote Desktop Services and VDI](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS)
-- [SignatureDownloadCustomTask PowerShell script](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4/DisplayScript)
+- [SignatureDownloadCustomTask PowerShell script](https://www.powershellgallery.com/packages/SignatureDownloadCustomTask/1.4)
