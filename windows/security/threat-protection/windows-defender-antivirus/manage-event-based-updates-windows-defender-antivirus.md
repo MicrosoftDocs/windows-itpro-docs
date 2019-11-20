@@ -37,7 +37,7 @@ You can use System Center Configuration Manager, Group Policy, PowerShell cmdlet
 
 3. Click **OK**.
 
-4.[Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
+4. [Deploy the updated policy as usual](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers).
 
 ### Use Group Policy to check for protection updates before running a scan
 
