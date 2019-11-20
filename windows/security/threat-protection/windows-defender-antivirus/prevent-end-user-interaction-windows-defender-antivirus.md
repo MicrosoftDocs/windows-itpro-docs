@@ -38,8 +38,7 @@ With the setting set to **Disabled** or not configured:
 ![Scheenshot of Windows Security showing the shield icon and virus and threat protection section](images/defender/wdav-headless-mode-off-1703.png)
 
 >[!NOTE]
->Hiding the interface will also prevent Windows Defender Antivirus notifications from appearing on the endpoint. Microsoft Defender Advanced Threat Protection notifications will still appear. You can also individually [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
-
+>Hiding the interface will also prevent Windows Defender Antivirus notifications from appearing on the endpoint. Microsoft Defender Advanced Threat Protection notifications will still appear. You can also individually [configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
 
 In earlier versions of Windows 10, the setting will hide the Windows Defender client interface. If the user attempts to open it, they will receive a warning "Your system administrator has restricted access to this app.":
 
@@ -47,7 +46,7 @@ In earlier versions of Windows 10, the setting will hide the Windows Defender cl
 
 ## Use Group Policy to hide the Windows Defender AV interface from users
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
@@ -67,7 +66,7 @@ You can prevent users from pausing scans. This can be helpful to ensure schedule
 
 ### Use Group Policy to prevent users from pausing a scan
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**.
 
@@ -76,7 +75,6 @@ You can prevent users from pausing scans. This can be helpful to ensure schedule
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > Scan**.
 
 6. Double-click the **Allow users to pause scan** setting and set the option to **Disabled**. Click **OK**. 
-
 
 ## Related articles
 
