@@ -138,7 +138,7 @@ All files under a folder (including files in subdirectories), or a specific file
 >[!IMPORTANT]
 >If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
 
-For example, the following code snippet would cause Windows Defender AV scans to exclude any file with the **.test** file extension:
+For example, the following code snippet would cause Windows Defender AV scans to exclude any file with the `.test` file extension:
 
 ```PowerShell
 Add-MpPreference -ExclusionExtension ".test"
@@ -168,7 +168,7 @@ See [Add exclusions in the Windows Security app](windows-defender-security-cente
 <a id="wildcards"></a>
 ## Use wildcards in the file name and folder path or extension exclusion lists
 
-You can use the asterisk `*`, question mark `?`, or environment variables (such as `%ALLUSERSPROFILE%`) as wildcards when defining items in the file name or folder path exclusion list. The way in which these wildcards are interpreted differs from their usual usage in other apps and languages, so you should read this section to understand their specific limitations.
+You can use the asterisk `*`, question mark `?`, or environment variables (such as `%ALLUSERSPROFILE%`) as wildcards when defining items in the file name or folder path exclusion list. The way in which these wildcards are interpreted differs from their usual usage in other apps and languages. Make sure to read this section to understand their specific limitations.
 
 >[!IMPORTANT]
 >There are key limitations and usage scenarios for these wildcards:
