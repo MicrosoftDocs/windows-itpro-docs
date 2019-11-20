@@ -70,9 +70,9 @@ Outside of personal devices that rely on Windows Update, servicing devices in mo
 > Surface Pro X supports Windows 10, version 1903 and later.
 
 ### Windows Server Update Services
-Windows Server Update Services (WSUS) does not support the ability to deliver drivers and firmware to Surface Pro X. 
+Windows Server Update Services (WSUS) does not support the ability to deliver drivers and firmware to Surface Pro X.
 
-For more information, refer to the [Microsoft Endpoint Configuration Manager documentation] (https://docs.microsoft.com/configmgr/sum/get-started/configure-classifications-and-products).
+For more information, refer to the [Microsoft Endpoint Configuration Manager documentation](https://docs.microsoft.com/configmgr/sum/get-started/configure-classifications-and-products).
 
 
 ## Running apps on Surface Pro X
@@ -158,7 +158,7 @@ The following tables show the availability of selected key features on Surface P
 
 ### Can I deploy Surface Pro X with MDT or Endpoint Configuration Manager?
 
-The Microsoft Deployment Toolkit and System Center Configuration Manager operating system deployment currently do not support Surface Pro X. Customers relying on image-based deployment should consider Surface Pro 7 while they continue to evaluate the right time to transition to the cloud.
+The Microsoft Deployment Toolkit (MDT) and Microsoft Endpoint Configuration Manager  currently do not support Surface Pro X for operating system deployment.Customers relying on image-based deployment should consider Surface Pro 7 while they continue to evaluate the right time to transition to the cloud.
 
 ### How can I deploy Surface Pro X?
 
