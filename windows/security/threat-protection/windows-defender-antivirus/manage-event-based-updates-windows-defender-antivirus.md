@@ -84,7 +84,7 @@ You can use Group Policy to force Windows Defender Antivirus to check and downlo
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components > Windows Defender Antivirus > Signature Updates**.
+4. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Signature Updates**.
 
 5. Double-click **Check for the latest virus and spyware definitions on startup** and set the option to **Enabled**. 
 
@@ -100,7 +100,7 @@ You can also use Group Policy, PowerShell, or WMI to configure Windows Defender 
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components > Windows Defender Antivirus > Security Intelligence Updates**.
+4. Expand the tree to **Windows components** > **Windows Defender Antivirus** > **Security Intelligence Updates**.
 
 5. Double-click **Initiate security intelligence update on startup** and set the option to **Enabled**.
 
@@ -118,7 +118,7 @@ For more information, see [Use PowerShell cmdlets to manage Windows Defender Ant
 
 ### Use Windows Management Instruction (WMI) to download updates when Windows Defender Antivirus is not present
 
-Use the [**Set** method of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
+Use the [**Set** method of the **MSFT_MpPreference**](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
 
 ```WMI
 SignatureDisableUpdateOnStartupWithoutEngine
