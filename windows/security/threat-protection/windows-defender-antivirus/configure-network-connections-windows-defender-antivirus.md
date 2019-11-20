@@ -123,6 +123,9 @@ The Windows event log will also show [Windows Defender client event ID 2050](tro
 ## Related articles
 
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
+
 - [Run an Windows Defender Antivirus scan from the command line](command-line-arguments-windows-defender-antivirus.md) and [Command line arguments](command-line-arguments-windows-defender-antivirus.md)
+
 - [Important changes to Microsoft Active Protection Services endpoint](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) 
