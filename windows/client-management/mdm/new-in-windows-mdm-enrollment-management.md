@@ -1940,6 +1940,7 @@ How do I turn if off? | The service can be stopped from the "Services" console o
 |New or updated topic | Description|
 |--- | ---|
 |[Policy CSP - DeliveryOptimization](policy-csp-deliveryoptimization.md)|Added option 5 in the supported values list for DeliveryOptimization/DOGroupIdSource.|
+|[DiagnosticLog CSP](diagnosticlog-csp.md)|Added substantial updates to this CSP doc.|
 
 ### October 2019
 
