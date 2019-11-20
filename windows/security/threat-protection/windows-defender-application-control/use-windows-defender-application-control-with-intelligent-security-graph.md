@@ -89,7 +89,7 @@ appidtel start
 
 For WDAC policies deployed over MDM using the AppLocker CSP this step is not required as the CSP will enable the necessary components. ISG enabled through the SCCM WDAC UX will not need this step but if custom policies are being deployed outside of the WDAC UX through SCCM then this step is required.   
 
-## Security considerations with using the Intelligent Security Graph 
+## Security considerations with the Intelligent Security Graph 
 
 Since the ISG is a heuristic-based mechanism, it does not provide the same security guarantees that explicit allow or deny rules do. It is best suited for deployment to systems where each user is configured as a standard user and there are other monitoring systems in place like Windows Defender Advanced Threat Protection to help provide optics into what users are doing. 
 

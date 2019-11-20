@@ -11,6 +11,7 @@
 #### [Use multiple WDAC policies](deploy-multiple-windows-defender-application-control-policies.md)
 #### [Common WDAC deployment scenarios](types-of-devices.md)
 ##### [Create a WDAC policy for lightly-managed devices](create-wdac-policy-for-lightly-managed-devices.md)
+##### [Create a WDAC policy for fully-managed devices](create-wdac-policy-for-fully-managed-devices.md)
 ##### [Create a WDAC policy for fixed-workload devices](create-initial-default-policy.md)
 ##### [Microsoft recommended block rules](microsoft-recommended-block-rules.md)
 
