@@ -133,6 +133,12 @@ In the command prompt, run:
     mdatp --edr --early-preview true
  ```
 
+>[!NOTE]
+>For this command to work, you will need to be at version 100.78.x.
+>To get the latest version of the Microsoft Defender ATP for MAC, set the Microsoft AutoUpdate to “Fast Ring”. To get “Microsoft AutoUpdate”, download it from [Release history for Microsoft AutoUpdate (MAU)](https://docs.microsoft.com/officeupdates/release-history-microsoft-autoupdate).
+
+
+
 ## Troubleshooting
 
 ### Verify you are running the correct version
