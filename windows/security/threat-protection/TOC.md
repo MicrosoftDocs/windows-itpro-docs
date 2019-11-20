@@ -1072,7 +1072,7 @@
 ###### [Network security: Allow Local System to use computer identity for NTLM](security-policy-settings/network-security-allow-local-system-to-use-computer-identity-for-ntlm.md)
 ###### [Network security: Allow LocalSystem NULL session fallback](security-policy-settings/network-security-allow-localsystem-null-session-fallback.md)
 ###### [Network security: Allow PKU2U authentication requests to this computer to use online identities](security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities.md)
-###### [Network security: Configure encryption types allowed for Kerberos Win7 only](security-policy-settings/network-security-configure-encryption-types-allowed-for-kerberos.md)
+###### [Network security: Configure encryption types allowed for Kerberos](security-policy-settings/network-security-configure-encryption-types-allowed-for-kerberos.md)
 ###### [Network security: Do not store LAN Manager hash value on next password change](security-policy-settings/network-security-do-not-store-lan-manager-hash-value-on-next-password-change.md)
 ###### [Network security: Force logoff when logon hours expire](security-policy-settings/network-security-force-logoff-when-logon-hours-expire.md)
 ###### [Network security: LAN Manager authentication level](security-policy-settings/network-security-lan-manager-authentication-level.md)

@@ -99,7 +99,7 @@ Users with administrator privileges or malware running as an administrator user 
 
 Since the ISG relies on identifying executables as being known good, there are cases where it may classify legitimate executables as unknown, leading to blocks that need to be resolved either with a rule in the WDAC policy, a catalog signed by a certificate trusted in the WDAC policy or by deployment through a WDAC managed installer. Typically, this is due to an installer or application using a dynamic file as part of execution. These files do not tend to build up known good reputation. Auto-updating applications have also been observed using this mechanism and may be flagged by the ISG.  
 
-Modern apps are not supported with the ISG heuristic and will need to be separately authorized in your WDAC policy. As modern apps are signed by the Microsoft Store and Microsoft Store for Business. it is straightforward to authorize modern apps with signer rules in the WDAC policy.
+Modern apps are not supported with the ISG heuristic and will need to be separately authorized in your WDAC policy. As modern apps are signed by the Microsoft Store and Microsoft Store for Business, it is straightforward to authorize modern apps with signer rules in the WDAC policy.
 
 The ISG heuristic does not authorize kernel mode drivers. The WDAC policy must have rules that allow the necessary drivers to run.  
 

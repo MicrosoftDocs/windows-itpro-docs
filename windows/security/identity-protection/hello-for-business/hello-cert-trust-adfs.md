@@ -193,6 +193,9 @@ Sign-in the federation server with _domain administrator_ equivalent credentials
 
 ### Add the AD FS Service account to the KeyCredential Admin group and the Windows Hello for Business Users group
 
+> [!NOTE]
+> If you have a Windows Server 2016 domain controller in your domain, you can use the **Key Admins** group instead of **KeyCredential Administrators** and skip the **Configure Permissions for Key Registration** step.
+
 The **KeyCredential Administrators** global group provides the AD FS service with the permissions needed to perform key registration.  The Windows Hello for Business group provides the AD FS service with the permissions needed to enroll a Windows Hello for Business authentication certificate on behalf of the provisioning user.
 
 Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
