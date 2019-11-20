@@ -117,5 +117,5 @@ If someone else is going to be using your HoloLens, they should run the Calibrat
 
 ## See also
 
-- [Spatial mapping design](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-design)
+- [Spatial mapping design](https://docs.microsoft.com/en-us/windows/mixed-reality/spatial-mapping)
 - [Holograms](https://docs.microsoft.com/windows/mixed-reality/hologram)
