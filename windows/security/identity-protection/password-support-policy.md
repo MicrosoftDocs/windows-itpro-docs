@@ -17,7 +17,7 @@ audience: ITPro
 
 # Technical support policy for lost or forgotten passwords
 
-Microsoft takes security seriously. This is for your protection Microsoft accounts, the Windows operating system, and other Microsoft products include passwords to help secure your information. This article provides some options you can use to reset or recover your password if you’ve forgotten it. However, if these options don’t work, Microsoft support engineers can't help you retrieve or circumvent a lost or forgotten password.
+Microsoft takes security seriously. This is for your protection. Microsoft accounts, the Windows operating system, and other Microsoft products include passwords to help secure your information. This article provides some options you can use to reset or recover your password if you’ve forgotten it. However, if these options don’t work, Microsoft support engineers can't help you retrieve or circumvent a lost or forgotten password.
 
 If you lose or forget a password, you can use the links in this article to find published support information that will help you reset the password.
 
@@ -31,9 +31,17 @@ If you lose or forget the password for your Microsoft Account, go to the [Recove
 
 This wizard requests your security proofs. If you have forgotten your security proofs, or no longer have access to them, select **I no longer have these anymore**. After you select this option, fill out a form for the Microsoft Account team. Provide as much information as you can on this form. The Microsoft Account team reviews the information that you provide to determine whether you are the account holder. This decision is final and Microsoft does not influence the team's choice of action.
 
-## How to reset a password for a local account on a Windows 10 device
+## How to reset a password for a local account on a Windows device
+
+Local accounts on a device include the device's Administrator account.
+
+### Windows 10
 
 If you lose or forget the password for a local account on a Windows 10 device, see [Reset your Windows 10 local account password](https://support.microsoft.com/help/4028457).
+
+### Windows 8.1 or Windows 7
+
+If you lose or forget the password for a local account on a device that runs Windows 8.1 or Windows 7, see [Change or reset your Windows password](https://support.microsoft.com/help/4490115). In that article, you can select your operating system version from the drop-down menu.
 
 ## How to reset a hardware BIOS password
 
