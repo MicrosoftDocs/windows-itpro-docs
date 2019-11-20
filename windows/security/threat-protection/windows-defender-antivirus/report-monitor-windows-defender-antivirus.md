@@ -1,6 +1,6 @@
 ---
 title: Monitor and report on Windows Defender Antivirus protection
-description: Use Configuration Manager or SIEM tools to consume reports, and monitor Windows Defender AV with PowerShell and WMI.
+description: Use Configuration Manager or security information and event management (SIEM) tools to consume reports, and monitor Windows Defender AV with PowerShell and WMI.
 keywords: siem, monitor, report, windows defender av
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -29,7 +29,7 @@ You can use System Center Configuration Manager to [monitor Windows Defender Ant
 
 Microsoft Operations Management Suite has an [Update Compliance add-in](/windows/deployment/update/update-compliance-get-started) that reports on key Windows Defender Antivirus issues, including protection updates and real-time protection settings.
 
-If you have a third-party security information and event management (SIEM) tool, you can also consume [Windows Defender client events](https://msdn.microsoft.com/library/windows/desktop/aa964766(v=vs.85).aspx). 
+If you have a third-party security information and event management (SIEM) server, you can also consume [Windows Defender client events](https://msdn.microsoft.com/library/windows/desktop/aa964766(v=vs.85).aspx). 
 
 Windows events comprise several security event sources, including Security Account Manager (SAM) events ([enhanced for Windows 10](https://technet.microsoft.com/library/mt431757.aspx), also see the [Security audting](/windows/device-security/auditing/security-auditing-overview) topic) and  [Windows Defender events](troubleshoot-windows-defender-antivirus.md). 
 
