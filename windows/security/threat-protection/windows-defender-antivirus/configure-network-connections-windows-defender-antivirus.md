@@ -47,7 +47,7 @@ See [Enable cloud-delivered protection](enable-cloud-protection-windows-defender
 
 After you've enabled the service, you may need to configure your network or firewall to allow connections between it and your endpoints.
 
-Because your protection is a cloud service, computers must have access to the internet and reach the ATP machine learning services. The URL `*.blob.core.windows.net` should not be excluded from any kind of network inspection. The table below lists the services and their associated URLs. You should ensure there are no firewall or network filtering rules denying access to these URLs, or you may need to create an allow rule specifically for them (excluding the URL `*.blob.core.windows.net`). Below mention URLs are using port 443 for communication.
+Because your protection is a cloud service, computers must have access to the internet and reach the ATP machine learning services. Do not exclude the URL `*.blob.core.windows.net` from any kind of network inspection. The table below lists the services and their associated URLs. Make sure that there are no firewall or network filtering rules denying access to these URLs, or you may need to create an allow rule specifically for them (excluding the URL `*.blob.core.windows.net`). Below mention URLs are using port 443 for communication.
 
 
 | **Service**| **Description** |**URL** |
@@ -113,7 +113,7 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
     ![Screenshot of quarantined items in the Windows Security app](images/defender/wdav-quarantined-history-wdsc.png)
 
 >[!NOTE]
->Versions of Windows 10 before version 1703 have a different user interface. See [Windows Defender Antivirus in the Windows Security app](windows-defender-security-center-antivirus.md) for more information about the differences between versions, and instructions on how to perform common tasks in the different interfaces.
+>Versions of Windows 10 before version 1703 have a different user interface. See [Windows Defender Antivirus in the Windows Security app](windows-defender-security-center-antivirus.md).
 
 The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-windows-defender-antivirus.md).
 
