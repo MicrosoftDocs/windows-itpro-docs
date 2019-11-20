@@ -47,8 +47,8 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
      >
      > This command only works for AADJ device users already added to any of the local groups (administrators).
      > Otherwise this command throws the below error. For example: </br>
-     > for cloud only user --> "There is no such global user or group : Azuread\Shenry" </br>
-     > for synced user --> "There is no such global user or group : baz\user2" </br>
+     > for cloud only user: "There is no such global user or group : *name*" </br>
+     > for synced user: "There is no such global user or group : *name*" </br>
      >
      >In Windows 10, version 1709, the user does not have to sign in to the remote device first.
      >
