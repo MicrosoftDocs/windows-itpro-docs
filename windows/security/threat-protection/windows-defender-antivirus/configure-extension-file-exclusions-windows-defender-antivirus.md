@@ -33,7 +33,7 @@ You can exclude certain files from Windows Defender Antivirus scans by modifying
 > [!NOTE]
 > Automatic exclusions apply only to Windows Server 2016 and above. The default antimalware policy we deploy at Microsoft doesn't set any exclusions by default.
 
-This topic describes how to configure exclusion lists for the following:
+This topic describes how to configure exclusion lists for the files and folders.
 
 Exclusion | Examples | Exclusion list
 ---|---|---
@@ -42,7 +42,7 @@ Any file under a specific folder | All files under the `c:\test\sample` folder |
 A specific file in a specific folder | The file `c:\sample\sample.test` only | File and folder exclusions
 A specific process | The executable file `c:\test\process.exe` | File and folder exclusions
 
-This means the exclusion lists have the following characteristics:
+Exclusion lists have the following characteristics:
 
 - Folder exclusions will apply to all files and folders under that folder, unless the subfolder is a reparse point. Reparse point subfolders must be excluded separately.
 - File extensions will apply to any file name with the defined extension if a path or folder is not defined.
