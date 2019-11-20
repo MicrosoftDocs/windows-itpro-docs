@@ -43,7 +43,7 @@ You can use System Center Configuration Manager, Group Policy, PowerShell cmdlet
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
+2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 
 3. Click **Policies** then **Administrative templates**.
 
@@ -80,7 +80,7 @@ You can use Group Policy to force Windows Defender Antivirus to check and downlo
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
+2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 
 3. Click **Policies** then **Administrative templates**.
 
@@ -96,7 +96,7 @@ You can also use Group Policy, PowerShell, or WMI to configure Windows Defender 
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
+2. Using the **Group Policy Management Editor**, go to **Computer configuration**.
 
 3. Click **Policies** then **Administrative templates**.
 
@@ -138,7 +138,7 @@ If you have enabled cloud-delivered protection, Windows Defender AV will send fi
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration**.
+2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 
 3. Click **Policies** then **Administrative templates**.
 
