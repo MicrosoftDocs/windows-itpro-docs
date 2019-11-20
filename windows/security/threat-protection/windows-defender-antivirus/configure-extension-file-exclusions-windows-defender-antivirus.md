@@ -26,24 +26,21 @@ manager: dansimp
 > [!IMPORTANT]
 > Windows Defender Antivirus exclusions don't apply to other Microsoft Defender ATP capabilities, including [endpoint detection and response (EDR)](../microsoft-defender-atp/overview-endpoint-detection-response.md), [attack surface reduction (ASR) rules](../microsoft-defender-atp/attack-surface-reduction.md), and [controlled folder access](../microsoft-defender-atp/controlled-folders.md). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. To exclude files broadly, add them to the Microsoft Defender ATP [custom indicators](../microsoft-defender-atp/manage-indicators.md).
 
-You can exclude certain files from Windows Defender Antivirus scans by modifying exclusion lists.
+## Exclusion lists
 
-Generally, you shouldn't need to apply exclusions. Windows Defender Antivirus includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
+You can exclude certain files from Windows Defender Antivirus scans by modifying exclusion lists. **Generally, you shouldn't need to apply exclusions**. Windows Defender Antivirus includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
 
 > [!NOTE]
-> Automatic exclusions apply only to Windows Server 2016 and above. 
-
->[!TIP]
->The default antimalware policy we deploy at Microsoft doesn't set any exclusions by default.
+> Automatic exclusions apply only to Windows Server 2016 and above. The default antimalware policy we deploy at Microsoft doesn't set any exclusions by default.
 
 This topic describes how to configure exclusion lists for the following:
 
 Exclusion | Examples | Exclusion list
 ---|---|---
-Any file with a specific extension | All files with the .test extension, anywhere on the machine | Extension exclusions
-Any file under a specific folder | All files under the c:\test\sample folder | File and folder exclusions
-A specific file in a specific folder | The file c:\sample\sample.test only | File and folder exclusions
-A specific process | The executable file c:\test\process.exe | File and folder exclusions
+Any file with a specific extension | All files with the `.test` extension, anywhere on the machine | Extension exclusions
+Any file under a specific folder | All files under the `c:\test\sample` folder | File and folder exclusions
+A specific file in a specific folder | The file `c:\sample\sample.test` only | File and folder exclusions
+A specific process | The executable file `c:\test\process.exe` | File and folder exclusions
 
 This means the exclusion lists have the following characteristics:
 
@@ -72,15 +69,15 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
 ## Configure the list of exclusions based on folder name or file extension
 
-**Use Intune to configure file name, folder, or file extension exclusions:**
+### Use Intune to configure file name, folder, or file extension exclusions
 
 See [Configure device restriction settings in Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure) and [Windows Defender Antivirus device restriction settings for Windows 10 in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus) for more details.
 
-**Use Configuration Manager to configure file name, folder, or file extension exclusions:**
+### Use Configuration Manager to configure file name, folder, or file extension exclusions
 
 See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring System Center Configuration Manager (current branch).
 
-**Use Group Policy to configure folder or file extension exclusions:**
+### Use Group Policy to configure folder or file extension exclusions
 
 >[!NOTE]
 >If you specify a fully qualified path to a file, then only that file is excluded. If a folder is defined in the exclusion, then all files and subdirectories under that folder are excluded.
@@ -113,7 +110,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 
 <a id="ps"></a>
 
-**Use PowerShell cmdlets to configure file name, folder, or file extension exclusions:**
+### Use PowerShell cmdlets to configure file name, folder, or file extension exclusions
 
 Using PowerShell to add or remove exclusions for files based on the extension, location, or file name requires using a combination of three cmdlets and the appropriate exclusion list parameter. The cmdlets are all in the [Defender module](https://technet.microsoft.com/itpro/powershell/windows/defender/defender).
 
@@ -149,7 +146,7 @@ Add-MpPreference -ExclusionExtension ".test"
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-**Use Windows Management Instruction (WMI) to configure file name, folder, or file extension exclusions:**
+### Use Windows Management Instruction (WMI) to configure file name, folder, or file extension exclusions
 
 Use the [**Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](https://msdn.microsoft.com/library/dn455323(v=vs.85).aspx) class for the following properties:
 
@@ -166,7 +163,7 @@ See the following for more information and allowed parameters:
 
 <a id="man-tools"></a>
 
-**Use the Windows Security app to configure file name, folder, or file extension exclusions:**
+### Use the Windows Security app to configure file name, folder, or file extension exclusions
 
 See [Add exclusions in the Windows Security app](windows-defender-security-center-antivirus.md#exclusions) for instructions.
 
@@ -285,7 +282,7 @@ If you use PowerShell, you can retrieve the list in two ways:
 - Retrieve the status of all Windows Defender Antivirus preferences. Each of the lists will be displayed on separate lines, but the items within each list will be combined into the same line.
 - Write the status of all preferences to a variable, and use that variable to only call the specific list you are interested in. Each use of `Add-MpPreference` is written to a new line.
 
-**Validate the exclusion list by using MpCmdRun:**
+### Validate the exclusion list by using MpCmdRun
 
 To check exclusions with the dedicated [command-line tool mpcmdrun.exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
 
@@ -296,7 +293,7 @@ MpCmdRun.exe -CheckExclusion -path <path>
 >[!NOTE]
 >Checking exclusions with MpCmdRun requires Windows Defender Antivirus CAMP version 4.18.1812.3 (released in December 2018) or later.
 
-**Review the list of exclusions alongside all other Windows Defender Antivirus preferences by using PowerShell:**
+### Review the list of exclusions alongside all other Windows Defender Antivirus preferences by using PowerShell
 
 Use the following cmdlet:
 
@@ -310,7 +307,7 @@ In the following example, the items contained in the `ExclusionExtension` list a
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/itpro/powershell/windows/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
-**Retrieve a specific exclusions list by using PowerShell:**
+### Retrieve a specific exclusions list by using PowerShell
 
 Use the following code snippet (enter each line as a separate command); replace **WDAVprefs** with whatever label you want to name the variable:
 
