@@ -492,6 +492,18 @@ Supported operation is Execute, Add, Delete, and Get.
 <a href="" id="appinstallation-packagefamilyname-hostedinstall"></a>**AppInstallation/*PackageFamilyName*/HostedInstall**  
 Required. Command to perform an install of an app package from a hosted location (this can be a local drive, a UNC, or https data source).
 
+DeploymentOptions:
+ForceApplicationShutdown
+DevelopmentMode 
+InstallAllResources
+ForceTargetApplicationShutdown 
+ForceUpdateToAnyVersion
+DeferRegistration="1" - If the app is in use at time of installation.  This stages the files for an app update and completes the registration of the app update after the app closes. Available latest insider flight of 20H1
+StageOnly="1"  - Stages the files for an app installation or update without installing the app. Available in 1803
+LicenseUri="\\server\license.lic" - option is deploying an offline license from the Microsoft Store for Business. Available in 1607 
+ValidateDependencies="1" - (need to check with dev on the actual functionality) . Available in the latest Insider flight of 20H1
+ExcludeAppFromLayoutModification="1" - (need to check with dev on the actual functionality). Available in 1809 
+
 Supported operation is Execute, Add, Delete, and Get.
 
 <a href="" id="appinstallation-packagefamilyname-lasterror"></a>**AppInstallation/*PackageFamilyName*/LastError**  
