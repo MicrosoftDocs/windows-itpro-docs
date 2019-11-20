@@ -193,3 +193,4 @@ ComputerName=any(ComputerName) by MachineId, AlertId
 - [Weaknesses](tvm-weaknesses.md)
 - [Advanced hunting overview](overview-hunting.md)
 - [All Advanced hunting tables](advanced-hunting-reference.md)
+- [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
