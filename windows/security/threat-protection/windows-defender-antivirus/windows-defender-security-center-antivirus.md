@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
@@ -40,7 +41,7 @@ See the [Windows Security topic](/windows/threat-protection/windows-defender-sec
 >[!NOTE]
 >The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft Defender Security Center web portal that is used to review and manage [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md).
 
-**Review virus and threat protection settings in the Windows Security app:**
+## Review virus and threat protection settings in the Windows Security app
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
@@ -66,7 +67,6 @@ Item | Windows 10, before version 1703 | Windows 10, version 1703 and later | De
 4 | **Scan options** | **Advanced scan** | Run a full scan, custom scan, or a Windows Defender Offline scan
 5 | Run a scan (based on the option chosen under **Scan options** | **Quick scan** | In Windows 10, version 1703 and later, you can run custom and full scans under the **Advanced scan** option
 
-
 ## Common tasks
 
 This section describes how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Windows Defender Antivirus in the Windows Security app.
@@ -75,7 +75,9 @@ This section describes how to perform some of the most common tasks when reviewi
 > If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-windows-defender-antivirus.md) topic describes how local policy override settings can be configured.
 
 <a id="scan"></a>
-**Run a scan with the Windows Security app**
+
+### Run a scan with the Windows Security app
+
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
@@ -85,7 +87,9 @@ This section describes how to perform some of the most common tasks when reviewi
 4. Click **Run a new advanced scan** to specify different types of scans, such as a full scan.
 
 <a id="definition-version"></a>
-**Review the security intelligence update version and download the latest updates in the Windows Security app**
+
+### Review the security intelligence update version and download the latest updates in the Windows Security app
+
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
@@ -97,8 +101,7 @@ This section describes how to perform some of the most common tasks when reviewi
 4. Click **Check for updates** to download new protection updates (if there are any).
 
 
-
-**Ensure Windows Defender Antivirus is enabled in the Windows Security app**
+### Ensure Windows Defender Antivirus is enabled in the Windows Security app
 
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
@@ -114,7 +117,9 @@ This section describes how to perform some of the most common tasks when reviewi
 
 
 <a id="exclusions"></a>
-**Add exclusions for Windows Defender Antivirus in the Windows Security app**
+
+### Add exclusions for Windows Defender Antivirus in the Windows Security app
+
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
@@ -126,7 +131,8 @@ This section describes how to perform some of the most common tasks when reviewi
 5. Click the plus icon to choose the type and set the options for each exclusion. 
 
 <a id="detection-history"></a>
-**Review threat detection history in the Windows Defender Security Center app**
+
+### Review threat detection history in the Windows Defender Security Center app
 1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
  
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
@@ -136,7 +142,9 @@ This section describes how to perform some of the most common tasks when reviewi
 4. Click **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
  
 <a id="ransomware"></a>
-**Set ransomware protection and recovery options**
+
+### Set ransomware protection and recovery options
+
 1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
@@ -147,8 +155,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 5. To set up ransomware recovery options, click **Set up** under **Ransomware data recovery** and follow the instructions for linking or setting up your OneDrive account so you can easily recover from a ransomware attack.
 
-
-## Related topics
+## Related articles
 
 - [Windows Defender Antivirus](windows-defender-antivirus-in-windows-10.md)
 
