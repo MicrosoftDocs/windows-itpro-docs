@@ -38,7 +38,7 @@ See the blog post [Important changes to Microsoft Active Protection Services end
 
 ## Allow connections to the Windows Defender Antivirus cloud service
 
-The Windows Defender Antivirus cloud service provides fast, strong protection for your endpoints. Enabling the cloud-delivered protection service is optional, however it is highly recommended because it provides very important protection against malware on your endpoints and across your network.
+The Windows Defender Antivirus cloud service provides fast, strong protection for your endpoints. Enabling the cloud-delivered protection service is optional, however it is highly recommended because it provides important protection against malware on your endpoints and across your network.
 
 >[!NOTE]
 >The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
@@ -47,7 +47,7 @@ See [Enable cloud-delivered protection](enable-cloud-protection-windows-defender
 
 After you've enabled the service, you may need to configure your network or firewall to allow connections between it and your endpoints.
 
-As a cloud service, it is required that computers have access to the internet and that the ATP machine learning services are reachable. The URL: "\*.blob.core.windows.net" should not be excluded from any kind of network inspection. The table below lists the services and their associated URLs. You should ensure there are no firewall or network filtering rules denying access to these URLs, or you may need to create an allow rule specifically for them (excluding the URL: "\*.blob.core.windows.net"). Below mention URLs are using port 443 for communication.
+Because your protection is a cloud service, computers must have access to the internet and reach the ATP machine learning services. The URL `*.blob.core.windows.net` should not be excluded from any kind of network inspection. The table below lists the services and their associated URLs. You should ensure there are no firewall or network filtering rules denying access to these URLs, or you may need to create an allow rule specifically for them (excluding the URL `*.blob.core.windows.net`). Below mention URLs are using port 443 for communication.
 
 
 | **Service**| **Description** |**URL** |
@@ -67,7 +67,7 @@ After whitelisting the URLs listed above, you can test if you are connected to t
 
 **Use the cmdline tool to validate cloud-delivered protection:**
 
-Use the following argument with the Windows Defender Antivirus command line utility (*mpcmdrun.exe*) to verify that your network can communicate with the Windows Defender Antivirus cloud service:
+Use the following argument with the Windows Defender Antivirus command-line utility (*mpcmdrun.exe*) to verify that your network can communicate with the Windows Defender Antivirus cloud service:
 
 ```DOS
 "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
@@ -76,7 +76,7 @@ Use the following argument with the Windows Defender Antivirus command line util
 > [!NOTE]
 > You need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703 or higher.
 
-See [Manage Windows Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the *mpcmdrun.exe* utility.
+For more information, see [Manage Windows Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-windows-defender-antivirus.md).
 
 **Attempt to download a fake malware file from Microsoft:**
 
