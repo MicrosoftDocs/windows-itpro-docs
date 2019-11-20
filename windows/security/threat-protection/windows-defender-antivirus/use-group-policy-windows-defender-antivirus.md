@@ -27,22 +27,21 @@ You can use [Group Policy](https://msdn.microsoft.com/library/ee663280(v=vs.85).
 
 In general, you can use the following procedure to configure or change Windows Defender Antivirus group policy settings:
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 
-4.  Click **Administrative templates**.
+3. Click **Administrative templates**.
 
-5.  Expand the tree to **Windows components > Windows Defender Antivirus**.
+4. Expand the tree to **Windows components** > **Windows Defender Antivirus**.
 
-6. Expand the section (referred to as **Location** in the table in this topic) that contains the setting you want to configure, double-click the setting to open it, and make configuration changes.
+5. Expand the section (referred to as **Location** in the table in this topic) that contains the setting you want to configure, double-click the setting to open it, and make configuration changes.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+6. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
 
 The following table in this topic lists the Group Policy settings available in Windows 10, version 1703, and provides links to the appropriate topic in this documentation library (where applicable).
 
-
-Location | Setting | Documented in topic
+Location | Setting | Article
 ---|---|---
 Client interface | Enable headless UI mode | [Prevent users from seeing or interacting with the Windows Defender Antivirus user interface](prevent-end-user-interaction-windows-defender-antivirus.md)
 Client interface | Display additional text to clients when they need to perform an action | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
@@ -89,10 +88,10 @@ Reporting | Configure time out for detections requiring additional action | Not 
 Reporting | Turn off enhanced notifications | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
 Root | Turn off Windows Defender Antivirus | Not used (This setting must be set to **Not configured** to ensure any installed third-party antivirus apps work correctly)
 Root | Define addresses to bypass proxy server | Not used
-Root | Define proxy auto-config (.pac) for connecting to the network | Not used
+Root | Define proxy autoconfig (.pac) for connecting to the network | Not used
 Root | Define proxy server for connecting to the network | Not used
 Root | Configure local administrator merge behavior for lists | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-windows-defender-antivirus.md)
-Root | Allow antimalware service to startup with normal priority | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
+Root | Allow antimalware service to start up with normal priority | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
 Root | Allow antimalware service to remain running always | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
 Root | Turn off routine remediation | [Configure remediation for Windows Defender Antivirus scans](configure-remediation-windows-defender-antivirus.md)
 Root | Randomize scheduled task times | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
@@ -127,7 +126,7 @@ Scan | Specify the time of day to run a scheduled scan | [Configure scheduled sc
 Scan | Start the scheduled scan only when computer is on but not in use | [Configure scheduled scans for Windows Defender Antivirus](scheduled-catch-up-scans-windows-defender-antivirus.md)
 Security intelligence updates | Allow security intelligence updates from Microsoft Update | [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
 Security intelligence updates | Allow security intelligence updates when running on battery power | [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
-Security intelligence updates | Allow notifications to disable definitions based repots to Microsoft MAPS | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
+Security intelligence updates | Allow notifications to disable definitions-based reports to Microsoft MAPS | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
 Security intelligence updates | Allow real-time security intelligence updates based on reports to Microsoft MAPS | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
 Security intelligence updates | Check for the latest virus and spyware definitions on startup | [Manage event-based forced updates](manage-event-based-updates-windows-defender-antivirus.md)
 Security intelligence updates | Define file shares for downloading security intelligence updates | [Manage Windows Defender Antivirus protection and security intelligence updates](manage-protection-updates-windows-defender-antivirus.md)
@@ -148,3 +147,4 @@ Threats | Specify threats upon which default action should not be taken when det
 
 - [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
+
