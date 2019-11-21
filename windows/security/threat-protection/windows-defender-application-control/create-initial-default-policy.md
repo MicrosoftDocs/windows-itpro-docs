@@ -52,13 +52,11 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
 
 1. Initialize variables that you will use.
 
-    > [!NOTE]
-    > In the sample commands below, replace the string "{InsertPolicyID}" with the actual PolicyID GUID (including braces **{ }**) found in your policy XML file.
-
    ```powershell
+   $PolicyPath=$env:userprofile+"\Desktop\"
    $PolicyName="FixedWorkloadPolicy_Audit"
-   $WDACPolicy=$env:userprofile+"\Desktop\"+$PolicyName+".xml"
-   $WDACPolicyBin=$env:userprofile+"\Desktop\"+$PolicyName+"_{InsertPolicyID}.bin"
+   $WDACPolicy=$PolicyPath+$PolicyName+".xml"
+   $WDACPolicyBin=$PolicyPath+$PolicyName+".bin"
 
 2. Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) to create a new WDAC policy by scanning the system for installed applications:
 
