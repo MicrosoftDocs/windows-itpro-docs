@@ -144,7 +144,7 @@ The Microsoft Data Management Service routes data back to our secure cloud stora
 
 Solutions like Desktop Analytics or Microsoft Defender Advanced Threat Protection need Windows devices to reach diagnostics endpoints to enable organizations leverage solutions based on diagnostics data. These solutions leverage Windows components like the Connected User Experiences and Telemetry service, Windows Defender Advanced Threat Protection service, Windows Error Reporting, and Online Crash Analysis.
 
-For a complete list of diagnostics endpoints leveraged by Desktop Analytics, see [here](https://docs.microsoft.com/configmgr/desktop-analytics/enable-data-sharing).
+For a complete list of diagnostics endpoints leveraged by Desktop Analytics, see [Enable data sharing for Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/enable-data-sharing).
 For a complete list of diagnostics endpoints leveraged by Microsoft Defender Advanced Threat Protection, see [here](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 The following table defines the endpoints for Connected User Experiences and Telemetry component:
