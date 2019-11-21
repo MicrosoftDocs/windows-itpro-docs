@@ -184,10 +184,9 @@ You can take the following actions to increase the overall security score of you
 * Turn on  Microsoft Defender AG on compatible machines
 * Turn on managed mode
 
-
 For more information, see [Microsoft Defender Application Guard overview](../windows-defender-application-guard/wd-app-guard-overview.md).
 
-### Windows  Defender SmartScreen optimization
+### Windows Defender SmartScreen optimization
 
 A well-configured machine complies to a minimum baseline configuration setting. This tile shows you a list of actions to apply on endpoints to meet the minimum baseline configuration setting for Microsoft Defender SmartScreen.
 
@@ -202,22 +201,22 @@ A well-configured machine complies to a minimum baseline configuration setting. 
 The following settings must be configured with the following settings:
 
 * Check apps and files: **Warn** or **Block**
-* SmartScreen for Microsoft Edge: **Warn** or **Block**
-* SmartScreen for Microsoft store apps: **Warn** or **Off**
+* Microsoft Defender SmartScreen for Microsoft Edge: **Warn** or **Block**
+* Microsoft Defender SmartScreen for Microsoft store apps: **Warn** or **Off**
 
 You can take the following actions to increase the overall security score of your organization:
 
 - Set **Check app and files** to **Warn** or **Block**
-- Set **SmartScreen for Microsoft Edge** to **Warn** or **Block**
-- Set **SmartScreen for Microsoft store apps** to **Warn** or **Off**
+- Set **Windows Defender SmartScreen for Microsoft Edge** to **Warn** or **Block**
+- Set **Windows Defender SmartScreen for Microsoft store apps** to **Warn** or **Off**
 
 For more information, see [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md).
 
 * Set **Check app and files** to **Warn** or **Block**
-* Set **SmartScreen for Microsoft Edge** to **Warn** or **Block**
-* Set **SmartScreen for Microsoft store apps** to **Warn** or **Off**
+* Set **Windows Defender SmartScreen for Microsoft Edge** to **Warn** or **Block**
+* Set **Windows Defender SmartScreen for Microsoft store apps** to **Warn** or **Off**
 
-For more information, see [Microsoft Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md).
+For more information, see [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md).
 
 ### Windows Defender Firewall optimization
 

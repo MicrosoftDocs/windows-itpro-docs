@@ -602,9 +602,9 @@
 #### [Family options](windows-defender-security-center/wdsc-family-options.md)
 
 
-### [SmartScreen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
-#### [SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
-#### [Set up and use SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
+### [Windows Defender SmartScreen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
+#### [Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
+#### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
 
 
 ### [Windows Defender Device Guard: virtualization-based security and WDAC](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)

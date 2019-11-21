@@ -34,7 +34,7 @@ With Windows 10, version 1809, Microsoft is also releasing a Microsoft MDM secur
 
 The MDM security baseline includes policies that cover the following areas:
 
-- Microsoft inbox security technology (not deprecated) such as Bitlocker, Smartscreen, and DeviceGuard (virtual-based security), ExploitGuard, Defender, and Firewall
+- Microsoft inbox security technology (not deprecated) such as Bitlocker, Windows Defender Smartscreen, and DeviceGuard (virtual-based security), ExploitGuard, Defender, and Firewall
 - Restricting remote access to devices
 - Setting credential requirements for passwords and PINs
 - Restricting use of legacy technology
