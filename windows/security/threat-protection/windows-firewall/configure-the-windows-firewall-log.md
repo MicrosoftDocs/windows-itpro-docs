@@ -55,5 +55,5 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
     6.  Click **OK** twice.
 
-**Troubleshooting Slow Log Ingestion**
+### Troubleshooting Slow Log Ingestion
     If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this will result in more resource usage due to the increases resource usage for log rotation. 
