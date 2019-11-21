@@ -32,14 +32,14 @@ You can use **Local Group Policy Editor** to enable and configure Windows Defend
 
 To enable and configure always-on protection:
 
-1. Open **Local Group Policy Editor**.
+1. Open **Local Group Policy Editor**. To do this:  
     1. In your Windows 10 taskbar search box, type **gpedit**.
     2. Under **Best match**, click **Edit group policy** to launch **Local Group Policy Editor**.
 ![GPEdit taskbar search result](images/gpedit-search.png)
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus**. 
 ![Windows Defender Antivirus](images/gpedit-windows-defender-antivirus.png)
-3. Configure the Windows Defender Antivirus antimalware service policy settings.
-    1. Double-click the policy setting as specified in the **Setting** column of the following table:
+3. Configure the Windows Defender Antivirus antimalware service policy settings. To do this:  
+    1. In the **Windows Defender Antivirus** details pane on right, double-click the policy setting to configure, as specified in the following table:
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|
@@ -49,10 +49,10 @@ To enable and configure always-on protection:
     2. Configure the setting as appropriate, and click **OK**.
     3. Repeat the previous steps for each setting in the table.
 
-4. Configure the Windows Defender Antivirus real-time protection policy settings.
+4. Configure the Windows Defender Antivirus real-time protection policy settings. To do this:  
     1. In the **Windows Defender Antivirus** details pane, double-click **Real-time Protection**. Or, from the **Windows Defender Antivirus** tree on left pane, click **Real-time Protection**.
     ![Windows Defender Antivirus Real-time Protection options](images/gpedit-real-time-protection.png)
-    2. In the **Real-time Protection** details pane, double-click the policy setting as specified in the **Setting** column of the following table:
+    2. In the **Real-time Protection** details pane, double-click the policy setting to configure, as specified in the following table:  
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|
@@ -67,11 +67,11 @@ To enable and configure always-on protection:
     3. Configure the setting as appropriate, and click **OK**.
     4. Repeat the previous steps for each setting in the table.
 
-5. Configure the Windows Defender Antivirus scanning policy setting. 
+5. Configure the Windows Defender Antivirus scanning policy setting. To do this:  
     1. From the **Windows Defender Antivirus** tree on left pane, click **Scan**.
     ![Windows Defender Antivirus Scan options](images/gpedit-windows-defender-antivirus-scan.png)
 
-    2. In the **Scan** details pane, double-click the policy setting as specified in the **Setting** column of the following table:
+    2. In the **Scan** details pane, double-click the policy setting, as specified in the following table:
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|    
