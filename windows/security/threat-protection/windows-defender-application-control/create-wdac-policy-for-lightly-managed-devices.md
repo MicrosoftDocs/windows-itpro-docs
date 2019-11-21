@@ -171,7 +171,7 @@ In order to minimize user productivity impact, Alice has defined a policy that m
   - Use signed WDAC policies which allow authorized signed supplemental policies only.
   - Use a restrictive audit mode policy to audit app usage and augment vulnerability detection.
 - **FilePath rules**<br>
-    See [more information about filepath rules](select-types-of-rules-to-create.md#More-information-about-filepath-rules)
+    See [more information about filepath rules](select-types-of-rules-to-create.md#more-information-about-filepath-rules)
 
     Possible mitigations:
   - Limit who can elevate to administrator on the device.
