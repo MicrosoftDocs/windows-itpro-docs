@@ -23,7 +23,7 @@ ms.date: 11/15/2019
 -   Windows 10
 -   Windows Server 2016 and above
 
-When creating policies for use with Windows Defender Application Control (WDAC), it is recommended to start from an existing base policy and then add or remove rules to build your own custom policy XML files. Windows includes several example policies which can be used or organizations which use the Device Guard Signing Service can download a starter policy from that service.
+When creating policies for use with Windows Defender Application Control (WDAC), it is recommended to start from an existing base policy and then add or remove rules to build your own custom policy XML files. Windows includes several example policies which can be used, or organizations which use the Device Guard Signing Service can download a starter policy from that service.
 
 ## Example Base Policies
 
