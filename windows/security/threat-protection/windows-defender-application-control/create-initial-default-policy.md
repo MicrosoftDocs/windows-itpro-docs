@@ -50,18 +50,20 @@ You can remove or disable such software on the reference computer.
 
 To create a WDAC policy, copy each of the following commands into an elevated Windows PowerShell session, in order:
 
-1. Initialize variables that you will use. The following example commands use **InitialScan.xml** and **WDACPolicy.bin** for the names of the files that will be created:
+1. Initialize variables that you will use.
 
-   `$CIPolicyPath=$env:userprofile+"\Desktop\"`
+    > [!NOTE]
+    > In the sample commands below, replace the string "{InsertPolicyID}" with the actual PolicyID GUID (including braces **{ }**) found in your policy XML file.
 
-   `$InitialCIPolicy=$CIPolicyPath+"InitialScan.xml"`
-
-   `$CIPolicyBin=$CIPolicyPath+"WDACPolicy.bin"`
+   ```powershell
+   $PolicyName="FixedWorkloadPolicy_Audit"
+   $WDACPolicy=$env:userprofile+"\Desktop\"+$PolicyName+".xml"
+   $WDACPolicyBin=$env:userprofile+"\Desktop\"+$PolicyName+"_{InsertPolicyID}.bin"
 
 2. Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) to create a new WDAC policy by scanning the system for installed applications:
 
    ```powershell
-   New-CIPolicy -Level PcaCertificate -FilePath $InitialCIPolicy –UserPEs 3> CIPolicyLog.txt 
+   New-CIPolicy -Level PcaCertificate -FilePath $WDACPolicy –UserPEs 3> CIPolicyLog.txt 
    ```
 
    > [!Note]
@@ -77,10 +79,10 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
 3. Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
 
    ```powershell
-   ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin
+   ConvertFrom-CIPolicy $WDACPolicy $WDACPolicyBin
    ```
 
-After you complete these steps, the WDAC binary file (WDACPolicy.bin) and original .xml file (InitialScan.xml) will be available on your desktop. You can use the binary file as a WDAC policy or sign it for additional security.
+After you complete these steps, the WDAC binary file ($WDACPolicyBin) and original .xml file ($WDACPolicy) will be available on your desktop. You can use the binary file as a WDAC policy or sign it for additional security.
 
 > [!NOTE]
 > We recommend that you keep the original .xml file of the policy for use when you need to merge the WDAC policy with another policy or update its rule options. Alternatively, you would have to create a new policy from a new scan for servicing. For more information about how to merge WDAC policies, see [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md).
