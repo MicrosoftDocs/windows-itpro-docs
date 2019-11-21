@@ -27,7 +27,8 @@ ms.date: 05/03/2018
 -   Windows 10
 -   Windows Server 2016 and above
 
-This section outlines the process to create a WDAC policy with Windows PowerShell. 
+This section outlines the process to create a WDAC policy for fixed-workload devices within an organization. Fixed-workload devices tend to be dedicated to a specific functional purpose and share common configuration attributes with other devices servicing the same functional role. Examples of fixed-workload devices may include Active Directory Domain Controllers, Secure Admin Workstations, pharmaceutical drug-mixing equipment, manufacturing devices, cash registers, ATMs, etc...
+
 For this example, you must initiate variables to be used during the creation process or use the full file paths in the command. 
 Then create the WDAC policy by scanning the system for installed applications. 
 The policy file is converted to binary format when it gets created so that Windows can interpret it.
