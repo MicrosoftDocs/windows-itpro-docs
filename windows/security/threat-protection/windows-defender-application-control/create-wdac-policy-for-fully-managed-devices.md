@@ -134,30 +134,30 @@ Alice has defined a policy for Lamna's fully-managed devices that makes some tra
 - **Users with administrative access**<br>
     Although applying to fewer users, Lamna still allows some IT staff to log in to its fully-managed devices as administrator. This allows these admin users (or malware running with the user's privileges) to modify or remove altogether the WDAC policy applied on the device. Additionally, administrators can configure any app they wish to operate as a managed installer which would allow them to gain persistent app authorization for whatever apps or binaries they wish.
 
-    Possible mitigations:
+   Possible mitigations:
   - Use signed WDAC policies and UEFI BIOS access protection to prevent tampering of WDAC policies.
   - Create and deploy signed catalog files as part of the app deployment process in order to remove the requirement for managed installer.
   - Use device attestation to detect the configuration state of WDAC at boot time and use that information to condition access to sensitive corporate resources.
 - **Unsigned policies**<br>
     Unsigned policies can be replaced or removed without consequence by any process running as administrator. Unsigned base policies that also enable supplemental policies can have their "circle-of-trust" altered by any unsigned supplemental policy.
 
-    Existing mitigations applied:
+   Existing mitigations applied:
   - Limit who can elevate to administrator on the device.
 
-    Possible mitigations:
+   Possible mitigations:
   - Use signed WDAC policies and UEFI BIOS access protection to prevent tampering of WDAC policies.
 - **Managed installer**<br>
     See [security considerations with managed installer](use-windows-defender-application-control-with-managed-installer.md#Security-considerations-with-managed-installer)
 
-    Existing mitigations applied:
+   Existing mitigations applied:
   - Limit who can elevate to administrator on the device.
 
-    Possible mitigations:
+   Possible mitigations:
   - Create and deploy signed catalog files as part of the app deployment process in order to remove the requirement for managed installer.
 - **Supplemental policies**<br>
     Supplemental policies are designed to relax the associated base policy. Additionally allowing unsigned policies allows any administrator process to expand the "circle-of-trust" defined by the base policy without restriction.
 
-    Possible mitgations:
+   Possible mitigations:
   - Use signed WDAC policies which allow authorized signed supplemental policies only.
   - Use a restrictive audit mode policy to audit app usage and augment vulnerability detection.
 
