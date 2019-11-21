@@ -124,13 +124,13 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
    - Next, if you aren't sure what value to use for the `RegistrarPool` parameter in your environment, you can get the value from an existing Skype for Business user using this cmdlet (for example, <em>alice@contoso.com</em>):
 
        ```PowerShell
-       (Get-CsTenant).TenantPoolExtension
+       Get-CsOnlineUser -Identity 'alice@contoso.com' | fl registrarpool
        ```
        OR by setting a variable
         
        ```PowerShell
-       $strRegistrarPool = (Get-CsTenant).TenantPoolExtension
-       $strRegistrarPool = $strRegistrarPool[0].Substring($strRegistrarPool[0].IndexOf(':') + 1)
+	$strRegistrarPool = Get-CsOnlineUser -Identity 'alice@contoso.com' | fl registrarpool | out-string
+	$strRegistrarPool = $strRegistrarPool.Substring($strRegistrarPool.IndexOf(':') + 2)
        ```
         
    - Enable the Surface Hub account with the following cmdlet:
