@@ -16,25 +16,27 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Enable and configure Windows Defender Antivirus protection capabilities
+# Enable and configure Windows Defender Antivirus always-on protection in Group Policy
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Windows Defender Antivirus protection capabilities include real-time protection, heuristics, and other always-on Windows Defender Antivirus monitoring features, which identify malware based on known suspicious and malicious activities.
+Always-on protection consists of real-time protection, behavior monitoring, and heuristics to identify malware based on known suspicious and malicious activities.
 
 These activities include events, such as processes making unusual changes to existing files, modifying or creating automatic startup registry keys and startup locations (also known as auto-start extensibility points, or ASEPs), and other changes to the file system or file structure.
 
-## Use Group Policy to enable and configure Windows Defender Antivirus protection
+## Enable and configure always-on protection in Group Policy
 
-You can use **Local Group Policy Editor** to enable and configure Windows Defender Antivirus policy settings.
+You can use **Local Group Policy Editor** to enable and configure Windows Defender Antivirus always-on protection settings.
+
+To enable and configure always-on protection:
 
 1. Open **Local Group Policy Editor**.
     1. In your Windows 10 taskbar search box, type **gpedit**.
     2. Under **Best match**, click **Edit group policy** to launch **Local Group Policy Editor**.
 ![GPEdit taskbar search result](images/gpedit-search.png)
-2. In **Local Group Policy Editor** right pane, expand the tree to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus**. 
+2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus**. 
 ![Windows Defender Antivirus](images/gpedit-windows-defender-antivirus.png)
 3. Configure the Windows Defender Antivirus antimalware service policy settings.
     1. Double-click the policy setting as specified in the **Setting** column of the following table:
@@ -54,12 +56,12 @@ You can use **Local Group Policy Editor** to enable and configure Windows Defend
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|
-    | Monitor file and program activity on your computer | The Windows Defender Antivirus engine makes note of any file changes (file writes, such as moves, copies, or modifications) and general program activity (programs that are opened or running and that cause other programs to run) | Enabled |
-    | Scan all downloaded files and attachments | Downloaded files and attachments are automatically scanned. This operates in addition to the Windows Defender SmartScreen filter, which scans files before and during downloading | Enabled |
-    | Turn on process scanning whenever real-time protection is enabled | You can independently enable the Microsoft Defender Antivirus engine to scan running processes for suspicious modifications or behaviors. This is useful if you have temporarily disabled real-time protection and want to automatically scan processes that started while it was disabled | Enabled |
-    | Turn on behavior monitoring | The AV engine will monitor file processes, file and registry changes, and other events on your endpoints for suspicious and known malicious activity | Enabled |
-    | Turn on raw volume write notifications | Information about raw volume writes will be analyzed by behavior monitoring | Enabled |
-    | Define the maximum size of downloaded files and attachments to be scanned | You can define the size in kilobytes | Enabled |
+    | Monitor file and program activity on your computer | The Windows Defender Antivirus engine makes note of any file changes (file writes, such as moves, copies, or modifications) and general program activity (programs that are opened or running and that cause other programs to run). | Enabled |
+    | Scan all downloaded files and attachments | Downloaded files and attachments are automatically scanned. This operates in addition to the Windows Defender SmartScreen filter, which scans files before and during downloading. | Enabled |
+    | Turn on process scanning whenever real-time protection is enabled | You can independently enable the Microsoft Defender Antivirus engine to scan running processes for suspicious modifications or behaviors. This is useful if you have temporarily disabled real-time protection and want to automatically scan processes that started while it was disabled. | Enabled |
+    | Turn on behavior monitoring | The AV engine will monitor file processes, file and registry changes, and other events on your endpoints for suspicious and known malicious activity. | Enabled |
+    | Turn on raw volume write notifications | Information about raw volume writes will be analyzed by behavior monitoring. | Enabled |
+    | Define the maximum size of downloaded files and attachments to be scanned | You can define the size in kilobytes. | Enabled |
     | Configure monitoring for incoming and outgoing file and program activity | Specify whether monitoring should occur on incoming, outgoing, both, or neither direction. This is relevant for Windows Server installations where you have defined specific servers or Server Roles that see large amounts of file changes in only one direction and you want to improve network performance. Fully updated endpoints (and servers) on a network will see little performance impact irrespective of the number or direction of file changes. | Enabled (both directions) |
 
     3. Configure the setting as appropriate, and click **OK**.
@@ -73,13 +75,13 @@ You can use **Local Group Policy Editor** to enable and configure Windows Defend
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|    
-    | Turn on heuristics | Heuristic protection will disable or block suspicious activity immediately before the Windows Defender Antivirus engine is asked to detect the activity | Enabled |
-    
+    | Turn on heuristics | Heuristic protection will disable or block suspicious activity immediately before the Windows Defender Antivirus engine is asked to detect the activity. | Enabled |
+
     3. Configure the setting as appropriate, and click **OK**.
 6. Close **Local Group Policy Editor**.
 
 
-## Disable real-time protection
+## Disable real-time protection in Group Policy
 > [!WARNING]
 > Disabling real-time protection drastically reduces the protection on your endpoints and is not recommended.
 
@@ -89,7 +91,7 @@ The main real-time protection capability is enabled by default, but you can disa
     1. In your Windows 10 taskbar search box, type **gpedit**.
     2. Under **Best match**, click **Edit group policy** to launch **Local Group Policy Editor**.
 
-2.  In **Local Group Policy Editor** right pane, expand the tree to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **Real-time Protection**.
+2.  In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **Real-time Protection**.
 
 3. Double-click **Turn off real-time protection**.
 ![Turn off real-time protection](images/gpedit-turn-off-real-time-protection.png)
