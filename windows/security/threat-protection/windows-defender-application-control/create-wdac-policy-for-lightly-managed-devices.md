@@ -2,6 +2,7 @@
 title: Create a WDAC policy for lightly-managed devices (Windows 10)
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
 keywords: whitelisting, security, malware
+ms.topic: allow-listing
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -167,7 +168,7 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 - **Supplemental policies**<br>
     Supplemental policies are designed to relax the associated base policy. Additionally allowing unsigned policies allows any administrator process to expand the "circle-of-trust" defined by the base policy without restriction.
 
-    Possible mitgations:
+    Possible mitigations:
   - Use signed WDAC policies which allow authorized signed supplemental policies only.
   - Use a restrictive audit mode policy to audit app usage and augment vulnerability detection.
 - **FilePath rules**<br>
