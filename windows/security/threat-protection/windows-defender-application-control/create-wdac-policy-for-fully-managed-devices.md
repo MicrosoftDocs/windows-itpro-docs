@@ -2,6 +2,7 @@
 title: Create a WDAC policy for fully-managed devices (Windows 10)
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
 keywords: whitelisting, security, malware
+ms.topic: allow-listing
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -61,7 +62,7 @@ Based on the above, Alice defines the pseudo-rules for the policy:
 2. **"MEMCM works”** rules which includes signer and hash rules for MEMCM components to properly function
 3. **Allow Managed Installer** (MEMCM and *LamnaITInstaller.exe* configured as a managed installer)
 
-The critical differences between this set of pseudo-rules and those defined for Lamna's [lightly-managed devices](create-wdac-policy-for-lightly-managed-devices.md#Define-the-"circle-of-trust"-for-lightly-managed-devices) are:
+The critical differences between this set of pseudo-rules and those defined for Lamna's [lightly-managed devices](create-wdac-policy-for-lightly-managed-devices.md#define-the-circle-of-trust-for-lightly-managed-devices) are:
 
 - Removal of the Intelligent Security Graph (ISG) option; and
 - Removal of filepath rules.
@@ -147,7 +148,7 @@ Alice has defined a policy for Lamna's fully-managed devices that makes some tra
    Possible mitigations:
   - Use signed WDAC policies and UEFI BIOS access protection to prevent tampering of WDAC policies.
 - **Managed installer**<br>
-    See [security considerations with managed installer](use-windows-defender-application-control-with-managed-installer.md#Security-considerations-with-managed-installer)
+    See [security considerations with managed installer](use-windows-defender-application-control-with-managed-installer.md#security-considerations-with-managed-installer)
 
    Existing mitigations applied:
   - Limit who can elevate to administrator on the device.
