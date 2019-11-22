@@ -499,6 +499,11 @@ Before you continue with the deployment, validate your deployment progress by re
 
 You need to verify the AD FS service has properly enrolled for an enrollment agent certificate template.  You can verify this is a variety ways, depending on if your service account is a normal user account or if the service account is a group managed service account.
 
+> [!IMPORTANT]
+> if after following the previous steps you are unable to validate that the devices are, in fact, being registrered automatically, there is a group Policy at:
+> Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Device Registration -> "Register Domain Joined Computers As Devices", set it to enabled.
+> and the registration will happens automatically.
+
 ### Event Logs
 
 Use the event logs on the AD FS service to confirm the service account enrolled for an enrollment agent certificate.  First, look for the AD FS event ID 443 that confirms certificate enrollment cycle has finished.  Once confirmed the AD FS certificate enrollment cycle completed review the CertificateLifecycle-User event log.  In this event log, look for event ID 1006, which indicates a new certificate was installed.  Details of the event log should show
