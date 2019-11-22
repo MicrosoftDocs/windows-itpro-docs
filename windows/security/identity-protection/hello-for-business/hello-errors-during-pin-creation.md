@@ -46,21 +46,21 @@ If the error occurs again, check the error code against the following table to s
 | 0x80090005 | NTE\_BAD\_DATA                                                     | Unjoin the device from Azure AD and rejoin. |
 | 0x8009000F | The container or key already exists.                               | Unjoin the device from Azure AD and rejoin. |
 | 0x80090011 | The container or key was not found.                                | Unjoin the device from Azure AD and rejoin. |
-| 0x80090029 | TPM is not set up.                                                 | Sign on with an administrator account. Click Start, type "tpm.msc", and select tpm.msc Microsoft Common Console Document. In the Actions pane, select Prepare the TPM. |
+| 0x80090029 | TPM is not set up.                                                 | Sign on with an administrator account. Click **Start**, type "tpm.msc", and select **tpm.msc Microsoft Common Console Document**. In the **Actions** pane, select **Prepare the TPM**. |
 | 0x8009002A | NTE\_NO\_MEMORY                                                    | Close programs which are taking up memory and try again. |
-| 0x80090031 | NTE\_AUTHENTICATION\_IGNORED                                       | Reboot the device. If the error occurs again after rebooting, reset the TPM or run Clear-TPM |
+| 0x80090031 | NTE\_AUTHENTICATION\_IGNORED                                       | Reboot the device. If the error occurs again after rebooting, [reset the TPM](https://go.microsoft.com/fwlink/p/?LinkId=619969) or run [Clear-TPM](https://go.microsoft.com/fwlink/p/?LinkId=629650). |
 | 0x80090035 | Policy requires TPM and the device does not have TPM.              | Change the Windows Hello for Business policy to not require a TPM. |
 | 0x80090036 | User canceled an interactive dialog.                               | User will be asked to try again. |
 | 0x801C0003 | User is not authorized to enroll.                                  | Check if the user has permission to perform the operation​. |
-| 0x801C000E | Registration quota reached.                                        | Unjoin some other device that is currently joined using the same account or increase the maximum number of devices per user. |
+| 0x801C000E | Registration quota reached.                                        | Unjoin some other device that is currently joined using the same account or [increase the maximum number of devices per user](https://go.microsoft.com/fwlink/p/?LinkId=626933). |
 | 0x801C000F | Operation successful, but the device requires a reboot.            | Reboot the device.               |
 | 0x801C0010 | The AIK certificate is not valid or trusted.                       | Sign out and then sign in again. |
 | 0x801C0011 | The attestation statement of the transport key is invalid.         | Sign out and then sign in again. |
 | 0x801C0012 | Discovery request is not in a valid format.                        | Sign out and then sign in again. |
 | 0x801C0015 | The device is required to be joined to an Active Directory domain. | ​Join the device to an Active Directory domain. |
-| 0x801C0016 | The federation provider configuration is empty                     | Go to http://clientconfig.microsoftonline-p.net/FPURL.xml and verify that the file is not empty. |
-| 0x801C0017 | ​The federation provider domain is empty                            | Go to http://clientconfig.microsoftonline-p.net/FPURL.xml and verify that the FPDOMAINNAME element is not empty. |
-| 0x801C0018 | The federation provider client configuration URL is empty          | Go to http://clientconfig.microsoftonline-p.net/FPURL.xml and verify that the CLIENTCONFIG element contains a valid URL. |
+| 0x801C0016 | The federation provider configuration is empty                     | Go to http://clientconfig.microsoftonline-p.net/FPURL.xml and verify that the file is not empty. |
+| 0x801C0017 | ​The federation provider domain is empty                            | Go to http://clientconfig.microsoftonline-p.net/FPURL.xml and verify that the FPDOMAINNAME element is not empty. |
+| 0x801C0018 | The federation provider client configuration URL is empty          | Go to http://clientconfig.microsoftonline-p.net/FPURL.xml and verify that the CLIENTCONFIG element contains a valid URL. |
 | 0x801C03E9 | Server response message is invalid                                 | Sign out and then sign in again. |
 | 0x801C03EA | Server failed to authorize user or device.                         | Check if the token is valid and user has permission to register Windows Hello for Business keys. |
 | 0x801C03EB | Server response http status is not valid                           | Sign out and then sign in again. |
@@ -68,7 +68,7 @@ If the error occurs again, check the error code against the following table to s
 | 0x801C03ED | Multi-factor authentication is required for a 'ProvisionKey' operation, but was not performed. <br><br> -or- <br><br> Token was not found in the Authorization header. <br><br> -or- <br><br> Failed to read one or more objects. <br><br> -or- <br><br> The request sent to the server was invalid. | Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Azure Active Directory (Azure AD) and rejoin.
 | 0x801C03EE | Attestation failed.                                                | Sign out and then sign in again. |
 | 0x801C03EF | The AIK certificate is no longer valid.                            | Sign out and then sign in again. |
-| 0x801C03F2 | Windows Hello key registration failed.                             | ERROR_BAD_DIRECTORY_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue refer to Duplicate Attributes Prevent Dirsync.
+| 0x801C03F2 | Windows Hello key registration failed.                             | ERROR\_BAD\_DIRECTORY\_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue refer to [Duplicate Attributes Prevent Dirsync](https://docs.microsoft.com/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync).
 | 0x801C044D | Authorization token does not contain device ID.                    | Unjoin the device from Azure AD and rejoin. |
 |            | Unable to obtain user token.                                       | Sign out and then sign in again. Check network and credentials. |
 | 0x801C044E | Failed to receive user credentials input.                          | Sign out and then sign in again. |
