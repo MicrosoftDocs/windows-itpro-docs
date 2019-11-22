@@ -502,7 +502,7 @@ You need to verify the AD FS service has properly enrolled for an enrollment age
 > [!IMPORTANT]
 > After following the previous steps, if you are unable to validate that the devices are, in fact, being registered automatically, there is a Group Policy at:
 > Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Device Registration -> "Register Domain Joined Computers As Devices", set it to enabled.
-> and the registration will happens automatically.
+> and the registration will happen automatically.
 
 ### Event Logs
 
