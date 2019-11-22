@@ -1,6 +1,6 @@
 ---
 title: Manage Windows Defender  in your business
-description: Learn how to use Group Policy, Configuration Manager, PowerShell, WMI, Intune, and the comman line to manage Windows Defender AV
+description: Learn how to use Group Policy, Configuration Manager, PowerShell, WMI, Intune, and the command line to manage Windows Defender AV
 keywords: group policy, gpo, config manager, sccm, scep, powershell, wmi, intune, defender, antivirus, antimalware, security, protection
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
