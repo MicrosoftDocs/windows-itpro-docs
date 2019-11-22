@@ -173,7 +173,7 @@ manager: dansimp
 
 <hr/>
 
->[!NOTE]
+> [!NOTE]
 >To find data formats (and other policy-related details), see [Policy DDF file](https://docs.microsoft.com/windows/client-management/mdm/policy-ddf-file). 
 
 <!--Policy-->
@@ -3701,4 +3701,3 @@ Footnotes:
 -   6 - Added in Windows 10, version 1903.
 
 <!--/Policies-->
-
