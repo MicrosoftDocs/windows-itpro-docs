@@ -2,6 +2,7 @@
 title: Example WDAC base policies (Windows 10)
 description: When creating a WDAC policy for an organization, start from one of the many available example base policies.
 keywords: whitelisting, security, malware
+ms.topic: allow-listing
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
