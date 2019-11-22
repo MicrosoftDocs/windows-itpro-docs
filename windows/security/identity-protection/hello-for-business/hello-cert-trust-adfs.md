@@ -500,7 +500,7 @@ Before you continue with the deployment, validate your deployment progress by re
 You need to verify the AD FS service has properly enrolled for an enrollment agent certificate template.  You can verify this is a variety ways, depending on if your service account is a normal user account or if the service account is a group managed service account.
 
 > [!IMPORTANT]
-> if after following the previous steps you are unable to validate that the devices are, in fact, being registrered automatically, there is a group Policy at:
+> After following the previous steps, if you are unable to validate that the devices are, in fact, being registered automatically, there is a Group Policy at:
 > Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Device Registration -> "Register Domain Joined Computers As Devices", set it to enabled.
 > and the registration will happens automatically.
 
