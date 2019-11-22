@@ -1,5 +1,5 @@
 ---
-title: "Surface Hub 2S on-demand adoption and training videos"
+title: "Surface Hub 2S adoption and training videos"
 description: "This page contains on-demand training for Surface Hub 2S."
 keywords: separate values with commas
 ms.prod: surface-hub
@@ -13,7 +13,7 @@ ms.date: 11/04/2019
 ms.localizationpriority: Medium
 ---
 
-# Surface Hub 2S on-demand adoption and training videos
+# Surface Hub 2S adoption and training videos
 
 This page contains comprehensive training for Surface Hub 2S, available on demand.
 
