@@ -1,5 +1,5 @@
 ---
-title: Considerations for Surface and System Center Configuration Manager (Surface)
+title: Considerations for Surface and Microsoft Endpoint Configuration Manager
 description: The management and deployment of Surface devices with Configuration Manager is fundamentally the same as any other PC; this article describes scenarios that may require additional considerations.
 keywords: manage, deployment, updates, driver, firmware
 ms.prod: w10
@@ -11,25 +11,25 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/24/2019
+ms.date: 11/22/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Considerations for Surface and System Center Configuration Manager
+# Considerations for Surface and Microsoft Endpoint Configuration Manager
 
-Fundamentally, management and deployment of Surface devices with System Center Configuration Manager (SCCM) is the same as the management and deployment of any other PC. Like other PCs, a deployment to Surface devices includes importing drivers, importing a Windows image, preparing a deployment task sequence, and then deploying the task sequence to a collection. After deployment, Surface devices are like any other Windows client – to publish apps, settings, and policies, you use the same process that you would use for any other device.
+Fundamentally, management and deployment of Surface devices with Endpoint Configuration Manager (formerly known as System Center Configuration Manager or SCCM) is the same as the management and deployment of any other PC. Like other PCs, a deployment to Surface devices includes importing drivers, importing a Windows image, preparing a deployment task sequence, and then deploying the task sequence to a collection. After deployment, Surface devices are like any other Windows client – to publish apps, settings, and policies, you use the same process that you would use for any other device.
 
-You can find more information about how to use Configuration Manager to deploy and manage devices in the [Documentation for System Center Configuration Manager](https://docs.microsoft.com/sccm/index).
+You can find more information about how to use Configuration Manager to deploy and manage devices in the [Documentation for Endpoint Configuration Manager](https://docs.microsoft.com/sccm/index).
 
 Although the deployment and management of Surface devices is fundamentally the same as any other PC, there are some scenarios that may require additional considerations or steps. This article provides descriptions and guidance for these scenarios; the solutions documented in this article may apply to other devices and manufacturers as well.
 
 >[!NOTE]
->For management of Surface devices it is recommended that you use the Current Branch of System Center Configuration Manager.
+>For management of Surface devices it is recommended that you use the Current Branch of Endpoint Configuration Manager.
 
 ## Support for Surface Pro X
-Beginning in version 1802, SCCM includes client management support for Surface Pro X. Note however that running the SCCM agent on Surface Pro X may accelerate battery consumption. In addition, SCCM operating system deployment is not supported on Surface Pro X. For more information, refer to:
-- [What's new in version 1802 of System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1802)
+Beginning in version 1802, Endpoint Configuration Manager includes client management support for Surface Pro X. Note however that running the Endpoint Configuration Manager agent on Surface Pro X may accelerate battery consumption. In addition, operating system deployment using Endpoint Configuration Manager is not supported on Surface Pro X. For more information, refer to:
+- [What's new in version 1802 of System Center Configuration Manager](https://docs.microsoft.com/Endpoint Configuration Manager/core/plan-design/changes/whats-new-in-version-1802)
 - [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
 
 ## Updating Surface device drivers and firmware
