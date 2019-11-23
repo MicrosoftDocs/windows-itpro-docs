@@ -37,7 +37,7 @@ You can create a Group Policy or mobile device management (MDM) policy that will
 The following table lists the Group Policy settings that you can configure for Windows Hello use in your workplace. These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.
 
 > [!NOTE]
-> Starting with Windows 10 version 1709, the location of the PIN complexity section of Group Policy is: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **PIN Complexity**.
+> Starting with Windows 10, version 1709, the location of the PIN complexity section of the Group Policy is: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **PIN Complexity**.
  
 <table>
 <tr>
