@@ -37,13 +37,13 @@ Microsoft Defender ATP supports non-persistent VDI session onboarding. There mig
 VDI machines can appear in MDATP portal as either:
 
 - Single entry for each machine.  
-Note that in this case, the machine name must be configured when the session is created, for example using an unattended answer file.
+Note that in this case, the *same* machine name must be configured when the session is created, for example using an unattended answer file.
 - Multiple entries for each machine - one for each session.
 
 The following steps will guide you through onboarding VDI machines and will highlight steps for single and multiple entries.
 
 >[!WARNING]
-> For environments where there are low resource configurations, the VDI boot proceedure might slow the Microsoft Defender ATP sensor onboarding. 
+> For environments where there are low resource configurations, the VDI boot procedure might slow the Microsoft Defender ATP sensor onboarding. 
 
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
