@@ -9,10 +9,11 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
+ms.custom: nextgen
 ---
 
 # Enable cloud-delivered protection
