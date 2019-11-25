@@ -1,5 +1,5 @@
 ---
-title: Plan for Windows Defender Application Control policy management  (Windows 10)
+title: Plan for Windows Defender Application Control policy management (Windows 10)
 description: Plan for Windows Defender Application Control policy management. 
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
