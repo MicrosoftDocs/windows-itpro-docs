@@ -128,4 +128,4 @@ You can also take the following actions on the rule from this page:
 - [Custom detections overview](overview-custom-detections.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the Advanced hunting query language](advanced-hunting-query-language.md)
-- [View and organize alerts](alerts-queue)
+- [View and organize alerts](alerts-queue.md)
