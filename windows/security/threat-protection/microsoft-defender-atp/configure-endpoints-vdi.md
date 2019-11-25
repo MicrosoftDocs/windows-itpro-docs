@@ -32,7 +32,7 @@ ms.date: 04/24/2018
 Microsoft Defender ATP supports non-persistent VDI session onboarding. There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
 - Instant early onboarding of a short-lived sessions, which must be onboarded to Microsoft Defender ATP prior to the actual provisioning.
-- Machine name are typically reused for new sessions.
+- The machine name is typically reused for new sessions.
 
 VDI machines can appear in MDATP portal as either:
 
