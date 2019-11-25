@@ -54,6 +54,7 @@ Windows Hello for Business on-premises deployments require a federation server f
 The AD FS role needs a server authentication certificate for the federation services, but you can use a certificate issued by your enterprise (internal) certificate authority.  The server authentication certificate should have the following names included in the certificate if you are requesting an individual certificate for each node in the federation farm:
 * Subject Name: The internal FQDN of the federation server (the name of the computer running AD FS)
 * Subject Alternate Name: Your federation service name, such as *fs.corp.contoso.com* (or an appropriate wildcard entry such as *.corp.contoso.com)
+* Subject Alternate Name: Your device registration service name, such as *enterpriseregistration.contoso.com*
 
 You configure your federation service name when you configure the AD FS role. You can choose any name, but that name must be different than the name of the server or host. For example, you can name the host server **adfs** and the federation service **fs**.  The FQDN of the host is adfs.corp.contoso.com and the FQDN of the federation service is fs.corp.contoso.com.
 
@@ -366,6 +367,10 @@ Active Directory Federation Server used for Windows Hello for Business certifica
 Approximately 60 days prior to enrollment agent certificate’s expiration, the AD FS service attempts to renew the certificate until it is successful.  If the certificate fails to renew, and the certificate expires, the AD FS server will request a new enrollment agent certificate.  You can view the AD FS event logs to determine the status of the enrollment agent certificate.
 
 ### Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service
+
+>[!NOTE]
+> For detailed information about Device Registration Service see [Configuring Device Registration](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn614658(v=ws.11)?redirectedfrom=MSDN)
+
 Now you will add the Service connection Point to ADFS device registration Service for your Active directory by running the following script:
 
 >[!TIP] 
@@ -387,7 +392,6 @@ $deSCP.CommitChanges()
 
 >[!NOTE]
 > You can save the modified script in notepad and save them as "add-scpadfs.ps1" and the way to run it is just navigating into the script path folder and running .\add-scpAdfs.ps1.
->
 
 ## Additional Federation Servers
 
