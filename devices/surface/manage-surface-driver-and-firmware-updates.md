@@ -41,7 +41,7 @@ For details about Group Policy for client configuration of WSUS or Windows Updat
 
 Surface driver and firmware updates are packaged as Windows Installer (MSI) files. To deploy these Windows Installer packages, you can use application deployment utilities such as the Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager. Such solutions provide the means for administrators to test and review updates before deploying them, and to centralize deployment. For each device, it is important to select the correct MSI file for the device and its operating system. For more information see [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
 
-For instructions on how to deploy updates by using System Center Configuration Manager, refer to [Deploy applications with Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications). For instructions on how to deploy updates by using MDT, see [Deploy a Windows 10 image using MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt).
+For instructions on how to deploy updates by using Endpoint Configuration Manager (formerly System Center Configuration Manager), refer to [Deploy applications with Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications). For instructions on how to deploy updates by using MDT, see [Deploy a Windows 10 image using MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt).
 
 > [!NOTE]
 > You can deploy applications separately from an operating system deployment through MDT by using a Post OS Installation task sequence.
