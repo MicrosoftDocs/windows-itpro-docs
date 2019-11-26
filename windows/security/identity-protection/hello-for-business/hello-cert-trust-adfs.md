@@ -368,7 +368,7 @@ Approximately 60 days prior to enrollment agent certificate’s expiration, the 
 
 ### Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service
 
->[!NOTE]
+> [!NOTE]
 > For detailed information about Device Registration Service see [Configuring Device Registration](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn614658(v=ws.11)?redirectedfrom=MSDN)
 
 Now you will add the Service connection Point to ADFS device registration Service for your Active directory by running the following script:
