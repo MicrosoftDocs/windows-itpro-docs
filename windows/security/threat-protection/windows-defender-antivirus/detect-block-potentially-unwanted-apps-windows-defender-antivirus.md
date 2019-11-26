@@ -9,8 +9,9 @@ ms.mktglfcycl: detect
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 audience: ITPro
 ms.date: 10/02/2018
 ms.reviewer: 
@@ -142,7 +143,7 @@ See [Troubleshoot event IDs](troubleshoot-windows-defender-antivirus.md) for det
 
 Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files which are currently blocked by PUA protection in Windows Defender Antivirus.
 
-## Related topics
+## Related articles
 
-- [Next gen protection](windows-defender-antivirus-in-windows-10.md)
+- [Next-generation protection](windows-defender-antivirus-in-windows-10.md)
 - [Configure behavioral, heuristic, and real-time protection](configure-protection-features-windows-defender-antivirus.md)

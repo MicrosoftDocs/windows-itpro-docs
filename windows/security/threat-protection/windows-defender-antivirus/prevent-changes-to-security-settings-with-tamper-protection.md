@@ -14,6 +14,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
+ms.custom: nextgen
 ---
 
 # Protect security settings with Tamper Protection

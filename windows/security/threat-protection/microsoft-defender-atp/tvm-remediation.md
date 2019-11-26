@@ -31,7 +31,13 @@ After your organization's cybersecurity weaknesses are identified and mapped to 
 You can lower down your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations.
 
 ## Navigate through your remediation options 
-You'll see your remediation options when you select one of the security recommendation blocks from your **Top security recommendations** widget in the dashboard. 
+You can access the remediation page in a few places in the portal:
+- Security recommendation flyout panel
+- Remediation in the navigation menu
+- Top remediation activities widget in the dashboard
+
+*Security recommendation flyout page*
+<br>You'll see your remediation options when you select one of the security recommendation blocks from your **Top security recommendations** widget in the dashboard. 
 1. From the flyout panel, you'll see the security recommendation details including your next steps. Click **Remediation options**.
 2. In the **Remediation options** page, select **Open a ticket in Intune (for AAD joined devices)**. 
 
@@ -43,12 +49,19 @@ You'll see your remediation options when you select one of the security recommen
 
 If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
 
+*Remediation in the navigation menu*
+1. Go to the Threat & Vulnerability Management navigation menu and select **Remediation** to open up the list of remediation activities and exceptions found in your organization. You can filter your view based on remediation type, machine remediation progress, and exception justification. If you want to see the remediation activities of applications which have reached their end-of-life, select **Software uninstall** from the **Remediation type** filter.  
+2. Select the remediation activity that you need to see or process.
+
+*Top remediation activities widget in the dashboard*
+1. Go to the Threat & Vulnerability Management dashboard and scroll down to the **Top remediation activities** widget. The list is sorted and prioritized based on what is listed in the **Top security recommendations**. 
+2. Select the remediation activity that you need to see or process.
+
 ## How it works
 
 When you submit a remediation request from Threat & Vulnerability Management, it kicks-off a remediation activity. 
 
 It creates a security task which will be tracked in Threat & Vulnerability Management **Remediation** page, and it also creates a remediation ticket in Microsoft Intune.
-
 
 The dashboard will show that status of your top remediation activities. Click any of the entries and it will take you to the **Remediation** page. You can mark the remediation activity as completed after the IT administration team remediates the task. 
 
