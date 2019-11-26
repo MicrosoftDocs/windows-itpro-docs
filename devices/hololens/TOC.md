@@ -1,4 +1,5 @@
 # [HoloLens overview](index.md)
+# [Release Notes](hololens-reelase-notes.md)
 # [Hololens status](hololens-status.md)
 
 # Get Started with HoloLens 2
