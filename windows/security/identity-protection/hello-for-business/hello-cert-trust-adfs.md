@@ -366,9 +366,12 @@ Active Directory Federation Server used for Windows Hello for Business certifica
 Approximately 60 days prior to enrollment agent certificate’s expiration, the AD FS service attempts to renew the certificate until it is successful.  If the certificate fails to renew, and the certificate expires, the AD FS server will request a new enrollment agent certificate.  You can view the AD FS event logs to determine the status of the enrollment agent certificate.
 
 ### Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service
+> [!NOTE]
+> Normally this script is not needed, as enabling Device Registration via the ADFS Management console already creates the objects. You can validate the SCP using the script below.
+
 Now you will add the Service connection Point to ADFS device registration Service for your Active directory by running the following script:
 
->[!TIP] 
+> [!TIP]
 > Make sure to change the $enrollmentService and $configNC variables before running the script.
 
 ```Powershell
