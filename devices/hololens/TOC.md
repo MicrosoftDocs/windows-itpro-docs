@@ -1,6 +1,4 @@
 # [HoloLens overview](index.md)
-# [Release Notes](hololens-release-notes.md)
-# [Hololens status](hololens-status.md)
 
 # Get Started with HoloLens 2
 ## [HoloLens 2 hardware](hololens2-hardware.md)
@@ -61,5 +59,7 @@
 ## [Known issues](hololens-known-issues.md)
 ## [Frequently asked questions](hololens-faq.md)
 
+# [Release Notes](hololens-release-notes.md)
+# [Hololens status](hololens-status.md)
 # [Give us feedback](hololens-feedback.md)
 # [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
