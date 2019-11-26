@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
@@ -31,7 +32,7 @@ See the [Endpoint Protection](https://docs.microsoft.com/sccm/protect/deploy-use
 For Microsoft Intune, consult the [Microsoft Intune library](https://docs.microsoft.com/intune/introduction-intune) and [Configure device restriction settings in Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
 
-## Related topics
+## Related articles
 
 - [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
