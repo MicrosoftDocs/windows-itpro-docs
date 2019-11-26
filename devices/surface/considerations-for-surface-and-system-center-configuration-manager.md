@@ -1,5 +1,5 @@
 ---
-title: Considerations for Surface and System Center Configuration Manager (Surface)
+title: Considerations for Surface and Microsoft Endpoint Configuration Manager
 description: The management and deployment of Surface devices with Configuration Manager is fundamentally the same as any other PC; this article describes scenarios that may require additional considerations.
 keywords: manage, deployment, updates, driver, firmware
 ms.prod: w10
@@ -11,32 +11,32 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/24/2019
+ms.date: 11/25/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Considerations for Surface and System Center Configuration Manager
+# Considerations for Surface and Microsoft Endpoint Configuration Manager
 
-Fundamentally, management and deployment of Surface devices with System Center Configuration Manager (SCCM) is the same as the management and deployment of any other PC. Like other PCs, a deployment to Surface devices includes importing drivers, importing a Windows image, preparing a deployment task sequence, and then deploying the task sequence to a collection. After deployment, Surface devices are like any other Windows client – to publish apps, settings, and policies, you use the same process that you would use for any other device.
+Fundamentally, management and deployment of Surface devices with Endpoint Configuration Manager (formerly known as System Center Configuration Manager or SCCM) is the same as the management and deployment of any other PC. Like other PCs, a deployment to Surface devices includes importing drivers, importing a Windows image, preparing a deployment task sequence, and then deploying the task sequence to a collection. After deployment, Surface devices are like any other Windows client – to publish apps, settings, and policies, you use the same process that you would use for any other device.
 
-You can find more information about how to use Configuration Manager to deploy and manage devices in the [Documentation for System Center Configuration Manager](https://docs.microsoft.com/sccm/index).
+You can find more information about how to use Configuration Manager to deploy and manage devices in the [Microsoft Endpoint Configuration Manager documentation](https://docs.microsoft.com/sccm/index).
 
 Although the deployment and management of Surface devices is fundamentally the same as any other PC, there are some scenarios that may require additional considerations or steps. This article provides descriptions and guidance for these scenarios; the solutions documented in this article may apply to other devices and manufacturers as well.
 
 >[!NOTE]
->For management of Surface devices it is recommended that you use the Current Branch of System Center Configuration Manager.
+>For management of Surface devices it is recommended that you use the Current Branch of Endpoint Configuration Manager.
 
 ## Support for Surface Pro X
-Beginning in version 1802, SCCM includes client management support for Surface Pro X. Note however that running the SCCM agent on Surface Pro X may accelerate battery consumption. In addition, SCCM operating system deployment is not supported on Surface Pro X. For more information, refer to:
-- [What's new in version 1802 of System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1802)
+Beginning in version 1802, Endpoint Configuration Manager includes client management support for Surface Pro X. Note however that running the Endpoint Configuration Manager agent on Surface Pro X may accelerate battery consumption. In addition, operating system deployment using Endpoint Configuration Manager is not supported on Surface Pro X. For more information, refer to:
+- [What's new in version 1802 of System Center Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/changes/whats-new-in-version-1802)
 - [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
 
 ## Updating Surface device drivers and firmware
 
 For devices that receive updates through Windows Update, drivers for Surface components – and even firmware updates – are applied automatically as part of the Windows Update process. For devices with managed updates, such as those updated through Windows Server Update Services (WSUS), the option to install drivers and firmware through Windows Update is not available. For these managed devices, the recommended driver management process is the deployment of driver and firmware updates using the Windows Installer (.msi) files, which are provided through the Microsoft Download Center. You can find a list of these downloads at [Download the latest firmware and drivers for Surface devices](https://technet.microsoft.com/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices).
 
-As .msi files, deployment of driver and firmware updates is performed in the same manner as deployment of an application. Instead of installing an application as would normally happen when an .msi file is run, the Surface driver and firmware .msi will apply the driver and firmware updates to the device. The single .msi file contains the driver and firmware updates required by each component of the Surface device. The updates for firmware are applied the next time the device reboots. You can read more about the .msi installation method for Surface drivers and firmware in [Manage Surface driver and firmware updates](https://technet.microsoft.com/itpro/surface/manage-surface-pro-3-firmware-updates). For more information about how to deploy applications with Configuration Manager, see [Packages and programs in System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
+As .msi files, deployment of driver and firmware updates is performed in the same manner as deployment of an application. Instead of installing an application as would normally happen when an .msi file is run, the Surface driver and firmware .msi will apply the driver and firmware updates to the device. The single .msi file contains the driver and firmware updates required by each component of the Surface device. The updates for firmware are applied the next time the device reboots. You can read more about the .msi installation method for Surface drivers and firmware in [Manage Surface driver and firmware updates](https://technet.microsoft.com/itpro/surface/manage-surface-pro-3-firmware-updates). For more information about how to deploy applications with Configuration Manager, see [Packages and programs in Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
 
 >[!NOTE]
 >Surface device drivers and firmware are signed with SHA-256, which is not natively supported by Windows Server 2008 R2. A workaround is available for Configuration Manager environments running on Windows Server 2008 R2 – for more information see [Can't import drivers into System Center Configuration Manager (KB3025419)](https://support.microsoft.com/kb/3025419).
@@ -47,25 +47,25 @@ The default mechanism that Configuration Manager uses to identify devices during
 
 To ensure that Surface devices using the same Ethernet adapter are identified as unique devices during deployment, you can instruct Configuration Manager to identify devices using another method. This other method could be the MAC address of the wireless network adapter or the System Universal Unique Identifier (System UUID). You can specify that Configuration Manager use other identification methods with the following options:
 
-* Add an exclusion for the MAC addresses of Surface Ethernet adapters, which forces Configuration Manager to overlook the MAC address in preference of the System UUID, as documented in the [Reusing the same NIC for multiple PXE initiated deployments in System Center Configuration Manager OSD](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2015/08/27/reusing-the-same-nic-for-multiple-pxe-initiated-deployments-in-system-center-configuration-manger-osd/) blog post.
+* Add an exclusion for the MAC addresses of Surface Ethernet adapters, which forces Configuration Manager to overlook the MAC address in preference of the System UUID, as documented in [Reusing the same NIC for multiple PXE initiated deployments in System Center Configuration Manager OSD](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2015/08/27/reusing-the-same-nic-for-multiple-pxe-initiated-deployments-in-system-center-configuration-manger-osd/).
 
-* Prestage devices by System UUID as documented in the [Reusing the same NIC for multiple PXE initiated deployments in System Center Configuration Manager OSD](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2015/08/27/reusing-the-same-nic-for-multiple-pxe-initiated-deployments-in-system-center-configuration-manger-osd/) blog post.
+* Prestage devices by System UUID as documented in [Reusing the same NIC for multiple PXE initiated deployments in System Center Configuration Manager OSD](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2015/08/27/reusing-the-same-nic-for-multiple-pxe-initiated-deployments-in-system-center-configuration-manger-osd/).
 
-* Use a script to identify a newly deployed Surface device by the MAC address of its wireless adapter, as documented in the [How to Use The Same External Ethernet Adapter For Multiple SCCM OSD](https://blogs.technet.microsoft.com/askpfeplat/2014/07/27/how-to-use-the-same-external-ethernet-adapter-for-multiple-sccm-osd/) blog post.
+* Use a script to identify a newly deployed Surface device by the MAC address of its wireless adapter, as documented in [How to Use The Same External Ethernet Adapter For Multiple SCCM OSD](https://blogs.technet.microsoft.com/askpfeplat/2014/07/27/how-to-use-the-same-external-ethernet-adapter-for-multiple-sccm-osd/).
 
 Another consideration for the Surface Ethernet adapter during deployments with Configuration Manager is the driver for the Ethernet controller. Beginning in Windows 10, version 1511, the driver for the Surface Ethernet adapter is included by default in Windows. For organizations that want to deploy the latest version of Windows 10 and use the latest version of WinPE, use of the Surface Ethernet adapter requires no additional actions.
 
-For versions of Windows prior to Windows 10, version 1511 (including Windows 10 RTM and Windows 8.1), you may still need to install the Surface Ethernet adapter driver and include the driver in your WinPE boot media. With its inclusion in Windows 10, the driver is no longer available for download from the Microsoft Download Center. To download the Surface Ethernet adapter driver, download it from the Microsoft Update Catalog as documented in the [Surface Ethernet Drivers](https://blogs.technet.microsoft.com/askcore/2016/08/18/surface-ethernet-drivers/) blog post from the Ask The Core Team blog.
+For versions of Windows prior to Windows 10, version 1511 (including Windows 10 RTM and Windows 8.1), you may still need to install the Surface Ethernet adapter driver and include the driver in your WinPE boot media. With its inclusion in Windows 10, the driver is no longer available for download from the Microsoft Download Center. To download the Surface Ethernet adapter driver, refer to [Surface Ethernet Drivers](https://blogs.technet.microsoft.com/askcore/2016/08/18/surface-ethernet-drivers/).
 
 ## Deploy Surface app with Configuration Manager
 
-With the release of Microsoft Store for Business, Surface app is no longer available as a driver and firmware download. Organizations that want to deploy Surface app to managed Surface devices or during deployment with the use of Configuration Manager, must acquire Surface app through Microsoft Store for Business and then deploy Surface app with PowerShell. You can find the PowerShell commands for deployment of Surface app, instructions to download Surface app, and prerequisite frameworks from Microsoft Store for Business in the [Deploy Surface app with Microsoft Store for Business](https://technet.microsoft.com/itpro/surface/deploy-surface-app-with-windows-store-for-business) article in the TechNet Library.
+With the release of Microsoft Store for Business, Surface app is no longer available as a driver and firmware download. Organizations that want to deploy Surface app to managed Surface devices or during deployment with the use of Configuration Manager, must acquire Surface app through Microsoft Store for Business and then deploy Surface app with PowerShell. For more information including PowerShell commands for deploying Surface app, refer to [Deploy Surface app with Microsoft Store for Business](https://technet.microsoft.com/itpro/surface/deploy-surface-app-with-windows-store-for-business).
 
 ## Use prestaged media with Surface clients
 
 If your organization uses prestaged media to pre-load deployment resources on to machines prior to deployment with Configuration Manager, the nature of Surface devices as UEFI devices may require you to take additional steps. Specifically, a native UEFI environment requires that you create multiple partitions on the boot disk of the system. If you are following along with the [documentation for prestaged media](https://technet.microsoft.com/library/79465d90-4831-4872-96c2-2062d80f5583?f=255&MSPPError=-2147217396#BKMK_CreatePrestagedMedia), the instructions provide for only single partition boot disks and therefore will fail when applied to Surface devices.
 
-Instructions for applying prestaged media to UEFI devices, such as Surface devices, can be found in the [How to apply Task Sequence Prestaged Media on multi-partitioned disks for BIOS or UEFI PCs in System Center Configuration Manager](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2014/04/02/how-to-apply-task-sequence-prestaged-media-on-multi-partitioned-disks-for-bios-or-uefi-pcs-in-system-center-configuration-manager/) blog post.
+To apply prestaged media to UEFI devices, such as Surface devices, refer to [How to apply Task Sequence Prestaged Media on multi-partitioned disks for BIOS or UEFI PCs in System Center Configuration Manager](https://blogs.technet.microsoft.com/system_center_configuration_manager_operating_system_deployment_support_blog/2014/04/02/how-to-apply-task-sequence-prestaged-media-on-multi-partitioned-disks-for-bios-or-uefi-pcs-in-system-center-configuration-manager/).
 
 ## Licensing conflicts with OEM Activation 3.0
 
@@ -77,9 +77,9 @@ However, issues may arise when organizations intend to use versions of Windows t
 
 ## Apply an asset tag during deployment
 
-Surface Studio, Surface Book, Surface Pro 4, Surface Pro 3, and Surface 3 devices all support the application of an asset tag in UEFI. This asset tag can be used to identify the device from UEFI even if the operating system fails, and it can also be queried from within the operating system. To read more about the Surface Asset Tag function, see the [Asset Tag Tool for Surface Pro 3](https://blogs.technet.microsoft.com/askcore/2014/10/20/asset-tag-tool-for-surface-pro-3/) blog post.
+Surface Studio, Surface Book, Surface Pro 4, Surface Pro 3, and Surface 3 devices all support the application of an asset tag in UEFI. This asset tag can be used to identify the device from UEFI even if the operating system fails, and it can also be queried from within the operating system. For more information, refer to [Surface Asset Tag Tool](assettag.md).
 
-To apply an asset tag using the [Surface Asset Tag CLI Utility](https://www.microsoft.com/download/details.aspx?id=44076) during a Configuration Manager deployment task sequence, use the script and instructions found in the [Set Surface Asset Tag During a Configuration Manager Task Sequence](https://blogs.technet.microsoft.com/jchalfant/set-surface-pro-3-asset-tag-during-a-configuration-manager-task-sequence/) blog post.
+To apply an asset tag using the [Surface Asset Tag CLI Utility](https://www.microsoft.com/download/details.aspx?id=44076) during a Configuration Manager deployment task sequence, use the script and instructions in [Set Surface Asset Tag During a Configuration Manager Task Sequence](https://blogs.technet.microsoft.com/jchalfant/set-surface-pro-3-asset-tag-during-a-configuration-manager-task-sequence/).
 
 ## Configure push-button reset
 

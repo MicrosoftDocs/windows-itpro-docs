@@ -23,7 +23,7 @@ ms.topic: conceptual
 This topic describes how to install, configure, update, and use Microsoft Defender ATP for Mac.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender ATP for Mac is likely to lead to performance problems and unpredictable side effects.
+> Running other third-party endpoint protection products alongside Microsoft Defender ATP for Mac is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of MDATP for Mac EDR functionality after configuring MDATP for Mac antivirus functionality to run in [Passive mode](mac-preferences.md#enable--disable-passive-mode).
 
 ## What’s new in the latest release
 
