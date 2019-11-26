@@ -31,6 +31,12 @@ After your organization's cybersecurity weaknesses are identified and mapped to 
 You can lower down your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations.
 
 ## Navigate through your remediation options 
+You can access the remediation page in a few places in the portal:
+- Security recommendation flyout panel
+- Remediation in the navigation menu
+- Top remediation activities widget in the dashboard
+
+### Security recommendation flyout page
 You'll see your remediation options when you select one of the security recommendation blocks from your **Top security recommendations** widget in the dashboard. 
 1. From the flyout panel, you'll see the security recommendation details including your next steps. Click **Remediation options**.
 2. In the **Remediation options** page, select **Open a ticket in Intune (for AAD joined devices)**. 
@@ -42,6 +48,12 @@ You'll see your remediation options when you select one of the security recommen
 4. Add notes to give your IT administrator a context of your remediation request. For example, you can indicate urgency of the remediation request to avoid potential exposure to a recent exploit activity, or if the request is a part of compliance. 
 
 If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
+
+### Remediation in the navigation menu
+
+
+### Top remediation activities widget in the dashboard
+
 
 ## How it works
 
