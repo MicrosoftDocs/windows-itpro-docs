@@ -20,9 +20,12 @@ appliesto:
 
 ## HoloLens 2
 
-### November Update
+### November Update - build 18362.1039
 
-
+- Fixes for **"Select"** voice commands during initial set-up for en-CA and en-AU.
+- Improvements in visual quality of objects placed far away in latest Unity and MRTK versions.
+- Fixes addressing issues with holographic applications being stuck in a paused state on launch until the pins panel is brought up and dismissed again.
+- OpenXR runtime conformance fixes and improvements for HoloLens 2 and the emulator.
 
 ## HoloLens (1st gen)
 
