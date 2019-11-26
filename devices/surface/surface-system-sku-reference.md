@@ -24,6 +24,9 @@ System Model and System SKU are variables that are stored in the System Manageme
 
 | Device   | System Model | System SKU       |
 | ---------- | ----------- | -------------- |
+| AMD Surface Laptop 3                                         | Surface 3        | Surface_Laptop_3_1873       |
+| Surface Laptop 3                                             | Surface 3        | Surface_Laptop_3_1867:1868       |
+| Surface Laptop 3                                             | Surface 3        | Surface_3                   
 | Surface 3 WiFI                                               | Surface 3        | Surface_3                        |
 | Surface 3 LTE AT&T                                           | Surface 3        | Surface_3_US1                    |
 | Surface 3 LTE Verizon                                        | Surface 3        | Surface_3_US2                    |

@@ -3253,11 +3253,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter prevents the user from browsing to or downloading from sites that are known to host malicious content. SmartScreen Filter also prevents the execution of files that are known to be malicious.
+This policy setting determines whether the user can bypass warnings from Windows Defender SmartScreen. Windows Defender SmartScreen prevents the user from browsing to or downloading from sites that are known to host malicious content. Windows Defender SmartScreen also prevents the execution of files that are known to be malicious.
 
-If you enable this policy setting, SmartScreen Filter warnings block the user.
+If you enable this policy setting, Windows Defender SmartScreen warnings block the user.
 
-If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.
+If you disable or do not configure this policy setting, the user can bypass Windows Defender SmartScreen warnings.
 
 <!--/Description-->
 > [!TIP]
@@ -3324,11 +3324,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines whether the user can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the user about executable files that Internet Explorer users do not commonly download from the Internet.
+This policy setting determines whether the user can bypass warnings from Windows Defender SmartScreen. Windows Defender SmartScreen warns the user about executable files that Internet Explorer users do not commonly download from the Internet.
 
-If you enable this policy setting, SmartScreen Filter warnings block the user.
+If you enable this policy setting, Windows Defender SmartScreen warnings block the user.
 
-If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.
+If you disable or do not configure this policy setting, the user can bypass Windows Defender SmartScreen warnings.
 
 <!--/Description-->
 > [!TIP]
@@ -6501,13 +6501,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+If you disable this policy setting, Windows Defender SmartScreen does not scan pages in this zone for malicious content.
 
-If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
@@ -8604,13 +8604,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+If you disable this policy setting, Windows Defender SmartScreen does not scan pages in this zone for malicious content.
 
-If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
@@ -9561,13 +9561,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+If you disable this policy setting, Windows Defender SmartScreen does not scan pages in this zone for malicious content.
 
-If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
@@ -10518,13 +10518,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+If you disable this policy setting, Windows Defender SmartScreen does not scan pages in this zone for malicious content.
 
-If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
@@ -11481,13 +11481,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+If you disable this policy setting, Windows Defender SmartScreen does not scan pages in this zone for malicious content.
 
-If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
@@ -12286,13 +12286,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+If you disable this policy setting, Windows Defender SmartScreen does not scan pages in this zone for malicious content.
 
-If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
@@ -13170,13 +13170,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+If you disable this policy setting, Windows Defender SmartScreen does not scan pages in this zone for malicious content.
 
-If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
@@ -14054,13 +14054,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+If you disable this policy setting, Windows Defender SmartScreen does not scan pages in this zone for malicious content.
 
-If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
@@ -14733,11 +14733,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting prevents the user from managing SmartScreen Filter, which warns the user if the website being visited is known for fraudulent attempts to gather personal information through "phishing," or is known to host malware.
+This policy setting prevents the user from managing Windows Defender SmartScreen, which warns the user if the website being visited is known for fraudulent attempts to gather personal information through "phishing," or is known to host malware.
 
-If you enable this policy setting, the user is not prompted to turn on SmartScreen Filter. All website addresses that are not on the filter's allow list are sent automatically to Microsoft without prompting the user.
+If you enable this policy setting, the user is not prompted to turn on Windows Defender SmartScreen. All website addresses that are not on the filter's allow list are sent automatically to Microsoft without prompting the user.
 
-If you disable or do not configure this policy setting, the user is prompted to decide whether to turn on SmartScreen Filter during the first-run experience.
+If you disable or do not configure this policy setting, the user is prompted to decide whether to turn on Windows Defender SmartScreen during the first-run experience.
 
 <!--/Description-->
 > [!TIP]
@@ -16477,13 +16477,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+If you disable this policy setting, Windows Defender SmartScreen does not scan pages in this zone for malicious content.
 
-If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
@@ -19053,13 +19053,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content.
+This policy setting controls whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content.
+If you enable this policy setting, Windows Defender SmartScreen scans pages in this zone for malicious content.
 
-If you disable this policy setting, SmartScreen Filter does not scan pages in this zone for malicious content.
+If you disable this policy setting, Windows Defender SmartScreen does not scan pages in this zone for malicious content.
 
-If you do not configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content.
+If you do not configure this policy setting, the user can choose whether Windows Defender SmartScreen scans pages in this zone for malicious content.
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 

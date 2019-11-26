@@ -193,6 +193,9 @@ Sign-in the federation server with _domain administrator_ equivalent credentials
 
 ### Add the AD FS Service account to the KeyCredential Admin group and the Windows Hello for Business Users group
 
+> [!NOTE]
+> If you have a Windows Server 2016 domain controller in your domain, you can use the **Key Admins** group instead of **KeyCredential Administrators** and skip the **Configure Permissions for Key Registration** step.
+
 The **KeyCredential Administrators** global group provides the AD FS service with the permissions needed to perform key registration.  The Windows Hello for Business group provides the AD FS service with the permissions needed to enroll a Windows Hello for Business authentication certificate on behalf of the provisioning user.
 
 Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
@@ -483,7 +486,7 @@ Before you continue with the deployment, validate your deployment progress by re
 * Confirm you properly configured the Windows Hello for Business authentication certificate template—to include:   
     * Issuance requirements of an authorized signature from a certificate request agent.
     * The certificate template was properly marked as a Windows Hello for Business certificate template using certutil.exe
-    * The Windows Hello for Business Users group, or equivalent has the allow enroll and allow auto enroll permissions
+    * The Windows Hello for Business Users group, or equivalent has the allow enroll permissions
 * Confirm all certificate templates were properly published to the appropriate issuing certificate authorities.
 * Confirm the AD FS service account has the allow enroll permission for the Windows Hello Business authentication certificate template.
 * Confirm the AD FS certificate registration authority is properly configured using the `Get-AdfsCertificateAuthority` Windows PowerShell cmdlet.
@@ -495,6 +498,11 @@ Before you continue with the deployment, validate your deployment progress by re
 ## Validating your work
 
 You need to verify the AD FS service has properly enrolled for an enrollment agent certificate template.  You can verify this is a variety ways, depending on if your service account is a normal user account or if the service account is a group managed service account.
+
+> [!IMPORTANT]
+> After following the previous steps, if you are unable to validate that the devices are, in fact, being registered automatically, there is a Group Policy at:
+> **Computer Configuration > Policies > Administrative Templates > Windows Components > Device Registration >** "Register Domain Joined Computers As Devices". Set the policy to **Enabled**
+> and the registration will happen automatically.
 
 ### Event Logs
 
