@@ -1,5 +1,5 @@
 ---
-title: Querying Application Control events centrally using Advanced hunting   (Windows 10)
+title: Query Application Control events with Advanced Hunting (Windows 10)
 description: Learn about Windows Defender Application Guard and how it helps to combat malicious content and malware out on the Internet.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
