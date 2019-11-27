@@ -10,7 +10,7 @@ author: mjcaparas
 ms.author: macapara
 audience: ITPro
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 11/27/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -62,8 +62,15 @@ When Windows Defender SmartScreen warns or blocks an employee from a website, it
 ## Viewing Windows event logs for Windows Defender SmartScreen
 Windows Defender SmartScreen events appear in the Microsoft-Windows-SmartScreen/Debug log in Event Viewer.
 
+Windows event log for SmartScreen is disabled by default, users can use Event Viewer UI to enable the log or use the command line to enable it:
+
+```
+wevtutil sl Microsoft-Windows-SmartScreen/Debug /e:true
+```
+
 > [!NOTE]
 > For information on how to use the Event Viewer, see [Windows Event Viewer](https://docs.microsoft.com/host-integration-server/core/windows-event-viewer1).
+
 
 EventID | Description
 -|-
