@@ -13,7 +13,7 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/21/2019
+ms.date: 11/26/2019
 ---
 
 # Windows Autopilot and Surface devices
@@ -35,10 +35,17 @@ Enrolling Surface devices in Windows Autopilot at the time of purchase is a capa
 
 When you purchase Surface devices from a Surface partner enabled for Windows Autopilot, your new devices can be enrolled in your Windows Autopilot deployment for you by the partner. Surface partners enabled for Windows Autopilot include: 
 
+- [ALSO](https://www.also.com/ec/cms5/de_1010/1010_anbieter/microsoft/windows-autopilot/index.jsp) 
 - [Atea](https://www.atea.com/)
+- [Bechtle](https://www.bechtle.com/de-en) 
+- [Cancom](https://www.cancom.de/)
+- [CDW](https://www.cdw.com/)
+- [Computacenter](https://www.computacenter.com/uk)
 - [Connection](https://www.connection.com/brand/microsoft/microsoft-surface) 
 - [Insight](https://www.insight.com/en_US/buy/partner/microsoft/surface/windows-autopilot.html)
 - [SHI](https://www.shi.com/Surface)
+- [Synnex](https://www.synnexcorp.com/us/microsoft/surface-autopilot/)
+- [Techdata](https://www.techdata.com/)
 
 ## Learn more
 For more information about Windows Autopilot, refer to:
