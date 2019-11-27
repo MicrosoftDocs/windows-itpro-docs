@@ -17,7 +17,7 @@
 ### [Surface device compatibility with Windows 10 Long-Term Servicing Branch](surface-device-compatibility-with-windows-10-ltsc.md)
 ### [Long-Term Servicing Branch for Surface devices](ltsb-for-surface.md)
 ### [Wake On LAN for Surface devices](wake-on-lan-for-surface-devices.md)
-### [Considerations for Surface and System Center Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md)
+### [Considerations for Surface and Endpoint Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md)
 ### [Deploy Surface app with Microsoft Store for Business](deploy-surface-app-with-windows-store-for-business.md)
 ### [Enable PEAP, EAP-FAST, and Cisco LEAP on Surface devices](enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md)
 ### [Ethernet adapters and Surface deployment](ethernet-adapters-and-surface-device-deployment.md)
