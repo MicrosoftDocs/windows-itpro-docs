@@ -56,8 +56,8 @@ In some cases, you might want to go back to a previous version of the HoloLens s
 To go back to a previous version of HoloLens 2, follow these steps:
 
 1. Make sure that you don't have any phones or Windows devices plugged in to your PC.
-1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/en-us/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
-1. Download the [most recent HoloLens 2 release](http://aka.ms/hololens2download).
+1. On your PC, download the [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) from the Microsoft Store.
+1. Download the [most recent HoloLens 2 release](https://aka.ms/hololens2download).
 1. When you have finished these downloads, open **File explorer** > **Downloads**. Right-click the zipped folder that you just downloaded, and select **Extract all** > **Extract** to unzip it.
 1. Connect your HoloLens to your PC using a USB-A to USB-C cable . (Even if you've been using other cables to connect your HoloLens, this one works best.)
 1. The Advanced Recovery Companion automatically detects your HoloLens. Select the **Microsoft HoloLens** tile.
