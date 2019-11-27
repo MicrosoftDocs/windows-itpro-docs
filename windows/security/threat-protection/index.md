@@ -46,6 +46,7 @@ ms.topic: conceptual
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
 
 - [Risk-based Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md) 
+- [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 - [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 - [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
 - [Configuration score](microsoft-defender-atp/configuration-score.md)
