@@ -52,7 +52,7 @@ Although potentially unwanted application protection in Microsoft Edge (Chromium
 1. Under the **Services** section, you can toggle **Potentially unwanted app blocking** on or off
 
 > [!TIP]
-> If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen demo pages.
+> If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen [demo pages](https://demo.smartscreen.msft.net/).
 
 #### Blocking URLs with Windows Defender SmartScreen
 
