@@ -1,13 +1,15 @@
 ---
 title: Update HoloLens
-description: 
+description: Check your HoloLens' build number, update, and roll back updates.
+keywords: how-to, update, roll back, HoloLens, check build, build number
 ms.prod: hololens
 ms.sitesec: library
-author: Teresa-Motiv
-ms.author: v-tea
+author: scooley
+ms.author: scooley
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 8/20/19
+ms.date: 11/27/2019
+audience: ITPro
 ms.reviewer: 
 manager: jarrettr
 appliesto:
