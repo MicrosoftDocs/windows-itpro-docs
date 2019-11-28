@@ -111,7 +111,7 @@ list volume
 
 If the status of any of the volumes is not healthy or if the recovery partition is missing, you may have to reinstall Windows. Before you do this, check the configuration of the Windows image that you are using for provisioning. Make sure that the image uses the correct disk configuration. The image configuration should resemble the following (this example is from System Center Configuration Manager).
 
-![Windows image configuration in System Center Configuration Manager](./images/SCCM-ImageConfig.jpg)
+![Windows image configuration in System Center Configuration Manager](./images/sccm-imageconfig.jpg)
 
 #### Step 2: Verify the status of WinRE
 
