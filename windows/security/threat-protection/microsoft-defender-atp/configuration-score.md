@@ -64,6 +64,7 @@ See how you can [improve your security configuration](https://docs.microsoft.com
 >2. Key-in the security update KB number that you need to download, then click **Search**.  
 
 ## Related topics
+- [Supported operating systems and platforms](tvm-supported-os.md)
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)

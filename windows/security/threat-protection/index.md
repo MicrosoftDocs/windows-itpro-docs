@@ -46,6 +46,7 @@ ms.topic: conceptual
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
 
 - [Risk-based Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md) 
+- [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 - [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 - [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
 - [Configuration score](microsoft-defender-atp/configuration-score.md)
@@ -58,7 +59,7 @@ This built-in capability uses a game-changing risk-based approach to the discove
 <a name="asr"></a>
 
 **[Attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)**<br>
-The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations.
+The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation.
 
 - [Hardware based isolation](microsoft-defender-atp/overview-hardware-based-isolation.md)
 - [Application control](windows-defender-application-control/windows-defender-application-control.md)
