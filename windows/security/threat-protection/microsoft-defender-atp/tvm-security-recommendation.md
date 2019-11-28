@@ -84,6 +84,7 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 
 
 ## Related topics
+- [Supported operating systems and platforms](tvm-supported-os.md)
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
