@@ -4,6 +4,7 @@
 ### [What is Microsoft Defender Advanced Threat Protection?](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
 ### [Overview of Microsoft Defender ATP capabilities](microsoft-defender-atp/overview.md)
 ### [Threat & Vulnerability Management]()
+#### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 #### [Next-generation capabilities](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
 #### [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 #### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
