@@ -130,3 +130,8 @@ Value type is Base64. Supported operation is Replace.
 Retrieves the binary result package of previous Settings2/Apply operation. This binary package contains XML describing the action taken for each individual setting.
 
 Supported operation is Get.
+
+
+## Related Links
+
+[DDF UEFI Example File](./uefi-ddf.md)
