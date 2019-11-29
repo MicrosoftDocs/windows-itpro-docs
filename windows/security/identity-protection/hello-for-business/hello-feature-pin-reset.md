@@ -71,18 +71,14 @@ To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 
 #### Create a PIN Reset Device configuration profile using Microsoft Intune
 
 1. Sign-in to [Azure Portal](https://portal.azure.com) using a tenant administrator account.
-2. You need your tenant ID to complete the following task.  You can discovery your tenant ID viewing the **Properties** of your Azure Active Directory from the Azure Portal. It will be listed under Directory ID. You can also use the following command in a command Window on any Azure AD joined or hybrid Azure AD joined computer.</br>
+2. Navigate to the Microsoft Endpoint Manager admin center. Click **Devices**. Click **Profiles**. Click **Configuration profiles**. Click **Create profile**.
+3. Type **Use PIN Recovery** in the **Name** field. Select **Windows 10 and later** from the **Platform** list.  Select **Identity protection** from the **Profile type** list.
+4. Click **Enable** on the "Configure Windows Hello for Business" option. 
+5. Click **Enable** on the "Enable PIN recovery" option
+6. Click **OK**
+7. Click **Create**
+8. Assign the policy to your user group.
 
-    ```
-    dsregcmd /status | findstr -snip "tenantid"
-    ```
-
-1. Navigate to the Microsoft Intune blade. Click **Device configuration**. Click **Profiles**. Click **Create profile**.
-1. Type **Use PIN Recovery** in the **Name** field. Select **Windows 10 and later** from the **Platform** list.  Select **Custom** from the **Profile type** list.
-1. In the **Custom OMA-URI Settings** blade, Click **Add**.
-1. In the **Add Row** blade, type **PIN Reset Settings** in the **Name** field. In the **OMA-URI** field, type **./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery** where <b>*tenant ID*</b> is your Azure Active Directory tenant ID from step 2.
-1. Select **Boolean** from the **Data type** list and select **True** from the **Value** list.
-1. Click **OK** to save the row configuration. Click **OK** to close the <strong>Custom OMA-URI Settings blade.  Click **Create</strong> to save the profile.
  
 #### Assign the PIN Reset Device configuration profile using Microsoft Intune
 
