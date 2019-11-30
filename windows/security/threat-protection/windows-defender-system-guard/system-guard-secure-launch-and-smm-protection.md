@@ -54,6 +54,9 @@ Click **Start** > **Settings** > **Update & Security** > **Windows Security** > 
 
 ![Secure Launch Registry](images/secure-launch-registry.png)
 
+> [!IMPORTANT]
+> If the system guard enabled as a registry key, then standard hardware security is not available for Intel i5 7200U processor".
+
 ## How to verify System Guard Secure Launch is configured and running
 
 To verify that Secure Launch is running, use System Information (MSInfo32). Click **Start**, search for **System Information**, and look under **Virtualization-based Security Services Running** and **Virtualization-based Security Services Configured**.
