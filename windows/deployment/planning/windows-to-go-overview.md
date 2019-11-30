@@ -95,7 +95,7 @@ As of the date of publication, the following are the USB drives currently certif
 - IronKey Workspace W700 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w700.html](https://go.microsoft.com/fwlink/p/?LinkId=618714))
 - IronKey Workspace W500 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w500.html](https://go.microsoft.com/fwlink/p/?LinkId=618717))
 - IronKey Workspace W300 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w300.html](https://go.microsoft.com/fwlink/p/?LinkId=618718))
-- Kingston DataTraveler Workspace for Windows To Go ([http://www.kingston.com/wtg/](https://go.microsoft.com/fwlink/p/?LinkId=618719))
+- Kingston DataTraveler Workspace for Windows To Go ([http://www.kingston.com/wtg/](https://www.kingston.com/us/support/technical/products?model=dtws#DTWS))
 - Spyrus Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
 
     We recommend that you run the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Portable Workplace.
