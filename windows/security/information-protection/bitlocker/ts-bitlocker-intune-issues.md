@@ -306,8 +306,6 @@ The OMA-URI references for these settings are as follows:
 
 > [!NOTE]
 > If the **Waiting for other disk encryption** setting is set to **Not configured**, you have to manually start the BitLocker Drive Encryption wizard.  
->  
-> ![Notification to manually start encryption](./images/4509187-en-1.png)
 
 If the device does not support Modern Standby but is HSTI-compliant, and it uses a version of Windows that is earlier than Windows 10, version 1803, an endpoint protection policy that has the settings that are described in this article delivers the policy configuration to the device. However, Windows then notifies the user to manually enable BitLocker Drive Encryption. To do this, the user selects the notification. This action starts the BitLocker Drive Encryption wizard.  
 
