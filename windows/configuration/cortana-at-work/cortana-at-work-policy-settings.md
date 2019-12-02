@@ -1,5 +1,5 @@
 ---
-title: Configure Cortana in your organization using Group Policy and MDM settings (Windows 10)
+title: Configure Cortana with Group Policy and MDM settings (Windows 10)
 description: The list of Group Policy and mobile device management (MDM) policy settings that apply to Cortana at work.
 ms.prod: w10
 ms.mktglfcycl: manage

@@ -1,6 +1,6 @@
 ---
-title: Understanding the Windows Defender Firewall with Advanced Security Design Process (Windows 10)
-description: Understanding the Windows Defender Firewall with Advanced Security Design Process
+title: Plan a Windows Defender Firewall with Advanced Security Deployment (Windows 10)
+description: Resources for helping you understand the Windows Defender Firewall with Advanced Security Design Process
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -1,6 +1,6 @@
 ---
-title: Deploy Windows Defender Application Control policies with Group Policy (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+title: Deploy WDAC policies via Group Policy (Windows 10)
+description: Windows Defender Application Control (WDAC) restricts which applications users are allowed to run and the code that runs in the system core.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
