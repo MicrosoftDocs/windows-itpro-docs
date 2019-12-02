@@ -653,7 +653,7 @@ Once you've built the configuration profile for your enterprise, you can deploy 
 From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with *com.microsoft.wdav* as the preference domain and upload the .plist produced earlier.
 
 >[!CAUTION]
->You must enter the correct preference domain (*com.microsoft.wdav*), otherwise the preferences will not be recognized by the product.
+>You must enter the correct preference domain (`com.microsoft.wdav`); otherwise, the preferences will not be recognized by the product.
 
 ### Intune deployment
 
