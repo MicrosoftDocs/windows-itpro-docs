@@ -11,6 +11,8 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: security
 author: Teresa-Motiv
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 11/20/2019
 audience: ITPro
 ---
