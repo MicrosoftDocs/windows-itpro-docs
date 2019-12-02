@@ -120,7 +120,7 @@ Indicates if the *path* property refers to a file or directory.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | isDirectory |
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
@@ -132,7 +132,7 @@ Used to exclude content from the scan by file extension.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | extension |
 | **Data type** | String |
 | **Possible values** | valid file extensions |
@@ -144,7 +144,7 @@ Used to exclude content from the scan by file name.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | name |
 | **Data type** | String |
 | **Possible values** | any string |
@@ -177,7 +177,7 @@ Type of the threat for which the behavior is configured.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | key |
 | **Data type** | String |
 | **Possible values** | potentially_unwanted_application <br/> archive_bomb |
