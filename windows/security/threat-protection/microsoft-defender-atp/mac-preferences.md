@@ -1,6 +1,6 @@
 ---
 title: Set preferences for Microsoft Defender ATP for Mac
-description: Configure Microsoft Defender ATP for Mac in enterprises.
+description: Configure Microsoft Defender ATP for Mac in enterprise organizations.
 keywords: microsoft, defender, atp, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -26,9 +26,11 @@ ms.topic: conceptual
 >[!IMPORTANT]
 >This article contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise environments. If you are interested in configuring the product on a device from the command-line, please refer to the [Resources](mac-resources.md#configuring-from-the-command-line) page.
 
-In enterprise environments, Microsoft Defender ATP for Mac can be managed through a configuration profile. This profile is deployed from management tool of your choice. Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
+In enterprise organizations, Microsoft Defender ATP for Mac can be managed through a configuration profile, and deployed by using one of several management tools. 
 
-This topic describes the structure of this profile (including a recommended profile that you can use to get started) and instructions for how to deploy the profile.
+Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
+
+This article describes the structure of this profile (including a recommended profile that you can use to get started) and instructions for how to deploy the profile.
 
 ## Configuration profile structure
 
@@ -89,7 +91,7 @@ Entities that have been excluded from the scan. Exclusions can be specified by f
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
 
-**Type of exclusion**
+##### Type of exclusion
 
 Specifies the type of content excluded from the scan.
 
@@ -100,7 +102,7 @@ Specifies the type of content excluded from the scan.
 | **Data type** | String |
 | **Possible values** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 
-**Path to excluded content**
+##### Path to excluded content
 
 Used to exclude content from the scan by full file path.
 
@@ -112,7 +114,7 @@ Used to exclude content from the scan by full file path.
 | **Possible values** | valid paths |
 | **Comments** | Applicable only if *$type* is *excludedPath* |
 
-**Path type (file / directory)**
+##### Path type (file / directory)
 
 Indicates if the *path* property refers to a file or directory. 
 
@@ -124,7 +126,7 @@ Indicates if the *path* property refers to a file or directory.
 | **Possible values** | false (default) <br/> true |
 | **Comments** | Applicable only if *$type* is *excludedPath* |
 
-**File extension excluded from the scan**
+##### File extension excluded from the scan
 
 Used to exclude content from the scan by file extension.
 
@@ -136,7 +138,7 @@ Used to exclude content from the scan by file extension.
 | **Possible values** | valid file extensions |
 | **Comments** | Applicable only if *$type* is *excludedFileExtension* |
 
-**Name of excluded content**
+##### Name of excluded content
 
 Used to exclude content from the scan by file name.
 
@@ -169,7 +171,7 @@ The *threatTypeSettings* preference in the antivirus engine is used to control h
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
 
-**Threat type**
+##### Threat type
 
 Type of the threat for which the behavior is configured.
 
@@ -180,7 +182,7 @@ Type of the threat for which the behavior is configured.
 | **Data type** | String |
 | **Possible values** | potentially_unwanted_application <br/> archive_bomb |
 
-**Action to take**
+##### Action to take
 
 Action to take when coming across a threat of the type specified in the preceding section. Can be:
 
@@ -294,7 +296,7 @@ Specify the tag name and its desired value, Current supported tags:Group - allow
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
 
-**Type of tag**
+##### Type of tag
 
 Specifies the type of tag
 
@@ -305,7 +307,7 @@ Specifies the type of tag
 | **Data type** | String |
 | **Possible values** | GROUP |
 
-**Value of tag**
+##### Value of tag
 
 Specifies the value of tag
 
@@ -315,7 +317,6 @@ Specifies the value of tag
 | **Key** | value |
 | **Data type** | String |
 | **Possible values** | any string |
-
 
 ## Recommended configuration profile
 
