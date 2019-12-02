@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/14/2019
+ms.date: 12/02/2019
 audience: ITPro
 appliesto:
 - HoloLens 1
@@ -19,6 +19,8 @@ appliesto:
 # HoloLens Release Notes
 
 ## HoloLens 2
+> [!Note]
+> HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-emulator-archive).
 
 ### November Update - build 18362.1039
 
