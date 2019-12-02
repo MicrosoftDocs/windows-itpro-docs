@@ -26,9 +26,7 @@ ms.topic: conceptual
 >[!IMPORTANT]
 >This article contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise organizations. To configure Microsoft Defender ATP for Mac using the command-line interface, see the [Resources](mac-resources.md#configuring-from-the-command-line) page.
 
-In enterprise organizations, Microsoft Defender ATP for Mac can be managed through a configuration profile, and deployed by using one of several management tools. 
-
-Preferences managed by your security operations team take precedence over preferences that are set locally on the device. In other words, users in your organization are not able to change preferences that are set through the configuration profile.
+In enterprise organizations, Microsoft Defender ATP for Mac can be managed through a configuration profile, and deployed by using one of several management tools. Preferences that are managed by your security operations team take precedence over preferences that are set locally on the device. This means that users in your organization are not able to change preferences that are set through the configuration profile.
 
 This article describes the structure of the configuration profile and includes a recommended profile that you can use to get started, along with instructions on how to deploy the profile.
 
@@ -197,7 +195,7 @@ Action to take when coming across a threat of the type specified in the precedin
 | **Data type** | String |
 | **Possible values** | audit (default) <br/> block <br/> off |
 
-### Cloud delivered protection preferences
+### Cloud-delivered protection preferences
 
 The *cloudService* entry in the configuration profile is used to configure the cloud driven protection feature of the product.
 
@@ -208,7 +206,7 @@ The *cloudService* entry in the configuration profile is used to configure the c
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
 
-#### Enable / disable cloud delivered protection
+#### Enable / disable cloud-delivered protection
 
 Whether cloud delivered protection is enabled on the device or not. To improve the security of your services, we recommend keeping this feature turned on.
 
@@ -263,9 +261,9 @@ Whether the status menu icon (shown in the top-right corner of the screen) is hi
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
 
-### EDR preferences
+### Endpoint detection and response preferences
 
-The *edr* section of the configuration profile is used to manage the preferences of the EDR component of the product.
+The *edr* section of the configuration profile is used to manage the preferences of the endpoint detection and response (EDR) component of Microsoft Defender ATP for Mac.
 
 |||
 |:---|:---|
@@ -291,7 +289,7 @@ Specify the tag name and its desired value, Current supported tags:Group - allow
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | tags |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
@@ -302,7 +300,7 @@ Specifies the type of tag
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | key |
 | **Data type** | String |
 | **Possible values** | GROUP |
@@ -313,7 +311,7 @@ Specifies the value of tag
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | value |
 | **Data type** | String |
 | **Possible values** | any string |
@@ -327,7 +325,7 @@ The following configuration profile will:
 - Specify how the following threat types are handled:
   - **Potentially unwanted applications (PUA)** are blocked
   - **Archive bombs** (file with a high compression rate) are audited to the product logs
-- Enable cloud delivered protection
+- Enable cloud-delivered protection
 - Enable automatic sample submission
 
 ### JAMF profile
@@ -650,7 +648,7 @@ Once you've built the configuration profile for your enterprise, you can deploy 
 
 ### JAMF deployment
 
-From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with *com.microsoft.wdav* as the preference domain and upload the .plist produced earlier.
+From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with `com.microsoft.wdav` as the preference domain and upload the .plist produced earlier.
 
 >[!CAUTION]
 >You must enter the correct preference domain (`com.microsoft.wdav`); otherwise, the preferences will not be recognized by the product.
@@ -661,11 +659,11 @@ From the JAMF console, open **Computers** > **Configuration Profiles**, navigate
 
 2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Custom**. Select Configure.
 
-3. Save the .plist produced earlier as **com.microsoft.wdav.xml**.
+3. Save the .plist produced earlier as `com.microsoft.wdav.xml`.
 
-4. Enter **com.microsoft.wdav** as the **custom configuration profile name**.
+4. Enter `com.microsoft.wdav` as the **custom configuration profile name**.
 
-5. Open the configuration profile and upload **com.microsoft.wdav.xml**. This file was created in step 3.
+5. Open the configuration profile and upload the `com.microsoft.wdav.xml` file. (This file was created in step 3.)
 
 6. Select **OK**.
 
