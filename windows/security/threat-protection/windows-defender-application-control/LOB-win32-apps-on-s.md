@@ -69,7 +69,7 @@ The general steps for expanding the S mode base policy on your devices are to ge
     
     Supplemental S mode policies must be digitally signed. To sign your policy, you can choose to use the Device Guard Signing Service or your organization's custom Public Key Infrastructure (PKI). Refer to [Use the Device Guard Signing Portal in the Microsoft Store for Business](use-device-guard-signing-portal-in-microsoft-store-for-business.md) for guidance on using DGSS and [Create a code signing cert for WDAC](create-code-signing-cert-for-windows-defender-application-control.md) for guidance on signing using an internal CA.
 
-    Rename your policy to "{PolicyID}.p7b" after you've signed it. PolicyID can be found by inspecting the Supplemental Policy XML
+    Rename your policy to "{PolicyID}.p7b" after you've signed it. PolicyID can be found by inspecting the Supplemental Policy XML.
 
 3. Deploy the signed supplemental policy using Microsoft Intune
 
