@@ -24,13 +24,13 @@ ms.topic: conceptual
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) for Mac](microsoft-defender-atp-mac.md)
 
 >[!IMPORTANT]
->This article contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise environments. If you are interested in configuring the product on a device from the command-line, please refer to the [Resources](mac-resources.md#configuring-from-the-command-line) page.
+>This article contains instructions for how to set preferences for Microsoft Defender ATP for Mac in enterprise organizations. To configure Microsoft Defender ATP for Mac using the command-line interface, see the [Resources](mac-resources.md#configuring-from-the-command-line) page.
 
 In enterprise organizations, Microsoft Defender ATP for Mac can be managed through a configuration profile, and deployed by using one of several management tools. 
 
-Preferences managed by the enterprise take precedence over the ones set locally on the device. In other words, users in your enterprise are not able to change preferences that are set through this configuration profile.
+Preferences managed by your security operations team take precedence over preferences that are set locally on the device. In other words, users in your organization are not able to change preferences that are set through the configuration profile.
 
-This article describes the structure of this profile (including a recommended profile that you can use to get started) and instructions for how to deploy the profile.
+This article describes the structure of the configuration profile and includes a recommended profile that you can use to get started, along with instructions on how to deploy the profile.
 
 ## Configuration profile structure
 
