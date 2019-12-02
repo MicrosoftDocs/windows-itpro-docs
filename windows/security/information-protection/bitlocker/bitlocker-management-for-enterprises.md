@@ -24,7 +24,7 @@ Though much Windows BitLocker [documentation](bitlocker-overview.md) has been pu
 
 
 > [!IMPORTANT]
-> Microsoft BitLocker Administration and Monitoring (MBAM) capabilities will be offered from [ConfigMgr in on-prem scenarios](https://docs.microsoft.com/en-us/configmgr/core/get-started/2019/technical-preview-1909#bkmk_bitlocker/) in the future.
+> Microsoft BitLocker Administration and Monitoring (MBAM) capabilities will be offered from [ConfigMgr in on-prem scenarios](https://docs.microsoft.com/configmgr/core/get-started/2019/technical-preview-1909#bkmk_bitlocker/) in the future.
 
 ## Managing domain-joined computers and moving to cloud  
 
@@ -102,7 +102,7 @@ Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pi
 
 [BitLocker: FAQs](bitlocker-frequently-asked-questions.md)
 
-[Microsoft BitLocker Administration and Management (MBAM)](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/mbam-v25/)
+[Microsoft BitLocker Administration and Management (MBAM)](https://docs.microsoft.com/microsoft-desktop-optimization-pack/mbam-v25/)
 
 [Overview of BitLocker Device Encryption in Windows 10](bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption) 
 
@@ -118,7 +118,7 @@ Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pi
 
 **Windows Server setup tools**
 
-[Windows Server Installation Options](https://docs.microsoft.com/en-us/windows-server/get-started-19/install-upgrade-migrate-19/)
+[Windows Server Installation Options](https://docs.microsoft.com/windows-server/get-started-19/install-upgrade-migrate-19/)
 
 [How to update local source media to add roles and features](https://blogs.technet.microsoft.com/joscon/2012/11/14/how-to-update-local-source-media-to-add-roles-and-features/)
 
