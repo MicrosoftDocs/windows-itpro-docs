@@ -47,7 +47,7 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | antivirusEngine |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
@@ -58,7 +58,7 @@ Whether real-time protection (scan files as they are accessed) is enabled or not
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | enableRealTimeProtection |
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
@@ -74,7 +74,7 @@ Whether the antivirus engine runs in passive mode or not. In passive mode:
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | passiveMode |
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
@@ -86,7 +86,7 @@ Entities that have been excluded from the scan. Exclusions can be specified by f
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | exclusions |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
@@ -97,7 +97,7 @@ Specifies the type of content excluded from the scan.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | $type |
 | **Data type** | String |
 | **Possible values** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
@@ -108,7 +108,7 @@ Used to exclude content from the scan by full file path.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | path |
 | **Data type** | String |
 | **Possible values** | valid paths |
