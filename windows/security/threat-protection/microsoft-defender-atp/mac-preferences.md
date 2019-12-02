@@ -225,7 +225,7 @@ Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, de
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | diagnosticLevel |
 | **Data type** | String |
 | **Possible values** | optional (default) <br/> required |
