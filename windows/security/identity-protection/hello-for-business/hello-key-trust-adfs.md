@@ -1,5 +1,5 @@
 ---
-title: Prepare & Deploy Windows Active Directory Federation Services (Windows Hello for Business)
+title: Prepare & Deploy Windows Active Directory Federation Services
 description: How to Prepare and Deploy Windows Server 2016 Active Directory Federation Services for Windows Hello for Business
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
