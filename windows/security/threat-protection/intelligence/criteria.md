@@ -156,6 +156,8 @@ Microsoft maintains a worldwide network of analysts and intelligence systems whe
 
 Our PUA protection aims to safeguard user productivity and ensure enjoyable Windows experiences. This optional protection, available to enterprises, helps deliver more productive, performant, and delightful Windows experiences.
 
+You can also block downloads from PUA in the new Chromium-based Edge browser by going to **Settings** > **Privacy and services** and turning on **Block potentially unwanted apps**.
+
 *PUAs are not considered malware.*
 
 Microsoft uses specific categories and the category definitions to classify software as a PUA.
