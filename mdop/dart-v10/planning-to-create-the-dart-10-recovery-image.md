@@ -61,14 +61,12 @@ The following items are required or recommended for creating the DaRT recovery i
  
 
 ## Related topics
-Note :: Debugging tools in not available for seperate download,Instead you must download Windows Driver Kit (WDK)
 
 [Planning to Deploy DaRT 10](planning-to-deploy-dart-10.md)
 
  
 
  
-
 
 
 
