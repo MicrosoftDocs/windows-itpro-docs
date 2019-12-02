@@ -283,6 +283,40 @@ Whether EDR early preview features are enabled or not.
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
 
+#### Device tags
+
+Specify the tag name and its desired value, Current supported tags:Group - allows to set machine tag (reflected in the portal) 
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | tags |
+| **Data type** | Dictionary (nested preference) |
+| **Comments** | See the following sections for a description of the dictionary contents. |
+
+**Type of tag**
+
+Specifies the type of tag
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | key |
+| **Data type** | String |
+| **Possible values** | GROUP |
+
+**Value of tag**
+
+Specifies the value of tag
+
+|||
+|:---|:---|
+| **Domain** | com.microsoft.wdav |
+| **Key** | value |
+| **Data type** | String |
+| **Possible values** | any string |
+
+
 ## Recommended configuration profile
 
 To get started, we recommend the following configuration profile for your enterprise to take advantage of all protection features that Microsoft Defender ATP provides.
