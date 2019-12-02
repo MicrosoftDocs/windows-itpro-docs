@@ -39,11 +39,11 @@ The configuration profile is a *.plist* file that consists of entries identified
 >[!CAUTION]
 >The layout of the configuration profile depends on the management console that you are using. The following sections contain examples of configuration profiles for JAMF and Intune.
 
-The top level of the configuration profile includes product-wide preferences and entries for subareas of the product, which are explained in more detail in the next sections.
+The top level of the configuration profile includes product-wide preferences and entries for subareas of Microsoft Defender ATP, which are explained in more detail in the next sections.
 
 ### Antivirus engine preferences
 
-The *antivirusEngine* section of the configuration profile is used to manage the preferences of the antivirus component of the product.
+The *antivirusEngine* section of the configuration profile is used to manage the preferences of the antivirus component of Microsoft Defender ATP.
 
 |||
 |:---|:---|
@@ -221,7 +221,7 @@ Specify whether to enable cloud-delivered protection the device or not. To impro
 
 #### Diagnostic collection level
 
-Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by the product to Microsoft.
+Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by Microsoft Defender ATP to Microsoft.
 
 |||
 |:---|:---|
@@ -326,7 +326,7 @@ The following configuration profile will:
 - Enable real-time protection (RTP)
 - Specify how the following threat types are handled:
   - **Potentially unwanted applications (PUA)** are blocked
-  - **Archive bombs** (file with a high compression rate) are audited to the product logs
+  - **Archive bombs** (file with a high compression rate) are audited to Microsoft Defender ATP logs
 - Enable cloud-delivered protection
 - Enable automatic sample submission
 
@@ -449,7 +449,7 @@ The following configuration profile will:
 
 ## Full configuration profile example
 
-The following configuration profile contains entries for all settings described in this document and can be used for more advanced scenarios where you want more control over the product.
+The following configuration profile contains entries for all settings described in this document and can be used for more advanced scenarios where you want more control over Microsoft Defender ATP for Mac.
 
 ### JAMF profile
 
@@ -653,7 +653,7 @@ Once you've built the configuration profile for your enterprise, you can deploy 
 From the JAMF console, open **Computers** > **Configuration Profiles**, navigate to the configuration profile you'd like to use, then select **Custom Settings**. Create an entry with `com.microsoft.wdav` as the preference domain and upload the .plist produced earlier.
 
 >[!CAUTION]
->You must enter the correct preference domain (`com.microsoft.wdav`); otherwise, the preferences will not be recognized by the product.
+>You must enter the correct preference domain (`com.microsoft.wdav`); otherwise, the preferences will not be recognized by Microsoft Defender ATP.
 
 ### Intune deployment
 
@@ -672,7 +672,7 @@ From the JAMF console, open **Computers** > **Configuration Profiles**, navigate
 7. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 
 >[!CAUTION]
->You must enter the correct custom configuration profile name; otherwise, these preferences will not be recognized by the product.
+>You must enter the correct custom configuration profile name; otherwise, these preferences will not be recognized by Microsoft Defender ATP.
 
 ## Resources
 
