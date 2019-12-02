@@ -132,6 +132,6 @@ Retrieves the binary result package of previous Settings2/Apply operation. This 
 Supported operation is Get.
 
 
-## Related Links
+## Related topics
 
-[DDF UEFI Example File](./uefi-ddf.md)
+[UEFI DDF file](./uefi-ddf.md)
