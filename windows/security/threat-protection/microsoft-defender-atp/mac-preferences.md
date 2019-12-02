@@ -672,7 +672,7 @@ From the JAMF console, open **Computers** > **Configuration Profiles**, navigate
 7. Select **Manage** > **Assignments**. In the **Include** tab, select **Assign to All Users & All devices**.
 
 >[!CAUTION]
->You must enter the correct custom configuration profile name, otherwise these preferences will not be recognized by the product.
+>You must enter the correct custom configuration profile name; otherwise, these preferences will not be recognized by the product.
 
 ## Resources
 
