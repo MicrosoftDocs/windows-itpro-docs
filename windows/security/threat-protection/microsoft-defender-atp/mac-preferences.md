@@ -34,7 +34,7 @@ This article describes the structure of the configuration profile, includes a re
 
 ## Configuration profile structure
 
-The configuration profile is a .plist file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
+The configuration profile is a *.plist* file that consists of entries identified by a key (which denotes the name of the preference), followed by a value, which depends on the nature of the preference. Values can either be simple (such as a numerical value) or complex, such as a nested list of preferences.
 
 >[!CAUTION]
 >The layout of the configuration profile depends on the management console that you are using. The following sections contain examples of configuration profiles for JAMF and Intune.
@@ -54,7 +54,7 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 #### Enable / disable real-time protection
 
-Whether real-time protection (scan files as they are accessed) is enabled or not.
+Specify whether to enable real-time protection, which scans files as they are accessed.
 
 |||
 |:---|:---|
@@ -65,7 +65,7 @@ Whether real-time protection (scan files as they are accessed) is enabled or not
 
 #### Enable / disable passive mode
 
-Whether the antivirus engine runs in passive mode or not. In passive mode:
+Specify whether the antivirus engine runs in passive mode. Passive mode has the following implications: 
 - Real-time protection is turned off
 - On-demand scanning is turned on
 - Automatic threat remediation is turned off
@@ -82,7 +82,7 @@ Whether the antivirus engine runs in passive mode or not. In passive mode:
 
 #### Scan exclusions
 
-Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.
+Specify entities excluded from being scanned. Exclusions can be specified by full paths, extensions, or file names.
 
 |||
 |:---|:---|
@@ -93,7 +93,7 @@ Entities that have been excluded from the scan. Exclusions can be specified by f
 
 ##### Type of exclusion
 
-Specifies the type of content excluded from the scan.
+Specify content excluded from being scanned by type.
 
 |||
 |:---|:---|
@@ -104,7 +104,7 @@ Specifies the type of content excluded from the scan.
 
 ##### Path to excluded content
 
-Used to exclude content from the scan by full file path.
+Specify content excluded from being scanned by full file path.
 
 |||
 |:---|:---|
@@ -116,7 +116,7 @@ Used to exclude content from the scan by full file path.
 
 ##### Path type (file / directory)
 
-Indicates if the *path* property refers to a file or directory. 
+Indicate if the *path* property refers to a file or directory. 
 
 |||
 |:---|:---|
@@ -128,7 +128,7 @@ Indicates if the *path* property refers to a file or directory.
 
 ##### File extension excluded from the scan
 
-Used to exclude content from the scan by file extension.
+Specify content excluded from being scanned by file extension.
 
 |||
 |:---|:---|
@@ -140,7 +140,7 @@ Used to exclude content from the scan by file extension.
 
 ##### Name of excluded content
 
-Used to exclude content from the scan by file name.
+Specify content excluded from being scanned by file name.
 
 |||
 |:---|:---|
@@ -152,28 +152,28 @@ Used to exclude content from the scan by file name.
 
 #### Allowed threats
 
-List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.
+Specify threats by name that are not blocked by Microsoft Defender ATP for Mac. These threats will be allowed to run.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | allowedThreats |
 | **Data type** | Array of strings |
 
 #### Threat type settings
 
-The *threatTypeSettings* preference in the antivirus engine is used to control how certain threat types are handled by the product.
+Specify how certain threat types are handled by Microsoft Defender ATP for Mac.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | threatTypeSettings |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
 
 ##### Threat type
 
-Type of the threat for which the behavior is configured.
+Specify threat types.
 
 |||
 |:---|:---|
@@ -184,7 +184,7 @@ Type of the threat for which the behavior is configured.
 
 ##### Action to take
 
-Action to take when coming across a threat of the type specified in the preceding section. Can be:
+Specify what action to take when a threat of the type specified in the preceding section is detected. Choose from the following options:
 
 - **Audit**: your device is not protected against this type of threat, but an entry about the threat is logged.
 - **Block**: your device is protected against this type of threat and you are notified in the user interface and the security console.
@@ -192,29 +192,29 @@ Action to take when coming across a threat of the type specified in the precedin
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | value |
 | **Data type** | String |
 | **Possible values** | audit (default) <br/> block <br/> off |
 
 ### Cloud-delivered protection preferences
 
-The *cloudService* entry in the configuration profile is used to configure the cloud driven protection feature of the product.
+Configure the cloud-driven protection features of Microsoft Defender ATP for Mac.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | cloudService |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
 
 #### Enable / disable cloud-delivered protection
 
-Whether cloud delivered protection is enabled on the device or not. To improve the security of your services, we recommend keeping this feature turned on.
+Specify whether to enable cloud-delivered protection the device or not. To improve the security of your services, we recommend keeping this feature turned on.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | enabled |
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
@@ -236,58 +236,58 @@ Determines whether suspicious samples (that are likely to contain threats) are s
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | automaticSampleSubmission |
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
 
 ### User interface preferences
 
-The *userInterface* section of the configuration profile is used to manage the preferences of the user interface of the product.
+Manage the preferences for the user interface of Microsoft Defender ATP for Mac.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | userInterface |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
 
 #### Show / hide status menu icon
 
-Whether the status menu icon (shown in the top-right corner of the screen) is hidden or not.
+Specify whether to show or hide the status menu icon in the top-right corner of the screen.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | hideStatusMenuIcon |
 | **Data type** | Boolean |
 | **Possible values** | false (default) <br/> true |
 
 ### Endpoint detection and response preferences
 
-The *edr* section of the configuration profile is used to manage the preferences of the endpoint detection and response (EDR) component of Microsoft Defender ATP for Mac.
+Manage the preferences of the endpoint detection and response (EDR) component of Microsoft Defender ATP for Mac.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | edr |
 | **Data type** | Dictionary (nested preference) |
 | **Comments** | See the following sections for a description of the dictionary contents. |
 
 #### Enable / disable early preview
 
-Whether EDR early preview features are enabled or not.
+Specify whether to enable EDR early preview features.
 
 |||
 |:---|:---|
-| **Domain** | com.microsoft.wdav |
+| **Domain** | `com.microsoft.wdav` |
 | **Key** | earlyPreview |
 | **Data type** | Boolean |
 | **Possible values** | true (default) <br/> false |
 
 #### Device tags
 
-Specify the tag name and its desired value, Current supported tags:Group - allows to set machine tag (reflected in the portal) 
+Specify a tag name and its value. 
 
 |||
 |:---|:---|
@@ -305,7 +305,7 @@ Specifies the type of tag
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | key |
 | **Data type** | String |
-| **Possible values** | GROUP |
+| **Possible values** | `GROUP` |
 
 ##### Value of tag
 
