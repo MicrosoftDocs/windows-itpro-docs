@@ -54,7 +54,7 @@ The general steps for expanding the S mode base policy on your devices are to ge
         Set-RuleOption -FilePath "<path>\SupplementalPolicy.xml>" -Option 3 –Delete
         ```
         This deletes the ‘audit mode’ qualifier.
-    -  Since you'll be signing your policy, you must authorize the signing certificate you will use to sign the policy and optionally one or more additional signers that can be used to sign updates to the policy in the future. For more information, refer to section 2. Sign policy below. Use Add-SignerRule to add the signing certificate to the WDAC policy: 
+    -  Since you'll be signing your policy, you must authorize the signing certificate you will use to sign the policy and optionally one or more additional signers that can be used to sign updates to the policy in the future. For more information, refer to Section 2, Sign policy. Use Add-SignerRule to add the signing certificate to the WDAC policy: 
        
         ```powershell
         Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User -Update`
