@@ -10,6 +10,7 @@ ms.custom: CSSTroubleshooting
 audience: ITPro
 keywords: issues, bug, troubleshoot, fix, help, support, HoloLens
 manager: jarrettr
+ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
