@@ -20,7 +20,7 @@ appliesto:
 
 ## HoloLens 2
 > [!Note]
-> HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-emulator-archive).
+> HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
 ### November Update - build 18362.1039
 
