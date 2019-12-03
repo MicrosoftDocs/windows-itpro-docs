@@ -3202,7 +3202,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### SmartScreen policies
+### Windows Defender SmartScreen policies
 
 <dl>
   <dd>

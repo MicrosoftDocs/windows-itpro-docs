@@ -40,7 +40,7 @@ This node is the policy binary itself, which is encoded as base64.
 
 Scope is dynamic. Supported operations are Get, Add, Delete, and Replace.
 
-Value type is b64. Supported value is any well-formed WDAC policy, i.e. the base64-encoded content output by the ConvertFrom-CIPolicy cmdlet.
+Value type is b64. Supported value is a binary file, converted from the policy XML file by the ConvertFrom-CIPolicy cmdlet.
 
 Default value is empty.
 
@@ -118,8 +118,7 @@ To use ApplicationControl CSP, you must:
 - Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyTypeID>`.
 - Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
 
-If you are using hybrid MDM management with System Center Configuration Manager or using Intune, ensure that you are using Base64 as the Data type when using Custom OMA-URI
-functionality to apply the Code Integrity policy.
+If you are using hybrid MDM management with System Center Configuration Manager or using Intune, ensure that you are using Base64 as the Data type when using Custom OMA-URI functionality to apply the Code Integrity policy via uploading the binary file.
 
 ### Deploy policies
 To deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the the Format section in the Example 1 below.

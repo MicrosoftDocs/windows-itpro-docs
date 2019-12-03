@@ -25,12 +25,20 @@ ms.topic: article
 
 <table>
 <th>Issue<th>More information
+
+<tr><td>Windows Autopilot device provisioning can fail with TPM attestation errors or ESP timeouts on devices where the real-time clock is off by a significant amount of time (e.g. several minutes or more).</td>
+<td>To fix this issue: <ol><li>Boot the device to the start of the out-of-box experience (OOBE).
+<li>Establish a network connection (wired or wireless).
+<li>Run the command <b>w32tm /resync /force</b> to sync the time with the default time server (time.windows.com).</ol>
+</tr>
+
 <tr><td>Windows Autopilot for existing devices does not work for Windows 10, version 1903; you see screens that you've disabled in your Windows Autopilot profile, such as the Windows 10 License Agreement screen.
 <br>&nbsp;<br>
 This happens because Windows 10, version 1903 deletes the AutopilotConfigurationFile.json file.
 <td>To fix this issue: <ol><li>Edit the Configuration Manager task sequence and disable the <b>Prepare Windows for Capture</b> step.
 <li>Add a new <b>Run command line</b> step that runs <b>c:\windows\system32\sysprep\sysprep.exe /oobe /reboot</b>.</ol>
-<a href="https://oofhours.com/2019/09/19/a-challenge-with-windows-autopilot-for-existing-devices-and-windows-10-1903/">More information</a>
+<a href="https://oofhours.com/2019/09/19/a-challenge-with-windows-autopilot-for-existing-devices-and-windows-10-1903/">More information</a></tr>
+  
 <tr><td>TPM attestation fails on Windows 10 1903 due to missing AKI extension in EK certificate.  (An additional validation added in Windows 10 1903 to check that the TPM EK certs had the proper attributes according to the TCG specifications uncovered that a number of them don’t, so that validation will be removed).
 <td>Download and install the <a href="https://support.microsoft.com/help/4517211/windows-10-update-kb4517211">KB4517211 update</a>.
 <tr><td>The following known issues are resolved by installing the August 30, 2019 KB4512941 update (OS Build 18362.329):
