@@ -9,7 +9,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 11/20/2019
+ms.date: 12/02/2019
 ms.reviewer: scottmca
 manager: dansimp
 ms.localizationpriority: medium
@@ -90,7 +90,7 @@ The following list shows all the available devices you can manage in SEMM:
 | Alternate Boot                     | Allows you to manage use of an Alternate boot order to boot directly to a USB or Ethernet device by pressing both the Volume Down button and Power button during boot. If you do not configure this setting, Alternate boot is enabled. |
 | Boot Order Lock                    | Allows you to lock the boot order to prevent changes. If you do not configure this setting, Boot Order Lock is disabled.                                                                                                        |
 | USB Boot                           | Allows you to manage booting to USB devices. If you do not configure this setting, USB Boot is enabled.                                                                                                                 |
-| Network Stack                      | Allows you to manage Network Stack boot settings. If you do not configure this setting,  the ability to manage Network Stack boot settings is enabled.                                                                                                           |
+| Network Stack                      | Allows you to manage Network Stack boot settings. If you do not configure this setting,  the ability to manage Network Stack boot settings is disabled.                                                                                                           |
 | Auto Power On                      | Allows you to manage Auto Power On boot settings. If you do not configure this setting, Auto Power on is enabled.                                                                                                        |
 | Simultaneous Multi-Threading (SMT) | Allows you to manage Simultaneous Multi-Threading (SMT) to enable or disable hyperthreading. If you do not configure this setting, SMT is enabled.                                                  |
 |Enable Battery limit| Allows you to manage Battery limit functionality. If you do not configure this setting, Battery limit is enabled |
