@@ -7,7 +7,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 11/27/2019
 ms.reviewer: 
 manager: dansimp
 ms.localizationpriority: medium
@@ -25,7 +25,7 @@ The intended audiences for this topic include IT and network administrators inte
 
 Microsoft Surface Hub's security depends extensively on Wi-Fi Direct / Miracast and the associated 802.11, Wi-Fi Protected Access (WPA2), and Wireless Protected Setup (WPS) standards. Since the device only supports WPS (as opposed to WPA2 Pre-Shared Key (PSK) or WPA2 Enterprise), issues traditionally associated with 802.11 encryption are simplified by design. 
 
-It is important to note Surface Hub operates on par with the field of Miracast receivers, meaning that it is protected from, and vulnerable to, a similar set of exploits as all WPS-based wireless network devices. But Surface Hub’s implementation of WPS has extra precautions built in, and its internal architecture helps prevent an attacker – even after compromising the Wi-Fi Direct / Miracast layer – to move past the network interface onto other attack surfaces and connected enterprise networks see [Wi-Fi Direct vulnerabilities and how Surface Hub addresses them](#vulnerabilities).  
+It is important to note Surface Hub operates on par with the field of Miracast receivers, meaning that it is protected from, and vulnerable to, a similar set of exploits as all WPS-based wireless network devices. But Surface Hub’s implementation of WPS has extra precautions built in, and its internal architecture helps prevent an attacker – even after compromising the Wi-Fi Direct / Miracast layer – to move past the network interface onto other attack surfaces and connected enterprise networks. 
 
 ## Wi-Fi Direct background
 
@@ -37,7 +37,7 @@ Security for Wi-Fi Direct is provided by WPA2 using the WPS standard.  Authentic
 
 In Wi-Fi Direct, groups are created as either "persistent," allowing for automatic reconnection using stored key material, or "temporary," where devices cannot re-authenticate without user intervention or action. Wi-Fi Direct groups will typically determine a Group Owner (GO) through a negotiation protocol, which mimics the "station" or "Access Point" functionality for the established Wi-Fi Direct Group. This Wi-Fi Direct GO provides authentication (via an “Internal Registrar”), and facilitate upstream network connections. For Surface Hub, this GO negotiation does not take place, as the network only operates in "autonomous" mode, where Surface Hub is always the Group Owner. Finally, Surface Hub does not and will not join other Wi-Fi Direct networks itself as a client.
 
-<span id="vulnerabilities" />
+
 ## Wi-Fi Direct vulnerabilities and how Surface Hub addresses them
 
 **Vulnerabilities and attacks in the Wi-Fi Direct invitation, broadcast, and discovery process**: Wi-Fi Direct / Miracast attacks may target weaknesses in the group establishment, peer discovery, device broadcast, or invitation processes.

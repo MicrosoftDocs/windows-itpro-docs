@@ -53,7 +53,7 @@ You can click on each one of them and see the details, the description, the pote
 
 From that page, you can do any of the following depending on what you need to do:
 
-- Open software page - Drill down and open the software page to get more context of the software details, prevalence in the organization, weaknesses discovered, version distribution, and charts so you can see the exposure trend over time. 
+- Open software page - Drill down and open the software page to get more context of the software details, prevalence in the organization, weaknesses discovered, version distribution, application end-of-life, and charts so you can see the exposure trend over time. 
 
 - Choose from remediation options - Submit a remediation request to open a ticket in Microsoft Intune for your IT Administrator to pick up and address.
 
@@ -84,6 +84,7 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 
 
 ## Related topics
+- [Supported operating systems and platforms](tvm-supported-os.md)
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
