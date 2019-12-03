@@ -128,8 +128,6 @@ To make changes to the size of your Windows diagnostic data history, visit the *
 > [!Important]
 > Decreasing the maximum amount of diagnostic data viewable through the tool will remove all data history and requires a reboot of your device. Additionally, increasing the maximum amount of diagnostic data viewable by the tool may come with performance impacts to your machine.
 
-![Change the size of your data history through the app settings](images/ddv-change-db-size.png) 
-
 ## View additional diagnostic data in the View problem reports tool
 Available on Windows 1809 and higher, you can review additional Windows Error Reporting diagnostic data in the **View problem reports** page within the Diagnostic Data Viewer. 
 
