@@ -27,7 +27,7 @@ Beginning with the Windows 10 November 2019 update (build 18363), Microsoft Intu
 
 With Intune, IT Pros can now configure their managed S mode devices using a Windows Defender Application Control (WDAC) supplemental policy that expands the S mode base policy to authorize the apps their business uses. This feature changes the S mode security posture from “every app is Microsoft-verified" to “every app is verified by Microsoft or your organization”. 
 
-# Policy Authorization Process
+## Policy Authorization Process
 ![Policy Authorization](images/wdac-intune-policy-authorization.png)
 The general steps for expanding the S mode base policy on your devices are to generate a supplemental policy, sign that policy, and then upload the signed policy to Intune and assign it to user or device groups.
 1. Generate a supplemental policy with WDAC tooling
@@ -78,11 +78,11 @@ The general steps for expanding the S mode base policy on your devices are to ge
 > [!Note]
 > When updating your supplemental policy, ensure that the new version number is strictly greater than the previous one. Using the same version number is not allowed by Intune. Refer to [Set-CIPolicyVersion](https://docs.microsoft.com/powershell/module/configci/set-cipolicyversion?view=win10-ps) for information on setting the version number.
 
-# Standard Process for Deploying Apps through Intune
+## Standard Process for Deploying Apps through Intune
 ![Deploying Apps through Intune](images/wdac-intune-app-deployment.png)
 Refer to [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management)  for guidance on the existing procedure of packaging signed catalogs and app deployment.
 
-# Optional: Process for Deploying Apps using Catalogs
+## Optional: Process for Deploying Apps using Catalogs
 ![Deploying Apps using Catalogs](images/wdac-intune-app-catalogs.png)
 Your supplemental policy can be used to significantly relax the S mode base policy, but there are security trade-offs you must consider in doing so. For example, you can use a signer rule to trust an external signer, but that will authorize all apps signed by that certificate, which may include apps you don’t want to allow as well.
 
@@ -93,7 +93,7 @@ The basic process is to generate a catalog file for each app using Package Inspe
 > [!Note] 
 > Every time an app updates, you will need to deploy an updated catalog. Because of this, IT Pros should try to avoid using catalog files for applications that auto-update and direct users not to update applications on their own.
 
-# Sample Policy
+## Sample policy
 Below is a sample policy that allows kernel debuggers, PowerShell ISE, and Registry Editor. It also demonstrates how to specify your organization's code signing and policy signing certificates.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -176,7 +176,7 @@ Below is a sample policy that allows kernel debuggers, PowerShell ISE, and Regis
   </Settings>
 </SiPolicy>
 ```
-# Policy Removal
+## Policy removal
 > [!Note]
 > This feature currently has a known a policy deletion bug, with a fix expected in the 2D update in late February 2020. Devices of users who are unenrolled will still have their WDAC policies removed. In the mentime, IT Pros are recommended to update their policy with the below 'empty' policy which makes no changes to S mode.
 
