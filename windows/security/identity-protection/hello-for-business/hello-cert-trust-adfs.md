@@ -54,6 +54,7 @@ Windows Hello for Business on-premises deployments require a federation server f
 The AD FS role needs a server authentication certificate for the federation services, but you can use a certificate issued by your enterprise (internal) certificate authority.  The server authentication certificate should have the following names included in the certificate if you are requesting an individual certificate for each node in the federation farm:
 * Subject Name: The internal FQDN of the federation server (the name of the computer running AD FS)
 * Subject Alternate Name: Your federation service name, such as *fs.corp.contoso.com* (or an appropriate wildcard entry such as *.corp.contoso.com)
+* Subject Alternate Name: Your device registration service name, such as *enterpriseregistration.contoso.com*
 
 You configure your federation service name when you configure the AD FS role. You can choose any name, but that name must be different than the name of the server or host. For example, you can name the host server **adfs** and the federation service **fs**.  The FQDN of the host is adfs.corp.contoso.com and the FQDN of the federation service is fs.corp.contoso.com.
 
@@ -367,7 +368,7 @@ Approximately 60 days prior to enrollment agent certificate’s expiration, the 
 
 ### Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service
 > [!NOTE]
-> Normally this script is not needed, as enabling Device Registration via the ADFS Management console already creates the objects. You can validate the SCP using the script below.
+> Normally this script is not needed, as enabling Device Registration via the ADFS Management console already creates the objects. You can validate the SCP using the script below. For detailed information about the Device Registration Service, see [Configuring Device Registration](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn614658(v=ws.11)?redirectedfrom=MSDN)
 
 Now you will add the Service connection Point to ADFS device registration Service for your Active directory by running the following script:
 
