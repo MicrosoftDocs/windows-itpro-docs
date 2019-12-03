@@ -634,12 +634,12 @@ The following settings for Microsoft Edge on Windows 10 Mobile can be managed.
 -   **Allow InPrivate** Whether users can use InPrivate browsing
 -   **Allow Password Manager** Whether users can use Password Manager to save and manage passwords locally
 -   **Allow Search Suggestions in Address Bar** Whether search suggestions are shown in the address bar
--   **Allow SmartScreen** Whether SmartScreen Filter is enabled
+-   **Allow Windows Defender SmartScreen** Whether Windows Defender SmartScreen is enabled
 -   **Cookies**	Whether cookies are allowed
 -   **Favorites** Configure Favorite URLs
 -   **First Run URL** The URL to open when a user launches Microsoft Edge for the first time
--   **Prevent SmartScreen Prompt Override** Whether users can override the SmartScreen warnings for URLs
--   **Prevent Smart Screen Prompt Override for Files** Whether users can override the SmartScreen warnings for files
+-   **Prevent Windows Defender SmartScreen Prompt Override** Whether users can override the Windows Defender SmartScreen warnings for URLs
+-   **Prevent Smart Screen Prompt Override for Files** Whether users can override the Windows Defender SmartScreen warnings for files
 
 ## Manage
 

@@ -1,5 +1,5 @@
 ---
-title: Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP) (Windows 10)
+title: Recommended URLs for Windows Information Protection (Windows 10)
 description: Recommended URLs to add to your Enterprise Cloud Resources and Neutral Resources network settings, when used with Windows Information Protection (WIP).
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP and Neutral Resources, WIP and Enterprise Cloud Resources
 ms.prod: w10

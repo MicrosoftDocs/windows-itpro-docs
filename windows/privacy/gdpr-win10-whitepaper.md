@@ -1,6 +1,6 @@
 ---
-title: Beginning your General Data Protection Regulation (GDPR) journey for Windows 10 (Windows 10)
-description: Use this article to understand what GDPR is and about the products Microsoft provides to help you get started towards compliance.
+title: General Data Protection Regulation (GDPR) for Windows 10
+description: Use this article to understand what GDPR is and which products Microsoft provides to help you get started towards compliance.
 keywords: privacy, GDPR
 ms.prod: w10
 ms.mktglfcycl: manage
