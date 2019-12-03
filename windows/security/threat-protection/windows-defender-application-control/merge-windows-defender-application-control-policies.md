@@ -1,6 +1,6 @@
 ---
-title: Merge Windows Defender Application Control (WDAC) policies (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+title: Merge Windows Defender Application Control policies (Windows 10)
+description: Windows Defender Application Control (WDAC) restricts which applications users are allowed to run and the code that runs in the system core.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
