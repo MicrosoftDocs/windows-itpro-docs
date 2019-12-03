@@ -296,7 +296,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [**Win32\_UninterruptiblePowerSupply**](https://msdn.microsoft.com/library/windows/hardware/aa394503) |
 [**Win32\_USBController**](https://msdn.microsoft.com/library/windows/hardware/aa394504)    |
 [**Win32\_UTCTime**](https://msdn.microsoft.com/library/windows/hardware/aa394510)          | ![cross mark](images/checkmark.png)
-[**Win32\_VideoController**](https://docs.microsoft.com/en-us/windows/win32/cimwin32prov/win32-videocontroller) |
+[**Win32\_VideoController**](https://docs.microsoft.com/windows/win32/cimwin32prov/win32-videocontroller) |
 **Win32\_WindowsUpdateAgentVersion**                                                        |
  
 

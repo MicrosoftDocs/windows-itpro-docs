@@ -2448,7 +2448,7 @@ ADMX Info:
 
 Value and index pairs in the SyncML example:  
 - http://adfs.contoso.org 1
-- http://microsoft.com 2
+- https://microsoft.com 2
 
 <!--/Example-->
 <!--/Policy-->
