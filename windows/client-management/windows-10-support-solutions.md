@@ -23,16 +23,16 @@ This section contains advanced troubleshooting topics and links to help you reso
 - [Data collection for troubleshooting 802.1X authentication](https://docs.microsoft.com/windows/client-management/data-collection-for-802-authentication)
 
 ## Troubleshoot BitLocker
-- [BitLocker overview and requirements FAQ (Windows 10)](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq)
-- [BitLocker Upgrading FAQ (Windows 10)](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-upgrading-faq)
-- [BitLocker frequently asked questions (FAQ) (Windows 10)](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-deployment-and-administration-faq)
-- [BitLocker Key Management FAQ (Windows 10)](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-key-management-faq)
-- [BitLocker To Go FAQ (Windows 10)](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-to-go-faq)
-- [BitLocker and Active Directory Domain Services (AD DS) FAQ (Windows 10)](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-and-adds-faq)
-- [BitLocker Security FAQ (Windows 10)](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-security-faq)
-- [BitLocker frequently asked questions (FAQ) (Windows 10)](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-network-unlock-faq)
-- [Using BitLocker with other programs FAQ (Windows 10)](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-using-with-other-programs-faq)
-- [BitLocker recovery guide (Windows 10)](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan)
+- [Guidelines for troubleshooting BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/troubleshoot-bitlocker)
+- [BitLocker cannot encrypt a drive: known issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-cannot-encrypt-issues)
+- [Enforcing BitLocker policies by using Intune: known issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-intune-issues)
+- [BitLocker Network Unlock: known issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-network-unlock-issues)
+- [BitLocker recovery: known issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-recovery-issues)
+- [BitLocker configuration: known issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-config-issues)
+- [BitLocker cannot encrypt a drive: known TPM issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-cannot-encrypt-tpm-issues)
+- [BitLocker and TPM: other known issues](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-tpm-issues)
+- [Decode Measured Boot logs to track PCR changes](https://docs.microsoft.com/windows/security/information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs)
+- [BitLocker frequently asked questions (FAQ)](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)
 
 ## Troubleshoot Bugcheck and Stop errors
 - [Introduction to the page file](https://docs.microsoft.com/windows/client-management/introduction-page-file)
