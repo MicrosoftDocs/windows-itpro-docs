@@ -60,7 +60,6 @@ Because your protection is a cloud service, computers must have access to the in
 | Symbol Store|Used by Windows Defender Antivirus to restore certain critical files during remediation flows	| `https://msdl.microsoft.com/download/symbols` |
 | Universal Telemetry Client| Used by Windows to send client diagnostic data; Windows Defender Antivirus uses this for product quality monitoring purposes	| This update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints:   `vortex-win.data.microsoft.com` <br/>   `settings-win.data.microsoft.com`|
 
-
 ## Validate connections between your network and the cloud
 
 After whitelisting the URLs listed above, you can test if you are connected to the Windows Defender Antivirus cloud service and are correctly reporting and receiving information to ensure you are fully protected.
