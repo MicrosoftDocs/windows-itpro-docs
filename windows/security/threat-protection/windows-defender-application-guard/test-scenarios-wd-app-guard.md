@@ -1,5 +1,5 @@
 ---
-title: Testing scenarios using Windows Defender Application Guard in your business or organization (Windows 10)
+title: Testing scenarios with Windows Defender Application Guard (Windows 10)
 description: Suggested testing scenarios for Windows Defender Application Guard, showing how it works in both Standalone and Enterprise-managed mode.
 ms.prod: w10
 ms.mktglfcycl: manage

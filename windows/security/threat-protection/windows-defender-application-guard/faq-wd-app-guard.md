@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions - Windows Defender Application Guard (Windows 10)
+title: FAQ - Windows Defender Application Guard (Windows 10)
 description: Learn about the commonly asked questions and answers for Windows Defender Application Guard.
 ms.prod: w10
 ms.mktglfcycl: manage
