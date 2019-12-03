@@ -56,8 +56,8 @@
 ## [Update, troubleshoot, or recover HoloLens](hololens-management-overview.md)
 ## [Update HoloLens](hololens-update-hololens.md)
 ## [Manage updates on many HoloLens](hololens-updates.md)
-## [Troubleshoot HoloLens](hololens-troubleshooting.md)
 ## [Restart, reset, or recover](hololens-recovery.md)
+## [Troubleshoot HoloLens](hololens-troubleshooting.md)
 ## [Known issues](hololens-known-issues.md)
 ## [Frequently asked questions](hololens-faq.md)
 

@@ -1,13 +1,14 @@
 ---
 title: HoloLens troubleshooting
-description: Troubleshooting steps for Microsoft HoloLens.
+description: Solutions for common HoloLens issues.
 author: mattzmsft
 ms.author: mazeller
-ms.date: 11/27/2019
+ms.date: 12/02/2019
 ms.prod: hololens
 ms.topic: article
 ms.custom: CSSTroubleshooting
 audience: ITPro
+ms.localizationpriority: medium
 keywords: issues, bug, troubleshoot, fix, help, support, HoloLens
 manager: jarrettr
 appliesto:
