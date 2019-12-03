@@ -1,6 +1,6 @@
 ---
 title: How Surface Hub addresses Wi-Fi Direct security issues
-description: This topic provides guidance on Wi-Fi Direct security risks.
+description: Guidance about Wi-Fi Direct security risks.
 keywords: change history
 ms.prod: surface-hub
 ms.sitesec: library
@@ -15,37 +15,40 @@ ms.localizationpriority: medium
 
 # How Surface Hub addresses Wi-Fi Direct security issues
 
-Microsoft Surface Hub is an all-in-one productivity device that enables teams to better brainstorm, collaborate, and share ideas. Surface Hub relies on Miracast for wireless projection by using Wi-Fi Direct.
+Microsoft Surface Hub is an all-in-one productivity device that enables teams to better brainstorm, collaborate, and share ideas. Surface Hub relies on Miracast for wireless projection through Wi-Fi Direct.
 
-This topic provides guidance on Wi-Fi Direct security vulnerabilities, how Surface Hub has addressed those risks, and how Surface Hub administrators can configure the device for the highest level of security. This hardening information will help customers with high security requirements understand how best to protect their Surface Hub connected networks and data in transit.
+This article provides guidance on Wi-Fi Direct security vulnerabilities, how Surface Hub  addresses those risks, and how Surface Hub administrators can configure the device for the highest level of security. This information will help customers with high security requirements understand how best to protect their Surface Hub-connected networks and data in transit.
 
-The intended audiences for this topic include IT and network administrators interested in deploying Microsoft Surface Hub in their corporate environment with optimal security settings.
+The intended audiences for this topic include IT and network administrators who want to deploy Surface Hub in their corporate environment with optimal security settings.
 
 ## Overview
 
-Microsoft Surface Hub's security depends extensively on Wi-Fi Direct / Miracast and the associated 802.11, Wi-Fi Protected Access (WPA2), and Wireless Protected Setup (WPS) standards. Since the device only supports WPS (as opposed to WPA2 Pre-Shared Key (PSK) or WPA2 Enterprise), issues traditionally associated with 802.11 encryption are simplified by design. 
+Security for Surface Hub depends extensively on Wi-Fi Direct/Miracast and the associated 802.11, Wi-Fi Protected Access (WPA2), and Wireless Protected Setup (WPS) standards. Because the device only supports WPS (as opposed to WPA2 Pre-Shared Key (PSK) or WPA2 Enterprise),  the issues often associated with 802.11 encryption are simplified.
 
-It is important to note Surface Hub operates on par with the field of Miracast receivers, meaning that it is protected from, and vulnerable to, a similar set of exploits as all WPS-based wireless network devices. But Surface Hub’s implementation of WPS has extra precautions built in, and its internal architecture helps prevent an attacker – even after compromising the Wi-Fi Direct / Miracast layer – to move past the network interface onto other attack surfaces and connected enterprise networks. 
+Surface Hub operates on par with the field of Miracast receivers. So, it's vulnerable to a similar set of exploits as all WPS-based wireless network devices. But the Surface Hub implementation of WPS has extra precautions built in. Also, its internal architecture helps prevent an attacker who has compromised the Wi-Fi Direct/Miracast layer from move past the network interface onto other attack surfaces and connected enterprise networks.
 
 ## Wi-Fi Direct background
 
-Miracast is part of the Wi-Fi Display standard, which itself is supported by the Wi-Fi Direct protocol. These standards are supported in modern mobile devices for screen sharing and collaboration.
+Miracast is part of the Wi-Fi Display standard,which is supported by the Wi-Fi Direct protocol. These standards are supported in modern mobile devices for screen sharing and collaboration.
 
-Wi-Fi Direct or Wi-Fi "Peer to Peer" (P2P) is a standard released by the Wi-Fi Alliance for "Ad-Hoc" networks. This allows supported devices to communicate directly and create groups of networks without requiring a traditional Wi-Fi Access Point or an Internet connection.
+Wi-Fi Direct or Wi-Fi "peer to peer" (P2P) is a standard from the Wi-Fi Alliance for "Ad-Hoc" networks. Supported devices can communicate directly and create groups of networks without a conventional Wi-Fi access point or an Internet connection.
 
-Security for Wi-Fi Direct is provided by WPA2 using the WPS standard.  Authentication mechanism for devices can be a numerical pin (WPS-PIN), a physical or virtual Push Button (WPS-PBC), or an out-of-band message such as Near Field Communication (WPS-OOO). The Microsoft Surface Hub supports both Push Button (which is the default) and PIN methods.
+Security for Wi-Fi Direct is provided by WPA2 under the WPS standard. The authentication mechanism for devices can be a numerical pin (WPS-PIN), a physical or virtual push button (WPS-PBC), or an out-of-band message such as near field communication (WPS-OOO). Surface Hub supports the PIN method and the push-button, which is the default.
 
-In Wi-Fi Direct, groups are created as either "persistent," allowing for automatic reconnection using stored key material, or "temporary," where devices cannot re-authenticate without user intervention or action. Wi-Fi Direct groups will typically determine a Group Owner (GO) through a negotiation protocol, which mimics the "station" or "Access Point" functionality for the established Wi-Fi Direct Group. This Wi-Fi Direct GO provides authentication (via an “Internal Registrar”), and facilitate upstream network connections. For Surface Hub, this GO negotiation does not take place, as the network only operates in "autonomous" mode, where Surface Hub is always the Group Owner. Finally, Surface Hub does not and will not join other Wi-Fi Direct networks itself as a client.
+In Wi-Fi Direct, groups are created as one of the following:
+- Persistent, for which automatic reconnection cvan occur by using stored key material
+- Temporary," in which where devices can't re-authenticate without user action
 
+Wi-Fi Direct groups will determine a *Group Owner* (GO) through a negotiation protocol, which mimics the "station" or "access point" functionality for the established Wi-Fi Direct Group. This Wi-Fi Direct GO provides authentication (via an “Internal Registrar”) and facilitate upstream network connections. For Surface Hub, this GO negotiation doesn't occur. The network only operates in "autonomous" mode, and Surface Hub is always the Group Owner. Finally, Surface Hub itself doesn't join other Wi-Fi Direct networks itself as a client.
 
 ## Wi-Fi Direct vulnerabilities and how Surface Hub addresses them
 
-**Vulnerabilities and attacks in the Wi-Fi Direct invitation, broadcast, and discovery process**: Wi-Fi Direct / Miracast attacks may target weaknesses in the group establishment, peer discovery, device broadcast, or invitation processes.
+**Vulnerabilities and attacks in the Wi-Fi Direct invitation, broadcast, and discovery process**: Wi-Fi Direct/Miracast attacks may target weaknesses in the group establishment, peer discovery, device broadcast, or invitation processes.
 
-|Wi-Fi Direct Vulnerability |	Surface Hub Mitigation |
+|Wi-Fi Direct vulnerability | Surface Hub mitigation |
 | --- | --- |
-| The discovery process may remain active for an extended period of time, which could allow Invitations and connections to be established without the intent of the device owner.	| Surface Hub only operates as the Group Owner (GO), which does not perform the client Discovery or GO negotiation process. Broadcast can be turned off by fully disabling wireless projection. |
-| Invitation and discovery using PBC allows an unauthenticated attacker to perform repeated connection attempts or unauthenticated connections are automatically accepted.	| By requiring WPS PIN security, Administrators can reduce the potential for such unauthorized connections or "Invitation bombs" (where invitations are repeatedly sent until a user mistakenly accepts one). |
+| The discovery process may remain active for an extended period of time, which could allow invitations and connections to be established without the intent of the device owner.|  Surface Hub only operates as the Group Owner (GO), which does not perform the client discovery or GO negotiation process. Broadcast can be turned off by fully disabling wireless projection.|
+| Invitation and discovery through PBC allows an unauthenticated attacker to perform repeated connection attempts, or unauthenticated connections are automatically accepted. | By requiring WPS PIN security, administrators can reduce the potential for such unauthorized connections or "invitation bombs," in which invitations are repeatedly sent until a user mistakenly accepts one. |
 
 **Wi-Fi Protected Setup (WPS) Push Button Connect (PBC) vs PIN Entry**: Public weaknesses have been demonstrated in WPS-PIN method design and implementation, other vulnerabilities exist within WPS-PBC involving active attacks against a protocol designed for one time use. 
 
