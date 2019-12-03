@@ -90,7 +90,7 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
    Set-AzureADUser -ObjectId "HUB01@contoso.com" -PasswordPolicies "DisablePasswordExpiration"
    ```
 
-7. Surface Hub requires a license for Skype for Business functionality. In order to enable Skype for Business, your environment will need to meet the [prerequisites for Skype for Business online](hybrid-deployment-surface-hub-device-accounts.md#sfb-online).
+7. Surface Hub requires a license for Skype for Business functionality. In order to enable Skype for Business, your environment will need to meet the [prerequisites for Skype for Business online](hybrid-deployment-surface-hub-device-accounts.md#skype-for-business-online).
    
    Next, you can use `Get-AzureADSubscribedSku` to retrieve a list of available SKUs for your O365 tenant.
 
