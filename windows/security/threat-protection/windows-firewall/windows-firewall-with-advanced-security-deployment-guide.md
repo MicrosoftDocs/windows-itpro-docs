@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Firewall with Advanced Security Deployment Guide (Windows 10)
+title: Deploy Windows Defender Firewall with Advanced Security (Windows 10)
 description: Windows Defender Firewall with Advanced Security Deployment Guide
 ms.assetid: 56b51b97-1c38-481e-bbda-540f1216ad56
 ms.reviewer: 
