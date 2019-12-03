@@ -37,7 +37,7 @@ HoloLens 2 is also available in the following languages. However, this support d
 - Dutch (Netherlands)
 - Korean (Korea)
 
-# Changing language or keyboard
+## Changing language or keyboard
 
 > [!NOTE]
 > Your speech and dictation language depends on the Windows display language.
