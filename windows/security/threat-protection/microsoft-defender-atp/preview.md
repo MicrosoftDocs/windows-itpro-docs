@@ -44,8 +44,8 @@ The following features are included in the preview release:
 
 - [Endpoint detection and response for Mac devices](endpoint-detection-response-mac-preview.md). Recently, [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac.md) released. Expanding on the protection available in Microsoft Defender ATP for Mac, endpoint detection and response capabilities are now in preview. 
 
- - [Threat & Vulnerability Management application version end-of-life notification](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#navigate-through-your-security-recommendations)
-<BR>Application versions which have reached their end-of-life are labeled as such so you are aware that they will no longer be supported, and can take action to either install the latest version or uninstall and replace them. Doing so will help lessen the risks related to various vulnerability exposures due to unpatched applications.
+ - [Threat & Vulnerability Management application version end-of-life tag](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#navigate-through-your-security-recommendations)
+<BR>Application versions which have reached their end-of-life are labeled or tagged as such so you are aware that they will no longer be supported, and can take action to either install the latest version or uninstall and replace them. Doing so will help lessen the risks related to various vulnerability exposures due to unpatched applications.
 
  - [Threat & Vulnerability supported operating systems and platforms](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-supported-os) <BR>Ensure that you meet the operating system or platform requisites for Threat & Vulnerability Management so the activities in your devices are properly accounted for. Threat & Vulnerability Management supports Windows 7, Windows 10 1607-1703, Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, Windows Server 2019.
 
