@@ -1,5 +1,5 @@
 ---
-title: Configuring Hybrid key trust Windows Hello for Business - Group Policy
+title: Configure Hybrid Windows Hello for Business - Group Policy
 description: Configuring Hybrid key trust Windows Hello for Business - Group Policy
 keywords: identity, PIN, biometric, Hello, passport, WHFB, Windows Hello, key trust, key-trust
 ms.prod: w10

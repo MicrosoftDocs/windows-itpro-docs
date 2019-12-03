@@ -1,5 +1,5 @@
 ---
-title: Considerations when using Windows Defender Credential Guard (Windows 10)
+title: Advice while using Windows Defender Credential Guard (Windows 10)
 description: Considerations and recommendations for certain scenarios when using Windows Defender Credential Guard in Windows 10.
 ms.prod: w10
 ms.mktglfcycl: explore

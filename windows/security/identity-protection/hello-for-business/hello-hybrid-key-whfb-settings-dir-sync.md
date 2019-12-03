@@ -1,6 +1,6 @@
 ---
-title: Configuring Hybrid key trust Windows Hello for Business - Directory Synchronization
-description: Configuring Hybrid key trust Windows Hello for Business - Directory Synchronization
+title: Hybrid Windows Hello for Business - Directory Synchronization
+description: How to configure Hybrid key trust Windows Hello for Business - Directory Synchronization
 keywords: identity, PIN, biometric, Hello, passport, WHFB, dirsync, connect, Windows Hello, AD Connect, key trust, key-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
