@@ -39,7 +39,7 @@ Windows 10 provided an opportunity to end the era of infinite fragmentation. Wit
 
 This helps simplify servicing. Devices with the original Release to Market (RTM) version of a feature release installed could get up to date by installing the most recent LCU. 
 
-Windows publishes the new LCU packages for each Windows 10 version (1607, 1709, etc.) on the second Tuesday of each month. This package is classified as a required security update and contains contents from the previous LCU as well as new security, non-security and Internet Explorer 11 (IE11) fixes. It could require a reboot of the device to complete installation of the update.
+Windows publishes the new LCU packages for each Windows 10 version (1607, 1709, etc.) on the second Tuesday of each month. This package is classified as a required security update and contains contents from the previous LCU as well as new security, non-security, and Internet Explorer 11 (IE11) fixes. A reboot of the device might be required to complete installation of the update.
 
 
 ![High level cumulative update model](images/servicing-cadence.png)
