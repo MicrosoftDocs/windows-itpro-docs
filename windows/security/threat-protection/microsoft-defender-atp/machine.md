@@ -21,7 +21,7 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
-# Methods
+## Methods
 Method|Return Type |Description
 :---|:---|:---
 [List machines](get-machines.md) | [machine](machine.md) collection | List set of [machine](machine.md) entities in the org.
@@ -31,7 +31,7 @@ Method|Return Type |Description
 [Add or Remove machine tags](add-or-remove-machine-tags.md) | [machine](machine.md) | Add or Remove tag to a specific machine.
 [Find machines by IP](find-machines-by-ip.md) | [machine](machine.md) collection | Find machines seen with IP.
 
-# Properties
+## Properties
 Property |	Type	|	Description
 :---|:---|:---
 id | String | [machine](machine.md) identity.

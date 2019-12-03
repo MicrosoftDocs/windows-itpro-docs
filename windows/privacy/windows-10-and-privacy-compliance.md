@@ -1,6 +1,6 @@
 ---
+title: Windows 10 & Privacy Compliance Guide
 description: This article provides information to help IT and compliance professionals understand the personal data policies as related to Windows 10.
-title: Windows 10 & Privacy Compliance - A Guide for IT and Compliance Professionals
 keywords: privacy, GDPR, compliance
 ms.prod: w10
 ms.mktglfcycl: manage

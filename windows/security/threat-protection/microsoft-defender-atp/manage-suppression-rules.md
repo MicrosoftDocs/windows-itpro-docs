@@ -27,13 +27,13 @@ There might be scenarios where you need to suppress alerts from appearing in the
 
 You can view a list of all the suppression rules and manage them in one place. You can also turn an alert suppression rule on or off.
 
-## Turn a suppression rule on or off
 
 1. In the navigation pane, select **Settings** > **Alert suppression**. The list of suppression rules that users in your organization have created is displayed.
 
 2. Select a rule by clicking on the check-box beside the rule name.
 
-3. Click **Turn rule on** or **Turn rule off**.
+3. Click **Turn rule on**, **Edit rule**, or  **Delete rule**. When making changes to a rule, you can choose to release alerts that it has already suppressed, regardless whether or not these alerts match the new criteria. 
+
 
 ## View details of a suppression rule
 
