@@ -27,7 +27,7 @@ You can add tags on machines using the following ways:
 - Setting a registry key value
 
 >[!NOTE]
->There may be some latency between the time a tag is added to a machine and its availability in the machines list.  
+>There may be some latency between the time a tag is added to a machine and its availability in the machines list and machine page.  
 
 To add machine tags using API, see [Add or remove machine tags API](add-or-remove-machine-tags.md).
 
