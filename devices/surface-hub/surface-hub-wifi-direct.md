@@ -17,15 +17,15 @@ ms.localizationpriority: medium
 
 Microsoft Surface Hub is an all-in-one productivity device that enables teams to better brainstorm, collaborate, and share ideas. Surface Hub relies on Miracast for wireless projection through Wi-Fi Direct.
 
-This article provides guidance on Wi-Fi Direct security vulnerabilities, how Surface Hub  addresses those risks, and how Surface Hub administrators can configure the device for the highest level of security. This information will help customers with high security requirements understand how best to protect their Surface Hub-connected networks and data in transit.
+This article provides guidance on Wi-Fi Direct security vulnerabilities, how Surface Hub  addresses those risks, and how administrators can configure Surface Hub for the highest level of security. This information will help customers who have high security requirements protect their Surface Hub-connected networks and data in transit.
 
 The intended audiences for this topic include IT and network administrators who want to deploy Surface Hub in their corporate environment with optimal security settings.
 
 ## Overview
 
-Security for Surface Hub depends extensively on Wi-Fi Direct/Miracast and the associated 802.11, Wi-Fi Protected Access (WPA2), and Wireless Protected Setup (WPS) standards. Because the device only supports WPS (as opposed to WPA2 Pre-Shared Key (PSK) or WPA2 Enterprise),  the issues often associated with 802.11 encryption are simplified.
+Security for Surface Hub depends extensively on Wi-Fi Direct/Miracast and the associated 802.11, Wi-Fi Protected Access (WPA2), and Wireless Protected Setup (WPS) standards. Because the device only supports WPS (as opposed to WPA2 Pre-Shared Key (PSK) or WPA2 Enterprise), the issues often associated with 802.11 encryption are simplified.
 
-Surface Hub operates on par with the field of Miracast receivers. So, it's vulnerable to a similar set of exploits as all WPS-based wireless network devices. But the Surface Hub implementation of WPS has extra precautions built in. Also, its internal architecture helps prevent an attacker who has compromised the Wi-Fi Direct/Miracast layer from move past the network interface onto other attack surfaces and connected enterprise networks.
+Surface Hub operates on par with the field of Miracast receivers. So, it's vulnerable to a similar set of exploits as all WPS-based wireless network devices. But the Surface Hub implementation of WPS has extra precautions built in. Also, its internal architecture helps prevent an attacker who has compromised the Wi-Fi Direct/Miracast layer from moving past the network interface onto other attack surfaces and connected enterprise networks.
 
 ## Wi-Fi Direct background
 
@@ -33,28 +33,28 @@ Miracast is part of the Wi-Fi Display standard,which is supported by the Wi-Fi D
 
 Wi-Fi Direct or Wi-Fi "peer to peer" (P2P) is a standard from the Wi-Fi Alliance for "Ad-Hoc" networks. Supported devices can communicate directly and create groups of networks without a conventional Wi-Fi access point or an Internet connection.
 
-Security for Wi-Fi Direct is provided by WPA2 under the WPS standard. The authentication mechanism for devices can be a numerical pin (WPS-PIN), a physical or virtual push button (WPS-PBC), or an out-of-band message such as near field communication (WPS-OOO). Surface Hub supports the PIN method and the push-button, which is the default.
+Security for Wi-Fi Direct is provided by WPA2 under the WPS standard. The authentication mechanism for devices can be a numerical pin (WPS-PIN), a physical or virtual push button (WPS-PBC), or an out-of-band message such as near field communication (WPS-OOO). Surface Hub supports the PIN method and the push-button method, which is the default.
 
-In Wi-Fi Direct, groups are created as one of the following:
-- Persistent, for which automatic reconnection cvan occur by using stored key material
-- Temporary," in which where devices can't re-authenticate without user action
+In Wi-Fi Direct, groups are created as one of the following types:
+- Persistent, in which automatic reconnection can occur by using stored key material
+- Temporary," in which devices can't re-authenticate without user action
 
-Wi-Fi Direct groups will determine a *Group Owner* (GO) through a negotiation protocol, which mimics the "station" or "access point" functionality for the established Wi-Fi Direct Group. This Wi-Fi Direct GO provides authentication (via an “Internal Registrar”) and facilitate upstream network connections. For Surface Hub, this GO negotiation doesn't occur. The network only operates in "autonomous" mode, and Surface Hub is always the Group Owner. Finally, Surface Hub itself doesn't join other Wi-Fi Direct networks itself as a client.
+Wi-Fi Direct groups determine a *group owner* (GO) through a negotiation protocol, which mimics the "station" or "access point" functionality for the established Wi-Fi Direct Group. This Wi-Fi Direct GO provides authentication (via an “Internal Registrar”) and facilitate upstream network connections. For Surface Hub, this GO negotiation doesn't occur. The network only operates in "autonomous" mode, and Surface Hub is always the group owner. Finally, Surface Hub itself doesn't join other Wi-Fi Direct networks as a client.
 
 ## Wi-Fi Direct vulnerabilities and how Surface Hub addresses them
 
-**Vulnerabilities and attacks in the Wi-Fi Direct invitation, broadcast, and discovery process**: Wi-Fi Direct/Miracast attacks may target weaknesses in the group establishment, peer discovery, device broadcast, or invitation processes.
+**Vulnerabilities and attacks in the Wi-Fi Direct invitation, broadcast, and discovery process:** Wi-Fi Direct/Miracast attacks may target weaknesses in the group establishment, peer discovery, device broadcast, or invitation processes.
 
 |Wi-Fi Direct vulnerability | Surface Hub mitigation |
 | --- | --- |
-| The discovery process may remain active for an extended period of time, which could allow invitations and connections to be established without the intent of the device owner.|  Surface Hub only operates as the Group Owner (GO), which does not perform the client discovery or GO negotiation process. Broadcast can be turned off by fully disabling wireless projection.|
+| The discovery process may remain active for an extended period of time, which could allow invitations and connections to be established without the intent of the device owner. | Surface Hub only operates as the group owner, which doesn't perform the client discovery or GO negotiation processes. Fully disable wireless projection to turn off broadcast.|
 | Invitation and discovery through PBC allows an unauthenticated attacker to perform repeated connection attempts, or unauthenticated connections are automatically accepted. | By requiring WPS PIN security, administrators can reduce the potential for such unauthorized connections or "invitation bombs," in which invitations are repeatedly sent until a user mistakenly accepts one. |
 
-**Wi-Fi Protected Setup (WPS) Push Button Connect (PBC) vs PIN Entry**: Public weaknesses have been demonstrated in WPS-PIN method design and implementation. WPS-PBC has other vulnerabilities that could allow active attacks against a protocol that's designed for one-time use.
+**Wi-Fi Protected Setup (WPS) push button connect (PBC) vs PIN entry**: Public weaknesses have been demonstrated in WPS-PIN method design and implementation. WPS-PBC has other vulnerabilities that could allow active attacks against a protocol that's designed for one-time use.
 
 | Wi-Fi Direct vulnerability |	Surface Hub mitigation |
 | --- | --- |
-| WPS-PBC is vulnerable to active attackers. As stated WPS specification states: "The PBC method has zero bits of entropy and only protects against passive eavesdropping attacks. PBC protects against eavesdropping attacks and takes measures to prevent a device from joining a network that was not selected by the device owner. The absence of authentication, however, means that PBC does not protect against active attack." Attackers can use selective wireless jamming or other potential denial-of-service vulnerabilities to trigger an unintended Wi-Fi Direct GO or connection. Additionally, an active attacker, with only physical proximity, can repeatedly tear down any Wi-Fi Direct group and attempt the attack until it's successful. | Enable WPS-PIN security in Surface Hub configuration. Tthe Wi-Fi WPS specification states: "The PBC method should only be used if no PIN-capable Registrar is available and the WLAN user is willing to accept the risks associated with PBC". |
+| WPS-PBC is vulnerable to active attackers. The WPS specification states: "The PBC method has zero bits of entropy and only protects against passive eavesdropping attacks. PBC protects against eavesdropping attacks and takes measures to prevent a device from joining a network that was not selected by the device owner. The absence of authentication, however, means that PBC does not protect against active attack." Attackers can use selective wireless jamming or other denial-of-service vulnerabilities to trigger an unintended Wi-Fi Direct GO or connection. Also, dditionally, an active attacker who only has physical proximity, can repeatedly tear down any Wi-Fi Direct group and attempt the attack until it's successful. | Enable WPS-PIN security in Surface Hub configuration. The Wi-Fi WPS specification states: "The PBC method should only be used if no PIN-capable egistrar is available and the WLAN user is willing to accept the risks associated with PBC." |
 | WPS-PIN implementations can be subject to brute-force attacks that target a vulnerability in the WPS standard. Due to the design of split PIN verification, a number of implementation vulnerabilities arose in the past several years across a range of Wi-Fi hardware manufacturers. In 2011, two researchers (Stefan Viehböck and Craig Heffner) released information on this vulnerability and tools such as "Reaver" as a proof of concept. |	The Microsoft implementation of WPS in Surface Hub changes the pin every 30 seconds. To crack the pin, an attacker must work through the entire exploit in less than 30 seconds. Given the current state of tools and research in this area, a brute-force pin-cracking attack through WPS is unlikely. |
 | WPS-PIN can be cracked by an offline attack because of weak initial key (E-S1,E S2) entropy. In 2014, Dominique Bongard discribed a "Pixie Dust" attack where poor initial randomness for the pseudo random number generator (PRNG) in the wireless device allowed an offline brute-force attack. | The Microsoft implementation of WPS in Surface Hub is not susceptible to this offline PIN brute-force attack. The WPS-PIN is randomized for each connection. |
 
