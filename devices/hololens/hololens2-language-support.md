@@ -29,15 +29,15 @@ HoloLens 2 supports the following languages. This support includes voice command
 - German (Germany)
 - Italian (Italy)
 - Japanese (Japan)
-- Spanish (Mexico)
 - Spanish (Spain)
 
-Windows Mixed Reality is also available in the following languages. However, this support does not include speech commands or dictation features.
+HoloLens 2 is also available in the following languages. However, this support does not include speech commands or dictation features.
 
 - Chinese Traditional (Taiwan and Hong Kong)
 - Dutch (Netherlands)
 - Korean (Korea)
-- Changing language or keyboard
+
+# Changing language or keyboard
 
 > [!NOTE]
 > Your speech and dictation language depends on the Windows display language.
