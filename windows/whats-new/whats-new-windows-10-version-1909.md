@@ -116,7 +116,7 @@ This release adds the ability for Narrator and other assistive technologies to r
 
 This version of Windows 10 will include optimizations to how instructions are processed by the CPU in order to increase the performance and reliability of the operating system and its applications.
 
-When a CPU is manufactured, not all of the cores are created equal. Some of the cores may have slightly different voltage and power characteristics that could allow them to get a "boost" in performance. These cores are called "favored cores" as they can offer better performance then the other cores on the die.
+When a CPU is manufactured, not all of the cores are created equal. Some of the cores may have slightly different voltage and power characteristics that could allow them to get a "boost" in performance. These cores are called "favored cores" as they can offer better performance than the other cores on the die.
 
 With Intel Turbo Boost Max Technology 3.0, an operating system will use information stored in the CPU to identify which cores are the fastest and then push more of the CPU intensive tasks to those cores. According to Intel, this technology "delivers more than 15% better single-threaded performance".
 
