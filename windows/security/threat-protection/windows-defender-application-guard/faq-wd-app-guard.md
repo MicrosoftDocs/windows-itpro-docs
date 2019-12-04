@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 03/28/2019
+ms.date: 12/04/2019
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -51,7 +51,7 @@ Currently, the Application Guard Edge session doesn't support Extensions. Howeve
 
 ### How do I configure Windows Defender Application Guard to work with my network proxy (IP-Literal Addresses)? 
 
-Windows Defender Application Guard requires proxies to have a symbolic name, not just an IP address. IP-Literal proxy settings such as `192.168.1.4:81` can be annotated as `itproxy:81` or using a record such as `P19216810010` for a proxy with an IP address of `192.168.100.10`. This applies to Windows 10 Enterprise edition, 1709 or higher. These would be for the proxy policies under Network Isolation in Group Policy or Intune. 
+Windows Defender Application Guard requires proxies to have a symbolic name, not just an IP address. IP-Literal proxy settings such as `192.168.1.4:81` can be annotated as `itproxy:81` or using a record such as `P19216810010` for a proxy with an IP address of `192.168.100.10`. This applies to Windows 10 Enterprise edition 1709 or higher. These would be for the proxy policies under Network Isolation in Group Policy or Intune. 
 
 ### Which Input Method Editors (IME) in 19H1 are not supported? 
 
@@ -91,4 +91,4 @@ Yes, both the Enterprise Resource domains hosted in the cloud and the Domains ca
 
 ### Why does my encryption driver break Windows Defender Application Guard?
 
-Windows Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in a 0x80070013 ERROR_WRITE_PROTECT dialog. 
+Windows Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in an error message ("0x80070013 ERROR_WRITE_PROTECT"). 
