@@ -26,7 +26,7 @@ Microsoft Defender Advanced Threat Protection ([Microsoft Defender ATP](https://
 
 Windows Defender Antivirus is the [next generation protection](https://www.youtube.com/watch?v=Xy3MOxkX_o4) capability in the Microsoft Defender ATP security stack which addresses the latest and most sophisticated threats today. In some cases, customers might not even know they were protected because a cyberattack is stopped [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign). That's because Windows Defender Antivirus detects and stops malware at first sight by using [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), behavioral analysis, and other advanced technologies.
 <br><br>
-![String of images showing scores](./images/Transparency-report-November.png)
+![String of images showing scores](./images/Transparency-report-November1.png)
 
 **Download the latest transparency report: [Examining industry test results, November 2019](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)**
 
