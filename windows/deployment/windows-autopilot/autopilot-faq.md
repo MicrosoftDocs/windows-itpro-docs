@@ -1,6 +1,6 @@
 ---
-title: Windows Autopilot support
-ms.reviewer: 
+title: Windows Autopilot FAQ
+ms.reviewer: This topic provides OEMs, partners, administrators, and end-users with answers to some frequently asked questions about deploying Windows 10 with Windows Autopilot. 
 manager: laurawi
 description: Support information for Windows Autopilot
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune

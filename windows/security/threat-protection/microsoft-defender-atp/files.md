@@ -1,6 +1,6 @@
 ---
 title: File resource type
-description: Retrieves top recent alerts.
+description: Retrieves information associated with files alerts.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
