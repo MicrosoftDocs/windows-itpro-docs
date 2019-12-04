@@ -18,25 +18,25 @@ search.appverid: met150
 
 # Top scoring in industry tests
 
-Microsoft Defender Advanced Threat Protection ([Microsoft Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=cx-docs-avreports)) technologies consistently achieve high scores in independent tests, demonstrating the strength of its enterprise threat protection capabilities. Microsoft aims to be transparent about these test scores. This page summarizes the results and provides analysis.
+Microsoft Defender Advanced Threat Protection ([Microsoft Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)) technologies consistently achieve high scores in independent tests, demonstrating the strength of its enterprise threat protection capabilities. Microsoft aims to be transparent about these test scores. This page summarizes the results and provides analysis.
 
 ## Next generation protection
 
-[Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10?ocid=cx-docs-avreports) consistently performs highly in independent tests, displaying how it is a top choice in the antivirus market. Note that these tests only provide results for antivirus and do not test for additional security protections.
+[Windows Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) consistently performs highly in independent tests, displaying how it is a top choice in the antivirus market. Note that these tests only provide results for antivirus and do not test for additional security protections.
 
-Windows Defender Antivirus is the [next generation protection](https://www.youtube.com/watch?v=Xy3MOxkX_o4) capability in the Microsoft Defender ATP security stack which addresses the latest and most sophisticated threats today. In some cases, customers might not even know they were protected because a cyberattack is stopped [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign?ocid=cx-docs-avreports). That's because Windows Defender Antivirus detects and stops malware at first sight by using [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering?ocid=cx-docs-avreports), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak?ocid=cx-docs-avreports), behavioral analysis, and other advanced technologies.
+Windows Defender Antivirus is the [next generation protection](https://www.youtube.com/watch?v=Xy3MOxkX_o4) capability in the Microsoft Defender ATP security stack which addresses the latest and most sophisticated threats today. In some cases, customers might not even know they were protected because a cyberattack is stopped [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign). That's because Windows Defender Antivirus detects and stops malware at first sight by using [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), behavioral analysis, and other advanced technologies.
 <br><br>
 ![String of images showing scores](./images/Transparency-report-August-2.png)
 
-**Download the latest transparency report: [Examining industry test results, August 2019](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)**
+**Download the latest transparency report: [Examining industry test results, November 2019](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)**
 
 ### AV-TEST: Protection score of 6.0/6.0 in the latest test
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The scores listed below are for the Protection category which has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
 
-- July - August 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2019/microsoft-windows-defender-antivirus-4.18-193215/) | [Analysis]() <sup>**Latest**</sup>
+- July - August 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2019/microsoft-windows-defender-antivirus-4.18-193215/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp) <sup>**Latest**</sup>
 
-    Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, detecting 100% of 13,889 malware samples used. This is the eighth consecutive cycle that Windows Defender Antivirus achieved a perfect Protection score.
+    Windows Defender Antivirus achieved an overall Protection score of 6.0/6.0, detecting 100% of 13,889 malware samples used. This industry-leading antivirus solution has consistently achieved a perfect Protection score in all AV-TEST cycles in the past 14 months.
 
 - May - June 2019 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2019/microsoft-windows-defender-antivirus-4.18-192415/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
@@ -52,7 +52,7 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 Business Security Test consists of three main parts: the Real-World Protection Test which mimics online malware attacks, the Malware Protection Test where the malware enters the system from outside the internet (e.g. USB), and the Performance Test which looks at the impact on the system’s performance.
 
-- Business Security Test 2019 (August - September): [Real-World Protection Rate 99.9%](https://www.av-comparatives.org/tests/business-security-test-august-september-2019-factsheet/) | [Analysis]() <sup>**Latest**</sup>
+- Business Security Test 2019 (August - September): [Real-World Protection Rate 99.9%](https://www.av-comparatives.org/tests/business-security-test-august-september-2019-factsheet/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp) <sup>**Latest**</sup>
 
     Windows Defender Antivirus has consistently improved in Real-World Protection Rates over the past year, with 99.9% in the latest test.
 
@@ -66,7 +66,7 @@ Business Security Test consists of three main parts: the Real-World Protection T
 
 SE Labs tests a range of solutions used by products and services to detect and/or protect against attacks, including endpoint software, network appliances, and cloud services.
 
-- Enterprise Endpoint Protection July - September 2019: [AAA award](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) <sup>**pdf**</sup> | [Analysis]()
+- Enterprise Endpoint Protection July - September 2019: [AAA award](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
     Microsoft's next-gen protection was named as one of the leading products, stopping all of the targeted attacks and all but one public threat.
 
@@ -75,7 +75,6 @@ SE Labs tests a range of solutions used by products and services to detect and/o
 - Enterprise Endpoint Protection January - March 2019: [AAA award](https://selabs.uk/download/enterprise/epp/2019/jan-mar-2019-enterprise.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
 - Enterprise Endpoint Protection October - December 2018: [AAA award](https://selabs.uk/download/enterprise/epp/2018/oct-dec-2018-enterprise.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE33cdd)
-
 
 ## Endpoint detection & response
 
@@ -97,6 +96,6 @@ MITRE tested the ability of products to detect techniques commonly used by the t
 
 It is important to remember that Microsoft sees a wider and broader set of threats beyond what’s tested in the evaluations highlighted above. For example, in an average month, we identify over 100 million new threats.  Even if an independent tester can acquire and test 1% of those threats, that is a million tests across 20 or 30 products. In other words, the vastness of the malware landscape makes it extremely difficult to evaluate the quality of protection against real world threats.
 
-The capabilities within [Microsoft Defender ATP](https://www.microsoft.com/windowsforbusiness?ocid=cx-docs-avreports) provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses?ocid=cx-docs-avreports) that are not factored into industry antivirus tests, and address some of the latest and most sophisticated threats. Isolating AV from the rest of Microsoft Defender ATP creates a partial picture of how our security stack operates in the real world. For example, attack surface reduction and endpoint detection & response capabilities can help prevent malware from getting onto devices in the first place. We have proven that [Microsoft Defender ATP components catch samples](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA?ocid=cx-docs-avreports) that Windows Defender Antivirus missed in these industry tests, which is more representative of how effectively our security suite protects customers in the real world.
+The capabilities within Microsoft Defender ATP provide [additional layers of protection](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses?ocid=cx-docs-avreports) that are not factored into industry antivirus tests, and address some of the latest and most sophisticated threats. Isolating AV from the rest of Microsoft Defender ATP creates a partial picture of how our security stack operates in the real world. For example, attack surface reduction and endpoint detection & response capabilities can help prevent malware from getting onto devices in the first place. We have proven that [Microsoft Defender ATP components catch samples](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA?ocid=cx-docs-avreports) that Windows Defender Antivirus missed in these industry tests, which is more representative of how effectively our security suite protects customers in the real world.
 
-Using independent tests, customers can view one aspect of their security suite but can't assess the complete protection of all the security features. Microsoft is highly engaged in working with several independent testers to evolve security testing to focus on the end-to-end security stack. In the meantime, customers can evaluate Microsoft Defender Advanced Threat Protection in their own networks by signing up for a [90-day trial of Microsoft Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=cx-docs-avreports), or [enabling Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/preview-settings-windows-defender-advanced-threat-protection?ocid=cx-docs-avreports).
+Using independent tests, customers can view one aspect of their security suite but can't assess the complete protection of all the security features. Microsoft is highly engaged in working with several independent testers to evolve security testing to focus on the end-to-end security stack. In the meantime, customers can evaluate Microsoft Defender Advanced Threat Protection in their own networks by signing up for a [90-day trial of Microsoft Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=cx-docs-avreports), or [enabling Preview features on existing tenants](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview-settings).
