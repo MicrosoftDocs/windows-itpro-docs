@@ -7,8 +7,9 @@ manager: dansimp
 ms.author: macapara
 author: mjcaparas
 ms.prod: w10
-title: "Prerelease"
 ---
+
+# Microsoft Defender ATP Pre-release Disclaimer
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
