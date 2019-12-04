@@ -1,5 +1,5 @@
 ---
-title: Validate and Deploy MFA for Windows Hello for Business
+title: Validate and Deploy MFA for Windows Hello for Business with certificate trust
 description: How to Validate and Deploy Multifactor Authentication (MFA) Services for Windows Hello for Business
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10

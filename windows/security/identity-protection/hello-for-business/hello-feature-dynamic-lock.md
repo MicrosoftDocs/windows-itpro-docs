@@ -1,5 +1,5 @@
 ---
-title: Conditional Access
+title: Dynamic lock
 description: Conditional Access
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, conditional access
 ms.prod: w10

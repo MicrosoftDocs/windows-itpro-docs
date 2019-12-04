@@ -1,5 +1,5 @@
 ---
-title: Advanced Hunting API
+title: Advanced Hunting with Powershell API Guide
 ms.reviewer: 
 description: Use this API to run advanced queries
 keywords: apis, supported apis, advanced hunting, query
