@@ -91,4 +91,4 @@ Yes, both the Enterprise Resource domains hosted in the cloud and the Domains ca
 
 ### Why does my encryption driver break Windows Defender Application Guard?
 
-Windows Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work.
+Windows Defender Application Guard accesses files from a VHD mounted on the host that needs to be written during setup. If an encryption driver prevents a VHD from being mounted or from being written to, WDAG will not work and result in a ERROR_WRITE_PROTECT dialog. 
