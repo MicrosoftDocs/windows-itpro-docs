@@ -54,7 +54,7 @@ Business Security Test consists of three main parts: the Real-World Protection T
 
 - Business Security Test 2019 (August - September): [Real-World Protection Rate 99.9%](https://www.av-comparatives.org/tests/business-security-test-august-september-2019-factsheet/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp) <sup>**Latest**</sup>
 
-    Windows Defender Antivirus has been consistently high in Real-World Protection Rates over the past year, with 99.9% in the latest test.
+    Windows Defender Antivirus has scored consistently high in Real-World Protection Rates over the past year, with 99.9% in the latest test.
 
 - Business Security Test 2019 (March - June): [Real-World Protection Rate 99.9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
