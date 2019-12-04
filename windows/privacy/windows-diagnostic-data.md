@@ -19,6 +19,7 @@ ms.reviewer:
 # Windows 10, version 1709 and newer diagnostic data for the Full level
 
 Applies to:
+- Windows 10, version 1909
 - Windows 10, version 1903
 - Windows 10, version 1809
 - Windows 10, version 1803
