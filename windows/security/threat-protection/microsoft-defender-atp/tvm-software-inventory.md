@@ -21,12 +21,16 @@ ms.date: 04/11/2019
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+
+[!include[Prerelease information](prerelease.md)]
+
 Microsoft Defender ATP Threat & Vulnerability management's discovery capability shows in the **Software inventory** page. The software inventory includes the name of the product or vendor, the latest version it is in, and the number of weaknesses and vulnerabilities detected with it.
 
 ## Navigate through your software inventory
-1. Select **Software inventory** from the Threat & Vulnerability management navigation menu. 
-2. In the **Software inventory** page, select the application that you want to investigate and a flyout panel opens up with the software details, vendor information, prevalence in the organization, exposed machines, threat context, and its impact to your  organization's exposure score.   
-3. In the flyout panel, select **Open software page** to dive deeper into your software inventory. You will see how many weaknesses are discovered with the application, devices exposed, installed machines, version distribution, and the corresponding security recommendations for the weaknesses and vulnerabilities identified.
+1. Select **Software inventory** from the Threat & Vulnerability management navigation menu. The **Software inventory** page opens with a list of applications installed in your network, vendor name, weaknesses found, threats associated with them, exposed machines, impact, tags. You can also filter the software inventory list view based on weaknesses found in the applications, threats associated with them, and whether the applications have reached their end-of-life.      
+2. In the **Software inventory** page, select the application that you want to investigate and a flyout panel opens up with the same details mentioned above but in a more compact view. You can either dive deeper into the investigation and select **Open software page** or flag any technical inconsistencies by selecting **Report inaccuracy**. 
+3. Select **Open software page** to dive deeper into your software inventory to see how many weaknesses are discovered in the application, devices exposed, installed machines, version distribution, and the corresponding security recommendations for the weaknesses and vulnerabilities identified.
 
 ## How it works
 In the field of discovery, we are leveraging the same set of signals in Microsoft Defender ATP's endpoint detection and response that's responsible for detection, for vulnerability assessment. 
@@ -58,6 +62,7 @@ You can report a false positive when you see any vague, inaccurate version, inco
 
 
 ## Related topics
+- [Supported operating systems and platforms](tvm-supported-os.md)
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
@@ -66,3 +71,4 @@ You can report a false positive when you see any vague, inaccurate version, inco
 - [Remediation and exception](tvm-remediation.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
+- [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

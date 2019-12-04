@@ -1,6 +1,6 @@
 ---
-title: Identifying Your Windows Defender Firewall with Advanced Security Deployment Goals (Windows 10)
-description: Identifying Your Windows Defender Firewall with Advanced Security Deployment Goals
+title: Identify Goals for your WFAS Deployment (Windows 10)
+description: Identifying Your Windows Defender Firewall with Advanced Security (WFAS) Deployment Goals
 ms.assetid: 598cf45e-2e1c-4947-970f-361dfa264bba
 ms.reviewer: 
 ms.author: dansimp

@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
@@ -38,7 +39,7 @@ You can [configure which settings can be overridden locally with local policy ov
 PowerShell is typically installed under the folder _%SystemRoot%\system32\WindowsPowerShell_.
 
 
-**Use Windows Defender Antivirus PowerShell cmdlets:**
+## Use Windows Defender Antivirus PowerShell cmdlets
 
 1. Click **Start**, type **powershell**, and press **Enter**.
 2. Click **Windows PowerShell** to open the interface. 

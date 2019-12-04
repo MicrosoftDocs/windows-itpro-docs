@@ -14,6 +14,7 @@ ms.author: deniseb
 ms.date: 10/14/2019
 ms.reviewer: 
 manager: dansimp
+ms.custom: nextgen
 ---
 
 # Next-generation protection in Windows 10 and Windows Server 2016
@@ -33,8 +34,7 @@ Next-generation protection includes services that use machine learning together 
 >- [Cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
 >- Fast learning (including [block at first sight](configure-block-at-first-sight-windows-defender-antivirus.md))
 >- [Potentially unwanted application blocking](detect-block-potentially-unwanted-apps-windows-defender-antivirus.md)
-
-> [!NOTE]
+> 
 > For more information regarding what's new in each Windows version, please refer to [What's new in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/whats-new-in-microsoft-defender-atp).
 
 ## Minimum system requirements
@@ -44,7 +44,7 @@ Windows Defender Antivirus is your main vehicle for next-generation protection, 
 - [Minimum hardware requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 - [Hardware component guidelines](https://docs.microsoft.com/windows-hardware/design/component-guidelines/components)
 
-## Configuring Next-generation services
+## Configuring next-generation services
 
 You can use the following to configure and manage next-generation services in Windows 10 while running Windows Defender Antivirus:
 

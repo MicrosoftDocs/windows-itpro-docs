@@ -1,6 +1,6 @@
 ---
-title: Walkthrough use Group Policy to configure Windows Update for Business - Windows 10
-description: Configure Windows Update for Business settings using Group Policy.
+title: Configure Windows Update for Business via Group Policy (Windows 10)
+description: Walkthrough demonstrating how to configure Windows Update for Business settings, using Group Policy.
 ms.prod: w10
 ms.mktglfcycl: manage
 author: jaimeo
@@ -11,7 +11,7 @@ manager: laurawi
 ms.topic: article
 ---
 
-# Walkthrough: use Group Policy to configure Windows Update for Business
+# Walkthrough: Use Group Policy to configure Windows Update for Business
 
 
 **Applies to**
@@ -58,7 +58,7 @@ You can control when updates are applied, for example by deferring when an updat
 Windows Update for Business offers you the ability to turn on or off both driver and Microsoft product updates.   
 
 - Drivers (on/off): **Computer configuration > Administrative Templates > Windows Components > Windows Update > Do not include drivers with Windows Updates**
-- Microsoft product updates (on/off): **Computer configuration > Administrative Templates > Windows Components > Windows Update > Get updates for other Microsoft Products**
+- Microsoft product updates (on/off): **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates > Install updates for other Microsoft products**
 
 We recommend that you allow the driver policy to allow drivers to updated on devices (the default), but you can turn this setting off if you prefer to manage drivers manually. We also recommend that you leave the "Microsoft product updates" setting on.
 

@@ -28,7 +28,7 @@ Harness the power of Surface, Windows, and Office connected together through the
                     </div>
                     <div class="cardText">
                         <h3>Plan</h3>
-                         <p><a href="considerations-for-surface-and-system-center-configuration-manager.md">Surface and SCCM considerations</a></p>
+                         <p><a href="considerations-for-surface-and-system-center-configuration-manager.md">Surface and Endpoint Configuration Manager considerations</a></p>
                          <p><a href="wake-on-lan-for-surface-devices.md">Wake On LAN for Surface devices</a></p>
                     </div>
                 </div>

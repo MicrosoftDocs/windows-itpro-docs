@@ -19,15 +19,14 @@ ms.topic: article
 
 # Advanced hunting API
 
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-This API allows you to run programmatic queries that you are used to running from [Microsoft Defender ATP Portal](https://securitycenter.windows.com/hunting).
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 ## Limitations
-1. You can only run a query on data from the last 30 days
-2. The results will include a maximum of 10,000 rows
-3. The number of executions is limited (up to 15 calls per minute, 15 minutes of running time every hour and 4 hours of running time a day)
+1. You can only run a query on data from the last 30 days.
+2. The results will include a maximum of 100,000 rows.
+3. The number of executions is limited per tenant: up to 15 calls per minute, 15 minutes of running time every hour and 4 hours of running time a day.
 4. The maximal execution time of a single request is 10 minutes.
 
 ## Permissions
@@ -126,24 +125,7 @@ Content-Type: application/json​
 }
 ```
 
-## Troubleshoot issues
-
-- Error: (403) Forbidden / (401) Unauthorized
-
-
-~~~
-If you get this error when calling Microsoft Defender ATP API, your token might not include the necessary permission.
-
-Check [app permissions](exposed-apis-create-app-webapp.md#validate-the-token) or [delegated permissions](exposed-apis-create-app-nativeapp.md#validate-the-token) included in your token.
-
-If the 'roles' section in the token does not include the necessary permission: 
-
-- The necessary permission to your app might not have been granted. For more information, see [Access Microsoft Defender ATP without a user](exposed-apis-create-app-webapp.md#create-an-app) or [Access Microsoft Defender ATP on behalf of a user](exposed-apis-create-app-nativeapp.md#create-an-app) or,
-- The app was not authorized in the tenant, see [Application consent](exposed-apis-create-app-webapp.md#application-consent).
-~~~
-
-
 ## Related topic
-- [Microsoft Defender ATP APIs](apis-intro.md)
+- [Microsoft Defender ATP APIs introduction](apis-intro.md)
 - [Advanced Hunting from Portal](advanced-hunting-query-language.md)
 - [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)

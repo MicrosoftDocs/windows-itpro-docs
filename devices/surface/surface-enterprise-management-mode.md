@@ -9,7 +9,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 10/31/2019
+ms.date: 12/02/2019
 ms.reviewer: scottmca
 manager: dansimp
 ms.localizationpriority: medium
@@ -21,8 +21,7 @@ ms.audience: itpro
 Microsoft Surface Enterprise Management Mode (SEMM) is a feature of Surface devices with Surface UEFI that allows you to secure and manage firmware settings within your organization. With SEMM, IT professionals can prepare configurations of UEFI settings and install them on a Surface device. In addition to the ability to configure UEFI settings, SEMM also uses a certificate to protect the configuration from unauthorized tampering or removal.
 
 >[!NOTE]
->SEMM is only available on devices with Surface UEFI firmware. 
-
+>SEMM is only available on devices with Surface UEFI firmware. This includes most Surface devices including Surface Pro 7, Surface Pro X, and Surface Laptop 3 commercial SKUs with an Intel processor. SEMM is not supported on the 15" Surface Laptop 3 SKU with AMD processor (only available as a retail SKU). 
 
 When Surface devices are configured by SEMM and secured with the SEMM certificate, they are considered *enrolled* in SEMM. When the SEMM certificate is removed and control of UEFI settings is returned to the user of the device, the Surface device is considered *unenrolled* in SEMM.
 
@@ -91,7 +90,7 @@ The following list shows all the available devices you can manage in SEMM:
 | Alternate Boot                     | Allows you to manage use of an Alternate boot order to boot directly to a USB or Ethernet device by pressing both the Volume Down button and Power button during boot. If you do not configure this setting, Alternate boot is enabled. |
 | Boot Order Lock                    | Allows you to lock the boot order to prevent changes. If you do not configure this setting, Boot Order Lock is disabled.                                                                                                        |
 | USB Boot                           | Allows you to manage booting to USB devices. If you do not configure this setting, USB Boot is enabled.                                                                                                                 |
-| Network Stack                      | Allows you to manage Network Stack boot settings. If you do not configure this setting,  the ability to manage Network Stack boot settings is enabled.                                                                                                           |
+| Network Stack                      | Allows you to manage Network Stack boot settings. If you do not configure this setting,  the ability to manage Network Stack boot settings is disabled.                                                                                                           |
 | Auto Power On                      | Allows you to manage Auto Power On boot settings. If you do not configure this setting, Auto Power on is enabled.                                                                                                        |
 | Simultaneous Multi-Threading (SMT) | Allows you to manage Simultaneous Multi-Threading (SMT) to enable or disable hyperthreading. If you do not configure this setting, SMT is enabled.                                                  |
 |Enable Battery limit| Allows you to manage Battery limit functionality. If you do not configure this setting, Battery limit is enabled |
@@ -229,8 +228,8 @@ create a reset package using PowerShell to reset SEMM.
 
 ## Version History
 
-### Version 2.59.139
-* Support to Surface Pro 7 and Surface Laptop 3
+### Version 2.59.
+* Support to Surface Pro 7, Surface Pro X,  and Surface Laptop 3 13.5" and 15" models with Intel processor. Note:  Surface Laptop 3 15" AMD processor is not supported.
 - Support to Wake on Power feature
 
 ### Version 2.54.139.0

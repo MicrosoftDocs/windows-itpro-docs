@@ -1,5 +1,5 @@
 ---
-title: Settings and quick actions that can be locked down in Windows 10 Mobile (Windows 10)
+title: Lock down settings and quick actions in Windows 10 Mobile
 description: This topic lists the settings and quick actions that can be locked down in Windows 10 Mobile.
 ms.assetid: 69E2F202-D32B-4FAC-A83D-C3051DF02185
 ms.reviewer: 

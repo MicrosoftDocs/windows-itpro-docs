@@ -4,6 +4,7 @@
 ### [What is Microsoft Defender Advanced Threat Protection?](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
 ### [Overview of Microsoft Defender ATP capabilities](microsoft-defender-atp/overview.md)
 ### [Threat & Vulnerability Management]()
+#### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 #### [Next-generation capabilities](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
 #### [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 #### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
@@ -368,7 +369,7 @@
 ###### [Get access with user context](microsoft-defender-atp/exposed-apis-create-app-nativeapp.md)
 
 ##### [APIs]()
-###### [Supported Microsoft Defender ATP query APIs](microsoft-defender-atp/exposed-apis-list.md)
+###### [Supported Microsoft Defender ATP APIs](microsoft-defender-atp/exposed-apis-list.md)
 ###### [Advanced Hunting](microsoft-defender-atp/run-advanced-query-api.md)
 
 ###### [Alert]()
@@ -602,9 +603,9 @@
 #### [Family options](windows-defender-security-center/wdsc-family-options.md)
 
 
-### [SmartScreen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
-#### [SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
-#### [Set up and use SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
+### [Windows Defender SmartScreen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
+#### [Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
+#### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
 
 
 ### [Windows Defender Device Guard: virtualization-based security and WDAC](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
@@ -1072,7 +1073,7 @@
 ###### [Network security: Allow Local System to use computer identity for NTLM](security-policy-settings/network-security-allow-local-system-to-use-computer-identity-for-ntlm.md)
 ###### [Network security: Allow LocalSystem NULL session fallback](security-policy-settings/network-security-allow-localsystem-null-session-fallback.md)
 ###### [Network security: Allow PKU2U authentication requests to this computer to use online identities](security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities.md)
-###### [Network security: Configure encryption types allowed for Kerberos Win7 only](security-policy-settings/network-security-configure-encryption-types-allowed-for-kerberos.md)
+###### [Network security: Configure encryption types allowed for Kerberos](security-policy-settings/network-security-configure-encryption-types-allowed-for-kerberos.md)
 ###### [Network security: Do not store LAN Manager hash value on next password change](security-policy-settings/network-security-do-not-store-lan-manager-hash-value-on-next-password-change.md)
 ###### [Network security: Force logoff when logon hours expire](security-policy-settings/network-security-force-logoff-when-logon-hours-expire.md)
 ###### [Network security: LAN Manager authentication level](security-policy-settings/network-security-lan-manager-authentication-level.md)
@@ -1153,18 +1154,11 @@
 ###### [Synchronize directory service data](security-policy-settings/synchronize-directory-service-data.md)
 ###### [Take ownership of files or other objects](security-policy-settings/take-ownership-of-files-or-other-objects.md)
 
-### [Windows security guidance for enterprises](windows-security-configuration-framework/windows-security-compliance.md)
+### Windows security guidance for enterprises
 
 #### [Windows security baselines](windows-security-configuration-framework/windows-security-baselines.md)
 ##### [Security Compliance Toolkit](windows-security-configuration-framework/security-compliance-toolkit-10.md)
 ##### [Get support](windows-security-configuration-framework/get-support-for-security-baselines.md)
-#### [Windows security configuration framework](windows-security-configuration-framework/windows-security-configuration-framework.md)
-##### [Level 1 enterprise basic security](windows-security-configuration-framework/level-1-enterprise-basic-security.md)
-##### [Level 2 enterprise enhanced security](windows-security-configuration-framework/level-2-enterprise-enhanced-security.md)
-##### [Level 3 enterprise high security](windows-security-configuration-framework/level-3-enterprise-high-security.md)
-##### [Level 4 enterprise dev/ops workstation](windows-security-configuration-framework/level-4-enterprise-devops-security.md)
-##### [Level 5 enterprise administrator workstation](windows-security-configuration-framework/level-5-enterprise-administrator-security.md)
-
 ### [MBSA removal and alternatives](mbsa-removal-and-guidance.md)
 
 ### [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)

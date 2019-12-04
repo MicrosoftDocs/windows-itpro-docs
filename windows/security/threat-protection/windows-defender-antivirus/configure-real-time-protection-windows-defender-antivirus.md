@@ -9,11 +9,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.date: 11/13/2018
 ms.reviewer: 
 manager: dansimp
+ms.custom: nextgen
 ---
 
 # Enable and configure antivirus always-on protection and monitoring
@@ -43,7 +44,7 @@ To configure these settings:
 Location | Setting | Description | Default setting (if not configured)
 ---|---|---|---
 Real-time protection | Monitor file and program activity on your computer | The Windows Defender Antivirus engine makes note of any file changes (file writes, such as moves, copies, or modifications) and general program activity (programs that are opened or running and that cause other programs to run) | Enabled
-Real-time protection | Scan all downloaded files and attachments | Downloaded files and attachments are automatically scanned. This operates in addition to the SmartScreen filter, which scans files before and during downloading | Enabled
+Real-time protection | Scan all downloaded files and attachments | Downloaded files and attachments are automatically scanned. This operates in addition Windows Defender SmartScreen, which scans files before and during downloading | Enabled
 Real-time protection | Turn on process scanning whenever real-time protection is enabled | You can independently enable the Windows Defender Antivirus engine to scan running processes for suspicious modifications or behaviors. This is useful if you have temporarily disabled real-time protection and want to automatically scan processes that started while it was disabled | Enabled
 Real-time protection | Turn on behavior monitoring | The AV engine will monitor file processes, file and registry changes, and other events on your endpoints for suspicious and known malicious activity | Enabled
 Real-time protection | Turn on raw volume write notifications | Information about raw volume writes will be analyzed by behavior monitoring | Enabled
@@ -59,7 +60,7 @@ Root | Allow antimalware service to remain running always | If protection update
 
 The main real-time protection capability is enabled by default, but you can disable it with Group Policy:
 
-**Use Group Policy to disable real-time protection:**
+### Use Group Policy to disable real-time protection
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -69,7 +70,7 @@ The main real-time protection capability is enabled by default, but you can disa
 
 4. Double-click the **Turn off real-time protection** setting and set the option to **Enabled**. Click **OK**.
 
-## Related topics
+## Related articles
 
 - [Configure behavioral, heuristic, and real-time protection](configure-protection-features-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
