@@ -182,6 +182,20 @@ ComputerName=any(ComputerName) by MachineId, AlertId
 
 ```
 
+## Conduct an inventory of application or application versions which have reached their end-of-life
+End-of-life for applications or application versions means that they will no longer be supported nor serviced. When you use application or application versions which have reached their end of life, you're exposing your organization to security vulnerabilities, legal, and financial risks. 
+
+It is crucial for you as Security and IT Administrators to work together and ensure that your organization's software inventory is configured for optimal results, compliance, and a healthy network ecosystem. 
+
+To conduct an inventoy of application versions which have reached their end of life:
+1. From the Threat & Vulnerability Management menu, navigate to **Security recommendations*.
+2. Go to the **Filters** panel and select **Software update** from **Remediation Type** options. Doing so will show your list of software recommendations associated with applications which have reached their end-of-life tagged with **Has EOL versions**.
+3. Select an application that you'd like to investigate. A fly-out screen opens. Select **Open software page**
+4. In the **Software page** select the **Version distribution** tab to know which versions of the application have reached their end-of-life, and how many vulnerabilities were discovered in it.
+
+After you have identified which application and application versions are vulnerable due to its end-of-life status, prioritize  remediation to lower your organizations exposure to vulnerabilities and advanced persistent threats.
+
+
 ## Related topics
 - [Supported operating systems and platforms](tvm-supported-os.md)
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
