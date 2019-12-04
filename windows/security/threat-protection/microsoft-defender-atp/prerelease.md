@@ -7,7 +7,6 @@ manager: dansimp
 ms.author: macapara
 author: mjcaparas
 ms.prod: w10
-title: "Prerelease"
 ---
 
 # Microsoft Defender ATP Pre-release Disclaimer

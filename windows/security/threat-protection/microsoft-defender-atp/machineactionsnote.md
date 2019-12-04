@@ -7,7 +7,6 @@ manager: dansimp
 ms.author: macapara
 author: mjcaparas
 ms.prod: w10
-title: Note
 ---
 
 # Perform a Machine Action via the Microsoft Defender ATP API
