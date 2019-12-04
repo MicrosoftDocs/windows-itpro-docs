@@ -97,6 +97,8 @@ In addition to the settings in the table, you may want to set up **automatic log
 > [!TIP]
 > You can also configure automatic sign-in [using the Autologon tool from Sysinternals](https://docs.microsoft.com/sysinternals/downloads/autologon).
 
+> [!NOTE]
+> If you are also using [Custom Logon](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/custom-logon) with HideAutoLogonUI enabled, to avoid a black screen after password expires, we recommend that you consider [setting the password to never expire](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/troubleshooting-custom-logon#the-device-displays-a-black-screen-when-a-password-expiration-screen-is-displayed).
 
 ## Interactions and interoperability
 
