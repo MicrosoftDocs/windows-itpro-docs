@@ -193,7 +193,7 @@ To conduct an inventory of applications or application versions which have reach
 3. Select an application that you'd like to investigate. A fly-out screen opens where you can select **Open software page**
 4. In the **Software page** select the **Version distribution** tab to know which versions of the application have reached their end-of-life, and how many vulnerabilities were discovered in it.
 
-After you have identified which applications and application versions are vulnerable due to its end-of-life status, prioritize  remediation to lower your organizations exposure to vulnerabilities and advanced persistent threats.
+After you have identified which applications and application versions are vulnerable due to its end-of-life status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. See [Remediation and exception](tvm-remediation.md) for details.
 
 
 ## Related topics
