@@ -56,6 +56,8 @@
 ## Overview
 ### [What's new in Windows 10, version 1703 for Surface Hub?](surfacehub-whats-new-1703.md)
 ### [Operating system essentials (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
+### [Technical information for 55” Microsoft Surface Hub](surface-hub-technical-55.md)
+### [Technical information for 84” Microsoft Surface Hub](surface-hub-technical-84.md)
 
 ## Plan
 ### [Prepare your environment for Microsoft Surface Hub](prepare-your-environment-for-surface-hub.md)
@@ -111,7 +113,6 @@
 ## Troubleshoot
 ### [Using the Surface Hub Recovery Tool](surface-hub-recovery-tool.md)
 ### [Surface Hub SSD replacement](surface-hub-ssd-replacement.md)
-
 ### [Top support solutions for Surface Hub](support-solutions-surface-hub.md)
 ### [Troubleshoot Microsoft Surface Hub](troubleshoot-surface-hub.md)
 ### [Surface Hub Update History](surface-hub-update-history.md)
@@ -124,6 +125,4 @@
 ### [Surface Hub may install updates and restart outside maintenance hours](surface-hub-installs-updates-and-restarts-outside-maintenance-hours.md)
 ### [General Data Privacy Regulation and Surface Hub](general-data-privacy-regulation-and-surface-hub.md)
 ### [Useful downloads for Surface Hub administrators](surface-hub-downloads.md)
-### [Technical information for 55” Microsoft Surface Hub](surface-hub-technical-55.md)
-### [Technical information for 84” Microsoft Surface Hub](surface-hub-technical-84.md)
 ### [Change history for Surface Hub](change-history-surface-hub.md)
