@@ -667,7 +667,7 @@ The following fields are available:
 - **HasUxBlockOverride**  Does the file have a block that is overridden by a tag in the SDB?
 - **MigApplication**  Does the file have a MigXML from the SDB associated with it that applies to the current upgrade mode?
 - **MigRemoval**  Does the file have a MigXML from the SDB that will cause the app to be removed on upgrade?
-- **NeedsDismissAction**  Will the file cause an action that can be dimissed?
+- **NeedsDismissAction**  Will the file cause an action that can be dismissed?
 - **NeedsInstallPostUpgradeData**  After upgrade, the file will have a post-upgrade notification to install a replacement for the app.
 - **NeedsNotifyPostUpgradeData**  Does the file have a notification that should be shown after upgrade?
 - **NeedsReinstallPostUpgradeData**  After upgrade, this file will have a post-upgrade notification to reinstall the app.
