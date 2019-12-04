@@ -157,13 +157,13 @@ This table includes the attributes used by the Enterprise Mode schema.
 </thead>
 <tbody>
 <tr>
-<td>&lt;version&gt;</td>
+<td>version</td>
 <td>Specifies the version of the Enterprise Mode Site List. This attribute is supported for the &lt;rules&gt; element.</td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 <tr>
-<td>&lt;exclude&gt;</td>
-<td>Specifies the domain or path excluded from applying the behavior and is supported on the &lt;domain&gt; and &lt;path&gt; elements.
+<td>exclude</td>
+<td>Specifies the domain or path is excluded from applying Enterprise Mode. This attribute is only supported on the &lt;domain&gt; and &lt;path&gt; elements in the &lt;emie&gt; section.
 <p><b>Example</b>
 <pre class="syntax">
 &lt;emie&gt;
@@ -175,7 +175,7 @@ Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">http
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 <tr>
-<td>&lt;docMode&gt;</td>
+<td>docMode</td>
 <td>Specifies the document mode to apply. This attribute is only supported on &lt;domain&gt; or &lt;path&gt; elements in the &lt;docMode&gt; section.
 <p><b>Example</b>
 <pre class="syntax">
