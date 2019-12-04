@@ -51,8 +51,8 @@ You'll need to enable the live response capability in the [Advanced features set
     >Allowing the use of unsigned scripts may increase your exposure to threats.
  
 
-    > [!ÏMPORTNAT]
-    > The option to upload a file to the library is only available to those with the appropriate RBAC permissions. The button is greyed out for users with only delegated permissions.
+    > [!ÏMPORTANT]
+    > The current implementation of the Live Response within Defender ATP the option "Upload file to library" button function is not available to those with only delegated permissions via DATP/RBAC roles.
 
   Running unsigned scripts is generally not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
     
