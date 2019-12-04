@@ -30,12 +30,23 @@ Windows Hello addresses the following problems with passwords:
 - Passwords are subject to [replay attacks](https://go.microsoft.com/fwlink/p/?LinkId=615673).
 - Users can inadvertently expose their passwords due to [phishing attacks](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing).
 
->[!div class="mx-tdBreakAll"]
->| | | |
->| :---: | :---: | :---: |
->| [![Overview Icon](images/hello_filter.png)](hello-overview.md)</br>[Overview](hello-overview.md) | [![Why a PIN is better than a password Icon](images/hello_lock.png)](hello-why-pin-is-better-than-password.md)</br>[Why PIN is better than a password](hello-why-pin-is-better-than-password.md) | [![Manage Hello Icon](images/hello_gear.png)](hello-manage-in-organization.md)</br>[Manage Windows Hello in your Organization](hello-manage-in-organization.md) |
+> | | | |
+> | :---: | :---: | :---: |
+> | [![Overview Icon](images/hello_filter.png)](hello-overview.md)</br>[Overview](hello-overview.md) | [![Why a PIN is better than a password Icon](images/hello_lock.png)](hello-why-pin-is-better-than-password.md)</br>[Why PIN is better than a password](hello-why-pin-is-better-than-password.md) | [![Manage Hello Icon](images/hello_gear.png)](hello-manage-in-organization.md)</br>[Manage Windows Hello in your Organization](hello-manage-in-organization.md) |
 
 ## Prerequisites
+
+> [!Important]
+> 1. Hybrid deployments support non-destructive PIN reset that only works with the certificate trust model.</br>. 
+> **Requirements:**</br>
+> Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903</br>
+> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+>
+> 2. On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.</br>
+> **Requirements:**</br>
+> Reset from settings - Windows 10, version 1703, Professional</br>
+> Reset above lock screen - Windows 10, version 1709, Professional</br>
+> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 ### Cloud Only Deployment
 
@@ -58,7 +69,7 @@ The table shows the minimum requirements for each deployment. For key trust in a
 | Windows Server 2016 or later Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | Windows Server 2016 or later Domain Controllers | Windows Server 2008 R2 or later Domain Controllers | 
 | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority |
 | N/A | Windows Server 2016 AD FS with [KB4088889 update](https://support.microsoft.com/help/4088889) (hybrid Azure AD joined clients),<br> and</br>Windows Server 2012 or later Network Device Enrollment Service (Azure AD joined) | N/A | Windows Server 2012 or later Network Device Enrollment Service |
-| Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/3rd Party MFA Adapter| Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/3rd Party MFA Adapter |
+| Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or</br>AD FS w/Azure MFA adapter, or</br>AD FS w/Azure MFA Server adapter, or</br>AD FS w/3rd Party MFA Adapter |
 | Azure Account | Azure Account | Azure Account | Azure Account |
 | Azure Active Directory | Azure Active Directory | Azure Active Directory | Azure Active Directory |
 | Azure AD Connect | Azure AD Connect | Azure AD Connect | Azure AD Connect | 
@@ -79,5 +90,5 @@ The table shows the minimum requirements for each deployment.
 | AD FS with 3rd Party MFA Adapter | AD FS with 3rd Party MFA Adapter |
 | Azure Account, optional for Azure MFA billing | Azure Account, optional for Azure MFA billing |
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > For Windows Hello for Business key trust deployments, if you have several domains, at least one Windows Server Domain Controller 2016 or newer is required for each domain. For more information, see the [planning guide](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-adequate-domain-controllers).

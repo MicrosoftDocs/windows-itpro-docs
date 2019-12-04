@@ -23,7 +23,7 @@ ms.topic: article
 
 Represent a file entity in Microsoft Defender ATP.
 
-# Methods
+## Methods
 Method|Return Type |Description
 :---|:---|:---
 [Get file](get-file-information.md) | [file](files.md) | Get a single file 
@@ -32,7 +32,7 @@ Method|Return Type |Description
 [file statistics](get-file-statistics.md) | Statistics summary | Retrieves the prevalence for the given file.
 
 
-# Properties
+## Properties
 Property |	Type	|	Description
 :---|:---|:---
 sha1 | String | Sha1 hash of the file content

@@ -1,5 +1,5 @@
 ---
-title: Introduction to configuration service providers (CSPs) for IT pros (Windows 10)
+title: Intro to configuration service providers for IT pros (Windows 10)
 description: Configuration service providers (CSPs) expose device configuration settings in Windows 10. 
 ms.assetid: 25C1FDCA-0E10-42A1-A368-984FFDB2B7B6
 ms.reviewer: 

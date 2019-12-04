@@ -19,7 +19,7 @@ ms.topic: article
 
 # Deploy the latest firmware and drivers for Surface devices
 
-> **Home users:** This article is only intended for technical support agents and IT professionals. If you're looking for help to install Surface updates or firmware on a home device, please see [Update Surface firmware and Windows 10](https://support.microsoft.com/help/4023505).
+> **Home users:** This article is only intended for technical support agents and IT professionals, and applies only to Surface devices. If you're looking for help to install Surface updates or firmware on a home device, please see [Update Surface firmware and Windows 10](https://support.microsoft.com/help/4023505).
 
 Under typical conditions, Windows Update automatically keeps Windows Surface devices up-to-date by downloading and installing the latest device drivers and firmware. However, you may sometimes have to download and install updates manually. For example, you may have to manually manage updates when you deploy a new version of Windows.
 

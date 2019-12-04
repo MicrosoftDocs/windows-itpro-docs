@@ -24,7 +24,7 @@ ms.reviewer:
 -   Certificate trust
 
 
-The key registration process for the On-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema.  The key-trust model receives the schema extension when the first Windows Server 2016 domain controller is added to the forest.  The certificate trust model requires manually updating the current schema to the Windows Server 2016 schema. If you already have a Windows Server 2016 domain controller in your forest, you can skip the next step.
+The key registration process for the On-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema.  The key-trust model receives the schema extension when the first Windows Server 2016 domain controller is added to the forest.  The certificate trust model requires manually updating the current schema to the Windows Server 2016 schema. If you already have a Windows Server 2016 domain controller in your forest, you can skip the **Updating the Schema** and **Create the KeyCredential Admins Security Global Group** steps.
 
 Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
 
