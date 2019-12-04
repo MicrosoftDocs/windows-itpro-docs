@@ -14,11 +14,11 @@ ms.sitesec: library
 ms.date: 07/27/2017
 ---
 
+# IExpress Wizard command-line options
 
 **Applies to:**
 - Windows Server 2008 R2 with SP1
 
-## IExpress Wizard command-line options
 Use command-line options with the IExpress Wizard (IExpress.exe) to control your Internet Explorer custom browser package extraction process. 
 
 These command-line options work with IExpress:<br>
