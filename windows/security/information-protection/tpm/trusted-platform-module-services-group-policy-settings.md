@@ -137,10 +137,10 @@ You can change what users see about TPM in the Windows Security app. The Group P
 
 **Computer Configuration\\Administrative Templates\\Windows Components\\Windows Security\\Device security** 
 
-## Disable the Clear TPM button
+### Disable the Clear TPM button
 If you don't want users to be able to click the **Clear TPM** button in the Windows Security app, you can disable it with this Group Policy setting. Select **Enabled** to make the **Clear TPM** button unavailable for use.
 
-## Hide the TPM Firmware Update recommendation
+### Hide the TPM Firmware Update recommendation
 If you don't want users to see the recommendation to update TPM firmware, you can disable it with this setting. Select **Enabled** to prevent users from seeing a recommendation to update their TPM firmware when a vulnerable firmware is detected.
 
 ## Related topics
