@@ -61,7 +61,7 @@ HoloLens 2 will walk you through the following steps:
 > [!NOTE] 
 > If you progress past the Wi-Fi step and later need to switch to a different network while still in setup, you can press the **Volume Down** and **Power** buttons simultaneously to return to this step if you are running an OS version from October 2019 or later. For earlier versions, you may need to [reset the device](hololens-recovery.md) or restart it in a location where the Wi-Fi network is not available to prevent it from automatically connecting.
 > 
-> Also note that during HoloLens Setup, there is a credential timeout of 2 minutes. The username/password needs to be entered within two minutes otherwise the username field will be automatically cleared.
+> Also note that during HoloLens Setup, there is a credential timeout of two minutes. The username/password needs to be entered within two minutes otherwise the username field will be automatically cleared.
 
 1. Sign in to your user account. You'll choose between **My work or school owns it** and **I own it**.
     - When you choose **My work or school owns it**, you sign in with an Azure AD account. If your organization uses Azure AD Premium and has configured automatic MDM enrollment, HoloLens automatically enrolls in MDM. If your organization does not use Azure AD Premium, automatic MDM enrollment isn't available. In that case, you need to [manually enroll HoloLens in device management](hololens-enroll-mdm.md#enroll-through-settings-app).
