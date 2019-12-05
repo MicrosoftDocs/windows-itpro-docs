@@ -38,7 +38,7 @@ New in Surface Hub 2S, you can now reinstall the device using a recovery image.
 Surface Hub 2S lets you reinstall the device using a recovery image, which allows you to reinstall the device to factory settings if you lost the Bitlocker key or no longer have admin credentials to the Settings app.
 
 1. Begin with a USB 3.0 drive with 8 GB or 16 GB of storage, formatted as FAT32.
-2. From a separate PC, download the .zip file recovery image from the [Surface Recovery website](https://support.microsoft.com/en-us/surfacerecoveryimage?devicetype=surfacehub2s) and then return to these instructions. 
+2. From a separate PC, download the .zip file recovery image from the [Surface Recovery website](https://support.microsoft.com/surfacerecoveryimage?devicetype=surfacehub2s) and then return to these instructions. 
 3. Unzip the downloaded file onto the root of the USB drive.  
 4. Connect the USB drive to any USB-C or USB-A port on Surface Hub 2S.
 5. Turn off the device. While holding down the Volume down button, press the Power button. Keep holding both buttons until you see the Windows logo. Release the Power button but continue to hold the Volume until the Install UI begins.
