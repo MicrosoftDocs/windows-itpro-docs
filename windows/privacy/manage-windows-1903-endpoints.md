@@ -169,7 +169,6 @@ The following methodology was used to derive these network endpoints:
 |||HTTPS|*.update.microsoft.com|
 ||The following endpoint is used for content regulation. If you turn off traffic for this endpoint, the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly.|HTTPS|tsfe.trafficshaping.dsp.mp.microsoft.com|
 
-
 ## Other Windows 10 editions
 
 To view endpoints for other versions of Windows 10 Enterprise, see:

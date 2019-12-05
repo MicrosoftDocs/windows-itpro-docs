@@ -78,6 +78,10 @@ This action takes effect on machines with Windows 10, version 1703 or later, whe
     - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
     - **Search box** - select **File** from the drop–down menu and enter the file name
 
+
+    >[!NOTE]
+    >The stop and quarantine file action is limited to a maximum of 1000 machines. To stop a file on a larger number of machines, see [Add indicator to block or allow file](#add-indicator-to-block-or-allow-a-file).
+
 2. Go to the top bar and select **Stop and Quarantine File**.
 
     ![Image of stop and quarantine file action](images/atp-stop-quarantine-file.png)
