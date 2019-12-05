@@ -19,7 +19,7 @@ ms.reviewer:
 
 **Applies to**
 
-- Windows 10, version 1803
+- Windows 10 Enterprise, version 1803
 
 Some Windows components, app, and related services transfer data to Microsoft network endpoints. Some examples include:
 
