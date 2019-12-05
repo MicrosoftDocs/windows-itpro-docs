@@ -15,7 +15,7 @@ ms.topic: article
 ms.date: 6/26/2018
 ms.reviewer: 
 ---
-# Manage connection endpoints for Windows 10, version 1809
+# Manage connection endpoints for Windows 10 Enterprise, version 1809
 
 **Applies to**
 
