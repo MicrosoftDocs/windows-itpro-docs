@@ -102,7 +102,7 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 
 - [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
 - [Threat remediation](microsoft-defender-atp/automated-investigations.md#how-threats-are-remediated)
-- [Manage automated investigations](microsoft-defender-atp/manage-auto-investigation.md)
+- [Manage automated investigation](microsoft-defender-atp/manage-auto-investigation.md)
 - [Analyze automated investigation](microsoft-defender-atp/manage-auto-investigation.md#analyze-automated-investigations)
 
 <a name="ss"></a>

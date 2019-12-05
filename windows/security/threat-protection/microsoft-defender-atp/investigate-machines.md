@@ -54,7 +54,7 @@ The machine details section provides information such as the domain, OS, and hea
 Response actions run along the top of a specific machine page and include:
 
 - Manage tags
-- Initiate Automated Investigation
+- Initiate automated investigation
 - Initiate Live Response Session
 - Collect investigation package
 - Run antivirus scan
