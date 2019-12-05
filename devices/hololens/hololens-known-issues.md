@@ -123,15 +123,6 @@ If your device is still unable to load apps, you can sideload a version of the .
 
 We appreciate your patience as we have gone through the process to get this issue resolved, and we look forward to continued working with our community to create successful Mixed Reality experiences.
 
-## Connecting to WiFi
-
-During HoloLens Setup, there is a credential timeout of 2 minutes. The username/password needs to be entered within 2 minutes otherwise the username field will be automatically cleared.
-
-We recommend using a Bluetooth keyboard for entering long passwords.
-
-> [!NOTE]
-> If the wrong network is selected during HoloLens Setup, the device will need to be fully reset. Instructions can be found [here.](hololens-restart-recover.md)  
-
 ## Device Update
 
 - 30 seconds after a new update, the shell may disappear one time. Please perform the **bloom** gesture to resume your session.
