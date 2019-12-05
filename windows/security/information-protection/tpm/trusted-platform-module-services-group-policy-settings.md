@@ -131,7 +131,7 @@ Introduced in Windows 10, version 1703, this policy setting configures the TPM t
 > -  Disable it from group policy
 > -  Clear the TPM on the system
 
-# TPM Group Policy settings in the Windows Security app
+## TPM Group Policy settings in the Windows Security app
 
 You can change what users see about TPM in the Windows Security app. The Group Policy settings for the TPM area in the Windows Security app are located at:
 

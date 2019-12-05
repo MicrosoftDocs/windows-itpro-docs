@@ -50,4 +50,3 @@ signer | String | File signer.
 issuer | String | File issuer.
 signerHash | String | Hash of the signing certificate.
 isValidCertificate | Boolean | Was signing certificate successfully verified by  Microsoft Defender ATP agent.
-

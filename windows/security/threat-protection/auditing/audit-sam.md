@@ -56,6 +56,3 @@ For information about reducing the number of events generated in this subcategor
 **Events List:**
 
 -   [4661](event-4661.md)(S, F): A handle to an object was requested.
-
-# 
-

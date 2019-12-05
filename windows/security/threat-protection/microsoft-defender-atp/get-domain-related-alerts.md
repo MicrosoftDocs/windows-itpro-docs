@@ -123,4 +123,3 @@ Content-type: application/json
     ]
 }
 ```
-
