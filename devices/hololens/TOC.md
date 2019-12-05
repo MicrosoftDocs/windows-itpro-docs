@@ -16,7 +16,7 @@
 ## [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
 ## [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
 
-# Get started with HoloLens in commercial environments
+# HoloLens in commercial environments
 ## [Commercial feature overview](hololens-commercial-features.md)
 ## [Deployment planning](hololens-requirements.md)
 ## [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
@@ -54,7 +54,6 @@
 
 # Update and recovery
 ## [Update HoloLens](hololens-update-hololens.md)
-## [Manage updates on many HoloLens](hololens-updates.md)
 ## [Restart, reset, or recover](hololens-recovery.md)
 ## [Known issues](hololens-known-issues.md)
 ## [Frequently asked questions](hololens-faq.md)
