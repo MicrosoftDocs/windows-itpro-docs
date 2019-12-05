@@ -26,7 +26,7 @@ ms.topic: article
 Initiate AutoIR investigation on a machine.
 
 >[!Note]
-> This page focuses on performing an automated investigation on a machine. See [Automated Investigation](automated-investigations.md) for more information.
+> This page focuses on performing an automated investigation on a machine. See [automated investigation](automated-investigations.md) for more information.
 
 ## Limitations
 1. The number of executions is limited (up to 5 calls per hour).
