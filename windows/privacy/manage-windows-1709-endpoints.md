@@ -1,5 +1,5 @@
 ---
-title: Connection endpoints for Windows 10, version 1709
+title: Connection endpoints for Windows 10 Enterprise, version 1709
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact.
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
