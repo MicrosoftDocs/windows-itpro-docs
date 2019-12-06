@@ -9,7 +9,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -21,6 +22,12 @@ ms.topic: article
 **Applies to**
 
 -   Windows 10
+
+## Windows Autopilot update
+
+Check back here soon for a link to the December 2019 Windows Autopilot update.
+
+See [Windows Autopilot update](autopilot-update.md) for more information.
 
 ## New in Windows 10, version 1903
 
