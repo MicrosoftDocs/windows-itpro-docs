@@ -58,7 +58,7 @@ Empty
 
 ## Response
 If successful and machines were found - 200 OK with list of the machines in the response body.
-If no machine found  - 404 Not Found.
+If no machine found - 404 Not Found.
 If the timestamp is not in the past 30 days - 400 Bad Request.
 
 ## Example
