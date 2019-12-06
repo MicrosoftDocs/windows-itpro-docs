@@ -154,7 +154,7 @@ For 4716(S): Trusted domain information was modified.
 
 -   Any changes in Active Directory domain trust settings must be monitored and alerts should be triggered. If this change was not planned, investigate the reason for the change.
 
-## Anonymous Logon
+## Anonymous Logon account
 
 If the account reported in the event is **Anonymous Logon**, it means the password is changed by system automatic password reset. For example:
 
