@@ -21,8 +21,7 @@ ms.reviewer:
 
 **Applies to**
 
--   Windows 10, version 1809
--   Windows 10, version 1803
+-   Windows 10, version 1803 and newer
 
 ## Introduction
 The Diagnostic Data Viewer is a Windows app that lets you review the Windows diagnostic data your device is sending to Microsoft, grouping the info into simple categories based on how it's used by Microsoft.
