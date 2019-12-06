@@ -23,9 +23,9 @@ ms.topic: article
 
 -   Windows 10
 
-## Windows Autopilot update
+## Windows Autopilot update history
 
-Check back here soon for a link to the December 2019 Windows Autopilot update.
+**December 2019 Windows Autopilot update**: Check back here soon for a link to this update.
 
 See [Windows Autopilot update](autopilot-update.md) for more information.
 

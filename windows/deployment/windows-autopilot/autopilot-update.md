@@ -25,7 +25,7 @@ ms.topic: article
 
 Windows Autopilot update enable organization to get latest Autopilot features and critical issue fixes without the need to move to latest Windows OS version. Without Autopilot update, organizations would need to migrate to latest OS version when there is a new feature or bug fix.
  
-During the Autopilot deployment process, Windows Autopilot update has been added as a new node after the critical Windows Zero Day Patch (ZDP) update check. During the update process, Windows Autopilot devices reach out to Windows Update to check for a new Autopilot update.  If there is an Autopilot update available, the device will download and install the update, then restart automatically. See the following example.
+During the Autopilot deployment process, Windows Autopilot update has been added as a new node after the critical [Windows Zero Day Patch (ZDP) update](https://docs.microsoft.com/windows-hardware/customize/desktop/windows-updates-during-oobe) check. During the update process, Windows Autopilot devices reach out to Windows Update to check for a new Autopilot update.  If there is an Autopilot update available, the device will download and install the update, then restart automatically. See the following example.
 
    ![Autopilot update 1](images/update1.png)<br>
    ![Autopilot update 2](images/update2.png)<br>
