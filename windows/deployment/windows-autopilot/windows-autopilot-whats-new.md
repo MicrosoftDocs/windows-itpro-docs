@@ -25,7 +25,7 @@ ms.topic: article
 
 ## Windows Autopilot update history
 
-**December 2019 Windows Autopilot update**: Check back here soon for a link to this update.
+Check back here soon for a link to the currentlatest update.
 
 See [Windows Autopilot update](autopilot-update.md) for more information.
 
