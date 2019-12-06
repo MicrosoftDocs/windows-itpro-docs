@@ -3203,6 +3203,21 @@ The following fields are available:
 
 ## Holographic events
 
+### Microsoft.Windows.Analog.Spectrum.TelemetryHolographicDeviceAdded
+
+This event indicates Windows Mixed Reality device state. This event is also used to count WMR device.
+
+The following fields are available:
+
+- **ClassGuid**  Windows Mixed Reality device class GUID.
+- **DeviceInterfaceId**  Windows Mixed Reality device interface ID.
+- **DeviceName**  Windows Mixed Reality device name.
+- **DriverVersion**  Windows Mixed Reality device driver version.
+- **FirmwareVersion**  Windows Mixed Reality firmware version.
+- **Manufacturer**  Windows Mixed Reality device manufacturer.
+- **ModelName**  Windows Mixed Reality device model name.
+- **SerialNumber**  Windows Mixed Reality device serial number.
+
 ### Microsoft.Windows.Holographic.Coordinator.HoloShellStateUpdated
 
 This event indicates Windows Mixed Reality HoloShell State. This event is also used to count WMR device.
@@ -4659,25 +4674,6 @@ The following fields are available:
 - **SourceOSBuildBranch**  The source branch of the operating system.
 - **SourceOSBuildNumber**  The source build number of the operating system.
 - **SourceOSVersion**  The source version of the operating system.
-
-
-## Other events
-
-### Microsoft.Windows.Analog.Spectrum.TelemetryHolographicDeviceAdded
-
-This event indicates Windows Mixed Reality device state. This event is also used to count WMR device.
-
-The following fields are available:
-
-- **ClassGuid**  Windows Mixed Reality device class GUID.
-- **DeviceInterfaceId**  Windows Mixed Reality device interface ID.
-- **DeviceName**  Windows Mixed Reality device name.
-- **DriverVersion**  Windows Mixed Reality device driver version.
-- **FirmwareVersion**  Windows Mixed Reality firmware version.
-- **Manufacturer**  Windows Mixed Reality device manufacturer.
-- **ModelName**  Windows Mixed Reality device model name.
-- **SerialNumber**  Windows Mixed Reality device serial number.
-
 
 ## Privacy consent logging events
 
