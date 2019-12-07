@@ -25,7 +25,7 @@ ms.topic: article
 
 ## Windows Autopilot update history
 
-Check back here soon for a link to the currentlatest update.
+Check back here soon for a link to the latest update.
 
 See [Windows Autopilot update](autopilot-update.md) for more information.
 
