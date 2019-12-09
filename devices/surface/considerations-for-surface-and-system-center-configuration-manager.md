@@ -29,7 +29,7 @@ Although the deployment and management of Surface devices is fundamentally the s
 
 ## Support for Surface Pro X
 Beginning in version 1802, Endpoint Configuration Manager includes client management support for Surface Pro X. Note however that running the Endpoint Configuration Manager agent on Surface Pro X may accelerate battery consumption. In addition, operating system deployment using Endpoint Configuration Manager is not supported on Surface Pro X. For more information, refer to:
-- [What's new in version 1802 of System Center Configuration Manager] (https://docs.microsoft.com/configmgr/core/plan-design/changes/whats-new-in-version-1802)
+- [What's new in version 1802 of System Center Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/changes/whats-new-in-version-1802)
 - [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
 
 ## Updating Surface device drivers and firmware
@@ -84,4 +84,3 @@ To apply an asset tag using the [Surface Asset Tag CLI Utility](https://www.micr
 When you deploy Windows to a Surface device, the push-button reset functionality of Windows is configured by default to revert the system back to a state where the environment is not yet configured. When the reset function is used, the system discards any installed applications and settings. Although in some situations it can be beneficial to restore the system to a state without applications and settings, in a professional environment this effectively renders the system unusable to the end user.
 
 Push-button reset can be configured, however, to restore the system configuration to a state where it is ready for use by the end user. Follow the process outlined in [Deploy push-button reset features](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/deploy-push-button-reset-features) to customize the push-button reset experience for your devices.
-
