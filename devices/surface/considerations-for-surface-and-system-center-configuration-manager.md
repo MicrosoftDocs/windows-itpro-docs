@@ -34,7 +34,7 @@ Beginning in version 1802, Endpoint Configuration Manager includes client manage
 
 ## Updating Surface device drivers and firmware
 
-For devices that receive updates through Windows Update, drivers for Surface components – and even firmware updates – are applied automatically as part of the Windows Update process. For devices with managed updates, such as those updated through Windows Server Update Services (WSUS), or SCCM see [https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates/](Manage Surface driver and firmware updates).
+For devices that receive updates through Windows Update, drivers for Surface components—and even firmware updates—are applied automatically as part of the Windows Update process. For devices with managed updates, such as those updated through Windows Server Update Services (WSUS) or SCCM, see [Manage Surface driver and firmware updates](https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates/).
 
 >[!NOTE]
 >Surface device drivers and firmware are signed with SHA-256, which is not natively supported by Windows Server 2008 R2. A workaround is available for Configuration Manager environments running on Windows Server 2008 R2 – for more information see [Can't import drivers into System Center Configuration Manager (KB3025419)](https://support.microsoft.com/kb/3025419).
