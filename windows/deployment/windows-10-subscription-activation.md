@@ -102,7 +102,8 @@ If the device is running Windows 10, version 1803 or later:
 2. When the user signs in to a Hybrid Azure AD joined device with MFA enabled, a toast notification will indicate that there is a problem. See the example below. Clicking the toast triggers a request for authentication details and takes the user through the subscription activation process.
 
 ![Subscription Activation with MFA1](images/sa-mfa1.png)<br>
-![Subscription Activation with MFA2](images/sa-mfa2.png)
+![Subscription Activation with MFA2](images/sa-mfa2.png)<br>
+![Subscription Activation with MFA2](images/sa-mfa3.png)
 
 ### Windows 10 Education requirements
 
