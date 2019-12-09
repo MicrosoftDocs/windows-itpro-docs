@@ -26,7 +26,7 @@ ms.date: 11/12/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-[!include[Prerelease information](prerelease.md)]
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 The DeviceTvmSecureConfigurationAssessmentKB table in the Advanced hunting schema contains information about the various secure configurations — such as whether a device has automatic updates on — checked by [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md). It also includes risk information, related industry benchmarks, and applicable MITRE ATT&CK techniques and tactics. Use this reference to construct queries that return information from the table.
 

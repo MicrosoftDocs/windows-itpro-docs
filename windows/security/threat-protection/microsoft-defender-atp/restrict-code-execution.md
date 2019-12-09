@@ -24,7 +24,7 @@ ms.topic: article
 
 Restrict execution of all applications on the machine except a predefined set (see [Response machine alerts](respond-machine-alerts.md) for more information)
 
-[!include[Machine actions note](machineactionsnote.md)]
+[!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -80,7 +80,7 @@ Content-type: application/json
 
 Here is an example of the response.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 HTTP/1.1 201 Created
