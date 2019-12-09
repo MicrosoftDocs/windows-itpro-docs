@@ -10,4 +10,4 @@ ms.prod: w10
 ---
 
 >[!Note]
-> This page focuses on performing a machine action via API. See [take response actions on a machine](respond-machine-alerts.md) for more information about response actions functionality via Microsoft Defender ATP.
+> This page focuses on performing a machine action via API. See [take response actions on a machine](../threat-protection/microsoft-defender-atp/respond-machine-alerts.md) for more information about response actions functionality via Microsoft Defender ATP.
