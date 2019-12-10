@@ -1247,6 +1247,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/custom-ti-api.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-atp/custom-detection-rules.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules",
 "redirect_document_id": true
@@ -1354,6 +1359,11 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/experiment-custom-ti-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/experiment-custom-ti",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/experiment-custom-ti",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
 "redirect_document_id": true
 },
 {
@@ -1692,6 +1702,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/powershell-example-code.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/keep-secure/preferences-setup-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/preferences-setup-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
@@ -1759,6 +1774,11 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/python-example-code-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/python-example-code",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/python-example-code.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
 "redirect_document_id": true
 },
 {
@@ -1927,6 +1947,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/troubleshoot-custom-ti.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/threat-protection/windows-defender-atp/troubleshoot-onboarding-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/troubleshoot-onboarding-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
@@ -1974,6 +1999,10 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use-custom-ti",
+"redirect_document_id": true
+},
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/use-custom-ti.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
 "redirect_document_id": true
 },
 {
