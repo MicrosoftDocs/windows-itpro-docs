@@ -45,7 +45,7 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titlesuffix": "Windows Client Management"
+      "titleSuffix": "Windows Client Management"
     },
     "fileMetadata": {},
     "template": [],
