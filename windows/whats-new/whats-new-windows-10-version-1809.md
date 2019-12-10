@@ -217,9 +217,12 @@ Do you have shared devices deployed in your work place? **Fast sign-in** enables
     ![fast sign-in](images/fastsignin.png "fast sign-in")
 
 >[!NOTE]
->This is a preview feature and therefore not meant or recommended for production purposes.
+>This is a private preview feature and therefore not meant or recommended for production purposes.
 
 ## Web sign-in to Windows 10
+
+>[!IMPORTANT]
+>This is a private preview feature and therefore not meant or recommended for production purposes.
 
 Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing “web sign-in,” a new way of signing into your Windows PC. Web Sign-in enables Windows logon support for non-ADFS federated providers (e.g.SAML).
 
@@ -232,7 +235,7 @@ Until now, Windows logon only supported the use of identities federated to ADFS 
     ![Web sign-in](images/websignin.png "web sign-in")
 
 >[!NOTE]
->This is a preview feature and therefore not meant or recommended for production purposes.
+>This is a private preview feature and therefore not meant or recommended for production purposes.
 
 ## Your Phone app
 
