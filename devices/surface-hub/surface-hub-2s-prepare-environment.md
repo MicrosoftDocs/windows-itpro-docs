@@ -26,7 +26,7 @@ Microsoft regularly updates the Office 365 service with new features and functio
 ## Device affiliation
 
 Use Device affiliation to manage user access to the Settings app on Surface Hub 2S.
-With the Windows 10 Team Edition operating system (that runs on Surface Hub 2S),  only authorized users can adjust settings usin the Settings app. Since choosing the affiliation can impact feature availability, plan appropriately to ensure that users can access features as intended.
+With the Windows 10 Team Edition operating system (that runs on Surface Hub 2S),  only authorized users can adjust settings using the Settings app. Since choosing the affiliation can impact feature availability, plan appropriately to ensure that users can access features as intended.
 
 > [!NOTE]
 > You can only set Device affiliation during the initial out-of-box experience (OOBE) setup. If you need to reset Device affiliation, you’ll have to repeat OOBE setup.
@@ -45,6 +45,6 @@ If you affiliate Surface Hub 2S with on-premises Active Directory Domain Service
 
 ## Azure Active Directory
 
-When choosing to affiliate your Surface Hub 2S with Azure Active Directory (Azure AD), any user in the Global Admins Security Group can sign in to the Settings app on Surface Hub 2S. Currently, no other group can be delegated to sign in to the Settings app on Surface Hub 2S.
+When you choose to affiliate your Surface Hub 2S with Azure Active Directory (Azure AD), any user in the Global Admins Security Group can sign in to the Settings app on Surface Hub 2S. Currently, no other group can be delegated to sign in to the Settings app on Surface Hub 2S.
 
 If you enabled Intune Automatic Enrollment for your organization, Surface Hub 2S will automatically enroll itself with Intune. The device’s BitLocker key is automatically saved in Azure AD. When affiliating Surface Hub 2S with Azure AD, single sign-on and Easy Authentication will not work.
