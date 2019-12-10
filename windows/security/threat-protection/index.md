@@ -138,7 +138,7 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 
 <a name="mtp"></a>
 
-**[Microsoft Threat Protection](threat-protection-integration.md)** <br>
+**[Microsoft Threat Protection](microsoft-defender-atp/threat-protection-integration.md)** <br>
  Microsoft Defender ATP directly integrates with various Microsoft solutions, including:
 - Intune
 - Office 365 ATP
