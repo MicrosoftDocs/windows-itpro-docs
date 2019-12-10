@@ -42,5 +42,5 @@ Topic | Description
 [Microsoft Threat Experts](microsoft-threat-experts.md) | Managed cybersecurity threat hunting service. Learn how you can get expert-driven insights and data through targeted attack notification and access to experts on demand.
 [Advanced hunting](advanced-hunting-overview.md) |  Use a powerful query-based threat-hunting tool to proactively find breach activity and create custom detection rules.
 [Management and APIs](management-apis.md) | Microsoft Defender ATP supports a wide variety of tools to help you manage and interact with the platform so that you can integrate the service into your existing workflows.
-[Microsoft Threat Protection](threat-protection-integration.md) | Microsoft security products work better together. Learn about other security capabilities in the Microsoft threat protection stack. 
+[Microsoft Threat Protection](threat-protection-integration.md) | Microsoft security products work better together. Learn about other how Microsoft Defender ATP works with other Microsoft security solutions. 
 [Portal overview](portal-overview.md) |Learn to navigate your way around Microsoft Defender Security Center.
