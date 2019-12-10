@@ -42,7 +42,8 @@
           "depot_name": "MSDN.win-app-management",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "titleSuffix": "Windows Application Management"
     },
     "fileMetadata": {},
     "template": [],
