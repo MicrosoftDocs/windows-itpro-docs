@@ -44,7 +44,8 @@
           "depot_name": "MSDN.win-client-management",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "titlesuffix": "Windows Client Management"
     },
     "fileMetadata": {},
     "template": [],
