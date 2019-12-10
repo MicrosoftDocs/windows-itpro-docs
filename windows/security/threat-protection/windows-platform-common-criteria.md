@@ -23,6 +23,8 @@ Microsoft is committed to optimizing the security of its products and services. 
 
 The Security Target describes security functionality and assurance measures used to evaluate Windows.
 
+- [Microsoft Windows 10 (May 2019 Update)](https://download.microsoft.com/download/c/6/9/c6903621-901e-4603-b9cb-fbfe5d6aa691/Windows%2010%201903%20GP%20OS%20Security%20Target.pdf)
+- [Microsoft Windows 10 (October 2018 Update)](https://download.microsoft.com/download/3/f/e/3fe6938d-2c2d-4ef1-85d5-1d42dc68ea89/Windows%2010%20version%201809%20GP%20OS%20Security%20Target.pdf)
 - [Microsoft Windows 10 (April 2018 Update)](https://download.microsoft.com/download/0/7/6/0764E933-DD0B-45A7-9144-1DD9F454DCEF/Windows%2010%201803%20GP%20OS%20Security%20Target.pdf)
 - [Microsoft Windows 10 (Fall Creators Update)](https://download.microsoft.com/download/B/6/A/B6A5EC2C-6351-4FB9-8FF1-643D4BD5BE6E/Windows%2010%201709%20GP%20OS%20Security%20Target.pdf)
 - [Microsoft Windows 10 (Creators Update)](https://download.microsoft.com/download/e/8/b/e8b8c42a-a0b6-4ba1-9bdc-e704e8289697/windows%2010%20version%201703%20gp%20os%20security%20target%20-%20public%20\(january%2016,%202018\)\(final\)\(clean\).pdf)
@@ -59,7 +61,8 @@ These documents describe how to configure Windows to replicate the configuration
 
 **Windows 10, Windows 10 Mobile, Windows Server 2016, Windows Server 2012 R2**
 
-
+- [Microsoft Windows 10 (May 2019 Update)](https://download.microsoft.com/download/0/b/b/0bb1c6b7-499a-458e-a5f8-e9cf972dfa8d/Windows%2010%201903%20GP%20OS%20Administrative%20Guide.pdf)
+- [Microsoft Windows 10 (October 2018 Update)](https://download.microsoft.com/download/f/f/1/ff186e32-35cf-47db-98b0-91ff11763d74/Windows%2010%20version%201809%20GP%20OS%20Administrative%20Guide.pdf)
 - [Microsoft Windows 10 (April 2018 Update)](https://download.microsoft.com/download/6/C/1/6C13FBFF-9CB0-455F-A1C8-3E3CB0ACBD7B/Windows%2010%201803%20GP%20OS%20Administrative%20Guide.pdf)
 - [Microsoft Windows 10 (Fall Creators Update)](https://download.microsoft.com/download/5/D/2/5D26F473-0FCE-4AC4-9065-6AEC0FE5B693/Windows%2010%201709%20GP%20OS%20Administrative%20Guide.pdf)
 - [Microsoft Windows 10 (Creators Update)](https://download.microsoft.com/download/e/9/7/e97f0c7f-e741-4657-8f79-2c0a7ca928e3/windows%2010%20cu%20gp%20os%20operational%20guidance%20\(jan%208%202017%20-%20public\).pdf)
@@ -137,6 +140,8 @@ These documents describe how to configure Windows to replicate the configuration
 
 An Evaluation Technical Report (ETR) is a report submitted to the Common Criteria certification authority for how Windows complies with the claims made in the Security Target. A Certification / Validation Report provides the results of the evaluation by the validation team.
 
+- [Microsoft Windows 10 (May 2019 Update)](https://download.microsoft.com/download/2/1/9/219909ad-2f2a-44cc-8fcb-126f28c74d36/Windows%2010%201903%20GP%20OS%20Certification%20Report.pdf)
+- [Microsoft Windows 10 (October 2018 Update)](https://download.microsoft.com/download/9/4/0/940ac551-7757-486d-9da1-7aa0300ebac0/Windows%2010%20version%201809%20GP%20OS%20Certification%20Report%20-%202018-61-INF-2795.pdf)
 - [Microsoft Windows 10 (April 2018 Update)](https://download.microsoft.com/download/6/7/1/67167BF2-885D-4646-A61E-96A0024B52BB/Windows%2010%201803%20GP%20OS%20Certification%20Report.pdf)
 - [Microsoft Windows 10 (Fall Creators Update)](https://download.microsoft.com/download/2/C/2/2C20D013-0610-4047-B2FA-516819DFAE0A/Windows%2010%201709%20GP%20OS%20Certification%20Report.pdf) 
 - [Microsoft Windows 10 (Creators Update)](https://download.microsoft.com/download/3/2/c/32cdf627-dd23-4266-90ff-2f9685fd15c0/2017-49%20inf-2218%20cr.pdf)
