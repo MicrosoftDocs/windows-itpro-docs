@@ -48,7 +48,7 @@ For more information about optimizing ASR rule deployment in Microsoft 365 secur
 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
-# Related topics
+## Related topics
 
 * [Ensure your machines are configured properly](configure-machines.md)
 * [Get machines onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)

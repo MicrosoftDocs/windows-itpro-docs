@@ -19,6 +19,8 @@
 ## [Configuring device profiles](profiles.md)
 ## [Enrollment Status Page](enrollment-status.md)
 ## [BitLocker encryption](bitlocker.md)
+## [DFCI management](dfci-management.md)
+## [Windows Autopilot update](autopilot-update.md)
 ## [Troubleshooting](troubleshooting.md)
 ## [Known issues](known-issues.md)
 

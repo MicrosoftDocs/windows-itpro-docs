@@ -1,5 +1,4 @@
 # [HoloLens overview](index.md)
-# [Hololens status](hololens-status.md)
 
 # Get Started with HoloLens 2
 ## [HoloLens 2 hardware](hololens2-hardware.md)
@@ -17,7 +16,7 @@
 ## [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
 ## [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
 
-# Get started with HoloLens in commercial environments
+# HoloLens in commercial environments
 ## [Commercial feature overview](hololens-commercial-features.md)
 ## [Deployment planning](hololens-requirements.md)
 ## [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
@@ -53,12 +52,16 @@
 ## [Environment considerations for HoloLens](hololens-environment-considerations.md)
 ## [Spatial mapping on HoloLens](hololens-spaces.md)
 
-# Update and recovery
-## [Join the Windows Insider program](hololens-insider.md)
-## [Managing HoloLens updates](hololens-updates.md)
+# Update, troubleshoot, or recover HoloLens
+## [Update, troubleshoot, or recover HoloLens](hololens-management-overview.md)
+## [Update HoloLens](hololens-update-hololens.md)
 ## [Restart, reset, or recover](hololens-recovery.md)
+## [Troubleshoot HoloLens](hololens-troubleshooting.md)
 ## [Known issues](hololens-known-issues.md)
 ## [Frequently asked questions](hololens-faq.md)
 
+# [Release Notes](hololens-release-notes.md)
+# [Hololens status](hololens-status.md)
 # [Give us feedback](hololens-feedback.md)
+# [Join the Windows Insider program](hololens-insider.md)
 # [Change history for Microsoft HoloLens documentation](change-history-hololens.md)

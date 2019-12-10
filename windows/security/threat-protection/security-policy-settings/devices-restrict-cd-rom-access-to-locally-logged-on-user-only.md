@@ -1,5 +1,5 @@
 ---
-title: Devices Restrict CD-ROM access to locally logged-on user only (Windows 10)
+title: Restrict CD-ROM access to locally logged-on user (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Devices Restrict CD-ROM access to locally logged-on user only security policy setting.
 ms.assetid: 8b8f44bb-84ce-4f18-af30-ab89910e234d
 ms.reviewer: 

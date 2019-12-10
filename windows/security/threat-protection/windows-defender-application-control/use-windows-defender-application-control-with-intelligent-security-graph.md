@@ -1,5 +1,5 @@
 ---
-title: Deploy Windows Defender Application Control with Intelligent Security Graph (ISG) (Windows 10)
+title: Authorize reputable apps with the Intelligent Security Graph (ISG) (Windows 10)
 description: Automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -17,12 +17,12 @@ manager: dansimp
 ms.date: 06/14/2018
 ---
 
-# Use Windows Defender Application Control (WDAC) with the Microsoft Intelligent Security Graph 
+# Authorize reputable apps with the Intelligent Security Graph (ISG) 
 
 **Applies to:**
 
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 and above
 
 Application execution control can be difficult to implement in enterprises that do not have processes to effectively control the deployment of applications centrally through an IT managed system. 
 In such environments, users are empowered to acquire the applications they need for work, making accounting for all the applications that would need to be authorized for execution control a daunting task.  
@@ -89,7 +89,7 @@ appidtel start
 
 For WDAC policies deployed over MDM using the AppLocker CSP this step is not required as the CSP will enable the necessary components. ISG enabled through the SCCM WDAC UX will not need this step but if custom policies are being deployed outside of the WDAC UX through SCCM then this step is required.   
 
-## Security considerations with using the Intelligent Security Graph 
+## Security considerations with the Intelligent Security Graph 
 
 Since the ISG is a heuristic-based mechanism, it does not provide the same security guarantees that explicit allow or deny rules do. It is best suited for deployment to systems where each user is configured as a standard user and there are other monitoring systems in place like Windows Defender Advanced Threat Protection to help provide optics into what users are doing. 
 
@@ -99,7 +99,7 @@ Users with administrator privileges or malware running as an administrator user 
 
 Since the ISG relies on identifying executables as being known good, there are cases where it may classify legitimate executables as unknown, leading to blocks that need to be resolved either with a rule in the WDAC policy, a catalog signed by a certificate trusted in the WDAC policy or by deployment through a WDAC managed installer. Typically, this is due to an installer or application using a dynamic file as part of execution. These files do not tend to build up known good reputation. Auto-updating applications have also been observed using this mechanism and may be flagged by the ISG.  
 
-Modern apps are not supported with the ISG heuristic and will need to be separately authorized in your WDAC policy. As modern apps are signed by the Microsoft Store and Microsoft Store for Business. it is straightforward to authorize modern apps with signer rules in the WDAC policy.
+Modern apps are not supported with the ISG heuristic and will need to be separately authorized in your WDAC policy. As modern apps are signed by the Microsoft Store and Microsoft Store for Business, it is straightforward to authorize modern apps with signer rules in the WDAC policy.
 
 The ISG heuristic does not authorize kernel mode drivers. The WDAC policy must have rules that allow the necessary drivers to run.  
 

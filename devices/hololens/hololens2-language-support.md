@@ -37,12 +37,12 @@ HoloLens 2 is also available in the following languages. However, this support d
 - Dutch (Netherlands)
 - Korean (Korea)
 
-> [!NOTE]
-> Your speech and dictation language depends on the Windows display language.
->  
 # Changing language or keyboard
 
 The setup process configures your HoloLens for a region and language. You can change this configuration by using the **Time & language** section of **Settings**.
+
+> [!NOTE]
+> Your speech and dictation language depends on the Windows display language.
 
 ## To change the Windows display language
 

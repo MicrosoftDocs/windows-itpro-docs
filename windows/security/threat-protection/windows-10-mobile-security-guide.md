@@ -194,7 +194,7 @@ The table below outlines how Windows 10 Mobile mitigates specific malware threat
 </tr>
 <tr class="odd">
 <td align="left"><p>Users access a dangerous website without knowledge of the risk.</p></td>
-<td align="left"><p>The SmartScreen URL Reputation feature prevents users from going to a malicious website that may try to exploit the browser and take control of the device.</p></td>
+<td align="left"><p>The Windows Defender SmartScreen URL Reputation feature prevents users from going to a malicious website that may try to exploit the browser and take control of the device.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Malware exploits a vulnerability in a browser add-on.</p></td>

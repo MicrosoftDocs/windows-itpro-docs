@@ -32,7 +32,7 @@ Method|Return Type |Description
 
 For more information on creating indicators, see [Manage indicators](manage-indicators.md).
 
-# Properties
+## Properties
 Property |	Type	|	Description
 :---|:---|:---
 indicatorValue | String | Identity of the [Indicator](ti-indicator.md) entity.
