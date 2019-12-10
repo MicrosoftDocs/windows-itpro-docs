@@ -1,5 +1,5 @@
 ---
-title: Test scenario 7 - Use Cortana and Windows Information Protection (WIP) to help protect your organization’s data on a device (Windows 10)
+title: Help protect data with Cortana and WIP (Windows 10)
 description: An optional test scenario about how to use Cortana at work with Windows Information Protection (WIP).
 ms.prod: w10
 ms.mktglfcycl: manage

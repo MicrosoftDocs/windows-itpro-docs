@@ -1,3 +1,4 @@
+---
 ms.reviewer: 
 title: How to Revert Extension Points From an App-V 5.0 Package to an App-V 4.6 Package for a Specific User
 description: How to Revert Extension Points From an App-V 5.0 Package to an App-V 4.6 Package for a Specific User

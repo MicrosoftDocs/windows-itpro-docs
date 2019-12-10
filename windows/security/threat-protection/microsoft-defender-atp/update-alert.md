@@ -1,6 +1,6 @@
 ---
-title: Get alert information by ID API
-description: Retrieves an alert by its ID.
+title: Update alert entity API
+description: Retrieves a Microsoft Defender ATP alert by its ID.
 keywords: apis, graph api, supported apis, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -60,7 +60,7 @@ assignedTo | String | Owner of the alert
 classification | String | Specifies the specification of the alert. The property values are: 'Unknown', 'FalsePositive', 'TruePositive'. 
 determination | String | Specifies the determination of the alert. The property values are: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## Response
 If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body with the updated properties. If alert with the specified id was not found - 404 Not Found.

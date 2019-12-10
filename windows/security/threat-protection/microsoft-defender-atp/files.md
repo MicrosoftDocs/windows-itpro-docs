@@ -1,6 +1,6 @@
 ---
 title: File resource type
-description: Retrieves top recent alerts.
+description: Retrieves information associated with files alerts.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -23,7 +23,7 @@ ms.topic: article
 
 Represent a file entity in Microsoft Defender ATP.
 
-# Methods
+## Methods
 Method|Return Type |Description
 :---|:---|:---
 [Get file](get-file-information.md) | [file](files.md) | Get a single file 
@@ -32,7 +32,7 @@ Method|Return Type |Description
 [file statistics](get-file-statistics.md) | Statistics summary | Retrieves the prevalence for the given file.
 
 
-# Properties
+## Properties
 Property |	Type	|	Description
 :---|:---|:---
 sha1 | String | Sha1 hash of the file content
@@ -50,4 +50,3 @@ signer | String | File signer.
 issuer | String | File issuer.
 signerHash | String | Hash of the signing certificate.
 isValidCertificate | Boolean | Was signing certificate successfully verified by  Microsoft Defender ATP agent.
-

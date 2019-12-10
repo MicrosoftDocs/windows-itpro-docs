@@ -1,6 +1,6 @@
 ---
 title: Use the command line to manage Windows Defender Antivirus
-description: Run Windows Defender Antivirus scans and configure next gen protection with a dedicated command-line utility.
+description: Run Windows Defender Antivirus scans and configure next-generation protection with a dedicated command-line utility.
 keywords: run windows defender scan, run antivirus scan from command line, run windows defender scan from command line, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
 ---
@@ -42,20 +43,20 @@ MpCmdRun.exe -scan -2
 
 | Command  | Description   |
 |:----|:----|
-| \-? **or** -h   | Displays all available options for this tool |
-| \-Scan [-ScanType [0\|1\|2\|3]] [-File \<path> [-DisableRemediation] [-BootSectorScan]] [-Timeout \<days>] [-Cancel] | Scans for malicious software. Values for **ScanType** are: **0** Default, according to your configuration, **-1** Quick scan, **-2** Full scan, **-3** File and directory custom scan.   |
-| \-Trace [-Grouping #] [-Level #] | Starts diagnostic tracing   |
-| \-GetFiles | Collects support information   |
-| \-GetFilesDiagTrack  | Same as Getfiles but outputs to temporary DiagTrack folder |
-| \-RemoveDefinitions [-All]  | Restores the installed Security intelligence  to a previous backup copy or to the original default set |
-| \-RemoveDefinitions [-DynamicSignatures]   | Removes only the dynamically downloaded Security intelligence |
-| \-RemoveDefinitions [-Engine]   | Restores the previous installed engine   |
-| \-SignatureUpdate [-UNC \| -MMPC]  | Checks for new Security intelligence updates  |
-| \-Restore  [-ListAll \| [[-Name \<name>] [-All] \| [-FilePath \<filePath>]] [-Path \<path>]]               | Restores or lists quarantined item(s)  |
-| \-AddDynamicSignature [-Path]  | Loads dynamic Security intelligence  |
-| \-ListAllDynamicSignatures  | Lists the loaded dynamic Security intelligence  |
-| \-RemoveDynamicSignature [-SignatureSetID]  | Removes dynamic Security intelligence   |
-| \-CheckExclusion -path \<path>   | Checks whether a path is excluded  |
+| `-?` **or** `-h`   | Displays all available options for this tool |
+| `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan]] [-Timeout <days>] [-Cancel]` | Scans for malicious software. Values for **ScanType** are: **0** Default, according to your configuration, **-1** Quick scan, **-2** Full scan, **-3** File and directory custom scan. |
+| `-Trace [-Grouping #] [-Level #]` | Starts diagnostic tracing |
+| `-GetFiles` | Collects support information |
+| `-GetFilesDiagTrack`  | Same as `-GetFiles`, but outputs to temporary DiagTrack folder |
+| `-RemoveDefinitions [-All]` | Restores the installed Security intelligence  to a previous backup copy or to the original default set |
+| `-RemoveDefinitions [-DynamicSignatures]` | Removes only the dynamically downloaded Security intelligence |
+| `-RemoveDefinitions [-Engine]` | Restores the previous installed engine |
+| `-SignatureUpdate [-UNC \| -MMPC]` | Checks for new Security intelligence updates |
+| `-Restore  [-ListAll \| [[-Name <name>] [-All] \| [-FilePath <filePath>]] [-Path <path>]]` | Restores or lists quarantined item(s) |
+| `-AddDynamicSignature [-Path]` | Loads dynamic Security intelligence |
+| `-ListAllDynamicSignatures` | Lists the loaded dynamic Security intelligence |
+| `-RemoveDynamicSignature [-SignatureSetID]` | Removes dynamic Security intelligence |
+| `-CheckExclusion -path <path>` | Checks whether a path is excluded |
 
 ## Related topics
 

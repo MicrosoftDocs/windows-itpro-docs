@@ -9,8 +9,9 @@ ms.mktglfcycl: detect
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 audience: ITPro
 ms.date: 10/02/2018
 ms.reviewer: 
@@ -51,7 +52,7 @@ Although potentially unwanted application protection in Microsoft Edge (Chromium
 1. Under the **Services** section, you can toggle **Potentially unwanted app blocking** on or off
 
 > [!TIP]
-> If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen demo pages.
+> If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen [demo pages](https://demo.smartscreen.msft.net/).
 
 #### Blocking URLs with Windows Defender SmartScreen
 
@@ -61,7 +62,7 @@ Admins can  [configure](https://docs.microsoft.com/DeployEdge/configure-microsof
 Defender SmartScreen available, including [one for blocking PUA](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). In addition, admins can
 [configure Windows Defender SmartScreen](https://docs.microsoft.com/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) as a whole, using group policy settings to turn Windows Defender SmartScreen on or off.
 
-Although Microsoft Defender ATP has its own block list, based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators.md#create-indicators-for-ips-and-urlsdomains) in the Microsoft Defender ATP portal, Windows Defender SmartScreen will respect the new settings.
+Although Microsoft Defender ATP has its own block list, based upon a data set managed by Microsoft, you can customize this list based on your own threat intelligence. If you [create and manage indicators](../microsoft-defender-atp/manage-indicators.md#create-indicators-for-ips-and-urlsdomains-preview) in the Microsoft Defender ATP portal, Windows Defender SmartScreen will respect the new settings.
 
 ### Windows Defender Antivirus
 
@@ -142,7 +143,7 @@ See [Troubleshoot event IDs](troubleshoot-windows-defender-antivirus.md) for det
 
 Sometimes a file is erroneously blocked by PUA protection, or a feature of a PUA is required to complete a task. In these cases, a file can be allow-listed. See [How to Configure Endpoint Protection in Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#to-exclude-specific-files-or-folders) for information on allowing files which are currently blocked by PUA protection in Windows Defender Antivirus.
 
-## Related topics
+## Related articles
 
-- [Next gen protection](windows-defender-antivirus-in-windows-10.md)
+- [Next-generation protection](windows-defender-antivirus-in-windows-10.md)
 - [Configure behavioral, heuristic, and real-time protection](configure-protection-features-windows-defender-antivirus.md)

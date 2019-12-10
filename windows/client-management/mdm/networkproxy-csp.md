@@ -84,7 +84,7 @@ Valid values:
 
 The data type is integer. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
 
-# Configuration Example
+## Configuration Example
 
 These generic code portions for the options **ProxySettingsPerUser**, **Autodetect**, and **SetupScriptURL** can be used for a specific operation, for example Replace.  Only enter the portion of code needed in the **Replace** section.
 ```xml

@@ -46,7 +46,7 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
    - **Scenario 2: PowerShell script in fileless attack** - simulates a fileless attack that relies on PowerShell, showcasing attack surface reduction and machine learning detection of malicious memory activity.
     
-   - **Scenario 3: Automated incident response** - triggers Automated investigation, which automatically hunts for and remediates breach artifacts to scale your incident response capacity.
+   - **Scenario 3: Automated incident response** - triggers automated investigation, which automatically hunts for and remediates breach artifacts to scale your incident response capacity.
 
 2. Download and read the corresponding walkthrough document provided with your selected scenario.
 

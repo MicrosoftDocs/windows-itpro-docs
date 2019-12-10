@@ -30,12 +30,12 @@ ms.reviewer:
 - Azure Active Directory
 - Hybrid Windows Hello for Business deployment
 - Azure AD registered, Azure AD joined, and Hybrid Azure AD joined
-- Windows 10, version 1709 or later, **Enterprise Edition**
+- Windows 10, version 1709 to 1809, **Enterprise Edition**. There is no licensing requirement for this feature since version 1903.
 
 The Microsoft PIN reset services enables you to help users recover who have forgotten their PIN.  Using Group Policy, Microsoft Intune or a compatible MDM, you can configure Windows 10 devices to securely use the Microsoft PIN reset service that enables users to reset their forgotten PIN through settings or above the lock screen without requiring re-enrollment.
 
 >[!IMPORTANT]
-> The Microsoft PIN Reset service only works with Windows 10, version 1709 or later **Enterprise Edition**.  The feature does not work with the **Pro** edition.]
+> The Microsoft PIN Reset service only works with Windows 10, version 1709 to 1809 with **Enterprise Edition**.  The feature works with **Pro** edition with Windows 10, version 1903 and newer.
 
 ### Onboarding the Microsoft PIN reset service to your Intune tenant
 
@@ -43,20 +43,26 @@ Before you can remotely reset PINs, you must on-board the Microsoft PIN reset se
 
 ### Connect Azure Active Directory with the PIN reset service
 
-1. Visit [Microsoft PIN Reset Service Integration website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent), and sign in using the tenant administrator account you use to manage your Azure Active Directory tenant.
-2. After you log in, click **Accept** to give consent for the PIN reset service to access your account.<br>
-![PIN reset service application in Azure](images/pinreset/pin-reset-service-home-screen.png)<br>
-3. In the Azure portal, you can verify that the Microsoft PIN reset service is integrated from the **Enterprise applications** blade. Filter to application status "Enabled" and both Microsoft Pin Reset Service Production and Microsoft Pin Reset Client Production will show up in your tenant.<br>
-![PIN reset service permissions page](images/pinreset/pin-reset-service-application.png)
+1. Go to the [Microsoft PIN Reset Service Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent), and sign in using the tenant administrator account you use to manage your Azure Active Directory tenant.
+2. After you log in, click **Accept** to give consent for the PIN reset service to access your account.
+![PIN reset service application in Azure](images/pinreset/pin-reset-service-prompt.png)
+3. Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using the tenant administrator account you use to manage your Azure Active Directory tenant.
+4. After you log in, click **Accept** to give consent for the PIN reset client to access your account.
+![PIN reset client application in Azure](images/pinreset/pin-reset-client-prompt.png)
+5. In the [Azure portal](https://portal.azure.com), verify that the Microsoft PIN Reset Service and Microsoft PIN Reset Client are integrated from the **Enterprise applications** blade. Filter to application status "Enabled" and both Microsoft Pin Reset Service Production and Microsoft Pin Reset Client Production will show up in your tenant.
+![PIN reset service permissions page](images/pinreset/pin-reset-applications.png)
+
+>[!NOTE]
+>After you Accept the PIN reset service and client requests, you will land on a page that states "You do not have permission to view this directory or page." This behavior is expected. Be sure to confirm that the two PIN Reset applications are listed for your tenant.
 
 ### Configure Windows devices to use PIN reset using Group Policy
 
-You configure Windows 10 to use the Microsoft PIN Reset service using the computer configuration portion of a Group Policy object. 
+You configure Windows 10 to use the Microsoft PIN Reset service using the computer configuration portion of a Group Policy object.
 
 1. Using the Group Policy Management Console (GPMC), scope a domain-based Group Policy to computer accounts in Active Directory.
 2. Edit the Group Policy object from step 1.
 3. Enable the **Use PIN Recovery** policy setting located under **Computer Configuration->Administrative Templates->Windows Components->Windows Hello for Business**.
-4. Close the Group Policy Management Editor to save the Group Policy object.  Close the GPMC. 
+4. Close the Group Policy Management Editor to save the Group Policy object.  Close the GPMC.
 
 ### Configure Windows devices to use PIN reset using Microsoft Intune
 
@@ -64,7 +70,7 @@ To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 
 
 #### Create a PIN Reset Device configuration profile using Microsoft Intune
 
-1. Sign-in to [Azure Portal](https://portal.azure.com) using a tenant administrator account. 
+1. Sign-in to [Azure Portal](https://portal.azure.com) using a tenant administrator account.
 2. You need your tenant ID to complete the following task.  You can discovery your tenant ID viewing the **Properties** of your Azure Active Directory from the Azure Portal. It will be listed under Directory ID. You can also use the following command in a command Window on any Azure AD joined or hybrid Azure AD joined computer.</br>
 
     ```

@@ -1,6 +1,6 @@
 ---
-title: Prepare and Deploy Windows Server 2016 Active Directory Federation Services (Windows Hello for Business)
-description: How toPrepare and Deploy Windows Server 2016 Active Directory Federation Services for Windows Hello for Business
+title: Prepare & Deploy Windows AD FS certificate trust (Windows Hello for Business)
+description: How to Prepare and Deploy Windows Server 2016 Active Directory Federation Services (AD FS) for Windows Hello for Business
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -54,6 +54,7 @@ Windows Hello for Business on-premises deployments require a federation server f
 The AD FS role needs a server authentication certificate for the federation services, but you can use a certificate issued by your enterprise (internal) certificate authority.  The server authentication certificate should have the following names included in the certificate if you are requesting an individual certificate for each node in the federation farm:
 * Subject Name: The internal FQDN of the federation server (the name of the computer running AD FS)
 * Subject Alternate Name: Your federation service name, such as *fs.corp.contoso.com* (or an appropriate wildcard entry such as *.corp.contoso.com)
+* Subject Alternate Name: Your device registration service name, such as *enterpriseregistration.contoso.com*
 
 You configure your federation service name when you configure the AD FS role. You can choose any name, but that name must be different than the name of the server or host. For example, you can name the host server **adfs** and the federation service **fs**.  The FQDN of the host is adfs.corp.contoso.com and the FQDN of the federation service is fs.corp.contoso.com.
 
@@ -192,6 +193,9 @@ Sign-in the federation server with _domain administrator_ equivalent credentials
 
 
 ### Add the AD FS Service account to the KeyCredential Admin group and the Windows Hello for Business Users group
+
+> [!NOTE]
+> If you have a Windows Server 2016 domain controller in your domain, you can use the **Key Admins** group instead of **KeyCredential Administrators** and skip the **Configure Permissions for Key Registration** step.
 
 The **KeyCredential Administrators** global group provides the AD FS service with the permissions needed to perform key registration.  The Windows Hello for Business group provides the AD FS service with the permissions needed to enroll a Windows Hello for Business authentication certificate on behalf of the provisioning user.
 
@@ -363,9 +367,12 @@ Active Directory Federation Server used for Windows Hello for Business certifica
 Approximately 60 days prior to enrollment agent certificate’s expiration, the AD FS service attempts to renew the certificate until it is successful.  If the certificate fails to renew, and the certificate expires, the AD FS server will request a new enrollment agent certificate.  You can view the AD FS event logs to determine the status of the enrollment agent certificate.
 
 ### Service Connection Point (SCP) in Active Directory for ADFS Device Registration Service
+> [!NOTE]
+> Normally this script is not needed, as enabling Device Registration via the ADFS Management console already creates the objects. You can validate the SCP using the script below. For detailed information about the Device Registration Service, see [Configuring Device Registration](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn614658(v=ws.11)?redirectedfrom=MSDN)
+
 Now you will add the Service connection Point to ADFS device registration Service for your Active directory by running the following script:
 
->[!TIP] 
+> [!TIP]
 > Make sure to change the $enrollmentService and $configNC variables before running the script.
 
 ```Powershell
@@ -483,7 +490,7 @@ Before you continue with the deployment, validate your deployment progress by re
 * Confirm you properly configured the Windows Hello for Business authentication certificate template—to include:   
     * Issuance requirements of an authorized signature from a certificate request agent.
     * The certificate template was properly marked as a Windows Hello for Business certificate template using certutil.exe
-    * The Windows Hello for Business Users group, or equivalent has the allow enroll and allow auto enroll permissions
+    * The Windows Hello for Business Users group, or equivalent has the allow enroll permissions
 * Confirm all certificate templates were properly published to the appropriate issuing certificate authorities.
 * Confirm the AD FS service account has the allow enroll permission for the Windows Hello Business authentication certificate template.
 * Confirm the AD FS certificate registration authority is properly configured using the `Get-AdfsCertificateAuthority` Windows PowerShell cmdlet.
@@ -495,6 +502,11 @@ Before you continue with the deployment, validate your deployment progress by re
 ## Validating your work
 
 You need to verify the AD FS service has properly enrolled for an enrollment agent certificate template.  You can verify this is a variety ways, depending on if your service account is a normal user account or if the service account is a group managed service account.
+
+> [!IMPORTANT]
+> After following the previous steps, if you are unable to validate that the devices are, in fact, being registered automatically, there is a Group Policy at:
+> **Computer Configuration > Policies > Administrative Templates > Windows Components > Device Registration >** "Register Domain Joined Computers As Devices". Set the policy to **Enabled**
+> and the registration will happen automatically.
 
 ### Event Logs
 

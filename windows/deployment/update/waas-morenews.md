@@ -1,5 +1,5 @@
 ---
-title: Windows as a service  
+title: Windows as a service news & resources
 ms.prod: w10
 ms.topic: article
 ms.manager: elizapo

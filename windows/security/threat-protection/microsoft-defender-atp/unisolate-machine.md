@@ -25,7 +25,7 @@ ms.topic: article
 
 Undo isolation of a machine.
 
-[!include[Machine actions note](machineactionsnote.md)]
+[!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -70,7 +70,7 @@ If successful, this method returns 201 - Created response code and [Machine Acti
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 POST https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/unisolate 

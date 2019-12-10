@@ -1,5 +1,5 @@
 ---
-title: Azure AD Join Single Sign-on Deployment Guides
+title: Azure AD Join Single Sign-on Deployment
 description: Azure Active Directory joined devices in a hybrid Deployment for on-premises single sign-on
 keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO, 
 ms.prod: w10
@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 08/19/2018
 ms.reviewer: 
 ---
-# Azure AD Join Single Sign-on Deployment Guides
+# Azure AD Join Single Sign-on Deployment
 
 **Applies to**
 -   Windows 10

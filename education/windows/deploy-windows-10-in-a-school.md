@@ -1096,7 +1096,7 @@ As a final quality control step, verify the device configuration to ensure that 
 - The device can connect to the Internet and view the appropriate web content in Microsoft Edge.
 - Windows Update is active and current with software updates.
 - Windows Defender is active and current with malware Security intelligence.
-- The SmartScreen Filter is active.
+- Windows Defender SmartScreen is active.
 - All Microsoft Store apps are properly installed and updated.
 - All Windows desktop apps are properly installed and updated.
 - Printers are properly configured.

@@ -1,5 +1,5 @@
 ---
-title: Test scenario 1 - Sign-in to Azure AD and use Cortana to manage the notebook (Windows 10)
+title: Sign-in to Azure AD and manage notebook with Cortana (Windows 10)
 description: A test scenario walking you through signing in and managing the notebook.
 ms.prod: w10
 ms.mktglfcycl: manage

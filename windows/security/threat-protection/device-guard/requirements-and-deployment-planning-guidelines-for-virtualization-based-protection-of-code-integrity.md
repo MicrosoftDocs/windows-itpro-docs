@@ -1,6 +1,6 @@
 ---
-title: Requirements and deployment planning guidelines for virtualization-based protection of code integrity (Windows 10)
-description: To help you plan a deployment of Microsoft Windows Defender Device Guard, this article describes hardware requirements for Windows Defender Device Guard, outlines deployment approaches, and describes methods for code signing and the deployment of code integrity policies.
+title: Deployment guidelines for Windows Defender Device Guard (Windows 10)
+description: To help you plan a deployment of Microsoft Windows Defender Device Guard, this article describes hardware requirements for Windows Defender Device Guard, outlines deployment approaches, and describes methods for code signing and code integrity policies.
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ ms.author: dansimp
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Computers must meet certain hardware, firmware, and software requirements in order to take adavantage of all of the virtualization-based security (VBS) features in [Windows Defender Device Guard](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md). Computers lacking these requirements can still be protected by Windows Defender Application Control (WDAC) policies—the difference is that those computers will not be as hardened against certain threats.
+Computers must meet certain hardware, firmware, and software requirements in order to take advantage of all of the virtualization-based security (VBS) features in [Windows Defender Device Guard](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md). Computers lacking these requirements can still be protected by Windows Defender Application Control (WDAC) policies—the difference is that those computers will not be as hardened against certain threats.
 
 For example, hardware that includes CPU virtualization extensions and SLAT will be hardened against malware that attempts to gain access to the kernel, but without protected BIOS options such as “Boot only from internal hard drive,” the computer could be booted (by a malicious person who has physical access) into an operating system on bootable media.
 

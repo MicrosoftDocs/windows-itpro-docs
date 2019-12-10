@@ -1,5 +1,5 @@
 ---
-title: File resource type
+title: User resource type
 description: Retrieves top recent alerts.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh

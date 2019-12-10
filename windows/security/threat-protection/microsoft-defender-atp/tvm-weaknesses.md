@@ -19,9 +19,11 @@ ms.date: 10/31/2019
 ---
 # Weaknesses
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-[!include[Prerelease information](prerelease.md)]
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 Threat & Vulnerability Management leverages the same signals in Microsoft Defender ATP's endpoint protection to scan and detect vulnerabilities.
 
@@ -33,7 +35,7 @@ The **Weaknesses** page lists down the vulnerabilities found in the infected sof
 >- RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
 >- RS4 customers | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
 >- RS3 customers | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
-><P>Downloading the above-mentioned security updates will be mandatory starting Patch Tuesday, October 8, 2019.
+
 
 ## Navigate through your organization's weaknesses page
 You can access the list of vulnerabilities in a few places in the portal:
@@ -121,6 +123,7 @@ You can report a false positive when you see any vague, inaccurate, missing, or 
 
 
 ## Related topics
+- [Supported operating systems and platforms](tvm-supported-os.md)
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
@@ -129,3 +132,4 @@ You can report a false positive when you see any vague, inaccurate, missing, or 
 - [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
+- [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

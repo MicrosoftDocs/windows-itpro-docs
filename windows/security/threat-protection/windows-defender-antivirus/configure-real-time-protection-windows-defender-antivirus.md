@@ -9,11 +9,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 11/21/2019
+author: denisebmsft
+ms.author: deniseb
+ms.date: 11/13/2018
 ms.reviewer: 
 manager: dansimp
+ms.custom: nextgen
 ---
 
 # Enable and configure Windows Defender Antivirus always-on protection in Group Policy
@@ -39,7 +40,7 @@ To enable and configure always-on protection:
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus**. 
 ![Windows Defender Antivirus](images/gpedit-windows-defender-antivirus.png)
 3. Configure the Windows Defender Antivirus antimalware service policy settings. To do this:  
-    1. In the **Windows Defender Antivirus** details pane on right, double-click the policy setting to configure, as specified in the following table:
+    1. In the **Windows Defender Antivirus** details pane on right, double-click the policy setting as specified in the following table:
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|
@@ -52,7 +53,7 @@ To enable and configure always-on protection:
 4. Configure the Windows Defender Antivirus real-time protection policy settings. To do this:  
     1. In the **Windows Defender Antivirus** details pane, double-click **Real-time Protection**. Or, from the **Windows Defender Antivirus** tree on left pane, click **Real-time Protection**.
     ![Windows Defender Antivirus Real-time Protection options](images/gpedit-real-time-protection.png)
-    2. In the **Real-time Protection** details pane, double-click the policy setting to configure, as specified in the following table:  
+    2. In the **Real-time Protection** details pane, double-click the policy setting as specified in the following table:  
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|
@@ -71,7 +72,7 @@ To enable and configure always-on protection:
     1. From the **Windows Defender Antivirus** tree on left pane, click **Scan**.
     ![Windows Defender Antivirus Scan options](images/gpedit-windows-defender-antivirus-scan.png)
 
-    2. In the **Scan** details pane, double-click the policy setting, as specified in the following table:
+    2. In the **Scan** details pane, double-click the policy setting as specified in the following table:
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|    
@@ -87,13 +88,14 @@ To enable and configure always-on protection:
 
 The main real-time protection capability is enabled by default, but you can disable it by using **Local Group Policy Editor**.
 
+To disable real-time protection in Group policy:  
 1. Open **Local Group Policy Editor**.
     1. In your Windows 10 taskbar search box, type **gpedit**.
     2. Under **Best match**, click **Edit group policy** to launch **Local Group Policy Editor**.
 
 2.  In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Defender Antivirus** > **Real-time Protection**.
 
-3. Double-click **Turn off real-time protection**.
+3. In the **Real-time Protection** details pane on right, double-click **Turn off real-time protection**.
 ![Turn off real-time protection](images/gpedit-turn-off-real-time-protection.png)
 
 4. In the **Turn off real-time protection** setting window, set the option to **Enabled**.
@@ -101,7 +103,7 @@ The main real-time protection capability is enabled by default, but you can disa
 5. Click **OK**.
 6. Close **Local Group Policy Editor**.
 
-## Related topics
+## Related articles
 
 - [Configure behavioral, heuristic, and real-time protection](configure-protection-features-windows-defender-antivirus.md)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
