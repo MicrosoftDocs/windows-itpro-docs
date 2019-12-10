@@ -78,7 +78,7 @@ Here is an example of the request.
 GET https://api.securitycenter.windows.com/api/alerts
 ```
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 **Response**
