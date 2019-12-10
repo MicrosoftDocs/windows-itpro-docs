@@ -1249,7 +1249,7 @@
 {
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/custom-ti-api.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/custom-detection-rules.md",
@@ -1364,7 +1364,7 @@
 {
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/experiment-custom-ti.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/threat-protection/windows-defender-atp/fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md",
@@ -1704,7 +1704,7 @@
 {
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/powershell-example-code.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/preferences-setup-windows-defender-advanced-threat-protection.md",
@@ -1779,7 +1779,7 @@
 {
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/python-example-code.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md",
@@ -1949,7 +1949,7 @@
 {
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/troubleshoot-custom-ti.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/threat-protection/windows-defender-atp/troubleshoot-onboarding-windows-defender-advanced-threat-protection.md",
@@ -2004,7 +2004,7 @@
 {
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/use-custom-ti.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/user-roles-windows-defender-advanced-threat-protection.md",
