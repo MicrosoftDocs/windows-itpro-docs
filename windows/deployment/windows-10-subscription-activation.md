@@ -99,7 +99,7 @@ If the device is running Windows 10, version 1703 or 1709, the user must either 
 
 If the device is running Windows 10, version 1803 or later:
 1. Windows 10, version 1803 must be updated with [KB4497934](https://support.microsoft.com/help/4497934/windows-10-update-kb4497934). Later versions of Windows 10 automatically include this patch.
-2. When the user signs in on a Hybrid Azure AD joined device with MFA enabled, a toast notification will indicate that there is a problem. See the example below. Click the toast and then click **Fix now** to step through the subscription activation process.
+2. When the user signs in on a Hybrid Azure AD joined device with MFA enabled, a notification will indicate that there is a problem. Click the notification and then click **Fix now** to step through the subscription activation process. See the example below:
 
 ![Subscription Activation with MFA1](images/sa-mfa1.png)<br>
 ![Subscription Activation with MFA2](images/sa-mfa2.png)<br>
