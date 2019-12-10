@@ -67,7 +67,7 @@ If the timestamp is not in the past 30 days - 400 Bad Request.
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/machines/findbyip(ip='10.248.240.38',timestamp=2018-09-22T08:44:05Z)

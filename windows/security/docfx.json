@@ -45,7 +45,8 @@
           "depot_name": "MSDN.security",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "titleSuffix": "Microsoft 365 Security"
     },
     "fileMetadata": {},
     "template": [],
