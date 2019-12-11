@@ -1,5 +1,5 @@
 ---
-title: Monitor the Windows 10 deployment with Configuration Manager (Windows 10)
+title: Monitor the Windows 10 deployment with Configuration Manager
 description: In this topic, you will learn how to monitor a Windows 10 deployment that was started previously using Microsoft System Center 2012 R2 Configuration Manager and the Microsoft Deployment Toolkit (MDT) Deployment Workbench.
 ms.assetid: 4863c6aa-6369-4171-8e1a-b052ca195fce
 ms.reviewer: 
@@ -10,6 +10,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.topic: article
 ---

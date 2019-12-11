@@ -3,6 +3,7 @@ author: eavena
 ms.author: eravena
 ms.date:  10/02/2018
 ms.reviewer: 
+audience: itpro
 manager: dansimp
 ms.prod: edge
 ms.topic: include
@@ -26,7 +27,7 @@ ms.topic: include
 
 To verify Windows Defender SmartScreen is turned off (disabled): 
 1. Click or tap **More** (…) and select **Settings** > **View Advanced settings**.
-2.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is disabled.<p>![Verify that Windows Defender SmartScreen is turned off (disabled)](../images/allow-smart-screen-validation.PNG)
+2.  Verify the setting **Help protect me from malicious sites and download with Windows Defender SmartScreen** is disabled.<p>![Verify that Windows Defender SmartScreen is turned off (disabled)](../images/allow-smart-screen-validation.PNG)
 
 
 ### ADMX info and settings

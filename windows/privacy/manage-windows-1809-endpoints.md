@@ -23,11 +23,11 @@ ms.reviewer:
 
 Some Windows components, app, and related services transfer data to Microsoft network endpoints. Some examples include:
 
--	Connecting to Microsoft Office and Windows sites to download the latest app and security updates.
--	Connecting to email servers to send and receive email.
--	Connecting to the web for every day web browsing.
--	Connecting to the cloud to store and access backups.
--	Using your location to show a weather forecast.
+- Connecting to Microsoft Office and Windows sites to download the latest app and security updates.
+- Connecting to email servers to send and receive email.
+- Connecting to the web for every day web browsing.
+- Connecting to the cloud to store and access backups.
+- Using your location to show a weather forecast.
 
 This article lists different endpoints that are available on a clean installation of Windows 10, version 1709 and later.
 Details about the different ways to control traffic to these endpoints are covered in [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). 
@@ -261,6 +261,8 @@ If you [turn off traffic for these endpoints](manage-connections-from-windows-op
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 |  |   | login.msa.akadns6.net  |
+|  |   | login.live.com  |
+|  |   | account.live.com |
 | system32\Auth.Host.exe | HTTPS | auth.gfx.ms |
 |  |   | us.configsvc1.live.com.akadns.net |
 
@@ -396,7 +398,7 @@ The following endpoint is used to retrieve Skype configuration values. To turn o
 ## Windows Defender
 
 The following endpoint is used for Windows Defender when Cloud-based Protection is enabled.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender), the device will not use Cloud-based Protection.
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender), the device will not use Cloud-based Protection. For a detailed list of Windows Defender Antivirus cloud service connections, see [Allow connections to the Windows Defender Antivirus cloud service](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus#allow-connections-to-the-windows-defender-antivirus-cloud-service).
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
@@ -411,7 +413,7 @@ If you [turn off traffic for these endpoints](manage-connections-from-windows-op
 |MpCmdRun.exe|HTTPS|go.microsoft.com |
 
 The following endpoints are used for Windows Defender Smartscreen reporting and notifications.
-If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender-smartscreen), Smartscreen notifications will no appear.
+If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender-smartscreen), Windows Defender Smartscreen notifications will no appear.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|

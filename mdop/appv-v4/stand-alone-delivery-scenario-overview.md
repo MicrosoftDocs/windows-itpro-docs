@@ -1,7 +1,7 @@
 ---
 title: Stand-Alone Delivery Scenario Overview
 description: Stand-Alone Delivery Scenario Overview
-author: manikadhiman
+author: dansimp
 ms.assetid: b109f309-f3c1-43af-996f-2a9b138dd171
 ms.reviewer: 
 manager: dansimp
@@ -9,7 +9,7 @@ ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

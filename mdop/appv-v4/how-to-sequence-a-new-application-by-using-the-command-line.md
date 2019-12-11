@@ -1,15 +1,15 @@
 ---
 title: How to Sequence a New Application by Using the Command Line
 description: How to Sequence a New Application by Using the Command Line
-author: eavena
+author: dansimp
 ms.assetid: c3b5c842-6a91-4d0a-9a22-c7b8d1aeb09a
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

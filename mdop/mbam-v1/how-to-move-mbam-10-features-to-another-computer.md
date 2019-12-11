@@ -1,15 +1,15 @@
 ---
 title: How to Move MBAM 1.0 Features to Another Computer
 description: How to Move MBAM 1.0 Features to Another Computer
-author: msfttracyp
+author: dansimp
 ms.assetid: e1907d92-6b42-4ba3-b0e4-60a9cc8285cc
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -3,10 +3,10 @@ title: Best practices - deploy feature updates for user-initiated installations
 description: Learn how to manually deploy feature updates
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
+audience: itpro
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: jaimeo
 ms.date: 07/10/2018
 ms.reviewer: 
 manager: laurawi
@@ -69,6 +69,7 @@ foreach ($k in $iniSetupConfigKeyValuePair.Keys)
 #Write content to file 
 New-Item $iniFilePath -ItemType File -Value $iniSetupConfigContent -Force
 
+<#
 Disclaimer 
 Sample scripts are not supported under any Microsoft standard support program or service. The sample scripts is 
 provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without 
@@ -78,6 +79,7 @@ Microsoft, its authors, or anyone else involved in the creation, production, or 
 for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, 
 loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample script 
 or documentation, even if Microsoft has been advised of the possibility of such damages.
+#>
 ```
 
 >[!NOTE]

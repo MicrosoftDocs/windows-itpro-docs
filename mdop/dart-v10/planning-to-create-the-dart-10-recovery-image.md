@@ -1,11 +1,11 @@
 ---
 title: Planning to Create the DaRT 10 Recovery Image
 description: Planning to Create the DaRT 10 Recovery Image
-author: msfttracyp
+author: dansimp
 ms.assetid: a0087d93-b88f-454b-81b2-3c7ce3718023
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
@@ -49,7 +49,7 @@ The following items are required or recommended for creating the DaRT recovery i
 </tr>
 <tr class="odd">
 <td align="left"><p>Windows Debugging Tools for your platform</p></td>
-<td align="left"><p>Required when you run the <strong>Crash Analyzer</strong> to determine the cause of a computer failure. We recommend that you specify the path of the Windows Debugging Tools at the time that you create the DaRT recovery image. You can download the Windows Debugging Tools here: <a href="https://go.microsoft.com/fwlink/?LinkId=99934" data-raw-source="[Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/?LinkId=99934)">Download and Install Debugging Tools for Windows</a>.</p></td>
+<td align="left"><p>Required when you run the <strong>Crash Analyzer</strong> to determine the cause of a computer failure. We recommend that you specify the path of the Windows Debugging Tools at the time that you create the DaRT recovery image. You can download the Windows Debugging Tools here: <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/" data-raw-source="[Download and Install Debugging Tools for Windows](https://docs.microsoft.com/windows-hardware/drivers/debugger/)">Download and Install Debugging Tools for Windows</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Optional: Windows symbols files for use with <strong>Crash Analyzer</strong></p></td>
@@ -62,13 +62,11 @@ The following items are required or recommended for creating the DaRT recovery i
 
 ## Related topics
 
-
 [Planning to Deploy DaRT 10](planning-to-deploy-dart-10.md)
 
  
 
  
-
 
 
 

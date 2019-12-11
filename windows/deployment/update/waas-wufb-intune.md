@@ -3,10 +3,11 @@ title: Walkthrough use Intune to configure Windows Update for Business (Windows 
 description: Configure Windows Update for Business settings using Microsoft Intune.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
+audience: itpro
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greg-lindsay
+ms.audience: itpro
+author: jaimeo
 ms.date: 07/27/2017
 ms.reviewer: 
 manager: laurawi
@@ -19,7 +20,7 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
+
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 

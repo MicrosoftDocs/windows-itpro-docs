@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -42,6 +42,8 @@ Apps can be enlightened or unenlightened:
 
 ## List of enlightened Microsoft apps
 Microsoft has made a concerted effort to enlighten several of our more popular apps, including the following:
+
+- Microsoft 3D Viewer
 
 - Microsoft Edge
 
@@ -80,11 +82,16 @@ Microsoft still has apps that are unenlightened, but which have been tested and 
 - Skype for Business
 
 ## Adding enlightened Microsoft apps to the allowed apps list
+
+> [!NOTE]
+> As of January 2019 it is no longer necessary to add Intune Company Portal as an exempt app since it is now included in the default list of protected apps.
+
 You can add any or all of the enlightened Microsoft apps to your allowed apps list. Included here is the **Publisher name**, **Product or File name**, and **App Type** info for both Microsoft Intune and System Center Configuration Manager.
 
 
 |                     Product name                     |                                                                                                                                                                                                                        App info                                                                                                                                                                                                                        |
 |------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                    Microsoft 3D Viewer                    |                                                                                                                                     **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Microsoft3DViewer<br>**App Type:** Universal app                                                                                                                                      |
 |                    Microsoft Edge                    |                                                                                                                                     **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.MicrosoftEdge<br>**App Type:** Universal app                                                                                                                                      |
 |                   Microsoft People                   |                                                                                                                                         **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.People<br>**App Type:** Universal app                                                                                                                                         |
 |                     Word Mobile                      |                                                                                                                                      **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.Word<br>**App Type:** Universal app                                                                                                                                       |

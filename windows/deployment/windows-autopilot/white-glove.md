@@ -7,9 +7,11 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: low
 ms.sitesec: library
 ms.pagetype: deploy
+audience: itproF
 author: greg-lindsay
 manager: laurawi
-ms.author: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---
@@ -28,7 +30,7 @@ With **Windows Autopilot for white glove deployment**, the provisioning process 
 
  ![OEM](images/wg02.png)
 
-Enabled with Microsoft Intune in Windows 10, version 1903 and later, white glove deployment capabilities build on top of existing Windows Autopilot [user-driven scenarios](user-driven.md), supporting both the user-driven [Azure AD join](user-driven-aad.md) and [Hybrid Azure AD](user-driven-hybrid.md) join scenarios.
+Enabled with Microsoft Intune in Windows 10, version 1903 and later, white glove deployment capabilities build on top of existing Windows Autopilot [user-driven scenarios](user-driven.md), supporting both the user-driven mode for Azure Active Directory Join, and user-driven mode for Hybrid Azure Active directory join scenarios.
 
 ## Prerequisites
 
@@ -44,7 +46,7 @@ In addition to [Windows Autopilot requirements](windows-autopilot-requirements.m
 
 ## Preparation
 
-Devices slated for WG provisioning are registered for Autopilot via the normal registration process. 
+Devices slated for white glove provisioning are registered for Autopilot via the normal registration process. 
 
 To be ready to try out Windows Autopilot for white glove deployment, ensure that you can first successfully use existing Windows Autopilot user-driven scenarios:
 
@@ -69,7 +71,7 @@ Windows Autopilot for white glove deployment supports two distinct scenarios:
 - User-driven deployments with Hybrid Azure AD Join.  The device will be joined to an on-premises Active Directory domain, and separately registered with Azure AD.
 Each of these scenarios consists of two parts, a technician flow and a user flow.  At a high level, these parts are the same for Azure AD Join and Hybrid Azure AD join; differences are primarily seen by the end user in the authentication steps.
 
-### Technican flow
+### Technician flow
 
 After the customer or IT Admin has targeted all the apps and settings they want for their devices through Intune, the white glove technician can begin the white glove process.  The technician could be a member of the IT staff, a services partner, or an OEM – each organization can decide who should perform these activities. Regardless of the scenario, the process to be performed by the technician is the same:
 - Boot the device (running Windows 10 Pro, Enterprise, or Education SKUs, version 1903 or later).
@@ -93,6 +95,9 @@ If the pre-provisioning process completes successfully:
 - A green status screen will be displayed with information about the device, including the same details presented previously (e.g. Autopilot profile, organization name, assigned user, QR code), as well as the elapsed time for the pre-provisioning steps.
  ![white-glove-result](images/white-glove-result.png)
 - Click **Reseal** to shut the device down.  At that point, the device can be shipped to the end user.
+
+>[!NOTE]
+>Technician Flow inherits behavior from [Self-Deploying Mode](self-deploying.md). Per the Self-Deploying Mode documentation, it leverages the Enrollment Status Page to hold the device in a provisioning state and prevent the user from proceeding to the desktop after enrollment but before software and configuration is done applying. As such, if Enrollment Status Page is disabled, the reseal button may appear before software and configuration is done applying letting you proceed to the user flow before technician flow provisioning is complete. The green screen validates that enrollment was successful, not that the technician flow is necessarily complete.
 
 If the pre-provisioning process fails:
 - A red status screen will be displayed with information about the device, including the same details presented previously (e.g. Autopilot profile, organization name, assigned user, QR code), as well as the elapsed time for the pre-provisioning steps.

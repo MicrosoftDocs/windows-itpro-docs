@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
+audience: itpro
 author: greg-lindsay
 manager: laurawi
 ms.collection: M365-modern-desktop
@@ -84,12 +85,25 @@ For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & 
 - Azure Active Directory (Azure AD) available for identity management.
 - Devices must be Azure AD-joined or Hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices are not supported.
 
-    >[!NOTE]
-    >An issue has been identified with Hybrid Azure AD joined devices that have enabled [multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) (MFA). If a user signs into a device using their Active Directory account and MFA is enabled, the device will not successfully upgrade to their Windows Enterprise subscription.  To resolve this issue, the user must either sign in with an Azure Active Directory account, or you must disable MFA for this user during the 30-day polling period and renewal.
-
 For Microsoft customers that do not have EA or MPSA, you can obtain Windows 10 Enterprise E3/E5 or A3/A5 through a cloud solution provider (CSP). Identity management and device requirements are the same when you use CSP to manage licenses, with the exception that Windows 10 Enterprise E3 is also available through CSP to devices running Windows 10, version 1607. For more information about obtaining Windows 10 Enterprise E3 through your CSP, see [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md).
 
 If devices are running Windows 7 or Windows 8.1, see [New Windows 10 upgrade benefits for Windows Cloud Subscriptions in CSP](https://blogs.windows.com/business/2017/01/19/new-windows-10-upgrade-benefits-windows-cloud-subscriptions-csp/)
+
+#### Muti-factor authentication
+
+An issue has been identified with Hybrid Azure AD joined devices that have enabled [multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) (MFA). If a user signs into a device using their Active Directory account and MFA is enabled, the device will not successfully upgrade to their Windows Enterprise subscription.  
+
+To resolve this issue:
+
+If the device is running Windows 10, version 1703 or 1709, the user must either sign in with an Azure AD account, or you must disable MFA for this user during the 30-day polling period and renewal.
+
+If the device is running Windows 10, version 1803 or later:
+1. Windows 10, version 1803 must be updated with [KB4497934](https://support.microsoft.com/help/4497934/windows-10-update-kb4497934). Later versions of Windows 10 automatically include this patch.
+2. When the user signs in on a Hybrid Azure AD joined device with MFA enabled, a notification will indicate that there is a problem. Click the notification and then click **Fix now** to step through the subscription activation process. See the example below:
+
+![Subscription Activation with MFA1](images/sa-mfa1.png)<br>
+![Subscription Activation with MFA2](images/sa-mfa2.png)<br>
+![Subscription Activation with MFA2](images/sa-mfa3.png)
 
 ### Windows 10 Education requirements
 
@@ -105,8 +119,8 @@ If devices are running Windows 7 or Windows 8.1, see [New Windows 10 upgrade ben
 
 With Windows 10 Enterprise or Windows 10 Education, businesses and institutions can benefit from enterprise-level security and control. Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Education or Windows 10 Enterprise to their users. Now, with Windows 10 Enterprise E3 or A3 and E5 or A5 being available as a true online service, it is available in select channels thus allowing all organizations to take advantage of enterprise-grade Windows 10 features. To compare Windows 10 editions and review pricing, see the following:
 
-- [Compare Windows 10 editions](https://www.microsoft.com/en-us/windowsforbusiness/compare)
-- [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-security-pricing)
+- [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare)
+- [Enterprise Mobility + Security Pricing Options](https://www.microsoft.com/cloud-platform/enterprise-mobility-security-pricing)
 
 You can benefit by moving to Windows as an online service in the following ways:
 
@@ -167,7 +181,7 @@ The following policies apply to acquisition and renewal of licenses on devices:
 - Devices that have been upgraded will attempt to renew licenses about every 30 days, and must be connected to the Internet to successfully acquire or renew a license.
 - If a device is disconnected from the Internet until its current subscription expires, the operating system will revert to Windows 10 Pro or Windows 10 Pro Education. As soon as the device is connected to the Internet again, the license will automatically renew.
 - Up to five devices can be upgraded for each user license. 
-- If a device the meets requirements and a licensed user signs in on that device, it will be upgraded.
+- If a device meets the requirements and a licensed user signs in on that device, it will be upgraded.
 
 Licenses can be reallocated from one user to another user, allowing you to optimize your licensing investment against changing needs.
 
@@ -215,12 +229,12 @@ See [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md).
 
 ## Virtual Desktop Access (VDA)
 
-Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx).
+Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx).
 
 Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscriptions for VDA. Active Directory-joined and Azure Active Directory-joined clients are supported. See [Enable VDA for Subscription Activation](vda-subscription-activation.md).
 
 ## Related topics
 
 [Connect domain-joined devices to Azure AD for Windows 10 experiences](https://azure.microsoft.com/documentation/articles/active-directory-azureadjoin-devices-group-policy/)<br>
-[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)<br>
-[Windows for business](https://www.microsoft.com/en-us/windowsforbusiness/default.aspx)<br>
+[Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)<br>
+[Windows for business](https://www.microsoft.com/windowsforbusiness/default.aspx)<br>

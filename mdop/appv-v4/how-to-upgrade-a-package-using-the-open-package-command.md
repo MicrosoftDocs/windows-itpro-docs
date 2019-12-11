@@ -1,15 +1,15 @@
 ---
 title: How to Upgrade a Package Using the Open Package Command
 description: How to Upgrade a Package Using the Open Package Command
-author: eavena
+author: dansimp
 ms.assetid: 67c10440-de8a-4547-a34b-f83206d0cc3b
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -4,7 +4,7 @@ description: Here's a step-by-step guide to adding an Azure Active Directory ten
 ms.assetid: 36D94BEC-A6D8-47D2-A547-EBD7B7D163FA
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

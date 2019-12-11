@@ -31,6 +31,7 @@ When the server that stores the mandatory profile is unavailable, such as when t
 User profiles become mandatory profiles when the administrator renames the NTuser.dat file (the registry hive) of each user's profile in the file system of the profile server from `NTuser.dat` to `NTuser.man`. The `.man` extension causes the user profile to be a read-only profile.
 
 <span id="extension"/>
+
 ## Profile extension for each Windows version
 
 The name of the folder in which you store the mandatory profile must use the correct extension for the operating system it will be applied to. The following table lists the correct extension for each operating system version.
@@ -38,7 +39,7 @@ The name of the folder in which you store the mandatory profile must use the cor
 | Client operating system version | Server operating system version | Profile extension |
 | --- | --- | --- |
 | Windows XP | Windows Server 2003 </br>Windows Server 2003 R2 | none |
-| Windows Vista</br>Windows 7 | Windows Server 2008</br>Windows Server 2008 R2 | v2 |
+| Windows Vista</br>Windows 7 | Windows Server 2008 </br>Windows Server 2008 R2 | v2 |
 | Windows 8 | Windows Server 2012 | v3 |
 | Windows 8.1 | Windows Server 2012 R2 | v4 |
 | Windows 10, versions 1507 and 1511 | N/A | v5 |
@@ -67,10 +68,8 @@ First, you create a default user profile with the customizations that you want, 
 3. Uninstall any application you do not need or want from the PC. For examples on how to uninstall Windows 10 Application see [Remove-AppxProvisionedPackage](https://docs.microsoft.com/powershell/module/dism/remove-appxprovisionedpackage?view=winserver2012-ps). For a list of uninstallable applications, see [Understand the different apps included in Windows 10](https://docs.microsoft.com/windows/application-management/apps-in-windows-10).
 
 
-~~~
  >[!NOTE]
  >It is highly recommended to uninstall unwanted or unneeded apps as it will speed up user sign-in times.
-~~~
 
 3. At a command prompt, type the following command and press **ENTER**.
 

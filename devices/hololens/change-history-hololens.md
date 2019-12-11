@@ -50,11 +50,6 @@ New or changed topic | Description
 --- | ---
 Insider preview for Microsoft HoloLens | New (topic retired on release of Windows 10, version 1809)
 
-## June 2018
-
-New or changed topic | Description
---- | ---
-[HoloLens in the enterprise: requirements and FAQ](hololens-requirements.md#pin) | Added instructions for creating a sign-in PIN. 
 
 ## May 2018
 
@@ -78,19 +73,13 @@ The topics in this library have been updated for Windows 10 Holographic for Busi
 
 New or changed topic | Description
 --- | ---
-[Unlock Windows Holographic for Business features](hololens-upgrade-enterprise.md)  | Replaced the instructions for upgrading to Windows Holographic for Business using Microsoft Intune with a link to the new Intune topic.
+[Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)  | Replaced the instructions for upgrading to Windows Holographic for Business using Microsoft Intune with a link to the new Intune topic.
 
 ## December 2017
 
 New or changed topic | Description
 --- | ---
 [Enable Bitlocker device encryption for HoloLens](hololens-encryption.md) | New
-
-## May 2017
-
-| New or changed topic | Description |
-| --- | --- |
-| [Microsoft HoloLens in the enterprise: requirements](hololens-requirements.md) | Changed title to **Microsoft HoloLens in the enterprise: requirements and FAQ**, added questions and answers in new [FAQ section](hololens-requirements.md#faq-for-hololens) |
 
 ## January 2017
 

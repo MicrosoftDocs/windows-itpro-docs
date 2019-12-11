@@ -1,15 +1,15 @@
 ---
 title: How To Use Dynamic Suite Composition
 description: How To Use Dynamic Suite Composition
-author: eavena
+author: dansimp
 ms.assetid: 24147feb-a0a8-4791-a8e5-cbe5fe13c762
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

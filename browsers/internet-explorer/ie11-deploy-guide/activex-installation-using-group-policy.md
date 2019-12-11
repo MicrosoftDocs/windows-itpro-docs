@@ -7,7 +7,7 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: 59185370-558c-47e0-930c-8a5ed657e9e3
 ms.reviewer: 
-manager: dansimp
+audience: itpromanager: dansimp
 ms.author: dansimp
 title: ActiveX installation using group policy (Internet Explorer 11 for IT Pros)
 ms.sitesec: library

@@ -62,7 +62,7 @@ If successful and domain exists - 200 OK with list of [machine](machine.md) enti
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ```

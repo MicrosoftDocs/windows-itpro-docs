@@ -1,6 +1,6 @@
 ---
-title: Prepare and Deploy Windows Server 2016 Active Directory Federation Services (Windows Hello for Business)
-description: How toPrepare and Deploy Windows Server 2016 Active Directory Federation Services for Windows Hello for Business
+title: Prepare & Deploy Windows Active Directory Federation Services with key trust (Windows Hello for Business)
+description: How to Prepare and Deploy Windows Server 2016 Active Directory Federation Services for Windows Hello for Business
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -38,7 +38,7 @@ A new Active Directory Federation Services farm should have a minimum of two fed
 
 Prepare the Active Directory Federation Services deployment by installing and updating two Windows Server 2016 Servers.  Ensure the update listed below is applied to each server before continuing.    
 
-##  Update Windows Server 2016
+## Update Windows Server 2016
 
 Sign-in the federation server with _local admin_ equivalent credentials.
 1. Ensure Windows Server 2016 is current by running **Windows Update** from **Settings**. Continue this process until no further updates are needed. If you’re not using Windows Update for updates, please review the [Windows Server 2016 update history page](https://support.microsoft.com/help/4000825/windows-10-windows-server-2016-update-history) to make sure you have the latest updates available installed.

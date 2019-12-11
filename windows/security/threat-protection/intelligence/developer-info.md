@@ -8,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: levinec
+ms.author: ellevin
 author: levinec
 ms.localizationpriority: medium
 manager: dansimp

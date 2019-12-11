@@ -79,7 +79,7 @@ The easiest way to verify the onPremisesDistingushedNamne attribute is synchroni
 
 1. Open a web browser and navigate to https://graphexplorer.azurewebsites.net/
 2. Click **Login** and provide Azure credentials
-3. In the Azure AD Graph Explorer URL, type <strong>https://graph.windows.net/myorganization/users/[userid], where **[userid]</strong> is the user principal name of user in Azure Active Directory.  Click **Go**
+3. In the Azure AD Graph Explorer URL, type https://graph.windows.net/myorganization/users/[userid], where **[userid]** is the user principal name of user in Azure Active Directory.  Click **Go**
 4. In the returned results, review the JSON data for the **onPremisesDistinguishedName** attribute.  Ensure the attribute has a value and the value is accurate for the given user.
    ![Azure AD Connect On-Prem DN Attribute](images/aadjcert/aadconnectonpremdn.png)
 
@@ -535,7 +535,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 1. Sign-in to the [Azure Portal](https://portal.azure.com/).
 2. Select **All Services**.  Type **Intune** to filter the list of services.  Click **Microsoft Intune**.
 ![Microsoft Intune Console](images/aadjcert/microsoftintuneconsole.png)
-3. Select **Device Configuration**, and then select **Certificate Authority**.
+3. Select **Device Configuration**, and then select **Certificate Connectors**.
 ![Intune Certificate Authority](images/aadjcert/intunedeviceconfigurationcertauthority.png)
 4. Click **Add**, and then click **Download the certificate connector software** under the **Steps to install connector for SCEP** section.
 ![Intune Download Certificate connector](images/aadjcert/intunedownloadcertconnector.png)
@@ -580,7 +580,7 @@ Sign-in the NDES server with access equivalent to _domain administrator_.
 3. Click **Sign-in**.  Type credentials for your Intune administrator, or tenant administrator that has the **Global Administrator** directory role.
    ![Intune Certificate Connector Configuration 02](images/aadjcert/intunecertconnectorconfig-02.png)
    > [!IMPORTANT]
-   > The user account must have a valid Intune licenese asssigned.  If the user account does not have a valid Intune license, the sign-in fails.
+   > The user account must have a valid Intune licenese assigned.  If the user account does not have a valid Intune license, the sign-in fails.
 
 4. Optionally, you can configure the NDES Connector for certificate revocation. If you want to do this, continue to the next task. Otherwise, Click **Close**, restart the **Intune Connector Service** and the **World Wide Web Publishing Service**, and skip the next task. 
 
@@ -610,7 +610,7 @@ Sign-in the NDES server with access equivalent to _domain admin_.
 
 1. Open a command prompt.
 2. Type the following command to confirm the NDES Connector's last connection time is current.</br>
-```reg query hklm\software\Micosoft\MicrosoftIntune\NDESConnector\ConnectionStatus```</br>
+```reg query hklm\software\Microsoft\MicrosoftIntune\NDESConnector\ConnectionStatus```</br>
 3. Close the command prompt.
 4. Open **Internet Explorer**.
 5. In the navigation bar, type</br>
@@ -636,7 +636,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 8. Click **Members**.  Use the  **Select members** pane to add members to this group. When finished click **Select**.
 9. Click **Create**.
 
-### Create a SCEP Certificte Profile
+### Create a SCEP Certificate Profile
 Sign-in a workstation with access equivalent to a _domain user_.
 
 1. Sign-in to the [Azure Portal](https://portal.azure.com/).
@@ -656,15 +656,16 @@ Sign-in a workstation with access equivalent to a _domain user_.
 10. Select **Enroll to Windows Hello for Business, otherwise fail (Windows 10 and later)** from the **Key storage provider (KSP)** list.
 11. Select **Custom** from the **Subject name format** list.
 12. Next to **Custom**, type **CN={{OnPrem_Distinguished_Name}}** to make the on-premises distinguished name the subject of the issued certificate.
-13. Refer to the "Configure Certificate Templates on NDES" task for how you configured the **AADJ WHFB Authentication** certificate template in the registry. Select the appropriate combination of key usages from the **Key Usages** list that map to configured NDES template in the registry. In this example, the **AADJ WHFB Authentication** certificate template was added to the **SignatureTemplate** registry value name.  The **Key usage** that maps to that registry value name is **Digital Signature**.
-14. Select a previously configured **Trusted certificate** profile that matches the root certificate of the issuing certificate authority.
+13. Specify **User Principal Name (UPN)** as a **Subject Alternative Name** value.
+14. Refer to the "Configure Certificate Templates on NDES" task for how you configured the **AADJ WHFB Authentication** certificate template in the registry. Select the appropriate combination of key usages from the **Key Usages** list that map to configured NDES template in the registry. In this example, the **AADJ WHFB Authentication** certificate template was added to the **SignatureTemplate** registry value name. The **Key usage** that maps to that registry value name is **Digital Signature**.
+15. Select a previously configured **Trusted certificate** profile that matches the root certificate of the issuing certificate authority.
     ![WHFB SCEP certificate profile Trusted Certificate selection](images/aadjcert/intunewhfbscepprofile-01.png)
-15. Under **Extended key usage**, type **Smart Card Logon** under <strong>Name. Type **1.3.6.1.4.1.311.20.2.2</strong> under **Object identifier**.  Click **Add**.
-16. Type a percentage (without the percent sign) next to **Renewal Threshold** to determine when the certificate should attempt to renew. The recommended value is **20**.
+16. Under **Extended key usage**, type **Smart Card Logon** under **Name**. Type **1.3.6.1.4.1.311.20.2.2** under **Object identifier**. Click **Add**.
+17. Type a percentage (without the percent sign) next to **Renewal Threshold** to determine when the certificate should attempt to renew. The recommended value is **20**.
     ![WHFB SCEP certificate Profile EKUs](images/aadjcert/intunewhfbscepprofile-03.png)
-17. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**.  For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll.  Click **Add**.  Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests amongst the URLs listed in the SCEP certificate profile.
-18. Click **OK**.
-19. Click **Create**.
+18. Under **SCEP Server URLs**, type the fully qualified external name of the Azure AD Application proxy you configured. Append to the name **/certsrv/mscep/mscep.dll**. For example, https://ndes-mtephendemo.msappproxy.net/certsrv/mscep/mscep.dll. Click **Add**. Repeat this step for each additional NDES Azure AD Application Proxy you configured to issue Windows Hello for Business certificates. Microsoft Intune round-robin load balances requests among the URLs listed in the SCEP certificate profile.
+19. Click **OK**.
+20. Click **Create**.
 
 ### Assign Group to the WHFB Certificate Enrollment Certificate Profile
 Sign-in a workstation with access equivalent to a _domain user_.

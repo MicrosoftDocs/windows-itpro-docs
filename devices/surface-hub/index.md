@@ -1,7 +1,7 @@
 ---
 title: Surface Hub
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 layout: LandingPage
 ms.prod: surface-hub
@@ -9,6 +9,7 @@ ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 description: "Get started with Microsoft Surface Hub."
+ms.localizationpriority: High
 ---
 # Get started with Surface Hub
 
@@ -29,6 +30,7 @@ Surface Hub 2S is an all-in-one digital interactive whiteboard, meetings platfor
                         <p><a href="https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Behind-the-design-Surface-Hub-2S/ba-p/464099" target="_blank">Behind the design: Surface Hub 2S</a></p>
                         <p><a href="surface-hub-2s-whats-new.md">What's new in Surface Hub 2S</a></p>
                         <p><a href="differences-between-surface-hub-and-windows-10-enterprise.md">Operating system essentials</a></p>
+                        <p><a href="https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d">Enable Microsoft Whiteboard on Surface Hub</a></p>
                     </div>
                 </div>
             </div>
@@ -64,9 +66,9 @@ Surface Hub 2S is an all-in-one digital interactive whiteboard, meetings platfor
                     </div>
                     <div class="cardText">
                         <h3>Deploy</h3>
-                        <p><a href="surface-hub-2s-deploy-checklist.md">Surface Hub 2S deployment checklist</a></p>
-                        <p><a href="surface-hub-2s-account.md">Create device account</a></p>
-                        <p><a href="surface-hub-2s-deploy.md">Deploy with provisioning package</a></p>
+                              <p><a href="surface-hub-2s-adoption-kit.md">Surface Hub 2S adoption and training</a></p>
+                              <p><a href="surface-hub-2s-deploy-checklist.md">Surface Hub 2S deployment checklist</a></p>
+                              <p><a href="surface-hub-2s-account.md">Create device account</a></p>
                     </div>
                 </div>
             </div>
@@ -121,7 +123,7 @@ Surface Hub 2S is an all-in-one digital interactive whiteboard, meetings platfor
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Support</h3>
+                        <h3>Troubleshoot</h3>
                         <p><a href="https://support.microsoft.com/help/4493926" target="_blank">Service and warranty</a></p>
                         <p><a href="surface-hub-2s-recover-reset.md">Recover & reset Surface Hub 2S</a></p>
                         <p><a href="support-solutions-surface-hub.md">Surface Hub support solutions</a></p>
@@ -155,7 +157,8 @@ Surface Hub 2S is an all-in-one digital interactive whiteboard, meetings platfor
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Surface Hub 2s Videos</h3>
+                        <h3>Surface Hub 2S Videos</h3>
+                        <p><a href="surface-hub-2s-adoption-videos.md" target="_blank">Adoption and training videos</p>
                         <p><a href="https://youtu.be/pbhNngw3a-Y" target="_blank">What is Surface Hub 2S?</p>
                         <p><a href="https://www.youtube.com/watch?v=CH2seLS5Wb0" target="_blank">Surface Hub 2S with Teams</p>
                         <p><a href="https://www.youtube.com/watch?v=I4N2lQX4WyI&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ&index=7" target="_blank">Surface Hub 2S with Microsoft 365</p>

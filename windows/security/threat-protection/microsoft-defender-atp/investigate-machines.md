@@ -23,7 +23,7 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
 Investigate the details of an alert raised on a specific machine to identify other behaviors or events that might be related to the alert or the potential scope of the breach.
 
@@ -54,12 +54,13 @@ The machine details section provides information such as the domain, OS, and hea
 Response actions run along the top of a specific machine page and include:
 
 - Manage tags
-- Initiate Automated Investigation
+- Initiate automated investigation
 - Initiate Live Response Session
 - Collect investigation package
 - Run antivirus scan
 - Restrict app execution
 - Isolate machine
+- Consult a threat expert
 - Action center
 
 You can take response actions in the Action center, in a specific machine page, or in a specific file page.
@@ -137,7 +138,7 @@ More details about certain events are provided in the **Additional information**
 - Active threat detected - the threat detection occurred while the threat was running
 - Remediation unsuccessful - an attempt to remediate the detected threat was invoked but failed
 - Remediation successful - the detected threat was stopped and cleaned
-- Warning bypassed by user - the SmartScreen warning was dismissed and overridden by a user
+- Warning bypassed by user - the Windows Defender SmartScreen warning was dismissed and overridden by a user
 - Suspicious script detected - a potentially malicious script was found running
 - The alert category - if the event led to the generation of an alert, the alert category  ("Lateral Movement", for example) is provided
 

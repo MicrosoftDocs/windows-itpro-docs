@@ -81,7 +81,7 @@ Supported operations are Get and Replace.
 
 Retrieve all available Windows Information Protection (formerly known as Enterprise Data Protection) logs starting from the specified StartTime.
 
-``` syntax
+```xml
 <SyncML>
     <SyncBody>
         <Replace>
@@ -104,7 +104,7 @@ Retrieve all available Windows Information Protection (formerly known as Enterpr
 
 Retrieve a specified number of security auditing logs starting from the specified StartTime.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>

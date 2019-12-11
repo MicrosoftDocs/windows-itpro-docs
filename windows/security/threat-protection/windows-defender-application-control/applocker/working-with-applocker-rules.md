@@ -18,8 +18,8 @@ ms.date: 08/27/2018
 # Working with AppLocker rules
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes AppLocker rule types and how to work with them for your application control policies.
 

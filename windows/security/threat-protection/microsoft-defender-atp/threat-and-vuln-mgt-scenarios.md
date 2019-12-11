@@ -21,6 +21,10 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 ## Before you begin
 Ensure that your machines:
 - Are onboarded to Microsoft Defender Advanced Threat Protection
@@ -29,13 +33,18 @@ Ensure that your machines:
 >[!NOTE]
 >Threat & Vulnerability Management can also scan machines that run on Windows 7 and Windows Server 2019 operating systems and detects vulnerabilities addressed in patch Tuesday.
 
-- Have the following mandatory updates installed:
-- (1) RS3 customers | [KB4493441](https://support.microsoft.com/en-us/help/4493441/windows-10-update-kb4493441)
-- (2) RS4 customers | [KB4493464](https://support.microsoft.com/en-us/help/4493464)
+- Have the following mandatory updates installed and deployed in your network to boost your vulnerability assessment detection rates:
+
+> Release | Security update KB number and link
+> :---|:---
+> RS3 customers | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) and [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+> RS4 customers| [KB4493464](https://support.microsoft.com/help/4493464) and [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+> RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+> 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+
 - Are onboarded to Microsoft Intune and System Center Configuration Manager (SCCM). If you are use SCCM, update your console to the latest May version 1905
 - Have at least one security recommendation that can be viewed in the machine page
 - Are tagged or marked as co-managed
-
 
 ## Reduce your threat and vulnerability exposure
 Threat & Vulnerability Management introduces a new exposure score metric, which visually represents how exposed your machines are to imminent threats.
@@ -138,19 +147,51 @@ When an exception is created for a recommendation, the recommendation is no long
 2. Click the top-most recommendation. A flyout panel opens with the recommendation details.
 
 3. Click **Exception options**.
+![Screenshot of the exception option in the remediation flyout pane](images/tvm-exception-option.png)
 
 4. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
 
+> ![Screenshot of exception flyout page which details justification and context](images/tvm-exception-flyout.png)
+
 5. Click **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
+![Screenshot of exception confirmation message](images/tvm-exception-confirmation.png)
 
 6. Navigate to the **Remediation** page under the **Threat & Vulnerability Management** menu and click the **Exceptions** tab to view all your exceptions (current and past). 
+![Screenshot of exception list of exceptions in the Remediation page](images/tvm-exception-list.png) 
+
+## Use Advanced hunting query to search for machines with High active alerts or critical CVE public exploit 
+
+1. Go to **Advanced hunting** from the left-hand navigation pane.
+
+2. Scroll down to the TVM advanced hunting schemas to familiarize yourself with the column names.
+
+3. Enter the following queries:
+
+```
+// Search for machines with High active alerts or Critical CVE public exploit 
+DeviceTvmSoftwareInventoryVulnerabilities 
+| join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId 
+| where IsExploitAvailable == 1 and CvssScore >= 7
+| summarize NumOfVulnerabilities=dcount(CveId), 
+ComputerName=any(ComputerName) by MachineId 
+| join kind =inner(AlertEvents) on MachineId  
+| summarize NumOfVulnerabilities=any(NumOfVulnerabilities), 
+ComputerName=any(ComputerName) by MachineId, AlertId 
+| project ComputerName, NumOfVulnerabilities, AlertId  
+| order by NumOfVulnerabilities desc 
+
+```
 
 ## Related topics
+- [Supported operating systems and platforms](tvm-supported-os.md)
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
-- [Remediation](tvm-remediation.md)
+- [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Advanced hunting overview](overview-hunting.md)
+- [All Advanced hunting tables](advanced-hunting-reference.md)
+- [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

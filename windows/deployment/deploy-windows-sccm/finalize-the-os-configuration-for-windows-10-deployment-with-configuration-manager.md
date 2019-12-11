@@ -1,5 +1,5 @@
 ---
-title: Finalize the operating system configuration for Windows 10 deployment with Configuration Manager (Windows 10)
+title: Finalize operating system configuration for Windows 10 deployment
 description: This topic walks you through the steps to finalize the configuration of your Windows 10 operating deployment, which includes enablement of the optional Microsoft Deployment Toolkit (MDT) monitoring for Microsoft System Center 2012 R2 Configuration Manager, logs folder creation, rules configuration, content distribution, and deployment of the previously created task sequence.
 ms.assetid: 38b55fa8-e717-4689-bd43-8348751d493e
 ms.reviewer: 
@@ -10,6 +10,7 @@ ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.sitesec: library
+audience: itpro
 author: greg-lindsay
 ms.topic: article
 ---
@@ -59,7 +60,7 @@ To support additional server-side logging in Configuration Manager, you create a
 
 2.  Type the following commands, pressing **Enter** after each one:
 
-    ``` syntax
+    ``` 
     New-Item -Path E:\Logs -ItemType directory
     New-SmbShare -Name Logs$ -Path E:\Logs -ChangeAccess EVERYONE
     icacls E:\Logs /grant '"CM_NAA":(OI)(CI)(M)'
@@ -74,7 +75,7 @@ This section will show you how to configure the rules (the Windows 10 x64 Settin
 
 2. Using Notepad, edit the CustomSetting.ini file with the following settings:
 
-   ``` syntax
+   ``` 
    [Settings]
    Priority=Default
    Properties=OSDMigrateConfigFiles,OSDMigrateMode

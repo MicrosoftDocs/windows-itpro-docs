@@ -17,7 +17,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -32,7 +33,8 @@
       "breadcrumb_path": "/hololens/breadcrumb/toc.json",
       "ms.technology": "windows",
       "ms.topic": "article",
-      "ms.author": "jdecker",
+      "audience": "ITPro",
+      "manager": "laurawi",
       "ms.date": "04/05/2017",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
@@ -41,8 +43,9 @@
         "./": {
           "depot_name": "Win.itpro-hololens",
           "folder_relative_path_in_docset": "./"
+        } 
+          
         }
-      }
     },
     "fileMetadata": {},
     "template": [
@@ -50,5 +53,15 @@
     ],
     "dest": "devices/hololens",
     "markdownEngineName": "markdig"
-  }
+  },
+    "contributors_to_exclude": [ 
+    "rjagiewich", 
+    "traya1", 
+    "rmca14", 
+    "claydetels19", 
+    "Kellylorenebaker",
+    "jborsecnik",
+    "tiburd",
+    "garycentric"
+    ]
 }

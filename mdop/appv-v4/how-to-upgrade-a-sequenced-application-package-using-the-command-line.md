@@ -1,15 +1,15 @@
 ---
 title: How to Upgrade a Sequenced Application Package Using the Command Line
 description: How to Upgrade a Sequenced Application Package Using the Command Line
-author: eavena
+author: dansimp
 ms.assetid: 682fac46-c71d-4731-831b-81bfd5032764
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

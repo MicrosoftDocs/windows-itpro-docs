@@ -19,14 +19,10 @@ ms.reviewer:
 # Windows and the GDPR: Information for IT Administrators and Decision Makers
 
 Applies to:
-- Windows 10, version 1809
-- Windows 10, version 1803
-- Windows 10, version 1709
-- Windows 10, version 1703
+- Windows 10, version 1703 and newer
 - Windows 10 Team Edition, version 1703 for Surface Hub
-- Windows Server 2019
-- Windows Server 2016
-- Windows Analytics
+- Windows Server 2016 and newer
+- Desktop Analytics
 
 This topic provides IT Decision Makers with a basic understanding of the relationship between users in an organization and Microsoft in the context of the GDPR (General Data Protection Regulation). You will also learn what role an IT organization plays for that relationship.
 
@@ -74,7 +70,7 @@ For example, when an organization is using Microsoft Windows Defender Advanced T
 
 #### Processor scenario
 
-In the controller scenario described above, Microsoft is a *processor* because Microsoft provides data processing services to that controller (in the given example, an organization that subscribed to Windows Defender ATP and enabled it for the user’s device). As processor, Microsoft only processes data on behalf of the enterprise customer and does not have the right to process data beyond their instructions as specified in a written contract, such as the [Microsoft Product Terms and the Microsoft Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx).
+In the controller scenario described above, Microsoft is a *processor* because Microsoft provides data processing services to that controller (in the given example, an organization that subscribed to Windows Defender ATP and enabled it for the user’s device). As processor, Microsoft only processes data on behalf of the enterprise customer and does not have the right to process data beyond their instructions as specified in a written contract, such as the [Microsoft Product Terms and the Microsoft Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx).
 
 ## GDPR relationship between a Windows 10 user and Microsoft
 
@@ -112,37 +108,41 @@ Some examples of diagnostic data include:
 
 Diagnostic data is categorized into the levels "Security", "Basic", "Enhanced", and "Full". For a detailed discussion about these diagnostic data levels please see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md). To find more about what information is collected and how it is handled, see [Understanding Windows diagnostic data](configure-windows-diagnostic-data-in-your-organization.md#understanding-windows-diagnostic-data).
 
->[!IMPORTANT]
->Other Microsoft services as well as 3rd party applications and drivers running on Windows devices may implement their own functionality, independently from Windows, to transport their diagnostic data. Please contact the publisher for further guidance on how to control the diagnostic data collection level and transmission of these applications and services.
+> [!IMPORTANT]
+> Other Microsoft services as well as 3rd party applications and drivers running on Windows devices may implement their own functionality, independently from Windows, to transport their diagnostic data. Please contact the publisher for further guidance on how to control the diagnostic data collection level and transmission of these applications and services.
 
 ### Windows services where Microsoft is the processor under the GDPR
 
-Most Windows 10 services are controller services in terms of the GDPR – for both Windows functional data and Windows diagnostic data. But there are a few Windows services where Microsoft is a processor for functional data under the GDPR, such as [Windows Analytics](https://www.microsoft.com/windowsforbusiness/windows-analytics) and [Windows Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/windowsforbusiness/windows-atp).
+Most Windows 10 services are controller services in terms of the GDPR – for both Windows functional data and Windows diagnostic data. But there are a few Windows services where Microsoft is a processor for functional data under the GDPR, such as [Desktop Analytics](https://aka.ms/dadocs), [Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) and [Windows Defender Advanced Threat Protection (ATP)](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
 >[!NOTE]
->Both Windows Analytics and Windows Defender ATP are subscription services for organizations. Some functionality requires a certain license (please see [Compare Windows 10 editions](https://www.microsoft.com/en-us/windowsforbusiness/compare)).
+>Both Desktop Analytics and Windows Defender ATP are subscription services for organizations. Some functionality requires a certain license (please see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare)).
 
-#### Windows Analytics
+#### Desktop Analytics
 
-[Windows Analytics](https://www.microsoft.com/en-us/windowsforbusiness/windows-analytics) is a service that provides rich, actionable information for helping organizations to gain deep insights into the operational efficiency and health of the Windows devices in their environment. It uses Windows diagnostic data from devices enrolled by the IT organization of an enterprise into the Windows Analytics service.
+> [!IMPORTANT]
+> The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](/windows/deployment/update/update-compliance-get-started) will continue to be supported.
+> For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/en-us/help/4521815/windows-analytics-retirement).
 
-Windows [transmits Windows diagnostic data](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) to Microsoft datacenters, where that data is analyzed and stored. With Windows Analytics, the IT organization can then view the analyzed data to detect and fix issues or to improve their processes for upgrading to Windows 10.
+[Desktop Analytics](https://aka.ms/dadocs) is a cloud-based service that integrates with Configuration Manager. The service provides insight and intelligence for you to make more informed decisions about the update readiness of Windows Windows devices in their environment. It uses Windows diagnostic data from devices enrolled by the IT organization of an enterprise with data aggregated from millions of devices into the Desktop Analytics service.
 
-As a result, in terms of the GDPR, the organization that has subscribed to Windows Analytics is acting as the controller, while Microsoft is the processor for Windows Analytics.
->[!NOTE]
->The IT organization must explicitly enable Windows Analytics for a device after the organization subscribes.
+Windows [transmits Windows diagnostic data](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) to Microsoft datacenters, where that data is analyzed and stored. With Desktop Analytics, the IT organization can then view the analyzed data to detect and fix issues or to improve their processes for upgrading to Windows 10.
 
->[!IMPORTANT]
->Windows Analytics does not collect Windows Diagnostic data by itself. Instead, Windows Analytics only uses a subset of Windows Diagnostic data that is collected by Windows for an enrolled device. The Windows Diagnostic data collection is controlled by the IT department of an organization or the user of a device.
+As a result, in terms of the GDPR, the organization that has subscribed to Desktop Analytics is acting as the controller, while Microsoft is the processor for Desktop Analytics.
+> [!NOTE]
+> The IT organization must explicitly enable Desktop Analytics for a device after the organization subscribes.
+
+> [!IMPORTANT]
+> Desktop Analytics does not collect Windows Diagnostic data by itself. Instead, Desktop Analytics only uses a subset of Windows Diagnostic data that is collected by Windows for an enrolled device. The Windows Diagnostic data collection is controlled by the IT department of an organization or the user of a device. See [Enable data sharing for Desktop Analytics](https://docs.microsoft.com/sccm/desktop-analytics/enable-data-sharing)
 
 #### Windows Defender ATP
 
-[Windows Defender ATP](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp) is cloud-based service that collects and analyzes usage data from an organization’s devices to detect security threats. Some of the data can contain personal data as defined by the GDPR. Enrolled devices transmit usage data to Microsoft datacenters, where that data is analyzed, processed, and stored. The security operations center (SOC) of the organization can view the analyzed data using the [Windows Defender ATP portal](https://securitycenter.windows.com/).
+[Windows Defender ATP](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) is cloud-based service that collects and analyzes usage data from an organization’s devices to detect security threats. Some of the data can contain personal data as defined by the GDPR. Enrolled devices transmit usage data to Microsoft datacenters, where that data is analyzed, processed, and stored. The security operations center (SOC) of the organization can view the analyzed data using the [Windows Defender ATP portal](https://securitycenter.windows.com/).
 
 As a result, in terms of the GDPR, the organization that has subscribed to Windows Defender ATP is acting as the controller, while Microsoft is the processor for Windows Defender ATP.
 
->[!NOTE]
->The IT organization must explicitly enable Windows Defender ATP for a device after the organization subscribes.
+> [!NOTE]
+> The IT organization must explicitly enable Windows Defender ATP for a device after the organization subscribes.
 
 #### At a glance – Windows 10 services GDPR mode of operations
 
@@ -152,21 +152,21 @@ The following table lists in what GDPR mode – controller or processor – Wind
 | --- | --- |
 | Windows Functional data | Controller or Processor* |
 | Windows Diagnostic data | Controller |
-| Windows Analytics | Processor |
+| Desktop Analytics | Processor |
 | Windows Defender Advanced Threat Detection (ATP) | Processor |
 
 *Table 1: Windows 10 GDPR modes of operations for different Windows 10 services*
 
 */*Depending on which application/feature this is referring to.*
 
-##  Windows diagnostic data and Windows 10
+## Windows diagnostic data and Windows 10
 
 
 ### Recommended Windows 10 settings
 
 Windows diagnostic data collection level for Windows 10 can be set by a user in Windows (*Start > Settings > Privacy > Diagnostics & feedback*) or by the IT department of an organization, using Group Policy or Mobile Device Management (MDM) techniques.
 
-* For Windows 10, version 1803 and version 1809, Microsoft recommends setting the Windows diagnostic level to “Enhanced”. This enables organizations to get the full functionality of [Windows Analytics](#windows-analytics).
+* For Windows 10, version 1803 and version 1809, Microsoft recommends setting the Windows diagnostic level to “Enhanced”. This enables organizations to get the full functionality of [Desktop Analytics](#desktop-analytics).
 
 >[!NOTE]
 >For more information on the Enhanced level, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
@@ -174,17 +174,16 @@ Windows diagnostic data collection level for Windows 10 can be set by a user in 
 * For Windows 10, version 1709, and Windows 10, version 1703, the recommended Windows diagnostic level configuration for EEA and Switzerland commercial users is “Basic”.
 
 >[!NOTE]
->For Windows 7, Microsoft recommends [configuring enterprise devices for Windows Analytics](/windows/deployment/update/windows-analytics-get-started) to facilitate upgrade planning to Windows 10.
+>For Windows 7, Microsoft recommends [using  Commercial Data Opt-in setting](/previous-versions/windows/it-pro/windows-7/ee126127(v=ws.10)) to facilitate upgrade planning to Windows 10.
 
-### Additional information for Windows Analytics
+### Additional information for Desktop Analytics
 
-Some Windows Analytics solutions and functionality, such as Update Compliance, works with “Basic” as minimum Windows diagnostic level. Other solutions and functionality of Windows Analytics, such as Device Health, require “Enhanced”.
+The basic functionality of Desktop Analytics works at the “Basic” diagnostic data level. Other functionality of Desktop Analytics, such as usage or health data for updated devices, require “Enhanced”. 
 
-Those organizations who wish to share the smallest set of events for Windows Analytics and have set the Windows diagnostic level to “Enhanced” can use the “Limit Enhanced diagnostic data to the minimum required by Windows Analytics” setting. This filtering mechanism was that Microsoft introduced in Windows 10, version 1709. When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to the smallest set of data required by Windows Analytics.
+Those organizations who wish to share the smallest set of events for Desktop Analytics and have set the Windows diagnostic level to “Enhanced” can use the [“Limit Enhanced diagnostic data to the minimum required by Desktop Analytics”](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#limit-enhanced-diagnostic-data-to-the-minimum-required-by-desktop-analytics) setting. This filtering mechanism was that Microsoft introduced in Windows 10, version 1709. When enabled, this feature limits the operating system diagnostic data events included in the Enhanced level to the smallest set of data required by Desktop Analytics.
 
->[!NOTE]
->Additional information can be found at [Windows Analytics and privacy](/windows/deployment/update/windows-analytics-privacy
-).
+> [!NOTE]
+> Additional information can be found at [Desktop Analytics and privacy](/sccm/desktop-analytics/privacy).
 
 ## Controlling Windows 10 data collection and notification about it
 
@@ -224,7 +223,7 @@ IT Professionals that are interested in this configuration, see [Windows 10 pers
 
 ### Windows 10 connections to Microsoft
 
-To find out more about the network connections that Windows components make to Microsoft as well as the privacy settings that affect data shared with either Microsoft or apps, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) and [Manage Windows 10 connection endpoints](manage-windows-endpoints.md). These articles describe how these settings can be managed by an IT Professional.
+To find out more about the network connections that Windows components make to Microsoft as well as the privacy settings that affect data shared with either Microsoft or apps, see [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services). This article describe how these settings can be managed by an IT Professional, and fronts an array of Windows version-specific articles.
 
 ### At-a-glance: the relationship between an IT organization and the GDPR
 
@@ -258,8 +257,8 @@ Backups, including live backups and backups that are stored locally within an or
 
 Surface Hub is a shared device used within an organization. The device identifier collected as part of diagnostic data is not connected to a user. For removing Windows diagnostic data sent to Microsoft for a Surface Hub, Microsoft created the Surface Hub Delete Diagnostic Data tool available in the Microsoft Store.
 
->[!NOTE]
->Additional apps running on the device, that are not delivered as part of the in-box experience of Surface Hub, may implement their own diagnostic data collection and transmission functionality independently to collect and process personal data. Please contact the app publisher for further guidance on how to control this.
+> [!NOTE]
+> Additional apps running on the device, that are not delivered as part of the in-box experience of Surface Hub, may implement their own diagnostic data collection and transmission functionality independently to collect and process personal data. Please contact the app publisher for further guidance on how to control this.
 
 An IT administrator can configure privacy- related settings, such as setting the Windows diagnostic data level to Basic. Surface Hub does not support group policy for centralized management; however, IT administrators can use MDM to apply these settings to Surface Hub. For more information about Surface Hub and MDM, please see [Manage settings with an MDM provider](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub).
 
@@ -269,8 +268,8 @@ An IT administrator can configure privacy- related settings, such as setting the
 
 Personal data protection is one of the goals of the GDPR. One way of improving personal data protection is to use the modern and advanced security features of Windows 10. An IT organization can learn more at [Mitigate threats by using Windows 10 security features](/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10) and [Standards for a highly secure Windows 10 device](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure).
 
->[!NOTE]
->Some of these features might require a particular Windows hardware, such as a computer with a Trusted Platform Module (TPM) chip, and can depend on a particular Windows product (such as Windows 10 E5).
+> [!NOTE]
+> Some of these features might require a particular Windows hardware, such as a computer with a Trusted Platform Module (TPM) chip, and can depend on a particular Windows product (such as Windows 10 E5).
 
 ### Windows Security Baselines
 
@@ -285,7 +284,7 @@ To make it easier to deploy settings that restrict connections from Windows 10 a
 
 ### Microsoft Trust Center and Service Trust Portal
 
-Please visit our [GDPR section of the Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr) to obtain additional resources and to learn more about how Microsoft can help you fulfill specific GDPR requirements. There you can find lots of useful information about the GDPR, including how Microsoft is helping customers to successfully master the GDPR, a FAQ list, and a list of [resources for GDPR compliance](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/resources). Also, please check out the [Compliance Manager](https://aka.ms/compliancemanager) of the Microsoft [Service Trust Portal (STP)](https://aka.ms/stp) and [Get Started: Support for GDPR Accountability](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+Please visit our [GDPR section of the Microsoft Trust Center](https://www.microsoft.com/trustcenter/privacy/gdpr) to obtain additional resources and to learn more about how Microsoft can help you fulfill specific GDPR requirements. There you can find lots of useful information about the GDPR, including how Microsoft is helping customers to successfully master the GDPR, a FAQ list, and a list of [resources for GDPR compliance](https://www.microsoft.com/TrustCenter/Privacy/gdpr/resources). Also, please check out the [Compliance Manager](https://aka.ms/compliancemanager) of the Microsoft [Service Trust Portal (STP)](https://aka.ms/stp) and [Get Started: Support for GDPR Accountability](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 ### Additional resources
 

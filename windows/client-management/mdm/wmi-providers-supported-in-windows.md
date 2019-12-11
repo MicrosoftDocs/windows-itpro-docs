@@ -27,7 +27,7 @@ The child node names of the result from a WMI query are separated by a forward s
 
 Get the list of network adapters from the device.
 
-``` syntax
+```xml
 <Get>
    <Target>
       <LocURI>./cimV2/Win32_NetworkAdapter</LocURI>
@@ -37,7 +37,7 @@ Get the list of network adapters from the device.
 
 Result
 
-``` syntax
+```xml
 <Item>
    <Source>
       <LocURI>./cimV2/Win32_NetworkAdapter</LocURI>
@@ -296,21 +296,13 @@ For links to these classes, see [**MDM Bridge WMI Provider**](https://msdn.micro
 [**Win32\_UninterruptiblePowerSupply**](https://msdn.microsoft.com/library/windows/hardware/aa394503) |
 [**Win32\_USBController**](https://msdn.microsoft.com/library/windows/hardware/aa394504)    |
 [**Win32\_UTCTime**](https://msdn.microsoft.com/library/windows/hardware/aa394510)          | ![cross mark](images/checkmark.png)
-[**Win32\_VideoController**](https://msdn.microsoft.com/library/windows/hardware/aa394505) |
+[**Win32\_VideoController**](https://docs.microsoft.com/windows/win32/cimwin32prov/win32-videocontroller) |
 **Win32\_WindowsUpdateAgentVersion**                                                        |
  
 
 ## Related topics
 
-
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
-
- 
-
-10/10/2016
-
-
-
-
+## Related Links
+[CIM Video Controller](https://docs.microsoft.com/windows/win32/cimwin32prov/cim-videocontroller)

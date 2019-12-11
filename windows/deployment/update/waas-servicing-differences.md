@@ -6,10 +6,11 @@ description: Learn the differences between servicing Windows 10 and servicing ol
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
+audience: itpro
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greg-lindsay
+ms.audience: itpro
+author: jaimeo
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
@@ -19,12 +20,12 @@ ms.collection: M365-modern-desktop
 > 
 > **February 15, 2019:  This document has been corrected and edited to reflect that security-only updates for legacy OS versions are not cumulative. They were previously identified as cumulative similar to monthly rollups, which is inaccurate.**
 
-Today, many enterprise customers have a mix of modern and legacy client and server operating systems. Managing the servicing and updating differences between those legacy operating systems and Windows 10 versions adds a level of complexity that is not well understood. This can be confusing. With the end of support for legacy [Windows 7 SP1](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020) and Windows Server 2008 R2 variants on January 14, 2020, System Administrators have a critical need critical to understand how best to leverage a modern workplace to support system updates.
+Today, many enterprise customers have a mix of modern and legacy client and server operating systems. Managing the servicing and updating differences between those legacy operating systems and Windows 10 versions adds a level of complexity that is not well understood. This can be confusing. With the end of support for legacy [Windows 7 SP1](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020) and Windows Server 2008 R2 variants on January 14, 2020, System Administrators have a critical need to understand how best to leverage a modern workplace to support system updates.
  
 The following provides an initial overview of how updating client and server differs between the Windows 10-era Operating Systems (such as, Windows 10 version 1709, Windows Server 2016) and legacy operating systems (such as Windows 7, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2). 
 
->[!NOTE]
->A note on naming convention in this article: For brevity, "Windows 10" refers to all operating systems across client, server and IoT released since July 2015, while "legacy" refers to all operating systems prior to that period for client and server, including Windows 7, Window 8.1, Windows Server 2008 R2, Windows Server 2012 R2, etc.
+> [!NOTE]
+> A note on naming convention in this article: For brevity, "Windows 10" refers to all operating systems across client, server and IoT released since July 2015, while "legacy" refers to all operating systems prior to that period for client and server, including Windows 7, Window 8.1, Windows Server 2008 R2, Windows Server 2012 R2, etc.
 
 ## Infinite fragmentation
 Prior to Windows 10, all updates to operating system (OS) components were published individually. On "Update Tuesday," customers would pick and choose individual updates they wanted to apply. Most chose to update security fixes, while far fewer selected non-security fixes, updated drivers, or installed .NET Framework updates. 
@@ -38,7 +39,7 @@ Windows 10 provided an opportunity to end the era of infinite fragmentation. Wit
 
 This helps simplify servicing. Devices with the original Release to Market (RTM) version of a feature release installed could get up to date by installing the most recent LCU. 
 
-Windows publishes the new LCU packages for each Windows 10 version (1607, 1709, etc.) on the second Tuesday of each month. This package is classified as a required security update and contains contents from the previous LCU as well as new security, non-security and Internet Explorer 11 (IE11) fixes. The security classification, by definition, requires a reboot of the device to complete installation of the update.
+Windows publishes the new LCU packages for each Windows 10 version (1607, 1709, etc.) on the second Tuesday of each month. This package is classified as a required security update and contains contents from the previous LCU as well as new security, non-security, and Internet Explorer 11 (IE11) fixes. A reboot of the device might be required to complete installation of the update.
 
 
 ![High level cumulative update model](images/servicing-cadence.png)
@@ -84,6 +85,12 @@ Moving to the cumulative model for legacy OS versions continues to improve predi
 
 ## Public preview releases
 Lastly, the cumulative update model directly impacts the public Preview releases offered in the 3rd and/or 4th weeks of the month. Update Tuesday, also referred to as the "B" week release occurs on the second Tuesday of the month. It is always a required security update across all operating systems. In addition to this monthly release, Windows also releases non-security update "previews" targeting the 3rd (C) and the 4th (D) weeks of the month. These preview releases include that month’s B-release plus a set of non-security updates for testing and validation as a cumulative package. We recommend IT Administrators uses the C/D previews to test the update in their environments. Any issues identified with the updates in the C/D releases are identified and then fixed or removed, prior to being rolled up in to the next month’s B release package together with new security updates. Security-only Packages are not part of the C/D preview program.
+
+> [!NOTE]
+> Only preview updates for the most recent release of Windows 10 are published to Windows Server Update Services (WSUS). For customers using the WSUS channel, and products such as System Center Configuration Manager that rely on it, will not see preview updates for older versions of Windows 10.
+
+> [!NOTE]
+> Preview updates for Windows 10 are not named differently than their LCU counterparts and do not contain the word 'Preview'. They can be identified by their release date (C or D week) and their classification as non-security updates.
 
 ### Examples
 Windows 10 version 1709:

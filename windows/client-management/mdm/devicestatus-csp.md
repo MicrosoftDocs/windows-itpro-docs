@@ -277,23 +277,23 @@ Supported operation is Get.
 <a href="" id="devicestatus-deviceguard-virtualizationbasedsecurityhwreq"></a>**DeviceStatus/DeviceGuard/VirtualizationBasedSecurityHwReq**  
 Added in Windows, version 1709. Virtualization-based security hardware requirement status. The value is a 256 value bitmask.
 
--	0x0: System meets hardware configuration requirements
--	0x1: SecureBoot required 
--	0x2: DMA Protection required
--	0x4: HyperV not supported for Guest VM
--	0x8: HyperV feature is not available
+- 0x0: System meets hardware configuration requirements
+- 0x1: SecureBoot required 
+- 0x2: DMA Protection required
+- 0x4: HyperV not supported for Guest VM
+- 0x8: HyperV feature is not available
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-deviceguard-virtualizationbasedsecuritystatus"></a>**DeviceStatus/DeviceGuard/VirtualizationBasedSecurityStatus**  
 Added in Windows, version 1709. Virtualization-based security status.  Value is one of the following:
--	0 - Running
--	1 - Reboot required 
--	2 - 64 bit architecture required 
--	3 - not licensed 
--	4 - not configured 
--	5 - System doesn't meet hardware requirements 
--	42 – Other. Event logs in Microsoft-Windows-DeviceGuard have more details
+- 0 - Running
+- 1 - Reboot required 
+- 2 - 64 bit architecture required 
+- 3 - not licensed 
+- 4 - not configured 
+- 5 - System doesn't meet hardware requirements 
+- 42 – Other. Event logs in Microsoft-Windows-DeviceGuard have more details
 
 
 Supported operation is Get.
@@ -301,11 +301,11 @@ Supported operation is Get.
 <a href="" id="devicestatus-deviceguard-lsacfgcredguardstatus"></a>**DeviceStatus/DeviceGuard/LsaCfgCredGuardStatus**  
 Added in Windows, version 1709. Local System Authority (LSA) credential guard status.
 
--	0 - Running
--	1 - Reboot required
--	2 - Not licensed for Credential Guard
--	3 - Not configured
--	4 - VBS not running 
+- 0 - Running
+- 1 - Reboot required
+- 2 - Not licensed for Credential Guard
+- 3 - Not configured
+- 4 - VBS not running 
 
 
 Supported operation is Get.

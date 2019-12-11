@@ -8,8 +8,8 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
-ms.author: dolmont
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -313,8 +313,8 @@ Troubleshooting Network Unlock issues begins by verifying the environment. Many 
 - Verify the clients were rebooted after applying the policy.
 - Verify the **Network (Certificate Based)** protector is listed on the client. This can be done using either manage-bde or Windows PowerShell cmdlets. For example the following command will list the key protectors currently configured on the C: drive of the lcoal computer:
 
-  ``` syntax
-  manage-bde –protectors –get C:
+  ```powershell
+  manage-bde -protectors -get C:
   ```
   >**Note:**  Use the output of manage-bde along with the WDS debug log to determine if the proper certificate thumbprint is being used for Network Unlock
  

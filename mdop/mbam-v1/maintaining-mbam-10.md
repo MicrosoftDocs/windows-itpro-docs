@@ -1,15 +1,15 @@
 ---
 title: Maintaining MBAM 1.0
 description: Maintaining MBAM 1.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 02ffb093-c364-4837-bbe8-23d4c09fbd3d
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

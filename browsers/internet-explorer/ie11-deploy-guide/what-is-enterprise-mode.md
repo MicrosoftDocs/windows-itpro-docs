@@ -3,12 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Info about the features included in Enterprise Mode with Internet Explorer 11.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 3c77e9f3-eb21-46d9-b5aa-f9b2341cfefa
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Enterprise Mode and the Enterprise Mode Site List (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 10/25/2018
@@ -70,19 +71,19 @@ This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypf
 
 ```xml
 <site-list version="205">
-	<!--- File creation header --->
+	<!-- File creation header -->
 	<created-by>
 		<tool>EnterpriseSiteListManager</tool>
 		<version>10586</version>
 		<date-created>20150728.135021</date-created>
 	</created-by>
-  	<!--- Begin Site List ---> 
+  	<!-- Begin Site List --> 
 	<site url="www.cpandl.com">
 		<compat-mode>IE8Enterprise</compat-mode>
 		<open-in>IE11</open-in>
 	</site>
 	<site url="www.woodgrovebank.com">
-		<compat-mode>default</compat-mode>
+		<compat-mode>Default</compat-mode>
 		<open-in>IE11</open-in>
 	</site>
 	<site url="adatum.com">
@@ -91,8 +92,8 @@ This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypf
 	</site>
 	<site url="relecloud.com"/>  
 	<!-- default for self-closing XML tag is 
-		<compat-mode>default</compat-mode>
-		<open-in>none</open-in>
+		<compat-mode>Default</compat-mode>
+		<open-in>None</open-in>
 	-->
 	<site url="relecloud.com/products">  
 		<compat-mode>IE8Enterprise"</compat-mode>
@@ -163,6 +164,6 @@ Because the tool is open-source, the source code is readily available for examin
 
 - [Web Application Compatibility Lab Kit](https://technet.microsoft.com/microsoft-edge/mt612809.aspx)
 
-- [Microsoft Services Support](https://www.microsoft.com/en-us/microsoftservices/support.aspx)
+- [Microsoft Services Support](https://www.microsoft.com/microsoftservices/support.aspx)
 
 - [Find a Microsoft partner on Pinpoint](https://partnercenter.microsoft.com/pcv/search)

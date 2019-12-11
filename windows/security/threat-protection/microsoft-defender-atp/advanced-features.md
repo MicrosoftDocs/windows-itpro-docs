@@ -22,7 +22,7 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedfeats-abovefoldlink)
 
 Depending on the Microsoft security products that you use, some advanced features might be available for you to integrate Microsoft Defender ATP with.
 
@@ -30,7 +30,7 @@ Use the following advanced features to get better protected from potentially mal
 
 ## Automated investigation
 
-When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigations](automated-investigations.md).
+When you enable this feature, you'll be able to take advantage of the automated investigation and remediation features of the service. For more information, see [Automated investigation](automated-investigations.md).
 
 ## Live response
 
@@ -44,7 +44,7 @@ Enabling this feature allows you to run unsigned scripts in a live response sess
 
 ## Auto-resolve remediated alerts
 
-For tenants created on or after Windows 10, version 1809 the automated investigations capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don’t want to have alerts auto-resolved, you’ll need to manually turn off the feature.
+For tenants created on or after Windows 10, version 1809 the automated investigation and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated".  If you don’t want to have alerts auto-resolved, you’ll need to manually turn off the feature.
 
 >[!TIP]
 >For tenants created prior that version, you'll need to manually turn this feature on from the [Advanced features](https://securitycenter.windows.com/preferences2/integration) page.
@@ -53,7 +53,7 @@ For tenants created on or after Windows 10, version 1809 the automated investiga
 > - The result of the auto-resolve action may influence the Machine risk level calculation which is based on the active alerts found on a machine.  
 >- If a security operations analyst manually sets the status of an alert to "In progress" or "Resolved" the auto-resolve capability will not overwrite it.
 
-## Block file
+## Allow or block file
 
 Blocking is only available if your organization uses Windows Defender Antivirus as the active antimalware solution, and if the cloud-based protection feature is enabled.
 
@@ -70,6 +70,19 @@ To turn **Allow or block** files on:
 1. Select **Save preferences** at the bottom of the page.
 
 Once you have enabled this feature, you can [block files](respond-file-alerts.md#allow-or-block-file) via the **Add Indicator** tab on a file's profile page.
+
+
+## Custom network indicators
+
+Enabling this feature allows you to create indicators for IP addresses, domains, or URLs which determine whether they will be allowed or blocked based on your custom indicator list. 
+
+To use this feature, machines must be running Windows 10 version 1709 or later. They should also have network protection in block mode and version 4.18.1906.3 or later of the antimalware platform [see KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834). 
+
+For more information, see [Manage indicators](manage-indicators.md).
+
+>[!NOTE]
+>Network protection leverages reputation services that process requests in locations that might be outside of the location you have selected for your Microsoft Defender ATP data.
+
 
 ## Show user details
 

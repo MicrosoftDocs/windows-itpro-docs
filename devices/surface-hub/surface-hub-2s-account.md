@@ -4,13 +4,13 @@ description: "This page describes the procedure for creating the Surface Hub 2S 
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
 # Create Surface Hub 2S device account
@@ -21,9 +21,9 @@ Unlike standard Room mailboxes that remain disabled by default, you need to enab
 
 Create the account using the Microsoft 365 admin center or by using PowerShell. You can use Exchange Online PowerShell to configure specific features including: 
 
--  Calendar processing for every Surface Hub device account.
--  Custom auto replies to scheduling requests.
--  If the default ActiveSync mailbox policy has already been modified by someone else or another process, you will likely have to create and assign a new ActiveSync mailbox policy 
+- Calendar processing for every Surface Hub device account.
+- Custom auto replies to scheduling requests.
+- If the default ActiveSync mailbox policy has already been modified by someone else or another process, you will likely have to create and assign a new ActiveSync mailbox policy 
 
 ## Create account using Microsoft 365 admin center
 
@@ -35,7 +35,7 @@ Create the account using the Microsoft 365 admin center or by using PowerShell. 
 
 ![Leave remaining settings unchanged in the default state](images/sh2-account3.png)
 
-3. Set the password for the device account. Ensure that you **do not** select the option **Make this user change their password when they first sign in.**
+3. Set the password for the device account. To set the password, choose **Users** and then select **Active Users**. Now search for the newly created user to set the password. Ensure that you **do not** select the option **Make this user change their password when they first sign in.**
 
 ![Set the password for the device account](images/sh2-account4.png)
 
@@ -53,25 +53,27 @@ Create the account using the Microsoft 365 admin center or by using PowerShell. 
 Instead of using the Microsoft Admin Center portal, you can create the account using PowerShell.
 
 ### Connect to Exchange Online PowerShell
-```
-$365Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Credential (Get-Credential) -Authentication Basic –AllowRedirection $ImportResults = Import-PSSession $365Session
+
+```powershell
+$365Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell -Credential (Get-Credential) -Authentication Basic –AllowRedirection
+$ImportResults = Import-PSSession $365Session
 ```
 
 ### Create a new Room Mailbox
 
-```
+```powershell
 New-Mailbox -MicrosoftOnlineServicesID account@YourDomain.com -Alias SurfaceHub2S -Name SurfaceHub2S -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString  -String "<Enter Strong Password>" -AsPlainText -Force)
 ```
 
 ### Set Calendar Auto processing
 
-```
+```powershell
 Set-CalendarProcessing -Identity "account@YourDomain.com" -AutomateProcessing AutoAccept -AddOrganizerToSubject $false –AllowConflicts   $false –DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false -AddAdditionalResponse $true -AdditionalResponse "This room is equipped with a Surface Hub"
 ```
 
 ### Assign a license
 
-```
+```powershell
 Connect-MsolService
 Set-Msoluser -UserPrincipalName account@YourDomain.com -UsageLocation IE
 Set-MsolUserLicense -UserPrincipalName "account@YourDomain.com" -AddLicenses "contoso:MEETING_ROOM"
@@ -82,12 +84,13 @@ Set-MsolUserLicense -UserPrincipalName "account@YourDomain.com" -AddLicenses "co
 ### Install prerequisites
 
 - [Visual C++ 2017 Redistributable](https://aka.ms/vs/15/release/vc_redist.x64.exe)
-- [Skype for Business Online PowerShell Module](https://www.microsoft.com/en-us/download/confirmation.aspx?id=39366)
+- [Skype for Business Online PowerShell Module](https://www.microsoft.com/download/confirmation.aspx?id=39366)
 
-```
+```powershell
 Import-Module LyncOnlineConnector
 $SfBSession = New-CsOnlineSession -Credential (Get-Credential)
 Import-PSSession $SfBSession -AllowClobber
-Enable the Skype for Business meeting room
-Enable-CsMeetingRoom -Identity account@YourDomain.com -RegistrarPoo(Get-CsTenant).Registrarpool -SipAddressType EmailAddress
+
+# Enable the Skype for Business meeting room
+Enable-CsMeetingRoom -Identity account@YourDomain.com -RegistrarPool(Get-CsTenant).Registrarpool -SipAddressType EmailAddress
 ```

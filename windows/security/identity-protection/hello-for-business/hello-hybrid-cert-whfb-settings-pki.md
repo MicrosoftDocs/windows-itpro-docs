@@ -77,8 +77,9 @@ Sign-in a certificate authority or management workstations with _Enterprise Admi
 
 The certificate template is configured to supersede all the certificate templates provided in the certificate templates superseded templates list.  However, the certificate template and the superseding of certificate templates is not active until you publish the certificate template to one or more certificate authorities.
 
->[!NOTE]
->The Domain Controller Certificate must be present in the NTAuth store. By default, Microsoft Enterprise CAs are added to the NTAuth store. If you are using a 3rd party CA, this may not be done by default. If the Domain Controller Certificate is not present in the NTAuth store, user authentication will fail. 
+> [!NOTE]
+> * The Domain Controller Certificate must be present in the NTAuth store. By default, Microsoft Enterprise CAs are added to the NTAuth store. 
+> * If you are using a 3rd party CA, add the certificate to the NTAuth store. If the Domain Controller Certificate is not present in the NTAuth store, user authentication will fail. 
 
 ### Enrollment Agent certificate template
 
@@ -114,7 +115,7 @@ Sign-in a certificate authority or management workstations with *Domain Admin* e
 
 1. Open the **Certificate Authority** management console.
 2. Right-click **Certificate Templates** and click **Manage**.
-3. In the **Certificate Template** console, right-click the **Exchange Enrollment Agent** template in the details pane and click **Duplicate Template**.
+3. In the **Certificate Template** console, right-click the **Exchange Enrollment Agent (Offline request)** template in the details pane and click **Duplicate Template**.
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
 5. On the **General** tab, type **WHFB Enrollment Agent** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise's needs.
 6. On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected. Select **Fully distinguished name** from the **Subject name format** list if **Fully distinguished name** is not already selected.  Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**.
@@ -152,8 +153,8 @@ Sign-in to an **AD FS Windows Server 2016** computer with _Enterprise Admin_ equ
 1. Open an elevated command prompt.
 2. Run `certutil -dsTemplate WHFBAuthentication msPKI-Private-Key-Flag +CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY`
 
->[!NOTE]
->If you gave your Windows Hello for Business Authentication certificate template a different name, then replace **WHFBAuthentication** in the above command with the name of your certificate template. It's important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on our Windows Server 2012 or later certificate authority.
+> [!NOTE]
+> If you gave your Windows Hello for Business Authentication certificate template a different name, then replace **WHFBAuthentication** in the above command with the name of your certificate template. It's important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on our Windows Server 2012 or later certificate authority.
 
 ## Publish Templates
 

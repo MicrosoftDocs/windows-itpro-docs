@@ -1,15 +1,15 @@
 ---
 title: How to Deploy DaRT 8.0
 description: How to Deploy DaRT 8.0
-author: msfttracyp
+author: dansimp
 ms.assetid: ab772e7a-c02f-4847-acdf-8bd362769a77
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

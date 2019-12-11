@@ -1,5 +1,5 @@
 ---
-title: Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate (Windows 10)
+title: Make & verify an EFS Data Recovery Agent certificate (Windows 10)
 description: Follow these steps to create, verify, and perform a quick recovery by using a Encrypting File System (EFS) Data Recovery Agent (DRA) certificate.
 keywords: Windows Information Protection, WIP, EDP, Enterprise Data Protection
 ms.prod: w10
@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -48,6 +48,9 @@ The recovery process included in this topic only works for desktop devices. WIP 
     >Because the private keys in your DRA .pfx files can be used to decrypt any WIP file, you must protect them accordingly. We highly recommend storing these files offline, keeping copies on a smart card with strong protection for normal use and master copies in a secured physical location.
 
 4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as [Microsoft Intune](create-wip-policy-using-intune-azure.md) or [System Center Configuration Manager](create-wip-policy-using-sccm.md).
+
+> [!NOTE]
+> This certificate can be used in Intune for policies both _with_ device enrollment (MDM) and _without_ device enrollment (MAM).
 
 ## Verify your data recovery certificate is correctly set up on a WIP client computer
 

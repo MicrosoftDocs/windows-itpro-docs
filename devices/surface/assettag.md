@@ -3,12 +3,13 @@ title: Surface Asset Tag Tool
 description: This topic explains how to use the Surface Asset Tag Tool.
 ms.prod: w10
 ms.mktglfcycl: manage
+ms.localizationpriority: medium
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 02/01/2019
-ms.reviewer: 
+ms.date: 10/21/2019
+ms.reviewer: hachidan
 manager: dansimp
 ---
 
@@ -20,18 +21,21 @@ for Surface devices. It works on Surface Pro 3 and all newer Surface devices.
 
 ## System requirements
 
-  - Surface Pro 3 or later
+- Surface Pro 3 or later
 
-  - UEFI firmware version 3.9.150.0 or later
+- UEFI firmware version 3.9.150.0 or later
 
 ## Using Surface Asset Tag 
 
 To run Surface Asset Tag:
 
 1.  On the Surface device, download **Surface Asset Tag.zip** from the [Microsoft Download
-    Center](https://www.microsoft.com/en-us/download/details.aspx?id=46703),
+    Center](https://www.microsoft.com/download/details.aspx?id=46703),
     extract the zip file, and save AssetTag.exe in desired folder (in
     this example, C:\\assets).
+
+    > [!NOTE]
+    > For Surface Pro X, use the application named **AssetTag_x86**  in the ZIP file. 
 
 2.  Open a command console as an Administrator and run AssetTag.exe,
     entering the full path to the tool.

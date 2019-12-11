@@ -3,11 +3,11 @@ title: Servicing stack updates (Windows 10)
 description: Servicing stack updates improve the code that installs the other updates.
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
+audience: itpro
+itproauthor: jaimeo
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: greglin
-ms.date: 11/29/2018
+ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.collection: M365-modern-desktop
@@ -54,3 +54,4 @@ Typically, the improvements are reliability and performance improvements that do
 * Installing servicing stack update does not require restarting the device, so installation should not be disruptive. 
 * Servicing stack update releases are specific to the operating system version (build number), much like quality updates.
 * Search to install latest available [Servicing stack update for Windows 10](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV990001).
+* Once a servicing stack update is installed, it cannot be removed or uninstalled from the machine.

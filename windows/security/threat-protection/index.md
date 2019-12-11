@@ -1,18 +1,18 @@
 ---
 title: Threat Protection (Windows 10)
 description: Learn how Microsoft Defender ATP helps protect against threats.
-keywords: threat protection, Microsoft Defender Advanced Threat Protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, microsoft threat experts, secure score, advanced hunting
+keywords: threat protection, Microsoft Defender Advanced Threat Protection, attack surface reduction, next generation protection, endpoint detection and response, automated investigation and response, microsoft threat experts, secure score, advanced hunting, cyber threat hunting, web threat protection
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dolmont
+ms.author: dansimp
 author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
@@ -46,6 +46,7 @@ ms.topic: conceptual
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
 
 - [Risk-based Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md) 
+- [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 - [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 - [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
 - [Configuration score](microsoft-defender-atp/configuration-score.md)
@@ -58,16 +59,16 @@ This built-in capability uses a game-changing risk-based approach to the discove
 <a name="asr"></a>
 
 **[Attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)**<br>
-The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
+The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation.
 
-- [Hardware based isolation](microsoft-defender-atp/overview-hardware-based-isolation.md) 
+- [Hardware based isolation](microsoft-defender-atp/overview-hardware-based-isolation.md)
 - [Application control](windows-defender-application-control/windows-defender-application-control.md)
 - [Device control](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
-- [Exploit protection](windows-defender-exploit-guard/exploit-protection-exploit-guard.md)
-- [Network protection](windows-defender-exploit-guard/network-protection-exploit-guard.md)
-- [Controlled folder access](windows-defender-exploit-guard/controlled-folders-exploit-guard.md)
+- [Exploit protection](microsoft-defender-atp/exploit-protection.md)
+- [Network protection](microsoft-defender-atp/network-protection.md), [web protection](microsoft-defender-atp/web-protection-overview.md)
+- [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
 - [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
-- [Attack surface reduction controls](windows-defender-exploit-guard/attack-surface-reduction-exploit-guard.md)
+- [Attack surface reduction rules](microsoft-defender-atp/attack-surface-reduction.md)
 
 <a name="ngp"></a>
 
@@ -83,7 +84,7 @@ To further reinforce the security perimeter of your network, Microsoft Defender 
 <a name="edr"></a>
 
 **[Endpoint detection and response](microsoft-defender-atp/overview-endpoint-detection-response.md)**<br>
-Endpoint detection and response capabilities are put in place to detect, investigate, and respond to advanced threats that may have made it past the first two security pillars. 
+Endpoint detection and response capabilities are put in place to detect, investigate, and respond to intrusion attempts and active breaches. With Advanced hunting, you have a query-based threat-hunting tool that lets your proactively find breaches and create custom detections.
 
 - [Alerts](microsoft-defender-atp/alerts-queue.md)
 - [Historical endpoint data](microsoft-defender-atp/investigate-machines.md#timeline)
@@ -91,9 +92,8 @@ Endpoint detection and response capabilities are put in place to detect, investi
 - [Forensic collection](microsoft-defender-atp/respond-machine-alerts.md#collect-investigation-package-from-machines)
 - [Threat intelligence](microsoft-defender-atp/threat-indicator-concepts.md)
 - [Advanced detonation and analysis service](microsoft-defender-atp/respond-file-alerts.md#deep-analysis)
-- [Advanced hunting](microsoft-defender-atp/overview-hunting.md)
-    - [Custom detection](microsoft-defender-atp/overview-custom-detections.md)
-    - [Realtime and historical hunting](microsoft-defender-atp/advanced-hunting.md)
+- [Advanced hunting](microsoft-defender-atp/advanced-hunting-overview.md)
+    - [Custom detections](microsoft-defender-atp/overview-custom-detections.md)
 
 <a name="ai"></a>
 
@@ -102,7 +102,7 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 
 - [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
 - [Threat remediation](microsoft-defender-atp/automated-investigations.md#how-threats-are-remediated)
-- [Manage automated investigations](microsoft-defender-atp/manage-auto-investigation.md)
+- [Manage automated investigation](microsoft-defender-atp/manage-auto-investigation.md)
 - [Analyze automated investigation](microsoft-defender-atp/manage-auto-investigation.md#analyze-automated-investigations)
 
 <a name="ss"></a>
@@ -132,17 +132,20 @@ Microsoft Defender ATP's new managed threat hunting service provides proactive h
 Integrate Microsoft Defender Advanced Threat Protection into your existing workflows.
 - [Onboarding](microsoft-defender-atp/onboard-configure.md)
 - [API and SIEM integration](microsoft-defender-atp/configure-siem.md)
-- [Exposed APIs](microsoft-defender-atp/use-apis.md)
+- [Exposed APIs](microsoft-defender-atp/apis-intro.md)
 - [Role-based access control (RBAC)](microsoft-defender-atp/rbac.md)
 - [Reporting and trends](microsoft-defender-atp/powerbi-reports.md)
 
-<a name="mtp"></a>
+<a name="integration"></a>
+**[Integration with Microsoft solutions](microsoft-defender-atp/threat-protection-integration.md)** <br>
+ Microsoft Defender ATP directly integrates with various Microsoft solutions, including:
+- Intune
+- Office 365 ATP
+- Azure ATP
+- Azure Security Center
+- Skype for Business 
+- Microsoft Cloud App Security
 
-**[Microsoft Threat Protection](microsoft-defender-atp/threat-protection-integration.md)** <br>
- Microsoft Defender ATP is part of the Microsoft Threat Protection solution that helps implement end-to-end security across possible attack surfaces in the modern workplace. Bring the power of Microsoft threat protection to your organization.
-- [Conditional access](microsoft-defender-atp/conditional-access.md)
-- [O365 ATP](microsoft-defender-atp/threat-protection-integration.md)
-- [Azure ATP](microsoft-defender-atp/threat-protection-integration.md)
-- [Azure Security Center](microsoft-defender-atp/threat-protection-integration.md)
-- [Skype for Business](microsoft-defender-atp/threat-protection-integration.md) 
-- [Microsoft Cloud App Security](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
+<a name="mtp"></a>
+**[Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)**<br>
+ With Microsoft Threat Protection, Microsoft Defender ATP and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate and automatically respond to sophisticated attacks.

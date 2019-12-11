@@ -4,13 +4,13 @@ description: "Learn how to simplify signing in to Surface Hub 2S using password-
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
 # Configure password-less phone sign-in  for Surface Hub 2S
@@ -20,9 +20,9 @@ Password-less phone sign-in simplifies signing-in to your meetings and files on 
 > [!NOTE]
 > Password-less phone sign-in requires that your primary email address must match your UPN.
 
-## To set up password-less phone sign-in 
+## To set up password-less phone sign-in
 
-1. Download the [Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator) app for iPhone or Android to your phone.
+1. Download the [Microsoft Authenticator](https://www.microsoft.com/account/authenticator) app for iPhone or Android to your phone.
 2. From your PC, go to [https://aka.ms/MFASetup](https://aka.ms/MFASetup) , sign in with your account, and select **Next.**
 3. In the Additional security verification screen, select Mobile App and Use verification code, and then select **Setup**.
 

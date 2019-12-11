@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Merge AppLocker policies by using Set-ApplockerPolicy
 
 **Applies to**
- -   Windows 10
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals describes the steps to merge AppLocker policies by using Windows PowerShell.
 
@@ -41,6 +41,6 @@ You can also manually merge AppLocker policies. For the procedure to do this, se
 
 Gets the local AppLocker policy, and then merges the policy with the existing AppLocker policy in the GPO specified in the LDAP path.
 
-``` syntax
+```powershell
 C:\PS>Get-AppLockerPolicy -Local | Set-AppLockerPolicy -LDAP "LDAP://DC13.Contoso.com/CN={31B2F340-016D-11D2-945F-00C044FB984F9},CN=Policies,CN=System,DC=Contoso,DC=com" -Merge
 ```

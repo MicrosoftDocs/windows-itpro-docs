@@ -44,7 +44,7 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 GET /api/users/{id}/machines
 ```
 
-**Note that the id is not the full UPN, but only the user name. (e.g., to retrieve machines for user1@contoso.com use /api/users/user1/machines) **
+**Note that the id is not the full UPN, but only the user name. (e.g., to retrieve machines for user1@contoso.com use /api/users/user1/machines)**
 
 
 ## Request headers
@@ -67,7 +67,7 @@ If successful and user exists - 200 OK with list of [machine](machine.md) entiti
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/users/user1/machines

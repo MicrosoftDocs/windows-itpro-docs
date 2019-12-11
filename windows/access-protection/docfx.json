@@ -33,6 +33,7 @@
     "globalMetadata": {
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
       "ms.technology": "windows",
+      "audience": "ITPro",
       "ms.topic": "article",
       "_op_documentIdPathDepotMapping": {
         "./": {

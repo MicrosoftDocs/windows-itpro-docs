@@ -1,5 +1,5 @@
 ---
-title: Test scenario 2 - Perform a quick search with Cortana at work (Windows 10)
+title: Perform a quick search with Cortana at work (Windows 10)
 description: A test scenario about how to perform a quick search with Cortana at work.
 ms.prod: w10
 ms.mktglfcycl: manage

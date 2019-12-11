@@ -4,7 +4,9 @@ description: Learn about new features in Windows 10 for IT professionals, such 
 ms.assetid: F1867017-76A1-4761-A200-7450B96AEF44
 keywords: ["What's new in Windows 10", "Windows 10"]
 ms.prod: w10
+audience: itpro
 author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 ms.localizationpriority: high
 ms.topic: article
@@ -16,6 +18,7 @@ Windows 10 provides IT professionals with advanced protection against modern sec
 
 ## In this section
 
+- [What's new in Windows 10, version 1909](whats-new-windows-10-version-1909.md)
 - [What's new in Windows 10, version 1903](whats-new-windows-10-version-1903.md)
 - [What's new in Windows 10, version 1809](whats-new-windows-10-version-1809.md)
 - [What's new in Windows 10, version 1803](whats-new-windows-10-version-1803.md)

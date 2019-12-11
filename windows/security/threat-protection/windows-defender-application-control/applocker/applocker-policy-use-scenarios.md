@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # AppLocker policy use scenarios
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for the IT professional lists the various application control scenarios in which AppLocker policies can be effectively implemented.
 

@@ -10,6 +10,8 @@ ms.topic: article
 ms.date: 06/11/2019
 ms.reviewer: cottmca
 manager: dansimp
+ms.localizationpriority: medium
+ms.audience: itpro
 ---
 
 # Fix common Surface problems using the Surface Diagnostic Toolkit for Business
@@ -29,14 +31,13 @@ Before you run the diagnostic tool, make sure you have the latest Windows update
 **To run the Surface Diagnostic Toolkit for Business:**
 
 1. Download the [Surface Diagnostic Toolkit for Business](https://aka.ms/SDT4B).
-2. Select Run and follow the on-screen instructions.
+2. Select Run and follow the on-screen instructions. For full details, refer to [Deploy Surface Diagnostic Toolkit for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business).
 
-The diagnosis and repair time averages 15 minutes but could take an hour or longer, depending on internet connection speed and the number of updates or repairs required. For more detailed information on Surface Diagnostic Toolkit for Business, refer to [Deploy Surface Diagnostic Toolkit for Business](https://docs.microsoft.com/surface/surface-diagnostic-toolkit-business).
-
+The diagnosis and repair time averages 15 minutes but could take an hour or longer, depending on internet connection speed and the number of updates or repairs required. 
 # If you still need help
 
 If the Surface Diagnostic Toolkit for Business didn’t fix the problem, you can also:
 
-- Make an in-store appointment: We might be able to fix the problem or provide a replacement Surface at your local Microsoft Store. [Locate a Microsoft Store near you](https://www.microsoft.com/en-us/store/locations/find-a-store?WT.mc_id=MSC_Solutions_en_us_scheduleappt).
+- Make an in-store appointment: We might be able to fix the problem or provide a replacement Surface at your local Microsoft Store. [Locate a Microsoft Store near you](https://www.microsoft.com/store/locations/find-a-store?WT.mc_id=MSC_Solutions_en_us_scheduleappt).
 - Contact customer support: If you want to talk to someone about how to fix your problem, [contact us](https://support.microsoft.com/en-us/help/4037645/contact-surface-warranty-and-software-support-for-business).
 - Get your Surface serviced: If your Surface product needs service, [request it online](https://mybusinessservice.surface.com/). 

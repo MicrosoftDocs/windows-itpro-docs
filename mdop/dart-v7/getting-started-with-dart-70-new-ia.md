@@ -1,15 +1,15 @@
 ---
 title: Getting Started with DaRT 7.0
 description: Getting Started with DaRT 7.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 796f52ce-0935-4d3d-9437-289b4c7b16c3
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: support
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

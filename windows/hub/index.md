@@ -7,9 +7,8 @@ ms.localizationpriority: high
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.date: 07/16/2019
 ms.author: dansimp
-ms.date: 09/03/2018
+author: dansimp
 ms.reviewer: dansimp
 manager: dansimp
 ---
@@ -20,12 +19,12 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
 
 &nbsp;
 
-## Check out [what's new in Windows 10, version 1903](/windows/whats-new/whats-new-windows-10-version-1903).
+## Check out [what's new in Windows 10, version 1909](/windows/whats-new/whats-new-windows-10-version-1909).
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;">
-      <a href="/windows/whats-new/whats-new-windows-10-version-1903"> 
+      <a href="/windows/whats-new/whats-new-windows-10-version-1909"> 
         <img src="images/whatsnew.png" alt="Read what's new in Windows 10" title="Whats new" />
       <br/>What's New? </a><br>
     </td>

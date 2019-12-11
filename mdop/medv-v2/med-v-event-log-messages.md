@@ -1,15 +1,15 @@
 ---
 title: MED-V Event Log Messages
 description: MED-V Event Log Messages
-author: levinec
+author: dansimp
 ms.assetid: 7ba7344d-153b-4cc4-a00a-5d42aee9986b
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

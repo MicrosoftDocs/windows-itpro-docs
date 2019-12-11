@@ -1,7 +1,7 @@
 ---
 title: Advanced Group Policy Management
 description: Advanced Group Policy Management
-author: jamiejdt
+author: dansimp
 ms.assetid: 493ca3c3-c3d6-4bb1-9430-dc1e43c86bb0
 ms.pagetype: mdop
 ms.mktglfcycl: manage
@@ -19,7 +19,7 @@ Microsoft Advanced Group Policy Management (AGPM) extends the capabilities of th
 ## AGPM Version Information
 
 
-[AGPM 4.0 SP3](agpm-40-sp3-navengl.md) supports Windows 10, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows Server 2008 R2, Windows 7, Windows Server 2008, and Windows Vista with SP1.
+[AGPM 4.0 SP3](agpm-40-sp3-navengl.md) supports Windows 10, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows Server 2008 R2, Windows 7, Windows Server 2008, and Windows Vista with SP1.
 
 [AGPM 4.0 SP2](agpm-40-sp2-navengl.md) supports Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows Server 2008 R2, Windows 7, Windows Server 2008, and Windows Vista with SP1.
 

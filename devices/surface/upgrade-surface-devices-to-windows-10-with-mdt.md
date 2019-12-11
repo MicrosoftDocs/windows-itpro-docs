@@ -9,19 +9,34 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 10/16/2017
+ms.localizationpriority: medium
+ms.audience: itpro
+ms.date: 10/21/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
-#  Upgrade Surface devices to Windows 10 with Microsoft Deployment Toolkit
+# Upgrade Surface devices to Windows 10 with Microsoft Deployment Toolkit
 
 #### Applies to
-* Surface Pro 3
-* Surface 3
-* Surface Pro 2
-* Surface Pro
-* Windows 10
+- Surface Pro 6
+- Surface Laptop 2
+- Surface Go
+- Surface Go with LTE
+- Surface Book 2
+- Surface Pro with LTE Advanced (Model 1807)
+- Surface Pro (Model 1796)
+- Surface Laptop
+- Surface Studio
+- Surface Studio 2
+- Surface Book
+- Surface Pro 4
+- Surface 3 LTE
+- Surface 3
+- Surface Pro 3
+- Surface Pro 2
+- Surface Pro
+- Windows 10
 
 In addition to the traditional deployment method of reimaging devices, administrators that want to upgrade Surface devices that are running Windows 8.1 or Windows 10 have the option of deploying upgrades. By performing an upgrade deployment, Windows 10 can be applied to devices without removing users, apps, or configuration. The users of the deployed devices can simply continue using the devices with the same apps and settings that they used prior to the upgrade. The process described in this article shows how to perform a Windows 10 upgrade deployment to Surface devices.
 
@@ -36,6 +51,9 @@ When you perform a Windows deployment using traditional deployment methods, you 
 For versions of Windows prior to Windows 10, if you wanted to install a new version of Windows on your devices and preserve the configuration of those systems, you had to perform additional steps during your deployment. For example, if you wanted to keep the data of users on the device, you had to back up user data with the User State Migration Tool (USMT) prior to the deployment and restore that data after the deployment had completed.
 
 Introduced with Windows 10 and MDT 2013 Update 1, you can use the upgrade installation path directly with Microsoft deployment technologies such as the Microsoft Deployment Toolkit (MDT). With an upgrade deployment you can use the same deployment technologies and process, but you can preserve users settings, and applications of the existing environment on the device.
+
+> [!NOTE]
+> MDT is not supported on Surface Pro X. For more information, refer to [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
 
 ## Deployment tools and resources
 
@@ -52,7 +70,7 @@ You will also need to have available the following resources:
 * Windows 10 installation files, such as the installation media downloaded from the [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx)
 
    >[!NOTE]
-   >Installation media for use with MDT must contain a Windows image in Windows Imaging Format (.wim). Installation media produced by the [Get Windows 10](https://www.microsoft.com/en-us/software-download/windows10/) page does not use a .wim file, instead using an Electronic Software Download (.esd) file, which is not compatible with MDT.
+   >Installation media for use with MDT must contain a Windows image in Windows Imaging Format (.wim). Installation media produced by the [Get Windows 10](https://www.microsoft.com/software-download/windows10/) page does not use a .wim file, instead using an Electronic Software Download (.esd) file, which is not compatible with MDT.
 * [Surface firmware and drivers](https://technet.microsoft.com/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices) for Windows 10
 
 * Application installation files for any applications you want to install, such as the Surface app

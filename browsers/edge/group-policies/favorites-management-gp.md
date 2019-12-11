@@ -1,12 +1,13 @@
 ---
 title: Microsoft Edge - Favorites group policies
-description: Configure Microsoft Edge to either show or hide the favorites bar on all pages. Microsoft Edge hides the favorites bar by default but shows the favorites bar on the Start and New tab pages. Also, by default, the favorites bar toggle, in Settings, is set to Off but enabled allowing users to make changes. 
+description: Configure Microsoft Edge to either show or hide the favorites bar on all pages. Microsoft Edge hides the favorites bar by default but shows the favorites bar on the Start and New tab pages. Also, by default, the favorites bar toggle, in Settings, is set to Off but enabled allowing users to make changes.
 services: 
 keywords: 
 ms.localizationpriority: medium
+audience: itpro
 manager: dansimp
-author: eavena
-ms.author: eravena
+author: dansimp
+ms.author: dansimp
 ms.date: 10/02/2018
 ms.reviewer: 
 ms.topic: reference
@@ -16,6 +17,9 @@ ms.sitesec: library
 ---
 
 # Favorites 
+
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
 You can customize the favorites bar, for example, you can turn off features such as Save a Favorite and Import settings, and hide or show the favorites bar on all pages.  Another customization you can make is provisioning a standard list of favorites, including folders, to appear in addition to the user’s favorites. If it’s important to keep the favorites in both IE11 and Microsoft Edge synced, you can turn on syncing where changes to the list of favorites in one browser reflect in the other. 
 

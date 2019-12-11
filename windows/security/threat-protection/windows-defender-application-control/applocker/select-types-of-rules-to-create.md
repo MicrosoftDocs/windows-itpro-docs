@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Select the types of rules to create
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic lists resources you can use when selecting your application control policy rules by using AppLocker.
 

@@ -3,12 +3,13 @@ ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the Enterprise Mode Site List Manager to create and update your Enterprise Mode site list for devices running Windows 7 or Windows 8.1 Update.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 17c61547-82e3-48f2-908d-137a71938823
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Enterprise Mode schema v.1 guidance (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
@@ -30,10 +31,10 @@ If you don't want to use the Enterprise Mode Site List Manager, you also have th
 ## Enterprise Mode schema v.1 example
 The following is an example of the Enterprise Mode schema v.1. This schema can run on devices running Windows 7 and Windows 8.1.
 
-**Important**<br>
-Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<domain>contoso.com</domain>` automatically applies to both https://contoso.com and https://contoso.com.
+> [!IMPORTANT]
+> Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<domain>contoso.com</domain>` automatically applies to both http://contoso.com and https://contoso.com.
 
-``` xml
+```xml
 <rules version="1">
   <emie>
     <domain exclude="false">www.cpandl.com</domain>
@@ -156,13 +157,13 @@ This table includes the attributes used by the Enterprise Mode schema.
 </thead>
 <tbody>
 <tr>
-<td>&lt;version&gt;</td>
+<td>version</td>
 <td>Specifies the version of the Enterprise Mode Site List. This attribute is supported for the &lt;rules&gt; element.</td>
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 <tr>
-<td>&lt;exclude&gt;</td>
-<td>Specifies the domain or path excluded from applying the behavior and is supported on the &lt;domain&gt; and &lt;path&gt; elements.
+<td>exclude</td>
+<td>Specifies the domain or path is excluded from applying Enterprise Mode. This attribute is only supported on the &lt;domain&gt; and &lt;path&gt; elements in the &lt;emie&gt; section.
 <p><b>Example</b>
 <pre class="syntax">
 &lt;emie&gt;
@@ -174,7 +175,7 @@ Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">http
 <td>Internet Explorer 11 and Microsoft Edge</td>
 </tr>
 <tr>
-<td>&lt;docMode&gt;</td>
+<td>docMode</td>
 <td>Specifies the document mode to apply. This attribute is only supported on &lt;domain&gt; or &lt;path&gt; elements in the &lt;docMode&gt; section.
 <p><b>Example</b>
 <pre class="syntax">
@@ -206,7 +207,7 @@ For example, say you want all of the sites in the contoso.com domain to open usi
 
 ### What not to include in your schema
 We recommend that you not add any of the following items to your schema because they can make your compatibility list behave in unexpected ways:
-- Don’t use protocols. For example, `https://`, `https://`, or custom protocols. They break parsing.
+- Don’t use protocols. For example, `http://`, `https://`, or custom protocols. They break parsing.
 - Don’t use wildcards.
 - Don’t use query strings, ampersands break parsing.
 
@@ -217,7 +218,7 @@ You can use trailing slashes at the path-level, but not at the domain-level:
 
 **Example**
 
-``` xml
+```xml
 <domain exclude="true">contoso.com
   <path exclude="false">/about/</path>
 </domain>

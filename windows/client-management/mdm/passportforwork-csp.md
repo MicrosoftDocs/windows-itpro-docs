@@ -9,13 +9,10 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 10/31/2018
+ms.date: 07/19/2019
 ---
 
 # PassportForWork CSP
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work). It allows you to login to Windows using your Active Directory or Azure Active Directory account and replace passwords, smartcards, and virtual smart cards.
 
@@ -193,7 +190,7 @@ Default value is false. If you set this policy to true, Remote Windows Hello for
 
 Supported operations are Add, Get, Delete, and Replace.
 
-*Not supported on Windows Holographic and Windows Holographic for Business.*
+*Not supported on Windows Holographic and Windows Holographic for Business prior to Windows 10 version 1903 (May 2019 Update).*
 
 <a href="" id="tenantid-policies-usehellocertificatesassmartcardcertificates"></a>***TenantId*/Policies/UseHelloCertificatesAsSmartCardCertificates** (only for ./Device/Vendor/MSFT)  
 Added in Windows 10, version 1809. If you enable this policy setting, applications use Windows Hello for Business certificates as smart card certificates. Biometric factors are unavailable when a user is asked to authorize the use of the certificate's private key. This policy setting is designed to allow compatibility with applications that rely exclusively on smart card certificates.
@@ -209,7 +206,7 @@ This node is deprecated. Use **Biometrics/UseBiometrics** node instead.
 
 <a href="" id="biometrics--only-for---device-vendor-msft-"></a>**Biometrics** (only for ./Device/Vendor/MSFT)  
 Node for defining biometric settings. This node was added in Windows 10, version 1511.
-*Not supported on Windows Holographic and Windows Holographic for Business.*
+*Not supported on Windows Holographic and Windows Holographic for Business prior to Windows 10 version 1903 (May 2019 Update).*
 
 <a href="" id="biometrics-usebiometrics--only-for---device-vendor-msft-"></a>**Biometrics/UseBiometrics** (only for ./Device/Vendor/MSFT)  
 Boolean value used to enable or disable the use of biometric gestures, such as face and fingerprint, as an alternative to the PIN gesture for Windows Hello for Business. Users must still configure a PIN if they configure biometric gestures to use in case of failures. This node was added in Windows 10, version 1511.
@@ -231,11 +228,9 @@ If you set this policy to true, Windows requires all users on managed devices to
 
 Note that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.
 
-
-
 Supported operations are Add, Get, Delete, and Replace.
 
-*Not supported on Windows Holographic and Windows Holographic for Business.*
+*Not supported on Windows Holographic and Windows Holographic for Business prior to Windows 10 version 1903 (May 2019 Update).*
 
 <a href="" id="deviceunlock"></a>**DeviceUnlock** (only for ./Device/Vendor/MSFT)  
 Added in Windows 10, version 1803. Interior node.
@@ -268,6 +263,23 @@ Value type is bool. Supported operations are Add, Get, Replace, and Delete.
 Added in Windows 10, version 1803. List of plugins (comma separated) that the passive provider monitors to detect user absence.
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
+<a href="" id="securitykey"></a>**SecurityKey** (only for ./Device/Vendor/MSFT)  
+Added in Windows 10, version 1903. Interior node.
+
+Scope is permanent. Supported operation is Get.
+
+
+<a href="" id="securitykey-usesecuritykeyforsignin"></a>**SecurityKey/UseSecurityKeyForSignin** (only for ./Device/Vendor/MSFT)  
+Added in Windows 10, version 1903. Enables users to sign-in to their device with a [FIDO2 security key](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) that is compatible with Microsoft’s implementation.
+
+Scope is dynamic. Supported operations are Add, Get, Replace, and Delete.
+
+Value type is integer. 
+
+Valid values:  
+- 0 (default) - disabled.
+- 1 - enabled.
 
 ## Examples
 

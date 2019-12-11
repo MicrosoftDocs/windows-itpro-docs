@@ -1,11 +1,11 @@
 ---
 title: Modify the Archive Path
 description: Modify the Archive Path
-author: mjcaparas
+author: dansimp
 ms.assetid: 6d90daf9-58db-4166-b5b3-e84bb261164a
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

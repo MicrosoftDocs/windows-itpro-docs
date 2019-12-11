@@ -20,8 +20,8 @@ ms.date: 09/21/2017
 # Create a rule that uses a file hash condition
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for IT professionals shows how to create an AppLocker rule with a file hash condition.
 

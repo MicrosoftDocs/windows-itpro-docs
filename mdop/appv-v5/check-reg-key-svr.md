@@ -1,7 +1,7 @@
 ---
 title: Check Registry Keys before installing App-V 5.x Server
 description: Check Registry Keys before installing App-V 5.x Server
-author: manikadhiman
+author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

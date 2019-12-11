@@ -1,15 +1,15 @@
 ---
 title: Server Groups Node
 description: Server Groups Node
-author: eavena
+author: dansimp
 ms.assetid: 6b2ed086-9100-47d0-be7f-0c5fb4fa55c6
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

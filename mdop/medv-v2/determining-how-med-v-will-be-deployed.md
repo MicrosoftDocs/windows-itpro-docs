@@ -1,15 +1,15 @@
 ---
 title: Determining How MED-V Will Be Deployed
 description: Determining How MED-V Will Be Deployed
-author: levinec
+author: dansimp
 ms.assetid: addbfef6-799e-4fe7-87d2-7e096a5ef5a5
 ms.reviewer: 
 manager: dansimp
-ms.author: ellevin
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

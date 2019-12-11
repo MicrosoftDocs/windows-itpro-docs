@@ -21,10 +21,8 @@ ms.reviewer:
 **Applies to**
 -   Windows 10
 
-> This guide only applies to Windows 10, version 1511 or higher.
-
 Congratulations! You are taking the first step forward in helping move your organizations away from password to a two-factor, convenience authentication for Windows — Windows Hello for Business. This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.
-  
+
 This guide explains the role of each component within Windows Hello for Business and how certain deployment decisions affect other aspects of the infrastructure. Armed with your planning worksheet, you’ll use that information to select the correct deployment guide for your needs.
 
 ## Using this guide
@@ -38,7 +36,7 @@ This guide removes the appearance of complexity by helping you make decisions on
 Read this document and record your decisions on the worksheet. When finished, your worksheet has all the necessary information for your Windows Hello for Business deployment.
 
 There are six major categories you need to consider for a Windows Hello for Business deployment.  Those categories are:
-*	Deployment Options
+*   Deployment Options
 *   Client
 *   Management
 *   Active Directory
@@ -47,7 +45,7 @@ There are six major categories you need to consider for a Windows Hello for Busi
 
 ### Baseline Prerequisites
 
-Windows Hello for Business has a few baseline prerequisites with which you can begin.  These baseline prerequisites are provided in the worksheet. 
+Windows Hello for Business has a few baseline prerequisites with which you can begin.  These baseline prerequisites are provided in the worksheet.
 
 ### Deployment Options
 
@@ -66,22 +64,34 @@ The hybrid deployment model is for organizations that:
 * Have identities synchronized to Azure Active Directory using Azure Active Directory Connect
 * Use applications hosted in Azure Active Directory, and want a single sign-in user experience for both on-premises and Azure Active Directory resources
 
+> [!Important]
+> Hybrid deployments support non-destructive PIN reset that only works with the certificate trust model.</br>
+> **Requirements:**</br>
+> Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903</br>
+> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+
 ##### On-premises
 The on-premises deployment model is for organizations that do not have cloud identities or use applications hosted in Azure Active Directory.
 
+> [!Important]
+> On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.</br>
+> **Requirements:**</br>
+> Reset from settings - Windows 10, version 1703, Professional</br>
+> Reset above lock screen - Windows 10, version 1709, Professional</br>
+> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
-It’s fundamentally important to understand which deployment model to use for a successful deployment.  Some of aspects of the deployment may already be decided for you based on your current infrastructure.
+It’s fundamentally important to understand which deployment model to use for a successful deployment.  Some aspects of the deployment may have already been decided for you based on your current infrastructure.
 
 #### Trust types
 
 A deployment's trust type defines how each Windows Hello for Business client authenticates to the on-premises Active Directory.  There are two trust types: key trust and certificate trust. 
-  
+
 The key trust type does not require issuing authentication certificates to end users. Users authenticate using a hardware-bound key created during the built-in provisioning experience. This requires an adequate distribution of Windows Server 2016 domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment. Read the [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
 The certificate trust type issues authentication certificates to end users.  Users authenticate using a certificate requested using a hardware-bound key created during the built-in provisioning experience.  Unlike key trust, certificate trust does not require Windows Server 2016 domain controllers (but still requires [Windows Server 2016 Active Directory schema](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust-prereqs#directories)).  Users can use their certificate to authenticate to any Windows Server 2008 R2, or later, domain controller.
 
->[!NOTE]
->RDP does not support authentication with Windows Hello for business key trust deployments. RDP is only supported with certificate trust deployments at this tim
+> [!NOTE]
+> RDP does not support authentication with Windows Hello for Business key trust deployments. RDP is only supported with certificate trust deployments at this time.
 
 #### Device registration
 
@@ -93,15 +103,18 @@ The built-in Windows Hello for Business provisioning experience creates a hardwa
 
 #### Multifactor authentication
 
+> [!IMPORTANT]
+> As of July 1, 2019, Microsoft will no longer offer MFA Server for new deployments. New customers who require multi-factor authentication for their users should use cloud-based Azure Multi-Factor Authentication. Existing customers who have activated MFA Server prior to July 1, 2019 will be able to download the latest version, future updates and generate activation credentials as usual. See [Getting started with the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy) for more details.
+
 The goal of Windows Hello for Business is to move organizations away from passwords by providing them a strong credential that provides easy two-factor authentication.  The built-in provisioning experience accepts the user’s weak credentials (username and password) as the first factor authentication; however, the user must provide a second factor of authentication before Windows provisions a strong credential.  
 
 Cloud only and hybrid deployments provide many choices for multi-factor authentication.  On-premises deployments must use a multi-factor authentication that provides an AD FS multi-factor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use the on-premises Azure Multi-factor Authentication server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
->[!NOTE]
+> [!NOTE]
 > Azure Multi-Factor Authentication is available through:
->* Microsoft Enterprise Agreement
->* Open Volume License Program
->* Cloud Solution Providers program
->* Bundled with
+> * Microsoft Enterprise Agreement
+> * Open Volume License Program
+> * Cloud Solution Providers program
+> * Bundled with
 >    * Azure Active Directory Premium
 >    * Enterprise Mobility Suite
 >    * Enterprise Cloud Suite
@@ -166,11 +179,13 @@ If your organization does not have cloud resources, write **On-Premises** in box
 
 ### Trust type
 
+Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD joined devices and Azure AD joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates.
+
 Choose a trust type that is best suited for your organizations.  Remember, the trust type determines two things. Whether you issue authentication certificates to your users and if your deployment needs Windows Server 2016 domain controllers.
 
 One trust model is not more secure than the other. The major difference is based on the organization comfort with deploying Windows Server 2016 domain controllers and not enrolling users with end entity certificates (key-trust) against using existing domain controllers (Windows Server 2008R2 or later) and needing to enroll certificates for all their users (certificate trust).  
 
-Because the certificate trust types issues certificates, there is more configuration and infrastructure needed to accommodate user certificate enrollment, which could also be a factor to consider in your decision.  Additional infrastructure needed for certificate-trust deployments includes a certificate registration authority.  Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD joined devices and Azure AD joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates.  
+Because the certificate trust types issues certificates, there is more configuration and infrastructure needed to accommodate user certificate enrollment, which could also be a factor to consider in your decision.  Additional infrastructure needed for certificate-trust deployments includes a certificate registration authority.  In a federated environment, you need to activate the Device Writeback option in Azure AD Connect. 
 
 If your organization wants to use the key trust type, write **key trust** in box **1b** on your planning worksheet. Write **Windows Server 2016** in box **4d**. Write **N/A** in box **5b**.
 
@@ -215,7 +230,7 @@ If box **1a** on your planning worksheet reads **hybrid**, then you have a few o
 * Use AD FS w/3rd Party MFA Adapter
 
 You can directly use the Azure MFA cloud service for the second factor of authentication. Users contacting the service must authenticate to Azure prior to using the service.
-  
+
 If your Azure AD Connect is configured to synchronize identities (usernames only), then your users are redirected to your local on-premises federation server for authentication and then redirected back to the Azure MFA cloud service.  Otherwise, your Azure AD Connect is configured to synchronize credentials (username and passwords), which enables your users to authenticate to Azure Active Directory and use the Azure MFA cloud service.  If you choose to use the Azure MFA cloud service directly, write **Azure MFA** in box **1f** on your planning worksheet.
 
 You can configure your on-premises Windows Server 2016 AD FS role to use the Azure MFA service adapter. In this configuration, users are redirected to the on premises AD FS server (synchronizing identities only). The AD FS server uses the MFA adapter to communicate to the Azure MFA service to perform the second factor of authentication.  If you choose to use AD FS with the Azure MFA cloud service adapter, write **AD FS with Azure MFA cloud adapter** in box **1f** on your planning worksheet.
@@ -234,7 +249,7 @@ Windows Hello for Business provides organizations with many policy settings and 
 
 If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **2a** on your planning worksheet.  You have the option to manage non-domain joined devices.  If you choose to manage Azure Active Directory joined devices, write **modern management** in box **2b** on your planning worksheet.  Otherwise, write** N/A** in box **2b**.
 
->[!NOTE]
+> [!NOTE]
 > Azure Active Directory joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
 
 If box **1a** on your planning worksheet reads **on-prem**, write **GP** in box **2a** on your planning worksheet. Write **N/A** in box **2b** on your worksheet.
@@ -250,8 +265,8 @@ If you use modern management for both domain and non-domain joined devices, writ
 Windows Hello for Business is a feature exclusive to Windows 10.   Some deployments and features are available using earlier versions of Windows 10.  Others need the latest versions.
 
 If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **3a** on your planning worksheet.  Optionally, you may write **1511 or later** in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
->[!NOTE]
->Azure Active Directory joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
+> [!NOTE]
+> Azure Active Directory joined devices without modern management automatically enroll in Windows Hello for Business using the default policy settings.  Use modern management to adjust policy settings to match the business needs of your organization.
 
 Write **1511 or later** in box **3a** on your planning worksheet if any of the following are true. 
 * Box **2a** on your planning worksheet read **modern management**. 

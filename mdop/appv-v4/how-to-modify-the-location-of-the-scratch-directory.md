@@ -1,15 +1,15 @@
 ---
 title: How to Modify the Location of the Scratch Directory
 description: How to Modify the Location of the Scratch Directory
-author: eavena
+author: dansimp
 ms.assetid: 25ebc2fa-d532-4800-9825-9d08306fc2e0
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

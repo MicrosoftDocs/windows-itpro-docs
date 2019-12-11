@@ -1,15 +1,15 @@
 ---
 title: How to Sequence a New Application Package Using the Command Line
 description: How to Sequence a New Application Package Using the Command Line
-author: eavena
+author: dansimp
 ms.assetid: de72912b-d9e7-45b5-a601-12528f1a4cac
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

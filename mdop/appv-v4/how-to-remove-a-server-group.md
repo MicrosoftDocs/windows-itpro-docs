@@ -1,15 +1,15 @@
 ---
 title: How to Remove a Server Group
 description: How to Remove a Server Group
-author: eavena
+author: dansimp
 ms.assetid: 3017f4f4-614b-4db4-834c-b6fd9b45f10c
 ms.reviewer: 
 manager: dansimp
-ms.author: eravena
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

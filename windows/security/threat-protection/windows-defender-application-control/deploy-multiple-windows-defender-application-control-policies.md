@@ -1,24 +1,28 @@
 ---
-title: Deploy multiple Windows Defender Application Control Policies  (Windows 10)
+title: Use multiple Windows Defender Application Control Policies  (Windows 10)
 description: Windows Defender Application Control supports multiple code integrity policies for one device.
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: mdsakibMSFT
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: isbrahm
+ms.author: dansimp
+manager: dansimp
 ms.date: 05/17/2019
 ---
 
-# Deploy multiple Windows Defender Application Control Policies 
+# Use multiple Windows Defender Application Control Policies
 
 **Applies to:**
 
 -   Windows 10
 -   Windows Server 2016
-
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The restriction of only having a single code integrity policy active on a system at any given time has felt limiting for customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports multiple simultaneous code integrity policies for one device in order to enable the following scenarios:
 
@@ -43,16 +47,16 @@ Note that multiple policies will not work on pre-1903 systems.
 
 ### Allow Multiple Policies
 
-In order to allow multiple policies to exist and take effect on a single system, policies must be created using the new Multiple Policy Format. The "MultiplePolicyFormat" switch in New-CIPolicy results in 1) random GUIDs being generated for the policy ID and 2) the policy type being specified as base.
+In order to allow multiple policies to exist and take effect on a single system, policies must be created using the new Multiple Policy Format. The "MultiplePolicyFormat" switch in [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps) results in 1) random GUIDs being generated for the policy ID and 2) the policy type being specified as base. The below is an example of creating a new policy in the multiple policy format.
 
 ```powershell
-New-CIPolicy -MultiplePolicyFormat -foo –bar
+New-CIPolicy -MultiplePolicyFormat -ScanPath "<path>" -UserPEs -FilePath ".\policy.xml" -Level Publisher -Fallback Hash
 ```
 
 Optionally, you can choose to make the new base policy supplementable (allow supplemental policies).
 
 ```powershell
-Set-RuleOption -FilePath <string> Enabled:Allow Supplemental Policies
+Set-RuleOption -FilePath <string> -Option 17
 ```
 
 For signed base policies that are being made supplementable, you need to ensure that supplemental signers are defined. Use the "Supplemental" switch in Add-SignerRule to provide supplemental signers.
@@ -63,21 +67,24 @@ Add-SignerRule -FilePath <string> -CertificatePath <string> [-Kernel] [-User] [-
 
 ### Supplemental Policy Creation
 
-In order to create a supplemental policy, begin by creating a new policy in the Multiple Policy Format. From there, use Set-CIPolicyIdInfo to convert it to a supplemental policy and specify which base policy it expands.
-- "SupplementsBasePolicyID": guid of new supplemental policy
-- "BasePolicyToSupplementPath": base policy that the supplemental policy applies to
+In order to create a supplemental policy, begin by creating a new policy in the Multiple Policy Format. From there, use Set-CIPolicyIdInfo to convert it to a supplemental policy and specify which base policy it expands. You can use either SupplementsBasePolicyID or BasePolicyToSupplementPath to specify the base policy.
+- "SupplementsBasePolicyID": GUID of base policy that the supplemental policy applies to
+- "BasePolicyToSupplementPath": path to base policy file that the supplemental policy applies to
 
 ```powershell
 Set-CIPolicyIdInfo [-FilePath] <string> [-PolicyName <string>] [-SupplementsBasePolicyID <guid>] [-BasePolicyToSupplementPath <string>] [-ResetPolicyID] [-PolicyId <string>]  [<CommonParameters>]
 ```
 
-Note that "ResetPolicyId" reverts a supplemental policy to a base policy, and resets the policy guids back to a random guid.
+Note that "ResetPolicyId" reverts a supplemental policy to a base policy, and resets the policy GUIDs back to a random GUID.
 
 ### Merging policies
 
-When merging, the policy type and ID of the leftmost/first policy specified is used. If the leftmost is a base policy with ID \<ID>, then regardless of what the GUIDS and types are for any subsequent policies, the merged policy will be a base policy with ID \<ID>.
+When merging, the policy type and ID of the leftmost/first policy specified is used. If the leftmost is a base policy with ID \<ID>, then regardless of what the GUIDs and types are for any subsequent policies, the merged policy will be a base policy with ID \<ID>.
 
 ### Deploying policies
+
+> [!NOTE]
+> You cannot use the "Deploy Windows Defender Application Control" group policy setting to deploy multiple CI policies. You will have to copy the `*.cip` files, both the baseline and the supplemental ones, to C:\Windows\System32\CodeIntegrity\CiPolicies\Active\.
 
 In order to deploy policies using the new multiple policy format you will need to:
 

@@ -1,11 +1,11 @@
 ---
 title: Control an Uncontrolled GPO
 description: Control an Uncontrolled GPO
-author: mjcaparas
+author: dansimp
 ms.assetid: 603f00f9-1e65-4b2f-902a-e53dafedbd8d
 ms.reviewer: 
 manager: dansimp
-ms.author: macapara
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

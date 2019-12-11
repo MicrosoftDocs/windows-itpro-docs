@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: How to install the Internet Explorer 11 update using third-party tools and command-line options.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 30190c66-49f7-4ca4-8b57-a47656aa0c7e
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Install Internet Explorer 11 (IE11) using third-party tools (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

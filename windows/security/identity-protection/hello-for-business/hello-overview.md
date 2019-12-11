@@ -1,6 +1,6 @@
 ---
-title: Windows Hello for Business (Windows 10)
-ms.reviewer: 
+title: Windows Hello for Business Overview (Windows 10)
+ms.reviewer: An overview of Windows Hello for Business
 description: An overview of Windows Hello for Business 
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
@@ -15,6 +15,7 @@ ms.collection: M365-identity-device-management
 ms.topic: conceptual
 localizationpriority: medium
 ---
+
 # Windows Hello for Business Overview
 
 **Applies to**
@@ -105,7 +106,7 @@ Windows Hello for Business with a key does not support RDP. RDP does not support
 
 ## Learn more
 
-[Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/en-us/itshowcase/implementing-windows-hello-for-business-at-microsoft)
+[Implementing Windows Hello for Business at Microsoft](https://www.microsoft.com/itshowcase/implementing-windows-hello-for-business-at-microsoft)
 
 [Introduction to Windows Hello](https://go.microsoft.com/fwlink/p/?LinkId=786649), video presentation on Microsoft Virtual Academy
 

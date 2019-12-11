@@ -34,6 +34,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "audience": "ITPro",
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
       "ms.technology": "windows",
       "ms.topic": "article",
@@ -45,7 +46,8 @@
           "depot_name": "MSDN.windows-hub",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "titleSuffix": "Windows 10 for IT Pros"
     },
     "fileMetadata": {},
     "template": [],

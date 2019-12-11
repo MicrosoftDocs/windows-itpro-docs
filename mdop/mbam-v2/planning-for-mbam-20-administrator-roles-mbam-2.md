@@ -1,15 +1,15 @@
 ---
 title: Planning for MBAM 2.0 Administrator Roles
 description: Planning for MBAM 2.0 Administrator Roles
-author: msfttracyp
+author: dansimp
 ms.assetid: 6f813297-6479-42d3-a21b-896d54466b5b
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +19,7 @@ ms.date: 06/16/2016
 
 This topic lists and describes the available administrator roles that are available in Microsoft BitLocker Administration and Monitoring (MBAM) as well as the server locations where the local groups are created.
 
-##  MBAM Administrator Roles
+## MBAM Administrator Roles
 
 
 <a href="" id="---------------mbam-system-administrators"></a> **MBAM System Administrators**  

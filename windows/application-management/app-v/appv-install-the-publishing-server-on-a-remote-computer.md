@@ -1,5 +1,5 @@
 ---
-title: How to Install the Publishing Server on a Remote Computer (Windows 10)
+title: Install the Publishing Server on a Remote Computer (Windows 10)
 description: How to Install the App-V Publishing Server on a Remote Computer
 author: lomayor
 ms.pagetype: mdop, appcompat, virtualization
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 ms.topic: article
 ---
 # How to install the publishing server on a remote computer

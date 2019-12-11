@@ -22,12 +22,14 @@ ms.topic: article
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
->[!Note]
+>[!NOTE]
 > Currently this API is supported only for AppOnly context requests. (See [Get access with application context](exposed-apis-create-app-webapp.md) for more information)
 
 
 - Submits or Updates new [Indicator](ti-indicator.md) entity.
 
+>[!NOTE]
+>There is a limit of 5000 indicators per tenant. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
@@ -43,7 +45,7 @@ Application |	Ti.ReadWrite.All |	'Read and write All Indicators'
 POST https://api.securitycenter.windows.com/api/indicators
 ```
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 ## Request headers
@@ -116,3 +118,6 @@ Content-type: application/json
 }
 
 ```
+
+## Related topic
+- [Manage indicators](manage-indicators.md)

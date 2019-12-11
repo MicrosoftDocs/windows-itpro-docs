@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.reviewer: 
-ms.author: dolmont
+ms.author: dansimp
 ---
 
 # Secure the Windows 10 boot process
@@ -25,7 +25,7 @@ ms.author: dolmont
 
 The Windows operating system has many features to help protect you from malware, and it does an amazingly good job. Except for apps that businesses develop and use internally, all Microsoft Store apps must meet a series of requirements to be certified and included in the Microsoft Store. This certification process examines several criteria, including security, and is an effective means of preventing malware from entering the Microsoft Store. Even if a malicious app does get through, the Windows 10 operating system includes a series of security features that can mitigate the impact. For instance, Microsoft Store apps are sandboxed and lack the privileges necessary to access user data or change system settings.
 
-Windows 10 has multiple levels of protection for desktop apps and data, too. Windows Defender uses signatures to detect and quarantine apps that are known to be malicious. The SmartScreen Filter warns users before allowing them to run an untrustworthy app, even if it’s recognized as malware. Before an app can change system settings, the user would have to grant the app administrative privileges by using User Account Control.
+Windows 10 has multiple levels of protection for desktop apps and data, too. Windows Defender uses signatures to detect and quarantine apps that are known to be malicious. Windows Defender SmartScreen warns users before allowing them to run an untrustworthy app, even if it’s recognized as malware. Before an app can change system settings, the user would have to grant the app administrative privileges by using User Account Control.
 
 Those are just some of the ways that Windows 10 protects you from malware. However, those security features protect you only after Windows 10 starts. Modern malware—and bootkits specifically—are capable of starting before Windows, completely bypassing operating system security, and remaining completely hidden.
 
@@ -80,7 +80,7 @@ All x86-based Certified For Windows 10 PCs must meet several requirements relat
 
 These requirements help protect you from rootkits while allowing you to run any operating system you want. You have three options for running non-Microsoft operating systems:
 
--  **Use an operating system with a certified bootloader.** Because all Certified For Windows 10 PCs must trust Microsoft’s certificate, Microsoft offers a service to analyze and sign any non-Microsoft bootloader so that it will be trusted by all Certified For Windows 10 PCs. In fact, an [open source bootloader](http://mjg59.dreamwidth.org/20303.html) capable of loading Linux is already available. To begin the process of obtaining a certificate, go to <http://partner.microsoft.com/dashboard>.
+-  **Use an operating system with a certified bootloader.** Because all Certified For Windows 10 PCs must trust Microsoft’s certificate, Microsoft offers a service to analyze and sign any non-Microsoft bootloader so that it will be trusted by all Certified For Windows 10 PCs. In fact, an [open source bootloader](http://mjg59.dreamwidth.org/20303.html) capable of loading Linux is already available. To begin the process of obtaining a certificate, go to <https://partner.microsoft.com/dashboard>.
 -  **Configure UEFI to trust your custom bootloader.** All Certified For Windows 10 PCs allow you to trust a non-certified bootloader by adding a signature to the UEFI database, allowing you to run any operating system, including homemade operating systems.
 -  **Turn off Secure Boot.** All Certified For Windows 10 PCs allow you to turn off Secure Boot so that you can run any software. This does not help protect you from bootkits, however.
 
@@ -96,7 +96,7 @@ Because Secure Boot has protected the bootloader and Trusted Boot has protected 
 
 Early Launch Anti-Malware (ELAM) can load a Microsoft or non-Microsoft anti-malware driver before all non-Microsoft boot drivers and applications, thus continuing the chain of trust established by Secure Boot and Trusted Boot. Because the operating system hasn’t started yet, and because Windows needs to boot as quickly as possible, ELAM has a simple task: examine every boot driver and determine whether it is on the list of trusted drivers. If it’s not trusted, Windows won’t load it.
 
-An ELAM driver isn’t a full-featured anti-malware solution; that loads later in the boot process. Windows Defender (included with Windows 10) supports ELAM, as does [Microsoft System Center 2012 Endpoint Protection](https://www.microsoft.com/en-us/server-cloud/system-center/endpoint-protection-2012.aspx) and several non-Microsoft anti-malware apps.
+An ELAM driver isn’t a full-featured anti-malware solution; that loads later in the boot process. Windows Defender (included with Windows 10) supports ELAM, as does [Microsoft System Center 2012 Endpoint Protection](https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx) and several non-Microsoft anti-malware apps.
 
 ## Measured Boot
 If a PC in your organization does become infected with a rootkit, you need to know about it. Enterprise anti-malware apps can report malware infections to the IT department, but that doesn’t work with rootkits that hide their presence. In other words, you can’t trust the client to tell you whether it’s healthy.

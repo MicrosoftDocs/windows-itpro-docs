@@ -1,14 +1,14 @@
----  
-title: Azure AD Join with Set up School PCs app  
-description: Describes how Azure AD Join is configured in the Set up School PCs app.  
-keywords: shared cart, shared PC, school, set up school pcs  
-ms.prod: w10  
-ms.mktglfcycl: plan  
-ms.sitesec: library  
-ms.pagetype: edu  
-ms.localizationpriority: medium  
-author: levinec
-ms.author: ellevin
+---
+title: Azure AD Join with Set up School PCs app
+description: Describes how Azure AD Join is configured in the Set up School PCs app.
+keywords: shared cart, shared PC, school, set up school pcs
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.sitesec: library
+ms.pagetype: edu
+ms.localizationpriority: medium
+author: dansimp
+ms.author: dansimp
 ms.date: 01/11/2019
 ms.reviewer: 
 manager: dansimp

@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Use Setup information (.inf) files to uninstall custom components from your custom browser packages.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 8257aa41-58de-4339-81dd-9f2ffcc10a08
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Use Setup information (.inf) files to uninstall custom components (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017

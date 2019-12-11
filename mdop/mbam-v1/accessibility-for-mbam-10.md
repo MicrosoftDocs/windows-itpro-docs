@@ -1,15 +1,15 @@
 ---
 title: Accessibility for MBAM 1.0
 description: Accessibility for MBAM 1.0
-author: msfttracyp
+author: dansimp
 ms.assetid: 5c1bf1a3-76cf-458c-ac4a-cd343aace4de
 ms.reviewer: 
 manager: dansimp
-ms.author: tracyp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

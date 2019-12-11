@@ -24,7 +24,12 @@
     "globalMetadata": {
       "breadcrumb_path": "/microsoft-desktop-optimization-pack/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
-      "ms.technology": "mdop",
+      "ms.technology": "windows",
+      "audience": "ITPro",
+      "manager": "dansimp",
+      "ms.prod": "w10",
+      "ms.author": "dansimp",
+      "author": "dansimp",
       "ms.sitesec": "library",
       "ms.topic": "article",
       "ms.date": "04/05/2017",
@@ -36,11 +41,22 @@
           "depot_name": "Win.mdop",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "contributors_to_exclude": [ 
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "Kellylorenebaker",
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+      "titleSuffix": "Microsoft Desktop Optimization Pack"
     },
     "externalReference": [],
     "template": "op.html",
     "dest": "mdop",
     "markdownEngineName": "markdig"
-  }
+    }
 }

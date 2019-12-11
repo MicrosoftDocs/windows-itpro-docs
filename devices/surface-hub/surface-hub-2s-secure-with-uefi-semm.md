@@ -4,13 +4,13 @@ description: "Learn more about securing Surface Hub 2S with SEMM."
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.date: 06/20/2019
-ms.localizationpriority: Normal
+ms.localizationpriority: Medium
 ---
 
 # Secure and manage Surface Hub 2S with SEMM and UEFI

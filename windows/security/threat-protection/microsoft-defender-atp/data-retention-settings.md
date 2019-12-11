@@ -1,6 +1,6 @@
 ---
-title: Update data retention settings for Microsoft Defender Advanced Threat Protection
-description: Update data retention settings by selecting between 30 days to 180 days.
+title: Update how long data is stored by MDATP
+description: Update data retention settings for Microsoft Defender Advanced Threat Protection (MDATP) by selecting between 30 days to 180 days.
 keywords: data, storage, settings, retention, update
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -26,7 +26,7 @@ ms.date: 04/24/2018
 
 
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
 
 During the onboarding process, a wizard takes you through the general settings of Microsoft Defender ATP. After onboarding, you might want to update the data retention settings.
 

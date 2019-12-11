@@ -153,7 +153,7 @@ The output of this command should be the name of the network interface you use t
 
 For example, if the command above displays Ethernet but you wish to use Ethernet2, then the first command below would be New-VMSwitch -Name AutopilotExternal -AllowManagementOS $true -NetAdapterName **Ethernet2**.
 
-###  Use Windows PowerShell to create the demo VM 
+### Use Windows PowerShell to create the demo VM 
 
 All VM data will be created under the current path in your PowerShell prompt. Consider navigating into a new folder before running the following commands.
 
@@ -653,7 +653,7 @@ Before we can pull an application into Intune to make it part of our AP profile,
 
 For the purposes of this lab, we’ll use the Notepad++ tool as our Win32 app.
 
-Download the Notepad++ msi package [here](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available) and then opy the file to a known location, such as C:\Notepad++msi.
+Download the Notepad++ msi package [here](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available) and then copy the file to a known location, such as C:\Notepad++msi.
 
 Run the IntuneWinAppUtil tool, supplying answers to the three questions, for example:
 
@@ -736,7 +736,7 @@ In the **Intune > Client Apps > Apps** pane, select the app package you already 
 
 Select **Add Group** to open the **Add group** pane that is related to the app.
 
-For our purposes, select *8Required** from the **Assignment type** dropdown menu:
+For our purposes, select **Required** from the **Assignment type** dropdown menu:
 
 >**Available for enrolled devices** means users install the app from the Company Portal app or Company Portal website.
 
@@ -758,7 +758,7 @@ In the app **Assignments** pane, select **Save**.
 
 At this point, you have completed steps to add a Win32 app to Intune.
 
-For more information on adding adds to Intune, see [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management).
+For more information on adding apps to Intune, see [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management).
 
 ### Add Office 365
 

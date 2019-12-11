@@ -6,7 +6,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: dulcemontemayor
-ms.author: dolmont
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -160,7 +160,7 @@ To add **Desktop apps**, complete the following fields, based on what results yo
     </tr>
     <tr>
         <td>All fields marked as “*”</td>
-        <td>All files signed by any publisher. (Not recommended)</td>
+        <td>All files signed by any publisher. (Not recommended and may not work)</td>
     </tr>
     <tr>
         <td>Publisher only</td>
@@ -298,6 +298,8 @@ For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com
 12. After you’ve created your XML file, you need to import it by using Microsoft Intune.
 
 ## Create an Executable rule for unsigned apps
+
+The executable rule helps to create an AppLocker rule to sign any unsigned apps. It enables adding the file path or the app publisher contained in the file's digital signature needed for the WIP policy to be applied. 
 
 1. Open the Local Security Policy snap-in (SecPol.msc).
     

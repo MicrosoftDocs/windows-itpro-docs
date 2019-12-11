@@ -2,12 +2,13 @@
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 description: Learn about how to use a proxy auto-configuration (.pac) file to specify an automatic proxy URL.
-author: lomayor
+author: dansimp
 ms.prod: ie11
 ms.assetid: 6c94708d-71bd-44bd-a445-7e6763b374ae
 ms.reviewer: 
+audience: itpro
 manager: dansimp
-ms.author: lomayor
+ms.author: dansimp
 title: Use proxy auto-configuration (.pac) files with IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
 ms.date: 07/27/2017
