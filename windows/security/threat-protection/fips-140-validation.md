@@ -57,7 +57,7 @@ The cadence for starting module validation aligns with the feature updates of Wi
 
 ### What is the difference between “FIPS 140 validated” and “FIPS 140 compliant”?
 
-“FIPS 140 validated” means that the cryptographic module, or a product that embeds the module, has been validated (“certified”) by the CMVP as meeting as meeting the FIPS 140-2 requirements. “FIPS 140 compliant” is an industry term for IT products that rely on FIPS 140 validated products for cryptographic functionality.
+“FIPS 140 validated” means that the cryptographic module, or a product that embeds the module, has been validated (“certified”) by the CMVP as meeting the FIPS 140-2 requirements. “FIPS 140 compliant” is an industry term for IT products that rely on FIPS 140 validated products for cryptographic functionality.
 
 ### I need to know if a Windows service or application is FIPS 140-2 validated.
 
