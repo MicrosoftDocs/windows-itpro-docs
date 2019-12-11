@@ -137,7 +137,7 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 - [Reporting and trends](microsoft-defender-atp/powerbi-reports.md)
 
 <a name="integration"></a>
-**[Integration with Microsoft solutions](threat-protection-integration.md)** <br>
+**[Integration with Microsoft solutions](microsoft-defender-atp/threat-protection-integration.md)** <br>
  Microsoft Defender ATP directly integrates with various Microsoft solutions, including:
 - Intune
 - Office 365 ATP
