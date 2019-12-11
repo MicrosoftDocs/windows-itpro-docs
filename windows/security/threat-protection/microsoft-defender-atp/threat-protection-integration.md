@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP in Microsoft Threat Protection
+title: Integrate Microsoft Defender ATP with other Microsoft solutions
 ms.reviewer: 
-description: Learn about the capabilities within the Microsoft Threat Protection 
+description: Learn how Microsoft Defender ATP integrations with other Microsoft solutions 
 keywords: microsoft threat protection, conditional access, office, advanced threat protection, azure atp, azure security center, microsoft cloud app security
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,17 +18,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Microsoft Defender ATP in Microsoft Threat Protection
+# Microsoft Defender ATP and other Microsoft solutions
 
 **Applies to:**
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
- With Microsoft Threat Protection, Microsoft Defender ATP and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate and automatically respond to sophisticated attacks. 
- 
- [Learn more about Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
-
-## Integration with Microsoft solutions
+## Integrate with other Microsoft solutions
 
  Microsoft Defender ATP directly integrates with various Microsoft solutions.
 
@@ -56,6 +52,12 @@ Microsoft Cloud App Security leverages Microsoft Defender ATP endpoint signals t
 
 ### Skype for Business
 The Skype for Business integration provides a way for analysts to communicate with a potentially compromised user or device owner through a simple button from the portal.
+
+## Microsoft Threat Protection
+ With Microsoft Threat Protection, Microsoft Defender ATP and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate and automatically respond to sophisticated attacks. 
+ 
+ [Learn more about Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+
 
 ## Related topics
 - [Configure integration and other advanced features](advanced-features.md)
