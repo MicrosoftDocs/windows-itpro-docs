@@ -68,6 +68,7 @@ See the following examples.
     Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
     Install-Module AzureAD -Force
     Install-Module WindowsAutopilotIntune -Force
+    Install-Module Microsoft.Graph.Intune -Force
     ```
 
 3. Enter the following lines and provide Intune administrative credentials
