@@ -116,7 +116,7 @@ To use the tool, you’ll need a computer running Windows 10 or later, with at l
 
 To recover your HoloLens
 
-1. Download and install the [Windows Device Recovery Tool](https://dev.azure.com/ContentIdea/ContentIdea/_queries/query/8a004dbe-73f8-4a32-94bc-368fc2f2a895/) on your computer.
+1. Download and install the [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) on your computer.
 1. Connect the HoloLens (1st gen) to your computer using the Micro USB cable that came with your HoloLens.
 1. Run the Windows Device Recovery Tool and follow the instructions.
 
