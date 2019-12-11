@@ -45,7 +45,7 @@ Try adjusting the position of your device visor so the holographic frame matches
 
 ## Hologram image color or brightness does not look right
 
-For HoloLens 2, take the following steps to improve the quality of holograms presented in displays:
+For HoloLens 2, take the following steps to ensure the highest visual quality of holograms presented in displays:
 
 - **Increase brightness of the display.** Holograms look best when the display is at its brightest level.
 - **Bring visor closer to your eyes.** Swing the visor down to the closest position to your eyes.
