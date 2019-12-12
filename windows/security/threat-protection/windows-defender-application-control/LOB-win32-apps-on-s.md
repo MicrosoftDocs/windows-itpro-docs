@@ -27,6 +27,7 @@ Beginning with the Windows 10 November 2019 update (build 18363), Microsoft Intu
 
 With Intune, IT Pros can now configure their managed S mode devices using a Windows Defender Application Control (WDAC) supplemental policy that expands the S mode base policy to authorize the apps their business uses. This feature changes the S mode security posture from “every app is Microsoft-verified" to “every app is verified by Microsoft or your organization”. 
 
+Refer to the below video for an overview and brief demo.
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mlcp]
 
 ## Policy Authorization Process
