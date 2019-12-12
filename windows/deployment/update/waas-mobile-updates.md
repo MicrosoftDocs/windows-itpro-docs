@@ -1,6 +1,6 @@
 ---
-title: Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile (Windows 10)
-description: tbd
+title: Deploy updates to Windows 10 Mobile or Windows 10 IoT Mobile
+description: Deploy updates to devices in your organization that are running Windows 10 Mobile Enterprise or Windows 10 IoT Mobile.
 ms.prod: w10
 ms.mktglfcycl: manage
 author: jaimeo

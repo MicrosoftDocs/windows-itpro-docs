@@ -5,6 +5,7 @@
 ### [Overview of Microsoft Defender ATP capabilities](microsoft-defender-atp/overview.md)
 ### [Threat & Vulnerability Management]()
 #### [Next-generation capabilities](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
+#### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 #### [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 #### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
 #### [Configuration score](microsoft-defender-atp/configuration-score.md)
@@ -447,13 +448,6 @@
 #### [Common Vulnerabilities and Exposures (CVE) to KB map]()
 ##### [Get CVE-KB map](microsoft-defender-atp/get-cvekbmap-collection.md)
 
-#### [API for custom alerts (Deprecated)]()
-##### [Use the threat intelligence API to create custom alerts (Deprecated)](microsoft-defender-atp/use-custom-ti.md)
-##### [Create custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/custom-ti-api.md)
-##### [PowerShell code examples (Deprecated)](microsoft-defender-atp/powershell-example-code.md)
-##### [Python code examples (Deprecated)](microsoft-defender-atp/python-example-code.md)
-##### [Experiment with custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/experiment-custom-ti.md)
-##### [Troubleshoot custom threat intelligence issues (Deprecated)](microsoft-defender-atp/troubleshoot-custom-ti.md)
 
 #### [Pull detections to your SIEM tools]()
 ##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
@@ -602,9 +596,9 @@
 #### [Family options](windows-defender-security-center/wdsc-family-options.md)
 
 
-### [SmartScreen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
-#### [SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
-#### [Set up and use SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
+### [Windows Defender SmartScreen](windows-defender-smartscreen/windows-defender-smartscreen-overview.md)
+#### [Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen/windows-defender-smartscreen-available-settings.md)
+#### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device.md)
 
 
 ### [Windows Defender Device Guard: virtualization-based security and WDAC](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
@@ -1072,7 +1066,7 @@
 ###### [Network security: Allow Local System to use computer identity for NTLM](security-policy-settings/network-security-allow-local-system-to-use-computer-identity-for-ntlm.md)
 ###### [Network security: Allow LocalSystem NULL session fallback](security-policy-settings/network-security-allow-localsystem-null-session-fallback.md)
 ###### [Network security: Allow PKU2U authentication requests to this computer to use online identities](security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities.md)
-###### [Network security: Configure encryption types allowed for Kerberos Win7 only](security-policy-settings/network-security-configure-encryption-types-allowed-for-kerberos.md)
+###### [Network security: Configure encryption types allowed for Kerberos](security-policy-settings/network-security-configure-encryption-types-allowed-for-kerberos.md)
 ###### [Network security: Do not store LAN Manager hash value on next password change](security-policy-settings/network-security-do-not-store-lan-manager-hash-value-on-next-password-change.md)
 ###### [Network security: Force logoff when logon hours expire](security-policy-settings/network-security-force-logoff-when-logon-hours-expire.md)
 ###### [Network security: LAN Manager authentication level](security-policy-settings/network-security-lan-manager-authentication-level.md)

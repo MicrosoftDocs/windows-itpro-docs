@@ -96,6 +96,9 @@ If the pre-provisioning process completes successfully:
  ![white-glove-result](images/white-glove-result.png)
 - Click **Reseal** to shut the device down.  At that point, the device can be shipped to the end user.
 
+>[!NOTE]
+>Technician Flow inherits behavior from [Self-Deploying Mode](self-deploying.md). Per the Self-Deploying Mode documentation, it leverages the Enrollment Status Page to hold the device in a provisioning state and prevent the user from proceeding to the desktop after enrollment but before software and configuration is done applying. As such, if Enrollment Status Page is disabled, the reseal button may appear before software and configuration is done applying letting you proceed to the user flow before technician flow provisioning is complete. The green screen validates that enrollment was successful, not that the technician flow is necessarily complete.
+
 If the pre-provisioning process fails:
 - A red status screen will be displayed with information about the device, including the same details presented previously (e.g. Autopilot profile, organization name, assigned user, QR code), as well as the elapsed time for the pre-provisioning steps.
 - Diagnostic logs can be gathered from the device, and then it can be reset to start the process over again.

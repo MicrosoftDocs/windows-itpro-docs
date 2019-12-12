@@ -1,5 +1,5 @@
 ---
-title: Windows Defender System Guard How a hardware-based root of trust helps protect Windows 10 (Windows 10)
+title: How Windows Defender System Guard protect Windows 10 from firmware exploits
 description: Windows Defender System Guard in Windows 10 uses a hardware-based root of trust to securely protect systems against firmware exploits.
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.reviewer: 

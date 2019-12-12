@@ -38,8 +38,9 @@ Delegated (work or school account) | Machine.ReadWrite | 'Read and write machine
 
 >[!Note]
 > When obtaining a token using user credentials:
->- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- Response will include only machines,that the user have access to, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+> - Response will include only machines that the user have access to based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+> - Response will include only machines that the user have access to based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
@@ -57,7 +58,7 @@ Empty
 
 ## Response
 If successful and machines were found - 200 OK with list of the machines in the response body.
-If no machine found  - 404 Not Found.
+If no machine found - 404 Not Found.
 If the timestamp is not in the past 30 days - 400 Bad Request.
 
 ## Example
@@ -66,7 +67,7 @@ If the timestamp is not in the past 30 days - 400 Bad Request.
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/machines/findbyip(ip='10.248.240.38',timestamp=2018-09-22T08:44:05Z)

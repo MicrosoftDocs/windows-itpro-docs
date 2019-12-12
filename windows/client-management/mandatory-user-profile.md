@@ -31,6 +31,7 @@ When the server that stores the mandatory profile is unavailable, such as when t
 User profiles become mandatory profiles when the administrator renames the NTuser.dat file (the registry hive) of each user's profile in the file system of the profile server from `NTuser.dat` to `NTuser.man`. The `.man` extension causes the user profile to be a read-only profile.
 
 <span id="extension"/>
+
 ## Profile extension for each Windows version
 
 The name of the folder in which you store the mandatory profile must use the correct extension for the operating system it will be applied to. The following table lists the correct extension for each operating system version.

@@ -1,5 +1,5 @@
 ---
-title: Configuring Hybrid Windows Hello for Business - Directory Synchronization
+title: Configure Hybrid Windows Hello for Business Directory Synch
 description: Discussing Directory Synchronization in a Hybrid deployment of Windows Hello for Business
 keywords: identity, PIN, biometric, Hello, passport, WHFB, dirsync, connect
 ms.prod: w10

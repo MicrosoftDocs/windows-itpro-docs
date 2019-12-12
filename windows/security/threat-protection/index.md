@@ -46,6 +46,7 @@ ms.topic: conceptual
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations. 
 
 - [Risk-based Threat & Vulnerability Management](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md) 
+- [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 - [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 - [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
 - [Configuration score](microsoft-defender-atp/configuration-score.md)
@@ -58,7 +59,7 @@ This built-in capability uses a game-changing risk-based approach to the discove
 <a name="asr"></a>
 
 **[Attack surface reduction](microsoft-defender-atp/overview-attack-surface-reduction.md)**<br>
-The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations.
+The attack surface reduction set of capabilities provide the first line of defense in the stack. By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitation.
 
 - [Hardware based isolation](microsoft-defender-atp/overview-hardware-based-isolation.md)
 - [Application control](windows-defender-application-control/windows-defender-application-control.md)
@@ -101,7 +102,7 @@ In conjunction with being able to quickly respond to advanced attacks, Microsoft
 
 - [Automated investigation and remediation](microsoft-defender-atp/automated-investigations.md)
 - [Threat remediation](microsoft-defender-atp/automated-investigations.md#how-threats-are-remediated)
-- [Manage automated investigations](microsoft-defender-atp/manage-auto-investigation.md)
+- [Manage automated investigation](microsoft-defender-atp/manage-auto-investigation.md)
 - [Analyze automated investigation](microsoft-defender-atp/manage-auto-investigation.md#analyze-automated-investigations)
 
 <a name="ss"></a>
@@ -135,13 +136,16 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 - [Role-based access control (RBAC)](microsoft-defender-atp/rbac.md)
 - [Reporting and trends](microsoft-defender-atp/powerbi-reports.md)
 
-<a name="mtp"></a>
+<a name="integration"></a>
+**[Integration with Microsoft solutions](microsoft-defender-atp/threat-protection-integration.md)** <br>
+ Microsoft Defender ATP directly integrates with various Microsoft solutions, including:
+- Intune
+- Office 365 ATP
+- Azure ATP
+- Azure Security Center
+- Skype for Business 
+- Microsoft Cloud App Security
 
-**[Microsoft Threat Protection](microsoft-defender-atp/threat-protection-integration.md)** <br>
- Microsoft Defender ATP is part of the Microsoft Threat Protection solution that helps implement end-to-end security across possible attack surfaces in the modern workplace. Bring the power of Microsoft threat protection to your organization.
-- [Conditional access](microsoft-defender-atp/conditional-access.md)
-- [Office 365 ATP](microsoft-defender-atp/threat-protection-integration.md)
-- [Azure ATP](microsoft-defender-atp/threat-protection-integration.md)
-- [Azure Security Center](microsoft-defender-atp/threat-protection-integration.md)
-- [Skype for Business](microsoft-defender-atp/threat-protection-integration.md) 
-- [Microsoft Cloud App Security](microsoft-defender-atp/microsoft-cloud-app-security-integration.md)
+<a name="mtp"></a>
+**[Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)**<br>
+ With Microsoft Threat Protection, Microsoft Defender ATP and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate and automatically respond to sophisticated attacks.

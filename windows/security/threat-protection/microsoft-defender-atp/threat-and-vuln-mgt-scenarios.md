@@ -23,7 +23,7 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
 
-[!include[Prerelease information](prerelease.md)]
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Before you begin
 Ensure that your machines:
@@ -183,6 +183,7 @@ ComputerName=any(ComputerName) by MachineId, AlertId
 ```
 
 ## Related topics
+- [Supported operating systems and platforms](tvm-supported-os.md)
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)

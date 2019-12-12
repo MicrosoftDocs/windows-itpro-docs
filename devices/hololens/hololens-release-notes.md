@@ -8,7 +8,7 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/14/2019
+ms.date: 12/02/2019
 audience: ITPro
 appliesto:
 - HoloLens 1
@@ -19,6 +19,15 @@ appliesto:
 # HoloLens Release Notes
 
 ## HoloLens 2
+> [!Note]
+> HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
+
+### December Update - build 18362.1042
+
+- Introduces LSR (Last Stage Reproduction) fixes. Improves visual rendering of holograms to appear more stable and crisp by more accurately accounting for their depth. This will be more noticeable if apps do not set the depth of holograms correctly, after this update.
+- Fixes stability of exclusive apps and navigation between exclusive apps.
+- Resolves an issue where Mixed Reality Capture couldn't record video after device is left in standby state for multiple days.
+- Improves hologram stability.
 
 ### November Update - build 18362.1039
 

@@ -50,7 +50,7 @@ You can access the remediation page in a few places in the portal:
 If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
 
 *Remediation in the navigation menu*
-1. Go to the Threat & Vulnerability Management navigation menu and select **Remediation** to open up the list of remediation activities and exceptions found in your organization. You can filter your view based on remediation type, machine remediation progress, and exception justification. If you want to see the remediation activities of applications which have reached their end-of-life, select **Software uninstall** from the **Remediation type** filter.  
+1. Go to the Threat & Vulnerability Management navigation menu and select **Remediation** to open up the list of remediation activities and exceptions found in your organization. You can filter your view based on remediation type, machine remediation progress, and exception justification. If you want to see the remediation activities of software which have reached their end-of-life, select **Software uninstall** from the **Remediation type** filter.  
 2. Select the remediation activity that you need to see or process.
 
 *Top remediation activities widget in the dashboard*
@@ -120,6 +120,7 @@ The exception impact shows on both the Security recommendations page column and 
 ![Screenshot of where to find the exception impact](images/tvm-exception-impact.png)
 
 ## Related topics
+- [Supported operating systems and platforms](tvm-supported-os.md)
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)

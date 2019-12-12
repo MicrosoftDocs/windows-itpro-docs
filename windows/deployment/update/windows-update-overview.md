@@ -21,7 +21,7 @@ ms.topic: article
 
 With the release of Windows 10, we moved the update model to the Unified Update Platform. Unified Update Platform (UUP) is a single publishing, hosting, scan and download model for all types of OS updates, desktop and mobile for all Windows-based operating systems, for everything from monthly quality updates to new feature updates.  
 
-Ues the following information to get started with Windows Update:
+Use the following information to get started with Windows Update:
 
 - Understand the UUP architecture
 - Understand [how Windows Update works](how-windows-update-works.md)

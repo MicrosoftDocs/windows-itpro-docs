@@ -32,6 +32,7 @@ sections:
   - type: markdown
     text: "
       <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Date resolved</td></tr>
+      <tr><td><div id='375msg'></div><b>Printing from 32-bit apps might fail on a 64-bit OS</b><br>When attempting to print, you may receive an error or the application may stop responding or close.<br><br><a href = '#375msgdesc'>See details ></a></td><td>August 13, 2019<br><a href ='https://support.microsoft.com/help/4512489' target='_blank'>KB4512489</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4525250' target='_blank'>KB4525250</a></td><td>November 12, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='351msg'></div><b>Intermittent issues when printing</b><br>The print spooler service may intermittently have issues completing a print job and results print job failure.<br><br><a href = '#351msgdesc'>See details ></a></td><td>September 24, 2019<br><a href ='https://support.microsoft.com/help/4516041' target='_blank'>KB4516041</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4520005' target='_blank'>KB4520005</a></td><td>October 08, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='333msg'></div><b>Windows RT 8.1 devices may have issues opening Internet Explorer 11</b><br>On Windows RT 8.1 devices, Internet Explorer 11 may not open and you may receive an error.<br><br><a href = '#333msgdesc'>See details ></a></td><td>September 10, 2019<br><a href ='https://support.microsoft.com/help/4516067' target='_blank'>KB4516067</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4516041' target='_blank'>KB4516041</a></td><td>September 24, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='252msg'></div><b>Devices starting using PXE from a WDS or SCCM servers may fail to start</b><br>Devices that start up using PXE images from Windows Deployment Services (WDS) may fail to start with error \"0xc0000001.\"<br><br><a href = '#252msgdesc'>See details ></a></td><td>June 11, 2019<br><a href ='https://support.microsoft.com/help/4503276' target='_blank'>KB4503276</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4512478' target='_blank'>KB4512478</a></td><td>August 17, 2019 <br>02:00 PM PT</td></tr>
@@ -51,6 +52,15 @@ sections:
         <div>
         </div> 
       "
+- title: November 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='375msgdesc'></div><b>Printing from 32-bit apps might fail on a 64-bit OS</b><div>When attempting to print from a 32-bit app on a 64-bit operating system (OS), you may receive an error, or the application may stop responding or close. <strong>Note</strong> This issue only affects the 64-bit Security Only updates listed and does not affect any Monthly Rollup.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 8.1</li><li>Server: Windows Server 2012 R2; Windows Server 2012</li></ul><div></div><div><strong>Resolution:</strong> This issue is resolved in <a href='https://support.microsoft.com/help/4525250' target='_blank'>KB4525250</a>. However, the issue occurs when you install&nbsp;only <a href='https://support.microsoft.com/help/4512489' target='_blank'>KB4512489</a> (released on August 13, 2019) without installing <a href=\"https://support.microsoft.com/en-us/help/4507457\" rel=\"noopener noreferrer\" target=\"_blank\">KB4507457</a>, the previous Security Only update (released July 9, 2019). <strong>Reminder</strong> When using the Security Only updates, you must install the latest and all previous Security Only updates to ensure that the device contains all resolved security vulnerabilities.</div><br><a href ='#375msg'>Back to top</a></td><td>August 13, 2019<br><a href ='https://support.microsoft.com/help/4512489' target='_blank'>KB4512489</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4525250' target='_blank'>KB4525250</a></td><td>Resolved:<br>November 12, 2019 <br>10:00 AM PT<br><br>Opened:<br>November 27, 2019 <br>04:02 PM PT</td></tr>
+      </table>
+      "
+
 - title: September 2019
 - items:
   - type: markdown

@@ -1,5 +1,5 @@
 ---
-title: Windows security baselines
+title: Windows security baselines guide
 description: This article, and the articles it links to, describe how to use Windows security baselines in your organization
 keywords: virtualization, security, malware
 ms.prod: w10

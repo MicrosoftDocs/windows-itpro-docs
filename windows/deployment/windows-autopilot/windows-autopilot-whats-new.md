@@ -9,7 +9,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -21,6 +22,12 @@ ms.topic: article
 **Applies to**
 
 -   Windows 10
+
+## Windows Autopilot update history
+
+The following [Windows Autopilot updates](autopilot-update.md) are available. **Note**: Updates are automatically downloaded and applied during the Windows Autopilot deployment process. 
+
+No updates are available yet. Check back here later for more information.
 
 ## New in Windows 10, version 1903
 

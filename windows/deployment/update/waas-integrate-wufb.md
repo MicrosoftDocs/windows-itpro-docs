@@ -1,5 +1,5 @@
 ---
-title: Integrate Windows Update for Business with management solutions (Windows 10)
+title: Integrate Windows Update for Business (Windows 10)
 description: Use Windows Update for Business deployments with management tools such as Windows Server Update Services (WSUS) and System Center Configuration Manager.
 ms.prod: w10
 ms.mktglfcycl: manage
