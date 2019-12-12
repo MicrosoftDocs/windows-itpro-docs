@@ -237,12 +237,51 @@ Disconnect all peripheral devices that are connected to the system, except for t
 <td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Clean boot into Windows, and then attempt the upgrade to Windows 10.<br>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135).
+<b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Clean boot into Windows, and then attempt the upgrade to Windows 10.  
 
-<br><br>Ensure you select the option to "Download and install updates (recommended)."
+For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135).  
+
+Ensure that you select the option to "Download and install updates (recommended)."  
+
+<b>Computers that run Citrix VDA</b>  
+You may see this message after you upgrade a computer from Windows 10, version 1511 to Windows 10, version 1607. After the second system restart, the system generates this error and then rolls back to the previous version. This problem has also been observed in upgrades to Windows 8.1 and Windows 8.  
+
+This problem occurs because the computer has Citrix Virtual Delivery Agent (VDA) installed. Citrix VDA installs device drivers and a file system filter driver (CtxMcsWbc). This Citrix filter driver prevents the upgrade from writing changes to the disk, so the upgrade cannot complete and the system rolls back.  
+
+**Resolution**
+
+To resolve this problem, install [Cumulative update for Windows 10 Version 1607 and Windows Server 2016: November 8, 2016](https://support.microsoft.com/help/3200970/cumulative-update-for-windows-10-version-1607-and-windows-server-2016).
+
+You can work around this problem in two ways
+
+**Workaround 1**
+
+1. Use the VDA setup application (VDAWorkstationSetup_7.11) to uninstall Citrix VDA.
+1. Run the Windows upgrade again.
+1. Reinstall Citrix VDA.
+
+**Workaround 2**
+
+If you cannot uninstall Citrix VDA, follow these steps to work around this problem:  
+
+1. In Registry Editor, go to the following subkey:
+   ```
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}\CtxMcsWbc
+   ```
+1. Change the value of the **Start** entry from **0** to **4**. This change disables the Citrix MCS cache service.
+1. Go to the following subkey:
+   ```
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}
+   ```
+1. Delete the **CtxMcsWbc** entry.
+1. Restart the computer, and then try the upgrade again.
+
+> **Third-party information disclaimer**  
+> The third-party products that this article discusses are manufactured by companies that are independent of Microsoft. Microsoft makes no warranty, implied or otherwise, about the performance or reliability of these products.
+
 </table>
 </td>
 </tr>
@@ -251,7 +290,7 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 
 <h2 id="0x800xxxxx">0x800xxxxx</h2>
 
-<br>Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
+Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
 
 <br>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:<br>
 
