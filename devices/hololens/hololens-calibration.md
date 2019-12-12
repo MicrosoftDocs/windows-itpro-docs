@@ -32,6 +32,8 @@ HoloLens 2 prompts a user to calibrate the device under the following circumstan
 - The user is using the device for the first time
 - The user previously opted out of the calibration process
 - The calibration process did not succeed the last time the user used the device
+- The user has deleted their calibration profiles
+- The visor is raised and the lowered and any of the above circumstances apply (this may be disabled in **Settings > System > Calibration**.)
 
 ![Calibration prompt](./images/07-et-adjust-for-your-eyes.png)
 
