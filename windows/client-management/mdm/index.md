@@ -10,7 +10,6 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
-ms.date: 01/25/2019
 ---
 
 # Mobile device management
