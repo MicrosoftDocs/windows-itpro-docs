@@ -50,8 +50,6 @@ For more details about the MDM policies defined in the MDM security baseline and
 
 For information about the MDM policies defined in the Intune security baseline public preview, see [Windows security baseline settings for Intune](https://docs.microsoft.com/intune/security-baseline-settings-windows)
 
-
-<span id="mmat" />
 ## Learn about migrating to MDM
 
 When an organization wants to move to MDM to manage devices, they should prepare by analyzing their current Group Policy settings to see what they need to transition to MDM management. Microsoft created the [MDM Migration Analysis Tool](https://aka.ms/mmat/) (MMAT) to help. MMAT determines which Group Policies have been set for a target user or computer and then generates a report that lists the level of support for each policy settings in MDM equivalents. For more information, see [MMAT Instructions](https://github.com/WindowsDeviceManagement/MMAT/blob/master/MDM%20Migration%20Analysis%20Tool%20Instructions.pdf).
