@@ -25,9 +25,10 @@ ms.topic: article
 
 ## Windows Autopilot update history
 
-Check back here soon for a link to the latest update.
+The following [Windows Autopilot updates](autopilot-update.md) are available. **Note**: Updates are automatically downloaded and applied during the Windows Autopilot deployment process. 
 
-See [Windows Autopilot update](autopilot-update.md) for more information.
+[KB4532441](https://support.microsoft.com/help/4532441/cumulative-update-for-autopilot-in-windows-10-versions-1903-1909
+): Cumulative update for Autopilot in Windows 10, versions 1903 and 1909: December 10, 2019.
 
 ## New in Windows 10, version 1903
 
