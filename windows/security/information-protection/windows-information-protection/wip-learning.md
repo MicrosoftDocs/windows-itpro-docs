@@ -9,8 +9,8 @@ ms.mktglfcycl:
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: LauraWi
-ms.author: laurawi
+author: cabailey
+ms.author: cabailey
 manager: laurawi
 audience: ITPro
 ms.collection: M365-security-compliance
