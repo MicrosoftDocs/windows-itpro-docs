@@ -31,9 +31,8 @@ Autopilot is the recommended deployment option for Surface devices including Sur
 Support for broad deployments of Surface devices using Windows Autopilot, including enrollment performed by Surface partners at the time of purchase, requires devices manufactured with or otherwise installed with Windows 10 Version 1709 (Fall Creators Update) or later. These versions support a 4000-byte (4k) hash value to uniquely identify devices for Windows Autopilot that is necessary for deployments at scale.  All new Surface devices including Surface Pro 7, Surface Pro X, and Surface Laptop 3 ship with Windows 10 Version 1903 or above.
 
 ## Surface partners enabled for Windows Autopilot
-Enrolling Surface devices in Windows Autopilot at the time of purchase is a capability provided by select Surface partners that are enabled with the capability to identify individual Surface devices during the purchase process and perform enrollment on an organization’s behalf. Devices enrolled by a Surface partner at time of purchase can be shipped directly to users and configured entirely through the zero-touch process of Windows Autopilot, Azure Active Directory, and Mobile Device Management.
-
-When you purchase Surface devices from a Surface partner enabled for Windows Autopilot, your new devices can be enrolled in your Windows Autopilot deployment for you by the partner. Surface partners enabled for Windows Autopilot include: 
+Enrolling Surface devices in Windows Autopilot at the time of purchase is performed by select Surface partners that enroll devices on an organization’s behalf. Devices can then be shipped directly to users and configured entirely through the zero-touch process of Windows Autopilot, Azure Active Directory, and Mobile Device Management.
+Surface partners enabled for Windows Autopilot include:
 
 - [ALSO](https://www.also.com/ec/cms5/de_1010/1010_anbieter/microsoft/windows-autopilot/index.jsp) 
 - [Atea](https://www.atea.com/)
