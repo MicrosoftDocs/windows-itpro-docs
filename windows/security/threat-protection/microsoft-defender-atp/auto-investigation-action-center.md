@@ -29,9 +29,6 @@ The action center consists of two main tabs:
 	- All commands ran and remediation actions applied in Live Response with ability to undo actions that support this capability.
 	- Remediation actions applied by Windows Defender AV with ability to undo actions that support this capability.
 
-
-
-
 Use the Customize columns drop-down menu to select columns that you'd like to show or hide. 
 
 From this view, you can also download the entire list in CSV format using the **Export** feature, specify the number of items to show per page, and navigate between pages.

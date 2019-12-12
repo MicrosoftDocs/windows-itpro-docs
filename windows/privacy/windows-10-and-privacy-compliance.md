@@ -19,11 +19,9 @@ ms.date: 05/21/2019
 # Windows 10 & Privacy Compliance:<br />A Guide for IT and Compliance Professionals
 
 Applies to:
-- Windows 10, version 1903
-- Windows 10, version 1809
+- Windows 10, version 1809 and newer
 - Windows 10 Team Edition, version 1703 for Surface Hub
-- Windows Server 2019
-- Windows Server 2016
+- Windows Server 2016 and newer
 - Windows Analytics
 
 For more information about the GDPR, see:

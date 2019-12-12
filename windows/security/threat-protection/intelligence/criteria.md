@@ -152,9 +152,7 @@ Microsoft maintains a worldwide network of analysts and intelligence systems whe
 
 ## Potentially unwanted application (PUA)
 
-Our PUA protection aims to safeguard user productivity and ensure enjoyable Windows experiences. This optional protection, available to enterprises, helps deliver more productive, performant, and delightful Windows experiences.
-
-As an individual, you can also block downloads from PUA in the new Chromium-based Edge browser by going to **Settings** > **Privacy and services** and turning on **Block potentially unwanted apps**.
+Our PUA protection aims to safeguard user productivity and ensure enjoyable Windows experiences. This protection helps deliver more productive, performant, and delightful Windows experiences. For instruction on how to enable PUA protection in Chromium-based Microsoft Edge and Windows Defender Antivirus, see [Detect and block potentially unwanted applications](../windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md).
 
 *PUAs are not considered malware.*
 
@@ -173,3 +171,4 @@ Microsoft uses specific categories and the category definitions to classify soft
 * **Evasion software:** Software that actively tries to evade detection by security products, including software that behaves differently in the presence of security products.
 
 * **Poor industry reputation:** Software that trusted security providers detect with their security products. The security industry is dedicated to protecting customers and improving their experiences. Microsoft and other organizations in the security industry continuously exchange knowledge about files we have analyzed to provide users with the best possible protection.
+

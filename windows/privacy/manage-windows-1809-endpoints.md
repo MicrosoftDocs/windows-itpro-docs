@@ -15,11 +15,11 @@ ms.topic: article
 ms.date: 6/26/2018
 ms.reviewer: 
 ---
-# Manage connection endpoints for Windows 10, version 1809
+# Manage connection endpoints for Windows 10 Enterprise, version 1809
 
 **Applies to**
 
-- Windows 10, version 1809
+- Windows 10 Enterprise, version 1809
 
 Some Windows components, app, and related services transfer data to Microsoft network endpoints. Some examples include:
 

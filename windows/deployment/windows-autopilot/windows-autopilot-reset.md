@@ -9,7 +9,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -31,7 +32,9 @@ The Windows Autopilot Reset process automatically retains information from the e
 -   Azure Active Directory device membership and MDM enrollment information.
 
 Windows Autopilot Reset will block the user from accessing the desktop until this information is restored, including re-applying any provisioning packages.  For devices enrolled in an MDM service, Windows Autopilot Reset will also block until an MDM sync is completed.  
-
+When Autopilot reset is used on a device, the device's primary user will be removed. The next user who signs in after the reset will be set as the primary user.
+ 
+ 
 >[!NOTE]
 >The Autopilot Reset does not support Hybrid Azure AD joined devices.
 

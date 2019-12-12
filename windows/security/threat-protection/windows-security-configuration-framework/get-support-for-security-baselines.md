@@ -1,5 +1,5 @@
 ---
-title: Get support
+title: Get support for Windows security baselines
 description: This article, and the articles it links to, answers frequently asked question on how to get support for Windows baselines, the Security Compliance Toolkit (SCT), and related topics in your organization
 keywords: virtualization, security, malware
 ms.prod: w10

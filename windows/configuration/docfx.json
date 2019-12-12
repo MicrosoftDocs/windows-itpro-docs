@@ -42,7 +42,8 @@
           "depot_name": "MSDN.win-configuration",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "titleSuffix": "Configure Windows"
     },
     "fileMetadata": {},
     "template": [],

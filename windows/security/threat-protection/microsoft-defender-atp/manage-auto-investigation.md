@@ -18,7 +18,7 @@ ms.topic: conceptual
 ---
 
 # Learn about the automated investigations dashboard
-By default, the Automated investigations list displays investigations initiated in the last week. You can also choose to select other time ranges from the drop-down menu or specify a custom range. 
+By default, the automated investigations list displays investigations initiated in the last week. You can also choose to select other time ranges from the drop-down menu or specify a custom range. 
 
 >[!NOTE]
 >If your organization has implemented role-based access to manage portal access, only authorized users or user groups who have permission to view the machine or machine group will be able to view the entire investigation. 
@@ -31,14 +31,14 @@ From this view, you can also download the entire list in CSV format using the **
 
  
 **Filters**</br>
-You can use the following operations to customize the list of Automated investigations displayed:
+You can use the following operations to customize the list of automated investigations displayed:
 
 
 **Triggering alert**</br>
-The alert the initiated the Automated investigation.
+The alert the initiated the automated investigation.
 
 **Status**</br>
-An Automated investigation can be in one of the following status:
+An automated investigation can be in one of the following status:
 
 Status | Description
 :---|:---
@@ -57,26 +57,26 @@ Status | Description
 
 
 **Detection source**</br>
-Source of the alert that initiated the Automated investigation. 
+Source of the alert that initiated the automated investigation. 
 
 **Threat**</br>
-The category of threat detected during the Automated investigation.
+The category of threat detected during the automated investigation.
 
 
 **Tags**</br>
-Filter using manually added tags that capture the context of an Automated investigation.
+Filter using manually added tags that capture the context of an automated investigation.
 
 **Machines**</br>
-You can filter the Automated investigations list to zone in a specific machine to see other investigations related to the machine.
+You can filter the automated investigations list to zone in a specific machine to see other investigations related to the machine.
 
 **Machine groups**</br>
 Apply this filter to see specific machine groups that you might have created.
 
 **Comments**</br>
-Select between filtering the list between Automated investigations that have comments and those that don't.
+Select between filtering the list between automated investigations that have comments and those that don't.
 
-## Analyze Automated investigations 
-You can view the details of an Automated investigation to see information such as the investigation graph, alerts associated with the investigation, the machine that was investigated, and other information.
+## Analyze automated investigations 
+You can view the details of an automated investigation to see information such as the investigation graph, alerts associated with the investigation, the machine that was investigated, and other information.
 
 In this view, you'll see the name of the investigation, when it started and ended. 
 
@@ -118,14 +118,14 @@ You'll also have access to the following sections that help you see details of t
 In any of the sections, you can customize columns to further expand to limit the details you see in a section.
 
 ### Investigation graph
-The investigation graph provides a graphical representation of an Automated investigation. All investigation related information is simplified and arranged in specific sections. Clicking on any of the icons brings you the relevant section where you can view more information.
+The investigation graph provides a graphical representation of an automated investigation. All investigation related information is simplified and arranged in specific sections. Clicking on any of the icons brings you the relevant section where you can view more information.
 
 ### Alerts
-Shows details such as a short description of the alert that initiated the Automated investigation, severity, category, the machine associated with the alert, user, time in queue, status, investigation state, and who the investigation is assigned to. 
+Shows details such as a short description of the alert that initiated the automated investigation, severity, category, the machine associated with the alert, user, time in queue, status, investigation state, and who the investigation is assigned to. 
 
-Additional alerts seen on a machine can be added to an Automated investigation as long as the investigation is ongoing. 
+Additional alerts seen on a machine can be added to an automated investigation as long as the investigation is ongoing. 
 
-Selecting an alert using the check box brings up the alerts details pane where you have the option of opening the alert page, manage the alert by changing its status, see alert details, Automated investigation details, related machine, logged-on users, and comments and history. 
+Selecting an alert using the check box brings up the alerts details pane where you have the option of opening the alert page, manage the alert by changing its status, see alert details, automated investigation details, related machine, logged-on users, and comments and history. 
 
 Clicking on an alert title brings you the alert page.
 
@@ -158,11 +158,11 @@ This tab is only displayed when an investigation is complete and shows all pendi
 
 
 ## Pending actions
-If there are pending actions on an Automated investigation, you'll see a pop up similar to the following image. 
+If there are pending actions on an automated investigation, you'll see a pop up similar to the following image. 
 
 ![Image of pending actions](images/pending-actions.png)
 
-When you click on the pending actions link, you'll be taken to the Action center. You can also navigate to the page from the navigation page by going to **Automated investigation** > **Action center**. For more information, see [Action center](auto-investigation-action-center.md).
+When you click on the pending actions link, you'll be taken to the Action center. You can also navigate to the page from the navigation page by going to **automated investigation** > **Action center**. For more information, see [Action center](auto-investigation-action-center.md).
 
  
 ## Related topic

@@ -124,6 +124,19 @@ If you are an organization using [Microsoft Defender ATP E5](https://www.microso
 
 Your regular group policy doesn’t apply to Tamper Protection, and changes to Windows Defender Antivirus settings will be ignored when Tamper Protection is on.
 
+
+>[!NOTE]
+>A small delay in Group Policy (GPO) processing may occur if Group Policy settings include values that control Windows Defender Antivirus features protected by Tamper Protection. 
+To avoid any potential delays, it is recommended to remove settings that control Windows Defender Antivirus related behavior from GPO and simply allow Tamper Protection to protect Windows Defender Antivirus settings. <br><br>
+> Sample Windows Defender Antivirus settings:<br>
+> Turn off Windows Defender Antivirus <br>
+> Computer Configuration\Administrative Templates\Windows Components\Windows Defender\
+Value DisableAntiSpyware = 0 <br><br>
+>Turn off real-time protection<br>
+Computer Configuration\Administrative Templates\Windows Components\Windows Defender Antivirus\Real-time Protection\
+Value DisableRealtimeMonitoring = 0
+
+
 ### For Microsoft Defender ATP E5, is configuring Tamper Protection in Intune targeted to the entire organization only?
 
 Configuring Tamper Protection in Intune can be targeted to your entire organization as well as to devices and user groups with Intune.

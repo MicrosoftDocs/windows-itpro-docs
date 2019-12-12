@@ -4,8 +4,8 @@
 ### [What is Microsoft Defender Advanced Threat Protection?](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
 ### [Overview of Microsoft Defender ATP capabilities](microsoft-defender-atp/overview.md)
 ### [Threat & Vulnerability Management]()
-#### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 #### [Next-generation capabilities](microsoft-defender-atp/next-gen-threat-and-vuln-mgt.md)
+#### [Supported operating systems and platforms](microsoft-defender-atp/tvm-supported-os.md)
 #### [What's in the dashboard and what it means for my organization](microsoft-defender-atp/tvm-dashboard-insights.md)
 #### [Exposure score](microsoft-defender-atp/tvm-exposure-score.md)
 #### [Configuration score](microsoft-defender-atp/configuration-score.md)
@@ -448,13 +448,6 @@
 #### [Common Vulnerabilities and Exposures (CVE) to KB map]()
 ##### [Get CVE-KB map](microsoft-defender-atp/get-cvekbmap-collection.md)
 
-#### [API for custom alerts (Deprecated)]()
-##### [Use the threat intelligence API to create custom alerts (Deprecated)](microsoft-defender-atp/use-custom-ti.md)
-##### [Create custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/custom-ti-api.md)
-##### [PowerShell code examples (Deprecated)](microsoft-defender-atp/powershell-example-code.md)
-##### [Python code examples (Deprecated)](microsoft-defender-atp/python-example-code.md)
-##### [Experiment with custom threat intelligence alerts (Deprecated)](microsoft-defender-atp/experiment-custom-ti.md)
-##### [Troubleshoot custom threat intelligence issues (Deprecated)](microsoft-defender-atp/troubleshoot-custom-ti.md)
 
 #### [Pull detections to your SIEM tools]()
 ##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
