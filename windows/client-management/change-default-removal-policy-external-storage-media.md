@@ -43,8 +43,8 @@ To change the policy for an external storage device:
 4. Right-click **Start**, then select **Disk Management**.
 5. In the lower section of the Disk Management window, right-click the label of the device, and then select **Properties**.
   
-   ![In Disk Management, right-click the device and click Properties.](./change-def-rem-policy-1.png)
+   ![In Disk Management, right-click the device and click Properties.](./images/change-def-rem-policy-1.png)
   
 6. Select **Policies**, and then select the policy you want to use.
   
-   ![Policy options for disk management](./change-def-rem-policy-2.png)
+   ![Policy options for disk management](./images/change-def-rem-policy-2.png)
