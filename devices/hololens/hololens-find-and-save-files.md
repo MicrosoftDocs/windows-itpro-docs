@@ -50,8 +50,8 @@ To see your HoloLens files in File Explorer on your PC:
 1. Enable Developer Mode and Device Portal on your HoloLens. (See note above if not enabled.)
 
 1. Navigate to the Device Portal page on your PC.
-    a. To connect to a HoloLens connected to your PC type in 127.0.0.1:10080/ in your browser.
-    b. To connect to a HoloLens wirelessly instead navigate to your IP address. 
+    1. To connect to a HoloLens connected to your PC type in 127.0.0.1:10080/ in your browser.
+    1. To connect to a HoloLens wirelessly instead navigate to your IP address. 
   
 >[!TIP]
 >You may need to install a certificate, OR you may see more details and navigate to the website anyways. (Path per web broswer will differ.)
