@@ -26,6 +26,19 @@ ms.topic: reference
 Windows 10 includes the following new policies for management. [Download the complete set of Administrative Template (.admx) files for Windows 10](https://www.microsoft.com/download/100591).
 
 
+## New Group Policy settings in Windows 10, version 1909
+
+The following Group Policy settings were added in Windows 10, version 1909
+
+**Start Menu and Taskbar**
+
+- Start Menu and Taskbar\Notifications\Turn off notifications network usage
+- Start Menu and Taskbar\Disable content menus in the Start Menu
+- Start Menu and Taskbar\Do not keep history of recently opened documents
+- Start Menu and Taskbar\Pin Apps to Start when installed
+- Start Menu and Taskbar\Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands
+- Start Menu and Taskbar\Start Layout
+
 ## New Group Policy settings in Windows 10, version 1809
 
 The following Group Policy settings were added in Windows 10, version 1809:
