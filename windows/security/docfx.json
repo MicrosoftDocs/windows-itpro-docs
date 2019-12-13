@@ -48,7 +48,11 @@
       },
       "titleSuffix": "Microsoft 365 Security"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "titleSuffix":{
+        "threat-protection/**/*.md": "Windows security"
+      }
+    },
     "template": [],
     "dest": "security",
     "markdownEngineName": "markdig"
