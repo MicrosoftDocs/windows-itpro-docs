@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 11/13/2018
+ms.date: 12/13/2019
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
@@ -53,7 +53,7 @@ To enable and configure always-on protection:
 4. Configure the Windows Defender Antivirus real-time protection policy settings. To do this:  
     1. In the **Windows Defender Antivirus** details pane, double-click **Real-time Protection**. Or, from the **Windows Defender Antivirus** tree on left pane, click **Real-time Protection**.
     ![Windows Defender Antivirus Real-time Protection options](images/gpedit-real-time-protection.png)
-    2. In the **Real-time Protection** details pane, double-click the policy setting as specified in the following table:  
+    2. In the **Real-time Protection** details pane on right, double-click the policy setting as specified in the following table:  
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|
@@ -72,7 +72,7 @@ To enable and configure always-on protection:
     1. From the **Windows Defender Antivirus** tree on left pane, click **Scan**.
     ![Windows Defender Antivirus Scan options](images/gpedit-windows-defender-antivirus-scan.png)
 
-    2. In the **Scan** details pane, double-click the policy setting as specified in the following table:
+    2. In the **Scan** details pane on right, double-click the policy setting as specified in the following table:
 
     | Setting | Description | Default setting |
     |-----------------------------|------------------------|-------------------------------|    
