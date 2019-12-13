@@ -45,7 +45,7 @@ To see your HoloLens files in File Explorer on your PC:
 ## View HoloLens files on Windows Device Portal
 
 >[!NOTE]
->To use Device Portal you must enable [Developer Mode](https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal).
+>To use Device Portal you must enable [Developer Mode](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal).
 
 1. Enable Developer Mode and Device Portal on your HoloLens. (See note above if not enabled.)
 
@@ -56,7 +56,7 @@ To see your HoloLens files in File Explorer on your PC:
 >[!TIP]
 >You may need to install a certificate, OR you may see more details and navigate to the website anyways. (Path per web broswer will differ.)
 
-1. Once succesfully connected, on the left side of the windw you can navigate to the [File Explorer](https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-windows-device-portal#file-explorer) workspace.
+1. Once succesfully connected, on the left side of the windw you can navigate to the [File Explorer](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#file-explorer) workspace.
 
 ## Sync to the cloud
 
