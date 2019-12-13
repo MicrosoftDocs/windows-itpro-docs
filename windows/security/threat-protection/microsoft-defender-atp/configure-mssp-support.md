@@ -29,7 +29,7 @@ ms.date: 09/03/2018
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mssp-support-abovefoldlink)
  
 
-[!include[Prerelease information](prerelease.md)]
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 You'll need to take the following configuration steps to enable the managed security service provider (MSSP) integration.
 

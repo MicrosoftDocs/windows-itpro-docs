@@ -41,7 +41,8 @@
           "depot_name": "Win.microsoft-edge",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "titleSuffix": "Edge"
     },
     "externalReference": [],
     "template": "op.html",

@@ -51,7 +51,8 @@
         "jborsecnik",
         "tiburd",
         "garycentric"
-      ]
+      ],
+      "titleSuffix": "Microsoft Desktop Optimization Pack"
     },
     "externalReference": [],
     "template": "op.html",

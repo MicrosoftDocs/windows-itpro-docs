@@ -25,9 +25,9 @@ ms.topic: article
 
 ## Windows Autopilot update history
 
-Check back here soon for a link to the latest update.
+The following [Windows Autopilot updates](autopilot-update.md) are available. **Note**: Updates are automatically downloaded and applied during the Windows Autopilot deployment process. 
 
-See [Windows Autopilot update](autopilot-update.md) for more information.
+No updates are available yet. Check back here later for more information.
 
 ## New in Windows 10, version 1903
 
