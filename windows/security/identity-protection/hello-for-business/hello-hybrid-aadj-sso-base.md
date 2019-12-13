@@ -58,6 +58,8 @@ To resolve this issue, the CRL distribution point must be a location that is acc
 
 If your CRL distribution point does not list an HTTP distribution point, then you need to reconfigure the issuing certificate authority to include an HTTP CRL distribution point, preferably first in the list of distribution points.
 
+Note:  If your CA has both Base and Delta CRL published. please make sure. you have included publishing the delta CRL in the http path. Include web server to fetch delta crl by allowing doubleescaping in the (IIS) web server.
+
 ### Windows Server 2016 Domain Controllers
 If you are interested in configuring your environment to use the Windows Hello for Business key rather than a certificate, then your environment must have an adequate number of Windows Server 2016 domain controllers.  Only Windows Server 2016 domain controllers are capable of authenticating user with a Windows Hello for Business key.  What do we mean by adequate?  We are glad you asked.  Read [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
@@ -150,6 +152,7 @@ These procedures configure NTFS and share permissions on the web server to allow
 8. In the **Permissions for cdp$** dialog box, select the certificate authority from the **Group or user names list**. In the **Permissions for** section, select **Allow** for **Full control**. Click **OK**.
 ![CDP Share Permissions](images/aadj/cdp-share-permissions.png)
 9. In the **Advanced Sharing** dialog box, click **OK**.
+
 
 #### Disable Caching 
 1. On the web server, open **Windows Explorer** and navigate to the **cdp** folder you created in step 3 of [Configure the Web Server](#configure-the-web-server).
