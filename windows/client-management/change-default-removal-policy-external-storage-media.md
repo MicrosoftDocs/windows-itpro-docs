@@ -19,7 +19,7 @@ manager: kaushika
 
 Windows defines two main policies, **Quick removal** and **Better performance**, that control how the system interacts with external storage devices such as USB thumb drives or Thunderbolt-enabled external drives. Beginning in Windows 10 version 1809, the default policy is **Quick removal**.
 
-In earlier versions of Windows the default policy was **Better performance**.
+In earlier versions of Windows, the default policy was **Better performance**.
 
 You can change the policy setting for each external device, and the policy that you set remains in effect if you disconnect the device and then connect it again to the same computer port.
 
