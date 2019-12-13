@@ -68,6 +68,12 @@ You configure Windows 10 to use the Microsoft PIN Reset service using the comput
 
 To configure PIN reset on Windows devices you manage, use an [Intune Windows 10 custom device policy](https://docs.microsoft.com/intune/custom-settings-windows-10) to enable the feature. Configure the policy using the following Windows policy configuration service provider (CSP):
 
+#### Use an existing WHFB Device configuration profile using Microsoft Intune
+
+If you already have got an existing configuration for Windows Hello for Business, you can enable the feature by enabling the Enable PIN recovery policy in your configuration.
+
+If you do not have an existing configuration, you can create one following the steps below.
+
 #### Create a PIN Reset Device configuration profile using Microsoft Intune
 
 1. Sign-in to [Azure Portal](https://portal.azure.com) using a tenant administrator account.
