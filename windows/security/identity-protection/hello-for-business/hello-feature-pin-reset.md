@@ -77,7 +77,7 @@ If you do not have an existing configuration, you can create one following the s
 #### Create a PIN Reset Device configuration profile using Microsoft Intune
 
 1. Sign-in to [Azure Portal](https://portal.azure.com) using a tenant administrator account.
-2. Navigate to the Microsoft Endpoint Manager admin center. Click **Devices**. Click **Profiles**. Click **Configuration profiles**. Click **Create profile**.
+2. Navigate to the Microsoft Endpoint Manager admin center. Click **Devices > Profiles > Configuration profiles > Create profile**.
 3. Type **Use PIN Recovery** in the **Name** field. Select **Windows 10 and later** from the **Platform** list.  Select **Identity protection** from the **Profile type** list.
 4. Click **Enable** on the "Configure Windows Hello for Business" option. 
 5. Click **Enable** on the "Enable PIN recovery" option
