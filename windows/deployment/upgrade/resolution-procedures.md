@@ -18,38 +18,38 @@ ms.topic: article
 # Resolution procedures
 
 **Applies to**
--   Windows 10
+- Windows 10
 
->[!NOTE]
->This is a 200 level topic (moderate).<br>
->See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
-
+> [!NOTE]  
+> This is a 200 level topic (moderate).  
+> See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
 ## 0xC1900101
 
-A frequently observed result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the downlevel phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as:<br>
+A frequently observed result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the downlevel phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as:  
 
 - The minidump file: $Windows.~bt\Sources\Rollback\setupmem.dmp,
 - Event logs: $Windows.~bt\Sources\Rollback\*.evtx
 - The device install log: $Windows.~bt\Sources\Rollback\setupapi\setupapi.dev.log
 
-The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/kb/929135) before initiating the upgrade process.
+The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  
 
-<br>See the following general troubleshooting procedures associated with a result code of 0xC1900101:
+To resolve a rollback that was caused by driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/kb/929135) before initiating the upgrade process.  
 
+See the following general troubleshooting procedures associated with a result code of 0xC1900101:<br /><br />
 
 <table border="1" cellspacing="0" cellpadding="0">
 
 <tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x20004</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x20004
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows Setup encountered an error during the SAFE_OS with the INSTALL_RECOVERY_ENVIRONMENT operation
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows Setup encountered an error during the SAFE_OS with the INSTALL_RECOVERY_ENVIRONMENT operation.
 <br>This is generally caused by out-of-date drivers.
 </table>
 </td>
@@ -69,11 +69,11 @@ The device install log is particularly helpful if rollback occurs during the sys
 <tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x2000c</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x2000c
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows Setup encountered an unspecified error during Wim apply in the WinPE phase.
 <br>This is generally caused by out-of-date drivers.
@@ -91,16 +91,15 @@ The device install log is particularly helpful if rollback occurs during the sys
 </td>
 </tr>
 
-
 <tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x20017
 
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A driver has caused an illegal operation.
 <br>Windows was not able to migrate the driver, resulting in a rollback of the operating system.
@@ -113,9 +112,9 @@ The device install log is particularly helpful if rollback occurs during the sys
 <table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-Ensure that all that drivers are updated.<br>
-Open the Setuperr.log and Setupact.log files in the %windir%\Panther directory, and then locate the problem drivers.
-<br>For more information, see <a href="https://technet.microsoft.com/library/ee851579.aspx" data-raw-source="[Understanding Failures and Log Files](https://technet.microsoft.com/library/ee851579.aspx)">Understanding Failures and Log Files</a>.
+Ensure that all that drivers are updated.  
+<br />Open the Setuperr.log and Setupact.log files in the %windir%\Panther directory, and then locate the problem drivers.  
+<br />For more information, see <a href="https://support.microsoft.com/help/927521/windows-vista-windows-7-windows-server-2008-r2-windows-8-1-and-windows">Windows Vista, Windows 7, Windows Server 2008 R2, Windows 8.1, and Windows 10 setup log file locations</a>.
 <br>Update or uninstall the problem drivers.
 </table>
 </td>
@@ -124,11 +123,11 @@ Open the Setuperr.log and Setupact.log files in the %windir%\Panther directory, 
 <tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x30018</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x30018
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A device driver has stopped responding to setup.exe during the upgrade process.
 </table>
@@ -149,11 +148,11 @@ Disconnect all peripheral devices that are connected to the system, except for t
 <tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x3000D</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x3000D
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Installation failed during the FIRST_BOOT phase while attempting the MIGRATE_DATA operation.
 <br>This can occur due to a problem with a display driver.
@@ -175,16 +174,15 @@ Disconnect all peripheral devices that are connected to the system, except for t
 <tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x4000D</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x4000D
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A rollback occurred due to a driver configuration issue.
 <br>Installation failed during the second boot phase while attempting the MIGRATE_DATA operation.
-
-<br>This can occur due to incompatible drivers.
+<br>This can occur because of incompatible drivers.
 
 </table>
 </td>
@@ -194,40 +192,39 @@ Disconnect all peripheral devices that are connected to the system, except for t
 <table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-<br>Check supplemental rollback logs for a setupmem.dmp file, or event logs for any unexpected reboots or errors.
+Check supplemental rollback logs for a setupmem.dmp file, or event logs for any unexpected reboots or errors.
 <br>Review the rollback log and determine the stop code.
 <br>The rollback log is located in the <strong>C:$Windows.~BT\Sources\Panther</strong> folder.  An example analysis is shown below. This example is not representative of all cases:
-<br>Info SP     Crash 0x0000007E detected
-<br>Info SP       Module name           :
-<br>Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005
-<br>Info SP       Bugcheck parameter 2  : 0xFFFFF8015BC0036A
-<br>Info SP       Bugcheck parameter 3  : 0xFFFFD000E5D23728
-<br>Info SP       Bugcheck parameter 4  : 0xFFFFD000E5D22F40
-<br>Info SP     Cannot recover the system.
-<br>Info SP     Rollback: Showing splash window with restoring text: Restoring your previous version of Windows.
+<pre>
+Info SP     Crash 0x0000007E detected
+Info SP       Module name           :
+Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005
+Info SP       Bugcheck parameter 2  : 0xFFFFF8015BC0036A
+Info SP       Bugcheck parameter 3  : 0xFFFFD000E5D23728
+Info SP       Bugcheck parameter 4  : 0xFFFFD000E5D22F40
+Info SP     Cannot recover the system.
+Info SP     Rollback: Showing splash window with restoring text: Restoring your previous version of Windows.</pre>
 
-
-<br>Typically, there is a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<br>
+Typically, there is a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<br>
 
 1. Make sure you have enough disk space.<br>
 2. If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.<br>
 3. Try changing video adapters.<br>
 4. Check with your hardware vendor for any BIOS updates.<br>
 5. Disable BIOS memory options such as caching or shadowing.
-</p>
+
 </table>
 </td>
 </tr>
 
-
 <tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x40017</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x40017
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows 10 upgrade failed after the second reboot.
 <br>This is usually caused by a faulty driver. For example: antivirus filter drivers or encryption drivers.
@@ -238,11 +235,10 @@ Disconnect all peripheral devices that are connected to the system, except for t
 
 <table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 <b>Mitigation</b>
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Clean boot into Windows, and then attempt the upgrade to Windows 10.  
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135).  
+Clean boot into Windows, and then attempt the upgrade to Windows 10. For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135).  
 
 Ensure that you select the option to "Download and install updates (recommended)."  
 
@@ -288,11 +284,11 @@ If you cannot uninstall Citrix VDA, follow these steps to work around this probl
 
 </table>
 
-<h2 id="0x800xxxxx">0x800xxxxx</h2>
+## 0x800xxxxx
 
-Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
+Result codes that start with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
 
-<br>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:<br>
+See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
 
 <br><table border="1" cellspacing="0" cellpadding="0">
 
@@ -301,15 +297,13 @@ Result codes starting with the digits 0x800 are also important to understand. Th
 <table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 80040005 - 0x20007
 
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 An unspecified error occurred with a driver during the SafeOS phase.
 
 </table>
@@ -332,17 +326,15 @@ This error has more than one possible cause. Attempt [quick fixes](quick-fixes.m
 <table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 0x80073BC3 - 0x20009<br>
 0x80070002 - 0x20009<br>
 0x80073B92 - 0x20009
 
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 The requested system device cannot be found, there is a sharing violation, or there are multiple devices matching the identification criteria.
 
 </table>
@@ -363,17 +355,15 @@ These errors occur during partition analysis and validation, and can be caused b
 <tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 800704B8 - 0x3001A
 
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 An extended error has occurred during the first boot phase.
 
 </table>
@@ -394,17 +384,15 @@ Disable or uninstall non-Microsoft antivirus applications, disconnect all unnece
 <tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 8007042B - 0x4000D
 
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 The installation failed during the second boot phase while attempting the MIGRATE_DATA operation.
 <br>This issue can occur due to file system, application, or driver issues.
 
@@ -426,17 +414,15 @@ The installation failed during the second boot phase while attempting the MIGRAT
 <tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 8007001F - 0x3000D
 
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 The installation failed in the FIRST_BOOT phase with an error during MIGRATE_DATA operation.
 
 </table>
@@ -452,7 +438,8 @@ The installation failed in the FIRST_BOOT phase with an error during MIGRATE_DAT
 
 This error can be due to a problem with user profiles. It can occur due to corrupt registry entries under **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList** or invalid files in the **\\Users** directory.
 
-Note: If a previous upgrade did not complete, invalid profiles might exist in the **Windows.old\\Users** directory.
+> [!NOTE]  
+> If a previous upgrade did not complete, invalid profiles might exist in the **Windows.old\\Users** directory.
 
 To repair this error, ensure that deleted accounts are not still present in the Windows registry and that files under the \\Users directory are valid. Delete the invalid files or user profiles that are causing this error. The specific files and profiles that are causing the error will be recorded in the Windows setup log files.
 
@@ -463,17 +450,15 @@ To repair this error, ensure that deleted accounts are not still present in the 
 <tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 8007001F - 0x4000D
 
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 General failure, a device attached to the system is not functioning.
 
 </table>
@@ -494,17 +479,15 @@ General failure, a device attached to the system is not functioning.
 <tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 8007042B - 0x4001E
 
 </table>
 
-<br><table cellspacing="0" cellpadding="0">
+<table cellspacing="0" cellpadding="0">
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
 The installation failed during the second boot phase while attempting the PRE_OOBE operation.
 
 </table>
@@ -527,12 +510,12 @@ This error has more than one possible cause. Attempt [quick fixes](quick-fixes.m
 
 ## Other result codes
 
-<table>
+<br /><table>
 
 <tr>
-<td BGCOLOR="#a0e4fa"><B>Error code</th>
-<td BGCOLOR="#a0e4fa"><B>Cause</th>
-<td BGCOLOR="#a0e4fa"><B>Mitigation</th>
+<td BGCOLOR="#a0e4fa"><b>Error code</b></th>
+<td BGCOLOR="#a0e4fa"><b>Cause</b></th>
+<td BGCOLOR="#a0e4fa"><b>Mitigation</b></th>
 </tr>
 
 <tr>
@@ -544,9 +527,8 @@ This error has more than one possible cause. Attempt [quick fixes](quick-fixes.m
 <tr>
 <td>0xC1900200</td>
 <td>Setup.exe has detected that the machine does not meet the minimum system requirements.</td>
-<td>Ensure the system you are trying to upgrade meets the minimum system requirements. <br>See <a href="https://www.microsoft.com/windows/windows-10-specifications" data-raw-source="[Windows 10 specifications](https://www.microsoft.com/windows/windows-10-specifications)">Windows 10 specifications</a>  for information.</td>
+<td>Ensure the system you are trying to upgrade meets the minimum system requirements. <br>See <a href="https://www.microsoft.com/windows/windows-10-specifications" data-raw-source="[Windows 10 specifications](https://www.microsoft.com/windows/windows-10-specifications)">Windows 10 specifications</a> for information.</td>
 </tr>
-
 
 <tr>
 <td>0x80090011</td>
@@ -573,13 +555,13 @@ This error has more than one possible cause. Attempt [quick fixes](quick-fixes.m
 <td>Attempt other methods of upgrading the operating system.<br>
 Download and run the media creation tool. See <a href="https://www.microsoft.com/software-download/windows10" data-raw-source="[Download windows 10](https://www.microsoft.com/software-download/windows10)">Download windows 10</a>.
 <br>Attempt to upgrade using .ISO or USB.<br>
-<strong>Note</strong>: Windows 10 Enterprise isn’t available in the media creation tool. For more information, go to the <a href="https://www.microsoft.com/licensing/servicecenter/default.aspx" data-raw-source="[Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx)">Volume Licensing Service Center</a>.
+<strong>Note</strong><br>Windows 10 Enterprise isn’t available in the media creation tool. For more information, go to the <a href="https://www.microsoft.com/licensing/servicecenter/default.aspx" data-raw-source="[Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx)">Volume Licensing Service Center</a>.
 </td>
 </tr>
 <tr>
 <td>0x80244018</td>
 <td>Your machine is connected through a proxy server.</td>
-<td>Make sure Automatically Detect Settings is selected in internet options. (Control Panel > Internet Options > Connections > LAN Settings).
+<td>Make sure Automatically Detect Settings is selected in internet options. (<b>Control Panel</b> > <b>Internet Options</b> > <b>Connections</b> > <b>LAN Settings</b>).
 </td>
 </tr>
 <tr>
@@ -607,34 +589,29 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 <td>0xC1900107</td>
 <td>A cleanup operation from a previous installation attempt is still pending and a system reboot is required in order to continue the upgrade.
 </td>
-<td>Reboot the device and run setup again. If restarting device does not resolve the issue, then use the Disk Cleanup utility and cleanup the temporary as well as the System files. For more information, see <a href="https://support.microsoft.com/instantanswers/8fef4121-711b-4be1-996f-99e02c7301c2/disk-cleanup-in-windows-10" data-raw-source="[Disk cleanup in Windows 10](https://support.microsoft.com/instantanswers/8fef4121-711b-4be1-996f-99e02c7301c2/disk-cleanup-in-windows-10)">Disk cleanup in Windows 10</a>.</td>
+<td>Restart the device and run setup again. If restarting the device does not resolve the issue, then use the Disk Cleanup utility and clean up the temporary files as well as the System files. For more information, see <a href="https://support.microsoft.com/instantanswers/8fef4121-711b-4be1-996f-99e02c7301c2/disk-cleanup-in-windows-10" data-raw-source="[Disk cleanup in Windows 10](https://support.microsoft.com/instantanswers/8fef4121-711b-4be1-996f-99e02c7301c2/disk-cleanup-in-windows-10)">Disk cleanup in Windows 10</a>.</td>
 </tr>
 <tr>
 <td>0xC1900209</td>
 <td>The user has chosen to cancel because the system does not pass the compatibility scan to install the update. Setup.exe will report this error when it can upgrade the machine with user data but cannot migrate installed applications.</td>
 <td>Incompatible software is blocking the upgrade process. Uninstall the application and try the upgrade again. See <a href="https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/" data-raw-source="[Windows 10 Pre-Upgrade Validation using SETUP.EXE](https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/)">Windows 10 Pre-Upgrade Validation using SETUP.EXE</a> for more information.
-
-<br>You can also download the [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526740) and install Application Compatibility Tools.
+<br>You can also download the <a href="https://go.microsoft.com/fwlink/p/?LinkId=526740">Windows Assessment and Deployment Kit (ADK) for Windows 10</a> and install Application Compatibility Tools.
 </td>
 </tr>
-
 
 <tr>
 <td>0x8007002 </td>
 <td>This error is specific to upgrades using System Center Configuration Manager 2012 R2 SP1 CU3 (5.00.8238.1403)</td>
 <td>Analyze the SMSTS.log and verify that the upgrade is failing on &quot;Apply Operating system&quot; Phase: Error 80072efe DownloadFileWithRanges() failed. 80072efe. ApplyOperatingSystem (0x0760)
-
 <br>The error 80072efe means that the connection with the server was terminated abnormally.
-
 <br>To resolve this issue, try the OS Deployment test on a client in same VLAN as the Configuration Manager server. Check the network configuration for random client-server connection issues happening on the remote VLAN.
 </td>
 </tr>
 
 <tr>
 <td>0x80240FFF </td>
-<td>Occurs when update synchronization fails. It can occur when you are using Windows Server Update Services on its own or when it is integrated with System Center Configuration Manager. If you enable update synchronization before you install <a href="https://support.microsoft.com/help/3095113/en-us">hotfix 3095113</a>, WSUS doesn&#39;t recognize the Upgrades classification and instead treats the upgrade like a regular update.</td>
-<td> You can prevent this by installing <a href="https://blogs.technet.com/b/wsus/archive/2015/12/04/important-update-for-wsus-4-0-kb-3095113.aspx">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following:
-
+<td>Occurs when update synchronization fails. It can occur when you are using Windows Server Update Services on its own or when it is integrated with System Center Configuration Manager. If you enable update synchronization before you install <a href="https://support.microsoft.com/help/3095113/">hotfix 3095113</a>, WSUS doesn&#39;t recognize the Upgrades classification and instead treats the upgrade like a regular update.</td>
+<td> You can prevent this by installing <a href="https://blogs.technet.microsoft.com/wsus/2015/12/03/important-update-for-wsus-4-0-kb-3095113/">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following:
 <ol>
 <li>Disable the Upgrades classification.</li>
 <li>Install hotfix 3095113.</li>
@@ -642,15 +619,14 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 <li>Enable the Upgrades classification.</li>
 <li>Perform a full synch.</li>
 </ol>
-<br>For detailed information on how to run these steps check out <a href="https://blogs.technet.com/b/wsus/archive/2016/01/30/quot-help-i-synched-upgrades-too-soon-quot.aspx">How to delete upgrades in WSUS</a>.</p>
+For detailed information on how to run these steps check out <a href="https://blogs.technet.microsoft.com/wsus/2016/01/29/how-to-delete-upgrades-in-wsus/">How to delete upgrades in WSUS</a>.</p>
 </td>
 </tr>
 
 <tr>
 <td>0x8007007E</td>
-<td>Occurs when update synchronization fails because you do not have <a href="https://support.microsoft.com/help/3095113/en-us">hotfix 3095113</a> installed before you enable update synchronization. Specifically, the CopyToCache operation fails on clients that have already downloaded the upgrade because Windows Server Update Services has bad metadata related to the upgrade. It can occur when you are using standalone Windows Server Update Services or when WSUS is integrated with System Center Configuration Manager.</td>
+<td>Occurs when update synchronization fails because you do not have <a href="https://support.microsoft.com/help/3095113/">hotfix 3095113</a> installed before you enable update synchronization. Specifically, the CopyToCache operation fails on clients that have already downloaded the upgrade because Windows Server Update Services has bad metadata related to the upgrade. It can occur when you are using standalone Windows Server Update Services or when WSUS is integrated with System Center Configuration Manager.</td>
 <td> Use the following steps to repair Windows Server Update Services. You must run these steps on each WSUS server that synched metadata before you installed the hotfix.
-
 <ol>
 <li>Stop the Windows Update service. Sign in as a user with administrative privileges, and then do the following:
 <ol>
@@ -696,9 +672,9 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 
 <td>The computer doesn’t meet the minimum requirements to download or upgrade to Windows 10.
 
-<td>See <a href="https://www.microsoft.com/windows/windows-10-specifications" data-raw-source="[Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)">Windows 10 Specifications</a> and verify the computer meets minimum requirements.
+See <a href="https://www.microsoft.com/windows/windows-10-specifications" data-raw-source="[Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)">Windows 10 Specifications</a> and verify the computer meets minimum requirements.
 
-<br>Review logs for [compatibility information](https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/).</td></tr>
+Review logs for [compatibility information](https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/).</td></tr>
 <tr><td>0x80070004 - 0x3000D
 <td>This is a problem with data migration during the first boot phase. There are multiple possible causes.
 
@@ -719,7 +695,8 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 <td>These errors indicate the computer does not have enough free space available to install the upgrade.
 <td>To upgrade a computer to Windows 10, it requires 16 GB of free hard drive space for a 32-bit OS, and 20 GB for a 64-bit OS. If there is not enough space, attempt to <a href="https://support.microsoft.com/help/17421/windows-free-up-drive-space" data-raw-source="[free up drive space](https://support.microsoft.com/help/17421/windows-free-up-drive-space)">free up drive space</a> before proceeding with the upgrade.
 
-<br>Note: If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will back up the previous version of Windows to a USB external drive. The external drive must be at least 8GB (16GB is recommended). The external drive should be formatted using NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations. USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
+<b>Note</b> 
+If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will back up the previous version of Windows to a USB external drive. The external drive must be at least 8GB (16GB is recommended). The external drive should be formatted using NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations. USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
 </td></tr>
 
 </table>
