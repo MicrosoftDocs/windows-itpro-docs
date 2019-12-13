@@ -730,8 +730,8 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 | 0XC190011f | MOSETUP_E_PROCESS_CRASHED | The installation process crashed. |
 | 0XC1900120 | MOSETUP_E_EULA_TIMEOUT | The user has not accepted Eula within the required time limit. |
 | 0XC1900121 | MOSETUP_E_ADVERTISE_TIMEOUT | The user has not accepted Advertisement within the required time limit. |
-| 0XC1900122 | MOSETUP_E_DOWNLOADDISKSPACE_TIMEOUT | The download diskspace issues were not resolved within the required time limit. |
-| 0XC1900123 | MOSETUP_E_INSTALLDISKSPACE_TIMEOUT | The install diskspace issues were not resolved within the required time limit. |
+| 0XC1900122 | MOSETUP_E_DOWNLOADDISKSPACE_TIMEOUT | The download disk space issues were not resolved within the required time limit. |
+| 0XC1900123 | MOSETUP_E_INSTALLDISKSPACE_TIMEOUT | The install disk space issues were not resolved within the required time limit. |
 | 0XC1900124 | MOSETUP_E_COMPAT_SYSREQ_TIMEOUT | The minimum requirements compatibility issues were not resolved within the required time limit. |
 | 0XC1900125 | MOSETUP_E_COMPAT_DOWNLOADREQ_TIMEOUT | The compatibility issues for download were not resolved within the required time limit. |
 | 0XC1900126 | MOSETUP_E_GATHER_OS_STATE_SIGNATURE | The GatherOsState executable has invalid signature. |
@@ -760,9 +760,9 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 | 0XC1900209 | MOSETUP_E_COMPAT_INSTALLREQ_CANCEL | The user has chosen to cancel because the system does not pass the compat scan to install the update. |
 | 0XC190020a | MOSETUP_E_COMPAT_RECOVERYREQ_BLOCK | The system does not pass the minimum requirements to recover Windows. |
 | 0XC190020b | MOSETUP_E_COMPAT_RECOVERYREQ_CANCEL | The user has chosen to cancel because the system does not pass the minimum requirements to recover Windows. |
-| 0XC190020c | MOSETUP_E_DOWNLOADDISKSPACE_BLOCK | The system does not pass the diskspace requirements to download the payload. |
+| 0XC190020c | MOSETUP_E_DOWNLOADDISKSPACE_BLOCK | The system does not pass the disk space requirements to download the payload. |
 | 0XC190020d | MOSETUP_E_DOWNLOADDISKSPACE_CANCEL | The user has chosen to cancel as the device does not have enough disk space to download. |
-| 0XC190020e | MOSETUP_E_INSTALLDISKSPACE_BLOCK | The system does not pass the diskspace requirements to install the payload. |
+| 0XC190020e | MOSETUP_E_INSTALLDISKSPACE_BLOCK | The system does not pass the disk space requirements to install the payload. |
 | 0XC190020f | MOSETUP_E_INSTALLDISKSPACE_CANCEL | The user has chosen to cancel as the device does not have enough disk space to install. |
 | 0XC1900210 | MOSETUP_E_COMPAT_SCANONLY | The user has used the setup.exe command line to do scanonly, not to install the OS. |
 | 0XC1900211 | MOSETUP_E_DOWNLOAD_UNPACK_DISKSPACE_BLOCK | The system does not pass the disk space requirements to download and unpack media. |
