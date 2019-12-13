@@ -632,7 +632,7 @@ For detailed information on how to run these steps check out <a href="https://bl
 <ol>
 <li>Open <b>Administrative Tools</b> from the Control Panel.</li>
 <li>Double-click <b>Services</b>.</li>
-<li>Find the <b>Windows Update</b> service, right-click it, and then click <b>Stop</b>. If prompted, enter your credentials.</li>
+<li>Find the <b>Windows Update</b> service, right-click it, and then select <b>Stop</b>. If prompted, enter your credentials.</li>
 </ol>
 </li>
 <li>Delete all files and folders under c:\Windows\SoftwareDistribution\DataStore.</li>
@@ -645,7 +645,7 @@ For detailed information on how to run these steps check out <a href="https://bl
 
 ## Other error codes
 
-<table>
+<br><table>
 
 <tr><td BGCOLOR="#a0e4fa">Error Codes<td BGCOLOR="#a0e4fa">Cause<td BGCOLOR="#a0e4fa">Mitigation</td></tr>
 <tr><td>0x80070003- 0x20007
@@ -695,8 +695,8 @@ Review logs for [compatibility information](https://blogs.technet.microsoft.com/
 <td>These errors indicate the computer does not have enough free space available to install the upgrade.
 <td>To upgrade a computer to Windows 10, it requires 16 GB of free hard drive space for a 32-bit OS, and 20 GB for a 64-bit OS. If there is not enough space, attempt to <a href="https://support.microsoft.com/help/17421/windows-free-up-drive-space" data-raw-source="[free up drive space](https://support.microsoft.com/help/17421/windows-free-up-drive-space)">free up drive space</a> before proceeding with the upgrade.
 
-<b>Note</b> 
-If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will back up the previous version of Windows to a USB external drive. The external drive must be at least 8GB (16GB is recommended). The external drive should be formatted using NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations. USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
+> [!NOTE]  
+> If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will back up the previous version of Windows to a USB external drive. The external drive must be at least 8GB (16GB is recommended). The external drive should be formatted using NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations. USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
 </td></tr>
 
 </table>
@@ -781,8 +781,8 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
-<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
-<br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
-<br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
-<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+- [Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
+- [Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
+- [Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
+- [Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
+- [Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
