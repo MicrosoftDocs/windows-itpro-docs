@@ -44,11 +44,11 @@ A [glossary](#glossary) of abbreviations used in this article is provided at the
 | Question | Answer |
 | --- | --- |
 | What changes need to be made in the factory OS image for customer configuration settings?     |No changes are required on the factory floor to enable Windows Autopilot deployment.  |
-| What version of the OA3 tool meets Windows Autopilot deployment requirements?     | Windows Autopilot can work with any version of the OA3 tool. We recommend using Windows 10, version 1703 and above to generate the 4K Hardware Hash.    |
+| What version of the OA3 tool meets Windows Autopilot deployment requirements?     | Windows Autopilot can work with any version of the OA3 tool. We recommend using Windows 10, version 1703 and above to generate the 4K hardware hash.    |
 |  At the time of placing an order, do customers need to be state whether they want it with or without Windows Autopilot options?   | Yes, if they want Windows Autopilot, they will want Windows 10, version 1703 or later versions. Also, they will want to receive the CSV file or have the file upload (that is, registration) completed on their behalf.    |
 |  Does the OEM need to manage or collect any custom imaging files from customers and perform any image uploads to Microsoft?   | No change, OEMs just send the CBRs as usual to Microsoft. No images are sent to Microsoft to enable Windows Autopilot.  Windows Autopilot only customizes OOBE and allows policy configurations (disables admin account, for example).  |
 |  Are there any customer impacts to upgrading from Windows 8 to Windows 10?    | The devices must have Windows 10, version 1703 or later to enroll in Windows Autopilot deployment. Otherwise, there are no impacts.    |
-| Will there be any change to the existing CBR with 4K Hardware Hash?    | No.  |
+| Will there be any change to the existing CBR with 4K hardware hash?    | No.  |
 | What new information needs to be sent from the OEM to Microsoft?    | Nothing, unless the OEM opts to register the device on the customer’s behalf, in which case they would upload the device ID using a CSV file into Microsoft Partner Center, or use the OEM Direct API.  |
 | Is there a contract or amendment for an OEM to participate in Windows Autopilot Deployment?    | No.  |
 
@@ -62,28 +62,28 @@ A [glossary](#glossary) of abbreviations used in this article is provided at the
 | Does Microsoft have any recommendations on how an OEM should provide the CSV file to their customers?    |  We recommend encrypting the CSV file when sending to the business customer to self-register their Windows Autopilot devices (either through MPC, MSfB, or Intune).   |
 
 
-## Hardware Hash
+## Hardware hash
 
 | Question | Answer |
 | --- | --- |
-| Must every Hardware Hash submitted by the OEM contain the SMBIOS UUID (universally unique identifier), MAC (media access control) address, and unique disk serial number (if using Windows 10, version 1703 and above OEM Activation 3.0 tool)?    | Yes. Since Windows Autopilot is based on the ability to uniquely identify devices applying for cloud configuration, it is critical to submit Hardware Hashes that meet the outlined requirement.   |
-| What is the reason for needing the SMBIOS UUID, MAC Address, and Disk Serial Number in the Hardware Hash details?    | For creating the Hardware Hash, these are the fields that are needed to identify a device, as parts of the device are added or removed. Since we don’t have a unique identifier for Windows devices, this is the best logic to identify a device.    |
-| What is difference between OA3 Hardware Hash, 4K Hardware Hash, and Windows Autopilot Hardware Hash?    | None.  They’re different names for the same thing.  The Windows 10, 1703 version of the OA3 tool output is called the OA3 Hash, which is 4K in size, which is usable for the Windows Autopilot deployment scenario. Note: When using a non-1703 version OA3Tool, you get a different sized Hash, which may not be used for Windows Autopilot deployment.  |
-|  What is the thought around parts replacement and repair for the NIC (network interface controller) and Disk? Will the Hardware Hash become invalid?   |  Yes.  If you replace parts, you need to gather the new Hardware Hash, though it depends on what is replaced, and the characteristics of the parts. For example, if you replace the TPM or motherboard, it’s a new device and you must have new Hardware Hash. If you replace one network card, it’s probably not a new device, and the device will function with the old Hardware Hash.  However, as a best practice, you should assume the old Hardware Hash is invalid and get a new Hardware Hash after any hardware changes. This is recommended anytime you replace parts. |
+| Must every hardware hash submitted by the OEM contain the SMBIOS UUID (universally unique identifier), MAC (media access control) address, and unique disk serial number (if using Windows 10, version 1703 and above OEM Activation 3.0 tool)?    | Yes. Since Windows Autopilot is based on the ability to uniquely identify devices applying for cloud configuration, it is critical to submit hardware hashes that meet the outlined requirement.   |
+| What is the reason for needing the SMBIOS UUID, MAC Address, and Disk Serial Number in the hardware hash details?    | For creating the hardware hash, these are the fields that are needed to identify a device, as parts of the device are added or removed. Since we don’t have a unique identifier for Windows devices, this is the best logic to identify a device.    |
+| What is difference between OA3 hardware hash, 4K hardware hash, and Windows Autopilot hardware hash?    | None.  They’re different names for the same thing.  The Windows 10, 1703 version of the OA3 tool output is called the OA3 Hash, which is 4K in size, which is usable for the Windows Autopilot deployment scenario. Note: When using a non-1703 version OA3Tool, you get a different sized Hash, which may not be used for Windows Autopilot deployment.  |
+|  What is the thought around parts replacement and repair for the NIC (network interface controller) and Disk? Will the hardware hash become invalid?   |  Yes.  If you replace parts, you need to gather the new hardware hash, though it depends on what is replaced, and the characteristics of the parts. For example, if you replace the TPM or motherboard, it’s a new device and you must have new hardware hash. If you replace one network card, it’s probably not a new device, and the device will function with the old hardware hash.  However, as a best practice, you should assume the old hardware hash is invalid and get a new hardware hash after any hardware changes. This is recommended anytime you replace parts. |
 
 ## Motherboard replacement
 
 | Question | Answer |
 | --- | --- |
-| How does Autopilot handle motherboard replacement scenarios?  |  Motherboard replacement is out for scope for Autopilot. Any device that is repaired or serviced in a way that alters the ability to identify the device for Windows Autopilot must go through the normal OOBE process, and manually select the right settings or apply a custom image, as is the case today.  <br><br>To reuse the same device for Windows Autopilot after a motherboard replacement, the device would need to be de-registered from Autopilot, the motherboard replaced, a new 4K HH harvested, and then re-registered using the new 4K Hardware Hash (or device ID). <br><br>**Note**:  An OEM will not be able to use the OEM Direct API to re-register the device, since the OEM Direct API only accepts a tuple or PKID.  In this case, the OEM would either have to send the new 4K Hardware Hash information using a CSV file to customer, and let customer reregister the device using MSfB or Intune.|
+| How does Autopilot handle motherboard replacement scenarios?  |  Motherboard replacement is out for scope for Autopilot. Any device that is repaired or serviced in a way that alters the ability to identify the device for Windows Autopilot must go through the normal OOBE process, and manually select the right settings or apply a custom image, as is the case today.  <br><br>To reuse the same device for Windows Autopilot after a motherboard replacement, the device would need to be de-registered from Autopilot, the motherboard replaced, a new 4K HH harvested, and then re-registered using the new 4K hardware hash (or device ID). <br><br>**Note**:  An OEM will not be able to use the OEM Direct API to re-register the device, since the OEM Direct API only accepts a tuple or PKID.  In this case, the OEM would either have to send the new 4K hardware hash information using a CSV file to customer, and let customer reregister the device using MSfB or Intune.|
 
 ## SMBIOS
 
 | Question | Answer |
 | --- | --- |
 | Any specific requirement to SMBIOS UUID?    | It must be unique as specified in the Windows 10 hardware requirements.    |
-| What is the requirement on the SMBIOS table to meet the Windows Autopilot Hardware Hash need?    | It must meet all the Windows 10 hardware requirements.  Additional details may be found [here](https://msdn.microsoft.com/library/jj128256(v=vs.85).aspx).    |
-| If the SMBIOS supports UUID and Serial Number, is it enough for the OA3 tool to generate the Hardware Hash?    | No.  At a minimum, the following SMBIOS fields need to be populated with unique values: ProductKeyID SmbiosSystemManufacturer SmbiosSystemProductName SmbiosSystemSerialNumber SmbiosSkuNumber SmbiosSystemFamily MacAddress SmbiosUuid DiskSerialNumber TPM EkPub |
+| What is the requirement on the SMBIOS table to meet the Windows Autopilot hardware hash need?    | It must meet all the Windows 10 hardware requirements.  Additional details may be found [here](https://msdn.microsoft.com/library/jj128256(v=vs.85).aspx).    |
+| If the SMBIOS supports UUID and Serial Number, is it enough for the OA3 tool to generate the hardware hash?    | No.  At a minimum, the following SMBIOS fields need to be populated with unique values: ProductKeyID SmbiosSystemManufacturer SmbiosSystemProductName SmbiosSystemSerialNumber SmbiosSkuNumber SmbiosSystemFamily MacAddress SmbiosUuid DiskSerialNumber TPM EkPub |
 
 ## Technical interface
 
@@ -142,7 +142,7 @@ A [glossary](#glossary) of abbreviations used in this article is provided at the
 |Why is Windows Autopilot data stored in the US and not in a sovereign cloud?|It is not customer data that we store, but business data that enables Microsoft to provide a service, therefore it is okay for the data to reside in the US. Customers can stop subscribing to the service at any time, and, in that event, the business data is removed by Microsoft.|
 |How many ways are there to register a device for Windows Autopilot|There are six ways to register a device, depending on who is doing the registering: <br><br>1.  OEM Direct API (only available to TVOs) <br>2. MPC using the MPC API (must be a CSP) <br>3. MPC using manual upload of CSV file in the UI (must be a CSP) <br>4. MSfB using CSV file upload <br>5. Intune using CSV file upload <br>6.  Microsoft 365 Business portal using CSV file upload|
 |How many ways are there to create a Windows Autopilot profile?|There are four ways to create and assign a Windows Autopilot profile: <br><br>1.   Through MPC (must be a CSP) <br>2.  Through MSfB <br>3. Through Intune (or another MDM) <br>4.  Microsoft 365 Business portal <br><br>Microsoft recommends creation and assignment of profiles through Intune.  |
-| What are some common causes of registration failures? |1.  Bad or missing Hardware hash entries can lead to faulty registration attempts <br>2.    Hidden special characters in CSV files.  <br><br>To avoid this issue, after creating your CSV file, open it in Notepad to look for hidden characters or trailing spaces or other corruptions.|
+| What are some common causes of registration failures? |1.  Bad or missing hardware hash entries can lead to faulty registration attempts <br>2.    Hidden special characters in CSV files.  <br><br>To avoid this issue, after creating your CSV file, open it in Notepad to look for hidden characters or trailing spaces or other corruptions.|
 |  Is Autopilot supported on IoT devices? |  Autopilot is not supported on IoT Core devices, and there are currently no plans to add this support. Autopilot is supported on Windows 10 IoT Enterprise SAC devices. Autopilot is supported on Windows 10 Enterprise LTSC 2019 and above; it is not supported on earlier versions of LTSC.|
 |  Is Autopilot supported in all regions/countries? |  Autopilot only supports customers using global Azure. Global Azure does not include the three entities listed below:<br>- Azure Germany <br>- Azure China 21Vianet<br>- Azure Government<br>So, if a customer is set up in global Azure, there are no region restrictions. For example, if Contoso uses global Azure but has employees working in China, the Contoso employees working in China would be able to use Autopilot to deploy devices. If Contoso uses Azure China 21Vianet, the Contoso employees would not be able to use Autopilot.|
 
@@ -157,7 +157,7 @@ A [glossary](#glossary) of abbreviations used in this article is provided at the
 | CSP  |  Cloud Solution Provider  |
 | MSfB  | Microsoft Store for Business   |
 | Azure AD  | Azure Active Directory   |
-| 4K HH  |  4K Hardware Hash |
+| 4K HH  |  4K hardware hash |
 | CBR  | Computer Build Report  |
 | EC  |  Enterprise Commerce  |
 | DDS  | Device Directory Service    |
