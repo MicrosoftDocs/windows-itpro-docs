@@ -70,7 +70,7 @@ where
 Run the following query:
 
 ```
-$query = 'DeviceRegistryEvents | limit 10' # Paste your own query here
+$query = 'RegistryEvents | limit 10' # Paste your own query here
 
 $url = "https://api.securitycenter.windows.com/api/advancedqueries/run"
 $headers = @{ 

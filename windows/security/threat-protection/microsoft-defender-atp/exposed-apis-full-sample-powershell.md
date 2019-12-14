@@ -32,7 +32,7 @@ In this section we share PowerShell samples to
 
 >**Prerequisite**: You first need to [create an app](apis-intro.md).
 
-## Preparation Instructions
+## Preparation instructions
 
 - Open a PowerShell window.
 - If your policy does not allow you to run the PowerShell commands, you can run the below command:
@@ -99,7 +99,7 @@ Foreach($alert in $alerts)
 
 $commaSeparatedMachines = '"{0}"' -f ($machinesToInvestigate -join '","')
 
-$query = "DeviceNetworkEvents
+$query = "NetworkCommunicationEvents
 | where MachineId in ($commaSeparatedMachines)
 | where RemoteUrl  == `"$suspiciousUrl`"
 | summarize ConnectionsCount = count() by MachineId"
