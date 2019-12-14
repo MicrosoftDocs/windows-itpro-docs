@@ -28,7 +28,7 @@ Windows 10 includes the following new policies for management. [Download the co
 
 ## New Group Policy settings in Windows 10, version 1909
 
-The following Group Policy settings were added in Windows 10, version 1909
+The following Group Policy settings were added in Windows 10, version 1909:
 
 **Start Menu and Taskbar**
 
@@ -506,7 +506,6 @@ No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=
 
 
  
-
 
 
 
