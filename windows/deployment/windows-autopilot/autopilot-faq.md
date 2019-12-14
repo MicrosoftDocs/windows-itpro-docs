@@ -89,7 +89,7 @@ A [glossary](#glossary) of abbreviations used in this article is provided at the
 
 | Question | Answer |
 | --- | --- |
-|  What is the interface to get the MAC Address and Disk Serial Number? How does the OA tool get MAC and Disk Serial #?   | Disk serial number is found from IOCTL_STORAGE_QUERY_PROPERTY with  StorageDeviceProperty/PropertyStandardQuery.   Network MAC address is  IOCTL_NDIS_QUERY_GLOBAL_STATS from OID_802_3_PERMANENT_ADDRESS.  However the method for perfoming this operation varies depending on the scenario.  |
+|  What is the interface to get the MAC Address and Disk Serial Number? How does the OA tool get MAC and Disk Serial #?   | Disk serial number is found from IOCTL_STORAGE_QUERY_PROPERTY with  StorageDeviceProperty/PropertyStandardQuery.   Network MAC address is  IOCTL_NDIS_QUERY_GLOBAL_STATS from OID_802_3_PERMANENT_ADDRESS.  However the method for performing this operation varies depending on the scenario.  |
 | Follow up clarification: If we have 2-3 MACs on the system, how does OA Tool choose which MAC Address and Disk Serial Number are on the system since there are multiple instances of each? If a platform has LAN And WLAN, which MAC is chosen?     |  In short, all available values are used.  In detail, there may be specific usage rules. The system disk serial number is more important than the other disks available. Network interfaces that are removable should not be used if detected as they are removable. LAN vs WLAN should not matter, as both will be used.  |
 
 ## The end-user experience
