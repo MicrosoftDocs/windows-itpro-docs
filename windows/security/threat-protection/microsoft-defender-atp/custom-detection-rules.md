@@ -117,7 +117,7 @@ You can also take the following actions on the rule from this page:
 
 - **Run** — run the rule immediately. This also resets the interval for the next run.
 - **Edit** — modify the rule without changing the query
-- **Modify query** — edit the query in Advanced hunting
+- **Modify query** — edit the query in advanced hunting
 - **Turn on** / **Turn off** — enable the rule or stop it from running
 - **Delete** — turn off the rule and remove it
 
@@ -127,5 +127,5 @@ You can also take the following actions on the rule from this page:
 ## Related topic
 - [Custom detections overview](overview-custom-detections.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
-- [Learn the Advanced hunting query language](advanced-hunting-query-language.md)
+- [Learn the advanced hunting query language](advanced-hunting-query-language.md)
 - [View and organize alerts](alerts-queue.md)

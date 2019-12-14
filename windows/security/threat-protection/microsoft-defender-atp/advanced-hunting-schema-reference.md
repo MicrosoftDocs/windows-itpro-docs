@@ -1,6 +1,6 @@
 ---
-title: Advanced hunting schema reference
-description: Learn about the tables in the Advanced hunting schema to understand the data you can run threat hunting queries on 
+title: advanced hunting schema reference
+description: Learn about the tables in the advanced hunting schema to understand the data you can run threat hunting queries on 
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.topic: article
 ms.date: 10/08/2019
 ---
 
-# Understand the Advanced hunting schema
+# Understand the advanced hunting schema
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
@@ -27,13 +27,13 @@ ms.date: 10/08/2019
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-The [Advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about machines and other entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the Advanced hunting schema.
+The [Advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about machines and other entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the advanced hunting schema.
 
 ## Schema tables
 
-The following reference lists all the tables in the Advanced hunting schema. Each table name links to a page describing the column names for that table.
+The following reference lists all the tables in the advanced hunting schema. Each table name links to a page describing the column names for that table.
 
-Table and column names are also listed within the Microsoft Defender Security Center, in the schema representation on the Advanced hunting screen.
+Table and column names are also listed within the Microsoft Defender Security Center, in the schema representation on the advanced hunting screen.
 
 | Table name | Description |
 |------------|-------------|
@@ -47,10 +47,10 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 | **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | Sign-ins and other authentication events |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL loading events |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
-| **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-tvm-softwareinventory-table.md)** | Vulnerabilities in your software inventory |
-| **[DeviceTvmSoftwareVulnerabilitiesKB ](advanced-hunting-tvm-softwarevulnerability-table.md)** | Publicly-available vulnerabilities and whether they exist in your software inventory |
-| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-tvm-configassessment-table.md)** | Security configuration assessment information |
-| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-tvm-secureconfigkb-table.md)** | Basis of security configuration assessment such as security industry standards and benchmarks |
+| **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-tvm-softwareinventory-table.md)** | Inventory of software on devices as well as any known vulnerabilities in these software products |
+| **[DeviceTvmSoftwareVulnerabilitiesKB ](advanced-hunting-tvm-softwarevulnerability-table.md)** | Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available |
+| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-tvm-configassessment-table.md)** | Threat & Vulnerability Management assessment events, indicating the status of various security configurations on devices |
+| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-tvm-secureconfigkb-table.md)** | Knowledge base of various security configurations used by Threat & Vulnerability Management to assess devices; includes mappings to various standards and benchmarks |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

@@ -1,6 +1,6 @@
 ---
-title: Query best practices for Advanced hunting
-description: Learn how to construct fast, efficient, and error-free threat hunting queries when using Advanced hunting
+title: Query best practices for advanced hunting
+description: Learn how to construct fast, efficient, and error-free threat hunting queries when using advanced hunting
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto, avoid timeout, command lines, process id
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

@@ -1,6 +1,6 @@
 ---
-title: Learn the Advanced hunting query language
-description: Create your first threat hunting query and learn about common operators and other aspects of the Advanced hunting query language
+title: Learn the advanced hunting query language
+description: Create your first threat hunting query and learn about common operators and other aspects of the advanced hunting query language
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.topic: article
 ms.date: 10/08/2019
 ---
 
-# Learn the Advanced hunting query language
+# Learn the advanced hunting query language
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
-Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-schema-reference.md) specifically structured for Advanced hunting. To understand these concepts better, run your first query.
+Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-schema-reference.md) specifically structured for advanced hunting. To understand these concepts better, run your first query.
 
 ## Try your first query
 
@@ -45,9 +45,9 @@ DeviceProcessEvents
 | top 100 by Timestamp
 ```
 
-This is how it will look like in Advanced hunting.
+This is how it will look like in advanced hunting.
 
-![Image of Microsoft Defender ATP Advanced hunting query](images/advanced-hunting-query-example.png)
+![Image of Microsoft Defender ATP advanced hunting query](images/advanced-hunting-query-example.png)
 
 ### Describe the query and specify the table to search
 The query starts with a short comment describing what it is for. This helps if you later decide to save your query and share it with others in your organization.
@@ -91,9 +91,9 @@ Now that your query clearly identifies the data you want to locate, you can add 
 
 Click **Run query** to see the results. You can expand the screen view so you can focus on your hunting query and the results.
 
-## Learn common query operators for Advanced hunting
+## Learn common query operators for advanced hunting
 
-Now that you've run your first query and have a general idea of its components, it's time to backtrack a little bit and learn some basics. The Kusto query language used by Advanced hunting supports a range of operators, including the following common ones.
+Now that you've run your first query and have a general idea of its components, it's time to backtrack a little bit and learn some basics. The Kusto query language used by advanced hunting supports a range of operators, including the following common ones.
 
 | Operator | Description and usage |
 |--|--|
@@ -108,11 +108,11 @@ Now that you've run your first query and have a general idea of its components, 
 | **makeset** |  Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group. |
 | **find** | Find rows that match a predicate across a set of tables. |
 
-To see a live example of these operators, run them from the **Get started** section of the Advanced hunting page.
+To see a live example of these operators, run them from the **Get started** section of the advanced hunting page.
 
 ## Understand data types
 
-Data in Advanced hunting tables are generally classified into the following data types.
+Data in advanced hunting tables are generally classified into the following data types.
 
 | Data type | Description and query implications |
 |--|--|
@@ -126,7 +126,7 @@ Data in Advanced hunting tables are generally classified into the following data
 
 The **Get started** section provides a few simple queries using commonly used operators. Try running these queries and making small modifications to them.
 
-![Image of Advanced hunting window](images/atp-advanced-hunting.png)
+![Image of advanced hunting window](images/atp-advanced-hunting.png)
 
 > [!NOTE]
 > Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the GitHub query repository.

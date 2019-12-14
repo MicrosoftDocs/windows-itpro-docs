@@ -46,7 +46,7 @@ For information about configuring attack surface reduction rules, see [Enable at
 
 Microsoft Defender ATP provides detailed reporting into events and blocks as part of its alert investigation scenarios.
 
-You can query Microsoft Defender ATP data by using [Advanced hunting](advanced-hunting-query-language.md). If you're using [audit mode](audit-windows-defender.md), you can use Advanced hunting to understand how attack surface reduction rules could affect your environment.
+You can query Microsoft Defender ATP data by using [Advanced hunting](advanced-hunting-query-language.md). If you're using [audit mode](audit-windows-defender.md), you can use advanced hunting to understand how attack surface reduction rules could affect your environment.
 
 Here is an example query:
 
