@@ -73,7 +73,7 @@ where
  Run the following query:
 
 ```
-query = 'RegistryEvents | limit 10' # Paste your own query here
+query = 'DeviceRegistryEvents | limit 10' # Paste your own query here
 
 url = "https://api.securitycenter.windows.com/api/advancedqueries/run"
 headers = { 

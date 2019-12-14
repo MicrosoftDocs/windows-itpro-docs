@@ -1,6 +1,6 @@
 ---
-title: MiscEvents table in the advanced hunting schema
-description: Learn about antivirus, firewall, and other event types in the miscellaneous events (MiscEvents) table of the Advanced hunting schema
+title: DeviceEvents table in the advanced hunting schema
+description: Learn about antivirus, firewall, and other event types in the miscellaneous events (DeviceEvents) table of the Advanced hunting schema
 keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.topic: article
 ms.date: 10/08/2019
 ---
 
-# MiscEvents
+# DeviceEvents
 
 **Applies to:**
 
@@ -26,15 +26,15 @@ ms.date: 10/08/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The miscellaneous events or MiscEvents table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about various event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from the table.
+The miscellaneous events or DeviceEvents table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about various event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the Advanced hunting schema, see [the Advanced hunting schema reference](advanced-hunting-schema-reference.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| EventTime | datetime | Date and time when the event was recorded |
-| MachineId | string | Unique identifier for the machine in the service |
-| ComputerName | string | Fully qualified domain name (FQDN) of the machine |
+| Timestamp | datetime | Date and time when the event was recorded |
+| DeviceId | string | Unique identifier for the machine in the service |
+| DeviceName | string | Fully qualified domain name (FQDN) of the machine |
 | ActionType | string | Type of activity that triggered the event |
 | FileName | string | Name of the file that the recorded action was applied to |
 | FolderPath | string | Folder containing the file that the recorded action was applied to |
@@ -45,7 +45,7 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 | AccountName |string | User name of the account |
 | AccountSid | string | Security Identifier (SID) of the account |
 | RemoteUrl | string | URL or fully qualified domain name (FQDN) that was being connected to |
-| RemoteComputerName | string | Name of the machine that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information |
+| RemoteDeviceName | string | Name of the machine that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information |
 | ProcessId | int | Process ID (PID) of the newly created process |
 | ProcessCommandLine | string | Command line used to create the new process |
 | ProcessCreationTime | datetime | Date and time the process was created |
@@ -76,7 +76,7 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 | InitiatingProcessAccountName | string | User name of the account that ran the process responsible for the event |
 | InitiatingProcessAccountSid | string | Security Identifier (SID) of the account that ran the process responsible for the event |
 | InitiatingProcessLogonId | string | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts |
-| ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns |
+| ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 
 ## Related topics

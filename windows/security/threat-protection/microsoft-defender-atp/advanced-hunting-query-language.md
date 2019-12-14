@@ -33,16 +33,16 @@ In Microsoft Defender Security Center, go to **Advanced hunting** to run your fi
 
 ```kusto
 // Finds PowerShell execution events that could involve a download.
-ProcessCreationEvents  
-| where EventTime > ago(7d)
+DeviceProcessEvents  
+| where Timestamp > ago(7d)
 | where FileName in ("powershell.exe", "POWERSHELL.EXE", "powershell_ise.exe", "POWERSHELL_ISE.EXE") 
 | where ProcessCommandLine has "Net.WebClient"
         or ProcessCommandLine has "DownloadFile"
         or ProcessCommandLine has "Invoke-WebRequest"
         or ProcessCommandLine has "Invoke-Shellcode"
         or ProcessCommandLine contains "http:"
-| project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
-| top 100 by EventTime
+| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| top 100 by Timestamp
 ```
 
 This is how it will look like in Advanced hunting.
@@ -54,16 +54,16 @@ The query starts with a short comment describing what it is for. This helps if y
 
 ```kusto
 // Finds PowerShell execution events that could involve a download.
-ProcessCreationEvents
+DeviceProcessEvents
 ```
 
-The query itself will typically start with a table name followed by a series of elements started by a pipe (`|`). In this example, we start by adding  with the table name `ProcessCreationEvents` and add piped elements as needed.
+The query itself will typically start with a table name followed by a series of elements started by a pipe (`|`). In this example, we start by adding  with the table name `DeviceProcessEvents` and add piped elements as needed.
 
 ### Set the time range
 The first piped element is a time filter scoped within the previous seven days. Keeping the time range as narrow as possible ensures that queries perform well, return manageable results, and don't time out.
 
 ```kusto
-| where EventTime > ago(7d)
+| where Timestamp > ago(7d)
 ```
 ### Search for specific executable files
 The time range is immediately followed by a search for files representing the PowerShell application.
@@ -85,8 +85,8 @@ Afterwards, the query looks for command lines that are typically used with Power
 Now that your query clearly identifies the data you want to locate, you can add elements that define what the results look like. `project` returns specific columns and `top` limits the number of results, making the results well-formatted and reasonably large and easy to process.
 
 ```kusto
-| project EventTime, ComputerName, InitiatingProcessFileName, FileName, ProcessCommandLine
-| top 100 by EventTime
+| project Timestamp, DeviceName, InitiatingProcessFileName, FileName, ProcessCommandLine
+| top 100 by Timestamp
 ```
 
 Click **Run query** to see the results. You can expand the screen view so you can focus on your hunting query and the results.

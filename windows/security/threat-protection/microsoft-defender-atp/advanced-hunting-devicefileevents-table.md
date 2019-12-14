@@ -1,7 +1,7 @@
 ---
-title: FileCreationEvents table in the Advanced hunting schema 
-description: Learn about file-related events in the FileCreationEvents table of the Advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, filecreationevents, files, path, hash, sha1, sha256, md5
+title: DeviceFileEvents table in the Advanced hunting schema 
+description: Learn about file-related events in the DeviceFileEvents table of the Advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, devicefileevents, files, path, hash, sha1, sha256, md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -18,7 +18,7 @@ ms.topic: article
 ms.date: 10/08/2019
 ---
 
-# FileCreationEvents
+# DeviceFileEvents
 
 **Applies to:**
 
@@ -26,15 +26,15 @@ ms.date: 10/08/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The FileCreationEvents table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about file creation, modification, and other file system events. Use this reference to construct queries that return information from the table.
+The DeviceFileEvents table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about file creation, modification, and other file system events. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the Advanced hunting schema, see  [the Advanced hunting schema reference](advanced-hunting-schema-reference.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| EventTime | datetime | Date and time when the event was recorded |
-| MachineId | string | Unique identifier for the machine in the service |
-| ComputerName | string | Fully qualified domain name (FQDN) of the machine |
+| Timestamp | datetime | Date and time when the event was recorded |
+| DeviceId | string | Unique identifier for the machine in the service |
+| DeviceName | string | Fully qualified domain name (FQDN) of the machine |
 | ActionType | string | Type of activity that triggered the event |
 | FileName | string | Name of the file that the recorded action was applied to |
 | FolderPath | string | Folder containing the file that the recorded action was applied to |
@@ -66,7 +66,7 @@ For information on other tables in the Advanced hunting schema, see  [the Advanc
 | RequestAccountName | string | User name of account used to remotely initiate the activity |
 | RequestAccountDomain | string | Domain of the account used to remotely initiate the activity |
 | RequestAccountSid | string | Security Identifier (SID) of the account to remotely initiate the activity |
-| ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns |
+| ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | AppGuardContainerId | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | SensitivityLabel | string | Label applied to an email, file, or other content to classify it for information protection |
 | SensitivitySubLabel | string | Sublabel applied to an email, file, or other content to classify it for information protection; sensitivity sublabels are grouped under sensitivity labels but are treated independently |

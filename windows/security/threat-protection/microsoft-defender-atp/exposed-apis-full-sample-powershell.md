@@ -99,7 +99,7 @@ Foreach($alert in $alerts)
 
 $commaSeparatedMachines = '"{0}"' -f ($machinesToInvestigate -join '","')
 
-$query = "NetworkCommunicationEvents
+$query = "DeviceNetworkEvents
 | where MachineId in ($commaSeparatedMachines)
 | where RemoteUrl  == `"$suspiciousUrl`"
 | summarize ConnectionsCount = count() by MachineId"

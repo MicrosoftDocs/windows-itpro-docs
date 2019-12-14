@@ -34,8 +34,8 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| MachineId | string | Unique identifier for the machine in the service |
-| ComputerName | string | Fully qualified domain name (FQDN) of the machine |
+| DeviceId | string | Unique identifier for the machine in the service |
+| DeviceName | string | Fully qualified domain name (FQDN) of the machine |
 | OSPlatform | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.|
 | Timestamp | datetime |Date and time when the record was generated |
 | ConfigurationId | string | Unique identifier for a specific configuration |

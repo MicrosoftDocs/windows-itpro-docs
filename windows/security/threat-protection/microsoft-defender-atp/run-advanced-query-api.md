@@ -81,7 +81,7 @@ Here is an example of the request.
 POST https://api.securitycenter.windows.com/api/advancedqueries/run
 Content-type: application/json
 {
-	"Query":"ProcessCreationEvents  
+	"Query":"DeviceProcessEvents  
 | where InitiatingProcessFileName =~ \"powershell.exe\"
 | where ProcessCommandLine contains \"appdata\"
 | project EventTime, FileName, InitiatingProcessFileName 

@@ -173,11 +173,11 @@ DeviceTvmSoftwareInventoryVulnerabilities
 | join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId 
 | where IsExploitAvailable == 1 and CvssScore >= 7
 | summarize NumOfVulnerabilities=dcount(CveId), 
-ComputerName=any(ComputerName) by MachineId 
-| join kind =inner(AlertEvents) on MachineId  
+DeviceName=any(DeviceName) by DeviceId 
+| join kind =inner(AlertEvents) on DeviceId  
 | summarize NumOfVulnerabilities=any(NumOfVulnerabilities), 
-ComputerName=any(ComputerName) by MachineId, AlertId 
-| project ComputerName, NumOfVulnerabilities, AlertId  
+DeviceName=any(DeviceName) by DeviceId, AlertId 
+| project DeviceName, NumOfVulnerabilities, AlertId  
 | order by NumOfVulnerabilities desc 
 
 ```
