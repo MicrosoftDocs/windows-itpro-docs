@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 12/13/2019
+ms.date: 12/16/2019
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
@@ -63,11 +63,11 @@ To enable and configure always-on protection:
     | Turn on raw volume write notifications | Information about raw volume writes will be analyzed by behavior monitoring. | Enabled |
     | Turn on process scanning whenever real-time protection is enabled | You can independently enable the Microsoft Defender Antivirus engine to scan running processes for suspicious modifications or behaviors. This is useful if you have temporarily disabled real-time protection and want to automatically scan processes that started while it was disabled. | Enabled |
     | Define the maximum size of downloaded files and attachments to be scanned | You can define the size in kilobytes. | Enabled |
-    | Configure local setting override for turn on behavior monitoring | Configure a local override for the configuration of behavior monitoring. This setting can only be set by Group Policy. | Enabled |
-    | Configure local setting override for scanning all downloaded files and attachments | Configure a local override for the configuration of scanning for all downloaded files and attachments. This setting can only be set by Group Policy. | Enabled |
-    | Configure local setting override for monitoring file and program activity on your computer | Configure a local override for the configuration of monitoring for file and program activity on your computer. This setting can only be set by Group Policy. | Enabled |
-    | Configure local setting override to turn on real-time protection | Configure a local override for the configuration to turn on real-time protection. This setting can only be set by Group Policy. | Enabled |
-    | Configure local setting override for monitoring for incoming and outgoing file activity | Configure a local override for the configuration of monitoring for incoming and outgoing file activity. This setting can only be set by Group Policy. | Enabled |
+    | Configure local setting override for turn on behavior monitoring | Configure a local override for the configuration of behavior monitoring. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.| Enabled |
+    | Configure local setting override for scanning all downloaded files and attachments | Configure a local override for the configuration of scanning for all downloaded files and attachments. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.| Enabled |
+    | Configure local setting override for monitoring file and program activity on your computer | Configure a local override for the configuration of monitoring for file and program activity on your computer. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.| Enabled |
+    | Configure local setting override to turn on real-time protection | Configure a local override for the configuration to turn on real-time protection. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.| Enabled |
+    | Configure local setting override for monitoring for incoming and outgoing file activity | Configure a local override for the configuration of monitoring for incoming and outgoing file activity. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting. | Enabled |
     | Configure monitoring for incoming and outgoing file and program activity | Specify whether monitoring should occur on incoming, outgoing, both, or neither direction. This is relevant for Windows Server installations where you have defined specific servers or Server Roles that see large amounts of file changes in only one direction and you want to improve network performance. Fully updated endpoints (and servers) on a network will see little performance impact irrespective of the number or direction of file changes. | Enabled (both directions) |
 
     3. Configure the setting as appropriate, and click **OK**.
