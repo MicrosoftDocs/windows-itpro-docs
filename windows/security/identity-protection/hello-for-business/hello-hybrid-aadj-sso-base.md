@@ -58,7 +58,8 @@ To resolve this issue, the CRL distribution point must be a location that is acc
 
 If your CRL distribution point does not list an HTTP distribution point, then you need to reconfigure the issuing certificate authority to include an HTTP CRL distribution point, preferably first in the list of distribution points.
 
-Note:  If your CA has published both the Base and the Delta CRL, please make sure you have included publishing the Delta CRL in the HTTP path. Include web server to fetch the Delta CRL by allowing double escaping in the (IIS) web server.
+> [!NOTE]
+> If your CA has published both the Base and the Delta CRL, please make sure you have included publishing the Delta CRL in the HTTP path. Include web server to fetch the Delta CRL by allowing double escaping in the (IIS) web server.
 
 ### Windows Server 2016 Domain Controllers
 If you are interested in configuring your environment to use the Windows Hello for Business key rather than a certificate, then your environment must have an adequate number of Windows Server 2016 domain controllers.  Only Windows Server 2016 domain controllers are capable of authenticating user with a Windows Hello for Business key.  What do we mean by adequate?  We are glad you asked.  Read [Planning an adequate number of Windows Server 2016 Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
@@ -338,5 +339,4 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). 
  
-
 
