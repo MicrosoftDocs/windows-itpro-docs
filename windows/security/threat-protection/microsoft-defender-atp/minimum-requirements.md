@@ -38,7 +38,7 @@ Microsoft Defender Advanced Threat Protection requires one of the following Micr
 - Windows 10 Education E5
 - Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5
 - Microsoft 365 A5 (M365 A5)
-
+- Microsoft 365 E3 with the Identity & Threat Protection add-on
 
 For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
 
@@ -46,6 +46,7 @@ For a detailed comparison table of Windows 10 commercial edition comparison, see
 
 For more information about licensing requirements for Microsoft Defender ATP platform on Windows Server, see [Protecting Windows Servers with Microsoft Defender ATP](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Protecting-Windows-Server-with-Windows-Defender-ATP/ba-p/267114).
 
+For details of the Identity & Threat Protection add-on, see [Introducing new advanced security and compliance offerings for Microsoft 365](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/).
 
 ## Browser requirements
 Access to Microsoft Defender ATP is done through a browser, supporting the following browsers:
