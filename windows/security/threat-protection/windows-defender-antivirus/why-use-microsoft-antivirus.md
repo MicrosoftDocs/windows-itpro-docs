@@ -19,7 +19,20 @@ manager: dansimp
 
 # 10 good reasons to use Windows Defender Antivirus together with Microsoft Defender Advanced Threat Protection
 
-Windows Defender Antivirus is the next-generation protection component of [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md) (Microsoft Defender ATP). Although you can integrate non-Microsoft antivirus offerings with Microsoft Defender ATP, there are at least 10 good reasons to use Windows Defender Antivirus together with Microsoft Defender ATP. This article summarizes those reasons and provides links to additional information.
+Windows Defender Antivirus is the next-generation protection component of [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md) (Microsoft Defender ATP). Although you can use a non-Microsoft antivirus offering with Microsoft Defender ATP, there are certain advantages to using Windows Defender Antivirus together with Microsoft Defender ATP. 
+
+The following table summarizes 10 good reasons to use Windows Defender Antivirus together with Microsoft Defender ATP.
+
+|Item  |Description |
+|--|--|
+|File recovery via OneDrive |If your device is attacked by ransomware and protection through Windows Defender Antivirus with Microsoft Defender ATP is in place, your files are protected and recoverable. |
+|Network protection |Your organization's security team can protect your network by blocking specific URLs and IP addresses. |
+|File blocking |Your organization's security team can block specific files. |
+|Auditing events |Auditing event signals are available in [endpoint detection and response capabilities](../microsoft-defender-atp/overview-endpoint-detection-response.md). (These signals are not available with non-Microsoft antivirus.) |
+|Details about blocked malware | |
+
+
+
 
 
 
