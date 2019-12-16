@@ -25,9 +25,9 @@ The following table summarizes 10 good reasons to use Windows Defender Antivirus
 
 |Item  |Description |
 |--|--|
-|File recovery via OneDrive |If your device is attacked by ransomware and protection through Windows Defender Antivirus with Microsoft Defender ATP is in place, your files are protected and recoverable. |
-|Network protection |Your organization's security team can protect your network by blocking specific URLs and IP addresses. |
-|File blocking |Your organization's security team can block specific files. |
+|File recovery via OneDrive |If you are using Office 365 and  your device is attacked by ransomware, with Windows Defender Antivirus in place, your files are protected and recoverable. [OneDrive Files Restore and Windows Defender take ransomware protection one step further](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-Restore-and-Windows-Defender-takes-ransomware/ba-p/188001).|
+|Network protection |Your organization's security team can protect your network by blocking specific URLs and IP addresses. [Protect your network](../microsoft-defender-atp/network-protection.md).|
+|File blocking |Your organization's security team can block specific files. [Stop and quarantine files in your network](../microsoft-defender-atp/respond-file-alerts.md#stop-and-quarantine-files-in-your-network).|
 |Auditing events |Auditing event signals are available in [endpoint detection and response capabilities](../microsoft-defender-atp/overview-endpoint-detection-response.md). (These signals are not available with non-Microsoft antivirus.) |
 |Details about blocked malware | |
 
