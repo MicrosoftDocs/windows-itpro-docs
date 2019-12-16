@@ -42,6 +42,22 @@ To see your HoloLens files in File Explorer on your PC:
 >[!TIP]
 >To see info about your HoloLens, right-click the device name in File Explorer on your PC, then select **Properties**.
 
+## View HoloLens files on Windows Device Portal
+
+>[!NOTE]
+>To use Device Portal you must enable [Developer Mode](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal).
+
+1. Enable Developer Mode and Device Portal on your HoloLens. (See note above if not enabled.)
+
+1. Navigate to the Device Portal page on your PC.
+    1. To connect to a HoloLens connected to your PC type in 127.0.0.1:10080/ in your browser.
+    1. To connect to a HoloLens wirelessly instead navigate to your IP address. 
+  
+>[!TIP]
+>You may need to install a certificate, OR you may see more details and navigate to the website anyways. (Path per web broswer will differ.)
+
+1. Once succesfully connected, on the left side of the windw you can navigate to the [File Explorer](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#file-explorer) workspace.
+
 ## Sync to the cloud
 
 To sync photos and other files from your HoloLens to the cloud, install and set up OneDrive on HoloLens. To get OneDrive, search for it in the Microsoft Store on your HoloLens.

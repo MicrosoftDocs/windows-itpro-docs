@@ -69,6 +69,6 @@ You can set the Microsoft Teams app mode using Intune. Surface Hub 2S comes inst
 To set modes, add the following settings to a custom Device Configuration Profile.
 
 |**Name**|**Description**|**OMA-URI**|**Type**|**Value**|
-|:------ |:------------- |:--------- |:------ |:------- |
-|**Teams App ID**| App name | ./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId | String  | Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams­­ |
-|**Teams App Mode**| Teams mode | ./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode | Integer | 0 or 1 or 2 |
+|:--- |:--- |:--- |:--- |:--- |
+|**Teams App ID**|App name|./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId|String| Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams|
+|**Teams App Mode**|Teams mode|./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode|Integer| 0 or 1 or 2|
