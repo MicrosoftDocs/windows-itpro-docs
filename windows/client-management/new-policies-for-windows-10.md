@@ -31,7 +31,7 @@ The following Group Policy settings were added in Windows 10, version 1903:
 
 **System**
 
-- System\Service Control Manager Access\Security Securty\Enable svchost.exe migitation options
+- System\Service Control Manager Settings\Security Settings\Enable svchost.exe mitigation options
 - System\Storage Sense\Allow Storage Sense
 - System\Storage Sense\Allow Storage Sense Temporary Files cleanup
 - System\Storage Sense\Configure Storage Sense
@@ -520,7 +520,6 @@ No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=
 
 
  
-
 
 
 
