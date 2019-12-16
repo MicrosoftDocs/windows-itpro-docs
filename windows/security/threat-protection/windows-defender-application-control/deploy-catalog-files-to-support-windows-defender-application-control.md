@@ -1,6 +1,6 @@
 ---
 title: Deploy catalog files to support Windows Defender Application Control (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+description: Catalog files simplify running unsigned applications in the presence of a Windows Defender Application Control (WDAC) policy.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
@@ -17,7 +17,7 @@ manager: dansimp
 ms.date: 02/28/2018
 ---
 
-# Deploy catalog files to support Windows Defender Application Control   
+# Deploy catalog files to support Windows Defender Application Control
 
 **Applies to:**
 

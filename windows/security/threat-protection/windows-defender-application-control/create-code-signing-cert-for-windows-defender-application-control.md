@@ -1,6 +1,6 @@
 ---
 title: Create a code signing cert for Windows Defender Application Control  (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+description: Learn how to set up a publicly-issued code signing certificate, so you can sign catalog files or WDAC policies internally.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.reviewer: 
