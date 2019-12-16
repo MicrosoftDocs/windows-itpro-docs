@@ -154,7 +154,6 @@ These procedures configure NTFS and share permissions on the web server to allow
 ![CDP Share Permissions](images/aadj/cdp-share-permissions.png)
 9. In the **Advanced Sharing** dialog box, click **OK**.
 
-
 #### Disable Caching 
 1. On the web server, open **Windows Explorer** and navigate to the **cdp** folder you created in step 3 of [Configure the Web Server](#configure-the-web-server).
 2. Right-click the **cdp** folder and click **Properties**.  Click the **Sharing** tab.  Click **Advanced Sharing**.
@@ -339,4 +338,3 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). 
  
-
