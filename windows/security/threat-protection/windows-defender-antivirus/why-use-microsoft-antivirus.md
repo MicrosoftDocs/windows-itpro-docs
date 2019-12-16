@@ -19,5 +19,7 @@ manager: dansimp
 
 # 10 good reasons to use Windows Defender Antivirus together with Microsoft Defender Advanced Threat Protection
 
+Windows Defender Antivirus is the next-generation protection component of [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md) (Microsoft Defender ATP). Although you can integrate non-Microsoft antivirus offerings with Microsoft Defender ATP, there are at least 10 good reasons to use Windows Defender Antivirus together with Microsoft Defender ATP. This article summarizes those reasons and provides links to additional information.
+
 
 
