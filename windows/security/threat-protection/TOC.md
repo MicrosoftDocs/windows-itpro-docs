@@ -42,7 +42,7 @@
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 
 ### [Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
-#### [10 good reasons to use Windows Defender Antivirus](windows-defender-antivirus/why-use-microsoft-antivirus.md)
+#### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
 
 ### [Endpoint detection and response]()
 #### [Endpoint detection and response overview](microsoft-defender-atp/overview-endpoint-detection-response.md)
