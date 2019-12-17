@@ -1,6 +1,6 @@
 ---
 title: Windows 10 Subscription Activation
-description: How to dynamically enable Windows 10 Enterprise or Educations subscriptions
+description: How to dynamically enable Windows 10 Enterprise or Education subscriptions
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
