@@ -30,7 +30,7 @@ Windows Defender Antivirus is the next-generation protection component of [Micro
 |File blocking |Your organization's security team can block specific files. [Stop and quarantine files in your network](../microsoft-defender-atp/respond-file-alerts.md#stop-and-quarantine-files-in-your-network).|
 |Auditing events |Auditing event signals are available in [endpoint detection and response capabilities](../microsoft-defender-atp/overview-endpoint-detection-response.md). (These signals are not available with non-Microsoft antivirus solutions.) |
 |Details about blocked malware |More details and actions for blocked malware are available with Windows Defender Antivirus and Microsoft Defender ATP. For example, NEED AN EXAMPLE HERE. [Understand malware & other threats](../intelligence/understanding-malware.md).|
-| | |
+|Threat analytics and Secure Score |Windows Defender Antivirus collects underlying system data used by [threat analytics](../microsoft-defender-atp/threat-analytics.md) and [secure score](../microsoft-defender-atp/overview-secure-score.md). This provides your organization's security team with more meaningful information than would be available with non-Microsoft antivirus offerings. |
 
 ## Learn more
 
