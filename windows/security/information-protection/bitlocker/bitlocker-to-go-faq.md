@@ -1,6 +1,6 @@
 ---
 title: BitLocker To Go FAQ (Windows 10)
-description: This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.
+description: Learn more about Bitlocker To Go — Bitlocker drive encryption for removable drives.
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
 ms.reviewer: 
 ms.author: dansimp
