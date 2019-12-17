@@ -19,6 +19,10 @@ manager: dansimp
 
 # Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection
 
+**Applies to:**
+
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
 Windows Defender Antivirus is the next-generation protection component of [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md) (Microsoft Defender ATP). Although you can use a non-Microsoft antivirus offering with Microsoft Defender ATP, there are certain advantages to using Windows Defender Antivirus together with Microsoft Defender ATP. 
 
 ## 10 good reasons to use Windows Defender Antivirus together with Microsoft Defender ATP
