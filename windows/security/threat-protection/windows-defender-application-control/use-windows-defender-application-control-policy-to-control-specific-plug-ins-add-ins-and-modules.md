@@ -44,7 +44,7 @@ $rule += New-CIPolicyRule -DriverFilePath '.\temp\addin2.dll' -Level FileName -A
 New-CIPolicy -Rules $rule -FilePath ".\AllowERPAddins.xml" -UserPEs
 ```
 
-As another example, to create a WDAC policy that blocks **addin3.dll** from running in Microsoft Word, run the following command. You must include the `-Deny` option to block the specified add-ins in the specifed application:
+As another example, to create a WDAC policy that blocks **addin3.dll** from running in Microsoft Word, run the following command. You must include the `-Deny` option to block the specified add-ins in the specified application:
 
 ```
 $rule = New-CIPolicyRule -DriverFilePath '.\temp\addin3.dll' -Level FileName -Deny -AppID '.\winword.exe'
