@@ -9,7 +9,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -74,6 +75,8 @@ Each OEM has a unique link to provide to their respective customers, which the O
 3. Customer selects the **Yes** checkbox, followed by the **Accept** button, and they’re done.  Authorization happens instantaneously.
 
 4. The OEM can use the Validate Device Submission Data API to verify the consent has completed.  This API is discussed in the latest version of the API Whitepaper, p. 14ff [https://devicepartner.microsoft.com/assets/detail/windows-autopilot-integration-with-oem-api-design-whitepaper-docx](https://devicepartner.microsoft.com/assets/detail/windows-autopilot-integration-with-oem-api-design-whitepaper-docx). **Note**: this link is only accessible by Microsoft Device Partners. As discussed in this whitepaper, it’s a best practice recommendation for OEM partners to run the API check to confirm they’ve received customer consent before attempting to register devices, thus avoiding errors in the registration process.
+
+    NOTE: During the OEM authorization registration process, no delegated admin permissions are granted to the OEM.
 
 ## Summary
 
