@@ -7,8 +7,8 @@ ms.manager: elizapo
 audience: itpro
 itproauthor: jaimeo
 author: jaimeo
+description: Discover the latest news articles, videos, and podcasts about Windows as a Service. Find resources for using Windows as a service within your organization. 
 ms.audience: itpro
-author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.localizationpriority: high
