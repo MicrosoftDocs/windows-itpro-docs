@@ -35,7 +35,7 @@ There are some minimum requirements for onboarding machines to the service. Lear
 Microsoft Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
 
 - Windows 10 Enterprise E5
-- Windows 10 Education E5
+- Windows 10 Education A5
 - Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5
 - Microsoft 365 A5 (M365 A5)
 
@@ -122,9 +122,9 @@ By default, this service is enabled, but it&#39;s good practice to check to ensu
    sc qc diagtrack
    ```
 
-If the service is enabled, then the result should look like the following screenshot:
+    If the service is enabled, then the result should look like the following screenshot:
 
-![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
+    ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
 If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the service to automatically start.
 
