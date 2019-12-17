@@ -122,9 +122,9 @@ By default, this service is enabled, but it&#39;s good practice to check to ensu
    sc qc diagtrack
    ```
 
-If the service is enabled, then the result should look like the following screenshot:
+    If the service is enabled, then the result should look like the following screenshot:
 
-![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
+    ![Result of the sc query command for diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
 If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the service to automatically start.
 
