@@ -30,7 +30,11 @@ Windows Defender Antivirus is the next-generation protection component of [Micro
 |File blocking |Your organization's security team can block specific files. [Stop and quarantine files in your network](../microsoft-defender-atp/respond-file-alerts.md#stop-and-quarantine-files-in-your-network).|
 |Auditing events |Auditing event signals are available in [endpoint detection and response capabilities](../microsoft-defender-atp/overview-endpoint-detection-response.md). (These signals are not available with non-Microsoft antivirus solutions.) |
 |Details about blocked malware |More details and actions for blocked malware are available with Windows Defender Antivirus and Microsoft Defender ATP. For example, NEED AN EXAMPLE HERE. [Understand malware & other threats](../intelligence/understanding-malware.md).|
-|Threat analytics and Secure Score |Windows Defender Antivirus collects underlying system data used by [threat analytics](../microsoft-defender-atp/threat-analytics.md) and [secure score](../microsoft-defender-atp/overview-secure-score.md). This provides your organization's security team with more meaningful information than would be available with non-Microsoft antivirus offerings. |
+|Threat analytics and Secure Score |Windows Defender Antivirus collects underlying system data used by [threat analytics](../microsoft-defender-atp/threat-analytics.md) and [secure score](../microsoft-defender-atp/overview-secure-score.md). This provides your organization's security team with more meaningful information, such as recommendations and opportunities to improve your organization's security posture. |
+|Geographic location |Compliant with ISO 270001 and data retention, geographic data is provided according to your organization's selected geographic sovereignty. See [Compliance offerings: ISO/IEC 27001:2013 Information Security Management Standards](https://docs.microsoft.com/microsoft-365/compliance/offering-iso-27001). |
+|Performance |Microsoft Defender ATP is designed to work with Windows Defender Antivirus, so you get better performance when you use these offerings together. |
+|Technical support |By using Microsoft Defender ATP together with Windows Defender Antivirus, you have one company to call for technical support.  |
+|Antivirus signal sharing |Microsoft applications and services share signals across your enterprise organization, providing a stronger single platform. |
 
 ## Learn more
 
