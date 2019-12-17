@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 10/14/2019
+ms.date: 12/17/2019
 ms.reviewer: 
 manager: dansimp
 ms.custom: nextgen
