@@ -30,7 +30,7 @@ In this section we share PowerShell samples to
 - Use token to retrieve the latest alerts in Microsoft Defender ATP
 - For each alert, if the alert has medium or high priority and is still in progress, check how many times the machine has connected to suspicious URL.
 
->**Prerequisite**: You first need to [create an app](apis-intro.md).
+**Prerequisite**: You first need to [create an app](apis-intro.md).
 
 ## Preparation Instructions
 
