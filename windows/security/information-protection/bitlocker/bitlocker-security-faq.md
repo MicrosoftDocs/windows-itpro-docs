@@ -1,6 +1,6 @@
 ---
 title: BitLocker Security FAQ (Windows 10)
-description: Learn more about how Bitlocker security works. Browse frequently asked questions, such as, "What form of encryption does BitLocker use?"
+description: Learn more about how BitLocker security works. Browse frequently asked questions, such as, "What form of encryption does BitLocker use?"
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
 ms.reviewer: 
 ms.prod: w10
