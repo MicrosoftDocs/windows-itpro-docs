@@ -30,7 +30,7 @@ If the upgrade process is not successful, Windows Setup will return two codes:
 1. **A result code**: The result code corresponds to a specific Win32 or NTSTATUS error.
 2. **An extend code**: The extend code contains information about both the *phase* in which an error occurred, and the *operation* that was being performed when the error occurred.
 
->For example, a result code of **0xC1900101** with an extend code of **0x4000D** will be returned as: **0xC1900101 - 0x4000D**.
+For example, a result code of **0xC1900101** with an extend code of **0x4000D** will be returned as: **0xC1900101 - 0x4000D**.
 
 Note: If only a result code is returned, this can be because a tool is being used that was not able to capture the extend code. For example, if you are using the [Windows 10 Upgrade Assistant](https://support.microsoft.com/kb/3159635) then only a result code might be returned.
 
@@ -39,7 +39,7 @@ Note: If only a result code is returned, this can be because a tool is being use
 
 ## Result codes
 
->A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <br>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Resolution procedures](resolution-procedures.md) section later in this article.
+A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <br>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Resolution procedures](resolution-procedures.md) section later in this article.
 
 The following set of result codes are associated with [Windows Setup](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-command-line-options) compatibility warnings:
 
@@ -77,7 +77,8 @@ Some result codes are self-explanatory, whereas others are more generic and requ
 
 ## Extend codes
 
->**Important**: Extend codes reflect the current Windows 10 upgrade process, and might change in future releases of Windows 10. The codes discussed in this section apply to Windows 10 version 1607, also known as the Anniversary Update.
+>[!IMPORTANT]
+>Extend codes reflect the current Windows 10 upgrade process, and might change in future releases of Windows 10. The codes discussed in this section apply to Windows 10 version 1607, also known as the Anniversary Update.
 
 Extend codes can be matched to the phase and operation when an error occurred. To match an extend code to the phase and operation:
 
