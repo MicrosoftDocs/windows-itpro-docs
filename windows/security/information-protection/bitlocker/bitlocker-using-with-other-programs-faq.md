@@ -1,6 +1,6 @@
 ---
 title: Using BitLocker with other programs FAQ (Windows 10)
-description: Learn how to integrate Bitlocker with other software on your device.
+description: Learn how to integrate BitLocker with other software on your device.
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
 ms.reviewer: 
 ms.prod: w10
