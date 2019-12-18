@@ -1,6 +1,6 @@
 ---
 title: BitLocker deployment and administration FAQ (Windows 10)
-description: Browse frequently asked questions about Bitlocker deployment and administration, such as, "Can BitLocker deployment be automated in an enterprise environment?"
+description: Browse frequently asked questions about BitLocker deployment and administration, such as, "Can BitLocker deployment be automated in an enterprise environment?"
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
 ms.reviewer: 
 ms.prod: w10
