@@ -18,27 +18,29 @@ ms.date: 11/26/2019
 
 # Windows Autopilot and Surface devices
 
-Windows Autopilot is a cloud-based deployment technology in Windows 10. You can use Windows Autopilot to remotely deploy and configure devices in a zero-touch process right out of the box. Windows Autopilot-registered devices are identified over the Internet at first startup through a unique device signature that's called a *hardware hash*. Device are  automatically enrolled and configured by using modern management solutions such as Azure Active Directory (AAD) and mobile device management.
+Windows Autopilot is a cloud-based deployment technology in Windows 10. You can use Windows Autopilot to remotely deploy and configure devices in a zero-touch process right out of the box.
 
-With Surface, you can choose to register your devices at the time of purchase from a Surface partner that's enabled for Windows Autopilot. New devices can be shipped directly to your end-users. The devices will be automatically enrolled and configured when they are unboxed and turned on for the first time. This process  eliminates the need to reimage devices as part of deployment, which which allows you to implement new, agile methods for device management and distribution.
+Windows Autopilot-registered devices are identified over the Internet at first startup through a unique device signature that's called a *hardware hash*. They're automatically enrolled and configured by using modern management solutions such as Azure Active Directory (AAD) and mobile device management.
+
+You can register Surface devices at the time of purchase from a Surface partner that's enabled for Windows Autopilot. These partners can ship new devices directly to your users. The devices will be automatically enrolled and configured when they are first turned on. This process eliminates reimaging during deployment, which lets you implement new, agile methods of device management and distribution.
 
 ## Modern management
-Autopilot is the recommended deployment option for Surface devices including Surface Pro 7, Surface Laptop 3, and Surface Pro X, which is specifically designed to be deployed with Autopilot.
+Autopilot is the recommended deployment option for Surface devices including Surface Pro 7, Surface Laptop 3, and Surface Pro X, which is specifically designed to be deployed through Autopilot.
 
- For the best experience, enroll your Surface devices with the assistance of a Microsoft Cloud Solution Provider. That method allows you to manage UEFI firmware settings on Surface devices directly from Intune, eliminating the need to physically touch devices for certificate management. For more information, see [Intune management of Surface UEFI settings](surface-manage-dfci-guide.md).
+ For the best experience, enroll your Surface devices with the help of a Microsoft Cloud Solution Provider. That method allows you to manage UEFI firmware settings on Surface directly from Intune. It eliminates the need to physically touch devices for certificate management. See [Intune management of Surface UEFI settings](surface-manage-dfci-guide.md) for details.
 
 ## Windows version considerations
 Broad deployment of Surface devices through Windows Autopilot, including enrollment by Surface partners at the time of purchase, requires Windows 10 Version 1709 (Fall Creators Update) or later.
 
- These versions support a 4000-byte (4k) hash value to uniquely identify devices for Windows Autopilot that's necessary for deployments at scale.  All new Surface devices including Surface Pro 7, Surface Pro X, and Surface Laptop 3, ship with Windows 10 Version 1903 or later.
+These versions support a 4,000-byte (4k) hash value to uniquely identify devices for Windows Autopilot, which is necessary for deployments at scale. All new Surface devices, including Surface Pro 7, Surface Pro X, and Surface Laptop 3, ship with Windows 10 Version 1903 or later.
 
 ## Surface partners enabled for Windows Autopilot
 
-Select Surface partners can enroll Surface devices in Windows Autopilot at the time of purchase for your organization. 
+Select Surface partners can enroll Surface devices in Windows Autopilot at the time of purchase for your organization.
 
 These partners can ship enrolled devices directly to your users. And the devices can be configured entirely through the zero-touch process of Windows Autopilot, Azure AD, and mobile device management.
 
-Surface partners enabled for Windows Autopilot include: 
+Surface partners enabled for Windows Autopilot include:
 
 - [ALSO](https://www.also.com/ec/cms5/de_1010/1010_anbieter/microsoft/windows-autopilot/index.jsp) 
 - [Atea](https://www.atea.com/)
@@ -53,6 +55,6 @@ Surface partners enabled for Windows Autopilot include:
 - [Techdata](https://www.techdata.com/)
 
 ## Learn more
-For more information about Windows Autopilot, refer to:
+For more information about Windows Autopilot, see:
 - [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)
 - [Windows Autopilot requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements)
