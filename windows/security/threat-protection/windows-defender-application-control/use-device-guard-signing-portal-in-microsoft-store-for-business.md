@@ -1,6 +1,6 @@
 ---
 title: Use the Device Guard Signing Portal in the Microsoft Store for Business  (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+description: You can sign code integrity policies with the Device Guard signing portal to prevent them from being tampered with after they're deployed.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.reviewer: 
