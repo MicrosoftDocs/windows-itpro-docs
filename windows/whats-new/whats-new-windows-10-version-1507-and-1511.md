@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10, versions 1507 and 1511 (Windows 10)
-description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 and Windows 10 Mobile.
+description: This topic lists new and updated topics in the What's new in Windows 10 documentation for Windows 10 (versions 1507 and 1511) and Windows 10 Mobile.
 ms.assetid: 75F285B0-09BE-4821-9B42-37B9BE54CEC6
 ms.reviewer: 
 ms.prod: w10
@@ -143,7 +143,7 @@ The logon event ID 4624 has been updated to include more verbose information to 
     A list of all of the groups in the user's token.
 6.  **RestrictedAdminMode** String: yes or no
     If the user logs into the PC in restricted admin mode with Remote Desktop, this field will be yes.
-    For more info on restricted admin mode, see [Restricted Admin mode for RDP](http://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx).
+    For more information about restricted admin mode, see [Restricted Admin mode for RDP](https://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx).
 
 ##### <a href="" id="bkmk-process"></a>New fields in the process creation event
 
@@ -216,7 +216,8 @@ Some things that you can check on the device are:
 -   Is BitLocker Drive Encryption supported and enabled?
 -   Is SecureBoot supported and enabled?
 
-> **Note**  The device must be running Windows 10 and it must support at least TPM 2.0.
+>[!NOTE]
+>The device must be running Windows 10 and it must support at least TPM 2.0.
 
 [Learn how to deploy and manage TPM within your organization](/windows/device-security/tpm//trusted-platform-module-overview).
 
@@ -279,8 +280,8 @@ Enterprises have the following identity and management choices.
 | Grouping   | Domain join; Workgroup; Azure AD join    |
 | Device management | Group Policy; System Center Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
- > **Note**  
-With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
+>[!NOTE]  
+>With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
 
  
 ### Device lockdown
