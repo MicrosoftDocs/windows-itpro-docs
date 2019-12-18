@@ -1,6 +1,6 @@
 ---
 title: BitLocker Upgrading FAQ (Windows 10)
-description: Learn more about upgrading systems that have Bitlocker enabled.
+description: Learn more about upgrading systems that have BitLocker enabled.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
