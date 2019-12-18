@@ -37,7 +37,7 @@ Windows 10 upgrade options are discussed and information is provided about plann
 
 ## Related topics
 
-[Modern Destkop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home)
+[Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home)
 
  
 
