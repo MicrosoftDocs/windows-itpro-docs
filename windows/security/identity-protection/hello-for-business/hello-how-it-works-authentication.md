@@ -1,6 +1,6 @@
 ---
 title: How Windows Hello for Business works - Authentication
-description: Explains registration, authentication, key material, and infrastructure for Windows Hello for Business.
+description: Learn about the authentication flow for  Windows Hello for Business.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

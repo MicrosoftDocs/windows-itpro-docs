@@ -1,6 +1,6 @@
 ---
 title: How Windows Hello for Business works - Provisioning
-description: Explains registration, authentication, key material, and infrastructure for Windows Hello for Business.
+description: Explore the provisioning flows for Windows Hello for Business, from within a variety of environments.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
