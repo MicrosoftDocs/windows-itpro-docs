@@ -1,6 +1,6 @@
 ---
 title: BitLocker Network Unlock FAQ (Windows 10)
-description: Familiarize yourself with Bitlocker Network Unlock. Learn how it can make desktop and server management easier within domain environments.
+description: Familiarize yourself with BitLocker Network Unlock. Learn how it can make desktop and server management easier within domain environments.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
