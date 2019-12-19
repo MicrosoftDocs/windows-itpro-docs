@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot for existing devices
-description: Windows Autopilot deployment
+description: Modern desktop deployment with Windows Autopilot enables you to easily deploy the latest version of Windows 10 to your existing devices.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.reviewer: mniehaus
 manager: laurawi
