@@ -20,22 +20,24 @@ ms.custom:
 
 # VAMT known issues
 
-The following list (and the section that follows) contains the current known issues with the Volume Activation Management Tool (VAMT) 3.0.
+The following list and the section that follows contain the current known issues regarding the Volume Activation Management Tool (VAMT) 3.0.
 
-- The VAMT Windows Management Infrastructure (WMI) remote operations may take longer to execute if the target computer is in a sleep or standby state.
-- Recovery of Non-Genuine computers is a two-step process. VAMT can be used to install a new product key and activate the computer. However, the computer itself must visit the [Windows Genuine Advantage](https://go.microsoft.com/fwlink/p/?linkid=182914) Web site to revalidate the computer's Genuine status. Upon successfully completing this step, the computer will be restored to full functionality. For more information on recovering Non-Genuine Windows computers, go to [Windows Volume Activation](https://go.microsoft.com/fwlink/p/?linkid=184668).
-- When opening a Computer Information List (.cil file) saved in a previous version of VAMT, the edition information is not shown for each product in the center pane. Users must update the product status again to obtain the edition information.
+- VAMT Windows Management Infrastructure (WMI) remote operations may take longer to execute if the target computer is in a sleep or standby state.
+- Recovery of a non-genuine computer is a two-step process, as follows:
+   1. Use VAMT to install a new product key and activate the computer.
+   1. To revalidate the computer's Genuine status, use the computer to access the [Windows Genuine Advantage](https://go.microsoft.com/fwlink/p/?linkid=182914) website. Upon successfully completing this step, the computer will be restored to full functionality. For more information on recovering non-genuine Windows-based computers, see [Windows Volume Activation](https://go.microsoft.com/fwlink/p/?linkid=184668).
+- When opening a Computer Information List (.cil file) that was saved by using a previous version of VAMT, the edition information is not shown for each product in the center pane. Users must update the product status again to obtain the edition information.
 - The remaining activation count can only be retrieved for MAKs.
  
 ## Can't add CSVLKs for Windows 10 activation to VAMT 3.1
 
-When you try to add a Windows 10 Key Management Service (KMS) Host key (CSVLK) or a Windows Server 2012 R2 for Windows 10 CSVLK into Volume Activation Management Tool (VAMT) 3.1 (version 10.0.10240.0), you receive the following error message:
+When you try to add a Windows 10 Key Management Service (KMS) Host key (CSVLK) or a Windows Server 2012 R2 for Windows 10 CSVLK into VAMT 3.1 (version 10.0.10240.0), you receive the following error message:
 
 > The specified product key is invalid, or is unsupported by this version of VAMT. An update to support additional products may be available online.
 
-![](./111496-1.png)
+![VAMT error message](./images/vamt-known-issue-message.png)
 
-This issue occurs because VAMT 3.1 does not contain the correct pkconfig files to recognize this kind of key.
+This issue occurs because VAMT 3.1 does not contain the correct Pkconfig files to recognize this kind of key.
 
 ### Workaround
 
@@ -43,7 +45,7 @@ To work around this issue, use one of the following methods.
 
 **Method 1**
 
-Do not add the CSVLK to the VAMT 3.1 tool. Instead, use the **slmgr.vbs /ipk \<*CSVLK*>** command-line tool to install a CSVLK on a KMS host (where \<*CSVLK*> represents the specific key that you want to install). For more information about using the slmgr.vbs tool, see [Slmgr.vbs options for obtaining volume activation information](https://docs.microsoft.com/windows-server/get-started/activation-slmgr-vbs-options).
+Do not add the CSVLK to the VAMT 3.1 tool. Instead, use the **slmgr.vbs /ipk \<*CSVLK*>** command-line tool to install a CSVLK on a KMS host (where \<*CSVLK*> represents the specific key that you want to install). For more information about using the Slmgr.vbs tool, see [Slmgr.vbs options for obtaining volume activation information](https://docs.microsoft.com/windows-server/get-started/activation-slmgr-vbs-options).
 
 **Method 2**
 
