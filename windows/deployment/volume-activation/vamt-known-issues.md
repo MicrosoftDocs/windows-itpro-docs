@@ -1,6 +1,6 @@
 ---
 title: VAMT known issues (Windows 10)
-description: VAMT known issues
+description: Volume Activation Management Tool (VAMT) known issues
 ms.assetid: 8992f1f3-830a-4ce7-a248-f3a6377ab77f
 ms.reviewer: 
 manager: laurawi
@@ -20,10 +20,10 @@ ms.custom:
 
 # VAMT known issues
 
-The following list and the section that follows contain the current known issues regarding the Volume Activation Management Tool (VAMT) 3.0.
+The following list and the section that follows contain the current known issues regarding the Volume Activation Management Tool (VAMT), versions 3.0. and 3.1.
 
 - VAMT Windows Management Infrastructure (WMI) remote operations might take longer to execute if the target computer is in a sleep or standby state.
-- When opening a Computer Information List (.cil file) that was saved by using a previous version of VAMT, the edition information is not shown for each product in the center pane. Users must update the product status again to obtain the edition information.
+- When opening a Computer Information List (CIL file) that was saved by using a previous version of VAMT, the edition information is not shown for each product in the center pane. Users must update the product status again to obtain the edition information.
 - The remaining activation count can only be retrieved for MAKs.
 
 ## Can't add CSVLKs for Windows 10 activation to VAMT 3.1
