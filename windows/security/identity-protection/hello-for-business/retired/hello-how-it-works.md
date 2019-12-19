@@ -1,6 +1,6 @@
 ---
 title: How Windows Hello for Business works (Windows 10)
-description: Explains registration, authentication, key material, and infrastructure for Windows Hello for Business.
+description: Learn about registration, authentication, key material, and infrastructure for Windows Hello for Business.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library

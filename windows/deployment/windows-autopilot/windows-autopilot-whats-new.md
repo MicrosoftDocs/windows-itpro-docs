@@ -2,7 +2,7 @@
 title: Windows Autopilot what's new
 ms.reviewer: 
 manager: laurawi
-description: Windows Autopilot deployment
+description: Read news and resources about the latest updates and past versions of Windows Autopilot.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy
