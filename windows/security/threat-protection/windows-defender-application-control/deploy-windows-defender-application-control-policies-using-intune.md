@@ -27,7 +27,7 @@ ms.date: 05/17/2018
 -   Windows 10
 -   Windows Server 2016
 
-You can use Microsoft Intune to configure Windows Defender Application Control (WDAC). You can configure the Endpoint protection profile for WDAC or a custom profile with an OMA-URI. You can configure Windows 10 client computers to only run Windows components and Microsoft Store apps, or let them also run reputable apps defined by the Intelligent Security Graph.   
+You can use Microsoft Intune to configure Windows Defender Application Control (WDAC). You can either configure an Endpoint Protection profile for WDAC, or create a custom profile with an OMA-URI setting. Using an Endpoint Protection profile, you can configure Windows 10 client computers to only run Windows components and Microsoft Store apps, or let them also run reputable apps defined by the Intelligent Security Graph.   
 
 1. Open the Microsoft Intune portal and click **Device configuration** > **Profiles** > **Create profile**.
 
