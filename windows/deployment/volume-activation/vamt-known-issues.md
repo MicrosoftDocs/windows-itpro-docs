@@ -25,7 +25,7 @@ The following list and the section that follows contain the current known issues
 - VAMT Windows Management Infrastructure (WMI) remote operations might take longer to execute if the target computer is in a sleep or standby state.
 - When opening a Computer Information List (.cil file) that was saved by using a previous version of VAMT, the edition information is not shown for each product in the center pane. Users must update the product status again to obtain the edition information.
 - The remaining activation count can only be retrieved for MAKs.
- 
+
 ## Can't add CSVLKs for Windows 10 activation to VAMT 3.1
 
 When you try to add a Windows 10 Key Management Service (KMS) Host key (CSVLK) or a Windows Server 2012 R2 for Windows 10 CSVLK into VAMT 3.1 (version 10.0.10240.0), you receive the following error message:
@@ -42,7 +42,7 @@ To work around this issue, use one of the following methods.
 
 **Method 1**
 
-Do not add the CSVLK to the VAMT 3.1 tool. Instead, use the **slmgr.vbs /ipk \<*CSVLK*>** command-line tool to install a CSVLK on a KMS host (where \<*CSVLK*> represents the specific key that you want to install). For more information about using the Slmgr.vbs tool, see [Slmgr.vbs options for obtaining volume activation information](https://docs.microsoft.com/windows-server/get-started/activation-slmgr-vbs-options).
+Do not add the CSVLK to the VAMT 3.1 tool. Instead, use the **slmgr.vbs /ipk \<*CSVLK*>** command-line tool to install a CSVLK on a KMS host. In this command, \<*CSVLK*> represents the specific key that you want to install. For more information about how to use the Slmgr.vbs tool, see [Slmgr.vbs options for obtaining volume activation information](https://docs.microsoft.com/windows-server/get-started/activation-slmgr-vbs-options).
 
 **Method 2**
 
@@ -52,13 +52,13 @@ On the KMS host computer, follow these steps:
 
 1. In Windows Explorer, right-click **485392_intl_x64_zip**, and then extract the hotfix to **C:\KB3058168**.
 
-1. Open a Command Prompt window, and extract the contents of the update by running the following command:
+1. To extract the contents of the update, open a Command Prompt window and run the following command:
 
    ```cmd
    expand c:\KB3058168\Windows8.1-KB3058168-x64.msu -f:* C:\KB3058168\
    ```
 
-1. Extract the contents of Windows8.1-KB3058168-x64.cab by running the following command:
+1. To extract the contents of Windows8.1-KB3058168-x64.cab, run the following command:
 
    ```cmd
    expand c:\KB3058168\Windows8.1-KB3058168-x64.cab -f:pkeyconfig-csvlk.xrm-ms c:\KB3058168
