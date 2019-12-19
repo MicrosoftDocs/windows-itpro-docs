@@ -22,10 +22,10 @@ ms.custom:
 
 The following list and the section that follows contain the current known issues regarding the Volume Activation Management Tool (VAMT) 3.0.
 
-- VAMT Windows Management Infrastructure (WMI) remote operations may take longer to execute if the target computer is in a sleep or standby state.
-- Recovery of a non-genuine computer is a two-step process, as follows:
+- VAMT Windows Management Infrastructure (WMI) remote operations might take longer to execute if the target computer is in a sleep or standby state.
+- To recover a non-Genuine computer, follow these steps:
    1. Use VAMT to install a new product key and activate the computer.
-   1. To revalidate the computer's Genuine status, use the computer to access the [Windows Genuine Advantage](https://go.microsoft.com/fwlink/p/?linkid=182914) website. Upon successfully completing this step, the computer will be restored to full functionality. For more information on recovering non-genuine Windows-based computers, see [Windows Volume Activation](https://go.microsoft.com/fwlink/p/?linkid=184668).
+   1. To revalidate the Genuine status of the computer, use the computer to access the [Windows Genuine Advantage](https://go.microsoft.com/fwlink/p/?linkid=182914) website. This step restores the computer to full functionality. For more information about recovering non-genuine Windows-based computers, see [Windows Volume Activation](https://go.microsoft.com/fwlink/p/?linkid=184668).
 - When opening a Computer Information List (.cil file) that was saved by using a previous version of VAMT, the edition information is not shown for each product in the center pane. Users must update the product status again to obtain the edition information.
 - The remaining activation count can only be retrieved for MAKs.
  
