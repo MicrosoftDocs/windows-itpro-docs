@@ -1221,7 +1221,7 @@ ShellLauncherConfiguration Add
 </SyncML>
 ```
 
-ShellLauncherConfiguration Add AutoLogon
+ShellLauncherConfiguration Add AutoLogon, this will create an autologon account (standard user, no password) on your behalf.  The autologon account is managed by AssignedAccessCSP so the account name is not exposed.
 ```
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
