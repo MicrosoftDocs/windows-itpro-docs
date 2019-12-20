@@ -72,7 +72,7 @@ You can find more information about each section, including options for configur
     ![Screen shot of Windows Settings showing the different areas available in the Windows Security](images/settings-windows-defender-security-center-areas.png)
 
 > [!NOTE]
-> Settings configured with management tools, such as Group Policy, Microsoft Intune, or System Center Configuration Manager, will generally take precedence over the settings in the Windows Security. See the topics for each of the sections for links to configuring the associated features or products.
+> Settings configured with management tools, such as Group Policy, Microsoft Intune, or Microsoft Endpoint Configuration Manager, will generally take precedence over the settings in the Windows Security. See the topics for each of the sections for links to configuring the associated features or products.
 
 ## How the Windows Security app works with Windows security features
 
@@ -98,7 +98,7 @@ The Windows Security app operates as a separate app or process from each of the 
 
 It acts as a collector or single place to see the status and perform some configuration for each of the features.
 
-Disabling any of the individual features (through Group Policy or other management tools, such as System Center Configuration Manager) will prevent that feature from reporting its status in the Windows Security app. The Windows Security app itself will still run and show status for the other security features.
+Disabling any of the individual features (through Group Policy or other management tools, such as Microsoft Endpoint Configuration Manager) will prevent that feature from reporting its status in the Windows Security app. The Windows Security app itself will still run and show status for the other security features.
 
 > [!IMPORTANT]
 > Individually disabling any of the services will not disable the other services or the Windows Security app.

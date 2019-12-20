@@ -32,9 +32,9 @@ If an employee goes to an untrusted site through either Microsoft Edge or Intern
 
 Application Guard has been created to target several types of systems:
 
-- **Enterprise desktops.** These desktops are domain-joined and managed by your organization. Configuration management is primarily done through System Center Configuration Manager or Microsoft Intune. Employees typically have Standard User privileges and use a high-bandwidth, wired, corporate network.
+- **Enterprise desktops.** These desktops are domain-joined and managed by your organization. Configuration management is primarily done through Microsoft Endpoint Configuration Manager or Microsoft Intune. Employees typically have Standard User privileges and use a high-bandwidth, wired, corporate network.
 
-- **Enterprise mobile laptops.** These laptops are domain-joined and managed by your organization. Configuration management is primarily done through System Center Configuration Manager or Microsoft Intune. Employees typically have Standard User privileges and use a high-bandwidth, wireless, corporate network.
+- **Enterprise mobile laptops.** These laptops are domain-joined and managed by your organization. Configuration management is primarily done through Microsoft Endpoint Configuration Manager or Microsoft Intune. Employees typically have Standard User privileges and use a high-bandwidth, wireless, corporate network.
 
 - **Bring your own device (BYOD) mobile laptops.** These personally-owned laptops are not domain-joined, but are managed by your organization through tools, such as Microsoft Intune. The employee is typically an admin on the device and uses a high-bandwidth wireless corporate network while at work and a comparable personal network while at home.
 

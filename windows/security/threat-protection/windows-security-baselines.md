@@ -51,7 +51,7 @@ In modern organizations, the security threat landscape is constantly evolving, a
 
 You can use security baselines to: 
 -   Ensure that user and device configuration settings are compliant with the baseline. 
--   Set configuration settings. For example, you can use Group Policy, System Center Configuration Manager, or Microsoft Intune to configure a device with the setting values specified in the baseline. 
+-   Set configuration settings. For example, you can use Group Policy, Microsoft Endpoint Configuration Manager, or Microsoft Intune to configure a device with the setting values specified in the baseline. 
 
 ## Where can I get the security baselines? 
 
@@ -73,7 +73,7 @@ You may also be interested in this msdn channel 9 video:
 
 ## See Also
 
--   [System Center Configuration Manager (SCCM)](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
+-   [Microsoft Endpoint Configuration Manager (SCCM)](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
 -   [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
 -   [Configuration Management for Nano Server](https://blogs.technet.microsoft.com/grouppolicy/2016/05/09/configuration-management-on-servers/)
 -   [Microsoft Security Guidance Blog](https://blogs.technet.microsoft.com/secguide/)

@@ -57,7 +57,7 @@ See the [Windows Defender Antivirus on Windows Server 2016](windows-defender-ant
 >[!IMPORTANT]
 >Windows Defender AV is only available on endpoints running Windows 10 or Windows Server 2016.  
 >  
->In Windows 8.1 and Windows Server 2012, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](https://technet.microsoft.com/library/hh508760.aspx), which is managed through System Center Configuration Manager.  
+>In Windows 8.1 and Windows Server 2012, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](https://technet.microsoft.com/library/hh508760.aspx), which is managed through Microsoft Endpoint Configuration Manager.  
 >  
 >Windows Defender is also offered for [consumer devices on Windows 8.1 and Windows Server 2012](https://technet.microsoft.com/library/dn344918#BKMK_WindowsDefender), although it does not provide enterprise-level management (or an interface on Windows Server 2012 Server Core installations). 
 

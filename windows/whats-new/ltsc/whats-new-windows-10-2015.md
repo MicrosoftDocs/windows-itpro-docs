@@ -34,11 +34,11 @@ With Windows 10, you can create provisioning packages that let you quickly and e
 
 ## Security
 
-### Applocker
+### AppLocker
 
-Applocker was available for Windows 8.1, and is improved with Windows 10. See [Requirements to use AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker.md) for a list of operating system requirements.
+AppLocker was available for Windows 8.1, and is improved with Windows 10. See [Requirements to use AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker.md) for a list of operating system requirements.
 
-Enhancements to Applocker in Windows 10 include:
+Enhancements to AppLocker in Windows 10 include:
 
 -   A new parameter was added to the [New-AppLockerPolicy](https://technet.microsoft.com/library/hh847211.aspx) Windows PowerShell cmdlet that lets you choose whether executable and DLL rule collections apply to non-interactive processes. To enable this, set the **ServiceEnforcement** to **Enabled**.
 -   A new [AppLocker](https://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) configuration service provider was add to allow you to enable AppLocker rules by using an MDM server.
@@ -46,9 +46,9 @@ Enhancements to Applocker in Windows 10 include:
 
 [Learn how to manage AppLocker within your organization](/windows/device-security/applocker/applocker-overview).
 
-### Bitlocker
+### BitLocker
 
-Enhancements to Applocker in Windows 10 include:
+Enhancements to AppLocker in Windows 10 include:
 
 -   **Encrypt and recover your device with Azure Active Directory**. In addition to using a Microsoft Account, automatic [Device Encryption](https://technet.microsoft.com/itpro/windows/keep-secure/windows-10-security-guide#device-encryption) can now encrypt your devices that are joined to an Azure Active Directory domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Azure Active Directory. This will make it easier to recover your BitLocker key online.
 -   **DMA port protection**. You can use the [DataProtection/AllowDirectMemoryAccess](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#dataprotection-allowdirectmemoryaccess) MDM policy to block DMA ports when the device is starting up. Also, when a device is locked, all unused DMA ports are turned off, but any devices that are already plugged into a DMA port will continue to work. When the device is unlocked, all DMA ports are turned back on.
@@ -60,11 +60,11 @@ Enhancements to Applocker in Windows 10 include:
 
 For Windows 10-based devices, you can use your MDM server to directly deploy client authentication certificates using Personal Information Exchange (PFX), in addition to enrolling using Simple Certificate Enrollment Protocol (SCEP), including certificates to enable Windows Hello for Business in your enterprise. You'll be able to use MDM to enroll, renew, and delete certificates. As in Windows Phone 8.1, you can use the [Certificates app](https://go.microsoft.com/fwlink/p/?LinkId=615824) to review the details of certificates on your device. [Learn how to install digital certificates on Windows 10 Mobile.](/windows/access-protection/installing-digital-certificates-on-windows-10-mobile)
 
-### Windows Live ID
+### Microsoft Passport
 
-In Windows 10, [Windows Live ID service](/windows/access-protection/hello-for-business/hello-identity-verification) replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.
+In Windows 10, [Microsoft Passport](/windows/access-protection/hello-for-business/hello-identity-verification) replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.
 
-Windows Live ID service lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Azure Active Directory (AD) account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Windows Live ID service enrollment, a Windows Live ID service is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Windows Live ID service to authenticate users and help them to access protected resources and services.
+Microsoft Passport lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Azure Active Directory (AD) account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Microsoft Passport enrollment, a Microsoft Passport is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Microsoft Passport to authenticate users and help them to access protected resources and services.
 
 ### Security auditing
 
@@ -174,7 +174,7 @@ Event ID 6416 has been added to track when an external device is detected throug
 
 The following sections describe the new and changed functionality in the TPM for Windows 10:
 -   [Device health attestation](#bkmk-dha)
--   [Windows Live ID](/windows/access-protection/hello-for-business/hello-identity-verification) support
+-   [Microsoft Passport](/windows/access-protection/hello-for-business/hello-identity-verification) support
 -   [Device Guard](/windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies) support
 -   [Credential Guard](/windows/access-protection/credential-guard/credential-guard) support
 
@@ -212,7 +212,7 @@ Windows 10 provides a set of VPN features that both increase enterprise security
 - App=triggered VPN
 - VPN traffic filters
 - Lock down VPN
-- Integration with Windows Live ID for Work
+- Integration with Microsoft Passport for Work
 
 [Learn more about the VPN options in Windows 10.](/windows/access-protection/vpn/vpn-profile-options)
 
@@ -270,7 +270,7 @@ A standard Start layout can be useful on devices that are common to multiple use
 
 Administrators can also use mobile device management (MDM) or Group Policy to disable the use of [Windows Spotlight on the lock screen](/windows/configuration/windows-spotlight).
 
-## Updates
+## Updates 
 
 Windows Update for Business enables information technology administrators to keep the Windows 10-based devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Microsoft’s Windows Update service.
 
@@ -280,7 +280,7 @@ By using [Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=699279
 
 -   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth very efficient.
 
--   **Use with existing tools** such as Microsoft Endpoint Configuration Manager and the [Enterprise Mobility + Security E3](https://go.microsoft.com/fwlink/p/?LinkId=699281).
+-   **Use with existing tools** such as Microsoft Endpoint Configuration Manager and the [Enterprise Mobility Suite](https://go.microsoft.com/fwlink/p/?LinkId=699281).
 
 Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) and [Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/gg682129.aspx).
 
