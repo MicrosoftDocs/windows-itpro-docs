@@ -1,6 +1,6 @@
 ---
 title: Windows To Go feature overview (Windows 10)
-description: Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that enables the creation of a Windows To Go workspace that can be booted from a USB-connected external drive on PCs.
+description: Windows To Go is a feature in Windows 10 Enterprise and Windows 10 Education that lets you create a workspace that can be booted from a USB-connected drive.
 ms.assetid: 9df82b03-acba-442c-801d-56db241f8d42
 ms.reviewer: 
 manager: laurawi
