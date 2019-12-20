@@ -1,6 +1,6 @@
 ---
 title: Deploy Windows Defender Application Control (WDAC) policies by using Microsoft Intune (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+description: You can use Microsoft Intune to configure Windows Defender Application Control (WDAC). Learn how with this step-by-step guide.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
@@ -27,7 +27,8 @@ ms.date: 05/17/2018
 -   Windows 10
 -   Windows Server 2016
 
-You can use Microsoft Intune to configure Windows Defender Application Control (WDAC). You can either configure an Endpoint Protection profile for WDAC, or create a custom profile with an OMA-URI setting. Using an Endpoint Protection profile, you can configure Windows 10 client computers to only run Windows components and Microsoft Store apps, or let them also run reputable apps defined by the Intelligent Security Graph.   
+
+You can use Microsoft Intune to configure Windows Defender Application Control (WDAC). You can either configure an Endpoint Protection profile for WDAC, or create a custom profile with an OMA-URI setting. By using an Endpoint Protection profile, you can configure Windows 10 client computers to only run Windows components and Microsoft Store apps, or let them also run reputable apps as defined by the Intelligent Security Graph.
 
 1. Open the Microsoft Intune portal and click **Device configuration** > **Profiles** > **Create profile**.
 
@@ -37,7 +38,7 @@ You can use Microsoft Intune to configure Windows Defender Application Control (
 
 4. Click **Configure** > **Windows Defender Application Control**, choose from the following settings and then click **OK**:
 
-   - **Application control code intergity policies**: Select **Audit only** to log events but not block any apps from running or select **Enforce** to allow only Windows components and Store apps to run.  
+   - **Application control code integrity policies**: Select **Audit only** to log events but not block any apps from running or select **Enforce** to allow only Windows components and Store apps to run.  
    - **Trust apps with good reputation**: Select **Enable** to allow reputable apps as defined by the Intelligent Security Graph to run in addition to Windows components and Store apps.
 
    ![Configure WDAC](images/wdac-intune-wdac-settings.png)
