@@ -60,11 +60,11 @@ Enhancements to Applocker in Windows 10 include:
 
 For Windows 10-based devices, you can use your MDM server to directly deploy client authentication certificates using Personal Information Exchange (PFX), in addition to enrolling using Simple Certificate Enrollment Protocol (SCEP), including certificates to enable Windows Hello for Business in your enterprise. You'll be able to use MDM to enroll, renew, and delete certificates. As in Windows Phone 8.1, you can use the [Certificates app](https://go.microsoft.com/fwlink/p/?LinkId=615824) to review the details of certificates on your device. [Learn how to install digital certificates on Windows 10 Mobile.](/windows/access-protection/installing-digital-certificates-on-windows-10-mobile)
 
-### Microsoft Passport
+### Windows Live ID
 
-In Windows 10, [Microsoft Passport](/windows/access-protection/hello-for-business/hello-identity-verification) replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.
+In Windows 10, [Windows Live ID service](/windows/access-protection/hello-for-business/hello-identity-verification) replaces passwords with strong two-factor authentication that consists of an enrolled device and a Windows Hello (biometric) or PIN.
 
-Microsoft Passport lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Azure Active Directory (AD) account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Microsoft Passport enrollment, a Microsoft Passport is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Microsoft Passport to authenticate users and help them to access protected resources and services.
+Windows Live ID service lets users authenticate to a Microsoft account, an Active Directory account, a Microsoft Azure Active Directory (AD) account, or non-Microsoft service that supports Fast ID Online (FIDO) authentication. After an initial two-step verification during Windows Live ID service enrollment, a Windows Live ID service is set up on the user's device and the user sets a gesture, which can be Windows Hello or a PIN. The user provides the gesture to verify identity; Windows then uses Windows Live ID service to authenticate users and help them to access protected resources and services.
 
 ### Security auditing
 
@@ -117,7 +117,7 @@ The logon event ID 4624 has been updated to include more verbose information to 
     A list of all of the groups in the user's token.
 6.  **RestrictedAdminMode** String: yes or no
     If the user logs into the PC in restricted admin mode with Remote Desktop, this field will be yes.
-    For more info on restricted admin mode, see [Restricted Admin mode for RDP](http://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx).
+    For more info on restricted admin mode, see [Restricted Admin mode for RDP](https://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx).
 
 #### <a href="" id="bkmk-process"></a>New fields in the process creation event
 
@@ -174,7 +174,7 @@ Event ID 6416 has been added to track when an external device is detected throug
 
 The following sections describe the new and changed functionality in the TPM for Windows 10:
 -   [Device health attestation](#bkmk-dha)
--   [Microsoft Passport](/windows/access-protection/hello-for-business/hello-identity-verification) support
+-   [Windows Live ID](/windows/access-protection/hello-for-business/hello-identity-verification) support
 -   [Device Guard](/windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies) support
 -   [Credential Guard](/windows/access-protection/credential-guard/credential-guard) support
 
@@ -212,7 +212,7 @@ Windows 10 provides a set of VPN features that both increase enterprise security
 - App=triggered VPN
 - VPN traffic filters
 - Lock down VPN
-- Integration with Microsoft Passport for Work
+- Integration with Windows Live ID for Work
 
 [Learn more about the VPN options in Windows 10.](/windows/access-protection/vpn/vpn-profile-options)
 
@@ -264,9 +264,9 @@ You can also [configure a lockdown state](https://technet.microsoft.com/itpro/wi
 
 Lockdown settings can also be configured for device look and feel, such as a theme or a [custom layout on the Start screen](https://technet.microsoft.com/itpro/windows/manage/windows-10-start-layout-options-and-policies).
 
-### Customized Start layout
+### Start layout
 
-A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Starting in Windows 10, version 1511, administrators can configure a *partial* Start layout, which applies specified tile groups while allowing users to create and customize their own tile groups. Learn how to [customize and export Start layout](/windows/configuration/customize-and-export-start-layout).
+A standard Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Starting in Windows 10, version 1511, administrators can configure a *partial* Start layout, which applies specified tile groups while allowing users to create and customize their own tile groups. Learn how to [customize and export Start layout](/windows/configuration/customize-and-export-start-layout).
 
 Administrators can also use mobile device management (MDM) or Group Policy to disable the use of [Windows Spotlight on the lock screen](/windows/configuration/windows-spotlight).
 
@@ -280,7 +280,7 @@ By using [Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=699279
 
 -   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth very efficient.
 
--   **Use with existing tools** such as Microsoft Endpoint Configuration Manager and the [Enterprise Mobility Suite](https://go.microsoft.com/fwlink/p/?LinkId=699281).
+-   **Use with existing tools** such as Microsoft Endpoint Configuration Manager and the [Enterprise Mobility + Security E3](https://go.microsoft.com/fwlink/p/?LinkId=699281).
 
 Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) and [Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/gg682129.aspx).
 
