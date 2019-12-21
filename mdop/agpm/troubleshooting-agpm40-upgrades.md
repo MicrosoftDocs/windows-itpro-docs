@@ -39,3 +39,16 @@ This section lists common issues that you may encounter when you upgrade your Ad
     -   Install the required hotfix.
     
     -   Connect to AGPM using an AGPM client to test that your difference reports are now functioning.
+    
+    ## Install Hotfix Package 1 for Microsoft Advanced Group Policy Management 4.0 SP3
+    
+     AGPM can't generate difference reports when it controls or manages new Group Policy Objects (GPOs)
+      install the latest version of Microsoft Desktop Optimization Pack (March 2017 Servicing Release). See KB 4014009 for more information.
+      
+      Download the Microsoft Desktop Optimization Pack March 2017 Servicing Release from below link
+      https://www.microsoft.com/en-us/download/details.aspx?id=54967
+      
+      
+      ## Reference link
+      https://support.microsoft.com/en-us/help/3127165/hotfix-package-1-for-microsoft-advanced-group-policy-management-4-0-sp
+      
