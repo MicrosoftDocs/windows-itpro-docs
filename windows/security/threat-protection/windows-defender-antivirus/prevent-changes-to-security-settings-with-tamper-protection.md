@@ -141,15 +141,15 @@ Value DisableRealtimeMonitoring = 0
 
 Configuring Tamper Protection in Intune can be targeted to your entire organization as well as to devices and user groups with Intune.
 
-### Can I configure Tamper Protection in System Center Configuration Manager?
+### Can I configure Tamper Protection in Microsoft Endpoint Configuration Manager?
 
-Currently we do not have support to manage Tamper Protection through System Center Configuration Manager.
+Currently we do not have support to manage Tamper Protection through Microsoft Endpoint Configuration Manager.
 
 ### I have the Windows E3 enrollment. Can I use configuring Tamper Protection in Intune?
 
 Currently, configuring Tamper Protection in Intune is only available for customers who have [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
-### What happens if I try to change Microsoft Defender ATP settings in Intune, System Center Configuration Manager, and Windows Management Instrumentation when Tamper Protection is enabled on a device?
+### What happens if I try to change Microsoft Defender ATP settings in Intune, Microsoft Endpoint Configuration Manager, and Windows Management Instrumentation when Tamper Protection is enabled on a device?
 
 You won’t be able to change the features that are protected by Tamper Protection; those change requests are ignored.
 

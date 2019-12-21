@@ -1,6 +1,6 @@
 ---
 title: Review the results of Windows Defender AV scans 
-description: Review the results of scans using System Center Configuration Manager, Microsoft Intune, or the Windows Security app
+description: Review the results of scans using Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Windows Security app
 keywords: scan results, remediation, full scan, quick scan
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security

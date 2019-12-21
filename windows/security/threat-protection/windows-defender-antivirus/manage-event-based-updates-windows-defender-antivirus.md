@@ -27,11 +27,11 @@ Windows Defender Antivirus allows you to determine if updates should (or should 
 
 ## Check for protection updates before running a scan
 
-You can use System Center Configuration Manager, Group Policy, PowerShell cmdlets, and WMI to force Windows Defender Antivirus to check and download protection updates before running a scheduled scan.
+You can use Microsoft Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, and WMI to force Windows Defender Antivirus to check and download protection updates before running a scheduled scan.
 
 ### Use Configuration Manager to check for protection updates before running a scan
 
-1. On your System Center Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
+1. On your Microsoft Endpoint Configuration Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
 
 2. Go to the **Scheduled scans** section and set **Check for the latest security intelligence updates before running a scan** to **Yes**.
 
