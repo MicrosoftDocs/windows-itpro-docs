@@ -49,7 +49,6 @@ This section lists common issues that you may encounter when you upgrade your Ad
 More specifically, you can choose to download only the first file, `AGPM4.0SP1_Server_X64_KB4014009.exe`, from the list presented after pressing the download button.
       
 The download link to the Microsoft Desktop Optimization Pack (March 2017 Servicing Release) can be found [here](https://www.microsoft.com/download/details.aspx?id=54967).
-https://www.microsoft.com/download/details.aspx?id=54967
       
       
 ## Reference link
