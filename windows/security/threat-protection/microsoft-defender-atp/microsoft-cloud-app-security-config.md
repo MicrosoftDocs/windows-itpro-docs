@@ -43,7 +43,7 @@ Once activated, Microsoft Defender ATP will immediately start forwarding discove
 
 ## View the data collected
 
-To view and access Microsoft Defender ATP data in Microsoft Cloud Apps Security, see [Investigate machines in Cloud App Security](https://docs.microsoft.com/en-us/cloud-app-security/wdatp-integration#investigate-machines-in-cloud-app-security).
+To view and access Microsoft Defender ATP data in Microsoft Cloud Apps Security, see [Investigate machines in Cloud App Security](https://docs.microsoft.com/cloud-app-security/wdatp-integration#investigate-machines-in-cloud-app-security).
 
 
 For more information about cloud discovery, see [Working with discovered apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).
