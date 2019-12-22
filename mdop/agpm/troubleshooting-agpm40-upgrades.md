@@ -42,7 +42,7 @@ This section lists common issues that you may encounter when you upgrade your Ad
     
 ## Install Hotfix Package 1 for Microsoft Advanced Group Policy Management 4.0 SP3
     
-**Issue fixed in this hotfix**
+**Issue fixed in this hotfix**: AGPM can't generate difference reports when it controls or manages new Group Policy Objects (GPOs).
 AGPM can't generate difference reports when it controls or manages new Group Policy Objects (GPOs).
 
 **How to get this update**
