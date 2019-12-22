@@ -51,7 +51,7 @@ Install the latest version of Microsoft Desktop Optimization Pack ([March 2017 S
 More specifically, you can choose to download only the first file, `AGPM4.0SP1_Server_X64_KB4014009.exe` from the list presented after pressing the download button.
       
       Download the Microsoft Desktop Optimization Pack March 2017 Servicing Release from below link
-      https://www.microsoft.com/en-us/download/details.aspx?id=54967
+https://www.microsoft.com/download/details.aspx?id=54967
       
       
       ## Reference link
