@@ -31,7 +31,7 @@ To benefit from Microsoft Defender Advanced Threat Protection (ATP) cloud app di
 >[!NOTE]
 >This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on machines running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) or later Windows 10 versions.
 
-> See [Microsoft Defender Advanced Threat Protection integration with Microsoft Cloud App Security](https://docs.microsoft.com/en-us/cloud-app-security/wdatp-integration) for detailed integration of Microsoft Defender ATP with Microsoft Cloud App Security. 
+> See [Microsoft Defender Advanced Threat Protection integration with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/wdatp-integration) for detailed integration of Microsoft Defender ATP with Microsoft Cloud App Security. 
 
 ## Enable Microsoft Cloud App Security in Microsoft Defender ATP
 
