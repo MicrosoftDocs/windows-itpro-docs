@@ -55,5 +55,5 @@ https://www.microsoft.com/download/details.aspx?id=54967
       
       
       ## Reference link
-      https://support.microsoft.com/en-us/help/3127165/hotfix-package-1-for-microsoft-advanced-group-policy-management-4-0-sp
+https://support.microsoft.com/help/3127165/hotfix-package-1-for-microsoft-advanced-group-policy-management-4-0-sp
       
