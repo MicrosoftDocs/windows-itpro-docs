@@ -46,7 +46,7 @@ This section lists common issues that you may encounter when you upgrade your Ad
 
 **How to get this update**: Install the latest version of Microsoft Desktop Optimization Pack ([March 2017 Servicing Release](https://www.microsoft.com/download/details.aspx?id=54967)). See [KB 4014009](https://support.microsoft.com/help/4014009/) for more information.
 
-More specifically, you can choose to download only the first file, `AGPM4.0SP1_Server_X64_KB4014009.exe` from the list presented after pressing the download button.
+More specifically, you can choose to download only the first file, `AGPM4.0SP1_Server_X64_KB4014009.exe`, from the list presented after pressing the download button.
       
 Download link to the Microsoft Desktop Optimization Pack (March 2017 Servicing Release) is shown below:
 https://www.microsoft.com/download/details.aspx?id=54967
