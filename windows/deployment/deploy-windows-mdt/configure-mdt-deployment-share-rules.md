@@ -27,7 +27,7 @@ When using MDT, you can assign setting in three distinct ways:
 -   You can prompt the user or technician for information.
 -   You can have MDT generate the settings automatically.
 
-In order illustrate these three options, let's look at some sample configurations.
+In order to illustrate these three options, let's look at some sample configurations.
 
 ## <a href="" id="sec02"></a>Sample configurations
 
