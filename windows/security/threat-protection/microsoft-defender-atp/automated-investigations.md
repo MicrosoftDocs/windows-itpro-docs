@@ -68,7 +68,7 @@ You can configure the following levels of automation:
 
 |Automation level | Description|
 |---|---|
-|Not protected | Machines do not get any automated investigations run on them. |
+|No automated response | Machines do not get any automated investigations run on them. |
 |Semi - require approval for any remediation | This is the default automation level.<br><br>  An approval is needed for any remediation action. |
 |Semi - require approval for non-temp folders remediation | An approval is required on files or executables that are not in temporary folders. <br><br> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, will automatically be remediated if needed.|
 |Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <br><br> Files or executables in all other folders will  automatically be remediated if needed.|
