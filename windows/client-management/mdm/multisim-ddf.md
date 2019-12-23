@@ -1,6 +1,6 @@
 ---
 title: MultiSIM DDF file
-description: XML file containing the device description framework
+description: XML file containing the device description framework for the MultiSIM configuration service provider.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

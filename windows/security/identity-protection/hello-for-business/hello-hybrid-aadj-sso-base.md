@@ -1,6 +1,6 @@
 ---
 title: Configure Azure AD joined devices for On-premises Single-Sign On using Windows Hello for Business
-description: Azure Active Directory joined devices in a hybrid Deployment for on-premises single sign-on
+description: Before adding Azure Active Directory (Azure AD) joined devices to your existing hybrid deployment, you need to verify the existing deployment can support them.
 keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO, 
 ms.prod: w10
 ms.mktglfcycl: deploy
