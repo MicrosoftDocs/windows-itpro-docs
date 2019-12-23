@@ -1,6 +1,6 @@
 ---
 title: Security and data protection considerations for Windows To Go (Windows 10)
-description: One of the most important requirements to consider when you plan your Windows To Go deployment is to ensure that the data, content, and resources you work with in the Windows To Go workspace is protected and secure.
+description: Ensure that the data, content, and resources you work with in the Windows To Go workspace are protected and secure.
 ms.assetid: 5f27339f-6761-44f4-8c29-9a25cf8e75fe
 ms.reviewer: 
 manager: laurawi
@@ -10,7 +10,8 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: mobility, security
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 

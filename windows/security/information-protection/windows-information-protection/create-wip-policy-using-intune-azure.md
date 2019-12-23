@@ -1,6 +1,6 @@
 ---
 title: Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune (Windows 10)
-description: The Azure portal for Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, supporting mobile device management (MDM), to let you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
+description: Learn how to use the Azure portal for Microsoft Intune to create and deploy your Windows Information Protection (WIP) policy to protect data on your network. 
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
