@@ -39,6 +39,7 @@ A [glossary](#glossary) of abbreviations used in this article is provided at the
 |  Must I become a CSP to participate in Windows Autopilot? | Top volume OEMs do not, as they can use the OEM Direct API.  All others who choose to use MPC to register devices must become CSPs in order to access MPC.  |
 | Do the different CSP levels have all the same capabilities when it comes to Windows Autopilot?   |  For purposes of Windows Autopilot, there are three different types of CSPs, each with different levels of authority and access: <br><br>1. <b>Direct CSP</b>: Gets direct authorization from the customer to register devices. <br><br>2. <b>Indirect CSP Provider</b>: Gets implicit permission to register devices through the relationship their CSP Reseller partner has with the customer.  Indirect CSP Providers register devices through Microsoft Partner Center. <br><br>3. <b>Indirect CSP Reseller</b>: Gets direct authorization from the customer to register devices.  At the same time, their indirect CSP Provider partner also gets authorization, which means that either the Indirect Provider or the Indirect Reseller can register devices for the customer.  However, the Indirect CSP Reseller must register devices through the MPC UI (manually uploading CSV file), whereas the Indirect CSP Provider has the option to register devices using the MPC APIs. |
 
+
 ## Manufacturing
 
 | Question | Answer |
