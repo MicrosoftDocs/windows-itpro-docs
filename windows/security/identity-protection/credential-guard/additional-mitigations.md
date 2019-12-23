@@ -1,6 +1,6 @@
 ---
 title: Additional mitigations
-description: Scripts listed in this topic for obtaining the available issuance policies on the certificate authority for Windows Defender Credential Guard on Windows 10.
+description: Advice and sample code for making your domain environment more secure and robust with Windows Defender Credential Guard.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library

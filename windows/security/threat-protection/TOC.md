@@ -459,7 +459,8 @@
 ##### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
 
 #### [Reporting]()
-##### [Create and build Power BI reports using Microsoft Defender ATP data (deprecated)](microsoft-defender-atp/powerbi-reports.md)
+##### [Power BI - How to use API - Samples](microsoft-defender-atp/api-power-bi.md)
+##### [Create and build Power BI reports using Microsoft Defender ATP data connectors (deprecated)](microsoft-defender-atp/powerbi-reports.md)
 ##### [Threat protection reports](microsoft-defender-atp/threat-protection-reports.md)
 ##### [Machine health and compliance reports](microsoft-defender-atp/machine-reports.md)
 

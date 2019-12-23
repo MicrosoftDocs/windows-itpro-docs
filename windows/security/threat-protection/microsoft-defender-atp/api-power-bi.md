@@ -121,6 +121,12 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 - You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md)
 
+
+## Power BI dashboard samples in GitHub
+For more information see the [Power BI report templates](https://github.com/microsoft/MDATP-PowerBI-Templates).
+
+
+
 ## Related topic
 - [Microsoft Defender ATP APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
