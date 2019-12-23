@@ -64,7 +64,7 @@ Note that the hardware hash also contains details about when it was generated, s
 Starting with System Center Configuration Manager current branch version 1802, the hardware hashes for existing Windows 10 version 1703 and higher devices are automatically collected by Configuration Manager. See the [What’s new in version 1802](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1802#report-on-windows-autopilot-device-information) documentation for more details.  The hash information can be extracted from Configuration Manager into a CSV file.
 
 > [!Note]
-> Before uploading the CSV file on intune, please make sure that 1st row contains Device Serial Number, Windows Product ID, Hardware Hash, Group Tag, Assigned User. If there is any header information on the top of CSV file, please delete that header information. See details at [Enroll Windows devices in Intune](https://docs.microsoft.com/intune/enrollment/enrollment-autopilot).
+> Before uploading the CSV file on Intune, please make sure that the first row contains the device serial number, Windows product ID, hardware hash, group tag, and assigned user. If there is header information on the top of CSV file, please delete that header information. See details at [Enroll Windows devices in Intune](https://docs.microsoft.com/intune/enrollment/enrollment-autopilot).
 
 ### Collecting the hardware ID from existing devices using PowerShell
 
