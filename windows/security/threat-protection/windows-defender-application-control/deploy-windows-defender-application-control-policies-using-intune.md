@@ -43,4 +43,4 @@ You can use Microsoft Intune to configure Windows Defender Application Control (
 
    ![Configure WDAC](images/wdac-intune-wdac-settings.png)
    
-To add a custom profile with an OMA-URI see, [Use custom settings for Windows 10 devices in Intune](https://docs.microsoft.com/en-us/intune/configuration/custom-settings-windows-10).
+To add a custom profile with an OMA-URI see, [Use custom settings for Windows 10 devices in Intune](https://docs.microsoft.com/intune/configuration/custom-settings-windows-10).
