@@ -387,7 +387,7 @@ Basic checks:
 
 * If the communication between client and server is secure, make sure that you are using a valid SSL certificate.
 
-* Verify network connectivity between the web server and the database server to which the data is sent for insertion. You can check database connectivity from the web server to the database server by using ODBC Data Source Administrator. Detailed SQL Server connection troubleshooting information is available in [How to Troubleshoot Connecting to the SQL Server Database Engine](http://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
+* Verify network connectivity between the web server and the database server to which the data is sent for insertion. You can check database connectivity from the web server to the database server by using ODBC Data Source Administrator. Detailed SQL Server connection troubleshooting information is available in [How to Troubleshoot Connecting to the SQL Server Database Engine](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 #### Troubleshooting the connectivity issue
 
@@ -529,11 +529,11 @@ The web service may not connect to the database server because of a permissions 
 
 * These groups do not have the required permissions on the database.
 
-You will notice permissions-related errors in the Application logs on the MBAM administration and monitoring server if any of the previous conditions are true. In that case, you should manually add the NT Authority\Network Service account and MBAM administration server’s computer account and grant them a server-wide public role on the SQL database server that is using SQL Server Management Studio (http://msdn.microsoft.com/en-us/library/aa337562.aspx).
+You will notice permissions-related errors in the Application logs on the MBAM administration and monitoring server if any of the previous conditions are true. In that case, you should manually add the NT Authority\Network Service account and MBAM administration server’s computer account and grant them a server-wide public role on the SQL database server that is using SQL Server Management Studio (https://msdn.microsoft.com/library/aa337562.aspx).
 
 #### Review the web service logs
 
-If no events are logged in the Application logs on the MBAM administration server, it’s time to review the web service logs (.svclog) of the MBAM web service that is hosted on the MBAM administration and monitoring server. You will have to use the Service Trace Viewer Tool (SvcTraceViewer.exe) http://msdn.microsoft.com/en-us/library/ms732023.aspx to view the log file.
+If no events are logged in the Application logs on the MBAM administration server, it’s time to review the web service logs (.svclog) of the MBAM web service that is hosted on the MBAM administration and monitoring server. You will have to use the Service Trace Viewer Tool (SvcTraceViewer.exe) https://msdn.microsoft.com/library/ms732023.aspx to view the log file.
 
 You should primarily investigate the service trace logs of RecoveryandHardwareService and ComplianceStatusService. By default, web service logs are located in the C:\inetpub\Microsoft BitLocker Management Solution\Logs folder. There, each service writes its .svclog file under its own folder.
 
