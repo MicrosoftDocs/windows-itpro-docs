@@ -28,7 +28,7 @@ sections:
     - href: windows-10-deployment-scenarios
       html: <p>Understand the different ways that Windows 10 can be deployed</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_deploy.svg"
+        src: https://docs.microsoft.com/media/common/i_deploy.svg
       title: Windows 10 deployment scenarios
     - href: update
       html: <p>Update Windows 10 in the enterprise</p>
