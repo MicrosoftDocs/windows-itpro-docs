@@ -60,10 +60,11 @@ Secure Launch simplifies management of SRTM measurements because the launch code
 System Management Mode (SMM) is a special-purpose CPU mode in x86 microcontrollers that handles power management, hardware configuration, thermal monitoring, and anything else the manufacturer deems useful. 
 Whenever one of these system operations is requested, a non-maskable interrupt (SMI) is invoked at runtime, which executes SMM code installed by the BIOS. 
 SMM code executes in the highest privilege level and is invisible to the OS, which makes it an attractive target for malicious activity. Even if System Guard Secure Launch is used to late launch, SMM code can potentially access hypervisor memory and change the hypervisor. 
+
 To defend against this, two techniques are used:
 
-1. Paging protection to prevent inappropriate access to code and data
-2. SMM hardware supervision and attestation
+ - Paging protection to prevent inappropriate access to code and data
+ - SMM hardware supervision and attestation
 
 Paging protection can be implemented to lock certain code tables to be read-only to prevent tampering. 
 This prevents access to any memory that has not been specifically assigned. 
