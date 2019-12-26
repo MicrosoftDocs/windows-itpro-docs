@@ -23,7 +23,8 @@ Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) offers a 
 
 The automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. The **Automated investigations** list shows all the investigations that were initiated automatically, and includes details, such as status, detection source, and when the investigation was initiated.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
+> [!TIP]
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 
 
 ## Understand the automated investigation flow
