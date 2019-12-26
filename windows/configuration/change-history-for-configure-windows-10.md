@@ -119,7 +119,7 @@ The following topics were moved into the [Privacy](/windows/privacy/index) libra
 
 New or changed topic | Description
 --- | ---
-[Configure Windows diagnostic data in your organizationspro](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization) | Updated endpoints.
+[Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization) | Updated endpoints.
 [Configure cellular settings for tablets and PCs](provisioning-apn.md) | Added instructions for confirming that the settings were applied.
 
 ## March 2018
