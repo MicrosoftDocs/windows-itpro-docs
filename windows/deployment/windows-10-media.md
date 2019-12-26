@@ -31,7 +31,8 @@ To download Windows 10 installation media from the VLSC, use the product search 
 
 When you select a product, for example “Windows 10 Enterprise” or “Windows 10 Education”, you can then choose the specific release by clicking **Download** and choosing the **Download Method**, **Language**, and **Operating system Type** (bitness).
 
->If you do not see a Windows 10 release available in the list of downloads, verify the [release date](https://technet.microsoft.com/windows/release-info.aspx).
+> [!NOTE]
+> If you do not see a Windows 10 release available in the list of downloads, verify the [release date](https://technet.microsoft.com/windows/release-info.aspx).
 
 In Windows 10, version 1709 the packaging of volume licensing media and upgrade packages is different than it has been for previous releases. Instead of having separate media and packages for Windows 10 Pro (volume licensing version), Windows 10 Enterprise, and Windows 10 Education, all three are bundled together. The following section explains this change.
 
