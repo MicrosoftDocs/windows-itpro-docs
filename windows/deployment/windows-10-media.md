@@ -1,6 +1,6 @@
 ---
 title: Windows 10 volume license media
-description: There are specific infrastructure requirements to deploy and manage Windows 10 that should be in place prior to significant Windows 10 deployments within your organization.
+description: Learn about volume license media in Windows 10, and channels such as the Volume License Service Center (VLSC).
 keywords: deploy, upgrade, update, software, media
 ms.prod: w10
 ms.mktglfcycl: plan
@@ -8,9 +8,11 @@ ms.localizationpriority: medium
 ms.date: 10/20/2017
 ms.reviewer: 
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 

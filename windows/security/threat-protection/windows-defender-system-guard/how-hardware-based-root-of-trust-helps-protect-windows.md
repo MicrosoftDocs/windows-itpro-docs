@@ -1,6 +1,6 @@
 ---
 title: How a Windows Defender System Guard helps protect Windows 10
-description: Windows Defender System Guard in Windows 10 uses a hardware-based root of trust to securely protect systems against firmware exploits.
+description: Windows Defender System Guard reorganizes the existing Windows 10 system integrity features under one roof. Learn how it works.
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.reviewer: 
 manager: dansimp

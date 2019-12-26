@@ -1,6 +1,6 @@
 ---
 title: Use automated investigations to investigate and remediate threats
-description: View the list of automated investigations, its status, detection source and other details.
+description: Understand the automated investigation flow in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
