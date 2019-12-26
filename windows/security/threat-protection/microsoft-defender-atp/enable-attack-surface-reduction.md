@@ -33,7 +33,7 @@ You can enable attack surface reduction rules by using any of these methods:
 
 * [Microsoft Intune](#intune)
 * [Mobile Device Management (MDM)](#mdm)
-* [System Center Configuration Manager (SCCM)](#sccm)
+* [Microsoft Endpoint Configuration Manager](#sccm)
 * [Group Policy](#group-policy)
 * [PowerShell](#powershell)
 
@@ -101,7 +101,7 @@ Value: c:\path|e:\path|c:\Whitelisted.exe
 
 ## SCCM
 
-1. In System Center Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
 1. Click **Home** > **Create Exploit Guard Policy**.
 1. Enter a name and a description, click **Attack Surface Reduction**, and click **Next**.
 1. Choose which rules will block or audit actions and click **Next**.

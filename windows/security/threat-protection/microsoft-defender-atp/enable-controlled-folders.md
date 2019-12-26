@@ -30,7 +30,7 @@ You can enable controlled folder access by using any of these methods:
 * [Windows Security app](#windows-security-app)
 * [Microsoft Intune](#intune)
 * [Mobile Device Management (MDM)](#mdm)
-* [System Center Configuration Manager (SCCM)](#sccm)
+* [Microsoft Endpoint Configuration Manager](#sccm)
 * [Group Policy](#group-policy)
 * [PowerShell](#powershell)
 
@@ -80,7 +80,7 @@ Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](htt
 
 ## SCCM
 
-1. In System Center Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
 2. Click **Home** > **Create Exploit Guard Policy**.
 3. Enter a name and a description, click **Controlled folder access**, and click **Next**.
 4. Choose whether block or audit changes, allow other apps, or add other folders, and click **Next**.

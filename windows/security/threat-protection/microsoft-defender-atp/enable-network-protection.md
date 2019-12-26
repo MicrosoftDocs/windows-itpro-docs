@@ -30,7 +30,7 @@ You can enable network protection by using any of these methods:
 
 * [Microsoft Intune](#intune)
 * [Mobile Device Management (MDM)](#mdm)
-* [System Center Configuration Manager (SCCM)](#sccm)
+* [Microsoft Endpoint Configuration Manager](#sccm)
 * [Group Policy](#group-policy)
 * [PowerShell](#powershell)
 
@@ -51,7 +51,7 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](https://d
 
 ## SCCM
 
-1. In System Center Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
 1. Click **Home** > **Create Exploit Guard Policy**.
 1. Enter a name and a description, click **Network protection**, and click **Next**.
 1. Choose whether to block or audit access to suspicious domains and click **Next**.

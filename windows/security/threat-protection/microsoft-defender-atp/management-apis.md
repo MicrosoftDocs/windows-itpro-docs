@@ -29,7 +29,7 @@ Microsoft Defender ATP supports a wide variety of options to ensure that custome
 
 Acknowledging that customer environments and structures can vary, Microsoft Defender ATP was created with flexibility and granular control to fit varying customer requirements. 
 
-Machine onboarding is fully integrated into System Center Configuration Manager and Microsoft Intune for client machines and Azure Security Center for server machines, providing complete end-to-end experience of configuration, deployment, and monitoring. In addition, Microsoft Defender ATP supports Group Policy and other third-party tools used for machines management.
+Machine onboarding is fully integrated into Microsoft Endpoint Configuration Manager and Microsoft Intune for client machines and Azure Security Center for server machines, providing complete end-to-end experience of configuration, deployment, and monitoring. In addition, Microsoft Defender ATP supports Group Policy and other third-party tools used for machines management.
 
 Microsoft Defender ATP provides fine-grained control over what users with access to the portal can see and do through the flexibility of role-based access control (RBAC). The RBAC model supports all flavors of security teams structure:
 - Globally distributed organizations and security teams

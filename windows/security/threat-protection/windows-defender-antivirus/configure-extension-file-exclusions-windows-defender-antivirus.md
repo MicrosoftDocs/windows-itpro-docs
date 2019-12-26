@@ -77,7 +77,7 @@ See the following articles:
 
 ### Use Configuration Manager to configure file name, folder, or file extension exclusions
 
-See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring System Center Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
 
 ### Use Group Policy to configure folder or file extension exclusions
 
@@ -272,7 +272,7 @@ The following table describes how the wildcards can be used and provides some ex
 
 You can retrieve the items in the exclusion list using one of the following methods:
 - [Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
-- [System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)
+- [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)
 - MpCmdRun
 - PowerShell
 - [Windows Security app](windows-defender-security-center-antivirus.md#exclusions)
