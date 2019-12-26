@@ -1,6 +1,6 @@
 ---
 title: Learn about the automated investigations dashboard in Microsoft Defender Security Center
-description: View the list of automated investigations, its status, detection source and other details.
+description: View the automated investigations list. View the status, detection source and other details for automated investigations.
 keywords: autoir, automated, investigation, detection, dashboard, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
