@@ -38,8 +38,8 @@ By attacking the SAM file, attackers can potentially gain access to user names a
 
 ### Best practices
 
-1.  Set **Network security: Do not store LAN Manager hash value on next password change** to **Enabled**.
-2.  Require all users to set new passwords the next time they log on to the domain so that LAN Manager hashes are removed.
+ - Set **Network security: Do not store LAN Manager hash value on next password change** to **Enabled**.
+ - Require all users to set new passwords the next time they log on to the domain so that LAN Manager hashes are removed.
 
 ### Location
 
