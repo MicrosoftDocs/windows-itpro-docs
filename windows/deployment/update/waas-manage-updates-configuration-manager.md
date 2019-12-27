@@ -1,6 +1,6 @@
 ---
-title: Deploy Windows 10 updates via System Center Configuration Manager
-description: System Center Configuration Manager provides maximum control over quality and feature updates for Windows 10.
+title: Deploy Windows 10 updates via Microsoft Endpoint Configuration Manager
+description: Microsoft Endpoint Configuration Manager provides maximum control over quality and feature updates for Windows 10.
 ms.prod: w10
 ms.mktglfcycl: manage
 author: jaimeo
@@ -11,7 +11,7 @@ manager: laurawi
 ms.topic: article
 ---
 
-# Deploy Windows 10 updates using System Center Configuration Manager
+# Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager
 
 
 **Applies to**
@@ -25,21 +25,21 @@ ms.topic: article
 >Due to [naming changes](waas-overview.md#naming-changes), older terms like CB and CBB might still be displayed in some of our products, such as in Group Policy. If you encounter these terms, "CB" refers to the Semi-Annual Channel (Targeted)--which is no longer used--while "CBB" refers to the Semi-Annual Channel.
 
 
-System Center Configuration Manager provides maximum control over quality and feature updates for Windows 10. Unlike other servicing tools, Configuration Manager has capabilities that extend beyond servicing, such as application deployment, antivirus management, software metering, and reporting, and provides a secondary deployment method for LTSB clients. Configuration Manager can effectively control bandwidth usage and content distribution through a combination of BranchCache and distribution points. Microsoft encourages organizations currently using Configuration Manager for Windows update management to continue doing so for Windows 10 client computers.
+Microsoft Endpoint Configuration Manager provides maximum control over quality and feature updates for Windows 10. Unlike other servicing tools, Configuration Manager has capabilities that extend beyond servicing, such as application deployment, antivirus management, software metering, and reporting, and provides a secondary deployment method for LTSB clients. Configuration Manager can effectively control bandwidth usage and content distribution through a combination of BranchCache and distribution points. Microsoft encourages organizations currently using Configuration Manager for Windows update management to continue doing so for Windows 10 client computers.
 
 You can use Configuration Manager to service Windows 10 devices in two ways. The first option is to use Windows 10 Servicing Plans to deploy Windows 10 feature updates automatically based on specific criteria, similar to an Automatic Deployment Rule for software updates. The second option is to use a task sequence to deploy feature updates, along with anything else in the installation. 
 
 >[!NOTE]
->This topic focuses on updating and upgrading Windows 10 after it has already been deployed. To use Configuration Manager to upgrade your systems from the Windows 8.1, Windows 8, or Windows 7 operating system, see [Upgrade to Windows 10 with System Center Configuration Manager](https://technet.microsoft.com/itpro/windows/deploy/upgrade-to-windows-10-with-system-center-configuraton-manager).
+>This topic focuses on updating and upgrading Windows 10 after it has already been deployed. To use Configuration Manager to upgrade your systems from the Windows 8.1, Windows 8, or Windows 7 operating system, see [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/itpro/windows/deploy/upgrade-to-windows-10-with-system-center-configuraton-manager).
 
 ## Windows 10 servicing dashboard
 
-The Windows 10 servicing dashboard gives you a quick-reference view of your active servicing plans, compliance for servicing plan deployment, and other key information about Windows 10 servicing. For details about what each tile on the servicing dashboard represents, see [Manage Windows as a service using System Center Configuration Manager](https://technet.microsoft.com/library/mt627931.aspx).
+The Windows 10 servicing dashboard gives you a quick-reference view of your active servicing plans, compliance for servicing plan deployment, and other key information about Windows 10 servicing. For details about what each tile on the servicing dashboard represents, see [Manage Windows as a service using Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/mt627931.aspx).
 
 For the Windows 10 servicing dashboard to display information, you must adhere to the following requirements: 
 
 - **Heartbeat discovery**. Enable heartbeat discovery for the site receiving Windows 10 servicing information. Configuration for heartbeat discovery can be found in Administration\Overview\Hierarchy Configuration\Discovery Methods.
-- **Windows Server Update Service (WSUS)**. System Center Configuration Manager must have the Software update point site system role added and configured to receive updates from a WSUS 4.0 server with the hotfix KB3095113 installed.
+- **Windows Server Update Service (WSUS)**. Microsoft Endpoint Configuration Manager must have the Software update point site system role added and configured to receive updates from a WSUS 4.0 server with the hotfix KB3095113 installed.
 - **Service connection point**. Add the Service connection point site system role in Online, persistent connection mode.
 - **Upgrade classification**. Select **Upgrade** from the list of synchronized software update classifications.
 
@@ -143,7 +143,7 @@ After you have updated the membership, this new collection will contain all mana
 
 ## Use Windows 10 servicing plans to deploy Windows 10 feature updates
 
-There are two ways to deploy Windows 10 feature updates with System Center Configuration Manager. The first is to use servicing plans, which provide an automated method to update devices consistently in their respective deployment rings, similar to Automatic Deployment Rules for software updates. 
+There are two ways to deploy Windows 10 feature updates with Microsoft Endpoint Configuration Manager. The first is to use servicing plans, which provide an automated method to update devices consistently in their respective deployment rings, similar to Automatic Deployment Rules for software updates. 
 
 **To configure Windows feature updates for CBB clients in the Ring 4 Broad business users deployment ring using a servicing plan**
 
@@ -160,7 +160,7 @@ There are two ways to deploy Windows 10 feature updates with System Center Confi
     >
     >![This is a high-risk deployment](images/waas-sccm-fig9.png) 
     >
-    >For details about how to manage the settings for high-risk deployments in Configuration Manager, see [Settings to manage high-risk deployments for System Center Configuration Manager](https://technet.microsoft.com/library/mt621992.aspx).
+    >For details about how to manage the settings for high-risk deployments in Configuration Manager, see [Settings to manage high-risk deployments for Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/mt621992.aspx).
 
 5. On the **Deployment Ring** page, select the **Business Ready (Current Branch for Business)** readiness state, leave the delay at **0 days**, and then click **Next**.
 
@@ -214,7 +214,7 @@ Each time Microsoft releases a new Windows 10 build, it releases a new .iso file
     In this example, the Windows 10 Enterprise 1607 installation media is deployed to \\contoso-cm01\Sources\Operating Systems\Windows 10 Enterprise\Windows 10 Enterprise - Version 1607.
     
     >[!NOTE]
-    >System Center Configuration Manager version 1606 is required to manage machines running Windows 10, version 1607.
+    >Microsoft Endpoint Configuration Manager version 1606 is required to manage machines running Windows 10, version 1607.
     
 4. On the **General** page, in the **Name** field, type the name of the folder (**Windows 10 Enterprise - Version 1607** in this example). Set the **Version** to **1607**, and then click **Next**.
 
@@ -303,11 +303,11 @@ With the task sequence created, you’re ready to deploy it. If you’re using t
 | ![done](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
-| ![done](images/checklistdone.png) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or Deploy Windows 10 updates using System Center Configuration Manager (this topic) |
+| ![done](images/checklistdone.png) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager (this topic) |
 
 ## See also
 
-[Manage Windows as a service using System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/manage-windows-as-a-service)
+[Manage Windows as a service using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/manage-windows-as-a-service)
 
 
 ## Related topics

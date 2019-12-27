@@ -40,7 +40,7 @@ Significant enhancements in the ADK for Windows 10 include new runtime provisio
 
 Microsoft Deployment Toolkit 2013 Update 1, available for download [here](https://go.microsoft.com/fwlink/p/?LinkId=625079), has also been updated to support Windows 10 and the new ADK; older versions do not support Windows 10. New in this release is task sequence support for Windows 10 in-place upgrades.
 
-For System Center Configuration Manager, Windows 10 support is offered with various releases:
+For Microsoft Endpoint Configuration Manager, Windows 10 support is offered with various releases:
 
 | Release                                     | Windows 10 management? | Windows 10 deployment?                         |
 |---------------------------------------------|------------------------|------------------------------------------------|
@@ -50,7 +50,7 @@ For System Center Configuration Manager, Windows 10 support is offered with var
 
 
 > [!NOTE]
-> Configuration Manager 2012 supports Windows 10 version 1507 (build 10.0.10240) and 1511 (build 10.0.10586) for the lifecycle of these builds. Future releases of Windows 10 CB/CBB are not supported With Configuration Manager 2012, and will require System Center Configuration Manager current branch for supported management. 
+> Configuration Manager 2012 supports Windows 10 version 1507 (build 10.0.10240) and 1511 (build 10.0.10586) for the lifecycle of these builds. Future releases of Windows 10 CB/CBB are not supported With Configuration Manager 2012, and will require Microsoft Endpoint Configuration Manager current branch for supported management. 
  
 
 For more details about System Center Configuration Manager support for Windows 10, see [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](../deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md).
@@ -58,7 +58,7 @@ For more details about System Center Configuration Manager support for Windows 
 ## Management tools
 
 
-In addition to System Center Configuration Manager, Windows 10 also leverages other tools for management. For Windows Server and Active Directory, existing supported versions are fully supported for Windows 10. New Group Policy templates will be needed to configure new settings available in Windows 10; these templates are available in the Windows 10 media images, and are available as a separate download [here](https://go.microsoft.com/fwlink/p/?LinkId=625081). See [Group Policy settings reference](https://go.microsoft.com/fwlink/p/?LinkId=625082) for a list of the new and modified policy settings. If you are using a central policy store, follow the steps outlined [here](https://go.microsoft.com/fwlink/p/?LinkId=625083) to update the ADMX files stored in that central store.
+In addition to Microsoft Endpoint Configuration Manager, Windows 10 also leverages other tools for management. For Windows Server and Active Directory, existing supported versions are fully supported for Windows 10. New Group Policy templates will be needed to configure new settings available in Windows 10; these templates are available in the Windows 10 media images, and are available as a separate download [here](https://go.microsoft.com/fwlink/p/?LinkId=625081). See [Group Policy settings reference](https://go.microsoft.com/fwlink/p/?LinkId=625082) for a list of the new and modified policy settings. If you are using a central policy store, follow the steps outlined [here](https://go.microsoft.com/fwlink/p/?LinkId=625083) to update the ADMX files stored in that central store.
 
 No new Active Directory schema updates or specific functional levels are currently required for core Windows 10 product functionality, although subsequent upgrades could require these to support new features.
 
