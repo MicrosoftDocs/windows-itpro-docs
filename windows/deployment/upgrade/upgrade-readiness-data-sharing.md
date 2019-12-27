@@ -33,7 +33,7 @@ In order to use the direct connection scenario, set the parameter **ClientProxy=
 
 ### Connection through the WinHTTP proxy
 
-This is the first and most simple proxy scenario. The WinHTTP stack was designed for use in services and does not support proxy autodetection, PAC scripts or authentication.
+This is the first and most simple proxy scenario.
 
 In order to set the WinHTTP proxy system-wide on your computers, you need to
 - Use the command netsh winhttp set proxy \<server\>:\<port\>

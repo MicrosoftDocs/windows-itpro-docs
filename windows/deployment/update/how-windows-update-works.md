@@ -1,6 +1,6 @@
 ---
 title: How Windows Update works 
-description: Learn how Windows Update works, including architecture and troubleshooting
+description: Learn how Windows Update works, including architecture and troubleshooting.
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro

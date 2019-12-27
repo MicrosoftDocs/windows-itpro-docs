@@ -1,6 +1,6 @@
 ---
 title: Windows 10, version 1809, connection endpoints for non-Enterprise editions
-description: Explains what Windows 10 endpoints are used in non-Enterprise editions.
+description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 1809.
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
 ms.mktglfcycl: manage

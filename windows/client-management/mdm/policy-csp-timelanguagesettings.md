@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - TimeLanguageSettings
-description: Policy CSP - TimeLanguageSettings
+description: Learn which TimeLanguageSettings policies are supported for your edition of Windows.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
