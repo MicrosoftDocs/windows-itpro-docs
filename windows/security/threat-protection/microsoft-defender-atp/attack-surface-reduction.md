@@ -81,7 +81,7 @@ The "engine version" of attack surface reduction events in the event log, is gen
 
 ## Attack surface reduction rules
 
-The following sections describe each of the 15 attack surface reduction rules. This table shows their corresponding GUIDs, which you use if you're configuring the rules with Group Policy or PowerShell. If you use System Center Configuration Manager or Microsoft Intune, you do not need the GUIDs:
+The following sections describe each of the 15 attack surface reduction rules. This table shows their corresponding GUIDs, which you use if you're configuring the rules with Group Policy or PowerShell. If you use Microsoft Endpoint Configuration Manager or Microsoft Intune, you do not need the GUIDs:
 
  Rule name | GUID | File & folder exclusions
 -----------|------|--------------------------
@@ -261,7 +261,7 @@ This rule blocks processes through PsExec and WMI commands from running, to prev
 > File and folder exclusions do not apply to this attack surface reduction rule.
 
 > [!WARNING]
-> Only use this rule if you're managing your devices with [Intune](https://docs.microsoft.com/intune) or another MDM solution. This rule is incompatible with management through [System Center Configuration Manager](https://docs.microsoft.com/sccm) because this rule blocks WMI commands the SCCM client uses to function correctly.
+> Only use this rule if you're managing your devices with [Intune](https://docs.microsoft.com/intune) or another MDM solution. This rule is incompatible with management through [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm) because this rule blocks WMI commands the SCCM client uses to function correctly.
 
 This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019
 

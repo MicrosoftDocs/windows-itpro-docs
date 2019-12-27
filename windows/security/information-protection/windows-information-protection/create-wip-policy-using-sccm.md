@@ -1,9 +1,9 @@
 ---
-title: Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager (Windows 10)
+title: Create and deploy a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager (Windows 10)
 description: Use Configuration Manager to make & deploy a Windows Information Protection (WIP) policy. Choose protected apps, WIP-protection level, and find enterprise data.
 ms.assetid: 85b99c20-1319-4aa3-8635-c1a87b244529
 ms.reviewer: 
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, SCCM, System Center Configuration Manager, Configuration Manager
+keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, SCCM, Microsoft Endpoint Configuration Manager, Configuration Manager
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -18,23 +18,23 @@ ms.topic: conceptual
 ms.date: 05/13/2019
 ---
 
-# Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager
+# Create and deploy a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager
 **Applies to:**
 
 - Windows 10, version 1607 and later
 - Windows 10 Mobile, version 1607 and later
-- System Center Configuration Manager
+- Microsoft Endpoint Configuration Manager
 
-System Center Configuration Manager helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection mode, and how to find enterprise data on the network.
+Microsoft Endpoint Configuration Manager helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection mode, and how to find enterprise data on the network.
 
 ## Add a WIP policy
-After you’ve installed and set up System Center Configuration Manager for your organization, you must create a configuration item for WIP, which in turn becomes your WIP policy.
+After you’ve installed and set up Microsoft Endpoint Configuration Manager for your organization, you must create a configuration item for WIP, which in turn becomes your WIP policy.
 
 **To create a configuration item for WIP**
 
-1.  Open the System Center Configuration Manager console, click the **Assets and Compliance** node, expand the **Overview** node, expand the **Compliance Settings** node, and then expand the **Configuration Items** node.
+1.  Open the Microsoft Endpoint Configuration Manager console, click the **Assets and Compliance** node, expand the **Overview** node, expand the **Compliance Settings** node, and then expand the **Configuration Items** node.
 
-    ![System Center Configuration Manager, Configuration Items screen](images/wip-sccm-addpolicy.png)
+    ![Microsoft Endpoint Configuration Manager, Configuration Items screen](images/wip-sccm-addpolicy.png)
 
 2.  Click the **Create Configuration Item** button.<p>
 The **Create Configuration Item Wizard** starts.
@@ -43,7 +43,7 @@ The **Create Configuration Item Wizard** starts.
 
 3.  On the **General Information screen**, type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
 
-4.  In the **Specify the type of configuration item you want to create** area, pick the option that represents whether you use System Center Configuration Manager for device management, and then click **Next**.
+4.  In the **Specify the type of configuration item you want to create** area, pick the option that represents whether you use Microsoft Endpoint Configuration Manager for device management, and then click **Next**.
 
     -   **Settings for devices managed with the Configuration Manager client:** Windows 10
 
@@ -62,7 +62,7 @@ The **Create Configuration Item Wizard** starts.
 The **Configure Windows Information Protection settings** page appears, where you'll configure your policy for your organization.
 
 ## Add app rules to your policy
-During the policy-creation process in System Center Configuration Manager, you can choose the apps you want to give access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
+During the policy-creation process in Microsoft Endpoint Configuration Manager, you can choose the apps you want to give access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
 
 The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed Windows desktop app, or an AppLocker policy file.
 
@@ -295,9 +295,9 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
         </RuleCollection>
     </AppLockerPolicy>
     ```
-12. After you’ve created your XML file, you need to import it by using System Center Configuration Manager.
+12. After you’ve created your XML file, you need to import it by using Microsoft Endpoint Configuration Manager.
 
-**To import your Applocker policy file app rule using System Center Configuration Manager**
+**To import your Applocker policy file app rule using Microsoft Endpoint Configuration Manager**
 1.  From the **App rules** area, click **Add**.
 
     The **Add app rule** box appears.

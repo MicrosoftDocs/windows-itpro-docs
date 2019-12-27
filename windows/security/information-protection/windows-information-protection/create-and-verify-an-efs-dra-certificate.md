@@ -47,7 +47,7 @@ The recovery process included in this topic only works for desktop devices. WIP 
     >[!Important]
     >Because the private keys in your DRA .pfx files can be used to decrypt any WIP file, you must protect them accordingly. We highly recommend storing these files offline, keeping copies on a smart card with strong protection for normal use and master copies in a secured physical location.
 
-4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as [Microsoft Intune](create-wip-policy-using-intune-azure.md) or [System Center Configuration Manager](create-wip-policy-using-sccm.md).
+4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as [Microsoft Intune](create-wip-policy-using-intune-azure.md) or [Microsoft Endpoint Configuration Manager](create-wip-policy-using-sccm.md).
 
 > [!NOTE]
 > This certificate can be used in Intune for policies both _with_ device enrollment (MDM) and _without_ device enrollment (MAM).
@@ -147,7 +147,7 @@ After signing in, the necessary WIP key info is automatically downloaded and emp
 
 - [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune-azure.md)
 
-- [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md)
+- [Create a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager](create-wip-policy-using-sccm.md)
 
 - [Creating a Domain-Based Recovery Agent](https://msdn.microsoft.com/library/cc875821.aspx#EJAA)
 
