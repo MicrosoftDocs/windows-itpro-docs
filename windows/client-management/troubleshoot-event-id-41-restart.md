@@ -61,14 +61,14 @@ When a computer shuts down or restarts because of a Stop error, Windows includes
 > [!NOTE]  
 > Event ID 41 includes the bug check code in decimal format. Most documentation that describes Stop error codes refers the codes as hexadecimal values instead of decimal values. To convert decimal to hexadecimal, follow these steps:
 >  
-> 1. Select **Start**, and then type **calc** in the **Search** box.
+> 1. Select **Start**, type **calc** in the **Search** box, and then select **Calculator**.
 > 1. In the Calculator window, select **View** > **Programmer**.
-> 1. On the left side of calculator, make sure that **Dec** is selected.
-> 1. Use the keyboard to enter the decimal value of the **BugcheckCode** parameter.
+> 1. On the left side of calculator, make sure that **Dec** is highlighted.
+> 1. Use the keyboard to enter the decimal value of the bug check code.
 > 1. On the left side of the calculator, select **Hex**.  
 > The value that the calculator displays is now the hexadecimal code.
 >  
-> In the case of the example event data in this article, "159" converts to 0x0000009f. When a BugcheckCode entry is converted to a hexadecimal format, it should have eight digits. For example, 0x9F is typically documented as 0x0000009f, and 0xA is documented as 0x0000000A.  
+> When you convert a bug check code to hexadecimal format, make sure that it has eight digits (the value preceded by "0x" + enough zeros to fill out eight digits). For example, 0x9F is typically documented as 0x0000009f, and 0xA is documented as 0x0000000A. In the case of the example event data in this article, "159" converts to 0x0000009f.  
 
 After you identify the hexadecimal value, use the following references to continue troubleshooting:
 
@@ -78,7 +78,7 @@ After you identify the hexadecimal value, use the following references to contin
 
 ### <a name="scen2"></a>Scenario 2: The computer restarts because you pressed and held the power button
 
-Because this method of restarting the computer interferes with Windows shutdown operations, we recommend only using this method if you have no alternative. For example, you might have to use this approach if your computer is not responding. When you restart the computer by pressing and holding the power button, the resulting Event ID 41 includes a non-zero value for the PowerButtonTimestamp entry.
+Because this method of restarting the computer interferes with Windows shutdown operations, we recommend only using this method if you have no alternative. For example, you might have to use this approach if your computer is not responding. When you restart the computer by pressing and holding the power button, the resulting Event ID 41 includes a non-zero value for the **PowerButtonTimestamp** entry.
 
 For help with troubleshooting an unresponsive computer, see [Windows Help](https://support.microsoft.com/hub/4338813/windows-help?os=windows-10). Consider searching for assistance by using keywords such as "hang," "responding," or "blank screen."
 
@@ -116,7 +116,7 @@ Typically, the symptoms that this scenario describes indicate a hardware problem
 If you perform these checks and still cannot isolate the problem, set the system to its default configuration and verify whether the issue still occurs.
 
 > [!NOTE]  
-> If the computer reports a Stop error message that includes a bug check code, but Event ID 41 does not include that code, change the restart behavior for the computer. To do this, follow these steps:
+> If you see a Stop error message that includes a bug check code, but Event ID 41 does not include that code, change the restart behavior for the computer. To do this, follow these steps:
 >  
 > 1. Right-click **My Computer**, then select **Properties** > **Advanced system settings** > **Advanced**.
 > 1. In the **Startup and Recovery** section, select **Settings**.
