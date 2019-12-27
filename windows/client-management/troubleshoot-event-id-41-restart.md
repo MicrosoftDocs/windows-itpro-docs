@@ -3,7 +3,7 @@ title: Advanced troubleshooting for Event ID 41 "The system has rebooted without
 description: Describes the circumstances that cause a computer to generate Event ID 41, and provides guidance for troubleshooting the issue
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 12/26/2019
+ms.date: 12/27/2019
 ms.prod: w10
 ms.topic: article
 ms.custom: 
@@ -11,7 +11,7 @@ ms.custom:
 - CSSTroubleshooting
 audience: ITPro
 ms.localizationpriority: medium
-keywords: 
+keywords: event id 41, reboot, restart, stop error, bug check code
 manager: kaushika
 
 ---
@@ -45,7 +45,7 @@ By itself, Event ID 41 might not contain sufficient information to explicitly de
 
 - [Scenario 1](#scen1): The computer restarts because of a Stop error, and Event ID 41 contains a bug check code
 - [Scenario 2](#scen2): The computer restarts because you pressed and held the power button
-- [Scenario 3](#scen2): The computer is unresponsive or randomly restarts, and Event ID 41 is missing or lists error code values of zero
+- [Scenario 3](#scen3): The computer is unresponsive or randomly restarts, and Event ID 41 is missing or lists error code values of zero
 
 ### <a name="scen1"></a>Scenario 1: The computer restarts because of a Stop error, and Event ID 41 contains a bug check code
 
@@ -111,7 +111,7 @@ Typically, the symptoms that this scenario describes indicate a hardware problem
 - **Disable overclocking**. If the computer has overclocking enabled, disable it. Verify whether the issue occurs when the system runs at the correct speed.
 - **Check the memory**. Use a memory checker to verify the memory health and configuration. Verify that each memory chip is the same speed and that it is configured correctly in the system.
 - **Check the power supply**. Make sure that the power supply has enough wattage to appropriately handle the installed devices. If you added memory, installed a newer processor, installed additional drives, or added external devices, such devices can require more energy than the current power supply can provide consistently. If the computer logged Event ID 41 because power to the computer was interrupted, consider obtaining an uninterruptible power supply (UPS) such as a battery backup power supply.
-- **Overheating**. Examine the internal temperature of the hardware to verify that the system is not overheating.
+- **Check for overheating**. Examine the internal temperature of the hardware to verify that the system is not overheating.
 
 If you perform these checks and still cannot isolate the problem, set the system to its default configuration and verify whether the issue still occurs.
 
@@ -120,4 +120,4 @@ If you perform these checks and still cannot isolate the problem, set the system
 >  
 > 1. Right-click **My Computer**, then select **Properties** > **Advanced system settings** > **Advanced**.
 > 1. In the **Startup and Recovery** section, select **Settings**.
-> 1. Clear the **Automatically restart** checkbox.
+> 1. Clear the **Automatically restart** check box.
