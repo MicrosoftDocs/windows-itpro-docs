@@ -29,7 +29,7 @@ This topic describes how to convert Windows 7 or Windows 8.1 domain-joined compu
 
 ## Prerequisites
 
-- System Center Configuration Manager Current Branch (1806) OR System Center Configuration Manager Technical Preview (1808)
+- Microsoft Endpoint Configuration Manager Current Branch (1806) OR Microsoft Endpoint Configuration Manager Technical Preview (1808)
 - The [Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) 1803 or later
     - Note: Config Mgr 1806 or later is required to [support](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk) the Windows ADK 1809.
 - Assigned Microsoft Intune Licenses

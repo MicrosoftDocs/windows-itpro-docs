@@ -111,8 +111,8 @@ A [glossary](#glossary) of abbreviations used in this article is provided at the
 | --- | --- |
 | Must we use Intune for our MDM?  |  No, any MDM will work with Autopilot, but others probably won’t have the same full suite of Windows Autopilot features as Intune.  You’ll get the best experience from Intune. |
 | Can Intune support Win32 app preinstalls?  | Yes.  Starting with the Windows 10 October Update (version 1809), Intune supports Win32 apps using .msi (and .msix) wrappers.  |
-| What is co-management?  | Co-management is when you use a combination of a cloud MDM tool (Intune) and an on-premises configuration tool like System Center Configuration Manager (SCCM). You only need to use SCCM if Intune can’t support what you want to do with your profile.  If you choose to co-manage using Intune + SCCM, you do it by including an SCCM agent in your Intune profile.  When that profile is pushed to the device, the device will see the SCCM agent and go out to SCCM to pull down any additional profile settings. |
-| Must we use SCCM for Windows Autopilot  |  No.  Co-management (described above) is optional. |
+| What is co-management?  | Co-management is when you use a combination of a cloud MDM tool (Intune) and an on-premises configuration tool like Microsoft Endpoint Configuration Manager. You only need to use the Configuration Manager if Intune can’t support what you want to do with your profile.  If you choose to co-manage using Intune + Configuration Manager, you do it by including a Configuration Manager agent in your Intune profile. When that profile is pushed to the device, the device will see the Configuration Manager agent and go out to the Configuration Manager to pull down any additional profile settings. |
+| Must we use Microsoft Endpoint Configuration Manager for Windows Autopilot  |  No.  Co-management (described above) is optional. |
 
 
 ## Features

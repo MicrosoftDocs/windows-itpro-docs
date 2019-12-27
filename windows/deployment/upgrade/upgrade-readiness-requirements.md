@@ -55,9 +55,9 @@ If you are not using Azure Portal or Azure Log Analytics, go to [Log Analytics](
 >[!IMPORTANT]
 >You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory, use a Work or School account when you sign in to Azure Portal. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in Azure Portal. You also need an Azure subscription to link to your Azure Portal workspace. The account you used to create the workspace must have administrator permissions on the Azure subscription in order to link the workspace to the Azure account. Once the link has been established, you can revoke the administrator permissions.
 
-## System Center Configuration Manager integration
+## Microsoft Endpoint Configuration Manager integration
 
-Upgrade Readiness can be integrated with your installation of Configuration Manager. For more information, see [Integrate Upgrade Readiness with System Center Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
+Upgrade Readiness can be integrated with your installation of Configuration Manager. For more information, see [Integrate Upgrade Readiness with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
 
 
 

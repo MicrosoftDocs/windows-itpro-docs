@@ -2,7 +2,8 @@
 title: Manage Windows upgrades with Upgrade Readiness (Windows 10)
 description: Provides an overview of the process of managing Windows upgrades with Upgrade Readiness.
 ms.prod: w10
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.reviewer: 
 manager: laurawi
@@ -28,7 +29,7 @@ Use Upgrade Readiness to get:
 -   Guidance and insights into application and driver compatibility issues, with suggested fixes
 -   Data driven application rationalization tools
 -   Application usage information, allowing targeted validation; workflow to track validation progress and decisions
--   Data export to commonly used software deployment tools, including System Center Configuration Manager
+-   Data export to commonly used software deployment tools, including Microsoft Endpoint Configuration Manager
 
 The Upgrade Readiness workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
 

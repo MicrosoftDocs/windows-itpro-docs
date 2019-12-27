@@ -59,9 +59,9 @@ The hardware ID, also commonly referred to as a hardware hash, contains several 
 
 Note that the hardware hash also contains details about when it was generated, so it will change each time it is generated. When the Windows Autopilot deployment service attempts to match a device, it considers changes like that, as well as more substantial changes such as a new hard drive, and is still able to match successfully. But substantial changes to the hardware, such as a motherboard replacement, would not match, so a new hash would need to be generated and uploaded.
 
-### Collecting the hardware ID from existing devices using System Center Configuration Manager
+### Collecting the hardware ID from existing devices using Microsoft Endpoint Configuration Manager
 
-Starting with System Center Configuration Manager current branch version 1802, the hardware hashes for existing Windows 10 version 1703 and higher devices are automatically collected by Configuration Manager. See the [What’s new in version 1802](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1802#report-on-windows-autopilot-device-information) documentation for more details.  The hash information can be extracted from Configuration Manager into a CSV file.
+Starting with Microsoft Endpoint Configuration Manager current branch version 1802, the hardware hashes for existing Windows 10 version 1703 and higher devices are automatically collected by Configuration Manager. See the [What’s new in version 1802](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1802#report-on-windows-autopilot-device-information) documentation for more details.  The hash information can be extracted from Configuration Manager into a CSV file.
 
 ### Collecting the hardware ID from existing devices using PowerShell
 

@@ -1,6 +1,6 @@
 ---
 title: Perform in-place upgrade to Windows 10 via Configuration Manager
-description: In-place upgrades make upgrading Windows 7, Windows 8, and Windows 8.1 to Windows 10 easy -- you can even automate the whole process with a SCCM task sequence.
+description: In-place upgrades make upgrading Windows 7, Windows 8, and Windows 8.1 to Windows 10 easy -- you can even automate the whole process with a Microsoft Endpoint Configuration Manager task sequence.
 ms.assetid: F8DF6191-0DB0-4EF5-A9B1-6A11D5DE4878
 ms.reviewer: 
 manager: laurawi
@@ -21,7 +21,7 @@ ms.topic: article
 
 -   Windows 10
 
-The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a System Center Configuration Manager task sequence to completely automate the process.
+The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Endpoint Configuration Manager task sequence to completely automate the process.
 
 ## Proof-of-concept environment
 
@@ -111,10 +111,10 @@ Figure 2. Upgrade from Windows 7 to Windows 10 Enterprise x64 with a task sequ
 
 After the task sequence finishes, the computer will be fully upgraded to Windows 10.
 
-## Upgrade to Windows 10 with System Center Configuration Manager Current Branch
+## Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager Current Branch
 
 
-With System Center Configuration Manager Current Branch, new built-in functionality makes it easier to upgrade to Windows 10.
+With Microsoft Endpoint Configuration Manager Current Branch, new built-in functionality makes it easier to upgrade to Windows 10.
 
 **Note**  
 For more details about Configuration Manager Current Branch, see the [Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620205). An [evaluation version is currently available](https://go.microsoft.com/fwlink/p/?LinkId=620206) for you to try. The instructions below are specific to the Technical Preview 2 release and may change after the next version of Configuration Manager is released.
@@ -147,7 +147,7 @@ Figure 3. The Configuration Manager upgrade task sequence.
 
 ### Create a device collection
 
-After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0001 machine running Windows 7 SP1, with the next version of System Center Configuration Manager client installed.
+After you create the upgrade task sequence, you can create a collection to test a deployment. In this section, we assume you have the PC0001 machine running Windows 7 SP1, with the next version of Microsoft Endpoint Configuration Manager client installed.
 
 1.  On CM01, using the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections**, and then select **Create Device Collection**. Use the following settings:
     -   General

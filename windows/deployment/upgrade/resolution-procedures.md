@@ -610,7 +610,7 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 
 <tr>
 <td>0x80240FFF </td>
-<td>Occurs when update synchronization fails. It can occur when you are using Windows Server Update Services on its own or when it is integrated with System Center Configuration Manager. If you enable update synchronization before you install <a href="https://support.microsoft.com/help/3095113/">hotfix 3095113</a>, WSUS doesn&#39;t recognize the Upgrades classification and instead treats the upgrade like a regular update.</td>
+<td>Occurs when update synchronization fails. It can occur when you are using Windows Server Update Services on its own or when it is integrated with Microsoft Endpoint Configuration Manager. If you enable update synchronization before you install <a href="https://support.microsoft.com/help/3095113/">hotfix 3095113</a>, WSUS doesn&#39;t recognize the Upgrades classification and instead treats the upgrade like a regular update.</td>
 <td> You can prevent this by installing <a href="https://blogs.technet.microsoft.com/wsus/2015/12/03/important-update-for-wsus-4-0-kb-3095113/">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following:
 <ol>
 <li>Disable the Upgrades classification.</li>
@@ -625,7 +625,7 @@ For detailed information on how to run these steps check out <a href="https://bl
 
 <tr>
 <td>0x8007007E</td>
-<td>Occurs when update synchronization fails because you do not have <a href="https://support.microsoft.com/help/3095113/">hotfix 3095113</a> installed before you enable update synchronization. Specifically, the CopyToCache operation fails on clients that have already downloaded the upgrade because Windows Server Update Services has bad metadata related to the upgrade. It can occur when you are using standalone Windows Server Update Services or when WSUS is integrated with System Center Configuration Manager.</td>
+<td>Occurs when update synchronization fails because you do not have <a href="https://support.microsoft.com/help/3095113/">hotfix 3095113</a> installed before you enable update synchronization. Specifically, the CopyToCache operation fails on clients that have already downloaded the upgrade because Windows Server Update Services has bad metadata related to the upgrade. It can occur when you are using standalone Windows Server Update Services or when WSUS is integrated with Microsoft Endpoint Configuration Manager.</td>
 <td> Use the following steps to repair Windows Server Update Services. You must run these steps on each WSUS server that synched metadata before you installed the hotfix.
 <ol>
 <li>Stop the Windows Update service. Sign in as a user with administrative privileges, and then do the following:

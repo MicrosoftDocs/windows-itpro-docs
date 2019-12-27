@@ -1,6 +1,6 @@
 ---
-title: Step by step - Deploy Windows 10 using System Center Configuration Manager
-description: Deploy Windows 10 in a test lab using System Center Configuration Manager
+title: Step by step - Deploy Windows 10 using Microsoft Endpoint Configuration Manager
+description: Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,12 +10,14 @@ ms.localizationpriority: medium
 ms.date: 10/11/2017
 ms.reviewer: 
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
-audience: itproauthor: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
-# Deploy Windows 10 in a test lab using System Center Configuration Manager
+# Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager
 
 **Applies to**
 
@@ -37,7 +39,7 @@ This guide leverages the Hyper-V server role to perform procedures. If you do no
 
 ## In this guide
 
-This guide provides end-to-end instructions to install and configure System Center Configuration Manager, and use it to deploy a Windows 10 image. Depending on the speed of your Hyper-V host, the procedures in this guide will require 6-10 hours to complete.
+This guide provides end-to-end instructions to install and configure Microsoft Endpoint Configuration Manager, and use it to deploy a Windows 10 image. Depending on the speed of your Hyper-V host, the procedures in this guide will require 6-10 hours to complete.
 
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
 
@@ -48,7 +50,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 <tr><td BGCOLOR="#a0e4fa"><b>Topic</b><td BGCOLOR="#a0e4fa"><b>Description</b><td BGCOLOR="#a0e4fa"><b>Time</b>
 
 <tr><td><a href="#install-prerequisites" data-raw-source="[Install prerequisites](#install-prerequisites)">Install prerequisites</a><td>Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.<td>60 minutes
-<tr><td><a href="#install-system-center-configuration-manager" data-raw-source="[Install System Center Configuration Manager](#install-system-center-configuration-manager)">Install System Center Configuration Manager</a><td>Download System Center Configuration Manager, configure prerequisites, and install the package.<td>45 minutes
+<tr><td><a href="#install-system-center-configuration-manager" data-raw-source="[Install Microsoft Endpoint Configuration Manager](#install-system-center-configuration-manager)">Install Microsoft Endpoint Configuration Manager</a><td>Download Microsoft Endpoint Configuration Manager, configure prerequisites, and install the package.<td>45 minutes
 <tr><td><a href="#download-mdop-and-install-dart" data-raw-source="[Download MDOP and install DaRT](#download-mdop-and-install-dart)">Download MDOP and install DaRT</a><td>Download the Microsoft Desktop Optimization Pack 2015 and install DaRT 10.<td>15 minutes
 <tr><td><a href="#prepare-for-zero-touch-installation" data-raw-source="[Prepare for Zero Touch installation](#prepare-for-zero-touch-installation)">Prepare for Zero Touch installation</a><td>Prerequisite procedures to support Zero Touch installation.<td>60 minutes
 <tr><td><a href="#create-a-boot-image-for-configuration-manager" data-raw-source="[Create a boot image for Configuration Manager](#create-a-boot-image-for-configuration-manager)">Create a boot image for Configuration Manager</a><td>Use the MDT wizard to create the boot image in Configuration Manager.<td>20 minutes
@@ -64,7 +66,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 </div>
 
 ## Install prerequisites
-1. Before installing System Center Configuration Manager, we must install prerequisite services and features. Type the following command at an elevated Windows PowerShell prompt on SRV1: 
+1. Before installing Microsoft Endpoint Configuration Manager, we must install prerequisite services and features. Type the following command at an elevated Windows PowerShell prompt on SRV1: 
 
     ```
     Install-WindowsFeature Web-Windows-Auth,Web-ISAPI-Ext,Web-Metabase,Web-WMI,BITS,RDC,NET-Framework-Features,Web-Asp-Net,Web-Asp-Net45,NET-HTTP-Activation,NET-Non-HTTP-Activ
@@ -116,7 +118,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 7. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 1703. Installation might require several minutes to acquire all components.   
 
-## Install System Center Configuration Manager
+## Install Microsoft Endpoint Configuration Manager
 
 1. On SRV1, temporarily disable IE Enhanced Security Configuration for Administrators by typing the following commands at an elevated Windows PowerShell prompt:
 
@@ -126,7 +128,7 @@ Topics and procedures in this guide are summarized in the following table. An es
     Stop-Process -Name Explorer
     ```
 
-2. Download [System Center Configuration Manager and Endpoint Protection](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1 (download the executable file anywhere on SRV1), double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The C:\configmgr directory will be automatically created. Click **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
+2. Download [Microsoft Endpoint Configuration Manager and Endpoint Protection](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1 (download the executable file anywhere on SRV1), double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The C:\configmgr directory will be automatically created. Click **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
 
 3. Before starting the installation, verify that WMI is working on SRV1. See the following examples. Verify that **Running** is displayed under **Status** and **True** is displayed next to **TcpTestSucceeded**:
 
@@ -184,7 +186,7 @@ Topics and procedures in this guide are summarized in the following table. An es
     ```
     cmd /c C:\configmgr\SMSSETUP\BIN\X64\Setup.exe
     ```
-18. Provide the following in the System Center Configuration Manager Setup Wizard:
+18. Provide the following in the Microsoft Endpoint Configuration Manager Setup Wizard:
     - **Before You Begin**: Read the text and click *Next*.
     - **Getting Started**: Choose **Install a Configuration Manager primary site** and select the **Use typical installation options for a stand-alone primary site** checkbox.
         - Click **Yes** in response to the popup window.
@@ -238,7 +240,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 ## Prepare for Zero Touch installation
 
-This section contains several procedures to support Zero Touch installation with System Center Configuration Manager.
+This section contains several procedures to support Zero Touch installation with Microsoft Endpoint Configuration Manager.
 
 ### Create a folder structure
 
@@ -313,7 +315,7 @@ WDSUTIL /Set-Server /AnswerClients:None
     ```
     >If the internal network adapter, assigned an IP address of 192.168.0.2, is not named "Ethernet" then replace the name "Ethernet" in the previous command with the name of this network adapter. You can review the names of network adapters and the IP addresses assigned to them by typing **ipconfig**.
 
-2. In the System Center Configuration Manager console, in the **Administration** workspace, click **Distribution Points**.
+2. In the Microsoft Endpoint Configuration Manager console, in the **Administration** workspace, click **Distribution Points**.
 3. In the display pane, right-click **SRV1.CONTOSO.COM** and then click **Properties**.
 4. On the PXE tab, select the following settings:
    - **Enable PXE support for clients**. Click **Yes** in the popup that appears.
@@ -762,8 +764,8 @@ In this first deployment scenario, we will deploy Windows 10 using PXE. This sce
 6. The smsts.log file is critical for troubleshooting any installation problems that might be encountered. Depending on the deployment phase, the smsts.log file is created in different locations:
    - X:\windows\temp\SMSTSLog\smsts.log before disks are formatted.
    - x:\smstslog\smsts.log after disks are formatted.
-   - c:\_SMSTaskSequence\Logs\Smstslog\smsts.log before the System Center Configuration Manager client is installed.
-   - c:\windows\ccm\logs\Smstslog\smsts.log after the System Center Configuration Manager client is installed.
+   - c:\_SMSTaskSequence\Logs\Smstslog\smsts.log before the Microsoft Endpoint Configuration Manager client is installed.
+   - c:\windows\ccm\logs\Smstslog\smsts.log after the Microsoft Endpoint Configuration Manager client is installed.
    - c:\windows\ccm\logs\smsts.log when the task sequence is complete.
 
      Note: If a reboot is pending on the client, the reboot will be blocked as long as the command window is open.
