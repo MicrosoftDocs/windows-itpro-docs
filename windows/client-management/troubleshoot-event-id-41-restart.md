@@ -30,6 +30,15 @@ If your computer shuts down unexpectedly, Windows logs an event that resembles t
 
 This event indicates that something unexpected happened that prevented Windows from shutting down correctly. Causes for such a shutdown include an interruption in the power supply or a Stop error. If feasible, Windows records any error codes as it shuts down. During the [kernel phase](advanced-troubleshooting-boot-problems.md#kernel-phase) of the next Windows startup, Windows checks for these codes and, if they are present, includes them in the event data of Event ID 41.
 
+> EventData  
+> BugcheckCode 159  
+> BugcheckParameter1 0x3  
+> BugcheckParameter2 0xfffffa80029c5060  
+> BugcheckParameter3 0xfffff8000403d518  
+> BugcheckParameter4 0xfffffa800208c010  
+> SleepInProgress false  
+> PowerButtonTimestamp 0Converts to 0x9f (0x3, 0xfffffa80029c5060, 0xfffff8000403d518, 0xfffffa800208c010)  
+
 ## How to use Event ID 41 when troubleshooting an unexpected shutdown or restart
 
 By itself, Event ID 41 might not contain sufficient information to explicitly define what happened. Typically, you have to also consider what was happening at the time of the unexpected shutdown (for example, whether the power supply failed). Use the information in this article to identify a troubleshooting approach that is appropriate for your circumstances:
@@ -48,8 +57,6 @@ When a computer shuts down or restarts because of a Stop error, Windows includes
 > BugcheckParameter2 0xfffffa80029c5060  
 > BugcheckParameter3 0xfffff8000403d518  
 > BugcheckParameter4 0xfffffa800208c010  
-> SleepInProgress false  
-> PowerButtonTimestamp 0Converts to 0x9f (0x3, 0xfffffa80029c5060, 0xfffff8000403d518, 0xfffffa800208c010)  
 
 > [!NOTE]  
 > Event ID 41 includes the bug check code in decimal format. Most documentation on Stop error codes reference the code as a hexadecimal value instead of a decimal value. To convert decimal to hexadecimal, follow these steps:
