@@ -59,7 +59,7 @@ When a computer shuts down or restarts because of a Stop error, Windows includes
 > BugcheckParameter4 0xfffffa800208c010  
 
 > [!NOTE]  
-> Event ID 41 includes the bug check code in decimal format. Most documentation on Stop error codes reference the code as a hexadecimal value instead of a decimal value. To convert decimal to hexadecimal, follow these steps:
+> Event ID 41 includes the bug check code in decimal format. Most documentation that describes Stop error codes refers the codes as hexadecimal values instead of decimal values. To convert decimal to hexadecimal, follow these steps:
 >  
 > 1. Select **Start**, and then type **calc** in the **Search** box.
 > 1. In the Calculator window, select **View** > **Programmer**.
