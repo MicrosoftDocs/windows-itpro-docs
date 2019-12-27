@@ -36,7 +36,7 @@ By itself, Event ID 41 might not contain sufficient information to explicitly de
 
 - [Scenario 1](#scen1): The computer restarts because of a Stop error, and Event ID 41 contains a bug check code
 - [Scenario 2](#scen2): The computer restarts because you pressed and held the power button
-- Scenario 3: The computer restarts randomly or becomes completely unresponsive, and Event ID 41 is missing or does not include error code information
+- [Scenario 3](#scen2): The computer restarts randomly or becomes completely unresponsive, and Event ID 41 is missing or does not include error code information
 
 ### <a name="scen1"></a>Scenario 1: The computer restarts because of a Stop error, and Event ID 41 contains a bug check code
 
@@ -77,7 +77,7 @@ For help with troubleshooting an unresponsive computer, see [Windows Help](https
 
 For more information about a specific situation in which a computer may stop responding, see KB 974476, [The computer stops responding when an USB device resumes from the USB Selective Suspend state in Windows 7 or in Windows Server 2008 R2](https://support.microsoft.com/help/974476/the-computer-stops-responding-when-an-usb-device-resumes-from-the-usb).
 
-### Scenario 3: The computer is unresponsive or randomly restarts, and Event ID 41 is missing or lists error code values of zero
+### <a name="scen3"></a>Scenario 3: The computer is unresponsive or randomly restarts, and Event ID 41 is missing or lists error code values of zero
 
 This scenario includes the following circumstances:
 
