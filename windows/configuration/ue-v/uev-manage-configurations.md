@@ -27,11 +27,11 @@ You can use Group Policy Objects to modify the settings that define how UE-V syn
 
 [Configuring UE-V with Group Policy Objects](uev-configuring-uev-with-group-policy-objects.md)
 
-## Configuring UE-V with System Center Configuration Manager
+## Configuring UE-V with Microsoft Endpoint Configuration Manager
 
 You can use System Center Configuration Manager to manage the UE-V service by using the UE-V Configuration Pack.
 
-[Configuring UE-V with System Center Configuration Manager](uev-configuring-uev-with-system-center-configuration-manager.md)
+[Configuring UE-V with Microsoft Endpoint Configuration Manager](uev-configuring-uev-with-system-center-configuration-manager.md)
 
 ## Administering UE-V with PowerShell and WMI
 

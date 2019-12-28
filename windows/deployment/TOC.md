@@ -35,7 +35,7 @@
 
 ### [Windows 10 deployment test lab](windows-10-poc.md)
 #### [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
-#### [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md)
+#### [Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md)
 
 ### [Plan for Windows 10 deployment](planning/index.md)
 #### [Windows 10 Enterprise FAQ for IT Pros](planning/windows-10-enterprise-faq-itpro.md)
@@ -267,7 +267,7 @@
 ### Use Windows Server Update Services
 #### [Deploy Windows 10 updates using Windows Server Update Services](update/waas-manage-updates-wsus.md)
 #### [Enable FoD and language pack updates in Windows Update](update/fod-and-lang-packs.md)
-### [Deploy Windows 10 updates using System Center Configuration Manager](update/waas-manage-updates-configuration-manager.md)
+### [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](update/waas-manage-updates-configuration-manager.md)
 ### [Manage device restarts after updates](update/waas-restart.md)
 ### [Manage additional Windows Update settings](update/waas-wu-settings.md)
 ### [Determine the source of Windows updates](update/windows-update-sources.md)

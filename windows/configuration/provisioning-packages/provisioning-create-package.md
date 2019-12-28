@@ -148,7 +148,7 @@ For details on each specific setting, see [Windows Provisioning settings referen
 
 - Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
-- [How to bulk-enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
+- [How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
 
 ## Related topics
 

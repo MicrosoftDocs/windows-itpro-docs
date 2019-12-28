@@ -10,7 +10,8 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm, M365
 ms.localizationpriority: medium
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ms.collection: M365-modern-desktop
 ---
@@ -30,8 +31,8 @@ For Windows 10 deployment, Microsoft 365 includes a fantastic deployment advisor
 - Windows Autopilot
 - In-place upgrade
 - Deploying Windows 10 upgrade with Intune
-- Deploying Windows 10 upgrade with System Center Configuration Manager
-- Deploying a computer refresh with System Center Configuration Manager
+- Deploying Windows 10 upgrade with Microsoft Endpoint Configuration Manager
+- Deploying a computer refresh with Microsoft Endpoint Configuration Manager
 
 ## Free trial account
 

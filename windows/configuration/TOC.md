@@ -141,7 +141,7 @@
 ### [Administering UE-V](ue-v/uev-administering-uev.md)
 #### [Manage Configurations for UE-V](ue-v/uev-manage-configurations.md)
 ##### [Configuring UE-V with Group Policy Objects](ue-v/uev-configuring-uev-with-group-policy-objects.md)
-##### [Configuring UE-V with System Center Configuration Manager](ue-v/uev-configuring-uev-with-system-center-configuration-manager.md)
+##### [Configuring UE-V with Microsoft Endpoint Configuration Manager](ue-v/uev-configuring-uev-with-system-center-configuration-manager.md)
 ##### [Administering UE-V with Windows PowerShell and WMI](ue-v/uev-administering-uev-with-windows-powershell-and-wmi.md)
 ###### [Managing the UE-V Service and Packages with Windows PowerShell and WMI](ue-v/uev-managing-uev-agent-and-packages-with-windows-powershell-and-wmi.md)
 ###### [Managing UE-V Settings Location Templates Using Windows PowerShell and WMI](ue-v/uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md)
