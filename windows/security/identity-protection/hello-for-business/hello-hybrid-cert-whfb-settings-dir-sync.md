@@ -31,7 +31,7 @@ In hybrid deployments, users register the public portion of their Windows Hello 
 The key-trust model needs Windows Server 2016 domain controllers, which configures the key registration permissions automatically; however, the certificate-trust model does not and requires you to add the permissions manually.
 
 > [!IMPORTANT]
-> If you already have a Windows Server 2016 domain controller in your domain, you can skip **Configure Permissions for Key Synchronization**. In this case, you should use pre-created group KeyAdmins in step 3 of "Group Memberships for the Azure AD Connect Service Account" section of this article.
+> If you already have a Windows Server 2016 domain controller in your domain, you can skip **Configure Permissions for Key Synchronization**. In this case, you should use the pre-created group KeyAdmins in step 3 of the "Group Memberships for the Azure AD Connect Service Account" section of this article.
 
 ### Configure Permissions for Key Synchronization
 
