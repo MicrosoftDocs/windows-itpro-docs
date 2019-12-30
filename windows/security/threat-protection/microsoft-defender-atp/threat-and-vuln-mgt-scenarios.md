@@ -1,6 +1,6 @@
 ---
 title: Threat & Vulnerability Management scenarios
-description: Learn how to use Threat & Vulnerability Management in the context of scenarios that Security Administrators encounter when you collaborate with IT Administrators and SecOps as you protect your organization from cybersecurity threats.    
+description: Learn how Threat & Vulnerability Management can be used to help security admins, IT admins, and SecOps collaborate in defending against security threats.
 keywords: mdatp-tvm scenarios, mdatp, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase configuration score, increase threat & vulnerability configuration score, configuration score, exposure score, security controls 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
