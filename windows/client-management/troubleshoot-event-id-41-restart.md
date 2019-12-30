@@ -16,7 +16,7 @@ manager: kaushika
 
 ---
 
-# Advanced troubleshooting for Event ID 41 "The system has rebooted without cleanly shutting down first"
+# Advanced troubleshooting for Event ID 41: "The system has rebooted without cleanly shutting down first"
 
 > **Home users**
 > This article is intended for use by support agents and IT professionals. If you're looking for more information about Stop code error messages, please visit [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
