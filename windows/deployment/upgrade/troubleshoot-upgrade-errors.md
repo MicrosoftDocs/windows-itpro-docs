@@ -3,7 +3,7 @@ title: Troubleshoot Windows 10 upgrade errors - Windows IT Pro
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
+description: Understanding the Windows 10 upgrade process can help you troubleshoot errors when something goes wrong. Find out more with this guide.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
 ms.mktglfcycl: deploy

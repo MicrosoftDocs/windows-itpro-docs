@@ -1,6 +1,6 @@
 ---
 title: Get alert information by ID API
-description: Retrieves an alert by its ID.
+description: Retrieve a Microsoft Defender ATP alert by its ID.
 keywords: apis, graph api, supported apis, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

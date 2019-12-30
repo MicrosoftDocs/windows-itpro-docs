@@ -1,6 +1,6 @@
 ---
 title: Update alert entity API
-description: Retrieves a Microsoft Defender ATP alert by its ID.
+description: Update a Microsoft Defender ATP alert via this API.
 keywords: apis, graph api, supported apis, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

@@ -52,7 +52,8 @@ The following table lists the actual and effective default policy values. Defaul
 | Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy | Not Defined |
-| Default Domain Controller Policy | Administrators |
+| Default Domain Controller Policy | Not Defined |
+| Domain Controller Local Security Policy | Administrators |
 | Stand-Alone Server Default Settings | Administrators<br>Remote Desktop Users | 
 | Domain Controller Effective Default Settings | Administrators | 
 | Member Server Effective Default Settings | Administrators<br>Remote Desktop Users |

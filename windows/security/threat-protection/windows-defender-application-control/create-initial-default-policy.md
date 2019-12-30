@@ -1,6 +1,6 @@
 ---
 title: Create a WDAC policy for fixed-workload devices using a reference computer (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+description: To create a Windows Defender Application Control (WDAC) policy for fixed-workload devices within your organization, follow this guide.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10

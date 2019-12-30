@@ -62,18 +62,19 @@ Some third-party antivirus software cannot be installed on a Windows 10 PC runni
 
 ## Servicing Surface Pro X
 
-Outside of personal devices that rely on Windows Update, servicing devices in most corporate environments requires downloading and managing the deployment of .MSI files to update target devices. Refer to the following documentation, which will be updated later to include guidance for servicing Surface Pro X:
+Surface Pro X supports Windows 10, version 1903 and later. As an ARM-based device, it has specific requirements for maintaining the latest drivers and firmware. 
 
-- [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).  
+Surface Pro X was designed to use Windows Update to simplify the process of keeping drivers and firmware up to date for both home users and small business users. Use the default settings to receive Automatic updates.  To verify:
 
-> [!NOTE]
-> Surface Pro X supports Windows 10, version 1903 and later.
+1. Go to **Start** > **Settings > Update & Security > Windows Update** > **Advanced Options.**
+2. Under **Choose how updates are installed,** select **Automatic (recommended)**.
 
-### Windows Server Update Services
-Windows Server Update Services (WSUS) does not support the ability to deliver drivers and firmware to Surface Pro X.
+### Recommendations for commercial customers
 
-For more information, refer to the [Microsoft Endpoint Configuration Manager documentation](https://docs.microsoft.com/configmgr/sum/get-started/configure-classifications-and-products).
-
+- Use Windows Update or Windows Update for Business for maintaining the latest drivers and firmware. For more information, see [Deploy Updates using Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
+- If your procedures require using a Windows Installer .msi file, contact [Surface for Business support](https://support.microsoft.com/help/4037645). 
+- For more information about deploying and managing updates on Surface devices, see [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
+- Note that Windows Server Update Services (WSUS) does not support the ability to deliver drivers and firmware to Surface Pro X.
 
 ## Running apps on Surface Pro X
 
