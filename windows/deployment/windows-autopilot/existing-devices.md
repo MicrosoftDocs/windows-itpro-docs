@@ -74,7 +74,7 @@ See the following examples.
    - In the following command, replace the example user principal name for Azure authentication (admin@M365x373186.onmicrosoft.com) with your user account. Be sure that the user account you specify has sufficient administrative rights.
 
      ```powershell
-     Connect-AutopilotIntune -user admin@M365x373186.onmicrosoft.com
+     Connect-MSGraph -user admin@M365x373186.onmicrosoft.com
      ```
      The password for your account will be requested using a standard Azure AD form. Type your password and then click **Sign in**. 
      <br>See the following example:
