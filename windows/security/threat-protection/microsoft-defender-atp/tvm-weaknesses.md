@@ -1,6 +1,6 @@
 ---
 title: Weaknesses
-description: The **Weaknesses** page lists down the vulnerabilities found in the infected software running in your organization, their severity, Common Vulnerability Scoring System (CVSS) rating, its prevalence in your organization, breach, and threat insights.    
+description: Windows Defender Security Center offers a Weaknesses page, which lists vulnerabilities found in the infected software running in your organization. 
 keywords: mdatp threat & vulnerability management, mdatp tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -50,8 +50,8 @@ You can access the list of vulnerabilities in a few places in the portal:
 ![tvm-vuln-globalsearch](images/tvm-vuln-globalsearch.png)
 3. Select the CVE and a flyout panel opens up with more information - the vulnerability description, exploits available, severity level, CVSS v3 rating, publishing and update dates. 
 
->[!NOTE]
->To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then click search. 
+    > [!NOTE]
+    > To see the rest of the vulnerabilities in the **Weaknesses** page, type CVE, then click search. 
 
 *Weaknesses page in the menu* 
 1. Go to the Threat & Vulnerability Management navigation menu and select **Weaknesses** to open up the list of vulnerabilities found in your organization.
@@ -116,8 +116,8 @@ You can report a false positive when you see any vague, inaccurate, missing, or 
 
 5. Include your machine name for investigation context.
 
->[!NOTE]
-> You can also provide details regarding the inaccuracy you reported in the **Tell us more (optional)** field to give the threat and vulnerability management investigators context. 
+    > [!NOTE]
+    > You can also provide details regarding the inaccuracy you reported in the **Tell us more (optional)** field to give the threat and vulnerability management investigators context. 
 
 6. Click **Submit**. Your feedback is immediately sent to the Threat & Vulnerability Management experts with its context.
 
