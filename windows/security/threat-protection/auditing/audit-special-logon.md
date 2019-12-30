@@ -1,6 +1,6 @@
 ---
 title: Audit Special Logon (Windows 10)
-description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Special Logon, which determines whether the operating system generates audit events under special sign on (or log on) circumstances.
+description: The Advanced Security Audit policy setting, Audit Special Logon, determines if  audit events are generated under special sign in (or logon) circumstances.
 ms.assetid: e1501bac-1d09-4593-8ebb-f311231567d3
 ms.reviewer: 
 manager: dansimp
