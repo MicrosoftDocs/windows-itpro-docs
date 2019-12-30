@@ -1,7 +1,7 @@
 ---
 title: Advanced Hunting API
 ms.reviewer: 
-description: Use this API to run advanced queries
+description: Use the Advanced hunting API to run advanced queries on Microsoft Defender Advanced Threat Protection
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

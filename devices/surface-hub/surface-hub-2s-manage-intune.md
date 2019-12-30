@@ -28,7 +28,7 @@ Surface Hub 2S allows IT administrators to manage settings and policies using a 
 
 ### Auto registration — Azure Active Directory Affiliated
 
-When affiliating Surface Hub 2S with a tenant that has Intune auto enrollment enabled, the device will automatically enroll with Intune. For more information, refer to [Intune enrollment methods for Windows devices](https://docs.microsoft.com/intune/enrollment/windows-enrollment-methods).
+During the initial setup process, when affiliating a Surface Hub with an Azure AD tenant that has Intune auto enrollment enabled, the device will automatically enroll with Intune. For more information, refer to [Intune enrollment methods for Windows devices](https://docs.microsoft.com/intune/enrollment/windows-enrollment-methods). Azure AD affiliation and Intune auto enrollment is required for the Surface Hub to be a "compliant device" in Intune. 
 
 ## Windows 10 Team Edition settings
 
@@ -69,6 +69,6 @@ You can set the Microsoft Teams app mode using Intune. Surface Hub 2S comes inst
 To set modes, add the following settings to a custom Device Configuration Profile.
 
 |**Name**|**Description**|**OMA-URI**|**Type**|**Value**|
-|:------ |:------------- |:--------- |:------ |:------- |
-|**Teams App ID**| App name | ./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId | String  | Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams­­ |
-|**Teams App Mode**| Teams mode | ./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode | Integer | 0 or 1 or 2 |
+|:--- |:--- |:--- |:--- |:--- |
+|**Teams App ID**|App name|./Vendor/MSFT/SurfaceHub/Properties/VtcAppPackageId|String| Microsoft.MicrosoftTeamsforSurfaceHub_8wekyb3d8bbwe!Teams|
+|**Teams App Mode**|Teams mode|./Vendor/MSFT/SurfaceHub/Properties/SurfaceHubMeetingMode|Integer| 0 or 1 or 2|

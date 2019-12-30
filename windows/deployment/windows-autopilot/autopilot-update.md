@@ -40,7 +40,7 @@ The following diagram illustrates a typical Windows Autopilot deployment orchest
 - When an Autopilot update is available, it is typically released on the 4th Tuesday of the month. The update could be released on a different week if there is an exception.
 - A knowledge base (KB) article will also be published to document the changes that are included in the update.
 
-See [Autopilot update history](windows-autopilot-whats-new.md#windows-autopilot-update-history).
+For a list of released updates, see [Autopilot update history](windows-autopilot-whats-new.md#windows-autopilot-update-history).
 
 ## See also
 

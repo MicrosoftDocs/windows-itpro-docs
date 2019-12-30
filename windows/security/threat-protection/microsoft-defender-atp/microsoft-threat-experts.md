@@ -1,7 +1,7 @@
 ---
 title: Microsoft Threat Experts 
 ms.reviewer: 
-description: Microsoft Threat Experts is the new managed detection and response (MDR) service in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365. 
+description: Microsoft Threat Experts provides an additional layer of expertise to Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts
 search.product: Windows 10
 search.appverid: met150

@@ -1417,7 +1417,7 @@ To turn off Inking & Typing data collection (note: there is no Group Policy for 
 
   -and-
  
-- Set **RestrictImplicitInkCollection** registry REG_DWORD setting in **HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization** to a **value of 1 (one)*
+- Set **RestrictImplicitInkCollection** registry REG_DWORD setting in **HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization** to a **value of 1 (one)**
 
 
 ### <a href="" id="bkmk-act-history"></a>18.22 Activity History

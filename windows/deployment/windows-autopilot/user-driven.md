@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot User-Driven Mode
-description: Windows Autopilot deployment
+description: Windows Autopilot user-driven mode allows devices to be deployed to a ready-to-use state without requiring help from IT personnel.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.reviewer: mniehaus
 manager: laurawi
