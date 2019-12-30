@@ -68,15 +68,15 @@ To enable WOL on Surface Studio 2, you must use the following procedure
 
 1. Create the following registry keys:
 
- ```
-; Set CONNECTIVITYINSTANDBY to 1:
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\F15576E8-98B7-4186-B944-EAFA664402D9]
-"Attributes"=dword:00000001
-; Set EnforceDisconnectedStandby to 0 and AllowSystemRequiredPowerRequests to 1:
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
-"EnforceDisconnectedStandby"=dword:00000000
-"AllowSystemRequiredPowerRequests"=dword:00000001
-```
+   ```console
+   ; Set CONNECTIVITYINSTANDBY to 1:
+   [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\F15576E8-98B7-4186-B944-EAFA664402D9]
+   "Attributes"=dword:00000001
+   ; Set EnforceDisconnectedStandby to 0 and AllowSystemRequiredPowerRequests to 1:
+   [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+   "EnforceDisconnectedStandby"=dword:00000000
+   "AllowSystemRequiredPowerRequests"=dword:00000001
+   ```
 
 2. Run the following command
 
