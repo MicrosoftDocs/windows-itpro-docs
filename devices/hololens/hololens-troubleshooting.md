@@ -33,24 +33,26 @@ If your HoloLens becomes frozen or unresponsive:
 
 If these steps don't work, you can try [recovering your device](hololens-recovery.md).
 
-## Holograms don't look good or are moving around
+## Holograms don't look good
 
-If your holograms are unstable, jumpy, or don’t look right, try one of these fixes:
+If your holograms are unstable, jumpy, or don’t look right, try:
 
-- Clean your device visor and make sure that nothing is obstructing the sensors.
-- Make sure that there’s enough light in your room.
-- Try walking around and looking at your surroundings so that HoloLens can scan them more completely.
-- Try running the Calibration app. It calibrates your HoloLens to work best for your eyes. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
+- Cleaning your device visor and sensor bar on the front of your HoloLens.
+- Increasing the light in your room.
+- Walking around and looking at your surroundings so that HoloLens can scan them more completely.
+- Calibrating your HoloLens for your eyes. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
 
-## HoloLens doesn’t respond to my gestures
+## HoloLens doesn’t respond to gestures
 
-To make sure that HoloLens can see your gestures, keep your hand in the gesture frame. The gesture frame extends a couple of feet on either side of you. When HoloLens can see your hand, the cursor changes from a dot to a ring. Learn more about [using gestures](hololens1-basic-usage.md#use-hololens-with-your-hands).
+To make sure that HoloLens can see your gestures.  Keep your hand in the gesture frame - when HoloLens can see your hand, the cursor changes from a dot to a ring.
+
+Learn more about using gestures on [HoloLens (1st gen)](hololens1-basic-usage.md#use-hololens-with-your-hands) or [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
 
 If your environment is too dark, HoloLens might not see your hand, so make sure that there’s enough light.
 
 If your visor has fingerprints or smudges, use the microfiber cleaning cloth that came with the HoloLens to clean your visor gently.
 
-## HoloLens doesn’t respond to my voice commands.
+## HoloLens doesn’t respond to my voice commands
 
 If Cortana isn’t responding to your voice commands, make sure Cortana is turned on. On the All apps list, select **Cortana** > **Menu** > **Notebook** > **Settings** to make changes. To learn more about what you can say, see [Use your voice with HoloLens](hololens-cortana.md).
 
@@ -90,3 +92,7 @@ You’ll need to free up some storage space by doing one or more of the followin
 ## My HoloLens can’t create a new space
 
 The most likely problem is that you’re running low on storage space. Try one of the [previous tips](#im-getting-a-low-disk-space-error) to free up some disk space.
+
+## The HoloLens emulators isn't working
+
+Information about the HoloLens emulator is located in our developer documentation.  Read more about [troubleshooting the HoloLens emulator](https://docs.microsoft.com/windows/mixed-reality/using-the-hololens-emulator#troubleshooting).
