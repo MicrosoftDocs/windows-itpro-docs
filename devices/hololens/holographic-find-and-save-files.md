@@ -45,13 +45,13 @@ If you don’t see any files in File Explorer, the "Recent" filter may be active
 
 You can access photos and videos taken with HoloLens by:
 
-- accessing the Camera Roll directly through the [Photos app](hololens-see-your-photos.md#photos-app).
+- accessing the Camera Roll directly through the [Photos app](holographic-photos-and-videos.md).
 - uploading photos and videos to cloud storage by syncing your photos and videos to OneDrive.
 - using the Mixed Reality Capture page of the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture).
 
 ### Photos app
 
-The Photos app is one of the default apps on the **Start** menu, and comes built-in with HoloLens. You can learn more about using the Photos app to view content and place it in your physical environment [on the HoloLens support site](https://docs.microsoft.com/en-us/hololens/).
+The Photos app is one of the default apps on the **Start** menu, and comes built-in with HoloLens. Learn more about [using the Photos app to view content](holographic-photos-and-videos.md).
 
 You can also install the [OneDrive app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) from the Microsoft Store to sync photos to other devices.
 
