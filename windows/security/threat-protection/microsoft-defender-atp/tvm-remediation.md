@@ -54,7 +54,7 @@ If you want to check how the ticket shows up in Intune, see [Use Intune to remed
 ![Screenshot of the remediation page filters for software update and uninstall](images/remediation_swupdatefilter.png)
 
 2. Select the remediation activity that you need to see or process. 
-![Screenshot of the remediation page flyout for a sofware which reached its end-of-life](images/remediation_flyouteolsw.png)
+![Screenshot of the remediation page flyout for a software which reached its end-of-life](images/remediation_flyouteolsw.png)
 
 *Top remediation activities widget in the dashboard*
 1. Go to the Threat & Vulnerability Management dashboard and scroll down to the **Top remediation activities** widget. The list is sorted and prioritized based on what is listed in the **Top security recommendations**. 
