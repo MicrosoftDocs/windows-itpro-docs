@@ -12,6 +12,7 @@ keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
+audience: ITPro 
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
@@ -63,7 +64,7 @@ You can also install the [OneDrive app](https://www.microsoft.com/p/onedrive/9wz
 
 If your HoloLens is running the [Windows 10 April 2018 update](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) or later, you can connect your HoloLens to a Windows 10 PC by using a USB cable to browse photos and videos on the device by using MTP (media transfer protocol). You'll need to make sure the device is unlocked to browse files if you have a PIN or password set up on your device.  
 
-If you have enabled the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal.md#mixed-reality-capture), you can use it to browse, retrieve, and manage the photos and videos stored on your device.
+If you have enabled the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal), you can use it to browse, retrieve, and manage the photos and videos stored on your device.
 
 ## Access files within an app
 
