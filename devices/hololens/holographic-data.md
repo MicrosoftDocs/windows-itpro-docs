@@ -12,7 +12,7 @@ keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
-audience: ITPro 
+audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
