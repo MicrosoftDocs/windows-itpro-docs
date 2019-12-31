@@ -130,7 +130,7 @@ You can also use [Advanced hunting](advanced-hunting-query-language.md) to query
 > [!NOTE]
 > The connection to the test machines is done using RDP. Make sure that your firewall settings allow RDP connections.
 
->[!NOTE]
+> [!NOTE]
 >Microsoft Office needs to be installed on the test machines for all the simulations to work.
 
 1. Connect to your machine and run an attack simulation by selecting **Connect**. 
