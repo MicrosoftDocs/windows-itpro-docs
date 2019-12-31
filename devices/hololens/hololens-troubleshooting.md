@@ -66,10 +66,6 @@ If HoloLens can’t map or load your space, it enters Limited mode and you won�
 - To see if the correct space is active, or to manually load a space, go to **Settings** > **System** > **Spaces**.
 - If the correct space is loaded and you’re still having problems, the space may be corrupt. To fix this issue, select the space, then select **Remove**. After you remove the space, HoloLens starts to map your surroundings and create a new space.
 
-## My HoloLens frequently enters Limited mode or shows a “Tracking lost” message
-
-If your device often shows a "Limited mode" or "Tracking lost" message, try the suggestions listed in [My Holograms don't look good or are moving around](#holograms-dont-look-good-or-are-moving-around).
-
 ## My HoloLens can’t tell what space I’m in
 
 If your HoloLens can’t identify and load the space you’re in automatically, check the following factors:
