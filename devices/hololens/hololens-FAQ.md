@@ -137,7 +137,7 @@ Try walking around and looking at the area where you're placing the app so HoloL
 
 Free up some storage space by doing one or more of the following:
 
-- Remove some of the holograms you've placed, or remove some saved data from within apps. [How do I find my data?](hololgraphic-data.md)
+- Remove some of the holograms you've placed, or remove some saved data from within apps. [How do I find my data?](holographic-data.md)
 - Delete some pictures and videos in the Photos app.
 - Uninstall some apps from your HoloLens. In the All apps list, tap and hold the app you want to uninstall, then select **Uninstall**. (This will also delete any of the app's data stored on the device.)
 
