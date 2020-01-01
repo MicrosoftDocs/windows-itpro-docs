@@ -19,8 +19,8 @@ ms.localizationpriority: medium
 Surface Hub and other Windows 10 devices allow IT administrators to manage settings and policies using a mobile device management (MDM) provider. A built-in management component communicates with the management server, so there is no need to install additional clients on the device. For more information, see [Windows 10 mobile device management](https://msdn.microsoft.com/library/windows/hardware/dn914769.aspx).
 
 Surface Hub has been validated with Microsoft’s first-party MDM providers:
-- On-premises MDM with System Center Configuration Manager (beginning in version 1602)
-- Hybrid MDM with System Center Configuration Manager and Microsoft Intune
+- On-premises MDM with Microsoft Endpoint Configuration Manager (beginning in version 1602)
+- Hybrid MDM with Microsoft Endpoint Configuration Manager and Microsoft Intune
 - Microsoft Intune standalone
 
 You can also manage Surface Hubs using any third-party MDM provider that can communicate with Windows 10 using the MDM protocol.
@@ -32,7 +32,7 @@ You can enroll your Surface Hubs using bulk, manual, or automatic enrollment.
 **To configure bulk enrollment**
 - Surface Hub supports the [Provisioning CSP](https://msdn.microsoft.com/library/windows/hardware/mt203665.aspx) for bulk enrollment into MDM. For more information, see [Windows 10 bulk enrollment](https://msdn.microsoft.com/library/windows/hardware/mt613115.aspx).<br>
 --OR--
-- If you have an on-premises System Center Configuration Manager infrastructure, see [How to bulk enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](https://technet.microsoft.com/library/mt627898.aspx).
+- If you have an on-premises Microsoft Endpoint Configuration Manager infrastructure, see [How to bulk enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/mt627898.aspx).
 
 ### Manual enrollment
 **To configure manual enrollment**
@@ -52,11 +52,11 @@ Then, when devices are setup during First-run, pick the option to join to Azure 
 
 ## Manage Surface Hub settings with MDM
 
-You can use MDM to manage some [Surface Hub CSP settings](#supported-surface-hub-csp-settings), and some [Windows 10 settings](#supported-windows-10-settings). Depending on the MDM provider that you use, you may set these settings using a built-in user interface, or by deploying custom SyncML. Microsoft Intune and System Center Configuration Manager provide built-in experiences to help create policy templates for Surface Hub. Refer to documentation from your MDM provider to learn how to create and deploy SyncML.
+You can use MDM to manage some [Surface Hub CSP settings](#supported-surface-hub-csp-settings), and some [Windows 10 settings](#supported-windows-10-settings). Depending on the MDM provider that you use, you may set these settings using a built-in user interface, or by deploying custom SyncML. Microsoft Intune and Microsoft Endpoint Configuration Manager provide built-in experiences to help create policy templates for Surface Hub. Refer to documentation from your MDM provider to learn how to create and deploy SyncML.
 
 ### Supported Surface Hub CSP settings
 
-You can configure the Surface Hub settings in the following table using MDM. The table identifies if the setting is supported with Microsoft Intune, System Center Configuration Manager, or SyncML.
+You can configure the Surface Hub settings in the following table using MDM. The table identifies if the setting is supported with Microsoft Intune, SMicrosoft Endpoint Configuration Manager, or SyncML.
 
 For more information, see [SurfaceHub configuration service provider](https://msdn.microsoft.com/library/windows/hardware/mt608323). 
 
@@ -92,7 +92,7 @@ For more information, see [SurfaceHub configuration service provider](https://ms
 
 In addition to Surface Hub-specific settings, there are numerous settings common to all Windows 10 devices. These settings are defined in the [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference). 
 
-The following tables include info on Windows 10 settings that have been validated with Surface Hub. There is a table with settings for these areas: security, browser, Windows Updates, Windows Defender, remote reboot, certificates, and logs. Each table identifies if the setting is supported with Microsoft Intune, System Center Configuration Manager, or SyncML.
+The following tables include info on Windows 10 settings that have been validated with Surface Hub. There is a table with settings for these areas: security, browser, Windows Updates, Windows Defender, remote reboot, certificates, and logs. Each table identifies if the setting is supported with Microsoft Intune, Microsoft Endpoint Configuration Manager, or SyncML.
 
 #### Security settings
 
@@ -160,10 +160,10 @@ The following tables include info on Windows 10 settings that have been validate
 
 |             Setting             |                           Details                            |                                           CSP reference                                            |                                                         Supported with<br>Intune?                                                          |                                                                  Supported with<br>Configuration Manager?                                                                  | Supported with<br>SyncML\*? |
 |---------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| Install trusted CA certificates | Use to deploy trusted root and intermediate CA certificates. | [RootCATrustedCertificates CSP](https://msdn.microsoft.com/library/windows/hardware/dn904970.aspx) | Yes. <br> See [Configure Intune certificate profiles](https://docs.microsoft.com/intune/deploy-use/configure-intune-certificate-profiles). | Yes. <br> See [How to create certificate profiles in System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/create-certificate-profiles). |             Yes             |
+| Install trusted CA certificates | Use to deploy trusted root and intermediate CA certificates. | [RootCATrustedCertificates CSP](https://msdn.microsoft.com/library/windows/hardware/dn904970.aspx) | Yes. <br> See [Configure Intune certificate profiles](https://docs.microsoft.com/intune/deploy-use/configure-intune-certificate-profiles). | Yes. <br> See [How to create certificate profiles in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/create-certificate-profiles). |             Yes             |
 
 <!--
-| Install client certificates  | Use to deploy Personal Information Exchange (.pfx, .p12) certificates. | [ClientCertificateInstall CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023.aspx) | Yes. <br> See [How to Create and Deploy PFX Certificate Profiles in Intune Standalone](https://blogs.technet.microsoft.com/karanrustagi/2016/03/16/want-to-push-a-certificate-to-device-but-cant-use-ndes-continue-reading/). | Yes. <br> See [How to create PFX certificate profiles in System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/create-pfx-certificate-profiles). | Yes |
+| Install client certificates  | Use to deploy Personal Information Exchange (.pfx, .p12) certificates. | [ClientCertificateInstall CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023.aspx) | Yes. <br> See [How to Create and Deploy PFX Certificate Profiles in Intune Standalone](https://blogs.technet.microsoft.com/karanrustagi/2016/03/16/want-to-push-a-certificate-to-device-but-cant-use-ndes-continue-reading/). | Yes. <br> See [How to create PFX certificate profiles in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/create-pfx-certificate-profiles). | Yes |
 -->
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
@@ -202,7 +202,7 @@ The following tables include info on Windows 10 settings that have been validate
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 ### Generate OMA URIs for settings 
-You need to use a setting’s OMA URI to create a custom policy in Intune, or a custom setting in System Center Configuration Manager.
+You need to use a setting’s OMA URI to create a custom policy in Intune, or a custom setting in Microsoft Endpoint Configuration Manager.
 
 **To generate the OMA URI for any setting in the CSP documentation**
 1. In the CSP documentation, identify the root node of the CSP. Generally, this looks like `./Vendor/MSFT/<name of CSP>` <br>
@@ -226,11 +226,11 @@ You can use Microsoft Intune to manage Surface Hub settings. For custom settings
 
 
 <span id="example-sccm">
-## Example: Manage Surface Hub settings with System Center Configuration Manager
-System Center Configuration Manager supports managing modern devices that do not require the Configuration Manager client to manage them, including Surface Hub. If you already use System Center Configuration Manager to manage other devices in your organization, you can continue to use the Configuration Manager console as your single location for managing Surface Hubs.
+## Example: Manage Surface Hub settings with  Microsoft Endpoint Configuration Manager
+Configuration Manager supports managing modern devices that do not require the Configuration Manager client to manage them, including Surface Hub. If you already use Configuration Manager to manage other devices in your organization, you can continue to use the Configuration Manager console as your single location for managing Surface Hubs.
 
 > [!NOTE]
-> These instructions are based on the current branch of System Center Configuration Manager.
+> These instructions are based on the current branch of Configuration Manager.
 
 **To create a configuration item for Surface Hub settings**
 
@@ -265,7 +265,7 @@ System Center Configuration Manager supports managing modern devices that do not
 18. When you're done, on the **Browse Settings** dialog, click **Close**.
 19. Complete the wizard. <br> You can view the new configuration item in the **Configuration Items** node of the **Assets and Compliance** workspace.
 
-For more information, see [Create configuration items for Windows 8.1 and Windows 10 devices managed without the System Center Configuration Manager client](https://docs.microsoft.com/sccm/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client).
+For more information, see [Create configuration items for Windows 8.1 and Windows 10 devices managed without the Microsoft Endpoint Configuration Manager client](https://docs.microsoft.com/sccm/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client).
 
 ## Related topics
 
