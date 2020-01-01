@@ -196,7 +196,7 @@ Alternatively, you can forcefully trigger automatic certificate enrollment using
 Use the event logs to monitor certificate enrollment and archive.  Review the configuration, such as publishing certificate templates to issuing certificate authority and the allow auto enrollment permissions.
 
 
-## Follow the Windows Hello for Business on premises certificate trust deployment guide
+## Follow the Windows Hello for Business on premises certificate key trust deployment guide
 1. [Validate Active Directory prerequisites](hello-key-trust-validate-ad-prereq.md)
 2. Validate and Configure Public Key Infrastructure (*You are here*)
 3. [Prepare and Deploy Windows Server 2016 Active Directory Federation Services](hello-key-trust-adfs.md)
