@@ -56,7 +56,7 @@ If you use Automatic Updates in your company, but want to stop your users from a
     >The toolkit won't stop users with local administrator accounts from manually installing Internet Explorer 11. Using this toolkit also prevents your users from receiving automatic upgrades from Internet Explorer 8, Internet Explorer 9, or Internet Explorer 10 to Internet Explorer 11. For more information, see the [Internet Explorer 11 Blocker Toolkit frequently asked questions](../ie11-faq/faq-ie11-blocker-toolkit.md).
 
 -   **Use an update management solution to control update deployment.**
-    If you already use an update management solution, like [Windows Server Update Services (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) or the more advanced [System Center 2012 Configuration Manager](https://go.microsoft.com/fwlink/?LinkID=276664), you should use that instead of the Internet Explorer Blocker Toolkit.
+    If you already use an update management solution, like [Windows Server Update Services (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) or the more advanced [Microsoft Endpoint Configuration Manager](https://go.microsoft.com/fwlink/?LinkID=276664), you should use that instead of the Internet Explorer Blocker Toolkit.
 
     >[!Note]
     >If you use WSUS to manage updates, and Update Rollups are configured for automatic installation, Internet Explorer will automatically install throughout your company. This scenario is discussed in detail in the Knowledge Base article [here](https://support.microsoft.com/kb/946202).
@@ -65,7 +65,7 @@ Additional information on Internet Explorer 11, including a Readiness Toolkit, t
 
 ## Availability of Internet Explorer 11
 
-Automatic Updates will start to distribute Internet Explorer 11 shortly after the final release of the product and will distribute it through the System Center Configuration Manager, Microsoft Systems Management Server, and WSUS.
+Automatic Updates will start to distribute Internet Explorer 11 shortly after the final release of the product and will distribute it through the Microsoft Endpoint Configuration Manager, Microsoft Systems Management Server, and WSUS.
 
 ## Prevent automatic installation of Internet Explorer 11 with WSUS
 
