@@ -48,7 +48,7 @@ There are several ways to configure devices for assessments. You can:
   - **For multiple PCs**
     
       You can use any of these methods:
-    - Mobile device management (MDM) or Microsoft System Center Configuration Manager
+    - Mobile device management (MDM) or Microsoft Endpoint Configuration Manager
     - A provisioning package created in Windows Configuration Designer
     - Group Policy to deploy a scheduled task that runs a Powershell script
 

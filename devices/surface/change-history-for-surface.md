@@ -167,7 +167,7 @@ New or changed topic | Description
 |New or changed topic | Description |
 | --- | --- |
 |[Surface Enterprise Management Mode](surface-enterprise-management-mode.md) | Added procedure for viewing certificate thumbprint. |
-|[Use System Center Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md) | New |
+|[Use Microsoft Endpoint Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md) | New |
 
 
 
@@ -175,7 +175,7 @@ New or changed topic | Description
 
 | New or changed topic | Description |
 | --- | --- |
-| [Considerations for Surface and System Center Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md) | New |
+| [Considerations for Surface and Microsoft Endpoint Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md) | New |
 | [Long-term servicing branch for Surface devices](ltsb-for-surface.md) | New |
 
 

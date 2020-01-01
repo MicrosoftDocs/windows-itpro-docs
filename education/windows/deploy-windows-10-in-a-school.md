@@ -88,7 +88,7 @@ Now that you have the plan (blueprint) for your classroom, you’re ready to lea
 
 The primary tool you will use to deploy Windows 10 in your school is MDT, which uses Windows ADK components to make deployment easier. You could just use the Windows ADK to perform your deployment, but MDT simplifies the process by providing an intuitive, wizard-driven user interface (UI).
 
-You can use MDT as a stand-alone tool or integrate it with Microsoft System Center Configuration Manager. As a stand-alone tool, MDT performs Lite Touch Installation (LTI) deployments—deployments that require minimal infrastructure and allow you to control the level of automation. When integrated with System Center Configuration Manager, MDT performs Zero Touch Installation (ZTI) deployments, which require more infrastructure (such as System Center Configuration Manager) but result in fully automated deployments.
+You can use MDT as a stand-alone tool or integrate it with Microsoft Endpoint Configuration Manager. As a stand-alone tool, MDT performs Lite Touch Installation (LTI) deployments—deployments that require minimal infrastructure and allow you to control the level of automation. When integrated with Configuration Manager, MDT performs Zero Touch Installation (ZTI) deployments, which require more infrastructure (such as Configuration Manager) but result in fully automated deployments.
 
 MDT includes the Deployment Workbench—a console from which you can manage the deployment of Windows 10 and your apps. You configure the deployment process in the Deployment Workbench, including the management of operating systems, device drivers, apps and migration of user settings on existing devices. 
 

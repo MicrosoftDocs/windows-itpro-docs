@@ -43,7 +43,7 @@ Command | Notes
 
 
 >[!NOTE]
->To run the SDT app console remotely on target devices, you can use a configuration management tool such as System Center Configuration Manager. Alternatively, you can create a .zip file containing the console app and appropriate console commands and deploy per your organization’s software distribution processes. 
+>To run the SDT app console remotely on target devices, you can use a configuration management tool such as Microsoft Endpoint Configuration Manager. Alternatively, you can create a .zip file containing the console app and appropriate console commands and deploy per your organization’s software distribution processes. 
 
 ## Running Best Practice Analyzer 
 

@@ -24,7 +24,7 @@ The first time that a user double-clicks the icon that has been placed on a comp
 
  
 
-The streaming source location is usually a server that is accessible by the user’s computer; however, some electronic distribution systems, such as Microsoft System Center Configuration Manager, can distribute the SFT file to the user’s computer and then stream the virtual application package locally from that computer’s cache.
+The streaming source location is usually a server that is accessible by the user’s computer; however, some electronic distribution systems, such as Microsoft Endpoint Configuration Manager, can distribute the SFT file to the user’s computer and then stream the virtual application package locally from that computer’s cache.
 
 **Note**  
 A streaming source location for virtual packages can be set up on a computer that is not a server. This is especially useful in a small branch office that has no server.

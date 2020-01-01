@@ -28,7 +28,7 @@ Follow the guidance in this topic to set up Take a Test on multiple PCs.
 To configure a dedicated test account on multiple PCs, select any of the following methods:
 - [Provisioning package created through the Set up School PCs app](#set-up-a-test-account-in-the-set-up-school-pcs-app)
 - [Configuration in Intune for Education](#set-up-a-test-account-in-intune-for-education)
-- [Mobile device management (MDM) or Microsoft System Center Configuration Manager](#set-up-a-test-account-in-mdm-or-configuration-manager)
+- [Mobile device management (MDM) or Microsoft Endpoint Configuration Manager](#set-up-a-test-account-in-mdm-or-configuration-manager)
 - [Provisioning package created through Windows Configuration Designer](#set-up-a-test-account-through-windows-configuration-designer)
 - [Group Policy to deploy a scheduled task that runs a Powershell script](https://docs.microsoft.com/education/windows/take-a-test-multiple-pcs#create-a-scheduled-task-in-group-policy) 
 

@@ -39,27 +39,27 @@ For details about Group Policy for client configuration of WSUS or Windows Updat
 
 ### Windows Installer Package
 
-Surface driver and firmware updates are packaged as Windows Installer (MSI) files. To deploy these Windows Installer packages, you can use application deployment utilities such as the Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager. Such solutions provide the means for administrators to test and review updates before deploying them, and to centralize deployment. For each device, it is important to select the correct MSI file for the device and its operating system. For more information see [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
+Surface driver and firmware updates are packaged as Windows Installer (MSI) files. To deploy these Windows Installer packages, you can use application deployment utilities such as the Microsoft Deployment Toolkit (MDT) or Microsoft Endpoint Configuration Manager. Such solutions provide the means for administrators to test and review updates before deploying them, and to centralize deployment. For each device, it is important to select the correct MSI file for the device and its operating system. For more information see [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
 
-For instructions on how to deploy updates by using Endpoint Configuration Manager (formerly System Center Configuration Manager), refer to [Deploy applications with Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications). For instructions on how to deploy updates by using MDT, see [Deploy a Windows 10 image using MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt).
+For instructions on how to deploy updates by using Microsoft Endpoint Configuration Manager (formerly System Center Configuration Manager), refer to [Deploy applications with Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications). For instructions on how to deploy updates by using MDT, see [Deploy a Windows 10 image using MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt).
 
 > [!NOTE]
 > You can deploy applications separately from an operating system deployment through MDT by using a Post OS Installation task sequence.
 
-### Microsoft System Center Configuration Manager
+### Microsoft Endpoint Configuration Manager
 
-Starting in Microsoft System Center Configuration Manager version 1710, you can synchronize and deploy Microsoft Surface firmware and driver updates by using the Configuration Manager client. The process resembles that for deploying regular updates. For additional information, see KB 4098906, [How to manage Surface driver updates in Configuration Manager](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager).
+Starting in Microsoft Endpoint Configuration Manager version 1710, you can synchronize and deploy Microsoft Surface firmware and driver updates by using the Configuration Manager client. The process resembles that for deploying regular updates. For additional information, see KB 4098906, [How to manage Surface driver updates in Configuration Manager](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager).
 
 ## Considerations when deploying updates and operating systems together
 
-The process of deploying firmware updates during an operating system deployment is straightforward. You can import the firmware and driver pack into either System Center Configuration Manager or MDT, and use them to deploy a fully updated environment to a target Surface device, complete with firmware. For a complete step-by-step guide to using MDT to deploy Windows to a Surface device, see [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](deploy-windows-10-to-surface-devices-with-mdt.md).
+The process of deploying firmware updates during an operating system deployment is straightforward. You can import the firmware and driver pack into either Configuration Manager or MDT, and use them to deploy a fully updated environment to a target Surface device, complete with firmware. For a complete step-by-step guide to using MDT to deploy Windows to a Surface device, see [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](deploy-windows-10-to-surface-devices-with-mdt.md).
 
 > [!IMPORTANT]
 > Select the correct MSI file for each specific device and its operating system. For more information, see [Deploy the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md).
 
 **WindowsPE and Surface firmware and drivers**
 
-System Center Configuration Manager and MDT both use the Windows Preinstallation Environment (WindowsPE) during the deployment process. WindowsPE only supports a limited set of basic drivers such as those for network adapters and storage controllers. Drivers for Windows components that are not part of WindowsPE might produce errors. As a best practice, you can prevent such errors by configuring the deployment process to use only the required drivers during the WindowsPE phase.
+Configuration Manager and MDT both use the Windows Preinstallation Environment (WindowsPE) during the deployment process. WindowsPE only supports a limited set of basic drivers such as those for network adapters and storage controllers. Drivers for Windows components that are not part of WindowsPE might produce errors. As a best practice, you can prevent such errors by configuring the deployment process to use only the required drivers during the WindowsPE phase.
 
 ## Supported devices
 Downloadable MSI files are available for Surface devices from Surface Pro 2 and later. Information about MSI files for the newest Surface devices such as Surface Pro 7, Surface Pro X, and Surface Laptop 3 will be available from this page upon release. 

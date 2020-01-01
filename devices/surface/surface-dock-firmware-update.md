@@ -43,7 +43,7 @@ If preferred, you can manually complete the update as follows:
 
 ## Network deployment
 
-You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firmware Update to multiple devices across your network. When using System Center Configuration Manager or other deployment tool, enter the following syntax to ensure the installation is silent:
+You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firmware Update to multiple devices across your network. When using Microsoft Endpoint Configuration Manager or other deployment tool, enter the following syntax to ensure the installation is silent:
 
 - **Msiexec.exe /i <name of msi> /quiet /norestart** 
 
