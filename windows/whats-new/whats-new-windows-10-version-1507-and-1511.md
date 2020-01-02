@@ -218,6 +218,10 @@ Some things that you can check on the device are:
 -   Is BitLocker Drive Encryption supported and enabled?
 -   Is SecureBoot supported and enabled?
 
+<!-- blank line -->
+<br>
+<!-- blank line -->
+
 >[!NOTE]
 >The device must be running Windows 10 and it must support at least TPM 2.0.
 
