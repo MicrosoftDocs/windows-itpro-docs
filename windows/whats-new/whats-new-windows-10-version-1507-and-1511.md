@@ -50,7 +50,9 @@ With Windows 10, you can create provisioning packages that let you quickly and e
   It provides the following benefits:
   - The algorithm is FIPS-compliant.
   - Easy to administer. You can use the BitLocker Wizard, manage-bde, Group Policy, MDM policy, Windows PowerShell, or WMI to manage it on devices in your organization.
-    >**Note:**  Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
+
+>[!NOTE]
+>Drives encrypted with XTS-AES will not be accessible on older version of Windows. This is only recommended for fixed and operating system drives. Removable drives should continue to use the AES-CBC 128-bit or AES-CBC 256-bit algorithms.
 
 #### New Bitlocker features in Windows 10, version 1507
 
