@@ -249,7 +249,7 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls whether to revoke the WIP keys when a device upgrades from MAM to MDM. If set to 0 (Don&#39;t revoke keys), the keys will not be revoked and the user will continue to have access to protected files after upgrade. This is recommended if the MDM service is configured with the same WIP EnterpriseID as the MAM service.
 
 - 0 - Don't revoke keys
-- 1 (dafault) - Revoke keys
+- 1 (default) - Revoke keys
 
 <p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
 
