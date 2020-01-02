@@ -1,6 +1,6 @@
 ---
 title: What's in the dashboard and what it means for my organization's security posture
-description: What's in the Threat & Vulnerability Management dashboard and how it can help SecOps and Security Administrators arrive at informed decisions to address cybersecurity threat vulnerabilities and build their organization's security resilience. 
+description: The Threat & Vulnerability Management dashboard can help SecOps and security admins address cybersecurity threats and build their org's security resilience.
 keywords: mdatp-tvm, mdatp-tvm dashboard, threat & vulnerability management, risk-based threat & vulnerability management, security configuration, configuration score, exposure score    
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
