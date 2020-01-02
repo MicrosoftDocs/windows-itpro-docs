@@ -1,6 +1,6 @@
 ---
 title: Planning and getting started on the Windows Defender Application Control deployment process (Windows 10)
-description: Learn how to gather information, create a plan, and begin to create and test initial code integrity policies for your Windows Defender Application Control deployment. 
+description: Learn how to gather information, create a plan, and begin to test initial code integrity policies for a Windows Defender Application Control deployment. 
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
