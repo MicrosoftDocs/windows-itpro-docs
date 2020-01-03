@@ -1,7 +1,7 @@
 ---
 title: LogonEvents table in the Advanced hunting schema
 description: Learn about authentication or sign-in events in the LogonEvents table of the Advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, logonevents, authentication, logon, sign in
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, logonevents, authentication, logon, sign in
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10

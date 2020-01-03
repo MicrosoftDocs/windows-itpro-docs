@@ -1,7 +1,7 @@
 ---
 title: FileCreationEvents table in the Advanced hunting schema 
 description: Learn about file-related events in the FileCreationEvents table of the Advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, filecreationevents, files, path, hash, sha1, sha256, md5
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, filecreationevents, files, path, hash, sha1, sha256, md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
