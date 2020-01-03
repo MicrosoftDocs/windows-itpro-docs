@@ -1,7 +1,7 @@
 ---
 title: MachineInfo table in the Advanced hunting schema
 description: Learn about OS, computer name, and other machine information in the MachineInfo table of the Advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, machineinfo, device, machine, OS, platform, users
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, machineinfo, device, machine, OS, platform, users
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10

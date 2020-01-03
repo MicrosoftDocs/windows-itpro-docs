@@ -1,7 +1,7 @@
 ---
 title: NetworkCommunicationEvents table in the Advanced hunting schema
 description: Learn about network connection events you can query from the NetworkCommunicationEvents table of the Advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, networkcommunicationevents, network connection, remote ip, local ip
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, networkcommunicationevents, network connection, remote ip, local ip
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
