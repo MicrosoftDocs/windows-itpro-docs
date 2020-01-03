@@ -218,10 +218,6 @@ Some things that you can check on the device are:
 -   Is BitLocker Drive Encryption supported and enabled?
 -   Is SecureBoot supported and enabled?
 
-<!-- blank line -->
-<br>
-<!-- blank line -->
-
 >[!NOTE]
 >The device must be running Windows 10 and it must support at least TPM 2.0.
 
@@ -286,7 +282,9 @@ Enterprises have the following identity and management choices.
 | Grouping   | Domain join; Workgroup; Azure AD join    |
 | Device management | Group Policy; System Center Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
-
+<!-- blank line -->
+<br>
+<!-- blank line -->
 
 >[!NOTE]  
 >With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
