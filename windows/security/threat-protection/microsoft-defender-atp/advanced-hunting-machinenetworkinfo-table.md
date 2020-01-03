@@ -1,7 +1,7 @@
 ---
 title: MachineNetworkInfo table in the Advanced hunting schema
 description: Learn about network configuration information in the MachineNetworkInfo table of the Advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, description, machinenetworkinfo, device, machine, mac, ip, adapter, dns, dhcp, gateway, tunnel
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, machinenetworkinfo, device, machine, mac, ip, adapter, dns, dhcp, gateway, tunnel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
