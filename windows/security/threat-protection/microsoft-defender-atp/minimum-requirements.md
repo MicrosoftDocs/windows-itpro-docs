@@ -174,6 +174,9 @@ When Windows Defender Antivirus is not the active antimalware in your organizati
 
 If you are onboarding servers and Windows Defender Antivirus is not the active antimalware on your servers, you shouldn't uninstall Windows Defender Antivirus. You'll need to configure it to run on passive mode. For more information, see [Onboard servers](configure-server-endpoints.md).
 
+> [!NOTE]
+> Starting with Windows 10 version 1903, Tamper Protection, when enabled, will override Group Policy.
+
 
 For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
 
