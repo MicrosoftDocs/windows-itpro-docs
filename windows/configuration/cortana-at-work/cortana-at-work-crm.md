@@ -1,6 +1,6 @@
 ---
 title: Set up and test Cortana with Microsoft Dynamics CRM (Preview feature) in your organization (Windows 10)
-description: How to set up Cortana to help your salespeople get proactive insights on important CRM activities, including sales leads, accounts, and opportunities; presenting the most relevant info at any given time.
+description: How to set up Cortana to give salespeople insights on important CRM activities, including sales leads, accounts, and opportunities.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
