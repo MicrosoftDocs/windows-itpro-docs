@@ -70,7 +70,7 @@ See the following examples.
     Install-Module WindowsAutopilotIntune -Force
     ```
 
-3. Enter the following line and provide Intune administrative credentials
+3. Enter the following line and provide Intune administrative credentials:
 
      ```powershell
      Connect-MSGraph
