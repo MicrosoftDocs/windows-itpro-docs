@@ -37,16 +37,16 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 
 | Table name | Description |
 |------------|-------------|
-| **[AlertEvents](advanced-hunting-alertevents-table.md)** | Alerts on Microsoft Defender Security Center |
-| **[MachineInfo](advanced-hunting-machineinfo-table.md)** | Machine information, including OS information |
-| **[MachineNetworkInfo](advanced-hunting-machinenetworkinfo-table.md)** | Network properties of machines, including adapters, IP and MAC addresses, as well as connected networks and domains |
-| **[ProcessCreationEvents](advanced-hunting-processcreationevents-table.md)** | Process creation and related events |
-| **[NetworkCommunicationEvents](advanced-hunting-networkcommunicationevents-table.md)** | Network connection and related events |
-| **[FileCreationEvents](advanced-hunting-filecreationevents-table.md)** | File creation, modification, and other file system events |
-| **[RegistryEvents](advanced-hunting-registryevents-table.md)** | Creation and modification of registry entries |
-| **[LogonEvents](advanced-hunting-logonevents-table.md)** | Sign-ins and other authentication events |
-| **[ImageLoadEvents](advanced-hunting-imageloadevents-table.md)** | DLL loading events |
-| **[MiscEvents](advanced-hunting-miscevents-table.md)** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
+| **[DeviceAlertEvents](advanced-hunting-alertevents-table.md)** | Alerts on Microsoft Defender Security Center |
+| **[DeviceInfo](advanced-hunting-machineinfo-table.md)** | Machine information, including OS information |
+| **[DeviceNetworkInfo](advanced-hunting-machinenetworkinfo-table.md)** | Network properties of machines, including adapters, IP and MAC addresses, as well as connected networks and domains |
+| **[DeviceProcessEvents](advanced-hunting-processcreationevents-table.md)** | Process creation and related events |
+| **[DeviceNetworkEvents](advanced-hunting-networkcommunicationevents-table.md)** | Network connection and related events |
+| **[DeviceFileEvents](advanced-hunting-filecreationevents-table.md)** | File creation, modification, and other file system events |
+| **[DeviceRegistryEvents](advanced-hunting-registryevents-table.md)** | Creation and modification of registry entries |
+| **[DeviceLogonEvents](advanced-hunting-logonevents-table.md)** | Sign-ins and other authentication events |
+| **[DeviceImageLoadEvents](advanced-hunting-imageloadevents-table.md)** | DLL loading events |
+| **[DeviceEvents](advanced-hunting-miscevents-table.md)** | Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection |
 | **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-tvm-softwareinventory-table.md)** | Inventory of software on devices as well as any known vulnerabilities in these software products |
 | **[DeviceTvmSoftwareVulnerabilitiesKB ](advanced-hunting-tvm-softwarevulnerability-table.md)** | Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available |
 | **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-tvm-configassessment-table.md)** | Threat & Vulnerability Management assessment events, indicating the status of various security configurations on devices |
