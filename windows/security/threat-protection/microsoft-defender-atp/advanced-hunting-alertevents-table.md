@@ -33,9 +33,9 @@ For information on other tables in the Advanced hunting schema, see [the Advance
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | AlertId | string | Unique identifier for the alert |
-| EventTime | datetime | Date and time when the event was recorded |
-| MachineId | string | Unique identifier for the machine in the service |
-| ComputerName | string | Fully qualified domain name (FQDN) of the machine |
+| Timestamp | datetime | Date and time when the event was recorded |
+| DeviceId | string | Unique identifier for the machine in the service |
+| DeviceName | string | Fully qualified domain name (FQDN) of the machine |
 | Severity | string | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert |
 | Category | string | Type of threat indicator or breach activity identified by the alert |
 | Title | string | Title of the alert |
