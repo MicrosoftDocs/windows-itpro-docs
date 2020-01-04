@@ -122,11 +122,18 @@ For Configuration Manager 2012, see [How to Deploy Potentially Unwanted Applicat
 Use the following cmdlet:
 
 ```PowerShell
-Set-MpPreference -PUAProtection
+Set-MpPreference -PUAProtection disable
 ```
+Setting the value for this cmdlet to `Disabled` will turn the feature off if it has been enabled.
 
+```PowerShell
+Set-MpPreference -PUAProtection enable
+```
 Setting the value for this cmdlet to `Enabled` will turn the feature on if it has been disabled.
 
+```PowerShell
+Set-MpPreference -PUAProtection auditmode
+```
 Setting `AuditMode` will detect PUAs without blocking them.
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
