@@ -25,9 +25,9 @@ ms.topic: article
 ## API description
 
 Retrieves a collection of Alerts.
-Supports [OData V4 queries](https://www.odata.org/documentation/).
-The OData's Filter query is supported on: "alertCreationTime", "incidentId", "InvestigationId", "status", "severity" and "category".
-See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
+<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
+<br>The OData's ```$filter``` query is supported on: "alertCreationTime", "incidentId", "InvestigationId", "status", "severity" and "category".
+<br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
 
 ## Limitations
