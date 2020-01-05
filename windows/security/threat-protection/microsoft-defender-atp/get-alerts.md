@@ -22,13 +22,19 @@ ms.topic: article
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+## API description
+
 Retrieves a collection of Alerts.
-
 Supports [OData V4 queries](https://www.odata.org/documentation/).
-
 The OData's Filter query is supported on: "alertCreationTime", "incidentId", "InvestigationId", "status", "severity" and "category".
-
 See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
+
+
+## Limitations
+1. You can get alerts last updated in the past 30 days.
+2. The maximum page size is 10,000.
+3. The rate limitations of this API is 100 calls per minute and 1500 calls per hour. 
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -49,10 +55,6 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 ```
 GET /api/alerts
 ```
-
-## Optional query parameters
-Method supports $top, $select, $filter, $expand and $skip query parameters.
-<br>$expand is available on Files, IPs and Domains. e.g. $expand=files,domains
 
 ## Request headers
 
@@ -120,10 +122,7 @@ Here is an example of the response.
 					"createdBy": "secop@contoso.com",
 					"createdTime": "2019-11-05T14:08:37.8404534Z"
 				}
-			],
-			"alertFiles": [],
-			"alertDomains": [],
-			"alertIps": []
+			]
 		}
 	]
 }
