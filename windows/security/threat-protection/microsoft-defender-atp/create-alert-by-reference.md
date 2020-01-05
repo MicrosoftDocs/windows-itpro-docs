@@ -24,9 +24,9 @@ ms.topic: article
 
 ## API description
 Creates new [Alert](alerts.md).
-<br>MDATP Event is a required parameter for the alert creation.
+<br>Microsoft Defender ATP Event is a required parameter for the alert creation.
 <br>You can use an event found in Advanced Hunting API or Portal.
-<br>If there is an open alert on the same Machine with the same Title, the alerts will be merged to one.
+<br>If there existing an open alert on the same Machine with the same Title, the new created alert will be merged with it.
 <br>An automatic investigation starts automatically on alerts created via the API.
 
 
