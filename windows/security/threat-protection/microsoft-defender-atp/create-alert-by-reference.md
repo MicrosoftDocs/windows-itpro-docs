@@ -32,7 +32,7 @@ Creates new [Alert](alerts.md).
 
 
 ## Limitations
-1. Rate limitations of this API are 15 calls per minute.
+1. Rate limitations for this API are 15 calls per minute.
 
 
 ## Permissions
