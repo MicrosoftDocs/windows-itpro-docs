@@ -25,14 +25,14 @@ ms.topic: article
 ## API description
 Retrieves a collection of Alerts.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
-<br>The OData's ```$filter``` query is supported on: "alertCreationTime", "incidentId", "InvestigationId", "status", "severity" and "category".
+<br>The OData's ```$filter``` query is supported on: ```alertCreationTime```, ```incidentId```, ```InvestigationId```, ```status```, ```severity``` and ```category``` properties.
 <br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
 
 ## Limitations
 1. You can get alerts last updated in the past 30 days.
 2. Maximum page size is 10,000.
-3. Rate limitations of this API are 100 calls per minute and 1500 calls per hour. 
+3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
 
 
 ## Permissions
