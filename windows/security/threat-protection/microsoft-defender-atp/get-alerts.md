@@ -23,7 +23,6 @@ ms.topic: article
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 ## API description
-
 Retrieves a collection of Alerts.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>The OData's ```$filter``` query is supported on: "alertCreationTime", "incidentId", "InvestigationId", "status", "severity" and "category".
@@ -32,8 +31,8 @@ Retrieves a collection of Alerts.
 
 ## Limitations
 1. You can get alerts last updated in the past 30 days.
-2. The maximum page size is 10,000.
-3. The rate limitations of this API is 100 calls per minute and 1500 calls per hour. 
+2. Maximum page size is 10,000.
+3. Rate limitations of this API are 100 calls per minute and 1500 calls per hour. 
 
 
 ## Permissions
