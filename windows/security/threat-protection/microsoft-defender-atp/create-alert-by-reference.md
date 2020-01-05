@@ -22,6 +22,7 @@ ms.topic: article
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+
 ## API description
 Creates new [Alert](alerts.md).
 <br>Microsoft Defender ATP Event is a required parameter for the alert creation.

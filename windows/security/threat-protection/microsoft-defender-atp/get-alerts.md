@@ -22,6 +22,7 @@ ms.topic: article
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
+
 ## API description
 Retrieves a collection of Alerts.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
@@ -123,6 +124,7 @@ Here is an example of the response.
 				}
 			]
 		}
+		...
 	]
 }
 ```
