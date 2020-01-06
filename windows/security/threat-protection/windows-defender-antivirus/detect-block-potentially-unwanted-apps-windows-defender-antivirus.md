@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 audience: ITPro
-ms.date: 10/02/2018
+ms.date: 01/06/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -25,13 +25,13 @@ manager: dansimp
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 - [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge)
 
-Potentially unwanted applications are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints which adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender ATP, due to certain kinds of undesirable behavior.
+Potentially unwanted applications (PUA) are not considered viruses, malware, or other types of threats, but they might perform actions on endpoints which adversely affect endpoint performance or use. _PUA_ can also refer to an application that has a poor reputation, as assessed by Microsoft Defender ATP, due to certain kinds of undesirable behavior.
 
 For example:
 
-* **Advertising software:** Software that displays advertisements or promotions, including software that inserts advertisements to webpages.
-* **Bundling software:** Software that offers to install other software that is not digitally signed by the same entity. Also, software that offers to install other software that qualify as PUA.
-* **Evasion software:** Software that actively tries to evade detection by security products, including software that behaves differently in the presence of security products.
+* **Advertising software**: Software that displays advertisements or promotions, including software that inserts advertisements to webpages.
+* **Bundling software**: Software that offers to install other software that is not digitally signed by the same entity. Also, software that offers to install other software that qualify as PUA.
+* **Evasion software**: Software that actively tries to evade detection by security products, including software that behaves differently in the presence of security products.
 
 For more examples and a discussion of the criteria we use to label applications for special attention from security features, see [How Microsoft identifies malware and potentially unwanted applications](../intelligence/criteria.md).
 
@@ -45,11 +45,11 @@ The next major version of Microsoft Edge, which is Chromium-based, blocks potent
 
 #### Enable PUA protection in Chromium-based Microsoft Edge
 
-Although potentially unwanted application protection in Microsoft Edge (Chromium-based) is off by default, it can easily be turned on from within the browser.
+Although potentially unwanted application protection in Microsoft Edge (Chromium-based) is turned off by default, it can easily be turned on from within the browser.
 
-1. From the tool bar, select **Settings and more** > **Settings**
-1. Select **Privacy and services**
-1. Under the **Services** section, you can toggle **Potentially unwanted app blocking** on or off
+1. From the tool bar, select **Settings and more** > **Settings**.
+2. Select **Privacy and services**.
+3. Under the **Services** section, you can toggle **Potentially unwanted app blocking** on or off.
 
 > [!TIP]
 > If you are running Microsoft Edge (Chromium-based), you can safely explore the URL-blocking feature of PUA protection by testing it out on one of our Windows Defender SmartScreen [demo pages](https://demo.smartscreen.msft.net/).
@@ -58,7 +58,7 @@ Although potentially unwanted application protection in Microsoft Edge (Chromium
 
 In Chromium-based Edge with PUA protection turned on, Windows Defender SmartScreen will protect you from PUA-associated URLs.
 
-Admins can  [configure](https://docs.microsoft.com/DeployEdge/configure-microsoft-edge) how Microsoft Edge and Windows Defender SmartScreen work together to protect groups of users from PUA-associated URLs. There are several group policy [settings](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreen-settings) explicitly for Windows
+Admins can [configure](https://docs.microsoft.com/DeployEdge/configure-microsoft-edge) how Microsoft Edge and Windows Defender SmartScreen work together to protect groups of users from PUA-associated URLs. There are several group policy [settings](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreen-settings) explicitly for Windows
 Defender SmartScreen available, including [one for blocking PUA](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). In addition, admins can
 [configure Windows Defender SmartScreen](https://docs.microsoft.com/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) as a whole, using group policy settings to turn Windows Defender SmartScreen on or off.
 
@@ -71,11 +71,11 @@ The potentially unwanted application (PUA) protection feature in Windows Defende
 > [!NOTE]
 > This feature is only available in Windows 10.
 
-Windows Defender Antivirus blocks detected PUA files, and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine.
+Windows Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine.
 
-When a PUA is detected on an endpoint, Windows Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-windows-defender-antivirus.md)) in the same format as other threat detections. The notification will be prefaced with _PUA:_ to indicate its content.
+When a PUA file is detected on an endpoint, Windows Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-windows-defender-antivirus.md)) in the same format as other threat detections. The notification will be prefaced with _PUA:_ to indicate its content.
 
-The notification will appear in the usual [quarantine list within the Windows Security app](windows-defender-security-center-antivirus.md#detection-history).
+The notification appears in the usual [quarantine list within the Windows Security app](windows-defender-security-center-antivirus.md#detection-history).
 
 #### Configure PUA protection in Windows Defender Antivirus
 
@@ -105,7 +105,7 @@ For Configuration Manager 2012, see [How to Deploy Potentially Unwanted Applicat
 
 ##### Use Group Policy to configure PUA protection
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure, and select **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure, and select **Edit**.
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
@@ -119,17 +119,30 @@ For Configuration Manager 2012, see [How to Deploy Potentially Unwanted Applicat
 
 ##### Use PowerShell cmdlets to configure PUA protection
 
-Use the following cmdlet:
+###### To enable PUA protection
 
 ```PowerShell
-Set-MpPreference -PUAProtection
+Set-MpPreference -PUAProtection enable
 ```
-
 Setting the value for this cmdlet to `Enabled` will turn the feature on if it has been disabled.
 
+###### To set PUA protection to audit mode
+
+```PowerShell
+Set-MpPreference -PUAProtection auditmode
+```
 Setting `AuditMode` will detect PUAs without blocking them.
 
-See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.
+###### To disable PUA protection
+
+We recommend keeping PUA protection turned on. However, you can turn it off by using the following cmdlet:
+
+```PowerShell
+Set-MpPreference -PUAProtection disable
+```
+Setting the value for this cmdlet to `Disabled` will turn the feature off if it has been enabled.
+
+See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md) and [Defender cmdlets](https://docs.microsoft.com/powershell/module/defender/index) for more information on how to use PowerShell with Windows Defender Antivirus.
 
 #### View PUA events
 
