@@ -50,35 +50,35 @@ Setting up DFS-R for replication is a quick and straightforward process. You pre
 
 ### Prepare MDT01 for replication
 
-1.  On MDT01, using Server Manager, click **Add roles and features**.
-2.  On the **Select installation type** page, select **Role-based or feature-based installation**.
-3.  On the **Select destination server** page, select **MDT01.contoso.com** and click **Next**.
-4.  On the **Select server roles** page, expand **File and Storage Services (Installed)** and expand **File and iSCSI Services (Installed)**.
-5.  In the **Roles** list, select **DFS Replication**. In the **Add Roles and Features Wizard** dialog box, select **Add Features**, and then click **Next**.
+1. On MDT01, using Server Manager, click **Add roles and features**.
+2. On the **Select installation type** page, select **Role-based or feature-based installation**.
+3. On the **Select destination server** page, select **MDT01.contoso.com** and click **Next**.
+4. On the **Select server roles** page, expand **File and Storage Services (Installed)** and expand **File and iSCSI Services (Installed)**.
+5. In the **Roles** list, select **DFS Replication**. In the **Add Roles and Features Wizard** dialog box, select **Add Features**, and then click **Next**.
 
     ![figure 2](../images/mdt-10-fig02.png)
 
     Adding the DFS Replication role to MDT01.
 
-6.  On the **Select features** page, accept the default settings, and click **Next**.
-7.  On the **Confirm installation selections** page, click **Install**.
-8.  On the **Installation progress** page, click **Close**.
+6. On the **Select features** page, accept the default settings, and click **Next**.
+7. On the **Confirm installation selections** page, click **Install**.
+8. On the **Installation progress** page, click **Close**.
 
 ### Prepare MDT02 for replication
 
-1.  On MDT02, using Server Manager, click **Add roles and features**.
-2.  On the **Select installation type** page, select **Role-based or feature-based installation**.
-3.  On the **Select destination server** page, select **MDT02.contoso.com** and click **Next**.
-4.  On the **Select server roles** page, expand **File and Storage Services (Installed)** and expand **File and iSCSI Services (Installed)**.
-5.  In the **Roles** list, select **DFS Replication**. In the **Add Roles and Features Wizard** dialog box, select **Add Features**, and then click **Next**.
-6.  On the **Select features** page, accept the default settings, and click **Next**.
-7.  On the **Confirm installation selections** page, click **Install**.
-8.  On the **Installation progress** page, click **Close**.
+1. On MDT02, using Server Manager, click **Add roles and features**.
+2. On the **Select installation type** page, select **Role-based or feature-based installation**.
+3. On the **Select destination server** page, select **MDT02.contoso.com** and click **Next**.
+4. On the **Select server roles** page, expand **File and Storage Services (Installed)** and expand **File and iSCSI Services (Installed)**.
+5. In the **Roles** list, select **DFS Replication**. In the **Add Roles and Features Wizard** dialog box, select **Add Features**, and then click **Next**.
+6. On the **Select features** page, accept the default settings, and click **Next**.
+7. On the **Confirm installation selections** page, click **Install**.
+8. On the **Installation progress** page, click **Close**.
 
 ### Create the MDTProduction folder on MDT02
 
-1.  On MDT02, using File Explorer, create the **E:\\MDTProduction** folder.
-2.  Share the **E:\\MDTProduction** folder as **MDTProduction$**. Use the default permissions.
+1. On MDT02, using File Explorer, create the **E:\\MDTProduction** folder.
+2. Share the **E:\\MDTProduction** folder as **MDTProduction$**. Use the default permissions.
 
     ![figure 3](../images/mdt-10-fig03.png)
 
@@ -180,14 +180,15 @@ When you have multiple deployment servers sharing the same content, you need to 
     > It will take some time for the replication configuration to be picked up by the replication members (MDT01 and MDT02). The time for the initial sync will depend on the WAN link speed between the sites. After that, delta changes are replicated quickly.
  
 ### Verify replication
-1.  On MDT02, wait until you start to see content appear in the **E:\\MDTProduction** folder.
-2.  Using DFS Management, expand **Replication**, right-click **MDTProduction**, and select **Create Diagnostics Report**.
-3.  In the Diagnostics Report Wizard, on the **Type of Diagnostics Report or Test** page, select **Health report** and click **Next**.
-4.  On the **Path and Name** page, accept the default settings and click **Next**.
-5.  On the **Members to Include** page, accept the default settings and click **Next**.
-6.  On the **Options** page, accept the default settings and click **Next**.
-7.  On the **Review Settings and Create Report** page, click **Create**.
-8.  Open the report in Internet Explorer, and if necessary, select the **Allow blocked content** option.
+
+1. On MDT02, wait until you start to see content appear in the **E:\\MDTProduction** folder.
+2. Using DFS Management, expand **Replication**, right-click **MDTProduction**, and select **Create Diagnostics Report**.
+3. In the Diagnostics Report Wizard, on the **Type of Diagnostics Report or Test** page, select **Health report** and click **Next**.
+4. On the **Path and Name** page, accept the default settings and click **Next**.
+5. On the **Members to Include** page, accept the default settings and click **Next**.
+6. On the **Options** page, accept the default settings and click **Next**.
+7. On the **Review Settings and Create Report** page, click **Create**.
+8. Open the report in Internet Explorer, and if necessary, select the **Allow blocked content** option.
 
 ![figure 9](../images/mdt-10-fig09.png)
 
@@ -196,8 +197,8 @@ The DFS Replication Health Report.
 ## Configure Windows Deployment Services (WDS) in a remote site
 
 Like you did in the previous topic for MDT01, you need to add the MDT Production Lite Touch x64 Boot image to Windows Deployment Services on MDT02. For the following steps, we assume that WDS has already been installed on MDT02.
-1.  On MDT02, using the WDS console, right-click **Boot Images** and select **Add Boot Image**.
-2.  Browse to the E:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim file and add the image with the default settings.
+1. On MDT02, using the WDS console, right-click **Boot Images** and select **Add Boot Image**.
+2. Browse to the E:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim file and add the image with the default settings.
 
 ## Deploy the Windows 10 client to the remote site
 
