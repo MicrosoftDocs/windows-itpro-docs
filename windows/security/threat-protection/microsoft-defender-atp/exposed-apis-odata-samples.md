@@ -69,9 +69,7 @@ Content-type: application/json
 			"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 			"machineTags": [ "test tag 1", "ExampleTag" ]
         },
-        .
-        .
-        .
+        ...
     ]
 }
 ```
@@ -121,9 +119,7 @@ Content-type: application/json
 				}
 		  ]
         },
-        .
-        .
-        .
+        ...
     ]
 }
 ```
@@ -164,9 +160,7 @@ Content-type: application/json
 			"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 			"machineTags": [ "test tag 1", "ExampleTag" ]
         },
-        .
-        .
-        .
+        ...
     ]
 }
 ```
@@ -207,9 +201,7 @@ Content-type: application/json
 			"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 			"machineTags": [ "test tag 1", "ExampleTag" ]
         },
-        .
-        .
-        .
+        ...
     ]
 }
 ```
@@ -250,9 +242,7 @@ Content-type: application/json
 			"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 			"machineTags": [ "test tag 1", "ExampleTag" ]
         },
-        .
-        .
-        .
+        ...
     ]
 }
 ```
@@ -286,9 +276,7 @@ Content-type: application/json
             "lastUpdateTimeUtc": "2018-12-04T12:18:57.5511934Z",
 			"relatedFileInfo": null
         },
-        .
-        .
-        .
+        ...
     ]
 }
 ```
