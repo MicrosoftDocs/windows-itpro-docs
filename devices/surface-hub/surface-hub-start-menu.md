@@ -185,4 +185,4 @@ This example shows a link to a website and a link to a .pdf file. The secondary 
 
 ## More information
 
-- [Blog post: Changing Surface Hub’s Start Menu](https://blogs.technet.microsoft.com/y0av/2018/02/13/47/)
+- - [Customize and export Start layout](https://docs.microsoft.com/en-us/windows/configuration/customize-and-export-start-layout)
