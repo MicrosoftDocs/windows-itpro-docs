@@ -28,8 +28,8 @@ Represent an Automated Investigation entity in Microsoft Defender ATP.
 ## Methods
 Method|Return Type |Description
 :---|:---|:---
-[List Investigations](.md) | Investigation collection | Get a collection of Investigation
-[Get single Investigation](.md) | Investigation entity | Gets a single Investigation entity.
+[List Investigations](.md) | Investigation collection | Get collection of Investigation
+[Get single Investigation](.md) | Investigation entity | Gets single Investigation entity.
 [Start Investigation](.md) | Investigation entity | Starts Investigation on a machine.
 
 
