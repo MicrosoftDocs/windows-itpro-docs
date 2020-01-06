@@ -1,6 +1,6 @@
 ---
 title: SMBv1 Microsoft network server Digitally sign communications (if client agrees) (Windows 10)
-description: For SMBv1 only, describes the best practices, location, values, policy management and security considerations for the Microsoft network server Digitally sign communications (if client agrees) security policy setting.
+description: Best practices, security considerations and more for the security policy setting, Microsoft network server Digitally sign communications (if client agrees).
 ms.assetid: c92b2e3d-1dbf-4337-a145-b17a585f4fc1
 ms.reviewer: 
 ms.author: dansimp

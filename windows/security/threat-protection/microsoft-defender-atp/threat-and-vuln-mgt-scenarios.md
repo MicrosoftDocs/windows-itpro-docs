@@ -1,6 +1,6 @@
 ---
 title: Threat & Vulnerability Management scenarios
-description: Learn how to use Threat & Vulnerability Management in the context of scenarios that Security Administrators encounter when you collaborate with IT Administrators and SecOps as you protect your organization from cybersecurity threats.    
+description: Learn how Threat & Vulnerability Management can be used to help security admins, IT admins, and SecOps collaborate in defending against security threats.
 keywords: mdatp-tvm scenarios, mdatp, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase configuration score, increase threat & vulnerability configuration score, configuration score, exposure score, security controls 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -181,6 +181,23 @@ ComputerName=any(ComputerName) by MachineId, AlertId
 | order by NumOfVulnerabilities desc 
 
 ```
+
+## Conduct an inventory of software or software versions which have reached their end-of-life
+End-of-life for software or software versions means that they will no longer be supported nor serviced. When you use software or software versions which have reached their end-of-life, you're exposing your organization to security vulnerabilities, legal, and financial risks. 
+
+It is crucial for you as Security and IT Administrators to work together and ensure that your organization's software inventory is configured for optimal results, compliance, and a healthy network ecosystem. 
+
+To conduct an inventory of software or software versions which have reached their end of life:
+1. From the Threat & Vulnerability Management menu, navigate to **Security recommendations**.
+2. Go to the **Filters** panel and select **Software uninstall** from **Remediation Type** options if you want to see the list of software recommendations associated with software which have reached their end-of-life (tagged as **EOL software**). Select **Software update** from **Remediation Type** options if you want to see the list of software recommendations associated with software and software versions which have reached their end-of-life (tagged as **EOL versions installed**). 
+3. Select a software that you'd like to investigate. A fly-out screen opens where you can select **Open software page**.
+![Screenshot of Security recommendation for a software that reached its end of life page](images/secrec_flyout.png) 
+
+4. In the **Software page** select the **Version distribution** tab to know which versions of the software have reached their end-of-life, and how many vulnerabilities were discovered in it.
+![Screenshot of software details for a software that reached its end of life](images/secrec_sw_details.png) 
+
+After you have identified which software and software versions are vulnerable due to its end-of-life status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. See [Remediation and exception](tvm-remediation.md) for details.
+
 
 ## Related topics
 - [Supported operating systems and platforms](tvm-supported-os.md)

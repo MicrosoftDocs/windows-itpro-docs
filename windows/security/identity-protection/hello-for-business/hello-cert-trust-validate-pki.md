@@ -1,6 +1,6 @@
 ---
 title: Validate Public Key Infrastructure - certificate trust model (Windows Hello for Business)
-description: How to Validate Public Key Infrastructure for Windows Hello for Business
+description: How to Validate Public Key Infrastructure for Windows Hello for Business, under a certificate trust model.
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -1,7 +1,7 @@
 ---
 title: RegistryEvents table in the Advanced hunting schema
 description: Learn about registry events you can query from the RegistryEvents table of the Advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, registryevents, registry, key, subkey, value
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, registryevents, registry, key, subkey, value
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
