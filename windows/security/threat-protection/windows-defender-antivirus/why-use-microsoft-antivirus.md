@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/16/2019
+ms.date: 01/06/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -25,7 +25,7 @@ manager: dansimp
 
 Windows Defender Antivirus is the next-generation protection component of [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md) (Microsoft Defender ATP). 
 
-Although you can use a non-Microsoft antivirus solution with Microsoft Defender ATP, there are advantages to using Windows Defender Antivirus together with Microsoft Defender ATP. Not only is it an excellent, next-generation antivirus solution, but combined with other Microsoft Defender ATP capabilities, such as Endpoint Detection and Response and Automated Investigation and Remediation, you'll see better protection that's coordinated across products. 
+Although you can use a non-Microsoft antivirus solution with Microsoft Defender ATP, there are advantages to using Windows Defender Antivirus together with Microsoft Defender ATP. Not only is Windows Defender Antivirus an excellent next-generation antivirus solution, but combined with other Microsoft Defender ATP capabilities, such as [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) and [automated investigation and remediation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations), you'll see better protection that's coordinated across products. 
 
 ## 10 reasons to use Windows Defender Antivirus together with Microsoft Defender ATP
 
