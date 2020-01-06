@@ -25,7 +25,7 @@ ms.topic: article
 
 ## API description
 Submits or Updates new [Indicator](ti-indicator.md) entity.
-
+<br>CIDR notation for IPs is supported.
 
 ## Limitations
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
