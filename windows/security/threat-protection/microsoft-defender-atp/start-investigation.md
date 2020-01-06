@@ -24,25 +24,21 @@ ms.topic: article
 
 
 ## API description
-Starts automated investigation on a machine.
+Start automated investigation on a machine.
 <br>See [Overview of automated investigations](automated-investigations.md) for more information.
 
 
--------------------------- im here
-
 ## Limitations
-1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+1. Rate limitations for this API are 50 calls per hour.
 
-
-[!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
-Application |	Machine.Isolate |	'Isolate machine'
-Delegated (work or school account) | Machine.Isolate |	'Isolate machine'
+Application |	Alert.ReadWrite.All |	'Read and write all alerts'
+Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
 >[!Note]
 > When obtaining a token using user credentials:
@@ -52,7 +48,7 @@ Delegated (work or school account) | Machine.Isolate |	'Isolate machine'
 
 ## HTTP request
 ```
-POST https://api.securitycenter.windows.com/api/machines/{id}/isolate
+POST https://api.securitycenter.microsoft.com/api/machines/{id}/startInvestigation
 ```
 
 ## Request headers
@@ -68,15 +64,10 @@ In the request body, supply a JSON object with the following parameters:
 Parameter |	Type	| Description
 :---|:---|:---
 Comment |	String |	Comment to associate with the action. **Required**.
-IsolationType	| String |	Type of the isolation. Allowed values are: 'Full' or 'Selective'.
-
-**IsolationType** controls the type of isolation to perform and can be one of the following:
-- Full – Full isolation
-- Selective – Restrict only limited set of applications from accessing the network (see [Isolate machines from the network](respond-machine-alerts.md#isolate-machines-from-the-network) for more details)
 
 
 ## Response
-If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body.
+If successful, this method returns 201 - Created response code and [Investigation](investigation.md) in the response body.
 
 
 ## Example
@@ -88,12 +79,8 @@ Here is an example of the request.
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
-POST https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/isolate
+POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/startInvestigation
 Content-type: application/json
 {
-  "Comment": "Isolate machine due to alert 1234",
-  “IsolationType”: “Full” 
+  "Comment": "Test investigation",
 }
-
-
-- To unisolate a machine, see [Release machine from isolation](unisolate-machine.md).

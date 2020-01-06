@@ -380,7 +380,12 @@
 ####### [Run antivirus scan](run-av-scan.md)
 ####### [Offboard machine](offboard-machine-api.md)
 ####### [Stop and quarantine file](stop-and-quarantine-file.md)
-####### [Initiate investigation (preview)](initiate-autoir-investigation.md)
+
+###### [Automated Investigation]()
+####### [Investigation methods and properties](microsoft-defender-atp/investigation.md)
+####### [List Investigation](microsoft-defender-atp/get-investigation-collection.md)
+####### [Get Investigation](microsoft-defender-atp/get-investigation-object.md)
+####### [Start Investigation](microsoft-defender-atp/start-investigation.md)
 
 ###### [Indicators]()
 ####### [Methods and properties](ti-indicator.md)

@@ -406,7 +406,6 @@
 ####### [Run antivirus scan](microsoft-defender-atp/run-av-scan.md)
 ####### [Offboard machine](microsoft-defender-atp/offboard-machine-api.md)
 ####### [Stop and quarantine file](microsoft-defender-atp/stop-and-quarantine-file.md)
-####### [Initiate investigation (preview)](microsoft-defender-atp/initiate-autoir-investigation.md)
 
 ###### [Automated Investigation]()
 ####### [Investigation methods and properties](microsoft-defender-atp/investigation.md)
