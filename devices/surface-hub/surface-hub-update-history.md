@@ -442,7 +442,7 @@ This update brings the Windows 10 Team Anniversary Update to Surface Hub and inc
 * General
   * Enabled Audio Device Selection (for Surface Hubs attached using external audio devices)
   * Enabled support for HDCP on DisplayPort output connector
-  * System UI changes to settings for usability optimization (refer to [User and Admin Guides](http://www.microsoft.com/surface/support/surface-hub) for additional details)
+  * System UI changes to settings for usability optimization (refer to [User and Admin Guides](https://www.microsoft.com/surface/support/surface-hub) for additional details)
   * Bug fixes and performance optimizations to speed up the Azure Active Directory sign-in flow
   * Significantly improved time needed to reset and restore Surface Hub
   * Windows Defender UI has been added within settings
@@ -520,9 +520,9 @@ This update to the Surface Hub includes quality improvements and security fixes.
 
 ## Related topics
 
-* [Windows 10 feature road map](http://go.microsoft.com/fwlink/p/?LinkId=785967)
-* [Windows 10 release information](http://go.microsoft.com/fwlink/p/?LinkId=724328)
-* [Windows 10 November update: FAQ](http://windows.microsoft.com/windows-10/windows-update-faq)
-* [Microsoft Surface update history](http://go.microsoft.com/fwlink/p/?LinkId=724327)
-* [Microsoft Lumia update history](http://go.microsoft.com/fwlink/p/?LinkId=785968)
-* [Get Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=616447)
+* [Windows 10 feature roadmap](https://go.microsoft.com/fwlink/p/?LinkId=785967)
+* [Windows 10 release information](https://go.microsoft.com/fwlink/p/?LinkId=724328)
+* [Windows 10 November update: FAQ](https://windows.microsoft.com/windows-10/windows-update-faq)
+* [Microsoft Surface update history](https://go.microsoft.com/fwlink/p/?LinkId=724327)
+* [Microsoft Lumia update history](https://go.microsoft.com/fwlink/p/?LinkId=785968)
+* [Get Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=616447)

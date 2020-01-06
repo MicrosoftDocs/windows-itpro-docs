@@ -182,7 +182,3 @@ This example shows a link to a website and a link to a .pdf file. The secondary 
 
 >[!NOTE]
 >The default value for `ForegroundText` is light; you don't need to include `ForegroundText` in your XML unless you're changing the value to dark.
-
-## More information
-
-- [Blog post: Changing Surface Hub’s Start Menu](https://blogs.technet.microsoft.com/y0av/2018/02/13/47/)
