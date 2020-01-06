@@ -93,7 +93,7 @@ Content-type: application/json
     "firstSeen": "2018-08-02T14:55:03.7791856Z",
 	"lastSeen": "2018-08-02T14:55:03.7791856Z",
     "osPlatform": "Windows10",
-    "version": null,
+    "version": "1709",
 	"osProcessor": "x64",
     "lastIpAddress": "172.17.230.209",
     "lastExternalIpAddress": "167.220.196.71",

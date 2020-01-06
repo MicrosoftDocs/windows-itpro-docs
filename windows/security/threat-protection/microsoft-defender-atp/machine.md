@@ -50,5 +50,31 @@ rbacGroupName | String | Machine group Name.
 rbacGroupId | Int | Machine group unique ID.
 riskScore | Nullable Enum | Risk score as evaluated by Microsoft Defender ATP. Possible values are: 'None', 'Low', 'Medium' and 'High'.
 exposureScore | Nullable Enum | [Exposure score](tvm-exposure-score.md) as evaluated by Microsoft Defender ATP. Possible values are: 'None', 'Low', 'Medium' and 'High'.
-aadDeviceId | Nullable Guid | AAD Device ID (when [machine](machine.md) is Aad Joined).
+aadDeviceId | Nullable representation Guid | AAD Device ID (when [machine](machine.md) is Aad Joined).
 machineTags | String collection | Set of [machine](machine.md) tags.
+
+
+## Json representation
+
+```json
+{
+    "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
+    "computerDnsName": "mymachine1.contoso.com",
+    "firstSeen": "2018-08-02T14:55:03.7791856Z",
+	"lastSeen": "2018-08-02T14:55:03.7791856Z",
+    "osPlatform": "Windows10",
+    "version": "1709",
+	"osProcessor": "x64",
+    "lastIpAddress": "172.17.230.209",
+    "lastExternalIpAddress": "167.220.196.71",
+    "osBuild": 18209,
+    "healthStatus": "Active",
+    "rbacGroupId": 140,
+	"rbacGroupName": "The-A-Team",
+    "riskScore": "Low",
+	"exposureLevel": "Medium",
+	"isAadJoined": true,
+    "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+	"machineTags": [ "test tag 1", "test tag 2" ]
+}
+```
