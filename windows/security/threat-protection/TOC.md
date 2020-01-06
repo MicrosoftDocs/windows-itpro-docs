@@ -408,6 +408,12 @@
 ####### [Stop and quarantine file](microsoft-defender-atp/stop-and-quarantine-file.md)
 ####### [Initiate investigation (preview)](microsoft-defender-atp/initiate-autoir-investigation.md)
 
+###### [Automated Investigation]()
+####### [Investigation methods and properties](microsoft-defender-atp/investigation.md)
+####### [List Investigation](microsoft-defender-atp/get-investigation-collection.md)
+####### [Get Investigation](microsoft-defender-atp/get-investigation-object.md)
+####### [Start Investigation](microsoft-defender-atp/start-investigation.md)
+
 ###### [Indicators]()
 ####### [Indicators methods and properties](microsoft-defender-atp/ti-indicator.md)
 ####### [Submit Indicator](microsoft-defender-atp/post-ti-indicator.md)
