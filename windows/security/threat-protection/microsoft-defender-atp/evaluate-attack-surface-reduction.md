@@ -23,7 +23,7 @@ manager: dansimp
 
 * [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Attack surface reduction rules help prevent actions and apps that are typically used by exploit-seeking malware to infect machines. Attack surface reduction rules are supported on Windows Server 2019 as well as Windows 10 clients.
+Attack surface reduction rules help prevent actions and apps that are typically used by exploit-seeking malware to infect machines. Attack surface reduction rules are supported on Windows Server 2019, as well as Windows 10 clients.
 
 This topic helps you evaluate attack surface reduction rules. It explains how to enable audit mode so you can test the feature directly in your organization.
 
@@ -36,16 +36,15 @@ You can enable attack surface reduction rules in audit mode. This lets you see a
 
 You might want to do this when testing how the feature will work in your organization, to ensure it doesn't affect your line-of-business apps, and to get an idea of how often the rules will fire during normal use.
 
-To enable audit mode, use the following PowerShell cmdlet:
+To enable all attack surface reduction rules in audit mode, use the following PowerShell cmdlet:
 
 ```PowerShell
 Set-MpPreference -AttackSurfaceReductionRules_Actions AuditMode
 ```
 
-This enables all attack surface reduction rules in audit mode.
-
 > [!TIP]
 > If you want to fully audit how attack surface reduction rules will work in your organization, you'll need to use a management tool to deploy this setting to machines in your network(s).
+
 You can also use Group Policy, Intune, or MDM CSPs to configure and deploy the setting, as described in the main [Attack surface reduction rules topic](attack-surface-reduction.md).
 
 ## Review attack surface reduction events in Windows Event Viewer

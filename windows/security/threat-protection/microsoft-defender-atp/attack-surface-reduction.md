@@ -1,7 +1,7 @@
 ---
 title: Use attack surface reduction rules to prevent malware infection
-description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect machines with malware
-keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention
+description: Microsoft Defender ATP's attack surface reduction rules can help prevent exploits from using apps and scripts to infect machines with malware.
+keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -26,9 +26,7 @@ ms.custom: asr
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Attack surface reduction rules help prevent behaviors malware often uses to infect computers with malicious code. You can set attack surface reduction rules for computers running Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, or Windows Server 2019.
-
-To use the entire feature set of attack surface reduction rules, you need a Windows 10 Enterprise license. With a Windows E5 license you get advanced management capabilities including monitoring, analytics, and workflows available in [Microsoft Defender Advanced Threat Protection](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the Microsoft 365 security center. These advanced capabilities aren't available with an E3 license, but you can use Event Viewer to review attack surface reduction rule events.
+Attack surface reduction rules help prevent behaviors malware often use to infect computers with malicious code. You can set attack surface reduction rules for computers running Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, or Windows Server 2019.
 
 Attack surface reduction rules target behaviors that malware and malicious apps typically use to infect computers, including:
 
@@ -41,6 +39,10 @@ You can use [audit mode](audit-windows-defender.md) to evaluate how attack surfa
 Triggered rules display a notification on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays in the Microsoft Defender Security Center and in the Microsoft 365 security center.
 
 For information about configuring attack surface reduction rules, see [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
+
+## Attack surface reduction features across Windows versions
+
+To use the entire feature set of attack surface reduction rules, you need a Windows 10 Enterprise license. With a Windows E5 license, you get advanced management capabilities including monitoring, analytics, and workflows available in [Microsoft Defender Advanced Threat Protection](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the Microsoft 365 security center. These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
 
 ## Review attack surface reduction events in the Microsoft Defender Security Center
 
@@ -84,7 +86,7 @@ The "engine version" of attack surface reduction events in the event log, is gen
 The following sections describe each of the 15 attack surface reduction rules. This table shows their corresponding GUIDs, which you use if you're configuring the rules with Group Policy or PowerShell. If you use System Center Configuration Manager or Microsoft Intune, you do not need the GUIDs:
 
  Rule name | GUID | File & folder exclusions
------------|------|--------------------------
+-|-|-
 Block executable content from email client and webmail | BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550 | Supported
 Block all Office applications from creating child processes | D4F940AB-401B-4EFC-AADC-AD5F3C50688A | Supported
 Block Office applications from creating executable content  | 3B576869-A4EC-4529-8536-B80A7769E899 | Supported
