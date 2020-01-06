@@ -1,6 +1,6 @@
 ---
 title: Software inventory
-description: Microsoft Defender ATP Threat & Vulnerability management's discovery capability shows in the software inventory page. You can see the name of the product, vendor, the latest version it is in, and the number of weaknesses and vulnerabilities detected.
+description: Microsoft Defender ATP Threat & Vulnerability Management's software inventory page shows how many weaknesses and vulnerabilities have been detected in software.
 keywords: microsoft defender atp, microsoft defender atp software inventory, mdatp threat & vulnerability management, mdatp threat & vulnerability management software inventory, mdatp tvm software inventory, tvm software inventory
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

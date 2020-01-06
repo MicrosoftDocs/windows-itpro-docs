@@ -1,6 +1,6 @@
 ---
 title: Monitor claim types (Windows 10)
-description: This topic for the IT professional describes how to monitor changes to claim types that are associated with dynamic access control when you are using advanced security auditing options.
+description: Learn how to monitor changes to claim types that are associated with dynamic access control when you are using advanced security auditing options.
 ms.assetid: 426084da-4eef-44af-aeec-e7ab4d4e2439
 ms.reviewer: 
 ms.author: dansimp
