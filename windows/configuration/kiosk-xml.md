@@ -255,7 +255,7 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 ```
 
 ## [Preview] Global Profile Sample XML
-Global Profile is currently supported in Windows 10 Insider Preview (19H2, 20H1 builds). Global Profile is designed for scenarios where a user does not have a designated profile, yet IT Admin still wants the user to run in lock down mode, or used as mitigation when a profile cannot be determined for an user.
+Global Profile is currently supported in Windows 10 Insider Preview (20H1 builds). Global Profile is designed for scenarios where a user does not have a designated profile, yet IT Admin still wants the user to run in lock down mode, or used as mitigation when a profile cannot be determined for an user.
 
 This sample demonstrates that only a global profile is used, no active user configured. Global profile will be applied when every non-admin account logs in 
 ```xml

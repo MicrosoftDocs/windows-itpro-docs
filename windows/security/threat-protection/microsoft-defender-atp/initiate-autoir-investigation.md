@@ -26,7 +26,7 @@ ms.topic: article
 Initiate AutoIR investigation on a machine.
 
 >[!Note]
-> This page focuses on performing an automated investigation on a machine. See [Automated Investigation](automated-investigations.md) for more information.
+> This page focuses on performing an automated investigation on a machine. See [automated investigation](automated-investigations.md) for more information.
 
 ## Limitations
 1. The number of executions is limited (up to 5 calls per hour).
@@ -73,7 +73,7 @@ If successful, this method returns 200 OK response code with object that holds t
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 POST https://api.securitycenter.windows.com/api/machines/fb9ab6be3965095a09c057be7c90f0a2/InitiateInvestigation

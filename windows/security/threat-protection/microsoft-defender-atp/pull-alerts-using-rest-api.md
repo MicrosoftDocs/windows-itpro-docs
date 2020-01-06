@@ -178,10 +178,11 @@ Here is an example return value:
 The following code example demonstrates how to obtain an access token and call the Microsoft Defender ATP API.
 
 ```csharp
-AuthenticationContext context = new AuthenticationContext(string.Format("https://login.windows.net/{0}/oauth2", tenantId));
+AuthenticationContext context = new AuthenticationContext(string.Format("https://login.windows.net/{0}", tenantId));
 ClientCredential clientCredentials = new ClientCredential(clientId, clientSecret);
-AuthenticationResult authenticationResult  = context.AcquireToken(resource, clientCredentials);
+AuthenticationResult authenticationResult = context.AcquireTokenAsync(detectionsResource, clientCredentials).GetAwaiter().GetResult();
 ```
+
 ### Use token to connect to the detections endpoint
 
 ```

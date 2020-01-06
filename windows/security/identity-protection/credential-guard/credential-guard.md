@@ -1,6 +1,6 @@
 ---
 title: Protect derived domain credentials with Windows Defender Credential Guard (Windows 10)
-description: Introduced in Windows 10 Enterprise, Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
+description: Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them.
 ms.assetid: 4F1FE390-A166-4A24-8530-EA3369FEB4B1
 ms.reviewer: 
 ms.prod: w10
@@ -35,7 +35,7 @@ By enabling Windows Defender Credential Guard, the following features and soluti
 ## Related topics
 
 - [Isolated User Mode in Windows 10 with Dave Probert (Channel 9)](https://channel9.msdn.com/Blogs/Seth-Juarez/Isolated-User-Mode-in-Windows-10-with-Dave-Probert)
-- [Isolated User Mode Processes and Features in Windows 10 with Logan Gabriel (Channel 9)](http://channel9.msdn.com/Blogs/Seth-Juarez/Isolated-User-Mode-Processes-and-Features-in-Windows-10-with-Logan-Gabriel)
+- [Isolated User Mode Processes and Features in Windows 10 with Logan Gabriel (Channel 9)](https://channel9.msdn.com/Blogs/Seth-Juarez/Isolated-User-Mode-Processes-and-Features-in-Windows-10-with-Logan-Gabriel)
 - [More on Processes and Features in Windows 10 Isolated User Mode with Dave Probert (Channel 9)](https://channel9.msdn.com/Blogs/Seth-Juarez/More-on-Processes-and-Features-in-Windows-10-Isolated-User-Mode-with-Dave-Probert)
 - [Mitigating Credential Theft using the Windows 10 Isolated User Mode (Channel 9)](https://channel9.msdn.com/Blogs/Seth-Juarez/Mitigating-Credential-Theft-using-the-Windows-10-Isolated-User-Mode)
 - [Protecting network passwords with Windows Defender Credential Guard](https://www.microsoft.com/itshowcase/Article/Content/831/Protecting-network-passwords-with-Windows-10-Credential-Guard)

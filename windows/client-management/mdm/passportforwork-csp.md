@@ -190,7 +190,7 @@ Default value is false. If you set this policy to true, Remote Windows Hello for
 
 Supported operations are Add, Get, Delete, and Replace.
 
-*Not supported on Windows Holographic and Windows Holographic for Business.*
+*Not supported on Windows Holographic and Windows Holographic for Business prior to Windows 10 version 1903 (May 2019 Update).*
 
 <a href="" id="tenantid-policies-usehellocertificatesassmartcardcertificates"></a>***TenantId*/Policies/UseHelloCertificatesAsSmartCardCertificates** (only for ./Device/Vendor/MSFT)  
 Added in Windows 10, version 1809. If you enable this policy setting, applications use Windows Hello for Business certificates as smart card certificates. Biometric factors are unavailable when a user is asked to authorize the use of the certificate's private key. This policy setting is designed to allow compatibility with applications that rely exclusively on smart card certificates.
@@ -206,7 +206,7 @@ This node is deprecated. Use **Biometrics/UseBiometrics** node instead.
 
 <a href="" id="biometrics--only-for---device-vendor-msft-"></a>**Biometrics** (only for ./Device/Vendor/MSFT)  
 Node for defining biometric settings. This node was added in Windows 10, version 1511.
-*Not supported on Windows Holographic and Windows Holographic for Business.*
+*Not supported on Windows Holographic and Windows Holographic for Business prior to Windows 10 version 1903 (May 2019 Update).*
 
 <a href="" id="biometrics-usebiometrics--only-for---device-vendor-msft-"></a>**Biometrics/UseBiometrics** (only for ./Device/Vendor/MSFT)  
 Boolean value used to enable or disable the use of biometric gestures, such as face and fingerprint, as an alternative to the PIN gesture for Windows Hello for Business. Users must still configure a PIN if they configure biometric gestures to use in case of failures. This node was added in Windows 10, version 1511.
@@ -230,7 +230,7 @@ Note that enhanced anti-spoofing for Windows Hello face authentication is not re
 
 Supported operations are Add, Get, Delete, and Replace.
 
-*Not supported on Windows Holographic and Windows Holographic for Business.*
+*Not supported on Windows Holographic and Windows Holographic for Business prior to Windows 10 version 1903 (May 2019 Update).*
 
 <a href="" id="deviceunlock"></a>**DeviceUnlock** (only for ./Device/Vendor/MSFT)  
 Added in Windows 10, version 1803. Interior node.
@@ -271,7 +271,7 @@ Scope is permanent. Supported operation is Get.
 
 
 <a href="" id="securitykey-usesecuritykeyforsignin"></a>**SecurityKey/UseSecurityKeyForSignin** (only for ./Device/Vendor/MSFT)  
-Added in Windows 10, version 1903. Enables users to sign-in to their device with a [FIDO2 security key](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) that is compatible with Microsoft’s implementation.
+Added in Windows 10, version 1903. Enables users to sign-in to their device with a [FIDO2 security key](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) that is compatible with Microsoft’s implementation.
 
 Scope is dynamic. Supported operations are Add, Get, Replace, and Delete.
 

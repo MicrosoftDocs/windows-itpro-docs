@@ -23,7 +23,7 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
  
-[!include[Prerelease information](prerelease.md)]
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
@@ -77,6 +77,10 @@ This action takes effect on machines with Windows 10, version 1703 or later, whe
 
     - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
     - **Search box** - select **File** from the drop–down menu and enter the file name
+
+
+    >[!NOTE]
+    >The stop and quarantine file action is limited to a maximum of 1000 machines. To stop a file on a larger number of machines, see [Add indicator to block or allow file](#add-indicator-to-block-or-allow-a-file).
 
 2. Go to the top bar and select **Stop and Quarantine File**.
 

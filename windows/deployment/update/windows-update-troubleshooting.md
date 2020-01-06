@@ -3,11 +3,12 @@ title: Windows Update troubleshooting
 description: Learn how to troubleshoot Windows Update
 ms.prod: w10
 ms.mktglfcycl: 
-ms.sitesec: library
-audience: itproauthor: greg-lindsay
-ms.localizationpriority: medium
-ms.audience: itproauthor: greg-lindsay
-ms.date: 09/18/2018
+audience: itpro
+itproauthor: jaimeo
+author: jaimeo
+ms.localizationprioauthor: jaimeo
+ms.audience: itpro
+author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
@@ -23,6 +24,7 @@ If you run into problems when using Windows Update, start with the following ste
 2. Install the most recent Servicing Stack Update (SSU) that matches your version of Windows from the Microsoft Update Catalog. See [Servicing stack updates](servicing-stack-updates.md) for more details on SSU. 
 3. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history for your system: 
 
+   - [Windows 10, version 1903 and Windows Server, version 1903](https://support.microsoft.com/help/4498140)
    - [Windows 10, version 1809 and Windows Server 2019](https://support.microsoft.com/help/4464619/windows-10-update-history)
    - [Windows 10, version 1803](https://support.microsoft.com/help/4099479/windows-10-update-history) 
    - [Windows 10, version 1709](https://support.microsoft.com/help/4043454) 
@@ -47,7 +49,7 @@ The update that is offered to a device depends on several factors. Some of the m
 
 If the update you're offered isn't the most current available, it might be because your device is being managed by a WSUS server, and you're being offered the updates available on that server. It's also possible, if your device is part of a Windows as a Service deployment ring, that your admin is intentionally slowing the rollout of updates. Since the WaaS rollout is slow and measured to begin with, all devices will not receive the update on the same day.  
  
-## My machine is frozen at scan. Why? 
+## My device is frozen at scan. Why? 
 The Settings UI is talking to the Update Orchestrator service which in turn is talking to Windows Update service. If these services stop unexpectedly then you might see this behavior. In such cases, do the following:  
 1. Close the Settings app and reopen it.  
 2. Launch Services.msc and check if the following services are running:  
@@ -144,7 +146,23 @@ Go to Services.msc and ensure that Windows Firewall Service is enabled. Stopping
 Windows Update provides a wide range configuration policies to control the behavior of WU service in a managed environment. While these policies let you configure the settings at a granular level, misconfiguration or setting conflicting polices may lead to unexpected behaviors. 
  
 See [How to configure automatic updates by using Group Policy or registry settings](https://support.microsoft.com/help/328010/how-to-configure-automatic-updates-by-using-group-policy-or-registry-s) for more information.
+
+## Device cannot access update files
+Check that your device can access these Windows Update endpoints:
+
+- http://windowsupdate.microsoft.com
+- http://*.windowsupdate.microsoft.com
+- https://*.windowsupdate.microsoft.com
+- http://*.update.microsoft.com
+- https://*.update.microsoft.com
+- http://*.windowsupdate.com
+- http://download.windowsupdate.com
+- https://download.microsoft.com
+- http://*.download.windowsupdate.com
+- http://wustat.windows.com
+- http://ntservicepack.microsoft.com
  
+ Whitelist these endpoints for future use.
  
 ## Updates aren't downloading from the intranet endpoint (WSUS/SCCM) 
 Windows 10 devices can receive updates from a variety of sources, including Windows Update online, a Windows Server Update Services server, and others. To determine the source of Windows Updates currently being used on a device, follow these steps:  

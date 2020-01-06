@@ -6,7 +6,6 @@ description: Enroll devices to enable use of Update Compliance, Upgrade Readines
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, updates, upgrades, log analytics, health, azure portal
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
@@ -16,6 +15,9 @@ ms.topic: article
 ---
 
 # Enrolling devices in Windows Analytics
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 If you have not already done so, consult the topics for any of the three Windows Analytics solutions (Update Compliance, Upgrade Readiness, and Device Health) you intend to use and follow the steps there to add the solutions to Azure Portal.
 
@@ -37,7 +39,7 @@ To find your commercial ID, first navigate to the **Solutions** tab for your wor
 
 From there, select the settings page, where you can find and copy your commercial ID:
 
-[![Settings page for Upgrade Readiness in Azure portsl](images/azure-portal-UR-settings.png)](images/azure-portal-UR-settings.png)
+[![Settings page for Upgrade Readiness in Azure portal](images/azure-portal-UR-settings.png)](images/azure-portal-UR-settings.png)
 
 
 
@@ -99,15 +101,15 @@ The compatibility update scans your devices and enables application usage tracki
 | **Operating System** | **Updates** |
 |----------------------|-----------------------------------------------------------------------------|
 | Windows 10        | Windows 10 includes the compatibility update, so you will automatically have the latest compatibility update so long as you continue to keep your Windows 10 devices up to date with cumulative updates.  |
-| Windows 8.1          | The compatibility update is included in monthly quality updates for Windows 8.1. We recommend installing the latest [Windows Monthly Rollup](http://www.catalog.update.microsoft.com/Search.aspx?q=security%20monthly%20quality%20rollup%20for%20windows%208) before attempting to enroll devices into Windows Analytics. |
-| Windows 7 SP1        | The compatibility update is included in monthly quality updates for Windows 7. We recommend installing the latest [Windows Monthly Rollup](http://www.catalog.update.microsoft.com/Search.aspx?q=security%20monthly%20quality%20rollup%20for%20windows%207) before attempting to enroll devices into Windows Analytics. |
+| Windows 8.1          | The compatibility update is included in monthly quality updates for Windows 8.1. We recommend installing the latest [Windows Monthly Rollup](https://www.catalog.update.microsoft.com/Search.aspx?q=security%20monthly%20quality%20rollup%20for%20windows%208) before attempting to enroll devices into Windows Analytics. |
+| Windows 7 SP1        | The compatibility update is included in monthly quality updates for Windows 7. We recommend installing the latest [Windows Monthly Rollup](https://www.catalog.update.microsoft.com/Search.aspx?q=security%20monthly%20quality%20rollup%20for%20windows%207) before attempting to enroll devices into Windows Analytics. |
 
 ### Connected User Experiences and Telemetry service
 
 With Windows diagnostic data enabled, the Connected User Experience and Telemetry service (DiagTrack) collects system, application, and driver data. Microsoft analyzes this data, and shares it back to you through Windows Analytics. For the best experience, install these updates depending upon the operating system version.
 
 - For Windows 10, install the latest Windows 10 cumulative update.
-- For Windows 8.1, nstall the October 2018 monthly rollup, [KB4462926](https://support.microsoft.com/help/4462926)
+- For Windows 8.1, install the October 2018 monthly rollup, [KB4462926](https://support.microsoft.com/help/4462926)
 - For Windows 7, install the October 2018 monthly rollup, [KB4462923](https://support.microsoft.com/help/4462923)
 
 
@@ -206,7 +208,7 @@ For more information about Internet Explorer Security Zones, see [About URL Secu
 
 We recommend using the deployment script to configure devices. However if this is not an option, you can still manage settings by policy as described in the previous section. However, if you don't run the deployment script, you won't benefit from its error checking, and you might have to wait a long time (possibly weeks) before devices send the initial full inventory scan.
 
-Note that it is possible to intiate a full inventory scan on a device by calling these commands:
+Note that it is possible to initiate a full inventory scan on a device by calling these commands:
 - CompatTelRunner.exe -m:generaltel.dll -f:DoCensusRun
 - CompatTelRunner.exe -m:appraiser.dll -f:DoScheduledTelemetryRun ent
 

@@ -1,5 +1,5 @@
 ---
-title: Considerations for Surface and System Center Configuration Manager (Surface)
+title: Considerations for Surface and Microsoft Endpoint Configuration Manager
 description: The management and deployment of Surface devices with Configuration Manager is fundamentally the same as any other PC; this article describes scenarios that may require additional considerations.
 keywords: manage, deployment, updates, driver, firmware
 ms.prod: w10
@@ -9,30 +9,32 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 10/16/2017
+ms.localizationpriority: medium
+ms.audience: itpro
+ms.date: 11/25/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Considerations for Surface and System Center Configuration Manager
 
-Fundamentally, management and deployment of Surface devices with System Center Configuration Manager is the same as the management and deployment of any other PC. Like any other PC, a deployment to Surface devices includes importing drivers, importing a Windows image, preparing a deployment task sequence, and then deploying the task sequence to a collection. After deployment, Surface devices are like any other Windows client – to publish apps, settings, and policies, you use the same process that you would use for any other device.
+Fundamentally, management and deployment of Surface devices with System Center Configuration Manager is the same as the management and deployment of any other PC. Like any other PC, a deployment to Surface devices includes importing drivers, importing a Windows image, preparing a deployment task sequence, and then deploying the task sequence to a collection. After deployment, Surface devices are like any other Windows client; to publish apps, settings, and policies, you use the same process as you would use for any other device.
 
 You can find more information about how to use Configuration Manager to deploy and manage devices in the [Documentation for System Center Configuration Manager](https://docs.microsoft.com/sccm/index).
 
-Although the deployment and management of Surface devices is fundamentally the same as any other PC, there are some scenarios that may require additional considerations or steps. This article provides descriptions and guidance for these scenarios; the solutions documented in this article may apply to other devices and manufacturers as well.
+Although the deployment and management of Surface devices is fundamentally the same as any other PC, there are some scenarios that may require additional considerations or steps. This article provides descriptions and guidance for these scenarios. The solutions documented in this article may apply to other devices and manufacturers as well.
 
->[!NOTE]
->For management of Surface devices it is recommended that you use the Current Branch of System Center Configuration Manager.
+> [!NOTE]
+> For management of Surface devices it is recommended that you use the Current Branch of System Center Configuration Manager.
 
 ## Updating Surface device drivers and firmware
 
-For devices that receive updates through Windows Update, drivers for Surface components – and even firmware updates – are applied automatically as part of the Windows Update process. For devices with managed updates, such as those updated through Windows Server Update Services (WSUS), the option to install drivers and firmware through Windows Update is not available. For these managed devices, the recommended driver management process is the deployment of driver and firmware updates using the Windows Installer (.msi) files, which are provided through the Microsoft Download Center. You can find a list of these downloads at [Download the latest firmware and drivers for Surface devices](https://technet.microsoft.com/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices).
 
-As .msi files, deployment of driver and firmware updates is performed in the same manner as deployment of an application. Instead of installing an application as would normally happen when an .msi file is run, the Surface driver and firmware .msi will apply the driver and firmware updates to the device. The single .msi file contains the driver and firmware updates required by each component of the Surface device. The updates for firmware are applied the next time the device reboots. You can read more about the .msi installation method for Surface drivers and firmware in [Manage Surface driver and firmware updates](https://technet.microsoft.com/itpro/surface/manage-surface-pro-3-firmware-updates). For more information about how to deploy applications with Configuration Manager, see [Packages and programs in System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs).
+For devices that recieve updates through Windows Update, drivers for Surface components (and even firmware updates) are applied automatically as part of the Windows Update process. For devices with managed updates, such as those updated through Windows Server Update Services (WSUS) or System Center Configuration Manager, see [Manage Surface driver and firmware updates](https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates/).
 
->[!NOTE]
->Surface device drivers and firmware are signed with SHA-256, which is not natively supported by Windows Server 2008 R2. A workaround is available for Configuration Manager environments running on Windows Server 2008 R2 – for more information see [Can't import drivers into System Center Configuration Manager (KB3025419)](https://support.microsoft.com/kb/3025419).
+
+> [!NOTE]
+> Surface device drivers and firmware are signed with SHA-256, which is not natively supported by Windows Server 2008 R2. A workaround is available for Configuration Manager environments running on Windows Server 2008 R2. For more information, see [Can't import drivers into System Center Configuration Manager (KB3025419)](https://support.microsoft.com/kb/3025419).
 
 ## Surface Ethernet adapters and Configuration Manager deployment
 
@@ -64,9 +66,9 @@ Instructions for applying prestaged media to UEFI devices, such as Surface devic
 
 Surface devices come preinstalled with a licensed copy of Windows. For example, Surface Pro 4 is preinstalled with Windows 10 Professional. The license key for this preinstalled copy of Windows is embedded in the firmware of the device with OEM Activation 3.0 (OA 3.0). When you run Windows installation media on a device with an OA 3.0 key, Windows setup automatically reads the license key and uses it to install and activate Windows. In most situations, this simplifies the reinstallation of Windows, because the user does not have to find or enter a license key.
 
-When you reimage a device by using Windows Enterprise, this embedded license key does not cause a conflict. This is because the installation media for Windows Enterprise is configured to install only an Enterprise edition of Windows and therefore is incompatible with the license key embedded in the system firmware. If a product key is not specified (such as when you intend to activate with Key Management Services (KMS) or Active Directory Based Activation), a Generic Volume License Key (GVLK) is used until Windows is activated by one of those technologies.
+When you reimage a device by using Windows Enterprise, this embedded license key does not cause a conflict. This is because the installation media for Windows Enterprise is configured to install only an Enterprise edition of Windows and therefore is incompatible with the license key embedded in the system firmware. If a product key is not specified (such as when you intend to activate with Key Management Services [KMS] or Active Directory Based Activation), a Generic Volume License Key (GVLK) is used until Windows is activated by one of those technologies.
 
-However, issues may arise when organizations intend to use versions of Windows that are compatible with the firmware embedded key. For example, an organization that wants to install Windows 10 Professional on a Surface 3 device that originally shipped with Windows 10 Home edition may encounter difficulty when Windows setup automatically reads the Home edition key during installation and installs as Home edition rather than Professional. To avoid this conflict, you can use the Ei.cfg or Pid.txt file (see [Windows Setup Edition Configuration and Product ID Files](https://technet.microsoft.com/library/hh824952.aspx)) to explicitly instruct Windows setup to prompt for a product key, or you can enter a specific product key in the deployment task sequence. If you do not have a specific key, you can use the default product keys for Windows, which you can find in [Customize and deploy a Windows 10 operating system](https://dpcenter.microsoft.com/en/Windows/Build/cp-Windows-10-build) on the Device Partner Center.
+However, issues may arise when organizations intend to use versions of Windows that are compatible with the firmware embedded key. For example, an organization that wants to install Windows 10 Professional on a Surface 3 device that originally shipped with Windows 10 Home edition may encounter difficulty when Windows setup automatically reads the Home edition key during installation and installs as Home edition rather than Professional. To avoid this conflict, you can use the Ei.cfg or Pid.txt file to explicitly instruct Windows setup to prompt for a product key, or you can enter a specific product key in the deployment task sequence. For more information, see [Windows Setup Edition Configuration and Product ID Files](https://technet.microsoft.com/library/hh824952.aspx). If you do not have a specific key, you can use the default product keys for Windows, which you can find in [Customize and deploy a Windows 10 operating system](https://dpcenter.microsoft.com/en/Windows/Build/cp-Windows-10-build) on the Device Partner Center.
 
 ## Apply an asset tag during deployment
 

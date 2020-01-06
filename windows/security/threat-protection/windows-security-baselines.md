@@ -1,6 +1,6 @@
 ---
 title: Windows security baselines
-description: This article, and the articles it links to, describe how to use Windows security baselines in your organization
+description: Learn how to use Windows security baselines in your organization. Specific to Windows 10, Windows Server, and Office 365 ProPlus.
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -20,8 +20,8 @@ ms.reviewer:
 **Applies to**  
 
 -   Windows 10
--   Windows Server 2016 
--   Office 2016 
+-   Windows Server 
+-   Office 365 ProPlus 
 
 ## Using security baselines in your organization 
 

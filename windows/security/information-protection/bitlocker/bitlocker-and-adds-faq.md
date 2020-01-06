@@ -1,6 +1,6 @@
 ---
 title: BitLocker and Active Directory Domain Services (AD DS) FAQ (Windows 10)
-description: This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.
+description: Learn more about how BitLocker and Active Directory Domain Services (AD DS) can work together to keep devices secure. 
 ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
 ms.reviewer: 
 ms.prod: w10
@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -37,7 +37,15 @@ If BitLocker is enabled on a drive before Group Policy has been applied to enfor
 
 For more info, see [BitLocker Group Policy settings](bitlocker-group-policy-settings.md).
 
-The BitLocker Windows Management Instrumentation (WMI) interface does allow administrators to write a script to back up or synchronize an online client's existing recovery information; however, BitLocker does not automatically manage this process. The manage-bde command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the C: drive to AD DS, you would use the following command from an elevated command prompt: **manage-bde -protectors -adbackup C:**.
+The BitLocker Windows Management Instrumentation (WMI) interface does allow administrators to write a script to back up or synchronize an online client's existing recovery information; however, BitLocker does not automatically manage this process. The manage-bde command-line tool can also be used to manually back up recovery information to AD DS. For example, to back up all of the recovery information for the `$env:SystemDrive` to AD DS, you would use the following command script from an elevated command prompt:
+
+```PowerShell
+$BitLocker = Get-BitLockerVolume -MountPoint $env:SystemDrive
+$RecoveryProtector = $BitLocker.KeyProtector | Where-Object { $_.KeyProtectorType -eq 'RecoveryPassword' }
+
+Backup-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId $RecoveryProtector.KeyProtectorID
+BackupToAAD-BitLockerKeyProtector -MountPoint $env:SystemDrive -KeyProtectorId $RecoveryProtector.KeyProtectorID
+```
 
 > [!IMPORTANT]
 > Joining a computer to the domain should be the first step for new computers within an organization. After computers are joined to a domain, storing the BitLocker recovery key to AD DS is automatic (when enabled in Group Policy).

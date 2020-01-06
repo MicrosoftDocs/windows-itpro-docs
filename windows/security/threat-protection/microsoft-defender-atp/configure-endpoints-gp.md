@@ -1,5 +1,5 @@
 ---
-title: Onboard Windows 10 machines using Group Policy to Microsoft Defender ATP
+title: Onboard Windows 10 devices to Microsoft Defender ATP via Group Policy
 description: Use Group Policy to deploy the configuration package on Windows 10 machines so that they are onboarded to the service.
 keywords: configure machines using group policy, machine management, configure Windows ATP machines, onboard Microsoft Defender Advanced Threat Protection machines, group policy
 search.product: eADQiWindows 10XVcnh
@@ -79,6 +79,13 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
     a.  Copy _AtpConfiguration.admx_ into _C:\\Windows\\PolicyDefinitions_
 
     b.  Copy _AtpConfiguration.adml_ into _C:\\Windows\\PolicyDefinitions\\en-US_
+
+    If you are using a [Central Store for Group Policy Administrative Templates](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), copy the following files from the
+    configuration package:
+    
+     a.  Copy _AtpConfiguration.admx_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions_
+
+     b.  Copy _AtpConfiguration.adml_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions\\en-US_
 
 2.  Open the [Group Policy Management Console](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), right-click the GPO you want to configure and click **Edit**.
 

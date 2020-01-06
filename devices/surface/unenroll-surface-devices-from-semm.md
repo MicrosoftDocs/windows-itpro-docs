@@ -12,6 +12,8 @@ ms.topic: article
 ms.date: 01/06/2017
 ms.reviewer: 
 manager: dansimp
+ms.localizationpriority: medium
+ms.audience: itpro
 ---
 
 # Unenroll Surface devices from SEMM

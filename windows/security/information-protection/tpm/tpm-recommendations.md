@@ -123,7 +123,7 @@ The following table defines which Windows features require TPM support.
  TPM Platform Crypto Provider Key Storage Provider| Yes | Yes | Yes
  Virtual Smart Card | Yes | Yes | Yes
  Certificate storage | No | Yes | Yes | TPM is only required when the certificate is stored in the TPM.
- Autopilot | Yes | No | Yes | TPM 2.0 and UEFI firmware is required.
+ Autopilot | Yes | No | Yes | TPM 2.0 and UEFI firmware is required for white glove and self-deploying scenarios.
  SecureBIO | Yes | No | Yes | TPM 2.0 and UEFI firmware is required.
  DRTM | Yes | No | Yes | TPM 2.0 and UEFI firmware is required.
 

@@ -1,6 +1,6 @@
 ---
-title: Network access Do not allow anonymous enumeration of SAM accounts and shares (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Network access Do not allow anonymous enumeration of SAM accounts and shares security policy setting.
+title: Network access Do not allow anonymous enumeration (Windows 10)
+description: Learn about best practices and more for the security policy setting, Network access Do not allow anonymous enumeration of SAM accounts and shares.
 ms.assetid: 3686788d-4cc7-4222-9163-cbc7c3362d73
 ms.reviewer: 
 ms.author: dansimp

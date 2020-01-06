@@ -2,15 +2,19 @@
 title: Upgrade Readiness architecture (Windows 10)
 ms.reviewer: 
 manager: laurawi
-ms.author: greglin
+ms.author: jaimeo
 description: Describes Upgrade Readiness architecture.
 ms.prod: w10
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: jaimeo
 ms.topic: article
 ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness architecture
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Get started with Update Compliance](../update/update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 Microsoft analyzes system, application, and driver diagnostic data  to help you determine when computers are upgrade-ready, allowing you to simplify and accelerate Windows upgrades in your organization. The diagram below illustrates how Upgrade Readiness components work together in a typical installation. 
 

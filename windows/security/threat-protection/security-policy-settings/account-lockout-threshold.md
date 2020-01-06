@@ -45,7 +45,7 @@ Because vulnerabilities can exist when this value is configured and when it is n
 
 The threshold that you select is a balance between operational efficiency and security, and it depends on your organization's risk level. To allow for user error and to thwart brute force attacks, [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) recommend a value of 10 could be an acceptable starting point for your organization.
 
-As with other account lockeout settings, this value is more of a guideline than a rule or best practice because there is no "one size fits all." For more information, see [Configuring Account Lockout](https://blogs.technet.microsoft.com/secguide/2014/08/13/configuring-account-lockout/).
+As with other account lockout settings, this value is more of a guideline than a rule or best practice because there is no "one size fits all." For more information, see [Configuring Account Lockout](https://blogs.technet.microsoft.com/secguide/2014/08/13/configuring-account-lockout/).
 
 Implementation of this policy setting is dependent on your operational environment; threat vectors, deployed operating systems, and deployed apps. For more information, see [Implementation considerations](#bkmk-impleconsiderations) in this topic.
  

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Security Compliance Toolkit 1.0
+title: Microsoft Security Compliance Toolkit 1.0 Guide
 description: This article describes how to use the Security Compliance Toolkit in your organization
 keywords: virtualization, security, malware
 ms.prod: w10

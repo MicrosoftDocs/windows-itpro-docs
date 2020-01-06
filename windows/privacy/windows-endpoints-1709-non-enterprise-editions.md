@@ -1,6 +1,6 @@
 ---
 title: Windows 10, version 1709, connection endpoints for non-Enterprise editions
-description: Explains what Windows 10 endpoints are used in non-Enterprise editions.
+description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 1709.
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -23,7 +23,7 @@ ms.reviewer:
 - Windows 10 Professional, version 1709
 - Windows 10 Education, version 1709
 
-In addition to the endpoints listed for [Windows 10 Enterprise](manage-windows-endpoints.md), the following endpoints are available on other editions of Windows 10, version 1709.
+In addition to the endpoints listed for [Windows 10 Enterprise](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services), the following endpoints are available on other editions of Windows 10, version 1709.
 
 We used the following methodology to derive these network endpoints:
 

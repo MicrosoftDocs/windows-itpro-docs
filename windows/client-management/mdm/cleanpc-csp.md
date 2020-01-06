@@ -1,6 +1,6 @@
 ---
 title: CleanPC CSP
-description: The CleanPC configuration service provider (CSP) allows removal of user-installed and pre-installed applications, with the option to persist user data. This CSP was added in Windows 10, version 1703.
+description: The CleanPC configuration service provider (CSP) allows you to remove user-installed and pre-installed applications, with the option to persist user data.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

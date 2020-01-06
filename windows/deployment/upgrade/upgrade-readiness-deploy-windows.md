@@ -2,15 +2,19 @@
 title: Upgrade Readiness - Get a list of computers that are upgrade ready (Windows 10)
 ms.reviewer: 
 manager: laurawi
-ms.author: greglin
+ms.author: jaimeo
 description: Describes how to get a list of computers that are ready to be upgraded in Upgrade Readiness.
 ms.prod: w10
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: jaimeo
 ms.topic: article
 ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness - Step 3: Deploy Windows
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Get started with Update Compliance](../update/update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 All of your work up to now involved reviewing and resolving application and driver issues. Along the way, as you’ve resolved issues and decided which applications and drivers are ready to upgrade, you’ve been building a list of computers that are upgrade ready. 
 The blades in the **Deploy** section are:

@@ -1,5 +1,5 @@
 ---
-title: Windows 10 ARM-based PC app compatibility
+title: Surface Pro X app compatibility
 description: This article provides introductory app compatibility information for Surface Pro X ARM-based PCs.
 ms.prod: w10
 ms.localizationpriority: medium
@@ -13,7 +13,7 @@ ms.reviewer: jessko
 manager: dansimp
 ms.audience: itpro
 ---
-# Windows 10 ARM-based PC app compatibility
+# Surface Pro X app compatibility
 
 Applications run differently on ARM-based Windows 10 PCs such as Surface Pro X. Limitations include the following:
 

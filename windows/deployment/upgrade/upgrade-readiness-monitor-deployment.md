@@ -6,13 +6,17 @@ description: Describes how to use Upgrade Readiness to monitor the deployment af
 keywords: windows analytics, oms, operations management suite, prerequisites, requirements, upgrades, log analytics, 
 ms.localizationpriority: medium
 ms.prod: w10
-audience: itproauthor: greg-lindsay
-ms.author: greglin
+audience: itpro
+author: jaimeo
+ms.author: jaimeo
 ms.topic: article
 ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness - Step 4: Monitor
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Get started with Update Compliance](../update/update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 Now that you have started deploying an update with Upgrade Readiness, you can use it to monitor important elements.
 
@@ -21,7 +25,7 @@ Now that you have started deploying an update with Upgrade Readiness, you can us
  
 ## Update progress
 
-The **Update progress** blade allows you to monitor the progress and status of your deployment. Any device that has attepted to upgrade in the last 30 days displays the **DeploymentStatus** attribute. You'll be able to see the number of computers that have successfully upgraded, failed to upgrade, are stalled, etc.
+The **Update progress** blade allows you to monitor the progress and status of your deployment. Any device that has attempted to upgrade in the last 30 days displays the **DeploymentStatus** attribute. You'll be able to see the number of computers that have successfully upgraded, failed to upgrade, are stalled, etc.
  
  
 Selecting this blade allows you to view device-level details about the deployment. For example, select **Failed** to view the original operating system version, the target operating system version, and the reason the update failed for each of the devices that failed to upgrade. In the case of the device illustrated in the following image, an attempt was made to upgrade from Windows 10, version 1703 to 1709, but the operation timed out.
