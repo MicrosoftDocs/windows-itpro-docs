@@ -32,7 +32,7 @@ After you’ve installed and set up Configuration Manager for your organization,
 
 **To create a configuration item for WIP**
 
-1.  Open the Configuration Manager console, click the **Assets and Compliance** node, expand the **Overview** node, expand the **Compliance Settings** node, and then expand the **Configuration Items** node.
+1. Open the Configuration Manager console, click the **Assets and Compliance** node, expand the **Overview** node, expand the **Compliance Settings** node, and then expand the **Configuration Items** node.
 
     ![Configuration Manager, Configuration Items screen](images/wip-sccm-addpolicy.png)
 
