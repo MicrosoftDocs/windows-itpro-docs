@@ -24,7 +24,7 @@ ms.topic: article
 
 
 ## API description
-Retrieves the prevalence for the given file.
+Retrieves the statistics for the given file.
 
 
 ## Limitations
