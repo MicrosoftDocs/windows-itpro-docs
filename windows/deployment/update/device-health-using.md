@@ -6,7 +6,7 @@ description: Explains how to begin using Device Health.
 ms.prod: w10
 ms.mktglfcycl: deploy
 keywords: oms, operations management suite, wdav, health, log analytics
-ms.sitesec: library
+
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo
@@ -16,6 +16,9 @@ ms.topic: article
 ---
 
 # Using Device Health
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 This section describes how to use Device Health to monitor devices deployed on your network and troubleshoot the causes if they crash.
 

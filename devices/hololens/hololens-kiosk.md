@@ -55,7 +55,7 @@ If you use [MDM, Microsoft Intune](#set-up-kiosk-mode-using-microsoft-intune-or-
 
 ### Start layout file for MDM (Intune and others)
 
-Save the following sample as an XML file. You will select this file when you configure the kiosk in Microsoft Intune (or in another MDM service that provides a kiosk profile).
+Save the following sample as an XML file. You can use this file when you configure the multi-app kiosk in Microsoft Intune (or in another MDM service that provides a kiosk profile).
 
 >[!NOTE]
 >If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, use the [Start layout instructions for a provisioning package](#start-layout-for-a-provisioning-package). 
@@ -198,7 +198,7 @@ Use the following snippet in your kiosk configuration XML to enable the **Guest*
     ![Kiosk Mode](images/kiosk.png)
 
     >[!NOTE]
-    >The kiosk mode option will be available if the device is [enrolled in device management](hololens-enroll-mdm.md) and has a [license to upgrade to Windows Holographic for Business](hololens-upgrade-enterprise.md).
+    >The kiosk mode option will be available if the device is [enrolled in device management](hololens-enroll-mdm.md) and has a [license to upgrade to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 
 5. Select **Enable Kiosk Mode**, choose an app to run when the device starts, and click **Save**.
 

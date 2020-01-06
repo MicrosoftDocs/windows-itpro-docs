@@ -1,5 +1,5 @@
 ---
-title: 1108(S) The event logging service encountered an error while processing an incoming event published from %1. (Windows 10)
+title: The event logging service encountered an error (Windows 10)
 description: Describes security event 1108(S) The event logging service encountered an error while processing an incoming event published from %1.
 ms.pagetype: security
 ms.prod: w10

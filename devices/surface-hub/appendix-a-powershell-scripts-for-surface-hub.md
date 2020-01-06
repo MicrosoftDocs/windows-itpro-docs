@@ -611,7 +611,7 @@ function ExitIfError($strMsg)
 
 ## Check dependencies ##
 try {
-    Import-Module LyncOnlineConnector
+    Import-Module SkypeOnlineConnector
     Import-Module MSOnline
 }
 catch
@@ -1100,7 +1100,7 @@ if ($fSfbIsOnline -or $fExIsOnline)
 if ($fSfbIsOnline)
 {
     try {
-        Import-Module LyncOnlineConnector
+        Import-Module SkypeOnlineConnector
     }
     catch
     {
@@ -1513,7 +1513,7 @@ else
 if ($online)
 {
     try {
-        Import-Module LyncOnlineConnector
+        Import-Module SkypeOnlineConnector
     }
     catch
     {

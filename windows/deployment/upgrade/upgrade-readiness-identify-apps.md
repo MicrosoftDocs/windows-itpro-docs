@@ -2,15 +2,19 @@
 title: Upgrade Readiness - Identify important apps (Windows 10)
 ms.reviewer: 
 manager: laurawi
-ms.author: greglin
+ms.author: jaimeo
 description: Describes how to prepare your environment so that you can use Upgrade Readiness to manage Windows upgrades.
 ms.prod: w10
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: jaimeo
 ms.topic: article
 ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness - Step 1: Identify important apps
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Get started with Update Compliance](../update/update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 This is the first step of the Upgrade Readiness workflow. In this step, applications are listed and grouped by importance level. Setting the importance level enables you to prioritize applications for upgrade.
 

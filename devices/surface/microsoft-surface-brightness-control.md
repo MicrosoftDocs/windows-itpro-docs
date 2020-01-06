@@ -8,9 +8,11 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 1/15/2019
-ms.reviewer: 
+ms.date: 10/31/2019
+ms.reviewer: hachidan
 manager: dansimp
+ms.localizationpriority: medium
+ms.audience: itpro
 ---
 
 # Surface Brightness Control
@@ -19,11 +21,10 @@ When deploying Surface devices in point of sale or other “always-on”
 kiosk scenarios, you can optimize power management using the new Surface
 Brightness Control app.
 
-Available for download with [Surface Tools for
-IT](https://www.microsoft.com/download/details.aspx?id=46703), Surface Brightness Control is
-designed to help reduce thermal load and lower the overall carbon
-footprint for deployed Surface devices. The tool automatically dims the screen when not in use and
-includes the following configuration options:
+Available for download with [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703).
+Surface Brightness Control is designed to help reduce thermal load and lower the overall carbon footprint for deployed Surface devices.
+If you plan to get only this tool from the download page, select the file **Surface_Brightness_Control_v1.16.137.0.msi** in the available list.
+The tool automatically dims the screen when not in use and includes the following configuration options:
 
 - Period of inactivity before dimming the display.
 
@@ -59,6 +60,11 @@ Full Brightness   | Default: 100  <br>Option: Range of 0-100 percent of screen b
 | Telemetry  Enabled | Default: 01 <br>Option: 01, 00 <br> Type: REG_BINARY  | This setting allows you to manage the sharing of app usage information to improve software and provide better user experience. To disable telemetry, set the value to 00. If you do not configure this setting, telemetry information is shared with Microsoft in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). |
 
 ## Changes and updates
+
+### Version 1.16.137<br>
+*Release Date: 22 October 2019*<br>
+This version of Surface Brightness Control adds support for the following:
+-Recompiled for x86, adding support for Surface Pro 7, Surface Pro X, and Surface Laptop 3. 
 
 ### Version 1.12.239.0
 *Release Date: 26 April 2019*<br>

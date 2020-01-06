@@ -15,6 +15,9 @@ ms.topic: article
 # Use Upgrade Readiness to manage Windows upgrades
 
 >[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Get started with Update Compliance](../update/update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
+
+>[!IMPORTANT]
 >>**The OMS portal has been deprecated, so you need to switch to the [Azure portal](https://portal.azure.com) now.** The two portals offer the same experience, with some key differences. Learn how to use [Windows Analytics in the Azure Portal](../update/windows-analytics-azure-portal.md). Find out more about the [OMS portal moving to Azure](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-portal-transition), or jump right in and [Get started with Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-readiness-get-started).
 
 You can use Upgrade Readiness to prioritize and work through application and driver issues, assign and track issue resolution status, and identify computers that are ready to upgrade. Upgrade Readiness enables you to deploy Windows with confidence, knowing that you’ve addressed potential blocking issues.

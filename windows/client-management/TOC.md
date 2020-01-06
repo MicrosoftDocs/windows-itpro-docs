@@ -4,6 +4,7 @@
 ## [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md)
 ## [Join Windows 10 Mobile to Azure Active Directory](join-windows-10-mobile-to-azure-active-directory.md)
 ## [New policies for Windows 10](new-policies-for-windows-10.md)
+## [Windows 10 default media removal policy](change-default-removal-policy-external-storage-media.md)
 ## [Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
 ## [Manage the Settings app with Group Policy](manage-settings-app-with-group-policy.md)
 ## [What version of Windows am I running](windows-version-search.md)

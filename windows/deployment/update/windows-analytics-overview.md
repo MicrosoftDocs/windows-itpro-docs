@@ -6,10 +6,11 @@ description: Introduction and overview of Windows Analytics
 keywords: Device Health, Upgrade Readiness, Update Compliance, oms, operations management suite, prerequisites, requirements, monitoring, crash, drivers
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
-ms.audience: itproauthor: greg-lindsay
+audience: itpro
+author: jaimeo
+ms.audience: itpro
+author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
@@ -18,6 +19,10 @@ ms.topic: article
 # Windows Analytics overview
 
 Windows Analytics is a set of solutions for Azure Portal that provide you with extensive data about the state of devices in your deployment. There are currently three solutions which you can use singly or in any combination:
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
+
 
 ## Device Health
 
@@ -28,16 +33,6 @@ Windows Analytics is a set of solutions for Azure Portal that provide you with e
 - Notification of Windows Information Protection misconfigurations that send prompts to end users
 
 
-## Update Compliance
-
-[Update Compliance](update-compliance-get-started.md) shows you the state of your devices with respect to the Windows updates so that you can ensure that they are on the most current updates as appropriate. In addition, Update Compliance provides the following:
-
-- Dedicated drill-downs for devices that might need attention
-- An inventory of devices, including the version of Windows they are running and their update status
-- The ability to track protection and threat status for Windows Defender Antivirus-enabled devices
-- An overview of Windows Update for Business deferral configurations (Windows 10, version 1607 and later)
-- Powerful built-in log analytics to create useful custom queries
-- Cloud-connected access utilizing Windows 10 diagnostic data means no need for new complex, customized infrastructure
 
 ## Upgrade Readiness
 

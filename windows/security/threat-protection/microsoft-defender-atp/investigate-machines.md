@@ -54,7 +54,7 @@ The machine details section provides information such as the domain, OS, and hea
 Response actions run along the top of a specific machine page and include:
 
 - Manage tags
-- Initiate Automated Investigation
+- Initiate automated investigation
 - Initiate Live Response Session
 - Collect investigation package
 - Run antivirus scan
@@ -138,7 +138,7 @@ More details about certain events are provided in the **Additional information**
 - Active threat detected - the threat detection occurred while the threat was running
 - Remediation unsuccessful - an attempt to remediate the detected threat was invoked but failed
 - Remediation successful - the detected threat was stopped and cleaned
-- Warning bypassed by user - the SmartScreen warning was dismissed and overridden by a user
+- Warning bypassed by user - the Windows Defender SmartScreen warning was dismissed and overridden by a user
 - Suspicious script detected - a potentially malicious script was found running
 - The alert category - if the event led to the generation of an alert, the alert category  ("Lateral Movement", for example) is provided
 

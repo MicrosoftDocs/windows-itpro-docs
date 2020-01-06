@@ -1,23 +1,28 @@
 ---
-title: Deploy Managed Installer for Windows Defender Device Guard (Windows 10)
-description: Explains how you can use a managed installer to automatically authorize applications deployed and installed by a designated software distribution solution, such as System Center Configuration Manager. 
-keywords: virtualization, security, malware
+title: Authorize apps deployed with a WDAC managed installer (Windows 10)
+description: Learn how to use a managed installer to automatically authorize apps added by  a designated software distribution solution, such as SCCM. 
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.date: 06/13/2018
-ms.reviewer: 
-manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: isbrahm
 ms.author: dansimp
+manager: dansimp
+ms.date: 06/13/2018
 ---
 
-# Deploy Managed Installer for Windows Defender Application Control
+# Authorize apps deployed with a WDAC managed installer
 
 **Applies to:**
 
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 and above
 
 
 Creating and maintaining application execution control policies has always been challenging, and finding ways to address this issue has been a frequently-cited request for customers of AppLocker and Windows Defender Application Control (WDAC). 

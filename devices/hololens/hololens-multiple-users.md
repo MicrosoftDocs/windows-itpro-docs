@@ -21,6 +21,8 @@ It's common to share one HoloLens with many people or to have many people share 
 
 ## Share with multiple people, each using their own account
 
+**Prerequisite**: The HoloLens device must be running Windows 10, version 1803 or later.  HoloLens (1st gen) also need to be [upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
+
 When they use their own Azure Active Directory (Azure AD) accounts, multiple users can each keep their own user settings and user data on the device.
 
 To make sure that multiple people can use their own accounts on your HoloLens, follow these steps to configure it:
@@ -35,7 +37,7 @@ To use HoloLens, each user follows these steps:
 
 1. If another user has been using the device, do one of the following:
    - Press the power button once to go to standby, and then press the power button again to return to the lock screen
-   - Select the user tile on the upper right of the Pins panel to sign out the current user.
+   - HoloLens 2 users may select the user tile on the top of the Pins panel to sign out the current user.
 
 1. Use your Azure AD account credentials to sign in to the device.  
     If this is the first time that you have used the device, you have to [calibrate](hololens-calibration.md) HoloLens to your own eyes.

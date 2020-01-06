@@ -9,7 +9,7 @@ keywords: hololens, Windows Mixed Reality, design, spatial mapping, HoloLens, su
 ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
-ms.localizationpriority: medium
+ms.localizationpriority: high
 appliesto:
 - HoloLens 1 (1st gen)
 - HoloLens 2

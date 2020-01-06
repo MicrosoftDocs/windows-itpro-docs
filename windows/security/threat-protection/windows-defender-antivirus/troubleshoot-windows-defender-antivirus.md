@@ -9,8 +9,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/11/2018
 ms.reviewer: 
 manager: dansimp
@@ -46,16 +47,13 @@ You can directly view the event log, or if you have a third-party security infor
 
 The table in this section lists the main Windows Defender Antivirus event IDs and, where possible, provides suggested solutions to fix or resolve the error. 
 
-**To view a Windows Defender Antivirus event**
+## To view a Windows Defender Antivirus event
 
 1.  Open **Event Viewer**.
 2.  In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender Antivirus**.
 3.  Double-click on **Operational**.
 4.  In the details pane, view the list of individual events to find your event.
 5.  Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
-
-
-
 
 <table> 
 <tr>
@@ -361,7 +359,7 @@ Message:
 Description:
 </td>
 <td >
-For more information please see the following:
+For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -434,7 +432,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software. For more information please see the following:
+Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software. For more information, see the following:
 <dl>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -452,7 +450,7 @@ Windows Defender Antivirus has taken action to protect this machine from malware
 <li>Quarantine: The resource was quarantined</li>
 <li>Remove: The resource was deleted</li>
 <li>Allow: The resource was allowed to execute/exist</li>
-<li>User defined: User defined action which is normally one from this list of actions that the user has specified</li>
+<li>User defined: User-defined action that is normally one from this list of actions that the user has specified</li>
 <li>No action: No action</li>
 <li>Block: The resource was blocked from executing</li>
 </ul>
@@ -486,7 +484,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error when taking action on malware or other potentially unwanted software. For more information please see the following:
+Windows Defender Antivirus has encountered an error when taking action on malware or other potentially unwanted software. For more information, see the following:
 <dl>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -505,7 +503,7 @@ Windows Defender Antivirus has encountered an error when taking action on malwar
 <li>Quarantine: The resource was quarantined</li>
 <li>Remove: The resource was deleted</li>
 <li>Allow: The resource was allowed to execute/exist</li>
-<li>User defined: User defined action which is normally one from this list of actions that the user has specified</li>
+<li>User defined: User-defined action that is normally one from this list of actions that the user has specified</li>
 <li>No action: No action</li>
 <li>Block: The resource was blocked from executing</li>
 </ul>
@@ -545,7 +543,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has restored an item from quarantine. For more information please see the following:
+Windows Defender Antivirus has restored an item from quarantine. For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -589,7 +587,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error trying to restore an item from quarantine. For more information please see the following:
+Windows Defender Antivirus has encountered an error trying to restore an item from quarantine. For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -636,7 +634,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has deleted an item from quarantine.<br/>For more information please see the following:
+Windows Defender Antivirus has deleted an item from quarantine.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -680,7 +678,7 @@ Description:
 </td>
 <td >
 Windows Defender Antivirus has encountered an error trying to delete an item from quarantine.
-For more information please see the following:
+For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -729,7 +727,7 @@ Description:
 <td >
 Windows Defender Antivirus has removed history of malware and other potentially unwanted software.
 <dl>
-<dt>Time: The time when the event occurred, for example when the history is purged. Note that this parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
+<dt>Time: The time when the event occurred, for example when the history is purged. This parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 </dl>
 </td>
@@ -760,7 +758,7 @@ Description:
 <td >
 Windows Defender Antivirus has encountered an error trying to remove history of malware and other potentially unwanted software.
 <dl>
-<dt>Time: The time when the event occurred, for example when the history is purged. Note that this parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
+<dt>Time: The time when the event occurred, for example when the history is purged. This parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values. </dt>
@@ -793,7 +791,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has detected a suspicious behavior.<br/>For more information please see the following:
+Windows Defender Antivirus has detected a suspicious behavior.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -870,7 +868,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has detected malware or other potentially unwanted software.<br/>For more information please see the following:
+Windows Defender Antivirus has detected malware or other potentially unwanted software.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -951,7 +949,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.<br/>For more information please see the following:
+Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -999,7 +997,7 @@ UAC</dt>
 <li>Quarantine: The resource was quarantined</li>
 <li>Remove: The resource was deleted</li>
 <li>Allow: The resource was allowed to execute/exist</li>
-<li>User defined: User defined action which is normally one from this list of actions that the user has specified</li>
+<li>User defined: User-defined action that is normally one from this list of actions that the user has specified</li>
 <li>No action: No action</li>
 <li>Block: The resource was blocked from executing</li>
 </ul>
@@ -1012,7 +1010,7 @@ Description of the error. </dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
 NOTE:
-Whenever Windows Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it will restore the following system settings and services which the malware might have changed:<ul>
+Whenever Windows Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it will restore the following system settings and services that the malware might have changed:<ul>
 <li>Default Internet Explorer or Microsoft Edge setting</li>
 <li>User Access Control settings</li>
 <li>Chrome settings</li>
@@ -1078,7 +1076,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered a non-critical error when taking action on malware or other potentially unwanted software.<br/>For more information please see the following:
+Windows Defender Antivirus has encountered a non-critical error when taking action on malware or other potentially unwanted software.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -1126,7 +1124,7 @@ UAC</dt>
 <li>Quarantine: The resource was quarantined</li>
 <li>Remove: The resource was deleted</li>
 <li>Allow: The resource was allowed to execute/exist</li>
-<li>User defined: User defined action which is normally one from this list of actions that the user has specified</li>
+<li>User defined: User-defined action that is normally one from this list of actions that the user has specified</li>
 <li>No action: No action</li>
 <li>Block: The resource was blocked from executing</li>
 </ul>
@@ -1173,7 +1171,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered a critical error when taking action on malware or other potentially unwanted software.<br/>For more information please see the following:
+Windows Defender Antivirus has encountered a critical error when taking action on malware or other potentially unwanted software.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -1221,7 +1219,7 @@ UAC</dt>
 <li>Quarantine: The resource was quarantined</li>
 <li>Remove: The resource was deleted</li>
 <li>Allow: The resource was allowed to execute/exist</li>
-<li>User defined: User defined action which is normally one from this list of actions that the user has specified</li>
+<li>User defined: User-defined action that is normally one from this list of actions that the user has specified</li>
 <li>No action: No action</li>
 <li>Block: The resource was blocked from executing</li>
 </ul>
@@ -1323,7 +1321,7 @@ Windows Defender Antivirus client is up and running in a healthy state.
 <tr>
 <td></td>
 <td >
-<div class="alert"><b>Note</b>  This event will only be logged if the following policy is set: <b>ThreatFileHashLogging     unsigned</b>.</div>
+<div class="alert"><b>Note: This event will only be logged if the following policy is set: <b>ThreatFileHashLogging     unsigned</b>.</div>
 <div> </div>
 </td>
 </tr>
@@ -2452,7 +2450,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware.
+Windows Defender Antivirus configuration has changed. If this is an unexpected event, you should review the settings as this may be the result of malware.
 <dl>
 <dt>Old value: &lt;Old value number&gt;
 Old antivirus configuration value.</dt>
@@ -2893,7 +2891,7 @@ Run a full system scan.
 <td>
 This error indicates that an offline scan is required. 
 </td></tr><tr><td>Resolution</td><td>
-Run offline Windows Defender Antivirus. You can read about how to do this in the <a href="http://windows.microsoft.com/windows/what-is-windows-defender-offline">offline Windows Defender Antivirus article</a>.
+Run offline Windows Defender Antivirus. You can read about how to do this in the <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">offline Windows Defender Antivirus article</a>.
 </td>
 </tr>
 <tr>

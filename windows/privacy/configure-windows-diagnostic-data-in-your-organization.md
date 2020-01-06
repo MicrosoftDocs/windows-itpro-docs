@@ -20,9 +20,9 @@ ms.date: 04/29/2019
 
 **Applies to**
 
--   Windows 10 Enterprise
--   Windows 10 Mobile
--   Windows Server
+- Windows 10 Enterprise
+- Windows 10 Mobile
+- Windows Server
 
 This article applies to Windows and Windows Server diagnostic data only. It describes the types of diagnostic data we may gather, the ways you might manage it in your organization, and some examples of how diagnostic data can provide you with valuable insights into your enterprise deployments. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
@@ -54,6 +54,7 @@ Windows as a Service is a fundamental change in how Microsoft plans, builds, and
 The release cadence of Windows may be fast, so feedback is critical to its success. We rely on diagnostic data at each stage of the process to inform our decisions and prioritize our efforts.
 
 ### What is Windows diagnostic data?
+
 Windows diagnostic data is vital technical data from Windows devices about the device and how Windows and related software are performing. It's used in the following ways:
 
 - Keep Windows up to date
@@ -71,9 +72,10 @@ Here are some specific examples of Windows diagnostic data:
 
 Diagnostic data can sometimes be confused with functional data. Some Windows components and apps connect to Microsoft services directly, but the data they exchange is not diagnostic data. For example, exchanging a user’s location for local weather or news is not an example of diagnostic data—it is functional data that the app or service requires to satisfy the user’s request.
 
-There are subtle differences between diagnostic data and functional data. Windows collects and sends diagnostic data in the background automatically. You can control how much information is gathered by setting the diagnostic data level. Microsoft tries to avoid collecting personal information wherever possible (for example, if a crash dump is collected and a document was in memory at the time of the crash).    On the other hand, functional data can contain personal information. However, a user action, such as requesting news or asking Cortana a question, usually triggers collection and transmission of functional data.
+There are subtle differences between diagnostic data and functional data. Windows collects and sends diagnostic data in the background automatically. You can control how much information is gathered by setting the diagnostic data level. Microsoft tries to avoid collecting personal information wherever possible (for example, if a crash dump is collected and a document was in memory at the time of the crash).  
+On the other hand, functional data can contain personal information. However, a user action, such as requesting news or asking Cortana a question, usually triggers collection and transmission of functional data.
 
-If you’re an IT pro that wants to manage Windows functional data sent from your organization to Microsoft, see [Manage connections from Windows operating system components to Microsoft services](https://technet.microsoft.com/itpro/windows/manage/manage-connections-from-windows-operating-system-components-to-microsoft-services).
+If you’re an IT pro that wants to manage Windows functional data sent from your organization to Microsoft, see [Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services/).
 
 The following are specific examples of functional data:
 
@@ -90,6 +92,7 @@ Windows and Windows Server diagnostic data gives every user a voice in the opera
 Our ability to collect diagnostic data that drives improvements to Windows and Windows Server helps raise the bar for app and device driver quality. Diagnostic data helps us to quickly identify and fix critical reliability and security issues with apps and device drivers on given configurations. For example, we can identify an app that hangs on devices using a specific version of a video driver, allowing us to work with the app and device driver vendor to quickly fix the issue. The result is less downtime and reduced costs and increased productivity associated with troubleshooting these issues.
 
 #### Real-world example of how Windows diagnostic data helps
+
 There was a version of a video driver that was crashing on some devices running Windows 10, causing the device to reboot. We detected the problem in our diagnostic data, and immediately contacted the third-party developer who builds the video driver. Working with the developer, we provided an updated driver to Windows Insiders within 24 hours. Based on diagnostic data from the Windows Insiders’ devices, we were able to validate the new version of the video driver, and rolled it out to the broad public as an update the next day. Diagnostic data helped us find, fix, and resolve this problem in just 48 hours, providing a better user experience and reducing costly support calls.
 
 ### Improve end-user productivity
@@ -104,39 +107,19 @@ Windows diagnostic data also helps Microsoft better understand how customers use
 
 ### Insights into your own organization
 
-Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better, as well.  Microsoft is in the process of developing a set of analytics customized for your internal use. The first of these, called [Upgrade Readiness](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
-
-#### Upgrade Readiness
-
-Upgrading to new operating system versions has traditionally been a challenging, complex, and slow process for many enterprises. Discovering applications and drivers and then testing them for potential compatibility issues have been among the biggest pain points.
-
-To better help customers through this difficult process, Microsoft developed Upgrade Readiness to give enterprises the tools to plan and manage the upgrade process end to end and allowing them to adopt new Windows releases more quickly and on an ongoing basis.
-
-With Windows diagnostic data enabled, Microsoft collects computer, application, and driver compatibility-related information for analysis. We then identify compatibility issues that can block your upgrade and suggest fixes when they are known to Microsoft.
-
-Use Upgrade Readiness to get:
-
-- A visual workflow that guides you from pilot to production
-- Detailed computer, driver, and application inventory
-- Powerful computer level search and drill-downs
-- Guidance and insights into application and driver compatibility issues with suggested fixes
-- Data driven application rationalization tools
-- Application usage information, allowing targeted validation; workflow to track validation progress and decisions
-- Data export to commonly used software deployment tools
-
-The Upgrade Readiness workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.
+Sharing information with Microsoft helps make Windows and other products better, but it can also help make your internal processes and user experiences better. Microsoft provides a set of solutions that leverage information shared by customers to provide insights customized for your internal use. The first of these was [Upgrade Readiness](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness), followed by [Desktop Analytics](https://aka.ms/DADocs). Both help organizations with [Windows as a Service](/windows/deployment/update/wass-overview) adoption and potential compatibility challenges. For E5 customers, [Microsoft Defender Advanced Threat Protection](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
 ## How Microsoft handles diagnostic data
 
 The diagnostic data is categorized into four levels:
 
--   [**Security**](#security-level). Information that’s required to help keep Windows and Windows Server secure, including data about the Connected User Experiences and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
+- [**Security**](#security-level). Information that’s required to help keep Windows and Windows Server secure, including data about the Connected User Experiences and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
 
--   [**Basic**](#basic-level). Basic device info, including: quality-related data, app compatibility, and data from the **Security** level.
+- [**Basic**](#basic-level). Basic device info, including: quality-related data, app compatibility, and data from the **Security** level.
 
--   [**Enhanced**](#enhanced-level). Additional insights, including: how Windows, Windows Server, and apps are used, how they perform, advanced reliability data, and data from both the **Basic** and the **Security** levels.
+- [**Enhanced**](#enhanced-level). Additional insights, including: how Windows, Windows Server, and apps are used, how they perform, advanced reliability data, and data from both the **Basic** and the **Security** levels.
 
--   [**Full**](#full-level). Includes information about the websites you browse, how you use apps and features, plus additional information about device health, device activity (sometimes referred to as usage), and enhanced error reporting. At Full, Microsoft also collects the memory state of your device when a system or app crash occurs. It includes data from the **Security**, **Basic**, and **Enhanced** levels.
+- [**Full**](#full-level). Includes information about the websites you browse, how you use apps and features, plus additional information about device health, device activity (sometimes referred to as usage), and enhanced error reporting. At Full, Microsoft also collects the memory state of your device when a system or app crash occurs. It includes data from the **Security**, **Basic**, and **Enhanced** levels.
 
 Diagnostic data levels are cumulative, meaning each subsequent level includes data collected through lower levels. For more information see the [Diagnostic data levels](#diagnostic-data-levels) section.
 
@@ -145,9 +128,9 @@ Diagnostic data levels are cumulative, meaning each subsequent level includes da
 Windows 10 and Windows Server includes the Connected User Experiences and Telemetry component, which uses Event Tracing for Windows (ETW) tracelogging technology that gathers and stores diagnostic data events and data. The operating system and some Microsoft management solutions, such as System Center, use the same logging technology.
 
 1. Operating system features and some management applications are instrumented to publish events and data. Examples of management applications include Virtual Machine Manager (VMM), Server Manager, and Storage Spaces.
-2. Events are gathered using public operating system event logging and tracing APIs.
-3. You can configure the diagnostic data level by using MDM policy, Group Policy, or registry settings.
-4. The Connected User Experiences and Telemetry component transmits the diagnostic data.
+1. Events are gathered using public operating system event logging and tracing APIs.
+1. You can configure the diagnostic data level by using MDM policy, Group Policy, or registry settings.
+1. The Connected User Experiences and Telemetry component transmits the diagnostic data.
 
 Info collected at the Enhanced and Full levels of diagnostic data is typically gathered at a fractional sampling rate, which can be as low as 1% of devices reporting data at those levels.
 
@@ -155,25 +138,36 @@ Info collected at the Enhanced and Full levels of diagnostic data is typically g
 
 All diagnostic data is encrypted using SSL and uses certificate pinning during transfer from the device to the Microsoft Data Management Service. With Windows 10, data is uploaded on a schedule that is sensitive to event priority, battery use, and network cost. Real-time events, such as Windows Defender Advanced Threat Protection, are always sent immediately. Normal events are not uploaded on metered networks, unless you are on a metered server connection. On a free network, normal events can be uploaded every 4 hours if on battery, or every 15 minutes if on A/C power. Diagnostic and crash data are only uploaded on A/C power and free networks.
 
-The data transmitted at the Basic and Enhanced data diagnostic levels is quite small; typically less than 1 MB per device per day,  but occasionally up to 2 MB per device per day).
+The data transmitted at the Basic and Enhanced data diagnostic levels is quite small; typically less than 1 MB per device per day,  but occasionally up to 2 MB per device per day.
 
 ### Endpoints
 
 The Microsoft Data Management Service routes data back to our secure cloud storage. Only Microsoft personnel with a valid business justification are permitted access.
 
+Solutions like Desktop Analytics or Microsoft Defender Advanced Threat Protection need Windows devices to reach diagnostics endpoints which enable organizations to leverage solutions based on diagnostics data. These solutions leverage Windows components like the Connected User Experiences and Telemetry service, Windows Defender Advanced Threat Protection service, Windows Error Reporting, and Online Crash Analysis.
+
+For a complete list of diagnostics endpoints leveraged by Desktop Analytics, see [Enable data sharing for Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/enable-data-sharing).
+For a complete list of diagnostics endpoints leveraged by Microsoft Defender Advanced Threat Protection, see [Enable access to Microsoft Defender ATP service URLs in the proxy server](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
+
 The following table defines the endpoints for Connected User Experiences and Telemetry component:
 
-Windows release | Endpoint
---- | ---
-Windows 10, versions 1703 or later, with the 2018-09 cumulative update installed| **Diagnostics data** - v10c.vortex-win.data.microsoft.com</br></br>**Functional** - v20.vortex-win.data.microsoft.com</br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>**Settings** - win.data.microsoft.com
-Windows 10, versions 1803 or later, without the 2018-09 cumulative update installed | **Diagnostics data** - v10.events.data.microsoft.com</br></br>**Functional** - v20.vortex-win.data.microsoft.com</br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>**Settings** - win.data.microsoft.com
-Windows 10, version 1709 or earlier | **Diagnostics data** - v10.vortex-win.data.microsoft.com</br></br>**Functional** - v20.vortex-win.data.microsoft.com</br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country for example: **de**.vortex-win.data.microsoft.com</br>**Settings** - win.data.microsoft.com
+| Windows release | Endpoint |
+| - | - |
+| Windows 10, versions 1703 or later, with the 2018-09 cumulative update installed | **Diagnostics data:** v10c.vortex-win.data.microsoft.com</br></br>**Functional:** v20.vortex-win.data.microsoft.com</br></br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country,</br>for example: **de**.vortex-win.data.microsoft.com</br></br>**Settings:** settings-win.data.microsoft.com |
+| Windows 10, versions 1803 or later, without the 2018-09 cumulative update installed | **Diagnostics data:** v10.events.data.microsoft.com</br></br>**Functional:** v20.vortex-win.data.microsoft.com</br></br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country,</br>for example: **de**.vortex-win.data.microsoft.com</br></br>**Settings:** settings-win.data.microsoft.com |
+| Windows 10, version 1709 or earlier | **Diagnostics data:** v10.vortex-win.data.microsoft.com</br></br>**Functional:** v20.vortex-win.data.microsoft.com</br></br>**Microsoft Defender Advanced Threat Protection** is country specific and the prefix changes by country,</br>for example: **de**.vortex-win.data.microsoft.com</br></br>**Settings:** settings-win.data.microsoft.com  |
+
+The following table defines **additional diagnostics endpoints** not covered by services in the links above:
+
+| Service | Endpoint |
+| - | - |
+| OneDrive app for Windows 10 | <https://vortex.data.microsoft.com/collect/v1> |
 
 The following table defines the endpoints for other diagnostic data services:
 
 | Service | Endpoint |
 | - | - |
-| [Windows Error Reporting](https://msdn.microsoft.com/library/windows/desktop/bb513641.aspx) | watson.telemetry.microsoft.com | 
+| [Windows Error Reporting](https://msdn.microsoft.com/library/windows/desktop/bb513641.aspx) | watson.telemetry.microsoft.com |
 | | ceuswatcab01.blob.core.windows.net |
 | | ceuswatcab02.blob.core.windows.net |
 | | eaus2watcab01.blob.core.windows.net |
@@ -182,7 +176,7 @@ The following table defines the endpoints for other diagnostic data services:
 | | weus2watcab02.blob.core.windows.net |
 | [Online Crash Analysis](https://msdn.microsoft.com/library/windows/desktop/ee416349.aspx) | oca.telemetry.microsoft.com |
 | OneDrive app for Windows 10 | vortex.data.microsoft.com/collect/v1 |
-| Microsoft Defender Advanced Threat Protection |  https://wdcp.microsoft.com</br>https://wdcpalt.microsoft.com |
+| Microsoft Defender Advanced Threat Protection | <https://wdcp.microsoft.com></br><https://wdcpalt.microsoft.com> |
 
 ### Data use and access
 
@@ -198,10 +192,9 @@ Microsoft believes in and practices information minimization. We strive to gathe
 
 Sharing diagnostic data with Microsoft is enabled by default on Windows 10, 1903 and later. Sharing this data provides many benefits to enterprises, so we do not recommend turning it off. For most enterprise customers, simply adjusting the diagnostic data level and managing specific components is the best option.
 
-Customers can set the diagnostic data level in both the user interface and with existing management tools. Users can change the diagnostic data level in the **Diagnostic data** setting. In the **Settings** app, in **Privacy** > **Diagnostics & feedback**. They can choose between Basic and Full. The Enhanced level will only be displayed as an option when Group Policy or Mobile Device Management (MDM) are invoked with this level. The Security level is not available.
+Customers can set the diagnostic data level in both the user interface and with existing management tools. Users can change the diagnostic data level in the **Diagnostic data** setting. In the **Settings** app, in **Privacy** &gt; **Diagnostics & feedback**. They can choose between Basic and Full. The Enhanced level will only be displayed as an option when Group Policy or Mobile Device Management (MDM) are invoked with this level. The Security level is not available.
 
 IT pros can use various methods, including Group Policy and Mobile Device Management (MDM), to choose a diagnostic data level.  If you’re using Windows 10 Enterprise, Windows 10 Education, or Windows Server, the Security diagnostic data level is available when managing the policy. Setting the diagnostic data level through policy sets the upper boundary for the users’ choices. To disable user choice after setting the level with the policy, you will need to use the "Configure telemetry opt-in setting user interface" group policy. The remainder of this article describes how to use group policy to configure levels and settings interface.
-
 
 #### Manage your diagnostic data settings
 
@@ -232,41 +225,41 @@ Use the appropriate value in the table below when you configure the management p
 
 Use a Group Policy object to set your organization’s diagnostic data level.
 
-1.  From the Group Policy Management Console, go to **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds**.
+1. From the Group Policy Management Console, go to **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds**.
 
-2.  Double-click **Allow Telemetry**.
+1. Double-click **Allow Telemetry**.
 
-3.  In the **Options** box, select the level that you want to configure, and then click **OK**.
+1. In the **Options** box, select the level that you want to configure, and then click **OK**.
 
 ### Use MDM to set the diagnostic data level
 
-Use the [Policy Configuration Service Provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) to apply the System/AllowTelemetry MDM policy.
+Use the [Policy Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) to apply the System/AllowTelemetry MDM policy.
 
 ### Use Registry Editor to set the diagnostic data level
 
 Use Registry Editor to manually set the registry level on each device in your organization or you can write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
 
-1.  Open Registry Editor, and go to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection**.
+1. Open Registry Editor, and go to **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection**.
 
-2.  Right-click **DataCollection**, click New, and then click **DWORD (32-bit) Value**.
+1. Right-click **DataCollection**, click New, and then click **DWORD (32-bit) Value**.
 
-3.  Type **AllowTelemetry**, and then press ENTER.
+1. Type **AllowTelemetry**, and then press ENTER.
 
-4.  Double-click **AllowTelemetry**, set the desired value from the table above, and then click **OK.**
+1. Double-click **AllowTelemetry**, set the desired value from the table above, and then click **OK.**
 
-5.  Click **File** &gt; **Export**, and then save the file as a .reg file, such as **C:\\AllowTelemetry.reg**. You can run this file from a script on each device in your organization.
+1. Click **File** &gt; **Export**, and then save the file as a .reg file, such as **C:\\AllowTelemetry.reg**. You can run this file from a script on each device in your organization.
 
 ### Additional diagnostic data controls
 
 There are a few more settings that you can turn off that may send diagnostic data information:
 
--   To turn off Windows Update diagnostic data, you have two choices. Either turn off Windows Update, or set your devices to be managed by an on premises update server, such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) or [System Center Configuration Manager](https://www.microsoft.com/server-cloud/products/system-center-2012-r2-configuration-manager/).
+- To turn off Windows Update diagnostic data, you have two choices. Either turn off Windows Update, or set your devices to be managed by an on premises update server, such as [Windows Server Update Services (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) or [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/index/).
 
--   Turn off **Windows Defender Cloud-based Protection** and **Automatic sample submission** in **Settings** &gt; **Update & security** &gt; **Windows Defender**.
+- Turn off **Windows Defender Cloud-based Protection** and **Automatic sample submission** in **Settings** &gt; **Update & security** &gt; **Windows Defender**.
 
--   Manage the Malicious Software Removal Tool in your organization. For more info, see Microsoft KB article [891716](https://support.microsoft.com/kb/891716).
+- Manage the Malicious Software Removal Tool in your organization. For more info, see Microsoft KB article [891716](https://support.microsoft.com/kb/891716).
 
--   Turn off **Improve inking and typing** in **Settings** &gt; **Privacy**. At diagnostic data levels **Enhanced** and **Full**, Microsoft uses Linguistic Data Collection info to improve language model features such as autocomplete, spellcheck, suggestions, input pattern recognition, and dictionary.
+- Turn off **Improve inking and typing** in **Settings** &gt; **Privacy**. At diagnostic data levels **Enhanced** and **Full**, Microsoft uses Linguistic Data Collection info to improve language model features such as autocomplete, spellcheck, suggestions, input pattern recognition, and dictionary.
 
     > [!NOTE]
     > Microsoft does not intend to gather sensitive information, such as credit card numbers, usernames and passwords, email addresses, or other similarly sensitive information for Linguistic Data Collection. We guard against such events by using technologies to identify and remove sensitive information before linguistic data is sent from the user's device. If we determine that sensitive information has been inadvertently received, we delete the information.
@@ -282,23 +275,23 @@ The Security level gathers only the diagnostic data info that is required to kee
 > [!NOTE]
 > If your organization relies on Windows Update for updates, you shouldn’t use the **Security** level. Because no Windows Update information is gathered at this level, important information about update failures is not sent. Microsoft uses this information to fix the causes of those failures and improve the quality of our updates.
 
-Windows Server Update Services (WSUS) and System Center Configuration Manager functionality is not affected at this level, nor is diagnostic data about Windows Server features or System Center gathered.
+Windows Server Update Services (WSUS) and Microsoft Endpoint Configuration Manager functionality is not affected at this level, nor is diagnostic data about Windows Server features or System Center gathered.
 
 The data gathered at this level includes:
 
--   **Connected User Experiences and Telemetry component settings**. If general diagnostic data has been gathered and is queued, it is sent to Microsoft. Along with this diagnostic data, the Connected User Experiences and Telemetry component may download a configuration settings file from Microsoft’s servers. This file is used to configure the Connected User Experiences and Telemetry component itself. The data gathered by the client for this request includes OS information, device id (used to identify what specific device is requesting settings) and device class (for example, whether the device is server or desktop).
+- **Connected User Experiences and Telemetry component settings**. If general diagnostic data has been gathered and is queued, it is sent to Microsoft. Along with this diagnostic data, the Connected User Experiences and Telemetry component may download a configuration settings file from Microsoft’s servers. This file is used to configure the Connected User Experiences and Telemetry component itself. The data gathered by the client for this request includes OS information, device id (used to identify what specific device is requesting settings) and device class (for example, whether the device is server or desktop).
 
--   **Malicious Software Removal Tool (MSRT)** The MSRT infection report contains information, including device info and IP address.
+- **Malicious Software Removal Tool (MSRT)** The MSRT infection report contains information, including device info and IP address.
 
     > [!NOTE]
     > You can turn off the MSRT infection report. No MSRT information is included if MSRT is not used. If Windows Update is turned off, MSRT will not be offered to users. For more info, see Microsoft KB article [891716](https://support.microsoft.com/kb/891716).
 
--   **Windows Defender/Endpoint Protection**. Windows Defender and System Center Endpoint Protection requires some information to function, including: anti-malware signatures, diagnostic information, User Account Control settings, Unified Extensible Firmware Interface (UEFI) settings, and IP address.
+- **Windows Defender/Endpoint Protection**. Windows Defender and System Center Endpoint Protection requires some information to function, including: anti-malware signatures, diagnostic information, User Account Control settings, Unified Extensible Firmware Interface (UEFI) settings, and IP address.
 
     > [!NOTE]
     > This reporting can be turned off and no information is included if a customer is using third-party antimalware software, or if Windows Defender is turned off. For more info, see [Windows Defender](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender).
 
-    Microsoft recommends that Windows Update, Windows Defender, and MSRT remain enabled unless the enterprise uses alternative solutions such as Windows Server Update Services, System Center Configuration Manager, or a third-party antimalware solution. Windows Update, Windows Defender, and MSRT provide core Windows functionality such as driver and OS updates, including security updates.
+    Microsoft recommends that Windows Update, Windows Defender, and MSRT remain enabled unless the enterprise uses alternative solutions such as Windows Server Update Services, Microsoft Endpoint Configuration Manager, or a third-party antimalware solution. Windows Update, Windows Defender, and MSRT provide core Windows functionality such as driver and OS updates, including security updates.
 
 For servers with default diagnostic data settings and no Internet connectivity, you should set the diagnostic data level to **Security**. This stops data gathering for events that would not be uploaded due to the lack of Internet connectivity.
 
@@ -314,42 +307,34 @@ The normal upload range for the Basic diagnostic data level is between 109 KB - 
 
 The data gathered at this level includes:
 
--   **Basic device data**. Helps provide an understanding about the types of Windows devices and the configurations and types of native and virtualized Windows Servers in the ecosystem. Examples include:
+- **Basic device data**. Helps provide an understanding about the types of Windows devices and the configurations and types of native and virtualized Windows Servers in the ecosystem. Examples include:
 
-    -   Device attributes, such as camera resolution and display type
+  - Device attributes, such as camera resolution and display type
+  - Internet Explorer version
+  - Battery attributes, such as capacity and type
+  - Networking attributes, such as number of network adapters, speed of network adapters, mobile operator network, and IMEI number
+  - Processor and memory attributes, such as number of cores, architecture, speed, memory size, and firmware
+  - Virtualization attribute, such as Second Level Address Translation (SLAT) support and guest operating system
+  - Operating system attributes, such as Windows edition and virtualization state
+  - Storage attributes, such as number of drives, type, and size
 
-    -   Internet Explorer version
+- **Connected User Experiences and Telemetry component quality metrics**. Helps provide an understanding about how the Connected User Experiences and Telemetry component is functioning, including % of uploaded events, dropped events, and the last upload time.
 
-    -   Battery attributes, such as capacity and type
+- **Quality-related information**. Helps Microsoft develop a basic understanding of how a device and its operating system are performing. Some examples are the device characteristics of a Connected Standby device, the number of crashes or hangs, and application state change details, such as how much processor time and memory were used, and the total uptime for an app.
 
-    -   Networking attributes, such as number of network adapters, speed of network adapters, mobile operator network, and IMEI number
+- **Compatibility data**. Helps provide an understanding about which apps are installed on a device or virtual machine and identifies potential compatibility problems.
 
-    -   Processor and memory attributes, such as number of cores, architecture, speed, memory size, and firmware
+  - **General app data and app data for Internet Explorer add-ons**. Includes a list of apps that are installed on a native or virtualized instance of the OS and whether these apps function correctly after an upgrade. This app data includes the app name, publisher, version, and basic details about which files have been blocked from usage.
 
-    -   Virtualization attribute, such as Second Level Address Translation (SLAT) support and guest operating system
+  - **Internet Explorer add-ons**. Includes a list of Internet Explorer add-ons that are installed on a device and whether these apps will work after an upgrade.
 
-    -   Operating system attributes, such as Windows edition and virtualization state
+  - **System data**. Helps provide an understanding about whether a device meets the minimum requirements to upgrade to the next version of the operating system. System information includes the amount of memory, as well as information about the processor and BIOS.
 
-    -   Storage attributes, such as number of drives, type, and size
+  - **Accessory device data**. Includes a list of accessory devices, such as printers or external storage devices, that are connected to Windows PCs and whether these devices will function after upgrading to a new version of the operating system.
 
--   **Connected User Experiences and Telemetry component quality metrics**. Helps provide an understanding about how the Connected User Experiences and Telemetry component is functioning, including % of uploaded events, dropped events, and the last upload time.
+  - **Driver data**. Includes specific driver usage that’s meant to help figure out whether apps and devices will function after upgrading to a new version of the operating system. This can help to determine blocking issues and then help Microsoft and our partners apply fixes and improvements.
 
--   **Quality-related information**. Helps Microsoft develop a basic understanding of how a device and its operating system are performing. Some examples are the device characteristics of a Connected Standby device, the number of crashes or hangs, and application state change details, such as how much processor time and memory were used, and the total uptime for an app.
-
--   **Compatibility data**. Helps provide an understanding about which apps are installed on a device or virtual machine and identifies potential compatibility problems.
-
-    -   **General app data and app data for Internet Explorer add-ons**. Includes a list of apps that are installed on a native or virtualized instance of the OS and whether these apps function correctly after an upgrade. This app data includes the app name, publisher, version, and basic details about which files have been blocked from usage.
-
-    -   **Internet Explorer add-ons**. Includes a list of Internet Explorer add-ons that are installed on a device and whether these apps will work after an upgrade.
-
-    -   **System data**. Helps provide an understanding about whether a device meets the minimum requirements to upgrade to the next version of the operating system. System information includes the amount of memory, as well as information about the processor and BIOS.
-
-    -   **Accessory device data**. Includes a list of accessory devices, such as printers or external storage devices, that are connected to Windows PCs and whether these devices will function after upgrading to a new version of the operating system.
-
-    -   **Driver data**. Includes specific driver usage that’s meant to help figure out whether apps and devices will function after upgrading to a new version of the operating system. This can help to determine blocking issues and then help Microsoft and our partners apply fixes and improvements.
-
--   **Microsoft Store**. Provides information about how the Microsoft Store performs, including app downloads, installations, and updates. It also includes Microsoft Store launches, page views, suspend and resumes, and obtaining licenses.
-
+- **Microsoft Store**. Provides information about how the Microsoft Store performs, including app downloads, installations, and updates. It also includes Microsoft Store launches, page views, suspend and resumes, and obtaining licenses.
 
 ### Enhanced level
 
@@ -361,13 +346,13 @@ The normal upload range for the Enhanced diagnostic data level is between 239 KB
 
 The data gathered at this level includes:
 
--   **Operating system events**. Helps to gain insights into different areas of the operating system, including networking, Hyper-V, Cortana, storage, file system, and other components.
+- **Operating system events**. Helps to gain insights into different areas of the operating system, including networking, Hyper-V, Cortana, storage, file system, and other components.
 
--   **Operating system app events**. A set of events resulting from Microsoft applications and management tools that were downloaded from the Store or pre-installed with Windows or Windows Server, including Server Manager, Photos, Mail, and Microsoft Edge.
+- **Operating system app events**. A set of events resulting from Microsoft applications and management tools that were downloaded from the Store or pre-installed with Windows or Windows Server, including Server Manager, Photos, Mail, and Microsoft Edge.
 
--   **Device-specific events**. Contains data about events that are specific to certain devices, such as Surface Hub and Microsoft HoloLens. For example, Microsoft HoloLens sends Holographic Processing Unit (HPU)-related events.
+- **Device-specific events**. Contains data about events that are specific to certain devices, such as Surface Hub and Microsoft HoloLens. For example, Microsoft HoloLens sends Holographic Processing Unit (HPU)-related events.
 
--   **Some crash dump types**. All crash dump types, except for heap dumps and full dumps.
+- **Some crash dump types**. All crash dump types, except for heap dumps and full dumps.
 
 If the Connected User Experiences and Telemetry component detects a problem on Windows 10 that requires gathering more detailed instrumentation, the Connected User Experiences and Telemetry component at the **Enhanced** diagnostic data level will only gather data about the events associated with the specific issue.
 
@@ -381,29 +366,35 @@ If a device experiences problems that are difficult to identify or repeat using 
 
 However, before more data is gathered, Microsoft’s privacy governance team, including privacy and other subject matter experts, must approve the diagnostics request made by a Microsoft engineer. If the request is approved, Microsoft engineers can use the following capabilities to get the information:
 
--   Ability to run a limited, pre-approved list of Microsoft certified diagnostic tools, such as msinfo32.exe, powercfg.exe, and dxdiag.exe.
+- Ability to run a limited, pre-approved list of Microsoft certified diagnostic tools, such as msinfo32.exe, powercfg.exe, and dxdiag.exe.
 
--   Ability to get registry keys.
+- Ability to get registry keys.
 
--   All crash dump types, including heap dumps and full dumps.
+- All crash dump types, including heap dumps and full dumps.
 
 > [!NOTE]
 > Crash dumps collected at this diagnostic data level may unintentionally contain personal data, such as portions of memory from a documents, a web page, etc.
 
-## Limit Enhanced diagnostic data to the minimum required by Windows Analytics
+## Limit Enhanced diagnostic data to the minimum required by Desktop Analytics
 
-Windows Analytics Device Health reports are powered by diagnostic data not included in the **Basic** level, such as crash reports and certain operating system events. In the past, organizations sending **Enhanced** or **Full** level diagnostic data were able to participate in Device Health. However, organizations that required detailed event and field level documentation were unable to move from **Basic** to **Enhanced**.
+> [!IMPORTANT]
+> The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](/windows/deployment/update/update-compliance-get-started) will continue to be supported.
+> For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
-In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data to the minimum required by Windows Analytics** feature. When enabled, this feature lets you send only the following subset of **Enhanced** level diagnostic data. For more info about Device Health, see the [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor) topic.
+Desktop Analytics reports are powered by diagnostic data not included in the **Basic** level, such as crash reports and certain operating system events.
 
-- **Operating system events.** Limited to a small set required for analytics reports and documented in the [Windows 10, version 1709 enhanced diagnostic data events and fields used by Windows Analytics](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) topic.
+In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data to the minimum required by Windows Analytics** feature. When enabled, this feature lets you send only the following subset of **Enhanced** level diagnostic data.
+
+- **Operating system events.** Limited to a small set required for analytics reports and documented in the [Windows 10 diagnostic data events and fields collected through the limit enhanced diagnostic data policy](enhanced-diagnostic-data-windows-analytics-events-and-fields.md) topic.
 
 - **Some crash dump types.** Triage dumps for user mode and mini dumps for kernel mode.
 
->[!NOTE]
+> [!NOTE]
 > Triage dumps are a type of [minidumps](https://docs.microsoft.com/windows/desktop/debug/minidump-files) that go through a process of user-sensitive information scrubbing. Some user-sensitive information may be missed in the process, and will therefore be sent with the dump.
 
-### Enable limiting enhanced diagnostic data to the minimum required by Windows Analytics
+With the retirement of Windows Analytics, this policy will continue to be supported by Desktop Analytics, but will not include Office related diagnostic data.
+
+### Enable limiting enhanced diagnostic data to the minimum required by Desktop Analytics
 
 1. Set the diagnostic data level to **Enhanced**, using either Group Policy or MDM.
 
@@ -415,7 +406,7 @@ In Windows 10, version 1709, we introduced the **Limit Enhanced diagnostic data 
 
     -AND-
 
-2. Enable the **LimitEnhancedDiagnosticDataWindowsAnalytics** setting, using either Group Policy or MDM.
+1. Enable the **LimitEnhancedDiagnosticDataWindowsAnalytics** setting, using either Group Policy or MDM.
 
     a. Using Group Policy, set the **Computer Configuration/Administrative Templates/Windows Components/Data collection and Preview builds/Limit Enhanced diagnostic data to the minimum required by Windows Analytics** setting to **Enabled**.
 

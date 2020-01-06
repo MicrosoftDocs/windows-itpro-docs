@@ -6,16 +6,20 @@ description: You can use Device Health in Azure Portal to monitor the frequency 
 keywords: oms, operations management suite, wdav, health, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
+
 ms.localizationpriority: medium
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
-ms.author: greglin
+audience: itpro
+author: jaimeo
+ms.author: jaimeo
 ms.collection: M365-analytics
 ms.topic: article
 ---
 
 # Monitor the health of devices with Device Health
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 ## Introduction
 

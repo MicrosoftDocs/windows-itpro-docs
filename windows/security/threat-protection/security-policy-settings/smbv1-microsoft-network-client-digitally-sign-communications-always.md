@@ -1,6 +1,6 @@
 ---
-title: SMBv1 Microsoft network client Digitally sign communications (always) (Windows 10)
-description: For SMBv1 only, describes the best practices, location, values, policy management and security considerations for the Microsoft network client Digitally sign communications (always) security policy setting.
+title: Always sign SMBv1 network client communications (Windows 10)
+description: Learn about best practices, security considerations and more for the security policy setting, Microsoft network client Digitally sign communications (always).
 ms.assetid: 4b7b0298-b130-40f8-960d-60418ba85f76
 ms.reviewer: 
 ms.author: dansimp

@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot for existing devices
-description: Windows Autopilot deployment
+description: Modern desktop deployment with Windows Autopilot enables you to easily deploy the latest version of Windows 10 to your existing devices.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.reviewer: mniehaus
 manager: laurawi
@@ -70,13 +70,12 @@ See the following examples.
     Install-Module WindowsAutopilotIntune -Force
     ```
 
-3. Enter the following lines and provide Intune administrative credentials
-   - In the following command, replace the example user principal name for Azure authentication (admin@M365x373186.onmicrosoft.com) with your user account. Be sure that the user account you specify has sufficient administrative rights.
+3. Enter the following line and provide Intune administrative credentials:
 
      ```powershell
-     Connect-AutopilotIntune -user admin@M365x373186.onmicrosoft.com
+     Connect-MSGraph
      ```
-     The password for your account will be requested using a standard Azure AD form. Type your password and then click **Sign in**. 
+     The user and password for your account will be requested using a standard Azure AD form. Type your password and then click **Sign in**. 
      <br>See the following example:
 
      ![Azure AD authentication](images/pwd.png)

@@ -1,6 +1,6 @@
 ---
 title: Determine your application control objectives (Windows 10)
-description: This topic helps you with the decisions you need to make to determine what applications to control and how to control them by comparing Software Restriction Policies (SRP) and AppLocker.
+description: Determine which applications to control and how to control them by comparing Software Restriction Policies (SRP) and AppLocker.
 ms.assetid: 0e84003e-6095-46fb-8c4e-2065869bb53b
 ms.reviewer: 
 ms.author: dansimp
@@ -77,7 +77,7 @@ Use the following table to develop your own objectives and determine which appli
 <td align="left"><p>SRP can control the following file types:</p>
 <ul>
 <li><p>Executables</p></li>
-<li><p>Dlls</p></li>
+<li><p>DLLs</p></li>
 <li><p>Scripts</p></li>
 <li><p>Windows Installers</p></li>
 </ul>
@@ -85,7 +85,7 @@ Use the following table to develop your own objectives and determine which appli
 <td align="left"><p>AppLocker can control the following file types:</p>
 <ul>
 <li><p>Executables</p></li>
-<li><p>Dlls</p></li>
+<li><p>DLLs</p></li>
 <li><p>Scripts</p></li>
 <li><p>Windows Installers</p></li>
 <li><p>Packaged apps and installers</p></li>
@@ -98,7 +98,7 @@ Use the following table to develop your own objectives and determine which appli
 <td align="left"><p>AppLocker does not support this. AppLocker currently supports the following file extensions:</p>
 <ul>
 <li><p>Executables (.exe, .com)</p></li>
-<li><p>Dlls (.ocx, .dll)</p></li>
+<li><p>DLLs (.ocx, .dll)</p></li>
 <li><p>Scripts (.vbs, .js, .ps1, .cmd, .bat)</p></li>
 <li><p>Windows Installers (.msi, .mst, .msp)</p></li>
 <li><p>Packaged app installers (.appx)</p></li>
@@ -123,7 +123,7 @@ Use the following table to develop your own objectives and determine which appli
 <tr class="odd">
 <td align="left"><p>Editing the hash value</p></td>
 <td align="left"><p>SRP allows you to select a file to hash.</p></td>
-<td align="left"><p>AppLocker computes the hash value itself. Internally it uses the SHA2 Authenticode hash for Portable Executables (Exe and Dll) and Windows Installers and a SHA2 flat file hash for the rest.</p></td>
+<td align="left"><p>AppLocker computes the hash value itself. Internally it uses the SHA2 Authenticode hash for Portable Executables (exe and DLL) and Windows Installers and a SHA2 flat file hash for the rest.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Support for different security levels</p></td>

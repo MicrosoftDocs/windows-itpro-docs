@@ -1,6 +1,6 @@
 ---
 title: Manage automation file uploads
-description: Enable content analysis and configure the file extension and email attachment extensions that will be sumitted for analysis
+description: Enable content analysis and configure the file extension and email attachment extensions that will be submitted for analysis
 keywords: automation, file, uploads, content, analysis, file, extension, email, attachment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -45,5 +45,4 @@ For example, if you add *exe* and *bat* as file or attachment extension names, t
   
 
 ## Related topics
-- [Manage automation allowed/blocked lists](manage-automation-allowed-blocked-list.md)
 - [Manage automation folder exclusions](manage-automation-folder-exclusions.md)

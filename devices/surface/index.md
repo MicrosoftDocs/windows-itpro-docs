@@ -3,8 +3,8 @@ title: Microsoft Surface documentation and resources
 layout: HubPage
 hide_bc: true
 description: Surface and Surface Hub documentation for admins & IT professionals
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 ms.topic: hub-page
 keywords: Microsoft Surface, Microsoft Surface Hub, Surface documentation

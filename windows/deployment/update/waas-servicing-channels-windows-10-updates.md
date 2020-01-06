@@ -3,7 +3,7 @@ title: Assign devices to servicing channels for Windows 10 updates (Windows 10)
 description: tbd
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
+
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
@@ -57,14 +57,14 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 1. Go to **Settings** > **Update & security** > **Windows Update** > **Advanced options**.
 2. Select **Defer feature updates**.
 
-**To assign devicess to the Semi-Annual Channel by using Group Policy**
+**To assign devices to the Semi-Annual Channel by using Group Policy**
 
 
 - In Windows 10, version 1607 and later releases:
 
     Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** - enable policy and set branch readiness level to the Semi-Annual Channel
     
-**To assign devicess to to the Semi-Annual Channel by using MDM**
+**To assign devices to to the Semi-Annual Channel by using MDM**
 
 
 - In Windows 10, version 1607 and later releases:
@@ -82,8 +82,8 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 
 To get started with the Windows Insider Program for Business, you will need to follow a few simple steps:
 
-1. On the [Windows Insider](https://insider.windows.com) website, go to **For Business > Getting Started** to [register your organizational Azure AD account](https://insider.windows.com/en-us/insidersigninaad/).
-2. **Register your domain**. Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/en-us/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
+1. On the [Windows Insider](https://insider.windows.com) website, go to **For Business > Getting Started** to [register your organizational Azure AD account](https://insider.windows.com/insidersigninaad/).
+2. **Register your domain**. Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
 3. Make sure the **Allow Telemetry** setting is set to **2** or higher.
 4. Starting with Windows 10, version 1709, set policies to manage preview builds and their delivery:
 

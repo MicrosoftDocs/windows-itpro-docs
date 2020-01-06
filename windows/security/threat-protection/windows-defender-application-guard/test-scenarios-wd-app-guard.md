@@ -1,28 +1,31 @@
 ---
-title: Testing scenarios using Windows Defender Application Guard in your business or organization (Windows 10)
+title: Testing scenarios with Windows Defender Application Guard (Windows 10)
 description: Suggested testing scenarios for Windows Defender Application Guard, showing how it works in both Standalone and Enterprise-managed mode.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.date: 03/15/2019
 ms.reviewer: 
 manager: dansimp
+ms.custom: asr
 ---
 
 # Application Guard testing scenarios
 
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** 
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 
 We've come up with a list of scenarios that you can use to test hardware-based isolation in your organization.
 
 
 ## Application Guard in standalone mode
+
 You can see how an employee would use standalone mode with Application Guard.
 
 **To test Application Guard in Standalone mode**
@@ -43,9 +46,11 @@ You can see how an employee would use standalone mode with Application Guard.
     ![Untrusted website running in Application Guard](images/appguard-visual-cues.png)
 
 ## Application Guard in Enterprise-managed mode 
+
 How to install, set up, turn on, and configure Application Guard for Enterprise-managed mode.
 
 ### Install, set up, and turn on Application Guard
+
 Before you can use Application Guard in enterprise mode, you must install Windows 10 Enterprise edition, version 1709, which includes the functionality. Then, you must use Group Policy to set up the required settings.
 
 1. [Install Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/install-wd-app-guard#install-application-guard).
@@ -90,6 +95,7 @@ Before you can use Application Guard in enterprise mode, you must install Window
    ![Untrusted website running in Application Guard](images/appguard-visual-cues.png)
 
 ### Customize Application Guard
+
 Application Guard lets you specify your configuration, allowing you to create the proper balance between isolation-based security and productivity for your employees.
 
 Application Guard provides the following default behavior for your employees:
@@ -163,7 +169,7 @@ You have the option to change each of these settings to work with your enterpris
     The previously added site should still appear in your **Favorites** list.
 
     >[!NOTE]
-    >If you don't allow or turn off data persistence, restarting a device or logging in and out of the isolated container triggers a recycle event that discards all generated data, including session cookies, Favorites, and so on, removing the data from Application Guard. If you turn on data persistence, all employee-generated artifacts are preserved across container recycle events. However, these artifacts only exist in the isolated container and aren’t shared with the host PC. This data persists after restarts and even through build-to-build upgrades of Windows 10.<br><br>If you turn on data persistence, but later decide to stop supporting it for your employees, you can use our Windows-provided utility to reset the container and to discard any personal data.<br><br>**To reset the container:**<ol><li>Open a command-line program and navigate to Windows/System32.</li><li>Type `wdagtool.exe cleanup`.<br>The container environment is reset, retaining only the employee-generated data.</li><li>Type `wdagtool.exe cleanup RESET_PERSISTENCE_LAYER`.<br>The container environment is reset, including discarding all employee-generated data.</li></ol>
+    >If you don't allow or turn off data persistence, restarting a device or logging in and out of the isolated container triggers a recycle event that discards all generated data, including session cookies, Favorites, and so on, removing the data from Application Guard. If you turn on data persistence, all employee-generated artifacts are preserved across container recycle events. However, these artifacts only exist in the isolated container and aren’t shared with the host PC. This data persists after restarts and even through build-to-build upgrades of Windows 10.<br><br>If you turn on data persistence, but later decide to stop supporting it for your employees, you can use our Windows-provided utility to reset the container and to discard any personal data.<br><br>**To reset the container, follow these steps:**<br/>1. Open a command-line program and navigate to Windows/System32.<br/>2. Type `wdagtool.exe cleanup`. The container environment is reset, retaining only the employee-generated data.<br/>3. Type `wdagtool.exe cleanup RESET_PERSISTENCE_LAYER`. The container environment is reset, including discarding all employee-generated data.
     
 **Applies to:**
 - Windows 10 Enterpise edition, version 1803

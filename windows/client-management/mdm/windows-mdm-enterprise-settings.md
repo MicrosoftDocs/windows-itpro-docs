@@ -1,6 +1,6 @@
 ---
 title: Enterprise settings, policies, and app management
-description: The actual management interaction between the device and server is done via the DM client. The DM client communicates with the enterprise management server via DM v1.2 SyncML syntax.
+description: The DM client manages the interaction between a device and a server. Learn more about the client-server management workflow.
 MS-HAID:
 - 'p\_phdevicemgmt.enterprise\_settings\_\_policies\_\_and\_app\_management'
 - 'p\_phDeviceMgmt.windows\_mdm\_enterprise\_settings'

@@ -6,16 +6,20 @@ description: Use the Azure Portal to add and configure Windows Analytics solutio
 keywords: Device Health, oms, Azure, portal, operations management suite, add, manage, configure, Upgrade Readiness, Update Compliance
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
-ms.audience: itproauthor: greg-lindsay
+audience: itpro
+author: jaimeo
+ms.audience: itpro
+author: jaimeo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
 ---
 
 # Windows Analytics in the Azure Portal
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Update Compliance](update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 Windows Analytics uses Azure Log Analytics workspaces (formerly known as Operations Management Suite or OMS), a collection of cloud-based services for monitoring and automating your on-premises and cloud environments.
 
@@ -65,7 +69,7 @@ To adjust settings for a Windows Analytics solution, first navigate to the **Sol
 
 From there, select the settings page to adjust specific settings:
 
-[![Settings page for Upgrade Readiness in Azure portsl](images/azure-portal-UR-settings.png)](images/azure-portal-UR-settings.png)
+[![Settings page for Upgrade Readiness in Azure portal](images/azure-portal-UR-settings.png)](images/azure-portal-UR-settings.png)
 
 >[!NOTE]
 >To access these settings, both the subscription and workspace require "contributor" permissions. You can view your current role and make changes in other roles by using the **Access control (IAM)** tab in Azure.

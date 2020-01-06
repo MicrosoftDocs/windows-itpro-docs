@@ -2,19 +2,22 @@
 title: Upgrade Readiness deployment script (Windows 10)
 ms.reviewer: 
 manager: laurawi
-ms.author: greglin
+ms.author: jaimeo
 description: Deployment script for Upgrade Readiness.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 audience: itpro
-author: greg-lindsay
+author: jaimeo
 ms.topic: article
 ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness deployment script
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Get started with Update Compliance](../update/update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 To automate the steps provided in [Get started with Upgrade Readiness](upgrade-readiness-get-started.md), and to troubleshoot data sharing issues, you can run the [Upgrade Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409), developed by Microsoft.
 
@@ -140,7 +143,7 @@ Error creating or updating registry key: **CommercialId** at **HKLM:\SOFTWARE\Mi
 | 45 - Diagtrack.dll was not found. | Update the device using Windows Update or Windows Server Update Services. |
 | 48 - **CommercialID** mentioned in RunConfig.bat should be a GUID. | Copy the commercial ID from your workspace. To find your commercial ID, first navigate to the Solutions tab for your workspace in Azure Portal, and then select the solution. From there, select the **Settings** page, where you can find and copy your commercial ID.|
 | 50 - Diagtrack Service is not running. | The Diagtrack service is required to send data to Microsoft. Enable and run the "Connected User Experiences and Telemetry" service. |
-| 51 - RunCensus failed with an unexpected exception. | RunCensus explitly runs the process used to collect device information. The method failed with an unexpected exception. The most common cause is incorrect setup of diagnostic data. Check the ExceptionHResult and ExceptionMessage for more details. |
+| 51 - RunCensus failed with an unexpected exception. | RunCensus explicitly runs the process used to collect device information. The method failed with an unexpected exception. The most common cause is incorrect setup of diagnostic data. Check the ExceptionHResult and ExceptionMessage for more details. |
 | 52 - DeviceCensus.exe not found on a Windows 10 machine. | On computers running Windows 10, the process devicecensus.exe should be present in the \system32 directory. Error code 52 is returned if the process was not found. Ensure that it exists at the specified location. |
 | 53 - There is a different CommercialID present at the GPO path: **HKLM:\SOFTWARE\Policies\Microsoft \Windows\DataCollection**. This will take precedence over the CommercialID provided in the script. | Provide the correct CommercialID at the GPO location. |
 | 54 - Microsoft Account Sign In Assistant Service is Disabled. | This service is required for devices running Windows 10. The diagnostic data client relies on the Microsoft Account Sign In Assistant (MSA) to get the Global Device ID for the device. Without the MSA service running, the global device ID will not be generated and sent by the client and Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are). |

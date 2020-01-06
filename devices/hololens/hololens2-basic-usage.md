@@ -28,7 +28,7 @@ This guide provides an intro to:
 
 On HoloLens, holograms blend the digital world with your physical environment to look and sound like they're part of your world. Even when holograms are all around you, you can always see your surroundings, move freely, and interact with people and objects. We call this experience "mixed reality".
 
-The holographic frame positions your holograms where your eyes are most sensitive to detail and the see-through lenses leave your peripheral vision unobscured. With spatial sound, you can pinpoint a hologram by listening, even if it’s behind you. And, because HoloLens understands your physical environment, you can place holograms on and around real objects such as tables and walls.
+The holographic frame positions your holograms where your eyes are most sensitive to detail and the see-through lenses leave your peripheral vision clear. With spatial sound, you can pinpoint a hologram by listening, even if it’s behind you. And, because HoloLens understands your physical environment, you can place holograms on and around real objects such as tables and walls.
 
 Getting around HoloLens is a lot like using your smart phone. You can use your hands to touch and manipulate holographic windows, menus, and buttons.  
 
@@ -54,6 +54,8 @@ To bring up a **context menu**, like the ones you'll find on an app tile in the 
 
 ## Use hand ray for holograms out of reach
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3ZOum]
+
 When there are no holograms near your hands, the **touch cursor** will hide automatically and **hand rays** will appear from the palm of your hands. Hand rays allow you to interact with holograms from a distance.
 
 > [!TIP]
@@ -71,6 +73,8 @@ To select something using **hand ray**, follow these steps:
 
 ### Grab using air tap and hold
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxnh]
+
 To grab a hologram or scroll app window content using **hand ray**, start with an **air tap**, but keep your fingers together instead of releasing them.
 
 Use **air tap and hold** to perform the following actions with hand ray:
@@ -81,7 +85,9 @@ Use **air tap and hold** to perform the following actions with hand ray:
 
 ## Start gesture
 
-The Start gesture opens the **Start menu**.  To perform the Start gesture, hold out your hand with your palm facing you. You’ll see a **Start icon** appear over your inner wrist. Tap this icon using your other hand.  The Start menu will open **where you’re looking**. 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
+
+The Start gesture opens the **Start menu**.  To perform the Start gesture, hold out your hand with your palm facing you. You’ll see a **Start icon** appear over your inner wrist. Tap this icon using your other hand.  The Start menu will open **where you’re looking**.
 
 > [!TIP]
 >
@@ -96,12 +102,15 @@ To **close** the Start menu, do the Start gesture when the Start menu is open.  
 
 ### One-handed Start gesture
 
+> [!IMPORTANT]
+> For the one-handed Start gesture to work:
+>
+> 1. You must update to the November 2019 update (build 18363.1039) or later.
+> 1. Your eyes must be calibrated on the device so that eye tracking functions correctly. If you do not see orbiting dots around the Start icon when you look at it, your eyes are not [calibrated](https://docs.microsoft.com/hololens/hololens-calibration#calibrating-your-hololens-2) on the device.
+
 You can also perform the Start gesture with only one hand. To do this, hold out your hand with your palm facing you and look at the **Start icon** on your inner wrist. **While keeping your eye on the icon**, pinch your thumb and index finger together.
 
-> [!IMPORTANT]
-> For the one-handed Start gesture to work, your eyes must be calibrated on the device so that eye tracking functions correctly. If you do not see orbiting dots around the Start icon when you look at it, your eyes are not calibrated on the device.
-
-![Image that shows the Start icon and the one-handed start gesture](./images/hololens-2-start-alternative.jpg)
+![Image that shows the Start icon and the one-handed start gesture](./images/hololens-2-start-alternative.png)
 
 ## Start menu, mixed reality home, and apps
 
@@ -134,6 +143,8 @@ Move a hologram or app by following these steps:
 1. Release your fingers to place it.
 
 ### Resizing holograms
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3ZYIb]
 
 Grab and use the **resize handles** that appear on the corners of 3D holograms and app windows to resize them.
 

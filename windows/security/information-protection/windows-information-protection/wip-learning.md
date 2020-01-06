@@ -1,6 +1,5 @@
 ---
-title: 
-# Fine-tune Windows Information Policy (WIP) with WIP Learning
+title: Fine-tune Windows Information Policy (WIP) with WIP Learning
 description: How to access the WIP Learning report to monitor and apply Windows Information Protection in your company.
 ms.assetid: 53db29d2-d99d-4db6-b494-90e2b4872ca2
 ms.reviewer: 
@@ -10,8 +9,8 @@ ms.mktglfcycl:
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: stephow-MSFT
-ms.author: stephow
+author: cabailey
+ms.author: cabailey
 manager: laurawi
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -33,7 +32,7 @@ In the **Website learning report**, you can view a summary of the devices that h
 
 ## Access the WIP Learning reports
 
-1. Open the [Azure portal](http://portal.azure.com/). 
+1. Open the [Azure portal](https://portal.azure.com/). 
 
 1. Click **All services**, type **Intune** in the text box filter, and click the star to add it to **Favorites**.
 

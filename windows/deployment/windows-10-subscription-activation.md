@@ -1,13 +1,14 @@
 ---
 title: Windows 10 Subscription Activation
-description: How to dynamically enable Windows 10 Enterprise or Educations subscriptions
+description: How to dynamically enable Windows 10 Enterprise or Education subscriptions
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 manager: laurawi
 ms.collection: M365-modern-desktop
 search.appverid:
@@ -84,12 +85,25 @@ For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & 
 - Azure Active Directory (Azure AD) available for identity management.
 - Devices must be Azure AD-joined or Hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices are not supported.
 
-    >[!NOTE]
-    >An issue has been identified with Hybrid Azure AD joined devices that have enabled [multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) (MFA). If a user signs into a device using their Active Directory account and MFA is enabled, the device will not successfully upgrade to their Windows Enterprise subscription.  To resolve this issue, the user must either sign in with an Azure Active Directory account, or you must disable MFA for this user during the 30-day polling period and renewal.
-
 For Microsoft customers that do not have EA or MPSA, you can obtain Windows 10 Enterprise E3/E5 or A3/A5 through a cloud solution provider (CSP). Identity management and device requirements are the same when you use CSP to manage licenses, with the exception that Windows 10 Enterprise E3 is also available through CSP to devices running Windows 10, version 1607. For more information about obtaining Windows 10 Enterprise E3 through your CSP, see [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md).
 
 If devices are running Windows 7 or Windows 8.1, see [New Windows 10 upgrade benefits for Windows Cloud Subscriptions in CSP](https://blogs.windows.com/business/2017/01/19/new-windows-10-upgrade-benefits-windows-cloud-subscriptions-csp/)
+
+#### Muti-factor authentication
+
+An issue has been identified with Hybrid Azure AD joined devices that have enabled [multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted) (MFA). If a user signs into a device using their Active Directory account and MFA is enabled, the device will not successfully upgrade to their Windows Enterprise subscription.  
+
+To resolve this issue:
+
+If the device is running Windows 10, version 1703, 1709, or 1803, the user must either sign in with an Azure AD account, or you must disable MFA for this user during the 30-day polling period and renewal.
+
+If the device is running Windows 10, version 1809 or later:
+1. Windows 10, version 1809 must be updated with [KB4497934](https://support.microsoft.com/help/4497934/windows-10-update-kb4497934). Later versions of Windows 10 automatically include this patch.
+2. When the user signs in on a Hybrid Azure AD joined device with MFA enabled, a notification will indicate that there is a problem. Click the notification and then click **Fix now** to step through the subscription activation process. See the example below:
+
+![Subscription Activation with MFA1](images/sa-mfa1.png)<br>
+![Subscription Activation with MFA2](images/sa-mfa2.png)<br>
+![Subscription Activation with MFA2](images/sa-mfa3.png)
 
 ### Windows 10 Education requirements
 
@@ -167,7 +181,7 @@ The following policies apply to acquisition and renewal of licenses on devices:
 - Devices that have been upgraded will attempt to renew licenses about every 30 days, and must be connected to the Internet to successfully acquire or renew a license.
 - If a device is disconnected from the Internet until its current subscription expires, the operating system will revert to Windows 10 Pro or Windows 10 Pro Education. As soon as the device is connected to the Internet again, the license will automatically renew.
 - Up to five devices can be upgraded for each user license. 
-- If a device the meets requirements and a licensed user signs in on that device, it will be upgraded.
+- If a device meets the requirements and a licensed user signs in on that device, it will be upgraded.
 
 Licenses can be reallocated from one user to another user, allowing you to optimize your licensing investment against changing needs.
 

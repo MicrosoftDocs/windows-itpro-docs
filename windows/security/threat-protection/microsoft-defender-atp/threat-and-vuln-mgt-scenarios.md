@@ -1,6 +1,6 @@
 ---
 title: Threat & Vulnerability Management scenarios
-description: Learn how to use Threat & Vulnerability Management in the context of scenarios that Security Administrators encounter when you collaborate with IT Administrators and SecOps as you protect your organization from cybersecurity threats.    
+description: Learn how Threat & Vulnerability Management can be used to help security admins, IT admins, and SecOps collaborate in defending against security threats.
 keywords: mdatp-tvm scenarios, mdatp, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase configuration score, increase threat & vulnerability configuration score, configuration score, exposure score, security controls 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,33 +21,30 @@ ms.topic: article
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+>Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
+
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 ## Before you begin
 Ensure that your machines:
 - Are onboarded to Microsoft Defender Advanced Threat Protection
 - Run with Windows 10 1709 (Fall Creators Update) or later
-- Download the following set of optional security updates and deploy them in your network to boost your vulnerability detection rates:
--- KB 4512941
--- KB 4516077
--- KB 4516045
--- KB 4516071
 
 >[!NOTE]
 >Threat & Vulnerability Management can also scan machines that run on Windows 7 and Windows Server 2019 operating systems and detects vulnerabilities addressed in patch Tuesday.
 
-- Have the following mandatory updates installed:
-- (1) RS3 customers | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)
-- (2) RS4 customers | [KB4493464](https://support.microsoft.com/help/4493464)
+- Have the following mandatory updates installed and deployed in your network to boost your vulnerability assessment detection rates:
+
+> Release | Security update KB number and link
+> :---|:---
+> RS3 customers | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) and [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+> RS4 customers| [KB4493464](https://support.microsoft.com/help/4493464) and [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+> RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+> 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+
 - Are onboarded to Microsoft Intune and System Center Configuration Manager (SCCM). If you are use SCCM, update your console to the latest May version 1905
 - Have at least one security recommendation that can be viewed in the machine page
 - Are tagged or marked as co-managed
-
->[!IMPORTANT]
->To boost your vulnerability assessment detection rates, you can download the following set of optional security updates and deploy them in your network:
->- 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
->- RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
->- RS4 customers | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
->- RS3 customers | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
-><P>Downloading and deploying the above-mentioned security updates will be mandatory starting Patch Tuesday, October 8, 2019.
 
 ## Reduce your threat and vulnerability exposure
 Threat & Vulnerability Management introduces a new exposure score metric, which visually represents how exposed your machines are to imminent threats.
@@ -150,19 +147,68 @@ When an exception is created for a recommendation, the recommendation is no long
 2. Click the top-most recommendation. A flyout panel opens with the recommendation details.
 
 3. Click **Exception options**.
+![Screenshot of the exception option in the remediation flyout pane](images/tvm-exception-option.png)
 
 4. Select your justification for the exception you need to file instead of remediating the security recommendation in question. Fill out the justification context, then set the exception duration.
 
+> ![Screenshot of exception flyout page which details justification and context](images/tvm-exception-flyout.png)
+
 5. Click **Submit**. A confirmation message at the top of the page indicates that the exception has been created.
+![Screenshot of exception confirmation message](images/tvm-exception-confirmation.png)
 
 6. Navigate to the **Remediation** page under the **Threat & Vulnerability Management** menu and click the **Exceptions** tab to view all your exceptions (current and past). 
+![Screenshot of exception list of exceptions in the Remediation page](images/tvm-exception-list.png) 
+
+## Use Advanced hunting query to search for machines with High active alerts or critical CVE public exploit 
+
+1. Go to **Advanced hunting** from the left-hand navigation pane.
+
+2. Scroll down to the TVM advanced hunting schemas to familiarize yourself with the column names.
+
+3. Enter the following queries:
+
+```
+// Search for machines with High active alerts or Critical CVE public exploit 
+DeviceTvmSoftwareInventoryVulnerabilities 
+| join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId 
+| where IsExploitAvailable == 1 and CvssScore >= 7
+| summarize NumOfVulnerabilities=dcount(CveId), 
+ComputerName=any(ComputerName) by MachineId 
+| join kind =inner(AlertEvents) on MachineId  
+| summarize NumOfVulnerabilities=any(NumOfVulnerabilities), 
+ComputerName=any(ComputerName) by MachineId, AlertId 
+| project ComputerName, NumOfVulnerabilities, AlertId  
+| order by NumOfVulnerabilities desc 
+
+```
+
+## Conduct an inventory of software or software versions which have reached their end-of-life
+End-of-life for software or software versions means that they will no longer be supported nor serviced. When you use software or software versions which have reached their end-of-life, you're exposing your organization to security vulnerabilities, legal, and financial risks. 
+
+It is crucial for you as Security and IT Administrators to work together and ensure that your organization's software inventory is configured for optimal results, compliance, and a healthy network ecosystem. 
+
+To conduct an inventory of software or software versions which have reached their end of life:
+1. From the Threat & Vulnerability Management menu, navigate to **Security recommendations**.
+2. Go to the **Filters** panel and select **Software uninstall** from **Remediation Type** options if you want to see the list of software recommendations associated with software which have reached their end-of-life (tagged as **EOL software**). Select **Software update** from **Remediation Type** options if you want to see the list of software recommendations associated with software and software versions which have reached their end-of-life (tagged as **EOL versions installed**). 
+3. Select a software that you'd like to investigate. A fly-out screen opens where you can select **Open software page**.
+![Screenshot of Security recommendation for a software that reached its end of life page](images/secrec_flyout.png) 
+
+4. In the **Software page** select the **Version distribution** tab to know which versions of the software have reached their end-of-life, and how many vulnerabilities were discovered in it.
+![Screenshot of software details for a software that reached its end of life](images/secrec_sw_details.png) 
+
+After you have identified which software and software versions are vulnerable due to its end-of-life status, remediate them to lower your organizations exposure to vulnerabilities and advanced persistent threats. See [Remediation and exception](tvm-remediation.md) for details.
+
 
 ## Related topics
+- [Supported operating systems and platforms](tvm-supported-os.md)
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Exposure score](tvm-exposure-score.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
-- [Remediation](tvm-remediation.md)
+- [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
+- [Advanced hunting overview](overview-hunting.md)
+- [All Advanced hunting tables](advanced-hunting-reference.md)
+- [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

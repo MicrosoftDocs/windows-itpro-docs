@@ -1,6 +1,7 @@
 ---
 title: Create a code signing cert for Windows Defender Application Control  (Windows 10)
-description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
+description: Learn how to set up a publicly-issued code signing certificate, so you can sign catalog files or WDAC policies internally.
+keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.reviewer: 
 manager: dansimp
@@ -10,7 +11,12 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: isbrahm
+ms.author: dansimp
+manager: dansimp
 ms.date: 02/28/2018
 ---
 
@@ -89,7 +95,8 @@ Now that the template is available to be issued, you must request one from the c
 
 6.  Enroll and finish.
 
-> **Note**&nbsp;&nbsp;If a certificate manager is required to approve any issued certificates and you selected to require management approval on the template, the request will need to be approved in the CA before it will be issued to the client.
+>[!NOTE]
+>If a certificate manager is required to approve any issued certificates and you selected to require management approval on the template, the request will need to be approved in the CA before it will be issued to the client.
 
 This certificate must be installed in the user’s personal store on the computer that will be signing the catalog files and code integrity policies. If the signing is going to be taking place on the computer on which you just requested the certificate, exporting the certificate to a .pfx file will not be required because it already exists in your personal store. If you are signing on another computer, you will need to export the .pfx certificate with the necessary keys and properties. To do so, complete the following steps:
 

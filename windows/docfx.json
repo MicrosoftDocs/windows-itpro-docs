@@ -9,7 +9,7 @@
       ],
     "resource": [
         {
-          "files": ["**/images/**"],
+          "files": ["**/images/**", "**/*.pdf"],
           "exclude": ["**/obj/**"]
         }
     ],
@@ -20,7 +20,17 @@
 		"_op_documentIdPathDepotMapping": {
 			"./": {
 			  "depot_name": "Win.windows"
-			}
+      },
+      "contributors_to_exclude": [ 
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "Kellylorenebaker",
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+     ], 
 		}
     },
     "externalReference": [
