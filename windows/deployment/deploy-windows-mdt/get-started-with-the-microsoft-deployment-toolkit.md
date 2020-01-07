@@ -21,7 +21,9 @@ ms.topic: article
 **Applies to**
 - Windows 10
 
-This topic will help you gain a better understanding of how to use the Microsoft Deployment Toolkit (MDT) to deploy Windows 10. When you are ready to try using MDT to deploy Windows 10 in various says, see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
+This guide will help you gain a better understanding of how to use the [Microsoft Deployment Toolkit (MDT)](https://docs.microsoft.com/en-us/configmgr/mdt/index) to deploy Windows 10. 
+
+When you are ready to try using MDT, see a list of available [Topics in this guide](#topics-in-this-guide).
 
 ## Introduction
 
@@ -162,6 +164,21 @@ The easiest way to view log files is to use Configuration Manager Trace (CMTrace
 ## Monitoring
 
 On the deployment share, you also can enable monitoring. After you enable monitoring, you will see all running deployments in the Monitor node in the Deployment Workbench.
+
+## Topics in this guide
+
+| Topic | Description | Required / optional |
+| :---   | :---      | :--- |
+| [Understand the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md) | An overview of MDT. | Optional |
+| [Deploying Windows 10 with MDT](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) | (This topic). A description of the lab infrastructure and requirements. | Optional |
+| [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md) | Installation of MDT.  | Required |
+| [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) | Create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image.       | Required |
+| [Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md) | Take a reference image for Windows 10 and deploy that image to your environment using MDT.       | Required  |
+| [Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md) | Replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations. | Optional  |
+| [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md) | Use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the computer refresh process.  | Required |
+| [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md) | Use MDT Lite Touch Installation (LTI) to replace the a Windows 7 computer with a Windows 10 computer using the replace process.  | Required  |
+| [Perform an in-place upgrade to Windows 10 with MDT](upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md) | Use an MDT task sequence to completely automate the in-place upgrade process. | Required |
+| [Configure MDT settings](configure-mdt-settings.md) | Learn about configuring MDT customizations for your environment. | Optional |
 
 ## Related topics
 
