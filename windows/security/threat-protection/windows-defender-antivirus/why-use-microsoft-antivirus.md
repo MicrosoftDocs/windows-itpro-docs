@@ -9,10 +9,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+audience: ITPro 
+ms.topic: article 
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/06/2020
+ms.date: 01/07/2020
 ms.reviewer: 
 manager: dansimp
 ---
