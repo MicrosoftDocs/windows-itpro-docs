@@ -33,9 +33,7 @@ In general, you’ll need to take the following steps to use the APIs:
 - Get an access token using this application.
 - Use the token to access Microsoft Defender ATP API.
 
-This page explains how to create an AAD application, get an access token to Microsoft Defender ATP and validate the token.
-<br>To call Microsoft Defender ATP API on behalf of your customer, you must register an application to acquire an access token from the Microsoft identity platform.
-<br>When calling the Microsoft Defender ATP APIs, each request from your application will contain your application identifier and the customer tenant you are calling on behalf of, more details below.
+The following steps with guide you how to create an AAD application, get an access token to Microsoft Defender ATP and validate the token.
 <br>**To become an official partner of Microsoft Defender ATP and appear in our partner page, you will provide us with your application identifier.**
 
 ## Create the multi-tenant app
@@ -57,7 +55,7 @@ This page explains how to create an AAD application, get an access token to Micr
 	![Image of Microsoft Azure partner application registration](images/atp-api-new-app-partner.png)
 
 
-4. Allow your Application to access Microsoft Defender ATP and assign it **'Read all alerts'** permission:
+4. Allow your Application to access Microsoft Defender ATP and assign it with the minimal set of permissions required to complete the integration.
 
    - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
@@ -65,18 +63,19 @@ This page explains how to create an AAD application, get an access token to Micr
 
    ![Image of API access and API selection](images/add-permission.png)
    
-   
+   ### Request API permissions
+
+   To determine which permission you need, please look at the **Permissions** section in the API you are interested to call. For instance:
+
+     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
+     - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
+
+   - In the following example we will use **'Read all alerts'** permission:
+
    - Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
 
    ![Image of API access and API selection](images/application-permissions.png)
 
-   **Important note**: You need to select the relevant permissions. 'Read All Alerts' is only an example!
-
-     For instance,
-
-     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-     - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
-     - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
 5. Click **Grant consent**
 
