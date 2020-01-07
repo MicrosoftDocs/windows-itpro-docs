@@ -129,7 +129,7 @@
 ##### [DeviceTvmSecureConfigurationAssessment](microsoft-defender-atp/advanced-hunting-tvm-configassessment-table.md)
 ##### [DeviceTvmSecureConfigurationAssessmentKB](microsoft-defender-atp/advanced-hunting-tvm-secureconfigkb-table.md)
 #### [Apply query best practices](microsoft-defender-atp/advanced-hunting-best-practices.md)
-#### [Stream advanced hunting events to Azure Event Hubs](microsoft-defender-atp/raw-data-export-event-hub.md)
+
 
 #### [Custom detections]()
 ##### [Understand custom detection rules](microsoft-defender-atp/overview-custom-detections.md)
@@ -436,7 +436,7 @@
 
 #### [Stream data using APIs]()
 ##### [Raw data streaming (preview)](microsoft-defender-atp/raw-data-export.md)
-##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub)
+##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
 ##### [Stream advanced hunting events to your storage account](microsoft-defender-atp/raw-data-export-storage.md)
 
 
