@@ -120,7 +120,9 @@ This page explains how to create an AAD application, get an access token to Micr
 
 ## Get an access token examples:
 
-For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+**Note:** to get access token on behalf of your customer, use the customer's tenant ID on the following token acquisitions.
+
+<br>For more details on AAD token, refer to [AAD tutorial](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### Using PowerShell
 
@@ -205,7 +207,8 @@ You will get an answer of the form:
 Sanity check to make sure you got a correct token:
 - Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
 - Validate you get a 'roles' claim with the desired permissions
-- In the screen shot below you can see a decoded token acquired from an Application with permissions to all of Microsoft Defender ATP's roles:
+- In the screen shot below you can see a decoded token acquired from an Application with multiple permissions to Microsoft Defender ATP:
+- The "tid" claim is the tenant ID the token belongs.
 
 ![Image of token validation](images/webapp-decoded-token.png)
 
