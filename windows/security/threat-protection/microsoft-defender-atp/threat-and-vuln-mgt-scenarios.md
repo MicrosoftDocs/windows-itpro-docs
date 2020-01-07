@@ -159,7 +159,7 @@ When an exception is created for a recommendation, the recommendation is no long
 6. Navigate to the **Remediation** page under the **Threat & Vulnerability Management** menu and click the **Exceptions** tab to view all your exceptions (current and past). 
 ![Screenshot of exception list of exceptions in the Remediation page](images/tvm-exception-list.png) 
 
-## Use Advanced hunting query to search for machines with High active alerts or critical CVE public exploit 
+## Use advanced hunting query to search for machines with High active alerts or critical CVE public exploit 
 
 1. Go to **Advanced hunting** from the left-hand navigation pane.
 
@@ -173,11 +173,11 @@ DeviceTvmSoftwareInventoryVulnerabilities
 | join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId 
 | where IsExploitAvailable == 1 and CvssScore >= 7
 | summarize NumOfVulnerabilities=dcount(CveId), 
-ComputerName=any(ComputerName) by MachineId 
-| join kind =inner(AlertEvents) on MachineId  
+DeviceName=any(DeviceName) by DeviceId 
+| join kind =inner(AlertEvents) on DeviceId  
 | summarize NumOfVulnerabilities=any(NumOfVulnerabilities), 
-ComputerName=any(ComputerName) by MachineId, AlertId 
-| project ComputerName, NumOfVulnerabilities, AlertId  
+DeviceName=any(DeviceName) by DeviceId, AlertId 
+| project DeviceName, NumOfVulnerabilities, AlertId  
 | order by NumOfVulnerabilities desc 
 
 ```
@@ -210,5 +210,5 @@ After you have identified which software and software versions are vulnerable du
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Advanced hunting overview](overview-hunting.md)
-- [All Advanced hunting tables](advanced-hunting-reference.md)
+- [All advanced hunting tables](advanced-hunting-reference.md)
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
