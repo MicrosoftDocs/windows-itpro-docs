@@ -160,9 +160,8 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
   <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
 
-  <!-- msxml3.dll pick correct version based on release you are supporting -->
-  <!-- msxml6.dll pick correct version based on release you are supporting -->     
-  <!-- jscript9.dll pick correct version based on release you are supporting -->
+  <!-- pick correct version of msxml3.dll, msxml6.dll, and jscript9.dll based on release you are supporting -->
+  <!-- the versions of these files in the 1903 release have this issue fixed, so they don’t need to be blocked -->
   <!-- RS1 Windows 1607
   <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.14393.2550"/>
   <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.14393.2550"/>
