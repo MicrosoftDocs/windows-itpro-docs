@@ -45,7 +45,7 @@ Process IDs (PIDs) are recycled in Windows and reused for new processes. On thei
 
 The following example query finds processes that access more than 10 IP addresses over port 445 (SMB), possibly scanning for file shares.
 
-```
+```kusto
 DeviceNetworkEvents
 | where RemotePort == 445 and Timestamp > ago(12h) and InitiatingProcessId !in (0, 4)
 | summarize RemoteIPCount=dcount(RemoteIP) by DeviceName, InitiatingProcessId, InitiatingProcessCreationTime, InitiatingProcessFileName
@@ -68,7 +68,7 @@ To create more durable queries using command lines, apply the following practice
 
 The following examples show various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:
 
-```
+```kusto
 // Non-durable query - do not use
 DeviceProcessEvents
 | where ProcessCommandLine == "net stop MpsSvc"

@@ -40,7 +40,7 @@ There are various ways to ensure more complex queries return these columns. For 
 
 The sample query below counts the number of unique machines (`DeviceId`) with antivirus detections and uses this count to find only the machines with more than five detections. To return the latest `Timestamp` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.
 
-```
+```kusto
 DeviceEvents
 | where Timestamp > ago(7d)
 | where ActionType == "AntivirusDetection"

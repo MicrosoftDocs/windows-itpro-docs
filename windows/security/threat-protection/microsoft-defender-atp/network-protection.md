@@ -56,7 +56,7 @@ You can query Microsoft Defender ATP data by using [Advanced hunting](https://do
 
 Here is an example query
 
-```PowerShell
+```kusto
 DeviceEvents
 | where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 ```
