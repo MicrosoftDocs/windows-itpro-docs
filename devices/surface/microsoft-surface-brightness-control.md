@@ -21,11 +21,10 @@ When deploying Surface devices in point of sale or other “always-on”
 kiosk scenarios, you can optimize power management using the new Surface
 Brightness Control app.
 
-Available for download with [Surface Tools for
-IT](https://www.microsoft.com/download/details.aspx?id=46703), Surface Brightness Control is
-designed to help reduce thermal load and lower the overall carbon
-footprint for deployed Surface devices. The tool automatically dims the screen when not in use and
-includes the following configuration options:
+Available for download with [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703).
+Surface Brightness Control is designed to help reduce thermal load and lower the overall carbon footprint for deployed Surface devices.
+If you plan to get only this tool from the download page, select the file **Surface_Brightness_Control_v1.16.137.0.msi** in the available list.
+The tool automatically dims the screen when not in use and includes the following configuration options:
 
 - Period of inactivity before dimming the display.
 

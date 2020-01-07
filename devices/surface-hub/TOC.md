@@ -7,6 +7,7 @@
 ### [Surface Hub 2S tech specs](surface-hub-2s-techspecs.md) 
 ### [Operating system essentials (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
 ### [Adjust Surface Hub 2S brightness, volume, and input](surface-hub-2s-onscreen-display.md)
+### [Use Microsoft Whiteboard on a Surface Hub](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d)
 
 ## Plan
 ### [Surface Hub 2S Site Readiness Guide](surface-hub-2s-site-readiness-guide.md) 
@@ -58,6 +59,7 @@
 ### [Operating system essentials (Surface Hub)](differences-between-surface-hub-and-windows-10-enterprise.md)
 ### [Technical information for 55” Microsoft Surface Hub](surface-hub-technical-55.md)
 ### [Technical information for 84” Microsoft Surface Hub](surface-hub-technical-84.md)
+### [Use Microsoft Whiteboard on a Surface Hub](https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d)
 
 ## Plan
 ### [Prepare your environment for Microsoft Surface Hub](prepare-your-environment-for-surface-hub.md)

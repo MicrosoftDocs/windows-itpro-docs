@@ -1,6 +1,6 @@
 ---
 title: Microsoft network server Server SPN target name validation level (Windows 10)
-description: Describes the best practices, location, and values, policy management and security considerations for the Microsoft network server Server SPN target name validation level security policy setting.
+description: Best practices, security considerations, and more for the security policy setting, Microsoft network server Server SPN target name validation level.
 ms.assetid: 18337f78-eb45-42fd-bdbd-f8cd02c3e154
 ms.reviewer: 
 ms.author: dansimp

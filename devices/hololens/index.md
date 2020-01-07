@@ -55,4 +55,4 @@ appliesto:
 ## Related resources
 
 * [Documentation for Holographic app development](https://developer.microsoft.com/windows/mixed-reality/development)
-* [HoloLens release notes](https://developer.microsoft.com/windows/mixed-reality/release_notes)
+* [HoloLens release notes](https://docs.microsoft.com/hololens/hololens-release-notes)

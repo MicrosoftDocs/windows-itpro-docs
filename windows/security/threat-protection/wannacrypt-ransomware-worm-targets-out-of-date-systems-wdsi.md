@@ -1,6 +1,6 @@
 ---
 title: WannaCrypt ransomware worm targets out-of-date systems
-description: In this blog, we provide an early analysis of the end-to-end ransomware attack. Please note this threat is still under investigation. The attack is still active, and there is a possibility that the attacker will attempt to react to our detection response.
+description: This is an early analysis of the WannaCrypt ransomware attack. Microsoft antimalware diagnostic data immediately picked up signs of this campaign in May 2017.
 keywords: wannacry, wannacrypt, wanna, ransomware
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security

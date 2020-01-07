@@ -1,7 +1,7 @@
 ---
 title: MiscEvents table in the advanced hunting schema
 description: Learn about antivirus, firewall, and other event types in the miscellaneous events (MiscEvents) table of the Advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10

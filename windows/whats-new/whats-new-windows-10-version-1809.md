@@ -162,7 +162,7 @@ Onboard supported versions of Windows machines so that they can send sensor data
 
 ## Cloud Clipboard
 
-Cloud clipboard helps users copy content between devices. It also manages the clipboard histroy so that you can paste your old copied data. You can access it by using **Windows+V**. Set up Cloud clipboard:
+Cloud clipboard helps users copy content between devices. It also manages the clipboard history so that you can paste your old copied data. You can access it by using **Windows+V**. Set up Cloud clipboard:
 
 1. Go to **Windows Settings** and select **Systems**.
 2. On the left menu, click on **Clipboard**.
