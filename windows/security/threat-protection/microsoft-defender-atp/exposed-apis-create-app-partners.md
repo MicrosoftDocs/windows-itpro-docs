@@ -67,12 +67,13 @@ The following steps with guide you how to create an AAD application, get an acce
 
    To determine which permission you need, please look at the **Permissions** section in the API you are interested to call. For instance:
 
-     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-     - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
+   - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
+   
+   - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
 
-   - In the following example we will use **'Read all alerts'** permission:
+   In the following example we will use **'Read all alerts'** permission:
 
-   - Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
+   Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
 
    ![Image of API access and API selection](images/application-permissions.png)
 
@@ -210,7 +211,7 @@ Sanity check to make sure you got a correct token:
 - Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
 - Validate you get a 'roles' claim with the desired permissions
 - In the screen shot below you can see a decoded token acquired from an Application with multiple permissions to Microsoft Defender ATP:
-- The "tid" claim is the tenant ID the token belongs.
+- The "tid" claim is the tenant ID the token belongs to.
 
 ![Image of token validation](images/webapp-decoded-token.png)
 
