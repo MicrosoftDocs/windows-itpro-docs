@@ -66,9 +66,6 @@ Here is an example of the request.
 GET https://api.securitycenter.windows.com/api/exposureScore
 ```
 
-[!include[Improve request performance](improve-request-performance.md)]
-
-
 **Response**
 
 Here is an example of the response.
