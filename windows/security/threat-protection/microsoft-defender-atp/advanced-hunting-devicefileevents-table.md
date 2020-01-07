@@ -54,7 +54,7 @@ For information on other tables in the advanced hunting schema, see  [the advanc
 | `InitiatingProcessId` | int | Process ID (PID) of the process that initiated the event |
 | `InitiatingProcessCommandLine` | string | Command line used to run the process that initiated the event |
 | `InitiatingProcessCreationTime` | datetime | Date and time when the process that initiated the event was started |
-| `InitiatingProcessIntegrityLevel` | string` | integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources |
+| `InitiatingProcessIntegrityLevel` | string | integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources |
 | `InitiatingProcessTokenElevation` | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
 | `InitiatingProcessParentId` | int | Process ID (PID) of the parent process that spawned the process responsible for the event |
 | `InitiatingProcessParentFileName` | string | Name of the parent process that spawned the process responsible for the event |
