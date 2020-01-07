@@ -26,7 +26,7 @@ ms.date: 10/08/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The `DeviceFileEvents` table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about file creation, modification, and other file system events. Use this reference to construct queries that return information from the table.
+The `DeviceFileEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about file creation, modification, and other file system events. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the advanced hunting schema, see  [the advanced hunting schema reference](advanced-hunting-schema-reference.md).
 
@@ -66,7 +66,7 @@ For information on other tables in the advanced hunting schema, see  [the advanc
 | `RequestAccountName` | string | User name of account used to remotely initiate the activity |
 | `RequestAccountDomain` | string | Domain of the account used to remotely initiate the activity |
 | `RequestAccountSid` | string | Security Identifier (SID) of the account to remotely initiate the activity |
-| `ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
+| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | `SensitivityLabel` | string | Label applied to an email, file, or other content to classify it for information protection |
 | `SensitivitySubLabel` | string | Sublabel applied to an email, file, or other content to classify it for information protection; sensitivity sublabels are grouped under sensitivity labels but are treated independently |

@@ -27,7 +27,7 @@ ms.date: 10/08/2019
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-The [Advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about machines and other entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the advanced hunting schema.
+The [advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about machines and other entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the advanced hunting schema.
 
 ## Schema tables
 

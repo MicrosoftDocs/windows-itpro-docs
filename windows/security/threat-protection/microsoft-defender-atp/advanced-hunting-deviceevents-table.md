@@ -26,7 +26,7 @@ ms.date: 10/08/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The miscellaneous device events or `DeviceEvents` table in the [Advanced hunting](advanced-hunting-overview.md) schema contains information about various event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from the table.
+The miscellaneous device events or `DeviceEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about various event types, including events triggered by security controls, such as Windows Defender Antivirus and exploit protection. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting schema reference](advanced-hunting-schema-reference.md).
 
@@ -42,7 +42,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `SHA256` | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated—use the SHA1 column when available |
 | `MD5` | string | MD5 hash of the file that the recorded action was applied to |
 | `AccountDomain` | string | Domain of the account |
-| `AccountName |string | User name of the account |
+| `AccountName` |string | User name of the account |
 | `AccountSid` | string | Security Identifier (SID) of the account |
 | `RemoteUrl` | string | URL or fully qualified domain name (FQDN) that was being connected to |
 | `RemoteDeviceName` | string | Name of the machine that performed a remote operation on the affected machine. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information |
