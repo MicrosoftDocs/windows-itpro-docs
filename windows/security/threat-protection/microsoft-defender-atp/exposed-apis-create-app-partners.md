@@ -99,11 +99,11 @@ The following steps with guide you how to create an AAD application, get an acce
 
 8. Add the application to your customer's tenant.
 
-    You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with Microsoft Defender ATP application on behalf of your customer.
+    You need your application to be approved in each customer tenant where you intend to use it. This is because your application interacts with Microsoft Defender ATP application on behalf of your customer.
 
-    You (or your customer if you don't have Global Admin user in your customer's tenant) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
+    A user with **Global Administrator** from your customer's tenant need to click the consent link and approve your application.
 
-    Consent link is of the form: 
+    Consent link is of the form:
 
     ```
     https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
@@ -115,6 +115,7 @@ The following steps with guide you how to create an AAD application, get an acce
 
 	![Image of consent](images/app-consent-partner.png)
 
+	In addition, you will need to ask your customer for their tenant ID and save it for future use when acquiring the token.
 
 - **Done!** You have successfully registered an application! 
 - See examples below for token acquisition and validation.
