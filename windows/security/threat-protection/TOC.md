@@ -137,8 +137,6 @@
 
 ### [Management and APIs]()
 #### [Overview of management and APIs](microsoft-defender-atp/management-apis.md)
-#### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
-#### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
 
 ### [Integrations]()
 #### [Microsoft Defender ATP integrations](microsoft-defender-atp/threat-protection-integration.md)
@@ -436,21 +434,14 @@
 ####### [Get user related alerts](microsoft-defender-atp/get-user-related-alerts.md)
 ####### [Get user related machines](microsoft-defender-atp/get-user-related-machines.md)
 
-##### [How to use APIs - Samples]()
-###### [Microsoft Flow](microsoft-defender-atp/api-microsoft-flow.md)
-###### [Power BI](microsoft-defender-atp/api-power-bi.md)
-###### [Advanced Hunting using Python](microsoft-defender-atp/run-advanced-query-sample-python.md)
-###### [Advanced Hunting using PowerShell](microsoft-defender-atp/run-advanced-query-sample-powershell.md)
-###### [Using OData Queries](microsoft-defender-atp/exposed-apis-odata-samples.md)
-
-#### [Windows updates (KB) info]()
-##### [Get KbInfo collection](microsoft-defender-atp/get-kbinfo-collection.md)
-
-#### [Common Vulnerabilities and Exposures (CVE) to KB map]()
-##### [Get CVE-KB map](microsoft-defender-atp/get-cvekbmap-collection.md)
+#### [Stream data using APIs]()
+##### [Raw data streaming (preview)](microsoft-defender-atp/raw-data-export.md)
+##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub)
+##### [Stream advanced hunting events to your storage account](microsoft-defender-atp/raw-data-export-storage.md)
 
 
 #### [Pull detections to your SIEM tools]()
+##### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
 ##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
 ##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
 ##### [Configure Splunk to pull detections](microsoft-defender-atp/configure-splunk.md)
@@ -458,6 +449,16 @@
 ##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
+
+
+##### [How to use APIs - Samples]()
+###### [Microsoft Flow](microsoft-defender-atp/api-microsoft-flow.md)
+###### [Power BI](microsoft-defender-atp/api-power-bi.md)
+###### [Advanced Hunting using Python](microsoft-defender-atp/run-advanced-query-sample-python.md)
+###### [Advanced Hunting using PowerShell](microsoft-defender-atp/run-advanced-query-sample-powershell.md)
+###### [Using OData Queries](microsoft-defender-atp/exposed-apis-odata-samples.md)
+
+
 
 #### [Reporting]()
 ##### [Power BI - How to use API - Samples](microsoft-defender-atp/api-power-bi.md)
@@ -485,8 +486,11 @@
 ###### [Using machine groups](microsoft-defender-atp/machine-groups.md)
 ###### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
 
-#### [Configure managed security service provider (MSSP) support](microsoft-defender-atp/configure-mssp-support.md)
 
+
+### [Partner integration]()
+#### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
+##### [Configure managed security service provider (MSSP) support](microsoft-defender-atp/configure-mssp-support.md)
 
 ### [Configure Microsoft threat protection integration]()
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
