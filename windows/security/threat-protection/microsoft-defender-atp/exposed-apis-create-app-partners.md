@@ -152,7 +152,7 @@ return $token
 
 ### Using C#:
 
->The below code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8
+>The below code was tested with Nuget Microsoft.IdentityModel.Clients.ActiveDirectory
 
 - Create a new Console Application
 - Install Nuget [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
