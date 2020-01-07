@@ -24,7 +24,7 @@ appliesto:
 
 ### January Update - build 18362.1043
 
-- Stability improvements for exclusive apps when working with HoloLens 2 emulator.
+- Stability improvements for exclusive apps when working with the HoloLens 2 emulator.
 
 ### December Update - build 18362.1042
 
