@@ -48,13 +48,14 @@ This page explains how to create an AAD application, get an access token to Micr
 
 3. In the registration form:
 
-	![Image of Microsoft Azure partner application registration](images/atp-azure-new-app2.png)
+	- Choose a name for your application.
 
-	-Choose a name for your application.
+	- Supported account types - accounts in any organizational directory.
 
-	-Supported account types - accounts in any organizational directory.
+	- Redirect URI - type: Web, URI: https://portal.azure.com
 
-	-Redirect URI - type: Web, URI: https://portal.azure.com
+	![Image of Microsoft Azure partner application registration](images/atp-api-new-app-partner.png)
+
 
 4. Allow your Application to access Microsoft Defender ATP and assign it **'Read all alerts'** permission:
 
@@ -63,7 +64,8 @@ This page explains how to create an AAD application, get an access token to Micr
    - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
    ![Image of API access and API selection](images/add-permission.png)
-
+   
+   
    - Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
 
    ![Image of API access and API selection](images/application-permissions.png)
