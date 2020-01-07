@@ -17,36 +17,44 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Create an app to access Microsoft Defender ATP without a user
+# Partner access through Microsoft Defender ATP APIs
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This page describes how to create an application to get programmatic access to Microsoft Defender ATP without a user.
-
-If you need programmatic access Microsoft Defender ATP on behalf of a user, see [Get access with user context](exposed-apis-create-app-nativeapp.md)
-
-If you are not sure which access you need, see [Get started](apis-intro.md).
+This page describes how to create an AAD application to get programmatic access to Microsoft Defender ATP on behalf of your customers.
 
 Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
-- Create an AAD application
-- Get an access token using this application
-- Use the token to access Microsoft Defender ATP API
+- Create a **multi-tenant** AAD application.
+- Get authorized(consent) by your customer administrator for your application to access Microsoft Defender ATP resources it needs.
+- Get an access token using this application.
+- Use the token to access Microsoft Defender ATP API.
 
 This page explains how to create an AAD application, get an access token to Microsoft Defender ATP and validate the token.
+<br>To call Microsoft Defender ATP API on behalf of your customer, you must register an application to acquire an access token from the Microsoft identity platform.
+<br>When calling the Microsoft Defender ATP APIs, each request from your application will contain your application identifier and the customer tenant you are calling on behalf of, more details below.
+<br>**To become an official partner of Microsoft Defender ATP and appear in our partner page, you will provide us with your application identifier.**
 
-## Create an app
+## Create the multi-tenant app
 
-1. Log on to [Azure](https://portal.azure.com) with user that has **Global Administrator** role.
+1. Log on to your [Azure tenant](https://portal.azure.com) with user that has **Global Administrator** role.
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
 
    ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
 
-3. In the registration form, choose a name for your application and then click **Register**.
+3. In the registration form:
+
+	![Image of Microsoft Azure partner application registration](images/atp-azure-new-app2.png)
+
+	-Choose a name for your application.
+
+	-Supported account types - accounts in any organizational directory.
+
+	-Redirect URI - type: Web, URI: https://portal.azure.com
 
 4. Allow your Application to access Microsoft Defender ATP and assign it **'Read all alerts'** permission:
 
@@ -82,7 +90,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
     ![Image of create app key](images/webapp-create-key2.png)
 
-7. Write down your application ID and your tenant ID:
+7. Write down your application ID:
 
    - On your application page, go to **Overview** and copy the following:
 
