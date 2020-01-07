@@ -19,16 +19,16 @@ manager: kaushika
 # Advanced troubleshooting for Event ID 41: "The system has rebooted without cleanly shutting down first"
 
 > **Home users**
-> This article is intended for use by support agents and IT professionals. If you're looking for more information about Stop code error messages, please visit [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
+> This article is intended for use by support agents and IT professionals. If you're looking for more information about blue screen error messages, please visit [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
 
-The preferred way to shut down Windows is to select **Start**, and then select an option to turn off or shut down the computer. By using this standard method, the operating system closes all files and notifies the running services and applications so that they can write any unsaveddata to disk and flush any active caches.
+The preferred way to shut down Windows is to select **Start**, and then select an option to turn off or shut down the computer. When you use this standard method, the operating system closes all files and notifies the running services and applications so that they can write any unsaved data to disk and flush any active caches.
 
-If your computer shuts down unexpectedly, Windows logs Event ID 41 entry that resembles the following the next time that the computer starts:
+If your computer shuts down unexpectedly, Windows logs Event ID 41 the next time that the computer starts. The event text resembles the following:
 
 > Event ID: 41  
 > Description: The system has rebooted without cleanly shutting down first.
 
-This event indicates that some unexpected activity prevented Windows from shutting down correctly. Such a shutdown may be caused by an interruption in the power supply or by a Stop error. If feasible, Windows records any error codes as it shuts down. During the [kernel phase](advanced-troubleshooting-boot-problems.md#kernel-phase) of the next Windows startup, Windows checks for these codes and includes any existing codes in the event data of Event ID 41.
+This event indicates that some unexpected activity prevented Windows from shutting down correctly. Such a shutdown might be caused by an interruption in the power supply or by a Stop error. If feasible, Windows records any error codes as it shuts down. During the [kernel phase](advanced-troubleshooting-boot-problems.md#kernel-phase) of the next Windows startup, Windows checks for these codes and includes any existing codes in the event data of Event ID 41.
 
 > EventData  
 > BugcheckCode 159  
@@ -41,13 +41,13 @@ This event indicates that some unexpected activity prevented Windows from shutti
 
 ## How to use Event ID 41 when you troubleshoot an unexpected shutdown or restart
 
-By itself, Event ID 41 might not contain sufficient information to explicitly define what occured. Typically, you have to also consider what was occuring at the time of the unexpected shutdown (for example, the power supply failed). Use the information in this article to identify a troubleshooting approach that is appropriate for your circumstances:
+By itself, Event ID 41 might not contain sufficient information to explicitly define what occurred. Typically, you have to also consider what was occurring at the time of the unexpected shutdown (for example, the power supply failed). Use the information in this article to identify a troubleshooting approach that is appropriate for your circumstances:
 
 - [Scenario 1](#scen1): The computer restarts because of a Stop error, and Event ID 41 contains a Stop error (bug check) code
 - [Scenario 2](#scen2): The computer restarts because you pressed and held the power button
-- [Scenario 3](#scen3): The computer is unresponsive or randomly restarts, and Event ID 41 is not recorded or the Event ID 41 entry lists error code values of zero
+- [Scenario 3](#scen3): The computer is unresponsive or randomly restarts, and Event ID 41 is not logged or the Event ID 41 entry lists error code values of zero
 
-### <a name="scen1"></a>Scenario 1: The computer restarts because of a Stop error, and Event ID 41 contains a Stop error code
+### <a name="scen1"></a>Scenario 1: The computer restarts because of a Stop error, and Event ID 41 contains a Stop error (bug check) code
 
 When a computer shuts down or restarts because of a Stop error, Windows includes the Stop error data in Event ID 41 as part of the additional event data. This information includes the Stop error code (also called a bug check code), as shown in the following example:
 
@@ -59,7 +59,7 @@ When a computer shuts down or restarts because of a Stop error, Windows includes
 > BugcheckParameter4 0xfffffa800208c010  
 
 > [!NOTE]  
-> Event ID 41 includes the bug check code in decimal format. Most documentation that describes Stop error codes refer to the codes as hexadecimal values instead of decimal values. To convert decimal to hexadecimal, follow these steps:
+> Event ID 41 includes the bug check code in decimal format. Most documentation that describes bug check codes refers to the codes as hexadecimal values instead of decimal values. To convert decimal to hexadecimal, follow these steps:
 >  
 > 1. Select **Start**, type **calc** in the **Search** box, and then select **Calculator**.
 > 1. In the **Calculator** window, select **View** > **Programmer**.
@@ -68,19 +68,19 @@ When a computer shuts down or restarts because of a Stop error, Windows includes
 > 1. On the left side of the calculator, select **Hex**.  
 > The value that the calculator displays is now the hexadecimal code.
 >  
-> When you convert a bug check code to hexadecimal format, verify that it has eight digits following the “0x” designation (that is, the part of the code after the “x” includes enough zeros to fill out eight digits). For example, 0x9F is typically documented as 0x0000009f, and 0xA is documented as 0x0000000A. In the case of the example event data in this article, "159" converts to 0x0000009f.  
+> When you convert a bug check code to hexadecimal format, verify that the “0x” designation is followed by eight digits (that is, the part of the code after the “x” includes enough zeros to fill out eight digits). For example, 0x9F is typically documented as 0x0000009f, and 0xA is documented as 0x0000000A. In the case of the example event data in this article, "159" converts to 0x0000009f.  
 
 After you identify the hexadecimal value, use the following references to continue troubleshooting:
 
 - [Advanced troubleshooting for Stop error or blue screen error issue](troubleshoot-stop-errors.md).
-- [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2). (This page lists links to documentation for different bug check codes.)
+- [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2). This page lists links to documentation for different bug check codes.
 - [How to Debug Kernel Mode Blue Screen Crashes (for beginners)](https://blogs.technet.microsoft.com/askcore/2008/10/31/how-to-debug-kernel-mode-blue-screen-crashes-for-beginners/).
 
 ### <a name="scen2"></a>Scenario 2: The computer restarts because you pressed and held the power button
 
-Because this method of restarting the computer interferes with the Windows shutdown operation, we recommend that you use this method only if you have no alternative. For example, you might have to use this approach if your computer is not responding. When you restart the computer by pressing and holding the power button, Event ID 41 occurs and includes a non-zero value for the **PowerButtonTimestamp** entry.
+Because this method of restarting the computer interferes with the Windows shutdown operation, we recommend that you use this method only if you have no alternative. For example, you might have to use this approach if your computer is not responding. When you restart the computer by pressing and holding the power button, the computer logs an Event ID 41 that includes a non-zero value for the **PowerButtonTimestamp** entry.
 
-For help to troubleshoot an unresponsive computer, see [Windows Help](https://support.microsoft.com/hub/4338813/windows-help?os=windows-10). Consider searching for assistance by using keywords such as "hang," "responding," or "blank screen."
+For help when troubleshooting an unresponsive computer, see [Windows Help](https://support.microsoft.com/hub/4338813/windows-help?os=windows-10). Consider searching for assistance by using keywords such as "hang," "responding," or "blank screen."
 
 ### <a name="scen3"></a>Scenario 3: The computer is unresponsive or randomly restarts, and Event ID 41 is not recorded or the Event ID 41 entry or lists error code values of zero
 
