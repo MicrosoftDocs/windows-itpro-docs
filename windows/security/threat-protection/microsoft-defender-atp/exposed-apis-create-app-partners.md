@@ -94,23 +94,13 @@ This page explains how to create an AAD application, get an access token to Micr
 
    - On your application page, go to **Overview** and copy the following:
 
-   ![Image of created app id](images/app-and-tenant-ids.png)
+   ![Image of created app id](images/app-id.png)
 
-8. **For Microsoft Defender ATP Partners only** - Set your application to be multi-tenanted (available in all tenants after consent)
-
-    This is **required** for 3rd party applications (for example, if you create an application that is intended to run in multiple customers tenant).
-
-    This is **not required** if you create a service that you want to run in your tenant only (i.e. if you create an application for your own usage that will only interact with your own data)
-
-    - Go to **Authentication** > Add https://portal.azure.com as **Redirect URI**.
-
-    - On the bottom of the page, under **Supported account types**, mark **Accounts in any organizational directory**
-
-    - Application consent for your multi-tenant Application:
+8. Add the application to your customer's tenant.
 
     You need your application to be approved in each tenant where you intend to use it. This is because your application interacts with Microsoft Defender ATP application on behalf of your customer.
 
-    You (or your customer if you are writing a 3rd party application) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
+    You (or your customer if you don't have Global Admin user in your customer's tenant) need to click the consent link and approve your application. The consent should be done with a user who has admin privileges in the active directory.
 
     Consent link is of the form: 
 
@@ -118,7 +108,11 @@ This page explains how to create an AAD application, get an access token to Micr
     https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
     ```
 
-    where 00000000-0000-0000-0000-000000000000 should be replaced with your Application ID
+    Where 00000000-0000-0000-0000-000000000000 should be replaced with your Application ID
+
+	After clicking on the consent link, login with the Global Administrator of the customer's tenant and consent the application.
+
+	![Image of consent](images/app-consent-partner.png)
 
 
 - **Done!** You have successfully registered an application! 
