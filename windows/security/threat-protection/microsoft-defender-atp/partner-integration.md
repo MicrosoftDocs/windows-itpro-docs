@@ -55,7 +55,8 @@ support Security is recognized as a key component in running an enterprise, howe
 
 Microsoft Defender ATP adds support for this scenario and to allow MSSPs to take the following actions: 
 - Get access to MSSP customer's Microsoft Defender Security Center portal
-- Get email notifications • Fetch alerts through security information and event management (SIEM) tools and the rich set of programmatic APIs and 
+- Get email notifications 
+- Fetch alerts through security information and event management (SIEM) tools and the rich set of programmatic APIs and 
 - Use the streaming API to receive real-time event and alerts from instances as they occur within a single data stream, providing a low latency, high throughput delivery mechanism
 
 
