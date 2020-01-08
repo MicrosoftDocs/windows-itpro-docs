@@ -36,7 +36,7 @@ Method |Return Type |Description
 ## Properties
 Property |	Type	|	Description
 :---|:---|:---
-id | String | 
+id | String | Software ID
 Name | String | 
 Vendor | String | 
 Weaknesses | Long | 
