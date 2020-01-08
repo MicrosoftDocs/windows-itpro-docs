@@ -362,12 +362,12 @@
 #### [Microsoft Defender ATP API]()
 ##### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
 ##### [Get started with Microsoft Defender ATP APIs]()
-###### [Introduction](microsoft-defender-atp/apis-intro.md)
-###### [Hello World](microsoft-defender-atp/api-hello-world.md)
+###### [Access the Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
 ###### [Get access with application context](microsoft-defender-atp/exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](microsoft-defender-atp/exposed-apis-create-app-nativeapp.md)
+###### [Hello World](microsoft-defender-atp/api-hello-world.md)
 
-##### [APIs]()
+##### [Investigation, response, and entities APIs]()
 ###### [Supported Microsoft Defender ATP APIs](microsoft-defender-atp/exposed-apis-list.md)
 ###### [Advanced Hunting](microsoft-defender-atp/run-advanced-query-api.md)
 
@@ -434,22 +434,21 @@
 ####### [Get user related alerts](microsoft-defender-atp/get-user-related-alerts.md)
 ####### [Get user related machines](microsoft-defender-atp/get-user-related-machines.md)
 
-#### [Stream data using APIs]()
-##### [Raw data streaming (preview)](microsoft-defender-atp/raw-data-export.md)
-##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
-##### [Stream advanced hunting events to your storage account](microsoft-defender-atp/raw-data-export-storage.md)
+##### [Stream data using APIs]()
+###### [Raw data streaming (preview)](microsoft-defender-atp/raw-data-export.md)
+###### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
+###### [Stream advanced hunting events to your storage account](microsoft-defender-atp/raw-data-export-storage.md)
+ 
 
-
-#### [Pull detections to your SIEM tools]()
-##### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
-##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
-##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
-##### [Configure Splunk to pull detections](microsoft-defender-atp/configure-splunk.md)
-##### [Configure HP ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
-##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
-##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
-##### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
-
+##### [Pull detections to your SIEM tools]()
+###### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
+###### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
+###### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
+###### [Configure Splunk to pull detections](microsoft-defender-atp/configure-splunk.md)
+###### [Configure HP ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
+###### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
+###### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
+###### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
 
 ##### [How to use APIs - Samples]()
 ###### [Microsoft Flow](microsoft-defender-atp/api-microsoft-flow.md)
@@ -457,8 +456,6 @@
 ###### [Advanced Hunting using Python](microsoft-defender-atp/run-advanced-query-sample-python.md)
 ###### [Advanced Hunting using PowerShell](microsoft-defender-atp/run-advanced-query-sample-powershell.md)
 ###### [Using OData Queries](microsoft-defender-atp/exposed-apis-odata-samples.md)
-
-
 
 #### [Reporting]()
 ##### [Power BI - How to use API - Samples](microsoft-defender-atp/api-power-bi.md)
@@ -488,7 +485,8 @@
 
 
 
-### [Partner integration]()
+### [Partner integration opportunities]()
+#### [Technical integrations](microsoft-defender-atp/)
 #### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
 ##### [Configure managed security service provider (MSSP) support](microsoft-defender-atp/configure-mssp-support.md)
 

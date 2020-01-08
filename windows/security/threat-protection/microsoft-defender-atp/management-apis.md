@@ -55,7 +55,7 @@ IMAGE 2:
 ### Authentication and authorization
 Accessing Microsoft Defender ATP APIs is granted in accordance with the service users and permissions model. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code). 
 
-For services, the Azure Active Directory (Azure AD) application model is applied where the AAD Global Admin grants the permissions to the application. Any change of the application “manifested” permissions will require Global Admin Consent. 
+For services, the Azure Active Directory (Azure AD) application model is applied where the AAD Global Admin grants the permissions to the application. Any change of the application "manifested" permissions will require Global Admin Consent. 
 
 ### Investigation API
 You can use the APIs to investigate entities such as machine, user, and file as well as discrete events (for example, process creation and file creation). For more information see, [Supported APIs](exposed-apis-list.md).
@@ -68,9 +68,8 @@ Take actions on machine such as isolate machine from the network, quarantine fil
 
 Indicator matching is essential feature available in Microsoft Defender ATP that gives SecOps the ability to create indicators that define the detection, prevention, and exclusion of entities. For more information see [Indicator resource type](ti-indicator.md).
 
-When certain conditions that you set are met, you can initiate automated response using the APIs.
+You can initiate automated investigation on a machine using APIs.
 
-EFRAT, PLEASE KINDLY CHECK IF THE ABOVE STATEMENT ABOUT AUTO-IR SHOULD BE INCLUDED, AND IF YES - THAT IT'S ACCURATE. THANKS!
 
 ### Entities API
 Run API calls on the supported entities. You can create calls such as get alerts, create indicators, and more. 
@@ -89,28 +88,8 @@ It enables ingesting complete event data from the Microsoft Defender ATP platfor
 Microsoft Defender ATP supports SIEM integration through a variety of methods - specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management. For more information see, [SIEM integration](enable-siem-integration.md)
 
 ## Related topics
-- [](apis-intro.md)
+- [Access the Microsoft Defender Advanced Threat Protection APIs ](apis-intro.md)
 - [Supported APIs](exposed-apis-list.md)
-- [How]
 
------------------------------
-
-
-- It supports integration with a number of security information and event management (SIEM) solutions and also exposes APIs to fully support pulling all the alerts and detection information into any SIEM solution. 
-- It supports a rich set of application programming interface (APIs) providing flexibility for those who are already heavily invested in data enrichment and automation:
-   - Enriching events coming from other security systems with foot print or prevalence information
-   - Triggering file or machine level response actions through APIs
-   - Keeping systems in-sync such as importing machine tags from asset management systems into Microsoft Defender ATP, synchronize alerts and incidents status cross ticketing systems with Microsoft Defender ATP.
-
-
-
-
-## Related topics
-- [Onboard machines](onboard-configure.md)
-- [Manage indicators](manage-indicators.md)
-- [Microsoft Defender ATP Public API](apis-intro.md)
-- [Pull alerts to your SIEM tools](configure-siem.md)
-- [Create and build Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
-- [Role-based access control](rbac.md)
 
 
