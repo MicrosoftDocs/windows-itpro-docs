@@ -210,7 +210,7 @@ You will get an answer of the form:
 Sanity check to make sure you got a correct token:
 - Copy/paste into [JWT](https://jwt.ms) the token you get in the previous step in order to decode it
 - Validate you get a 'roles' claim with the desired permissions
-- In the screen shot below you can see a decoded token acquired from an Application with multiple permissions to Microsoft Defender ATP:
+- In the screenshot below, you can see a decoded token acquired from an Application with multiple permissions to Microsoft Defender ATP:
 - The "tid" claim is the tenant ID the token belongs to.
 
 ![Image of token validation](images/webapp-decoded-token.png)
