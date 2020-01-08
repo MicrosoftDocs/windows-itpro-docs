@@ -47,7 +47,7 @@ Enable security information and event management (SIEM) integration so you can p
 
     > [!WARNING]
     >The client secret is only displayed once. Make sure you keep a copy of it in a safe place.<br>
-     For more information about getting a new secret see, [Learn how to get a new secret](troubleshoot-custom-ti.md#learn-how-to-get-a-new-client-secret).
+     
 
     ![Image of SIEM integration from Settings menu](images/siem_details.png)
 

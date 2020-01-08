@@ -2,7 +2,7 @@
 title: Windows Autopilot requirements
 ms.reviewer: 
 manager: laurawi
-description: Windows Autopilot deployment
+description: Inform yourself about software, networking, licensing, and configuration requirements for Windows Autopilot deployment.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy

@@ -37,7 +37,8 @@
           "depot_name": "Win.internet-explorer",
           "folder_relative_path_in_docset": "./"
         }
-      }
+      },
+      "titleSuffix": "Internet Explorer"
     },
     "externalReference": [],
     "template": "op.html",

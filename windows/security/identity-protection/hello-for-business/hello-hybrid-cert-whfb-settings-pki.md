@@ -151,7 +151,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin eq
 
 Sign-in to an **AD FS Windows Server 2016** computer with _Enterprise Admin_ equivalent credentials.
 1. Open an elevated command prompt.
-2. Run `certutil -dsTemplate WHFBAuthentication,msPKI-Private-Key-Flag,+CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY`
+2. Run `certutil -dsTemplate WHFBAuthentication msPKI-Private-Key-Flag +CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY`
 
 > [!NOTE]
 > If you gave your Windows Hello for Business Authentication certificate template a different name, then replace **WHFBAuthentication** in the above command with the name of your certificate template. It's important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on our Windows Server 2012 or later certificate authority.

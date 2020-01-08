@@ -1,6 +1,6 @@
 ---
 title: List alerts API
-description: Retrieves top recent alerts.
+description: Retrieve a collection of recent Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) alerts.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -78,7 +78,7 @@ Here is an example of the request.
 GET https://api.securitycenter.windows.com/api/alerts
 ```
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
 **Response**

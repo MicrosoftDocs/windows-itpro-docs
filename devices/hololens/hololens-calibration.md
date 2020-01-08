@@ -32,6 +32,8 @@ HoloLens 2 prompts a user to calibrate the device under the following circumstan
 - The user is using the device for the first time
 - The user previously opted out of the calibration process
 - The calibration process did not succeed the last time the user used the device
+- The user has deleted their calibration profiles
+- The visor is raised and the lowered and any of the above circumstances apply (this may be disabled in **Settings > System > Calibration**.)
 
 ![Calibration prompt](./images/07-et-adjust-for-your-eyes.png)
 
@@ -97,7 +99,7 @@ You can also disable the calibration prompt by following these steps:
 1. Turn off **When a new person uses this HoloLens, automatically ask to run eye calibration**.
 
 > [!IMPORTANT]
-> Please understand that this setting may adversely affect hologram rendering quality and comfort.
+> This setting may adversely affect hologram rendering quality and comfort.  When you turn off this setting, features that depend on eye tracking (such as text scrolling) no longer work in immersive applications.
 
 ### HoloLens 2 eye-tracking technology
 

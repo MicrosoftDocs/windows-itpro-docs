@@ -23,7 +23,7 @@ ms.topic: reference
 -   Windows 10
 -   Windows 10 Mobile
 
-Windows 10 includes the following new policies for management. [Download the complete set of Administrative Template (.admx) files for Windows 10](https://www.microsoft.com/download/details.aspx?id=56121).
+Windows 10 includes the following new policies for management. [Download the complete set of Administrative Template (.admx) files for Windows 10](https://www.microsoft.com/download/100591).
 
 
 ## New Group Policy settings in Windows 10, version 1809
@@ -493,7 +493,6 @@ No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=
 
 
  
-
 
 
 

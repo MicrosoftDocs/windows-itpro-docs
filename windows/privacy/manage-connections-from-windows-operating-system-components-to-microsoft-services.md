@@ -1,6 +1,6 @@
 --- 
 title: Manage connections from Windows 10 operating system components to Microsoft services
-description: If you want to minimize connections from Windows to Microsoft services, or configure particular privacy settings, this article covers the settings that you could consider.
+description: Learn how to minimize connections from Windows to Microsoft services, and configure particular privacy settings related to these connections.
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
 ms.reviewer: 
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
@@ -1413,7 +1413,11 @@ To turn off Inking & Typing data collection (note: there is no Group Policy for 
 
   -or-
 
-- Set **RestrictImplicitTextCollection** registry REG_DWORD setting in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\InputPersonalization** to a **value of 1 (one)**
+- Set **RestrictImplicitTextCollection** registry REG_DWORD setting in **HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization** to a **value of 1 (one)**
+
+  -and-
+ 
+- Set **RestrictImplicitInkCollection** registry REG_DWORD setting in **HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization** to a **value of 1 (one)**
 
 
 ### <a href="" id="bkmk-act-history"></a>18.22 Activity History

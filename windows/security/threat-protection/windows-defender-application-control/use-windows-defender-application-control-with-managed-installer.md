@@ -1,6 +1,6 @@
 ---
 title: Authorize apps deployed with a WDAC managed installer (Windows 10)
-description: Explains how you can use a managed installer to automatically authorize applications deployed and installed by a designated software distribution solution, such as System Center Configuration Manager. 
+description: Learn how to use a managed installer to automatically authorize apps added by  a designated software distribution solution, such as SCCM. 
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10

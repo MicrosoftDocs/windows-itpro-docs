@@ -1,6 +1,6 @@
 ---
 title: UAC Run all administrators in Admin Approval Mode (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the User Account Control Run all administrators in Admin Approval Mode security policy setting.
+description: Learn about best practices, security considerations and more for the security policy setting, User Account Control Run all administrators in Admin Approval Mode.
 ms.assetid: b838c561-7bfc-41ef-a7a5-55857259c7bf
 ms.reviewer: 
 ms.author: dansimp

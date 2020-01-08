@@ -106,6 +106,14 @@ The Advanced Recovery Companion is a new app in Microsoft Store restore the oper
 5. On the **Device info** page, select **Install software** to install the default package. (If you have a Full Flash Update (FFU) image that you want to install instead, select **Manual package selection**.)
 6. Software installation will begin. Do not use the device or disconnect the cable during installation. When you see the **Installation finished** page, you can disconnect and use your device.
 
+>[!TIP]
+>In the event that a HoloLens 2 gets into a state where Advanced Recovery Companion cannot recognize the device, and it does not boot, try forcing the device into Flashing Mode and recovering it with Advanced Recovery Companion:
+
+1.	Connect the HoloLens 2 to a PC with Advanced Recovery Companion installed.
+1.	Press and hold the **Volume Up and Power buttons** until the device reboots.  Release the Power button, but continue to hold the Volume Up button until the third LED is lit. It will the the only lit LED.
+   1.	The device should be visible in **Device Manager** as a **Microsoft HoloLens Recovery** device:
+1.	Launch Advanced Recovery Companion, and follow the on-screen prompts to reflash the OS to the HoloLens 2.
+
 ### HoloLens (1st gen)
 
 If necessary, you can install a completely new operating system on your HoloLens (1st gen) with the Windows Device Recovery Tool.
@@ -116,7 +124,7 @@ To use the tool, you’ll need a computer running Windows 10 or later, with at l
 
 To recover your HoloLens
 
-1. Download and install the [Windows Device Recovery Tool](https://dev.azure.com/ContentIdea/ContentIdea/_queries/query/8a004dbe-73f8-4a32-94bc-368fc2f2a895/) on your computer.
+1. Download and install the [Windows Device Recovery Tool](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq) on your computer.
 1. Connect the HoloLens (1st gen) to your computer using the Micro USB cable that came with your HoloLens.
 1. Run the Windows Device Recovery Tool and follow the instructions.
 

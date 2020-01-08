@@ -30,7 +30,6 @@ Surface Hub 2S is an all-in-one digital interactive whiteboard, meetings platfor
                         <p><a href="https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Behind-the-design-Surface-Hub-2S/ba-p/464099" target="_blank">Behind the design: Surface Hub 2S</a></p>
                         <p><a href="surface-hub-2s-whats-new.md">What's new in Surface Hub 2S</a></p>
                         <p><a href="differences-between-surface-hub-and-windows-10-enterprise.md">Operating system essentials</a></p>
-                        <p><a href="https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d">Enable Microsoft Whiteboard on Surface Hub</a></p>
                     </div>
                 </div>
             </div>

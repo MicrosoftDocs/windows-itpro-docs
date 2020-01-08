@@ -45,9 +45,14 @@
           "depot_name": "MSDN.security",
           "folder_relative_path_in_docset": "./"
         }
+      },
+      "titleSuffix": "Microsoft 365 Security"
+    },
+    "fileMetadata": {
+      "titleSuffix":{
+        "threat-protection/**/*.md": "Windows security"
       }
     },
-    "fileMetadata": {},
     "template": [],
     "dest": "security",
     "markdownEngineName": "markdig"

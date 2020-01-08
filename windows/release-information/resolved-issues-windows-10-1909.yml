@@ -32,6 +32,7 @@ sections:
   - type: markdown
     text: "
       <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Date resolved</td></tr>
+      <tr><td><div id='348msg'></div><b>Unable to create local users in Chinese, Japanese and Korean during device setup</b><br>You might be unable to create users in Chinese, Japanese and Korean using Input Method Editor (IME) during OOBE.<br><br><a href = '#348msgdesc'>See details ></a></td><td>OS Build 18363.476<br><br>November 12, 2019<br><a href ='https://support.microsoft.com/help/4524570' target='_blank'>KB4524570</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4530684' target='_blank'>KB4530684</a></td><td>December 10, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='231msg'></div><b>Intermittent loss of Wi-Fi connectivity</b><br>Some older devices may experience loss of Wi-Fi connectivity due to an outdated Qualcomm driver. <br><br><a href = '#231msgdesc'>See details ></a></td><td>OS Build 18363.476<br><br>November 12, 2019<br><a href ='https://support.microsoft.com/help/4524570' target='_blank'>KB4524570</a></td><td>Resolved External<br></td><td>November 22, 2019 <br>04:10 PM PT</td></tr>
       <tr><td><div id='225msg'></div><b>Unable to discover or connect to Bluetooth devices using some Realtek adapters</b><br>Microsoft has identified compatibility issues with some versions of Realtek Bluetooth radio drivers.<br><br><a href = '#225msgdesc'>See details ></a></td><td>OS Build 18363.476<br><br>November 12, 2019<br><a href ='https://support.microsoft.com/help/4524570' target='_blank'>KB4524570</a></td><td>Resolved External<br></td><td>November 15, 2019 <br>05:59 PM PT</td></tr>
       </table>
@@ -44,6 +45,15 @@ sections:
         <div>
         </div> 
       "
+- title: October 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='348msgdesc'></div><b>Unable to create local users in Chinese, Japanese and Korean during device setup</b><div>When setting up a new Windows device using the Out of Box Experience (OOBE), you might be unable to create a local user when using Input Method Editor (IME). This issue might affect you if you are using the IME for Chinese, Japanese, or Korean languages.</div><div><br></div><div><strong>Note</strong> This issue does not affect using a Microsoft Account during OOBE.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1909; Windows 10, version 1903; Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709</li><li>Server: Windows Server, version 1909; Windows Server, version 1903; Windows Server, version 1809; Windows Server 2019; Windows Server, version 1803; Windows Server, version 1709</li></ul><div></div><div><strong>Resolution:</strong> This issue was resolved in <a href='https://support.microsoft.com/help/4530684' target='_blank'>KB4530684</a>.</div><br><a href ='#348msg'>Back to top</a></td><td>OS Build 18363.476<br><br>November 12, 2019<br><a href ='https://support.microsoft.com/help/4524570' target='_blank'>KB4524570</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4530684' target='_blank'>KB4530684</a></td><td>Resolved:<br>December 10, 2019 <br>10:00 AM PT<br><br>Opened:<br>October 29, 2019 <br>05:15 PM PT</td></tr>
+      </table>
+      "
+
 - title: May 2019
 - items:
   - type: markdown

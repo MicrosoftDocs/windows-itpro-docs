@@ -46,6 +46,16 @@
 "redirect_document_id": false
 },
 {
+    "source_path": "devices/hololens/hololens-find-and-save-files.md",
+    "redirect_url": "https://docs.microsoft.com/hololens/holographic-data",
+    "redirect_document_id": false
+},
+{
+    "source_path": "devices/hololens/hololens-management-overview.md",
+    "redirect_url": "https://docs.microsoft.com/hololens",
+    "redirect_document_id": false
+},
+{
 "source_path": "devices/surface/manage-surface-pro-3-firmware-updates.md",
 "redirect_url": "https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates",
 "redirect_document_id": true
@@ -956,6 +966,11 @@
 "redirect_document_id": false
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/overview-hunting.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview",
 "redirect_document_id": false
@@ -964,6 +979,51 @@
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference",
 "redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-filecreationevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicefileevents-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-imageloadevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceimageloadevents-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-logonevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicelogonevents-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-machineinfo-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceinfo-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-machinenetworkinfo-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicenetworkinfo-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-miscevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceevents-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-networkcommunicationevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicenetworkevents-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-processcreationevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceprocessevents-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-registryevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceregistryevents-table",
+"redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md",
@@ -1247,6 +1307,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/custom-ti-api.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-atp/custom-detection-rules.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules",
 "redirect_document_id": true
@@ -1355,6 +1420,11 @@
 "source_path": "windows/security/threat-protection/windows-defender-atp/experiment-custom-ti-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/experiment-custom-ti",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/experiment-custom-ti.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/threat-protection/windows-defender-atp/fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md",
@@ -1647,11 +1717,6 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/security/threat-protection/windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview",
-"redirect_document_id": true
-},
-{
 "source_path": "windows/security/threat-protection/windows-defender-atp/overview-secure-score-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-secure-score",
 "redirect_document_id": true
@@ -1690,6 +1755,11 @@
 "source_path": "windows/security/threat-protection/windows-defender-atp/powershell-example-code-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/powershell-example-code",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/powershell-example-code.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/preferences-setup-windows-defender-advanced-threat-protection.md",
@@ -1760,6 +1830,11 @@
 "source_path": "windows/security/threat-protection/windows-defender-atp/python-example-code-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/python-example-code",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/python-example-code.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection.md",
@@ -1894,7 +1969,7 @@
 {
 "source_path": "windows/keep-secure/troubleshoot-windows-defender-antivirus.md",
 "redirect_url": "https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus",
- "redirect_document_id": true
+"redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/troubleshoot-windows-defender-in-windows-10.md",
@@ -1925,6 +2000,11 @@
 "source_path": "windows/security/threat-protection/windows-defender-atp/troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-custom-ti",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/troubleshoot-custom-ti.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/threat-protection/windows-defender-atp/troubleshoot-onboarding-windows-defender-advanced-threat-protection.md",
@@ -1975,6 +2055,11 @@
 "source_path": "windows/security/threat-protection/windows-defender-atp/use-custom-ti-windows-defender-advanced-threat-protection.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use-custom-ti",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/use-custom-ti.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators",
+"redirect_document_id": false
 },
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/user-roles-windows-defender-advanced-threat-protection.md",

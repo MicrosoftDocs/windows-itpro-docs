@@ -1,6 +1,6 @@
 ---
 title: Document your AppLocker rules (Windows 10)
-description: This topic describes what rule conditions to associate with each file, how to associate the rule conditions with each file, the source of the rule, and whether the file should be included or excluded.
+description: Learn how to document your Applocker rules with this planning guide. Associate rule conditions with files, permissions, rule source, and implementation.
 ms.assetid: 91a198ce-104a-45ff-b49b-487fb40cd2dd
 ms.reviewer: 
 ms.author: dansimp

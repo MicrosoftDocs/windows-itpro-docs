@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Advanced Threat Protection
-description: Microsoft Defender Advanced Threat Protection is an enterprise security platform that helps secops to prevent, detect, investigate, and respond to possible cybersecurity threats related to advanced persistent threats.
+description: Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) is an enterprise security platform that helps defend against advanced persistent threats.
 keywords: introduction to Microsoft Defender Advanced Threat Protection, introduction to Microsoft Defender ATP, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, microsoft threat protection, cyber threat hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -115,10 +115,17 @@ Integrate Microsoft Defender Advanced Threat Protection into your existing workf
 
 <a name="mtp"></a>
 
-**[Microsoft Threat Protection](threat-protection-integration.md)** <br>
- Microsoft Defender ATP is part of the Microsoft Threat Protection solution that helps implement end-to-end security across possible attack surfaces in the modern workplace. Bring the power of Microsoft threat protection to your organization.
+**[Integration with Microsoft solutions](threat-protection-integration.md)** <br>
+ Microsoft Defender ATP directly integrates with various Microsoft solutions, including:
+- Intune
+- Office 365 ATP
+- Azure ATP
+- Azure Security Center
+- Skype for Business 
+- Microsoft Cloud App Security
 
-
+**[Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)**<br>
+ With Microsoft Threat Protection, Microsoft Defender ATP and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate and automatically respond to sophisticated attacks.
 
 ## In this section
 To help you maximize the effectiveness of the security platform, you can configure individual capabilities that surface in Microsoft Defender Security Center. 
