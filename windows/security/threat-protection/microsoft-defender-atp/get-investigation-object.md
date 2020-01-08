@@ -62,5 +62,5 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful, this method returns 200, Ok response code with a [Investigations](investigations.md) entity.
+If successful, this method returns 200, Ok response code with a [Investigations](investigation.md) entity.
 
