@@ -26,11 +26,11 @@ manager: dansimp
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Attack surface reduction rules help prevent actions and apps that are typically used by exploit-seeking malware to infect machines. Attack surface reduction rules are supported on Windows Server 2019, as well as on Windows 10 clients.
+Attack surface reduction rules help prevent software behaviors that are often abused to compromise your device or network. For example, an attacker might try to run an unsigned script off of a USB drive, or have a macro in an Office document make calls directly to the Win32 API. Attack surface reduction rules can constrain these kinds of risky behaviors and improve your organization's defensive posture.
 
-This topic describes how to customize attack surface reduction rules by [excluding files and folders](#exclude-files-and-folders) or [adding custom text to the notification](#customize-the-notification) alert that appears on a user's computer.
+Learn how to customize attack surface reduction rules by [excluding files and folders](#exclude-files-and-folders) or [adding custom text to the notification](#customize-the-notification) alert that appears on a user's computer.
 
-You can use Group Policy, PowerShell, and MDM CSPs to configure these settings.
+Attack surface reduction rules are supported on Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, and Windows Server 2019. You can use Group Policy, PowerShell, and MDM CSPs to configure these settings.
 
 ## Exclude files and folders
 

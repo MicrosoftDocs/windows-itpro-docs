@@ -26,15 +26,19 @@ ms.custom: asr
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Attack surface reduction rules help prevent behaviors malware often use to infect computers with malicious code. You can set attack surface reduction rules for computers running Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, or Windows Server 2019.
+Your attack surface is the total number of places where an attacker could compromise your device or network. Reducing your attack surface means offering attackers fewer ways to perform attacks.
 
-Attack surface reduction rules target behaviors that malware and malicious apps typically use to infect computers, including:
+Attack surface reduction rules target software behaviors that are often abused to attack device or networks, such as:
 
-* Executable files and scripts used in Office apps or web mail that attempt to download or run files
-* Obfuscated or otherwise suspicious scripts
-* Behaviors that apps don't usually initiate during normal day-to-day work
+* Launching executable files and scripts that attempt to download or run files
+* Running obfuscated or otherwise suspicious scripts
+* Performing behaviors that apps don't usually initiate during normal day-to-day work
 
-You can use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
+While these behaviors can have legitimate uses as well, they are considered risky because they are commonly abused by malware. Attack surface reduction rules can constrain these kinds of risky behaviors, or even block them entirely.
+
+You can set attack surface reduction rules for computers running Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, and Windows Server 2019.
+
+Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
 
 Triggered rules display a notification on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays in the Microsoft Defender Security Center and in the Microsoft 365 security center.
 
@@ -48,7 +52,7 @@ To use the entire feature set of attack surface reduction rules, you need a Wind
 
 Microsoft Defender ATP provides detailed reporting into events and blocks as part of its alert investigation scenarios.
 
-You can query Microsoft Defender ATP data by using [Advanced hunting](advanced-hunting-query-language.md). If you're using [audit mode](audit-windows-defender.md), you can use Advanced hunting to understand how attack surface reduction rules could affect your environment.
+You can query Microsoft Defender ATP data by using [advanced hunting](advanced-hunting-query-language.md). If you're using [audit mode](audit-windows-defender.md), you can use advanced hunting to understand how attack surface reduction rules could affect your environment.
 
 Here is an example query:
 
