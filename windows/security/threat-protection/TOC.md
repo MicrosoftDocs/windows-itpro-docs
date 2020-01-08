@@ -411,7 +411,7 @@
 ####### [Investigation methods and properties](microsoft-defender-atp/investigation.md)
 ####### [List Investigation](microsoft-defender-atp/get-investigation-collection.md)
 ####### [Get Investigation](microsoft-defender-atp/get-investigation-object.md)
-####### [Start Investigation](microsoft-defender-atp/start-investigation.md)
+####### [Start Investigation](microsoft-defender-atp/initiate-autoir-investigation.md)
 
 ###### [Indicators]()
 ####### [Indicators methods and properties](microsoft-defender-atp/ti-indicator.md)
