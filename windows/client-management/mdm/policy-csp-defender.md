@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 01/08/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -3079,12 +3079,12 @@ The following list shows the supported values for threat severity levels:
 
 The following list shows the supported values for possible actions:
 
--   1 – Clean
--   2 – Quarantine
--   3 – Remove
--   6 – Allow
--   8 – User defined
--   10 – Block
+-   1 – Clean. Service tries to recover files and try to disinfect.
+-   2 – Quarantine. Moves files to quarantine.
+-   3 – Remove. Removes files from system.
+-   6 – Allow. Allows file/does none of the above actions.
+-   8 – User defined. Requires user to make a decision on which action to take.
+-   10 – Block. Blocks file execution.
 
 <!--/Description-->
 <!--ADMXMapped-->
