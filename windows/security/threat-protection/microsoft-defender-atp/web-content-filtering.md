@@ -40,58 +40,71 @@ To summarize the benefits:
 ## Prerequisites
 
 Before trying out this feature, make sure you have the following:
-•	Windows E5 license
-•	Access to Microsoft Defender Security Center portal
-•	 Machines running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update (for Network Protection on Internet Explorer, Edge, Chrome, or Firefox)
-•	Machines running Windows 10 May 2019 Update (version 1903) or later (for a better user experience from SmartScreen on Edge). Note that if SmartScreen is not turned on, Network Protection will take over the blocking.
-•	A valid license with a partner data provider. For details on how to acquire a license, please read the section below.
-Partner licensing
+
+- Windows E5 license
+- Access to Microsoft Defender Security Center portal
+- Machines running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update (for Network Protection on Internet Explorer, Edge, Chrome, or Firefox)
+- Machines running Windows 10 May 2019 Update (version 1903) or later (for a better user experience from SmartScreen on Edge). Note that if SmartScreen is not turned on, Network Protection will take over the blocking.
+- A valid license with a partner data provider. For details on how to acquire a license, please read the section below.
+
+## Partner licensing
+
 In order to give customers access to various sources of web content categorization data, we are very excited to partner with data providers for this feature. We’ve chosen Cyren as our first partner, who we’ve worked with closely to build an integrated solution. Here’s a brief description of what they do:
  
-About Cyren 
-More than 1.3 billion users around the world rely on Cyren's 100% cloud security solutions to protect them against cyberattacks and data loss every day. Powered by the world's largest security cloud, Cyren (NASDAQ: CYRN) delivers fast time-to-protection with award-winning email security, cloud sandboxing and DNS filtering services for business, and threat intelligence solutions for service providers and security vendors like Microsoft, Google and Check Point. 
-About Cyren and Threat Intelligence Service for Microsoft Defender ATP
+### About Cyren 
+
+More than 1.3 billion users around the world rely on Cyren's 100% cloud security solutions to protect them against cyberattacks and data loss every day. Powered by the world's largest security cloud, Cyren (NASDAQ: CYRN) delivers fast time-to-protection with award-winning email security, cloud sandboxing and DNS filtering services for business, and threat intelligence solutions for service providers and security vendors like Microsoft, Google and Check Point.
+
+### About Cyren and Threat Intelligence Service for Microsoft Defender ATP
+
 CYREN’S URL FILTERING (URLF) INCLUDES 70 CATEGORIES, PROVIDING PARTNERS WITH THE ABILITY TO BUILD POWERFUL AND ADVANCED WEB SECURITY APPLICATIONS.
+
 The broad range of categories enables numerous applications: Protecting users browsing the web from threats such as malware and phishing sites; Ensuring employee productivity; Consumer services such as parental control. Cyren’s comprehensive categories provide the necessary flexibility for any implementation requirement.
+
 Cyren's web content classification technology is integrated by design into Microsoft Defender ATP to enable web filtering and auditing capabilities.
+
 Learn more at https://www.cyren.com/oem
 
+### Signing up for a Cyren License
 
-Signing up for a Cyren License
 Cyren is offering a 60-day free trial for all MDATP customers. To sign up, please follow the steps below from the portal.
+
 1.	Go to Reports > Web protection from the side nav
- 
-2. Click the "connect to a partner" button below
-  
-3.Go through the flow from the flyout to register and connect your Cyren account. Note: a user with AAD app admin/global admin permissions is required to complete these steps
+2. Click the "connect to a partner" button
+3. Go through the flow from the flyout to register and connect your Cyren account. Note: a user with AAD app admin/global admin permissions is required to complete these steps
 
+## Data handling
 
-Data handling
 For this feature, we will follow whichever region you have elected to use as part of your Microsoft Defender ATP data handling settings. Your data will not leave the data center in that region. In addition, your data will not be shared with any third-parties, including our data providers. However, we may send them aggregate data (across users and organizations) to help them improve their feeds.
- 
-Turn on web content filtering
+
+## Turn on web content filtering
+
 From the left-hand navigation menu, select Settings. Under the section General, choose Advanced Features. Scroll down until you see the entry for Web content filtering. Switch the toggle to On, then hit the Save preferences button.
- 
- Configure web content filtering policies
+
+## Configure web content filtering policies
+
 Web content filtering policies specify which site categories are blocked on which machine groups. To manage the policies, go to Settings > Rules > Web content filtering.
- 
-Web content filtering settings page
+
 Use the filter to locate policies that contain certain blocked categories or are applied to specific machine groups. For more information on categories, see the appendix.
-Create a policy
+
+### Create a policy
+
 To add a new policy:
-1.	Click Add policy on the Web content filtering page in Settings.
-2.	Specify a name. 
+
+1.	Click **Add policy** on the **Web content filtering** page in **Settings**.
+2.	Specify a name.
 3.	Select the categories to block. Use the expand icon to fully expand each parent category and select specific web content categories.
- 
-Selecting blocked categories during policy creation
 4.	Specify the policy scope. Select the machine groups to specify where to apply the policy. Only machines in the selected machine groups will be prevented from accessing websites in the selected categories.
 5.	Review the summary and save the policy. The policy may take up to 15 minutes to apply to your selected machines. 
 
 Note: If you are removing a policy or changing machine groups at the same time, this might cause a delay in policy deployment.
-Information worker UX
+
+## Information worker UX
+
 The standard blocking experience is provided by Network Protection, which provides a system-level toast notifying the user of a blocked connection.
 For a more user-friendly experience, consider user SmartScreen on Edge, which will show the following page when blocked:
-View summary cards and reports
+
+## View summary cards and reports
  
 Select Reports > Web protection to view the web protection reports page. The following cards provide summary information about web content filtering:
 •	Web activity by category
