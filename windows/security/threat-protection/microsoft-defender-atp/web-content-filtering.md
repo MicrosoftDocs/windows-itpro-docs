@@ -104,57 +104,37 @@ Note: If you are removing a policy or changing machine groups at the same time, 
 The standard blocking experience is provided by Network Protection, which provides a system-level toast notifying the user of a blocked connection.
 For a more user-friendly experience, consider user SmartScreen on Edge, which will show the following page when blocked:
 
-## View summary cards and reports
- 
-Select Reports > Web protection to view the web protection reports page. The following cards provide summary information about web content filtering:
-•	Web activity by category
-•	Web content filtering summary
-For the Web activity by category card, you can view data from the following periods:
-•	Last 30 days
-•	Last 3 months
-•	Last 6 months
-Web activity by category card
-This card lists the parent web content categories with the largest percentage change in the number of access attempts, whether they have increased or decreased. You can use this card to understand drastic changes in web activity patterns in your organization.  
+## Web content filtering cards and details
+
+Select **Reports > Web protection** to view cards with information about web content filtering and web threat protection. The following cards provide summary information about web content filtering.
+
+### Web activity by category card
+
+This card lists the parent web content categories with the largest percentage change in the number of access attempts, whether they have increased or decreased. You can use this card to understand drastic changes in web activity patterns in your organization from last 30 days, 3 months, or 6 months.  
+
 Click a category name to view more information about that particular category.
+
 Note: In the first 30 days of using this feature, your organization might not have sufficient data to display in this card.
-Web content filtering summary card
+
+### Web content filtering summary card
+
 This card displays the distribution of blocked access attempts across the different parent web content categories. Click a colored slice to view more information about a specific parent web category.
-View report details
-The Report details page contains reports in separate tabs providing extensive statistical data about web content categories, website domains, and machine groups.
- 
-Report details page
-Use the time range filter at the top left of the page to select a time period:
-•	1 day
-•	1 week
-•	30 days
-•	3 months
-•	6 months
-You can also use the filters on the right to filter for specific machine groups or content categories. 
-Select a row to open a flyout pane with even more information about the selected item.
-Web categories
-This report lists the web content categories that have had access attempts in your organization. 
- 
-List of accessed web categories
-You can filter on the following:
-•	Parent category
-•	Machine group
-•	Whether the access attempt was allowed or blocked
-Clicking on a specific category will open a summary flyout. In the flyout, you will see:
-•	A graph showing the change in access attempts over your chosen time period
-•	Top ten domains in that category in terms of total access attempts. Click a domain to view more information about that domain.
-•	Top ten machines in terms of total access attempts to websites in that category. Click a machine to view more information about that machine.
-•	Policies that block websites in that category. Click Manage to view and edit the details of a policy.
- 
-Domains
-This report lists the web domains that have been accessed or blocked in your organization.
- 
-List of accessed website domains
-You can filter on the following:
-•	Parent category
-•	Machine group the event occurred on
-•	Whether the access attempt was allowed or blocked
-Click a specific domain to view detailed information about that domain.
-Machine groups
+
+### View card details
+
+You can access the Report details for each card by selecting a rowThe Report details page contains reports in separate tabs providing extensive statistical data about web content categories, website domains, and machine groups.
+
+Use the time range filter at the top left of the page to select a time period. You can also filter the information or customize the columns. Select a row to open a flyout pane with even more information about the selected item.
+
+
+- **Web categories**: Lists the web content categories that have had access attempts in your organization. Select a specific category to open a summary flyout.
+
+- **Domains**: Lists the web domains that have been accessed or blocked in your organization. Select a specific domain to view detailed information about that domain.
+
+This report 
+
+#### Machine groups
+
 This report lists all the machine groups that have generated web activity in your organization.
  
 Clicking on a specific machine group will open a summary flyout. In the flyout, you will see:
@@ -162,57 +142,70 @@ Clicking on a specific machine group will open a summary flyout. In the flyout, 
 •	Top ten domains accessed by the selected machine group. Click a domain to view more information about that domain.
 •	Top ten machines in that machine group in terms of total access attempts. Click a machine to view more information about that machine.
 •	Top ten web content categories accessed by machines in the selected group.
-FAQ
-Q: Why am I seeing the following error when trying to connect to Cyren?
+
+## FAQ
+
+### Why am I seeing the error "Need admin approval" when trying to connect to Cyren?
+
+You need to be logged in to an AAD account with either App administrator or Global Administrator privileges. Your IT admin would most likely either have these permissions and/or be able to grant them to you.
+
+### What exactly are the permissions the app is asking for?
  
-A: You need to be logged in to an AAD account with either App administrator or Global Administrator privileges. Your IT admin would most likely either have these permissions and/or be able to grant them to you.
-Q: What exactly are the permissions the app is asking for?
- 
-A:           i) ‘Sign in and read user profile’ allows Cyren to read your tenant info from your MDATP account, such as your tenant ID, which will be tied to your Cyren license.
-ii) ‘Read and Write Integration settings’ exists under the WindowsDefenderATP scope within permissions. This line allows Cyren to add/modify/revoke Cyren license status on the MDATP portal.
-Appendix
-Categories
+‘Sign in and read user profile’ allows Cyren to read your tenant info from your MDATP account, such as your tenant ID, which will be tied to your Cyren license.
+
+‘Read and Write Integration settings’ exists under the WindowsDefenderATP scope within permissions. This line allows Cyren to add/modify/revoke Cyren license status on the MDATP portal.
+
+## Categories
+
 We have grouped individual web content categories from the data provider into parent categories, making it easier for you to block and monitor closely related categories. Below is a list of categories we currently support, with their descriptions provided by Cyren.
-Adult content
-•	Cults - Sites relating to non-traditional religious practice typically known as "cults," that is, considered to be false, unorthodox, extremist, or coercive, with members often living under the direction of a charismatic leader. 
-•	Gambling - Sites that offer or are related to online gambling, lottery, casinos and betting agencies involving chance.
-•	Nudity - Sites that contain full or partial nudity that are not necessarily overtly sexual in intent. Includes sites that advertise or sell lingerie, intimate apparel, or swimwear.
-•	Pornography/Sexually Explicit - Sites that contain explicit sexual content. Includes adult products such as sex toys, CD-ROMs, and videos, adult services such as videoconferencing, escort services, and strip clubs, erotic stories and textual descriptions of sexual acts.
-•	Sex Education - Sites relating to sex education, including subjects such as respect for partner, abortion, gay and lesbian lifestyle, contraceptives, sexually transmitted diseases, and pregnancy. 
-•	Tasteless - Sites with offensive or tasteless content, including profanity.
-•	Violence - Sites that contain images or text depicting or advocating physical assault against humans, animals, or institutions. Sites of a particularly gruesome nature. Sites that contain profanity. 
-High bandwidth
-•	Download Sites - Sites that contain downloadable software, whether shareware, freeware, or for a charge. Includes some peer-to-peer sites.
-•	Image Sharing - Sites that host digital photographs and images, online photo albums and digital photo exchanges.
-•	Peer-to-Peer - Sites that enable direct exchange of files between users without dependence on a central server. 
-•	Streaming Media & Downloads - Sites that deliver streaming content, such as Internet radio, Internet TV or MP3 and live or archived media download sites. Includes fan sites, or official sites run by musicians, bands, or record labels. 
-Legal liability
-•	Child Abuse Images - Sites that portray or discuss children in sexual or other abusive acts.
-•	Criminal Activity - Sites that offer advice on how to commit illegal or criminal activities, or to avoid detection. These can include how to commit murder, build bombs, pick locks, etc. Also includes sites with information about illegal manipulation of electronic devices, hacking, fraud and illegal distribution of software. 
-•	Hacking - Sites that promote or give advice about how to gain unauthorized access to proprietary computer systems, for the purpose of stealing information, perpetrating fraud, creating viruses, or committing other illegal activity related to theft of digital inform.
-•	Hate & Intolerance - Sites that promote a supremacist political agenda, encouraging oppression of people or groups of people based on their race, religion, gender, age, disability, sexual orientation or nationality. 
-•	Illegal Drugs - Sites with information on the purchase, manufacture, and use of illegal or recreational drugs and their paraphernalia, and misuse of prescription drugs and other compounds.
-•	Illegal Software - Sites that illegally distribute software or copyrighted materials such as movies or music, software cracks, illicit serial numbers, illegal license key generators. 
-•	School Cheating - Sites that promote unethical practices such as cheating or plagiarism by providing test answers, written essays, research papers, or term papers. 
-•	Self-Harm – Sites that promote actions that are relating to harming oneself, such as suicide, anorexia, bulimia, etc.
-•	Weapons - Sites that depict, sell, review or describe guns and weapons, including for sport.
+
+### Adult content
+
+-	Cults - Sites relating to non-traditional religious practice typically known as "cults," that is, considered to be false, unorthodox, extremist, or coercive, with members often living under the direction of a charismatic leader.
+-	Gambling - Sites that offer or are related to online gambling, lottery, casinos and betting agencies involving chance.
+-	Nudity - Sites that contain full or partial nudity that are not necessarily overtly sexual in intent. Includes sites that advertise or sell lingerie, intimate apparel, or swimwear.
+-	Pornography/Sexually Explicit - Sites that contain explicit sexual content. Includes adult products such as sex toys, CD-ROMs, and videos, adult services such as videoconferencing, escort services, and strip clubs, erotic stories and textual descriptions of sexual acts.
+-	Sex Education - Sites relating to sex education, including subjects such as respect for partner, abortion, gay and lesbian lifestyle, contraceptives, sexually transmitted diseases, and pregnancy.
+-	Tasteless - Sites with offensive or tasteless content, including profanity.
+-	Violence - Sites that contain images or text depicting or advocating physical assault against humans, animals, or institutions. Sites of a particularly gruesome nature. Sites that contain profanity.
+
+### High bandwidth
+
+-	Download Sites - Sites that contain downloadable software, whether shareware, freeware, or for a charge. Includes some peer-to-peer sites.
+-	Image Sharing - Sites that host digital photographs and images, online photo albums and digital photo exchanges.
+-	Peer-to-Peer - Sites that enable direct exchange of files between users without dependence on a central server.
+-	Streaming Media & Downloads - Sites that deliver streaming content, such as Internet radio, Internet TV or MP3 and live or archived media download sites. Includes fan sites, or official sites run by musicians, bands, or record labels.
+
+### Legal liability
+
+- Child Abuse Images - Sites that portray or discuss children in sexual or other abusive acts.
+- Criminal Activity - Sites that offer advice on how to commit illegal or criminal activities, or to avoid detection. These can include how to commit murder, build bombs, pick locks, etc. Also includes sites with information about illegal manipulation of electronic devices, hacking, fraud and illegal distribution of software.
+- Hacking - Sites that promote or give advice about how to gain unauthorized access to proprietary computer systems, for the purpose of stealing information, perpetrating fraud, creating viruses, or committing other illegal activity related to theft of digital inform.
+- Hate & Intolerance - Sites that promote a supremacist political agenda, encouraging oppression of people or groups of people based on their race, religion, gender, age, disability, sexual orientation or nationality.
+- Illegal Drugs - Sites with information on the purchase, manufacture, and use of illegal or recreational drugs and their paraphernalia, and misuse of prescription drugs and other compounds.
+- Illegal Software - Sites that illegally distribute software or copyrighted materials such as movies or music, software cracks, illicit serial numbers, illegal license key generators.
+- School Cheating - Sites that promote unethical practices such as cheating or plagiarism by providing test answers, written essays, research papers, or term papers.
+- Self-Harm – Sites that promote actions that are relating to harming oneself, such as suicide, anorexia, bulimia, etc.
+- Weapons - Sites that depict, sell, review or describe guns and weapons, including for sport.
 Leisure
-•	Chat - Sites that enable web-based exchange of real-time messages through chat services or chat rooms. 
-•	Games - Sites relating to computer or other games, information about game producers, or how to obtain cheat codes. Game-related publication sites. 
-•	Instant Messaging - Sites that enable logging in to instant messaging services such as ICQ, AOL Instant Messenger, IRC, MSN, Jabber, Yahoo Messenger, and the like. 
-•	Professional Networking - Sites that enable professional networking for online communities.
-•	Social Networking - Sites that enable social networking for online communities of various topics, for friendship, or/and dating. 
-•	Web-based Email - Sites that enables users to send and receive email through a web-accessible email account.
-Uncategorized
-•	Unknown – Sites that are not yet assigned a category
-Limitations and known issues in this preview
-1.	Unassigned machines will have incorrect data shown within the report
+- Chat - Sites that enable web-based exchange of real-time messages through chat services or chat rooms.
+- Games - Sites relating to computer or other games, information about game producers, or how to obtain cheat codes. Game-related publication sites.
+- Instant Messaging - Sites that enable logging in to instant messaging services such as ICQ, AOL Instant Messenger, IRC, MSN, Jabber, Yahoo Messenger, and the like.
+- Professional Networking - Sites that enable professional networking for online communities.
+- Social Networking - Sites that enable social networking for online communities of various topics, for friendship, or/and dating.
+- Web-based Email - Sites that enables users to send and receive email through a web-accessible email account.
+
+### Uncategorized
+
+- Unknown – Sites that are not yet assigned a category
+
+## Limitations and known issues in this preview
+
+1. Unassigned machines will have incorrect data shown within the report
 In the Report details > Machine groups pivot, you may see a row with a blank Machine Group field. This group contains your unassigned machines in the interim before they get put into your specified group. The report for this row may not contain an accurate count of machines or access counts.
 
-2.	The data in our reports may not be congruent with other data on the site
+2. The data in our reports may not be congruent with other data on the site
 We currently do not support real-time data processing for this feature, so you may see inconsistencies between the data in our reports and the URL entity page.
-
-
 
 ## Related topics
 - [Web protection overview](web-protection-overview.md)
