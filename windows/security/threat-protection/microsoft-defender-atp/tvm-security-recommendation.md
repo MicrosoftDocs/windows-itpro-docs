@@ -48,7 +48,7 @@ From the menu, select **Security recommendations** to get an overview of the run
 ![Screenshot of Security recommendations page](images/tvm_securityrecommendation-graph.png)
 
 >[!NOTE]
-> The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the amount of exposed machines, the color of the graph will change into green. This happens per change, which means an or decrease of even a single machine will change the graph's color.
+> The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the amount of exposed machines, the color of the graph will change into green. This happens per change, which means an increase or decrease of even a single machine will change the graph's color.
 
 In a given day as a Security Administrator, you can take a look at the dashboard to see your exposure score side-by-side with your configuration score. The goal is to lower down your organization's exposure from vulnerabilities, and increase your organization's security configuration to be more resilient against cybersecurity threat attacks. The top security recommendations list can help you achieve that goal. 
 
