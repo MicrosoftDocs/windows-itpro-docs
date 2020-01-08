@@ -38,10 +38,6 @@ Delegated (work or school account) | Score.Read | 'Read Threat and Vulnerability
 GET /api/exposureScore
 ```
 
-## Optional query parameters
-Method supports $top, $select, $filter, $expand and $skip query parameters.
-<br>$expand is available on Files, IPs and Domains. e.g. $expand=files,domains
-
 ## Request headers
 
 Name | Type | Description
