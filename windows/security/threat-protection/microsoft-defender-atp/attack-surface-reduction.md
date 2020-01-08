@@ -50,7 +50,7 @@ You can query Microsoft Defender ATP data by using [Advanced hunting](advanced-h
 
 Here is an example query:
 
-```PowerShell
+```kusto
 DeviceEvents
 | where ActionType startswith 'Asr'
 ```

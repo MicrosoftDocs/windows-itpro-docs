@@ -363,9 +363,10 @@
 ##### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
 ##### [Get started with Microsoft Defender ATP APIs]()
 ###### [Access the Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
+###### [Hello World](microsoft-defender-atp/api-hello-world.md)
 ###### [Get access with application context](microsoft-defender-atp/exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](microsoft-defender-atp/exposed-apis-create-app-nativeapp.md)
-###### [Hello World](microsoft-defender-atp/api-hello-world.md)
+###### [Get partner application access](microsoft-defender-atp/exposed-apis-create-app-partners.md)
 
 ##### [Investigation, response, and entities APIs]()
 ###### [Supported Microsoft Defender ATP APIs](microsoft-defender-atp/exposed-apis-list.md)

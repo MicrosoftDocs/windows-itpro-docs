@@ -167,7 +167,7 @@ When an exception is created for a recommendation, the recommendation is no long
 
 3. Enter the following queries:
 
-```
+```kusto
 // Search for machines with High active alerts or Critical CVE public exploit 
 DeviceTvmSoftwareInventoryVulnerabilities 
 | join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId 
