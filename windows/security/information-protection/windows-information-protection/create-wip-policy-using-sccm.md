@@ -30,6 +30,9 @@ Configuration Manager helps you create and deploy your Windows Information Prote
 ## Add a WIP policy
 After you’ve installed and set up Configuration Manager for your organization, you must create a configuration item for WIP, which in turn becomes your WIP policy.
 
+>[!TIP]
+> Review the [Limitations while using Windows Information Protection (WIP)](limitations-with-wip.md) article before creating a new configuration item to avoid common issues.
+
 **To create a configuration item for WIP**
 
 1. Open the Configuration Manager console, click the **Assets and Compliance** node, expand the **Overview** node, expand the **Compliance Settings** node, and then expand the **Configuration Items** node.
