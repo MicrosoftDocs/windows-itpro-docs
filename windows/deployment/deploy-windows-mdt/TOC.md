@@ -1,6 +1,5 @@
 # Deploy Windows 10 with the Microsoft Deployment Toolkit (MDT)
-## [Understand MDT](get-started-with-the-microsoft-deployment-toolkit.md)
-## [Install MDT](install-mdt.md)
+## [Get started with MDT](get-started-with-the-microsoft-deployment-toolkit.md)
 
 ## Deploy Windows 10 with MDT
 ### [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md)
