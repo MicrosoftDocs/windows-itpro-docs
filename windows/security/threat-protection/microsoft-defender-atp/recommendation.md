@@ -48,7 +48,7 @@ publicExploit | Boolean |
 activeAlert | Boolean | 
 associatedThreats | String collection | 
 remediationType | String | 
-Status | String | Enum
+Status | Enum | Recommendation exception status. Possible values are: “Active” and “Exception”
 configScoreImpact | Double | 
 exposureImpacte | Double| 
 totalMachineCount | Long | 
