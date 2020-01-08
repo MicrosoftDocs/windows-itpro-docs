@@ -483,10 +483,9 @@
 ###### [Using machine groups](microsoft-defender-atp/machine-groups.md)
 ###### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
 
-
-
 ### [Partner integration opportunities]()
-#### [Technical integrations](microsoft-defender-atp/)
+#### [Partner opportunities and scenarios](microsoft-defender-atp/partner-integration.md)
+##### [Become a Microsoft Defender ATP integration partner](microsoft-defender-atp/get-started-partner-integration.md)
 #### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
 ##### [Configure managed security service provider (MSSP) support](microsoft-defender-atp/configure-mssp-support.md)
 

@@ -1,8 +1,8 @@
 ---
 title: Overview of management and APIs
 ms.reviewer: 
-description: 
-keywords: 
+description: Learn about the management tools and API categories in Microsoft Defender ATP
+keywords: onboarding, api, siem, rbac, access, portal, integration, investigation, response, entities, entity, user context, application context, streaming
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
