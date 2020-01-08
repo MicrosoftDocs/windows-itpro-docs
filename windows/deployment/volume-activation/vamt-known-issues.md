@@ -23,12 +23,12 @@ ms.custom:
 The current known issues with the Volume Activation Management Tool (VAMT), versions 3.0. and 3.1, include:
 
 - VAMT Windows Management Infrastructure (WMI) remote operations might take longer to execute if the target computer is in a sleep or standby state.
-- When you open a Computer Information List (CIL) file that was saved by using a previous version of VAMT, the edition information is not shown for each product in the center pane. The user must update the product status again to obtain the edition information.
+- When you open a Computer Information List (CIL) file that was saved by using a previous version of VAMT, the edition information is not shown for each product in the center pane. You must update the product status again to obtain the edition information.
 - The remaining activation count can only be retrieved for Multiple Activation Key (MAKs).
 
 ## Workarounds for adding CSVLKs for Windows 10 activation to VAMT 3.1
 
-Another known issue is that when you try to add a Windows 10 Key Management Service (KMS) Host key (CSVLK) or a Windows Server 2012 R2 for Windows 10 CSVLK into VAMT 3.1 (version 10.0.10240.0), you receive the following error message.
+Another known issue is that when you try to add a Windows 10 Key Management Service (KMS) Host key (CSVLK) or a Windows Server 2012 R2 for Windows 10 CSVLK into VAMT 3.1 (version 10.0.10240.0), you receive the error message shown here.
 
 ![VAMT error message](./images/vamt-known-issue-message.png)
 
@@ -46,13 +46,13 @@ On the KMS host computer, perform the following steps:
 
 1. In Windows Explorer, right-click **485392_intl_x64_zip** and extract the hotfix to C:\KB3058168.
 
-1. To extract the contents of the update, run the following command.
+1. To extract the contents of the update, run the following command:
 
    ```cmd
    expand c:\KB3058168\Windows8.1-KB3058168-x64.msu -f:* C:\KB3058168\
    ```
 
-1. To extract the contents of Windows8.1-KB3058168-x64.cab, run the following command.
+1. To extract the contents of Windows8.1-KB3058168-x64.cab, run the following command:
 
    ```cmd
    expand c:\KB3058168\Windows8.1-KB3058168-x64.cab -f:pkeyconfig-csvlk.xrm-ms c:\KB3058168
