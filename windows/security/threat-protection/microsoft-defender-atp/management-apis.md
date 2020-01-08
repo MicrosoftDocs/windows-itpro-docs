@@ -38,54 +38,34 @@ Microsoft Defender ATP provides fine-grained control over what users with access
 - Tiered model security operations teams
 - Fully segregated devisions with single centralized global security operations teams 
 
-## Integration and APIs
+## Available APIs
 The Microsoft Defender ATP solution is built on top of an integration-ready platform.
 
 Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Microsoft Defender ATP capabilities.
 
+![Image of available API and integration in Microsoft Defender ATP](images/mdatp-apis.png)
 
-EFRAT, PLEASE LET ME KNOW WHICH IMAGE IS MORE APPROPRIATE IN THIS PAGE: IMAGE 1 OR IMAGE 2
-
-IMAGE 1:
-![Image of available API and integration in Microsoft Defender ATP](images/api-and-integration.png)
-
-IMAGE 2:
-![Image of API categories in Microsoft Defender ATP](images/atp-apis.png)
-
-### Authentication and authorization
-Accessing Microsoft Defender ATP APIs is granted in accordance with the service users and permissions model. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code). 
-
-For services, the Azure Active Directory (Azure AD) application model is applied where the AAD Global Admin grants the permissions to the application. Any change of the application "manifested" permissions will require Global Admin Consent. 
-
-### Investigation API
-You can use the APIs to investigate entities such as machine, user, and file as well as discrete events (for example, process creation and file creation). For more information see, [Supported APIs](exposed-apis-list.md).
-
-There are also [advanced hunting APIs](run-advanced-query-api.md) to hunt for possible threats across your organization.
+The Microsoft Defender ATP APIs can be grouped into three:
+- Microsoft Defender ATP APIs (includes the investigation, response, and entities)
+- Raw data streaming API
+- SIEM integration
 
 
-### Response API
-Take actions on machine such as isolate machine from the network, quarantine files, and others using APIs. For more information see, [Machine action](machineaction.md).
+## Microsoft Defender ATP APIs
 
-Indicator matching is essential feature available in Microsoft Defender ATP that gives SecOps the ability to create indicators that define the detection, prevention, and exclusion of entities. For more information see [Indicator resource type](ti-indicator.md).
+Microsoft Defender ATP offers a layered API model exposing data and capabilities in a structured, clear and easy to use model, exposed through a standard Azure  AD-based authentication and authorization model allowing access in context of users or SaaS applications. The API model was designed to expose entities and capabilities in a consistent form. 
 
-You can initiate automated investigation on a machine using APIs.
+The **Investigation API** exposes the richness of Microsoft Defender ATP - exposing calculated or 'profiled' entities (for example, machine, user, and file) and discrete events (for example, process creation and file creation) which typically describes a behavior related to an entity, enabling access to data via investigation interfaces allowing a query-based access to data. For more information see, [Supported APIs](exposed-apis-list.md).
 
-
-### Entities API
-Run API calls on the supported entities. You can create calls such as get alerts, create indicators, and more. 
-
-### Integration scenarios
-To further augment the API uses, the platform also supports various integration scenarios. 
-
-Custom integration scenarios help in 
+The **Response API** exposes the ability to take actions in the service and on devices, enabling customers to ingest indicators, manage settings, alert status, as well as take response actions on devices programmatically such as isolate machines from the network, quarantine files, and others. 
 
 ### Streaming API 
-Streaming API allows you to receive real-time event and alerts from instances as they occur within a single data stream, providing a low latency, high throughput delivery mechanism.
+Allows you to receive real-time event and alerts from instances as they occur within a single data stream, providing a low latency, high throughput delivery mechanism. For more information see, [Raw data streaming API](raw-data-export.md).
 
-It enables ingesting complete event data from the Microsoft Defender ATP platform into your local data warehouse or data layer and correlating it against logs collected from other systems. For more information see, [Raw data streaming API](raw-data-export.md).
 
 ### SIEM API
-Microsoft Defender ATP supports SIEM integration through a variety of methods - specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management. For more information see, [SIEM integration](enable-siem-integration.md)
+When you enable security information and event management (SIEM) integration it allows you to pull detections from Microsoft Defender Security Center using your SIEM solution or by connecting directly to the detections REST API. This activates the SIEM connector access details section with pre-populated values and an application is created under you Azure Active Directory (AAD) tenant. For more information see, [SIEM integration](enable-siem-integration.md)
+
 
 ## Related topics
 - [Access the Microsoft Defender Advanced Threat Protection APIs ](apis-intro.md)

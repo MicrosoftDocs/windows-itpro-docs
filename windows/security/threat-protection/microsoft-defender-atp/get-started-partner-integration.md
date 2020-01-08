@@ -28,7 +28,7 @@ ms.topic: conceptual
 To become a Microsoft Defender ATP solution partner, you'll need to follow and complete the following steps.
 
 ## Step 1: Subscribe to a Microsoft Defender ATP Developer license
-This gives you a license to use a Microsoft Defender ATP tenant with up to 10 devices for developing solutions to integrate with Microsoft Defender ATP.
+Subscribing to the [Microsoft Defender ATP Developer license](https://winatpregistration-prd.trafficmanager.net/Developer/UserAgreement?Length=9) allows you to use a Microsoft Defender ATP tenant with up to 10 devices for developing solutions to integrate with Microsoft Defender ATP. 
 
 ## Step 2: Fulfill the solution validation and certification requirements
 The best way for technology partners to certify their integration works, is to have it tested and used by a joint customer. Once the Microsoft Defender ATP team reviews and approves the integration, we will direct you to be included as a partner at the Microsoft Intelligent Security Association.

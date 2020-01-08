@@ -360,15 +360,15 @@
 ###### [Troubleshoot subscription and portal access issues](microsoft-defender-atp/troubleshoot-onboarding-error-messages.md)
 
 #### [Microsoft Defender ATP API]()
-##### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
 ##### [Get started with Microsoft Defender ATP APIs]()
+###### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
 ###### [Access the Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
 ###### [Hello World](microsoft-defender-atp/api-hello-world.md)
 ###### [Get access with application context](microsoft-defender-atp/exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](microsoft-defender-atp/exposed-apis-create-app-nativeapp.md)
 ###### [Get partner application access](microsoft-defender-atp/exposed-apis-create-app-partners.md)
 
-##### [Investigation, response, and entities APIs]()
+##### [Microsoft Defender ATP APIs]()
 ###### [Supported Microsoft Defender ATP APIs](microsoft-defender-atp/exposed-apis-list.md)
 ###### [Advanced Hunting](microsoft-defender-atp/run-advanced-query-api.md)
 
@@ -435,28 +435,29 @@
 ####### [Get user related alerts](microsoft-defender-atp/get-user-related-alerts.md)
 ####### [Get user related machines](microsoft-defender-atp/get-user-related-machines.md)
 
-##### [Stream data using APIs]()
-###### [Raw data streaming (preview)](microsoft-defender-atp/raw-data-export.md)
-###### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
-###### [Stream advanced hunting events to your storage account](microsoft-defender-atp/raw-data-export-storage.md)
- 
-
-##### [Pull detections to your SIEM tools]()
-###### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
-###### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
-###### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
-###### [Configure Splunk to pull detections](microsoft-defender-atp/configure-splunk.md)
-###### [Configure HP ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
-###### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
-###### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
-###### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
-
 ##### [How to use APIs - Samples]()
 ###### [Microsoft Flow](microsoft-defender-atp/api-microsoft-flow.md)
 ###### [Power BI](microsoft-defender-atp/api-power-bi.md)
 ###### [Advanced Hunting using Python](microsoft-defender-atp/run-advanced-query-sample-python.md)
 ###### [Advanced Hunting using PowerShell](microsoft-defender-atp/run-advanced-query-sample-powershell.md)
 ###### [Using OData Queries](microsoft-defender-atp/exposed-apis-odata-samples.md)
+
+#### [Stream APIs]()
+##### [Raw data streaming (preview)](microsoft-defender-atp/raw-data-export.md)
+##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
+##### [Stream advanced hunting events to your storage account](microsoft-defender-atp/raw-data-export-storage.md)
+ 
+
+#### [SIEM integration]()
+##### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
+##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
+##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
+##### [Configure Splunk to pull detections](microsoft-defender-atp/configure-splunk.md)
+##### [Configure HP ArcSight to pull detections](microsoft-defender-atp/configure-arcsight.md)
+##### [Microsoft Defender ATP detection fields](microsoft-defender-atp/api-portal-mapping.md)
+##### [Pull detections using SIEM REST API](microsoft-defender-atp/pull-alerts-using-rest-api.md)
+##### [Troubleshoot SIEM tool integration issues](microsoft-defender-atp/troubleshoot-siem.md)
+
 
 #### [Reporting]()
 ##### [Power BI - How to use API - Samples](microsoft-defender-atp/api-power-bi.md)
