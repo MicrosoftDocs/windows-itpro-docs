@@ -25,11 +25,11 @@ ms.topic: article
 ## Methods
 Method |Return Type |Description
 :---|:---|:---
-[List all recommendations](get-all-recommendations.md) | Recommendation collection | 
-[Get recommendation by Id](get-recommendation-by-id.md) | Recommendation | 
-[Get recommendation software](get-recommendation-software.md)| [Software](software.md) |
-[Get recommendation machines](get-recommendation-machines.md)|MachineRef collection | 
-[Get recommendation vulnerabilities](get-recommendation-vulnerabilities.md) | [Vulnerability](vulnerability.md) collection |  
+[List all recommendations](get-all-recommendations.md) | Recommendation collection | Retrieves a list of all security recommendations affecting the organization
+[Get recommendation by Id](get-recommendation-by-id.md) | Recommendation | Retrieves a security recommendation by its ID
+[Get recommendation software](get-recommendation-software.md)| [Software](software.md) | Retrieves a security recommendation related to a specific software
+[Get recommendation machines](get-recommendation-machines.md)|MachineRef collection | Retrieves a list of machines associated with the security recommendation
+[Get recommendation vulnerabilities](get-recommendation-vulnerabilities.md) | [Vulnerability](vulnerability.md) collection | Retrieves a list of vulnerabilities associated with the security recommendation
 
 
 ## Properties
