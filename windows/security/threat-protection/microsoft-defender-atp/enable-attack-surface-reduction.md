@@ -19,7 +19,7 @@ manager: dansimp
 
 # Enable attack surface reduction rules
 
-[Attack surface reduction rules](attack-surface-reduction.md) help prevent actions and apps that malware often uses to infect computers. You can set attack surface reduction rules for computers running Windows 10 or Windows Server 2019.
+[Attack surface reduction rules](attack-surface-reduction.md) help prevent actions that malware often abuse to compromise devices and networks. You can set attack surface reduction rules for computers running Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, and Windows Server 2019.
 
 Each ASR rule contains three settings:
 

@@ -23,9 +23,9 @@ manager: dansimp
 
 * [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Attack surface reduction rules help prevent actions and apps that are typically used by exploit-seeking malware to infect machines. Attack surface reduction rules are supported on Windows Server 2019, as well as Windows 10 clients.
+Attack surface reduction rules help prevent actions that are typically used by malware to compromise devices or networks. Attack surface reduction rules are supported on Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, and Windows Server 2019.
 
-This topic helps you evaluate attack surface reduction rules. It explains how to enable audit mode so you can test the feature directly in your organization.
+Learn how to evaluate attack surface reduction rules, by enabling audit mode to test the feature directly in your organization.
 
 > [!TIP]
 > You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
