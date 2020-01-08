@@ -966,6 +966,11 @@
 "redirect_document_id": false
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/overview-hunting.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview",
 "redirect_document_id": false
@@ -974,6 +979,51 @@
 "source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference",
 "redirect_document_id": false
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-filecreationevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicefileevents-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-imageloadevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceimageloadevents-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-logonevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicelogonevents-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-machineinfo-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceinfo-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-machinenetworkinfo-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicenetworkinfo-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-miscevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceevents-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-networkcommunicationevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicenetworkevents-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-processcreationevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceprocessevents-table",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-registryevents-table.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-deviceregistryevents-table",
+"redirect_document_id": true
 },
 {
 "source_path": "windows/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection.md",
@@ -1664,11 +1714,6 @@
 {
 "source_path": "windows/security/threat-protection/windows-defender-atp/overview-hardware-based-isolation.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-hardware-based-isolation",
-"redirect_document_id": true
-},
-{
-"source_path": "windows/security/threat-protection/windows-defender-atp/overview-hunting-windows-defender-advanced-threat-protection.md",
-"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview",
 "redirect_document_id": true
 },
 {
