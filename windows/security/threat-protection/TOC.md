@@ -487,13 +487,6 @@
 
 #### [Configure managed security service provider (MSSP) support](microsoft-defender-atp/configure-mssp-support.md)
 
-### [Partner integration scenarios]()
-#### [Technical partner opportunities](microsoft-defender-atp/partner-integration.md)
-#### [Managed security service provider opportunity](microsoft-defender-atp/mssp-support.md)
-#### [Become a Microsoft Defender ATP partner](microsoft-defender-atp/get-started-partner-integration.md)
-
-
-
 ### [Configure Microsoft threat protection integration]()
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
@@ -530,6 +523,14 @@
 ##### [Offboarding machines](microsoft-defender-atp/offboard-machines.md)
   
 #### [Configure Microsoft Defender Security Center time zone settings](microsoft-defender-atp/time-settings.md)
+
+
+
+
+## [Partner integration scenarios]()
+### [Technical partner opportunities](microsoft-defender-atp/partner-integration.md)
+### [Managed security service provider opportunity](microsoft-defender-atp/mssp-support.md)
+### [Become a Microsoft Defender ATP partner](microsoft-defender-atp/get-started-partner-integration.md)
 
 
 ## [Troubleshoot Microsoft Defender ATP]()
