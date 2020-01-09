@@ -142,7 +142,7 @@ Windows 10, version 1803 and later, allows users to change their diagnostic data
 
 #### 2.3.7 Diagnostic data: Managing device-based data delete
 
-Windows 10, version 1809 and later, allows a user to delete diagnostic data collected from their device by going into **Settings** > **Privacy** > **Diagnostic & feedback** and clicking the **Delete** button. An IT administrator can also delete diagnostic data for a device using the [Clear-WindowsDiagnosticData](https://docs.microsoft.com/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData?view=win10-ps) PowerShell cmdlet script.
+Windows 10, version 1803 and later, allows a user to delete diagnostic data collected from their device by going into **Settings** > **Privacy** > **Diagnostic & feedback** and clicking the **Delete** button. An IT administrator can also delete diagnostic data for a device using the [Clear-WindowsDiagnosticData](https://docs.microsoft.com/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData?view=win10-ps) PowerShell cmdlet script.
 
 An administrator can disable a user’s ability to delete their device’s diagnostic data by setting the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Disable deleting diagnostic data** or the MDM policy `DisableDeviceDelete`.
 
