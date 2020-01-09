@@ -359,7 +359,7 @@
 ###### [Troubleshoot issues during onboarding](microsoft-defender-atp/troubleshoot-onboarding.md)
 ###### [Troubleshoot subscription and portal access issues](microsoft-defender-atp/troubleshoot-onboarding-error-messages.md)
 
-#### [Microsoft Defender ATP API]()
+#### [Microsoft Defender ATP API Schema]()
 ##### [Get started with Microsoft Defender ATP APIs]()
 ###### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
 ###### [Access the Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
@@ -442,7 +442,7 @@
 ###### [Advanced Hunting using PowerShell](microsoft-defender-atp/run-advanced-query-sample-powershell.md)
 ###### [Using OData Queries](microsoft-defender-atp/exposed-apis-odata-samples.md)
 
-#### [Stream APIs]()
+#### [Raw data streaming API]()
 ##### [Raw data streaming (preview)](microsoft-defender-atp/raw-data-export.md)
 ##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
 ##### [Stream advanced hunting events to your storage account](microsoft-defender-atp/raw-data-export-storage.md)
@@ -485,11 +485,14 @@
 ###### [Using machine groups](microsoft-defender-atp/machine-groups.md)
 ###### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
 
-### [Partner integration opportunities]()
-#### [Partner opportunities and scenarios](microsoft-defender-atp/partner-integration.md)
-##### [Become a Microsoft Defender ATP integration partner](microsoft-defender-atp/get-started-partner-integration.md)
-#### [Managed security service provider support](microsoft-defender-atp/mssp-support.md)
-##### [Configure managed security service provider (MSSP) support](microsoft-defender-atp/configure-mssp-support.md)
+#### [Configure managed security service provider (MSSP) support](microsoft-defender-atp/configure-mssp-support.md)
+
+### [Partner integration scenarios]()
+#### [Technical partner opportunities](microsoft-defender-atp/partner-integration.md)
+#### [Managed security service provider opportunity](microsoft-defender-atp/mssp-support.md)
+#### [Become a Microsoft Defender ATP partner](microsoft-defender-atp/get-started-partner-integration.md)
+
+
 
 ### [Configure Microsoft threat protection integration]()
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)

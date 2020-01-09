@@ -49,4 +49,7 @@ Indicator of compromise (IoCs) matching is an essential feature in every endpoin
 
 The above scenarios serve as examples of the extensibility of the platform. You are not limited to these and we certainly encourage you leverage the open framework to discover and explore other scenarios.
 
-Follow the steps in [Become a Microsoft Defender ATP integration partner](get-started-partner-integration.md) to become a Microsoft Defender ATP partner.
+Follow the steps in [Become a Microsoft Defender ATP partner](get-started-partner-integration.md) to integrate your solution in Microsoft Defender ATP.
+
+## Related topic
+- [Overview of management and APIs](management-apis.md)

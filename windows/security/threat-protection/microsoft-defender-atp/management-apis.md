@@ -46,7 +46,7 @@ Microsoft Defender ATP exposes much of its data and actions through a set of pro
 ![Image of available API and integration in Microsoft Defender ATP](images/mdatp-apis.png)
 
 The Microsoft Defender ATP APIs can be grouped into three:
-- Microsoft Defender ATP APIs (includes the investigation, response, and entities)
+- Microsoft Defender ATP APIs 
 - Raw data streaming API
 - SIEM integration
 
@@ -59,17 +59,21 @@ The **Investigation API** exposes the richness of Microsoft Defender ATP - expos
 
 The **Response API** exposes the ability to take actions in the service and on devices, enabling customers to ingest indicators, manage settings, alert status, as well as take response actions on devices programmatically such as isolate machines from the network, quarantine files, and others. 
 
-### Streaming API 
-Allows you to receive real-time event and alerts from instances as they occur within a single data stream, providing a low latency, high throughput delivery mechanism. For more information see, [Raw data streaming API](raw-data-export.md).
+## Raw data streaming API 
+Microsoft Defender ATP raw data streaming API provides the ability for customers to ship real-time events and alerts from their instances as they occur within a single data stream, providing a low latency, high throughput delivery mechanism.
+
+The Microsoft Defender ATP event information is pushed directly to Azure storage for long-term data retention, or to Azure Event Hubs for consumption by visualization services or additional data processing engines. 
+
+For more information see, [Raw data streaming API](raw-data-export.md).
 
 
-### SIEM API
+## SIEM API
 When you enable security information and event management (SIEM) integration it allows you to pull detections from Microsoft Defender Security Center using your SIEM solution or by connecting directly to the detections REST API. This activates the SIEM connector access details section with pre-populated values and an application is created under you Azure Active Directory (AAD) tenant. For more information see, [SIEM integration](enable-siem-integration.md)
 
 
 ## Related topics
 - [Access the Microsoft Defender Advanced Threat Protection APIs ](apis-intro.md)
 - [Supported APIs](exposed-apis-list.md)
-
+- [Technical partner opportunities](partner-integration.md)
 
 
