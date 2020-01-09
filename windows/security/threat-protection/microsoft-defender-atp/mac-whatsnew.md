@@ -19,6 +19,10 @@ ms.topic: conceptual
 
 # What's new in Microsoft Defender Advanced Threat Protection for Mac
 
+## 100.80.42
+
+- Bug fixes
+
 ## 100.79.42
 
 - Fixed an issue where Microsoft Defender ATP for Mac was sometimes interfering with Time Machine

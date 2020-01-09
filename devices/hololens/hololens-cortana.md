@@ -36,6 +36,9 @@ Get around HoloLens faster with these basic commands. In order to use these you 
 
 Use these commands throughout Windows Mixed Reality to get around faster. Some commands use the gaze cursor, which you bring up by saying “select.”
 
+>[!NOTE]
+>Hand rays are not supported on HoloLens (1st Gen).
+
 | Say this | To do this |
 | - | - |
 | "Select" | Say "select" to bring up the gaze cursor. Then, turn your head to position the cursor on the thing you want to select, and say “select” again. |
@@ -56,7 +59,7 @@ To use these commands, gaze at a 3D object, hologram, or app window.
 | "Face me" | Turn it to face you |
 | "Move this" | Move it (follow your gaze) |
 | "Close" | Close it |
-| "Follow" / "Stop following" | Make it follow you as you move around |
+| "Follow me" / "Stop following" | Make it follow you as you move around |
 
 ### See it, say it
 
@@ -64,7 +67,7 @@ Many buttons and other elements on HoloLens also respond to your voice—for exa
 
 ### Dictation mode
 
-Tired of typing? Switch to dictation mode any time that the holographic keyboard is active. To get started, select the microphone icon or say "Start dictating." To stop dictating, select **Done** or say "Stop dictating." To delete what you just dictated, say "Delete that."
+Tired of typing? Switch to dictation mode any time that the holographic keyboard is active. To get started, select the microphone button or say "Start dictating." To stop dictating, select the button again or say "Stop dictating." To delete what you just dictated, say "Delete that."
 
 > [!NOTE]
 > To use dictation mode, you have to have an internet connection.

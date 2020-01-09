@@ -1,6 +1,6 @@
 ---
 title: Overview of Windows as a service (Windows 10)
-description: In Windows 10, Microsoft has streamlined servicing to make operating system updates simpler to test, manage, and deploy.
+description: Windows as a service introduces a new way to build, deploy, and service Windows. Learn how Windows as a service works.
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage

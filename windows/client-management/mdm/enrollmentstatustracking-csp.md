@@ -1,6 +1,6 @@
 ---
 title: EnrollmentStatusTracking CSP
-description: During Autopilot deployment, you can configure the Enrollment Status Page (ESP) to block the device use until the required apps are installed.
+description: Learn how to perform a hybrid certificate trust deployment of Windows Hello for Business, for systems with no previous installations.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

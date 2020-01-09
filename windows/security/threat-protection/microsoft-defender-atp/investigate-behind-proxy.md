@@ -60,12 +60,12 @@ Event's information:
 
 
 ## Hunt for connection events using advanced hunting 
-All new connection events are available for you to hunt on through advanced hunting as well. Since these events are connection events, you can find them under the NetworkCommunicationEvents table under the `ConnecionSuccess` action type.
+All new connection events are available for you to hunt on through advanced hunting as well. Since these events are connection events, you can find them under the DeviceNetworkEvents table under the `ConnecionSuccess` action type.
 
 Using this simple query will show you all the relevant events:
 
 ```
-NetworkCommunicationEvents
+DeviceNetworkEvents
 | where ActionType == "ConnectionSuccess" 
 | take 10
 ```
@@ -77,7 +77,7 @@ You can also filter out  events that are related to connection to the proxy itse
 Use the following query to filter out the connections to the proxy:
 
 ```
-NetworkCommunicationEvents
+DeviceNetworkEvents
 | where ActionType == "ConnectionSuccess" and RemoteIP != "ProxyIP"  
 | take 10
 ```

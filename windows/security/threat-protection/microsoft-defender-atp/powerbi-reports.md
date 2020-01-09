@@ -1,7 +1,7 @@
 ---
-title: Create and build Power BI reports using Microsoft Defender ATP data
+title: Create and build Power BI reports using Microsoft Defender ATP data connectors
 description: Get security insights by creating and building Power BI dashboards using data from Microsoft Defender ATP and other data sources.
-keywords: settings, power bi, power bi service, power bi desktop, reports, dashboards, connectors , security insights, mashup
+keywords: settings, power bi, power bi service, power bi desktop, reports, dashboards, connectors, security insights, mashup
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -18,7 +18,7 @@ ms.topic: article
 ---
 
 
-# Create and build Power BI reports using Microsoft Defender ATP data (Deprecated)
+# Create and build Power BI reports using Microsoft Defender ATP data connectors (Deprecated)
 
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)

@@ -1,6 +1,6 @@
 ---
 title: User resource type
-description: Retrieves top recent alerts.
+description: Retrieve recent Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) alerts related to users.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

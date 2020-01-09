@@ -1,6 +1,6 @@
 ---
 title: File resource type
-description: Retrieves information associated with files alerts.
+description: Retrieve recent Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) alerts related to files.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
