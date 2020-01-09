@@ -359,7 +359,7 @@
 ###### [Troubleshoot issues during onboarding](microsoft-defender-atp/troubleshoot-onboarding.md)
 ###### [Troubleshoot subscription and portal access issues](microsoft-defender-atp/troubleshoot-onboarding-error-messages.md)
 
-#### [Microsoft Defender ATP API Schema]()
+#### [Microsoft Defender ATP API]()
 ##### [Get started with Microsoft Defender ATP APIs]()
 ###### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
 ###### [Access the Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
@@ -368,7 +368,7 @@
 ###### [Get access with user context](microsoft-defender-atp/exposed-apis-create-app-nativeapp.md)
 ###### [Get partner application access](microsoft-defender-atp/exposed-apis-create-app-partners.md)
 
-##### [Microsoft Defender ATP APIs]()
+##### [Microsoft Defender ATP APIs Schema]()
 ###### [Supported Microsoft Defender ATP APIs](microsoft-defender-atp/exposed-apis-list.md)
 ###### [Advanced Hunting](microsoft-defender-atp/run-advanced-query-api.md)
 
@@ -487,6 +487,12 @@
 
 #### [Configure managed security service provider (MSSP) integration](microsoft-defender-atp/configure-mssp-support.md)
 
+## [Partner integration scenarios]()
+### [Technical partner opportunities](microsoft-defender-atp/partner-integration.md)
+### [Managed security service provider opportunity](microsoft-defender-atp/mssp-support.md)
+### [Become a Microsoft Defender ATP partner](microsoft-defender-atp/get-started-partner-integration.md)
+
+
 ### [Configure Microsoft threat protection integration]()
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
@@ -527,10 +533,7 @@
 
 
 
-## [Partner integration scenarios]()
-### [Technical partner opportunities](microsoft-defender-atp/partner-integration.md)
-### [Managed security service provider opportunity](microsoft-defender-atp/mssp-support.md)
-### [Become a Microsoft Defender ATP partner](microsoft-defender-atp/get-started-partner-integration.md)
+
 
 
 ## [Troubleshoot Microsoft Defender ATP]()
