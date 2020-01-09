@@ -485,7 +485,7 @@
 ###### [Using machine groups](microsoft-defender-atp/machine-groups.md)
 ###### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
 
-#### [Configure managed security service provider (MSSP) support](microsoft-defender-atp/configure-mssp-support.md)
+#### [Configure managed security service provider (MSSP) integration](microsoft-defender-atp/configure-mssp-support.md)
 
 ### [Configure Microsoft threat protection integration]()
 #### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
