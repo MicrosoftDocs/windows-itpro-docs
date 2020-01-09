@@ -3068,7 +3068,7 @@ The following list shows the supported values:
 
 Allows an administrator to specify any valid threat severity levels and the corresponding default action ID to take.
 
-This value is a list of threat severity level IDs and corresponding actions, separated by a<strong>|</strong> using the format "*threat level*=*action*|*threat level*=*action*". For example "1=6|2=2|4=10|5=3
+This value is a list of threat severity level IDs and corresponding actions, separated by a <strong>|</strong> using the format "*threat level*=*action*|*threat level*=*action*". For example, "1=6|2=2|4=10|5=3".
 
 The following list shows the supported values for threat severity levels:
 
