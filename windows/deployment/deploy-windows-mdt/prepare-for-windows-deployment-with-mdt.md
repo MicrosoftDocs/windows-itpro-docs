@@ -23,13 +23,53 @@ ms.topic: article
 
 This topic will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT). It covers the installation of the necessary system prerequisites, the creation of shared folders and service accounts, and the configuration of security permissions in the file system and in Active Directory.
 
-For the purposes of this topic, we will use two computers: **DC01** and **MDT01**
-- Both servers are running Windows Server 2012 R2. You can also use a later version of Windows Server.
-- DC01 is a domain controller and DNS server for contoso.com, representing the fictitious Contoso Corporation.
+## Network and server infrastructure
+
+For the purposes of this topic, we will use three computers: **DC01**, **MDT01**, and **HV01**.
+- All servers are running Windows Server 2019. 
+    - You can use an earlier version of Windows Server with minor modifications to some procedures. 
+    - Although MDT supports Windows Server 2008 R2, At least Windows Server 2012 R2 or later is requried to perform the procedures in this guide.
+- DC01 is a domain controller, DHCP server, and DNS server for contoso.com, representing the fictitious Contoso Corporation.
 - MDT01 is a domain member server in contoso.com and has a D: drive that will be used for data.
     - The data drive requires at least 100GB of disk space.
- 
-For more details on requirements for the proof of concept environment used in this guide, see [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md).
+- HV01 is a Hyper-V host computer that is used to build a Windows 10 reference image.
+    - See [Hyper-V requirements](#hyper-v-requirements) below for more information.
+
+## Client computers
+
+Several client computers are referenced in this guide using hostnames PC0001 to PC0007.
+
+- **PC0001.** A computer running Windows 10 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced as the admin workstation.
+  - Client name: PC0001
+  - IP Address: DHCP
+- **PC0002.** A computer running Windows 7 SP1 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced during the migration scenarios.
+  - Client name: PC0002
+  - IP Address: DHCP
+- **PC0003 - PC0007** These are other client computers similar to PC0001 and PC0002 that are used in this guide and another guide for various scenarios. The device names are incremented for clarity within each scenario. For example, PC0003 and PC0004 are running Windows 7 just like PC0002, but are used for Configuration Manager refresh and replace scenarios, respectively.
+
+## Storage requirements
+
+MDT01 and HV01 should have a data drive (D:) that can support up to 200 GB of data. The system drives on all computers (C:) can be 50 GB in size, but 100 GB is recommended.
+
+### Hyper-V requirements
+
+If you do not have access to a Hyper-V server, you can install Hyper-V on a Windows 10 or Windows 8.1 computer temporarily to use for building reference images. For instructions on how to enable Hyper-V on Windows 10, see the [Verify support and install Hyper-V](https://docs.microsoft.com/windows/deployment/windows-10-poc#verify-support-and-install-hyper-v) section in the Windows 10 deployment test lab guide (this guide is a less detailed version of the current guide, but with more instructions for installing Hyper-V).
+
+## Network requirements
+
+For this lab, all server and client computers are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and resolve all DNS names and Active Directory information for the contoso.com domain.  Internet connectivity is also requried to download OS and applicaton updates.
+
+### Domain credentials
+
+You can use your own Active Directory domain and credentials, but you'll need to specify your custom information and use it to replace the credentials below that are used in this guide.
+
+**Active Directory domain name**: contoso.com<br>
+**Domain administrator username**: administrator<br>
+**Domain administrator password**: pass@word1
+
+### Organizational unit structure
+
+![figure 2](../images/mdt-01-fig02.jpg)
 
 ## Install Windows ADK for Windows 10
 
