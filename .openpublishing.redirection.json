@@ -15530,6 +15530,11 @@
 "source_path": "windows/deployment/planning/windows-10-1903-removed-features.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features",
 "redirect_document_id": false
+},
+{
+"source_path": "windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md",
+"redirect_url": "https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt",
+"redirect_document_id": false
 }
 ]
 }

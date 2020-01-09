@@ -20,6 +20,3 @@
 ### [Assign applications using roles in MDT](assign-applications-using-roles-in-mdt.md)
 ### [Use web services in MDT](use-web-services-in-mdt.md)
 ### [Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt.md)
-
-## Orphan topics
-### [Deploying Windows 10 with MDT](deploy-windows-10-with-the-microsoft-deployment-toolkit.md)

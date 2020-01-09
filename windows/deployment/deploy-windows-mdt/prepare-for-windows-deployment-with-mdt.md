@@ -23,7 +23,9 @@ ms.topic: article
 
 This topic will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT). It covers the installation of the necessary system prerequisites, the creation of shared folders and service accounts, and the configuration of security permissions in the file system and in Active Directory.
 
-## Network and server infrastructure
+## Requirements
+
+### Network and server infrastructure
 
 For the purposes of this topic, we will use three computers: **DC01**, **MDT01**, and **HV01**.
 - All servers are running Windows Server 2019. 
@@ -35,7 +37,7 @@ For the purposes of this topic, we will use three computers: **DC01**, **MDT01**
 - HV01 is a Hyper-V host computer that is used to build a Windows 10 reference image.
     - See [Hyper-V requirements](#hyper-v-requirements) below for more information.
 
-## Client computers
+### Client computers
 
 Several client computers are referenced in this guide using hostnames PC0001 to PC0007.
 
@@ -47,7 +49,7 @@ Several client computers are referenced in this guide using hostnames PC0001 to 
   - IP Address: DHCP
 - **PC0003 - PC0007** These are other client computers similar to PC0001 and PC0002 that are used in this guide and another guide for various scenarios. The device names are incremented for clarity within each scenario. For example, PC0003 and PC0004 are running Windows 7 just like PC0002, but are used for Configuration Manager refresh and replace scenarios, respectively.
 
-## Storage requirements
+### Storage requirements
 
 MDT01 and HV01 should have a data drive (D:) that can support up to 200 GB of data. The system drives on all computers (C:) can be 50 GB in size, but 100 GB is recommended.
 
@@ -55,7 +57,7 @@ MDT01 and HV01 should have a data drive (D:) that can support up to 200 GB of da
 
 If you do not have access to a Hyper-V server, you can install Hyper-V on a Windows 10 or Windows 8.1 computer temporarily to use for building reference images. For instructions on how to enable Hyper-V on Windows 10, see the [Verify support and install Hyper-V](https://docs.microsoft.com/windows/deployment/windows-10-poc#verify-support-and-install-hyper-v) section in the Windows 10 deployment test lab guide (this guide is a less detailed version of the current guide, but with more instructions for installing Hyper-V).
 
-## Network requirements
+### Network requirements
 
 For this lab, all server and client computers are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and resolve all DNS names and Active Directory information for the contoso.com domain.  Internet connectivity is also requried to download OS and applicaton updates.
 
@@ -71,11 +73,11 @@ You can use your own Active Directory domain and credentials, but you'll need to
 
 ![figure 2](../images/mdt-01-fig02.jpg)
 
-## Install Windows ADK for Windows 10
+## Install the Windows ADK
 
 These steps assume that you have the MDT01 member server running and configured as a domain member server.
 
-On MTD01, visit the [Download and install the Windows ADK](https://go.microsoft.com/fwlink/p/?LinkId=526803) page and download the following to the **D:\\Downloads\\ADK** folder on MDT01 (you will need to create the folder):
+On MTD01, visit the [Download and install the Windows ADK](https://go.microsoft.com/fwlink/p/?LinkId=526803) page and download the following items to the **D:\\Downloads\\ADK** folder on MDT01 (you will need to create this folder):
 - [The Windows ADK for Windows 10](https://go.microsoft.com/fwlink/?linkid=2086042)
 - [The Windows PE add-on for the ADK](https://go.microsoft.com/fwlink/?linkid=2087112)
 - [The Windows System Image Manager (WSIM) 1903 update](https://go.microsoft.com/fwlink/?linkid=2095334)
@@ -213,6 +215,13 @@ The following is an example of files that have been downloaded and installed (in
 ![downloads](../images/downloads.png)
 
 When you have completed all the steps in this section to prepare for deployment, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
+
+## Sample files
+
+The following sample files are available to help automate some MDT deployment tasks:
+-   [Gather.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619361). This sample Windows PowerShell script performs the MDT Gather process in a simulated MDT environment. This allows you to test the MDT gather process and check to see if it is working correctly without performing a full Windows deployment.
+-   [Set-OUPermissions.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619362). This sample Windows PowerShell script creates a domain account and then configures OU permissions to allow the account to join machines to the domain in the specified OU.
+-   [MDTSample.zip](https://go.microsoft.com/fwlink/p/?LinkId=619363). This sample web service shows you how to configure a computer name dynamically using MDT.
 
 ## Related topics
 
