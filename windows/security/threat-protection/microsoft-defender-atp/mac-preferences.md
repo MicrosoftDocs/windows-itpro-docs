@@ -371,10 +371,6 @@ The following configuration profile will:
 ### Intune profile
 
 ```XML
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1">
-    <dict>
         <key>PayloadUUID</key>
         <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
         <key>PayloadType</key>
@@ -443,8 +439,6 @@ The following configuration profile will:
                 </dict>
             </dict>
         </array>
-    </dict>
-</plist>
 ```
 
 ## Full configuration profile example
