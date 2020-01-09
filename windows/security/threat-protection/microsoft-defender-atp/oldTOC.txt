@@ -341,6 +341,7 @@
 ###### [Hello World](api-hello-world.md)
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](exposed-apis-create-app-nativeapp.md)
+###### [Get partner application access](microsoft-defender-atp/exposed-apis-create-app-partners.md)
 
 ##### [APIs]()
 ###### [Supported Microsoft Defender ATP APIs](exposed-apis-list.md)
