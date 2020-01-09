@@ -25,16 +25,6 @@ This guide will walk you through the process of deploying Windows 10 in an ente
 
 This topic also provides a detailed description of the [proof of concept environment](#proof-of-concept-environment) used in this guide, and [sample files](#sample-files) are provided below to help you put the information you learn into practice more quickly.
 
-## What is MDT
-
-MDT is a unified collection of tools, processes, and guidance for automating desktop and server deployment. In addition to reducing deployment time and standardizing desktop and server images, MDT enables you to more easily manage security and ongoing configurations. MDT builds on top of the core deployment tools in the Windows Assessment and Deployment Kit (Windows ADK) with additional guidance and features designed to reduce the complexity and time required for deployment in an enterprise environment.
-
-MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8.1, and Windows Server. It also includes support for zero-touch installation (ZTI) with Microsoft System Center Configuration Manager.
-
-See [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md) for more details, including a description of many of the key features and options available in MDT. A list of components that support Lite Touch Installation (LTI) is also provided.
-
-To download the latest version of MDT, visit the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
-
 ## Proof-of-concept environment
 
 For the purposes of this guide we will use the following servers and client machines: DC01, MDT01, CM01, PC0001, and PC0002.

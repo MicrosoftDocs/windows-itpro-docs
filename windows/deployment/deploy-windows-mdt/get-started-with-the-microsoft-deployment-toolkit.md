@@ -21,28 +21,17 @@ ms.topic: article
 **Applies to**
 - Windows 10
 
-This guide will help you understand how to install, configure, and use the [Microsoft Deployment Toolkit (MDT)](https://docs.microsoft.com/en-us/configmgr/mdt/index) to deploy Windows 10. 
-
-## Topics in this guide
-
-| Topic | Description | Required / optional |
-| :---   | :---      | :--- |
-| [Get started with MDT](get-started-with-the-microsoft-deployment-toolkit.md) | A detailed overview of MDT (this topic). | Optional |
-| [Deploying Windows 10 with MDT](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) | A description of the lab infrastructure and requirements. | Optional |
-| [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md) | Installation of MDT.  | Required |
-| [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) | Create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image.       | Required |
-| [Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md) | Take a reference image for Windows 10 and deploy that image to your environment using MDT.       | Required  |
-| [Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md) | Replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations. | Optional  |
-| [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md) | Use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the computer refresh process.  | Required |
-| [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md) | Use MDT Lite Touch Installation (LTI) to replace the a Windows 7 computer with a Windows 10 computer using the replace process.  | Required  |
-| [Perform an in-place upgrade to Windows 10 with MDT](upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md) | Use an MDT task sequence to completely automate the in-place upgrade process. | Required |
-| [Configure MDT settings](configure-mdt-settings.md) | Learn about configuring MDT customizations for your environment. | Optional |
+This topic provides an overview of the features, components, and capabilities of the Microsoft Deployment Toolkit (MDT).  When you are ready to install and start using MDT, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
 ## Introduction
 
-MDT is one of the most important tools available to IT professionals today. You can use it to create reference images or as a complete deployment solution. MDT also can be used to extend the operating system deployment features available in [Configuration Manager](https://docs.microsoft.com/configmgr/).
+The Microsoft Deployment Toolkit (MDT) is a unified collection of tools, processes, and guidance for automating desktop and server deployment. You can use it to create reference images or as a complete deployment solution.  MDT is one of the most important tools available to IT professionals today.
 
-In addition to familiarizing you with the features and options available in MDT, this topic will walk you through the process of preparing for deploying Windows 10 using MDT by configuring Active Directory, creating an organizational unit (OU) structure, creating service accounts, configuring log files and folders, and installing the tools needed to view the logs and continue with the deployment process.
+In addition to reducing deployment time and standardizing desktop and server images, MDT enables you to more easily manage security and ongoing configurations. MDT builds on top of the core deployment tools in the Windows Assessment and Deployment Kit (Windows ADK) with additional guidance and features designed to reduce the complexity and time required for deployment in an enterprise environment.
+
+MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8.1, and Windows Server. It also includes support for zero-touch installation (ZTI) with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/).
+
+To download the latest version of MDT, visit the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
 
 ## Key features in MDT
 
@@ -173,12 +162,10 @@ MDT uses many log files during operating system deployments. By default the logs
 
 **Note**  
 The easiest way to view log files is to use Configuration Manager Trace (CMTrace), which is included in the [System Center 2012 R2 Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717).
- 
+
 ## Monitoring
 
 On the deployment share, you also can enable monitoring. After you enable monitoring, you will see all running deployments in the Monitor node in the Deployment Workbench.
-
-
 
 ## Related topics
 
