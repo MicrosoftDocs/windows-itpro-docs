@@ -23,6 +23,7 @@ ms.date: 10/08/2019
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+> [!TIP]
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-abovefoldlink)
 
 Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/). You can use Kusto syntax and operators to construct queries that locate information in the [schema](advanced-hunting-schema-reference.md) specifically structured for advanced hunting. To understand these concepts better, run your first query.
@@ -97,16 +98,16 @@ Now that you've run your first query and have a general idea of its components, 
 
 | Operator | Description and usage |
 |--|--|
-| **`where`** | Filter a table to the subset of rows that satisfy a predicate. |
-| **`summarize`** | Produce a table that aggregates the content of the input table. |
-| **`join`** | Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table. |
-| **`count`** | Return the number of records in the input record set. |
-| **`top`** | Return the first N records sorted by the specified columns. |
-| **`limit`** | Return up to the specified number of rows. |
-| **`project`** | Select the columns to include, rename or drop, and insert new computed columns. |
-| **`extend`** | Create calculated columns and append them to the result set. |
-| **`makeset`** |  Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group. |
-| **`find`** | Find rows that match a predicate across a set of tables. |
+| `where` | Filter a table to the subset of rows that satisfy a predicate. |
+| `summarize` | Produce a table that aggregates the content of the input table. |
+| `join` | Merge the rows of two tables to form a new table by matching values of the specified column(s) from each table. |
+| `count` | Return the number of records in the input record set. |
+| `top` | Return the first N records sorted by the specified columns. |
+| `limit` | Return up to the specified number of rows. |
+| `project` | Select the columns to include, rename or drop, and insert new computed columns. |
+| `extend` | Create calculated columns and append them to the result set. |
+| `makeset` |  Return a dynamic (JSON) array of the set of distinct values that Expr takes in the group. |
+| `find` | Find rows that match a predicate across a set of tables. |
 
 To see a live example of these operators, run them from the **Get started** section of the advanced hunting page.
 
@@ -116,11 +117,11 @@ Data in advanced hunting tables are generally classified into the following data
 
 | Data type | Description and query implications |
 |--|--|
-| **datetime** | Data and time information typically representing event timestamps |
-| **string** | Character string |
-| **bool** | True or false |
-| **int** | 32-bit numeric value  |
-| **long** | 64-bit numeric value |
+| `datetime` | Data and time information typically representing event timestamps |
+| `string` | Character string |
+| `bool` | True or false |
+| `int` | 32-bit numeric value  |
+| `long` | 64-bit numeric value |
 
 ## Use sample queries
 
@@ -140,4 +141,5 @@ For detailed information about the query language, see [Kusto query language doc
 - [Understand the schema](advanced-hunting-schema-reference.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 
+> [!TIP]
 > Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhunting-belowfoldlink)
