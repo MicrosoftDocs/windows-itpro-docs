@@ -31,7 +31,7 @@ For the purposes of this topic, we will use three computers: DC01, MDT01, and PC
     ![figure 1](../images/mdt-08-fig01.png)
 
 >[!NOTE]
->See [Deploying Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) for more detailed information about the setup for this lab.
+>See [Deploying Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) for detailed information about the setup for this guide.
 
 ## The reference image
 
@@ -47,7 +47,7 @@ With Windows 10, there is no hard requirement to create reference images. Howev
 
 ### Create the MDT build lab deployment share
 
-- On MDT01, log on as admin using a password of <b>pass@word3</b> (credentials from the [prepare for deployment](prepare-for-windows-deployment-with-mdt.md) topic).
+- On MDT01, log on as administrator using a password of <b>pass@word1</b> (credentials from the [prepare for deployment](prepare-for-windows-deployment-with-mdt.md) topic).
 - Start the MDT deployment workbench, and pin this to the taskbar for easy access.
 - Using the Deployment Workbench, right-click **Deployment Shares** and select **New Deployment Share**.
 - Use the following settings for the New Deployment Share Wizard:
@@ -85,7 +85,7 @@ MDT supports adding both full source Windows 10 DVDs (ISOs) and custom images t
  
 ### Add Windows 10 Enterprise x64 (full source)
 
-1. Sign on to MDT01 on as **CONTOSO\\admin** and copy the content of a Windows 10 Enterprise x64 DVD/ISO to the **D:\\Downloads\\Windows 10 Enterprise x64** folder on MDT01. See the following example.
+1. Sign on to MDT01 on as **CONTOSO\\administrator** and copy the content of a Windows 10 Enterprise x64 DVD/ISO to the **D:\\Downloads\\Windows 10 Enterprise x64** folder on MDT01, or just insert the DVD or mount an ISO on MDT01. The following example shows the files copied to the D:\\Downloads folder, but you can also choose to import the OS directly from an ISO or DVD.
 
     ![ISO](../images/iso-data.png)
 
@@ -93,11 +93,13 @@ MDT supports adding both full source Windows 10 DVDs (ISOs) and custom images t
 3. Right-click the **Operating Systems** node, and create a new folder named **Windows 10**.
 4. Expand the **Operating Systems** node, right-click the **Windows 10** folder, and select **Import Operating System**. Use the following settings for the Import Operating System Wizard:
     - Full set of source files
-    - Source directory: <b>D:\\Downloads\\Windows 10 Enterprise x64</b>
+    - Source directory: (location of your source files)
     - Destination directory name: <b>W10EX64RTM</b>
 5. After adding the operating system, in the **Operating Systems / Windows 10** folder, double-click the added operating system name in the **Operating System** node and change the name to: **Windows 10 Enterprise x64 RTM Default Image**. See the following example.
 
     ![Default image](../images/figure4-deployment-workbench.png)
+
+>Depending on the DVD you used, there might be multiple editions. For the purposes of this guide, we are using the Windows 10 Enterprise image, but other images will also work.
 
 ## Add applications
 

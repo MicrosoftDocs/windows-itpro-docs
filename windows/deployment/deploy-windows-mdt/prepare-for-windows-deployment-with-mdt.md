@@ -166,13 +166,13 @@ To use the Active Directory Users and Computers console (instead of PowerShell):
 5.  In the **Contoso / Groups** OU, create the following OU:
     1.   Security Groups
 
-The final result of either method is shown below (the MDT_BA account will be created next).
+The final result of either method is shown below. The **MDT_BA** account will be created next.
 
 ## Create the MDT service account
 
 When creating a reference image, you need an account for MDT. The MDT build account is used for Windows Preinstallation Environment (Windows PE) to connect to MDT01.
 
-To create an MDT build account, open an elevalted Windows PowerShell prompt on DC01 and enter the following (copy and paste the entire command noticing the scroll bar at the bottom):
+To create an MDT build account, open an elevalted Windows PowerShell prompt on DC01 and enter the following (copy and paste the entire command, taking care to notice the scroll bar at the bottom). This command will create the MDT_BA user account and set the password to "pass@word1":
 
 ```powershell
 New-ADUser -Name MDT_BA -UserPrincipalName MDT_BA -path "OU=Service Accounts,OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM" -Description "MDT Build Account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -PasswordNeverExpires $true -Enabled $true
@@ -210,19 +210,17 @@ Alternatively, CMTrace formatting makes the logs much easier to read. See the sa
 
 ## Next steps
 
-The following is an example of files that have been downloaded and installed (including optional CMTrace) on MDT at this point in the lab.
-
-![downloads](../images/downloads.png)
-
 When you have completed all the steps in this section to prepare for deployment, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
 
-## Sample files
+## Appendix
 
-The following sample files are available to help automate some MDT deployment tasks:
+**Sample files**
+
+The following sample files are also available to help automate some MDT deployment tasks:
 -   [Gather.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619361). This sample Windows PowerShell script performs the MDT Gather process in a simulated MDT environment. This allows you to test the MDT gather process and check to see if it is working correctly without performing a full Windows deployment.
 -   [Set-OUPermissions.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619362). This sample Windows PowerShell script creates a domain account and then configures OU permissions to allow the account to join machines to the domain in the specified OU.
 -   [MDTSample.zip](https://go.microsoft.com/fwlink/p/?LinkId=619363). This sample web service shows you how to configure a computer name dynamically using MDT.
 
 ## Related topics
 
-[Understand the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
+[Get started with MDT](get-started-with-the-microsoft-deployment-toolkit.md)
