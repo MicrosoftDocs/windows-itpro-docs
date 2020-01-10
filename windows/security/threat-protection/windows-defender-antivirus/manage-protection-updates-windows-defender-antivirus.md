@@ -136,7 +136,7 @@ SignatureFallbackOrder
 SignatureDefinitionUpdateFileSharesSource
 ```
 
-See the following for more information:
+See the following resources for more information:
 - [Windows Defender WMIv2 APIs](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## Use Mobile Device Management (MDM) to manage the update location
