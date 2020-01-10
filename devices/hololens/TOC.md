@@ -53,15 +53,14 @@
 ## [Spatial mapping on HoloLens](hololens-spaces.md)
 
 # Update, troubleshoot, or recover HoloLens
-## [Update, troubleshoot, or recover HoloLens](hololens-management-overview.md)
 ## [Update HoloLens](hololens-update-hololens.md)
 ## [Restart, reset, or recover](hololens-recovery.md)
 ## [Troubleshoot HoloLens](hololens-troubleshooting.md)
 ## [Known issues](hololens-known-issues.md)
 ## [Frequently asked questions](hololens-faq.md)
+## [Hololens services status](hololens-status.md)
 
 # [Release Notes](hololens-release-notes.md)
-# [Hololens status](hololens-status.md)
 # [Give us feedback](hololens-feedback.md)
 # [Join the Windows Insider program](hololens-insider.md)
 # [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
