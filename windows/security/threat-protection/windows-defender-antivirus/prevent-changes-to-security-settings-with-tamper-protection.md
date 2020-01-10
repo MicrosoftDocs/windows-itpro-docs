@@ -35,7 +35,7 @@ With tamper protection, malicious apps are prevented from taking actions like th
 - Disabling cloud-delivered protection
 - Removing security intelligence updates
 
-Recent updates to tamper protection include integration with [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). This means security recommendations will now include tamper protection.
+Tamper protection now integrates with [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Security recommendations include a check to make sure tamper protection is turned on.
 
 ![Tamper protection results in security recommendations](../images/securityrecs-tamperprotect.jpg)
 
@@ -78,7 +78,7 @@ If you are a home user, or you are not subject to settings managed by a security
 
 ### Are you using Windows OS 1709?
 
-If you are using Windows OS 1709, you won't have the Windows Security app. In this case, the one of the following procedures to determine whether tamper protection is enabled.
+If you are using Windows OS 1709, you don't have the Windows Security app. In this case, the one of the following procedures to determine whether tamper protection is enabled.
 
 #### To determine whether tamper protection is turned on by using PowerShell
 
