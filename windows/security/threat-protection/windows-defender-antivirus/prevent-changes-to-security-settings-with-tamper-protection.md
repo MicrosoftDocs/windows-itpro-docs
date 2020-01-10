@@ -39,6 +39,10 @@ Recent updates to tamper protection include integration with [Threat & Vulnerabi
 
 ![Tamper protection results in security recommendations](../images/securityrecs-tamperprotect.jpg)
 
+In the results, you can select Turn on Tamper Protection.
+
+
+
 ## How it works
 
  Tamper protection essentially locks Windows Defender Antivirus and prevents your security settings from being changed through apps and methods like these:
@@ -57,6 +61,13 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 ## Turn tamper protection on (or off) for an individual machine
 
+> [!NOTE]
+> Tamper protection blocks attempts to modify Windows Defender Antivirus settings through the registry.
+> 
+> To help ensure that tamper protection doesn’t interfere with third-party security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later. (See [Security intelligence updates](https://www.microsoft.com/wdsi/definitions).)
+> 
+> Once you’ve made this update, tamper protection will continue to protect your registry settings, and will also log attempts to modify them without returning errors.
+
 If you are a home user, or you are not subject to settings managed by a security team, you can use the Windows Security app to turn tamper protection on or off. You must have appropriate admin permissions on your machine to perform the following task.
 
 1. Click **Start**, and start typing *Defender*. In the search results, select **Windows Security**.
@@ -65,13 +76,23 @@ If you are a home user, or you are not subject to settings managed by a security
 
 3. Set **Tamper Protection** to **On** or **Off**.
 
-> [!NOTE]
-> Tamper protection blocks attempts to modify Windows Defender Antivirus settings through the registry.
-> 
-> To help ensure that tamper protection doesn’t interfere with third-party security products or enterprise installation scripts that modify these settings, go to **Windows Security** and update **Security intelligence** to version 1.287.60.0 or later. (See [Security intelligence updates](https://www.microsoft.com/wdsi/definitions).)
-> 
-> Once you’ve made this update, tamper protection will continue to protect your registry settings, and will also log attempts to modify them without returning errors.
+### Are you using Windows OS 1709?
 
+If you are using Windows OS 1709, you won't have the Windows Security app. In this case, the one of the following procedures to determine whether tamper protection is enabled.
+
+#### To determine whether tamper protection is turned on by using PowerShell
+
+1. Open the Windows PowerShell app.
+2. Use the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) PowerShell cmdlet.
+3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
+
+#### To determine whether tamper protection is turned on by viewing a registry key
+
+1. Open the Registry Editor app.
+2. Go to **HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Microsoft** > **Windows Defender** > **Features**.
+3. Look for an entry of **TamperProtection** of type **REG_DWORD**, with a value of **0x5**.<br/>
+    - If you see **TamperProtection** with a value of 0, tamper protection is not turned on. 
+    - If you do not see **TamperProtection** at all, tamper protection is not turned on.  
 
 ## Turn tamper protection on (or off) for your organization using Intune
 
