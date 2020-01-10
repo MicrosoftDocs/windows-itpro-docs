@@ -49,16 +49,16 @@ You can access the security recommendation from the Microsoft Defender ATP Threa
 1. Go to the Threat & Vulnerability Management navigation menu and select **Security recommendations** to open up the list of security recommendations for the threats and vulnerabilities found in your organization. It gives you an overview of the security recommendation context: weaknesses found, related components, the application and operating system where the threat or vulnerabilities were found, network, accounts, and security controls, associated breach, threats, and recommendation insights, exposed machine trends, status, remediation type and activities. 
 ![Screenshot of Security recommendations page](images/tvm_securityrecommendation-graph.png)
 
->[!NOTE]
-> The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the amount of exposed machines, the color of the graph will change into green. This happens when the numbers on the right hand side is greater than what’s on the left,  which means an increase or decrease at the end of even a single machine will change the graph's color.
+        >[!NOTE]
+        > The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the amount of exposed machines, the color of the graph will change into green. This happens when the numbers on the right hand side is greater than what’s on the left,  which means an increase or decrease at the end of even a single machine will change the graph's color.
 
-You can filter your view based on related components, status, and remediation type. If you want to see the remediation activities of software and software versions which have reached their end-of-life, select **Active**, then select **Software update** from the **Remediation Type** filter, and click **Apply**.
-<br></br>![Screenshot of the remediation type filters for software update and uninstall](images/remediationtype_swupdatefilter.png)
+        You can filter your view based on related components, status, and remediation type. If you want to see the remediation activities of software and software versions which have reached their end-of-life, select **Active**, then select **Software update** from the **Remediation Type** filter, and click **Apply**.
+        <br></br>![Screenshot of the remediation type filters for software update and uninstall](images/remediationtype_swupdatefilter.png)
 
 2. Select the security recommendation that you need to investigate or process. 
 <br></br>![Screenshot of the security recommendation page flyout for a software which reached its end-of-life](images/secrec_flyouteolsw.png)
 
-*Top security recommendations from the dashboard*
+    *Top security recommendations from the dashboard*
 
 In a given day as a Security Administrator, you can take a look at the dashboard to see your exposure score side-by-side with your configuration score. The goal is to lower down your organization's exposure from vulnerabilities, and increase your organization's security configuration to be more resilient against cybersecurity threat attacks. The top security recommendations list can help you achieve that goal. 
 
