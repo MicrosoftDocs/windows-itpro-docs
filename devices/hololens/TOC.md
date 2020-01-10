@@ -32,7 +32,7 @@
 ## [Create, share, and view photos and video](holographic-photos-and-videos.md)
 
 # User management and access management
-## [Accounts on HoloLens](hololens-users-and-login.md)
+## [Accounts on HoloLens](hololens-identity.md)
 ## [Share your HoloLens with multiple people](hololens-multiple-users.md)
 ## [Set up HoloLens as a kiosk (single application access)](hololens-kiosk.md)
 ## [Set up limited application access](hololens-kiosk.md)
