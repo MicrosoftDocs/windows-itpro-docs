@@ -52,7 +52,7 @@ setupapi.dev.log<br>
 Event logs (*.evtx)</td>
 <td>$Windows.~BT\Sources\Rollback<td>Additional logs collected during rollback.</td>
 <td>
-Setupmem.dmp: If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<br>
+Setupmem.dmp: If OS bug checks during upgrade, setup will attempt to extract a mini-dump.<br>
 Setupapi: Device install issues - 0x30018<br>
 Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.</td>
 </table>
