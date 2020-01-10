@@ -74,7 +74,7 @@ If your app requires a specific account type that hasn't been linked previously,
 
 ## Enterprise and other authentication
 
-If your app uses other types of authentication, such as NTLM, Basic, or Kerberos, you can use [Windows Credential UI](https://docs.microsoft.com/en-us/uwp/api/Windows.Security.Credentials.UI) to collect, process, and store the user's credentials. The user experience for collecting these credentials is very similar to other cloud-driven account interrupts, and appears as a child app on top of your 2D app or briefly suspends a Unity app to show the UI.
+If your app uses other types of authentication, such as NTLM, Basic, or Kerberos, you can use [Windows Credential UI](https://docs.microsoft.com/uwp/api/Windows.Security.Credentials.UI) to collect, process, and store the user's credentials. The user experience for collecting these credentials is very similar to other cloud-driven account interrupts, and appears as a child app on top of your 2D app or briefly suspends a Unity app to show the UI.
 
 ## Deprecated APIs
 
