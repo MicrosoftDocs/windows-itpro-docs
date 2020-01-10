@@ -40,7 +40,7 @@ This article describes how to specify from where updates should be downloaded (t
 
 ## Fallback order
 
-Typically, you configure endpoints to individually download updates from a primary source, followed by other sources in order of priority, based on your network configuration. Updates are obtained from sources in the order you specify. If a source is not available, the next source in the list is used.
+Typically, you configure endpoints to individually download updates from a primary source followed by other sources in order of priority, based on your network configuration. Updates are obtained from sources in the order you specify. If a source is not available, the next source in the list is used.
 
 When updates are published, some logic is applied to minimize the size of the update. In most cases, only the differences between the latest update and the update that is currently installed (this is referred to as the delta) on the device is downloaded and applied. However, the size of the delta depends on two main factors:
 - The age of the last update on the device; and 
@@ -100,7 +100,7 @@ The procedures in this article first describe how to set the order, and then how
 
    4. Double-click the **Define file shares for downloading security intelligence updates** setting and set the option to **Enabled**.
 
-   5. Enter the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](https://docs.microsoft.com/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`.  If you do not enter any paths then this source will be skipped when the VM downloads updates.
+   5. Enter the file share source. If you have multiple sources, enter each source in the order they should be used, separated by a single pipe. Use [standard UNC notation](https://docs.microsoft.com/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc) for denoting the path, for example: `\\host-name1\share-name\object-name|\\host-name2\share-name\object-name`.  If you do not enter any paths, then this source will be skipped when the VM downloads updates.
 
    6. Click **OK**. This will set the order of file shares when that source is referenced in the **Define the order of sources...** group policy setting.
 
@@ -121,7 +121,7 @@ Use the following PowerShell cmdlets to set the update order.
 Set-MpPreference -SignatureFallbackOrder {LOCATION|LOCATION|LOCATION|LOCATION}
 Set-MpPreference -SignatureDefinitionUpdateFileSharesSource {\\UNC SHARE PATH|\\UNC SHARE PATH}
 ```
-See the following for more information:
+See the following resources for more information:
 - [Set-MpPreference -SignatureFallbackOrder](https://docs.microsoft.com/powershell/module/defender/set-mppreference)
 - [Set-MpPreference -SignatureDefinitionUpdateFileSharesSource](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
 - [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)
