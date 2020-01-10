@@ -79,7 +79,7 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
     - Your organization must have [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (this is included in Microsoft 365 E5. See [Microsoft 365 Enterprise overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) for more details.)
     - Your organization's devices must be managed by [Intune](https://docs.microsoft.com/intune/device-management-capabilities).
-    - Your Windows machines must be running [Windows OS 1903](https://docs.microsoft.com/windows/release-information/status-windows-10-1903) or later.
+    - Your Windows machines must be running [Windows OS 1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709) or later.
     - You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or above)
     - Your machines must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version 1.1.15500.X (or above). (See [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md).)
 
@@ -99,7 +99,7 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
 ### To which Windows OS versions is configuring Tamper Protection is applicable?
 
-Windows 1903 May release
+[Windows 1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709) or later
 
 ### Is configuring Tamper Protection in Intune supported on servers?
 
@@ -109,7 +109,7 @@ No
 
 No, third-party antivirus will continue to register with the Windows Security application.
 
-### What happens if Microsoft Defender Antivirus is not active on a device?
+### What happens if Windows Defender Antivirus is not active on a device?
 
 Tamper Protection will not have any impact on such devices.
 
