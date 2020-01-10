@@ -121,7 +121,7 @@ Use the following PowerShell cmdlets to set the update order.
 Set-MpPreference -SignatureFallbackOrder {LOCATION|LOCATION|LOCATION|LOCATION}
 Set-MpPreference -SignatureDefinitionUpdateFileSharesSource {\\UNC SHARE PATH|\\UNC SHARE PATH}
 ```
-See the following resources for more information:
+See the following articles for more information:
 - [Set-MpPreference -SignatureFallbackOrder](https://docs.microsoft.com/powershell/module/defender/set-mppreference)
 - [Set-MpPreference -SignatureDefinitionUpdateFileSharesSource](https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
 - [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)
@@ -136,7 +136,7 @@ SignatureFallbackOrder
 SignatureDefinitionUpdateFileSharesSource
 ```
 
-See the following resources for more information:
+See the following articles for more information:
 - [Windows Defender WMIv2 APIs](https://docs.microsoft.com/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## Use Mobile Device Management (MDM) to manage the update location
