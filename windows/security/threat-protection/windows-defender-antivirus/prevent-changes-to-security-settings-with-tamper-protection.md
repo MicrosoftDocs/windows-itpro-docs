@@ -39,9 +39,9 @@ Recent updates to tamper protection include integration with [Threat & Vulnerabi
 
 ![Tamper protection results in security recommendations](../images/securityrecs-tamperprotect.jpg)
 
-In the results, you can select Turn on Tamper Protection.
+In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
 
-
+![Turn on tamper protection](images/turnontamperprotection.png)
 
 ## How it works
 
@@ -83,15 +83,19 @@ If you are using Windows OS 1709, you won't have the Windows Security app. In th
 #### To determine whether tamper protection is turned on by using PowerShell
 
 1. Open the Windows PowerShell app.
+
 2. Use the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) PowerShell cmdlet.
+
 3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
 
 #### To determine whether tamper protection is turned on by viewing a registry key
 
 1. Open the Registry Editor app.
+
 2. Go to **HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Microsoft** > **Windows Defender** > **Features**.
+
 3. Look for an entry of **TamperProtection** of type **REG_DWORD**, with a value of **0x5**.<br/>
-    - If you see **TamperProtection** with a value of 0, tamper protection is not turned on. 
+    - If you see **TamperProtection** with a value of **0**, tamper protection is not turned on. 
     - If you do not see **TamperProtection** at all, tamper protection is not turned on.  
 
 ## Turn tamper protection on (or off) for your organization using Intune
@@ -115,7 +119,9 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 4. Create a profile that includes the following settings:
 
     - **Platform**: Windows 10 and later
+
     - **ProfileType**: Endpoint protection
+    
     - **Settings** > Windows Defender Security Center > Tamper Protection 
 
 5. Assign the profile to one or more groups.
