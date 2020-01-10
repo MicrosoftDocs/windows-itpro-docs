@@ -50,7 +50,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 <div style='font-size:9.0pt'>
 
 <table border="1" cellspacing="0" cellpadding="0">
-<tr><TD BGCOLOR="#a0e4fa"><B>Topic</B></td><TD BGCOLOR="#a0e4fa"><B>Description</B></td><TD BGCOLOR="#a0e4fa"><B>Time</B></td></tr>
+<tr><TD><B>Topic</B></td><TD><B>Description</B></td><TD><B>Time</B></td></tr>
 <tr><td><a href="#hardware-and-software-requirements" data-raw-source="[Hardware and software requirements](#hardware-and-software-requirements)">Hardware and software requirements</a><td>Prerequisites to complete this guide.<td>Informational
 <tr><td><a href="#lab-setup" data-raw-source="[Lab setup](#lab-setup)">Lab setup</a><td>A description and diagram of the PoC environment.<td>Informational
 <tr><td><a href="#configure-the-poc-environment" data-raw-source="[Configure the PoC environment](#configure-the-poc-environment)">Configure the PoC environment</a><td>Parent topic for procedures.<td>Informational
@@ -80,52 +80,52 @@ Harware requirements are displayed below:
 <table border="1" cellspacing="0" cellpadding="0">
     <tr>
         <td></td>
-        <td BGCOLOR="#a0e4fa"><strong>Computer 1</strong> (required)</td>
-        <td BGCOLOR="#a0e4fa"><strong>Computer 2</strong> (recommended)</td>
+        <td><strong>Computer 1</strong> (required)</td>
+        <td><strong>Computer 2</strong> (recommended)</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Role</strong></td>
+        <td><strong>Role</strong></td>
         <td>Hyper-V host</td>
         <td>Client computer</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Description</strong></td>
+        <td><strong>Description</strong></td>
         <td>This computer will run Hyper-V, the Hyper-V management tools, and the Hyper-V Windows PowerShell module.</td>
         <td>This computer is a Windows 7 or Windows 8/8.1 client on your corporate network that will be converted to a VM to demonstrate the upgrade process.</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>OS</strong></td>
+        <td><strong>OS</strong></td>
         <td>Windows 8.1/10 or Windows Server 2012/2012 R2/2016<b>*</b></td>
         <td>Windows 7 or a later</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Edition</strong></td>
+        <td><strong>Edition</strong></td>
         <td>Enterprise, Professional, or Education</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Architecture</strong></td>
+        <td><strong>Architecture</strong></td>
         <td>64-bit</td>
         <td>Any<BR><I>Note: Retaining applications and settings requires that architecture (32 or 64-bit) is the same before and after the upgrade.</I></td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>RAM</strong></td>
+        <td><strong>RAM</strong></td>
         <td>8 GB RAM (16 GB recommended) to test Windows 10 deployment with MDT.
         <BR>16 GB RAM to test Windows 10 deployment with System Center Configuration Manager.</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Disk</strong></td>
+        <td><strong>Disk</strong></td>
         <td>200 GB available hard disk space, any format.</td>
         <td>Any size, MBR formatted.</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>CPU</strong></td>
+        <td><strong>CPU</strong></td>
         <td>SLAT-Capable CPU</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Network</strong></td>
+        <td><strong>Network</strong></td>
         <td>Internet connection</td>
         <td>Any</td>
     </tr>
@@ -1077,7 +1077,7 @@ Use the following procedures to verify that the PoC environment is configured pr
 <div style='font-size:9.0pt'>
 
 <table border="1" cellspacing="0" cellpadding="0">
-<tr><TD BGCOLOR="#a0e4fa"><B>Term</B><TD BGCOLOR="#a0e4fa"><B>Definition</B>
+<tr><TD><B>Term</B><TD><B>Definition</B>
 <tr><td>GPT<td>GUID partition table (GPT) is an updated hard-disk formatting scheme that enables the use of newer hardware. GPT is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions.
 <tr><td>Hyper-V<td>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
 <tr><td>Hyper-V host<td>The computer where Hyper-V is installed.

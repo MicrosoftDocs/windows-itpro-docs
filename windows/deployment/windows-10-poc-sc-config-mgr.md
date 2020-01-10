@@ -45,7 +45,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 <div style='font-size:9.0pt'>
 <table border="1" cellspacing="0" cellpadding="0">
-<tr><td BGCOLOR="#a0e4fa"><b>Topic</b><td BGCOLOR="#a0e4fa"><b>Description</b><td BGCOLOR="#a0e4fa"><b>Time</b>
+<tr><td><b>Topic</b><td><b>Description</b><td><b>Time</b>
 
 <tr><td><a href="#install-prerequisites" data-raw-source="[Install prerequisites](#install-prerequisites)">Install prerequisites</a><td>Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.<td>60 minutes
 <tr><td><a href="#install-system-center-configuration-manager" data-raw-source="[Install System Center Configuration Manager](#install-system-center-configuration-manager)">Install System Center Configuration Manager</a><td>Download System Center Configuration Manager, configure prerequisites, and install the package.<td>45 minutes

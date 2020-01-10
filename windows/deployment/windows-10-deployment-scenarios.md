@@ -30,10 +30,10 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
 - Traditional deployment methods use existing tools to deploy operating system images.<br>&nbsp;
 
 <table border="0">
-  <tr><td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Category</b></td>
-     <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Scenario</b></td>
-     <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Description</b></td>
-     <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>More information</b></td></tr>
+  <tr><td align="center" style="width:16%; border:1;"><b>Category</b></td>
+      <td align="center" style="width:16%; border:1;"><b>Scenario</b></td>
+      <td align="center" style="width:16%; border:1;"><b>Description</b></td>
+      <td align="center" style="width:16%; border:1;"><b>More information</b></td></tr>
   <tr><td align='center' valign='middle' style='width:16%; border:1;' rowspan="2">Modern</td>
     <td align="center">
 

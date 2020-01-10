@@ -46,7 +46,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 <div style='font-size:9.0pt'>
 
 <table border="1" cellspacing="0" cellpadding="0">
-<tr><td BGCOLOR="#a0e4fa"><B>Topic</B><td BGCOLOR="#a0e4fa"><B>Description</B><td BGCOLOR="#a0e4fa"><B>Time</B>
+<tr><td><B>Topic</B><td><B>Description</B><td><B>Time</B>
 
 <tr><td><a href="#about-mdt" data-raw-source="[About MDT](#about-mdt)">About MDT</a><td>A high-level overview of the Microsoft Deployment Toolkit (MDT).<td>Informational
 <tr><td><a href="#install-mdt" data-raw-source="[Install MDT](#install-mdt)">Install MDT</a><td>Download and install MDT.<td>40 minutes
