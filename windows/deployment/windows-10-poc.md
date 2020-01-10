@@ -75,7 +75,7 @@ One computer that meets the hardware and software specifications below is requir
 - **Computer 1**: the computer you will use to run Hyper-V and host virtual machines. This computer should have 16 GB or more of installed RAM and a multi-core processor.
 - **Computer 2**: a client computer from your corporate network. It is shadow-copied to create a VM that can be added to the PoC environment, enabling you to test a mirror image of a computer on your network. If you do not have a computer to use for this simulation, you can download an evaluation VHD and use it to represent this computer. Subsequent guides use this computer to simulate Windows 10 replace and refresh scenarios, so the VM is required even if you cannot create this VM using computer 2.
 
-Harware requirements are displayed below:
+Hardware requirements are displayed below:
 
 <div style='font-size:9.0pt'>
 
@@ -633,7 +633,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Dismount-VHD -Path c:\vhd\d.vhd
     </pre>
 
-    Next, create the PC1 VM with two attached VHDs, and boot to DVD ($maxram must be defined previously using the same Windows PowerShell promt):
+    Next, create the PC1 VM with two attached VHDs, and boot to DVD ($maxram must be defined previously using the same Windows PowerShell prompt):
 
     <pre style="overflow-y: visible">
     New-VM -Name "PC1" -VHDPath c:\vhd\w7.vhd -SwitchName poc-internal
@@ -823,7 +823,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
 17. Open an elevated Windows PowerShell prompt on PC1 and verify that the client VM has received a DHCP lease and can communicate with the consoto.com domain controller.
 
-    To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**." Right-click **Windows PowerShell** and then click **Pin to Taskbar** so that it is simpler to use Windows Powershell during this lab. Click **Windows PowerShell** on the taskbar, and then type **ipconfig** at the prompt to see the client's current IP address. Also type **ping dc1.contoso.com** and **nltest /dsgetdc:contoso.com** to verify that it can reach the domain controller. See the following examples of a successful network connection:
+    To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**." Right-click **Windows PowerShell** and then click **Pin to Taskbar** so that it is simpler to use Windows PowerShell during this lab. Click **Windows PowerShell** on the taskbar, and then type **ipconfig** at the prompt to see the client's current IP address. Also type **ping dc1.contoso.com** and **nltest /dsgetdc:contoso.com** to verify that it can reach the domain controller. See the following examples of a successful network connection:
 
     ```
     ipconfig
@@ -1068,7 +1068,7 @@ Use the following procedures to verify that the PoC environment is configured pr
     **whoami** displays the current user context, for example in an elevated Windows PowerShell prompt, contoso\administrator is displayed.<BR>
     **hostname** displays the name of the local computer, for example W7PC-001.<BR>
     **nslookup** displays the DNS server used for the query, and the results of the query. For example, server `dc1.contoso.com`, address 192.168.0.1, Name `e2847.dspb.akamaiedge.net`.<BR>
-    **ping** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it cannot be resolved, "..could not find host" will be diplayed and if the target is found and also responds to ICMP, you will see "Reply from" and the IP address of the target.<BR>
+    **ping** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it cannot be resolved, "..could not find host" will be displayed and if the target is found and also responds to ICMP, you will see "Reply from" and the IP address of the target.<BR>
     **tracert** displays the path to reach the destination, for example `srv1.contoso.com` [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
 
 
