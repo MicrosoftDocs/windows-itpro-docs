@@ -1,7 +1,7 @@
 ---
-title: Overview of Advanced hunting
+title: Overview of advanced hunting
 description: Use threat hunting capabilities in Microsoft Defender ATP to build queries that find threats and weaknesses in your network
-keywords: advanced hunting, threat hunting, cyber threat hunting, search, query, telemetry, custom detections, schema, kusto
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, custom detections, schema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -18,7 +18,7 @@ ms.topic: article
 ms.date: 10/08/2019
 ---
 
-# Proactively hunt for threats with Advanced hunting
+# Proactively hunt for threats with advanced hunting
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -28,9 +28,9 @@ Advanced hunting is a query-based threat-hunting tool that lets you explore up t
 
 You can use the same threat-hunting queries to build custom detection rules. These rules run automatically to check for and respond to various events and system states, including suspected breach activity and misconfigured machines.
 
-## Get started with Advanced hunting
+## Get started with advanced hunting
 
-We recommend going through several steps to quickly get up and running with Advanced hunting.
+We recommend going through several steps to quickly get up and running with advanced hunting.
 
 | Learning goal | Description | Resource |
 |--|--|--|
@@ -41,7 +41,7 @@ We recommend going through several steps to quickly get up and running with Adva
 
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:
-- **Autosuggest** — as you write queries, Advanced hunting provides suggestions. 
+- **Autosuggest** — as you write queries, advanced hunting provides suggestions. 
 - **Schema reference** — a schema reference that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
 
 ## Drilldown from query results
@@ -54,14 +54,14 @@ Right-click a value in the result set to quickly enhance your query. You can use
 - Exclude the selected value from the query (`!=`)
 - Get more advanced operators for adding the value to your query, such as `contains`, `starts with` and `ends with` 
 
-![Image of Microsoft Defender ATP Advanced hunting result set](images/atp-advanced-hunting-results-filter.png)
+![Image of Microsoft Defender ATP advanced hunting result set](images/atp-advanced-hunting-results-filter.png)
 
 ## Filter the query results
 The filters displayed to the right provide a summary of the result set. Each column has its own section that lists the distinct values found for that column and the number of instances.
 
 Refine your query by selecting the "+" or "-" buttons next to the values that you want to include or exclude.
 
-![Image of Advanced hunting filter](images/atp-filter-advanced-hunting.png)
+![Image of advanced hunting filter](images/atp-filter-advanced-hunting.png)
 
 Once you apply the filter to modify the query and then run the query, the results are updated accordingly.
 

@@ -1,6 +1,6 @@
 ---
 title: Network security Restrict NTLM Audit NTLM authentication in this domain (Windows 10)
-description: Describes the best practices, location, values, management aspects, and security considerations for the Network Security Restrict NTLM Audit NTLM authentication in this domain security policy setting.
+description: Best practices, security considerations, and more for the security policy setting, Network Security Restrict NTLM Audit NTLM authentication in this domain.
 ms.assetid: 33183ef9-53b5-4258-8605-73dc46335e6e
 ms.reviewer: 
 ms.author: dansimp

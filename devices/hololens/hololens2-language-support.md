@@ -37,7 +37,7 @@ HoloLens 2 is also available in the following languages. However, this support d
 - Dutch (Netherlands)
 - Korean (Korea)
 
-# Changing language or keyboard
+## Changing language or keyboard
 
 The setup process configures your HoloLens for a region and language. You can change this configuration by using the **Time & language** section of **Settings**.
 

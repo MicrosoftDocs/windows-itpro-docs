@@ -1,6 +1,6 @@
 ---
 title: Mobile device management MDM for device updates
-description: In the current device landscape of PC, tablets, phones, and IoT devices, the Mobile Device Management (MDM) solutions are becoming prevalent as a lightweight device management technology.
+description: Windows 10 provides several APIs to help mobile device management (MDM) solutions manage updates. Learn how to use these APIs to implement update management.
 ms.assetid: C27BAEE7-2890-4FB7-9549-A6EACC790777
 ms.reviewer: 
 manager: dansimp
@@ -90,7 +90,7 @@ The response of the GetUpdateData call returns an array of ServerSyncUpdateData 
     -   **Language** – The language code identifier (LCID). For example, en or es.
     -   **Title** – Title of the update. For example, “Windows SharePoint Services 3.0 Service Pack 3 x64 Edition (KB2526305)”
     -   **Description** – Description of the update. For example, “Windows SharePoint Services 3.0 Service Pack 3 (KB2526305) provides the latest updates to Windows SharePoint Services 3.0. After you install this item, you may have to restart your computer. After you have installed this item, it cannot be removed.”
--   **KBArticleID** – The KB article number for this update that has details regarding the particular update. For example, <http://support.microsoft.com/kb/2902892>.
+-   **KBArticleID** – The KB article number for this update that has details regarding the particular update. For example, <https://support.microsoft.com/kb/2902892>.
 
 ## <a href="" id="recommendedflow"></a>Recommended Flow for Using the Server-Server Sync Protocol
 

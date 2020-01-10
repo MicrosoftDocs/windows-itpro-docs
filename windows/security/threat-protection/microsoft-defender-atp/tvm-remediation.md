@@ -1,6 +1,6 @@
 ---
 title: Remediation and exception
-description: You can lower down your organization's exposure from vulnerabilities and increase your security configuration by remediating the security recommendations or filing exceptions provided there are compensation controls. Threat & Vulnerability Management bridges the gap between security administration and IT administration during remediation process. It does so by creating a security task or ticket through integration with Microsoft Intune and Microsoft Endpoint Configuration Manager. 
+description: Remediate security weaknesses and fill exceptions by integrating Microsoft Intune and Microsoft Endpoint Configuration Manager. 
 keywords: microsoft defender atp tvm remediation, mdatp tvm, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -50,8 +50,11 @@ You can access the remediation page in a few places in the portal:
 If you want to check how the ticket shows up in Intune, see [Use Intune to remediate vulnerabilities identified by Microsoft Defender ATP](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) for details.
 
 *Remediation in the navigation menu*
-1. Go to the Threat & Vulnerability Management navigation menu and select **Remediation** to open up the list of remediation activities and exceptions found in your organization. You can filter your view based on remediation type, machine remediation progress, and exception justification. If you want to see the remediation activities of software which have reached their end-of-life, select **Software uninstall** from the **Remediation type** filter.  
-2. Select the remediation activity that you need to see or process.
+1. Go to the Threat & Vulnerability Management navigation menu and select **Remediation** to open up the list of remediation activities and exceptions found in your organization. You can filter your view based on remediation type, machine remediation progress, and exception justification. If you want to see the remediation activities of software which have reached their end-of-life, select **Software uninstall** from the **Remediation type** filter. If you want to see the remediation activities of software and software versions which have reached their end-of-life, select **Software update** from the **Remediation type** filter. Select **In progress** then click **Apply**.
+![Screenshot of the remediation page filters for software update and uninstall](images/remediation_swupdatefilter.png)
+
+2. Select the remediation activity that you need to see or process. 
+![Screenshot of the remediation page flyout for a software which reached its end-of-life](images/remediation_flyouteolsw.png)
 
 *Top remediation activities widget in the dashboard*
 1. Go to the Threat & Vulnerability Management dashboard and scroll down to the **Top remediation activities** widget. The list is sorted and prioritized based on what is listed in the **Top security recommendations**. 
