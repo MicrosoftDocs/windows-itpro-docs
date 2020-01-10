@@ -134,7 +134,9 @@ Download links:
 - [Microsoft Visual C++ Redistributable 2019 - x86](https://aka.ms/vs/16/release/VC_redist.x86.exe)
 - [Microsoft Visual C++ Redistributable 2019 - x64](https://aka.ms/vs/16/release/VC_redist.x64.exe)
 
-Download the software in this list to the D:\\Downloads folder on MDT01. **Note**: For the purposes of this lab, we will leave the MSVC files in the D:\\Downloads folder and the Office365 files will be extracted to a child folder. If you prefer, you can place each application in its own separate child folder and then modify the $ApplicationSourcePath below as needed (instead of just D:\\Downloads).
+Download all three items in this list to the D:\\Downloads folder on MDT01. 
+
+**Note**: For the purposes of this lab, we will leave the MSVC files in the D:\\Downloads folder and the Office365 files will be extracted to a child folder. If you prefer, you can place each application in its own separate child folder and then modify the $ApplicationSourcePath below as needed (instead of just D:\\Downloads).
 
 >[!NOTE]
 >All the Microsoft Visual C++ downloads can be found on [The latest supported Visual C++ downloads](https://go.microsoft.com/fwlink/p/?LinkId=619523). Visual C++ 2015, 2017 and 2019 all share the same redistributable files.
@@ -142,7 +144,7 @@ Download the software in this list to the D:\\Downloads folder on MDT01. **Note*
 ### Create configuration file: Microsoft Office 365 Professional Plus x64
 
 1. After downloading the most current version of the Office Deployment tool from the Microsoft Download Center using the link provided above, run the self-extracting executable file and extract the files to **D:\\Downloads\\Office365**.  The Office Deployment Tool (setup.exe) and several sample configuration.xml files will be extracted.
-2. Using a text editor (such as Notepad), create an XML file with the installation settings for Office 365 ProPlus that are appropriate for your organization. The file uses an XML format, so the file you create must have an extension of .xml but the file can have any filename.
+2. Using a text editor (such as Notepad), create an XML file in the D:\\Downloads\\Office365 directory with the installation settings for Office 365 ProPlus that are appropriate for your organization. The file uses an XML format, so the file you create must have an extension of .xml but the file can have any filename.
 
  - For example, you can use the following configuration.xml file, which provides these configuration settings:
    - Install the 64-bit version of Office 365 ProPlus in English directly from the Office Content Delivery Network (CDN) on the internet. Note: 64-bit is now the default and recommended edition. 
@@ -168,7 +170,7 @@ Download the software in this list to the D:\\Downloads folder on MDT01. **Note*
  
  Also see [Configuration options for the Office Deployment Tool](https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool) and [Overview of the Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) for more information. 
 
-3. Copy the configuration.xml file to the D:\\Downloads\\Office365 folder. See the following example of the extracted files plus the configuration.xml file in the Downloads\\Office365 folder:
+3. Ensure the configuration.xml file is in the D:\\Downloads\\Office365 folder. See the following example of the extracted files plus the configuration.xml file in the Downloads\\Office365 folder:
 
     ![folder](../images/office-folder.png)
 
@@ -180,7 +182,7 @@ Download the software in this list to the D:\\Downloads folder on MDT01. **Note*
 Additional information
 - Office 365 ProPlus is usually updated on a monthly basis with security updates and other quality updates (bug fixes), and possibly new features (depending on which update channel you’re using). That means that once you’ve deployed your reference image, Office 365 ProPlus will most likely need to download and install the latest updates that have been released since you created your reference image.
 
-- **Note**: Instead of installing Office 365 ProPlus as part of the reference image, we recommend configuring Office 365 ProPlus to be installed immediately after the reference image is deployed to the user’s device. You would still use the Office Deployment Tool and a configuration.xml file to perform the installation. This way the user will have the most up-to-date version of Office 365 ProPlus right away and won’t have to download any new updates (which is most likely what would happen if Office 365 ProPlus was installed as part of the reference image.)
+- **Note**: By using installing Office Deployment Tool as part of the reference image, Office 365 ProPlus is installed immediately after the reference image is deployed to the user’s device, rather than including Office apps part of the reference image. This way the user will have the most up-to-date version of Office 365 ProPlus right away and won’t have to download any new updates (which is most likely what would happen if Office 365 ProPlus was installed as part of the reference image.)
  - When you are creating your reference image, instead of installing Office 365 ProPlus directly from the Office CDN on the internet, you can install Office 365 ProPlus from a location on your local network, such as a file share. To do that, you would use the Office Deployment Tool in /download mode to download the installation files to that file share. Then you could use the Office Deployment Tool in /configure mode to install Office 365 ProPlus from that location on to your reference image. As part of that, you’ll need to point to that location in your configuration.xml file so that the Office Deployment Tool knows where to get the Office 365 ProPlus files. If you decide to do this, the next time you create a new reference image, you’ll want to be sure to use the Office Deployment Tool to download the most up-to-date installation files for Office 365 ProPlus to that location on your internal network. That way your new reference image will have a more up-to-date installation of Office 365 ProPlus.
 
 ### Connect to the deployment share using Windows PowerShell
