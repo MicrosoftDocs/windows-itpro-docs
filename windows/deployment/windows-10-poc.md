@@ -2,7 +2,8 @@
 title: Configure a test lab to deploy Windows 10
 ms.reviewer: 
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
+ms.audience: itpro
+author: greg-lindsay
 description: Concepts and procedures for deploying Windows 10 in a proof of concept lab environment.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,7 +11,8 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm
 ms.localizationpriority: medium
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -50,7 +52,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 <div style='font-size:9.0pt'>
 
 <table border="1" cellspacing="0" cellpadding="0">
-<tr><TD BGCOLOR="#a0e4fa"><B>Topic</B></td><TD BGCOLOR="#a0e4fa"><B>Description</B></td><TD BGCOLOR="#a0e4fa"><B>Time</B></td></tr>
+<tr><TD BGCOLOR="#a0e4fa"><font color="#000000"><B>Topic</B></font></td><TD BGCOLOR="#a0e4fa"><font color="#000000"><B>Description</B></font></td><TD BGCOLOR="#a0e4fa"><font color="#000000"><B>Time</B></font></td></tr>
 <tr><td><a href="#hardware-and-software-requirements" data-raw-source="[Hardware and software requirements](#hardware-and-software-requirements)">Hardware and software requirements</a><td>Prerequisites to complete this guide.<td>Informational
 <tr><td><a href="#lab-setup" data-raw-source="[Lab setup](#lab-setup)">Lab setup</a><td>A description and diagram of the PoC environment.<td>Informational
 <tr><td><a href="#configure-the-poc-environment" data-raw-source="[Configure the PoC environment](#configure-the-poc-environment)">Configure the PoC environment</a><td>Parent topic for procedures.<td>Informational
@@ -80,52 +82,52 @@ Harware requirements are displayed below:
 <table border="1" cellspacing="0" cellpadding="0">
     <tr>
         <td></td>
-        <td BGCOLOR="#a0e4fa"><strong>Computer 1</strong> (required)</td>
-        <td BGCOLOR="#a0e4fa"><strong>Computer 2</strong> (recommended)</td>
+        <td BGCOLOR="#a0e4fa"><strong><font color="#000000">Computer 1</strong> (required)</font></td>
+        <td BGCOLOR="#a0e4fa"><strong><font color="#000000">Computer 2</strong> (recommended)</font></td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Role</strong></td>
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Role</strong></font></td>
         <td>Hyper-V host</td>
         <td>Client computer</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Description</strong></td>
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Description</strong></font></td>
         <td>This computer will run Hyper-V, the Hyper-V management tools, and the Hyper-V Windows PowerShell module.</td>
         <td>This computer is a Windows 7 or Windows 8/8.1 client on your corporate network that will be converted to a VM to demonstrate the upgrade process.</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>OS</strong></td>
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>OS</strong></font></td>
         <td>Windows 8.1/10 or Windows Server 2012/2012 R2/2016<b>*</b></td>
         <td>Windows 7 or a later</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Edition</strong></td>
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Edition</strong></font></td>
         <td>Enterprise, Professional, or Education</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Architecture</strong></td>
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Architecture</strong></font></td>
         <td>64-bit</td>
         <td>Any<BR><I>Note: Retaining applications and settings requires that architecture (32 or 64-bit) is the same before and after the upgrade.</I></td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>RAM</strong></td>
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>RAM</strong></font></td>
         <td>8 GB RAM (16 GB recommended) to test Windows 10 deployment with MDT.
         <BR>16 GB RAM to test Windows 10 deployment with System Center Configuration Manager.</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Disk</strong></td>
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Disk</strong></font></td>
         <td>200 GB available hard disk space, any format.</td>
         <td>Any size, MBR formatted.</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>CPU</strong></td>
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>CPU</strong></font></td>
         <td>SLAT-Capable CPU</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Network</strong></td>
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Network</strong></font></td>
         <td>Internet connection</td>
         <td>Any</td>
     </tr>
