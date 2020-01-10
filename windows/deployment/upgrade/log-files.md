@@ -35,7 +35,7 @@ The following table describes some log files and how to use them for troubleshoo
 <br>
 
 <table>
-<tr><td BGCOLOR="#a0e4fa"><B>Log file</td><td BGCOLOR="#a0e4fa"><B>Phase: Location</td><td BGCOLOR="#a0e4fa"><B>Description</td><td BGCOLOR="#a0e4fa"><B>When to use</td>
+<tr><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Log file</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Phase: Location</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Description</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>When to use</td>
 <tr><td rowspan="5">setupact.log</td><td>Down-Level:<br>$Windows.~BT\Sources\Panther</td><td>Contains information about setup actions during the downlevel phase. </td>
 <td>All down-level failures and starting point for rollback investigations.<br> This is the most important log for diagnosing setup issues.</td>
 <tr><td>OOBE:<br>$Windows.~BT\Sources\Panther\UnattendGC</td>

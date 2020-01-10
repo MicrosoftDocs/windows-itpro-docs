@@ -104,7 +104,7 @@ Once the hardware IDs have been captured from existing devices, they can be uplo
 -   [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles).  You might already be using MSfB to manage your apps and settings.
 
 A summary of each platform's capabilities is provided below.
-
+<br>
 <table>
 <tr>
 <td BGCOLOR="#a0e4fa"><B><font color="#000000">Platform/Portal</font></td>
