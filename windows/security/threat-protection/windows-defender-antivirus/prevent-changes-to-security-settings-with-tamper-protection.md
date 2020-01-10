@@ -37,7 +37,7 @@ With tamper protection, malicious apps are prevented from taking actions like th
 
 Recent updates to tamper protection include integration with [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). This means security recommendations will now include tamper protection.
 
-
+![Tamper protection results in security recommendations](../images/securityrecs-tamperprotect.jpg)
 
 ## How it works
 
