@@ -145,9 +145,9 @@ See [Policy CSP - Defender/SignatureUpdateFallbackOrder](https://docs.microsoft.
 
 ## What if we're using a third-party vendor?
 
-This article describes how to configure and manage updates for Windows Defender Antivirus. However, third-party vendors can be used to perform these tasks as well. 
+This article describes how to configure and manage updates for Windows Defender Antivirus. However, third-party vendors can be used to perform these tasks. 
 
-Example: Contoso has hired Fabrikam to manage their security solution, which includes Microsoft Defender Antivirus. Fabrikam typically uses [Windows Management Instrumentation](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/use-wmi-windows-defender-antivirus), [PowerShell cmdlets](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus), or [Windows command-line](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus) to deploy patches and updates.
+For example, suppose that Contoso has hired Fabrikam to manage their security solution, which includes Microsoft Defender Antivirus. In this case, Fabrikam uses [Windows Management Instrumentation](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/use-wmi-windows-defender-antivirus), [PowerShell cmdlets](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus), or [Windows command-line](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus) to deploy patches and updates.
 
 > [!NOTE]
 > Microsoft does not test third-party solutions for managing Windows Defender Antivirus.
