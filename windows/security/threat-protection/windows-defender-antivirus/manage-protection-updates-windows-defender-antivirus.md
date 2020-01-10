@@ -30,7 +30,7 @@ Keeping your antivirus protection up to date is critical. There are two componen
 - *Where* the updates are downloaded from; and 
 - *When* updates are downloaded and applied. 
 
-This article describes the *where* - how to specify where updates should be downloaded from (this is also known as the fallback order). See [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) topic for an overview on how updates work, and how to configure other aspects of updates (such as scheduling updates).
+This article describes how to specify from where updates should be downloaded (this is also known as the fallback order). See [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) topic for an overview on how updates work, and how to configure other aspects of updates (such as scheduling updates).
 
 > [!IMPORTANT]
 > Microsoft Defender Antivirus Security intelligence updates are delivered through Windows Update and starting Monday, October 21, 2019, all security intelligence updates will be SHA-2 signed exclusively. Your devices must be updated to support SHA-2 in order to update your security intelligence. To learn more, see [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).  
