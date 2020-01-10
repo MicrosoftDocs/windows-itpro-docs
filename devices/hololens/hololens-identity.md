@@ -8,6 +8,7 @@ ms.author: scooley
 ms.date: 1/6/2019
 ms.prod: hololens
 ms.sitesec: library
+ms.topic: article
 ms.localizationpriority: medium
 audience: ITPro
 manager: jarrettr
@@ -19,7 +20,7 @@ appliesto:
 # User identity and login
 
 > [!NOTE]
-> This is technical reference article for IT Pros and tech enthusiasts.  If you're looking HoloLens set up instructions, read "[Setting up your HoloLens (1st gen)](hololens1-start.md)" or "[Setting up your HoloLens2](hololens2-start.md)".
+> This is technical reference article for IT Pros and tech enthusiasts.  If you're looking HoloLens setup instructions, read "[Setting up your HoloLens (1st gen)](hololens1-start.md)" or "[Setting up your HoloLens2](hololens2-start.md)".
 
 HoloLens supports several kinds of user identities and lets you sign in with one or more user accounts.  Identity on HoloLens is almost identical to other Windows 10 devices; this article is a deep dive reference for identity on HoloLens with extra focus on how HoloLens differs from Windows 10.
 
