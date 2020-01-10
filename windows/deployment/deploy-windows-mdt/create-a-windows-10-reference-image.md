@@ -566,7 +566,7 @@ SkipFinalSummary=YES
 
 ## Build the Windows 10 reference image
 
-As previously described, this section requires a Hyper-V host. See [HyperVisor requirement](deploy-windows-10-with-the-microsoft-deployment-toolkit.md#hypervisor-requirement) for more information.
+As previously described, this section requires a Hyper-V host. See [Hyper-V requirements](prepare-for-windows-deployment-with-mdt.md#hyper-v-requirements) for more information.
 
 Once you have created your task sequence, you are ready to create the Windows 10 reference image. This will be performed by launching the task sequence from a virtual machine which will then automatically perform the reference image creation and capture process. 
 
