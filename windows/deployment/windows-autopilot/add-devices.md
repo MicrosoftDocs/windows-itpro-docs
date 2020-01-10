@@ -107,10 +107,10 @@ A summary of each platform's capabilities is provided below.
 
 <table>
 <tr>
-<td BGCOLOR="#a0e4fa"><B>Platform/Portal</th>
-<td BGCOLOR="#a0e4fa"><B>Register devices?</th>
-<td BGCOLOR="#a0e4fa"><B>Create/Assign profile</th>
-<td BGCOLOR="#a0e4fa"><B>Acceptable DeviceID</th>
+<td BGCOLOR="#bdbdbd"><B>Platform/Portal</th>
+<td BGCOLOR="#bdbdbd"><B>Register devices?</th>
+<td BGCOLOR="#bdbdbd"><B>Create/Assign profile</th>
+<td BGCOLOR="#bdbdbd"><B>Acceptable DeviceID</th>
 </tr>
 
 <tr>
