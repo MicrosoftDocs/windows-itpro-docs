@@ -9,6 +9,7 @@ ms.date: 1/6/2019
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
+ms.topic: article
 ms.localizationpriority: medium
 audience: ITPro
 manager: jarrettr
@@ -20,7 +21,7 @@ appliesto:
 # User identity and signin
 
 > [!NOTE]
-> This article is technical reference article for IT Pros and tech enthusiasts. If you're looking HoloLens set up instructions, read "[Setting up your HoloLens (1st gen)](hololens1-start.md)" or "[Setting up your HoloLens 2](hololens2-start.md)".
+> This article is a technical reference for IT Pros and tech enthusiasts. If you're looking HoloLens set up instructions, read "[Setting up your HoloLens (1st gen)](hololens1-start.md)" or "[Setting up your HoloLens 2](hololens2-start.md)".
 
 Like other Windows devices, HoloLens always operates under a user context. There is always a user identity. HoloLens treats identity in almost the same manner as other Windows 10 devices do. This article is a deep-dive reference for identity on HoloLens, and focuses on how HoloLens differs from other Windows 10 devices.
 
