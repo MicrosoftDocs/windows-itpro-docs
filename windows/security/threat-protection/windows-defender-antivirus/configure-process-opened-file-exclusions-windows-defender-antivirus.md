@@ -59,7 +59,7 @@ See [Configure device restriction settings in Microsoft Intune](https://docs.mic
 
 ### Use Microsoft Endpoint Configuration Manager to exclude files that have been opened by specified processes from scans
 
-See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Exclusion settings](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
 
 ### Use Group Policy to exclude files that have been opened by specified processes from scans
 
@@ -150,7 +150,7 @@ Environment variables | The defined variable will be populated as a path when th
 
 ## Review the list of exclusions
 
-You can retrieve the items in the exclusion list with MpCmdRun, PowerShell, [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), [Intune](https://docs.microsoft.com/intune/device-restrictions-configure), or the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
+You can retrieve the items in the exclusion list with MpCmdRun, PowerShell, [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), [Intune](https://docs.microsoft.com/intune/device-restrictions-configure), or the [Windows Security app](windows-defender-security-center-antivirus.md#exclusions).
 
 If you use PowerShell, you can retrieve the list in two ways:
 

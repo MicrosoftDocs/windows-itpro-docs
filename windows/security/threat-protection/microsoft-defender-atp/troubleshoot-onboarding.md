@@ -41,14 +41,14 @@ If you have completed the onboarding process and don't see machines in the [Mach
 If the script completes successfully, see [Troubleshoot onboarding issues on the machines](#troubleshoot-onboarding-issues-on-the-machine) for additional errors that might occur.
 
 ### Troubleshoot onboarding issues when deploying with Microsoft Endpoint Configuration Manager
-When onboarding machines using the following versions of Microsoft Endpoint Configuration Manager:
+When onboarding machines using the following versions of Configuration Manager:
 - System Center 2012 Configuration Manager
 - System Center 2012 R2 Configuration Manager
 - Microsoft Endpoint Configuration Manager (current branch) version 1511
 - Microsoft Endpoint Configuration Manager (current branch) version 1602
 
 
-Deployment with the above-mentioned versions of Microsoft Endpoint Center Configuration Manager is done by running the onboarding script on the machines. You can track the deployment in the Configuration Manager Console.
+Deployment with the above-mentioned versions of Configuration Manager is done by running the onboarding script on the machines. You can track the deployment in the Configuration Manager Console.
 
 If the deployment fails, you can check the output of the script on the machines.
 

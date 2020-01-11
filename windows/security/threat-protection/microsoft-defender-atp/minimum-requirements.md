@@ -1,6 +1,6 @@
 ---
 title: Minimum requirements for Microsoft Defender ATP
-description: Understand the licensing requirements and requirements for onboarding machines to the sercvie
+description: Understand the licensing requirements and requirements for onboarding machines to the service
 keywords: minimum requirements, licensing, comparison table
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

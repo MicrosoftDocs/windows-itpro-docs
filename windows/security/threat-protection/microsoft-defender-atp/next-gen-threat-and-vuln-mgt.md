@@ -35,7 +35,7 @@ It is the first solution in the industry to bridge the gap between security admi
 It provides the following solutions to frequently-cited gaps across security operations, security administration, and IT administration workflows and communication. 
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
 - Linked machine vulnerability and security configuration assessment data in the context of exposure discovery
-- Built-in remediation processes through Microsoft Intune and Microsoft Endpoint Configuration Manager 
+- Built-in remediation processes through Microsoft Intune and Configuration Manager 
 
 ### Real-time discovery
  

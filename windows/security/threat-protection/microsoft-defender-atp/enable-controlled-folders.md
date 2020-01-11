@@ -30,7 +30,7 @@ You can enable controlled folder access by using any of these methods:
 * [Windows Security app](#windows-security-app)
 * [Microsoft Intune](#intune)
 * [Mobile Device Management (MDM)](#mdm)
-* [Microsoft Endpoint Configuration Manager](#sccm)
+* [Microsoft Endpoint Configuration Manager]
 * [Group Policy](#group-policy)
 * [PowerShell](#powershell)
 
@@ -78,7 +78,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) configuration service provider (CSP) to allow apps to make changes to protected folders.
 
-## SCCM
+## Microsoft Endpoint Configuration Manager
 
 1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
 2. Click **Home** > **Create Exploit Guard Policy**.
