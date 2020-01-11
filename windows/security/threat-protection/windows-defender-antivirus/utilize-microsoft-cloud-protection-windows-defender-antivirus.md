@@ -63,7 +63,7 @@ Organizations running Windows 10 E5, version 1803 can also take advantage of eme
 The following table describes the differences in cloud-delivered protection between recent versions of Windows and Microsoft Endpoint Configuration Manager.
 
 
-Feature | Windows 8.1 (Group Policy) | Windows 10, version 1607 (Group Policy) | Windows 10, version 1703 (Group Policy) | System Center Configuration Manager 2012 | Microsoft Endpoint Configuration Manager (Current Branch) | Microsoft Intune
+Feature | Windows 8.1 (Group Policy) | Windows 10, version 1607 (Group Policy) | Windows 10, version 1703 (Group Policy) | System Center 2012 Configuration Manager | Microsoft Endpoint Configuration Manager (Current Branch) | Microsoft Intune
 ---|---|---|---|---|---|---
 Cloud-protection service label | Microsoft Advanced Protection Service | Microsoft Advanced Protection Service | Cloud-based Protection | NA | Cloud protection service | Microsoft Advanced Protection Service
 Reporting level (MAPS membership level) | Basic, Advanced | Advanced | Advanced | Dependent on Windows version | Dependent on Windows version | Dependent on Windows version

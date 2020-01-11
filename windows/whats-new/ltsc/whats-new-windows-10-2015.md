@@ -282,7 +282,7 @@ By using [Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=699279
 
 -   **Use with existing tools** such as Microsoft Endpoint Configuration Manager and the [Enterprise Mobility Suite](https://go.microsoft.com/fwlink/p/?LinkId=699281).
 
-Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) and [Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/gg682129.aspx).
+Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) and [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr).
 
 
 Learn more about [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).

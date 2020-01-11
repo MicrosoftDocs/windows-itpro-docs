@@ -73,7 +73,7 @@ You may also be interested in this msdn channel 9 video:
 
 ## See Also
 
--   [Microsoft Endpoint Configuration Manager (SCCM)](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
+-   [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/)
 -   [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/)
 -   [Microsoft Security Guidance Blog](https://blogs.technet.microsoft.com/secguide/)
 -   [Microsoft Security Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
