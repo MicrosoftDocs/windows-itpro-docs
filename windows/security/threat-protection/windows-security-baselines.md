@@ -73,7 +73,7 @@ You may also be interested in this msdn channel 9 video:
 
 ## See Also
 
--   [Microsoft Endpoint Configuration Manager (SCCM)](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
+-   [Microsoft Endpoint Configuration Manager](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
 -   [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
 -   [Configuration Management for Nano Server](https://blogs.technet.microsoft.com/grouppolicy/2016/05/09/configuration-management-on-servers/)
 -   [Microsoft Security Guidance Blog](https://blogs.technet.microsoft.com/secguide/)
