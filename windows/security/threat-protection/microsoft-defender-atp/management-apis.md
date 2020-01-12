@@ -34,7 +34,7 @@ Machine onboarding is fully integrated into Microsoft Endpoint Configuration Man
 Microsoft Defender ATP provides fine-grained control over what users with access to the portal can see and do through the flexibility of role-based access control (RBAC). The RBAC model supports all flavors of security teams structure:
 - Globally distributed organizations and security teams
 - Tiered model security operations teams
-- Fully segregated devisions with single centralized global security operations teams 
+- Fully segregated divisions with single centralized global security operations teams 
 
 The Microsoft Defender ATP solution is built on top of an integration-ready platform:
 - It supports integration with a number of security information and event management (SIEM) solutions and also exposes APIs to fully support pulling all the alerts and detection information into any SIEM solution. 
