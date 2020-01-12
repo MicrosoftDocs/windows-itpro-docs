@@ -44,7 +44,7 @@ These tools were included in previous versions of Windows and the associated doc
 -   [Performance Monitor](https://go.microsoft.com/fwlink/p/?LinkId=708495)
 -   [Print Management](https://go.microsoft.com/fwlink/p/?LinkId=708496)
 -   [Recovery Drive](https://support.microsoft.com/en-us/help/4026852/windows-create-a-recovery-drive)
--   [Registry Editor](https://docs.microsoft.com/en-us/windows/win32/sysinfo/registry)
+-   [Registry Editor](https://docs.microsoft.com/windows/win32/sysinfo/registry)
 -   [Resource Monitor](https://go.microsoft.com/fwlink/p/?LinkId=708497)
 -   [Services](https://go.microsoft.com/fwlink/p/?LinkId=708498)
 -   [System Configuration](https://go.microsoft.com/fwlink/p/?LinkId=708499)
@@ -61,7 +61,6 @@ These tools were included in previous versions of Windows and the associated doc
 [Diagnostic Data Viewer](https://docs.microsoft.com/windows/privacy/diagnostic-data-viewer-overview)
 
  
-
 
 
 
