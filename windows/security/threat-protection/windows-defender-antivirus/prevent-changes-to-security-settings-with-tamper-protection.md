@@ -59,6 +59,10 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 [Turn tamper protection on (or off) for your organization using Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune)
 
+[View information about tampering attempts](#view-information-about-tampering-attempts)
+
+[Browse the frequently asked questions](#view-information-about-tampering-attempts)
+
 ## Turn tamper protection on (or off) for an individual machine
 
 > [!NOTE]
