@@ -493,42 +493,42 @@
 ### [Become a Microsoft Defender ATP partner](microsoft-defender-atp/get-started-partner-integration.md)
 
 
-### [Configure Microsoft threat protection integration]()
-#### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
-#### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
-#### [Configure information protection in Windows](microsoft-defender-atp/information-protection-in-windows-config.md)
+## [Configure Microsoft threat protection integration]()
+### [Configure conditional access](microsoft-defender-atp/configure-conditional-access.md)
+### [Configure Microsoft Cloud App Security integration](microsoft-defender-atp/microsoft-cloud-app-security-config.md)
+### [Configure information protection in Windows](microsoft-defender-atp/information-protection-in-windows-config.md)
 
-### [Configure portal settings]()
-#### [Set up preferences](microsoft-defender-atp/preferences-setup.md)
-#### [General]()
-##### [Update data retention settings](microsoft-defender-atp/data-retention-settings.md)
-##### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
-##### [Enable and create Power BI reports using Windows Defender Security center data](microsoft-defender-atp/powerbi-reports.md)
-##### [Enable Secure score security controls](microsoft-defender-atp/enable-secure-score.md)
-##### [Configure advanced features](microsoft-defender-atp/advanced-features.md)
+## [Configure portal settings]()
+### [Set up preferences](microsoft-defender-atp/preferences-setup.md)
+### [General]()
+#### [Update data retention settings](microsoft-defender-atp/data-retention-settings.md)
+#### [Configure alert notifications](microsoft-defender-atp/configure-email-notifications.md)
+#### [Enable and create Power BI reports using Windows Defender Security center data](microsoft-defender-atp/powerbi-reports.md)
+#### [Enable Secure score security controls](microsoft-defender-atp/enable-secure-score.md)
+#### [Configure advanced features](microsoft-defender-atp/advanced-features.md)
 
-#### [Permissions]()
-##### [Use basic permissions to access the portal](microsoft-defender-atp/basic-permissions.md)
-##### [Manage portal access using RBAC](microsoft-defender-atp/rbac.md)
-###### [Create and manage roles](microsoft-defender-atp/user-roles.md)
-###### [Create and manage machine groups](microsoft-defender-atp/machine-groups.md)
-####### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
+### [Permissions]()
+#### [Use basic permissions to access the portal](microsoft-defender-atp/basic-permissions.md)
+#### [Manage portal access using RBAC](microsoft-defender-atp/rbac.md)
+##### [Create and manage roles](microsoft-defender-atp/user-roles.md)
+##### [Create and manage machine groups](microsoft-defender-atp/machine-groups.md)
+###### [Create and manage machine tags](microsoft-defender-atp/machine-tags.md)
 
-#### [APIs]()
-##### [Enable Threat intel (Deprecated)](microsoft-defender-atp/enable-custom-ti.md)
-##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
-  
-#### [Rules]()
-##### [Manage suppression rules](microsoft-defender-atp/manage-suppression-rules.md)
-##### [Manage indicators](microsoft-defender-atp/manage-indicators.md)
-##### [Manage automation file uploads](microsoft-defender-atp/manage-automation-file-uploads.md)
-##### [Manage automation folder exclusions](microsoft-defender-atp/manage-automation-folder-exclusions.md)
-  
-#### [Machine management]()
-##### [Onboarding machines](microsoft-defender-atp/onboard-configure.md)
-##### [Offboarding machines](microsoft-defender-atp/offboard-machines.md)
-  
-#### [Configure Microsoft Defender Security Center time zone settings](microsoft-defender-atp/time-settings.md)
+### [APIs]()
+#### [Enable Threat intel (Deprecated)](microsoft-defender-atp/enable-custom-ti.md)
+#### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
+ 
+### [Rules]()
+#### [Manage suppression rules](microsoft-defender-atp/manage-suppression-rules.md)
+#### [Manage indicators](microsoft-defender-atp/manage-indicators.md)
+#### [Manage automation file uploads](microsoft-defender-atp/manage-automation-file-uploads.md)
+#### [Manage automation folder exclusions](microsoft-defender-atp/manage-automation-folder-exclusions.md)
+ 
+### [Machine management]()
+#### [Onboarding machines](microsoft-defender-atp/onboard-configure.md)
+#### [Offboarding machines](microsoft-defender-atp/offboard-machines.md)
+ 
+### [Configure Microsoft Defender Security Center time zone settings](microsoft-defender-atp/time-settings.md)
 
 
 
