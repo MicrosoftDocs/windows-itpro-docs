@@ -53,7 +53,7 @@ In the results, you can select **Turn on Tamper Protection** to learn more and t
 
 Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how third-party antivirus apps register with the Windows Security app. If your organization is using Windows 10 Enterprise E5, individual users can't change the tamper protection setting; this is managed by your security team.
 
-## What do you want to do?
+### What do you want to do?
 
 [Turn tamper protection on (or off) for an individual machine using Windows Security](#turn-tamper-protection-on-or-off-for-an-individual-machine)
 
