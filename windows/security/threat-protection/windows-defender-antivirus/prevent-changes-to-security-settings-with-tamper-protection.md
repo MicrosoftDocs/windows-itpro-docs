@@ -76,35 +76,13 @@ If you are a home user, or you are not subject to settings managed by a security
 
 3. Set **Tamper Protection** to **On** or **Off**.
 
-### Are you using Windows OS 1709?
-
-If you are using Windows OS 1709, you don't have the Windows Security app. In this case, the one of the following procedures to determine whether tamper protection is enabled.
-
-#### To determine whether tamper protection is turned on by using PowerShell
-
-1. Open the Windows PowerShell app.
-
-2. Use the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) PowerShell cmdlet.
-
-3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
-
-#### To determine whether tamper protection is turned on by viewing a registry key
-
-1. Open the Registry Editor app.
-
-2. Go to **HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Microsoft** > **Windows Defender** > **Features**.
-
-3. Look for an entry of **TamperProtection** of type **REG_DWORD**, with a value of **0x5**.<br/>
-    - If you see **TamperProtection** with a value of **0**, tamper protection is not turned on. 
-    - If you do not see **TamperProtection** at all, tamper protection is not turned on.  
-
 ## Turn tamper protection on (or off) for your organization using Intune
 
 If you are part of your organization's security team, you can turn tamper protection on (or off) for your organization in the Microsoft 365 Device Management portal (Intune). (This feature is rolling out now; if you don't have it yet, you should very soon, assuming your organization has [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md) (Microsoft Defender ATP) and that you meet the prerequisites listed below.) 
 
 You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-access.md), such as global admin, security admin, or security operations, to perform the following task. 
 
-1. Make sure your organization meets the following requirements:
+1. Make sure your organization meets all of the following requirements:
 
     - Your organization must have [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (this is included in Microsoft 365 E5. See [Microsoft 365 Enterprise overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) for more details.)
     - Your organization's devices must be managed by [Intune](https://docs.microsoft.com/intune/device-management-capabilities).
@@ -126,11 +104,33 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
 5. Assign the profile to one or more groups.
 
+### Are you using Windows OS 1709?
+
+If you are using Windows OS 1709, you don't have the Windows Security app on your computer. In this case, the one of the following procedures to determine whether tamper protection is enabled.
+
+#### To determine whether tamper protection is turned on by using PowerShell
+
+1. Open the Windows PowerShell app.
+
+2. Use the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) PowerShell cmdlet.
+
+3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
+
+#### To determine whether tamper protection is turned on by viewing a registry key
+
+1. Open the Registry Editor app.
+
+2. Go to **HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Microsoft** > **Windows Defender** > **Features**.
+
+3. Look for an entry of **TamperProtection** of type **REG_DWORD**, with a value of **0x5**.<br/>
+    - If you see **TamperProtection** with a value of **0**, tamper protection is not turned on. 
+    - If you do not see **TamperProtection** at all, tamper protection is not turned on.  
+
 ## Frequently asked questions
 
 ### To which Windows OS versions is configuring tamper protection is applicable?
 
-[Windows 1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709) or later
+[Windows 1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709) or later together with [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
 ### Is configuring tamper protection in Intune supported on servers?
 

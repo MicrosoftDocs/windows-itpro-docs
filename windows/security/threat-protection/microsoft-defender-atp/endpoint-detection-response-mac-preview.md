@@ -130,7 +130,7 @@ h. Select  **Manage > Assignments**. In the  **Include**  tab, select  *
 In terminal, run:
 
 ```bash
-    mdatp --edr --earlypreview true
+    mdatp --edr --early-preview true
  ```
 
 For versions earlier than 100.78.0, run:

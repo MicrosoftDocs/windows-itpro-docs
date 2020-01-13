@@ -2,19 +2,19 @@
 
 documentType: LandingData
 
-title: Microsoft Edge Group Policy configuration options 
+title: Microsoft Edge Legacy Group Policy configuration options 
 
 metadata:
 
   document_id: 
 
-  title: Microsoft Edge Group Policy configuration options  
+  title: Microsoft Edge Group Legacy Policy configuration options  
 
   description: 
 
-  text: Learn how to deploy and configure group policies in Microsoft Edge on Windows 10. Some of the features coming to Microsoft Edge gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. 
-
-  keywords: Microsoft Edge, Windows 10
+  text: (Note - You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).) Learn how to deploy and configure group policies in Microsoft Edge Legacy on Windows 10. Some of the features coming to Microsoft Edge Legacy gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar.
+  
+  keywords: Microsoft Edge Legacy, Windows 10
 
   ms.localizationpriority: medium
 
@@ -36,7 +36,7 @@ sections:
 
   - type: markdown
 
-    text: Learn about interoperability goals and enterprise guidance along with system requirements, language support and frequently asked questions.
+    text: (Note - You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).) Learn about interoperability goals and enterprise guidance along with system requirements, language support and frequently asked questions.
 
 - items:
 
