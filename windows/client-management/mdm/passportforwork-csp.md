@@ -206,7 +206,7 @@ This node is deprecated. Use **Biometrics/UseBiometrics** node instead.
 
 <a href="" id="biometrics--only-for---device-vendor-msft-"></a>**Biometrics** (only for ./Device/Vendor/MSFT)  
 Node for defining biometric settings. This node was added in Windows 10, version 1511.
-*Not supported on Windows Holographic and Windows Holographic for Business prior to Windows 10 version 1903 (May 2019 Update).*
+*Not supported on Windows Holographic and Windows Holographic for Business.*
 
 <a href="" id="biometrics-usebiometrics--only-for---device-vendor-msft-"></a>**Biometrics/UseBiometrics** (only for ./Device/Vendor/MSFT)  
 Boolean value used to enable or disable the use of biometric gestures, such as face and fingerprint, as an alternative to the PIN gesture for Windows Hello for Business. Users must still configure a PIN if they configure biometric gestures to use in case of failures. This node was added in Windows 10, version 1511.
@@ -217,7 +217,7 @@ Default value is true, enabling the biometric gestures for use with Windows Hell
 
 Supported operations are Add, Get, Delete, and Replace.
 
-*Not supported on Windows Holographic and Windows Holographic for Business.*
+*Not supported on Windows Holographic and Windows Holographic for Business prior to Windows 10 version 1903 (May 2019 Update).*
 
 <a href="" id="biometrics-facialfeaturesuseenhancedantispoofing--only-for---device-vendor-msft-"></a>**Biometrics/FacialFeaturesUseEnhancedAntiSpoofing** (only for ./Device/Vendor/MSFT)  
 Boolean value used to enable or disable enhanced anti-spoofing for facial feature recognition on Windows Hello face authentication. This node was added in Windows 10, version 1511.

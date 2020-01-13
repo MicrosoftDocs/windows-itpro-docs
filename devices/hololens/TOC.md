@@ -28,10 +28,11 @@
 # Navigating Windows Holographic
 ## [Start menu and mixed reality home](holographic-home.md)
 ## [Use your voice with HoloLens](hololens-cortana.md)
-## [Find and save files](hololens-find-and-save-files.md)
+## [Find and save files](holographic-data.md)
 ## [Create, share, and view photos and video](holographic-photos-and-videos.md)
 
 # User management and access management
+## [Accounts on HoloLens](hololens-identity.md)
 ## [Share your HoloLens with multiple people](hololens-multiple-users.md)
 ## [Set up HoloLens as a kiosk (single application access)](hololens-kiosk.md)
 ## [Set up limited application access](hololens-kiosk.md)
@@ -53,15 +54,14 @@
 ## [Spatial mapping on HoloLens](hololens-spaces.md)
 
 # Update, troubleshoot, or recover HoloLens
-## [Update, troubleshoot, or recover HoloLens](hololens-management-overview.md)
 ## [Update HoloLens](hololens-update-hololens.md)
 ## [Restart, reset, or recover](hololens-recovery.md)
 ## [Troubleshoot HoloLens](hololens-troubleshooting.md)
 ## [Known issues](hololens-known-issues.md)
 ## [Frequently asked questions](hololens-faq.md)
+## [Hololens services status](hololens-status.md)
 
 # [Release Notes](hololens-release-notes.md)
-# [Hololens status](hololens-status.md)
 # [Give us feedback](hololens-feedback.md)
 # [Join the Windows Insider program](hololens-insider.md)
 # [Change history for Microsoft HoloLens documentation](change-history-hololens.md)
