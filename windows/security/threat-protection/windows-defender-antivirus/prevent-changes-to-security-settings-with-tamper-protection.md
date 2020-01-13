@@ -76,6 +76,8 @@ If you are a home user, or you are not subject to settings managed by a security
 
 3. Set **Tamper Protection** to **On** or **Off**.
 
+The following table shows what users see in the Windows Security app when using Windows 10 Enterprise or Windows 10 Home.
+
 |Windows 10 Enterprise  |Windows 10 Home  |
 |---------|---------|
 |![Turning tamper protection on in Windows 10 Enterprise](images/turnontamperprotect-enterprise.png)     |![Turning tamper protection on in Windows 10 Home](images/turnontamperprotect-consumer.png)         |
