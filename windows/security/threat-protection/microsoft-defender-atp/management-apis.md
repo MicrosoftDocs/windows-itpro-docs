@@ -36,7 +36,7 @@ Machine onboarding is fully integrated into System Center Configuration Manager 
 Microsoft Defender ATP provides fine-grained control over what users with access to the portal can see and do through the flexibility of role-based access control (RBAC). The RBAC model supports all flavors of security teams structure:
 - Globally distributed organizations and security teams
 - Tiered model security operations teams
-- Fully segregated devisions with single centralized global security operations teams 
+- Fully segregated divisions with single centralized global security operations teams 
 
 ## Available APIs
 The Microsoft Defender ATP solution is built on top of an integration-ready platform.
