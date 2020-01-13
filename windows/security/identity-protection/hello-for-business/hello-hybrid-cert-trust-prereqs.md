@@ -120,7 +120,7 @@ Hybrid certificate trust deployments need the device write back feature.  Authen
 
 ## Provisioning
 
-You need to allow access to account.microsoft.com URL to initiate Windows Hello for Business provisioning. This URL launches the subsequent steps in the provisioning process and is required to successfully complete Windows Hello for Business provisioning. This URL does not require any authentication and as such, does not collect any user data.
+You need to allow access to the URL account.microsoft.com to initiate Windows Hello for Business provisioning. This URL launches the subsequent steps in the provisioning process and is required to successfully complete Windows Hello for Business provisioning. This URL does not require any authentication and as such, does not collect any user data.
 
 
 ### Section Checklist ###
