@@ -2,19 +2,19 @@
 
 documentType: LandingData
 
-title: Microsoft Edge group policies 
+title: Microsoft Edge Legacy group policies 
 
 metadata:
 
   document_id: 
 
-  title: Microsoft Edge group policies  
+  title: Microsoft Edge Legacy group policies  
 
-  description: Learn how to configure group policies in Microsoft Edge on Windows 10.
+  description: Learn how to configure group policies in Microsoft Edge Legacy on Windows 10.
 
-  text: Some of the features in Microsoft Edge gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. 
+  text: Some of the features in Microsoft Edge Legacy gives you the ability to set a custom URL for the New Tab page or Home button. Another new feature allows you to hide or show the Favorites bar, giving you more control over the favorites bar. (To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).)
 
-  keywords: Microsoft Edge, Windows 10, Windows 10 Mobile
+  keywords: Microsoft Edge Legacy, Windows 10, Windows 10 Mobile
 
   ms.localizationpriority: medium
 
@@ -36,7 +36,7 @@ sections:
 
   - type: markdown
 
-    text: Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
+    text: (Note - You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).) Microsoft Edge Legacy works with Group Policy and Microsoft Intune to help you manage your organization's computer settings. Group Policy objects (GPOs) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences.
 
 - items:
 
