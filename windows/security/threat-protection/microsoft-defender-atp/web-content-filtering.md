@@ -24,7 +24,7 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web content filtering enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic due to compliance regulations, bandwidth usage, or other concerns.
+Web content filtering is part of [Web protection](web-protection-overview.md) in Microsoft Defender ATP. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic due to compliance regulations, bandwidth usage, or other concerns.
 
 You can configure policies across your machine groups to block certain categories, effectively preventing users within specified machine groups from accessing URLs within that category. If a category is not blocked, all your users will be able to access the URLs without disruption. However, web content filtering will continue to gather access statistics that you can use to understand web usage and inform future policy decisions.
 
@@ -116,8 +116,6 @@ To add a new policy:
 ## Web content filtering cards and details
 
 Select **Reports > Web protection** to view cards with information about web content filtering and web threat protection. The following cards provide summary information about web content filtering.
-
-![Image of all web protection cards](images/web-protection.png)
 
 ### Web activity by category
 
