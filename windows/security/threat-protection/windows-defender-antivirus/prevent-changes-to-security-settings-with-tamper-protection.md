@@ -35,7 +35,7 @@ With tamper protection, malicious apps are prevented from taking actions like th
 - Disabling cloud-delivered protection
 - Removing security intelligence updates
 
-Tamper protection now integrates with [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Security recommendations include a check to make sure tamper protection is turned on.
+Tamper protection now integrates with [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Security recommendations include making sure tamper protection is turned on.
 
 ![Tamper protection results in security recommendations](../images/securityrecs-tamperprotect.jpg)
 
@@ -43,7 +43,7 @@ In the results, you can select **Turn on Tamper Protection** to learn more and t
 
 ![Turn on tamper protection](images/turnontamperprotection.png)
 
-## How it works
+### How it works
 
  Tamper protection essentially locks Windows Defender Antivirus and prevents your security settings from being changed through apps and methods like these:
 - Configuring settings in Registry Editor on your Windows machine 
@@ -53,7 +53,7 @@ In the results, you can select **Turn on Tamper Protection** to learn more and t
 
 Tamper protection doesn't prevent you from viewing your security settings. And, tamper protection doesn't affect how third-party antivirus apps register with the Windows Security app. If your organization is using Windows 10 Enterprise E5, individual users can't change the tamper protection setting; this is managed by your security team.
 
-### What do you want to do?
+## What do you want to do?
 
 [Turn tamper protection on (or off) for an individual machine using Windows Security](#turn-tamper-protection-on-or-off-for-an-individual-machine)
 
@@ -137,6 +137,10 @@ If you are using Windows OS [1709](https://docs.microsoft.com/windows/release-in
 3. Look for an entry of **TamperProtection** of type **REG_DWORD**, with a value of **0x5**.<br/>
     - If you see **TamperProtection** with a value of **0**, tamper protection is not turned on. 
     - If you do not see **TamperProtection** at all, tamper protection is not turned on.  
+
+## View information about tampering attempts
+
+If you're part of your organization's security team, yu
 
 ## Frequently asked questions
 
