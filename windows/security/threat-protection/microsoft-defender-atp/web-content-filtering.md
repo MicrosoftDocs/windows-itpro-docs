@@ -48,8 +48,8 @@ Before trying out this feature, make sure you have the following:
 - Windows 10 Enterprise E5 license
 - Access to Microsoft Defender Security Center portal
 - Machines running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update (for Network Protection on Internet Explorer, Edge, Chrome, or Firefox)
-- Machines running Windows 10 May 2019 Update (version 1903) or later (for a better user experience from SmartScreen on Edge). Note that if SmartScreen is not turned on, Network Protection will take over the blocking.
-- A valid license with a partner data provider.
+- Machines running Windows 10 May 2019 Update (version 1903) or later (for a better user experience from SmartScreen on Edge). Note that if SmartScreen is not turned on, Network Protection will take over the blocking
+- A valid license with a partner data provider
 
 ## Data handling
 
@@ -72,6 +72,12 @@ The broad range of categories enables numerous applications:
 Cyren's web content classification technology is integrated by design into Microsoft Defender ATP to enable web filtering and auditing capabilities.
 
 Learn more at https://www.cyren.com/products/url-filtering.
+
+### Cyren  permissions
+
+"Sign in and read user profile" allows Cyren to read your tenant info from your Microsoft Defender ATP account, such as your tenant ID, which will be tied to your Cyren license.
+
+"Read and Write Integration settings" exists under the WindowsDefenderATP scope within permissions. This line allows Cyren to add/modify/revoke Cyren license status on the Microsoft Defender ATP portal.
 
 ### Signing up for a Cyren License
 
@@ -111,19 +117,27 @@ To add a new policy:
 
 Select **Reports > Web protection** to view cards with information about web content filtering and web threat protection. The following cards provide summary information about web content filtering.
 
+![Image of all web protection cards](images/web-protection.png)
+
 ### Web activity by category
 
 This card lists the parent web content categories with the largest percentage change in the number of access attempts, whether they have increased or decreased. You can use this card to understand drastic changes in web activity patterns in your organization from last 30 days, 3 months, or 6 months. Select a category name to view more information about that particular category.
 
 In the first 30 days of using this feature, your organization might not have sufficient data to display in this card.
 
+![Image of all web protection cards](images/web-activity-by-category.png)
+
 ### Web content filtering summary card
 
 This card displays the distribution of blocked access attempts across the different parent web content categories. Select one of the colored bars to view more information about a specific parent web category.
 
+![Image of all web protection cards](images/web-content-filtering-summary.png)
+
 ### View card details
 
 You can access the **Report details** for each card by selecting a table row or colored bar from the chart in the card. The report details page for each card contains extensive statistical data about web content categories, website domains, and machine groups.
+
+![Image of web protection report details](images/web-protection-report-details.png)
 
 - **Web categories**: Lists the web content categories that have had access attempts in your organization. Select a specific category to open a summary flyout.
 
@@ -133,25 +147,17 @@ You can access the **Report details** for each card by selecting a table row or 
 
 Use the time range filter at the top left of the page to select a time period. You can also filter the information or customize the columns. Select a row to open a flyout pane with even more information about the selected item.
 
-## FAQ
+## Errors and issues
 
 ### Why am I seeing the error "Need admin approval" when trying to connect to Cyren?
 
 You need to be logged in to an AAD account with either App administrator or Global Administrator privileges. Your IT admin would most likely either have these permissions and/or be able to grant them to you.
 
-### What exactly are the permissions the app is asking for?
+### Limitations and known issues in this preview
 
-"Sign in and read user profile" allows Cyren to read your tenant info from your MDATP account, such as your tenant ID, which will be tied to your Cyren license.
+- Unassigned machines will have incorrect data shown within the report. In the Report details > Machine groups pivot, you may see a row with a blank Machine Group field. This group contains your unassigned machines in the interim before they get put into your specified group. The report for this row may not contain an accurate count of machines or access counts.
 
-"Read and Write Integration settings" exists under the WindowsDefenderATP scope within permissions. This line allows Cyren to add/modify/revoke Cyren license status on the Microsoft Defender ATP portal.
-
-## Limitations and known issues in this preview
-
-- Unassigned machines will have incorrect data shown within the report
-In the Report details > Machine groups pivot, you may see a row with a blank Machine Group field. This group contains your unassigned machines in the interim before they get put into your specified group. The report for this row may not contain an accurate count of machines or access counts.
-
-- The data in our reports may not be congruent with other data on the site
-We currently do not support real-time data processing for this feature, so you may see inconsistencies between the data in our reports and the URL entity page.
+- The data in our reports may not be congruent with other data on the site. We currently do not support real-time data processing for this feature, so you may see inconsistencies between the data in our reports and the URL entity page.
 
 ## Related topics
 
