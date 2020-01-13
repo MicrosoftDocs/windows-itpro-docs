@@ -140,9 +140,11 @@ If you are using Windows OS [1709](https://docs.microsoft.com/windows/release-in
 
 ## View information about tampering attempts
 
-If you're part of your organization's security team, you can view information about any attempts made to tamper with security settings. When a tampering attempt is detected, an alert is raised the in Microsoft Defender Security Center. Using the rich [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) capabilities and [advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) in Microsoft Defender ATP, security operations teams can investigate and address such attempts.
+Tampering attempts typically indicate bigger cyberattacks where bad actors change security settings as a way to persist and stay undetected. If you're part of your organization's security team, you can view information about any attempts to tamper with security settings. When a tampering attempt is detected, an alert is raised in the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/portal-overview) ([https://securitycenter.windows.com](https://securitycenter.windows.com)). 
 
+![Microsoft Defender Security Center](images/tamperattemptalert.png)
 
+Using the rich [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) capabilities and [advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) in Microsoft Defender ATP, your security operations team can investigate and address such attempts. 
 
 ## Frequently asked questions
 
