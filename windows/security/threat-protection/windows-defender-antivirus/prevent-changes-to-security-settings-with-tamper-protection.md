@@ -218,6 +218,8 @@ In addition, your security operations team can use hunting queries, such as the 
 
 `AlertEvents | where Title == "Tamper Protection bypass"`
 
+[View information about tampering attempts](#view-information-about-tampering-attempts).
+
 ### Will there be a group policy setting for tamper protection?
 
 No.
