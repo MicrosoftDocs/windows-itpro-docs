@@ -116,7 +116,7 @@ If you are using Windows OS [1709](https://docs.microsoft.com/windows/release-in
 
 3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
 
-#### View a registry key to determine whether tamper protection is turned on
+#### View a registry key value to determine whether tamper protection is turned on
 
 1. Open the Registry Editor app.
 
