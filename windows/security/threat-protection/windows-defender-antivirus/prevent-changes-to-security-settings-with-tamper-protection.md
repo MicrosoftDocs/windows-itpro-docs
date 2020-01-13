@@ -76,12 +76,13 @@ If you are a home user, or you are not subject to settings managed by a security
 
 3. Set **Tamper Protection** to **On** or **Off**.
 
-The following table shows what users see in the Windows Security app when using Windows 10 Enterprise or Windows 10 Home.
+Here's what you see in the Windows Security app when using Windows 10 Enterprise:
 
-|Windows 10 Enterprise  |Windows 10 Home  |
-|---------|---------|
-|![Turning tamper protection on in Windows 10 Enterprise](images/turnontamperprotect-enterprise.png)     |![Turning tamper protection on in Windows 10 Home](images/turnontamperprotect-consumer.png)         |
+![Turning tamper protection on in Windows 10 Enterprise](images/turnontamperprotect-enterprise.png)
 
+And here's what you see in the Windows Security app when using Windows 10 Home:
+
+![Turning tamper protection on in Windows 10 Home](images/turnontamperprotect-consumer.png) 
 
 ## Turn tamper protection on (or off) for your organization using Intune
 
@@ -141,7 +142,7 @@ If you are using Windows OS [1709](https://docs.microsoft.com/windows/release-in
 
 ### To which Windows OS versions is configuring tamper protection is applicable?
 
-[Windows 1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709) or later together with [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
+Windows OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), or later together with [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
 ### Is configuring tamper protection in Intune supported on servers?
 
@@ -149,7 +150,7 @@ No
 
 ### Will tamper protection have any impact on third party antivirus registration?
 
-No, third-party antivirus will continue to register with the Windows Security application.
+No. Third-party antivirus offerings will continue to register with the Windows Security application.
 
 ### What happens if Windows Defender Antivirus is not active on a device?
 
@@ -161,11 +162,9 @@ If you are a home user, see [Turn tamper protection on (or off) for an individua
 
 If you are an organization using [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), you should be able to manage tamper protection in Intune similar to how you manage other endpoint protection features. See [Turn tamper protection on (or off) for your organization using Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune).
 
- 
 ### How does configuring tamper protection in Intune affect how I manage Windows Defender Antivirus through my group policy?
 
 Your regular group policy doesn’t apply to tamper protection, and changes to Windows Defender Antivirus settings will be ignored when tamper protection is on.
-
 
 >[!NOTE]
 >A small delay in Group Policy (GPO) processing may occur if Group Policy settings include values that control Windows Defender Antivirus features protected by tamper protection. To avoid any potential delays, we recommend that you remove settings that control Windows Defender Antivirus related behavior from GPO and simply allow tamper protection to protect Windows Defender Antivirus settings. <br><br>
@@ -177,14 +176,13 @@ Value DisableAntiSpyware = 0 <br><br>
 Computer Configuration\Administrative Templates\Windows Components\Windows Defender Antivirus\Real-time Protection\
 Value DisableRealtimeMonitoring = 0
 
-
 ### For Microsoft Defender ATP E5, is configuring tamper protection in Intune targeted to the entire organization only?
 
-Configuring tamper protection in Intune can be targeted to your entire organization as well as to devices and user groups with Intune.
+Configuring tamper protection in Intune can be targeted to your entire organization as well as to specific devices and user groups.
 
 ### Can I configure tamper protection in System Center Configuration Manager?
 
-Currently we do not have support to manage tamper protection through System Center Configuration Manager.
+Currently, managing tamper protection through System Center Configuration Manager is not supported.
 
 ### I have the Windows E3 enrollment. Can I use configuring tamper protection in Intune?
 
@@ -192,7 +190,7 @@ Currently, configuring tamper protection in Intune is only available for custome
 
 ### What happens if I try to change Microsoft Defender ATP settings in Intune, System Center Configuration Manager, and Windows Management Instrumentation when tamper protection is enabled on a device?
 
-You won’t be able to change the features that are protected by tamper protection; those change requests are ignored.
+You won’t be able to change the features that are protected by tamper protection; such change requests are ignored.
 
 ### I’m an enterprise customer. Can local admins change tamper protection on their devices?
 
@@ -220,6 +218,6 @@ No.
 
 [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 
-[Microsoft 365 Enterprise overview (at a glance)](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview#at-a-glance)
-
 [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
+
+[Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](why-use-microsoft-antivirus.md)
