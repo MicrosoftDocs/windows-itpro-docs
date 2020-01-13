@@ -86,8 +86,8 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
     - Your organization must have [Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (this is included in Microsoft 365 E5. See [Microsoft 365 Enterprise overview](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) for more details.)
     - Your organization's devices must be managed by [Intune](https://docs.microsoft.com/intune/device-management-capabilities).
-    - Your Windows machines must be running [Windows OS 1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709) or later.
-    - You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or above)
+    - Your Windows machines must be running Windows OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) or later. (See [Windows 10 release information](https://docs.microsoft.com/windows/release-information/) for more details about releases.)
+    - You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or above).
     - Your machines must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version 1.1.15500.X (or above). (See [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md).)
 
 2. Go to the Microsoft 365 Device Management portal ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) and sign in with your work or school account. 
@@ -104,11 +104,11 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
 5. Assign the profile to one or more groups.
 
-### Are you using Windows OS 1709?
+### Are you using Windows OS 1709, 1803, or 1809?
 
-If you are using Windows OS 1709, you don't have the Windows Security app on your computer. In this case, the one of the following procedures to determine whether tamper protection is enabled.
+If you are using Windows OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), or [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. In this case, the one of the following procedures to determine whether tamper protection is enabled.
 
-#### To determine whether tamper protection is turned on by using PowerShell
+#### Use PowerShell to determine whether tamper protection is turned
 
 1. Open the Windows PowerShell app.
 
@@ -116,7 +116,7 @@ If you are using Windows OS 1709, you don't have the Windows Security app on you
 
 3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
 
-#### To determine whether tamper protection is turned on by viewing a registry key
+#### View a registry key to determine whether tamper protection is turned on
 
 1. Open the Registry Editor app.
 
