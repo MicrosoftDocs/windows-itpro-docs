@@ -140,7 +140,7 @@ If you are using Windows OS [1709](https://docs.microsoft.com/windows/release-in
 
 ## View information about tampering attempts
 
-Tampering attempts typically indicate bigger cyberattacks where bad actors change security settings as a way to persist and stay undetected. If you're part of your organization's security team, you can view information about any attempts to tamper with security settings, and then take appropriate actions to mitigate these threats. 
+Tampering attempts typically indicate bigger cyberattacks. Bad actors try to change security settings as a way to persist and stay undetected. If you're part of your organization's security team, you can view information about such attempts, and then take appropriate actions to mitigate threats. 
 
 When a tampering attempt is detected, an alert is raised in the [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/portal-overview) ([https://securitycenter.windows.com](https://securitycenter.windows.com)). 
 
