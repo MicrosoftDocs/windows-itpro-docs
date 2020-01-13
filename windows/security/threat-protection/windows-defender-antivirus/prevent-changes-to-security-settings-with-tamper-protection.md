@@ -228,12 +228,10 @@ In addition, your security operations team can use hunting queries, such as the 
 
 No.
 
-## Related resources
-
-[Windows 10 Enterprise Security](https://docs.microsoft.com/windows/security/index)
+## Related articles
 
 [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 
-[Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
+[Get an overview of Microsoft Defender ATP E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)
 
 [Better together: Windows Defender Antivirus and Microsoft Defender Advanced Threat Protection](why-use-microsoft-antivirus.md)
