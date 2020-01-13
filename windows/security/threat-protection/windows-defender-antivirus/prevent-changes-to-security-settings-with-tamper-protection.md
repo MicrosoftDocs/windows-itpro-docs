@@ -76,6 +76,11 @@ If you are a home user, or you are not subject to settings managed by a security
 
 3. Set **Tamper Protection** to **On** or **Off**.
 
+|Windows 10 Enterprise  |Windows 10 Home  |
+|---------|---------|
+|![Turning tamper protection on in Windows 10 Enterprise](images/turnontamperprotect-enterprise.png)     |![Turning tamper protection on in Windows 10 Home](images/turnontamperprotect-consumer.png)         |
+
+
 ## Turn tamper protection on (or off) for your organization using Intune
 
 If you are part of your organization's security team, you can turn tamper protection on (or off) for your organization in the Microsoft 365 Device Management portal (Intune). (This feature is rolling out now; if you don't have it yet, you should very soon, assuming your organization has [Microsoft Defender Advanced Threat Protection](../microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md) (Microsoft Defender ATP) and that you meet the prerequisites listed below.) 
@@ -94,13 +99,17 @@ You must have appropriate [permissions](../microsoft-defender-atp/assign-portal-
 
 3. Select **Device configuration** > **Profiles**.
 
-4. Create a profile that includes the following settings:
+4. Create a profile as follows:
 
-    - **Platform**: Windows 10 and later
+    - Platform: **Windows 10 and later**
 
-    - **ProfileType**: Endpoint protection
-    
-    - **Settings** > Windows Defender Security Center > Tamper Protection 
+    - Profile type: **Endpoint protection**
+
+    - Category: **Microsoft Defender Security Center**
+
+    - Tamper Protection: **Enabled**
+
+    ![Turn tamper protection on with Intune](images/turnontamperprotect-intune.png)
 
 5. Assign the profile to one or more groups.
 
