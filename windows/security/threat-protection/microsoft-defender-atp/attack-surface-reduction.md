@@ -28,31 +28,31 @@ ms.custom: asr
 
 Your attack surface is the total number of places where an attacker could compromise your device or network. Reducing your attack surface means offering attackers fewer ways to perform attacks.
 
-Attack surface reduction rules target software behaviors that are often abused to attack device or networks, such as:
+Attack surface reduction rules target software behaviors that are often abused by attackers, such as:
 
 * Launching executable files and scripts that attempt to download or run files
 * Running obfuscated or otherwise suspicious scripts
 * Performing behaviors that apps don't usually initiate during normal day-to-day work
 
-While these behaviors can have legitimate uses as well, they are considered risky because they are commonly abused by malware. Attack surface reduction rules can constrain these kinds of risky behaviors, or even block them entirely.
+These behaviors are sometimes seen in legitimate applications; however, they are considered risky because they are commonly abused by malware. Attack surface reduction rules can constrain these kinds of risky behaviors and help keep your organization safe.
 
 Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
 
-Triggered rules display a notification on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays in the Microsoft Defender Security Center and in the Microsoft 365 security center.
+Whenever a rule is triggered, a notification will be displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays within the Microsoft Defender Security Center and the Microsoft 365 security center.
 
-For information about configuring attack surface reduction rules, see [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
+For more information about configuring attack surface reduction rules, see [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
 
 ## Attack surface reduction features across Windows versions
 
-You can set attack surface reduction rules for computers running Windows 10, versions 1709 and 1803 or later, Windows Server, version 1803 (Semi-Annual Channel) or later, and Windows Server 2019.
+You can set attack surface reduction rules for computers running Windows 10 versions 1709 and 1803 or later, Windows Server version 1803 (Semi-Annual Channel) or later, and Windows Server 2019.
 
-To use the entire feature set of attack surface reduction rules, you need a Windows 10 Enterprise license. With a Windows E5 license, you get advanced management capabilities including monitoring, analytics, and workflows available in [Microsoft Defender Advanced Threat Protection](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the Microsoft 365 security center. These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
+To use the entire feature-set of attack surface reduction rules, you need a Windows 10 Enterprise license. With a Windows E5 license, you get advanced management capabilities including monitoring, analytics, and workflows available in [Microsoft Defender Advanced Threat Protection](microsoft-defender-advanced-threat-protection.md), as well as reporting and configuration capabilities in the Microsoft 365 security center. These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
 
 ## Review attack surface reduction events in the Microsoft Defender Security Center
 
-Microsoft Defender ATP provides detailed reporting into events and blocks as part of its alert investigation scenarios.
+Microsoft Defender ATP provides detailed reporting for events and blocks, as part of its alert investigation scenarios.
 
-You can query Microsoft Defender ATP data by using [advanced hunting](advanced-hunting-query-language.md). If you're using [audit mode](audit-windows-defender.md), you can use advanced hunting to understand how attack surface reduction rules could affect your environment.
+You can query Microsoft Defender ATP data by using [advanced hunting](advanced-hunting-query-language.md). If you're running [audit mode](audit-windows-defender.md), you can use advanced hunting to understand how attack surface reduction rules could affect your environment.
 
 Here is an example query:
 
@@ -63,19 +63,19 @@ DeviceEvents
 
 ## Review attack surface reduction events in Windows Event Viewer
 
-You can review the Windows event log to view events that are created when attack surface reduction rules fire:
+You can review the Windows event log to view events generated by attack surface reduction rules:
 
 1. Download the [Evaluation Package](https://aka.ms/mp7z2w) and extract the file *cfa-events.xml* to an easily accessible location on the machine.
 
-2. Type **Event Viewer** in the Start menu to open the Windows Event Viewer.
+2. Enter the words, *Event Viewer*, into the Start menu to open the Windows Event Viewer.
 
-3. Click **Import custom view...** on the left panel, under **Actions**.
+3. Under **Actions**, select **Import custom view...**.
 
 4. Select the file *cfa-events.xml* from where it was extracted. Alternatively, [copy the XML directly](event-views.md).
 
-5. Click **OK**.
+5. Select **OK**.
 
-This will create a custom view that filters to only show the following events related to controlled folder access:
+This will create a custom view that filters events to only show the following, all of which are related to controlled folder access:
 
 Event ID | Description
 -|-
@@ -83,38 +83,44 @@ Event ID | Description
 1121 | Event when rule fires in Block-mode
 1122 | Event when rule fires in Audit-mode
 
-The "engine version" of attack surface reduction events in the event log, is generated by Microsoft Defender ATP, not the operating system. Microsoft Defender ATP is integrated with Windows 10, so this feature works on all machines with Windows 10 installed.
+The "engine version" listed for attack surface reduction events in the event log, is generated by Microsoft Defender ATP, not by the operating system. Microsoft Defender ATP is integrated with Windows 10, so this feature works on all devices with Windows 10 installed.
 
 ## Attack surface reduction rules
 
-The following sections describe each of the 15 attack surface reduction rules. This table shows their corresponding GUIDs, which you use if you're configuring the rules with Group Policy or PowerShell. If you use System Center Configuration Manager or Microsoft Intune, you do not need the GUIDs:
+This table lists all attack surface reduction rules, their corresponding GUIDs, and whether the rule supports having certain files and folders selectively excluded. Each rule also links to a longer rule description, for further details on how the rule works, why you would want to enable it, and which applications the rule applies to.
+
+Except when specified, attack surface reduction rules only apply to Word, Excel, PowerPoint, and OneNote, or Outlook.
+
+> [!TIP]
+> 
+> Rule GUIDs are used when you're configuring the rules with Group Policy or PowerShell. GUIDs are not needed to manage rules from System Center Configuration Manager (SCCM) or Microsoft Intune.
 
  Rule name | GUID | File & folder exclusions
 -|-|-
-Block executable content from email client and webmail | BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550 | Supported
-Block all Office applications from creating child processes | D4F940AB-401B-4EFC-AADC-AD5F3C50688A | Supported
-Block Office applications from creating executable content  | 3B576869-A4EC-4529-8536-B80A7769E899 | Supported
-Block Office applications from injecting code into other processes | 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84 | Supported
-Block JavaScript or VBScript from launching downloaded executable content | D3E037E1-3EB8-44C8-A917-57927947596D | Not supported
-Block execution of potentially obfuscated scripts  | 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC | Supported
-Block Win32 API calls from Office macro | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B | Supported
-Block executable files from running unless they meet a prevalence, age, or trusted list criterion | 01443614-cd74-433a-b99e-2ecdc07bfc25 | Supported
-Use advanced protection against ransomware | c1db55ab-c21a-4637-bb3f-a12568109d35 | Supported
-Block credential stealing from the Windows local security authority subsystem (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 | Supported
-Block process creations originating from PSExec and WMI commands | d1e49aac-8f56-4280-b9ba-993a6d77406c | Not supported
-Block untrusted and unsigned processes that run from USB | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 | Supported
-Block Office communication application from creating child processes | 26190899-1602-49e8-8b27-eb1d0a1ce869 | Supported
-Block Adobe Reader from creating child processes | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c | Supported
-Block persistence through WMI event subscription | e6db77e5-3df2-4cf1-b95a-636979351e5b | Not supported
-
-Each rule description indicates which apps or file types the rule applies to. In general, the rules for Office apps apply to only Word, Excel, PowerPoint, and OneNote, or they apply to Outlook. Except where specified, attack surface reduction rules don't apply to any other Office apps.
+[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550 | Supported
+[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | D4F940AB-401B-4EFC-AADC-AD5F3C50688A | Supported
+[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | 3B576869-A4EC-4529-8536-B80A7769E899 | Supported
+[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) | 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84 | Supported
+[Block JavaScript or VBScript from launching downloaded executable content](#block-javaScript-or-vbscript-from-launching-downloaded-executable-content) | D3E037E1-3EB8-44C8-A917-57927947596D | Not supported
+[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC | Supported
+[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B | Supported
+[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | 01443614-cd74-433a-b99e-2ecdc07bfc25 | Supported
+[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | c1db55ab-c21a-4637-bb3f-a12568109d35 | Supported
+[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-Windows-local-security-authority-subsystem-(lsass.exe)) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 | Supported
+[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | d1e49aac-8f56-4280-b9ba-993a6d77406c | Not supported
+[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 | Supported
+[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | 26190899-1602-49e8-8b27-eb1d0a1ce869 | Supported
+[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c | Supported
+[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) | e6db77e5-3df2-4cf1-b95a-636979351e5b | Not supported
 
 ### Block executable content from email client and webmail
 
-This rule blocks the following file types from launching from email in Microsoft Outlook or Outlook.com and other popular webmail providers:
+This rule blocks the following file types from launching from email opened within the Microsoft Outlook application, or Outlook.com and other popular webmail providers:
 
 * Executable files (such as .exe, .dll, or .scr)
 * Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
+
+Launching executable files or scripts obtained from email can be very dangerous, as it gives attackers a chance to run malware directly on a targeted device.
 
 This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
 
@@ -128,7 +134,7 @@ GUID: BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550
 
 This rule blocks Office apps from creating child processes. This includes Word, Excel, PowerPoint, OneNote, and Access.
 
-This is a typical malware behavior, especially malware that abuses Office as a vector, using VBA macros and exploit code to download and attempt to run additional payload. Some legitimate line-of-business applications might also use behaviors like this, including spawning a command prompt or using PowerShell to configure registry settings.
+Creating malicious child processes is a common malware strategy. Malware that abuse Office as a vector often run VBA macros and exploit code to download and attempt to run additional payloads. However, some legitimate line-of-business applications might also generate child processes for benign purposes, such as spawning a command prompt or using PowerShell to configure registry settings.
 
 This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
 
@@ -142,7 +148,7 @@ GUID: D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 
 This rule prevents Office apps, including Word, Excel, and PowerPoint, from creating executable content.
 
-This rule targets a typical behavior where malware uses Office as a vector to break out of Office and save malicious components to disk, where they persist and survive a computer reboot. This rule prevents malicious code from being written to disk.
+Malware that abuse Office as a vector may attempt to break out of Office and save malicious components to disk, where they persist and survive a computer reboot. This rule prevents malicious code from being written to disk.
 
 This rule was introduced in: Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
 
@@ -154,7 +160,11 @@ GUID: 3B576869-A4EC-4529-8536-B80A7769E899
 
 ### Block Office applications from injecting code into other processes
 
-Attackers might attempt to use Office apps to migrate malicious code into other processes through code injection, so the code can masquerade as a clean process. This rule blocks code injection attempts from Office apps into other processes. There are no known legitimate business purposes for using code injection.
+This rule blocks code injection attempts from Office apps into other processes.
+
+Attackers might attempt to use Office apps to migrate malicious code into other processes through code injection, so the code can masquerade as a clean process.
+
+There are no known legitimate business purposes for using code injection.
 
 This rule applies to Word, Excel, and PowerPoint.
 
@@ -168,9 +178,9 @@ GUID: 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84
 
 ### Block JavaScript or VBScript from launching downloaded executable content
 
-Malware often uses JavaScript and VBScript scripts to launch other malicious apps.
+This rule prevents scripts from launching potentially malicious downloaded content. Malware written in JavaScript or VBScript often acts as a downloader to fetch and launch other malware from the Internet.
 
-Malware written in JavaScript or VBS often acts as a downloader to fetch and launch additional native payload from the Internet. This rule prevents scripts from launching downloaded content, helping to prevent malicious use of the scripts to spread malware and infect machines. This isn't a common line-of-business use, but line-of-business applications sometimes use scripts to download and launch installers.
+Although not common, line-of-business applications sometimes use scripts to download and launch installers.
 
 > [!IMPORTANT]
 > File and folder exclusions don't apply to this attack surface reduction rule.
@@ -185,7 +195,9 @@ GUID: D3E037E1-3EB8-44C8-A917-57927947596D
 
 ### Block execution of potentially obfuscated scripts
 
-Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. This rule detects suspicious properties within an obfuscated script.
+This rule detects suspicious properties within an obfuscated script.
+
+Script obfuscation is a common technique that both malware authors and legitimate applications use to hide intellectual property or decrease script loading times. Malware authors also use obfuscation to make malicious code harder to read, which prevents close scrutiny by humans and security software.
 
 This rule was introduced in:  Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
 
@@ -197,7 +209,9 @@ GUID: 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC
 
 ### Block Win32 API calls from Office macros
 
-Office VBA provides the ability to use Win32 API calls, which malicious code can abuse. Most organizations don't use this functionality, but might still rely on using other macro capabilities. This rule allows you to prevent using Win32 APIs in VBA macros, which reduces the attack surface.
+This rule prevents VBA macros from calling Win32 APIs.
+
+Office VBA provides the ability to make Win32 API calls. Malware can abuse this capability, such as [calling Win32 APIs to launch malicious shellcode](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) without writing anything directly to disk. Most organizations don't rely on the ability to call Win32 APIs in their day-to-day functioning, even if they use macros in other ways.
 
 This rule was introduced in:  Windows 10 1709, Windows Server 1809, Windows Server 2019, SCCM CB 1710
 
@@ -209,9 +223,11 @@ GUID: 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B
 
 ### Block executable files from running unless they meet a prevalence, age, or trusted list criterion
 
-This rule blocks the following file types from launching unless they either meet prevalence or age criteria, or they're in a trusted list or exclusion list:
+This rule blocks the following file types from launching unless they meet prevalence or age criteria, or they're in a trusted list or an exclusion list:
 
 * Executable files (such as .exe, .dll, or .scr)
+
+Launching untrusted or unknown executable files can be risky, as it may not not be initially clear if the files are malicious.
 
 > [!NOTE]
 > You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule.
@@ -231,7 +247,7 @@ GUID: 01443614-cd74-433a-b99e-2ecdc07bfc25
 
 ### Use advanced protection against ransomware
 
-This rule provides an extra layer of protection against ransomware. It scans executable files entering the system to determine whether they're trustworthy. If the files closely resemble ransomware, this rule blocks them from running, unless they're in a trusted list or exclusion list.
+This rule provides an extra layer of protection against ransomware. It scans executable files entering the system to determine whether they're trustworthy. If the files closely resemble ransomware, this rule blocks them from running, unless they're in a trusted list or an exclusion list.
 
 > [!NOTE]
 > You must [enable cloud-delivered protection](../windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md) to use this rule.
@@ -246,7 +262,9 @@ GUID: c1db55ab-c21a-4637-bb3f-a12568109d35
 
 ### Block credential stealing from the Windows local security authority subsystem (lsass.exe)
 
-Local Security Authority Subsystem Service (LSASS) authenticates users who log in to a Windows computer. Microsoft Defender Credential Guard in Windows 10 normally prevents attempts to extract credentials from LSASS. However, some organizations can't enable Credential Guard on all of their computers because of compatibility issues with custom smartcard drivers or other programs that load into the Local Security Authority (LSA). In these cases, attackers can use tools like Mimikatz to scrape cleartext passwords and NTLM hashes from LSASS. This rule helps mitigate that risk by locking down LSASS.
+This rule helps prevent credential stealing, by locking down Local Security Authority Subsystem Service (LSASS).
+
+LSASS authenticates users who log in to a Windows computer. Microsoft Defender Credential Guard in Windows 10 normally prevents attempts to extract credentials from LSASS. However, some organizations can't enable Credential Guard on all of their computers because of compatibility issues with custom smartcard drivers or other programs that load into the Local Security Authority (LSA). In these cases, attackers can use hack tools like Mimikatz to scrape cleartext passwords and NTLM hashes from LSASS.
 
 > [!NOTE]
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that overly enumerates LSASS, you need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
@@ -261,7 +279,7 @@ GUID: 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2
 
 ### Block process creations originating from PSExec and WMI commands
 
-This rule blocks processes through PsExec and WMI commands from running, to prevent remote code execution that can spread malware attacks.
+This rule blocks processes created through [PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec) and [WMI](https://docs.microsoft.com/windows/win32/wmisdk/about-wmi) from running. Both PsExec and WMI can remotely execute code, so there is a risk of malware abusing this functionality for command and control purposes, or to spread an infection throughout an organization's network.
 
 > [!IMPORTANT]
 > File and folder exclusions do not apply to this attack surface reduction rule.
@@ -284,6 +302,8 @@ With this rule, admins can prevent unsigned or untrusted executable files from r
 * Executable files (such as .exe, .dll, or .scr)
 * Script files (such as a PowerShell .ps, VisualBasic .vbs, or JavaScript .js file)
 
+Running unsigned or untrusted files from a USB drive is very risky, because it might not be initially clear if the files are benign or malicious.
+
 This rule was introduced in: Windows 10 1803, Windows Server 1809, Windows Server 2019, SCCM CB 1802
 
 Intune name: Untrusted and unsigned processes that run from USB
@@ -294,7 +314,9 @@ GUID: b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4
 
 ### Block Office communication application from creating child processes
 
-This rule prevents Outlook from creating child processes. It protects against social engineering attacks and prevents exploit code from abusing a vulnerability in Outlook. To achieve this, the rule prevents the launch of additional payload while still allowing legitimate Outlook functions. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
+This rule prevents Outlook from creating child processes, while till allowing legitimate Outlook functions.
+
+This protects against social engineering attacks and prevents exploit code from abusing vulnerabilities in Outlook. It also protects against [Outlook rules and forms exploits](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) that attackers can use when a user's credentials are compromised.
 
 > [!NOTE]
 > This rule applies to Outlook and Outlook.com only.
@@ -309,7 +331,9 @@ GUID: 26190899-1602-49e8-8b27-eb1d0a1ce869
 
 ### Block Adobe Reader from creating child processes
 
-Through social engineering or exploits, malware can download and launch additional payloads and break out of Adobe Reader. This rule prevents attacks like this by blocking Adobe Reader from creating additional processes.
+This rule prevents attacks by blocking Adobe Reader from creating additional processes.
+
+Through social engineering or exploits, malware can download and launch additional payloads and break out of Adobe Reader. By blocking child processes from being generated by Adobe Reader, malware attempting to use it as a vector are prevented from spreading.
 
 This rule was introduced in: Windows 10 1809, Windows Server 1809, Windows Server 2019
 
@@ -321,7 +345,9 @@ GUID: 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c
 
 ### Block persistence through WMI event subscription
 
-Fileless threats employ various tactics to stay hidden, to avoid being seen in the file system, and to gain periodic execution control. Some threats can abuse the WMI repository and event model to stay hidden. With this rule, admins can prevent threats that abuse WMI to persist and stay hidden in WMI repository.
+This rule prevents malware from abusing WMI to attain persistence on a device.
+
+Fileless threats employ various tactics to stay hidden, to avoid being seen in the file system, and to gain periodic execution control. Some threats can abuse the WMI repository and event model to stay hidden.
 
 This rule was introduced in: Windows 10 1903, Windows Server 1903
 
