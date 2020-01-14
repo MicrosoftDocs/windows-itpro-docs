@@ -152,6 +152,13 @@
 ### [Portal overview](microsoft-defender-atp/portal-overview.md)
 ### [Microsoft Defender ATP for US Government Community Cloud High customers](microsoft-defender-atp/commercial-gov.md)
 
+
+## [Deployment guide]()
+### [Product brief](microsoft-defender-atp/product-brief.md)
+### [Prepare deployment](microsoft-defender-atp/prepare-deployment.md)
+### [Production deployment](microsoft-defender-atp/production-deployment.md)
+
+
 ## [Get started]()
 ### [What's new in Microsoft Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 ### [Minimum requirements](microsoft-defender-atp/minimum-requirements.md)
