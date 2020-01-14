@@ -76,7 +76,7 @@ If you are a home user, or you are not subject to settings managed by a security
 
 Here's what you see in the Windows Security app:
 
-![Turning tamper protection on in Windows 10 Home](images/turnontamperprotect-consumer.png) 
+![Tamper protection turned on in Windows 10 Home](images/tamperprotectionturnedon.png)
 
 ## Turn tamper protection on (or off) for your organization using Intune
 
