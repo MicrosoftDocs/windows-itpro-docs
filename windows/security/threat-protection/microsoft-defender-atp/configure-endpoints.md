@@ -39,7 +39,7 @@ The following deployment tools and methods are supported:
 Topic | Description
 :---|:---
 [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp.md) | Use Group Policy to deploy the configuration package on machines.
-[Onboard Windows 10 machines using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) | You can use either use Microsoft Endpoint Configuration Manager (current branch) version 1606 or Microsoft Endpoint Configuration Manager (current branch) version 1602 or earlier to deploy the configuration package on machines.
+[Onboard Windows machines using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) | You can use either use Microsoft Endpoint Configuration Manager (current branch) version 1606 or Microsoft Endpoint Configuration Manager (current branch) version 1602 or earlier to deploy the configuration package on machines.
 [Onboard Windows 10 machines using Mobile Device Management tools](configure-endpoints-mdm.md) | Use Mobile Device Management tools or Microsoft Intune to deploy the configuration package on machine.
 [Onboard Windows 10 machines using a local script](configure-endpoints-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
 [Onboard non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi.md) | Learn how to use the configuration package to configure VDI machines.

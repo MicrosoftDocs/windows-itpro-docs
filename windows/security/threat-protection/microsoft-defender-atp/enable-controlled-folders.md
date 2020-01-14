@@ -30,7 +30,7 @@ You can enable controlled folder access by using any of these methods:
 * [Windows Security app](#windows-security-app)
 * [Microsoft Intune](#intune)
 * [Mobile Device Management (MDM)](#mdm)
-* [Microsoft Endpoint Configuration Manager]
+* [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [Group Policy](#group-policy)
 * [PowerShell](#powershell)
 

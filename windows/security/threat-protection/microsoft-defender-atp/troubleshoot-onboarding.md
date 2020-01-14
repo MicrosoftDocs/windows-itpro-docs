@@ -44,8 +44,6 @@ If the script completes successfully, see [Troubleshoot onboarding issues on the
 When onboarding machines using the following versions of Configuration Manager:
 - System Center 2012 Configuration Manager
 - System Center 2012 R2 Configuration Manager
-- Microsoft Endpoint Configuration Manager (current branch) version 1511
-- Microsoft Endpoint Configuration Manager (current branch) version 1602
 
 
 Deployment with the above-mentioned versions of Configuration Manager is done by running the onboarding script on the machines. You can track the deployment in the Configuration Manager Console.

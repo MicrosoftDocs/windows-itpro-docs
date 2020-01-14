@@ -33,7 +33,7 @@ You can enable attack surface reduction rules by using any of these methods:
 
 * [Microsoft Intune](#intune)
 * [Mobile Device Management (MDM)](#mdm)
-* [Microsoft Endpoint Configuration Manager]
+* [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [Group Policy](#group-policy)
 * [PowerShell](#powershell)
 
