@@ -29,9 +29,9 @@ Method|Return Type |Description
 [Get machine](get-machine-by-id.md) | [machine](machine.md) | Get a [machine](machine.md) by its identity.
 [Get logged on users](get-machine-log-on-users.md) | [user](user.md) collection | Get the set of [User](user.md) that logged on to the [machine](machine.md).
 [Get related alerts](get-machine-related-alerts.md) | [alert](alerts.md) collection | Get the set of [alert](alerts.md) entities that were raised on the [machine](machine.md).
-[Get installed software](get-software.md) | [software](software.md) collection | Retrieves a list of software inventory in your organization.
-[Get discovered vulnerabilities](get-all-vulnerabilities.md) | [vulnerability](vulnerability.md) collection | Retrieves a list of all the vulnerabilities affecting the organization.
-[Get security recommendations](get-all-recommendations.md) | [recommendation](recommendation.md) collection | Retrieves a list of all security recommendations affecting the organization.
+[Get installed software](get-installed-software.md) | [software](software.md) collection | Retrieves a list of software inventory in your organization.
+[Get discovered vulnerabilities](get-discovered-vulnerabilities.md) | [vulnerability](vulnerability.md) collection | Retrieves a list of all the vulnerabilities affecting the organization.
+[Get security recommendations](get-security-recommendations.md) | [recommendation](recommendation.md) collection | Retrieves a list of all security recommendations affecting the organization.
 [Add or Remove machine tags](add-or-remove-machine-tags.md) | [machine](machine.md) | Add or Remove tag to a specific machine.
 [Find machines by IP](find-machines-by-ip.md) | [machine](machine.md) collection | Find machines seen with IP.
 
