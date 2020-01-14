@@ -123,7 +123,7 @@ This card lists the parent web content categories with the largest percentage ch
 
 In the first 30 days of using this feature, your organization might not have sufficient data to display in this card.
 
-![Image of web activity by category card](images/web-activity-by-category.png)
+![Image of web activity by category card](images/web-activity-by-category600.png)
 
 ### Web content filtering summary card
 
