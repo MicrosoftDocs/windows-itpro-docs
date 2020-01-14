@@ -125,7 +125,11 @@ Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Auth
 ## Device Registration
 
 Organizations wanting to deploy hybrid key trust need their domain joined devices to register to Azure Active Directory.  Just as a computer has an identity in Active Directory, that same computer has an identity in the cloud.  This ensures that only approved computers are used with that Azure Active Directory.  Each computer registers its identity in Azure Active Directory. 
- 
+
+## Provisioning
+
+You need to allow access to the URL account.microsoft.com to initiate Windows Hello for Business provisioning. This URL launches the subsequent steps in the provisioning process and is required to successfully complete Windows Hello for Business provisioning. This URL does not require any authentication and as such, does not collect any user data.
+
 
 ### Section Checklist
 
