@@ -1,5 +1,5 @@
 ---
-title: Get recommendation vulnerabilities
+title: Get recommendation by vulnerabilities
 description: Retrieves a list of vulnerabilities associated with the security recommendation.
 keywords: apis, graph api, supported apis, get, list of vulnerabilities, security recommendation, security recommendation for vulnerabilities, threat and vulnerability management, threat and vulnerability management api 
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get recommendation vulnerabilities
+# Get recommendation by vulnerabilities
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
