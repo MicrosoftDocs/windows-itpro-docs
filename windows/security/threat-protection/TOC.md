@@ -390,6 +390,9 @@
 ####### [Get machine by ID](microsoft-defender-atp/get-machine-by-id.md)
 ####### [Get machine log on users](microsoft-defender-atp/get-machine-log-on-users.md)
 ####### [Get machine related alerts](microsoft-defender-atp/get-machine-related-alerts.md)
+####### [Get installed software](get-installed-software.md)
+####### [Get discovered vulnerabilities](get-discovered-vulnerabilities.md)
+####### [Get security recommendation](get-security-recommendations.md)
 ####### [Add or Remove machine tags](microsoft-defender-atp/add-or-remove-machine-tags.md)
 ####### [Find machines by IP](microsoft-defender-atp/find-machines-by-ip.md)
 
