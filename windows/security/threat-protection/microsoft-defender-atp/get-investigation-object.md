@@ -1,7 +1,7 @@
 ---
-title: Get user related alerts API
-description: Retrieves a collection of alerts related to a given user ID.
-keywords: apis, graph api, supported apis, get, user, related, alerts
+title: Get Investigation object API
+description: Use this API to create calls related to get Investigation object
+keywords: apis, graph api, supported apis, Investigation object
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get user related alerts API
+# Get Investigation API
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -24,7 +24,8 @@ ms.topic: article
 
 
 ## API description
-Retrieves a collection of alerts related to a given user ID.
+Retrieves specific [Investigation](investigation.md) by its ID.
+<br> ID can be the investigation ID or the investigation triggering alert ID.
 
 
 ## Limitations
@@ -44,14 +45,11 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 >[!Note]
 > When obtaining a token using user credentials:
 >- The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
->- Response will include only alerts, associated with machines, that the user have access to, based on machine group settings (See [Create and manage machine groups](machine-groups.md) for more information)
 
 ## HTTP request
 ```
-GET /api/users/{id}/alerts
+GET https://api.securitycenter.windows.com/api/investigations/{id}
 ```
-
-**Note that the id is not the full UPN, but only the user name. (e.g., to retrieve alerts for user1@contoso.com use /api/users/user1/alerts)**
 
 ## Request headers
 
@@ -64,17 +62,5 @@ Authorization | String | Bearer {token}. **Required**.
 Empty
 
 ## Response
-If successful and user exist - 200 OK. If the user do not exist - 404 Not Found. 
+If successful, this method returns 200, Ok response code with a [Investigations](investigation.md) entity.
 
-
-## Example
-
-**Request**
-
-Here is an example of the request.
-
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-```
-GET https://api.securitycenter.windows.com/api/users/user1/alerts
-```
