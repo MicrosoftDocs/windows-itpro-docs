@@ -32,7 +32,7 @@ Verify you have a current documentation of your MBAM environment, including all 
 3. Do not configure it at this time 
 4. Using the MBAM Configurator; re-add the Reports role
 5. Using the MBAM Configurator; re-add the SQL Database role on the SQL Server
-6. At the end, you will be warned that the DBs already exist and  weren’t created, but this is expected.
+6. At the end, you will be warned that the DBs already exist and  weren’t created, but this is expected
 7. This process updates the existing databases to the current version being installed.              
 
 #### Steps to upgrade the MBAM Server (Running MBAM and IIS)
