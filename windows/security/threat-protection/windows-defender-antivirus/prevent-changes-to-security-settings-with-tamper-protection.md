@@ -47,16 +47,15 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 ### What do you want to do?
 
-[Turn tamper protection on (or off) for an individual machine using Windows Security](#turn-tamper-protection-on-or-off-for-an-individual-machine)
+1. Turn tamper protection on <br/>
+    - [For an individual machine, use Windows Security](#turn-tamper-protection-on-or-off-for-an-individual-machine).
+    - [For your organization, use Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune).
 
-[Turn tamper protection on (or off) for your organization using Intune](#turn-tamper-protection-on-or-off-for-your-organization-using-intune)
+2. [View information about tampering attempts](#view-information-about-tampering-attempts).
 
-[View information about tampering attempts](#view-information-about-tampering-attempts)
+3. [Review your security recommendations](#review-your-security-recommendations).
 
-[Review your security recommendations](#review-your-security-recommendations)
-
-[Browse the frequently asked questions](#view-information-about-tampering-attempts)
-
+4. [Browse the frequently asked questions](#view-information-about-tampering-attempts).
 
 ## Turn tamper protection on (or off) for an individual machine
 
