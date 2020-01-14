@@ -186,3 +186,6 @@
 ### [IExpress Wizard command-line options](ie11-ieak/iexpress-command-line-options.md)
 ### [Internet Explorer Setup command-line options and return codes](ie11-ieak/ie-setup-command-line-options-and-return-codes.md)
 
+## [Troubleshooting]
+### [Clear the Internet Explorer cache from a command line](../troubleshooting/clear-ie-cache-from-command-line.md)
+### [IE and Microsoft Edge FAQ for IT Pros](../troubleshooting/ie-edge-faqs.md)
