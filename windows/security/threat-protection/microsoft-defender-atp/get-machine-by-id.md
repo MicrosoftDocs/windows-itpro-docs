@@ -18,11 +18,19 @@ ms.topic: article
 
 # Get machine by ID API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Retrieves a machine entity by ID.
+
+## API description
+Retrieves specific [Machine](machine.md) by its machine ID or computer name.
+
+
+## Limitations
+1. You can get machines last seen in the past 30 days.
+2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -66,7 +74,7 @@ If machine with the specified id was not found - 404 Not Found.
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07
@@ -83,20 +91,22 @@ Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Machine",
     "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-    "computerDnsName": "mymachine1.contoso.com",
-    "firstSeen": "2018-08-02T14:55:03.7791856Z",
+	"computerDnsName": "mymachine1.contoso.com",
+	"firstSeen": "2018-08-02T14:55:03.7791856Z",
 	"lastSeen": "2018-08-02T14:55:03.7791856Z",
-    "osPlatform": "Windows10",
-    "osVersion": "10.0.0.0",
-    "lastIpAddress": "172.17.230.209",
-    "lastExternalIpAddress": "167.220.196.71",
-    "agentVersion": "10.5830.18209.1001",
-    "osBuild": 18209,
-    "healthStatus": "Active",
-    "rbacGroupId": 140,
+	"osPlatform": "Windows10",
+	"version": "1709",
+	"osProcessor": "x64",
+	"lastIpAddress": "172.17.230.209",
+	"lastExternalIpAddress": "167.220.196.71",
+	"osBuild": 18209,
+	"healthStatus": "Active",
+	"rbacGroupId": 140,
 	"rbacGroupName": "The-A-Team",
-    "riskScore": "Low",
-    "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+	"riskScore": "Low",
+	"exposureLevel": "Medium",
+	"isAadJoined": true,
+	"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
 	"machineTags": [ "test tag 1", "test tag 2" ]
 }
 

@@ -8,7 +8,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 09/18/2019
+ms.date: 10/09/2019
 ms.reviewer: scottmca
 manager: dansimp
 ms.audience: itpro
@@ -38,15 +38,28 @@ If preferred, you can manually complete the update as follows:
 > [!NOTE]
 >
 > - Manually installing the MSI file may prompt you to restart Surface; however, restarting is optional and not required.
->- You will need to disconnect and reconnect the dock twice before the update fully completes.
+> - You will need to disconnect and reconnect the dock twice before the update fully completes.
+> - To create a log file, specify the path in the Msiexec command. For example, append /l*v %windir%\logs\ SurfaceDockFWI.log".
 
 ## Network deployment
 
 You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firmware Update to multiple devices across your network. When using System Center Configuration Manager or other deployment tool, enter the following syntax to ensure the installation is silent:
 
-- **Msiexec.exe /i <name of msi> /quiet /norestart**
+- **Msiexec.exe /i <name of msi> /quiet /norestart** 
+
+> [!NOTE]
+> A log file is not created by default. In order to create a log file, you will need to append "/l*v [path]"
 
 For more information, refer to [Command line options](https://docs.microsoft.com/windows/win32/msi/command-line-options) documentation.
+
+> [!IMPORTANT]
+> If you want to keep your Surface Dock updated using any other method, refer to [Update your Surface Dock](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) for details.
+
+## Intune deployment
+You can use Intune to distribute Surface Dock Firmware Update to your devices. First you will need to convert the MSI file to the .intunewin format, as described in the following documentation: [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps/apps-win32-app-management).
+
+Use the following command:
+  - **msiexec /i <name of msi> /quiet /q**
 
 ## How to verify completion of firmware update
 
@@ -73,15 +86,16 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 
 ## Event logging
 
-**Table 1. Event logging for Surface Dock Firmware Update**
+**Table 1. Log files for Surface Dock Firmware Update**
 
 | Log                              | Location                               | Notes                                                                                                                                                                                                         |
-| -------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Surface Dock Firmware Update log | /l*v %windir%\logs\ SurfaceDockFWI.log | Earlier versions of this tool wrote events to Applications and Services Logs\Microsoft Surface Dock Updater.                                                                                                  |
-| Windows Device Install log       | %windir%\inf\ setupapi.dev.log         | For more information about using Device Install Log, refer [to SetupAPI Logging](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi-logging--windows-vista-and-later-) documentation. |
+| -------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Surface Dock Firmware Update log | Path needs to be specified (see note) | Earlier versions of this tool wrote events to Applications and Services Logs\Microsoft Surface Dock Updater.                                                                                                  |
+| Windows Device Install log       | %windir%\inf\setupapi.dev.log           | For more information about using Device Install Log, refer to [SetupAPI Logging](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi-logging--windows-vista-and-later-) documentation. |
 
- 
-**Table 2. Event log IDs for Surface Dock Firmware Update**
+
+**Table 2. Event log IDs for Surface Dock Firmware Update**<br>
+Events are logged in the Application Event Log.  Note:  Earlier versions of this tool wrote events to Applications and Services Logs\Microsoft Surface Dock Updater.
 
 | Event ID | Event type                                                           |
 | -------- | -------------------------------------------------------------------- |
@@ -90,6 +104,10 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 | 2003     | Dock firmware update failed to get firmware version.                 |
 | 2004     | Querying the firmware version.                                       |
 | 2005     | Dock firmware failed to start update.                                |
+| 2006     | Failed to send offer/payload pairs.                                  |
+| 2007     | Firmware update finished.                                            |
+| 2008     | BEGIN dock telemetry.                                                |
+| 2011     | END dock telemetry.                                                  |
 
 ## Troubleshooting tips
 
@@ -101,7 +119,7 @@ Successful completion of Surface Dock Firmware Update results in new registry ke
 
 ## Changes and updates
 
-Microsoft periodically releases new versions of Surface Dock Firmware Update. To update a Surface Dock to the latest firmware, you must use the latest version of Surface Dock Firmware Update.
+Microsoft periodically releases new versions of Surface Dock Firmware Update.Note that the MSI file is not self-updating. If you have deployed the MSI to Surface devices and a new version of the firmware is released, you will need to deploy the new version of the MSI.
 
 ## Versions reference
 ### Version 1.42.139 
@@ -112,6 +130,8 @@ This version, contained in Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.316
 
 - Component10CurrentFwVersion updated to **4ac3970**.
 - Component20CurrentFwVersion updated to **4a1d570**.
+
+It adds support for Surface Pro 7 and Surface Laptop 3.
 
 ## Legacy versions
 

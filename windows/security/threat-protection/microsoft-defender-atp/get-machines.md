@@ -18,17 +18,23 @@ ms.topic: article
 
 # List machines API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-This API can do the following actions:
 
-- Retrieves a collection of machines that have communicated with  Microsoft Defender ATP cloud on the last 30 days.
-- Get Machines collection API supports [OData V4 queries](https://www.odata.org/documentation/).
-- The OData's Filter query is supported on: "Id", "ComputerDnsName", "LastSeen", "LastIpAddress", "HealthStatus", "OsPlatform", "RiskScore", "MachineTags" and "RbacGroupId".
+## API description
+Retrieves a collection of [Machines](machine.md) that have communicated with  Microsoft Defender ATP cloud on the last 30 days.
+<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
+<br>The OData's ```$filter``` query is supported on: ```computerDnsName```, ```lastSeen```, ```lastIpAddress```, ```healthStatus```, ```osPlatform```, ```riskScore```, ```rbacGroupId``` and ```machineTags``` properties.
+<br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
-See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
+
+## Limitations
+1. You can get machines last seen in the past 30 days.
+2. Maximum page size is 10,000.
+3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
+
 
 ## Permissions
 
@@ -69,7 +75,7 @@ If successful and machines exists - 200 OK with list of [machine](machine.md) en
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/machines
@@ -88,42 +94,25 @@ Content-type: application/json
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-            "computerDnsName": "mymachine1.contoso.com",
-            "firstSeen": "2018-08-02T14:55:03.7791856Z",
+			"computerDnsName": "mymachine1.contoso.com",
+			"firstSeen": "2018-08-02T14:55:03.7791856Z",
 			"lastSeen": "2018-08-02T14:55:03.7791856Z",
-            "osPlatform": "Windows10",
-            "osVersion": "10.0.0.0",
-            "lastIpAddress": "172.17.230.209",
-            "lastExternalIpAddress": "167.220.196.71",
-            "agentVersion": "10.5830.18209.1001",
-            "osBuild": 18209,
-            "healthStatus": "Active",
-            "rbacGroupId": 140,
-			"rbacGroupName": "The-A-Team",
-            "riskScore": "Low",
-			"isAadJoined": true,
-            "aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
-			"machineTags": [ "test tag 1", "test tag 2" ]
-        },
-        {
-            "id": "7292e4b8cb74ff1cc3d8a495eb29dc8858b732f7",
-            "computerDnsName": "mymachine2.contoso.com",
-            "firstSeen": "2018-07-09T13:22:45.1250071Z",
-			"lastSeen": "2018-07-09T13:22:45.1250071Z",
-            "osPlatform": "Windows10",
-            "osVersion": "10.0.0.0",
-            "lastIpAddress": "192.168.12.225",
-            "lastExternalIpAddress": "79.183.65.82",
-            "agentVersion": "10.5820.17724.1000",
-            "osBuild": 17724,
-            "healthStatus": "Inactive",
+			"osPlatform": "Windows10",
+			"version": "1709",
+			"osProcessor": "x64",
+			"lastIpAddress": "172.17.230.209",
+			"lastExternalIpAddress": "167.220.196.71",
+			"osBuild": 18209,
+			"healthStatus": "Active",
 			"rbacGroupId": 140,
 			"rbacGroupName": "The-A-Team",
-            "riskScore": "Low",
-			"isAadJoined": false,
-            "aadDeviceId": null,
-			"machineTags": [ "test tag 1" ]
+			"riskScore": "Low",
+			"exposureLevel": "Medium",
+			"isAadJoined": true,
+			"aadDeviceId": "80fe8ff8-2624-418e-9591-41f0491218f9",
+			"machineTags": [ "test tag 1", "test tag 2" ]
         }
+		...
     ]
 }
 ```

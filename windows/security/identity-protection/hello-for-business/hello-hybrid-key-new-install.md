@@ -1,6 +1,6 @@
 ---
-title: Windows Hello for Business Key Trust New Installation (Windows Hello for Business)
-description: Windows Hello for Business Hybrid baseline deployment
+title: Windows Hello for Business Key Trust New Installation
+description: Learn how to perform a hybrid key trust deployment of Windows Hello for Business, for systems with no previous installations.
 keywords: identity, PIN, biometric, Hello, passport, WHFB
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -126,7 +126,7 @@ If your organization uses Azure MFA on a per-consumption model (no licenses), th
 Once you have created your Azure MFA authentication provider and associated it with an Azure tenant, you need to configure the multi-factor authentication settings.  Review the [Configure Azure Multi-Factor Authentication settings](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-whats-next) section to configure your settings.
 
 #### Azure MFA User States
-After you have completed configuring your Azure MFA settings, you want to review configure [User States](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-user-states) to understand user states. User states determine how you enable Azure MFA for your users.
+After you have completed configuring your Azure MFA settings, you want to review [How to require two-step verification for a user](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-user-states) to understand user states. User states determine how you enable Azure MFA for your users.
 
 ### Azure MFA via ADFS
 Alternatively, you can configure Windows Server 2016 Active Directory Federation Services (AD FS) to provide additional multi-factor authentication. To configure, read the [Configure AD FS 2016 and Azure MFA](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa) section.

@@ -27,17 +27,17 @@ ms.topic: article
 
 ## Stream Advanced Hunting events to Event Hubs and/or Azure storage account.
 
-Microsoft Defender ATP supports streaming all the events available through [Advanced Hunting](overview-hunting.md) to an [Event Hubs](https://docs.microsoft.com/azure/event-hubs/) and/or [Azure storage account](https://docs.microsoft.com/azure/event-hubs/).
+Microsoft Defender ATP supports streaming all the events available through [Advanced Hunting](advanced-hunting-overview.md) to an [Event Hubs](https://docs.microsoft.com/azure/event-hubs/) and/or [Azure storage account](https://docs.microsoft.com/azure/event-hubs/).
 
 ## In this section
 
 Topic | Description
 :---|:---
-[Stream Microsoft Defender ATP events to Azure Event Hubs](raw-data-export-event-hub.md)| Learn about enabling the streaming API in your tenant and configure Microsoft Defender ATP to stream [Advanced Hunting](overview-hunting.md) to Event Hubs.
-[Stream Microsoft Defender ATP events to your Azure storage account](raw-data-export-storage.md)| Learn about enabling the streaming API in your tenant and configure Microsoft Defender ATP to stream [Advanced Hunting](overview-hunting.md) to your Azure storage account.
+[Stream Microsoft Defender ATP events to Azure Event Hubs](raw-data-export-event-hub.md)| Learn about enabling the streaming API in your tenant and configure Microsoft Defender ATP to stream [Advanced Hunting](advanced-hunting-overview.md) to Event Hubs.
+[Stream Microsoft Defender ATP events to your Azure storage account](raw-data-export-storage.md)| Learn about enabling the streaming API in your tenant and configure Microsoft Defender ATP to stream [Advanced Hunting](advanced-hunting-overview.md) to your Azure storage account.
 
 
 ## Related topics
-- [Overview of Advanced Hunting](overview-hunting.md)
+- [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Azure Event Hubs documentation](https://docs.microsoft.com/azure/event-hubs/)
 - [Azure Storage Account documentation](https://docs.microsoft.com/azure/storage/common/storage-account-overview)

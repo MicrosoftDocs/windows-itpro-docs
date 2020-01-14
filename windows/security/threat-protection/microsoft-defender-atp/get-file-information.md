@@ -17,10 +17,19 @@ ms.topic: article
 ---
 
 # Get file information API
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Retrieves a file by identifier Sha1, Sha256, or MD5.
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+
+## API description
+Retrieves a [File](files.md) by identifier Sha1, or Sha256
+
+
+## Limitations
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -59,10 +68,10 @@ If successful and file exists - 200 OK with the [file](files.md) entity in the b
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
-GET https://api.securitycenter.windows.com/api/files/6532ec91d513acc05f43ee0aa3002599729fd3e1
+GET https://api.securitycenter.windows.com/api/files/4388963aaa83afe2042a46a3c017ad50bdcdafb3
 ```
 
 **Response**
@@ -74,22 +83,22 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Files/$entity",
-    "sha1": "6532ec91d513acc05f43ee0aa3002599729fd3e1",
-    "sha256": "d4447dffdbb2889b4b4e746b0bc882df1b854101614b0aa83953ef3cb66904cf",
-    "md5": "7f05a371d2beffb3784fd2199f81d730",
-    "globalPrevalence": 7329,
-    "globalFirstObserved": "2018-04-08T05:50:29.4459725Z",
-    "globalLastObserved": "2018-08-07T23:35:11.1361328Z",
-    "windowsDefenderAVThreatName": null,
-    "size": 391680,
-    "fileType": "PortableExecutable",
-    "isPeFile": true,
-    "filePublisher": null,
-    "fileProductName": null,
-    "signer": null,
-    "issuer": null,
-    "signerHash": null,
-    "isValidCertificate": null
+	"@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Files/$entity",
+	"sha1": "4388963aaa83afe2042a46a3c017ad50bdcdafb3",
+	"sha256": "413c58c8267d2c8648d8f6384bacc2ae9c929b2b96578b6860b5087cd1bd6462",
+	"globalPrevalence": 180022,
+	"globalFirstObserved": "2017-09-19T03:51:27.6785431Z",
+	"globalLastObserved": "2020-01-06T03:59:21.3229314Z",
+	"size": 22139496,
+	"fileType": "APP",
+	"isPeFile": true,
+	"filePublisher": "CHENGDU YIWO Tech Development Co., Ltd.",
+	"fileProductName": "EaseUS MobiSaver for Android",
+	"signer": "CHENGDU YIWO Tech Development Co., Ltd.",
+	"issuer": "VeriSign Class 3 Code Signing 2010 CA",
+	"signerHash": "6c3245d4a9bc0244d99dff27af259cbbae2e2d16",
+	"isValidCertificate": false,
+	"determinationType": "Pua",
+	"determinationValue": "PUA:Win32/FusionCore"
 }
 ```

@@ -1,12 +1,12 @@
 ---
 title: Surface Hub Site Readiness Guide
 ms.reviewer: 
-manager: dansimp
+manager: laurawi
 description: Use this Site Readiness Guide to help plan your Surface Hub installation.
 ms.prod: surface-hub
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ---
@@ -28,7 +28,7 @@ The room needs to be large enough to provide good viewing angles, but small enou
 - The screen is not in direct sunlight, which could affect viewing or damage the screen.
 - Ventilation openings are not blocked.
 - Microphones are not affected by noise sources, such as fans or vents.
-You can find more details in the [55” Microsoft Surface Hub technical information](surface-hub-technical-55.md) or [84” Microsoft Surface Hub technical information](surface-hub-technical-84.md) sections.  For cleaning, care, and safety information, see the mounting guides and user guide at http://www.microsoft.com/surface/support/surface-hub.
+You can find more details in the [55” Microsoft Surface Hub technical information](surface-hub-technical-55.md) or [84” Microsoft Surface Hub technical information](surface-hub-technical-84.md) sections.  For cleaning, care, and safety information, see the mounting guides and user guide at https://www.microsoft.com/surface/support/surface-hub.
 
 ### Hardware considerations
 
@@ -47,7 +47,7 @@ For details about cable ports, see the [55” Microsoft Surface Hub technical in
 
 Microsoft Surface Hub has an internal PC and does not require an external computer system. 
 
-For power recommendations, see [55” Microsoft Surface Hub technical information](surface-hub-technical-55.md) or [84” Microsoft Surface Hub technical information](surface-hub-technical-84.md). For power cable safety warnings, see the mounting guides at http://www.microsoft.com/surface/support/surface-hub.
+For power recommendations, see [55” Microsoft Surface Hub technical information](surface-hub-technical-55.md) or [84” Microsoft Surface Hub technical information](surface-hub-technical-84.md). For power cable safety warnings, see the mounting guides at https://www.microsoft.com/surface/support/surface-hub.
 
 ### Data and other connections
 
@@ -77,7 +77,7 @@ Before you move Surface Hub, make sure that all the doorways, thresholds, hallwa
 
 ### Unpacking Surface Hub
 
-For unpacking information, refer to the unpacking guide included in the shipping container. You can open the unpacking instructions before you open the shipping container.  These instructions can also be found here: http://www.microsoft.com/surface/support/surface-hub
+For unpacking information, refer to the unpacking guide included in the shipping container. You can open the unpacking instructions before you open the shipping container.  These instructions can also be found here: https://www.microsoft.com/surface/support/surface-hub
 
 >[!IMPORTANT]
 >Retain and store all Surface Hub shipping materials—including the pallet, container, and screws—in case you need to ship Surface Hub to a new location or send it
@@ -85,22 +85,22 @@ for repairs. For the 84” Surface Hub, retain the lifting handles.
 
 ### Lifting Surface Hub
 
-The 55” Surface Hub requires two people to safely lift and mount. The 84” Surface Hub requires four people to safely lift and mount. Those assisting must be able to lift 70 pounds to waist height. Review the unpacking and mounting guide for details on lifting Surface Hub. You can find it at http://www.microsoft.com/surface/support/surface-hub.
+The 55” Surface Hub requires two people to safely lift and mount. The 84” Surface Hub requires four people to safely lift and mount. Those assisting must be able to lift 70 pounds to waist height. Review the unpacking and mounting guide for details on lifting Surface Hub. You can find it at https://www.microsoft.com/surface/support/surface-hub.
 
 ## Mounting and setup
 
-See your mounting guide at http://www.microsoft.com/surface/support/surface-hub for detailed instructions. 
+See your mounting guide at https://www.microsoft.com/surface/support/surface-hub for detailed instructions. 
 
 There are three ways to mount your Surface Hub:
 
 - **Wall mount**: Lets you permanently hang Surface Hub on a conference space wall.
 - **Floor support mount**: Supports Surface Hub on the floor while it is permanently anchored to a conference space wall.
-- **Rolling stand**: Supports Surface Hub and lets you move it to other conference locations. For links to guides that provide details about each mounting method, including building requirements, see http://www.microsoft.com/surface/support/surface-hub.
+- **Rolling stand**: Supports Surface Hub and lets you move it to other conference locations. For links to guides that provide details about each mounting method, including building requirements, see https://www.microsoft.com/surface/support/surface-hub.
 
 For specifications on available mounts for the original Surface Hub, see the following:
 
-- [Surface Hub Mounts and Stands Datasheet](http://download.microsoft.com/download/5/0/1/501F98D9-1BCC-4448-A1DB-47056CEE33B6/20160711_Surface_Hub_Mounts_and_Stands_Datasheet.pdf)
-- [Surface Hub Stand and Wall Mount Specifications](http://download.microsoft.com/download/7/A/7/7A75BD0F-5A46-4BCE-B313-A80E47AEB581/20160720_Combined_Stand_Wall_Mount_Drawings.pdf)
+- [Surface Hub Mounts and Stands Datasheet](https://download.microsoft.com/download/5/0/1/501F98D9-1BCC-4448-A1DB-47056CEE33B6/20160711_Surface_Hub_Mounts_and_Stands_Datasheet.pdf)
+- [Surface Hub Stand and Wall Mount Specifications](https://download.microsoft.com/download/7/A/7/7A75BD0F-5A46-4BCE-B313-A80E47AEB581/20160720_Combined_Stand_Wall_Mount_Drawings.pdf)
 
 ## The Connect experience
 
@@ -129,13 +129,10 @@ For example, to provide audio, video, and touchback capability to all three vide
 
 When you create your wired connect cable bundles, check the [55” Microsoft Surface Hub technical information](surface-hub-technical-55.md) or [84” Microsoft Surface Hub technical information](surface-hub-technical-84.md) sections for specific technical and physical details and port locations for each type of Surface Hub. Make the cables long enough to reach from Surface Hub to where the presenter will sit or stand.
 
-For details on Touchback and Inkback, see the user guide at http://www.microsoft.com/surface/support/surface-hub. 
+For details on Touchback and Inkback, see the user guide at https://www.microsoft.com/surface/support/surface-hub. 
 
 
 
 ## See also
 
-[Watch the video (opens in a pop-up media player)](http://compass.xbox.com/assets/27/aa/27aa7dd7-7cb7-40ea-9bd6-c7de0795f68c.mov?n=04.07.16_installation_video_01_site_readiness.mov)  
-
-
-
+[Watch the video (opens in a pop-up media player)](https://compass.xbox.com/assets/27/aa/27aa7dd7-7cb7-40ea-9bd6-c7de0795f68c.mov?n=04.07.16_installation_video_01_site_readiness.mov)  

@@ -1,6 +1,6 @@
 ---
 title: Manage Windows Defender Credential Guard (Windows 10)
-description: Deploying and managing Windows Defender Credential Guard using Group Policy, the registry, or the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool.
+description: Learn how to deploy and manage Windows Defender Credential Guard using Group Policy, the registry, or hardware readiness tools.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library

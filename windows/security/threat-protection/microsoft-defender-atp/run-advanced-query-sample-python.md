@@ -1,7 +1,7 @@
 ---
-title: Advanced Hunting API
+title: Advanced Hunting with Python API Guide
 ms.reviewer: 
-description: Use this API to run advanced queries
+description: Learn the basics of querying the Microsoft Defender Advanced Threat Protection API, using Python.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10

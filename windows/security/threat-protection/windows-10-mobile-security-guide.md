@@ -1,6 +1,6 @@
 ---
 title: Windows 10 Mobile security guide (Windows 10)
-description: This guide provides a detailed description of the most important security features in the Windows 10 Mobile operating system—identity access and control, data protection, malware resistance, and app platform security.
+description: The most important security features in the Windows 10 Mobile — identity access & control, data protection, malware resistance, and app platform security.
 ms.assetid: D51EF508-699E-4A68-A7CD-91D821A97205
 ms.reviewer: 
 manager: dansimp
@@ -194,7 +194,7 @@ The table below outlines how Windows 10 Mobile mitigates specific malware threat
 </tr>
 <tr class="odd">
 <td align="left"><p>Users access a dangerous website without knowledge of the risk.</p></td>
-<td align="left"><p>The SmartScreen URL Reputation feature prevents users from going to a malicious website that may try to exploit the browser and take control of the device.</p></td>
+<td align="left"><p>The Windows Defender SmartScreen URL Reputation feature prevents users from going to a malicious website that may try to exploit the browser and take control of the device.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Malware exploits a vulnerability in a browser add-on.</p></td>

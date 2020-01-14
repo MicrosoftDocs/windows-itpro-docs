@@ -1,6 +1,6 @@
 ---
 title: Exposure score
-description: Your exposure level reflects how vulnerable your organization is to cybersecurity threats. Apply the Threat & Vulnerability Management security recommendations to keep your exposure level low.
+description: The Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) exposure score reflects how vulnerable your organization is to cybersecurity threats.
 keywords: exposure score, mdatp exposure score, mdatp tvm exposure score, organization exposure score, tvm organization exposure score
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -38,11 +38,13 @@ Several factors affect your organization exposure score:
 Reduce the exposure score by addressing what needs to be remediated based on the prioritized security recommendations. See [Security recommendations](tvm-security-recommendation.md) for details.
 
 ## Related topics
+- [Supported operating systems and platforms](tvm-supported-os.md)
 - [Risk-based Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) 
 - [Threat & Vulnerability Management dashboard overview](tvm-dashboard-insights.md)
 - [Configuration score](configuration-score.md)
 - [Security recommendations](tvm-security-recommendation.md)
-- [Remediation](tvm-remediation.md)
+- [Remediation and exception](tvm-remediation.md)
 - [Software inventory](tvm-software-inventory.md)
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md)
+- [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)

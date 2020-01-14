@@ -2,19 +2,23 @@
 title: Upgrade Readiness - Upgrade Overview (Windows 10)
 ms.reviewer: 
 manager: laurawi
-ms.author: greglin
+ms.author: jaimeo
 description: Displays the total count of computers sharing data and upgraded.
 ms.prod: w10
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: jaimeo
 ms.topic: article
 ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness - Upgrade overview
 
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Get started with Update Compliance](../update/update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
+
 The first blade in the Upgrade Readiness solution is the upgrade overview blade. This blade displays the total count of computers sharing data with Microsoft, and the count of computers upgraded. As you successfully upgrade computers, the count of computers upgraded increases.
 
-The upgrade overivew blade displays data refresh status, including the date and time of the most recent data update and whether user changes are reflected. The upgrade overview blade also displays the current target OS version.  For more information about the target OS version, see [target version](use-upgrade-readiness-to-manage-windows-upgrades.md#target-version).
+The upgrade overview blade displays data refresh status, including the date and time of the most recent data update and whether user changes are reflected. The upgrade overview blade also displays the current target OS version.  For more information about the target OS version, see [target version](use-upgrade-readiness-to-manage-windows-upgrades.md#target-version).
 
 The following color-coded status changes are reflected on the upgrade overview blade:
 
@@ -49,7 +53,7 @@ In the following example, there is no delay in data processing, more than 10% of
 
 If data processing is delayed, the "Last updated" banner will indicate the date on which data was last updated. You can continue using your workspace as normal. However, any changes or additional information that is added might not be displayed until data is refreshed. When your workspace is in this state, there is no action required; data is typically refreshed and the display will return to normal again within 24 hours. 
 
-If there are computers with incomplete data, verify that you have installed the latest compatibilty updates. Install the updates if necessary and then run the most recent [Update Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) from the Microsoft download center. The updated data payload should appear in Upgrade Readiness within 48 hours of a successful run on the deployment script.
+If there are computers with incomplete data, verify that you have installed the latest compatibility updates. Install the updates if necessary and then run the most recent [Upgrade Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) from the Microsoft download center. The updated data payload should appear in Upgrade Readiness within 48 hours of a successful run on the deployment script.
 
 Select **Total computers** for a list of computers and details about them, including:
 

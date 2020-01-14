@@ -54,3 +54,6 @@ To complete these procedures, you must be a member of the Domain Administrators 
         -   To create a log entry when Windows Defender Firewall allows an inbound connection, change **Log successful connections** to **Yes**.
 
     6.  Click **OK** twice.
+
+### Troubleshooting Slow Log Ingestion
+If logs are slow to appear in Sentinel, you can turn down the log file size. Just beware that this will result in more resource usage due to the increased resource usage for log rotation. 

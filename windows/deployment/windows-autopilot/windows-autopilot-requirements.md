@@ -2,7 +2,7 @@
 title: Windows Autopilot requirements
 ms.reviewer: 
 manager: laurawi
-description: Windows Autopilot deployment
+description: Inform yourself about software, networking, licensing, and configuration requirements for Windows Autopilot deployment.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -81,7 +81,8 @@ If the Microsoft Store is not accessible, the AutoPilot process will still conti
 <tr><td><b>Autopilot Self-Deploying mode and Autopilot White Glove<b><td>Firmware TPM devices, which are only provided by Intel, AMD, or Qualcomm, do not include all needed certificates at boot time and must be able to retrieve them from the manufacturer on first use. Devices with discrete TPM chips(including ones from any other manufacturer) come with these certificates preinstalled. Make sure that these URLs are accessible for each firmware TPM provider so that certificates can be successfully requested: 
   <br>Intel- https://ekop.intel.com/ekcertservice 
   <br>Qualcomm- https://ekcert.spserv.microsoft.com/EKCertificate/GetEKCertificate/v1
-  <br>AMD- http://ftpm.amd.com/pki/aia
+  <br>AMD- https://ftpm.amd.com/pki/aia
+  <br>Infineon- https://pki.infineon.com
 </table>
 
 ## Licensing requirements
@@ -124,4 +125,4 @@ There are no additional hardware requirements to use Windows 10 Autopilot, beyon
 
 ## Related topics
 
-[Configure Autopilot deployment](configure-autopilot.md)
+[Configure Autopilot deployment](https://docs.microsoft.com/windows/deployment/windows-autopilot/)

@@ -9,7 +9,9 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 10/16/2017
+ms.localizationpriority: medium
+ms.audience: itpro
+ms.date: 10/21/2019
 ms.reviewer: 
 manager: dansimp
 ---
@@ -19,6 +21,9 @@ manager: dansimp
 With Microsoft Surface Deployment Accelerator (SDA), you can quickly and easily set up a deployment solution that is ready to deploy Windows to Surface devices. The prepared environment is built on powerful deployment technologies available from Microsoft, such as the [Microsoft Deployment Toolkit (MDT)](https://technet.microsoft.com/windows/dn475741), and is capable of immediately performing a deployment after configuration. See [Step-by-Step: Surface Deployment Accelerator](https://technet.microsoft.com/itpro/surface/step-by-step-surface-deployment-accelerator) for a comprehensive walkthrough of using the SDA wizard to set up a deployment share and perform a deployment.
 
 For more information about SDA and information on how to download SDA, see [Microsoft Surface Deployment Accelerator (SDA)](https://technet.microsoft.com/itpro/surface/microsoft-surface-deployment-accelerator).
+
+> [!NOTE]
+> SDA is not supported on Surface Pro 7, Surface Pro X, and Surface Laptop 3. For more information refer to [Deploy Surface devices](deploy.md).
 
 Using SDA provides these primary benefits:
 

@@ -2,7 +2,7 @@
 title: Microsoft Surface Data Eraser (Surface)
 description: Find out how the Microsoft Surface Data Eraser tool can help you securely wipe data from your Surface devices.
 ms.assetid: 8DD3F9FE-5458-4467-BE26-E9200341CF10
-ms.reviewer: 
+ms.reviewer: hachidan
 manager: dansimp
 ms.localizationpriority: medium
 keywords: tool, USB, data, erase
@@ -13,7 +13,8 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 05/15/2018
+ms.audience: itpro
+ms.date: 11/13/2019
 ---
 
 # Microsoft Surface Data Eraser
@@ -28,6 +29,9 @@ Find out how the Microsoft Surface Data Eraser tool can help you securely wipe d
 
 Compatible Surface devices include:
 
+* Surface Pro 7
+* Surface Pro X
+* Surface Laptop 3
 * Surface Pro 6
 * Surface Laptop 2
 * Surface Go
@@ -155,6 +159,18 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 ## Changes and updates
 
 Microsoft Surface Data Eraser is periodically updated by Microsoft. For information about the changes provided in each new version, see the following:
+
+### 3.28.137
+*Release Date: 11 Nov 2019*
+This version of Surface Data Eraser:
+
+- Includes bug fixes
+
+### Version 3.21.137
+*Release Date: 21 Oct 2019*
+This version of Surface Data Eraser is compiled for x86 and adds support for the following devices:
+
+- Supports Surface Pro 7, Surface Pro X, and Surface Laptop 3
 
 ### Version 3.2.78.0
 *Release Date: 4 Dec 2018*

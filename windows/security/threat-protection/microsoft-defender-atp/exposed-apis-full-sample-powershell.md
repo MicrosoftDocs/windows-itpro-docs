@@ -1,7 +1,7 @@
 ---
-title: Advanced Hunting API
+title: Advanced Hunting with Powershell API Guide
 ms.reviewer: 
-description: Use this API to run advanced queries
+description: Walk through a practice scenario, complete with code samples, querying several Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) APIs.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -30,9 +30,9 @@ In this section we share PowerShell samples to
 - Use token to retrieve the latest alerts in Microsoft Defender ATP
 - For each alert, if the alert has medium or high priority and is still in progress, check how many times the machine has connected to suspicious URL.
 
->**Prerequisite**: You first need to [create an app](apis-intro.md).
+**Prerequisite**: You first need to [create an app](apis-intro.md).
 
-## Preparation Instructions
+## Preparation instructions
 
 - Open a PowerShell window.
 - If your policy does not allow you to run the PowerShell commands, you can run the below command:
@@ -40,16 +40,16 @@ In this section we share PowerShell samples to
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
->For more details, refer to [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+For more details, refer to [PowerShell documentation](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
 ## Get token
 
-- Run the below
+Run the below:
 
-> - $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
-> - $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Microsoft Defender ATP)
-> - $appSecret: Secret of your AAD app
-> - $suspiciousUrl: The URL
+- $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
+- $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Microsoft Defender ATP)
+- $appSecret: Secret of your AAD app
+- $suspiciousUrl: The URL
 
 
 ```

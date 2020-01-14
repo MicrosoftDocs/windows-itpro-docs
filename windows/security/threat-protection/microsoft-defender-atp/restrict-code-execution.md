@@ -18,13 +18,20 @@ ms.topic: article
 
 # Restrict app execution API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Restrict execution of all applications on the machine except a predefined set (see [Response machine alerts](respond-machine-alerts.md) for more information)
 
-[!include[Machine actions note](machineactionsnote.md)]
+## API description
+Restrict execution of all applications on the machine except a predefined set.
+
+
+## Limitations
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
+
+[!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -76,29 +83,6 @@ Content-type: application/json
 }
 
 ```
-**Response**
 
-Here is an example of the response.
-
-[!include[Improve request performance](improve-request-performance.md)]
-
-```
-HTTP/1.1 201 Created
-Content-type: application/json
-{
-    "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions/$entity",
-    "id": "78d408d1-384c-4c19-8b57-ba39e378011a",
-    "type": "RestrictCodeExecution",
-    "requestor": "Analyst@contoso.com ",
-    "requestorComment": "Restrict code execution due to alert 1234",
-    "status": "InProgress",
-    "machineId": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
-    "creationDateTimeUtc": "2018-12-04T12:15:04.3825985Z",
-    "lastUpdateTimeUtc": "2018-12-04T12:15:04.3825985Z",
-	"relatedFileInfo": null
-}
-
-```
-
-To remove code execution restriction from a machine, see [Remove app restriction](unrestrict-code-execution.md).
+- To remove code execution restriction from a machine, see [Remove app restriction](unrestrict-code-execution.md).
 

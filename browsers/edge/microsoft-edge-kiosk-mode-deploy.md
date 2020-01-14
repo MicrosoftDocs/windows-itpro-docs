@@ -17,7 +17,10 @@ ms.date: 10/29/2018
 # Deploy Microsoft Edge kiosk mode
 
 >Applies to: Microsoft Edge on Windows 10, version 1809  
->Professional, Enterprise, and Education 
+>Professional, Enterprise, and Education
+
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
 In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge as a kiosk using assigned access. With assigned access, you create a tailored browsing experience locking down a Windows 10 device to only run as a single-app or multi-app kiosk.  Assigned access restricts a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge in kiosk mode.
 
@@ -240,7 +243,7 @@ In the following table, we show you the features available in both Microsoft Edg
 |-----------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |                       Print support                       |                                                                 ![Supported](images/148767.png)                                                                 |                                                           ![Not supported](images/148766.png)                                                           |
 |                     Multi-tab support                     |                                                                 ![Supported](images/148767.png)                                                                 |                                                           ![Not supported](images/148766.png)                                                           |
-|                  Allow/Block URL support                  | ![Supported](images/148767.png) <p>*\*For Microsoft Edge kiosk mode use* Windows Defender Firewall<em>. Microsoft kiosk browser has custom policy support.</em> |                                                             ![Supported](images/148767.png)                                                             |
+|                  Allow/Block URL support                  | ![Not Supported](images/148766.png)                                                             ![Supported](images/148767.png)                                                             |
 |                   Configure Home Button                   |                                                                 ![Supported](images/148767.png)                                                                 |                                                             ![Supported](images/148767.png)                                                             |
 |                   Set Start page(s) URL                   |                                                                 ![Supported](images/148767.png)                                                                 |                                              ![Supported](images/148767.png) <p>*Same as Home button URL*                                               |
 |                   Set New Tab page URL                    |                                                                 ![Supported](images/148767.png)                                                                 |                                                           ![Not supported](images/148766.png)                                                           |
@@ -252,7 +255,7 @@ In the following table, we show you the features available in both Microsoft Edg
 |                     SKU availability                      |                                            Windows 10 October 2018 Update<br>Professional, Enterprise, and Education                                            |                                         Windows 10 April 2018 Update<br>Professional, Enterprise, and Education                                         |
 
 **\*Windows Defender Firewall**<p>
-To prevent access to unwanted websites on your kiosk device, use Windows Defender Firewall to configure a list of allowed websites, blocked websites or both.  For more details, see [Windows Defender Firewall with Advanced Security Deployment](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide).
+To prevent access to unwanted websites on your kiosk device, use Windows Defender Firewall to configure a list of allowed websites, blocked websites or both, using IP addresses.  For more details, see [Windows Defender Firewall with Advanced Security Deployment Guide](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide).
 
 ---
 

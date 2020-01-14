@@ -1,15 +1,15 @@
 ---
 title: Change history for Client management (Windows 10)
-description: This topic lists changes to documentation for configuring Windows 10.
+description: View changes to documentation for client management in Windows 10.
 keywords: 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: msfttracyp
-ms.author: tracyp
-ms.date: 12/06/2018
+author: dansimp
+ms.author: dansimp
+ms.date: 12/27/2019
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
@@ -18,6 +18,13 @@ ms.topic: article
 # Change history for Client management
 
 This topic lists new and updated topics in the [Client management](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## December 2019
+
+New or changed topic | Description
+--- | ---
+[Change in default removal policy for external storage media in Windows 10, version 1809](change-default-removal-policy-external-storage-media.md) | New
+[Advanced troubleshooting for Event ID 41 "The system has rebooted without cleanly shutting down first"](troubleshoot-event-id-41-restart.md) | New
 
 ## December 2018
 

@@ -1,12 +1,12 @@
 ---
 title: BitLocker Upgrading FAQ (Windows 10)
-description: This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.
+description: Learn more about upgrading systems that have BitLocker enabled. Find frequently asked questions, such as, "Can I upgrade to Windows 10 with BitLocker enabled?"
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro

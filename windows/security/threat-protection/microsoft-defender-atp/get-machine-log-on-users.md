@@ -18,11 +18,19 @@ ms.topic: article
 
 # Get machine log on users API
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Retrieves a collection of logged on users.
+
+## API description
+Retrieves a collection of logged on users on a specific machine.
+
+
+## Limitations
+1. You can query on machines last seen in the past 30 days.
+2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -62,7 +70,7 @@ If successful and machine exist - 200 OK with list of [user](user.md) entities i
 
 Here is an example of the request.
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ```
 GET https://api.securitycenter.windows.com/api/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
@@ -81,26 +89,19 @@ Content-type: application/json
     "value": [
         {
             "id": "contoso\\user1",
-            "firstSeen": "2018-08-02T00:00:00Z",
-            "lastSeen": "2018-08-04T00:00:00Z",
-            "mostPrevalentMachineId": null,
-            "leastPrevalentMachineId": null,
-            "logonTypes": "Network",
-            "logOnMachinesCount": 3,
-            "isDomainAdmin": false,
-            "isOnlyNetworkUser": null
+            "accountName": "user1",
+            "accountDomain": "contoso",
+            "accountSid": "S-1-5-21-72051607-1745760036-109187956-93922",
+            "firstSeen": "2019-12-18T08:02:54Z",
+            "lastSeen": "2020-01-06T08:01:48Z",
+            "mostPrevalentMachineId": "111153d0c675eaa415b8e5f383c6388bff446c62",
+            "leastPrevalentMachineId": "111153d0c675eaa415b8e5f383c6388bff446c62",
+            "logonTypes": "Interactive",
+            "logOnMachinesCount": 8,
+            "isDomainAdmin": true,
+            "isOnlyNetworkUser": false
         },
-        {
-            "id": "contoso\\user2",
-            "firstSeen": "2018-08-02T00:00:00Z",
-            "lastSeen": "2018-08-05T00:00:00Z",
-            "mostPrevalentMachineId": null,
-            "leastPrevalentMachineId": null,
-            "logonTypes": "Network",
-            "logOnMachinesCount": 3,
-            "isDomainAdmin": false,
-            "isOnlyNetworkUser": null
-        }
+		...
     ]
 }
 ```

@@ -6,9 +6,10 @@ ms.sitesec: library
 author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
-ms.localizationpriority: medium
-ms.date: 9/3/19
-ms.reviewer: 
+ms.localizationpriority: high
+ms.date: 10/30/2019
+ms.reviewer: scooley
+audience: ITPro
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
@@ -59,22 +60,22 @@ If you're having trouble after reading these topics, see [Troubleshooting](#trou
 
 - Scale/rotation/translation animation on individual objects
 - Skeletal (rigged) animation with skinning
-   - Maximum of 4 influences per vertex
+  - Maximum of 4 influences per vertex
 
 ### Materials
 
 - Lambert and Phong materials are supported, with adjustable parameters
 - Supported material properties for Lambert
-   - Main Texture (RGB + Alpha Test)
-   - Diffuse Color (RGB)
-   - Ambient Color (RGB)
+  - Main Texture (RGB + Alpha Test)
+  - Diffuse Color (RGB)
+  - Ambient Color (RGB)
 - Supported material properties for Phong
-   - Main Texture (RGB + Alpha Test)
-   - Diffuse Color (RGB)
-   - Ambient Color (RGB)
-   - Specular Color (RGB)
-   - Shininess
-   - Reflectivity
+  - Main Texture (RGB + Alpha Test)
+  - Diffuse Color (RGB)
+  - Ambient Color (RGB)
+  - Specular Color (RGB)
+  - Shininess
+  - Reflectivity
 - Custom materials are not supported
 - Maximum of one material per mesh
 - Maximum of one material layer

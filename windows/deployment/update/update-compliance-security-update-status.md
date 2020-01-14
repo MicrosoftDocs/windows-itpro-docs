@@ -5,7 +5,6 @@ manager: laurawi
 description: an overview of the Security Update Status report
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
 ms.author: jaimeo

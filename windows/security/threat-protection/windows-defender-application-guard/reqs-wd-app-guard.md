@@ -6,11 +6,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
+author: denisebmsft
+ms.author: deniseb
 ms.date: 11/09/2017
 ms.reviewer: 
 manager: dansimp
+ms.custom: asr
 ---
 
 # System requirements for Windows Defender Application Guard

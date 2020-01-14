@@ -2,16 +2,19 @@
 title: Upgrade Readiness - Additional insights
 ms.reviewer: 
 manager: laurawi
-ms.author: greglin
+ms.author: jaimeo
 description: Explains additional features of Upgrade Readiness.
 ms.prod: w10
 audience: itpro
-author: greg-lindsay
+author: jaimeo
 ms.topic: article
 ms.collection: M365-analytics
 ---
 
 # Upgrade Readiness - Additional insights
+
+>[!IMPORTANT]
+>The Upgrade Readiness and Device Health solutions of Windows Analytics are being retired on January 31, 2020. [Get started with Update Compliance](../update/update-compliance-get-started.md) will continue to be supported. For more information, see [Windows Analytics retirement on January 31, 2020](https://support.microsoft.com/help/4521815/windows-analytics-retirement).
 
 This topic provides information on additional features that are available in Upgrade Readiness to provide insights into your environment. These include:
 

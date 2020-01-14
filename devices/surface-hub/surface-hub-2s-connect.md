@@ -4,12 +4,12 @@ description: "This page explains how to connect external devices to Surface Hub 
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 11/13/2019
 ms.localizationpriority: Medium
 ---
 
@@ -28,7 +28,7 @@ In general, it’s recommended to use native cable connections whenever possible
 | **Connection** | **Functionality** | **Description**|
 | --- | --- | ---|
 | HDMI + USB-C | HDMI-in for audio and video<br><br>USB-C for TouchBack and InkBack | USB-C supports TouchBack and InkBack with the HDMI A/V connection.<br><br>Use USB-C to USB-A to connect to legacy computers.<br><br>**NOTE:** For best results, connect HDMI before connecting a USB-C cable. If the computer you're using for HDMI is not compatible with TouchBack and InkBack, you won't need a USB-C cable. |
-| USB-C <br> (via compute module) | Video-in <br>Audio-in | Single cable needed for A/V<br><br>TouchBack and InkBack not supported<br><br>HDCP enabled |
+| USB-C <br> (via compute module) | Video-in <br>Audio-in | Single cable needed for A/V<br><br>TouchBack and InkBack is supported<br><br>HDCP enabled |
 | HDMI (in port) | Video, Audio into Surface Hub 2S | Single cable needed for A/V<br><br>TouchBack and InkBack not supported<br><br>HDCP enabled |
 | MiniDP 1.2 output | Video-out such as mirroring to a larger projector. | Single cable needed for A/V |
 
@@ -131,4 +131,4 @@ You can connect the following accessories to Surface Hub-2S using Bluetooth:
 - Speakers
 
 > [!NOTE]
-> After you connect a Bluetooth headset or speaker, you might need to change the default microphone and speaker settings. For more information, see [**Local management for Surface Hub settings**](https://docs.microsoft.com/en-us/surface-hub/local-management-surface-hub-settings).
+> After you connect a Bluetooth headset or speaker, you might need to change the default microphone and speaker settings. For more information, see [**Local management for Surface Hub settings**](https://docs.microsoft.com/surface-hub/local-management-surface-hub-settings).

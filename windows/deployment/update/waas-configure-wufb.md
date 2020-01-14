@@ -5,7 +5,7 @@ manager: laurawi
 description: You can use Group Policy or your mobile device management (MDM) service to configure Windows Update for Business settings for your devices.
 ms.prod: w10
 ms.mktglfcycl: deploy
-ms.sitesec: library
+
 audience: itpro
 author: jaimeo
 ms.localizationpriority: medium
@@ -125,9 +125,9 @@ Starting with Windows 10, version 1703, using Settings to control the pause beha
 
 ## Configure when devices receive Quality Updates
 
-Quality Updates are typically published on the first Tuesday of every month, although they can be released at any time. You can define if, and for how long, you would like to defer receiving Quality Updates following their availability. You can defer receiving these Quality Updates for a period of up to 35 days from their release by setting the **DeferQualityUpdatesPeriodinDays** value.  
+Quality updates are typically published on the first Tuesday of every month, although they can be released at any time. You can define if, and for how long, you would like to defer receiving Quality updates following their availability. You can defer receiving these quality updates for a period of up to 30 days from their release by setting the **DeferQualityUpdatesPeriodinDays** value.  
 
-You can set your system to receive updates for other Microsoft products—known as Microsoft Updates (such as Microsoft Office, Visual Studio)—along with Windows Updates by setting the **AllowMUUpdateService** policy. When you do this, these Microsoft Updates will follow the same deferral and pause rules as all other Quality Updates.
+You can set your system to receive updates for other Microsoft products—known as Microsoft updates (such as Microsoft Office, Visual Studio)—along with Windows updates by setting the **AllowMUUpdateService** policy. When you do this, these Microsoft updates will follow the same deferral and pause rules as all other quality updates.
 
 >[!IMPORTANT]
 >This policy defers both Feature and Quality Updates on Windows 10 Mobile Enterprise.
@@ -146,7 +146,7 @@ You can set your system to receive updates for other Microsoft products—known 
 
 ## Pause quality updates
 
-You can also pause a system from receiving Quality Updates for a period of up to 35 days from when the value is set.   After 35 days has passed, the pause setting will automatically expire and the device will scan Windows Update for applicable quality Updates. Following this scan, you can then pause quality Updates for the device again.
+You can also pause a system from receiving quality updates for a period of up to 35 days from when the value is set. After 35 days have passed, the pause setting will automatically expire and the device will scan Windows Update for applicable quality updates. Following this scan, you can then pause quality updates for the device again.
 
 Starting with Windows 10, version 1703, when you configure a pause by using policy, you must set a start date for the pause to begin. The pause period is calculated by adding 35 days to this start date. 
 
@@ -201,9 +201,9 @@ The policy settings to **Select when Feature Updates are received** allows you t
 * Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/ Windows Update for Business** - *Select when Preview Builds and Feature Updates are received*
 * MDM: **Update/BranchReadinessLevel**
 
-## Exclude drivers from Quality Updates
+## Exclude drivers from quality updates
 
-Starting with Windows 10, version 1607, you can selectively opt out of receiving driver update packages as part of your normal quality update cycle. This policy will not apply to updates to drivers provided with the operating system (which will be packaged within a security or critical update) or to Feature Updates, where drivers might be dynamically installed to ensure the Feature Update process can complete.
+Starting with Windows 10, version 1607, you can selectively opt out of receiving driver update packages as part of your normal quality update cycle. This policy will not apply to updates to drivers provided with the operating system (which will be packaged within a security or critical update) or to feature updates, where drivers might be dynamically installed to ensure the feature update process can complete.
 
 **Policy settings to exclude drivers**
 

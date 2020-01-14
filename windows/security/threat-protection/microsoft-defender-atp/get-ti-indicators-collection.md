@@ -18,16 +18,21 @@ ms.topic: article
 
 # List Indicators API
 
-**Applies to:** 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
->[!NOTE]
-> Currently this API is supported only for AppOnly context requests. (See [Get access with application context](exposed-apis-create-app-webapp.md) for more information)
+## API description
+Retrieves a collection of all active [Indicators](ti-indicator.md).
+<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
+<br>The OData's ```$filter``` query is supported on: ```indicatorValue```, ```indicatorType```, ```creationTimeDateTimeUtc```, ```createdBy```, ```action``` and ```severity``` properties.
+<br>See examples at [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md)
 
 
-- Gets collection of TI Indicators.
-- Get TI Indicators collection API supports [OData V4 queries](https://www.odata.org/documentation/).
+## Limitations
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
@@ -36,14 +41,14 @@ Permission type |	Permission	|	Permission display name
 :---|:---|:---
 Application |	Ti.ReadWrite |	'Read and write Indicators'
 Application |	Ti.ReadWrite.All |	'Read and write All Indicators'
-
+Delegated (work or school account) |	Ti.ReadWrite |	'Read and write Indicators'
 
 ## HTTP request
 ```
 GET https://api.securitycenter.windows.com/api/indicators
 ```
 
-[!include[Improve request performance](improve-request-performance.md)]
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## Request headers
 
@@ -82,26 +87,38 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Indicators",
     "value": [
         {
+			"id": "995",
             "indicatorValue": "12.13.14.15",
             "indicatorType": "IpAddress",
+			"action": "Alert",
+			"application": "demo-test",
+			"source": "TestPrdApp",
+			"sourceType": "AadApp",
             "title": "test",
             "creationTimeDateTimeUtc": "2018-10-24T11:15:35.3688259Z",
             "createdBy": "45097602-1234-5678-1234-9f453233e62c",
             "expirationTime": "2020-12-12T00:00:00Z",
-            "action": "Alert",
+			"lastUpdateTime": "2019-10-24T10:54:23.2009016Z",
+			"lastUpdatedBy": TestPrdApp,
             "severity": "Informational",
             "description": "test",
             "recommendedActions": "test",
 			"rbacGroupNames": []
         },
         {
+			"id": "996",
             "indicatorValue": "220e7d15b0b3d7fac48f2bd61114db1022197f7f",
             "indicatorType": "FileSha1",
+			"action": "AlertAndBlock",
+			"application": null,
+			"source": "TestPrdApp",
+			"sourceType": "AadApp",
             "title": "test",
             "creationTimeDateTimeUtc": "2018-10-24T10:54:23.2009016Z",
             "createdBy": "45097602-1234-5678-1234-9f453233e62c",
             "expirationTime": "2020-12-12T00:00:00Z",
-            "action": "AlertAndBlock",
+			"lastUpdateTime": "2019-10-24T10:54:23.2009016Z",
+			"lastUpdatedBy": TestPrdApp,
             "severity": "Informational",
             "description": "test",
             "recommendedActions": "TEST",
@@ -119,7 +136,7 @@ Content-type: application/json
 Here is an example of a request that gets all Indicators with 'AlertAndBlock' action 
 
 ```
-GET https://api.securitycenter.windows.com/api/indicators?$filter=action eq 'AlertAndBlock'
+GET https://api.securitycenter.windows.com/api/indicators?$filter=action+eq+'AlertAndBlock'
 ```
 
 **Response**
@@ -133,13 +150,19 @@ Content-type: application/json
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Indicators",
     "value": [
         {
-            "indicatorValue": "220e7d15b0b3d7fac48f2bd61114db1022197f7f",
+			"id": "997",
+            "indicatorValue": "111e7d15b0b3d7fac48f2bd61114db1022197f7f",
             "indicatorType": "FileSha1",
+			"action": "AlertAndBlock",
+			"application": null,
+			"source": "TestPrdApp",
+			"sourceType": "AadApp",
             "title": "test",
             "creationTimeDateTimeUtc": "2018-10-24T10:54:23.2009016Z",
             "createdBy": "45097602-1234-5678-1234-9f453233e62c",
             "expirationTime": "2020-12-12T00:00:00Z",
-            "action": "AlertAndBlock",
+			"lastUpdateTime": "2019-10-24T10:54:23.2009016Z",
+			"lastUpdatedBy": TestPrdApp,
             "severity": "Informational",
             "description": "test",
             "recommendedActions": "TEST",

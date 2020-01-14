@@ -1,6 +1,6 @@
 ---
 title: How Windows Hello for Business works - Provisioning
-description: Explains registration, authentication, key material, and infrastructure for Windows Hello for Business.
+description: Explore the provisioning flows for Windows Hello for Business, from within a variety of environments.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -58,7 +58,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 [Return to top](#windows-hello-for-business-provisioning)
 ## Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed environment
-![Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed ennvironment](images/howitworks/prov-haadj-keytrust-managed.png)
+![Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed environment](images/howitworks/prov-haadj-keytrust-managed.png)
 
 
 | Phase | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |

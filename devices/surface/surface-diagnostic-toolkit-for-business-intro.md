@@ -10,7 +10,7 @@ ms.topic: article
 ms.date: 06/11/2019
 ms.reviewer: cottmca
 manager: dansimp
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.audience: itpro
 ---
 

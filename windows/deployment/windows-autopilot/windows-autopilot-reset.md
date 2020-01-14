@@ -1,6 +1,6 @@
 ---
 title: Windows Autopilot Reset
-description: Windows Autopilot deployment
+description: Windows Autopilot Reset takes the device back to a business-ready state, allowing the next user to sign in and get productive quickly and easily. 
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.reviewer: mniehaus
 manager: laurawi
@@ -9,7 +9,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
@@ -31,7 +32,9 @@ The Windows Autopilot Reset process automatically retains information from the e
 -   Azure Active Directory device membership and MDM enrollment information.
 
 Windows Autopilot Reset will block the user from accessing the desktop until this information is restored, including re-applying any provisioning packages.  For devices enrolled in an MDM service, Windows Autopilot Reset will also block until an MDM sync is completed.  
-
+When Autopilot reset is used on a device, the device's primary user will be removed. The next user who signs in after the reset will be set as the primary user.
+ 
+ 
 >[!NOTE]
 >The Autopilot Reset does not support Hybrid Azure AD joined devices.
 
@@ -84,7 +87,7 @@ Performing a local Windows Autopilot Reset is a two-step process: trigger it and
 
 1. From the Windows device lock screen, enter the keystroke: **CTRL + ![Windows key](images/windows_glyph.png) + R**. 
 
-    ![Enter CTRL+Windows key+R on the Windows lockscreen](images/autopilot-reset-lockscreen.png)
+    ![Enter CTRL+Windows key+R on the Windows lock screen](images/autopilot-reset-lockscreen.png)
 
     This will open up a custom login screen for the local Autopilot Reset. The screen serves two purposes:
     1. Confirm/verify that the end user has the right to trigger Local Autopilot Reset

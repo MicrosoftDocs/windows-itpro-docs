@@ -4,55 +4,66 @@ description: "Learn how to recover and reset Surface Hub 2S."
 keywords: separate values with commas
 ms.prod: surface-hub
 ms.sitesec: library
-author: robmazz
-ms.author: robmazz
+author: greg-lindsay
+ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 12/05/2019
 ms.localizationpriority: Medium
 ---
 
 # Reset and recovery for Surface Hub 2S
 
-If you encounter problems with Surface Hub 2S, you can reset the device to factory settings or recover using a USB drive.
+If you encounter problems with Surface Hub 2S, you can reset the device to factory settings or restore by using a USB drive.
 
-To begin, sign into Surface Hub 2S with admin credentials, open the **Settings** app, select **Update & security**, and then select **Recovery**.
+To begin, sign in to Surface Hub 2S with admin credentials, open the **Settings** app, select **Update & security**, and then select **Recovery**.
 
-## Reset device
+## Reset the device
 
-1. To reset, select **Get Started**.
-2. When the **Ready to reset this device** window appears, select **Reset**. Surface Hub 2S reinstalls the operating system from the recovery partition and may take up to one hour to complete.
-3. Run **the first time Setup program** to reconfigure the device.
-4. If you manage the device using Intune or other mobile device manager (MDM) solution, retire and delete the previous record and re-enroll the new device. For more information, see [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/intune/devices-wipe).
+1. To reset the device, select **Get Started**.
+2. When the **Ready to reset this device** window appears, select **Reset**. 
+  >[!NOTE]
+  >Surface Hub 2S reinstalls the operating system from the recovery partition. This may take up to one hour to complete.
+3. To reconfigure the device, run the first-time Setup program.
+4. If you manage the device using Microsoft Intune or another mobile device management solution, retire and delete the previous record, and then re-enroll the new device. For more information, see [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/intune/devices-wipe).
 
 ![*Reset and recovery for Surface Hub 2S*](images/sh2-reset.png)<br>
-*Figure 1. Reset and recovery for Surface Hub 2S.* 
+*Figure 1. Reset and recovery for Surface Hub 2S* 
 
-## Recover Surface Hub 2S using USB recovery drive
+## Recover Surface Hub 2S by using a USB recovery drive
 
-New in Surface Hub 2S, you can now reinstall the device using a recovery image.
+New in Surface Hub 2S, you can now reinstall the device by using a recovery image.
 
-### Recover from USB drive
+### Recovery from a USB drive
 
-Surface Hub 2S lets you reinstall the device using a recovery image, which allows you to reinstall the device to factory settings if you lost the Bitlocker key or no longer have admin credentials to the Settings app.
+Using Surface Hub 2S, you can reinstall the device by using a recovery image. By doing this, you can reinstall the device to the factory settings if you lost the BitLocker key, or if you no longer have admin credentials to the Settings app.
 
-1. Begin with a USB 3.0 drive with 8 GB or 16 GB of storage, formatted as FAT32.
-2. Download recovery image from the [Surface Recovery website](https://support.microsoft.com/en-us/surfacerecoveryimage?devicetype=surfacehub2s) onto the USB drive and connect it to any USB-C or USB A port on Surface Hub 2S.
-3. Turn off the device. While holding down the Volume down button, press the Power button. Keep holding both buttons until you see the Windows logo. Release the Power button but continue to hold the Volume until the Install UI begins.
+>[!NOTE]
+>Use a USB 3.0 drive with 8 GB or 16 GB of storage, formatted as FAT32.
 
-![*Use Volume down and power buttons to initiate recovery*](images/sh2-keypad.png) <br>
+1. From a separate PC, download the .zip file recovery image from the [Surface Recovery website](https://support.microsoft.com/surfacerecoveryimage?devicetype=surfacehub2s) and then return to these instructions. 
+1. Unzip the downloaded file onto the root of the USB drive.  
+1. Connect the USB drive to any USB-C or USB-A port on Surface Hub 2S.
+1. Turn off the device:
+   1. While holding down the Volume down button, press the Power button.
+   1. Keep holding both buttons until you see the Windows logo.
+   1. Release the Power button but continue to hold the Volume until the Install UI begins.
 
-4. In the language selection screen, select the display language for your Surface Hub 2S.
-5. Choose **Recover from a drive** and **Fully clean the drive** and then select **Recover**. If prompted for a BitLocker key, select **Skip this drive**. Surface Hub 2S reboots several times and takes approximately 30 minutes to complete the recovery process.
-Remove the USB drive when the first time setup screen appears.
+    ![*Use Volume down and power buttons to initiate recovery*](images/sh2-keypad.png) <br>
+   **Figure 2. Volume and Power buttons**
+
+1. On the language selection screen, select the display language for your Surface Hub 2S.
+1. Select **Recover from a drive** and **Fully clean the drive**, and then select **Recover**. If you're prompted for a BitLocker key, select **Skip this drive**. Surface Hub 2S reboots several times and takes approximately 30 minutes to complete the recovery process.
+
+When the first-time setup screen appears,remove the USB drive.
 
 ## Recover a locked Surface Hub
 
-On rare occasions, Surface Hub 2S may encounter an error during cleanup of user and app data at the end of a session. If this occurs, the device will automatically reboot and resume data cleanup. But if this operation fails repeatedly, the device will be automatically locked to protect user data.
+At the end of a session, Surface Hub 2S may occasionally encounter an error during the cleanup of user and app data at the end of a session. If this occurs, the device automatically reboots and resumes the data cleanup. However, if this operation repeatedly fails, the device automatically locks to protect user data.
 
-**To unlock Surface Hub 2S:** <br>
-Reset or recover the device from Windows Recovery Environment (Windows RE). For more information, see [What is Windows RE?](https://technet.microsoft.com/library/cc765966.aspx)
+**To unlock a Surface Hub 2S:** <br>
+- Reset or recover the device from the Windows Recovery Environment. For more information, see [What is Windows RE?](https://technet.microsoft.com/library/cc765966.aspx)
 
 > [!NOTE]
-> To enter recovery mode, you need to physically unplug and replug the power cord three times.
+> To enter recovery mode, unplug the power cord and plug it in again three times.

@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 010/08/2018
+ms.date: 10/08/2018
 ---
 
 # Manage Microsoft Defender ATP incidents
@@ -60,6 +60,6 @@ Added comments instantly appear on the pane.
 
 
 ## Related topics
-- [Incidents queue](incidents-queue.md)
+- [Incidents queue](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/view-incidents-queue)
 - [View and organize the Incidents queue](view-incidents-queue.md)
 - [Investigate incidents](investigate-incidents.md)
