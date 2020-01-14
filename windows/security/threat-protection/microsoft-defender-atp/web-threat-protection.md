@@ -35,3 +35,11 @@ To turn on network protection on your machines:
 
 >[!Note]
 >If you set network protection to **Audit only**, blocking will be unavailable. Also, you will be able to detect and log attempts to access malicious and unwanted websites on Microsoft Edge only.
+
+## Related topics
+
+- [Web protection overview](web-protection-overview.md)
+- [Web threat protection](web-threat-protection.md)
+- [Monitor web security](web-protection-monitoring.md)
+- [Respond to web threats](web-protection-response.md)
+- [Network protection](network-protection.md)

@@ -123,13 +123,19 @@ This card lists the parent web content categories with the largest percentage ch
 
 In the first 30 days of using this feature, your organization might not have sufficient data to display in this card.
 
-![Image of all web protection cards](images/web-activity-by-category.png)
+![Image of web activity by category card](images/web-activity-by-category.png)
 
 ### Web content filtering summary card
 
 This card displays the distribution of blocked access attempts across the different parent web content categories. Select one of the colored bars to view more information about a specific parent web category.
 
-![Image of all web protection cards](images/web-content-filtering-summary.png)
+![Image of web content filtering summary card](images/web-content-filtering-summary.png)
+
+### Web activity summary card
+
+This card displays the total number of requests for web content in all URLs.
+
+![Image of web activity summary card](images/web-activity-summary.png)
 
 ### View card details
 
@@ -160,4 +166,6 @@ You need to be logged in to an AAD account with either App administrator or Glob
 ## Related topics
 
 - [Web protection overview](web-protection-overview.md)
+- [Web threat protection](web-threat-protection.md)
+- [Monitor web security](web-protection-monitoring.md)
 - [Respond to web threats](web-protection-response.md)

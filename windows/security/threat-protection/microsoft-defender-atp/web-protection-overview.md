@@ -29,7 +29,7 @@ The cards are generally split into two categories: [web threat protection](web-t
 
 ## Web threat protection
 
-The cards that make up web threat protection are "Web threat detections over time," "Web threat summary," and Web activity summary."
+The cards that make up web threat protection are "Web threat detections over time" and "Web threat summary."
 
 Web threat protection includes:
 - Comprehensive visibility into web threats affecting your organization
@@ -38,7 +38,7 @@ Web threat protection includes:
 
 ## Web content filtering
 
-The cards that make up web content filtering are "Web activity by category" and "Web content filtering summary."
+The cards that make up web content filtering are "Web activity by category," "Web content filtering summary," and "Web activity summary."
 
 Web content filtering includes:
 - Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away
@@ -46,6 +46,7 @@ Web content filtering includes:
 - You can access web reports in the same central location, with visibility over actual blocks and web usage
 
 ## In this section
+
 Topic | Description
 :---|:---
 [Web threat protection](web-threat-protection.md) | Stop access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, as well as sites that you have blocked.

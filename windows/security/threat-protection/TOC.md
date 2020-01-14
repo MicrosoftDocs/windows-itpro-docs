@@ -33,10 +33,10 @@
 #### [Network protection](microsoft-defender-atp/network-protection.md)
 
 #### [Web protection](microsoft-defender-atp/web-protection-overview.md)
-##### [Web threat protection](web-threat-protection.md)
+##### [Web threat protection](microsoft-defender-atp/web-threat-protection.md)
 ###### [Monitor web security](microsoft-defender-atp/web-protection-monitoring.md)
 ###### [Respond to web threats](microsoft-defender-atp/web-protection-response.md)
-##### [Web content filtering](web-content-filtering.md)
+##### [Web content filtering](microsoft-defender-atp/web-content-filtering.md)
 
 #### [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
 #### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
