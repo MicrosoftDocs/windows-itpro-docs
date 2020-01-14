@@ -101,12 +101,12 @@ Except when specified, attack surface reduction rules only apply to Word, Excel,
 [Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | D4F940AB-401B-4EFC-AADC-AD5F3C50688A | Supported
 [Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | 3B576869-A4EC-4529-8536-B80A7769E899 | Supported
 [Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) | 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84 | Supported
-[Block JavaScript or VBScript from launching downloaded executable content](#block-javaScript-or-vbscript-from-launching-downloaded-executable-content) | D3E037E1-3EB8-44C8-A917-57927947596D | Not supported
+[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | D3E037E1-3EB8-44C8-A917-57927947596D | Not supported
 [Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC | Supported
 [Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B | Supported
 [Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | 01443614-cd74-433a-b99e-2ecdc07bfc25 | Supported
 [Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | c1db55ab-c21a-4637-bb3f-a12568109d35 | Supported
-[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-Windows-local-security-authority-subsystem-(lsass.exe)) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 | Supported
+[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem-(lsass.exe)) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 | Supported
 [Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | d1e49aac-8f56-4280-b9ba-993a6d77406c | Not supported
 [Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4 | Supported
 [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | 26190899-1602-49e8-8b27-eb1d0a1ce869 | Supported
