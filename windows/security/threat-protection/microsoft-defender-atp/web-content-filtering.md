@@ -39,7 +39,7 @@ To summarize the benefits:
 ## User experience
 
 The standard blocking experience is provided by Network Protection, which provides a system-level toast notifying the user of a blocked connection.
-For a more user-friendly experience, consider user SmartScreen on Edge
+For a more user-friendly experience, consider using SmartScreen on Edge.
 
 ## Prerequisites
 

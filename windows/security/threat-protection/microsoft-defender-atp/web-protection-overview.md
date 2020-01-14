@@ -21,15 +21,13 @@ ms.topic: article
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web protection in Microsoft Defender ATP lets you secure your machines against web threats and help you regulate unwanted content. You can find it in the Microsoft Defender Security Center by going to **Reports > Web protection**.
+Web protection in Microsoft Defender ATP is a capability made up of [Web threat protection](web-threat-protection.md) and [Web content filtering](web-content-filtering.md). Web protection lets you secure your machines against web threats and helps you regulate unwanted content. You can find Web protection reports in the Microsoft Defender Security Center by going to **Reports > Web protection**.
 
 ![Image of all web protection cards](images/web-protection.png)
 
-The cards are generally split into two categories: [web threat protection](web-threat-protection.md) and [web content filtering](web-content-filtering.md).
-
 ## Web threat protection
 
-The cards that make up web threat protection are "Web threat detections over time" and "Web threat summary."
+The cards that make up web threat protection are **Web threat detections over time** and **Web threat summary**.
 
 Web threat protection includes:
 - Comprehensive visibility into web threats affecting your organization
@@ -38,7 +36,7 @@ Web threat protection includes:
 
 ## Web content filtering
 
-The cards that make up web content filtering are "Web activity by category," "Web content filtering summary," and "Web activity summary."
+The cards that make up web content filtering are **Web activity by category**, **Web content filtering summary**, and **Web activity summary**.
 
 Web content filtering includes:
 - Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away

@@ -8,14 +8,13 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: ellevin
+author: levinec
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 08/30/2019
 ---
 
 # Monitor web browsing security
@@ -54,4 +53,6 @@ Select a domain to view the list of machines that have attempted to access URLs 
 
 ## Related topics
 - [Web protection overview](web-protection-overview.md)
+- [Web content filtering](web-content-filtering.md)
+- [Web threat protection](web-threat-protection.md)
 - [Respond to web threats](web-protection-response.md)
