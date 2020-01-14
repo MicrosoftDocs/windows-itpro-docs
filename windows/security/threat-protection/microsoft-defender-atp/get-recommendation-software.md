@@ -1,5 +1,5 @@
 ---
-title: Get recommendation software
+title: Get recommendation by software
 description: Retrieves a security recommendation related to a specific software.
 keywords: apis, graph api, supported apis, get, security recommendation, security recommendation for software, threat and vulnerability management, threat and vulnerability management api 
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get recommendation software
+# Get recommendation by software
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
