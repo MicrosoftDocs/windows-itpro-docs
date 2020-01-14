@@ -26,7 +26,8 @@ Verify you have a current documentation of your MBAM environment, including all 
 ### Upgrade steps
 #### Steps to upgrade the MBAM Database (SQL Server)
 1. Using the MBAM Configurator; remove the Reports role from the SQL server, or wherever the SSRS database is hosted. Depending on your environment, this can be the same server or a separate one.
-   Note: You will not see an option to remove the Databases; this is expected.  
+  > [!NOTE]
+  > You will not see an option to remove the Databases; this is expected.  
 2. Install 2.5 SP1 (Located with MDOP - Microsoft Desktop Optimization Pack 2015 from the Volume Licensing Service Center site:  <https://www.microsoft.com/Licensing/servicecenter/default.aspx>
 3. Do not configure it at this time 
 4. Using the MBAM Configurator; re-add the Reports role
