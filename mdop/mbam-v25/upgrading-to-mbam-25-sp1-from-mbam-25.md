@@ -39,7 +39,7 @@ Verify you have a current documentation of your MBAM environment, including all 
 2. Install MBAM 2.5 SP1
 3. Do not configure it at this time  
 4. Using the MBAM Configurator; re-add the Admin and Self Service Portals to the IIS server 
-5. Open an elevated command prompt, type: **IISRESET** and hit Enter.
+5. Open an elevated command prompt, type **IISRESET**, and hit Enter.
  
 #### Steps to upgrade the MBAM Clients/Endpoints
 1. Uninstall the 2.5 Agent from client endpoints
