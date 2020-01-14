@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 01/13/2020
+ms.date: 01/14/2020
 ---
 
 # Understand the advanced hunting schema
