@@ -50,9 +50,6 @@ You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firm
 > [!NOTE]
 > A log file is not created by default. In order to create a log file, you will need to append "/l*v [path]"
 
-> [!NOTE]
-> A log file is not created by default. In order to create a log file, you will need to append "/l*v [path]"
-
 For more information, refer to [Command line options](https://docs.microsoft.com/windows/win32/msi/command-line-options) documentation.
 
 > [!IMPORTANT]
