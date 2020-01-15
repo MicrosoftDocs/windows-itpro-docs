@@ -56,7 +56,6 @@ Managed security service provider | Get a quick overview on managed security ser
 
 
 
-
 ## Related topics
 - [Onboard machines](onboard-configure.md)
 - [Enable the custom threat intelligence application](enable-custom-ti.md)
