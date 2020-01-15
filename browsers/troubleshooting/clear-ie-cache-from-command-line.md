@@ -6,8 +6,7 @@ manager: dcscontentpm
 ms.prod: internet-explorer
 ms.topic: troubleshooting 
 ms.author: ramakoni
-localization_priority: Normal
-ms.custom: CI111020
+ms.custom: CI=111020
 ms.reviewer: ramakoni, DEV_Triage
 ---
 # How to clear Internet Explorer cache by using the command line
@@ -16,44 +15,34 @@ This article outlines the procedure to clear the Internet Explorer cache by usin
 
 ## Command line commands to clear browser cache
 
-1. Delete history from the Low folder
-
+1. Delete history from the Low folder  
    `del /s /q C:\Users\\%username%\AppData\Local\Microsoft\Windows\History\low\* /ah`
 
-2. Delete history
-   
+2. Delete history     
    `RunDll32.exe InetCpl.cpl, ClearMyTracksByProcess 1`
 
-3. Delete cookies
-   
+3. Delete cookies     
    `RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 2`
 
-4. Delete temporary internet files
-   
+4. Delete temporary internet files     
    `RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 8`
 
-5. Delete form data
-   
+5. Delete form data     
    `RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 16`
 
-6. Delete stored passwords
-   
+6. Delete stored passwords     
    `RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 32`
 
-7. Delete all
-
+7. Delete all  
    `RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 255`
 
-8. Delete files and settings stored by add-ons
-   
+8. Delete files and settings stored by add-ons     
    `InetCpl.cpl,ClearMyTracksByProcess 4351`
 
-If you upgraded from a previous version of Internet Explorer, you have to use the following commands to delete the files from older versions:
-
+If you upgraded from a previous version of Internet Explorer, you have to use the following commands to delete the files from older versions:  
 `RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 9`  
 
-Command to reset Internet Explorer settings: 
-
+Command to reset Internet Explorer settings:  
 `Rundll32.exe inetcpl.cpl ResetIEtoDefaults`
 
 ## Sample batch file to clear Internet Explorer cache files
@@ -63,25 +52,15 @@ A sample batch file is available that you can use to clear Internet Explorer cac
 The batch file offers the following options:
 
 - Delete Non-trusted web History (low-level hidden cleanup) 
-
 - Delete History 
-
 - Delete Cookies 
-
 - Delete Temporary Internet Files 
-
 - Delete Form Data 
-
 - Delete Stored Passwords 
-
 - Delete All 
-
 - Delete All "Also delete files and settings stored by add-ons"
-
 - Delete IE10 and IE9 Temporary Internet Files
-
 - Resets IE Settings
-
 - EXIT
 
 **Contents of the batch file**
