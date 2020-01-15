@@ -1,6 +1,6 @@
 ---
 title: Use attack surface reduction rules to prevent malware infection
-description: Microsoft Defender ATP's attack surface reduction rules can help prevent exploits from using apps and scripts to infect machines with malware.
+description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect machines with malware.
 keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender Advanced Threat Protection, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
