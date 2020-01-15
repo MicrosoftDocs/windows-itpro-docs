@@ -174,7 +174,7 @@ With all these options, which an organization chooses depends on the resources, 
 | Windows Update | Yes (manual) | No | Delivery Optimization | None|
 | Windows Update for Business | Yes | No | Delivery Optimization | Other Group Policy objects |
 | WSUS | Yes | Yes | BranchCache or Delivery Optimization | Upstream/downstream server scalability |
-| Configuration Manager | Yes | Yes | BranchCache, Client Peer Cache, or Delivery Optimization. For the latter, see [peer-to-peer content distribution](https://docs.microsoft.com/en-us/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#peer-to-peer-content-distribution) and [Optimize Windows 10 Update Delivery](https://docs.microsoft.com/en-us/windows/deployment/update/waas-optimize-windows-10-updates) | Distribution points, multiple deployment options |
+| Configuration Manager | Yes | Yes | BranchCache, Client Peer Cache, or Delivery Optimization. For the latter, see [peer-to-peer content distribution](https://docs.microsoft.com/configmgr/sum/deploy-use/optimize-windows-10-update-delivery#peer-to-peer-content-distribution) and [Optimize Windows 10 Update Delivery](https://docs.microsoft.com/windows/deployment/update/waas-optimize-windows-10-updates) | Distribution points, multiple deployment options |
 
 >[!NOTE]
 >Due to [naming changes](#naming-changes), older terms like CB and CBB might still be displayed in some of our products, such as in Group Policy. If you encounter these terms, "CB" refers to the Semi-Annual Channel (Targeted)--which is no longer used--while "CBB" refers to the Semi-Annual Channel.
