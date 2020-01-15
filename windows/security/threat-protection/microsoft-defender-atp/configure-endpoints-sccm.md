@@ -41,7 +41,7 @@ Microsoft Endpoint Configuration Manager (current branch) version 1606, has UI i
 
 <span id="sccm1602"/>
 ## Onboard Windows 10 machines using Microsoft Endpoint Configuration Manager earlier versions
-You can use existing Microsoft Endpoint Configuration Manager functionality to create a policy to configure your machines. This is supported in the following Microsoft Endpoint Configuration Manager versions:
+You can use existing Microsoft Endpoint Configuration Manager functionality to create a policy to configure your machines. This is supported in the following Configuration Manager versions:
 
 - System Center 2012 Configuration Manager
 - System Center 2012 R2 Configuration Manager
