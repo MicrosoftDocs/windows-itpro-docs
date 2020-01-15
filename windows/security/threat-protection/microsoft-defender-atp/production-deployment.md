@@ -441,4 +441,171 @@ Microsoft Defender Antivirus is a built-in antimalware solution that provides ne
 
 2. Select **Scheduled scans**, **Scan settings**, **Default actions**, **Real-time protection**, **Exclusion settings**, **Advanced**, **Threat overrides**, **Cloud Protection Service** and **Security intelligence   updates** and choose **OK**.
 
-![](images/1566ad81bae3d714cc9e0d47575a8cbd.png)
+    ![Image of next generation protection pane](images/1566ad81bae3d714cc9e0d47575a8cbd.png)
+
+    In certain industries or some select enterprise customers might have specific
+needs on how Antivirus is configured.
+
+  
+    [Quick scan versus full scan and custom scan](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/scheduled-catch-up-scans-windows-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
+
+    For more details, see [Windows Security configuration framework](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
+  
+    
+    ![Image of next generation protection pane](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
+
+    ![Image of next generation protection pane](images/36c7c2ed737f2f4b54918a4f20791d4b.png)
+
+    ![Image of next generation protection pane](images/a28afc02c1940d5220b233640364970c.png)
+
+    ![Image of next generation protection pane](images/5420a8790c550f39f189830775a6d4c9.png)
+
+    ![Image of next generation protection pane](images/33f08a38f2f4dd12a364f8eac95e8c6b.png)
+
+    ![Image of next generation protection pane](images/41b9a023bc96364062c2041a8f5c344e.png)
+
+    ![Image of next generation protection pane](images/945c9c5d66797037c3caeaa5c19f135c.png)
+
+    ![Image of next generation protection pane](images/3876ca687391bfc0ce215d221c683970.png)
+
+3. Right-click on the newly created antimalware policy and select **Deploy** .
+
+    ![Image of next generation protection pane](images/f5508317cd8c7870627cb4726acd5f3d.png)
+
+4. Target the new antimalware policy to your Windows 10 collection and click **OK**.
+
+     ![Image of next generation protection pane](images/26efa2711bca78f6b6d73712f86b5bd9.png)
+
+After completing this task, you now have successfully configured Windows
+Defender Antivirus.
+
+## Attack Surface Reduction
+The attack surface reduction pillar of Microsoft Defender ATP includes the feature set that is available under Exploit Guard. Attack surface reduction (ASR) rules, Controlled Folder Access, Network Protection and Exploit
+Protection. All these features provide an audit mode and a block mode. In audit mode there is no end user impact all it does is collect additional telemetry and make it available in the Microsoft Defender Security Center. The goal with a deployment is to step by step move security controls into block mode.
+
+To set ASR rules in Audit mode:
+
+1. In the System Center Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
+
+   ![Image of System Center Configuration Manager console](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+
+
+2.  Select **Attack Surface Reduction**.
+   
+
+3. Set rules to **Audit** and click **Next**.
+
+    ![Image of System Center Configuration Manager console](images/d18e40c9e60aecf1f9a93065cb7567bd.png)
+
+4. Confirm the new Exploit Guard policy by clicking on **Next**.
+
+    ![Image of System Center Configuration Manager console](images/0a6536f2c4024c08709cac8fcf800060.png)
+
+    
+5. Once the policy is created click **Close**.
+
+    ![Image of System Center Configuration Manager console](images/95d23a07c2c8bc79176788f28cef7557.png)
+
+    
+
+6.  Right-click on the newly created policy and choose **Deploy**.
+    
+    ![Image of System Center Configuration Manager console](images/8999dd697e3b495c04eb911f8b68a1ef.png)
+
+7. Target the policy to the newly created Windows 10 collection and click **OK**.
+
+    ![Image of System Center Configuration Manager console](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+
+After completing this task, you now have successfully configured ASR rules in audit mode.  
+  
+Below are additional steps to verify whether ASR rules are correctly applied to
+endpoints. (This may take few minutes)
+
+
+1. From a web browser, navigate to <https://securitycenter.windows.com>.
+
+2.  Select **Configuration management** from left side menu.
+
+    ![A screenshot of a cell phone Description automatically generated](images/653db482c7ccaf31d06f29fb2aa24b7a.png)
+
+3. Click **Go to attack surface management** in the Attack surface management panel. 
+    
+    ![Image of attack surface management](images/3a01c7970ce3ec977a35883c0a01f0a2.png)
+
+4. Click **Configuration** tab in Attack Surface reduction rules reports. It shows ASR rules configuration overview and ASR rules status on each devices.
+
+    ![A screenshot of attack surface reduction rules reports](images/f91f406e6e0aae197a947d3b0e8b2d0d.png)
+
+5. Click each device shows configuration details of ASR rules.
+
+    ![A screenshot of attack surface reduction rules reports](images/24bfb16ed561cbb468bd8ce51130ca9d.png)
+
+See [Optimize ASR rule deployment and
+detections](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-asr)   for more details.  
+
+
+### To set Network Protection rules in Audit mode:
+1. In the System Center Configuration Manager console, navigate to **Assets and  Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
+
+    ![A screenshot System Center Confirugatiom Manager](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+
+2. Select **Network protection**.
+
+3. Set the setting to **Audit** and click **Next**. 
+
+    ![A screenshot System Center Confirugatiom Manager](images/c039b2e05dba1ade6fb4512456380c9f.png)
+
+4. Confirm the new Exploit Guard Policy by clicking **Next**.
+    
+    ![A screenshot Exploit GUard policy](images/0a6536f2c4024c08709cac8fcf800060.png)
+
+5. Once the policy is created click on **Close**.
+
+    ![A screenshot Exploit GUard policy](images/95d23a07c2c8bc79176788f28cef7557.png)
+
+6. Right-click on the newly created policy and choose **Deploy**.
+
+    ![A screenshot System Center Configuration Manager](images/8999dd697e3b495c04eb911f8b68a1ef.png)
+
+7. Select the policy to the newly created Windows 10 collection and choose **OK**.
+
+    ![A screenshot System Center Configuration Manager](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+
+After completing this task, you now have successfully configured Network
+Protection in audit mode.
+
+### To set Controlled Folder Access rules in Audit mode:
+
+1. In the System Center Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
+
+    ![A screenshot System Center Configuration Manager](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+
+2. Select **Controlled folder access**.
+
+    ![A screenshot System Center Configuration Manager](images/a8b934dab2dbba289cf64fe30e0e8aa4.png)
+
+3. Set the configuration to **Audit** and click **Next**.
+
+    ![A screenshot System Center Configuration Manager](images/0a6536f2c4024c08709cac8fcf800060.png)
+
+    Confirm the new exploit guard policy by clicking on **Next**
+
+![A screenshot of a cell phone Description automatically generated](images/95d23a07c2c8bc79176788f28cef7557.png)
+
+    Once the policy is created click on **Close**
+
+![](images/8999dd697e3b495c04eb911f8b68a1ef.png)
+
+>   A screenshot of a cell phone Description automatically generated
+
+>   Right click on the newly created policy and choose **Deploy**
+
+![](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+
+>   A screenshot of a social images post Description automatically generated
+
+>   Target the policy to the newly created Windows 10 collection and choose
+>   **OK**
+
+After completing this task, you now have successfully configured Controlled
+folder access in audit mode.
