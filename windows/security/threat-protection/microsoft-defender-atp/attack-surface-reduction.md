@@ -26,7 +26,7 @@ ms.custom: asr
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Your attack surface is the total number of places where an attacker could compromise your device or network. Reducing your attack surface means offering attackers fewer ways to perform attacks.
+Your attack surface is the total number of places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means offering attackers fewer ways to perform attacks.
 
 Attack surface reduction rules target software behaviors that are often abused by attackers, such as:
 
@@ -36,7 +36,7 @@ Attack surface reduction rules target software behaviors that are often abused b
 
 These behaviors are sometimes seen in legitimate applications; however, they are considered risky because they are commonly abused by malware. Attack surface reduction rules can constrain these kinds of risky behaviors and help keep your organization safe.
 
-Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
+Use [audit mode](audit-windows-defender.md) to evaluate how attack surface reduction rules would impact your organization if they were enabled. It's best to run all rules in audit mode first so you can understand their impact on your line-of-business applications. Many line-of-business applications are written with limited security concerns, and they may perform tasks in ways that seem similar to malware. By monitoring audit data and [adding exclusions](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for necessary applications, you can deploy attack surface reduction rules without impacting productivity.
 
 Whenever a rule is triggered, a notification will be displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. The notification also displays within the Microsoft Defender Security Center and the Microsoft 365 security center.
 
@@ -87,7 +87,7 @@ The "engine version" listed for attack surface reduction events in the event log
 
 ## Attack surface reduction rules
 
-This table lists all attack surface reduction rules, their corresponding GUIDs, and whether the rule supports having certain files and folders selectively excluded. Each rule also links to a longer rule description, for further details on how the rule works, why you would want to enable it, and which applications the rule applies to.
+The following table lists all attack surface reduction rules, their corresponding GUIDs, and whether the rule supports having certain files and folders selectively excluded. Each rule also links to a longer rule description, for further details on how the rule works, why you would want to enable it, and which applications the rule applies to.
 
 Except when specified, attack surface reduction rules only apply to Word, Excel, PowerPoint, and OneNote, or Outlook.
 
