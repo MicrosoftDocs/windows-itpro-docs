@@ -275,7 +275,7 @@ Manager and deploy that policy to Windows 10 devices.
 
     ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-download-package.png)
 
-4.	Save the package to an accessible location.
+4. Save the package to an accessible location.
 5. In  System Center Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
 
 6. Right-click **Microsoft Defender ATP Policies** and select **Create Microsoft Defender ATP Policy**.
@@ -285,3 +285,160 @@ Manager and deploy that policy to Windows 10 devices.
 7. Enter the name and description, verify **Onboarding** is selected, then select **Next**.
 
     ![Image of System Center Configuration Manager wizard](images/sccm-policy-name.png)
+
+8. Click **Browse**.
+
+9. Navigate to the location of the downloaded file from step 4 above.
+
+    ![Image of configuration settings](images/1b9f85316170cfe24b46330afa8517d5.png)
+
+10. Click **Next**.
+11. Configure the Agent with the appropriate samples (**None** or **All file types**).
+
+    ![Image of configuration settings](images/1b9f85316170cfe24b46330afa8517d5.png)
+
+12. Select the appropriate telemetry (**Normal** or **Expedited**).
+
+13. Click **Next**.
+
+    ![Image of configuration settings](images/13201b477bc9a9ae0020814915fe80cc.png)
+
+14. Verify the configuration, then click **Next**.
+
+     ![Image of configuration settings](images/adc17988b0984ca2aa3ff8f41ddacaf9.png)
+
+15. Click **Close** when the Wizard completes.
+
+16.  In the System Center Configuration Manager console, right-click the Microsoft Defender ATP policy you just created and select **Deploy**.
+
+     ![Image of configuration settings](images/4a37f3687e6ff53a593d3670b1dad3aa.png)
+
+17. On the right panel, select the previously created collection and click **OK**.
+
+    ![Image of configuration settings](images/26efa2711bca78f6b6d73712f86b5bd9.png)
+
+
+### Previous versions of Windows Client (Windows 7 and Windows 8.1)
+Follow the steps below to identify the Microsoft Defender ATP Workspace ID and Workspace Key, that will be required for the onboarding of previous versions of Windows.
+
+1. From a Microsoft Defender Security Center Portal, select **Settings > Onboarding**.
+
+2. Under operating system choose **Windows 7 SP1 and 8.1**.
+
+    ![Image of onboarding](images/91b738e4b97c4272fd6d438d8c2d5269.png)
+
+3. Copy the **Workspace ID** and **Workspace Key** and save them. They will be used later in the process.
+
+Before the systems can be onboarded into the workspace, the deployment scripts need to be updated to contain the correct information. Failure to do so will result in the systems not being properly onboarded. Depending on the deployment method, this step may have already been completed.
+
+Edit the InstallMMA.cmd with a text editor, such as notepad and update the
+following lines and save the file:
+
+   ![Image of onboarding](images/a22081b675da83e8f62a046ae6922b0d.png)
+
+Edit the ConfiguerOMSAgent.vbs with a text editor, such as notepad, and update the following lines and save the file:
+
+   ![Image of onboarding](images/09833d16df7f37eda97ea1d5009b651a.png)
+
+Microsoft Monitoring Agent (MMA) is currently (as of January 2019) supported on the following Windows Operating
+Systems:
+
+-   Server SKUs: Windows Server 2008 SP1 or Newer
+
+-   Client SKUs: Windows 7 SP1 and later
+
+The MMA agent will need to be installed on Windows devices. To install the
+agent, some systems will need to download the [Update for customer experience
+and diagnostic
+telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
+in order to collect the data with MMA. These system versions include but may not
+be limited to:
+
+-   Windows 8.1
+
+-   Windows 7
+
+-   Windows Server 2016
+
+-   Windows Server 2012 R2
+
+-   Windows Server 2008 R2
+
+Specifically, for Windows 7 SP1, the following patches must be installed:
+
+-   Install
+    [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
+
+-   Install either [.NET Framework
+    4.5](https://www.microsoft.com/en-us/download/details.aspx?id=30653) (or
+    later) **or**
+    [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework).
+    Do not install both on the same system.
+
+To deploy the MMA with System Center Configuration Manager, follow the steps
+below to utilize the provided batch files to onboard the systems. The CMD file
+when executed, will require the system to copy files from a network share by the
+System, the System will install MMA, Install the DependencyAgent, and configure
+MMA for enrolment into the workspace.
+
+
+1. In  System Center Configuration Manager console, navigate to **Software
+    Library**.
+
+2.  Expand **Application Management**.
+
+3.  Right-click **Packages**  then select **Create Package**.
+
+4. Provide a Name for the package, then click **Next**
+
+    ![Image of System Center Configuration Manager console](images/e156a7ef87ea6472d57a3dc594bf08c2.png)
+
+5. Verify **Standard Program** is selected.
+
+   ![Image of System Center Configuration Manager console](images/227f249bcb6e7f29c4d43aa1ffaccd20.png)
+
+6.  Click **Next**.
+
+    ![Image of System Center Configuration Manager console](images/2c7f9d05a2ebd19607cc76b6933b945b.png)
+
+7. Enter a program name.
+
+8.  Browse to the location of the InstallMMA.cmd.
+
+9.  Set Run to **Hidden**.
+
+10.  Set **Program can run** to **Whether or not a user is logged on**.
+
+11.  Click **Next**.
+
+12.  Set the **Maximum allowed run time** to 720.
+
+13.  Click **Next**.
+
+   ![Image of System Center Configuration Manager console](images/262a41839704d6da2bbd72ed6b4a826a.png)
+
+14. Verify the configuration, then click **Next**.
+
+    ![Image of System Center Configuration Manager console](images/a9d3cd78aa5ca90d3c2fbd2e57618faf.png)
+
+15. Click **Next**.
+
+16. Click **Close**.
+
+17.  In the System Center Configuration Manager console, right-click the Microsoft Defender ATP
+    Onboarding Package just created and select **Deploy**.
+
+18. On the right panel select the appropriate collection.
+
+19.  Click **OK**.
+
+## Next generation protection 
+Microsoft Defender Antivirus is a built-in antimalware solution that provides next generation protection for desktops, portable computers, and servers.
+
+1. In the System Center Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** and choose **Create Antimalware Policy**.
+
+    ![Image of antimalware policy](images/9736e0358e86bc778ce1bd4c516adb8b.png)
+
+2. Select **Scheduled scans**, **Scan settings**, **Default actions**, **Real-time protection**, **Exclusion settings**, **Advanced**, **Threat overrides**, **Cloud Protection Service** and **Security intelligence   updates** and choose **OK**.
+
+![](images/1566ad81bae3d714cc9e0d47575a8cbd.png)
