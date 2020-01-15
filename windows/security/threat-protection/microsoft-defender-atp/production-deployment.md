@@ -222,3 +222,51 @@ below to onboard systems with Configuration Manager.
 1. In System Center Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.            
 
     ![Image of System Center Configuration Manager wizard](images/sccm-device-collections.png)
+
+2. Right Click **Device Collection** and select **Create Device Collection**.
+
+    ![Image of System Center Configuration Manager wizard](images/sccm-create-device-collection.png)
+
+3. Provide a **Name** and **Limiting Collection**, then select **Next**.
+
+    ![Image of System Center Configuration Manager wizard](images/sccm-limiting-collection.png)
+
+4. Select **Add Rule** and choose **Query Rule**.
+
+    ![Image of System Center Configuration Manager wizard](images/sccm-query-rule.png)
+
+5.  Click **Next** on the **Direct Membership Wizard** and click on **Edit Query Statement**.
+
+     ![Image of System Center Configuration Manager wizard](images/sccm-direct-membership.png)
+
+6. Select **Criteria** and then choose the star icon.
+
+     ![Image of System Center Configuration Manager wizard](images/sccm-criteria.png)
+
+7. Keep criterion type as **simple value**, choose where as **Operating System – build number**, operator as **is equal to** and value **10240** and click on **OK**.
+
+    ![Image of System Center Configuration Manager wizard](images/sccm-simple-value.png)
+
+8. Select **Next** and **Close**.
+
+    ![Image of System Center Configuration Manager wizard](images/sccm-membership-rules.png)
+
+9. Select **Next**.
+
+    ![Image of System Center Configuration Manager wizard](images/sccm-confirm.png)
+
+After completing this task, you now have a device collection with all the Windows 10 endpoints in the environment. 
+
+## Endpoint detection and response
+### Windows 10
+From within the Microsoft Defender Security Center it is possible to download
+the '.onboarding' policy that can be used to create the policy in System Center Configuration
+Manager and deploy that policy to Windows 10 devices.
+
+1. From a Microsoft Defender Security Center Portal, select [Settings and then Onboarding](https://securitycenter.windows.com/preferences2/onboarding).
+
+2. Under Deployment method select the supported version of **System Center Configuration Manager**.
+3.	Select **Download package**.
+4.	Save the package to an accessible location.
+5. In  System Center Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
+
