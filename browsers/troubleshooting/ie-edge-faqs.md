@@ -6,8 +6,7 @@ manager: dcscontentpm
 ms.prod: internet-explorer
 ms.topic: troubleshooting 
 ms.author: ramakoni
-localization_priority: Normal
-ms.custom: CI111020
+ms.custom: CI=111020
 ms.reviewer: ramakoni
 ---
 # Internet Explorer and Microsoft Edge frequently asked questions (FAQ) for IT Pros
@@ -23,13 +22,9 @@ An HTTP cookie (the web cookie or browser cookie) is a small piece of data that 
 For more information about how Internet Explorer handles cookies, see the following articles:
 
 - [Beware Cookie Sharing in Cross-Zone Scenarios](https://blogs.msdn.microsoft.com/ieinternals/2011/03/10/beware-cookie-sharing-in-cross-zone-scenarios/)
-
 - [A Quick Look at P3P](https://blogs.msdn.microsoft.com/ieinternals/2013/09/17/a-quick-look-at-p3p/)
-
 - [Internet Explorer Cookie Internals FAQ](https://blogs.msdn.microsoft.com/ieinternals/2009/08/20/internet-explorer-cookie-internals-faq/)
-
 - [Privacy Beyond Blocking Cookies](https://blogs.msdn.microsoft.com/ie/2008/08/25/privacy-beyond-blocking-cookies-bringing-awareness-to-third-party-content/)
-
 - [Description of Cookies](https://support.microsoft.com/help/260971/description-of-cookies)
 
 ### Where does Internet Explorer store cookies?
@@ -37,33 +32,23 @@ For more information about how Internet Explorer handles cookies, see the follow
 To see where Internet Explorer stores its cookies, follow these steps:
 
 1. Start File Explorer.
-
 2. Select **Views** > **Change folder and search options**.
-
 3. In the **Folder Options** dialog box, select **View**.
-
 4. In **Advanced settings**, select **Do not show hidden files, folders, or drivers**.
-
 5. Clear **Hide protected operation system files (Recommended)**.
-
 6. Select **Apply**.
-
 7. Select **OK**.
 
 The following are the folder locations where the cookies are stored:
 
-**In Windows 10**
-
+**In Windows 10**  
 C:\Users\username\AppData\Local\Microsoft\Windows\INetCache
 
-**In Windows 8 and Windows 8.1**
-
+**In Windows 8 and Windows 8.1**  
 C:\Users\username\AppData\Local\Microsoft\Windows\INetCookies
 
-**In Windows 7**
-
-C:\Users\username\AppData\Roaming\Microsoft\Windows\Cookies
-
+**In Windows 7**  
+C:\Users\username\AppData\Roaming\Microsoft\Windows\Cookies  
 C:\Users\username\AppData\Roaming\Microsoft\Windows\Cookies\Low
 
 ### What is the per-domain cookie limit?
@@ -120,17 +105,19 @@ The third-party products that this article discusses are manufactured by compani
 
 - [Optimizing performance with automatic Proxyconfiguration scripts (PAC)](https://blogs.msdn.microsoft.com/askie/2014/02/07/optimizing-performance-with-automatic-proxyconfiguration-scripts-pac/)
 
-## How to set home and start pages in Microsoft Edge and allow user editing
+## Other questions
+
+### How to set home and start pages in Microsoft Edge and allow user editing
 
 For more information, see the following blog article:
 
 [How do I set the home page in Microsoft Edge?](https://blogs.msdn.microsoft.com/askie/2017/10/04/how-do-i-set-the-home-page-in-edge/)
 
-## How to add sites to the Enterprise Mode (EMIE) site list
+### How to add sites to the Enterprise Mode (EMIE) site list
 
 For more information about how to add sites to an EMIE list, see [Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2)](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/add-multiple-sites-to-enterprise-mode-site-list-using-the-version-2-schema-and-enterprise-mode-tool).
 
-## What is Content Security Policy (CSP)?
+### What is Content Security Policy (CSP)?
 
 By using [Content Security Policy](https://docs.microsoft.com/microsoft-edge/dev-guide/security/content-security-policy), you create an allow list of sources of trusted content in the HTTP headers. You also pre-approve certain servers for content that is loaded into a webpage, and instruct the browser to execute or render only resources from those sources. You can use this technique to prevent malicious content from being injected into sites.
 
@@ -141,10 +128,9 @@ CSP2 makes these scenarios easier to manage by adding support for nonces and has
 For more information, see the following articles:
 
 - [Introducing support for Content Security Policy Level 2](https://blogs.windows.com/msedgedev/2017/01/10/edge-csp-2/)
-
 - [Content Security Policy](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
-## Where to find Internet Explorer security zones registry entries
+### Where to find Internet Explorer security zones registry entries
 
 Most of the Internet Zone entries can be found in [Internet Explorer security zones registry entries for advanced users](https://support.microsoft.com/help/182569/internet-explorer-security-zones-registry-entries-for-advanced-users). 
 This article was written for Internet Explorer 6 but is still applicable to Internet Explorer 11.
@@ -155,12 +141,11 @@ The default Zone Keys are stored in the following locations:
 
 - HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones
 
-## Why don't HTML5 videos play in Internet Explorer 11?
+### Why don't HTML5 videos play in Internet Explorer 11?
 
 To play HTML5 videos in the Internet Zone, use the default settings or make sure that the registry key value of **2701** under **Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3** is set to **0**.
 
 - 0 (the default value): Allow
-
 - 3: Disallow
 
 This key is read by the **URLACTION_ALLOW_AUDIO_VIDEO 0x00002701** URL action flag that determines whether media elements (audio and video) are allowed in pages in a URL security zone.
@@ -171,29 +156,29 @@ For Windows 10 N and Windows KN editions, you must also download the feature pac
 
 For more information about how to check Windows versions, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-version-am-i-running)
 
-## What is the Enterprise Mode Site List Portal? 
+### What is the Enterprise Mode Site List Portal? 
 
 This is a new feature to add sites to your enterprise mode site list XML. For more information, see [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal).
 
-## What is Enterprise Mode Feature?
+### What is Enterprise Mode Feature?
 
 For more information about this topic, see [Enterprise Mode and the Enterprise Mode Site List](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode).
 
-## Where can I obtain a list of HTTP Status codes?
+### Where can I obtain a list of HTTP Status codes?
 
 For information about this list, see [HTTP Status Codes](https://docs.microsoft.com/windows/win32/winhttp/http-status-codes).
 
-## What is end of support for Internet Explorer 11?
+### What is end of support for Internet Explorer 11?
 
 Internet Explorer 11 is the last major version of Internet Explorer. Internet Explorer 11 will continue receiving security updates and technical support for the lifecycle of the version of Windows on which it is installed.
 
 For more information, see [Lifecycle FAQ — Internet Explorer and Edge](https://support.microsoft.com/help/17454/lifecycle-faq-internet-explorer).
 
-## How to configure TLS (SSL) for Internet Explorer
+### How to configure TLS (SSL) for Internet Explorer
 
 For more information about how to configure TLS/SSL for Internet Explorer, see [Group Policy Setting to configure TLS/SSL](https://gpsearch.azurewebsites.net/#380).
 
-## What is Site to Zone?
+### What is Site to Zone?
 
 Site to Zone usually refers to one of the following:
 
@@ -204,11 +189,8 @@ This is a Group Policy policy setting that can be used to add sites to the vario
 The Site to Zone Assignment List policy setting associates sites to zones by using the following values for the Internet security zones:
 
 - Intranet zone
-
 - Trusted Sites zone
-
 - Internet zone 
-
 - Restricted Sites zone
 
 If you set this policy setting to **Enabled**, you can enter a list of sites and their related zone numbers. By associating a site to a zone, you can make sure that the security settings for the specified zone are applied to the site.
@@ -218,7 +200,6 @@ If you set this policy setting to **Enabled**, you can enter a list of sites and
 Site to Zone Mapping is stored as the name of the key. The protocol is a registry value that has a number that assigns it to the corresponding zone. Internet Explorer will read from the following registry subkeys for the sites that are deployed through the Site to Zone assignment list:
 
 - HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap
-
 - HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMapKey
 
 **Site to Zone Assignment List policy**
@@ -226,18 +207,17 @@ Site to Zone Mapping is stored as the name of the key. The protocol is a registr
 This policy setting is available for both Computer Configuration and User Configuration:
 
 - Computer Configuration > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page
-
 - User Configuration > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page
 
 **References**
 
 [How to configure Internet Explorer security zone sites using group polices](https://blogs.msdn.microsoft.com/askie/2012/06/05/how-to-configure-internet-explorer-security-zone-sites-using-group-polices/)
 
-## What are the limits for MaxConnectionsPerServer, MaxConnectionsPer1_0Server for the current versions of Internet Explorer?
+### What are the limits for MaxConnectionsPerServer, MaxConnectionsPer1_0Server for the current versions of Internet Explorer?
 
 For more information about these settings and limits, see [Connectivity Enhancements in Windows Internet Explorer 8](https://docs.microsoft.com/previous-versions/cc304129(v=vs.85)).
 
-## What is the MaxConnectionsPerProxy setting, and what are the maximum allowed values for this setting?
+### What is the MaxConnectionsPerProxy setting, and what are the maximum allowed values for this setting?
 
 The **MaxConnectionsPerProxy** setting controls the number of connections that a single-user client can maintain to a given host by using a proxy server. 
  
