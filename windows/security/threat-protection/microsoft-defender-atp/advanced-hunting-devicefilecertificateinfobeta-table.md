@@ -18,7 +18,7 @@ ms.topic: article
 ms.date: 01/14/2020
 ---
 
-# AlertEvents
+# DeviceFileCertificateInfoBeta
 
 **Applies to:**
 
