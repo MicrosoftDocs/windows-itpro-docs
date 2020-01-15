@@ -65,4 +65,3 @@ Managed security service provider | Get a quick overview on managed security ser
 - [Create and build Power BI reports using Microsoft Defender ATP data](powerbi-reports.md)
 - [Role-based access control](rbac.md)
 
-
