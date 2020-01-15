@@ -581,31 +581,26 @@ Protection in audit mode.
     ![A screenshot System Center Configuration Manager](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
 2. Select **Controlled folder access**.
-
-    ![A screenshot System Center Configuration Manager](images/a8b934dab2dbba289cf64fe30e0e8aa4.png)
-
+    
 3. Set the configuration to **Audit** and click **Next**.
+
+    ![A screenshot System Center Configuration Manager](images/a8b934dab2dbba289cf64fe30e0e8aa4.png)    
+    
+4. Confirm the new Exploit Guard Policy by clicking on **Next**.
 
     ![A screenshot System Center Configuration Manager](images/0a6536f2c4024c08709cac8fcf800060.png)
 
-    Confirm the new exploit guard policy by clicking on **Next**
+5. Once the policy is created click on **Close**.
 
-![A screenshot of a cell phone Description automatically generated](images/95d23a07c2c8bc79176788f28cef7557.png)
+    ![A screenshot System Center Configuration Manager](images/95d23a07c2c8bc79176788f28cef7557.png)
 
-    Once the policy is created click on **Close**
+6. Right-click on the newly created policy and choose **Deploy**.
 
-![](images/8999dd697e3b495c04eb911f8b68a1ef.png)
+    ![A screenshot System Center Configuration Manager](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
->   A screenshot of a cell phone Description automatically generated
+7.  Target the policy to the newly created Windows 10 collection and click **OK**.
 
->   Right click on the newly created policy and choose **Deploy**
+    ![A screenshot System Center Configuration Manager](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
-![](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+After completing this task, you now have successfully configured Controlled folder access in audit mode.
 
->   A screenshot of a social images post Description automatically generated
-
->   Target the policy to the newly created Windows 10 collection and choose
->   **OK**
-
-After completing this task, you now have successfully configured Controlled
-folder access in audit mode.

@@ -158,6 +158,7 @@
 ### [Prepare deployment](microsoft-defender-atp/prepare-deployment.md)
 ### [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
 ### [Production deployment](microsoft-defender-atp/production-deployment.md)
+### [Helpful resources](microsoft-defender-atp/helpful-resources.md)
 
 
 ## [Get started]()
