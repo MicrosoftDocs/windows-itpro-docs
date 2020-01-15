@@ -58,8 +58,8 @@ You can access the security recommendation from the Microsoft Defender ATP Threa
 2. Select the security recommendation that you need to investigate or process. 
 <br></br>![Screenshot of the security recommendation page flyout for a software which reached its end-of-life](images/secrec_flyouteolsw.png)
 
-    *Top security recommendations from the dashboard*
-
+    
+*Top security recommendations from the dashboard*
 In a given day as a Security Administrator, you can take a look at the dashboard to see your exposure score side-by-side with your configuration score. The goal is to lower down your organization's exposure from vulnerabilities, and increase your organization's security configuration to be more resilient against cybersecurity threat attacks. The top security recommendations list can help you achieve that goal. 
 
 The top security recommendations lists down the improvement opportunities prioritized based on the three important factors mentioned in the previous section - threat, likelihood to be breached, and value.   
