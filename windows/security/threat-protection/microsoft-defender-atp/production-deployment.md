@@ -265,8 +265,23 @@ Manager and deploy that policy to Windows 10 devices.
 
 1. From a Microsoft Defender Security Center Portal, select [Settings and then Onboarding](https://securitycenter.windows.com/preferences2/onboarding).
 
+
+
 2. Under Deployment method select the supported version of **System Center Configuration Manager**.
+
+    ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-onboarding-wizard.png)
+
 3.	Select **Download package**.
+
+    ![Image of Microsoft Defender ATP onboarding wizard](images/mdatp-download-package.png)
+
 4.	Save the package to an accessible location.
 5. In  System Center Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
 
+6. Right-click **Microsoft Defender ATP Policies** and select **Create Microsoft Defender ATP Policy**.
+
+    ![Image of System Center Configuration Manager wizard](images/sccm-create-policy.png)
+
+7. Enter the name and description, verify **Onboarding** is selected, then select **Next**.
+
+    ![Image of System Center Configuration Manager wizard](images/sccm-policy-name.png)
