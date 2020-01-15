@@ -131,5 +131,5 @@ SIP Pool Cert Root CA | | |Information. Display the SIP Pool Cert Root CA, if av
 
 Field |Success |Failure |Comment |Reference
 |------|------|------|------|------|
-Trust Model Status |No Trust Model Issue Detected. |SIP Domain and server domain are different please add the following domains. |Check the LD FQDN/ LD Server Name/ Pool Server name for Trust model issue. |[Surface Hub and the Skype for Business Trusted Domain List](https://blogs.technet.microsoft.com/y0av/2017/10/25/95/)
+Trust Model Status |No Trust Model Issue Detected. |SIP Domain and server domain are different please add the following domains. |Check the LD FQDN/ LD Server Name/ Pool Server name for Trust model issue. |[Surface Hub and the Skype for Business Trusted Domain List](https://y0av.me/2017/10/25/surface-hub-and-the-skype-for-business-trusted-domain-list-2/)
 Domain Name(s) | | |Return the list of domains that should be added for SFB to connect. |
