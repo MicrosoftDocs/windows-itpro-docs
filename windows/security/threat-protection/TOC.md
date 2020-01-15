@@ -156,6 +156,7 @@
 ## [Deployment guide]()
 ### [Product brief](microsoft-defender-atp/product-brief.md)
 ### [Prepare deployment](microsoft-defender-atp/prepare-deployment.md)
+### [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
 ### [Production deployment](microsoft-defender-atp/production-deployment.md)
 
 
