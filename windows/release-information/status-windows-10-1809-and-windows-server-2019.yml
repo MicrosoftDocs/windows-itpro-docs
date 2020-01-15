@@ -33,11 +33,11 @@ sections:
     columns: 3
     items:
     
-    - href: https://aka.ms/how-to-get-1909
-      html: Get the update >
+    - href: https://www.microsoft.com/en-us/microsoft-365/blog/2020/01/14/windows-7-support-ends-today-and-windows-10-is-better-than-ever/
+      html: Find out what you need to know >
       image: 
-        src: http://docs.microsoft.com/media/common/i_download-install.svg
-      title: Windows 10, version 1909 now available
+        src: https://docs.microsoft.com/media/common/i_alert.svg
+      title: Windows 7 has reached end of support
     - href: https://aka.ms/1909mechanics
       html: Explore the improvements >
       image: 
