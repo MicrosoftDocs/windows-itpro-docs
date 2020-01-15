@@ -33,7 +33,7 @@ Before adding Azure Active Directory (Azure AD) joined devices to your existing 
 - Certificate Revocation List (CRL) Distribution Point (CDP)
 - 2016 Domain Controllers
 - Domain Controller certificate
-- Network infrastructure in place to reach your on-premises domain controller. If machines are external, This can be achieved using any VPN solution
+- Network infrastructure in place to reach your on-premises domain controller. If the machines are external, this can be achieved using any VPN solution.
 
 ### Azure Active Directory Connect synchronization
 Azure AD join, as well as hybrid Azure AD join devices register the user's Windows Hello for Business credential with Azure.  To enable on-premises authentication, the credential must be synchronized to the on-premises Active Directory, regardless whether you are using a key or a certificate.  Ensure you have Azure AD Connect installed and functioning properly.  To learn more about Azure AD Connect, read [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
@@ -339,4 +339,3 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 If you plan on using certificates for on-premises single-sign on, perform the additional steps in [Using Certificates for On-premises Single-sign On](hello-hybrid-aadj-sso-cert.md). 
  
-
