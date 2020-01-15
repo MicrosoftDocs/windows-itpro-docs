@@ -63,7 +63,7 @@ The three most recent major releases of macOS are supported.
 - 10.15 (Catalina), 10.14 (Mojave), 10.13 (High Sierra)
 - Disk space: 650 MB
 
-Beta versions of macOS are not supported. macOS Sierra (10.12) support will end on January 1, 2020.
+Beta versions of macOS are not supported. macOS Sierra (10.12) support ended on January 1, 2020.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
