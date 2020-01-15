@@ -47,7 +47,7 @@ You can access the security recommendation from the Microsoft Defender ATP Threa
 *Security recommendations option from the left navigation menu* 
 
 1. Go to the Threat & Vulnerability Management navigation menu and select **Security recommendations** to open up the list of security recommendations for the threats and vulnerabilities found in your organization. It gives you an overview of the security recommendation context: weaknesses found, related components, the application and operating system where the threat or vulnerabilities were found, network, accounts, and security controls, associated breach, threats, and recommendation insights, exposed machine trends, status, remediation type and activities. 
-![Screenshot of Security recommendations page](images/remediationtype_swupdatefilter.png)
+![Screenshot of Security recommendations page](images/tvmsecrec_updated.png)
 
     >[!NOTE]
     > The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the amount of exposed machines, the color of the graph will change into green. This happens when the numbers on the right hand side is greater than what’s on the left,  which means an increase or decrease at the end of even a single machine will change the graph's color.
