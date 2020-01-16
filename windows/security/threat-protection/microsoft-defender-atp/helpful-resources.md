@@ -45,7 +45,7 @@ Access helpful resources such as links to blogs and other resources related to  
 
 ## Threat Vulnerability Management
 
--   [MDATP Threat & Vulnerability Management now publicly
+-   [Microsoft Defender ATP Threat & Vulnerability Management now publicly
     available!](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Threat-amp-Vulnerability-Management-now-publicly-available/ba-p/460977)
 
 ## Operational
