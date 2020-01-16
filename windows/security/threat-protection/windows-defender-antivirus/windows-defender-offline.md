@@ -126,8 +126,8 @@ See the following for more information:
 3. Select **Windows Defender Offline scan** and click **Scan now**.
 
 
-> [!NOTE]
-> In Windows 10, version 1607, the offline scan could be run from under **Windows Settings** > **Update & security** > **Windows Defender** or from the Windows Defender client.
+    > [!NOTE]
+    > In Windows 10, version 1607, the offline scan could be run from under **Windows Settings** > **Update & security** > **Windows Defender** or from the Windows Defender client.
 
 
 ## Review scan results
