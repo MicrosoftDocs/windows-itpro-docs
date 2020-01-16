@@ -26,17 +26,16 @@ Proper planning is the foundation of a successful deployment. In this deployment
 - Tenant configuration
 - Network configuration
 - Onboarding using System Center Configuration Manager
+- Endpoint detection and response
+- Next generation protection
+- Attack surface reduction
 
 >[!NOTE]
->For the purpose of guiding you through a typical deployment, this scenario will only cover the use of System Center Configuration Manager. Microsoft Defnder ATP supports the use of other onboarding tools. For more information, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
+>For the purpose of guiding you through a typical deployment, this scenario will only cover the use of System Center Configuration Manager. Microsoft Defnder ATP supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
 
 ## Tenant Configuration
 
-When accessing [Microsoft Defender Security
-Center](https://securitycenter.windows.com/) for the first time there will be a
-setup wizard that will guide you through some initial steps. At the end of the
-setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP
-created. The easiest method is to perform these steps from a Windows 10 client
+When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a setup wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client
 machine.
 
 1. From a web browser, navigate to <https://securitycenter.windows.com>.
@@ -97,7 +96,7 @@ Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defe
 
 -   Registry based configuration
 
--   WinHTTP configured using netsh command – Suitable only for desktops in a
+-   WinHTTP configured using netsh command - Suitable only for desktops in a
     stable topology (for example: a desktop in a corporate network behind the
     same proxy)
 
@@ -113,7 +112,7 @@ under:
     Preview Builds \> Configure Authenticated Proxy usage for the Connected User
     Experience and Telemetry Service
 
-    -   Set it to **Enabled** and select **Disable Authenticated Proxy usage**
+    -   Set it to **Enabled** and select **Disable Authenticated Proxy usage**
 
 1. Open the Group Policy Management Console.
 2. Create a policy or edit an existing policy based off the organizational practices.
@@ -175,7 +174,7 @@ is configured on these machines.
 
 ### Proxy Service URLs
 URLs that include v20 in them are only needed if you have Windows 10, version
-1803 or later machines. For example, `us-v20.events.data.microsoft.com` is only
+1803 or later machines. For example, ```us-v20.events.data.microsoft.com``` is only
 needed if the machine is on Windows 10, version 1803 or later.
 
  Service location | Microsoft.com DNS record
@@ -243,7 +242,7 @@ below to onboard systems with Configuration Manager.
 
      ![Image of System Center Configuration Manager wizard](images/sccm-criteria.png)
 
-7. Keep criterion type as **simple value**, choose where as **Operating System – build number**, operator as **is equal to** and value **10240** and click on **OK**.
+7. Keep criterion type as **simple value**, choose where as **Operating System - build number**, operator as **is equal to** and value **10240** and click on **OK**.
 
     ![Image of System Center Configuration Manager wizard](images/sccm-simple-value.png)
 
@@ -297,9 +296,7 @@ Manager and deploy that policy to Windows 10 devices.
 
     ![Image of configuration settings](images/1b9f85316170cfe24b46330afa8517d5.png)
 
-12. Select the appropriate telemetry (**Normal** or **Expedited**).
-
-13. Click **Next**.
+12. Select the appropriate telemetry (**Normal** or **Expedited**) then click **Next**.
 
     ![Image of configuration settings](images/13201b477bc9a9ae0020814915fe80cc.png)
 
