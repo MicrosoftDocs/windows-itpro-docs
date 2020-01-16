@@ -35,8 +35,7 @@ Proper planning is the foundation of a successful deployment. In this deployment
 
 ## Tenant Configuration
 
-When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a setup wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client
-machine.
+When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a setup wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client machine.
 
 1. From a web browser, navigate to <https://securitycenter.windows.com>.
 
@@ -90,13 +89,13 @@ there is no need for special configuration settings. For more information on
 Microsoft Defender ATP URL exclusions in the proxy, see the
 Appendix section in this document for the URLs Whitelisting or on
 [Microsoft
-Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
 
 **Manual static proxy configuration:**
 
 -   Registry based configuration
 
--   WinHTTP configured using netsh command - Suitable only for desktops in a
+-   WinHTTP configured using netsh command <br> Suitable only for desktops in a
     stable topology (for example: a desktop in a corporate network behind the
     same proxy)
 

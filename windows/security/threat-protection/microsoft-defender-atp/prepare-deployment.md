@@ -37,8 +37,8 @@ to the table below as appropriate for your organization.
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | Enter name and email | **Chief Information Security Officer (CISO)** *An executive representative who serves as sponsor inside the organization for the new technology deployment.*                                                  | SO     |
 | Enter name and email | **Head of Cyber Defense Operations Center (CDOC)** *A representative from the CDOC team in charge of defining how this change is aligned with the processes in the customers security operations team.*       | SO     |
-| Enter name and email | **Security Architect** *A representative from the Security team in charge of defining how this change is aligned with the core Security architecture in the customer's organization.*                         | R      |
-| Enter name and email | **Workplace Architect** *A representative from the IT team in charge of defining how this change is aligned with the core workplace architecture in the customer's organization.*                             | R      |
+| Enter name and email | **Security Architect** *A representative from the Security team in charge of defining how this change is aligned with the core Security architecture in the organization.*                         | R      |
+| Enter name and email | **Workplace Architect** *A representative from the IT team in charge of defining how this change is aligned with the core workplace architecture in the organization.*                             | R      |
 | Enter name and email | **Security Analyst** *A representative from the CDOC team who can provide input on the detection capabilities, user experience and overall usefulness of this change from a security operations perspective.* | I      |
 
 ## Project Management
@@ -117,9 +117,7 @@ Microsoft Defender ATP supports two ways to manage permissions:
 
 -   **Role-based access control (RBAC)**: Set granular permissions by defining
     roles, assigning Azure AD user groups to the roles, and granting the user
-    groups access to machine groups. For more information on RBAC, see [Manage
-    portal access using role-based access
-    control](rbac.md).
+    groups access to machine groups. For more information. see [Manage portal access using role-based access control](rbac.md).
 
 Microsoft recommends leveraging RBAC to ensure that only users that have a
 business justification can access Microsoft Defender ATP.
@@ -133,9 +131,9 @@ structure required for your environment.
 
 | Tier   | Description                                                                                                                                                                                                 | Permission Required |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Tier 1 | **Local security operations team / IT team**<br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.                                              |                     |
-| Tier 2 | **Regional security operations team**<br> This team can see all the machines for their region and perform remediation actions.                                                                                                                        |        View data               |
-| Tier 3 | **Global security operations team**<br>  This team consists of security experts and are authorized to see and perform all actions from the portal. | View data <br>  Alerts investigation Active remediation ctions <br> Alerts investigation Active remediation actions <br> Manage portal system settings <br> Manage security settings |
+| Tier 1 | **Local security operations team / IT team**<br>This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.                                              |                     |
+| Tier 2 | **Regional security operations team**<br>This team can see all the machines for their region and perform remediation actions.                                                                                                                        |        View data               |
+| Tier 3 | **Global security operations team**<br>This team consists of security experts and are authorized to see and perform all actions from the portal. | View data <br>  Alerts investigation Active remediation ctions <br> Alerts investigation Active remediation actions <br> Manage portal system settings <br> Manage security settings |
 
 
 
