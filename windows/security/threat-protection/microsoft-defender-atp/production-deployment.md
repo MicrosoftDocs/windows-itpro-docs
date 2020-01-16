@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
-ms.topic: artilce 
+ms.topic: article 
 ---
 
 # Microsoft Defender ATP production deployment
@@ -89,9 +89,9 @@ the following discovery methods:
 If a Transparent proxy or WPAD has been implemented in the network topology,
 there is no need for special configuration settings. For more information on
 Microsoft Defender ATP URL exclusions in the proxy, see the
-[Appendix](#Appendix) section in this document for the URLs Whitelisting or on
+Appendix section in this document for the URLs Whitelisting or on
 [Microsoft
-Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 **Manual static proxy configuration:**
 
@@ -578,29 +578,29 @@ Protection in audit mode.
 
 1. In the System Center Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
-    ![A screenshot System Center Configuration Manager](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+    ![A screenshot of System Center Configuration Manager](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
 2. Select **Controlled folder access**.
     
 3. Set the configuration to **Audit** and click **Next**.
 
-    ![A screenshot System Center Configuration Manager](images/a8b934dab2dbba289cf64fe30e0e8aa4.png)    
+    ![A screenshot of System Center Configuration Manager](images/a8b934dab2dbba289cf64fe30e0e8aa4.png)    
     
 4. Confirm the new Exploit Guard Policy by clicking on **Next**.
 
-    ![A screenshot System Center Configuration Manager](images/0a6536f2c4024c08709cac8fcf800060.png)
+    ![A screenshot of System Center Configuration Manager](images/0a6536f2c4024c08709cac8fcf800060.png)
 
 5. Once the policy is created click on **Close**.
 
-    ![A screenshot System Center Configuration Manager](images/95d23a07c2c8bc79176788f28cef7557.png)
+    ![A screenshot of System Center Configuration Manager](images/95d23a07c2c8bc79176788f28cef7557.png)
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
-    ![A screenshot System Center Configuration Manager](images/8999dd697e3b495c04eb911f8b68a1ef.png)
+    ![A screenshot of System Center Configuration Manager](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
 7.  Target the policy to the newly created Windows 10 collection and click **OK**.
 
-    ![A screenshot System Center Configuration Manager](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+    ![A screenshot of System Center Configuration Manager](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
 After completing this task, you now have successfully configured Controlled folder access in audit mode.
 
