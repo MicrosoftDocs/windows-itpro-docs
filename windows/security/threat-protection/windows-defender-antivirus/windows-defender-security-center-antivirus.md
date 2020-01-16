@@ -128,19 +128,19 @@ This section describes how to perform some of the most common tasks when reviewi
 4. Under the **Exclusions** setting, click **Add or remove exclusions**. 
 
 5. Click the plus icon to choose the type and set the options for each exclusion. 
-
 <a id="detection-history"></a>
 
 ### Review threat detection history in the Windows Defender Security Center app
 
-1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+ 1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or 
+ searching the start menu for **Defender**.
  
-2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
- 
-3. Click **Threat history**.
- 
-4. Click **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
- 
+ 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
+ 3. Click **Threat history**
+  
+ 4. Click **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
+
 <a id="ransomware"></a>
 
 ### Set ransomware protection and recovery options
