@@ -121,7 +121,7 @@ Here's what you see in the Windows Security app:
 
 If you are using Windows OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), or [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. In this case, you can use PowerShell to determine whether tamper protection is enabled.
 
-#### Use PowerShell to determine whether tamper protection is turned
+#### Use PowerShell to determine whether tamper protection is turned on
 
 1. Open the Windows PowerShell app.
 
