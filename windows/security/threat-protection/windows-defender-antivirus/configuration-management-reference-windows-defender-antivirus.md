@@ -32,11 +32,11 @@ You can manage and configure Windows Defender Antivirus with the following tools
 - Windows Management Instrumentation (WMI)
 - The mpcmdrun.exe utility
 
-The topics in this section provide further information, links, and resources for using these tools to manage and configure Windows Defender Antivirus.
+The articles in this section provide further information, links, and resources for using these tools to manage and configure Windows Defender Antivirus.
 
 ## In this section
 
-Topic | Description
+Article | Description
 ---|---
 [Manage Windows Defender Antivirus with Microsoft Intune and System Center Configuration Manager](use-intune-config-manager-windows-defender-antivirus.md)|Information about using Intune and System Center Configuration Manager to deploy, manage, report, and configure Windows Defender Antivirus
 [Manage Windows Defender Antivirus with Group Policy settings](use-group-policy-windows-defender-antivirus.md)|List of all Group Policy settings located in ADMX templates
