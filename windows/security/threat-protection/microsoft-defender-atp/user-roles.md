@@ -43,6 +43,11 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
       
         - **Alerts investigation** - Users can manage alerts, initiate automated investigations, collect investigation packages, manage machine tags, and export machine timeline.
          - **Active remediation actions** - Users can take response actions and approve or dismiss pending remediation actions.
+            - Security operations - Take response actions
+              - Approve or dismiss pending remediatoin actions
+              - Manage allowed/blocked lists for automation
+              - Manage allowed/blocked create Indicators
+
          >[!NOTE]
          >To enable your Security operation personnel to choose remediation options and file exceptions, select **Threat and vulnerability management - Remediation handling**, and **Threat and vulnerability management - Exception handling**.
         
