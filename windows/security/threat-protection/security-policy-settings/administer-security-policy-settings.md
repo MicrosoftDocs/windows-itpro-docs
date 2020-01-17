@@ -99,6 +99,7 @@ Over time, new ways to manage security policy settings have been introduced, whi
 </tr>
 </tbody>
 </table>
+
  
 ## <a href="" id="bkmk-secpol"></a>Using the Local Security Policy snap-in
 
@@ -208,6 +209,7 @@ The following table lists the features of the Security Configuration Manager.
 </tr>
 </tbody>
 </table>
+
  
 ### <a href="" id="bkmk-seccfgana"></a>Security Configuration and Analysis
 

@@ -133,7 +133,7 @@ structure required for your environment.
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | Tier 1 | **Local security operations team / IT team**<br>This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.                                              |                     |
 | Tier 2 | **Regional security operations team**<br>This team can see all the machines for their region and perform remediation actions.                                                                                                                        |        View data               |
-| Tier 3 | **Global security operations team**<br>This team consists of security experts and are authorized to see and perform all actions from the portal. | View data <br>  Alerts investigation Active remediation ctions <br> Alerts investigation Active remediation actions <br> Manage portal system settings <br> Manage security settings |
+| Tier 3 | **Global security operations team**<br>This team consists of security experts and are authorized to see and perform all actions from the portal. | View data <br>  Alerts investigation Active remediation actions <br> Alerts investigation Active remediation actions <br> Manage portal system settings <br> Manage security settings |
 
 
 

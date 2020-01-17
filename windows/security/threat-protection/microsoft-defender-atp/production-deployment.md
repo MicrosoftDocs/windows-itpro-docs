@@ -375,7 +375,7 @@ To deploy the MMA with System Center Configuration Manager, follow the steps
 below to utilize the provided batch files to onboard the systems. The CMD file
 when executed, will require the system to copy files from a network share by the
 System, the System will install MMA, Install the DependencyAgent, and configure
-MMA for enrolment into the workspace.
+MMA for enrollment into the workspace.
 
 
 1. In  System Center Configuration Manager console, navigate to **Software
