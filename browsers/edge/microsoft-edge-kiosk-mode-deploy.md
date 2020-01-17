@@ -24,7 +24,7 @@ ms.date: 01/17/2020
 
 In the Windows 10 October 2018 Update, we added the capability to use Microsoft Edge Legacy as a kiosk using assigned access. With assigned access, you create a tailored browsing experience locking down a Windows 10 device to only run as a single-app or multi-app kiosk.  Assigned access restricts a local standard user account so that it only has access to one or more Windows app, such as Microsoft Edge Legacy in kiosk mode.
 
-In this topic, you learn: 
+In this topic, you'll learn: 
 
 - How to configure the behavior of Microsoft Edge Legacy when it's running in kiosk mode with assigned access.
 - What's required to run Microsoft Edge Legacy kiosk mode on your kiosk devices.  
@@ -50,7 +50,7 @@ Microsoft Edge Legacy kiosk mode supports four configurations types that depend 
 
 ### Important things to note before getting started
 
-- There are required steps to follow in order to use the following Microsoft Edge Legacy kiosk mode types either alongside the new version of Microsoft Edge or prevent the new version of Microsoft Edge from being installed on your kiosk device. 
+- There are [required steps to follow](#setup- required-for-microsoft-edge-legacy-kiosk-mode) in order to use the following Microsoft Edge Legacy kiosk mode types either alongside the new version of Microsoft Edge or prevent the new version of Microsoft Edge from being installed on your kiosk device. 
 
 -  The public browsing kiosk types run Microsoft Edge Legacy InPrivate mode to protect user data with a browsing experience designed for public kiosks. 
 
@@ -103,9 +103,9 @@ When the new version of Microsoft Edge Stable channel is installed, Microsoft Ed
 
 To continue using Microsoft Edge Legacy kiosk mode on your kiosk devices take one of the following actions:
 
-If you plan to install Microsoft Edge Stable channel, want to allow it to be installed, or it is already installed on your kiosk device set the Microsoft Edge [Allow Microsoft Edge Side by Side browser experience](https://docs.microsoft.com/DeployEdge/microsoft-edge-update-policies#allowsxs) policy to **Enabled**. 
+- If you plan to install Microsoft Edge Stable channel, want to allow it to be installed, or it is already installed on your kiosk device set the Microsoft Edge [Allow Microsoft Edge Side by Side browser experience](https://docs.microsoft.com/DeployEdge/microsoft-edge-update-policies#allowsxs) policy to **Enabled**. 
 
-To prevent Microsoft Edge Stable channel from being installed on your kiosk devices deploy the Microsoft Edge [Allow installation default](https://docs.microsoft.com/DeployEdge/microsoft-edge-update-policies#installdefault) policy for Stable channel or consider using the [Blocker toolkit](https://docs.microsoft.com/DeployEdge/microsoft-edge-blocker-toolkit) to disable automatic delivery of Microsoft Edge. 
+- To prevent Microsoft Edge Stable channel from being installed on your kiosk devices deploy the Microsoft Edge [Allow installation default](https://docs.microsoft.com/DeployEdge/microsoft-edge-update-policies#installdefault) policy for Stable channel or consider using the [Blocker toolkit](https://docs.microsoft.com/DeployEdge/microsoft-edge-blocker-toolkit) to disable automatic delivery of Microsoft Edge. 
 
 
 
@@ -259,6 +259,7 @@ Make sure to check with your provider for instructions.
 ---  
 
 ## Feature comparison of kiosk mode and kiosk browser app
+
 In the following table, we show you the features available in both Microsoft Edge Legacy kiosk mode and Kiosk Browser app available in Microsoft Store. Both kiosk mode and kiosk browser app work in assigned access.
 
 
