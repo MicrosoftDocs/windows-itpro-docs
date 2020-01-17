@@ -96,24 +96,19 @@ Now that you're familiar with the different kiosk mode configurations and have t
 
 ### Setup required for Microsoft Edge Legacy kiosk mode
 
-When the new version of Microsoft Edge Stable channel is installed, Microsoft Edge Legacy is hidden and all attempts to launch Microsoft Edge Legacy are redirected to the new version of Microsoft Edge. For information about:
-
-- Accessing Microsoft Edge Legacy after installing Microsoft Edge,  see [Access Microsoft Edge Legacy after installing the new version of Microsoft Edge](https://docs.microsoft.com/DeployEdge/microsoft-edge-sysupdate-access-old-edge). 
-- Windows update requirements, see [Windows updates to support the next version of Microsoft Edge](https://docs.microsoft.com/DeployEdge/microsoft-edge-sysupdate-windows-updates). 
+When the new version of Microsoft Edge Stable channel is installed, Microsoft Edge Legacy is hidden and all attempts to launch Microsoft Edge Legacy are redirected to the new version of Microsoft Edge. 
 
 To continue using Microsoft Edge Legacy kiosk mode on your kiosk devices take one of the following actions:
 
-- If you plan to install Microsoft Edge Stable channel, want to allow it to be installed, or it is already installed on your kiosk device set the Microsoft Edge [Allow Microsoft Edge Side by Side browser experience](https://docs.microsoft.com/DeployEdge/microsoft-edge-update-policies#allowsxs) policy to **Enabled**. 
+- If you plan to install Microsoft Edge Stable channel, want to allow it to be installed, or it is already installed on your kiosk device set the Microsoft Edge [Allow Microsoft Edge Side by Side browser experience](https://docs.microsoft.com/DeployEdge/microsoft-edge-update-policies#allowsxs) policy to **Enabled**.
+- To prevent Microsoft Edge Stable channel from being installed on your kiosk devices deploy the Microsoft Edge [Allow installation default](https://docs.microsoft.com/DeployEdge/microsoft-edge-update-policies#installdefault) policy for Stable channel or consider using the [Blocker toolkit](https://docs.microsoft.com/DeployEdge/microsoft-edge-blocker-toolkit) to disable automatic delivery of Microsoft Edge.
 
-- To prevent Microsoft Edge Stable channel from being installed on your kiosk devices deploy the Microsoft Edge [Allow installation default](https://docs.microsoft.com/DeployEdge/microsoft-edge-update-policies#installdefault) policy for Stable channel or consider using the [Blocker toolkit](https://docs.microsoft.com/DeployEdge/microsoft-edge-blocker-toolkit) to disable automatic delivery of Microsoft Edge. 
-
-
-
+> [!NOTE]
+> For more information about accessing Microsoft Edge Legacy after installing Microsoft Edge, see [How to access the old version of Microsoft Edge](https://docs.microsoft.com/DeployEdge/microsoft-edge-sysupdate-access-old-edge).  
 
 ### Use Windows Settings
 
 Windows Settings is the simplest and the only way to set up one or a couple of single-app devices.  
-
 
 1.  On the kiosk device, open Windows Settings, and in the search field type **kiosk** and then select **Set up a kiosk (assigned access)**.
 
