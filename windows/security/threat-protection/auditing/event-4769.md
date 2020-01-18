@@ -68,7 +68,7 @@ You will typically see many Failure events with **Failure Code** “**0x20**”,
 <Data Name="IpPort">49272</Data>
 <Data Name="Status">0x0</Data>
 <Data Name="LogonGuid">{F85C455E-C66E-205C-6B39-F6C60A7FE453}</Data>
-<Data Name="TransmittedServices">-</Data>
+<Data Name="TransittedServices">-</Data>
 </EventData>
 </Event>
 ```
