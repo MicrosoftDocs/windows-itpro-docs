@@ -26,11 +26,11 @@ ms.date: 02/28/2019
 
 **How BitLocker works with operating system drives**
 
-You can use BitLocker to mitigate unauthorized data access on lost or stolen computers by encrypting all user files and system files on the operating system drive, including the swap files and hibernation files, and checking the integrity of early boot components and boot configuration data.
+You can use BitLocker to mitigate unauthorized data access on lost or stolen computers by encrypting all user files and system files on the operating system drive, including the swap files and hibernation files, and checking the integrity of early boot components and boot configuration data. Further information can be found in [BitLocker overview](bitlocker-deviceencryption-overview.md#internal-drive-encryption).
 
 **How BitLocker works with fixed and removable data drives**
 
-You can use BitLocker to encrypt the entire contents of a data drive. You can use Group Policy to require that BitLocker be enabled on a drive before the computer can write data to the drive. BitLocker can be configured with a variety of unlock methods for data drives, and a data drive supports multiple unlock methods.
+You can use BitLocker to encrypt the entire contents of a data drive. You can use Group Policy to require that BitLocker be enabled on a drive before the computer can write data to the drive. BitLocker can be configured with a variety of unlock methods for data drives, and a data drive supports multiple unlock methods. Further information can be found in [BitLocker overview](bitlocker-deviceencryption-overview.md).
 
 ## Does BitLocker support multifactor authentication?
 
@@ -38,7 +38,7 @@ Yes, BitLocker supports multifactor authentication for operating system drives. 
 
 ## What are the BitLocker hardware and software requirements?
 
-For requirements, see [System requirements](bitlocker-overview.md#system-requirements).
+For requirements, see [System requirements](bitlocker-deviceencryption-overview.md#system-requirements-BitLocker).
 
 > [!NOTE]
 > Dynamic disks are not supported by BitLocker. Dynamic data volumes will not be displayed in the Control Panel. Although the operating system volume will always be displayed in the Control Panel, regardless of whether it is a Dynamic disk, if it is a dynamic disk it cannot be protected by BitLocker.
@@ -62,8 +62,15 @@ Beginning with Windows 10, version 1803, you can check TPM status in **Windows D
 
 ## Can I use BitLocker on an operating system drive without a TPM?
 
-Yes, you can enable BitLocker on an operating system drive without a TPM version 1.2 or higher, if the BIOS or UEFI firmware has the ability to read from a USB flash drive in the boot environment. This is because BitLocker will not unlock the protected drive until BitLocker's own volume master key is first released by either the computer's TPM or by a USB flash drive containing the BitLocker startup key for that computer. However, computers without TPMs will not be able to use the system integrity verification that BitLocker can also provide.
-To help determine whether a computer can read from a USB device during the boot process, use the BitLocker system check as part of the BitLocker setup process. This system check performs tests to confirm that the computer can properly read from the USB devices at the appropriate time and that the computer meets other BitLocker requirements.
+Yes, you can enable BitLocker on an operating system drive without a TPM version 1.2 or higher.
+In this case you have two options:
+1. If your BIOS or UEFI firmware has the ability to read from a USB flash drive in the boot environment, you can use a removeable disk. To help determine whether a computer can read from a USB device during the boot process, use the BitLocker system check as part of the BitLocker setup process. This system check performs tests to confirm that the computer can properly read from the USB devices at the appropriate time and that the computer meets other BitLocker requirements.
+1. You can use a password or PIN to unlock the encrypted disk
+
+This is because BitLocker will not unlock the protected drive until BitLocker's own volume master key is first released by either the computer's TPM or by a USB flash drive containing the BitLocker startup key for that computer. In addition to the two options the volume master key can be encrypted with a password or a PIN, so it can be provided as decrypted version as soon as the user typed in the password.
+
+However, computers without TPMs will not be able to use the system integrity verification that BitLocker can also provide.
+
 
 ## How do I obtain BIOS support for the TPM on my computer?
 
