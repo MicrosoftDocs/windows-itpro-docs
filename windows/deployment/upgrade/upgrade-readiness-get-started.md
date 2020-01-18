@@ -29,7 +29,7 @@ Before you begin, consider reviewing the following helpful information:<BR>
     - [Upgrade Readiness requirements](upgrade-readiness-requirements.md): Provides detailed requirements to use Upgrade Readiness.<BR>
     - [Upgrade Readiness blog](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/bg-p/WindowsAnalyticsBlog): Contains announcements of new features and provides helpful tips for using Upgrade Readiness.
 
->If you are using Microsoft Endpoint Configuration Manager, also check out information about how to integrate Upgrade Readiness with Configuration Manager: [Integrate Upgrade Readiness with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
+>If you are using Microsoft Endpoint Configuration Manager, also check out information about how to integrate Upgrade Readiness with Configuration Manager: [Integrate Upgrade Readiness with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/upgrade/upgrade-analytics).
 
 When you are ready to begin using Upgrade Readiness, perform the following steps:
 

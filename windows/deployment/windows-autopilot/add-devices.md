@@ -61,7 +61,7 @@ Note that the hardware hash also contains details about when it was generated, s
 
 ### Collecting the hardware ID from existing devices using Microsoft Endpoint Configuration Manager
 
-Starting with Microsoft Endpoint Configuration Manager current branch version 1802, the hardware hashes for existing Windows 10 version 1703 and higher devices are automatically collected by Configuration Manager. See the [What’s new in version 1802](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1802#report-on-windows-autopilot-device-information) documentation for more details.  The hash information can be extracted from Configuration Manager into a CSV file.
+Starting with Microsoft Endpoint Configuration Manager current branch version 1802, the hardware hashes for existing Windows 10 version 1703 and higher devices are automatically collected by Configuration Manager. See the [What’s new in version 1802](https://docs.microsoft.com/configmgr/core/plan-design/changes/whats-new-in-version-1802#report-on-windows-autopilot-device-information) documentation for more details.  The hash information can be extracted from Configuration Manager into a CSV file.
 
 > [!Note]
 > Before uploading the CSV file on Intune, please make sure that the first row contains the device serial number, Windows product ID, hardware hash, group tag, and assigned user. If there is header information on the top of CSV file, please delete that header information. See details at [Enroll Windows devices in Intune](https://docs.microsoft.com/intune/enrollment/enrollment-autopilot).

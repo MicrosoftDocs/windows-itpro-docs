@@ -57,7 +57,7 @@ If you are not using Azure Portal or Azure Log Analytics, go to [Log Analytics](
 
 ## Microsoft Endpoint Configuration Manager integration
 
-Upgrade Readiness can be integrated with your installation of Configuration Manager. For more information, see [Integrate Upgrade Readiness with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/core/clients/manage/upgrade/upgrade-analytics).
+Upgrade Readiness can be integrated with your installation of Configuration Manager. For more information, see [Integrate Upgrade Readiness with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/upgrade/upgrade-analytics).
 
 
 
