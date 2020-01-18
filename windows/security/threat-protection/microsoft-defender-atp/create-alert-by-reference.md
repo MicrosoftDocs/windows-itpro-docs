@@ -16,13 +16,24 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Create alert from event API
+# Create alert API
 
 **Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 - Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Create alert using event data, as obtained from [Advanced Hunting](run-advanced-query-api.md) for creating a new alert.
+
+## API description
+Creates new [Alert](alerts.md).
+<br>Microsoft Defender ATP Event is a required parameter for the alert creation.
+<br>You can use an event found in Advanced Hunting API or Portal.
+<br>If there existing an open alert on the same Machine with the same Title, the new created alert will be merged with it.
+<br>An automatic investigation starts automatically on alerts created via the API.
+
+
+## Limitations
+1. Rate limitations for this API are 15 calls per minute.
+
 
 ## Permissions
 
