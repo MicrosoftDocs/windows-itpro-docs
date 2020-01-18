@@ -63,6 +63,9 @@ Note that the hardware hash also contains details about when it was generated, s
 
 Starting with Microsoft Endpoint Configuration Manager current branch version 1802, the hardware hashes for existing Windows 10 version 1703 and higher devices are automatically collected by Configuration Manager. See the [What’s new in version 1802](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1802#report-on-windows-autopilot-device-information) documentation for more details.  The hash information can be extracted from Configuration Manager into a CSV file.
 
+> [!Note]
+> Before uploading the CSV file on Intune, please make sure that the first row contains the device serial number, Windows product ID, hardware hash, group tag, and assigned user. If there is header information on the top of CSV file, please delete that header information. See details at [Enroll Windows devices in Intune](https://docs.microsoft.com/intune/enrollment/enrollment-autopilot).
+
 ### Collecting the hardware ID from existing devices using PowerShell
 
 The hardware ID, or hardware hash, for an existing device is available through Windows Management Instrumentation (WMI), as long as that device is running Windows 10 version 1703 or later. To help gather this information, as well as the serial number of the device (useful to see at a glance the machine to which it belongs), a PowerShell script called [Get-WindowsAutoPilotInfo.ps1 has been published to the PowerShell Gallery website](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo).
@@ -101,13 +104,13 @@ Once the hardware IDs have been captured from existing devices, they can be uplo
 -   [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles).  You might already be using MSfB to manage your apps and settings.
 
 A summary of each platform's capabilities is provided below.
-
+<br>
 <table>
 <tr>
-<td BGCOLOR="#a0e4fa"><B>Platform/Portal</th>
-<td BGCOLOR="#a0e4fa"><B>Register devices?</th>
-<td BGCOLOR="#a0e4fa"><B>Create/Assign profile</th>
-<td BGCOLOR="#a0e4fa"><B>Acceptable DeviceID</th>
+<td BGCOLOR="#a0e4fa"><B><font color="#000000">Platform/Portal</font></td>
+<td BGCOLOR="#a0e4fa"><B><font color="#000000">Register devices?</font></td>
+<td BGCOLOR="#a0e4fa"><B><font color="#000000">Create/Assign profile</font></td>
+<td BGCOLOR="#a0e4fa"><B><font color="#000000">Acceptable DeviceID</font></td>
 </tr>
 
 <tr>

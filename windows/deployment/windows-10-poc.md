@@ -52,7 +52,11 @@ Topics and procedures in this guide are summarized in the following table. An es
 <div style='font-size:9.0pt'>
 
 <table border="1" cellspacing="0" cellpadding="0">
+<<<<<<< HEAD
 <tr><TD BGCOLOR="#a0e4fa"><B>Topic</B></td><TD BGCOLOR="#a0e4fa"><B>Description</B></td><TD BGCOLOR="#a0e4fa"><B>Time</B></td></tr>
+=======
+<tr><TD BGCOLOR="#a0e4fa"><font color="#000000"><B>Topic</B></font></td><TD BGCOLOR="#a0e4fa"><font color="#000000"><B>Description</B></font></td><TD BGCOLOR="#a0e4fa"><font color="#000000"><B>Time</B></font></td></tr>
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
 <tr><td><a href="#hardware-and-software-requirements" data-raw-source="[Hardware and software requirements](#hardware-and-software-requirements)">Hardware and software requirements</a><td>Prerequisites to complete this guide.<td>Informational
 <tr><td><a href="#lab-setup" data-raw-source="[Lab setup](#lab-setup)">Lab setup</a><td>A description and diagram of the PoC environment.<td>Informational
 <tr><td><a href="#configure-the-poc-environment" data-raw-source="[Configure the PoC environment](#configure-the-poc-environment)">Configure the PoC environment</a><td>Parent topic for procedures.<td>Informational
@@ -75,38 +79,66 @@ One computer that meets the hardware and software specifications below is requir
 - **Computer 1**: the computer you will use to run Hyper-V and host virtual machines. This computer should have 16 GB or more of installed RAM and a multi-core processor.
 - **Computer 2**: a client computer from your corporate network. It is shadow-copied to create a VM that can be added to the PoC environment, enabling you to test a mirror image of a computer on your network. If you do not have a computer to use for this simulation, you can download an evaluation VHD and use it to represent this computer. Subsequent guides use this computer to simulate Windows 10 replace and refresh scenarios, so the VM is required even if you cannot create this VM using computer 2.
 
+<<<<<<< HEAD
 Harware requirements are displayed below:
+=======
+Hardware requirements are displayed below:
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
 
 <div style='font-size:9.0pt'>
 
 <table border="1" cellspacing="0" cellpadding="0">
     <tr>
         <td></td>
+<<<<<<< HEAD
         <td BGCOLOR="#a0e4fa"><strong>Computer 1</strong> (required)</td>
         <td BGCOLOR="#a0e4fa"><strong>Computer 2</strong> (recommended)</td>
     </tr>
     <tr>
         <td BGCOLOR="#a0e4fa"><strong>Role</strong></td>
+=======
+        <td BGCOLOR="#a0e4fa"><strong><font color="#000000">Computer 1</strong> (required)</font></td>
+        <td BGCOLOR="#a0e4fa"><strong><font color="#000000">Computer 2</strong> (recommended)</font></td>
+    </tr>
+    <tr>
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Role</strong></font></td>
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
         <td>Hyper-V host</td>
         <td>Client computer</td>
     </tr>
     <tr>
+<<<<<<< HEAD
         <td BGCOLOR="#a0e4fa"><strong>Description</strong></td>
+=======
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Description</strong></font></td>
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
         <td>This computer will run Hyper-V, the Hyper-V management tools, and the Hyper-V Windows PowerShell module.</td>
         <td>This computer is a Windows 7 or Windows 8/8.1 client on your corporate network that will be converted to a VM to demonstrate the upgrade process.</td>
     </tr>
     <tr>
+<<<<<<< HEAD
         <td BGCOLOR="#a0e4fa"><strong>OS</strong></td>
+=======
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>OS</strong></font></td>
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
         <td>Windows 8.1/10 or Windows Server 2012/2012 R2/2016<b>*</b></td>
         <td>Windows 7 or a later</td>
     </tr>
     <tr>
+<<<<<<< HEAD
         <td BGCOLOR="#a0e4fa"><strong>Edition</strong></td>
+=======
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Edition</strong></font></td>
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
         <td>Enterprise, Professional, or Education</td>
         <td>Any</td>
     </tr>
     <tr>
+<<<<<<< HEAD
         <td BGCOLOR="#a0e4fa"><strong>Architecture</strong></td>
+=======
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Architecture</strong></font></td>
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
         <td>64-bit</td>
         <td>Any<BR><I>Note: Retaining applications and settings requires that architecture (32 or 64-bit) is the same before and after the upgrade.</I></td>
     </tr>
@@ -122,12 +154,12 @@ Harware requirements are displayed below:
         <td>Any size, MBR formatted.</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>CPU</strong></td>
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>CPU</strong></font></td>
         <td>SLAT-Capable CPU</td>
         <td>Any</td>
     </tr>
     <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Network</strong></td>
+        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Network</strong></font></td>
         <td>Internet connection</td>
         <td>Any</td>
     </tr>
@@ -633,7 +665,11 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Dismount-VHD -Path c:\vhd\d.vhd
     </pre>
 
+<<<<<<< HEAD
     Next, create the PC1 VM with two attached VHDs, and boot to DVD ($maxram must be defined previously using the same Windows PowerShell promt):
+=======
+    Next, create the PC1 VM with two attached VHDs, and boot to DVD ($maxram must be defined previously using the same Windows PowerShell prompt):
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
 
     <pre style="overflow-y: visible">
     New-VM -Name "PC1" -VHDPath c:\vhd\w7.vhd -SwitchName poc-internal
@@ -823,7 +859,11 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
 17. Open an elevated Windows PowerShell prompt on PC1 and verify that the client VM has received a DHCP lease and can communicate with the consoto.com domain controller.
 
+<<<<<<< HEAD
     To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**." Right-click **Windows PowerShell** and then click **Pin to Taskbar** so that it is simpler to use Windows Powershell during this lab. Click **Windows PowerShell** on the taskbar, and then type **ipconfig** at the prompt to see the client's current IP address. Also type **ping dc1.contoso.com** and **nltest /dsgetdc:contoso.com** to verify that it can reach the domain controller. See the following examples of a successful network connection:
+=======
+    To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**." Right-click **Windows PowerShell** and then click **Pin to Taskbar** so that it is simpler to use Windows PowerShell during this lab. Click **Windows PowerShell** on the taskbar, and then type **ipconfig** at the prompt to see the client's current IP address. Also type **ping dc1.contoso.com** and **nltest /dsgetdc:contoso.com** to verify that it can reach the domain controller. See the following examples of a successful network connection:
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
 
     ```
     ipconfig
@@ -966,7 +1006,11 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     cmd /c netsh routing ip nat add interface name="Internal" mode=PRIVATE
     </pre>
 
+<<<<<<< HEAD
 32. The DNS service on SRV1 also needs to resolve hosts in the contoso.com domain. This can be accomplished with a conditional forwarder. Open an elevated Windows PowerShell prompt on SRV1 and type the following command:
+=======
+32. The DNS service on SRV1 also needs to resolve hosts in the `contoso.com` domain. This can be accomplished with a conditional forwarder. Open an elevated Windows PowerShell prompt on SRV1 and type the following command:
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
 
     <pre style="overflow-y: visible">
     Add-DnsServerConditionalForwarderZone -Name contoso.com -MasterServers 192.168.0.1
@@ -978,7 +1022,11 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     ping www.microsoft.com
     </pre>
 
+<<<<<<< HEAD
     If you see "Ping request could not find host www.microsoft.com" on PC1 and DC1, but not on SRV1, then you will need to configure a server-level DNS forwarder on SRV1. To do this, open an elevated Windows PowerShell prompt on SRV1 and type the following command.
+=======
+    If you see "Ping request could not find host `www.microsoft.com`" on PC1 and DC1, but not on SRV1, then you will need to configure a server-level DNS forwarder on SRV1. To do this, open an elevated Windows PowerShell prompt on SRV1 and type the following command.
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
 
     **Note**: This command also assumes that "Ethernet 2" is the external-facing network adapter on SRV1. If the external adapter has a different name, replace "Ethernet 2" in the command below with that name:
 
@@ -1034,10 +1082,17 @@ Use the following procedures to verify that the PoC environment is configured pr
     **DCDiag** displays "passed test" for all tests.<BR>
     **Get-DnsServerResourceRecord** displays the correct DNS address records for DC1, SRV1, and the computername of PC1. Additional address records for the zone apex (@), DomainDnsZones, and ForestDnsZones will also be registered.<BR>
     **Get-DnsServerForwarder** displays a single forwarder of 192.168.0.2.<BR>
+<<<<<<< HEAD
     **Resolve-DnsName** displays public IP address results for www.microsoft.com.<BR>
     **Get-DhcpServerInDC** displays 192.168.0.1, dc1.contoso.com.<BR>
     **Get-DhcpServerv4Statistics** displays 1 scope with 2 addresses in use (these belong to PC1 and the Hyper-V host).<BR>
     **ipconfig** displays a primary DNS suffix and suffix search list of contoso.com, IP address of 192.168.0.1, subnet mask of 255.255.255.0, default gateway of 192.168.0.2, and DNS server addresses of 192.168.0.1 and 192.168.0.2.
+=======
+    **Resolve-DnsName** displays public IP address results for `www.microsoft.com`.<BR>
+    **Get-DhcpServerInDC** displays 192.168.0.1, `dc1.contoso.com`.<BR>
+    **Get-DhcpServerv4Statistics** displays 1 scope with 2 addresses in use (these belong to PC1 and the Hyper-V host).<BR>
+    **ipconfig** displays a primary DNS suffix and suffix search list of `contoso.com`, IP address of 192.168.0.1, subnet mask of 255.255.255.0, default gateway of 192.168.0.2, and DNS server addresses of 192.168.0.1 and 192.168.0.2.
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
 
 2. On SRV1, open an elevated Windows PowerShell prompt and type the following commands:
 
@@ -1051,8 +1106,13 @@ Use the following procedures to verify that the PoC environment is configured pr
 
     **Get-Service** displays a status of "Running" for both services.<BR>
     **Get-DnsServerForwarder** either displays no forwarders, or displays a list of forwarders you are required to use so that SRV1 can resolve Internet names.<BR>
+<<<<<<< HEAD
     **Resolve-DnsName** displays public IP address results for www.microsoft.com.<BR>
     **ipconfig** displays a primary DNS suffix of contoso.com. The suffix search list contains contoso.com and your corporate domain. Two ethernet adapters are shown: Ethernet adapter "Ethernet" has an IP addresses of 192.168.0.2, subnet mask of 255.255.255.0, no default gateway, and DNS server addresses of 192.168.0.1 and 192.168.0.2. Ethernet adapter "Ethernet 2" has an IP address, subnet mask, and default gateway configured by DHCP on your corporate network.<BR>
+=======
+    **Resolve-DnsName** displays public IP address results for `www.microsoft.com`.<BR>
+    **ipconfig** displays a primary DNS suffix of `contoso.com`. The suffix search list contains `contoso.com` and your corporate domain. Two ethernet adapters are shown: Ethernet adapter "Ethernet" has an IP addresses of 192.168.0.2, subnet mask of 255.255.255.0, no default gateway, and DNS server addresses of 192.168.0.1 and 192.168.0.2. Ethernet adapter "Ethernet 2" has an IP address, subnet mask, and default gateway configured by DHCP on your corporate network.<BR>
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
     **netsh** displays three interfaces on the computer: interface "Ethernet 2" with DHCP enabled = Yes and IP address assigned by your corporate network, interface "Ethernet" with DHCP enabled = No and IP address of 192.168.0.2, and interface "Loopback Pseudo-Interface 1" with IP address of 127.0.0.1.
 
 3. On PC1, open an elevated Windows PowerShell prompt and type the following commands:
@@ -1067,9 +1127,15 @@ Use the following procedures to verify that the PoC environment is configured pr
 
     **whoami** displays the current user context, for example in an elevated Windows PowerShell prompt, contoso\administrator is displayed.<BR>
     **hostname** displays the name of the local computer, for example W7PC-001.<BR>
+<<<<<<< HEAD
     **nslookup** displays the DNS server used for the query, and the results of the query. For example, server dc1.contoso.com, address 192.168.0.1, Name e2847.dspb.akamaiedge.net.<BR>
     **ping** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it cannot be resolved, "..could not find host" will be diplayed and if the target is found and also responds to ICMP, you will see "Reply from" and the IP address of the target.<BR>
     **tracert** displays the path to reach the destination, for example srv1.contoso.com [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
+=======
+    **nslookup** displays the DNS server used for the query, and the results of the query. For example, server `dc1.contoso.com`, address 192.168.0.1, Name `e2847.dspb.akamaiedge.net`.<BR>
+    **ping** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it cannot be resolved, "..could not find host" will be displayed and if the target is found and also responds to ICMP, you will see "Reply from" and the IP address of the target.<BR>
+    **tracert** displays the path to reach the destination, for example `srv1.contoso.com` [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
 
 
 ## Appendix B: Terminology used in this guide
@@ -1079,7 +1145,12 @@ Use the following procedures to verify that the PoC environment is configured pr
 <div style='font-size:9.0pt'>
 
 <table border="1" cellspacing="0" cellpadding="0">
+<<<<<<< HEAD
 <tr><TD BGCOLOR="#a0e4fa"><B>Term</B><TD BGCOLOR="#a0e4fa"><B>Definition</B>
+=======
+<tr><TD BGCOLOR="#a0e4fa"><font color="#000000"><B>Term</B></font>
+<TD BGCOLOR="#a0e4fa"><font color="#000000"><B>Definition</B></font>
+>>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
 <tr><td>GPT<td>GUID partition table (GPT) is an updated hard-disk formatting scheme that enables the use of newer hardware. GPT is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions.
 <tr><td>Hyper-V<td>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
 <tr><td>Hyper-V host<td>The computer where Hyper-V is installed.

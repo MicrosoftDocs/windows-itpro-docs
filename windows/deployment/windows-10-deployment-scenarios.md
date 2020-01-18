@@ -1,6 +1,6 @@
 ---
 title: Windows 10 deployment scenarios (Windows 10)
-description: To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider.
+description: Understand the different ways Windows 10 operating system can be deployed in your organization. Explore several Windows 10 deployment scenarios.
 ms.assetid: 7A29D546-52CC-482C-8870-8123C7DC04B5
 ms.reviewer: 
 manager: laurawi
@@ -109,7 +109,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
       Deploy a new device, or wipe an existing device and deploy with a fresh image. 
     </td>
     <td align="center" style="width:16%; border:1;"> 
- <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt">Deploy a Windows 10 image using MDT</a><br><a href="https://docs.microsoft.com/sccm/osd/deploy-use/install-new-windows-version-new-computer-bare-metal">Install a new version of Windows on a new computer with Microsoft Endpoint Configuration Manager</a>
+ <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt">Deploy a Windows 10 image using MDT</a><br><a href="https://docs.microsoft.com/configmgr/osd/deploy-use/install-new-windows-version-new-computer-bare-metal">Install a new version of Windows on a new computer with Microsoft Endpoint Configuration Manager</a>
     </td>
   </tr>
   <tr>
@@ -121,7 +121,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
       Also called wipe and load. Redeploy a device by saving the user state, wiping the disk, then restoring the user state. 
     </td>
     <td align="center" style="width:16%; border:1;"> 
- <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10">Refresh a Windows 7 computer with Windows 10</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager">Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
+ <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10">Refresh a Windows 7 computer with Windows 10</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-configmgr/refresh-a-windows-7-client-with-windows-10-using-configuration-manager">Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
     </td>
   </tr>
   <tr>
@@ -133,7 +133,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
       Replace an existing device with a new one by saving the user state on the old device and then restoring it to the new device.
     </td>
     <td align="center" style="width:16%; border:1;"> 
- <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer">Replace a Windows 7 computer with a Windows 10 computer</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager">Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
+ <a href="https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer">Replace a Windows 7 computer with a Windows 10 computer</a><br><a href="https://docs.microsoft.com/windows/deployment/deploy-windows-configmgr/replace-a-windows-7-client-with-windows-10-using-configuration-manager">Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
     </td>
   </tr>
 </table>

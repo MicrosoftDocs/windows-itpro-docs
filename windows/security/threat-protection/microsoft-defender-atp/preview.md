@@ -24,7 +24,8 @@ ms.topic: conceptual
 
 The Microsoft Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-abovefoldlink) 
+> [!TIP] 
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-abovefoldlink) 
 
 Learn about new features in the Microsoft Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 
@@ -42,11 +43,11 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 The following features are included in the preview release:
 
- - [Threat & Vulnerability supported operating systems and platforms](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-supported-os) <BR>Ensure that you meet the operating system or platform requisites for Threat & Vulnerability Management so the activities in your devices are properly accounted for. Threat & Vulnerability Management supports Windows 7, Windows 10 1607-1703, Windows 10 1709+, Windows Server 2008 R2, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019.
+ - [Threat & Vulnerability supported operating systems and platforms](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-supported-os) <BR>Ensure that you meet the operating system or platform requisites for Threat & Vulnerability Management so the activities in your devices are properly accounted for. Threat & Vulnerability Management supports Windows 7, Windows 10 1607-1703, Windows 10 1709+, Windows Server 2008R2, Windows Server 2012R2, Windows Server 2016, Windows Server 2019.
 
-- [Threat & Vulnerability Management Report inaccuracy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#report-inaccuracy) <BR>Report a false positive when you see any vague, inaccurate, incomplete, or already remediated [security recommendation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#report-inaccuracy), [software inventory](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-software-inventory#report-inaccuracy), and [discovered vulnerabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses#report-inaccuracy).  
+- [Threat & Vulnerability Management granular exploit details](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses) <BR> You can now see a comprehensive set of details on the vulnerabilities found in your machine to give you informed decision on your next steps. The threat insights icon now shows more granular details, such as if the exploit is a part of an exploit kit, connected to specific advanced persistent campaigns or activity groups for which, Threat Analytics report links are provided that you can read, has associated zero-day exploitation news, disclosures, or related security advisories.
  
-- [Threat & Vulnerability Management granular exploit details](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses) <BR>See a comprehensive set of details on the vulnerabilities found in your machine to give you informed decision on your next steps. The threat insights icon now shows more granular details, such as if the exploit is a part of an exploit kit, connected to specific advanced persistent campaigns or activity groups for which, Threat Analytics report links are provided that you can read, has associated zero-day exploitation news, disclosures, or related security advisories.
+ - [Threat & Vulnerability Management Report inaccuracy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#report-inaccuracy) <BR> You can report a false positive when you see any vague, inaccurate, incomplete, or already remediated [security recommendation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation#report-inaccuracy), [software inventory](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-software-inventory#report-inaccuracy), and [discovered vulnerabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-weaknesses#report-inaccuracy).  
 
 - [Machine health and compliance report](machine-reports.md)  The machine health and compliance report provides high-level information about the devices in your organization.
 
@@ -66,4 +67,5 @@ Information protection is an integral part of Microsoft 365 Enterprise suite, pr
 - [Power BI reports using Microsoft Defender ATP data](powerbi-reports.md) <br>
 Microsoft Defender ATP makes it easy to create a Power BI dashboard by providing an option straight from the portal.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  
+> [!TIP] 
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-preview-belowfoldlink)  
