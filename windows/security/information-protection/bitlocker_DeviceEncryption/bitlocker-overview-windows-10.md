@@ -63,7 +63,7 @@ Basically, it was a big hassle. If IT staff were provisioning new PCs, they coul
 
 Microsoft includes instrumentation in Windows 10 that enables the operating system to fully manage the TPM. There is no need to go into the BIOS, and all scenarios that required a restart have been eliminated.
 
-# Internal drive encryption
+# <a href="" id=“internal-drive-encryption”></a>Internal drive encryption
 BitLocker is capable of encrypting entire hard drives, including both system and data drives. BitLocker pre-provisioning can drastically reduce the time required to provision new PCs with BitLocker enabled. With Windows 10, administrators can turn on BitLocker and the TPM from within the Windows Preinstallation Environment before they install Windows or as part of an automated deployment task sequence without any user interaction. Combined with Used Disk Space Only encryption and a mostly empty drive (because Windows is not yet installed), it takes only a few seconds to enable BitLocker.
 With earlier versions of Windows, administrators had to enable BitLocker after Windows had been installed. Although this process could be automated, BitLocker would need to encrypt the entire drive, a process that could take anywhere from several hours to more than a day depending on drive size and performance, which significantly delayed deployment. Microsoft has improved this process through multiple features in Windows 10.
 
@@ -78,7 +78,7 @@ Exercise caution when encrypting only used space on an existing volume on which 
 When it comes to system drive encryption, BitLocker supports three different ways of unlocking the encrypted disk:
 
 1. With a Trusted Platform Module (TPM)
-1. With a password
+1. With a password or PIN (A PIN does only contain numbers, while a password can contain letters and special characters as well)
 1. With a removable storage device
 
 

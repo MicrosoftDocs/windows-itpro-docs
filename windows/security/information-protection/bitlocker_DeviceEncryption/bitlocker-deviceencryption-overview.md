@@ -87,7 +87,7 @@ BitLocker control panel, and they are appropriate to use for automated deploymen
 
 To find out what's new in BitLocker for Windows 10, such as support for the XTS-AES encryption algorithm, see the [BitLocker](https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10."
  
-## System requirements BitLocker
+## <a href="" id=“system-requirements-BitLocker”></a>System requirements BitLocker
 
 BitLocker has the following hardware requirements:
 
