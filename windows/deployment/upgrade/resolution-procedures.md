@@ -194,7 +194,7 @@ Disconnect all peripheral devices that are connected to the system, except for t
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 Check supplemental rollback logs for a setupmem.dmp file, or event logs for any unexpected reboots or errors.
 <br>Review the rollback log and determine the stop code.
-<br>The rollback log is located in the <strong>C:$Windows.~BT\Sources\Panther</strong> folder.  An example analysis is shown below. This example is not representative of all cases:
+<br>The rollback log is located in the <strong>$Windows.~BT\Sources\Rollback</strong> folder.  An example analysis is shown below. This example is not representative of all cases:
 <pre>
 Info SP     Crash 0x0000007E detected
 Info SP       Module name           :
@@ -513,9 +513,9 @@ This error has more than one possible cause. Attempt [quick fixes](quick-fixes.m
 <br /><table>
 
 <tr>
-<td BGCOLOR="#a0e4fa"><b>Error code</b></th>
-<td BGCOLOR="#a0e4fa"><b>Cause</b></th>
-<td BGCOLOR="#a0e4fa"><b>Mitigation</b></th>
+<td BGCOLOR="#a0e4fa"><font color="#000000"><b>Error code</b></font></td>
+<td BGCOLOR="#a0e4fa"><font color="#000000"><b>Cause</b></font></td>
+<td BGCOLOR="#a0e4fa"><font color="#000000"><b>Mitigation</b></font></td>
 </tr>
 
 <tr>
@@ -647,7 +647,7 @@ For detailed information on how to run these steps check out <a href="https://bl
 
 <br><table>
 
-<tr><td BGCOLOR="#a0e4fa">Error Codes<td BGCOLOR="#a0e4fa">Cause<td BGCOLOR="#a0e4fa">Mitigation</td></tr>
+<tr><td BGCOLOR="#a0e4fa"><font color="#000000">Error Codes<td BGCOLOR="#a0e4fa"><font color="#000000">Cause<td BGCOLOR="#a0e4fa"><font color="#000000">Mitigation</td></tr>
 <tr><td>0x80070003- 0x20007
 <td>This is a failure during SafeOS phase driver installation.
 

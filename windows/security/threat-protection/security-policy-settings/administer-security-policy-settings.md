@@ -99,6 +99,7 @@ Over time, new ways to manage security policy settings have been introduced, whi
 </tr>
 </tbody>
 </table>
+
  
 ## <a href="" id="bkmk-secpol"></a>Using the Local Security Policy snap-in
 
@@ -135,7 +136,7 @@ The Security Compliance Manager is a downloadable tool that helps you plan, depl
 
 **To administer security policies by using the Security Compliance Manager**
 
-1.  Download the most recent version. You can find out more info on the [Microsoft Security Guidance](http://blogs.technet.com/b/secguide/) blog.
+1.  Download the most recent version. You can find out more info on the [Microsoft Security Guidance](https://blogs.technet.com/b/secguide/) blog.
 2.  Read the relevant security baseline documentation that is included in this tool.
 3.  Download and import the relevant security baselines. The installation process steps you through baseline selection.
 4.  Open the Help and follow instructions how to customize, compare, or merge your security baselines before deploying those baselines.
@@ -208,6 +209,7 @@ The following table lists the features of the Security Configuration Manager.
 </tr>
 </tbody>
 </table>
+
  
 ### <a href="" id="bkmk-seccfgana"></a>Security Configuration and Analysis
 

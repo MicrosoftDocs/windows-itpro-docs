@@ -1,6 +1,6 @@
 ---
 title: Maximum tolerance for computer clock synchronization (Windows 10)
-description: Describes the best practices, location, values, policy management, and security considerations for the Maximum tolerance for computer clock synchronization security policy setting.
+description: Best practices, location, values, policy management, and security considerations for the policy setting, Maximum tolerance for computer clock synchronization.
 ms.assetid: ba2cf59e-d69d-469e-95e3-8e6a0ba643af
 ms.reviewer: 
 ms.author: dansimp
