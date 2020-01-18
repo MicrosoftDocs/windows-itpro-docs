@@ -22,22 +22,56 @@ ms.date: 01/26/2018
 **Applies to**
 -   Windows 10
 
-This topic provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
+This topic provides a high-level overview of the security features BitLocker and the Device encryption, including a list of system requirements, practical applications, and deprecated features.
+
+## <a href="" id="introduction"></a>Introduction
+Technical devices nowadys store and process more and more sensitve data. Therefore it becomes necessary to find a way protecting this information from being acceessed by unauthorized person. 
+Since mobile devices nowadays store more and more sensitive data, it becomes necessary to protect this information from being accessed by unauthorized persons. 
+It should be kept in mind that unwanted data access can occur not only through targeted attacks, but also through threat vectors such as the intentional transmission of data storage devices.
+
+Since it is almost impossible to prevent third parties from finding a deliberate or accidental way to access stored data, it makes sense to establish software-based protection that makes it impossible to interpret the data even after it has been viewed.
+This goal can be achieved by using encryption. Data is modified by mathematical algorithms in such a way that it can only be restored by an additional information, a so-called key. If third parties gain access to stored information and do not have the correct key, it is almost impossible for them to draw conclusions about the original data from the data received. Authorized persons, on the other hand, who have the required key, can access the original information.
+
+So encryption does not protect data or hardware devices from being accessed in general, but it makes data uninterpretable for unauthorized persons.
+
+The features BitLocker and Device encryption are able to encrypt stored data, so it is protected from unwanted access.
 
 ## <a href="" id="bkmk-over"></a>BitLocker overview
+BitLocker is a data protection feature, that is integrated into the Windows 10 editions Pro, Enterprise and Education. BitLocker offers encryption for three different types of data drives:
 
-BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.
+1. For a system drive
+1. For an internal, but non-system drive
+1. For a removable storage device (BitLocker To Go)
 
-BitLocker provides the most protection when used with a Trusted Platform Module (TPM) version 1.2 or later. The TPM is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer has not been tampered with while the system was offline.
+The requirements and functionality of BitLocker vary greatly depending on the type of data drive, which is going to be encrypted. The following pages describe this information in more detail.
 
-On computers that do not have a TPM version 1.2 or later, you can still use BitLocker to encrypt the Windows operating system drive. However, this implementation will require the user to insert a USB startup key to start the computer or resume from hibernation. Starting with Windows 8, you can use an operating system volume password to protect the operating system volume on a computer without TPM. Both options do not provide the pre-startup system integrity verification offered by BitLocker with a TPM.
+<!-- BitLocker provides the most protection when used with a Trusted Platform Module (TPM) version 1.2 or later. The TPM is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer has not been tampered with while the system was offline. -->
 
-In addition to the TPM, BitLocker offers the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable device, such as a USB flash drive, that contains a startup key. These additional security measures provide multifactor authentication and assurance that the computer will not start or resume from hibernation until the correct PIN or startup key is presented.
+<!-- On computers that do not have a TPM version 1.2 or later, you can still use BitLocker to encrypt the Windows operating system drive. However, this implementation will require the user to insert a USB startup key to start the computer or resume from hibernation. Starting with Windows 8, you can use an operating system volume password to protect the operating system volume on a computer without TPM. Both options do not provide the pre-startup system integrity verification offered by BitLocker with a TPM. -->
+
+<!-- In addition to the TPM, BitLocker offers the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable device, such as a USB flash drive, that contains a startup key. These additional security measures provide multifactor authentication and assurance that the computer will not start or resume from hibernation until the correct PIN or startup key is presented. -->
+
+## <a href="" id="de-over"></a>Device Encryption overview
+Device Encryption is a data protection feature, that is integrated into all Windows editions since Windows version 8.1. The device encryption does only support the encryption of a system drive. The encrpytion of the Device Encryption is identical to the encryption performed with "new encryption mode" of BitLocker.
+
+Further information about the functionality and requirements of the Device Encryption will be given on the next pages.
+
+## <a href="" id="bkmk-over"></a>Comparison between BitLocker and Device encryption
+The following table compares the features and the requirements of BitLocker to those of the Device encryption.
+
+| Feature | BitLocker | Device Encryption |
+|---|---| --- |
+| **Encryption of system drive** | available | available |
+| **Encryption of non-system drive** | available | not available |
+| **Encryption of remvoable storage devices** | available | not available |
+| **Storage of the recovery key** | <ol><li>In a Microsoft account</li><li>In an Azure Active Directory account</li><li>Print it on a sheet of paper</li><li>Store it in a file</li><li>Store it on a removable drive</li></ol> |  <ol><li>In a Microsoft account</li><li>In an Azure Active Directory account</li></ol> |
+
+<!--
+| ** ** |  |  |
+-->
+
 
 ## <a href="" id="bkmk-app"></a>Practical applications
-
-Data on a lost or stolen computer is vulnerable to unauthorized access, either by running a software-attack tool against it or by transferring the computer's hard disk to a different computer. BitLocker helps mitigate unauthorized data access by enhancing file and system protections. BitLocker also helps render data inaccessible when BitLocker-protected computers are decommissioned or recycled.
-
 There are two additional tools in the Remote Server Administration Tools, which you can use to manage BitLocker.
 
 -   **BitLocker Recovery Password Viewer**. The BitLocker Recovery Password Viewer enables you to locate and view BitLocker Drive Encryption recovery passwords that have been backed up to Active Directory Domain Services (AD DS). You can use this tool to help recover data that is stored on a drive that has been encrypted by using BitLocker. The BitLocker Recovery Password Viewer tool is an extension for the Active Directory Users and Computers Microsoft Management Console (MMC) snap-in.
@@ -50,23 +84,23 @@ BitLocker control panel, and they are appropriate to use for automated deploymen
 
 To find out what's new in BitLocker for Windows 10, such as support for the XTS-AES encryption algorithm, see the [BitLocker](https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10."
  
-## System requirements
+## System requirements BitLocker
 
 BitLocker has the following hardware requirements:
 
-For BitLocker to use the system integrity check provided by a Trusted Platform Module (TPM), the computer must have TPM 1.2 or later. If your computer does not have a TPM, enabling BitLocker requires that you save a startup key on a removable device, such as a USB flash drive.
+For BitLocker to use the system integrity check provided by a Trusted Platform Module (TPM) in case of the system drive encryption, the computer must have TPM 1.2 or later. If your computer does not have a TPM, enabling BitLocker for a system disk requires that you save a startup key on a removable device, such as a USB flash drive.
 
 A computer with a TPM must also have a Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware. The BIOS or UEFI firmware establishes a chain of trust for the pre-operating system startup, and it must include support for TCG-specified Static Root of Trust Measurement. A computer without a TPM does not require TCG-compliant firmware.
 
 The system BIOS or UEFI firmware (for TPM and non-TPM computers) must support the USB mass storage device class, including reading small files on a USB flash drive in the pre-operating system environment.
 
 > [!IMPORTANT]
-> From Windows 7, you can encrypt an OS drive without a TPM and USB flash drive. For this procedure, see [Tip of the Day: Bitlocker without TPM or USB](https://blogs.technet.microsoft.com/tip_of_the_day/2014/01/22/tip-of-the-day-bitlocker-without-tpm-or-usb/).
+> From Windows 7, you can encrypt an OS drive without a TPM and USB flash drive, but with a password. For this procedure, see [Tip of the Day: Bitlocker without TPM or USB](https://blogs.technet.microsoft.com/tip_of_the_day/2014/01/22/tip-of-the-day-bitlocker-without-tpm-or-usb/).
 
 > [!NOTE]
-> TPM 2.0 is not supported in Legacy and CSM Modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as Native UEFI only. The Legacy and Compatibility Support Module (CSM) options must be disabled. For added security Enable the Secure Boot feature.
+> TPM 2.0 is not supported in Legacy and CSM Modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as native UEFI only. The Legacy and Compatibility Support Module (CSM) options must be disabled. For added security Enable the Secure Boot feature.
 
-> Installed Operating System on hardware in legacy mode will stop the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](https://docs.microsoft.com/windows/deployment/mbr-to-gpt) before changing the BIOS mode which will prepare the OS and the disk to support UEFI.
+> Installed operating system on hardware in legacy mode will stop the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](https://docs.microsoft.com/windows/deployment/mbr-to-gpt) before changing the BIOS mode which will prepare the OS and the disk to support UEFI.
 
 The hard disk must be partitioned with at least two drives:
 
@@ -76,6 +110,13 @@ The hard disk must be partitioned with at least two drives:
 When installed on a new computer, Windows will automatically create the partitions that are required for BitLocker.
 
 When installing the BitLocker optional component on a server you will also need to install the Enhanced Storage feature, which is used to support hardware encrypted drives.
+
+## System requirements Device Encryption
+* The device contains a TPM (Trusted Platform Module), either TPM 1.2 or TPM 2.0.
+* UEFI Secure Boot is enabled. See [Secure boot and BitLocker Device Encryption overview](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview) for more information.
+* Platform Secure Boot is enabled
+* Direct memory access (DMA) protection is enabled
+* The user has to be logged in with a Microsoft account or a Azure Active Directory account
 
 ## In this section
 
