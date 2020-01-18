@@ -71,19 +71,16 @@ Device Encryption uses BitLocker technology to protect the system by transparent
 
 Device Encryption is made for deploying hard drive encryption on a broad range of devices and to ensure higher security standards. Compared to the classical BitLocker feature, which is only available in the Pro, Education and Enterprise versions of Windows, the device encryption lacks the following features:
 
-* Pre-Boot authentication is not possible. The security is based on the TPM chip.
-* The Recovery key is automatically uploaded to the corresponding Microsoft account or the Domain account. It is not possible to save the recovery key at another location in the first place.
+| Feature | BitLocker | Device Encryption |
+|---|---| --- |
+| **Encryption of system drive** | available | available |
+| **Encryption of non-system drive** | available | not available |
+| **Encryption of remvoable storage devices** | available | not available |
+| **System integrity check with TPM** | possible | possible |
+| **Storage of the recovery key** | <ol><li>In a Microsoft account</li><li>In an Azure Active Directory account</li><li>Print it on a sheet of paper</li><li>Store it in a file</li><li>Store it on a removable drive</li></ol> |  <ol><li>In a Microsoft account</li><li>In an Azure Active Directory account</li></ol> |
+| **Pre-Boot authentication** | Password, PIN or removable storage device | not possible |
 
-### System Requirements for Device Encryption
-
-Microsoft expects that most devices in the future will pass the testing requirements, which makes Device Encryption pervasive across modern Windows devices.
-The system requirements are:
-
-* The device contains a TPM (Trusted Platform Module), either TPM 1.2 or TPM 2.0.
-* UEFI Secure Boot is enabled. See [Secure boot and BitLocker Device Encryption overview](https://docs.microsoft.com/windows-hardware/drivers/bringup/secure-boot-and-device-encryption-overview) for more information.
-* Platform Secure Boot is enabled
-* Direct memory access (DMA) protection is enabled
-* The user has to be logged in with a Microsoft account or a Domain account
+### Special features Device Encryption
 
 Unlike a standard BitLocker implementation, Device Encryption is enabled automatically so that the device is always protected. The following list outlines how this happens:
 
