@@ -118,6 +118,11 @@ Hybrid certificate trust deployments need the device write back feature.  Authen
 > [!NOTE]
 > Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Azure Active Directory and Active Directory, and therefore the device writeback is used to update the msDS-KeyCredentialLink on the computer object.
 
+## Provisioning
+
+You need to allow access to the URL account.microsoft.com to initiate Windows Hello for Business provisioning. This URL launches the subsequent steps in the provisioning process and is required to successfully complete Windows Hello for Business provisioning. This URL does not require any authentication and as such, does not collect any user data.
+
+
 ### Section Checklist ###
 > [!div class="checklist"]
 > * Azure Active Directory Device writeback
