@@ -79,11 +79,7 @@ One computer that meets the hardware and software specifications below is requir
 - **Computer 1**: the computer you will use to run Hyper-V and host virtual machines. This computer should have 16 GB or more of installed RAM and a multi-core processor.
 - **Computer 2**: a client computer from your corporate network. It is shadow-copied to create a VM that can be added to the PoC environment, enabling you to test a mirror image of a computer on your network. If you do not have a computer to use for this simulation, you can download an evaluation VHD and use it to represent this computer. Subsequent guides use this computer to simulate Windows 10 replace and refresh scenarios, so the VM is required even if you cannot create this VM using computer 2.
 
-<<<<<<< HEAD
-Harware requirements are displayed below:
-=======
 Hardware requirements are displayed below:
->>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
 
 <div style='font-size:9.0pt'>
 
@@ -665,11 +661,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Dismount-VHD -Path c:\vhd\d.vhd
     </pre>
 
-<<<<<<< HEAD
-    Next, create the PC1 VM with two attached VHDs, and boot to DVD ($maxram must be defined previously using the same Windows PowerShell promt):
-=======
     Next, create the PC1 VM with two attached VHDs, and boot to DVD ($maxram must be defined previously using the same Windows PowerShell prompt):
->>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
 
     <pre style="overflow-y: visible">
     New-VM -Name "PC1" -VHDPath c:\vhd\w7.vhd -SwitchName poc-internal
@@ -859,11 +851,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
 17. Open an elevated Windows PowerShell prompt on PC1 and verify that the client VM has received a DHCP lease and can communicate with the consoto.com domain controller.
 
-<<<<<<< HEAD
-    To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**." Right-click **Windows PowerShell** and then click **Pin to Taskbar** so that it is simpler to use Windows Powershell during this lab. Click **Windows PowerShell** on the taskbar, and then type **ipconfig** at the prompt to see the client's current IP address. Also type **ping dc1.contoso.com** and **nltest /dsgetdc:contoso.com** to verify that it can reach the domain controller. See the following examples of a successful network connection:
-=======
     To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**." Right-click **Windows PowerShell** and then click **Pin to Taskbar** so that it is simpler to use Windows PowerShell during this lab. Click **Windows PowerShell** on the taskbar, and then type **ipconfig** at the prompt to see the client's current IP address. Also type **ping dc1.contoso.com** and **nltest /dsgetdc:contoso.com** to verify that it can reach the domain controller. See the following examples of a successful network connection:
->>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
 
     ```
     ipconfig
@@ -1006,11 +994,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     cmd /c netsh routing ip nat add interface name="Internal" mode=PRIVATE
     </pre>
 
-<<<<<<< HEAD
-32. The DNS service on SRV1 also needs to resolve hosts in the contoso.com domain. This can be accomplished with a conditional forwarder. Open an elevated Windows PowerShell prompt on SRV1 and type the following command:
-=======
 32. The DNS service on SRV1 also needs to resolve hosts in the `contoso.com` domain. This can be accomplished with a conditional forwarder. Open an elevated Windows PowerShell prompt on SRV1 and type the following command:
->>>>>>> 15571a3eeab72fb2d45a44e76e0f33dfa45ad0d0
 
     <pre style="overflow-y: visible">
     Add-DnsServerConditionalForwarderZone -Name contoso.com -MasterServers 192.168.0.1
