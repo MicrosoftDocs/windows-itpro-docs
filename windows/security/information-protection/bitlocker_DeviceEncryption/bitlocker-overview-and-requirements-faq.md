@@ -34,7 +34,7 @@ You can use BitLocker to encrypt the entire contents of a data drive. You can us
 
 ## Does BitLocker support multifactor authentication?
 
-Yes, BitLocker supports multifactor authentication for operating system drives. If you enable BitLocker on a computer that has a TPM version 1.2 or later, you can use additional forms of authentication with the TPM protection.
+Yes, BitLocker supports multifactor authentication for operating system drives. If you enable BitLocker on a computer that has a TPM version 1.2 or later, you can use additional forms of authentication with the TPM protection. This includes the use of a password, a PIN or a removable storage device.
 
 ## What are the BitLocker hardware and software requirements?
 

@@ -24,11 +24,11 @@ ms.date: 02/28/2019
 
 ## Can BitLocker deployment be automated in an enterprise environment?
 
-Yes, you can automate the deployment and configuration of BitLocker and the TPM using either WMI or Windows PowerShell scripts. How you choose to implement the scripts depends on your environment. You can also use Manage-bde.exe to locally or remotely configure BitLocker. For more info about writing scripts that use the BitLocker WMI providers, see [BitLocker Drive Encryption Provider](https://go.microsoft.com/fwlink/p/?LinkId=80600). For more info about using Windows PowerShell cmdlets with BitLocker Drive Encryption, see [BitLocker Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/bitlocker/index?view=win10-ps).
+Yes, you can automate the deployment and configuration of BitLocker and the TPM using either WMI or Windows PowerShell scripts. How you choose to implement the scripts depends on your environment. You can also use Manage-bde.exe to locally or remotely configure BitLocker. For more info about writing scripts that use the BitLocker WMI providers, see [BitLocker Provider](https://go.microsoft.com/fwlink/p/?LinkId=80600). For more info about using Windows PowerShell cmdlets with BitLocker Drive Encryption, see [BitLocker Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/bitlocker/index?view=win10-ps).
 
 ## Can BitLocker encrypt more than just the operating system drive?
 
-Yes.
+Yes. BitLocker can encrypt non system drives and removable storage devices with BitLocker To Go, as well.
 
 ## Is there a noticeable performance impact when BitLocker is enabled on a computer?
 
@@ -55,7 +55,7 @@ When these policy settings are enabled, the BitLocker-protected operating system
 
 ## What is Used Disk Space Only encryption?
 
-BitLocker in Windows 10 lets users choose to encrypt just their data. Although it's not the most secure way to encrypt a drive, this option can reduce encryption time by more than 99 percent, depending on how much data that needs to be encrypted. For more information, see [Used Disk Space Only encryption](bitlocker-device-encryption-overview-windows-10.md#used-disk-space-only-encryption).
+BitLocker in Windows 10 lets users choose to encrypt just their data. Although it's not the most secure way to encrypt a drive, this option can reduce encryption time by more than 99 percent, depending on how much data that needs to be encrypted. For more information, see [Used Disk Space Only encryption](bitlocker-overview-windows-10.md#used-disk-space-only-encryption).
 
 ## What system changes would cause the integrity check on my operating system drive to fail?
 

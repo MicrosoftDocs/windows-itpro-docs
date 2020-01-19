@@ -27,6 +27,8 @@ ms.date: 02/28/2019
 
 BitLocker uses Advanced Encryption Standard (AES) as its encryption algorithm with configurable key lengths of 128 or 256 bits. The default encryption setting is AES-128, but the options are configurable by using Group Policy.
 
+Up to Windows 10 BitLocker uses the Cipher-Block-Chaining mode for encryption. Starting with Windows 10, BitLocker provides additionially the XEX-based tweaked-codebook mode (XTS). The setup of BitLocker will differenciate between the compatible mode (CBC) and the new encryption mode (XTS).
+
 ## What is the best practice for using BitLocker on an operating system drive?
 
 The recommended practice for BitLocker configuration on an operating system drive is to implement BitLocker on a computer with a TPM version 1.2 or higher and a Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware implementation, plus a PIN. By requiring a PIN that was set by the user in addition to the TPM validation, a malicious user that has physical access to the computer cannot simply start the computer.
