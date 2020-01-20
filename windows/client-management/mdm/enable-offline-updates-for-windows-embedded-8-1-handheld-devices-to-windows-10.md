@@ -108,15 +108,15 @@ Trigger the device to check for updates either manually or using Microsoft Endpo
 
 1.  Remotely trigger a scan of the test device by deploying a Trigger Scan Configuration Baseline.
 
-    ![device scan using sccm](images/windowsembedded-update2.png)
+    ![device scan using Configuration Manager](images/windowsembedded-update2.png)
 
 2.  Set the value of this OMA-URI by browsing to the settings of this Configuration Item and selecting the newly created Trigger Scan settings from the previous step.
 
-    ![device scan using sccm](images/windowsembedded-update3.png)
+    ![device scan using Configuration Manager](images/windowsembedded-update3.png)
 
 3.  Ensure that the value that is specified for this URI is greater than the value on the device(s) and that the Remediate noncompliant rules when supported option is checked. For the first time, any value that is greater than 0 will work, but for subsequent configurations, ensure that you specify an incremented value.
 
-    ![device scan using sccm](images/windowsembedded-update4.png)
+    ![device scan using Configuration Manager](images/windowsembedded-update4.png)
 
 4.  Create a Configuration Baseline for TriggerScan and Deploy. It is recommended that this Configuration Baseline be deployed after the Controlled Updates Baseline has been applied to the device (the corresponding files are deployed on the device through a device sync session).
 5.  Follow the prompts for downloading the updates, but do not install the updates on the device.
@@ -228,7 +228,7 @@ This process has three parts:
 1.  Create a configuration item and specify that file path and name on the device as `NonPersistent\DUCustomContentURIs.xml`
 2.  Check the box **Remediate noncompliant settings**.
 
-    ![embedded device upate](images/windowsembedded-update21.png)
+    ![embedded device update](images/windowsembedded-update21.png)
 
 3.  Click **OK**.
 
@@ -238,11 +238,11 @@ This process has three parts:
 1.  Create a configuration baseline item and give it a name (such as ControlledUpdates).
 2.  Add the DUControlledUpdates and DUCustomContentURIs configuration items, and then click **OK**.
 
-    ![embedded device upate](images/windowsembedded-update22.png)
+    ![embedded device update](images/windowsembedded-update22.png)
 
 3.  Deploy the configuration baseline to the appropriate device or device collection.
 
-    ![embedded device upate](images/windowsembedded-update23.png)
+    ![embedded device update](images/windowsembedded-update23.png)
 
 4.  Click **OK**.
 
@@ -468,14 +468,14 @@ Use this procedure for pre-GDR1 devices.
 2.  In Microsoft Endpoint Configuration Manager under **Assets and Compliance** &gt; **Compliance Settings**, right-click on **Configuration Items**.
 3.  Select **Create Configuration Item**.
 
-    ![device update using sccm](images/windowsembedded-update5.png)
+    ![device update using Configuration Manager](images/windowsembedded-update5.png)
 4.  Enter a filename (such as GetDUReport) and then choose **Mobile Device**.
 5.  In the **Mobile Device Settings** page, check the box **Configure Additional Settings that are not in the default settings group**, and the click **Next**.
 
-    ![device update using sccm](images/windowsembedded-update6.png)
+    ![device update using Configuration Manager](images/windowsembedded-update6.png)
 6.  In the **Additional Settings** page, click **Add**.
 
-    ![device update using sccm](images/windowsembedded-update7.png)
+    ![device update using Configuration Manager](images/windowsembedded-update7.png)
 7.  In the **Browse Settings** page, click **Create Setting**.
 
     ![device update](images/windowsembedded-update8.png)

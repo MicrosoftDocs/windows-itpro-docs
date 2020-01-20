@@ -359,7 +359,7 @@ The **Info** button can be found on work or school connections involving MDM. Th
 
 Clicking the **Info** button will open a new page in the Settings app that provides details about your MDM connection. You’ll be able to view your organization’s support information (if configured) on this page. You’ll also be able to start a sync session which will force your device to communicate to the MDM server and fetch any updates to policies if needed.
 
-Starting in Windows 10, version 1709, clicking the **Info** button will show a list of policies and line-of-business apps installed by your organization. Here is an example screehshot.
+Starting in Windows 10, version 1709, clicking the **Info** button will show a list of policies and line-of-business apps installed by your organization. Here is an example screenshot.
 
 ![work or school info](images/unifiedenrollment-rs1-35-b.png)
 
