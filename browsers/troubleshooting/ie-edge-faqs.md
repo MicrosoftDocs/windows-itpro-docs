@@ -8,6 +8,9 @@ ms.topic: troubleshooting
 ms.author: ramakoni
 ms.custom: CI=111020
 ms.reviewer: ramakoni
+audience: ITPro
+ms.localizationpriority: Normal
+ms.date: 01/20/2020
 ---
 # Internet Explorer and Microsoft Edge frequently asked questions (FAQ) for IT Pros
 

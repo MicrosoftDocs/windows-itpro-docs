@@ -8,6 +8,9 @@ ms.topic: troubleshooting
 ms.author: ramakoni
 ms.custom: CI=111020
 ms.reviewer: ramakoni, DEV_Triage
+audience: ITPro
+ms.localizationpriority: Normal
+ms.date: 01/20/2020
 ---
 # How to clear Internet Explorer cache by using the command line
 
