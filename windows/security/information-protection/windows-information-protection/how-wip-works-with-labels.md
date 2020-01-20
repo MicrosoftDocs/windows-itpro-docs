@@ -47,7 +47,7 @@ Microsoft information protection technologies include:
 ## How WIP protects sensitivity labels with endpoint data loss prevention
 
 You can create and manage [sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/labels) in the Microsoft 365 compliance center. 
-When you create a sensitivity label, you can specify that endpoint data loss prevention applies to content with that label. 
+When you [create a sensitivity label](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels), you can specify that endpoint data loss prevention applies to content with that label. 
 
 ![Endpoint data loss prevention](images/sensitivity-label-endpoint-dlp.png)
 
