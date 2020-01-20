@@ -23,8 +23,8 @@ ms.topic: article
 -   Windows 10 versions 1507, 1511
 
 >[!IMPORTANT]
->For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems). 
->Configuration Manager 2012 and 2012 R2 provide support for Windows 10 versions 1507 and 1511 only. Later versions of Windows 10 require an updated Configuration Manager release. For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10).
+>For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems). 
+>Configuration Manager 2012 and 2012 R2 provide support for Windows 10 versions 1507 and 1511 only. Later versions of Windows 10 require an updated Configuration Manager release. For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
 
 This topic walks you through the steps to finalize the configuration of your Windows 10 operating deployment, which includes enablement of the optional Microsoft Deployment Toolkit (MDT) monitoring for Microsoft Endpoint Configuration Manager, logs folder creation, rules configuration, content distribution, and deployment of the previously created task sequence.
 
