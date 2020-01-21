@@ -37,23 +37,23 @@ Method |Return Type |Description
 ## Properties
 Property |	Type	|	Description
 :---|:---|:---
-id | String | 
-productName | String | 
-recommendationName | String | 
-Weaknesses | Long | 
-Vendor | String | 
-recommendedVersion | String | 
-recommendationCategory | String | 
-subCategory | String | 
-severityScore | Double | 
-publicExploit | Boolean | 
-activeAlert | Boolean | 
-associatedThreats | String collection | 
-remediationType | String | 
+id | String | Recommendation ID
+productName | String | Related software name  
+recommendationName | String | Recommendation name
+Weaknesses | Long | Number of discovered vulnerabilities
+Vendor | String | Related vendor name
+recommendedVersion | String | Recommended version
+recommendationCategory | String | Recommendation category. Possible values are: “Accounts”, “Application”, “Network”, “OS”, “SecurityStack
+subCategory | String | Recommendation sub-category
+severityScore | Double | Number of secure score points given
+publicExploit | Boolean | Public exploit is available 
+activeAlert | Boolean | Active alert is associated with this recommendation
+associatedThreats | String collection | Threat analytics report is associated with this recommendation
+remediationType | String | Remedation Type. Possible values are: “ConfigurationChange”,“Update”,“Upgrade”,”Uninstall”
 Status | Enum | Recommendation exception status. Possible values are: “Active” and “Exception”
-configScoreImpact | Double | 
-exposureImpacte | Double| 
-totalMachineCount | Long | 
+configScoreImpact | Double | Secure score impact
+exposureImpacte | Double | Exposure score impact
+totalMachineCount | Long | Number of installed machines
 exposedMachinesCount | Long | 
 nonProductivityImpactedAssets | Long | 
 relatedComponent | String |  
