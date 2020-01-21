@@ -44,7 +44,7 @@ If you turn network protection off, users or apps will not be blocked from conne
 
 If you do not configure it, network blocking will be turned off by default.
 
-For more information, see [Enable network protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-network-protection).
+For more information, see [Enable network protection](enable-network-protection.md).
 
 ## Investigation impact
 When network protection is turned on, you'll see that on a machine's timeline the IP address will keep representing the proxy, while the real target address shows up.
@@ -86,4 +86,3 @@ DeviceNetworkEvents
 
 ## Related topics
 - [Applying network protection with GP - policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
-- [Protect your network](https://docs.microsoft.comwindows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
