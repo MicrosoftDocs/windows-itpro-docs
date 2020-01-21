@@ -1,6 +1,6 @@
 ---
-title: Blue screen occurs when updating the in-box Broadcom NIC driver
-description: Describes an issue that causes a blue screen error when you upgrade a Broadcom in-box driver on Windows Server 2019, version 1809.
+title: Blue screen occurs when you update the in-box Broadcom NIC driver
+description: Describes an issue that causes a blue screen error when you update a in-box Broadcom driver on Windows Server 2019, version 1809.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 1/24/2020
@@ -15,7 +15,7 @@ keywords:
 manager: kaushika
 ---
 
-# Blue screen occurs when updating the in-box Broadcom NIC driver
+# Blue screen occurs when you update the in-box Broadcom NIC driver
 
 This issue affects computers that meet the following criteria:
 
