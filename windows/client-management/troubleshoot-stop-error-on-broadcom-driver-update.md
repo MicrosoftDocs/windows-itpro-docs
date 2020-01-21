@@ -4,7 +4,7 @@ description: Describes an issue that causes a blue screen error when you update 
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 1/24/2020
-ms.prod: win10
+ms.prod: w10
 ms.topic: article
 ms.custom: 
 - CI 113175
