@@ -194,7 +194,7 @@ Disconnect all peripheral devices that are connected to the system, except for t
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 Check supplemental rollback logs for a setupmem.dmp file, or event logs for any unexpected reboots or errors.
 <br>Review the rollback log and determine the stop code.
-<br>The rollback log is located in the <strong>C:$Windows.~BT\Sources\Panther</strong> folder.  An example analysis is shown below. This example is not representative of all cases:
+<br>The rollback log is located in the <strong>$Windows.~BT\Sources\Rollback</strong> folder.  An example analysis is shown below. This example is not representative of all cases:
 <pre>
 Info SP     Crash 0x0000007E detected
 Info SP       Module name           :

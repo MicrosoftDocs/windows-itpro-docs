@@ -39,7 +39,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
 | `SHA1` | string | SHA-1 of the file that the recorded action was applied to |
 | `IsSigned` | boolean | Indicates whether the file is signed |
-| `SignatureType` | string | Indicates whether signature information was read as embedded | content in the file itself or read from an external catalog file |
+| `SignatureType` | string | Indicates whether signature information was read as embedded content in the file itself or read from an external catalog file |
 | `Signer` | string | Information about the signer of the file |
 | `SignerHash` | string | Unique hash value identifying the signer |
 | `Issuer` | string | Information about the issuing certificate authority (CA) |
