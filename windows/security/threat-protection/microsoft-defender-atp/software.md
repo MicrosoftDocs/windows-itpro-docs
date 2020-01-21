@@ -37,11 +37,11 @@ Method |Return Type |Description
 Property |	Type	|	Description
 :---|:---|:---
 id | String | Software ID
-Name | String | 
-Vendor | String | 
-Weaknesses | Long | 
-publicExploit | Boolean | 
-activeAlert | Boolean | 
-exposedMachines | Long | 
-impactScore | Double | 
+Name | String | Software name 
+Vendor | String | Software vendor name 
+Weaknesses | Long | Number of discovered vulnerabilities 
+publicExploit | Boolean | Public exploit is available for some of the vulnerabilities
+activeAlert | Boolean | Active alert is associated with this software
+exposedMachines | Long | Number of exposed machines
+impactScore | Double | Exposure score impact of this software 
 
