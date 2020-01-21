@@ -51,3 +51,5 @@ These articles will walk you through the resources you need to troubleshoot Wind
 - [Advanced troubleshooting for Stop error or blue screen error](https://docs.microsoft.com/windows/client-management/troubleshoot-stop-errors)
 
 - [Advanced troubleshooting for Windows-based computer freeze issues](https://docs.microsoft.com/windows/client-management/troubleshoot-windows-freeze)
+
+- [Blue screen occurs when you update the in-box Broadcom NIC driver](troubleshoot-stop-error-on-broadcom-driver-update.md)
