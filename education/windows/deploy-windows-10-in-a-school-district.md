@@ -1525,7 +1525,7 @@ For more information about how to configure Configuration Manager to deploy and 
 
 ### Manage updates by using Intune
 
-If you selected to manage updates by using Configuration Manager and Intune in a hybrid configuration, then skip this section and continue to the [Manage updates by using Configuration Manager](#manage-updates-by-using-system-center-configuration-manager) section.
+If you selected to manage updates by using Configuration Manager and Intune in a hybrid configuration, then skip this section and continue to the [Manage updates by using Microsoft Endpoint Configuration Manager](#manage-updates-by-using-microsoft-endpoint-configuration-manager) section.
 
 To help ensure that your users have the most current features and security protection, keep Windows 10 and your apps current with updates. To configure Windows 10 and app updates, use the **Updates** workspace in Intune.
 
@@ -1692,7 +1692,7 @@ For more information about completing this task, see the “How do I find and re
 For more information, see:
 <ul>
 <li><a href="#manage-updates-by-using-intune" data-raw-source="[Manage updates by using Intune](#manage-updates-by-using-intune)">Manage updates by using Intune</a></li>
-<li><a href="#manage-updates-by-using-system-center-configuration-manager" data-raw-source="[Manage updates by using Microsoft Endpoint Configuration Manager](#manage-updates-by-using-system-center-configuration-manager)">Manage updates by using Microsoft Endpoint Configuration Manager</a></li>
+<li><a href="#manage-updates-by-using-microsoft-endpoint-configuration-manager" data-raw-source="[Manage updates by using Microsoft Endpoint Configuration Manager](#manage-updates-by-using-microsoft-endpoint-configuration-manager)">Manage updates by using Microsoft Endpoint Configuration Manager</a></li>
 </ul>
 </td>
 <td>x</td>
