@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 12/27/2019
+ms.date: 1/21/2020
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
