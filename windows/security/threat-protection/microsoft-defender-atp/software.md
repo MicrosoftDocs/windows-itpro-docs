@@ -40,7 +40,7 @@ id | String | Software ID
 Name | String | Software name 
 Vendor | String | Software vendor name 
 Weaknesses | Long | Number of discovered vulnerabilities 
-publicExploit | Boolean | Public exploit is available for some of the vulnerabilities
+publicExploit | Boolean | Public exploit exists for some of the vulnerabilities
 activeAlert | Boolean | Active alert is associated with this software
 exposedMachines | Long | Number of exposed machines
 impactScore | Double | Exposure score impact of this software 
