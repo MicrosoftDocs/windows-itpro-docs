@@ -68,7 +68,7 @@ You will typically see many Failure events with **Failure Code** “**0x20**”,
 <Data Name="IpPort">49272</Data>
 <Data Name="Status">0x0</Data>
 <Data Name="LogonGuid">{F85C455E-C66E-205C-6B39-F6C60A7FE453}</Data>
-<Data Name="TransittedServices">-</Data>
+<Data Name="TransitedServices">-</Data>
 </EventData>
 </Event>
 ```
@@ -291,4 +291,3 @@ For 4769(S, F): A Kerberos service ticket was requested.
 -   Starting with Windows Vista and Windows Server 2008, monitor for a **Ticket Encryption Type** other than **0x11 and 0x12**. These are the expected values, starting with these operating systems, and represent AES-family algorithms.
 
 -   If you have a list of important **Failure Codes**, monitor for these codes.
-
