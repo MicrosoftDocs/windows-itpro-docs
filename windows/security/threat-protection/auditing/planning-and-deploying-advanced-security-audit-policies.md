@@ -105,7 +105,8 @@ An organization's domain and OU structure provide a fundamental starting point f
 
 In addition to your domain model, you should also find out whether your organization creates and maintains a systematic threat model. A good threat model can help you identify threats to key components in your infrastructure, so you can define and apply audit settings that enhance the organization's ability to identify and counter those threats.
 
->**Important:**  Including auditing within your organization's security plan also makes it possible to budget your resources on the areas where auditing can achieve the most positive results.
+> [!IMPORTANT]
+> Including auditing within your organization's security plan also makes it possible to budget your resources on the areas where auditing can achieve the most positive results.
  
 For additional details about how to complete each of these steps and how to prepare a detailed threat model, download the [IT Infrastructure Threat Modeling Guide](https://go.microsoft.com/fwlink/p/?LinkId=163432).
 
@@ -152,15 +153,20 @@ Security and auditing requirements and audit event volume can vary considerably 
 -   If the computers are servers, desktop computers, or portable computers.
 -   The important applications the computers run, such as Exchange Server, SQL Server, or Forefront Identity Manager.
 
-    >**Note:**  If the server applications (including Exchange Server and SQL Server) have audit settings. For more information about auditing in Exchange Server, see the [Exchange 2010 Security Guide](https://go.microsoft.com/fwlink/p/?linkid=128052). For more information about auditing in SQL Server 2008, see [Auditing (Database Engine)](https://go.microsoft.com/fwlink/p/?LinkId=163434). For SQL Server 2012, see [SQL Server Audit (Database Engine)](https://technet.microsoft.com/library/cc280386.aspx).
+    > [!NOTE]
+    > For more information about auditing:
+    > - In Exchange Server, see the [Exchange 2010 Security Guide](https://go.microsoft.com/fwlink/p/?linkid=128052).
+    > - In SQL Server 2008, see [Auditing (Database Engine)](https://go.microsoft.com/fwlink/p/?LinkId=163434).   
+    > - In SQL Server 2012, see [SQL Server Audit (Database Engine)](https://technet.microsoft.com/library/cc280386.aspx).
      
 -   The operating system versions.
 
-    >**Note:**  The operating system version determines which auditing options are available and the volume of audit event data.
+    > [!NOTE]
+    > The operating system version determines which auditing options are available and the volume of audit event data.
      
 -   The business value of the data.
 
-For example, a web server that is accessed by external users requires different audit settings than a root certification authority (CA) that is never exposed to the public Internet or even to regular users on the organization's network.
+For example, a web server that's accessed by external users requires different audit settings than a root certification authority (CA) that's never exposed to the public Internet or even to regular users on the organization's network.
 
 The following table illustrates an analysis of computers in an organization.
 
@@ -173,9 +179,9 @@ The following table illustrates an analysis of computers in an organization.
  
 ### Regulatory requirements
 
-Many industries and locales have strict and specific requirements for network operations and how resources are protected. In the health care and financial industries, for example, there are strict guidelines for who has access to records and how they are used. Many countries have strict privacy rules. To identify regulatory requirements, work with your organization's legal department and other departments responsible for these requirements. Then consider the security configuration and auditing options that can be used to comply with and verify compliance with these regulations.
+Many industries and locales have strict and specific requirements for network operations and how resources are protected. In the health care and financial industries, for example, strict guidelines control who has access to records and how they are used. Many countries have strict privacy rules. To identify regulatory requirements, work with your organization's legal department and other departments responsible for these requirements. Then consider the security configuration and auditing options that you can use to comply with and verify compliance with these regulations.
 
-For more info, see the [System Center Process Pack for IT GRC](https://technet.microsoft.com/library/dd206732.aspx).
+For more information, see the [System Center Process Pack for IT GRC](https://technet.microsoft.com/library/dd206732.aspx).
 
 ## <a href="" id="bkmk-2"></a>Mapping the security audit policy to groups of users, computers, and resources in your organization
 
