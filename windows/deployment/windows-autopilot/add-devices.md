@@ -123,13 +123,13 @@ A summary of each platform's capabilities is provided below.<br>
 <tr>
 <td><a href="https://docs.microsoft.com/partner-center/autopilot">Partner Center</a></td>
 <td>YES - 1000 at a time max</td>
-<td>YES<b><sup>3</sup></b></td>
+<td>YES<b><sup>34</sup></b></td>
 <td>Tuple or PKID or 4K HH</td>
 </tr>
 
 <tr>
 <td><a href="https://docs.microsoft.com/intune/enrollment-autopilot">Intune</a></td>
-<td>YES - 1000 at a time max<b><sup>1</sup></b></td>
+<td>YES - 500 at a time max<b><sup>1</sup></b></td>
 <td>YES<b><sup>12</sup></b></td>
 <td>4K HH</td>
 </tr>
@@ -137,7 +137,7 @@ A summary of each platform's capabilities is provided below.<br>
 <tr>
 <td><a href="https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles">Microsoft Store for Business</a><b><sup>4</sup></b></td>
 <td>YES - 1000 at a time max</td>
-<td>YES</td>
+<td>YES<b><sup>4</sup></b></td>
 <td>4K HH</td>
 </tr>
 
