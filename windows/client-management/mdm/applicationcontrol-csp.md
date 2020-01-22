@@ -147,7 +147,7 @@ To deploy base policy and supplemental policies:
 
 The following example shows the deployment of two base policies and a supplemental policy (which already specifies the base policy it supplements and does not need that reflected in the ADD).
 
-#### Example 1: Add first base policy**
+#### Example 1: Add first base policy
 
 ```xml
 <Add>
@@ -164,7 +164,7 @@ The following example shows the deployment of two base policies and a supplement
 </Add>
 ```
 
-#### Example 2: Add second base policy**
+#### Example 2: Add second base policy
 
 ```xml
 <Add>
@@ -181,7 +181,7 @@ The following example shows the deployment of two base policies and a supplement
 </Add>
 ```
 
-#### Example 3: Add supplemental policy**
+#### Example 3: Add supplemental policy
 
 ```xml
 <Add>
