@@ -42,7 +42,9 @@ To sign a WDAC policy with SignTool.exe, you need the following components:
 -   The binary format of the WDAC policy that you generated in the [Create a Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md) section or another WDAC policy that you have created
 
 -   An internal CA code signing certificate or a purchased code signing certificate
-
+      > [!NOTE]
+      > WDAC currently supports a maximum number of 4096 bits in a CA certificate key. Exceeding this limit will cause 3089 events to indicate signature errors.
+   
 If you do not have a code signing certificate, see the [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md) section for instructions on how to create one. If you use an alternate certificate or WDAC policy, be sure to update the following steps with the appropriate variables and certificate so that the commands will function properly. To sign the existing WDAC policy, copy each of the following commands into an elevated Windows PowerShell session:
 
 1. Initialize the variables that will be used:
