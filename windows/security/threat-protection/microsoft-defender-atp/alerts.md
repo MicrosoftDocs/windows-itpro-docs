@@ -1,6 +1,6 @@
 ---
 title: Get alerts API
-description: Retrieves top recent alerts.
+description: Retrieve recent Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) alerts.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -27,6 +27,7 @@ Method |Return Type |Description
 :---|:---|:---
 [Get alert](get-alert-info-by-id.md) | [Alert](alerts.md) | Get a single [alert](alerts.md) object.
 [List alerts](get-alerts.md) | [Alert](alerts.md) collection | List [alert](alerts.md) collection.
+[Update alert](get-alerts.md) | [Alert](update-alert.md) | Update specific [alert](alerts.md).
 [Create alert](create-alert-by-reference.md)|[Alert](alerts.md)|Create an alert based on event data obtained from [Advanced Hunting](run-advanced-query-api.md).
 [List related domains](get-alert-related-domain-info.md)|Domain collection| List URLs associated with the alert.
 [List related files](get-alert-related-files-info.md) | [File](files.md) collection |  List the [file](files.md) entities that are associated with the [alert](alerts.md).
@@ -59,18 +60,7 @@ detectionSource | String | Detection source.
 threatFamilyName | String | Threat family.
 machineId | String | ID of a [machine](machine.md) entity that is associated with the alert.
 comments | List of Alert comments | Alert Comment is an object that contains: comment string, createdBy string and createTime date time.
-alertFiles | List of Alert Files | **This list will be populated on $expand option, see example below** Alert File is an object that contains: sha1, sha256, filePath and fileName. 
-alertIPs | List of Alert IPs | **This list will be populated on $expand option, see example below** Alert IP is an object that contains: ipAddress string field. 
-alertDomains | List of Alert Domains | **This list will be populated on $expand option, see example below** Alert Domain is an object that contains: host string field. 
 
-
-
-## JSON representation:
-
-- When querying for alert list the regular way (without expand option, e.g. /api/alerts) the expandable properties will not get populated (empty lists)
-- To expand expandable properties use $expand option (e.g. to expand all send /api/alerts?$expand=files,ips,domains).
-- When querying single alert all expandable properties will be expanded. 
-- Check out [OData queries with Microsoft Defender ATP](exposed-apis-odata-samples.md) for more OData examples. 
 
 ### Response example for getting single alert:
 
@@ -83,12 +73,12 @@ GET https://api.securitycenter.windows.com/api/alerts/da637084217856368682_-2929
     "id": "da637084217856368682_-292920499",
     "incidentId": 66860,
     "investigationId": 4416234,
+	"investigationState": "Running",
     "assignedTo": "secop@contoso.com",
     "severity": "Low",
     "status": "New",
     "classification": "TruePositive",
     "determination": null,
-    "investigationState": "Running",
     "detectionSource": "WindowsDefenderAtp",
     "category": "CommandAndControl",
     "threatFamilyName": null,
@@ -105,24 +95,6 @@ GET https://api.securitycenter.windows.com/api/alerts/da637084217856368682_-2929
             "comment": "test comment for docs",
             "createdBy": "secop@contoso.com",
             "createdTime": "2019-11-05T14:08:37.8404534Z"
-        }
-    ],
-    "alertFiles": [
-        {
-            "sha1": "77e862797dd525fd3e9c3058153247945d0d4cfd",
-            "sha256": "c05823562aee5e6d000b0e041197d5b8303f5aa4eecb49820879b705c926e16e",
-            "filePath": "C:\\Users\\test1212\\AppData\\Local\\Temp\\nsf61D3.tmp.exe",
-            "fileName": "nsf61D3.tmp.exe"
-        }
-    ],
-    "alertDomains": [
-        {
-            "host": "login.bullguard.com"
-        }
-    ],
-    "alertIps": [
-        {
-            "ipAddress": "91.231.212.53"
         }
     ]
 }

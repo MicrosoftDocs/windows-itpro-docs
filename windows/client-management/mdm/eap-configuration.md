@@ -1,6 +1,6 @@
 ---
 title: EAP configuration
-description: The topic provides a step-by-step guide for creating an Extensible Authentication Protocol (EAP) configuration XML for the VPN profile and information about EAP certificate filtering in Windows 10.
+description: Learn how to create an Extensible Authentication Protocol (EAP) configuration XML for a VPN profile, plus info about EAP certificate filtering in Windows 10.
 ms.assetid: DD3F2292-4B4C-4430-A57F-922FED2A8FAE
 ms.reviewer: 
 manager: dansimp

@@ -31,7 +31,11 @@ For more information preview features, see [Preview features](https://docs.micro
 
 - [Microsoft Defender ATP for Mac](microsoft-defender-atp-mac.md) <BR> Microsoft Defender ATP for Mac brings the next-generation protection to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices, including [endpoint detection and response](endpoint-detection-response-mac-preview.md).
  
-- [Threat & Vulnerability Management application end-of-life tag](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) <BR>Applications which have reached their end-of-life are tagged or labeled as such so you are aware that they will no longer be supported, and can take action to either uninstall or replace. Doing so will help lessen the risks related to various vulnerability exposures due to unpatched applications.
+- [Threat & Vulnerability Management application and application version end-of-life information](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) <BR>Applications and application versions which have reached their end-of-life are tagged or labeled as such so you are aware that they will no longer be supported, and can take action to either uninstall or replace. Doing so will help lessen the risks related to various vulnerability exposures due to unpatched applications.
+
+- [Threat & Vulnerability Management Advanced Hunting Schemas](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference) <BR>Use the Threat & Vulnerability Management tables in the Advanced hunting schema to query about software inventory, vulnerability knowledgebase, security configuration assessment, and security configuration knowledgebase. 
+ 
+ - [Threat & Vulnerability Management role-based access controls](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Use the new permissions to allow maximum flexibility to create SecOps-oriented roles, Threat & Vulnerability Management-oriented roles, or hybrid roles so only authorized users are accessing specific data to do their task. You can also achieve even further granularity by specifying whether a Threat & Vulnerability Management role can only view vulnerability-related data, or can create and manage remediation and exceptions.
 
 ## October 2019
 
@@ -94,7 +98,7 @@ For more information preview features, see [Preview features](https://docs.micro
 
 - [Controlled folder access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR> Controlled folder access is now supported on Windows Server 2019.
 
-- [Custom detection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<BR>With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of Advanced hunting through the creation of custom detection rules. 
+- [Custom detection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<BR>With custom detections, you can create custom queries to monitor events for any kind of behavior such as suspicious or emerging threats. This can be done by leveraging the power of advanced hunting through the creation of custom detection rules. 
 
 - [Integration with Azure Security Center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<BR> Microsoft Defender ATP integrates with Azure Security Center to provide a comprehensive server protection solution. With this integration Azure Security Center can leverage the power of Microsoft Defender ATP to provide improved threat detection for Windows Servers.
 
@@ -120,7 +124,7 @@ Threat Analytics is a set of interactive reports published by the Microsoft Defe
   
 ## March 2018
 - [Advanced Hunting](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) <BR>
-Query data using Advanced hunting in Microsoft Defender ATP.
+Query data using advanced hunting in Microsoft Defender ATP.
 
 - [Attack surface reduction rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
     New attack surface reduction rules: 

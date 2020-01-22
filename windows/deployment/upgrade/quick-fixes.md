@@ -3,13 +3,14 @@ title: Quick fixes - Windows IT Pro
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Resolve Windows 10 upgrade errors for ITPros. Technical information for IT professionals to help diagnose Windows setup errors.
+description: Learn how to quickly resolve many problems which may come up during a Windows 10 upgrade.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -27,7 +28,8 @@ The following list of fixes can resolve many Windows upgrade problems. You shoul
 
 The Microsoft Virtual Agent provided by [Microsoft Support](https://support.microsoft.com/contactus/) can help you to analyze and correct some Windows upgrade errors. **To talk to a person about your issue**, start the Virtual Agent (click **Get started**) and enter "Talk to a person" two times. 
 
->You might also wish to try a new tool available from Microsoft that helps to diagnose many Windows upgrade errors. For more information and to download this tool, see [SetupDiag](setupdiag.md). The topic is more advanced (300 level) because several advanced options are available for using the tool. However, you can now just download and then double-click the tool to run it. By default when you click Save, the tool is saved in your **Downloads** folder. Double-click the tool in the folder and wait until it finishes running (it might take a few minutes), then double-click the **SetupDiagResults.log** file and open it using Notepad to see the results of the analysis.
+> [!TIP]
+> You might also wish to try a new tool available from Microsoft that helps to diagnose many Windows upgrade errors. For more information and to download this tool, see [SetupDiag](setupdiag.md). The topic is more advanced (300 level) because several advanced options are available for using the tool. However, you can now just download and then double-click the tool to run it. By default when you click Save, the tool is saved in your **Downloads** folder. Double-click the tool in the folder and wait until it finishes running (it might take a few minutes), then double-click the **SetupDiagResults.log** file and open it using Notepad to see the results of the analysis.
 
 ## List of fixes
 
@@ -149,7 +151,8 @@ To check and repair system files:
     The operation completed successfully.
 
     ```
-    >It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/repair-a-windows-image). 
+    > [!NOTE] 
+    > It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/repair-a-windows-image). 
 
 
 ### Update Windows
@@ -220,11 +223,12 @@ When you run Disk Cleanup and enable the option to Clean up system files, you ca
 
 ### Open an elevated command prompt
 
->It is no longer necessary to open an elevated command prompt to run the [SetupDiag](setupdiag.md) tool. However, this is still the optimal way to run the tool.
+> [!TIP]
+> It is no longer necessary to open an elevated command prompt to run the [SetupDiag](setupdiag.md) tool. However, this is still the optimal way to run the tool.
 
 To launch an elevated command prompt, press the Windows key on your keyboard, type **cmd**, press Ctrl+Shift+Enter, and then Alt+C to confirm the elevation prompt. Screenshots and other steps to open an administrator (aka elevated) command prompt are [here](https://answers.microsoft.com/en-us/windows/forum/windows_7-security/command-prompt-admin-windows-7/6a188166-5e23-461f-b468-f325688ec8c7). 
 
-Note: When you open an elevated command prompt, you will usually start in the **C:\WINDOWS\system32** directory. To run a program that you recently downloaded, you must change to the directory where the program is located. Alternatively, you can move or copy the program to a location on the computer that is automatically searched. These directories are listed in the [PATH variable](https://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings-winpc/adding-path-variable/97300613-20cb-4d85-8d0e-cc9d3549ba23).
+Note: When you open an elevated command prompt, you will usually start in the **C:\WINDOWS\system32** directory. To run a program that you recently downloaded, you must change to the directory where the program is located. Alternatively, you can move or copy the program to a location on the computer that is automatically searched. These directories are listed in the [PATH variable](https://answers.microsoft.com/windows/forum/windows_10-other_settings-winpc/adding-path-variable/97300613-20cb-4d85-8d0e-cc9d3549ba23).
 
 If this is too complicated for you, then use File Explorer to create a new folder under C: with a short name such as "new" then copy or move the programs you want to run (like SetupDiag) to this folder using File Explorer. When you open an elevated command prompt, change to this directory by typing "cd c:\new" and now you can run the programs in that folder.
 

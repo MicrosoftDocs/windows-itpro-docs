@@ -1,6 +1,6 @@
 ---
 title: Use automated investigations to investigate and remediate threats
-description: View the list of automated investigations, its status, detection source and other details.
+description: Understand the automated investigation flow in Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP).
 keywords: automated, investigation, detection, source, threat types, id, tags, machines, duration, filter export
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,8 @@ Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) offers a 
 
 The automated investigation feature leverages various inspection algorithms, and processes used by analysts (such as playbooks) to examine alerts and take immediate remediation action to resolve breaches. This significantly reduces alert volume, allowing security operations experts to focus on more sophisticated threats and other high value initiatives. The **Automated investigations** list shows all the investigations that were initiated automatically, and includes details, such as status, detection source, and when the investigation was initiated.
 
->Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
+> [!TIP]
+> Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-automated-investigations-abovefoldlink)
 
 
 ## Understand the automated investigation flow
@@ -34,6 +35,7 @@ When an alert is triggered, a security playbook goes into effect. Depending on t
 
 >[!NOTE]
 >Currently, automated investigation only supports the following OS versions:
+>- Windows Server 2019
 >- Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) or later
 >- Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) or later
 >- Later versions of Windows 10
@@ -68,7 +70,7 @@ You can configure the following levels of automation:
 
 |Automation level | Description|
 |---|---|
-|Not protected | Machines do not get any automated investigations run on them. |
+|No automated response | Machines do not get any automated investigations run on them. |
 |Semi - require approval for any remediation | This is the default automation level.<br><br>  An approval is needed for any remediation action. |
 |Semi - require approval for non-temp folders remediation | An approval is required on files or executables that are not in temporary folders. <br><br> Files or executables in temporary folders, such as the user's download folder or the user's temp folder, will automatically be remediated if needed.|
 |Semi - require approval for core folders remediation | An approval is required on files or executables that are in the operating system directories such as Windows folder and Program files folder. <br><br> Files or executables in all other folders will  automatically be remediated if needed.|

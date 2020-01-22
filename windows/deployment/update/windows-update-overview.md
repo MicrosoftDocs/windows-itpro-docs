@@ -1,6 +1,6 @@
 ---
 title: Get started with Windows Update 
-description: Learn how Windows Update works, including architecture and troubleshooting
+description: An overview of learning resources for Windows Update, including documents on architecture, log files, and common errors.
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro

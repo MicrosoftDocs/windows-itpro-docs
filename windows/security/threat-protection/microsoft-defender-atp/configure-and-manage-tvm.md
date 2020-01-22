@@ -1,7 +1,7 @@
 ---
 title: Configure Threat & Vulnerability Management in Microsoft Defender ATP
 ms.reviewer: 
-description: Configure your Threat & Vulnerability Management to allow security administrators and IT administrators to collaborate seamlessly to remediate issues via Microsoft intune and Microsoft System Center Configuration Manager (SCCM) integrations.
+description: Configuring TVM's integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM) helps security and IT admins collaborate seamlessly
 keywords: RBAC, Threat & Vulnerability Management configuration, Threat & Vulnerability Management integrations, Microsft Intune integration with TVM, SCCM integration with TVM  
 search.product: Windows 10
 search.appverid: met150

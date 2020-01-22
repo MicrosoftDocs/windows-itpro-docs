@@ -1,6 +1,6 @@
 ---
 title: Using Certificates for AADJ On-premises Single-sign On single sign-on
-description: Azure Active Directory joined devices in a hybrid Deployment for on-premises single sign-on
+description: If you want to use certificates for on-premises single-sign on for Azure Active Directory joined devices, then follow these additional steps.
 keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO, 
 ms.prod: w10
 ms.mktglfcycl: deploy
