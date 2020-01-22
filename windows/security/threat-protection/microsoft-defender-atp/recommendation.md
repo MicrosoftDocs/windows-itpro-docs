@@ -54,6 +54,6 @@ Status | Enum | Recommendation exception status. Possible values are: â€œActiveâ
 configScoreImpact | Double | Secure score impact
 exposureImpacte | Double | Exposure score impact
 totalMachineCount | Long | Number of installed machines
-exposedMachinesCount | Long | 
-nonProductivityImpactedAssets | Long | 
-relatedComponent | String |  
+exposedMachinesCount | Long | Number of installed machines that are exposed to vulnerabilities
+nonProductivityImpactedAssets | Long | Number of machines which are not affected  
+relatedComponent | String |  Related software component
