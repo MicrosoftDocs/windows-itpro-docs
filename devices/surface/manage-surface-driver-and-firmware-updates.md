@@ -39,18 +39,18 @@ For detailed steps, see the following resources:
 
 - [How to manage Surface driver updates in Configuration Manager.](https://support.microsoft.com/en-sg/help/4098906/manage-surface-driver-updates-in-configuration-manager)
 - [Deploy applications with Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications).
-- [Endpoint Configuration Manager documentation](https://docs.microsoft.com/en-us/configmgr/)
+- [Endpoint Configuration Manager documentation](https://docs.microsoft.com/configmgr/)
 
 
 ### Manage updates with Microsoft Deployment Toolkit
 
-Included in Endpoint Configuration Manager, the Microsoft Deployment Toolkit (MDT) contains optional deployment tools that you may wish to use depending on your environment. MDT includes the Windows Assessment and Deployment Kit (Windows ADK), Windows System Image Manager (Windows SIM), Deployment Image Servicing and Management (DISM), and User State Migration Tool (USMT). You can download the latest version of MDT from the [Microsoft Deployment Toolkit download page](https://www.microsoft.com/en-us/download/details.aspx?id=54259).
+Included in Endpoint Configuration Manager, the Microsoft Deployment Toolkit (MDT) contains optional deployment tools that you may wish to use depending on your environment. MDT includes the Windows Assessment and Deployment Kit (Windows ADK), Windows System Image Manager (Windows SIM), Deployment Image Servicing and Management (DISM), and User State Migration Tool (USMT). You can download the latest version of MDT from the [Microsoft Deployment Toolkit download page](https://www.microsoft.com/download/details.aspx?id=54259).
  
 For detailed steps, see the following resources:
 
-- [Microsoft Deployment Toolkit documentation](https://docs.microsoft.com/en-us/configmgr/mdt/)
-- [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit)
-- [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](https://docs.microsoft.com/en-us/surface/deploy-windows-10-to-surface-devices-with-mdt)  
+- [Microsoft Deployment Toolkit documentation](https://docs.microsoft.com/configmgr/mdt/)
+- [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit)
+- [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](https://docs.microsoft.com/surface/deploy-windows-10-to-surface-devices-with-mdt)  
 
 **WindowsPE and Surface firmware and drivers**
 
@@ -64,12 +64,12 @@ Downloadable MSI files are available for Surface devices from Surface Pro 2 and 
 With Device Firmware Configuration Interface (DFCI) profiles built into Intune (now available in [public preview](https://docs.microsoft.com/intune/configuration/device-firmware-configuration-interface-windows)), Surface UEFI management extends the modern management stack down to the UEFI hardware level. DFCI supports zero-touch provisioning, eliminates BIOS passwords, provides control of security settings including boot options and built-in peripherals, and lays the groundwork for advanced security scenarios in the future. For more information, see:
  
 
-- [Intune management of Surface UEFI settings](https://docs.microsoft.com/en-us/surface/surface-manage-dfci-guide)
+- [Intune management of Surface UEFI settings](https://docs.microsoft.com/surface/surface-manage-dfci-guide)
 - [Ignite 2019: Announcing remote management of Surface UEFI settings from Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333).
 
 ## Best practices for update deployment processes
 
-To maintain a stable environment and keep users productive, it’s strongly recommended to maintain parity with the most recent version of Windows 10.  For best practice recommendations, see [Build deployment rings for Windows 10 updates](https://docs.microsoft.com/en-us/windows/deployment/update/waas-deployment-rings-windows-10-updates).
+To maintain a stable environment and keep users productive, it’s strongly recommended to maintain parity with the most recent version of Windows 10.  For best practice recommendations, see [Build deployment rings for Windows 10 updates](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates).
 
 ## Downloadable Surface update packages
 
@@ -87,7 +87,7 @@ Specific versions of Windows 10 have separate .msi files, each containing all re
 
 
 ### Downloading .msi files
-1. Browse to [Download drivers and firmware for Surface](https://support.microsoft.com/en-us/help/4023482/surface-download-drivers-and-firmware) on the Microsoft Download Center.
+1. Browse to [Download drivers and firmware for Surface](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware) on the Microsoft Download Center.
 2. Select the .msi file name that matches the Surface model and version of Windows. The .msi file name includes the minimum supported Windows build number required to install the drivers and firmware. For example, as shown in the following figure, to update a Surface Book 2 with build 18362 of Windows 10, choose **SurfaceBook2_Win10_18362_19.101.13994.msi.** For a Surface Book 2 with build 16299 of Windows 10, choose **SurfaceBook2_Win10_16299_1803509_3. msi**.
 
  ![Figure 1. Downloading Surface updates](images/fig1-downloads-msi.png)
@@ -137,14 +137,14 @@ This file name provides the following information:
 
 ## Learn more
 
-- [Download drivers and firmware for Surface](https://support.microsoft.com/en-us/help/4023482/surface-download-drivers-and-firmware)
+- [Download drivers and firmware for Surface](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware)
 - [How to manage Surface driver updates in Configuration Manager.](https://support.microsoft.com/en-sg/help/4098906/manage-surface-driver-updates-in-configuration-manager)
 - [Deploy applications with Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications).
-- [Endpoint Configuration Manager documentation](https://docs.microsoft.com/en-us/configmgr/)
-- [Microsoft Deployment Toolkit documentation](https://docs.microsoft.com/en-us/configmgr/mdt/)
-- [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit)
-- [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](https://docs.microsoft.com/en-us/surface/deploy-windows-10-to-surface-devices-with-mdt)  
-- [Intune management of Surface UEFI settings](https://docs.microsoft.com/en-us/surface/surface-manage-dfci-guide)
+- [Endpoint Configuration Manager documentation](https://docs.microsoft.com/configmgr/)
+- [Microsoft Deployment Toolkit documentation](https://docs.microsoft.com/configmgr/mdt/)
+- [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit)
+- [Deploy Windows 10 to Surface devices with Microsoft Deployment Toolkit](https://docs.microsoft.com/surface/deploy-windows-10-to-surface-devices-with-mdt)  
+- [Intune management of Surface UEFI settings](https://docs.microsoft.com/surface/surface-manage-dfci-guide)
 - [Ignite 2019: Announcing remote management of Surface UEFI settings from Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333).
-- [Build deployment rings for Windows 10 updates](https://docs.microsoft.com/en-us/windows/deployment/update/waas-deployment-rings-windows-10-updates)
+- [Build deployment rings for Windows 10 updates](https://docs.microsoft.com/windows/deployment/update/waas-deployment-rings-windows-10-updates)
 
