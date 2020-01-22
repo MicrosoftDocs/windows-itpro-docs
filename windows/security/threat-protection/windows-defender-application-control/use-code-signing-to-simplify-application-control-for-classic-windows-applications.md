@@ -40,6 +40,8 @@ To obtain signed applications or embed signatures in your in-house applications,
 - Using the Microsoft Store publishing process. All apps that come out of the Microsoft Store are automatically signed with special signatures that can roll-up to our certificate authority (CA) or to your own.
 
 - Using your own digital certificate or public key infrastructure (PKI). ISV's and enterprises can sign their own Classic Windows applications themselves, adding themselves to the trusted list of signers.
+  > [!NOTE]
+  > WDAC currently supports signing with a CA certificate key which is a maximum number of 4096 bits. Exceeding this bit limit will cause a 3089 event to be thrown, indicating signature errors.
 
 - Using a non-Microsoft signing authority. ISV's and enterprises can use a trusted non-Microsoft signing authority to sign all of their own Classic Windows applications.
 
