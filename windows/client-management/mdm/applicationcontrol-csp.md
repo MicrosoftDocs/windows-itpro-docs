@@ -1,11 +1,13 @@
 ---
 title: ApplicationControl CSP
 description: The ApplicationControl CSP allows you to manage multiple Windows Defender Application Control (WDAC) policies from a MDM server.
+keywords: whitelisting, security, malware
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: ManikaDhiman
+ms.reviewer: jsuther1974
 ms.date: 05/21/2019
 ---
 
@@ -61,7 +63,8 @@ This node specifies whether a policy is actually loaded by the enforcement engin
 
 Scope is dynamic. Supported operation is Get.
 
-Value type is bool. Supported values are as follows:  
+Value type is bool. Supported values are as follows:
+
 - True — Indicates that the policy is actually loaded by the enforcement engine and is in effect on a system.
 - False — Indicates that the policy is not loaded by the enforcement engine and is not in effect on a system. This is the default.
 
@@ -70,7 +73,8 @@ This node specifies whether a policy is deployed on the system and is present on
 
 Scope is dynamic. Supported operation is Get.
 
-Value type is bool. Supported values are as follows:  
+Value type is bool. Supported values are as follows:
+
 - True — Indicates that the policy is deployed on the system and is present on the physical machine.
 - False — Indicates that the policy is not deployed on the system and is not present on the physical machine. This is the default.
 
@@ -79,7 +83,8 @@ This node specifies whether the policy is authorized to be loaded by the enforce
 
 Scope is dynamic. Supported operation is Get.
 
-Value type is bool. Supported values are as follows:  
+Value type is bool. Supported values are as follows:
+
 - True — Indicates that the policy is authorized to be loaded by the enforcement engine on the system.
 - False — Indicates that the policy is not authorized to be loaded by the enforcement engine on the system. This is the default.
 
@@ -214,7 +219,8 @@ The following table displays the result of Get operation on different nodes:
 |./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/PolicyInfo/Status|Was the deployment successful|
 |./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/PolicyInfo/FriendlyName|Friendly name per the policy|
 
-The following is an example of Get command:  
+The following is an example of Get command:
+
 ```xml
  <Get>
     <CmdID>1</CmdID>

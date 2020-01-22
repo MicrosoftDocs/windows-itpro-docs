@@ -18,14 +18,14 @@ ms.date: 05/17/2018
 ---
 
 > [!NOTE]
-> For WDAC enhancements see [Delivering major enhancements in Windows Defender Application Control with the Windows 10 May 2019 Update](https://www.microsoft.com/security/blog/2019/07/01/). 
+> For WDAC enhancements see [Delivering major enhancements in Windows Defender Application Control with the Windows 10 May 2019 Update](https://www.microsoft.com/security/blog/2019/07/01/).
 
 # Deploy Windows Defender Application Control policies by using Microsoft Intune
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016
+- Windows 10
+- Windows Server 2016
 
 You can use Microsoft Endpoint Manager (MEM) Intune to configure Windows Defender Application Control (WDAC). Intune includes native support for WDAC, which allows you to configure Windows 10 client computers to only run Windows components and Microsoft Store apps, or to also allow reputable apps as defined by the Intelligent Security Graph (ISG). Using the built-in policies can be a helpful starting point, but many customers may find the available circle-of-trust options to be too limited. 
 
