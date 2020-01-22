@@ -33,14 +33,22 @@ If your HoloLens becomes frozen or unresponsive:
 
 If these steps don't work, you can try [recovering your device](hololens-recovery.md).
 
-## Holograms don't look good
+## Hologram image color or brightness does not look right
+For HoloLens 2, take the following steps to ensure the highest visual quality of holograms presented in displays:
+
+- **Increase brightness of the display:** Holograms look best when the display is at its brightest level.
+- **Bring visor closer to your eyes:** Swing the visor down to the closest position to your eyes.
+- **Shift visor down:** Try moving the brow pad on your forehead down, which will result in the visor moving down closer to your nose.
+- **Run eye calibration:** The display uses your IPD and eye gaze to optimize images on the display. If you don't run eye calibration, the image quality may be made worse.
+
+## Holograms look unstable
 
 If your holograms are unstable, jumpy, or don’t look right, try:
 
 - Cleaning your device visor and sensor bar on the front of your HoloLens.
 - Increasing the light in your room.
 - Walking around and looking at your surroundings so that HoloLens can scan them more completely.
-- Calibrating your HoloLens for your eyes. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**.
+- Calibrating your HoloLens for your eyes. Go to **Settings** > **System** > **Utilities**. Under **Calibration**, select **Open Calibration**. 
 
 ## HoloLens doesn’t respond to gestures
 
@@ -51,6 +59,14 @@ Learn more about using gestures on [HoloLens (1st gen)](hololens1-basic-usage.md
 If your environment is too dark, HoloLens might not see your hand, so make sure that there’s enough light.
 
 If your visor has fingerprints or smudges, use the microfiber cleaning cloth that came with the HoloLens to clean your visor gently.
+
+### Lights to indicate problems
+
+| When you do this | The lights do this | It means this |
+| - | - | - |
+| You press the Power button. | One light flashes five times, then turns off. | The HoloLens battery is critically low. Charge your HoloLens. |
+| You press the Power button. | All five lights flash five times, then turn off. |  HoloLens cannot start correctly and is in an error state. [Reinstall the operating system](hololens-recovery.md) to recover your device. |
+| You press the Power button. | The 1st, 3rd, and 5th lights flash together continually. |  HoloLens may have a hardware failure. To be sure, [reinstall the OS](hololens-recovery.md#hololens-2), and try again. After reinstalling the OS, if the light-flash pattern persists, contact [support](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb). |
 
 ## HoloLens doesn’t respond to my voice commands
 
