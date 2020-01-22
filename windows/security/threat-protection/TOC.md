@@ -479,7 +479,6 @@
 #### [Common Vulnerabilities and Exposures (CVE) to KB map]()
 ##### [Get CVE-KB map](microsoft-defender-atp/get-cvekbmap-collection.md)
 
-
 #### [Pull detections to your SIEM tools]()
 ##### [Learn about different ways to pull detections](microsoft-defender-atp/configure-siem.md)
 ##### [Enable SIEM integration](microsoft-defender-atp/enable-siem-integration.md)
