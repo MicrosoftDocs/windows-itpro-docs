@@ -1120,7 +1120,7 @@ Import device drivers for each device in your institution. For more information 
 <li>For apps that are not offline licensed, obtain the .appx files from the app software vendor directly.</li>
 </ul>
 <br/>If you are unable to obtain the .appx files from the app software vendor, then you or the students will need to install the apps on the student devices directly from Microsoft Store or Microsoft Store for Business.<br/><br/>
-If you have Intune or Microsoft Endpoint Configuration Manager, you can deploy Microsoft Store apps after you deploy Windows 10, as described in the <a href="#deploy-and-manage-apps-by-using-intune" data-raw-source="[Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune)">Deploy and manage apps by using Intune</a> and <a href="#deploy-and-manage-apps-by-using-system-center-configuration-manager" data-raw-source="[Deploy and manage apps by using Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager)">Deploy and manage apps by using Microsoft Endpoint Configuration Manager</a> sections. This method provides granular deployment of Microsoft Store apps, and you can use it for ongoing management of Microsoft Store apps. This is the preferred method of deploying and managing Microsoft Store apps.<br/><br/>
+If you have Intune or Microsoft Endpoint Configuration Manager, you can deploy Microsoft Store apps after you deploy Windows 10, as described in the <a href="#deploy-and-manage-apps-by-using-intune" data-raw-source="[Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune)">Deploy and manage apps by using Intune</a> and <a href="#deploy-and-manage-apps-by-using-system-center-configuration-manager" data-raw-source="[Deploy and manage apps by using Configuration Manager](#deploy-and-manage-apps-by-using-microsoft-endpoint-configuration-manager)">Deploy and manage apps by using Microsoft Endpoint Configuration Manager</a> sections. This method provides granular deployment of Microsoft Store apps, and you can use it for ongoing management of Microsoft Store apps. This is the preferred method of deploying and managing Microsoft Store apps.<br/><br/>
 In addition, you must prepare your environment for sideloading Microsoft Store apps. For more information about how to:<br/><br/>
 <ul>
 <li>Prepare your environment for sideloading, see <a href="https://technet.microsoft.com/windows/jj874388.aspx" data-raw-source="[Try it out: sideload Microsoft Store apps](https://technet.microsoft.com/windows/jj874388.aspx)">Try it out: sideload Microsoft Store apps</a>.</li>
@@ -1499,7 +1499,7 @@ For more information about Intune, see [Microsoft Intune Documentation](https://
 
 ### Deploy and manage apps by using Intune
 
-If you selected to deploy and manage apps by using Microsoft Endpoint Configuration Manager and Intune in a hybrid configuration, then skip this section and continue to the [Deploy and manage apps by using Microsoft Endpoint Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager) section.
+If you selected to deploy and manage apps by using Microsoft Endpoint Configuration Manager and Intune in a hybrid configuration, then skip this section and continue to the [Deploy and manage apps by using Microsoft Endpoint Configuration Manager](#deploy-and-manage-apps-by-using-microsoft-endpoint-configuration-manager) section.
 
 You can use Intune to deploy Microsoft Store and Windows desktop apps. Intune provides improved control over which users receive specific apps. In addition, Intune allows you to deploy apps to companion devices (such as Windows 10 Mobile, iOS, or Android devices). Finally, Intune helps you manage app security and features, such as mobile application management policies that let you manage apps on devices that are not enrolled in Intune or that another solution manages.
 
@@ -1728,7 +1728,7 @@ For more information about completing this task, see the following resources:
 For more information, see:
 <ul>
 <li><a href="#deploy-and-manage-apps-by-using-intune" data-raw-source="[Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune)">Deploy and manage apps by using Intune</a></li>
-<li><a href="#deploy-and-manage-apps-by-using-system-center-configuration-manager" data-raw-source="[Deploy and manage apps by using Microsoft Endpoint Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager)">Deploy and manage apps by using Microsoft Endpoint Configuration Manager</a></li>
+<li><a href="#deploy-and-manage-apps-by-using-microsoft-endpoint-configuration-manager" data-raw-source="[Deploy and manage apps by using Microsoft Endpoint Configuration Manager](#deploy-and-manage-apps-by-using-microsoft-endpoint-configuration-manager)">Deploy and manage apps by using Microsoft Endpoint Configuration Manager</a></li>
 </ul>
 </td>
 <td></td>
@@ -1742,7 +1742,7 @@ Microsoft Store apps are automatically updated from Microsoft Store. The menu ba
 You can also deploy Microsoft Store apps directly to devices by using Intune, Microsoft Endpoint Configuration Manager, or both in a hybrid configuration. For more information, see:
 <ul>
 <li><a href="#deploy-and-manage-apps-by-using-intune" data-raw-source="[Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune)">Deploy and manage apps by using Intune</a></li>
-<li><a href="#deploy-and-manage-apps-by-using-system-center-configuration-manager" data-raw-source="[Deploy and manage apps by using Microsoft Endpoint Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager)">Deploy and manage apps by using Microsoft Endpoint Configuration Manager</a></li>
+<li><a href="#deploy-and-manage-apps-by-using-system-center-configuration-manager" data-raw-source="[Deploy and manage apps by using Microsoft Endpoint Configuration Manager](#deploy-and-manage-apps-by-using-microsoft-endpoint-configuration-manager)">Deploy and manage apps by using Microsoft Endpoint Configuration Manager</a></li>
 </ul>
 </td>
 <td></td>
