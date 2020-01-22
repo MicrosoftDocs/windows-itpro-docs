@@ -60,7 +60,7 @@ If your environment is too dark, HoloLens might not see your hand, so make sure 
 
 If your visor has fingerprints or smudges, use the microfiber cleaning cloth that came with the HoloLens to clean your visor gently.
 
-### Lights to indicate problems
+## Lights to indicate problems
 
 | When you do this | The lights do this | It means this |
 | - | - | - |
