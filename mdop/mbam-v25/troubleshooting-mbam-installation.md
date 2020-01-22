@@ -335,7 +335,7 @@ The MBAM agent will be unable to post any updates to the database if connectivit
     User:          SYSTEM
     Computer:      TESTLABS.CONTOSO.COM
     Description:
-    An error occured while applying MBAM policies.
+    An error occurred while applying MBAM policies.
     Volume ID:\\?\Volume{871c5858-2467-4d0b-8c83-d68af8ce10e5}\ 
     Error code:
     0x803D0010 
@@ -352,7 +352,7 @@ The MBAM agent will be unable to post any updates to the database if connectivit
     User:          SYSTEM
     Computer:      TESTLABS.CONTOSO.COM
     Description:
-    An error occured while applying MBAM policies.
+    An error occurred while applying MBAM policies.
     Volume ID:\\?\Volume{871c5858-2467-4d0b-8c83-d68af8ce10e5}\ 
     Error code:
     0x803D0006 
@@ -420,7 +420,7 @@ The MBAM services may be unable to connect to the database server because of a n
     Computer:      MBAM2-Admin.contoso.com
     Description:
     Event code: 100001
-    Event message: SQL error occured
+    Event message: SQL error occurred
     Event time: 7/11/2013 6:16:34 PM
     Event time (UTC): 7/11/2013 12:46:34 PM
     Event ID: 6615fb8eb9d54e778b933d5bb7ca91ed
@@ -552,7 +552,7 @@ Review the activity in the service trace log for any error or warning entries. B
     <Channel />
     <Computer>XXXXXXXXXXX</Computer>
     </System>
-    <ApplicationData>AddUpdateVolume: While executing sql transaction for add volume to store exception occured Key Recovery Data Store processing error: Violation of UNIQUE KEY constraint 'UniqueRecoveryKeyId'. Cannot insert duplicate key in object 'RecoveryAndHardwareCore.Keys'. The duplicate key value is (8637036e-b379-4798-bd9e-5a0b36296de3).
+    <ApplicationData>AddUpdateVolume: While executing sql transaction for add volume to store exception occurred Key Recovery Data Store processing error: Violation of UNIQUE KEY constraint 'UniqueRecoveryKeyId'. Cannot insert duplicate key in object 'RecoveryAndHardwareCore.Keys'. The duplicate key value is (8637036e-b379-4798-bd9e-5a0b36296de3).
     </ApplicationData>
     </E2ETraceEvent>
 
