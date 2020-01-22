@@ -1742,7 +1742,7 @@ Microsoft Store apps are automatically updated from Microsoft Store. The menu ba
 You can also deploy Microsoft Store apps directly to devices by using Intune, Microsoft Endpoint Configuration Manager, or both in a hybrid configuration. For more information, see:
 <ul>
 <li><a href="#deploy-and-manage-apps-by-using-intune" data-raw-source="[Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune)">Deploy and manage apps by using Intune</a></li>
-<li><a href="#deploy-and-manage-apps-by-using-system-center-configuration-manager" data-raw-source="[Deploy and manage apps by using Microsoft Endpoint Configuration Manager](#deploy-and-manage-apps-by-using-microsoft-endpoint-configuration-manager)">Deploy and manage apps by using Microsoft Endpoint Configuration Manager</a></li>
+<li><a href="#deploy-and-manage-apps-by-using-microsoft-endpoint-configuration-manager" data-raw-source="[Deploy and manage apps by using Microsoft Endpoint Configuration Manager](#deploy-and-manage-apps-by-using-microsoft-endpoint-configuration-manager)">Deploy and manage apps by using Microsoft Endpoint Configuration Manager</a></li>
 </ul>
 </td>
 <td></td>
