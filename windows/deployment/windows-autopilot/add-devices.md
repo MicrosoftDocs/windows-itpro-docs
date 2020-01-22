@@ -103,7 +103,7 @@ Once the hardware IDs have been captured from existing devices, they can be uplo
 -   [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa).  This is typically used by small and medium businesses (SMBs) who manage their devices using Microsoft 365 Business.
 -   [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles).  You might already be using MSfB to manage your apps and settings.
 
-A summary of each platform's capabilities is provided below.
+A summary of each platform's capabilities is provided below.<br>
 <br>
 <table>
 <tr>
@@ -123,34 +123,43 @@ A summary of each platform's capabilities is provided below.
 <tr>
 <td><a href="https://docs.microsoft.com/partner-center/autopilot">Partner Center</a></td>
 <td>YES - 1000 at a time max</td>
-<td>YES</td>
+<td>YES<b><sup>3</sup></b></td>
 <td>Tuple or PKID or 4K HH</td>
 </tr>
 
 <tr>
 <td><a href="https://docs.microsoft.com/intune/enrollment-autopilot">Intune</a></td>
-<td>YES - 500 at a time max<b>*</b></td>
-<td>YES<b>*</b></td>
+<td>YES - 1000 at a time max<b><sup>1</sup></b></td>
+<td>YES<b><sup>12</sup></b></td>
 <td>4K HH</td>
 </tr>
 
 <tr>
-<td><a href="https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles">Microsoft Store for Business</a></td>
+<td><a href="https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles">Microsoft Store for Business</a><b><sup>4</sup></b></td>
 <td>YES - 1000 at a time max</td>
 <td>YES</td>
 <td>4K HH</td>
 </tr>
 
 <tr>
-<td><a href="https://docs.microsoft.com/microsoft-365/business/create-and-edit-autopilot-profiles">Microsoft Business 365</a></td>
+<td><a href="https://docs.microsoft.com/microsoft-365/business/create-and-edit-autopilot-profiles">Microsoft 365 Business</a></td>
 <td>YES - 1000 at a time max</td>
-<td>YES</td>
+<td>YES<b><sup>3</sup></b></td>
 <td>4K HH</td>
 </tr>
 
 </table>
 
-><b>*</b>Microsoft recommended platform to use
+><b><sup>1</sup></b>Microsoft recommended platform to use<br>
+><b><sup>2</sup></b>Intune license required<br>
+><b><sup>3</sup></b>Feature capabilities are limited<br>
+><b><sup>4</sup></b>To be retired<br>
+
+Also see the following topics for more information about device IDs:
+- [Device identification](#device-identification)
+- [Windows Autopilot device guidelines](https://docs.microsoft.com/windows/deployment/windows-autopilot/autopilot-device-guidelines)
+- [Add devices to a customer account](https://docs.microsoft.com/partner-center/autopilot)
+
 
 ## Summary
 
