@@ -11,7 +11,7 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/21/2019
+ms.date: 01/15/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -99,10 +99,7 @@ Because customizations are performed by MDT at the time of deployment, the goal 
 
 For your deployed Windows environment to function correctly on your Surface devices, you will need to install the drivers used by Windows to communicate with the components of your device. These drivers are available for download in the Microsoft Download Center for each Surface device. You can find the correct Microsoft Download Center page for your device at [Download the latest firmware and drivers for Surface devices](https://technet.microsoft.com/itpro/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices).
 
-When you browse to the specific Microsoft Download Center page for your device, you will notice that there are two files available for download. One file is a Windows Installer (.msi) file. This file is used to update drivers on devices that are already running Windows or that have device management solutions. The other file is an archive (.zip) file. This file contains the individual driver files that are used during deployment, or for manual installation with Device Manager. The file that you will need to download is the .zip archive file. You can read more about the difference between the firmware and driver pack file types at [Manage Surface driver and firmware updates](https://technet.microsoft.com/itpro/surface/manage-surface-pro-3-firmware-updates).
-
-
-In addition to the driver files that help Windows communicate with the hardware components of the Surface device, the .zip file you download will also contain firmware updates. These firmware updates will update the instructions used by the device hardware to communicate between components and Windows. The firmware of Surface device components is updated by installation of specific driver files and thus is installed along with the other drivers during deployment. The firmware of an out-of-date Surface device is thus updated when the device reboots during and after the Windows deployment process.
+When you browse to the specific Microsoft Download Center page for your device, you will find a Windows Installer (.msi) file. This file is used to update drivers on devices that are already running Windows or that have device management solutions. Firmware updates maintain the instructions used by the device hardware to communicate between components and Windows. The firmware of Surface device components is updated by installation of specific driver files and thus is installed along with the other drivers during deployment. For more information, see [Manage Surface driver and firmware updates](https://technet.microsoft.com/itpro/surface/manage-surface-pro-3-firmware-updates).
 
 >[!NOTE]
 >Beginning in Windows 10, the drivers for Surface devices are included in the Windows Preinstallation Environment (WinPE). In earlier versions of Windows, specific drivers (like network drivers) had to be imported and configured in MDT for use in WinPE to successfully deploy to Surface devices.
@@ -234,7 +231,7 @@ You now have an empty deployment share that is ready for you to add the resource
 The first resources that are required to perform a deployment of Windows are the installation files from Windows 10 installation media. Even if you have an already prepared reference image, you still need to supply the unaltered installation files from your installation media. The source of these files can be a physical disk, or it can be an ISO file like the download from the Volume Licensing Service Center (VLSC).
 
 >[!NOTE]
->A 64-bit operating system is required for compatibility with Surface Studio, Surface Pro 4, Surface Book, Surface Pro 3, and Surface 3.
+>A 64-bit operating system is required for compatibility with Surface devices except Surface Pro X which cannot be managed with MDT.
 
 To import Windows 10 installation files, follow these steps:
 
@@ -404,9 +401,9 @@ Perform the reference image deployment and capture using the following steps:
    * **Locale and Time** – Leave the default options for language and time settings selected. The locale and time settings will be specified during deployment of the image to other devices. Click **Next**.
    * **Capture Image** – Click the **Capture an Image of this Reference Computer** option, as shown in Figure 16. In the **Location** field, keep the default location of the Captures folder. You can keep or change the name of the image file in the **File Name** field. When you are finished, click **Next**.
   
-   ![Capture an image of the reference machine](images/surface-deploymdt-fig16.png "Capture an image of the reference machine")
+    ![Capture an image of the reference machine](images/surface-deploymdt-fig16.png "Capture an image of the reference machine")
     
-   *Figure 16. Use the Capture Image page to capture an image of the reference machine after deployment*
+    *Figure 16. Use the Capture Image page to capture an image of the reference machine after deployment*
 
    * **Ready** – You can review your selections by expanding **Details** on the **Ready** page. Click **Begin** when you are ready to perform the deployment and capture of your reference image.
 
