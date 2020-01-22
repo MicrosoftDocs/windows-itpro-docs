@@ -80,9 +80,9 @@ On Windows 10 version 1709 and above, information about the Autopilot profile se
 | TenantMatched | This will be set to 1 if the tenant ID of the user matches the tenant ID that the device was registered with.  If this is 0, the user would be shown an error and forced to start over. |
 | CloudAssignedOobeConfig | This is a bitmap that shows which Autopilot settings were configured.  Values include: SkipCortanaOptIn = 1, OobeUserNotLocalAdmin = 2, SkipExpressSettings = 4, SkipOemRegistration = 8, SkipEula = 16 |
 
-### Windows 10 version 1703 and above
+### Windows 10 semi-annual channel supported versions
 
-On Windows 10 version 1703 and above, ETW tracing can be used to capture detailed information from Autopilot and related components.  The resulting ETW trace files can then be viewed using the Windows Performance Analyzer or similar tools.  See [the advanced troubleshooting blog](https://blogs.technet.microsoft.com/mniehaus/2017/12/13/troubleshooting-windows-autopilot-level-300400/) for more information.
+On devices running a [supported version](https://docs.microsoft.com/windows/release-information/) of Windows 10 semi-annual channel, ETW tracing can be used to capture detailed information from Autopilot and related components.  The resulting ETW trace files can then be viewed using the Windows Performance Analyzer or similar tools.  See [the advanced troubleshooting blog](https://blogs.technet.microsoft.com/mniehaus/2017/12/13/troubleshooting-windows-autopilot-level-300400/) for more information.
 
 ## Troubleshooting Azure AD Join issues
 
@@ -106,7 +106,7 @@ When a profile is downloaded depends on the version of Windows 10 that is runnin
 
 | Windows 10 version | Profile download behavior |
 | --- | --- |
-| 1703 and 1709 | The profile is downloaded after the OOBE network connection page. This page is not displayed when using a wired connection. In this case, the profile is downloaded just prior to the EULA screen. |
+| 1709 | The profile is downloaded after the OOBE network connection page. This page is not displayed when using a wired connection. In this case, the profile is downloaded just prior to the EULA screen. |
 | 1803 | The profile is downloaded as soon as possible.  If wired, it is downloaded at the start of OOBE. If wireless, it is downloaded after the network connection page. |
 | 1809 | The profile is downloaded as soon as possible (same as 1803), and again after each reboot. |
 
