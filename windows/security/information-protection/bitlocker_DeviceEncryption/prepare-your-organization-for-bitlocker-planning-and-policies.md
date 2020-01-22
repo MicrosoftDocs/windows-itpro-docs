@@ -23,7 +23,7 @@ ms.date: 04/24/2019
 
 - Windows 10
 
-This topic for the IT professional explains how can you plan your BitLocker deployment.
+This topic for IT professional explains how to plan your BitLocker deployment.
 
 When you design your BitLocker deployment strategy, define the appropriate policies and configuration requirements based on the business requirements of your organization. The following topics will help you collect information that you can use to frame your decision-making process about deploying and managing BitLocker systems.
 
@@ -33,20 +33,22 @@ To plan your enterprise deployment of BitLocker, you must first understand your 
 
 Use the following questions to help you document your organization's current disk encryption security policies:
 
+1. Which information do you want to protect?
 1. Are there policies to address which computers will use BitLocker and which computers will not use BitLocker?
-2. What policies exist to control recovery password and recovery key storage?
-3. What are the policies for validating the identity of users that need to perform BitLocker recovery?
-4. What policies exist to control who in the organization has access to recovery data?
-5. What policies exist to control computer decommissioning or retirement?
+1. What policies exist to control recovery password and recovery key storage?
+1. What are the policies for validating the identity of users that need to perform BitLocker recovery?
+1. What policies exist to control who in the organization has access to recovery data?
+1. What policies exist to control computer decommissioning or retirement?
+1. What policies exist with regard to the complexity of PINs and passwords?
 
 ## Encryption keys and authentication
 
-BitLocker helps prevent unauthorized access to data on lost or stolen computers by:
+The system drive encryption with BitLocker helps prevent unauthorized access to data on lost or stolen computers by:
 
 - Encrypting the entire Windows operating system volume on the hard disk.
 - Verifying the boot process integrity.
 
-The trusted platform module (TPM) is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer has not been tampered with while the system was offline.
+The trusted platform module (TPM) is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect data and to ensure that a computer has not been tampered with while the system was offline.
 
 In addition, BitLocker offers the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable USB device, such as a flash drive, that contains a startup key. These additional security measures provide multifactor authentication and assurance that the computer will not start or resume from hibernation until the correct PIN or startup key is presented.
 
@@ -54,11 +56,13 @@ On computers that do not have a TPM version 1.2 or higher, you can still use Bi
 
 ### BitLocker key protectors
 
+
 | Key protector | Description |
 | - | - |
 | TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM version 1.2 or higher.|
 | PIN | A user-entered numeric key protector that can only be used in addition to the TPM.|
 | Enhanced PIN | A user-entered alphanumeric key protector that can only be used in addition to the TPM.|
+| Password | A user-entered key protector, which can contain alphanumeric charaters as well as special character. This key protector can be used alone on non-TPM computers, or in conjunction with a TPM for added security.|
 | Startup key | An encryption key that can be stored on most removable media. This key protector can be used alone on non-TPM computers, or in conjunction with a TPM for added security.|
 | Recovery password | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard, if the numbers on the normal keyboard are not responding you can always use the function keys (F1-F10) to input the numbers.|
 | Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume.|
@@ -85,7 +89,9 @@ However, TPM-only authentication method offers the lowest level of data protecti
 
 **What areas of your organization need a more secure level of data protection?**
 
-If there are areas of your organization where data residing on user computers is considered highly-sensitive, consider the best practice of deploying BitLocker with multifactor authentication on those systems. Requiring the user to input a PIN significantly increases the level of protection for the system. You can also use BitLocker Network Unlock to allow these computers to automatically unlock when connected to a trusted wired network that can provide the Network Unlock key.
+If there are areas of your organization where data residing on user computers is considered highly-sensitive, consider the best practice of deploying BitLocker with multifactor authentication on those systems. Requiring the user to input a PIN significantly increases the level of protection for the system.
+
+If the usability is important, you can also use BitLocker Network Unlock to allow computers to automatically unlock when connected to a trusted wired network that can provide the Network Unlock key.
 
 **What multifactor authentication method does your organization prefer?**
 
@@ -99,6 +105,8 @@ In your deployment plan, identify what TPM-based hardware platforms will be supp
 
 For TPM 1.2, there are multiple possible states. Windows 10 automatically initializes the TPM, which brings it to an enabled, activated, and owned state. This is the state that BitLocker requires before it can use the TPM.
 
+<!-- What about newer versions of TPM? -->
+
 ### Endorsement keys
 
 For a TPM to be usable by BitLocker, it must contain an endorsement key, which is an RSA key pair. The private half of the key pair is held inside the TPM and is never revealed or accessible outside the TPM. If the TPM does not contain an endorsement key, BitLocker will force the TPM to generate one automatically as part of BitLocker setup.
@@ -109,11 +117,11 @@ For more information about the TPM and the TCG, see the Trusted Computing Group:
 
 ## Non-TPM hardware configurations
 
-Devices that do not include a TPM can still be protected by drive encryption. Windows To Go workspaces can be BitLocker protected using a startup password and PCs without a TPM can use a startup key.
+Devices that do not include a TPM can still be protected by drive encryption. They can be secured using a startup password or a startup key.
 
 Use the following questions to identify issues that might affect your deployment in a non-TPM configuration:
 
-- Are password complexity rules in place?
+- Are complexity rules in place?
 - Do you have budget for USB flash drives for each of these computers?
 - Do your existing non-TPM devices support USB devices at boot time?
 
@@ -144,7 +152,7 @@ Administrators can enable BitLocker prior to operating system deployment from th
 
 ## Used Disk Space Only encryption
 
-The BitLocker Setup wizard provides administrators the ability to choose the Used Disk Space Only or Full encryption method when enabling BitLocker for a volume. Administrators can use the new BitLocker Group Policy setting to enforce either Used Disk Space Only or Full disk encryption.
+Since Windows 10, the BitLocker Setup wizard provides administrators the ability to choose the Used Disk Space Only or Full encryption method when enabling BitLocker for a volume. Administrators can use the new BitLocker Group Policy setting to enforce either Used Disk Space Only or Full disk encryption.
 
 Launching the BitLocker Setup wizard prompts for the authentication method to be used (password and smart card are available for data volumes). Once the method is chosen and the recovery key is saved, you are asked to choose the drive encryption type, either Used Disk Space Only or Full drive encryption.
 
