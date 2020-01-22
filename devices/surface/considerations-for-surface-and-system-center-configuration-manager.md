@@ -30,7 +30,7 @@ Although the deployment and management of Surface devices is fundamentally the s
 ## Updating Surface device drivers and firmware
 
 
-For devices that recieve updates through Windows Update, drivers for Surface components (and even firmware updates) are applied automatically as part of the Windows Update process. For devices with managed updates, such as those updated through Windows Server Update Services (WSUS) or System Center Configuration Manager, see [Manage Surface driver and firmware updates](https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates/).
+For devices that receive updates through Windows Update, drivers for Surface components (and even firmware updates) are applied automatically as part of the Windows Update process. For devices with managed updates, such as those updated through Windows Server Update Services (WSUS) or System Center Configuration Manager, see [Manage Surface driver and firmware updates](https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates/).
 
 
 > [!NOTE]
