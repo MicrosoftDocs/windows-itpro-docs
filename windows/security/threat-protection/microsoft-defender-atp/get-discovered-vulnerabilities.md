@@ -58,7 +58,7 @@ If successful, this method returns 200 OK with the discovered vulnerability info
 Here is an example of the request.
 
 ```
-GET https://api.securitycenter.windows.com/api/machines/ ac233fa6208e1579620bf44207c4006ed7cc4501/vulnerabilities
+GET https://api.securitycenter.windows.com/api/machines/ac233fa6208e1579620bf44207c4006ed7cc4501/vulnerabilities
 ```
 
 **Response**
