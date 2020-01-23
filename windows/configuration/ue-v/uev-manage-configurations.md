@@ -29,7 +29,7 @@ You can use Group Policy Objects to modify the settings that define how UE-V syn
 
 ## Configuring UE-V with Microsoft Endpoint Configuration Manager
 
-You can use System Center Configuration Manager to manage the UE-V service by using the UE-V Configuration Pack.
+You can use Microsoft Endpoint Configuration Manager to manage the UE-V service by using the UE-V Configuration Pack.
 
 [Configuring UE-V with Microsoft Endpoint Configuration Manager](uev-configuring-uev-with-system-center-configuration-manager.md)
 
