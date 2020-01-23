@@ -21,28 +21,28 @@ This article outlines the procedure to clear the Internet Explorer cache by usin
 
 ## Command line commands to clear browser cache
 
-1. Delete history from the Low folder
+1. Delete history from the Low folder  
    `del /s /q C:\Users\\%username%\AppData\Local\Microsoft\Windows\History\low\* /ah`
 
-2. Delete history
+2. Delete history  
    `RunDll32.exe InetCpl.cpl, ClearMyTracksByProcess 1`
 
-3. Delete cookies
+3. Delete cookies  
    `RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 2`
 
-4. Delete temporary internet files
+4. Delete temporary internet files  
    `RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 8`
 
-5. Delete form data
+5. Delete form data  
    `RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 16`
 
-6. Delete stored passwords
+6. Delete stored passwords  
    `RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 32`
 
-7. Delete all
+7. Delete all  
    `RunDll32.exe InetCpl.cpl,ClearMyTracksByProcess 255`
 
-8. Delete files and settings stored by add-ons
+8. Delete files and settings stored by add-ons  
    `InetCpl.cpl,ClearMyTracksByProcess 4351`
 
 If you upgraded from a previous version of Internet Explorer, you have to use the following commands to delete the files from older versions:  
@@ -128,9 +128,10 @@ goto Home
 ::enter below in search/run to see Low  history dir if exists
 ::C:\Users\%username%\AppData\Local\Microsoft\Windows\History\low
 
-::Delete all low(untrusted history) very hidden
-::this will clean any unlocked  files under the dir and not delete the dir structure 
+::Delete all low (untrusted history) very hidden
+::this will clean any unlocked  files under the dir and not delete the dir structure
 ::del /s /q low\* /ah ::del /s /q C:\Users\%username%\AppData\Local\Microsoft\Windows\History\low\* /ah
 
 goto Home
+:quit
 ```
