@@ -272,7 +272,7 @@ For clients that should have their feature updates approved as soon as they’re
 Now, whenever Windows 10 feature updates are published to WSUS, they will automatically be approved for the **Ring 3 Broad IT** deployment ring with an installation deadline of 1 week.
 
 > [!WARNING]
-> The auto approval rule runs after synchronization occurs. This means that the *next* upgrade for each Windows 10 version will be approved. If you select **Run Rule**, all possible updates that meet the criteria will be approved, potentially including older updates that you don't actualy want--which can be a problem when the download sizes are very large.
+> The auto approval rule runs after synchronization occurs. This means that the *next* upgrade for each Windows 10 version will be approved. If you select **Run Rule**, all possible updates that meet the criteria will be approved, potentially including older updates that you don't actually want--which can be a problem when the download sizes are very large.
 
 ## Manually approve and deploy feature updates
 
