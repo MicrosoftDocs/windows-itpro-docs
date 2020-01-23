@@ -93,7 +93,7 @@ Internet Connectivity |Device does have Internet connectivity |Device does not h
 HTTP Version |1.1 |1.0 |If HTTP 1.0 found, it will cause issue with WU and Store |
 Direct Internet Connectivity |Device has a Proxy configured Device has no Proxy configured |N/A |Informational. Is your device behind a proxy? |
 Proxy Address | | |If configured, returns proxy address. |
-Proxy Authentication |Proxy does not require Authentication |Proxy requires Proxy Auth |Result may be a false positive if a user already has an open session in Edge and has authenticated thru the proxy. |[Configuring a proxy for your Surface Hub](https://blogs.technet.microsoft.com/y0av/2017/12/03/7/)
+Proxy Authentication |Proxy does not require Authentication |Proxy requires Proxy Auth |Result may be a false positive if a user already has an open session in Edge and has authenticated through the proxy. |[Configuring a proxy for your Surface Hub](https://blogs.technet.microsoft.com/y0av/2017/12/03/7/)
 Proxy Auth Types | | |If proxy authentication is used, return the Authentication methods advertised by the proxy.  |
 
 #### Environment
