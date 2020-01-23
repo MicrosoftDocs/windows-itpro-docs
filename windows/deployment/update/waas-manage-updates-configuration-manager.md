@@ -214,7 +214,7 @@ Each time Microsoft releases a new Windows 10 build, it releases a new .iso file
     In this example, the Windows 10 Enterprise 1607 installation media is deployed to \\contoso-cm01\Sources\Operating Systems\Windows 10 Enterprise\Windows 10 Enterprise - Version 1607.
     
     >[!NOTE]
-    >Microsoft Endpoint Configuration Manager version 1606 is required to manage machines running Windows 10, version 1607.
+    >Microsoft Endpoint Configuration Manager is required to manage machines running Windows 10, version 1607.
     
 4. On the **General** page, in the **Name** field, type the name of the folder (**Windows 10 Enterprise - Version 1607** in this example). Set the **Version** to **1607**, and then click **Next**.
 
