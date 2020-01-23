@@ -81,7 +81,7 @@ When you install updates to Windows XP, make sure that you remain on the version
 Although it is optional, we recommend that you install the following update for [hotfix KB972435](https://go.microsoft.com/fwlink/?LinkId=201077) (https://go.microsoft.com/fwlink/?LinkId=201077). This update increases the performance of shared folders in a Terminal Services session:
 
 **Note**  
-The update is publically available. However, you might be prompted to accept an agreement for Microsoft Services. Follow the prompts on the successive webpages to retrieve this hotfix.
+The update is publicly available. However, you might be prompted to accept an agreement for Microsoft Services. Follow the prompts on the successive webpages to retrieve this hotfix.
 
  
 
