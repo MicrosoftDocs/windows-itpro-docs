@@ -21,17 +21,15 @@ ms.topic: article
 **Applies to**
 - Windows 10
 
-This topic provides an overview of the features, components, and capabilities of the Microsoft Deployment Toolkit (MDT).  When you are ready to install and start using MDT, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
+This topic provides an overview of the features, components, and capabilities of the Microsoft Deployment Toolkit (MDT).  To download the latest version of MDT, visit the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117). When you are ready to start using MDT, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
-## Introduction
+## About MDT
 
-The Microsoft Deployment Toolkit (MDT) is a unified collection of tools, processes, and guidance for automating desktop and server deployment. You can use it to create reference images or as a complete deployment solution.  MDT is one of the most important tools available to IT professionals today.
+MDT is a unified collection of tools, processes, and guidance for automating desktop and server deployment. You can use it to create reference images or as a complete deployment solution.  MDT is one of the most important tools available to IT professionals today.
 
 In addition to reducing deployment time and standardizing desktop and server images, MDT enables you to more easily manage security and ongoing configurations. MDT builds on top of the core deployment tools in the Windows Assessment and Deployment Kit (Windows ADK) with additional guidance and features designed to reduce the complexity and time required for deployment in an enterprise environment.
 
 MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8.1, and Windows Server. It also includes support for zero-touch installation (ZTI) with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/).
-
-To download the latest version of MDT, visit the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
 
 ## Key features in MDT
 

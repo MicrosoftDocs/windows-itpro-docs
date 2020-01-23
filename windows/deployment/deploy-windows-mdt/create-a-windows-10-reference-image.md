@@ -31,7 +31,7 @@ For the purposes of this topic, we will use three computers: DC01, MDT01, and PC
     ![figure 1](../images/mdt-08-fig01.png)
 
 >[!NOTE]
->See [Deploying Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-10-with-the-microsoft-deployment-toolkit.md) for detailed information about the setup for this guide.
+>See [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md) for more information about the server, client, and network infrastructure used in this guide.
 
 ## The reference image
 

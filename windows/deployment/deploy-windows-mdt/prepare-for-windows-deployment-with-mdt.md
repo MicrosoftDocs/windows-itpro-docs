@@ -25,17 +25,18 @@ This topic will walk you through the steps necessary to create the server struct
 
 ## Requirements
 
+The procedures in this guide use the following fictitious names and infrastructure.
+
 ### Network and server infrastructure
 
-For the purposes of this topic, we will use three computers: **DC01**, **MDT01**, and **HV01**.
+For the purposes of this topic, we will use three server computers: **DC01**, **MDT01**, and **HV01**.
 - All servers are running Windows Server 2019. 
-    - You can use an earlier version of Windows Server with minor modifications to some procedures. 
-    - Although MDT supports Windows Server 2008 R2, At least Windows Server 2012 R2 or later is requried to perform the procedures in this guide.
-- DC01 is a domain controller, DHCP server, and DNS server for contoso.com, representing the fictitious Contoso Corporation.
-- MDT01 is a domain member server in contoso.com and has a D: drive that will be used for data.
-    - The data drive requires at least 100GB of disk space.
+    - You can use an earlier version of Windows Server with minor modifications to some procedures.
+    - Note: Although MDT supports Windows Server 2008 R2, at least Windows Server 2012 R2 or later is requried to perform the procedures in this guide.
+- DC01 is a domain controller, DHCP server, and DNS server for <b>contoso.com</b>, representing the fictitious Contoso Corporation.
+- MDT01 is a domain member server in contoso.com with a data (D:) drive that can store at least 200GB.
 - HV01 is a Hyper-V host computer that is used to build a Windows 10 reference image.
-    - See [Hyper-V requirements](#hyper-v-requirements) below for more information.
+    - See [Hyper-V requirements](#hyper-v-requirements) below for more information about HV01.
 
 ### Client computers
 
@@ -51,7 +52,7 @@ Several client computers are referenced in this guide using hostnames PC0001 to 
 
 ### Storage requirements
 
-MDT01 and HV01 should have a data drive (D:) that can support up to 200 GB of data. The system drives on all computers (C:) can be 50 GB in size, but 100 GB is recommended.
+MDT01 and HV01 should have a data drive (D:) that can support up to 200 GB of data. The system drives on all computers (C:) can be 50 GB in size, but 100 GB is recommended. You can also use a computer with a single, system drive as long as it has at least 200 GB of available storage space. You will need to adjust come procedures in this guide to specify the C: drive instead of the D: drive.
 
 ### Hyper-V requirements
 
@@ -198,8 +199,7 @@ See the following example:
 
 ## Use CMTrace to read log files (optional)
 
-The log files in MDT Lite Touch are formatted to be read by Configuration Manager Trace ([CMTrace](https://docs.microsoft.com/sccm/core/support/cmtrace)), which is available as part of the [Microsoft System 2012 R2 Center Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717). You should also download this tool.
-
+The log files in MDT Lite Touch are formatted to be read by Configuration Manager Trace ([CMTrace](https://docs.microsoft.com/sccm/core/support/cmtrace)), which is available as part of the [Microsoft System 2012 R2 Center Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717). You should also download this tool.  
 You can use Notepad (example below):
 
 ![figure 8](../images/mdt-05-fig09.png)
@@ -207,6 +207,8 @@ You can use Notepad (example below):
 Alternatively, CMTrace formatting makes the logs much easier to read. See the same log file below, opened in CMTrace:
 
 ![figure 9](../images/mdt-05-fig10.png)
+
+After installing the ConfigMgrTools.msi file, search for **cmtrace** and pin the tool to your taskbar for easy access.
 
 ## Next steps
 
@@ -216,7 +218,7 @@ When you have completed all the steps in this section to prepare for deployment,
 
 **Sample files**
 
-The following sample files are also available to help automate some MDT deployment tasks:
+The following sample files are also available to help automate some MDT deployment tasks. This guide does not use these files.
 -   [Gather.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619361). This sample Windows PowerShell script performs the MDT Gather process in a simulated MDT environment. This allows you to test the MDT gather process and check to see if it is working correctly without performing a full Windows deployment.
 -   [Set-OUPermissions.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619362). This sample Windows PowerShell script creates a domain account and then configures OU permissions to allow the account to join machines to the domain in the specified OU.
 -   [MDTSample.zip](https://go.microsoft.com/fwlink/p/?LinkId=619363). This sample web service shows you how to configure a computer name dynamically using MDT.
