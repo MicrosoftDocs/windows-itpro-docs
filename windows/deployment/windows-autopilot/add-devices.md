@@ -21,7 +21,7 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
+- Windows 10
 
 Before deploying a device using Windows Autopilot, the device must be registered with the Windows Autopilot deployment service. Ideally, this would be performed by the OEM, reseller, or distributor from which the devices were purchased, but this can also be done by the organization by collecting the hardware identity and uploading it manually.
 
@@ -41,7 +41,7 @@ Windows Autopilot does not require delegated administrator permissions when esta
 
 ## Automatic registration of existing devices
 
-If an existing device is already running Windows 10 version 1703 or later and enrolled in an MDM service such an Intune, that MDM service can ask the device for the hardware ID (also known as a hardware hash).  Once it has that, it can automatically register the device with Windows Autopilot.
+If an existing device is already running a supported version of Windows 10 semi-annual channel and enrolled in an MDM service such an Intune, that MDM service can ask the device for the hardware ID (also known as a hardware hash).  Once it has that, it can automatically register the device with Windows Autopilot.
 
 For instructions on how to do this with Microsoft Intune, see [Create an Autopilot deployment profile](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile) documentation describing the "Convert all targeted devices to Autopilot" setting. 
 
@@ -53,7 +53,7 @@ To perform manual registration of a device, you must first capture its hardware 
 
 ## Device identification
 
-To define a device to the Windows Autopilot deployment service, a unique hardware ID for the device needs to be captured and uploaded to the service. While this step is ideally done by the hardware vendor (OEM, reseller, or distributor), automatically associating the device with an organization, it is also possible to do this through a harvesting process that collects the device from within a running Windows 10 version 1703 or later installation.
+To define a device to the Windows Autopilot deployment service, a unique hardware ID for the device needs to be captured and uploaded to the service. While this step is ideally done by the hardware vendor (OEM, reseller, or distributor), automatically associating the device with an organization, it is also possible to do this through a harvesting process that collects the device from within a running Windows 10 installation.
 
 The hardware ID, also commonly referred to as a hardware hash, contains several details about the device, including its manufacturer, model, device serial number, hard drive serial number, and many other attributes that can be used to uniquely identify that device.
 
@@ -68,7 +68,7 @@ Starting with Microsoft Endpoint Configuration Manager current branch version 18
 
 ### Collecting the hardware ID from existing devices using PowerShell
 
-The hardware ID, or hardware hash, for an existing device is available through Windows Management Instrumentation (WMI), as long as that device is running Windows 10 version 1703 or later. To help gather this information, as well as the serial number of the device (useful to see at a glance the machine to which it belongs), a PowerShell script called [Get-WindowsAutoPilotInfo.ps1 has been published to the PowerShell Gallery website](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo).
+The hardware ID, or hardware hash, for an existing device is available through Windows Management Instrumentation (WMI), as long as that device is running a supported version of Windows 10 semi-annual channel. To help gather this information, as well as the serial number of the device (useful to see at a glance the machine to which it belongs), a PowerShell script called [Get-WindowsAutoPilotInfo.ps1 has been published to the PowerShell Gallery website](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo).
 
 To use this script, you can download it from the PowerShell Gallery and run it on each computer, or you can install it directly from the PowerShell Gallery. To install it directly and capture the hardware hash from the local computer, use the following commands from an elevated Windows PowerShell prompt:
 
@@ -103,7 +103,7 @@ Once the hardware IDs have been captured from existing devices, they can be uplo
 -   [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa).  This is typically used by small and medium businesses (SMBs) who manage their devices using Microsoft 365 Business.
 -   [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles).  You might already be using MSfB to manage your apps and settings.
 
-A summary of each platform's capabilities is provided below.
+A summary of each platform's capabilities is provided below.<br>
 <br>
 <table>
 <tr>
@@ -123,34 +123,43 @@ A summary of each platform's capabilities is provided below.
 <tr>
 <td><a href="https://docs.microsoft.com/partner-center/autopilot">Partner Center</a></td>
 <td>YES - 1000 at a time max</td>
-<td>YES</td>
+<td>YES<b><sup>34</sup></b></td>
 <td>Tuple or PKID or 4K HH</td>
 </tr>
 
 <tr>
 <td><a href="https://docs.microsoft.com/intune/enrollment-autopilot">Intune</a></td>
-<td>YES - 500 at a time max<b>*</b></td>
-<td>YES<b>*</b></td>
+<td>YES - 500 at a time max<b><sup>1</sup></b></td>
+<td>YES<b><sup>12</sup></b></td>
 <td>4K HH</td>
 </tr>
 
 <tr>
-<td><a href="https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles">Microsoft Store for Business</a></td>
+<td><a href="https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles">Microsoft Store for Business</a><b><sup>4</sup></b></td>
 <td>YES - 1000 at a time max</td>
-<td>YES</td>
+<td>YES<b><sup>4</sup></b></td>
 <td>4K HH</td>
 </tr>
 
 <tr>
-<td><a href="https://docs.microsoft.com/microsoft-365/business/create-and-edit-autopilot-profiles">Microsoft Business 365</a></td>
+<td><a href="https://docs.microsoft.com/microsoft-365/business/create-and-edit-autopilot-profiles">Microsoft 365 Business</a></td>
 <td>YES - 1000 at a time max</td>
-<td>YES</td>
+<td>YES<b><sup>3</sup></b></td>
 <td>4K HH</td>
 </tr>
 
 </table>
 
-><b>*</b>Microsoft recommended platform to use
+><b><sup>1</sup></b>Microsoft recommended platform to use<br>
+><b><sup>2</sup></b>Intune license required<br>
+><b><sup>3</sup></b>Feature capabilities are limited<br>
+><b><sup>4</sup></b>To be retired<br>
+
+Also see the following topics for more information about device IDs:
+- [Device identification](#device-identification)
+- [Windows Autopilot device guidelines](https://docs.microsoft.com/windows/deployment/windows-autopilot/autopilot-device-guidelines)
+- [Add devices to a customer account](https://docs.microsoft.com/partner-center/autopilot)
+
 
 ## Summary
 
