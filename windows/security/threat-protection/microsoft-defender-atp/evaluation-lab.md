@@ -23,16 +23,13 @@ ms.topic: article
 
 Conducting a comprehensive security product evaluation can be a complex process requiring cumbersome environment and machine configuration before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
 
-The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of machine and environment configuration so that you can
- focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
-
-When you get started with the lab, you'll be guided through a simple set-up process where you can specify the type of configuration that best suits your needs.
-
-After the lab setup process is complete, you can add Windows 10 or Windows Server 2019 machines. These test machines come pre-configured to have the latest and greatest OS versions with the right security components in place and Office 2019 Standard installed.
+The Microsoft Defender ATP evaluation lab is designed to eliminate the complexities of machine and environment configuration so that you can  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
 
 With the simplified set-up experience, you can focus on running your own test scenarios and the pre-made simulations to see how Microsoft Defender ATP performs. 
 
 You'll have full access to all the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Microsoft Defender ATP offers. 
+
+    
 
 ## Before you begin
 You'll need to fulfill the [licensing requirements](minimum-requirements.md#licensing-requirements) or have trial access to Microsoft Defender ATP to access the evaluation lab.
@@ -44,15 +41,12 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
 
 ![Image of the evaluation lab on the menu](images/evaluation-lab-menu.png)
 
-When you access the evaluation lab for the first time, you'll find an introduction page with a link to the evaluation guide. The guide contains tips and recommendations to keep in mind when evaluating an advanced threat protection product. 
-
-It's a good idea to read the guide before starting the evaluation process so that you can conduct a thorough assessment of the platform.
-
 >[!NOTE]
 >- Each environment is provisioned with a limited set of test machines.
 >- Depending the type of environment structure you select, machines will be available for the specified number of hours from the day of activation.
 >- When you've used up the provisioned machines, no new machines are provided. A deleted machine does not refresh the available test machine count.
 >- Given the limited resources, it’s advisable to use the machines carefully.
+
 
 
 ## Setup the evaluation lab
@@ -61,11 +55,25 @@ It's a good idea to read the guide before starting the evaluation process so tha
 
     ![Image of the evaluation lab welcome page](images/evaluation-lab-setup.png)
 
-2. Depending on your evaluation needs, you can choose to setup an environment with fewer machines for a longer period or more machines for a shorter period. Select your preferred lab configuration then select **Create lab**.
+2. Depending on your evaluation needs, you can choose to setup an environment with fewer machines for a longer period or more machines for a shorter period. Select your preferred lab configuration then select **Next**.
 
     ![Image of lab configuration options](images/lab-creation-page.png)
 
-When the environment completes the setup process, you're ready to add machines.
+
+3. Select the threat simulation agent you'd like to use.
+
+    >[!NOTE]
+    >PLACEHOLDER ... By agreeing to install the selected simulator, you agree that the details you provided ....INSERT APPROVED LEGAL STATEMENT HERE FROM CELA!!!! 
+
+
+
+After the lab setup process is complete, you can add machines and run simulations. 
+
+You can add Windows 10 or Windows Server 2019 machines. These test machines come pre-configured to have the latest and greatest OS versions with the right security components in place and Office 2019 Standard installed.
+
+Microsoft Defender ATP has partnered with industry leading threat simulation platforms to help you test out the Microsoft Defender ATP capabilities.  Install your preferred simulator, run scenarios within the evaluation lab, and instantly see how the platform performs.
+
+
 
 ## Add machines
 When you add a machine to your environment, Microsoft Defender ATP sets up a well-configured machine with connection details. You can add Windows 10 or Windows Server 2019 machines.
@@ -119,6 +127,18 @@ The environment will reflect your test machine status through the evaluation - i
 
 
 ![Image of test machines](images/eval-lab-dashboard.png)
+
+After adding machines, you can choose to install threat simulators. 
+
+## Install threat simulators
+
+
+Microsoft Defender ATP supports the following threat simulators:
+- AttackIQ - Packages adversarial behavior including MITRE ATT&CK tactics, techniques, and procedures into a fully automated platform allowing you to continuously test and measure the efficacy of your security controls.
+
+1. 
+
+2.   
 
 ## Simulate attack scenarios
 Use the test machines to run attack simulations by connecting to them. 
