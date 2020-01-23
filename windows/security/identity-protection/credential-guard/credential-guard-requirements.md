@@ -78,9 +78,6 @@ Applications may cause performance issues when they attempt to hook the isolated
 
 Services or protocols that rely on Kerberos, such as file shares, remote desktop, or BranchCache, continue to work and are not affected by Windows Defender Credential Guard.
 
-See this video: [Credentials Protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
-
-
 ## Security considerations
 
 All computers that meet baseline protections for hardware, firmware, and software can use Windows Defender Credential Guard.
