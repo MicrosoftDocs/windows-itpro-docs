@@ -8,7 +8,7 @@ ms.author: ramakoni
 ms.reviewer: ramakoni, DEV_Triage
 ms.prod: internet-explorer
 ms.technology:
-ms.topic: kb-support
+ms.topic: troubleshooting
 ms.custom: CI=111020
 ms.localizationpriority: Normal
 # localization_priority: medium
