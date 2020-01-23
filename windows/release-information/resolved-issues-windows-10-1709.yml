@@ -32,6 +32,7 @@ sections:
   - type: markdown
     text: "
       <table border ='0'><tr><td width='65%'>Summary</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>Date resolved</td></tr>
+      <tr><td><div id='348msg'></div><b>Unable to create local users in Chinese, Japanese and Korean during device setup</b><br>You might be unable to create users in Chinese, Japanese and Korean using Input Method Editor (IME) during OOBE.<br><br><a href = '#348msgdesc'>See details ></a></td><td>OS Build 16299.1387<br><br>September 10, 2019<br><a href ='https://support.microsoft.com/help/4516066' target='_blank'>KB4516066</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4534318' target='_blank'>KB4534318</a></td><td>January 23, 2020 <br>02:00 PM PT</td></tr>
       <tr><td><div id='351msg'></div><b>Intermittent issues when printing</b><br>The print spooler service may intermittently have issues completing a print job and results print job failure.<br><br><a href = '#351msgdesc'>See details ></a></td><td>OS Build 16299.1392<br><br>September 23, 2019<br><a href ='https://support.microsoft.com/help/4522012' target='_blank'>KB4522012</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4520004' target='_blank'>KB4520004</a></td><td>October 08, 2019 <br>10:00 AM PT</td></tr>
       <tr><td><div id='336msg'></div><b>IME may become unresponsive or have High CPU usage</b><br>Some Input Method Editor (IME) including ChsIME.EXE and ChtIME.EXE, may become unresponsive or may have high CPU usage.<br><br><a href = '#336msgdesc'>See details ></a></td><td>OS Build 16299.1387<br><br>September 10, 2019<br><a href ='https://support.microsoft.com/help/4516066' target='_blank'>KB4516066</a></td><td>Resolved<br><a href = '' target='_blank'></a></td><td>September 19, 2019 <br>04:08 PM PT</td></tr>
       <tr><td><div id='255msg'></div><b>Domain connected devices that use MIT Kerberos realms will not start up</b><br>Devices may not start after updating when connected to a domain that is configured to use MIT Kerberos realms.<br><br><a href = '#255msgdesc'>See details ></a></td><td>OS Build 16299.1296<br><br>July 16, 2019<br><a href ='https://support.microsoft.com/help/4507465' target='_blank'>KB4507465</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4512516' target='_blank'>KB4512516</a></td><td>August 13, 2019 <br>10:00 AM PT</td></tr>
@@ -48,6 +49,15 @@ sections:
         <div>
         </div> 
       "
+- title: October 2019
+- items:
+  - type: markdown
+    text: "
+      <table border ='0'><tr><td width='65%'>Details</td><td width='15%'>Originating update</td><td width='10%'>Status</td><td width='10%'>History</td></tr>
+      <tr><td style='border-left-width:1px;border-right-width:1px;border-bottom-width:1px;'><div id='348msgdesc'></div><b>Unable to create local users in Chinese, Japanese and Korean during device setup</b><div>When setting up a new Windows device using the Out of Box Experience (OOBE), you might be unable to create a local user when using Input Method Editor (IME). This issue might affect you if you are using the IME for Chinese, Japanese, or Korean languages.</div><div><br></div><div><strong>Note</strong> This issue does not affect using a Microsoft Account during OOBE.</div><div><br></div><div><strong>Affected platforms:</strong></div><ul><li>Client: Windows 10, version 1909; Windows 10, version 1903; Windows 10, version 1809; Windows 10 Enterprise LTSC 2019; Windows 10, version 1803; Windows 10, version 1709</li><li>Server: Windows Server, version 1909; Windows Server, version 1903; Windows Server, version 1809; Windows Server 2019; Windows Server, version 1803; Windows Server, version 1709</li></ul><div></div><div><strong>Resolution:</strong> This issue was resolved in <a href='https://support.microsoft.com/help/4534318' target='_blank'>KB4534318</a>.</div><br><a href ='#348msg'>Back to top</a></td><td>OS Build 16299.1387<br><br>September 10, 2019<br><a href ='https://support.microsoft.com/help/4516066' target='_blank'>KB4516066</a></td><td>Resolved<br><a href = 'https://support.microsoft.com/help/4534318' target='_blank'>KB4534318</a></td><td>Resolved:<br>January 23, 2020 <br>02:00 PM PT<br><br>Opened:<br>October 29, 2019 <br>05:15 PM PT</td></tr>
+      </table>
+      "
+
 - title: September 2019
 - items:
   - type: markdown
