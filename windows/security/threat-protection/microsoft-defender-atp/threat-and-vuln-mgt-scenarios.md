@@ -174,7 +174,7 @@ DeviceTvmSoftwareInventoryVulnerabilities
 | where IsExploitAvailable == 1 and CvssScore >= 7
 | summarize NumOfVulnerabilities=dcount(CveId), 
 DeviceName=any(DeviceName) by DeviceId 
-| join kind =inner(AlertEvents) on DeviceId  
+| join kind =inner(DeviceAlertEvents) on DeviceId  
 | summarize NumOfVulnerabilities=any(NumOfVulnerabilities), 
 DeviceName=any(DeviceName) by DeviceId, AlertId 
 | project DeviceName, NumOfVulnerabilities, AlertId  
