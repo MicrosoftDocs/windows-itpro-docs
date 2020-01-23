@@ -1,15 +1,18 @@
 ---
 title: Clear the Internet Explorer cache from a command line
 description: Introduces command-line commands and a sample batch file for clearing the IE cache.
-author: ramakoni1
-manager: dcscontentpm
-ms.prod: internet-explorer
-ms.topic: kb-support
-ms.author: ramakoni
-ms.custom: CI=111020
-ms.reviewer: ramakoni, DEV_Triage
 audience: ITPro
+manager: msmets
+author: ramakoni1
+ms.author: ramakoni
+ms.reviewer: ramakoni, DEV_Triage
+ms.prod: internet-explorer
+ms.technology:
+ms.topic: kb-support
+ms.custom: CI=111020
 ms.localizationpriority: Normal
+# localization_priority: medium
+# ms.translationtype: MT
 ms.date: 01/22/2020
 ---
 # How to clear Internet Explorer cache by using the command line

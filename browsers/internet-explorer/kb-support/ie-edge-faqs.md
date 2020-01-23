@@ -1,15 +1,18 @@
 ---
 title: IE and Microsoft Edge FAQ for IT Pros
 description: Describes frequently asked questions about Internet Explorer and Microsoft Edge for IT professionals.
-author: ramakoni1
-manager: dcscontentpm
-ms.prod: internet-explorer
-ms.topic: kb-support
-ms.author: ramakoni
-ms.custom: CI=111020
-ms.reviewer: ramakoni
 audience: ITPro
+manager: msmets
+author: ramakoni1
+ms.author: ramakoni
+ms.reviewer: ramakoni, DEV_Triage
+ms.prod: internet-explorer
+ms.technology:
+ms.topic: kb-support
+ms.custom: CI=111020
 ms.localizationpriority: Normal
+# localization_priority: medium
+# ms.translationtype: MT
 ms.date: 01/22/2020
 ---
 # Internet Explorer and Microsoft Edge frequently asked questions (FAQ) for IT Pros
