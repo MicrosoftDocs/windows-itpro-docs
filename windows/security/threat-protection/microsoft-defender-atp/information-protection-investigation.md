@@ -59,4 +59,4 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
 
 >[!TIP]
->These data points are also exposed through the ‘FileCreationEvents’ in advanced hunting, allowing advanced queries and schedule detection to take into account sensitivity labels and file protection status. 
+>These data points are also exposed through the ‘DeviceFileEvents’ in advanced hunting, allowing advanced queries and schedule detection to take into account sensitivity labels and file protection status. 

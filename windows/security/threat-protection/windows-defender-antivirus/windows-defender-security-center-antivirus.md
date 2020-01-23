@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
 ---
@@ -47,7 +46,7 @@ See the [Windows Security topic](/windows/threat-protection/windows-defender-sec
 
 2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
+    ![Screenshot of the Virus & threat protection settings label in the Windows Security app](images/defender/wdav-protection-settings-wdsc.png)
     
 ## Comparison of settings and functions of the old app and the new app
 
@@ -96,7 +95,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 3. Click **Virus & threat protection updates**. The currently installed version is displayed along with some information about when it was downloaded. You can check this against the latest version available for manual download, or review the change log for that version.
 
-![Security intelligence version number information](images/defender/wdav-wdsc-defs.png)
+    ![Security intelligence version number information](images/defender/wdav-wdsc-defs.png)
 
 4. Click **Check for updates** to download new protection updates (if there are any).
 
@@ -111,9 +110,9 @@ This section describes how to perform some of the most common tasks when reviewi
 
 4. Toggle the **Real-time protection** switch to **On**.
 
->[!NOTE]
->If you switch **Real-time protection** off, it will automatically turn back on after a short delay. This is to ensure you are protected from malware and threats.  
->If you install another antivirus product, Windows Defender AV will automatically disable itself and will indicate this in the Windows Security app. A setting will appear that will allow you to enable [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md).
+    >[!NOTE]
+    >If you switch **Real-time protection** off, it will automatically turn back on after a short delay. This is to ensure you are protected from malware and threats.  
+    >If you install another antivirus product, Windows Defender AV will automatically disable itself and will indicate this in the Windows Security app. A setting will appear that will allow you to enable [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md).
 
 
 <a id="exclusions"></a>
@@ -129,18 +128,20 @@ This section describes how to perform some of the most common tasks when reviewi
 4. Under the **Exclusions** setting, click **Add or remove exclusions**. 
 
 5. Click the plus icon to choose the type and set the options for each exclusion. 
-
 <a id="detection-history"></a>
 
 ### Review threat detection history in the Windows Defender Security Center app
-1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
+
+  1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or 
+  searching the start menu for **Defender**.
  
-2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
- 
-3. Click **Threat history**.
- 
-4. Click **See full history** under each of the categories (**Current threats**, **Quarantined threats**, **Allowed threats**).
- 
+  2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+
+  3. Click **Threat history**
+  
+  4. Click **See full history** under each of the categories (**Current threats**, **Quarantined threats**, 
+  **Allowed threats**).
+
 <a id="ransomware"></a>
 
 ### Set ransomware protection and recovery options

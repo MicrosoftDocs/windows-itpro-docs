@@ -220,7 +220,6 @@ If Windows cannot load the system registry hive into memory, you must restore th
 
 If the problem persists, you may want to restore the system state backup to an alternative location, and then retrieve the registry hives to be replaced.
 
-
 ## Kernel Phase
 
 If the system gets stuck during the kernel phase, you experience multiple symptoms or receive multiple error messages. These include, but are not limited to, the following:
@@ -228,8 +227,9 @@ If the system gets stuck during the kernel phase, you experience multiple sympto
 -   A Stop error appears after the splash screen (Windows Logo screen).
 
 -   Specific error code is displayed.
-    For example, "0x00000C2" , "0x0000007B" , "inaccessible boot device" and so on.
-    [Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device](https://docs.microsoft.com/windows/client-management/troubleshoot-inaccessible-boot-device)
+    For example, "0x00000C2" , "0x0000007B" , "inaccessible boot device" and so on.  
+    - [Advanced troubleshooting for Stop error 7B or Inaccessible_Boot_Device](https://docs.microsoft.com/windows/client-management/troubleshoot-inaccessible-boot-device)
+    - [Advanced troubleshooting for Event ID 41 "The system has rebooted without cleanly shutting down first"](troubleshoot-event-id-41-restart.md)
 
 -   The screen is stuck at the "spinning wheel" (rolling dots) "system busy" icon.
 

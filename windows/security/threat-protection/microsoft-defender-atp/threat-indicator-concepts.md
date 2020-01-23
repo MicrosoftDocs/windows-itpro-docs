@@ -50,5 +50,19 @@ Here is an example of an IOC:
 
 IOCs have a many-to-one relationship with alert definitions such that an alert definition can have many IOCs that correspond to it.
 
+## In this section
+
+Topic | Description
+:---|:---
+[Pull detections to your SIEM tools](configure-siem.md)| Learn about different ways to pull detections.
+[Enable SIEM integration in Microsoft Defender ATP](enable-siem-integration.md)| Learn about enabling the SIEM integration feature in the **Settings** page in the portal so that you can use and generate the required information to configure supported SIEM tools.
+[Configure Splunk to pull Microsoft Defender ATP detections](configure-splunk.md)| Learn about installing the REST API Modular Input App and other configuration settings to enable Splunk to pull Microsoft Defender ATP detections.
+[Configure HP ArcSight to pull Microsoft Defender ATP detections](configure-arcsight.md)| Learn about installing the HP ArcSight REST FlexConnector package and the files you need to configure ArcSight to pull Microsoft Defender ATP detections.
+[Microsoft Defender ATP Detection fields](api-portal-mapping.md) | Understand what data fields are exposed as part of the alerts API and how they map to Microsoft Defender Security Center.
+[Pull Microsoft Defender ATP detections using REST API](pull-alerts-using-rest-api.md) | Use the Client credentials OAuth 2.0 flow to pull detections from Microsoft Defender ATP using REST API.
+[Troubleshoot SIEM tool integration issues](troubleshoot-siem.md) | Address issues you might encounter when using the SIEM integration feature.
+
+
+
 ## Related topics
 - [Manage indicators](manage-indicators.md)

@@ -18,10 +18,18 @@ ms.topic: article
 
 # Get machineAction API
 
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Get action performed on a machine.
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+
+## API description
+Retrieves specific [Machine Action](machineaction.md) by its ID.
+
+
+## Limitations
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
@@ -77,15 +85,17 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#MachineActions/$entity",
-    "id": "2e9da30d-27f6-4208-81f2-9cd3d67893ba",
-    "type": "RunAntiVirusScan",
-    "requestor": "Analyst@contoso.com",
-    "requestorComment": "Check machine for viruses due to alert 3212",
+    "id": "5382f7ea-7557-4ab7-9782-d50480024a4e",
+    "type": "Isolate",
+	"scope": "Selective",
+    "requestor": "Analyst@TestPrd.onmicrosoft.com",
+    "requestorComment": "test for docs",
     "status": "Succeeded",
-    "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
-    "creationDateTimeUtc": "2018-12-04T12:18:27.1293487Z",
-    "lastUpdateTimeUtc": "2018-12-04T12:18:57.5511934Z",
-	"relatedFileInfo": null
+    "machineId": "7b1f4967d9728e5aa3c06a9e617a22a4a5a17378",
+    "computerDnsName": "desktop-test",
+    "creationDateTimeUtc": "2019-01-02T14:39:38.2262283Z",
+    "lastUpdateDateTimeUtc": "2019-01-02T14:40:44.6596267Z",
+    "relatedFileInfo": null
 }
 
 
