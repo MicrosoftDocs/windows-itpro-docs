@@ -38,4 +38,4 @@ The Configuration Manager poster is one page in landscape mode (17x11). Click th
 ## See also
 
 [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)<br>
-[Scenarios to deploy enterprise operating systems with Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems)
+[Scenarios to deploy enterprise operating systems with Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems)
