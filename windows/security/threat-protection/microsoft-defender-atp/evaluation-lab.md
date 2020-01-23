@@ -57,21 +57,23 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
 
 2. Depending on your evaluation needs, you can choose to setup an environment with fewer machines for a longer period or more machines for a shorter period. Select your preferred lab configuration then select **Next**.
 
-    ![Image of lab configuration options](images/lab-creation-page.png)
+    ![Image of lab configuration options](images/lab-creation-page.png) 
 
 
-3. Select the threat simulation agent you'd like to use.
+3. Select the threat simulation agent you'd like to use and enter your details.
 
     >[!NOTE]
     >PLACEHOLDER ... By agreeing to install the selected simulator, you agree that the details you provided ....INSERT APPROVED LEGAL STATEMENT HERE FROM CELA!!!! 
 
+    ADD IMAGE HERE OF THE THREAT SIMULATOR SELECTION PAGE!!!
 
+4.  Review the summary and select **Setup Lab**.  
 
 After the lab setup process is complete, you can add machines and run simulations. 
 
 You can add Windows 10 or Windows Server 2019 machines. These test machines come pre-configured to have the latest and greatest OS versions with the right security components in place and Office 2019 Standard installed.
 
-Microsoft Defender ATP has partnered with industry leading threat simulation platforms to help you test out the Microsoft Defender ATP capabilities.  Install your preferred simulator, run scenarios within the evaluation lab, and instantly see how the platform performs.
+You can also install threat simulators. Microsoft Defender ATP has partnered with industry leading threat simulation platforms to help you test out the Microsoft Defender ATP capabilities.  Install your preferred simulator, run scenarios within the evaluation lab, and instantly see how the platform performs.
 
 
 
@@ -130,18 +132,27 @@ The environment will reflect your test machine status through the evaluation - i
 
 After adding machines, you can choose to install threat simulators. 
 
-## Install threat simulators
+## Run threat simulations
+Running threat simulations using third-party platforms is a good way to evaluate Microsoft Defender ATP capabilities within the confines of a lab environment.
 
+>[!NOTE]
+>Before you can run simulations, ensure the following requirements are met:
+>- Machines must be added  to the evaluation lab
+>- Threat simulators must be installed in the evaluation lab
 
-Microsoft Defender ATP supports the following threat simulators:
-- AttackIQ - Packages adversarial behavior including MITRE ATT&CK tactics, techniques, and procedures into a fully automated platform allowing you to continuously test and measure the efficacy of your security controls.
+1. From the portal select **Run simulation**.
 
-1. 
+2. Select a threat simulator.
 
-2.   
+3. Choose a simulation or look through the simulation gallery to browse through the available simulations.
+
+4. Select the devices where you'd like to run the simulation on.
+
+5. Select **Run**.
+
 
 ## Simulate attack scenarios
-Use the test machines to run attack simulations by connecting to them. 
+Use the test machines to run your own attack simulations by connecting to them. 
 
 If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials). These scripts are safe, documented, and easy to use. These scenarios will reflect Microsoft Defender ATP capabilities and walk you through investigation experience.
 
@@ -176,7 +187,10 @@ Hunt for attack evidence through advanced hunting by using the rich query langua
 
 
 ## Simulation results
-Get a full overview of the simulation results, all in one place, allowing you to drill down to the relevant pages with every detail you need.
+Get a full overview of the simulation results, all in one place, allowing you to drill down to the relevant pages with every detail you need by selecting the **Simulations** tab.
+
+
+>INSERT IMAGE OF NEW  SIMULATIONS TAB!!!!
 
 View the machine details page by selecting the machine from the table. You'll be able to drill down on relevant alerts and investigations by exploring the rich context provided on the attack simulation. 
 
@@ -192,6 +206,9 @@ At a glance, you'll quickly be able to see:
 - Threat categories observed
 - Detection sources
 - Automated investigations
+
+## View the simulation gallery
+
 
 ## Provide feedback
 Your feedback helps us get better in protecting your environment from advanced attacks. Share your experience and impressions from product capabilities and evaluation results.
