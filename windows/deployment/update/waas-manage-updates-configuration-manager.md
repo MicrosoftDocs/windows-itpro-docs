@@ -307,7 +307,7 @@ With the task sequence created, you’re ready to deploy it. If you’re using t
 
 ## See also
 
-[Manage Windows as a service using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmbr/osd/deploy-use/manage-windows-as-a-service)
+[Manage Windows as a service using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/manage-windows-as-a-service)
 
 
 ## Related topics
