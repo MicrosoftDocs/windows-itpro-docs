@@ -16,9 +16,11 @@
 ## [Install localized version of HoloLens (1st gen)](hololens1-install-localized.md)
 ## [Getting around HoloLens (1st gen)](hololens1-basic-usage.md)
 
-# HoloLens in commercial environments
-## [Commercial feature overview](hololens-commercial-features.md)
+# Deploying HoloLens and Mixed Reality Apps in Commercial Environments
 ## [Deployment planning](hololens-requirements.md)
+## [Commercial feature overview](hololens-commercial-features.md)
+## [Lincense Requriements](hololens-licenses-requirements.md)
+## [Commercial Infrastructure Guidance](hololens-commercial-infrastructure)
 ## [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 ## [Configure HoloLens using a provisioning package](hololens-provisioning.md)
 ## [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
