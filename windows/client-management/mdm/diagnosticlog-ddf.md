@@ -1806,7 +1806,7 @@ The content below are the latest versions of the DDF files:
                     <Replace />
                   </AccessType>
                   <DefaultValue>4</DefaultValue>
-                  <Description>This node is used for setting or getting the block size (in Kilobytes) for the download of assoicated log file. The value range is 1~16. Default value is 4.</Description>
+                  <Description>This node is used for setting or getting the block size (in Kilobytes) for the download of associated log file. The value range is 1~16. Default value is 4.</Description>
                   <DFFormat>
                     <int />
                   </DFFormat>
