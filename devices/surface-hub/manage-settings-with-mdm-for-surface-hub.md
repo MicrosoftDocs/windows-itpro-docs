@@ -19,9 +19,8 @@ ms.localizationpriority: medium
 Surface Hub and other Windows 10 devices allow IT administrators to manage settings and policies using a mobile device management (MDM) provider. A built-in management component communicates with the management server, so there is no need to install additional clients on the device. For more information, see [Windows 10 mobile device management](https://msdn.microsoft.com/library/windows/hardware/dn914769.aspx).
 
 Surface Hub has been validated with Microsoft’s first-party MDM providers:
-- On-premises MDM with Microsoft Endpoint Configuration Manager (beginning in version 1602)
-- Hybrid MDM with Microsoft Endpoint Configuration Manager and Microsoft Intune
 - Microsoft Intune standalone
+- On-premises MDM with Microsoft Endpoint Configuration Manager
 
 You can also manage Surface Hubs using any third-party MDM provider that can communicate with Windows 10 using the MDM protocol.
 
@@ -32,7 +31,7 @@ You can enroll your Surface Hubs using bulk, manual, or automatic enrollment.
 **To configure bulk enrollment**
 - Surface Hub supports the [Provisioning CSP](https://msdn.microsoft.com/library/windows/hardware/mt203665.aspx) for bulk enrollment into MDM. For more information, see [Windows 10 bulk enrollment](https://msdn.microsoft.com/library/windows/hardware/mt613115.aspx).<br>
 --OR--
-- If you have an on-premises Microsoft Endpoint Configuration Manager infrastructure, see [How to bulk enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/mt627898.aspx).
+- If you have an on-premises Microsoft Endpoint Configuration Manager infrastructure, see [How to bulk enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm).
 
 ### Manual enrollment
 **To configure manual enrollment**

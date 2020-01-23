@@ -1232,7 +1232,7 @@ You can use Windows Deployment Services in conjunction with MDT to automatically
 
 You can use Windows Deployment Services in conjunction with Configuration Manager to automatically initiate boot images on target devices. These boot images are Windows PE images that you use to boot the target devices, and then initiate Windows 10, app, and device driver deployment.
 
-#### To configure Windows Deployment Services for Microsoft Configuration Manager
+#### To configure Windows Deployment Services for Microsoft Endpoint Configuration Manager
 
 1. Set up and configure Windows Deployment Services.
 
