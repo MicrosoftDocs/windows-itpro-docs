@@ -305,7 +305,7 @@ The OMA-URI references for these settings are as follows:
 > Because of an update to the BitLocker Policy CSP, if the device uses Windows 10 version 1809 or later, you can use an endpoint protection policy to enforce silent BitLocker Device Encryption even if the device is not HSTI-compliant.
 
 > [!NOTE]
-> If the **Waiting for other disk encryption** setting is set to **Not configured**, you have to manually start the BitLocker Drive Encryption wizard.  
+> If the **Warning for other disk encryption** setting is set to **Not configured**, you have to manually start the BitLocker Drive Encryption wizard.  
 
 If the device does not support Modern Standby but is HSTI-compliant, and it uses a version of Windows that is earlier than Windows 10, version 1803, an endpoint protection policy that has the settings that are described in this article delivers the policy configuration to the device. However, Windows then notifies the user to manually enable BitLocker Drive Encryption. To do this, the user selects the notification. This action starts the BitLocker Drive Encryption wizard.  
 
