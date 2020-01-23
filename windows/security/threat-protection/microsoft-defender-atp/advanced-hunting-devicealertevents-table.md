@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 10/08/2019
+ms.date: 01/22/2020
 ---
 
 # DeviceAlertEvents
