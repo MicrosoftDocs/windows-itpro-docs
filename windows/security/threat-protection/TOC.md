@@ -114,7 +114,7 @@
 #### [Use shared queries](microsoft-defender-atp/advanced-hunting-shared-queries.md)
 #### [Advanced hunting schema reference]()
 ##### [Understand the schema](microsoft-defender-atp/advanced-hunting-schema-reference.md)
-##### [AlertEvents](microsoft-defender-atp/advanced-hunting-alertevents-table.md)
+##### [DeviceAlertEvents](microsoft-defender-atp/advanced-hunting-devicealertevents-table.md)
 ##### [DeviceFileEvents](microsoft-defender-atp/advanced-hunting-devicefileevents-table.md)
 ##### [DeviceImageLoadEvents](microsoft-defender-atp/advanced-hunting-deviceimageloadevents-table.md)
 ##### [DeviceLogonEvents](microsoft-defender-atp/advanced-hunting-devicelogonevents-table.md)
