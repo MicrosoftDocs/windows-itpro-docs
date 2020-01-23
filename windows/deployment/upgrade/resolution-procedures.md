@@ -601,7 +601,7 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 
 <tr>
 <td>0x8007002 </td>
-<td>This error is specific to upgrades using System Center Configuration Manager 2012 R2 SP1 CU3 (5.00.8238.1403)</td>
+<td>This error is specific to upgrades using System Center 2012 Configuration Manager R2 SP1 CU3 (5.00.8238.1403)</td>
 <td>Analyze the SMSTS.log and verify that the upgrade is failing on &quot;Apply Operating system&quot; Phase: Error 80072efe DownloadFileWithRanges() failed. 80072efe. ApplyOperatingSystem (0x0760)
 <br>The error 80072efe means that the connection with the server was terminated abnormally.
 <br>To resolve this issue, try the OS Deployment test on a client in same VLAN as the Configuration Manager server. Check the network configuration for random client-server connection issues happening on the remote VLAN.
