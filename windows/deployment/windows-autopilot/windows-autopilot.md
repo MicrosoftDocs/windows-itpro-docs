@@ -58,7 +58,7 @@ From the IT pro's perspective, the only interaction required from the end user i
 
 ## Requirements
 
-Windows 10 version 1703 or higher is required to use Windows Autopilot. See [Windows Autopilot requirements](windows-autopilot-requirements.md) for detailed information on software, configuration, network, and licensing requirements.
+A [supported version](https://docs.microsoft.com/windows/release-information/) of Windows 10 semi-annual channel is required to use Windows Autopilot. Windows 10 Enterprise LTSC 2019 is also supported. See [Windows Autopilot requirements](windows-autopilot-requirements.md) for detailed information on software, configuration, network, and licensing requirements.
 
 ## Related topics
 
