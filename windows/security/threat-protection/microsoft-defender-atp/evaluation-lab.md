@@ -208,7 +208,13 @@ At a glance, you'll quickly be able to see:
 - Automated investigations
 
 ## View the simulation gallery
+You can view all the available silumations by going to  **Simulations and tutorials**  from the menu. 
 
+From there, you can select **Run simuation**. 
+
+
+
+>NEED MORE CONTENT HERE!!!!  
 
 ## Provide feedback
 Your feedback helps us get better in protecting your environment from advanced attacks. Share your experience and impressions from product capabilities and evaluation results.
