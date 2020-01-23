@@ -20,7 +20,7 @@
 ## [Deployment planning](hololens-requirements.md)
 ## [Commercial feature overview](hololens-commercial-features.md)
 ## [Lincense Requriements](hololens-licenses-requirements.md)
-## [Commercial Infrastructure Guidance](hololens-commercial-infrastructure)
+## [Commercial Infrastructure Guidance](hololens-commercial-infrastructure.md)
 ## [Unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md)
 ## [Configure HoloLens using a provisioning package](hololens-provisioning.md)
 ## [Enroll HoloLens in MDM](hololens-enroll-mdm.md)
