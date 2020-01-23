@@ -67,7 +67,7 @@ Area | Description
 **Top exposed machines** | See the exposed machine names and their exposure level. You can click each machine name from the list and it will take you to the machine page where you can view the alerts, risks, incidents, security recommendations, installed software, discovered vulnerabilities associated with the exposed machines. You can also do other EDR-related tasks in it, such as: manage tags, initiate automated investigations, initiate a live response session, collect an investigation package, run antivirus scan, restrict app execution, and isolate machine. You can also click **Show more** to see the rest of the exposed machines list.
 
 > [!NOTE]
-> Machines with no alerts seen in the last 30 days do not count towards the exposure score of Threat & Vulnerability Management.
+> Machines that are not active in the last 30 days are not factored in on the data that reflects your organization's Threat & Vulnerability Management exposure score and configuration score.
 
 See [Microsoft Defender ATP icons](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection#windows-defender-atp-icons) for more information on the icons used throughout the portal.
 
