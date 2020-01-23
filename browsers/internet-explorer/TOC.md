@@ -187,5 +187,5 @@
 ### [Internet Explorer Setup command-line options and return codes](ie11-ieak/ie-setup-command-line-options-and-return-codes.md)
 
 ## Troubleshooting
-### [Clear the Internet Explorer cache from a command line](/../troubleshooting/clear-ie-cache-from-command-line.md)
-### [IE and Microsoft Edge FAQ for IT Pros](/../troubleshooting/ie-edge-faqs.md)
+### [Clear the Internet Explorer cache from a command line](../kb-support/clear-ie-cache-from-command-line.md)
+### [Internet Explorer and Microsoft Edge FAQ for IT Pros](../kb-support/ie-edge-faqs.md)

@@ -1,16 +1,16 @@
 ---
 title: IE and Microsoft Edge FAQ for IT Pros
 description: Describes frequently asked questions about Internet Explorer and Microsoft Edge for IT professionals.
-author: ramakoni
+author: ramakoni1
 manager: dcscontentpm
 ms.prod: internet-explorer
-ms.topic: troubleshooting 
+ms.topic: kb-support
 ms.author: ramakoni
 ms.custom: CI=111020
 ms.reviewer: ramakoni
 audience: ITPro
 ms.localizationpriority: Normal
-ms.date: 01/20/2020
+ms.date: 01/22/2020
 ---
 # Internet Explorer and Microsoft Edge frequently asked questions (FAQ) for IT Pros
 
@@ -35,7 +35,7 @@ For more information about how Internet Explorer handles cookies, see the follow
 To see where Internet Explorer stores its cookies, follow these steps:
 
 1. Start File Explorer.
-2. Select **Views** > **Change folder and search options**.
+2. Select **Views** \> **Change folder and search options**.
 3. In the **Folder Options** dialog box, select **View**.
 4. In **Advanced settings**, select **Do not show hidden files, folders, or drivers**.
 5. Clear **Hide protected operation system files (Recommended)**.
@@ -66,12 +66,10 @@ For more information, see [Internet Explorer Cookie Internals (FAQ)](https://blo
 
 #### Additional information about cookie limits
 
-**What does the Cookie RFC allow?** 
-
+**What does the Cookie RFC allow?**  
 RFC 2109 defines how cookies should be implemented, and it defines minimum values that browsers support. According to the RFC, browsers would ideally have no limits on the size and number of cookies that a browser can handle. To meet the specifications, the user agent should support the following:
 
 - At least 300 cookies total
-
 - At least 20 cookies per unique host or domain name
 
 For practicality, individual browser makers set a limit on the total number of cookies that any one domain or unique host can set. They also limit the total number of cookies that can be stored on a computer.
@@ -98,14 +96,12 @@ function FindProxyForURL(url, host)
 
 For more information about how to write a PAC file and about the different functions in a PAC file, see [the FindProxyForURL website](https://findproxyforurl.com/).
 
-**Third-party information disclaimer**
-
+**Third-party information disclaimer**  
 The third-party products that this article discusses are manufactured by companies that are independent of Microsoft. Microsoft makes no warranty, implied or otherwise, about the performance or reliability of these products.
 
 ### How to improve performance by using PAC scripts
 
 - [Browser is slow to respond when you use an automatic configuration script](https://support.microsoft.com/help/315810/browser-is-slow-to-respond-when-you-use-an-automatic-configuration-scr)
-
 - [Optimizing performance with automatic Proxyconfiguration scripts (PAC)](https://blogs.msdn.microsoft.com/askie/2014/02/07/optimizing-performance-with-automatic-proxyconfiguration-scripts-pac/)
 
 ## Other questions
@@ -135,13 +131,13 @@ For more information, see the following articles:
 
 ### Where to find Internet Explorer security zones registry entries
 
-Most of the Internet Zone entries can be found in [Internet Explorer security zones registry entries for advanced users](https://support.microsoft.com/help/182569/internet-explorer-security-zones-registry-entries-for-advanced-users). 
+Most of the Internet Zone entries can be found in [Internet Explorer security zones registry entries for advanced users](https://support.microsoft.com/help/182569/internet-explorer-security-zones-registry-entries-for-advanced-users).
+
 This article was written for Internet Explorer 6 but is still applicable to Internet Explorer 11.
 
 The default Zone Keys are stored in the following locations:
 
 - HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones
-
 - HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones
 
 ### Why don't HTML5 videos play in Internet Explorer 11?
@@ -151,7 +147,7 @@ To play HTML5 videos in the Internet Zone, use the default settings or make sure
 - 0 (the default value): Allow
 - 3: Disallow
 
-This key is read by the **URLACTION_ALLOW_AUDIO_VIDEO 0x00002701** URL action flag that determines whether media elements (audio and video) are allowed in pages in a URL security zone.
+This key is read by the **URLACTION\_ALLOW\_AUDIO\_VIDEO 0x00002701** URL action flag that determines whether media elements (audio and video) are allowed in pages in a URL security zone.
 
 For more information, see [Unable to play HTML5 Videos in IE](https://blogs.msdn.microsoft.com/askie/2014/12/31/unable-to-play-html5-videos-in-ie/).
 
@@ -159,7 +155,7 @@ For Windows 10 N and Windows KN editions, you must also download the feature pac
 
 For more information about how to check Windows versions, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-version-am-i-running)
 
-### What is the Enterprise Mode Site List Portal? 
+### What is the Enterprise Mode Site List Portal?
 
 This is a new feature to add sites to your enterprise mode site list XML. For more information, see [Enterprise Mode Site List Portal](https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal).
 
@@ -185,35 +181,31 @@ For more information about how to configure TLS/SSL for Internet Explorer, see [
 
 Site to Zone usually refers to one of the following:
 
-**Site to Zone Assignment List**
-
+**Site to Zone Assignment List**  
 This is a Group Policy policy setting that can be used to add sites to the various security zones.
 
 The Site to Zone Assignment List policy setting associates sites to zones by using the following values for the Internet security zones:
 
 - Intranet zone
 - Trusted Sites zone
-- Internet zone 
+- Internet zone
 - Restricted Sites zone
 
 If you set this policy setting to **Enabled**, you can enter a list of sites and their related zone numbers. By associating a site to a zone, you can make sure that the security settings for the specified zone are applied to the site.
 
-**Site to Zone Mapping**
-
+**Site to Zone Mapping**  
 Site to Zone Mapping is stored as the name of the key. The protocol is a registry value that has a number that assigns it to the corresponding zone. Internet Explorer will read from the following registry subkeys for the sites that are deployed through the Site to Zone assignment list:
 
-- HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap
-- HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMapKey
+- HKEY\_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap
+- HKEY\_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMapKey
 
-**Site to Zone Assignment List policy**
-
+**Site to Zone Assignment List policy**  
 This policy setting is available for both Computer Configuration and User Configuration:
 
 - Computer Configuration > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page
 - User Configuration > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page
 
-**References**
-
+**References**  
 [How to configure Internet Explorer security zone sites using group polices](https://blogs.msdn.microsoft.com/askie/2012/06/05/how-to-configure-internet-explorer-security-zone-sites-using-group-polices/)
 
 ### What are the limits for MaxConnectionsPerServer, MaxConnectionsPer1_0Server for the current versions of Internet Explorer?
@@ -222,8 +214,6 @@ For more information about these settings and limits, see [Connectivity Enhancem
 
 ### What is the MaxConnectionsPerProxy setting, and what are the maximum allowed values for this setting?
 
-The **MaxConnectionsPerProxy** setting controls the number of connections that a single-user client can maintain to a given host by using a proxy server. 
- 
+The **MaxConnectionsPerProxy** setting controls the number of connections that a single-user client can maintain to a given host by using a proxy server.
+
 For more information, see [Understanding Connection Limits and New Proxy Connection Limits in WinInet and Internet Explorer](https://blogs.msdn.microsoft.com/jpsanders/2009/06/29/understanding-connection-limits-and-new-proxy-connection-limits-in-wininet-and-internet-explorer/).
-
-
