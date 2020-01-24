@@ -23,24 +23,24 @@ ms.topic: article
 
 This topic will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT). It covers the installation of the necessary system prerequisites, the creation of shared folders and service accounts, and the configuration of security permissions in the file system and in Active Directory.
 
-## Requirements
+## Infrastructure
 
 The procedures in this guide use the following fictitious names and infrastructure.
 
-### Network and server infrastructure
+### Network and servers
 
 For the purposes of this topic, we will use three server computers: **DC01**, **MDT01**, and **HV01**.
 - All servers are running Windows Server 2019. 
     - You can use an earlier version of Windows Server with minor modifications to some procedures.
     - Note: Although MDT supports Windows Server 2008 R2, at least Windows Server 2012 R2 or later is requried to perform the procedures in this guide.
-- DC01 is a domain controller, DHCP server, and DNS server for <b>contoso.com</b>, representing the fictitious Contoso Corporation.
-- MDT01 is a domain member server in contoso.com with a data (D:) drive that can store at least 200GB.
-- HV01 is a Hyper-V host computer that is used to build a Windows 10 reference image.
+- **DC01** is a domain controller, DHCP server, and DNS server for <b>contoso.com</b>, representing the fictitious Contoso Corporation.
+- **MDT01** is a domain member server in contoso.com with a data (D:) drive that can store at least 200GB.
+- **HV01** is a Hyper-V host computer that is used to build a Windows 10 reference image.
     - See [Hyper-V requirements](#hyper-v-requirements) below for more information about HV01.
 
 ### Client computers
 
-Several client computers are referenced in this guide using hostnames PC0001 to PC0007.
+Several client computers are referenced in this guide with hostnames of PC0001 to PC0007.
 
 - **PC0001.** A computer running Windows 10 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced as the admin workstation.
   - Client name: PC0001
@@ -64,7 +64,7 @@ For this lab, all server and client computers are on the same subnet. This is no
 
 ### Domain credentials
 
-You can use your own Active Directory domain and credentials, but you'll need to specify your custom information and use it to replace the credentials below that are used in this guide.
+Use your own corporate information to replace the example credentials below that are used in this guide.
 
 **Active Directory domain name**: contoso.com<br>
 **Domain administrator username**: administrator<br>
@@ -78,7 +78,9 @@ You can use your own Active Directory domain and credentials, but you'll need to
 
 These steps assume that you have the MDT01 member server running and configured as a domain member server.
 
-On MTD01, visit the [Download and install the Windows ADK](https://go.microsoft.com/fwlink/p/?LinkId=526803) page and download the following items to the **D:\\Downloads\\ADK** folder on MDT01 (you will need to create this folder):
+On **MTD01**:
+
+Visit the [Download and install the Windows ADK](https://go.microsoft.com/fwlink/p/?LinkId=526803) page and download the following items to the **D:\\Downloads\\ADK** folder on MDT01 (you will need to create this folder):
 - [The Windows ADK for Windows 10](https://go.microsoft.com/fwlink/?linkid=2086042)
 - [The Windows PE add-on for the ADK](https://go.microsoft.com/fwlink/?linkid=2087112)
 - [The Windows System Image Manager (WSIM) 1903 update](https://go.microsoft.com/fwlink/?linkid=2095334)
@@ -86,7 +88,7 @@ On MTD01, visit the [Download and install the Windows ADK](https://go.microsoft.
 >[!TIP]
 >You might need to temporarily disable IE Enhanced Security Configuration for administrators in order to download files from the Internet to the server. This setting can be disabled by using Server Manager (Local Server/Properties).
 
-1. On MDT01, sign in as an administrator in the CONTOSO domain. 
+1. Again, on **MDT01**, ensure that you are signed in as an administrator in the CONTOSO domain.
     - For the purposes of this guide, we are using a Domain Admin account of **administrator** with a password of <b>pass@word1</b>. You can use your own administrator username and password as long as you properly adjust all steps in this guide that use login these credentials.
 2. Start the **ADK Setup** (D:\\Downloads\\ADK\\adksetup.exe), click **Next** twice to accept the default installation parameters, click **Accept** to accept the license agreement, and then on the **Select the features you want to install** page accept the default list of features by clicking **Install**. This will install deployment tools and the USMT. Verify that the installation completes successfully before moving to the next step.
 3. Start the **WinPE Setup** (D:\\Downloads\\ADK\\adkwinpesetup.exe), click **Next** twice to accept the default installation parameters, click **Accept** to accept the license agreement, and then on the **Select the features you want to install** page click **Install**. This will install Windows PE for x86, AMD64, ARM, and ARM64. Verify that the installation completes successfully before moving to the next step.
@@ -101,6 +103,8 @@ On MTD01, visit the [Download and install the Windows ADK](https://go.microsoft.
 >-   Windows PowerShell ([version 5.1](https://www.microsoft.com/download/details.aspx?id=54616) is recommended; type **$host** to check)
 >-   Microsoft .NET Framework
 
+On **MDT01**:
+
 1. Visit the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117) and click **Download MDT**. 
 2. Save the **MicrosoftDeploymentToolkit_x64.msi** file to the D:\\Downloads\\MDT folder on MDT01. 
     - **Note**: As of the publishing date for this guide, the current version of MDT is 8456 (6.3.8456.1000), but a later version will also work.
@@ -108,7 +112,7 @@ On MTD01, visit the [Download and install the Windows ADK](https://go.microsoft.
 
 ## Create the OU structure
 
->**Note**: The following procedures are performed on **DC01**.
+Switch to **DC01** and perform the following procedures on **DC01**:
 
 To create the OU structure, you can use the Active Directory Users and Computers console (dsa.msc), or you can use Windows PowerShell.
 
@@ -184,7 +188,9 @@ If you have the Active Directory Users and Computers console open you can refres
 
 By default MDT stores the log files locally on the client. In order to capture a reference image, you will need to enable server-side logging and, to do that, you will need to have a folder in which to store the logs. For more information, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
 
-1.  On MDT01, sign in as **CONTOSO\\administrator**.
+On **MDT01**:
+
+1.  Sign in as **CONTOSO\\administrator**.
 2.  Create and share the **D:\\Logs** folder by running the following commands in an elevated Windows PowerShell prompt:
 
     ```powershell
@@ -218,7 +224,7 @@ When you have completed all the steps in this section to prepare for deployment,
 
 **Sample files**
 
-The following sample files are also available to help automate some MDT deployment tasks. This guide does not use these files.
+The following sample files are also available to help automate some MDT deployment tasks. This guide does not use these files, but they are made available here so that you can see how some tasks can be automated with Windows PowerShell.
 -   [Gather.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619361). This sample Windows PowerShell script performs the MDT Gather process in a simulated MDT environment. This allows you to test the MDT gather process and check to see if it is working correctly without performing a full Windows deployment.
 -   [Set-OUPermissions.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619362). This sample Windows PowerShell script creates a domain account and then configures OU permissions to allow the account to join machines to the domain in the specified OU.
 -   [MDTSample.zip](https://go.microsoft.com/fwlink/p/?LinkId=619363). This sample web service shows you how to configure a computer name dynamically using MDT.

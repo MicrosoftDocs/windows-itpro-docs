@@ -23,23 +23,23 @@ ms.topic: article
 
 Creating a reference image is important because that image serves as the foundation for the devices in your organization. In this topic, you will learn how to create a Windows 10 reference image using the Microsoft Deployment Toolkit (MDT). You will create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image. After completing the steps outlined in this topic, you will have a Windows 10 reference image that can be used in your deployment solution.
 
-For the purposes of this topic, we will use three computers: DC01, MDT01, and PC0001. 
+>[!NOTE]
+>See [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md) for more information about the server, client, and network infrastructure used in this guide.
+
+For the purposes of this topic, we will use three computers: DC01, MDT01, and PC0001.
 - DC01 is a domain controller for the contoso.com domain.
 - MDT01 is a contoso.com domain member server.
 - PC0001 is a Windows 10 Enterprise x64 client and also a contoso.com domain member.
  
     ![figure 1](../images/mdt-08-fig01.png)
 
->[!NOTE]
->See [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md) for more information about the server, client, and network infrastructure used in this guide.
-
 ## The reference image
 
 The reference image described in this guide is designed primarily for deployment to physical devices. However, the reference image is typically created on a virtual platform, before being automatically run through the System Preparation (Sysprep) tool process and captured to a Windows Imaging (WIM) file. The reasons for creating the reference image on a virtual platform are the following:
-- You reduce development time and can use snapshots to test different configurations quickly.
-- You rule out hardware issues. You simply get the best possible image, and if you have a problem, it's not likely to be hardware related.
-- It ensures that you won't have unwanted applications that could be installed as part of a driver install but not removed by the Sysprep process.
-- It's easy to move between lab, test, and production.
+- To reduce development time and can use snapshots to test different configurations quickly.
+- To rule out hardware issues. You simply get the best possible image, and if you have a problem, it's not likely to be hardware related.
+- To ensures that you won't have unwanted applications that could be installed as part of a driver install but not removed by the Sysprep process.
+- The image is easy to move between lab, test, and production.
 
 ## Set up the MDT build lab deployment share
 
@@ -47,7 +47,9 @@ With Windows 10, there is no hard requirement to create reference images. Howev
 
 ### Create the MDT build lab deployment share
 
-- On MDT01, log on as administrator using a password of <b>pass@word1</b> (credentials from the [prepare for deployment](prepare-for-windows-deployment-with-mdt.md) topic).
+On **MDT01**:
+
+- Sign in as contoso\\administrator using a password of <b>pass@word1</b> (credentials from the [prepare for deployment](prepare-for-windows-deployment-with-mdt.md) topic).
 - Start the MDT deployment workbench, and pin this to the taskbar for easy access.
 - Using the Deployment Workbench, right-click **Deployment Shares** and select **New Deployment Share**.
 - Use the following settings for the New Deployment Share Wizard:
@@ -65,7 +67,10 @@ With Windows 10, there is no hard requirement to create reference images. Howev
 ### Configure permissions for the deployment share
 
 In order to write the reference image back to the deployment share, you need to assign Modify permissions to the MDT Build Account (MDT\_BA) for the **Captures** subfolder in the **D:\\MDTBuildLab** folder
-1.  On MDT01, sign in as **CONTOSO\\admin**.
+
+On **MDT01**:
+
+1.  Ensure you are signed in as **contoso\\administrator**.
 2.  Modify the NTFS permissions for the **D:\\MDTBuildLab\\Captures** folder by running the following command in an elevated Windows PowerShell prompt:
 
     ``` syntax
@@ -85,7 +90,9 @@ MDT supports adding both full source Windows 10 DVDs (ISOs) and custom images t
  
 ### Add Windows 10 Enterprise x64 (full source)
 
-1. Sign on to MDT01 on as **CONTOSO\\administrator** and copy the content of a Windows 10 Enterprise x64 DVD/ISO to the **D:\\Downloads\\Windows 10 Enterprise x64** folder on MDT01, or just insert the DVD or mount an ISO on MDT01. The following example shows the files copied to the D:\\Downloads folder, but you can also choose to import the OS directly from an ISO or DVD.
+On **MDT01**:
+
+1. Sign in as **contoso\\administrator** and copy the content of a Windows 10 Enterprise x64 DVD/ISO to the **D:\\Downloads\\Windows 10 Enterprise x64** folder on MDT01, or just insert the DVD or mount an ISO on MDT01. The following example shows the files copied to the D:\\Downloads folder, but you can also choose to import the OS directly from an ISO or DVD.
 
     ![ISO](../images/iso-data.png)
 
@@ -97,13 +104,15 @@ MDT supports adding both full source Windows 10 DVDs (ISOs) and custom images t
     - Destination directory name: <b>W10EX64RTM</b>
 5. After adding the operating system, in the **Operating Systems / Windows 10** folder, double-click the added operating system name in the **Operating System** node and change the name to: **Windows 10 Enterprise x64 RTM Default Image**. See the following example.
 
-    ![Default image](../images/figure4-deployment-workbench.png)
+    ![Default image](../images/deployment-workbench01.png)
 
->Depending on the DVD you used, there might be multiple editions. For the purposes of this guide, we are using the Windows 10 Enterprise image, but other images will also work.
+>Depending on the DVD you used, there might be multiple editions available. For the purposes of this guide, we are using the Windows 10 Enterprise image, but other images will also work.
 
 ## Add applications
 
 Before you create an MDT task sequence, you need to add any applications and scripts you wish to install to the MDT Build Lab share.
+
+On **MDT01**:
 
 First, create an MDT folder to store the Microsoft applications that will be installed:
 
