@@ -21,9 +21,8 @@ ms.topic: article
 **Applies to**
 - Windows 10
 
-This topic provides an overview of the features, components, and capabilities of the Microsoft Deployment Toolkit (MDT).  
-
-To download the latest version of MDT, visit the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117). When you are ready to start using MDT, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
+This topic provides an overview of the features, components, and capabilities of the [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?LinkId=618117).  
+- When you are ready to start using MDT, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
 ## About MDT
 
@@ -65,7 +64,7 @@ MDT has many useful features, such as:
     The offline USMT backup in action.
 
 - **Install or uninstall Windows roles or features.** Enables you to select roles and features as part of the deployment wizard. MDT also supports uninstall of roles and features.
-- **Microsoft System Center 2012 Orchestrator integration.** Provides the capability to use Orchestrator runbooks as part of the task sequence.
+- **Microsoft System Center Orchestrator integration.** Provides the capability to use Orchestrator runbooks as part of the task sequence.
 - **Support for DaRT.** Supports optional integration of the DaRT components into the boot image.
 - **Support for Microsoft Office.** Provides added support for deploying Microsoft Office.
 - **Support for Modern UI app package provisioning.** Provisions applications based on the new Windows app package standard, which is used in Windows 8 and later.
@@ -84,7 +83,7 @@ If you click **View Script** on the right side, you will get the PowerShell code
 
 ## Deployment shares
 
-A deployment share is essentially a folder on the server that is shared and contains all the setup files and scripts needed for the deployment solution. It also holds the configuration files (called rules) that are gathered when a machine is deployed. These configuration files can reach out to other sources, like a database, external script, or web server to get additional settings for the deployment. For Lite Touch deployments, it is common to have two deployment shares: one for creating the reference images and one for deployment. For Zero Touch, it is common to have only the deployment share for creating reference images because Microsoft System Center 2012 R2 Configuration Manager deploys the image in the production environment.
+A deployment share is essentially a folder on the server that is shared and contains all the setup files and scripts needed for the deployment solution. It also holds the configuration files (called rules) that are gathered when a machine is deployed. These configuration files can reach out to other sources, like a database, external script, or web server to get additional settings for the deployment. For Lite Touch deployments, it is common to have two deployment shares: one for creating the reference images and one for deployment. For Zero Touch, it is common to have only the deployment share for creating reference images because Configuration Manager deploys the image in the production environment.
 
 ## Rules
 
