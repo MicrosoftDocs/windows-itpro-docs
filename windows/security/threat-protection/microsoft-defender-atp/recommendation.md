@@ -45,13 +45,13 @@ Vendor | String | Related vendor name
 recommendedVersion | String | Recommended version
 recommendationCategory | String | Recommendation category. Possible values are: “Accounts”, “Application”, “Network”, “OS”, “SecurityStack
 subCategory | String | Recommendation sub-category
-severityScore | Double | Number of secure score points given
+severityScore | Double | Potential impact of the configuration to the organization’s configuration score (1-10)
 publicExploit | Boolean | Public exploit is available 
 activeAlert | Boolean | Active alert is associated with this recommendation
 associatedThreats | String collection | Threat analytics report is associated with this recommendation
 remediationType | String | Remedation type. Possible values are: “ConfigurationChange”,“Update”,“Upgrade”,”Uninstall”
 Status | Enum | Recommendation exception status. Possible values are: “Active” and “Exception”
-configScoreImpact | Double | Secure score impact
+configScoreImpact | Double | Configuration score impact
 exposureImpacte | Double | Exposure score impact
 totalMachineCount | Long | Number of installed machines
 exposedMachinesCount | Long | Number of installed machines that are exposed to vulnerabilities
