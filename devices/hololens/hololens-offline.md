@@ -141,7 +141,7 @@ To take full advantage of HoloLens functionality, the following endpoints need t
 
 ## References
 
->[!NOTE]
+> [!NOTE]
 > If you are deploying D365 Remote Assist, you will have to enable the endpoints on this [list] (https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) 
 
 - [Configure Windows diagnostic data in your organization] (https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
