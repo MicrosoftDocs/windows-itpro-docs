@@ -136,7 +136,7 @@ Windows ICD in Windows 10, version 1607, supported the following scenarios for I
 
 * **Mobile device enrollment into management** - Enables IT administrators to purchase off-the-shelf retail Windows 10 Mobile devices and enroll them into mobile device management (MDM) before handing them to end-users in the organization. IT administrators can use Windows ICD to specify the management end-point and apply the configuration on target devices by connecting them to a Windows PC (tethered deployment) or through an SD card. Supported management end-points include: 
 
-    * Microsoft Intune hybrid (certificate-based enrollment) 
+    * Microsoft Intune (certificate-based enrollment) 
     * AirWatch (password-string based enrollment) 
     * Mobile Iron (password-string based enrollment) 
     * Other MDMs (cert-based enrollment) 
