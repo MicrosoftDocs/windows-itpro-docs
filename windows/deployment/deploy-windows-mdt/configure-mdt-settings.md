@@ -1,6 +1,6 @@
 ---
 title: Configure MDT settings (Windows 10)
-description: One of the most powerful features in Microsoft Deployment Toolkit (MDT) is its extension capabilities; there is virtually no limitation to what you can do in terms of customization.
+description: One of the most powerful features in Microsoft Deployment Toolkit (MDT) is its extension capabilities. Learn how to customize your environment.
 ms.assetid: d3e1280c-3d1b-4fad-8ac4-b65dc711f122
 ms.reviewer: 
 manager: laurawi
@@ -11,7 +11,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 

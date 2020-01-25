@@ -1,6 +1,6 @@
 ---
 title: Exposure score
-description: Your exposure level reflects how vulnerable your organization is to cybersecurity threats. Apply the Threat & Vulnerability Management security recommendations to keep your exposure level low.
+description: The Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) exposure score reflects how vulnerable your organization is to cybersecurity threats.
 keywords: exposure score, mdatp exposure score, mdatp tvm exposure score, organization exposure score, tvm organization exposure score
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

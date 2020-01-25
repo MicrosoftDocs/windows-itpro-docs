@@ -1,6 +1,6 @@
 ---
 title: Common WDAC deployment scenarios (Windows 10)
-description: Typically, deployment of Windows Defender Application Control happens best in phases, rather than being a feature that you simply “turn on.” The choice and sequence of phases depends on the way various computers and other devices are used in your organization, and to what degree IT manages those devices.
+description: Develop a plan for deploying Windows Defender Application Control (WDAC) in your organization, using these common scenarios.
 keywords: whitelisting, security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10

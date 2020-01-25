@@ -152,7 +152,7 @@ You can also use [Advanced hunting](advanced-hunting-query-language.md) to query
 After running your simulations, we encourage you to walk through the lab progress bar and explore Microsoft Defender ATP features. See if your attacks triggered an automated investigation and remediation, check out the evidence collected and analyzed by the feature.
 
 
-Hunt for attack evidence through Advanced hunting by using the rich query language and raw telemetry and check out some world-wide threats documented in Threat analytics.
+Hunt for attack evidence through advanced hunting by using the rich query language and raw telemetry and check out some world-wide threats documented in Threat analytics.
 
 
 ## Simulation results

@@ -69,6 +69,9 @@ The following steps will guide you through onboarding VDI machines and will high
 
 4. Open a Local Group Policy Editor window and navigate to **Computer Configuration** > **Windows Settings** > **Scripts** > **Startup**.
 
+    >[!NOTE]
+    >Domain Group Policy may also be used for onboarding non-persistent VDI machines.
+
 5. Depending on the method you'd like to implement, follow the appropriate steps: <br>
   **For single entry for each machine**:<br>
   Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. <br><br>

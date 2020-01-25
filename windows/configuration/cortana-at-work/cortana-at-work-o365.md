@@ -1,6 +1,6 @@
 ---
 title: Set up and test Cortana with Office 365 in your organization (Windows 10)
-description: How to connect Cortana to Office 365 so your employees are notified about regular meetings, unusual events, such as meetings over lunch or during a typical commute time, and about early meetings, even setting an alarm so the employee isn’t late.
+description: Learn how to connect Cortana to Office 365 so employees are notified about regular meetings and unusual events. You can even set an alarm for early meetings.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

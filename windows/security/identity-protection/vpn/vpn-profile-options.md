@@ -1,6 +1,6 @@
 ---
 title: VPN profile options (Windows 10)
-description: Virtual private networks (VPN) let you give your users secure remote access to your company network. Windows 10 adds useful new VPN profile options to help you manage how users connect.
+description: Windows 10 adds Virtual Private Network (VPN) profile options to help manage how users connect. VPNs give users secure remote access to the company network.
 ms.assetid: E3F99DF9-863D-4E28-BAED-5C1B1B913523
 ms.reviewer: 
 manager: dansimp
