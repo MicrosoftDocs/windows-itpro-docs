@@ -30,23 +30,19 @@ Starting with Windows Server 2008 R2 and Windows 7, the Negotiate Security Su
 
 When devices are configured to accept authentication requests by using online IDs, Negoexts.dll calls the PKU2U SSP on the computer that's used to log on. The PKU2U SSP obtains a local certificate and exchanges the policy between the peer computers. When it's validated on the peer computer, the certificate within the metadata is sent to the logon peer for validation. It associates the user's certificate to a security token, and then the logon process completes.
 
-> [!Note]
-> The ability to link online IDs can be performed by anyone who has an account that has standard user’s credentials through Credential Manager.
+> [!NOTE]
+> Linking online IDs can be performed by anyone who has an account that has standard user’s credentials through Credential Manager.
  
 This policy isn't configured by default on domain-joined devices. This would disallow the online identities to authenticate to domain-joined computers in Windows 7 and later.
 
 ### Possible values
 
--   **Enabled**
+-   **Enabled**: This setting allows authentication to successfully complete between the two (or more) computers that have established a peer relationship through the use of online IDs. The PKU2U SSP obtains a local certificate and exchanges the policy between the peer devices. When validated on the peer computer, the certificate within the metadata is sent to the logon peer for validation. It associates the user's certificate to a security token, and then the logon process completes.
 
-    This will allow authentication to successfully complete between the two (or more) computers that have established a peer relationship through the use on online IDs. The PKU2U SSP obtains a local certificate and exchanges the policy between the peer devices. When validated on the peer computer, the certificate within the metadata is sent to the logon peer for validation. It associates the user's certificate to a security token, and then the logon process completes.
+    > [!NOTE]
+    > KU2U is disabled by default on Windows Server. Remote desktop connections from a hybrid Azure AD-joined server to an Azure AD-joined Windows 10 device or a Hybrid Azure AD-joined domain member Windows 10 device fail. To resolve this, enable PKU2U on the server.
 
- > [!NOTE]
- > KU2U is disabled by default on Windows Server. Remote desktop connections from a hybrid Azure AD-joined server to an Azure AD-joined Windows 10 device, or Hybrid Azure AD-joined domain member Windows 10 device, fail. To resolve this, enable PKU2U on the server.
-
--   **Disabled**
-
-    This will prevent online IDs from being used to authenticate the user to another computer in a peer-to-peer relationship.
+-   **Disabled**: This setting prevents online IDs from being used to authenticate the user to another computer in a peer-to-peer relationship.
 
 -   ***Not set***. Not configuring this policy prevents online IDs from being used to authenticate the user. This option is the default on domain-joined devices.
 
@@ -77,7 +73,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Enabling this policy setting allows a user’s account on one computer to be associated with an online identity, such as Microsoft account. That account can then log on to a peer device (if the peer device is likewise configured) without the use of a Windows logon account (domain or local). Although this setup is beneficial for workgroups or home groups, in a domain-joined environment it might circumvent your established security policies.
+Enabling this policy setting allows a user’s account on one computer to be associated with an online identity, such as Microsoft account. That account can then log on to a peer device (if the peer device is likewise configured) without the use of a Windows logon account (domain or local). This setup is beneficial for workgroups or home groups. But in a domain-joined environment, it might circumvent established security policies.
 
 ### Countermeasure
 
@@ -85,7 +81,7 @@ Set this policy to *Disabled* or don't configure this security policy for domain
 
 ### Potential impact
 
-If you don't set or you disable this policy, the PKU2U protocol won't be used to authenticate between peer devices, which force users to follow domain-defined access control policies. If you enable this policy, you allow your users to authenticate by using local certificates between systems that are not part of a domain that uses PKU2U. This allows users to share resources between devices.
+If you don't set or you disable this policy, the PKU2U protocol won't be used to authenticate between peer devices, which force users to follow domain-defined access control policies. If you enable this policy, you allow your users to authenticate by using local certificates between systems that aren't part of a domain that uses PKU2U. This configuration allows users to share resources between devices.
 
 ## Related topics
 

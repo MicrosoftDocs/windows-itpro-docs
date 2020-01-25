@@ -24,9 +24,9 @@ ms.date: 04/19/2017
 
 This topic for the IT professional describes how to monitor changes to central access policy and central access rule definitions when you use advanced security auditing options to monitor dynamic access control objects.
 
-Central access policies and rules determine access permissions for multiple files on multiple file servers. So it's important to monitor changes to them. Like user claim and device claim definitions, central access policy and rule definitions reside in Active Directory Domain Services (AD DS). You can monitor them just like any other object in Active Directory. Central access policies and rules are critical elements in a Dynamic Access Control deployment. These policies and rules are stored in AD DS, so they're less likely to be tampered with than other network objects. But it's important to monitor these objects for potential changes in security auditing and to verify that policies are being enforced.
+Central access policies and rules determine access permissions for files on multiple file servers, so it's important to monitor changes to them. Like user claim and device claim definitions, central access policy and rule definitions reside in Active Directory Domain Services (AD DS). You can monitor them just like any other object in Active Directory. These policies and rules are critical elements in a Dynamic Access Control deployment. They are stored in AD DS, so they're less likely to be tampered with than other network objects. But it's important to monitor them for potential changes in security auditing and to verify that policies are being enforced.
 
-Use the following procedures to configure settings to monitor changes to central access policy and central access rule definitions and to verify the changes. These procedures assume that you've configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you haven't yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (demonstration steps)](https://technet.microsoft.com/library/hh846167.aspx).
+Follow these procedures to configure settings to monitor changes to central access policy and central access rule definitions and to verify the changes. These procedures assume that you've configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you haven't yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (demonstration steps)](https://technet.microsoft.com/library/hh846167.aspx).
 
 > [!NOTE]
 > Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
@@ -42,7 +42,7 @@ Use the following procedures to configure settings to monitor changes to central
 7.  Open the Active Directory Administrative Center.
 8.  Under Dynamic Access Control, right-click **Central Access Policies**, and then select **Properties**.
 9.  Select the **Security** tab, select **Advanced** to open the **Advanced Security Settings** dialog box, and then select the **Auditing** tab.
-10. Select **Add**, add a security auditing setting for the container, and then close all security properties dialog boxes.
+10. Select **Add**, add a security auditing setting for the container, and then close all the security properties dialog boxes.
 
 After you configure settings to monitor changes to central access policy and central access rule definitions, verify that the changes are being monitored.
 

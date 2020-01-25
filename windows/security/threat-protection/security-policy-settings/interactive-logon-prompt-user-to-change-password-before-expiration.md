@@ -1,5 +1,5 @@
 ---
-title: Interactive log-on Prompt user to change password before expiration (Windows 10)
+title: Interactive log-on: Prompt user to change password before expiration (Windows 10)
 description: Best practices and security considerations for an interactive log-on prompt for users to change passwords before expiration.
 ms.assetid: 8fe94781-40f7-4fbe-8cfd-5e116e6833e9
 ms.reviewer: 
@@ -26,7 +26,7 @@ This article describes the best practices, location, values, policy management, 
 
 ## Reference
 
-The **Interactive logon: Prompt user to change password before expiration** policy setting determines when users are warned that their passwords are about to expire. This advance warning gives users the time to select a strong password before their current password expires and avoid losing system access.
+This policy setting determines when users are warned that their passwords are about to expire. This warning gives users time to select a strong password before their current password expires and avoid losing system access.
 
 ### Possible values
 
@@ -35,9 +35,9 @@ The **Interactive logon: Prompt user to change password before expiration** poli
 
 ### Best practices
 
--  Configure user passwords to expire periodically. Users need warning that their passwords are going to expire, or they might inadvertently get locked out of the system. This could lead to confusion for users who access the network locally. Or prevent  make it impossible for users who access the network through dial-up or virtual private network (VPN) connections to log on.
+-  Configure user passwords to expire periodically. Users need warning that their passwords are going to expire, or they might  get locked out of the system.
 -  Set **Interactive logon: Prompt user to change password before expiration** to five days. When their password expiration date is five or fewer days away, users will see a dialog box each time that they log on to the domain.
--  Do not set the value to zero, which results in displaying the password expiration warning every time the user logs on.
+-  Don't set the value to zero, which displays the password expiration warning every time the user logs on.
 
 ### Location
 
@@ -70,7 +70,7 @@ None.
 
 ### Group Policy
 
-This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy isn't contained in a distributed GPO, ti can be configured on the local computer through the Local Security Policy snap-in.
+This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy isn't contained in a distributed GPO, it can be configured on the local computer through the Local Security Policy snap-in.
 
 ## Security considerations
 
@@ -78,7 +78,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-If user passwords are configured to expire periodically in your organization, users need to be warned before expiration. Otherwise, they may get locked out of the devices inadvertently. This condition could lead to confusion for users who access the network locally, or make it impossible for users to access your organization's network through dial-up or VPN connections.
+If user passwords are configured to expire periodically in your organization, users need to be warned before expiration. Otherwise, they may get locked out of the devices inadvertently.
 
 ### Countermeasure
 
@@ -86,7 +86,7 @@ Configure the **Interactive logon: Prompt user to change password before expirat
 
 ### Potential impact
 
-Users see a dialog-box prompt to change their password each time that they log on to the domain when their password is configured to expire in 5 or fewer days.
+Users see a dialog-box that prompts them to change their password each time that they log on to the domain when their password is configured to expire in 5 or fewer days.
 
 ## Related topics
 
