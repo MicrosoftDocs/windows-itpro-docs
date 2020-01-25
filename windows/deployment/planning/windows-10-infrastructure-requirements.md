@@ -40,7 +40,7 @@ Significant enhancements in the ADK for Windows 10 include new runtime provisio
 
 Microsoft Deployment Toolkit 2013 Update 1, available for download [here](https://go.microsoft.com/fwlink/p/?LinkId=625079), has also been updated to support Windows 10 and the new ADK; older versions do not support Windows 10. New in this release is task sequence support for Windows 10 in-place upgrades.
 
-For Microsoft Endpoint Configuration Manager, Windows 10 support is offered with various releases:
+For System Center Configuration Manager, Windows 10 support is offered with various releases:
 
 | Release                                     | Windows 10 management? | Windows 10 deployment?                         |
 |---------------------------------------------|------------------------|------------------------------------------------|

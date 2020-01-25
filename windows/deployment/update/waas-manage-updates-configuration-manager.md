@@ -212,10 +212,7 @@ Each time Microsoft releases a new Windows 10 build, it releases a new .iso file
 3. On the **Data Source** page, type the path of the extracted .iso file of the new version of Windows 10 you’re deploying, and then click **Next**.
 
     In this example, the Windows 10 Enterprise 1607 installation media is deployed to \\contoso-cm01\Sources\Operating Systems\Windows 10 Enterprise\Windows 10 Enterprise - Version 1607.
-    
-    >[!NOTE]
-    >Microsoft Endpoint Configuration Manager is required to manage machines running Windows 10, version 1607.
-    
+
 4. On the **General** page, in the **Name** field, type the name of the folder (**Windows 10 Enterprise - Version 1607** in this example). Set the **Version** to **1607**, and then click **Next**.
 
 5. On the **Summary** page, click **Next** to create the package.
