@@ -118,7 +118,7 @@ If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP 
 
 ## Microsoft Defender ATP service backend IP range
 
-If you network devices don't support the URLs white-listed in the prior section, you can use the following information.
+If your network devices don't support the URLs white-listed in the prior section, you can use the following information.
 
 Microsoft Defender ATP is built on Azure cloud, deployed in the following regions:
 

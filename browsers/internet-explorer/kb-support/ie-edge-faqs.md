@@ -8,12 +8,12 @@ ms.author: ramakoni
 ms.reviewer: ramakoni, DEV_Triage
 ms.prod: internet-explorer
 ms.technology:
-ms.topic: troubleshooting
+ms.topic: kb-support
 ms.custom: CI=111020
 ms.localizationpriority: Normal
 # localization_priority: medium
 # ms.translationtype: MT
-ms.date: 01/22/2020
+ms.date: 01/23/2020
 ---
 # Internet Explorer and Microsoft Edge frequently asked questions (FAQ) for IT Pros
 
