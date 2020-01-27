@@ -34,17 +34,17 @@ Custom detection rules built from [Advanced hunting](advanced-hunting-overview.m
 In Microsoft Defender Security Center, go to **Advanced hunting** and select an existing query or create a new query. When using an new query, run the query to identify errors and understand possible results.
 
 #### Required columns in the query results
-To use a query for a custom detection rule, the query must return the `EventTime`, `MachineId`, and `ReportId` columns in the results. Simple queries, such as those that don’t use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.
+To use a query for a custom detection rule, the query must return the `Timestamp`, `DeviceId`, and `ReportId` columns in the results. Simple queries, such as those that don’t use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.
 
-There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by `MachineId`, you can still return `EventTime` and `ReportId` by getting them from the most recent event involving each machine. 
+There are various ways to ensure more complex queries return these columns. For example, if you prefer to aggregate and count by `DeviceId`, you can still return `Timestamp` and `ReportId` by getting them from the most recent event involving each machine. 
 
-The sample query below counts the number of unique machines (`MachineId`) with antivirus detections and uses this count to find only the machines with more than five detections. To return the latest `EventTime` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.
+The sample query below counts the number of unique machines (`DeviceId`) with antivirus detections and uses this count to find only the machines with more than five detections. To return the latest `Timestamp` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.
 
-```
-MiscEvents
-| where EventTime > ago(7d)
+```kusto
+DeviceEvents
+| where Timestamp > ago(7d)
 | where ActionType == "AntivirusDetection"
-| summarize (EventTime, ReportId)=arg_max(EventTime, ReportId), count() by MachineId
+| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 | where count_ > 5
 ```
 
@@ -76,7 +76,7 @@ Whenever a rule runs, similar detections on the same machine could be aggregated
 Your custom detection rule can automatically take actions on files or machines that are returned by the query.
 
 #### Actions on machines
-These actions are applied to machines in the `MachineId` column of the query results:
+These actions are applied to machines in the `DeviceId` column of the query results:
 - **Isolate machine** — applies full network isolation, preventing the machine from connecting to any application or service, except for the Microsoft Defender ATP service. [Learn more about machine isolation](respond-machine-alerts.md#isolate-machines-from-the-network)
 - **Collect investigation package** — collects machine information in a ZIP file. [Learn more about the investigation package](respond-machine-alerts.md#collect-investigation-package-from-machines)
 - **Run antivirus scan** — performs a full Windows Defender Antivirus scan on the machine
@@ -117,7 +117,7 @@ You can also take the following actions on the rule from this page:
 
 - **Run** — run the rule immediately. This also resets the interval for the next run.
 - **Edit** — modify the rule without changing the query
-- **Modify query** — edit the query in Advanced hunting
+- **Modify query** — edit the query in advanced hunting
 - **Turn on** / **Turn off** — enable the rule or stop it from running
 - **Delete** — turn off the rule and remove it
 
@@ -127,5 +127,5 @@ You can also take the following actions on the rule from this page:
 ## Related topic
 - [Custom detections overview](overview-custom-detections.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
-- [Learn the Advanced hunting query language](advanced-hunting-query-language.md)
+- [Learn the advanced hunting query language](advanced-hunting-query-language.md)
 - [View and organize alerts](alerts-queue.md)

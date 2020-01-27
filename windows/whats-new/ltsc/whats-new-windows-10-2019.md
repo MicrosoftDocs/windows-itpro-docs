@@ -70,10 +70,6 @@ But these protections can also be configured separately. And, unlike HVCI, code 
 
 ### Next-gen protection 
 
-#### Office 365 Ransomware Detection
-
-For Office 365 Home and Office 365 Personal subscribers, Ransomware Detection notifies you when your OneDrive files have been attacked and guides you through the process of restoring your files. For more information, see [Ransomware detection and recovering your files](https://support.office.com/en-us/article/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f?ui=en-US&rs=en-US&ad=US)
-
 ### Endpoint detection and response 
 
 Endpoint detection and response is improved. Enterprise customers can now take advantage of the entire Windows security stack with Windows Defender Antivirus **detections** and Device Guard **blocks** being surfaced in the Windows Defender ATP portal. 

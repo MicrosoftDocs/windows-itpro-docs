@@ -1,6 +1,6 @@
 ---
 title: Manage Windows Defender Credential Guard (Windows 10)
-description: Deploying and managing Windows Defender Credential Guard using Group Policy, the registry, or the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool.
+description: Learn how to deploy and manage Windows Defender Credential Guard using Group Policy, the registry, or hardware readiness tools.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -86,6 +86,8 @@ You can do this by using either the Control Panel or the Deployment Image Servic
     ```
     dism /image:<WIM file name> /Enable-Feature /FeatureName:IsolatedUserMode
     ```
+> [!NOTE]
+> In Windows 10, version 1607 and later, the Isolated User Mode feature has been integrated into the core operating system. Running the command in step 3 above is therefore no longer required.
 
 > [!NOTE]
 > You can also add these features to an online image by using either DISM or Configuration Manager.

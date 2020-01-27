@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 12/13/2019
+ms.date: 12/27/2019
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
@@ -24,6 +24,7 @@ This topic lists new and updated topics in the [Client management](index.md) doc
 New or changed topic | Description
 --- | ---
 [Change in default removal policy for external storage media in Windows 10, version 1809](change-default-removal-policy-external-storage-media.md) | New
+[Advanced troubleshooting for Event ID 41 "The system has rebooted without cleanly shutting down first"](troubleshoot-event-id-41-restart.md) | New
 
 ## December 2018
 

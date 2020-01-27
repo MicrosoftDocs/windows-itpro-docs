@@ -46,9 +46,14 @@ documentation](https://docs.microsoft.com/windows/desktop/sysinfo/registry).
 1.  Run regedit from a command prompt to open the Windows Registry
     Editor.
     
-      - Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\Surface\Surface
+      - Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Surface\Surface
         Brightness Control\	
-		
+    
+    If you're running an older version of Surface Brightness control, run the following command instead:
+    
+      - Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\Surface\Surface
+        Brightness Control\
+
 
 | Registry Setting | Data| Description  
 |-----------|------------|---------------

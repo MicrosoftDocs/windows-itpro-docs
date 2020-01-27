@@ -47,7 +47,7 @@ Create the account using the Microsoft 365 admin center or by using PowerShell. 
 
 - **Skype for Business:** For Skype for Business only (on-premises or online), you can enable the Skype for Business object by running **Enable-CsMeetingRoom** to enable features such as Meeting room prompt for audio and Lobby hold.
 
-- **Calendar:** Set **Calendar Auto processing** for this account.
+- **Microsoft Teams and Skype for Business Calendar:** Set [**Calendar Auto processing**](https://docs.microsoft.com/surface-hub/surface-hub-2s-account?source=docs#set-calendar-auto-processing) for this account.
 
 ## Create account using PowerShell
 Instead of using the Microsoft Admin Center portal, you can create the account using PowerShell.

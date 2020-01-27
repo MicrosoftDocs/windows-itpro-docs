@@ -1,6 +1,6 @@
 ---
 title: Planning and deploying advanced security audit policies (Windows 10)
-description: This topic for the IT professional explains the options that security policy planners must consider and the tasks they must complete to deploy an effective security audit policy in a network that includes advanced security audit policies.
+description: Learn which options to consider and tasks to complete, to deploy an effective security audit policy in a network that includes advanced security audit policies.
 ms.assetid: 7428e1db-aba8-407b-a39e-509671e5a442
 ms.reviewer: 
 ms.author: dansimp
