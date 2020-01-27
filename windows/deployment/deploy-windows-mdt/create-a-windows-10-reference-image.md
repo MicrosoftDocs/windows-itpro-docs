@@ -27,9 +27,9 @@ Creating a reference image is important because that image serves as the foundat
 >See [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md) for more information about the server, client, and network infrastructure used in this guide.
 
 For the purposes of this topic, we will use three computers: DC01, MDT01, and PC0001.
-- DC01 is a domain controller for the contoso.com domain.
-- MDT01 is a contoso.com domain member server.
-- PC0001 is a Windows 10 Enterprise x64 client and also a contoso.com domain member.
+   - DC01 is a domain controller for the contoso.com domain.
+   - MDT01 is a contoso.com domain member server.
+   - PC0001 is a Windows 10 Enterprise x64 client and also a contoso.com domain member.
  
     ![figure 1](../images/mdt-08-fig01.png)
 
@@ -155,24 +155,24 @@ Download all three items in this list to the D:\\Downloads folder on MDT01.
 1. After downloading the most current version of the Office Deployment tool from the Microsoft Download Center using the link provided above, run the self-extracting executable file and extract the files to **D:\\Downloads\\Office365**.  The Office Deployment Tool (setup.exe) and several sample configuration.xml files will be extracted.
 2. Using a text editor (such as Notepad), create an XML file in the D:\\Downloads\\Office365 directory with the installation settings for Office 365 ProPlus that are appropriate for your organization. The file uses an XML format, so the file you create must have an extension of .xml but the file can have any filename.
 
- - For example, you can use the following configuration.xml file, which provides these configuration settings:
-   - Install the 64-bit version of Office 365 ProPlus in English directly from the Office Content Delivery Network (CDN) on the internet. Note: 64-bit is now the default and recommended edition. 
-   - Use the Semi-Annual Channel and get updates directly from the Office CDN on the internet. 
-   - Perform a silent installation. You won’t see anything that shows the progress of the installation and you won’t see any error messages.
+    For example, you can use the following configuration.xml file, which provides these configuration settings:
+      - Install the 64-bit version of Office 365 ProPlus in English directly from the Office Content Delivery Network (CDN) on the internet. Note: 64-bit is now the default and recommended edition. 
+      - Use the Semi-Annual Channel and get updates directly from the Office CDN on the internet. 
+      - Perform a silent installation. You won’t see anything that shows the progress of the installation and you won’t see any error messages.
 
- ```xml
- <Configuration>
-  <Add OfficeClientEdition="64" Channel="Broad">
-    <Product ID="O365ProPlusRetail">
-      <Language ID="en-us" />
-    </Product>
-  </Add>
-  <Display Level="None" AcceptEULA="TRUE" />
-  <Updates Enabled="TRUE" />
- </Configuration>
- ```
+     ```xml
+     <Configuration>
+      <Add OfficeClientEdition="64" Channel="Broad">
+        <Product ID="O365ProPlusRetail">
+          <Language ID="en-us" />
+        </Product>
+      </Add>
+      <Display Level="None" AcceptEULA="TRUE" />
+      <Updates Enabled="TRUE" />
+     </Configuration>
+     ```
 
- By using these settings, any time you build the reference image you’ll be installing the most up-to-date Semi-Annual Channel version of Office 365 ProPlus.
+     By using these settings, any time you build the reference image you’ll be installing the most up-to-date Semi-Annual Channel version of Office 365 ProPlus.
 
  >[!TIP]
  >You can also use the web-based interface of the [Office Customization Tool](https://config.office.com/) to help you create your configuration.xml file.
@@ -183,7 +183,7 @@ Download all three items in this list to the D:\\Downloads folder on MDT01.
 
     ![folder](../images/office-folder.png)
 
-  Assuming you have named the file "configuration.xml" as shown above, we will use the command "**setup.exe /configure configuration.xml**" when we create the application in MDT. This will perform the installation of Office 365 ProPlus using the configuration settings in the configuration.xml file.
+  Assuming you have named the file "configuration.xml" as shown above, we will use the command "**setup.exe /configure configuration.xml**" when we create the application in MDT. This will perform the installation of Office 365 ProPlus using the configuration settings in the configuration.xml file. Do not perform this step yet.
 
  >[!IMPORTANT]
  >After Office 365 ProPlus is installed on the reference image, do NOT open any Office programs. if you open an Office program, you are prompted to sign-in, which activates the installation of Office 365 ProPlus. Even if you don't sign in and you close the Sign in to set up Office dialog box, a temporary product key is installed. You don't want any kind of product key for Office 365 ProPlus installed as part of your reference image.
@@ -198,18 +198,25 @@ Additional information
 
 If you need to add many applications, you can take advantage of the PowerShell support that MDT has. To start using PowerShell against the deployment share, you must first load the MDT PowerShell snap-in and then make the deployment share a PowerShell drive (PSDrive).
 
-1.  On MDT01, log on as **CONTOSO\\Administrator**.
+On **MDT01**:
+
+1.  Ensure you are signed in as **contoso\\Administrator**.
 2.  Import the snap-in and create the PSDrive by running the following commands in an elevated PowerShell prompt:
 
     ``` powershell
     Import-Module "C:\Program Files\Microsoft Deployment Toolkit\bin\MicrosoftDeploymentToolkit.psd1"
     New-PSDrive -Name "DS001" -PSProvider MDTProvider -Root "D:\MDTBuildLab"
     ```
+>[!TIP]
+>Use "Get-Command -module MicrosoftDeploymentToolkit" to see a list of available cmdlets
 
 ### Create the install: Microsoft Office 365 Pro Plus - x64
 
 In these steps we assume that you have downloaded the Office Deployment Tool. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to D:\\Downloads\\Office365.
-1.  On MDT01, log on as **CONTOSO\\Administrator**.
+
+On **MDT01**:
+
+1.  Ensure you are signed on as **contoso\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
     ``` powershell
@@ -239,7 +246,10 @@ In these steps we assume that you have downloaded the Office Deployment Tool. Yo
 >We have abbreviated "Microsoft Visual C++ Redistributable" in the $ApplicationName below as "MSVC" to avoid the path name exceeding the maxiumum allowed length of 248 characters.
 
 In these steps we assume that you have downloaded Microsoft Visual C++ Redistributable 2019 - x86. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to D:\\Downloads.
-1.  On MDT01, log on as **CONTOSO\\Administrator**.
+
+On **MDT01**:
+
+1.  Ensure you are signed on as **contoso\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
     ``` powershell
@@ -265,7 +275,10 @@ In these steps we assume that you have downloaded Microsoft Visual C++ Redistrib
 ### Create the install: Microsoft Visual C++ Redistributable 2019 - x64
 
 In these steps we assume that you have downloaded Microsoft Visual C++ Redistributable 2019 - x64. You might need to modify the path to the source folder to reflect your current environment. In this example, the source path is set to D:\\Downloads.
-1.  On MDT01, log on as **CONTOSO\\Administrator**.
+
+On **MDT01**:
+
+1.  Ensure you are signed on as **contoso\\Administrator**.
 2.  Create the application by running the following commands in an elevated PowerShell prompt:
 
     ``` powershell
@@ -288,8 +301,10 @@ Because we use modern virtual platforms for creating our reference images, we do
 
 To create a Windows 10 reference image task sequence, the process is as follows:
 
-1. Using the Deployment Workbench in the MDT Build Lab deployment share, right-click **Task Sequences**, and create a new folder named **Windows 10**.
-2. Expand the **Task Sequences** node, right-click the new **Windows 10** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
+On **MDT01**:
+
+1. Using the Deployment Workbench, under **Deployment Shares > MDT Build Lab** right-click **Task Sequences**, and create a **New Folder** named **Windows 10**.
+2. Right-click the new **Windows 10** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
    1. Task sequence ID: REFW10X64-001
    2. Task sequence name: Windows 10 Enterprise x64 RTM Default Image
    3. Task sequence comments: Reference Build
@@ -305,17 +320,18 @@ To create a Windows 10 reference image task sequence, the process is as follows
 
 The steps below walk you through the process of editing the Windows 10 reference image task sequence to include the actions required to update the reference image with the latest updates from WSUS, install roles and features, and utilities, and install Microsoft Office365 ProPlus x64.
 
-1.  In the Task Sequences / Windows 10 folder, right-click the Windows 10 Enterprise x64 RTM Default Image task sequence, and select **Properties**.
-2.  On the **Task Sequence** tab, configure the Windows 10 Enterprise x64 RTM Default Image task sequence with the following settings:
-    1. State Restore. Enable the Windows Update (Pre-Application Installation) action.
-        - **Note**: Enable an action by going to the Options tab and clearing the Disable this step check box.
+On **MDT01**:
+
+1. In the **Task Sequences / Windows 10** folder, right-click the **Windows 10 Enterprise x64 RTM Default Image** task sequence, and select **Properties**.
+2. On the **Task Sequence** tab, configure the Windows 10 Enterprise x64 RTM Default Image task sequence with the following settings:
+    1. **State Restore > Windows Update (Pre-Application Installation)** action: Enable this action by clicking the **Options** tab and clearing the **Disable this step** check box.
          
-    2. State Restore. Enable the Windows Update (Post-Application Installation) action.
-    3. State Restore. After the **Tattoo** action, add a new **Group** action with the following setting:
-        -   Name: Custom Tasks (Pre-Windows Update)
-    4. State Restore. After Windows Update (Post-Application Installation) action, rename Custom Tasks to Custom Tasks (Post-Windows Update).
-        - **Note**: The reason for adding the applications after the Tattoo action but before running Windows Update is simply to save time during the deployment. This way we can add all applications that will upgrade some of the built-in components and avoid unnecessary updating.        
-    5. State Restore / Custom Tasks (Pre-Windows Update). Add a new Install Roles and Features action with the following settings:
+    2. **State Restore > Windows Update (Post-Application Installation)** action: Also enable this action.
+    3. **State Restore**: After the **Tattoo** action, add a new **Group** action (click **Add** then click **New Group**) with the following setting:
+        -   Name: **Custom Tasks (Pre-Windows Update)**
+    4. **State Restore**: After **Windows Update (Post-Application Installation)** action, rename **Custom Tasks** to **Custom Tasks (Post-Windows Update)**.
+        - **Note**: The reason for adding the applications after the Tattoo action but before running Windows Update is simply to save time during the deployment. This way we can add all applications that will upgrade some of the built-in components and avoid unnecessary updating.
+    5. **State Restore > Custom Tasks (Pre-Windows Update)**: Add a new **Install Roles and Features** action with the following settings:
         1. Name: Install - Microsoft NET Framework 3.5.1
         2. Select the operating system for which roles are to be installed: Windows 10
         3. Select the roles and features that should be installed: .NET Framework 3.5 (includes .NET 2.0 and 3.0)
@@ -323,15 +339,18 @@ The steps below walk you through the process of editing the Windows 10 referenc
         >[!IMPORTANT]
         >This is probably the most important step when creating a reference image. Many applications need the .NET Framework, and we strongly recommend having it available in the image. The one thing that makes this different from other components is that .NET Framework 3.5.1 is not included in the WIM file. It is installed from the **Sources\\SxS** folder on the media, and that makes it more difficult to add after the image has been deployed.
          
-        ![figure 7](../images/fig8-cust-tasks.png)
+        ![task sequence](../images/fig8-cust-tasks.png)
 
         The task sequence after creating the Custom Tasks (Pre-Windows Update) group and adding the Install - Microsoft NET Framework 3.5.1 action.
 
-    6. State Restore - Custom Tasks (Pre-Windows Update). After the **Install - Microsoft NET Framework 3.5.1** action, add a new **Install Application** action (selected from the **General** group) with the following settings:
+    6. **State Restore > Custom Tasks (Pre-Windows Update)**: After the **Install - Microsoft NET Framework 3.5.1** action, add a new **Install Application** action (selected from the **General** group) with the following settings:
         1. Name: Microsoft Visual C++ Redistributable 2019 - x86
         2. Install a Single Application: browse to **Install - MSVC 2019 - x86**
-    7.  Repeat the previous steps (add a new **Install Application**) to add Microsoft Visual C++ Redistributable 2019 - x64 as well.
+    7.  Repeat these steps (add a new **Install Application**) to add Microsoft Visual C++ Redistributable 2019 - x64 and Office 365 ProPlus as well.
 3. Click **OK**.
+
+ ![apps](../images/mdt-apps.png) 
+
 
 ### Optional configuration: Add a suspend action
 
@@ -347,13 +366,6 @@ The goal when creating a reference image is of course to automate everything. Bu
 
 ### Edit the Unattend.xml file for Windows 10 Enterprise
 
->[!IMPORTANT]
->The current version of MDT (8456) has a known issue generating a catalog file for Windows 10, version 1903 X64 install.wim. You might see the error "Could not load file or assembly" in logs. As a temporary workaround:
->- Close the Deployment Workbench and install the [WSIM 1903 update](https://go.microsoft.com/fwlink/?linkid=2095334). This will update both files to version 10.0.18362.144.
->- Manually run imgmgr.exe (C:\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\WSIM\\imgmgr.exe).
->- Generate a catalog (Tools/Create Catalog) for the selected install.wim (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install.wim). 
->- After manually creating the catalog file (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install_Windows 10 Enterprise.clg), open the Deployment Workbench and proceed to edit unattend.xml.
-
 When using MDT, you don't need to edit the Unattend.xml file very often because most configurations are taken care of by MDT. However if, for example, you want to configure Internet Explorer behavior, then you can edit the Unattend.xml for this. Editing the Unattend.xml for basic Internet Explorer settings is easy, but for more advanced settings, you will want to use the Internet Explorer Administration Kit (IEAK).
 
 >[!WARNING]
@@ -364,13 +376,23 @@ When using MDT, you don't need to edit the Unattend.xml file very often because 
  
 Follow these steps to configure Internet Explorer settings in Unattend.xml for the Windows 10 Enterprise x64 RTM Default Image task sequence:
 
-1. Using the Deployment Workbench, right-click the **Windows 10 Enterprise x64 RTM Default Image** task sequence and select **Properties**.
-2. In the **OS Info** tab, click **Edit Unattend.xml**. MDT now generates a catalog file. This will take a few minutes, and then Windows System Image Manager (Windows SIM) will start. 
+On **MDT01**:
+
+1. Using the Deployment Workbench, under **Deployment Shares > MDT Build Lab > Task Sequences** right-click the **Windows 10 Enterprise x64 RTM Default Image** task sequence and select **Properties**.
+2. In the **OS Info** tab, click **Edit Unattend.xml**. MDT now generates a catalog file. This will take a few minutes, and then Windows System Image Manager (Windows SIM) will start.
+
+ >[!IMPORTANT]
+ >The current version of MDT (8456) has a known issue generating a catalog file for Windows 10, version 1903 or 1909 X64 install.wim. You might see the error "Could not load file or assembly" in in the console output. As a temporary workaround:
+ >- Close the Deployment Workbench and install the [WSIM 1903 update](https://go.microsoft.com/fwlink/?linkid=2095334). This will update imagecat.exe and imgmgr.exe to version 10.0.18362.144.
+ >- Manually run imgmgr.exe (C:\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\WSIM\\imgmgr.exe).
+ >- Generate a catalog (Tools/Create Catalog) for the selected install.wim (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install.wim). 
+ >- After manually creating the catalog file (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install_Windows 10 Enterprise.clg), open the Deployment Workbench and proceed to edit unattend.xml.
+
 3. In Windows SIM, expand the **4 specialize** node in the **Answer File** pane and select the amd64\_Microsoft-Windows-IE-InternetExplorer\_neutral entry.
 4. In the **amd64\_Microsoft-Windows-IE-InternetExplorer\_neutral properties** window (right-hand window), set the following values:
   - DisableDevTools: true
 5. Save the Unattend.xml file, and close Windows SIM.
-  - Note: If errors are reported that certain display values are incorrect, you can ignore this or browse to **7oobeSystem\\amd64_Microsoft-Windows-Shell-Setup__neutral\\Display** and enter the following: ColorDepth 32, HorizontalResolution 1, RefreshRate 60, VerticalResolution 1.
+     - Note: If errors are reported that certain display values are incorrect, you can ignore this or browse to **7oobeSystem\\amd64_Microsoft-Windows-Shell-Setup__neutral\\Display** and enter the following: ColorDepth 32, HorizontalResolution 1, RefreshRate 60, VerticalResolution 1.
 6. On the Windows 10 Enterprise x64 RTM Default Image Properties, click **OK**.
 
     ![figure 10](../images/fig10-unattend.png)
@@ -383,11 +405,14 @@ Understanding rules is critical to successfully using MDT. Rules are configured 
 
 ### MDT deployment share rules overview
 
-In MDT, there are always two rule files: the CustomSettings.ini file and the Bootstrap.ini file. You can add almost any rule to either. However, the Bootstrap.ini file is copied from the Control folder to the boot image, so the boot image needs to be updated every time you change that file. For this reason, add only a minimal set of rules to Bootstrap.ini, such as which deployment server and share to connect to - the DEPLOYROOT value. Put the other rules in CustomSettings.ini because that file is updated immediately when you click OK. 
+In MDT, there are always two rule files: the **CustomSettings.ini** file and the **Bootstrap.ini** file. You can add almost any rule to either. However, the Bootstrap.ini file is copied from the Control folder to the boot image, so the boot image needs to be updated every time you change that file. For this reason, add only a minimal set of rules to Bootstrap.ini, such as which deployment server and share to connect to - the DEPLOYROOT value. Put the other rules in CustomSettings.ini because that file is updated immediately when you click OK. 
 
 To configure the rules for the MDT Build Lab deployment share:
+
+On **MDT01**:
+
 1.  Using the Deployment Workbench, right-click the **MDT Build Lab** deployment share and select **Properties**.
-2.  Select the **Rules** tab and replace the existing content with the following information:
+2.  Select the **Rules** tab and replace the existing content with the following information: (edit the settings as needed to match your deployment)
     ``` 
     [Settings]
     Priority=Default
@@ -397,7 +422,7 @@ To configure the rules for the MDT Build Lab deployment share:
     UserDataLocation=NONE
     DoCapture=YES
     OSInstall=Y
-    AdminPassword=pass@word3
+    AdminPassword=pass@word1
     TimeZoneName=Pacific Standard Time 
     JoinWorkgroup=WORKGROUP
     HideShell=YES
@@ -422,7 +447,7 @@ To configure the rules for the MDT Build Lab deployment share:
     SkipFinalSummary=YES
     ```
 
-    ![figure 11](../images/mdt-08-fig14.png)
+    ![figure 11](../images/mdt-rules.png)
 
     The server-side rules for the MDT Build Lab deployment share.
 
@@ -436,7 +461,7 @@ To configure the rules for the MDT Build Lab deployment share:
     DeployRoot=\\MDT01\MDTBuildLab$
     UserDomain=CONTOSO
     UserID=MDT_BA
-    UserPassword=pass@word3
+    UserPassword=pass@word1
     
     SkipBDDWelcome=YES
     ```
@@ -444,15 +469,15 @@ To configure the rules for the MDT Build Lab deployment share:
     >[!NOTE]
     >For security reasons, you normally don't add the password to the Bootstrap.ini file; however, because this deployment share is for creating reference image builds only, and should not be published to the production network, it is acceptable to do so in this situation. Obviously if you are not using the same password (pass@word3) that is provided in this lab, you must enter your own custom password on the Rules tab and in Bootstrap.ini.
      
-4.  In the **Windows PE** tab, in the **Platform** drop-down list, select **x86**.
-5.  In the **Lite Touch Boot Image Settings** area, configure the following settings:
-    1.  Image description: MDT Build Lab x86
-    2.  ISO file name: MDT Build Lab x86.iso
-6.  In the **Windows PE** tab, in the **Platform** drop-down list, select **x64**.
-7.  In the **Lite Touch Boot Image Settings** area, configure the following settings:
-    1.  Image description: MDT Build Lab x64
-    2.  ISO file name: MDT Build Lab x64.iso
-8.  Click **OK**.
+4. On the **Windows PE** tab, in the **Platform** drop-down list, select **x86**.
+5. In the **Lite Touch Boot Image Settings** area, configure the following settings:
+   1.  Image description: MDT Build Lab x86
+   2.  ISO file name: MDT Build Lab x86.iso
+6. On the **Windows PE** tab, in the **Platform** drop-down list, select **x64**.
+7. In the **Lite Touch Boot Image Settings** area, configure the following settings:
+   1.  Image description: MDT Build Lab x64
+   2.  ISO file name: MDT Build Lab x64.iso
+8. Click **OK**.
 
 >[!NOTE]
 >In MDT, the x86 boot image can deploy both x86 and x64 operating systems (except on computers based on Unified Extensible Firmware Interface).
@@ -489,7 +514,7 @@ Priority=Default
 DeployRoot=\\MDT01\MDTBuildLab$
 UserDomain=CONTOSO
 UserID=MDT_BA
-UserPassword=pass@word3
+UserPassword=pass@word1
 SkipBDDWelcome=YES
 ```
 
@@ -518,7 +543,7 @@ _SMSTSORGNAME=Contoso
 UserDataLocation=NONE
 DoCapture=YES
 OSInstall=Y
-AdminPassword=pass@word3
+AdminPassword=pass@word1
 TimeZoneName=Pacific Standard Time 
 JoinWorkgroup=WORKGROUP
 HideShell=YES
@@ -579,25 +604,29 @@ As previously described, this section requires a Hyper-V host. See [Hyper-V requ
 
 Once you have created your task sequence, you are ready to create the Windows 10 reference image. This will be performed by launching the task sequence from a virtual machine which will then automatically perform the reference image creation and capture process. 
 
-The steps below outline the process used to boot a virtual machine using an ISO boot image created by MDT, and then execute the reference image task sequence image to create and capture the Windows 10 reference image.
+The steps below outline the process used to boot a virtual machine using an ISO boot image created by MDT, and then run the reference image task sequence image to create and capture the Windows 10 reference image.
 
-1. Copy D:\\MDTBuildLab\\Boot\\LiteTouchPE_x86.iso on MDT01 to C:\\ISO on a Hyper-V host.
+1. Copy D:\\MDTBuildLab\\Boot\\MDT Build Lab x86.iso on MDT01 to C:\\ISO on your Hyper-V host (HV01).
 
     **Note**: Remember, in MDT you can use the x86 boot image to deploy both x86 and x64 operating system images. That's why you can use the x86 boot image instead of the x64 boot image.
      
-2. Create a virtual machine with the following settings:
+2. **On HV01**: Create a new virtual machine with the following settings:
    1. Name: REFW10X64-001
    2. Generation 1
    3. Memory: 1024 MB
    4. Network: Must be able to connect to \\MDT01\MDTBuildLab$
    5. Location: C:\VM
    6. Hard disk: 60 GB (dynamic disk)
-   7. Install OS with image file: C:\\ISO\\LiteTouchPE_x86.iso
-3. Add a checkpoint for the REFW10X64-001 virtual machine, and name it **Clean with MDT Build Lab x86 ISO**.
+   7. Install OS with image file: C:\\ISO\\MDT Build Lab x86.iso
+3. Before you start the VM, add a checkpoint for REFW10X64-001, and name it **Clean with MDT Build Lab x86 ISO**.
 
     **Note**: Checkpoints are useful if you need to restart the process and want to make sure you can start clean.
      
-4. Start the REFW10X64-001 virtual machine and connect to it. After booting into Windows PE, complete the Windows Deployment Wizard with the following settings:
+4. Start the REFW10X64-001 virtual machine and connect to it.
+
+    **Note**: Up to this point we have not discussed IP addressing or DHCP. In the initial setup for this guide, DC01 was provisioned as a DHCP server to provide IP address leases to client computers.  You might have a different DHCP server on your network that can be used. The REFW10X64-001 virtual machine requires an IP address lease that provides it with connectivity to MDT01 so that it can connect to the \\MDT01\MDTBuildLab$ share.
+
+    After booting into Windows PE, complete the Windows Deployment Wizard with the following settings:
     1. Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Default Image
     2. Specify whether to capture an image: Capture an image of this reference computer
        -   Location: \\\\MDT01\\MDTBuildLab$\\Captures

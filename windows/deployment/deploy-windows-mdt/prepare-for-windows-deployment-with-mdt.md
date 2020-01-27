@@ -21,7 +21,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-This topic will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT). It covers the installation of the necessary system prerequisites, the creation of shared folders and service accounts, and the configuration of security permissions in the file system and in Active Directory.
+This topic will walk you through the steps necessary to prepare your network and server infrastructure to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT). It covers the installation of the necessary system prerequisites, the creation of shared folders and service accounts, and the configuration of security permissions in the file system and in Active Directory.
 
 ## Infrastructure
 
@@ -52,7 +52,7 @@ Several client computers are referenced in this guide with hostnames of PC0001 t
 
 ### Storage requirements
 
-MDT01 and HV01 should have a data drive (D:) that can support up to 200 GB of data. The system drives on all computers (C:) can be 50 GB in size, but 100 GB is recommended. You can also use a computer with a single, system drive as long as it has at least 200 GB of available storage space. You will need to adjust come procedures in this guide to specify the C: drive instead of the D: drive.
+MDT01 and HV01 should have the ability to store up to 200 GB of data. You can use a computer with a single, system partition but you will need to adjust come procedures in this guide to specify the C: drive instead of the D: drive.
 
 ### Hyper-V requirements
 
@@ -214,7 +214,7 @@ Alternatively, CMTrace formatting makes the logs much easier to read. See the sa
 
 ![figure 9](../images/mdt-05-fig10.png)
 
-After installing the ConfigMgrTools.msi file, search for **cmtrace** and pin the tool to your taskbar for easy access.
+After installing the ConfigMgrTools.msi file, you can search for **cmtrace** and pin the tool to your taskbar for easy access.
 
 ## Next steps
 
@@ -225,10 +225,6 @@ When you have completed all the steps in this section to prepare for deployment,
 **Sample files**
 
 The following sample files are also available to help automate some MDT deployment tasks. This guide does not use these files, but they are made available here so that you can see how some tasks can be automated with Windows PowerShell.
--   [Gather.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619361). This sample Windows PowerShell script performs the MDT Gather process in a simulated MDT environment. This allows you to test the MDT gather process and check to see if it is working correctly without performing a full Windows deployment.
--   [Set-OUPermissions.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619362). This sample Windows PowerShell script creates a domain account and then configures OU permissions to allow the account to join machines to the domain in the specified OU.
--   [MDTSample.zip](https://go.microsoft.com/fwlink/p/?LinkId=619363). This sample web service shows you how to configure a computer name dynamically using MDT.
-
-## Related topics
-
-[Get started with MDT](get-started-with-the-microsoft-deployment-toolkit.md)
+- [Gather.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619361). This sample Windows PowerShell script performs the MDT Gather process in a simulated MDT environment. This allows you to test the MDT gather process and check to see if it is working correctly without performing a full Windows deployment.
+- [Set-OUPermissions.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619362). This sample Windows PowerShell script creates a domain account and then configures OU permissions to allow the account to join machines to the domain in the specified OU.
+- [MDTSample.zip](https://go.microsoft.com/fwlink/p/?LinkId=619363). This sample web service shows you how to configure a computer name dynamically using MDT.
