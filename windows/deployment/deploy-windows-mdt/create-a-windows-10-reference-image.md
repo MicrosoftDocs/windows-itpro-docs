@@ -66,15 +66,16 @@ On **MDT01**:
 
 ### Configure permissions for the deployment share
 
-In order to write the reference image back to the deployment share, you need to assign Modify permissions to the MDT Build Account (MDT\_BA) for the **Captures** subfolder in the **D:\\MDTBuildLab** folder
+In order to read files in the deployment share and write the reference image back to it, you need to assign NTSF and SMB permissions to the MDT Build Account (MDT\_BA) for the **D:\\MDTBuildLab** folder
 
 On **MDT01**:
 
 1.  Ensure you are signed in as **contoso\\administrator**.
-2.  Modify the NTFS permissions for the **D:\\MDTBuildLab\\Captures** folder by running the following command in an elevated Windows PowerShell prompt:
+2.  Modify the NTFS permissions for the **D:\\MDTBuildLab** folder by running the following command in an elevated Windows PowerShell prompt:
 
     ``` syntax
-    icacls D:\MDTBuildLab\Captures /grant '"MDT_BA":(OI)(CI)(M)'
+    icacls "D:\MDTBuildLab" /grant '"CONTOSO\MDT_BA":(OI)(CI)(M)'
+    grant-smbshareaccess -Name MDTBuildLab$ -AccountName "Contoso\MDT_BA" -AccessRight Full -force
     ```
 
 ## Add setup files
@@ -624,7 +625,7 @@ The steps below outline the process used to boot a virtual machine using an ISO 
      
 4. Start the REFW10X64-001 virtual machine and connect to it.
 
-    **Note**: Up to this point we have not discussed IP addressing or DHCP. In the initial setup for this guide, DC01 was provisioned as a DHCP server to provide IP address leases to client computers.  You might have a different DHCP server on your network that can be used. The REFW10X64-001 virtual machine requires an IP address lease that provides it with connectivity to MDT01 so that it can connect to the \\MDT01\MDTBuildLab$ share.
+    **Note**: Up to this point we have not discussed IP addressing or DHCP. In the initial setup for this guide, DC01 was provisioned as a DHCP server to provide IP address leases to client computers.  You might have a different DHCP server on your network that you wish to use. The REFW10X64-001 virtual machine requires an IP address lease that provides it with connectivity to MDT01 so that it can connect to the \\MDT01\MDTBuildLab$ share. In the current scenario this is accomplished with a DHCP scope that provides IP addresses in the 10.10.10.100 - 10.10.10.200 range, as part of a /24 subnet so that the client can connect to MDT01 at 10.10.10.11.
 
     After booting into Windows PE, complete the Windows Deployment Wizard with the following settings:
     1. Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Default Image
@@ -632,9 +633,9 @@ The steps below outline the process used to boot a virtual machine using an ISO 
        -   Location: \\\\MDT01\\MDTBuildLab$\\Captures
     3. File name: REFW10X64-001.wim
 
-        ![figure 13](../images/fig13-captureimage.png)
+        ![capture image](../images/captureimage.png)
 
-        Figure 13. The Windows Deployment Wizard for the Windows 10 reference image.
+        The Windows Deployment Wizard for the Windows 10 reference image.
 
 5. The setup now starts and does the following:
     1. Installs the Windows 10 Enterprise operating system.
@@ -645,7 +646,7 @@ The steps below outline the process used to boot a virtual machine using an ISO 
     6. Captures the installation to a Windows Imaging (WIM) file.
     7. Turns off the virtual machine.
 
-After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the E:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
+After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
 
 ## Related topics
 
