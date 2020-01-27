@@ -32,8 +32,8 @@ To ensure Surface devices across your organization fully benefit from Surface po
 - Avoid creating custom power profiles or adjusting advanced power settings not visible in the default UI  (**System** > **Power & sleep**).
 - If you must manage the power profile of devices across your network (such as in highly managed organizations), use the powercfg command tool to export the power plan from the factory image of the Surface device and then import it into the provisioning package for your Surface devices. 
 
->[!NOTE]
->You can only export a power plan across the same type of Surface device.  For example, you cannot export a power plan from Surface Laptop and import it on Surface Pro.  For more information, refer to [Configure power settings](https://docs.microsoft.com/windows-hardware/customize/power-settings/configure-power-settings).
+    >[!NOTE]
+    >You can only export a power plan across the same type of Surface device.  For example, you cannot export a power plan from Surface Laptop and import it on Surface Pro.  For more information, refer to [Configure power settings](https://docs.microsoft.com/windows-hardware/customize/power-settings/configure-power-settings).
 
 - Exclude Surface devices from any existing power management policy settings. 
 
