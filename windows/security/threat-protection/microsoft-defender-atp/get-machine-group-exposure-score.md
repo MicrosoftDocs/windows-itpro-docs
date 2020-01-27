@@ -22,6 +22,8 @@ ms.topic: article
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 Retrieves a collection of alerts related to a given domain address.
 
 ## Permissions
