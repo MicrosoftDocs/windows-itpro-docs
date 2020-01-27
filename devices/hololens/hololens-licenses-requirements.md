@@ -3,14 +3,14 @@ title: Licenses for Mixed Reality Deployment
 description: 
 ms.prod: hololens
 ms.sitesec: library
-author: Payge Winfield
-ms.author:
+author: pawinfie
+ms.author: pawinfie
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
 ms.date: 1/23/2020
 ms.reviewer: 
-manager: 
+manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2

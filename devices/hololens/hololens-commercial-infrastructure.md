@@ -10,7 +10,7 @@ ms.topic: article
 ms.localizationpriority: high
 ms.date: 1/23/2020
 ms.reviewer: 
-manager: 
+manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
