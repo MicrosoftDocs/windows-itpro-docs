@@ -58,7 +58,7 @@
 {
 "source_path": "devices/surface/manage-surface-pro-3-firmware-updates.md",
 "redirect_url": "https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates",
-"redirect_document_id": true
+"redirect_document_id": false
 },
 {
 "source_path": "devices/surface/update.md",
