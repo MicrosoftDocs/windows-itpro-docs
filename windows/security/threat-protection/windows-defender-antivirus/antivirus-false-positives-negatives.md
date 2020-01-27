@@ -25,7 +25,7 @@ manager: dansimp
 
 Windows Defender Antivirus is designed to keep your PC safe with built-in, trusted antivirus protection. With Windows Defender Antivirus, you get comprehensive, ongoing, and real-time protection against software threats like viruses, malware and spyware across email, apps, the cloud and the web. 
 
-But what if something gets detected wrongly as malware, or something is missed? We call these false positives and false negatives, and there are some steps you can take to deal with these things. You can submit a file to Microsoft for analysis, and potentially, define an exclusion in your Windows Defender Antivirus settings.
+But what if something gets detected wrongly as malware, or something is missed? We call these false positives and false negatives, and there are some steps you can take to deal with these things. You can [submit a file to Microsoft for analysis](#submit-a-file-to-microsoft-for-analysis), and potentially, [define an exclusion](#define-an-exclusion-on-a-windows-device) in your Windows Defender Antivirus settings.
 
 ## Submit a file to Microsoft for analysis
 
