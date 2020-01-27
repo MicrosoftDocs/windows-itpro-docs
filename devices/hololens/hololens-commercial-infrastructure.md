@@ -3,8 +3,8 @@ title: Infrastructure Guidelines for HoloLens
 description: 
 ms.prod: hololens
 ms.sitesec: library
-author: Payge Winfield
-ms.author:
+author: pawinfie
+ms.author: pawinfie
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
@@ -42,7 +42,7 @@ Guides only require network access to download and use the app.
 This step is only necessary if your company plans on managing the HoloLens and mixed reality apps.
 
 ### 1. Ensure that you have an Azure AD License. 
-Please [HoloLens Licenses Requirements](hololens-licenses-requirements)for additional information.
+Please [HoloLens Licenses Requirements](hololens-licenses-requirements.md)for additional information.
 
 ### 2. Ensure that your company’s users are in Azure Active Directory (Azure AD).
 Instructions for adding users can be found [here](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory).
@@ -110,4 +110,4 @@ If your company requires certificates, Intune supports PKCS, PFX, and SCEP. It i
 Steps for SCEP can be found [here](https://docs.microsoft.com/intune/protect/certificates-profile-scep).
 
 ### Device Certificates
-Certificates can also be added to the HoloLens through package provisioning. Please see [HoloLens Provisioning](hololens-provisioning) for additional information.
+Certificates can also be added to the HoloLens through package provisioning. Please see [HoloLens Provisioning](hololens-provisioning.md) for additional information.
