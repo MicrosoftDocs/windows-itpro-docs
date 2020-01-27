@@ -26,22 +26,22 @@ This article describes the best practices, location, values, policy management, 
 
 ## Reference
 
-This policy setting determines when users are warned that their passwords are about to expire. This warning gives users time to select a strong password before their current password expires and avoid losing system access.
+This policy setting determines when users are warned that their passwords are about to expire. This warning gives users time to select a strong password before their current password expires to avoid losing system access.
 
 ### Possible values
 
--   A user-defined number of days from 0 through 999.
--   Not defined.
+-   A user-defined number of days from 0 through 999
+-   Not defined
 
 ### Best practices
 
--  Configure user passwords to expire periodically. Users need warning that their passwords are going to expire, or they might  get locked out of the system.
+-  Configure user passwords to expire periodically. Users need warning that their password is going to expire, or they might  get locked out of the system.
 -  Set **Interactive logon: Prompt user to change password before expiration** to five days. When their password expiration date is five or fewer days away, users will see a dialog box each time that they log on to the domain.
 -  Don't set the value to zero, which displays the password expiration warning every time the user logs on.
 
 ### Location
 
-Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Local Policies\\Security Options
+*Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Local Policies\\Security Options*
 
 ### Default values
 
@@ -70,7 +70,7 @@ None.
 
 ### Group Policy
 
-This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy isn't contained in a distributed GPO, it can be configured on the local computer through the Local Security Policy snap-in.
+Configure this policy setting by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy isn't contained in a distributed GPO, it can be configured on the local computer through the Local Security Policy snap-in.
 
 ## Security considerations
 

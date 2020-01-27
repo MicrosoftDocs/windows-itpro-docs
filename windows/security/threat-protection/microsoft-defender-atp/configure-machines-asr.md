@@ -25,12 +25,12 @@ ms.topic: article
 
 > Want to experience Microsoft Defender Advanced Threat Protection (ATP)? [Sign up for a free trial](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink).
 
-[Attack surface reduction (ASR) rules](./attack-surface-reduction.md) identify and prevent typically malware exploits. They control when and how potentially malicious code can run. For example, you can prevent JavaScript or VBScript from launching a downloaded executable, block Win32 API calls from Office macros, and block processes that run from USB drives.
+[Attack surface reduction (ASR) rules](./attack-surface-reduction.md) identify and prevent typical malware exploits. They control when and how potentially malicious code can run. For example, they can prevent JavaScript or VBScript from launching a downloaded executable, block Win32 API calls from Office macros, and block processes that run from USB drives.
 
 ![Attack surface management card](images/secconmgmt_asr_card.png)<br>
 *Attack surface management card*
 
-The *Attack surface management* card is an entry point to tools in Microsoft 365 security center that you can use to:
+The *Attack surface management card* is an entry point to tools in Microsoft 365 security center that you can use to:
 
 * Understand how ASR rules are currently deployed in your organization.
 * Review ASR detections and identify possible incorrect detections.
@@ -39,15 +39,15 @@ The *Attack surface management* card is an entry point to tools in Microsoft 365
 Select **Go to attack surface management** > **Monitoring & reports > Attack surface reduction rules > Add exclusions**. From there, you can navigate to other sections of Microsoft 365 security center.
 
 ![Add exclusions tab in the Attack surface reduction rules page in Microsoft 365 security center](images/secconmgmt_asr_m365exlusions.png)<br>
-***Add exclusions*** tab in the Attack surface reduction rules page in Microsoft 365 security center*
+The ***Add exclusions** tab in the Attack surface reduction rules page in Microsoft 365 security center*
 
 > [!NOTE]
-> To access Microsoft 365 security center, you need a Microsoft 365 E3 or E5 license and an account that has certain roles on Azure Active Directory. [Read more about required licenses and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions)
+> To access Microsoft 365 security center, you need a Microsoft 365 E3 or E5 license and an account that has certain roles on Azure Active Directory. [Read about required licenses and permissions](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
-For more information about ASR rule deployment in Microsoft 365 security center, see [Monitor and manage ASR rule deployment and detections](https://docs.microsoft.com/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)
+For more information about ASR rule deployment in Microsoft 365 security center, see [Monitor and manage ASR rule deployment and detections](https://docs.microsoft.com/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections).
 
 **Related topics**
 
 * [Ensure your machines are configured properly](configure-machines.md)
 * [Get machines onboarded to Microsoft Defender ATP](configure-machines-onboarding.md)
-* [Increase compliance to the Microsoft Defender ATP security baseline](configure-machines-security-baseline.md)
+* [Monitor compliance to the Microsoft Defender ATP security baseline](configure-machines-security-baseline.md)
