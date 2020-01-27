@@ -101,7 +101,7 @@ If you are configuring Kiosk Mode on an MDM other than Intune, please check your
 
 1.	[Create Compliance Policy](https://docs.microsoft.com/intune/protect/create-compliance-policy)
 
-1.	☐  Conditional Access allows/denies mobile devices and mobile applications from accessing company resources. Two documents you may find helpful are [Plan your CA Deployment](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) and [Best Practices](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices).
+1.	 Conditional Access allows/denies mobile devices and mobile applications from accessing company resources. Two documents you may find helpful are [Plan your CA Deployment](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) and [Best Practices](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices).
 
 ## Certificates and Authentication
 ### MDM Certificate Distribution

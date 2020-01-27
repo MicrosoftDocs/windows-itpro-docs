@@ -24,7 +24,7 @@ If you plan on using a Mobile Device Management system (MDM) to manage your Holo
 
 If you plan on using an MDM other than Intune, an [Azure Active Directory Licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) is required.
 
-If you plan on suing Intune as your MDM, you can acquire an [Enterprise Mobility + Security (EMS) suite (E3 or E5) licenses](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing). **Please note that Azure AD is included in both suites.** 
+If you plan on using Intune as your MDM, you can acquire an [Enterprise Mobility + Security (EMS) suite (E3 or E5) licenses](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing). **Please note that Azure AD is included in both suites.** 
 
 ## Identify the licenses needed for your scenario and products
 
