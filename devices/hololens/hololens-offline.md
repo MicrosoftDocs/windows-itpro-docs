@@ -1,5 +1,5 @@
 ---
-title: Use HoloLens offline
+title: Manage connection endpoints for HoloLens 
 description: To set up HoloLens, you'll need to connect to a Wi-Fi network
 keywords: hololens, offline, OOBE
 audience: ITPro
@@ -19,7 +19,7 @@ appliesto:
 
 Some HoloLens components, apps, and related services transfer data to Microsoft network endpoints. This article lists different endpoints and URLs that need to be whitelisted in your network configuratiion (e.g. proxy or firewall) for those components to be functional.    
 
-# Near-offline setup
+## Near-offline setup
 
 HoloLens supports a limited set of offline experiences for customers who have network environment restrictions. However, HoloLens needs network connection to go through initial device set up and the following URLs have to be enabled:
 
@@ -33,7 +33,7 @@ HoloLens supports a limited set of offline experiences for customers who have ne
 | MSA | https://login.live.com/ppsecure/inlineconnect.srf?id=80600 |
 | MSA Pin | https://account.live.com/msangc?fl=enroll |
 
-# Use HoloLens online 
+## Use HoloLens online 
 
 To take full advantage of HoloLens functionality, the following endpoints need to be enabled in your network configuration.
 
@@ -91,7 +91,7 @@ To take full advantage of HoloLens functionality, the following endpoints need t
 |                                                     | storecatalogrevocation.storequality.microsoft.com                   |   |   |   |
 |                                                     | img-prod-cms-rt-microsoft-com*                                      |   |   |   |
 |                                                     | store-images.microsoft.com                                          |   |   |   |
-|                                                     | .md.mp.microsoft.com -- @Ezeugo Anukem this is TLS v1.2 not HTTP(S) |   |   |   |
+|                                                     | .md.mp.microsoft.com                                                |   |   |
 |                                                     | *displaycatalog.mp.microsoft.com                                    |   |   |   |
 |                                                     | pti.store.microsoft.com                                             |   |   |   |
 |                                                     | storeedgefd.dsx.mp.microsoft.com                                    |   |   |   |
@@ -142,16 +142,15 @@ To take full advantage of HoloLens functionality, the following endpoints need t
 ## References
 
 > [!NOTE]
-> If you are deploying D365 Remote Assist, you will have to enable the endpoints on this [list] (https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) 
-
-- [Configure Windows diagnostic data in your organization] (https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
-- [Manage connection endpoints for Windows 10 Enterprise, version 1903] (https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1903-endpoints)
-- [Manage connections from Windows 10 operating system components to Microsoft services] (https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-- [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server] (https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
-- [Intune network configuration requirements and bandwidth] (https://docs.microsoft.com/en-us/intune/fundamentals/network-bandwidth-use#network-communication-requirements)
-- [Network endpoints for Microsoft Intune] (https://docs.microsoft.com/en-us/intune/fundamentals/intune-endpoints)
-- [Office 365 URLs and IP address ranges] (https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges)
-- [Prerequisites for Azure AD Connect] (https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
+> If you are deploying D365 Remote Assist, you will have to enable the endpoints on this [list](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) 
+- [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
+- [Manage connection endpoints for Windows 10 Enterprise, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)
+- [Manage connections from Windows 10 operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
+- [Intune network configuration requirements and bandwidth](https://docs.microsoft.com/intune/fundamentals/network-bandwidth-use#network-communication-requirements)
+- [Network endpoints for Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/intune-endpoints)
+- [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+- [Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 
 
 ## HoloLens limitations
