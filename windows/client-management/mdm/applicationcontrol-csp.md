@@ -1,11 +1,13 @@
 ---
 title: ApplicationControl CSP
 description: The ApplicationControl CSP allows you to manage multiple Windows Defender Application Control (WDAC) policies from a MDM server.
+keywords: whitelisting, security, malware
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: ManikaDhiman
+ms.reviewer: jsuther1974
 ms.date: 05/21/2019
 ---
 
@@ -61,7 +63,8 @@ This node specifies whether a policy is actually loaded by the enforcement engin
 
 Scope is dynamic. Supported operation is Get.
 
-Value type is bool. Supported values are as follows:  
+Value type is bool. Supported values are as follows:
+
 - True — Indicates that the policy is actually loaded by the enforcement engine and is in effect on a system.
 - False — Indicates that the policy is not loaded by the enforcement engine and is not in effect on a system. This is the default.
 
@@ -70,7 +73,8 @@ This node specifies whether a policy is deployed on the system and is present on
 
 Scope is dynamic. Supported operation is Get.
 
-Value type is bool. Supported values are as follows:  
+Value type is bool. Supported values are as follows:
+
 - True — Indicates that the policy is deployed on the system and is present on the physical machine.
 - False — Indicates that the policy is not deployed on the system and is not present on the physical machine. This is the default.
 
@@ -79,7 +83,8 @@ This node specifies whether the policy is authorized to be loaded by the enforce
 
 Scope is dynamic. Supported operation is Get.
 
-Value type is bool. Supported values are as follows:  
+Value type is bool. Supported values are as follows:
+
 - True — Indicates that the policy is authorized to be loaded by the enforcement engine on the system.
 - False — Indicates that the policy is not authorized to be loaded by the enforcement engine on the system. This is the default.
 
@@ -112,24 +117,43 @@ Scope is dynamic. Supported operation is Get.
 
 Value type is char.
 
-## Usage guidance  
+## Microsoft Endpoint Manager (MEM) Intune Usage Guidance  
 
-To use ApplicationControl CSP, you must:
-- Know a generated policy’s GUID, which can be found in the policy xml as `<PolicyTypeID>`.
-- Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
+For customers using Intune standalone or hybrid management with Configuration Manager (MEMCM) to deploy custom policies via the ApplicationControl CSP, refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune)
 
-If you are using hybrid MDM management with System Center Configuration Manager or using Intune, ensure that you are using Base64 as the Data type when using Custom OMA-URI functionality to apply the Code Integrity policy via uploading the binary file.
+## Non-Intune Usage Guidance
 
-### Deploy policies
+In order to leverage the ApplicationControl CSP without using Intune, you must:
+
+1. Know a generated policy’s GUID, which can be found in the policy xml as <PolicyID> or <PolicyTypeID> for pre-1903 systems.
+2. Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
+3. Create a policy node (a Base64-encoded blob of the binary policy representation) using the certutil -encode command line tool.
+
+Below is a sample certutil invocation:
+
+```cmd
+certutil  -encode WinSiPolicy.p7b WinSiPolicy.cer
+```
+
+An alternative to using certutil would be to use the following PowerShell invocation:
+
+```powershell
+[Convert]::toBase64String($(Get-Content -Encoding Byte -ReadCount 0 -Path <bin file>))
+```
+
+### Deploy Policies
+
 To deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the the Format section in the Example 1 below.
 
 To deploy base policy and supplemental policies:
-- Perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data} with the GUID and policy data for the base policy.
-- Repeat for each base or supplemental policy (with its own GUID and data).
+
+1. Perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data} with the GUID and policy data for the base policy.
+2. Repeat for each base or supplemental policy (with its own GUID and data).
 
 The following example shows the deployment of two base policies and a supplemental policy (which already specifies the base policy it supplements and does not need that reflected in the ADD).
 
-**Example 1: Add first base policy**
+#### Example 1: Add first base policy
+
 ```xml
 <Add>
     <CmdID>1</CmdID>
@@ -144,7 +168,9 @@ The following example shows the deployment of two base policies and a supplement
     </Item>
 </Add>
 ```
-**Example 2: Add second base policy**
+
+#### Example 2: Add second base policy
+
 ```xml
 <Add>
     <CmdID>1</CmdID>
@@ -159,7 +185,9 @@ The following example shows the deployment of two base policies and a supplement
     </Item>
 </Add>
 ```
-**Example 3: Add supplemental policy**
+
+#### Example 3: Add supplemental policy
+
 ```xml
 <Add>
     <CmdID>1</CmdID>
@@ -174,6 +202,7 @@ The following example shows the deployment of two base policies and a supplement
     </Item>
 </Add>
 ```
+
 ### Get policies
 
 Perform a GET using a deployed policy’s GUID to interrogate/inspect the policy itself or information about it.
@@ -190,7 +219,8 @@ The following table displays the result of Get operation on different nodes:
 |./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/PolicyInfo/Status|Was the deployment successful|
 |./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/PolicyInfo/FriendlyName|Friendly name per the policy|
 
-The following is an example of Get command:  
+The following is an example of Get command:
+
 ```xml
  <Get>
     <CmdID>1</CmdID>
@@ -203,17 +233,28 @@ The following is an example of Get command:
 ```
 
 ### Delete policies
+
+#### Rebootless Deletion
+
+Upon deletion, policies deployed via the ApplicationControl CSP are removed from the system but stay in effect until the next reboot. In order to functionally do a rebootless delete, first replace the existing policy with an Allow All policy (found at C:\Windows\schemas\CodeIntegrity\ExamplePolicies\AllowAll.xml) and then delete the updated policy. This will immediately prevent anything from being blocked and fully deactive the policy on the next reboot.
+
+#### Unsigned Policies
+
 To delete an unsigned policy, perform a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy**.
 
-> [!Note]
->  Only signed things should be able to update signed policies. Hence, performing a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** is not sufficient to delete a signed policy.
-    
+#### Signed Policies
+
+> [!NOTE]
+> A signed policy by default can only be replaced by another signed policy. Hence, performing a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** is not sufficient to delete a signed policy.
+
 To delete a signed policy:
+
 1. Replace it with a signed update allowing unsigned policy.
-2. Deploy another update with unsigned policy.
+2. Deploy another update with unsigned Allow All policy.
 3. Perform delete.
-    
+
 The following is an example of Delete command:
+
 ```xml
    <Delete>
      <CmdID>1</CmdID>
