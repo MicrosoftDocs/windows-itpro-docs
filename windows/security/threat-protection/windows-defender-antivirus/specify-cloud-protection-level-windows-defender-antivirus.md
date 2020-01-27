@@ -47,7 +47,7 @@ For more information about Intune device profiles, including how to create and c
 
 ## Use Configuration Manager to specify the level of cloud-delivered protection
 
-See [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
 
 ## Use Group Policy to specify the level of cloud-delivered protection
 
@@ -77,6 +77,6 @@ See [How to create and deploy antimalware policies: Cloud-protection service](ht
 
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
-- [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
+- [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
 
 

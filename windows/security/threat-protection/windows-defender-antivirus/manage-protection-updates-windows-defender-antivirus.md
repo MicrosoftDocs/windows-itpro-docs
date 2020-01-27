@@ -52,7 +52,7 @@ There are five locations where you can specify where an endpoint should obtain u
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
 - [Windows Server Update Service](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
-- [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/core/servers/manage/updates)
+- [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/servers/manage/updates)
 - [Network file share](https://docs.microsoft.com/windows-server/storage/nfs/nfs-overview)
 - [Security intelligence updates for Windows Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates) (Your policy and registry might have this listed as Microsoft Malware Protection Center (MMPC) security intelligence, its former name.)
 
@@ -76,7 +76,7 @@ Each source has typical scenarios that depend on how your network is configured,
 You can manage the order in which update sources are used with Group Policy, Microsoft Endpoint Configuration Manager, PowerShell cmdlets, and WMI.
 
 > [!IMPORTANT]
-> If you set Windows Server Update Service as a download location, you must approve the updates, regardless of the management tool you use to specify the location. You can set up an automatic approval rule with Windows Server Update Service, which might be useful as updates arrive at least once a day. To learn more, see [synchronize endpoint protection updates in standalone Windows Server Update Service](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
+> If you set Windows Server Update Service as a download location, you must approve the updates, regardless of the management tool you use to specify the location. You can set up an automatic approval rule with Windows Server Update Service, which might be useful as updates arrive at least once a day. To learn more, see [synchronize endpoint protection updates in standalone Windows Server Update Service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 The procedures in this article first describe how to set the order, and then how to set up the **File share** option if you have enabled it.
 
@@ -110,7 +110,7 @@ The procedures in this article first describe how to set the order, and then how
 
 ## Use Configuration Manager to manage the update location
 
-See [Configure Security intelligence Updates for Endpoint Protection](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-definition-updates) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
+See [Configure Security intelligence Updates for Endpoint Protection](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-definition-updates) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
 
 
 ## Use PowerShell cmdlets to manage the update location
