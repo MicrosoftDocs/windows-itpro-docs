@@ -1,6 +1,6 @@
 ---
 title: Configure Windows Defender Antivirus features
-description: You can configure Windows Defender Antivirus features with Intune, System Center Configuration Manager, Group Policy, and PowerShell.
+description: You can configure Windows Defender Antivirus features with Intune, Microsoft Endpoint Configuration Manager, Group Policy, and PowerShell.
 keywords: Windows Defender Antivirus, antimalware, security, defender, configure, configuration, Config Manager, System Center Configuration Manager, SCCM, Intune, MDM, mobile device management, GP, group policy, PowerShell
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -26,7 +26,7 @@ manager: dansimp
 You can configure Windows Defender Antivirus with a number of tools, including:
 
 - Microsoft Intune
-- System Center Configuration Manager
+- Microsoft Endpoint Configuration Manager
 - Group Policy
 - PowerShell cmdlets
 - Windows Management Instrumentation (WMI)

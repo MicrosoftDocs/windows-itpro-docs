@@ -71,9 +71,9 @@ For more information about configuring Windows Defender Antivirus device restric
 
 For a list of Windows Defender Antivirus device restrictions in Intune, see [Device restriction for Windows 10 (and newer) settings in Intune](https://docs.microsoft.com/intune/device-restrictions-windows-10#windows-defender-antivirus).
 
-### Enable block at first sight with SCCM
+### Enable block at first sight with Microsoft Endpoint Configuration Manager
 
-1. In System Center Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **AntiMalware Policies**.
+1. In Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **AntiMalware Policies**.
 
 2. Click **Home** > **Create Antimalware Policy**.
 
