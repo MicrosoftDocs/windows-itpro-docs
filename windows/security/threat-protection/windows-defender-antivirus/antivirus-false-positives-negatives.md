@@ -23,5 +23,14 @@ manager: dansimp
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-As you probably already know, Windows Defender Antivirus is designed to keep your PC safe with built-in, trusted antivirus protection. With Windows Defender Antivirus, you get comprehensive, ongoing, and real-time protection against software threats like viruses, malware and spyware across email, apps, the cloud and the web. But what do you do if something was missed or wrongly detected as malware? You can report it to Microsoft for analysis.
+Windows Defender Antivirus is designed to keep your PC safe with built-in, trusted antivirus protection. With Windows Defender Antivirus, you get comprehensive, ongoing, and real-time protection against software threats like viruses, malware and spyware across email, apps, the cloud and the web. 
+
+But what if something gets detected wrongly as malware, or something is missed? We call these false positives and false negatives, and there are some steps you can take to deal with these things.
+
+## Report a false positive/negative to Microsoft
+
+1. Review the [submission guidelines](../intelligence/submission-guide.md).
+2. Submit your file here: [https://www.microsoft.com/wdsi/filesubmission/](https://www.microsoft.com/wdsi/filesubmission/). 
+
+## Define an exclusion
 
