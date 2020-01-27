@@ -80,7 +80,7 @@ From within Microsoft Defender ATP, you can update your defenses with custom ind
 
 **Does ASR support file or folder exclusions that include system variables and wildcards in the path?**
 
-Yes. See [Excluding files and folders from ASR rules](enable-attack-surface-reduction.md#exclude-files-and-folders-from-ASR-rules) for more details on excluding files or folders from ASR rules, and [Configure and validate exclusions based on file extension and folder location](../windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for more on using system variables and wildcards in excluded file paths.
+Yes. See [Excluding files and folders from ASR rules](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) for more details on excluding files or folders from ASR rules, and [Configure and validate exclusions based on file extension and folder location](../windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for more on using system variables and wildcards in excluded file paths.
 
 **Do ASR rules cover all applications by default?**
 
