@@ -209,7 +209,7 @@ If your device isn't performing properly, see [Restart, reset, or recover HoloLe
 
 If your device was previously set up for someone else, either a client or former employee and you don't have their password to unlock the device there are two solutions.
 - If your device is MDM managed by Intune then you can remotely [Wipe](/IntuneDocs/intune/remote-actions/devices-wipe/) the device and it'll reflash itself. Make sure to leave **Retain enrollment state and user account** unchecked.
-- If you have the device with you then you can put the device into **Flashing Mode** and use Advanced Recovery Companion to [recover](https://review.docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) the device.
+- If you have the device with you then you can put the device into **Flashing Mode** and use Advanced Recovery Companion to [recover](https://docs.microsoft.com/hololens/hololens-recovery?branch=master#hololens-2) the device.
 
 [Back to list](#list)
 
