@@ -499,7 +499,7 @@
 ##### [Raw data streaming (preview)](microsoft-defender-atp/raw-data-export.md)
 ##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
 ##### [Stream advanced hunting events to your storage account](microsoft-defender-atp/raw-data-export-storage.md)
- 
+
 
 #### [SIEM integration]()
 ##### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)
