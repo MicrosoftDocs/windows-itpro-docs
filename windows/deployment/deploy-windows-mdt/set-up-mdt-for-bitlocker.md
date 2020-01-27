@@ -111,11 +111,7 @@ If you want to automate enabling the TPM chip as part of the deployment process,
 
 ### Add tools from Dell
 
-The Dell tools are available via the Dell Client Configuration Toolkit (CCTK). The executable file from Dell is named *cctk.exe*. Here is a sample command to enable TPM and set a BIOS password using the cctk.exe tool:
-
-```dos
-cctk.exe --tpm=on --valsetuppwd=Password1234
-```
+[Dell Comnmand | Configure](https://www.dell.com/support/article/us/en/04/sln311302/dell-command-configure) provides a Command Line Interface and a Graphical User Interface.
 
 ### Add tools from HP
 
