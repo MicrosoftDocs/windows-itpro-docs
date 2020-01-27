@@ -44,7 +44,7 @@
 #### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 
-### [Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+### [Next-generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 #### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
 
 ### [Endpoint detection and response]()
@@ -187,7 +187,7 @@
 ##### [Controlled folder access](microsoft-defender-atp/evaluate-controlled-folder-access.md)
 ##### [Attack surface reduction](microsoft-defender-atp/evaluate-attack-surface-reduction.md)
 ##### [Network firewall](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
-##### [Evaluate next generation protection](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
+##### [Evaluate next-generation protection](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
 ### [Access the Windows Defender Security Center Community Center](microsoft-defender-atp/community.md)
 
@@ -231,7 +231,7 @@
 
 
 
-### [Configure next generation protection]()
+### [Configure next-generation protection]()
 #### [Configure Windows Defender Antivirus features](windows-defender-antivirus/configure-windows-defender-antivirus-features.md)
 
 #### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
@@ -315,13 +315,13 @@
 ##### [Run and review the results of an offline scan](windows-defender-antivirus/windows-defender-offline.md)
 ##### [Restore quarantined files](windows-defender-antivirus/restore-quarantined-files-windows-defender-antivirus.md)
 
-#### [Manage next generation protection in your business]()
+#### [Manage next-generation protection in your business]()
 ##### [Management overview](windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus.md)
 ##### [Use Microsoft Intune and System Center Configuration Manager to manage next generation protection](windows-defender-antivirus/use-intune-config-manager-windows-defender-antivirus.md)
-##### [Use Group Policy settings to manage next generation protection](windows-defender-antivirus/use-group-policy-windows-defender-antivirus.md)
-##### [Use PowerShell cmdlets to manage next generation protection](windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus.md)
-##### [Use Windows Management Instrumentation (WMI) to manage next generation protection](windows-defender-antivirus/use-wmi-windows-defender-antivirus.md)
-##### [Use the mpcmdrun.exe command line tool to manage next generation protection](windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
+##### [Use Group Policy settings to manage next-generation protection](windows-defender-antivirus/use-group-policy-windows-defender-antivirus.md)
+##### [Use PowerShell cmdlets to manage next-generation protection](windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus.md)
+##### [Use Windows Management Instrumentation (WMI) to manage next-generation protection](windows-defender-antivirus/use-wmi-windows-defender-antivirus.md)
+##### [Use the mpcmdrun.exe command line tool to manage next-generation protection](windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
 
 
 ### [Microsoft Defender Advanced Threat Protection for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
@@ -573,7 +573,7 @@
 #### [Network protection](microsoft-defender-atp/troubleshoot-np.md)
 #### [Attack surface reduction rules](microsoft-defender-atp/troubleshoot-asr.md)
  
-### [Troubleshoot next generation protection](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
+### [Troubleshoot next-generation protection](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 
 
 
