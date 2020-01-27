@@ -15572,6 +15572,11 @@
 "redirect_document_id": false
 },
 {
+"source_path": "devices/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices.md",
+"redirect_url": "/surface/manage-surface-driver-and-firmware-updates.md",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/deployment/planning/windows-10-1809-removed-features.md",
 "redirect_url": "https://docs.microsoft.com/windows/deployment/planning/windows-10-removed-features",
 "redirect_document_id": false
