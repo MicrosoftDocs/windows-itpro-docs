@@ -33,9 +33,6 @@ The primary concern when selecting an Ethernet adapter is how that adapter will 
 
 Booting from the network (PXE boot) is only supported when you use an Ethernet adapter or docking station from Microsoft. To boot from the network, the chipset in the Ethernet adapter or dock must be detected and configured as a boot device in the firmware of the Surface device. Microsoft Ethernet adapters, such as the Surface Ethernet Adapter and the [Surface Dock](https://www.microsoft.com/surface/accessories/surface-dock) use a chipset that is compatible with the Surface firmware.
 
-> [!NOTE]
->  PXE boot is not supported on Surface Pro X. For more information, refer to [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
-
 The following Ethernet devices are supported for network boot with Surface devices:
 
 -   Surface USB-C to Ethernet and USB 3.0 Adapter

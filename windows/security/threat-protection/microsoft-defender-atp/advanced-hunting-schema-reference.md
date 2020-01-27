@@ -37,7 +37,7 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 
 | Table name | Description |
 |------------|-------------|
-| **[AlertEvents](advanced-hunting-alertevents-table.md)** | Alerts on Microsoft Defender Security Center |
+| **[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)** | Alerts on Microsoft Defender Security Center |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | Machine information, including OS information |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | Network properties of machines, including adapters, IP and MAC addresses, as well as connected networks and domains |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | Process creation and related events |
