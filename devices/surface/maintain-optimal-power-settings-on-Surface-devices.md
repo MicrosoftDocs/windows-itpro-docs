@@ -166,7 +166,7 @@ To learn more, see:
 | Check app usage | Your apps | Close apps.|
 | Check your power cord for any damage.| Your power cord | Replace power cord if worn or damaged.|
 
-# Learn more 
+## Learn more 
 
 - [Modern
     standby](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)
