@@ -234,15 +234,23 @@ The following is an example of Get command:
 
 ### Delete policies
 
+#### Rebootless Deletion
+
+Upon deletion, policies deployed via the ApplicationControl CSP are removed from the system but stay in effect until the next reboot. In order to functionally do a rebootless delete, first replace the existing policy with an Allow All policy (found at C:\Windows\schemas\CodeIntegrity\ExamplePolicies\AllowAll.xml) and then delete the updated policy. This will immediately prevent anything from being blocked and fully deactive the policy on the next reboot.
+
+#### Unsigned Policies
+
 To delete an unsigned policy, perform a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy**.
 
+#### Signed Policies
+
 > [!NOTE]
-> Only signed things should be able to update signed policies. Hence, performing a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** is not sufficient to delete a signed policy.
+> A signed policy by default can only be replaced by another signed policy. Hence, performing a DELETE on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** is not sufficient to delete a signed policy.
 
 To delete a signed policy:
 
 1. Replace it with a signed update allowing unsigned policy.
-2. Deploy another update with unsigned policy.
+2. Deploy another update with unsigned Allow All policy.
 3. Perform delete.
 
 The following is an example of Delete command:
