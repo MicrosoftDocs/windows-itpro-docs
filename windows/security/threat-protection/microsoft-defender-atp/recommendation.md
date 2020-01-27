@@ -49,7 +49,7 @@ severityScore | Double | Potential impact of the configuration to the organizati
 publicExploit | Boolean | Public exploit is available 
 activeAlert | Boolean | Active alert is associated with this recommendation
 associatedThreats | String collection | Threat analytics report is associated with this recommendation
-remediationType | String | Remedation type. Possible values are: “ConfigurationChange”,“Update”,“Upgrade”,”Uninstall”
+remediationType | String | Remediation type. Possible values are: “ConfigurationChange”,“Update”,“Upgrade”,”Uninstall”
 Status | Enum | Recommendation exception status. Possible values are: “Active” and “Exception”
 configScoreImpact | Double | Configuration score impact
 exposureImpacte | Double | Exposure score impact
