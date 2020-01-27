@@ -1,7 +1,7 @@
 ---
-title: AlertEvents table in the advanced hunting schema
-description: Learn about alert generation events in the AlertEvents table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, alertevents, alert, severity, category
+title: DeviceAlertEvents table in the advanced hunting schema
+description: Learn about alert generation events in the DeviceAlertEvents table of the advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, mdatp, windows defender atp, wdatp search, query, telemetry, schema reference, kusto, table, column, data type, description, DeviceAlertEvents, alert, severity, category
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,10 +15,10 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.date: 10/08/2019
+ms.date: 01/22/2020
 ---
 
-# AlertEvents
+# DeviceAlertEvents
 
 **Applies to:**
 
@@ -26,7 +26,7 @@ ms.date: 10/08/2019
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The `AlertEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about alerts on Microsoft Defender Security Center. Use this reference to construct queries that return information from the table.
+The `DeviceAlertEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about alerts in Microsoft Defender Security Center. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting schema reference](advanced-hunting-schema-reference.md).
 

@@ -8,7 +8,7 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 11/20/2019
+ms.date: 1/22/2020
 ms.reviewer: jessko
 manager: dansimp
 ms.audience: itpro
@@ -124,7 +124,7 @@ The following tables show the availability of selected key features on Surface P
 | Deployment                              | Surface Pro 7 | Surface Pro X | Notes                                                                                                                           |
 | --------------------------------------- | ------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | Windows Autopilot                       | Yes           | Yes           |                                                                                                                                 |
-| Support for Network Boot (PXE)          | Yes           | Yes           |                                                                                                                                 |
+| Support for Network Boot (PXE)          | Yes           | No           |                                                                                                                                 |
 | Windows Configuration Designer          | Yes           | No            | Not recommended for Surface Pro X.                                                                                              |
 | WinPE                                   | Yes           | Yes           | Not recommended for Surface Pro X. Microsoft does not provide the necessary .ISO and drivers to support WinPE with Surface Pro X. |
 | Endpoint Configuration Manager: Operating System Deployment (OSD) | Yes           | No            | Not supported on Surface Pro X.                                                                                              |
