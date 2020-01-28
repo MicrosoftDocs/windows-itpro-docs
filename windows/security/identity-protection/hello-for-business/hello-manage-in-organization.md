@@ -38,7 +38,7 @@ The following table lists the Group Policy settings that you can configure for W
 
 > [!NOTE]
 > Starting with Windows 10, version 1709, the location of the PIN complexity section of the Group Policy is: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **PIN Complexity**.
-> In AD Server Group enable **Turn on Convenience pin sign-in** under **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Logon**.
+> In the AD Server Group, enable **Turn on Convenience pin sign-in** found underneath **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Logon**.
  
 <table>
 <tr>
