@@ -26,8 +26,10 @@ ms.topic: article
 ## Before you begin 
 Ensure that you have Microsoft Defender ATP deployed in your environment with machines enrolled, and not just on a laboratory set-up.
 
->[!NOTE]
->Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive targeted attack notifications and to collaborate with experts on demand. A Microsoft Threat Experts subscription is a prerequisite for experts on demand collaboration.
+Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive targeted attack notifications and to collaborate with experts on demand. Experts on Demand is an add-on service. A Microsoft Threat Experts subscription is a prerequisite for experts on demand collaboration.
+
+If you are not enrolled yet and would like to experience its benefits, go to **Settings** > **General** > **Advanced features** > **Microsoft Threat Experts** to apply for a 90-day trial. Contact your Microsoft representative to get a full Experts on Demand subscription.
+
 
 ## Register to Microsoft Threat Experts managed threat hunting service 
 If you're already a Microsoft Defender ATP customer, you can apply through the Microsoft Defender ATP portal. 
