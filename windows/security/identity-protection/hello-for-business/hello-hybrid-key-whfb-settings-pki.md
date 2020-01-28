@@ -55,6 +55,9 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
 8. Close the console.
 
+>[!NOTE]
+>Don't confuse the **Request hash** algorithm with the hash argorithm of the certificate.
+
 #### Configure Certificate Superseding for the Domain Controller Authentication (Kerberos) Certificate Template
 
 Many domain controllers may have an existing domain controller certificate.  The Active Directory Certificate Services provides a default certificate template for domain controllers--the domain controller certificate template.  Later releases provided a new certificate template--the domain controller authentication certificate template.  These certificate templates were provided prior to update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the **KDC Authentication** extension.  
