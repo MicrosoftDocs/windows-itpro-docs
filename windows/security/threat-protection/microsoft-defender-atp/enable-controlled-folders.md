@@ -102,7 +102,7 @@ Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](htt
     * **Disable (Default)** - The Controlled folder access feature will not work. All apps can make changes to files in protected folders.
     * **Audit Mode** - If a malicious or suspicious app attempts to make a change to a file in a protected folder, the change will be allowed but will be recorded in the Windows event log. This allows you to assess the impact of this feature on your organization.
     * **Block disk modification only** - Attempts by untrusted apps to write to disk sectors will be logged in Windows Event log. These logs can be found in **Applications and Services Logs** > Microsoft > Windows > Windows Defender > Operational > ID 1123.
-    * **Audit disk modification only** - Only attempts to write to protected disk sectors will be recorded in the Windows event log (under Applications and Services Logs > Microsoft > Windows > Windows Defender > Operational > ID 1124). Attempts to modify or delete files in protected folders will not be recorded.
+    * **Audit disk modification only** - Only attempts to write to protected disk sectors will be recorded in the Windows event log (under **Applications and Services Logs** > **Microsoft** > **Windows** > **Windows Defender** > **Operational** > **ID 1124**). Attempts to modify or delete files in protected folders will not be recorded.
 
       ![Screenshot of the group policy option Enabled and Audit Mode selected in the drop-down](../images/cfa-gp-enable.png)
 
