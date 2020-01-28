@@ -650,12 +650,15 @@ The steps below outline the process used to boot a virtual machine using an ISO 
     6. Captures the installation to a Windows Imaging (WIM) file.
     7. Turns off the virtual machine.
 
-If you enabled monitoring, you can check the progress of these tasks.
+After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
+
+## Troubleshooting
+
+If you enabled monitoring, you can check the progress of the task sequence.
 
    ![monitoring](../images/mdt-monitoring.png)
 
->[!TIP]
->If there are problems with your task sequence, you can troubleshoot in Windows PE by pressing F8 to open a command prompt. There are several [MDT log files](https://docs.microsoft.com/configmgr/mdt/troubleshooting-reference#mdt-logs) created that can be helpful determining the origin of an error, such as BDD.log.  You can copy these logs from the client to your MDT server for viewing with CMTrace (ex: copy *.log \\\\mdt01\\logs$).
+If there are problems with your task sequence, you can troubleshoot in Windows PE by pressing F8 to open a command prompt. There are several [MDT log files](https://docs.microsoft.com/configmgr/mdt/troubleshooting-reference#mdt-logs) created that can be helpful determining the origin of an error, such as BDD.log.  You can copy these logs from the client to your MDT server for viewing with CMTrace (ex: copy *.log \\\\mdt01\\logs$).
 
 After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
 

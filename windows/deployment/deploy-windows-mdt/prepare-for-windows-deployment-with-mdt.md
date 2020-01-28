@@ -156,7 +156,9 @@ This will create an OU structure as shown below.
 
 To use the Active Directory Users and Computers console (instead of PowerShell):
 
-1.  On DC01, using Active Directory User and Computers, in the contoso.com domain level, create a top-level OU named **Contoso**.
+On **DC01**:
+
+1.  Using the Active Directory Users and Computers console (dsa.msc), in the contoso.com domain level, create a top-level OU named **Contoso**.
 2.  In the **Contoso** OU, create the following OUs:
     1.  Accounts
     2.  Computers
