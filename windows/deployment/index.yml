@@ -37,7 +37,7 @@ sections:
     - href: windows-autopilot/windows-autopilot
       html: <p>Windows Autopilot greatly simplifies deployment of Windows devices</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
+        src: https://docs.microsoft.com/media/common/i_delivery.svg
       title: Windows Autopilot
 - title:
 - items:
