@@ -19,7 +19,7 @@ ms.date: 08/30/2016
 
 ### Documents for download
 
--   [Advanced Group Policy Management 4.0 documents](https://go.microsoft.com/fwlink/?LinkID=158931)
+-   [Advanced Group Policy Management 4.0 documents](https://www.microsoft.com/download/details.aspx?id=13975)
 
 ### Microsoft Desktop Optimization Pack resources
 
