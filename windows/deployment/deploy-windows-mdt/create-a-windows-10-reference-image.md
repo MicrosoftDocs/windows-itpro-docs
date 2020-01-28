@@ -652,9 +652,11 @@ The steps below outline the process used to boot a virtual machine using an ISO 
 
 After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
 
+   ![image](../images/image-captured.png)
+
 ## Troubleshooting
 
-If you enabled monitoring, you can check the progress of the task sequence.
+If you [enabled monitoring](#optional-enable-monitoring), you can check the progress of the task sequence.
 
    ![monitoring](../images/mdt-monitoring.png)
 
