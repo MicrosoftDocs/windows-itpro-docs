@@ -34,22 +34,27 @@ For the purposes of this topic, we will use three machines: DC01, MDT01, and PC0
 
 ## Step 1: Configure Active Directory permissions
 
-These steps will show you how to configure an Active Directory account with the permissions required to deploy a Windows 10 machine to the domain using MDT. These steps assume you have downloaded the sample [Set-OUPermissions.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619362) and copied it to C:\\Setup\\Scripts on DC01. The account is used for Windows Preinstallation Environment (Windows PE) to connect to MDT01. In order for MDT to join machines into the contoso.com domain you need to create an account and configure permissions in Active Directory.
-1. On DC01, using Active Directory User and Computers, browse to **contoso.com / Contoso / Service Accounts**.
-2. Select the **Service Accounts** organizational unit (OU) and create the MDT\_JD account using the following settings:
-   1.  Name: MDT\_JD
-   2.  User logon name: MDT\_JD
-   3.  Password: P@ssw0rd
-   4.  User must change password at next logon: Clear
-   5.  User cannot change password: Select
-   6.  Password never expires: Select
-3. In an elevated Windows PowerShell prompt (run as Administrator), run the following commands and press **Enter** after each command:
+These steps will show you how to configure an Active Directory account with the permissions required to deploy a Windows 10 machine to the domain using MDT. These steps assume you have  The account is used for Windows Preinstallation Environment (Windows PE) to connect to MDT01. In order for MDT to join machines into the contoso.com domain you need to create an account and configure permissions in Active Directory.
+
+First, download the [Set-OUPermissions.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619362) and copy it to the C:\\Setup\\Scripts directory on DC01.  This script configures permissions to allow the MDT_JD account to manage computer accounts in the contoso > Computers organizational unit.
+
+On DC01:
+
+1. Create the MDT_JD service account by running the following command from an elevated Windows PowerShell prompt:
+
+   ```powershell
+   New-ADUser -Name MDT_JD -UserPrincipalName MDT_BA -path "OU=Service Accounts,OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM" -Description "MDT join domain account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -PasswordNeverExpires $true -Enabled $true 
+   ```
+
+2. Next, run the Set-OuPermissions script to apply permissions to the **MDT\_JD** service account, enabling it to manage computer accounts in the Contoso / Computers OU. Run the following commands from an elevated Windows PowerShell prompt:
+
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
    Set-Location C:\Setup\Scripts
    .\Set-OUPermissions.ps1 -Account MDT_JD -TargetOU "OU=Workstations,OU=Computers,OU=Contoso"
    ```
-4. The Set-OUPermissions.ps1 script allows the MDT\_JD user account permissions to manage computer accounts in the Contoso / Computers OU. Below you find a list of the permissions being granted:
+
+The Set-OUPermissions.ps1 script enables . Below you find a list of the permissions being granted:
    1.  Scope: This object and all descendant objects
        1.  Create Computer objects
        2.  Delete Computer objects

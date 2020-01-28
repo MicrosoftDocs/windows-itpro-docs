@@ -116,7 +116,7 @@ Switch to **DC01** and perform the following procedures on **DC01**:
 
 To create the OU structure, you can use the Active Directory Users and Computers console (dsa.msc), or you can use Windows PowerShell.
 
-To use Windows PowerShell, copy the following commands into a text file and save it as <b>c:\ou.ps1</b>. Be sure that you are viewing file extensions and that you save the file with the .ps1 extension.
+To use Windows PowerShell, copy the following commands into a text file and save it as <b>C:\Setup\Scripts\ou.ps1</b>. Be sure that you are viewing file extensions and that you save the file with the .ps1 extension.
 
 ```powershell
 $oulist = Import-csv -Path c:\oulist.txt
@@ -128,7 +128,7 @@ ForEach($entry in $oulist){
 }
 ```
 
-Next, copy the following list of OU names and paths into a text file and save it as <b>c:\oulist.txt</b>
+Next, copy the following list of OU names and paths into a text file and save it as <b>C:\Setup\Scripts\oulist.txt</b>
 
 ```text
 OUName,OUPath
@@ -144,9 +144,11 @@ Workstations,"OU=Computers,OU=Contoso,DC=CONTOSO,DC=COM"
 Security Groups,"OU=Groups,OU=Contoso,DC=CONTOSO,DC=COM"
 ```
 
-Lastly, open an elevated Windows PowerShell prompt on DC01, navigate to the <b>c:\\</b> directory and run the ou.ps1 script:
+Lastly, open an elevated Windows PowerShell prompt on DC01 and run the ou.ps1 script:
 
 ```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
+Set-Location C:\Setup\Scripts
 .\ou.ps1
 ```
 
