@@ -35,7 +35,7 @@ sections:
         src: https://docs.microsoft.com/media/common/i_upgrade.svg
       title: Windows as a service
     - href: windows-autopilot/windows-autopilot
-      html: <p>Windows Autopilot greatly simplifies deployment of Windows devices.</p>
+      html: <p>Windows Autopilot greatly simplifies deployment of Windows devices</p>
       image:
         src: https://docs.microsoft.com/media/common/i_setup.svg
       title: Windows Autopilot
