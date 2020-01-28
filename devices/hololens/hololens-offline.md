@@ -33,9 +33,9 @@ HoloLens supports a limited set of offline experiences for customers who have ne
 | MSA | https://login.live.com/ppsecure/inlineconnect.srf?id=80600 |
 | MSA Pin | https://account.live.com/msangc?fl=enroll |
 
-## Use HoloLens online 
+## Endpoint configuration
 
-To take full advantage of HoloLens functionality, the following endpoints need to be enabled in your network configuration.
+In addition to the list above, to take full advantage of HoloLens functionality, the following endpoints need to be enabled in your network configuration.
 
 
 | Purpose | URL |
