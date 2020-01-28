@@ -96,7 +96,7 @@ If your organization uses proxy server authentication for outbound traffic, use 
 
 ## Deploy the compatibility update and related updates
 
-The compatibility update scans your devices and enables application usage tracking. If you don’t already have these updates installed, you can download the applicable version from the Microsoft Update Catalog or deploy it using Windows Server Update Services (WSUS) or your software distribution solution, such as Microsoft Endpoint Configuration Manager.
+The compatibility update scans your devices and enables application usage tracking. If you don’t already have these updates installed, you can download the applicable version from the Microsoft Update Catalog or deploy it using Windows Server Update Services (WSUS) or your software distribution solution, such as System Center Configuration Manager.
 
 | **Operating System** | **Updates** |
 |----------------------|-----------------------------------------------------------------------------|
