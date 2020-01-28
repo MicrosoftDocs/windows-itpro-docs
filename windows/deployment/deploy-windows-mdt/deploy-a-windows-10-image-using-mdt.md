@@ -21,11 +21,13 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-This topic will show you how to take your reference image for Windows 10 (that we just [created](create-a-windows-10-reference-image.md)), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). You will prepare for this by creating a MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. You will then configure the deployment share, create a new task sequence, add applications, add drivers, add rules, and configure Active Directory permissions for deployment.
+This topic will show you how to take your reference image for Windows 10 (that was just [created](create-a-windows-10-reference-image.md)), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). 
 
-For the purposes of this topic, we will use three machines: DC01, MDT01, and PC0005. DC01 is a domain controller, MDT01 is a Windows Server 2019 domain member server, and PC0005 is a blank machine to which we will deploy Windows 10. MDT01 and PC0005 are members of the domain contoso.com for the fictitious Contoso Corporation.
+We will prepare for this by creating an MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. We will configure Active Directory permissions, configure the deployment share, create a new task sequence, and add applications, drivers, and rules.
 
-![figure 1](../images/mdt-07-fig01.png)
+For the purposes of this topic, we will use three machines: DC01, MDT01, and PC0005. DC01 is a domain controller, MDT01 is a Windows Server 2019 domain member server, and PC0005 is a blank device to which we will deploy Windows 10. MDT01 and PC0005 are members of the domain contoso.com for the fictitious Contoso Corporation.
+
+   ![devices](../images/mdt-07-fig01.png)
 
 >[!NOTE]
 >For important details about the setup for the procedures in this article, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
@@ -61,7 +63,7 @@ These steps will show you how to configure an Active Directory account with the 
        7.  Validated write to DNS host name
        8.  Validated write to service principal name
 
-## <a href="" id="sec02"></a>Step 2: Set up the MDT production deployment share
+## Step 2: Set up the MDT production deployment share
 
 When you are ready to deploy Windows 10 in a production environment, you will first create a new MDT deployment share. You should not use the same deployment share that you used to create the reference image for a production deployment. For guidance on creating a custom Windows 10 image, see 
 [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).

@@ -31,7 +31,7 @@ For the purposes of this topic, we will use three computers: DC01, MDT01, and PC
    - MDT01 is a contoso.com domain member server.
    - PC0001 is a Windows 10 Enterprise x64 client and also a contoso.com domain member.
  
-    ![figure 1](../images/mdt-08-fig01.png)
+   ![devices](../images/mdt-08-fig01.png)
 
 ## The reference image
 
@@ -64,9 +64,9 @@ On **MDT01**:
 
    The Deployment Workbench with the MDT Build Lab deployment share.
 
-### Optional: Enable monitoring
+### Enable monitoring
 
-To monitor the task sequence as it happens, right-click the **MDT Build Lab** deployment share, click **Properties**, click the **Monitoring** tab, and select **Enable monitoring for this deployment share**.
+To monitor the task sequence as it happens, right-click the **MDT Build Lab** deployment share, click **Properties**, click the **Monitoring** tab, and select **Enable monitoring for this deployment share**.  This step is optional.
 
 ### Configure permissions for the deployment share
 
@@ -656,7 +656,7 @@ After some time, you will have a Windows 10 Enterprise x64 image that is fully 
 
 ## Troubleshooting
 
-If you [enabled monitoring](#optional-enable-monitoring), you can check the progress of the task sequence.
+If you [enabled monitoring](#enable-monitoring), you can check the progress of the task sequence.
 
    ![monitoring](../images/mdt-monitoring.png)
 
