@@ -108,6 +108,11 @@ Microsoft Defender ATP includes a secure score to help you dynamically assess th
 **[Microsoft Threat Experts](microsoft-threat-experts.md)**<br>
 Microsoft Defender ATP's new managed threat hunting service provides proactive hunting, prioritization, and additional context and insights that further empower Security operation centers (SOCs) to identify and respond to threats quickly and accurately.
 
+>[!IMPORTANT]
+>Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive targeted attack notifications and to collaborate with experts on demand. Experts on Demand is an add-on service. A Microsoft Threat Experts subscription is a prerequisite for experts on demand collaboration.
+
+If you are not enrolled yet and would like to experience its benefits, go to **Settings** > **General** > **Advanced features** > **Microsoft Threat Experts** to apply for a 90-day trial. Contact your Microsoft representative to get a full Experts on Demand subscription.
+
 <a name="apis"></a>
 
 **[Management and APIs](management-apis.md)**<br>
