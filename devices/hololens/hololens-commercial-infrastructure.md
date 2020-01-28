@@ -36,7 +36,7 @@ Make sure that these ports and URLs are allowed on your network firewall. This w
 1. Make sure that these ports and URLs are allowed on your network firewall. This will enable Microsoft Teams to function. The latest list can be found [here](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
 
 ### Guides Specific Network Requirements
-Guides only require network access to download and use the app. 
+Guides only require network access to download and use the app.
 
 ## Azure Active Directory Guidance
 This step is only necessary if your company plans on managing the HoloLens and mixed reality apps.
@@ -64,7 +64,7 @@ These steps ensure that your company’s users (or a group of users) can add dev
 1.	Option 2: Give selected users/groups permission to join devices to Azure AD
 **Sign in to the Azure portal as an administrator** > **Azure Active Directory** > **Devices** > **Device Settings** >
 **Set Users may join devices to Azure AD to *Selected***
-![Image that shows Configuration of Azure AD Joined Devices](images/AzureAD1.png)
+![Image that shows Configuration of Azure AD Joined Devices](images/azure-ad-image.png)
 
 1.	Option 3: You can block all users from joining their devices to the domain. This means that all devices will need to be manually enrolled by your IT department. 
 
