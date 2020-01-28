@@ -22,19 +22,19 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-This article for the IT professional explains the options that security policy planner must consider and the tasks they must complete to deploy an effective security audit policy in a network that includes advanced security audit policies.
+This article for IT professionals explains the options that security policy planners should consider and the tasks they must complete to deploy an effective security audit policy in a network that includes advanced security audit policies.
 
 Organizations invest a lot in security applications and services, such as antimalware software, firewalls, and encryption. But no matter how much security hardware or software you deploy, how tightly you control the rights of users, or how carefully you configure security permissions on your data, the job isn't complete unless you have a well-defined, timely auditing strategy to track the effectiveness of your defenses and identify attempts to circumvent them.
 
 To be well-defined and timely, an auditing strategy must provide useful tracking data for an organization's most important resources, critical behaviors, and potential risks. In many organizations, it must also provide proof that IT operations comply with corporate and regulatory requirements.
 
-No organization has unlimited resources to monitor every resource and activity on a network. If you don't plan well, you'll likely have gaps in your auditing strategy. But if you try to audit every resource and activity, you may gather too much monitoring data, including thousands of benign audit entries that an analyst needs to sift through to identify the narrow set of entries that warrant closer examination. Such volume could delay or prevent auditors from identifying suspicious activity. So, too much monitoring can leave an organization as vulnerable as not enough.
+No organization has unlimited resources to monitor every resource and activity on a network. If you don't plan well, you'll likely have gaps in your auditing strategy. But if you try to audit every resource and activity, you may gather too much monitoring data, including thousands of benign audit entries that an analyst will have to sift through to identify the narrow set of entries that warrant closer examination. Such volume could delay or prevent auditors from identifying suspicious activity. Too much monitoring can leave an organization as vulnerable as not enough.
 
 Here are some features that can help you focus your effort:
 
--   **Advanced audit policy settings**: You can apply and manage detailed audit policy settings through Group Policy.
--   **"Reason for access" auditing**: You can specify and identify the permissions that were used to generate a particular object access security event.
--   **Global object access auditing**: You can define system access control lists (SACLs) for an entire computer file system or registry.
+-   **Advanced audit policy settings:** You can apply and manage detailed audit policy settings through Group Policy.
+-   **"Reason for access" auditing:** You can specify and identify the permissions that were used to generate a particular object access security event.
+-   **Global object access auditing:** You can define system access control lists (SACLs) for an entire computer file system or registry.
 
 To deploy these features and plan an effective security auditing strategy, you need to:
 
@@ -70,7 +70,7 @@ Designing and deploying a Windows security audit policy involves the following t
 
     This section helps define the business objectives that will guide your Windows security audit policy. It also helps  define the resources, users, and computers that will be the focus of your auditing.
 
--   [Map the security audit policy to groups of users, computers, and resources in your organization](#bkmk-2)
+-   [Map the security audit policy to groups of users, computers, and resources](#bkmk-2)
 
     This section explains how to integrate security audit policy settings with domain Group Policy settings for different groups of users, computers, and resources. It also explains when to use basic audit policy settings and when to use advanced security audit policy settings.
 
@@ -100,7 +100,7 @@ To create your Windows security audit plan, begin by identifying:
 
 ### Network environment
 
-An organization's domain and organizational unit (OU) structure provide a fundamental starting point for thinking about how to apply a security audit policy. They likely provide a foundation of Group Policy Objects (GPOs) and logical grouping of resources and activities that you can use to apply the audit settings that you choose. Your domain and OU structure probably already provide logical groups of users, resources, and activities that justify the resources needed to audit them. For information about how to integrate a security audit policy with your domain and OU structure, see [Mapping security audit policy to groups of users, computers, and resources in your organization](#bkmk-2) later in this document.
+An organization's domain and organizational unit (OU) structure provide a fundamental starting point for thinking about how to apply a security audit policy. They likely provide a foundation of Group Policy Objects (GPOs) and logical grouping of resources and activities that you can use to apply the audit settings that you choose. Your domain and OU structure probably already provide logical groups of users, resources, and activities that justify the resources needed to audit them. For information about how to integrate a security audit policy with your domain and OU structure, see [Mapping security audit policy to groups of users, computers, and resources](#bkmk-2) later in this document.
 
 In addition to your domain model, determine whether your organization maintains a systematic threat model. A good threat model can help identify threats to key components in your infrastructure. Then you can apply audit settings that enhance your ability to identify and counter those threats.
 
@@ -111,7 +111,7 @@ For details about how to complete each of these steps and prepare a detailed thr
 
 ### Data and resources
 
-For data and resource auditing, you need to identify the most important types of data and resources (such as patient records, accounting data, or marketing plans) that can benefit from the closer monitoring that Windows auditing can provide. Some of these data resources might already be monitored through auditing features in products such as Microsoft SQL Server and Exchange Server. If so, you may want to consider how Windows auditing features can enhance the existing audit strategy. As with the domain and OU structure discussed previously, security auditing should focus on your most critical resources. You also must consider how much audit data you can manage.
+For data and resource auditing, you need to identify the most important types of data and resources (such as patient records, accounting data, or marketing plans) that can benefit from the closer monitoring that Windows auditing can provide. Some of your data resources might already be monitored through auditing features in products such as Microsoft SQL Server and Exchange Server. If so, you may want to consider how Windows auditing features can enhance your existing audit strategy. As with the domain and OU structure discussed previously, security auditing should focus on your most critical resources. You also must consider how much audit data you can manage.
 
 You can record if these resources have high, medium, or low business impact; the cost to the organization if these data resources are accessed by unauthorized users; and the risks that such access can pose to the organization. The type of access by users (such as *read*, *modify*, or *copy*) can also pose different levels of risk to an organization.
 
@@ -121,19 +121,19 @@ The following table provides an example of a resource analysis for an organizati
 
 | Resource class | Where stored | Organizational unit | Business impact | Security or regulatory requirements |
 | - | - | - | - | - |
-| Payroll data| Corp-Finance-1| Accounting: Read/Write on Corp-Finance-1<br/>Departmental Payroll Managers: Write only on Corp-Finance-1| High| Financial integrity and employee privacy|
-| Patient medical records| MedRec-2| Doctors and Nurses: Read/Write on Med/Rec-2<br/>Lab Assistants: Write only on MedRec-2<br/>Accounting: Read only on MedRec-2| High| Strict legal and regulatory standards|
-| Consumer health information| Web-Ext-1| Public Relations Web Content Creators: Read/Write on Web-Ext-1<br/>Public: Read only on Web-Ext-1| Low| Public education and corporate image|
+| Payroll data| Corp-Finance-1| Accounting: Read/write on Corp-Finance-1<br/>Departmental Payroll Managers: Write only on Corp-Finance-1| High| Financial integrity and employee privacy|
+| Patient medical records| MedRec-2| Doctors and Nurses: Read/write on Med/Rec-2<br/>Lab Assistants: Write only on MedRec-2<br/>Accounting: Read only on MedRec-2| High| Strict legal and regulatory standards|
+| Consumer health information| Web-Ext-1| Public Relations Web Content Creators: Read/write on Web-Ext-1<br/>Public: Read only on Web-Ext-1| Low| Public education and corporate image|
  
 ### Users
 
-Many organizations find it useful to classify the types of users they have and base permissions on this classification. This classification can help you identify which user activities should be the subject of security auditing and the amount of audit data that they'll generate.
+Many organizations find it useful to classify the types of users they have and then base permissions on this classification. This classification can help you identify which user activities should be the subject of security auditing and the amount of audit data that they'll generate.
 
 Organizations can create distinctions based on the type of rights and permissions that users need to do their jobs. Under the classification *administrators*, for example, large organizations might assign local administrator responsibilities for a single computer, for specific applications such as Exchange Server or SQL Server, or for an entire domain. Under *users*, permissions and Group Policy settings can apply to all users in an organization or as few as a subset of employees in a given department.
 
 Also, if your organization is subject to regulatory requirements, user activities such as accessing medical records or financial data may need to be audited to verify that you're complying with these requirements.
 
-To effectively audit user activity, begin by listing the different types of users in your organization, the types of data they need access to, and the data they should not have access to.
+To effectively audit user activity, begin by listing the different types of users in your organization, the types of data they need access to, and the data they shouldn't have access to.
 
 Also, if external users can access your organization's data, be sure to identify them. Determine whether they're a business partner, customer, or general user; the data they have access to; and the permissions they have to access that data.
 
@@ -194,11 +194,11 @@ By using Group Policy, you can apply your security audit policy to defined group
 
 -   Audit policies are computer policies. Therefore, they must be applied through GPOs that are applied to *computer* OUs, not to *user* OUs. But in most cases you can apply audit settings for only specified resources and groups of users by configuring SACLs on the relevant objects. This functionality enables auditing for a security group that contains only the users you specify.
 
-    For example, you could configure a SACL for a folder called *Payroll Data* on Accounting Server 1. You can audit attempts by members of the Payroll Processors OU to delete objects from this folder. The **Object Access\\Audit File System** audit policy setting applies to Accounting Server 1. But, because it requires a corresponding resource SACL, only actions by members of the Payroll Processors OU on the Payroll Data folder generate audit events.
+    For example, you could configure a SACL for a folder called *Payroll Data* on Accounting Server 1. You can audit attempts by members of the Payroll Processors OU to delete objects from this folder. The **Object Access\\Audit File System** audit policy setting applies to Accounting Server 1. But, because it requires a corresponding resource SACL, only actions by members of the Payroll Processors OU on the Payroll Data folder will generate audit events.
 
 -   Advanced security audit policy settings were introduced in Windows Server 2008 R2 and Windows 7. These advanced audit policies can only be applied to those operating systems and later versions by using Group Policy.
 
-    >[!IMPORTANT]  
+    > [!IMPORTANT]  
     > Whether you apply advanced audit policies by using Group Policy or by using logon scripts, don't use both the basic audit policy settings under **Local Policies\\Audit Policy** *and* the advanced settings under **Security Settings\\Advanced Audit Policy Configuration**. Using both basic and advanced audit policy settings can cause unexpected results in audit reporting.
 
     If you use **Advanced Audit Policy Configuration** settings or logon scripts to apply advanced audit policies, be sure to enable the **Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings** policy setting under **Local Policies\\Security Options**. This configuration will prevent conflicts between similar settings by forcing basic security auditing to be ignored.

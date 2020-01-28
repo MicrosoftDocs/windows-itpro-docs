@@ -26,7 +26,7 @@ This article describes the best practices, location, and values for the **Networ
 
 ## Reference
 
-Starting with Windows Server 2008 R2 and Windows 7, the Negotiate Security Support Provider (SSP) supports an extension SSP, Negoexts.dll. This extension SSP is treated as an authentication protocol by the Windows operating system, and it supports SSPs from Microsoft, including PKU2U. You can also develop or add other SSPs.
+Starting with Windows Server 2008 R2 and Windows 7, the Negotiate Security Support Provider (SSP) supports an extension SSP, Negoexts.dll. This extension SSP is treated as an authentication protocol by the Windows operating system. It supports SSPs from Microsoft, including PKU2U. You can also develop or add other SSPs.
 
 When devices are configured to accept authentication requests by using online IDs, Negoexts.dll calls the PKU2U SSP on the computer that's used to log on. The PKU2U SSP obtains a local certificate and exchanges the policy between the peer computers. When it's validated on the peer computer, the certificate within the metadata is sent to the logon peer for validation. It associates the user's certificate to a security token, and then the logon process completes.
 
@@ -40,11 +40,11 @@ This policy isn't configured by default on domain-joined devices. This would dis
 -   **Enabled**: This setting allows authentication to successfully complete between the two (or more) computers that have established a peer relationship through the use of online IDs. The PKU2U SSP obtains a local certificate and exchanges the policy between the peer devices. When validated on the peer computer, the certificate within the metadata is sent to the logon peer for validation. It associates the user's certificate to a security token, and then the logon process completes.
 
     > [!NOTE]
-    > KU2U is disabled by default on Windows Server. Remote desktop connections from a hybrid Azure AD-joined server to an Azure AD-joined Windows 10 device or a Hybrid Azure AD-joined domain member Windows 10 device fail. To resolve this, enable PKU2U on the server.
+    > KU2U is disabled by default on Windows Server. Remote Desktop connections from a hybrid Azure AD-joined server to an Azure AD-joined Windows 10 device or a Hybrid Azure AD-joined domain member Windows 10 device fail. To resolve this, enable PKU2U on the server.
 
 -   **Disabled**: This setting prevents online IDs from being used to authenticate the user to another computer in a peer-to-peer relationship.
 
--   ***Not set***. Not configuring this policy prevents online IDs from being used to authenticate the user. This option is the default on domain-joined devices.
+-   ***Not set***: Not configuring this policy prevents online IDs from being used to authenticate the user. This option is the default on domain-joined devices.
 
 ### Best practices
 
@@ -52,7 +52,7 @@ Within a domain, domain accounts should be used for authentication. Set this pol
 
 ### Location
 
-Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
+*Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options*
 
 ### Default values
 
@@ -81,7 +81,7 @@ Set this policy to *Disabled* or don't configure this security policy for domain
 
 ### Potential impact
 
-If you don't set or you disable this policy, the PKU2U protocol won't be used to authenticate between peer devices, which force users to follow domain-defined access control policies. If you enable this policy, you allow your users to authenticate by using local certificates between systems that aren't part of a domain that uses PKU2U. This configuration allows users to share resources between devices.
+If you don't set or you disable this policy, the PKU2U protocol won't be used to authenticate between peer devices, which forces users to follow domain-defined access control policies. If you enable this policy, you allow your users to authenticate by using local certificates between systems that aren't part of a domain that uses PKU2U. This configuration allows users to share resources between devices.
 
 ## Related topics
 

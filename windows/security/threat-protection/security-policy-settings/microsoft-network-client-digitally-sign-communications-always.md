@@ -55,7 +55,7 @@ Enable **Microsoft network client: Digitally sign communications (always)**.
 
 ### Location
 
-Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
+*Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options*
 
 ### Default values
 
@@ -86,7 +86,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 Session hijacking uses tools that allow attackers who have access to the same network as the client device or server to interrupt, end, or steal a session in progress. Attackers can potentially intercept and modify unsigned SMB packets and then modify the traffic and forward it to make the server perform objectionable actions. Alternatively, the attacker could pose as the server or client computer after legitimate authentication and gain unauthorized access to data.
 
-SMB is the resource-sharing protocol that's supported by many versions of the Windows operating systems. It's the basis of many modern features like Storage Spaces Direct, Storage Replica, and SMB Direct, as well as many legacy protocols and tools. SMB signatures authenticate users and the servers that host the data. If either side fails the authentication process, data transmission doesn't happen.
+SMB is the resource-sharing protocol that's supported by many versions of the Windows operating system. It's the basis of many modern features like Storage Spaces Direct, Storage Replica, and SMB Direct, as well as many legacy protocols and tools. SMB signatures authenticate users and the servers that host the data. If either side fails the authentication process, data transmission doesn't happen.
 
 ### Countermeasure
 
@@ -97,7 +97,7 @@ Enable **Microsoft network client: Digitally sign communications (always)**.
 
 ### Potential impact
 
-Storage speeds affect performance. A faster drive on the source and destination allows more throughput, which causes more CPU usage of signing. If you're using a 1-Gb Ethernet network or slower storage speed with a modern CPU, there's limited degradation in performance. If you're using a faster network (such as 10 Gb), the performance impact of signing may be greater.
+Storage speeds affect performance. A faster drive on the source and destination allows more throughput, which causes more CPU usage for signing. If you're using a 1-Gb Ethernet network or slower storage speed with a modern CPU, there's limited degradation in performance. If you're using a faster network (such as 10 Gb), the performance impact of signing may be greater.
 
 ## Related topics
 
