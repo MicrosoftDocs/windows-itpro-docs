@@ -24,7 +24,7 @@ manager: dansimp
 - Windows 10, version 1703 and later
 
 
-The **Device performance & health** section contains information about hardware, devices, and drivers related to the machine. IT administrators and IT pros should reference the appropriate documentation library for the issues they are seeing, such as the [configure the Load and unload device drivers security policy setting](https://docs.microsoft.com/windows/device-security/security-policy-settings/load-and-unload-device-drivers) and how to [deploy drivers during Windows 10 deployment using System Center Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager).
+The **Device performance & health** section contains information about hardware, devices, and drivers related to the machine. IT administrators and IT pros should reference the appropriate documentation library for the issues they are seeing, such as the [configure the Load and unload device drivers security policy setting](https://docs.microsoft.com/windows/device-security/security-policy-settings/load-and-unload-device-drivers) and how to [deploy drivers during Windows 10 deployment using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager).
 
 The [Windows 10 IT pro troubleshooting topic](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions), and the main [Windows 10 documentation library](https://docs.microsoft.com/windows/windows-10/) can also be helpful for resolving issues.
 
@@ -34,7 +34,7 @@ In Windows 10, version 1709 and later, the section can be hidden from users of t
 
 ## Hide the Device performance & health section
 
-You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Security app, and its icon will not be shown on the navigiation bar on the side of the app.
+You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Security app, and its icon will not be shown on the navigation bar on the side of the app.
 
 This can only be done in Group Policy.
 
