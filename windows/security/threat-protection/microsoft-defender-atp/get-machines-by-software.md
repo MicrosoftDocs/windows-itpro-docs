@@ -83,7 +83,7 @@ Here is an example of the response.
             "osPlatform": "Windows10",
             "rbacGroupId": 9
         },
-…
+]
 }
 ```
 
