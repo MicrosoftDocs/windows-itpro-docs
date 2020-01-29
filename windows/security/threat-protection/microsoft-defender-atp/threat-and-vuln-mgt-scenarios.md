@@ -212,6 +212,7 @@ After you have identified which software and software versions are vulnerable du
 - [Advanced hunting overview](overview-hunting.md)
 - [All advanced hunting tables](advanced-hunting-reference.md)
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Machine APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine)
 - [Vulnerability APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
 - [Software APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/software)
 - [Recommendation APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
