@@ -25,7 +25,7 @@ ms.topic: article
 Retrieves a list of all security recommendations affecting the organization.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -98,7 +98,11 @@ Content-type: json
             "exposedMachinesCount": 7,
             "nonProductivityImpactedAssets": 0,
             "relatedComponent": "Windows 10"
-        },
-…
+        }
+        ]
 }
 ```
+## Related topics
+- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Threat & Vulnerability security recommendation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)
+
