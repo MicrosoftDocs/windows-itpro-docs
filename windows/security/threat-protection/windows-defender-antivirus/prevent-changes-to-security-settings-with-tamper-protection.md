@@ -119,7 +119,7 @@ Here's what you see in the Windows Security app:
 
 ### Are you using Windows OS 1709, 1803, or 1809?
 
-If you are using Windows OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), or [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. In this case, the one of the following procedures to determine whether tamper protection is enabled.
+If you are using Windows OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), or [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. In this case, you can use PowerShell to determine whether tamper protection is enabled.
 
 #### Use PowerShell to determine whether tamper protection is turned
 
@@ -128,16 +128,6 @@ If you are using Windows OS [1709](https://docs.microsoft.com/windows/release-in
 2. Use the [Get-MpComputerStatus](https://docs.microsoft.com/powershell/module/defender/get-mpcomputerstatus?view=win10-ps) PowerShell cmdlet.
 
 3. In the list of results, look for `IsTamperProtected`. (A value of *true* means tamper protection is enabled.)
-
-#### View a registry key value to determine whether tamper protection is turned on
-
-1. Open the Registry Editor app.
-
-2. Go to **HKEY_LOCAL_MACHINE** > **SOFTWARE** > **Microsoft** > **Windows Defender** > **Features**.
-
-3. Look for an entry of **TamperProtection** of type **REG_DWORD**, with a value of **0x5**.<br/>
-    - If you see **TamperProtection** with a value of **0**, tamper protection is not turned on. 
-    - If you do not see **TamperProtection** at all, tamper protection is not turned on.  
 
 ## View information about tampering attempts
 
@@ -230,7 +220,7 @@ Yes. The alert is shown in [https://securitycenter.microsoft.com](https://securi
 
 In addition, your security operations team can use hunting queries, such as the following:
 
-`AlertEvents | where Title == "Tamper Protection bypass"`
+`DeviceAlertEvents | where Title == "Tamper Protection bypass"`
 
 [View information about tampering attempts](#view-information-about-tampering-attempts).
 

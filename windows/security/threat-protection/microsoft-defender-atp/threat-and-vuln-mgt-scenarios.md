@@ -174,7 +174,7 @@ DeviceTvmSoftwareInventoryVulnerabilities
 | where IsExploitAvailable == 1 and CvssScore >= 7
 | summarize NumOfVulnerabilities=dcount(CveId), 
 DeviceName=any(DeviceName) by DeviceId 
-| join kind =inner(AlertEvents) on DeviceId  
+| join kind =inner(DeviceAlertEvents) on DeviceId  
 | summarize NumOfVulnerabilities=any(NumOfVulnerabilities), 
 DeviceName=any(DeviceName) by DeviceId, AlertId 
 | project DeviceName, NumOfVulnerabilities, AlertId  
@@ -212,3 +212,9 @@ After you have identified which software and software versions are vulnerable du
 - [Advanced hunting overview](overview-hunting.md)
 - [All advanced hunting tables](advanced-hunting-reference.md)
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Machine APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine)
+- [Vulnerability APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
+- [Software APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/software)
+- [Recommendation APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
+- [Score APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/score)
+

@@ -57,6 +57,10 @@ Machines | Run API calls such as get machines, get machines by ID, information a
 Machine Actions | Run API call such as Isolation, Run anti-virus scan and more.
 Indicators | Run API call such as create Indicator, get Indicators and delete Indicators.
 Users | Run API calls such as get user related alerts and user related machines.
+Score | Run API calls such as get exposure score or get device secure score.
+Software | Run API calls such as list vulnerabilities by software.
+Vulnerability | Run API calls such as list machines by vulnerability.
+Recommendation | Run API calls such as Get recommendation by Id.
 
 ## Related topic
 - [Microsoft Defender ATP APIs](apis-intro.md)

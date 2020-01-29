@@ -43,7 +43,7 @@ Lamna Healthcare Company (Lamna) is a large healthcare provider operating in the
 Lamna uses [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) (MEM) in hybrid mode with both Configuration Manager (MEMCM) and Intune. Although they use MEM to deploy many applications, Lamna has always had very relaxed application usage practices: individual teams and employees have been able to install and use any applications they deem necessary for their role on their own workstations. Lamna also recently started to use [Microsoft Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) (MDATP) for better endpoint detection and response.
 
 > [!NOTE]
-> Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager (SCCM) 
+> Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager. 
 
 Recently, Lamna experienced a ransomware event that required an expensive recovery process and may have included data exfiltration by the unknown attacker. Part of the attack included installing and running malicious binaries that evaded detection by Lamna's antivirus solution but would have been blocked by an application control policy. In response, Lamna's executive board has authorized a number of new security IT responses, including tightening policies for application use and introducing application control.
 
