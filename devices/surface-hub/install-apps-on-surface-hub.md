@@ -130,11 +130,10 @@ To deploy apps to a large number of Surface Hubs in your organization, use a sup
 | MDM provider                | Supports offline-licensed app packages |
 |-----------------------------|----------------------------------------|
 | On-premises MDM with  Configuration Manager (beginning in version 1602) | Yes |
-| Hybrid MDM with Microsoft Endpoint Configuration Manager and Microsoft Intune | Yes |
-| [Microsoft Intune standalone](https://docs.microsoft.com/intune/windows-store-for-business) | Yes |
+|
 | Third-party MDM provider    | Check to make sure your MDM provider supports deploying offline-licensed app packages. |
 
-**To deploy apps remotely using Microsoft Endpoint Configuration Manager (either on-prem MDM or hybrid MDM)**
+**To deploy apps remotely using Microsoft Endpoint Configuration Manager**
 
 > [!NOTE]
 > These instructions are based on the current branch of Microsoft Endpoint Configuration Manager.
