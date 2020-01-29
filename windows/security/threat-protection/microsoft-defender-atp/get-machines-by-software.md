@@ -24,10 +24,10 @@ ms.topic: article
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieve a list of machines that has this software installed
+Retrieve a list of machines that has this software installed.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
 
 Permission type |   Permission  |   Permission display name
 :---|:---|:---
