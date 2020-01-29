@@ -22,10 +22,10 @@ ms.topic: article
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieves the organization software inventory
+Retrieves the organization software inventory.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
 
 Permission type |	Permission	|	Permission display name
 :---|:---|:---
@@ -79,8 +79,8 @@ Here is an example of the response.
             "activeAlert": false,
             "exposedMachines": 172,
             "impactScore": 2.39947438
-        },
-….
+        }
+        ]
 }
 ```
 
