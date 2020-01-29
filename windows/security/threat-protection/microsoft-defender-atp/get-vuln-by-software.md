@@ -85,9 +85,8 @@ Here is an example of the response.
             "exploitInKit": false,
             "exploitTypes": [],
             "exploitUris": []
-        },
-
-…
+        }
+        ]
 }
 ```
 
