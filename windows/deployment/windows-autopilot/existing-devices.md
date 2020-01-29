@@ -31,7 +31,7 @@ This topic describes how to convert Windows 7 or Windows 8.1 domain-joined compu
 
 - Microsoft Endpoint Configuration Manager Current Branch (1806) OR Microsoft Endpoint Configuration Manager Technical Preview (1808)
 - The [Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) 1803 or later
-    - Note: Config Mgr 1806 or later is required to [support](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-adk) the Windows ADK 1809.
+    - For more information on Configuration Manager support, see [Support for Windows 10 ADK](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-adk).
 - Assigned Microsoft Intune Licenses
 - Azure Active Directory Premium
 - Windows 10 version 1809 or later imported into Config Mgr as an Operating System Image
