@@ -36,17 +36,16 @@ For the purposes of this topic, we will use three machines: DC01, MDT01, and PC0
 
 These steps will show you how to configure an Active Directory account with the permissions required to deploy a Windows 10 machine to the domain using MDT. These steps assume you have  The account is used for Windows Preinstallation Environment (Windows PE) to connect to MDT01. In order for MDT to join machines into the contoso.com domain you need to create an account and configure permissions in Active Directory.
 
-First, download the [Set-OUPermissions.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619362) and copy it to the C:\\Setup\\Scripts directory on DC01.  This script configures permissions to allow the MDT_JD account to manage computer accounts in the contoso > Computers organizational unit.
+On **DC01**:
 
-On DC01:
-
-1. Create the MDT_JD service account by running the following command from an elevated Windows PowerShell prompt:
+1. Download the [Set-OUPermissions.ps1 script](https://go.microsoft.com/fwlink/p/?LinkId=619362) and copy it to the **C:\\Setup\\Scripts** directory on DC01.  This script configures permissions to allow the MDT_JD account to manage computer accounts in the contoso > Computers organizational unit.
+2. Create the MDT_JD service account by running the following command from an elevated Windows PowerShell prompt:
 
    ```powershell
-   New-ADUser -Name MDT_JD -UserPrincipalName MDT_BA -path "OU=Service Accounts,OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM" -Description "MDT join domain account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -PasswordNeverExpires $true -Enabled $true 
+   New-ADUser -Name MDT_JD -UserPrincipalName MDT_JD -path "OU=Service Accounts,OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM" -Description "MDT join domain account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -PasswordNeverExpires $true -Enabled $true 
    ```
 
-2. Next, run the Set-OuPermissions script to apply permissions to the **MDT\_JD** service account, enabling it to manage computer accounts in the Contoso / Computers OU. Run the following commands from an elevated Windows PowerShell prompt:
+3. Next, run the Set-OuPermissions script to apply permissions to the **MDT\_JD** service account, enabling it to manage computer accounts in the Contoso / Computers OU. Run the following commands from an elevated Windows PowerShell prompt:
 
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
@@ -54,84 +53,88 @@ On DC01:
    .\Set-OUPermissions.ps1 -Account MDT_JD -TargetOU "OU=Workstations,OU=Computers,OU=Contoso"
    ```
 
-The Set-OUPermissions.ps1 script enables . Below you find a list of the permissions being granted:
-   1.  Scope: This object and all descendant objects
-       1.  Create Computer objects
-       2.  Delete Computer objects
-   2.  Scope: Descendant Computer objects
-       1.  Read All Properties
-       2.  Write All Properties
-       3.  Read Permissions
-       4.  Modify Permissions
-       5.  Change Password
-       6.  Reset Password
-       7.  Validated write to DNS host name
-       8.  Validated write to service principal name
+The following is a list of the permissions being granted:
+    a.  Scope: This object and all descendant objects
+    b.  Create Computer objects
+    c.  Delete Computer objects
+    d.  Scope: Descendant Computer objects
+    e.  Read All Properties
+    f.  Write All Properties
+    g.  Read Permissions
+    h.  Modify Permissions
+    i.  Change Password
+    j.  Reset Password
+    k.  Validated write to DNS host name
+    l.  Validated write to service principal name
 
 ## Step 2: Set up the MDT production deployment share
 
-When you are ready to deploy Windows 10 in a production environment, you will first create a new MDT deployment share. You should not use the same deployment share that you used to create the reference image for a production deployment. For guidance on creating a custom Windows 10 image, see 
-[Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
+Next, create a new MDT deployment share. You should not use the same deployment share that you used to create the reference image for a production deployment. Perform this procedure on the MDT01 server.
 
 ### Create the MDT production deployment share
 
+On **MDT01**:
+
 The steps for creating the deployment share for production are the same as when you created the deployment share for creating the custom reference image:
-1. On MDT01, log on as Administrator in the CONTOSO domain using a password of <strong>P@ssw0rd.</strong>
-2. Using the Deployment Workbench, right-click **Deployment Shares** and select **New Deployment Share**.
-3. On the **Path** page, in the **Deployment share path** text box, type **E:\\MDTProduction** and click **Next**.
+
+1. Ensure you are signed on as: contoso\administrator.
+2. In the Deployment Workbench console, right-click **Deployment Shares** and select **New Deployment Share**.
+3. On the **Path** page, in the **Deployment share path** text box, type **D:\\MDTProduction** and click **Next**.
 4. On the **Share** page, in the **Share name** text box, type **MDTProduction$** and click **Next**.
 5. On the **Descriptive Name** page, in the **Deployment share description** text box, type **MDT Production** and click **Next**.
 6. On the **Options** page, accept the default settings and click **Next** twice, and then click **Finish**.
 7. Using File Explorer, verify that you can access the **\\\\MDT01\\MDTProduction$** share.
 
-## <a href="" id="sec03"></a>Step 3: Add a custom image
+## Step 3: Add a custom image
 
 The next step is to add a reference image into the deployment share with the setup files required to successfully deploy Windows 10. When adding a custom image, you still need to copy setup files (an option in the wizard) because Windows 10 stores additional components in the Sources\\SxS folder which is outside the image and may be required when installing components.
 
 ### Add the Windows 10 Enterprise x64 RTM custom image
 
-In these steps, we assume that you have completed the steps in the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic, so you have a Windows 10 reference image in the E:\\MDTBuildLab\\Captures folder on MDT01.
+In these steps, we assume that you have completed the steps in the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic, so you have a Windows 10 reference image at **D:\\MDTBuildLab\\Captures\REFW10X64-001.wim** on MDT01.
+
 1.  Using the Deployment Workbench, expand the **Deployment Shares** node, and then expand **MDT Production**; select the **Operating Systems** node, and create a folder named **Windows 10**.
 2.  Right-click the **Windows 10** folder and select **Import Operating System**.
 3.  On the **OS Type** page, select **Custom image file** and click **Next**.
-4.  On the **Image** page, in the **Source file** text box, browse to **E:\\MDTBuildLab\\Captures\\REFW10X64-001.wim** and click **Next**.
-5.  On the **Setup** page, select the **Copy Windows 7, Windows Server 2008 R2, or later setup files from the specified path** option; in the **Setup source directory** text box, browse to **E:\\MDTBuildLab\\Operating Systems\\W10EX64RTM** and click **Next**.
+4.  On the **Image** page, in the **Source file** text box, browse to **D:\\MDTBuildLab\\Captures\\REFW10X64-001.wim** and click **Next**.
+5.  On the **Setup** page, select the **Copy Windows 7, Windows Server 2008 R2, or later setup files from the specified path** option; in the **Setup source directory** text box, browse to **D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM** and click **Next**.
 6.  On the **Destination** page, in the **Destination directory name** text box, type **W10EX64RTM**, click **Next** twice, and then click **Finish**.
-7.  After adding the operating system, double-click the added operating system name in the **Operating Systems / Windows 10** node and change the name to match the following: **Windows 10 Enterprise x64 RTM Custom Image**.
+7.  After adding the operating system, double-click the added operating system name in the **Operating Systems / Windows 10** node and change the name to **Windows 10 Enterprise x64 RTM Custom Image**.
 
 >[!NOTE]
 >The reason for adding the setup files has changed since earlier versions of MDT. MDT 2010 used the setup files to install Windows. MDT uses DISM to apply the image; however, you still need the setup files because some components in roles and features are stored outside the main image.
  
 
-![figure 2](../images/fig2-importedos.png)
+![imported OS](../images/fig2-importedos.png)
 
-Figure 2. The imported operating system after renaming it.
+## Step 4: Add an application
 
-## <a href="" id="sec04"></a>Step 4: Add an application
+When you configure your MDT Build Lab deployment share, you can also add applications to the new deployment share before creating your task sequence. This section walks you through the process of adding an application to the MDT Production deployment share using Adobe Reader as an example.
 
-When you configure your MDT Build Lab deployment share, you will also add any applications to the new deployment share before creating your task sequence. This section walks you through the process of adding an application to the MDT Production deployment share using Adobe Reader as an example.
+### Create the install: Adobe Reader DC
 
-### Create the install: Adobe Reader XI x86
+On **MDT01**:
 
-In this example, we assume that you have downloaded the Adobe Reader XI installation file (AdbeRdr11000\_eu\_ES.msi) to E:\\Setup\\Adobe Reader on MDT01.
-1.  Using the Deployment Workbench, expand the **MDT Production** node and navigate to the **Applications** node.
-2.  Right-click the **Applications** node, and create a new folder named **Adobe**.
-3.  In the **Applications** node, right-click the **Adobe** folder and select **New Application**.
-4.  On the **Application Type** page, select the **Application with source files** option and click **Next**.
-5.  On the **Details** page, in the **Application** name text box, type **Install - Adobe Reader XI - x86** and click **Next**.
-6.  On the **Source** page, in the **Source Directory** text box, browse to **E:\\Setup\\Adobe Reader XI** and click **Next**.
-7.  On the **Destination** page, in the **Specify the name of the directory that should be created** text box, type **Install - Adobe Reader XI - x86** and click **Next**.
-8.  On the **Command Details** page, in the **Command Line** text box, type **msiexec /i AdbeRdr11000\_eu\_ES.msi /q**, click **Next** twice, and then click **Finish**.
+1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC1902120058_en_US.exe) to **D:\\setup\\adobe** on MDT01.
+2. Extract the .exe file that you downloaded to an .msi (ex: .\AcroRdrDC1902120058_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
+3. In the Deployment Workbench, expand the **MDT Production** node and navigate to the **Applications** node.
+4. Right-click the **Applications** node, and create a new folder named **Adobe**.
+5. In the **Applications** node, right-click the **Adobe** folder and select **New Application**.
+6. On the **Application Type** page, select the **Application with source files** option and click **Next**.
+7. On the **Details** page, in the **Application Name** text box, type **Install - Adobe Reader** and click *Next**.
+8. On the **Source** page, in the **Source Directory** text box, browse to **D:\\setup\\adobe\\install** and click **Next**.
+9. On the **Destination** page, in the **Specify the name of the directory that should be created** text box, type **Install - Adobe Reader** and click **Next**.
+10. On the **Command Details** page, in the **Command Line** text box, type **msiexec /i AcroRead.msi /q**, click **Next** twice, and then click **Finish**.
 
-![figure 3](../images/mdt-07-fig03.png)
+![acroread](../images/acroread.png)
 
-Figure 3. The Adobe Reader application added to the Deployment Workbench.
+The Adobe Reader application added to the Deployment Workbench.
 
-## <a href="" id="sec05"></a>Step 5: Prepare the drivers repository
+## Step 5: Prepare the drivers repository
 
 In order to deploy Windows 10 with MDT successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot image and operating system, using the following hardware models as examples:
 -   Lenovo ThinkPad T420
--   Dell Latitude E6440
+-   Dell Latitude 7390
 -   HP EliteBook 8560w
 -   Microsoft Surface Pro
 For boot images, you need to have storage and network drivers; for the operating system, you need to have the full suite of drivers.
@@ -143,14 +146,14 @@ For boot images, you need to have storage and network drivers; for the operating
 
 The key to successful management of drivers for MDT, as well as for any other deployment solution, is to have a really good driver repository. From this repository, you import drivers into MDT for deployment, but you should always maintain the repository for future use.
 
-1.  On MDT01, using File Explorer, create the **E:\\Drivers** folder.
-2.  In the **E:\\Drivers** folder, create the following folder structure:
+1.  On MDT01, using File Explorer, create the **D:\\Drivers** folder.
+2.  In the **D:\\Drivers** folder, create the following folder structure:
     1.  WinPE x86
     2.  WinPE x64
     3.  Windows 10 x64
 3.  In the new Windows 10 x64 folder, create the following folder structure:
     -   Dell
-        -   Latitude E6440
+        -   Latitude 7390
     -   HP
         -   HP EliteBook 8560w
     -   Lenovo
@@ -192,9 +195,9 @@ wmic csproduct get name
 
 If you want a more standardized naming convention, try the ModelAliasExit.vbs script from the Deployment Guys blog post entitled [Using and Extending Model Aliases for Hardware Specific Application Installation](https://go.microsoft.com/fwlink/p/?LinkId=619536).
 
-![figure 4](../images/fig4-oob-drivers.png)
+![drivers](../images/fig4-oob-drivers.png)
 
-Figure 4. The Out-of-Box Drivers structure in Deployment Workbench.
+The Out-of-Box Drivers structure in Deployment Workbench.
 
 ### Create the selection profiles for boot image drivers
 
