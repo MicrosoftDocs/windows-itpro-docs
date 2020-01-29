@@ -38,7 +38,7 @@ After that initial download and installation, the WDAC component will check for 
 The reputation data on the client is rechecked periodically and enterprises can also specify that any cached reputation results are flushed on reboot.    
 
 >[!NOTE]
->Admins needs to ensure that there is a WDAC policy in place to allow the system to boot and run any other authorized applications that may not be classified as being known good by the Intelligent Security Graph, for example custom line-of-business (LOB) apps. Since the Intelligent Security Graph is powered by global prevalence data, internal LOB apps may not be recognized as being known good. Other mechanisms like managed installer and explicit rules will help cover internal applications. Both System Center Configuration Manager (SCCM) and Microsoft Intune can be used to create and push a WDAC policy to your client machines.  
+>Admins needs to ensure that there is a WDAC policy in place to allow the system to boot and run any other authorized applications that may not be classified as being known good by the Intelligent Security Graph, for example custom line-of-business (LOB) apps. Since the Intelligent Security Graph is powered by global prevalence data, internal LOB apps may not be recognized as being known good. Other mechanisms like managed installer and explicit rules will help cover internal applications. Both Microsoft Endpoint Configuration Manager and Microsoft Intune can be used to create and push a WDAC policy to your client machines.  
 
 Other examples of WDAC policies are available in C:\Windows\schemas\CodeIntegrity\ExamplePolicies and can help authorize Windows OS components, WHQL signed drivers and all Store apps. Admins can reference and customize them as needed for their Windows Defender Application Control deployment or [create a custom WDAC policy](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy). 
 
@@ -87,7 +87,7 @@ In order for the heuristics used by the ISG to function properly, a number of co
 appidtel start
 ```
 
-For WDAC policies deployed over MDM using the AppLocker CSP this step is not required as the CSP will enable the necessary components. ISG enabled through the SCCM WDAC UX will not need this step but if custom policies are being deployed outside of the WDAC UX through SCCM then this step is required.   
+For WDAC policies deployed over MDM using the AppLocker CSP this step is not required as the CSP will enable the necessary components. ISG enabled through the Configuration Manager WDAC UX will not need this step but if custom policies are being deployed outside of the WDAC UX through Configuration Manager then this step is required.   
 
 ## Security considerations with the Intelligent Security Graph 
 
