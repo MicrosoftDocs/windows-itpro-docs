@@ -136,6 +136,7 @@ The exception impact shows on both the Security recommendations page column and 
 - [Score APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/score)
 - [Vulnerability APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
 - [Software APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/software)
+- [Machine APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine)
 - [Recommendation APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
 
 
