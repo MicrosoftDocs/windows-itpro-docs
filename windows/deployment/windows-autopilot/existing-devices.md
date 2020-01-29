@@ -29,7 +29,7 @@ This topic describes how to convert Windows 7 or Windows 8.1 domain-joined compu
 
 ## Prerequisites
 
-- Microsoft Endpoint Configuration Manager 
+- A currently supported version of Microsoft Endpoint Configuration Manager current branch or technical preview branch. 
 - The [Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) 1803 or later
     - For more information on Configuration Manager support, see [Support for Windows 10 ADK](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-adk).
 - Assigned Microsoft Intune Licenses
