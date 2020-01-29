@@ -75,7 +75,8 @@ Content-type: json
             "computerDnsName": "niw_pc",
             "osPlatform": "Windows10",
             "rbacGroupId": 2154
-        },
+        }
+        ]
 }
 ```
 
