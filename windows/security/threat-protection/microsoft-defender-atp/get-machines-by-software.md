@@ -82,7 +82,7 @@ Here is an example of the response.
             "computerDnsName": "jane_PC",
             "osPlatform": "Windows10",
             "rbacGroupId": 9
-        },
+        }
 ]
 }
 ```
