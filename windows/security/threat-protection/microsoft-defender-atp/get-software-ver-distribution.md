@@ -80,8 +80,8 @@ Here is an example of the response.
             "version": "11.0.18363.535",
             "installations": 750,
             "vulnerabilities": 0
-        },
-
+        }
+        ]
 }
 ```
 
