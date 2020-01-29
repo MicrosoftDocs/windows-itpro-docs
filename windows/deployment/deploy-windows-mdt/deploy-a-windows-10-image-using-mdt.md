@@ -146,20 +146,22 @@ For boot images, you need to have storage and network drivers; for the operating
 
 The key to successful management of drivers for MDT, as well as for any other deployment solution, is to have a really good driver repository. From this repository, you import drivers into MDT for deployment, but you should always maintain the repository for future use.
 
-1.  On MDT01, using File Explorer, create the **D:\\Drivers** folder.
-2.  In the **D:\\Drivers** folder, create the following folder structure:
+On **MDT01**:
+
+1.  Using File Explorer, create the **D:\\drivers** folder.
+2.  In the **D:\\drivers** folder, create the following folder structure:
     1.  WinPE x86
     2.  WinPE x64
     3.  Windows 10 x64
 3.  In the new Windows 10 x64 folder, create the following folder structure:
     -   Dell
-        -   Latitude 7390
-    -   HP
+        -   Latitude E7450
+    -   Hewlett-Packard
         -   HP EliteBook 8560w
     -   Lenovo
-        -   ThinkPad T420 (4178)
+        -   ThinkStation P500 (30A6003TUS)
     -   Microsoft Corporation
-        -   Surface Pro 3
+        -   Surface Laptop
 
 >[!NOTE]
 >Even if you are not going to use both x86 and x64 boot images, we still recommend that you add the support structure for future use.
@@ -173,16 +175,16 @@ When you import drivers to the MDT driver repository, MDT creates a single insta
     2.  WinPE x64
     3.  Windows 10 x64
 3.  In the **Windows 10 x64** folder, create the following folder structure:
-    -   Dell Inc.
-        -   Latitude E6440
+    -   Dell
+        -   Latitude E7450
     -   Hewlett-Packard
         -   HP EliteBook 8560w
     -   Lenovo
-        -   4178
+        -   30A6003TUS
     -   Microsoft Corporation
-        -   Surface Pro 3
+        -   Surface Laptop
 
-The preceding folder names are selected because they match the actual make and model values that MDT reads from the machines during deployment. You can find out the model values for your machines via the following command in Windows PowerShell:
+The preceding folder names should match the actual make and model values that MDT reads from devices during deployment. You can find out the model values for your machines by using the following command in Windows PowerShell:
 
 ``` powershell
 Get-WmiObject -Class:Win32_ComputerSystem
@@ -197,79 +199,89 @@ If you want a more standardized naming convention, try the ModelAliasExit.vbs sc
 
 ![drivers](../images/fig4-oob-drivers.png)
 
-The Out-of-Box Drivers structure in Deployment Workbench.
+The Out-of-Box Drivers structure in the Deployment Workbench.
 
 ### Create the selection profiles for boot image drivers
 
 By default, MDT adds any storage and network drivers that you import to the boot images. However, you should add only the drivers that are necessary to the boot image. You can control which drivers are added by using selection profiles.
 The drivers that are used for the boot images (Windows PE) are Windows 10 drivers. If you can’t locate Windows 10 drivers for your device, a Windows 7 or Windows 8.1 driver will most likely work, but Windows 10 drivers should be your first choice.
-1.  On MDT01, using the Deployment Workbench, in the **MDT Production** node, expand the **Advanced Configuration** node, right-click the **Selection Profiles** node, and select **New Selection Profile**.
+
+On **MDT01**:
+
+1.  In the Deployment Workbench, under the **MDT Production** node, expand the **Advanced Configuration** node, right-click the **Selection Profiles** node, and select **New Selection Profile**.
 2.  In the New Selection Profile Wizard, create a selection profile with the following settings:
     1.  Selection Profile name: WinPE x86
     2.  Folders: Select the WinPE x86 folder in Out-of-Box Drivers.
-3.  Again, right-click the **Selection Profiles** node, and select **New Selection Profile**.
+    3. Click **Next**, **Next** and **Finish**.
+3.  Right-click the **Selection Profiles** node again, and select **New Selection Profile**.
 4.  In the New Selection Profile Wizard, create a selection profile with the following settings:
     1.  Selection Profile name: WinPE x64
     2.  Folders: Select the WinPE x64 folder in Out-of-Box Drivers.
+    3.  Click **Next**, **Next** and **Finish**.
 
 ![figure 5](../images/fig5-selectprofile.png)
 
-Figure 5. Creating the WinPE x64 selection profile.
+Creating the WinPE x64 selection profile.
 
 ### Extract and import drivers for the x64 boot image
 
 Windows PE supports all the hardware models that we have, but here you learn to add boot image drivers to accommodate any new hardware that might require additional drivers. In this example, you add the latest Intel network drivers to the x64 boot image.
-In these steps, we assume you have downloaded PROWinx64.exe from Intel.com and saved it to a temporary folder.
 
-1.  Extract PROWinx64.exe to a temporary folder - in this example to the **C:\\Tmp\\ProWinx64** folder.
-2.  Using File Explorer, create the **E:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
-3.  Copy the content of the **C:\\Tmp\\PROWinx64\\PRO1000\\Winx64\\NDIS64** folder to the **E:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
-4.  Using Deployment Workbench, expand the **Out-of-Box Drivers** node, right-click the **WinPE x64** node, and select **Import Drivers**. Use the following setting for the Import Drivers Wizard:
-    -   Driver source directory: **E:\\Drivers\\WinPE x64\\Intel PRO1000**
+On **MDT01**:
+
+1. Download **PROWinx64.exe** from Intel.com (ex: [PROWinx64.exe](https://downloadcenter.intel.com/downloads/eula/25016/Intel-Network-Adapter-Driver-for-Windows-10?httpDown=https%3A%2F%2Fdownloadmirror.intel.com%2F25016%2Feng%2FPROWinx64.exe)).
+2.  Extract PROWinx64.exe to a temporary folder - in this example to the **C:\\Tmp\\ProWinx64** folder.
+    a. **Note**: Extracting the .exe file manually requires an extraction utility. You can also run the .exe and it will self-extract files to the **%userprofile%\AppData\Local\Temp\RarSFX0** directory. This directory is temporary and will be deleted when the .exe terminates. 
+3.  Using File Explorer, create the **D:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
+4.  Copy the content of the **C:\\Tmp\\PROWinx64\\PRO1000\\Winx64\\NDIS64** folder to the **D:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
+5.  In the Deployment Workbench, expand the **MDT Production** > **Out-of-Box Drivers** node, right-click the **WinPE x64** node, and select **Import Drivers**, and use the following Driver source directory to import drivers: **D:\\Drivers\\WinPE x64\\Intel PRO1000**.
 
 ### Download, extract, and import drivers
 
-### For the ThinkPad T420
+### For the Lenovo ThinkStation P500
 
-For the Lenovo T420 model, you use the Lenovo ThinkVantage Update Retriever software to download the drivers. With Update Retriever, you need to specify the correct Lenovo Machine Type for the actual hardware (the first four characters of the model name). As an example, the Lenovo T420 model has the 4178B9G model name, meaning the Machine Type is 4178.
+For the ThinkStation P500 model, you use the Lenovo ThinkVantage Update Retriever software to download the drivers. With Update Retriever, you need to specify the correct Lenovo Machine Type for the actual hardware (the first four characters of the model name). As an example, the Lenovo ThinkStation P500 model has the 30A6003TUS model name, meaning the Machine Type is 30A6.
 
-To get the updates, you download the drivers from the Lenovo ThinkVantage Update Retriever using its export function. You can download the drivers from the [Lenovo website](https://go.microsoft.com/fwlink/p/?LinkId=619543).
+![ThinkStation](../images/thinkstation.png)
 
-In these steps, we assume you have downloaded and extracted the drivers using ThinkVantage Update Retriever v5.0 to the E:\\Drivers\\Lenovo\\ThinkPad T420 (4178) folder.
+To get the updates, download the drivers from the Lenovo ThinkVantage Update Retriever using its export function. You can also download the drivers by searching PC Support on the [Lenovo website](https://go.microsoft.com/fwlink/p/?LinkId=619543).
 
-1.  On MDT01, using the Deployment Workbench, in the **MDT Production** node, expand the **Out-Of-Box Drivers** node, and expand the **Lenovo** node.
-2.  Right-click the **4178** folder and select **Import Drivers**; use the following setting for the Import Drivers Wizard:
-    -   Driver source directory: **E:\\Drivers\\Windows 10 x64\\Lenovo\\ThinkPad T420 (4178)**
+In this example, we assume you have downloaded and extracted the drivers using ThinkVantage Update Retriever to the D:\\Drivers\\Lenovo\\ThinkStation P500 (30A6003TUS) directory.
+
+On **MDT01**:
+
+1. In the Deployment Workbench, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, and expand the **Lenovo** node.
+2.  Right-click the **30A6003TUS** folder and select **Import Drivers** and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Lenovo\\ThinkStation P500 (30A6003TUS)**
 
 ### For the Latitude E6440
 
 For the Dell Latitude E6440 model, you use the Dell Driver CAB file, which is accessible via the [Dell TechCenter website](https://go.microsoft.com/fwlink/p/?LinkId=619544).
 
-In these steps, we assume you have downloaded and extracted the CAB file for the Latitude E6440 model to the E:\\Drivers\\Dell\\Latitude E6440 folder.
+In these steps, we assume you have downloaded and extracted the CAB file for the Latitude E6440 model to the D:\\Drivers\\Dell\\Latitude E6440 folder.
 
 1.  On **MDT01**, using the **Deployment Workbench**, in the **MDT Production** node, expand the **Out-Of-Box Drivers** node, and expand the **Dell** node.
 2.  Right-click the **Latitude E6440** folder and select **Import Drivers**; use the following setting for the Import Drivers Wizard:
-    -   Driver source directory: **E:\\Drivers\\Windows 10 x64\\Dell\\Latitude E6440**
+    -   Driver source directory: **D:\\Drivers\\Windows 10 x64\\Dell\\Latitude E6440**
 
 ### For the HP EliteBook 8560w
 
 For the HP EliteBook 8560w, you use HP SoftPaq Download Manager to get the drivers. The HP SoftPaq Download Manager can be accessed on the [HP Support site](https://go.microsoft.com/fwlink/p/?LinkId=619545).
 
-In these steps, we assume you have downloaded and extracted the drivers for the HP EliteBook 8650w model to the E:\\Drivers\\Windows 10 x64\\HP\\HP EliteBook 8560w folder.
+In these steps, we assume you have downloaded and extracted the drivers for the HP EliteBook 8650w model to the D:\\Drivers\\Windows 10 x64\\HP\\HP EliteBook 8560w folder.
 
 1.  On **MDT01**, using the **Deployment Workbench**, in the **MDT Production** node, expand the **Out-Of-Box Drivers** node, and expand the **Hewlett-Packard** node.
 2.  Right-click the **HP EliteBook 8560w** folder and select **Import Drivers**; use the following setting for the Import Drivers Wizard:
-    -   Driver source directory: **E:\\Drivers\\Windows 10 x64\\HP\\HP EliteBook 8560w**
+    -   Driver source directory: **D:\\Drivers\\Windows 10 x64\\HP\\HP EliteBook 8560w**
 
 ### For the Microsoft Surface Pro 3
 
-For the Microsoft Surface Pro model, you find the drivers on the Microsoft website. In these steps we assume you have downloaded and extracted the Surface Pro 3 drivers to the E:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Pro 3 folder.
+For the Microsoft Surface Pro model, you find the drivers on the Microsoft website. In these steps we assume you have downloaded and extracted the Surface Pro 3 drivers to the D:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Pro 3 folder.
 
 1.  On MDT01, using the Deployment Workbench, in the **MDT Production** node, expand the **Out-Of-Box Drivers** node, and expand the **Microsoft** node.
 2.  Right-click the **Surface Pro 3** folder and select **Import Drivers**; use the following setting for the Import Drivers Wizard:
     -   Driver source directory: **E:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Pro 3**
 
-## <a href="" id="sec06"></a>Step 6: Create the deployment task sequence
+## Step 6: Create the deployment task sequence
 
 This section will show you how to create the task sequence used to deploy your production Windows 10 reference image. You will then configure the tasks sequence to enable patching via a Windows Server Update Services (WSUS) server.
 
