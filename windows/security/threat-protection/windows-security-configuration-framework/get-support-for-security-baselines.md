@@ -19,7 +19,7 @@ ms.reviewer:
 
 **What is the Microsoft Security Compliance Manager (SCM)?**
 
-The Security Compliance Manager (SCM) is now retired and is no longer supported. The reason is that SCM was an incredibly complex and large program that needed to be updated for every Windows release. It has been replaced by the Security Compliance Toolkit (SCT). To provide a better service for our customers, we have moved to SCT with which we can publish baselines through the Microsoft Download Center in a lightweight .zip file that contains GPO backups, GPO reports, Excel spreadsheets, WMI filters, and scripts to apply the settings to local policy.
+The Security Compliance Manager (SCM) is now retired and is no longer supported. The reason is that SCM was an incredibly complex and large program that needed to be updated for every Windows release. It has been replaced by the Security Compliance Toolkit (SCT). To provide a better service for our customers, we have moved to SCT with which we can publish baselines through the Microsoft Download Center in a lightweight .zip file that contains GPO Backups, GPO reports, Excel spreadsheets, WMI filters, and scripts to apply the settings to local policy.
 
 More information about this change can be found on the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2017/06/15/security-compliance-manager-scm-retired-new-tools-and-procedures/).
 
@@ -40,9 +40,9 @@ The toolkit supports formats created by the Windows GPO backup feature (.pol, .i
 
 Not yet. PowerShell-based DSC is rapidly gaining popularity, and more DSC tools are coming online to convert GPOs and DSC and to validate system configuration. We are currently developing a tool to provide customers with these features.
 
-**Does SCT support the creation of System Center Configuration Manager (SCCM) DCM packs?**
+**Does SCT support the creation of Microsoft Endpoint Configuration Manager DCM packs?**
 
-No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=40855). A tool that supports conversion of GPO backups to DSC format can be found [here](https://github.com/Microsoft/BaselineManagement).
+No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=40855). A tool that supports conversion of GPO Backups to DSC format can be found [here](https://github.com/Microsoft/BaselineManagement).
 
 **Does SCT support the creation of Security Content Automation Protocol (SCAP)-format policies?**
 
