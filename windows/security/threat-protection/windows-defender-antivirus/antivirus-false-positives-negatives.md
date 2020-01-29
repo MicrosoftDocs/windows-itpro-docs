@@ -1,5 +1,5 @@
 ---
-title: Handling false positives/negatives in Windows Defender Antivirus 
+title: What to do with false positives/negatives in Windows Defender Antivirus 
 description: Did Windows Defender Antivirus miss or wrongly detect something? Find out what you can do.
 keywords: Windows Defender Antivirus, false positives, false negatives, exclusions
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Handling false positives/negatives in Windows Defender Antivirus
+# What to do with false positives/negatives in Windows Defender Antivirus
 
 **Applies to:**
 
