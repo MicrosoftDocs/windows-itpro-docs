@@ -490,7 +490,7 @@ This section will demonstrate how to export user data from an existing client co
     cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
 
-    **Note**: Litetouch.vbs must be able to create the C:\MININT directory on the local computer.
+    **Note**: For more information on tools for viewing log files and to assist with troubleshooting, see [Configuration Manager Tools](https://docs.microsoft.com/configmgr/core/support/tools).
 
 5. Choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
 

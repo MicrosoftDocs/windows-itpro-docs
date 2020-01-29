@@ -29,12 +29,12 @@ This topic describes how to convert Windows 7 or Windows 8.1 domain-joined compu
 
 ## Prerequisites
 
-- Microsoft Endpoint Configuration Manager Current Branch (1806) OR Microsoft Endpoint Configuration Manager Technical Preview (1808)
+- Microsoft Endpoint Configuration Manager 
 - The [Windows ADK](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit) 1803 or later
     - For more information on Configuration Manager support, see [Support for Windows 10 ADK](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-adk).
 - Assigned Microsoft Intune Licenses
 - Azure Active Directory Premium
-- Windows 10 version 1809 or later imported into Config Mgr as an Operating System Image
+- Windows 10 version 1809 or later imported into Configuration Manager as an Operating System Image
   - **Important**: See [Known issues](known-issues.md) if you are using Windows 10 1903 with Configuration Manager’s built-in **Windows Autopilot existing device** task sequence template. Currently, one of the steps in this task sequence must be edited to work properly with Windows 10, version 1903.
 
 ## Procedures
@@ -156,7 +156,7 @@ See the following examples.
     - <u>Program Type</u>: **Do not create a program**
 4. Click **Next** twice and then click **Close**.
 
-**NOTE**: If you change user-driven Autopilot profile settings in Intune at a later date, you must also update the JSON file and redistribute the associated Config Mgr package.
+**NOTE**: If you change user-driven Autopilot profile settings in Intune at a later date, you must also update the JSON file and redistribute the associated Configuration Manager package.
 
 ### Create a target collection
 
