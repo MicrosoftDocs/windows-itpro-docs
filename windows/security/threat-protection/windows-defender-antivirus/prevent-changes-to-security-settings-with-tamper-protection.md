@@ -219,7 +219,7 @@ Yes. The alert is shown in [https://securitycenter.microsoft.com](https://securi
 
 In addition, your security operations team can use hunting queries, such as the following:
 
-`AlertEvents | where Title == "Tamper Protection bypass"`
+`DeviceAlertEvents | where Title == "Tamper Protection bypass"`
 
 [View information about tampering attempts](#view-information-about-tampering-attempts).
 
