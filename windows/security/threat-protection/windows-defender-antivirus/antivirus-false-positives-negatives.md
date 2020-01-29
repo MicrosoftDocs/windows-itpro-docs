@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/27/2020
+ms.date: 01/29/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -25,7 +25,10 @@ manager: dansimp
 
 Windows Defender Antivirus is designed to keep your PC safe with built-in, trusted antivirus protection. With Windows Defender Antivirus, you get comprehensive, ongoing, and real-time protection against software threats like viruses, malware and spyware across email, apps, the cloud and the web. 
 
-But what if something gets detected wrongly as malware, or something is missed? We call these false positives and false negatives, and there are some steps you can take to deal with these things. You can [submit a file to Microsoft for analysis](#submit-a-file-to-microsoft-for-analysis), and potentially, [define an exclusion](#define-an-exclusion-on-a-windows-device) in your Windows Defender Antivirus settings.
+But what if something gets detected wrongly as malware, or something is missed? We call these false positives and false negatives. Fortunately, there are some steps you can take to deal with these things. You can:
+- [Submit a file to Microsoft for analysis](#submit-a-file-to-microsoft-for-analysis);
+- [Create an "Allow" indicator](#create-an-allow-indicator); or 
+- [Define an exclusion on an individual device](#define-an-exclusion-on-a-windows-device) in your Windows Defender Antivirus settings.
 
 ## Submit a file to Microsoft for analysis
 
@@ -35,7 +38,13 @@ But what if something gets detected wrongly as malware, or something is missed? 
 > [!TIP]
 > We recommend signing in at the submission portal so you can track the results of your submissions.
 
-## Define an exclusion on a Windows device
+## Create an "Allow" indicator
+
+If a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can create an "Allow" indicator. This indicator tells Windows Defender Antivirus (and Microsoft Defender Advanced Threat Protection) that the item is safe.
+
+To set up your "Allow" indicator, follow the guidance in [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
+
+## Define an exclusion on an individual Windows device
 
 When you define an exclusion for Windows Defender Antivirus, you configure your antivirus to skip that item. 
 
@@ -43,3 +52,9 @@ When you define an exclusion for Windows Defender Antivirus, you configure your 
 2. Select **Virus & threat protection** > **Virus & threat protection settings**.
 3. Under **Exclusions**, select **Add or remove exclusions**.
 4. Select **+ Add an exclusion**, and specify its type (**File**, **Folder**, **File type**, or **Process**.)
+
+## Related articles
+
+[What is Microsoft Defender Advanced Threat Protection?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+
+[Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
