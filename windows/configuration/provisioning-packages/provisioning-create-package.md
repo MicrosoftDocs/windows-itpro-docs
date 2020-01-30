@@ -71,7 +71,7 @@ You use Windows Configuration Designer to create a provisioning package (.ppkg) 
    | Common to Windows 10 Team edition |    Common settings and settings specific to Windows 10 Team     | [Microsoft Surface Hub](https://technet.microsoft.com/itpro/surface-hub/provisioning-packages-for-certificates-surface-hub) |
 
 
-5. On the **Import a provisioning package (optional)** page, you can click **Finish** to create your project, or browse to and select an existing provisioning packge to import to your project, and then click **Finish**.
+5. On the **Import a provisioning package (optional)** page, you can click **Finish** to create your project, or browse to and select an existing provisioning package to import to your project, and then click **Finish**.
 
 >[!TIP]
 >**Import a provisioning package** can make it easier to create different provisioning packages that all have certain settings in common. For example, you could create a provisioning package that contains the settings for your organization's network, and then import it into other packages you create so you don't have to reconfigure those common settings repeatedly.
@@ -148,7 +148,7 @@ For details on each specific setting, see [Windows Provisioning settings referen
 
 - Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
-- [How to bulk-enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
+- [How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
 
 ## Related topics
 
