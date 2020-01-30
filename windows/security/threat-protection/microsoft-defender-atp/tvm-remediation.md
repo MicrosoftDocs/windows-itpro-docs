@@ -1,6 +1,6 @@
 ---
 title: Remediation and exception
-description: Remediate security weaknesses and fill exceptions by integrating Microsoft Intune and Microsoft System Center Configuration Manager (SCCM). 
+description: Remediate security weaknesses and fill exceptions by integrating Microsoft Intune and Microsoft Endpoint Configuration Manager. 
 keywords: microsoft defender atp tvm remediation, mdatp tvm, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
