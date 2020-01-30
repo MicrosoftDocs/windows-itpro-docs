@@ -10,8 +10,7 @@ metadata:
   ms.localizationpriority: high
   author: greg-lindsay
   ms.author: greglin
-  manager: elizapo
-  ms.date: 02/09/2018
+  manager: laurawi
   ms.topic: article
   ms.devlang: na
 
@@ -35,11 +34,11 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_upgrade.svg
       title: Windows as a service
-    - href: update/windows-analytics-overview
-      html: <p>Windows Analytics provides deep insights into your Windows 10 environment.</p>
+    - href: windows-autopilot/windows-autopilot
+      html: <p>Windows Autopilot greatly simplifies deployment of Windows devices</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_investigate.svg
-      title: Windows Analytics
+        src: https://docs.microsoft.com/media/common/i_delivery.svg
+      title: Windows Autopilot
 - title:
 - items:
   - type: markdown
