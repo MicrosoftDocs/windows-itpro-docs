@@ -28,7 +28,7 @@ Before you get started, make sure you have the following available:
 
 **A Microsoft account or a work account**. You'll also need to use a Microsoft account (or a work account, if your organization owns the device) to sign in to HoloLens. If you don't have a Microsoft account, go to [account.microsoft.com](http://account.microsoft.com) and set one up for free.
 
-**A safe, well-lit space with no tripping hazards**. [Health and safety info](http://go.microsoft.com/fwlink/p/?LinkId=746661).
+**A safe, well-lit space with no tripping hazards**. [Health and safety info](https://go.microsoft.com/fwlink/p/?LinkId=746661).
 
 **The optional comfort accessories** that came with your HoloLens, to help you get the most comfortable fit. [More on fit and comfort](https://support.microsoft.com/help/12632/hololens-fit-your-hololens).
 
