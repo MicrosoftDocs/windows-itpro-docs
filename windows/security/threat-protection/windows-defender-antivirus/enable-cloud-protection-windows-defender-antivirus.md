@@ -28,7 +28,7 @@ ms.custom: nextgen
 Windows Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, real-time, and intelligent protection. [Get to know the advanced technologies at the core of Microsoft Defender ATP next generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 ![List of Windows Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
-You can enable or disable Windows Defender Antivirus cloud-delivered protection with Microsoft Intune, System Center Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Security app.
+You can enable or disable Windows Defender Antivirus cloud-delivered protection with Microsoft Intune, Microsoft Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Security app.
 
 See [Use Microsoft cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) for an overview of Windows Defender Antivirus cloud-delivered protection.
 
@@ -62,7 +62,7 @@ For more information about Intune device profiles, including how to create and c
 
 **Use Configuration Manager to enable cloud-delivered protection:**
 
-See [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service) for details on configuring System Center Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
 
 **Use Group Policy to enable cloud-delivered protection:**
 
@@ -139,5 +139,5 @@ See the following for more information and allowed parameters:
 - [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)]
 - [Defender cmdlets](https://technet.microsoft.com/library/dn433280.aspx)
 - [Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
-- [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
+- [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)

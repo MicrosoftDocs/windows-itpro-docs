@@ -149,3 +149,20 @@ The **Review problem reports** tool opens, showing you your Windows Error Report
 
 ![View problem reports tool with report statuses](images/control-panel-problem-reports-screen.png)
 
+## Known Issues with Diagnostic Data Viewer
+
+### Microsoft Edge diagnostic data appearing as a blob of text
+
+**Applicable to:** The new Microsoft Edge (v. 79.x.x.x or higher)
+
+**Issue:** In some cases, diagnostic data collected and sent from the New Microsoft Edge fails to be translated by the decoder. When decoding fails, the data appears as a blob of text in the Diagnostic Data Viewer. We are working on a fix for this issue.
+
+**Workaround:**
+
+- Restart your computer and open Diagnostic Data Viewer.
+
+*OR*
+
+- Restart the *DiagTrack* service, through the Services tab in task manager, and open Diagnostic Data Viewer.
+
+**Background:** Some of the diagnostic data collected from the new Microsoft Edge is sent using a Protocol Buffers (protobuf) to reduce network bandwidth and to improve data transfer efficiency. Diagnostic Data Viewer has a decoding capability to translate this protobuf format into human readable text. Due to a bug, sometimes the decoder fails to translate these protobuf messages and hence some of the New Microsoft Edge diagnostic data will appear as a blob of encoded text.
