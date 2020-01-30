@@ -26,9 +26,9 @@ ms.date: 04/11/2019
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-The cybersecurity weaknesses identified in your organization are mapped to actionable security recommendations and prioritized by their impact on the security recommendation list. Prioritized recommendation helps shorten the mean time to mitigate or remediate vulnerabilities and drive compliance.
+The cyber security weaknesses identified in your organization are mapped to actionable security recommendations and prioritized by their impact on the security recommendation list. Prioritized recommendation helps shorten the mean time to mitigate or remediate vulnerabilities and drive compliance.
 
-Each security recommendation includes an actionable remediation recommendation which can be pushed into the IT task queue through a built-in integration with Microsoft Intune and Microsoft System Center Configuration Manager (SCCM). It is also dynamic in the sense that when the threat landscape changes, the recommendation also changes as it continuously collect information from your environment. 
+Each security recommendation includes an actionable remediation recommendation which can be pushed into the IT task queue through a built-in integration with Microsoft Intune and Microsoft Endpoint Configuration Manager. It is also dynamic in the sense that when the threat landscape changes, the recommendation also changes as it continuously collects information from your environment. 
 
 ## The basis of the security recommendation
 Each machine in the organization is scored based on three important factors: threat, likelihood to be breached, and value, to help customers to focus on the right things at the right time.
@@ -47,18 +47,19 @@ You can access the security recommendation from the Microsoft Defender ATP Threa
 *Security recommendations option from the left navigation menu* 
 
 1. Go to the Threat & Vulnerability Management navigation menu and select **Security recommendations** to open up the list of security recommendations for the threats and vulnerabilities found in your organization. It gives you an overview of the security recommendation context: weaknesses found, related components, the application and operating system where the threat or vulnerabilities were found, network, accounts, and security controls, associated breach, threats, and recommendation insights, exposed machine trends, status, remediation type and activities. 
-![Screenshot of Security recommendations page](images/tvm_securityrecommendation-graph.png)
+![Screenshot of Security recommendations page](images/tvmsecrec-updated.png)
 
     >[!NOTE]
     > The color of the **Exposed machines** graph changes as the trend changes. If the number of exposed machines is on the rise, the color changes into red. If there's a decrease in the amount of exposed machines, the color of the graph will change into green. This happens when the numbers on the right hand side is greater than what’s on the left,  which means an increase or decrease at the end of even a single machine will change the graph's color.
 
     You can filter your view based on related components, status, and remediation type. If you want to see the remediation activities of software and software versions which have reached their end-of-life, select **Active**, then select **Software update** from the **Remediation Type** filter, and click **Apply**.
-    <br></br>![Screenshot of the remediation type filters for software update and uninstall](images/remediationtype_swupdatefilter.png)
+    <br></br>![Screenshot of the remediation type filters for software update and uninstall](images/remediationtype-swupdatefilter.png)
 
 2. Select the security recommendation that you need to investigate or process. 
-<br></br>![Screenshot of the security recommendation page flyout for a software which reached its end-of-life](images/secrec_flyouteolsw.png)
+<br></br>![Screenshot of the security recommendation page flyout for a software which reached its end-of-life](images/secrec-flyouteolsw.png)
 
-    *Top security recommendations from the dashboard*
+    
+*Top security recommendations from the dashboard*
 
 In a given day as a Security Administrator, you can take a look at the dashboard to see your exposure score side-by-side with your configuration score. The goal is to lower down your organization's exposure from vulnerabilities, and increase your organization's security configuration to be more resilient against cybersecurity threat attacks. The top security recommendations list can help you achieve that goal. 
 
@@ -81,12 +82,12 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 1. Select the **Security recommendation** tab.
 
 2. Click **:** beside the security recommendation that you want to report about,  then select **Report inaccuracy**. 
-![Screenshot of Report inaccuracy control from the machine page under the Security recommendation column](images/tvm_report_inaccuracy.png)
+![Screenshot of Report inaccuracy control from the machine page under the Security recommendation column](images/tvm-report-inaccuracy.png)
 <br>A flyout pane opens.</br>
-![Screenshot of Report inaccuracy flyout pane](images/tvm_report_inaccuracyflyout.png)
+![Screenshot of Report inaccuracy flyout pane](images/tvm-report-inaccuracyflyout.png)
 
 3. From the flyout pane, select the inaccuracy category from the drop-down menu. 
-<br>![Screenshot of Report inaccuracy categories drop-down menu](images/tvm_report_inaccuracyoptions.png)</br>
+<br>![Screenshot of Report inaccuracy categories drop-down menu](images/tvm-report-inaccuracyoptions.png)</br>
 
 4. Include your email address so Microsoft can send you feedback regarding the inaccuracy you reported.
 
@@ -109,3 +110,8 @@ You can report a false positive when you see any vague, inaccurate, incomplete, 
 - [Weaknesses](tvm-weaknesses.md)
 - [Scenarios](threat-and-vuln-mgt-scenarios.md) 
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Recommendation APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
+- [Machine APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine)
+- [Score APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/score)
+- [Software APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/software)
+- [Vulnerability APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)

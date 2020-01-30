@@ -23,11 +23,11 @@ manager: dansimp
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-This topic describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Windows Defender AV Assessment section in the Update Compliance add-in.
+This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Windows Defender AV Assessment section in the Update Compliance add-in.
 
 Before attempting this process, ensure you have read [Troubleshoot Windows Defender Antivirus reporting](troubleshoot-reporting.md), met all require prerequisites, and taken any other suggested troubleshooting steps.
 
-On at least two endpoints that are not reporting or showing up in Update Compliance, obtain the .cab diagnostic file by following this process:
+On at least two devices that are not reporting or showing up in Update Compliance, obtain the .cab diagnostic file by taking the following steps:
 
 1. Open an administrator-level version of the command prompt as follows:
         
@@ -37,19 +37,15 @@ On at least two endpoints that are not reporting or showing up in Update Complia
 
     c. Enter administrator credentials or approve the prompt.
         
-2. Navigate to the Windows Defender directory. By default, this is C:\Program Files\Windows Defender, as in the following example:
+2. Navigate to the Windows Defender directory. By default, this is `C:\Program Files\Windows Defender`.
 
-    ```Dos
-    cd c:\program files\windows\defender
-    ```
-
-3. Enter the following command and press **Enter**
+3. Type the following command, and then press **Enter**
         
     ```Dos
     mpcmdrun -getfiles
     ```
     
-4. A .cab file will be generated that contains various diagnostic logs. The location of the file will be specified in the output in the command prompt, but by default it will be in C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab.
+4. A .cab file will be generated that contains various diagnostic logs. The location of the file will be specified in the output in the command prompt. By default, the location is `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.
 
 5. Copy these .cab files to a location that can be accessed by Microsoft support. An example could be a password-protected OneDrive folder that you can share with us.
 

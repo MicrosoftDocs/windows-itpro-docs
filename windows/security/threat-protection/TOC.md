@@ -34,8 +34,11 @@
 
 #### [Web protection]()
 ##### [Web protection overview](microsoft-defender-atp/web-protection-overview.md)
-##### [Monitor web security](microsoft-defender-atp/web-protection-monitoring.md)
-##### [Respond to web threats](microsoft-defender-atp/web-protection-response.md)
+##### [Web threat protection]()
+###### [Web threat protection overview](microsoft-defender-atp/web-threat-protection.md)
+###### [Monitor web security](microsoft-defender-atp/web-protection-monitoring.md)
+###### [Respond to web threats](microsoft-defender-atp/web-protection-response.md)
+##### [Web content filtering](microsoft-defender-atp/web-content-filtering.md)
 
 #### [Controlled folder access](microsoft-defender-atp/controlled-folders.md)
 #### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
@@ -114,7 +117,7 @@
 #### [Use shared queries](microsoft-defender-atp/advanced-hunting-shared-queries.md)
 #### [Advanced hunting schema reference]()
 ##### [Understand the schema](microsoft-defender-atp/advanced-hunting-schema-reference.md)
-##### [AlertEvents](microsoft-defender-atp/advanced-hunting-alertevents-table.md)
+##### [DeviceAlertEvents](microsoft-defender-atp/advanced-hunting-devicealertevents-table.md)
 ##### [DeviceFileEvents](microsoft-defender-atp/advanced-hunting-devicefileevents-table.md)
 ##### [DeviceImageLoadEvents](microsoft-defender-atp/advanced-hunting-deviceimageloadevents-table.md)
 ##### [DeviceLogonEvents](microsoft-defender-atp/advanced-hunting-devicelogonevents-table.md)
@@ -152,6 +155,15 @@
 
 ### [Portal overview](microsoft-defender-atp/portal-overview.md)
 ### [Microsoft Defender ATP for US Government Community Cloud High customers](microsoft-defender-atp/commercial-gov.md)
+
+
+## [Deployment guide]()
+### [Product brief](microsoft-defender-atp/product-brief.md)
+### [Prepare deployment](microsoft-defender-atp/prepare-deployment.md)
+### [Evaluate capabilities](microsoft-defender-atp/evaluation-lab.md)
+### [Production deployment](microsoft-defender-atp/production-deployment.md)
+### [Helpful resources](microsoft-defender-atp/helpful-resources.md)
+
 
 ## [Get started]()
 ### [What's new in Microsoft Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
@@ -391,6 +403,9 @@
 ####### [Get machine by ID](microsoft-defender-atp/get-machine-by-id.md)
 ####### [Get machine log on users](microsoft-defender-atp/get-machine-log-on-users.md)
 ####### [Get machine related alerts](microsoft-defender-atp/get-machine-related-alerts.md)
+####### [Get installed software](microsoft-defender-atp/get-installed-software.md)
+####### [Get discovered vulnerabilities](microsoft-defender-atp/get-discovered-vulnerabilities.md)
+####### [Get security recommendation](microsoft-defender-atp/get-security-recommendations.md)
 ####### [Add or Remove machine tags](microsoft-defender-atp/add-or-remove-machine-tags.md)
 ####### [Find machines by IP](microsoft-defender-atp/find-machines-by-ip.md)
 
@@ -441,6 +456,34 @@
 ####### [Get user related alerts](microsoft-defender-atp/get-user-related-alerts.md)
 ####### [Get user related machines](microsoft-defender-atp/get-user-related-machines.md)
 
+###### [Score]()
+####### [Score methods and properties](microsoft-defender-atp/score.md)
+####### [List exposure score by machine group](microsoft-defender-atp/get-machine-group-exposure-score.md)
+####### [Get exposure score](microsoft-defender-atp/get-exposure-score.md)
+####### [Get device secure score](microsoft-defender-atp/get-device-secure-score.md)
+
+###### [Software]()
+####### [Software methods and properties](microsoft-defender-atp/software.md)
+####### [List software](microsoft-defender-atp/get-software.md)
+####### [Get software by Id](microsoft-defender-atp/get-software-by-id.md)
+####### [List software version distribution](microsoft-defender-atp/get-software-ver-distribution.md)
+####### [List machines by software](microsoft-defender-atp/get-machines-by-software.md)
+####### [List vulnerabilities by software](microsoft-defender-atp/get-vuln-by-software.md)
+
+###### [Vulnerability]()
+####### [Vulnerability methods and properties](microsoft-defender-atp/vulnerability.md)
+####### [Get all vulnerabilities](microsoft-defender-atp/get-all-vulnerabilities.md)
+####### [Get vulnerability by Id](microsoft-defender-atp/get-vulnerability-by-id.md)
+####### [List machines by vulnerability](microsoft-defender-atp/get-machines-by-vulnerability.md)
+
+###### [Recommendation]()
+####### [Recommendation methods and properties](microsoft-defender-atp/recommendation.md)
+####### [List all recommendations](microsoft-defender-atp/get-all-recommendations.md)
+####### [Get recommendation by Id](microsoft-defender-atp/get-recommendation-by-id.md)
+####### [Get recommendation by software](microsoft-defender-atp/get-recommendation-software.md)
+####### [Get recommendation by machines](microsoft-defender-atp/get-recommendation-machines.md)
+####### [Get recommendation by vulnerabilities](microsoft-defender-atp/get-recommendation-vulnerabilities.md)
+
 ##### [How to use APIs - Samples]()
 ###### [Microsoft Flow](microsoft-defender-atp/api-microsoft-flow.md)
 ###### [Power BI](microsoft-defender-atp/api-power-bi.md)
@@ -448,11 +491,18 @@
 ###### [Advanced Hunting using PowerShell](microsoft-defender-atp/run-advanced-query-sample-powershell.md)
 ###### [Using OData Queries](microsoft-defender-atp/exposed-apis-odata-samples.md)
 
+#### [Windows updates (KB) info]()
+##### [Get KbInfo collection](microsoft-defender-atp/get-kbinfo-collection.md)
+
+#### [Common Vulnerabilities and Exposures (CVE) to KB map]()
+##### [Get CVE-KB map](microsoft-defender-atp/get-cvekbmap-collection.md)
+
+#### [Pull detections to your SIEM tools]()
 #### [Raw data streaming API]()
 ##### [Raw data streaming (preview)](microsoft-defender-atp/raw-data-export.md)
 ##### [Stream advanced hunting events to Azure Events hub](microsoft-defender-atp/raw-data-export-event-hub.md)
 ##### [Stream advanced hunting events to your storage account](microsoft-defender-atp/raw-data-export-storage.md)
- 
+
 
 #### [SIEM integration]()
 ##### [Understand threat intelligence concepts](microsoft-defender-atp/threat-indicator-concepts.md)

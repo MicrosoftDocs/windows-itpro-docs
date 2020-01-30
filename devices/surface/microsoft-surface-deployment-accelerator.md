@@ -80,7 +80,7 @@ For environments where the SDA server will not be able to connect to the Interne
 
 *Figure 2. Specify a local source for Surface driver and app files*
 
-You can find a full list of available driver downloads at [Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md)
+You can find a full list of available driver downloads at [Manage and deploy Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md)
 
 >[!NOTE]
 >Downloaded files do not need to be extracted. The downloaded files can be left as .zip files as long as they are stored in one folder.
