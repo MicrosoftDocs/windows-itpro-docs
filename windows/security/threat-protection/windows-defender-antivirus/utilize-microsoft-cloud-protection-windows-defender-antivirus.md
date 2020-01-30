@@ -59,9 +59,7 @@ Organizations running Windows 10 E5, version 1803 can also take advantage of eme
 >[!TIP]
 >You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
-
-The following table describes the differences in cloud-delivered protection between recent versions of Windows and Microsoft Endpoint Configuration Manager.
-
+The following table describes the differences in cloud-delivered protection between recent versions of Windows and Configuration Manager.
 
 Feature | Windows 8.1 (Group Policy) | Windows 10, version 1607 (Group Policy) | Windows 10, version 1703 (Group Policy) | System Center 2012 Configuration Manager | Microsoft Endpoint Configuration Manager (Current Branch) | Microsoft Intune
 ---|---|---|---|---|---|---
