@@ -73,7 +73,7 @@ For a list of Windows Defender Antivirus device restrictions in Intune, see [Dev
 
 ### Enable block at first sight with Microsoft Endpoint Configuration Manager
 
-1. In Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **AntiMalware Policies**.
+1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **AntiMalware Policies**.
 
 2. Click **Home** > **Create Antimalware Policy**.
 

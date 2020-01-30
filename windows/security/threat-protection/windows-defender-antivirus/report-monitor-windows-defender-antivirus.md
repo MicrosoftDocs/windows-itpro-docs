@@ -23,7 +23,7 @@ manager: dansimp
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-With Windows Defender Antivirus, you have several options for reviewing protection status and alerts. You can use System Center Configuration Manager to [monitor Windows Defender Antivirus](https://docs.microsoft.com/sccm/protect/deploy-use/monitor-endpoint-protection) or [create email alerts](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-configure-alerts). Or, you can monitor protection using [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune).  
+With Windows Defender Antivirus, you have several options for reviewing protection status and alerts. You can use Microsoft Endpoint Configuration Manager to [monitor Windows Defender Antivirus](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection) or [create email alerts](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-configure-alerts). Or, you can monitor protection using [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune).  
 
 Microsoft Operations Management Suite has an [Update Compliance add-in](/windows/deployment/update/update-compliance-get-started) that reports on key Windows Defender Antivirus issues, including protection updates and real-time protection settings.
 
