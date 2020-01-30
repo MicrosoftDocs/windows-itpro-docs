@@ -28,7 +28,7 @@ Windows Defender Antivirus is designed to keep your PC safe with built-in, trust
 But what if something gets detected wrongly as malware, or something is missed? We call these false positives and false negatives. Fortunately, there are some steps you can take to deal with these things. You can:
 - [Submit a file to Microsoft for analysis](#submit-a-file-to-microsoft-for-analysis);
 - [Create an "Allow" indicator](#create-an-allow-indicator); or 
-- [Define an exclusion on an individual device](#define-an-exclusion-on-a-windows-device) in your Windows Defender Antivirus settings.
+- [Define an exclusion on an individual Windows device](#define-an-exclusion-on-an-individual-windows-device) in your Windows Defender Antivirus settings.
 
 ## Submit a file to Microsoft for analysis
 
