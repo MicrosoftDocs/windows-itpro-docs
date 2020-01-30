@@ -27,7 +27,7 @@ ms.topic: article
 Retrieve a list of vulnerabilities in the installed software. 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
 
 Permission type |   Permission  |   Permission display name
 :---|:---|:---
@@ -85,9 +85,8 @@ Here is an example of the response.
             "exploitInKit": false,
             "exploitTypes": [],
             "exploitUris": []
-        },
-
-…
+        }
+        ]
 }
 ```
 
