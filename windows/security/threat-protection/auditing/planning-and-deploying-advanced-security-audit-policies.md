@@ -198,10 +198,10 @@ By using Group Policy, you can apply your security audit policy to defined group
 
 -   Advanced security audit policy settings were introduced in Windows Server 2008 R2 and Windows 7. These advanced audit policies can only be applied to those operating systems and later versions by using Group Policy.
 
-  > [!IMPORTANT]  
-  > Whether you apply advanced audit policies by using Group Policy or logon scripts, don't use both the basic audit policy settings under **Local Policies\\Audit Policy** *and* the advanced settings under **Security Settings\\Advanced Audit Policy Configuration**. Using both basic and advanced audit policy settings can cause unexpected results in audit reporting.
+    > [!IMPORTANT]  
+    > Whether you apply advanced audit policies by using Group Policy or logon scripts, don't use both the basic audit policy settings under **Local Policies\\Audit Policy** *and* the advanced settings under **Security Settings\\Advanced Audit Policy Configuration**. Using both basic and advanced audit policy settings can cause unexpected results in audit reporting.
 
-    If you use **Advanced Audit Policy Configuration** settings or logon scripts to apply advanced audit policies, be sure to enable the **Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings** policy setting under **Local Policies\\Security Options**. This configuration will prevent conflicts between similar settings by forcing basic security auditing to be ignored.
+    > If you use **Advanced Audit Policy Configuration** settings or logon scripts to apply advanced audit policies, be sure to enable the **Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings** policy setting under **Local Policies\\Security Options**. This configuration will prevent conflicts between similar settings by forcing basic security auditing to be ignored.
      
 
 The following examples show how you can apply audit policies to an organization's OU structure:
