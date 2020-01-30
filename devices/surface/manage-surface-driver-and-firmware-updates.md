@@ -1,6 +1,6 @@
 ---
-title: Manage Surface driver and firmware updates (Surface)
-description: This article describes the available options to manage firmware and driver updates for Surface devices.
+title: Manage and deploy Surface driver and firmware updates 
+description: This article describes the available options to manage and deploy firmware and driver updates for Surface devices.
 ms.assetid: CD1219BA-8EDE-4BC8-BEEF-99B50C211D73
 ms.reviewer: 
 manager: dansimp
@@ -14,7 +14,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.audience: itpro
-ms.date: 10/21/2019
+ms.date: 01/24/2020
 ---
 
 # Manage and deploy Surface driver and firmware updates
