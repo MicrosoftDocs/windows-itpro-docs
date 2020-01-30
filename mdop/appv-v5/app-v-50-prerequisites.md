@@ -109,7 +109,7 @@ The following table lists the installation prerequisites for the App-V 5.0 clien
 <div>
 
 </div></li>
-<li><p>Download and install <a href="https://support.microsoft.com/kb/2533623" data-raw-source="[KB2533623](https://support.microsoft.com/kb/2533623)">KB2533623</a> (<a href="http://support.microsoft.com/kb/2533623" data-raw-source="http://support.microsoft.com/kb/2533623">http://support.microsoft.com/kb/2533623</a>)</p>
+<li><p>Download and install <a href="https://support.microsoft.com/kb/2533623" data-raw-source="[KB2533623](https://support.microsoft.com/kb/2533623)">KB2533623</a> (<a href="https://support.microsoft.com/kb/2533623" data-raw-source="https://support.microsoft.com/kb/2533623">https://support.microsoft.com/kb/2533623</a>)</p>
 <p></p>
 <div class="alert">
 <strong>Important</strong><br/><p>You can download and install the previous KB article. However, it may have been replaced with a more recent version.</p>
@@ -228,7 +228,7 @@ If the system requirements of a locally installed application exceed the require
 <p></p></li>
 <li><p><a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="[Windows PowerShell 3.0](https://www.microsoft.com/download/details.aspx?id=34595)">Windows PowerShell 3.0</a> (<a href="https://www.microsoft.com/download/details.aspx?id=34595" data-raw-source="https://www.microsoft.com/download/details.aspx?id=34595">https://www.microsoft.com/download/details.aspx?id=34595</a>)</p>
 <p></p></li>
-<li><p>Download and install <a href="https://support.microsoft.com/kb/2533623" data-raw-source="[KB2533623](https://support.microsoft.com/kb/2533623)">KB2533623</a> (<a href="http://support.microsoft.com/kb/2533623" data-raw-source="http://support.microsoft.com/kb/2533623">http://support.microsoft.com/kb/2533623</a>)</p>
+<li><p>Download and install <a href="https://support.microsoft.com/kb/2533623" data-raw-source="[KB2533623](https://support.microsoft.com/kb/2533623)">KB2533623</a> (<a href="https://support.microsoft.com/kb/2533623" data-raw-source="https://support.microsoft.com/kb/2533623">https://support.microsoft.com/kb/2533623</a>)</p>
 <p></p></li>
 <li><p>For computers running Microsoft Windows Server 2008 R2 SP1, download and install <a href="https://go.microsoft.com/fwlink/?LinkId=286102" data-raw-source="[KB2533623](https://go.microsoft.com/fwlink/?LinkId=286102 )">KB2533623</a> (<a href="https://go.microsoft.com/fwlink/?LinkId=286102" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=286102">https://go.microsoft.com/fwlink/?LinkId=286102</a>)</p>
 <p></p>
@@ -254,7 +254,7 @@ The following prerequisites are already installed for computers that run Windows
 
 -   Windows PowerShell 3.0
 
--   Download and install [KB2533623](https://support.microsoft.com/kb/2533623) (http://support.microsoft.com/kb/2533623)
+-   Download and install [KB2533623](https://support.microsoft.com/kb/2533623) (https://support.microsoft.com/kb/2533623)
 
     **Important**  
     You can still download install the previous KB. However, it may have been replaced with a more recent version.
@@ -301,7 +301,7 @@ The installation of the App-V 5.0 server on a computer that runs any previous ve
 
 </div></li>
 <li><p>Windows Web Server with the IIS role enabled and the following features: <strong>Common HTTP Features</strong> (static content and default document), <strong>Application Development</strong> (ASP.NET, .NET Extensibility, ISAPI Extensions and ISAPI Filters), <strong>Security</strong> (Windows Authentication, Request Filtering), <strong>Management Tools</strong> (IIS Management Console).</p></li>
-<li><p>Download and install <a href="https://support.microsoft.com/kb/2533623" data-raw-source="[KB2533623](https://support.microsoft.com/kb/2533623)">KB2533623</a> (<a href="http://support.microsoft.com/kb/2533623" data-raw-source="http://support.microsoft.com/kb/2533623">http://support.microsoft.com/kb/2533623</a>)</p>
+<li><p>Download and install <a href="https://support.microsoft.com/kb/2533623" data-raw-source="[KB2533623](https://support.microsoft.com/kb/2533623)">KB2533623</a> (<a href="https://support.microsoft.com/kb/2533623" data-raw-source="https://support.microsoft.com/kb/2533623">https://support.microsoft.com/kb/2533623</a>)</p>
 <p></p>
 <div class="alert">
 <strong>Important</strong><br/><p>You can still download install the previous KB. However, it may have been replaced with a more recent version.</p>
