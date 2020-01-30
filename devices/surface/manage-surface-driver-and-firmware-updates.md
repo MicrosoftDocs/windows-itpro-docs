@@ -1,6 +1,6 @@
 ---
-title: Manage Surface driver and firmware updates (Surface)
-description: This article describes the available options to manage firmware and driver updates for Surface devices.
+title: Manage and deploy Surface driver and firmware updates 
+description: This article describes the available options to manage and deploy firmware and driver updates for Surface devices.
 ms.assetid: CD1219BA-8EDE-4BC8-BEEF-99B50C211D73
 ms.reviewer: 
 manager: dansimp
@@ -14,7 +14,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.audience: itpro
-ms.date: 10/21/2019
+ms.date: 01/24/2020
 ---
 
 # Manage and deploy Surface driver and firmware updates
@@ -88,11 +88,11 @@ Specific versions of Windows 10 have separate .msi files, each containing all re
 
 ### Downloading .msi files
 1. Browse to [Download drivers and firmware for Surface](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware) on the Microsoft Download Center.
-2. Select the .msi file name that matches the Surface model and version of Windows. The .msi file name includes the minimum supported Windows build number required to install the drivers and firmware. For example, as shown in the following figure, to update a Surface Book 2 with build 18362 of Windows 10, choose **SurfaceBook2_Win10_18362_19.101.13994.msi.** For a Surface Book 2 with build 16299 of Windows 10, choose **SurfaceBook2_Win10_16299_1803509_3. msi**.
+2. Select the .msi file name that matches the Surface model and version of Windows. The .msi file name includes the minimum supported Windows build number required to install the drivers and firmware. For example, as shown in the following figure, to update a Surface Book 2 with build 18362 of Windows 10, choose **SurfaceBook2_Win10_18362_19.101.13994.msi.** For a Surface Book 2 with build 16299 of Windows 10, choose **SurfaceBook2_Win10_16299_1803509_3.msi**.
 
- ![Figure 1. Downloading Surface updates](images/fig1-downloads-msi.png)
- 
-*Figure 1. Downloading Surface updates*
+    ![Figure 1. Downloading Surface updates](images/fig1-downloads-msi.png)
+
+    *Figure 1. Downloading Surface updates*
  
  
 ### Surface .msi naming convention
