@@ -246,40 +246,41 @@ For the ThinkStation P500 model, you use the Lenovo ThinkVantage Update Retrieve
 
 To get the updates, download the drivers from the Lenovo ThinkVantage Update Retriever using its export function. You can also download the drivers by searching PC Support on the [Lenovo website](https://go.microsoft.com/fwlink/p/?LinkId=619543).
 
-In this example, we assume you have downloaded and extracted the drivers using ThinkVantage Update Retriever to the D:\\Drivers\\Lenovo\\ThinkStation P500 (30A6003TUS) directory.
+In this example, we assume you have downloaded and extracted the drivers using ThinkVantage Update Retriever to the **D:\\Drivers\\Lenovo\\ThinkStation P500 (30A6003TUS)** directory.
 
 On **MDT01**:
 
-1. In the Deployment Workbench, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, and expand the **Lenovo** node.
+1. In the Deployment Workbench, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Lenovo** node.
 2.  Right-click the **30A6003TUS** folder and select **Import Drivers** and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Lenovo\\ThinkStation P500 (30A6003TUS)**
 
-### For the Latitude E6440
+### For the Latitude E7450
 
-For the Dell Latitude E6440 model, you use the Dell Driver CAB file, which is accessible via the [Dell TechCenter website](https://go.microsoft.com/fwlink/p/?LinkId=619544).
+For the Dell Latitude E7450 model, you use the Dell Driver CAB file, which is accessible via the [Dell TechCenter website](https://go.microsoft.com/fwlink/p/?LinkId=619544).
 
-In these steps, we assume you have downloaded and extracted the CAB file for the Latitude E6440 model to the D:\\Drivers\\Dell\\Latitude E6440 folder.
+In these steps, we assume you have downloaded and extracted the CAB file for the Latitude E6440 model to the **D:\\Drivers\\Dell\\Latitude E7450** folder.
 
-1.  On **MDT01**, using the **Deployment Workbench**, in the **MDT Production** node, expand the **Out-Of-Box Drivers** node, and expand the **Dell** node.
-2.  Right-click the **Latitude E6440** folder and select **Import Drivers**; use the following setting for the Import Drivers Wizard:
-    -   Driver source directory: **D:\\Drivers\\Windows 10 x64\\Dell\\Latitude E6440**
+On **MDT01**:
+
+1. In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Dell** node.
+2.  Right-click the **Latitude E6440** folder and select **Import Drivers** and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Dell\\Latitude E6440**
 
 ### For the HP EliteBook 8560w
 
 For the HP EliteBook 8560w, you use HP SoftPaq Download Manager to get the drivers. The HP SoftPaq Download Manager can be accessed on the [HP Support site](https://go.microsoft.com/fwlink/p/?LinkId=619545).
 
-In these steps, we assume you have downloaded and extracted the drivers for the HP EliteBook 8650w model to the D:\\Drivers\\Windows 10 x64\\HP\\HP EliteBook 8560w folder.
+In these steps, we assume you have downloaded and extracted the drivers for the HP EliteBook 8650w model to the **D:\\Drivers\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w** folder.
 
-1.  On **MDT01**, using the **Deployment Workbench**, in the **MDT Production** node, expand the **Out-Of-Box Drivers** node, and expand the **Hewlett-Packard** node.
-2.  Right-click the **HP EliteBook 8560w** folder and select **Import Drivers**; use the following setting for the Import Drivers Wizard:
-    -   Driver source directory: **D:\\Drivers\\Windows 10 x64\\HP\\HP EliteBook 8560w**
+1.  On **MDT01**, using the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Hewlett-Packard** node.
+2.  Right-click the **HP EliteBook 8560w** folder and select **Import Drivers** and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w**
 
 ### For the Microsoft Surface Pro 3
 
-For the Microsoft Surface Pro model, you find the drivers on the Microsoft website. In these steps we assume you have downloaded and extracted the Surface Pro 3 drivers to the D:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Pro 3 folder.
+For the Microsoft Surface Pro model, you find the drivers on the Microsoft website. In these steps we assume you have downloaded and extracted the Surface Laptop drivers to the **D:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Laptop** folder.
 
-1.  On MDT01, using the Deployment Workbench, in the **MDT Production** node, expand the **Out-Of-Box Drivers** node, and expand the **Microsoft** node.
-2.  Right-click the **Surface Pro 3** folder and select **Import Drivers**; use the following setting for the Import Drivers Wizard:
-    -   Driver source directory: **E:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Pro 3**
+On **MDT01**:
+
+1.  In the Deployment Workbench, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Microsoft** node.
+2.  Right-click the **Surface Laptop** folder and select **Import Drivers**; and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Laptop**
 
 ## Step 6: Create the deployment task sequence
 
