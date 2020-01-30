@@ -27,7 +27,7 @@ Windows Defender Antivirus is designed to keep your PC safe with built-in, trust
 
 But what if something gets detected wrongly as malware, or something is missed? We call these false positives and false negatives. Fortunately, there are some steps you can take to deal with these things. You can:
 - [Submit a file to Microsoft for analysis](#submit-a-file-to-microsoft-for-analysis);
-- [Create an "Allow" indicator](#create-an-allow-indicator); or 
+- [Create an "Allow" indicator to prevent a false positive from recurring](#create-an-allow-indicator-to-prevent-a-false-positive-from-recurring); or 
 - [Define an exclusion on an individual Windows device](#define-an-exclusion-on-an-individual-windows-device) in your Windows Defender Antivirus settings.
 
 ## Submit a file to Microsoft for analysis
@@ -38,7 +38,7 @@ But what if something gets detected wrongly as malware, or something is missed? 
 > [!TIP]
 > We recommend signing in at the submission portal so you can track the results of your submissions.
 
-## Create an "Allow" indicator
+## Create an "Allow" indicator to prevent a false positive from recurring
 
 If a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can create an "Allow" indicator. This indicator tells Windows Defender Antivirus (and Microsoft Defender Advanced Threat Protection) that the item is safe.
 
