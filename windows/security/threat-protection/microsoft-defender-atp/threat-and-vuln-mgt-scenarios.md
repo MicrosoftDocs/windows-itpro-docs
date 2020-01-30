@@ -42,7 +42,7 @@ Ensure that your machines:
 > RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
 > 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
-- Are onboarded to Microsoft Intune and System Center Configuration Manager (SCCM). If you are use SCCM, update your console to the latest May version 1905
+- Are onboarded to Microsoft Intune and  Microsoft Endpoint Configuration Manager. If you are using Configuration Manager, update your console to the latest version.
 - Have at least one security recommendation that can be viewed in the machine page
 - Are tagged or marked as co-managed
 
