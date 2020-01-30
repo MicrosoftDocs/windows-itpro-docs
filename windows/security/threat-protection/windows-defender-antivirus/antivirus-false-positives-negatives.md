@@ -28,7 +28,7 @@ Windows Defender Antivirus is designed to keep your PC safe with built-in, trust
 But what if something gets detected wrongly as malware, or something is missed? We call these false positives and false negatives. Fortunately, there are some steps you can take to deal with these things. You can:
 - [Submit a file to Microsoft for analysis](#submit-a-file-to-microsoft-for-analysis);
 - [Create an "Allow" indicator to prevent a false positive from recurring](#create-an-allow-indicator-to-prevent-a-false-positive-from-recurring); or 
-- [Define an exclusion on an individual Windows device](#define-an-exclusion-on-an-individual-windows-device) in your Windows Defender Antivirus settings.
+- [Define an exclusion on an individual Windows device to prevent an item from being scanned](#define-an-exclusion-on-an-individual-windows-device-to-prevent-an-item-from-being-scanned) by Windows Defender Antivirus.
 
 ## Submit a file to Microsoft for analysis
 
@@ -44,7 +44,7 @@ If a file, IP address, URL, or domain is treated as malware on a device, even th
 
 To set up your "Allow" indicator, follow the guidance in [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
-## Define an exclusion on an individual Windows device
+## Define an exclusion on an individual Windows device to prevent an item from being scanned
 
 When you define an exclusion for Windows Defender Antivirus, you configure your antivirus to skip that item. 
 
