@@ -492,7 +492,7 @@ Supported operation is Execute, Add, Delete, and Get.
 <a href="" id="appinstallation-packagefamilyname-hostedinstall"></a>**AppInstallation/*PackageFamilyName*/HostedInstall**  
 Required. Command to perform an install of an app package from a hosted location (this can be a local drive, a UNC, or https data source).
 
-The following is list of available deployment options: 
+The following list shows the supported deployment options: 
 - ForceApplicationShutdown
 - DevelopmentMode 
 - InstallAllResources
