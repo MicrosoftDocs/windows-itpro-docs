@@ -1,7 +1,8 @@
 ---
-title: Interactive log-on: Prompt user to change password before expiration (Windows 10)
-description: Best practices and security considerations for an interactive log-on prompt for users to change passwords before expiration.
-ms.assetid: 8fe94781-40f7-4fbe-8cfd-5e116e6833e9
+title: Plan and deploy advanced security audit policies (Windows 10)
+description: Learn to deploy an effective security audit policy in a network that includes advanced security audit policies.
+ms.assetid: 7428e1db-aba8-407b-a39e-509671e5a442
+
 ms.reviewer: 
 ms.author: dansimp
 ms.prod: w10
