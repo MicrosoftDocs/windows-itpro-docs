@@ -266,7 +266,7 @@ This section lists the exclusions that are delivered automatically when you inst
 
   - %windir%\Ntds\ntds.pat
 
-- The AD DS transaction log files. The transaction log files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\Database Log Files`
+- The AD DS transaction log files. The transaction log files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\Database Log Files Path`
 
   - %windir%\Ntds\EDB*.log
 

@@ -334,7 +334,7 @@ A strong password is assigned to the KRBTGT and trust accounts automatically. Li
 
 Resetting the password requires you either to be a member of the Domain Admins group, or to have been delegated with the appropriate authority. In addition, you must be a member of the local Administrators group, or you must have been delegated the appropriate authority.
 
-After you reset the KRBTGT password, ensure that event ID 6 in the (Kerberos) Key-Distribution-Center event source is written to the System event log.
+After you reset the KRBTGT password, ensure that event ID 9 in the (Kerberos) Key-Distribution-Center event source is written to the System event log.
 
 ### Security considerations
 

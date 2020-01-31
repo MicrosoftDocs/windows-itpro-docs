@@ -121,8 +121,11 @@ Specific scenarios will then have additional requirements.  Generally, there are
 See [Windows Autopilot Scenarios](windows-autopilot-scenarios.md) for additional details.
 
 For a walkthrough for some of these and related steps, see this video:
-<br>&nbsp;<br>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+
+</br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KYVptkpsOqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media" gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 There are no additional hardware requirements to use Windows 10 Autopilot, beyond the [requirements to run Windows 10](https://www.microsoft.com/windows/windows-10-specifications).
 
