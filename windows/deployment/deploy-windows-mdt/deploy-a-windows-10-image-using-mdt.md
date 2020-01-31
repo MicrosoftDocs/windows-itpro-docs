@@ -85,6 +85,20 @@ The steps for creating the deployment share for production are the same as when 
 6. On the **Options** page, accept the default settings and click **Next** twice, and then click **Finish**.
 7. Using File Explorer, verify that you can access the **\\\\MDT01\\MDTProduction$** share.
 
+### Configure permissions for the production deployment share
+
+To read files in the deployment share, you need to assign NTSF and SMB permissions to the MDT Build Account (MDT\_BA) for the **D:\\MDTProduction** folder
+
+On **MDT01**:
+
+1.  Ensure you are signed in as **contoso\\administrator**.
+2.  Modify the NTFS permissions for the **D:\\MDTProduction** folder by running the following command in an elevated Windows PowerShell prompt:
+
+    ``` syntax
+    icacls "D:\MDTProduction" /grant '"CONTOSO\MDT_BA":(OI)(CI)(M)'
+    grant-smbshareaccess -Name MDTProduction$ -AccountName "Contoso\MDT_BA" -AccessRight Full -force
+    ```
+
 ## Step 3: Add a custom image
 
 The next step is to add a reference image into the deployment share with the setup files required to successfully deploy Windows 10. When adding a custom image, you still need to copy setup files (an option in the wizard) because Windows 10 stores additional components in the Sources\\SxS folder which is outside the image and may be required when installing components.
@@ -381,13 +395,15 @@ On **MDT01**:
 3. Click **Edit Bootstrap.ini** and modify using the following information:
 
    ``` 
-   [Settings]
-   Priority=Default
-   [Default]
-   DeployRoot=\\MDT01\MDTProduction$
-   UserDomain=CONTOSO
-   UserID=MDT_BA
-   SkipBDDWelcome=YES
+  [Settings]
+  Priority=Default
+
+  [Default]
+  DeployRoot=\\MDT01\MDTProduction$
+  UserDomain=CONTOSO
+  UserID=MDT_BA
+  UserPassword=pass@word1
+  SkipBDDWelcome=YES
    ```
 
 4. On the **Windows PE** tab, in the **Platform** drop-down list, make sure **x86** is selected.
@@ -420,11 +436,14 @@ The Windows PE tab for the x64 boot image.
 
 ### The rules explained
 
-The rules for the MDT Production deployment share are somewhat different from those for the MDT Build Lab deployment share. The biggest differences are that you deploy the machines into a domain instead of a workgroup and that you do not automate the logon.
+The rules for the MDT Production deployment share are somewhat different from those for the MDT Build Lab deployment share. The biggest differences are that you deploy the machines into a domain instead of a workgroup.
+
+>
+>You can optionally remove the **UserID** and **UserPassword** entries from Bootstrap.ini so that users performing PXE boot are prompted to provide credentials with permission to connect to the deployment share. Setting **SkipBDDWelcome=NO** enables the welcome screen that displays options to run the deployment wizard, run DaRT tools (if installed), exit to a Windows PE command prompt, set the keyboard layout, or configure a static IP address.  In this example we are skipping the welcome screen and providing credentials.
 
 ### The Bootstrap.ini file
 
-This is the MDT Production Bootstrap.ini without the user credentials (except domain information):
+This is the MDT Production Bootstrap.ini:
 ``` 
 [Settings]
 Priority=Default
@@ -433,8 +452,10 @@ Priority=Default
 DeployRoot=\\MDT01\MDTProduction$
 UserDomain=CONTOSO
 UserID=MDT_BA
+UserPassword=pass@word1
 SkipBDDWelcome=YES
 ```
+
 ### The CustomSettings.ini file
 
 This is the CustomSettings.ini file with the new join domain information:
@@ -475,7 +496,8 @@ SkipCapture=YES
 SkipFinalSummary=NO
 EventService=http://MDT01:9800
 ```
-The additional properties to use in the MDT Production rules file are as follows:
+
+Some properties to use in the MDT Production rules file are as follows:
 -   **JoinDomain.** The domain to join.
 -   **DomainAdmin.** The account to use when joining the machine to the domain.
 -   **DomainAdminDomain.** The domain for the join domain account.
@@ -523,16 +545,20 @@ Like the MDT Build Lab deployment share, the MDT Production deployment share nee
 
 >[!NOTE]
 >The update process will take 5 to 10 minutes.
- 
+
 ## Step 8: Deploy the Windows 10 client image
 
 These steps will walk you through the process of using task sequences to deploy Windows 10 images through a fully automated process. First, you need to add the boot image to Windows Deployment Services (WDS) and then start the deployment. In contrast with deploying images from the MDT Build Lab deployment share, we recommend using the Pre-Installation Execution Environment (PXE) to start the full deployments in the datacenter, even though you technically can use an ISO/CD or USB to start the process.
 
 ### Configure Windows Deployment Services
 
-You need to add the MDT Production Lite Touch x64 Boot image to WDS in preparation for the deployment. For the following steps, we assume that Windows Deployment Services has already been installed on MDT01.
-1.  Using the WDS console, right-click **Boot Images** and select **Add Boot Image**.
-2.  Browse to the D:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim file and add the image with the default settings.
+You need to add the MDT Production Lite Touch x64 Boot image to WDS in preparation for the deployment. In this procedure, we assume that WDS is already installed and initialized on MDT01 as described in the [Prepare for Windows deployment](prepare-for-windows-deployment-with-mdt.md#install-and-initialize-windows-deployment-services-wds) article.
+
+On **MDT01**:
+
+1. Open the Windows Deployment Services console, expand the **Servers** node and then expand **MDT01.contoso.com**.
+2. Right-click **Boot Images** and select **Add Boot Image**.
+3. Browse to the **D:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim** file and add the image with the default settings.
 
 ![figure 9](../images/mdt-07-fig10.png)
 
@@ -541,39 +567,53 @@ The boot image added to the WDS console.
 ### Deploy the Windows 10 client
 
 At this point, you should have a solution ready for deploying the Windows 10 client. We recommend starting by trying a few deployments at a time until you are confident that your configuration works as expected. We find it useful to try some initial tests on virtual machines before testing on physical hardware. This helps rule out hardware issues when testing or troubleshooting. Here are the steps to deploy your Windows 10 image to a virtual machine:
-1.  Create a virtual machine with the following settings:
-    1.  Name: PC0005
-    2.  Location: C:\\VMs
-    3.  Generation: 2
-    4.  Memory: 2048 MB
-    5.  Hard disk: 60 GB (dynamic disk)
-2.  Start the PC0005 virtual machine, and press **Enter** to start the PXE boot. The machine will now load the Windows PE boot image from the WDS server.
+
+On **HV01**:
+
+1. Create a virtual machine with the following settings:
+    1. Name: PC0005
+    2. Store the virtual machine in a different location: C:\VM
+    3. Generation: 2
+    4. Memory: 2048 MB
+    5. Network: Must be able to connect to \\MDT01\MDTProduction$
+    6. Hard disk: 60 GB (dynamic disk)
+    7. Installation Options: Install an operating system from a network-based installation server
+2.  Start the PC0005 virtual machine, and press **Enter** to start the PXE boot. The VM will now load the Windows PE boot image from the WDS server.
 
     ![figure 10](../images/mdt-07-fig11.png)
 
-    Figure 10. The initial PXE boot process of PC0005.
+    The initial PXE boot process of PC0005.
 
 3.  After Windows PE has booted, complete the Windows Deployment Wizard using the following setting:
-    1.  Password: P@ssw0rd
-    2.  Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Custom Image
-    3.  Computer Name: PC0005
-    4.  Applications: Select the Install - Adobe Reader XI - x86 application.
-4.  The setup now starts and does the following:
+    1.  Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Custom Image
+    2.  Computer Name: **PC0005**
+    3.  Applications: Select the **Install - Adobe Reader** checkbox.
+4.  Setup now begins and does the following:
     1.  Installs the Windows 10 Enterprise operating system.
     2.  Installs the added application.
     3.  Updates the operating system via your local Windows Server Update Services (WSUS) server.
 
+![pc0005](../images/pc0005-vm.png)
+
+### Application installation
+
+Following OS installation, Microsoft Office 365 Pro Plus - x64 is installed automatically.
+
+ ![pc0005](../images/pc0005-vm-office.png)
+
 ### Use the MDT monitoring feature
 
-Now that you have enabled the monitoring on the MDT Production deployment share, you can follow your deployment of PC0005 via the monitoring node.
+Since you have enabled the monitoring on the MDT Production deployment share, you can follow your deployment of PC0005 via the monitoring node.
 
-1.  On MDT01, using Deployment Workbench, expand the **MDT Production** deployment share folder.
+On **MDT01**:
+
+1.  In the Deployment Workbench, expand the **MDT Production** deployment share folder.
 2.  Select the **Monitoring** node, and wait until you see PC0005.
 3.  Double-click PC0005, and review the information.
 
 ![figure 11](../images/mdt-07-fig13.png)
 
-Figure 11. The Monitoring node, showing the deployment progress of PC0005.
+The Monitoring node, showing the deployment progress of PC0005.
 
 ### Use information in the Event Viewer
 
@@ -581,9 +621,9 @@ When monitoring is enabled, MDT also writes information to the event viewer on M
 
 ![figure 12](../images/mdt-07-fig14.png)
 
-Figure 12. The Event Viewer showing a successful deployment of PC0005.
+The Event Viewer showing a successful deployment of PC0005.
 
-## <a href="" id="sec09"></a>Multicast deployments
+## Multicast deployments
 
 Multicast deployment allows for image deployment with reduced network load during simultaneous deployments. Multicast is a useful operating system deployment feature in MDT deployments, however it is important to ensure that your network supports it and is designed for it.
 
@@ -596,25 +636,30 @@ Internet Group Management Protocol (IGMP) snooping is turned on and that the net
 
 Setting up MDT for multicast is straightforward. You enable multicast on the deployment share, and MDT takes care of the rest.
 
-1.  On MDT01, right-click the **MDT Production** deployment share folder and select **Properties**.
-2.  In the **General** tab, select the **Enable multicast for this deployment share (requires Windows Server 2008 R2 Windows Deployment Services)** check box, and click **OK**.
+On **MDT01**:
+
+1.  In the Deployment Workbench, right-click the **MDT Production** deployment share folder and select **Properties**.
+2.  On the **General** tab, select the **Enable multicast for this deployment share (requires Windows Server 2008 R2 Windows Deployment Services)** check box, and click **OK**.
 3.  Right-click the **MDT Production** deployment share folder and select **Update Deployment Share**.
 4.  After updating the deployment share, use the Windows Deployment Services console to, verify that the multicast namespace was created.
 
 ![figure 13](../images/mdt-07-fig15.png)
 
-Figure 13. The newly created multicast namespace.
+The newly created multicast namespace.
 
-## <a href="" id="sec10"></a>Use offline media to deploy Windows 10
+## Use offline media to deploy Windows 10
 
-In addition to network-based deployments, MDT supports the use of offline media-based deployments of Windows 10. You can very easily generate an offline version of your deployment share - either the full deployment share or a subset of it - by the use of selection profiles. The generated offline media can be burned to a DVD or copied to a USB stick for deployment.
+In addition to network-based deployments, MDT supports the use of offline media-based deployments of Windows 10. You can very easily generate an offline version of your deployment share - either the full deployment share or a subset of it - through the use of selection profiles. The generated offline media can be burned to a DVD or copied to a USB stick for deployment.
 
 Offline media are useful not only when you do not have network connectivity to the deployment share, but also when you have limited connection to the deployment share and do not want to copy 5 GB of data over the wire. Offline media can still join the domain, but you save the transfer of operating system images, drivers, and applications over the wire.
 
 ### Create the offline media selection profile
 
 To filter what is being added to the media, you create a selection profile. When creating selection profiles, you quickly realize the benefits of having created a good logical folder structure in the Deployment Workbench.
-1.  On MDT01, using Deployment Workbench, in the **MDT Production / Advanced Configuration** node, right-click **Selection Profile**, and select **New Selection Profile**.
+
+On **MDT01**:
+
+1.  In the Deployment Workbench, under the **MDT Production / Advanced Configuration** node, right-click **Selection Profiles**, and select **New Selection Profile**.
 2.  Use the following settings for the New Selection Profile Wizard:
     1.  General Settings
         -   Selection profile name: Windows 10 Offline Media
@@ -625,48 +670,55 @@ To filter what is being added to the media, you create a selection profile. When
         4.  Out-Of-Box Drivers / Windows 10 x64
         5.  Task Sequences / Windows 10
 
+      ![offline media](../images/mdt-offline-media.png)
+
 ### Create the offline media
 
 In these steps, you generate offline media from the MDT Production deployment share. To filter what is being added to the media, you use the previously created selection profile.
 
-1.  On MDT01, using File Explorer, create the **E:\\MDTOfflineMedia** folder.
+1.  On MDT01, using File Explorer, create the **D:\\MDTOfflineMedia** folder.
 
-      >[!NOTE]
-    >When creating offline media, you need to create the target folder first. It is crucial that you do not create a subfolder inside the deployment share folder because it will break the offline media.
+     >[!NOTE]
+     >When creating offline media, you need to create the target folder first. It is crucial that you do not create a subfolder inside the deployment share folder because it will break the offline media.
      
-2.  Using Deployment Workbench, in the **MDT Production / Advanced Configuration** node, right-click the **Media** node, and select **New Media**.
+2.  In the Deployment Workbench, under the **MDT Production / Advanced Configuration** node, right-click the **Media** node, and select **New Media**.
 3.  Use the following settings for the New Media Wizard:
     -   General Settings
-        1.  Media path: **E:\\MDTOfflineMedia**
-        2.  Selection profile: Windows 10 Offline Media
+        1.  Media path: **D:\\MDTOfflineMedia**
+        2.  Selection profile: **Windows 10 Offline Media**
 
 ### Configure the offline media
 
 Offline media has its own rules, its own Bootstrap.ini and CustomSettings.ini files. These files are stored in the Control folder of the offline media; they also can be accessed via properties of the offline media in the Deployment Workbench.
 
-1.  On MDT01, using File Explorer, copy the CustomSettings.ini file from the **E:\MDTProduction\Control** folder to **E:\\MDTOfflineMedia\\Content\\Deploy\\Control**. Overwrite the existing files.
-2.  Using Deployment Workbench, in the **MDT Production / Advanced Configuration / Media** node, right-click the **MEDIA001** media, and select **Properties**.
+On **MDT01**:
+
+1.  Copy the CustomSettings.ini file from the **D:\MDTProduction\Control** folder to **D:\\MDTOfflineMedia\\Content\\Deploy\\Control**. Overwrite the existing files.
+2.  In the Deployment Workbench, under the **MDT Production / Advanced Configuration / Media** node, right-click the **MEDIA001** media, and select **Properties**.
 3.  In the **General** tab, configure the following:
     1.  Clear the Generate x86 boot image check box.
     2.  ISO file name: Windows 10 Offline Media.iso
-4.  Still in the **Windows PE** tab, in the **Platform** drop-down list, select **x64**.
-5.  In the **General** sub tab, configure the following settings:
+4.  On the **Windows PE** tab, in the **Platform** drop-down list, select **x64**.
+5.  On the **General** sub tab, configure the following settings:
     1.  In the **Lite Touch Boot Image Settings** area:
         -   Image description: MDT Production x64
     2.  In the **Windows PE Customizations** area, set the Scratch space size to 128.
-6.  In the **Drivers and Patches** sub tab, select the **WinPE x64** selection profile and select the **Include all drivers from the selection profile** option.
+6.  On the **Drivers and Patches** sub tab, select the **WinPE x64** selection profile and select the **Include all drivers from the selection profile** option.
 7.  Click **OK**.
 
 ### Generate the offline media
 
-You have now configured the offline media deployment share however the share has not yet been populated with the files required for deployment. Now everything is ready you populate the deployment share content folder and generate the offline media ISO.
+You have now configured the offline media deployment share, however the share has not yet been populated with the files required for deployment. Now everything is ready you populate the deployment share content folder and generate the offline media ISO.
 
-1.  On MDT01, using Deployment Workbench, navigate to the **MDT Production / Advanced Configuration / Media** node.
-2.  Right-click the **MEDIA001** media, and select **Update Media Content**. The Update Media Content process now generates the offline media in the **E:\\MDTOfflineMedia\\Content** folder.
+On **MDT01**:
+
+1.  In the Deployment Workbench, navigate to the **MDT Production / Advanced Configuration / Media** node.
+2.  Right-click the **MEDIA001** media, and select **Update Media Content**. The Update Media Content process now generates the offline media in the **D:\\MDTOfflineMedia\\Content** folder. The process might require several minutes.
 
 ### Create a bootable USB stick
 
 The ISO that you got when updating the offline media item can be burned to a DVD and used directly (it will be bootable), but it is often more efficient to use USB sticks instead since they are faster and can hold more data. (A dual-layer DVD is limited to 8.5 GB.)
+
 Follow these steps to create a bootable USB stick from the offline media content:
 
 1.  On a physical machine running Windows 7 or later, insert the USB stick you want to use.
@@ -676,24 +728,19 @@ Follow these steps to create a bootable USB stick from the offline media content
 5.  In the Diskpart utility, type **select volume F** (replace F with your USB stick drive letter).
 6.  In the Diskpart utility, type **active**, and then type **exit**.
 
-## <a href="" id="sec11"></a>Unified Extensible Firmware Interface (UEFI)-based deployments
+## Unified Extensible Firmware Interface (UEFI)-based deployments
 
-As referenced in [Windows 10 deployment tools](https://go.microsoft.com/fwlink/p/?LinkId=619546), Unified Extensible Firmware Interface (UEFI)-based deployments are becoming more common. In fact, when you create a generation 2 virtual machine in Hyper-V, you get a UEFI-based computer. During deployment, MDT automatically detects that you have an UEFI-based machine and creates the partitions UEFI requires. You do not need to update or change your task sequences in any way to accommodate UEFI.
+As referenced in [Windows 10 deployment scenarios and tools](https://go.microsoft.com/fwlink/p/?LinkId=619546), Unified Extensible Firmware Interface (UEFI)-based deployments are becoming more common. In fact, when you create a generation 2 virtual machine in Hyper-V, you get a UEFI-based computer. During deployment, MDT automatically detects that you have an UEFI-based machine and creates the partitions UEFI requires. You do not need to update or change your task sequences in any way to accommodate UEFI.
 
 ![figure 14](../images/mdt-07-fig16.png)
 
-Figure 14. The partitions when deploying an UEFI-based machine.
+The partitions when deploying an UEFI-based machine.
 
 ## Related topics
 
-[Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)
-
-[Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
-
-[Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)
-
-[Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)
-
-[Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
-
-[Configure MDT settings](configure-mdt-settings.md)
+[Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)<br>
+[Create a Windows 10 reference image](create-a-windows-10-reference-image.md)<br>
+[Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)<br>
+[Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)<br>
+[Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)<br>
+[Configure MDT settings](configure-mdt-settings.md)<br>

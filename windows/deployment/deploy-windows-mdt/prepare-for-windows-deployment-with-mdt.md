@@ -34,7 +34,7 @@ For the purposes of this topic, we will use three server computers: **DC01**, **
     - You can use an earlier version of Windows Server with minor modifications to some procedures.
     - Note: Although MDT supports Windows Server 2008 R2, at least Windows Server 2012 R2 or later is requried to perform the procedures in this guide.
 - **DC01** is a domain controller, DHCP server, and DNS server for <b>contoso.com</b>, representing the fictitious Contoso Corporation.
-- **MDT01** is a domain member server in contoso.com with a data (D:) drive that can store at least 200GB.
+- **MDT01** is a domain member server in contoso.com with a data (D:) drive that can store at least 200GB. MDT01 will host deployment shares and run the Windows Deployment Service. Optionally, MDT01 is also a WSUS server.
 - **HV01** is a Hyper-V host computer that is used to build a Windows 10 reference image.
     - See [Hyper-V requirements](#hyper-v-requirements) below for more information about HV01.
 
@@ -94,6 +94,31 @@ Visit the [Download and install the Windows ADK](https://go.microsoft.com/fwlink
 3. Start the **WinPE Setup** (D:\\Downloads\\ADK\\adkwinpesetup.exe), click **Next** twice to accept the default installation parameters, click **Accept** to accept the license agreement, and then on the **Select the features you want to install** page click **Install**. This will install Windows PE for x86, AMD64, ARM, and ARM64. Verify that the installation completes successfully before moving to the next step.
 4. Extract the **WSIM 1903 update** (D:\\Downloads\ADK\\WSIM1903.zip) and then run the **UpdateWSIM.bat** file.
    - You can confirm that the update is applied by viewing properties of the ImageCat.exe and ImgMgr.exe files at **C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\WSIM** and verifying that the **Details** tab displays a **File version** of **10.0.18362.144** or later.
+
+## Install and initialize Windows Deployment Services (WDS)
+
+On **MDT01**:
+
+1. Open an elevated Windows PowerShell prompt and enter the following command:
+ 
+  ```powershell
+  Install-WindowsFeature -Name WDS -IncludeManagementTools
+  WDSUTIL /Verbose /Progress /Initialize-Server /Server:MDT01 /RemInst:"D:\RemoteInstall"
+  WDSUTIL /Set-Server /AnswerClients:All
+  ```
+
+## Optional: Install Windows Server Update Services (WSUS)
+
+If you wish to use MDT as a WSUS server using the Windows Internal Database (WID), use the following command to install this service. Alternatively, change the WSUS server information in this guide to the WSUS server in your environment.
+
+To install WSUS on MDT01, enter the following at an elevated Windows PowerShell prompt:
+
+  ```powershell
+  Install-WindowsFeature -Name UpdateServices, UpdateServices-WidDB, UpdateServices-Services, UpdateServices-RSAT, UpdateServices-API, UpdateServices-UI
+  cmd /c "C:\Program Files\Update Services\Tools\wsusutil.exe" postinstall CONTENT_DIR=C:\WSUS
+  ```
+
+>To use the WSUS that you have installed on MDT01, you must also [configure Group Policy](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wsus#configure-automatic-updates-and-update-service-location) on DC01.
 
 ## Install MDT
 

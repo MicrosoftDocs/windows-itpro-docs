@@ -614,16 +614,18 @@ The steps below outline the process used to boot a virtual machine using an ISO 
 1. Copy D:\\MDTBuildLab\\Boot\\MDT Build Lab x86.iso on MDT01 to C:\\ISO on your Hyper-V host (HV01).
 
     **Note**: Remember, in MDT you can use the x86 boot image to deploy both x86 and x64 operating system images. That's why you can use the x86 boot image instead of the x64 boot image.
+
+On **HV01**:
      
-2. **On HV01**: Create a new virtual machine with the following settings:
+2. Create a new virtual machine with the following settings:
    1. Name: REFW10X64-001
-   2. Generation 1
-   3. Memory: 1024 MB
-   4. Network: Must be able to connect to \\MDT01\MDTBuildLab$
-   5. Location: C:\VM
-   6. Hard disk: 60 GB (dynamic disk)
-   7. Install OS with image file: C:\\ISO\\MDT Build Lab x86.iso
-3. Before you start the VM, add a checkpoint for REFW10X64-001, and name it **Clean with MDT Build Lab x86 ISO**.
+   2. Store the virtual machine in a different location: C:\VM
+   3. Generation 1
+   4. Memory: 1024 MB
+   5. Network: Must be able to connect to \\MDT01\MDTBuildLab$
+   7. Hard disk: 60 GB (dynamic disk)
+   8. Install OS with image file: C:\\ISO\\MDT Build Lab x86.iso
+1. Before you start the VM, add a checkpoint for REFW10X64-001, and name it **Clean with MDT Build Lab x86 ISO**.
 
     **Note**: Checkpoints are useful if you need to restart the process and want to make sure you can start clean.
      
