@@ -33,11 +33,11 @@ You can enable attack surface reduction rules by using any of these methods:
 
 * [Microsoft Intune](#intune)
 * [Mobile Device Management (MDM)](#mdm)
-* [System Center Configuration Manager (SCCM)](#sccm)
+* [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [Group Policy](#group-policy)
 * [PowerShell](#powershell)
 
-Enterprise-level management such as Intune or SCCM is recommended. Enterprise-level management will overwrite any conflicting Group Policy or PowerShell settings on startup.
+Enterprise-level management such as Intune or Microsoft Endpoint Configuration Manager is recommended. Enterprise-level management will overwrite any conflicting Group Policy or PowerShell settings on startup.
 
 ## Exclude files and folders from ASR rules
 
@@ -99,9 +99,9 @@ Value: c:\path|e:\path|c:\Whitelisted.exe
 > [!NOTE]
 > Be sure to enter OMA-URI values without spaces.
 
-## SCCM
+## Microsoft Endpoint Configuration Manager
 
-1. In System Center Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, click **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
 1. Click **Home** > **Create Exploit Guard Policy**.
 1. Enter a name and a description, click **Attack Surface Reduction**, and click **Next**.
 1. Choose which rules will block or audit actions and click **Next**.
@@ -111,7 +111,7 @@ Value: c:\path|e:\path|c:\Whitelisted.exe
 ## Group Policy
 
 > [!WARNING]
-> If you manage your computers and devices with Intune, SCCM, or other enterprise-level management platform, the management software will overwrite any conflicting Group Policy settings on startup.
+> If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting Group Policy settings on startup.
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -134,7 +134,7 @@ Value: c:\path|e:\path|c:\Whitelisted.exe
 ## PowerShell
 
 >[!WARNING]
->If you manage your computers and devices with Intune, SCCM, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.
+>If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup.
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and click **Run as administrator**.
 

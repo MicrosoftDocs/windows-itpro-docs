@@ -66,7 +66,7 @@ You can also find the System SKU and System Model for a device in **System Infor
 1. Select **System Information**.
 
 **Using the SKU in a task sequence WMI condition**  
-You can use the System SKU information in the Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager as part of a task sequence WMI condition.
+You can use the System SKU information in the Microsoft Deployment Toolkit (MDT) or Microsoft Endpoint Configuration Manager as part of a task sequence WMI condition.
 
  ``` powershell  
     - WMI Namespace – Root\WMI

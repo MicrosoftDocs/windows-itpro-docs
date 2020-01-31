@@ -1,6 +1,6 @@
 ---
 title: Minimum requirements for Microsoft Defender ATP
-description: Understand the licensing requirements and requirements for onboarding machines to the sercvie
+description: Understand the licensing requirements and requirements for onboarding machines to the service
 keywords: minimum requirements, licensing, comparison table
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -183,7 +183,7 @@ For more information, see [Windows Defender Antivirus compatibility](../windows-
 ## Windows Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
 If you're running Windows Defender Antivirus as the primary antimalware product on your machines, the Microsoft Defender ATP agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Endpoint Configuration Manager (current branch), you'll need to ensure that the Windows Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
 
 
 
