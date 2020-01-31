@@ -46,7 +46,7 @@ Use Upgrade Readiness to get:
 - Guidance and insights into application and driver compatibility issues, with suggested fixes
 - Data-driven application rationalization tools
 - Application usage information, allowing targeted validation; workflow to track validation progress and decisions
-- Data export to commonly used software deployment tools, including System Center Configuration Manager 
+- Data export to commonly used software deployment tools, including Microsoft Endpoint Configuration Manager 
 
 To get started with any of these solutions, visit the links for instructions to add it to Azure Portal.
 
