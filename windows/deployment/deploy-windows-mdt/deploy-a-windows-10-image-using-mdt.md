@@ -259,12 +259,12 @@ The folder you select and all sub-folders will be checked for drivers, expanding
 
 For the Dell Latitude E7450 model, you use the Dell Driver CAB file, which is accessible via the [Dell TechCenter website](https://go.microsoft.com/fwlink/p/?LinkId=619544).
 
-In these steps, we assume you have downloaded and extracted the CAB file for the Latitude E6440 model to the **D:\\Drivers\\Dell\\Latitude E7450** folder.
+In these steps, we assume you have downloaded and extracted the CAB file for the Latitude E7450 model to the **D:\\Drivers\\Dell\\Latitude E7450** folder.
 
 On **MDT01**:
 
 1. In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Dell** node.
-2.  Right-click the **Latitude E6440** folder and select **Import Drivers** and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Dell\\Latitude E6440**
+2.  Right-click the **Latitude E7450** folder and select **Import Drivers** and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Dell\\Latitude E7450**
 
 ### For the HP EliteBook 8560w
 
@@ -272,7 +272,9 @@ For the HP EliteBook 8560w, you use HP SoftPaq Download Manager to get the drive
 
 In these steps, we assume you have downloaded and extracted the drivers for the HP EliteBook 8650w model to the **D:\\Drivers\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w** folder.
 
-1.  On **MDT01**, using the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Hewlett-Packard** node.
+On **MDT01**:
+
+1.  In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Hewlett-Packard** node.
 2.  Right-click the **HP EliteBook 8560w** folder and select **Import Drivers** and use the following Driver source directory to import drivers: **D:\\Drivers\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w**
 
 ### For the Microsoft Surface Laptop
@@ -286,11 +288,13 @@ On **MDT01**:
 
 ## Step 6: Create the deployment task sequence
 
-This section will show you how to create the task sequence used to deploy your production Windows 10 reference image. You will then configure the tasks sequence to enable patching via a Windows Server Update Services (WSUS) server.
+This section will show you how to create the task sequence used to deploy your production Windows 10 reference image. You will then configure the task sequence to enable patching via a Windows Server Update Services (WSUS) server.
 
 ### Create a task sequence for Windows 10 Enterprise
 
-1. Using the Deployment Workbench, select **Task Sequences** in the **MDT Production** node, and create a folder named **Windows 10**.
+On **MDT01**:
+
+1. In the Deployment Workbench, under the **MDT Production** node, right-click **Task Sequences**, and create a folder named **Windows 10**.
 2. Right-click the new **Windows 10** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
    1. Task sequence ID: W10-X64-001
    2. Task sequence name: Windows 10 Enterprise x64 RTM Custom Image
@@ -300,13 +304,14 @@ This section will show you how to create the task sequence used to deploy your p
    6. Specify Product Key: Do not specify a product key at this time
    7. Full Name: Contoso
    8. Organization: Contoso
-   9. Internet Explorer home page: about:blank
+   9. Internet Explorer home page: https://www.contoso.com
    10. Admin Password: Do not specify an Administrator Password at this time
-       ### Edit the Windows 10 task sequence
 
-3. Right-click the **Windows 10 Enterprise x64 RTM Custom Image** task sequence, and select **Properties**.
-4. On the **Task Sequence** tab, configure the **Windows 10 Enterprise x64 RTM Custom Image** task sequence with the following settings:
-   1.  Preinstall. After the **Enable BitLocker (Offline)** action, add a **Set Task Sequence Variable** action with the following settings:
+### Edit the Windows 10 task sequence
+
+1. Continuing from the previous procedure, right-click the **Windows 10 Enterprise x64 RTM Custom Image** task sequence, and select **Properties**.
+2. On the **Task Sequence** tab, configure the **Windows 10 Enterprise x64 RTM Custom Image** task sequence with the following settings:
+   1.  Preinstall: After the **Enable BitLocker (Offline)** action, add a **Set Task Sequence Variable** action with the following settings:
        1.  Name: Set DriverGroup001
        2.  Task Sequence Variable: DriverGroup001
        3.  Value: Windows 10 x64\\%Make%\\%Model%
@@ -319,60 +324,61 @@ This section will show you how to create the task sequence used to deploy your p
              
    3.  State Restore. Enable the **Windows Update (Pre-Application Installation)** action.
    4.  State Restore. Enable the **Windows Update (Post-Application Installation)** action.
-5. Click **OK**.
+3. Click **OK**.
 
-![figure 6](../images/fig6-taskseq.png)
+![drivergroup](../images/fig6-taskseq.png)
 
-Figure 6. The task sequence for production deployment.
+The task sequence for production deployment.
 
-## <a href="" id="sec07"></a>Step 7: Configure the MDT production deployment share
+## Step 7: Configure the MDT production deployment share
 
 In this section, you will learn how to configure the MDT Build Lab deployment share with the rules required to create a simple and dynamic deployment process. This includes configuring commonly used rules and an explanation of how these rules work.
 
 ### Configure the rules
 
-1. On MDT01, using File Explorer, copy the following files from the **D:\\Setup\\Sample Files\\MDT Production\\Control** folder to **E:\\MDTProduction\\Control**. Overwrite the existing files.
-   1.  Bootstrap.ini
-   2.  CustomSettings.ini
-2. Right-click the **MDT Production** deployment share and select **Properties**.
-3. Select the **Rules** tab and modify using the following information:
+On **MDT01**:
 
-   ``` 
-   [Settings]
-   Priority=Default
-   [Default]
-   _SMSTSORGNAME=Contoso
-   OSInstall=YES
-   UserDataLocation=AUTO
-   TimeZoneName=Pacific Standard Time 
-   AdminPassword=P@ssw0rd
-   JoinDomain=contoso.com
-   DomainAdmin=CONTOSO\MDT_JD
-   DomainAdminPassword=P@ssw0rd
-   MachineObjectOU=OU=Workstations,OU=Computers,OU=Contoso,DC=contoso,DC=com
-   SLShare=\\MDT01\Logs$
-   ScanStateArgs=/ue:*\* /ui:CONTOSO\*
-   USMTMigFiles001=MigApp.xml
-   USMTMigFiles002=MigUser.xml
-   HideShell=YES
-   ApplyGPOPack=NO
-   WSUSServer=mdt01.contoso.com:8530
-   SkipAppsOnUpgrade=NO
-   SkipAdminPassword=YES
-   SkipProductKey=YES
-   SkipComputerName=NO
-   SkipDomainMembership=YES
-   SkipUserData=YES
-   SkipLocaleSelection=YES
-   SkipTaskSequence=NO
-   SkipTimeZone=YES
-   SkipApplications=NO
-   SkipBitLocker=YES
-   SkipSummary=YES
-   SkipCapture=YES
-   SkipFinalSummary=NO
-   ```
-4. Click **Edit Bootstrap.ini** and modify using the following information:
+1. Right-click the **MDT Production** deployment share and select **Properties**.
+2. Select the **Rules** tab and replace the existing rules with the following information (modify the domain name, WSUS server, and administrative credentials to match your environment):
+
+  ``` 
+  [Settings]
+  Priority=Default
+
+  [Default]
+  _SMSTSORGNAME=Contoso
+  OSInstall=YES
+  UserDataLocation=AUTO
+  TimeZoneName=Pacific Standard Time 
+  AdminPassword=pass@word1
+  JoinDomain=contoso.com
+  DomainAdmin=CONTOSO\MDT_JD
+  DomainAdminPassword=pass@word1
+  MachineObjectOU=OU=Workstations,OU=Computers,OU=Contoso,DC=contoso,DC=com
+  SLShare=\\MDT01\Logs$
+  ScanStateArgs=/ue:*\* /ui:CONTOSO\*
+  USMTMigFiles001=MigApp.xml
+  USMTMigFiles002=MigUser.xml
+  HideShell=YES
+  ApplyGPOPack=NO
+  WSUSServer=mdt01.contoso.com:8530
+  SkipAppsOnUpgrade=NO
+  SkipAdminPassword=YES
+  SkipProductKey=YES
+  SkipComputerName=NO
+  SkipDomainMembership=YES
+  SkipUserData=YES
+  SkipLocaleSelection=YES
+  SkipTaskSequence=NO
+  SkipTimeZone=YES
+  SkipApplications=NO
+  SkipBitLocker=YES
+  SkipSummary=YES
+  SkipCapture=YES
+  SkipFinalSummary=NO
+  ```
+
+3. Click **Edit Bootstrap.ini** and modify using the following information:
 
    ``` 
    [Settings]
@@ -383,25 +389,26 @@ In this section, you will learn how to configure the MDT Build Lab deployment sh
    UserID=MDT_BA
    SkipBDDWelcome=YES
    ```
-5. In the **Windows PE** tab, in the **Platform** drop-down list, make sure **x86** is selected.
-6. In the **General** sub tab, configure the following settings:
+
+4. On the **Windows PE** tab, in the **Platform** drop-down list, make sure **x86** is selected.
+5. On the **General** sub tab (still under the main Windows PE tab), configure the following settings:
    - In the **Lite Touch Boot Image Settings** area:
      1.  Image description: MDT Production x86
      2.  ISO file name: MDT Production x86.iso
         
      > [!NOTE]
      > 
-     > Because you are going to use Pre-Boot Execution Environment (PXE) later to deploy the machines, you do not need the ISO file; however, we recommend creating ISO files because they are useful when troubleshooting deployments and for quick tests.
+     >Because you are going to use Pre-Boot Execution Environment (PXE) later to deploy the machines, you do not need the ISO file; however, we recommend creating ISO files because they are useful when troubleshooting deployments and for quick tests.
          
-7. In the **Drivers and Patches** sub tab, select the **WinPE x86** selection profile and select the **Include all drivers from the selection profile** option.
-8. In the **Windows PE** tab, in the **Platform** drop-down list, select **x64**.
-9. In the **General** sub tab, configure the following settings:
+6. On the **Drivers and Patches** sub tab, select the **WinPE x86** selection profile and select the **Include all drivers from the selection profile** option.
+7. On the **Windows PE** tab, in the **Platform** drop-down list, select **x64**.
+8. On the **General** sub tab, configure the following settings:
    -   In the **Lite Touch Boot Image Settings** area:
        1.  Image description: MDT Production x64
        2.  ISO file name: MDT Production x64.iso
-10. In the **Drivers and Patches** sub tab, select the **WinPE x64** selection profile and select the **Include all drivers from the selection profile** option.
-11. In the **Monitoring** tab, select the **Enable monitoring for this deployment share** check box.
-12. Click **OK**.
+9. In the **Drivers and Patches** sub tab, select the **WinPE x64** selection profile and select the **Include all drivers from the selection profile** option.
+10. In the **Monitoring** tab, select the **Enable monitoring for this deployment share** check box.
+11. Click **OK**.
 
 >[!NOTE]
 >It will take a while for the Deployment Workbench to create the monitoring database and web service.
@@ -409,7 +416,7 @@ In this section, you will learn how to configure the MDT Build Lab deployment sh
 
 ![figure 8](../images/mdt-07-fig08.png)
 
-Figure 7. The Windows PE tab for the x64 boot image.
+The Windows PE tab for the x64 boot image.
 
 ### The rules explained
 
@@ -421,6 +428,7 @@ This is the MDT Production Bootstrap.ini without the user credentials (except do
 ``` 
 [Settings]
 Priority=Default
+
 [Default]
 DeployRoot=\\MDT01\MDTProduction$
 UserDomain=CONTOSO
@@ -433,15 +441,16 @@ This is the CustomSettings.ini file with the new join domain information:
 ``` 
 [Settings]
 Priority=Default
+
 [Default]
 _SMSTSORGNAME=Contoso
 OSInstall=Y
 UserDataLocation=AUTO
 TimeZoneName=Pacific Standard Time 
-AdminPassword=P@ssw0rd
+AdminPassword=pass@word1
 JoinDomain=contoso.com
 DomainAdmin=CONTOSO\MDT_JD
-DomainAdminPassword=P@ssw0rd
+DomainAdminPassword=pass@word1
 MachineObjectOU=OU=Workstations,OU=Computers,OU=Contoso,DC=contoso,DC=com
 SLShare=\\MDT01\Logs$
 ScanStateArgs=/ue:*\* /ui:CONTOSO\*
@@ -478,33 +487,35 @@ The additional properties to use in the MDT Production rules file are as follows
 
 ### Optional deployment share configuration
 
-If your organization has a Microsoft Software Assurance agreement, you also can subscribe to the additional Microsoft Desktop Optimization Package (MDOP) license (at an additional cost). Included in MDOP is Microsoft Diagnostics and Recovery Toolkit (DaRT), which contains tools that can help you 
-troubleshoot MDT deployments, as well as troubleshoot Windows itself.
+If your organization has a Microsoft Software Assurance agreement, you also can subscribe to the additional Microsoft Desktop Optimization Package (MDOP) license (at an additional cost). Included in MDOP is Microsoft Diagnostics and Recovery Toolkit (DaRT), which contains tools that can help you troubleshoot MDT deployments, as well as troubleshoot Windows itself.
 
 ### Add DaRT 10 to the boot images
 
 If you have licensing for MDOP and DaRT, you can add DaRT to the boot images using the steps in this section. If you do not have DaRT licensing, or don't want to use it, simply skip to the next section, [Update the Deployment Share](#bkmk-update-deployment). To enable the remote connection feature in MDT, you need to do the following:
-- Install DaRT 10 (part of MDOP 2015 R1).
-- Copy the two tools CAB files (Toolsx86.cab and Toolsx64.cab) to the deployment share.
-- Configure the deployment share to add DaRT.
-  In these steps, we assume that you downloaded MDOP 2015 R1 and copied DaRT 10 to the E:\\Setup\\DaRT 10 folder on MDT01.
-- On MDT01, install DaRT 10 (MSDaRT10.msi) using the default settings.
-- Using File Explorer, navigate to the **C:\\Program Files\\Microsoft DaRT\\v10** folder.
-- Copy the Toolsx64.cab file to **E:\\MDTProduction\\Tools\\x64**.
-- Copy the Toolsx86.cab file to **E:\\MDTProduction\\Tools\\x86**.
-- Using the Deployment Workbench, right-click the **MDT Production** deployment share and select **Properties**.
-- In the **Windows PE** tab, in the **Platform** drop-down list, make sure **x86** is selected.
-- In the **Features** sub tab, select the **Microsoft Diagnostics and Recovery Toolkit (DaRT)** check box.
 
-  ![figure 8](../images/mdt-07-fig09.png)
+>DaRT 10 is part of [MDOP 2015](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/#how-to-get-mdop). Note: MDOP might be available as a download from your [Visual Studio subscription](https://my.visualstudio.com/Downloads). When searching, be sure to look for **Desktop Optimization Pack**.
 
-  Figure 8. Selecting the DaRT 10 feature in the deployment share.
+On **MDT01**:
+
+1. Download MDOP 2015 and copy the DaRT 10 installer file to the D:\\Setup\\DaRT 10 folder on MDT01 (DaRT\\DaRT 10\\Installers\\\<lang\>\\x64\\MSDaRT100.msi).
+2. Install DaRT 10 (MSDaRT10.msi) using the default settings.
+
+  ![DaRT](../images/dart.png)
+
+2. Copy the two tools CAB files from **C:\\Program Files\\Microsoft DaRT\\v10** (**Toolsx86.cab** and **Toolsx64.cab**) to the production deployment share at **D:\\MDTProduction\\Tools\\x86** and **D:\\MDTProduction\\Tools\\x64**, respectively.
+3. In the Deployment Workbench, right-click the **MDT Production** deployment share and select **Properties**.
+4. On the **Windows PE** tab, in the **Platform** drop-down list, make sure **x86** is selected.
+5. On the **Features** sub tab, select the **Microsoft Diagnostics and Recovery Toolkit (DaRT)** checkbox.
+
+  ![DaRT selection](../images/mdt-07-fig09.png)
+
+  Selecting the DaRT 10 feature in the deployment share.
 
 8. In the **Windows PE** tab, in the **Platform** drop-down list, select **x64**.
 9. In the **Features** sub tab, in addition to the default selected feature pack, select the **Microsoft Diagnostics and Recovery Toolkit (DaRT)** check box.
 10. Click **OK**.
 
-### <a href="" id="bkmk-update-deployment"></a>Update the deployment share
+### Update the deployment share
 
 Like the MDT Build Lab deployment share, the MDT Production deployment share needs to be updated after it has been configured. This is the process during which the Windows PE boot images are created.
 1.  Right-click the **MDT Production** deployment share and select **Update Deployment Share**.
@@ -513,7 +524,7 @@ Like the MDT Build Lab deployment share, the MDT Production deployment share nee
 >[!NOTE]
 >The update process will take 5 to 10 minutes.
  
-## <a href="" id="sec08"></a>Step 8: Deploy the Windows 10 client image
+## Step 8: Deploy the Windows 10 client image
 
 These steps will walk you through the process of using task sequences to deploy Windows 10 images through a fully automated process. First, you need to add the boot image to Windows Deployment Services (WDS) and then start the deployment. In contrast with deploying images from the MDT Build Lab deployment share, we recommend using the Pre-Installation Execution Environment (PXE) to start the full deployments in the datacenter, even though you technically can use an ISO/CD or USB to start the process.
 
@@ -521,11 +532,11 @@ These steps will walk you through the process of using task sequences to deploy 
 
 You need to add the MDT Production Lite Touch x64 Boot image to WDS in preparation for the deployment. For the following steps, we assume that Windows Deployment Services has already been installed on MDT01.
 1.  Using the WDS console, right-click **Boot Images** and select **Add Boot Image**.
-2.  Browse to the E:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim file and add the image with the default settings.
+2.  Browse to the D:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim file and add the image with the default settings.
 
 ![figure 9](../images/mdt-07-fig10.png)
 
-Figure 9. The boot image added to the WDS console.
+The boot image added to the WDS console.
 
 ### Deploy the Windows 10 client
 
