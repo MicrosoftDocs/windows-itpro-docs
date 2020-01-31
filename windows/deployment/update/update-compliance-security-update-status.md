@@ -30,7 +30,7 @@ Deployment status summarizes detailed status into higher-level states to get a q
 |Deployment status    |Description  |
 |---------|---------|
 |Failed     |  The device encountered a failure during the update process. Note that due to latency, devices reporting this status may have since retried the update.        |
-|Progress stalled     | he device started the update process, but no progress has been reported in the last 7 days.        |
+|Progress stalled     | The device started the update process, but no progress has been reported in the last 7 days.        |
 |Deferred     |   The device is currently deferring the update process due to Windows Update for Business policies.      |
 |In progress     | The device has begun the updating process for this update. This status appears if the device is in any stage of the update process including and after download, but before completing the update. If no progress has been reported in the last 7 days, devices will move to **Progress stalled**.**         |
 |Update completed     |  The device has completed the update process.        |
