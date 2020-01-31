@@ -35,6 +35,9 @@ This issue has been eliminated in Windows Server 2019 version 1903 and newer ver
 
 To update the Broadcom NIC driver on an affected computer, follow these steps:
 
+> [!NOTE]  
+> This procedure describes how to use Device Manager to disable and re-enable the Broadcom network adapter. Alternatively, you can use the computer's BIOS to disable and re-enable the adapter. For specific instructions, see your OEM BIOS configuration guide.
+
 1. Download the driver update to the affected computer.
 1. Open Device Manager, and then select the Broadcom network adapter.
 1. Right-click the adapter and select **Disable device**.
