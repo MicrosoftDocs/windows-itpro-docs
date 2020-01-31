@@ -37,7 +37,7 @@ Microsoft Endpoint Configuration Manager allows you to synchronize and deploy Su
  
 For detailed steps, see the following resources:
 
-- [How to manage Surface driver updates in Configuration Manager.](https://support.microsoft.com/en-sg/help/4098906/manage-surface-driver-updates-in-configuration-manager)
+- [How to manage Surface driver updates in Configuration Manager.](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager)
 - [Deploy applications with Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications).
 - [Endpoint Configuration Manager documentation](https://docs.microsoft.com/configmgr/)
 
@@ -144,7 +144,7 @@ This file name provides the following information:
 ## Learn more
 
 - [Download drivers and firmware for Surface](https://support.microsoft.com/help/4023482/surface-download-drivers-and-firmware)
-- [How to manage Surface driver updates in Configuration Manager.](https://support.microsoft.com/en-sg/help/4098906/manage-surface-driver-updates-in-configuration-manager)
+- [How to manage Surface driver updates in Configuration Manager.](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager)
 - [Deploy applications with Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/deploy-applications).
 - [Endpoint Configuration Manager documentation](https://docs.microsoft.com/configmgr/)
 - [Microsoft Deployment Toolkit documentation](https://docs.microsoft.com/configmgr/mdt/)
