@@ -31,7 +31,7 @@ Acknowledging that customer environments and structures can vary, Microsoft Defe
 
 ## Endpoint onboarding and portal access 
 
-Machine onboarding is fully integrated into System Center Configuration Manager and Microsoft Intune for client machines and Azure Security Center for server machines, providing complete end-to-end experience of configuration, deployment, and monitoring. In addition, Microsoft Defender ATP supports Group Policy and other third-party tools used for machines management.
+Machine onboarding is fully integrated into Microsoft Endpoint Configuration Manager and Microsoft Intune for client machines and Azure Security Center for server machines, providing complete end-to-end experience of configuration, deployment, and monitoring. In addition, Microsoft Defender ATP supports Group Policy and other third-party tools used for machines management.
 
 Microsoft Defender ATP provides fine-grained control over what users with access to the portal can see and do through the flexibility of role-based access control (RBAC). The RBAC model supports all flavors of security teams structure:
 - Globally distributed organizations and security teams
@@ -49,7 +49,6 @@ The Microsoft Defender ATP APIs can be grouped into three:
 - Microsoft Defender ATP APIs 
 - Raw data streaming API
 - SIEM integration
-
 
 ## Microsoft Defender ATP APIs
 
@@ -70,10 +69,8 @@ For more information see, [Raw data streaming API](raw-data-export.md).
 ## SIEM API
 When you enable security information and event management (SIEM) integration it allows you to pull detections from Microsoft Defender Security Center using your SIEM solution or by connecting directly to the detections REST API. This activates the SIEM connector access details section with pre-populated values and an application is created under you Azure Active Directory (AAD) tenant. For more information see, [SIEM integration](enable-siem-integration.md)
 
-
 ## Related topics
 - [Access the Microsoft Defender Advanced Threat Protection APIs ](apis-intro.md)
 - [Supported APIs](exposed-apis-list.md)
 - [Technical partner opportunities](partner-integration.md)
-
 

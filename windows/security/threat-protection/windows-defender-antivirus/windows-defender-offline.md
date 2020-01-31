@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
 ---
@@ -57,7 +56,7 @@ See the [Manage Windows Defender Antivirus Security intelligence  updates](manag
 
 In Windows 10, version 1607, you can manually force an offline scan. Alternatively, if Windows Defender determines that Windows Defender Offline needs to run, it will prompt the user on the endpoint. 
 
-The need to perform an offline scan will also be revealed in System Center Configuration Manager if you're using it to manage your endpoints.
+The need to perform an offline scan will also be revealed in Microsoft Endpoint Configuration Manager if you're using it to manage your endpoints.
 
 The prompt can occur via a notification, similar to the following:
 
@@ -71,7 +70,7 @@ In Configuration Manager, you can identify the status of endpoints by navigating
 
 Windows Defender Offline scans are indicated under **Malware remediation status** as **Offline scan required**.
 
-![System Center Configuration Manager indicating a Windows Defender Offline scan is required](images/defender/sccm-wdo.png)
+![Microsoft Endpoint Configuration Manager indicating a Windows Defender Offline scan is required](images/defender/sccm-wdo.png)
 
 ## Configure notifications
 <a name="manage-notifications"></a>
@@ -127,8 +126,8 @@ See the following for more information:
 3. Select **Windows Defender Offline scan** and click **Scan now**.
 
 
-> [!NOTE]
-> In Windows 10, version 1607, the offline scan could be run from under **Windows Settings** > **Update & security** > **Windows Defender** or from the Windows Defender client.
+    > [!NOTE]
+    > In Windows 10, version 1607, the offline scan could be run from under **Windows Settings** > **Update & security** > **Windows Defender** or from the Windows Defender client.
 
 
 ## Review scan results

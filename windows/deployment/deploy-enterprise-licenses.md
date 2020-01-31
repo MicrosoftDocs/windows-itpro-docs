@@ -25,6 +25,10 @@ This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with 
 >* Windows 10 Enterprise E3 in CSP requires Windows 10 Pro, version 1607 or later.
 >* Automatic, non-KMS activation requires Windows 10, version 1803 or later, on a device with a firmware-embedded activation key.
 
+>[!IMPORTANT]
+>An issue has been identified where devices can lose activation status or be blocked from upgrading to Windows Enterprise if the device is not able to connect to Windows Update. A workaround is to ensure that devices do not have the REG_DWORD present HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations and set to 1.  If this REG_DWORD is present, it must be set to 0.<br> 
+>Also ensure that the Group Policy setting: Computer Configuration > Administrative Templates > Windows Components > Windows Update > "Do not connect to any Windows Update Internet locations" is set to "Disabled".
+
 ## Firmware-embedded activation key
 
 To determine if the computer has a firmware-embedded activation key, type the following command at an elevated Windows PowerShell prompt

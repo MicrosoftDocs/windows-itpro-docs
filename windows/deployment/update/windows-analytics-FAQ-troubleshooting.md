@@ -73,7 +73,7 @@ If devices are not showing up as expected, find a representative device and foll
 5. Check the output of the script in the command window and/or log **UA_dateTime_machineName.txt** to ensure that all steps were completed successfully.
 6. If you are still seeing errors you can't diagnose, then consider open a support case with Microsoft Support through your regular channel and provide this information.
 
-If you want to check a large number of devices, you should run the latest script at scale from your management tool of choice (for example, System Center Configuration Manager) and check the results centrally.
+If you want to check a large number of devices, you should run the latest script at scale from your management tool of choice (for example, Microsoft Endpoint Configuration Manager) and check the results centrally.
 
 If you think the issue might be related to a network proxy, check "Enable data sharing" section of the [Enrolling devices in Windows Analytics](windows-analytics-get-started.md) topic. Also see [Understanding connectivity scenarios and the deployment script](https://blogs.technet.microsoft.com/upgradeanalytics/2017/03/10/understanding-connectivity-scenarios-and-the-deployment-script/) on the Windows Analytics blog.
 
@@ -284,12 +284,12 @@ Beyond the cost of Windows operating system licenses, there is no additional cos
 Note that different Azure Log Analytics plans have different data retention periods, and the Windows Analytics solutions inherit the workspace's data retention policy. So, for example, if your workspace is on the free plan then Windows Analytics will retain the last week's worth of "daily snapshots" that are collected in the workspace.
 
 
-### Why do SCCM and Upgrade Readiness show different counts of devices that are ready to upgrade?
-System Center Configuration Manager (SCCM) considers a device ready to upgrade if *no installed app* has an upgrade decision of “not ready” (that is, they are all "ready" or "in progress"), while Upgrade Readiness considers a device ready to upgrade only if *all* installed apps are marked “ready”.
+### Why do Microsoft Endpoint Configuration Manager and Upgrade Readiness show different counts of devices that are ready to upgrade?
+Microsoft Endpoint Configuration Manager considers a device ready to upgrade if *no installed app* has an upgrade decision of “not ready” (that is, they are all "ready" or "in progress"), while Upgrade Readiness considers a device ready to upgrade only if *all* installed apps are marked “ready”.
 
 Currently, you can choose the criteria you wish to use:
-- To use the SCCM criteria, create the collection of devices ready to upgrade within the SCCM console (using the analytics connector).
-- To use the Upgrade Readiness criteria, export the list of ready-to-upgrade devices from the corresponding Upgrade Readiness report, and then build the SCCM collection from that spreadsheet.
+- To use the Configuration Manager criteria, create the collection of devices ready to upgrade within the Configuration Manager console (using the analytics connector).
+- To use the Upgrade Readiness criteria, export the list of ready-to-upgrade devices from the corresponding Upgrade Readiness report, and then build the Configuration Manager collection from that spreadsheet.
 
 ### How does Upgrade Readiness collect the inventory of devices and applications?
 For details about this process and some tips, see [How does Upgrade Readiness in WA collects application inventory for your OMS workspace?](https://techcommunity.microsoft.com/t5/Windows-Analytics-Blog/How-does-Upgrade-Readiness-in-WA-collects-application-inventory/ba-p/213586) on the Windows Analytics blog.
