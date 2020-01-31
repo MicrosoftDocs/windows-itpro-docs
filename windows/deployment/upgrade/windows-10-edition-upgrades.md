@@ -10,7 +10,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mobile
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -27,7 +28,7 @@ For a list of operating systems that qualify for the Windows 10 Pro Upgrade or W
 
 The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer. **Note**: The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607.
 
-Note: Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](https://docs.microsoft.com/sccm/compliance/deploy-use/upgrade-windows-version) in System Center Configuration Manager.
+Note: Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](https://docs.microsoft.com/configmgr/compliance/deploy-use/upgrade-windows-version) in Microsoft Endpoint Configuration Manager.
 
 ![not supported](../images/x_blk.png) (X) = not supported</br>
 ![supported, reboot required](../images/check_grn.png) (green checkmark) = supported, reboot required</br>

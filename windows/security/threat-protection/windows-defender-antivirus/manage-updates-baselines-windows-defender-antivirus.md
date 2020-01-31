@@ -40,7 +40,7 @@ The cloud-delivered protection is always on and requires an active connection to
 
 Windows Defender Antivirus requires [monthly updates](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as "engine updates" and "platform updates"), and will receive major feature updates alongside Windows 10 releases.
 
-You can manage the distribution of updates through Windows Server Update Service (WSUS), with [System Center Configuration Manager](https://docs.microsoft.com/sccm/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
+You can manage the distribution of updates through Windows Server Update Service (WSUS), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
 
 ## In this section
 
