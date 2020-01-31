@@ -25,23 +25,25 @@ ms.date: 12/11/2018
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 - System Center 2012 Configuration Manager or later versions
+- Microsoft Endpoint Configuration Manager
 
 
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 <span id="sccm1606"/>
-## Onboard Windows 10 machines using Microsoft Endpoint Configuration Manager (current branch) version 1606
-Microsoft Endpoint Configuration Manager (current branch) version 1606, has UI integrated support for configuring and managing Microsoft Defender ATP on machines. For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=823682" data-raw-source="[Support for Microsoft Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682)">Support for Microsoft Defender Advanced Threat Protection service</a>.
+
+## Onboard Windows 10 machines using Microsoft Endpoint Configuration Manager
+Microsoft Endpoint Configuration Manager has UI integrated support for configuring and managing Microsoft Defender ATP on machines. For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=823682" data-raw-source="[Support for Microsoft Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682)">Support for Microsoft Defender Advanced Threat Protection service</a>.
 
 >[!NOTE]
-> If you’re using SCCM client version 1606 with server version 1610 or above, you must upgrade the client version to match the server version.
+> If you’re using Configuration Manager client version 1606 with server version 1610 or above, you must upgrade the client version to match the server version.
 > Starting with version 1606 of Configuration Manager, see [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/sccm/protect/deploy-use/windows-defender-advanced-threat-protection) for ATP configuration.
 
-
 <span id="sccm1602"/>
-## Onboard Windows 10 machines using Microsoft Endpoint Configuration Manager earlier versions
-You can use existing Microsoft Endpoint Configuration Manager functionality to create a policy to configure your machines. This is supported in the following Configuration Manager versions:
+
+## Onboard Windows 10 machines using Configuration Manager earlier versions
+You can use existing Configuration Manager functionality to create a policy to configure your machines. This is supported in the following Configuration Manager versions:
 
 - System Center 2012 Configuration Manager
 - System Center 2012 R2 Configuration Manager
@@ -57,7 +59,7 @@ You can use existing Microsoft Endpoint Configuration Manager functionality to c
     
     b. Select Windows 10 as the operating system.
 
-    c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
+    c. In the **Deployment method** field, select **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
     
     d. Click **Download package**, and save the .zip file.
 

@@ -1,6 +1,11 @@
 ---
 title: Audit Token Right Adjusted (Windows 10)
 description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Token Right Adjusted, which determines whether the operating system generates audit events when specific changes are made to the privileges of a token.
+manager: dansimp
+author: dansimp
+ms.author: dansimp
+ms.pagetype: security
+ms.prod: w10
 ---
 
 # Audit Token Right Adjusted
