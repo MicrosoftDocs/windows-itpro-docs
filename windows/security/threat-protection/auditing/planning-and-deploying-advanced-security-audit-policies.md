@@ -198,13 +198,14 @@ By using Group Policy, you can apply your security audit policy to defined group
     For example, you could configure a SACL for a folder called *Payroll Data* on Accounting Server 1. You can audit attempts by members of the Payroll Processors OU to delete objects from this folder. The **Object Access\\Audit File System** audit policy setting applies to Accounting Server 1. But, because it requires a corresponding resource SACL, only actions by members of the Payroll Processors OU on the Payroll Data folder will generate audit events.
 
 -   Advanced security audit policy settings were introduced in Windows Server 2008 R2 and Windows 7. These advanced audit policies can only be applied to those operating systems and later versions by using Group Policy.
-- 
+
+
 
 > [!IMPORTANT]  
 > Whether you apply advanced audit policies by using Group Policy or logon scripts, don't use both the basic audit policy settings under **Local Policies\\Audit Policy** *and* the advanced settings under **Security Settings\\Advanced Audit Policy Configuration**. Using both basic and advanced audit policy settings can cause unexpected results in audit reporting.
 
 
-   If you use **Advanced Audit Policy Configuration** settings or logon scripts to apply advanced audit policies, be sure to enable the **Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings** policy setting under **Local Policies\\Security Options**. This configuration will prevent conflicts between similar settings by forcing basic security auditing to be ignored.
+If you use **Advanced Audit Policy Configuration** settings or logon scripts to apply advanced audit policies, be sure to enable the **Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings** policy setting under **Local Policies\\Security Options**. This configuration will prevent conflicts between similar settings by forcing basic security auditing to be ignored.
      
 
 The following examples show how you can apply audit policies to an organization's OU structure:
