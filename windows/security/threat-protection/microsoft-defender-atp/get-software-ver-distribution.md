@@ -24,10 +24,10 @@ ms.topic: article
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieves a list of your organization's software version distribution 
+Retrieves a list of your organization's software version distribution. 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
 
 Permission type |   Permission  |   Permission display name
 :---|:---|:---
@@ -80,7 +80,11 @@ Here is an example of the response.
             "version": "11.0.18363.535",
             "installations": 750,
             "vulnerabilities": 0
-        },
-…
+        }
+        ]
 }
+```
 
+## Related topics
+- [Risk-based Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Threat & Vulnerability software inventory](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-software-inventory)
