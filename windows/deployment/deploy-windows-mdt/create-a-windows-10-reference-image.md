@@ -26,12 +26,14 @@ Creating a reference image is important because that image serves as the foundat
 >[!NOTE]
 >See [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md) for more information about the server, client, and network infrastructure used in this guide.
 
-For the purposes of this topic, we will use three computers: DC01, MDT01, and PC0001.
+For the purposes of this topic, we will use three computers: DC01, MDT01, and HV01.
    - DC01 is a domain controller for the contoso.com domain.
    - MDT01 is a contoso.com domain member server.
-   - PC0001 is a Windows 10 Enterprise x64 client and also a contoso.com domain member.
+   - HV01 is a Hyper-V server that will be used to build the reference image.
  
    ![devices](../images/mdt-08-fig01.png)
+
+   Computers used in this topic.
 
 ## The reference image
 

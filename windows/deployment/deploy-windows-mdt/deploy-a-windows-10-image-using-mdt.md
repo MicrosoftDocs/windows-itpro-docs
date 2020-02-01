@@ -25,7 +25,7 @@ This topic will show you how to take your reference image for Windows 10 (that 
 
 We will prepare for this by creating an MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. We will configure Active Directory permissions, configure the deployment share, create a new task sequence, and add applications, drivers, and rules.
 
-For the purposes of this topic, we will use three machines: DC01, MDT01, and PC0005. DC01 is a domain controller, MDT01 is a Windows Server 2019 domain member server, and PC0005 is a blank device to which we will deploy Windows 10. MDT01 and PC0005 are members of the domain contoso.com for the fictitious Contoso Corporation.
+For the purposes of this topic, we will use four computers: DC01, MDT01, HV01 and PC0005. DC01 is a domain controller, MDT01 is a Windows Server 2019 domain member server, HV01 is a Hyper-V server, and PC0005 is a blank device to which we will deploy Windows 10. MDT01 and PC0005 are members of the domain contoso.com for the fictitious Contoso Corporation.  HV01 used to test deployment of PC0005 in a virtual environment.
 
    ![devices](../images/mdt-07-fig01.png)
 
