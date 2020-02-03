@@ -1,7 +1,7 @@
 ---
-title: Onboard Windows 10 machines using System Center Configuration Manager
-description: Use System Center Configuration Manager to deploy the configuration package on machines so that they are onboarded to the service.
-keywords: onboard machines using sccm, machine management, configure Windows ATP machines, configure Microsoft Defender Advanced Threat Protection machines, sccm
+title: Onboard Windows 10 machines using Configuration Manager
+description: Use Microsoft Endpoint Configuration Manager to deploy the configuration package on machines so that they are onboarded to the service.
+keywords: onboard machines using sccm, machine management, configure Windows ATP machines, configure Microsoft Defender Advanced Threat Protection machines, sccm, memcm, mecm, ConfigMgr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -18,46 +18,48 @@ ms.topic: article
 ms.date: 12/11/2018
 ---
 
-# Onboard Windows 10 machines using System Center Configuration Manager
+# Onboard Windows 10 machines using Microsoft Endpoint Configuration Manager
 
 **Applies to:**
 
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-- System Center 2012 Configuration Manager or later versions
+- System Center 2012 Configuration Manager
+- Microsoft Endpoint Configuration Manager
 
 
 
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 <span id="sccm1606"/>
-## Onboard Windows 10 machines using System Center Configuration Manager (current branch) version 1606
-System Center Configuration Manager (SCCM) (current branch) version 1606, has UI integrated support for configuring and managing Microsoft Defender ATP on machines. For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=823682" data-raw-source="[Support for Microsoft Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682)">Support for Microsoft Defender Advanced Threat Protection service</a>.
+## Onboard Windows 10 machines using Microsoft Endpoint Configuration Manager version 1606 and later
+
+Microsoft Endpoint Configuration Manager (ConfigMgr) version 1606 has UI integrated support for configuring and managing Microsoft Defender ATP on machines. For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=823682" data-raw-source="[Support for Microsoft Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682)">Support for Microsoft Defender Advanced Threat Protection service</a>.
 
 >[!NOTE]
-> If you’re using SCCM client version 1606 with server version 1610 or above, you must upgrade the client version to match the server version.
-> Starting with version 1606 of Configuration Manager, see [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/sccm/protect/deploy-use/windows-defender-advanced-threat-protection) for ATP configuration.
+> If you're using ConfigMgr client version 1606 with server version 1610 or above, you must upgrade the client version to match the server version.
+> Starting with version 1606 of Configuration Manager, see [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection) for ATP configuration.
 
 
 <span id="sccm1602"/>
-## Onboard Windows 10 machines using System Center Configuration Manager earlier versions
-You can use existing System Center Configuration Manager functionality to create a policy to configure your machines. This is supported in the following System Center Configuration Manager versions:
+## Onboard Windows 10 machines using Configuration Manager earlier versions
+You can use existing Configuration Manager functionality to create a policy to configure your machines. This is supported in the following Configuration Manager versions:
 
 - System Center 2012 Configuration Manager
 - System Center 2012 R2 Configuration Manager
 - System Center Configuration Manager (current branch), version 1511
 - System Center Configuration Manager (current branch), version 1602
 
-### Onboard machines using System Center Configuration Manager
+### Onboard machines using Configuration Manager
 
 
-1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Open the ConfigMgr configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
     a. In the navigation pane, select **Settings** > **Onboarding**.
     
     b. Select Windows 10 as the operating system.
 
-    c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
+    c. In the **Deployment method** field, select **Configuration Manager 2012/2012 R2/1511/1602**.
     
     d. Click **Download package**, and save the .zip file.
 
@@ -94,11 +96,11 @@ Possible values are:
 
 The default value in case the registry key doesn’t exist is 1.
 
-For more information about System Center Configuration Manager Compliance see [Get started with compliance settings in System Center Configuration Manager](https://docs.microsoft.com/sccm/compliance/get-started/get-started-with-compliance-settings).
+For more information about Configuration Manager Compliance see [Get started with compliance settings in Configuration Manager](https://docs.microsoft.com/configmgr/compliance/get-started/get-started-with-compliance-settings).
 
 
 
-## Offboard machines using System Center Configuration Manager
+## Offboard machines using Configuration Manager
 
 For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an machine will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
@@ -111,13 +113,13 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 
     b. Select Windows 10 as the operating system.
 
-    c. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
+    c. In the **Deployment method** field, select **Configuration Manager 2012/2012 R2/1511/1602**.
     
     d. Click **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Deploy the package by following the steps in the [Packages and Programs in Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/packages-and-programs) topic.
+3. Deploy the package by following the steps in the [Packages and Programs in Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/packages-and-programs) topic.
 
     a. Choose a predefined device collection to deploy the package to.
 
@@ -126,7 +128,7 @@ For security reasons, the package used to Offboard machines will expire 30 days 
 
 
 ### Monitor machine configuration
-Monitoring with SCCM consists of two parts:
+Monitoring with ConfigMgr consists of two parts:
 
 1. Confirming the configuration package has been correctly deployed and is running (or has successfully run) on the machines in your network.
 
@@ -134,7 +136,7 @@ Monitoring with SCCM consists of two parts:
 
 **To confirm the configuration package has been correctly deployed:**
 
-1. In the SCCM console, click **Monitoring** at the bottom of the navigation pane.
+1. In the ConfigMgr console, click **Monitoring** at the bottom of the navigation pane.
 
 2. Click **Overview** and then **Deployments**.
 
@@ -144,7 +146,7 @@ Monitoring with SCCM consists of two parts:
 
 If there are failed deployments (machines with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the machines. For more information see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md).
 
-![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
+![ConfigMgr showing successful deployment with no errors](images/sccm-deployment.png)
 
 **Check that the machines are compliant with the Microsoft Defender ATP service:**<br>
 You can set a compliance rule for configuration item in System Center Configuration Manager to monitor your deployment.
@@ -157,7 +159,7 @@ Path: “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status”
 Name: “OnboardingState”
 Value: “1”
 ```
-For more information about System Center Configuration Manager Compliance see [Get started with compliance settings in System Center Configuration Manager](https://docs.microsoft.com/sccm/compliance/get-started/get-started-with-compliance-settings).
+For more information about Configuration Manager Compliance see [Get started with compliance settings in Configuration Manager](https://docs.microsoft.com/sccm/compliance/get-started/get-started-with-compliance-settings).
 
 ## Related topics
 - [Onboard Windows 10 machines using Group Policy](configure-endpoints-gp.md)
