@@ -72,11 +72,11 @@ description: Windows 10 deployment resources and documentation for admins & IT p
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Manage security &amp; compliance</h3>
-                                                <P><a href="https://docs.microsoft.com/microsoft-365/compliance/compliance-solutions-overview" target="_blank">Compliance solutions</a></p>
-                                                <P><a href="https://docs.microsoft.com/Office365/SecurityCompliance/" target="_blank">Office 365 Security &amp; Compliance</a></p>
-                                                <P><a href="microsoft-365-policies-configurations.md" target="_blank">Identity &amp; device access</a></p>
-                                                <P><a href="https://docs.microsoft.com/windows/security/threat-protection/index" target="_blank">Windows Defender ATP</a></p>
+                                                <h3>Manage Windows 10 updates</h3>
+                                                <P><a href="https://docs.microsoft.com/en-us/windows/deployment/update/windows-as-a-service" target="_blank">Windows as a service</a></p>
+                                                <P><a href="https://docs.microsoft.com/en-us/windows/deployment/update/waas-servicing-strategy-windows-10-updates" target="_blank">Prepare a servicing strategy</a></p>
+                                                <P><a href="https://docs.microsoft.com/en-us/windows/deployment/update/waas-optimize-windows-10-updates" target="_blank">Optimize Windows 10 update delivery</a></p>
+                                                <P><a href="https://docs.microsoft.com/en-us/windows/deployment/update/update-compliance-monitor" target="_blank">Monitor Windows Updates</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -92,7 +92,7 @@ description: Windows 10 deployment resources and documentation for admins & IT p
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Train your admins & users</h3>
+                                                <h3>Windows 10 and Microsoft 365</h3>
                                                 <P><a href="https://docs.microsoft.com/learn/browse/?products=m365" target="_blank">Microsoft 365</a></p>
                                                 <P><a href="https://support.office.com/office-training-center" target="_blank">Office 365</a></p>
                                                 <P><a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness" target="_blank">Windows 10</a></p>
@@ -112,7 +112,7 @@ description: Windows 10 deployment resources and documentation for admins & IT p
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Manage Office 365</h3>
+                                                <h3>Microsoft Modern Desktop</h3>
                                                 <P><a href="https://docs.microsoft.com/office365/enterprise/" target="_blank">Office 365 Enterprise</a></p>
                                                 <P><a href="https://support.office.com/office365admin" target="_blank">Office 365 Business</a></p>
                                                 <P><a href="https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus" target="_blank">Office 365 ProPlus</a></p>
@@ -131,7 +131,7 @@ description: Windows 10 deployment resources and documentation for admins & IT p
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Manage Enterprise Mobility + Security</h3>
+                                                <h3>Reference documentation</h3>
                                                 <P><a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security" target="_blank">Microsoft Cloud App Security</a></p>
                                                 <P><a href="https://docs.microsoft.com/intune/index" target="_blank">Microsoft Intune</a></p>                              <P><a href="https://docs.microsoft.com/azure/active-directory" target="_blank">Azure Active Directory</a></p>
                                                 <P><a href="https://docs.microsoft.com/azure/information-protection/" target="_blank">Azure Information Protection</a></p>
@@ -155,10 +155,10 @@ description: Windows 10 deployment resources and documentation for admins & IT p
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>Develop for Microsoft 365</h3>
-                                                        <P><a href="https://developer.microsoft.com/office" target="_blank">Office 365 Dev Center</a></p>
-                                                        <P><a href="https://developer.microsoft.com/windows/enterprise" target="_blank">Windows Dev Center</a></p>
-                                                        <P><a href="https://developer.microsoft.com/graph" target="_blank">Microsoft Graph</a></p>
+                                                        <h3>Microsoft Surface</h3>
+                                                        <P><a href="https://docs.microsoft.com/en-us/surface/" target="_blank">Surface devices</a></p>
+                                                        <P><a href="https://docs.microsoft.com/en-us/surface-hub/index" target="_blank">Surface Hub</a></p>
+                                                        <P><a href="https://www.microsoft.com/en-us/surface/business" target="_blank">Surface for Business</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -174,7 +174,8 @@ description: Windows 10 deployment resources and documentation for admins & IT p
                                                         </div>
                                                     </div>
                                                     <div class="cardText">
-                                                        <h3>Other Microsoft 365 products</h3>
+                                                        <h3>Microsoft 365 products</h3>
+                                                        <P><a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/" target="_blank">Microsoft 365 Enterprise</a></p>
                                                         <P><a href="https://docs.microsoft.com/microsoft-365/business/" target="_blank">Microsoft 365 Business</a></p>
                                                         <P><a href="https://docs.microsoft.com/education/" target="_blank">Microsoft 365 Education</a></p>
                                                     </div>
