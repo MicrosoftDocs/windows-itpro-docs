@@ -17,6 +17,8 @@ appliesto:
 - HoloLens 2
 ---
 
+# Manage connection endpoints for HoloLens 
+
 Some HoloLens components, apps, and related services transfer data to Microsoft network endpoints. This article lists different endpoints and URLs that need to be whitelisted in your network configuratiion (e.g. proxy or firewall) for those components to be functional.    
 
 ## Near-offline setup
@@ -59,7 +61,7 @@ In addition to the list above, to take full advantage of HoloLens functionality,
 | Certificates                                        | activation-v2.sls.microsoft.com/*                                   |   |   |   |
 |                                                     | crl.microsoft.com/pki/crl/*                                         |   |   |   |
 |                                                     | ocsp.digicert.com/*                                                 |   |   |   |
-|                                                     | www.microsoft.com/pkiops/*                                          |   |   |   |
+|                                                     | https://www.microsoft.com/pkiops/*                                          |   |   |   |
 | Cortana and Search                                  | store-images.*microsoft.com                                         |   |   |   |
 |                                                     | www.bing.com/client                                                 |   |   |   |
 |                                                     | www.bing.com                                                        |   |   |   |
@@ -76,7 +78,7 @@ In addition to the list above, to take full advantage of HoloLens functionality,
 |                                                     | location-inference-westus.cloudapp.net                              |   |   |   |
 | Diagnostic Data                                     | v10.events.data.microsoft.com                                       |   |   |   |
 |                                                     | v10.vortex-win.data.microsoft.com/collect/v1                        |   |   |   |
-|                                                     | www.microsoft.com                                                   |   |   |   |
+|                                                     | https://www.microsoft.com                                                   |   |   |   |
 |                                                     | co4.telecommand.telemetry.microsoft.com                             |   |   |   |
 |                                                     | cs11.wpc.v0cdn.net                                                  |   |   |   |
 |                                                     | cs1137.wpc.gammacdn.net                                             |   |   |   |
@@ -106,7 +108,7 @@ In addition to the list above, to take full advantage of HoloLens functionality,
 |                                                     | officeclient.microsoft.com                                          |   |   |   |
 |                                                     | outlook.office365.com                                               |   |   |   |
 |                                                     | client-office365-tas.msedge.net                                     |   |   |   |
-|                                                     | www.office.com                                                      |   |   |   |
+|                                                     | https://www.office.com                                                      |   |   |   |
 |                                                     | onecollector.cloudapp.aria                                          |   |   |   |
 |                                                     | v10.events.data.microsoft.com/onecollector/1.0/                     |   |   |   |
 |                                                     | self.events.data.microsoft.com                                      |   |   |   |
