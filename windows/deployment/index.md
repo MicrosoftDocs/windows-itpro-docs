@@ -196,7 +196,7 @@ description: Windows 10 deployment resources and documentation for admins & IT p
                                                         <h3>Need support?</h3>
                                                         <P><a href="https://azure.microsoft.com/support/options/" target="_blank">Azure</a></p>
                                                         <P><a href="https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b" target="_blank">Office 365</a></p>
-                                                        <P><a href="http://support.microsoft.com/products/windows" target="_blank">Windows 10</a></p>
+                                                        <P><a href="https://support.microsoft.com/products/windows" target="_blank">Windows 10</a></p>
                                                     </div>
                                                 </div>
                                             </div>
