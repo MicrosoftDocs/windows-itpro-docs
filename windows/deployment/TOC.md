@@ -2,9 +2,14 @@
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows as a service](update/windows-as-a-service.md)
 
-## Get started
+## Explore
+### [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 ### [Deployment process posters](windows-10-deployment-posters.md)
 ### [Deploy Windows 10 with Microsoft 365](deploy-m365.md)
+### Windows 10 deployment lab
+#### [Windows 10 deployment test lab](windows-10-poc.md)
+#### [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
+#### [Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager](windows-10-poc-sc-config-mgr.md)
 
 ## Plan for deployment
 ### [Windows 10 Enterprise FAQ for IT Pros](planning/windows-10-enterprise-faq-itpro.md)
@@ -14,6 +19,8 @@
 
 ## Deploy Windows 10
 ### [Windows Autopilot](windows-autopilot/windows-autopilot.md)
+### [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
+### [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
 ### Subscription Activation
 #### [Windows 10 Subscription Activation](windows-10-subscription-activation.md)
 #### [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md)
@@ -37,6 +44,9 @@
 #### [Log files](upgrade/log-files.md)
 #### [Resolution procedures](upgrade/resolution-procedures.md)
 #### [Submit Windows 10 upgrade errors](upgrade/submit-errors.md)
+
+### [Windows 10 in S mode](s-mode.md)
+#### [Switch to Windows 10 Pro/Enterprise from S mode](windows-10-pro-in-s-mode.md)
 
 #### [Volume Activation [client]](volume-activation/volume-activation-windows-10.md)
 ##### [Plan for volume activation [client]](volume-activation/plan-for-volume-activation-client.md)
