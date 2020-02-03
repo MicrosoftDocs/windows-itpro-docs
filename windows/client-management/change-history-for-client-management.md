@@ -19,7 +19,7 @@ ms.topic: article
 
 This topic lists new and updated topics in the [Client management](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
-## January 2020
+## February 2020
 
 New or changed topic | Description
 --- | ---
