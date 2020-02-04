@@ -28,9 +28,9 @@ This new capability provides expert-driven insights and data through targeted at
 
 
 ## Before you begin 
-Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive targeted attack notifications and to collaborate with experts on demand. Experts on Demand is an add-on service. A Microsoft Threat Experts subscription is a prerequisite for experts on demand collaboration.
+Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand is an add-on service. Your Microsoft Threat Experts subscription already includes Targeted Attack Notifications.
 
-If you are not enrolled yet and would like to experience its benefits, go to **Settings** > **General** > **Advanced features** > **Microsoft Threat Experts** to apply for a 90-day trial. Contact your Microsoft representative to get a full Experts on Demand subscription. See [Configure Microsoft Threat Experts capabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts#before-you-begin) for details. 
+If you are not enrolled yet and would like to experience its benefits, go to **Settings** > **General** > **Advanced features** > **Microsoft Threat Experts** to apply. Once accepted, you will get the benefits of Targeted Attack Notifications, and start a  90-day trial of Experts on Demand. Contact your Microsoft representative to get a full Experts on Demand subscription. See [Configure Microsoft Threat Experts capabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts#before-you-begin) for details. 
 
 ## Targeted attack notification 
 Microsoft Threat Experts provides proactive hunting for the most important threats to your network, including human adversary intrusions, hands-on-keyboard attacks, or advanced attacks like cyberespionage. The managed hunting service includes:  
