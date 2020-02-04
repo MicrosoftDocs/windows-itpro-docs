@@ -41,7 +41,10 @@ The Security Compliance Toolkit consists of:
     -   Windows Server 2012 R2
 
 -   Microsoft Office security baseline
-    -   Office365 ProPlus (Sept 2019)
+    -   Office 365 ProPlus (Sept 2019)
+
+-   Microsoft Edge security baseline
+    -   Version 79
 
 -   Tools
     -   Policy Analyzer tool

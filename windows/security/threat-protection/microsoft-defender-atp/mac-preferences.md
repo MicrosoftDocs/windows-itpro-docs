@@ -80,6 +80,18 @@ Specify whether the antivirus engine runs in passive mode. Passive mode has the 
 | **Possible values** | false (default) <br/> true |
 | **Comments** | Available in Microsoft Defender ATP version 100.67.60 or higher. |
 
+#### Exclusion merge policy
+
+Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | exclusionsMergePolicy |
+| **Data type** | String |
+| **Possible values** | merge (default) <br/> admin_only |
+| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
+
 #### Scan exclusions
 
 Specify entities excluded from being scanned. Exclusions can be specified by full paths, extensions, or file names.
@@ -160,6 +172,18 @@ Specify threats by name that are not blocked by Microsoft Defender ATP for Mac. 
 | **Key** | allowedThreats |
 | **Data type** | Array of strings |
 
+#### Disallowed threat actions
+
+Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | disallowedThreatActions |
+| **Data type** | Array of strings |
+| **Possible values** | allow (restricts users from allowing threats) <br/> restore (restricts users from restoring threats from the quarantine) |
+| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
+
 #### Threat type settings
 
 Specify how certain threat types are handled by Microsoft Defender ATP for Mac.
@@ -196,6 +220,18 @@ Specify what action to take when a threat of the type specified in the preceding
 | **Key** | value |
 | **Data type** | String |
 | **Possible values** | audit (default) <br/> block <br/> off |
+
+#### Threat type settings merge policy
+
+Specify the merge policy for threat type settings. This can be a combination of administrator-defined and user-defined settings (`merge`) or only administrator-defined settings (`admin_only`). This setting can be used to restrict local users from defining their own settings for different threat types.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | threatTypeSettingsMergePolicy |
+| **Data type** | String |
+| **Possible values** | merge (default) <br/> admin_only |
+| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
 
 ### Cloud-delivered protection preferences
 
@@ -483,9 +519,16 @@ The following configuration profile contains entries for all settings described 
                 <string>pdf</string>
             </dict>
         </array>
+        <key>exclusionsMergePolicy</key>
+        <string>merge</string>
         <key>allowedThreats</key>
         <array>
             <string>EICAR-Test-File (not a virus)</string>
+        </array>
+        <key>disallowedThreatActions</key>
+        <array>
+            <string>allow</string>
+            <string>restore</string>
         </array>
         <key>threatTypeSettings</key>
         <array>
@@ -502,6 +545,8 @@ The following configuration profile contains entries for all settings described 
                 <string>audit</string>
             </dict>
         </array>
+        <key>threatTypeSettingsMergePolicy</key>
+        <string>merge</string>
     </dict>
     <key>cloudService</key>
     <dict>
@@ -594,9 +639,16 @@ The following configuration profile contains entries for all settings described 
                             <string>pdf</string>
                         </dict>
                     </array>
+                    <key>exclusionsMergePolicy</key>
+                    <string>merge</string>
                     <key>allowedThreats</key>
                     <array>
                         <string>EICAR-Test-File (not a virus)</string>
+                    </array>
+                    <key>disallowedThreatActions</key>
+                    <array>
+                        <string>allow</string>
+                        <string>restore</string>
                     </array>
                     <key>threatTypeSettings</key>
                     <array>
@@ -613,6 +665,8 @@ The following configuration profile contains entries for all settings described 
                             <string>audit</string>
                         </dict>
                     </array>
+                    <key>threatTypeSettingsMergePolicy</key>
+                    <string>merge</string>
                 </dict>
                 <key>cloudService</key>
                 <dict>

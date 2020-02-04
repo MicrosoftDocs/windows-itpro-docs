@@ -121,7 +121,7 @@ Here's what you see in the Windows Security app:
 
 If you are using Windows OS [1709](https://docs.microsoft.com/windows/release-information/status-windows-10-1709), [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1803), or [1809](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. In this case, you can use PowerShell to determine whether tamper protection is enabled.
 
-#### Use PowerShell to determine whether tamper protection is turned
+#### Use PowerShell to determine whether tamper protection is turned on
 
 1. Open the Windows PowerShell app.
 
@@ -193,15 +193,16 @@ Value DisableRealtimeMonitoring = 0
 
 Configuring tamper protection in Intune can be targeted to your entire organization as well as to specific devices and user groups.
 
-### Can I configure tamper protection in System Center Configuration Manager?
 
-Currently, managing tamper protection through System Center Configuration Manager is not supported.
+### Can I configure Tamper Protection in Microsoft Endpoint Configuration Manager?
+
+Currently we do not have support to manage Tamper Protection through Microsoft Endpoint Configuration Manager.
 
 ### I have the Windows E3 enrollment. Can I use configuring tamper protection in Intune?
 
 Currently, configuring tamper protection in Intune is only available for customers who have [Microsoft Defender Advanced Threat Protection E5](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp).
 
-### What happens if I try to change Microsoft Defender ATP settings in Intune, System Center Configuration Manager, and Windows Management Instrumentation when tamper protection is enabled on a device?
+### What happens if I try to change Microsoft Defender ATP settings in Intune, Microsoft Endpoint Configuration Manager, and Windows Management Instrumentation when Tamper Protection is enabled on a device?
 
 You won’t be able to change the features that are protected by tamper protection; such change requests are ignored.
 
