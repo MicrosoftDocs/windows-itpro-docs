@@ -2,12 +2,14 @@
 title: Planning GPO Deployment (Windows 10)
 description: Planning GPO Deployment
 ms.assetid: b38adfb1-1371-4227-a887-e6d118809de1
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

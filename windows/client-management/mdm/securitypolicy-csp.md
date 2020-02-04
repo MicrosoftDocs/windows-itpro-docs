@@ -2,11 +2,13 @@
 title: SecurityPolicy CSP
 description: SecurityPolicy CSP
 ms.assetid: 6014f8fe-f91b-49f3-a357-bdf625545bc9
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -197,7 +199,7 @@ The following security roles are supported.
 
 Setting a security policy:
 
-``` syntax
+```xml
 <wap-provisioningdoc>
     <characteristic type="SecurityPolicy">
         <parm name="4141" value="0"/>
@@ -207,7 +209,7 @@ Setting a security policy:
 
 Querying a security policy:
 
-``` syntax
+```xml
 <wap-provisioningdoc>
     <characteristic type="SecurityPolicy">
         <parm-query name="4141"/>
@@ -220,7 +222,7 @@ Querying a security policy:
 
 Setting a security policy:
 
-``` syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
     <SyncHdr>
     …
@@ -243,7 +245,7 @@ Setting a security policy:
 
 Querying a security policy:
 
-``` syntax
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
     <SyncHdr>
     …

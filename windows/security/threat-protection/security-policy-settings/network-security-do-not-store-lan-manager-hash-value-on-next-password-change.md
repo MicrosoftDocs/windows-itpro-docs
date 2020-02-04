@@ -1,13 +1,15 @@
 ---
 title: Network security Do not store LAN Manager hash value on next password change (Windows 10)
-description: Describes the best practices, location, values, policy management and security considerations for the Network security Do not store LAN Manager hash value on next password change security policy setting.
+description: Best practices, security considerations, and more for the security policy setting, Network security Do not store LAN Manager hash value on next password change.
 ms.assetid: 6452b268-e5ba-4889-9d38-db28f919af51
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -36,8 +38,8 @@ By attacking the SAM file, attackers can potentially gain access to user names a
 
 ### Best practices
 
-1.  Set **Network security: Do not store LAN Manager hash value on next password change** to **Enabled**.
-2.  Require all users to set new passwords the next time they log on to the domain so that LAN Manager hashes are removed.
+ - Set **Network security: Do not store LAN Manager hash value on next password change** to **Enabled**.
+ - Require all users to set new passwords the next time they log on to the domain so that LAN Manager hashes are removed.
 
 ### Location
 
@@ -55,7 +57,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings|Enabled| 
 | Client Computer Effective Default Settings | Enabled| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

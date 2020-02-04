@@ -1,14 +1,17 @@
 ---
 title: Windows 10 infrastructure requirements (Windows 10)
-description: There are specific infrastructure requirements to deploy and manage Windows 10 that should be in place prior to significant Windows 10 deployments within your organization.
+description: Review the specific infrastructure requirements to deploy and manage Windows 10,  prior to significant Windows 10 deployments within your organization.
 ms.assetid: B0FA27D9-A206-4E35-9AE6-74E70748BE64
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deploy, upgrade, update, hardware
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: medium
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/27/2017
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -46,7 +49,8 @@ For System Center Configuration Manager, Windows 10 support is offered with var
 | System Center Configuration Manager 2012 R2 | Yes, with SP1 and CU1  | Yes, with SP1, CU1, and the ADK for Windows 10 |
 
 
->Note: Configuration Manager 2012 supports Windows 10 version 1507 (build 10.0.10240) and 1511 (build 10.0.10586) for the lifecycle of these builds. Future releases of Windows 10 CB/CBB are not supported With Configuration Manager 2012, and will require System Center Configuration Manager current branch for supported management. 
+> [!NOTE]
+> Configuration Manager 2012 supports Windows 10 version 1507 (build 10.0.10240) and 1511 (build 10.0.10586) for the lifecycle of these builds. Future releases of Windows 10 CB/CBB are not supported With Configuration Manager 2012, and will require Microsoft Endpoint Configuration Manager current branch for supported management. 
  
 
 For more details about System Center Configuration Manager support for Windows 10, see [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](../deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md).
@@ -54,7 +58,7 @@ For more details about System Center Configuration Manager support for Windows 
 ## Management tools
 
 
-In addition to System Center Configuration Manager, Windows 10 also leverages other tools for management. For Windows Server and Active Directory, existing supported versions are fully supported for Windows 10. New Group Policy templates will be needed to configure new settings available in Windows 10; these templates are available in the Windows 10 media images, and are available as a separate download [here](https://go.microsoft.com/fwlink/p/?LinkId=625081). See [Group Policy settings reference](https://go.microsoft.com/fwlink/p/?LinkId=625082) for a list of the new and modified policy settings. If you are using a central policy store, follow the steps outlined [here](https://go.microsoft.com/fwlink/p/?LinkId=625083) to update the ADMX files stored in that central store.
+In addition to Microsoft Endpoint Configuration Manager, Windows 10 also leverages other tools for management. For Windows Server and Active Directory, existing supported versions are fully supported for Windows 10. New Group Policy templates will be needed to configure new settings available in Windows 10; these templates are available in the Windows 10 media images, and are available as a separate download [here](https://go.microsoft.com/fwlink/p/?LinkId=625081). See [Group Policy settings reference](https://go.microsoft.com/fwlink/p/?LinkId=625082) for a list of the new and modified policy settings. If you are using a central policy store, follow the steps outlined [here](https://go.microsoft.com/fwlink/p/?LinkId=625083) to update the ADMX files stored in that central store.
 
 No new Active Directory schema updates or specific functional levels are currently required for core Windows 10 product functionality, although subsequent upgrades could require these to support new features.
 

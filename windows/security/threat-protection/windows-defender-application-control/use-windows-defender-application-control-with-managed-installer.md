@@ -1,32 +1,40 @@
 ---
-title: Deploy Managed Installer for Windows Defender Device Guard (Windows 10)
-description: Explains how you can use a managed installer to automatically authorize applications deployed and installed by a designated software distribution solution, such as System Center Configuration Manager. 
-keywords: virtualization, security, malware
+title: Authorize apps deployed with a WDAC managed installer (Windows 10)
+description: Explains how you can use a managed installer to automatically authorize applications deployed and installed by a designated software distribution solution, such as Microsoft Endpoint Configuration Manager. 
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 ms.localizationpriority: medium
-author: mdsakibMSFT
+audience: ITPro
+ms.collection: M365-security-compliance
+author: jsuther1974
+ms.reviewer: isbrahm
+ms.author: dansimp
+manager: dansimp
 ms.date: 06/13/2018
 ---
 
-# Deploy Managed Installer for Windows Defender Application Control
+# Authorize apps deployed with a WDAC managed installer
 
 **Applies to:**
 
 -   Windows 10
--   Windows Server 2016
+-   Windows Server 2016 and above
 
 
 Creating and maintaining application execution control policies has always been challenging, and finding ways to address this issue has been a frequently-cited request for customers of AppLocker and Windows Defender Application Control (WDAC). 
 This is especially true for enterprises with large, ever changing software catalogs. 
 
-Windows 10, version 1703 (also known as the Windows 10 Creators Update) provides a new option, known as a managed installer, that allows IT administrators to automatically authorize applications deployed and installed by a designated software distribution solution, such as System Center Configuration Manager. 
+Windows 10, version 1703 (also known as the Windows 10 Creators Update) provides a new option, known as a managed installer, that allows IT administrators to automatically authorize applications deployed and installed by a designated software distribution solution, such as Microsoft Endpoint Configuration Manager. 
 A managed installer helps an IT admin balance security and manageability requirements when employing application execution control policies by providing an option that does not require specifying explicit rules for software that is being managed through a software distribution solution.
 
 ## How does a managed installer work?
 
 A managed installer uses a new rule collection in AppLocker to specify one or more executables that are trusted by the organization as an authorized source for application deployment. 
-Specifying an executable as a managed installer will cause Windows to tag files that are written from the executable’s process (or processes it launches) as having originated from a trusted installation authority.  
+Specifying an executable as a managed installer will cause Windows to tag files that are written from the executable’s process (or processes it launches) as having originated from a trusted installation authority. The Managed Installer rule collection is currently supported for AppLocker rules in Group Policy and in Configuration Manager, but not in the AppLocker CSP for OMA-URI policies.
 
 Once the IT administrator adds the Allow: Managed Installer option to a WDAC policy, the WDAC component will subsequently check for the presence of the origin information when evaluating other application execution control rules specified in the policy. 
 If there are no deny rules present for the file, it will be authorized based on the managed installer origin information.+
@@ -46,10 +54,11 @@ There are three primary steps to keep in mind:
 ### Specify managed installers using the Managed Installer rule collection in AppLocker policy
 
 The identity of the managed installer executable(s) is specified in an AppLocker policy in a Managed Installer rule collection. 
-Currently the AppLocker policy creation UI and cmdlets do not allow for directly specifying rules for the Managed Installer rule collection, however a text editor can be used to make the simple changes needed to an EXE or DLL rule collection policy to specify Type="ManagedInstaller". 
+Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerShell cmdlets allow for directly specifying rules for the Managed Installer rule collection. However, a text editor can be used to make the simple changes needed to an EXE or DLL rule collection policy to specify Type="ManagedInstaller", so that the new rule can be imported into a GPO.
 
 An example of a valid Managed Installer rule collection is shown below.
 For more information about creating an AppLocker policy that includes a managed installer and configuring client devices, see [Simplify application whitelisting with Configuration Manager and Windows 10](https://cloudblogs.microsoft.com/enterprisemobility/2016/06/20/configmgr-as-a-managed-installer-with-win10/).
+As mentioned above, the AppLocker CSP for OMA-URI policies does not currently support the Managed Installer rule collection or the Service Enforcement rule extensions mentioned below.
 
 
 ```code
@@ -150,7 +159,7 @@ Specify `-mionly` if you will not use the Intelligent Security Graph (ISG).
 ## Security considerations with managed installer
 
 Since managed installer is a heuristic-based mechanism, it does not provide the same security guarantees that explicit allow or deny rules do. 
-It is best suited for deployment to systems where each user is configured as a standard user and where all software is deployed and installed by a software distribution solution, such as System Center Configuration Manager. 
+It is best suited for deployment to systems where each user is configured as a standard user and where all software is deployed and installed by a software distribution solution, such as  Microsoft Endpoint Configuration Manager. 
 
 Users with administrator privileges or malware running as an administrator user on the system may be able to circumvent the intent of Windows Defender Application Control when the managed installer option is allowed. 
 If the authorized managed installer process performs installations in the context of a user with standard privileges, then it is possible that standard users or malware running as standard user may be able to circumvent the intent of Windows Defender Application Control. 

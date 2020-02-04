@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4741(S): A computer account was created.
@@ -81,7 +84,6 @@ This event generates only on domain controllers.
  <Data Name="ServicePrincipalNames">HOST/Win81.contoso.local RestrictedKrbHost/Win81.contoso.local HOST/WIN81 RestrictedKrbHost/WIN81</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** Active Directory domain controller.
@@ -228,27 +230,27 @@ So this UAC flags value decodes to: LOCKOUT and SCRIPT
 | DONT\_REQ\_PREAUTH                                                            | 0x400000                          | 4194304                       | This account does not require Kerberos pre-authentication for logging on.<br>Can be set using “Do not require Kerberos preauthentication” checkbox.                                                                                                                                                                                                                                                                                                                                              | 'Don't Require Preauth' - Disabled<br>'Don't Require Preauth' - Enabled                                   |
 | PASSWORD\_EXPIRED                                                             | 0x800000                          | 8388608                       | The user's password has expired.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Changes of this flag do not show in 4741 events.                                                                |
 | TRUSTED\_TO\_AUTH\_FOR\_DELEGATION                                            | 0x1000000                         | 16777216                      | The account is enabled for delegation. This is a security-sensitive setting. Accounts that have this option enabled should be tightly controlled. This setting lets a service that runs under the account assume a client's identity and authenticate as that user to other remote servers on the network.<br>If you enable Kerberos protocol transition delegation or disable this type of delegation in Delegation tab you will get this flag changed.                                         | 'Trusted To Authenticate For Delegation' - Disabled<br>'Trusted To Authenticate For Delegation' - Enabled |
-| PARTIAL\_SECRETS\_ACCOUNT                                                     | 0x04000000                        | 67108864                      | The account is a read-only domain controller (RODC). This is a security-sensitive setting. Removing this setting from an RODC compromises security on that server.                                                                                                                                                                                                                                                                                                                                     | No information.                                                                                                 |
+| PARTIAL\_SECRETS\_ACCOUNT                                                     | 0x04000000                        | 67108864                      | The account is a read-only domain controller (RODC). This is a security-sensitive setting. Removing this setting from an RODC compromises security on that server.                                                                                                                                                                                                                                                                                                                                     | No information.                                                                                                 |
 
 > <span id="_Ref433117054" class="anchor"></span>Table 7. User’s or Computer’s account UAC flags.
 
--   **User Parameters** \[Type = UnicodeString\]: if you change any setting using Active Directory Users and Computers management console in Dial-in tab of computer’s account properties, then you will see **&lt;value changed, but not displayed&gt;** in this field in “[4742](event-4742.md)(S): A computer account was changed.” This parameter might not be captured in the event, and in that case appears as “-”.
+- **User Parameters** \[Type = UnicodeString\]: if you change any setting using Active Directory Users and Computers management console in Dial-in tab of computer’s account properties, then you will see **&lt;value changed, but not displayed&gt;** in this field in “[4742](event-4742.md)(S): A computer account was changed.” This parameter might not be captured in the event, and in that case appears as “-”.
 
--   **SID History** \[Type = UnicodeString\]: contains previous SIDs used for the object if the object was moved from another domain. Whenever an object is moved from one domain to another, a new SID is created and becomes the objectSID. The previous SID is added to the **sIDHistory** property. This parameter contains the value of **sIDHistory** attribute of new computer object. This parameter might not be captured in the event, and in that case appears as “-”.
+- **SID History** \[Type = UnicodeString\]: contains previous SIDs used for the object if the object was moved from another domain. Whenever an object is moved from one domain to another, a new SID is created and becomes the objectSID. The previous SID is added to the **sIDHistory** property. This parameter contains the value of **sIDHistory** attribute of new computer object. This parameter might not be captured in the event, and in that case appears as “-”.
 
--   **Logon Hours** \[Type = UnicodeString\]: hours that the account is allowed to logon to the domain. The value of **logonHours** attribute of new computer object. For computer objects, it is optional, and typically is not set. You can change this attribute by using Active Directory Users and Computers, or through a script, for example. You will see **&lt;value not set&gt;** value for new created computer accounts in event 4741.
+- **Logon Hours** \[Type = UnicodeString\]: hours that the account is allowed to logon to the domain. The value of **logonHours** attribute of new computer object. For computer objects, it is optional, and typically is not set. You can change this attribute by using Active Directory Users and Computers, or through a script, for example. You will see **&lt;value not set&gt;** value for new created computer accounts in event 4741.
 
--   **DNS Host Name** \[Type = UnicodeString\]: name of computer account as registered in DNS. The value of **dNSHostName** attribute of new computer object. For manually created computer account objects this field has value “**-**“.
+- **DNS Host Name** \[Type = UnicodeString\]: name of computer account as registered in DNS. The value of **dNSHostName** attribute of new computer object. For manually created computer account objects this field has value “**-**“.
 
--   **Service Principal Names** \[Type = UnicodeString\]**:** The list of SPNs, registered for computer account. For new computer accounts it will typically contain HOST SPNs and RestrictedKrbHost SPNs. The value of **servicePrincipalName** attribute of new computer object. For manually created computer objects it is typically equals “**-**“. This is an example of **Service Principal Names** field for new domain joined workstation**:**
+- **Service Principal Names** \[Type = UnicodeString\]**:** The list of SPNs, registered for computer account. For new computer accounts it will typically contain HOST SPNs and RestrictedKrbHost SPNs. The value of **servicePrincipalName** attribute of new computer object. For manually created computer objects it is typically equals “**-**“. This is an example of **Service Principal Names** field for new domain joined workstation<strong>:</strong>
 
-    HOST/Win81.contoso.local
+  HOST/Win81.contoso.local
 
-    RestrictedKrbHost/Win81.contoso.local
+  RestrictedKrbHost/Win81.contoso.local
 
-    HOST/WIN81
+  HOST/WIN81
 
-    RestrictedKrbHost/WIN81
+  RestrictedKrbHost/WIN81
 
 **Additional Information:**
 

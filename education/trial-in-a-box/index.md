@@ -1,6 +1,6 @@
 ---
 title: Microsoft Education Trial in a Box
-description: For IT admins, educators, and students, discover what you can do with Microsoft 365 Education. Try it out with our Trial in a Box program. 
+description: For IT admins, educators, and students, discover what you can do with Microsoft 365 Education. Try it out with our Trial in a Box program.
 keywords: education, Microsoft 365 Education, trial, full cloud IT solution, school, deploy, setup, IT admin, educator, student, explore, Trial in a Box
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,8 +9,8 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.pagetype: edu
 ROBOTS: noindex,nofollow
-author: CelesteDG
-ms.author: celested
+author: dansimp
+ms.author: dansimp
 ms.date: 12/11/2017
 ---
 

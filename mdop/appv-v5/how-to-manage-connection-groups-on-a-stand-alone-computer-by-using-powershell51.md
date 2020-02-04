@@ -1,8 +1,11 @@
 ---
 title: How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell
 description: How to Manage Connection Groups on a Stand-alone Computer by Using PowerShell
-author: jamiejdt
+author: dansimp
 ms.assetid: e1589eff-d306-40fb-a0ae-727190dafe26
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -125,9 +128,11 @@ This topic explains the following procedures:
     </tbody>
     </table>
 
-     
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+
+~~~
+**Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+~~~
 
 ## Related topics
 
@@ -136,9 +141,9 @@ This topic explains the following procedures:
 
 [Administering App-V 5.1 by Using PowerShell](administering-app-v-51-by-using-powershell.md)
 
- 
 
- 
+
+
 
 
 

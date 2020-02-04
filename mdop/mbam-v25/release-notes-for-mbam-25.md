@@ -1,8 +1,11 @@
 ---
 title: Release Notes for MBAM 2.5
 description: Release Notes for MBAM 2.5
-author: jamiejdt
+author: dansimp
 ms.assetid: fcaf03e6-5e39-4771-af3c-a3cd468f3961
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -32,7 +35,7 @@ Help links in the MBAM Server Configuration tool can cause browser windows to op
 **Note**  
 This is fixed in MBAM 2.5 SP1.
 
- 
+ 
 
 ### <a href="" id="-------------mbam-reports-as-noncompliant-a-client-encrypted-with-aes-256-bit-encryption-keys-and-diffuser"></a> MBAM reports as noncompliant a client encrypted with AES 256-bit encryption keys and Diffuser
 
@@ -128,42 +131,42 @@ This table lists the hotfixes and KB articles for MBAM 2.5.
 <tr class="odd">
 <td align="left"><p>2975636</p></td>
 <td align="left"><p>Hotfix Package 1 for Microsoft BitLocker Administration and Monitoring 2.5</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2975636/EN-US](https://support.microsoft.com/kb/2975636/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2975636/EN-US" data-raw-source="[support.microsoft.com/kb/2975636/EN-US](https://support.microsoft.com/kb/2975636/EN-US)">support.microsoft.com/kb/2975636/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>3015477</p></td>
 <td align="left"><p>Hotfix Package 2 for BitLocker Administration and Monitoring 2.5</p></td>
-<td align="left"><p>[support.microsoft.com/kb/3015477](https://support.microsoft.com/kb/3015477)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/3015477" data-raw-source="[support.microsoft.com/kb/3015477](https://support.microsoft.com/kb/3015477)">support.microsoft.com/kb/3015477</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3011022</p></td>
 <td align="left"><p>MBAM 2.5 installation or Configuration Manager reporting fails if the name of SSRS instance contains an underscore</p></td>
-<td align="left"><p>[support.microsoft.com/kb/3011022/EN-US](https://support.microsoft.com/kb/3011022/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/3011022/EN-US" data-raw-source="[support.microsoft.com/kb/3011022/EN-US](https://support.microsoft.com/kb/3011022/EN-US)">support.microsoft.com/kb/3011022/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2756402</p></td>
 <td align="left"><p>MBAM client would fail with Event ID 4 and error code 0x8004100E in the Event description</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2756402/EN-US](https://support.microsoft.com/kb/2756402/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2756402/EN-US" data-raw-source="[support.microsoft.com/kb/2756402/EN-US](https://support.microsoft.com/kb/2756402/EN-US)">support.microsoft.com/kb/2756402/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2639518</p></td>
 <td align="left"><p>Error opening Enterprise or Computer Compliance Reports in MBAM</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2639518/EN-US](https://support.microsoft.com/kb/2639518/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2639518/EN-US" data-raw-source="[support.microsoft.com/kb/2639518/EN-US](https://support.microsoft.com/kb/2639518/EN-US)">support.microsoft.com/kb/2639518/EN-US</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2870842</p></td>
 <td align="left"><p>MBAM 2.0 Setup fails during Configuration Manager Integration Scenario with SQL Server 2008</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2870842/EN-US](https://support.microsoft.com/kb/2870842/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2870842/EN-US" data-raw-source="[support.microsoft.com/kb/2870842/EN-US](https://support.microsoft.com/kb/2870842/EN-US)">support.microsoft.com/kb/2870842/EN-US</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>2975472</p></td>
 <td align="left"><p>SQL deadlocks when many MBAM clients connect to the MBAM recovery database</p></td>
-<td align="left"><p>[support.microsoft.com/kb/2975472/EN-US](https://support.microsoft.com/kb/2975472/EN-US)</p></td>
+<td align="left"><p><a href="https://support.microsoft.com/kb/2975472/EN-US" data-raw-source="[support.microsoft.com/kb/2975472/EN-US](https://support.microsoft.com/kb/2975472/EN-US)">support.microsoft.com/kb/2975472/EN-US</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 
 ## Related topics
@@ -171,7 +174,7 @@ This table lists the hotfixes and KB articles for MBAM 2.5.
 
 [About MBAM 2.5](about-mbam-25.md)
 
- 
+ 
 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring).

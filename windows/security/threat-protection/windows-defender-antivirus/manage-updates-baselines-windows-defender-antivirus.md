@@ -9,19 +9,23 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Manage Windows Defender Antivirus updates and apply baselines
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 There are two types of updates related to keeping Windows Defender Antivirus up to date:
 1. Protection updates
+
 2. Product updates
 
 You can also apply [Windows security baselines](https://technet.microsoft.com/itpro/windows/keep-secure/windows-security-baselines) to quickly bring your endpoints up to a uniform level of protection.
@@ -32,12 +36,11 @@ Windows Defender Antivirus uses both [cloud-delivered protection](utilize-micros
 
 The cloud-delivered protection is always on and requires an active connection to the Internet to function, while the protection updates generally occur once a day (although this can be configured). See the [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) topic for more details about enabling and configuring cloud-provided protection. 
 
-
 ## Product updates
 
 Windows Defender Antivirus requires [monthly updates](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (known as "engine updates" and "platform updates"), and will receive major feature updates alongside Windows 10 releases.
 
-You can manage the distribution of updates through Windows Server Update Service (WSUS), with [System Center Configuration Manager](https://docs.microsoft.com/sccm/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
+You can manage the distribution of updates through Windows Server Update Service (WSUS), with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
 
 ## In this section
 

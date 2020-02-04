@@ -1,13 +1,15 @@
 ---
 title: Configure Windows 10 Mobile using Lockdown XML (Windows 10)
-description: Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device.
+description: Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device.
 ms.assetid: 22C8F654-2EC3-4E6D-8666-1EA9FCF90F5F
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
@@ -18,9 +20,9 @@ ms.date: 07/27/2017
 
 **Applies to**
 
--   Windows 10 Mobile
+-   Windows 10 Mobile
 
-Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device. For example, the enterprise can lock down a device so that only applications and settings in an allow list are available.
+Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device. For example, the enterprise can lock down a device so that only applications and settings in an allow list are available.
 
 This is accomplished using Lockdown XML, an XML file that contains settings for Windows 10 Mobile. When you deploy the lockdown XML file to a device, it is saved on the device as **wehlockdown.xml**. When the device boots, it looks for wehlockdown.xml and applies any settings configured in the file. 
 
@@ -38,16 +40,16 @@ Let's start by looking at the basic structure of the lockdown XML file. You can 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <HandheldLockdown version="1.0" >
-	<Default>
-		<ActionCenter/>
-		<Apps/>
-		<Buttons/>
-		<CSPRunner/>
-		<MenuItems/>
-		<Settings/>
-		<Tiles/>
-		<StartScreenSize/>
-	</Default>
+    <Default>
+        <ActionCenter/>
+        <Apps/>
+        <Buttons/>
+        <CSPRunner/>
+        <MenuItems/>
+        <Settings/>
+        <Tiles/>
+        <StartScreenSize/>
+    </Default>
 </HandheldLockdown>
 ```
 
@@ -82,7 +84,7 @@ The following example is a complete lockdown XML file that disables Action Cente
 <?xml version="1.0" encoding="utf-8"?>
 <HandheldLockdown version="1.0" >
     <Default>
-	<!-- disable Action Center -->
+    <!-- disable Action Center -->
         <ActionCenter enabled="false" />
     </Default>
 </HandheldLockdown>
@@ -143,8 +145,8 @@ In the following example, Outlook Calendar and Outlook Mail are pinned to the St
             </Location>
         </PinToStart>
     </Application>
-	<!-- Store -->
-	<Application productId="7D47D89A-7900-47C5-93F2-46EB6D94C159" aumid="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
+    <!-- Store -->
+    <Application productId="7D47D89A-7900-47C5-93F2-46EB6D94C159" aumid="Microsoft.WindowsStore_8wekyb3d8bbwe!App" />
 </Apps>
 ```
 
@@ -158,7 +160,7 @@ You can create and pin folders to Start by using the Apps setting. Each folder r
 <Apps>
     <!-- Management folder -->
     <Application folderId="1" folderName="Management">
-	  <PinToStart>
+      <PinToStart>
             <Size>Medium</Size>
             <Location>
                 <LocationX>4</LocationX>
@@ -181,7 +183,7 @@ To add apps to the folder, include **ParentFolderId** in the application XML, as
                 <LocationX>0</LocationX>
                 <LocationY>0</LocationY>
             </Location>
-			<ParentFolderId>1</ParentFolderId>
+            <ParentFolderId>1</ParentFolderId>
         </PinToStart>
     </Application>
     <!-- Outlook Mail-->
@@ -192,7 +194,7 @@ To add apps to the folder, include **ParentFolderId** in the application XML, as
                 <LocationX>4</LocationX>
                 <LocationY>0</LocationY>
             </Location>
-			<ParentFolderId>1</ParentFolderId>
+            <ParentFolderId>1</ParentFolderId>
         </PinToStart>
     </Application>
 </Apps>
@@ -224,11 +226,11 @@ In the following example, press-and-hold is disabled for the Back button.
 
 ```xml
 <Buttons>
-	<ButtonLockdownList>
-		<Button name="Back">
-			<ButtonEvent name="PressAndHold" />
-		</Button>
-	</ButtonLockdownList>
+    <ButtonLockdownList>
+        <Button name="Back">
+            <ButtonEvent name="PressAndHold" />
+        </Button>
+    </ButtonLockdownList>
 </Buttons>
 ```
 
@@ -236,10 +238,10 @@ If you don't specify a button event, all actions for the button are disabled. In
 
 ```xml
 <Buttons>
-	<ButtonLockdownList>
-		<Button name="Camera">
-		</Button>
-	</ButtonLockdownList>
+    <ButtonLockdownList>
+        <Button name="Camera">
+        </Button>
+    </ButtonLockdownList>
 </Buttons>
 ```
 
@@ -249,20 +251,20 @@ ButtonRemapList lets you change the app that a button will run. You can remap th
 
 > [!WARNING]
 >  Button remapping can enable a user to open an application that is not in the allow list for that user role. Use button lock down to prevent application access for a user role.
- 
+
 To remap a button, you specify the button, the event, and the product ID for the app that you want the event to open. 
 In the following example, when a user presses the Search button, the phone dialer will open instead of the Search app.
 
 ```xml
 <Buttons>
-	<ButtonRemapList>
-		<Button name="Search">
-			<ButtonEvent name="Press">
-				<!-- Phone dialer -->
-				<Application productID="{F41B5D0E-EE94-4F47-9CFE-3D3934C5A2C7 }" parameters="" />
-			</ButtonEvent>
-		</Button>
-	</ButtonRemapList>
+    <ButtonRemapList>
+        <Button name="Search">
+            <ButtonEvent name="Press">
+                <!-- Phone dialer -->
+                <Application productID="{F41B5D0E-EE94-4F47-9CFE-3D3934C5A2C7 }" parameters="" />
+            </ButtonEvent>
+        </Button>
+    </ButtonRemapList>
 </Buttons>
 ```
 
@@ -271,7 +273,7 @@ In the following example, when a user presses the Search button, the phone diale
 ![XML for CSP Runner](../images/CSPRunnerXML.jpg)
 
 You can use CSPRunner to include settings that are not defined in AssignedAccessXML. For example, you can include settings from other sections of EnterpriseAssignedAccess CSP, such as lockscreen, theme, and time zone. You can also include settings from other CSPs, such as [Wi-Fi CSP](https://go.microsoft.com/fwlink/p/?LinkID=717460) or [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962%28v=vs.85%29.aspx).
- 
+
 CSPRunner is helpful when you are configuring a device to support multiple roles. It lets you apply different policies according to the role that is signed on. For example, Wi-Fi could be enabled for a supervisor role and disabled for a stocking clerk role. 
 
 In CSPRunner, you specify the CSP and settings using SyncML, a standardized markup language for device management. A SyncML section can include multiple settings, or you can use multiple SyncML sections -- it's up to you how you want to organize settings in this section.
@@ -283,21 +285,21 @@ Let's start with the structure of SyncML in the following example:
 
 ```xml
 SyncML>
-	<SyncBody>
-		<Add>|<Replace>
-			<CmdID>#</CmdID>
-			<Item>
-				<Target>
-					<LocURI>CSP Path</LocURI>
-				</Target>
-				<Meta>
-					<Format xmlns="syncml:metinf">Data Type</Format>
-				</Meta>
-				<Data>Value</Data>
-			</Item>
-		</Add>|</Replace>
-		<Final/>
-	</SyncBody>
+    <SyncBody>
+        <Add>|<Replace>
+            <CmdID>#</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>CSP Path</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">Data Type</Format>
+                </Meta>
+                <Data>Value</Data>
+            </Item>
+        </Add>|</Replace>
+        <Final/>
+    </SyncBody>
 </SyncML>
 ```
 
@@ -358,85 +360,85 @@ If you list a setting or quick action in **Settings**, all settings and quick ac
 
 For a list of the settings and quick actions that you can allow or block, see [Settings and quick actions that can be locked down in Windows 10 Mobile](settings-that-can-be-locked-down.md).
 
- 
+
  ## Tiles
- 
+
  ![XML for tiles](../images/TilesXML.png)
- 
+
  By default, under Assigned Access, tile manipulation is turned off (blocked) and only available if enabled in the user’s profile. If tile manipulation is enabled in the user’s profile, they can pin/unpin, move, and resize tiles based on their preferences. When multiple people use one device and you want to enable tile manipulation for multiple users, you must enable it for each user in their user profile. 
- 
+
  > [!IMPORTANT]
  > If a device is turned off then back on, the tiles reset to their predefined layout. If a device has only one profile, the only way to reset the tiles is to turn off then turn on the device. If a device has multiple profiles, the device resets the tiles to the predefined layout based on the logged-in user’s profile. 
- 
+
  ```xml
  <Tiles>
      <EnableTileManipulation/>
  </Tiles>
  ```
- 
+
  ## Start screen size
- 
+
  Specify the size of the Start screen. In addition to 4/6 columns, you can also use 4/6/8 depending on screen resolutions. Valid values: 
- 
- - Small sets the width to 4 columns on devices with short axis (less than 400epx) or 6 columns on devices with short axis (greater than or equal to 400epx).
- - Large sets the width to 6 columns on devices with short axis (less than 400epx) or 8 columns on devices with short axis (greater than or equal to 400epx).
-  
- If you have existing lockdown xml, you must update start screen size if your device has >=400epx on its short axis so that tiles on Start can fill all 8 columns if you want to use all 8 columns instead of 6, or use 6 columns instead of 4. 
- 
- [Learn about effective pixel width (epx) for different device size classes.](https://go.microsoft.com/fwlink/p/?LinkId=733340)
- 
- 
+
+- Small sets the width to 4 columns on devices with short axis (less than 400epx) or 6 columns on devices with short axis (greater than or equal to 400epx).
+- Large sets the width to 6 columns on devices with short axis (less than 400epx) or 8 columns on devices with short axis (greater than or equal to 400epx).
+
+  If you have existing lockdown xml, you must update start screen size if your device has >=400epx on its short axis so that tiles on Start can fill all 8 columns if you want to use all 8 columns instead of 6, or use 6 columns instead of 4. 
+
+  [Learn about effective pixel width (epx) for different device size classes.](https://go.microsoft.com/fwlink/p/?LinkId=733340)
+
+
 ## Configure additional roles
- 
+
 You can add custom configurations by role. In addition to the role configuration, you must also install a login application on the device. The app displays a list of available roles on the device; the user taps a role, such as "Manager"; the configuration defined for the "Manager" role is applied.
- 
+
 [Learn how to create a login application that will work with your Lockdown XML file.](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DeviceLockdownAzureLogin) For reference, see the [Windows.Embedded.DeviceLockdown API](https://msdn.microsoft.com/library/windows/apps/windows.embedded.devicelockdown).
- 
+
 In the XML file, you define each role with a GUID and name, as shown in the following example:
- 
+
 ```xml
 <Role guid="{7bb62e8c-81ba-463c-b691-74af68230b42}" name="Manager">
 ```
 
 You can create a GUID using a GUID generator -- free tools are available online. The GUID needs to be unique within this XML file.
- 
+
 You can configure the same settings for each role as you did for the default role, except Start screen size which can only be configured for the default role. If you use CSPRunner with roles, be aware that the last CSP setting applied will be retained across roles unless explicitly changed in each role configuration. CSP settings applied by CSPRunner may conflict with settings applied by MDM. 
- 
+
 ```xml
 <?xml version "1.0" encoding "utf-8"?>
 <HandheldLockdown version "1.0" >
-	<Default>
-		<ActionCenter/>
-		<Apps/>
-		<Buttons/>
-		<CSPRunner/>
-		<MenuItems/>
-		<Settings/>
-		<Tiles/>
-		<StartScreenSize/>
-	</Default>
-		<RoleList>
-			<Role>
-				<ActionCenter/>
-				<Apps/>
-				<Buttons/>
-				<CSPRunner/>
-				<MenuItems/>
-				<Settings/>
-				<Tiles/>
-			</Role>
-		</RoleList>
+    <Default>
+        <ActionCenter/>
+        <Apps/>
+        <Buttons/>
+        <CSPRunner/>
+        <MenuItems/>
+        <Settings/>
+        <Tiles/>
+        <StartScreenSize/>
+    </Default>
+        <RoleList>
+            <Role>
+                <ActionCenter/>
+                <Apps/>
+                <Buttons/>
+                <CSPRunner/>
+                <MenuItems/>
+                <Settings/>
+                <Tiles/>
+            </Role>
+        </RoleList>
 </HandheldLockdown>
 ```
 
 ## Validate your XML
 
 You can validate your lockdown XML file against the [EnterpriseAssignedAccess XSD](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseassignedaccess-xsd).
- 
+
 ## Add lockdown XML to a provisioning package
 
 
-Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](https://go.microsoft.com/fwlink/p/?LinkId=526740)
+Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](https://go.microsoft.com/fwlink/p/?LinkId=526740)
 
 1.  Follow the instructions at [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkID=629651) to create a project, selecting **Common to all Windows mobile editions** for your project.
 
@@ -852,7 +854,6 @@ To push lockdown settings to enrolled devices, use the AssignedAccessXML setting
         </Role>
     </RoleList>
 </HandheldLockdown>
-
 ```
 
 ## Learn more

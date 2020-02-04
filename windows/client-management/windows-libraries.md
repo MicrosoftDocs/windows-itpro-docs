@@ -1,12 +1,14 @@
 ---
 ms.assetid: e68cd672-9dea-4ff8-b725-a915f33d8fd2
+ms.reviewer: 
+manager: dansimp
 title: Windows Libraries
 ms.prod: windows-server-threshold
-ms.author: jgerend
+ms.author: dansimp
 ms.manager: dongill
 ms.technology: storage
 ms.topic: article
-author: jasongerend
+author: dansimp
 description: All about Windows Libraries, which are containers for users' content, such as Documents and Pictures.
 ms.date: 04/19/2017
 ---
@@ -115,7 +117,7 @@ See the [Library Description Schema](https://go.microsoft.com/fwlink/?LinkId=159
 
 ### Concepts
 
-- [Windows Search Features ](https://technet.microsoft.com/library/dd744686.aspx)
+- [Windows Search Features](https://technet.microsoft.com/library/dd744686.aspx)
 - [Windows Indexing Features](https://technet.microsoft.com/library/dd744700.aspx)
 - [Federated Search Features](https://technet.microsoft.com/library/dd744682.aspx)
 - [Administrative How-to Guides](https://technet.microsoft.com/library/ee461108.aspx)

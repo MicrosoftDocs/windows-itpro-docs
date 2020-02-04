@@ -1,8 +1,11 @@
 ---
 title: How to Publish a Connection Group
 description: How to Publish a Connection Group
-author: jamiejdt
+author: dansimp
 ms.assetid: fe89601c-23c6-4b7c-a61b-4ca50908f1b4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library

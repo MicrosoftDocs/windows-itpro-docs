@@ -2,12 +2,15 @@
 title: Security Options (Windows 10)
 description: Provides an introduction to the settings under Security Options of the local security policies and links to information about each setting.
 ms.assetid: 405ea253-8116-4e57-b08e-14a8dcdca92b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 ms.date: 06/28/2018
 ---
 
@@ -127,7 +130,7 @@ For info about setting security policies, see [Configure security policy setting
 | [User Account Control: Run all administrators in Admin Approval Mode](user-account-control-run-all-administrators-in-admin-approval-mode.md)| Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Run all administrators in Admin Approval Mode** security policy setting. |
 | [User Account Control: Switch to the secure desktop when prompting for elevation](user-account-control-switch-to-the-secure-desktop-when-prompting-for-elevation.md)| Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Switch to the secure desktop when prompting for elevation** security policy setting. |
 | [User Account Control: Virtualize file and registry write failures to per-user locations](user-account-control-virtualize-file-and-registry-write-failures-to-per-user-locations.md)| Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Virtualize file and registry write failures to per-user locations** security policy setting. |
- 
+ 
 ## Related topics
 
 - [Security policy settings reference](security-policy-settings-reference.md)

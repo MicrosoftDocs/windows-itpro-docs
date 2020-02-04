@@ -1,15 +1,19 @@
 ---
 title: Policy CSP - RestrictedGroups
 description: Policy CSP - RestrictedGroups
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 03/15/2018
+author: manikadhiman
+ms.localizationpriority: medium
+ms.date: 09/27/2019
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Policy CSP - RestrictedGroups
+
 
 
 <hr/>
@@ -32,32 +36,34 @@ ms.date: 03/15/2018
 <!--SupportedSKUs-->
 <table>
 <tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td></td>
-	<td></td>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 </tr>
 </table>
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
 
 <!--/SupportedSKUs-->
+<hr/>
+
 <!--Scope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -74,7 +80,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
 
 Starting in Windows 10, version 1809, you can use this schema for retrieval and application of the RestrictedGroups/ConfigureGroupMembership policy. A minimum occurrence of 0 members when applying the policy implies clearing the access group and should be used with caution.
 
-``` syntax
+```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">  
   <xs:simpleType name="member_name">
     <xs:restriction base="xs:string">
@@ -119,9 +125,9 @@ Here is an example:
 
 ```
 <groupmembership>
-    <accessgroup desc="Administrators">
-        <member name="AzureAD\CSPTest@contoso.com" />
-        <member name="CSPTest22306\administrator" />
+    <accessgroup desc = "Administrators">
+        <member name = "AzureAD\CSPTest@contoso.com" />
+        <member name = "CSPTest22306\administrator" />
         <member name = "AzureAD\patlewis@contoso.com" />
     </accessgroup>
     <accessgroup desc = "testcsplocal">
@@ -130,6 +136,10 @@ Here is an example:
     </accessgroup>
 </groupmembership>
 ```
+
+> [!Note]
+> * You should include the local administrator while modifying the administrators group to prevent accidental loss of access
+> * Include the entire UPN after AzureAD
 <!--/Example-->
 <!--Validation-->
 
@@ -137,8 +147,14 @@ Here is an example:
 <!--/Policy-->
 <hr/>
 
-Take note:
-* You should include the local administrator while modifying the administrators group to prevent accidental loss of access
-* Include the entire UPN after AzureAD
+Footnotes:
 
+-   1 - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
+-   3 - Added in Windows 10, version 1709.
+-   4 - Added in Windows 10, version 1803.
+-   5 - Added in Windows 10, version 1809.
+-   6 - Added in Windows 10, version 1903.
+
+<!--/Policies-->
 

@@ -4,10 +4,12 @@ description: Microsoft Edge, by default, shows a list of search suggestions in t
 services: 
 keywords: 
 ms.localizationpriority: medium
-manager: dougkim
-author: shortpatti
-ms.author: pashort
+audience: itpro
+manager: dansimp
+author: dansimp
+ms.author: dansimp
 ms.date: 10/02/2018
+ms.reviewer: 
 ms.topic: reference
 ms.prod: edge
 ms.mktglfcycl: explore
@@ -15,6 +17,9 @@ ms.sitesec: library
 ---
 
 # Address bar 
+
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
 Microsoft Edge, by default, shows a list of search suggestions in the address bar. You can minimize network connections from Microsoft Edge to Microsoft services by hiding the functionality of the Address bar drop-down list.
 

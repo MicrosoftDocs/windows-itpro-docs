@@ -1,26 +1,27 @@
 ---
 title: Microsoft-compatible security key 
-description: Windows 10 enables users to sign in to their device using a security key. How is  a Microsoft-compatible security key different (and better) than any other FIDO2 security key
+description: Learn how a Microsoft-compatible security key for Windows 10 is different (and better) than any other FIDO2 security key.
 keywords: FIDO2, security key, CTAP, Hello, WHFB
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 audience: ITPro
-author: aabhathipsay
-ms.author: aathipsa
+author: mapalko
+ms.author: mapalko
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
 ms.date: 11/14/2018
+ms.reviewer: 
 ---
 # What is a Microsoft-compatible security key? 
 > [!Warning]
 > Some information relates to pre-released product that may change before it is commercially released.  Microsoft makes no warranties, express or implied, with respect to the information provided here. 
 
 
-Microsoft has been aligned with the [FIDO Alliance](https://fidoalliance.org/) with a mission to replace passwords with an easy to use, strong 2FA credential. We have been working with our partners to extensively test and deliver a seamless and secure authentication experience to end users.
+Microsoft has been aligned with the [FIDO Alliance](https://fidoalliance.org/) with a mission to replace passwords with an easy to use, strong 2FA credential. We have been working with our partners to extensively test and deliver a seamless and secure authentication experience to end users. See [FIDO2 security keys features and providers](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys).
 
 The [FIDO2 CTAP specification](https://fidoalliance.org/specs/fido-v2.0-id-20180227/fido-client-to-authenticator-protocol-v2.0-id-20180227.html) contains a few optional features and extensions which are crucial to provide that seamless and secure experience. 
 

@@ -2,6 +2,8 @@
 title: Device Guard signing (Windows 10)
 description: Device Guard signing is a Device Guard feature that is available in the Microsoft Store for Business and Microsoft Store for Education.
 ms.assetid: 8D9CD2B9-5FC6-4C3D-AA96-F135AFEEBB78
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -41,7 +43,7 @@ When you're uploading files for Device Guard signing, there are a few limits for
 | Maximum size for multiple files (uploaded in a group) | 4 MB     |
 | Maximum number of files per upload                    | 15 files |
 
- ## File types
+ ## File types
 Catalog and policy files have required files types.
 
 | File          | Required file type |
@@ -49,7 +51,7 @@ Catalog and policy files have required files types.
 | catalog files | .cat               |
 | policy files  | .bin               |
 
- ##  Store for Business roles and permissions
+ ## Store for Business roles and permissions
 Signing code integrity policies and access to Device Guard portal requires the Device Guard signer role.
 
 ## Device Guard signing certificates

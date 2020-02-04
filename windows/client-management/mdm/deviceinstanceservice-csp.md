@@ -2,11 +2,13 @@
 title: DeviceInstanceService CSP
 description: DeviceInstanceService CSP
 ms.assetid: f113b6bb-6ce1-45ad-b725-1b6610721e2d
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -20,7 +22,7 @@ Stop using DeviceInstanceService CSP and use the updated [DeviceStatus CSP](devi
 
 The DeviceInstance CSP is only supported in Windows 10 Mobile.
 
- 
+ 
 
 The following diagram shows the DeviceInstanceService configuration service provider in tree format.
 
@@ -68,7 +70,7 @@ The parent node to group SIM2 specific information in case of dual SIM mode.
 
 The following sample shows how to query roaming status and phone number on the device.
 
-``` syntax
+```xml
 <Get>
       <CmdID>2</CmdID>
       <Item>
@@ -86,7 +88,7 @@ The following sample shows how to query roaming status and phone number on the d
 
 Response from the phone.
 
-``` syntax
+```xml
 <Results>
    <CmdID>3</CmdID>
    <MsgRef>1</MsgRef>
@@ -108,9 +110,9 @@ Response from the phone.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

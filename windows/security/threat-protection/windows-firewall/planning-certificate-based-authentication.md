@@ -2,12 +2,14 @@
 title: Planning Certificate-based Authentication (Windows 10)
 description: Planning Certificate-based Authentication
 ms.assetid: a55344e6-d0df-4ad5-a6f5-67ccb6397dec
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -57,4 +59,4 @@ When the clients and servers have the certificates available, you can configure 
 
 Starting in Windows Server 2012,you can configure certificate selection criteria so the desired certificate is selected and/or validated. Enhanced Key Usage (EKU) criteria can be configured, as well as name restrictions and certificate thumbprints. This is configured using the **Advanced** button when choosing certificates for the authentication method in the user interface, or through Windows PowerShell.
 
-**Next: **[Documenting the Zones](documenting-the-zones.md)
+**Next:** [Documenting the Zones](documenting-the-zones.md)

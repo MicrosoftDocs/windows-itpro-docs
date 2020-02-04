@@ -1,12 +1,15 @@
 ---
 title: How to Create an App-V Project Template (App-V 4.6 SP1)
 description: How to Create an App-V Project Template (App-V 4.6 SP1)
-author: jamiejdt
+author: dansimp
 ms.assetid: 7e87fba2-b72a-4bc9-92b8-220e25aae99a
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ You can use an App-V project template to save commonly applied settings associat
 **Note**  
 You can only apply an App-V project template when you are creating a new virtual application package. Applying project templates to existing virtual application packages is not supported.
 
- 
+ 
 
 For more information about applying an App-V project template, see [How to Apply an App-V Project Template (App-V 4.6 SP1)](how-to-apply-an-app-v-project-template--app-v-46-sp1-.md).
 
@@ -52,9 +55,9 @@ The following general settings are saved with an App-V project template:
 
 [How to Apply an App-V Project Template (App-V 4.6 SP1)](how-to-apply-an-app-v-project-template--app-v-46-sp1-.md)
 
- 
+ 
 
- 
+ 
 
 
 

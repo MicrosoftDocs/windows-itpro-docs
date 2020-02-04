@@ -1,12 +1,15 @@
 ---
 title: How to Change the Server Cache Size
 description: How to Change the Server Cache Size
-author: jamiejdt
+author: dansimp
 ms.assetid: 24e63744-21c3-458e-b137-9592f4fe785c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ You can use the following procedure to change the cache size for any server dire
 **Note**  
 Although you can change the cache size, unless your configuration specifically requires you to change the size, it is recommended that you leave the cache size set to the default values.
 
- 
+ 
 
 **To change the server cache size**
 
@@ -44,9 +47,9 @@ Although you can change the cache size, unless your configuration specifically r
 
 [How to Manage Servers in the Server Management Console](how-to-manage-servers-in-the-server-management-console.md)
 
- 
+ 
 
- 
+ 
 
 
 

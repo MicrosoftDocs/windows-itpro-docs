@@ -2,12 +2,14 @@
 title: Access this computer from the network - security policy setting (Windows 10)
 description: Describes the best practices, location, values, policy management, and security considerations for the Access this computer from the network security policy setting.
 ms.assetid: f6767bc2-83d1-45f1-847c-54f5362db022
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -58,7 +60,7 @@ The following table lists the actual and effective default policy values for the
 | Domain controller effective default settings | Everyone, Administrators, Authenticated Users, Enterprise Domain Controllers, Pre-Windows 2000 Compatible Access |
 | Member server effective default settings | Everyone, Administrators, Users, Backup Operators |
 | Client computer effective default settings |Everyone, Administrators, Users, Backup Operators |
- 
+ 
 ## Policy management
 
 When modifying this user right, the following actions might cause users and services to experience network access issues:
@@ -96,12 +98,12 @@ Restrict the **Access this computer from the network** user right to only those 
 from servers in the domain if members of the **Domain Users** group are included in the local **Users** group.
 
 > **Note**  If you are using IPsec to help secure network communications in your organization, ensure that a group that includes machine accounts is given this right. This right is required for successful computer authentication. Assigning this right to **Authenticated Users** or **Domain Computers** meets this requirement.
- 
+ 
 ### Potential impact
 
 If you remove the **Access this computer from the network** user right on domain controllers for all users, no one can log on to the domain or use network resources. If you remove this user right on member servers, users cannot connect to those servers through the network. If you have installed optional components such as ASP.NET or Internet Information Services (IIS), you may need to assign this user right to additional accounts that are required by those components. It is important to verify that authorized users are assigned this user right for the devices that they need to access the network.
 
 ## Related topics
 [User Rights Assignment](user-rights-assignment.md)
- 
- 
+ 
+ 

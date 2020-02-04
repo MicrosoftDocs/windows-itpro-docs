@@ -1,12 +1,15 @@
 ---
 title: Application Virtualization Sequencer Console Overview
 description: Application Virtualization Sequencer Console Overview
-author: jamiejdt
+author: dansimp
 ms.assetid: 681bb40d-2937-4645-82aa-4a44775232d8
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

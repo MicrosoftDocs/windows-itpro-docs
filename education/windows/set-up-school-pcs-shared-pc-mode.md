@@ -1,15 +1,17 @@
----  
-title: Shared PC mode for school devices  
-description: Describes how shared PC mode is set for devices set up with the Set up School PCs app.  
-keywords: shared cart, shared PC, school, set up school pcs  
-ms.prod: w10  
-ms.mktglfcycl: plan  
-ms.sitesec: library  
-ms.pagetype: edu  
-ms.localizationpriority: medium  
-author: lenewsad  
-ms.author: lanewsad  
-ms.date: 07/13/2018  
+---
+title: Shared PC mode for school devices
+description: Describes how shared PC mode is set for devices set up with the Set up School PCs app.
+keywords: shared cart, shared PC, school, set up school pcs
+ms.prod: w10
+ms.mktglfcycl: plan
+ms.sitesec: library
+ms.pagetype: edu
+ms.localizationpriority: medium
+author: dansimp
+ms.author: dansimp
+ms.date: 07/13/2018
+ms.reviewer: 
+manager: dansimp
 ---  
 
 # Shared PC mode for school devices

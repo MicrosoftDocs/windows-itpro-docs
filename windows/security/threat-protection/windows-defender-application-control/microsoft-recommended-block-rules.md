@@ -1,12 +1,20 @@
 ---
 title: Microsoft recommended block rules (Windows 10)
-description: To help you plan and begin the initial test stages of a deployment of Microsoft Windows Defender Application Comntrol, this article outlines how to gather information, create a plan, and begin to create and test initial code integrity policies. 
-keywords: virtualization, security, malware
+description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.  
+keywords: whitelisting, security, malware
+ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: w10
 ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
 ms.localizationpriority: medium
+audience: ITPro
+ms.collection: M365-security-compliance
 author: jsuther1974
-ms.date: 08/31/2018
+ms.reviewer: isbrahm
+ms.author: dansimp
+manager: dansimp
+ms.date: 04/09/2019
 ---
 
 # Microsoft recommended block rules
@@ -14,6 +22,7 @@ ms.date: 08/31/2018
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
+-   Windows Server 2019
 
 Members of the security community<sup>\*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
 
@@ -60,11 +69,13 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 |Lee Christensen|@tifkin_|
 |Vladas Bulavas | Kaspersky Lab |
 |Lasse Trolle Borup | Langkjaer Cyber Defence |
+|Jimmy Bayne | @bohops |
+|Philip Tsukerman | @PhilipTsukerman |
 
 <br />
 
->[!Note]
->This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
+> [!Note]
+> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
 
 Certain software applications may allow additional code to run by design. 
 These types of applications should be blocked by your Windows Defender Application Control policy. 
@@ -76,7 +87,13 @@ These modules cannot be blocked by name or version, and therefore must be blocke
 
 For October 2017, we are announcing an update to system.management.automation.dll in which we are revoking older versions by hash values, instead of version rules.
 
-Microsoft recommends that you block the following Microsoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet:
+Microsoft recommends that you block the following Microsoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet. Beginning with the March 2019 quality update, each version of Windows requires blocking a specific version of the following files:
+
+- msxml3.dll
+- msxml6.dll
+- jscript9.dll
+
+Pick the correct version of each .dll for the Windows release you plan to support, and remove the other versions. Ensure that you also uncomment them in the signing scenarios section.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -137,7 +154,39 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <Deny ID="ID_DENY_WMIC" FriendlyName="wmic.exe" FileName="wmic.exe" MinimumFileVersion="65535.65535.65535.65535"/>
   <Deny ID="ID_DENY_MWFC" FriendlyName="Microsoft.Workflow.Compiler.exe" FileName="Microsoft.Workflow.Compiler.exe" MinimumFileVersion="65535.65535.65535.65535" /> 
   <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="65535.65535.65535.65535" />   
-  <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />   
+  <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />  
+  <Deny ID="ID_DENY_MSBUILD_DLL" FriendlyName="MSBuild.dll" FileName="MSBuild.dll" MinimumFileVersion="65535.65535.65535.65535" />
+  <Deny ID="ID_DENY_DOTNET" FriendlyName="dotnet.exe" FileName="dotnet.exe" MinimumFileVersion="65535.65535.65535.65535" />
+  <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
+  <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
+
+  <!-- pick the correct version of msxml3.dll, msxml6.dll, and jscript9.dll based on the release you are supporting -->
+  <!-- the versions of these files in the 1903 release have this issue fixed, so they don’t need to be blocked -->
+  <!-- RS1 Windows 1607
+  <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.14393.2550"/>
+  <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.14393.2550"/>
+  <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.14393.2607"/>
+  -->
+  <!-- RS2 Windows 1703
+  <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.15063.1386"/>
+  <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.15063.1386"/>
+  <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.15063.1445"/>
+  -->
+  <!-- RS3 Windows 1709
+  <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.16299.725"/>
+  <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.16299.725"/>
+  <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.16299.785"/>
+  -->
+  <!-- RS4 Windows 1803
+  <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.17134.344"/>
+  <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.17134.344"/>
+  <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.17134.406"/>
+  -->
+  <!-- RS5 Windows 1809
+  <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.17763.54"/>
+  <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.17763.54"/>
+  <Deny  ID="ID_DENY_JSCRIPT9"      FriendlyName="jscript9.dll"       FileName="jscript9.dll" MinimumFileVersion ="11.0.17763.133"/>
+  -->
   <Deny ID="ID_DENY_D_1" FriendlyName="Powershell 1" Hash="02BE82F63EE962BCD4B8303E60F806F6613759C6"/> 
   <Deny ID="ID_DENY_D_2" FriendlyName="Powershell 2" Hash="13765D9A16CC46B2113766822627F026A68431DF"/> 
   <Deny ID="ID_DENY_D_3" FriendlyName="Powershell 3" Hash="148972F670E18790D62D753E01ED8D22B351A57E45544D88ACE380FEDAF24A40"/> 
@@ -842,8 +891,17 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <FileRuleRef RuleID="ID_DENY_KILL"/> 
   <FileRuleRef RuleID="ID_DENY_WMIC"/>
   <FileRuleRef RuleID="ID_DENY_MWFC" /> 
-  <FileRuleRef RuleID="ID_DENY_WFC" />   
-  <FileRuleRef RuleID="ID_DENY_D_1"/> 
+  <FileRuleRef RuleID="ID_DENY_WFC" /> 
+  <!-- uncomment the relevant line(s) below if you have uncommented them in the rule definitions above
+  <FileRuleRef RuleID="ID_DENY_MSXML3" /> 
+  <FileRuleRef RuleID="ID_DENY_MSXML6" /> 
+  <FileRuleRef RuleID="ID_DENY_JSCRIPT9" />
+  -->
+  <FileRuleRef RuleID="ID_DENY_MSBUILD_DLL" /> 
+  <FileRuleRef RuleID="ID_DENY_DOTNET" /> 
+  <FileRuleRef RuleID="ID_DENY_MS_BUILD" /> 
+  <FileRuleRef RuleID="ID_DENY_MS_BUILD_FMWK" /> 
+  <FileRuleRef RuleID="ID_DENY_D_1"/>
   <FileRuleRef RuleID="ID_DENY_D_2"/> 
   <FileRuleRef RuleID="ID_DENY_D_3"/> 
   <FileRuleRef RuleID="ID_DENY_D_4"/> 
@@ -1457,7 +1515,12 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <CiSigners /> 
   <HvciOptions>0</HvciOptions> 
   </SiPolicy>
-
-  ```
+```
 <br />
 
+> [!Note]
+> To create a policy that works on both Windows 10, version 1803 and version 1809, you can create two different policies, or merge them into one broader policy.
+
+## More information
+
+- [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md)

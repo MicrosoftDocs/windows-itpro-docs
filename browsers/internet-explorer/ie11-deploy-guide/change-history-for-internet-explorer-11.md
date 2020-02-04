@@ -5,8 +5,11 @@ description: This topic lists new and updated topics in the Internet Explorer 11
 ms.mktglfcycl: deploy
 ms.prod: ie11
 ms.sitesec: library
-author: shortpatti
+author: dansimp
 ms.date: 07/27/2017
+ms.reviewer: 
+audience: itpromanager: dansimp
+ms.author: dansimp
 ---
 
 

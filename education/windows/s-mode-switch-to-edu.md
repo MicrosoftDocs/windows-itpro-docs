@@ -1,6 +1,6 @@
 ---
 title: Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
-description: Switching out of Windows 10 Pro in S mode to Windows 10 Pro Education in S mode. The S mode switch documentation describes the requirements and process for Switching to Windows 10 Pro Education in S mode. 
+description: Switching out of Windows 10 Pro in S mode to Windows 10 Pro Education in S mode. The S mode switch documentation describes the requirements and process for Switching to Windows 10 Pro Education in S mode.
 keywords: Windows 10 S switch, S mode Switch, switch in S mode, Switch S mode, Windows 10 Pro Education in S mode, S mode, system requirements, Overview, Windows 10 Pro in S mode, Education, EDU
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -8,7 +8,10 @@ ms.prod: w10
 ms.sitesec: library
 ms.pagetype: edu
 ms.date: 12/03/2018
-author: jaimeo
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
+author: dansimp
 ---
 
 # Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode
@@ -39,7 +42,7 @@ S mode is an enhanced security mode of Windows 10 – streamlined for security a
 |Credential Guard | | | | X |
 |Device Guard | | | | X |
 
-###  Windows 10 in S mode is safe, secure, and fast.  
+### Windows 10 in S mode is safe, secure, and fast.  
 However, in some limited scenarios, you might need to switch to Windows 10 Education. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store. 
 
 ## How to switch
@@ -68,4 +71,4 @@ Tenant-wide Windows 10 Pro > Pro Education
 [FAQs](https://support.microsoft.com/help/4020089/windows-10-in-s-mode-faq)<br>
 [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)<BR> 
 [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md) <BR>
-[Compare Windows 10 editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare)
+[Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)

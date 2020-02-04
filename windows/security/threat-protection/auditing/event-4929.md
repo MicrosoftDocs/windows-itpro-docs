@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4929(S, F): An Active Directory replica source naming context was removed.
@@ -59,7 +62,6 @@ Failure event generates if an error occurs (**Status Code** != 0).
  <Data Name="StatusCode">0</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** Active Directory domain controller.
@@ -77,15 +79,15 @@ Failure event generates if an error occurs (**Status Code** != 0).
 -   **Source DRA** \[Type = UnicodeString\]: source directory replication agent distinguished name.
 
 > **Note**&nbsp;&nbsp;The LDAP API references an LDAP object by its **distinguished name (DN)**. A DN is a sequence of relative distinguished names (RDN) connected by commas.
-
+> 
 > An RDN is an attribute with an associated value in the form attribute=value; . These are examples of RDNs attributes:
-
+> 
 > • DC - domainComponent
-
+> 
 > • CN - commonName
-
+> 
 > • OU - organizationalUnitName
-
+> 
 > • O - organizationName
 
 -   **Source Address** \[Type = UnicodeString\]: DNS record of the server from which the “remove” request was received.

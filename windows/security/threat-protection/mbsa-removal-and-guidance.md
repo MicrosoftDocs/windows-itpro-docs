@@ -1,13 +1,15 @@
 ---
-title: Microsoft Baseline Security Analyzer (MBSA) removal and guidance on alternative solutions
-description: This article documents the removal of MBSA and alternative solutions
+title: Guide to removing Microsoft Baseline Security Analyzer (MBSA)
+description: This article documents the removal of Microsoft Baseline Security Analyzer (MBSA) and provides alternative solutions
 keywords: MBSA, security, removal
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: astoica
-author: andreiztm
+ms.author: dansimp
+author: dulcemontemayor
 ms.date: 10/05/2018
+ms.reviewer: 
+manager: dansimp
 ---
  
 # What is Microsoft Baseline Security Analyzer and its uses?
@@ -35,5 +37,5 @@ The wsusscn2.cab file contains the metadata of only security updates, update rol
 For security compliance and for desktop/server hardening, we recommend the Microsoft Security Baselines and the Security Compliance Toolkit.
 
 - [Windows security baselines](windows-security-baselines.md) 
-- [Download Microsoft Security Compliance Toolkit 1.0 ](https://www.microsoft.com/download/details.aspx?id=55319) 
+- [Download Microsoft Security Compliance Toolkit 1.0](https://www.microsoft.com/download/details.aspx?id=55319) 
 - [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/)  

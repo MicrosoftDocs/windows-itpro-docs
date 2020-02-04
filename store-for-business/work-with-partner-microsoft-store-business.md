@@ -10,6 +10,8 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.date: 10/12/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Working with solution providers in Microsoft Store for Business
@@ -36,7 +38,7 @@ There are several ways that a solution provider can work with you. Solution prov
 | OEM PC partner | Solution providers can upload device IDs for PCs that you're [managing with Autopilot](https://docs.microsoft.com/microsoft-store/add-profile-to-devices).   |
 | Line-of-business (LOB) partner | Solution providers can develop, submit, and manage LOB apps specific for your organization or school. |
 
-##  Find a solution provider
+## Find a solution provider
 
 You can find partner in Microsoft Store for Business and Education. 
 

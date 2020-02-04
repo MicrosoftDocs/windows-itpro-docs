@@ -2,12 +2,14 @@
 title: Certificate-based Isolation Policy Design (Windows 10)
 description: Certificate-based Isolation Policy Design
 ms.assetid: 63e01a60-9daa-4701-9472-096c85e0f862
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -43,4 +45,4 @@ For more info about this design:
 
 -   For a list of tasks that you can use to deploy your certificate-based policy design, see [Checklist: Implementing a Certificate-based Isolation Policy Design](checklist-implementing-a-certificate-based-isolation-policy-design.md).
 
-**Next: **[Evaluating Windows Defender Firewall with Advanced Security Design Examples](evaluating-windows-firewall-with-advanced-security-design-examples.md)
+**Next:** [Evaluating Windows Defender Firewall with Advanced Security Design Examples](evaluating-windows-firewall-with-advanced-security-design-examples.md)

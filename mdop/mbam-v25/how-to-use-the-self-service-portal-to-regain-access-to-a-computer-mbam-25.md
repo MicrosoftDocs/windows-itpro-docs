@@ -1,8 +1,11 @@
 ---
 title: How to Use the Self-Service Portal to Regain Access to a Computer
 description: How to Use the Self-Service Portal to Regain Access to a Computer
-author: jamiejdt
+author: dansimp
 ms.assetid: 3c24b13a-d1b1-4763-8ac0-0b2db46267e3
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -21,7 +24,7 @@ The following instructions are written from the perspective of end users, but th
 **Important**  
 An end user must have physically logged on to the computer (not remotely) at least one time successfully to be able to recover their key using the Self-Service Portal. Otherwise, they must use the Helpdesk Portal for key recovery.
 
- 
+ 
 
 End users may experience lockouts if they:
 
@@ -32,7 +35,7 @@ End users may experience lockouts if they:
 **Note**  
 If the IT administrator configured an IIS Session State time-out, a message is displayed in the Self-Service Portal 60 seconds prior to the time-out.
 
- 
+ 
 
 **To use the Self-Service Portal to regain access to a computer**
 
@@ -51,11 +54,11 @@ If the IT administrator configured an IIS Session State time-out, a message is d
 
 [Performing BitLocker Management with MBAM 2.5](performing-bitlocker-management-with-mbam-25.md)
 
- 
+ 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
- 
+ 
 
 
 

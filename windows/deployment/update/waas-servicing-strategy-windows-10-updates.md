@@ -3,11 +3,11 @@ title: Prepare servicing strategy for Windows 10 updates (Windows 10)
 description: A strong Windows 10 deployment strategy begins with establishing a simple, repeatable process for testing and deploying each feature update. 
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-author: Jaimeo
+author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.date: 11/02/2018
+ms.reviewer: 
+manager: laurawi
 ms.topic: article
 ---
 
@@ -17,7 +17,7 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
+
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -32,7 +32,7 @@ Windows 10 spreads the traditional deployment effort of a Windows upgrade, which
 - **Identify excluded devices.** For some organizations, special-purpose devices such as those used to control factory or medical equipment or run ATMs require a stricter, less frequent feature update cycle than the Semi-annual Channel can offer. For those machines, you must install Windows 10 Enterprise LTSB to avoid feature updates for up to 10 years. Identify these devices, and separate them from the phased deployment and servicing cycles to help remove confusion for your administrators and ensure that devices are handled correctly. 
 - **Recruit volunteers.** The purpose of testing a deployment is to receive feedback. One effective way to recruit pilot users is to request volunteers. When doing so, clearly state that you’re looking for feedback rather than people to just “try it out” and that there could be occasional issues involved with accepting feature updates right away. With Windows as a service, the expectation is that there should be few issues, but if an issue does arise, you want testers to let you know as soon as possible. When considering whom to recruit for pilot groups, be sure to include members who provide the broadest set of applications and devices to validate the largest number of apps and devices possible.
 - **Update Group Policy.** Each feature update includes new group policies to manage new features. If you use Group Policy to manage devices, the Group Policy Admin for the Active Directory domain will need to download a .admx package and copy it to their [Central Store](https://support.microsoft.com/help/929841/how-to-create-the-central-store-for-group-policy-administrative-templa) (or to the [PolicyDefinitions](https://msdn.microsoft.com/library/bb530196.aspx) directory in the SYSVOL of a domain controller if not using a Central Store). Always manage new group polices from the version of Windows 10 they shipped with by using the Remote Server Administration Tools. The ADMX download package is created at the end of each development cycle and then posted for download. To find the ADMX download package for a given Windows build, search for “ADMX download for Windows build xxxx”. For details about Group Policy management, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)
-- **Choose a servicing tool.** Decide which product you’ll use to manage the Windows updates in your environment. If you’re currently using Windows Server Update Services (WSUS) or System Center Configuration Manager to manage your Windows updates, you can continue using those products to manage Windows 10 updates. Alternatively, you can use Windows Update for Business. In addition to which product you’ll use, consider how you’ll deliver the updates. With Windows 10, multiple peer-to-peer options are available to make update distribution faster. For a comparison of tools, see [Servicing tools](waas-overview.md#servicing-tools).
+- **Choose a servicing tool.** Decide which product you’ll use to manage the Windows updates in your environment. If you’re currently using Windows Server Update Services (WSUS) or Microsoft Endpoint Configuration Manager to manage your Windows updates, you can continue using those products to manage Windows 10 updates. Alternatively, you can use Windows Update for Business. In addition to which product you’ll use, consider how you’ll deliver the updates. With Windows 10, multiple peer-to-peer options are available to make update distribution faster. For a comparison of tools, see [Servicing tools](waas-overview.md#servicing-tools).
 - **Prioritize applications.** First, create an application portfolio. This list should include everything installed in your organization and any webpages your organization hosts. Next, prioritize this list to identify those that are the most business critical. Because the expectation is that application compatibility with Windows 10 will be high, only the most business critical applications should be tested before the pilot phase; everything else can be tested afterwards. For more information about identifying compatibility issues withe applications, see [Manage Windows upgrades with Upgrade Analytics](../upgrade/manage-windows-upgrades-with-upgrade-readiness.md). 
 
 >[!NOTE]
@@ -56,7 +56,7 @@ Each time Microsoft releases a Windows 10 feature update, the IT department shou
 | ![to do](images/checklistbox.gif) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
 | ![to do](images/checklistbox.gif) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
 | ![to do](images/checklistbox.gif) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
-| ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md) |
+| ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md) |
 
 
 ## Related topics
@@ -68,5 +68,5 @@ Each time Microsoft releases a Windows 10 feature update, the IT department shou
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
+- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
 - [Manage device restarts after updates](waas-restart.md)

@@ -1,8 +1,11 @@
 ---
 title: Creating, Controlling, or Importing a GPO
 description: Creating, Controlling, or Importing a GPO
-author: jamiejdt
+author: dansimp
 ms.assetid: 0cc1b6ee-3335-4d84-9e1c-d1aefabfef51
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

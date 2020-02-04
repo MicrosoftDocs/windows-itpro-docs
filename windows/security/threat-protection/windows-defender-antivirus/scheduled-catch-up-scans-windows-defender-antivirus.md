@@ -9,16 +9,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 12/10/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Configure scheduled quick or full Windows Defender Antivirus scans
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 > [!NOTE]
 > By default, Windows Defender Antivirus checks for an update 15 minutes before the time of any scheduled scans. You can [Manage the schedule for when protection updates should be downloaded and applied](manage-protection-update-schedule-windows-defender-antivirus.md) to override this default. 
@@ -28,7 +31,7 @@ In addition to always-on real-time protection and [on-demand](run-scan-windows-d
 
 You can configure the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-windows-defender-antivirus.md) or if the endpoint is being used. You can also specify when special scans to complete remediation should occur.
 
-This topic describes how to configure scheduled scans with Group Policy, PowerShell cmdlets, and WMI. You can also configure schedules scans with [System Center Configuration Manager](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) or [Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
+This topic describes how to configure scheduled scans with Group Policy, PowerShell cmdlets, and WMI. You can also configure schedules scans with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) or [Microsoft Intune](https://docs.microsoft.com/intune/device-restrictions-configure).
 
 To configure the Group Policy settings described in this topic:
 

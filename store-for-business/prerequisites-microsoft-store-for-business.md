@@ -2,6 +2,8 @@
 title: Prerequisites for Microsoft Store for Business and Education (Windows 10)
 description: There are a few prerequisites for using Microsoft Store for Business or Microsoft Store for Education.
 ms.assetid: CEBC6870-FFDD-48AD-8650-8B0DC6B2651D
+ms.reviewer: 
+manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -49,20 +51,20 @@ While not required, you can use a management tool to distribute and manage apps.
 
 If your organization restricts computers on your network from connecting to the Internet, there is a set of URLs that need to be available for devices to use Microsoft Store. Some of the Microsoft Store features use Store services. Devices using Microsoft Store – either to acquire, install, or update apps – will need access to these URLs. If you use a proxy server to block traffic, your configuration needs to allow these URLs:
 
--   login.live.com
--   login.windows.net
--   account.live.com
--   clientconfig.passport.net
--   windowsphone.com
--   \*.wns.windows.com
--   \*.microsoft.com
--   \*.s-microsoft.com
--   www.msftncsi.com (prior to Windows 10, version 1607)
--   www.msftconnecttest.com/connecttest.txt (replaces www.msftncsi.com
-starting with Windows 10, version 1607)
- 
+- login.live.com
+- login.windows.net
+- account.live.com
+- clientconfig.passport.net
+- windowsphone.com
+- \*.wns.windows.com
+- \*.microsoft.com
+- \*.s-microsoft.com
+- www.msftncsi.com (prior to Windows 10, version 1607)
+- www.msftconnecttest.com/connecttest.txt (replaces www.msftncsi.com
+  starting with Windows 10, version 1607)
+ 
 
- 
+ 
 
 
 

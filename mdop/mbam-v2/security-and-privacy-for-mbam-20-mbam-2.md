@@ -1,12 +1,15 @@
 ---
 title: Security and Privacy for MBAM 2.0
 description: Security and Privacy for MBAM 2.0
-author: jamiejdt
+author: dansimp
 ms.assetid: 1b2859f8-2381-4ad7-8744-2caed88570ad
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

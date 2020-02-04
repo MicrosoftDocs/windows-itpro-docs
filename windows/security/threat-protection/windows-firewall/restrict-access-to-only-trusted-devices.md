@@ -2,12 +2,14 @@
 title: Restrict Access to Only Trusted Devices (Windows 10)
 description: Restrict Access to Only Trusted Devices
 ms.assetid: bc1f49a4-7d54-4857-8af9-b7c79f47273b
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -57,4 +59,4 @@ The following components are required for this deployment goal:
 
 -   **Active Directory**: Active Directory supports centralized management of connection security rules by configuring the rules in one or more GPOs that can be automatically applied to all relevant devices in the domain.
 
-**Next: **[Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md)
+**Next:** [Require Encryption When Accessing Sensitive Network Resources](require-encryption-when-accessing-sensitive-network-resources.md)

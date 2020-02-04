@@ -2,18 +2,17 @@
 title: PassportForWork CSP
 description: The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work).
 ms.assetid: 3BAE4827-5497-41EE-B47F-5C071ADB2C51
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
-ms.date: 10/31/2018
+author: manikadhiman
+ms.date: 07/19/2019
 ---
 
 # PassportForWork CSP
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The PassportForWork configuration service provider is used to provision Windows Hello for Business (formerly Microsoft Passport for Work). It allows you to login to Windows using your Active Directory or Azure Active Directory account and replace passwords, smartcards, and virtual smart cards.
 
@@ -36,7 +35,7 @@ The following diagram shows the PassportForWork configuration service provider i
 Root node for PassportForWork configuration service provider.
 
 <a href="" id="tenantid"></a>***TenantId***  
-A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management.
+A globally unique identifier (GUID), without curly braces ( { , } ), that is used as part of Windows Hello for Business provisioning and management. To get a GUID, use the PowerShell cmdlet [Get-AzureAccount](https://docs.microsoft.com/powershell/module/servicemanagement/azure/get-azureaccount). For more information see [Get Windows Azure Active Directory Tenant ID in Windows PowerShell](https://devblogs.microsoft.com/scripting/get-windows-azure-active-directory-tenant-id-in-windows-powershell).
 
 <a href="" id="tenantid-policies"></a>***TenantId*/Policies**  
 Node for defining the Windows Hello for Business policy settings.
@@ -191,7 +190,7 @@ Default value is false. If you set this policy to true, Remote Windows Hello for
 
 Supported operations are Add, Get, Delete, and Replace.
 
-*Not supported on Windows Holographic and Windows Holographic for Business.*
+*Not supported on Windows Holographic and Windows Holographic for Business prior to Windows 10 version 1903 (May 2019 Update).*
 
 <a href="" id="tenantid-policies-usehellocertificatesassmartcardcertificates"></a>***TenantId*/Policies/UseHelloCertificatesAsSmartCardCertificates** (only for ./Device/Vendor/MSFT)  
 Added in Windows 10, version 1809. If you enable this policy setting, applications use Windows Hello for Business certificates as smart card certificates. Biometric factors are unavailable when a user is asked to authorize the use of the certificate's private key. This policy setting is designed to allow compatibility with applications that rely exclusively on smart card certificates.
@@ -218,7 +217,7 @@ Default value is true, enabling the biometric gestures for use with Windows Hell
 
 Supported operations are Add, Get, Delete, and Replace.
 
-*Not supported on Windows Holographic and Windows Holographic for Business.*
+*Not supported on Windows Holographic and Windows Holographic for Business prior to Windows 10 version 1903 (May 2019 Update).*
 
 <a href="" id="biometrics-facialfeaturesuseenhancedantispoofing--only-for---device-vendor-msft-"></a>**Biometrics/FacialFeaturesUseEnhancedAntiSpoofing** (only for ./Device/Vendor/MSFT)  
 Boolean value used to enable or disable enhanced anti-spoofing for facial feature recognition on Windows Hello face authentication. This node was added in Windows 10, version 1511.
@@ -229,11 +228,9 @@ If you set this policy to true, Windows requires all users on managed devices to
 
 Note that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.
 
-
-
 Supported operations are Add, Get, Delete, and Replace.
 
-*Not supported on Windows Holographic and Windows Holographic for Business.*
+*Not supported on Windows Holographic and Windows Holographic for Business prior to Windows 10 version 1903 (May 2019 Update).*
 
 <a href="" id="deviceunlock"></a>**DeviceUnlock** (only for ./Device/Vendor/MSFT)  
 Added in Windows 10, version 1803. Interior node.
@@ -267,11 +264,28 @@ Added in Windows 10, version 1803. List of plugins (comma separated) that the pa
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
+<a href="" id="securitykey"></a>**SecurityKey** (only for ./Device/Vendor/MSFT)  
+Added in Windows 10, version 1903. Interior node.
+
+Scope is permanent. Supported operation is Get.
+
+
+<a href="" id="securitykey-usesecuritykeyforsignin"></a>**SecurityKey/UseSecurityKeyForSignin** (only for ./Device/Vendor/MSFT)  
+Added in Windows 10, version 1903. Enables users to sign-in to their device with a [FIDO2 security key](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys) that is compatible with Microsoft’s implementation.
+
+Scope is dynamic. Supported operations are Add, Get, Replace, and Delete.
+
+Value type is integer. 
+
+Valid values:  
+- 0 (default) - disabled.
+- 1 - enabled.
+
 ## Examples
 
 Here's an example for setting Windows Hello for Business and setting the PIN policies. It also turns on the use of biometrics and TPM.
 
-``` syntax
+```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
           <SyncBody>
             <Add>

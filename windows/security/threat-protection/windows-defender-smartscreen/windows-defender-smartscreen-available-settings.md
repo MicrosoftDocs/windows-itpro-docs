@@ -1,14 +1,17 @@
 ---
 title: Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings (Windows 10)
 description: A list of all available setttings for Windows Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
-keywords: SmartScreen Filter, Windows SmartScreen
+keywords: SmartScreen Filter, Windows SmartScreen, Windows Defender SmartScreen
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: jasongerend
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 1/26/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 # Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings
 **Applies to:**
@@ -18,7 +21,7 @@ ms.date: 1/26/2018
 
 Windows Defender SmartScreen works with Intune, Group Policy, and mobile device management (MDM) settings to help you manage your organization's computer settings. Based on how you set up Windows Defender SmartScreen, you can show employees a warning page and let them continue to the site, or you can block the site entirely.
 
-See [Windows 10 (and later) settings to protect devices using Intune](https://docs.microsoft.com/en-us/intune/endpoint-protection-windows-10#windows-defender-smartscreen-settings) for the controls you can use in Intune.
+See [Windows 10 (and later) settings to protect devices using Intune](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-defender-smartscreen-settings) for the controls you can use in Intune.
 
 
 ## Group Policy settings
@@ -32,12 +35,12 @@ SmartScreen uses registry-based Administrative Template policy settings. For mor
 <tr>
 <td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure Windows Defender SmartScreen<p><strong>Windows 10, Version 1607 and earlier:</strong><br>Administrative Templates\Windows Components\File Explorer\Configure Windows SmartScreen</td>
 <td>At least Windows Server 2012, Windows 8 or Windows RT</td>
-<td>This policy setting turns on Windows Defender SmartScreen.<p>If you enable this setting, it turns on Windows Defender SmartScreen and your employees are unable to turn it off. Additionally, when enabling this feature, you must also pick whether SmartScreen should Warn your employees or Warn and prevent bypassing the message (effectively blocking the employee from the site).<p>If you disable this setting, it turns off Windows Defender SmartScreen and your employees are unable to turn it on.<p>If you don't configure this setting, your employees can decide whether to use Windows Defender SmartScreen.</td>
+<td>This policy setting turns on Windows Defender SmartScreen.<p>If you enable this setting, it turns on Windows Defender SmartScreen and your employees are unable to turn it off. Additionally, when enabling this feature, you must also pick whether Windows Defender SmartScreen should Warn your employees or Warn and prevent bypassing the message (effectively blocking the employee from the site).<p>If you disable this setting, it turns off Windows Defender SmartScreen and your employees are unable to turn it on.<p>If you don't configure this setting, your employees can decide whether to use Windows Defender SmartScreen.</td>
 </tr>
 <tr>
 <td>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
 <td>Windows 10, version 1703</td>
-<td>This setting helps protect PCs by allowing users to install apps only from the Microsoft Store. SmartScreen must be enabled for this feature to work properly.<p>If you enable this setting, your employees can only install apps from the Microsoft Store.<p>If you disable this setting, your employees can install apps from anywhere, including as a download from the Internet.<p>If you don't configure this setting, your employees can choose whether they can install from anywhere or only from Microsoft Store.</td>
+<td>This setting helps protect PCs by allowing users to install apps only from the Microsoft Store. Windows Defender SmartScreen must be enabled for this feature to work properly.<p>If you enable this setting, your employees can only install apps from the Microsoft Store.<p>If you disable this setting, your employees can install apps from anywhere, including as a download from the Internet.<p>If you don't configure this setting, your employees can choose whether they can install from anywhere or only from Microsoft Store.</td>
 </tr>
 <tr>
 <td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen<p><strong>Windows 10, Version 1607 and earlier:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows SmartScreen</td>
@@ -57,23 +60,23 @@ SmartScreen uses registry-based Administrative Template policy settings. For mor
 <tr>
 <td>Administrative Templates\Windows Components\Internet Explorer\Prevent managing SmartScreen Filter</td>
 <td>Internet Explorer 9 or later</td>
-<td>This policy setting prevents the employee from managing SmartScreen Filter.<p>If you enable this policy setting, the employee isn't prompted to turn on SmartScreen Filter. All website addresses that are not on the filter's allow list are sent automatically to Microsoft without prompting the employee.<p>If you disable or don't configure this policy setting, the employee is prompted to decide whether to turn on SmartScreen Filter during the first-run experience.</td>
+<td>This policy setting prevents the employee from managing Windows Defender SmartScreen.<p>If you enable this policy setting, the employee isn't prompted to turn on Windows Defender SmartScreen. All website addresses that are not on the filter's allow list are sent automatically to Microsoft without prompting the employee.<p>If you disable or don't configure this policy setting, the employee is prompted to decide whether to turn on Windows Defender SmartScreen during the first-run experience.</td>
 </tr>
 <tr>
 <td>Administrative Templates\Windows Components\Internet Explorer\Prevent bypassing SmartScreen Filter warnings</td>
 <td>Internet Explorer 8 or later</td>
-<td>This policy setting determines whether an employee can bypass warnings from SmartScreen Filter.<p>If you enable this policy setting, SmartScreen Filter warnings block the employee.<p>If you disable or don't configure this policy setting, the employee can bypass SmartScreen Filter warnings.</td>
+<td>This policy setting determines whether an employee can bypass warnings from Windows Defender SmartScreen.<p>If you enable this policy setting, Windows Defender SmartScreen warnings block the employee.<p>If you disable or don't configure this policy setting, the employee can bypass Windows Defender SmartScreen warnings.</td>
 </tr>
 <tr>
 <td>Administrative Templates\Windows Components\Internet Explorer\Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the Internet</td>
 <td>Internet Explorer 9 or later</td>
-<td>This policy setting determines whether the employee can bypass warnings from SmartScreen Filter. SmartScreen Filter warns the employee about executable files that Internet Explorer users do not commonly download from the Internet.<p>If you enable this policy setting, SmartScreen Filter warnings block the employee.<p>If you disable or don't configure this policy setting, the employee can bypass SmartScreen Filter warnings.</td>
+<td>This policy setting determines whether the employee can bypass warnings from Windows Defender SmartScreen. Windows Defender SmartScreen warns the employee about executable files that Internet Explorer users do not commonly download from the Internet.<p>If you enable this policy setting, Windows Defender SmartScreen warnings block the employee.<p>If you disable or don't configure this policy setting, the employee can bypass Windows Defender SmartScreen warnings.</td>
 </tr>
 </table>
 
 ## MDM settings
 If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. All settings support both desktop computers (running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune) and Windows 10 Mobile devices.  <br><br> 
-For SmartScreen Internet Explorer MDM policies, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer).
+For Windows Defender SmartScreen Internet Explorer MDM policies, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer).
 <table>
 <tr>
 <th align="left">Setting</th>
@@ -112,8 +115,8 @@ For SmartScreen Internet Explorer MDM policies, see [Policy CSP - InternetExplor
 <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/SmartScreen/EnableSmartScreenInShell</li>
 <li><strong>Data type.</strong> Integer</li>
 <li><strong>Allowed values:</strong><ul>
-<li><strong>0 .</strong> Turns off SmartScreen in Windows for app and file execution.</li>
-<li><strong>1.</strong> Turns on SmartScreen in Windows for app and file execution.</li></ul></li></ul>
+<li><strong>0 .</strong> Turns off Windows Defender SmartScreen in Windows for app and file execution.</li>
+<li><strong>1.</strong> Turns on Windows Defender SmartScreen in Windows for app and file execution.</li></ul></li></ul>
 </td>
 </tr>
 <tr>
@@ -124,8 +127,8 @@ For SmartScreen Internet Explorer MDM policies, see [Policy CSP - InternetExplor
 <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/SmartScreen/PreventOverrideForFilesInShell</li>
 <li><strong>Data type.</strong> Integer</li>
 <li><strong>Allowed values:</strong><ul>
-<li><strong>0 .</strong> Employees can ignore SmartScreen warnings and run malicious files.</li>
-<li><strong>1.</strong> Employees can't ignore SmartScreen warnings and run malicious files.</li></ul></li></ul>
+<li><strong>0 .</strong> Employees can ignore Windows Defender SmartScreen warnings and run malicious files.</li>
+<li><strong>1.</strong> Employees can't ignore Windows Defender SmartScreen warnings and run malicious files.</li></ul></li></ul>
 </td>
 </tr>
 <tr>
@@ -136,8 +139,8 @@ For SmartScreen Internet Explorer MDM policies, see [Policy CSP - InternetExplor
 <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/Browser/PreventSmartscreenPromptOverride</li>
 <li><strong>Data type.</strong> Integer</li>
 <li><strong>Allowed values:</strong><ul>
-<li><strong>0 .</strong> Employees can ignore SmartScreen warnings.</li>
-<li><strong>1.</strong> Employees can't ignore SmartScreen warnings.</li></ul></li></ul>
+<li><strong>0 .</strong> Employees can ignore Windows Defender SmartScreen warnings.</li>
+<li><strong>1.</strong> Employees can't ignore Windows Defender SmartScreen warnings.</li></ul></li></ul>
 </td>
 </tr>
 <tr>
@@ -148,8 +151,8 @@ For SmartScreen Internet Explorer MDM policies, see [Policy CSP - InternetExplor
 <li><strong>URI full path.</strong> ./Vendor/MSFT/Policy/Config/Browser/PreventSmartScreenPromptOverrideForFiles</li>
 <li><strong>Data type.</strong> Integer</li>
 <li><strong>Allowed values:</strong><ul>
-<li><strong>0 .</strong> Employees can ignore SmartScreen warnings for files.</li>
-<li><strong>1.</strong> Employees can't ignore SmartScreen warnings for files.</li></ul></li></ul>
+<li><strong>0 .</strong> Employees can ignore Windows Defender SmartScreen warnings for files.</li>
+<li><strong>1.</strong> Employees can't ignore Windows Defender SmartScreen warnings for files.</li></ul></li></ul>
 </td>
 </tr>
 </table>

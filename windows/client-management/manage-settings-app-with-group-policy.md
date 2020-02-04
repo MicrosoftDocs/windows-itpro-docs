@@ -4,17 +4,20 @@ description: Find out how to manage the Settings app with Group Policy.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: brianlic-msft
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
+
+# Manage the Settings app with Group Policy
+
 
 **Applies to**
 
 -   Windows 10, Windows Server 2016
-
-
-# Manage the Settings app with Group Policy
 
 You can now manage the pages that are shown in the Settings app by using Group Policy. This lets you hide specific pages from users. Before Windows 10, version 1703, you could either show everything in the Settings app or hide it completely.
 To make use of the Settings App group polices on Windows server 2016, install fix [4457127](https://support.microsoft.com/help/4457127/windows-10-update-kb4457127) or a later cumulative update. 
@@ -38,7 +41,7 @@ Policy paths:
 
 The Group Policy can be configured in one of two ways: specify a list of pages that are shown or specify a list of pages to hide. To do this, add either **ShowOnly:** or **Hide:** followed by a semicolon delimited list of URIs in **Settings Page Visiblity**. For a full list of URIs, see the URI scheme reference section in [Launch the Windows Settings app](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference). 
 
->[!NOTE]  
+>[!NOTE]
 > When you specify the URI in the Settings Page Visibility textbox, don't include **ms-settings:** in the string.
 
 Here are some examples:

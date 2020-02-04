@@ -2,11 +2,13 @@
 title: Change the Microsoft Surface Hub device account
 description: You can change the device account in Settings to either add an account if one was not already provisioned, or to change any properties of an account that was already provisioned.
 ms.assetid: AFC43043-3319-44BC-9310-29B1F375E672
+ms.reviewer: 
+manager: dansimp
 keywords: change device account, change properties, Surface Hub
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium

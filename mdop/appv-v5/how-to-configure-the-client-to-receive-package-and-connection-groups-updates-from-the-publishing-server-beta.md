@@ -1,8 +1,11 @@
 ---
 title: How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server
 description: How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server
-author: jamiejdt
+author: dansimp
 ms.assetid: f5dfd96d-4b63-468c-8d93-9dfdf47c28fd
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,7 +24,7 @@ Use the following steps to configure the App-V 5.0 client to receive updates fro
 **Note**  
 For the following procedures the management server was installed on a computer named **MyMgmtSrv**, and the publishing server was installed on a computer named **MyPubSrv**.
 
- 
+ 
 
 **To configure the App-V 5.0 client to receive updates from the publishing server**
 
@@ -67,16 +70,16 @@ For the following procedures the management server was installed on a computer n
 
     The command will query the publishing server for the packages and connection groups that need to be added or removed for this particular client based on the entitlements for the packages and connection groups as configured on the management server.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 
 
 [Operations for App-V 5.0](operations-for-app-v-50.md)
 
- 
+ 
 
- 
+ 
 
 
 

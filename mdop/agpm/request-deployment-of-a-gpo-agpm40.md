@@ -1,8 +1,11 @@
 ---
 title: Request Deployment of a GPO
 description: Request Deployment of a GPO
-author: jamiejdt
+author: dansimp
 ms.assetid: 5783cfd0-bd93-46b4-8fa0-684bd39aa8fc
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -4,11 +4,13 @@ description: This section describes the Start settings that you can configure in
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 09/06/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Start (Windows Configuration Designer reference)
@@ -32,7 +34,7 @@ Use StartLayout to select the `LayoutModification.xml` file that applies a custo
 >[!NOTE]
 >The XML file that defines the Start layout for Windows 10 Mobile must be named `LayoutModification.xml`.
 
-For more information, see [Start layout XML for mobile editions of Windows 10 ](../mobile-devices/lockdown-xml.md)).
+For more information, see [Start layout XML for mobile editions of Windows 10](../mobile-devices/lockdown-xml.md)).
 
 ## StartLayoutFilePath
 

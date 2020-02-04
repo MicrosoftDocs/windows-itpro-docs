@@ -1,12 +1,15 @@
 ---
 title: How to Load Virtual Applications from the Desktop Notification Area
 description: How to Load Virtual Applications from the Desktop Notification Area
-author: jamiejdt
+author: dansimp
 ms.assetid: f52758eb-8b81-4b3c-9bc3-adcf7c00c238
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -21,7 +24,7 @@ The applications are loaded one application at a time. The progress bar shows yo
 **Note**  
 If your system encounters an error while loading an application, it reports the error to you. You must dismiss the error dialog before it will load the next application.
 
- 
+ 
 
 **To load all applications**
 
@@ -46,9 +49,9 @@ If your system encounters an error while loading an application, it reports the 
 
 [How to Use the Desktop Notification Area for Application Virtualization Client Management](how-to-use-the-desktop-notification-area-for-application-virtualization-client-management.md)
 
- 
+ 
 
- 
+ 
 
 
 

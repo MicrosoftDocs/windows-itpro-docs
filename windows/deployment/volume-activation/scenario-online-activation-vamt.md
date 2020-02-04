@@ -2,11 +2,14 @@
 title: Scenario 1 Online Activation (Windows 10)
 description: Scenario 1 Online Activation
 ms.assetid: 94dba40e-383a-41e4-b74b-9e884facdfd3
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+audience: itproauthor: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---
@@ -79,14 +82,14 @@ You can sort the list of products so that it is easier to find the computers tha
 ## <a href="" id="bkmk-partsix"></a>Step 6: Collect status information from the computers in the list
 
 To collect the status from select computers in the database, you can select computers in the product list view by using one of the following methods:
--   To select a block of consecutively listed computers, click the first computer that you want to select, and then click the last computer while pressing the **Shift** key.
--   To select computers which are not listed consecutively, hold down the **Ctrl** key and select each computer for which you want to collect the status information.
-**To collect status information from the selected computers**
-1.  In the right-side **Actions** pane, click **Update license status** in the **Selected Items** menu and then click a credential option. Choose **Alternate Credentials** only if you are updating products that require administrator credentials that are different from the ones that you used to log on to the computer. Otherwise, click **Current Credentials** and continue to step 2.If you are supplying alternate credentials, in the **Windows Security** dialog box, type the appropriate user name and password and then click **OK**.
-2.  VAMT displays the **Collecting product information** dialog box while it collects the license status of all supported products on the selected computers. When the process is finished, the updated license status of each product will appear in the product list view in the center pane.
+- To select a block of consecutively listed computers, click the first computer that you want to select, and then click the last computer while pressing the **Shift** key.
+- To select computers which are not listed consecutively, hold down the **Ctrl** key and select each computer for which you want to collect the status information.
+  **To collect status information from the selected computers**
+- In the right-side **Actions** pane, click **Update license status** in the **Selected Items** menu and then click a credential option. Choose **Alternate Credentials** only if you are updating products that require administrator credentials that are different from the ones that you used to log on to the computer. Otherwise, click **Current Credentials** and continue to step 2.If you are supplying alternate credentials, in the **Windows Security** dialog box, type the appropriate user name and password and then click **OK**.
+- VAMT displays the **Collecting product information** dialog box while it collects the license status of all supported products on the selected computers. When the process is finished, the updated license status of each product will appear in the product list view in the center pane.
 
-    **Note**  
-    If a computer has more than one supported product installed, VAMT adds an entry for each product. The entry appears under the appropriate product heading.
+  **Note**  
+  If a computer has more than one supported product installed, VAMT adds an entry for each product. The entry appears under the appropriate product heading.
 
 ## <a href="" id="bkmk-partseven"></a>Step 7: Add product keys and determine the remaining activation count
 
@@ -129,5 +132,5 @@ To collect the status from select computers in the database, you can select comp
 
 ## Related topics
 - [VAMT Step-by-Step Scenarios](vamt-step-by-step.md)
- 
- 
+ 
+ 

@@ -1,19 +1,21 @@
 ---
 title: NetworkProxy CSP
 description: NetworkProxy CSP
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 08/29/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # NetworkProxy CSP
 
 The NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections. This CSP was added in Windows 10, version 1703.
 
-> [!Note]  
+> [!NOTE]
 > In Windows 10 Mobile, the NetworkProxy CSP only works in ethernet connections. Use the WiFi CSP to configure per-network proxy for Wi-Fi connections in mobile devices.  
 
 How the settings work:  
@@ -38,10 +40,10 @@ Added in Windows 10, version 1803. When set to 0, it enables proxy configuration
 
 Supported operations are Add, Get, Replace, and Delete.
 
-> [!Note]  
-> Per user proxy configuration setting is not supported.
+> [!Note]
+> Per user proxy configuration setting is not supported using a configuration file, only modifying registry settings on a local machine.
 
-<a href="" id="autodetect"></a>**AutoDetect**  
+<a href="" id="autodetect"></a>**AutoDetect**
 Automatically detect settings. If enabled, the system tries to find the path to a PAC script.
 
 Valid values:
@@ -50,12 +52,12 @@ Valid values:
 <li>1 (default) - Enabled</li>
 </ul>
 
-The data type is int. Supported operations are Get and Replace. Starting in Window 10, version 1803, the Delete operation is also supported.
+The data type is integer. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
 
-<a href="" id="setupscripturl"></a>**SetupScriptUrl**  
+<a href="" id="setupscripturl"></a>**SetupScriptUrl**
 Address to the PAC script you want to use.
 
-The data type is string. Supported operations are Get and Replace. Starting in Window 10, version 1803, the Delete operation is also supported.
+The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
 
 <a href="" id="proxyserver"></a>**ProxyServer**  
 Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings do not apply to VPN connections.
@@ -65,19 +67,70 @@ Supported operation is Get.
 <a href="" id="proxyaddress"></a>**ProxyAddress**  
 Address to the proxy server. Specify an address in the format &lt;server&gt;[“:”&lt;port&gt;]. 
 
-The data type is string. Supported operations are Get and Replace. Starting in Window 10, version 1803, the Delete operation is also supported.
+The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
 
 <a href="" id="exceptions"></a>**Exceptions**  
 Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node. Use semicolons (;) to separate entries. 
 
-The data type is string. Supported operations are Get and Replace. Starting in Window 10, version 1803, the Delete operation is also supported.
+The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
 
 <a href="" id="useproxyforlocaladdresses"></a>**UseProxyForLocalAddresses**  
 Specifies whether the proxy server should be used for local (intranet) addresses. 
 Valid values:
 <ul>
-<li>0 (default) - Do not use proxy server for local addresses</li>
-<li>1 - Use proxy server for local addresses</li>
+<li>0 (default) - Use proxy server for local addresses</li>
+<li>1 - Do not use proxy server for local addresses</li>
 </ul>
 
-The data type is int. Supported operations are Get and Replace. Starting in Window 10, version 1803, the Delete operation is also supported.
+The data type is integer. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
+
+## Configuration Example
+
+These generic code portions for the options **ProxySettingsPerUser**, **Autodetect**, and **SetupScriptURL** can be used for a specific operation, for example Replace.  Only enter the portion of code needed in the **Replace** section.
+```xml
+<Replace>
+    <CmdID>1</CmdID>
+    <Item>
+        <Target>
+            <LocURI>./Vendor/MSFT/NetworkProxy/ProxySettingsPerUser</LocURI>
+        </Target>
+        <Meta>
+            <Format xmlns="syncml:metinf">int</Format>
+            <Type>text/plain</Type>
+        </Meta>
+        <Data>0</Data>
+    </Item>
+</Replace>
+```
+
+```xml
+<Replace>
+    <CmdID>2</CmdID>
+    <Item>
+        <Target>
+            <LocURI>./Vendor/MSFT/NetworkProxy/AutoDetect</LocURI>
+        </Target>
+        <Meta>
+            <Format xmlns="syncml:metinf">int</Format>
+            <Type>text/plain</Type>
+        </Meta>
+        <Data>1</Data>
+    </Item>
+</Replace> 
+```
+
+```xml
+<Replace>
+    <CmdID>3</CmdID>
+    <Item>
+        <Target>
+            <LocURI>./Vendor/MSFT/NetworkProxy/SetupScriptUrl</LocURI>
+        </Target>
+        <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+            <Type>text/plain</Type>
+        </Meta>
+        <Data>Insert the proxy PAC URL location here:</Data>
+    </Item>
+</Replace>
+```

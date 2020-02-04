@@ -4,11 +4,13 @@ description: This section describes the Calling settings that you can configure 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
-ms.localizationpriority: medium
-ms.author: jdecker
+author: dansimp
+ms.localizationpriority: medium 
+ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Calling (Windows Configuration Designer reference)
@@ -55,7 +57,7 @@ See [Dialer codes to launch diagnostic applications](https://docs.microsoft.com/
 
 ## PerSimSettings
 
-Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, select **Add**, and then configure the folowing settings. 
+Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, select **Add**, and then configure the following settings. 
 
 ### Critical
 

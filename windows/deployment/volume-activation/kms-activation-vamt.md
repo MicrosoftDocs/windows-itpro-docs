@@ -2,11 +2,14 @@
 title: Perform KMS Activation (Windows 10)
 description: Perform KMS Activation
 ms.assetid: 5a3ae8e6-083e-4153-837e-ab0a225c1d10
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+audience: itproauthor: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

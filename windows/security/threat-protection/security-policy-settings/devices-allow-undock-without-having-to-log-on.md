@@ -2,12 +2,14 @@
 title: Devices Allow undock without having to log on (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Devices Allow undock without having to log on security policy setting.
 ms.assetid: 1d403f5d-ad41-4bb4-9f4a-0779c1c14b8c
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -27,7 +29,7 @@ Describes the best practices, location, values, and security considerations for 
 This policy setting enables or disables the ability of a user to remove a portable device from a docking station without logging on. If you enable this policy setting, users can press a docked portable device's physical eject button to safely undock the device. If you disable this policy setting, the user must log on to receive permission to undock the device. Only users who have the **Remove Computer from Docking Station** privilege can obtain this permission.
 
 >**Note:**  Disabling this policy setting only reduces theft risk for portable devices that cannot be mechanically undocked. Devices that can be mechanically undocked can be physically removed by the user whether or not they use the Windows undocking functionality.
- 
+ 
 Enabling this policy setting means that anyone with physical access to a device that has been placed in its docking station can remove the computer and possibly tamper with it. For devices that do not have docking stations, this policy setting has no impact. However, for users with a mobile computer that is normally docked while they are in the office, this policy setting will help lower the risk of equipment theft or a malicious user gaining physical access to these devices
 
 ### Possible values
@@ -56,7 +58,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings | Enabled| 
 | Client Computer Effective Default Settings| Enabled| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

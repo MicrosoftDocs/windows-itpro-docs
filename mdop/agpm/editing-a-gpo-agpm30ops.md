@@ -1,8 +1,11 @@
 ---
 title: Editing a GPO
 description: Editing a GPO
-author: jamiejdt
+author: dansimp
 ms.assetid: 3024051a-ff33-46d0-9c3e-68ebae7f6b60
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

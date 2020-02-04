@@ -1,12 +1,15 @@
 ---
 title: About Microsoft Application Virtualization 4.5 SP2
 description: About Microsoft Application Virtualization 4.5 SP2
-author: jamiejdt
+author: dansimp
 ms.assetid: c498adbe-e331-42c8-99fe-29623fae2345
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

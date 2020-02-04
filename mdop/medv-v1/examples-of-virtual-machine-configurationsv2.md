@@ -1,12 +1,15 @@
 ---
 title: Examples of Virtual Machine Configurations
 description: Examples of Virtual Machine Configurations
-author: jamiejdt
+author: dansimp
 ms.assetid: 5937601e-41ab-4ca2-8fa1-3c9154710cd6
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ The following are examples of typical virtual machine configurations: one in a p
 **Note**  
 These examples are not intended for use in all environments. Adjust the configuration according to your environment.
 
- 
+ 
 
 **To configure a typical domain setup in a persistent MED-V workspace**
 
@@ -62,9 +65,9 @@ These examples are not intended for use in all environments. Adjust the configur
 
 [How to Set Up Script Actions](how-to-set-up-script-actions.md)
 
- 
+ 
 
- 
+ 
 
 
 

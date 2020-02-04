@@ -1,8 +1,11 @@
 ---
 title: Review GPO Settings
 description: Review GPO Settings
-author: jamiejdt
+author: dansimp
 ms.assetid: bed956d0-082e-4fa9-bf1e-572d0d3d02ec
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

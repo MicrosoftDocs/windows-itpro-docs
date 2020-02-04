@@ -1,12 +1,15 @@
 ---
 title: How to Delete an Administrator Group
 description: How to Delete an Administrator Group
-author: jamiejdt
+author: dansimp
 ms.assetid: 398a8028-e128-4020-bbe2-59ba63b5cd48
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

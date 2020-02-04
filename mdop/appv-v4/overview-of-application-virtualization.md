@@ -1,12 +1,15 @@
 ---
 title: Overview of Application Virtualization
 description: Overview of Application Virtualization
-author: jamiejdt
+author: dansimp
 ms.assetid: 80545ef4-cf4c-420c-88d6-48e9f226051f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -18,7 +21,7 @@ Microsoft Application Virtualization (App-V) can make applications available to 
 
 The App-V client is the feature that lets the end user interact with the applications after they have been published to the computer. The client manages the virtual environment in which the virtualized applications run on each computer. After the client has been installed on a computer, the applications must be made available to the computer through a process known as *publishing*, which enables the end user to run the virtual applications. The publishing process copies the virtual application icons and shortcuts to the computer—typically on the Windows desktop or on the **Start** menu—and also copies the package definition and file type association information to the computer. Publishing also makes the application package content available to the end user’s computer.
 
-The virtual application package content can be copied onto one or more Application Virtualization servers so that it can be streamed down to the clients on demand and cached locally. File servers and Web servers can also be used as streaming servers, or the content can be copied directly to the end user’s computer—for example, if you are using an electronic software distribution system, such as Microsoft System Center Configuration Manager 2007. In a multi-server implementation, maintaining the package content and keeping it up to date on all the streaming servers requires a comprehensive package management solution. Depending on the size of your organization, you might need to have many virtual applications available to end users located all over the world. Managing the packages to ensure that the appropriate applications are available to all users where and when they need access to them is therefore an important requirement.
+The virtual application package content can be copied onto one or more Application Virtualization servers so that it can be streamed down to the clients on demand and cached locally. File servers and Web servers can also be used as streaming servers, or the content can be copied directly to the end user’s computer—for example, if you are using an electronic software distribution system, such as Microsoft Endpoint Configuration Manager. In a multi-server implementation, maintaining the package content and keeping it up to date on all the streaming servers requires a comprehensive package management solution. Depending on the size of your organization, you might need to have many virtual applications available to end users located all over the world. Managing the packages to ensure that the appropriate applications are available to all users where and when they need access to them is therefore an important requirement.
 
 ## Microsoft Application Virtualization System Features
 

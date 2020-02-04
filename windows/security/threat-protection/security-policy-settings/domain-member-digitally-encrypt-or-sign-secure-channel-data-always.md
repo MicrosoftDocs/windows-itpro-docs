@@ -1,13 +1,15 @@
 ---
 title: Domain member Digitally encrypt or sign secure channel data (always) (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Domain member Digitally encrypt or sign secure channel data (always) security policy setting.
+description: Best practices, location, values, and security considerations for the policy setting, Domain member Digitally encrypt or sign secure channel data (always).
 ms.assetid: 4480c7cb-adca-4f29-b4b8-06eb68d272bf
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -35,7 +37,7 @@ The following policy settings determine whether a secure channel can be establis
 
 Setting **Domain member: Digitally encrypt or sign secure channel data (always)** to **Enabled** prevents establishing a secure channel with any domain controller that cannot sign or encrypt all secure channel data.
 
-To protect authentication traffic from man-in-the-middle, replay, and other types of network attacks, Windows-based computers create a communication channel through NetLogon called secure channels. These channels authenticate machine accounts. They also authenticate user accounts when a remote user connects to a network resource and the user account exists in a trusted domain. This is called pass-through authentication, and it allows a device running Windows othat has joined a domain to have access to the user account database in its domain and in any trusted domains.
+To protect authentication traffic from man-in-the-middle, replay, and other types of network attacks, Windows-based computers create a communication channel through NetLogon called secure channels. These channels authenticate machine accounts. They also authenticate user accounts when a remote user connects to a network resource and the user account exists in a trusted domain. This is called pass-through authentication, and it allows a device running Windows that has joined a domain to have access to the user account database in its domain and in any trusted domains.
 
 To enable the **Domain member: Digitally encrypt or sign secure channel data (always)** policy setting on a member workstation or server, all domain controllers in the domain that the member belongs to must be capable of signing or encrypting all secure-channel data.
 
@@ -45,27 +47,27 @@ When a device joins a domain, a machine account is created. After joining the do
 
 ### Possible values
 
--   Enabled
+- Enabled
 
-    The policy [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure 
-    channel traffic.
+  The policy [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure 
+  channel traffic.
 
--   Disabled
+- Disabled
 
-    The encryption and signing of all secure channel traffic is negotiated with the domain controller, in which case the level of signing and encryption depends on the version of the domain controller and the settings of the following policies:
+  The encryption and signing of all secure channel traffic is negotiated with the domain controller, in which case the level of signing and encryption depends on the version of the domain controller and the settings of the following policies:
 
-    1.  [Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data-when-possible.md)
-    2.  [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md)
+  1.  [Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data-when-possible.md)
+  2.  [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md)
 
--   Not defined
-### Best practices
+- Not defined
+  ### Best practices
 
--   Set **Domain member: Digitally encrypt or sign secure channel data (always)** to **Enabled**.
--   Set [Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data-when-possible.md) to **Enabled**.
--   Set [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md) to **Enabled**.
+- Set **Domain member: Digitally encrypt or sign secure channel data (always)** to **Enabled**.
+- Set [Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data-when-possible.md) to **Enabled**.
+- Set [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md) to **Enabled**.
 
 >**Note:**  You can enable the policy settings [Domain member: Digitally encrypt secure channel data (when possible)](domain-member-digitally-encrypt-secure-channel-data-when-possible.md) and [Domain member: Digitally sign secure channel data (when possible)](domain-member-digitally-sign-secure-channel-data-when-possible.md) on all devices in the domain that support these policy settings without affecting earlier-version clients and applications.
- 
+ 
 ### Location
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
@@ -82,7 +84,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Enabled| 
 | Member Server Effective Default Settings | Enabled| 
 | Client Computer Effective Default Settings | Enabled| 
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

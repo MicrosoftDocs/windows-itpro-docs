@@ -1,12 +1,15 @@
 ---
 title: How to Export a Report
 description: How to Export a Report
-author: jamiejdt
+author: dansimp
 ms.assetid: 2f917130-db02-4c72-a45a-7928e51e689e
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

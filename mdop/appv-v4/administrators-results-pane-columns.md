@@ -1,12 +1,15 @@
 ---
 title: Administrators Results Pane Columns
 description: Administrators Results Pane Columns
-author: jamiejdt
+author: dansimp
 ms.assetid: 2ac86625-15a8-471a-846b-a42eae37ed72
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

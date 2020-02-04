@@ -1,12 +1,15 @@
 ---
 title: App-V 4.5 SP2 Release Notes
 description: App-V 4.5 SP2 Release Notes
-author: jamiejdt
+author: dansimp
 ms.assetid: 1b3a8a83-4523-4634-9f75-29bc22ca5815
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 
@@ -19,7 +22,7 @@ To search these Release Notes, press CTRL+F.
 **Important**  
 Read these Release Notes thoroughly before you install the Microsoft Application Virtualization Management System. These Release Notes contain information that you need to successfully install the Application Virtualization Management System. These Release Notes contain information that is not available in the product documentation. If there is a discrepancy between these Release Notes and other Application Virtualization Management System documentation, the latest change should be considered authoritative.
 
- 
+ 
 
 For updated information about known issues, please visit the Microsoft TechNet Library at [App-V 4.5 SP2 Release Notes](https://go.microsoft.com/fwlink/?LinkId=184640) (https://go.microsoft.com/fwlink/?LinkId=184640).
 
@@ -70,18 +73,18 @@ When this has been completed, install the App-V 4.5 SP2 Clients by using Setup.m
 
 When installing Microsoft Application Error Reporting, use the following command if you are installing or upgrading to the App-V 4.5 SP2 Desktop Client:
 
-**    msiexec /i dw20shared.msi APPGUID={C6FC75B9-7D86-4C44-8BDB-EAFE1F0E200D}  allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus**
+**msiexec /i dw20shared.msi APPGUID={C6FC75B9-7D86-4C44-8BDB-EAFE1F0E200D}  allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus**
 
 Alternatively, if you are installing or upgrading to the App-V 4.5 SP2 Client for Remote Desktop Services (formerly Terminal Services), use the following command:
 
-**    msiexec /i dw20shared.msi APPGUID={ECF80BBA-CA07-4A74-9ED6-E064F38AF1F5} allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus**
+**msiexec /i dw20shared.msi APPGUID={ECF80BBA-CA07-4A74-9ED6-E064F38AF1F5} allusers=1 reboot=suppress REINSTALL=all REINSTALLMODE=vomus**
 
 **Note**  
 -   The APPGUID parameter references the product code of the App-V Clients that you install or upgrade. The product code is unique for each Setup.msi. You can use the Orca Database Editor or a similar tool to examine Windows Installer files and determine the product code. This step is required for all installations or upgrades to App-V 4.5 SP2.
 
 -   This step is not required if you are upgrading and have previously installed Dw20shared.msi.
 
- 
+ 
 
 ### Improving performance when sequencing the .NET Framework
 
@@ -209,9 +212,9 @@ Microsoft, Active Directory, ActiveSync, MS-DOS, Windows, Windows Server, and W
 
 All other trademarks are property of their respective owners.
 
- 
+ 
 
- 
+ 
 
 
 

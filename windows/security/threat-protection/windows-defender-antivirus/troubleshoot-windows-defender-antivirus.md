@@ -9,16 +9,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/11/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Review event logs and error codes to troubleshoot issues with Windows Defender Antivirus
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 If you encounter a problem with Windows Defender Antivirus, you can search the tables in this topic to find a matching issue and potential solution.
 
@@ -28,12 +31,12 @@ The tables list:
 - [Windows Defender Antivirus client error codes](#error-codes)
 - [Internal Windows Defender Antivirus client error codes (used by Microsoft during development and testing)](#internal-error-codes)
 
->[!TIP]
->You can also visit the Windows Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
-
->- Cloud-delivered protection
->- Fast learning (including Block at first sight)
->- Potentially unwanted application blocking
+> [!TIP]
+> You can also visit the Microsoft Defender ATP demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
+> 
+> - Cloud-delivered protection
+> - Fast learning (including Block at first sight)
+> - Potentially unwanted application blocking
 
 <a id="windows-defender-av-ids"></a>
 ## Windows Defender Antivirus event IDs
@@ -44,7 +47,7 @@ You can directly view the event log, or if you have a third-party security infor
 
 The table in this section lists the main Windows Defender Antivirus event IDs and, where possible, provides suggested solutions to fix or resolve the error. 
 
-**To view a Windows Defender Antivirus event**
+## To view a Windows Defender Antivirus event
 
 1.  Open **Event Viewer**.
 2.  In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender Antivirus**.
@@ -52,11 +55,7 @@ The table in this section lists the main Windows Defender Antivirus event IDs an
 4.  In the details pane, view the list of individual events to find your event.
 5.  Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
 
-
-
-
-<style type='text/css'> table.oridealign td,th { vertical-align: top; text-align: left; } </style>
- <table class="oridealign"> 
+<table> 
 <tr>
 <th colspan="2" >Event ID: 1000</th>
 </tr>
@@ -97,7 +96,7 @@ Description:
 </ul>
 </dt>
 <dt>Scan Resources: &lt;Resources (such as files/directories/BHO) that were scanned.&gt;</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -138,7 +137,7 @@ Description:
 <li>Customer scan</li>
 </ul>
 </dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Scan Time: &lt;The duration of a scan.&gt;</dt>
 </dl>
 </td>
@@ -182,7 +181,7 @@ Description:
 <li>Customer scan</li>
 </ul>
 </dt>
-<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;&amp;lt;User&gt;</dt>
 <dt>Scan Time: &lt;The duration of a scan.&gt;</dt>
 </dl>
 </td>
@@ -226,7 +225,7 @@ Description:
 <li>Customer scan</li>
 </ul>
 </dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -269,7 +268,7 @@ Description:
 <li>Customer scan</li>
 </ul>
 </dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -312,7 +311,7 @@ Description:
 <li>Customer scan</li>
 </ul>
 </dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values.</dt>
 <dt>Error Description: &lt;Error description&gt;
@@ -360,7 +359,7 @@ Message:
 Description:
 </td>
 <td >
-For more information please see the following:
+For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -401,7 +400,7 @@ For more information please see the following:
 </ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>Status: &lt;Status&gt;</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
@@ -433,9 +432,9 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software. For more information please see the following:
+Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software. For more information, see the following:
 <dl>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
 <dt>Severity: &lt;Severity&gt;, for example:<ul>
@@ -451,7 +450,7 @@ Windows Defender Antivirus has taken action to protect this machine from malware
 <li>Quarantine: The resource was quarantined</li>
 <li>Remove: The resource was deleted</li>
 <li>Allow: The resource was allowed to execute/exist</li>
-<li>User defined: User defined action which is normally one from this list of actions that the user has specified</li>
+<li>User defined: User-defined action that is normally one from this list of actions that the user has specified</li>
 <li>No action: No action</li>
 <li>Block: The resource was blocked from executing</li>
 </ul>
@@ -485,9 +484,9 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error when taking action on malware or other potentially unwanted software. For more information please see the following:
+Windows Defender Antivirus has encountered an error when taking action on malware or other potentially unwanted software. For more information, see the following:
 <dl>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
 <dt>Severity: &lt;Severity&gt;, for example:<ul>
@@ -504,7 +503,7 @@ Windows Defender Antivirus has encountered an error when taking action on malwar
 <li>Quarantine: The resource was quarantined</li>
 <li>Remove: The resource was deleted</li>
 <li>Allow: The resource was allowed to execute/exist</li>
-<li>User defined: User defined action which is normally one from this list of actions that the user has specified</li>
+<li>User defined: User-defined action that is normally one from this list of actions that the user has specified</li>
 <li>No action: No action</li>
 <li>Block: The resource was blocked from executing</li>
 </ul>
@@ -544,7 +543,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has restored an item from quarantine. For more information please see the following:
+Windows Defender Antivirus has restored an item from quarantine. For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -557,7 +556,7 @@ Windows Defender Antivirus has restored an item from quarantine. For more inform
 </dt>
 <dt>Category: &lt;Category description&gt;, for example, any threat or malware type.</dt>
 <dt>Path: &lt;File path&gt;</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
 </dl>
@@ -588,7 +587,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered an error trying to restore an item from quarantine. For more information please see the following:
+Windows Defender Antivirus has encountered an error trying to restore an item from quarantine. For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -601,7 +600,7 @@ Windows Defender Antivirus has encountered an error trying to restore an item fr
 </dt>
 <dt>Category: &lt;Category description&gt;, for example, any threat or malware type.</dt>
 <dt>Path: &lt;File path&gt;</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values. </dt>
 <dt>Error Description: &lt;Error description&gt;
@@ -635,8 +634,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has deleted an item from quarantine.  
-For more information please see the following:
+Windows Defender Antivirus has deleted an item from quarantine.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -649,7 +647,7 @@ For more information please see the following:
 </dt>
 <dt>Category: &lt;Category description&gt;, for example, any threat or malware type.</dt>
 <dt>Path: &lt;File path&gt;</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
 </dl>
@@ -680,7 +678,7 @@ Description:
 </td>
 <td >
 Windows Defender Antivirus has encountered an error trying to delete an item from quarantine.
-For more information please see the following:
+For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -693,7 +691,7 @@ For more information please see the following:
 </dt>
 <dt>Category: &lt;Category description&gt;, for example, any threat or malware type.</dt>
 <dt>Path: &lt;File path&gt;</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values. </dt>
 <dt>Error Description: &lt;Error description&gt;
@@ -729,8 +727,8 @@ Description:
 <td >
 Windows Defender Antivirus has removed history of malware and other potentially unwanted software.
 <dl>
-<dt>Time: The time when the event occurred, for example when the history is purged. Note that this parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>Time: The time when the event occurred, for example when the history is purged. This parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -760,8 +758,8 @@ Description:
 <td >
 Windows Defender Antivirus has encountered an error trying to remove history of malware and other potentially unwanted software.
 <dl>
-<dt>Time: The time when the event occurred, for example when the history is purged. Note that this parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>Time: The time when the event occurred, for example when the history is purged. This parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values. </dt>
 <dt>Error Description: &lt;Error description&gt;
@@ -793,8 +791,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has detected a suspicious behavior.  
-For more information please see the following:
+Windows Defender Antivirus has detected a suspicious behavior.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -836,7 +833,7 @@ For more information please see the following:
 </ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>Status: &lt;Status&gt;</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
 <dt>Signature ID: Enumeration matching severity.</dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
@@ -871,8 +868,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has detected malware or other potentially unwanted software.  
-For more information please see the following:
+Windows Defender Antivirus has detected malware or other potentially unwanted software.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -913,7 +909,7 @@ For more information please see the following:
 <li>Remote attestation</li>
 </ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
 UAC</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
@@ -953,8 +949,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.  
-For more information please see the following:
+Windows Defender Antivirus has taken action to protect this machine from malware or other potentially unwanted software.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -995,14 +990,14 @@ For more information please see the following:
 <li>Remote attestation</li>
 </ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
 UAC</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
 <dt>Action: &lt;Action&gt;, for example:<ul>
 <li>Clean: The resource was cleaned</li>
 <li>Quarantine: The resource was quarantined</li>
 <li>Remove: The resource was deleted</li>
 <li>Allow: The resource was allowed to execute/exist</li>
-<li>User defined: User defined action which is normally one from this list of actions that the user has specified</li>
+<li>User defined: User-defined action that is normally one from this list of actions that the user has specified</li>
 <li>No action: No action</li>
 <li>Block: The resource was blocked from executing</li>
 </ul>
@@ -1015,7 +1010,7 @@ Description of the error. </dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
 NOTE:
-Whenever Windows Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it will restore the following system settings and services which the malware might have changed:<ul>
+Whenever Windows Defender Antivirus, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it will restore the following system settings and services that the malware might have changed:<ul>
 <li>Default Internet Explorer or Microsoft Edge setting</li>
 <li>User Access Control settings</li>
 <li>Chrome settings</li>
@@ -1081,8 +1076,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered a non-critical error when taking action on malware or other potentially unwanted software.  
-For more information please see the following:
+Windows Defender Antivirus has encountered a non-critical error when taking action on malware or other potentially unwanted software.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -1123,14 +1117,14 @@ For more information please see the following:
 <li>Remote attestation</li>
 </ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
 UAC</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
 <dt>Action: &lt;Action&gt;, for example:<ul>
 <li>Clean: The resource was cleaned</li>
 <li>Quarantine: The resource was quarantined</li>
 <li>Remove: The resource was deleted</li>
 <li>Allow: The resource was allowed to execute/exist</li>
-<li>User defined: User defined action which is normally one from this list of actions that the user has specified</li>
+<li>User defined: User-defined action that is normally one from this list of actions that the user has specified</li>
 <li>No action: No action</li>
 <li>Block: The resource was blocked from executing</li>
 </ul>
@@ -1177,8 +1171,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus has encountered a critical error when taking action on malware or other potentially unwanted software.  
-For more information please see the following:
+Windows Defender Antivirus has encountered a critical error when taking action on malware or other potentially unwanted software.<br/>For more information, see the following:
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -1219,14 +1212,14 @@ For more information please see the following:
 <li>Remote attestation</li>
 </ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
 UAC</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
 <dt>Action: &lt;Action&gt;, for example:<ul>
 <li>Clean: The resource was cleaned</li>
 <li>Quarantine: The resource was quarantined</li>
 <li>Remove: The resource was deleted</li>
 <li>Allow: The resource was allowed to execute/exist</li>
-<li>User defined: User defined action which is normally one from this list of actions that the user has specified</li>
+<li>User defined: User-defined action that is normally one from this list of actions that the user has specified</li>
 <li>No action: No action</li>
 <li>Block: The resource was blocked from executing</li>
 </ul>
@@ -1285,7 +1278,7 @@ Verify that the user has permission to access the necessary resources.
 </td>
 </tr>
 </table>
- 
+
 If this event persists:<ol>
 <li>Run the scan again.</li>
 <li>If it fails in the same way, go to the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
@@ -1328,7 +1321,7 @@ Windows Defender Antivirus client is up and running in a healthy state.
 <tr>
 <td></td>
 <td >
-<div class="alert"><b>Note</b>  This event will only be logged if the following policy is set: <b>ThreatFileHashLogging 	unsigned</b>.</div>
+<div class="alert"><b>Note: This event will only be logged if the following policy is set: <b>ThreatFileHashLogging     unsigned</b>.</div>
 <div> </div>
 </td>
 </tr>
@@ -1417,10 +1410,10 @@ Antivirus client health report.
 <dt>Antispyware signature creation time: ?&lt;Antispyware signature creation time&gt;</dt>
 <dt>Last quick scan start time: ?&lt;Last quick scan start time&gt;</dt>
 <dt>Last quick scan end time: ?&lt;Last quick scan end time&gt;</dt>
-<dt>Last quick scan source: &lt;Last quick scan source&gt; (0 = scan didn't run, 1 = user initiated, 2 = system initiated)</dt>
+<dt>Last quick scan source: &lt;Last quick scan source&gt; (0 = scan didn&#39;t run, 1 = user initiated, 2 = system initiated)</dt>
 <dt>Last full scan start time: ?&lt;Last full scan start time&gt;</dt>
 <dt>Last full scan end time: ?&lt;Last full scan end time&gt;</dt>
-<dt>Last full scan source: &lt;Last full scan source&gt; (0 = scan didn't run, 1 = user initiated, 2 = system initiated)</dt>
+<dt>Last full scan source: &lt;Last full scan source&gt; (0 = scan didn&#39;t run, 1 = user initiated, 2 = system initiated)</dt>
 <dt>Product status: For internal troubleshooting
 </dl>
 </td>
@@ -1463,7 +1456,7 @@ Antivirus signature version has been updated.
 </ul>
 </dt>
 <dt>Update Type: &lt;Update type&gt;, either Full or Delta.</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Current Engine Version: &lt;Current engine version&gt;</dt>
 <dt>Previous Engine Version: &lt;Previous engine version&gt;</dt>
 </dl>
@@ -1492,7 +1485,7 @@ Symbolic name:
 Message:
 </td>
 <td >
-<b>The antimalware definition update failed. 
+<b>The security intelligence update failed. 
 </b>
 </td>
 </tr>
@@ -1503,12 +1496,12 @@ Description:
 <td >
 Windows Defender Antivirus has encountered an error trying to update signatures.
 <dl>
-<dt>New Signature Version: &lt;New version number&gt;</dt>
-<dt>Previous Signature Version: &lt;Previous signature version&gt;</dt>
+<dt>New security intelligence version: &lt;New version number&gt;</dt>
+<dt>Previous security intelligence version: &lt;Previous version&gt;</dt>
 <dt>Update Source: &lt;Update source&gt;, for example:
 <ul>
-<li>Signature update folder</li>
-<li>Internal definition update server</li>
+<li>Security intelligence update folder</li>
+<li>Internal security intelligence update server</li>
 <li>Microsoft Update Server</li>
 <li>File share</li>
 <li>Microsoft Malware Protection Center (MMPC)</li>
@@ -1530,7 +1523,7 @@ Windows Defender Antivirus has encountered an error trying to update signatures.
 </ul>
 </dt>
 <dt>Update Type: &lt;Update type&gt;, either Full or Delta.</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Current Engine Version: &lt;Current engine version&gt;</dt>
 <dt>Previous Engine Version: &lt;Previous engine version&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
@@ -1548,7 +1541,7 @@ User action:
 This error occurs when there is a problem updating definitions.
 To troubleshoot this event:
 <ol>
-<li>[Update definitions](manage-updates-baselines-windows-defender-antivirus.md) and force a rescan directly on the endpoint.</li>
+<li><a href="manage-updates-baselines-windows-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-windows-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
 <li>Review the entries in the %Windir%\WindowsUpdate.log file for more information about this error.</li>
 <li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
 </li>
@@ -1584,7 +1577,7 @@ Windows Defender Antivirus engine version has been updated.
 <dt>Current Engine Version: &lt;Current engine version&gt;</dt>
 <dt>Previous Engine Version: &lt;Previous engine version&gt;</dt>
 <dt>Engine Type: &lt;Engine type&gt;, either antimalware engine or Network Inspection System engine.</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 </dl>
 </td>
 </tr>
@@ -1625,7 +1618,7 @@ Windows Defender Antivirus has encountered an error trying to update the engine.
 <dt>New Engine Version:</dt>
 <dt>Previous Engine Version: &lt;Previous engine version&gt;</dt>
 <dt>Engine Type: &lt;Engine type&gt;, either antimalware engine or Network Inspection System engine.</dt>
-<dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
+<dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values.</dt>
 <dt>Error Description: &lt;Error description&gt;
@@ -1641,7 +1634,7 @@ User action:
 The Windows Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update.
 To troubleshoot this event:
 <ol>
-<li>[Update definitions](manage-updates-baselines-windows-defender-antivirus.md) and force a rescan directly on the endpoint.</li>
+<li><a href="manage-updates-baselines-windows-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-windows-defender-antivirus.md)">Update definitions</a> and force a rescan directly on the endpoint.</li>
 <li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
 </li>
 </ol>
@@ -1691,7 +1684,7 @@ The Windows Defender Antivirus client attempted to download and install the late
 To troubleshoot this event:
 <ol>
 <li>Restart the computer and try again.</li>
-<li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Windows Defender Security Intelligence site</a>.
+<li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Microsoft Security Intelligence site</a>.
 Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
 </li>
 <li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
@@ -2288,8 +2281,8 @@ Description of the error. </dt>
 User action:
 </td>
 <td >
-You should restart the system then run a full scan because it's possible the system was not protected for some time.
-The Windows Defender Antivirus client's real-time protection feature encountered an error because one of the services failed to start. 
+You should restart the system then run a full scan because it&#39;s possible the system was not protected for some time.
+The Windows Defender Antivirus client&#39;s real-time protection feature encountered an error because one of the services failed to start. 
 If it is followed by a 3007 event ID, the failure was temporary and the antimalware client recovered from the failure. 
 </td>
 </tr>
@@ -2457,7 +2450,7 @@ Message:
 Description:
 </td>
 <td >
-Windows Defender Antivirus configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware.
+Windows Defender Antivirus configuration has changed. If this is an unexpected event, you should review the settings as this may be the result of malware.
 <dl>
 <dt>Old value: &lt;Old value number&gt;
 Old antivirus configuration value.</dt>
@@ -2720,7 +2713,7 @@ This section provides the following information about Windows Defender Antivirus
 Use the information in these tables to help troubleshoot Windows Defender Antivirus error codes.
 
 
- <table class="oridealign"> 
+<table> 
 <tr>
 <th colspan="2">Error code: 0x80508007</th>
 </tr>
@@ -2762,7 +2755,7 @@ This error indicates that there might be a problem with your security product.
 <li>Update the definitions. Either:<ol>
 <li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender Antivirus. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender Antivirus"/>Or,
 </li>
-<li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Windows Defender Security Intelligence site</a>.
+<li>Download the latest definitions from the <a href="https://aka.ms/wdsi">Microsoft Security Intelligence site</a>.
 Note: The size of the definitions file downloaded from the site can exceed 60 MB and should not be used as a long-term solution for updating definitions.
 </li>
 </ol>
@@ -2847,8 +2840,7 @@ Run a full system scan.
 <td>
 This error indicates that manual steps are required to complete threat removal. 
 </td></tr><tr><td>Resolution</td><td>
-Follow the manual remediation steps outlined in the <a href="https://www.microsoft.com/security/portal/threat/Threats.aspx">Microsoft Malware Protection Encyclopedia</a>. You can find a threat-specific link in the event history.  
-</td>
+Follow the manual remediation steps outlined in the <a href="https://www.microsoft.com/security/portal/threat/Threats.aspx">Microsoft Malware Protection Encyclopedia</a>. You can find a threat-specific link in the event history.<br/></td>
 </tr>
 <tr>
 <th colspan="2">Error code: 0x80508026 
@@ -2899,21 +2891,19 @@ Run a full system scan.
 <td>
 This error indicates that an offline scan is required. 
 </td></tr><tr><td>Resolution</td><td>
-Run offline Windows Defender Antivirus. You can read about how to do this in the <a href="http://windows.microsoft.com/windows/what-is-windows-defender-offline">offline Windows Defender Antivirus article</a>.
+Run offline Windows Defender Antivirus. You can read about how to do this in the <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">offline Windows Defender Antivirus article</a>.
 </td>
 </tr>
 <tr>
 <th colspan="2">Error code: 0x80508031 
 </th>
 </tr><tr><td>Message</td>
-<td><b>ERROR_MP_PLATFORM_OUTDATED  
-</b>
+<td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>Possible reason</td>
 <td>
 This error indicates that Windows Defender Antivirus does not support the current version of the platform and requires a new version of the platform. 
 </td></tr><tr><td>Resolution</td><td>
-You can only use Windows Defender Antivirus in Windows 10. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.  
-</td>
+You can only use Windows Defender Antivirus in Windows 10. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
 </tr>
 </table>
 
@@ -2923,7 +2913,7 @@ The following error codes are used during internal testing of Windows Defender A
 If you see these errors, you can try to [update definitions](manage-updates-baselines-windows-defender-antivirus.md) and force a rescan directly on the endpoint.
 
 
-<table class="oridealign"> 
+<table> 
 <tr>
 <th colspan="3">Internal error codes</th>
 </tr>

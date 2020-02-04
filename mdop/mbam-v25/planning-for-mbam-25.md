@@ -1,8 +1,11 @@
 ---
 title: Planning for MBAM 2.5
 description: Planning for MBAM 2.5
-author: jamiejdt
+author: dansimp
 ms.assetid: aebe82c0-e3b6-4bfb-beb0-b99f9c5c5267
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

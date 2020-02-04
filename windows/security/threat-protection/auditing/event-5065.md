@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 5065(S, F): A cryptographic context modification was attempted.
@@ -17,7 +20,7 @@ ms.date: 04/19/2017
 -   Windows Server 2016
 
 
-This event generates in [BCryptConfigureContext](https://msdn.microsoft.com/es-es/vstudio/aa375379)() function. This is a Cryptographic Next Generation (CNG) function.
+This event generates in [BCryptConfigureContext](https://msdn.microsoft.com/vstudio/aa375379)() function. This is a Cryptographic Next Generation (CNG) function.
 
 This event generates when configuration information was changed for existing CNG context.
 

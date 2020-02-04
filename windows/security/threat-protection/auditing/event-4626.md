@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4626(S): User/Device claims information.
@@ -72,7 +75,6 @@ This event generates on the computer to which the logon was performed (target co
  <Data Name="DeviceClaims">-</Data> 
  </EventData>
  </Event>
-
 ```
 
 ***Required Server Roles:*** None.
@@ -155,7 +157,7 @@ This event generates on the computer to which the logon was performed (target co
 
     -   “dadmin” – claim value.
 
-**Device Claims** \[Type = UnicodeString\]**:** list of device claims for new logon session. For user accounts this field typically has “**-**“ value**.** For computer accounts this field has device claims listed.
+**Device Claims** \[Type = UnicodeString\]**:** list of device claims for new logon session. For user accounts this field typically has “**-**“ value<strong>.</strong> For computer accounts this field has device claims listed.
 
 ## Security Monitoring Recommendations
 

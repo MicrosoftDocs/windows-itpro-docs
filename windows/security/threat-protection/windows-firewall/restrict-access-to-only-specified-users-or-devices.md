@@ -2,12 +2,14 @@
 title: Restrict Access to Only Specified Users or Devices (Windows 10)
 description: Restrict Access to Only Specified Users or Devices
 ms.assetid: a6106a07-f9e5-430f-8dbd-06d3bf7406df
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -47,4 +49,4 @@ The following components are required for this deployment goal:
 
 -   **Active Directory**: Active Directory supports centralized management of connection security rules by configuring the rules in one or more GPOs that can be automatically applied to all relevant devices in the domain.
 
-**Next: **[Mapping Your Deployment Goals to a Windows Defender Firewall with Advanced Security Design](mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md)
+**Next:** [Mapping Your Deployment Goals to a Windows Defender Firewall with Advanced Security Design](mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md)

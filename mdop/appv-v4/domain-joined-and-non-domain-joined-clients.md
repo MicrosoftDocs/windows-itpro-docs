@@ -1,12 +1,15 @@
 ---
 title: Domain-Joined and Non-Domain-Joined Clients
 description: Domain-Joined and Non-Domain-Joined Clients
-author: jamiejdt
+author: dansimp
 ms.assetid: a935dc98-de60-45f3-ab74-2444ce082e88
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

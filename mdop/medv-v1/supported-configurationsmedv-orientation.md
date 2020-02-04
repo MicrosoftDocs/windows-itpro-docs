@@ -1,12 +1,15 @@
 ---
 title: Supported Configurations
 description: Supported Configurations
-author: jamiejdt
+author: dansimp
 ms.assetid: c1438455-445a-4bc8-ae20-483b26181f6f
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

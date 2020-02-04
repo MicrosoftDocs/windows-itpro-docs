@@ -9,25 +9,26 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: denisebmsft
+ms.author: deniseb
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
+ms.custom: nextgen
 ---
 
 # Specify the cloud-delivered protection level
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-You can specify the level of cloud-protection offered by Windows Defender Antivirus with Group Policy and System Center Configuration Manager.
+You can specify the level of cloud-protection offered by Windows Defender Antivirus with Group Policy and Microsoft Endpoint Configuration Manager.
 
->[!NOTE] 
+>[!NOTE]
 >The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
 
-
-
-**Use Intune to specify the level of cloud-delivered protection:**
+## Use Intune to specify the level of cloud-delivered protection
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services > Intune**.
@@ -35,25 +36,24 @@ You can specify the level of cloud-protection offered by Windows Defender Antivi
 4. Select **Properties**, select **Settings: Configure**, and then select **Windows Defender Antivirus**.
 5. On the **File Blocking Level** switch, select one of the following:
 
-    1. **High** to provide a strong level of detection
-    2. **High +** to apply additional protection measures
-    3. **Zero tolerance** to block all unknown executables
-
-        > [!WARNING]
-        > While unlikely, setting this switch to **High** might cause some legitimate files to be detected. The **High +** setting might impact client performance. We recommend you set this to the default level (**Not configured**).
+    1. **High**: Applies a strong level of detection.
+    2. **High +**: Uses the **High** level and applies additional protection measures (may impact client performance).
+    3. **Zero tolerance**: Blocks all unknown executables.
 
 8. Click **OK** to exit the **Windows Defender Antivirus** settings pane, click **OK** to exit the **Device restrictions** pane, and then click **Save** to save the changes to your **Device restrictions** profile.
 
 For more information about Intune device profiles, including how to create and configure their settings, see [What are Microsoft Intune device profiles?](https://docs.microsoft.com/intune/device-profiles)
   
 
-**Use Configuration Manager to specify the level of cloud-delivered protection:**
+## Use Configuration Manager to specify the level of cloud-delivered protection
 
-1.  See [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service) for details on configuring System Center Configuration Manager (current branch).
+See [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service) for details on configuring Microsoft Endpoint Configuration Manager (current branch).
 
-**Use Group Policy to specify the level of cloud-delivered protection:**
+## Use Group Policy to specify the level of cloud-delivered protection
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx).
+
+2. Right-click the Group Policy Object you want to configure, and then click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration**. 
 
@@ -61,24 +61,22 @@ For more information about Intune device profiles, including how to create and c
 
 5.  Expand the tree to **Windows components > Windows Defender Antivirus > MpEngine**.
 
-1.  Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:  
-    1.  Setting to **Default Windows Defender Antivirus blocking level** provides strong detection without increasing the risk of detecting legitimate files.  
-    2.  Setting to **High blocking level** applies a strong level of detection. 
-    3. **High + blocking level** applies additional protection measures.
-    4. **Zero tolerance blocking level** blocks all unknown executables.
+6.  Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:
+    - **Default Windows Defender Antivirus blocking level** provides strong detection without increasing the risk of detecting legitimate files.
+    - **High blocking level** applies a strong level of detection while optimizing client performance (greater chance of false positives).
+    - **High + blocking level** applies additional protection measures (may impact client performance and increase risk of false positives).
+    - **Zero tolerance blocking level** blocks all unknown executables.
+    
+    > [!WARNING]
+    > While unlikely, setting this switch to **High** or **High +** may cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection).
 
-        > [!WARNING]
-        > While unlikely, setting this switch to **High** might cause some legitimate files to be detected (although you will have the option to unblock or dispute that detection). The **High +** setting might impact client performance. We recommend you set this to the default level (**Not configured**).
-
-1. Click **OK**.
+7. Click **OK**.
 
   
-
-
-## Related topics
+## Related articles
 
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)
-- [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
+- [How to create and deploy antimalware policies: Cloud-protection service](https://docs.microsoft.com/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
 
 

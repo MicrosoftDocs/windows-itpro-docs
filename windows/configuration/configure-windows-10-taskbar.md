@@ -2,14 +2,16 @@
 title: Configure Windows 10 taskbar (Windows 10)
 description: Admins can pin apps to users' taskbars. 
 keywords: ["taskbar layout","pin apps"]
-ms.prod: W10
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 01/18/2018
+ms.reviewer: 
+manager: dansimp
 ---
 # Configure Windows 10 taskbar
 
@@ -25,7 +27,7 @@ If you specify an app to be pinned that is not provisioned for the user on the c
 The order of apps in the XML file dictates the order of pinned apps on the taskbar from left to right, to the right of any existing apps pinned by the user.
 
 > [!NOTE]
-> In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
+> In operating systems configured to use a right-to-left language, the taskbar order will be reversed.
 
 The following example shows how apps will be pinned: Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using the XML file to the right (green square).
 
@@ -55,11 +57,11 @@ The following example shows how apps will be pinned: Windows default apps to the
 In the layout modification XML file, you will need to add entries for applications in the XML markup. In order to pin an application, you need either its AUMID or Desktop Application Link Path. 
 
 The easiest way to find this data for an application is to:
-1.	Pin the application to the Start menu on a reference or testing PC.
-2. 	Open Windows PowerShell and run the `Export-StartLayout` cmdlet. 
-3.	Open the generated XML file. 
-4.	Look for an entry corresponding to the app you pinned.
-5.	Look for a property labeled `AppUserModelID` or `DesktopApplicationLinkPath`. 
+1.  Pin the application to the Start menu on a reference or testing PC.
+2.  Open Windows PowerShell and run the `Export-StartLayout` cmdlet. 
+3.  Open the generated XML file. 
+4.  Look for an entry corresponding to the app you pinned.
+5.  Look for a property labeled `AppUserModelID` or `DesktopApplicationLinkPath`. 
 
 
 ### Sample taskbar configuration XML file
@@ -115,7 +117,7 @@ The easiest way to find this data for an application is to:
 </LayoutModificationTemplate>
 ```
 
-##Keep default apps and add your own
+## Keep default apps and add your own
 
 The `<CustomTaskbarLayoutCollection>` section will append listed apps to the taskbar by default. The following sample keeps the default apps pinned and adds pins for Paint, Microsoft Reader, and a command prompt.
 
@@ -143,7 +145,7 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
 ![default apps pinned to taskbar](images/taskbar-default.png)
 
 **After:**
- 
+
  ![additional apps pinned to taskbar](images/taskbar-default-plus.png)
 
 ## Remove default apps and add your own
@@ -170,7 +172,6 @@ If you only want to remove some of the default pinned apps, you would use this m
     </defaultlayout:TaskbarLayout>
   </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
-
 ```
 **Before:**
 
@@ -201,7 +202,6 @@ By adding `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`, you
     </defaultlayout:TaskbarLayout>
   </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
-
 ```
 
 ## Configure taskbar by country or region
@@ -246,7 +246,6 @@ The following example shows you how to configure taskbars by country or region. 
     </defaultlayout:TaskbarLayout>
   </CustomTaskbarLayoutCollection>
 </LayoutModificationTemplate>
-
 ```
 
 When the preceding example XML file is applied, the resulting taskbar for computers in the US or UK:

@@ -2,11 +2,14 @@
 title: Add and Remove a Product Key (Windows 10)
 description: Add and Remove a Product Key
 ms.assetid: feac32bb-fb96-4802-81b8-c69220dcfcce
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+audience: itproauthor: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---

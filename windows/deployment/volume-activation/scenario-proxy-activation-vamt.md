@@ -2,11 +2,15 @@
 title: Scenario 2 Proxy Activation (Windows 10)
 description: Scenario 2 Proxy Activation
 ms.assetid: ed5a8a56-d9aa-4895-918f-dd1898cb2c1a
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-author: jdeckerms
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---
@@ -65,14 +69,14 @@ You can sort the list of products so that it is easier to find the computers tha
 ## Step 6: Collect Status Information from the Computers in the Isolated Lab
 
 To collect the status from select computers in the database, you can select computers in the product list view by using one of the following methods:
--   To select a block of consecutively listed computers, click the first computer that you want to select, and then click the last computer while pressing the **Shift** key.
--   To select computers which are not listed consecutively, hold down the **Ctrl** ley and select each computer for which you want to collect the status information.
-**To collect status information from the selected computers**
-1.  In the right-side **Actions** pane, click **Update license status** in the **Selected Items** menu and then click a credential option. Choose **Alternate Credentials** only if you are updating products that require administrator credentials that are different from the ones that you used to log on to the computer. Otherwise, click **Current Credentials** and continue to step 2.If you are supplying alternate credentials, in the **Windows Security** dialog box type the appropriate user name and password and then click **OK**.
-2.  VAMT displays the **Collecting product information** dialog box while it collects the license status of all supported products on the selected computers. When the process is finished, the updated license status of each product will appear in the product list view in the center pane.
+- To select a block of consecutively listed computers, click the first computer that you want to select, and then click the last computer while pressing the **Shift** key.
+- To select computers which are not listed consecutively, hold down the **Ctrl** ley and select each computer for which you want to collect the status information.
+  **To collect status information from the selected computers**
+- In the right-side **Actions** pane, click **Update license status** in the **Selected Items** menu and then click a credential option. Choose **Alternate Credentials** only if you are updating products that require administrator credentials that are different from the ones that you used to log on to the computer. Otherwise, click **Current Credentials** and continue to step 2.If you are supplying alternate credentials, in the **Windows Security** dialog box type the appropriate user name and password and then click **OK**.
+- VAMT displays the **Collecting product information** dialog box while it collects the license status of all supported products on the selected computers. When the process is finished, the updated license status of each product will appear in the product list view in the center pane.
 
-    **Note**  
-    If a computer has more than one supported product installed, VAMT adds an entry for each product. The entry appears under the appropriate product heading.
+  **Note**  
+  If a computer has more than one supported product installed, VAMT adds an entry for each product. The entry appears under the appropriate product heading.
 
 ## Step 7: Add Product Keys
 
@@ -140,7 +144,7 @@ In this step, you export VAMT from the workgroup’s host computer and save it i
 1.  Select the products to which you want to apply CIDs. If needed, sort and filter the list to find the products.
 2.  In the right-side **Selected Items** menu, click **Activate**, click **Apply Confirmation ID**, and then select the appropriate credential option. If you click the **Alternate Credentials** option, you will be prompted to enter an alternate user name and password.
 
-    VAMT displays the **Applying Confirmation Id** dialog box while it installs the CIDs on the selected products. When VAMT finishes installing the CIDs, the status appears in the **Action Sataus** column of the dialog box. Click **Close** to close the dialog box. You can also click the **Automatically close when done** check box when the dialog box appears.
+    VAMT displays the **Applying Confirmation Id** dialog box while it installs the CIDs on the selected products. When VAMT finishes installing the CIDs, the status appears in the **Action Status** column of the dialog box. Click **Close** to close the dialog box. You can also click the **Automatically close when done** check box when the dialog box appears.
     The same status appears under the **Status of Last Action** column in the product list view in the center pane.
 
 ## Step 13: (Optional) Reactivating Reimaged Computers in the Isolated Lab
@@ -163,5 +167,5 @@ If you have captured new images of the computers in the isolated lab, but the un
 
 ## Related topics
 - [VAMT Step-by-Step Scenarios](vamt-step-by-step.md)
- 
- 
+ 
+ 

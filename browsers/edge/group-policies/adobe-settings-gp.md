@@ -4,10 +4,12 @@ description: Adobe Flash Player still has a significant presence on the internet
 services: 
 keywords: 
 ms.localizationpriority: medium
-manager: dougkim
-author: shortpatti
-ms.author: pashort
+audience: itpro
+manager: dansimp
+author: dansimp
+ms.author: dansimp
 ms.date: 10/02/2018
+ms.reviewer: 
 ms.topic: reference
 ms.prod: edge
 ms.mktglfcycl: explore
@@ -15,6 +17,9 @@ ms.sitesec: library
 ---
 
 # Adobe Flash 
+
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
 Adobe Flash Player still has a significant presence on the internet, such as digital ads. However, open standards, such as HTML5, provide many of the capabilities and functionalities becoming an alternative for content on the web. With Adobe no longer supporting Flash after 2020, Microsoft has started to phase out Flash from Microsoft Edge by adding the [Configure the Adobe Flash Click-to-Run setting](#configure-the-adobe-flash-click-to-run-setting) group policy giving you a way to control the list of websites that have permission to run Adobe Flash content.
 

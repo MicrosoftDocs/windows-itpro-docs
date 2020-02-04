@@ -6,9 +6,12 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
-author: MariciaAlforque
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 04/26/2018
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ---
 
@@ -95,7 +98,7 @@ As you review the roles in your organization, you can use the following generali
 
 Your configuration requirements are defined by multiple factors, including the level of management needed, the devices and data managed, and your industry requirements. Meanwhile, employees are frequently concerned about IT applying strict policies to their personal devices, but they still want access to corporate email and documents. With Windows 10, you can create a consistent set of configurations across PCs, tablets, and phones through the common MDM layer. 
 
-**MDM**: [MDM](https://www.microsoft.com/en-us/cloud-platform/mobile-device-management) gives you a way to configure settings that achieve your administrative intent without exposing every possible setting. (In contrast, Group Policy exposes fine-grained settings that you control individually.) One benefit of MDM is that it enables you to apply broader privacy, security, and application management settings through lighter and more efficient tools. MDM also allows you to target Internet-connected devices to manage policies without using GP that requires on-premises domain-joined devices. This makes MDM the best choice for devices that are constantly on the go.
+**MDM**: [MDM](https://www.microsoft.com/cloud-platform/mobile-device-management) gives you a way to configure settings that achieve your administrative intent without exposing every possible setting. (In contrast, Group Policy exposes fine-grained settings that you control individually.) One benefit of MDM is that it enables you to apply broader privacy, security, and application management settings through lighter and more efficient tools. MDM also allows you to target Internet-connected devices to manage policies without using GP that requires on-premises domain-joined devices. This makes MDM the best choice for devices that are constantly on the go.
 
 **Group Policy** and **System Center Configuration Manager**: Your organization might still need to manage domain joined computers at a granular level such as Internet Explorer’s 1,500 configurable Group Policy settings. If so, Group Policy and System Center Configuration Manager continue to be excellent management choices:
 

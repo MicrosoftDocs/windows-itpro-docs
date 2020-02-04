@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 5156(S): The Windows Filtering Platform has permitted a connection.
@@ -99,7 +102,7 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
     -   Outbound – for unbound connections.
 
--   **Source Address** \[Type = UnicodeString\]**:** local IP address on which application received the connection.
+-   **Source Address** \[Type = UnicodeString\]**:**  IP address from which the connection was initiated.
 
     -   IPv4 Address
 
@@ -111,9 +114,9 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
     -   127.0.0.1 , ::1 - localhost
 
--   **Source Port** \[Type = UnicodeString\]**:** port number on which application received the connection.
+-   **Source Port** \[Type = UnicodeString\]**:** port number from which the connection was initiated.
 
--   **Destination Address** \[Type = UnicodeString\]**:** IP address ***from*** which connection was received or initiated.
+-   **Destination Address** \[Type = UnicodeString\]**:** IP address where the connection was received.
 
     -   IPv4 Address
 
@@ -125,7 +128,7 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
     -   127.0.0.1 , ::1 - localhost
 
--   **Destination Port** \[Type = UnicodeString\]**:** port number which was used from remote machine to initiate connection.
+-   **Destination Port** \[Type = UnicodeString\]**:** port number where the connection was received.
 
 -   **Protocol** \[Type = UInt32\]: number of protocol which was used.
 
@@ -181,7 +184,7 @@ For 5156(S): The Windows Filtering Platform has permitted a connection.
 
 -   If you need to monitor all inbound connections to a specific local port, monitor for [5156](event-5156.md) events with that “**Source Port**.**”**
 
--   Monitor for all connections with a “**Protocol Number”** that is not typical for this device or compter, for example, anything other than 1, 6, or 17.
+-   Monitor for all connections with a “**Protocol Number”** that is not typical for this device or computer, for example, anything other than 1, 6, or 17.
 
 -   If the computer’s communication with “**Destination Address”** should always use a specific “**Destination Port**,**”** monitor for any other “**Destination Port**.”
 

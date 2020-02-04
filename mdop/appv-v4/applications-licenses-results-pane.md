@@ -1,12 +1,15 @@
 ---
 title: Applications Licenses Results Pane
 description: Applications Licenses Results Pane
-author: jamiejdt
+author: dansimp
 ms.assetid: 8b519715-b2fe-451e-ad9b-e9b73f454961
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

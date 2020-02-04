@@ -1,29 +1,30 @@
 ---
 title: Additional mitigations
-description: Scripts listed in this topic for obtaining the available issuance policies on the certificate authority for Windows Defender Credential Guard on Windows 10.
+description: Advice and sample code for making your domain environment more secure and robust with Windows Defender Credential Guard.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dulcemontemayor
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.date: 08/17/2017
+ms.reviewer: 
 ---
 
-## Additional mitigations
+# Additional mitigations
 
 Windows Defender Credential Guard can provide mitigations against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Windows Defender Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, re-using previously stolen credentials prior to Windows Defender Device Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigations also must be deployed to make the domain environment more robust.
 
-### Restricting domain users to specific domain-joined devices
+## Restricting domain users to specific domain-joined devices
 
 Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. If a user can sign on to multiple devices then any device could be used to steal credentials. How do you ensure that users only sign on using devices that have Windows Defender Credential Guard enabled? By deploying authentication policies that restrict them to specific domain-joined devices that have been configured with Windows Defender Credential Guard. For the domain controller to know what device a user is signing on from, Kerberos armoring must be used.
 
-#### Kerberos armoring
+### Kerberos armoring
 
 Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring, its TGT is used to protect the user's proof of possession which can mitigate offline dictionary attacks. Kerberos armoring also provides the additional benefit of signed KDC errors this mitigates tampering which can result in things such as downgrade attacks. 
 
@@ -33,7 +34,7 @@ Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring,
 -   All the domain controllers in these domains must be configured to support Kerberos armoring. Set the **KDC support for claims, compound authentication, and Kerberos armoring** Group Policy setting to either **Supported** or **Always provide claims**.
 -   All the devices with Windows Defender Credential Guard that the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
 
-#### Protecting domain-joined device secrets
+### Protecting domain-joined device secrets
 
 Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Windows Defender Credential Guard, the private key can be protected. Then authentication policies can require that users sign on devices that authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
 
@@ -45,7 +46,7 @@ Domain-joined device certificate authentication has the following requirements:
 -   Windows 10 devices have the CA issuing the domain controller certificates in the enterprise store.
 -   A process is established to ensure the identity and trustworthiness of the device in a similar manner as you would establish the identity and trustworthiness of a user before issuing them a smartcard.
 
-##### Deploying domain-joined device certificates
+#### Deploying domain-joined device certificates
 
 To guarantee that certificates with the required issuance policy are only installed on the devices these users must use, they must be deployed manually on each device. The same security procedures used for issuing smart cards to users should be applied to device certificates.
 
@@ -70,14 +71,14 @@ Then on the devices that are running Windows Defender Credential Guard, enroll t
 **Enrolling devices in a certificate**
 
 Run the following command:
-``` syntax
+```powershell
 CertReq -EnrollCredGuardCert MachineAuthentication
 ```
 
-> [!NOTE]  
+> [!NOTE]
 > You must restart the device after enrolling the machine authentication certificate.
  
-##### How a certificate issuance policy can be used for access control
+#### How a certificate issuance policy can be used for access control
 
 Beginning with the Windows Server 2008 R2 domain functional level, domain controllers support for authentication mechanism assurance provides a way to map certificate issuance policy OIDs to universal security groups. Windows Server 2012 domain controllers with claim support can map them to claims. To learn more about authentication mechanism assurance, see [Authentication Mechanism Assurance for AD DS in Windows Server 2008 R2 Step-by-Step Guide](https://technet.microsoft.com/library/dd378897(v=ws.10).aspx) on TechNet.
 
@@ -86,7 +87,7 @@ Beginning with the Windows Server 2008 R2 domain functional level, domain contro
 -   The [get-IssuancePolicy.ps1](#bkmk-getscript) shows all of the issuance policies that are available on the certificate authority.
     From a Windows PowerShell command prompt, run the following command:
 
-    ``` syntax
+    ```powershell
     .\get-IssuancePolicy.ps1 –LinkedToGroup:All
     ```
 
@@ -95,11 +96,11 @@ Beginning with the Windows Server 2008 R2 domain functional level, domain contro
 -   The [set-IssuancePolicyToGroupLink.ps1](#bkmk-setscript) creates a Universal security group, creates an organizational unit, and links the issuance policy to that Universal security group.
     From a Windows PowerShell command prompt, run the following command:
 
-    ``` syntax
+    ```powershell
     .\set-IssuancePolicyToGroupLink.ps1 –IssuancePolicyName:"<name of issuance policy>" –groupOU:"<Name of OU to create>" –groupName:”<name of Universal security group to create>"
     ```
 
-#### Restricting user sign on
+### Restricting user sign on
 
 So we now have completed the following:
 
@@ -125,24 +126,24 @@ Authentication policies have the following requirements:
 11. Click **OK** to create the authentication policy.
 12. Close Active Directory Administrative Center.
 
-> [!NOTE]  
+> [!NOTE]
 > When the authentication policy enforces policy restrictions, users will not be able to sign on using devices that do not have a certificate with the appropriate issuance policy deployed. This applies to both local and remote sign on scenarios. Therefore, it is strongly recommended to first only audit policy restrictions to ensure you don't have unexpected failures.
 
-##### Discovering authentication failures due to authentication policies
+#### Discovering authentication failures due to authentication policies
 
 To make tracking authentication failures due to authentication policies easier, an operational log exists with just those events. To enable the logs on the domain controllers, in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then click **Enable Log**.
 
 To learn more about authentication policy events, see [Authentication Policies and Authentication Policy Silos](https://technet.microsoft.com/library/dn486813(v=ws.11).aspx).
 
-### Appendix: Scripts
+## Appendix: Scripts
 
 Here is a list of scripts mentioned in this topic.
 
-#### <a href="" id="bkmk-getscript"></a>Get the available issuance policies on the certificate authority
+### <a href="" id="bkmk-getscript"></a>Get the available issuance policies on the certificate authority
 
 Save this script file as get-IssuancePolicy.ps1.
 
-``` syntax
+```powershell
 #######################################
 ##     Parameters to be defined      ##
 ##     by the user                   ##
@@ -326,14 +327,14 @@ write-host "There are no issuance policies which are not mapped to groups"
     }
 }
 ```
-> [!NOTE]  
+> [!NOTE]
 > If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
  
-#### <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
+### <a href="" id="bkmk-setscript"></a>Link an issuance policy to a group
 
 Save the script file as set-IssuancePolicyToGroupLink.ps1.
 
-``` syntax
+```powershell
 #######################################
 ##     Parameters to be defined      ##
 ##     by the user                   ##
@@ -608,11 +609,5 @@ write-host $tmp -Foreground Red
 }
 ```
 
-> [!NOTE]  
+> [!NOTE]
 > If you're having trouble running this script, try replacing the single quote after the ConvertFrom-StringData parameter.
-
-## See also
-
-**Deep Dive into Windows Defender Credential Guard: Related videos**
-
-[Protecting privileged users with Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)

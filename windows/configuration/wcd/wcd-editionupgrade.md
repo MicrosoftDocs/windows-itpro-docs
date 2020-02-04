@@ -4,11 +4,13 @@ description: This section describes the EditionUpgrade settings that you can con
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerMS
+author: dansimp
 ms.localizationpriority: medium
-ms.author: jdecker
+ms.author: dansimp
 ms.topic: article
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ---
 
 # EditionUpgrade (Windows Configuration Designer reference)

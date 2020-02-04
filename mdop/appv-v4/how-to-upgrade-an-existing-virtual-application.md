@@ -1,12 +1,15 @@
 ---
 title: How to Upgrade an Existing Virtual Application
 description: How to Upgrade an Existing Virtual Application
-author: jamiejdt
+author: dansimp
 ms.assetid: ec531576-2423-4c2c-9b9f-da74174a6858
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4705(S): A user right was removed.
@@ -96,7 +99,7 @@ You will see unique event for every user.
 
 -   **Account Name** \[Type = SID\]: the SID of security principal for which user rights were removed. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
-**Removed Right: **
+**Removed Right:**
 
 -   **User Right** \[Type = UnicodeString\]: the list of removed user rights. This event generates only for *user* rights, not logon rights. Here is the list of possible user rights:
 

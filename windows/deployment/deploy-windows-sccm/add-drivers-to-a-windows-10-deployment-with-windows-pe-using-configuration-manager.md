@@ -1,13 +1,17 @@
 ---
 title: Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager (Windows 10)
-description: In this topic, you will learn how to configure the Windows Preinstallation Environment (Windows PE) to include the network drivers required to connect to the deployment share and the storage drivers required to see the local storage on machines.
+description: Learn how to configure the Windows Preinstallation Environment (Windows PE) to include required network and storage drivers.
 ms.assetid: 97b3ea46-28d9-407e-8c42-ded2e45e8d5c
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deploy, task sequence
 ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: mtniehaus
+audience: itpro
+author: greg-lindsay
 ms.date: 07/27/2017
 ms.topic: article
 ---
@@ -20,8 +24,8 @@ ms.topic: article
 -   Windows 10 versions 1507, 1511
 
 >[!IMPORTANT]
->For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems). 
->Configuration Manager 2012 and 2012 R2 provide support for Windows 10 versions 1507 and 1511 only. Later versions of Windows 10 require an updated Configuration Manager release. For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10).
+>For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems). 
+>Configuration Manager 2012 and 2012 R2 provide support for Windows 10 versions 1507 and 1511 only. Later versions of Windows 10 require an updated Configuration Manager release. For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
 
 In this topic, you will learn how to configure the Windows Preinstallation Environment (Windows PE) to include the network drivers required to connect to the deployment share and the storage drivers required to see the local storage on machines. Even though the Windows PE boot image and the Windows 10 operating system contain many out-of-the-box drivers, it is likely you will have to add new or updated drivers to support all your hardware. In this section, you import drivers for both Windows PE and the full Windows 10 operating system.
 
@@ -46,9 +50,9 @@ This section will show you how to import some network and storage drivers for Wi
 
 *Figure 21. Add drivers to Windows PE*
 
->[!NOTE]  
+>[!NOTE]
 >The Updating Boot Image part of the wizard will appear to hang when displaying Done. It will complete in a minute or two.
- 
+ 
 
 ## <a href="" id="sec02"></a>Add drivers for Windows 10
 
@@ -71,13 +75,13 @@ This section illustrates how to add drivers for Windows 10 through an example in
 
     * Path: \\\\CM01\\Sources$\\OSD\\DriverPackages\\Windows 10 x64\\HP EliteBook 8560w
 
-    >[!NOTE]  
+    >[!NOTE]
     >The package path does not yet exist, so you have to type it in. The wizard will create the new package in that folder.
-     
+     
 
 5.  On the **Select drivers to include in the boot image** page, do not select anything, and click **Next** twice. After the package has been created, click **Close**.
 
-    >[!NOTE]  
+    >[!NOTE]
     >If you want to monitor the driver import process more closely, you can open the SMSProv.log file during driver import.
   
     ![Drivers imported and a new driver package created](../images/mdt-06-fig26.png "Drivers imported and a new driver package created")

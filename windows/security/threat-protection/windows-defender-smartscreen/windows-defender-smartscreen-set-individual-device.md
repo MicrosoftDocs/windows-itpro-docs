@@ -1,14 +1,17 @@
 ---
 title: Set up and use Windows Defender SmartScreen on individual devices (Windows 10)
-description: Steps about what happens when an employee tries to run an app, how employees can report websites as safe or unsafe, and how employees can use the Windows Security to set Windows Defender SmartScreen for individual devices.
-keywords: SmartScreen Filter, Windows SmartScreen
+description: Learn how employees can use Windows Security to set up Windows Defender SmartScreen. Windows Defender SmartScreen protects users from running malicious apps.
+keywords: SmartScreen Filter, Windows SmartScreen, Windows Defender SmartScreen
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-author: justinha
+author: mjcaparas
 ms.localizationpriority: medium
 ms.date: 10/13/2017
+ms.reviewer: 
+manager: dansimp
+ms.author: macapara
 ---
 
 # Set up and use Windows Defender SmartScreen on individual devices
@@ -30,34 +33,34 @@ Starting with Windows 10, version 1703 your employees can use Windows Security t
 
 2. In the **App & browser control** screen, choose from the following options:
 
-    - In the **Check apps and files** area:
+   - In the **Check apps and files** area:
     
-        - **Block.** Stops employees from downloading and running unrecognized apps and files from the web.
+       - **Block.** Stops employees from downloading and running unrecognized apps and files from the web.
 
-        - **Warn.** Warns employees that the apps and files being downloaded from the web are potentially dangerous, but allows the action to continue.
+       - **Warn.** Warns employees that the apps and files being downloaded from the web are potentially dangerous, but allows the action to continue.
 
-        - **Off.** Turns off SmartScreen, so an employee isn't alerted or stopped from downloading potentially malicious apps and files.
+       - **Off.** Turns off Windows Defender SmartScreen, so an employee isn't alerted or stopped from downloading potentially malicious apps and files.
 
-    - In the **SmartScreen for Microsoft Edge** area:
+   - In the **Windows Defender SmartScreen for Microsoft Edge** area:
     
-        - **Block.** Stops employees from downloading and running unrecognized apps and files from the web, while using Microsoft Edge.
+       - **Block.** Stops employees from downloading and running unrecognized apps and files from the web, while using Microsoft Edge.
         
-        - **Warn.** Warns employees that sites and downloads are potentially dangerous, but allows the action to continue while running in Microsoft Edge.
+       - **Warn.** Warns employees that sites and downloads are potentially dangerous, but allows the action to continue while running in Microsoft Edge.
         
-        - **Off.** Turns off SmartScreen, so an employee isn't alerted or stopped from downloading potentially malicious apps and files.    
+       - **Off.** Turns off Windows Defender SmartScreen, so an employee isn't alerted or stopped from downloading potentially malicious apps and files.    
 
-    - In the **SmartScreen from Microsoft Store apps** area:
+   - In the **Windows Defender SmartScreen from Microsoft Store apps** area:
         
-        - **Warn.** Warns employees that the sites and downloads used by Microsoft Store apps are potentially dangerous, but allows the action to continue.
+     - **Warn.** Warns employees that the sites and downloads used by Microsoft Store apps are potentially dangerous, but allows the action to continue.
         
-        - **Off.** Turns off SmartScreen, so an employee isn't alerted or stopped from visiting sites or from downloading potentially malicious apps and files.
+     - **Off.** Turns off Windows Defender SmartScreen, so an employee isn't alerted or stopped from visiting sites or from downloading potentially malicious apps and files.
 
-        ![Windows Security, SmartScreen controls](images/windows-defender-smartscreen-control.png)
+       ![Windows Security, Windows Defender SmartScreen controls](images/windows-defender-smartscreen-control.png)
 
-## How SmartScreen works when an employee tries to run an app
-Windows Defender SmartScreen checks the reputation of any web-based app the first time it's run from the Internet, checking digital signatures and other factors against a Microsoft-maintained service. If an app has no reputation or is known to be malicious, SmartScreen can warn the employee or block the app from running entirely, depending on how you've configured the feature to run in your organization.
+## How Windows Defender SmartScreen works when an employee tries to run an app
+Windows Defender SmartScreen checks the reputation of any web-based app the first time it's run from the Internet, checking digital signatures and other factors against a Microsoft-maintained service. If an app has no reputation or is known to be malicious, Windows Defender SmartScreen can warn the employee or block the app from running entirely, depending on how you've configured the feature to run in your organization.
 
-By default, your employees can bypass SmartScreen protection, letting them run legitimate apps after accepting a warning message prompt. You can also use Group Policy or Microsoft Intune to block employees from using unrecognized apps, or to entirely turn off Windows Defender SmartScreen (not recommended).
+By default, your employees can bypass Windows Defender SmartScreen protection, letting them run legitimate apps after accepting a warning message prompt. You can also use Group Policy or Microsoft Intune to block employees from using unrecognized apps, or to entirely turn off Windows Defender SmartScreen (not recommended).
 
 ## How employees can report websites as safe or unsafe
 You can configure Windows Defender SmartScreen to warn employees from going to a potentially dangerous site. Employees can then choose to report a website as safe from the warning message or as unsafe from within Microsoft Edge and Internet Explorer 11.

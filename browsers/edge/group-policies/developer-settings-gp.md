@@ -1,13 +1,15 @@
 ---
-title: Microsoft Edge - Developer tools 
-description: Microsoft Edge, by default, allows users to use the F12 developer tools as well as access the about:flags page.  You can prevent users from using the F12 developer tools or from accessing the about:flags page. 
+title: Microsoft Edge - Developer tools
+description: Microsoft Edge, by default, allows users to use the F12 developer tools as well as access the about:flags page.  You can prevent users from using the F12 developer tools or from accessing the about:flags page.
 services: 
 keywords: 
 ms.localizationpriority: medium
-managre: dougkim
-author: shortpatti
-ms.author: pashort
+author: dansimp
+ms.author: dansimp
 ms.date: 10/02/2018
+ms.reviewer: 
+audience: itpro
+manager: dansimp
 ms.topic: reference
 ms.prod: edge
 ms.mktglfcycl: explore
@@ -15,6 +17,9 @@ ms.sitesec: library
 ---
 
 # Developer tools 
+
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
 Microsoft Edge, by default, allows users to use the F12 developer tools as well as access the about:flags page.  You can prevent users from using the F12 developer tools or from accessing the about:flags page.
 

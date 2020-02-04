@@ -2,11 +2,13 @@
 title: Reboot CSP
 description: Reboot CSP
 ms.assetid: 4E3F1225-BBAD-40F5-A1AB-FF221B6BAF48
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -27,17 +29,19 @@ The following diagram shows the Reboot configuration service provider management
 <a href="" id="rebootnow"></a>**RebootNow**  
 <p style="margin-left: 20px">This node executes a reboot of the device. RebootNow triggers a reboot within 5 minutes to allow the user to wrap up any active work.</p>
 
-> [!Note]  
+> [!NOTE]
 > If this node is set to execute during a sync session, the device will reboot at the end of the sync session.
 
-<p style="margin-left: 20px">The supported operations are Execute and Get.
+<p style="margin-left: 20px">The supported operations are Execute and Get.</p>
 
 <a href="" id="schedule"></a>**Schedule**  
 <p style="margin-left: 20px">The supported operation is Get.</p>
 
 <a href="" id="schedule-single"></a>**Schedule/Single**  
-<p style="margin-left: 20px">This node will execute a reboot at a scheduled date and time. Setting a null (empty) date will delete the existing schedule. The date and time value is ISO8601, and both the date and time are required.  </br>
+<p style="margin-left: 20px">This node will execute a reboot at a scheduled date and time. The date and time value is **ISO 8601**, and both the date and time are required.  </br>
 Example to configure: 2018-10-25T18:00:00</p>
+
+Setting a null (empty) date will delete the existing schedule. In accordance with the ISO 8601 format, the date and time representation needs to be 0000-00-00T00:00:00.
 
 <p style="margin-left: 20px">The supported operations are Get, Add, Replace, and Delete.</p>
 
@@ -51,13 +55,3 @@ Example to configure: 2018-10-25T18:00:00</p>
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

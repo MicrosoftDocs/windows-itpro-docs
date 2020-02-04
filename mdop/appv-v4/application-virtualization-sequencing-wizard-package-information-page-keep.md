@@ -1,12 +1,15 @@
 ---
 title: Application Virtualization Sequencing Wizard Package Information Page
 description: Application Virtualization Sequencing Wizard Package Information Page
-author: jamiejdt
+author: dansimp
 ms.assetid: e52efd08-1b05-4bd6-a6e7-5f6bdbde7df7
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

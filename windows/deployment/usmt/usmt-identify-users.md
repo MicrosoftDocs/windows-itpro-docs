@@ -2,10 +2,13 @@
 title: Identify Users (Windows 10)
 description: Identify Users
 ms.assetid: 957a4fe9-79fd-44a2-8c26-33e50f71f9de
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: greg-lindsay
+audience: itproauthor: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -29,16 +32,16 @@ It is important to carefully consider how you plan to migrate users. By default,
 
 Before migrating local accounts, note the following:
 
--   [You must explicitly specify that local accounts that are not on the destination computer should be migrated.](#bkmk-8) If you are migrating local accounts and the local account does not exist on the destination computer, you must use the**/lac** option when using the LoadState command. If the **/lac** option is not specified, no local user accounts will be migrated.
+- [You must explicitly specify that local accounts that are not on the destination computer should be migrated.](#bkmk-8) If you are migrating local accounts and the local account does not exist on the destination computer, you must use the<strong>/lac</strong> option when using the LoadState command. If the **/lac** option is not specified, no local user accounts will be migrated.
 
--   [Consider whether to enable user accounts that are new to the destination computer.](#bkmk-8) The **/lae** option enables the account that was created with the **/lac** option. However, if you create a disabled local account by using only the **/lac** option, a local administrator must enable the account on the destination computer.
+- [Consider whether to enable user accounts that are new to the destination computer.](#bkmk-8) The **/lae** option enables the account that was created with the **/lac** option. However, if you create a disabled local account by using only the **/lac** option, a local administrator must enable the account on the destination computer.
 
--   [Be careful when specifying a password for local accounts.](#bkmk-8) If you create the local account with a blank password, anyone could log on to that account on the destination computer. If you create the local account with a password, the password is available to anyone with access to the USMT command-line tools.
+- [Be careful when specifying a password for local accounts.](#bkmk-8) If you create the local account with a blank password, anyone could log on to that account on the destination computer. If you create the local account with a password, the password is available to anyone with access to the USMT command-line tools.
 
-    **Note**  
-    If there are multiple users on a computer, and you specify a password with the **/lac** option, all migrated users will have the same password.
+  **Note**  
+  If there are multiple users on a computer, and you specify a password with the **/lac** option, all migrated users will have the same password.
 
-     
+     
 
 ## <a href="" id="bkmk-9"></a>Migrating Domain Accounts
 
@@ -55,7 +58,7 @@ USMT provides several options to migrate multiple users on a single computer. Th
     **Important**  
     The **/uel** option excludes users based on the **LastModified** date of the Ntuser.dat file. The **/uel** option is not valid in offline migrations.
 
-     
+     
 
 -   [Moving users to another domain.](#bkmk-8) You can move user accounts to another domain using the **/md** option with the LoadState command-line tool.
 
@@ -66,7 +69,7 @@ USMT provides several options to migrate multiple users on a single computer. Th
     **Note**  
     By default, if a user name is not specified in any of the command-line options, the user will be migrated.
 
-     
+     
 
 ## Related topics
 
@@ -77,9 +80,9 @@ USMT provides several options to migrate multiple users on a single computer. Th
 
 [LoadState Syntax](usmt-loadstate-syntax.md)
 
- 
+ 
 
- 
+ 
 
 
 

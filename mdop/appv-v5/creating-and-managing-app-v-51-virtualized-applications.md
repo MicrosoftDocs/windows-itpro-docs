@@ -1,8 +1,11 @@
 ---
 title: Creating and Managing App-V 5.1 Virtualized Applications
 description: Creating and Managing App-V 5.1 Virtualized Applications
-author: jamiejdt
+author: dansimp
 ms.assetid: 26be4331-88eb-4cfb-9d82-e63d7ee54576
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -35,7 +38,7 @@ You can use the App-V 5.1 Sequencer to perform the following tasks:
 
     **Note**  
     You must create shortcuts and save them to an available network location to allow roaming. If a shortcut is created and saved in a private location, the package must be published locally to the computer running the App-V 5.1 client.
- 
+ 
 -   Convert existing virtual packages.
 
 The sequencer uses the **%TMP% \\ Scratch** or **%TEMP% \\ Scratch** directory and the **Temp** directory to store temporary files during sequencing. On the computer that runs the sequencer, you should configure these directories with free disk space equivalent to the estimated application installation requirements. Configuring the temp directories and the Temp directory on different hard drive partitions can help improve performance during sequencing.

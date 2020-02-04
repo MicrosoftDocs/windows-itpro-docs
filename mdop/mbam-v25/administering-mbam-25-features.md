@@ -1,8 +1,11 @@
 ---
 title: Administering MBAM 2.5 Features
 description: Administering MBAM 2.5 Features
-author: jamiejdt
+author: dansimp
 ms.assetid: ca15f818-cf07-4437-8ffa-425af603a3c8
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -31,7 +34,7 @@ MBAM provides a custom control panel, called BitLocker Encryption Options, that 
 **Note**  
 This customized control panel does not replace the default Windows BitLocker control panel.
 
- 
+ 
 
 [Understanding the BitLocker Encryption Options and BitLocker Drive Encryption Items in Control Panel](understanding-the-bitlocker-encryption-options-and-bitlocker-drive-encryption-items-in-control-panel.md)
 
@@ -44,9 +47,9 @@ This customized control panel does not replace the default Windows BitLocker con
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
 
- 
+ 
 
- 
+ 
 
 
 

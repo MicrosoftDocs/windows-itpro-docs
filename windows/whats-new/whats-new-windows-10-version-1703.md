@@ -5,10 +5,12 @@ keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: JasonGerend
 ms.localizationpriority: high
 ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
-ms.date: 10/16/2017
+ms.reviewer: 
+author: greg-lindsay
+manager: laurawi
+ms.author: greglin
 ms.topic: article
 ---
 
@@ -123,7 +125,7 @@ New features in Windows Defender Advanced Threat Protection (ATP) for Windows 10
 
 You can read more about ransomware mitigations and detection capability in Windows Defender Advanced Threat Protection in the blog: [Averting ransomware epidemics in corporate networks with Windows Defender ATP](https://blogs.technet.microsoft.com/mmpc/2017/01/30/averting-ransomware-epidemics-in-corporate-networks-with-windows-defender-atp/).
 
-Get a quick, but in-depth overview of Windows Defender ATP for Windows 10 and the new capabilities in Windows 10, version 1703 see [Windows Defender ATP for Windows 10 Creators Update](https://technet.microsoft.com/en-au/windows/mt782787).
+Get a quick, but in-depth overview of Windows Defender ATP for Windows 10 and the new capabilities in Windows 10, version 1703 see [Windows Defender ATP for Windows 10 Creators Update](https://technet.microsoft.com/windows/mt782787).
 
 ### Windows Defender Antivirus
 Windows Defender is now called Windows Defender Antivirus, and we've [increased the breadth of the documentation library for enterprise security admins](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10).
@@ -193,7 +195,7 @@ We recently added the option to download Windows 10 Insider Preview builds using
 
 ### Optimize update delivery
 
-With changes delivered in Windows 10, version 1703, [Express updates](/windows/deployment/update/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with System Center Configuration Manager, starting with version 1702 of Configuration Manager, as well as with other third-party updating and management products that [implement this new functionality](https://technet.microsoft.com/windows-server-docs/management/windows-server-update-services/deploy/express-update-delivery-isv-support). This is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
+With changes delivered in Windows 10, version 1703, [Express updates](/windows/deployment/update/waas-optimize-windows-10-updates#express-update-delivery) are now fully supported with Microsoft Endpoint Configuration Manager, starting with version 1702 of Configuration Manager, as well as with other third-party updating and management products that [implement this new functionality](https://technet.microsoft.com/windows-server-docs/management/windows-server-update-services/deploy/express-update-delivery-isv-support). This is in addition to current Express support on Windows Update, Windows Update for Business and WSUS.
 
 >[!NOTE]
 > The above changes can be made available to Windows 10, version 1607, by installing the April 2017 cumulative update.

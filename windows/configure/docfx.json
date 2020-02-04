@@ -30,14 +30,17 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.windows-configure"
-			}
-		}
-	},
+      "feedback_system": "None",
+      "hideEdit": true,
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.windows-configure"
+        }
+      }
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "windows-configure"
+    "dest": "windows-configure",
+    "markdownEngineName": "markdig"
   }
 }

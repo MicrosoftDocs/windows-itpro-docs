@@ -1,8 +1,11 @@
 ---
 title: How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console
 description: How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console
-author: jamiejdt
+author: dansimp
 ms.assetid: 4f249ee3-cc2d-4b1e-afe5-d1cbf9cabd88
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -30,7 +33,7 @@ Use the following procedure to customize the virtual application extensions for 
 
 5.  To edit additional application extensions, modify the configuration file and click **Import and Overwrite this Configuration**. Select the modified file and click **Open**. In the dialog, click **Overwrite** to complete the process.
 
-    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issu**e? Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
+    **Got a suggestion for App-V**? Add or vote on suggestions [here](http://appv.uservoice.com/forums/280448-microsoft-application-virtualization). **Got an App-V issue?** Use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopappv).
 
 ## Related topics
 

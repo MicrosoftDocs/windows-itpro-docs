@@ -1,12 +1,15 @@
 ---
 title: HELP
 description: HELP
-author: jamiejdt
+author: dansimp
 ms.assetid: 0ddb5f18-0c0a-45ea-b7c7-2d4749e3d35d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

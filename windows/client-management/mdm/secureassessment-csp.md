@@ -2,11 +2,13 @@
 title: SecureAssessment CSP
 description: SecureAssessment CSP
 ms.assetid: 6808BE4B-961E-4638-BF15-FD7841D1C00A
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
@@ -31,9 +33,9 @@ The supported operations are Add, Delete, Get, and Replace.
 <a href="" id="testeraccount"></a>**TesterAccount**  
 The user name of the test taking account.
 
--   To specify a domain account, use domain\\user.
--   To specify an AAD account, use username@tenant.com.
--   To specify a local account, use the username.
+- To specify a domain account, use domain\\user.
+- To specify an AAD account, use username@tenant.com.
+- To specify a local account, use the username.
 
 The supported operations are Add, Delete, Get, and Replace.
 
@@ -58,9 +60,9 @@ Supported operations are Get and Replace.
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

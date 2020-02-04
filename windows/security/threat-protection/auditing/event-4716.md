@@ -6,8 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
-ms.date: 04/19/2017
+author: dansimp
+ms.date: 04/04/2019
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ---
 
 # 4716(S): Trusted domain information was modified.
@@ -132,7 +135,7 @@ This event is generated only on domain controllers.
 | 0x8   | TRUST\_ATTRIBUTE\_FOREST\_TRANSITIVE                       | If this bit is set, the trust link is a [cross-forest trust](https://msdn.microsoft.com/library/cc223126.aspx#gt_86f3dbf2-338f-462e-8c5b-3c8e05798dbc) [\[MS-KILE\]](https://msdn.microsoft.com/library/cc233855.aspx) between the root domains of two [forests](https://msdn.microsoft.com/library/cc223126.aspx#gt_fd104241-4fb3-457c-b2c4-e0c18bb20b62), both of which are running in a [forest functional level](https://msdn.microsoft.com/library/cc223126.aspx#gt_b3240417-ca43-4901-90ec-fde55b32b3b8) of DS\_BEHAVIOR\_WIN2003 or greater.<br>Only evaluated on Windows Server 2003 operating system, Windows Server 2008 operating system, Windows Server 2008 R2 operating system, Windows Server 2012 operating system, Windows Server 2012 R2 operating system, and Windows Server 2016 operating system.<br>Can only be set if forest and trusted forest are running in a forest functional level of DS\_BEHAVIOR\_WIN2003 or greater.                   |
 | 0x10  | TRUST\_ATTRIBUTE\_CROSS\_ORGANIZATION                      | If this bit is set, then the trust is to a domain or forest that is not part of the [organization](https://msdn.microsoft.com/library/cc223126.aspx#gt_6fae7775-5232-4206-b452-f298546ab54f). The behavior controlled by this bit is explained in [\[MS-KILE\]](https://msdn.microsoft.com/library/cc233855.aspx) section [3.3.5.7.5](https://msdn.microsoft.com/library/cc233949.aspx) and [\[MS-APDS\]](https://msdn.microsoft.com/library/cc223948.aspx) section [3.1.5](https://msdn.microsoft.com/library/cc223991.aspx).<br>Only evaluated on Windows Server 2003, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows Server 2016.<br>Can only be set if forest and trusted forest are running in a forest functional level of DS\_BEHAVIOR\_WIN2003 or greater.                                                                                                                                        |
 | 0x20  | TRUST\_ATTRIBUTE\_WITHIN\_FOREST                           | If this bit is set, then the trusted domain is within the same forest.<br>Only evaluated on Windows Server 2003, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows Server 2016.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| 0x40  | TRUST\_ATTRIBUTE\_TREAT\_AS\_EXTERNAL                      | If this bit is set, then a cross-forest trust to a domain is to be treated as an external trust for the purposes of SID Filtering. Cross-forest trusts are more stringently [filtered](https://msdn.microsoft.com/library/cc223126.aspx#gt_ffbe7b55-8e84-4f41-a18d-fc29191a4cda) than external trusts. This attribute relaxes those cross-forest trusts to be equivalent to external trusts. For more information on how each trust type is filtered, see [\[MS-PAC\]](https://msdn.microsoft.com/library/cc237917.aspx) section 4.1.2.2.<br>Only evaluated on Windows Server 2003, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows Server 2016.<br>Only evaluated if SID Filtering is used.<br>Only evaluated on cross-forest trusts having TRUST\_ATTRIBUTE\_FOREST\_TRANSITIVE.<br>Can only be set if forest and trusted forest are running in a forest functional level of DS\_BEHAVIOR\_WIN2003 or greater. |
+| 0x40  | TRUST\_ATTRIBUTE\_TREAT\_AS\_EXTERNAL                      | If this bit is set, then a cross-forest trust to a domain is to be treated as an external trust for the purposes of SID Filtering. Cross-forest trusts are [more stringently filtered](https://docs.microsoft.com/openspecs/windows_protocols/ms-adts/e9a2d23c-c31e-4a6f-88a0-6646fdb51a3c) than external trusts. This attribute relaxes those cross-forest trusts to be equivalent to external trusts.<br>Only evaluated on Windows Server 2003, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, and Windows Server 2016.<br>Only evaluated if SID Filtering is used.<br>Only evaluated on cross-forest trusts having TRUST\_ATTRIBUTE\_FOREST\_TRANSITIVE.<br>Can only be set if forest and trusted forest are running in a forest functional level of DS\_BEHAVIOR\_WIN2003 or greater. |
 | 0x80  | TRUST\_ATTRIBUTE\_USES\_RC4\_ENCRYPTION                    | This bit is set on trusts with the [trustType](https://msdn.microsoft.com/library/cc220955.aspx) set to TRUST\_TYPE\_MIT, which are capable of using RC4 keys. Historically, MIT Kerberos distributions supported only DES and 3DES keys ([\[RFC4120\]](https://go.microsoft.com/fwlink/?LinkId=90458), [\[RFC3961\]](https://go.microsoft.com/fwlink/?LinkId=90450)). MIT 1.4.1 adopted the RC4HMAC encryption type common to Windows 2000 [\[MS-KILE\]](https://msdn.microsoft.com/library/cc233855.aspx), so trusted domains deploying later versions of the MIT distribution required this bit. For more information, see "Keys and Trusts", section [6.1.6.9.1](https://msdn.microsoft.com/library/cc223782.aspx).<br>Only evaluated on TRUST\_TYPE\_MIT                                                                                                                                                                                                                                          |
 | 0x200 | TRUST\_ATTRIBUTE\_CROSS\_ORGANIZATION\_NO\_TGT\_DELEGATION | If this bit is set, tickets granted under this trust MUST NOT be trusted for delegation. The behavior controlled by this bit is as specified in [\[MS-KILE\]](https://msdn.microsoft.com/library/cc233855.aspx) section 3.3.5.7.5.<br>Only supported on Windows Server 2012, Windows Server 2012 R2, and Windows Server 2016.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | 0x400 | TRUST\_ATTRIBUTE\_PIM\_TRUST                               | If this bit and the TATE bit are set, then a cross-forest trust to a domain is to be treated as Privileged Identity Management trust for the purposes of SID Filtering. For more information on how each trust type is filtered, see [\[MS-PAC\]](https://msdn.microsoft.com/library/cc237917.aspx) section 4.1.2.2.<br>Evaluated only on Windows Server 2016<br>Evaluated only if SID Filtering is used.<br>Evaluated only on cross-forest trusts having TRUST\_ATTRIBUTE\_FOREST\_TRANSITIVE.<br>Can be set only if the forest and the trusted forest are running in a forest functional level of DS\_BEHAVIOR\_WINTHRESHOLD or greater.                                                                                                                                                                                                                                                                                                                                   |
@@ -151,3 +154,69 @@ For 4716(S): Trusted domain information was modified.
 
 -   Any changes in Active Directory domain trust settings must be monitored and alerts should be triggered. If this change was not planned, investigate the reason for the change.
 
+## Anonymous Logon account
+
+If the account reported in the event is **Anonymous Logon**, it means the password is changed by system automatic password reset. For example:
+
+```
+Log Name:      Security
+Source:        Microsoft-Windows-Security-Auditing
+Date:          <time>
+Event ID:      4716
+Task Category: Authentication Policy Change
+Level:         Information
+Keywords:      Audit Success
+User:          N/A
+Computer:      <fqdn>
+Description:
+Trusted domain information was modified.    //When trust gets reset, this event generates
+Subject:
+ Security ID:  ANONYMOUS LOGON              //Confirms that anonymous logon account is reported when Automatic password reset for the trust is performed
+ Account Name:  ANONYMOUS LOGON
+ Account Domain:  NT AUTHORITY
+ Logon ID:  0x3E6
+```
+
+After the event, one more event ID is generated:
+
+```
+Log Name:      Security
+Source:        Microsoft-Windows-Security-Auditing
+Date:          <time>
+Event ID:      4742
+Task Category: Computer Account Management
+Level:         Information
+Keywords:      Audit Success
+User:          N/A
+Computer:      <fqdn>
+Description:
+A computer account was changed.
+Subject:
+ Security ID:  ANONYMOUS LOGON
+ Account Name:  ANONYMOUS LOGON
+ Account Domain:  NT AUTHORITY
+ Logon ID:  0x3E6
+Computer Account That Was Changed:
+ Security ID:  CONTOSO\CONTOSOPEERTREE$     //OBJECT representing the TRUST object
+ Account Name:  CONTOSOPEERTREE$
+ Account Domain:  CONTOSO
+ Password Last Set: 10/9/2019 12:02:08 PM
+ 
+Log Name:      Security
+Source:        Microsoft-Windows-Security-Auditing
+Date:          10/1/2019 4:02:43 PM
+Event ID:      4716
+Task Category: Authentication Policy Change
+Level:         Information
+Keywords:      Audit Success
+User:          N/A
+Computer:      W-REDAD-P01.red.lhgroup.de
+Description:
+Trusted domain information was modified.
+ 
+Subject:
+                    Security ID:       S-1-5-21-1313371058-2156521407-1595812000-1103        //Shows the respective domain Sid
+                    Account Name:      U806391a                                              //Users who has modified the attribute.
+                    Account Domain:    RED
+                    Logon ID:          0x16049916
+```

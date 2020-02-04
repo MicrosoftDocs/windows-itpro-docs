@@ -1,12 +1,15 @@
 ---
 title: About the Virtual File System Tab
 description: About the Virtual File System Tab
-author: jamiejdt
+author: dansimp
 ms.assetid: 4d2e344d-3f3b-49fd-bbbd-fa5177e7af50
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 08/30/2016
 ---
 

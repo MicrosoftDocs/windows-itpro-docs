@@ -2,12 +2,14 @@
 title: Accounts Rename guest account - security policy setting (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Accounts Rename guest account security policy setting.
 ms.assetid: 9b8052b4-bbb9-4cc1-bfee-ce25390db707
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -52,7 +54,7 @@ The following table lists the actual and effective default values for this polic
 | DC Effective Default Settings | Guest |
 | Member Server Effective Default Settings | Guest |
 | Client Computer Effective Default Settings | *User-defined text* |
- 
+ 
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -89,5 +91,5 @@ There should be little impact because the Guest account is disabled by default i
 ## Related topics
 
 [Security Options](security-options.md)
- 
- 
+ 
+ 

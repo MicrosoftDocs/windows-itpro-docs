@@ -2,12 +2,14 @@
 title: Assign Security Group Filters to the GPO (Windows 10)
 description: Assign Security Group Filters to the GPO
 ms.assetid: bcbe3299-8d87-4ec1-9e86-8e4a680fd7c8
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

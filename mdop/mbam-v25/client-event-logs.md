@@ -1,8 +1,11 @@
 ---
 title: Client Event Logs
 description: Client Event Logs
-author: jamiejdt
+author: dansimp
 ms.assetid: d5c2f270-db6a-45f1-8557-8c6fb28fd568
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,7 +16,7 @@ ms.date: 06/16/2016
 
 # Client Event Logs
 
-
+MBAM Client event logs are located in Event Viewer – Applications and Services Logs – Microsoft – Windows – MBAM - Operational path.
 The following table contains event IDs that can occur on the MBAM Client.
 
 <table>

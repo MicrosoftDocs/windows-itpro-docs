@@ -4,11 +4,13 @@ description:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Windows Configuration Designer command-line interface (reference)
@@ -42,7 +44,7 @@ icd.exe /Build-ProvisioningPackage /CustomizationXML:<path_to_xml> /PackagePath:
 | /CustomizationXML | No | Specifies the path to a Windows provisioning XML file that contains the customization assets and settings. For more information, see Windows provisioning answer file. |
 | /PackagePath | Yes | Specifies the path and the package name where the built provisioning package will be saved. |
 | /StoreFile | No</br></br></br>See Important note. | For partners using a settings store other than the default store(s) used by Windows Configuration Designer, use this parameter to specify the path to one or more comma-separated Windows settings store file. By default, if you don't specify a settings store file, the settings store that's common to all Windows editions will be loaded by Windows Configuration Designer.</br></br></br>**Important**  If you use this parameter, you must not use /MSPackageRoot or /OEMInputXML. |
-| /Variables | No | Specifies a semicolon separated <name> and <value> macro pair. The format for the argument must be <name>=<value>. |
+| /Variables | No | Specifies a semicolon separated `<name>` and `<value>` macro pair. The format for the argument must be `<name>=<value>`. |
 | Encrypted | No | Denotes whether the provisioning package should be built with encryption. Windows Configuration Designer auto-generates the decryption password and includes this information in the output.</br></br></br>Precede with + for encryption or - for no encryption. The default is no encryption. |
 | Overwrite | No | Denotes whether to overwrite an existing provisioning package.</br></br></br>Precede with + to overwrite an existing package or - if you don't want to overwrite an existing package. The default is false (don't overwrite). |
 | /? | No | Lists the switches and their descriptions for the command-line tool or for certain commands. |

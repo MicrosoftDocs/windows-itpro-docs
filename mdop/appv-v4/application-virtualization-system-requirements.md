@@ -1,12 +1,15 @@
 ---
 title: Application Virtualization System Requirements
 description: Application Virtualization System Requirements
-author: jamiejdt
+author: dansimp
 ms.assetid: a2798dd9-168e-45eb-8103-e12e128fae7c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -86,7 +89,7 @@ The following list includes the minimum recommended hardware and software requir
 </tbody>
 </table>
 
- 
+ 
 
 ¹Applies to App-V 4.5 SP1 and SP2 only.
 
@@ -160,7 +163,7 @@ The following list includes the minimum recommended hardware and software requir
 </tbody>
 </table>
 
- 
+ 
 
 ¹Applies to App-V 4.5 SP1 and SP2 only.
 
@@ -240,7 +243,7 @@ The following list includes the minimum recommended hardware and software requir
 </tbody>
 </table>
 
- 
+ 
 
 ¹Applies to App-V 4.5 SP1 and SP2 only.
 
@@ -324,7 +327,7 @@ The following list includes the minimum recommended hardware and software requir
 </tbody>
 </table>
 
- 
+ 
 
 ¹Applies to App-V 4.5 SP1 and SP2 only.
 
@@ -335,7 +338,7 @@ The following list includes the minimum recommended hardware and software requir
     **Important**  
     The minimum requirement is .NET Framework 2.0 SP2 if you must install App-V hotfix KB980850 or subsequent App-V hotfixes on the computer that is running the App-V Management Console.
 
-     
+     
 
 ## Related topics
 
@@ -350,9 +353,9 @@ The following list includes the minimum recommended hardware and software requir
 
 [How to Upgrade the Servers and System Components](how-to-upgrade-the-servers-and-system-components.md)
 
- 
+ 
 
- 
+ 
 
 
 

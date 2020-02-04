@@ -2,14 +2,17 @@
 title: Install apps on your Microsoft Surface Hub
 description: Admins can install apps can from either the Microsoft Store or the Microsoft Store for Business.
 ms.assetid: 3885CB45-D496-4424-8533-C9E3D0EDFD94
+ms.reviewer: 
+manager: dansimp
 keywords: install apps, Microsoft Store, Microsoft Store for Business
 ms.prod: surface-hub
 ms.sitesec: library
-author: jdeckerms
-ms.author: jdecker
+author: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.date: 10/23/2018
 ms.localizationpriority: medium
+audience: ITPro
 ---
 
 # Install apps on your Microsoft Surface Hub
@@ -17,9 +20,9 @@ ms.localizationpriority: medium
 You can install additional apps on your Surface Hub to fit your team or organization's needs. There are different methods for installing apps depending on whether you are developing and testing an app, or deploying a released app. This topic describes methods for installing apps for either scenario.
 
 A few things to know about apps on Surface Hub:
-- Surface Hub only runs [Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/windows/uwp/get-started/whats-a-uwp). Apps created using the [Desktop App Converter](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) will not run on Surface Hub. See a [list of apps that work with Surface Hub](https://support.microsoft.com/help/4040382/surface-Apps-that-work-with-Microsoft-Surface-Hub).
+- Surface Hub only runs [Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/windows/uwp/get-started/whats-a-uwp). Apps created using the [Desktop App Converter](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) will not run on Surface Hub.
 - Apps must be targeted for the [Universal device family](https://msdn.microsoft.com/library/windows/apps/dn894631) or Windows Team device family.
-- Surface Hub only supports [offline-licensed apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) from Microsoft Store for Business.
+- Surface Hub only supports [offline-licensed apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) from [Microsoft Store for Business](https://businessstore.microsoft.com/store).
 - By default, apps must be Store-signed to be installed. During testing and development, you can also choose to run developer-signed UWP apps by placing the device in developer mode.
 - When submitting an app to the Microsoft Store, developers need to set Device family availability and Organizational licensing options to make sure an app will be available to run on Surface Hub.
 - You need admin credentials to install apps on your Surface Hub. Since the device is designed to be used in communal spaces like meeting rooms, people can't access the Microsoft Store to download and install apps.
@@ -37,10 +40,10 @@ By enabling developer mode, you can also install developer-signed UWP apps.
 > After developer mode has been enabled, you will need to reset the Surface Hub to disable it. Resetting the device removes all local user files and configurations and then reinstalls Windows.
 
 **To turn on developer mode** 
-1.	From your Surface Hub, start **Settings**.
-2.	Type the device admin credentials when prompted.
-3.	Navigate to **Update & security** > **For developers**.
-4.	Select **Developer mode** and accept the warning prompt.
+1. From your Surface Hub, start **Settings**.
+2. Type the device admin credentials when prompted.
+3. Navigate to **Update & security** > **For developers**.
+4. Select **Developer mode** and accept the warning prompt.
 
 ### Visual Studio
 During development, the easiest way to test your app on a Surface Hub is using Visual Studio. Visual Studio's remote debugging feature helps you discover issues in your app before deploying it broadly. For more information, see [Test Surface Hub apps using Visual Studio](https://msdn.microsoft.com/windows/uwp/debug-test-perf/test-surface-hub-apps-using-visual-studio).
@@ -99,10 +102,10 @@ To evaluate apps released on the Microsoft Store, use the Microsoft Store app on
 > - To install apps, you will need to manually sign in to the Microsoft Store app on each Surface Hub you own.
 
 **To browse the Microsoft Store on Surface Hub** 
-1.	From your Surface Hub, start **Settings**.
-2.	Type the device admin credentials when prompted.
-3.	Navigate to **This device** > **Apps & features**.
-4.	Select **Open Store**.
+1. From your Surface Hub, start **Settings**.
+2. Type the device admin credentials when prompted.
+3. Navigate to **This device** > **Apps & features**.
+4. Select **Open Store**.
 
 ### Download app packages from Microsoft Store for Business
 To download the app package you need to install apps on your Surface Hub, visit the [Microsoft Store for Business](https://www.microsoft.com/business-store). The Store for Business is where you can find, acquire, and manage apps for the Windows 10 devices in your organization, including Surface Hub.
@@ -126,17 +129,16 @@ To deploy apps to a large number of Surface Hubs in your organization, use a sup
 
 | MDM provider                | Supports offline-licensed app packages |
 |-----------------------------|----------------------------------------|
-| On-premises MDM with System Center Configuration Manager (beginning in version 1602) | Yes |
-| Hybrid MDM with System Center Configuration Manager and Microsoft Intune | Yes |
-| [Microsoft Intune standalone](https://docs.microsoft.com/intune/windows-store-for-business) | Yes |
+| On-premises MDM with  Configuration Manager (beginning in version 1602) | Yes |
+|
 | Third-party MDM provider    | Check to make sure your MDM provider supports deploying offline-licensed app packages. |
 
-**To deploy apps remotely using System Center Configuration Manager (either on-prem MDM or hybrid MDM)**
+**To deploy apps remotely using Microsoft Endpoint Configuration Manager**
 
 > [!NOTE]
-> These instructions are based on the current branch of System Center Configuration Manager.
+> These instructions are based on the current branch of Microsoft Endpoint Configuration Manager.
 
-1. Enroll your Surface Hubs to System Center Configuration Manager. For more information, see [Enroll a Surface Hub into MDM](manage-settings-with-mdm-for-surface-hub.md#enroll-into-mdm).
+1. Enroll your Surface Hubs to Configuration Manager. For more information, see [Enroll a Surface Hub into MDM](manage-settings-with-mdm-for-surface-hub.md#enroll-into-mdm).
 2. Download the offline-licensed app package, the *encoded* license file, and any necessary dependency files from the Store for Business. For more information, see [Download an offline-licensed app](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps#download-an-offline-licensed-app). Place the downloaded files in the same folder on a network share.
 3. In the **Software Library** workspace of the Configuration Manager console, click **Overview** > **Application Management** > **Applications**.
 4. On the **Home** tab, in the **Create** group, click **Create Application**.
@@ -147,16 +149,16 @@ To deploy apps to a large number of Surface Hubs in your organization, use a sup
 9. On the **General Information** page, complete additional details about the app. Some of this information might already be populated if it was automatically obtained from the app package.
 10. Click **Next**, review the application information on the Summary page, and then complete the Create Application Wizard. 
 11. Create a deployment type for the application. For more information, see [Create deployment types for the application](https://docs.microsoft.com/sccm/apps/deploy-use/create-applications#create-deployment-types-for-the-application).
-12. Deploy the application to your Surface Hubs. For more information, see [Deploy applications with System Center Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications).
-13. As needed, update the app by downloading a new package from the Store for Business, and publishing an application revision in Configuration Manager. For more information, see [Update and retire applications with System Center Configuration Manager](https://technet.microsoft.com/library/mt595704.aspx). 
+12. Deploy the application to your Surface Hubs. For more information, see [Deploy applications with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/sccm/apps/deploy-use/deploy-applications).
+13. As needed, update the app by downloading a new package from the Store for Business, and publishing an application revision in Configuration Manager. For more information, see [Update and retire applications with Microsoft Endpoint Configuration Manager](https://technet.microsoft.com/library/mt595704.aspx). 
 
 > [!NOTE] 
-> If you are using System Center Configuration Manager (current branch), you can bypass the above steps by connecting the Store for Business to System Center Configuration Manager. By doing so, you can synchronize the list of apps you've purchased with System Center Configuration Manager, view these in the Configuration Manager console, and deploy them like you would any other app. For more information, see [Manage apps from the Microsoft Store for Business with System Center Configuration Manager](https://technet.microsoft.com/library/mt740630.aspx).
+> If you are using Microsoft Endpoint Configuration Manager (current branch), you can bypass the above steps by connecting the Store for Business to Configuration Manager. By doing so, you can synchronize the list of apps you've purchased with Configuration Manager, view these in the Configuration Manager console, and deploy them like you would any other app. For more information, see [Manage apps from the Microsoft Store for Business with Configuration Manager](https://technet.microsoft.com/library/mt740630.aspx).
 
 
 ## Summary
 
-There are a few different ways to install apps on your Surface Hub depending on whether you are developing apps, evaluating apps on a small number of devices, or deploying apps broadly to your oganization. This table summarizes the supported methods:
+There are a few different ways to install apps on your Surface Hub depending on whether you are developing apps, evaluating apps on a small number of devices, or deploying apps broadly to your organization. This table summarizes the supported methods:
 
 | Install method             | Developing apps | Evaluating apps on <br> a few devices | Deploying apps broadly <br> to your organization |
 | -------------------------- | --------------- | ------------------------------------- | ---------------------- |

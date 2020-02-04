@@ -1,12 +1,14 @@
 ---
 title: Win32 and Desktop Bridge app policy configuration
 description: Starting in Windows 10, version 1703, you can import ADMX files and set those ADMX-backed policies for Win32 and Desktop Bridge apps.
-ms.author: maricia
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
+ms.reviewer: 
+manager: dansimp
 ---
 
 # Win32 and Desktop Bridge app policy configuration
@@ -23,7 +25,13 @@ ms.date: 06/26/2017
 
 ## <a href="" id="overview"></a>Overview
 
-Starting in Windows 10, version 1703, you can import ADMX files (also called ADMX ingestion) and set those ADMX-backed policies for Win32 and Desktop Bridge apps by using Windows 10 Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The ingested ADMX file is then processed into MDM policies.
+Starting in Windows 10, version 1703, you can import ADMX files (also called ADMX ingestion) and set those ADMX-backed policies for Win32 and Desktop Bridge apps by using Windows 10 Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The ingested ADMX file is then processed into MDM policies. 
+
+NOTE: Starting from the following Windows 10 version Replace command is supported
+- Windows 10, version 1903 with KB4512941 and KB4517211 installed 
+- Windows 10, version 1809 with KB4512534 and KB installed 
+- Windows 10, version 1803 with KB4512509 and KB installed 
+- Windows 10, version 1709 with KB4516071 and KB installed 
 
 When the ADMX policies are imported, the registry keys to which each policy is written are checked so that known system registry keys, or registry keys that are used by existing inbox policies or system components, are not overwritten. This precaution helps to avoid security concerns over opening the entire registry. Currently, the ingested policies are not allowed to write to locations within the **System**, **Software\Microsoft**, and **Software\Policies\Microsoft** keys, except for the following locations:
 
@@ -46,9 +54,14 @@ When the ADMX policies are imported, the registry keys to which each policy is w
 - software\microsoft\exchange\
 - software\policies\microsoft\vba\security\
 - software\microsoft\onedrive 
+- software\Microsoft\Edge
+- Software\Microsoft\EdgeUpdate\
 
 > [!Warning]
 > Some operating system components have built in functionality to check devices for domain membership. MDM enforces the configured policy values only if the devices are domain joined, otherwise it does not. However, you can still import ADMX files and set ADMX-backed policies regardless of whether the device is domain joined or non-domain joined.
+
+> [!NOTE]
+> Settings that cannot be configured using custom policy ingestion have to be set by pushing the appropriate registry keys directly (for example, by using PowerShell script). 
 
 ## <a href="" id="ingesting-an-app-admx-file"></a>Ingesting an app ADMX file
 
@@ -394,10 +407,10 @@ The policy {AreaName} format is {AppName}~{SettingType}~{CategoryPathFromAdmx}.
 {CategoryPathFromAdmx} is derived by traversing the parentCategory parameter. In this example, {CategoryPathFromAdmx} is ParentCategoryArea~Category2~Category3. Therefore, {AreaName} is ContosoCompanyApp~ Policy~ ParentCategoryArea~Category2~Category3.
 
 Therefore, from the example:
-   - Class: User
-   - Policy name: L_PolicyPreventRun_1
-   - Policy area name: ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3
-   - URI: `./user/Vendor/MSFT/Policy/Config/ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3/L_PolicyPreventRun_1`
+- Class: User
+- Policy name: L_PolicyPreventRun_1
+- Policy area name: ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3
+- URI: `./user/Vendor/MSFT/Policy/Config/ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3/L_PolicyPreventRun_1`
 
 ## <a href="" id="admx-backed-app-policy-examples"></a>ADMX-backed app policy examples
 

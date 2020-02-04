@@ -2,12 +2,14 @@
 title: Password must meet complexity requirements (Windows 10)
 description: Describes the best practices, location, values, and security considerations for the Password must meet complexity requirements security policy setting.
 ms.assetid: 94482ae3-9dda-42df-9782-2f66196e6afe
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -47,7 +49,7 @@ The rules that are included in the Windows Server password complexity requiremen
 
 Enabling the default Passfilt.dll may cause some additional Help Desk calls for locked-out accounts because users might not be used to having passwords that contain characters other than those found in the alphabet. However, this policy setting is liberal enough that all users should be able to abide by the requirements with a minor learning curve.
 
-Additional settings that can be included in a custom Passfilt.dll are the use of non–upper-row characters. Upper-row characters are those that are typed by holding down the SHIFT key and typing any of the digits from 1 through 10.
+Additional settings that can be included in a custom Passfilt.dll are the use of non–upper-row characters. Upper-row characters are those typed by pressing and holding the SHIFT key and then pressing any of the keys on the number row of the keyboard (from 1 through 9 and 0).
 
 ### Possible values
 
@@ -79,7 +81,7 @@ The following table lists the actual and effective default policy values. Defaul
 | Domain controller effective default settings | Enabled| 
 | Member server effective default settings | Enabled| 
 | Effective GPO default settings on client computers | Disabled| 
- 
+ 
 ## Security considerations
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
@@ -98,7 +100,7 @@ When combined with a [Minimum password length](minimum-password-length.md) of 8,
 
 If the default password complexity configuration is retained, additional Help Desk calls for locked-out accounts could occur because users might not be accustomed to passwords that contain non-alphabetical characters, or they might have problems entering passwords that contain accented characters or symbols on keyboards with different layouts. However, all users should be able to comply with the complexity requirement with minimal difficulty.
 
-If your organization has more stringent security requirements, you can create a custom version of the Passfilt.dll file that allows the use of arbitrarily complex password strength rules. For example, a custom password filter might require the use of non-upper-row symbols. (Upper-row symbols are those that require you to press and hold the SHIFT key and then press any of the digits between 1 and 0.) A custom password filter might also perform a dictionary check to verify that the proposed password does not contain common dictionary words or fragments.
+If your organization has more stringent security requirements, you can create a custom version of the Passfilt.dll file that allows the use of arbitrarily complex password strength rules. For example, a custom password filter might require the use of non-upper-row symbols. (Upper-row symbols are those that require you to press and hold the SHIFT key and then press any of the keys on the number row of the keyboard, from 1 through 9 and 0.) A custom password filter might also perform a dictionary check to verify that the proposed password does not contain common dictionary words or fragments.
 
 The use of ALT key character combinations can greatly enhance the complexity of a password. However, such stringent password requirements can result in additional Help Desk requests. Alternatively, your organization could consider a requirement for all administrator passwords to use ALT characters in the 0128–0159 range. (ALT characters outside of this range can represent standard alphanumeric characters that would not add additional complexity to the password.)
 

@@ -1,12 +1,15 @@
 ---
 title: About Microsoft Application Virtualization 4.5
 description: About Microsoft Application Virtualization 4.5
-author: jamiejdt
+author: dansimp
 ms.assetid: 39f45a6f-ac55-4fd7-8a83-865e1a7034f8
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -24,7 +27,7 @@ Formerly known as SoftGrid Application Virtualization, Microsoft Application Vir
 
     2.  Application Virtualization Streaming Server, a lightweight version which also ships as part of the Microsoft Desktop Optimization Pack and Microsoft Application Virtualization for Remote Desktop Services packages, offers application streaming including package and active upgrades without the Active Directory Domain Services and database overheads, and enables administrators to deploy to existing servers or add streaming to Electronic Software Delivery (ESD) systems.
 
-    3.  Standalone mode enables virtual applications to run without streaming and is interoperable with Microsoft Systems Management Server and System Center Configuration Manager 2007 and third-party ESD systems.
+    3.  Standalone mode enables virtual applications to run without streaming and is interoperable with Microsoft Endpoint Configuration Manager and third-party ESD systems.
 
 -   Globalization: The product is localized across 11 languages, includes support for foreign language applications that use special characters, and supports foreign language Active Directory and servers and runtime locale detection.
 

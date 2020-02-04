@@ -1,12 +1,15 @@
 ---
 title: About the Application Virtualization Sequencer
 description: About the Application Virtualization Sequencer
-author: jamiejdt
+author: dansimp
 ms.assetid: bee193ca-58bd-40c9-b41a-310435633895
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -19,7 +22,7 @@ The Microsoft Application Virtualization (App-V) Sequencer monitors and records 
 **Important**  
 To run a virtual application package the target computer must be running the appropriate version of the App-V client.
 
- 
+ 
 
 Virtual application packages run on target computers without interacting with the underlying operating system on the target computer because each application runs in a virtual environment and is isolated from other applications that are installed or running on the target computer. This isolation can reduce application conflicts and can help decrease the required amount of application pre-deployment testing.
 
@@ -80,16 +83,16 @@ The App-V Sequencer runs all services detected at sequencing time using the Loca
 **Important**  
 You should always save virtual application packages in a secure location.
 
- 
+ 
 
 ## Related topics
 
 
 [Application Virtualization Sequencer Overview](application-virtualization-sequencer-overview.md)
 
- 
+ 
 
- 
+ 
 
 
 

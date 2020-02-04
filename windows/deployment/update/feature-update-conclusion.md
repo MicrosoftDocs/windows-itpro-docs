@@ -3,11 +3,13 @@ title: Best practices for feature updates - conclusion
 description: Final thoughts about how to deploy feature updates
 ms.prod: w10
 ms.mktglfcycl: manage
-ms.sitesec: library
-author: lizap
+audience: itpro
+itproauthor: jaimeo
+author: jaimeo
 ms.localizationpriority: medium
-ms.author: elizapo
-ms.date: 07/09/2018
+ms.author: jaimeo
+ms.reviewer: 
+manager: laurawi
 ms.collection: M365-modern-desktop
 ms.topic: article
 ---

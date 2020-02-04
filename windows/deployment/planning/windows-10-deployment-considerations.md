@@ -2,13 +2,15 @@
 title: Windows 10 deployment considerations (Windows 10)
 description: There are new deployment options in Windows 10 that help you simplify the deployment process and automate migration of existing settings and applications.
 ms.assetid: A8DD6B37-1E11-4CD6-B588-92C2404219FE
+ms.reviewer: 
+manager: laurawi
+ms.author: greglin
 keywords: deploy, upgrade, update, in-place
 ms.prod: w10
 ms.localizationpriority: medium
 ms.mktglfcycl: plan
 ms.sitesec: library
-author: mtniehaus
-ms.date: 07/27/2017
+audience: itproauthor: greg-lindsay
 ms.topic: article
 ---
 
@@ -111,7 +113,7 @@ In either of these scenarios, you can make a variety of configuration changes to
 ## Stay up to date
 
 
-For computers already running Windows 10 on the Current Branch or Current Branch for Business, new upgrades will periodically be deployed, approximately two to three times per year. You can deploy these upgrades by using a variety of methods:
+For computers already running Windows 10 on the Semi-Annual Channel, new upgrades will periodically be deployed, approximately two to three times per year. You can deploy these upgrades by using a variety of methods:
 
 -   Windows Update or Windows Update for Business, for devices where you want to receive updates directly from the Internet.
 

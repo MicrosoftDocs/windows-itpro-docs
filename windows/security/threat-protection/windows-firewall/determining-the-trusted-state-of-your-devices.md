@@ -2,12 +2,14 @@
 title: Determining the Trusted State of Your Devices (Windows 10)
 description: Determining the Trusted State of Your Devices
 ms.assetid: 3e77f0d0-43aa-47dd-8518-41ccdab2f2b2
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -142,4 +144,4 @@ With the other information that you have gathered in this section, this informat
 
 The costs identified in this section only capture the projected cost of the device upgrades. Many additional design, support, test, and training costs should be accounted for in the overall project plan.
 
-**Next: **[Planning Your Windows Defender Firewall with Advanced Security Design](planning-your-windows-firewall-with-advanced-security-design.md)
+**Next:** [Planning Your Windows Defender Firewall with Advanced Security Design](planning-your-windows-firewall-with-advanced-security-design.md)

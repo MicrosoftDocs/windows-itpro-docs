@@ -30,14 +30,16 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.windows-update"
-			}
-		}
-	},
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "MSDN.windows-update",
+          "folder_relative_path_in_docset": "./"
+        }
+      }
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "windows-update"
+    "dest": "windows-update",
+    "markdownEngineName": "markdig"
   }
 }

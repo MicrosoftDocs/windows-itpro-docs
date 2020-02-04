@@ -1,5 +1,5 @@
 ---
-title: Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP) (Windows 10)
+title: Recommended URLs for Windows Information Protection (Windows 10)
 description: Recommended URLs to add to your Enterprise Cloud Resources and Neutral Resources network settings, when used with Windows Information Protection (WIP).
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP and Neutral Resources, WIP and Enterprise Cloud Resources
 ms.prod: w10
@@ -7,13 +7,14 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
-ms.author: justinha
+author: dulcemontemayor
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 03/25/2019
+ms.reviewer: 
 ---
 
 # Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)
@@ -34,6 +35,7 @@ This table includes the recommended URLs to add to your Enterprise Cloud Resourc
 |-----------------------------|---------------------------------------------------------------------|
 |Office 365 for Business |<ul><li>contoso.sharepoint.com</li><li>contoso-my.sharepoint.com</li><li>contoso-files.sharepoint.com</li><li>tasks.office.com</li><li>protection.office.com</li><li>meet.lync.com</li><li>teams.microsoft.com</li></ul> |
 |Yammer |<ul><li>www.yammer.com</li><li>yammer.com</li><li>persona.yammer.com</li></ul> |
+|Outlook Web Access (OWA) |<ul><li>outlook.office.com</li><li>outlook.office365.com</li><li>attachments.office.net</li></ul> |
 |Microsoft Dynamics |contoso.crm.dynamics.com |
 |Visual Studio Online |contoso.visualstudio.com |
 |Power BI |contoso.powerbi.com |

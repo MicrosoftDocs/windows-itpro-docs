@@ -1,8 +1,11 @@
 ---
 title: User Interface Advanced Group Policy Management
 description: User Interface Advanced Group Policy Management
-author: jamiejdt
+author: dansimp
 ms.assetid: 1bf67f6a-4f24-4020-a8c1-fe440de9caa3
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

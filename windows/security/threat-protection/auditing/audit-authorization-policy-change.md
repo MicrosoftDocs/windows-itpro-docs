@@ -1,13 +1,16 @@
 ---
 title: Audit Authorization Policy Change (Windows 10)
-description: This topic for the IT professional describes the Advanced Security Audit policy setting, Audit Authorization Policy Change, which determines whether the operating system generates audit events when specific changes are made to the authorization policy.
+description: The policy setting, Audit Authorization Policy Change, determines if audit events are generated when specific changes are made to the authorization policy.
 ms.assetid: ca0587a2-a2b3-4300-aa5d-48b4553c3b36
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
-author: Mir0sh
+author: dansimp
 ms.date: 04/19/2017
 ---
 

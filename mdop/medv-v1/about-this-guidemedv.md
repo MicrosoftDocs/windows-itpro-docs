@@ -1,12 +1,15 @@
 ---
 title: About This Guide
 description: About This Guide
-author: jamiejdt
+author: dansimp
 ms.assetid: 17d8f150-226e-45f8-87e3-f425a77243e4
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

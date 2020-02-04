@@ -1,8 +1,11 @@
 ---
 title: Configuring MBAM 2.5 Server Features by Using Windows PowerShell
 description: Configuring MBAM 2.5 Server Features by Using Windows PowerShell
-author: jamiejdt
+author: dansimp
 ms.assetid: 826429fd-29bb-44be-b47e-5f5c7d20dd1d
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -69,20 +72,20 @@ Windows PowerShell Help for MBAM is available in the following formats:
 </tr>
 <tr class="even">
 <td align="left"><p>On TechNet as webpages</p></td>
-<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393498</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=393498" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=393498">https://go.microsoft.com/fwlink/?LinkId=393498</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>On the Download Center as a Word .docx file</p></td>
-<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393497</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=393497" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=393497">https://go.microsoft.com/fwlink/?LinkId=393497</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>On the Download Center as a .pdf file</p></td>
-<td align="left"><p>https://go.microsoft.com/fwlink/?LinkId=393499</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?LinkId=393499" data-raw-source="https://go.microsoft.com/fwlink/?LinkId=393499">https://go.microsoft.com/fwlink/?LinkId=393499</a></p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-config-only-posh"></a>Configurations that you can do only with Windows PowerShell but not with the MBAM Server Configuration wizard
 
@@ -122,12 +125,12 @@ Windows PowerShell Help for MBAM is available in the following formats:
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 You cannot disable the MBAM databases with a Windows PowerShell cmdlet or the MBAM Server Configuration wizard. To prevent the accidental removal of your compliance and audit data, database administrators must remove databases manually.
 
- 
+ 
 
 ## <a href="" id="bkmk-prereqs-posh-mbamsvr"></a>Prerequisites and requirements for using Windows PowerShell to configure MBAM Server features
 
@@ -164,7 +167,7 @@ Before starting the configuration, complete the following prerequisites.
 </tbody>
 </table>
 
- 
+ 
 
 **Permission-related prerequisites**
 
@@ -194,7 +197,7 @@ Before starting the configuration, complete the following prerequisites.
 <p>This user account must be a part of the local administrators group or the Backup Operators group to register the MBAM Volume Shadow Copy Service (VSS) Writer.</p></td>
 <td align="left"><p>By default, the database administrator or system administrator has the required &quot;create any database&quot; permissions.</p>
 <p></p>
-<p>For more information about VSS Writer, see [Volume Shadow Copy Service](https://go.microsoft.com/fwlink/?LinkId=392814).</p></td>
+<p>For more information about VSS Writer, see <a href="https://go.microsoft.com/fwlink/?LinkId=392814" data-raw-source="[Volume Shadow Copy Service](https://go.microsoft.com/fwlink/?LinkId=392814)">Volume Shadow Copy Service</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>For the <strong>System Center Configuration Manager Integration</strong> feature only:</p>
@@ -231,7 +234,7 @@ Before starting the configuration, complete the following prerequisites.
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-remote-config"></a>Using Windows PowerShell to configure MBAM on a remote computer
 
@@ -252,7 +255,7 @@ Before starting the configuration, complete the following prerequisites.
 <ul>
 <li><p>Ensure that the MBAM 2.5 Server software has been installed on the remote computer.</p></li>
 <li><p>Use the Credential Security Support Provider (CredSSP) Protocol to open the Windows PowerShell session.</p></li>
-<li><p>Enable Windows Remote Management (WinRM). If you fail to enable WinRM and to configure it correctly, the <strong>New-PSSession</strong> cmdlet that is described in this table displays an error and describes how to fix the issue. For more information about WinRM, see [Using Windows Remote Management](https://go.microsoft.com/fwlink/?LinkId=393064).</p></li>
+<li><p>Enable Windows Remote Management (WinRM). If you fail to enable WinRM and to configure it correctly, the <strong>New-PSSession</strong> cmdlet that is described in this table displays an error and describes how to fix the issue. For more information about WinRM, see <a href="https://go.microsoft.com/fwlink/?LinkId=393064" data-raw-source="[Using Windows Remote Management](https://go.microsoft.com/fwlink/?LinkId=393064)">Using Windows Remote Management</a>.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -270,7 +273,7 @@ Before starting the configuration, complete the following prerequisites.
 </tbody>
 </table>
 
- 
+ 
 
 ## <a href="" id="bkmk-reqd-posh-accts"></a>Required accounts and corresponding Windows PowerShell cmdlet parameters
 
@@ -306,7 +309,7 @@ Specifies the administrative credential that the local SSRS instance uses to con
 **Important**  
 The account specified in the administrative credentials should have limited user rights for improved security. Also, the password of the account should be set to not expire.
 
- 
+ 
 
 ReportsReadOnlyAccessGroup
 
@@ -345,9 +348,9 @@ For improved security, set the account that is specified in the administrative c
 
 To view the local security setting, open the **Local Security Policy editor**, expand the **Local Policies** node, select the **User Rights Assignment** node, and then double-click the **Impersonate a client after authentication** and **Log on as a batch job** Group Policy settings in the details pane.
 
- 
+ 
 
- 
+ 
 
 
 
@@ -361,11 +364,11 @@ To view the local security setting, open the **Local Security Policy editor**, e
 
 [Using Windows PowerShell to Administer MBAM 2.5](using-windows-powershell-to-administer-mbam-25.md)
 
- 
+ 
 ## Got a suggestion for MBAM?
 - Add or vote on suggestions [here](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
 - For MBAM issues, use the [MBAM TechNet Forum](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
- 
+ 
 
 
 

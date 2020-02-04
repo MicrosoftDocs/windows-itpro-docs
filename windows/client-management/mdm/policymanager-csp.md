@@ -2,11 +2,13 @@
 title: PolicyManager CSP
 description: PolicyManager CSP
 ms.assetid: 048427b1-6024-4660-8660-bd91c583f7f9
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/28/2017
 ---
 

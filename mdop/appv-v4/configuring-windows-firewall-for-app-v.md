@@ -1,12 +1,15 @@
 ---
 title: Configuring Windows Firewall for App-V
 description: Configuring Windows Firewall for App-V
-author: jamiejdt
+author: dansimp
 ms.assetid: 6b5e253c-473f-4afc-a48b-631eda11d9ca
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

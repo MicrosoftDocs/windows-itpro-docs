@@ -1,8 +1,11 @@
 ---
 title: Controlled GPO Commands
 description: Controlled GPO Commands
-author: jamiejdt
+author: dansimp
 ms.assetid: 370d3db9-4efc-4799-983d-e29ba5f32b07
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library

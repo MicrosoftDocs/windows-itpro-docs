@@ -2,18 +2,20 @@
 title: Enable offline upgrades to Windows 10 for Windows Embedded 8.1 Handheld devices
 description: Like any Windows devices, Windows 10 Mobile devices use Microsoft Update by default to download updates over the Internet.
 ms.assetid: ED3DAF80-847C-462B-BDB1-486577906772
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 06/26/2017
 ---
 
 # Enable offline upgrades to Windows 10 for Windows Embedded 8.1 Handheld devices
 
 
-Like any Windows devices, Windows 10 Mobile devices use Microsoft Update by default to download updates over the Internet. However, in some enterprise environments, devices may not be able to access the Internet to retrieve their updates. Because of network restrictions or other enterprise policies, devices must download their updates from an internal location. This document describes how to enable offline updates using System Center Configuration Manager.
+Like any Windows devices, Windows 10 Mobile devices use Microsoft Update by default to download updates over the Internet. However, in some enterprise environments, devices may not be able to access the Internet to retrieve their updates. Because of network restrictions or other enterprise policies, devices must download their updates from an internal location. This document describes how to enable offline updates using Microsoft Endpoint Configuration Manager.
 
 Here is a table of update path to Windows 10 Mobile.
 
@@ -77,7 +79,7 @@ Down the road, after the upgrade to Windows 10 is complete, if you decide to pus
 **Requirements:**
 
 -   The test device must be same as the other production devices that are receiving the updates.
--   Your test device must be enrolled with System Center Configuration Manager.
+-   Your test device must be enrolled with Microsoft Endpoint Configuration Manager.
 -   Your device can connect to the Internet.
 -   Your device must have an SD card with at least 0.5 GB of free space.
 -   Ensure that the settings app and PhoneUpdate applet are available via Assigned Access.
@@ -91,7 +93,7 @@ The following diagram is a high-level overview of the process.
 
 Define the baseline update set that will be applied to other devices. Use a device that is running the most recent image as the test device.
 
-Trigger the device to check for updates either manually or using System Center Configuration Manager.
+Trigger the device to check for updates either manually or using Microsoft Endpoint Configuration Manager.
 
 **Manually**
 
@@ -102,19 +104,19 @@ Trigger the device to check for updates either manually or using System Center C
 > **Note**  There is a bug in all OS versions up to GDR2 where the CSP will not set the assigned value. There is no way to change or set this until GDR2 is deployed onto the device.
 
 
-**Using System Center Configuration Manager**
+**Using Microsoft Endpoint Configuration Manager**
 
 1.  Remotely trigger a scan of the test device by deploying a Trigger Scan Configuration Baseline.
 
-    ![device scan using sccm](images/windowsembedded-update2.png)
+    ![device scan using Configuration Manager](images/windowsembedded-update2.png)
 
 2.  Set the value of this OMA-URI by browsing to the settings of this Configuration Item and selecting the newly created Trigger Scan settings from the previous step.
 
-    ![device scan using sccm](images/windowsembedded-update3.png)
+    ![device scan using Configuration Manager](images/windowsembedded-update3.png)
 
 3.  Ensure that the value that is specified for this URI is greater than the value on the device(s) and that the Remediate noncompliant rules when supported option is checked. For the first time, any value that is greater than 0 will work, but for subsequent configurations, ensure that you specify an incremented value.
 
-    ![device scan using sccm](images/windowsembedded-update4.png)
+    ![device scan using Configuration Manager](images/windowsembedded-update4.png)
 
 4.  Create a Configuration Baseline for TriggerScan and Deploy. It is recommended that this Configuration Baseline be deployed after the Controlled Updates Baseline has been applied to the device (the corresponding files are deployed on the device through a device sync session).
 5.  Follow the prompts for downloading the updates, but do not install the updates on the device.
@@ -130,16 +132,16 @@ There are two ways to retrieve this file from the device; one pre-GDR1 and one p
 
 1.  Create a Configuration Item using ConfigMgr to look at the registry entry ./Vendor/MSFT/EnterpriseExt/DeviceUpdate/ApprovedUpdatesXml.
 
-    > **Note**  In System Center Configuration Manager, you may see an error about exceeding the file limit when using ApprovedUpdatesXml. However, the process still completes even if the file is large.
+    > **Note**  In Microsoft Endpoint Configuration Manager, you may see an error about exceeding the file limit when using ApprovedUpdatesXml. However, the process still completes even if the file is large.
 
     If the XML file is greater than 32K you can also use ./Vendor/MSFT/FileSystem/&lt;*filename*&gt;.
 2.  Set a baseline for this Configuration Item with a “dummy” value (such as zzz), and ensure that you do not remediate it.
 
     The dummy value is not be set; it is only used for comparison.
-3.  After the report XML is sent to the device, System Center Configuration Manager displays a compliance log that contains the report information. The log can contain significant amount of data.
+3.  After the report XML is sent to the device, Microsoft Endpoint Configuration Manager displays a compliance log that contains the report information. The log can contain significant amount of data.
 4.  Parse this log for the report XML content.
 
-For a step-by-step walkthrough, see [How to retrieve a device update report using System Center Configuration Manager logs](#how-to-retrieve-a-device-update-report-using-system-center-configuration-manager-logs).
+For a step-by-step walkthrough, see [How to retrieve a device update report using Microsoft Endpoint Configuration Manager logs](#how-to-retrieve-a-device-update-report-using-microsoft-endpoint-configuration-manager-logs).
 
 **Post-GDR1: Retrieve the report xml file using an SD card**
 
@@ -226,7 +228,7 @@ This process has three parts:
 1.  Create a configuration item and specify that file path and name on the device as `NonPersistent\DUCustomContentURIs.xml`
 2.  Check the box **Remediate noncompliant settings**.
 
-    ![embedded device upate](images/windowsembedded-update21.png)
+    ![embedded device update](images/windowsembedded-update21.png)
 
 3.  Click **OK**.
 
@@ -236,11 +238,11 @@ This process has three parts:
 1.  Create a configuration baseline item and give it a name (such as ControlledUpdates).
 2.  Add the DUControlledUpdates and DUCustomContentURIs configuration items, and then click **OK**.
 
-    ![embedded device upate](images/windowsembedded-update22.png)
+    ![embedded device update](images/windowsembedded-update22.png)
 
 3.  Deploy the configuration baseline to the appropriate device or device collection.
 
-    ![embedded device upate](images/windowsembedded-update23.png)
+    ![embedded device update](images/windowsembedded-update23.png)
 
 4.  Click **OK**.
 
@@ -250,7 +252,7 @@ Now that the other "production" or "in-store" devices have the necessary informa
 
 ### Use this process for unmanaged devices
 
-If the update policy of the device is not managed or restricted by System Center Configuration Manager, an update process can be initiated on the device in one of the following ways:
+If the update policy of the device is not managed or restricted by Microsoft Endpoint Configuration Manager, an update process can be initiated on the device in one of the following ways:
 
 -   Initiated by a periodic scan that the device automatically performs.
 -   Initiated manually through **Settings** -&gt; **Phone Update** -&gt; **Check for Updates**.
@@ -259,21 +261,21 @@ If the update policy of the device is not managed or restricted by System Center
 
 If the update policy of the device is managed or restricted by MDM, an update process can be initiated on the device in one of the following ways:
 
--   Trigger the device to scan for updates through System Center Configuration Manager.
+-   Trigger the device to scan for updates through Microsoft Endpoint Configuration Manager.
 
     Ensure that the trigger scan has successfully executed, and then remove the trigger scan configuration baseline.
 
     > **Note**  Ensure that the PhoneUpdateRestriction Policy is set to a value of 0, to ensure that the device will not perform an automatic scan.
 
 
--   Trigger the device to scan as part of a Maintenance Window defined by the IT Admin in System Center Configuration Manager.
+-   Trigger the device to scan as part of a Maintenance Window defined by the IT Admin in Microsoft Endpoint Configuration Manager.
 
 After the installation of updates is completed, the IT Admin can use the DUReport generated in the production devices to determine if the device successfully installed the list of updates. If the device did not, error codes are provided in the DUReport.xml. To retrieve the device update report from a device, perform the same steps defined in [Step 2](#step2).
 
 <a href="" id="example-script"></a>
 ## Example PowerShell script
 
-``` syntax
+```powershell
 param (
 # [Parameter (Mandatory=$true, HelpMessage="Input File")]
         [String]$inputFile,
@@ -454,7 +456,7 @@ DownloadFiles $inputFile $downloadCache $localCacheURL
 ```
 
 <a href="" id="how-to-retrieve"></a>
-## How to retrieve a device update report using System Center Configuration Manager logs
+## How to retrieve a device update report using Microsoft Endpoint Configuration Manager logs
 
 Use this procedure for pre-GDR1 devices.
 
@@ -463,17 +465,17 @@ Use this procedure for pre-GDR1 devices.
 1.  Trigger a device scan. Go to **Settings** -&gt; **Phone Update** -&gt; **Check for Updates**.
 
     Since the DUReport settings have not been remedied, you should see a non-compliance.
-2.  In System Center Configuration Manager under **Assets and Compliance** &gt; **Compliance Settings**, right-click on **Configuration Items**.
+2.  In Microsoft Endpoint Configuration Manager under **Assets and Compliance** &gt; **Compliance Settings**, right-click on **Configuration Items**.
 3.  Select **Create Configuration Item**.
 
-    ![device update using sccm](images/windowsembedded-update5.png)
+    ![device update using Configuration Manager](images/windowsembedded-update5.png)
 4.  Enter a filename (such as GetDUReport) and then choose **Mobile Device**.
 5.  In the **Mobile Device Settings** page, check the box **Configure Additional Settings that are not in the default settings group**, and the click **Next**.
 
-    ![device update using sccm](images/windowsembedded-update6.png)
+    ![device update using Configuration Manager](images/windowsembedded-update6.png)
 6.  In the **Additional Settings** page, click **Add**.
 
-    ![device update using sccm](images/windowsembedded-update7.png)
+    ![device update using Configuration Manager](images/windowsembedded-update7.png)
 7.  In the **Browse Settings** page, click **Create Setting**.
 
     ![device update](images/windowsembedded-update8.png)

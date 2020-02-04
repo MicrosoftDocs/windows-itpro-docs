@@ -2,11 +2,13 @@
 title: DeviceManageability DDF
 description: This topic shows the OMA DM device description framework (DDF) for the DeviceManageability configuration service provider. This CSP was added in Windows 10, version 1607.
 ms.assetid: D7FA8D51-95ED-40D2-AA84-DCC4BBC393AB
-ms.author: maricia
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: MariciaAlforque
+author: manikadhiman
 ms.date: 12/05/2017
 ---
 
@@ -19,7 +21,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
 
 The XML below is for Windows 10, version 1709.
 
-``` syntax
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"

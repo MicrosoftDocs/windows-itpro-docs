@@ -1,8 +1,11 @@
 ---
 title: High Level Architecture for App-V 5.0
 description: High Level Architecture for App-V 5.0
-author: jamiejdt
+author: dansimp
 ms.assetid: fdf8b841-918f-4672-b352-0f2b9519581b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -61,12 +64,12 @@ A typical App-V 5.0 implementation consists of the following elements.
 </tbody>
 </table>
 
- 
+ 
 
 **Note**  
 If you are using App-V 5.0 with Electronic Software Distribution (ESD) you are not required to use the App-V 5.0 Management server, however you can still utilize the reporting and streaming functionality of App-V 5.0.
 
- 
+ 
 
 
 
@@ -78,9 +81,9 @@ If you are using App-V 5.0 with Electronic Software Distribution (ESD) you are n
 
 [Getting Started with App-V 5.0](getting-started-with-app-v-50--rtm.md)
 
- 
+ 
 
- 
+ 
 
 
 

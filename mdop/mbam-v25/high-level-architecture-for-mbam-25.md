@@ -1,8 +1,11 @@
 ---
 title: High-Level Architecture for MBAM 2.5
 description: High-Level Architecture for MBAM 2.5
-author: jamiejdt
+author: dansimp
 ms.assetid: b42af25c-961b-4a6a-92d2-916a373eb68b
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library

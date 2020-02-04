@@ -9,29 +9,33 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
-ms.date: 09/03/2018
+author: denisebmsft
+ms.author: deniseb
+ms.reviewer: 
+manager: dansimp
+ms.custom: nextgen
 ---
 
 # Use next-gen technologies in Windows Defender Antivirus through cloud-delivered protection
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-Microsoft next-gen technologies in Windows Defender Antivirus provide near-instant, automated protection against new and emerging threats. To dynamically identify new threats, these technologies work with large sets of interconnected data in the Microsoft Intelligent Security Graph and powerful artificial intelligence (AI) systems driven by advanced machine learning models.  
+Microsoft next-generation technologies in Windows Defender Antivirus provide near-instant, automated protection against new and emerging threats. To dynamically identify new threats, these technologies work with large sets of interconnected data in the Microsoft Intelligent Security Graph and powerful artificial intelligence (AI) systems driven by advanced machine learning models.  
+
+Windows Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, real-time, and intelligent protection. [Get to know the advanced technologies at the core of Microsoft Defender ATP next generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+![List of Windows Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 To take advantage of the power and speed of these next-gen technologies, Windows Defender Antivirus works seamlessly with Microsoft cloud services. These cloud protection services, also referred to as Microsoft Advanced Protection Service (MAPS), enhances standard real-time protection, providing arguably the best antivirus defense. 
 
-
->[!NOTE] 
+>[!NOTE]
 >The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
 
 With cloud-delivered protection, next-gen technologies provide rapid identification of new threats, sometimes even before a single machine is infected. Watch the following video about Microsoft AI and Windows Defender Antivirus in action: 
  
 <iframe 
-src="https://www.microsoft.com/en-us/videoplayer/embed/RE1Yu4B" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+src="https://www.microsoft.com/videoplayer/embed/RE1Yu4B" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
 To understand how next-gen technologies shorten protection delivery time through the cloud, watch the following video: 
  
@@ -55,11 +59,9 @@ Organizations running Windows 10 E5, version 1803 can also take advantage of eme
 >[!TIP]
 >You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
 
+The following table describes the differences in cloud-delivered protection between recent versions of Windows and Configuration Manager.
 
-The following table describes the differences in cloud-delivered protection between recent versions of Windows and System Center Configuration Manager.
-
-
-Feature | Windows 8.1 (Group Policy) | Windows 10, version 1607 (Group Policy) | Windows 10, version 1703 (Group Policy) | System Center Configuration Manager 2012 | System Center Configuration Manager (Current Branch) | Microsoft Intune
+Feature | Windows 8.1 (Group Policy) | Windows 10, version 1607 (Group Policy) | Windows 10, version 1703 (Group Policy) | System Center 2012 Configuration Manager | Microsoft Endpoint Configuration Manager (Current Branch) | Microsoft Intune
 ---|---|---|---|---|---|---
 Cloud-protection service label | Microsoft Advanced Protection Service | Microsoft Advanced Protection Service | Cloud-based Protection | NA | Cloud protection service | Microsoft Advanced Protection Service
 Reporting level (MAPS membership level) | Basic, Advanced | Advanced | Advanced | Dependent on Windows version | Dependent on Windows version | Dependent on Windows version
@@ -72,8 +74,8 @@ You can also [configure Windows Defender AV to automatically receive new protect
 
  Topic | Description 
 ---|---
-[Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) | You can enable cloud-delivered protection with System Center Configuration Manager, Group Policy, Microsoft Intune, and PowerShell cmdlets.
-[Specify the cloud-delivered protection level](specify-cloud-protection-level-windows-defender-antivirus.md) | You can specify the level of protection offered by the cloud with Group Policy and System Center Configuration Manager. The protection level will affect the amount of information shared with the cloud and how aggressively new files are blocked.
+[Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) | You can enable cloud-delivered protection with Microsoft Endpoint Configuration Manager, Group Policy, Microsoft Intune, and PowerShell cmdlets.
+[Specify the cloud-delivered protection level](specify-cloud-protection-level-windows-defender-antivirus.md) | You can specify the level of protection offered by the cloud with Group Policy and Microsoft Endpoint Configuration Manager. The protection level will affect the amount of information shared with the cloud and how aggressively new files are blocked.
 [Configure and validate network connections for Windows Defender Antivirus](configure-network-connections-windows-defender-antivirus.md) | There are certain Microsoft URLs that your network and endpoints must be able to connect to for cloud-delivered protection to work effectively. This topic lists the URLs that should be allowed via firewall or network filtering rules, and instructions for confirming your network is properly enrolled in cloud-delivered protection.
-[Configure the block at first sight feature](configure-block-at-first-sight-windows-defender-antivirus.md) | The Block at First Sight feature can block new malware within seconds, without having to wait hours for traditional Security intelligence . You can enable and configure it with System Center Configuration Manager and Group Policy.
-[Configure the cloud block timeout period](configure-cloud-block-timeout-period-windows-defender-antivirus.md) | Windows Defender Antivirus can block suspicious files from running while it queries our cloud-delivered protection service. You can configure the amount of time the file will be prevented from running with System Center Configuration Manager and Group Policy.
+[Configure the block at first sight feature](configure-block-at-first-sight-windows-defender-antivirus.md) | The Block at First Sight feature can block new malware within seconds, without having to wait hours for traditional Security intelligence. You can enable and configure it with Microsoft Endpoint Configuration Manager and Group Policy.
+[Configure the cloud block timeout period](configure-cloud-block-timeout-period-windows-defender-antivirus.md) | Windows Defender Antivirus can block suspicious files from running while it queries our cloud-delivered protection service. You can configure the amount of time the file will be prevented from running with Microsoft Endpoint Configuration Manager and Group Policy.

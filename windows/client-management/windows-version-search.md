@@ -5,9 +5,11 @@ keywords: Long-Term Servicing Channel, LTSC, LTSB, Semi-Annual Channel, SAC, Win
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: kaushika-msft
-ms.author: MikeBlodge
+author: dansimp
+ms.author: dansimp
 ms.date: 04/30/2018
+ms.reviewer: 
+manager: dansimp
 ms.topic: troubleshooting
 ---
 

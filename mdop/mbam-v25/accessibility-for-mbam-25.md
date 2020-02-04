@@ -1,8 +1,11 @@
 ---
 title: Accessibility for MBAM 2.5
 description: Accessibility for MBAM 2.5
-author: jamiejdt
+author: dansimp
 ms.assetid: 03b343a6-9e8e-4868-a52b-cedf0b696d56
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -30,7 +33,7 @@ Access keys let you quickly use a command by pressing a few keys. You can get to
 **Note**  
 To cancel the action that you are taking and hide the keyboard shortcuts, press ALT.
 
- 
+ 
 
 ## Documentation in alternative formats
 
@@ -64,13 +67,13 @@ For information about the availability of Microsoft product documentation and bo
 <td align="left"><p>(609) 987-8116</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>[http://www.learningally.org/](https://go.microsoft.com/fwlink/?linkid=239)</p></td>
+<td align="left"><p><a href="https://go.microsoft.com/fwlink/?linkid=239" data-raw-source="[http://www.learningally.org/](https://go.microsoft.com/fwlink/?linkid=239)">http://www.learningally.org/</a></p></td>
 <td align="left"><p>Web addresses can change, so you might be unable to connect to the website or sites mentioned here.</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ## Customer service for people with hearing impairments
 
@@ -97,9 +100,9 @@ For more information about how accessible technology for computers helps to impr
 
 [Getting Started with MBAM 2.5](getting-started-with-mbam-25.md)
 
- 
+ 
 
- 
+ 
 
 
 

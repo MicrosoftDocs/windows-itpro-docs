@@ -1,11 +1,13 @@
 ---
 title: Microsoft Edge - Start pages group policies
-description: Microsoft Edge loads the pages specified in App settings as the default Start pages. With the relevant Start pages policies, you can configure Microsoft Edge to load either the Start page, New tab page, previously opened pages, or a specific page or pages. You can also configure Microsoft Edge to prevent users from making changes. 
-manager: dougkim
-ms.author: pashort
-author: shortpatti
+description: Microsoft Edge loads the pages specified in App settings as the default Start pages. With the relevant Start pages policies, you can configure Microsoft Edge to load either the Start page, New tab page, previously opened pages, or a specific page or pages. You can also configure Microsoft Edge to prevent users from making changes.
+audience: itpro
+manager: dansimp
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 10/02/2018
+ms.reviewer: 
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -13,6 +15,9 @@ ms.topic: reference
 ---
 
 # Start pages 
+
+> [!NOTE]
+> You've reached the documentation for Microsoft Edge version 45 and earlier. To see the documentation for Microsoft Edge version 77 or later, go to the [Microsoft Edge documentation landing page](https://docs.microsoft.com/DeployEdge/).
 
 Microsoft Edge loads the pages specified in App settings as the default Start pages. With the relevant Start pages policies, you can configure Microsoft Edge to load either the Start page, New tab page, previously opened pages, or a specific page or pages. You can also configure Microsoft Edge to prevent users from making changes. 
 

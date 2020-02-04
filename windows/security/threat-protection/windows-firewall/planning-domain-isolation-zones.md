@@ -2,12 +2,14 @@
 title: Planning Domain Isolation Zones (Windows 10)
 description: Planning Domain Isolation Zones
 ms.assetid: 70bc7c52-91f0-4a0d-a64a-69d3ea1c6d05
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

@@ -9,16 +9,20 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: andreabichsel
-ms.author: v-anbic
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
 ms.date: 09/03/2018
+ms.reviewer: 
+manager: dansimp
+ms.custom: nextgen
 ---
 
 # Configure the cloud block timeout period
 
 **Applies to:**
 
-- [Windows Defender Advanced Threat Protection (Windows Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 When Windows Defender Antivirus finds a suspicious file, it can prevent the file from running while it queries the [Windows Defender Antivirus cloud service](utilize-microsoft-cloud-protection-windows-defender-antivirus.md).
 
@@ -45,6 +49,6 @@ You can use Group Policy to specify an extended timeout for cloud checks.
 ## Related topics
 
 - [Windows Defender Antivirus in Windows 10](windows-defender-antivirus-in-windows-10.md)
-- [Use next-gen antivirus technologies through cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
+- [Use next-generation antivirus technologies through cloud-delivered protection](utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 - [Configure block at first sight](configure-block-at-first-sight-windows-defender-antivirus.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md)

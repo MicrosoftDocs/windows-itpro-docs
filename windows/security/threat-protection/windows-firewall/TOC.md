@@ -95,6 +95,7 @@
 #### [Create an Outbound Program or Service Rule](create-an-outbound-program-or-service-rule.md)
 #### [Create Inbound Rules to Support RPC](create-inbound-rules-to-support-rpc.md)
 #### [Create WMI Filters for the GPO](create-wmi-filters-for-the-gpo.md)
+#### [Create Windows Firewall rules in Intune](create-windows-firewall-rules-in-intune.md)
 #### [Enable Predefined Inbound Rules](enable-predefined-inbound-rules.md)
 #### [Enable Predefined Outbound Rules](enable-predefined-outbound-rules.md)
 #### [Exempt ICMP from Authentication](exempt-icmp-from-authentication.md)

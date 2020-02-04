@@ -2,12 +2,14 @@
 title: Basic Firewall Policy Design (Windows 10)
 description: Basic Firewall Policy Design
 ms.assetid: 6f7af99e-6850-4522-b7f5-db98e6941418
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -69,4 +71,4 @@ For more information about this design:
 
 -   For a list of detailed tasks that you can use to deploy your basic firewall policy design, see [Checklist: Implementing a Basic Firewall Policy Design](checklist-implementing-a-basic-firewall-policy-design.md).
 
-**Next: **[Domain Isolation Policy Design](domain-isolation-policy-design.md)
+**Next:** [Domain Isolation Policy Design](domain-isolation-policy-design.md)

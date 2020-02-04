@@ -2,12 +2,14 @@
 title: AppLocker processes and interactions (Windows 10)
 description: This topic for the IT professional describes the process dependencies and interactions when AppLocker evaluates and enforces rules.
 ms.assetid: 0beec616-6040-4be7-8703-b6c919755d8e
+ms.reviewer: 
+ms.author: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: justinha
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,8 +20,8 @@ ms.date: 09/21/2017
 # AppLocker processes and interactions
 
 **Applies to**
- -   Windows 10 
- -   Windows Server
+- Windows 10
+- Windows Server
 
 This topic for the IT professional describes the process dependencies and interactions when AppLocker evaluates and enforces rules.
 
@@ -27,7 +29,7 @@ This topic for the IT professional describes the process dependencies and intera
 
 AppLocker policies are collections of AppLocker rules that might contain any one of the enforcement settings configured. When applied, each rule is evaluated within the policy and the collection of rules is applied according to the enforcement setting and according to your Group Policy structure.
 
-The AppLocker policy is enforced on a computer through the Application Identity service, which is the engine that evaluates the policies. If the service is not running, policies will not be enforced. The Application Identity service returns the information from the binary—even if product or binary names are empty—to the results pane of the Local Security Policy snap-in.
+The AppLocker policy is enforced on a computer through the Application Identity service, which is the engine that evaluates the policies. If the service is not running, policies will not be enforced. The Application Identity service returns the information from the binary -even if product or binary names are empty- to the results pane of the Local Security Policy snap-in.
 
 AppLocker policies are stored in a security descriptor format according to Application Identity service requirements. It uses file path, hash, or fully qualified binary name attributes to form allow or deny actions on a rule. Each rule is stored as an access control entry (ACE) in the security descriptor and contains the following information:
 
@@ -45,7 +47,7 @@ An AppLocker rule is a control placed on a file to govern whether or not it is a
 
 -   An executable rule controls whether a user or group can run an executable file. Executable files most often have the .exe or .com file name extensions and apply to applications.
 -   A script rule controls whether a user or group can run scripts with a file name extension of .ps1, .bat, .cmd, .vbs, and .js.
--   A Windows Installer rule controls whether a user or group can run files with a file name extension of .msi, mst and .msp (Windows Installer patch).
+-   A Windows Installer rule controls whether a user or group can run files with a file name extension of .msi, .mst and .msp (Windows Installer patch).
 -   A DLL rule controls whether a user or group can run files with a file name extension of .dll and .ocx.
 -   A packaged app and packaged app installer rule controls whether a user or group can run or install a packaged app. A Packaged app installer has the .appx extension.
 

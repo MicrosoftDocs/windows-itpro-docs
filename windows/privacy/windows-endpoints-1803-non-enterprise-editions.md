@@ -1,18 +1,19 @@
 ---
 title: Windows 10, version 1803, connection endpoints for non-Enterprise editions
-description: Explains what Windows 10 endpoints are used in non-Enterprise editions.
+description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 1803.
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: danihalfin
-ms.author: daniha
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 6/26/2018
+ms.reviewer: 
 ---
 # Windows 10, version 1803, connection endpoints for non-Enterprise editions
 
@@ -22,14 +23,14 @@ ms.date: 6/26/2018
 - Windows 10 Professional, version 1803
 - Windows 10 Education, version 1803
 
-In addition to the endpoints listed for [Windows 10 Enterprise](manage-windows-endpoints.md), the following endpoints are available on other editions of Windows 10, version 1803.
+In addition to the endpoints listed for [Windows 10 Enterprise](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints ), the following endpoints are available on other editions of Windows 10, version 1803.
 
 We used the following methodology to derive these network endpoints:
 
-1.	Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
-2.	Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
-3.	Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
-4.	Compile reports on traffic going to public IP addresses.
+1. Set up the latest version of Windows 10 on a test virtual machine using the default settings. 
+2. Leave the devices running idle for a week (that is, a user is not interacting with the system/device).
+3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
+4. Compile reports on traffic going to public IP addresses.
 5.  The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
 6.  All traffic was captured in our lab using a IPV4 network.  Therefore no IPV6 traffic is reported here. 
 
@@ -46,7 +47,7 @@ We used the following methodology to derive these network endpoints:
 | *.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/ | HTTP | Enables connections to Windows Update. |
 | arc.msn.com.nsatc.net	| HTTPS |	Used to retrieve Windows Spotlight metadata. |
 | arc.msn.com/v3/Delivery/Placement	| HTTPS |	Used to retrieve Windows Spotlight metadata. |
-| client-office365-tas.msedge.net*	| HTTPS |	Used to connect to the Office 365 portal’s shared infrastructure, including Office Online. |
+| client-office365-tas.msedge.net*	| HTTPS |	Used to connect to the Office 365 portal’s shared infrastructure, including Office. |
 | config.edge.skype.com/config/*	| HTTPS |	Used to retrieve Skype configuration values. |
 | ctldl.windowsupdate.com/msdownload/update* | HTTP | Used to download certificates that are publicly known to be fraudulent. |
 | cy2.displaycatalog.md.mp.microsoft.com.akadns.net	| HTTPS |	Used to communicate with Microsoft Store. |
@@ -128,7 +129,7 @@ We used the following methodology to derive these network endpoints:
 | *geo-prod.do.dsp.mp.microsoft.com	| HTTPS |	Enables connections to Windows Update. |
 | au.download.windowsupdate.com* | HTTP | Enables connections to Windows Update. |
 | cdn.onenote.net/livetile/*	| HTTPS |	Used for OneNote Live Tile. |
-| client-office365-tas.msedge.net/*	| HTTPS |	Used to connect to the Office 365 portal’s shared infrastructure, including Office Online. |
+| client-office365-tas.msedge.net/*	| HTTPS |	Used to connect to the Office 365 portal’s shared infrastructure, including Office. |
 | cloudtile.photos.microsoft.com.akadns.net	| HTTPS |	Photos App in MS Store 
 | config.edge.skype.com/*	| HTTPS |	Used to retrieve Skype configuration values.  |
 | ctldl.windowsupdate.com/* | HTTP | Used to download certificates that are publicly known to be fraudulent. |

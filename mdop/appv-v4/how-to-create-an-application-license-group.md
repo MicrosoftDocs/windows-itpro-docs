@@ -1,12 +1,15 @@
 ---
 title: How to Create an Application License Group
 description: How to Create an Application License Group
-author: jamiejdt
+author: dansimp
 ms.assetid: b385324a-8a11-41ee-86e8-8f809235454c
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w8
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 

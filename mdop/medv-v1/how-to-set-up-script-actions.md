@@ -1,12 +1,15 @@
 ---
 title: How to Set Up Script Actions
 description: How to Set Up Script Actions
-author: jamiejdt
+author: dansimp
 ms.assetid: 367e28f1-d8c2-4845-a01b-2fff9128ccfd
+ms.reviewer: 
+manager: dansimp
+ms.author: dansimp
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w7
+ms.prod: w10
 ms.date: 06/16/2016
 ---
 
@@ -44,26 +47,28 @@ The following is a list of actions that can be added to the domain setup script:
     **Note**  
     **Rename Computer** is configured in the **VM Settings** tab. For more information, see [How to Configure VM Computer Name Pattern Properties](how-to-configure-vm-computer-name-pattern-propertiesmedvv2.md).
 
-     
+     
 
-    **Note**  
-    To rename a computer, Windows must be restarted. It is recommended to add a Restart Windows action following a Rename Computer action.
+~~~
+**Note**  
+To rename a computer, Windows must be restarted. It is recommended to add a Restart Windows action following a Rename Computer action.
+~~~
 
-     
 
-4.  Set the order of the actions by selecting an action and clicking **Up** or **Down**.
 
-5.  Click **OK**.
+4. Set the order of the actions by selecting an action and clicking **Up** or **Down**.
 
-**Note**  
+5. Click **OK**.
+
+**Note**  
 When running the Join Domain script, for the script to work, the user logged into the MED-V workspace virtual machine must have local administrator rights.
 
- 
 
-**Note**  
+
+**Note**  
 When running the Disable Auto-Logon script, it is recommended to disable the local guest account used for the auto-logon once the initial setup is complete.
 
- 
+
 
 ### <a href="" id="bkmk-joindomainproperties"></a>
 
@@ -89,11 +94,10 @@ When running the Disable Auto-Logon script, it is recommended to disable the loc
 <li><p><strong>Use the following credentials</strong>—The credentials specified; enter a user name and password in the corresponding fields.</p></li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  
-<p>The credentials you enter are visible to all MED-V workspace users. It is not recommended to provide domain administrator credentials.</p>
+<strong>Note</strong><br/><p>The credentials you enter are visible to all MED-V workspace users. It is not recommended to provide domain administrator credentials.</p>
 </div>
 <div>
- 
+
 </div></td>
 </tr>
 <tr class="even">
@@ -109,17 +113,16 @@ When running the Disable Auto-Logon script, it is recommended to disable the loc
 <td align="left"><p>Organization Unit</p></td>
 <td align="left"><p>An organization unit (OU) may be specified to join the computer to a specific OU. The format must follow an OU distinguished name: OU=&lt;Organization Unit&gt;,&lt;Domain Controller&gt; (for example, OU=QATest, DC=il, DC=MED-V, DC=com).</p>
 <div class="alert">
-<strong>Warning</strong>  
-<p>Only a single level OU is supported as is shown in the example above.</p>
+<strong>Warning</strong><br/><p>Only a single level OU is supported as is shown in the example above.</p>
 </div>
 <div>
- 
+ 
 </div></td>
 </tr>
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="bkmk-checkconnectivityproperties"></a>
 
@@ -152,7 +155,7 @@ When running the Disable Auto-Logon script, it is recommended to disable the loc
 </tbody>
 </table>
 
- 
+ 
 
 ### <a href="" id="bkmk-commandlineproperties"></a>
 
@@ -211,7 +214,7 @@ When running the Disable Auto-Logon script, it is recommended to disable the loc
 </tbody>
 </table>
 
- 
+ 
 
 When configuring the command-line action, several variables can be used as defined in the following table.
 
@@ -252,7 +255,7 @@ When configuring the command-line action, several variables can be used as defin
 </tbody>
 </table>
 
- 
+ 
 
 ## Related topics
 
@@ -261,9 +264,9 @@ When configuring the command-line action, several variables can be used as defin
 
 [How to Configure VM Computer Name Pattern Properties](how-to-configure-vm-computer-name-pattern-propertiesmedvv2.md)
 
- 
+ 
 
- 
+ 
 
 
 
