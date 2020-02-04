@@ -294,27 +294,28 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 2. Select **App type=Other/Line-of-business app**.
 3. Select **file=wdav.pkg.intunemac**. Select **OK** to upload.
 4. Select **Configure** and add the required information.
-5. Use **macOS High Sierra 10.13** as the minimum OS and set *Ignore app version* to **Yes**. Other settings can be any arbitrary value.
+5. Use **macOS High Sierra 10.13** as the minimum OS. 
+6. Set *Ignore app version* to **Yes**. Other settings can be any arbitrary value.
 
     > [!CAUTION]
-    > Failure to set *Ignore app version* to **Yes** impacts the ability of the application to receive updates through Microsoft AutoUpdate. See [Deploy updates for Microsoft Defender ATP for Mac](mac-updates.md) for additional information about how the product is updated.
+    > Setting *Ignore app version* to **No** impacts the ability of the application to receive updates through Microsoft AutoUpdate. Intune will reinstall the uploaded version, effectively downgrading Defender to the uploaded version and potentially result in non-functioning application. See [Deploy updates for Microsoft Defender ATP for Mac](mac-updates.md) for additional information about how the product is updated. If you deployed Defender with *Ignore app version* set to **No**, please change it to **Yes**. If Defender still cannot be installed on a client machine, then uninstall Defender and push policy update to the affected machine. 
 
     ![Device status blade screenshot](../windows-defender-antivirus/images/MDATP-8-IntuneAppInfo.png)
 
-6. Select **OK** and **Add**.
+7. Select **OK** and **Add**.
 
     ![Device status blade screenshot](../windows-defender-antivirus/images/MDATP-9-IntunePkgInfo.png)
 
-7. It may take a few moments to upload the package. After it's done, select the package from the list and go to **Assignments** and **Add group**.
+8. It may take a few moments to upload the package. After it's done, select the package from the list and go to **Assignments** and **Add group**.
 
     ![Client apps screenshot](../windows-defender-antivirus/images/MDATP-10-ClientApps.png)
 
-8. Change **Assignment type** to **Required**.
-9. Select **Included Groups**. Select **Make this app required for all devices=Yes**. Click **Select group to include** and add a group that contains the users you want to target. Select **OK** and **Save**.
+9. Change **Assignment type** to **Required**.
+10. Select **Included Groups**. Select **Make this app required for all devices=Yes**. Click **Select group to include** and add a group that contains the users you want to target. Select **OK** and **Save**.
 
     ![Intune assignments info screenshot](../windows-defender-antivirus/images/MDATP-11-Assignments.png)
 
-10. After some time the application will be published to all enrolled devices. You can see it listed in **Monitor** > **Device**, under **Device install status**:
+11. After some time the application will be published to all enrolled devices. You can see it listed in **Monitor** > **Device**, under **Device install status**:
 
     ![Intune device status screenshot](../windows-defender-antivirus/images/MDATP-12-DeviceInstall.png)
 
