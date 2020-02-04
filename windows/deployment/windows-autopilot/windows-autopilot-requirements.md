@@ -101,6 +101,9 @@ To provide needed Azure Active Directory (automatic MDM enrollment and company b
 - [Intune for Education subscriptions](https://docs.microsoft.com/intune-education/what-is-intune-for-education), which include all needed Azure AD and Intune features.
 - [Azure Active Directory Premium P1 or P2](https://azure.microsoft.com/services/active-directory/) and [Microsoft Intune subscriptions](https://www.microsoft.com/cloud-platform/microsoft-intune) (or an alternative MDM service).
 
+>[!NOTE]
+>In case of using Microsoft 365 subscriptions, you still need to [assign Intune licenses to the users](https://docs.microsoft.com/intune/fundamentals/licenses-assign)
+
 Additionally, the following are also recommended (but not required):
 - [Office 365 ProPlus](https://www.microsoft.com/p/office-365-proplus/CFQ7TTC0K8R0), which can be deployed easily via Intune (or other MDM services).
 - [Windows Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-enterprise-subscription-activation), to automatically step up devices from Windows 10 Pro to Windows 10 Enterprise.
