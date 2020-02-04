@@ -55,7 +55,7 @@ description: Windows 10 deployment resources and documentation for admins & IT p
                                             <div class="cardText">
                                                 <h3>Deploy</h3>
                                                 <P><a href="deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md" target="_blank">Windows 10 deployment guides</a></p>
-                                                <P><a href="https://www.microsoft.com/en-us/fasttrack/microsoft-365/windows-10" target="_blank">FastTrack</a></p>
+                                                <P><a href="https://www.microsoft.com/fasttrack/microsoft-365/windows-10" target="_blank">FastTrack</a></p>
                                                 <P><a href="https://aka.ms/howtoshift" target="_blank">Modern Desktop deployment</a></p>
                                             </div>
                                         </div>
@@ -73,10 +73,10 @@ description: Windows 10 deployment resources and documentation for admins & IT p
                                             </div>
                                             <div class="cardText">
                                                 <h3>Manage Windows 10 updates</h3>
-                                                <P><a href="https://docs.microsoft.com/en-us/windows/deployment/update/windows-as-a-service" target="_blank">Windows as a service</a></p>
-                                                <P><a href="https://docs.microsoft.com/en-us/windows/deployment/update/waas-servicing-strategy-windows-10-updates" target="_blank">Prepare a servicing strategy</a></p>
-                                                <P><a href="https://docs.microsoft.com/en-us/windows/deployment/update/waas-optimize-windows-10-updates" target="_blank">Optimize Windows 10 update delivery</a></p>
-                                                <P><a href="https://docs.microsoft.com/en-us/windows/deployment/update/update-compliance-monitor" target="_blank">Monitor Windows Updates</a></p>
+                                                <P><a href="https://docs.microsoft.com/windows/deployment/update/windows-as-a-service" target="_blank">Windows as a service</a></p>
+                                                <P><a href="https://docs.microsoft.com/windows/deployment/update/waas-servicing-strategy-windows-10-updates" target="_blank">Prepare a servicing strategy</a></p>
+                                                <P><a href="https://docs.microsoft.com/windows/deployment/update/waas-optimize-windows-10-updates" target="_blank">Optimize Windows 10 update delivery</a></p>
+                                                <P><a href="https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor" target="_blank">Monitor Windows Updates</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -156,9 +156,9 @@ description: Windows 10 deployment resources and documentation for admins & IT p
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>Microsoft Surface</h3>
-                                                        <P><a href="https://docs.microsoft.com/en-us/surface/" target="_blank">Surface devices</a></p>
-                                                        <P><a href="https://docs.microsoft.com/en-us/surface-hub/index" target="_blank">Surface Hub</a></p>
-                                                        <P><a href="https://www.microsoft.com/en-us/surface/business" target="_blank">Surface for Business</a></p>
+                                                        <P><a href="https://docs.microsoft.com/surface/" target="_blank">Surface devices</a></p>
+                                                        <P><a href="https://docs.microsoft.com/surface-hub/index" target="_blank">Surface Hub</a></p>
+                                                        <P><a href="https://www.microsoft.com/surface/business" target="_blank">Surface for Business</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -175,7 +175,7 @@ description: Windows 10 deployment resources and documentation for admins & IT p
                                                     </div>
                                                     <div class="cardText">
                                                         <h3>Microsoft 365 products</h3>
-                                                        <P><a href="https://docs.microsoft.com/en-us/microsoft-365/enterprise/" target="_blank">Microsoft 365 Enterprise</a></p>
+                                                        <P><a href="https://docs.microsoft.com/microsoft-365/enterprise/" target="_blank">Microsoft 365 Enterprise</a></p>
                                                         <P><a href="https://docs.microsoft.com/microsoft-365/business/" target="_blank">Microsoft 365 Business</a></p>
                                                         <P><a href="https://docs.microsoft.com/education/" target="_blank">Microsoft 365 Education</a></p>
                                                     </div>
