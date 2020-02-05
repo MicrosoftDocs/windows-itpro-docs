@@ -6,7 +6,7 @@ ms.prod: hololens
 author: Teresa-Motiv
 ms.author: v-tea
 ms.topic: article
-ms.date: 8/12/19
+ms.date: 8/12/2019
 manager: jarrettr
 ms.topic: article
 ms.localizationpriority: high
