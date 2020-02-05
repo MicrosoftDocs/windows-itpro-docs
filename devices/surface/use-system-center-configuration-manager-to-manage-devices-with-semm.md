@@ -483,7 +483,7 @@ To add the SEMM Configuration Manager scripts to Configuration Manager as an app
        - Enter **CertName** in the **Value** field.
        - Select **String** from the **Data Type** drop-down menu.
        - Select the **This registry setting must satisfy the following rule to indicate the presence of this application** button.
-       - Enter the name of the certificate you entered in the line 58 of the script in the **Value** field.
+       - Enter the name of the certificate you entered in line 58 of the script in the **Value** field.
        - Select **OK** to close the **Detection Rule** window.
 
      ![Use a registry key to identify devices enrolled in SEMM](images/config-mgr-semm-fig3.png "Use a registry key to identify devices enrolled in SEMM")
