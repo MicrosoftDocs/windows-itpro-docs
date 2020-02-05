@@ -26,7 +26,7 @@ Before you get started, make sure you have the following available:
 
 **A Wi-Fi connection**. You'll need to connect your HoloLens to a Wi-Fi network to set it up. The first time you connect, you'll need an open or password-protected network that doesn't require navigating to a website or using certificates to connect. [Learn more about the websites that HoloLens uses](hololens-offline.md).
 
-**A Microsoft account or a work account**. You'll also need to use a Microsoft account (or a work account, if your organization owns the device) to sign in to HoloLens. If you don't have a Microsoft account, go to [account.microsoft.com](http://account.microsoft.com) and set one up for free.
+**A Microsoft account or a work account**. You'll also need to use a Microsoft account (or a work account, if your organization owns the device) to sign in to HoloLens. If you don't have a Microsoft account, go to [account.microsoft.com](https://account.microsoft.com) and set one up for free.
 
 **A safe, well-lit space with no tripping hazards**. [Health and safety info](https://go.microsoft.com/fwlink/p/?LinkId=746661).
 
