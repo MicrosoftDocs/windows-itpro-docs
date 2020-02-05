@@ -31,7 +31,7 @@ Windows Autopilot is designed to simplify all parts of the lifecycle of Windows 
 
 When initially deploying new Windows devices, Windows Autopilot leverages the OEM-optimized version of Windows 10 that is preinstalled on the device, saving organizations the effort of having to maintain custom images and drivers for every model of device being used. Instead of re-imaging the device, your existing Windows 10 installation can be transformed into a “business-ready” state, applying settings and policies, installing apps, and even changing the edition of Windows 10 being used (e.g. from Windows 10 Pro to Windows 10 Enterprise) to support advanced features.
 
-Once deployed, Windows 10 devices can be managed by tools such as Microsoft Intune, Windows Update for Business, System Center Configuration Manager, and other similar tools. Windows Autopilot can also be used to re-purpose a device by leveraging Windows Autopilot Reset to quickly prepare a device for a new user, or in break/fix scenarios to enable a device to quickly be brought back to a business-ready state.
+Once deployed, Windows 10 devices can be managed by tools such as Microsoft Intune, Windows Update for Business, Microsoft Endpoint Configuration Manager, and other similar tools. Windows Autopilot can also be used to re-purpose a device by leveraging Windows Autopilot Reset to quickly prepare a device for a new user, or in break/fix scenarios to enable a device to quickly be brought back to a business-ready state.
 
 Windows Autopilot enables you to:
 * Automatically join devices to Azure Active Directory (Azure AD) or Active Directory (via Hybrid Azure AD Join).  See [Introduction to device management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) for more information about the differences between these two join options.
@@ -58,7 +58,7 @@ From the IT pro's perspective, the only interaction required from the end user i
 
 ## Requirements
 
-Windows 10 version 1703 or higher is required to use Windows Autopilot. See [Windows Autopilot requirements](windows-autopilot-requirements.md) for detailed information on software, configuration, network, and licensing requirements.
+A [supported version](https://docs.microsoft.com/windows/release-information/) of Windows 10 semi-annual channel is required to use Windows Autopilot. Windows 10 Enterprise LTSC 2019 is also supported. See [Windows Autopilot requirements](windows-autopilot-requirements.md) for detailed information on software, configuration, network, and licensing requirements.
 
 ## Related topics
 

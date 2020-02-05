@@ -26,13 +26,16 @@ ms.topic: conceptual
 Threat & Vulnerability Management is a component of Microsoft Defender ATP, and provides both security administrators and security operations teams with unique value, including:
 - Real-time endpoint detection and response (EDR) insights correlated with endpoint vulnerabilities
 - Invaluable machine vulnerability context during incident investigations
-- Built-in remediation processes through Microsoft Intune and Microsoft System Center Configuration Manager (SCCM)  
+- Built-in remediation processes through Microsoft Intune and Microsoft Endpoint Configuration Manager  
   
 You can use the Threat & Vulnerability Management capability in [Microsoft Defender Security Center](https://securitycenter.windows.com/) to:
 - View exposure and configuration scores side-by-side with top security recommendations, software vulnerability, remediation activities, and exposed machines
 - Correlate EDR insights with endpoint vulnerabilities and process them 
 - Select remediation options, triage and track the remediation tasks
 - Select exception options and track active exceptions
+
+> [!NOTE]
+> Machines that are not active in the last 30 days are not factored in on the data that reflects your organization's Threat & Vulnerability Management exposure score and configuration score.
 
 ## Threat & Vulnerability Management in Microsoft Defender Security Center
 When you open the portal, you’ll see the main areas of the capability:
@@ -65,9 +68,6 @@ Area | Description
 **Top vulnerable software** | Get real-time visibility into the organizational software inventory, with stack-ranked list of vulnerable software installed on your network’s devices and how they impact on your organizational exposure score. Click each item for details or **Show more** to see the rest of the vulnerable software list in the **Software inventory** page.
 **Top remediation activities** | Track the remediation activities generated from the security recommendations. You can click each item on the list to see the details in the **Remediation** page or click **Show more** to see the rest of the remediation activities, and active exceptions.
 **Top exposed machines** | See the exposed machine names and their exposure level. You can click each machine name from the list and it will take you to the machine page where you can view the alerts, risks, incidents, security recommendations, installed software, discovered vulnerabilities associated with the exposed machines. You can also do other EDR-related tasks in it, such as: manage tags, initiate automated investigations, initiate a live response session, collect an investigation package, run antivirus scan, restrict app execution, and isolate machine. You can also click **Show more** to see the rest of the exposed machines list.
-
-> [!NOTE]
-> Machines with no alerts seen in the last 30 days do not count towards the exposure score of Threat & Vulnerability Management.
 
 See [Microsoft Defender ATP icons](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/portal-overview-windows-defender-advanced-threat-protection#windows-defender-atp-icons) for more information on the icons used throughout the portal.
 

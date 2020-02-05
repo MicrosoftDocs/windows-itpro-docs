@@ -44,7 +44,7 @@ For ISOs that you download from the VLSC or Visual Studio Subscriptions, you can
 
 ![Images](images/table01.png)
 
-When using the contents of these ISOs with tools such as the Microsoft Deployment Toolkit or System Center Configuration Manager, make sure you select the appropriate image index in any task sequences that you create or update.
+When using the contents of these ISOs with tools such as the Microsoft Deployment Toolkit or Microsoft Endpoint Configuration Manager, make sure you select the appropriate image index in any task sequences that you create or update.
 
 For packages published to Windows Server Update Services (WSUS), you’ll also notice the change because, instead of having separate packages for each Windows edition, there will be just one package:
 

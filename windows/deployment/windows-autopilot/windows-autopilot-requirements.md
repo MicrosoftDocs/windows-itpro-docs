@@ -27,7 +27,7 @@ Windows Autopilot depends on specific capabilities available in Windows 10, Azur
 
 ## Software requirements
 
-- Windows 10 version 1703 (semi-annual channel) or higher is required. 
+- A [supported version](https://docs.microsoft.com/windows/release-information/) of Windows 10 semi-annual channel is required. Windows 10 Enterprise 2019 long-term servicing channel (LTSC) is also supported.
 - The following editions are supported:
   - Windows 10 Pro
   - Windows 10 Pro Education
@@ -35,6 +35,9 @@ Windows Autopilot depends on specific capabilities available in Windows 10, Azur
   - Windows 10 Enterprise
   - Windows 10 Education
   - Windows 10 Enterprise 2019 LTSC
+
+>[!NOTE]
+>Procedures for deploying Windows Autopilot might refer to specific products and versions. The inclusion of these products in this content doesn't imply an extension of support for a version that is beyond its support lifecycle. Windows Autopilot does not support products that are beyond their support lifecycle. For more information, see [Microsoft Lifecycle Policy](https://go.microsoft.com/fwlink/p/?LinkId=208270).
 
 ## Networking requirements
 
@@ -118,8 +121,11 @@ Specific scenarios will then have additional requirements.  Generally, there are
 See [Windows Autopilot Scenarios](windows-autopilot-scenarios.md) for additional details.
 
 For a walkthrough for some of these and related steps, see this video:
-<br>&nbsp;<br>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KYVptkpsOqs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
+
+</br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KYVptkpsOqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media" gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 There are no additional hardware requirements to use Windows 10 Autopilot, beyond the [requirements to run Windows 10](https://www.microsoft.com/windows/windows-10-specifications).
 

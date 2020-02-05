@@ -42,7 +42,7 @@ Ensure that your machines:
 > RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
 > 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
-- Are onboarded to Microsoft Intune and System Center Configuration Manager (SCCM). If you are use SCCM, update your console to the latest May version 1905
+- Are onboarded to Microsoft Intune and  Microsoft Endpoint Configuration Manager. If you are using Configuration Manager, update your console to the latest version.
 - Have at least one security recommendation that can be viewed in the machine page
 - Are tagged or marked as co-managed
 
@@ -174,7 +174,7 @@ DeviceTvmSoftwareInventoryVulnerabilities
 | where IsExploitAvailable == 1 and CvssScore >= 7
 | summarize NumOfVulnerabilities=dcount(CveId), 
 DeviceName=any(DeviceName) by DeviceId 
-| join kind =inner(AlertEvents) on DeviceId  
+| join kind =inner(DeviceAlertEvents) on DeviceId  
 | summarize NumOfVulnerabilities=any(NumOfVulnerabilities), 
 DeviceName=any(DeviceName) by DeviceId, AlertId 
 | project DeviceName, NumOfVulnerabilities, AlertId  
@@ -212,3 +212,9 @@ After you have identified which software and software versions are vulnerable du
 - [Advanced hunting overview](overview-hunting.md)
 - [All advanced hunting tables](advanced-hunting-reference.md)
 - [Configure data access for Threat & Vulnerability Management roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Machine APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine)
+- [Vulnerability APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
+- [Software APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/software)
+- [Recommendation APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/vulnerability)
+- [Score APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/score)
+

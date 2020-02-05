@@ -78,7 +78,6 @@ It's important to understand the following prerequisites prior to creating indic
 >[!IMPORTANT]
 >- The allow or block function cannot be done on files if the file's classification exists on the device's cache prior to the allow or block action 
 >- Trusted signed files will be treated differently. Microsoft Defender ATP is optimized to handle malicious files. Trying to block trusted signed files, in some cases, may have performance implications.
->- The PE file needs to be in the machine timeline for you to be able to take this action. 
 
  
 >[!NOTE]
@@ -123,6 +122,11 @@ It's important to understand the following prerequisites prior to creating indic
 
 >[!IMPORTANT]
 > Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs.
+> For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages Network Protection (link) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS): <br>
+> NOTE:
+>- IP is supported for all three protocols
+>- Encrypted URLs can only be blocked on first party browsers
+>- Full URL path blocks can be applied on the domain level and all unencrypted URLs
  
 >[!NOTE]
 >There may be up to 2 hours latency (usually less) between the time the action is taken, and the URL and IP being blocked. 
