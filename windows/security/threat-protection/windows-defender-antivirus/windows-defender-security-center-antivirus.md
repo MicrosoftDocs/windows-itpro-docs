@@ -130,6 +130,19 @@ This section describes how to perform some of the most common tasks when reviewi
 5. Click the plus icon to choose the type and set the options for each exclusion. 
 <a id="detection-history"></a>
 
+The following table summarizes exclusion types and what happens:
+
+|Exclusion type  |Defined by  |What happens  |
+|---------|---------|---------|
+|**File** |Location <br/>Example: `c:\sample\sample.test` |The specific file is skipped by Windows Defender Antivirus. |
+|**Folder**    |Location <br/>Example: `c:\test\sample`       |All items in the specified folder are skipped by Windows Defender Antivirus.         |
+|**File type**   |File extension <br/>Example: `.test` |All files with the `.test` extension anywhere on your device are skipped by Windows Defender Antivirus.         |
+|**Process**     |Executable file path <br>Example: `c:\test\process.exe`         |The specific process and any files that are opened by that process are skipped by Windows Defender Antivirus.         |
+
+To learn more, see: 
+- [Configure and validate exclusions based on file extension and folder location](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus) 
+- [Configure exclusions for files opened by processes](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-process-opened-file-exclusions-windows-defender-antivirus)
+
 ### Review threat detection history in the Windows Defender Security Center app
 
   1. Open the Windows Defender Security Center app by clicking the shield icon in the task bar or 
