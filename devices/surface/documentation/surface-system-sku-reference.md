@@ -43,7 +43,7 @@ You can also find the System SKU and System Model for a device in System Informa
 - Click **Start** >  **MSInfo32**.  
 
 ### WMI
-You can use System SKU variables in a Task Sequence WMI Condition in the Microsoft Deployment Toolkit (MDT) or System Center Configuration Manager. For example: 
+You can use System SKU variables in a Task Sequence WMI Condition in the Microsoft Deployment Toolkit (MDT) or Microsoft Endpoint Configuration Manager. For example: 
 
     - WMI Namespace – Root\WMI
     - WQL Query – SELECT * FROM MS_SystemInformation WHERE SystemSKU = "Surface_Pro_1796"

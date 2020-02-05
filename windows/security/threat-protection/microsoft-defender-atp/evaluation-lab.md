@@ -127,8 +127,8 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
 You can also use [Advanced hunting](advanced-hunting-query-language.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
 
->[!NOTE]
->The connection to the test machines is done using RDP. Make sure that your firewall settings allow RDP connections.
+> [!NOTE]
+> The connection to the test machines is done using RDP. Make sure that your firewall settings allow RDP connections.
 
 1. Connect to your machine and run an attack simulation by selecting **Connect**. 
 
@@ -179,4 +179,3 @@ Your feedback helps us get better in protecting your environment from advanced a
 Let us know what you think, by selecting **Provide feedback**.
 
 ![Image of provide feedback](images/send-us-feedback-eval-lab.png)
-
