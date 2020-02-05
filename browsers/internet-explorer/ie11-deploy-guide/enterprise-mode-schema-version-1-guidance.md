@@ -177,7 +177,8 @@ Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">http
 <tr>
 <td>docMode</td>
 <td>Specifies the document mode to apply. This attribute is only supported on &lt;domain&gt; or &lt;path&gt; elements in the &lt;docMode&gt; section.
-<p><b>Example</b></p>
+<br />
+<p><b>Example:</b></p>
 <pre class="syntax">
 &lt;docMode&gt;
   &lt;domain&gt;fabrikam.com
