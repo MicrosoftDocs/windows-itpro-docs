@@ -204,7 +204,8 @@ Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">http
 <tr>
 <td>forceCompatView</td>
 <td>Specifies that the page should load in IE7 document mode (Compat View). This attribute is only supported on &lt;domain&gt; or &lt;path&gt; elements in the &lt;emie&gt; section. If the page is also configured to load in Enterprise Mode, it will load in IE7 Enterprise Mode. Otherwise (exclude=&quot;true&quot;), it will load in IE11's IE7 document mode. If this attribute is absent, it defaults to false.
-<p><b>Example</b></p>
+<br />
+<p><b>Example:</b></p>
 <pre class="syntax">
 &lt;emie&gt;
   &lt;domain exclude=&quot;true&quot;&gt;fabrikam.com
