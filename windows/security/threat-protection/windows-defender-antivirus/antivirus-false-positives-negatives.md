@@ -57,10 +57,10 @@ The following table summarizes exclusion types and what happens:
 
 |Exclusion type  |Defined by  |What happens  |
 |---------|---------|---------|
-|**File** |Location <br/>Example: `c:\sample\sample.test` |The specific file is skipped by Windows Defender Antivirus. |
+|**File** |Location <br/>Example: `c:\sample\sample.test` |The specified file is skipped by Windows Defender Antivirus. |
 |**Folder**    |Location <br/>Example: `c:\test\sample`       |All items in the specified folder are skipped by Windows Defender Antivirus.         |
-|**File type**   |File extension <br/>Example: `.test` |All files with the `.test` extension anywhere on your device are skipped by Windows Defender Antivirus.         |
-|**Process**     |Executable file path <br>Example: `c:\test\process.exe`         |The specific process and any files that are opened by that process are skipped by Windows Defender Antivirus.         |
+|**File type**   |File extension <br/>Example: `.test` |All files with the specified extension anywhere on your device are skipped by Windows Defender Antivirus.         |
+|**Process**     |Executable file path <br>Example: `c:\test\process.exe`         |The specified process and any files that are opened by that process are skipped by Windows Defender Antivirus.         |
 
 To learn more, see: 
 - [Configure and validate exclusions based on file extension and folder location](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-extension-file-exclusions-windows-defender-antivirus) 
