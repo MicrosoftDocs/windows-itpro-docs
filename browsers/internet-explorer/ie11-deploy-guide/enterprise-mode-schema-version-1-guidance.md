@@ -164,7 +164,8 @@ This table includes the attributes used by the Enterprise Mode schema.
 <tr>
 <td>exclude</td>
 <td>Specifies the domain or path excluded from applying Enterprise Mode. This attribute is only supported on the &lt;domain&gt; and &lt;path&gt; elements in the &lt;emie&gt; section. If this attribute is absent, it defaults to false.
-<p><b>Example</b></p>
+<br />
+<p><b>Example:</b></p>
 <pre class="syntax">
 &lt;emie&gt;
   &lt;domain exclude=&quot;false&quot;&gt;fabrikam.com
