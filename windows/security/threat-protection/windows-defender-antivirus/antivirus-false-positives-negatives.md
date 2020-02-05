@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/29/2020
+ms.date: 02/05/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -51,7 +51,7 @@ When you define an exclusion for Windows Defender Antivirus, you configure your 
 1. On your Windows 10 device, open the Windows Security app.
 2. Select **Virus & threat protection** > **Virus & threat protection settings**.
 3. Under **Exclusions**, select **Add or remove exclusions**.
-4. Select **+ Add an exclusion**, and specify its type (**File**, **Folder**, **File type**, or **Process**.)
+4. Select **+ Add an exclusion**, and specify its type (**File**, **Folder**, **File type**, or **Process**).
 
 ## Related articles
 
