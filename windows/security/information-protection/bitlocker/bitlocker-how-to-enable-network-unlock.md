@@ -311,7 +311,7 @@ Troubleshooting Network Unlock issues begins by verifying the environment. Many 
 - Group policy for Network Unlock is enabled and linked to the appropriate domains.
 - Verify group policy is reaching the clients properly. This can be done using the GPRESULT.exe or RSOP.msc utilities.
 - Verify the clients were rebooted after applying the policy.
-- Verify the **Network (Certificate Based)** protector is listed on the client. This can be done using either manage-bde or Windows PowerShell cmdlets. For example the following command will list the key protectors currently configured on the C: drive of the lcoal computer:
+- Verify the **Network (Certificate Based)** protector is listed on the client. This can be done using either manage-bde or Windows PowerShell cmdlets. For example the following command will list the key protectors currently configured on the C: drive of the local computer:
 
   ```powershell
   manage-bde -protectors -get C:
