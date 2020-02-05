@@ -192,7 +192,8 @@ Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">http
 <tr>
 <td>doNotTransition</td>
 <td>Specifies that the page should load in the current browser, otherwise it will open in IE11. This attribute is supported on all &lt;domain&gt; or &lt;path&gt; elements. If this attribute is absent, it defaults to false.
-<p><b>Example</b></p>
+<br />
+<p><b>Example:</b></p>
 <pre class="syntax">
 &lt;emie&gt;
   &lt;domain doNotTransition=&quot;false&quot;&gt;fabrikam.com
