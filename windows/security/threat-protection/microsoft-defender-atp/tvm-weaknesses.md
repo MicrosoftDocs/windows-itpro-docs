@@ -1,6 +1,6 @@
 ---
 title: Weaknesses
-description: Windows Defender Security Center offers a Weaknesses page, which lists vulnerabilities found in the infected software running in your organization. 
+description: Microsoft Defender Security Center offers a Weaknesses page, which lists vulnerabilities found in the infected software running in your organization. 
 keywords: mdatp threat & vulnerability management, mdatp tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
