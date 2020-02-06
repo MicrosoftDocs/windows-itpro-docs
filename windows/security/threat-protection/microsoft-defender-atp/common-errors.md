@@ -68,7 +68,7 @@ Each error response contains a unique ID parameter for tracking.
     }
 }
 ```
-<br><br>
+
 
 ```json
 {
