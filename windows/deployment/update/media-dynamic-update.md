@@ -18,13 +18,13 @@ ms.topic: article
 
 **Applies to**: Windows 10
 
-This topic explains how to acquire and apply Dynamic Update packages to existing Windows 10 images <em>prior to deployment</em> and includes Windows PowerShell scripts you can use to automate this.
+This topic explains how to acquire and apply Dynamic Update packages to existing Windows 10 images <em>prior to deployment</em> and includes Windows PowerShell scripts you can use to automate this process.
 
 Volume-licensed media is available for each release of Windows 10 in the Volume Licensing Service Center (VLSC) and other relevant channels such as Windows Update for Business, Windows Server Update Services (WSUS), and Visual Studio Subscriptions. You can use Dynamic Update to ensure that Windows 10 devices have the latest feature update content as part of an in-place upgrade while preserving language pack and Features on Demand (FODs) that might have been previously installed. Dynamic Update also eliminates the need to install a separate quality update as part of the in-place upgrade process.
 
 ## Dynamic Update
 
-Whenever installation of a feature update starts (whether from media or an environment connected to Windows Update), *Dynamic Update* is one of the first steps. Windows 10 setup contacts a Microsoft endpoint to fetch Dynamic Update contant, and then applies those updates to your operating system installation media. The update content includes the following:
+Whenever installation of a feature update starts (whether from media or an environment connected to Windows Update), *Dynamic Update* is one of the first steps. Windows 10 setup contacts a Microsoft endpoint to fetch Dynamic Update content, and then applies those updates to your operating system installation media. The update content includes the following kinds of updates:
 
 - Updates to Setup.exe binaries or other files that Setup uses for feature updates
 - Updates for the "safe operating system" (SafeOS) that is used for the Windows recovery environment
@@ -40,7 +40,7 @@ Devices must be able to connect to the internet to obtain Dynamic Updates. In so
 
 You can obtain Dynamic Update content from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). At that site, use the search bar in the upper right to find the Dynamic Update content for a particular release. For example, you could enter *1809 Dynamic Update x64*, which would return results like this:
 
-![Table with columns labeled Title, Producst, Classification, Last Updated, Version, and Size and four rows listing various dynamic updates and associated KB articles](images/update-catalog.png)
+![Table with columns labeled Title, Products, Classification, Last Updated, Version, and Size and four rows listing various dynamic updates and associated KB articles](images/update-catalog.png)
 
 The various Dynamic Update components might not all be present in the search results, so you might have to search with different keywords to find all of the components. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows the key items to check for each of the Dynamic Update components in **bold**. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
 
@@ -52,7 +52,7 @@ The various Dynamic Update components might not all be present in the search res
 |Latest cumulative update     | 2019-08 **Cumulative Update for Windows 10**    |  Windows 10       |  Install this update to resolve issues in Windows...       |
 |Servicing stack Dynamic Update     | 2019-09 **Servicing Stack Update for Windows 10**        |  Windows 10...       | Install this update to resolve issues in Windows...        |
 
-If you want to customize the image with additional languages Features on Demand, you'll need download supplemental media ISO files from the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx). For example, since Dynamic Update will be disabled for your devices, and if users require specific Features on Demand, you can preinstall these into the image.
+If you want to customize the image with additional languages Features on Demand, download supplemental media ISO files from the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx). For example, since Dynamic Update will be disabled for your devices, and if users require specific Features on Demand, you can preinstall these into the image.
 
 ## Update Windows 10 installation media
 
@@ -61,7 +61,7 @@ Properly updating the installation media involves a large number of actions oper
 - Windows Preinstallation Environment (WinPE): a small operating system used to install, deploy, and repair Windows operating systems
 - Windows Recovery Environment (WinRE): repairs common causes of unbootable operating systems. WinRE is based on WinPE and can be customized with additional drivers, languages, optional packages, and other troubleshooting or diagnostic tools.
 - Windows operating system: one or more editions of Windows 10 stored in \sources\install.wim
-- Windows installation media: the complete collection of files and folders in the Windows 10 installation media. For example, \sources folder, \boot folder, setup.exe, etc.
+- Windows installation media: the complete collection of files and folders in the Windows 10 installation media. For example, \sources folder, \boot folder, setup.exe, and so on.
 
 This table shows the correct sequence for applying the various tasks to the files. For example, the full sequence starts with adding the servicing stack update to WinRE (1) and concludes with adding the Dynamic Update for Setup to the new media (26).
 
@@ -88,13 +88,13 @@ The main operating system file (install.wim) contains multiple editions of Windo
 
 ### Additional languages and features
 
-You don't have to add more languages and features to the image to accomplish the udpates, but it is an opportunity to customize the image with more languages, Optional Components, and Features on Demand beyond what is in your starting image. To do this, it's important to make these changes in the correct order: first apply updates, followed by language additions, then by featre additions, and finally the latest cumulative update. The provided sample script installs a second language (in this case Japanese (ja-JP)). Since this language is backed by an lp.cab there's no need to add a Language Experience Pack. Japanese is added to both the main operating system and to the recovery environment to allow the user to see the recovery screens in Japanese. This includes adding localized versions of the packages currently installed in the recovery image. 
+You don't have to add more languages and features to the image to accomplish the updates, but it's an opportunity to customize the image with more languages, Optional Components, and Features on Demand beyond what is in your starting image. To do this, it's important to make these changes in the correct order: first apply updates, followed by language additions, then by feature additions, and finally the latest cumulative update. The provided sample script installs a second language (in this case Japanese (ja-JP)). Since this language is backed by an lp.cab, there's no need to add a Language Experience Pack. Japanese is added to both the main operating system and to the recovery environment to allow the user to see the recovery screens in Japanese. This includes adding localized versions of the packages currently installed in the recovery image. 
 
 Optional Components, along with the .Net feature, can be installed offline, however doing so creates pending operations that require the device to restart. As a result, the call to perform image cleanup would fail. There are two options to avoid this. One option is to skip the image cleanup step, though that will result in a larger install.wim. Another option is to install the .Net and Optional Components in a step after cleanup but before export. This is the option in the sample script. By doing this, you will have to start with the original install.wim (with no pending actions) when you maintain or update the image the next time (for example, the next month).
 
 ## Windows PowerShell scripts to apply Dynamic Updates to an existing image
 
-These examples are for illustration only, and therefore lacks error handling. The script assumes that the following content is stored locally in this folder structure:
+These examples are for illustration only, and therefore lack error handling. The script assumes that the following content is stored locally in this folder structure:
 
 
 |Folder  |Description  |
@@ -347,7 +347,7 @@ For this next phase, there is no need to mount the main operating system, since 
 
 Now is the time to enable other Optional Components or add other Features on Demand. If such a feature has an associated cumulative update (for example, .Net), this is the time to apply those. The script then proceeds with applying the latest cumulative update. Finally, the script cleans and exports the image.
  
-You can install Optional Components, along with the .Net feature, offline, but that will require the device to be restarted This is why the script installs .Net and Optional Components after cleanup and before export.
+You can install Optional Components, along with the .Net feature, offline, but that will require the device to be restarted. This is why the script installs .Net and Optional Components after cleanup and before export.
 
 ```
 # 
