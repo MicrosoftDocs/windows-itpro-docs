@@ -37,7 +37,7 @@ InvalidHashValue | BadRequest (400) | Hash value {the invalid hash} is invalid.
 InvalidDomainName | BadRequest (400) | Domain name {the invalid domain} is invalid.
 InvalidIpAddress | BadRequest (400) | IP address {the invalid IP} is invalid.
 InvalidUrl | BadRequest (400) | URL {the invalid URL} is invalid.
-MaximumBatchSizeExceeded | BadRequest (400) | Maximum indicators batch size exceeded. Received: {batch size received}, allowed: {batch size allowed}.
+MaximumBatchSizeExceeded | BadRequest (400) | Maximum batch size exceeded. Received: {batch size received}, allowed: {batch size allowed}.
 MissingRequiredParameter | BadRequest (400) | Parameter {the missing parameter} is missing.
 OsPlatformNotSupported | BadRequest (400) | OS Platform {the client OS Platform} is not supported for this action.
 ClientVersionNotSupported | BadRequest (400) | {The requested action} is supported on client version {supported client version} and above.
@@ -47,11 +47,12 @@ DisabledFeature | Forbidden (403) | Tenant feature is not enabled.
 DisallowedOperation | Forbidden (403) | {the disallowed operation and the reason}.
 NotFound | Not Found (404) | General Not Found error message.
 ResourceNotFound | Not Found (404) | Resource {the requested resource} was not found.
+InternalServerError | Internal Server Error (500) | (No error message, try retry the operation or contact us if it does not resolved)
 
 ## Body parameters are case sensitive
 
 The submitted body parameters are currently case sensitive.
-<br>If you experience an InvalidRequestBody or MissingRequiredParameter errors, it might be caused from a wrong parameter capital or lower-case letter.
+<br>If you experience an **InvalidRequestBody** or **MissingRequiredParameter** errors, it might be caused from a wrong parameter capital or lower-case letter.
 <br>It is recommended to go to the requested Api documentation page and check that the submitted parameters match the relevant example.
 
 ## Correlation request ID
