@@ -147,7 +147,7 @@ Tamper protection integrates with [Threat & Vulnerability Management](https://do
 
 In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
 
-![Turn on tamper protection](tamperprotectsecurityrecos.png)
+![Turn on tamper protection](images/tamperprotectsecurityrecos.png)
 
 To learn more about Threat & Vulnerability Management, see [Threat & Vulnerability Management in Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
 
