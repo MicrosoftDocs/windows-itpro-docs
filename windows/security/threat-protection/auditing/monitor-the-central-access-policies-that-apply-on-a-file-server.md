@@ -58,6 +58,6 @@ After you modify the CAPs on the domain controller, verify that the changes have
 10. In Server Manager, select **Tools**, and then select **Event Viewer**.
 11. Expand **Windows Logs**, and then select **Security**. Verify that event 4819 appears in the security log.
 
-## Related resource
+## Related resources
 
 - [Using advanced security auditing options to monitor dynamic access control objects](using-advanced-security-auditing-options-to-monitor-dynamic-access-control-objects.md)
