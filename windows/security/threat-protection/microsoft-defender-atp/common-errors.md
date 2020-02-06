@@ -57,7 +57,7 @@ Each error response contains a unique ID parameter for tracking.
 <br>The property name of this parameter is "target".
 <br>When contacting us about an error, attaching this ID will help find the root cause of the problem.
 
-## Exapmles
+## Examples
 
 ```json
 {
