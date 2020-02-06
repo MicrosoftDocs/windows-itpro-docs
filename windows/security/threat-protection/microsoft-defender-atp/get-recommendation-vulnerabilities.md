@@ -1,5 +1,5 @@
 ---
-title: Get recommendation by vulnerabilities
+title: List vulnerabilities by recommendation
 description: Retrieves a list of vulnerabilities associated with the security recommendation.
 keywords: apis, graph api, supported apis, get, list of vulnerabilities, security recommendation, security recommendation for vulnerabilities, threat and vulnerability management, threat and vulnerability management api 
 search.product: eADQiWindows 10XVcnh
@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get recommendation by vulnerabilities
+# List vulnerabilities by recommendation
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -65,8 +65,7 @@ GET https://api.securitycenter.windows.com/api/recommendations/va-_-google-_-chr
 
 Here is an example of the response.
 
-```
-Content-type: json
+```json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Collection(Analytics.Contracts.PublicAPI.PublicVulnerabilityDto)",
     "value": [
@@ -85,7 +84,8 @@ Content-type: json
             "exploitTypes": [],
             "exploitUris": []
         }
-        ]
+		...
+     ]
 }
 ```
 
