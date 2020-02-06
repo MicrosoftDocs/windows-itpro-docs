@@ -135,7 +135,7 @@ Optional. The character string that allows the user experience to include a cust
 Supported operations are Get, Replace, and Delete.
 
 <a href="" id="provider-providerid-requiremessagesigning"></a>**Provider/*ProviderID*/RequireMessageSigning**  
-Boolean type. Primarly used for SSL bridging mode where firewalls and proxies are deployed and where device client identity is required. When enabled, every SyncML message from the device will carry an additional HTTP header named MDM-Signature. This header contains BASE64-encoded Cryptographic Message Syntax using a Detached Signature of the complete SyncML message SHA-2 (inclusive of the SyncHdr and SyncBody). Signing is performed using the private key of the management session certificate that was enrolled as part of the enrollment process. The device public key and PKCS9 UTC signing time stamp are included as part of the authenticated attributes in the signature.
+Boolean type. Primarily used for SSL bridging mode where firewalls and proxies are deployed and where device client identity is required. When enabled, every SyncML message from the device will carry an additional HTTP header named MDM-Signature. This header contains BASE64-encoded Cryptographic Message Syntax using a Detached Signature of the complete SyncML message SHA-2 (inclusive of the SyncHdr and SyncBody). Signing is performed using the private key of the management session certificate that was enrolled as part of the enrollment process. The device public key and PKCS9 UTC signing time stamp are included as part of the authenticated attributes in the signature.
 
 Default value is false, where the device management client does not include authentication information in the management session HTTP header. Optionally set to true, where the client authentication information is provided in the management session HTTP header.
 
@@ -163,7 +163,7 @@ When you query this node, a Windows 10 client will return 2.0 and a Windows 8.
 Supported operation is Get.
 
 <a href="" id="provider-providerid-aadresourceid"></a>**Provider/*ProviderID*/AADResourceID**  
-Optional. This is the ResourceID used when requesting the user token from the OMA DM session for Azure Active Directory (Azure AD) enrollments (Azure AD Join or Add Accounts). The token is audience specific, which allows for different service principals (enrollment vs. device management). It can be an application ID or the endpoint that you are trying to access.
+Optional. This is the ResourceID used when requesting the user token from the OMA DM session for Azure Active Directory (Azure AD) enrollments (Azure AD Join or Add Accounts). The token is audience-specific, which allows for different service principals (enrollment vs. device management). It can be an application ID or the endpoint that you are trying to access.
 
 For more information about Azure AD enrollment, see [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md).
 
@@ -226,7 +226,7 @@ Added in Windows 10, version 1607. Configures the identifier used to uniquely a
 Supported operations are Add, Get, Replace, and Delete.
 
 <a href="" id="provider-providerid-managementserveraddresslist"></a>**Provider/*ProviderID*/ManagementServerAddressList**  
-Added in Windows 10, version 1607. The list of management server URLs in the format &lt;URL1&gt;&lt;URL2&gt;&lt;URL3&gt;, etc... If there is only one, the angle brackets (&lt;&gt;) are not required.
+Added in Windows 10, version 1607. The list of management server URLs in the format &lt;URL1&gt;&lt;URL2&gt;&lt;URL3&gt;, and so on. If there is only one, the angle brackets (&lt;&gt;) are not required.
 
 > [!NOTE]
 > The &lt; and &gt; should be escaped.
@@ -259,12 +259,12 @@ Optional. Added in Windows 10, version 1703. Specify the Discovery server URL o
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-numberofdaysafterlostcontacttounenroll"></a>**Provider/*ProviderID*/NumberOfDaysAfterLostContactToUnenroll**  
-Optional. Number of days after last sucessful sync to unenroll.
+Optional. Number of days after last successful sync to unenroll.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is integer.
 
 <a href="" id="provider-providerid-aadsenddevicetoken"></a>**Provider/*ProviderID*/AADSendDeviceToken**  
-Device. Added in Windows 10 version 1803. For Azure AD backed enrollments, this will cause the client to send a Device Token if the User Token can not be obtained.
+Device. Added in Windows 10 version 1803. For Azure AD backed enrollments, this will cause the client to send a Device Token if the User Token cannot be obtained.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is bool.
 
@@ -557,7 +557,7 @@ Optional. Boolean value that allows the IT admin to require the device to start 
 Supported operations are Add, Get, and Replace.
 
 <a href="" id="provider-providerid-push"></a>**Provider/*ProviderID*/Push**  
-Optional. Not configurable during WAP Provisioining XML. If removed, DM sessions triggered by Push will no longer be supported.
+Optional. Not configurable during WAP Provisioning XML. If removed, DM sessions triggered by Push will no longer be supported.
 
 Supported operations are Add and Delete.
 
@@ -670,7 +670,7 @@ Required. Added in Windows 10, version 1709. This node contains a list of LocURI
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-firstsyncstatus-expectedmsiapppackages"></a>**Provider/*ProviderID*/FirstSyncStatus/ExpectedMSIAppPackages**  
-Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to App Packages the management service provider expects to provision via EnterpriseDesktopAppManagement CSP, delimited by the character L"\xF000".  The LocURI will be followed by a semicolon and a number, representing the amount of apps included in the App Package.  We will not verify that number. For example, `./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID1/Status;4"\xF000" ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID2/Status;2`  This represents App Package ProductID1 containing four apps, and ProductID2 containing two apps.
+Required. Added in Windows 10, version 1709. This node contains a list of LocURIs that refer to App Packages the management service provider expects to provision via EnterpriseDesktopAppManagement CSP, delimited by the character L"\xF000".  The LocURI will be followed by a semicolon and a number, representing the number of apps included in the App Package.  We will not verify that number. For example, `./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID1/Status;4"\xF000" ./User/Vendor/MSFT/EnterpriseDesktopAppManagement/MSI/ProductID2/Status;2`  This represents App Package ProductID1 containing four apps, and ProductID2 containing two apps.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
