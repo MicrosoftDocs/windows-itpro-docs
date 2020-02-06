@@ -383,6 +383,7 @@
 
 ##### [Microsoft Defender ATP APIs Schema]()
 ###### [Supported Microsoft Defender ATP APIs](microsoft-defender-atp/exposed-apis-list.md)
+###### [Common REST API error codes](microsoft-defender-atp/common-errors.md)
 ###### [Advanced Hunting](microsoft-defender-atp/run-advanced-query-api.md)
 
 ###### [Alert]()
