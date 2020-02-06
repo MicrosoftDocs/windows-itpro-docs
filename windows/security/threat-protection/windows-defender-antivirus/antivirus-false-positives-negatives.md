@@ -15,6 +15,8 @@ ms.custom: nextgen
 ms.date: 02/05/2020
 ms.reviewer: 
 manager: dansimp
+ms.audience: ITPro
+ms.topic: article
 ---
 
 # What to do with false positives/negatives in Windows Defender Antivirus
