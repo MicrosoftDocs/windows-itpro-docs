@@ -112,6 +112,7 @@ The installation proceeds.
 After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
    ![Microsoft Defender icon in status bar screenshot](../windows-defender-antivirus/images/MDATP-Icon-Bar.png)
+   
 
 ## How to Allow Full Disk Access
 
