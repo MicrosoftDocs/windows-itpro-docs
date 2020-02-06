@@ -26,15 +26,12 @@ This can cause devices or software to malfunction and in rare cases may result i
 If this happens, see [Troubleshooting](#troubleshooting) for remediation steps.
 
 >[!NOTE]
->HVCI works with modern 7th gen CPUs or higher and its equivalent on AMD. CPU new feature is required *Mode based execution control (MBE) Virtualization*. AMD CPUs do not have MBE.
-
->[!TIP]
-> "The Secure Kernel relies on the Mode-Based Execution Control (MBEC) feature, if present in hardware, which enhances the SLAT with a user/kernel executable bit, or the hypervisor’s software emulation of this feature, called Restricted User Mode (RUM)." Mark Russinovich and Alex Ionescu. Windows Internals 7th Edition book
+>Because it makes use of *Mode Based Execution Control*, HVCI works better with Intel Kaby Lake or AMD Zen 2 CPUs and newer. Processors without MBEC will rely on an emulation of this feature, called *Restricted User Mode*, which has a bigger impact on performance.
 
 ## HVCI Features
 
-* HVCI protects modification of the Code Flow Guard (CFG) bitmap.
-* HVCI also ensure your other Truslets, like Credential Guard have a valid certificate.
+* HVCI protects modification of the Control Flow Guard (CFG) bitmap.
+* HVCI also ensure your other Truslets, like Credential Guard, have a valid certificate.
 * Modern device drivers must also have an EV (Extended Validation) certificate and should support HVCI.
 
 ## How to turn on HVCI in Windows 10
