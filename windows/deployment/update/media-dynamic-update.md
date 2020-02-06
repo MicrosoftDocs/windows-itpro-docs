@@ -28,7 +28,7 @@ Whenever installation of a feature update starts (whether from media or an envir
 
 - Updates to Setup.exe binaries or other files that Setup uses for feature updates
 - Updates for the "safe operating system" (SafeOS) that is used for the Windows recovery environment
-- Updates to the servicing stack necessary to complete the feature update
+- Updates to the servicing stack necessary to complete the feature update (see [Servicing stack updates](servicing-stack-updates.md) for more information)
 - The latest cumulative (quality) update
 - Updates to applicable drivers already published by manufacturers specifically intended for Dynamic Update
 
@@ -42,17 +42,17 @@ You can obtain Dynamic Update content from the [Microsoft Update Catalog](https:
 
 ![Table with columns labeled Title, Products, Classification, Last Updated, Version, and Size and four rows listing various dynamic updates and associated KB articles](images/update-catalog.png)
 
-The various Dynamic Update components might not all be present in the search results, so you might have to search with different keywords to find all of the components. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows the key items to check for each of the Dynamic Update components in **bold**. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
+The various Dynamic Update components might not all be present in the results from a single search, so you might have to search with different keywords to find all of the components. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows in <em>bold</em> the key items to search for or look for in the results. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
 
 
-|To find this Dynamic Update content, check the results here-->  |Title  |Product  |Description (select the **Title** link to see **Details**)  |
+|To find this Dynamic Update content, search for or check the results here-->  |Title  |Product  |Description (select the **Title** link to see **Details**)  |
 |---------|---------|---------|---------|
 |Safe OS Dynamic Update      | 2019-08 Dynamic Update...        | Windows 10 Dynamic Update,Windows **Safe OS Dynamic Update**         | ComponentUpdate:        |
 |Setup Dynamic Update     | 2019-08 Dynamic Update...         | Windows 10 Dynamic Update        | **SetupUpdate**        |
 |Latest cumulative update     | 2019-08 **Cumulative Update for Windows 10**    |  Windows 10       |  Install this update to resolve issues in Windows...       |
 |Servicing stack Dynamic Update     | 2019-09 **Servicing Stack Update for Windows 10**        |  Windows 10...       | Install this update to resolve issues in Windows...        |
 
-If you want to customize the image with additional languages Features on Demand, download supplemental media ISO files from the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx). For example, since Dynamic Update will be disabled for your devices, and if users require specific Features on Demand, you can preinstall these into the image.
+If you want to customize the image with additional languages or Features on Demand, download supplemental media ISO files from the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx). For example, since Dynamic Update will be disabled for your devices, and if users require specific Features on Demand, you can preinstall these into the image.
 
 ## Update Windows 10 installation media
 
