@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.date: 02/05/2020
 ms.reviewer: 
 manager: dansimp
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ---
 
