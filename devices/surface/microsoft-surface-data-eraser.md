@@ -14,7 +14,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.audience: itpro
-ms.date: 11/13/2019
+ms.date: 02/06/2020
 ---
 
 # Microsoft Surface Data Eraser
@@ -83,7 +83,10 @@ After the creation tool is installed, follow these steps to create a Microsoft S
 
 1. Start Microsoft Surface Data Eraser from the Start menu or Start screen.
 
-2. Click **Build** to begin the Microsoft Surface Data Eraser USB creation process.
+2. Click **Build** to begin the Microsoft Surface Data Eraser USB creation process. 
+
+>[!NOTE]
+>For Surface Pro X devices, select **ARM64**. for other Surface devices, select **x64**.
 
 3. Click **Start** to acknowledge that you have a USB stick of at least 4 GB connected, as shown in Figure 1.
 
