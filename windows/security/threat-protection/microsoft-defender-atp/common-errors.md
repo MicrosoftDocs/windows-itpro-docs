@@ -18,14 +18,10 @@ ms.topic: article
 
 # Common REST API error codes
 
-**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
-- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
-
-The error codes listed in the following table may be returned by an operation on any of Microsoft Defender ATP APIs.
-<br>note that in addition to the error code, every error response contains an error message which can help resolving the problem.
-<br>Note that the message is a free text that can be changed.
-<br>At the bottom of the page you can find response examples.
+* The error codes listed in the following table may be returned by an operation on any of Microsoft Defender ATP APIs.
+* Note that in addition to the error code, every error response contains an error message which can help resolving the problem.
+* Note that the message is a free text that can be changed.
+* At the bottom of the page you can find response examples.
 
 Error code |HTTP status code |Message 
 :---|:---|:---
