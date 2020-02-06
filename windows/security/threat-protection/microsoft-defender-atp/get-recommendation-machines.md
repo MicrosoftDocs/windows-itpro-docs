@@ -75,7 +75,8 @@ Here is an example of the response.
             "osPlatform": "Windows10",
             "rbacGroupId": 2154
         }
-        ]
+		...
+    ]
 }
 ```
 
