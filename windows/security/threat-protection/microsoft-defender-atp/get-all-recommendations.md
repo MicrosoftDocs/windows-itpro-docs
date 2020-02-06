@@ -66,8 +66,7 @@ GET https://api.securitycenter.windows.com/api/recommendations
 Here is an example of the response.
 
 
-```
-Content-type: json
+```json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Recommendations",
     "value": [
@@ -99,7 +98,8 @@ Content-type: json
             "nonProductivityImpactedAssets": 0,
             "relatedComponent": "Windows 10"
         }
-        ]
+		...
+     ]
 }
 ```
 ## Related topics

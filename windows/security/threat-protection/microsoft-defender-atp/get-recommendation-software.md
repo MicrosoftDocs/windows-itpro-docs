@@ -65,8 +65,7 @@ GET https://api.securitycenter.windows.com/api/recommendations/va-_-google-_-chr
 
 Here is an example of the response.
 
-```
-Content-type: json
+```json
 {
     "@odata.context": "https://api.securitycenter.windows.com/api/$metadata#Analytics.Contracts.PublicAPI.PublicProductDto",
     "id": "google-_-chrome",

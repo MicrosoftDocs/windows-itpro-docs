@@ -461,7 +461,7 @@
 ####### [Score methods and properties](microsoft-defender-atp/score.md)
 ####### [List exposure score by machine group](microsoft-defender-atp/get-machine-group-exposure-score.md)
 ####### [Get exposure score](microsoft-defender-atp/get-exposure-score.md)
-####### [Get device secure score](microsoft-defender-atp/get-device-secure-score.md)
+####### [Get machine secure score](microsoft-defender-atp/get-device-secure-score.md)
 
 ###### [Software]()
 ####### [Software methods and properties](microsoft-defender-atp/software.md)
@@ -473,7 +473,7 @@
 
 ###### [Vulnerability]()
 ####### [Vulnerability methods and properties](microsoft-defender-atp/vulnerability.md)
-####### [Get all vulnerabilities](microsoft-defender-atp/get-all-vulnerabilities.md)
+####### [List vulnerabilities](microsoft-defender-atp/get-all-vulnerabilities.md)
 ####### [Get vulnerability by Id](microsoft-defender-atp/get-vulnerability-by-id.md)
 ####### [List machines by vulnerability](microsoft-defender-atp/get-machines-by-vulnerability.md)
 
@@ -482,8 +482,8 @@
 ####### [List all recommendations](microsoft-defender-atp/get-all-recommendations.md)
 ####### [Get recommendation by Id](microsoft-defender-atp/get-recommendation-by-id.md)
 ####### [Get recommendation by software](microsoft-defender-atp/get-recommendation-software.md)
-####### [Get recommendation by machines](microsoft-defender-atp/get-recommendation-machines.md)
-####### [Get recommendation by vulnerabilities](microsoft-defender-atp/get-recommendation-vulnerabilities.md)
+####### [List machines by recommendation](microsoft-defender-atp/get-recommendation-machines.md)
+####### [List vulnerabilities by recommendation](microsoft-defender-atp/get-recommendation-vulnerabilities.md)
 
 ##### [How to use APIs - Samples]()
 ###### [Microsoft Flow](microsoft-defender-atp/api-microsoft-flow.md)
