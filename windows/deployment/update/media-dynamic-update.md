@@ -40,9 +40,9 @@ Devices must be able to connect to the internet to obtain Dynamic Updates. In so
 
 You can obtain Dynamic Update content from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). At that site, use the search bar in the upper right to find the Dynamic Update content for a particular release. For example, you could enter *1809 Dynamic Update x64*, which would return results like this:
 
-<image>
+![Table with columns labeled Title, Producst, Classification, Last Updated, Version, and Size and four rows listing various dynamic updates and associated KB articles](images/update-catalog.png)
 
-The various Dynamic Update components might not all be present in the search results, so you might have to search with different keywords to find all of the componente.  And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows the key items to check for each of the Dynamic Update components in **bold**. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
+The various Dynamic Update components might not all be present in the search results, so you might have to search with different keywords to find all of the components. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows the key items to check for each of the Dynamic Update components in **bold**. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
 
 
 |To find this Dynamic Update content, check the results here-->  |Title  |Product  |Description (select the **Title** link to see **Details**)  |
