@@ -24,7 +24,7 @@ ms.topic: article
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieve a list of machines that has this software installed.
+Retrieve a list of machine references that has this software installed.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender ATP APIs](apis-intro.md) for details.
@@ -75,15 +75,16 @@ Here is an example of the response.
             "id": "7c7e1896fa39efb0a32a2cf421d837af1b9bf762",
             "computerDnsName": "dave_desktop",
             "osPlatform": "Windows10",
-            "rbacGroupId": 9
+            "rbacGroupName": "GroupTwo"
         },
         {
             "id": "7d5cc2e7c305e4a0a290392abf6707f9888fda0d",
             "computerDnsName": "jane_PC",
             "osPlatform": "Windows10",
-            "rbacGroupId": 9
+            "rbacGroupName": "GroupTwo"
         }
-]
+		...
+	]
 }
 ```
 
