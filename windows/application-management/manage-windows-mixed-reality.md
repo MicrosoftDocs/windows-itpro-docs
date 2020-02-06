@@ -40,7 +40,7 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
 
    b. Use `Add-Package` to add Windows Mixed Reality FOD to the image.
 
-    ```
+    ```powershell
     Add-Package
     Dism /Online /add-package /packagepath:(path)
     ```
