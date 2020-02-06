@@ -60,8 +60,9 @@ Use the following steps to remove the Surface Hub 2S Compute Cartridge, pack it 
 ## How to replace your Surface Hub 2S Camera
 
 Use the following steps to remove the Surface Hub 2S camera and install the new camera.
-|   |                                                                                                                                   |       |
-| - | --------------------------------------------------------------------------------------------------------------------------------- | ----- |
-| **1.** | You will need the new camera and the two-millimeter allen wrench.                                                                 | ![You will need the new camera and the two-millimeter allen wrench](images/surface-hub-2s-replace-camera-1.png) |
-| **2.**| Unplug the old camera from the unit. If needed, use the allen wrench to adjust the new camera. Plug the new camera into the unit. | ![Unplug the old camera from the unit. If needed, use the allen wrench to adjust the new camera. Plug the new camera into the unit.](images/surface-hub-2s-replace-camera-2.png) |
 
+
+|   |                                                                                                                                                 |       |
+| - | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| **1.** | You will need the new camera and the two-millimeter allen wrench.                                             |![You will need the new camera and the two-millimeter allen wrench](images/surface-hub-2s-replace-camera-1.png)  |
+| **2.**  |  Unplug the old camera from the unit. If needed, use the allen wrench to adjust the new camera. Plug the new camera into the unit. | ![Unplug the old camera from the unit. If needed, use the allen wrench to adjust the new camera. Plug the new camera into the unit.](images/surface-hub-2s-replace-camera-2.png) |
