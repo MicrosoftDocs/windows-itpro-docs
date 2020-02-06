@@ -109,7 +109,7 @@ Microsoft Defender ATP includes a secure score to help you dynamically assess th
 Microsoft Defender ATP's new managed threat hunting service provides proactive hunting, prioritization, and additional context and insights that further empower Security operation centers (SOCs) to identify and respond to threats quickly and accurately.
 
 >[!IMPORTANT]
->Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand is an add-on service. Targeted Attack Notifications is always included after you have been accepted into Microsoft Threat Experts threat hunting service.<p>
+>Microsoft Defender ATP customers need to apply for the Microsoft Threat Experts managed threat hunting service to get proactive Targeted Attack Notifications and to collaborate with experts on demand. Experts on Demand is an add-on service. Targeted Attack Notifications is always included after you have been accepted into Microsoft Threat Experts managed threat hunting service.<p>
 ><p>If you are not enrolled yet and would like to experience its benefits, go to <b>Settings</b> > <b>General</b> > <b>Advanced features</b> > <b>Microsoft Threat Experts</b> to apply. Once accepted, you will get the benefits of Targeted Attack Notifications, and start a  90-day trial of Experts on Demand. Contact your Microsoft representative to get a full Experts on Demand subscription.
 
 <a name="apis"></a>
