@@ -72,6 +72,13 @@ You can use existing System Center Configuration Manager functionality to create
 
 >[!TIP]
 > After onboarding the machine, you can choose to run a detection test to verify that an machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test.md).
+>
+> Note that it is possible to create a detection rule within ConfigMgr to continuously check if a machine has been onboarded. 
+> If a machine is not yet onboarded (due to pending OOBE completion or any other reason), ConfigMgr will retry to onboard the machine until the rule detects the status change.<br>
+This can be accomplished by creating a detection rule checking if the "OnboardingState" registry value (of type REG_DWORD) = 1.
+> This registry value is located under "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
+Refer to the following ConfigMgr article for more information: https://docs.microsoft.com/en-us/configmgr/apps/deploy-use/create-applications#bkmk_detect-rule
+
 
 ### Configure sample collection settings
 For each machine, you can set a configuration value to state whether samples can be collected from the machine when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
