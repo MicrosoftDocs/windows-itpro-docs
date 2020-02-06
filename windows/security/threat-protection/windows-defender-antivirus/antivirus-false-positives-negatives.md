@@ -55,7 +55,7 @@ When you define an exclusion for Windows Defender Antivirus, you configure your 
 3. Under **Exclusions**, select **Add or remove exclusions**.
 4. Select **+ Add an exclusion**, and specify its type (**File**, **Folder**, **File type**, or **Process**).
 
-The following table summarizes exclusion types and what happens:
+The following table summarizes exclusion types, how they're defined, and what happens when they're in effect.
 
 |Exclusion type  |Defined by  |What happens  |
 |---------|---------|---------|
