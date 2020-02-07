@@ -116,16 +116,16 @@ To get the EAP configuration from your desktop using the rasphone tool that is s
 ## EAP certificate filtering
 
 
-In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria so that it matches only one certificate.
+In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you might see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria so that it matches only one certificate.
 
-Enterprises deploying certificate based EAP authentication for VPN and Wi-Fi can encounter a situation where there are multiple certificates that meet the default criteria for authentication. This can lead to issues such as:
+Enterprises deploying certificate-based EAP authentication for VPN and Wi-Fi can encounter a situation where there are multiple certificates that meet the default criteria for authentication. This can lead to issues such as:
 
--   The user may be prompted to select the certificate.
--   The wrong certificate may be auto selected and cause an authentication failure.
+-   The user might be prompted to select the certificate.
+-   The wrong certificate might be auto-selected and cause an authentication failure.
 
 A production ready deployment must have the appropriate certificate details as part of the profile being deployed. The following information explains how to create or update an EAP configuration XML such that the extraneous certificates are filtered out and the appropriate certificate can be used for the authentication.
 
-EAP XML must be updated with relevant information for your environment. This can be done manually by editing the XML sample below, or by using the step-by-step UI guide. After the EAP XML is updated, refer to instructions from your MDM to deploy the updated configuration as follows:
+EAP XML must be updated with relevant information for your environment. This can be done manually by editing the following XML sample, or by using the step-by-step UI guide. After the EAP XML is updated, refer to instructions from your MDM to deploy the updated configuration as follows:
 
 -   For Wi-Fi, look for the `<EAPConfig>` section of your current WLAN Profile XML. (This is what you specify for the WLanXml node in the Wi-Fi CSP.) Within these tags you will find the complete EAP configuration. Replace the section under `<EAPConfig>` with your updated XML and update your Wi-Fi profile. You can refer to your MDM’s guidance on how to deploy a new Wi-Fi profile.
 -   For VPN, EAP configuration is a separate field in the MDM configuration. Work with your MDM provider to identify and update the appropriate field.
@@ -265,7 +265,7 @@ The following XML sample explains the properties for the EAP TLS XML, including 
 Alternatively, you can use the following procedure to create an EAP configuration XML:
 
 1.  Follow steps 1 through 7 in the EAP configuration article.
-1.  In the **Microsoft VPN SelfHost Properties** dialog box, select **Microsoft : Smart Card or other Certificate** from the drop-down menu (this selects EAP TLS).
+1.  In the **Microsoft VPN SelfHost Properties** dialog box, select **Microsoft: Smart Card or other Certificate** from the drop-down menu (this selects EAP TLS).
 
     ![vpn self host properties window](images/certfiltering1.png)
 
