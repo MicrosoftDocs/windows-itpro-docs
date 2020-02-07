@@ -26,11 +26,10 @@ ms.date: 12/11/2018
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 - System Center 2012 Configuration Manager or later versions
 
-
-
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 <span id="sccm1606"/>
+
 ## Onboard Windows 10 machines using System Center Configuration Manager (current branch) version 1606
 System Center Configuration Manager (SCCM) (current branch) version 1606, has UI integrated support for configuring and managing Microsoft Defender ATP on machines. For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=823682" data-raw-source="[Support for Microsoft Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682)">Support for Microsoft Defender Advanced Threat Protection service</a>.
 
@@ -40,6 +39,7 @@ System Center Configuration Manager (SCCM) (current branch) version 1606, has UI
 
 
 <span id="sccm1602"/>
+
 ## Onboard Windows 10 machines using System Center Configuration Manager earlier versions
 You can use existing System Center Configuration Manager functionality to create a policy to configure your machines. This is supported in the following System Center Configuration Manager versions:
 
@@ -49,7 +49,6 @@ You can use existing System Center Configuration Manager functionality to create
 - System Center Configuration Manager (current branch), version 1602
 
 ### Onboard machines using System Center Configuration Manager
-
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
@@ -72,6 +71,14 @@ You can use existing System Center Configuration Manager functionality to create
 
 >[!TIP]
 > After onboarding the machine, you can choose to run a detection test to verify that an machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test.md).
+>
+> Note that it is possible to create a detection rule within ConfigMgr to continuously check if a machine has been onboarded. 
+> If a machine is not yet onboarded (due to pending OOBE completion or any other reason), ConfigMgr will retry to onboard the machine until the rule detects the status change.
+> 
+> This can be accomplished by creating a detection rule checking if the "OnboardingState" registry value (of type REG_DWORD) = 1.
+> This registry value is located under "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
+Refer to the following ConfigMgr article for more information: https://docs.microsoft.com/en-us/configmgr/apps/deploy-use/create-applications#bkmk_detect-rule
+
 
 ### Configure sample collection settings
 For each machine, you can set a configuration value to state whether samples can be collected from the machine when a request is made through Microsoft Defender Security Center to submit a file for deep analysis.
@@ -142,9 +149,9 @@ Monitoring with SCCM consists of two parts:
 
 4. Review the status indicators under **Completion Statistics** and **Content Status**.
 
-If there are failed deployments (machines with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the machines. For more information see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md).
+    If there are failed deployments (machines with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the machines. For more information see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md).
 
-![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
+    ![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
 
 **Check that the machines are compliant with the Microsoft Defender ATP service:**<br>
 You can set a compliance rule for configuration item in System Center Configuration Manager to monitor your deployment.
