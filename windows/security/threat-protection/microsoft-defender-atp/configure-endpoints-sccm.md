@@ -26,11 +26,10 @@ ms.date: 12/11/2018
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 - System Center 2012 Configuration Manager or later versions
 
-
-
 >Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
 <span id="sccm1606"/>
+
 ## Onboard Windows 10 machines using System Center Configuration Manager (current branch) version 1606
 System Center Configuration Manager (SCCM) (current branch) version 1606, has UI integrated support for configuring and managing Microsoft Defender ATP on machines. For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=823682" data-raw-source="[Support for Microsoft Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682)">Support for Microsoft Defender Advanced Threat Protection service</a>.
 
@@ -40,6 +39,7 @@ System Center Configuration Manager (SCCM) (current branch) version 1606, has UI
 
 
 <span id="sccm1602"/>
+
 ## Onboard Windows 10 machines using System Center Configuration Manager earlier versions
 You can use existing System Center Configuration Manager functionality to create a policy to configure your machines. This is supported in the following System Center Configuration Manager versions:
 
@@ -49,7 +49,6 @@ You can use existing System Center Configuration Manager functionality to create
 - System Center Configuration Manager (current branch), version 1602
 
 ### Onboard machines using System Center Configuration Manager
-
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
 
