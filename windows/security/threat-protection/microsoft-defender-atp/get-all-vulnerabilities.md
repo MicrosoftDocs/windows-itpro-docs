@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Get all vulnerabilities
+# List vulnerabilities
 **Applies to:**
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
@@ -66,8 +66,7 @@ GET https://api.securitycenter.windows.com/api/Vulnerabilities
 Here is an example of the response.
 
 
-```
-Content-type: json
+```json
 {
     "@odata.context": "https://api-us.securitycenter.windows.com/api/$metadata#Vulnerabilities",
     "value": [
@@ -86,8 +85,9 @@ Content-type: json
             "exploitTypes": [],
             "exploitUris": []
         }
-        ]
-        {
+		...
+    ]
+
 }
 ```
 

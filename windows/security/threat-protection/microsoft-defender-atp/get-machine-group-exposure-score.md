@@ -18,9 +18,9 @@ ms.topic: article
 
 # List exposure score by machine group
 
-**Applies to:**
+**Applies to:** [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Want to experience Microsoft Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -74,23 +74,14 @@ Here is an example of the response.
         {
             "time": "2019-12-03T09:51:28.214338Z",
             "score": 41.38041766305988,
-            "rbacGroupId": 10
+            "rbacGroupName": "GroupOne"
         },
         {
             "time": "2019-12-03T09:51:28.2143399Z",
             "score": 37.403726933165366,
-            "rbacGroupId": 11
-        },
-        {
-            "time": "2019-12-03T09:51:28.2143407Z",
-            "score": 26.390921344426033,
-            "rbacGroupId": 9
-        },
-        {
-            "time": "2019-12-03T09:51:28.2143414Z",
-            "score": 23.58823563070858,
-            "rbacGroupId": 5
+            "rbacGroupName": "GroupTwo"
         }
+		...
     ]
 }
 ```
