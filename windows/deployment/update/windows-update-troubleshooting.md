@@ -85,7 +85,7 @@ YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           * END * Finding updates Caller
 ``` 
 
 The 0x80070426 error code translates to:
-```
+```console
 ERROR_SERVICE_NOT_ACTIVE - # The service has not been started.
 ```
 
@@ -98,7 +98,7 @@ Windows Update uses WinHttp with Partial Range requests (RFC 7233) to download u
  
 To fix this issue, configure a proxy in WinHTTP by using the following netsh command: 
 
-``` 
+```console
 netsh winhttp set proxy ProxyServerName:PortNumber 
 ```
 
@@ -128,15 +128,15 @@ The most common reasons for this error are described in the following table:
 
 ## Issues related to firewall configuration 
 Error that may be seen in the WU logs:  
-```
+```console
 DownloadManager    Error 0x800706d9 occurred while downloading update; notifying dependent calls. 
 ```
 Or 
-``` 
+```console
 [DownloadManager] BITS job {A4AC06DD-D6E6-4420-8720-7407734FDAF2} hit a transient error, updateId = {D053C08A-6250-4C43-A111-56C5198FE142}.200 <NULL>, error = 0x800706D9 
 ``` 
 Or 
-``` 
+```console
 DownloadManager [0]12F4.1FE8::09/29/2017-13:45:08.530 [agent]DO job {C6E2F6DC-5B78-4608-B6F1-0678C23614BD} hit a transient error, updateId = 5537BD35-BB74-40B2-A8C3-B696D3C97CBA.201 <NULL>, error = 0x80D0000A 
 ``` 
  
@@ -183,13 +183,13 @@ Check the output for the Name and OffersWindowsUPdates parameters, which you can
 ## You have a bad setup in the environment 
 If we look at the GPO being set through registry, the system is configured to use WSUS to download updates: 
 
-``` 
+```console
 HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU] 
 "UseWUServer"=dword:00000001                                        ===================================> it says use WSUS server.  
 ```
 
 From the WU logs: 
-```
+```console
 2018-08-06 09:33:31:085  480 1118 Agent ** START **  Agent: Finding updates [CallerId = OperationalInsight  Id = 49] 
 2018-08-06 09:33:31:085  480 1118 Agent ********* 
 2018-08-06 09:33:31:085  480 1118 Agent   * Include potentially superseded updates 
@@ -206,7 +206,7 @@ In the above log snippet, we see that the Criteria = "IsHidden = 0 AND Deploymen
 
 Now if you look at the below logs, the Automatic update runs the scan and finds no update approved for it. So it reports there are 0 updates to install or download. This is due to bad setup or configuration in the environment. The WSUS side should approve the patches for WU so that it fetches the updates and installs it on the specified time according to the policy. Since this scenario doesn't include SCCM, there's no way to install unapproved updates. And that is the problem you are facing. You expect that the scan should be done by the operational insight agent and automatically trigger download and install but that won’t happen here.  
 
-```
+```console
 2018-08-06 10:58:45:992  480 5d8 Agent ** START **  Agent: Finding updates [CallerId = AutomaticUpdates  Id = 57] 
 2018-08-06 10:58:45:992  480 5d8 Agent ********* 
 2018-08-06 10:58:45:992  480 5d8 Agent   * Online = Yes; Ignore download priority = No 
