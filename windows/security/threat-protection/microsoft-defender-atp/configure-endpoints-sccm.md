@@ -73,8 +73,9 @@ You can use existing System Center Configuration Manager functionality to create
 > After onboarding the machine, you can choose to run a detection test to verify that an machine is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender ATP machine](run-detection-test.md).
 >
 > Note that it is possible to create a detection rule within ConfigMgr to continuously check if a machine has been onboarded. 
-> If a machine is not yet onboarded (due to pending OOBE completion or any other reason), ConfigMgr will retry to onboard the machine until the rule detects the status change.<br>
-This can be accomplished by creating a detection rule checking if the "OnboardingState" registry value (of type REG_DWORD) = 1.
+> If a machine is not yet onboarded (due to pending OOBE completion or any other reason), ConfigMgr will retry to onboard the machine until the rule detects the status change.
+> 
+> This can be accomplished by creating a detection rule checking if the "OnboardingState" registry value (of type REG_DWORD) = 1.
 > This registry value is located under "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
 Refer to the following ConfigMgr article for more information: https://docs.microsoft.com/en-us/configmgr/apps/deploy-use/create-applications#bkmk_detect-rule
 
@@ -148,9 +149,9 @@ Monitoring with SCCM consists of two parts:
 
 4. Review the status indicators under **Completion Statistics** and **Content Status**.
 
-If there are failed deployments (machines with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the machines. For more information see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md).
+    If there are failed deployments (machines with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the machines. For more information see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md).
 
-![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
+    ![SCCM showing successful deployment with no errors](images/sccm-deployment.png)
 
 **Check that the machines are compliant with the Microsoft Defender ATP service:**<br>
 You can set a compliance rule for configuration item in System Center Configuration Manager to monitor your deployment.
