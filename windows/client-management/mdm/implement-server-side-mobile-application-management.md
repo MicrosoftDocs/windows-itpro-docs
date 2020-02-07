@@ -97,7 +97,7 @@ MAM on Windows supports the following configuration service providers (CSPs). Al
 
 MAM supports device lock policies similar to MDM. The policies are configured by DeviceLock area of Policy CSP and PassportForWork CSP. 
 
-We do not recommend configuring both Exchange Active Sync (EAS) and MAM policies for the same device. However, if both are configured, the client will behave as follows: 
+We do not recommend configuring both Exchange ActiveSync (EAS) and MAM policies for the same device. However, if both are configured, the client will behave as follows: 
 
 - When EAS policies are sent to a device that already has MAM policies, Windows evaluates whether the existing MAM policies are compliant with the configured EAS policies and reports compliance to EAS.
 - If the device is found to be compliant, EAS will report compliance to the server to allow mail to sync. MAM supports mandatory EAS policies only. Checking EAS compliance does not require device admin rights.
@@ -159,7 +159,7 @@ We have updated Skype for Business to work with MAM. The following table explain
 <td>October 10 2017</td>
 <td>Office 365 ProPlus</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/library/mt455210.aspx#BKMK_FRCBB" data-raw-source="[First release for deferred channel](https://technet.microsoft.com/library/mt455210.aspx#BKMK_FRCBB)">First release for deferred channel</a></td>
+<td><a href="https://technet.microsoft.com/library/mt455210.aspx#BKMK_FRCBB" data-raw-source="[First release for deferred channel](https://technet.microsoft.com/library/mt455210.aspx#BKMK_FRCBB)">First release for Deferred channel</a></td>
 <td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
 <td>June 13 2017</td>
 <td></td>
