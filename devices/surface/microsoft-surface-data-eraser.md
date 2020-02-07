@@ -14,7 +14,7 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.audience: itpro
-ms.date: 11/13/2019
+ms.date: 02/06/2020
 ---
 
 # Microsoft Surface Data Eraser
@@ -83,7 +83,10 @@ After the creation tool is installed, follow these steps to create a Microsoft S
 
 1. Start Microsoft Surface Data Eraser from the Start menu or Start screen.
 
-2. Click **Build** to begin the Microsoft Surface Data Eraser USB creation process.
+2. Click **Build** to begin the Microsoft Surface Data Eraser USB creation process. 
+
+   >[!NOTE]
+   >For Surface Pro X devices, select **ARM64**. for other Surface devices, select **x64**.
 
 3. Click **Start** to acknowledge that you have a USB stick of at least 4 GB connected, as shown in Figure 1.
 
@@ -153,8 +156,8 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 
 8. Click the **Yes** button to continue erasing data on the Surface device.
 
->[!NOTE]
->When you run Surface Data Eraser on the Surface Data Eraser USB drive, a log file is generated in the **SurfaceDataEraserLogs** folder.
+   >[!NOTE]
+   >When you run Surface Data Eraser on the Surface Data Eraser USB drive, a log file is generated in the **SurfaceDataEraserLogs** folder.
 
 ## Changes and updates
 
@@ -222,8 +225,8 @@ This version of Microsoft Surface Data Eraser adds support for the following:
 
 - Surface Pro 1TB
 
->[!NOTE]
->Surface Data Eraser v3.2.45.0 and above can be used to restore Surface Pro or Surface Laptop devices with the 1TB storage option in the scenario that the device shows two separate 512GB volumes or encounters errors when attempting to deploy or install Windows 10. See [Surface Pro Model 1796 and Surface Laptop 1TB display two drives](https://support.microsoft.com/help/4046105/surface-pro-model-1796-and-surface-laptop-1tb-display-two-drives) for more information.
+   >[!NOTE]
+   >Surface Data Eraser v3.2.45.0 and above can be used to restore Surface Pro or Surface Laptop devices with the 1TB storage option in the scenario that the device shows two separate 512GB volumes or encounters errors when attempting to deploy or install Windows 10. See [Surface Pro Model 1796 and Surface Laptop 1TB display two drives](https://support.microsoft.com/help/4046105/surface-pro-model-1796-and-surface-laptop-1tb-display-two-drives) for more information.
 
 
 ### Version 3.2.36.0
