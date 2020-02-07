@@ -58,7 +58,7 @@ WDAC policies apply to the managed computer as a whole and affects all users of 
 
 ### WDAC System Requirements
 
-WDAC policies can only be created on computers beginning with Windows 10 Enterprise or Windows Server 2016 and above.
+WDAC policies can only be created on computers running Windows 10 build 1903+ on any SKU, pre-1903 Windows 10 Enterprise, or Windows Server 2016 and above.
 They can be applied to computers running any edition of Windows 10 or Windows Server 2016 and optionally managed via Mobile Device Management (MDM), such as Microsoft Intune.
 Group Policy can also be used to deploy WDAC policies to Windows 10 Enterprise edition or Windows Server 2016 and above.
 
