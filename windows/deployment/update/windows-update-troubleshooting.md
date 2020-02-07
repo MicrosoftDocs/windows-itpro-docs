@@ -60,7 +60,7 @@ The Settings UI is talking to the Update Orchestrator service which in turn is t
 On computers running [Windows 10 1709 or higher](#BKMK_DCAT) configured to update from Windows Update (usually WUfB scenario) servicing and definition updates are being installed successfully, but feature updates are never offered.
 
 Checking the WindowsUpdate.log reveals the following error:
-```
+```console
 YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           * START * Finding updates CallerId = Update;taskhostw  Id = 25
 YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           Online = Yes; Interactive = No; AllowCachedResults = No; Ignore download priority = No
 YYYY/MM/DD HH:mm:ss:SSS PID  TID  Agent           ServiceID = {855E8A7C-ECB4-4CA3-B045-1DFA50104289} Third party service
