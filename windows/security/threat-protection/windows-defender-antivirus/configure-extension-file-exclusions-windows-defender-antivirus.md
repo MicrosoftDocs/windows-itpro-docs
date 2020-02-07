@@ -94,7 +94,7 @@ See [How to create and deploy antimalware policies: Exclusion settings](https://
 
     1. Set the option to **Enabled**. 
     2. Under the **Options** section, click **Show...**.
-    3. Enter each folder on its own line under the **Value name** column. If you are entering a file, ensure you enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column.
+    3. Enter each folder on its own line under the **Value name** column. If you are entering a file, ensure you enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column. 
 
 5. Click **OK**.
 
