@@ -298,7 +298,7 @@ Once the Intune changes are propagated to the enrolled devices, you can see them
 6. Set *Ignore app version* to **Yes**. Other settings can be any arbitrary value.
 
     > [!CAUTION]
-    > Setting *Ignore app version* to **No** impacts the ability of the application to receive updates through Microsoft AutoUpdate. Intune will reinstall the uploaded version, effectively downgrading Defender to the uploaded version and potentially result in non-functioning application. See [Deploy updates for Microsoft Defender ATP for Mac](mac-updates.md) for additional information about how the product is updated. If you deployed Defender with *Ignore app version* set to **No**, please change it to **Yes**. If Defender still cannot be installed on a client machine, then uninstall Defender and push policy update to the affected machine. 
+    > Setting *Ignore app version* to **No** impacts the ability of the application to receive updates through Microsoft AutoUpdate. If the version uploaded by Intune is lower than the version on the device, then the lower version will be installed, effectively downgrading Defender. This could result in a non-functioning application. See [Deploy updates for Microsoft Defender ATP for Mac](mac-updates.md) for additional information about how the product is updated. If you deployed Defender with *Ignore app version* set to **No**, please change it to **Yes**. If Defender still cannot be installed on a client machine, then uninstall Defender and push the updated policy. 
 
     ![Device status blade screenshot](../windows-defender-antivirus/images/MDATP-8-IntuneAppInfo.png)
 
