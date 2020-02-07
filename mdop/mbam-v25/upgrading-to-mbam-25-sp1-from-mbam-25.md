@@ -26,24 +26,21 @@ Verify you have a current documentation of your MBAM environment, including all 
 ### Upgrade steps
 #### Steps to upgrade the MBAM Database (SQL Server)
 1. Using the MBAM Configurator; remove the Reports role from the SQL server, or wherever the SSRS database is hosted. Depending on your environment, this can be the same server or a separate one.
-   Note: You will not see an option to remove the Databases; this is expected.  
+  > [!NOTE]
+  > You will not see an option to remove the Databases; this is expected.  
 2. Install 2.5 SP1 (Located with MDOP - Microsoft Desktop Optimization Pack 2015 from the Volume Licensing Service Center site:  <https://www.microsoft.com/Licensing/servicecenter/default.aspx>
 3. Do not configure it at this time 
-4. Install the May 2019 Rollup: https://www.microsoft.com/download/details.aspx?id=58345
-5. Using the MBAM Configurator; re-add the Reports role
-6. This will configure the SSRS connection using the latest MBAM code from the rollup 
-7. Using the MBAM Configurator; re-add the SQL Database role on the SQL Server.
-8. At the end, you will be warned that the DBs already exist and  weren’t created, but this is expected.
-9. This process updates the existing databases to the current version  being installed                  
+4. Using the MBAM Configurator; re-add the Reports role
+5. Using the MBAM Configurator; re-add the SQL Database role on the SQL Server
+6. At the end, you will be warned that the DBs already exist and  weren’t created, but this is expected
+7. This process updates the existing databases to the current version being installed.              
 
 #### Steps to upgrade the MBAM Server (Running MBAM and IIS)
 1. Using the MBAM Configurator; remove the Admin and Self Service Portals from  the IIS server
 2. Install MBAM 2.5 SP1
 3. Do not configure it at this time  
-4. Install the May 2019 Rollup on the IIS server(https://www.microsoft.com/download/details.aspx?id=58345)
-5. Using the MBAM Configurator; re-add the Admin and Self Service Portals to the IIS server 
-6. This will configure the sites using the latest MBAM code from the May 2019 Rollup
-7. Open an elevated command prompt, Type: **IISRESET** and Hit Enter.
+4. Using the MBAM Configurator; re-add the Admin and Self Service Portals to the IIS server 
+5. Open an elevated command prompt, type **IISRESET**, and hit Enter.
  
 #### Steps to upgrade the MBAM Clients/Endpoints
 1. Uninstall the 2.5 Agent from client endpoints

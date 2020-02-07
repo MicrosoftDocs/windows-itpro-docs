@@ -44,7 +44,7 @@
 #### [Attack surface reduction](microsoft-defender-atp/attack-surface-reduction.md)
 #### [Network firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 
-### [Next generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
+### [Next-generation protection](windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 #### [Better together: Windows Defender Antivirus and Microsoft Defender ATP](windows-defender-antivirus/why-use-microsoft-antivirus.md)
 
 ### [Endpoint detection and response]()
@@ -187,7 +187,7 @@
 ##### [Controlled folder access](microsoft-defender-atp/evaluate-controlled-folder-access.md)
 ##### [Attack surface reduction](microsoft-defender-atp/evaluate-attack-surface-reduction.md)
 ##### [Network firewall](windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples.md)
-##### [Evaluate next generation protection](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
+##### [Evaluate next-generation protection](windows-defender-antivirus/evaluate-windows-defender-antivirus.md)
 
 ### [Access the Windows Defender Security Center Community Center](microsoft-defender-atp/community.md)
 
@@ -231,7 +231,7 @@
 
 
 
-### [Configure next generation protection]()
+### [Configure next-generation protection]()
 #### [Configure Windows Defender Antivirus features](windows-defender-antivirus/configure-windows-defender-antivirus-features.md)
 
 #### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
@@ -315,14 +315,14 @@
 ##### [Run and review the results of an offline scan](windows-defender-antivirus/windows-defender-offline.md)
 ##### [Restore quarantined files](windows-defender-antivirus/restore-quarantined-files-windows-defender-antivirus.md)
 
-#### [Manage next generation protection in your business]()
+#### [Manage next-generation protection in your business]()
+##### [Handle false positives/negatives in Windows Defender Antivirus](windows-defender-antivirus/antivirus-false-positives-negatives.md)
 ##### [Management overview](windows-defender-antivirus/configuration-management-reference-windows-defender-antivirus.md)
 ##### [Use Microsoft Intune and Microsoft Endpoint Configuration Manager to manage next generation protection](windows-defender-antivirus/use-intune-config-manager-windows-defender-antivirus.md)
 ##### [Use Group Policy settings to manage next generation protection](windows-defender-antivirus/use-group-policy-windows-defender-antivirus.md)
 ##### [Use PowerShell cmdlets to manage next generation protection](windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus.md)
 ##### [Use Windows Management Instrumentation (WMI) to manage next generation protection](windows-defender-antivirus/use-wmi-windows-defender-antivirus.md)
 ##### [Use the mpcmdrun.exe command line tool to manage next generation protection](windows-defender-antivirus/command-line-arguments-windows-defender-antivirus.md)
-
 
 ### [Microsoft Defender Advanced Threat Protection for Mac](microsoft-defender-atp/microsoft-defender-atp-mac.md)
 #### [What's New](microsoft-defender-atp/mac-whatsnew.md)
@@ -383,6 +383,7 @@
 
 ##### [Microsoft Defender ATP APIs Schema]()
 ###### [Supported Microsoft Defender ATP APIs](microsoft-defender-atp/exposed-apis-list.md)
+###### [Common REST API error codes](microsoft-defender-atp/common-errors.md)
 ###### [Advanced Hunting](microsoft-defender-atp/run-advanced-query-api.md)
 
 ###### [Alert]()
@@ -460,7 +461,7 @@
 ####### [Score methods and properties](microsoft-defender-atp/score.md)
 ####### [List exposure score by machine group](microsoft-defender-atp/get-machine-group-exposure-score.md)
 ####### [Get exposure score](microsoft-defender-atp/get-exposure-score.md)
-####### [Get device secure score](microsoft-defender-atp/get-device-secure-score.md)
+####### [Get machine secure score](microsoft-defender-atp/get-device-secure-score.md)
 
 ###### [Software]()
 ####### [Software methods and properties](microsoft-defender-atp/software.md)
@@ -472,7 +473,7 @@
 
 ###### [Vulnerability]()
 ####### [Vulnerability methods and properties](microsoft-defender-atp/vulnerability.md)
-####### [Get all vulnerabilities](microsoft-defender-atp/get-all-vulnerabilities.md)
+####### [List vulnerabilities](microsoft-defender-atp/get-all-vulnerabilities.md)
 ####### [Get vulnerability by Id](microsoft-defender-atp/get-vulnerability-by-id.md)
 ####### [List machines by vulnerability](microsoft-defender-atp/get-machines-by-vulnerability.md)
 
@@ -481,8 +482,8 @@
 ####### [List all recommendations](microsoft-defender-atp/get-all-recommendations.md)
 ####### [Get recommendation by Id](microsoft-defender-atp/get-recommendation-by-id.md)
 ####### [Get recommendation by software](microsoft-defender-atp/get-recommendation-software.md)
-####### [Get recommendation by machines](microsoft-defender-atp/get-recommendation-machines.md)
-####### [Get recommendation by vulnerabilities](microsoft-defender-atp/get-recommendation-vulnerabilities.md)
+####### [List machines by recommendation](microsoft-defender-atp/get-recommendation-machines.md)
+####### [List vulnerabilities by recommendation](microsoft-defender-atp/get-recommendation-vulnerabilities.md)
 
 ##### [How to use APIs - Samples]()
 ###### [Microsoft Flow](microsoft-defender-atp/api-microsoft-flow.md)
@@ -611,7 +612,7 @@
 #### [Network protection](microsoft-defender-atp/troubleshoot-np.md)
 #### [Attack surface reduction rules](microsoft-defender-atp/troubleshoot-asr.md)
  
-### [Troubleshoot next generation protection](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
+### [Troubleshoot next-generation protection](windows-defender-antivirus/troubleshoot-windows-defender-antivirus.md)
 
 
 

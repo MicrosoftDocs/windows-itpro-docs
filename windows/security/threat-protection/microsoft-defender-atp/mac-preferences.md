@@ -80,6 +80,18 @@ Specify whether the antivirus engine runs in passive mode. Passive mode has the 
 | **Possible values** | false (default) <br/> true |
 | **Comments** | Available in Microsoft Defender ATP version 100.67.60 or higher. |
 
+#### Exclusion merge policy
+
+Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | exclusionsMergePolicy |
+| **Data type** | String |
+| **Possible values** | merge (default) <br/> admin_only |
+| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
+
 #### Scan exclusions
 
 Specify entities excluded from being scanned. Exclusions can be specified by full paths, extensions, or file names.
@@ -138,9 +150,9 @@ Specify content excluded from being scanned by file extension.
 | **Possible values** | valid file extensions |
 | **Comments** | Applicable only if *$type* is *excludedFileExtension* |
 
-##### Name of excluded content
+##### Process excluded from the scan
 
-Specify content excluded from being scanned by file name.
+Specify a process for which all file activity is excluded from scanning. The process can be specified either by its name (e.g. `cat`) or full path (e.g. `/bin/cat`).
 
 |||
 |:---|:---|
@@ -159,6 +171,18 @@ Specify threats by name that are not blocked by Microsoft Defender ATP for Mac. 
 | **Domain** | `com.microsoft.wdav` |
 | **Key** | allowedThreats |
 | **Data type** | Array of strings |
+
+#### Disallowed threat actions
+
+Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | disallowedThreatActions |
+| **Data type** | Array of strings |
+| **Possible values** | allow (restricts users from allowing threats) <br/> restore (restricts users from restoring threats from the quarantine) |
+| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
 
 #### Threat type settings
 
@@ -196,6 +220,18 @@ Specify what action to take when a threat of the type specified in the preceding
 | **Key** | value |
 | **Data type** | String |
 | **Possible values** | audit (default) <br/> block <br/> off |
+
+#### Threat type settings merge policy
+
+Specify the merge policy for threat type settings. This can be a combination of administrator-defined and user-defined settings (`merge`) or only administrator-defined settings (`admin_only`). This setting can be used to restrict local users from defining their own settings for different threat types.
+
+|||
+|:---|:---|
+| **Domain** | `com.microsoft.wdav` |
+| **Key** | threatTypeSettingsMergePolicy |
+| **Data type** | String |
+| **Possible values** | merge (default) <br/> admin_only |
+| **Comments** | Available in Microsoft Defender ATP version 100.83.73 or higher. |
 
 ### Cloud-delivered protection preferences
 
@@ -371,6 +407,10 @@ The following configuration profile will:
 ### Intune profile
 
 ```XML
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
         <key>PayloadUUID</key>
         <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
         <key>PayloadType</key>
@@ -439,6 +479,8 @@ The following configuration profile will:
                 </dict>
             </dict>
         </array>
+    </dict>
+</plist>
 ```
 
 ## Full configuration profile example
@@ -482,10 +524,23 @@ The following configuration profile contains entries for all settings described 
                 <key>extension</key>
                 <string>pdf</string>
             </dict>
+            <dict>
+                <key>$type</key>
+                <string>excludedFileName</string>
+                <key>name</key>
+                <string>cat</string>
+            </dict>
         </array>
+        <key>exclusionsMergePolicy</key>
+        <string>merge</string>
         <key>allowedThreats</key>
         <array>
             <string>EICAR-Test-File (not a virus)</string>
+        </array>
+        <key>disallowedThreatActions</key>
+        <array>
+            <string>allow</string>
+            <string>restore</string>
         </array>
         <key>threatTypeSettings</key>
         <array>
@@ -502,6 +557,8 @@ The following configuration profile contains entries for all settings described 
                 <string>audit</string>
             </dict>
         </array>
+        <key>threatTypeSettingsMergePolicy</key>
+        <string>merge</string>
     </dict>
     <key>cloudService</key>
     <dict>
@@ -593,10 +650,23 @@ The following configuration profile contains entries for all settings described 
                             <key>extension</key>
                             <string>pdf</string>
                         </dict>
+                        <dict>
+                            <key>$type</key>
+                            <string>excludedFileName</string>
+                            <key>name</key>
+                            <string>cat</string>
+                        </dict>
                     </array>
+                    <key>exclusionsMergePolicy</key>
+                    <string>merge</string>
                     <key>allowedThreats</key>
                     <array>
                         <string>EICAR-Test-File (not a virus)</string>
+                    </array>
+                    <key>disallowedThreatActions</key>
+                    <array>
+                        <string>allow</string>
+                        <string>restore</string>
                     </array>
                     <key>threatTypeSettings</key>
                     <array>
@@ -613,6 +683,8 @@ The following configuration profile contains entries for all settings described 
                             <string>audit</string>
                         </dict>
                     </array>
+                    <key>threatTypeSettingsMergePolicy</key>
+                    <string>merge</string>
                 </dict>
                 <key>cloudService</key>
                 <dict>

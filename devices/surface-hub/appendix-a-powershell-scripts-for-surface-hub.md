@@ -617,7 +617,7 @@ try {
 catch
 {
     PrintError "Some dependencies are missing"
-    PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366"
+    PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to https://www.microsoft.com/download/details.aspx?id=39366"
     PrintError "Please install the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
     CleanupAndFail
 }
@@ -1104,7 +1104,7 @@ if ($fSfbIsOnline)
     }
     catch
     {
-        CleanupAndFail "To verify Skype for Business in online tenants you need the Lync Online Connector module from http://www.microsoft.com/download/details.aspx?id=39366"
+        CleanupAndFail "To verify Skype for Business in online tenants you need the Lync Online Connector module from https://www.microsoft.com/download/details.aspx?id=39366"
     }
 }
 else
@@ -1518,7 +1518,7 @@ if ($online)
     catch
     {
         PrintError "Some dependencies are missing"
-        PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to http://www.microsoft.com/download/details.aspx?id=39366"
+        PrintError "Please install the Windows PowerShell Module for Lync Online. For more information go to https://www.microsoft.com/download/details.aspx?id=39366"
         PrintError "Please install the Azure Active Directory module for PowerShell from https://go.microsoft.com/fwlink/p/?linkid=236297"
         CleanupAndFail
     }
