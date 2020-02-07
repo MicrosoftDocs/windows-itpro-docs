@@ -77,7 +77,7 @@ You can use existing System Center Configuration Manager functionality to create
 > 
 > This can be accomplished by creating a detection rule checking if the "OnboardingState" registry value (of type REG_DWORD) = 1.
 > This registry value is located under "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status".
-Refer to the following ConfigMgr article for more information: https://docs.microsoft.com/en-us/configmgr/apps/deploy-use/create-applications#bkmk_detect-rule
+Refer to the following ConfigMgr article for more information: https://docs.microsoft.com/configmgr/apps/deploy-use/create-applications#bkmk_detect-rule
 
 
 ### Configure sample collection settings
