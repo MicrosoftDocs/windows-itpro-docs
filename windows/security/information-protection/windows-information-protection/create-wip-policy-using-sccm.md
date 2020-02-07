@@ -25,7 +25,7 @@ ms.date: 01/09/2020
 - Windows 10 Mobile, version 1607 and later
 - Microsoft Endpoint Configuration Manager
 
-Configuration Manager helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection mode, and how to find enterprise data on the network.
+Microsoft Endpoint Configuration Manager helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection mode, and how to find enterprise data on the network.
 
 ## Add a WIP policy
 After you’ve installed and set up Configuration Manager for your organization, you must create a configuration item for WIP, which in turn becomes your WIP policy.
@@ -46,7 +46,7 @@ The **Create Configuration Item Wizard** starts.
 
 3.  On the **General Information screen**, type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
 
-4.  In the **Specify the type of configuration item you want to create** area, pick the option that represents whether you use Configuration Manager for device management, and then click **Next**.
+4.  In the **Specify the type of configuration item you want to create** area, pick the option that represents whether you use Microsoft Endpoint Configuration Manager for device management, and then click **Next**.
 
     -   **Settings for devices managed with the Configuration Manager client:** Windows 10
 
@@ -65,7 +65,8 @@ The **Create Configuration Item Wizard** starts.
 The **Configure Windows Information Protection settings** page appears, where you'll configure your policy for your organization.
 
 ## Add app rules to your policy
-During the policy-creation process in Configuration Manager, you can choose the apps you want to give access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
+
+During the policy-creation process in Microsoft Endpoint Configuration Manager, you can choose the apps you want to give access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
 
 The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed Windows desktop app, or an AppLocker policy file.
 
@@ -298,9 +299,10 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
         </RuleCollection>
     </AppLockerPolicy>
     ```
-12. After you’ve created your XML file, you need to import it by using Configuration Manager.
+12. After you’ve created your XML file, you need to import it by using Microsoft Endpoint Configuration Manager.
 
 **To import your Applocker policy file app rule using Configuration Manager**
+
 1.  From the **App rules** area, click **Add**.
 
     The **Add app rule** box appears.
