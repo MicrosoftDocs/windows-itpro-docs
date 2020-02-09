@@ -111,7 +111,7 @@ The Advanced Recovery Companion is a new app in Microsoft Store restore the oper
 
 1.	Connect the HoloLens 2 to a PC with Advanced Recovery Companion installed.
 1.	Press and hold the **Volume Up and Power buttons** until the device reboots.  Release the Power button, but continue to hold the Volume Up button until the third LED is lit.
-1.	The device should be visible in **Device Manager** as a **Microsoft HoloLens Recovery** device:
+1.	The device should be visible in **Device Manager** as a **Microsoft HoloLens Recovery** device.
 1.	Launch Advanced Recovery Companion, and follow the on-screen prompts to reflash the OS to the HoloLens 2.
 
 ### HoloLens (1st gen)
