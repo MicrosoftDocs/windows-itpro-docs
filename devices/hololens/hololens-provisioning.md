@@ -14,46 +14,47 @@ manager: dansimp
 
 # Configure HoloLens using a provisioning package
 
+[Windows provisioning](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) makes it easy for IT administrators to configure end-user devices without imaging. Windows Configuration Designer is a tool for configuring images and runtime settings which are then built into provisioning packages.
 
+Some of the HoloLens configurations that you can apply in a provisioning package:
 
-[Windows provisioning](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages) makes it easy for IT administrators to configure end-user devices without imaging. Windows Configuration Designer is a tool for configuring images and runtime settings which are then built into provisioning packages. 
-
-Some of the HoloLens configurations that you can apply in a provisioning package: 
-- Upgrade to Windows Holographic for Business
+- Upgrade to Windows Holographic for Business [here](hololens1-upgrade-enterprise.md)
 - Set up a local account
 - Set up a Wi-Fi connection
 - Apply certificates to the device
-
-To create provisioning packages, you must install Windows Configuration Designer [from Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22) or [from the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). If you install Windows Configurations Designer from the Windows ADK, select **Configuration Designer** from the **Select the features you want to install** dialog box.
-
-
-
-<span id="wizard" />
-## Create a provisioning package for HoloLens using the HoloLens wizard
+- Enable Developer Mode
+- Configure Kiosk mode (Detailed instructions for configuring kiosk mode can be found [here](hololens-kiosk.md#setup-kiosk-mode-using-a-provisioning-package-windows-10-version-1803).
 
 The HoloLens wizard helps you configure the following settings in a provisioning package:
 
 - Upgrade to the enterprise edition
 
     >[!NOTE]
-    >Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
+    > This should only be used for HoloLens 1st Gen devices. Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
 
 - Configure the HoloLens first experience (OOBE)
-- Configure Wi-Fi network 
+- Configure Wi-Fi network
 - Enroll device in Azure Active Directory or create a local account
 - Add certificates
 - Enable Developer Mode
+- Configure kiosk mode. (Detailed instructions for configuring kiosk mode can be found [here](hololens-kiosk.md#setup-kiosk-mode-using-a-provisioning-package-windows-10-version-1803)).
 
 >[!WARNING]
 >You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
 
-Provisioning packages can include management instructions and policies, customization of network connections and policies, and more. 
+Provisioning packages can include management instructions and policies, customization of network connections and policies, and more.
 
 > [!TIP]
 > Use the desktop wizard to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.
 
+## Steps for Creating Provisioning Packages
 
-### Create the provisioning package
+### 1. Install Windows Configuration Designer on your PC. (There are two ways to do this).
+
+1. **Option 1:** [From Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22)
+2. **Option 2:** [From the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). If you install Windows Configurations Designer from the Windows ADK, select **Configuration Designer** from the **Select the features you want to install** dialog box.
+
+### 2. Create the Provisioning Package
 
 Use the Windows Configuration Designer tool to create a provisioning package.
 
@@ -61,9 +62,9 @@ Use the Windows Configuration Designer tool to create a provisioning package.
 
 2. Click **Provision HoloLens devices**.
 
-   ![ICD start options](images/icd-create-options-1703.png)   
+   ![ICD start options](images/icd-create-options-1703.png)
 
-3. Name your project and click **Finish**. 
+3. Name your project and click **Finish**.
 
 4. Read the instructions on the **Getting started** page and select **Next**. The pages for desktop provisioning will walk you through the following steps.
   
@@ -71,7 +72,6 @@ Use the Windows Configuration Designer tool to create a provisioning package.
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
 ### Configure settings
-
 
 <table>
 <tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Browse to and select the enterprise license file to upgrade the HoloLens edition.</br></br>You can also toggle <strong>Yes</strong> or <strong>No</strong> to hide parts of the first experience.</br></br>To set up the device without the need to connect to a Wi-Fi network, toggle <strong>Skip Wi-Fi setup</strong> to <strong>On</strong>.</br></br>Select a region and timezone in which the device will be used. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
@@ -84,10 +84,7 @@ Use the Windows Configuration Designer tool to create a provisioning package.
 
 After you're done, click **Create**. It only takes a few seconds. When the package is built, the location where the package is stored is displayed as a hyperlink at the bottom of the page.
 
- **Next step**: [How to apply a provisioning package](#apply)   
-
-
-## Create a provisioning package for HoloLens using advanced provisioning
+### 3. Create a provisioning package for HoloLens using advanced provisioning
 
 >[!NOTE]
 >Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens1-upgrade-enterprise.md).
@@ -106,7 +103,7 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
     >[!IMPORTANT]
     >(For Windows 10, version 1607 only) If you create a local account in the provisioning package, you must change the password using the **Settings** app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in. If the user account is locked out, you must [perform a full device recovery](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery).
 
-8. On the **File** menu, click **Save**. 
+8. On the **File** menu, click **Save**.
 
 4. Read the warning that project files may contain sensitive information, and click **OK**.
 
@@ -135,7 +132,7 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
 9. Click **Build** to start building the package. The project information is displayed in the build page and the progress bar indicates the build status.
 
-10. When the build completes, click **Finish**. 
+10. When the build completes, click **Finish**.
 
 <span id="apply" />
 ## Apply a provisioning package to HoloLens during setup
@@ -157,17 +154,17 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 >[!NOTE]
 >If the device was purchased before August 2016, you will need to sign into the device with a Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package.
 
-## Apply a provisioning package to HoloLens after setup
+### 4. Apply a provisioning package to HoloLens after setup
 
 >[!NOTE]
 >Windows 10, version 1809 only
 
 On your PC:
-1. Create a provisioning package as described at [Create a provisioning package for HoloLens using the HoloLens wizard](hololens-provisioning.md). 
-2. Connect the HoloLens device via USB to a PC. HoloLens will show up as a device in File Explorer on the PC. 
-3. Drag and drop the provisioning package to the Documents folder on the HoloLens. 
+1. Create a provisioning package as described at [Create a provisioning package for HoloLens using the HoloLens wizard](hololens-provisioning.md).
+2. Connect the HoloLens device via USB to a PC. HoloLens will show up as a device in File Explorer on the PC.
+3. Drag and drop the provisioning package to the Documents folder on the HoloLens.
 
-On your HoloLens: 
+On your HoloLens:
 1. Go to **Settings > Accounts > Access work or school**. 
 2. In **Related Settings**, select **Add or remove a provisioning package**.
 3. On the next page, select **Add a package** to launch the file picker and select your provisioning package. If the folder is empty, make sure you select **This Device** and select **Documents**.
@@ -192,9 +189,4 @@ In Windows Configuration Designer, when you create a provisioning package for Wi
 >[!NOTE]
 >App installation (**UniversalAppInstall**) using a provisioning package is not currently supported for HoloLens.
 
-
-
-
-
-
-
+## Next Step: [Enroll your device](hololens-enroll-mdm.md)
