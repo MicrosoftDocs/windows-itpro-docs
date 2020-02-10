@@ -14,7 +14,7 @@ ms.audience: itpro
 ---
 # Microsoft Surface Dock Firmware Update
 
-This article explains how to use Microsoft Surface Dock Firmware Update to update Surface Dock firmware. When installed on your Surface device, it will update any Surface Dock attached to your Surface device. The file is released in the following naming format: **Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI** (ex: Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) and installs by default to C:\Program Files\SurfaceUpdate.
+This article explains how to use Microsoft Surface Dock Firmware Update to update Surface Dock firmware. When installed on your Surface device, it will update any Surface Dock attached to your Surface device.
 
 Microsoft Surface Dock Firmware Update supersedes the earlier Microsoft Surface Dock Updater tool, previously available for download as part of Surface Tools for IT. It was named Surface_Dock_Updater_vx.xx.xxx.x.msi (where x indicates the version of the tool). The earlier tool has been retired, is no longer available for download, and should not be used.
 
@@ -23,9 +23,7 @@ Microsoft Surface Dock Firmware Update supersedes the earlier Microsoft Surface 
 
 ## Monitor the Surface Dock Firmare Update
 
->The procedures in this section provide an overview of how to monitor installation of the firmware update. This section is optional.
-
-For more detailed information about monitoring the update process, see the following sections in this article: 
+The procedures in this section provide . This section is optional and provides an overview of how to monitor installation of the firmware update. For more detailed information about monitoring the update process, see the following sections in this article: 
   - [How to verify completion of firmware update](#how-to-verify-completion-of-the-firmware-update)
   - [Event logging](#event-logging)
   - [Troubleshooting tips](#troubleshooting-tips)
@@ -39,7 +37,7 @@ To monitor the update:
   ```cmd
   Reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters"
   ```
-3. Install the update as described in the next section.
+3. Install the update as described in the [next section](#install-the-surface-dock-firmware-update) of this article.
 4. Event 2007 with the following text indicates a successful update: **Firmware update finished. hr=0 DriverTelementry EventCode = 2007**. 
   - If the update is not successful, then event ID 2007 will be displayed as an **Error** event rather than **Information**. Additionally, the version reported in the Windows Registry will not be current.
 5. When the update is complete, you will see the following DWORD values will be displayed in the Windows Registry:
@@ -48,15 +46,19 @@ To monitor the update:
 
 >Note: If you see "The description for Event ID xxxx from source SurfaceDockFwUpdate cannot be found" in event text, this is expected and can be ignored.
 
-## Run the Surface Dock firmware update
+## Install the Surface Dock Firmware Update
 
 This section describes how to install the firmware update.
 
 1. Download and install [Microsoft Surface Dock Firmware Update](https://www.microsoft.com/download/details.aspx?id=46703).
   - The update requires a Surface device running Windows 10, version 1803 or later.
-  - Installing the MSI file may prompt you to restart Surface. However, restarting is not required to perform the update.
+  - Installing the MSI file might prompt you to restart Surface. However, restarting is not required to perform the update.
 
-2. Disconnect your Surface device from the Surface Dock (using the power adapter), wait 5 seconds, and then reconnect. The Surface Dock Firmware Update will update the dock silently in background. The process can take a few minutes to complete and will continue even if interrupted. 
+2. Disconnect your Surface device from the Surface Dock (using the power adapter), wait ~5 seconds, and then reconnect. The Surface Dock Firmware Update will update the dock silently in background. The process can take a few minutes to complete and will continue even if interrupted. 
+
+## Install location
+
+The file is released with the following naming format: **Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI** (ex: Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) and installs by default to C:\Program Files\SurfaceUpdate.
 
 ## Network deployment
 
