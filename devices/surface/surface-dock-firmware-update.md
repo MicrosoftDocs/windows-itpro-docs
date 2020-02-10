@@ -16,14 +16,14 @@ ms.audience: itpro
 
 This article explains how to use Microsoft Surface Dock Firmware Update to update Surface Dock firmware. When installed on your Surface device, it will update any Surface Dock attached to your Surface device.
 
-Microsoft Surface Dock Firmware Update supersedes the earlier Microsoft Surface Dock Updater tool, previously available for download as part of Surface Tools for IT. It was named Surface_Dock_Updater_vx.xx.xxx.x.msi (where x indicates the version of the tool). The earlier tool has been retired, is no longer available for download, and should not be used.
+Microsoft Surface Dock Firmware Update supersedes the earlier Microsoft Surface Dock Updater tool, previously available for download as part of Surface Tools for IT. It was named Surface_Dock_Updater_vx.xx.xxx.x.msi (where x indicates the version number). The earlier tool is no longer available for download and should not be used.
 
 > [!IMPORTANT]
 >Microsoft periodically releases new versions of Surface Dock Firmware Update. The MSI file is not self-updating. If you have deployed the MSI to Surface devices and a new version of the firmware is released, you will need to deploy the new version.
 
 ## Monitor the Surface Dock Firmare Update
 
-The procedures in this section provide . This section is optional and provides an overview of how to monitor installation of the firmware update. For more detailed information about monitoring the update process, see the following sections in this article: 
+This section is optional and provides an overview of how to monitor installation of the firmware update. For more detailed information about monitoring the update process, see the following sections in this article: 
   - [How to verify completion of firmware update](#how-to-verify-completion-of-the-firmware-update)
   - [Event logging](#event-logging)
   - [Troubleshooting tips](#troubleshooting-tips)
@@ -55,10 +55,6 @@ This section describes how to install the firmware update.
   - Installing the MSI file might prompt you to restart Surface. However, restarting is not required to perform the update.
 
 2. Disconnect your Surface device from the Surface Dock (using the power adapter), wait ~5 seconds, and then reconnect. The Surface Dock Firmware Update will update the dock silently in background. The process can take a few minutes to complete and will continue even if interrupted. 
-
-## Install location
-
-The file is released with the following naming format: **Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI** (ex: Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) and installs by default to C:\Program Files\SurfaceUpdate.
 
 ## Network deployment
 
@@ -138,6 +134,10 @@ Events are logged in the Application Event Log.  Note:  Earlier versions of this
 - Connect the Surface Dock to a different device to see if it is able to update the dock.
 
 ## Versions reference
+
+>[!NOTE]
+>The installation file is released with the following naming format: **Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI** (ex: Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) and installs by default to C:\Program Files\SurfaceUpdate.
+
 ### Version 1.42.139 
 *Release Date: September 18 2019*
 
