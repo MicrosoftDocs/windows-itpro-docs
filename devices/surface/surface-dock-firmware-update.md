@@ -40,7 +40,7 @@ To monitor the update:
 3. Install the update as described in the [next section](#install-the-surface-dock-firmware-update) of this article.
 4. Event 2007 with the following text indicates a successful update: **Firmware update finished. hr=0 DriverTelementry EventCode = 2007**. 
   - If the update is not successful, then event ID 2007 will be displayed as an **Error** event rather than **Information**. Additionally, the version reported in the Windows Registry will not be current.
-5. When the update is complete, you will see the following DWORD values will be displayed in the Windows Registry:
+5. When the update is complete, updated DWORD values will be displayed in the Windows Registry, corresponding to the current version of the tool. See the [Versions reference](#versions-reference) section in this article for details. For example:
   - Component10CurrentFwVersion 0x04ac3970 (78395760)
   - Component20CurrentFwVersion 0x04915a70 (76634736)
 
