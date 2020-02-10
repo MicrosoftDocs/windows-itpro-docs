@@ -102,11 +102,11 @@ You will [create an XML file](#setup-kiosk-mode-using-a-provisioning-package-win
 
 ## Set up kiosk mode using Microsoft Intune or MDM (Windows 10, version 1803)
 
-For HoloLens devices that are managed by Microsoft Intune, you [create a device profile](https://docs.microsoft.com/intune/device-profile-create) and configure the [Kiosk settings](https://docs.microsoft.com/intune/kiosk-settings).
+For HoloLens devices that are managed by Microsoft Intune, directions can be found [here](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune).
 
 For other MDM services, check your provider's documentation for instructions. If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, [create an XML file that defines the kiosk configuration](#create-a-kiosk-configuration-xml-file), and make sure to include the [Start layout](#start-layout-for-a-provisioning-package) in the XML file.  
 
-## Setup kiosk mode using a provisioning package (Windows 10, version 1803)
+## Set up kiosk mode using a provisioning package (Windows 10, version 1803)
 
 Process:
 1. [Create an XML file that defines the kiosk configuration.](#create-a-kiosk-configuration-xml-file)
@@ -155,7 +155,7 @@ Use the following snippet in your kiosk configuration XML to enable the **Guest*
 
 13. On the **Provisioning package security** page, do not select **Enable package encryption** or provisioning will fail on HoloLens. You can choose to enable package signing.
 
-      -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Browse** and choosing the certificate you want to use to sign the package.
+      - **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Browse** and choosing the certificate you want to use to sign the package.
 
 14. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Configuration Designer uses the project folder as the output location. Optionally, you can click **Browse** to change the default output location.
 
@@ -181,7 +181,7 @@ Use the following snippet in your kiosk configuration XML to enable the **Guest*
 
 ## Set up kiosk mode using the Windows Device Portal (Windows 10, version 1607 and version 1803) 
 
-1. [Set up the HoloLens to use the Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC. 
+1. [Set up the HoloLens to use the Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC.
 
     >[!IMPORTANT]
     >When you set up HoloLens to use the Device Portal, you must enable **Developer Mode** on the device. **Developer Mode** on a device that has been upgraded to Windows Holographic for Business enables side-loading of apps, which risks the installation of apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable **Developer Mode** using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). [Learn more about Developer Mode.](https://msdn.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
@@ -202,17 +202,14 @@ Use the following snippet in your kiosk configuration XML to enable the **Guest*
 
 5. Select **Enable Kiosk Mode**, choose an app to run when the device starts, and click **Save**.
 
-
 ## Kiosk app recommendations
 
 - You cannot select Microsoft Edge, Microsoft Store, or the Shell app as a kiosk app.
 - We recommend that you do **not** select the Settings app and the File Explorer app as a kiosk app.
-- You can select Cortana as a kiosk app. 
+- You can select Cortana as a kiosk app.
 - To enable photo or video capture, the HoloCamera app must be enabled as a kiosk app.
 
 ## More information
-
-
 
 Watch how to configure a kiosk in a provisioning package.
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
