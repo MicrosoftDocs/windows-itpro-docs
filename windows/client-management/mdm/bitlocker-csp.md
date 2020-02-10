@@ -195,6 +195,7 @@ ADMX Info:
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
+
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
@@ -279,6 +280,7 @@ ADMX Info:
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
+
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
@@ -382,6 +384,7 @@ ADMX Info:
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
+
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
@@ -458,6 +461,7 @@ ADMX Info:
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
+
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
@@ -546,6 +550,7 @@ ADMX Info:
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
+
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
@@ -642,6 +647,7 @@ ADMX Info:
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
+
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
@@ -746,6 +752,7 @@ ADMX Info:
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
+
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
@@ -814,6 +821,7 @@ ADMX Info:
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
+
 > [!TIP]
 > For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
