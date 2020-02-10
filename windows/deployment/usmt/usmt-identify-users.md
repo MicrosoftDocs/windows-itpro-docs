@@ -49,8 +49,8 @@ USMT provides several options to migrate multiple users on a single computer. Th
 
 - [Specifying users.](#bkmk-8) You can specify which users to migrate with the **/all**, **/ui**, **/uel**, and **/ue** options with both the ScanState and LoadState command-line tools.
 
-  > [!IMPORTANT]  
-  > The **/uel** option excludes users based on the **LastModified** date of the Ntuser.dat file. The **/uel** option is not valid in offline migrations.
+> [!IMPORTANT]  
+> The **/uel** option excludes users based on the **LastModified** date of the Ntuser.dat file. The **/uel** option is not valid in offline migrations.
 
 - [Moving users to another domain.](#bkmk-8) You can move user accounts to another domain using the **/md** option with the LoadState command-line tool.
 
