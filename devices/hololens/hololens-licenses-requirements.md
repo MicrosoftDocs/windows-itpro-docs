@@ -33,7 +33,7 @@ You may need to upgrade your HoloLens 1st Gen Device to Windows Holographic for 
  If so, you will need to do the following:
 
 - Acquire a HoloLens Enterprise license XML file
-- Apply the XML file to the HoloLens. You can do this through a [Provisioning package](hololens-provisioning.md) or through your [Mobile Device Manager](https://docs.microsoft.com/en-us/intune/configuration/holographic-upgrade)
+- Apply the XML file to the HoloLens. You can do this through a [Provisioning package](hololens-provisioning.md) or through your [Mobile Device Manager](https://docs.microsoft.com/intune/configuration/holographic-upgrade)
 
 Some of the HoloLens configurations you can apply in a provisioning package:
 

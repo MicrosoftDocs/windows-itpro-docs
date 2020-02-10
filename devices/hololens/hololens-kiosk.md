@@ -14,11 +14,9 @@ manager: dansimp
 
 # Set up HoloLens in kiosk mode
 
-
-
 In Windows 10, version 1803, you can configure your HoloLens devices to run as multi-app or single-app kiosks. You can also configure guest access for a HoloLens kiosk device by [designating a SpecialGroup account in your XML file.](#add-guest-access-to-the-kiosk-configuration-optional)
 
-When HoloLens is configured as a multi-app kiosk, only the allowed apps are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
+When HoloLens is configured as a multi-app kiosk, only the allowed apps are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access.
 
 Single-app kiosk mode starts the specified app when the user signs in, and restricts the user's ability to launch new apps or change the running app. When single-app kiosk mode is enabled for HoloLens, the [start gestures](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) (including [Bloom](https://docs.microsoft.com/hololens/hololens1-basic-usage) on HoloLens (1st Gen)) and Cortana are disabled, and placed apps aren't shown in the user's surroundings. 
 
@@ -41,14 +39,14 @@ The [AssignedAccess Configuration Service Provider (CSP)](https://docs.microsoft
 
 For HoloLens devices running Windows 10, version 1803, there are three methods that you can use to configure the device as a kiosk:
 - You can use [Microsoft Intune or other mobile device management (MDM) service](#set-up-kiosk-mode-using-microsoft-intune-or-mdm-windows-10-version-1803) to configure single-app and multi-app kiosks.
-- You can [use a provisioning package](#setup-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) to configure single-app and multi-app kiosks.
+- You can [use a provisioning package](#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) to configure single-app and multi-app kiosks.
 - You can [use the Windows Device Portal](#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) to configure single-app kiosks. This method is recommended only for demonstrations, as it requires that developer mode be enabled on the device.
 
 For HoloLens devices running Windows 10, version 1607, you can [use the Windows Device Portal](#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) to configure single-app kiosks.
 
 ## Start layout for HoloLens
 
-If you use [MDM, Microsoft Intune](#set-up-kiosk-mode-using-microsoft-intune-or-mdm-windows-10-version-1803), or a [provisioning package](#setup-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a placeholder Start layout. 
+If you use [MDM, Microsoft Intune](#set-up-kiosk-mode-using-microsoft-intune-or-mdm-windows-10-version-1803), or a [provisioning package](#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) to configure a multi-app kiosk, the procedure requires a Start layout. Start layout customization isn't supported in Holographic for Business, so you'll need to use a placeholder Start layout. 
 
 >[!NOTE]
 >Because a single-app kiosk launches the kiosk app when a user signs in, there is no Start screen displayed.
@@ -58,7 +56,7 @@ If you use [MDM, Microsoft Intune](#set-up-kiosk-mode-using-microsoft-intune-or-
 Save the following sample as an XML file. You can use this file when you configure the multi-app kiosk in Microsoft Intune (or in another MDM service that provides a kiosk profile).
 
 >[!NOTE]
->If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, use the [Start layout instructions for a provisioning package](#start-layout-for-a-provisioning-package). 
+>If you need to use a custom setting and full XML configuration to set up a kiosk in your MDM service, use the [Start layout instructions for a provisioning package](#start-layout-for-a-provisioning-package).
 
 ```xml
 <LayoutModificationTemplate
@@ -72,13 +70,13 @@ Save the following sample as an XML file. You can use this file when you configu
         <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="placeholderpackagename_kzf8qxf38zg5c!App" />
       </AppendGroup>      
     </RequiredStartGroups>
-  </RequiredStartGroupsCollection> 
+  </RequiredStartGroupsCollection>
  </LayoutModificationTemplate>
 ```
 
 ### Start layout for a provisioning package
 
-You will [create an XML file](#setup-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) to define the kiosk configuration to be included in a provisioning package. Use the following sample in the `StartLayout` section of your XML file.
+You will [create an XML file](#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803) to define the kiosk configuration to be included in a provisioning package. Use the following sample in the `StartLayout` section of your XML file.
 
 ```xml
 <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->

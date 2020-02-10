@@ -175,7 +175,7 @@ For other MDM services, check your provider's documentation for instructions. If
 
 ## Certificates and Authentication
 
-Certificates can be deployed via you MDM (see "certificates" in the [MDM Section](hololens-commercial-infrastructure.md#mobile-device-manager-guidance##)). Certificates can also be deployed to the HoloLens through package provisioning. Please see [HoloLens Provisioning](hololens-provisioning.md) for additional information.
+Certificates can be deployed via you MDM (see "certificates" in the [MDM Section](hololens-commercial-infrastructure.md#mobile-device-manager-guidance)). Certificates can also be deployed to the HoloLens through package provisioning. Please see [HoloLens Provisioning](hololens-provisioning.md) for additional information.
 
 ### Additional Intune Quick Links
 

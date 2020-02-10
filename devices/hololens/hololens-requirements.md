@@ -32,7 +32,7 @@ Before deploying the HoloLens in your environment, it is important to first dete
 
 ### Type of Features
 
-Your feature requirements will determine which HoloLens you need. One popular feature that we see deployed in customer environments frequently is Kiosk Mode. A list of HoloLens key features, and the editions of HoloLens that support them, can be found [here](hololens-commercial-features).
+Your feature requirements will determine which HoloLens you need. One popular feature that we see deployed in customer environments frequently is Kiosk Mode. A list of HoloLens key features, and the editions of HoloLens that support them, can be found [here](hololens-commercial-features.md).
 
 **What is Kiosk Mode?**
 
