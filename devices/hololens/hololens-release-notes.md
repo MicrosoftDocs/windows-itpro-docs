@@ -19,6 +19,7 @@ appliesto:
 # HoloLens Release Notes
 
 ## HoloLens 2
+
 > [!Note]
 > HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
@@ -85,7 +86,7 @@ Windows 10, version 1803, is the first feature update to Windows Holographic for
 - Previously, you could only verify that upgrade license for Commercial Suite had been applied to your HoloLens device by checking to see if VPN was an available option on the device. Now, **Settings** > **System** will display **Windows Holographic for Business** after the upgrade license is applied. [Learn how to unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md).
 
 - You can view the operating system build number in device properties in the File Explorer app and in the [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq).
-- Provisioning a HoloLens device is now easier with the new **Provision HoloLens devices** wizard in the Windows Configuration Designer tool. In the wizard, you can configure the setup experience and network connections, set developer mode, and obtain bulk Azure AD tokens. [Learn how to use the simple provisioning wizard for HoloLens](hololens-provisioning.md#wizard).
+- Provisioning a HoloLens device is now easier with the new **Provision HoloLens devices** wizard in the Windows Configuration Designer tool. In the wizard, you can configure the setup experience and network connections, set developer mode, and obtain bulk Azure AD tokens. [Learn how to use the simple provisioning wizard for HoloLens](hololens-provisioning.md#provisioning-package-holoLens-wizard).
 
     ![Provisioning HoloLens devices](images/provision-hololens-devices.png)
 
@@ -97,7 +98,7 @@ Windows 10, version 1803, is the first feature update to Windows Holographic for
 
 - Previously, after you signed in to the device with an Azure Active Directory (Azure AD) account, you then had to **Add work access** in **Settings** to get access to corporate resources. Now, you sign in with an Azure AD account and enrollment happens automatically.
 
-- Before you sign in, you can choose the network icon below the password field to choose a different Wi-Fi network to connect to. You can also connect to a guest network, such as at a hotel, conference center, or business. 
+- Before you sign in, you can choose the network icon below the password field to choose a different Wi-Fi network to connect to. You can also connect to a guest network, such as at a hotel, conference center, or business.
 
 - You can now easily [share HoloLens with multiple people](hololens-multiple-users.md) using Azure AD accounts.
 

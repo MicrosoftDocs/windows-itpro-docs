@@ -25,7 +25,7 @@ Some of the HoloLens configurations that you can apply in a provisioning package
 - Enable Developer Mode
 - Configure Kiosk mode (Detailed instructions for configuring kiosk mode can be found [here](hololens-kiosk.md#set-up-kiosk-mode-using-a-provisioning-package-windows-10-version-1803).
 
-## Create a provisioning package for HoloLens using the HoloLens wizard
+## Provisioning package HoloLens wizard
 
 The HoloLens wizard helps you configure the following settings in a provisioning package:
 
