@@ -997,10 +997,14 @@ Supported values are:
 <!--/SupportedValues-->
 <!--/Policy-->
 <!--Policy-->
+
 <a href="" id="rotaterecoverypasswords"></a>**RotateRecoveryPasswords**  
+
 <!--Description-->
+
 This setting refreshes all recovery passwords for OS and fixed drives (removable drives are not included so they can be shared between users). All recovery passwords for all drives will be refreshed and only one password per volume is retained. In case of errors, an error code will be returned so that server can take appropriate action to remediate.
 <!--/Description-->
+
 The client will generate a new recovery password. The client will use the existing API in Azure AD to upload the new recovery key and retry on failure.  
 
 Policy type is Execute. When “Execute Policy” is pushed, the client sets the status as Pending and initiates an asynchronous rotation operation. After refresh is complete, pass or fail status is updated. The client will not retry, but if needed, the server can re-issue the execute request. 
@@ -1074,10 +1078,13 @@ Supported values:
 Value type is int. Supported operation is Get.
 <!--/Policy-->
 <!--Policy-->
+
 <a href="" id="status-rotaterecoverypasswordsstatus"></a>**Status/RotateRecoveryPasswordsStatus**  
 <!--Description-->
+
 This node reports the status of RotateRecoveryPasswords request. 
 <!--/Description-->
+
 Status code can be one of the following:  
 
 - 2 – Not started
@@ -1109,6 +1116,7 @@ Status code can be one of the following:
 Value type is int. Supported operation is Get.
 <!--/Policy-->
 <!--Policy-->
+
 <a href="" id="status-rotaterecoverypasswordsrequestid"></a>**Status/RotateRecoveryPasswordsRequestID**  
 <!--Description-->
 This node reports the RequestID corresponding to RotateRecoveryPasswordsStatus. 
