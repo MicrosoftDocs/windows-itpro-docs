@@ -22,6 +22,13 @@ appliesto:
 > [!Note]
 > HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
+### February Update - build 18362.1052
+
+- Temporarily disabled the HolographicSpace.UserPresence API for Unity applications to avoid an issue which causes some apps to pause when the visor is flipped up, even if the setting to run in the background is enabled.
+- Fixed a random HUP crash cased by hand tracking, in which user will notice an UI freeze then back to shell after several seconds.
+- We made an improvement in hand tracking so that while poking using index finger, the upper part of that finger will be less likely to curl unexpectedly.
+- Improved reliability of head tracking, spatial mapping, and other runtimes.
+
 ### January Update - build 18362.1043
 
 - Stability improvements for exclusive apps when working with the HoloLens 2 emulator.
