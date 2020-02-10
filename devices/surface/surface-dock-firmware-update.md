@@ -44,7 +44,8 @@ To monitor the update:
   - Component10CurrentFwVersion 0x04ac3970 (78395760)
   - Component20CurrentFwVersion 0x04915a70 (76634736)
 
->Note: If you see "The description for Event ID xxxx from source SurfaceDockFwUpdate cannot be found" in event text, this is expected and can be ignored.
+>[!TIP]
+>If you see "The description for Event ID xxxx from source SurfaceDockFwUpdate cannot be found" in event text, this is expected and can be ignored.
 
 ## Install the Surface Dock Firmware Update
 
