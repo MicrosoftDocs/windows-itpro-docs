@@ -39,7 +39,7 @@ The following broad categories of features can be configured:
 
 The topics in this section describe how to perform key tasks when configuring Windows Defender Antivirus. Each topic includes instructions for the applicable configuration tool (or tools).
 
-You can also review the [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md) topic for an overview of each tool and links to further help.
+You can also review the [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md) topic for an overview of each tool and links to further help. 
 
 ## In this section
 Topic | Description

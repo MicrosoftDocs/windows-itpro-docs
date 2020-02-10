@@ -43,7 +43,7 @@ The Microsoft Defender ATP solution is built on top of an integration-ready plat
 
 Microsoft Defender ATP exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Microsoft Defender ATP capabilities.
 
-![Image of available API and integration in Microsoft Defender ATP](images/mdatp-apis.png)
+![Image of available API and integration in Microsoft Defender ATP](images/mdatp-apis.png)  
 
 The Microsoft Defender ATP APIs can be grouped into three:
 - Microsoft Defender ATP APIs 

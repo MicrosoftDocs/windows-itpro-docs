@@ -23,7 +23,7 @@ manager: dansimp
 
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-You can use Group Policy, PowerShell, and Windows Management Instrumentation (WMI) to configure Windows Defender Antivirus scans.
+You can use Group Policy, PowerShell, and Windows Management Instrumentation (WMI) to configure Windows Defender Antivirus scans. 
 
 ## In this section
 
