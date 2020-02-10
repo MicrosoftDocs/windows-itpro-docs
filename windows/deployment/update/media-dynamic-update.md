@@ -42,7 +42,7 @@ You can obtain Dynamic Update content from the [Microsoft Update Catalog](https:
 
 ![Table with columns labeled Title, Products, Classification, Last Updated, Version, and Size and four rows listing various dynamic updates and associated KB articles](images/update-catalog.png)
 
-The various Dynamic Update components might not all be present in the results from a single search, so you might have to search with different keywords to find all of the components. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows in <em>bold</em> the key items to search for or look for in the results. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
+The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the s. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows in <em>bold</em> the key items to search for or look for in the results. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
 
 
 |To find this Dynamic Update content, search for or check the results here-->  |Title  |Product  |Description (select the **Title** link to see **Details**)  |
@@ -167,12 +167,12 @@ Get-ChildItem -Path $MEDIA_NEW_PATH -Recurse | Where-Object { -not $_.PSIsContai
 ```
 ### Update WinRE
 
-The script assumes that only a single edition is being updated, indicated by Index = 1 (Windows 10 Education Edition). Then the script mounts the image, saves Winre.wim to the working folder, and mounts it. It then applies servicing stack Dynamic Update, since its components are used for updating other components. Since the script is optionally adding Japanese, it adds the language pack to the image, and installs the Japanese versions of all optional packages already installed in Winre.wim. Then, it applies the Safe OS Dynamic Update package.
+The script assumes that only a single edition is being updated, indicated by Index = 1 (Windows 10 Education Edition). Then the script mounts the image, saves Winre.wim to the working folder, and mounts it. It then applies servicing stack Dynamic Update, since its s are used for updating other s. Since the script is optionally adding Japanese, it adds the language pack to the image, and installs the Japanese versions of all optional packages already installed in Winre.wim. Then, it applies the Safe OS Dynamic Update package.
 
 It finishes by cleaning and exporting the image to reduce the image size.
 
 > [!NOTE]
-> Skip adding the latest cumulative update to Winre.wim because it contains unnecessary components in the recovery environment. The components that are updated and applicable are contained in the safe operating system Dynamic Update package. This also helps to keep the image small.
+> Skip adding the latest cumulative update to Winre.wim because it contains unnecessary s in the recovery environment. The s that are updated and applicable are contained in the safe operating system Dynamic Update package. This also helps to keep the image small.
 
 ```
 # Mount the main operating system, used throughout the script
@@ -398,7 +398,7 @@ DISM /image:$MAIN_OS_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
 
 #
 # Note: If I wanted to enable additional Optional Components, I'd add these here. 
-# In addition, we'll add .Net 3.5 here as well. Both .Net and Optional Components may require 
+# In addition, we'll add .Net 3.5 here as well. Both .Net and Optional Components might require 
 # the image to be booted, and thus if we tried to cleanup after installation, it would fail.
 #
 
@@ -435,7 +435,7 @@ cmd.exe /c $env:SystemRoot\System32\expand.exe $SETUP_DU_PATH -F:* $MEDIA_NEW_PA
 
 As a last step, the script removes the working folder of temporary files, and unmounts our language pack and Features on Demand ISOs.
 
-```powershell
+```
 #
 # Perform final cleanup
 #
