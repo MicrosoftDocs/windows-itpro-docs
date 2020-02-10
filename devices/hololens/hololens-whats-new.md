@@ -48,9 +48,9 @@ manager: dansimp
 Feature | Details  
 --- | ---
 Localized Chinese and Japanese builds | Use HoloLens with localized user interface for Simplified Chinese or Japanese, including localized Pinyin keyboard, dictation, and voice commands.  
-Speech Synthesis (TTS) | Speech synthesis feature now supports Chinese, Japanese, and English. 
+Speech Synthesis (TTS) | Speech synthesis feature now supports Chinese, Japanese, and English.
 
-[Learn how to install the Chinese and Japanese versions of HoloLens.](hololens1-install-localized.md) 
+[Learn how to install the Chinese and Japanese versions of HoloLens.](hololens1-install-localized.md)
 
 ## Windows 10, version 1803 for Microsoft HoloLens
 
@@ -62,7 +62,7 @@ Windows 10, version 1803, is the first feature update to Windows Holographic for
 
 - You can view the operating system build number in device properties in the File Explorer app and in the [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq).
     
-- Provisioning a HoloLens device is now easier with the new **Provision HoloLens devices** wizard in the Windows Configuration Designer tool. In the wizard, you can configure the setup experience and network connections, set developer mode, and obtain bulk Azure AD tokens. [Learn how to use the simple provisioning wizard for HoloLens](hololens-provisioning.md#provisioning-package-holoLens-wizard).
+- Provisioning a HoloLens device is now easier with the new **Provision HoloLens devices** wizard in the Windows Configuration Designer tool. In the wizard, you can configure the setup experience and network connections, set developer mode, and obtain bulk Azure AD tokens. [Learn how to use the simple provisioning wizard for HoloLens](hololens-provisioning.md#provisioning-package-hololens-wizard).
 
     ![Provisioning HoloLens devices](images/provision-hololens-devices.png)
 
