@@ -373,7 +373,7 @@
 ###### [Troubleshoot subscription and portal access issues](microsoft-defender-atp/troubleshoot-onboarding-error-messages.md)
 
 #### [Microsoft Defender ATP API]()
-##### [Get started with Microsoft Defender ATP APIs]()
+##### [Get started]()
 ###### [Microsoft Defender ATP API license and terms](microsoft-defender-atp/api-terms-of-use.md)
 ###### [Access the Microsoft Defender ATP APIs](microsoft-defender-atp/apis-intro.md)
 ###### [Hello World](microsoft-defender-atp/api-hello-world.md)
