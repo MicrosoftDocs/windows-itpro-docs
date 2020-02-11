@@ -26,7 +26,7 @@ This can cause devices or software to malfunction and in rare cases may result i
 If this happens, see [Troubleshooting](#troubleshooting) for remediation steps.
 
 >[!NOTE]
->HVCI has the best performance on modern CPUs with the new features *Mode based execution control (MBE) Virtualization* and *APIC Virtualization*. HVCI is capable on any Windows 10 device that supports the Windows Hypervisor. However, some older systems rely on incompatable legacy kernel drivers which will be blocked from loading and may prevent critical functionality on the device.
+> HVCI has the best performance on modern CPUs with the new features *Mode based execution control (MBE) Virtualization* and *APIC Virtualization*. HVCI is capable on any Windows 10 device that supports the Windows Hypervisor. However, some older systems rely on incompatable legacy kernel drivers which will be blocked from loading and may prevent critical functionality on the device.
 
 >[!TIP]
 > "The Secure Kernel relies on the Mode-Based Execution Control (MBEC) feature, if present in hardware, which enhances the SLAT with a user/kernel executable bit, or the hypervisor’s software emulation of this feature, called Restricted User Mode (RUM)." Mark Russinovich and Alex Ionescu. Windows Internals 7th Edition book
