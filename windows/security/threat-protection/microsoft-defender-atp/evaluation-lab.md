@@ -29,6 +29,9 @@ With the simplified set-up experience, you can focus on running your own test sc
 
 You'll have full access to all the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Microsoft Defender ATP offers. 
 
+You can add Windows 10 or Windows Server 2019 machines. These test machines come pre-configured to have the latest and greatest OS versions with the right security components in place and Office 2019 Standard installed.
+
+You can also install threat simulators. Microsoft Defender ATP has partnered with industry leading threat simulation platforms to help you test out the Microsoft Defender ATP capabilities.  Install your preferred simulator, run scenarios within the evaluation lab, and instantly see how the platform performs. You'll have access to a wide array of simulations which you can 
     
 
 ## Before you begin
@@ -60,7 +63,7 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
     ![Image of lab configuration options](images/lab-creation-page.png) 
 
 
-3. Select the threat simulation agent you'd like to use and enter your details.
+3. (Optional) Select the threat simulation agent you'd like to use and enter your details. You can also choose to install threat simulators at a later time. If you choose to install threat simulation agents during the lab setup, you'll enjoy the benefit of having them on the machines you add.  
 
     >[!NOTE]
     >PLACEHOLDER ... By agreeing to install the selected simulator, you agree that the details you provided ....INSERT APPROVED LEGAL STATEMENT HERE FROM CELA!!!! 
@@ -71,16 +74,14 @@ You can access the lab from the menu. In the navigation menu, select **Evaluatio
 
 After the lab setup process is complete, you can add machines and run simulations. 
 
-You can add Windows 10 or Windows Server 2019 machines. These test machines come pre-configured to have the latest and greatest OS versions with the right security components in place and Office 2019 Standard installed.
-
-You can also install threat simulators. Microsoft Defender ATP has partnered with industry leading threat simulation platforms to help you test out the Microsoft Defender ATP capabilities.  Install your preferred simulator, run scenarios within the evaluation lab, and instantly see how the platform performs.
-
 
 
 ## Add machines
 When you add a machine to your environment, Microsoft Defender ATP sets up a well-configured machine with connection details. You can add Windows 10 or Windows Server 2019 machines.
 
 The machine will be configured with the most up-to-date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals. 
+
+If you chose to add a threat simulator during the lab setup, all machines will have the threat simulator agent installed in the machines that you add.
 
 The machine will automatically be onboarded to your tenant with the recommended Windows security components turned on and in audit mode - with no effort on your side. 
 
@@ -132,28 +133,16 @@ The environment will reflect your test machine status through the evaluation - i
 
 After adding machines, you can choose to install threat simulators. 
 
-## Run threat simulations
-Running threat simulations using third-party platforms is a good way to evaluate Microsoft Defender ATP capabilities within the confines of a lab environment.
-
->[!NOTE]
->Before you can run simulations, ensure the following requirements are met:
->- Machines must be added  to the evaluation lab
->- Threat simulators must be installed in the evaluation lab
-
-1. From the portal select **Run simulation**.
-
-2. Select a threat simulator.
-
-3. Choose a simulation or look through the simulation gallery to browse through the available simulations.
-
-4. Select the devices where you'd like to run the simulation on.
-
-5. Select **Run**.
-
 
 ## Simulate attack scenarios
 Use the test machines to run your own attack simulations by connecting to them. 
 
+You can simulate attack scenarios using:
+- The ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials)
+- Threat simulators
+
+
+### Do it yourself attack scenarios
 If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials). These scripts are safe, documented, and easy to use. These scenarios will reflect Microsoft Defender ATP capabilities and walk you through investigation experience.
 
 You can also use [Advanced hunting](advanced-hunting-query-language.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
@@ -180,21 +169,65 @@ You can also use [Advanced hunting](advanced-hunting-query-language.md) to query
 
 4. Run simulations on the machine. 
 
+
+### Threat simulator scenarios
+If you chose to install any of the supported threat simulators during the lab setup, you can run the built-in simulations on the evaluation lab machines. 
+
+
+Running threat simulations using third-party platforms is a good way to evaluate Microsoft Defender ATP capabilities within the confines of a lab environment.
+
+>[!NOTE]
+>Before you can run simulations, ensure the following requirements are met:
+>- Machines must be added  to the evaluation lab
+>- Threat simulators must be installed in the evaluation lab
+
+1. From the portal select **Run simulation**.
+
+2. Select a threat simulator.
+
+3. Choose a simulation or look through the simulation gallery to browse through the available simulations.
+
+4. Select the devices where you'd like to run the simulation on.
+
+5. Select **Run**.
+
+
+
 After running your simulations, we encourage you to walk through the lab progress bar and explore Microsoft Defender ATP features. See if your attacks triggered an automated investigation and remediation, check out the evidence collected and analyzed by the feature.
 
 
 Hunt for attack evidence through advanced hunting by using the rich query language and raw telemetry and check out some world-wide threats documented in Threat analytics.
 
 
-## Simulation results
-Get a full overview of the simulation results, all in one place, allowing you to drill down to the relevant pages with every detail you need by selecting the **Simulations** tab.
+## Machine and simulation status
 
 
->INSERT IMAGE OF NEW  SIMULATIONS TAB!!!!
+
+After adding machines and running simulations, you can keep track of the progress of a simulation by going to the **Simulations** tab.
+
+
+
+
 
 View the machine details page by selecting the machine from the table. You'll be able to drill down on relevant alerts and investigations by exploring the rich context provided on the attack simulation. 
 
-### Evaluation report
+
+
+## Simulation gallery
+Microsoft Defender ATP has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform right from the within the portal. 
+
+View all the available simulations by going to  **Simulations and tutorials** > **Simulations catalog**  from the menu. 
+
+
+A list of supported third-party threat simulation agents are listed, and specific types of simulations along with detailed descriptions are provided on the catalog. 
+
+You can conveniently run any available simulation right from the catalog.  
+
+
+![Image of simulations catalog](images/simulations-catalog.png)
+
+
+## Evaluation report
 The lab reports summarize the results of the simulations conducted on the machines. 
 
 ![Image of the evaluation report](images/eval-report.png)
@@ -207,14 +240,9 @@ At a glance, you'll quickly be able to see:
 - Detection sources
 - Automated investigations
 
-## View the simulation gallery
-You can view all the available silumations by going to  **Simulations and tutorials**  from the menu. 
-
-From there, you can select **Run simuation**. 
 
 
 
->NEED MORE CONTENT HERE!!!!  
 
 ## Provide feedback
 Your feedback helps us get better in protecting your environment from advanced attacks. Share your experience and impressions from product capabilities and evaluation results.
