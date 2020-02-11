@@ -27,11 +27,11 @@ The Microsoft Defender ATP evaluation lab is designed to eliminate the complexit
 
 With the simplified set-up experience, you can focus on running your own test scenarios and the pre-made simulations to see how Microsoft Defender ATP performs. 
 
-You'll have full access to all the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Microsoft Defender ATP offers. 
+You'll have full access to the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Microsoft Defender ATP offers. 
 
 You can add Windows 10 or Windows Server 2019 machines. These test machines come pre-configured to have the latest and greatest OS versions with the right security components in place and Office 2019 Standard installed.
 
-You can also install threat simulators. Microsoft Defender ATP has partnered with industry leading threat simulation platforms to help you test out the Microsoft Defender ATP capabilities.  Install your preferred simulator, run scenarios within the evaluation lab, and instantly see how the platform performs. You'll have access to a wide array of simulations which you can 
+You can also install threat simulators. Microsoft Defender ATP has partnered with industry leading threat simulation platforms to help you test out the Microsoft Defender ATP capabilities.  Install your preferred simulator, run scenarios within the evaluation lab, and instantly see how the platform performs. You'll also have convenient access to wide array of simulations which you can access and run from the simulations catalog.
     
 
 ## Before you begin
@@ -126,12 +126,11 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 4. Machine set up begins. This can take up to approximately 30 minutes. 
 
-The environment will reflect your test machine status through the evaluation - including risk score, exposure score, and alerts created through the simulation.
+5. See the status of test machines, the risk and exposure levels, and the status of simulator installations by selecting the **Machines** tab. 
 
+  >[!TIP]
+  >In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
 
-![Image of test machines](images/eval-lab-dashboard.png)
-
-After adding machines, you can choose to install threat simulators. 
 
 
 ## Simulate attack scenarios
@@ -141,11 +140,11 @@ You can simulate attack scenarios using:
 - The ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials)
 - Threat simulators
 
+You can also use [Advanced hunting](advanced-hunting-query-language.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
 
 ### Do it yourself attack scenarios
 If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials). These scripts are safe, documented, and easy to use. These scenarios will reflect Microsoft Defender ATP capabilities and walk you through investigation experience.
 
-You can also use [Advanced hunting](advanced-hunting-query-language.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
 
 >[!NOTE]
 >The connection to the test machines is done using RDP. Make sure that your firewall settings allow RDP connections.
@@ -167,7 +166,7 @@ You can also use [Advanced hunting](advanced-hunting-query-language.md) to query
 
    ![Image of window to enter credentials](images/enter-password.png)
 
-4. Run simulations on the machine. 
+4. Run Do it yourself attack simulations on the machine. 
 
 
 ### Threat simulator scenarios
@@ -191,26 +190,17 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
 5. Select **Run**.
 
+6. View the progress of a simulation by selecting the **Simulations** tab. View the simulation state, active alerts, and other details. 
 
 
-After running your simulations, we encourage you to walk through the lab progress bar and explore Microsoft Defender ATP features. See if your attacks triggered an automated investigation and remediation, check out the evidence collected and analyzed by the feature.
+>INSERT IMAGE OF SIMULATIONS TAB HERE!!!! 
+
+
+After running your simulations, we encourage you to walk through the lab progress bar and explore Microsoft Defender ATP features. See if the attack simulations you ran triggered an automated investigation and remediation, check out the evidence collected and analyzed by the feature.
+
 
 
 Hunt for attack evidence through advanced hunting by using the rich query language and raw telemetry and check out some world-wide threats documented in Threat analytics.
-
-
-## Machine and simulation status
-
-
-
-After adding machines and running simulations, you can keep track of the progress of a simulation by going to the **Simulations** tab.
-
-
-
-
-
-View the machine details page by selecting the machine from the table. You'll be able to drill down on relevant alerts and investigations by exploring the rich context provided on the attack simulation. 
-
 
 
 ## Simulation gallery
