@@ -137,6 +137,7 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 10. When the build completes, click **Finish**.
 
 <span id="apply" />
+
 ## Apply a provisioning package to HoloLens during setup
 
 1. Connect the device via USB to a PC and start the device, but do not continue past the **Fit** page of OOBE (the first page with the blue box).
