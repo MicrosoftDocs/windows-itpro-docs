@@ -27,6 +27,8 @@ Effectively identifying, assessing, and remediating endpoint weaknesses is pivot
 
 It helps organizations discover vulnerabilities and misconfigurations in real-time, based on sensors, without the need of agents or periodic scans. It prioritizes vulnerabilities based on the threat landscape, detections in your organization, sensitive information on vulnerable devices, and business context.
 
+[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mLsn]
+
 ## Next-generation capabilities 
 Threat & Vulnerability Management is built-in, real-time, cloud-powered, fully integrated with Microsoft endpoint security stack, the Microsoft Intelligent Security Graph, and the application analytics knowledgebase.  
 
