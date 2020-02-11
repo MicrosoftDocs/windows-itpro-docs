@@ -166,8 +166,8 @@ Directions for upgrading to the commercial suite can be found [here](https://doc
 
 1. [Create a device profile for Kiosk mode](https://docs.microsoft.com/intune/configuration/kiosk-settings#create-the-profile)
 
- >[!NOTE]
-    >You can configure different users to have different Kiosk Mode experiences by using “Azure AD” as the “User logon type”. However, this option is only available in Multi-App kiosk mode. Multi-App kiosk mode will work with only one app as well as multiple apps.
+> [!NOTE]
+> You can configure different users to have different Kiosk Mode experiences by using “Azure AD” as the “User logon type”. However, this option is only available in Multi-App kiosk mode. Multi-App kiosk mode will work with only one app as well as multiple apps.
 
 ![Image that shows Configuration of Kiosk Mode in Intune](images/aad-kioskmode.png)
 
