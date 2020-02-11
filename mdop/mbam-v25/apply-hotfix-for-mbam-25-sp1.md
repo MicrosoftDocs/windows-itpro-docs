@@ -22,7 +22,7 @@ This topic describes the process for applying the hotfixes for Microsoft BitLock
 [Desktop Optimization Pack](https://www.microsoft.com/download/details.aspx?id=57157)
 
 > [!NOTE]
-> For more information about the hotfix releases, see [MBAM version chart](https://docs.microsoft.com/archive/blogs/dubaisec/mbam-version-chart).
+> For more information about the hotfix releases, see the [MBAM version chart](https://docs.microsoft.com/archive/blogs/dubaisec/mbam-version-chart).
 
 #### Steps to update the MBAM Server for existing MBAM environment 
 1. Remove MBAM server feature (do this by opening the MBAM Server Configuration Tool, then selecting Remove Features).
