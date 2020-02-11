@@ -43,16 +43,14 @@ manager: dansimp
 | Read device hardware info through MDM so devices can be tracked by serial # |                                                                                        IT administrators can see and track HoloLens by device serial number in their MDM console. Refer to your MDM documentation for feature availability and instructions.                                                                                         |
 |                Set HoloLens device name through MDM (rename)                |                                                                                                IT administrators can see and rename HoloLens devices in their MDM console. Refer to your MDM documentation for feature availability and instructions.                                                                                                |
 
-### For international customers 
- 
+### For international customers
 
 Feature | Details  
---- | --- 
+--- | ---
 Localized Chinese and Japanese builds | Use HoloLens with localized user interface for Simplified Chinese or Japanese, including localized Pinyin keyboard, dictation, and voice commands.  
-Speech Synthesis (TTS) | Speech synthesis feature now supports Chinese, Japanese, and English. 
+Speech Synthesis (TTS) | Speech synthesis feature now supports Chinese, Japanese, and English.
 
-[Learn how to install the Chinese and Japanese versions of HoloLens.](hololens1-install-localized.md) 
-
+[Learn how to install the Chinese and Japanese versions of HoloLens.](hololens1-install-localized.md)
 
 ## Windows 10, version 1803 for Microsoft HoloLens
 
@@ -60,11 +58,11 @@ Speech Synthesis (TTS) | Speech synthesis feature now supports Chinese, Japanese
 
 Windows 10, version 1803, is the first feature update to Windows Holographic for Business since its release in Windows 10, version 1607. This update introduces the following changes:
 
-- Previously, you could only verify that upgrade license for Commercial Suite had been applied to your HoloLens device by checking to see if VPN was an available option on the device. Now, **Settings** > **System** will display **Windows Holographic for Business** after the upgrade license is applied. [Learn how to unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md). 
+- Previously, you could only verify that upgrade license for Commercial Suite had been applied to your HoloLens device by checking to see if VPN was an available option on the device. Now, **Settings** > **System** will display **Windows Holographic for Business** after the upgrade license is applied. [Learn how to unlock Windows Holographic for Business features](hololens1-upgrade-enterprise.md).
 
 - You can view the operating system build number in device properties in the File Explorer app and in the [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379/windows-10-mobile-device-recovery-tool-faq).
     
-- Provisioning a HoloLens device is now easier with the new **Provision HoloLens devices** wizard in the Windows Configuration Designer tool. In the wizard, you can configure the setup experience and network connections, set developer mode, and obtain bulk Azure AD tokens. [Learn how to use the simple provisioning wizard for HoloLens](hololens-provisioning.md#wizard).
+- Provisioning a HoloLens device is now easier with the new **Provision HoloLens devices** wizard in the Windows Configuration Designer tool. In the wizard, you can configure the setup experience and network connections, set developer mode, and obtain bulk Azure AD tokens. [Learn how to use the simple provisioning wizard for HoloLens](hololens-provisioning.md#provisioning-package-hololens-wizard).
 
     ![Provisioning HoloLens devices](images/provision-hololens-devices.png)
 
@@ -74,9 +72,9 @@ Windows 10, version 1803, is the first feature update to Windows Holographic for
 
 - Media Transfer Protocol (MTP) is enabled so that you can connect the HoloLens device to a PC by USB and transfer files between HoloLens and the PC. You can also use the File Explorer app to move and delete files from within HoloLens.
 
-- Previously, after you signed in to the device with an Azure Active Directory (Azure AD) account, you then had to **Add work access** in **Settings** to get access to corporate resources. Now, you sign in with an Azure AD account and enrollment happens automatically. 
+- Previously, after you signed in to the device with an Azure Active Directory (Azure AD) account, you then had to **Add work access** in **Settings** to get access to corporate resources. Now, you sign in with an Azure AD account and enrollment happens automatically.
 
-- Before you sign in, you can choose the network icon below the password field to choose a different Wi-Fi network to connect to. You can also connect to a guest network, such as at a hotel, conference center, or business. 
+- Before you sign in, you can choose the network icon below the password field to choose a different Wi-Fi network to connect to. You can also connect to a guest network, such as at a hotel, conference center, or business.
 
 - You can now easily [share HoloLens with multiple people](hololens-multiple-users.md) using Azure AD accounts.
 
