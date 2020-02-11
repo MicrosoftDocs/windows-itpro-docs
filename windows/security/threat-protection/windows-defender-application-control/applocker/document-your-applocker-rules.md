@@ -119,6 +119,7 @@ The following table details sample data for documenting rule type and rule condi
 </tbody>
 </table>
  
+
 ## Next steps
 
 For each rule, determine whether to use the allow or deny option, and then complete the following tasks:
