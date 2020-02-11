@@ -83,7 +83,6 @@ Machines that are not matched to any groups are added to Ungrouped machines (def
 
 ## Related topics
 
-## Related topic
 - [Manage portal access using role-based based access control](rbac.md)
 - [Create and manage machine tags](machine-tags.md)
 - [Get list of tenant machine groups using Graph API](get-machinegroups-collection.md)
