@@ -76,7 +76,7 @@
 ##### [Take response actions on a machine]()
 ###### [Response actions on machines](microsoft-defender-atp/respond-machine-alerts.md)
 ###### [Manage tags](microsoft-defender-atp/respond-machine-alerts.md#manage-tags)
-###### [Initiate Automated investigation](microsoft-defender-atp/respond-machine-alerts.md#initiate-automated-investigation)
+###### [Initiate an automated investigation](microsoft-defender-atp/respond-machine-alerts.md#initiate-automated-investigation)
 ###### [Initiate Live Response session](microsoft-defender-atp/respond-machine-alerts.md#initiate-live-response-session)
 ###### [Collect investigation package](microsoft-defender-atp/respond-machine-alerts.md#collect-investigation-package-from-machines)
 ###### [Run antivirus scan](microsoft-defender-atp/respond-machine-alerts.md#run-windows-defender-antivirus-scan-on-machines)
@@ -105,8 +105,8 @@
 
 ### [Automated investigation and remediation]()
 #### [Automated investigation and remediation overview](microsoft-defender-atp/automated-investigations.md)
-#### [Learn about the automated investigation and remediation dashboard](microsoft-defender-atp/manage-auto-investigation.md)
-##### [Manage actions related to automated investigation and remediation](microsoft-defender-atp/auto-investigation-action-center.md)
+#### [Use the automated investigation and remediation dashboard](microsoft-defender-atp/manage-auto-investigation.md)
+#### [Manage actions related to automated investigation and remediation](microsoft-defender-atp/auto-investigation-action-center.md)
 
 ### [Secure score](microsoft-defender-atp/overview-secure-score.md)
 ### [Threat analytics](microsoft-defender-atp/threat-analytics.md)
