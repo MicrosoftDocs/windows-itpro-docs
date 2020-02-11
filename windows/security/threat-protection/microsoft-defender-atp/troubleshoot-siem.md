@@ -39,9 +39,7 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 3. Select your tenant.
 
-4. Click **App registrations**. Then in the applications list, select the application:
-    - For SIEM: `https://WindowsDefenderATPSiemConnector`
-    - For Threat intelligence API: `https://WindowsDefenderATPCustomerTiConnector`
+4. Click **App registrations**. Then in the applications list, select the application.
 
 5. Select **Keys** section, then provide a key description and specify the key validity duration.
 
@@ -59,9 +57,7 @@ If you encounter an error when trying to get a refresh token when using the thre
 
 3. Select your tenant.
 
-4. Click **App Registrations**. Then in the applications list, select the application:
-    - For SIEM: `https://WindowsDefenderATPSiemConnector`
-    - For Threat intelligence API: `https://WindowsDefenderATPCustomerTiConnector`
+4. Click **App Registrations**. Then in the applications list, select the application.
 
 5. Add the following URL:
    - For the European Union: `https://winatpmanagement-eu.securitycenter.windows.com/UserAuthenticationCallback`

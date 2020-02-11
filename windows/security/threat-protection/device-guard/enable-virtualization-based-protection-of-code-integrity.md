@@ -43,7 +43,7 @@ To enable HVCI on Windows 10 devices with supporting hardware throughout an ente
 - [Windows Security app](#windows-security-app)
 - [Microsoft Intune (or another MDM provider)](#enable-hvci-using-intune)
 - [Group Policy](#enable-hvci-using-group-policy)
-- [System Center Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
+- [Microsoft Endpoint Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
 - [Registry](#use-registry-keys-to-enable-virtualization-based-protection-of-code-integrity)
 
 ### Windows Security app

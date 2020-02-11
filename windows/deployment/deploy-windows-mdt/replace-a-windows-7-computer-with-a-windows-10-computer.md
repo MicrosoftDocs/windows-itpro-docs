@@ -45,7 +45,7 @@ When preparing for the computer replace, you need to create a folder in which to
 2. Create and share the **E:\\MigData** folder by running the following three commands in an elevated Windows PowerShell prompt:
    ``` powershell
    New-Item -Path E:\MigData -ItemType directory
-   New-SmbShare ?Name MigData$ ?Path E:\MigData 
+   New-SmbShare -Name MigData$ -Path E:\MigData 
    -ChangeAccess EVERYONE
    icacls E:\MigData /grant '"MDT_BA":(OI)(CI)(M)'
    ```

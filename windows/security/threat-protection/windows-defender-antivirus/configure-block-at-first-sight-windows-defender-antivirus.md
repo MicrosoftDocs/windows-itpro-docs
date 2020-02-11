@@ -96,7 +96,7 @@ For a list of Windows Defender Antivirus device restrictions in Intune, see [Dev
 
 ### Confirm block at first sight is enabled with Group Policy
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**. 
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 

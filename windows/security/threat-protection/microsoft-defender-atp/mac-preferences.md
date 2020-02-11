@@ -150,9 +150,9 @@ Specify content excluded from being scanned by file extension.
 | **Possible values** | valid file extensions |
 | **Comments** | Applicable only if *$type* is *excludedFileExtension* |
 
-##### Name of excluded content
+##### Process excluded from the scan
 
-Specify content excluded from being scanned by file name.
+Specify a process for which all file activity is excluded from scanning. The process can be specified either by its name (e.g. `cat`) or full path (e.g. `/bin/cat`).
 
 |||
 |:---|:---|
@@ -407,6 +407,10 @@ The following configuration profile will:
 ### Intune profile
 
 ```XML
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
         <key>PayloadUUID</key>
         <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
         <key>PayloadType</key>
@@ -475,6 +479,8 @@ The following configuration profile will:
                 </dict>
             </dict>
         </array>
+    </dict>
+</plist>
 ```
 
 ## Full configuration profile example
@@ -517,6 +523,12 @@ The following configuration profile contains entries for all settings described 
                 <string>excludedFileExtension</string>
                 <key>extension</key>
                 <string>pdf</string>
+            </dict>
+            <dict>
+                <key>$type</key>
+                <string>excludedFileName</string>
+                <key>name</key>
+                <string>cat</string>
             </dict>
         </array>
         <key>exclusionsMergePolicy</key>
@@ -637,6 +649,12 @@ The following configuration profile contains entries for all settings described 
                             <string>excludedFileExtension</string>
                             <key>extension</key>
                             <string>pdf</string>
+                        </dict>
+                        <dict>
+                            <key>$type</key>
+                            <string>excludedFileName</string>
+                            <key>name</key>
+                            <string>cat</string>
                         </dict>
                     </array>
                     <key>exclusionsMergePolicy</key>

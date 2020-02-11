@@ -1,4 +1,4 @@
-# [Surface](index.md)
+# [Surface](index.yml)
 
 ## [Get started](get-started.md)
 

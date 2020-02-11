@@ -36,15 +36,6 @@ After an Windows Defender Antivirus scan completes, whether it is an [on-demand]
 
 See [How to monitor Endpoint Protection status](https://docs.microsoft.com/configmgr/protect/deploy-use/monitor-endpoint-protection).
 
-## Use the Windows Security app to review scan results
-
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Defender**.
-
-2. Click the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Scan history** label.
-
-    - Click **See full history** for any of the sections to see previous detections and the action taken. You can also clear the list.
-    - Information about the last scan is displayed at the bottom of the page.
-
 ## Use PowerShell cmdlets to review scan results
 
 The following cmdlet will return each detection on the endpoint. If there are multiple detections of the same threat, each detection will be listed separately, based on the time of each detection:

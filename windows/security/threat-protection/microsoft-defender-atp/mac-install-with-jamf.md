@@ -38,14 +38,19 @@ In addition, for JAMF deployment, you need to be familiar with JAMF administrati
 
 ## Download installation and onboarding packages
 
-Download the installation and onboarding packages from Windows Defender Security Center:
+Download the installation and onboarding packages from Microsoft Defender Security Center:
 
-1. In Windows Defender Security Center, go to **Settings > device Management > Onboarding**.
-2. In Section 1 of the page, set the operating system to **Linux, macOS, iOS or Android** and deployment method to **Mobile Device Management / Microsoft Intune**.
-3. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
-4. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
+1. In Microsoft Defender Security Center, go to **Settings > Machine management > Onboarding**.
+2. In Section 1 of the page, set the operating system to **Linux, macOS, iOS or Android**.
+3. Set the deployment method to **Mobile Device Management / Microsoft Intune**.
+    
+    >[!NOTE]
+    >JamF falls under **Mobile Device Management**. 
+        
+4. In Section 2 of the page, select **Download installation package**. Save it as _wdav.pkg_ to a local directory.
+5. In Section 2 of the page, select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 
-    ![Windows Defender Security Center screenshot](../windows-defender-antivirus/images/MDATP-2-DownloadPackages.png)
+    ![Microsoft Defender Security Center screenshot](../windows-defender-antivirus/images/jamf-onboarding.png)
 
 5. From the command prompt, verify that you have the two files. Extract the contents of the .zip files like so:
 
@@ -87,7 +92,7 @@ To approve the kernel extension:
 1. In **Computers > Configuration Profiles** select **Options > Approved Kernel Extensions**.
 2. Use **UBF8T346G9** for Team Id.
 
-![Approved kernel extensions screenshot](../windows-defender-antivirus/images/MDATP-17-approvedKernelExtensions.png)
+    ![Approved kernel extensions screenshot](../windows-defender-antivirus/images/MDATP-17-approvedKernelExtensions.png)
 
 ### Privacy Preferences Policy Control
 
@@ -103,7 +108,7 @@ Add the following JAMF policy to grant Full Disk Access to Microsoft Defender AT
 3. Set Code Requirement to `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`.
 4. Set app or service to SystemPolicyAllFiles and access to Allow.
 
-![Privacy Preferences Policy Control](../windows-defender-antivirus/images/MDATP-35-JAMF-PrivacyPreferences.png)
+    ![Privacy Preferences Policy Control](../windows-defender-antivirus/images/MDATP-35-JAMF-PrivacyPreferences.png)
 
 #### Configuration Profile's Scope
 
@@ -153,16 +158,16 @@ You'll need no special provisioning for a macOS computer, beyond the standard JA
 > [!NOTE]
 > After a computer is enrolled, it will show up in the Computers inventory (All Computers).
 
-1. Open **Device Profiles**, from the **General** tab, and make sure that **User Approved MDM** is set to **Yes**. If it's currently set to No, the user needs to open **System Preferences > Profiles** and select **Approve** on the MDM Profile.
+ - Open **Device Profiles**, from the **General** tab, and make sure that **User Approved MDM** is set to **Yes**. If it's currently set to No, the user needs to open **System Preferences > Profiles** and select **Approve** on the MDM Profile.
 
-![MDM approve button screenshot](../windows-defender-antivirus/images/MDATP-21-MDMProfile1.png)<br/>
-![MDM screenshot](../windows-defender-antivirus/images/MDATP-22-MDMProfileApproved.png)
+    ![MDM approve button screenshot](../windows-defender-antivirus/images/MDATP-21-MDMProfile1.png)<br/>
+    ![MDM screenshot](../windows-defender-antivirus/images/MDATP-22-MDMProfileApproved.png)
 
-After a moment, the device's User Approved MDM status will change to **Yes**.
+    After a moment, the device's User Approved MDM status will change to **Yes**.
 
-![MDM status screenshot](../windows-defender-antivirus/images/MDATP-23-MDMStatus.png)
+    ![MDM status screenshot](../windows-defender-antivirus/images/MDATP-23-MDMStatus.png)
 
-You may now enroll additional devices. You may also enroll them later, after you have finished provisioning system configuration and application packages.
+    You may now enroll additional devices. You may also enroll them later, after you have finished provisioning system configuration and application packages.
 
 ## Deployment
 

@@ -14017,6 +14017,11 @@
 "redirect_document_id": false
 },
 {
+"source_path": "store-for-business/work-with-partner-microsoft-store-business.md",
+"redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/manage-partners",
+"redirect_document_id": false
+},
+{
 "source_path": "windows/manage/windows-10-mobile-and-mdm.md",
 "redirect_url": "https://docs.microsoft.com/windows/client-management/windows-10-mobile-and-mdm",
 "redirect_document_id": true
