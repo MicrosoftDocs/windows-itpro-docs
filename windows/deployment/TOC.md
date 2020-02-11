@@ -253,6 +253,7 @@
 ##### [Update Compliance Perspectives](update/update-compliance-perspectives.md)
 ### Best practices
 #### [Best practices for feature updates on mission-critical devices](update/feature-update-mission-critical.md)
+#### [Update Windows 10 media with Dynamic Update](update/media-dynamic-update.md)
 #### [Deploy feature updates during maintenance windows](update/feature-update-maintenance-window.md)
 #### [Deploy feature updates for user-initiated installations](update/feature-update-user-install.md)
 #### [Conclusion](update/feature-update-conclusion.md)
