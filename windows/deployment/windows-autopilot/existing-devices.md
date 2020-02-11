@@ -206,6 +206,9 @@ See the following examples.
 
      >[!IMPORTANT]
      >The Autopilot for existing devices task sequence will run the **Prepare Windows for capture** action which calls the System Preparation Tool (syeprep). This action will fail if the target machine is joined to a domain.
+     
+     >[!IMPORTANT]
+     >The System Preparation Tool (syeprep) will be executed with the /Generalize parameter which on Windows 10 1903 & Windows 10 1909 versions will delete the AutoPilot profile file and the machine will boot into OOBE phase instead of AutoPilot. Please see Michael Niehaus's blog with instructions [A challenge with Windows Autopilot for existing devices and Windows 10 1903](https://oofhours.com/2019/09/19/a-challenge-with-windows-autopilot-for-existing-devices-and-windows-10-1903/) on the solution to prevent this.
 
 5. Click **Next** and then click **Next** again to accept the default settings on the Install Configuration Manager page.
 6. On the State Migration page, enter the following details:
