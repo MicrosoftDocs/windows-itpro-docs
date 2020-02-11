@@ -480,9 +480,9 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-The0 following list shows the supported values:  
-- 0 (default) - Disable. All users will be able to initiate installation of Windows app packages.
-- 1 - Enable. Non-administrator users will not be able to initiate installation of Windows app packages.
+The following list shows the supported values:  
+- 0 (default) - Disabled. All users will be able to initiate installation of Windows app packages.
+- 1 - Enabled. Non-administrator users will not be able to initiate installation of Windows app packages.
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -1112,6 +1112,7 @@ Footnotes:
 -   4 - Added in Windows 10, version 1803.
 -   5 - Added in Windows 10, version 1809.
 -   6 - Added in Windows 10, version 1903.
+-   7 - Added in the next major release of Windows 10.
 
 <!--/Policies-->
 
