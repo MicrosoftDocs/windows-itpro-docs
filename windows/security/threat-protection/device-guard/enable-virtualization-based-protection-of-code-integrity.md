@@ -25,7 +25,7 @@ Some applications, including device drivers, may be incompatible with HVCI.
 This can cause devices or software to malfunction and in rare cases may result in a blue screen. Such issues may occur after HVCI has been turned on or during the enablement process itself.
 If this happens, see [Troubleshooting](#troubleshooting) for remediation steps.
 
->[!NOTE]
+> [!NOTE]
 > HVCI has the best performance on modern CPUs with the new features *Mode based execution control (MBE) Virtualization* and *APIC Virtualization*. HVCI is capable on any Windows 10 device that supports the Windows Hypervisor. However, some older systems rely on incompatable legacy kernel drivers which will be blocked from loading and may prevent critical functionality on the device.
 
 >[!TIP]
