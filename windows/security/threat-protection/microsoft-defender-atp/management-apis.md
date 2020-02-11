@@ -54,6 +54,9 @@ The Microsoft Defender ATP APIs can be grouped into three:
 
 Microsoft Defender ATP offers a layered API model exposing data and capabilities in a structured, clear and easy to use model, exposed through a standard Azure  AD-based authentication and authorization model allowing access in context of users or SaaS applications. The API model was designed to expose entities and capabilities in a consistent form. 
 
+Watch this video for a quick overview of Microsoft Defender ATP's APIs. 
+[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
+
 The **Investigation API** exposes the richness of Microsoft Defender ATP - exposing calculated or 'profiled' entities (for example, machine, user, and file) and discrete events (for example, process creation and file creation) which typically describes a behavior related to an entity, enabling access to data via investigation interfaces allowing a query-based access to data. For more information see, [Supported APIs](exposed-apis-list.md).
 
 The **Response API** exposes the ability to take actions in the service and on devices, enabling customers to ingest indicators, manage settings, alert status, as well as take response actions on devices programmatically such as isolate machines from the network, quarantine files, and others. 
