@@ -48,11 +48,11 @@ Microsoft Defender ATP uses the following combination of technology built into W
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png"> <br><b>Threat & Vulnerability Management</b></center></a></td>
-<td><a href="#asr"><center><img src="images/ASR.png"><br><b>Attack surface reduction</b></center></a></td>
-<td><center><a href="#ngp"><img src="images/NGp.png"><br> <b>Next generation protection</b></a></center></td>
-<td><center><a href="#edr"><img src="images/EDR.png"><br> <b>Endpoint detection and response</b></a></center></td>
-<td><center><a href="#ai"><img src="images/AIR.png"><br> <b>Automated investigation and remediation</b></a></center></td>
-<td><center><a href="#mte"><img src="images/MTE_icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><a href="#asr"><center><img src="images/asr-icon.png"><br><b>Attack surface reduction</b></center></a></td>
+<td><center><a href="#ngp"><img src="images/ngp-icon.png"><br> <b>Next generation protection</b></a></center></td>
+<td><center><a href="#edr"><img src="images/edr-icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
+<td><center><a href="#ai"><img src="images/air-icon.png"><br> <b>Automated investigation and remediation</b></a></center></td>
+<td><center><a href="#mte"><img src="images/mte-icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
