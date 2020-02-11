@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 audience: itpro
 itproauthor: jaimeo
-author: jaimeo
+author: SteveDiAcetis
 ms.localizationpriority: medium
 ms.author: jaimeo
 ms.reviewer: 
