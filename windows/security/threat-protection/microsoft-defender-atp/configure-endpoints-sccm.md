@@ -43,6 +43,7 @@ Microsoft Endpoint Configuration Manager (ConfigMgr) version 1606 has UI integra
 
 
 <span id="sccm1602"/>
+
 ## Onboard Windows 10 machines using Configuration Manager earlier versions
 You can use existing Configuration Manager functionality to create a policy to configure your machines. This is supported in the following Configuration Manager versions:
 
