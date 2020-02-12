@@ -1,8 +1,8 @@
-# [Deploy and update Windows 10](https://docs.microsoft.com/windows/deployment)
-## [What's new in Windows 10 deployment](deploy-whats-new.md)
-## [Windows as a service](update/windows-as-a-service.md)
+# [Windows 10 deployment resources and documentation](https://docs.microsoft.com/windows/deployment)
 
 ## Explore
+### [What's new in Windows 10 deployment](deploy-whats-new.md)
+### [Windows as a service](update/windows-as-a-service.md)
 ### [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 ### [Deployment process posters](windows-10-deployment-posters.md)
 ### [Deploy Windows 10 with Microsoft 365](deploy-m365.md)
