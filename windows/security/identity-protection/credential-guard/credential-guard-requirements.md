@@ -48,9 +48,9 @@ Credential Guard can protect secrets in a Hyper-V virtual machine, just as it wo
 - The Hyper-V host must have an IOMMU, and run at least Windows Server 2016 or Windows 10 version 1607.
 - The Hyper-V virtual machine must be Generation 2, have an enabled virtual TPM, and be running at least Windows Server 2016 or Windows 10.
 
-For information about other host platforms, see [Enabling Windows Server 2016 and Hyper-V virtualization based security features on other platforms](https://blogs.technet.microsoft.com/windowsserver/2016/09/29/enabling-windows-server-2016-and-hyper-v-virtualization-based-security-features-on-other-platforms/)
+For information about other host platforms, see [Enabling Windows Server 2016 and Hyper-V virtualization based security features on other platforms](https://blogs.technet.microsoft.com/windowsserver/2016/09/29/enabling-windows-server-2016-and-hyper-v-virtualization-based-security-features-on-other-platforms/).
 
-For information about Windows Defender Remote Credential Guard hardware and software requirements, see [Windows Defender Remote Credential Guard requirements](https://docs.microsoft.com/windows/access-protection/remote-credential-guard#hardware-and-software-requirements)
+For information about Windows Defender Remote Credential Guard hardware and software requirements, see [Windows Defender Remote Credential Guard requirements](https://docs.microsoft.com/windows/access-protection/remote-credential-guard#hardware-and-software-requirements).
 
 ## Application requirements
 
@@ -85,8 +85,9 @@ Computers that meet additional qualifications can provide additional protections
 The following tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017.
 
 > [!NOTE]
-> Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new shipping computers. <br>
-> If you are an OEM, see [PC OEM requirements for Windows Defender Device Guard and Windows Defender Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).<br>
+> Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new shipping computers.
+> 
+> If you are an OEM, see [PC OEM requirements for Windows Defender Device Guard and Windows Defender Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).
 
 ### Baseline protections
 
