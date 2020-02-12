@@ -28,7 +28,8 @@ Threat analytics is a set of reports published by Microsoft security researchers
 
 Watch this short video to quickly understand how threat analytics can help you track the latest threats and stop them.
 <p></p>
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bw1f]
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bw1f]
 
 ## View the threat analytics dashboard
 
