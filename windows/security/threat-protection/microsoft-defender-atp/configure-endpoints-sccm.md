@@ -144,7 +144,7 @@ Monitoring with ConfigMgr consists of two parts:
 
 4. Review the status indicators under **Completion Statistics** and **Content Status**.
 
-If there are failed deployments (machines with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the machines. For more information see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md).
+If there are failed deployments (machines with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the machines. For more information, see [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding.md).
 
 ![ConfigMgr showing successful deployment with no errors](images/sccm-deployment.png)
 
