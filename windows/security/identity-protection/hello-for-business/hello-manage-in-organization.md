@@ -30,15 +30,16 @@ You can create a Group Policy or mobile device management (MDM) policy that will
 >
 >Beginning in version 1607, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN for Windows 10, version 1607, enable the Group Policy setting **Turn on convenience PIN sign-in**. 
 >
+> In the AD Server Group Policy, enable **Turn on Convenience pin sign-in** found underneath **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Logon**.
+>
 >Use **PIN Complexity** policy settings to manage PINs for Windows Hello for Business.
+>
+> Starting with Windows 10, version 1709, the location of the PIN complexity section of the Group Policy is: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **PIN Complexity**.
+
  
 ## Group Policy settings for Windows Hello for Business
 
 The following table lists the Group Policy settings that you can configure for Windows Hello use in your workplace. These policy settings are available in both **User configuration** and **Computer Configuration** under **Policies** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Windows Hello for Business**.
-
-> [!NOTE]
-> Starting with Windows 10, version 1709, the location of the PIN complexity section of the Group Policy is: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **PIN Complexity**.
-> In the AD Server Group, enable **Turn on Convenience pin sign-in** found underneath **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Logon**.
  
 <table>
 <tr>
