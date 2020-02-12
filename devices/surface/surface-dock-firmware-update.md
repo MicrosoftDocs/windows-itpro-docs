@@ -23,7 +23,7 @@ Microsoft Surface Dock Firmware Update supersedes the earlier Microsoft Surface 
 
 ## Monitor the Surface Dock Firmare Update
 
-This section is optional and provides an overview of how to monitor installation of the firmware update. For more detailed information about monitoring the update process, see the following sections in this article: 
+This section is optional and provides an overview of how to monitor installation of the firmware update. When you are ready to install the update, see [Install the Surface Dock Firmware Update](#install-the-surface-dock-firmware-update) below. For more detailed information about monitoring the update process, see the following sections in this article: 
   - [How to verify completion of firmware update](#how-to-verify-completion-of-the-firmware-update)
   - [Event logging](#event-logging)
   - [Troubleshooting tips](#troubleshooting-tips)
@@ -61,10 +61,15 @@ This section describes how to install the firmware update.
 
 You can use Windows Installer commands (Msiexec.exe) to deploy Surface Dock Firmware Update to multiple devices across your network. When using Microsoft Endpoint Configuration Manager or other deployment tool, enter the following syntax to ensure the installation is silent:
 
-- **Msiexec.exe /i <name of msi> /quiet /norestart** 
+- **Msiexec.exe /i \<path to msi file\> /quiet /norestart** 
+
+  For example:
+  ```
+  msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi" /quiet /norestart
+  ```
 
 > [!NOTE]
-> A log file is not created by default. In order to create a log file, you will need to append "/l*v [path]". For example: Msiexec.exe /i <name of msi> /l*v %windir%\logs\ SurfaceDockFWI.log"
+> A log file is not created by default. In order to create a log file, you will need to append "/l*v [path]". For example: Msiexec.exe /i \<path to msi file\> /l*v %windir%\logs\ SurfaceDockFWI.log"
 
 For more information, refer to [Command line options](https://docs.microsoft.com/windows/win32/msi/command-line-options) documentation.
 
@@ -76,7 +81,7 @@ For more information, refer to [Command line options](https://docs.microsoft.com
 You can use Intune to distribute Surface Dock Firmware Update to your devices. First you will need to convert the MSI file to the .intunewin format, as described in the following documentation: [Intune Standalone - Win32 app management](https://docs.microsoft.com/intune/apps/apps-win32-app-management).
 
 Use the following command:
-  - **msiexec /i <name of msi> /quiet /q**
+  - **msiexec /i \<path to msi file\> /quiet /q**
 
 ## How to verify completion of the firmware update
 
