@@ -75,7 +75,6 @@ To create a new application and deploy it to a collection that contains your Sur
 
    * **Import Information** – The Create Application Wizard will parse the .msi file and read the **Application Name** and **Product Code**. SurfaceUEFIManagerSetup.msi should be listed as the only file under the line **Content Files**, as shown in Figure 1. Select **Next** to proceed.
 
-   
    ![Information from Surface UEFI Manager setup is automatically parsed](images/config-mgr-semm-fig1.png "Information from Surface UEFI Manager setup is automatically parsed")
    
    *Figure 1. Information from Microsoft Surface UEFI Manager setup is automatically parsed*
@@ -107,7 +106,7 @@ The sample scripts include examples of how to set Surface UEFI settings and how 
 
 The first region of the script that you need to modify is the portion that specifies and loads the SEMM certificate, and also indicates SurfaceUEFIManager version, and the names for the SEMM configuration package and SEMM reset package. The certificate name and SurfaceUEFIManager version are specified on lines 56 through 73 in the ConfigureSEMM.ps1 script.
 
-  ```
+  ```powershell
   56	$WorkingDirPath = split-path -parent $MyInvocation.MyCommand.Definition
   57	$packageRoot = "$WorkingDirPath\Config"
   58	$certName = "FabrikamSEMMSample.pfx"
@@ -137,7 +136,7 @@ On line 73, replace the value of the **$password** variable, from **1234** to th
 > [!Note]
 > The last two characters of the certificate thumbprint are required to enroll a device in SEMM. This script will display these digits to the user, which allows the user or technician to record these digits before the system reboots to enroll the device in SEMM. The script uses the following code, found on lines 150-155, to accomplish this.
 
-```
+```powershell
 150	# Device owners will need the last two characters of the thumbprint to accept SEMM ownership.
 151	# For convenience we get the thumbprint here and present to the user.
 152	$pw = ConvertTo-SecureString $password -AsPlainText -Force
@@ -163,7 +162,7 @@ Administrators with access to the certificate file (.pfx) can read the thumbprin
 
 The first region of the script where you will specify the configuration for Surface UEFI is the **Configure Permissions** region. This region begins at line 210 in the sample script with the comment **# Configure Permissions** and continues to line 247. The following code fragment first sets permissions to all Surface UEFI settings so that they may be modified by SEMM only, then adds explicit permissions to allow the local user to modify the Surface UEFI password, TPM, and front and rear cameras.
 
-```
+```powershell
 210	# Configure Permissions
 211	foreach ($uefiV2 IN $surfaceDevices.Values) {
 212 if ($uefiV2.SurfaceUefiFamily -eq $Device.Model) {
@@ -215,7 +214,7 @@ You can find information about the available settings names and IDs for Surface 
 
 The second region of the script where you will specify the configuration for Surface UEFI is the **Configure Settings** region of the ConfigureSEMM.ps1 script, which configures whether each setting is enabled or disabled. The sample script includes instructions to set all settings to their default values. The script then provides explicit instructions to disable IPv6 for PXE Boot and to leave the Surface UEFI Administrator password unchanged. You can find this region beginning with the **# Configure Settings** comment at line 291 through line 335 in the sample script. The region appears as follows.
 
-```
+```powershell
 291	# Configure Settings
 292	foreach ($uefiV2 IN $surfaceDevices.Values) {
 293 if ($uefiV2.SurfaceUefiFamily -eq $Device.Model) {
@@ -277,7 +276,7 @@ To identify enrolled systems for Configuration Manager, the ConfigureSEMM.ps1 sc
 
 The following code fragment, found on lines 380-477, is used to write these registry keys.
 
-```
+```powershell
 380	# For Endpoint Configuration Manager or other management solutions that wish to know what version is applied, tattoo the LSV and current DateTime (in UTC) to the registry:
 381	$UTCDate = (Get-Date).ToUniversalTime().ToString()
 382	$certIssuer = $certPrint.Issuer
