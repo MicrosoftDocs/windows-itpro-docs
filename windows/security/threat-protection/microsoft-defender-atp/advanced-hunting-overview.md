@@ -30,7 +30,7 @@ You can use the same threat-hunting queries to build custom detection rules. The
 
 ## Get started with advanced hunting
 Watch this video for a quick overview of advanced hunting and a short tutorial that will get you started fast.
-<br />
+<p></p>
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqo]
 
 You can also go through each of the following steps to ramp up your advanced hunting knowledge.
