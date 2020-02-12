@@ -38,6 +38,7 @@ To use this walkthrough, you’ll need:
 - **Azure Active Directory (Azure AD)/Work or School account**. You can use the account that you created for Office 365, or you can create a new one while you’re establishing your Power BI account. If you choose to use Azure AD, you must connect your Azure AD account to your Windows account.
 
     **To connect your account to Windows**
+    
     a. Open **Windows Settings**, click **Accounts**, click **Access work or school**, and then in the **Connect to work or school** section, click **Connect**.
     
     b. Follow the instructions to add your Azure Active Directory (Azure AD) account to Windows.
