@@ -1,0 +1,24 @@
+- name: Windows 10 deployment resources and documentation
+  href: index.yml
+  items: 
+    - name: Explore
+      items: 
+        - name: Windows 10 deployment scenarios
+          href: windows-10-deployment-scenarios.md
+        - name: H2 
+          href: windows-10-deployment-scenarios.md
+          items: 
+            - name: H3
+              href: windows-10-deployment-scenarios.md
+              items:
+                - name: H4
+                  href: windows-10-deployment-scenarios.md
+                  items:
+                    - name: H5
+                      href: windows-10-deployment-scenarios.md
+                      items:
+                        - name: H6
+                          href: windows-10-deployment-scenarios.md
+                          items:
+                            - name: H7
+                              href: windows-10-deployment-scenarios.md
