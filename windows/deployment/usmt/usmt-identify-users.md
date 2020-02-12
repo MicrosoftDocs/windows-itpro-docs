@@ -11,6 +11,7 @@ ms.sitesec: library
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.localizationpriority: medium
 ---
 
 # Identify Users
