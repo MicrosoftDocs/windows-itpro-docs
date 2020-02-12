@@ -100,7 +100,6 @@ The default value in case the registry key doesn’t exist is 1.
 For more information about Configuration Manager Compliance, see [Get started with compliance settings in Configuration Manager](https://docs.microsoft.com/configmgr/compliance/get-started/get-started-with-compliance-settings).
 
 
-
 ## Offboard machines using Configuration Manager
 
 For security reasons, the package used to Offboard machines will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an machine will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
