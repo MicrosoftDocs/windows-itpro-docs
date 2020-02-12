@@ -25,6 +25,8 @@ ms.topic: conceptual
 
 Microsoft Defender Advanced Threat Protection is a platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
+
 Microsoft Defender ATP uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
 
 -   **Endpoint behavioral sensors**: Embedded in Windows 10, these sensors
@@ -48,12 +50,11 @@ Microsoft Defender ATP uses the following combination of technology built into W
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png"> <br><b>Threat & Vulnerability Management</b></center></a></td>
-<td><a href="#asr"><center><img src="images/ASR_icon.png"><br><b>Attack surface reduction</b></center></a></td>
-<td><center><a href="#ngp"><img src="images/ngp_icon.png"><br> <b>Next generation protection</b></a></center></td>
-<td><center><a href="#edr"><img src="images/edr_icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
-<td><center><a href="#ai"><img src="images/AR_icon.png"><br> <b>Automated investigation and remediation</b></a></center></td>
-<td><center><a href="#ss"><img src="images/SS_icon.png"><br><b>Secure score</b></a></center></td>
-<td><center><a href="#mte"><img src="images/MTE_icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><a href="#asr"><center><img src="images/asr-icon.png"><br><b>Attack surface reduction</b></center></a></td>
+<td><center><a href="#ngp"><img src="images/ngp-icon.png"><br> <b>Next generation protection</b></a></center></td>
+<td><center><a href="#edr"><img src="images/edr-icon.png"><br> <b>Endpoint detection and response</b></a></center></td>
+<td><center><a href="#ai"><img src="images/air-icon.png"><br> <b>Automated investigation and remediation</b></a></center></td>
+<td><center><a href="#mte"><img src="images/mte-icon.png"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
