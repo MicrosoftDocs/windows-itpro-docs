@@ -132,7 +132,7 @@ Optional. The character string that allows the user experience to include a cust
 Supported operations are Get, Replace, and Delete.
 
 <a href="" id="provider-providerid-requiremessagesigning"></a>**Provider/*ProviderID*/RequireMessageSigning**  
-Boolean type. Primarly used for SSL bridging mode where firewalls and proxies are deployed and where device client identity is required. When enabled, every SyncML message from the device will carry an additional HTTP header named MDM-Signature. This header contains BASE64-encoded Cryptographic Message Syntax using a Detached Signature of the complete SyncML message SHA-2 (inclusive of the SyncHdr and SyncBody). Signing is performed using the private key of the management session certificate that was enrolled as part of the enrollment process. The device public key and PKCS9 UTC signing time stamp are included as part of the authenticated attributes in the signature.
+Boolean type. Primarily used for SSL bridging mode where firewalls and proxies are deployed and where device client identity is required. When enabled, every SyncML message from the device will carry an additional HTTP header named MDM-Signature. This header contains BASE64-encoded Cryptographic Message Syntax using a Detached Signature of the complete SyncML message SHA-2 (inclusive of the SyncHdr and SyncBody). Signing is performed using the private key of the management session certificate that was enrolled as part of the enrollment process. The device public key and PKCS9 UTC signing time stamp are included as part of the authenticated attributes in the signature.
 
 Default value is false, where the device management client does not include authentication information in the management session HTTP header. Optionally set to true, where the client authentication information is provided in the management session HTTP header.
 
@@ -255,7 +255,7 @@ Optional. Added in Windows 10, version 1703. Specify the Discovery server URL o
 Supported operations are Add, Delete, Get, and Replace. Value type is string.
 
 <a href="" id="provider-providerid-numberofdaysafterlostcontacttounenroll"></a>**Provider/*ProviderID*/NumberOfDaysAfterLostContactToUnenroll**  
-Optional. Number of days after last sucessful sync to unenroll.
+Optional. Number of days after last successful sync to unenroll.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is integer.
 
@@ -552,7 +552,7 @@ Optional. Boolean value that allows the IT admin to require the device to start 
 Supported operations are Add, Get, and Replace.
 
 <a href="" id="provider-providerid-push"></a>**Provider/*ProviderID*/Push**  
-Optional. Not configurable during WAP Provisioining XML. If removed, DM sessions triggered by Push will no longer be supported.
+Optional. Not configurable during WAP Provisioning XML. If removed, DM sessions triggered by Push will no longer be supported.
 
 Supported operations are Add and Delete.
 

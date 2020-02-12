@@ -10,7 +10,6 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 audience: itpro
 author: greg-lindsay
-ms.date: 04/19/2017
 ms.topic: article
 ---
 
@@ -21,9 +20,7 @@ It is important to carefully consider how you plan to migrate users. By default,
 ## In This Topic
 
 - [Migrating Local Accounts](#bkmk-8)
-
 - [Migrating Domain Accounts](#bkmk-9)
-
 - [Command-Line Options](#bkmk-7)
 
 ## <a href="" id="bkmk-8"></a>Migrating Local Accounts
@@ -36,8 +33,8 @@ Before migrating local accounts, note the following:
 
 - [Be careful when specifying a password for local accounts.](#bkmk-8) If you create the local account with a blank password, anyone could log on to that account on the destination computer. If you create the local account with a password, the password is available to anyone with access to the USMT command-line tools.
 
-> [!NOTE]
-> If there are multiple users on a computer, and you specify a password with the **/lac** option, all migrated users will have the same password.
+>[!NOTE]
+>If there are multiple users on a computer, and you specify a password with the **/lac** option, all migrated users will have the same password.
 
 ## <a href="" id="bkmk-9"></a>Migrating Domain Accounts
 
@@ -49,8 +46,8 @@ USMT provides several options to migrate multiple users on a single computer. Th
 
 - [Specifying users.](#bkmk-8) You can specify which users to migrate with the **/all**, **/ui**, **/uel**, and **/ue** options with both the ScanState and LoadState command-line tools.
 
-   > [!IMPORTANT]  
-   > The **/uel** option excludes users based on the **LastModified** date of the Ntuser.dat file. The **/uel** option is not valid in offline migrations.
+  >[!IMPORTANT]  
+  >The **/uel** option excludes users based on the **LastModified** date of the Ntuser.dat file. The **/uel** option is not valid in offline migrations.
 
 - [Moving users to another domain.](#bkmk-8) You can move user accounts to another domain using the **/md** option with the LoadState command-line tool.
 
@@ -58,13 +55,11 @@ USMT provides several options to migrate multiple users on a single computer. Th
 
 - [Renaming user accounts.](#bkmk-8) You can rename user accounts using the **/mu** option.
 
-  > [!NOTE]
-  > By default, if a user name is not specified in any of the command-line options, the user will be migrated.
+  >[!NOTE]
+  >By default, if a user name is not specified in any of the command-line options, the user will be migrated.
 
 ## Related topics
 
-[Determine What to Migrate](usmt-determine-what-to-migrate.md)
-
-[ScanState Syntax](usmt-scanstate-syntax.md)
-
+[Determine What to Migrate](usmt-determine-what-to-migrate.md)<br>
+[ScanState Syntax](usmt-scanstate-syntax.md)<br>
 [LoadState Syntax](usmt-loadstate-syntax.md)

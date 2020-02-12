@@ -28,6 +28,8 @@ ms.topic: article
 
 Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the  portal. Based on the roles and groups you create, you have fine-grained control over what users with access to the portal can see and do. 
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bJ2a]
+
 Large geo-distributed security operations teams typically adopt a tier-based model to assign and authorize access to security portals. Typical tiers include the following three levels:
 
 Tier | Description

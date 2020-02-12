@@ -66,7 +66,7 @@ The following steps demonstrate required settings using the Intune service:
 
     Additionally, verify that the SSO State section displays **AzureAdPrt** as **YES**.
 
-    ![Auto-enrollment azure AD prt verification](images/auto-enrollment-azureadprt-verification.png)
+    ![Auto-enrollment Azure AD prt verification](images/auto-enrollment-azureadprt-verification.png)
 
     This information can also be found on the Azure AD device list.
 
