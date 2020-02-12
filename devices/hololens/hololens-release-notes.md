@@ -22,7 +22,7 @@ appliesto:
 > [!Note]
 > HoloLens Emulator Release Notes can be found [here](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive).
 
-### February Update - build 18362.1052
+### February Update - build 18362.1053
 
 - Temporarily disabled the HolographicSpace.UserPresence API for Unity applications to avoid an issue which causes some apps to pause when the visor is flipped up, even if the setting to run in the background is enabled.
 - Fixed a random HUP crash cased by hand tracking, in which user will notice an UI freeze then back to shell after several seconds.
