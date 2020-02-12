@@ -443,11 +443,15 @@ The default value is an empty string. For more information, see [ServicesAllowed
 <!--Description-->
 Added in the next major release of Windows 10.
 There are multiple levels of encryption strength when pairing Bluetooth devices. This policy helps prevent weaker devices cryptographically being used in high security environments.
+
 <!--/Description-->
 <!--SupportedValues-->
 The following list shows the supported values:  
 - 0 (default) - All Bluetooth traffic is allowed.
 - 1-N - A number representing the bytes that must be used in the encryption process.
+
+    >[!Note]
+    >If you wish to enforce Windows to use Bluetooth encryption at all times, but do not care about the precise encryption key strength, use a value of 1.
 <!--/SupportedValues-->
 <!--Example-->
 
