@@ -1,0 +1,103 @@
+### YamlMime:Landing
+
+title: Microsoft 365 security documentation # < 60 chars
+summary: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your enterprise across attack surfaces.  # < 160 chars
+
+metadata:
+  title: Microsoft 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about the robust security solutions and services in Microsoft 365 Security so that you can better protect your enterprise across attack surfaces # Required; article description that is displayed in search results. < 160 chars.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: m365-security-compliance
+  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
+  ms.author: macapara #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/13/2019 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Microsoft Threat Protection
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Threat Protection?
+            url:  mtp/microsoft-threat-protection.md
+          - text: Microsoft 365 security center
+            url: mtp/overview-security-center.md
+  
+  # Card (optional)
+  - title: Microsoft Defender ATP
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Defender ATP?
+            url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+          - text: Overview of capabilities
+            url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
+ 
+   # Card
+  - title: Office 365 ATP
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Office 365 ATP?
+            url: office-365-security/office-365-atp.md
+          - text: Office 365 ATP service description
+            url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+
+  # Card
+  - title: Azure ATP
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Azure ATP?
+            url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
+          - text: Azure ATP architecture
+            url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
+              
+  # Card (optional)
+  - title: Azure Security Center
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Azure Security Center?
+            url: https://docs.microsoft.com/azure/security-center/security-center-intro
+          - text: Supported features
+            url: https://docs.microsoft.com/azure/security-center/security-center-services
+
+ # Card
+  - title: Microsoft Cloud App Security
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Cloud App Security?
+            url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
+          - text: Get started with Microsoft Cloud App Security
+            url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
+
+  # Card
+  - title: Azure Sentinel (Preview)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Azure Sentinel? (Preview)
+            url: https://docs.microsoft.com/azure/sentinel/overview
+
+  # Card
+  - title: Security management 
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Secure score
+            url: mtp/microsoft-secure-score.md
+
+  
+              
+ 
+
