@@ -97,7 +97,7 @@ Possible values are:
 
 The default value in case the registry key doesn’t exist is 1.
 
-For more information about Configuration Manager Compliance see [Get started with compliance settings in Configuration Manager](https://docs.microsoft.com/configmgr/compliance/get-started/get-started-with-compliance-settings).
+For more information about Configuration Manager Compliance, see [Get started with compliance settings in Configuration Manager](https://docs.microsoft.com/configmgr/compliance/get-started/get-started-with-compliance-settings).
 
 
 
