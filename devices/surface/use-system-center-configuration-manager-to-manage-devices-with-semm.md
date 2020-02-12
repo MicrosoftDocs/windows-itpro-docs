@@ -75,9 +75,9 @@ To create a new application and deploy it to a collection that contains your Sur
 
    * **Import Information** – The Create Application Wizard will parse the .msi file and read the **Application Name** and **Product Code**. SurfaceUEFIManagerSetup.msi should be listed as the only file under the line **Content Files**, as shown in Figure 1. Select **Next** to proceed.
 
-    ![Information from Surface UEFI Manager setup is automatically parsed](images/config-mgr-semm-fig1.png "Information from Surface UEFI Manager setup is automatically parsed")
+      ![Information from Surface UEFI Manager setup is automatically parsed](images/config-mgr-semm-fig1.png "Information from Surface UEFI Manager setup is automatically parsed")
 
-    *Figure 1. Information from Microsoft Surface UEFI Manager setup is automatically parsed*
+      *Figure 1. Information from Microsoft Surface UEFI Manager setup is automatically parsed*
 
    * **General Information** – You can modify the name of the application and information about the publisher and version, or add comments on this page. The installation command for Microsoft Surface UEFI Manager is displayed in the Installation Program field. The default installation behavior of Install for system will allow Microsoft Surface UEFI Manager to install the required assemblies for SEMM even if a user is not logged on to the Surface device. Select **Next** to proceed.
    * **Summary** – The information that was parsed in the **Import Information** step and your selections from the **General Information** step is displayed on this page. Select **Next** to confirm your selections and create the application.
