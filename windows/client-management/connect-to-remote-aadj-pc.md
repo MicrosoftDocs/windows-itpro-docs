@@ -65,7 +65,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
  
 ## Supported configurations
  
-In organizations that have integrated Active Directory and Azure AD, you can connect from a domain-joined PC to an Azure AD-joined PC using:
+In organizations that have integrated Active Directory and Azure AD, you can connect from a Hybrid-joined PC to an Azure AD-joined PC using:
 
 - Password
 - Smartcards
