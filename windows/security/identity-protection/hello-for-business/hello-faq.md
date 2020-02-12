@@ -31,7 +31,7 @@ Microsoft is committed to its vision of a <u>world without passwords.</u> We rec
 RDP currently does not support key based authentication and does not support self signed certificates. RDP with Windows Hello for Business is currently only supported with certificate based deployments.
 
 ## Can I deploy Windows Hello for Business using Microsoft Endpoint Configuration Manager?
-Windows Hello for Business deployments using Configuration Manager need to move to the hybrid deployment model that uses Active Directory Federation Services. Deployments using Configuration Manager will no longer be supported after November 2018.
+Windows Hello for Business deployments using Configuration Manager should use the hybrid deployment model that uses Active Directory Federation Services. Starting in Configuration Manager version 1910, certificate-based authentication with Windows Hello for Business settings isn't supported. Key-based authentication is still valid with Configuration Manager. For more information, see [Windows Hello for Business settings in Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-hello-for-business-settings).
 
 ## How many users can enroll for Windows Hello for Business on a single Windows 10 computer?
 The maximum number of supported enrollments on a single Windows 10 computer is 10.  That enables 10 users to each enroll their face and up to 10 fingerprints.  While we support 10 enrollments, we will strongly encourage the use of Windows Hello security keys for the shared computer scenario when they become available.
