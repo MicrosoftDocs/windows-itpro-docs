@@ -18,6 +18,9 @@ manager: dansimp
 -   Windows 10, version 1703
 -   Windows 10 Mobile, version 1703
 
+>[IMPORTANT]
+>Cortana for Power BI is deprecated and will not be available in future releases. This topic is provided as a reference for previous versions only.
+
 Integration between Cortana and Power BI shows how Cortana can work with custom business analytics solutions to enable you to get answers directly from your key business data, including introducing new features that let you create custom Cortana “answers” using the full capabilities of Power BI Desktop.
 
 >[!Note]
