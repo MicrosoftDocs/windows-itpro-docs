@@ -18,11 +18,11 @@
 
     - name: Plan
       items: 
-        - name: Windows 10 deployment considerations
+        - name: Plan your Windows 10 deployment
           href: file1.md
-        - name: Windows update resources
+        - name: Plan an update management strategy
           href: file1.md
-        - name: Features removed or planned for replacement 
+        - name: Review application compatibility 
           href: file1.md
 
     - name: Deploy Windows 10
