@@ -22,76 +22,76 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Get started
+  - title: Title1
     linkLists:
       - linkListType: overview
         links:
-          - text: What's new?
+          - text: Article1a
             url: file1.md
-          - text: Deployment scenarios
+          - text: Article1b
             url:  file1.md
           - text: Windows as a service
-            url: file1.md
+            url: Article1c
 
   # Card (optional)
-  - title: Prepare for deployment
+  - title: Title2
     linkLists:
       - linkListType: overview
         links:
-          - text: Assess your current environment
+          - text: Article2a
             url: file1.md
-          - text: Choose a deployment method
+          - text: Article2b
             url: file1.md
-          - text: Design an update strategy
+          - text: Article2c
             url: file1.md
 
   # Card (optional)
-  - title: Deploy Windows 10
+  - title: Title3
     linkLists:
       - linkListType: overview
         links:
-          - text: Deploy Windows 10
+          - text: Article3a
             url: file1.md
-          - text: Deploy Windows 10 updates
+          - text: Article3b
             url: file1.md
-          - text: Monitor your deployment
+          - text: Article3c
             url: file1.md
  
    # Card
-  - title: Monitor and manage updates
+  - title: Title4
     linkLists:
       - linkListType: overview
         links:
-          - text: Monitor Windows 10 updates
+          - text: Article4a
             url: file1.md
-          - text: Manage updates
+          - text: Article4b
             url: file1.md
-          - text: Optimize update delivery
+          - text: Article4c
             url: file1.md
 
   # Card
-  - title: Troubleshooting resources 
+  - title: Title5 
     linkLists:
       - linkListType: overview
         links:
-          - text: Resolve upgrade errors
+          - text: Article5a
             url: file1.md
-          - text: Troubleshoot Windows Update
+          - text: Article5b
             url: file1.md
-          - text: Troubleshoot Windows Autopilot
+          - text: Article5c
             url: file1.md
 
   # Card (optional)
-  - title: Additional resources
+  - title: Title6
     linkLists:
       - linkListType: overview
         links:
-          - text: Windows 10 release information
+          - text: Article6a
             url: file1.md
-          - text: What's new in Windows 10
+          - text: Article6b
             url: file1.md
-          - text: Desktop Deployment Center
-            url: https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home
+          - text: Article6c
+            url: file1.md
 
 
 
