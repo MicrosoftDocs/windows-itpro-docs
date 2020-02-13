@@ -5,17 +5,39 @@
       items: 
         - name: Windows 10 deployment scenarios
           href: windows-10-deployment-scenarios.md
-        - name: H2 
-          href: windows-10-deployment-scenarios.md
+        - name: Deployment test lab 
           items: 
-            - name: H3
-              items:
-                - name: H4
-                  items:
-                    - name: H5
-                      items:
-                        - name: H6
-                          items:
-                            - name: H7
-                              items:
-                                - name: foo
+            - name: Windows 10 deployment test lab
+              href: windows-10-deployment-scenarios.md
+            - name: Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit
+              href: windows-10-poc-mdt.md
+            - name: Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager
+              href: windows-10-poc-sc-config-mgr.md
+
+    - name: Plan
+      items: 
+        - name: item1
+          href: file1.md
+        - name: item2 
+          href: file2.md
+
+    - name: Deploy Windows 10
+      items: 
+        - name: item1
+          href: file1.md
+        - name: item2 
+          href: file2.md
+
+    - name: Manage Windows 10 updates
+      items: 
+        - name: item1
+          href: file1.md
+        - name: item2 
+          href: file2.md
+
+    - name: Reference
+      items: 
+        - name: item1
+          href: file1.md
+        - name: item2 
+          href: file2.md
