@@ -5,6 +5,8 @@
       items: 
         - name: Windows 10 deployment scenarios
           href: windows-10-deployment-scenarios.md
+        - name: Windows as a service
+          href: file1.md
         - name: Deployment test lab 
           items: 
             - name: Windows 10 deployment test lab
@@ -16,28 +18,38 @@
 
     - name: Plan
       items: 
-        - name: item1
+        - name: Windows 10 deployment considerations
           href: file1.md
-        - name: item2 
-          href: file2.md
+        - name: Windows update resources
+          href: file1.md
+        - name: Features removed or planned for replacement 
+          href: file1.md
 
     - name: Deploy Windows 10
       items: 
-        - name: item1
+        - name: Deploy with Windows Autopilot
           href: file1.md
-        - name: item2 
-          href: file2.md
+        - name: Deploy with Configuration Manager
+          href: file1.md
+        - name: Deploy with Microsoft Deployment Toolkit
+          href: file1.md
 
     - name: Manage Windows 10 updates
       items: 
-        - name: item1
+        - name: Manage with Configuration Manager
           href: file1.md
-        - name: item2 
-          href: file2.md
+        - name: Manage with Group Policy 
+          href: file1.md
+        - name: Manage with WSUS 
+          href: file1.md
+        - name: Monitor updates 
+          href: file1.md
 
     - name: Reference
       items: 
-        - name: item1
+        - name: Windows 10 upgrade paths
           href: file1.md
-        - name: item2 
-          href: file2.md
+        - name: Windows 10 edition upgrade 
+          href: file1.md
+        - name: Windows 10 in S mode 
+          href: file1.md
