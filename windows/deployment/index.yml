@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Windows 10 deployment resources and documentation # < 60 chars
-summary: Learn about deploying Windows 10 and keeping it up to date in your organization.  # < 160 chars
+summary: Learn about deploying and and keeping Windows 10 up to date.  # < 160 chars
 
 metadata:
   title: Windows 10 deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -22,64 +22,77 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Plan for deployment
+  - title: Get started
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Microsoft Threat Protection?
-            url:  mtp/microsoft-threat-protection.md
-          - text: Microsoft 365 security center
-            url: mtp/overview-security-center.md
-  
+          - text: What's new?
+            url: file1.md
+          - text: Deployment scenarios
+            url:  file1.md
+          - text: Windows as a service
+            url: file1.md
+
+  # Card (optional)
+  - title: Prepare for deployment
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Assess your current environment
+            url: file1.md
+          - text: Choose a deployment method
+            url: file1.md
+          - text: Design an update strategy
+            url: file1.md
+
   # Card (optional)
   - title: Deploy Windows 10
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Microsoft Defender ATP?
-            url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-          - text: Overview of capabilities
-            url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
+          - text: Deploy Windows 10
+            url: file1.md
+          - text: Deploy Windows 10 updates
+            url: file1.md
+          - text: Monitor your deployment
+            url: file1.md
  
    # Card
-  - title: Update Windows 10
+  - title: Monitor and manage updates
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Office 365 ATP?
-            url: office-365-security/office-365-atp.md
-          - text: Office 365 ATP service description
-            url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+          - text: Monitor Windows 10 updates
+            url: file1.md
+          - text: Manage updates
+            url: file1.md
+          - text: Optimize update delivery
+            url: file1.md
 
   # Card
-  - title: Troubleshooting
+  - title: Troubleshooting resources 
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Azure ATP?
-            url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
-          - text: Azure ATP architecture
-            url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
-              
-  # Card (optional)
-  - title: Tools
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Azure Security Center?
-            url: https://docs.microsoft.com/azure/security-center/security-center-intro
-          - text: Supported features
-            url: https://docs.microsoft.com/azure/security-center/security-center-services
+          - text: Resolve upgrade errors
+            url: file1.md
+          - text: Troubleshoot Windows Update
+            url: file1.md
+          - text: Troubleshoot Windows Autopilot
+            url: file1.md
 
- # Card
-  - title: Lab guides
+  # Card (optional)
+  - title: Additional resources
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Microsoft Cloud App Security?
-            url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
-          - text: Get started with Microsoft Cloud App Security
-            url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
+          - text: Windows 10 release information
+            url: file1.md
+          - text: What's new in Windows 10
+            url: file1.md
+          - text: Desktop Deployment Center
+            url: https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home
+
 
 
   
