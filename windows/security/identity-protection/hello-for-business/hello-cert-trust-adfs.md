@@ -38,6 +38,21 @@ A new Active Directory Federation Services farm should have a minimum of two fed
 
 Prepare the Active Directory Federation Services deployment by installing and updating two Windows Server 2016 Servers.  Ensure the update listed below is applied to each server before continuing.    
 
+>[!NOTE] 
+> For AD FS 2010, if Windows Hello for Business with a Hybrid Certificate trust is performed, a known PRT issue exists. You may encounter this error in ADFS Admin event logs: Received invalid Oauth request. The client 'NAME' is forbidden to access the resource with scope 'ugs'. 
+> To remediate this error: 
+> 1. Launch AD FS management console. Brose to "Services > Scope Descriptions"
+> 2. Right click "Scope Descriptions" and select "Add Scope Description"
+> 3. Under name type "ugs" and Click Apply > OK
+> 4. Launch Powershell as Administrator
+> 5. Execute the command "Get-AdfsApplicationPermission". Look for the ScopeNames :{openid, aza} that has the ClientRoleIdentifier. Make a note of the ObjectIdentifier.
+> 6. Execute the command "Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'
+> 7. Restart the ADFS service.
+> 8. On the client: Restart the client. User should be prompted to provision WHFB.
+> 9. If the provisioning window does not pop up then need to collect NGC trace logs and further troubleshoot.
+
+
+
 ## Update Windows Server 2016
 
 Sign-in the federation server with _local admin_ equivalent credentials.
