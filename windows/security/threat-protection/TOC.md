@@ -3,6 +3,7 @@
 ## [Overview]()
 ### [What is Microsoft Defender Advanced Threat Protection?](microsoft-defender-atp/microsoft-defender-advanced-threat-protection.md)
 ### [Overview of Microsoft Defender ATP capabilities](microsoft-defender-atp/overview.md)
+### [Product brief](microsoft-defender-atp/product-brief.md)
 ### [Minimum requirements](microsoft-defender-atp/minimum-requirements.md)
 ### [What's new in Microsoft Defender ATP](microsoft-defender-atp/whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](microsoft-defender-atp/preview.md)
@@ -15,17 +16,14 @@
 ## [How-to guides]()
 ### [Deployment guide]()
 #### [Deployment phases](microsoft-defender-atp/deployment-phases.md)
-#### [Product brief](microsoft-defender-atp/product-brief.md)
 
-#### [Phase 1]()
-##### [Prepare deployment](microsoft-defender-atp/prepare-deployment.md)
+#### [Phase 1: Prepare deployment](microsoft-defender-atp/prepare-deployment.md)
 ##### [Validate licensing and complete setup](microsoft-defender-atp/licensing.md)
 
-#### [Phase 2]()
-##### [Evaluation lab](microsoft-defender-atp/evaluation-lab.md)
+#### [Phase 2: Pilot/Evaluate the capabilities](microsoft-defender-atp/evaluation-lab.md)
 
-#### [Phase 3]()
-##### [Production deployment](microsoft-defender-atp/production-deployment.md)
+#### [Phase 3: Deployment](microsoft-defender-atp/production-deployment.md)
+
 
 ### [Operations]()
 #### [Security operations]()
