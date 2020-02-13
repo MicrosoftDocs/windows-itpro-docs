@@ -1727,6 +1727,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/security/threat-protection/windows-defender-atp/microsoft-defender-atp/overview-secure-score.md",
+"redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/security/threat-protection/windows-defender-atp/partner-applications.md",
 "redirect_url": "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/partner-applications",
 "redirect_document_id": true
@@ -15705,6 +15710,6 @@
 "source_path": "windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness.md",
 "redirect_url": "https://docs.microsoft.com/configmgr/desktop-analytics/overview",
 "redirect_document_id": false
-},
+}
 ]
 }
